@@ -1,32 +1,46 @@
 - name: About the inheritance process 
-  href: inheritance-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json 
+  href: inheritance-process-model.md 
+  displayname: system process, custom, rule, work item type, workflow, backlog, limits
 - name: Add a custom field
   href: add-custom-field.md
+  displayname: create, new, work item, type, inherit  
 - name: Add a custom work item type
   href: add-custom-wit.md
+  displayname: create, new, inherit
 - name: Customize a project
   href: customize-process.md
 - name: Create and manage a process
   href: manage-process.md
 - name: Customize a workflow
   href: customize-process-workflow.md
+  displayname: state, category, add, edit, hide, unhide, remove, state model, automate, reassignment, transition 
 - name: Apply rules to workflow
   href: apply-rules-to-workflow-states.md
+  displayname: condition, action, restrict, group membership, limits,   
 - name: Apply additional customizations
   items:
   - name: Add a custom rule
     href: custom-rules.md
+    displayname: clear, copy, required, read-only, set value, restrict transition, hide field
   - name: Add and manage fields
     href: customize-process-field.md
-    displayname: people picker, picklist, identity, rich text, help text, delete
+    displayname: people picker, picklist, identity, rich text, help text, delete, hide field, description, help text
   - name: Add and manage work item types
     href: customize-process-work-item-type.md
+    displayname: enable, disable, icon, description, help text, delete
   - name: Customize backlogs & boards
     href: customize-process-backlogs-boards.md
+    displayname: requirement, iteration, portfolio, stack rank, rename, add
   - name: Customize a web form
     href: customize-process-form.md
+    displayname: group, column, page, 
   - name: Add a custom control
     href: custom-controls-process.md
+  - name: Rules and rule evaluation
+    href: rule-reference.md
+    displayname: auto-generated, by/date fields, state change date, restrictions 
+  - name: Sample rule scenarios
+    href: rule-samples.md 
 - name: Change project process
   items:
   - name: From Agile to Scrum

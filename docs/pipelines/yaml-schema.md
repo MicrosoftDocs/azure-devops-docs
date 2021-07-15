@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: vijayma
-ms.date: 03/24/2021
+ms.date: 07/15/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -303,6 +303,8 @@ jobs:
     pools: [ string ] # Pool names, typically when using a matrix strategy for the job
 ```
 
+For more information about `uses`, see [Limit job authorization scope to referenced Azure DevOps repositories](repos/azure-repos-git.md#limit-job-authorization-scope-to-referenced-azure-devops-repositories). For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
+
 :::moniker-end
 
 :::moniker range="<azure-devops"
@@ -329,9 +331,11 @@ jobs:
   services: { string: string | container } # container resources to run as a service container
 ```
 
+For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
+
 :::moniker-end
 
-For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
+
 
 # [Example](#tab/example)
 
@@ -1009,12 +1013,14 @@ The type and name fields are required when defining parameters. See all [paramet
 ```yaml
 parameters:
 - name: string          # name of the parameter; required
-  type: enum            # data types, see below
+  type: enum            # see the enum data types in the following section
   default: any          # default value; if no default, then the parameter MUST be given by the user at runtime
   values: [ string ]    # allowed list of values (for some data types)
 ```
 
 ### Types
+
+The `type` value must be one of the `enum` members from the following table.
 
 [!INCLUDE [parameter-data-types](process/includes/parameter-data-types.md)]
 

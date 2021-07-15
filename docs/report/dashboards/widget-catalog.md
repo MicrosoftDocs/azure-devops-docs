@@ -26,13 +26,13 @@ The following widgets are organized under the service they support. Widgets that
 - **Analytics**: indicates data is derived from [Analytics data](../powerbi/what-is-analytics.md)  
 - **Project**: indicates you can select the project and team when configuring the widget
 - **Team**: Indicates a widget that is scoped to a team  
-- **User**: Indicates you widget that is scoped to a user identity 
+- **User**: Indicates a widget that is scoped to a user identity 
 ::: moniker-end
 
 
 ::: moniker range=">=tfs-2015 <= tfs-2018"
 - **Team**: Indicates a widget that is scoped to a team  
-- **User**: Indicates you widget that is scoped to a user identity 
+- **User**: Indicates a widget that is scoped to a user identity 
 ::: moniker-end
 
 

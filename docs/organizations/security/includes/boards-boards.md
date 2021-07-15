@@ -6,7 +6,7 @@ ms.topic: include
 ms.date: 02/25/2021
 ---
 
----
+
 :::row:::
    :::column span="2":::
       **Task** 
@@ -24,7 +24,6 @@ ms.date: 02/25/2021
      **Team admins**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       View boards and open work items
@@ -42,7 +41,6 @@ ms.date: 02/25/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
@@ -61,7 +59,6 @@ ms.date: 02/25/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 ::: moniker range="azure-devops"
 :::row:::
@@ -81,7 +78,6 @@ ms.date: 02/25/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 ::: moniker range=">= tfs-2015 < azure-devops"
 :::row:::
@@ -101,7 +97,6 @@ ms.date: 02/25/2021
      ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 ::: moniker range="tfs-2013"
 :::row:::
@@ -121,7 +116,6 @@ ms.date: 02/25/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 ::: moniker range=">= tfs-2015"
 :::row:::
@@ -141,7 +135,6 @@ ms.date: 02/25/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 ::: moniker range=">= tfs-2015"
 :::row:::
@@ -161,7 +154,6 @@ ms.date: 02/25/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end 
 ::: moniker range="tfs-2013"
 :::row:::
@@ -181,7 +173,6 @@ ms.date: 02/25/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 :::row:::
    :::column span="2":::
@@ -201,6 +192,5 @@ ms.date: 02/25/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 
 

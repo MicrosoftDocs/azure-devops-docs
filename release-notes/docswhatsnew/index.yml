@@ -16,18 +16,18 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: April 2021
+          - text: June 2021
             url: azure-devops-docs-whats-new.md
+          - text: May 2021
+            url: azure-devops-docs-2021-05.md
+          - text: April 2021
+            url: azure-devops-docs-2021-04.md
           - text: March 2021
             url: azure-devops-docs-2021-03.md
           - text: February 2021
             url: azure-devops-docs-2021-02.md
           - text: January 2021
             url: azure-devops-docs-2021-01.md
-          - text: December 2020
-            url: azure-devops-docs-2020-12.md
-          - text: November 2020
-            url: azure-devops-docs-2020-11.md
 
   - title: "Get involved - contribute to Azure DevOps docs"
     linkLists:

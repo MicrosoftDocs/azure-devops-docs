@@ -44,7 +44,7 @@ If you want, you can also use Azure DevOps Services with any IDE or code editor,
 
 1. [Download and install Visual Studio](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409), 
 if you don't have the version you want already. 
-[Which versions can I use with Azure DevOps Services?](/azure/devops/organizations/accounts/faq-set-up-vs)
+[Which versions can I use with Azure DevOps Services?](./faq-set-up-vs.yml)
 
     If you have a Visual Studio subscription that 
     includes the Visual Studio IDE, get the version 
@@ -54,7 +54,7 @@ if you don't have the version you want already.
 
     This profile saves your settings and roams with you 
     when you sign in to Visual Studio on any computer. 
-    [Why else should I sign in?](/azure/devops/organizations/accounts/faq-set-up-vs)
+    [Why else should I sign in?](./faq-set-up-vs.yml)
     If you're a Visual Studio subscriber, use the sign in address for your subscription. 
 
     ![Sign in to Visual Studio](media/set-up-vs/sign-in-visual-studio.png)

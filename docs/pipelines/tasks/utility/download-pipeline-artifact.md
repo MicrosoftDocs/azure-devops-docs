@@ -34,7 +34,7 @@ Use this task to download pipeline artifacts from earlier stages in this pipelin
 | Argument | Description |
 | -------- | ----------- |
 | `source`<br/>Download artifacts produced by | (Required) Download artifacts produced by the current pipeline run, or from a specific pipeline run.<br/>Options: `current`, `specific` <br/>Default value: `current` <br/>Argument aliases: `buildType` |
-| `project`<br/>Project | (Required) The project GUID from which to download the pipeline artifacts. |
+| `project`<br/>Project | (Required) The project name or GUID from which to download the pipeline artifacts. |
 | `pipeline`<br/>Build Pipeline | (Required) The definition ID of the build pipeline.<br/>Argument aliases: `definition` |
 | `preferTriggeringPipeline`<br/>When appropriate, download artifacts from the triggering build | (Optional) A boolean specifying whether to download artifacts from a triggering build.<br/>Default value: `false` <br/>Argument aliases: `specificBuildWithTriggering` |
 | `runVersion`<br/>Build version to download | (Required) Specifies which build version to download. Options: `latest`, `latestFromBranch`, `specific` <br/>Default value: `latest`<br/>Argument aliases: `buildVersionToDownload` |

@@ -8,7 +8,7 @@ ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 07/09/2020
 ---
 
@@ -166,6 +166,8 @@ For example, here the Customer Service team has organized several backlog items 
 
 ::: moniker-end 
 
+
+
 [!INCLUDE [temp](../includes/velocity-section.md)]
 
 [!INCLUDE [temp](../includes/display-rollup-section.md)]
@@ -284,6 +286,15 @@ For example, you can create a team structure similar to this one with two manage
 
 To learn more about hierarchical team and backlog structures, see [Portfolio management](../plans/portfolio-management.md).
 
+
+### Reordering and reparenting work items 
+
+All backlogs and boards support drag-and-drop to reorder and reparent work items. Updates made to one team backlogs and boards are reflected in other team backlogs and boards that share the same area path. You may need to refresh the page to view the changes. 
+
+You can only use drag-and-drop to reorder or reparent work items assigned to area paths selected for your team. When the **Parents** view option is enabled, work items may appear on your backlog that your team doesn't own. Anything that appears with the :::image type="icon" source="../../media/icons/info.png" border="false"::: information icon can't be reordered nor reparented as it is owned by another team.  
+ 
+:::image type="content" source="../plans/media/config-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
+
 <a id="leaf-node" />
 
 ## Display of leaf node work items  
@@ -292,7 +303,6 @@ For TFS 2018 and earlier versions, the Kanban board only shows the leaf node wit
 
 [!INCLUDE [temp](../includes/display-leaf-nodes.md)]  
 
-To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes).
 
 
 ## Permissions and access

@@ -62,7 +62,6 @@ You'll first export your work tracking definition files, update them, and then i
 -  Update your project to [enable the latest features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)
 -  [Export the following objects from your project](#import-export): 
 	- WIT you want to add to backlogs and boards (if you haven't created it, [do that now](customize-work.md))
-	- [Categories definition](xml/apply-rule-work-item-field.md#apply-ignore)  
 	- ProcessConfiguration  
 -  If you're new to customizing work tracking objects, familiarize yourself with the following resources:  
 	- [Add or modify a field](add-modify-field.md)  
@@ -71,6 +70,7 @@ You'll first export your work tracking definition files, update them, and then i
 
 
 <a id="wits-as-requirements">  </a>
+
 ## Add a WIT to track it like a requirement   
 
 WITs that you add to the Requirement Category show up on the product backlog and Kanban board. You must make sure that the WIT definition contains required fields to support the Agile planning tools.  

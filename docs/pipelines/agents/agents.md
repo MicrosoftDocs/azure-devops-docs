@@ -555,6 +555,8 @@ Your pipelines won't run until they can target a compatible agent.
 
 You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent, as described in [Configure agent capabilities](#configure-agent-capabilities).
 
+To trigger agent update programmatically you can use Agent update API as described in section [How can I trigger agent updates programmatically for specific agent pool?](#how-can-i-trigger-agent-updates-programmatically-for-specific-agent-pool).
+
 > [!NOTE]
 > For servers with no internet access, manually copy the agent zip file to `C:\ProgramData\Microsoft\Azure DevOps\Agents\` to use as a local file.
 
@@ -580,6 +582,43 @@ You might also run into problems if parallel build jobs are using the same singl
 
 ::: moniker range=">= azure-devops-2019"
 
+### What’s the behavior of agents when the pipeline jobs are cancelled?
+
+For Microsoft-hosted agents, the agent is torn down and returned to the Azure Pipelines pool.
+
+For self-hosted agents:
+
+When a pipeline is cancelled, the agent sends a sequence of commands to the process executing the current step. The first command is sent with a timeout of 7.5 seconds. If the process has not terminated, a second command is sent with a timeout of 2.5 seconds. If the process has not terminated, the agent issues a command to kill the process. If the process does not honor the two initial termination requests, it will be killed. From the initial request to termination takes approximately 10 seconds.
+
+The commands issued to the process are different based on the agent operating system.
+
+* macOS and Linux - The commands sent are SIGINT, followed by SIGTERM, followed by SIGKILL.
+* Windows - The commands sent to the process are Ctrl+C, followed by Ctrl+Break, followed by Process.Kill.
+
+### How can I trigger agent updates programmatically for specific agent pool?
+
+You can trigger agent updates for the pool by using next API:
+
+```
+POST https://dev.azure.com/{organization}/_apis/distributedtask/pools/{poolId}/messages?agentId={agentId}&api-version=6.0
+```
+
+#### URI Parameters
+
+| Name           | In    | Required | Type          | Description                                                                            |
+| -------------- | ----- | -------- | ------------- | -------------------------------------------------------------------------------------- |
+| `agentId`      | query | False    | string        | The agent to update. If not specified - update will be triggered for all agents.       |
+| `organization` | path  | True     | string        | The name of the Azure DevOps organization.                                             |
+| `poolId`       | path  | True     | integer int32 | The agent pool to use                                                                  |
+| `api-version`  | query | False    | string        | Version of the API to use. This should be set to '6.0' to use this version of the api. |
+
+
+
+To trigger agent update - request body should be empty.
+
+> [!NOTE]
+> Azure Pipelines Agent is open source on [GitHub](https://github.com/microsoft/azure-pipelines-agent).
+> 
 ## Learn more
 
 For more information about agents, see the following modules from the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/) learning path.

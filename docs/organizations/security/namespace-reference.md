@@ -250,7 +250,15 @@ The following table describes the namespaces that manage object-level permission
    :::column-end:::
    :::column span="2":::
       [Manages task group permissions](permissions.md) to edit and delete task groups, and administer task group permissions. To manage through the web portal, see [Pipeline permissions and security roles, Task group permissions](../../pipelines/policies/permissions.md#set-task-group-permissions). 
+      <br/><br/>
+      **Token format for project-level permissions**: `PROJECT_ID`
       <br/>
+      **Token format for metaTask-level permissions**: `PROJECT_ID/METATASK_ID`
+      <br/><br/>
+      If MetaTask has parentTaskId then the Security token looks as follows: 
+      <br/>
+      **Token Format**: `PROJECT_ID/PARENT_TASK_ID/METATASK_ID`
+      <br/><br/>
       **ID:** `f6a4de49-dbe2-4704-86dc-f8ec1a294436`
    :::column-end:::
 :::row-end:::
@@ -938,7 +946,7 @@ The following table describes the security namespaces and permissions that aren'
       `Moderate`            
    :::column-end:::
    :::column span="2":::
-      Manages permissions to view, manage, moderate, and contribute to [code review discussions setup for Azure Pipelines](../../pipelines/process/environments-kubernetes.md#setup-review-app).  
+      Manages permissions to view, manage, moderate, and contribute to [code review discussions setup for Azure Pipelines](../../pipelines/process/environments-kubernetes.md#set-up-review-app).  
       <br/>
       **ID:** `0d140cae-8ac1-4f48-b6d1-c93ce0301a128`
    :::column-end:::

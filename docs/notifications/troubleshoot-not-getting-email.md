@@ -8,7 +8,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/07/2020
+ms.date: 06/16/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -47,7 +47,7 @@ If the subscription is grayed-out in the user interface, then it's disabled. The
 > [!div class="mx-imgBorder"] 
 >![subscription disabled](media/subscription-disabled.png)
 
-A default subscription is disabled when an administrator opts out at the organization or team level, or if you opt out in your personal subscription settings. Custom subscriptions get disabled when an administrator disables the subscription at the organization or team level, or if you disable a personal custom subscription.
+A default subscription disables when an administrator opts out at the organization or team level, or if you opt out in your personal subscription settings. Custom subscriptions get disabled when an administrator disables the subscription at the organization or team level, or if you disable a personal custom subscription.
 
 ## Closely inspect subscription filter conditions
 
@@ -76,6 +76,10 @@ If a team or group subscription has an @Me filter clause and the target email re
 ## Do you have permission to see the event artifact?
 
 Recipients who don't have permission to view the artifact, don't receive an email, which contains event artifact data, such as a work item. The only way to know if an email was _filtered_ is to view notification delivery logs. Learn more about [enabling and retrieving subscription and delivery logging](use-subscription-logging.md).
+
+## Known issue
+
+If a subscription was created or last modified by a user who lost permissions to the project, then the notifications for that subscription won't be delivered and will be filtered silently.
 
 ## Contact customer support
 
