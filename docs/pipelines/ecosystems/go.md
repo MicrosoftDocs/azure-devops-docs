@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
 ms.reviewer: azooinmyluggage
 ms.custom: seodec18
-ms.date: 01/28/2020
+ms.date: 07/15/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -121,7 +121,6 @@ When an Azure Pipelines build fetches code from a remote repository, it places t
 ```yaml
 variables:
   GOBIN:  '$(GOPATH)/bin' # Go binaries path
-  GOROOT: '/usr/local/go1.13' # Go installation path
   GOPATH: '$(system.defaultWorkingDirectory)/gopath' # Go workspace path
   modulePath: '$(GOPATH)/src/github.com/$(build.repository.name)' # Path to the module's code
 
@@ -134,7 +133,6 @@ steps:
     shopt -s dotglob
     mv !(gopath) '$(modulePath)'
     echo '##vso[task.prependpath]$(GOBIN)'
-    echo '##vso[task.prependpath]$(GOROOT)/bin'
   displayName: 'Set up the Go workspace'
 
 - script: |
