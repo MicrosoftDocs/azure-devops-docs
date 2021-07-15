@@ -16,14 +16,11 @@ With Azure Artifacts, you can publish your NuGet packages to public or private f
 
 ## Connect to a NuGet feed
 
-[!INCLUDE [](nuget-publish-endpoint.md)]
+[!INCLUDE [](../includes/nuget/nuget-publish-endpoint.md)]
 
-## Work with upstream sources
+## Related articles
 
-Upstream sources enable you to use a single feed to store and consume packages from both public (NuGet.org, npmjs.com, Maven Central, and PyPI) and authenticated feeds (Azure Artifacts feeds).
-
-See [Understanding upstream sources](../concepts/upstream-sources.md) to get familiar with the concepts. You can also check out the following articles to learn how to:
-
-- [Set up upstream sources for Azure DevOps](../how-to/set-up-upstream-sources.md). 
-- [Protect your open-source software packages with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md).
+- [Upstream sources overview](../concepts/upstream-sources.md)
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md). 
+- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md).
 
