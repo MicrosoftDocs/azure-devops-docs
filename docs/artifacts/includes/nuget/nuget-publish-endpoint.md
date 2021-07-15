@@ -3,45 +3,37 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 06/22/2020
+ms.date: 07/15/2021
 ---
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Navigate to your feed or [create a feed](../../get-started-nuget.md#create-a-feed) if you haven't. 
+1. From within your project, select **Artifacts**, and then select your feed. You can [create a new feed](../../get-started-nuget.md#create-a-feed) if you don't have one already. 
 
-1. Select **Connect to feed**:
+1. Select **Connect to feed**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Connect to feed button on the upper right of the page](../../media/connect-to-feed-azure-devops-newnav.png)
+    :::image type="content" source="../../media/connect-to-feed-azure-devops-newnav.png" alt-text="Connect to your feed":::
 
 1. Select **NuGet.exe** under the **NuGet** header.
 
     :::image type="content" source="../../media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
 
-1. If you have NuGet and Visual Studio installed, you can move to the next step. Otherwise:
+1. If this is the first time using Azure Artifacts with Nuget then:
 
-    1. Select **Get the tools** button.
-    1. Download the latest NuGet version.
-    1. Download and install the credential provider.
+    1. Download the [latest NuGet version](https://www.nuget.org/downloads).
+    1. Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
-1. Create a nuget.config file with the following content and add it to your project in the same path as your .csproj or .sln file
+1. Create a `nuget.config` file in the same folder as your *.csproj* *.sln* and add the following content. Replace the placeholders with your feed and organization names.
 
     ```Command
     <?xml version="1.0" encoding="utf-8"?>
     <configuration>
       <packageSources>
         <clear />
-        <add key="<orgName>" value="https://pkgs.dev.azure.com/<orgName>/_packaging/<orgName>/nuget/v3/index.json" />
+        <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
       </packageSources>
     </configuration>
     ```
-
-1. Run the following command to publish your NuGet package to your feed.
-
-    ```Command
-    nuget.exe push -Source <orgName> -ApiKey az <packagePath>
-    ``` 
 
 ## Publish packages by using the command line
 
