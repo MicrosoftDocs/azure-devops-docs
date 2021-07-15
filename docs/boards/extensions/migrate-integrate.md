@@ -91,7 +91,7 @@ The following tools support integration and synchronization with Azure DevOps wi
 
 - [OpsHub Integration Manager(OIM)](https://www.opshub.com/products/opshub-integration-manager/) is an enterprise class integration platform that enables bi-directional synchronization for Azure DevOps(Server and Services) with 50+ ALM, DevOps, Project and Portfolio Management tools out of the box. It enables synchronization of all work items including test artifacts with an easy to use mapping UI and is scalable for any number of projects and teams.  
 -  [ConnectAll](https://www.connectall.com/) helps organizations achieve effective Value Stream Management by connecting the applications used to collaborate, drive decisions, and manage artifacts that are used during the software delivery process, like ALM, Agile, and DevOps. 
-- [Project Connect](https://us.wicresoft.com/projectconnect/) offers a seamless approach to exchange critical information between development teams and project teams using Microsoft Project Online and Azure DevOps Services.
+- [Project Connect](https://www.wicresoftinternational.com/about-us) offers a seamless approach to exchange critical information between development teams and project teams using Microsoft Project Online and Azure DevOps Services.
 - [Tasktop](http://www.tasktop.com/products) provides enterprise-grade integration between Microsoft Project Server and Azure DevOps, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. 
 
 
