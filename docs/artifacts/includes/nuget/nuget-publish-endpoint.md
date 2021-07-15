@@ -23,7 +23,7 @@ ms.date: 07/15/2021
     1. Download the [latest NuGet version](https://www.nuget.org/downloads).
     1. Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
-1. Follow the instructions in the **Project setup** to to connect to your feed. 
+1. Follow the instructions in the **Project setup** to connect to your feed. 
 
     :::image type="content" source="../../media/project-setup.png" alt-text="Project setup":::
 
@@ -45,17 +45,16 @@ nuget.exe push -Source "<YOUR_FEED_NAME>" -ApiKey <ANY_STRING> <PACKAGE_PATH>
 
 ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-1. Go to your feed or [create one](../../get-started-nuget.md#create-a-feed) if you haven't. 
+1. Select **Build and Release** > **Packages**.
 
-2. Select **Connect to feed**:
+1. Select your feed from the dropdown menu or [create one](../../get-started-nuget.md#create-a-feed) if you haven't. 
 
-   > [!div class="mx-imgBorder"] 
-   > ![Connect to feed button on the upper right of the page](../../media/connect-to-feed.png)
+1. Select **Connect to feed**.
 
+    :::image type="content" source="../../media/connect-to-feed.png" alt-text="Connect to feed - TFS":::
 
-3. Follow steps 1 and 2 to get the tools, add the feed to your local NuGet configuration, and push the package.
+1. Select **NuGet** and follow the instruction to connect to your feed.
 
-   > [!div class="mx-imgBorder"]
-   > ![NuGet publish instructions in the Connect to feed dialog box](../../media/nugeturl.png)
+    :::image type="content" source="../../media/connect-to-nuget-feed-tfs.png" alt-text="Connect to NuGet feed - TFS":::
 
 ::: moniker-end
