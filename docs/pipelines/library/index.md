@@ -20,9 +20,9 @@ The **Library** tab can be accessed directly in Azure Pipelines.
 
 The library contains two types of assets: [variable groups](variable-groups.md) and [secure files](secure-files.md).
 
-Variable groups are only available to release pipelines in TFS 2017 and earlier. They're available to build and release pipelines in TFS 2018 and in Azure Pipelines. Task groups and service connections are available to build and release pipelines in TFS 2015 and newer, and in Azure Pipelines.
-
 :::image type="content" source="media/assets-library.png" alt-text="Screenshot of Pipelines assets Library.":::
+
+Variable groups are only available to release pipelines in TFS 2017 and earlier. They're available to build and release pipelines in TFS 2018 and in Azure Pipelines. Task groups and service connections are available to build and release pipelines in TFS 2015 and newer, and in Azure Pipelines.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
