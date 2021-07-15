@@ -1,40 +1,30 @@
 ---
 title: Symbol files
-description: Working with symbol files
+description: Working with symbols
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.assetid: 6D0F0D86-2ADC-4902-AFA7-98F7EF78EE07
-ms.date: 06/08/2021
+ms.date: 07/15/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Symbol files overview
+# Symbols overview
 
-**Azure DevOps Services | TFS 2018 | TFS 2017**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-> [!NOTE]
-> A symbol server is available with **Azure Artifacts** in Azure DevOps Services and works best with **Visual Studio 2017 Update 4 or later**. **Team Foundation Server** users and users without the **Azure Artifacts** extension can publish symbols to a file share using the [Index Sources & Publish Symbols task](../../pipelines/tasks/build/index-sources-publish-symbols.md).
+To debug compiled executables from native languages like C and C++, you need symbol files that contain mapping information to the source code. These files are created from source code during compilation and generally have the PDB (program database) extension. Azure Artifacts offers a dedicated symbols server to publish your symbols.
 
-To debug compiled executables, especially executables compiled from native code languages like C++, you need symbol files that contain mapping information to the source code. These files are created from source code during compilation and generally have the PDB (program database) extension. Azure Artifacts offers a dedicated symbols server to publish your symbols.
+## What are symbol files
 
-## What's in a symbol file
+Symbol files are created by the compiler when you build your project. A typical symbols file might contain: source indexers, local and/or global variables, function names and pointers to the addresses of their entry points, line numbers etc. This data can be used to link the debugger to your source code to debug your application.
 
-Symbols contain a set of useful debugging information, including:
+## Publish symbol files
 
-- publics and exports
-- global symbols
-- local symbols
-- type data
-- source indexes
-- line numbers
+You can publish your symbols to different locations by using the **Index Sources and Publish Symbols** task:  
 
-## Publishing symbol files
-
-You can publish your symbols to different destinations by using the **Index Sources and Publish Symbols** task:  
-
-- [publish to the symbol server](../../pipelines/artifacts/symbols.md#publish-symbols)
-- [Publish to a file share](../../pipelines/artifacts/symbols.md#publish-symbols-to-a-file-share)
-- [Publish to Portable PDBs](../../pipelines/artifacts/symbols.md#portable-pdbs)
+- [publish to the symbol server](../../pipelines/artifacts/symbols.md#publish-symbols).
+- [Publish to a file share](../../pipelines/artifacts/symbols.md#publish-symbols-to-a-file-share).
+- [Publish to Portable PDBs](../../pipelines/artifacts/symbols.md#portable-pdbs).
 
 ## Consuming symbol files
 
