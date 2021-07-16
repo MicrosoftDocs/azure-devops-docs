@@ -339,13 +339,14 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 run the `vsts-npm-auth` command with the -F argument to re-authenticate.
 
-    ```Command
+    ```
     vsts-npm-auth -config .npmrc -F
     ```
 
 ::: moniker-end
 
-## Next steps
+## Related articles
 
-> [!div class="nextstepaction"]
-> [Publish npm packages to your feed](../../pipelines/artifacts/npm.md)
+- [npm scopes](./scopes.md)
+- [npm audit](./npm-audit.md)
+- [Publish npm packages](../../pipelines/artifacts/npm.md)
