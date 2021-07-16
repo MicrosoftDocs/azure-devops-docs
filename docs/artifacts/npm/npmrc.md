@@ -337,7 +337,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 - If you are running into a E401 error: `code E401 npm ERR! Unable to authenticate`
 
-run the `vsts-npm-auth` command with the -F argument to re-authenticate.
+    run the `vsts-npm-auth` command with the -F argument to re-authenticate.
 
     ```
     vsts-npm-auth -config .npmrc -F
