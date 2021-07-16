@@ -233,7 +233,12 @@ From the **Pipeline settings** pane you can configure the following settings.
 * **Automatically link work items included in this run** - The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When **Automatically link work items included in this run** is selected, you must specify a either a specific branch, or `*` for all branches, which is the default. If you specify a branch, work items are only associated with runs of that branch. If you specify `*`, work items are associated for all runs. 
 
   :::image type="content" source="media/customize-pipeline/link-work-items.png" alt-text="Automatically link work items included in this run.":::
+
   * To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/manage-team-group-global-organization-notifications.md)
+
+## Create work item on failure
+
+YAML pipelines don't have a [Create a work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. To implement **Create a work item on failure** in a YAML pipeline, you can use the [Work Items - Create](/rest/api/azure/devops/wit/work%20items/create?view=azure-devops-rest-6.1&preserve-view-true) REST API call at the desired point in your pipeline
 
 You've just learned the basics of customizing your pipeline. Next we recommend that you learn more about customizing a pipeline for the language you use:
 
