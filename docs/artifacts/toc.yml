@@ -42,7 +42,7 @@
     - name: Publish to a NuGet feed (YAML/Classic)
       href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
       displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline 
-    - name: Publish to a NuGet feed (CLI)
+    - name: Connect to a feed and publish packages (CLI)
       href: nuget/publish.md
       displayName: publish package, nuget feed, cli
     - name: Publish to NuGet.org
