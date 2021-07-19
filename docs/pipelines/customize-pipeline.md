@@ -271,8 +271,7 @@ jobs:
   - script: git clone malformed input
     condition: eq(${{ parameters.succeed }}, false)
 
-# This job only runs if the previous job failed
-# and create a work item
+# This job creates a work item, and only runs if the previous job failed
 - job: ErrorHandler
   dependsOn: Work
   condition: failed()
@@ -290,7 +289,7 @@ jobs:
 
 The previous example uses [Runtime paramaters](process/runtime-parameters.md) to configure whether the pipeline succeeds or fails. When manually running the pipeline, you can set the value of the `succeed` parameter. The `script` step in the first job of the pipeline evaluates the `succeed` parameter and only runs when `succeed` is set to false.
 
-The second job in the pipeline has a dependency on the first pipeline, and only runs if the first job fails. The second job uses the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command to create a bug.
+The second job in the pipeline has a dependency on the first pipeline, and only runs if the first job fails. The second job uses the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command to create a bug. For more information on running Azure DevOps CLI commands from a pipeline, see [Run commands in a YAML pipeline](../cli/azure-devops-cli-in-yaml.md).
 
 This example uses two jobs, but this same approach could be used across [multiple stages](process/stages).
 
