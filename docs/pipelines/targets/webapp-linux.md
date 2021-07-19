@@ -23,7 +23,7 @@ Azure App Service is a managed environment for hosting web applications, REST AP
 
 To learn how to deploy to an Azure Web App for Linux Containers, see [Deploy an Azure Web App Container](webapp-on-container-linux.md). To learn how to deploy to a Windows environment, see[ Deploy an Azure Web App for Windows](webapp.md).
 
-You'll use the [Azure App Service Deploy task](../tasks/deploy/azure-rm-web-app-deployment.md) to deploy to Azure App Service in your pipeline. 
+You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to deploy to Azure App Service in your pipeline. 
 
 
 ## Get the code
@@ -62,7 +62,10 @@ However, if you are a new user, then you might get a better start by using our s
 
 * * *
 
+
 ## Create your pipeline
+
+::: moniker range=">= azure-devops-2019"
 
 #### [YAML](#tab/yaml/)
 
@@ -73,7 +76,7 @@ However, if you are a new user, then you might get a better start by using our s
 [!INCLUDE [include](../ecosystems/includes/create-project.md)]
 
 
-### Create the pipeline
+### Build the pipeline
 
 [!INCLUDE [include](../ecosystems/includes/create-pipeline-before-template-selected.md)]
 
@@ -91,7 +94,6 @@ However, if you are a new user, then you might get a better start by using our s
 3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 4. See the sections below to learn some of the more common ways to customize your pipeline.
-
 
 ::: moniker-end
 
@@ -125,23 +127,23 @@ To get started:
    https://github.com/MicrosoftDocs/pipelines-dotnet-core
    ```
 
-2. Create a pipeline and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
+1. Create a pipeline and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
 
-3. Save the pipeline and queue a build to see it in action.
+1. Save the pipeline and queue a build to see it in action.
 
-4. Create a release pipeline and select the **Empty job** for your stage.Search for the **AzureWebAppDeploy** task and configure accordingly. 
+1. Create a release pipeline and select the **Empty job** for your stage.Search for the **AzureWebAppDeploy** task and configure accordingly. 
 
-5. Link the build pipeline as an artifact for this release pipeline. Save the release pipeline and create a release to see it in action.
+1. Link the build pipeline as an artifact for this release pipeline. Save the release pipeline and create a release to see it in action.
 
 * * *
 
-Now you're ready to read through the rest of this topic to learn some of the more common configurations to customize the deployment of the Azure Web App.
+Now you're ready to read through the rest of this topic to learn some of the more common configurations to customize the deployment of an Azure Web App.
 
 <a name="endpoint"></a>
 
 ## Azure service connection
 
-The **Azure Web App** task, similar to other built-in Azure tasks, requires an Azure service connection as an
+The [Azure Web App task](../tasks/deploy//azure-rm-web-app.md), similar to other built-in Azure tasks, requires an Azure service connection as an
 input. The Azure service connection stores the credentials to connect from Azure Pipelines or Azure DevOps Server to Azure.
 
 #### [YAML](#tab/yaml/)
