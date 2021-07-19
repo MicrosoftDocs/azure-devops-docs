@@ -68,21 +68,21 @@ However, if you are a new user, then you might get a better start by using our s
 
 ### Sign in to Azure Pipelines
 
-[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](../ecosystems/includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](includes/create-project.md)]
+[!INCLUDE [include](../ecosystems/includes/create-project.md)]
 
 
 ### Create the pipeline
 
-[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](../ecosystems/includes/create-pipeline-before-template-selected.md)]
 
 > When the **Configure** tab appears, select **ASP.NET Core**, **Maven package Java project Web App to Linux on Azure**, or **Node.js**.
 
 1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+   > ![Save and run button in a new YAML pipeline](../ecosystems/media/save-and-run-button-new-yaml-pipeline.png)
 
 2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
