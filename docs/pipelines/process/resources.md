@@ -514,8 +514,6 @@ resources:
         include: 
         - production* 
 ```
-The pipeline will trigger on all images whose tag matches `'production*'`, e.g. `production1`, `production-v1`, and `production-xyz`.
-
 ---
 #### Container resource variables
 Once you define a container as resource, container image metadata is passed to the pipeline in the form of variables. Information like image, registry, and connection details are made accessible across all the jobs to be used in your container deploy tasks. 
