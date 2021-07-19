@@ -492,10 +492,13 @@ resources:          # types: pipelines | repositories | containers | builds | pa
     registry: string # registry for container images
     repository: string # name of the container image repository in ACR
     trigger: # Triggers are not enabled by default and need to be set explicitly
+      enabled: boolean # set to 'true' to trigger on all image tags if 'tags' is unset.
       tags:
         include: [ string ]  # image tags to consider the trigger events, optional; defaults to any new tag
         exclude: [ string ]  # image tags on discard the trigger events, optional; defaults to none
 ```
+> Remark that the syntax of enabling container triggers for all image tags, i.e. using `'enabled: true'`, differs from that of other resource triggers. Pay close attention to the correct syntax for a particular resource.
+
 ## [Example](#tab/example)
 
 ```yaml
@@ -512,7 +515,10 @@ resources:
         include: 
         - production* 
 ```
+The pipeline will trigger on all images whose tag match `'production*'`, e.g. `production1`, `production-v1`, and `production-xyz`.
+
 ---
+
 #### Container resource variables
 Once you define a container as resource, container image metadata is passed to the pipeline in the form of variables. Information like image, registry, and connection details are made accessible across all the jobs to be used in your container deploy tasks. 
 
