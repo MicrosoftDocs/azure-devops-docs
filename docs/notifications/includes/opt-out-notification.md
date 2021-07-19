@@ -13,6 +13,8 @@ ms.date: 07/19/2021
 
 You can choose to not receive notifications for certain team notification subscriptions by opting out.
 
+::: moniker-end
+
 ::: moniker range="azure-devops"
 
 To access the Preview features options, open your profile menu. The profile menu appears, as shown, based on whether the **New Account Manager** feature is enabled.
@@ -23,7 +25,7 @@ To access the Preview features options, open your profile menu. The profile menu
 
 1. Select :::image type="icon" source="../media/icons/user-settings-gear.png" border="false":::  **User settings**, and then select **Notifications** from the resulting list.
 
-   :::image type="content" source="media/personal-notifications-preview.png" alt-text="Go to personal notifications, preview page.":::
+   :::image type="content" source="../media/personal-notifications-preview.png" alt-text="Go to personal notifications, preview page.":::
 
 1. To unsubscribe from any notification, slide the state **On/Off** indicator ot the *Off* position.
 #### [New Account Manager not enabled](#tab/new-account-not-enabled)
@@ -32,7 +34,7 @@ To access the Preview features options, open your profile menu. The profile menu
 
 1. Open your **User settings**, and then select **Notification settings** from the resulting list.
 
-   ![Go to personal notifications, current page](media/nav-personal-notifications-hub-newnav.png)  
+   :::image type="content" source="../media/nav-personal-notifications-hub-newnav.png" alt-text="Go to personal notifications, current page."::: 
 
 1. To unsubscribe from any notification, slide the state **On/Off** indicator ot the *Off* position.
 
