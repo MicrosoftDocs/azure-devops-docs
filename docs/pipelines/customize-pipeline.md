@@ -250,9 +250,6 @@ parameters:
   displayName: Succeed or fail
   type: boolean
   default: false
-  values:
-  - true
-  - false
 
 trigger:
 - main
