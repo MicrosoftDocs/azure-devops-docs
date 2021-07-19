@@ -17,22 +17,18 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-You can use Azure Pipelines to continuously deploy your web app to [Azure App Service](azure/app-service/overview) on every successful build. This article focuses on deploying a Linux web app. Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
+You can use Azure Pipelines to continuously deploy your web app to [Azure App Service](/azure/app-service/overview) on every successful build. This article focuses on deploying a Linux web app. 
+
+Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
 
 To learn how to deploy to an Azure Web App for Linux Containers, see [Deploy an Azure Web App Container](webapp-on-container-linux.md). To learn how to deploy to a Windows environment, see[ Deploy an Azure Web App for Windows](webapp.md).
 
 You'll use the [Azure App Service Deploy task](../tasks/deploy/azure-rm-web-app-deployment.md) to deploy to Azure App Service in your pipeline. 
 
-::: moniker range="azure-devops"
 
-> [!NOTE]
-> This guidance applies to Azure DevOps Services.
+## Get the code
 
-::: moniker-end
-
-## Before you begin
-
-Based on the desired runtime, [import](../../repos/git/import-git-repository.md) (into Azure DevOps) or fork (into GitHub) the following repository.
+Get started with a sample project. Based on your desired runtime, fork the code in .NET Core, Java, Node.js.
 
 #### [.NET Core](#tab/dotnet-core/)
 
@@ -66,23 +62,36 @@ However, if you are a new user, then you might get a better start by using our s
 
 * * *
 
-## Build your app
+## Create your pipeline
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range="azure-devops"
+### Sign in to Azure Pipelines
 
-#### [.NET Core](#tab/dotnet-core/)
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
 
-Follow the [Build, test, and deploy .NET Core apps](../ecosystems/dotnet-core.md) till **Create your first pipeline** section to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and publish the source as an artifact.
+[!INCLUDE [include](includes/create-project.md)]
 
-#### [Java](#tab/java)
 
-Setup a CI pipeline for [building and deploying](../ecosystems/java.md) the source as an artifact to a Linux App Service.
+### Create the pipeline
 
-#### [Nodejs](#tab/nodejs)
+[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-Setup a CI pipeline for [building and deploying](../ecosystems/javascript.md) the source as an artifact to a Linux App Service.
+> When the **Configure** tab appears, select **ASP.NET Core**, **Maven package Java project Web App to Linux on Azure**, or **Node.js**.
+
+1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+
+2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+
+3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
+4. See the sections below to learn some of the more common ways to customize your pipeline.
+
 
 ::: moniker-end
 
