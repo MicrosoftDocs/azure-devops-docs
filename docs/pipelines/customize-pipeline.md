@@ -7,7 +7,7 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 07/15/2021
+ms.date: 07/19/2021
 monikerRange: ">= azure-devops-2019"
 ---
 
@@ -239,6 +239,58 @@ From the **Pipeline settings** pane you can configure the following settings.
 ## Create work item on failure
 
 YAML pipelines don't have a [Create a work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. To implement **Create a work item on failure** in a YAML pipeline, you can use the [Work Items - Create](/rest/api/azure/devops/wit/work%20items/create?view=azure-devops-rest-6.1&preserve-view-true) REST API call at the desired point in your pipeline
+
+```yml
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+parameters:
+- name: succeed
+  displayName: Succeed or fail
+  type: boolean
+  default: false
+  values:
+  - true
+  - false
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+- job: Work
+  steps:
+  - script: echo Hello, world!
+    displayName: 'Run a one-line script'
+
+  - script: git clone badinput
+    condition: eq(${{ parameters.succeed }}, false)
+
+# This job only runs if the previous job failed
+# and create a work item
+- job: ErrorHandler
+  dependsOn: Work
+  condition: failed()
+  steps: 
+
+  - bash: |
+      az boards work-item create \
+        --title "Build $(build.buildNumber) failed" \
+        --type bug \
+        --org $(System.TeamFoundationCollectionUri) \
+        --project $(System.TeamProject) \
+        --query "id" \
+        --output tsv
+    env: 
+      AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
+    displayName: 'Create work item on failure'
+```
+
+## Next steps
 
 You've just learned the basics of customizing your pipeline. Next we recommend that you learn more about customizing a pipeline for the language you use:
 
