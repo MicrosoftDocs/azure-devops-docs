@@ -24,16 +24,7 @@ You can manage your personal notifications in the following ways:
 - Add a custom notification subscription
 - Unsubscribe or opt out of a team or project notification subscription
 
-Personal notifications get sent to you in the form of an email, as changes occur to the following items in Azure DevOps:
-
-- Builds
-- Code (Git)
-- Code (TFVC)
-- Pipelines
-- Work  
-- Artifacts
-- Extensions
-- Releases
+Personal notifications get sent to you in the form of an email as changes occur to builds, code, pipelines, work, artifacts, extensions, releases, and more.
 
 For information about team and project-level notifications, see [Team and project-level notifications](about-notifications.md#team-and-project-level-notifications) and [Manage team or group notifications](manage-team-group-global-organization-notifications.md).
 
@@ -50,7 +41,7 @@ For information about team and project-level notifications, see [Team and projec
 
 ## View your personal notifications
 
-The following table shows a representation of notification event examples. For more information, see a [full representation](about-notifications.md#team-and-project-level-notifications).
+The following table shows notification event examples. For more information, see a full representation in [About notifications](about-notifications.md#team-and-project-level-notifications).
 
 | Item                | Notification event examples |
 |---------------------|---------------------------------------------------------|
