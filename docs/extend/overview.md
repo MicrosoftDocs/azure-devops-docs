@@ -78,5 +78,5 @@ You can develop an extension for your continuous delivery pipeline as described 
 
 * [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
 * [Extension Publisher Page](https://marketplace.visualstudio.com/manage)
-* [Visual Studio Partner Program](https://vspartner.com/)
+* [Visual Studio Partner Program](https://partner.microsoft.com/solutions/microsoft-visual-studio)
 * [Extension manifest reference](./develop/manifest.md)
