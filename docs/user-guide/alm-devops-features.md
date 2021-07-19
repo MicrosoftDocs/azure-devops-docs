@@ -1799,20 +1799,20 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Visual Studio language pack</b></p>
 <p>Install the <a href="https://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](https://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5" data-raw-source="[switch the UI display to different languages](https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
 <ul>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">English</a></li>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Chinese Simplified</a></li>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Chinese Traditional</a></li>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Czech</a></li>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">German</a></li>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">French</a></li>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Italian</a></li>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Japanese</a></li>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Korean</a></li>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Polish</a></li>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Portuguese (Brazil)</a></li>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Russian</a></li>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Spanish</a></li>
-<li><a href="/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Turkish</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">English</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Chinese Simplified</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Chinese Traditional</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Czech</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">German</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">French</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Italian</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Japanese</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Korean</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Polish</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Portuguese (Brazil)</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Russian</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Spanish</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Turkish</a></li>
 </ul>
 <br/>
 
