@@ -236,7 +236,7 @@ From the **Pipeline settings** pane you can configure the following settings.
 
   * To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/manage-team-group-global-organization-notifications.md)
 
-## Create work item on failure
+### Create work item on failure
 
 YAML pipelines don't have a [Create a work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. To implement **Create a work item on failure** in a YAML pipeline, you can use methods such as the [Work Items - Create](/rest/api/azure/devops/wit/work%20items/create?view=azure-devops-rest-6.1&preserve-view-true) REST API call or the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command at the desired point in your pipeline. 
 
