@@ -58,7 +58,7 @@ To access the Preview features options, open your profile menu. The profile menu
 
 1. Select :::image type="icon" source="../media/icons/user-settings-gear.png" border="false":::  **User settings**, and then select **Notifications** from the resulting list.
 
-   :::image type="content" source="media/personal-notifications-preview.png" alt-text="Go to personal notifications, preview page.":::
+   :::image type="content" source="media/personal-notifications-preview.png" alt-text="Preview page of personal notifications.":::
 
 #### [New Account Manager not enabled](#tab/new-account-not-enabled)
 

@@ -23,9 +23,9 @@ To access the Preview features options, open your profile menu. The profile menu
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-1. Select :::image type="icon" source="../media/icons/user-settings-gear.png" border="false":::  **User settings**, and then select **Notifications** from the resulting list.
+1. Select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::  **User settings**, and then select **Notifications** from the resulting list.
 
-   :::image type="content" source="../media/personal-notifications-preview.png" alt-text="Go to personal notifications, preview page.":::
+   :::image type="content" source="../media/personal-notifications-preview.png" alt-text="Screenshot of personal notifications, preview page.":::
 
 1. To unsubscribe from any notification, slide the state **On/Off** indicator ot the *Off* position.
 #### [New Account Manager not enabled](#tab/new-account-not-enabled)
