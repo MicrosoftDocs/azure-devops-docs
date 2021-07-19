@@ -7,7 +7,7 @@ ms.assetid:
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 09/09/2019
+ms.date: 07/19/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -17,12 +17,15 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-You can automatically deploy your web app to an Azure App Service Linux on every successful build.
+You can use Azure Pipelines to continuously deploy your web app to [Azure App Service](azure/app-service/overview) on every successful build.
+
+Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
+
+You'll use the [Azure App Service Deploy task](../tasks/deploy/azure-rm-web-app-deployment.md) to deploy to Azure App Service in your pipeline. 
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]
- 
 > This guidance applies to Azure DevOps Services.
 
 ::: moniker-end
