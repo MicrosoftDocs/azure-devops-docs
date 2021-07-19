@@ -514,7 +514,7 @@ resources:
         include: 
         - production* 
 ```
-The pipeline will trigger on all images whose tag match `'production*'`, e.g. `production1`, `production-v1`, and `production-xyz`.
+The pipeline will trigger on all images whose tag matches `'production*'`, e.g. `production1`, `production-v1`, and `production-xyz`.
 
 ---
 #### Container resource variables
