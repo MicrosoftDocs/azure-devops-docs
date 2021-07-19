@@ -17,9 +17,9 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-You can use Azure Pipelines to continuously deploy your web app to [Azure App Service](azure/app-service/overview) on every successful build.
+You can use Azure Pipelines to continuously deploy your web app to [Azure App Service](azure/app-service/overview) on every successful build. This article focuses on deploying a Linux web app. Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
 
-Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
+To learn how to deploy to an Azure Web App for Linux Containers, see [Deploy an Azure Web App Container](webapp-on-container-linux.md). To learn how to deploy to a Windows environment, see[ Deploy an Azure Web App for Windows](webapp.md).
 
 You'll use the [Azure App Service Deploy task](../tasks/deploy/azure-rm-web-app-deployment.md) to deploy to Azure App Service in your pipeline. 
 
