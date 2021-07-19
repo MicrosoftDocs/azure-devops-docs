@@ -60,7 +60,7 @@ After a team has worked with WIP limits for several weeks, discuss the challenge
 
 * **Use metrics to adjust processes.** Periodically check Kanban metrics of work in progress and lead time to determine when changes need to be made. 
 
-* **Manage culture changes mindfully.** People want to do their best work&mdash;a core tenant underlying Kanban and its associated disciplines. Apply change management principles as you adopt new practices. Create greater ownership within the team for the success of implementing WIP limits.
+* **Manage culture changes mindfully.** People want to do their best work&mdash;a core tenet underlying Kanban and its associated disciplines. Apply change management principles as you adopt new practices. Create greater ownership within the team for the success of implementing WIP limits.
 
 <a id="dod" />
 
