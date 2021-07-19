@@ -65,7 +65,7 @@ However, if you are a new user, then you might get a better start by using our s
 
 ## Create your pipeline
 
-## [YAML](#tab/yaml/)
+#### [YAML](#tab/yaml/)
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -109,7 +109,7 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-## [Classic](#tab/classic/)
+#### [Classic](#tab/classic/)
 
 ::: moniker range="< azure-devops"
 
