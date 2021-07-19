@@ -238,7 +238,7 @@ From the **Pipeline settings** pane you can configure the following settings.
 
 ### Create work item on failure
 
-YAML pipelines don't have a [Create a work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. To implement **Create a work item on failure** in a YAML pipeline, you can use methods such as the [Work Items - Create](/rest/api/azure/devops/wit/work%20items/create?view=azure-devops-rest-6.1&preserve-view-true) REST API call or the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command at the desired point in your pipeline. 
+YAML pipelines don't have a [Create a work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. To implement **Create a work item on failure** in a YAML pipeline, you can use methods such as the [Work Items - Create](/rest/api/azure/devops/wit/work%20items/create?view=azure-devops-rest-6.1&preserve-view=true) REST API call or the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command at the desired point in your pipeline. 
 
 The following example has two jobs. The first job represents the work of the pipeline, but if it fails, the second job runs, and creates a work item in the same project as the pipeline.
 
@@ -288,7 +288,7 @@ The previous example uses [Runtime paramaters](process/runtime-parameters.md) to
 
 The second job in the pipeline has a dependency on the first pipeline, and only runs if the first job fails. The second job uses the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command to create a bug. For more information on running Azure DevOps CLI commands from a pipeline, see [Run commands in a YAML pipeline](../cli/azure-devops-cli-in-yaml.md).
 
-This example uses two jobs, but this same approach could be used across [multiple stages](process/stages).
+This example uses two jobs, but this same approach could be used across [multiple stages](process/stages.md).
 
 ## Next steps
 
