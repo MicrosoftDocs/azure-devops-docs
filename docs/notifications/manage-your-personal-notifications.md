@@ -24,11 +24,7 @@ You can manage your personal notifications in the following ways:
 - Add a custom notification subscription
 - Unsubscribe or opt out of a team or project notification subscription
 
-For more information about team and project-level notifications, see [Team and project-level notifications](about-notifications.md#team-and-project-level-notifications).
-
-You can also [set team or group notifications](manage-team-group-global-organization-notifications.md).
-
-You can receive personal email notifications as changes occur to the following items in Azure DevOps:
+Personal notifications get sent to you in the form of an email, as changes occur to the following items in Azure DevOps:
 
 - Builds
 - Code (Git)
@@ -39,6 +35,8 @@ You can receive personal email notifications as changes occur to the following i
 - Extensions
 - Releases
 
+For information about team and project-level notifications, see [Team and project-level notifications](about-notifications.md#team-and-project-level-notifications) and [Manage team or group notifications](manage-team-group-global-organization-notifications.md).
+
 [!INCLUDE [note-earlier-tfs-version](includes/note-earlier-tfs-version.md)]
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
@@ -47,8 +45,8 @@ You can receive personal email notifications as changes occur to the following i
 
 ## Prerequisites
 
-- Every user can manager their personal notifications.
-- See [about notifications](about-notifications.md).
+- Every user can manage their personal notifications
+- See [about notifications](about-notifications.md)
 
 ## View your personal notifications
 
@@ -93,6 +91,8 @@ To access the Preview features options, open your profile menu. The profile menu
 
 ## Set personal alerts
 
+In this context, an *alert* is effectively the same as a *notification*.
+
 1. Open **My alerts** from your profile menu. If you don't see this option, then  [configure an SMTP server to support TFS](/azure/devops/server/admin/setup-customize-alerts).
 
    ![Manage individual alerts from the web portal](media/set-alerts-from-profile-menu.png)
@@ -115,7 +115,7 @@ To access the Preview features options, open your profile menu. The profile menu
    > [!TIP]
    > When you clear an alert, you also clear all email addresses defined for the alert.  
 
-   For more options, open custom alerts and choose one of the options available. Also, you can open a basic alert and modify its settings, such as change the email format from HTML to plain text or SOAP.
+   Open custom alerts for more options. Also, you can open a basic alert and modify its settings, such as change the email format from HTML to plain text or SOAP.
 
    ![Open custom alerts](media/personal/ALM_AN_CustomAlerts.png)
 
