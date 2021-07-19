@@ -1764,7 +1764,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Language Interface Packs (LIPs)</b></p>
-<p>By using a <a href="/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio" data-raw-source="[Windows Language Interface Pack (LIP)](/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio)">Windows Language Interface Pack (LIP)</a>, you can install a language version of Windows, and then install various User Interface Language Packs. Language packs switch your English Visual Studio Professional user interface into any of these languages and have a majority of the user interface localized. </p>
+<p>By using a <a href="https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5" data-raw-source="[Windows Language Interface Pack (LIP)](https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5)">Windows Language Interface Pack (LIP)</a>, you can install a language version of Windows, and then install various User Interface Language Packs. Language packs switch your English Visual Studio Professional user interface into any of these languages and have a majority of the user interface localized. </p>
 
 </td>
 <td width="33%">
@@ -1797,7 +1797,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Visual Studio language pack</b></p>
-<p>Install the <a href="https://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](https://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio" data-raw-source="[switch the UI display to different languages](/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
+<p>Install the <a href="https://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](https://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5" data-raw-source="[switch the UI display to different languages](https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
 <ul>
 <li><a href="/visualstudio/welcome-to-visual-studio-2015">English</a></li>
 <li><a href="/visualstudio/welcome-to-visual-studio-2015">Chinese Simplified</a></li>
