@@ -238,14 +238,13 @@ From the **Pipeline settings** pane you can configure the following settings.
 
 ## Create work item on failure
 
-YAML pipelines don't have a [Create a work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. To implement **Create a work item on failure** in a YAML pipeline, you can use the [Work Items - Create](/rest/api/azure/devops/wit/work%20items/create?view=azure-devops-rest-6.1&preserve-view-true) REST API call at the desired point in your pipeline
+YAML pipelines don't have a [Create a work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. To implement **Create a work item on failure** in a YAML pipeline, you can use methods such as the [Work Items - Create](/rest/api/azure/devops/wit/work%20items/create?view=azure-devops-rest-6.1&preserve-view-true) REST API call or the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command at the desired point in your pipeline. 
+
+The following example has two jobs. The first job represents the work of the pipeline, but if it fails, the second job runs, and creates a work item in the same project as the pipeline.
 
 ```yml
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
+# When manually running the pipeline, you can select whether it
+# succeeds or fails.
 parameters:
 - name: succeed
   displayName: Succeed or fail
@@ -267,7 +266,9 @@ jobs:
   - script: echo Hello, world!
     displayName: 'Run a one-line script'
 
-  - script: git clone badinput
+  # This malformed command causes the job to fail
+  # Only run this command if the succeed variable is set to false
+  - script: git clone malformed input
     condition: eq(${{ parameters.succeed }}, false)
 
 # This job only runs if the previous job failed
@@ -276,19 +277,22 @@ jobs:
   dependsOn: Work
   condition: failed()
   steps: 
-
   - bash: |
       az boards work-item create \
         --title "Build $(build.buildNumber) failed" \
         --type bug \
         --org $(System.TeamFoundationCollectionUri) \
-        --project $(System.TeamProject) \
-        --query "id" \
-        --output tsv
+        --project $(System.TeamProject)
     env: 
       AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
     displayName: 'Create work item on failure'
 ```
+
+The previous example uses [Runtime paramaters](process/runtime-parameters.md) to configure whether the pipeline succeeds or fails. When manually running the pipeline, you can set the value of the `succeed` parameter. The `script` step in the first job of the pipeline evaluates the `succeed` parameter and only runs when `succeed` is set to false.
+
+The second job in the pipeline has a dependency on the first pipeline, and only runs if the first job fails. The second job uses the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command to create a bug.
+
+This example uses two jobs, but this same approach could be used across [multiple stages](process/stages).
 
 ## Next steps
 
