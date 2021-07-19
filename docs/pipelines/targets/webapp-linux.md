@@ -65,9 +65,9 @@ However, if you are a new user, then you might get a better start by using our s
 
 ## Create your pipeline
 
-::: moniker range=">= azure-devops-2019"
+## [YAML](#tab/yaml/)
 
-#### [YAML](#tab/yaml/)
+::: moniker range=">= azure-devops-2020"
 
 ### Sign in to Azure Pipelines
 
@@ -94,7 +94,6 @@ However, if you are a new user, then you might get a better start by using our s
 3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 4. See the sections below to learn some of the more common ways to customize your pipeline.
-
 ::: moniker-end
 
 ::: moniker range="= azure-devops-2019"
@@ -110,7 +109,7 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-#### [Classic](#tab/classic/)
+## [Classic](#tab/classic/)
 
 ::: moniker range="< azure-devops"
 
