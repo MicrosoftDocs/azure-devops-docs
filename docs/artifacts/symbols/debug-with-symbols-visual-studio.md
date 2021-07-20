@@ -1,47 +1,44 @@
 ---
 title: Debug with symbols in Visual Studio
-description: Debug with symbols in Visual Studio using the Symbol Server in Azure Artifacts
+description: Use symbols to debug your application with Visual Studio.
 ms.assetid: 318323C4-5B2F-45DE-A834-CCE03C670F8C
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 11/06/2020
+ms.date: 07/20/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Debug with symbols in Visual Studio
+# Debug with Visual Studio
 
-[!INCLUDE [](../includes/availability-symbols.md)]
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. These files contain useful information for the debugger and generally have the `PDB` extension.
+Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. These files contain useful information for the debugger and generally have the *PDB* extension. You can use Visual Studio to consume your symbols from Azure Artifacts symbol server or other external sources to step into your code and debug your application.
 
-## Add the symbol server to Visual Studio
+## Add Azure Artifacts symbol server
 
-To debug with symbols, select and add the Azure DevOps Services symbol server to your Visual Studio environment.
+To debug with symbols from the Azure Artifacts symbol server, we must authenticate to the server and add a new Azure DevOps Services symbol server to our Visual Studio environment.
 
-1. Select **Tools**, then **Options**, then **Debugging**.
+1. From Visual Studio select **Tools** > **Options** > **Debugging**.
 
-1. Select **Symbols** and select the `+` sign to add a new Azure DevOps symbol server location.
+1. Select **Symbols** from the list, and then select the `+` sign to add a new Azure DevOps symbol server location.
 
-    > [!div class="mx-imgBorder"]
-    > ![Add Azure DevOps Services Symbol Server in Visual Studio settings](media/add-server-location.png)
+    :::image type="content" source="media/add-server-location.png" alt-text="Add a new Azure DevOps symbol server location":::
 
-1. In the **Connect to Azure DevOps Symbol Server** dialog, select your account from the dropdown menu, then select the organization that you wish to connect to. Select **Connect** to connect to the symbol server.
+1. A new dialog box **Connect to Azure DevOps Symbol Server** will open, select your account from the dropdown menu, and then select the organization that you wish to connect to. Select **Connect** when you are done to connect to the symbol server.
 
-    > [!div class="mx-imgBorder"]
-    > ![Connect to Azure DevOps Symbol Server](media/connect-to-symbol-server.png)
+    :::image type="content" source="media/connect-to-symbol-server.png" alt-text="Connect to Azure DevOps Symbol Server":::
 
-1. Your symbol server is added to the list of symbol file locations.
+1. Your symbol server is then added to the list of symbol file locations.
 
-    > [!div class="mx-imgBorder"]
-    > ![New symbol server added to the list of symbol file locations](media/symbol-locations.png)
+    :::image type="content" source="media/symbol-locations.png" alt-text="New symbol server added to the list of symbol file locations":::
 
 ## Debugging optimized modules
 
-If you're debugging an optimized module (e.g. something that was built with the `Release` configuration) and you haven't modified the default `Enable Just My Code` setting, Visual Studio will not automatically fetch symbols for the optimized module.
+If you're planning to debug an optimized module (example release binaries) or a third-party source code, we recommend that you uncheck the `Enable Just My Code` checkbox in Visual Studio options.
 
-To debug the module, you can either:
-- Open the Modules window, right-click and select **Load Symbols** (recommended).
-- Select **Tools** then **Options**. Select **Debugging** in the right panel then chose **General**. uncheck **Enable Just My Code**. 
+To do so, select **Tools** > **Options** and then **Debugging**. Select **General** from the list and then uncheck **Enable Just My Code**.
+
+:::image type="content" source="media/enable-just-my-code.png" alt-text="Enable just my code - enable 3rd party source code debugging":::
 
 ## Source Link support
 
