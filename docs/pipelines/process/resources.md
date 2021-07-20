@@ -492,10 +492,16 @@ resources:          # types: pipelines | repositories | containers | builds | pa
     registry: string # registry for container images
     repository: string # name of the container image repository in ACR
     trigger: # Triggers are not enabled by default and need to be set explicitly
+      enabled: boolean # set to 'true' to trigger on all image tags if 'tags' is unset.
       tags:
         include: [ string ]  # image tags to consider the trigger events, optional; defaults to any new tag
         exclude: [ string ]  # image tags on discard the trigger events, optional; defaults to none
 ```
+
+> [!NOTE]
+> The syntax that's used to enable container triggers for all image tags (that is, `enabled: 'true'`) is different from the syntax that's used for other resource triggers. Pay close attention to using the correct syntax for a specific resource.
+
+
 ## [Example](#tab/example)
 
 ```yaml
