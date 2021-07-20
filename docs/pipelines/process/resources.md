@@ -497,7 +497,11 @@ resources:          # types: pipelines | repositories | containers | builds | pa
         include: [ string ]  # image tags to consider the trigger events, optional; defaults to any new tag
         exclude: [ string ]  # image tags on discard the trigger events, optional; defaults to none
 ```
-> Remark that the syntax of enabling container triggers for all image tags, i.e. using `'enabled: true'`, differs from that of other resource triggers. Pay close attention to the correct syntax for a particular resource.
+
+> [!NOTE]
+> The syntax that's used to enable container triggers for all image tags (that is, `enabled: 'true'`) is different from the syntax that's used for other resource triggers. Pay close attention to using the correct syntax for a specific resource.
+
+
 ## [Example](#tab/example)
 
 ```yaml
