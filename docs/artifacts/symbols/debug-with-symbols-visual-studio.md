@@ -6,6 +6,7 @@ ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 07/20/2021
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
 # Debug with Visual Studio
@@ -40,18 +41,10 @@ To do so, select **Tools** > **Options** and then **Debugging**. Select **Genera
 
 :::image type="content" source="media/enable-just-my-code.png" alt-text="Enable just my code - enable 3rd party source code debugging":::
 
-## Source Link support
+## Load symbols and debug
 
-We recommend enabling source link support to step into source code. To do so, check **Enable Source Link support** under Options > Debugging > General. By default Source Link support is enabled in Visual Studio.
+## Related articles
 
-If you choose to enable source server support, please consider the [security implications](/visualstudio/debugger/source-server-security-alert) before doing so.
-
-### Portable PDBs and Source Link
-
-If you're using [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), Source Link does not support authenticating to private source repositories like Azure DevOps Services. See [Source Link diagnostics](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/source-link.md) for more details.
-
-## What's next?
-
-* [Symbol files](../concepts/symbols.md).
-* [Publish symbols for debugging](../../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json). 
-* [Debug with symbols in WinDbg](debug-with-symbols-windbg.md).
+- [Symbols overview](../concepts/symbols.md).
+- [Debug with WinDbg](debug-with-symbols-windbg.md).
+- [Artifacts in Azure Pipelines](../../pipelines/artifacts/artifacts-overview.md)
