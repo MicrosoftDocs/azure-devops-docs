@@ -228,7 +228,7 @@ sections:
       - question: |
           Q: Can I change my organization Owner?
         answer: |
-          A: Yes. If you have at least Basic access, you can change the organization Owner in your organization settings. For more information, see [Change the organization owner](./change-organization-ownership.md).
+          A: Yes. If you are a Project Collection Administrator, you can change the organization Owner in your organization settings. For more information, see [Change the organization owner](./change-organization-ownership.md).
           
       - question: |
           Q: Can I change the organization name (URL), too?
