@@ -4,7 +4,7 @@ description: Contextual data available to pipeline decorators
 ms.topic: reference
 ms.technology: devops-cicd
 ms.assetid: fe3e1e94-0415-400a-9b2d-7eeadb6101fc
-ms.date: 03/01/2019
+ms.date: 07/20/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -113,7 +113,7 @@ If the variable isn't present, then the decorator is injected as usual.
 
 #### my-decorator.yml
 ```yaml
-- ${{ if ne(variables['skipInjecting'], 'true') }}
+- ${{ if ne(variables['skipInjecting'], 'true') }}:
   - script: echo Injected the decorator
 ```
 
