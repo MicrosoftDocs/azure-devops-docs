@@ -80,20 +80,20 @@ However, if you are a new user, then you might get a better start by using our s
 
 [!INCLUDE [include](../ecosystems/includes/create-pipeline-before-template-selected.md)]
 
-> When the **Configure** tab appears, select **ASP.NET Core**, **Maven package Java project Web App to Linux on Azure**, or **Node.js**.
-
+  > When the **Configure** tab appears, select **ASP.NET Core**, **Maven package Java project Web App to Linux on Azure**, or **Node.js**.
+    
 1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
    > ![Save and run button in a new YAML pipeline](../ecosystems/media/save-and-run-button-new-yaml-pipeline.png)
 
-2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+1. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
-3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+1. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
-4. See the sections below to learn some of the more common ways to customize your pipeline.
+1. See the sections below to learn some of the more common ways to customize your pipeline.
 ::: moniker-end
 
 ::: moniker range="= azure-devops-2019"
