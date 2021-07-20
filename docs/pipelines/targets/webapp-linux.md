@@ -76,12 +76,14 @@ However, if you are a new user, then you might get a better start by using our s
 [!INCLUDE [include](../ecosystems/includes/create-project.md)]
 
 
-### Build the pipeline
+### Create a new pipeline
 
 [!INCLUDE [include](../ecosystems/includes/create-pipeline-before-template-selected.md)]
 
   > When the **Configure** tab appears, select **ASP.NET Core**, **Maven package Java project Web App to Linux on Azure**, or **Node.js**.
-    
+
+### Run your pipeline
+
 1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
