@@ -197,7 +197,7 @@
     displayName: policies, retention, pipeline artifact 
   - name: Symbols
     items:
-    - name: Symbol files
+    - name: Symbols overview
       href: concepts/symbols.md
       displayName: symbols, debugging 
     - name: Use symbols in Visual Studio
