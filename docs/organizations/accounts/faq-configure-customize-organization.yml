@@ -116,7 +116,7 @@ sections:
       - question: |
           Q: How do I create another organization?
         answer: |
-          A: Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
+          A: Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
           
           ![Create another organization.](media/sign-up-visual-studio-team-services/my-info-organization-list.png)
           
