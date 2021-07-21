@@ -7,7 +7,7 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 07/19/2021
+ms.date: 07/21/2021
 monikerRange: ">= azure-devops-2019"
 ---
 
@@ -240,7 +240,7 @@ From the **Pipeline settings** pane you can configure the following settings.
 
 YAML pipelines don't have a [Create work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. Classic build pipelines are single stage, and **Create work item on failure** applies to the whole pipeline. YAML pipelines can be multi-stage, and a pipeline level setting may not be appropriate. To implement **Create work item on failure** in a YAML pipeline, you can use methods such as the [Work Items - Create](/rest/api/azure/devops/wit/work%20items/create?view=azure-devops-rest-6.1&preserve-view=true) REST API call or the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command at the desired point in your pipeline. 
 
-The following example has two jobs. The first job represents the work of the pipeline, but if it fails, the second job runs, and creates a work item in the same project as the pipeline.
+The following example has two jobs. The first job represents the work of the pipeline, but if it fails, the second job runs, and creates a bug in the same project as the pipeline.
 
 ```yml
 # When manually running the pipeline, you can select whether it
@@ -283,6 +283,9 @@ jobs:
       AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
     displayName: 'Create work item on failure'
 ```
+
+> [!NOTE] 
+> Azure Boards allows you to configure your work item tracking using several different process, such as Agile or Basic. Each of these types has different work item types, and not every work item type is available in each process. For a list of work item types supported by process, see [Work item types (WITs)](../boards/work-items/about-work-items.md#work-item-types-wits).
 
 The previous example uses [Runtime paramaters](process/runtime-parameters.md) to configure whether the pipeline succeeds or fails. When manually running the pipeline, you can set the value of the `succeed` parameter. The `script` step in the first job of the pipeline evaluates the `succeed` parameter and only runs when `succeed` is set to false.
 
