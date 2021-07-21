@@ -19,7 +19,7 @@ Symbol servers enable debuggers to automatically retrieve the correct symbol fil
 
 To debug with symbols from the Azure Artifacts symbol server, we must authenticate to the server and add a new Azure DevOps Services symbol server to our Visual Studio environment.
 
-1. From Visual Studio select **Tools** > **Options** > **Debugging**.
+1. From Visual Studio, select **Tools** > **Options** > **Debugging**.
 
 1. Select **Symbols** from the list, and then select the `+` sign to add a new Azure DevOps symbol server location.
 
@@ -41,7 +41,21 @@ To do so, select **Tools** > **Options** and then **Debugging**. Select **Genera
 
 :::image type="content" source="media/enable-just-my-code.png" alt-text="Enable just my code - enable 3rd party source code debugging":::
 
-## Load symbols and debug
+> [!NOTE]
+> To enable support for portable PDB files, check the **Enable Source Link Support** checkbox from **Tools** > **Options** > **Debugging** > **General**.
+> 
+> To enable support for Windows PDB files on symbol servers, check the **Enable Source Server Support** checkbox from **Tools** > **Options** > **Debugging** > **General**.
+
+## Start debugging
+
+You can start debugging your application in a few different ways:
+- Press **F5** to start the app with the debugger attached to the app process.
+- Select **Debug** > **Start Debugging**.
+- Select the **Start Debugging** button in the debug toolbar.
+
+When you start the debugger, Visual Studio will attempt to load your symbols from the cache folder first before downloading them from the Artifacts symbol server that we added in the previous section. 
+
+Once Visual Studio finds and loads your symbols, you should be able to step through your code and debug your application. See [Navigate through code with the Visual Studio debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger.md) for more details.
 
 ## Related articles
 
