@@ -50,8 +50,12 @@ When you configure an agent, it is registered with a single pool, and when you c
 
 ::: moniker-end
 
+::: moniker range=">=tfs-2018"
 
+> [!NOTE]
+> Agent pool jobs run a job on a single agent. If you need to run a job on all agents, such as a deployment group for classic release pipelines, see [Provision deployment groups](../release/deployment-groups.md).
 
+::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 You create and manage agent pools from the agent pools tab in admin settings.
