@@ -2,11 +2,13 @@
 title: Add protection to a repository resource
 description: Add checks and pipeline protection to a repository
 ms.reviewer: vijayma
-ms.date: 05/18/2021
+ms.date: 07/21/2021
 monikerRange: '> azure-devops-2019'
 ---
 
 # Protect a repository resource
+
+[!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-vsts-plus-azdevserver-2019.md)]
 
 You can add protection to your [repository resource](resources.md#resources-repositories) with checks and pipeline permissions. When you add protection, you're better able to restrict repository ownership and editing privileges.
 
@@ -28,7 +30,7 @@ You must be a member of the [Project Administrators Group](../../organizations/s
 
     :::image type="content" source="../../organizations/settings/work/media/process/repository-approval.png" alt-text="Select Approvals & Checks.":::
 
-1. Choose a check to set how your repository resource can be used, and then select **Next**. In the following example, we choose to add Approvals, so a manual approver each time a pipeline requests the repository. For more information, see [Approvals and checks](approvals.md).
+1. Choose a check to set how your repository resource can be used, and then select **Next**. In the following example, we choose to add Approvals, so a manual approver for each time a pipeline requests the repository. For more information, see [Approvals and checks](approvals.md).
 
    :::image type="content" source="media/add-check-repository.png" alt-text="Screenshot of checks that you can add.":::
 
@@ -67,6 +69,7 @@ You can see the added repository listed.
 
 > [!div class="nextstepaction"]
 > [Add and use variable groups](../library/variable-groups.md)
+
 ## Related articles
 
 - [Set Git repository permissions](/../../repos/git/set-git-repository-permissions?view=azure-devops&preserve-view=true)
