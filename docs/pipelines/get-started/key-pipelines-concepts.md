@@ -3,7 +3,7 @@ title: Azure Pipelines New User Guide - Key concepts
 ms.custom: seodec18
 description: Learn how Azure Pipelines works with your code and tools to automate build and deployment, and the key concepts behind it.
 ms.topic: overview
-ms.date: 04/07/2021
+ms.date: 07/21/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -49,6 +49,12 @@ Continuous delivery &#40;CD&#41; is a process by which code is built, tested, an
 
 Continuous integration &#40;CI&#41; is the practice used by development teams to simplify the testing and building of code. CI helps to catch bugs or problems early in the development cycle, which makes them easier and faster to fix. Automated tests and builds are run as part of the CI process. The process can run on a set schedule, whenever code is pushed, or both. Items known as artifacts are produced from CI systems. They're used by the continuous delivery release pipelines to drive automatic deployments.
 
+## Deployment
+
+For Classic pipelines, a deployment is the action of running the tasks for one stage, which can include running automated tests, deploying build artifacts, and any other actions are specified for that stage. 
+
+For YAML pipelines, a deployment typically refers to a [deployment job](../process/deployment-jobs.md).  A deployment job is a collection of steps that are run sequentially against an environment. You can use strategies like run once, rolling, and canary for deployment jobs. 
+
 ## Deployment group
 
 A deployment group is a set of deployment target machines that have agents installed. A deployment group is just another grouping of agents, like an [agent pool](../agents/pools-queues.md). You can set the deployment targets in a pipeline for a job using a deployment group. Learn more about provisioning agents for [deployment groups](../release/deployment-groups/howto-provision-deployment-group-agents.md). 
@@ -65,6 +71,10 @@ A stage contains one or more [jobs](../process/phases.md). Each job runs on an a
 
 A pipeline defines the continuous integration and deployment process for your app. It's made up of one or more stages. It can be thought of as a workflow that defines how your test, build, and deployment steps are run. 
 
+
+## Release
+
+For Classic pipelines, a [release](../release/releases.md) is a versioned set of artifacts specified in a pipeline. The release includes a snapshot of all the information required to carry out all the tasks and actions in the release pipeline, such as stages, tasks, policies such as triggers and approvers, and deployment options. You can create a release manually, with a deployment trigger, or with the REST API.
 ## Run
 
 A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests. During a run, Azure Pipelines will first process the pipeline and then send the run to one or more agents. Each agent will run jobs. Learn more about the [pipeline run sequence](../process/runs.md).  
