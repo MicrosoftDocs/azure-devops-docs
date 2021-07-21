@@ -69,6 +69,6 @@ You can see the added repository listed.
 > [Add and use variable groups](../library/variable-groups.md)
 ## Related articles
 
-- [Set Git repository permissions](/../../repos/git/set-git-repository-permissions?view=azure-devops)
+- [Set Git repository permissions](/../../repos/git/set-git-repository-permissions?view=azure-devops&preserve-view=true)
 - [Git repository settings and policies](../../repos/git/repository-settings.md)
 - [Azure Pipelines resources in YAML](resources.md)
