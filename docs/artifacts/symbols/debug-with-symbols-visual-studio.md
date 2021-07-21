@@ -55,7 +55,7 @@ You can start debugging your application in a few different ways:
 
 When you start the debugger, Visual Studio will attempt to load your symbols from the cache folder first before downloading them from the Artifacts symbol server that we added in the previous section. 
 
-Once Visual Studio finds and loads your symbols, you should be able to step through your code and debug your application. See [Navigate through code with the Visual Studio debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger.md) for more details.
+Once Visual Studio finds and loads your symbols, you should be able to step through your code and debug your application. See [Navigate through code with the Visual Studio debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger) for more details.
 
 ## Related articles
 
