@@ -74,7 +74,11 @@ A pipeline defines the continuous integration and deployment process for your ap
 
 ## Release
 
-For Classic pipelines, a [release](../release/releases.md) is a versioned set of artifacts specified in a pipeline. The release includes a snapshot of all the information required to carry out all the tasks and actions in the release pipeline, such as stages, tasks, policies such as triggers and approvers, and deployment options. You can create a release manually, with a deployment trigger, or with the REST API.
+For Classic pipelines, a [release](../release/releases.md) is a versioned set of artifacts specified in a pipeline. The release includes a snapshot of all the information required to carry out all the tasks and actions in the release pipeline, such as stages, tasks, policies such as triggers and approvers, and deployment options. You can create a release manually, with a deployment trigger, or with the REST API. 
+
+For YAML pipelines, the build and release stages are in one, [multi-stage pipeline](multi-stage-pipelines-experience.md). 
+
+
 ## Run
 
 A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests. During a run, Azure Pipelines will first process the pipeline and then send the run to one or more agents. Each agent will run jobs. Learn more about the [pipeline run sequence](../process/runs.md).  
