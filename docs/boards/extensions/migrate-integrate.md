@@ -21,9 +21,9 @@ You have a choice of tools to support migration of your work tracking data to th
 
 The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../migrate/migration-overview.md).
 
-## Migrate data between Azure DevOps projects
+## Migrate data between Azure DevOps Projects
 
-The [Azure DevOps Migration Tools](https://marketplace.visualstudio.com/items?itemName=nkdagility.vsts-sync-migration) marketplace extension allows you to bulk edit and migrate data between Azure DevOps projects on both on-premises and the cloud. This tool supports the following tasks:  
+The [Azure DevOps Migration Tools](https://marketplace.visualstudio.com/items?itemName=nkdagility.vsts-sync-migration) marketplace extension allows you to bulk edit and migrate data between Azure DevOps Projects on both on-premises and the cloud. This tool supports the following tasks:  
 - Migrate work items from one project to another project and synchronize changes after a migration
 - Merge many projects into a single project
 - Split one project into many projects
@@ -33,7 +33,7 @@ The [Azure DevOps Migration Tools](https://marketplace.visualstudio.com/items?it
 
 To learn more, see [Azure DevOps Migration Tools](https://nkdagility.github.io/azure-devops-migration-tools/).
 
-[OpsHub Visual Studio Migration Utility](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OpsHubVisualStudioOnlineMigrationUtility) (OVSMU) enables a seamless migration between Azure DevOps Server(TFS) and Azure DevOps Services(VSTS) or Azure DevOps and Azure DevOps.  Migrate projects from DevOps Services to a collection on DevOps server including:  
+[OpsHub Visual Studio Migration Utility](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OpsHubVisualStudioOnlineMigrationUtility) (OVSMU) enables a seamless migration between Azure DevOps Server(TFS) and Azure DevOps Services(VSTS) or Azure DevOps and Azure DevOps.  Migrate projects from DevOps Services to a collection on DevOps Server including:  
 
 - All version control information and history
 - All work items and history
@@ -91,7 +91,7 @@ The following tools support integration and synchronization with Azure DevOps wi
 
 - [OpsHub Integration Manager(OIM)](https://www.opshub.com/products/opshub-integration-manager/) is an enterprise class integration platform that enables bi-directional synchronization for Azure DevOps(Server and Services) with 50+ ALM, DevOps, Project and Portfolio Management tools out of the box. It enables synchronization of all work items including test artifacts with an easy to use mapping UI and is scalable for any number of projects and teams.  
 -  [ConnectAll](https://www.connectall.com/) helps organizations achieve effective Value Stream Management by connecting the applications used to collaborate, drive decisions, and manage artifacts that are used during the software delivery process, like ALM, Agile, and DevOps. 
-- [Project Connect](https://us.wicresoft.com/projectconnect/) offers a seamless approach to exchange critical information between development teams and project teams using Microsoft Project Online and Azure DevOps Services.
+- [Project Connect](https://www.wicresoftinternational.com/about-us) offers a seamless approach to exchange critical information between development teams and project teams using Microsoft Project Online and Azure DevOps Services.
 - [Tasktop](http://www.tasktop.com/products) provides enterprise-grade integration between Microsoft Project Server and Azure DevOps, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. 
 
 
