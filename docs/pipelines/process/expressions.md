@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 05/13/2021
+ms.date: 07/22/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -376,7 +376,7 @@ steps:
 * Example: `notIn('D', 'A', 'B', 'C')` (returns True)
 
 ### or
-* Evaluates `True` if any parameter is `true`
+* Evaluates `True` if any parameter is `True`
 * Min parameters: 2. Max parameters: N
 * Casts parameters to Boolean for evaluation
 * Short-circuits after first `True`
