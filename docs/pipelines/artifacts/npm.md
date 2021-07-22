@@ -18,8 +18,8 @@ Using Azure Pipelines, you can publish your npm packages to Azure Artifacts feed
 ## Publish to Azure Artifacts feeds
 
 #### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
 
+::: moniker range=">= azure-devops-2019"
 To publish your npm packages to Azure Artifacts feeds from your Pipeline, you must first provide the **Project Collection Build Service** identity a **Contributor** access to your feed. See [Add users/groups permissions](../../artifacts/feeds/feed-permission.md#adding-usersgroups-permissions-to-a-feed) for details.
 
 Add the npm task to your yaml pipeline as follows to publish your package to your feed.
@@ -41,12 +41,15 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-To publish an npm package to a Package Management feed, add the **npm** task. Then, configure these options:
 
-- **working folder**: Select the folder that contains your `.npmrc` and `package.json`; leave blank if those files are at the root of the repo
-- **npm command**: `publish`
+To publish npm packages to your feed, add the **npm** task to your pipeline, then configure it as follow:
 
-![Azure Pipelines npm publish task configuration](media/npm/team-build-npm-publish.png)
+1. From within your pipeline, select the `+` sign to add a task to your pipeline, then search for the *npm* task. Select **Add** to add it to your pipeline.
+1. Fill out the required fields as follows:
+
+- **Display name**: name of your task
+- **Command**: `publish`
+- **working folder**: Path to the folder containing the target package.json and .npmrc files.  leave blank if those files are at the root of the repo
 
 [!INCLUDE [package management permissions](includes/package-management-permissions-for-web-build.md)]
 
