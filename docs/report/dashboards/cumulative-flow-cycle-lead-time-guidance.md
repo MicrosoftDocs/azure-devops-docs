@@ -184,17 +184,17 @@ Sometimes it takes time to get information from a stakeholder, or it takes more 
 
 ## Lead time versus cycle time   
 
-The diagram below illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a Completed state. Cycle time is calculated from first entering an In Progress state to entering a Completed state. 
+The diagram below illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a Completed state.  Cycle time is calculated from first entering an In Progress or Resolved state category to entering a Completed state category. 
 
 #### Illustration of lead time versus cycle time 
 
-<img src="media/cycle-lead-time-concept-intro.png" alt="Conceptual image of how cycle time and lead time are measured" style="border: 2px solid #C3C3C3;" />
+:::image type="content" source="media/cycle-lead-time-concept-intro.png" alt-text="Conceptual image of how cycle time and lead time are measured"::: 
 
-If a work item enters a Completed state and then is reactivated and moved out of that state, then any additional time it spends in a Proposed/In Progress state will contribute to its lead/cycle time when it enters a Completed state for the second time.
+If a work item enters a Completed state and then is reactivated and moved out of that state, then any additional time it spends in a Proposed, In Progress, or Resolved state category will contribute to its lead/cycle time when it enters a Completed state category for the second time.
 
 If your team uses the Kanban board, you'll want to understand how your Kanban columns map to workflow states. For more information on configuring your Kanban board, see [Add columns](../../boards/boards/add-columns.md). 
 
-To learn more about how the system uses the state categories&mdash;Proposed, In Progress, and Completed&mdash;see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).   
+To learn more about how the system uses the state categories&mdash;Proposed, In Progress, Resolved, and Completed&mdash;see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).   
 
 ## Plan using estimate delivery times based on lead/cycle times
   
