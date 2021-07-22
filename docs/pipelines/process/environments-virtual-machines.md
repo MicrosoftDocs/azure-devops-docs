@@ -20,7 +20,6 @@ VM resources connect to [environments](environments.md). After you define an env
 
 You must have at least a Basic license and access to the following areas:
 
-- the pipeline
 - the repository connected to your pipeline
 - the VM you want to connect to the environment
 
@@ -188,12 +187,8 @@ To remove a VM from a Linux environment, run the following command on each machi
 
 When you retry a stage, it reruns the deployment on all VMs and not just failed targets.
 
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Learn about deployment jobs](deployment-jobs.md).
-
 ## Related articles
 
 - [About environments](environments.md)
+- [Learn about deployment jobs](deployment-jobs.md)
 - [YAML schema reference](../yaml-schema.md)
