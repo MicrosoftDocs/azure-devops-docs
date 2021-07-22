@@ -7,8 +7,7 @@ ms.assetid: be5cef4f-755f-4ffe-8dd7-876d1e02c330
 ms.manager: mijacobs 
 ms.author: kaelli
 author: KathrynEE  
-ms.topic: how-to
-monikerRange: '<= tfs-2018'
+ms.topic: how-to 
 ms.date: 08/15/2019
 ---
 
@@ -31,29 +30,21 @@ Use this article to learn how to:
 > * Indent tasks to create parent-child links 
 > * Link tasks to create predecessor-successor links  
 > * View how Project columns map to work item fields    
-
-
-::: moniker range="<= tfs-2015"  
-> [!NOTE] 
-> You can also manage projects using Project Professional and [Project Server synchronized with TFS](/previous-versions/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server), but you can't use Project Professional to both publish and refresh to TFS and synchronize with TFS.
  
-::: moniker-end  
-
 
 ## Prerequisites 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"  
+**For TFS 2017 and TFS 2018:** 
 - Office Project 2010 or later version, including Office Project 365
 - Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in  Azure Boards or TFS. 
+ 
 
-::: moniker-end  
-
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+**For TFS 2013 and TFS 205:** 
 - Office Project 2007, Office Project 2010, or Office Project 2013
 - Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
-::: moniker-end  
+ 
 
 To learn more about compatibility requirements, see [Azure DevOps client compatibility](/azure/devops/server/compatibility). 
 
