@@ -438,7 +438,7 @@ The following table describes the external link types you can choose when adding
       Storyboard
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a PowerPoint file on a network. For details, see [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard).  
+      Used to link a work item to a PowerPoint file or other file that contains story boarding information on a network. 
    :::column-end:::
 :::row-end:::
 :::row:::
