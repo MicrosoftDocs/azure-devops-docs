@@ -52,7 +52,6 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 You can integrate the following Microsoft Office tools with Azure DevOps.
 
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
-- [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to more features, such as a project calendar, Gantt charts, and resource views.
 
 > [!IMPORTANT]
 > Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Microsoft Project. Project integration and the TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. However, you can continue to use Microsoft Excel.
@@ -62,8 +61,7 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 ::: moniker range="= azure-devops-2019"
 
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
-- [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to more features, such as a project calendar, Gantt charts, and resource views.
-- [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md): Illustrate user stories and requirements by using PowerPoint.
+
 
 > [!TIP]
 > Check to make sure the Azure DevOps Office Integration component is selected in the Visual Studio Installer, per the following example.

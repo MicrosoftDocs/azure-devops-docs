@@ -206,20 +206,10 @@
   - name: Excel FAQs
     href: backlogs/office/faqs.yml
     displayName: edit in Excel, open in Excel
-  - name: Create backlog items & tasks (Project) 
-    href: backlogs/office/create-your-backlog-tasks-using-project.md
-  - name: Schedule projects (Project) 
-    href: backlogs/office/schedule-projects-using-microsoft-project.md
-  - name: Storyboard your ideas (PowerPoint)
-    href: backlogs/office/storyboard-your-ideas-using-powerpoint.md
-  - name: Add & share storyboard shapes (PowerPoint)
-    href: backlogs/office/add-share-storyboard-shapes.md
   - name: Troubleshooting
     items:
     - name: Office integration issues
       href: backlogs/office/tfs-office-integration-issues.md
-    - name: Rollup work using Project
-      href: backlogs/office/rollup-estimated-and-actual-work-using-project.md
     - name: Resolve Excel data conflicts
       href: backlogs/office/resolve-excel-data-conflicts-publish-refresh.md
       displayName: conflicts, Excel, conflicting work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
