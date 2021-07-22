@@ -321,7 +321,7 @@ Additional features you can use to quickly link or change links that use the par
 - To quickly link backlog items to portfolio backlog items with parent-child links, [use the mapping pane to organize your backlog](organize-backlog.md#mapping). Or, you can choose to Show Parents and [drag-and-drop items within the tree hierarchy](organize-backlog.md).  
 - To create and link tasks to backlog items, [use the sprint backlog page](../sprints/assign-work-sprint.md).  
 - To indent (![Indent](../queries/media/IC588323.png)), outdent (![Outdent](../queries/media/IC588324.png)), and change the tree hierarchy, use a tree query in Visual Studio.  
-- To add or delete work items or change the link structure, you can use Excel or Project. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).  
+- To add or delete work items or change the link structure, you can use Excel. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
 
 
 ## Related articles
@@ -332,7 +332,6 @@ Additional features you can use to quickly link or change links that use the par
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)
 - [Use Excel to edit tree-topology links](../backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Use Project to edit parent-child and predecessor-successor links](../backlogs/office/create-your-backlog-tasks-using-project.md)
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
 
 ::: moniker-end
@@ -343,7 +342,6 @@ Additional features you can use to quickly link or change links that use the par
 - [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Use Excel to edit parent-child links](../backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Use Project to edit parent-child and predecessor-successor links](../backlogs/office/create-your-backlog-tasks-using-project.md)
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
 
 ::: moniker-end
