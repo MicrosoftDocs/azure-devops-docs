@@ -8,7 +8,7 @@ ms.date: 07/21/2021
 monikerRange: '>= azure-devops-2020'
 ---
 
-# Environment - Virtual machine resource
+# Environment - virtual machine resource
 
 [!INCLUDE [include](../includes/version-server-2020-rtm.md)]
 
@@ -24,7 +24,7 @@ You must have at least a Basic license and access to the following areas:
 - the repository connected to your pipeline
 - the VM you want to connect to the environment
 
-For more information about security mechanisms for Azure Pipelines, see [Pipeline security resources](../security/resources.md)
+For more information about security for Azure Pipelines, see [Pipeline security resources](../security/resources.md)
 
 ## Create a VM resource
 
