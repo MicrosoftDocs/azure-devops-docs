@@ -146,13 +146,13 @@ To get added as a team administrator, ask another team administrator or a member
 
 Each team must have at least one administrator. To remove an administrator, you must first add at least a second administrator. 
 
-Open the **Teams** settings page as described in the previous section.
+Open the **Teams** page as described in the previous section.
 
 ::: moniker range="azure-devops" 
 
 #### [New Teams Page](#tab/preview-page) 
  
-3. Choose **Settings** and scroll down to the Administrators section. Choose ![remove icon](../../media/icons/remove-icon.png) for the user that you want to remove as a team administrator. 
+Choose **Settings** and scroll down to the Administrators section. Choose ![remove icon](../../media/icons/remove-icon.png) for the user that you want to remove as a team administrator. 
 
 ![Screenshot of X selected to remove team administrator.](media/add-team-admin/remove-admin-new-ui-page.png)
 
