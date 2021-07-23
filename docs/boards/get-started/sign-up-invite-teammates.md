@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 12/13/2019
+ms.date: 07/22/2021
 ---
 
 
@@ -17,9 +17,9 @@ ms.date: 12/13/2019
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. This sequence walks you through the sign-up process for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). In the end, you'll have a project that uses the [Basic process for work tracking](./what-is-azure-boards.md).
+Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. This sequence walks you through the sign-up process for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). In the end, you'll have a project that uses the  Basic, Agile, or Scrum process for tracking work using work items as described in [What is Azure Boards?](./what-is-azure-boards.md) 
 
-You can sign up for free with either a Microsoft or GitHub account. If you don't have a Microsoft account, this article will guide you in acquiring one. 
+You can sign up for free with a Microsoft or GitHub account. If you don't have a Microsoft account, this article will guide you in acquiring one. 
 
 > [!div class="mx-imgBorder"]  
 > ![Create new project dialog](media/acquisition/start-free-azure-boards.png)
@@ -124,7 +124,7 @@ Your next step is to  [create a project](#create-project).
 
 ## Create a project 
 
-If you signed up for Azure DevOps with an existing MSA or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/public/about-public-projects.md). 
+If you signed up for Azure DevOps with an existing Microsoft account or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/public/about-public-projects.md). 
 
 1. Enter a name for your project, select the visibility, and optionally provide a description. Then choose **Create project**. 
 
@@ -139,6 +139,20 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 	> ![Kanban board](media/track-issues/issues-board-new-item.png)
 
 	You're now set to start [tracking issues, tasks, and features](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project. 
+
+## Create a project with Advanced options
+
+Your first project is automatically created using the Basic process and a Git repository. If you want to use the Agile, Scrum, or CMMI process and a different repository, you can create another project and choose the process by expanding the **Advanced** settings. You can then [delete the project](../../organizations/projects/delete-project.md) with the process you don't want to use. 
+
+1. Select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page, and then select **New project**.
+
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot of Open Projects.](../../organizations/projects/media/create-project/projects-hub-select-new-project.png)  
+
+2. Fill out the form, expand **Advanced** to choose the options available for [**Version control**](../../repos/tfvc/comparison-git-tfvc.md) and [**Work item process**](../work-items/guidance/choose-process.md). 
+
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot of create project with Agile process.](media/sign-up/create-agile-git-project.png)  
 
 
 <a id="invite-others" />
@@ -171,7 +185,7 @@ You can add and invite others to work on your project by adding their email addr
 
 4. When you're done, select **Add** to complete your invitation.
 
-For more information, see [Add organization users for Azure DevOps Services](../../organizations/accounts/add-organization-users.md).
+For more information, see [Add users or groups to a team or project](../../organizations/security/add-users-team-project.md) and [Add organization users for Azure DevOps Services](../../organizations/accounts/add-organization-users.md).
 
 ## Change organization or project settings
 
