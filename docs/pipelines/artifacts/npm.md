@@ -59,6 +59,43 @@ To publish npm packages to your feed, follow the steps below to add and configur
 
 * * *
 
+## Publish to public registry
+
+
+#### [YAML](#tab/yaml/)
+
+::: moniker range=">= azure-devops-2019"
+
+To publish your packages to a public npm registry such as *npmjs.com*, you must first create a service connection to connect to the desired external service.
+
+You can do this by going to your **Project settings** then selecting **Service connections**.
+
+1. Select **Create service connection** to create a new service connection., then .
+
+    :::image type="content" source="./media/create-service-connection.png" alt-text="Screenshot showing how to create a new service connection":::
+
+1. Select **npm** then fill out the required fields. Select **Save** when you are done. 
+
+See [Manage service connections](../library/service-endpoints.md) to learn more about how to create, manage, secure, and use service connections.
+
+To publish a package to an npm registry, add the following snippet to your yaml file.
+
+```yaml
+- task: Npm@1
+  inputs:
+    command: publish
+    publishRegistry: UseExternalRegistry
+    publishEndpoint: '<NAME_OF_YOUR_SERVICE_CONNECTION>'
+```
+
+- **publishEndpoint**: required when `publishRegistry == UseExternalRegistry`. Copy and paste the name of the service connection you created earlier.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+YAML is not supported in TFS.
+::: moniker-end
+
 ## FAQ
 
 - **How to publish packages to my feed from the command line?**
