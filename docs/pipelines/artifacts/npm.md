@@ -7,6 +7,7 @@ ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
 ms.topic: conceptual
 ms.date: 07/22/2021
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
 # Publish npm packages (YAML/Classic)
@@ -114,17 +115,8 @@ Follow the steps below to publish your npm packages to a public npm registry usi
 
 * * *
 
-## FAQ
+## Related articles
 
-- **How to publish packages to my feed from the command line?**
-
-    See [Publish your package to an npm feed using the CLI](../../artifacts/npm/publish.md) for more information. 
-
-- **How to create a token that lasts longer than 90 days?**
-
-    See [Set up your client's npmrc](../../artifacts/npm/npmrc.md) for more information on how to set up authentication to Azure Artifacts feeds.
-
-- **Do you recommend using scopes or upstream sources?**
-
-    We recommend using upstream sources because it gives you the most flexibility to use a combination of scoped- and non-scoped packages in your feed, as well as scoped- and non-scoped packages from npmjs.com.  
-    See [Use npm scopes](../../artifacts/npm/scopes.md) and [Use packages from npmjs.com](../../artifacts/npm/upstream-sources.md) for more details.
+- [Publish and download Artifacts in Azure Pipelines](./pipeline-artifacts.md).
+- [Publish npm packages from the command line](../../artifacts/npm/publish.md).
+- [Use packages from npmjs.com](../../artifacts/npm/upstream-sources.md).
