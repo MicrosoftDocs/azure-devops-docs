@@ -210,24 +210,8 @@ You can specify how information and work item fields are grouped and appear in a
 |---------------|-----------------|    
 |`ShowEmptyReadOnlyFields`|Optional `WebLayout` attribute. Specify a value of `true` to display read-only and empty fields (default), and `false` to hide these fields.|  
 
-
-### Nest elements 
-
-Within a **Page** element within the **WebLayout** element, you can nest the following elements: 
-
-- **Page** elements within a single **WebLayout** element  
-- **Section** elements within a **Page**  element, limit the number of **Section**  elements to four within a **Page**  
-- **Group** elements within a **Section** element  
-- **Control** elements within a **Group** element.  
-
-Within a **PinnedControls** element within the WebLayout element, you can nest the following elements (requires TFS 2018 (RC2) or Hosted XML process model): 
-
-- **Section** elements within a single **PinnedControls** element, limit the number of **Section** elements to three 
-- **Control** elements within a **Section** element, limit the number of **Control** elements to three  
-
 > [!TIP]  
 > The schema definition for work item tracking defines all **FORM** child elements as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](control-xml-element-reference.md).    
-
 
 
 <table width="100%" >
@@ -246,11 +230,8 @@ FieldControl | HtmlFieldControl | LabelControl | WebpageControl&quot;
 Label=&quot;LabelText&quot; EmptyText=&quot;TextString&quot;
 ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 </code></pre>
-
 <p>See <a href="#control-attributes" data-raw-source="[Control element attributes](#control-attributes)">Control element attributes</a> and <a href="#control-types" data-raw-source="[control type](#control-types)">control type</a> for information about each attribute.</p></td>
 </tr>
-
-
 <tr>
     <td><p><strong>ControlContribution</strong></p></td>
     <td><p>Optional child element of <strong>Group</strong> within <strong>WebLayout</strong> used to specify a field-level work item extension to appear on the form.   </p>
@@ -263,19 +244,15 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 <p>The <em>ContributionId</em> you specify must be installed on the account or project collection. The WIT definition files that you export contain a <a href="#extensions" data-raw-source="[list of installed contributions](#extensions)">list of installed contributions</a>.</p>
 </td>
 </tr>
-
 <tr>
     <td><p><strong>Extension</strong></p></td>
     <td><p>Required child element for <strong>Extensions</strong>. Use to specify an extension ID of a work item control extension to display in the work item form. You must specify each extension that is used in the layout for a <strong>ControlContribution</strong>, <strong>GroupContribution</strong>, or <strong>PageContribution</strong> element. </p>
 <pre><code>&lt;Extension Id="ExtensionId" /&gt;
 </code></pre>
-
 <p>The <em>ExtensionId</em> you specify must be installed on the account or project collection. The WIT definition files that you export contain a <a href="#extensions" data-raw-source="[list of installed extensions](#extensions)">list of installed extensions</a>.</p>
 <p> </p>
-
 </td>
 </tr>
-
 <tr>
     <td><p><strong>Extensions</strong></p></td>
     <td><p>Optional container child element of <strong>WebLayout</strong> used to support specifying one or more <strong>Extension</strong> elements. If extensions are used in the form, specify them prior to a <strong>Page</strong> element. </p>
@@ -287,10 +264,8 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 . . .
 &lt;/WebLayout &gt;
 </code></pre>
-
 </td>
 </tr>
-
 <tr>
 <td><p><strong>FORM</strong></p></td>
 <td><p>Required child element of <strong>WITD</strong> used to specify the layout and controls to appear on the work item form. Parent element for both the <strong>Layout</strong> (client form layout) and <strong>WebLayout</strong> (web form layout) elements. </p>
@@ -299,8 +274,6 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
       &lt;WebLayout&gt; . . . &lt;/WebLayout&gt;
 &lt;/FORM&gt;</code></pre></td>
 </tr>
-
-
 <tr>
 <td><p><strong>Group</strong> </p></td>
 <td><p>Required child element of <strong>Section</strong>. Provides a visual grouping of elements within a section which you can label. </p>
@@ -308,7 +281,6 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
    &lt;Control&gt; . . . &lt;/Control&gt;
 &lt;/Group &gt;</code></pre></td>
 </tr>
-
 <tr>
     <td><p><strong>GroupContribution</strong></p></td>
     <td><p>Optional child element of <strong>Section</strong> within  <strong>WebLayout</strong> used to specify a group-level work item extension to appear on the form. The extension will appear as a group within the form.   </p>
@@ -317,7 +289,6 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 <p>The <em>ContributionId</em> you specify must be installed on the account or project collection. The WIT definition files that you export contain a <a href="#extensions" data-raw-source="[list of installed contributions](#extensions)">list of installed contributions</a>.</p>
 </td>
 </tr>
-
 <tr>
     <td><p><strong>Input</strong></p></td>
     <td><p>Required child element for <strong>Inputs</strong> that specifies input data for an extension.  </p>
@@ -325,8 +296,6 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 </code></pre>
 </td>
 </tr>
-
-
 <tr>
     <td><p><strong>Inputs</strong></p></td>
     <td><p>Optional container child element for <strong>ControlContribution</strong> used to support specification of input data for an extension.   </p>
@@ -336,7 +305,6 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 </code></pre>
 </td>
 </tr>
-
 <tr>
     <td><p><strong>Page</strong></p></td>
     <td><p>Required child element of <strong>WebLayout</strong>. Defines the layout of a page within the web form.  </p>
@@ -351,7 +319,6 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 &lt;/Page&gt;</code></pre>
 </td>
 </tr>
-
 <tr>
     <td><p><strong>PageContribution</strong></p></td>
     <td><p>Optional child element of <strong>WebLayout</strong> used to specify a page-level work item extension to appear on the form. The extension will appear as a page within the form. </p>
@@ -360,7 +327,6 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 <p>The <em>ContributionId</em> you specify must be installed on the account or project collection. The WIT definition files that you export contain a <a href="#extensions" data-raw-source="[list of installed contributions](#extensions)">list of installed contributions</a>.</p>
 </td>
 </tr>
-
 <tr>
     <td><p><strong>Section</strong></p></td>
 <td><p>Required child element of <strong>Page</strong>. Defines the layout of a section within a page of the web form. Sections form groups that <a href="../customize-wit-form.md#resizing" data-raw-source="[support variable resizing](../customize-wit-form.md#resizing)">support variable resizing</a>. A limit of four sections can be defined within a <strong>Page</strong>. </p>
@@ -374,8 +340,6 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 &lt;/Page&gt;</code></pre>
 </td>
 </tr>
-
-
 <tr>
 <td><strong>SystemControls</strong></td>
 <td><p>Required child element for <strong>WebLayout</strong>. Defines the labels and empty text values for controls present in the header of the web form . This also includes, the labels for the History, Links, and Attachments pages.</p>
@@ -390,7 +354,6 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
     &lt;Control Label="Links" Type="LinksControl" Name="Links" /&gt;
     &lt;Control Label="Attachments" Type="AttachmentsControl" Name="Attachments" /&gt;
 &lt;/SystemControls&gt;</code></pre>
-
 </td>
 </tr>
 <tr>
@@ -416,6 +379,7 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 
 
 <a id="control-element">  </a>  
+
 ## Control element syntax 
 
 You use the **Control** element to define a work item field, text, hyperlink, or other form type to display in a work item form. The **Control** element you specify within the **WebLayout** section should conform to the following syntax:
@@ -432,6 +396,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 
 
 <a id="control-attributes">  </a>
+
 ## Control element attribute syntax  
 
 
@@ -460,7 +425,6 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 </ul>
 </td>
 </tr>
-
 <tr>
 <td><p><strong>EmptyText</strong> </p></td>
 <td>
@@ -472,7 +436,6 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 </tr>
 <tr>
 </tr>
-
 <tr>
 <td><strong>ReadOnly</strong></td>
 <td>Optional. Specifies that the field is read-only:
@@ -487,19 +450,16 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 <td><p>Optional. Identifies a control uniquely. The <strong>Name</strong> is important if more than one control on the form is associated with the same work item field.  </p>
 <blockquote><b>Note:</b> You use the <strong>Name</strong> attribute when you want to have the same field displayed on more than one <strong>Page</strong> on the form. You specify a unique value for the <strong>Name</strong> attribute for both control entries so that the system identifies each control uniquely.<br/></blockquote><br/></td>
 </tr>
-
 <tr>
 <td><strong>Visible</strong></td>
 <td>Optional. Specify <code>Visible=&quot;false&quot;</code> when you want to hide a field normally included within the header area. You can only specify this attribute in conjunction with the System.Reason, System.AreaPath, or System.IterationPath fields. If you specify this attribute, you can&#39;t specify the <code>Replaces</code> attribute. 
 </td>
 </tr>
-
 <tr>
 <td><strong>Replaces</strong></td>
 <td>Optional. Specify <code>FieldName=&quot;ReplacementFieldRefName&quot; Replaces=&quot;FieldRefName&quot;</code> when you want to replace a field within the header area with another field. You can only specify this attribute in conjunction with the System.Reason, System.AreaPath, or System.IterationPath fields. If you specify this attribute, you can&#39;t specify the <code>Visible</code> attribute. Also, you need to remove the entry for the field you are replacing from within the section. 
 </td>
 </tr>
-
 </tbody> 
 </table>
 
@@ -529,7 +489,6 @@ Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;S
 <blockquote><strong>Note:</strong>The date-time format displayed matches the <a href="/azure/devops/organizations/settings/set-your-preferences" data-raw-source="[user profile user profile](../../organizations/settings/set-your-preferences.md)">user profile user profile</a>. The WebLayout section doesn&#39;t not accept the <strong>Layout</strong> element <code>CustomFormat</code> property.<br/></blockquote>
 </td>
 </tr>
-
 <tr>
 <td><strong>FieldControl</strong></td>
 <td>Use to display fields with a data type of Boolean, String, Identity, Integer, Double, and PlainText. For example:<br/><pre><code>&lt;Control Type=&quot;FieldControl&quot; FieldName=&quot;FabrikamFiber.Milestone&quot; 
@@ -539,10 +498,8 @@ Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&
 <strong>Feature availability:</strong> The Boolean data type field is only supported for TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</blockquote>
 <p>A Boolean field displays as a checkbox within the web work item form.</p>
 <img src="media/weblayout-ref-checkbox-control-boolean-field.png" alt="Boolean field display in web work item form"/>
-
 </td>
 </tr>
-
 <tr>
 <td><strong>HTMLFieldControl</strong></td>
 <td>Use to display multi-line, rich-text formatted control. Specify this control type for fields of <code>Type=HTML</code>.<br/>
@@ -550,19 +507,15 @@ Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&
 For example:<br/><pre><code>&lt;Control Type=&quot;HtmlFieldControl&quot; FieldName=&quot;FabrikamFiber.ReleaseNotes&quot; 
 Label=&quot;Release Notes&quot; Dock=&quot;Fill&quot; /&gt;
 </code></pre>
-
 </td></tr>
-
 <tr>
 <td><strong>LabelControl</strong></td>
 <td>Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the <strong>LabelText</strong>, <strong>Link</strong> and <strong>Text</strong> elements. See <a href="labeltext-and-text-xml-elements-reference.md" data-raw-source="[LabelText and Text XML elements reference](labeltext-and-text-xml-elements-reference.md)">LabelText and Text XML elements reference</a> and <a href="link-param-xml-elements-reference.md" data-raw-source="[Link and Param XML elements reference](link-param-xml-elements-reference.md)">Link and Param XML elements reference</a>.</td>
 </tr>
-
 <tr>
 <td><strong>WebpageControlOptions</strong></td>
 <td><p>Use to display HTML-based content defined by a URI or embedded within a CDATA tag. This control does not have an associated field or field type.  You specify the content and links to display using the <strong>WebpageControlOptions</strong> element.</p>
 <p>The <strong>WebpageControlOptions</strong> element and its child elements have the following syntax structure:</p>
-
 <pre><code>&lt;WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" &gt;  
       &lt;Link UrlRoot=&quot;UrlRoot&quot; UrlPath =&quot;UrlPathWithParameters&quot; &gt;  
       &lt;Param index=&quot;IndexValue&quot; value=&quot;ParamValue&quot; type =&quot;Original | Current&quot;&gt;  
@@ -573,7 +526,6 @@ Label=&quot;Release Notes&quot; Dock=&quot;Fill&quot; /&gt;
 &lt;WebpageControlOptions/&gt;</code></pre><br/>
 
 <p>You use the <strong>Content</strong>, <strong>LabelText</strong>, and <strong>Link</strong> elements to define plain text or hyperlinked labels, add hyperlinks to a field, or display Web page content in a work item form. See <a href="provide-help-text-hyperlinks-web-content-form.md" data-raw-source="[Provide help text, hyperlinks, or web content on a work item form](provide-help-text-hyperlinks-web-content-form.md)">Provide help text, hyperlinks, or web content on a work item form</a> for details about the syntax.</p>
-
 </td>
 </tr>
 </tbody>
@@ -581,6 +533,7 @@ Label=&quot;Release Notes&quot; Dock=&quot;Fill&quot; /&gt;
 
 
 ## Related articles
+
 If you're just getting started with the new form, see these additional topics to manage the roll out or customize it: 
 - [Manage new form rollout](../manage-new-form-rollout.md)
 - [New work item experience](../process/new-work-item-experience.md)
@@ -590,13 +543,14 @@ If you're just getting started with the new form, see these additional topics to
 To learn more about process models and what's supported with each, see [Customize your work tracking experience](../customize-work.md). 
 
 <a id="marketplace-extensions">  </a>
+
 ## Marketplace extensions  
 
-Visit the [VSTS Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads) to find extensions you can start using.  
+Visit the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads) to find extensions you can start using.  
 
 <a id="extensions">  </a>
-## Form extensions 
 
+## Form extensions 
 
 The **ControlContribution**, **GroupContribution**, and **PageContribution** elements reference the ```Id``` of contributions from the extensions that have been installed for a project collection or account. You install an extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). To create an extension, see [Create your first extension](../../extend/get-started/node.md).
 
