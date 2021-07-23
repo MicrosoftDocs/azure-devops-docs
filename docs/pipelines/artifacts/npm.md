@@ -42,29 +42,24 @@ YAML is not supported in TFS.
 
 #### [Classic](#tab/classic/)
 
-To publish npm packages to your feed, add the **npm** task to your pipeline, then configure it as follow:
+To publish npm packages to your feed, follow the steps below to add and configure the **npm** task:
 
 1. From within your pipeline, select the `+` sign to add a task to your pipeline, then search for the *npm* task. Select **Add** to add it to your pipeline.
+
+    :::image type="content" source="./media/add-npm-task.png" alt-text="Screenshot showing how to find and add the npm task"::: 
+
 1. Fill out the required fields as follows:
 
-- **Display name**: name of your task
+    :::image type="content" source="./media/npm-publish.png" alt-text="Screenshot showing how to configure the npm publish task":::
+
+- **Display name**: name of your task.
 - **Command**: `publish`
-- **working folder**: Path to the folder containing the target package.json and .npmrc files.  leave blank if those files are at the root of the repo
-
-[!INCLUDE [package management permissions](includes/package-management-permissions-for-web-build.md)]
-
-To publish to an external npm registry, you must first create a service connection to point to that registry. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in the registry URL and the credentials to connect to the registry.
+- **Working folder that contains package.json**: path to the folder containing the target package.json and .npmrc files. Leave this blank if those files are at the root of your repo.
+- **Target registry**: select your feed from the dropdown menu.
 
 * * *
-> [!NOTE]
-> Ensure that your working folder has an `.npmrc` file with a `registry=` line, as described in the **Connect to feed** screen in your feed.  
-> The build does not support using the `publishConfig` property to specify the `registry` to which you're publishing. The build will fail, potentially with unrelated authentication errors, if you include the `publishConfig` property in your `package.json` configuration file.
 
 ## FAQ
-
-- **Where can I learn about the Azure Pipelines and TFS Package Management service?**
-
-    Check out the [Azure Artifacts landing page](../../artifacts/index.yml) for details about Artifacts in Azure Pipelines.
 
 - **How to publish packages to my feed from the command line?**
 
