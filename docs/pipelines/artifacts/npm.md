@@ -20,7 +20,7 @@ Using Azure Pipelines, you can publish your npm packages to Azure Artifacts feed
 #### [YAML](#tab/yaml/)
 
 ::: moniker range=">= azure-devops-2019"
-To publish your npm packages to Azure Artifacts feeds from your Pipeline, you must first provide the **Project Collection Build Service** identity a **Contributor** access to your feed. See [Add users/groups permissions](../../artifacts/feeds/feed-permission.md#adding-usersgroups-permissions-to-a-feed) for details.
+To publish your npm packages to Azure Artifacts feeds from your Pipeline, you must first provide a **Contributor** access to the **Project Collection Build Service** identity. See [Add users/groups permissions](../../artifacts/feeds/feed-permissions.md#adding-usersgroups-permissions-to-a-feed) for more details.
 
 Add the npm task to your yaml pipeline as follows to publish your package to your feed.
 
@@ -55,12 +55,11 @@ To publish npm packages to your feed, follow the steps below to add and configur
 - **Display name**: name of your task.
 - **Command**: `publish`
 - **Working folder that contains package.json**: path to the folder containing the target package.json and .npmrc files. Leave this blank if those files are at the root of your repo.
-- **Target registry**: select your feed from the dropdown menu.
+- **Registry location**: select **Target registry** to publish to an Azure Artifacts feed. select your feed from the dropdown menu.
 
 * * *
 
 ## Publish to public registry
-
 
 #### [YAML](#tab/yaml/)
 
@@ -95,6 +94,25 @@ To publish a package to an npm registry, add the following snippet to your yaml 
 ::: moniker range="< azure-devops-2019"
 YAML is not supported in TFS.
 ::: moniker-end
+
+#### [Classic](#tab/classic/)
+
+Follow the steps below to publish your npm packages to a public npm registry using the classic pipeline.
+
+1. From within your pipeline, select the `+` sign to add a task to your pipeline, then search for the *npm* task. Select **Add** to add it to your pipeline.
+
+    :::image type="content" source="./media/add-npm-task.png" alt-text="Screenshot showing how to find and add the npm task"::: 
+
+1. Fill out the required fields and make sure you select **External npm registry** to point to the public registry. Enter the name of your service connection in the **External Registry** field or create a new service connection if you haven't done so already.
+
+    :::image type="content" source="./media/npm-publish-registry.png" alt-text="Screenshot showing how to configure the npm publish task to publish to public registries":::
+
+- **Display name**: name of your task.
+- **Command**: `publish`
+- **Working folder that contains package.json**: path to the folder containing the target package.json and .npmrc files. Leave this blank if those files are at the root of your repo.
+- **Registry location**: select **External npm registry** to publish to public registries such as npmjs.com. Enter the name of your service connection.
+
+* * *
 
 ## FAQ
 
