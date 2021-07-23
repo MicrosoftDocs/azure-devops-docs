@@ -86,7 +86,7 @@ To sign up and enable all Azure DevOps Services, see [Sign up, sign in to Azure 
 	> [!div class="mx-imgBorder"]  
 	> ![Enter the code provided.](media/acquisition/verify-new-account.png)
 
-	An organization is created based on your account name. Sign in to your organization at any time by entering `https://dev.azure.com/{yourorganization}`) in your web portal. You can change the organization name as indicated in [Change organization or project settings](#change-settings) later in this article.
+	An organization is created based on your account name. Sign in to your organization at any time by entering `https://dev.azure.com/{yourorganization}` in your web portal. You can change the organization name as indicated in [Change organization or project settings](#change-settings) later in this article.
 
 1. Also, a project is created based on your account name. You can change the project name later.  To get started with Azure DevOps, choose **Continue**.
 
