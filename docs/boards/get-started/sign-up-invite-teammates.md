@@ -17,20 +17,20 @@ ms.date: 07/22/2021
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-Sign up for an Azure DevOps and Azure Boards to begin planning and tracking work. We walk you through the sign-up process for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). Follow these steps when you want to accomplish the following: 
-- Create a private or public project enabled Azure Boards services  
+Sign up for an Azure DevOps and Azure Boards to start planning and tracking work. We walk you through the sign-up process and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). Follow these steps when you want to accomplish the following tasks: 
+- Create a private or public project with Azure Boards enabled services  
 - Track work using the Basic, Agile, Scrum, or CMMI process for tracking work  
 - Create a Git or Team Foundation Version control (TFVC) repository for managing your code 
 - Invite others to contribute to your project 
  
-To sign-up and enable all Azure DevOps services, see [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md). To learn more about the choices available to you, see the following resources: 
+To sign up and enable all Azure DevOps Services, see [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md). To learn more about the choices available to you, see these articles: 
 -  [What is Azure Boards?](./what-is-azure-boards.md) 
 -  [Choose a process](../work-items/guidance/choose-process.md)
 -  [Choose the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md). 
 
 ## Choose your sign-up option  
 
-1. From your web browser, open the [Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/) sign-up page. Supported web browsers include the latest versions of Edge, Internet Explorer, Safari (Mac), Firefox, and Chrome. 
+1. From your web browser, open the [Azure Boards](https://azure.microsoft.com/services/devops/boards/) sign-up page. Supported web browsers include the latest versions of Edge, Internet Explorer, Safari (Mac), Firefox, and Chrome. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project dialog](media/acquisition/start-free-azure-boards.png)
@@ -71,33 +71,35 @@ To sign-up and enable all Azure DevOps services, see [Sign up, sign in to Azure 
 	> [!div class="mx-imgBorder"]  
 	> ![Create password dialog for Azure DevOps with valid email address.](media/acquisition/create-account-2.png)
   
-1. Choose the region and specify your birthday to complete your account registration.  
+1. Choose the region and specify your birthday to complete your account registration and then choose **Next**.  
  
 	> [!div class="mx-imgBorder"]  
 	> ![Create account dialog specify region and birthday.](media/acquisition/create-account-3.png) 
 
-1. Enter the code sent to your email address to verify your account.  
+1. Enter the code sent to your email address to verify your account and then choose **Next**.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Verify email dialog for account creation.](media/acquisition/create-account-4-verify.png) 
- 
-	Choose **Next**. 
 
-1. Check your email account and enter the code provided. Choose  **Next**.
+1. Check your email account and enter the code provided. Choose **Next**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Enter the code provided.](media/acquisition/verify-new-account.png)
 
-	An organization is created based on your sign-in account name. Sign in to your organization at any time by specifying (`https://dev.azure.com/{yourorganization}`). You can change the organization name as indicated in [Change organization or project settings](#change-settings) later in this article.
+	An organization is created based on your account name. Sign in to your organization at any time by entering `https://dev.azure.com/{yourorganization}`) in your web portal. You can change the organization name as indicated in [Change organization or project settings](#change-settings) later in this article.
 
-1. A project is created based on your sign-in account name. You can make changes to the settings shown, or change them later. To get started with Azure DevOps, choose **Continue**.
+1. Also, a project is created based on your account name. You can change the project name later.  To get started with Azure DevOps, choose **Continue**.
 
    ![Choose Continue to get started with Azure DevOps.](media/acquisition/create-project-new-account.png)
 
-	Your project name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
+	- **Project name**: Can't contain special characters (such as /: \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. 
+	- **Visibility**: Choose **Public** if you want to create an open-source project. Otherwise, choose **Private**, so only people who you give access to can view your project. 
 
-1. Your next step is to start using your Kanban board to [track issues and tasks](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project. 
+1. Your next step is to start using your Kanban board to [track issues and tasks](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project.  
 
+
+> [!NOTE]   
+> Your  project was created using the Basic process which uses Epics, Issues, and Tasks to track work. If you want a project that uses the Agile, Scrum, or CMMI process, then you can add another project and specify the process through advanced setting options as described in the next section. See [Create a project using Advanced settings](#advanced-settings). 
 
 <a name="MicrosoftAccount"></a>
 
@@ -185,18 +187,21 @@ If you signed up for Azure DevOps with an existing Microsoft account or GitHub i
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project.](media/sign-up/nf-create-project.png)
 
-	The name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
+	- **Project name**: Can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. 
+	- **Visibility**: Choose **Public** if you want to create an open-source project. Otherwise, choose **Private**, so only people who you give access to can view your project. 
 	
-2. When your project has been created, the Kanban board automatically appears.
+2. Your Kanban board automatically appears. You're now set to start [tracking issues, tasks, and features](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board](media/track-issues/issues-board-new-item.png)
 
-	You're now set to start [tracking issues, tasks, and features](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project. 
-
+	
 
 > [!NOTE]   
 > Your first project was created using the Basic process which uses Epics, Issues, and Tasks to track work. If you want a project that uses the Agile, Scrum, or CMMI process, then you can add another project and specify the process through advanced setting options as described in the next section. See [Choose a process for a comparison of processes](../work-items/guidance/choose-process.md). 
+
+
+<a name="advanced-settings"></a>
 
 ## Create a project with Advanced options
 
@@ -233,9 +238,9 @@ You can add and invite others to work on your project by adding their email addr
 	- **Users:** Enter the email addresses (Microsoft accounts) or GitHub IDs for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted.  
 	- **Access level:** Assign one of the following access levels: 
 		- **Basic**: Assign to users who must have access to all Azure Boards features. You can grant up to five users <strong>Basic</strong> access for free.  
-        - **Stakeholder**: Assign to users who will have limited access to features to view, add, and modify work items. You can assign an unlimited number of users **Stakeholder** access for free.   
+        - **Stakeholder**: Assign to users who will have limited access to features to view, add, and modify work items. You can assign an unlimited amount of users Stakeholder access for free.   
 	- **Add to project**: Select the project you named in the preceding procedure.  
-    - **Azure DevOps Groups**: Select one of the following security groups which will determine the permissions the users have to perform select tasks (To learn more, see [Default permissions and access for Azure Boards](permissions-access-boards.md).):  
+    - **Azure DevOps Groups**: Select one of the following security groups, which will determine the permissions the users have to perform select tasks (To learn more, see [Default permissions and access for Azure Boards](permissions-access-boards.md).):  
         - **Project Readers**: Assign to users who only require read-only access.   
         - **Project Contributors**: Assign to users who will contribute fully to the project.  
         - **Project Administrators**: Assign to users who will configure project resources.  
