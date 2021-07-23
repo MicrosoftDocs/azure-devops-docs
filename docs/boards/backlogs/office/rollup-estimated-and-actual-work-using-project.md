@@ -6,14 +6,13 @@ ms.technology: devops-agile
 ms.topic: conceptual
 ms.assetid: 502d6c76-36a0-4448-b73c-9af43703b562
 ms.author: kaelli
-author: KathrynEE
-monikerRange: '<= tfs-2018'
+author: KathrynEE 
 ms.date: 08/15/2019
 ---
 
 # Rollup estimated and actual work using Project
 
-[!INCLUDE [temp](../../includes/version-tfs-2013-2018.md)]
+**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
 
 Because Microsoft Project has a scheduling engine, it automatically will generate a rollup of summary tasks. Rollup provides summed values of select fields for all child work items of a parent.  
 

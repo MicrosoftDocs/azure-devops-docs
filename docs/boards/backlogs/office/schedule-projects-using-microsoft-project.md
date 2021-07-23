@@ -7,13 +7,12 @@ ms.assetid: c8d9ea81-ebde-47e5-b813-473018177aa9
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '<= tfs-2018'
 ms.date: 08/15/2019
 ---
 
 # Schedule projects using Microsoft Project  
 
-[!INCLUDE [temp](../../includes/version-tfs-2013-2018.md)]
+**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
 
 You can use [Project to plan and schedule work items](create-your-backlog-tasks-using-project.md) that you define in Team Foundation Server (TFS). Some features may require customizing the Microsoft Project Mapping file which is only supported for the On-Premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
