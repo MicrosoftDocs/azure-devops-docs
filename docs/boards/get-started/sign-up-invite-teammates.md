@@ -33,7 +33,7 @@ To sign up and enable all Azure DevOps Services, see [Sign up, sign in to Azure 
 1. From your web browser, open the [Azure Boards](https://azure.microsoft.com/services/devops/boards/) sign-up page. Supported web browsers include the latest versions of Edge, Internet Explorer, Safari (Mac), Firefox, and Chrome. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create new project dialog](media/acquisition/start-free-azure-boards.png)
+	> ![Create new project dialog, start free.](media/acquisition/start-free-azure-boards.png)
 
 1. Choose one of the following buttons based on the account you want to use. 
 
@@ -48,7 +48,7 @@ To sign up and enable all Azure DevOps Services, see [Sign up, sign in to Azure 
 1. If you've already signed up or have an organization set up to use Azure Boards, choose the **Sign in** link. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create new project dialog](media/acquisition/sign-in-to-azure-boards.png)
+	> ![Sign-in button.](media/acquisition/sign-in-to-azure-boards.png)
 
 <a name="create-account"></a>
 
