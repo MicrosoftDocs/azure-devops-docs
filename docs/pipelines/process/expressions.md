@@ -124,6 +124,11 @@ Depending on the execution context, different variables are available.
 
 Variables are always strings. If you want to use typed values, then you should use [parameters](runtime-parameters.md) instead.
 
+> [!NOTE]
+> Variables could be defined with expressions, but they shouldn't depend on variables  such If the variable is defined as an expression
+> and depends on another variable it isn't guaranteed that its expression will be evaluated properly.
+> Please avoid using such nested constructions, since it could lead to unexpected results.
+
 ## Functions
 
 The following built-in functions can be used in expressions.
