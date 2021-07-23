@@ -3,7 +3,7 @@ title: Variable groups for Azure Pipelines
 ms.custom: seodec18, devx-track-azurecli, pipelinesresourcesrefresh
 description: Share common variables across pipelines using variable groups.
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
-ms.topic: conceptual
+ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair
 ms.date: 02/05/2019
@@ -14,9 +14,9 @@ monikerRange: '>= tfs-2017'
 
 Use a variable group to store values that you want to control and make available across
 multiple pipelines. You can also use variable groups to store secrets and other values
-that might need to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml&view=azure-devops&preserve-view=true#use-a-variable-group). Variable groups are defined and managed in the **Library** page under **Pipelines**.
+that might need to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml&view=azure-devops&preserve-view=true#use-a-variable-group).
 
-Variables groups are a [protected resource](../security/resources.md). You can add [approvals and checks](../process/approvals.md) to them and set pipeline permissions.
+Variables groups are [protected resources](../security/resources.md). You can add [approvals and checks](../process/approvals.md) to them and set pipeline permissions.
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -64,7 +64,7 @@ Using the Azure DevOps CLI, you can create and update variable groups for the pi
 - Sign into Azure DevOps using `az login`.
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
 
-[Create a variable group](#create-variable-group) | [Update a variable group](#update-variable-group) 
+[Create a variable group](#create-variable-group) | [Update a variable group](#update-variable-group)
 
 <a id="create-variable-group" />  
 
@@ -220,7 +220,7 @@ stages:
     - script: echo $(myhello)
 ```
 
-### Authorize
+## Authorize a variable group
 
 To work with variable groups, you must authorize the group. If you only name the variable group in YAML, then anyone who can push code to your repository could extract the contents of secrets in the variable group.
 To authorize the group, use one of the following techniques:
@@ -563,7 +563,7 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 
 1. On the **Variable groups** page, select **+ Add** to select specific secrets from your vault for mapping to this variable group.
 
-### Secret management
+### Manage secrets
 
 - Only the secret *names* get mapped to the variable group, not the secret values. The latest secret value, fetched from the vault, is used in the pipeline run that's linked to the variable group.
 
@@ -574,7 +574,7 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 - Azure Key Vault supports storing and managing cryptographic keys and secrets in Azure.
   Currently, Azure Pipelines variable group integration supports mapping only secrets from the Azure key vault. Cryptographic keys and certificates aren't supported.
 
-## Expansion of variables in a group
+## Expand variables in a group
 
 #### [YAML](#tab/yaml/)
 
