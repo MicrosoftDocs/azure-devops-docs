@@ -22,6 +22,9 @@
 - name: What do I get with a project?
   href: ../../user-guide/services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   displayname: features, services, dashboards, plan, track
+- name: Add users or groups to a project
+  href: ../security/add-users-team-project.md
+  displayName: create, new, account, default, custom, access, permission
 - name: Project configuration
   items:
   - name: "Area & iteration paths"
