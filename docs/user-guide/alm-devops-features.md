@@ -43,7 +43,7 @@ If you're new to Azure DevOps, see our overview articles that are designed to gi
 Track work and integrate with your code, build, and test environments from the following clients:<br/>- <a href="/previous-versions/azure/devops/java/download-eclipse-plug-in" data-raw-source="[Eclipse (Team Explorer Everywhere)](/previous-versions/azure/devops/java/download-eclipse-plug-in)">Eclipse (Team Explorer Everywhere)</a><br/>- <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[Visual Studio](https://visualstudio.microsoft.com/downloads/)">Visual Studio</a><br/>- <a href="/previous-versions/azure/devops/java/download-android-studio-plug-in" data-raw-source="[Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)">Android Studio</a><br/>- <a href="/previous-versions/azure/devops/java/download-intellij-plug-in" data-raw-source="[IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)">IntelliJ</a><br/>- <a href="/previous-versions/azure/devops/java/vscode-extension" data-raw-source="[Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)">Visual Studio Code</a><br/>
 To learn how to connect, see <a href="../organizations/projects/connect-to-projects.md" data-raw-source="[Connect to a project](../organizations/projects/connect-to-projects.md)">Connect to a project</a>.<br/><br/>
 <p><b>Office integration clients</b></p>
-Use features supported by these familiar clients to manage your project and illustrate your requirements.<br/>- <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Excel</a><br/>- <a href="../boards/backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)">Project</a><br/>- <a href="../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[PowerPoint - Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)">PowerPoint - Storyboarding</a><br/>
+Use features supported by these familiar clients to manage your project and illustrate your requirements.<br/>- <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Excel</a>
 
 </td>
 <td width="30%">
@@ -103,12 +103,6 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p>Use the <a href="../boards/sprints/forecast.md" data-raw-source="[forecast](../boards/sprints/forecast.md)">forecast</a> tool to estimate work to be completed in future sprints. </p>
  <br/>
-
-<p><b>Storyboard</b></p>
-<p>Visualize your ideas and user stories and support greater understanding of them by <a href="../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[storyboarding them with PowerPoint](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)">storyboarding them with PowerPoint</a>, also link your storyboards to your backlog work items.  </p>
-
-
-
 
 
 </td>
@@ -2615,10 +2609,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Discussion (Azure DevOps Services) </b></p>
 <p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/>.  </p>
 <img src="media/features/alm-feature-add-work-items-discussion.png" alt="Discussion section"/><br/><br/>
-
-
-<p><b>Storyboard</b></p>
-<p><a href="../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[Link your storyboards to you backlog work items](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)">Link your storyboards to you backlog work items</a>.  </p>
 
 </td>
 

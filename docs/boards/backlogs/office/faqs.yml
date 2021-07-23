@@ -117,7 +117,6 @@ sections:
           ::: moniker-end 
 
           ::: moniker range=">= tfs-2015 <= tfs-2018" 
-          - Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships. 
           - Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
           - Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
           ::: moniker-end 

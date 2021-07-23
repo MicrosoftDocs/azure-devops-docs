@@ -44,12 +44,6 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018" 
-> [!NOTE]   
-> You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
-::: moniker-end  
-
-
 ## Prerequisites 
 
 > [!NOTE]  

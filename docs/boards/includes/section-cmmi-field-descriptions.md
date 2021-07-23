@@ -1,7 +1,6 @@
 ---
 ms.technology: devops-agile
-ms.prod: devops
-ms.manager: mijacobs
+ms.prod: devops 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
@@ -52,7 +51,7 @@ ms.date: 09/21/2020
       [Start Date/Finish Date](../queries/query-by-date-or-current-iteration.md)  
    :::column-end:::
    :::column span="3":::
-      The target dates for when the work will start or finish. These fields are filled in by [Microsoft Project](../backlogs/office/create-your-backlog-tasks-using-project.md) when you use it for scheduling.  
+      The target dates for when the work will start or finish. These fields are filled in by Microsoft Project when you use it for scheduling.  
       You can specify work in hours or in days. There are no inherent time units associated with this field.  
    :::column-end:::
 :::row-end:::

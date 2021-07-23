@@ -287,8 +287,6 @@ In addition to connecting through a web browser, you can connect to a project fr
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
 - [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
 - [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Office Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
-- [PowerPoint Storyboarding](../../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
 - [Azure Test Plans](/previous-versions/jj635157(v=vs.140)) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
