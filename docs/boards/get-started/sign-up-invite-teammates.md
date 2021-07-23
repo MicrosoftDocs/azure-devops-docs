@@ -17,7 +17,7 @@ ms.date: 07/22/2021
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-Sign up for an Azure DevOps and Azure Boards to start planning and tracking work. We walk you through the sign-up process and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). Follow these steps when you want to accomplish the following tasks: 
+Sign up for an Azure DevOps and Azure Boards to start planning and tracking work. We walk you through the sign-up process for [Azure Boards](https://azure.microsoft.com/services/devops/boards/?nav=min). Follow these steps when you want to accomplish the following tasks: 
 - Create a private or public project with Azure Boards enabled services  
 - Track work using the Basic, Agile, Scrum, or CMMI process for tracking work  
 - Create a Git or Team Foundation Version control (TFVC) repository for managing your code 
@@ -25,7 +25,7 @@ Sign up for an Azure DevOps and Azure Boards to start planning and tracking work
  
 To sign up and enable all Azure DevOps Services, see [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md). To learn more about the choices available to you, see these articles: 
 -  [What is Azure Boards?](./what-is-azure-boards.md) 
--  [Choose a process](../work-items/guidance/choose-process.md)
+-  [Choose a process work tracking work](../work-items/guidance/choose-process.md)
 -  [Choose the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md). 
 
 ## Choose your sign-up option  
