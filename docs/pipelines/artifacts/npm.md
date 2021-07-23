@@ -60,7 +60,7 @@ To publish npm packages to your feed, follow the steps below to add and configur
 
 * * *
 
-## Publish to public registry
+## Publish to a public registry
 
 #### [YAML](#tab/yaml/)
 
@@ -70,7 +70,7 @@ To publish your packages to a public npm registry such as *npmjs.com*, you must 
 
 You can do this by going to your **Project settings** then selecting **Service connections**.
 
-1. Select **Create service connection** to create a new service connection., then .
+1. Select **Create service connection** to create a new service connection.
 
     :::image type="content" source="./media/create-service-connection.png" alt-text="Screenshot showing how to create a new service connection":::
 
