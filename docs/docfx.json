@@ -15,6 +15,7 @@
           "pipelines/archive/apps/nodejs/**",
           "pipelines/archive/release/**",
           "pipelines/apps/windows/universal.md",
+          "reference/api-ref/**",
           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
