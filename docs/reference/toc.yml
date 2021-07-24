@@ -83,14 +83,6 @@
     href: /rest/api/vsts/core/teams
   - name: Work item types
     href: /rest/api/azure/devops/wit/work%20item%20types
-  - name: API SDK reference (Deprecated)
-    items:
-    - name: IProcessTemplates.AddUpdateTemplate
-      href: ../reference/api-ref/iprocess-templates-add-update-template.md
-    - name: WorkItem.Open method
-      href: ../reference/api-ref/open.md
-    - name: WorkItem.PartialOpen method
-      href: ../reference/api-ref/partialopen.md
 - name: Archived
   items:
   - name: Microsoft Project Field Mapping
