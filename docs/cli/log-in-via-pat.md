@@ -16,11 +16,16 @@ ms.date: 08/17/2020
 
 [!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
 
+You can sign in using an Azure DevOps Personal Access Token(PAT). See the [create personal access token guide](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) to create one.
 
-You can sign in using an Azure DevOps Personal Access Token. See the [create personal access token guide](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) to create one.
+To use a PAT token with az devops cli you can either
+* use `az devops login` and be [prompted for the PAT token](#userprompt)
+* pipe the [PAT token on StdIn](#pipe-pat-on-stdin) to `az devops login`. NOTE: this only works in a non interactive shell
+* set the [environment variable](#EnvironmentVariable) `AZURE_DEVOPS_EXT_PAT` and don't use `az devops login`
+
+## <a name="userprompt" />User prompted use of `az devops login`
 
 You are prompted to enter a PAT after you run the `az devops login` command.
-
 
 ```bash
 $az devops login --organization https://dev.azure.com/contoso
@@ -32,14 +37,29 @@ Token:
 
 Once successfully signed in, this command would also set your default organization to Contoso, provided there is no default organization configured.
 
+
+## <a name="PipePATonStdIn"/>Pipe PAT on StdIn to `az devops login`
+
+### From Variable
+This is useful in pipelines where `#####` can be replaced by $(System.AccessToken) or other pipeline variable.
+
+```bash
+echo  "######" | az devops login --organization https://dev.azure.com/contoso/
+```
+
+### From a file
+```bash
+cat my_pat_token.txt | az devops login --organization https://dev.azure.com/contoso/
+```
+
+
+## <a name="EnvironmentVariable"/> Use of environment variable `AZURE_DEVOPS_EXT_PAT`
+
 To gain access in a non-interactive manner for automation scenarios, you can use environment variables or fetch a PAT from a file. 
 
-## Use environment variables 
-
-There are cases where persisting a personal access token on the machine is not feasible or secure. In these cases, you can get a token from an environment variable.
+If `az login` or `az devops login` haven't been used then all `az devops` commands will try to login using a PAT token stored in `AZURE_DEVOPS_EXT_PAT` environment variable.
 
 To use a personal access token, set the `AZURE_DEVOPS_EXT_PAT` environment variable at the process level:
-
 
 #### [Windows](#tab/windows)
 
@@ -56,15 +76,5 @@ $env:AZURE_DEVOPS_EXT_PAT = 'xxxxxxxxxx'
 export AZURE_DEVOPS_EXT_PAT=xxxxxxxxxx
 ```
 
-* * *
-
 Replace *xxxxxxxxxx* with your PAT.
 
-Now run any command without having to sign in explicitly. Each command will try to use the PAT in the environment variable for authentication.
-
-## Fetch PAT from a file 
-
-
-```bash
-cat my_pat_token.txt | az devops login --organization https://dev.azure.com/contoso/
-```
