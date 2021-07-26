@@ -55,7 +55,7 @@ Variable groups follow the [library security model](index.md#library-security).
 
 ::: moniker range="> azure-devops-2019"
 
-Using the Azure DevOps Command Line Interface (CLI), you can create and update variable groups for the pipeline runs in your project. You can also [manage the variable groups](#manage-a-variable-group) and [manage the individual variables within a variable group](#manage-variables-in-a-variable-group).
+Using the Azure DevOps Command Line Interface (CLI), you can create and update variable groups for the pipeline runs in your project. You can also [update the variable groups](#update-a-variable-group) and [update the individual variables within a variable group](#update-variables-in-a-variable-group).
 
 ## Prerequisites
 
@@ -67,7 +67,7 @@ Using the Azure DevOps Command Line Interface (CLI), you can create and update v
 
 <a id="create-variable-group" />  
 
-## Create a variable group
+## Create a variable group with CLI
 
 You can create a variable group with the [az pipelines variable-group create](/cli/azure/pipelines/variable-group#ext-azure-devops-az-pipelines-variable-group-create) command. If the Azure DevOps extension for Azure Command Line Interface (CLI) is new to you, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
@@ -83,7 +83,7 @@ az pipelines variable-group create --name
 #### Parameters
 
 - **name**: Required. Name of the variable group.
-- **variables**: Required. Variables in format `key=value` space-separated pairs. Secret variables should be managed using [az pipelines variable-group variable](#manage-variables-in-a-variable-group) commands.
+- **variables**: Required. Variables in format `key=value` space-separated pairs. Secret variables should be managed using [az pipelines variable-group variable](#update-variables-in-a-variable-group) commands.
 - **authorize**: Optional. Specify whether the variable group should be accessible by all pipelines. Accepted values are *false* and *true*.
 - **description**: Optional. Description of the variable group.
 - **org**: Azure DevOps organization URL. Configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
@@ -128,7 +128,7 @@ az pipelines variable-group update --group-id
 
 #### Parameters
 
-- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-group).
+- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-groups).
 - **authorize**: Required unless **description** or **name** is specified. Indicates whether the variable group should be accessible by all pipelines. Accepted values are *false* and *true*.
 - **description**: Required unless **authorize** or **name** is specified. Use to change the description of the variable group.
 - **name**: Required unless **authorize** or **description** is specified. Use to change the name of the variable group.
@@ -328,7 +328,7 @@ az pipelines variable-group show --group-id
 
 #### Parameters
 
-- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-group).
+- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-groups).
 - **org**: Azure DevOps organization URL. Configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. Configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
 
@@ -369,7 +369,7 @@ az pipelines variable-group delete --group-id
 
 #### Parameters
 
-- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-group).
+- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-groups).
 - **org**: Azure DevOps organization URL. Configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. Configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
 - **yes**: Optional. Doesn't prompt for confirmation.
@@ -399,7 +399,7 @@ az pipelines variable-group variable create --group-id
 
 #### Parameters
 
-- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-group).
+- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-groups).
 - **name**: Required. Name of the variable you're adding.
 - **org**: Azure DevOps organization URL. Configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. Configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
@@ -432,7 +432,7 @@ az pipelines variable-group variable list --group-id
 
 #### Parameters
 
-- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-group).
+- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-groups).
 - **org**: Azure DevOps organization URL. Configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. Configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
 
@@ -469,7 +469,7 @@ az pipelines variable-group variable update --group-id
 
 #### Parameters
 
-- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-group).
+- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-groups).
 - **name**: Required. Name of the variable you're adding.
 - **new-name**: Optional. Specify to change the name of the variable.
 - **org**: Azure DevOps organization URL. Configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
@@ -506,7 +506,7 @@ az pipelines variable-group variable delete --group-id
 
 #### Parameters
 
-- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-group).
+- **group-id**: Required. ID of the variable group. To find the variable group ID, see [List variable groups](#list-variable-groups).
 - **name**: Required. Name of the variable you're deleting.
 - **org**: Azure DevOps organization URL. Configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. Configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
