@@ -87,6 +87,22 @@
   items:
   - name: Microsoft Project Field Mapping
     href: mapping/toc.yml
+  - name: Configure Features Wizard  
+    items:
+    - name: Configure features after an upgrade
+      href: /previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade
+    - name: New features added through feature enablement
+      href: /previous-versions/azure/devops/reference/upgrade/new-features-added
+    - name: Add features manually
+      href: /previous-versions/azure/devops/reference/upgrade/add-features-manually
+    - name: Additional configuration options
+      href: /previous-versions/azure/devops/reference/upgrade/additional-configuration-options
+    - name: Update a customized process template to access new features
+      href: /previous-versions/azure/devops/reference/upgrade/update-customized-process-template 
+    - name: When upgrading from TFS 2008 or TFS 2010
+      href: /previous-versions/azure/devops/reference/upgrade/upgrade-tfs-2008-or-2010
+  - name: API SDK reference
+    href: /previous-versions/azure/devops/reference/api-ref/iprocess-templates-add-update-template
 - name: Resources
   items:
   - name: Azure Boards
