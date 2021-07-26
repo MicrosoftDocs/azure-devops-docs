@@ -127,7 +127,10 @@ Variables are always strings. If you want to use typed values, then you should u
 > [!NOTE]
 > Variables could be defined with expressions, but they shouldn't depend on variables  such If the variable is defined as an expression
 > and depends on another variable it isn't guaranteed that its expression will be evaluated properly.
+> For example we have variable `a` which value `$[ <expression> ]` is used as a part for the in value of variable `b`.
+> Such constructions isn't officially supported. 
 > Please avoid using such nested constructions, since it could lead to unexpected results.
+>
 
 ## Functions
 
