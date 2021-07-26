@@ -23,7 +23,7 @@ To use a PAT with the Azure DevOps CLI, use one of these options:
 * Use `az devops login` and be [prompted for the PAT token](#userprompt).
 * Pipe the [PAT token on StdIn](#PipePATonStdIn) to `az devops login`. 
 
-  > [!NOTE]:
+  > [!NOTE]
   > This option works only in a non-interactive shell.
 
 * Set the `AZURE_DEVOPS_EXT_PAT` [environment variable](#EnvironmentVariable), and don't use `az devops login`.
