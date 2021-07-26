@@ -29,3 +29,18 @@ To use the Azure Artifacts symbol server, you must add your organization to the 
 1. In the authentication prompt, paste your personal access token that you created earlier. You can leave the username field blank.
 
 WinDbg should then acquire the symbols for your executable. To verify if your symbols are loaded, run the **lm** command to list all loaded modules.
+
+## Start debugging
+
+With WinDbg, you can debug both kernel-mode and user-mode components:
+
+- [Getting started with WinDbg (user-mode)](/windows-hardware/drivers/debugger/getting-started-with-windbg).
+- [Getting started with WinDbg (kernel-mode)](/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-).
+- [Using the WinDbg Graphical Interface](/windows-hardware/drivers/debugger/windbg-graphical-interface).
+- [Using the Debugger Command Window](/windows-hardware/drivers/debugger/the-debugger-command-window).
+
+## Related articles
+
+- [Symbols overview](../concepts/symbols.md).
+- [Debug with Visual Studio](./debug-with-symbols-visual-studio.md).
+- [How the Debugger Recognizes Symbols](/windows-hardware/drivers/debugger/how-the-debugger-recognizes-symbols.md).
