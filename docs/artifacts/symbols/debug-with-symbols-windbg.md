@@ -43,4 +43,4 @@ With WinDbg, you can debug both kernel-mode and user-mode components:
 
 - [Symbols overview](../concepts/symbols.md).
 - [Debug with Visual Studio](./debug-with-symbols-visual-studio.md).
-- [How the Debugger Recognizes Symbols](/windows-hardware/drivers/debugger/how-the-debugger-recognizes-symbols.md).
+- [How the Debugger Recognizes Symbols](/windows-hardware/drivers/debugger/how-the-debugger-recognizes-symbols).
