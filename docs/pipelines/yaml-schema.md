@@ -1751,7 +1751,7 @@ pool:
 
 ---
 
-Learn more about [demands](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/demands?view=azure-devops&tabs=yaml)
+Learn more about [demands](./process/demands.md).
 
 ::: moniker range=">=azure-devops-2020"
 
