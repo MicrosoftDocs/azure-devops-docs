@@ -7,8 +7,8 @@ ms.topic: tutorial
 ms.reviewer: karrg
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azure-devops-2020'
-ms.date: 07/09/2020
+monikerRange: 'azure-devops'
+ms.date: 07/26/2021
 ---
  
 # Azure Boards with Slack
@@ -32,6 +32,9 @@ Read this article to learn how to:
 > * Create work items from your Slack channel
 > * Monitor work item activity in your Slack channel  
 > * Get notifications in private Slack channels
+
+> [!NOTE]
+> Azure Boards and Slack integration is only supported for Azure DevOps Services. 
 
 ## Prerequisites
 
