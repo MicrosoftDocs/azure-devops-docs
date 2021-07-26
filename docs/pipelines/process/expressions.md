@@ -125,12 +125,7 @@ Depending on the execution context, different variables are available.
 Variables are always strings. If you want to use typed values, then you should use [parameters](runtime-parameters.md) instead.
 
 > [!NOTE]
-> Variables could be defined with expressions, but they shouldn't depend on variables  such If the variable is defined as an expression
-> and depends on another variable it isn't guaranteed that its expression will be evaluated properly.
-> For example we have variable `a` which value `$[ <expression> ]` is used as a part for the in value of variable `b`.
-> Such constructions isn't officially supported. 
-> Please avoid using such nested constructions, since it could lead to unexpected results.
->
+> Variables that are defined as expressions shouldn't depend on another variable with expression in value since **it isn't guaranteed** that both expressions will be evaluated properly. For example we have variable `a` whose value `$[ <expression> ]` is used as a part for the value of variable `b`. Since the order of processing variables isn't guaranteed variable `b` could have an incorrect value of variable `a` after evaluation.
 
 ## Functions
 
