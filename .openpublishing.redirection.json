@@ -18159,6 +18159,21 @@
       "source_path": "docs/organizations/security/git-permissions-before-2017.md",
       "redirect_url": "/azure/devops/repos/git/set-git-repository-permissions",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/api-ref/iprocess-templates-add-update-template.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/api-ref/iprocess-templates-add-update-template",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/api-ref/open.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/api-ref/open",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/api-ref/partialopen.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/api-ref/partialopen",
+      "redirect_document_id": false
     }
   ]
 }
