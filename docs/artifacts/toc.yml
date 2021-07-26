@@ -200,10 +200,10 @@
     - name: Symbols overview
       href: concepts/symbols.md
       displayName: symbols, debugging 
-    - name: Use symbols in Visual Studio
+    - name: Debug with Visual Studio
       href: symbols/debug-with-symbols-visual-studio.md
       displayName: symbols, visual studio symbols, debug, debugger 
-    - name: Use symbols in WinDbg
+    - name: Debug with WinDbg
       href: symbols/debug-with-symbols-windbg.md
       displayName: symbols, windbg, debugger
     - name: Publish symbols
