@@ -7,13 +7,13 @@ ms.topic: tutorial
 ms.reviewer: karrg
 ms.author: karrg
 author: KathrynEE
-monikerRange: '>= azure-devops-2020'
-ms.date: 04/14/2021
+monikerRange: 'azure-devops'
+ms.date: 07/26/2021
 ---
  
 # Azure Boards with Microsoft Teams
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can create work items and monitor work item activity in your Azure Boards project from your Teams channel. You accomplish this by adding the [Azure Boards app for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000644?tab=Overview) to your Teams channel.
 
@@ -36,6 +36,10 @@ Read this article to learn how to:
 > * Set up subscriptions to work item related events in your Teams channel
 > * Create work items from your Teams channel
 > * Monitor work item activity in your Teams channel  
+
+
+> [!NOTE]
+> Azure Boards and Microsoft Teams integration is only supported for Azure DevOps Services. 
 
 
 ## Prerequisites
