@@ -10,33 +10,44 @@ monikerRange: '> tfs-2015'
 
 # Publish symbols for debugging
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+Azure Artifacts offers symbol servers to store your symbols. You can use the debugger to connect and automatically retrieve the correct symbol files without knowing product names, build numbers, or package names. Using Azure Pipelines, you can publish you symbols to Azure Artifacts symbols server, files shares, or portable PDBs.
 
-[!INCLUDE [](../../artifacts/includes/availability-symbols.md)]
+## Publish symbols to Azure Artifacts symbol server
 
-Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers, or package names. To learn more about symbols, read the [concept page](../../artifacts/concepts/symbols.md). To consume symbols, see [this page for Visual Studio](../../artifacts/symbols/debug-with-symbols-visual-studio.md) or [this page for WinDbg](../../artifacts/symbols/debug-with-symbols-windbg.md).
+To publish your symbols to Azure Artifacts symbols server, you can use the *Index Sources & Publish Symbols* task in your pipeline.
 
-## Publish symbols
-To publish symbols to the symbol server in Azure Artifacts, include the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task in your build pipeline. Configure the task as follows:
+1. From your pipeline definition, select `+` to add a new task.
+
+1. Search for the **Index sources and publish symbols** task. Select **Add** to add it to your pipeline.
+
+    :::image type="content" source="media/index-sources-publish-symbols.png" alt-text="Screenshot showing how to add the index sources and publish symbols to the current pipeline":::
+
+1. Fill out the required fields as follows:
+
+    :::image type="content" source="media/publish-to-symbol-server.png" alt-text="Screenshot showing the index sources and publish symbols task":::
+
 ::: moniker range=">= tfs-2018"
-
-* For **Version**, select **2.\\***.
-
+- **Task version**: select **2.\\***.
 ::: moniker-end
+
 ::: moniker range="<= tfs-2017"
-
-* For **Version**, select **1.\\***.
-
+- **Task version**: select **1.\\***.
 ::: moniker-end
 
-* For **Symbol Server Type**, select **Symbol Server in this organization/collection (requires Azure Artifacts)**.
-* Use the **Path to symbols folder** argument to specify the root directory that contains the .pdb files to be published.
-* Use the **Search pattern** argument to specify search criteria to find the .pdb files in the folder that you specify in **Path to symbols folder**. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```).
-For example, ```**\bin\**\*.pdb``` searches for all .pdb files in all subdirectories named *bin*.
+- **Display name**: task display name.
+
+- **Path to symbols folder**: path to the folder hosting the symbol files.
+
+- **Search pattern**: the pattern used to find the pdb files in the folder that you specified in **Path to symbols folder**. Single-folder wildcard (`*`) and recursive wildcards (`**`) are supported. Example: `**\bin\**\*.pdb` searches for all .pdb files in all subdirectories named *bin*.
+
+- **Index sources**: indicates whether to inject source server information into the PDB files.
+
+- **Publish symbols**: indicates whether to publish the symbol files. 
+    - **Symbol server type**: select **Symbol Server in this organization/collection (requires Azure Artifacts)** to publish your symbols to Azure Artifacts symbol server.
+
+- **Verbose logging**: check to include more information in your logs.
 
 ### Publish symbols for NuGet packages
 To publish symbols for NuGet packages, include the preceding task in the build pipeline that produces the NuGet packages. Then the symbols will be available to all users in the Azure DevOps organization.
