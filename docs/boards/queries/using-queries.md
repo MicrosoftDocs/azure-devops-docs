@@ -21,17 +21,19 @@ Work item queries generate lists of work items based on the filter criteria you 
 You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
 
 #### [Browser](#tab/browser/) 
+
 > [!div class="mx-imgBorder"]  
 > ![Query Editor, web browser.](media/using-queries/query-editor.png)  
  
 #### [Visual Studio](#tab/visual-studio/)
+
 > [!div class="mx-imgBorder"]  
 > ![Query Editor, Visual Studio.](media/using-queries/visual-studio-new-query-editor.png) 
 
 > [!NOTE]  
 > To define queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option. 
 
-***
+* * *
 
 
 If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
@@ -296,8 +298,17 @@ To query across all projects, delete the clause with the **Team Project** field.
 You create a query by defining one or more clauses. Each clause defines a filter criteria for a single field. 
 
 
-#### [Browser](#tab/browser/) 
+#### Sample query clause 
 
+|And/Or|Field|Operator|Value|
+|------|-----|--------|-----|
+|**And**|**Assigned To**|**=**|**&#64;Me**|
+
+For a quick reference of the operators available based on the field data type, see [Query index quick reference](query-index-quick-ref.md#fields-operators-macros). 
+
+All clauses you add are added as an **And** statement. Choose **Or** to change the grouping. You group clauses to ensure that the clause statements are executed in the sequence required. 
+
+#### [Browser](#tab/browser/) 
 
 Choose **Add new clause** to add another clause at then end of the query, and then choose the **Field**, **Operator**, and **Value** for that clause.  
 
@@ -329,25 +340,6 @@ When finished, choose :::image type="icon" source="../media/icons/run_query.png"
 
 * * *
 
-### Sample query clause 
-
-<table>
-<tr>
-	<th>And/Or</th>
-	<th>Field</th>
-	<th>Operator</th>
-	<th>Value</th></tr>
-<tr>
-	<td><p><strong>And</strong></p></td>
-	<td><p><strong>Assigned To</strong></p></td>
-	<td><p><strong>=</strong></p></td>
-	<td><p><strong>&#64;Me</strong></p></td>
-</tr>
-</table>
-
-For a quick reference of the operators available based on the field data type, see [Query index quick reference](query-index-quick-ref.md#fields-operators-macros). 
-
-All clauses you add are added as an **And** statement. Choose **Or** to change the grouping. You group clauses to ensure that the clause statements are executed in the sequence required. 
 
 [!INCLUDE [temp](../includes/tip-wiql-extension.md)]
 
