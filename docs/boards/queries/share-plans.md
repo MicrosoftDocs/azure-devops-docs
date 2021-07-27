@@ -16,7 +16,9 @@ ms.date: 11/30/2020
 
 # Share information within work items and social tools
 
-**Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013 | Visual Studio | Team Explorer Everywhere**
+
+[!INCLUDE [temp](../includes/version-all.md)]
+**Visual Studio 2019 - 2013 | Team Explorer Everywhere**
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item *Description* or other rich-text formatted fields. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
@@ -296,8 +298,21 @@ By default, the size of work item attachments is limited to 4 MB. You can use th
 
 Storyboarding your ideas and goals increases visual understanding. With [PowerPoint Storyboarding](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) you can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint provides.  
 
+
+::: moniker range="> tfs-2018"
+
+> [!NOTE]  
+> Starting with Visual Studio 2019, the Team Foundation plug-in for Office deprecated support for Storyboarding with PowerPoint. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated. You can still use the Storyboard link type to link to network share objects to share information, however, you can't link from PowerPoint to Azure DevOps using the link feature. 
+
+::: moniker-end 
+
+
+::: moniker range="<= tfs-2018"
+
 > [!NOTE]  
 > Storyboarding with PowerPoint requires [Office PowerPoint 2007 or later](https://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300) and the TFS Storyboarding add-in. You install the TFS Storyboarding add-in for PowerPoint by installing one of the latest editions of [Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration](https://visualstudio.microsoft.com/downloads). 
+
+::: moniker-end 
 
 By linking your storyboard to a work item, you provide your team access to the shared file where they can add their comments. From the ![Links tab icon](../backlogs/media/icon-links-tab-wi.png), **Links**, or a **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. When you make changes to a linked storyboard, the work item continues to link to the file with the latest changes.
 
@@ -346,12 +361,33 @@ To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoi
 
 ## Email a work item query list
 
-A common way teams share information is through a list of work items. You can quickly generate a formatted list using the **Copy as HTML** or **Copy to clipboard** options. See [Copy list](../backlogs/copy-list.md).
+A common way teams share information is by sharing a list of work items. You can email a formatted list or share a link to a query. 
+
+#### [Browser](#tab/browser/) 
+
+You can quickly generate a formatted list using the **Copy as HTML** or **Copy to clipboard** options. See [Copy list](../backlogs/copy-list.md).
 
 
 > [!IMPORTANT]     
 > If you use the built-in email feature, you can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
 
+ 
+
+#### [Visual Studio](#tab/visual-studio/)
+
+You can email a formatted query list by choosing the **Send to Microsoft Outlook** option from the context menu.  
+
+:::image type="content" source="media/view-run-queries/send-to-outlook-team-explorer.png" alt-text="Screenshot of Team Explorer, choose Send to Microsoft Outlook query option.":::
+
+> [!NOTE]
+> This feature requires you to have Microsoft Outlook installed. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML** from the web portal. 
+
+
+#### [Team Explorer Everywhere](#tab/tee/)
+
+To be completed. 
+
+* * *
 
 ::: moniker range=">= tfs-2015"
 
