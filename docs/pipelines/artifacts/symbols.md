@@ -26,7 +26,7 @@ To publish your symbols to Azure Artifacts symbols server, you can use the *Inde
 
 1. Fill out the required fields as follows:
 
-    :::image type="content" source="media/publish-to-symbol-server.png" alt-text="Screenshot showing the index sources and publish symbols task":::
+    :::image type="content" source="media/publish-to-symbol-server.png" alt-text="Screenshot showing the index sources and publish symbols task to publish symbols to Azure Artifacts symbol server":::
 
 ::: moniker range=">= tfs-2018"
 - **Task version**: select **2.\\***.
@@ -49,21 +49,41 @@ To publish your symbols to Azure Artifacts symbols server, you can use the *Inde
 
 - **Verbose logging**: check to include more information in your logs.
 
-### Publish symbols for NuGet packages
-To publish symbols for NuGet packages, include the preceding task in the build pipeline that produces the NuGet packages. Then the symbols will be available to all users in the Azure DevOps organization.
-
 ## Publish symbols to a file share
 
-You can also publish symbols to a file share by using the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task. When you use this method, the task will copy the .pdb files over and put them into a specific layout. When Visual Studio is pointed to the UNC share, it can find the symbols related to the binaries that are currently loaded. 
+Aside from Azure Artifacts symbol server, you can also publish your symbols to a file share using the *Index Sources and Publish Symbols* task in your pipeline.
 
-Add the task to your build pipeline and configure it as follows:
+1. From your pipeline definition, select `+` to add a new task.
 
-* For **Version**, select **2.\\***. 
-* For **Symbol Server Type**, select **File share**.
-    * When you select **File share** as **Symbol Server Type**, you get the **Compress Symbols** option. This option compresses your symbols to save space. 
-* Use the **Path to symbols folder** argument to specify the root directory that contains the .pdb files to be published.
-* Use the **Search pattern** argument to specify search criteria to find the .pdb files in the folder that you specify in **Path to symbols folder**. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```).
-  For example, ```**\bin\**\*.pdb``` searches for all .pdb files in all subdirectories named *bin*.
+1. Search for the **Index sources and publish symbols** task. Select **Add** to add it to your pipeline.
+
+    :::image type="content" source="media/index-sources-publish-symbols.png" alt-text="Screenshot showing how to add the index sources and publish symbols to the current pipeline":::
+
+1. Fill out the required fields as follows:
+
+    :::image type="content" source="media/publish-to-file-share.png" alt-text="Screenshot showing the index sources and publish symbols task to publish symbols to a file share":::
+
+::: moniker range=">= tfs-2018"
+- **Task version**: select **2.\\***.
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
+- **Task version**: select **1.\\***.
+::: moniker-end
+
+- **Display name**: task display name.
+
+- **Path to symbols folder**: path to the folder hosting the symbol files.
+
+- **Search pattern**: the pattern used to find the pdb files in the folder that you specified in **Path to symbols folder**. Single-folder wildcard (`*`) and recursive wildcards (`**`) are supported. Example: `**\bin\**\*.pdb` searches for all .pdb files in all subdirectories named *bin*.
+
+- **Index sources**: indicates whether to inject source server information into the PDB files.
+
+- **Publish symbols**: indicates whether to publish the symbol files. 
+    - **Symbol server type**: select **File share** to publish your symbols to a file share.
+    - **Path to publish symbols**: the file share that will host your symbols.
+
+- **Verbose logging**: check to include more information in your logs.
 
 ## Portable PDBs
 

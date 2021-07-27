@@ -23,7 +23,7 @@ Symbol files are created by the compiler when you build your project. A typical 
 
 Using the **Index Sources and Publish Symbols** task, you can publish your symbols to Azure Artifacts symbol server, file shares, or portable PDBs:  
 
-- [publish to the symbol server](../../pipelines/artifacts/symbols.md#publish-symbols).
+- [publish to the symbol server](../../pipelines/artifacts/symbols.md#publish-symbols-to-azure-artifacts-symbol-server).
 - [Publish to a file share](../../pipelines/artifacts/symbols.md#publish-symbols-to-a-file-share).
 - [Publish to Portable PDBs](../../pipelines/artifacts/symbols.md#portable-pdbs).
 
