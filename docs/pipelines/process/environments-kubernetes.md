@@ -1,6 +1,7 @@
 ---
 title: Environment - Kubernetes resource
 description: Target Kubernetes clusters with the Kubernetes resource. Use Kubernetes resource views.
+ms.custom: pipelinesresourcesrefresh
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: atulmal
