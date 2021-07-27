@@ -15,6 +15,7 @@ ms.date: 07/27/2021
 # Define a query
 
 [!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [temp](../includes/version-visual-studio.md)]
 
 Work item queries generate lists of work items based on the filter criteria you provide. You can then save and share these managed queries with others. In contrast, semantic searches list work items, but can't be saved or shared. 
 
@@ -208,11 +209,22 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 > [!div class="mx-imgBorder"]  
 > ![Add new query, new experience](media/view-run-queries/new-query-new-exp.png)  
 
+The Query Editor displays with the following default settings: **Flat list of work items**, **Work Item Type=[Any]**, and **State=[Any]**. 
+
+:::image type="content" source="media/using-queries/new-query-web-portal.png" alt-text="Screenshot of Query Editor with flat list of work items selected."::: 
+
+You can modify the **Values** and [add or remove clauses](define-clause). Or, change the **Type of query** to [Work items and direct links](#directs-link-query) or to a [Tree of work items](#tree-query). 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 
 ![Queries page, Choose New query from the drop down menu](media/using-queries-new-query-ts.png)  
+
+The Query Editor displays with the following default settings: **Flat list of work items**, **Team Project=@Project** (the current project), **Work Item Type=[Any]**, and **State=[Any]**. 
+
+:::image type="content" source="media/using-queries/new-query-flat-list-tfs.png" alt-text="Screenshot of Query Editor with flat list of work items selected, TFS 2018 and earlier versions."::: 
+
+You can modify the **Values** and [add or remove clauses](define-clause). Or, change the **Type of query** to [Work items and direct links](#directs-link-query) or to a [Tree of work items](#tree-query). 
 
 ::: moniker-end  
 
@@ -222,10 +234,11 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 Choose **New Query** from the **Work Items** page. 
 
 :::image type="content" source="media/using-queries/new-query-visual-studio-2019.png" alt-text="Screenshot of Work Items, choose New Query."::: 
-
-The Query Editor opens to a flat-list query and specifies the current project to filter the query list. 
+The Query Editor displays with the following default settings: **Flat list (Default)**, **Team Project=current project**, **Work Item Type=[Any]**, and **State=[Any]**. 
 
 :::image type="content" source="media/using-queries/visual-studio-new-query-editor.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query."::: 
+
+You can modify the **Values** and [add or remove clauses](define-clause). Or, change the **Type of query** to [Work items and direct links](#directs-link-query) or to a [Tree of work items](#tree-query). 
 
 
 * * * 
@@ -283,7 +296,7 @@ Use **Team Project=@Project** to scope the query to find only those work items d
 
 #### [Visual Studio](#tab/visual-studio/)
 
-To list work items defined in two or more projects, change the clause for the **Team Project** using the **In** operator, and enter the names of the projects to search in.   For example, the following query finds work items defined in the *Fabrikam Fiber* and *Design Agile* projects.  
+To list work items defined in two or more projects, change the clause for the **Team Project** using the **In** operator, and enter the names of the projects to search in. For example, the following query finds work items defined in the *Fabrikam Fiber* and *Design Agile* projects.  
 
 :::image type="content" source="media/using-queries/visual-studio-query-multiple-projects.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query, specify two projects clause":::  
 
@@ -450,7 +463,7 @@ Filter your first-tier list of work items by choosing one of these options:
 - **Return all top level items**: All first-tier work items are returned regardless of the linked work items filter criteria. Second-tier work items that are linked to the first tier are returned if they match the linked work items filter criteria.
 
 - **Only return items that do not have matching links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
-- 
+ 
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -488,7 +501,7 @@ You can group query clauses to operate as a single unit separate from the rest o
 
 ### Group clauses
 
-Grouped clauses operate as a single unit separate from the rest of the query, similar to putting parentheses around a mathematical equation or logic expression. The And or Or operator for the first clause in the group applies to the whole group.
+Grouped clauses operate as a single unit separate from the rest of the query, similar to putting parentheses around a mathematical equation or logic expression. The **And** or **Or** operator for the first clause in the group applies to the whole group.
 
 As the following examples show, the grouped clauses are translated to the corresponding logical expression.
 
@@ -531,7 +544,17 @@ If your query results don't return expected results, follow these steps:
 
 ### Ungroup a clause
 
+
+#### [Browser](#tab/browser/) 
+
 To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungroup clauses icon for the grouped clause. 
+
+
+#### [Visual Studio](#tab/visual-studio/)
+
+To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungroup-clause-visual-studio.png" border="false"::: ungroup clauses icon for the grouped clause, Visual Studio. 
+
+* * *
 
 ## Related articles
 

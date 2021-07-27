@@ -15,6 +15,7 @@ ms.date: 07/27/2021
 # View, run, or email a work item query  
 
 [!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [temp](../includes/version-visual-studio.md)]
 
 To find work items assigned to you or your team, run a query. A number of work item queries are predefined with your process. Also, members of your team may have created shared queries that you can view and run. Oftentimes, it's easier to define a new query by building on the query definition that's already available to you. 
 
@@ -27,7 +28,10 @@ To find work items assigned to you or your team, run a query. A number of work i
 
 ## Run a query 
 
-To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**. You can also run a query by using the Azure DevOps CLI.
+To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**. 
+::: moniker range=">= azure-devops-2020"
+You can also run a query by using the [Azure DevOps command line interface](#cli).
+::: moniker-end
 
 #### [Browser](#tab/browser/) 
 
@@ -63,9 +67,11 @@ To run any query, expand a folder and choose the title of the query. The view op
 
 * * * 
 
-## Run a query from the command line 
+<a id="cli" />
 
 ::: moniker range=">= azure-devops-2020"  
+
+## Run a query from the command line 
 
 You can run a query in the CLI with the [az boards query](/cli/azure/boards#az_boards_query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
@@ -121,8 +127,21 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 
 <a id="tips-queries-hub"> </a> 
 
+::: moniker range=">= azure-devops-2019"  
+
 ## Query directory, query folders, and breadcrumbs 
 
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"  
+
+## Query folders
+
+::: moniker-end
+
+
+> [!NOTE]   
+> You can't add folders to **My Favorites** or **Team Favorites**. 
 
 #### [Browser](#tab/browser/) 
 
@@ -142,11 +161,22 @@ Also, you can choose a query that you've favorited from the selector menu, Or, y
 ::: moniker-end
 
 
+::: moniker range="< azure-devops-2019"  
+
+The **Queries** page displays the folder structure in the left pane. You can expand and collapse folders, rename folders, and drag and drop queries from one folder to another. To learn more, see [Manage and organize queries](../queries/organize-queries.md).
+
+:::image type="content" source="../media/organize-queries/query-folders-tfs.png" alt-text="Screenshot of Queries page, TFS 2018 and earlier versions.":::
+
+::: moniker-end
+
 #### [Visual Studio](#tab/visual-studio/)
  
-The **Work Items** page contains a directory-focused view of all queries defined for a project. 
+The **Work Items** page displays the same folder structure as defined in the web portal. Changes you make through Visual Studio are reflected in the web portal. 
 
-You can drag and drop queries from one folder to another. 
+
+:::image type="content" source="../media/organize-queries/query-folders-visual-studio.png" alt-text="Screenshot of Work Items page, Visual Studio showing query folders.":::
+
+You can expand and collapse folders, rename folders, and drag and drop queries from one folder to another. To learn more, see [Manage and organize queries](../queries/organize-queries.md)
 
 * * *
 
@@ -156,10 +186,10 @@ For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml).
 
 <a id="favorites" />
 
-## All and Favorites supported tasks  
-
 
 ::: moniker range=">= azure-devops-2019"
+
+## All and Favorites supported tasks  
 
 You can perform most tasks for viewing and running queries from each of the queries list pages as indicated in the following table. Only queries you save under **My Queries** and have favorited show up under **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team. 
   
@@ -172,8 +202,8 @@ You can perform most tasks for viewing and running queries from each of the quer
 > |Run a query, open the context menu for a query |✔️ |✔️|✔️|  
 > |Expand or collapse container folders or query folders |✔️ |✔️|✔️|  
 > |Filter the list of queries |✔️ |✔️ |  |
-> |Favorite a query: Choose ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | |  
-> |Unfavorite a query: Choose :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | |   
+> |Favorite a query (for web portal, choose ![Favorite](../media/icons/icon-favorite-star.png)) |  |✔️ | |  
+> |Unfavorite a query (for web portal, choose :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false":::) |✔️ |✔️ | ✔️ |   
 > |Add a new query: Choose :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | ✔️|  
 
 ::: moniker-end	
@@ -210,7 +240,7 @@ Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border
 	You can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
 
 > [!NOTE]  
-> To email a formatted list to people who aren't project members, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). 
+> To email a formatted list to people who aren't project members, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
 
 ::: moniker-end
 
@@ -221,7 +251,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 ![Web portal, Query Editor/Results, Copy query URL](media/view-run-queries/copy-url-old-exp.png)  
 
 > [!NOTE]
-> With **Email query**, the system will email the formatted list to those teammates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
+> With **Email query**, the system will email the formatted list to those teammates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). All email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
 
 ::: moniker-end
  
