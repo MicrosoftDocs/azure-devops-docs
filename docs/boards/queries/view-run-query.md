@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 01/15/2021
+ms.date: 07/27/2021
 ---
 
 
@@ -118,7 +118,6 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
  
 
 
-::: moniker range=">= azure-devops-2019"
 
 <a id="tips-queries-hub"> </a> 
 
@@ -126,6 +125,9 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 
 
 #### [Browser](#tab/browser/) 
+
+
+::: moniker range=">= azure-devops-2019"
 
 The **Queries** page  contains a directory-focused view which you can filter to find specific queries of interest. 
 When working in the **Queries** pages, you can navigate to a subfolder, folder, or page.
@@ -151,11 +153,13 @@ You can drag and drop queries from one folder to another.
 For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml).
 
 
-::: moniker range=">= azure-devops-2019"
 
 <a id="favorites" />
 
 ## All and Favorites supported tasks  
+
+
+::: moniker range=">= azure-devops-2019"
 
 You can perform most tasks for viewing and running queries from each of the queries list pages as indicated in the following table. Only queries you save under **My Queries** and have favorited show up under **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team. 
   
@@ -168,17 +172,15 @@ You can perform most tasks for viewing and running queries from each of the quer
 > |Run a query, open the context menu for a query |✔️ |✔️|✔️|  
 > |Expand or collapse container folders or query folders |✔️ |✔️|✔️|  
 > |Filter the list of queries |✔️ |✔️ |  |
-> |Favorite a query: Choose ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ |✔️|  
-> |Unfavorite a query: Choose :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ |✔️|   
+> |Favorite a query: Choose ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | |  
+> |Unfavorite a query: Choose :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | |   
 > |Add a new query: Choose :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | ✔️|  
 
 ::: moniker-end	
 
 ::: moniker range=">= azure-devops-2019"
 
-## Filter the list of queries
-
-#### [Browser](#tab/browser/) 
+## Filter the list of queries 
 
 Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. To learn more about filtering, see [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).   
 
@@ -188,14 +190,7 @@ Enter a keyword into the filter box to filter the set of queries displayed on ei
 For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml). 
 
 ::: moniker-end
-
-
-#### [Visual Studio](#tab/visual-studio/)
-
-> [!NOTE]   
-> The query filter function isn't a supported feature in Team Explorer.  
-
-* * * 
+ 
  
 
 <a id="email-query" />
