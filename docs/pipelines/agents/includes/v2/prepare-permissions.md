@@ -7,6 +7,8 @@ author: steved0x
 ms.date: 02/12/2020
 ---
 
+### Information security for self-hosted agents
+
 The user configuring the agent needs pool admin permissions, but the user running the agent does not.
 
 The folders controlled by the agent should be restricted to as few users as possible and they contain secrets that could be decrypted or exfiltrated.
