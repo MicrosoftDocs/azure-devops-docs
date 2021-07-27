@@ -9,13 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 01/15/2021
+ms.date: 07/27/2021
 ---
 
 
 # Manage and organize queries   
 
 [!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [temp](../includes/version-visual-studio.md)]
 
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/).
 
@@ -34,7 +35,7 @@ Organize your personal or shared queries by adding a query folder. You can then 
 <a id="flat-list-query"/>
 <a id="save" />
 
-## Open, edit, and save a query  
+## Run, edit, and save a query  
 
 The easiest way to define a query is to start with an existing shared query. 
 The following example shows how to find all closed bugs by modifying the 
