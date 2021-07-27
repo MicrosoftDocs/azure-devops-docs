@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 07/08/2021
+ms.date: 07/27/2021
 
 monikerRange: '>= tfs-2015'
 ---
@@ -757,7 +757,7 @@ When `issecret` is set to true, the value of the variable will be saved as secre
 steps:
 # Create a variable
 - bash: |
-    echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
+    echo "##vso[task.setvariable variable=sauce]crushed tomatoes" # remember to use double quotes
 
 # Use the variable
 # "$(sauce)" is replaced by the contents of the `sauce` variable by Azure Pipelines
@@ -773,7 +773,7 @@ steps:
 # Create a variable
 # Note that this does not update the environment of the current script.
 - bash: |
-    echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
+    echo "##vso[task.setvariable variable=sauce]crushed tomatoes" # remember to use double quotes
 
 # An environment variable called `SAUCE` has been added to all downstream steps
 - bash: |
