@@ -270,17 +270,6 @@ To open the menu options to download or delete several attachments, choose one o
 
 Storyboarding your ideas and goals increases visual understanding. With [PowerPoint Storyboarding](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) you can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint provides.  
 
-::: moniker range="> tfs-2018"
-> [!NOTE]  
-> Starting with Visual Studio 2019, the Team Foundation plug-in for Office deprecated support for Storyboarding with PowerPoint. Also, the Visual Studio Gallery for PowerPoint Storyboarding is deprecated. You can still use the Storyboard link type to link to network share objects to share information, however, you can't link from PowerPoint to Azure DevOps using the link feature. 
-::: moniker-end 
-
-
-::: moniker range="<= tfs-2018"
-> [!NOTE]  
-> Storyboarding with PowerPoint requires [Office PowerPoint 2007 or later](https://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300) and the TFS Storyboarding add-in. You install the TFS Storyboarding add-in for PowerPoint by installing one of the latest editions of [Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration](https://visualstudio.microsoft.com/downloads). 
-::: moniker-end 
-
 By linking your storyboard to a work item, you provide your team access to the shared file where they can add their comments. From the ![Links tab icon](../backlogs/media/icon-links-tab-wi.png), **Links**, or a **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. When you make changes to a linked storyboard, the work item continues to link to the file with the latest changes.
 
 To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
@@ -288,7 +277,7 @@ To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoi
 #### [Browser](#tab/browser/)
 
 ::: moniker range=">= tfs-2017"
-You can open Storyboarding with PowerPoint from the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu within a work item form. 
+You can open Storyboarding with PowerPoint from the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions menu within a work item form. 
 
 <img src="media/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal" style="border: 1px solid #C3C3C3;" />  
 
