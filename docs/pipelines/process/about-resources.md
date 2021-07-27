@@ -9,6 +9,8 @@ monikerRange: azure-devops
 
 # About resources for Azure Pipelines
 
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
+
 A [resource](resources.md) is anything used by a pipeline that lives outside the pipeline.
 
 Resources offer the following benefits:
@@ -79,6 +81,7 @@ For YAML pipelines only, set resources as [protected or open](../security/resour
 | [containers](resources.md#resources-containers), [packages](resources.md#resources-packages), [webhooks](resources.md#resources-webhooks) | These live outside the Azure DevOps ecosystem and access is controlled with service connections. There's a special syntax for using all three types in YAML pipelines.                                                                                                                                                                                                                                                           | Protected with checks and pipeline permissions controlled by service connection users.                                                                                                                                                                                                        |
 
 ## Use resources for traceability
+
 #### [YAML](#tab/yaml)
 
 Environments support the following resource types:
@@ -95,7 +98,7 @@ For Classic release pipelines, [deployment groups](../release/deployment-groups/
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Add resources to a pipelines](resources.md)
+> [Add resources to a pipeline](resources.md)
 
 ## Related articles
 

@@ -522,21 +522,36 @@
   items:
     - name: About resources
       href: process/about-resources.md
+    - name: Library & shared resources
+      href: library/index.md
       displayName: resource, resources, pipeline resource, resources security, resources traceability
-    - name: Add resources to a pipeline
-      href: process/resources.md
-      displayName: webhook, pipelines resource, repository resource, package resource, troubleshoot
-    - name: Add protection to a repository resource
-      href: process/repository-resource.md
-      displayName: protected resources, protection, checks
-    - name: Add & use variable groups
-      href: library/variable-groups.md
-      displayName: Azure key vault, link secrets, expansion, expand variables
-    - name: Use secure files
-      href: library/secure-files.md
-    - name: Manage service connections
-      href: library/service-endpoints.md
-      displayName: service connection, project-level permissions, docker, GitHub, npm, Nuget, Azure Repos
+    - name: Secure with resources
+    - items:
+      - name: Add protection to a repository resource
+        href: process/repository-resource.md
+        displayName: protected resources, protection, checks
+      - name: Manage service connections
+        href: library/service-endpoints.md
+        displayName: service connection, project-level permissions, docker, GitHub, npm, Nuget, Azure Repos
+    - name: Share with resources
+    - items:
+      - name: Add resources to a pipeline
+        href: process/resources.md
+      - name: Add & use variable groups
+        href: library/variable-groups.md
+        displayName: Azure key vault, link secrets, expansion, expand variables
+      - name: Use secure files
+        href: library/secure-files.md
+    - name: Trace with resources
+    - items:
+      - name: Provision deployment groups
+        href: release/deployment-groups/index.md
+      - name: Define and target environments
+        href: process/environments.md
+      - name: Kubernetes resource
+        href: process/environments-kubernetes.md
+      - name: Virtual machine resource
+        href: process/environments-virtual-machines.md
 - name: Manage agents & agent pools
   items:
     - name: About agents & agent pools
