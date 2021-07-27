@@ -773,7 +773,7 @@ steps:
 # Create a variable
 # Note that this does not update the environment of the current script.
 - bash: |
-    echo "##vso[task.setvariable variable=sauce]crushed tomatoes" # remember to use double quotes
+    echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
 
 # An environment variable called `SAUCE` has been added to all downstream steps
 - bash: |
