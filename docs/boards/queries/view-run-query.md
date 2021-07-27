@@ -29,7 +29,7 @@ To find work items assigned to you or your team, run a query. A number of work i
 
 To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**. You can also run a query by using the Azure DevOps CLI.
 
-#### [Browser](#tab/browser)
+#### [Browser](#tab/browser/) 
 
 > [!TIP]    
 > The **Queries** page, as with other web portal pages, remembers the view you last navigated to and returns you to that view.
@@ -125,7 +125,7 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 ## Query directory, query folders, and breadcrumbs 
 
 
-#### [Browser](#tab/browser)
+#### [Browser](#tab/browser/) 
 
 The **Queries** page  contains a directory-focused view which you can filter to find specific queries of interest. 
 When working in the **Queries** pages, you can navigate to a subfolder, folder, or page.
@@ -178,7 +178,7 @@ You can perform most tasks for viewing and running queries from each of the quer
 
 ## Filter the list of queries
 
-#### [Browser](#tab/browser/)
+#### [Browser](#tab/browser/) 
 
 Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. To learn more about filtering, see [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).   
 
@@ -202,7 +202,7 @@ For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml).
 
 ## Email query items or share a query URL 
 
-#### [Browser](#tab/browser/)
+#### [Browser](#tab/browser/) 
 
 From the **Query Editor** or **Results** view, you can email a formatted list of query items or copy the query URL. 
 
@@ -235,7 +235,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 You can email a formatted query list by choosing the **Send to Microsoft Outlook** option from the context menu.  
 
-	:::image type="content" source="media/view-run-queries/send-to-outlook-team-explorer.png" alt-text="Screenshot of Team Explorer, choose Send to Microsoft Outlook query option.":::
+:::image type="content" source="media/view-run-queries/send-to-outlook-team-explorer.png" alt-text="Screenshot of Team Explorer, choose Send to Microsoft Outlook query option.":::
 
 > [!NOTE]
 > This feature requires you to have Microsoft Outlook installed. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML** from the web portal. 
