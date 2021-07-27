@@ -1,6 +1,6 @@
 ---
 title: About pipeline resources
-ms.custom: seodec18, contperf-fy21q4
+ms.custom: seodec18, contperf-fy21q4, pipelinesresourcesrefresh
 description: What are resources?
 ms.topic: conceptual
 ms.date: 07/15/2021
