@@ -9,7 +9,7 @@ monikerRange: azure-devops
 
 # About resources for Azure Pipelines
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 A [resource](resources.md) is anything used by a pipeline that lives outside the pipeline.
 
