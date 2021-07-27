@@ -18,7 +18,7 @@ ms.date: 11/30/2020
 
 
 [!INCLUDE [temp](../includes/version-all.md)]
-**Visual Studio 2019 - 2013 | Team Explorer Everywhere**
+[!INCLUDE [temp](../includes/version-visual-studio.md)]
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item *Description* or other rich-text formatted fields. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
@@ -162,19 +162,6 @@ You can copy and paste HTML text or an image from another application directly i
 [!INCLUDE [temp](../../includes/images-not-appearing-vs.md)] 
 
 
-#### [Team Explorer Everywhere](#tab/tee/)
-
-From Team Explorer Everywhere you can exercise only basic format operations.
-
-![Rich text tool bar - web portal](media/rich-text-ui-web-portal.png) 
-
-You can use the following shortcut keys to format your text:  
-- **Bold**: **Ctrl+B**  
-- *Italic*: **Ctrl+I**  
-- <u>Underscore</u>: **Ctrl+U** 
-
-You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts.
-
 * * *
 
 
@@ -274,15 +261,6 @@ To open the menu options to download or delete several attachments, choose one o
 <img src="media/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
 
 
-#### [Team Explorer Everywhere](#tab/tee/)
-Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment.Or, drag and drop files into the attachment area.
-
-<img src="media/share-plans-attachment-controls-tfs.png" alt="Attachment controls, Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" /> 
-
-To open the menu options to download or delete several attachments, choose one or more items and then right-click. 
-
-<img src="media/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
-
 * * *
 ::: moniker range="<= azure-devops-2019"
 
@@ -346,15 +324,7 @@ From the **Storyboards** tab, click **Start Storyboarding** to open Storyboardin
 **Storyboards tab control** 
 
 <img src="media/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
-
-#### [Team Explorer Everywhere](#tab/tee/)
-From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
-
-**Storyboards tab control**  
-
-<img src="media/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
-
-
+ 
 * * *
 To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
 
@@ -382,10 +352,6 @@ You can email a formatted query list by choosing the **Send to Microsoft Outlook
 > [!NOTE]
 > This feature requires you to have Microsoft Outlook installed. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML** from the web portal. 
 
-
-#### [Team Explorer Everywhere](#tab/tee/)
-
-To be completed. 
 
 * * *
 
