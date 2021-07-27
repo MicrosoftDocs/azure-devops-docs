@@ -165,7 +165,7 @@ Also, you can choose a query that you've favorited from the selector menu, Or, y
 
 The **Queries** page displays the folder structure in the left pane. You can expand and collapse folders, rename folders, and drag and drop queries from one folder to another. To learn more, see [Manage and organize queries](../queries/organize-queries.md).
 
-:::image type="content" source="../media/organize-queries/query-folders-tfs.png" alt-text="Screenshot of Queries page, TFS 2018 and earlier versions.":::
+:::image type="content" source="media/organize-queries/query-folders-tfs.png" alt-text="Screenshot of Queries page, TFS 2018 and earlier versions.":::
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ The **Queries** page displays the folder structure in the left pane. You can exp
 The **Work Items** page displays the same folder structure as defined in the web portal. Changes you make through Visual Studio are reflected in the web portal. 
 
 
-:::image type="content" source="../media/organize-queries/query-folders-visual-studio.png" alt-text="Screenshot of Work Items page, Visual Studio showing query folders.":::
+:::image type="content" source=".media/organize-queries/query-folders-visual-studio.png" alt-text="Screenshot of Work Items page, Visual Studio showing query folders.":::
 
 You can expand and collapse folders, rename folders, and drag and drop queries from one folder to another. To learn more, see [Manage and organize queries](../queries/organize-queries.md)
 
