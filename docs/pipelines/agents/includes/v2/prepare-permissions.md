@@ -17,7 +17,7 @@ Therefore, it is important to consider the threat model surrounding each individ
 
 It is a best practice to have the identity running the agent be different from the identity with permissions to connect the agent to the pool. The user generating the credentials (and other agent-related files) is different than the user that needs to read them. Therefore, it is safer to carefully consider access granted to the agent machine itself, and the agent folders which contain sensitive files, such as logs and artifacts.
 
-It make sense to grant access to the agent folder only for DevOps administrators and the user identity running the agent process. Administrators may need to investigate the file system to understand build failures or get log files to be able to report Azure DevOps failures.
+It makes sense to grant access to the agent folder only for DevOps administrators and the user identity running the agent process. Administrators may need to investigate the file system to understand build failures or get log files to be able to report Azure DevOps failures.
 
 ### Decide which user you'll use
 
