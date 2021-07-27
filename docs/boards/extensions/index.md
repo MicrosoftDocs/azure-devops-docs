@@ -16,7 +16,7 @@ ms.date: 11/06/2020
 The Azure DevOps Marketplace offers a wide variety of extensions to customize or enhance the default experience. You can learn more about those extensions developed by Microsoft from the following articles and links. For information on developing your own extension, see [Develop a web extension](../../extend/get-started/node.md).
  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## Integration 
 
@@ -26,7 +26,6 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 ::: moniker-end
 
 ## Product planning 
-
 
 ::: moniker range=">= tfs-2017 <= azure-devops"
 
