@@ -34,4 +34,7 @@ mvn deploy:deploy-file -Dpackaging="jar" -DrepositoryId="MyFeedName" -Durl="MyFe
 ```
 
 > [!NOTE]
+> You can store up to 30 Maven snapshots in your feed. Once you reach the maximum limit, Azure Artifacts will automatically delete snapshots down to 25. This process will be triggered automatically every time 30+ snapshots are published to your feed. See [Handling Maven snapshots](../../../pipelines/release/artifacts.md#handling-maven-snapshots) for more details.
+
+> [!NOTE]
 > Maven snapshots are not supported in upstream sources.
