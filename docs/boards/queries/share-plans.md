@@ -173,7 +173,7 @@ Again, your link options will differ depending on the client you use. For specif
 
 <a id="attachments"></a>
 
-### Attachments
+## Attachments
 
 You and your team can centralize reference materials by attaching files to your work items. That way they are always readily accessible when you need them. For example, you can attach a screen image that illustrates a problem, a line of code in a text file, a log, an e-mail thread, or a product feature's specification.
 
@@ -287,41 +287,6 @@ Storyboarding your ideas and goals increases visual understanding. With [PowerPo
 ::: moniker-end 
 
 By linking your storyboard to a work item, you provide your team access to the shared file where they can add their comments. From the ![Links tab icon](../backlogs/media/icon-links-tab-wi.png), **Links**, or a **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. When you make changes to a linked storyboard, the work item continues to link to the file with the latest changes.
-
-
-<a id="team-services-storyboard" />
-
-#### [Browser](#tab/browser/)
-
-::: moniker range=">= tfs-2017"
-
-You can open Storyboarding with PowerPoint from the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu within a work item form. 
-
-<img src="media/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal" style="border: 1px solid #C3C3C3;" />  
-
-To link to an existing storyboard, click the ![Links page icon](../media/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.  
-
-::: moniker-end 
-
-::: moniker range=">= tfs-2013 <= tfs-2015"  
-
-From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
-
-![Storyboard links control](media/share-plans-storyboard-tfs-web-tab.png)  
-
-::: moniker-end 
-
-#### [Visual Studio](#tab/visual-studio/)
-
-<a id="team-explorer-storyboard" />
-
-From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
-
-**Storyboards tab control** 
-
-<img src="media/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
- 
-* * *
 
 To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
 
