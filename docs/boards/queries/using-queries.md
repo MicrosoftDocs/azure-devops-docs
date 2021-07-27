@@ -26,12 +26,13 @@ You can create queries from the web portal or from a supported client, such as V
  
 #### [Visual Studio](#tab/visual-studio/)
 > [!div class="mx-imgBorder"]  
-> ![Query Editor, Visual Studio.](media/using-queries/visual-studio-new-query-editor.png)  
+> ![Query Editor, Visual Studio.](media/using-queries/visual-studio-new-query-editor.png) 
+
+> [!NOTE]  
+> To define queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option. 
 
 ***
 
-> [!NOTE]  
-> To define queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
 
 If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
@@ -197,6 +198,9 @@ In addition to the filters you use from the Query Editor, you can interactively 
 
 You can start a fresh, new query from the **Queries** tab in the web portal or the **Work Items** tab in Team Explorer.  
 
+#### [Browser](#tab/browser/) 
+
+
 ::: moniker range=">= azure-devops-2019"  
 
 > [!div class="mx-imgBorder"]  
@@ -210,6 +214,19 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 
 ::: moniker-end  
 
+ 
+#### [Visual Studio](#tab/visual-studio/)
+
+Choose **New Query** from the **Work Items** page. 
+
+:::image type="content" source="media/using-queries/new-query-visual-studio-2019.png" alt-text="Screenshot of Work Items, choose New Query."::: 
+
+The Query Editor opens to a flat-list query and specifies the current project to filter the query list. 
+
+:::image type="content" source="media/using-queries/media/using-queries/visual-studio-new-query-editor.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query."::: 
+
+
+* * * 
 
 <a id="query-across-projects" /> 
 
@@ -219,11 +236,13 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 
 By default, new queries are scoped to the current project. However, you can create queries to find work items defined within the organization or project collection. All queries that you save, however, are saved under a specific project. 
 
+#### [Browser](#tab/browser/) 
+
 ::: moniker range=">= tfs-2015"  
 
 To list work items defined in two or more projects, checkmark **Query across projects**. For example, the following query finds all features created in all projects within the last 30 days.
  
-<img src="media/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across projects" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/using-queries/portal-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across projects" style="border: 1px solid #C3C3C3;" /> 
 
 ::: moniker-end
 
@@ -236,38 +255,80 @@ To list work items defined in two or more projects, checkmark **Query across pro
 
 ::: moniker range=">= tfs-2015"  
 
-With the **Query across projects** checked, you can add the Team Project field to filter to a select number of projects.   
+With the **Query across projects** checked, you can add the **Team Project** field to filter to a select number of projects.   
 
-<img src="media/using-queries-query-across-select-projects.png" alt="Azure Boards and TFS 2015.1, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
+<img src="media/using-queries/portal-query-across-two-projects.png" alt="Azure Boards and TFS 2015.1, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
 
 > [!NOTE]
 > Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
 
-The *Team Project* field becomes available only after you check  **Query across projects**.  Moreover, when **Query across projects** is unchecked, only those fields from those WITs defined in the current project appear in the Field drop-down menu. When **Query across projects** is checked, all fields from all WITs defined in all projects in the collection appear in the Field drop-down menu.  
+The **Team Project** field becomes available only after you check  **Query across projects**.  Moreover, when **Query across projects** is unchecked, only those fields from those work item types defined in the current project appear in the **Field** drop-down menu. When **Query across projects** is checked, all fields from all work item types defined in all projects in the collection appear in the **Field** drop-down menu.  
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2013"   
 
-To find all features created in all projects within the last 30 days, remove the <strong>Team Project=@Project</strong> clause from the query.  
+To find all features created in all projects within the last 30 days, remove the **Team Project=@Project** clause from the query.  
 
 <img src="media/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
 
-All fields from all WITs defined in all projects in the collection always appear in the Field drop-down menu.  
+All fields from all work item types defined in all projects in the collection always appear in the **Field** drop-down menu.  
 
-Use <strong>Team Project=@Project</strong> to scope the query to find only those work items defined for the current project. 
+Use **Team Project=@Project** to scope the query to find only those work items defined for the current project. 
+
+
+
+#### [Visual Studio](#tab/visual-studio/)
+
+To list work items defined in two or more projects, change the clause for the **Team Project** using the **In** operator, and enter the names of the projects to search in.   For example, the following query finds work items defined in the *Fabrikam Fiber* and *Design Agile* projects.  
+
+:::image type="content" source="media/using-queries/media/using-queries/visual-studio-query-multiple-projects.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query, specify two projects clause":::  
+
+To query across all projects, delete the clause with the **Team Project** field. 
+
+* * *
 
 ::: moniker-end  
 <a id="define-clause" />
 
 ## Define a clause
 
-You create a query by defining one or more clauses. Each clause defines a filter criteria for a single field. Choose **Add new clause** to add another clause and then choose the **Field**, **Operator**, and **Value** for that clause.  
+You create a query by defining one or more clauses. Each clause defines a filter criteria for a single field. 
+
+
+#### [Browser](#tab/browser/) 
+
+
+Choose **Add new clause** to add another clause at then end of the query, and then choose the **Field**, **Operator**, and **Value** for that clause.  
 
 > [!div class="mx-imgBorder"]  
 > ![Define a clause.](media/using-queries/define-clause.png)  
 
-For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (=) operator, and the <strong>@Me</strong> macro which represents your user identity.
+For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (**=**) operator, and the **@Me** macro which represents your user identity.
+
+
+#### [Visual Studio](#tab/visual-studio/)
+
+Choose **Click here to add a clause** to add another clause at then end of the query, and then choose the **Field**, **Operator**, and **Value** for that clause.  
+
+:::image type="content" source="media/using-queries/media/using-queries/visual-studio-add-new-clause.png" alt-text="Screenshot of Visual Studio Query Editor, add new clause.":::  
+
+To insert a clause within the existing set of query clauses, place your cursor on the clause below where you want to insert the clause, and then choose **Insert Clause**. Then choose the **Field**, **Operator**, and **Value** for that clause.  
+
+:::image type="content" source="media/using-queries/media/using-queries/visual-studio-add-new-clause.png" alt-text="Screenshot of Visual Studio Query Editor, insert clause.":::  
+
+Or, open the context menu for the clause and choose **Insert Clauses**. 
+
+:::image type="content" source="media/using-queries/media/using-queries/visual-studio-insert-delete-clauses.png" alt-text="Screenshot of Visual Studio Query Editor, context-menu for insert clauses and delete clause."::: 
+
+To delete a clause, choose the clause you want to delete, and choose :::image type="icon" source="../media/icons/icon-delete-clause-visual-studio.png" border="false"::: **Delete Clause**.
+
+When finished, choose :::image type="icon" source="../media/icons/run_query.png" border="false"::: **Run** or :::image type="icon" source="../media/icons/icon-save-visual-studio.png" border="false"::: **Save Query**.
+ 
+
+:::image type="icon" source="../media/icons/icon-delete-clause-visual-studio.png" border="false":::
+
+* * *
 
 ### Sample query clause 
 
@@ -357,7 +418,7 @@ Define the filter criteria for both parent and child work items. To find linked 
 
 ::: moniker-end  
 
-#### [Visual Studio 2015](#tab/visual-studio/)
+#### [Visual Studio](#tab/visual-studio/)
 
 :::image type="content" source="media/using-queries/tree-backlog-te.png" alt-text="Screenshot, Query Editor, Tree Query, Team Explorer. ":::
 
@@ -399,7 +460,7 @@ Filter your first-tier list of work items by choosing one of these options:
 - **Only return items that do not have matching links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
 - 
 
-#### [Visual Studio 2015](#tab/visual-studio/)
+#### [Visual Studio](#tab/visual-studio/)
 
 :::image type="content" source="media/using-queries/direct-links-te.png" alt-text="Screenshot, Query Editor, Direct Links Query, Team Explorer.":::
 

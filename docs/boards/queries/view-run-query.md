@@ -52,7 +52,18 @@ To run any query, expand a folder and choose the title of the query. The view op
 
 ::: moniker-end
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+#### [Visual Studio](#tab/visual-studio/)
+ 
+
+- From the Team Explorer **Work Items**, page, open the context menu for the query (right-click with your mouse), and choose **View Results**. Or, double-click the query to open it. 
+
+	:::image type="content" source="../media/team-explorer/open-query-from-team-explorer.png" alt-text="Screenshot of Team Explorer, open context menu for a query, choose View Results.":::
+
+
+* * * 
+
+## Run a query from the command line 
 
 ::: moniker range=">= azure-devops-2020"  
 
@@ -104,10 +115,7 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 2           Fabrikam Fiber  Bug               Secure Sign-in 
 ``` 
 ::: moniker-end
-
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
-
-* * * 
+ 
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -115,6 +123,9 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 <a id="tips-queries-hub"> </a> 
 
 ## Query directory, query folders, and breadcrumbs 
+
+
+#### [Browser](#tab/browser)
 
 The **Queries** page  contains a directory-focused view which you can filter to find specific queries of interest. 
 When working in the **Queries** pages, you can navigate to a subfolder, folder, or page.
@@ -126,11 +137,19 @@ Also, you can choose a query that you've favorited from the selector menu, Or, y
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Queries, Query selector.](../../project/navigation/media/breadcrumbs/query-bd-and-selector.png) 
 
+::: moniker-end
+
+
+#### [Visual Studio](#tab/visual-studio/)
+ 
+The **Work Items** page contains a directory-focused view of all queries defined for a project. 
+
+You can drag and drop queries from one folder to another. 
+
+* * *
 
 For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml).
 
-::: moniker-end
- 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -142,22 +161,24 @@ You can perform most tasks for viewing and running queries from each of the quer
   
 
 > [!div class="mx-tdCol2BreakAll"]
-> |Task |Favorites |All | 
+> |<br/>Task |Favorites<br/>(Browser) |All<br/>(Browser) | Work Items<br/>(Team Explorer)
 > |-------------|----------|---------| 
-> |View all favorited queries, yours or a team you belong to | ✔️ |  | 
-> |View all your queries or shared queries for the current project |  | ✔️ | 
-> |Run a query, open the context menu for a query  |✔️ |✔️ |
-> |Expand or collapse container folders or query folders |✔️ |✔️ |
-> |Filter the list of queries |✔️ |✔️ |
-> |Favorite a query: Choose ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | 
-> |Unfavorite a query: Choose :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
-> |Add a new query: Choose :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
+> |View all favorited queries, yours or a team you belong to | ✔️ |  | ✔️ |  
+> |View all your queries or shared queries for the current project |  | ✔️ |✔️|  
+> |Run a query, open the context menu for a query |✔️ |✔️|✔️|  
+> |Expand or collapse container folders or query folders |✔️ |✔️|✔️|  
+> |Filter the list of queries |✔️ |✔️ |  |
+> |Favorite a query: Choose ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ |✔️|  
+> |Unfavorite a query: Choose :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ |✔️|   
+> |Add a new query: Choose :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | ✔️|  
 
 ::: moniker-end	
 
 ::: moniker range=">= azure-devops-2019"
 
 ## Filter the list of queries
+
+#### [Browser](#tab/browser/)
 
 Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. To learn more about filtering, see [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).   
 
@@ -168,9 +189,20 @@ For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml).
 
 ::: moniker-end
 
+
+#### [Visual Studio](#tab/visual-studio/)
+
+> [!NOTE]   
+> The query filter function isn't a supported feature in Team Explorer.  
+
+* * * 
+ 
+
 <a id="email-query" />
 
 ## Email query items or share a query URL 
+
+#### [Browser](#tab/browser/)
 
 From the **Query Editor** or **Results** view, you can email a formatted list of query items or copy the query URL. 
 
@@ -197,6 +229,18 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 > With **Email query**, the system will email the formatted list to those teammates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
 
 ::: moniker-end
+ 
+
+#### [Visual Studio](#tab/visual-studio/)
+
+You can email a formatted query list by choosing the **Send to Microsoft Outlook** option from the context menu.  
+
+	:::image type="content" source="media/view-run-queries/send-to-outlook-team-explorer.png" alt-text="Screenshot of Team Explorer, choose Send to Microsoft Outlook query option.":::
+
+> [!NOTE]
+> This feature requires you to have Microsoft Outlook installed. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML** from the web portal. 
+
+* * * 
 
 ## Try this next
 

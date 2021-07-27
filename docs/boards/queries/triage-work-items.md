@@ -38,6 +38,10 @@ In this article you'll learn how to:
 
 [!INCLUDE [temp](../includes/open-queries.md)] 
 
+## Use triage buttons 
+
+#### [Browser](#tab/browser/)
+
 ::: moniker range=">= azure-devops-2019"
 
 The buttons to move up or down within the query results list are outside the work item form. Choose **Bottom** to cycle through the choices for where the work item form appears: **Bottom**, **Right**, or **Off**. 
@@ -58,9 +62,32 @@ The buttons to move up or down within the query results list are inside the work
 ::: moniker-end
 
 
+#### [Visual Studio](#tab/visual-studio/)
+
+When you choose **View Results** for a query, it opens in triage mode displaying the first item in the list. You can switch from vertical and hortizontal views or expand or collapse the triage window using the :::image type="icon" source="media/triage-buttons.png" border="false"::: **Vertical Split**, **Horizontal Split**, **Collapse Bottom Panel**, or **Collapse Top Panel** icons. 
+
+Choose **Previous** or **Next** to move up or down within the query results list.
+
+:::image type="content" source="media/triage-queries/triage-mode-visual-studio-2019.png" alt-text="Screenshot of View Results and triage mode.":::
+
+
+> [!NOTE]   
+> Triage mode isn't available from Visual Studio 2017. 
+
+
+After making several changes to work items, choose **Save Results** to save all changes. 
+
+
+:::image type="content" source="media/triage-mode-save-results-visual-studio-2019.png" alt-text="Screenshot of Save Results btoon for triage mode.":::
+
+*** 
+
 <a id="save-bulk-changes" />
 
 ## Bulk update and save changes to work items 
+
+
+#### [Browser](#tab/browser/)
 
 You can update several work items through the triage process, and then do a bulk save when you're finished. 
 
@@ -105,6 +132,17 @@ Choose the ![double-save-icon](../media/icons/icon-double-save.png) double-save 
 
 ::: moniker-end
 
+
+#### [Visual Studio](#tab/visual-studio/)
+
+
+> [!NOTE]   
+> Bulk update isn't available from Visual Studio 2017.  
+
+
+
+
+* * * 
 
 ## Related articles
 
