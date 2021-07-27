@@ -228,8 +228,6 @@ You can drag and drop a file onto the tab or anywhere on the work item form.
 
 ![Attachment controls, web portal](media/share-plans-attachment-tab-vsts.png)  
 
-
-
 You can edit, open, save, or delete an attachment by choosing an attachment and opening it's   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu. 
 
 <img src="media/share-plans-attachment-menu-options.png" alt="Attachment menu options" style="border: 2px solid #C3C3C3;" />   
@@ -252,6 +250,7 @@ Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attac
 <a id="attach-team-explorer" />
 
 #### [Visual Studio](#tab/visual-studio/)
+
 Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Or, drag and drop files into the attachment area. 
 
 <img src="media/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises Azure DevOps), Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" />
@@ -262,9 +261,20 @@ To open the menu options to download or delete several attachments, choose one o
 
 
 * * *
-::: moniker range="<= azure-devops-2019"
 
-### Attachment size
+
+
+### Attachments
+
+::: moniker range="azure-devops"
+
+You can add up to 100 attachments to a work item. Attachments are limited to 60 MB.  
+
+::: moniker-end 
+
+::: moniker range="< azure-devops"
+
+You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. 
 
 By default, the size of work item attachments is limited to 4 MB. You can use the TFS web service to [increase the size of files you attach up to 2GB](../../reference/xml/change-maximum-attachment-size-work-items.md).
 
@@ -298,6 +308,7 @@ By linking your storyboard to a work item, you provide your team access to the s
 <a id="team-services-storyboard" />
 
 #### [Browser](#tab/browser/)
+
 ::: moniker range=">= tfs-2017"
 
 You can open Storyboarding with PowerPoint from the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu within a work item form. 
@@ -317,6 +328,7 @@ From the **Storyboards** tab, click **Start Storyboarding** to open Storyboardin
 ::: moniker-end 
 
 #### [Visual Studio](#tab/visual-studio/)
+
 <a id="team-explorer-storyboard" />
 
 From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
@@ -326,6 +338,8 @@ From the **Storyboards** tab, click **Start Storyboarding** to open Storyboardin
 <img src="media/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
  
 * * *
+
+
 To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
 
 
@@ -405,3 +419,4 @@ As you can see, there are many ways to share information using work items alone.
 
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Add and edit a wiki](../../project/wiki/add-edit-wiki.md)
+- [Work tracking, process, and project limits](../../organizations/settings/work/object-limits.md)
