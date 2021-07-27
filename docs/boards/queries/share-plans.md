@@ -81,8 +81,6 @@ In addition, you can add custom HTML fields to support your business processes. 
 The specific set of formatting features differs depending on the client you use. In all clients, you can bold, italicize, and underline text. You can also add and remove hyperlinks, format text as ordered or unordered lists, and add images. 
 
 
-
-
 #### [Browser](#tab/browser/)
 
 ::: moniker range=">= azure-devops-2020"
@@ -127,7 +125,6 @@ You can copy and paste HTML text or an image from another application directly i
 
 <a id="tfs-portal-rich-text" />
 
-
 ::: moniker range="<= tfs-2015"
 
 The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box.  
@@ -136,16 +133,13 @@ The rich text formatting toolbar appears above each text box that can be formatt
 
 ::: moniker-end
 
-
 #### [Visual Studio](#tab/visual-studio/)
 
 <a id="team-explorer-rich-text" />
 
-
-
 **Visual Studio 2017-2019/Team Explorer** 
 
-The work item form opens in the web portal for Visual Studio 2017 and later versions. Work items aren't available from Visual Studio 2019 under the following conditions:   
+The work item form opens in the web portal for Visual Studio 2017. Work items aren't available from Visual Studio 2019 under the following conditions:   
 * If you are connected to a GitHub or third-party Git repository. 
 * If you are set to use the new Git Tool for Visual Studio 2019 as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
  
@@ -179,10 +173,23 @@ Again, your link options will differ depending on the client you use. For specif
 
 <a id="attachments"></a>
 
-## Attach files
+### Attachments
 
 You and your team can centralize reference materials by attaching files to your work items. That way they are always readily accessible when you need them. For example, you can attach a screen image that illustrates a problem, a line of code in a text file, a log, an e-mail thread, or a product feature's specification.
 
+::: moniker range="azure-devops"
+
+You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. Attempts to add more result in an error message upon saving the work item.
+::: moniker-end  
+
+::: moniker range="< azure-devops"
+
+You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. 
+
+By default, the size of work item attachments is limited to 4 MB. You can use the TFS web service to [increase the size of files you attach up to 2GB](../../reference/xml/change-maximum-attachment-size-work-items.md).
+
+::: moniker-end 
+ 
 Choose the ![Attachment tab icon](../backlogs/media/icon-attachments-tab-wi.png) or **Attachments** tab to attach a file with supplemental information. 
 
 
@@ -216,10 +223,6 @@ You can drag and drop files into the attachment area. From the browse menu, you 
 
 ::: moniker-end 
 
-::: moniker range="azure-devops"
-You can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.
-::: moniker-end 
-
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 Choose the :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png" border="false"::: Attachment tab icon to attach a file to the work item. 
@@ -228,12 +231,11 @@ You can drag and drop a file onto the tab or anywhere on the work item form.
 
 ![Attachment controls, web portal](media/share-plans-attachment-tab-vsts.png)  
 
-You can edit, open, save, or delete an attachment by choosing an attachment and opening it's   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu. 
+You can edit, open, save, or delete an attachment by choosing an attachment and opening it's  :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu. 
 
 <img src="media/share-plans-attachment-menu-options.png" alt="Attachment menu options" style="border: 2px solid #C3C3C3;" />   
 
 ::: moniker-end 
-
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
@@ -244,7 +246,6 @@ Choose the **Attachments** tab icon to attach a file to the work item.
 Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Choose an item and then choose :::image type="icon" source="../media/icons/open-icon.png" border="false"::: the open icon to open the attachment or :::image type="icon" source="../media/icons/download-icon.png" border="false"::: download icon to save a copy.  
 
 ::: moniker-end 
-
 
 
 <a id="attach-team-explorer" />
@@ -262,23 +263,6 @@ To open the menu options to download or delete several attachments, choose one o
 
 * * *
 
-
-
-### Attachments
-
-::: moniker range="azure-devops"
-
-You can add up to 100 attachments to a work item. Attachments are limited to 60 MB.  
-
-::: moniker-end 
-
-::: moniker range="< azure-devops"
-
-You can add up to 100 attachments to a work item. Attachments are limited to 60 MB. 
-
-By default, the size of work item attachments is limited to 4 MB. You can use the TFS web service to [increase the size of files you attach up to 2GB](../../reference/xml/change-maximum-attachment-size-work-items.md).
-
-::: moniker-end 
 
 <a id="storyboard"></a>
 
@@ -338,7 +322,6 @@ From the **Storyboards** tab, click **Start Storyboarding** to open Storyboardin
 <img src="media/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
  
 * * *
-
 
 To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
 
