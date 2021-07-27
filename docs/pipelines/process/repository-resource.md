@@ -72,6 +72,6 @@ You can see the added repository listed.
 
 ## Related articles
 
-- [Set Git repository permissions](/../../repos/git/set-git-repository-permissions?view=azure-devops&preserve-view=true)
+- [Set Git repository permissions](/azure/devops/repos/git/set-git-repository-permissions)
 - [Git repository settings and policies](../../repos/git/repository-settings.md)
 - [Azure Pipelines resources in YAML](resources.md)
