@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-header](includes/version-header.md)]
 
 Quality is a vital aspect of software systems, and manual testing 
-and exploratory testing continue to be an important techniques for maximizing this.
+and exploratory testing continue to be important techniques for maximizing this.
 In today's software development processes,
 everybody in the team owns quality - including developers, managers, 
 product owners, user experience advocates, and more.
