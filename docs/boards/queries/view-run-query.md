@@ -174,7 +174,7 @@ The **Queries** page displays the folder structure in the left pane. You can exp
 The **Work Items** page displays the same folder structure as defined in the web portal. Changes you make through Visual Studio are reflected in the web portal. 
 
 
-:::image type="content" source=".media/organize-queries/query-folders-visual-studio.png" alt-text="Screenshot of Work Items page, Visual Studio showing query folders.":::
+:::image type="content" source="media/organize-queries/query-folders-visual-studio.png" alt-text="Screenshot of Work Items page, Visual Studio showing query folders.":::
 
 You can expand and collapse folders, rename folders, and drag and drop queries from one folder to another. To learn more, see [Manage and organize queries](../queries/organize-queries.md)
 
