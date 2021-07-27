@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 03/29/2021
+ms.date: 07/27/2021
 ---
 
 # Define a query
@@ -279,6 +279,7 @@ All fields from all work item types defined in all projects in the collection al
 Use **Team Project=@Project** to scope the query to find only those work items defined for the current project. 
 
 
+::: moniker-end  
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -290,7 +291,7 @@ To query across all projects, delete the clause with the **Team Project** field.
 
 * * *
 
-::: moniker-end  
+ 
 <a id="define-clause" />
 
 ## Define a clause
@@ -464,7 +465,7 @@ Filter your first-tier list of work items by choosing one of these options:
 - **Only return items that have the specified links**: First-tier work items are returned, but only if they have links to work items specified by the linked work items filter criteria. 
 
 - **Only return items that do not have the specified links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
-- 
+ 
 * * * 
 
 
