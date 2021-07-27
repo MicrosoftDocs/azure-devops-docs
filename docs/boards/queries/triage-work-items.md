@@ -78,7 +78,7 @@ Choose **Previous** or **Next** to move up or down within the query results list
 After making several changes to work items, choose **Save Results** to save all changes. 
 
 
-:::image type="content" source="media/triage-mode-save-results-visual-studio-2019.png" alt-text="Screenshot of Save Results btoon for triage mode.":::
+:::image type="content" source="media/triage-queries/triage-mode-save-results-visual-studio-2019.png" alt-text="Screenshot of Save Results btoon for triage mode.":::
 
 *** 
 

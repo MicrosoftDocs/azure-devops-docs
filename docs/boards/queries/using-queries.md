@@ -223,7 +223,7 @@ Choose **New Query** from the **Work Items** page.
 
 The Query Editor opens to a flat-list query and specifies the current project to filter the query list. 
 
-:::image type="content" source="media/using-queries/media/using-queries/visual-studio-new-query-editor.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query."::: 
+:::image type="content" source="media/using-queries/visual-studio-new-query-editor.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query."::: 
 
 
 * * * 
@@ -282,7 +282,7 @@ Use **Team Project=@Project** to scope the query to find only those work items d
 
 To list work items defined in two or more projects, change the clause for the **Team Project** using the **In** operator, and enter the names of the projects to search in.   For example, the following query finds work items defined in the *Fabrikam Fiber* and *Design Agile* projects.  
 
-:::image type="content" source="media/using-queries/media/using-queries/visual-studio-query-multiple-projects.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query, specify two projects clause":::  
+:::image type="content" source="media/using-queries/visual-studio-query-multiple-projects.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query, specify two projects clause":::  
 
 To query across all projects, delete the clause with the **Team Project** field. 
 
@@ -311,22 +311,21 @@ For example, you can search for all work items assigned to you by specifying the
 
 Choose **Click here to add a clause** to add another clause at then end of the query, and then choose the **Field**, **Operator**, and **Value** for that clause.  
 
-:::image type="content" source="media/using-queries/media/using-queries/visual-studio-add-new-clause.png" alt-text="Screenshot of Visual Studio Query Editor, add new clause.":::  
+:::image type="content" source="media/using-queries/visual-studio-add-new-clause.png" alt-text="Screenshot of Visual Studio Query Editor, add new clause.":::  
 
 To insert a clause within the existing set of query clauses, place your cursor on the clause below where you want to insert the clause, and then choose **Insert Clause**. Then choose the **Field**, **Operator**, and **Value** for that clause.  
 
-:::image type="content" source="media/using-queries/media/using-queries/visual-studio-add-new-clause.png" alt-text="Screenshot of Visual Studio Query Editor, insert clause.":::  
+:::image type="content" source="media/using-queries/visual-studio-add-new-clause.png" alt-text="Screenshot of Visual Studio Query Editor, insert clause.":::  
 
 Or, open the context menu for the clause and choose **Insert Clauses**. 
 
-:::image type="content" source="media/using-queries/media/using-queries/visual-studio-insert-delete-clauses.png" alt-text="Screenshot of Visual Studio Query Editor, context-menu for insert clauses and delete clause."::: 
+:::image type="content" source="media/using-queries/visual-studio-insert-delete-clauses.png" alt-text="Screenshot of Visual Studio Query Editor, context-menu for insert clauses and delete clause."::: 
 
 To delete a clause, choose the clause you want to delete, and choose :::image type="icon" source="../media/icons/icon-delete-clause-visual-studio.png" border="false"::: **Delete Clause**.
 
 When finished, choose :::image type="icon" source="../media/icons/run_query.png" border="false"::: **Run** or :::image type="icon" source="../media/icons/icon-save-visual-studio.png" border="false"::: **Save Query**.
  
 
-:::image type="icon" source="../media/icons/icon-delete-clause-visual-studio.png" border="false":::
 
 * * *
 

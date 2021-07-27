@@ -60,4 +60,4 @@ Or, select one of the following options. :
 - **Add to Team Favorites**: [Adds the query to the Team Favorites section](../queries/view-run-query.md). 
 - **Security**: [Opens the Permissions dialog for the query](../queries/set-query-permissions.md). 
 
-***
+* * *
