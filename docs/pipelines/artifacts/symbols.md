@@ -85,9 +85,37 @@ Aside from Azure Artifacts symbol server, you can also publish your symbols to a
 
 - **Verbose logging**: check to include more information in your logs.
 
-## Portable PDBs
+## Publish portable PDBs to Azure Artifacts symbol server
 
-If you're using [portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), you still need to use the **Index Sources and Publish Symbols** task to publish symbols. For portable PDBs, the build does the indexing, however you should [use SourceLink](/dotnet/standard/library-guidance/sourcelink) to index the symbols as part of the build. Note that Azure Artifacts doesn't presently support ingesting NuGet symbol packages and so the task is used to publish the generated PDB files into the symbols service directly.
+Portable PDBs are symbol files that can be created and read on all platforms unlike the traditional PDBs which are Windows only. If you're using portable PDBs, you still need to use the **Index Sources and Publish Symbols** task to publish symbols. For portable PDBs, the build does the indexing, however you should use SourceLink to index the symbols as part of your pipeline.
+
+### Use Source Link in .NET projects
+
+Source link is a set of tools that allow developers to debug their source code by mapping from the .NET assemblies back to the source code. Check out the [dotnet/sourcelink](https://github.com/dotnet/sourcelink) GitHub repository to learn about the different packages included.
+
+- For projects hosted on GitHub, add the `Microsoft.SourceLink.GitHub` package reference to your project file.
+
+  ```xml
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+  ```
+
+- For projects hosted on Azure Repos, add the `Microsoft.SourceLink.AzureRepos.Git` package reference to your project file.
+
+  ```xml
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+  ```
+
+- For projects hosted on Azure DevOps Server, add the `Microsoft.SourceLink.AzureDevOpsServer.Git` package reference to your project file.
+
+  ```xml
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.AzureDevOpsServer.Git" Version="1.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+  ```
 
 ## Use indexed symbols to debug your app
 
