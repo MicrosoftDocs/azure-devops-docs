@@ -17,7 +17,7 @@ ms.date: 07/27/2021
 [!INCLUDE [temp](../includes/version-all.md)]
 [!INCLUDE [temp](../includes/version-visual-studio.md)]
 
-To find work items assigned to you or your team, run a query. A number of work item queries are predefined with your process. Also, members of your team may have created shared queries that you can view and run. Oftentimes, it's easier to define a new query by building on the query definition that's already available to you. 
+To find work items assigned to you or your team, run a query. A number of work item queries are predefined with your process. Also, members of your team may have created shared queries that you can view and run. Often, it's easier to define a new query by building on the query definition that's already available to you. 
 
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
