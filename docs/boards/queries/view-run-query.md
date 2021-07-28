@@ -1,5 +1,5 @@
 ---
-title: View or run a query 
+title: View or run a query  
 titleSuffix: Azure Boards
 description: View, run, or favorite a query in Azure Boards, Azure DevOps 
 ms.custom: boards-queries
