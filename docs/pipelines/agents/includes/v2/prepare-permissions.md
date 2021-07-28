@@ -13,7 +13,7 @@ The user configuring the agent needs pool admin permissions, but the user runnin
 
 The folders controlled by the agent should be restricted to as few users as possible and they contain secrets that could be decrypted or exfiltrated.
 
-The ADO pipelines agent is a software product designed to execute code it downloads from external sources. It is inherently a target for Remote Code Execution (RCE) attacks.
+The ADO pipelines agent is a software product designed to execute code it downloads from external sources. It inherently could be a target for Remote Code Execution (RCE) attacks.
 
 Therefore, it is important to consider the threat model surrounding each individual usage of Pipelines Agents to perform work, and decide what are the minimum permissions could be granted to the user running the agent, to the machine where the agent runs, to the users who have write access to the Pipeline definition, the git repos where the yaml is stored, or the group of users who control access to the pool for new pipelines.
 
