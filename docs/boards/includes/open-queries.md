@@ -46,7 +46,7 @@ From your web browser, open **Boards>Queries**.
 
 	:::image type="content" source="../media/team-explorer/open-query-from-team-explorer.png" alt-text="Screenshot of Team Explorer, open context menu for a query, choose View Results.":::
 
-Or, select one of the following options. :
+Or, select one of the following options:
 
 - **Edit Query**: Opens the [Query Editor](../queries/using-queries.md) for the selected query.
 - **New Query**: Opens the [Query Editor](../queries/using-queries.md) with the default new query options.
