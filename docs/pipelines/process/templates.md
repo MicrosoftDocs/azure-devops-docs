@@ -29,7 +29,7 @@ Use templates to define your logic once and then reuse it several times. Templat
 
 ## Parameters
 
-You can specify parameters and their data types in a template and pass those parameters to a pipeline. You can also [use parameters outside of templates](runtime-parameters.md). 
+You can specify parameters and their data types in a template and pass those parameters to a pipeline. You can also [use parameters outside of templates](runtime-parameters.md). You can only use literals for parameter default values.
 
 
 ### Passing parameters
