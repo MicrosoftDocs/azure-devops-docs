@@ -19,7 +19,7 @@ ms.date: 07/27/2021
 [!INCLUDE [temp](../includes/version-all.md)]
 **Visual Studio 2019 | Visual Studio 2015 | Visual Studio 2013**  
 
-Using a work item query you can quickly review and update work items. Oftentimes team use the triage mode for a query to perform the following tasks: 
+Using a work item query you can quickly review and update work items. Teams often use the triage mode for a query to perform the following tasks: 
 - Set the priority of a bug or work item 
 - Assign a work item to a sprint or team member 
 - Add details to the description, acceptance criteria, or repo steps 
@@ -81,7 +81,7 @@ You can save each work item as you change it. Or, you can update multiple work i
 > Triage mode isn't available from Visual Studio 2017. 
 
 
-When you choose **View Results** for a query, it opens in triage mode displaying the first item in the list. You can switch from vertical and hortizontal views or expand or collapse the triage window using the :::image type="icon" source="media/triage-buttons.png" border="false"::: **Vertical Split**, **Horizontal Split**, **Collapse Bottom Panel**, or **Collapse Top Panel** icons. 
+When you choose **View Results** for a query, it opens in triage mode displaying the first item in the list. You can switch from vertical and horizontal views or expand or collapse the triage window using the :::image type="icon" source="media/triage-buttons.png" border="false"::: **Vertical Split**, **Horizontal Split**, **Collapse Bottom Panel**, or **Collapse Top Panel** icons. 
 
 Choose **Previous** or **Next** to move up or down within the query results list.
 
