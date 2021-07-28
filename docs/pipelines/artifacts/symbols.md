@@ -75,7 +75,7 @@ Aside from Azure Artifacts symbol server, you can also publish your symbols to a
 
 - **Path to symbols folder**: path to the folder hosting the symbol files.
 
-- **Search pattern**: the pattern used to find the pdb files in the folder that you specified in **Path to symbols folder**. Single-folder wildcard (`*`) and recursive wildcards (`**`) are supported. Example: `**\bin\**\*.pdb` searches for all .pdb files in all subdirectories named *bin*.
+- **Search pattern**: the pattern used to find the pdb files in the folder that you specified in **Path to symbols folder**.
 
 - **Index sources**: indicates whether to inject source server information into the PDB files.
 
@@ -116,6 +116,58 @@ Source link is a set of tools that allow developers to debug their source code b
     <PackageReference Include="Microsoft.SourceLink.AzureDevOpsServer.Git" Version="1.0.0" PrivateAssets="All"/>
   </ItemGroup>
   ```
+
+### Set up the build task
+
+The next step is to modify the build task in your pipeline to invoke Source Link during the build process.
+
+1. From your pipeline definition, select the **Build solution** task or search and add the **Visual Studio build** task to you pipeline if you don't have it yet.
+ 
+1. Add the following argument to the **MSBuild arguments** field.
+
+    ```Argument
+    /p:SourceLinkCreate=true
+    ```
+
+1. Select **Save & queue** when you are done.
+
+    :::image type="content" source="../../artifacts/symbols/media/build-solution-task-classic.png" alt-text="MSBuild arguments in the build solution task":::
+
+
+### Set up the publish task
+
+The Index Sources & Publish Symbols task is used to index your source code and publish your symbols to Azure Artifacts symbols server. Because we are using the *Visual Studio build* task to index our source, we will disable indexing in the publish task.
+
+1. From your pipeline definition, select `+` to add a new task.
+
+1. Search for the **Index sources and publish symbols** task. Select **Add** to add it to your pipeline.
+
+    :::image type="content" source="media/index-sources-publish-symbols.png" alt-text="Screenshot showing how to add the index sources and publish symbols to the current pipeline":::
+
+1. Fill out the required fields as follows:
+
+    :::image type="content" source="media/publish-to-symbol-server-indexing-disabled.png" alt-text="Screenshot showing the index sources and publish symbols task to publish symbols to Azure Artifacts symbol server":::
+
+::: moniker range=">= tfs-2018"
+- **Task version**: select **2.\\***.
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
+- **Task version**: select **1.\\***.
+::: moniker-end
+
+- **Display name**: task display name.
+
+- **Path to symbols folder**: path to the folder hosting the symbol files.
+
+- **Search pattern**: the pattern used to find the pdb files in the folder that you specified in **Path to symbols folder**. 
+
+- **Index sources**: Uncheck to disable indexing. Indexing is done during build. See the [previous step](#set-up-the-publish-task) for more details.
+
+- **Publish symbols**: indicates whether to publish the symbol files. 
+    - **Symbol server type**: select **Symbol Server in this organization/collection (requires Azure Artifacts)** to publish your symbols to Azure Artifacts symbol server.
+
+- **Verbose logging**: check to include more information in your logs.
 
 ## Use indexed symbols to debug your app
 
