@@ -3,7 +3,7 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 12/15/2020
+ms.date: 07/28/2021
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -175,9 +175,6 @@ With `maxParallel: <# or % of VMs>`, you can control the number/percentage of vi
 ### Canary deployment strategy
 
 Canary deployment strategy is an advanced deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. 
-
-You can only use the canary deployment strategy for Kubernetes resources.
-
 
 ```YAML
 strategy: 
