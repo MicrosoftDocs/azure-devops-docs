@@ -264,7 +264,7 @@ To open the menu options to download or delete several attachments, choose one o
 
 * * *
 
-<a id="storyboard"></a>
+<a id="storyboard" />
 
 ## Storyboard 
 
@@ -297,36 +297,11 @@ From the **Storyboards** tab, click **Start Storyboarding** to open Storyboardin
 **Storyboards tab control** 
 
 <img src="media/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
- 
-* * *
-
-
-
-## Email a work item query list
-
-A common way teams share information is by sharing a list of work items. You can email a formatted list or share a link to a query. 
-
-#### [Browser](#tab/browser/) 
-
-You can quickly generate a formatted list using the **Copy as HTML** or **Copy to clipboard** options. See [Copy list](../backlogs/copy-list.md).
-
-
-> [!IMPORTANT]     
-> If you use the built-in email feature, you can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
-
- 
-
-#### [Visual Studio](#tab/visual-studio/)
-
-You can email a formatted query list by choosing the **Send to Microsoft Outlook** option from the context menu.  
-
-:::image type="content" source="media/view-run-queries/send-to-outlook-team-explorer.png" alt-text="Screenshot of Team Explorer, choose Send to Microsoft Outlook query option.":::
-
-> [!NOTE]
-> This feature requires you to have Microsoft Outlook installed. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML** from the web portal. 
 
 
 * * *
+
+
 
 ::: moniker range=">= tfs-2015"
 
