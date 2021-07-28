@@ -39,8 +39,6 @@ You can't create variable groups in YAML, but they can be used as described in [
 
 1. Enter a name and description for the group.
 
-1. Decide if you want the variable group to be accessible for any pipeline by setting the **Allow access to all pipelines** option. This option allows pipelines defined in YAML to use this variable group. Pipelines defined in YAML aren't automatically authorized for variable groups. For more information, see [Use a variable group](variable-groups.md?tabs=yaml&view=azure-devops&preserve-view=true#use-a-variable-group).
-
 1. Optional: Move the toggle to link secrets from an Azure key vault as variables. For more information, see [Use Azure Key Vault secrets](../release/azure-key-vault.md).
 
 1. Enter the name and value for each [variable](../release/variables.md#custom-variables) to include in the group, choosing **+ Add** for each one. If you want to encrypt and securely store the value, choose the "lock" icon at the end of the row.

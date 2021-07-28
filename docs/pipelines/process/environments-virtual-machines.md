@@ -2,6 +2,7 @@
 title: Environment - Virtual machine resource
 description: Virtual machine resource support within Environment
 ms.topic: conceptual
+ms.custom: pipelinesresourcesrefresh
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: ushan
 ms.date: 07/21/2021
