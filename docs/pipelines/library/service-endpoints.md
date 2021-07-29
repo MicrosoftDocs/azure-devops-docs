@@ -148,7 +148,7 @@ Based on usage patterns, service connection security is divided into the followi
 * [Pipeline permissions](#pipeline-permissions)
 * [Project permissions](#project-permissions---cross-project-sharing-of-service-connections)
 
-   ![Azure Resource Manager security](../release/media/azure-rm-endpoint/azure-rm-security.png)
+   :::image type="content" source="../release/_img/azure-rm-endpoint/azure-rm-security.png" alt-text="Screenshot of Azure Resource Manager security.":::
 
 ### User permissions
 
@@ -454,7 +454,7 @@ Use the following parameters to define and secure a connection to any generic ty
 Use the following parameters to define a connection to a GitHub repository.
 
 > [!TIP]
-> There's a specific service connection for External Git servers and [GitHub Enterprise Server connections](#github-enterprise-server-service-connection).
+> There's a specific service connection for [External Git servers](#external-git-service-connection) and [GitHub Enterprise Server connections](#github-enterprise-server-service-connection).
 
 |      Parameter       |                                                                                                                                  Description                                                                                                                                   |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -479,7 +479,7 @@ For more information, see [Artifact sources](../release/artifacts.md#tfvcsource)
 Use the following parameters to define a connection to a GitHub repository.
 
 > [!TIP]
-> There's a specific service connection for [External Git servers](#github-enterprise-server-service-connection) and [standard GitHub service connections](#github-service-connection).
+> There's a specific service connection for [External Git servers](#external-git-service-connection) and [standard GitHub service connections](#github-service-connection).
 
 |                 Parameter                  |                                                                                                                                  Description                                                                                                                                   |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
