@@ -147,7 +147,7 @@ None
 For more information about the different types of tasks and their uses, see [Task control options](../../process/tasks.md#controloptions).
 
 > [!IMPORTANT]
-> To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../policies/retention.md#delete-a-run).
+> To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../../policies/retention.md#delete-a-run).
 
 
 ## Open source
