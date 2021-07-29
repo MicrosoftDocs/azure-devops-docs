@@ -237,7 +237,7 @@ TFS_COLLECTION=http://DIFFERENT_SERVER:8080/tfs/DifferentCollection
 -->
 
 > [!IMPORTANT]
-> To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds)  or by manually [deleting the run](../policies/retention.md#delete-a-run).
+> To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../policies/retention.md#delete-a-run).
 
 
 ## FAQs
