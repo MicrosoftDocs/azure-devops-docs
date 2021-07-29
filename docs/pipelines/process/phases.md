@@ -322,6 +322,7 @@ Currently, only the following tasks are supported out of the box for agentless j
 * [Delay task](../tasks/utility/delay.md)
 * [Invoke Azure Function task](../tasks/utility/azure-function.md)
 * [Invoke REST API task](../tasks/utility/http-rest-api.md)
+* [Manual Validation task](../tasks/utility/manual-validation.md)
 * [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
 * [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
 * [Query Work Items task](../tasks/utility/work-item-query.md)
