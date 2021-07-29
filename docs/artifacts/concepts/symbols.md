@@ -25,7 +25,7 @@ Using the **Index Sources and Publish Symbols** task, you can publish your symbo
 
 - [publish to the symbol server](../../pipelines/artifacts/symbols.md#publish-symbols-to-azure-artifacts-symbol-server).
 - [Publish to a file share](../../pipelines/artifacts/symbols.md#publish-symbols-to-a-file-share).
-- [Publish to Portable PDBs](../../pipelines/artifacts/symbols.md#portable-pdbs).
+- [Publish to Portable PDBs](../../pipelines/artifacts/symbols.md#publish-portable-pdbs-to-azure-artifacts-symbol-server).
 
 If your application uses the .NET standard, another viable option to share your symbols is to [Create a .snupkg symbol package](/nuget/create-packages/symbol-packages-snupkg#creating-a-symbol-package) and publish it to NuGet.org.
 

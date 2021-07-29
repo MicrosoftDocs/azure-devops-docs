@@ -146,7 +146,7 @@ The Index Sources & Publish Symbols task is used to index your source code and p
 
 1. Fill out the required fields as follows:
 
-    :::image type="content" source="media/publish-to-symbol-server-indexing-disabled.png" alt-text="Screenshot showing the index sources and publish symbols task to publish symbols to Azure Artifacts symbol server":::
+    :::image type="content" source="media/publish-to-symbol-server-indexing-disabled.png" alt-text="Screenshot showing how to configure the publish task to publish symbols to Azure Artifacts symbol server":::
 
 ::: moniker range=">= tfs-2018"
 - **Task version**: select **2.\\***.
@@ -169,16 +169,30 @@ The Index Sources & Publish Symbols task is used to index your source code and p
 
 - **Verbose logging**: check to include more information in your logs.
 
-## Use indexed symbols to debug your app
+## Set up Visual Studio
 
-You can use your indexed symbols to debug an app on a different machine from where the sources were built.
+Before starting to consume our symbols from Azure Artifacts symbol server, let's make sure that Visual Studio is set up properly:
 
-### Enable your development machine
+1. In Visual Studio, select **Tools** then **Options**.
 
-In Visual Studio, you might need to enable the following two options in **Debug** > **Options** > **Debugging** > **General**:
+1. Select **Symbols** from the **Debugging** menu.
 
-* **Enable source server support**
-* **Allow source server for partial trust assemblies (Managed only)**
+1. Select the `+` sign to add a new symbol server location.
+
+    :::image type="content" source="../../artifacts/symbols/media/vs-symbols-location.png" alt-text="Screenshot showing how to add a new symbol server location":::
+
+1. A new dialog box will open, select your account from the dropdown menu, and then select the organization that you wish to connect to. Select **Connect** when you are done.
+
+1. Select **General** from the same **Debugging** section. Scroll down and check **Enable Source Link support** to enable support for portable PDBs.
+
+    :::image type="content" source="../../artifacts/symbols/media/enable-source-link-support.png" alt-text="Enable source link support":::
+
+> [!NOTE]
+> Checking the **Enable source server support** option enables you to use [Source Server](/windows/win32/debug/source-server-and-source-indexing) when there is no source code on the local machine or the symbol file does not match the source code.
+>
+> If you want to enable third-party source code debugging, uncheck the **Enable Just My Code** checkbox.
+
+<!-- 
 
 ### Advanced usage: overriding at debug time
 
@@ -217,7 +231,9 @@ C:\BuildAgent\_work\1\src\MyApp\SomeHelper.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TF
 ```ini
 [variables]
 TFS_COLLECTION=http://DIFFERENT_SERVER:8080/tfs/DifferentCollection
-```
+``` 
+
+-->
 
 > [!IMPORTANT]
 > If you want to delete symbols that were published using the `Index Sources & Publish Symbols` task, you must first remove the build that generated those symbols. This can be accomplished by [using retention policies to clean up your build](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by [manually deleting the run](../policies/retention.md#delete-a-run).
