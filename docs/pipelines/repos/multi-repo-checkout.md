@@ -124,7 +124,7 @@ You must use a [repository resource](../yaml-schema.md#repository-resource) if y
 |-----------------|--------------------|
 | Bitbucket Cloud | [Bitbucket Cloud](../library/service-endpoints.md#bitbucket-cloud-service-connection) | 
 | GitHub          | [GitHub](../library/service-endpoints.md#github-service-connection) |
-| GitHub Enterprise Server | [GitHub Enterprise Server](../library/service-endpoints.md#github-service-connectionent) |
+| GitHub Enterprise Server | [GitHub Enterprise Server](../library/service-endpoints.md#github-enterprise-server-service-connection) |
 | Azure Repos Git repositories in a different organization than your pipeline | [Azure Repos/Team Foundation Server](../library/service-endpoints.md#azure-repos) |
 
 You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
