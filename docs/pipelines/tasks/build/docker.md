@@ -40,7 +40,7 @@ Following are the key benefits of using Docker task as compared to directly usin
 | Parameters | Description |
 |------------|-------------|
 | `command`<br/>Command | (Required) Possible values: `buildAndPush`, `build`, `push`, `login`, `logout`<br/>Added in version 2.173.0: `start`, `stop`<br/>Default value: `buildAndPush` |
-| `containerRegistry`<br/>Container registry | (Optional) Name of the [Docker registry service connection](../../library/service-endpoints.md#sep-docreg) |
+| `containerRegistry`<br/>Container registry | (Optional) Name of the [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) |
 | `repository`<br/>Repository | (Optional) Name of repository within the container registry corresponding to the Docker registry service connection specified as input for `containerRegistry` |
 | `container`<br/>Container | (Required for commands `start` and `stop`) The container resource to start or stop |
 | `tags`<br/>Tags | (Optional) Multiline input where each line contains a tag to be used in `build`, `push` or `buildAndPush` commands<br/>Default value: `$(Build.BuildId)` |

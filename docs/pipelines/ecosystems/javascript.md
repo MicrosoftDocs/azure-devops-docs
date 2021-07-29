@@ -793,7 +793,7 @@ The first example assumes that you manage version information (such as through a
 - script: npm publish
 ```
 
-The next example publishes to a custom registry defined in your repo's `.npmrc` file. You'll need to set up an [npm service connection](/azure/devops/pipelines/library/service-endpoints#sep-npm) to inject authentication credentials into the connection as the build runs.
+The next example publishes to a custom registry defined in your repo's `.npmrc` file. You'll need to set up an [npm service connection](/azure/devops/pipelines/library/service-endpoints#npm-service-connection) to inject authentication credentials into the connection as the build runs.
 
 ```yaml
 - task: Npm@1
