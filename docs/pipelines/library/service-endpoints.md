@@ -271,7 +271,7 @@ Azure Pipelines supports the following service connection types by default:
 
 Use the following parameters to define and secure a connection to a Microsoft Azure subscription, using Azure credentials or an Azure management certificate.
 
-[How do I create a new service connection?](#create-new)
+[How do I create a new service connection?](#create-a-service-connection)
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -427,7 +427,7 @@ Use the following parameters to define a connection to a container registry for 
 ### External Git service connection
 
 Use the following parameters to define and secure a connection to a Git repository server.
-There's a specific service connection for [GitHub](#sep-github) and [GitHub Enterprise Server](#sep-githubent).
+There's a specific service connection for [GitHub](#github-service-connection) and [GitHub Enterprise Server](#github-enterprise-server-service-connection).
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -454,7 +454,7 @@ Use the following parameters to define and secure a connection to any generic ty
 Use the following parameters to define a connection to a GitHub repository.
 
 > [!TIP]
-> There's a specific service connection for [External Git servers](#sep-extgit) and [GitHub Enterprise Server](#sep-githubent). connections
+> There's a specific service connection for External Git servers and [GitHub Enterprise Server connections](#github-enterprise-server-service-connection).
 
 |      Parameter       |                                                                                                                                  Description                                                                                                                                   |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -479,7 +479,7 @@ For more information, see [Artifact sources](../release/artifacts.md#tfvcsource)
 Use the following parameters to define a connection to a GitHub repository.
 
 > [!TIP]
-> There's a specific service connection for [External Git servers](#sep-extgit) and [standard GitHub service connections](#sep-github).
+> There's a specific service connection for [External Git servers](#github-enterprise-server-service-connection) and [standard GitHub service connections](#github-service-connection).
 
 |                 Parameter                  |                                                                                                                                  Description                                                                                                                                   |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
