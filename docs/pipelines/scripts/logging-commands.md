@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 03/15/2021
+ms.date: 07/28/2021
 ms.custom: contperf-fy21q3
 ---
 
@@ -385,7 +385,7 @@ Upload and attach attachment to current timeline record. These files are not ava
 
 #### Usage
 
-Upload and attach summary markdown to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. 
+Upload and attach summary markdown to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. The summary will appear on an Extensions tab.   
 
 #### Examples
 
