@@ -1333,7 +1333,7 @@ The `git` type refers to Azure Repos Git repos.
 
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
   An example is `name: MyBitbucket/vscode`.
-  Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket) for authorization.
+  Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#bitbucket-cloud-service-connection) for authorization.
 
 ### Packages resource
 

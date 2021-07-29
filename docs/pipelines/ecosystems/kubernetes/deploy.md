@@ -76,7 +76,7 @@ jobs:
               bar-acr-secret
 ```
 
-Note that to allow image pull from private registries, prior to the `deploy` action, the `createSecret` action is used along with instances of [Docker registry service connection](../../library/service-endpoints.md#sep-docreg) to create imagePullSecrets that are subsequently referenced in the step corresponding to `deploy` action.
+Note that to allow image pull from private registries, prior to the `deploy` action, the `createSecret` action is used along with instances of [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) to create imagePullSecrets that are subsequently referenced in the step corresponding to `deploy` action.
 
 > [!TIP]
 > - If setting up an end-to-end CI-CD pipeline from scratch for a repository containing a Dockerfile, checkout the [Deploy to Azure Kubernetes template](aks-template.md), which constructs an end-to-end YAML pipeline along with creation of an [environment](../../process/environments.md) and [Kubernetes resource](../../process/environments-kubernetes.md) to help visualize these deployments.

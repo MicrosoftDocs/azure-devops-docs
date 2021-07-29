@@ -406,15 +406,15 @@ The `git` type refers to Azure Repos Git repos.
 
 - If you specify `type: github`, the `name` value is the full name of the GitHub repo and includes the user or organization.
   An example is `name: Microsoft/vscode`.
-  GitHub repos require a [GitHub service connection](../library/service-endpoints.md#sep-github) for authorization.
+  GitHub repos require a [GitHub service connection](../library/service-endpoints.md#github-service-connection) for authorization.
 
 - If you specify `type: githubenterprise`, the `name` value is the full name of the GitHub Enterprise repo and includes the user or organization.
   An example is `name: Microsoft/vscode`.
-  GitHub Enterprise repos require a [GitHub Enterprise service connection](../library/service-endpoints.md#sep-githubent) for authorization.
+  GitHub Enterprise repos require a [GitHub Enterprise service connection](../library/service-endpoints.md#github-service-connectionent) for authorization.
 
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
   An example is `name: MyBitbucket/vscode`.
-  Bitbucket Cloud repos require a [Bitbucket Cloud service connection](../library/service-endpoints.md#sep-bbucket) for authorization.
+  Bitbucket Cloud repos require a [Bitbucket Cloud service connection](../library/service-endpoints.md#bitbucket-cloud-service-connection) for authorization.
 
 
 ### `checkout` your repository

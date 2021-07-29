@@ -176,7 +176,7 @@ By default, the releases execute in with a collection level Job authorization sc
 
 ## Artifact sources - Jenkins
 
-To consume Jenkins artifacts, you must create a service connection with credentials to connect to your Jenkins server. For more information, see [service connections](../library/service-endpoints.md) and [Jenkins service connection](../library/service-endpoints.md#sep-jenkins). You can then link a Jenkins project to a release pipeline. The Jenkins project must be configured with a post build action to publish the artifacts.
+To consume Jenkins artifacts, you must create a service connection with credentials to connect to your Jenkins server. For more information, see [service connections](../library/service-endpoints.md) and [Jenkins service connection](../library/service-endpoints.md#jenkins-service-connection). You can then link a Jenkins project to a release pipeline. The Jenkins project must be configured with a post build action to publish the artifacts.
 
 The following features are available when using Jenkins sources:
 
