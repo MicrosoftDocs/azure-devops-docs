@@ -92,7 +92,7 @@ Macro syntax variables remain unchanged with no value because an empty value lik
 Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`. Macro variables are not expanded when used to display a job name inline. Instead, you must use the `displayName` property.
 
 > [!NOTE]
-> Variables are only expanded for `stages`, `jobs`, and `steps`.
+> Macro syntax variables are only expanded for `stages`, `jobs`, and `steps`.
 > You cannot, for example, use macro syntax inside a `resource` or `trigger`.
 
 In this example, macro syntax is used with Bash, PowerShell, and a script task. The syntax for calling a variable with macro syntax is the same for all three. 
