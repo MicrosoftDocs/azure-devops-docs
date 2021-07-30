@@ -72,10 +72,10 @@ Create the folder structure for the task and install the required libraries and 
 From within your `buildandreleasetask` folder, run the following command:
 
 ```
-npm init
+npm init --yes
 ```
 
-`npm init` creates the `package.json` file. You can accept all of the default `npm init` options.
+`npm init` creates the `package.json` file. We added the `--yes` parameter to accept all of the default `npm init` options.
 
 > [!TIP]
 > The agent doesn't automatically install the required modules because it's expecting your task folder to include the node modules. To mitigate this, copy the `node_modules` to `buildandreleasetask`. As your task gets bigger, it's easy to exceed the size limit (50MB) of a VSIX file. Before you copy the node folder, you may want to run `npm install --production` or `npm prune --production`, or you can write a script to build and pack everything.
@@ -106,27 +106,30 @@ echo node_modules > .gitignore
 
 #### Choose typescript version
 
-Tasks can use typescript versions 2.3.4 or 4.0.2. You can install the chosen typescript version using this command:
+Tasks can use typescript versions 2.3.4 or 4.0.2. 
+
+>[!NOTE]
+>To have the `tsc` command available, make sure that TypeScript is installed globally with npm in your development environment.
+
+You can install the chosen typescript version using this command:
 
 ```
-npm install typescript@4.0.2 --save-dev
+npm install typescript@4.0.2 -g --save-dev
 ```
 
-If you skip this step, typescript version 2.3.4 gets used by default.
+If you skip this step, typescript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
+
 
 #### Create tsconfig.json compiler options
 
 This file ensures that your TypeScript files are compiled to JavaScript files.
 
 ```
-tsc --init
+tsc --init --target es6
 ```
 
-For example, we want to compile to the ES6 standard instead of ES5.
-To ensure the ES6 standard happens, open the newly generated `tsconfig.json` and update the `target` field to "es6."
+We want to compile to the ES6 standard instead of ES5. To ensure the ES6 standard is used, we added the `--target es6` parameter.
 
->[!NOTE]
->To have the command run successfully, make sure that TypeScript is installed globally with npm on your local machine.
 
 ### Task implementation
 
