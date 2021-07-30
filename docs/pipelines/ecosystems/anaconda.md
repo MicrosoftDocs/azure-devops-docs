@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: 50ed6bb4-5f35-4e1e-aafc-295eb10198df
 ms.reviewer: vijayma
 ms.custom: seodec18, devx-track-python
-ms.date: 05/11/2021
+ms.date: 07/30/2021
 monikerRange: azure-devops
 author: JuliaKM
 ---
@@ -34,7 +34,7 @@ Follow these instructions to set up a pipeline for a sample Python app with Anac
 
 1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. When the list of repositories appears, select your Java sample repository.
+1. When the list of repositories appears, select your Anaconda sample repository.
 
 1. Azure Pipelines will analyze the code in your repository and detect an existing `azure-pipelines.yml` file.
 
