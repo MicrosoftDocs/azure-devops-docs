@@ -827,6 +827,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/artifacts/symbols/setting-up-github-sourcelinking.md",
+      "redirect_url": "/azure/devops/pipelines/artifacts/symbols?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/notifications/manage-personal-notifications.md",
       "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
       "redirect_document_id": false
