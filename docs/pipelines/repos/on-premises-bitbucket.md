@@ -30,7 +30,7 @@ If your on-premises server is reachable from the hosted agents, then you can use
 
 ## Reachable from Azure Pipelines
 
-If your on-premises Bitbucket server is reachable from Azure Pipelines service, create a **[Other Git](../library/service-endpoints.md#sep-extgit)** service connection and use that to create a pipeline. Check the option to **Attempt accessing this Git server from Azure Pipelines**.
+If your on-premises Bitbucket server is reachable from Azure Pipelines service, create a **[Other Git](../library/service-endpoints.md#external-git-service-connection)** service connection and use that to create a pipeline. Check the option to **Attempt accessing this Git server from Azure Pipelines**.
 
 CI triggers work through polling and not through webhooks. In other words, Azure Pipelines periodically checks the Bitbucket server if there are any updates to code. If there are, then Azure Pipelines will start a new run.
 
@@ -40,7 +40,7 @@ If the Bitbucket server cannot be reached from Azure Pipelines, you have two opt
 
 * Work with your IT department to open a network path between Azure Pipelines and on-premises Git server. For example, you can add exceptions to your firewall rules to allow traffic from Azure Pipelines to flow through. See the section on [Azure DevOps IPs](#azure-devops-ip-addresses) to see which IP addresses you need to allow. Furthermore, you need to have a public DNS entry for the Bitbucket server so that Azure Pipelines can resolve the FQDN of your server to an IP address.
 
-* You can use a **[Other Git](../library/service-endpoints.md#sep-extgit)** connection but tell Azure Pipelines not to **attempt accessing this Git server from Azure Pipelines**. CI and PR triggers will not work in this configuration. You can only start manual or scheduled pipeline runs.
+* You can use a **[Other Git](../library/service-endpoints.md#external-git-service-connection)** connection but tell Azure Pipelines not to **attempt accessing this Git server from Azure Pipelines**. CI and PR triggers will not work in this configuration. You can only start manual or scheduled pipeline runs.
 
 ### Reachable from Microsoft-hosted agents
 

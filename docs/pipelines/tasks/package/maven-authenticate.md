@@ -20,7 +20,7 @@ Provides credentials for Azure Artifacts feeds and external Maven repositories i
 | Argument | Description |
 | ---------| ----------- |
 | `artifactsFeeds`<br/>My feeds (select below) | (Optional) Comma-separated list of Azure Artifacts feed names to authenticate with Maven. If you only need authentication for external maven repositories, leave this field blank. |
-| `mavenServiceConnections`<br/>Feeds from external organizations | (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-maven" data-raw-source="[Maven service connection](~/pipelines/library/service-endpoints.md#sep-maven)">Maven service connection</a> names from external organizations to authenticate with Maven. If you only needs authentication for Azure Artifacts feeds, leave this field blank.|
+| `mavenServiceConnections`<br/>Feeds from external organizations | (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#maven-service-connection" data-raw-source="[Maven service connection](~/pipelines/library/service-endpoints.md#maven-service-connection)">Maven service connection</a> names from external organizations to authenticate with Maven. If you only needs authentication for Azure Artifacts feeds, leave this field blank.|
 
 ## Examples
 

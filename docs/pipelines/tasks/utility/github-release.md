@@ -19,7 +19,7 @@ Use this task in your pipeline to create, edit, or discard a [GitHub release](ht
 ## Prerequisites
 
 ### GitHub service connection
-This task requires a [GitHub service connection](../../library/service-endpoints.md#sep-github) with **Write** permission to the GitHub repository. You can create a GitHub service connection in your Azure Pipelines project. Once created, use the name of the service connection in this task's settings.
+This task requires a [GitHub service connection](../../library/service-endpoints.md#github-service-connection) with **Write** permission to the GitHub repository. You can create a GitHub service connection in your Azure Pipelines project. Once created, use the name of the service connection in this task's settings.
 
 ::: moniker range="> tfs-2018"
 
