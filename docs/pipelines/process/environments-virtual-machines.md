@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.custom: pipelinesresourcesrefresh
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: ushan
-ms.date: 07/21/2021
+ms.date: 07/30/2021
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -80,15 +80,15 @@ pool:
 
 jobs:
 - deployment: VMDeploy
-displayName: Deploy to VM
-environment: 
+  displayName: Deploy to VM
+  environment: 
    name: ContosoDeploy
    resourceType: VirtualMachine
-strategy:
-   runOnce:
-   deploy:   
-      steps:
-      - script: echo "Hello world"
+  strategy:
+     runOnce:
+        deploy:   
+          steps:
+            - script: echo "Hello world"
 ```
 
 You can select specific sets of virtual machines from the environment to receive the deployment with tags. For example, if you only want to deploy to resources with the `windows` tag, add the `tags` parameter and the value `windows` to your pipeline.
@@ -102,16 +102,16 @@ pool:
 
 jobs:
 - deployment: VMDeploy
-displayName: Deploy to VM
-environment: 
-   name: ContosoDeploy
-   resourceType: VirtualMachine
-   tags: windows # only deploy to virtual machines with this tag
-strategy:
-   runOnce:
-   deploy:   
-      steps:
-      - script: echo "Hello world"
+  displayName: Deploy to VM
+  environment: 
+    name: ContosoDeploy
+    resourceType: VirtualMachine
+    tags: windows # only deploy to virtual machines with this tag
+  strategy:
+    runOnce:
+      deploy:   
+          steps:
+          - script: echo "Hello world"
 ```
 
 To learn more about deployment jobs, see the [YAML schema](../yaml-schema.md?tabs=schema#deployment-job).
@@ -135,16 +135,16 @@ pool:
 
 jobs:
 - deployment: VMDeploy
-displayName: Deploy to VM
-environment: 
-   name: ContosoDeploy
-   resourceType: VirtualMachine
-   tags: windows,prod # only deploy to virtual machines with both windows and prod tags
-strategy:
-   runOnce:
-   deploy:   
-      steps:
-      - script: echo "Hello world"
+  displayName: Deploy to VM
+  environment: 
+    name: ContosoDeploy
+    resourceType: VirtualMachine
+    tags: windows,prod # only deploy to virtual machines with both windows and prod tags
+  strategy:
+    runOnce:
+      deploy:   
+          steps:
+          - script: echo "Hello world"
 ```
 
 ## Apply deployment strategy
