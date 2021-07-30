@@ -171,8 +171,9 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 </tr></tbody>
 </table>  
 
-
-If you use [Microsoft Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to assign resources and track a schedule, you can update these fields using Project.
+::: moniker range="<= tfs-2018"
+If you use [Microsoft Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project) to assign resources and track a schedule.
+::: moniker-end
 
 ## Track test progress 
 

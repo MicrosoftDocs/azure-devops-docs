@@ -268,7 +268,7 @@ To open the menu options to download or delete several attachments, choose one o
 
 ## Storyboard 
 
-Storyboarding your ideas and goals increases visual understanding. With [PowerPoint Storyboarding](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) you can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint provides.  
+Storyboarding your ideas and goals increases visual understanding. With [PowerPoint Storyboarding](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint) you can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint provides.  
 
 ::: moniker range="> tfs-2018"
 > [!NOTE]  
@@ -283,7 +283,7 @@ Storyboarding your ideas and goals increases visual understanding. With [PowerPo
 
 By linking your storyboard to a work item, you provide your team access to the shared file where they can add their comments. From the ![Links tab icon](../backlogs/media/icon-links-tab-wi.png), **Links**, or a **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. When you make changes to a linked storyboard, the work item continues to link to the file with the latest changes.
 
-To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
+To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoint](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint).
 
 #### [Browser](#tab/browser/)
 
