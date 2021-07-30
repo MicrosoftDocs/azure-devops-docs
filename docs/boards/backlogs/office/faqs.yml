@@ -70,7 +70,7 @@ sections:
           ::: moniker-end  
 
           ::: moniker range="<= tfs-2018"  
-          **Yes**. For TFS 2018 and earlier versions, you can use Microsoft Project to perform bulk import and updates of work items. See [Create your backlog and tasks using Microsoft Project](create-your-backlog-tasks-using-project.md).  
+          **Yes**. For TFS 2018 and earlier versions, you can use Microsoft Project to perform bulk import and updates of work items. See [Create your backlog and tasks using Microsoft Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project).  
           ::: moniker-end  
 
       - question: How do I connect an existing Excel workbook to Azure DevOps?  
