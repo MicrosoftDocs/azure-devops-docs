@@ -102,17 +102,24 @@ az artifacts universal download --organization https://dev.azure.com/fabrikam --
 
 ### Downloading the latest version
 
-To download the latest version of a universal package, you can use wildcards in the string you pass to the `version` argument.
+You can use wildcards to download the latest version of your Universal Packages.
 
-`--version *`: latest version.
-`--version 1.*`: latest version with major version 1. 
-`--version 1.2.*`: latest patch release with major version 1 and minor version 2.  
+**Syntax**:
+
+--version -v: Package version, e.g. '2.1.0'.
+
+**Examples**:
+
+- `--version *`: the latest version.
+
+- `--version 1.*`: the latest version with major 1. 
+
+- `--version 1.2.*`: the latest patch release with major 1 and minor 2.  
   
 > [!NOTE]
-> pre-release versions does not support wildcards.  
+> Wildcards are not supported in pre-release.
 
-
-## Next steps
+## Related articles
 
 - [Publish and download universal packages in Azure Pipelines](../../pipelines/artifacts/universal-packages.md).
 - [universal package task](../../pipelines/tasks/package/universal-packages.md).
