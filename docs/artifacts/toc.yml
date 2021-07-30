@@ -194,24 +194,21 @@
     displayName: caching, storage, pipeline cach 
   - name: Set up retention policies
     href: ../pipelines/policies/retention.md
-    displayName: policies, retention, pipeline artifact 
-  - name: Symbols
-    items:
-    - name: Symbols overview
-      href: concepts/symbols.md
-      displayName: symbols, debugging 
-    - name: Debug with Visual Studio
-      href: symbols/debug-with-symbols-visual-studio.md
-      displayName: symbols, visual studio symbols, debug, debugger 
-    - name: Debug with WinDbg
-      href: symbols/debug-with-symbols-windbg.md
-      displayName: symbols, windbg, debugger
-    - name: Publish symbols
-      href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-      displayName: symbols, debug, debugger, publish 
-    - name: Publish and consume symbols
-      href: symbols/setting-up-github-sourcelinking.md
-      displayName: publish, consume, debug, debugger, symbols 
+    displayName: policies, retention, pipeline artifact
+- name: Symbols
+  items:
+  - name: Symbols overview
+    href: concepts/symbols.md
+    displayName: symbols, debugging 
+  - name: Debug with Visual Studio
+    href: symbols/debug-with-symbols-visual-studio.md
+    displayName: symbols, visual studio symbols, debug, debugger 
+  - name: Debug with WinDbg
+    href: symbols/debug-with-symbols-windbg.md
+    displayName: symbols, windbg, debugger
+  - name: Publish symbols
+    href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
+    displayName: symbols, debug, debugger, publish
 - name: Concepts and references
   items:
   - name: Key concepts

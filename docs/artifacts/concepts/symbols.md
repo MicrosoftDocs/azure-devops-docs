@@ -2,6 +2,7 @@
 title: Symbol files
 description: Working with symbols
 ms.technology: devops-artifacts
+ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.assetid: 6D0F0D86-2ADC-4902-AFA7-98F7EF78EE07
 ms.date: 07/15/2021
@@ -23,9 +24,9 @@ Symbol files are created by the compiler when you build your project. A typical 
 
 Using the **Index Sources and Publish Symbols** task, you can publish your symbols to Azure Artifacts symbol server, file shares, or portable PDBs:  
 
-- [publish to the symbol server](../../pipelines/artifacts/symbols.md#publish-symbols).
+- [publish to the symbol server](../../pipelines/artifacts/symbols.md#publish-symbols-to-azure-artifacts-symbol-server).
 - [Publish to a file share](../../pipelines/artifacts/symbols.md#publish-symbols-to-a-file-share).
-- [Publish to Portable PDBs](../../pipelines/artifacts/symbols.md#portable-pdbs).
+- [Publish to Portable PDBs](../../pipelines/artifacts/symbols.md#publish-portable-pdbs-to-azure-artifacts-symbol-server).
 
 If your application uses the .NET standard, another viable option to share your symbols is to [Create a .snupkg symbol package](/nuget/create-packages/symbol-packages-snupkg#creating-a-symbol-package) and publish it to NuGet.org.
 
