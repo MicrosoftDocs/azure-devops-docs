@@ -126,6 +126,8 @@ Variables are always strings. If you want to use typed values, then you should u
 
 > [!NOTE]
 > Variables that are defined as expressions shouldn't depend on another variable with expression in value since **it isn't guaranteed** that both expressions will be evaluated properly. For example we have variable `a` whose value `$[ <expression> ]` is used as a part for the value of variable `b`. Since the order of processing variables isn't guaranteed variable `b` could have an incorrect value of variable `a` after evaluation.
+>
+> Described constructions are only allowed while setup variables through [variables keyword](./variables.md#set-variables-in-pipeline) in YAML pipeline. It is required to place the variables in the order they should be processed to get the correct values after processing.
 
 ## Functions
 
