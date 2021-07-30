@@ -44,7 +44,7 @@ When the verification of a GitHub Enterprise Server connection as explained in t
 
 * Work with your IT department to open a network path between Azure Pipelines and GitHub Enterprise Server. For example, you can add exceptions to your firewall rules to allow traffic from Azure Pipelines to flow through. See the section on [Azure DevOps IPs](#azure-devops-ip-addresses) to see which IP addresses you need to allow. Furthermore, you need to have a public DNS entry for the GitHub Enterprise Server so that Azure Pipelines can resolve the FQDN of your server to an IP address. With all of these changes, attempt to create and verify a GitHub Enterprise Server connection in Azure Pipelines.
 
-* Instead of a using a GitHub Enterprise Server connection, you can use a **[Other Git](../library/service-endpoints.md#sep-extgit)** connection. Make sure to uncheck the option to **Attempt accessing this Git server from Azure Pipelines**. With this connection type, you can only configure a classic build pipeline. CI and PR triggers will not work in this configuration. You can only start manual or scheduled pipeline runs.
+* Instead of a using a GitHub Enterprise Server connection, you can use a **[Other Git](../library/service-endpoints.md#external-git-service-connection)** connection. Make sure to uncheck the option to **Attempt accessing this Git server from Azure Pipelines**. With this connection type, you can only configure a classic build pipeline. CI and PR triggers will not work in this configuration. You can only start manual or scheduled pipeline runs.
 
 ## Reachable from Microsoft-hosted agents
 

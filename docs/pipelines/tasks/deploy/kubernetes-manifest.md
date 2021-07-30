@@ -67,7 +67,7 @@ The following list shows the key benefits of this task:
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
     <td>(Required unless the task is used in a <a href="../../process/environments-kubernetes.md" data-raw-source="[Kubernetes environment](../../process/environments-kubernetes.md)">Kubernetes environment</a>)<br/>
     <br/>
-    The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
+    The name of the <a href="../../library/service-endpoints.md#kubernetes-service-connection" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
     <td><b>namespace</b><br/>Namespace</td>
@@ -208,7 +208,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
     <td>(Required)<br/>
     <br/>
-    The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
+    The name of the <a href="../../library/service-endpoints.md#kubernetes-service-connection" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
     <td><b>namespace</b><br/>Namespace</td>
@@ -290,7 +290,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
     <td>(Required)<br/>
     <br/>
-    The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
+    The name of the <a href="../../library/service-endpoints.md#kubernetes-service-connection" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
     <td><b>namespace</b><br/>Namespace</td>
@@ -300,7 +300,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
   </tr>
 </table>
 
-The following YAML code shows a sample creation of Docker registry secrets by using [Docker Registry service connection](../../library/service-endpoints.md#sep-docreg): 
+The following YAML code shows a sample creation of Docker registry secrets by using [Docker Registry service connection](../../library/service-endpoints.md#docker-registry-service-connection): 
 
 ```YAML
 steps:
@@ -452,7 +452,7 @@ steps:
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
     <td>(Required)<br/>
     <br/>
-    The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
+    The name of the <a href="../../library/service-endpoints.md#kubernetes-service-connection" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
     <td><b>namespace</b><br/>Namespace</td>
@@ -545,7 +545,7 @@ steps:
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
     <td>(Required)<br/>
     <br/>
-    The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
+    The name of the <a href="../../library/service-endpoints.md#kubernetes-service-connection" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
     <td><b>namespace</b><br/>Namespace</td>
@@ -604,7 +604,7 @@ steps:
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
     <td>(Required)<br/>
     <br/>
-    The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
+    The name of the <a href="../../library/service-endpoints.md#kubernetes-service-connection" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
     <td><b>namespace</b><br/>Namespace</td>
