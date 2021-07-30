@@ -230,6 +230,11 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 </tbody>
 </table>
 
+
+
+> [!TIP] 
+> It's possible to contruct a query using WIQL syntax that uses an operator, such as **Was Ever**, for other data type fields than those listed. For example, you can use **Was Ever** within a clause using the **Iteration Path**. For an example, see [Query by date or current iteration, List work items moved out of a sprint](query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
+
 <a id="variables" /> 
 <a id="macros" /> 
 
@@ -290,7 +295,7 @@ You can use the macros described in the following table to filter your queries b
 ---
 :::row:::
    :::column span="1":::
-      @Me 
+      **@Me** 
    :::column-end:::
    :::column span="3":::
       Use in conjunction with an identity or user account field to automatically search for items associated with your user or account name. For example, you can find work items that you opened with the clause <code>Created By=@Me</code>. For additional examples, see [Query by assignment, workflow or Kanban board changes](query-by-workflow-changes.md).

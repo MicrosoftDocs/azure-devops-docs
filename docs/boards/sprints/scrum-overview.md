@@ -1,14 +1,14 @@
 ---
 title: Implement Scrum, track work in sprints
 titleSuffix: Azure Boards 
-description: Implement Scrum, track work, monitor progress and trends in Azure Boards, Azure DevOps, & Team Foundation Server  
+description: Implement Scrum, track work, monitor progress and trends in Azure Boards, Azure DevOps 
 ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 04/23/2020
 ---
 
@@ -201,40 +201,91 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 
 ##  Velocity and forecast 
 
-<p>While you use sprint planning and tracking tools for each sprint, you use the velocity and forecast tools to estimate work that can be completed in future sprints. </p>
-<p>Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. And, the forecast tool provides a means for determining how much work your team can complete within a sprint based on a specified team velocity. </p>
-<p>After your team has worked several sprints, they can use the <a href="../../report/dashboards/team-velocity.md" data-raw-source="[velocity chart](../../report/dashboards/team-velocity.md)">velocity chart</a> and <a href="forecast.md" data-raw-source="[forecast](forecast.md)">forecast</a> tool to estimate work that can be accomplished in future sprints.  </p>
+While you use sprint planning and tracking tools for each sprint, you use the velocity and forecast tools to estimate work that can be completed in future sprints.  
 
-<table valign="top" > 
-<tr valign="top" > 
-<td>
-<p>
-<b><strong>Velocity chart</strong></b>
-</p>
-<p>Each team is associated with one and only one velocity chart. The green bar within the chart indicates the total estimated effort (story points or size) of backlog items (user stories or requirements) completed within the sprint. (Blue corresponds to the estimated effort of items not yet completed.)  </p>
-<p>Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog. </p>
-<p>By minimizing the variability of backlog item size&mdash;effort or story points&mdash;you gain more reliable velocity metrics.</p>
-</td>
-<td width="500px">
-<img src="media/velocity-chart.png" alt="Velocity chart"/>
-</td>
-</tr>
-<tr valign="top" > 
-<td>
-<p>
-<strong>Forecast tool</strong>
-</p>
-<p>You can use the forecast tool to get an idea of how many and which items you can complete within a sprint. </p>
-<p>*By plugging in a velocity, you can see which items are within scope for the set of sprints the team has selected. As shown here, a velocity of 15 indicates that it will take three sprints to complete the work shown. *</p>
-</td>
-<td>
-<img src="media/forecast-tool.png" alt="Forecast tool"/>
-</td>
-</tr>
-</table>  
+Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. And, the forecast tool provides a means for determining how much work your team can complete within a sprint based on a specified team velocity.  
+
+After your team has worked several sprints, they can use the [Velocity chart](../../report/dashboards/team-velocity.md) and [Forecast tool](forecast.md) tool to estimate work that can be accomplished in future sprints.  
+ 
+
+---
+:::row:::
+   :::column span="1":::
+      **Velocity chart**  
+      Each team is associated with one and only one velocity chart. The green bar within the chart indicates the total estimated effort (story points or size) of backlog items (user stories or requirements) completed within the sprint. (Blue corresponds to the estimated effort of items not yet completed.)   
+      Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog.  
+      By minimizing the variability of backlog item size&mdash;effort or story points&mdash;you gain more reliable velocity metrics.
+   :::column-end::: 
+   :::column span="1":::
+      <img src="media/velocity-chart.png" alt="Velocity chart"/>
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **Forecast tool**  
+      You can use the forecast tool to get an idea of how many and which items you can complete within a sprint.  
+      By plugging in a velocity, you can see which items are within scope for the set of sprints the team has selected. As shown here, a velocity of 15 indicates that it will take three sprints to complete the work shown.*
+   :::column-end::: 
+   :::column span="1":::
+      <img src="media/forecast-tool.png" alt="Forecast tool"/>
+   :::column-end:::
+:::row-end:::
+---
+
+<a id="sprint-scope-change" />
+
+## Sprint scope change  
+
+There isn't a sprint scope change chart or widget. However, you can query for work items added to a sprint after the start of the sprint. 
+
+## List work items added after the start of the sprint
+
+1. [Open the velocity chart](../../report/dashboards/team-velocity.md) for the team and choose the **Planned** bar for the sprint of interest. You can use the Planned bar for a velocity chart widget or the team backlog velocity chart. 
+
+	:::image type="content" source="media/overview/velocity-chart.png" alt-text="Screenshot of Query Editor, Work Items moved out of a sprint.":::
+
+2. The Query Results page opens with a list of work items defined for the sprint at the start of the sprint, the first day of the sprint. This list is an itemized list of work item IDs. 
+
+3. Choose the Editor page to edit the query. 
+
+4. To list those items that were added to the sprint after the start of the sprint, change the query to add and change the following clauses:  
+
+	- Add a clause at the top to specify the Work Item Types of interest
+	- Change the Operator for the ID Field to Not In.
+	- Add the Iteration Path for the sprint of interest.
+	- Add the Area Path for the team. 
+
+	The updated query should look similar to the following image. 
+
+	:::image type="content" source="media/overview/query-for-added-work-items-to-sprint.png" alt-text="Screenshot of Query Editor, Work Items added to a sprint after the start of the sprint.":::
+
+5. Add **Created Date** as a column option, and sort by that field. You can then view the existing work items that were added to the sprint and what newly created work items were added. 
+
+For other options to determine changes to the sprint scope, see [Query by date or current iteration, List work items moved out of a sprint](query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
 
 
+## List work items moved out of the sprint  
 
+1. [Open the velocity chart](../../report/dashboards/team-velocity.md) for the team and choose the **Planned** bar for the sprint of interest. You can use the Planned bar for a velocity chart widget or the team backlog velocity chart. 
+
+	:::image type="content" source="media/overview/velocity-chart.png" alt-text="Screenshot of Query Editor, Work Items moved out of a sprint.":::
+
+2. The Query Results page opens with a list of work items defined for the sprint at the start of the sprint, the first day of the sprint. This list is an itemized list of work item IDs. 
+
+3. Choose the Editor page to edit the query. 
+
+4. To list those items that were moved out of the sprint after the start of the sprint, change the query to add and change the following clauses:  
+
+	- Add a clause at the top to specify the Work Item Types of interest 
+	- Add the Iteration Path for the sprint of interest, specify **Not Under** operator 
+	- Add the Area Path for the team. 
+
+	The updated query should look similar to the following image. 
+
+	:::image type="content" source="media/overview/query-for-work-items-moved-out-of-sprint.png" alt-text="Screenshot of Query Editor, Work Items added to a sprint after the start of the sprint.":::
+
+For other query options, see [Query by date or current iteration, List work items moved out of a sprint](../queries/query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
 
 ## Try this next
 
