@@ -86,7 +86,7 @@
         - name: Task types & usage
           href: process/tasks.md
           displayName: custom tasks, task versions, task control options, conditions, task tool installers, build tool installers
-        - name: Task groups
+        - name: Task groups (classic)
           href: library/task-groups.md
         - name: Template types & usage
           href: process/templates.md
