@@ -330,7 +330,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 
 ## List work items moved out of a sprint 
 
-You can list work items that were defined for a sprint but later moved out using a query with a clause that contains the **Was Ever** operator for the **Iteration Path**. You can only construct this query using the [WIQL syntax](wiql.md). You can edit the [WIQL syntax](wiql-syntax.md) in the Query Editor by installing the [Wiql Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). 
+You can list work items that were defined for a sprint but later moved out using a query with a clause that contains the **Was Ever** operator for the **Iteration Path**. You can only construct this query using the [WIQL syntax](wiql-syntax.md). You can edit the WIQL syntax in the Query Editor by installing the [Wiql Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). 
 
 For example, the following syntax queries for work items that meet the following criteria: 
 1. Defined in the current project 
