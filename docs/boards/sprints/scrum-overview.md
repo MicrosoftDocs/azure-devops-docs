@@ -237,13 +237,13 @@ After your team has worked several sprints, they can use the [Velocity chart](..
 
 ## Sprint scope change  
 
-There isn't a sprint scope change chart or widget. However, you can query for work items added to a sprint after the start of the sprint. 
+There isn't a sprint scope change chart or widget. However, you can query for work items added to a sprint  or moved out of a sprint after the start of the sprint. Use the steps provided next. 
 
 ## List work items added after the start of the sprint
 
 1. [Open the velocity chart](../../report/dashboards/team-velocity.md) for the team and choose the **Planned** bar for the sprint of interest. You can use the Planned bar for a velocity chart widget or the team backlog velocity chart. 
 
-	:::image type="content" source="media/overview/velocity-chart.png" alt-text="Screenshot of Query Editor, Work Items moved out of a sprint.":::
+	:::image type="content" source="media/overview/velocity-chart.png" alt-text="Screenshot of team velocity chart, choose a planned work bar.":::
 
 2. The Query Results page opens with a list of work items defined for the sprint at the start of the sprint, the first day of the sprint. This list is an itemized list of work item IDs. 
 
@@ -260,16 +260,14 @@ There isn't a sprint scope change chart or widget. However, you can query for wo
 
 	:::image type="content" source="media/overview/query-for-added-work-items-to-sprint.png" alt-text="Screenshot of Query Editor, Work Items added to a sprint after the start of the sprint.":::
 
-5. Add **Created Date** as a column option, and sort by that field. You can then view the existing work items that were added to the sprint and what newly created work items were added. 
-
-For other options to determine changes to the sprint scope, see [Query by date or current iteration, List work items moved out of a sprint](query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
+5. Add **Created Date** as a column option, and sort by that field. You can then view the existing work items that were added to the sprint and what newly created work items were added.
 
 
 ## List work items moved out of the sprint  
 
 1. [Open the velocity chart](../../report/dashboards/team-velocity.md) for the team and choose the **Planned** bar for the sprint of interest. You can use the Planned bar for a velocity chart widget or the team backlog velocity chart. 
 
-	:::image type="content" source="media/overview/velocity-chart.png" alt-text="Screenshot of Query Editor, Work Items moved out of a sprint.":::
+	:::image type="content" source="media/overview/velocity-chart.png" alt-text="Screenshot of team velocity chart, choose a planned work bar, second instance.":::
 
 2. The Query Results page opens with a list of work items defined for the sprint at the start of the sprint, the first day of the sprint. This list is an itemized list of work item IDs. 
 
@@ -283,9 +281,10 @@ For other options to determine changes to the sprint scope, see [Query by date o
 
 	The updated query should look similar to the following image. 
 
-	:::image type="content" source="media/overview/query-for-work-items-moved-out-of-sprint.png" alt-text="Screenshot of Query Editor, Work Items added to a sprint after the start of the sprint.":::
+	:::image type="content" source="media/overview/query-for-work-items-moved-out-of-sprint.png" alt-text="Screenshot of Query Editor, Work Items moved out of a sprint":::
 
-For other query options, see [Query by date or current iteration, List work items moved out of a sprint](../queries/query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
+
+For other options to determine changes to the sprint scope, see [Query by date or current iteration, List work items moved out of a sprint](../queries/query-by-date-or-current-iteration.md#list-work-items-moved-out-sprint).  
 
 ## Try this next
 

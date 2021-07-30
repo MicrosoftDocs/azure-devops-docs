@@ -391,7 +391,7 @@ You add widgets to a dashboard to display a chart, information, or set of links.
 
 ### Sprint scope change
 
-There is no chart or widget that tracks changes to sprint scope. However, you can determine work items added to a sprint or moved out of a sprint using the Query Editor. To learn how, see [About Sprints, Scrum and project management, Sprint scope change](../sprints/scrum-overview.md#sprint-scope-change). 
+There is no chart or widget that tracks changes to sprint scope. However, you can determine work items added to a sprint or moved out of a sprint using the Query Editor. To learn how, see [About Sprints, Scrum and project management, Sprint scope change](../../boards/sprints/scrum-overview.md#sprint-scope-change). 
 
 ### Sample Cumulative Flow Diagram widget 
 
