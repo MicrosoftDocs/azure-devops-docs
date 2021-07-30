@@ -336,7 +336,7 @@ For example, the following syntax queries for work items that meet the following
 1. Defined in the current project 
 2. Work item type equals User Story or Bug
 3. Work items are under the Fabrikam Fiber Web team Area Path 
-4. Work items are not in a Closed, Complted, Cut, or Resolved state
+4. Work items are not in a Closed, Completed, Cut, or Resolved state
 5. Not in the current iteration path for the Fabrikam Fiber Web team
 6. But were assigned to the  current iteration path for the Fabrikam Fiber Web team
 7. Are now assigned to the Current iteration +1 for the Fabrikam Fiber Web team
@@ -388,7 +388,7 @@ To list newly created work items added to a sprint after it's start date, you ca
 
 :::image type="content" source="media/example-work-item-queries/query-work-items-added-to-sprint.png" alt-text="Screenshot of Query Editor, Work Items newly created and added to a sprint after it's start date.":::
 
-For other options for quering changes to sprint scope, see [About Sprints, Scrum and project management, Sprint scope change](../sprints/scrum-overview.md#sprint-scope-change).
+For other options for querying changes to sprint scope, see [About Sprints, Scrum and project management, Sprint scope change](../sprints/scrum-overview.md#sprint-scope-change).
 
 <a id="date_fields">  </a>
 
