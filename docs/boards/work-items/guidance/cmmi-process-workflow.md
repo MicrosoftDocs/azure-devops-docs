@@ -40,7 +40,14 @@ Later, you can open each requirement to provide more details and estimate its si
 
 ![Requirement work item form](media/cmmi-requirement-form.png)  
 
-Alternatively, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md). 
+::: moniker range="> tfs-2018"
+Alternatively, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md). 
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+Alternatively, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project).
+::: moniker-end
+
 
 [!INCLUDE [temp](../../includes/deprecate-project.md)]
 

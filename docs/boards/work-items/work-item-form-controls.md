@@ -67,7 +67,7 @@ As the following image shows, each work item form comes with a number of control
 | ![Clone icon](../media/icons/clone-icon.png) | [Copy work item and optionally change work item type](../backlogs/copy-clone-work-items.md#copy-clone) (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
 | ![Email icon](../media/icons/email-icon.png) | [Email work item](email-work-items.md)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
 | ![Delete icon](../media/icons/delete_icon.png) | [Recycle work item](../backlogs/remove-delete-work-items.md)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
-| ![Storyboard icon](../media/icons/storyboard-icon.png) | [Storyboard with PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
+| ![Storyboard icon](../media/icons/storyboard-icon.png) | [Storyboard with PowerPoint](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
 
 <a id="update-work-status">  </a>
 
@@ -175,10 +175,12 @@ From the web portal, simply copy the URL from the web browser address or hover o
 
 ## Start storyboarding  
 
-> [!NOTE]    
-> The **Start storyboarding** menu option is only available from the new web form. However, from the old web form, you can choose the **Start Storyboarding** link from the **Storyboard** tab from a backlog item, or simply open PowerPoint. See [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) for requirements and usage.    
-You can storyboard your ideas using PowerPoint to bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides. From any work item, you can open PowerPoint by choosing the Start storyboarding menu option.    
+> [!IMPORTANT]  
+> Starting with Visual Studio 2019, the Azure DevOps Office Integratoin plug-in has deprecated support for Storyboarding with PowerPoint and Microsoft Project. Also, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.  
+ 
+The **Start storyboarding** menu option is only available from the new web form. However, from the old web form, you can choose the **Start Storyboarding** link from the **Storyboard** tab from a backlog item, or simply open PowerPoint. See [Storyboard your ideas using PowerPoint](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint) for requirements and usage.    
 
+You can storyboard your ideas using PowerPoint to bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides. From any work item, you can open PowerPoint by choosing the Start storyboarding menu option.    
 ![Work item form, Start storyboarding menu option](../backlogs/media/add-work-item-start-storyboarding.png)
 
 
