@@ -3,7 +3,7 @@ title: Pipeline resource protection
 description: Permissions and approvals on important resources.
 ms.assetid: 9e635504-f56a-4d59-8629-ced0cbb03c77
 ms.reviewer: vijayma
-ms.date: 05/18/2021
+ms.date: 07/30/2021
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -12,8 +12,7 @@ monikerRange: '> azure-devops-2019'
 Azure Pipelines offers security mechanisms beyond just protecting the YAML file and source code.
 When pipelines run, access to resources goes through a system called [checks](../process/approvals.md).
 Checks can suspend or even fail a pipeline run in order to keep resources safe.
-A pipeline can access two types of resources, protected and open.
-
+A pipeline can access two types of resources, protected and open. 
 ## Protected resources
 
 Your pipelines often have access to secrets.
@@ -30,7 +29,7 @@ In Azure Pipelines, all of the following are considered *protected* resources:
 "Protected" means:
 - They can be made accessible to specific users and specific pipelines within the project.
 They cannot be accessed by users and pipelines outside of a project.
-- You can run additional manual or automated checks every time a pipeline uses one of these resources.
+- You can run additional manual or automated checks every time a pipeline uses one of these resources. To learn more about protected resources, see [About pipeline resources](../process/about-resources.md). 
 
 ## Protecting repository resources
 Repositories can optionally be protected.
