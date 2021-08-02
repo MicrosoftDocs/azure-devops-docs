@@ -1,5 +1,5 @@
 ---
-title: witAdmin: Customize and manage objects for tracking work 
+title: witAdmin Customize and manage objects for tracking work 
 titleSuffix: Azure DevOps Server  
 description: Tracks your team's progress by creating and customizing objects that track work items.
 ms.technology: devops-agile
