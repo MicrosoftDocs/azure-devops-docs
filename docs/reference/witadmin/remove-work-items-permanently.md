@@ -1,6 +1,6 @@
 ---
 title: Remove work items permanently
-titleSuffix: TFS  
+titleSuffix: Azure DevOps Server 
 description: Permanently delete work items added to Team Foundation Server
 ms.technology: devops-agile
 ms.custom: witadmin
