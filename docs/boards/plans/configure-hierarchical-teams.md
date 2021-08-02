@@ -175,7 +175,7 @@ You do this by opening each area path associated with a feature team and changin
 
     For example, here we move the Customer Profile to under Account Management.
 
-    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams." style="border: 1px solid #C3C3C3;" />  
+    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams." />  
 
     Repeat this step for all feature team area paths. 
 
@@ -249,7 +249,7 @@ From **Areas**, open the :::image type="icon" source="../media/icons/context_men
 
 Here we choose to include sub-area paths for the Account Management area.  
 
-<img src="media/pm-include-sub-area-paths.png" alt="Include sub-area paths." style="border: 1px solid #C3C3C3;" /> 
+<img src="media/pm-include-sub-area-paths.png" alt="Include sub-area paths." /> 
 
 Repeat this step for all your management areas. Also, if you want to enable rollup across all feature teams and management areas to the top level area, repeat this step for the default team. In our example, that corresponds to Fabrikam.   
 

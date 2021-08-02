@@ -66,7 +66,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 
 Enter **?** to open the Kanban board keyboard shortcuts.  
 
-<img src="../media/kanban-board-keyboard-shortcuts-ts-jul.png" alt="Kanban keyboard shortcuts" style="border: 1px solid #C3C3C3;" />  
+<img src="../media/kanban-board-keyboard-shortcuts-ts-jul.png" alt="Kanban keyboard shortcuts" />  
   
 ::: moniker-end
 

@@ -34,7 +34,7 @@ You enable the new form from the project collection admin page.
 
 1. To start, choose the :::image type="icon" source="../media/icons/gear_icon.png" border="false"::: gear Settings icon to open the admin context for the project collection.  
 
-	<img src="media/manage-new-form-open-tcp-admin-context.png" alt="TFS 2017, Web portal, Open project collection admin context" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/manage-new-form-open-tcp-admin-context.png" alt="TFS 2017, Web portal, Open project collection admin context" /> 
 
 2. From the collection admin page, click **Enable the new work item form**. 
 

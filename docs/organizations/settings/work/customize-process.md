@@ -116,7 +116,7 @@ You use different WITs to plan and track different types of work. The main reaso
 
 2. Name the WIT and optionally specify a description, icon and color. The icon and color you specify appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
 
-	<img src="media/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" /> 
 
 	Click **Create** to save. 
 
@@ -284,5 +284,5 @@ See also:
 <!---
 For example, the following image shows the work item form layout for the Bug WIT. From this page, you can add fields, groups, pages, and custom controls. To modify the workflow, you click **States**.
 
-<img src="media/process/cprocess-intro.png" alt="Admin context, Process, Work item types, bug type, layout tab" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/process/cprocess-intro.png" alt="Admin context, Process, Work item types, bug type, layout tab" /> 
 -->

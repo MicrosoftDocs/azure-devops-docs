@@ -56,7 +56,7 @@ Your data has more structure and organization. Plus, you can focus more easily o
  
 All the core tabs&mdash;Details, History, Links, and Attachments&mdash;now have more screen space. See [History and auditing](../../boards/queries/history-and-auditing.md) for details on the new History tab.
 
-<img src="../../boards/backlogs/media/add-work-item-history.png" alt="New form, history tab" style="border: 1px solid #C3C3C3;" />   
+<img src="../../boards/backlogs/media/add-work-item-history.png" alt="New form, history tab" />   
 
 <a id="discussion">  </a>
 ### Discussion  
@@ -67,7 +67,7 @@ Click the ![Discussions icon](../../boards/media/icons/icon-discussions-wi.png) 
 
 Within the discussion section, you can use the [<strong>@mention</strong> control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
-<img src="../../boards/backlogs/media/add-work-items-discussion.png" alt="Discussion section" style="border: 1px solid #C3C3C3;" />  
+<img src="../../boards/backlogs/media/add-work-items-discussion.png" alt="Discussion section" />  
 
 > [!IMPORTANT]
 > For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.     
@@ -76,7 +76,7 @@ Within the discussion section, you can use the [<strong>@mention</strong> contro
 
 Looking for the toolbar task options? You access them now through the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon.  
 
-<img src="../../boards/backlogs/media/new-form-action-menu.png" alt="New form, User story, Actions menu" style="border: 1px solid #C3C3C3;" />  
+<img src="../../boards/backlogs/media/new-form-action-menu.png" alt="New form, User story, Actions menu" />  
 
 <a id="switch-new">  </a> 
 ## Switch to the new experience  

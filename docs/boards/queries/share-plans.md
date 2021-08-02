@@ -242,7 +242,7 @@ You can edit, open, save, or delete an attachment by choosing an attachment and 
 
 Choose the **Attachments** tab icon to attach a file to the work item. 
 
-<img src="media/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises Azure DevOps), and Eclipse" style="border: 1px solid #C3C3C3;" />  
+<img src="media/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises Azure DevOps), and Eclipse" />  
 
 Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Choose an item and then choose :::image type="icon" source="../media/icons/open-icon.png" border="false"::: the open icon to open the attachment or :::image type="icon" source="../media/icons/download-icon.png" border="false"::: download icon to save a copy.  
 
@@ -290,7 +290,7 @@ To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoi
 ::: moniker range=">= tfs-2017"
 You can open Storyboarding with PowerPoint from the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions menu within a work item form. 
 
-<img src="media/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal" style="border: 1px solid #C3C3C3;" />  
+<img src="media/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal" />  
 
 To link to an existing storyboard, click the ![Links page icon](../media/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.  
 ::: moniker-end 

@@ -136,7 +136,7 @@ If you're not a member of the project administrators group, [get added](../../or
 
    Here we add the Web team and grant them permissions to create and manage permissions to all queries and folders under the Triage folder.  
 
-   <img src="media/set-permissions-triage-folder-dialog.png" alt="Permissions dialog for a query folder, TFS 2018 and earlier versions." style="border: 1px solid #C3C3C3;" />    
+   <img src="media/set-permissions-triage-folder-dialog.png" alt="Permissions dialog for a query folder, TFS 2018 and earlier versions." />    
 
    Choose the **Add...** menu to add a user identity or group.
 

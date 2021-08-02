@@ -296,7 +296,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 As work progresses, you change the State field to update the status. Optionally, you can specify a reason. The state and reason fields appear on the work item form in the header area. 
 
-<img src="media/agile-bug-form-state-reason.png" alt="Bug work item form, header area" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/agile-bug-form-state-reason.png" alt="Bug work item form, header area" /> 
 
 ### CMMI workflow states 
 

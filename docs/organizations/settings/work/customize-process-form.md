@@ -24,7 +24,7 @@ To support your work tracking requirements, you can customize each WIT to add cu
 
 For example, the following form shows that two custom pages have been added, **Impact** and **Mitigation**. In addition, several new groups and fields have been added to the Details page.  
 
-<img src="media/process/cpform-customized-form-intro.png" alt="Customized user story form" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/process/cpform-customized-form-intro.png" alt="Customized user story form" /> 
 
 Once you've added a custom page or group, you can add [custom fields to those pages or groups](customize-process-field.md). To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
@@ -43,7 +43,7 @@ You can add your own custom groups to both inherited pages and custom pages.
 
 1. From the Layout page, choose **New group**.    
 
-	<img src="media/process/cpform-new-group.png" alt="Process>Work Item Types>Bug>Layout>Add new group" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/process/cpform-new-group.png" alt="Process>Work Item Types>Bug>Layout>Add new group" /> 
 
 	If the <strong>New field</strong> and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 

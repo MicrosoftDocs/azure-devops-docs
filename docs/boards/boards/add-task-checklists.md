@@ -25,7 +25,7 @@ With checklists or to do lists, you continue to enjoy lightweight tracking. You 
 :::image type="content" source="media/checklists/board-checklists.png" alt-text="Screenshot of product-level Kanban board with three work items showing child lists":::
 ::: moniker-end
 ::: moniker range="<= tfs-2018"
-<img src="media/kanban-task-checklists.png" alt="Kanban board with several task checklists defined" style="border: 1px solid #C3C3C3;" />  
+<img src="media/kanban-task-checklists.png" alt="Kanban board with several task checklists defined" />  
 ::: moniker-end
 
 In this article, you'll learn: 
@@ -75,10 +75,10 @@ In this example, tasks are added to the product Kanban board using the checklist
     :::image type="content" source="media/checklists/add-task-menu.png" alt-text="Screenshot of open the context menu of work item to add a task.":::
     ::: moniker-end
     ::: moniker range=">= tfs-2017 <= tfs-2018"  
-    <img src="media/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" />  
     ::: moniker-end
     ::: moniker range="tfs-2015"
-    <img src="media/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" />  
     ::: moniker-end
 
 2. If you have many tasks to add, keep typing their titles and choose Enter after each title.  
@@ -86,7 +86,7 @@ In this example, tasks are added to the product Kanban board using the checklist
     :::image type="content" source="media/checklists/four-tasks-added.png" alt-text="Screenshot of added tasks.":::
     ::: moniker-end
     ::: moniker range="<= tfs-2018"
-    <img src="media/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" />  
     ::: moniker-end
 ::: moniker range=">= tfs-2017"
 3. If you have details you want to add about a task, open the item by choosing the title. 
@@ -95,11 +95,11 @@ In this example, tasks are added to the product Kanban board using the checklist
 ::: moniker range="tfs-2015"
 4. If you have details you want to add about a task, open the parent work item and then choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: links icon/tab. 
 
-	<img src="media/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" />  
 
 	Double-click the task, or select and press the Enter key, to open it.   
 
-	<img src="media/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" />  
 ::: moniker-end
 
 > [!NOTE]  
@@ -114,7 +114,7 @@ When you complete a task or other checklist item, simply choose the checkbox to 
 :::image type="content" source="media/checklists/board-checklists.png" alt-text="Screenshot of product-level Kanban board showing several done child items":::
 ::: moniker-end
 ::: moniker range="<= tfs-2018"
-<img src="media/kanban-check-done-tasks.png" alt="Check tasks that are complete" style="border: 1px solid #C3C3C3;" />
+<img src="media/kanban-check-done-tasks.png" alt="Check tasks that are complete" />
 ::: moniker-end
 
 The State of the work item is updated from **Active** to **Closed** for Agile and CMMI projects and from **To Do** to **Done** for Scrum projects, and 
@@ -130,7 +130,7 @@ Upon first opening the Kanban board, you'll see an unexpanded view of checklists
 :::image type="content" source="media/checklists/unexpanded-checklists.png" alt-text="Screenshot of unexpanded checklist":::
 ::: moniker-end
 ::: moniker range="<= tfs-2018"
-<img src="media/kanban-board-first-open-collapsed-checklists.png" alt="Expand task checklist for a work item" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/kanban-board-first-open-collapsed-checklists.png" alt="Expand task checklist for a work item" /> 
 ::: moniker-end
 
 

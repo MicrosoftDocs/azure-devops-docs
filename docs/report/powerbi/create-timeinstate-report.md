@@ -246,7 +246,7 @@ When evaluating time-in-state for each work item in a table or when filtered by 
 
 To resolve this issue, use *State Time in Days* and apply the filter *Is Last Day In State* equals 'True'. This eliminates all the historical data necessary for a trend and focuses instead on just the latest value for each state.
 
-<img src="media/StateTimeInDaysTableIsLast.png" alt="Use State Time in Days and apply the filter Is Last Day In State equals 'True'." style="border: 1px solid #C3C3C3;" /> 
+<img src="media/StateTimeInDaysTableIsLast.png" alt="Use State Time in Days and apply the filter Is Last Day In State equals 'True'." /> 
 
 ### Add *State Time in Days - In Progress*
 
@@ -270,7 +270,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 
 The following image shows the impact of considering all time-in-state for every existing work item (shown left) versus only those work items in a specific state on a given day (shown right).
 
-<img src="media/TimeInStateActive.png" alt="Trend Comparison of the Average Time in State" style="border: 1px solid #C3C3C3;" />
+<img src="media/TimeInStateActive.png" alt="Trend Comparison of the Average Time in State" />
 
 
 ### *State Time in Days* trend of multiple states

@@ -75,7 +75,7 @@ For each transition, you specify a set of reasons for changing the state of the 
   
 
 <table>
-<tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description and syntax</p></th><th scope="col"><p>Required?</p></th></tr><tr><td data-th="Element"><p><strong>ACTION</strong></p></td><td data-th="Description and syntax"><p>Defines a text string that corresponds to an action to be performed when the system for tracking work items calls the <strong>WorkItem.GetNextState</strong> method to get the post-action state of the work item.</p>
+<tr><th scope="col"><p>Element</p></th><th scope="col"><p>Description and syntax</p></th><th scope="col"><p>Required?</p></th></tr><tr><td data-th="Element"><p><strong>ACTION</strong></p></td><td data-th="Description and syntax"><p>Defines a text string that corresponds to an action to be performed when the system for tracking work items calls the <strong>WorkItem.GetNextState</strong> method to get the post-action state of the work item.</p>
 
 <pre>
 &lt;ACTION value="NameOfAction" /&gt;

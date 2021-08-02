@@ -274,7 +274,7 @@ You can change the repository used to support your project vision, including poi
 
 2. From the select file dialog, choose an existing repo from the drop-down menu, or choose the Wiki option, shown as follows.
 
-   <img src="media/share-project/select-file-to-display-dialog.png" alt="Web portal, Project page, Select file to display dialog" style="border: 1px solid #C3C3C3;" />
+   <img src="media/share-project/select-file-to-display-dialog.png" alt="Web portal, Project page, Select file to display dialog" />
 
    > [!TIP]  
    > Only the Wiki home page displays. To access additional Wiki pages, go to the Wiki.
@@ -290,7 +290,7 @@ You can change the repository used to support your project vision, including poi
 <!---
 ### Git repository
 
-<img src="media/project-home-page-get-started-info.png" alt="Git new project" style="border: 1px solid #C3C3C3;" />
+<img src="media/project-home-page-get-started-info.png" alt="Git new project" />
 > [!div class="mx-imgBorder"]  
 > ![Git new project summary page](media/share-project/git-start-page-readme.png)
 

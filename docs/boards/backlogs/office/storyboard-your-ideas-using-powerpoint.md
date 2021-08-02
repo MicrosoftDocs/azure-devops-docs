@@ -30,22 +30,22 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 
 3.  Open PowerPoint Storyboarding and start with a blank slide. You should see the **Storyboarding** ribbon and **Storyboard Shapes** library. If you don't see the Storyboarding ribbon, see step 2.
 
-    <img src="media/IC652597.png" alt="Open PowerPoint Storyboarding" style="border: 1px solid #C3C3C3;" /> 
+    <img src="media/IC652597.png" alt="Open PowerPoint Storyboarding" /> 
 
     Or, you can open PowerPoint Storyboarding from the work item **Storyboarding** tab. 
 
-    <img src="media/IC652012.png" alt="Start PowerPoint Storyboarding from work item" style="border: 1px solid #C3C3C3;" /> 
+    <img src="media/IC652012.png" alt="Start PowerPoint Storyboarding from work item" /> 
 
     Or, from the web portal and the new work item form, choose the **Start storyboarding** menu option from any valid work item.     
 
-	<img src="../media/add-work-item-start-storyboarding.png" alt="Work item form, Start storyboarding menu option" style="border: 1px solid #C3C3C3;" /> 
+	<img src="../media/add-work-item-start-storyboarding.png" alt="Work item form, Start storyboarding menu option" /> 
 
 	> [!NOTE]  
 	> Becuase this feature has been deprecated, the **Start storyboarding** menu option is no longer available from the web form for Azure DevOps Services or Azure DevOps Server 2019 and later versions.    
 
 4.  Add a background shape that's appropriate for your app. To add a shape, just drag it onto the slide.
 
-    <img src="media/IC652013.png" alt="Drag a shape onto the slide" style="border: 1px solid #C3C3C3;" /> 
+    <img src="media/IC652013.png" alt="Drag a shape onto the slide" /> 
 
 5.  Search for more shapes to complete your design.
 
@@ -98,7 +98,7 @@ When you share your storyboards to a shared network location, you can link the s
 
 7.  And, whoever views the work item can also access the storyboard.
 
-	<img src="media/IC652022.png" alt="Storyboard tab with linked storyboard" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/IC652022.png" alt="Storyboard tab with linked storyboard" /> 
 
 With PowerPoint Storyboarding, you can illustrate a new or a modified interface. You can capture existing user interfaces and build a storyboard from a collection of predefined storyboard shapes. Also, you can customize the slide layouts for your web, client, or phone applications. And, by linking the storyboard to the product backlog item or user story, you automatically share it with your team.
 
