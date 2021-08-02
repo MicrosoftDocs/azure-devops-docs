@@ -33,7 +33,7 @@ Work items have received a facelift. To provide a fresher, more modern experienc
 
 Here's what you'll see when you preview the new form.  
 
-<img src="../../boards/media/new-form-user-story-3-col.png" alt="New form for user story" style="border: 2px solid #C3C3C3;" />
+<img src="../../boards/media/new-form-user-story-3-col.png" alt="New form for user story" />
 
 For guidance in using the new form features, see [Add work items to plan and track your project](../../boards/backlogs/add-work-items.md).   
 
@@ -43,13 +43,13 @@ For guidance in using the new form features, see [Add work items to plan and tra
 
 First off, you'll notice that the form reflects the color of your work item type&mdash;bug, user story, or task. And, we've done away with duplicate titles to cut down on clutter. Whether you're working from a backlog, board, or query&mdash;your experience remains the same.  
 
-<img src="../../boards/media/new-form-bug-header.png" alt="New form, bug, header" style="border: 2px solid #C3C3C3;" />
+<img src="../../boards/media/new-form-bug-header.png" alt="New form, bug, header" />
 
 ### Great consumption experience  
  
 Your data has more structure and organization. Plus, you can focus more easily on areas of interest by collapsing groups to hide details you don't care about. And as you resize the form, it quickly responds to provide you with a great viewing experience even within a limited screen width.  
  
-<img src="../../boards/media/new-form-exp-resized-user-story-form.png" alt="New form, collapsible groups, responsive form" style="border: 2px solid #C3C3C3;" />
+<img src="../../boards/media/new-form-exp-resized-user-story-form.png" alt="New form, collapsible groups, responsive form" />
 
 
 ### More viewing area to support core experiences  

@@ -63,7 +63,7 @@ In the new web form layout, the system manages several header elements within th
 - **Fields**: Work item ID, Title, Assigned To, State, Reason, Area Path, Iteration Path, and tags
 - **Pages**: ![History page icon](../../boards/media/icons/icon-history-tab-wi.png) History, ![Links page icon](../../boards/media/icons/icon-links-tab-wi.png) Links, and ![Attachments page icon](../../boards/media/icons/icon-attachments-tab-wi.png) Attachments.  
 
-<img src="media/weblayout-system-controls-details-page.png" alt="Header element within web form" style="border: 2px solid #C3C3C3;" />
+<img src="media/weblayout-system-controls-details-page.png" alt="Header element within web form" />
 
 When you export a WIT definition, you'll see a **SystemControls** section at the beginning of the **WebLayout** section, similar to the following:
 

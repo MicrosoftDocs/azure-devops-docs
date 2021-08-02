@@ -24,7 +24,7 @@ Use the Markdown widget to support your team and stakeholders by adding informat
 - Important dates or target deadlines  
 
 Here's an example:  
-<img src="../../project/wiki/media/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+<img src="../../project/wiki/media/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" /> 
 
 [!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
 
@@ -91,7 +91,7 @@ To add the markdown widget to the dashboard, choose :::image type="icon" source=
 
 1. Add or drag the Markdown widget onto the dashboard where you want it located.  
 
-	<img src="media/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />  
+	<img src="media/widget-markdown-tile.png" alt="Markdown widget" />  
 
 1. Choose **Done Editing** to exit dashboard editing. This will dismiss the widget catalog. You can then configure the markdown widget as needed.
 
@@ -117,14 +117,14 @@ To add the markdown widget to the dashboard, choose :::image type="icon" source=
 
 	This renders the following widget: 
 
-	<img src="../../project/wiki/media/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../../project/wiki/media/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" /> 
 
 	> [!NOTE]  
 	> Links to documents on file shares using `file://` are not supported. This restriction has been implemented for security purposes.
 	
 5. Optionally, you can choose to point to a file in your repository.  
 
-	<img src="media/add-markdown-configure-repo-file.png" alt="Configure Markdown widget with a repo file" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/add-markdown-configure-repo-file.png" alt="Configure Markdown widget with a repo file" /> 
 
 ::: moniker-end
 
@@ -136,7 +136,7 @@ To add the markdown widget to the dashboard, choose :::image type="icon" source=
 
 2. Drag the Markdown widget onto the dashboard where you want it located.  
 
-	<img src="media/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />  
+	<img src="media/widget-markdown-tile.png" alt="Markdown widget" />  
 
 3. Choose the ![gear icon](../../media/icons/gear-icon.png) gear icon to open the configuration dialog for the widget. 
 
@@ -160,14 +160,14 @@ To add the markdown widget to the dashboard, choose :::image type="icon" source=
 
 	This renders the following widget: 
 
-	<img src="../../project/wiki/media/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../../project/wiki/media/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" /> 
 
 	> [!NOTE]  
 	> Links to documents on file shares using `file://` are not supported on TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
 	
 6. Optionally, you can choose to point to a file in your repository.
 
-	<img src="media/add-markdown-configure-repo-file.png" alt="Configure Markdown widget with a repo file" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/add-markdown-configure-repo-file.png" alt="Configure Markdown widget with a repo file" /> 
 
 7. If you haven't closed the widget catalog yet, do that now.
 

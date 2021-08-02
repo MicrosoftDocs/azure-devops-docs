@@ -153,7 +153,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 1. From the web portal, choose Project Settings:::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open **Project Settings.**  
 
-	 <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Screenshot of Open project admin page" style="border: 2px solid #C3C3C3;" />
+	 <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Screenshot of Open project admin page" />
 
 2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**. 
 

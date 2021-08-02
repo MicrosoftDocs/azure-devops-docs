@@ -275,11 +275,11 @@ If you primarily work in Visual Studio or Team Explorer, and want to create work
 
 2. Right-click the work item of the type and whose fields you want to capture, and select Capture Template from the context menu.
 
-    <img src="media/wi-templates-te-capture-wi-as-template.png" alt="Capture work item field definitions as a template from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
+    <img src="media/wi-templates-te-capture-wi-as-template.png" alt="Capture work item field definitions as a template from Visual Studio with Power Tools installed" />
 
 3. In the dialog, use the checkboxes to select all the fields you want to save in the template, and add a name and (optionally) description to the template. 
 
-    <img src="media/wi-templates-capture-template-dialog-te.png" alt="Capture template dialog from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
+    <img src="media/wi-templates-capture-template-dialog-te.png" alt="Capture template dialog from Visual Studio with Power Tools installed" />
 
 4. Save the template and it will appear in the root of the Team Explorer pane under the Templates section.  
 
@@ -329,11 +329,11 @@ You manage templates from  team settings. All templates are defined for a team. 
 
     Here we open the admin page for the Web team. 
 
-    <img src="media/wit-templates-open-team-admin-context.png" alt="Open the admin page for the Web team." style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wit-templates-open-team-admin-context.png" alt="Open the admin page for the Web team." />  
 
 1. Choose **Work>Templates**.  
 
-    <img src="media/wit-templates-work-templates-page.png" alt="Open Work - Templates page for team" style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wit-templates-work-templates-page.png" alt="Open Work - Templates page for team" />  
 
     From here, you can click any work item type to view or add templates for that type.  
 
@@ -372,7 +372,7 @@ You manage templates from  team settings. All templates are defined for a team. 
 
 1. From the work item type page, choose the ![green plus icon](../media/icons/green_plus_icon.png) **New template** to create a template from scratch.  
     
-    <img src="media/wi-templates-new-template.png" alt="Add a user story template" style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wi-templates-new-template.png" alt="Add a user story template" />  
 
 2. Name the template and optionally add and remove fields. Save the template when finished. 
 
@@ -382,7 +382,7 @@ You manage templates from  team settings. All templates are defined for a team. 
 
 1. From the work item type page, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template to access the menu options to **Edit**, **Delete**, or **Copy link**.  
 
-	<img src="media/wi-templates-template-action-menu.png" alt="Open template action menu" style="border: 1px solid #CCCCCC;" />  
+	<img src="media/wi-templates-template-action-menu.png" alt="Open template action menu" />  
 
 1. To rename a template, choose to edit the template, change the name, and then save your changes.  
 
@@ -390,7 +390,7 @@ You manage templates from  team settings. All templates are defined for a team. 
 
 1. To duplicate an existing template, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template and select the **Create copy** option. 
 
-    <img src="media/wi-templates-copy-template.png" alt="Copy an existing template" style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wi-templates-copy-template.png" alt="Copy an existing template" />  
 
 2. Name the template and optionally add and remove fields. Save the template when finished. 
 
@@ -439,11 +439,11 @@ With Visual Studio with power tools installed, you can view the list of template
 
 1. From the **Templates** section, right-click **Templates** and choose to create a template from scratch.
 
-    <img src="media/wi-templates-new-template-te.png" alt="Add a new template, Visual Studio " style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wi-templates-new-template-te.png" alt="Add a new template, Visual Studio " />  
 
 2. Save the template, provide a Name in the dialog provided.  
 
-    <img src="media/wi-templates-new-template-save-as-te.png" alt="Provide a Name in the dialog provided." style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wi-templates-new-template-save-as-te.png" alt="Provide a Name in the dialog provided." />  
 
     Once you've saved the template, click Copy link to capture the URL for the template that you can use to add work items using the template.  
 
@@ -451,7 +451,7 @@ With Visual Studio with power tools installed, you can view the list of template
 
 - To edit, delete, or perform another action on a template, open its context menu (right-click) and choose the option you want.  
 
-	<img src="media/wi-templates-context-menu-te.png" alt="Open context menu and choose the option you want." style="border: 1px solid #CCCCCC;" />  
+	<img src="media/wi-templates-context-menu-te.png" alt="Open context menu and choose the option you want." />  
 
 - To make frequently-used templates more accessible, you can set a default template for each work item type. To do so, right-click on a template in Team Explorer and click **Set As Default**. A checkmark will appear on the icon to indicate that it is now the default. 
 
@@ -508,7 +508,7 @@ Use the URL whenever you want to add a work item of the type you've defined with
 
 1. Choose the **Work>Templates** tab. Then, choose the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions icon for the template you want to copy and select **Copy link**.  
 
-    <img src="media/wi-templates-copy-url-vsts.png" alt="Copy link of a template" style="border: 1px solid #CCCCCC;" />
+    <img src="media/wi-templates-copy-url-vsts.png" alt="Copy link of a template" />
 
     You can save the URL as a text file or add the URL to a web page as a hyperlink. 
 
@@ -526,7 +526,7 @@ Managing work item templates from the web portal is only supported from TFS 2017
 
 1. You can copy the link to a template which will open in the web portal, by opening the context menu for the template.  
 
-    <img src="media/wi-templates-copy-URL-te.png" alt="Copy link to template from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
+    <img src="media/wi-templates-copy-URL-te.png" alt="Copy link to template from Visual Studio with Power Tools installed" />
 
 2. Paste the copied link into a web browser to check that it works as expected.    
 
@@ -568,7 +568,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 1. Open the work item that you want to update using the fields defined within a template, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
 
-    <img src="media/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" style="border: 1px solid #CCCCCC;" /> 
+    <img src="media/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" /> 
 
     > [!TIP]  
     > Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type. 
@@ -623,15 +623,15 @@ The feature to apply a template to existing work items from the web portal isn't
 
 2. Right-click the work items&mdash;which must be of the same type&mdash; and choose **Apply Template** from the context menu.  
 
-    <img src="media/wi-templates-apply-template-options-te.png" alt="Apply template to selected work item from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
+    <img src="media/wi-templates-apply-template-options-te.png" alt="Apply template to selected work item from Visual Studio with Power Tools installed" />
 
 3. Select the template to use and click OK. 
 
-    <img src="media/wi-templates-apply-template-dialog-te.png" alt="Apply template dialog from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
+    <img src="media/wi-templates-apply-template-dialog-te.png" alt="Apply template dialog from Visual Studio with Power Tools installed" />
 
 4.  Save the work item.  
 
-    <img src="media/wi-templates-apply-save-work-items-te.png" alt="Save changes from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
+    <img src="media/wi-templates-apply-save-work-items-te.png" alt="Save changes from Visual Studio with Power Tools installed" />
 
 * * *
 

@@ -97,7 +97,7 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 **Result:**
 
-<img src="media/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />        
+<img src="media/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" />        
 
 ## Paragraphs and line breaks
 
@@ -638,7 +638,7 @@ After you've added a task list, you can check the boxes to mark items as complet
 
 **Result:**  
 
-<img src="media/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/markdown-guidance/markdown-checklists.png" alt="Checklists" /> 
 
 > [!NOTE]
 > A checklist within a table cell isn't supported.
@@ -778,7 +778,7 @@ In pull request comments, you can attach files to illustrate your point or to gi
 
 ::: moniker range=">= tfs-2017"
 
-<img src="media/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />        
+<img src="media/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" />        
 
 If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page and it renders directly into your comment or wiki page.
 

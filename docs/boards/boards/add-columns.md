@@ -208,7 +208,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	You can rename a column directly from the Kanban board. 
 
-	<img src="media/rename-kanban-columns-direct-ts.png" alt="Kanban board, rename a column directly" style="border: 2px solid #C3C3C3;" />
+	<img src="media/rename-kanban-columns-direct-ts.png" alt="Kanban board, rename a column directly" />
 
 	Or, you can open the dialog and change one or more settings for a Kanban column. 
 
@@ -249,7 +249,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	You can rename a column directly from the Kanban board. 
 
-	<img src="media/rename-kanban-columns-direct-ts.png" alt="Kanban board, rename a column directly" style="border: 2px solid #C3C3C3;" />
+	<img src="media/rename-kanban-columns-direct-ts.png" alt="Kanban board, rename a column directly" />
 
 	Or, you can open the dialog and change one or more settings for a Kanban column. 
 
@@ -288,7 +288,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	You can rename a column directly from the Kanban board. 
 
-	<img src="media/rename-kanban-columns-direct-ts.png" alt="Kanban board, rename a column directly" style="border: 2px solid #C3C3C3;" />
+	<img src="media/rename-kanban-columns-direct-ts.png" alt="Kanban board, rename a column directly" />
 
 	Or, you can open the dialog and change one or more settings for a Kanban column. 
 

@@ -49,7 +49,7 @@ You can add your own custom groups to both inherited pages and custom pages.
 
 2. Name the group and choose the column it should appear in. For information about columns, see [About process customization and inherited processes, Layout and resizing](inheritance-process-model.md#resizing).   
 
-	<img src="media/process/cpform-add-group-dialog.png" alt="Add custom group dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/process/cpform-add-group-dialog.png" alt="Add custom group dialog" />
 
 	<a id="edit-group"></a>
 3. (Optional) Once you've added the group, you can drag and drop the group into any column or within the column, or select the Move Up or Move Down options from the group's &hellip; context menu.  
@@ -77,7 +77,7 @@ To move a field to another page, choose Edit from the field's &hellip; context m
 
 Here we move the Customer ticket field to the Details page and the Customer focus group.   
 
-<img src="media/process/cpform-move-field-to-custom-group.png" alt="Edit field dialog, Move field to custom group" style="border: 2px solid #C3C3C3;" />
+<img src="media/process/cpform-move-field-to-custom-group.png" alt="Edit field dialog, Move field to custom group" />
  
 
 <a id="show-hide-remove-field"></a>
@@ -92,7 +92,7 @@ For an inherited field, open the field's &hellip; context menu, and then choose 
 
 Here we remove the Severity inherited field from appearing on the Bug form.   
 
-<img src="media/process/cpform-hide-layout.png" alt="Layout, Inherited Field, Context Menu, Hide from layout" style="border: 2px solid #C3C3C3;" />
+<img src="media/process/cpform-hide-layout.png" alt="Layout, Inherited Field, Context Menu, Hide from layout" />
 
 Removing a custom field from a form removes tracking data for the WIT. You can re-add a custom field to a WIT by adding it to a form as an existing field. 
 
@@ -112,7 +112,7 @@ Add a custom page when you have several custom fields that you want to group wit
 
 1. Label the page.
 
-	<img src="media/process/cpform-add-page-dialog.png" alt="Process, Work Item Types, Bug: Layout, Add a page to bug dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/process/cpform-add-page-dialog.png" alt="Process, Work Item Types, Bug: Layout, Add a page to bug dialog" />
 
 	<a id="edit-page"></a>
 2. Edit the page to add [fields](customize-process-field.md) or [groups](#groups).  

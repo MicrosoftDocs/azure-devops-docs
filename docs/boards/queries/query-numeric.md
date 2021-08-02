@@ -141,7 +141,7 @@ You can assign Story Points to user stories or bugs when you work in an Agile pr
 
 Create a query that filters for User Story as the work item type and modify the column options to show Story Points and State. 
 
-<img src="media/query-effort-sum-story-points-iteration.png" alt="Query editor, flat list, open stories" style="border: 2px solid #C3C3C3;" />
+<img src="media/query-effort-sum-story-points-iteration.png" alt="Query editor, flat list, open stories" />
 
 Then, add a stacked bar chart that sums the Story Points. 
 
@@ -151,7 +151,7 @@ Then, add a stacked bar chart that sums the Story Points.
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-<img src="media/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart." style="border: 2px solid #C3C3C3;" />
+<img src="media/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart." />
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
@@ -165,7 +165,7 @@ For information on system-defined cumulative flow diagrams, see [Cumulative flow
 
 Create a query that filters for User Story as the work item type and in the Active or Closed state. Modify the column options to show Story Points. 
 
-<img src="media/query-effort-sum-story-points-active-closed.png" alt="Query editor, flat list, user stories - active or closed" style="border: 2px solid #C3C3C3;" />
+<img src="media/query-effort-sum-story-points-active-closed.png" alt="Query editor, flat list, user stories - active or closed" />
 
 Then, add a stacked area trend chart that sums the Story Points. 
 
@@ -175,7 +175,7 @@ Then, add a stacked area trend chart that sums the Story Points.
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-<img src="media/query-effort-config-chart-sum-story-points-burnup.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
+<img src="media/query-effort-config-chart-sum-story-points-burnup.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" />
 ::: moniker-end
 
 

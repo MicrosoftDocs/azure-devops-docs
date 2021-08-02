@@ -48,7 +48,7 @@ When you configure a Delivery Plan, you select the teams and backlog levels of i
 
 When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Delivery Plans](../extensions/delivery-plans.md).
 
-<img src="../extensions/media/plans/plans-view-2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
+<img src="../extensions/media/plans/plans-view-2.png" alt="Interactive plan elements" />
 ::: moniker-end 
 
 <a id="portfolio-backlogs">  </a> 
@@ -106,7 +106,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 
 Items that are owned by other teams appear with hollow-filled bars.  
 
-<img src="media/visibility-management-team-epics.png" alt="Management teams, Epic portfolio backlog expanded" style="border: 2px solid #C3C3C3;" /> 
+<img src="media/visibility-management-team-epics.png" alt="Management teams, Epic portfolio backlog expanded" /> 
 
 ::: moniker-end 
 
@@ -134,7 +134,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 ::: moniker range="<= tfs-2015" 
 Items that are owned by other teams appear with hollow-filled bars.  
 
-<img src="media/visibility-feature-team-backlog-show-parents.png" alt="Feature teams, Portfolio backlog with show parents" style="border: 2px solid #C3C3C3;" />
+<img src="media/visibility-feature-team-backlog-show-parents.png" alt="Feature teams, Portfolio backlog with show parents" />
 
 ::: moniker-end 
 
@@ -155,7 +155,7 @@ The two areas of most interest to management teams are project health and bug de
 
 For example, here we've added three query-based charts, one for each team, to a dashboard that shows the active and resolved bugs over the previous 4 weeks.
 
-<img src="media/visibility-bug-debt-email-team.png" alt="Bug debt, Email team" />  <img src="media/visibility-bug-debt-voice-team.png" alt="Bug debt, Voice team" />  <img src="media/visibility-bug-debt-web-team.png" alt="Bug debt, Web team" style="border: 2px solid #C3C3C3;" />
+<img src="media/visibility-bug-debt-email-team.png" alt="Bug debt, Email team" />  <img src="media/visibility-bug-debt-voice-team.png" alt="Bug debt, Voice team" />  <img src="media/visibility-bug-debt-web-team.png" alt="Bug debt, Web team" />
 
 
 When defining multi-team dashboards, consider the following:
