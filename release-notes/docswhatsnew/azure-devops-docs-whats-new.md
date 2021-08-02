@@ -1,200 +1,193 @@
 ---
-title: "Azure DevOps docs: What's new for June 1, 2021 - June 30, 2021"
-description: "What's new in the Azure DevOps docs for June 1, 2021 - June 30, 2021."
-ms.date: 07/01/2021
+title: "Azure DevOps docs: What's new for July 1, 2021 - July 31, 2021"
+description: "What's new in the Azure DevOps docs for July 1, 2021 - July 31, 2021."
+ms.date: 08/02/2021
 ---
 
-# Azure DevOps docs: What's new for June 1, 2021 - June 30, 2021
+# Azure DevOps docs: What's new for July 1, 2021 - July 31, 2021
 
-Welcome to what's new in the Azure DevOps docs from June 1, 2021 through June 30, 2021. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from July 1, 2021 through July 31, 2021. This article lists some of the major changes to docs during this period.
 
 ## Artifacts
 
 ### Updated articles
 
-- [Symbol files overview](/azure/devops/artifacts/concepts/symbols)
-- [Share your Artifacts with package badges](/azure/devops/artifacts/package-badges)
+- [Symbols overview](/azure/devops/artifacts/concepts/symbols)
+- [Upstream sources](/azure/devops/artifacts/concepts/upstream-sources)
+- [Package notification](/azure/devops/artifacts/how-to/follow-package-notifications)
+- [Set up your client's npmrc](/azure/devops/artifacts/npm/npmrc)
+- [Publish a NuGet package using the command line](/azure/devops/artifacts/nuget/publish)
+- [Publish and download universal packages](/azure/devops/artifacts/quickstarts/universal-packages)
+- [Azure Artifacts overview](/azure/devops/artifacts/start-using-azure-artifacts)
+- [Debug with Visual Studio](/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio)
+- [Debug with WinDbg](/azure/devops/artifacts/symbols/debug-with-symbols-windbg)
 
 ## Boards
 
+### New articles
+
+- [Add or remove GitHub repositories](/azure/devops/boards/github/add-remove-repositories)
+- [Change GitHub repository access, or suspend or uninstall the integration](/azure/devops/boards/github/change-azure-boards-app-github-repository-access)
+- [Connect Azure DevOps Server to GitHub Enterprise Server (On-premises)](/azure/devops/boards/github/connect-on-premises-to-github)
+
 ### Updated articles
 
-- [Backlogs, portfolios, and Agile project management](/azure/devops/boards/backlogs/backlogs-overview)
-- [Add tasks or child items as checklists](/azure/devops/boards/boards/add-task-checklists)
-- [About Boards and Kanban](/azure/devops/boards/boards/kanban-overview)
-- [Azure Boards migration and integration](/azure/devops/boards/extensions/migrate-integrate)
-- [Configure a hierarchy of teams](/azure/devops/boards/plans/configure-hierarchical-teams)
-- [Bulk import or update work items using CSV files](/azure/devops/boards/queries/import-work-items-from-csv)
-- [Track work with user stories, issues, bugs, features, and epics](/azure/devops/boards/work-items/about-work-items)
+- [Resolve data validation errors (publish and refresh)](/azure/devops/boards/backlogs/office/resolve-excel-data-validation-errors)
+- [Resolve invalid links in an Excel tree list](/azure/devops/boards/backlogs/office/resolve-excel-invalid-links-tree-list)
+- [Change column options](/azure/devops/boards/backlogs/set-column-options)
+- [Sign up for free and invite others to collaborate in Azure Boards](/azure/devops/boards/get-started/sign-up-invite-teammates)
+- [11 Reasons for using Azure Boards to plan and track your work](/azure/devops/boards/get-started/why-use-azure-boards)
+- [Configure status badges to add to GitHub README files](/azure/devops/boards/github/configure-status-badges)
+- [Connect Azure Boards to GitHub (Cloud)](/azure/devops/boards/github/connect-to-github)
+- [Azure Boards-GitHub integration](/azure/devops/boards/github/index)
+- [Install the Azure Boards app for GitHub](/azure/devops/boards/github/install-github-app)
+- [Troubleshoot Azure Boards-GitHub integration](/azure/devops/boards/github/troubleshoot-github-connection)
+- [Review team Delivery Plans](/azure/devops/boards/plans/review-team-plans)
+- [Manage and organize queries](/azure/devops/boards/queries/organize-queries)
+- [Query by date or current iteration](/azure/devops/boards/queries/query-by-date-or-current-iteration)
+- [Share information within work items and social tools](/azure/devops/boards/queries/share-plans)
+- [Triage work items](/azure/devops/boards/queries/triage-work-items)
+- [Define a query](/azure/devops/boards/queries/using-queries)
+- [View, run, or email a work item query](/azure/devops/boards/queries/view-run-query)
+- [About Sprints, Scrum and project management](/azure/devops/boards/sprints/scrum-overview)
+- [How workflow states and state categories are used in Backlogs and Boards](/azure/devops/boards/work-items/workflow-and-state-categories)
 
 ## Developer resources
 
 ### Updated articles
 
+- [Sign in with a personal access token (PAT)](/azure/devops/cli/log-in-via-pat)
 - [Add a custom pipelines task extension](/azure/devops/extend/develop/add-build-task)
-- [Vertical navigation guidance](/azure/devops/extend/develop/web-navigation)
 
-## Integrate
-
-### Updated articles
-
-- [.NET client libraries](/azure/devops/integrate/concepts/dotnet-client-libraries)
-- [Rate limits](/azure/devops/integrate/concepts/rate-limits)
-- [REST API versioning](/azure/devops/integrate/concepts/rest-api-versioning)
-- [Authorize access to REST APIs with OAuth 2.0](/azure/devops/integrate/get-started/authentication/oauth)
-- [Get started with the REST APIs](/azure/devops/integrate/how-to/call-rest-api)
-
-## Migrate
+## Notifications
 
 ### Updated articles
 
-- [Announcement of an upcoming change to Azure DevOps organizations located in East Asia](/azure/devops/migrate/migration)
+- [About notifications](/azure/devops/notifications/about-notifications)
+- [Manage your personal notifications](/azure/devops/notifications/manage-your-personal-notifications)
 
 ## Organizations
 
 ### New articles
 
-- [Use policies to manage users' personal access tokens](/azure/devops/organizations/accounts/manage-pats-with-policies-for-administrators)
-- [Download permission report for a repository](/azure/devops/organizations/security/download-permissions-report)
-- [Rules and rule evaluation](/azure/devops/organizations/settings/work/rule-reference)
+- [Sample custom rule scenarios](/azure/devops/organizations/settings/work/rule-samples)
 
 ### Updated articles
 
-- [Add organization users and manage access](/azure/devops/organizations/accounts/add-organization-users)
-- [Change your organization connection to another Azure AD](/azure/devops/organizations/accounts/change-azure-ad-connection)
-- [Restore a project](/azure/devops/organizations/projects/restore-project)
-- [Add users or groups to a team or project](/azure/devops/organizations/security/add-users-team-project)
-- [Allowed IP addresses and domain URLs](/azure/devops/organizations/security/allow-list-ip-url)
-- [Add a rule to a work item type (Inheritance process)](/azure/devops/organizations/settings/work/custom-rules)
-- [Work tracking, process, and project limits](/azure/devops/organizations/settings/work/object-limits)
+- [Change the organization owner](/azure/devops/organizations/accounts/change-organization-ownership)
+- [Assign owner to orphaned organization](/azure/devops/organizations/accounts/resolve-orphaned-organization)
+- [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking)
 
 ## Pipelines
 
 ### New articles
 
-- [Pipeline Run Retention](/azure/devops/pipelines/build/run-retention)
-- [YAML pipeline editor](/azure/devops/pipelines/get-started/yaml-pipeline-editor)
-- [Publish Pipeline Artifacts](/azure/devops/pipelines/publish-pipeline-artifact)
-- [View release progress and test summary](/azure/devops/pipelines/release/visualize-release-test-progress)
+- [Use Azure Key Vault secrets in your Pipeline](/azure/devops/pipelines/release/key-vault-in-own-project)
+- [Quickstart: Deploy to an Azure MySQL database](/azure/devops/pipelines/targets/azure-mysql)
 
 ### Updated articles
 
 - [Azure Pipelines agents](/azure/devops/pipelines/agents/agents)
-- [Publish Python packages in Azure Pipelines](/azure/devops/pipelines/artifacts/pypi)
+- [Run a self-hosted agent in Docker](/azure/devops/pipelines/agents/docker)
+- [Set up Azure Pipelines and Maven](/azure/devops/pipelines/artifacts/maven)
+- [Publish npm packages (YAML/Classic)](/azure/devops/pipelines/artifacts/npm)
+- [Publish symbols for debugging](/azure/devops/pipelines/artifacts/symbols)
 - [Customize your pipeline](/azure/devops/pipelines/customize-pipeline)
-- [Deploy to Azure](/azure/devops/pipelines/overview-azure)
-- [Set retention policies for builds, releases, and tests](/azure/devops/pipelines/policies/retention)
-- [Add users to Azure Pipelines](/azure/devops/pipelines/policies/set-permissions)
-- [About pipeline resources](/azure/devops/pipelines/process/about-resources)
-- [Use Azure Key Vault secrets in Azure Pipelines](/azure/devops/pipelines/release/azure-key-vault)
-- [Automatically deploy to IoT Edge devices](/azure/devops/pipelines/release/deploy-iot-using-azure-pipelines)
-- [Deploy an Azure Function](/azure/devops/pipelines/targets/azure-functions)
-- [Deploy an Azure Function (Windows)](/azure/devops/pipelines/targets/azure-functions-windows)
-- [Deploy a Function App Container](/azure/devops/pipelines/targets/function-app-container)
-- [Azure File Copy task](/azure/devops/pipelines/tasks/deploy/azure-file-copy)
-
-## Project
-
-### Updated articles
-
-- [Manage Wiki permissions](/azure/devops/project/wiki/manage-readme-wiki-permissions)
-- [Provisioned wikis vs. published code as a wiki](/azure/devops/project/wiki/provisioned-vs-published-wiki)
+- [Key concepts for new Azure Pipelines users](/azure/devops/pipelines/get-started/key-pipelines-concepts)
+- [Library of assets](/azure/devops/pipelines/library/index)
+- [Use secure files](/azure/devops/pipelines/library/secure-files)
+- [Manage service connections](/azure/devops/pipelines/library/service-endpoints)
+- [Task groups for builds and releases](/azure/devops/pipelines/library/task-groups)
+- [Add & use variable groups](/azure/devops/pipelines/library/variable-groups)
+- [About resources for Azure Pipelines](/azure/devops/pipelines/process/about-resources)
+- [Specify conditions](/azure/devops/pipelines/process/conditions)
+- [Environment - Kubernetes resource](/azure/devops/pipelines/process/environments-kubernetes)
+- [Environment - virtual machine resource](/azure/devops/pipelines/process/environments-virtual-machines)
+- [Protect a repository resource](/azure/devops/pipelines/process/repository-resource)
+- [Template types & usage](/azure/devops/pipelines/process/templates)
+- [Define variables](/azure/devops/pipelines/process/variables)
+- [Provision deployment groups](/azure/devops/pipelines/release/deployment-groups/index)
+- [Deploy an Azure Web App (Linux)](/azure/devops/pipelines/targets/webapp-linux)
 
 ## Reference
 
 ### Updated articles
 
-- [All FIELD XML elements reference](/azure/devops/reference/xml/all-field-xml-elements-reference)
-
-## Report
-
-### Updated articles
-
-- [Cumulative flow, lead time, and cycle time guidance](/azure/devops/report/dashboards/cumulative-flow-cycle-lead-time-guidance)
-- [Extend Analytics with OData (Preview) quick reference](/azure/devops/report/extend-analytics/quick-ref)
-- [Query your work tracking data using OData Analytics](/azure/devops/report/extend-analytics/wit-analytics)
-- [Set permissions to access Analytics and Analytics views](/azure/devops/report/powerbi/analytics-security)
-- [Connect using Power Query and Azure DevOps functions](/azure/devops/report/powerbi/data-connector-functions)
+- [Assign conditional-based values and rules](/azure/devops/reference/xml/assign-conditional-based-values-and-rules)
 
 ## Repos
 
-### Updated articles
+### New articles
 
-- [Azure Repos Git Documentation](/azure/devops/repos/git/index)
+- [Frequently Asked Git Questions](/azure/devops/repos/git/howto)
 
 ## User guide
 
 ### Updated articles
 
-- [Software development roles supported by Azure DevOps](/azure/devops/user-guide/roles)
+- [What are the features in Azure DevOps?](/azure/devops/user-guide/alm-devops-features)
 
 ## GitHub issue content updates
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2021-06-01..2021-06-30).
+Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2021-07-01..2021-07-31).
 
-- [Promote a package using the REST API via Python Script #11000](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11000)
-- [Misspelled word in "Map requirements to features" section #10968](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10968)
-- [Missing info about which APIs support PAT #10957](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10957)
-- [Page doesn't explain what happens when a build with parameters is automatically triggered #10886](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10886)
-- [secrets.txt not in example #10884](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10884)
-- [Incomplete guide #10882](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10882)
-- [Inconsistent indentation in example #10868](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10868)
-- [This doesn't explain how to manage permissions for Code wiki's. #10867](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10867)
-- [Can no longer change pipelines retention settings, but the document says, that is what I should do #10851](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10851)
-- [Retry-after header in a 200 ok response is misleading #10832](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10832)
-- [Comparison table is inaccurate #10815](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10815)
-- [Add working example in `Publish Python packages in Azure Pipelines` #10807](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10807)
-- [All steps requiring paid support should be listed in the Prerequisites section #10790](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10790)
-- [Hub icon dark/light theme #10784](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10784)
-- [Passphrase ENVr is incorrect #10750](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10750)
-- [Accepting all of npm init's default options does not work anymore #10726](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10726)
-- [how do we do this with releases set up in YAML pipelines? #10702](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10702)
-- [Documenation needs to be updated #10668](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10668)
-- [Document that project wiki delete is not supported #10659](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10659)
-- [Missing example code of Key Vault Secret usage in pipeline #10610](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10610)
-- [Remove reference to team rooms #10594](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10594)
-- ["feedName", not "organizationName" #10570](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10570)
-- ['Search for your service principle' a little ambiguous #10558](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10558)
-- [Screenshots need to be updated #10519](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10519)
-- [POs & SM #10505](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10505)
-- [Pipelines caching example doesn't properly quote the static string #10500](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10500)
-- [The Build.TriggeredBy.* variables do not exist #10496](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10496)
-- [I do not see description for the variable $(System.TaskInstanceId), why? #10475](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10475)
-- [Use Azure Key Vault secrets in Azure Pipelines - missing steps #10372](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10372)
-- [Missing the the scope(s) required to POST to `_apis/wit/attachments`. #10358](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10358)
-- [Clarification on Collection-level Retention settings for Azure DevOps On-Prem #10355](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10355)
-- [Missing configuration information for yarn users #10339](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10339)
-- [Warning when gathering python test coverage #10284](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10284)
-- [Service Hooks ip addresses not working with Azure Storage Queue restrictions #10193](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10193)
-- [Error in endpoints example code using a service connection on container jobs #10181](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10181)
-- [Runtime Params: FAQ question is not answered actually answered  #10102](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10102)
-- [Pre-requisite as Member in Destination AAD to map users. #10034](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10034)
-- [Add link or info about service principle, associating principle with pipeline #9823](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9823)
-- [Add WebLOAD to the alternatives list #9765](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9765)
-- [Using PAT for git clone #9084](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9084)
+- [System.Debug conditional example #11133](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11133)
+- [Downloading the latest version unclear that quotes are necessary for wildcard version argument #11115](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11115)
+- [Error in CopyFiles Task #11108](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11108)
+- [Wrong capitalization on the description of the expression `or` #11088](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11088)
+- [typo fyi 'Tenant' vs. 'Tenet' #11087](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11087)
+- [Typo in Getting Started > Step#6 #11068](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11068)
+- [Credentials setup snippet doesn't work #11055](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11055)
+- [Parameters - enum? #11046](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11046)
+- [Unpack the agent into the directory of your choice. #11030](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11030)
+- [Wrong repository URL #11017](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11017)
+- [Limitation on the capacity of Artifacts in Multi Organization Billing #11009](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11009)
+- [Step 5 uses unnecessary placeholder text without context #11004](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11004)
+- [Typo #10996](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10996)
+- [Typo #10992](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10992)
+- [Invalid YAML code #10988](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10988)
+- [What does "Import this repo into your Git repo" mean? #10955](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10955)
+- [No documentation on "uses:" #10951](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10951)
+- [`additionalImageTags` required syntax not clear #10942](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10942)
+- [Unsubscribe or opt out of team subscription steps are unclear #10927](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10927)
+- [Coverlet.Cover .NET 5 Pipeline Collection Example Not Working #10894](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10894)
+- [What's the meaning of "template syntax", in the context of conditional insertion? #10893](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10893)
+- [Clarification on "Publish and download artifacts in Azure Pipelines" #10871](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10871)
+- [Additional troubleshooting for vsts-npm-auth #10860](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10860)
+- [Clarify variable groups, secure files, and agent pools protected resources #10776](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10776)
+- [How to remove retention policies for a pipeline #10721](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10721)
+- [Virtual machine scale set created via tutorial is missing Azure DevOps build dependencies #10687](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10687)
+- [Docs do not specify allowable values for "default:" parameter values #10672](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10672)
+- [The examples on this page would be 200% better if they included the output after the pipeline runs. #10592](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10592)
+- [caching-docker.yml does not exist in example #10577](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10577)
+- [[Documentation Error] Missing colon in pipeline-decorator-context.md code example causes sample not to run #10512](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10512)
+- [Suggestion: Clarify "Variables" #10204](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10204)
+- [Karm link is outdated #10046](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10046)
+- [tutorial fails to run pipeline go: cannot find GOROOT directory: /usr/local/go1.11 #9931](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9931)
+- [Access Token Script incorrect #9783](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9783)
+- [Unlink functionnality actually seem to apply to release pipelines #9198](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9198)
+- [Documentation should explain "UploadSummary" writes to "Extensions" tab, not "Summary" tab #8973](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8973)
+- [Wrong statement in canary deployment strategy section #8960](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8960)
+- [Highlight necessity of double quotes when creating an environment variable inside a script #8705](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8705)
 
 ## Community contributors
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [ebusho](https://github.com/ebusho) - ebusho (2)
-- [flcdrg](https://github.com/flcdrg) - David Gardiner (2)
-- [NenoLoje](https://github.com/NenoLoje) - Neno Loje (2)
+- [simonsabin](https://github.com/simonsabin) - Simon Sabin (2)
 - [50Wliu](https://github.com/50Wliu) - Winston Liu (1)
-- [baobao98](https://github.com/baobao98) - Silence Dogood - Bảo (1)
-- [davecluderay](https://github.com/davecluderay) - Dave Cluderay (1)
-- [DenWin](https://github.com/DenWin) - Dennis Winter (1)
-- [ds-ms](https://github.com/ds-ms) - Deepak Sattiraju (1)
+- [BenResTech](https://github.com/BenResTech) - Ben Allen (1)
+- [bryan-strassner](https://github.com/bryan-strassner) - Bryan Strassner (1)
+- [danielschnetler](https://github.com/danielschnetler) - Daniel Schnetler (1)
 - [ericmutta](https://github.com/ericmutta) - Eric Mutta (1)
-- [Geoff1900](https://github.com/Geoff1900) - Geoff (1)
-- [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka (1)
-- [jasonericdavis](https://github.com/jasonericdavis) - Jason Davis (1)
-- [Joe-OpsHub](https://github.com/Joe-OpsHub) (1)
-- [jonathanmbaker](https://github.com/jonathanmbaker) - JonoB. (1)
-- [limatth](https://github.com/limatth) (1)
-- [MarkIannucci](https://github.com/MarkIannucci) - Mark Iannucci (1)
-- [mcroley](https://github.com/mcroley) - Matt Croley (1)
-- [PabloL007](https://github.com/PabloL007) - Pablo Ley (1)
-- [simonsabin](https://github.com/simonsabin) - Simon Sabin (1)
-- [tvdvoorde](https://github.com/tvdvoorde) - tvdv (1)
-- [vidia](https://github.com/vidia) - David Tschida (1)
+- [jackshassf](https://github.com/jackshassf) - Jack Sha (1)
+- [JonahKK](https://github.com/JonahKK) - Jonah (1)
+- [jon-a-nygaard](https://github.com/jon-a-nygaard) - Jon Arild Nygård (1)
+- [LinusNoren](https://github.com/LinusNoren) - Linus Norén (1)
+- [mikalst](https://github.com/mikalst) - Mikal S. (1)
+- [NickNikolskiy](https://github.com/NickNikolskiy) - Nikolay Nikolskiy (1)
+- [rajnish-byte](https://github.com/rajnish-byte) (1)
+- [SebastianSchuetze](https://github.com/SebastianSchuetze) - Sebastian Schütze (1)
+- [StingyJack](https://github.com/StingyJack) - Andrew Stanton (1)
+- [velzend](https://github.com/velzend) - Dennis van Velzen (1)
+- [vertify-swdev1](https://github.com/vertify-swdev1) (1)

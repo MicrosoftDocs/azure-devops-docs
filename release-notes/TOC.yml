@@ -369,8 +369,10 @@
     - name: 2021
       expanded: true
       items:
-      - name: June 2021
+      - name: July 2021
         href: docswhatsnew/azure-devops-docs-whats-new.md
+      - name: June 2021
+        href: docswhatsnew/azure-devops-docs-2021-06.md
       - name: May 2021
         href: docswhatsnew/azure-devops-docs-2021-05.md
       - name: April 2021
