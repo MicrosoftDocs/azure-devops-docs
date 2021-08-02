@@ -13,8 +13,7 @@ ms.date: 04/11/2019
 ---
 
 # CMMI process
- 
-<meta name="keywords" content="CMMI tools" />
+
 
 [!INCLUDE [temp](../../includes/version-all.md)]
 
@@ -29,8 +28,6 @@ In addition to the WITs, teams have access to a set of work item queries to trac
 <a id="start-using" />
 
 ## Plan and track work with CMMI
-
-<meta name="description" content="CMMI project management" />
 
 Teams plan their project by capturing features and requirements. When teams work in sprints, they define tasks and link them to requirements. To gain insight into a rollup of requirements across teams, program managers link requirements to a feature. Blocking issues are tracked using issues. For details on using these WITs, see [CMMI process work item types and workflow](cmmi-process-workflow.md)
 
@@ -67,7 +64,6 @@ Or, use one of the shared queries that the CMMI process provides.
 
 ## Monitor progress  
 
-<meta name="description" content="CMMI monitor progress" />
 All processes&mdash;Agile, Scrum, and CMMI&mdash;support <a href="../../../report/dashboards/overview.md" data-raw-source="[building status and trend charts and dashboards](../../../report/dashboards/overview.md)">building status and trend charts and dashboards</a>. In addition, several charts are automatically built based on the Agile tools you use. These charts display within the web portal.  
 
 ## Create light-weight charts  

@@ -108,7 +108,7 @@ By updating the workflow, teams know which items are new, in progress, or comple
 > [!div class="mx-tdBreakAll"]  
 > |User Story |Bug |Task |  
 > |-------------|----------|---------| 
-> |<img src="media/ALM_PT_Agile_WF_UserStory.png" title="User Story workflow states, Agile process " alt="User Story workflow states, Agile process" /> |<img src="media/agile-bug-workflow.png" title="Bug workflow states, Agile process" style="padding-left:20px;" alt="Bug workflow states, Agile process" /> |<img src="media/ALM_PT_Agile_WF_Task.png" title="Task workflow states, Agile process " style="padding-left:20px;" alt="Task workflow states, Agile process" />| 
+> |<img src="media/ALM_PT_Agile_WF_UserStory.png" title="User Story workflow states, Agile process " alt="User Story workflow states, Agile process" /> |<img src="media/agile-bug-workflow.png" title="Bug workflow states, Agile process"  alt="Bug workflow states, Agile process" /> |<img src="media/ALM_PT_Agile_WF_Task.png" title="Task workflow states, Agile process "  alt="Task workflow states, Agile process" />| 
 
 A typical workflow progression for a user story follows:
 

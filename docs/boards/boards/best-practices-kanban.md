@@ -83,7 +83,7 @@ As a starting point, consider some of the following criteria as you work with yo
   </tr>
   <tr valign="top">
     <td>Before work starts on a feature, user story, or requirement</td>
-    <td style="padding:100">
+    <td>
 <ol>
 <li>User story is properly scoped and estimated.</li>
 <li>Acceptance criteria is well defined.</li>
