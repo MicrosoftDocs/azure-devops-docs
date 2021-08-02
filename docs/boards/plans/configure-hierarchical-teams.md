@@ -87,7 +87,7 @@ The first step is to add a team for each feature team and management area. You c
 
 1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open **Project Settings.**  
 
-    <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
+    <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Open project admin page" />
 
 2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**. 
 
@@ -274,7 +274,7 @@ If your feature teams use Scrum or use sprints to assign their work, you'll want
 
 ::: moniker range="<= tfs-2015"  
 
-<img src="media/pm-6-3-week-sprints.png" alt="Sprint schedule selected sprints" style="border: 2px solid #C3C3C3;" />
+<img src="media/pm-6-3-week-sprints.png" alt="Sprint schedule selected sprints" />
 ::: moniker-end
 
 

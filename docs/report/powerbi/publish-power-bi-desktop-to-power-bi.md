@@ -23,7 +23,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 3. Choose **Publish** on the **Home** tab. 
 
-    <img src="media/publish-1.png" alt="Publish Power BI Desktop file" style="border: 2px solid #C3C3C3;" /> 
+    <img src="media/publish-1.png" alt="Publish Power BI Desktop file" /> 
 
 4. Respond to the prompts to sign in. If you don't already have a Power BI account you will need to create one. Choose **Sign in**.
   
@@ -37,7 +37,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 8. Choose the ellipsis next to the dataset that represents the report you just loaded (this is typically the file name.   
 
-     <img src="media/publish-3.png" alt="Select the dataset" style="border: 2px solid #C3C3C3;" />
+     <img src="media/publish-3.png" alt="Select the dataset" />
 
 9. Choose **Schedule Refresh**.  
 

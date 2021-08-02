@@ -234,7 +234,7 @@ You can drag and drop a file onto the tab or anywhere on the work item form.
 
 You can edit, open, save, or delete an attachment by choosing an attachment and opening it's  :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu. 
 
-<img src="media/share-plans-attachment-menu-options.png" alt="Attachment menu options" style="border: 2px solid #C3C3C3;" />   
+<img src="media/share-plans-attachment-menu-options.png" alt="Attachment menu options" />   
 
 ::: moniker-end 
 
@@ -255,11 +255,11 @@ Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attac
 
 Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Or, drag and drop files into the attachment area. 
 
-<img src="media/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises Azure DevOps), Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" />
+<img src="media/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises Azure DevOps), Visual Studio and Eclipse" />
 
 To open the menu options to download or delete several attachments, choose one or more items and then right-click. 
 
-<img src="media/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
+<img src="media/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" />
 
 
 * * *
@@ -305,7 +305,7 @@ From the **Storyboards** tab, click **Start Storyboarding** to open Storyboardin
 
 From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
 
-<img src="media/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
+<img src="media/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" />
 
 * * *
 

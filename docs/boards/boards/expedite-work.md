@@ -160,7 +160,7 @@ Once you've identified one or two, add them to your Kanban board.
    The default lane is automatically renamed to Standard when you add a second lane. You can rename it to anything you like, however, you can't delete it.   
     
 10. To reorder your swimlanes, simply grab the lane and move it up or down.   
-     <img src="media/ALM_EW_ReorderLanes.png" alt="Kanban board, Open swimlanes" style="border: 2px solid #C3C3C3;" />   
+     <img src="media/ALM_EW_ReorderLanes.png" alt="Kanban board, Open swimlanes" />   
 
 11. If you need to delete a lane, first move all items out of the lane. Then, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Delete**.      
 

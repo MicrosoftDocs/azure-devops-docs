@@ -18,7 +18,7 @@ ms.date: 08/02/2019
 
 With the mobile browser and work item form, you gain on-the-go features to stay on top of the latest updates made to work tracking. When you click any work item link on your mobile device, it will open a mobile-friendly version of the work item. From there, you can update the work item or access all work items assigned to you or that you're following.   
  
-<img src="media/mobile-work-intro-1.png" alt="Mobile work item form" style="border: 1px solid #C3C3C3;" />  
+<img src="media/mobile-work-intro-1.png" alt="Mobile work item form" />  
 
 ::: moniker range="azure-devops"
 
@@ -45,7 +45,7 @@ The mobile work item form will open when you click **View work item** from an em
 - You were <strong>@mentioned</strong> in a discussion
 - A notification is sent based on the work item alerts you've set using [Manage personal notifications](../../notifications/manage-your-personal-notifications.md). 
 
-<img src="media/mobile-work-email-notice.png" alt="Email received in your mobile client" style="border: 1px solid #C3C3C3;" />  
+<img src="media/mobile-work-email-notice.png" alt="Email received in your mobile client" />  
 
 
 ## Update a work item
@@ -78,19 +78,19 @@ Mobile form controls operate as follows:
  
 To update the state, click the state you want.  
  
-<img src="media/mobile-work-change-state.png" alt="Mobile work item form, Change State action" style="border: 1px solid #C3C3C3;" />  
+<img src="media/mobile-work-change-state.png" alt="Mobile work item form, Change State action" />  
 
 ### Add or remove tags 
 
 To add a tag, type the text you want.  
  
-<img src="media/mobile-work-add-tags.png" alt="Mobile work item form, Add or remove tags" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/mobile-work-add-tags.png" alt="Mobile work item form, Add or remove tags" /> 
 
 ### View history
  
 Click the History tab to view history. 
 
-<img src="media/mobile-work-view-history.png" alt="Mobile work item form, View history" style="border: 1px solid #C3C3C3;" />  
+<img src="media/mobile-work-view-history.png" alt="Mobile work item form, View history" />  
 
 ## View and open work items in your activity lists 
 
@@ -128,4 +128,4 @@ Help us improve the mobile experience.
 
 To provide feedback,  click the list control from the work item form and then click **Send Feedback**. To complete the feedback, select either the smile or frown and optionally enter a comment. 
 
-<img src="media/mobile-work-send-feedback.png" alt="Mobile work item form, Send feedback" style="border: 1px solid #C3C3C3;" />
+<img src="media/mobile-work-send-feedback.png" alt="Mobile work item form, Send feedback" />

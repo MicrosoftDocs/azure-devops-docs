@@ -49,11 +49,11 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 
 5.  Search for more shapes to complete your design.
 
-    <img src="media/IC652014.png" alt="Search for shapes" style="border: 2px solid #C3C3C3;" />
+    <img src="media/IC652014.png" alt="Search for shapes" />
 
 6.  Create mores slides to show the flow of your app. Share them with your team to get early feedback on the design.
 
-    <img src="media/IC652599.png" alt="Develop your storyboard with multiple slides" style="border: 2px solid #C3C3C3;" />
+    <img src="media/IC652599.png" alt="Develop your storyboard with multiple slides" />
 
 > [!TIP]  
 >- Use animation to bring your user interface flow to life.  
@@ -71,7 +71,7 @@ When you share your storyboards to a shared network location, you can link the s
 
     Otherwise, open the **Links** tab or the **Storyboard Links** tab.
 
-    <img src="media/IC654069.png" alt="Open Storyboard Links to link to a work item" style="border: 2px solid #C3C3C3;" />
+    <img src="media/IC654069.png" alt="Open Storyboard Links to link to a work item" />
 
 	> [!NOTE]  
 	>The **Storyboards** tab is no longer supported in the new web form. However, you can link to a storyboard from the **Links** tab using the Storyboard link.  
@@ -94,7 +94,7 @@ When you share your storyboards to a shared network location, you can link the s
 
 6.  Now the storyboard is linked to the work item.
 
-    <img src="media/IC657080.png" alt="Linked work item in Storyboard links dialog box" style="border: 2px solid #C3C3C3;" />
+    <img src="media/IC657080.png" alt="Linked work item in Storyboard links dialog box" />
 
 7.  And, whoever views the work item can also access the storyboard.
 

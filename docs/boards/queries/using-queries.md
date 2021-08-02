@@ -272,7 +272,7 @@ To list work items defined in two or more projects, checkmark **Query across pro
 
 With the **Query across projects** checked, you can add the **Team Project** field to filter to a select number of projects.   
 
-<img src="media/using-queries/portal-query-across-two-projects.png" alt="Azure Boards and TFS 2015.1, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
+<img src="media/using-queries/portal-query-across-two-projects.png" alt="Azure Boards and TFS 2015.1, Web portal, Query across select projects using the In operator" />
 
 > [!NOTE]
 > Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
@@ -285,7 +285,7 @@ The **Team Project** field becomes available only after you check  **Query acros
 
 To find all features created in all projects within the last 30 days, remove the **Team Project=@Project** clause from the query.  
 
-<img src="media/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
+<img src="media/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select projects using the In operator" />
 
 All fields from all work item types defined in all projects in the collection always appear in the **Field** drop-down menu.  
 

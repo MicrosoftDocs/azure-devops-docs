@@ -112,7 +112,7 @@ You use different WITs to plan and track different types of work. The main reaso
 
 1. From the **Work Item Types** page, choose the :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false"::: **New work item type**.
 
-	<img src="media/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
+	<img src="media/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" />
 
 2. Name the WIT and optionally specify a description, icon and color. The icon and color you specify appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
 

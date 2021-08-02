@@ -149,13 +149,13 @@ If there are any errors in the process, the pages appear in your wiki with a war
 
 <!---
 
-<img src="media/wiki/wiki-repo-struct.png" alt="Wiki Git repository structure" style="border: 1px solid #C3C3C3;" />
+<img src="media/wiki/wiki-repo-struct.png" alt="Wiki Git repository structure" />
  
-<img src="media/wiki/wiki-offline-add-page.png" alt="Add page to wiki Git repo" style="border: 1px solid #C3C3C3;" />
+<img src="media/wiki/wiki-offline-add-page.png" alt="Add page to wiki Git repo" />
 
-	<img src="media/wiki/wiki-offline-update-order-subpages.png" alt="Update .ORDER file with the order of the sub-pages in the Git repo" style="border: 1px solid #C3C3C3;" />
+	<img src="media/wiki/wiki-offline-update-order-subpages.png" alt="Update .ORDER file with the order of the sub-pages in the Git repo" />
 
-	<img src="media/wiki/wiki-offline-updated.png" alt="Wiki pages appear after updating the pages offline" style="border: 1px solid #C3C3C3;" />
+	<img src="media/wiki/wiki-offline-updated.png" alt="Wiki pages appear after updating the pages offline" />
 
 In the web portal, you can view the repo files based on the following URL: 
 ::: moniker range=">= azure-devops-2019"
