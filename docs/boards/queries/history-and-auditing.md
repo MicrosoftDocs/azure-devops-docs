@@ -36,11 +36,11 @@ You can use either the web portal or Team Explorer to view the history of a work
 <a id="team-services" /> 
 
 ::: moniker range=">= tfs-2017"
-<img src="media/hist-audit-query-ts-bt.png" alt="Screenshot of Query Editor to Search for items based on words contained in the History field." style="border: 1px solid #C3C3C3;" /> 
+<img src="media/hist-audit-query-ts-bt.png" alt="Screenshot of Query Editor to Search for items based on words contained in the History field." /> 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-<img src="media/ALM_HA_HistoryQuery.png" alt="Screenshot of Query Editor to Search for items based on words contained in the History field, earlier versions." style="border: 1px solid #C3C3C3;" /> 
+<img src="media/ALM_HA_HistoryQuery.png" alt="Screenshot of Query Editor to Search for items based on words contained in the History field, earlier versions." /> 
 ::: moniker-end
 
 

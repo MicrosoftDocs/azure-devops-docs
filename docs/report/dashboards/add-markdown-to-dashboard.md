@@ -101,13 +101,13 @@ To add the markdown widget to the dashboard, choose :::image type="icon" source=
 
 3. Adjust the widget size as needed to fit the contents of the markdown you'll enter. The largest size is 10 tiles wide by 10 tiles tall. You can always adjust this later. 
 
-	<img src="media/add-markdown-size.png" alt="Change markdown widget size" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/add-markdown-size.png" alt="Change markdown widget size" />  
 
 4. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md).
 
 	Here we show some simple text with a bulleted list of four links
 
-	<img src="media/add-markdown-configure.png" alt="Configure markdown" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/add-markdown-configure.png" alt="Configure markdown" /> 
 
 	> [!TIP]  
 	> To link to a wiki page,use the following syntax:<br/>
@@ -144,13 +144,13 @@ To add the markdown widget to the dashboard, choose :::image type="icon" source=
 
 4. Adjust the widget size as needed to fit the contents of the markdown you'll enter. The largest size is 10 tiles wide by 10 tiles tall. You can always adjust this later. 
 
-	<img src="media/add-markdown-size.png" alt="Change markdown widget size" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/add-markdown-size.png" alt="Change markdown widget size" />  
 
 5. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md).
 
 	Here we show some simple text with a bulleted list of four links
 
-	<img src="media/add-markdown-configure.png" alt="Configure markdown" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/add-markdown-configure.png" alt="Configure markdown" /> 
 
 	To link to a wiki page, repository file, or page within the project, use this format: 
 

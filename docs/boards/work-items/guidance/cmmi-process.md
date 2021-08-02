@@ -20,7 +20,7 @@ ms.date: 04/11/2019
 
 The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They are based on the [Capability Maturity Model Integration (CMMI)](./cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts) process.
 
-<img src="media/cmmi-process-work-tracking-wits.png" alt="Agile process work item types" style="border: 1px solid #C3C3C3;" />  
+<img src="media/cmmi-process-work-tracking-wits.png" alt="Agile process work item types" />  
 
 In addition to the WITs, teams have access to a set of work item queries to track information, analyze progress, and make decisions.  
 

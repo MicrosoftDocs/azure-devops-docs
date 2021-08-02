@@ -152,7 +152,7 @@ Once you've identified one or two, add them to your Kanban board.
 9. Choose **Swimlanes**, and then choose the :::image type="icon" source="../media/icons/add_icon.png" border="false"::: plus icon, and enter the name of the swimlane you want to add.       
 
    **For TFS 2015.1 and later versions**       
-   <img src="media/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />     
+   <img src="media/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" />     
    The default lane appears unlabeled on the Kanban board. You can rename it to anything you like, however, you can't delete it. Also, you can rename it directly from the Kanban board.    
 
    **For TFS 2015**    
@@ -190,7 +190,7 @@ You can track Kanban board swimlane moves by creating a query and using the [Boa
 
 Similar to the way [column moves are tracked](add-columns.md), swimlane moves are captured in the history field.  
 
-<img src="media/ALM_EW_HistorySwimLanes.png" alt="Work item form, History tab, History of a swimlane move" style="border: 1px solid #C3C3C3;" />   
+<img src="media/ALM_EW_HistorySwimLanes.png" alt="Work item form, History tab, History of a swimlane move" />   
 
 For TFS 2015 and earlier versions, you can't [query](../queries/using-queries.md) for all items in a particular swimlane. To perform such a query, you'd have to assign a value to a field, such as the Priority field, or [tag](../queries/add-tags-to-work-items.md) each item in a similar way.  
 ::: moniker-end  

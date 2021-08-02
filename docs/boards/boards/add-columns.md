@@ -125,7 +125,7 @@ Choose **Correct this now** to open the **Settings** dialog.
 
 In this example two new states have been added, **Triaged** for bug, and **Investigate** for user story. Each state needs to be mapped to an existing or new column in order for the Kanban board to display work items assigned to these states.  
 
-<img src="media/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #C3C3C3;" />  
+<img src="media/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" />  
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
@@ -133,7 +133,7 @@ In this example two new states have been added, **Triaged** for bug, and **Inves
 **TFS 2015.1**
 In this example two new states have been added, **Triaged** for bug, and **Investigate** for user story. Each state needs to be mapped to an existing or new column in order for the Kanban board to display work items assigned to these states.  
 
-<img src="media/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #C3C3C3;" />  
+<img src="media/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" />  
 
 **TFS 2015**
 In this example, bugs have been added to show on the Kanban board. You need to map the bug state for each column on the Kanban board.  
@@ -253,7 +253,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	Or, you can open the dialog and change one or more settings for a Kanban column. 
 
-	<img src="media/add-columns-settings-dialog-add-test-ts.png" alt="Kanban board, Settings, Columns, Add and rename  columns, Agile process" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/add-columns-settings-dialog-add-test-ts.png" alt="Kanban board, Settings, Columns, Add and rename  columns, Agile process" /> 
 
 4. To change the column order, drag the column tab to the position you want.  
 
@@ -292,7 +292,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	Or, you can open the dialog and change one or more settings for a Kanban column. 
 
-	<img src="media/add-columns-settings-dialog-add-test-ts.png" alt="Kanban board, Settings, Columns, Add and rename  columns, Agile process" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/add-columns-settings-dialog-add-test-ts.png" alt="Kanban board, Settings, Columns, Add and rename  columns, Agile process" /> 
 
 4. To change the column order, drag the column tab to the position you want.  
 

@@ -34,19 +34,19 @@ To better understand how these attributes are used to populate a field's drop-do
 ##  Contents of lists and groups used in the examples  
  The examples provided in this topic use the following values:  
   
-<table Responsive="true" summary="table">
+<table>
 <tbody valign="top">
-<tr Responsive="true">
+<tr>
 <th scope="col"><p>Group name and list</p></th>
 <th scope="col"><p>Description</p></th>
 </tr>
 <tr>
 <td>
 [Project]\Business Analysts</p>
-<ul style="list-style: none;margin-bottom:0px"> 
-<li style="margin-bottom:0px">JayHamlin</li>
-<li style="margin-bottom:0px">PilarAckerman</li>
-<li style="margin-bottom:0px">ReshmaPatel</li>
+<ul> 
+<li>JayHamlin</li>
+<li>PilarAckerman</li>
+<li>ReshmaPatel</li>
 </ul> 
 </td>
 <td> 
@@ -58,14 +58,14 @@ To better understand how these attributes are used to populate a field's drop-do
 <tr>
 <td>
 <p>Example1\MyReports</p>
-<ul style="list-style: none;margin-bottom:0px"> 
-<li style="margin-bottom:0px">Development</li>
-<li style="margin-bottom:0px">devuser</li>
-<li style="margin-bottom:0px">Test</li>
-<li style="margin-bottom:0px">Test user</li>
-<li style="margin-bottom:0px">Program Management</li>
-<li style="margin-bottom:0px">pmuser</li>
-<li style="margin-bottom:0px">juser</li>
+<ul> 
+<li>Development</li>
+<li>devuser</li>
+<li>Test</li>
+<li>Test user</li>
+<li>Program Management</li>
+<li>pmuser</li>
+<li>juser</li>
 </ul> 
 </td>
 <td> 
@@ -75,13 +75,13 @@ To better understand how these attributes are used to populate a field's drop-do
 <tr>
 <td>
 <p>Example1\MyReports</p>
-<ul style="list-style: none;margin-bottom:0px"> 
-<li style="margin-bottom:0px">UserOne</li>
-<li style="margin-bottom:0px">UserTwo</li>
-<li style="margin-bottom:0px">UserThree</li>
-<li style="margin-bottom:0px">MyRemotes</li>
-<li style="margin-bottom:0px">UserFour</li>
-<li style="margin-bottom:0px">UserFive</li>
+<ul> 
+<li>UserOne</li>
+<li>UserTwo</li>
+<li>UserThree</li>
+<li>MyRemotes</li>
+<li>UserFour</li>
+<li>UserFive</li>
 </ul> 
 </td>
 <td>
@@ -91,9 +91,9 @@ To better understand how these attributes are used to populate a field's drop-do
 <tr>
 <td>
 <p>BoolValues</p>
-<ul style="list-style: none;margin-bottom:0px"> 
-<li style="margin-bottom:0px">true</li>
-<li style="margin-bottom:0px">false</li>
+<ul> 
+<li>true</li>
+<li>false</li>
 </ul> 
 </td>
 <td>
@@ -107,9 +107,9 @@ To better understand how these attributes are used to populate a field's drop-do
 
 In this example, the field contains a string value, a group, and a global list. At the time it is run, the list is expanded and groups are excluded.
 
-<table Responsive="true" summary="table">
+<table>
 <thead>
-<tr Responsive="true">
+<tr>
 <th ><p>Example</p></th>
 <th ><p>Drop down list values</p></th>
 </tr>
@@ -128,13 +128,13 @@ In this example, the field contains a string value, a group, and a global list. 
 
 <td data-th="Drop-down list values">
 
-<ul style="list-style: none;margin-bottom:0px"> 
-<li style="margin-bottom:0px">string</li>
-<li style="margin-bottom:0px">true</li>
-<li style="margin-bottom:0px">false</li>
-<li style="margin-bottom:0px">JayHamlin</li>
-<li style="margin-bottom:0px">PilarAckerman</li>
-<li style="margin-bottom:0px">ReshmaPatel</li>
+<ul> 
+<li>string</li>
+<li>true</li>
+<li>false</li>
+<li>JayHamlin</li>
+<li>PilarAckerman</li>
+<li>ReshmaPatel</li>
 </ul> 
 </td>
 </tr>
@@ -146,8 +146,8 @@ In this example, the field contains a string value, a group, and a global list. 
 
 In this example, the field contains a string value, two groups, and a global list. At the time it is run the list is expanded and groups are not excluded.
 
-<table Responsive="true" summary="table">
-<tr Responsive="true">
+<table>
+<tr>
 <th scope="col"><p>Example</p></th>
 <th scope="col"><p>Drop-down list values</p></th>
 </tr>
@@ -164,18 +164,18 @@ In this example, the field contains a string value, two groups, and a global lis
 </code></pre>
 </td><td data-th="Drop-down list values">
 
-<ul style="list-style: none;margin-bottom:0px"> 
-<li style="margin-bottom:0px">string</li>
-<li style="margin-bottom:0px">true</li>
-<li style="margin-bottom:0px">false</li>
-<li style="margin-bottom:0px">juser</li>
-<li style="margin-bottom:0px">juser2</li>
-<li style="margin-bottom:0px">devuser</li>
-<li style="margin-bottom:0px">testuser</li>
-<li style="margin-bottom:0px">pmuser</li>
-<li style="margin-bottom:0px">Development</li>
-<li style="margin-bottom:0px">Test</li>
-<li style="margin-bottom:0px">Program Management</li>
+<ul> 
+<li>string</li>
+<li>true</li>
+<li>false</li>
+<li>juser</li>
+<li>juser2</li>
+<li>devuser</li>
+<li>testuser</li>
+<li>pmuser</li>
+<li>Development</li>
+<li>Test</li>
+<li>Program Management</li>
 </ul> 
 </td></tr>
 </table>
@@ -190,8 +190,8 @@ In this example, the field contains a string value, two groups, and a global lis
 >The global list name and contents are not displayed.
 
 
-<table Responsive="true" summary="table">
-<tr Responsive="true">
+<table>
+<tr>
 <th scope="col"><p>Example</p></th>
 <th scope="col"><p>Drop-down list values</p></th>
 </tr>
@@ -209,10 +209,10 @@ In this example, the field contains a string value, two groups, and a global lis
 </td>
 <td data-th="Drop-down list values">
 
-<ul style="list-style: none;margin-bottom:0px"> 
-<li style="margin-bottom:0px">string</li>
-<li style="margin-bottom:0px">MyTeam</li>
-<li style="margin-bottom:0px">MyReports</li>
+<ul> 
+<li>string</li>
+<li>MyTeam</li>
+<li>MyReports</li>
 </ul> 
 </td>
 </tr></table> 
@@ -224,7 +224,7 @@ In this example, the field contains a string value, one group, and a global list
 > [!NOTE]    
 >*MyTeam* is a group that is excluded and not expanded, and *BoolValue*s is a global list, so neither one is expanded or shown.
 
-<table Responsive="true" summary="table"><tr Responsive="true"><th scope="col"><p>Example</p></th><th scope="col"><p>Drop-down list values</p></th></tr><tr><td data-th="Example">
+<table><tr><th scope="col"><p>Example</p></th><th scope="col"><p>Drop-down list values</p></th></tr><tr><td data-th="Example">
 
 
 <pre><code>&lt;ALLOWEDVALUES expanditems="true" filteritems="excludegroups"&gt;

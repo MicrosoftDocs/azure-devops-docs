@@ -382,11 +382,11 @@ Now that your two feature teams are configured, you need to move existing work i
 
 1. [Create a query](../../boards/queries/using-queries.md) of all work items you want to reassign. Multi-select those items, which belong to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md).
 
-   <img src="media/add-team/query-bulk-edit-area-path.png" alt="Screenshot of Web portal, Queries page, Bulk modify select work items" style="border: 1px solid #C3C3C3;" />
+   <img src="media/add-team/query-bulk-edit-area-path.png" alt="Screenshot of Web portal, Queries page, Bulk modify select work items" />
 
 2. After you bulk modify, do a bulk save.  
   
-   <img src="media/add-team/query-bulk-save.png" alt="Screenshot of Bulk save edited work items" style="border: 1px solid #C3C3C3;" />  
+   <img src="media/add-team/query-bulk-save.png" alt="Screenshot of Bulk save edited work items" />  
 
 ::: moniker-end
 

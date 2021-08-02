@@ -27,7 +27,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 4. Respond to the prompts to sign in. If you don't already have a Power BI account you will need to create one. Choose **Sign in**.
   
-     <img src="media/publish-2.png" alt="Publishing successful" style="border: 1px solid #C3C3C3;" />
+     <img src="media/publish-2.png" alt="Publishing successful" />
 
 5. Choose the **Open 'file name' in Power BI** link.
 
@@ -43,7 +43,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 11. Choose the **Edit credentials** link next to ODATA under Data source credentials as shown here:
 
-      <img src="media/publish-4.png" alt="Update odata credentials" style="border: 1px solid #C3C3C3;" />
+      <img src="media/publish-4.png" alt="Update odata credentials" />
 
 11. Select the appropriate authentication option. 
 

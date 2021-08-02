@@ -19,7 +19,7 @@ Process configuration defines the default configuration and functional capabilit
 
 Configuration elements specify the work item types (WITs), default columns, fields used by the tools, and other elements. The main configurations made determine which items will display for the portfolio, product, and sprint backlogs by defining the **PortfolioBacklog**, **RequirementBacklog**, and **TaskBacklog** sections of the process configuration XML definition file. In addition, process configuration defines the workflow mapping of state-to-state category for all WITs that require mapping.
 
-<img src="media/process-config-xml-element-groups.png" alt="Process configuration XML elements" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/process-config-xml-element-groups.png" alt="Process configuration XML elements" /> 
 
 For a summary of what you can configure through the user interface, see [Customize work tracking, Add teams and configure their Scrum and Kanban tools](../customize-work.md).
 
@@ -608,7 +608,7 @@ You must specify the day of a week in English, regardless of the installed langu
 
 At a glance, you can differentiate WITs when viewing a query result or backlog based on the color and icon assigned to the WIT. The system applies the color defined for the work item type to the [icon specified for the WIT](#wit-icons).  
 
-<img src="../media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
+<img src="../media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" />  
 
 The Scrum process template defines the following color assignments. Similar ones are made for the Agile and CMMI templates.
 
@@ -761,7 +761,7 @@ The color you associate with your work item states will appear across the produc
 
 Here we show how it appears in the work item form:  
 
-<img src="media/process-config-bug-form-header-state-colors.png" alt="Bug work item form header, State color shown" style="border: 1px solid #C3C3C3;" />  
+<img src="media/process-config-bug-form-header-state-colors.png" alt="Bug work item form header, State color shown" />  
 
 > [!NOTE]    
 >No colors are displayed in the client work item forms or within the old links control within the client form. 
@@ -793,11 +793,11 @@ The system applies the color defined for the work item type to the icon. Colors 
 
 For example, here you see a list view&hellip; 
 
-<img src="media/processconfig-list-wi-with-icons.png" alt="Web portal, list of work items with icons" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/processconfig-list-wi-with-icons.png" alt="Web portal, list of work items with icons" /> 
 
 and, here the icon is shown within the work item form.
 
-<img src="media/process-config-bug-form-header-bug-icon.png" alt="Bug work item form header, Work item type icon shown" style="border: 1px solid #C3C3C3;" />  
+<img src="media/process-config-bug-form-header-bug-icon.png" alt="Bug work item form header, Work item type icon shown" />  
 
 
 ## Related articles

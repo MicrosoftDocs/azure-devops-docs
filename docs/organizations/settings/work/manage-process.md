@@ -58,7 +58,7 @@ You can create an inherited process from any one of the four system processes:[B
 
 1. Enter a name for your process and optionally a description. (For naming restrictions, see [About process customization and inherited processes, Process name restrictions](inheritance-process-model.md#process-naming).
 
-   <img src="media/process/mprocess-create-inherited-process-dialog.png" alt="Create inherited process dialog" style="border: 1px solid #C3C3C3;" />  
+   <img src="media/process/mprocess-create-inherited-process-dialog.png" alt="Create inherited process dialog" />  
 
 Once you've defined the inherited process, you can perform these actions: 
 - [Customize a project using an inherited process](customize-process.md)   
