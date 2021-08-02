@@ -1,6 +1,6 @@
 ---
 title: witAdmin:Customize and manage objects for tracking work 
-titleSuffix: TFS  
+titleSuffix: Azure DevOps Server  
 description: Tracks your team's progress by creating and customizing objects that track work items.
 ms.technology: devops-agile
 ms.custom: witadmin
@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< azure-devops'
-ms.date: 03/20/2018
+ms.date: 08/02/2021
 ---
 
 
@@ -61,10 +61,19 @@ All **witadmin** commands can be run against an on-premises TFS. If you are new 
 
 ## [Fields](manage-work-item-fields.md)
 
+::: moniker range=">= azure-devops-2019"
+- **deletefield**: Delete a field  
+- **listfields**: List field attributes  
+- **changefield**: Change a field attribute   
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
 - **deletefield**: Delete a field  
 - **listfields**: List field attributes  
 - **indexfield**: Turn field indexing on/off  
 - **changefield**: Change a field attribute   
+::: moniker-end
+
 
 ## [Process configuration](witadmin-import-export-process-configuration.md)
   
@@ -94,10 +103,11 @@ All **witadmin** commands can be run against an on-premises TFS. If you are new 
 - **importglobalworkflow**: Import the global workflow file   
 
 
+::: moniker range="< azure-devops-2019"
 ## [Work items](remove-work-items-permanently.md) 
 
 - **destroywi**: Permanently delete work items    
-
+::: moniker-end
 
 ## [Client cache](rebuild-client-cache.md)
   

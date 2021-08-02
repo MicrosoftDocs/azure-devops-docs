@@ -1,7 +1,7 @@
 ---
 title: Import, export, and manage work item types
-titleSuffix: TFS  
-description: Manage work item types for a project in Team Foundation Server (TFS)
+titleSuffix: Azure DevOps Server 
+description: Manage work item types for a project 
 ms.technology: devops-agile
 ms.custom: witadmin
 ms.assetid: 97d7ea1c-df1f-4999-adc9-b38dd2a6cca6
