@@ -18,21 +18,25 @@ As a workaround, you can run *npm audit* with the `--registry=https://registry.n
 >[!WARNING]
 > Running *npm audit* will forward all the packages' names from your *package.json* to the public registry.
 
-## Run 'npm audit' in your pipeline
+## Run npm audit from your pipeline
 
-Below you will find instructions on how to run `npm audit` in your pipeline with both YAML and the designer.
+Select the YAML or the classic tab to learn how to run npm audit from you Pipeline.
 
 # [YAML](#tab/yaml)
+
+Add the following task to your yaml pipeline to scan for security vulnerabilities.
 
 ```yaml
 steps:
 - task: Npm@1
-  displayName: 'npm custom'
+  displayName: 'npm audit'
   inputs:
     command: custom
-    verbose: false
     customCommand: 'audit --registry=https://registry.npmjs.org/'
 ```
+
+- **command**: the npm command to run.
+- **customCommand**: Required when command == custom.
 
 # [Classic](#tab/classic)
 
