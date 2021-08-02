@@ -53,19 +53,17 @@ To use `twine` to publish Python packages, you first need to set up authenticati
 
 # [YAML](#tab/yaml)
 
-To authenticate with `twine`, add the following snippet to your _azure-pipelines.yml_ file.
-
-The example below will enable you to authenticate to a list of Azure Artifacts feeds as well as a list of service connections from external organizations. If you need to authenticate to a single feed, you must replace the following arguments: `artifactFeeds` and `externalFeeds` with `artifactFeed` and `externalFeed` and specify your feed name accordingly.
+To authenticate with `twine`, add the following snippet to your *azure-pipelines.yml* file.
 
 ```yaml
 - task: TwineAuthenticate@1
   inputs:
-    artifactFeed: 'feed_name1, feed_name2'
-    pythonUploadServiceConnection: 'feed_name1, feed_name2'
+    artifactFeed: <ProjectName/FeedName>
+    pythonUploadServiceConnection: <Name_Of_Your_Service_Connection>
 ```
 
-* **artifactFeeds**: an Azure Artifacts feed within your organization. If you only have one Azure Artifacts feed, use **artifactFeed** (singular) instead.
-* **pythonUploadServiceConnection**: a [service connection](../library/service-endpoints.md) from external organizations including PyPI or feeds in other organizations in Azure DevOps.
+* **artifactFeed**: The name of your Azure Artifacts feed.
+* **pythonUploadServiceConnection**: a [service connection](../library/service-endpoints.md#python-package-upload-service-connection) to authenticate with twine.
 
 # [Classic](#tab/classic)
 
