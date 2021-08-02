@@ -112,7 +112,7 @@ The following table describes the fields that you can use to plan and prioritize
 <tr>
     <td><a id="priority" /><p>Priority <sup>1</sup></p></td>
     <td><p>A subjective rating of the bug, issue, task, or test case as it relates to the business. You can specify the following values:</p>
-<ul style="list-style-type:none">
+<ul>
 <li><p><strong>1</strong>: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.</p></li>
 <li><p><strong>2</strong>: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.</p></li>
 <li><p><strong>3</strong>: Resolution of the work item is optional based on resources, time, and risk.</p></li></ul> 
@@ -121,13 +121,13 @@ The following table describes the fields that you can use to plan and prioritize
 </tr>
 <tr>
     <td><a id="risk" /><p>Risk</p></td>
-    <td><p>A subjective rating of the relative uncertainty around the successful completion of a user story.</p><p>Defined allowed values are:</p><ul style="list-style-type:none"><li><p><strong>1 - High</strong></p></li><li><p><strong>2 - Medium</strong></p></li><li><p><strong>3 - Low</strong></p></li></ul>
+    <td><p>A subjective rating of the relative uncertainty around the successful completion of a user story.</p><p>Defined allowed values are:</p><ul><li><p><strong>1 - High</strong></p></li><li><p><strong>2 - Medium</strong></p></li><li><p><strong>3 - Low</strong></p></li></ul>
 <p>Reference name=Microsoft.VSTS.Common.Risk, Data type=String</p></td>
     <td><p>Epic, Feature, User Story (Agile) </p></td>
 </tr>
 <tr>
     <td><p>Severity  <sup>1</sup></p></td>
-    <td><p>A subjective rating of the impact of a bug on the project. You can specify the following values:</p><ul style="list-style-type:none"><li><p><strong>1 - Critical</strong></p></li><li><p><strong>2 - High</strong></p></li><li><p><strong>3 - Medium</strong></p></li><li><p><strong>4 - Low</strong></p></li></ul> 
+    <td><p>A subjective rating of the impact of a bug on the project. You can specify the following values:</p><ul><li><p><strong>1 - Critical</strong></p></li><li><p><strong>2 - High</strong></p></li><li><p><strong>3 - Medium</strong></p></li><li><p><strong>4 - Low</strong></p></li></ul> 
 <p>Reference name=Microsoft.VSTS.Common.Severity, Data type=String</p>  </td>
     <td>Bug, Issue (CMMI), Risk (CMMI)</td>
 </tr>
