@@ -105,7 +105,7 @@ To customize a process template, you customize one or more files associated with
   
 
 #### Teams, groups, permissions, & area and iteration paths 
-<ul style="padding-left:20px;font-size:90%">
+<ul>
  <li><a href="define-classification-plug-in.md" data-raw-source="[Area and iteration paths](define-classification-plug-in.md)">Area and iteration paths</a></li>
  <li><a href="configure-initial-groups-teams-members-permissions.md" data-raw-source="[Groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)">Groups, teams, members, and permissions</a></li>
  <li><a href="/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields" data-raw-source="[Microsoft Project mapping file](/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields)">Microsoft Project mapping file</a></li>
@@ -121,14 +121,14 @@ To customize a process template, you customize one or more files associated with
 
 
 #### Version control, build, lab and test management 
-<ul style="padding-left:20px;font-size:90%">
+<ul>
 <li><a href="control-access-to-functional-areas.md" data-raw-source="[Group permissions](control-access-to-functional-areas.md)">Group permissions</a></li>
 <li><a href="define-initial-configuration-version-control.md" data-raw-source="[Check-in policies](define-initial-configuration-version-control.md)">Check-in policies</a></li>
 <li><a href="define-initial-configuration-test-manager.md" data-raw-source="[Test environments, configurations, resolution states, and settings](define-initial-configuration-test-manager.md)">Test environments, configurations, resolution states, and settings</a></li>
 </ul>
 
 #### Reports and project portal 
-<ul style="padding-left:20px;font-size:90%">
+<ul>
 <li><a href="add-reports-to-the-process-template.md" data-raw-source="[Upload reports](add-reports-to-the-process-template.md)">Upload reports</a></li>
 <li><a href="define-project-portal-plug-in.md" data-raw-source="[Upload documents to the project portal](define-project-portal-plug-in.md)">Upload documents to the project portal</a></li> 
 </ul>

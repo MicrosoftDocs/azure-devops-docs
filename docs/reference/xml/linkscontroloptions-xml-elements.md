@@ -29,7 +29,8 @@ The **LinksControlOptions** element is a child element of the **Control** elemen
 - **WorkItemTypeFilters**: Use to restrict the types of work items you can link to from the links control 
 - **Column**: Use to specify the work item fields and link type attributes listed within the links control
 
-<blockquote style="font-size: 13px"><b>Note: </b>The standard <img src="../../boards/media/icons/icon-links-tab-wi.png" alt="Links page icon"/> <a href="../../boards/work-items/work-item-form-controls.md#link-wi" data-raw-source="[Links page](../../boards/work-items/work-item-form-controls.md#link-wi)">Links page</a> provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.<br/></blockquote>      
+> [!NOTE]   
+> The standard :::image type="icon" source="../../boards/media/icons/icon-links-tab-wi.png" border="false"::: [**Links** tab](../../boards/work-items/work-item-form-controls.md#link-wi) provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects. 
 
 ## Summary of what's changed
 
@@ -296,9 +297,8 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p>Required child element of the <strong>WorkItemTypeFilters</strong> container element. Specifies the name of a work item type to include as an allowed type that users can link to from the links control. </p>
 <pre><code>&lt;Filter WorkItemType=&quot;WorkItemTypeName&quot;  /&gt;</code></pre>
 <p>You can specify any work item type defined within the project or project collection, including custom work item types. Typically, the work item types you specify depend on the process used to create your project. See <a href="../../boards/work-items/guidance/choose-process.md" data-raw-source="[Choose a process](../../boards/work-items/guidance/choose-process.md)">Choose a process</a> for details.</p><br/><p>The following lists the default work item types available based on the default system processes:</p>
-<div style="float:left;width:120px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Agile</p>
-<ul style="list-style-type:none;padding-left:10px">
+<p>Agile</p>
+<ul>
 <li>Bug</li>
 <li>Epic</li>
 <li>Feature</li>
@@ -307,11 +307,8 @@ The following table describes the **LinksControlOptions** element and its child 
 <li>Test Case</li>
 <li>User Story</li>
 </ul>
-</div>
-
-<div style="float:left;width:180px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Scrum</p>
-<ul style="list-style-type:none;padding-left:20px">
+<p>Scrum</p>
+<ul>
 <li>Bug</li>
 <li>Epic</li>
 <li>Feature</li>
@@ -320,11 +317,8 @@ The following table describes the **LinksControlOptions** element and its child 
 <li>Task</li>
 <li>Test Case</li>
 </ul>
-</div>
-
-<div style="float:left;width:120px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">CMMI</p>
-<ul style="list-style-type:none;padding-left:30px">
+<p>CMMI</p>
+<ul>
 <li>Bug</li>
 <li>Change Request</li>
 <li>Epic</li>
@@ -336,11 +330,6 @@ The following table describes the **LinksControlOptions** element and its child 
 <li>Task</li>
 <li>Test Case</li>
 </ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
 </td>
 </tr>
 <tr>
