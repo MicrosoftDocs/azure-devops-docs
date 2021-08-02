@@ -19,7 +19,7 @@ ms.date: 03/20/2018
 You can manage work item types for a project by using the following **witadmin** commands:  
 -   **destroywitd**:  Destroys a work item type, and destroys every work item of that type permanently without recovery.    
 -   **exportwitd**:  Exports the definition of a work item type to an XML file, or to the Command Prompt window.    
--   **importwitd**:  Imports work item types from an XML definition file into a project on a server that runs Team Foundation Server. If a work item type with the same name already exists, the new work item type definition overwrites the existing one. If the work item type does not already exist, this command creates a new work item type. To validate the XML that defines a work item type, but not import the file, you use the **/v** option.   
+-   **importwitd**:  Imports work item types from an XML definition file into a project. If a work item type with the same name already exists, the new work item type definition overwrites the existing one. If the work item type doesn't exist, a new work item type is created. To validate the XML that defines a work item type, but not import the file, use the **/v** option.   
 -   **listwitd**:  Displays the names of the work item types in the specified project in the Command Prompt window. 
 -   **renamewitd**:  Changes the display name of a work item type within a specific project. After you run this command, work items of this type show the new name.  
   
@@ -132,7 +132,7 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
   
 ## Q & A  
   
-### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
+### Q: What customizations can I make and still use the Configure Features Wizard to update my project after an upgrade?  
 
 **A:** You can add custom WITs and change the form layout. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.  
   
