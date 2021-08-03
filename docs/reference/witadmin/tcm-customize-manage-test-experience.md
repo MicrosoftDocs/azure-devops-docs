@@ -1,6 +1,6 @@
 ---
 title: Customize and manage the test experience
-titleSuffix: TFS  
+titleSuffix: Azure DevOps Server 
 description: Learn how to customize and manage the test experience
 ms.technology: devops-agile
 ms.custom: witadmin
