@@ -18,11 +18,9 @@ ms.date: 12/15/2017
 
 
 > [!IMPORTANT]  
-> This topic applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../organizations/settings/work/customize-process.md). 
->
-> For an overview of process models, see [Customize your work tracking experience](customize-work.md).   
+> This article applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](customize-work.md).   
 
-To satisfy other business processes, your team may want to track additional work item types (WITs) as requirements or as tasks. This way, you can add them and track them within the product and sprint backlogs or Kanban and task boards. 
+To satisfy select business processes, your team may want to track additional work item types (WITs) as requirements or as tasks. This way, you can add them and track them within the product and sprint backlogs or Kanban and task boards. 
 
 For example, you may want to track different types of requirements based on their target customer, or different types of bugs based on their source. Here the Fabrikam Fiber team has added the Service App WIT to track work that supports their customer service team.   
 
@@ -41,7 +39,8 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 > We recommend that you add a WIT to one and only one of the following categories: Requirement Category, Task Category, or Bug Category. The system prevents you from adding the same WIT to both the Requirement Category and Task Category. WITs that you add to the Bug Category will follow the [bug behavior set for the team](../organizations/settings/show-bugs-on-backlog.md). 
 
 <a id="first-steps">  </a>
-## First steps
+
+## Customization sequence
 
 ### Hosted XML process model customization sequence  
 
@@ -75,42 +74,47 @@ You'll first export your work tracking definition files, update them, and then i
 
 WITs that you add to the Requirement Category show up on the product backlog and Kanban board. You must make sure that the WIT definition contains required fields to support the Agile planning tools.  
 
-
 1. Export your process (Hosted XML) or your definition files (On-premises XML) as indicated in [First steps](#first-steps).
 2. Edit the WIT definition to support planning tools. 
-   <table>
-   <tbody valign="top">
-   <tr>
-   <th>Customize</th>
-   <th>Syntax to add or update</th>
-   </tr>
-   <tr>
-   <td>
-   Stack rank field (Agile, CMMI)
-   </td>
-   <td><pre><code>
-   &lt;FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension"/&gt;     
+   :::row:::
+   :::column span="1":::
+      **Customize**
+   :::column-end::: 
+   :::column span="4":::
+      **Syntax to add or update**
+   :::column-end:::
+   :::row-end:::
+   :::row:::
+   :::column span="1":::
+      **Stack Rank** field
+   :::column-end::: 
+   :::column span="4":::
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      &lt;FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension"/&gt;     
       &lt;HELPTEXT>Work first on items with lower-valued stack rank. Set in triage. 
       &lt;/HELPTEXT/&gt;      
-   &lt;/FIELD/&gt; 
-   </code></pre></td>
-   </tr>
-
-   <tr>
-   <td>
-   Backlog priority field (Scrum)
-   </td>
-   <td><pre><code>
-   &lt;FIELD name="Backlog Priority" refname="Microsoft.VSTS.Common.BacklogPriority" type="Double" reportable="detail" /&gt; 
-   </code></pre></td>
-   </tr>
-
-   <tr>
-   <td>
-   Value Area field  
-   </td>
-   <td><pre><code>
-   &lt;FIELD name="Value Area" refname="Microsoft.VSTS.Common.ValueArea" type="String"&gt; 
+      &lt;/FIELD/&gt; 
+      ```
+   :::row:::
+   :::column span="1":::
+      **Backlog Priority** field (Scrum)
+   :::column-end::: 
+   :::column span="4":::
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      &lt;FIELD name="Backlog Priority" refname="Microsoft.VSTS.Common.BacklogPriority" type="Double" reportable="detail" /&gt; 
+      ```  
+   :::column-end:::
+   :::row-end:::
+   :::row:::
+   :::column span="1":::
+      **Value Area** field
+   :::column-end::: 
+   :::column span="4":::
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      &lt;FIELD name="Value Area" refname="Microsoft.VSTS.Common.ValueArea" type="String"&gt; 
       &lt;REQUIRED /&gt;   
       &lt;ALLOWEDVALUES&gt;   
          &lt;LISTITEM value="Architectural" /&gt;  
@@ -120,14 +124,17 @@ WITs that you add to the Requirement Category show up on the product backlog and
       &lt;HELPTEXT>Business = delivers value to a user or another system; Architectural = work to support other stories or components  
       &lt;/HELPTEXT&gt;   
       &lt;/FIELD&gt; 
-   </code></pre></td>
-   </tr>
-   <tr>
-   <td>
-   Requirement Type field (CMMI)
-   </td>
-   <td><pre><code>
-   &lt;FIELD name="Requirement Type" refname="Microsoft.VSTS.CMMI.RequirementType" type="String" reportable="dimension"&gt;  
+      ```  
+   :::column-end:::
+   :::row-end:::
+   :::row:::
+   :::column span="1":::
+      **Requirement Type** field (CMMI)
+   :::column-end::: 
+   :::column span="4":::
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      &lt;FIELD name="Requirement Type" refname="Microsoft.VSTS.CMMI.RequirementType" type="String" reportable="dimension"&gt;  
       &lt;REQUIRED /&gt;  
       &lt;ALLOWEDVALUES&gt;  
          &lt;LISTITEM value="Scenario" /&gt;  
@@ -141,54 +148,53 @@ WITs that you add to the Requirement Category show up on the product backlog and
          &lt;LISTITEM value="Feature" /&gt;  
       &lt;/ALLOWEDVALUES&gt;  
       &lt;DEFAULT from="value" value="Functional" /&gt;  
-   &lt;/FIELD&gt;  
-   </code></pre></td>
-   </tr>
-   <tr>
-   <td>
-   `WORKFLOW` section
-   </td>
-   <td>
-   <p>Update or verify the `WORKFLOW` section as follows: </p>
-   <ul>
-   <li>Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`  </li>
-   <li>Scrum, Product backlog item: Add transition from `Committed` to `Removed` </li>
-   </ul>
-   <p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `RequirementBacklog` section](/previous-versions/azure/devops/reference/upgrade/add-features-manually#update-processconfiguration). </p>
-   </td>
-   </tr>
-   <tr>
-   <td>
-   `FORM` section
-   </td>
-   <td>
-   <p>Add or verify the following fields have been added to the ```FORM``` section: </p>
-   <ul>
-   <li>Agile:<pre><code>
-   &lt;Control FieldName="Microsoft.VSTS.Scheduling.StoryPoints" Type="FieldControl" Label="Story Points" LabelPosition="Left" /&gt;  
-   &lt;Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" /&gt;
-   </code></pre> 
-   </li>
-   <li>CMMI:<pre><code>
-   &lt;Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.Size" Label="Size" LabelPosition="Left" /&gt;
-   &lt;Control Type="FieldControl" FieldName="Microsoft.VSTS.CMMI.RequirementType" Label="Type" LabelPosition="Left" /&gt; 
-   &lt;Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" /&gt;
-   </code></pre> 
-   </li>
-       <li>Scrum:<pre><code>
-   &lt;Control FieldName="Microsoft.VSTS.Scheduling.Effort" Type="FieldControl" Label="Effort" LabelPosition="Left" /&gt;  
-   &lt;Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" /&gt; 
-   </code></pre>  
-   </li>
-   </ul>
-   </td>
-   </tr>
-   </tbody>
-   </table>  
+      &lt;/FIELD&gt;
+      ```  
+   :::column-end:::
+   :::row-end:::
+   :::row:::
+   :::column span="1":::
+      `WORKFLOW` section
+   :::column-end::: 
+   :::column span="4":::
+      Update or verify the `WORKFLOW` section as follows: 
+      - Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`   
+      - Scrum, Product backlog item: Add transition from `Committed` to `Removed`  
+      If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `RequirementBacklog` section](/previous-versions/azure/devops/reference/upgrade/add-features-manually#update-processconfiguration).
+   :::column-end:::
+   :::row-end:::
+   :::row:::
+   :::column span="1":::
+      `FORM` section
+   :::column-end:::
+   :::row-end:::
+   :::row:::
+   :::column span="4":::
+      Add or verify the following fields have been added to the ```FORM``` section:  
+      - **Agile:** 
+        > [!div class="tabbedCodeSnippets"]
+        ```XML
+        &lt;Control FieldName="Microsoft.VSTS.Scheduling.StoryPoints" Type="FieldControl" Label="Story Points" LabelPosition="Left" /&gt;  
+        &lt;Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" /&gt;  
+      - **CMMI:**  
+        > [!div class="tabbedCodeSnippets"]
+        ```XML
+        &lt;Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.Size" Label="Size" LabelPosition="Left" /&gt;
+        &lt;Control Type="FieldControl" FieldName="Microsoft.VSTS.CMMI.RequirementType" Label="Type" LabelPosition="Left" /&gt; 
+        &lt;Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" /&gt;  
+      - **Scrum:**
+        > [!div class="tabbedCodeSnippets"]
+        ```XML
+        &lt;Control FieldName="Microsoft.VSTS.Scheduling.Effort" Type="FieldControl" Label="Effort" LabelPosition="Left" /&gt;  
+        &lt;Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" /&gt;  
+   :::column-end:::
+   :::row-end:::
+   :::row:::
 
 3. Edit the Categories definition. Add the WIT to the Requirement category. Here we add Service App.  
 
-   ```xml
+    > [!div class="tabbedCodeSnippets"]
+    ```XML
     <CATEGORY name="Requirement Category" refname="Microsoft.RequirementCategory">
        <DEFAULTWORKITEMTYPE name="User Story" />
        <WORKITEMTYPE name="Service App" />
@@ -196,26 +202,26 @@ WITs that you add to the Requirement Category show up on the product backlog and
    ```
 
 4. Update or verify ProcessConfiguration definition: ```RequirementBacklog``` section for the WIT you're adding. Specifically, make sure that the following conditions are met:
-   <ul>
-   <li>Map the start of each workflow state to ```type="Proposed"``` </li>
-   <li>Map each intermediate workflow state you want to have show up on the Kanban board to ```type="InProgress"``` </li>
-   <li>Map the end of each workflow state to ```type="Complete"``` </li>
-   <li>Make sure that you have only one State mapped to ```type="Complete"```</li>
-   </ul>
+	- Map the start of each workflow state to `type="Proposed"` 
+	- Map each intermediate workflow state you want to have show up on the Kanban board to `type="InProgress"` 
+	- Map the end of each workflow state to `type="Complete"`
+	- Make sure that you have only one State mapped to `type="Complete"`  
    For example, add the Pending workflow state:  
-  <code>
-   <States>    
+    > [!div class="tabbedCodeSnippets"]
+    ```XML
+    <States>    
          <State value="New" type="Proposed" />  
          <State value="Active" type="InProgress" />  
          <State value="Pending" type="InProgress" />  
          <State value="Resolved" type="InProgress" />  
          <State value="Closed" type="Complete" />  
-   </States>   
-   </code>
-5. Add the WIT color definition to the ProcessConfiguration ```WorkItemColors``` section. For example:   
-   ```xml
-   <WorkItemColor primary="FF33CC33" secondary="FFD6F5D6" name="Service App" />
-   ```  
+    </States>   
+	```
+5. Add the WIT color definition to the ProcessConfiguration `WorkItemColors` section. For example:   
+    > [!div class="tabbedCodeSnippets"]
+    ```XML
+    <WorkItemColor primary="FF33CC33" secondary="FFD6F5D6" name="Service App" />
+    ```  
 
 6. Update your project:  
    - **Hosted XML:**  [Import your process](../organizations/settings/work/import-process/import-process.md).  
