@@ -8,6 +8,7 @@ ms.author: ronai
 author: RoopeshNair
 ms.date: 08/03/2021
 monikerRange: '>= tfs-2015'
+"recommendations": "true"
 ---
 
 # Stage templates
@@ -41,7 +42,7 @@ You can save a stage template from within your classic release pipeline.
 
 ## Use a stage template
 
-1. From within your release pipeline, select **Add** to add a stage. 
+1. From within your release pipeline definition, select **Add** to add a stage. 
 
 1. Select **New stage**.
 
@@ -51,24 +52,25 @@ You can save a stage template from within your classic release pipeline.
 
     :::image type="content" source="media/load-custom-stage-template.png" alt-text="Screenshot showing how to load a custom stage template":::
 
-## FAQ
+## FAQs
 
-- **Can I export templates or share them with other subscriptions, enterprises, or projects?**
+### Q: Can I export templates or share them with other subscriptions, enterprises, or projects?
 
-Custom templates that you create are scoped to the project that you created them in.
-Templates cannot be exported or shared with another project, collection, server, or organization.
-You can, however, export a release pipeline and import it into another project, collection, server, or subscription.
-Then you can re-create the template for use in that location.
+Custom templates are scoped to the project that hosts them. Templates cannot be exported or shared with other projects, collections, servers, or organizations.
+You can, however, export a release pipeline into another project, collection, server, or subscription and then re-create the template and use it in that new location.
 
-- **How do I delete a custom stage template?**
+### Q: How do I delete a custom stage template?
 
-You can delete an existing custom template from the list of templates that is displayed when you add a new stage to our pipeline.
+Existing custom templates can be deleted from the *Select a Template* window panel. From within your release pipeline definition, select **Add** > **New Stage** to access the list of templates.
 
-> [!div class="mx-imgBorder"]
-> ![Delete custom template](media/delete-custom-template.png)
+    :::image type="content" source="media/delete-custom-template.png" alt-text="Screenshot showing how to delete a custom stage template":::
 
-- **How do I update a custom stage template?**
+### Q: How do I update a custom stage template?
 
-To update a stage template, delete the existing template in a release pipeline and then save the stage as a template with the same name.
+To update a stage template, delete the existing one from the list of templates, and then save the new one with the same name.
 
-[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
+## Related articles
+
+- [Deploy pull request Artifacts ](deploy-pull-request-builds.md).
+- [Deploy from multiple branches](deploy-multiple-branches.md).
+- [View release progress and test summary](visualize-release-test-progress.md).
