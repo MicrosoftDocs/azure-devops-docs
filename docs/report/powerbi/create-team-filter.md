@@ -133,7 +133,7 @@ The last step is to create the necessary relationships in Power BI.
 
 6. Return to the **Report** view, and open the context menu for *TeamName* and *TeamSK* fields and choose the **Hide** option. <!--- Hide Area and AreaToTeam Tables --> 
 
-    <img src="media/HideArea.png" alt="Hide Area" style="border: 1px solid #C3C3C3;" />
+    <img src="media/HideArea.png" alt="Hide Area" />
 
 7. Hide corresponding SKs in your *View* and *Team* tables. 
 

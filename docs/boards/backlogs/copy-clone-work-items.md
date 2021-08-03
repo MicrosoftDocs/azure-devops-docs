@@ -226,13 +226,13 @@ The formatted table contains a link to each work item included in your selected 
 ::: moniker range=">= tfs-2017"
 Copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](media/icon-copy-to-clipboard.png) copy-to-clipboard icon.  
 
-<img src="media/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #CCCCCC;" />
+<img src="media/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" />
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015" 
 Right click the link ID to open the browser copy link option.
 
-<img src="media/copy-work-item-url-2015.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #CCCCCC;" /> 
+<img src="media/copy-work-item-url-2015.png" alt="Copy hyperlink for a work item from web portal" /> 
 ::: moniker-end
 
 

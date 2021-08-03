@@ -128,7 +128,7 @@ Work items shown in bold text indicate that local changes have not yet been save
 ::: moniker range=">= azure-devops-2019"
 Choose **Save items** to save all work items you've modified. 
 
-<img src="media/triage-queries/save-work-items-new-exp.png" alt="Choose Save work items to save all modified work items" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/triage-queries/save-work-items-new-exp.png" alt="Choose Save work items to save all modified work items" /> 
 
 ::: moniker-end
 

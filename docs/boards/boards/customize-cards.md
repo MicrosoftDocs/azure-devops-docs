@@ -546,7 +546,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 From a card on the Kanban board, you can easily navigate to the underlying test plan and test suite under which the tests are created. Choose the :::image type="icon" source="../../media/icons/open-icon.png" border="false"::: open icon to open another browser tab showing **Test** and associated test plan and test suite that controls the inline tests.
 
-<img src="media/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" style="border: 1px solid #C3C3C3;" />  
+<img src="media/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" />  
 
 ::: moniker-end
 

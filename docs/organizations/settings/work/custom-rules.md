@@ -60,7 +60,7 @@ You add fields to a selected work item type.
 
     Here we define that the **Acceptance Criteria** field is required when the **State** changes to **Active** and it is currently empty.
 
-    <img src="media/process/custom-rule-create-rule-form.png" alt="New rule form" style="border: 1px solid #C3C3C3;" />
+    <img src="media/process/custom-rule-create-rule-form.png" alt="New rule form" />
   
 	The sequence of actions you specify doesn't impact the behavior of the rule itself or its behavior with respect to other rules defined for the same WIT.
 

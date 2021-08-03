@@ -182,7 +182,7 @@ To configure a widget, add the widget to a dashboard and then choose the ![confi
  
 Once you've configured the widget, you can edit it by opening the actions menu. 
 
-<img src="media/add-widget-configure.png" alt="Edit configured widget " style="border: 2px solid #C3C3C3;" /> 
+<img src="media/add-widget-configure.png" alt="Edit configured widget " /> 
 
 ::: moniker-end
 
@@ -257,7 +257,7 @@ To copy a configured widget to another team dashboard, choose the ![Actions icon
 
 To copy a configured widget to another team dashboard, choose the ![Actions icon](../../media/icons/actions-icon.png) actions icon and select **Add to dashboard** and then the dashboard to copy it to. 
 
-<img src="media/dashboards-copy-widget.png" alt="Copy a widget to another team dashboard" style="border: 2px solid #C3C3C3;" />  
+<img src="media/dashboards-copy-widget.png" alt="Copy a widget to another team dashboard" />  
 ::: moniker-end
 
 
@@ -267,7 +267,7 @@ Some widgets are pre-sized and can't be changed. Others are configurable through
 
 For example, the Chart for work items widget allows you to select an area size ranging from 2 x 2  to 4 x 4 (tiles).  
 
-<img src="media/add-widget-size.png" alt="Change widget size" style="border: 2px solid #C3C3C3;" />  
+<img src="media/add-widget-size.png" alt="Change widget size" />  
 
 ## Extensibility and Marketplace widgets
 
@@ -276,7 +276,7 @@ In addition to the widgets described in the Widget catalog, you can add widgets 
 ### Disabled Marketplace widget 
 If your organization owner or project collection administrator disables a marketplace widget, you'll see the following image: 
 
-<img src="media/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" style="border: 2px solid #C3C3C3;" />   
+<img src="media/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" />   
 
 To regain access to it, request your admin to reinstate or reinstall the widget. 
 

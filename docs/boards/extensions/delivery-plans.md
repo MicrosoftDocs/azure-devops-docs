@@ -160,15 +160,15 @@ Once you've defined a plan, you can further customize it.
 
      Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
 
-     <img src="media/plans/review-team-plans-set-field-criteria.png" alt="Settings dialog, Fields page" style="border: 2px solid #C3C3C3;" />
+     <img src="media/plans/review-team-plans-set-field-criteria.png" alt="Settings dialog, Fields page" />
 
 3. To set a marker, open the Markers page, specify a date and select a color. 	
 
-	<img src="media/plans/review-team-plans-set-markers.png" alt="Open the Markers page, specify a date and select a color." style="border: 2px solid #C3C3C3;" />
+	<img src="media/plans/review-team-plans-set-markers.png" alt="Open the Markers page, specify a date and select a color." />
 
 	Markers appear on the plan as shown: 
 
-	<img src="media/plans/review-team-plans-show-markers.png" alt="Plans, Markers appear on calendar slide" style="border: 2px solid #C3C3C3;" />
+	<img src="media/plans/review-team-plans-show-markers.png" alt="Plans, Markers appear on calendar slide" />
 
 
 ## Open a plan  
@@ -201,7 +201,7 @@ You can interact with the plan in the following ways:
 
 In the following example, Team 1 features expanded, two items are scheduled for delivery in Sprint 50. 
 
-<img src="media/plans/review-tp-show-team-1.png" alt="Team rows in plans" style="border: 2px solid #C3C3C3;" />
+<img src="media/plans/review-tp-show-team-1.png" alt="Team rows in plans" />
 
 You can also quickly see that:  
 * Team 1 is currently working on Sprint 50 deliverables

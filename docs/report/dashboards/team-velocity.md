@@ -297,7 +297,7 @@ You configure your velocity widget for a single team. If you want to view the ve
 	
 	Modify the title, select the team, and then choose either the backlog level or work item type to track. Select whether you want to track a count of work items or a sum of a numeric field. The most common summed field is that of Effort, Story Points, or Size.     
 
-	<img src="media/team-velocity-config-dialog.png" alt="Configure dialog, Velocity widget" style="border: 2px solid #C3C3C3;" />    
+	<img src="media/team-velocity-config-dialog.png" alt="Configure dialog, Velocity widget" />    
 
 1. Specify the number of sprints you want to view. The default is 6 and the maximum is 15.    
 
