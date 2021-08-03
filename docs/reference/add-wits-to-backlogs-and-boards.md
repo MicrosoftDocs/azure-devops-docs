@@ -78,17 +78,12 @@ WITs that you add to the Requirement Category show up on the product backlog and
 2. Edit the WIT definition to support planning tools. 
    :::row:::
    :::column span="1":::
-      **Customize**
+      **Customize / Syntax to add or update **
    :::column-end::: 
-   :::column span="4":::
-      **Syntax to add or update**
-   :::column-end:::
    :::row-end:::
    :::row:::
    :::column span="1":::
       **Stack Rank** field
-   :::column-end::: 
-   :::column span="4":::
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension">     
@@ -101,8 +96,6 @@ WITs that you add to the Requirement Category show up on the product backlog and
    :::row:::
    :::column span="1":::
       **Backlog Priority** field (Scrum)
-   :::column-end::: 
-   :::column span="4":::
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <FIELD name="Backlog Priority" refname="Microsoft.VSTS.Common.BacklogPriority" type="Double" reportable="detail" /> 
@@ -112,8 +105,6 @@ WITs that you add to the Requirement Category show up on the product backlog and
    :::row:::
    :::column span="1":::
       **Value Area** field
-   :::column-end::: 
-   :::column span="4":::
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <FIELD name="Value Area" refname="Microsoft.VSTS.Common.ValueArea" type="String"&gt; 
@@ -132,8 +123,6 @@ WITs that you add to the Requirement Category show up on the product backlog and
    :::row:::
    :::column span="1":::
       **Requirement Type** field (CMMI)
-   :::column-end::: 
-   :::column span="4":::
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <FIELD name="Requirement Type" refname="Microsoft.VSTS.CMMI.RequirementType" type="String" reportable="dimension">  
@@ -157,8 +146,6 @@ WITs that you add to the Requirement Category show up on the product backlog and
    :::row:::
    :::column span="1":::
       `WORKFLOW` section
-   :::column-end::: 
-   :::column span="4":::
       Update or verify the `WORKFLOW` section as follows: 
       - Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate `Activated By` and `Activated Date` fields when state=`Resolved`   
       - Scrum, Product backlog item: Add transition from `Committed` to `Removed`  
@@ -168,25 +155,26 @@ WITs that you add to the Requirement Category show up on the product backlog and
    :::row:::
    :::column span="1":::
       `FORM` section
-   :::column-end:::
-   :::column span="4":::
       Add or verify the following fields have been added to the ```FORM``` section:  
       - **Agile:** 
         > [!div class="tabbedCodeSnippets"]
         ```XML
         <Control FieldName="Microsoft.VSTS.Scheduling.StoryPoints" Type="FieldControl" Label="Story Points" LabelPosition="Left" />  
         <Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />  
+        ```
       - **CMMI:**  
         > [!div class="tabbedCodeSnippets"]
         ```XML
         <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.Size" Label="Size" LabelPosition="Left" />
         <Control Type="FieldControl" FieldName="Microsoft.VSTS.CMMI.RequirementType" Label="Type" LabelPosition="Left" /> 
        <Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />  
+        ```
       - **Scrum:**
         > [!div class="tabbedCodeSnippets"]
         ```XML
         <Control FieldName="Microsoft.VSTS.Scheduling.Effort" Type="FieldControl" Label="Effort" LabelPosition="Left" />  
         <Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />  
+        ```
    :::column-end:::
    :::row-end:::
    :::row:::
