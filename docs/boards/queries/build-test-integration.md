@@ -320,7 +320,7 @@ When the **Integration Build** field is present in the WIT definition, Team Foun
 
 ### Builds and global list auto-population
 
-The first time you queue a build for a project using Team Foundation Build, TFS automatically adds a global list labeled <strong>Build - <project name></strong>. Each time a build is run, a <strong>LISTITEM</strong> is added to this global list with the name of the build.
+The first time you queue a build for a project using Team Foundation Build, TFS automatically adds a global list labeled <strong>Build - <em>ProjectName</em></strong>. Each time a build is run, a <strong>LISTITEM</strong> is added to this global list with the name of the build.
 
 ::: moniker range="< azure-devops"
 

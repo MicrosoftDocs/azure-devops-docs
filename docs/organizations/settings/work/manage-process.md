@@ -148,9 +148,9 @@ It's a good practice to test the customizations you make before rolling out the 
 	
 1. Make your changes to the copied process. Since no project is using this process, these changes do not impact any project. 
 
-1. To verify your changes, create a test project based on the copied and updated process. If you have already created a test project, change the process of the test project using the [**Change project to use <process name>**](#migrate) option from the context menu. 
+1. To verify your changes, create a test project based on the copied and updated process. If you have already created a test project, change the process of the test project using the [**Change project to use <em>ProcessName</em>**](#migrate) option from the context menu. 
 
-1. Once you have fully tested your customizations, you're ready to roll out your changes to all projects. To do this, change the process of the projects which need the new changes. Select the [**Change project to use <process name>**](#migrate) option from the context menu.  
+1. Once you have fully tested your customizations, you're ready to roll out your changes to all projects. To do this, change the process of the projects which need the new changes. Select the [**Change project to use <em>ProcessName</em>**](#migrate) option from the context menu.  
 
 1.  Disable or delete the original process. 
  

@@ -203,7 +203,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
    <li>Make sure that you have only one State mapped to ```type="Complete"```</li>
    </ul>
    For example, add the Pending workflow state:  
-   ```xml
+  <code>
    <States>    
          <State value="New" type="Proposed" />  
          <State value="Active" type="InProgress" />  
@@ -211,7 +211,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
          <State value="Resolved" type="InProgress" />  
          <State value="Closed" type="Complete" />  
    </States>   
-   ```
+   </code>
 5. Add the WIT color definition to the ProcessConfiguration ```WorkItemColors``` section. For example:   
    ```xml
    <WorkItemColor primary="FF33CC33" secondary="FFD6F5D6" name="Service App" />
@@ -365,13 +365,12 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
    </table>  
 
 3. Edit the Categories definition. Add the WIT to the Task category. Here we add Service Task.  
-
-   ```xml
+   <code>
     <CATEGORY name="Task Category" refname="Microsoft.TaskCategory">
        <DEFAULTWORKITEMTYPE name="Task" />
        <WORKITEMTYPE name="Service Task" />
     </CATEGORY>
-   ```
+   </code>
 
 4. Update or verify ProcessConfiguration definition: ```TaskBacklog``` section for the WIT you're adding.  
 
@@ -438,7 +437,7 @@ WITs that you add to the Bug Category will be treated based on the [team setting
    <li>Make sure that you have only one State mapped to ```type="Complete"```</li>
    </ul>
    For example, add the Investigate workflow state:  
-   ```xml
+   <code>
    <States>  
      <State value="New" type="Proposed" />  
      <State value="Active" type="InProgress" />  
@@ -446,7 +445,7 @@ WITs that you add to the Bug Category will be treated based on the [team setting
      <State value="Resolved" type="InProgress" />  
      <State value="Closed" type="Complete" />  
    </States>  
-   ```
+   </code>
 5. Add the WIT color definition to the ProcessConfiguration ```WorkItemColors``` section. For example:  
    ```xml
    <WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Service Bug" />  
