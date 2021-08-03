@@ -1,31 +1,27 @@
 ---
-title: Use stage templates in deployments
+title: Use stage templates in release pipelines
 ms.custom: seodec18
-description: DevOps CI CD - Understand stage templates in Azure Pipelines and Team Foundation Server (TFS)
+description: How to use stage templates in Azure Pipelines
 ms.assetid: BE9E2883-5CEB-4A91-A038-CB45B728A0C4
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/18/2020
+ms.date: 08/03/2021
 monikerRange: '>= tfs-2015'
 ---
 
-# Stage templates in Azure Pipelines
+# Stage templates
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+Azure Pipelines provide a list of stage templates you can choose from when creating a new release pipeline or adding a stage to your existing one. The templates are pre-defined with the appropriate tasks and settings to help you save time and effort when creating your release pipeline.
 
-When you start a new release pipeline, or when you add a stage to an existing release pipeline, you can choose from a list of templates for each stage. These templates pre-populate the stage with the appropriate tasks and settings, which can considerably reduce the time and effort required to create a release pipeline for your DevOps CI/CD processes.
+Aside from the pre-defined templates, you can also create your own custom stage templates based on your specific needs.
 
-A set of pre-defined stage templates is available in Azure Pipelines and in each version of TFS. You can use these templates when you create a new release pipeline or add a new stage to a pipeline. You can also create your own custom stage templates from a stage you have populated and configured.
+When a stage is created from a template, the tasks in the template are copied over to the stage. Any further updates to the template have no impact on existing stages. If you are trying to add multiple stages to your release pipeline and update them all in one operation, you should use [task groups](../library/task-groups.md) instead.
 
 > [!NOTE]
-> Templates do not have any additional security capability. There is no way to restrict the use of a template to specific users. All templates, pre-defined and custom, are available for use by all users who have permission to create release pipelines.
-
-When a stage is created from a template, the tasks in the template are copied over to the stage. Any further updates to the template have no impact on existing stages. If you want a way to easily insert a number of stages into release pipelines (perhaps to keep the definitions consistent) and to enable these stages to all be updated in one operation, use [task groups](../library/task-groups.md) instead of stage templates.
+> Templates cannot be restrict to specific users or groups. All templates, pre-defined or custom, are available to all users who have the permission to create release pipelines.
 
 ## Save a template
 
