@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '< azure-devops' 
-ms.date: 12/15/2017  
+ms.date: 08/03/2021  
 ---
 
 # Add a work item type to a backlog and board
@@ -78,12 +78,12 @@ WITs that you add to the Requirement Category show up on the product backlog and
 2. Edit the WIT definition to support planning tools. 
    :::row:::
    :::column span="1":::
-      **Customize / Syntax to add or update **
+      **Customize / Syntax to add or update**
    :::column-end::: 
    :::row-end:::
    :::row:::
    :::column span="1":::
-      **Stack Rank** field
+      **Stack Rank** field (Agile, CMMI) 
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension">     
@@ -128,15 +128,15 @@ WITs that you add to the Requirement Category show up on the product backlog and
       <FIELD name="Requirement Type" refname="Microsoft.VSTS.CMMI.RequirementType" type="String" reportable="dimension">  
       <REQUIRED />  
       <ALLOWEDVALUES>  
-         &lt;LISTITEM value="Scenario" />  
-         &lt;LISTITEM value="Quality of Service" />  
-         &lt;LISTITEM value="Functional" /> 
-         &lt;LISTITEM value="Operational" />  
-         &lt;LISTITEM value="Interface" />  
-         &lt;LISTITEM value="Security" />  
-         &lt;LISTITEM value="Safety" />  
-         &lt;LISTITEM value="Business Objective" />  
-         &lt;LISTITEM value="Feature" />  
+         <LISTITEM value="Scenario" />  
+         <LISTITEM value="Quality of Service" />  
+         <LISTITEM value="Functional" /> 
+         <LISTITEM value="Operational" />  
+         <LISTITEM value="Interface" />  
+         <LISTITEM value="Security" />  
+         <LISTITEM value="Safety" />  
+         <LISTITEM value="Business Objective" />  
+         <LISTITEM value="Feature" />  
       </ALLOWEDVALUES> 
       <DEFAULT from="value" value="Functional" />  
       </FIELD>
@@ -189,7 +189,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
     </CATEGORY>
    ```
 
-4. Update or verify ProcessConfiguration definition: ```RequirementBacklog``` section for the WIT you're adding. Specifically, make sure that the following conditions are met:
+4. Update or verify ProcessConfiguration definition: `RequirementBacklog` section for the WIT you're adding. Specifically, make sure that the following conditions are met:
 	- Map the start of each workflow state to `type="Proposed"` 
 	- Map each intermediate workflow state you want to have show up on the Kanban board to `type="InProgress"` 
 	- Map the end of each workflow state to `type="Complete"`
@@ -231,17 +231,12 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 2. Edit the WIT definition to support planning tools. 
    :::row:::
    :::column span="1":::
-      **Customize**
-   :::column-end::: 
-   :::column span="4":::
-      **Syntax to add or update**
+      **Customize / Syntax to add or update**
    :::column-end:::
    :::row-end:::
    :::row:::
    :::column span="1":::
-      Stack rank field(Agile, CMMI)
-   :::column-end::: 
-   :::column span="4":::
+      **Stack Rank** field(Agile, CMMI)
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension">  
@@ -253,9 +248,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
    :::row-end:::
    :::row:::
    :::column span="1":::
-      Backlog priority field (Scrum)
-   :::column-end::: 
-   :::column span="4":::
+     ** Backlog Priority** field (Scrum)
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <FIELD name="Backlog Priority" refname="Microsoft.VSTS.Common.BacklogPriority" type="Double" reportable="detail" />   
@@ -264,9 +257,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
    :::row-end:::
    :::row:::
    :::column span="1":::
-      Activity field (Agile, Scrum)
-   :::column-end::: 
-   :::column span="4":::
+      **Activity** field (Agile, Scrum)
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <FIELD name="Activity" refname="Microsoft.VSTS.Common.Activity" type="String" reportable="dimension"> 
@@ -285,9 +276,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
    :::row-end:::
    :::row:::
    :::column span="1":::
-       Discipline field (CMMI)
-   :::column-end::: 
-   :::column span="4":::
+       **Discipline** field (CMMI)
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <FIELD name="Discipline" refname="Microsoft.VSTS.Common.Discipline" type="String" reportable="dimension">  
@@ -304,9 +293,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
    :::row-end:::
    :::row:::
    :::column span="1":::
-      Remaining Work field (all)
-   :::column-end::: 
-   :::column span="4":::
+      **Remaining Work** field (all)
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <FIELD name="Remaining Work" refname="Microsoft.VSTS.Scheduling.RemainingWork" type="Double" reportable="measure" formula="sum">    
@@ -320,12 +307,10 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
    :::row:::
    :::column span="1":::
       Additional scheduling fields (Agile, CMMI)
-   :::column-end::: 
-   :::column span="4":::
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <FIELD name="Original Estimate" refname="Microsoft.VSTS.Scheduling.OriginalEstimate" type="Double" reportable="measure" formula="sum">    
-      <HELPTEXT&gt; The original estimate of work required to complete the task (in person hours)&lt;/HELPTEXT>   
+      <HELPTEXT&gt; The original estimate of work required to complete the task (in person hours)</HELPTEXT>   
       </FIELD>    
       <FIELD name="Remaining Work" refname="Microsoft.VSTS.Scheduling.RemainingWork" type="Double" reportable="measure" formula="sum">    
       <HELPTEXT>An estimate of the work remaining to complete the task (in person hours)
@@ -343,9 +328,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
    :::row-end:::
    :::row:::
    :::column span="1":::
-      `WORKFLOW` section
-   :::column-end::: 
-   :::column span="4":::
+      `WORKFLOW` section  
       Update or verify the `WORKFLOW` section as follows:
       - Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`   
       - Scrum, Product backlog item: Add transition from `Committed` to `Removed`  
@@ -354,9 +337,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
    :::row-end:::
    :::row:::
    :::column span="1":::
-      `FORM` section
-   :::column-end::: 
-   :::column span="4":::
+      `FORM` section  
       Add or verify the following fields have been added to the `FORM` section:   
       - **Agile:**  
         > [!div class="tabbedCodeSnippets"]
@@ -392,7 +373,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 	- Map the end of each workflow state to `type="Complete"`  
 	- Make sure that you have only one State mapped to `type="Complete"` 
 
-	For example, add the Blocked workflow state:
+	For example, add the `Blocked` workflow state:
     > [!div class="tabbedCodeSnippets"]
     ```XML
     <States>  
@@ -443,15 +424,15 @@ WITs that you add to the Bug Category will be treated based on the [team setting
     </CATEGORY>
    ```
 
-4. Update or verify ProcessConfiguration definition: ```BugWorkItems``` section for the WIT you're adding.  
+4. Update or verify ProcessConfiguration definition: `BugWorkItems` section for the WIT you're adding.  
 
    Specifically, make sure that the following conditions are met:
 	- Map the start of each workflow state to `type="Proposed"` 
 	- Map each intermediate workflow state you want to have show up on the Kanban or task board to `type="InProgress"` 
 	- Map the end of each workflow state to `type="Complete"` 
 	- Make sure that you have only one State mapped to `type="Complete"`  
-   </ul>
-   For example, add the Investigate workflow state:  
+   
+   For example, add the `Investigate` workflow state:  
     > [!div class="tabbedCodeSnippets"]
     ```XML
     <States>  
@@ -463,7 +444,7 @@ WITs that you add to the Bug Category will be treated based on the [team setting
     </States>  
     ```  
 
-5Add the WIT color definition to the ProcessConfiguration ```WorkItemColors` section. For example:  
+5. Add the WIT color definition to the ProcessConfiguration `WorkItemColors` section. For example:  
     > [!div class="tabbedCodeSnippets"]
     ```XML
     <WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Service Bug" />  
@@ -476,7 +457,7 @@ WITs that you add to the Bug Category will be treated based on the [team setting
        a. WIT  
        b. Categories   
        c. ProcessConfiguration  
-7. [Choose your team setting](../organizations/settings/show-bugs-on-backlog.md).  
+7. [Choose your team setting for how bugs are tracked](../organizations/settings/show-bugs-on-backlog.md).  
 
 8. Confirm that the WIT appears on the backlogs and boards as expected and that you can add it through the backlogs as expected.  
 
