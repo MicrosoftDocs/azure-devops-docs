@@ -275,17 +275,17 @@ or when updates are made to such a pull request.
 
 You can specify the target branches when validating your pull requests.
 For example, to validate pull requests that
-target `master` and `releases/*`, you can use the following `pr` trigger. 
+target `main` and `releases/*`, you can use the following `pr` trigger. 
 
 ```yaml
 pr:
-- master
+- main
 - releases/*
 ```
 
 This configuration starts a new run the first time a new pull request is created, and after every update made to the pull request.
 
-You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
+You can specify the full name of the branch (for example, `main`) or a wildcard (for example, `releases/*`).
 
 > [!NOTE]
 > You cannot use [variables](../process/variables.md) in triggers, as variables are evaluated at runtime (after the trigger has fired).
@@ -316,7 +316,7 @@ For more complex triggers that need to exclude certain branches, you must use th
 pr:
   branches:
     include:
-    - master
+    - main
     - releases/*
     exclude:
     - releases/old*
@@ -331,7 +331,7 @@ You can specify file paths to include or exclude. For example:
 pr:
   branches:
     include:
-    - master
+    - main
     - releases/*
   paths:
     include:
@@ -359,7 +359,7 @@ pr:
   autoCancel: false
   branches:
     include:
-    - master
+    - main
 ```
 
 ### Draft PR validation
