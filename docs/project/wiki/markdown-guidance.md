@@ -698,44 +698,41 @@ To escape emojis, enclose them using the \` character.
 
 [!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
-
-<table width="650px">
-<tbody valign="top">
-<tr>
-<th width="300px">Syntax</th>
-<th width="350px">Example/notes</th>
-</tr>
-<tr>
-<td>
-<p>To insert one of the following characters, prefix with a <code>&#92;</code>(backslash).</p>
-<p style="margin-bottom:2px;"><code>&#92;</code>, backslash </p>
-<p style="margin-bottom:2px;"><code>&#96;</code>, backtick</p>
-<p style="margin-bottom:2px;"><code>&#95;</code>, underscore</p>
-<p style="margin-bottom:2px;"><code>{}</code>, curly braces </p>
-<p style="margin-bottom:2px;"><code>[]</code>, square brackets</p>
-<p style="margin-bottom:2px;"><code>()</code>, parentheses</p>
-<p style="margin-bottom:2px;"><code>#</code>, hash mark </p>
-<p style="margin-bottom:2px;"><code>+</code>, plus sign</p>
-<p style="margin-bottom:2px;"><code>-</code>, minus sign (hyphen)</p>
-<p style="margin-bottom:2px;"><code>.</code>, period </p>
-<p style="margin-bottom:2px;"><code>!</code>, exclamation mark</p>
-<p style="margin-bottom:2px;"><code>*</code>, asterisk</p>
-</td>
-<td>
-<p>Some examples on inserting special characters:</p>
-
-<p>Enter <code>&#92;&#92;</code> to get \ </p>
-<p>Enter <code>&#92;&#95;</code> to get &#95; </p>
-<p>Enter <code>&#92;# </code> to get # </p>
-<p>Enter <code>&#92;(</code> to get ( </p> 
-<p>Enter <code>&#92;.</code> to get . </p>
-<p>Enter <code>&#92;!</code> to get ! </p>
-<p>Enter <code>&#92;*</code> to get * </p>
-
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+      **Syntax**
+   :::column-end::: 
+   :::column span="1":::
+      **Example/notes**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      To insert one of the following characters, prefix with a <code>&#92;</code>(backslash).  
+      `&#92;`, backslash   
+      `&#96;`, backtick  
+      `&#95;`, underscore  
+      `{}`, curly braces  
+      `[]`, square brackets  
+      `()`, parentheses  
+      `#`, hash mark  
+      `+`, plus sign 
+      `-`, minus sign (hyphen) 
+      `.`, period  
+      `!`, exclamation mark 
+      `*`, asterisk
+   :::column-end::: 
+   :::column span="1":::
+      Some examples on inserting special characters:  
+      Enter `&#92;&#92;` to get \   
+      Enter `&#92;&#95;` to get &#95;   
+      Enter `&#92;#` to get #  
+      Enter `&#92;(` to get (  
+      Enter `&#92;.` to get .  
+      Enter `&#92;!` to get !  
+      Enter `&#92;*` to get *  
+   :::column-end:::
+:::row-end:::
 
 ::: moniker range=">= tfs-2017"
 
