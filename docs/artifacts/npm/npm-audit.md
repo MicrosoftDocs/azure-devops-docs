@@ -13,7 +13,7 @@ The *npm audit* command scans your project for security vulnerabilities and prov
 
 Azure DevOps does not support *npm audit*, if you try to run the default *npm audit* command from your pipeline, the task will fail with the following message: *Unexpected end of JSON input while parsing...*.
 
-As a workaround, you can run *npm audit* with the `--registry=https://registry.npmjs.org/` set. This will route the *npm audit* command directly to the public registry.
+As a workaround, you can run *npm audit* with the registry argument `--registry=https://registry.npmjs.org/`. This will route the *npm audit* command directly to the public registry.
 
 >[!WARNING]
 > Running *npm audit* will forward all the packages' names from your *package.json* to the public registry.
@@ -40,16 +40,29 @@ steps:
 
 # [Classic](#tab/classic)
 
-Adding the **npm** task and select _custom_ as the Command:
+1. From your pipeline definition, select the `+` sign to add a task to your agent job.
 
-![Custom npm task form with the audit command in the Command and Arguments field](media/npm-audit-task.png)
+    :::image type="content" source="media/add-new-task.png" alt-text="Screenshot showing how to add a new task to the agent job":::
+
+1. Search for the **npm** task. Select **Add** to add it to your agent job.
+
+1. Fill out the required fields as follows:
+
+    :::image type="content" source="media/npm-audit-task.png" alt-text="Screenshot showing the npm custom task to run npm audit":::
 
 ---
 
-## Run 'npm audit' on your developer machine
+## Run npm audit on your development machine
 
-To run `npm audit` from your developer machine, add the `--registry=https://registry.npmjs.org/` flag to your command. The full command will look like:
+To run npm audit locally, run the following command in an elevated command prompt window:
 
-```
+```Command
 npm audit --registry=https://registry.npmjs.org/
 ```
+
+## Related articles
+
+- [npm quickstart](../get-started-npm.md).
+- [Publish npm packages with Azure Pipelines](../../pipelines/artifacts/npm.md).
+- [Artifacts storage consumption](../artifact-storage.md)
+- [Delete and recover packages](../how-to/delete-and-recover-packages.md).
