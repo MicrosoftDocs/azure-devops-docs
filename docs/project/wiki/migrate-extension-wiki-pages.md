@@ -76,14 +76,14 @@ You must be a member of the Contributors group of your team project to migrate w
 
 10. Copy all files from "LocationC" and paste them into "LocationA".
 
-11. Run **git add .** to stage all the newly added files in  "LocationA" for the commit.
+11. Run ```**git add .**``` to stage all the newly added files in  "LocationA" for the commit.
   
-12. Run **git commit -m <commit message>** to commit the files that you have staged locally.
+12. Run ```**git commit -m <commit message>**``` to commit the files that you have staged locally.
 
 13. Run **git push origin wikiMain -f** . to push the changes to the default branch of the Azure DevOps Wiki.
 
->[!NOTE]  
->Once you've migrated your Wiki extension files to the Azure DevOps Wiki, you're ready to uninstall the Wiki extension.
+> [!NOTE]  
+> Once you've migrated your Wiki extension files to the Azure DevOps Wiki, you're ready to uninstall the Wiki extension.
 
 ## Related articles
   
