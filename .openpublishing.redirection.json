@@ -18179,6 +18179,31 @@
       "source_path": "docs/reference/api-ref/partialopen.md",
       "redirect_url": "/previous-versions/azure/devops/reference/api-ref/partialopen",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/create-your-backlog-tasks-using-project.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/schedule-projects-using-microsoft-project.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/schedule-projects-using-microsoft-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/add-share-storyboard-shapes.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/add-share-storyboard-shapes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/rollup-estimated-and-actual-work-using-project.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/rollup-estimated-and-actual-work-using-project",
+      "redirect_document_id": false
     }
   ]
 }
