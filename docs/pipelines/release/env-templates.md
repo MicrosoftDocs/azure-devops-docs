@@ -23,33 +23,33 @@ When a stage is created from a template, the tasks in the template are copied ov
 > [!NOTE]
 > Templates cannot be restrict to specific users or groups. All templates, pre-defined or custom, are available to all users who have the permission to create release pipelines.
 
-## Save a template
+## Save a stage template
 
-You can save a stage template from within a classic release pipeline. 
+You can save a stage template from within your classic release pipeline. 
 
-1. Open and edit your release pipeline. 
+1. Select your release pipeline, and then select **Edit**. 
 
-1. Open the stage you want to export. 
+1. Select the stage you want to export. 
 
-1. Select the three dots and choose **Save as template**.
+1. Select the three dots button, and then select **Save as template**.
 
     :::image type="content" source="media/stage-templates/save-stage-template.png" alt-text="Select the three dots and save as template.":::
 
-1. Name and save your template.
+1. Name your template, and then select **Ok** when you are done.
   
     :::image type="content" source="media/stage-templates/name-stage-template.png" alt-text="Add a name for your stage template.":::
 
-## Use a template
+## Use a stage template
 
-1. From the release pipeline, select **Add** to add a stage. 
+1. From within your release pipeline, select **Add** to add a stage. 
 
-1. Choose **New stage**.
+1. Select **New stage**.
 
-1. Scroll to the end of the **Select a template** window to see your custom templates. 
+    :::image type="content" source="media/use-stage-template.png" alt-text="Screenshot showing how to add a stage template":::
 
-1. Select **Apply** to use your custom template.  
+1. Use the search bar to search for your custom template. Select **Add** to use your custom template.
 
-    :::image type="content" source="media/stage-templates/use-custom-stage-template.png" alt-text="Select a custom stage template to use. ":::
+    :::image type="content" source="media/load-custom-stage-template.png" alt-text="Screenshot showing how to load a custom stage template":::
 
 ## FAQ
 
