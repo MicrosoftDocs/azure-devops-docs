@@ -346,10 +346,14 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
         <Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />    
         ```
       - **CMMI:**  
+        > [!div class="tabbedCodeSnippets"]
+        ```XML
         <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.Size" Label="Size" LabelPosition="Left" /&gt;    
         <Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />    
         ```
       - **Scrum:** 
+        > [!div class="tabbedCodeSnippets"]
+        ```XML
         <Control FieldName="Microsoft.VSTS.Scheduling.Effort" Type="FieldControl" Label="Effort" LabelPosition="Left" />   
         <Control FieldName="Microsoft.VSTS.Common.ValueArea" Type="FieldControl" Label="Value area" LabelPosition="Left" />    
         ```
