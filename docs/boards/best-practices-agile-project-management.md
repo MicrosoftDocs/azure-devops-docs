@@ -359,7 +359,7 @@ To review features delivered across several teams, configure a delivery plan. De
 
 ::: moniker range="< azure-devops"  
 <img src="./extensions/media/plans/plans-view-2.png" alt="Interactive plan elements" />
-::: moniker-end 
+::: moniker-end  
   
 ### Best practice tips  
 
