@@ -206,6 +206,18 @@
   - name: Excel FAQs
     href: backlogs/office/faqs.yml
     displayName: edit in Excel, open in Excel
+  - name: Project & Storyboarding (Deprecated)  
+    items:
+    - name: Create backlog items & tasks (Project) 
+      href: /previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project
+    - name: Schedule projects (Project) 
+      href: /previous-versions/azure/devops/boards/backlogs/office/schedule-projects-using-microsoft-project
+    - name: Rollup work using Project
+      href: /previous-versions/azure/devops/boards/backlogs/office/rollup-estimated-and-actual-work-using-project
+    - name: Storyboard your ideas (PowerPoint)
+      href: /previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint
+    - name: Add & share storyboard shapes (PowerPoint)
+      href: /previous-versions/azure/devops/boards/backlogs/office/add-share-storyboard-shapes
   - name: Troubleshooting
     items:
     - name: Office integration issues
