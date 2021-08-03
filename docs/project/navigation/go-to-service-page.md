@@ -227,7 +227,7 @@ Members of the Team Foundation Server Administrators group configure resources f
 
 1. From the web portal home page for a project, choose or hover over the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon and select **Server settings**. 
 
-	<img src="../../organizations/security/media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
+	<img src="../../organizations/security/media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" />  
 
 1. Choose **Access levels**, to set access levels for a member or group. For details, see [Change access levels](../../organizations/security/change-access-levels.md).  
 

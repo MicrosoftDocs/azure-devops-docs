@@ -62,8 +62,8 @@ Use child elements to set various restrictions on what data can be entered into 
 
 To learn how to use these elements, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).  Restrictions exist on applying most rules to system fields. All child elements are optional.  
 
-<table Responsive="true" summary="table">
-<tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description and syntax</p></th>
+<table>
+<tr><th scope="col"><p>Element</p></th><th scope="col"><p>Description and syntax</p></th>
 </tr>
 <tbody valign="top">
 <tr>
@@ -226,8 +226,8 @@ expanditems="true | false" filteritems="excludegroups"&gt;
 
  You specify the **GLOBALLIST** and **LISTITEM** elements as child elements of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements. You can use these elements to enumerate a list of values that appears. Users select values from a pick list or a drop-down menu. For more information, see [GLOBALLIST XML element reference](define-global-lists.md).   
 
-<table Responsive="true" summary="table">
-<tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th></tr>
+<table>
+<tr><th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th></tr>
 <tbody valign="top">
 <tr><td data-th="Element"><p><strong>GLOBALIST</strong></p></td><td data-th="Description"><p>Defines a set of <strong>LISTITEM</strong> elements that is stored for a project collection and that all projects in a collection can use.</p>
 <pre><code>&lt;GLOBALLIST name="globalListName"&gt;

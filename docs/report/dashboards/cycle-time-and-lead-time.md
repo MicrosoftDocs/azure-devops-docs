@@ -82,7 +82,7 @@ The Configuration dialog is the same for the Cycle Time and Lead Time widgets. Y
 
 2. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
-	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Screenshot ofExample CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Screenshot ofExample CFD chart, rolling 30 days" /> 
 
 	For your lead/cycle time charts to provide useful data, your team must [Update the status](../../boards/boards/kanban-basics.md#track-work) in a timely manner those work items that the widgets track. 
 
@@ -104,7 +104,7 @@ The Configuration dialog is the same for the Cycle Time and Lead Time widgets. Y
 
 2. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
-	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Screenshot  Example CFD chart, rolling 30 days, 2019 version" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Screenshot  Example CFD chart, rolling 30 days, 2019 version" /> 
 
 	For your lead/cycle time charts to provide useful data, your team must [Update the status](../../boards/boards/kanban-basics.md#track-work) in a timely manner those work items that the widgets track. 
 
@@ -118,7 +118,7 @@ Both Lead Time and Cycle Time widgets display as scatter-plot control charts. Th
 
 **Example Lead Time widget**  
 
-<img src="media/lead-time-control-chart.png" alt="Screenshot of Cycle Time widget." style="border: 2px solid #C3C3C3;" />
+<img src="media/lead-time-control-chart.png" alt="Screenshot of Cycle Time widget." />
 
 The chart dots represent completed work items where their position on the horizontal axis represents the date they were completed. Their position on the vertical axis represents the calculated lead time or cycle time. 
 - Larger dots represent multiple work items with the same lead/cycle time 

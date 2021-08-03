@@ -99,7 +99,7 @@ Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="fa
 
 From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within **Work** drop down menu. 
 
-<img src="media/cyb-new-work-item-impediment.png" alt="TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
+<img src="media/cyb-new-work-item-impediment.png" alt="TFS 2017 - Add an impediment" />  
   
 ::: moniker-end
 
@@ -107,7 +107,7 @@ From **Work**, choose **Impediment** from the **New Work Item** list of options.
 
 From the Queries page, choose Impediment from the **New** drop down menu.
 
-<img src="media/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
+<img src="media/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" />  
 
 ::: moniker-end
 

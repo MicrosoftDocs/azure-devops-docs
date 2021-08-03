@@ -285,9 +285,9 @@ You change the way cards appear on the Taskboard in the same way you change the 
 3. Place a check mark in the check box for those fields you want to have appear on the board. 
       
 	**TFS 2015.1 options:**       
-	<img src="media/customize/vso-task-board-card-customize.png" alt="taskboard, card customization dialog" style="border: 1px solid #C3C3C3;" />     
+	<img src="media/customize/vso-task-board-card-customize.png" alt="taskboard, card customization dialog" />     
 	**TFS 2015 options:**        
-	<img src="media/customize/ALM_CC_TaskCardOptions.png" alt="taskboard, TFS card customization dialog" style="border: 1px solid #C3C3C3;" />       
+	<img src="media/customize/ALM_CC_TaskCardOptions.png" alt="taskboard, TFS card customization dialog" />       
 
 	Repeat this step for each work item type you want to change. Don't be surprised if the options change when you choose a different work item type. For example, **Show Remaining Work** only applies to tasks and perhaps bugs, but not to user stories or product backlog items.   
 

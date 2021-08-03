@@ -103,7 +103,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
 
-<img src="media/define-sprints/selected-team-iterations-vsts.png" alt="Azure Boards and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
+<img src="media/define-sprints/selected-team-iterations-vsts.png" alt="Azure Boards and TFS 2017, Selected iterations generate sprint backlogs" />
 
 ::: moniker-end  
 
@@ -113,7 +113,7 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access to four sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
 
-<img src="media/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
+<img src="media/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" />
 
 ::: moniker-end  
 

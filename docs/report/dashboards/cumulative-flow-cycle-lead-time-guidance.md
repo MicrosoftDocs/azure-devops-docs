@@ -206,7 +206,7 @@ In the following chart, the average cycle time is 8 days. The standard deviation
 
 #### Example Cycle Time widget
 
-<img src="media/cycle-time-planning.png" alt="Cycle Time widget" style="border: 2px solid #C3C3C3;" />
+<img src="media/cycle-time-planning.png" alt="Cycle Time widget" />
 
 
 ## Identify process issues 
@@ -217,7 +217,7 @@ As you can see in the following chart, which shows several outliers, several bug
 
 #### Example Cycle Time widget showing several outliers 
 
-<img src="media/cycle-time-outliers.png" alt="Cycle Time widget showing several outliers" style="border: 2px solid #C3C3C3;" />
+<img src="media/cycle-time-outliers.png" alt="Cycle Time widget showing several outliers" />
 
 You can also see how process changes affect your lead and cycle time. For example, on May 15th the team made a concerted effort to limit the work in progress and address stale bugs. You can see that the standard deviation narrows after that date, showing improved predictability. 
 

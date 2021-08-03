@@ -234,7 +234,7 @@ You can drag and drop a file onto the tab or anywhere on the work item form.
 
 You can edit, open, save, or delete an attachment by choosing an attachment and opening it's  :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu. 
 
-<img src="media/share-plans-attachment-menu-options.png" alt="Attachment menu options" style="border: 2px solid #C3C3C3;" />   
+<img src="media/share-plans-attachment-menu-options.png" alt="Attachment menu options" />   
 
 ::: moniker-end 
 
@@ -242,7 +242,7 @@ You can edit, open, save, or delete an attachment by choosing an attachment and 
 
 Choose the **Attachments** tab icon to attach a file to the work item. 
 
-<img src="media/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises Azure DevOps), and Eclipse" style="border: 1px solid #C3C3C3;" />  
+<img src="media/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises Azure DevOps), and Eclipse" />  
 
 Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Choose an item and then choose :::image type="icon" source="../media/icons/open-icon.png" border="false"::: the open icon to open the attachment or :::image type="icon" source="../media/icons/download-icon.png" border="false"::: download icon to save a copy.  
 
@@ -255,11 +255,11 @@ Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attac
 
 Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Or, drag and drop files into the attachment area. 
 
-<img src="media/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises Azure DevOps), Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" />
+<img src="media/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises Azure DevOps), Visual Studio and Eclipse" />
 
 To open the menu options to download or delete several attachments, choose one or more items and then right-click. 
 
-<img src="media/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
+<img src="media/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" />
 
 
 * * *
@@ -290,7 +290,7 @@ To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoi
 ::: moniker range=">= tfs-2017"
 You can open Storyboarding with PowerPoint from the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions menu within a work item form. 
 
-<img src="media/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal" style="border: 1px solid #C3C3C3;" />  
+<img src="media/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal" />  
 
 To link to an existing storyboard, click the ![Links page icon](../media/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.  
 ::: moniker-end 
@@ -305,7 +305,7 @@ From the **Storyboards** tab, click **Start Storyboarding** to open Storyboardin
 
 From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
 
-<img src="media/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
+<img src="media/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" />
 
 * * *
 
