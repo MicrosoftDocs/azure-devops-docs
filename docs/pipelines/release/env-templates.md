@@ -63,7 +63,7 @@ You can, however, export a release pipeline into another project, collection, se
 
 Existing custom templates can be deleted from the *Select a Template* window panel. From within your release pipeline definition, select **Add** > **New Stage** to access the list of templates.
 
-    :::image type="content" source="media/delete-custom-template.png" alt-text="Screenshot showing how to delete a custom stage template":::
+:::image type="content" source="media/delete-custom-template.png" alt-text="Screenshot showing how to delete a custom stage template":::
 
 ### Q: How do I update a custom stage template?
 
