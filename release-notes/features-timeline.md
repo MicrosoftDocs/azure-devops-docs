@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 07/07/2021
+ms.date: 8/4/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -47,6 +47,14 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283 data-raw-source="[Improvements to YAML editor](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283)">Improvements to YAML editor</a></td><td><a href="2021/sprint-187-update.md#preview-of-templates-support-in-yaml-editor">In Preview</td><td>Pipelines</td><td>TBD</td>
     <tr><td><a href=https://devblogs.microsoft.com/devops/copy-dashboard-public-preview/ data-raw-source="[Copy Dashboard](https://devblogs.microsoft.com/devops/copy-dashboard-public-preview/)">Copy Dashboard</a></td><td>In Preview</td><td>Reporting</td><td>Future</td></tr>
 </tr>
+<tr><td rowspan="2"><strong>2021 Q3</strong></td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640 data-raw-source="[Azure DevOps Server Integration with GitHub.com](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640)">Azure DevOps Server Integration with GitHub.com</a></td><td>Planned</td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859333 data-raw-source="[Support wild cards in path filters](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859333)">Support wild cards in path filters</a></td><td>Planned</td><td>Pipelines</td><td>Future</td>
+</tr>
+<tr><td rowspan="2"><strong>2021 Q4</strong></td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330 data-raw-source="[Automatically retry a task](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330)">Automatically retry a task</a></td><td>Planned</td><td>Pipelines</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Planned</td><td>Pipelines</td><td>Future</td>
+</tr>
 <tr><td rowspan="15"><strong>Future</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547" data-raw-source="[Support Azure Managed Identities](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547)">Support Azure Managed Identities</a></td><td>Planned</td><td>Admin</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840548" data-raw-source="[Support Azure Service Principals](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840548)">Support Azure Service Principals</a></td><td>Planned</td><td>Admin</td><td>Future</td>
@@ -59,9 +67,9 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Planned</td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638 data-raw-source="[Delivery Plans - Progress Roll-ups by Effort](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638)">Delivery Plans - Progress Roll-ups by Effort</a></td><td>Planned</td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844639 data-raw-source="[Delivery Plans - Tags Color Styling](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844639)">Delivery Plans - Tags Color Styling</a></td><td>Planned</td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640 data-raw-source="[Azure DevOps Server Integration with GitHub.com](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640)">Azure DevOps Server Integration with GitHub.com</a></td><td>Planned</td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193 data-raw-source="[Maintain backlog hierarchy when filters are applied](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193)">Maintain backlog hierarchy when filters are applied</a></td><td>Planned</td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138 data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Planned</td><td>Boards</td><td>TBD</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343 data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343)">Support Flexible Orchestration mode in scale set agent pools</a></td><td>Planned</td><td>Pipelines</td><td>TBD</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876 data-raw-source="[Make file diff viewing easier in PR summary](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876)">Make file diff viewing easier in PR summary</a></td><td>Planned</td><td>Repos</td><td>Future</td> </tr>
    </tr>
     </tbody>
@@ -82,6 +90,13 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
 <tr>
+    <td rowspan="5"><a href="2021/sprint-190-update.md" data-raw-source="[4 August 2021](2021/sprint-190-update.md)">29 July 2021</a></td>
+    <td>Display correct persona on commit links</td><td>Boards</td><td>Future</td></tr>
+    <td>Support queuing or serial deployments as an option in exclusive lock check</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Support for Quebec version of ServiceNow</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Change in .NET SDK preinstallation policy on Microsoft hosted Windows and macOS agents</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Changes to PublishBuildArtifacts and DownloadBuildArtifacts tasks</td><td>Pipelines</td><td>Future</td></tr>
+    </tr>    
     <td rowspan="6"><a href="2021/sprint-188-update.md" data-raw-source="[17 June 2021](2021/sprint-188-update.md)">17 June 2021</a></td>
     <td>Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy</td><td>General</td><td>Future</td></tr>
     <td>Conditional access policy support for IPv6 traffic</td><td>General</td><td>Future</td></tr>
