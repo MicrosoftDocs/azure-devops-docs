@@ -42,6 +42,7 @@ root of the agent directory. The work directory is owned by a given
 agent and should not be shared between multiple agents.
 - `--acceptTeeEula` - accept the Team Explorer Everywhere End User License Agreement (macOS and Linux only)
 - `--disableloguploads` - don't stream or send console log output to the server. Instead, you may retrieve them from the agent host's filesystem after the job completes.
+- `--allowWorkDirectoryRepositories` - allow repositories to be checked out below the work directory of the agent (e.g. `C:/agent/_work/Repositories/MyRepo1`) by using the prefix `../` at the beginning of the checkout path, instead of only allowing them below the build pipeline directory (e.g. `C:/agent/_work/1/s/MyRepo1`)
 
 ### Windows-only startup
 - `--runAsService` - configure the agent to run as a Windows service (requires administrator permission)
