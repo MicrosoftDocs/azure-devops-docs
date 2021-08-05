@@ -21,7 +21,7 @@ Azure Functions is a serverless solution that allows you to write less code, mai
 
 [!INCLUDE [include](../includes/prerequisites.md)]
 
-Deploying your function code in a custom Linux container requires [Premium plan](https://docs.microsoft.com/en-us/azure/azure-functions/functions-premium-plan) or a [Dedicated (App Service) plan hosting](https://docs.microsoft.com/en-us/azure/azure-functions/dedicated-plan).
+Deploying your function code in a custom Linux container requires [Premium plan](https://docs.microsoft.com/en-us/azure/azure-functions/functions-premium-plan) or a [Dedicated (App Service) plan hosting](https://docs.microsoft.com/en-us/azure/azure-functions/dedicated-plan). See [Functions Operating system/runtime]https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale#operating-systemruntimel) for details.
 
 ## Create your Function App for Containers
 
