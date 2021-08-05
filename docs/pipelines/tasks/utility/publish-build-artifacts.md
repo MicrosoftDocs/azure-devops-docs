@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 **Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015.3**
 
 > [!NOTE]
-> This task is deprecated. If you're using Team Foundation Server 2017 or newer, we recommend that you use the [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md) task instead.
+> This task is deprecated. If you're using Team Foundation Server 2017 or newer, we recommend that you use the [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md) task instead.  It [scales better, allows parallel uploads, and may be faster.](https://docs.microsoft.com/en-us/azure/devops/release-notes/2021/sprint-190-update)
 
 Use this task in a build pipeline to publish build artifacts to Azure Pipelines, TFS, or a file share.
 
