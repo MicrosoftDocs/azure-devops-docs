@@ -54,8 +54,6 @@ NuGet 4.8.2 and later supports the Azure Artifacts Credential Provider, which au
 
    ::: moniker-end
 
-Then, run any [NuGet command](/nuget/tools/nuget-exe-cli-reference).
-
 ::: moniker range="<= tfs-2018 || azure-devops"
 
 ## Add a feed to NuGet 2
@@ -81,17 +79,23 @@ To use a 2.x client, first get the v3 feed URL:
    >![NuGet Package source URL in the Connect to feed dialog](../media/nuget-consume-url-azure-devops-newnav.png)
    > 
 
-Then, at the end of the URL, replace `/v3/index.json` with `/v2`. 
+Then replace `/v3/index.json` with `/v2`. 
 
 [!INCLUDE [generate-pat](../includes/generate-pat.md)]
 
-Run 
+Run the following command in an elevated command prompt window to add a NuGet package source:
 
 ```Command
-nuget sources add -name {your feed name} -source {your feed URL} -username {anything} -password {your PAT}
+nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Any_String_But_Not_Null> -password <Personal_Access_Token>
 ```
 
-Then, run any [NuGet command](/nuget/tools/nuget-exe-cli-reference).
+If your organization is connected to Azure Active Directory, you must first authenticate with your AD credentials, and then add your personal access token using the *setapikey* command:
+
+```Command
+nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Azure_Active_Directory_UserName> -password <Azure_Active_Directory_Password>
+
+nuget setapikey <Personal_Access_Token> -source <Feed_URL> 
+```
 
 ::: moniker-end
 
@@ -112,7 +116,7 @@ To use a 2.x client, first get the v3 feed URL:
    ![NuGet Package source URL in the Connect to feed dialog](../media/nuget-consume-url.png)
 
    
-Then, replace `/v3/index.json` with `/v2`. 
+Then replace `/v3/index.json` with `/v2`. 
 
 [!INCLUDE [generate-pat](../includes/generate-pat.md)]
 
@@ -130,4 +134,4 @@ nuget sources add -name <Feed_Name> -source <Feed_URL> -username <Azure_Active_D
 nuget setapikey <Personal_Access_Token> -source <Feed_URL> 
 ```
 
-   ::: moniker-end
+::: moniker-end
