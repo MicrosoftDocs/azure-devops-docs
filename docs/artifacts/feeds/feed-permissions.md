@@ -16,11 +16,11 @@ With Azure Artifacts you can publish,, consume, and store different types of pac
 
 ## Azure Artifacts settings
 
-Feed owners have the ability to specify who can create or administer Artifacts feeds. The settings icon will not be visible if you don't have the right permissions. To access the settings panel, select **Artifacts** from with your project, and then select the **Azure Artifacts settings** icon on the right side of the screen.
+Feed owners have the ability to specify who can create or administer Artifacts feeds. The settings icon will not be visible if you don't have the right permissions. To access the settings panel, select **Artifacts** from within your project, and then select the **Azure Artifacts settings** icon on the right side of the screen.
 
 :::image type="content" source="media/artifacts-settings-button.png" alt-text="Screenshot showing the Artifacts settings icon":::
 
-By default, everyone in the same organization have the permissions to create feeds. A user who creates a feed is both an owner and an administrator of that feed.
+By default, everyone in the same organization have the permission to create new feeds. A user who creates a feed is both an owner and an administrator of that feed.
 
 1: Users in the same organization are able to create new feeds.
 
