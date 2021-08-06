@@ -203,7 +203,7 @@ In the web portal, work items appear in query results and on the backlog and boa
 > [!NOTE]    
 >**Feature availability:** <!---For Hosted XML process model, you can customize the WIT color, icon, and workflow state color. -->For On-premises XML, you can customize the workflow state color for TFS 2015.2 or later versions, and you can customize the WIT icon for TFS 2017.2 and later versions.  
  
-<img src="media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
+<img src="media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" />  
 
 
 ## Change the type of an existing work item  
@@ -233,11 +233,11 @@ If you have a WIT that you want to retire, but maintain the work items that have
   </FIELDS>
 </TRANSITION> 
 ```
-If you want to restrict creation of a specific WIT to a group of users, there are two ways to restrict access:
+If you want to restrict creation of a specific work item type to a group of users, you can do so in one of the following two ways: 
 
--   [Add the WIT to the Hidden Categories group](xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
+-   [Add the work item type to the Hidden Categories group](xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
 
--   Add [a field rule to the workflow](xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
+-   Add [a field rule to the workflow](xml/change-workflow-wit.md#update-a-field-during-a-workflow-change) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
 
     ```xml
     <TRANSITION from=" " to="New">
@@ -250,7 +250,8 @@ If you want to restrict creation of a specific WIT to a group of users, there ar
     ```
 
 <a id="delete-wit">  </a>
-## Delete a WIT (On-premises XML) 
+
+## Delete a work item type (On-premises XML) 
 
 To prevent team members from using a specific WIT to create a work item, you can remove it from the project. When you use **witadmin destroywitd**, you permanently remove all work items that were created using that WIT as well as the WIT itself. For example, if your team doesn't use "Impediment", you can delete the WIT labeled "Impediment" from the Fabrikam Web Site project.
 

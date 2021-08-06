@@ -259,7 +259,7 @@ You can use pipeline variables to pass literal values when creating ConfigMap, a
 <tr><td><code>checkLatest</code><br/>Check for latest version</td><td>(Optional) If true, a check for the latest version of kubectl is performed.<br/>Default value: false</td></tr>
 <tr><td><code>specifyLocation</code><br/>Specify location</td><td>(Required) Full path to the kubectl.exe file.</td></tr>
 <tr><td><code>cwd</code><br/>Working directory</td><td>(Optional) Working directory for the Kubectl command.<br/>Default value: $(System.DefaultWorkingDirectory)</td></tr>
-<tr><td><code>outputFormat</code><br/>Output format</td><td>(Optional) Acceptable values: <b>json</b> or <b>YAML</b>.<br/>Default value: json</td></tr>
+<tr><td><code>outputFormat</code><br/>Output format</td><td>(Optional) Acceptable values: <b>json</b> or <b>YAML</b>.<br/>Default value: json. <br> You can leave it blank explicitly like <code>outputFormat: ''</code> to default to the kubectl's outputFormat</td></tr>
 </table>
 
 ::: moniker-end

@@ -81,7 +81,7 @@ This guide covers the basics of using Azure Pipelines to work with Maven artifac
         ```xml
         <repository>
           <id>[ORGANIZATION_NAME]</id>
-          <url>https://pkgs.dev.azure.com/[ORGANIZATION_NAME]/_packaging/[ORGANIZATION_NAME]/maven/v1</url>
+          <url>https://pkgs.dev.azure.com/[ORGANIZATION_NAME]/_packaging/[FEED_NAME]/maven/v1</url>
           <releases>
             <enabled>true</enabled>
           </releases>
@@ -94,14 +94,21 @@ This guide covers the basics of using Azure Pipelines to work with Maven artifac
     1. Add or edit the settings.xml file in ${user.home}/.m2. Replace the `[ORGANIZATION_NAME]` placeholder with your own organization.
     
         ```xml
-        <server>
-          <id>[ORGANIZATION_NAME]</id>
-          <username>[ORGANIZATION_NAME]</username>
-          <password>[PERSONAL_ACCESS_TOKEN]</password>
-        </server>
+        <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                                      https://maven.apache.org/xsd/settings-1.0.0.xsd">
+          <servers>
+            <server>
+              <id>[FEED_NAME]</id>
+              <username>[ORGANIZATION_NAME]</username>
+              <password>[PERSONAL_ACCESS_TOKEN]</password>
+            </server>
+          </servers>
+        </settings>
         ```
 
-    1. Generate a [Personal Access Token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) with Packaging read & write scopes and paste it into the `<password>` tag.
+    1. Generate a [Personal Access Token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) with **Packaging read & write** scopes and paste it into the `<password>` tag.
 
 > [!IMPORTANT]
 > In order to automatically authenticate Maven feeds from Azure Artifacts, you must have the `mavenAuthenticateFeed` argument set to `true` in your Maven task. See [Maven build task](../tasks/build/maven.md) for more information.

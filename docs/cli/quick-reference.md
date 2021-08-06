@@ -18,11 +18,11 @@ ms.date: 03/17/2021
 [!INCLUDE [temp](../includes/version-all.md)]
 
 Use this index to quickly access examples that showcase use of command line tools.  For a list of commands that support Azure DevOps operations, see the following Azure CLI reference articles: 
-- [az artifacts](/cli/azure/artifacts) 
-- [az boards](/cli/azure/boards) 
-- [az devops](/cli/azure/devops) 
-- [az pipelines](/cli/azure/pipelines) 
-- [az repos](/cli/azure/repos) 
+- [az artifacts](/cli/azure/azure-cli-reference-for-devops#azure-artifacts)
+- [az boards](/cli/azure/azure-cli-reference-for-devops#azure-boards)
+- [az devops](/cli/azure/azure-cli-reference-for-devops#azure-devops-organizations)
+- [az pipelines](/cli/azure/azure-cli-reference-for-devops#azure-pipelines)
+- [az repos](/cli/azure/azure-cli-reference-for-devops#azure-repos)
 
 
 
@@ -136,11 +136,11 @@ Use this index to quickly access examples that showcase use of command line tool
       - [Update a variable](../pipelines/process/variables.md#update-variable)
 
       #### Variable groups
-      - [Add variables to a variable group](../pipelines/library/variable-groups.md#add-variables-group)
+      - [Add variables to a variable group](../pipelines/library/variable-groups.md#create-a-variable-group)
       - [Create a variable group](../pipelines/library/variable-groups.md#create-variable-group)
       - [Delete a variable group](../pipelines/library/variable-groups.md#delete-variable-group)
       - [Delete variables from a variable group](../pipelines/library/variable-groups.md#delete-variables-group)
-      - [List variable groups](../pipelines/library/variable-groups.md#list-variable-group)
+      - [List variable groups](../pipelines/library/variable-groups.md#list-variable-groups)
       - [List variables in a variable group](../pipelines/library/variable-groups.md#list-variables-group)
       - [Show details for a variable group](../pipelines/library/variable-groups.md#show-variable-group)
       - [Update a variable group](../pipelines/library/variable-groups.md#update-variable-group)

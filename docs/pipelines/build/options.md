@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about building your code or deploying your software using build options on Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.date: 09/24/2020
+ms.date: 06/19/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -34,7 +34,7 @@ You can also select if you want to assign the work item to the requestor. For ex
 
 ## Allow scripts to access the OAuth token
 
-Select this check box if you want to enable your script to use the build pipeline OAuth token.
+Select this check box in classic build pipelines if you want to enable your script to use the build pipeline OAuth token. This check box is located under the "additional settings" section after selecting the agent job in the pipeline.
 
 For an example, see [Use a script to customize your build pipeline](../scripts/powershell.md).
 

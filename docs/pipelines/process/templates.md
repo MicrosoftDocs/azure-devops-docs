@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 04/29/2021
+ms.date: 06/08/2021
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -29,7 +29,7 @@ Use templates to define your logic once and then reuse it several times. Templat
 
 ## Parameters
 
-You can specify parameters and their data types in a template and pass those parameters to a pipeline. You can also [use parameters outside of templates](runtime-parameters.md). 
+You can specify parameters and their data types in a template and pass those parameters to a pipeline. You can also [use parameters outside of templates](runtime-parameters.md). You can only use literals for parameter default values.
 
 
 ### Passing parameters
@@ -81,7 +81,7 @@ steps:
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
 
-You can iterate through an object and print out each string in the object. 
+You can iterate through an object and print each string in the object. 
 
 ```yaml
 parameters:
@@ -205,7 +205,7 @@ jobs:
 ### Step reuse
 
 You can insert a template to reuse one or more steps across several jobs.
-In addition to the steps from the template, each job can define additional steps.
+In addition to the steps from the template, each job can define more steps.
 
 ```yaml
 # File: templates/npm-steps.yml
@@ -563,7 +563,7 @@ jobs:
 
 For `type: github`, `name` is `<identity>/<repo>` as in the examples above.
 For `type: git` (Azure Repos), `name` is `<project>/<repo>`.
-If that project is in a separate Azure DevOps organization, you'll need to configure a [service connection](../library/service-endpoints.md#sep-tfsts) of type `Azure Repos/Team Foundation Server` with access to the project and include that in YAML:
+If that project is in a separate Azure DevOps organization, you'll need to configure a [service connection](../library/service-endpoints.md#azure-repos) of type `Azure Repos/Team Foundation Server` with access to the project and include that in YAML:
 
 ```yaml
 resources:
@@ -894,7 +894,7 @@ steps:
     debug: true
 ```
 
-You can also use conditional insertion for variables:
+You can also use conditional insertion for variables. In this example, `start` always prints and `this is a test` only prints when the `foo` variable equals `test`. 
 
 ```yaml
 variables:
@@ -905,16 +905,16 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo "start"
+- script: echo "start" # always runs
 - ${{ if eq(variables.foo, 'test') }}:
-  - script: echo "this is a test"
+  - script: echo "this is a test" # runs when foo=test
 ```
 
 ### Iterative insertion
 
 The `each` directive allows iterative insertion based on a YAML sequence (array) or mapping (key-value pairs).
 
-For example, you can wrap the steps of each job with additional pre- and post-steps:
+For example, you can wrap the steps of each job with other pre- and post-steps:
 
 ```yaml
 # job.yml
@@ -950,7 +950,7 @@ jobs:
 ```
 
 You can also manipulate the properties of whatever you're iterating over.
-For example, to add additional dependencies:
+For example, to add more dependencies:
 
 ```yaml
 # job.yml
@@ -999,7 +999,7 @@ Templates and template expressions can cause explosive growth to the size and co
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 100 separate YAML files may be included (directly or indirectly)
 - No more than 20 levels of template nesting (templates including other templates)
-- No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600KB - 2MB of on-disk YAML, depending on the specific features used)
+- No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600 KB - 2 MB of on-disk YAML, depending on the specific features used)
 
 ::: moniker-end
 
@@ -1190,7 +1190,7 @@ You can use parameters to influence how a template is expanded.
 The `parameters` object works like the [`variables` object](expressions.md#variables)
 in an expression.
 
-For example you define a template:
+For example, you define a template:
 
 ```yaml
 # File: steps/msbuild.yml
@@ -1220,11 +1220,11 @@ steps:
 
 ### Context
 
-Within a template expression, you have access to the `parameters` context which contains the values of parameters passed in.
-Additionally, you have access to the `variables` context which contains all the variables specified in the YAML file plus 
+Within a template expression, you have access to the `parameters` context, which contains the values of parameters passed in.
+Additionally, you have access to the `variables` context, which contains all the variables specified in the YAML file plus 
 the [system variables](../build/variables.md#system-variables). 
 Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
-Template expansion happens [very early in the run](runs.md#process-the-pipeline), so those variables aren't available.
+Template expansion happens [early in the run](runs.md#process-the-pipeline), so those variables aren't available.
 
 ### Required parameters
 
@@ -1494,14 +1494,14 @@ jobs:
 
 ### Escaping
 
-If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
+If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example, `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
 
 ## Limits
 
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 50 separate YAML files may be included (directly or indirectly)
-- No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600KB - 2MB of on-disk YAML, depending on the specific features used)
+- No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600 KB - 2 MB of on-disk YAML, depending on the specific features used)
 - No more than 2000 characters per template expression are allowed
 
 ::: moniker-end

@@ -165,8 +165,8 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
       > [!div class="mx-imgBorder"] 
       > ![registries in the npmrc file](../media/build-definition/registries-in-my-npmrc.png)
 
-      > [!NOTE]
-      > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
+      > [!TIP]
+      > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#npm-service-connection)
 
    * Registry I select here
 
@@ -219,8 +219,8 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
       > [!div class="mx-imgBorder"]
       > ![registries in the npmrc](../media/build-definition/registries-in-my-npmrc.png)
 
-      > [!NOTE]
-      > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
+      > [!TIP]
+      > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#npm-service-connection)
 
    * Registry I select here
 
@@ -268,8 +268,8 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
    > [!div class="mx-imgBorder"]
    > ![npm auth task](../media/build-definition/build-definition-npm-auth-task-file.png)
 
-   > [!NOTE]
-   > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
+   > [!TIP]
+   > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#npm-service-connection)
 
 1. After setting up your **npm Authenticate** task, you can add other build task(s) for your task runner like **Gulp**.
 
@@ -306,8 +306,8 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
    > [!div class="mx-imgBorder"]
    > ![npmrc file to authenticate](../media/build-definition/build-definition-npm-auth-task-file.png)
 
-   > [!NOTE]
-   > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
+   > [!TIP]
+   > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#npm-service-connection)
 
 1. After setting up your **npm Authenticate** task, you can add other build task(s) for your task runner like **Gulp**.
 
@@ -315,25 +315,38 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 ::: moniker range="= tfs-2017 || = tfs-2018 || = azure-devops"
 
+> [!NOTE]
+> If you are using Yarn, run the following command to set the yarn registry:
+> `yarn config set registry "https://pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/"`
+
 ## Troubleshooting `vsts-npm-auth`
 
-If you receive an error like:
+- If you receive an error like:
 
-* Command Prompt: `'vsts-npm-auth' is not recognized as an internal or external command, operable program or batch file.`
-* PowerShell: `vsts-npm-auth : The term 'vsts-npm-auth' is not recognized as the name of a cmdlet, function, script file, or operable program.`
+    - Command Prompt: `'vsts-npm-auth' is not recognized as an internal or external command, operable program or batch file.`
+    - PowerShell: `vsts-npm-auth : The term 'vsts-npm-auth' is not recognized as the name of a cmdlet, function, script file, or operable program.`
+    
+    then it's likely that the npm modules folder is not in your path. 
+    
+    To fix this issue, rerun Node.js setup and ensure the `Add to PATH` option and its child options are selected for installation.
+    
+    > [!div class="mx-imgBorder"]
+    > ![Add to PATH install option in Node.js setup](./media/node-setup.png)
+    
+    Alternatively, you can edit the PATH variable to add `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell).
 
-then it's likely that the npm modules folder is not in your path. 
+- If you are running into a E401 error: `code E401 npm ERR! Unable to authenticate`
 
-To fix this issue, rerun Node.js setup and ensure the `Add to PATH` option and its child options are selected for installation.
+    run the `vsts-npm-auth` command with the -F argument to re-authenticate.
 
-> [!div class="mx-imgBorder"]
-> ![Add to PATH install option in Node.js setup](./media/node-setup.png)
-
-Alternatively, you can edit the PATH variable to add `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell).
+    ```
+    vsts-npm-auth -config .npmrc -F
+    ```
 
 ::: moniker-end
 
-## Next steps
+## Related articles
 
-> [!div class="nextstepaction"]
-> [Publish npm packages to your feed](../../pipelines/artifacts/npm.md)
+- [npm scopes](./scopes.md)
+- [npm audit](./npm-audit.md)
+- [Publish npm packages](../../pipelines/artifacts/npm.md)

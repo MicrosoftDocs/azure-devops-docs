@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 05/26/2021
+ms.date: 8/4/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -34,30 +34,43 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         </tr>
     </thead>
     <tbody>
-    <tr>
-
-<td rowspan="2"><strong>2021 Q1</strong></td>
-    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808810" data-raw-source="[Limit user visibility and collaboration for projects](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808810)">Limit user visibility and collaboration for projects</a></td><td><a href="/azure/devops/release-notes/2021/sprint-182-update">In Preview</a></td><td>Admin</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628 data-raw-source="[Analytics for consumption of parallel jobs](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628)">Analytics for consumption of parallel jobs</a></td><td><a href="/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview">In Preview</a></td><td>Pipelines</td><td>Future</td></tr>
-<td rowspan="6"><strong>2021 Q2</strong></td>
-    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1827147 data-raw-source="[Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1827147)">Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy</a>
-    </td><td>In Progress</td><td>Admin</td><td>Future</td></tr>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202" data-raw-source="[IPv6 conditional access policy support](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202)">IPv6 conditional access policy support</a></td><td>Proposed</td><td>Admin</td><td>Future</td>
+<tr><td rowspan="2"><strong>2021 Q1</strong></td>
+    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808810" data-raw-source="[Limit user visibility and collaboration for projects](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808810)">Limit user visibility and collaboration for projects</a></td>
+        <td><a href="/azure/devops/release-notes/2021/sprint-182-update">In Preview</a></td><td>Admin</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628 data-raw-source="[Analytics for consumption of parallel jobs](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628)">Analytics for consumption of parallel jobs</a></td>
+        <td><a href="/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview">In Preview</a></td><td>Pipelines</td><td>Future</td>
+</tr>
+<tr><td rowspan="5"><strong>2021 Q2</strong></td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1827147 data-raw-source="[Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1827147)">Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy</a></td><td>In Progress</td><td>Admin</td><td>Future</td>
+    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202" data-raw-source="[IPv6 conditional access policy support](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202)">IPv6 conditional access policy support</a></td><td>In Preview</td><td>Admin</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924" data-raw-source="[Accessibility and UX Modernization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924)">Accessibility and UX Modernization</a></td><td>Proposed</td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942 data-raw-source="[Delivery Plans 2.0 - Dependency Tracking Visualization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942)">Delivery Plans 2.0 - Dependency Tracking Visualization</a></td><td>In Progress</td><td>Boards</td><td>Future</td></tr>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283 data-raw-source="[Improvements to YAML editor](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283)">Improvements to YAML editor</a></td><td><a href="https://review.docs.microsoft.com/azure/devops/release-notes/2021/sprint-187-update?branch=releasenotes%2FSprint187#preview-of-templates-support-in-yaml-editor">In Preview</td><td>Pipelines</td><td>TBD</td></tr>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283 data-raw-source="[Improvements to YAML editor](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283)">Improvements to YAML editor</a></td><td><a href="2021/sprint-187-update.md#preview-of-templates-support-in-yaml-editor">In Preview</td><td>Pipelines</td><td>TBD</td>
     <tr><td><a href=https://devblogs.microsoft.com/devops/copy-dashboard-public-preview/ data-raw-source="[Copy Dashboard](https://devblogs.microsoft.com/devops/copy-dashboard-public-preview/)">Copy Dashboard</a></td><td>In Preview</td><td>Reporting</td><td>Future</td></tr>
-<td rowspan="10"><strong>Future</strong></td>
-<td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700" data-raw-source="[Conditional Access Policy support for device state](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700)">Conditional Access Policy support for device state</a></td><td>Planned</td><td>Admin</td><td>Future</td>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678 data-raw-source="[Access events for PAT, SSH will be available in the Auditing Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678)">Access events for PAT, SSH will be available in the Auditing Log</a></td><td>Planned</td><td>Admin</td><td>Future</td></tr>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609307 data-raw-source="[Package promote task in Azure Pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609307)">Package promote task in Azure Pipelines</a></td><td>Planned</td><td>Artifacts</td><td>TBD</td></tr>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297 data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td><td>Planned</td><td>Artifacts</td><td>TBD</td></tr>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196 data-raw-source="[Preview attachments for word, excel, ppt, project, pdf from the work item](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196)">Preview attachments for word, excel, ppt, project, pdf from the work item</a></td><td>Planned</td><td>Boards</td><td>Future</td></tr>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193 data-raw-source="[Maintain backlog hierarchy when filters are applied](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193)">Maintain backlog hierarchy when filters are applied</a></td><td>Planned</td><td>Boards</td><td>Future</td></tr>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138 data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Planned</td><td>Boards</td><td>TBD</td></tr>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289 data-raw-source="[Elastic self-hosted pools (Kubernetes)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289)">Elastic self-hosted pools (Kubernetes)</a></td><td>Planned</td><td>Pipelines</td><td>TBD</td></tr>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1702531 data-raw-source="[Conversion from classic build pipelines to YAML pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1702531)">Conversion from classic build pipelines to YAML pipelines</a></td><td>Planned</td><td>Pipelines</td><td>2020</td></tr>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876 data-raw-source="[Make file diff viewing easier in PR summary](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876)">Make file diff viewing easier in PR summary</a></td><td>Planned</td><td>Repos</td><td>Future</td></tr>
+</tr>
+<tr><td rowspan="2"><strong>2021 Q3</strong></td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640 data-raw-source="[Azure DevOps Server Integration with GitHub.com](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640)">Azure DevOps Server Integration with GitHub.com</a></td><td>Planned</td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859333 data-raw-source="[Support wild cards in path filters](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859333)">Support wild cards in path filters</a></td><td>Planned</td><td>Pipelines</td><td>Future</td>
+</tr>
+<tr><td rowspan="2"><strong>2021 Q4</strong></td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330 data-raw-source="[Automatically retry a task](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330)">Automatically retry a task</a></td><td>Planned</td><td>Pipelines</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Planned</td><td>Pipelines</td><td>Future</td>
+</tr>
+<tr><td rowspan="15"><strong>Future</strong></td>
+    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547" data-raw-source="[Support Azure Managed Identities](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547)">Support Azure Managed Identities</a></td><td>Planned</td><td>Admin</td><td>Future</td>
+    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840548" data-raw-source="[Support Azure Service Principals](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840548)">Support Azure Service Principals</a></td><td>Planned</td><td>Admin</td><td>Future</td>
+    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700" data-raw-source="[Conditional Access Policy support for device state](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700)">Conditional Access Policy support for device state</a></td><td>Planned</td><td>Admin</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678 data-raw-source="[Access events for PAT, SSH will be available in the Auditing Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678)">Access events for PAT, SSH will be available in the Auditing Log</a></td><td>Planned</td><td>Admin</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609307 data-raw-source="[Package promote task in Azure Pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609307)">Package promote task in Azure Pipelines</a></td><td>Planned</td><td>Artifacts</td><td>TBD</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297 data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td><td>Planned</td><td>Artifacts</td><td>TBD</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196 data-raw-source="[Preview attachments for word, excel, ppt, project, pdf from the work item](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196)">Preview attachments for word, excel, ppt, project, pdf from the work item</a></td><td>Planned</td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942 data-raw-source="[Delivery Plans 2.0 - Dependency Tracking Visualization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942)">Delivery Plans 2.0 - Dependency Tracking Visualization</a></td><td>Planned</td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Planned</td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638 data-raw-source="[Delivery Plans - Progress Roll-ups by Effort](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638)">Delivery Plans - Progress Roll-ups by Effort</a></td><td>Planned</td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844639 data-raw-source="[Delivery Plans - Tags Color Styling](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844639)">Delivery Plans - Tags Color Styling</a></td><td>Planned</td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193 data-raw-source="[Maintain backlog hierarchy when filters are applied](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193)">Maintain backlog hierarchy when filters are applied</a></td><td>Planned</td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138 data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Planned</td><td>Boards</td><td>TBD</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343 data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343)">Support Flexible Orchestration mode in scale set agent pools</a></td><td>Planned</td><td>Pipelines</td><td>TBD</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876 data-raw-source="[Make file diff viewing easier in PR summary](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876)">Make file diff viewing easier in PR summary</a></td><td>Planned</td><td>Repos</td><td>Future</td> </tr>
    </tr>
     </tbody>
 </table>
@@ -77,6 +90,21 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
 <tr>
+    <td rowspan="5"><a href="2021/sprint-190-update.md" data-raw-source="[4 August 2021](2021/sprint-190-update.md)">29 July 2021</a></td>
+    <td>Display correct persona on commit links</td><td>Boards</td><td>Future</td></tr>
+    <td>Support queuing or serial deployments as an option in exclusive lock check</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Support for Quebec version of ServiceNow</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Change in .NET SDK preinstallation policy on Microsoft hosted Windows and macOS agents</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Changes to PublishBuildArtifacts and DownloadBuildArtifacts tasks</td><td>Pipelines</td><td>Future</td></tr>
+    </tr>    
+    <td rowspan="6"><a href="2021/sprint-188-update.md" data-raw-source="[17 June 2021](2021/sprint-188-update.md)">17 June 2021</a></td>
+    <td>Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy</td><td>General</td><td>Future</td></tr>
+    <td>Conditional access policy support for IPv6 traffic</td><td>General</td><td>Future</td></tr>
+    <td>Retain pipelines that are consumed in other pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Changes in the automatic creation of environments</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Remove Insights dialogue from Build Pipeline</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Updates to Team Foundation Version Control (TFVC) Windows Shell extension for Visual Studio 2019</td><td>Pipelines</td><td>Future</td></tr>
+    </tr>    
     <td rowspan="7"><a href="2021/sprint-187-update.md" data-raw-source="[26 May 2021](2021/sprint-187-update.md)">26 May 2021</a></td>
     <td>Delivery Plans 2.0 general availability</td><td>Board</td><td>Future</td></tr>
     <td>New iteration capacity REST API</td><td>Board</td><td>Future</td></tr>
@@ -4474,7 +4502,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr>
           <td>2017.1</td>
           <td>Mar. 9, 2017 (Mar. 7, 2017)</td>
-          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier" data-raw-source="[15.112.26307.00
+          <td><a href="/visualstudio/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier" data-raw-source="[15.112.26307.00
           (15.112.26301.0)](/visualstudio/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)">15.112.26307.00
           (15.112.26301.0)<em></a></td>
         </tr>

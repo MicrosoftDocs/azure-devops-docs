@@ -22,6 +22,9 @@
 - name: What do I get with a project?
   href: ../../user-guide/services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   displayname: features, services, dashboards, plan, track
+- name: Add users or groups to a project
+  href: ../security/add-users-team-project.md
+  displayName: create, new, account, default, custom, access, permission
 - name: Project configuration
   items:
   - name: "Area & iteration paths"
@@ -35,6 +38,9 @@
     displayname: scrum, Agile, administrator, define, backlog, team, settings
 - name: Manage projects
   items:
+  - name: Manage your project
+    href: ../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayname: policies, extensions 
   - name: Share your project vision
     href: project-vision-status.md
     displayname: readme, wiki, objective, administrator, summary, view, activity, members

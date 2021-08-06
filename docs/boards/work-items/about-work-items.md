@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 06/14/2021
 ---
 
 # Track work with user stories, issues, bugs, features, and epics 
@@ -34,39 +34,41 @@ You can use work items to track anything you need to track. Each work item repre
 
 ::: moniker-end
 
-#### In a nutshell:
+#### Tasks you can perform using work items
 
 ::: moniker range=">= tfs-2018"
 
-- You use different [work item types (WITs)](#wit) to track different types of information. Specific tools 
+- Use different [work item types (WITs)](#wit) to track different types of information. Specific tools include the following:  
 	- [Add backlog items](../backlogs/create-your-backlog.md), such as Issues (Basic process), User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI)
 	- [Define Features and Epics](../backlogs/define-features-epics.md)
 	- [Define, triage, and manage Bugs](../backlogs/manage-bugs.md)
 	- [Add Tasks to backlog items](../sprints/add-tasks.md)
-- You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments  
-- You can add and modify work items using the [web portal and other supported clients](#portal-clients)
-- You can [assign a work item](#assign) to one and only one project member 
-- You [assign work items to a sprint](#assign-to-sprint) via the iteration path
-- You can use [ad hoc search or queries to find or list work items](#queries)  
-- You can [use work item templates](#templates) to quickly fill in work item fields
-- Teams can [choose how they track bugs](#track), either as requirements or as tasks
-- You or a project administrator can [add and customize work item types](#customize)
-- [To add or modify work items](#permissions-access), you need to be a project member with Contributor permissions and Basic or Stakeholder access.
+- Update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments  
+- [Specify how bugs should be tracked](#track), either as requirements or as tasks
+- Add and modify work items using the [web portal and other supported clients](#portal-clients)
+- [Assign a work item](#assign) to one and only one project member 
+- [Assign work items to a sprint](#assign-to-sprint) via the iteration path
+- [Link work items to other work items or Azure DevOps objects](#link) 
+- Perform [ad hoc search or queries to find or list work items](#queries)  
+- [Capture and apply work item templates](#templates) to quickly fill in work item field
+- [Add and customize work item types](#customize)
+- [Modify work items](#permissions-access) 
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 
-- You use different [work item types (WITs)](#wit) to track different types of information, such as user stories, bugs, and tasks
-- You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items and attach files  
-- You can add and modify work items using the [web portal and other supported clients](#portal-clients)
-- You can [assign a work item](#assign) to one and only one project member 
-- You [assign work items to a sprint](#assign-to-sprint) via the iteration path
-- Teams can [choose how they track bugs](#track), either as requirements or as tasks
-- You can use [ad hoc search or queries to find or list work items](#queries)  
-- You can [use work item templates](#templates) to quickly fill in work item fields
-- You can [add and customize work item types and your backlog](#customize)
-- [To add or modify work items](#permissions-access), you need to be a project member with Contributor permissions and Basic or Stakeholder access. 
+- Use different [work item types (WITs)](#wit) to track different types of information.  
+- Update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments  
+- [Specify how bugs should be tracked](#track), either as requirements or as tasks
+- Add and modify work items using the [web portal and other supported clients](#portal-clients)
+- [Assign a work item](#assign) to one and only one project member 
+- [Assign work items to a sprint](#assign-to-sprint) via the iteration path
+- [Link work items to other work items or Azure DevOps objects](#link) 
+- Perform [ad hoc search or queries to find or list work items](#queries)  
+- [Capture and apply work item templates](#templates) to quickly fill in work item field
+- [Add and customize work item types](#customize)
+- [Modify work items](#permissions-access) 
 
 ::: moniker-end
 
@@ -75,13 +77,139 @@ You can use work items to track anything you need to track. Each work item repre
 
 ## Work item types (WITs)
 
-To track different types of work, different WITs are defined. The work item types available to you are based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)&mdash;Agile, Basic, Scrum, or CMMI&mdash;as illustrated in the following images.  
+To track different types of work, different WITs are defined. The work item types available to you are based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)&mdash;Agile, Basic, Scrum, or CMMI&mdash;as illustrated in the following images. The items in your backlog may be called user stories (agile) issues (Basic), product backlog items (Scrum), or requirements (CMMI). All four are similar: they describe the customer value to be delivered and the work to be performed.    
 
 [!INCLUDE [temp](../includes/work-item-types.md)]
 
-The items in your backlog may be called user stories (agile) issues (Basic), product backlog items (Scrum), or requirements (CMMI). All four are similar: they describe the customer value to be delivered and the work to be performed.   
+Each work item type belongs to a category. Categories are used to group work item types and determine which types appear on backlogs and boards. 
+
+> [!div class="mx-tdBreakAll"]  
+> |Category | Work item type | Controls backlogs/boards |
+> |----------|----------------|--------------------------|
+> |Epic| Epic | Epic portfolio backlogs and boards |
+> |Feature| Feature | Feature portfoliobacklogs and boards |
+> |Requirement| User Story (Agile)<br/>Issue (Basic)<br/>Product Backlog Item (Scrum)<br/>Requirement (CMMI)| Product backlogs and boards and Sprints backlog  |
+> |Task | Task | Sprints Taskboards  |
+> |Bug | Bug | Dependent on [how bugs are tracked](#track)  |
+
+ 
+In addition to the work items types that appear on backlogs and boards, there are additional work item types used to track testing, reviews, and feedback. These types, listed in the following table according to the category they belong to, are available for all processes. 
 
 
+:::row:::
+   :::column span="1":::
+      **Category**
+   :::column-end:::
+   :::column span="1":::
+      **Work item type**
+   :::column-end:::
+   :::column span="2":::
+       **Used to track specified types of work**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Code Review Request
+   :::column-end:::
+   :::column span="1":::
+      Code Review Request
+   :::column-end:::
+   :::column span="2":::
+       Tracks a code review request against code maintained in a [Team Foundation version control (TFVC) repository](../../repos/tfvc/index.yml). To learn more, see [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Code Review Response
+   :::column-end:::
+   :::column span="1":::
+      Code Review Response
+   :::column-end:::
+   :::column span="2":::
+       A code review response is created for each person who's been requested to provide review comments.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Feedback Request
+   :::column-end:::
+   :::column span="1":::
+      Feedback Request
+   :::column-end:::
+   :::column span="2":::
+       Feedback requests track requests for feedback generated through the feedback request form. See [Get feedback](../../project/feedback/get-feedback.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Feedback Response
+   :::column-end:::
+   :::column span="1":::
+      Feedback Response
+   :::column-end:::
+   :::column span="2":::
+       A feedback response is created for each person and for each item for which feedback is provided through the Microsoft Feedback Client. See [Get feedback](../../project/feedback/get-feedback.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Shared Step
+   :::column-end:::
+   :::column span="1":::
+      Shared Step
+   :::column-end:::
+   :::column span="2":::
+       Shared steps are used to [repeat tests with different data](../../test/repeat-test-with-different-data.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Shared Parameter
+   :::column-end:::
+   :::column span="1":::
+      Shared Parameter
+   :::column-end:::
+   :::column span="2":::
+       Shared Parameters specify different data and parameters for running manual test cases. See [Repeat a test with different data](../../test/repeat-test-with-different-data.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Test Case
+   :::column-end:::
+   :::column span="1":::
+      Test Case
+   :::column-end:::
+   :::column span="2":::
+       Each test case [defines a manual test](../../test/create-test-cases.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Test Plan
+   :::column-end:::
+   :::column span="1":::
+      Test Plan
+   :::column-end:::
+   :::column span="2":::
+       Test plan group test suites and individual test cases together. Test plans include static test suites, requirement-based suites, and query-based suites.To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md). 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Test Suite
+   :::column-end:::
+   :::column span="1":::
+      Test Suite
+   :::column-end:::
+   :::column span="2":::
+       Test suites group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. See [Create test plans and test suites](../../test/create-a-test-plan.md). 
+   :::column-end:::
+:::row-end::: 
+
+
+To prevent users from creating work items manually which should only be created from the specific tool designed to support their usage, there is a Hidden Types category. All of the categories listed in the previous table are added to the Hidden Types category except for the Test Case category. 
+ 
 <a id="form" />
 
 ## Work item form 
@@ -147,6 +275,17 @@ Use the web portal to accomplish the following tasks.
 [!INCLUDE [temp](../includes/page-work-item-tasks.md)] 
 
 
+<a id="track"> </a>
+
+## Track bugs as requirements or tasks 
+
+Many Scrum teams treat bugs the same as any backlog item or user story. Others see bugs as work that belongs to implementing a story, and therefore treat them as a task. Bugs, like product backlog items (PBIs) and user stories, represent work that needs doing. So, should you track your bugs along with other items in the product backlog items or as tasks linked to those backlog items? How does your team estimate work?  
+
+Based on how your team answers these questions, they can choose how they want to track bugs from one of these three choices. To change the team setting, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
+
+For an overview of all team settings, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
+
+
 <a id="assign" />
 <a id="assign-work-items"></a>
 
@@ -189,7 +328,7 @@ You can grant access to a project by adding security groups that you created in 
 ::: moniker range="<= azure-devops-2019"
 
 > [!NOTE]    
->To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../../reference/xml/apply-rule-work-item-field.md).
+>To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Define pick lists](../../reference/xml/define-pick-lists.md).
 
 ::: moniker-end
 
@@ -200,15 +339,26 @@ You can grant access to a project by adding security groups that you created in 
 To schedule work items to be worked on during a specific time period, you assign the **Iteration Path**. First, you define the Iteration Paths for use in the project, and then each team selects the Iteration Paths that they'll use. To learn more, see [Assign work to sprints](../sprints/assign-work-sprint.md). 
 
 
-<a id="track"> </a>
+<a id="link"> </a>
 
-## Track bugs as requirements or tasks 
+## Link work items to other work or objects
 
-Many Scrum teams treat bugs the same as any backlog item or user story. Others see bugs as work that belongs to implementing a story, and therefore treat them as a task. Bugs, like product backlog items (PBIs) and user stories, represent work that needs doing. So, should you track your bugs along with other items in the product backlog items or as tasks linked to those backlog items? How does your team estimate work?  
+As shown in the following image, you can link work items to other work items. Depending on the work item type, the link type is different. Also, special link types are used to support a hierarchy of work items using parent-child links, as well as predecessor-successor links to track dependencies. 
 
-Based on how your team answers these questions, they can choose how they want to track bugs from one of these three choices. To change the team setting, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
+![Work item link types, conceptual image](../queries/media/link-type-reference/linkscontrol-work-item-link-types.png)
+ 
+In addition, several tools support linking to other objects, such as builds, releases, commits, pull requests, and more as shown in the following image. 
 
-For an overview of all team settings, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
+::: moniker range=">= azure-devops-2019"
+![Artifact-to-artifact link types](../queries/media/link-tracking-artifact-to-artifact-link-types.png)  
+::: moniker-end
+::: moniker range=">= tfs-2013 <= tfs-2018"
+![Artifact-to-artifact link types](../backlogs/media/git/link-tracking-artifact-to-artifact-link-types.png)  
+::: moniker-end
+
+For a complete list of link types and supported features, see [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md) and [Link type reference](../queries/link-type-reference.md). 
+
+
 
 <a id="queries" />
 
@@ -278,3 +428,4 @@ To add users to a project, see [Add users to a project or team](../../organizati
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 - [Agile, Scrum, and CMMI processes](./guidance/choose-process.md)  
 - [Work item field index](./guidance/work-item-field.md)
+- [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md)

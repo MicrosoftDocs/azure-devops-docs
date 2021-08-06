@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.author: kaelli
 author: KathrynEE
-ms.custom: contperf-fy20q4
+ms.custom: "contperf-fy20q4, linked-from-support"
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 07/09/2020
@@ -43,12 +43,6 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 > If you don't have access to Excel, you can still perform bulk import and update using CSV formatted files. To learn more, see [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md).
 
 ::: moniker-end
-
-::: moniker range="<= tfs-2018" 
-> [!NOTE]   
-> You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
-::: moniker-end  
-
 
 ## Prerequisites 
 

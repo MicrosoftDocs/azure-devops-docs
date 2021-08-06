@@ -1,7 +1,7 @@
 ---
 title: Manage work item fields using witadmin
-titleSuffix: TFS  
-description: Change an attribute for a work item field defined for a project in Team Foundation Server
+titleSuffix: Azure DevOps Server
+description: Change an attribute for a work item field defined for a project in Azure DevOps Server
 ms.technology: devops-agile
 ms.custom: witadmin
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< azure-devops'
-ms.date: 03/20/2018
+ms.date: 08/02/2021
 ---
 
 # Manage work item fields
@@ -17,7 +17,27 @@ ms.date: 03/20/2018
 [!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
 You can manage the fields defined for work item types (WITs) that are defined for a project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](../xml/global-workflow-xml-element-reference.md) and [importing it to the collection](witadmin-import-export-global-workflow.md).  
+
+::: moniker range=">= azure-devops-2019"
+
+-   **changefield**: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and projects within the project collection:   
+    -   **Data type** for `PlainText` or `HTML` fields.    
+        > [!IMPORTANT]  
+        >  When you upgrade Team Foundation Server from an earlier version to the current version, the type assignment for the **Description** (System.Description) field is automatically converted from `PlainText` to `HTML`. With the `changefield` command, you can restore the content of this field to display plain text.  
   
+    -   **Friendly name** that displays in the work item query. This name may differ from that displayed on the work item form.    
+    -   **Reporting attributes** which includes the name of the field as it appears in a report, the reference report name, and the reporting type.  
+    -   **Synchronization** with Active Directory - you can enable/disable synchronization of person name fields.   
+-   **deletefield**: Deletes the specified field.     
+-   **listfields**: Lists the attributes for all fields or a specified field.
+
+> [!NOTE]
+> The **witadmin indexfield** command has been deprecated with Azure DevOps Server 2019 and later versions. Indexing fields is no longer required
+::: moniker-end
+
+  
+::: moniker range="< azure-devops-2019"
+
 -   **changefield**: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and projects within the project collection:   
     -   **Data type** for `PlainText` or `HTML` fields.    
         > [!IMPORTANT]  
@@ -29,7 +49,10 @@ You can manage the fields defined for work item types (WITs) that are defined fo
 -   **deletefield**: Deletes the specified field.    
 -   **indexfield**: Turns indexing on or off for the specified field. When you enable indexing for a field, you may increase the performance of finding work items whose queries specify that field. If you add a custom field that you use in many of your work item queries, you may want to enable indexing for that field.   
 -   **listfields**: Lists the attributes for all fields or a specified field.
-  
+
+::: moniker-end
+
+
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)] 
   
 For an overview of the fields defined within a default process template, see [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
@@ -48,6 +71,21 @@ For more information, see [Add an administrator](../../organizations/security/se
 >  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
   
 ## Syntax  
+
+
+::: moniker range=">= azure-devops-2019"
+  
+```  
+witadmin changefield /collection:CollectionURL /n:RefName   [/name:NewName]    [/syncnamechanges:true | false]   [/reportingname:ReportingName]    [/reportingrefname:ReportingRefName]   [/reportingtype:Type]   [/reportingformula:Formula]   [/type:PlainText | HTML]   [/noprompt]  
+
+witadmin deletefield /collection:CollectionURL /n:RefName [/noprompt]  
+  
+witadmin listfields /collection:CollectionURL /n:RefName [/unused]  
+```  
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
   
 ```  
 witadmin changefield /collection:CollectionURL /n:RefName   [/name:NewName]    [/syncnamechanges:true | false]   [/reportingname:ReportingName]    [/reportingrefname:ReportingRefName]   [/reportingtype:Type]   [/reportingformula:Formula]   [/type:PlainText | HTML]   [/noprompt]  
@@ -58,6 +96,8 @@ witadmin indexfield /collection:CollectionURL /n:Name /index:on|off
   
 witadmin listfields /collection:CollectionURL /n:RefName [/unused]  
 ```  
+
+::: moniker-end
   
 ### Parameters  
   
@@ -78,11 +118,16 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 |**/? or help**|Displays help about the command in the Command Prompt window.|  
   
 
+
+
+::: moniker range="< azure-devops-2019"
 ### Indexed fields  
 
 A query index is created based on those fields that have indexing enabled. This index improves the response time when running queries that include indexed fields.  
   
 By default, the following fields are indexed: Assigned To, Created Date, Changed By, State, Reason, Area ID, Iteration ID, and Work Item Type. If there are other fields that your team frequently uses in their queries, you can add them to the query index.  
+
+::: moniker-end
   
 ### Synchronizing person names with Active Directory  
 
@@ -105,7 +150,7 @@ When you assign the `syncnamechanges` attribute to a String field, the field alw
 You change the following attributes or values defined for a field by changing the work item type definition in which the field appears:  
   
 -   **Name** that displays on the work item form. See [WebLayout and Control elements](../xml/weblayout-xml-elements.md) or [Control XML element reference](../xml/control-xml-element-reference.md).   
--   **Help text**. See [Apply a field rule](../xml/apply-rule-work-item-field.md).    
+-   **Help text**. See [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).    
 -   **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](../xml/define-pick-lists.md).  
   
 ## Examples  
@@ -252,6 +297,7 @@ witadmin reportfield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 ```  
   
 ### Enable synchronization of a custom person-name field  
+
  The following command enables synchronization for the work item field AW.CustomerName defined for Collection1 on the AdventureWorksServer.  
   
 #### Verify the data type of the field that you want to convert  
@@ -332,6 +378,11 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 
 Enter **y** at the confirmation prompt to complete this step.  
   
+
+
+
+::: moniker range="< azure-devops-2019"
+
 ## Q & A  
   
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
@@ -339,6 +390,8 @@ Enter **y** at the confirmation prompt to complete this step.
 **A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.  
   
 Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [On-premises XML process model, Maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
+
+::: moniker-end
   
 ## Related articles 
 

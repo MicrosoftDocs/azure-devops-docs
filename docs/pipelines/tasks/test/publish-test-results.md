@@ -25,7 +25,7 @@ to provide a comprehensive test reporting and analytics experience.
 You can use the test runner of your choice that supports the results format
 you require. Supported results formats include [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html),
 [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd)
-(including [PHPUnit](https://phpunit.readthedocs.io/en/8.0/configuration.html#logging)),
+(including [PHPUnit](https://phpunit.readthedocs.io/en/9.5/configuration.html#the-logging-element)),
 [NUnit 2](https://docs.nunit.org/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
 Visual Studio Test (TRX), and [xUnit 2](https://xunit.net/docs/format-xml-v2).
 

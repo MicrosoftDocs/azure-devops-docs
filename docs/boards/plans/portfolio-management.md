@@ -1,14 +1,14 @@
 ---
 title: Portfolio management
 titleSuffix: Azure Boards
-description: Work with a hierarchical team structure to manage product and portfolio backlogs and  to track progress across teams
+description: Work with a hierarchical team structure to manage product and portfolio backlogs and to track progress across teams
 ms.technology: devops-agile
 ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 06/23/2021
 ---
 
 # Portfolio management 
@@ -66,7 +66,7 @@ The Fabrikam Account Management portfolio owner has several campaigns to initiat
 
 With the hierarchical structure implemented, portfolio owners working in Account Management can view the epic, feature, and product backlogs for their area. 
 
-<img src="media/pm-account-management-backlog-view.png" alt="Epic backlog of account management team" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/pm-account-management-backlog-view.png" alt="Epic backlog of account management team" /> 
 
 All work items under the Fabrikam/Account Management area path appear in their backlog view. You can expand a single item or use the expand ![expand icon](../media/icons/expand_icon.png) and collapse ![collapse icon](../media/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy. 
 
@@ -115,7 +115,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 
 Backlog displays with work item icons is supported for TFS 2017.2 and later versions. For TFS 2017.1 and earlier versions, items that are owned by other teams appear with hollow-filled bars.  
 
-<img src="../backlogs/media/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership" style="border: 1px solid #C3C3C3;" /> 
+<img src="../backlogs/media/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership" /> 
 
 ::: moniker-end
 
@@ -123,7 +123,7 @@ Backlog displays with work item icons is supported for TFS 2017.2 and later vers
 
 The Customer Profile feature team's view of the backlog only includes those work items assigned to their area path, **Fabrikam/Account Management/Customer Profile**. Here we show parents which provides a few of the features and epics to which the backlog items belong. Items that are owned by other teams appear with hollow-filled bars. For example, Mobile feedback and Text alerts belong to the Account Management team.   
 
-<img src="media/pm-customer-profile-backlog-view.png" alt="Backlog view of Customer profile feature team" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/pm-customer-profile-backlog-view.png" alt="Backlog view of Customer profile feature team" /> 
 
 ::: moniker-end
 
@@ -175,13 +175,13 @@ Here, all backlog items have been assigned to feature teams. While all features 
 
 In this view of the Account Management backlog, all items still assigned to **Account Management** have yet to be assigned.
 
-<img src="media/pm-assign-items-from-common-backlog.png" alt="Backlog view-Assign items from a common backlog" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/pm-assign-items-from-common-backlog.png" alt="Backlog view-Assign items from a common backlog" /> 
 
 During the planning meeting, you can open each item, make notes, and assign the item to the team to work on it. 
 
 Here, all backlog items have been assigned to feature teams. While all features and epics remain owned by Account Management. 
 
-<img src="media/pm-items-assigned-from-common-backlog.png" alt="Backlog view-Items assigned from a common backlog" style="border: 2px solid #C3C3C3;" />
+<img src="media/pm-items-assigned-from-common-backlog.png" alt="Backlog view-Items assigned from a common backlog" />
 
 ::: moniker-end
 
@@ -205,10 +205,9 @@ If you need more than three backlog levels, you can add more. To learn how, see 
 The simplest way to track dependencies across teams is to link work items using the **Related** link type. If they are dependent in time, then you can use the **Predecessor/Successor** link types.  You can then create queries that find work items containing these relationships. See [Manage dependencies, link work items to support traceability](../queries/link-work-items-support-traceability.md) to learn more. 
   
 ::: moniker range="azure-devops"
+Using Delivery Plans, you can track dependencies across projects within an organization. To learn more, see [Track dependencies using Delivery Plans](../plans/track-dependencies.md). 
 
-> [!NOTE]   
-> You can view dependencies from the new version of Delivery Plans that is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans Experience**. To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md).
- 
+To track dependencies across organizations, see [Plan and track dependencies using the Dependency Tracker](../extensions/dependency-tracker.md). 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"

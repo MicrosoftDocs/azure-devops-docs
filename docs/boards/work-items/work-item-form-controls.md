@@ -67,7 +67,7 @@ As the following image shows, each work item form comes with a number of control
 | ![Clone icon](../media/icons/clone-icon.png) | [Copy work item and optionally change work item type](../backlogs/copy-clone-work-items.md#copy-clone) (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
 | ![Email icon](../media/icons/email-icon.png) | [Email work item](email-work-items.md)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
 | ![Delete icon](../media/icons/delete_icon.png) | [Recycle work item](../backlogs/remove-delete-work-items.md)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
-| ![Storyboard icon](../media/icons/storyboard-icon.png) | [Storyboard with PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
+| ![Storyboard icon](../media/icons/storyboard-icon.png) | [Storyboard with PowerPoint](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
 
 <a id="update-work-status">  </a>
 
@@ -75,7 +75,7 @@ As the following image shows, each work item form comes with a number of control
 
 As work progresses, team members can update the state and reassign it as needed. 
 
-<img src="../backlogs/media/add-work-item-vsts-update-state.png" alt="Product backlog item workflow, Scrum process" style="border: 1px solid #C3C3C3;" />  
+<img src="../backlogs/media/add-work-item-vsts-update-state.png" alt="Product backlog item workflow, Scrum process" />  
 
 While the workflow states differ for different work item types, they usually follow a progression from New or Active to Closed or Done. The following image shows the work flow states for the Agile process user story. If you want to discard a work item, change the state to Removed.  
 
@@ -110,7 +110,7 @@ Removed work items remain in the data store and can be reactivated by changing t
 
 With each update, the Reason field also updates and changes are recorded in the History field which you can view through the ![history tab icon](../media/icons/icon-history-tab-wi.png) **History** tab. To find work items based on their history, see [History & auditing](../queries/history-and-auditing.md).   
 
-<img src="../backlogs/media/add-work-item-history.png" alt="View change history" style="border: 1px solid #C3C3C3;" />  
+<img src="../backlogs/media/add-work-item-history.png" alt="View change history" />  
 
 
 
@@ -122,7 +122,7 @@ By linking work items using Related or Dependent link types, you can track work 
 
 There are three links controls provided on most forms. The Development and Related Work scoped links controls appear on the Details tab. The ![Links page icon](../media/icons/icon-links-tab-wi.png) Links tab provides access to all links made to the work item.  
 
-<img src="../../reference/xml/media/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #C3C3C3;" />  
+<img src="../../reference/xml/media/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" />  
 
 
 ## Add links  
@@ -133,7 +133,7 @@ From each links control, you can perform these actions:
 - To delete a link, highlight it and click the ![delete icon](../media/icons/delete_icon.png) delete icon   
 - To link to an existing item, or create and link a new work item, select one of the menu options.  
 
-<img src="../../reference/xml/media/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #C3C3C3;" />  
+<img src="../../reference/xml/media/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" />  
 
 To learn more, see [Add links to work items](../backlogs/add-link.md).
 
@@ -155,7 +155,7 @@ The Related Work links control displays links to other work items in a set order
 
 In addition, the Links control tab provides access to all links made to the work item&mdash;both work items and external objects. 
 
-<img src="../backlogs/media/add-work-item-links.png" alt="Agile process, User Story work item form, Links control tab" style="border: 1px solid #C3C3C3;" />   
+<img src="../backlogs/media/add-work-item-links.png" alt="Agile process, User Story work item form, Links control tab" />   
 
 <a id="discussion">  </a>
 
@@ -175,10 +175,12 @@ From the web portal, simply copy the URL from the web browser address or hover o
 
 ## Start storyboarding  
 
-> [!NOTE]    
-> The **Start storyboarding** menu option is only available from the new web form. However, from the old web form, you can choose the **Start Storyboarding** link from the **Storyboard** tab from a backlog item, or simply open PowerPoint. See [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) for requirements and usage.    
-You can storyboard your ideas using PowerPoint to bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides. From any work item, you can open PowerPoint by choosing the Start storyboarding menu option.    
+> [!IMPORTANT]  
+> Starting with Visual Studio 2019, the Azure DevOps Office Integratoin plug-in has deprecated support for Storyboarding with PowerPoint and Microsoft Project. Also, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.  
+ 
+The **Start storyboarding** menu option is only available from the new web form. However, from the old web form, you can choose the **Start Storyboarding** link from the **Storyboard** tab from a backlog item, or simply open PowerPoint. See [Storyboard your ideas using PowerPoint](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint) for requirements and usage.    
 
+You can storyboard your ideas using PowerPoint to bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides. From any work item, you can open PowerPoint by choosing the Start storyboarding menu option.    
 ![Work item form, Start storyboarding menu option](../backlogs/media/add-work-item-start-storyboarding.png)
 
 

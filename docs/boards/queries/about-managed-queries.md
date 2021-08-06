@@ -9,7 +9,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 03/05/2021
+ms.date: 07/27/2021
 ---
 
 
@@ -25,7 +25,7 @@ Use managed queries to support these operations:
 - Review a hierarchy of work items  
 - Share a list of work items with a team member 
   
-
+You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/). Changes you make in one client are reflected in other clients as all changes are stored in the work tracking data store. 
  
 ## Get started using queries
 

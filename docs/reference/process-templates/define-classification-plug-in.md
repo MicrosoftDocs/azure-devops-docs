@@ -22,7 +22,7 @@ The classifications that you define appear on the **Areas** and **Iterations** p
 
 [!INCLUDE [temp](../../includes/image-differences.md)]
 
-<img src="../media/mareas-work-areas-admin-page.png" alt="Areas, defaults defined for project" style="border: 1px solid #C3C3C3;" /> 
+<img src="../media/mareas-work-areas-admin-page.png" alt="Areas, defaults defined for project" /> 
 
 For an overview of using the web portal, see [Web portal navigation](../../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json).  
 

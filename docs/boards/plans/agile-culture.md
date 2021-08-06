@@ -25,13 +25,9 @@ However, to successfully scale Agile requires addressing both the culture and to
 
 ## Alignment enables autonomy
 
-<meta name="keywords" content="Agile culture,alignment,autonomy" /> 
-
 Organizations that aspire to be agile need to consider the twin obligations of creating alignment across the enterprise and supporting team autonomy. Teams need autonomy to be efficient. And, enterprises need alignment across teams and the organization to be efficient.  
 
 Too much alignment with insufficient team autonomy leads doesn't support innovation or agility of teams to get things done. Too little alignment with each team running their own program as they want doesn't provide the insight and coordination required to meet business objectives.  
-
-![Alignment enables autonomy](media/alignment-enables-autonomy_725.png)
 
 With the right level of alignment across the organization and team autonomy, individuals are empowered to innovate and inspired to collaborate to meet business objectives. 
 
@@ -39,7 +35,7 @@ With the right level of alignment across the organization and team autonomy, ind
 
 As you plan how you want to grow your Agile tool set, consider the following areas that are key to creating enterprise alignment while developing team autonomy.  
 
----
+
 :::row:::
    :::column span="1":::
       **Area**
@@ -51,7 +47,6 @@ As you plan how you want to grow your Agile tool set, consider the following are
       **Support autonomy**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Product vision
@@ -63,7 +58,6 @@ As you plan how you want to grow your Agile tool set, consider the following are
       Teams determine how to best meet the roadmap. Teams break down goals into user stories or product backlog items using their [team backlogs](portfolio-management.md#feature-team-backlog).
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Team structure
@@ -75,7 +69,6 @@ As you plan how you want to grow your Agile tool set, consider the following are
       With teams, there should be some established roles, such as product owner and development leads, but also room to rotate roles. For example, team members can take turns acting as Scrum Master, developing sprint demos, running sprint retrospectives, or crafting sprint emails. 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Development cadence
@@ -90,7 +83,6 @@ As you plan how you want to grow your Agile tool set, consider the following are
       It's possible for some teams to execute in shorter sprints. For example, if an organization sets a 2 week sprint cadence, some teams may choose to operate in 1 week sprints, while still aligning with the organizational schedule. 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Communication cadence
@@ -103,7 +95,6 @@ As you plan how you want to grow your Agile tool set, consider the following are
       Teams determine the details that they communicate and who&#39;ll develop the communication. Their sprint emails may contain a summary of previous sprint accomplishments and next sprint plans or include a demo of recently completed features.
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Quality
@@ -116,7 +107,6 @@ As you plan how you want to grow your Agile tool set, consider the following are
       Teams choose how they meet the quality standards. They may stage bug bashes for new features or at the end of each sprint. They may designate an individual to act as a bug shield on a rotating basis.
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Manage risk, track work
@@ -130,14 +120,13 @@ As you plan how you want to grow your Agile tool set, consider the following are
       For example, teams may add a backlog item to track a dependency they have on another team. Or, they may track their risks via a list of issues or impediments. Also, teams regularly contribute to improving the process and infrastructure to support the organizations ability to manage risk and gain insights.
    :::column-end:::
 :::row-end:::
----
 
 
 <a id="horizontal-vs-vertical">  </a> 
 
 ## Feature teams   
 
-<meta name="keywords" content="Agile culture,feature teams,agile teams, horizontal team structure" /><br/>As you scale, one of the most important tasks to consider is how you structure your teams. Traditionally, horizontal team structures divide teams according to the software architecture: user interface, service-oriented architecture, and data teams.  
+As you scale, one of the most important tasks to consider is how you structure your teams. Traditionally, horizontal team structures divide teams according to the software architecture: user interface, service-oriented architecture, and data teams.  
 
 
 ![Horizontal vs vertical teams](media/horizontal-vs-vertical-teams.png)
@@ -154,7 +143,7 @@ Each team plans the features they'll deliver. They have the autonomy to determin
 
 ## Configure your Agile tools to scale
 
-<meta name="keywords" content="Agile culture,scaling agile" /><br/>As your organization grows, you can scale your Agile tools in the following ways.     
+As your organization grows, you can scale your Agile tools in the following ways.     
 
 - **[Add teams and filtered backlog views](../../organizations/settings/add-teams.md):** You add teams to support team autonomy and provide them with the tools they can configure and manage that supports how they want to work. These tools include product backlogs, Kanban boards, sprint backlogs and taskboards, and many others.
 
@@ -189,8 +178,8 @@ For additional guidance, see these topics:
 ### Agile culture industry resources
 
 - [Nexus, the Exoskeleton of Scaled Scrum](https://www.scrum.org/resources/nexus-guide)  
-- [Culture over process](https://blog.crisp.se/wp-content/uploads/2013/09/culture-over-process.pdf) by Henrik Kniberg  
-- [The Culture Game - Tools for the Agile Manager](https://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301) by Daniel Mezick   
+- [Culture over process](https://blog.crisp.se/wp-content/uploads/2013/09/culture-over-process.pdf)
+- [The Culture Game - Tools for the Agile Manager](https://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301)  
 - [Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/)  
 - [Scaling Agile Software Development, - Disciplined Agility at Scale (White Paper)](https://disciplinedagileconsortium.org/Resources/Documents/ScalingAgileSoftwareDevelopment.pdf)   
 

@@ -39,6 +39,7 @@ Then, replace:
 
 
 ## Upstream sources or scopes?
-Scopes add another restriction when naming your packages: each package name must start with `@<scope>`. If you're ok with this limitation, and don't intend to ever publish your private packages to npmjs.com, scopes are an alternative to [upstream sources](upstream-sources.md).
 
-If you do intend to publish private packages to npmjs.com, we recommend not using scopes unless you intend to publish your packages to npmjs.com with the scope intact; if you remove the scope when transitioning the package from Azure Artifacts to npmjs.com, you'll need to update any package.json references accordingly.
+Upstream sources give you the most flexibility to use a combination of scoped and non-scoped packages in your feed, as well as scoped and non-scoped packages from public registries such as npmjs.com.
+
+Scopes add another restriction when naming your packages: each package name must start with `@<scope>`. If you want to publish your private packages to public registries, you must do so with the scopes intact. If you remove package scopes when deploying your packages, you'll need to update all the *package.json* references accordingly. With that in mind, scopes can be a viable alternative to [upstream sources](upstream-sources.md).

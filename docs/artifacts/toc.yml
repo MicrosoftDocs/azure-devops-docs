@@ -25,7 +25,7 @@
   items:
   - name: About
     items:
-    - name: Use badges to share your packages
+    - name: Package badges
       href: package-badges.md
       displayName: packages, badges, sharing 
     - name: Limits on package sizes and counts
@@ -42,7 +42,7 @@
     - name: Publish to a NuGet feed (YAML/Classic)
       href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
       displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline 
-    - name: Publish to a NuGet feed (CLI)
+    - name: Connect to a feed and publish packages (CLI)
       href: nuget/publish.md
       displayName: publish package, nuget feed, cli
     - name: Publish to NuGet.org
@@ -194,24 +194,21 @@
     displayName: caching, storage, pipeline cach 
   - name: Set up retention policies
     href: ../pipelines/policies/retention.md
-    displayName: policies, retention, pipeline artifact 
-  - name: Symbols
-    items:
-    - name: Symbol files
-      href: concepts/symbols.md
-      displayName: symbols, debugging 
-    - name: Use symbols in Visual Studio
-      href: symbols/debug-with-symbols-visual-studio.md
-      displayName: symbols, visual studio symbols, debug, debugger 
-    - name: Use symbols in WinDbg
-      href: symbols/debug-with-symbols-windbg.md
-      displayName: symbols, windbg, debugger
-    - name: Publish symbols
-      href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-      displayName: symbols, debug, debugger, publish 
-    - name: Publish and consume symbols
-      href: symbols/setting-up-github-sourcelinking.md
-      displayName: publish, consume, debug, debugger, symbols 
+    displayName: policies, retention, pipeline artifact
+- name: Symbols
+  items:
+  - name: Symbols overview
+    href: concepts/symbols.md
+    displayName: symbols, debugging 
+  - name: Debug with Visual Studio
+    href: symbols/debug-with-symbols-visual-studio.md
+    displayName: symbols, visual studio symbols, debug, debugger 
+  - name: Debug with WinDbg
+    href: symbols/debug-with-symbols-windbg.md
+    displayName: symbols, windbg, debugger
+  - name: Publish symbols
+    href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
+    displayName: symbols, debug, debugger, publish
 - name: Concepts and references
   items:
   - name: Key concepts
@@ -232,5 +229,5 @@
     href: /rest/api/azure/devops/index
     displayName: api, reference 
   - name: Azure DevOps CLI
-    href: /azure/devops/cli/index?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json 
-    displayName: cli, reference 
+    href: /azure/devops/cli # Don't use .md link here because it binds to the artifacts TOC
+    displayName: cli, reference

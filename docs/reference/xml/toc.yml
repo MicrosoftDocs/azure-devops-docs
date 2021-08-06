@@ -5,7 +5,7 @@
   - name: Add or modify a field
     href: ../add-modify-field.md
   - name: Apply a field rule
-    href: apply-rule-work-item-field.md
+    href: ../../organizations/settings/work/rule-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Define pick lists
     href: define-pick-lists.md
   - name: Expand list and exclude groups
@@ -128,17 +128,3 @@
     href: update-the-workflow-for-agile-team-projects.md
   - name: Use team fields instead of area paths
     href: /previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths
-- name: Configure Features Wizard (Deprecated)
-  items:
-  - name: Configure features after an upgrade
-    href: /previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade
-  - name: New features added through feature enablement
-    href: /previous-versions/azure/devops/reference/upgrade/new-features-added
-  - name: Add features manually
-    href: /previous-versions/azure/devops/reference/upgrade/add-features-manually
-  - name: Additional configuration options
-    href: /previous-versions/azure/devops/reference/upgrade/additional-configuration-options
-  - name: Update a customized process template to access new features
-    href: /previous-versions/azure/devops/reference/upgrade/update-customized-process-template 
-  - name: When upgrading from TFS 2008 or TFS 2010
-    href: /previous-versions/azure/devops/reference/upgrade/upgrade-tfs-2008-or-2010
