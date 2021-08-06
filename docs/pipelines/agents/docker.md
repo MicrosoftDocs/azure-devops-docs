@@ -388,6 +388,9 @@ If you're sure you want to do this, see the [bind mount](https://docs.docker.com
 
 ## Use Azure Kubernetes Service cluster
 
+> [!NOTE]
+> Running Azure Pipelines agent is not supported in AKS 1.19 and later.
+
 ### Deploy and configure Azure Kubernetes Service 
 
 Follow the steps in [Quickstart: Deploy an Azure Kubernetes Service (AKS) cluster by using the Azure portal](/azure/aks/kubernetes-walkthrough-portal). After this, your PowerShell or Shell console can use the `kubectl` command line.
