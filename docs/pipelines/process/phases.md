@@ -614,7 +614,7 @@ time the job is queued or is waiting for an agent.
 
 The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. When `0` is specified, the maximum limit is used (described above).
 
-The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time when the deployment task is set to keep running if a previous task has failed. When not specified, the default is 5 minutes. If the value is less than or equal to **zero**, it is set to 1 minute. If the value is greater than **35790** minutes, it is set to **35790** minutes due to the main constraint for int32.MaxValue (2147483647 milliseconds).
+The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time when the deployment task is set to keep running if a previous task has failed. When not specified, the default is 5 minutes. The value should be in range from **1** to **35790** minutes.
 
 ```yaml
 jobs:
