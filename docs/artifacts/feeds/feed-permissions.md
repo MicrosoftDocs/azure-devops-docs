@@ -1,36 +1,34 @@
 ---
-title: Manage packages with feed permissions
-description: Set up feed permissions in Azure Artifacts
+title: Set up permissions
+description: Configure permissions for feeds and views
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 09/14/2020
+ms.date: 08/06/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Manage packages with feed permissions
+# Configure permissions
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-The packages you host in Azure Artifacts are stored in a **feed**. Setting permissions on the feed allows you to share your packages with as many or as few people as your scenario requires.
+With Azure Artifacts you can publish,, consume, and store different types of packages in your feed. Setting up permissions for your feed allows you to control who can access your packages.
 
-## Feed permissions overview
+## Feeds permissions
 
-Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Owners can add any type of identity-individuals, teams, and groups-to any access level.
+IN Azure Artifacts, feeds can be grouped into two categories: project-scoped and organization-scoped feeds. All feeds created through the web UI are project-scoped feeds. By default, every user in the same organization have the permissions to create a new feed. A user who creates a feed is both an owner and an administrator of that feed. Below are the four different access levels for a feed
 
-|                   Permission                  |  Reader  | Collaborator | Contributor |   Owner  |
-| --------------------------------------------- | -------- | ------------ | ----------- | -------- |
-| List, install, and restore packages           | &#x2713; |   &#x2713;   |   &#x2713;  | &#x2713; |
-| Push packages                                 |          |              |   &#x2713;  | &#x2713; |
-| Unlist/deprecate packages                     |          |              |   &#x2713;  | &#x2713; |
-| Delete/unpublish package                      |          |              |             | &#x2713; |
-| Promote a package to a view                   |          |              |   &#x2713;  | &#x2713; |
-| Add/remove upstream sources                   |          |              |             | &#x2713; |
-| Save packages from upstream sources           |          |   &#x2713;   |   &#x2713;  | &#x2713; |
-| Edit feed permissions                         |          |              |             | &#x2713; |
-| Allow external package versions               |          |              |             | &#x2713; |
-
-By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
+|                   Permission                  |  Reader  | Collaborator | Contributor |   Owner  |  Administrator  |
+| --------------------------------------------- | -------- | ------------ | ----------- | -------- | --------------- |
+| List/install/restore packages                 | &#x2713; |   &#x2713;   |   &#x2713;  | &#x2713; |     &#x2713;    |
+| Publish packages                              |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
+| Unlist packages                               |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
+| Promote packages to a view                    |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
+| Delete packages                               |          |              |             | &#x2713; |     &#x2713;    |
+| Add/remove upstream sources                   |          |              |             | &#x2713; |     &#x2713;    |
+| Allow external package versions               |          |              |             | &#x2713; |     &#x2713;    |
+| Save packages from upstream sources           |          |   &#x2713;   |   &#x2713;  | &#x2713; |     &#x2713;    |
+| Edit feeds settings                           |          |              |             | &#x2713; |     &#x2713;    |
 
 > [!NOTE]
 > To access a feed in a different organization, a user must be given access to the project hosting that feed.
