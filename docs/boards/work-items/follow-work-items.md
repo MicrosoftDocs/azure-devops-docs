@@ -105,7 +105,7 @@ To stop following changes, choose the  :::image type="icon" source="../media/ico
 
 To track the progress of a single pull request, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon for the pull request, and select the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: **Follow** option. This signals the system to notify you when changes are made to the PR.  
 
-<img src="media/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #C3C3C3;" />  
+<img src="media/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" />  
 
 You'll only receive notifications when other members of your team modifies the PR, such as adding to the discussion or adding an attachment. 
 
@@ -144,7 +144,7 @@ You can also view and manage work that you're following from **Boards>Work Items
 
 Open **Work>Queries** and choose **Followed work items**.  
 
-<img src="media/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #C3C3C3;" />  
+<img src="media/follows-followed-work-items.png" alt="Followed work items, Follow icon control" />  
 
 From this view, you can view all items you're following across all projects. Also, you can perform similar actions supported with a query results view, such as:
 - Refresh the view

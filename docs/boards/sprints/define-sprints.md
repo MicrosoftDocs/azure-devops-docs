@@ -113,7 +113,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 2. Choose the sprint listed under **Current** and then choose **Set dates**.  
 
-	<img src="media/define-sprints/set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/define-sprints/set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" />  
 
 	> [!NOTE]
 	> If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). To switch team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md). 

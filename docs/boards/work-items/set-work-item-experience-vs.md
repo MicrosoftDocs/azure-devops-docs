@@ -37,9 +37,8 @@ Each view supports the following tasks:
 <li><a href="/azure/devops/boards/queries/using-queries" data-raw-source="[Use the query editor to list and manage queries](../queries/using-queries.md)">Use the query editor to list and manage queries</a></li>
 <li><a href="/azure/devops/boards/queries/set-query-permissions" data-raw-source="[Organize query folders and set query permissions](../queries/set-query-permissions.md)">Organize query folders and set query permissions</a></li>
 <li><a href="/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel" data-raw-source="[Open query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)">Open query in Excel</a></li>
-<li><a href="/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project" data-raw-source="[Open query in Project](../backlogs/office/create-your-backlog-tasks-using-project.md)">Open query in Project</a></li>
 <li><a href="/azure/devops/boards/queries/share-plans" data-raw-source="[Email query results list using Outlook](../queries/share-plans.md)">Email query results list using Outlook</a></li>
-<li><a href="/azure/devops/report/create-status-and-trend-excel-reports" data-raw-source="[Create reports from query in Excel](../../report/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
+<li><a href="/azure/devops/report/create-status-and-trend-excel-reports" data-raw-source="[Create reports from query in Excel](../../report/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (on-premises Azure DevOps Server only)</li>
 </ul>
 </td>
 </tr>

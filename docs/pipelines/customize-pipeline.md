@@ -7,7 +7,7 @@ ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
 ms.author: vijayma
 author: vijayma
-ms.date: 09/12/2019
+ms.date: 07/21/2021
 monikerRange: ">= azure-devops-2019"
 ---
 
@@ -217,24 +217,83 @@ You can use a `trigger:` to specify the events when you want to run the pipeline
 
     You can specify the full name of the branch (for example, `main`) or a prefix-matching wildcard (for example, `releases/*`).
 
-## Customize settings
+## Pipeline settings
 
-There are pipeline settings that you wouldn't want to manage in your YAML file. Follow these steps to view and modify these settings:
-1. From your web browser, open the project for your organization in Azure DevOps and choose Pipelines / Pipelines from the navigation sidebar.
-2. Select the pipeline you want to configure settings for from the list of pipelines.
-3. Choose **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: and select **Settings**.
+There are some pipeline settings that you don't manage in your YAML file, such as the YAML file path and enabled status of your pipeline. To configure these settings, navigate to the [pipeline details page](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) and choose **More actions**, **settings**. For more information on navigating and browsing your pipelines, see [Navigating pipelines](get-started/multi-stage-pipelines-experience.md).
 
-### Processing of new run requests
-Sometimes you'll want to prevent new runs from starting on your pipeline. 
+:::image type="content" source="media/customize-pipeline/pipeline-settings.png" alt-text="Pipeline settings.":::
 
-* By default, the processing of new run requests is **Enabled**. This setting allows standard processing of all trigger types, including manual runs.
-* **Paused** pipelines allow run requests to be processed, but those requests are queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
-* **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied. 
+From the **Pipeline settings** pane you can configure the following settings.
 
-### Other settings
-* **YAML file path.** If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
-* **Automatically link work items included in this run.** The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When this option is selected, you'll need to specify a specific branch. Work items will only be associated with runs of that branch. 
-* To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/manage-team-group-global-organization-notifications.md)
+* **Processing of new run requests** - Sometimes you'll want to prevent new runs from starting on your pipeline. 
+  * By default, the processing of new run requests is **Enabled**. This setting allows standard processing of all trigger types, including manual runs.
+  * **Paused** pipelines allow run requests to be processed, but those requests are queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
+  * **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied. 
+* **YAML file path** - If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
+* **Automatically link work items included in this run** - The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When **Automatically link work items included in this run** is selected, you must specify a either a specific branch, or `*` for all branches, which is the default. If you specify a branch, work items are only associated with runs of that branch. If you specify `*`, work items are associated for all runs. 
+
+  :::image type="content" source="media/customize-pipeline/link-work-items.png" alt-text="Automatically link work items included in this run.":::
+
+  * To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/manage-team-group-global-organization-notifications.md)
+
+### Create work item on failure
+
+YAML pipelines don't have a [Create work item on failure](build/options.md#create-a-work-item-on-failure) setting like classic build pipelines. Classic build pipelines are single stage, and **Create work item on failure** applies to the whole pipeline. YAML pipelines can be multi-stage, and a pipeline level setting may not be appropriate. To implement **Create work item on failure** in a YAML pipeline, you can use methods such as the [Work Items - Create](/rest/api/azure/devops/wit/work%20items/create?view=azure-devops-rest-6.1&preserve-view=true) REST API call or the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command at the desired point in your pipeline. 
+
+The following example has two jobs. The first job represents the work of the pipeline, but if it fails, the second job runs, and creates a bug in the same project as the pipeline.
+
+```yml
+# When manually running the pipeline, you can select whether it
+# succeeds or fails.
+parameters:
+- name: succeed
+  displayName: Succeed or fail
+  type: boolean
+  default: false
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+- job: Work
+  steps:
+  - script: echo Hello, world!
+    displayName: 'Run a one-line script'
+
+  # This malformed command causes the job to fail
+  # Only run this command if the succeed variable is set to false
+  - script: git clone malformed input
+    condition: eq(${{ parameters.succeed }}, false)
+
+# This job creates a work item, and only runs if the previous job failed
+- job: ErrorHandler
+  dependsOn: Work
+  condition: failed()
+  steps: 
+  - bash: |
+      az boards work-item create \
+        --title "Build $(build.buildNumber) failed" \
+        --type bug \
+        --org $(System.TeamFoundationCollectionUri) \
+        --project $(System.TeamProject)
+    env: 
+      AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
+    displayName: 'Create work item on failure'
+```
+
+> [!NOTE] 
+> Azure Boards allows you to configure your work item tracking using several different processes, such as Agile or Basic. Each process has different work item types, and not every work item type is available in each process. For a list of work item types supported by each process, see [Work item types (WITs)](../boards/work-items/about-work-items.md#work-item-types-wits).
+
+The previous example uses [Runtime paramaters](process/runtime-parameters.md) to configure whether the pipeline succeeds or fails. When manually running the pipeline, you can set the value of the `succeed` parameter. The `script` step in the first job of the pipeline evaluates the `succeed` parameter and only runs when `succeed` is set to false.
+
+The second job in the pipeline has a dependency on the first pipeline, and only runs if the first job fails. The second job uses the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command to create a bug. For more information on running Azure DevOps CLI commands from a pipeline, see [Run commands in a YAML pipeline](../cli/azure-devops-cli-in-yaml.md).
+
+This example uses two jobs, but this same approach could be used across [multiple stages](process/stages.md).
+
+## Next steps
 
 You've just learned the basics of customizing your pipeline. Next we recommend that you learn more about customizing a pipeline for the language you use:
 

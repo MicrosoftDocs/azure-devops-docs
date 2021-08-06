@@ -16,7 +16,7 @@ ms.date: 11/06/2020
 The Azure DevOps Marketplace offers a wide variety of extensions to customize or enhance the default experience. You can learn more about those extensions developed by Microsoft from the following articles and links. For information on developing your own extension, see [Develop a web extension](../../extend/get-started/node.md).
  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## Integration 
 
@@ -27,15 +27,12 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ## Product planning 
 
-
 ::: moniker range=">= tfs-2017 <= azure-devops"
 
 > [!NOTE]   
 > Several extensions, such as the Feature Timeline and Epic Roadmap extension and the Dependency Tracker extension, are not supported features of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page. 
 
 ::: moniker-end
-
-
 
 ::: moniker range="azure-devops"
 
@@ -110,7 +107,7 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 - [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
-
+- [Multivalue control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control)
 
 ::: moniker-end
 
@@ -148,7 +145,8 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 
 ::: moniker-end
 
-
+## DevOps integration
+- [Creates a new work item from a build or release](https://marketplace.visualstudio.com/items?itemName=mspremier.CreateWorkItem#adding-the-task-to-a-yaml-definition)
  
 ## Command line interface
 

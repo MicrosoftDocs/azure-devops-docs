@@ -43,7 +43,7 @@ If you're new to Azure DevOps, see our overview articles that are designed to gi
 Track work and integrate with your code, build, and test environments from the following clients:<br/>- <a href="/previous-versions/azure/devops/java/download-eclipse-plug-in" data-raw-source="[Eclipse (Team Explorer Everywhere)](/previous-versions/azure/devops/java/download-eclipse-plug-in)">Eclipse (Team Explorer Everywhere)</a><br/>- <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[Visual Studio](https://visualstudio.microsoft.com/downloads/)">Visual Studio</a><br/>- <a href="/previous-versions/azure/devops/java/download-android-studio-plug-in" data-raw-source="[Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)">Android Studio</a><br/>- <a href="/previous-versions/azure/devops/java/download-intellij-plug-in" data-raw-source="[IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)">IntelliJ</a><br/>- <a href="/previous-versions/azure/devops/java/vscode-extension" data-raw-source="[Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)">Visual Studio Code</a><br/>
 To learn how to connect, see <a href="../organizations/projects/connect-to-projects.md" data-raw-source="[Connect to a project](../organizations/projects/connect-to-projects.md)">Connect to a project</a>.<br/><br/>
 <p><b>Office integration clients</b></p>
-Use features supported by these familiar clients to manage your project and illustrate your requirements.<br/>- <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Excel</a><br/>- <a href="../boards/backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)">Project</a><br/>- <a href="../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[PowerPoint - Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)">PowerPoint - Storyboarding</a><br/>
+Use features supported by these familiar clients to manage your project and illustrate your requirements.<br/>- <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Excel</a>
 
 </td>
 <td width="30%">
@@ -103,12 +103,6 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p>Use the <a href="../boards/sprints/forecast.md" data-raw-source="[forecast](../boards/sprints/forecast.md)">forecast</a> tool to estimate work to be completed in future sprints. </p>
  <br/>
-
-<p><b>Storyboard</b></p>
-<p>Visualize your ideas and user stories and support greater understanding of them by <a href="../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[storyboarding them with PowerPoint](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)">storyboarding them with PowerPoint</a>, also link your storyboards to your backlog work items.  </p>
-
-
-
 
 
 </td>
@@ -259,7 +253,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-links-control.png" alt="Link control, web portal"/><br/><br/>
 
 <p><b>Add or modify a field </b></p>
-<p>Add a custom field (<a href="../organizations/settings/work/customize-process.md" data-raw-source="[Azure DevOps Services](../organizations/settings/work/customize-process.md)">Azure DevOps Services</a> | <a href="../reference/add-modify-field.md" data-raw-source="[Azure DevOps Server](../reference/add-modify-field.md)">Azure DevOps Server</a> to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>Add a custom field (<a href="../organizations/settings/work/customize-process.md" data-raw-source="[Azure DevOps Services](../organizations/settings/work/customize-process.md)">Azure DevOps Services</a> | <a href="../organizations/settings/work/rule-reference.md" data-raw-source="[Azure DevOps Server](../organizations/settings/work/rule-reference.md)">Azure DevOps Server</a> to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 
 
 <p><b>Restrict access</b></p>
@@ -386,15 +380,15 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Add or modify a field </b></p>
-<p><a href="../reference/add-modify-field.md" data-raw-source="[Add or modify a field](../reference/add-modify-field.md)">Add or modify a field</a> to support work tracking and reporting by editing the WIT definition.</p>
+<p><a href="../organizations/settings/work/rule-reference.md" data-raw-source="[Add or modify a field](../organizations/settings/work/rule-reference.md)">Add or modify a field</a> to support work tracking and reporting by editing the WIT definition.</p>
 
 
 <p><b>Add rules to a field </b></p>
-<p>Apply <a href="../reference/xml/apply-rule-work-item-field.md" data-raw-source="[various rules to custom fields](../reference/xml/apply-rule-work-item-field.md)">various rules to custom fields</a> to qualify the value it can have, to copy a value, to specify a default, to restrict who can modify it, to enforce pattern matching, or to enforce conditional values.  </p>
+<p>Apply <a href="../organizations/settings/work/rule-reference.md" data-raw-source="[various rules to custom fields](../organizations/settings/work/rule-reference.md)">various rules to custom fields</a> to qualify the value it can have, to copy a value, to specify a default, to restrict who can modify it, to enforce pattern matching, or to enforce conditional values.  </p>
 
 
 <p><b>Remove a field </b></p>
-<p><a href="../reference/add-modify-field.md" data-raw-source="[Stop tracking a field by removing the field](../reference/add-modify-field.md)">Stop tracking a field by removing the field</a> from the work item form of select work item types. </p>
+<p><a href="../organizations/settings/work/rule-reference.md" data-raw-source="[Stop tracking a field by removing the field](../organizations/settings/work/rule-reference.md)">Stop tracking a field by removing the field</a> from the work item form of select work item types. </p>
 
 
 </td>
@@ -684,11 +678,11 @@ Use features supported by these familiar clients to manage your project and illu
 <p>You can <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[define rules that change a field value](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">define rules that change a field value</a> whenever you change the state, perform a transition, or select a reason.   </p>
 
 <p><b>Apply workflow conditional field rules (Azure DevOps Server)  </b></p>
-<p>You can define rules that <a href="../reference/xml/apply-rule-work-item-field.md" data-raw-source="[change a field value based on the contents of other fields](../reference/xml/apply-rule-work-item-field.md)">change a field value based on the contents of other fields</a> during workflow changes. </p>
+<p>You can define rules that <a href="../organizations/settings/work/rule-reference.md" data-raw-source="[change a field value based on the contents of other fields](../organizations/settings/work/rule-reference.md)">change a field value based on the contents of other fields</a> during workflow changes. </p>
 
 
 <p><b>Restrict who can make changes during workflow transitions (Azure DevOps Server)  </b></p>
-<p>Set a condition field rule that applies to a group to <a href="../reference/xml/apply-rule-work-item-field.md" data-raw-source="[restrict who can make changes to a workflow or a field](../reference/xml/apply-rule-work-item-field.md)">restrict who can make changes to a workflow or a field</a>.  </p>
+<p>Set a condition field rule that applies to a group to <a href="../organizations/settings/work/rule-reference.md" data-raw-source="[restrict who can make changes to a workflow or a field](../organizations/settings/work/rule-reference.md)">restrict who can make changes to a workflow or a field</a>.  </p>
 
 
 <p><b>Event-generated workflow changes or field assignments (Azure DevOps Server)</b></p>
@@ -1764,7 +1758,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Language Interface Packs (LIPs)</b></p>
-<p>By using a <a href="/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio" data-raw-source="[Windows Language Interface Pack (LIP)](/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio)">Windows Language Interface Pack (LIP)</a>, you can install a language version of Windows, and then install various User Interface Language Packs. Language packs switch your English Visual Studio Professional user interface into any of these languages and have a majority of the user interface localized. </p>
+<p>By using a <a href="https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5" data-raw-source="[Windows Language Interface Pack (LIP)](https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5)">Windows Language Interface Pack (LIP)</a>, you can install a language version of Windows, and then install various User Interface Language Packs. Language packs switch your English Visual Studio Professional user interface into any of these languages and have a majority of the user interface localized. </p>
 
 </td>
 <td width="33%">
@@ -1797,22 +1791,22 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Visual Studio language pack</b></p>
-<p>Install the <a href="https://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](https://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio" data-raw-source="[switch the UI display to different languages](/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
+<p>Install the <a href="https://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](https://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5" data-raw-source="[switch the UI display to different languages](https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
 <ul>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">English</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Chinese Simplified</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Chinese Traditional</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Czech</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">German</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">French</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Italian</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Japanese</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Korean</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Polish</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Portuguese (Brazil)</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Russian</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Spanish</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Turkish</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">English</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Chinese Simplified</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Chinese Traditional</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Czech</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">German</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">French</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Italian</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Japanese</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Korean</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Polish</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Portuguese (Brazil)</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Russian</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Spanish</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Turkish</a></li>
 </ul>
 <br/>
 
@@ -2615,10 +2609,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Discussion (Azure DevOps Services) </b></p>
 <p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/>.  </p>
 <img src="media/features/alm-feature-add-work-items-discussion.png" alt="Discussion section"/><br/><br/>
-
-
-<p><b>Storyboard</b></p>
-<p><a href="../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[Link your storyboards to you backlog work items](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)">Link your storyboards to you backlog work items</a>.  </p>
 
 </td>
 

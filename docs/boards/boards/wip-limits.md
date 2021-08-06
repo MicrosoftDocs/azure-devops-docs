@@ -21,7 +21,7 @@ An essential Kanban practice&mdash;Work in Progress limits, referred to as "WIP 
 
 You define WIP limits for each work stage, corresponding to each intermediate column. The limit sets a soft constraint on the number of items allowed within the column. Nothing actually prevents you from moving more items into the column and exceeding the limit. Your Kanban board shows the count of items at each stage next to each limit.
 
-<img src="media/WIP_1.png" alt="Kanban board columns with WIP limits" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/WIP_1.png" alt="Kanban board columns with WIP limits" /> 
 
 While [setting WIP limits](#Set) is simple, adhering to the limits takes a team commitment. Successful adoption of WIP limits involves a culture change. It moves teams from a focus on individual productivity to one of team productivity. 
 
@@ -52,7 +52,7 @@ After you've set your WIP limits, you'll want to track how well your team keeps 
 
 Respecting WIP limits means teams don't pull items into a column if doing so causes the number of items in the column to exceed the column limit. When they do, your Kanban board provides immediate feedback. This feedback should act as a signal to the team to focus immediately on activities to reduce the number of items in the column.
 
-<img src="media/WIP_2.png" alt="Kanban board showing a column over the WIP limit" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/WIP_2.png" alt="Kanban board showing a column over the WIP limit" /> 
 
 Although simple in theory, keeping within WIP limits can force individuals, teams, and organizations out of their comfort zone. Team members who like to multitask might feel unnecessarily constrained. Others might find themselves without work as they wait for work to complete at an upstream stage. 
 

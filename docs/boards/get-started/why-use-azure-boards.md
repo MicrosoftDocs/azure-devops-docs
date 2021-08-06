@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 01/11/2019
 ---
 
@@ -94,10 +94,17 @@ In addition to dashboards, you have access to the [Analytics service](../../repo
 
 ## 8. Office integration 
 
-Project managers who want to use familiar tools can import and export work item queries to and from Microsoft Office Excel and Project. To learn more, see: 
+::: moniker range=">= azure-devops-2019"
+Project managers who want to use familiar tools can import and export work item queries to and from Microsoft Office Excel or import and export work items using .csv files. To learn more, see: 
+- [Bulk import or update work items using CSV files](../queries/import-work-items-from-csv.md)
 - [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Create your backlog and tasks by using Project](../backlogs/office/create-your-backlog-tasks-using-project.md)
 
+::: moniker-end
+::: moniker range="<= tfs-2018"
+
+Project managers who want to use familiar tools can import and export work item queries to and from Microsoft Office Excel. To learn more, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
+
+::: moniker-end
 
 ## 9. Extensions and extensibility  
 
@@ -127,4 +134,5 @@ Get started today. To learn how, see [Sign up for free and invite others to coll
 
 ## Related articles
 
+- [Best practices for Agile project management](../best-practices-agile-project-management.md)
 - [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)

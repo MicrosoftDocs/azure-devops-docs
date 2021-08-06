@@ -118,9 +118,9 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
     <p>Active items assigned to me</p>
   </td>
   <td>
-    <p style="margin-bottom:0px">
+    <p>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Assigned To <em> = </em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-<p style="margin-bottom:0px"><code>And <em> State </em> = <em> Active</code></p>
+<p><code>And <em> State </em> = <em> Active</code></p>
 </td>
 </tr>
 <tr>
@@ -129,9 +129,9 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
     <p>Closed items that at some point was assigned to me</p>
   </td>
   <td>
-    <p style="margin-bottom:0px">
+    <p>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Assigned To </em> Was Ever <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-<p style="margin-bottom:0px"><code>And </em> State <em> = </em> Closed</code></p>
+<p><code>And </em> State <em> = </em> Closed</code></p>
   </td>
 </tr>
 <tr>
@@ -139,10 +139,10 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
     <p>Active user stories assigned to my (Web) team</p>
   </td>
   <td>
-    <p style="margin-bottom:0px">
+    <p>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type = User Story</code></p>
-<p style="margin-bottom:0px"><code>And <em> State </em> = <em> Active</code></p>
-<p style="margin-bottom:0px"><code>And </em> Assigned To <em> In Group </em> [FabrikamFiber]\Web</code></p>
+<p><code>And <em> State </em> = <em> Active</code></p>
+<p><code>And </em> Assigned To <em> In Group </em> [FabrikamFiber]\Web</code></p>
   </td>
 </tr>
 <tr>
@@ -150,9 +150,9 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
     <p>Items I&#39;ve modified in the last 30 days</p>
   </td>
   <td>
-    <p style="margin-bottom:0px">
+    <p>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Changed By <em> = </em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-<p style="margin-bottom:0px"><code>And <em> Changed Date </em> &gt;= <em>   <xref href="Today-30" data-throw-if-not-resolved="False" data-raw-source="@Today-30"></xref></code></p>
+<p><code>And <em> Changed Date </em> &gt;= <em>   <xref href="Today-30" data-throw-if-not-resolved="False" data-raw-source="@Today-30"></xref></code></p>
   </td>
 </tr>
 
@@ -161,7 +161,7 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
     <p>Unassigned items (leave the Value blank)</p>
   </td>
   <td>
-    <p style="margin-bottom:0px">
+    <p>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Assigned To </em> = _</code></p>
   </td>
 </tr>
@@ -205,9 +205,9 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
     </p>
 </td>
   <td>
-    <p style="margin-bottom:0px">
+    <p>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> User Story</code></p>
-<p style="margin-bottom:0px"><code>And <em> State </em> = <em> Resolved</code></p>
+<p><code>And <em> State </em> = <em> Resolved</code></p>
   </td>
 </tr>
 <tr>
@@ -216,9 +216,9 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
     </p>
 </td>
   <td>
-    <p style="margin-bottom:0px">
+    <p>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type </em> In <em> User Story,Bug,Task</code></p>
-<p style="margin-bottom:0px"><code>And </em> State <em> In </em> New,Active</code></p>
+<p><code>And </em> State <em> In </em> New,Active</code></p>
   </td>
 </tr>
 <tr>
@@ -226,9 +226,9 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
     <p>Items removed as they&#39;re duplicate  </p>
   </td>
   <td>
-    <p style="margin-bottom:0px">
+    <p>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>State <em> = </em> Removed</code></p>
-<p style="margin-bottom:0px"><code>And <em> Reason </em> = <em> Duplicate</code></p>
+<p><code>And <em> Reason </em> = <em> Duplicate</code></p>
   </td>
 </tr>
 
@@ -237,7 +237,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
     <p>Items failing acceptance tests  </p>
   </td>
   <td>
-    <p style="margin-bottom:0px">
+    <p>
       <code>Resolved Reason = Acceptance tests fail</code>
     </p>
   </td>
@@ -247,9 +247,9 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
     <p>Items closed within the last 15 days</p>
   </td>
   <td>
-    <p style="margin-bottom:0px">
+    <p>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>State </em> = <em> Closed</code></p>
-<p style="margin-bottom:0px"><code>And </em> Closed Date  <em> &gt;  </em> <xref href="Today-15" data-throw-if-not-resolved="False" data-raw-source="@Today-15"></xref></code></p>
+<p><code>And </em> Closed Date  <em> &gt;  </em> <xref href="Today-15" data-throw-if-not-resolved="False" data-raw-source="@Today-15"></xref></code></p>
   </td>
 </tr>
 </tbody>
@@ -272,9 +272,9 @@ You can quickly find items that you changed, resolved, or closed. You can also f
     <p>User Stories that I closed </p>
 </td>
   <td>
-    <p style="margin-bottom:0px">
+    <p>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> User Story</code></p>
-<p style="margin-bottom:0px"><code>And <em> Closed By </em> = <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
+<p><code>And <em> Closed By </em> = <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
   </td>
 </tr>
 <tr>
@@ -282,9 +282,9 @@ You can quickly find items that you changed, resolved, or closed. You can also f
     <p>Items I resolved in the last week</p>
   </td>
   <td>
-    <p style="margin-bottom:0px">
+    <p>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Resolved By </em> = <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-<p style="margin-bottom:0px"><code>And </em> Resolved Date <em> &gt;= </em> <xref href="Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"></xref></code></p>
+<p><code>And </em> Resolved Date <em> &gt;= </em> <xref href="Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"></xref></code></p>
   </td>
 </tr>
 </tbody>
@@ -319,7 +319,7 @@ Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board L
 
 For example, you can list items based on the team area path, and if they are in a specific custom Kanban column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring Kanban goodness to queries, and more](https://blogs.msdn.microsoft.com/devops/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)  
 
-<img src="media/query-kanban-fields.png" alt="Query filter on Kanban board fields" style="border: 1px solid #C3C3C3;" />  
+<img src="media/query-kanban-fields.png" alt="Query filter on Kanban board fields" />  
 
 > [!NOTE]    
 > Queries are now scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.  
@@ -409,7 +409,6 @@ You can use the following fields to filter your queries or build reports. Some o
 
 ::: moniker-end
 
----
 :::row:::
    :::column span="1":::
       **Field name**
@@ -421,7 +420,6 @@ You can use the following fields to filter your queries or build reports. Some o
       **Work item type**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Activated By <sup> 1,&nbsp;2, 3</sup> 
@@ -440,7 +438,6 @@ You can use the following fields to filter your queries or build reports. Some o
       Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Activated Date <sup> 1, 3</sup> 
@@ -459,7 +456,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -479,7 +475,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Board Column
@@ -499,7 +494,6 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker-end 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Board Column Done 
@@ -519,7 +513,6 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker-end
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Board Lane
@@ -539,7 +532,6 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker-end
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -559,7 +551,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Closed Date 
@@ -574,7 +565,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -594,7 +584,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Created Date 
@@ -609,7 +598,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -631,7 +619,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All (except Test Case and Shared Steps)
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -654,7 +641,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -677,7 +663,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -697,7 +682,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All (Agile, CMMI)
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Reviewed By 
@@ -712,7 +696,6 @@ You can use the following fields to filter your queries or build reports. Some o
       Code Review Response
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -742,7 +725,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       State Changed Date 
@@ -757,7 +739,7 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
+
 
 #### Notes:  
 

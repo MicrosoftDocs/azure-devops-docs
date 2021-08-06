@@ -25,7 +25,7 @@ In this article, you'll learn:
 > * How to expand or collapse inline tests   
 > * How to reorder or reparent inline tests  
 
-<img src="media/i-test-board-intro.png" alt="Web portal, Kanban board with several inline tests defined" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/i-test-board-intro.png" alt="Web portal, Kanban board with several inline tests defined" /> 
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
 
@@ -87,11 +87,11 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 2. If you have a number of tests to add, simply keep typing each title and click Enter. 
 
-	<img src="media/i-test-story-with-3-inline-tests.png" alt="Work item with several test cases added" style="border: 1px solid #C3C3C3;" />   
+	<img src="media/i-test-story-with-3-inline-tests.png" alt="Work item with several test cases added" />   
 
 	To add details to the test case, open it. You can click the title, double-click the inline item, or open the context menu and choose Open. 
 
-	<img src="media/i-test-case-form.png" alt="Open test case form from Kanban board" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/i-test-case-form.png" alt="Open test case form from Kanban board" /> 
 
 See [Create manual tests](../../test/create-test-cases.md) to learn more about defining tests. 
 
@@ -101,7 +101,7 @@ Prior to running the test, you must add details.
 
 Run the test by selecting ![Run icon](../media/icons/run_query.png) Run test from the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu for the inline test.  
 
-<img src="media/i-test-run-test.png" alt="Run a test" style="border: 1px solid #C3C3C3;" />  
+<img src="media/i-test-run-test.png" alt="Run a test" />  
 
 Microsoft Test Runner starts in a new browser instance. For details on running a test, see [Run manual tests](../../test/run-manual-tests.md).
 
@@ -110,7 +110,7 @@ Microsoft Test Runner starts in a new browser instance. For details on running a
 
 You can update the status of the test from the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu . 
 
-<img src="media/i-test-update-status.png" alt="Check tasks that are complete" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/i-test-update-status.png" alt="Check tasks that are complete" /> 
  
 Updating the status of tests enable you to <a href="../../test/track-test-status.md" data-raw-source="[track test results](../../test/track-test-status.md)">track test results</a>.  
 
@@ -144,7 +144,7 @@ Use inline tests for lightweight traceability and to manage manual tests for use
 If you find that you don't use this feature, you can disable it from the [common configurations dialog](../../boards/boards/customize-cards.md#annotations). 
 
 Additional ways you can quickly add linked items and objects to user stories from the Kanban board:
-- [Add inline tasks](add-task-checklists.md)
+- [Add tasks or child items as checklists](add-task-checklists.md)
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md) 
 
 To initiate web-based exploratory testing for a user story, you need to install the [Test & Feedback Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). For details, see [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md).

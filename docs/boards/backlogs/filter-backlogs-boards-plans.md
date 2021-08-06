@@ -784,6 +784,15 @@ You can also add the **Parent** field to cards on the Kanban Boards and Taskboar
 
 ::: moniker-end 
 
+
+## Persistence and saving filter options
+
+Once you set the filter options for a specific view, your settings persist until you change them. There is no save button or other action you need to take.   
+ 
+> [!NOTE]    
+> You can't set default filter options, nor set filter options for other members in your team. 
+
+
 ## Prerequisites
 
 - All project members can exercise filter functions.  

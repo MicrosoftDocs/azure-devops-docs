@@ -247,21 +247,24 @@ We now have a private repository within Azure Artifacts that we can push our Pow
 
 3. Register your PowerShell repository. The `SourceLocation` link can also be found by selecting **Connect to Feed** then **NuGet.exe** from the feed's page in Azure Artifacts.
 
+    > [!NOTE]
+    > For organization-scoped feeds, omit `<project_name>` from the PublishLocation and SourceLocation URLs.
+
     ```powershell
         Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
     
     > [!IMPORTANT]
-    > PowerShell does not support Version 3 of NuGet.
+    > PowerShell does not support version 3 of NuGet.
     
     If you're still using the older `visualstudio.com` URLs, use the following command instead:
 
     ```powershell
         Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<org_name>.pkgs.visualstudio.com/<project_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://<org_name>.pkgs.visualstudio.com/<project_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
-
-    > [!TIP]
-    > Certain versions of PowerShell requires restarting a new session after executing `Register-PSRepository` cmdlet to avoid the `Unable to resolve package source` warning. 
+   
+    > [!NOTE]
+    > In some versions of PowerShell, you must restart with a new session after you run the `Register-PSRepository` cmdlet to avoid the `Unable to resolve package source` warning. 
 
 4. To confirm that the repository was registered successfully run the `Get-PSRepository` cmdlet. This command gets all module repositories registered for the current user:
 

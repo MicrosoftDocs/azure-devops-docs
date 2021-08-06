@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 
 ms.topic: best-practice
 ms.author: kaelli
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 10/17/2019
 ---
 
@@ -77,7 +77,7 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 - Viewing the flow of work from inception to completion  
 - Quickly adding [product backlog](../boards/kanban-quickstart.md) and [portfolio backlog](../boards/kanban-epics-features-stories.md) items 
 - Updating the status of backlog items  
-- Adding linked child items ([task checklists](../boards/add-task-checklists.md), [user stories or features](../boards/kanban-epics-features-stories.md))  
+- Adding linked child items ([checklists](../boards/add-task-checklists.md), [user stories or features](../boards/kanban-epics-features-stories.md))  
 - [Focusing the view based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs-boards-plans.md) 
 - Adding, running, and updating [inline test cases](../boards/add-run-update-tests.md))
 
@@ -205,7 +205,12 @@ When you want to review the schedule of stories or features your teams plan to d
 > [!NOTE]   
 > Starting with Azure DevOps Server 2019 and Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Office Project and Storyboarding with PowerPoint.  
 
+Use [**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform the following tasks: 
+- Add or update many work items and their fields
+- Add or change hierarchical links between work items. 
 
+
+<!--- 
 <table width="100%">
 <tbody valign="top">
 <tr>
@@ -244,8 +249,10 @@ When you want to review the schedule of stories or features your teams plan to d
 </tbody>
 </table>
 
+-->
 
 ## Test tools, test artifacts, and bugs
+
 Testing tools used several work item types&mdash;such as test plans, test suites, test cases, and more. You create and manage them from **Test Plans/Test** or using one or more test tools. Several of these tools also support creating bugs.  
 
 

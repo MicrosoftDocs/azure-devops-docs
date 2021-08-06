@@ -1,13 +1,13 @@
 ---
 title: Set up or configure hierarchical teams
 titleSuffix: Azure Boards
-description: Configure teams to support portfolio backlogs to track progress across teams in Azure Boards, Azure DevOps, & Team Foundation Server 
-ms.technology: devops-agile
-ms.assetid:  
+description: Configure teams to support portfolio backlogs to track progress across teams in Azure Boards, Azure DevOps.
+ms.technology: devops-agile 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-ms.date: 10/28/2019
+monikerRange: '<= azure-devops'
+ms.date: 06/23/2021
 ---
 
 # Configure a hierarchy of teams
@@ -43,6 +43,7 @@ In this article you'll learn how to:
 
 
 <a id="set_up"></a>
+
 ## Add teams 
 
 The first step is to add a team for each feature team and management area. You can also rename teams that you've already added. When you finish, you'll have a set of teams similar to the ones shown.  
@@ -86,7 +87,7 @@ The first step is to add a team for each feature team and management area. You c
 
 1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open **Project Settings.**  
 
-    <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
+    <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Open project admin page" />
 
 2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**. 
 
@@ -174,7 +175,7 @@ You do this by opening each area path associated with a feature team and changin
 
     For example, here we move the Customer Profile to under Account Management.
 
-    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams." style="border: 1px solid #C3C3C3;" />  
+    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams." />  
 
     Repeat this step for all feature team area paths. 
 
@@ -183,6 +184,9 @@ You do this by opening each area path associated with a feature team and changin
 ## Include sub-area paths for management teams
 
 By including sub-area paths for the management teams, you automatically include the backlog items of their feature teams onto the management team's backlog. The default setting for all teams is to exclude sub-area paths. 
+
+> [!NOTE]   
+> Sub-area paths may break a team's ability to reorder or reparent items on the backlog. Also, it can introduce uncertainties with regards to assignments made to the Kanban Board Column, Done, and Lane fields. To learn more, see [Exercising select features with shared area paths](#op-issues) later in this article. 
 
 ::: moniker range=">= azure-devops-2019"
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from **Teams**. 
@@ -245,7 +249,7 @@ From **Areas**, open the :::image type="icon" source="../media/icons/context_men
 
 Here we choose to include sub-area paths for the Account Management area.  
 
-<img src="media/pm-include-sub-area-paths.png" alt="Include sub-area paths." style="border: 1px solid #C3C3C3;" /> 
+<img src="media/pm-include-sub-area-paths.png" alt="Include sub-area paths." /> 
 
 Repeat this step for all your management areas. Also, if you want to enable rollup across all feature teams and management areas to the top level area, repeat this step for the default team. In our example, that corresponds to Fabrikam.   
 
@@ -270,7 +274,7 @@ If your feature teams use Scrum or use sprints to assign their work, you'll want
 
 ::: moniker range="<= tfs-2015"  
 
-<img src="media/pm-6-3-week-sprints.png" alt="Sprint schedule selected sprints" style="border: 2px solid #C3C3C3;" />
+<img src="media/pm-6-3-week-sprints.png" alt="Sprint schedule selected sprints" />
 ::: moniker-end
 
 
@@ -279,6 +283,11 @@ If your feature teams use Scrum or use sprints to assign their work, you'll want
 For teams to be well defined, you'll want to add team administrator(s) and have them verify or configure additional team settings. To learn more, see [Manage and configure team tools](../../organizations/settings/manage-teams.md). 
 
 ## Review area paths assigned to teams 
+
+
+::: moniker range="<= tfs-2015" 
+This feature isn't supported for TFS 2015 and earlier versions.
+::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -295,16 +304,48 @@ From **Project Settings>Work>Areas**, you can review which **Area Paths** have b
 > ![Area Paths and Teams](media/config-teams/review-area-paths-teams.png)   
 ::: moniker-end
 
-::: moniker range="<= tfs-2015" 
-This feature isn't supported for TFS 2015 and earlier versions.
-::: moniker-end 
+<a id="op-issues" />
+
+## Exercising select features with shared area paths 
+
+When you share area paths across two or more teams, you'll want to understand how Azure Boards manages conflicts that can arise when exercising these features: 
+- Reordering or reparenting work items on a backlog or board
+- Updates made to  Kanban **Board Column**, **Board Column Done**, and **Board Lane** fields when dragging items to a different column 
+
+### Reordering and reparenting work items 
+
+All backlogs and boards support drag-and-drop to reorder and reparent work items. Updates made to one team backlogs and boards are reflected in other team backlogs and boards that share the same area path. You may need to refresh the page to view the changes. 
+
+You can only use drag-and-drop to reorder or reparent work items assigned to area paths selected for your team. When the **Parents** view option is enabled, work items may appear on your backlog that your team doesn't own. Anything that appears with the :::image type="icon" source="../../media/icons/info.png" border="false"::: information icon can't be reordered nor reparented as it is owned by another team.  
+ 
+:::image type="content" source="media/config-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
+
+
+### Kanban board column updates  
+
+Because each team can customize the Kanban board columns and swimlanes, the values assigned to Kanban board fields may differ from what you expect when another team updates the work item from a different board. Even if the management team and the feature teams configure their Feature [Kanban board columns](../boards/add-columns.md) with identical workflow mapping, updating work items on one team's Kanban board won't be reflected on another team's Kanban board. Only when the work item moves to a column that maps to a workflow state does the card column reflect the same on all boards.
+
+By design, the team with the longest area path wins the conflict and determines the values for the Kanban **Board Column**, **Board Column Done**, and **Board Lane** fields. If the shared area shared area paths are of equal depth, the results are non-deterministic.  
+ 
+::: moniker range=">= azure-devops-2019"
+ The primary work around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md). 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+ The primary work around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For details, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
+::: moniker-end
+
+
+## Next steps
+> [!div class="nextstepaction"]
+> [Review team Delivery Plans](review-team-plans.md)
 
 ## Related articles
 
-With the hierarchical set of teams in place, you're well positioned to start planning and using the Agile tools available. To take the next steps in planning your portfolio of projects, see these articles: 
-
 - [Create your backlog](../backlogs/create-your-backlog.md)  
 - [Kanban quickstart](../boards/kanban-quickstart.md)
-- [Organize your backlog](../backlogs/organize-backlog.md)
+- [Organize your backlog](../backlogs/organize-backlog.md)  
 - [Work with multi-team ownership of backlog items](../backlogs/backlogs-overview.md#multi-team)
-- [Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)
+- [Fix display, reordering, and nesting issues](../backlogs/resolve-backlog-reorder-issues.md)
+ 

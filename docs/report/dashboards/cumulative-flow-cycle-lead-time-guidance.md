@@ -10,7 +10,7 @@ ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/01/2018
+ms.date: 06/21/2021
 ---
 
 # Cumulative flow, lead time, and cycle time guidance 
@@ -33,27 +33,31 @@ To configure or view CFD charts, see [Configure a cumulative flow chart](cumulat
 
 ## Sample charts and primary metrics
 
-<table>
-<tbody valign="top">
-<tr >
-<td width="35%">
-<p>The Continuous flow CFD provides the chart most favored by teams that follow a lean process.</p>
-<p>However, many teams have begun combining lean practices with Scrum or other methodologies which means they practice lean within the span of an iteration or sprint. In this situation the diagram takes on a slightly different look and provides two additional, and very valuable, pieces of information as shown in the next chart.</p> 
-</td>
-<td width="65%"><strong>Continuous flow CFD</strong><br/><img src="media/cfd-metrics.png" alt="CFD metrics"/><br/></td>
-</tr>
-<tr>
-<td>
-<p>The Fixed period CFD shown here is for a completed sprint. </p>
-<p>The top line represents the scope set for the sprint. And, because the work must be completed by the last day of the sprint, the slope of the Closed state indicates whether or not a team is on track to complete the sprint. The easiest way to think of this view is as a burnup chart.</p> 
-<p>The data is always depicted with the first step in the process as the upper left and the last step in the process as the bottom right. </p>
-</td>
-<td><strong>Fixed period CFD for a completed sprint</strong><br/>
-<img src="media/cfd-scope-change.png" alt="CFD metrics, fixed period"/><br/>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="2":::
+      The Continuous flow CFD provides the chart most favored by teams that follow a lean process.  
+      
+      However, many teams have begun combining lean practices with Scrum or other methodologies which means they practice lean within the span of an iteration or sprint. In this situation the diagram takes on a slightly different look and provides two additional, and very valuable, pieces of information as shown in the next chart.
+   :::column-end:::
+   :::column span="3":::
+      **Continuous flow**  
+      ![Conceptual image of CFD metrics.](media/guidance/cfd-metrics.png)  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      The Fixed period CFD shown here is for a completed sprint.  
+      
+      The top line represents the scope set for the sprint. And, because the work must be completed by the last day of the sprint, the slope of the Closed state indicates whether or not a team is on track to complete the sprint. The easiest way to think of this view is as a burnup chart.  
+      
+      The data is always depicted with the first step in the process as the upper left and the last step in the process as the bottom right.  
+   :::column-end:::
+   :::column span="3":::
+      **Fixed period CFD for a completed sprint**  
+      ![CFD metrics, fixed period.](media/cfd-scope-change.png) 
+   :::column-end:::
+:::row-end:::
+ 
 
 ## Chart metrics  
 
@@ -180,17 +184,17 @@ Sometimes it takes time to get information from a stakeholder, or it takes more 
 
 ## Lead time versus cycle time   
 
-The diagram below illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a Completed state. Cycle time is calculated from first entering an In Progress state to entering a Completed state. 
+The diagram below illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a Completed state.  Cycle time is calculated from first entering an In Progress or Resolved state category to entering a Completed state category. 
 
 #### Illustration of lead time versus cycle time 
 
-<img src="media/cycle-lead-time-concept-intro.png" alt="Conceptual image of how cycle time and lead time are measured" style="border: 2px solid #C3C3C3;" />
+:::image type="content" source="media/cycle-lead-time-concept-intro.png" alt-text="Conceptual image of how cycle time and lead time are measured"::: 
 
-If a work item enters a Completed state and then is reactivated and moved out of that state, then any additional time it spends in a Proposed/In Progress state will contribute to its lead/cycle time when it enters a Completed state for the second time.
+If a work item enters a Completed state and then is reactivated and moved out of that state, then any additional time it spends in a Proposed, In Progress, or Resolved state category will contribute to its lead/cycle time when it enters a Completed state category for the second time.
 
 If your team uses the Kanban board, you'll want to understand how your Kanban columns map to workflow states. For more information on configuring your Kanban board, see [Add columns](../../boards/boards/add-columns.md). 
 
-To learn more about how the system uses the state categories&mdash;Proposed, In Progress, and Completed&mdash;see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).   
+To learn more about how the system uses the state categories&mdash;Proposed, In Progress, Resolved, and Completed&mdash;see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).   
 
 ## Plan using estimate delivery times based on lead/cycle times
   
@@ -202,7 +206,7 @@ In the following chart, the average cycle time is 8 days. The standard deviation
 
 #### Example Cycle Time widget
 
-<img src="media/cycle-time-planning.png" alt="Cycle Time widget" style="border: 2px solid #C3C3C3;" />
+<img src="media/cycle-time-planning.png" alt="Cycle Time widget" />
 
 
 ## Identify process issues 
@@ -213,7 +217,7 @@ As you can see in the following chart, which shows several outliers, several bug
 
 #### Example Cycle Time widget showing several outliers 
 
-<img src="media/cycle-time-outliers.png" alt="Cycle Time widget showing several outliers" style="border: 2px solid #C3C3C3;" />
+<img src="media/cycle-time-outliers.png" alt="Cycle Time widget showing several outliers" />
 
 You can also see how process changes affect your lead and cycle time. For example, on May 15th the team made a concerted effort to limit the work in progress and address stale bugs. You can see that the standard deviation narrows after that date, showing improved predictability. 
 

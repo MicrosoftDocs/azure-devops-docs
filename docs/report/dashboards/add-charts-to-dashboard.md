@@ -267,7 +267,7 @@ Requires TFS 2015.2 or later version.
 
 ::: moniker range="> tfs-2015 <= tfs-2018"
 <!-- TODO: Update image - I don't think this is supported for latest version-->
-<img src="../../project/wiki/media/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
+<img src="../../project/wiki/media/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code, README file, Add Markdown page to a dashboard" />
 ::: moniker-end
 
 

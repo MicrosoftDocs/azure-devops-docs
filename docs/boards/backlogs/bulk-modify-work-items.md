@@ -3,7 +3,7 @@ title: Edit multiple user stories, & other work items
 titleSuffix: Azure Boards
 description: Bulk edit/modify/update several/multiple backlog items, tasks, or bugs or linked parent-child items for Azure Boards or TFS 
 ms.technology: devops-agile
-ms.custom: "boards-backlogs, seodec18" 
+ms.custom: "boards-backlogs, seodec18, linked-from-support" 
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
 ms.author: kaelli
 author: KathrynEE
@@ -404,7 +404,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
-    <img src="media/bulk-modify-save-ts.png" alt="Azure Boards and TFS 2017, Query results page, save bulk modified items" style="border: 2px solid #C3C3C3;" />
+    <img src="media/bulk-modify-save-ts.png" alt="Azure Boards and TFS 2017, Query results page, save bulk modified items" />
 
 ::: moniker-end
 
@@ -414,7 +414,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
-    <img src="media/IC666563.png" alt="TFS 2015, web portal, Query results page, Edit work items dialog, bulk modify fields" style="border: 2px solid #C3C3C3;" />
+    <img src="media/IC666563.png" alt="TFS 2015, web portal, Query results page, Edit work items dialog, bulk modify fields" />
 
 2. Save all work items that you bulk-modified. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 

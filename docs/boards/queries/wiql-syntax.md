@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
 ms.author: kaelli  
 author: KathrynEE  
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 07/09/2020
 ---
 
@@ -29,6 +29,7 @@ A query defined using the Work Item Query Language (WIQL) consists of a `SELECT`
 
 A query returns only those work items for which you have the **View work items** or **View work items in this node** permission. Typically, these permissions are granted to members of the **Readers** and **Contributors** groups for each team project. For more information, see [Permissions and groups](../../organizations/security/permissions.md).  
 
+
 ## Query language
 
 The work item query language has five parts shown in the following syntax snippet and described in the following table. 
@@ -43,6 +44,10 @@ ASOF '6/15/2010'
 ```
 
 The WIQL syntax is not case-sensitive.
+
+
+> [!NOTE] 
+> You can only construct queries using the WIQL syntax in the Query Editor by installing the [Wiql Editor Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). 
 
 ### Limits on WIQL length  
 

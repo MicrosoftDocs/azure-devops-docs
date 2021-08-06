@@ -14,6 +14,13 @@
           "pipelines/archive/apps/java/**",
           "pipelines/archive/apps/nodejs/**",
           "pipelines/archive/release/**",
+          "pipelines/apps/windows/universal.md",
+          "reference/api-ref/**",
+          "boards/backlogs/office/create-your-backlog-tasks-using-project.md",
+          "boards/backlogs/office/schedule-projects-using-microsoft-project.md",
+          "boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md",
+          "boards/backlogs/office/add-share-storyboard-shapes.md",
+          "boards/backlogs/office/rollup-estimated-and-actual-work-using-project.md",
           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
@@ -33,7 +40,8 @@
           "pipelines/archive/apps/aspnet/**",
           "pipelines/archive/apps/java/**",
           "pipelines/archive/apps/nodejs/**",
-          "pipelines/archive/release/**"
+          "pipelines/archive/release/**",
+          "pipelines/apps/windows/universal.md"
         ],
         "exclude": [
           "**/obj/**",

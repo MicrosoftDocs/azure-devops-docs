@@ -76,7 +76,7 @@ variables:
 steps:
 - task: Cache@2
   inputs:
-    key: 'yarn | "$(Agent.OS)" | yarn.lock'
+    key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
     path: $(YARN_CACHE_FOLDER)
@@ -115,7 +115,7 @@ variables:
 steps:
 - task: Cache@2
   inputs:
-    key: 'yarn | "$(Agent.OS)" | yarn.lock'
+    key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
     path: $(YARN_CACHE_FOLDER)
@@ -229,14 +229,12 @@ steps:
   inputs:
     key: 'ccache | "$(Agent.OS)"'
     path: $(CCACHE_DIR)
+    restoreKeys: | 
+      ccache | "$(Agent.OS)"
   displayName: ccache
 ```
 
-> [!NOTE]
-> In this example, the key is a fixed value (the OS name) and because caches are immutable, once a cache with this key is created for a particular scope (branch), the cache cannot be updated. This means subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. This problem will be addressed in an upcoming feature: [10842: Enable fallback keys in Pipeline Caching](https://github.com/microsoft/azure-pipelines-tasks/issues/10842)
-
-See [Ccache configuration settings](
-https://ccache.dev/manual/latest.html#_configuration_settings) for more options, including settings to control compression level.
+See [Ccache configuration settings](https://ccache.dev/manual/latest.html#_configuration_settings) for more details.
 
 ## Docker images
 
@@ -248,23 +246,17 @@ pool:
 
 steps:
   - task: Cache@2
+    displayName: Cache Docker
     inputs:
-      key: 'docker | cache'
+      key: 'docker | "$(Agent.OS)" | cache'
+      restoreKeys: |
+        docker | "$(Agent.OS)"
       path: $(Pipeline.Workspace)/docker
-      cacheHitVar: DOCKER_CACHE_HIT
-    displayName: Cache Docker images
-  - script: |
-      docker load -i $(Pipeline.Workspace)/docker/cache.tar
-    displayName: Restore Docker image
-    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_HIT, 'true'))
-  - script: |
-      mkdir -p $(Pipeline.Workspace)/docker
-      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache
-    displayName: Save Docker image
-    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_HIT, 'true')))
 ```
 
-Replace `caching-docker.yml` with your own pipeline YAML file.
+- **key**: (required) - a unique identifier for the cache.
+- **path**: (required) - path of the folder or file that you want to cache.
+- **restoreKeys**: (optional) - If *key* fails, this will be the fallback key to find the cache.
 
 ## Golang
 

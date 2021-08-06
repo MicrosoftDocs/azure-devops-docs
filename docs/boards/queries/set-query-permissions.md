@@ -2,7 +2,7 @@
 title: Set query permissions
 titleSuffix: Azure Boards
 description: How to set permissions on work item queries and folders when working in Azure Boards, Azure DevOps, & Team Foundation Server  
-ms.custom: boards-queries
+ms.custom: "boards-queries, linked-from-support"
 ms.technology: devops-agile
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
 ms.author: kaelli
@@ -19,7 +19,7 @@ ms.date: 07/09/2020
 
 As with most project objects, you can control who has access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
 
-All users can create and edit their own queries and save them under **My Queries**. Only you can view queries saved under your **My Queries** space.
+All users, except those assigned to the Readers group, can create and edit their own queries and save them under **My Queries**. Only the signed in user can view queries saved under their **My Queries** space.
 
 By default, only members of the Project Administrators group can create and edit queries and folders under **Shared Queries**, or change the permissions for a query or folder. 
 
@@ -136,7 +136,7 @@ If you're not a member of the project administrators group, [get added](../../or
 
    Here we add the Web team and grant them permissions to create and manage permissions to all queries and folders under the Triage folder.  
 
-   <img src="media/set-permissions-triage-folder-dialog.png" alt="Permissions dialog for a query folder, TFS 2018 and earlier versions." style="border: 1px solid #C3C3C3;" />    
+   <img src="media/set-permissions-triage-folder-dialog.png" alt="Permissions dialog for a query folder, TFS 2018 and earlier versions." />    
 
    Choose the **Add...** menu to add a user identity or group.
 

@@ -6,7 +6,7 @@ ms.technology: devops-test
 ms.topic: conceptual 
 ms.author: sdanie
 author: steved0x
-ms.date: 09/30/2019
+ms.date: 06/17/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -296,8 +296,6 @@ and [Agent pools](../pipelines/agents/pools-queues.md).
 ### Q: What happens if I select multiple configurations for the same test?
 
 **A:** Currently, the on-demand workflow is not configuration-aware.
-In future releases, we plan to pass configuration context to the test
-method and report the appropriate results.
 
 ### Q: What if I need to download product binaries and test binaries from different builds? Or if I need to obtain artifacts from a source such as Jenkins?
 

@@ -139,44 +139,6 @@ Links:
 
 * [Configure a Default Location for Team Project Portals](/previous-versions/visualstudio/visual-studio-2012/dd386357(v=vs.110))
 
-## We don't plan on installing SharePoint - is there no way of getting the "out-of-the-box" Excel reports, primarily for Test related reports?
-
-You can copy the Excel Reports from a different Server or Project where SharePoint has been configured and use them for a server without SharePoint.
-
-If you don't have any installation of Team Foundation Server with SharePoint, then you can download the attachments [Dev10-Agile-ExcelReports.zip and Dev10-CMMI-ExcelReports.zip](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Components.PostAttachments/00/10/22/51/86/Dev10-ExcelReports.zip), change the data source within Excel to point to your TFS server and start using them.
-
-## What are the steps involved in changing the data source of an Excel Report?
-
-For changing the Data source on the Excel reports [Dev10-Agile-ExcelReports.zip and Dev10-CMMI-ExcelReports.zip](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Components.PostAttachments/00/10/22/51/86/Dev10-ExcelReports.zip), follow the steps mentioned below:
-
-1. Open one of the Excel Reports file, go to the "Data" tab in Excel, then click on "Connections"
-
-   ![clip_image006](media/tcm-reporting/tcm-06.jpg)
-
-2. It should open up the following window, Click on "Properties"
-
-   ![clip_image007](media/tcm-reporting/tcm-07.jpg)
-
-3. Connection Properties window opens up, click on "Definition" tab
-
-   ![clip_image008](media/tcm-reporting/tcm-08.jpg)
-
-4. In the Definition tab, update the connection string and then keep clicking on OK all the way back.
-
-   ![clip_image009](media/tcm-reporting/tcm-09.jpg)
-
-   Change the Connection String
-
-   FROM:
-
-   `Provider=MSOLAP.3;Integrated Security=SSPI;Persist Security Info=True;User ID="";Initial Catalog=Tfs_Analysis;Data Source=ravidev10tfs;Location=ravidev10tfs;MDX Compatibility=1;Safety Options=2;MDX Missing Member Mode=Error`
-
-   TO:
-
-   `Provider=MSOLAP.4;Integrated Security=SSPI;Persist Security Info=True;User ID="";Initial Catalog=Tfs_Analysis;Data Source=<yourtfsserver>;Location=<yourtfsserver>;MDX Compatibility=1;Safety Options=2;MDX Missing Member Mode=Error`
-
-   This should start getting the reporting data from your TFS Server.
-
 ## I would like to create custom test reports in Excel based off the Analysis Services cube. How should I go about it?
 
 There are two ways of doing this, start from scratch or use one of the existing out-of-the-box Excel reports as a starting point.
