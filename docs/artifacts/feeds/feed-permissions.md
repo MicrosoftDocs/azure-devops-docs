@@ -14,6 +14,31 @@ monikerRange: '>= tfs-2017'
 
 With Azure Artifacts you can publish,, consume, and store different types of packages in your feed. Setting up permissions for your feed allows you to control who can access your packages.
 
+## Azure Artifacts settings
+
+Feed owners have the ability to specify who can create or administer Artifacts feeds. The settings icon will not be visible if you don't have the right permissions. To access the settings panel, select **Artifacts** from with your project, and then select the **Azure Artifacts settings** icon on the right side of the screen.
+
+:::image type="content" source="media/artifacts-settings-button.png" alt-text="Screenshot showing the Artifacts settings icon":::
+
+By default, everyone in the same organization have the permissions to create feeds. A user who creates a feed is both an owner and an administrator of that feed.
+
+1: Users in the same organization are able to create new feeds.
+
+2: Only feed administrators and users or groups specified here 2 are able to create new feeds.
+
+3: Users or groups added here become administrators of all the feeds in the organization.
+
+:::image type="content" source="media/media/artifacts-settings.png" alt-text="Screenshot showing how to set up Azure Artifacts settings":::
+
+> [!NOTE]
+> It's very important to understand the difference between feeds, project, and project collection administrators.
+> 
+> A **Feed Administrator** can perform all operations on the feed (edit feed permissions, delete packages, promote packages, etc.).
+>
+> A **Project Administrator** on the other hand has permissions to manage all project/team related operations (update project visibility, delete project, manage test environments etc.).
+>
+> **Project Collection Administrators** are granted all collection-level permissions to manage resources for projects and project-collections (add/delete projects, trigger events, manage build resources, audit streams etc.).
+
 ## Feeds permissions
 
 IN Azure Artifacts, feeds can be grouped into two categories: project-scoped and organization-scoped feeds. All feeds created through the web UI are project-scoped feeds. By default, every user in the same organization have the permissions to create a new feed. A user who creates a feed is both an owner and an administrator of that feed. Below are the four different access levels for a feed
@@ -32,29 +57,6 @@ IN Azure Artifacts, feeds can be grouped into two categories: project-scoped and
 
 > [!NOTE]
 > To access a feed in a different organization, a user must be given access to the project hosting that feed.
-
-## Azure Artifacts settings
-
-Azure Artifacts settings allow you to specify who can create and administer feeds.
-
-> [!div class="mx-imgBorder"] 
-> ![Azure Artifacts settings button](media/artifacts-settings-button.png)
-
-By default, everyone in the same organization have the permissions to create feeds. A user who creates a feed is both an owner and an administrator of that feed.
-
-> [!div class="mx-imgBorder"] 
-> ![Azure Artifacts settings](media/artifacts-settings.png)
-
-1. Any user in the organization is allowed to create feeds.
-
-1. Only feed administrators and users or groups specified in the text box 2 are allowed to create feeds. You can specify a feed administrator by adding users or groups in the **who can administer feeds** section.
-
-1. Users or groups added here are allowed to administer any feed in the organization.
-
-> [!NOTE]
-> It's very important to understand the difference between feed, project, and project collection administrators. A feed administrator can perform all operations on **the feed** (edit feed permissions, delete packages, promote packages, etc.).  
-> A project administrator on the other hand has permissions to administer all aspects of **teams and project** (delete team project, update project visibility, manage test environments etc.).  
-> Project Collection Administrators are granted **all collection-level permissions** to manage resources for projects and project collections (add and delete projects, trigger events, manage build resources and audit streams etc.).
 
 ::: moniker range=">= azure-devops-2019"
 
