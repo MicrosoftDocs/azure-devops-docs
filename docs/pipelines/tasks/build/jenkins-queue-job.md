@@ -104,6 +104,12 @@ None
               </p>
        </td>
    </tr>
+   <tr>
+      <td><code>failOnUnstableResult</code><br/>Fails when pipeline return unstable result</td>
+      <td>
+         <p>If set to true, will treat unstable pipeline result as failed. Otherwise, unstable results will be treated as a success.</p><br/>Default value: false
+      </td>
+   </tr>
 </table>
 
 ## Team Foundation Server Plug-in
