@@ -28,7 +28,7 @@ By default, everyone in the same organization have the permissions to create fee
 
 3: Users or groups added here become administrators of all the feeds in the organization.
 
-:::image type="content" source="media/media/artifacts-settings.png" alt-text="Screenshot showing how to set up Azure Artifacts settings":::
+:::image type="content" source="media/artifacts-settings.png" alt-text="Screenshot showing how to set up Azure Artifacts settings":::
 
 > [!NOTE]
 > It's very important to understand the difference between feeds, project, and project collection administrators.
