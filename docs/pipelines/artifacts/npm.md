@@ -21,7 +21,7 @@ Using Azure Pipelines, you can publish your npm packages to Azure Artifacts feed
 #### [YAML](#tab/yaml/)
 
 ::: moniker range=">= azure-devops-2019"
-To publish your npm packages to Azure Artifacts feeds from your Pipeline, you must first provide a **Contributor** access to the **Project Collection Build Service** identity. See [Add users/groups permissions](../../artifacts/feeds/feed-permissions.md#adding-usersgroups-permissions-to-a-feed) for more details.
+To publish your npm packages to Azure Artifacts feeds from your Pipeline, you must first provide a **Contributor** access to the **Project Collection Build Service** identity. See [Add new users/groups](../../artifacts/feeds/feed-permissions.md#configure-feeds-settings) for more details.
 
 Add the npm task to your yaml pipeline as follows to publish your package to your feed.
 

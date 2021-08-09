@@ -45,9 +45,9 @@ By default, everyone in the same organization have the permission to create new 
 
 [!INCLUDE [edit-feed](../includes/edit-feed.md)]
 
-2. Select **Permissions**.
-
 ::: moniker range=">= azure-devops-2019"
+
+2. Select **Permissions**.
 
     :::image type="content" source="media/editfeeddialog-azure-devops-newnav.png" alt-text="Screenshot showing feed permissions.":::
 
@@ -63,8 +63,9 @@ By default, everyone in the same organization have the permission to create new 
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-> [!div class="mx-imgBorder"]
-> ![Editing a feed's permissions TFS 2017 and 2018](media/editfeeddialog1.png)
+2. Select **Permissions**.
+
+    :::image type="content" source="media/editfeeddialog1.png" alt-text="Screenshot showing feed permissions TFS.":::
 
 In the edit feed dialog:
 
@@ -106,7 +107,7 @@ The `@local` view is the default view and it includes all the packages that were
 > If a user have permission to a specific view, and even if they don't have permission to the feed, they will still be able to access and download packages through that view.
 If you want to completely hide your packages, you must restrict both feeds and views permissions.
 
-To restrict access to your feed, simply select a user or group from the permission table in your [Feed Settings](#adding-usersgroups-permissions-to-a-feed) and select **Delete**. You can restrict access to a view by changing its visibility to **specific people** as shown below.
+To restrict access to your feed, simply select a user or group from the permission table in your [Feed Settings](#configure-feeds-settings) and select **Delete**. You can restrict access to a view by changing its visibility to **specific people** as shown below.
 
 > [!div class="mx-imgBorder"]
 >![changing visibility to specific people](media/view-permissions.png)
@@ -139,7 +140,7 @@ You can also use the `Allow project-scoped builds` feature if you would like to 
 >![feed permissions: allow project-scoped builds](media/project-scoped-builds.png)
 
 > [!NOTE]
-> If you want your pipelines to use a package from a feed in a different project, you must set up the other project to grant read/write access to the build service in addition to setting up the appropriate [feed permissions](#adding-usersgroups-permissions-to-a-feed).
+> If you want your pipelines to use a package from a feed in a different project, you must set up the other project to grant read/write access to the build service in addition to setting up the appropriate [feed permissions](#configure-feeds-settings).
 
 ## Sharing packages with everyone in your organization
 
