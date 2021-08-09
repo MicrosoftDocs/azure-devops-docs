@@ -58,5 +58,4 @@ A few undocumented version 1.0 APIs existed in Team Foundation Server 2013, but 
 ## Related articles
 
 * [Get started with REST APIs](../how-to/call-rest-api.md)
-* [API and TFS/Azure DevOps version mapping](/rest/api/azure/devops/?view=azure-devops-rest-6.1)
-* [Azure DevOps Services REST API reference](/rest/api/azure/devops/?view=azure-devops-rest-6.1)
+* [Azure DevOps Services REST API reference](/rest/api/azure/devops/?view=azure-devops-rest-6.1&preserve-view=true)

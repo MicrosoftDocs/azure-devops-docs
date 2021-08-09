@@ -276,7 +276,7 @@ If you've added the Build Task successfully, you should now see the Build Task w
 
 ::: moniker range="tfs-2017"
 
-<img alt="Service endpoint build task selector" src="./media/service-endpoint-build-task-selector.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
+:::image type="content" source="media/service-endpoint-build-task-selector.png" alt-text="Service endpoint build task selector image.":::
 
 ::: moniker-end
 
@@ -286,7 +286,7 @@ Once you replace Fabrikam with your service, replace the Projects call with your
 
 ::: moniker range="tfs-2017"
 
-<img alt="Service endpoint build task setup" src="./media/service-endpoint-build-task-setup.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
+:::image type="content" source="media/service-endpoint-build-task-setup.png" alt-text="Service endpoint build task setup image.":::
 
 ::: moniker-end
 
