@@ -105,9 +105,9 @@ None
        </td>
    </tr>
    <tr>
-      <td><code>failOnUnstableResult</code><br/>Fails when pipeline return unstable result</td>
+      <td><code>failOnUnstableResult</code><br/>Fail when Jenkins build returns unstable result</td>
       <td>
-         <p>If set to true, will treat unstable pipeline result as failed. Otherwise, unstable results will be treated as a success.</p><br/>Default value: false
+         <p>If set to true, unstable build result will be treated as a failure. Otherwise, unstable result will be treated as a success.</p><br/>Default value: false
       </td>
    </tr>
 </table>
