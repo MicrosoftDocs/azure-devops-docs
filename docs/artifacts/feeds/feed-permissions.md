@@ -93,7 +93,7 @@ In Azure Artifacts, feeds can be grouped into two categories: project-scoped and
 > [!NOTE]
 > To access a feed in a different organization, you must be given access to the project hosting that feed.
 
-## Understanding views permissions
+## Views permissions
 
 Feed views enable users to share certain packages while keeping others private. A common scenario for using a feed view is sharing a package version that has already been tested and validated but keeping packages under development private.
 
@@ -120,25 +120,24 @@ After restricting your view's visibility to `specific people`, the access permis
 
 <a name="common-identities"></a>
 
-## Package permissions in Azure Pipelines
+## Pipelines permissions
 
-To use packages from a feed in Azure Pipelines, the appropriate build identity must have permission to your feed. By default, the **Project Collection Build Service** is a Contributor. If you've changed your builds to run at [project scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you'll need to add the project-level build identity as a Reader or Contributor, as desired. The project-level build identity is named as follows:
+To access packages from your pipelines, the appropriate build identity must have access to your feed. By default, feeds have the **Project Collection Build Service** set to *Contributor*. If you have changed your pipeline to run at [project-scope](../../pipelines/process/access-tokens.md#job-authorization-scope), you will need to add the project-level build identity as a Reader or Contributor. The project-level build identity is named as follows:
 
-`[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo))
+`[Project name] Build Service ([Organization name])`. Example: FabrikamFiber Build Service (codesharing-demo).
 
-You can also use the `Allow project-scoped builds` feature if you would like to automatically set up permissions for your project-scoped build identity.
+You can also use the **Allow project-scoped builds** feature to automatically set up permissions for your project-scoped build identity. To do so
 
-1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access the **Feed settings**.
+1. From within your feed, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access the **Feed settings**.
 
-1. Select **Permissions**.
+1. Select the **Permissions** tab.
 
-1. Select the ellipsis on the right and select **Allow project-scoped builds** from the drop down menu.
+1. Select the ellipsis on the right, and then select **Allow project-scoped builds**.
 
-> [!div class="mx-imgBorder"]
->![feed permissions: allow project-scoped builds](media/project-scoped-builds.png)
+:::image type="content" source="media/project-scoped-builds.png" alt-text="Screenshot showing how to allow project-scoped builds.":::
 
 > [!NOTE]
-> If you want your pipelines to use a package from a feed in a different project, you must set up the other project to grant read/write access to the build service in addition to setting up the appropriate [feed permissions](#configure-feeds-settings).
+> If you want to access a feed in a different project from your pipeline, you must set up the other project to grant read/write access to the build service.
 
 ## Sharing packages with everyone in your organization
 
