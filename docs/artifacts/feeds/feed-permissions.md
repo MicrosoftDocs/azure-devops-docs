@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 With Azure Artifacts you can publish,, consume, and store different types of packages in your feed. Setting up permissions for your feed allows you to control who can access your packages.
 
-## Azure Artifacts settings
+## Configure Azure Artifacts settings
 
 Feed owners have the ability to specify who can create or administer Artifacts feeds. The settings icon will not be visible if you don't have the right permissions. To access the settings panel, select **Artifacts** from within your project, and then select the **Azure Artifacts settings** icon on the right side of the screen.
 
@@ -39,61 +39,25 @@ By default, everyone in the same organization have the permission to create new 
 >
 > **Project Collection Administrators** are granted all collection-level permissions to manage resources for projects and project-collections (add/delete projects, trigger events, manage build resources, audit streams etc.).
 
-## Feeds permissions
-
-IN Azure Artifacts, feeds can be grouped into two categories: project-scoped and organization-scoped feeds. All feeds created through the web UI are project-scoped feeds. By default, every user in the same organization have the permissions to create a new feed. A user who creates a feed is both an owner and an administrator of that feed. Below are the four different access levels for a feed
-
-|                   Permission                  |  Reader  | Collaborator | Contributor |   Owner  |  Administrator  |
-| --------------------------------------------- | -------- | ------------ | ----------- | -------- | --------------- |
-| List/install/restore packages                 | &#x2713; |   &#x2713;   |   &#x2713;  | &#x2713; |     &#x2713;    |
-| Publish packages                              |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
-| Unlist packages                               |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
-| Promote packages to a view                    |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
-| Delete packages                               |          |              |             | &#x2713; |     &#x2713;    |
-| Add/remove upstream sources                   |          |              |             | &#x2713; |     &#x2713;    |
-| Allow external package versions               |          |              |             | &#x2713; |     &#x2713;    |
-| Save packages from upstream sources           |          |   &#x2713;   |   &#x2713;  | &#x2713; |     &#x2713;    |
-| Edit feeds settings                           |          |              |             | &#x2713; |     &#x2713;    |
-
-> [!NOTE]
-> To access a feed in a different organization, a user must be given access to the project hosting that feed.
-
-::: moniker range=">= azure-devops-2019"
-
 <a name="edit-permissions"></a>
 
-## Adding users/groups permissions to a feed
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < azure-devops-2019"
-
-<a name="edit-permissions"></a>
-
-## Editing permissions for a feed
-
-::: moniker-end
+## Configure feeds settings
 
 [!INCLUDE [edit-feed](../includes/edit-feed.md)]
 
-Select **Permissions**.
+2. Select **Permissions**.
 
 ::: moniker range=">= azure-devops-2019"
 
-> [!div class="mx-imgBorder"] 
->![Editing a feed's permissions devops 2019 and above](media/editfeeddialog-azure-devops-newnav.png)
+    :::image type="content" source="media/editfeeddialog-azure-devops-newnav.png" alt-text="Screenshot showing feed permissions.":::
 
-Select **Add users/groups**.
+3. Select **Add users/groups**.
 
-> [!div class="mx-imgBorder"]
->![Adding users or groups](media/add-users-groups.png)
+    :::image type="content" source="media/add-users-groups.png" alt-text="Screenshot showing the add users/groups button.":::
 
-Add `users` and/or `groups` and choose their access role.
+4. Add new user(s)/group(s), and then select their access role. Select *Save** when you are done.
 
-> [!div class="mx-imgBorder"]
->![Adding users or groups dialogue](media/add-users-groups-dialogue.png)
-
-When you're done, select **Save**.
+    :::image type="content" source="media/add-users-groups-dialogue.png" alt-text="Screenshot showing how to add new users or groups.":::
 
 ::: moniker-end
 
@@ -108,6 +72,25 @@ In the edit feed dialog:
 - When you're done, select **Save**.
 
 ::: moniker-end
+
+## Permissions table
+
+In Azure Artifacts, feeds can be grouped into two categories: project-scoped and organization-scoped feeds. All feeds created through the web UI are project-scoped feeds. By default, every user in the same organization have the permissions to create a new feed. A user who creates a feed is both an owner and an administrator of that feed. Below are the four different access levels for a feed
+
+|                   Permission                  |  Reader  | Collaborator | Contributor |   Owner  |  Administrator  |
+| --------------------------------------------- | -------- | ------------ | ----------- | -------- | --------------- |
+| List/install/restore packages                 | &#x2713; |   &#x2713;   |   &#x2713;  | &#x2713; |     &#x2713;    |
+| Publish packages                              |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
+| Unlist packages                               |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
+| Promote packages to a view                    |          |              |   &#x2713;  | &#x2713; |     &#x2713;    |
+| Delete packages                               |          |              |             | &#x2713; |     &#x2713;    |
+| Add/remove upstream sources                   |          |              |             | &#x2713; |     &#x2713;    |
+| Allow external package versions               |          |              |             | &#x2713; |     &#x2713;    |
+| Save packages from upstream sources           |          |   &#x2713;   |   &#x2713;  | &#x2713; |     &#x2713;    |
+| Edit feeds settings                           |          |              |             | &#x2713; |     &#x2713;    |
+
+> [!NOTE]
+> To access a feed in a different organization, you must be given access to the project hosting that feed.
 
 ## Understanding feeds and views permissions
 
