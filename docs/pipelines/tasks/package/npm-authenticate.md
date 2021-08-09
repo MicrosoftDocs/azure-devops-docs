@@ -79,12 +79,6 @@ The registry URL pointing to an Azure Artifacts feed may or may not contain the 
 ```
 `OtherOrganizationNpmConnection` and `ThirdPartyRepositoryNpmConnection` are the names of <a href="~/pipelines/library/service-endpoints.md#npm-service-connection">npm service connections</a> that have been configured and authorized for use in your pipeline, and have URLs that match those in the specified `.npmrc` file.
 
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions">Control options</a></th>
-</tr>
-
-</table>
-
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
