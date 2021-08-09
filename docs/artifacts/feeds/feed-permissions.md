@@ -106,7 +106,7 @@ The **@local** view is the default view and it includes all the packages publish
 > Users who have access a specific view are able to access and download packages from the feed through that view even if they don't have direct access to that feed.
 If you want to completely hide your packages, you must restrict access to both feed and views.
 
-To restrict access to your feed, simply select a user or group from the permission table in your [Feed Settings](#configure-feeds-settings) and select **Delete**.
+To restrict access to your feed, simply select a user or group from the permission table in your [Feed Settings](#configure-feed-settings) and select **Delete**.
 
 You can restrict access to a view by changing its visibility to **specific people** as shown below.
 
