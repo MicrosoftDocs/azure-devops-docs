@@ -514,7 +514,7 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 - A project in your organization. If you need to create one, see [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).
 - An [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension installed in your organization.
 
-Create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How use a variable group](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group).
+Create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How to use a variable group](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group).
 
 Declare the following variables in the variable group:
 
