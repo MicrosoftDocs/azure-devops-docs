@@ -4,8 +4,8 @@ description: Azure Pipelines and Team Foundation Server build task to run a shel
 ms.assetid: C6F8437B-FF52-4EA1-BCB0-F34924303CA8
 ms.topic: reference
 ms.custom: seodec18, devx-track-azurecli
-ms.author: UshaN
-author: UshaN
+ms.author: ushan
+author: N-Usha
 ms.date: 02/17/2020
 monikerRange: '> tfs-2018'
 ---
@@ -51,7 +51,18 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>scriptType</code><br/>Script Type</td>
-    <td>(Required) Type of script: <b>PowerShell/PowerShell Core/Bat/Shell</b> script. Select <b>bash/pscore</b> script when running on Linux agent or <b>batch/ps/pscore</b> script when running on Windows agent. PowerShell Core script can run on cross-platform agents (Linux, macOS, or Windows)</td>
+  <td>(Required) Type of script: <b>PowerShell</b>/<b>PowerShell Core</b>*/<b>Bat</b>/<b>Shell</b> script.</br>When running on a <b>Linux agent</b>, select one of the following:</br>
+     <ul>
+       <li><code>bash</code></li>
+       <li><code>pscore</code></li>
+    </ul>
+    On a <b>Windows agent</b>, select one of the following:</br>
+    <ul>
+      <li><code>batch</code></li>
+      <li><code>ps</code></li>
+      <li><code>pscore</code></li>
+    </ul></br><i>* PowerShell Core scripts can run on cross-platform agents (Linux, macOS, or Windows).</i>
+   </td>
 </tr>
 <tr>
     <td><code>scriptLocation</code><br/>Script Location</td>
