@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-With Azure Artifacts you can publish,, consume, and store different types of packages in your feed. Setting up permissions for your feed allows you to control who can access your packages.
+With Azure Artifacts you can publish, consume, and store different types of packages in your feed. Setting up permissions for your feed allows you to control who can access your packages.
 
 ## Configure Azure Artifacts settings
 
@@ -76,7 +76,7 @@ In the edit feed dialog:
 
 ## Permissions table
 
-In Azure Artifacts, feeds can be grouped into two categories: project-scoped and organization-scoped feeds. All feeds created through the web UI are project-scoped feeds. By default, every user in the same organization have the permissions to create a new feed. A user who creates a feed is both an owner and an administrator of that feed. Below are the four different access levels for a feed
+In Azure Artifacts, feeds can be grouped into two categories: project-scoped and organization-scoped feeds. All feeds created through the web UI are project-scoped feeds. By default, every users in the same organization have the permissions to create a new feed. A user who creates a feed is both an owner and an administrator of that feed. Below are the four different access levels for a feed
 
 |                   Permission                  |  Reader  | Collaborator | Contributor |   Owner  |  Administrator  |
 | --------------------------------------------- | -------- | ------------ | ----------- | -------- | --------------- |
@@ -97,7 +97,7 @@ In Azure Artifacts, feeds can be grouped into two categories: project-scoped and
 
 Feed views enable users to share certain packages while keeping others private. A common scenario for using a feed view is sharing a package version that has already been tested and validated but keeping packages under development private.
 
-By default, there are 3 views in a feed: **@local**, **@prerelease**, and **@release** view. The latter two are suggested views that you can rename or delete as desired.
+By default, there are three views in a feed: **@local**, **@prerelease**, and **@release** view. The latter two are suggested views that you can rename or delete as desired.
 
 The **@local** view is the default view and it includes all the packages published to the feed as well as all the packages downloaded from [upstream sources](../concepts/upstream-sources.md).
 
@@ -139,22 +139,26 @@ You can also use the **Allow project-scoped builds** feature to automatically se
 > [!NOTE]
 > If you want to access a feed in a different project from your pipeline, you must set up the other project to grant read/write access to the build service.
 
-## Sharing packages with everyone in your organization
+### Share packages with all users in your organization
 
-If you want to make the packages in a feed available to all users in your organization, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my organization**.
+If you want to make certain packages in your feed available to all users in your organization, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my organization**.
 
 ::: moniker range="azure-devops"
 
-## Sharing packages publicly with anonymous users
+### Share packages publicly
 
-You can also make your packages available to anonymous users with limited access by [creating a public feed](../tutorials/share-packages-publicly.md).
+You can make your packages available publicly to anonymous users with limited access by [creating a public feed](../tutorials/share-packages-publicly.md).
 
 ::: moniker-end
 
-## What's next?
+## Related articles
 
-* [Use public feeds to share your package publicly](../tutorials/share-packages-publicly.md).
+- [Artifacts storage consumption](../artifact-storage.md).
 
-* [Delete and recover packages](../how-to/delete-and-recover-packages.md).
+- [Delete and recover packages](../how-to/delete-and-recover-packages.md).
 
-* [Promote a package to a view](./views.md).
+- [Promote packages to a view](./views.md).
+
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md).
+
+- [Configure retention policies](../../pipelines/policies/retention.md).
