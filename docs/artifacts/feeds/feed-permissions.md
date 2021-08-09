@@ -1,11 +1,12 @@
 ---
 title: Set up permissions
-description: Configure permissions for feeds and views
+description: Configure Artifacts permissions for feeds, views, and pipelines
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 08/06/2021
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
 # Configure permissions
@@ -41,7 +42,7 @@ By default, everyone in the same organization have the permission to create new 
 
 <a name="edit-permissions"></a>
 
-## Configure feeds settings
+## Configure feed settings
 
 [!INCLUDE [edit-feed](../includes/edit-feed.md)]
 
