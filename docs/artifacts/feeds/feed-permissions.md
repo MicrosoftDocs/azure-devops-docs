@@ -93,32 +93,30 @@ In Azure Artifacts, feeds can be grouped into two categories: project-scoped and
 > [!NOTE]
 > To access a feed in a different organization, you must be given access to the project hosting that feed.
 
-## Understanding feeds and views permissions
+## Understanding views permissions
 
-Feeds are containers that allow users to group packages and control who can access them by modifying the feed permissions.
+Feed views enable users to share certain packages while keeping others private. A common scenario for using a feed view is sharing a package version that has already been tested and validated but keeping packages under development private.
 
-A feed view on the other hand is a way to enable users to share some packages while keeping others private. A common scenario for using a feed view is when a team shares a package version that has already been tested and validated but keeps packages that are still under development from being viewed.
+By default, there are 3 views in a feed: **@local**, **@prerelease**, and **@release** view. The latter two are suggested views that you can rename or delete as desired.
 
-By default, there are 3 views in a feed: `@local`, `@prerelease`, and `@release`. The latter two are suggested views that you can rename or delete as desired.
-
-The `@local` view is the default view and it includes all the packages that were published directly to the feed as well as all the packages that were saved from the [upstream sources](../concepts/upstream-sources.md).
+The **@local** view is the default view and it includes all the packages published to the feed as well as all the packages downloaded from [upstream sources](../concepts/upstream-sources.md).
 
 > [!IMPORTANT]
-> If a user have permission to a specific view, and even if they don't have permission to the feed, they will still be able to access and download packages through that view.
-If you want to completely hide your packages, you must restrict both feeds and views permissions.
+> Users who have access a specific view are able to access and download packages from the feed through that view even if they don't have direct access to that feed.
+If you want to completely hide your packages, you must restrict access to both feed and views.
 
-To restrict access to your feed, simply select a user or group from the permission table in your [Feed Settings](#configure-feeds-settings) and select **Delete**. You can restrict access to a view by changing its visibility to **specific people** as shown below.
+To restrict access to your feed, simply select a user or group from the permission table in your [Feed Settings](#configure-feeds-settings) and select **Delete**.
 
-> [!div class="mx-imgBorder"]
->![changing visibility to specific people](media/view-permissions.png)
+You can restrict access to a view by changing its visibility to **specific people** as shown below.
+
+:::image type="content" source="media/view-permissions.png" alt-text="Screenshot showing how to change views visibility.":::
 
 After restricting your view's visibility to `specific people`, the access permissions column should reflect your changes.
 
-> [!div class="mx-imgBorder"]
->![views settings](media/view-settings.png)
+:::image type="content" source="media/view-settings.png" alt-text="Screenshot showing views settings.":::
 
 > [!IMPORTANT]
-> A very important concept to keep in mind is that views inherit their permissions from their parent feed. Setting view permissions to `Specific people` without specifying users or groups will cause the view permissions to default back to their parent feed permissions.
+> Views inherit their permissions from the parent feed. Setting a view's visibility to **Specific people** without specifying users or groups will default the view's permissions back to its parent's feed permissions.
 
 <a name="common-identities"></a>
 
