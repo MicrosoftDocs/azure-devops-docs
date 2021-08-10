@@ -167,10 +167,11 @@ Then, when you create a new release, you can edit the values for these variables
 
 ## How do I integrate and report release status?
 
-The current status for a release can be reported back in the source repository. In the **Options** tab of a release pipeline, open the **Integrations** page.
+With release pipelines integrations, you can report your deployment status to multiple sources such as your repository host, your work items(links or deployments), or to Jira issues.
 
-> [!div class="mx-imgBorder"]
-> ![Setting the options for reporting status](media/what-is-release-management/report-options.png)
+To configure your release pipeline integrations, select the **Options** tab, and then select **Integrations** from your release pipeline definition.
+
+:::image type="content" source="media/release-integrations.png" alt-text="Screenshot showing how to access release integrations in your release pipeline.":::
 
 **Report deployment status to the repository host**
 
