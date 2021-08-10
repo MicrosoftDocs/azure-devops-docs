@@ -196,22 +196,27 @@ The deployment status is displayed in the following areas of Azure Repos:
 
 **Report deployment status to Work**
 
-Select this option if you want to create links to all work items that represent associated changes to the source, when a release is complete.
+Select this option if you want to link your release pipeline to your work items. The deployment status will be displayed in the **Links** tab of your work item. 
+
+:::image type="content" source="media/release-status-work.png" alt-text="Screenshot showing linked releases in the task tab of a work item.":::
+
+**Report deployment status to Boards**
+
+Select this option if you want to link your release pipeline to your work items and display the deployment status in the **Details** tab of your work item.
+
+:::image type="content" source="media/release-status-boards.png" alt-text="Screenshot showing linked releases in the details tab of a work item.":::
 
 **Enable the deployment status badge**
 
-Select this option if you want to display the latest outcome of a stage deployment on an external website. 
+Select this option if you want to display the deployment status on an external website. You can copy the stage badge and add it to your website to have a visualization of your deployment status:
 
-1.	Select "Enable the deployment status badge".
+1.	Select **Enable the deployment status badge**.
 
-1.	Select the stages for which you want to display the outcome. By default, all the stages are selected.
+1.	Select the stages for which you want to display the status. By default, all the stages are selected.
 
-1.	Save your pipeline.
+1.	Copy the badge URL and add it to your website or GitHub Readme file to display the deployment status.
 
-1.	Copy the badge URL for the required stage to the clipboard.
-
-1.	Use this badge URL as a source of an image in an external website.  
-    For example: `<img src="{URL you copied from the link}"/>`
+    :::image type="content" source="media/release-badge.svg" alt-text="Screenshot showing the release status badge.":::
 
 <a name="editrelease"></a>
 
