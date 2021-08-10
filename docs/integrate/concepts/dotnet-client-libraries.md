@@ -29,7 +29,6 @@ Client libraries are available for .NET developers who build Windows apps and se
 * Libraries are licensed for redistribution in your apps and services ([view the license](https://go.microsoft.com/fwlink/?LinkId=329770))
 * Access both traditional client object model APIs and [new REST APIs](../rest-api-overview.md)
 
-
 > [!NOTE]
 > REST-based clients only work with Azure DevOps and TFS 2015 or later.
 > To learn more about extending and integrating with  Azure DevOps using the client libraries,
@@ -155,7 +154,7 @@ Further authentication samples can be found on our [.NET Samples Page](../get-st
 
 ## Reference
 
-You can find detailed, up-to-date reference documentation in the [.NET API browser](https://docs.microsoft.com/dotnet/api/).
+You can find detailed, up-to-date reference documentation in the [.NET API browser](../../api/index.md).
 
 ## Samples
 
