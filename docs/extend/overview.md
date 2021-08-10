@@ -14,22 +14,19 @@ ms.date: 10/24/2019
 
 [!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
 
-Extensions are add-ons you can use to customize and extend your DevOps experience with Azure DevOps. 
-They're written with standard technologies - HTML, JavaScript, CSS - and are developed using your preferred development tools. 
+Extensions are add-ons you can use to customize and extend your DevOps experience with Azure DevOps.
+They're written with standard technologies - HTML, JavaScript, CSS - and are developed using your preferred development tools.
 Extensions use our [RESTful API Library](/rest/api/azure/devops/) to easily interact with Azure DevOps and applications/services.
-The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) is where extensions are published. 
-They can be kept privately for you and your team or shared with the millions of developers currently using Azure DevOps. 
-
+The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) is where extensions are published.
+They can be kept privately for you and your team or shared with the millions of developers currently using Azure DevOps.
 
 > [!NOTE]
 > This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/overview.md).
 
-
 ## What makes up an extension?
 
-<div align="center" style="padding-top:15px">
-<img alt="Components of an extension" src="./media/extension-components.png" style="padding-bottom:20px">
-</div>
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of components of an extension.](./media/extension-components.png)
 
 - A [JSON manifest file](./develop/manifest.md) contains basic info about the extension.
 - Discovery assets - the markdown and images that make up your extension's overview and aesthetics in the Marketplace. 
@@ -52,7 +49,6 @@ There are dozens of places where you can add to the user interface, and we're ad
 You can develop an extension for your continuous delivery pipeline as described in the following video.
 
 <a href="https://www.youtube.com/watch?v=uzQFvYY0xiM&list=PLe14MLC-Nwy6saThL6NSv2rTtFNpkvfp3" target="_blank"><img src="media/develop-extension-video.png" alt="Develop Extensions" width="200" /></a>
-
 
 ## Extension building checklist
 
