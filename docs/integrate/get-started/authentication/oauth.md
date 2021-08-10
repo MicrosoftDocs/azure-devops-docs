@@ -237,7 +237,7 @@ Replace the placeholder values in the previous sample request body:
 When your users authorize your app to access their organization, they authorize it for those scopes.
 [Requesting the authorization](#authorize-your-app) passes the same scopes that you registered.
 
-For information about work item tracking attachments, see [Work Item Tracking/Attachments - Create](/rest/api/azure/devops/wit/attachments/create?view=azure-devops-rest-6.0) and the FAQ, How can I get attachments detail for my work item?
+For information about work item tracking attachments, see [Work Item Tracking/Attachments - Create](/rest/api/azure/devops/wit/attachments/create?view=azure-devops-rest-6.0&preserve-view=true) and the FAQ, How can I get attachments detail for my work item?
 
 ## Samples
 

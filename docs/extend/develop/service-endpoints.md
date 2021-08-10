@@ -159,13 +159,16 @@ Add the following `contributions` array underneath the `targets` array of the ba
 
 If you've successfully added the service contribution correctly, you see the Fabrikam endpoint when trying to add a new service endpoint to your organization.
 
-Go ahead and create a service endpoint using the Fabrikam endpoint.
-<img alt="Service endpoint setup" src="./media/service-endpoint-setup.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
+Create a service endpoint using the Fabrikam endpoint.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of service endpoint set up.](media/service-endpoint-setup.png)
 
 <a name="buildtask" />
 
 ### Add the build task contribution
-Inside the `contributions` array from the previous step, add the following object to the end. 
+
+Inside the `contributions` array from the previous step, add the following object to the end.
 
 ```json
 {
