@@ -524,7 +524,7 @@ To run tests and publish code coverage with Coverlet:
     displayName: 'Publish code coverage report'
     inputs:
       codeCoverageTool: 'Cobertura'
-      summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
+      summaryFileLocation: '$(Agent.TempDirectory)/**/coverage.cobertura.xml'
   ```
 
 # [.NET < 5](#tab/netearlierversions)
@@ -542,7 +542,7 @@ To run tests and publish code coverage with Coverlet:
     displayName: 'Publish code coverage report'
     inputs:
       codeCoverageTool: 'Cobertura'
-      summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
+      summaryFileLocation: '$(Agent.TempDirectory)/**/coverage.cobertura.xml'
   ```
 
 ---
