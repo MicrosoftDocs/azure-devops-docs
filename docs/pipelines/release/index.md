@@ -175,18 +175,24 @@ To configure your release pipeline integrations, select the **Options** tab, and
 
 **Report deployment status to the repository host**
 
-If your sources are in an Azure Repos Git repository in your project, this option displays a badge on the Azure Repos pages. The badge indicates where the specific commit got deployed and whether the deployment is passing or failing. This option improves the traceability from code commit to deployment. 
+If your source code is in Azure Repos, this option displays a status badge on the Azure Repos pages. The badge indicates where the specific commit got deployed and whether the deployment is passing or failing. By default, a deployment status is posted for all stages of your release pipeline. You can also select specific stages to display the deployment status.
 
-The deployment status is displayed in the following sections of Azure Repos:
+The deployment status is displayed in the following areas of Azure Repos:
 
-* **Files**: Indicates the status of the latest deployment for the selected branch.
-* **Commits**: Indicates the deployment status for each commit (requires the continuous integration (CD) trigger to be enabled for your release).
-* **Branches**: Indicates the status of the latest deployment for each branch.
+- **Files**: indicates the status of the latest deployment for the selected branch.
 
-If a commit gets deployed to multiple release pipelines, with multiple stages, each has an entry in the badge with status that's shown for each stage. By default, when you create a release pipeline, deployment status is posted for all stages. However, you can selectively choose the stages for which deployment status should be displayed in the status badge (for example, show only the production stage). Your team members can select the status badge to view the latest deployment status for each of the selected stages of the release pipelines.
+     :::image type="content" source="media/pipeline-status-files.png" alt-text="Screenshot showing the pipeline status for Files.":::
+
+- **Commits**: indicates the deployment status for each commit (requires the continuous integration trigger to be enabled).
+
+    :::image type="content" source="media/pipeline-status-commits.png" alt-text="Screenshot showing the pipeline status for Commits.":::
+
+- **Branches**: indicates the status of the latest deployment for each branch.
+
+    :::image type="content" source="media/pipeline-status-branches.png" alt-text="Screenshot showing the pipeline status for Branches.":::
 
 > [!NOTE]
-> If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines to automatically publish the deployment status to your repository. However, you can still use the _Enable the Deployment status badge_ option described as follows, to show deployment status within your version control system.
+> If your source code is not in Azure Repos, you can use the **Enable the Deployment status badge** feature to display your deployment status in external repositories.
 
 **Report deployment status to Work**
 
