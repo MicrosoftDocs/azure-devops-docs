@@ -59,8 +59,7 @@ The following table summarizes the integration points between Azure Boards and A
      Enable or disable the following options for a single Git repository. To learn how, see [Configure Git repositories to support work tracking](#configure-git-repos).
       - Automatically create links for work items mentioned in a commit comment 
       - Allow mentions in commit comments to close work items 
-      - Remember user preferences for completing work items with pull requests.  
-      <br/>For details, 
+      - Remember user preferences for completing work items with pull requests. 
    :::column-end:::
 :::row-end:::
 ---

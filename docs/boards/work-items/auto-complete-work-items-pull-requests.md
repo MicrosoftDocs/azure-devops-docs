@@ -3,6 +3,7 @@ title: Automate work item completion with pull requests
 titleSuffix: Azure Boards   
 description: Learn how to automate work item creation and state transition of work items.  
 ms.technology: devops-agile
+ms.custom: cross-service
 ms.author: kaelli
 ms.topic: how-to
 monikerRange: '>= tfs-2018'
