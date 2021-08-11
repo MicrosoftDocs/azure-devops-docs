@@ -17,7 +17,7 @@ ms.date: 08/02/2021
 To support traceability of your Git code with work tracking, you can exercise one or more features and configure several options.  
  
 
-The following table summarizes the integration points between Azure Boards and Azure Repos, Git. Through various link types, you can track code changes&mdash;commits and pull requests for Git&mdash;that support development of user stories and features. The link types used to construct these links include *Branch , Commit, Pull Request*, and *Tag*. To learn more, see [Link to work items from other objects, View list of linked objects](../notifications/add-links-to-work-items.md#view-list-links).
+The following table summarizes the integration points between Azure Boards and Azure Repos, Git. Through various link types, you can track code changes&mdash;commits and pull requests for Git&mdash;that support development of user stories and features. The link types used to construct these links include *Branch , Commit, Pull Request*, and *Tag*. 
 
 :::image type="content" source="media/work-tracking/concept-link-types-repos.png" alt-text="Conceptual image of link types that link work items to Azure Repos Git objects."::: 
 
