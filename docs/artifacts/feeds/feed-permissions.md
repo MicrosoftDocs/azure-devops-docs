@@ -33,7 +33,7 @@ Feeds have four levels of access: Owners, Contributors, Collaborators, and Reade
 By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
 
 > [!NOTE]
-> To access a feed in a different organization, a user must be given access to the project hosting that feed.
+> To access a project-scoped feed, a user must also have access to the project hosting that feed.
 
 ## Azure Artifacts settings
 
@@ -160,7 +160,7 @@ You can also use the `Allow project-scoped builds` feature if you would like to 
 
 ## Sharing packages with everyone in your organization
 
-If you want to make the packages in a feed available to all users in your organization, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my organization**.
+If you want to make the packages in a feed available to all users in your organization, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my organization**. For project-scoped feeds, users will also need the "Read project-level information" permission on the project in order to use the feed.
 
 ::: moniker range="azure-devops"
 
