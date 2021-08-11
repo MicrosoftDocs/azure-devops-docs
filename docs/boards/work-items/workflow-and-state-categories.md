@@ -190,6 +190,8 @@ Here's how the default, inherited states map to the state categories for all thr
 
 * * *
 
+[!INCLUDE [temp](../includes/note-closed-items.md)]
+
 [!INCLUDE [activated-resolved-by-fields](../includes/activated-resolved-by-fields.md)]
 
 
