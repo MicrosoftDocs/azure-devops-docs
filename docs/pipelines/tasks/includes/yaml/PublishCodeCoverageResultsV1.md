@@ -13,6 +13,7 @@ ms.technology: devops-cicd-tasks
 - task: PublishCodeCoverageResults@1
   inputs:
     summaryFileLocation: 
+    #codeCoverageTool: # Optional (Default: JaCoCo)
     #pathToSources: # Optional
     #failIfCoverageEmpty: false # Optional
 ```
