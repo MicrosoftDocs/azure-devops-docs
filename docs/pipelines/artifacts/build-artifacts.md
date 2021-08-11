@@ -315,4 +315,4 @@ If you're using TFS 2015 RTM, the steps in the preceding examples are not availa
 
 - [Publish and download artifacts in Azure Pipelines](./pipeline-artifacts.md)
 - [Define your multi-stage classic pipeline](../release/define-multistage-release-process.md)
-- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/en-us/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)
+- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)
