@@ -166,16 +166,16 @@ The following Azure Machine Learning service CLI commands are used in the exampl
 
 | Command | Purpose |
 | ----- | -----| 
-| az ml folder attach | Associates the files in the project with your Azure Machine Learning service workspace. |
-| az ml computetarget create | Creates a compute target that is used to train the model. |
-| az ml experiment list | Lists experiments for your workspace. |
-| az ml run submit-script | Submits the model for training. |
-| az ml model register | Registers a trained model with your workspace. |
-| az ml model deploy | Deploys the model as a web service. |
-| az ml service list | Lists deployed services. |
-| az ml service delete | Deletes a deployed service. |
-| az ml pipeline list | Lists Azure Machine Learning pipelines. |
-| az ml computetarget delete | Deletes a compute target. |
+| :::no-loc text="az ml folder attach"::: | Associates the files in the project with your Azure Machine Learning service workspace. |
+| :::no-loc text="az ml computetarget create"::: | Creates a compute target that is used to train the model. |
+| :::no-loc text="az ml experiment list"::: | Lists experiments for your workspace. |
+| :::no-loc text="az ml run submit-script"::: | Submits the model for training. |
+| :::no-loc text="az ml model register"::: | Registers a trained model with your workspace. |
+| :::no-loc text="az ml model deploy"::: | Deploys the model as a web service. |
+| :::no-loc text="az ml service list ":::| Lists deployed services. |
+| :::no-loc text="az ml service delete"::: | Deletes a deployed service. |
+| :::no-loc text="az ml pipeline list"::: | Lists Azure Machine Learning pipelines. |
+| :::no-loc text="az ml computetarget delete"::: | Deletes a compute target. |
 
 For more information on these commands, see the [CLI extension reference](/cli/azure/ml?preserve-view=true&view=azure-cli-latest).
 
