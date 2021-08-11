@@ -218,6 +218,10 @@ Select this option if you want to display the deployment status on an external w
 
     :::image type="content" source="media/release-badge.svg" alt-text="Screenshot showing the release status badge.":::
 
+**Report deployment status to Jira**
+
+Select this option if you want to link your release pipeline to Jira issues. You must install [Azure Pipelines for Jira](https://marketplace.atlassian.com/apps/1220515/azure-pipelines-for-jira?hosting=cloud&tab=overview) and connect your Azure DevOps organization with your Jira account. Check out the [Jira integration](https://github.com/microsoft/azure-pipelines-jira/blob/master/tutorial.md) tutorial for more details.
+
 <a name="editrelease"></a>
 
 ## When should I edit a release instead of the pipeline that defines it?
