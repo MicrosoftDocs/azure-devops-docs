@@ -109,4 +109,4 @@ To get selection events (information about what work items are selected) impleme
 > [Package, Publish, and Install](../publish/overview.md)
 or
 > [!div class="nextstepaction"]
-> [Test and Debug](/previous-versions/azure/devops/extend/test/debug-in-browser)
+> [Test and Debug](https://docs.microsoft.com/previous-versions/azure/devops/extend/test/debug-in-browser)
