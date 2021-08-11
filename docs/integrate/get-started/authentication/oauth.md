@@ -237,7 +237,7 @@ Replace the placeholder values in the previous sample request body:
 When your users authorize your app to access their organization, they authorize it for those scopes.
 [Requesting the authorization](#authorize-your-app) passes the same scopes that you registered.
 
-For information about work item tracking attachments, see [Work Item Tracking/Attachments - Create](/rest/api/azure/devops/wit/attachments/create?view=azure-devops-rest-6.0&preserve-view=true) and the FAQ, How can I get attachments detail for my work item?
+For more information, see [Create work item tracking/attachments](/rest/api/azure/devops/wit/attachments/create?view=azure-devops-rest-6.0&preserve-view=true).
 
 ## Samples
 
@@ -273,7 +273,7 @@ A: No. OAuth is only supported in the REST APIs at this point.
 
 ### Q: How can I get attachments detail for my work item using Azure DevOps REST APIs?
 
-A: First, get the work item details with [Work items - Get work item](/rest/api/azure/devops/wit/work%20items/get%20work%20item?view=azure-devops-rest-6.0&preserve-view=true) REST API:
+A: First, get the work item details with [Work items - Get work item](https://docs.microsoft.com/rest/api/azure/devops/wit/work-items?view=azure-devops-rest-6.1&preserve-view=true) REST API:
 
 ```REST
 GET https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/{id}
