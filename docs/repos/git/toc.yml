@@ -143,6 +143,8 @@
     href: git-log-history-simplification.md
 - name: Cross-service operations
   items:
+  - name: Configure repos to link to work items
+    href: configure-repos-work-tracking.md
   - name: Drive Git development from a work item
     href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
   - name: Work item completion on commit
