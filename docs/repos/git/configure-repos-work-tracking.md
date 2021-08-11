@@ -79,7 +79,7 @@ The following table summarizes the integration points between Azure Boards and A
       Auto complete work items with pull requests
    :::column-end::: 
    :::column span="2":::
-      When you link a work item to a pull request (PR), you have the option to automatically complete those work items when you successfully complete the PR. The system defaults to your selection for future PRs. For details, see [Auto complete of work items with pull requests](../boards/work-items/auto-complete-work-items-pull-requests.md).
+      When you link a work item to a pull request (PR), you have the option to automatically complete those work items when you successfully complete the PR. The system defaults to your selection for future PRs. For details, see [Auto complete of work items with pull requests](../../boards/work-items/auto-complete-work-items-pull-requests.md).
    :::column-end:::
 :::row-end:::
 --- 
@@ -107,7 +107,7 @@ To configure the repository, open **Project Settings>Repositories**, choose a re
 Enable the following options: 
 
 - **Commit mention linking**
-	When enabled, commit messages containing `#` followed by a valid work item ID will automatically link the commit to the mentioned work item. Disable this option when pushing a repository previously contained by a different account or service. If you [import a repository](../repos/git/import-git-repository.md), we automatically turn this option off.
+	When enabled, commit messages containing `#` followed by a valid work item ID will automatically link the commit to the mentioned work item. Disable this option when pushing a repository previously contained by a different account or service. If you [import a repository](import-git-repository.md), we automatically turn this option off.
 - **Commit mention work item resolution**
 	Enable this option to support closing work items mentioned in commits with the `Fixes` prefix, for example `Fixes #*WorkItemID*`. 
 - **Work item transition preferences**
