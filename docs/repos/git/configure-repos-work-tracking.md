@@ -110,7 +110,7 @@ Enable the following options:
 - **Commit mention work item resolution**
 	Enable this option to support closing work items mentioned in commits with the `Fixes` prefix, for example `Fixes #*WorkItemID*`. 
 - **Work item transition preferences**
-	When enabled, the default option, the system rembers each user's last choice to complete linked work items during pull request completion. Depending on your team's preference, you may choose to disable this option to discourage users from completing work items with their pull requests. When disabled, users must opt-in to completing work items for each pull request. 
+	When enabled, the default option, the system remembers each user's last choice to complete linked work items during pull request completion. Depending on your team's preference, you may choose to disable this option to discourage users from completing work items with their pull requests. When disabled, users must opt-in to completing work items for each pull request. 
 
 
 <a id="configure-branch-policies" />
