@@ -314,5 +314,7 @@ Complete the following steps:
 
 ## Related articles
 
-* [Deploy pull request builds using Azure Pipelines](./deploy-pull-request-builds.md)
-* [Stage templates in Azure Pipelines](./env-templates.md)
+- [Link work items to deployments](../../boards/work-items/work-item-deployments-control.md)
+- [Deploy pull request Artifacts](./deploy-pull-request-builds.md)
+- [Stage templates](./env-templates.md)
+- [Deploy from multiple branches](./deploy-multiple-branches.md)
