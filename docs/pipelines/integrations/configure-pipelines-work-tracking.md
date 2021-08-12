@@ -1,7 +1,7 @@
 ---
 title: Configure pipelines to support integration
 titleSuffix: Azure DevOps
-description: Learn how to configure pipeines to support integration with Azure Boards and work tracking
+description: Learn how to configure pipelines to support integration with Azure Boards and work tracking
 ms.technology: devops-agile 
 ms.topic: how-to
 ms.author: kaelli
@@ -19,105 +19,102 @@ To support integration and traceability across Azure DevOps services with pipeli
 Most options are supported for pipelines run against an Azure Repos Git repository unless otherwise noted. 
  
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       **Feature** 
    :::column-end:::
-   :::column span="1":::
-     **Supported pipelines/Supported versions**
-   :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
      **Description**
    :::column-end:::
+   :::column span="1":::
+     **Supported versions**
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Manually link work items to builds  
    :::column-end::: 
-   :::column span="1":::
-      YAML, Classic 
-      All versions 
-   :::column-end::: 
-   :::column span="1":::
+   :::column span="2":::
       You can link from a work item to builds within the same project or other projects within the organization. For details, see [Link to work items from other objects](../../notifications/add-links-to-work-items.md).
    :::column-end:::
-:::row-end:::
----
-:::row:::
    :::column span="1":::
-      View builds linked to from a work item 
-   :::column-end::: 
-   :::column span="1":::
-      YAML, Classic 
       All versions 
    :::column-end::: 
-   :::column span="1":::
-      You can view all builds linked to from a work item, whether manual or automatically linked, from the Links tab.  For details, see [Link to work items from other objects, View list of linked objects](../../notifications/add-links-to-work-items.md#view-list-links).
-   :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
-      Automatically link work items to builds
+   :::column span="2":::
+      View builds linked to from a work item 
+   :::column-end::: 
+   :::column span="2":::
+      You can view all builds linked to from a work item, whether manual or automatically linked, from the Links tab.  For details, see [Link to work items from other objects, View list of linked objects](../../notifications/add-links-to-work-items.md#view-list-links).
    :::column-end:::
    :::column span="1":::
-      YAML/Azure DevOps Services  
-      Classic (Boards)/Azure DevOps Server 2020 and later  
-      Classic/Azure DevOps Server 2019 and later  
-      Build and Release/TFS 2018 
+      All versions 
+   :::column-end::: 
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      Automatically link work items to builds  
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Required to populate the **Development** control with *Integrated in build* links. The work items or commits that are part of a release are computed from the versions of artifacts. For example, each build in Azure Pipelines is associated with a set of work items and commits. For details, see [Automatically link work items](#auto-link-work-items-builds) later in this article. 
+   :::column-end:::
+   :::column span="1":::
+      YAML, Azure DevOps Server 2020 and later  
+      Classic, TFS 2018 and later 
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker range=">= azure-devops-2020"
 :::row:::
-   :::column span="1":::
-      Automatically link work items to releases and report deployment status to a work item
+   :::column span="2":::
+      Automatically link work items to releases and report deployment status to a work item (Classic only)
    :::column-end:::
-   :::column span="1":::
-      Classic (Boards)/Azure DevOps Server 2020 and later  
-   :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Required to populate **Deployment** control in work item form with *Integrated in release stage* links. For details, see [Report deployment status to Boards](#auto-link-work-items-releases) later in this article.
+   :::column-end:::
+   :::column span="1":::
+      Azure DevOps Server 2020 and later  
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker-end
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       View work items linked to a build or release
    :::column-end:::
-   :::column span="1":::
-      YAML/Azure DevOps Server 2020 and later  - TBD
-      Classic/Azure DevOps Server 2020 and later  
+   :::column span="2":::
+      Review and open the work items included in a build or release.   
    :::column-end:::
    :::column span="1":::
-      Review and open the work items included in a build or release.   
+       Azure DevOps Server 2020 and later  
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
-      Create work item on failure
+   :::column span="2":::
+      Create work item on failure (Classic)
    :::column-end:::
-   :::column span="1":::
-      YAML/Azure DevOps Services  
-      Classic/TFS 2018 and later versions 
-   :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Automatically create a work item when a build fails, and optionally set values for work item fields. For details, see [Create work item on failure](#create-work-item-on-failure) later in this article.  
+   :::column-end:::
+   :::column span="1":::
+      TFS 2018 and later versions 
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker range=">= azure-devops-2020"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Query Work Items task, ensure the number of matching work items returned from a query is within a threshold.
    :::column-end::: 
    :::column span="2":::
        Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](../tasks/utility/work-item-query.md).  
+   :::column-end:::
+   :::column span="1":::
+      Azure DevOps Server 2020 and later versions 
    :::column-end:::
 :::row-end:::
 --- 
@@ -135,13 +132,13 @@ You configure most of these integration options by editing your pipeline options
 
 For YAML-defined release pipelines, you configure the integration through the **Pipeline settings** dialog. Prior to setting your integration options, you should set up the release stages as described in [Release pipelines (Classic) overview](../release/index.md).
 
-1. Open the pipeline, choose :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More actions**, and then choose **Settings**.
+1. Open the pipeline, choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and then choose **Settings**.
 
-	:::image type="content" source="media/deployments-control/open-pipeline-settings.png " alt-text="Open Pipeline settings.":::
+	:::image type="content" source="media/pipelines-integration/open-pipeline-settings.png " alt-text="Open Pipeline settings.":::
 
 	The Build properties page appears. 
 
-	:::image type="content" source="media/pipelines-integration/pipeline-settings-yaml.png" alt-text="YAML Pipeline Build properties dialog.":::
+	:::image type="content" source="media/pipelines-integration/pipeline-settings-enable-link-work-items.png" alt-text="YAML Pipeline settings dialog.":::
 
 
 
@@ -157,6 +154,7 @@ For YAML-defined release pipelines, you configure the integration through the **
 Open the pipeline, choose to edit the pipeline, and then choose the **Options** tab. The Build properties page appears. 
 
 ::: moniker range=">= azure-devops-2019"
+
 :::image type="content" source="media/pipelines-integration/classic-build-pipeline-settings.png" alt-text="Build and Release pipeline Build properties dialog.":::
 
 ::: moniker-end 
@@ -267,6 +265,7 @@ This feature isn't supported for YAML pipelines in Azure DevOps Server 2019.
 
 
 ::: moniker range="tfs-2018"
+
 1. Open pipeline **Build properties** as describe in [Configure YAML pipeline settings](#classic-options-integrations).
 
 1. Enable **Automatically link new work in this build**.  
@@ -274,6 +273,7 @@ This feature isn't supported for YAML pipelines in Azure DevOps Server 2019.
 	:::image type="content" source="media/pipelines-integration/auto-link-work-items-pipeline-tfs-2018.png" alt-text="Screenshot of Automatically link work items, TFS 2018 build and release pipeline.":::
 
 	Only work items associated with the selected branch are linked with each pipeline run.  
+
 ::: moniker-end
 
 ***
