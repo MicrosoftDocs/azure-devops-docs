@@ -6,7 +6,7 @@ ms.topic: reference
 ms.custom: seodec18, devx-track-azurecli
 ms.author: ushan
 author: N-Usha
-ms.date: 02/17/2020
+ms.date: 08/12/2021
 monikerRange: '> tfs-2018'
 ---
 
@@ -66,19 +66,20 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>scriptLocation</code><br/>Script Location</td>
-    <td>(Required) Path to script: File path or Inline script<br/>Default value: scriptPath</td>
+    <td>(Required) select `scriptPath` to use a script file or `inlineScript` if you want to paste your script inline <br/>Default value: scriptPath</td>
 </tr>
 <tr>
     <td><code>scriptPath</code><br/>Script Path</td>
-    <td>(Required) Fully qualified path of the script(.ps1 or .bat or .cmd when using Windows-based agent else <code>.ps1 </code> or <code>.sh </code> when using linux-based agent) or a path relative to the default working directory</td>
+    <td>Required when `scriptLocation = scriptPath`. Fully qualified path of the script file(.ps1 or .bat or .cmd when using Windows-based agent or .ps1 or .sh when using linux-based agent) or a path relative to the default working directory</td>
 </tr>
 <tr>
     <td><code>inlineScript</code><br/>Inline Script</td>
-    <td>(Required) You can write your scripts inline here. When using Windows agent, use PowerShell or PowerShell Core or batch scripting whereas use PowerShell Core or shell scripting when using Linux-based agents. For batch files use the prefix \"call\" before every Azure command. You can also pass predefined and custom variables to this script using arguments. <br/><b>Example for PowerShell/PowerShellCore/shell:</b> az --version az account show <br/><b>Example for batch:</b> call az --version call az account show</td>
+    <td>Required when `scriptLocation = inlineScript`. Use this option if you want to paste your scripts inline. Use PowerShell, PowerShell Core, or batch scripting for Windows agents and shell scripting when using Linux-based agents. Use the `call` prefix before every Azure command when you are using batch. You can also pass predefined and custom variables to your script using arguments. <br/><b>Examples: 
+<br/>PowerShell/PowerShellCore/shell: az --version az account show <br/>batch:</b> call az --version call az account show</td>
 </tr>
 <tr>
     <td><code>arguments</code><br/>Script Arguments</td>
-    <td>(Optional) Arguments passed to the script</td>
+    <td>(Optional) Arguments passed to your script</td>
 </tr>
 <tr>
     <td><code>powerShellErrorActionPreference</code><br/>ErrorActionPreference</td>
