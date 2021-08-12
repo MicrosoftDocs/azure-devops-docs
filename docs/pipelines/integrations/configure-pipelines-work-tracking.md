@@ -433,6 +433,7 @@ The deployment status is displayed in the following sections of Azure Repos:
 
 If a commit gets deployed to multiple release pipelines, with multiple stages, each has an entry in the badge with status that's shown for each stage. By default, when you create a release pipeline, deployment status is posted for all stages. However, you can selectively choose the stages for which deployment status should be displayed in the status badge (for example, show only the production stage). Your team members can select the status badge to view the latest deployment status for each of the selected stages of the release pipelines.
 
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -524,6 +525,6 @@ See [Speed up testing by using Test Impact Analysis (TIA), Enable Test Impact An
 - [Associate work items to commits](../../boards/backlogs/connect-work-items-to-git-dev-ops.md) 
 - [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
 - [End-to-end traceability](../../cross-service/end-to-end-traceability.md)
-- [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
-- [Link type reference](../queries/link-type-reference.md)
+- [Linking, traceability, and managing dependencies](../../boards/queries/link-work-items-support-traceability.md)
+- [Link type reference](../../boards/queries/link-type-reference.md)
  
