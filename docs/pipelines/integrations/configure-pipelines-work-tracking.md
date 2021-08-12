@@ -181,7 +181,7 @@ The Build properties page appears.
 :::image type="content" source="media/pipelines-integration/classic-build-options.png" alt-text="Build properties dialog.":::
 
 For details on each setting, use one of the following links: 
-- [Build number format](h../release/index.md#how-do-i-manage-the-names-for-new-releases)
+- [Build number format](../release/index.md#how-do-i-manage-the-names-for-new-releases)
 - [Automatically link work items](#auto-link-work-items-builds)
 - [Create work item on failure](#create-work-item-on-failure)
 - [Status badge](#status-badge)
@@ -192,7 +192,7 @@ For details on each setting, use one of the following links:
 :::image type="content" source="media/pipelines-integration/build-properties-tfs-2018.png" alt-text="Build properties dialog, TFS-2018.":::
 
 For details on each setting, use one of the following links: 
-- [Build number format](h../release/index.md#how-do-i-manage-the-names-for-new-releases)
+- [Build number format](../release/index.md#how-do-i-manage-the-names-for-new-releases)
 - [Badge enabled](#status-badge)
 - [Automatically link work items](#auto-link-work-items-builds)
 - [Create work item on failure](#create-work-item-on-failure)
@@ -327,11 +327,10 @@ Once we have the list of commits, we enumerate all the work items associated wit
  
  
 
-<a id="class-report-boards" />
+<a id="classic-report-boards" />
 
 ::: moniker range=">= azure-devops-2020"
-
-<a id="auto-link-work-items-releases" />
+ 
 
 ## Report deployment status to Boards (Classic)   
  
@@ -380,7 +379,7 @@ If a build pipeline fails, you can automatically create a work item to track get
 
 	:::image type="content" source="media/pipelines-integration/yaml-pipeline-more-actions-menu-options.png" alt-text="Screenshot of YAML pipeline More Actions menu options.":::
 
-1. Choose the branch and scope of interest, and then choose :::image type="icon" source="../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or markdown syntax. 
+1. Choose the branch and scope of interest, and then choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or markdown syntax. 
 
 	:::image type="content" source="media/pipelines-integration/status-badge-yaml.png" alt-text="Screenshot of YAML pipeline status badge.":::
 
@@ -391,7 +390,7 @@ If a build pipeline fails, you can automatically create a work item to track get
 
 1. Open pipeline **Build properties** as describe in [Build properties](#classic-build-properties).
 
-1. Choose :::image type="icon" source="../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or markdown syntax. 
+1. Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or markdown syntax. 
 
 	:::image type="content" source="media/pipelines-integration/classic-build-status-badge.png" alt-text="Screenshot of classic build properties, status badge section.":::
 
@@ -401,9 +400,9 @@ Select this option if you want to display the latest outcome of a stage deployme
 
 1.	Check the **Enable the deployment status badge** checkbox. And then, select the stages for which you want to display the outcome. By default, all the stages defined for the release are selected.
 
-	:::image type="content" source="media/pipelines-integration/enable-status-badge-3-stages" alt-text="Screenshot of Classic release enable deployment status badge with three stages selected.":::
+	:::image type="content" source="media/pipelines-integration/enable-status-badge-3-stages.png" alt-text="Screenshot of Classic release enable deployment status badge with three stages selected.":::
 
-1.	Choose :::image type="icon" source="../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or markdown syntax. 
+1.	Choose :::image type="icon" source="../../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or markdown syntax. 
 
 	:::image type="content" source="media/pipelines-integration/classic-release-status-badge-3-stages.png" alt-text="Screenshot of Classic release enable deployment status badge with three stages that you can copy.":::
 	
