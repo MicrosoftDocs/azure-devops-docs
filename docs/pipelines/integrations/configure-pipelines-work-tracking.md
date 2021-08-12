@@ -1,0 +1,507 @@
+---
+title: Configure pipelines to support integration
+titleSuffix: Azure DevOps
+description: Learn how to configure pipeines to support integration with Azure Boards and work tracking
+ms.technology: devops-agile 
+ms.topic: how-to
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2018'
+ms.date: 08/02/2021
+---
+
+# Configure pipelines to support work tracking
+
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+
+To support integration and traceability across Azure DevOps services with pipelines, you can configure several options. You can report pipeline status, copy the syntax for status badges, set up automatic linking of work items to builds and releases. Options and configuration steps differ depending on whether you are configuring a YAML or Classic pipeline, and your Azure DevOps version. 
+
+Most options are supported for pipelines run against an Azure Repos Git repository unless otherwise noted. 
+ 
+:::row:::
+   :::column span="1":::
+      **Feature** 
+   :::column-end:::
+   :::column span="1":::
+     **Supported pipelines/Supported versions**
+   :::column-end:::
+   :::column span="1":::
+     **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Manually link work items to builds  
+   :::column-end::: 
+   :::column span="1":::
+      YAML, Classic 
+      All versions 
+   :::column-end::: 
+   :::column span="1":::
+      You can link from a work item to builds within the same project or other projects within the organization. For details, see [Link to work items from other objects](../../notifications/add-links-to-work-items.md).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      View builds linked to from a work item 
+   :::column-end::: 
+   :::column span="1":::
+      YAML, Classic 
+      All versions 
+   :::column-end::: 
+   :::column span="1":::
+      You can view all builds linked to from a work item, whether manual or automatically linked, from the Links tab.  For details, see [Link to work items from other objects, View list of linked objects](../../notifications/add-links-to-work-items.md#view-list-links).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Automatically link work items to builds
+   :::column-end:::
+   :::column span="1":::
+      YAML/Azure DevOps Services  
+      Classic (Boards)/Azure DevOps Server 2020 and later  
+      Classic/Azure DevOps Server 2019 and later  
+      Build and Release/TFS 2018 
+   :::column-end:::
+   :::column span="1":::
+      Required to populate the **Development** control with *Integrated in build* links. The work items or commits that are part of a release are computed from the versions of artifacts. For example, each build in Azure Pipelines is associated with a set of work items and commits. For details, see [Automatically link work items](#auto-link-work-items-builds) later in this article. 
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range=">= azure-devops-2020"
+:::row:::
+   :::column span="1":::
+      Automatically link work items to releases and report deployment status to a work item
+   :::column-end:::
+   :::column span="1":::
+      Classic (Boards)/Azure DevOps Server 2020 and later  
+   :::column-end:::
+   :::column span="1":::
+      Required to populate **Deployment** control in work item form with *Integrated in release stage* links. For details, see [Report deployment status to Boards](#auto-link-work-items-releases) later in this article.
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+:::row:::
+   :::column span="1":::
+      View work items linked to a build or release
+   :::column-end:::
+   :::column span="1":::
+      YAML/Azure DevOps Server 2020 and later  - TBD
+      Classic/Azure DevOps Server 2020 and later  
+   :::column-end:::
+   :::column span="1":::
+      Review and open the work items included in a build or release.   
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Create work item on failure
+   :::column-end:::
+   :::column span="1":::
+      YAML/Azure DevOps Services  
+      Classic/TFS 2018 and later versions 
+   :::column-end:::
+   :::column span="1":::
+      Automatically create a work item when a build fails, and optionally set values for work item fields. For details, see [Create work item on failure](#create-work-item-on-failure) later in this article.  
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range=">= azure-devops-2020"
+:::row:::
+   :::column span="1":::
+      Query Work Items task, ensure the number of matching work items returned from a query is within a threshold.
+   :::column-end::: 
+   :::column span="2":::
+       Use this task to ensure the number of matching items returned by a work item query is within the configured thresholds. For details, see [Query Work Items task, Control deployments with gates and approvals](../tasks/utility/work-item-query.md).  
+   :::column-end:::
+:::row-end:::
+--- 
+
+
+
+
+## Open pipeline build or integration options 
+
+You configure most of these integration options by editing your pipeline options. Prior to choosing your integration options, you should set up the release stages as described in [Release pipelines (Classic) overview](../release/index.md).
+
+<a id="yaml-open-settings" /> 
+
+# [YAML](#tab/yaml)
+
+For YAML-defined release pipelines, you configure the integration through the **Pipeline settings** dialog. Prior to setting your integration options, you should set up the release stages as described in [Release pipelines (Classic) overview](../release/index.md).
+
+1. Open the pipeline, choose :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More actions**, and then choose **Settings**.
+
+	:::image type="content" source="media/deployments-control/open-pipeline-settings.png " alt-text="Open Pipeline settings.":::
+
+	The Build properties page appears. 
+
+	:::image type="content" source="media/pipelines-integration/pipeline-settings-yaml.png" alt-text="YAML Pipeline Build properties dialog.":::
+
+
+
+# [Classic](#tab/classic)
+
+<a id="classic-open-settings" /> 
+
+### Classic build pipelines
+ 
+
+<a id="build-release-options" /> 
+
+Open the pipeline, choose to edit the pipeline, and then choose the **Options** tab. The Build properties page appears. 
+
+::: moniker range=">= azure-devops-2019"
+:::image type="content" source="media/pipelines-integration/classic-build-pipeline-settings.png" alt-text="Build and Release pipeline Build properties dialog.":::
+
+::: moniker-end 
+
+::: moniker range="tfs-2018"
+
+<a id="build-release-options" /> 
+
+Open the pipeline and choose **Options**. The Build properties page appears. 
+
+:::image type="content" source="media/pipelines-integration/tfs-2018-build-release-options-build-properties.png" alt-text="Build and Release pipeline Build properties dialog.":::
+
+::: moniker-end 
+
+
+<a id="classic-options-integrations" /> 
+
+### Classic release pipelines
+
+For Classic release pipelines, open **Options>Integrations** page for the release pipeline. 
+
+1. Open **Pipelines>Releases**, choose to edit your pipeline, then choose **Options** and then **Integrations**.
+
+::: moniker range=">= azure-devops-2020"
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Integrations options for Classic pipelines](media/pipelines-integration/integration-options-classic.png)
+::: moniker-end 
+
+::: moniker range="azure-devops-2019"
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Integrations options for Classic pipelines, Azure DevOps 2019 and earlier versions](../release/media/what-is-release-management/report-options.png)
+::: moniker-end 
+
+ 
+***
+
+
+
+
+<a id="auto-link-work-items-builds" />
+
+## Automatically link work items to builds 
+
+When we establish traceability between work items and builds/releases, there are the following two aspects:
+
+- List the work items that were newly built as part of a build. You can find this when you're looking at a build instance.
+- List the builds that this work item was built in. You can find the list in the "Development" section in a work item form.
+The setting to "Automatically link new work in this build" has nothing to do with how we compute the first bulleted item. It only influences how we compute the second bulleted item.
+
+The computation for the first bullet is as follows for a build: 
+Let's say, for example, that you started a new build. Whatever the setting, we compute a list of new commits for the build. We do the following tasks:
+
+- We find the commit c2 that is being built now.
+- We find the commit c1 that was built in the last successful build of the same branch (Build.SourceBranch).
+- We find all the commits between c1 and c2 (in the commit tree).
+
+It could happen that there's no last known successful build on the same branch. For example, when you run a build for the first time on a branch, or when all the previous builds on a branch have been deleted (possibly through retention policies). The list could be long in these cases.
+
+Once we have the list of commits, we enumerate all the work items associated with each of those commits. This is the list that you see in a build.
+ 
+
+<a id="yaml-auto-link" /> 
+
+
+# [YAML](#tab/yaml)
+
+::: moniker range="azure-devops"
+
+1. Open pipeline **Build properties** as describe in [Configure YAML pipeline settings](#yaml-open-settings).
+
+1. Enable **Automatically link new work in this build**.  
+    Add the branches to include or exclude.  
+	:::image type="content" source="media/pipelines-integration/auto-link-work-items-yaml-pipeline.png" alt-text="Screenshot of Automatically link work items in this build property settings.":::
+
+	Once enabled, **Integrated in build** and **Integrated in release stage** links are generated for all work items linked to the selected pull request with each release run. Also, links appear in the Deployment control for the work item. 
+::: moniker-end
+	
+
+::: moniker range="azure-devops-2020"
+1. Open pipeline **Build settings** as describe in [Configure YAML pipeline settings](#yaml-open-settings).
+
+1. Enable **Automatically link work items included in this run** and select the branch.  
+
+	:::image type="content" source="media/pipelines-integration/yaml-pipeline-settings-2020.png" alt-text="Screenshot of Automatically link work items in this build property settings.":::
+
+	Once enabled, **Integrated in build** and **Integrated in release stage** links are generated for all work items linked to the selected pull request with each release run. Also, links appear in the Deployment control for the work item. 
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+This feature isn't supported for YAML pipelines in Azure DevOps Server 2019. 
+::: moniker-end
+
+<a id="class-report-work" />
+
+
+# [Classic](#tab/classic)
+
+
+::: moniker range=">= azure-devops-2019"
+
+1. Open **Options>Integrations** for the release pipeline as describe in [Configure Classic pipelines](#classic-options-integrations).
+
+1. Check the **Report deployment status to Work** checkbox, and ... Select this option if you want to create links to all work items that represent associated changes to the source, when a release is complete. 
+
+	:::image type="content" source="media/pipelines-integration/report-deployment-status-boards-4-environments.png" alt-text="Screenshot of Report deployment status to Boards, Classic, 4 environments.":::
+
+::: moniker-end
+
+
+::: moniker range="tfs-2018"
+1. Open pipeline **Build properties** as describe in [Configure YAML pipeline settings](#classic-options-integrations).
+
+1. Enable **Automatically link new work in this build**.  
+    Add the branches to include or exclude.  
+	:::image type="content" source="media/pipelines-integration/auto-link-work-items-pipeline-tfs-2018.png" alt-text="Screenshot of Automatically link work items, TFS 2018 build and release pipeline.":::
+
+	Only work items associated with the selected branch are linked with each pipeline run.  
+::: moniker-end
+
+***
+
+<a id="class-report-boards" />
+
+::: moniker range=">= azure-devops-2020"
+
+<a id="auto-link-work-items-releases" />
+
+## Report deployment status to Boards 
+
+# [YAML](#tab/yaml)
+
+This feature isn't supported for YAML release pipelines. 
+
+# [Classic](#tab/classic)
+
+1. Open **Options>Integrations** for the release pipeline as describe in [Configure Classic pipelines](#classic-options-integrations).
+
+1. Check the **Report deployment status to Boards** checkbox, and then choose the ... Select this option if you want to create links to all work items that represent associated changes to the source, when a release is complete. 
+
+	:::image type="content" source="media/pipelines-integration/report-deployment-status-boards-4-environments.png" alt-text="Screenshot of Report deployment status to Boards, Classic, 4 environments.":::
+
+***
+
+::: moniker-end
+
+
+
+<a id="create-work-item-on-failure" /> 
+
+## Create work item on failure 
+
+If a build pipeline fails, you can automatically create a work item to track getting the problem fixed. You can specify the work item type and set options to automatically assign it to the requestor or other fields. The requestor corresponds to the person that triggered the build. 
+
+
+# [YAML](#tab/yaml)
+
+> [!TIP]   
+> The option to **Create work item on failure** is only supported for Classic pipelines.To accomplish this with a YAML  pipeline, see the [Create Bug on Release failure](https://marketplace.visualstudio.com/items?itemName=AmanBedi18.CreateBugTask) marketplace extension. 
+
+# [Classic](#tab/classic)
+
+<a id="classic-options-integrations" /> 
+
+
+1. Open pipeline build options as describe in [Edit Classic build options](#classic-open-settings).
+
+2. Enable **Create work item on failure** and choose the type of work item to create. Optionally check the  **Assign to requestor** checkbox to set the **Assign To** field and add fields to set within the work item to create. 
+
+	For example, here we choose the Bug work item type and specify the Priority and Tags fields and their values. 
+
+	:::image type="content" source="media/pipelines-integration/create-work-item-failure-yaml.png" alt-text="Screenshot of Create work item on failure in build options.":::
+
+***
+
+
+<!--- 
+
+<a id="enable-status-badge" /> 
+
+# [YAML](#tab/yaml)
+
+1. Open pipeline :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More Actions** and choose **Status badge**.
+
+	:::image type="content" source="media/pipelines-integration/yaml-pipeline-more-actions-menu-options.png" alt-text="Screenshot of YAML pipeline More Actions menu options.":::
+
+Choose the branch and scope of interest, and then choose :::image type="icon" source="../media/icons/copy.png" border="false"::: **Copy to clipboard** to copy the image or markdown syntax. 
+
+	:::image type="content" source="media/pipelines-integration/status-badge-yaml.png" alt-text="Screenshot of YAML pipeline status badge.":::
+
+
+<a id="enable-status-badge" /> 
+
+# [Classic](#tab/classic)
+
+Select this option if you want to display the latest outcome of a stage deployment on an external website. 
+
+1.	Check the **Enable the deployment status badge** checkbox.
+
+1.	Select the stages for which you want to display the outcome. By default, all the stages are selected.
+
+1.	Save your pipeline.
+
+1.	Copy the badge URL for the required stage to the clipboard.
+
+1.	Use this badge URL as a source of an image in an external website.  
+    For example: `<img src="{URL you copied from the link}"/>`
+
+***
+
+-->
+
+<!--- 
+
+<a id="report-release-status" />
+
+## Report release status (Classic) 
+
+The current status for a release pipeline (Classic) can be reported back to a source repository. 
+
+For Classic release pipelines, you configure the integration through the **Options>Integrations** page for the pipeline. Prior to choosing your integration options, you should set up the release stages as described in [Release pipelines (Classic) overview](../release/index.md).
+
+1. Open **Pipelines>Releases**, choose to edit your pipeline, then choose **Options** and then **Integrations**.
+
+::: moniker range=">= azure-devops-2020"
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Integrations options for Classic pipelines](media/pipelines-integration/integration-options-classic.png)
+::: moniker-end 
+
+::: moniker range="< azure-devops-2020"
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Integrations options for Classic pipelines, Azure DevOps 2019 and earlier versions](../release/media/what-is-release-management/report-options.png)
+::: moniker-end 
+
+> [!NOTE]
+> If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines to automatically publish the deployment status to your repository. However, you can still use the [Enable the Deployment status badge](#enable-status-badge) option described below, to show deployment status within your version control system.
+
+
+-->
+
+<!--- 
+
+<a id="class-report-git" />
+
+## Report deployment status to the repository host (Classic)
+
+When you code is stored in an Azure Repos Git repository, you can configure your release pipeline to display a badge on the Azure Repos pages. The badge indicates where the specific commit got deployed and whether the deployment is passing or failing. This option improves the traceability from code commit to deployment. 
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Integrations options for Classic pipelines, report deployment status to the repository host](media/pipelines-integration/classic-report-deployment-status.png)
+
+The deployment status is displayed in the following sections of Azure Repos:
+
+* **Files**: Indicates the status of the latest deployment for the selected branch.
+* **Commits**: Indicates the deployment status for each commit (requires the continuous integration (CD) trigger to be enabled for your release).
+* **Branches**: Indicates the status of the latest deployment for each branch.
+ 
+
+If a commit gets deployed to multiple release pipelines, with multiple stages, each has an entry in the badge with status that's shown for each stage. By default, when you create a release pipeline, deployment status is posted for all stages. However, you can selectively choose the stages for which deployment status should be displayed in the status badge (for example, show only the production stage). Your team members can select the status badge to view the latest deployment status for each of the selected stages of the release pipelines.
+
+
+-->
+
+<!--- 
+
+::: moniker range=">= azure-devops-2020"
+
+<a id="class-report-jira" />
+
+## Report deployment status to Jira (Classic)
+
+Include Jira issues in work items and create links to all issues on stage completion. Install Azure Pipelines for Jira app in JIRA Software cloud and add organization to create a connection.
+
+:::image type="content" source="media/pipelines-integration/integration-options-classic-jira.png" alt-text="Screenshot of Integrations options for Classic pipelines, Report deployment status to Jira":::
+
+To support integration with Jira issue tracking, install [Azure Pipelines integration with Jira](https://marketplace.atlassian.com/apps/1220515/azure-pipelines-for-jira?hosting=cloud&tab=overview) and connect your Azure DevOps organizations with your Jira Software instance. You can connect multiple organizations with one instance and get data for all your teams and related projects. Learn more about setting up the integration in our documentation.To learn more about installation and setup, see [Integrate with Jira Issue tracking](https://github.com/microsoft/azure-pipelines-jira/blob/master/tutorial.md). 
+
+
+::: moniker-end
+
+
+-->
+ 
+
+## Verify the integration
+
+To verify the configuration is correct perform the next set of steps: 
+1. Create a branch  
+1. Make changes to a file and commit those changes
+1. Create a pull request and merge it
+1. Build and then deploy it using your release pipeline.
+
+*If the associations are being created and the work items are being linked properly, you'll see the links added under the Development section, as shown in the image below:*
+ 
+
+
+
+<!--- 
+
+
+## Configure GitHub comment triggers 
+
+ Usually for security, teams may not want to automatically build pull requests. Instead, they want a team member to review the pull request and once it's deemed safe, trigger the build with a [pull request comment](../pipelines/repos/github.md?view=azure-devops&preserve-view=true#comment-triggers). The following setting provides flexibility, keeps this option while still allowing automatic pull request builds _only_ for team members.
+
+> [!div class="mx-imgBorder"]
+> ![GitHub comments trigger optimizations.](/azure/devops/release-notes/2019/media/149_07.png)
+
+
+
+## Enable Test Impact Analysis 
+
+See [Speed up testing by using Test Impact Analysis (TIA), Enable Test Impact Analysis](../pipelines/test/test-impact-analysis.md#enable-test-impact-analysis). 
+
+
+
+
+:::row:::
+   :::column span="1":::
+      [Enable status badge](#enable-status-badge)  
+      [All supported repositories](../pipelines/repos/index.md)
+   :::column-end:::
+   :::column span="1":::
+      YAML/Azure DevOps Server 2019 and later  
+      Classic/Azure DevOps Server 2019 and later  
+      Build and Release/TFS 2018  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      [Report deployment status to Git repository](#classic-report-git) 
+   :::column-end:::
+   :::column span="1":::
+      Classic/Azure DevOps Server 2019 and later 
+   :::column-end:::
+:::row-end::: 
+---
+:::row:::
+   :::column span="1":::
+      [Report deployment status to Jira](#classic-report-jira) 
+   :::column-end:::
+   :::column span="1":::
+      Classic/Azure DevOps Server 2020 and later
+   :::column-end:::
+:::row-end:::
+---
+
+-->
+ 
