@@ -53,6 +53,10 @@
     displayname: pull requests, commits, comments, build, wiki
   - name: Configure Git repositories to integrate with work tracking 
     href: ../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    displayname: auto link, transition, check for linked work items, auto complete, external links 
+  - name: Configure pipelines to support work tracking
+    href: ../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    displayname: auto link, create work item on build failure, report deployment status,  
   - name: Auto complete work items with pull requests
     href: auto-complete-work-items-pull-requests.md  
   - name: Drive Git development

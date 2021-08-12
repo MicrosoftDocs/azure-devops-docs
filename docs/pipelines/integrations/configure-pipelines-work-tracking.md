@@ -80,7 +80,7 @@ The following table summarizes the integration points between Azure Boards and A
       Automatically link work items to releases and report deployment status to a work item (Classic only)
    :::column-end:::
    :::column span="2":::
-      Required to populate **Deployment** control in work item form with *Integrated in release stage* links. For details, see [Report deployment status to Boards](#auto-link-work-items-releases) later in this article.
+      Required to populate **Deployment** control in work item form with *Integrated in release stage* links. For details, see [Report deployment status to Boards](#classic-report-boards) later in this article.
    :::column-end:::
    :::column span="1":::
       Azure DevOps Server 2020 and later  
@@ -217,7 +217,7 @@ For Classic release pipelines, open **Pipelines>Releases**, choose to edit your 
 For details on each setting, use one of the following links: 
 - [Report deployment status to the repository host](#classic-report-git)
 - [Report deployment status to Work](#auto-link-work-items-builds)
-- [Report deployment status to Boards](#auto-link-work-items-releases)
+- [Report deployment status to Boards](#classic-report-boards)
 - [Report deployment status to Jira](#classic-report-jira)
 - [Enable the deployment status badge](#enable-status-badge)
 ::: moniker-end 
@@ -286,7 +286,7 @@ This feature isn't supported for YAML pipelines in Azure DevOps Server 2019.
 
 ::: moniker range=">= azure-devops-2019"
 
-Prior to choosing your integration options, you should set up the release stages as described in [Release pipelines (Classic) overview](../release/index.md).
+Prior to choosing your integration options, you should set up the release stages as described in [Define your multi-stage continuous deployment (CD) pipeline](../../pipelines/release/define-multistage-release-process.md).
 
 1. Open **Options>Integrations** as describe in [Release integration options](#classic-release-options).
  
@@ -335,7 +335,7 @@ Once we have the list of commits, we enumerate all the work items associated wit
 ## Report deployment status to Boards (Classic)   
  
 
-Prior to choosing your integration options, you should set up the release stages as described in [Release pipelines (Classic) overview](../release/index.md).
+Prior to choosing your integration options, you should set up the release stages as described in [Define your multi-stage continuous deployment (CD) pipeline](../../pipelines/release/define-multistage-release-process.md).
 
 1. Open **Options>Integrations** for the release pipeline as describe in [Release integration options](#classic-release-options).
 
@@ -350,7 +350,7 @@ Prior to choosing your integration options, you should set up the release stages
 
 <a id="create-work-item-on-failure" /> 
 
-## Create work item on failure (Classic) 
+## Create work item on build failure (Classic) 
 
 If a build pipeline fails, you can automatically create a work item to track getting the problem fixed. You can specify the work item type and set options to automatically assign it to the requestor or other fields. The requestor corresponds to the person that triggered the build. 
  
@@ -412,32 +412,10 @@ Select this option if you want to display the latest outcome of a stage deployme
 
 
 <a id="report-release-status" />
+<a id="classic-report-git" />
 
 ::: moniker range=">= azure-devops-2019"
 
-## Report release status (Classic) 
-
-The current status for a release pipeline (Classic) can be reported back to an Azure Repos Git source repository. 
-
-> [!NOTE]
-> If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines to automatically publish the deployment status to your repository. However, you can still use the [Enable the Deployment status badge](#enable-status-badge) option, to show deployment status within your version control system.
-
-For Classic release pipelines, you configure the integration through the **Options>Integrations** page for the pipeline. Prior to choosing your integration options, you should set up the release stages as described in [Release pipelines (Classic) overview](../release/index.md).
-
-Open **Pipelines>Releases**, choose to edit your pipeline, then choose **Options** and then **Integrations**.
-::: moniker-end 
-::: moniker range=">= azure-devops-2020"
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Integrations options for Classic pipelines](media/pipelines-integration/integration-options-classic.png)
-::: moniker-end 
-
-::: moniker range="< azure-devops-2020"
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Integrations options for Classic pipelines, Azure DevOps 2019 and earlier versions](../release/media/what-is-release-management/report-options.png)
-::: moniker-end 
-
- 
-<a id="classic-report-git" />
 
 ## Report deployment status to the repository host (Classic)
 
@@ -471,7 +449,10 @@ To support integration with Jira issue tracking, install [Azure Pipelines integr
 
 ::: moniker-end
 
- 
+
+
+
+<!--- 
 
 ## Verify the integration
 
@@ -486,9 +467,6 @@ To verify the configuration is correct perform the next set of steps:
 
 
 
-<!--- 
-
-
 ## Configure GitHub comment triggers 
 
  Usually for security, teams may not want to automatically build pull requests. Instead, they want a team member to review the pull request and once it's deemed safe, trigger the build with a [pull request comment](../pipelines/repos/github.md?view=azure-devops&preserve-view=true#comment-triggers). The following setting provides flexibility, keeps this option while still allowing automatic pull request builds _only_ for team members.
@@ -501,9 +479,7 @@ To verify the configuration is correct perform the next set of steps:
 ## Enable Test Impact Analysis 
 
 See [Speed up testing by using Test Impact Analysis (TIA), Enable Test Impact Analysis](../pipelines/test/test-impact-analysis.md#enable-test-impact-analysis). 
-
-
-
+ 
 
 :::row:::
    :::column span="1":::
@@ -537,4 +513,17 @@ See [Speed up testing by using Test Impact Analysis (TIA), Enable Test Impact An
 ---
 
 -->
+ 
+## Related articles  
+
+- [Define your multi-stage continuous deployment (CD) pipeline](../release/define-multistage-release-process.md)
+- [Release pipelines (Classic) overview](../release/index.md)
+- [Configure repositories to support work tracking](../../repos/git/configure-repos-work-tracking.md).  
+- [How to retrieve all work items associated with a release pipeline using Azure DevOps API](https://devblogs.microsoft.com/premier-developer/how-to-retrieve-all-work-items-associated-with-a-release-pipeline-using-azure-devops-api/)
+- [Link and view work items to builds and deployments](../../boards/work-items/work-item-deployments-control.md) 
+- [Associate work items to commits](../../boards/backlogs/connect-work-items-to-git-dev-ops.md) 
+- [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
+- [End-to-end traceability](../../cross-service/end-to-end-traceability.md)
+- [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
+- [Link type reference](../queries/link-type-reference.md)
  

@@ -1,7 +1,7 @@
 ---
 title: Link work items to deployments
 titleSuffix: Azure Boards
-description: Visualize the deployments which include your work items by linking them to releases
+description: Improve traceability, visualize and navigate to deployments which include work items by linking them to releases
 ms.custom: boards-work-items  
 ms.technology: devops-agile
 ms.topic: how-to
@@ -15,43 +15,32 @@ ms.date: 07/14/2021
 
 [!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
-One of the main ways Azure DevOps supports traceability is by linking objects. Work items link to Git branches, commits, pull requests, builds, and more. Work item forms provide two controls to show and quickly navigate to 
-
+One of the main ways Azure DevOps supports traceability is by linking objects. Work items link to Git branches, commits, pull requests, builds, and more. Work item forms provide two controls to show and quickly navigate to development objects. The **Deployment** control is described in this article, and the **Development** control is described in [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 
 With the **Deployment** control, you can determine at a glance whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item it is deployed to different release environments as well as quick navigation to each release stage and run. 
+
+> [!NOTE]
+> The **Deployment** control requires configuration of a Classic release pipeline. It doesn't support linking to release stages defined for a YAML pipeline. 
  
 As shown in the following image, the  **Deployment** control shows release information for two release stages those work items that have been linked to a Git commit or pull request for a release pipeline configured to integrate with Azure Boards.  
 
 :::image type="content" source="media/deployments-control/deployment-control-intro.png " alt-text="Screenshot of Work item form, Deployment control.":::
 
+## Prerequisites
 
-## Supported integration scenarios
-
-To populate the Deployment control, perform the following steps: 
+- To configure the integration options for a Classic release pipeline, you must have permissions to edit the release. 
+- To link work items to commits and pull requests, you must have your **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission set.  
+- To view work items, you must have your **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item.  
+ 
+To populate the **Deployment** control, perform the following steps: 
 
 1. Define a Classic release pipeline and set up the release stages as described in [Define your multi-stage continuous deployment (CD) pipeline](../../pipelines/release/define-multistage-release-process.md).  
-2. Configure the pipeline as described in [Configure pipelines to support work tracking, Report deployment status to Boards](../../pipelines/integrations/configure-pipelines-work-tracking.md#classic-report-boards).  
-  
+2. Configure the pipeline as described in [Configure pipelines to support work tracking, Report deployment status to Boards](../../pipelines/integrations/configure-pipelines-work-tracking.md#classic-report-boards).   
 3. Link work items to a commit or pull request in Azure Repos Git repository. For details, see: 
 	-  [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)  
 	-  [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
 4.  Run the pipeline.
 	<!---  Only manually triggered releases??? --> 
-
-## Work items and linking 
-
-Work items linked to a Git repository Branch, Commit, or Pull Request participate in populating the Deployment control.   
- 
-Each work item linked to a git commit or pull request are candidates for 
-You can view all links through the work item form **Links** tab. 
-
-Which work items are linked to? 
-- Work items associated with commits in the build will show the status of the release  
-- Only work items co-located with the same project where the release pipeline is defined are linked to. 
-  
-:::image type="content" source="../../notifications/media/types-of-work-item-links.png" alt-text="Conceptual image of Git and integrated link types.":::
-
-To learn how to associate work items to commits, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) or [Link to work items from other objects](../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json). To view objects linked to a work item, see [View list of links for a work item](#view-link-list).  
 
 <!--- 
 ### Unsupported scenarios 
@@ -69,20 +58,27 @@ Question - can you link to work items in a different project ???
 
 --> 
 
+## Work items and linking 
+
+Work items linked to a Git repository Branch, Commit, or Pull Request participate in populating the **Deployment** control.   
+ 
+Each work item linked to a Git commit or pull request are candidates for 
+You can view all links through the work item form **Links** tab. 
+
+Which work items are linked to? 
+- Work items associated with commits in the build will show the status of the release  
+- Only work items co-located with the same project where the release pipeline is defined are linked to. 
+  
+:::image type="content" source="../../notifications/media/types-of-work-item-links.png" alt-text="Conceptual image of Git and integrated link types.":::
+
+To learn how to associate work items to commits, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) or [Link to work items from other objects](../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json). To view objects linked to a work item, see [View list of links for a work item](#view-link-list).  
+
+
 ### Deployment control and work item types
 
 By default, the Deployment control appears on the work item forms for User Story (Agile), Product Backlog Item (Scrum), Issue (Basic), Requirement (CMMI), Feature, Epic, Bug, Task, and Test Case work item types. It is automatically enabled for custom work item types you define using the Inherited process. If you don't use the control, you can choose to [Hide from layout](../../organizations/settings/work/customize-process-field.md#hide-a-field-or-custom-control).
 
 If your project is customized using a Hosted XML process or you need to add it to a custom work item type for an On-premises XML process, you'll need to update your work item type definitions to display the control. For details, see [Hosted XML process model, Add release deployment support to a work item type](../../organizations/settings/work/hosted-xml-process-model.md#add-support-wit).
-
-
-## Prerequisites
-
-- To configure **Pipeline settings** for YAML-defined release pipelines, you must have permissions to edit the build. 
-- To configure the integration options for a Classic release pipeline, you must have permissions to edit the release. 
-- To link work items to commits and pull requests, you must have your **Edit work items in this node** permissions set to **Allow** for the Area Path assigned to the work item. By default, the Contributors group has this permission set.  
-- To view work items, you must have your **View work items in this node** permissions set to **Allow** for the Area Path assigned to the work item.  
-
 
 ## Deployment control
 
