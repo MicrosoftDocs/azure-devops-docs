@@ -147,7 +147,7 @@ If you have a GitHub account, follow these steps to sign up for Azure Boards.
 > [!IMPORTANT]
 > If your GitHub email address is associated with an Azure AD-backed organization in Azure DevOps, you can't sign in with your GitHub account, rather you must sign in with your Azure AD account.
 
-1. From the [Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/) sign-up page, choose **Start Boards free with GitHub**. 
+1. From the [Azure Boards](https://azure.microsoft.com/services/devops/boards/) sign-up page, choose **Start Boards free with GitHub**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Sign up for Azure DevOps](media/acquisition/start-free-with-github.png)

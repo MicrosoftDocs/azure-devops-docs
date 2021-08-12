@@ -158,6 +158,9 @@ For more information about the built-in wiki, see [Add & edit wiki pages](../pro
 
 ::: moniker-end
 
+
+[!INCLUDE [temp](../boards/includes/view-linked-objects.md)]
+
 ## Related articles
 
 - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)

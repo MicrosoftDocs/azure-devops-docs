@@ -159,4 +159,4 @@ Our thanks to [GitHub user leftler](https://github.com/Microsoft/azure-pipelines
 
 - [Publish to NuGet feeds (YAML/Classic)](../artifacts/nuget.md)
 - [Publish and consume build artifacts](../artifacts/build-artifacts.md)
-- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/en-us/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)
+- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)
