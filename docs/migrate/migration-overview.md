@@ -14,9 +14,6 @@ ms.date: 04/01/2021
 
 [!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
 
-> Customers looking to upgrade and use the data migration tool for Azure DevOps to migrate to Azure DevOps Server should note that import support for Azure DevOps Server 2020 Update 1 will be delayed. Normally it can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for import support to come online. However, we are still working to fully support Azure DevOps 2020 Update 1 for migration. We are targeting Monday, August 9th to bring 2020.1 migration support online. The standard window for importing from Azure DevOps Server is the latest two versions of the server product. Due to the delay in updating our documentation with the expected removal of importing 2020 collections, we will continue to keep 2020 import support going until Monday September 6th.  
->
-> If you upgrade to Azure DevOps Server 2020 Update 1 before August 9th and want to migrate, you will either need to wait or downgrade to a supported version.
 The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. It's recommended that you download the [migration guide and tool](https://aka.ms/AzureDevOpsImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps Services. 
 
 ## Supported Azure DevOps Server versions for import
@@ -26,6 +23,7 @@ The data migration tool for Azure DevOps provides a high fidelity way to migrate
 
 The data migration tool for Azure DevOps supports the two latest releases of Azure DevOps Server at a given time. Releases include updates and major releases. Currently the following versions of Azure DevOps Server are supported for import:
 
+* Azure DevOps Server 2020.1
 * Azure DevOps Server 2020.0.1
 * Azure DevOps Server 2020 (Support for importing new 2020 collections will be removed on Monday September 6th)
 
