@@ -104,12 +104,6 @@ None
               </p>
        </td>
    </tr>
-   <tr>
-      <td><code>failOnUnstableResult</code><br/>Fail when Jenkins build returns unstable result</td>
-      <td>
-         <p>If set to true, unstable build result will be treated as a failure. Otherwise, unstable result will be treated as a success.</p><br/>Default value: false
-      </td>
-   </tr>
 </table>
 
 ## Team Foundation Server Plug-in
