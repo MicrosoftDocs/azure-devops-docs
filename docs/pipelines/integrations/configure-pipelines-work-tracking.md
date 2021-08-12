@@ -14,9 +14,16 @@ ms.date: 08/02/2021
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
-To support integration and traceability across Azure DevOps services with pipelines, you can configure several options. You can report pipeline status, copy the syntax for status badges, set up automatic linking of work items to builds and releases. Options and configuration steps differ depending on whether you are configuring a YAML or Classic pipeline, and your Azure DevOps version. 
+To support integration and traceability across Azure DevOps services with pipelines, you can configure several options. You can report pipeline status, copy the syntax for status badges, and set up automatic linking of work items to builds and releases. 
+ 
 
-Most options are supported for pipelines run against an Azure Repos Git repository unless otherwise noted. 
+## Supported pipeline and work tracking integration features 
+
+Several features provide support for end-to-end traceability as user stories and features move through the development cycle. As with Azure Repos, you can link work items to pipeline objects with the following link types: *Build, Integrated in build*, and *Integrated in release*.  
+
+:::image type="content" source="media/pipelines-integration/concept-link-types-pipelines.png" alt-text="Conceptual image of link types that link work items to Azure Pipelines objects.":::
+
+The following table summarizes the integration points between Azure Boards and Azure Pipelines. Options and configuration steps differ depending on whether you are configuring a YAML or Classic pipeline, and your Azure DevOps version.  Most options are supported for pipelines run against an Azure Repos Git repository unless otherwise noted. 
  
 :::row:::
    :::column span="2":::
@@ -118,74 +125,99 @@ Most options are supported for pipelines run against an Azure Repos Git reposito
    :::column-end:::
 :::row-end:::
 --- 
+::: moniker-end
 
 
 
+## Open pipeline settings, build options, or integration options 
 
-## Open pipeline build or integration options 
 
-You configure most of these integration options by editing your pipeline options. Prior to choosing your integration options, you should set up the release stages as described in [Release pipelines (Classic) overview](../release/index.md).
 
-<a id="yaml-open-settings" /> 
 
 # [YAML](#tab/yaml)
+<a id="yaml-open-settings" /> 
+**Open Pipeline settings**
 
-For YAML-defined release pipelines, you configure the integration through the **Pipeline settings** dialog. Prior to setting your integration options, you should set up the release stages as described in [Release pipelines (Classic) overview](../release/index.md).
+::: moniker range=">= azure-devops-2020"
+
+For YAML-defined release pipelines, you configure the integration through the **Pipeline settings** dialog.  
 
 1. Open the pipeline, choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and then choose **Settings**.
 
 	:::image type="content" source="media/pipelines-integration/open-pipeline-settings.png " alt-text="Open Pipeline settings.":::
 
-	The Build properties page appears. 
+	The Pipeline Settings dialog appears. 
 
 	:::image type="content" source="media/pipelines-integration/pipeline-settings-enable-link-work-items.png" alt-text="YAML Pipeline settings dialog.":::
 
-
+	For details on automatic linking, see [Automatically link work items](#auto-link-work-items-builds) later in this article.  
+::: moniker-end
+::: moniker range="< azure-devops-2020"
+Pipeline settings i
+::: moniker-end
 
 # [Classic](#tab/classic)
 
 <a id="classic-open-settings" /> 
 
-### Classic build pipelines
- 
+<a id="classic-build-properties" />
+**Build properties**
 
-<a id="build-release-options" /> 
+Open the build pipeline, choose to edit the pipeline, and then choose the **Options** tab. 
 
-Open the pipeline, choose to edit the pipeline, and then choose the **Options** tab. The Build properties page appears. 
+:::image type="content" source="media/pipelines-integration/open-classic-build-properties-options.png" alt-text="Screenshot of Classic Build pipeline, Options tab.":::
 
 ::: moniker range=">= azure-devops-2019"
-
 :::image type="content" source="media/pipelines-integration/classic-build-pipeline-settings.png" alt-text="Build and Release pipeline Build properties dialog.":::
+::: moniker-end 
+::: moniker range="tfs-2018"
+:::image type="content" source="media/pipelines-integration/open-classic-build-properties-options-tfs-2018.png" alt-text="Build and Release pipeline Build properties dialog, TFS-2018.":::
+::: moniker-end 
+
+The Build properties page appears. 
+
+::: moniker range=">= azure-devops-2019"
+:::image type="content" source="media/pipelines-integration/classic-build-options.png" alt-text="Build properties dialog.":::
+
+For details on each setting, use one of the following links: 
+- [Build number format](h../release/index.md#how-do-i-manage-the-names-for-new-releases)
+- [Automatically link work items](#auto-link-work-items-builds)
+- [Create work item on failure](#create-work-item-on-failure)
+- [Status badge](#status-badge)
 
 ::: moniker-end 
 
 ::: moniker range="tfs-2018"
-
-<a id="build-release-options" /> 
-
-Open the pipeline and choose **Options**. The Build properties page appears. 
-
-:::image type="content" source="media/pipelines-integration/tfs-2018-build-release-options-build-properties.png" alt-text="Build and Release pipeline Build properties dialog.":::
-
+:::image type="content" source="media/pipelines-integration/build-properties-tfs-2018.png" alt-text="Build properties dialog, TFS-2018.":::
 ::: moniker-end 
 
+<a id="classic-release-options" /> 
+**Release integration options**
 
-<a id="classic-options-integrations" /> 
+For Classic release pipelines, open **Pipelines>Releases**, choose to edit your pipeline, then choose **Options** and then **Integrations**.
 
-### Classic release pipelines
-
-For Classic release pipelines, open **Options>Integrations** page for the release pipeline. 
-
-1. Open **Pipelines>Releases**, choose to edit your pipeline, then choose **Options** and then **Integrations**.
 
 ::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Integrations options for Classic pipelines](media/pipelines-integration/integration-options-classic.png)
+
+
+For details on each setting, use one of the following links: 
+- [Report deployment status to the repository host](#classic-report-git)
+- [Report deployment status to Work](#auto-link-work-items-builds)
+- [Report deployment status to Boards](#auto-link-work-items-releases)
+- [Report deployment status to Jira](#classic-report-jira)
+- [Enable the deployment status badge](#enable-status-badge)
 ::: moniker-end 
 
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Integrations options for Classic pipelines, Azure DevOps 2019 and earlier versions](../release/media/what-is-release-management/report-options.png)
+
+For details on each setting, use one of the following links: 
+- [Report deployment status to the repository host](#classic-report-git)
+- [Report deployment status to Work](#auto-link-work-items-builds)
+- [Enable the deployment status badge](#status-badge)
 ::: moniker-end 
 
  
@@ -332,8 +364,6 @@ If a build pipeline fails, you can automatically create a work item to track get
 ***
 
 
-<!--- 
-
 <a id="enable-status-badge" /> 
 
 # [YAML](#tab/yaml)
@@ -347,7 +377,7 @@ Choose the branch and scope of interest, and then choose :::image type="icon" so
 	:::image type="content" source="media/pipelines-integration/status-badge-yaml.png" alt-text="Screenshot of YAML pipeline status badge.":::
 
 
-<a id="enable-status-badge" /> 
+<a id="status-badge" /> 
 
 # [Classic](#tab/classic)
 
@@ -366,9 +396,6 @@ Select this option if you want to display the latest outcome of a stage deployme
 
 ***
 
--->
-
-<!--- 
 
 <a id="report-release-status" />
 
@@ -394,11 +421,8 @@ For Classic release pipelines, you configure the integration through the **Optio
 > If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines to automatically publish the deployment status to your repository. However, you can still use the [Enable the Deployment status badge](#enable-status-badge) option described below, to show deployment status within your version control system.
 
 
--->
 
-<!--- 
-
-<a id="class-report-git" />
+<a id="classic-report-git" />
 
 ## Report deployment status to the repository host (Classic)
 
@@ -417,13 +441,9 @@ The deployment status is displayed in the following sections of Azure Repos:
 If a commit gets deployed to multiple release pipelines, with multiple stages, each has an entry in the badge with status that's shown for each stage. By default, when you create a release pipeline, deployment status is posted for all stages. However, you can selectively choose the stages for which deployment status should be displayed in the status badge (for example, show only the production stage). Your team members can select the status badge to view the latest deployment status for each of the selected stages of the release pipelines.
 
 
--->
-
-<!--- 
-
 ::: moniker range=">= azure-devops-2020"
 
-<a id="class-report-jira" />
+<a id="classic-report-jira" />
 
 ## Report deployment status to Jira (Classic)
 
@@ -436,8 +456,6 @@ To support integration with Jira issue tracking, install [Azure Pipelines integr
 
 ::: moniker-end
 
-
--->
  
 
 ## Verify the integration
