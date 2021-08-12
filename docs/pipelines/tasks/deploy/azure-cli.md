@@ -51,12 +51,12 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>scriptType</code><br/>Script Type</td>
-  <td>(Required) Type of script: <b>PowerShell</b>/<b>PowerShell Core</b>*/<b>Bat</b>/<b>Shell</b> script.</br>When running on a <b>Linux agent</b>, select one of the following:</br>
+  <td>(Required) Type of script: </br>If you are using a <b>Linux agent</b>, select one of the following types:</br>
      <ul>
        <li><code>bash</code></li>
        <li><code>pscore</code></li>
     </ul>
-    On a <b>Windows agent</b>, select one of the following:</br>
+    If you are using a <b>Windows agent</b>, select one of the following types:</br>
     <ul>
       <li><code>batch</code></li>
       <li><code>ps</code></li>
@@ -66,16 +66,16 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>scriptLocation</code><br/>Script Location</td>
-    <td>(Required) select `scriptPath` to use a script file or `inlineScript` if you want to paste your script inline <br/>Default value: scriptPath</td>
+    <td>(Required) select <code>scriptPath</code> to use a script file or <code>inlineScript</code> if you want to write your script inline <br/>Default value: scriptPath</td>
 </tr>
 <tr>
     <td><code>scriptPath</code><br/>Script Path</td>
-    <td>Required when `scriptLocation = scriptPath`. Fully qualified path of the script file(.ps1 or .bat or .cmd when using Windows-based agent or .ps1 or .sh when using linux-based agent) or a path relative to the default working directory</td>
+    <td>Required when <code>scriptLocation = scriptPath</code>. Fully qualified path of your script file or a path relative to the default working directory</td>
 </tr>
 <tr>
     <td><code>inlineScript</code><br/>Inline Script</td>
-    <td>Required when `scriptLocation = inlineScript`. Use this option if you want to paste your scripts inline. Use PowerShell, PowerShell Core, or batch scripting for Windows agents and shell scripting when using Linux-based agents. Use the `call` prefix before every Azure command when you are using batch. You can also pass predefined and custom variables to your script using arguments. <br/><b>Examples: 
-<br/>PowerShell/PowerShellCore/shell: az --version az account show <br/>batch:</b> call az --version call az account show</td>
+    <td>Required when <code>scriptLocation = inlineScript</code>. Use this option if you want to paste your scripts inline. Use PowerShell, PowerShell Core, or batch scripting for Windows agents and bash or PowerShell core when using Linux-based agents. Use the <code>call</code> prefix before every Azure command when you are using batch. You can also pass predefined and custom variables to your script using arguments. <br/><b>Examples:</b>
+<br/>PowerShell/PowerShellCore/shell: az --version az account show <br/>batch: call az --version call az account show</td>
 </tr>
 <tr>
     <td><code>arguments</code><br/>Script Arguments</td>
