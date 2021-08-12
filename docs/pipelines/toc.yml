@@ -25,6 +25,8 @@
     #   href: get-started/pipelines-get-started.md
     - name: DevOps Starter
       href: /azure/devops-project/overview
+    - name: Configure pipelines to support work tracking
+      href: integrations/configure-pipelines-work-tracking.md
 - name: Pipeline basics
   items:
     - name: Key concepts
@@ -641,20 +643,20 @@
         - name: Other security considerations
           href: security/misc.md
           displayName: PATH, containers, control tasks, auditing
-    - name: Integrate with 3rd party software
-      items:
-        - name: Microsoft Teams
-          href: integrations/microsoft-teams.md
-          displayName: integrations, teams
-        - name: Slack
-          href: integrations/slack.md
-          displayName: integrations, slack
-        - name: Integrate with ServiceNow
-          href: release/approvals/servicenow.md
-          displayName: integrations, servicenow
-        - name: Integrate with Jenkins (Classic)
-          href: release/integrate-jenkins-pipelines-cicd.md
-          displayName: integrations, jenkins
+- name: Integrate with 3rd party software
+  items:
+  - name: Microsoft Teams
+    href: integrations/microsoft-teams.md
+    displayName: integrations, teams
+  - name: Slack
+    href: integrations/slack.md
+    displayName: integrations, slack
+  - name: Integrate with ServiceNow
+    href: release/approvals/servicenow.md
+    displayName: integrations, servicenow
+  - name: Integrate with Jenkins (Classic)
+    href: release/integrate-jenkins-pipelines-cicd.md
+    displayName: integrations, jenkins
 - name: Migrate
   items:
     - name: Migrate from Classic pipelines
