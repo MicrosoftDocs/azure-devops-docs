@@ -1,6 +1,6 @@
 ---
 title: Publish and consume build artifacts
-description: How to use Artifacts in Azure pipelines
+description: How to use Artifacts in Azure Pipelines
 ms.custom: seodec18
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
@@ -315,4 +315,4 @@ If you're using TFS 2015 RTM, the steps in the preceding examples are not availa
 
 - [Publish and download artifacts in Azure Pipelines](./pipeline-artifacts.md)
 - [Define your multi-stage classic pipeline](../release/define-multistage-release-process.md)
-- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/en-us/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)
+- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)

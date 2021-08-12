@@ -506,6 +506,8 @@ Work items are maintained in a project as long as the project is active.
 Even if you set them to Closed, Done, or Removed, a record is kept in the data store. 
 You can use a record to create queries or reports.  
 
+[!INCLUDE [temp](../../includes/note-closed-items.md)]
+
 If you need to permanently delete work items, see [Remove or delete work items](../../backlogs/remove-delete-work-items.md).
 
 
