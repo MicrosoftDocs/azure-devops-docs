@@ -17,7 +17,7 @@ ms.date: 07/14/2021
 
 One of the main ways Azure DevOps supports traceability is by linking objects. Work items link to Git branches, commits, pull requests, builds, and more. Work item forms provide two controls to show and quickly navigate to development objects. The **Deployment** control is described in this article, and the **Development** control is described in [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 
-With the **Deployment** control, you can determine at a glance whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item it is deployed to different release environments as well as quick navigation to each release stage and run. 
+With the **Deployment** control, you can determine at a glance whether a feature or user story has been deployed and to what stage. You gain visual insight into the status of a work item as it is deployed to different release environments as well as quick navigation to each release stage and run. 
 
 > [!NOTE]
 > The **Deployment** control requires configuration of a Classic release pipeline. It doesn't support linking to release stages defined for a YAML pipeline. 
@@ -25,6 +25,21 @@ With the **Deployment** control, you can determine at a glance whether a feature
 As shown in the following image, the  **Deployment** control shows release information for two release stages those work items that have been linked to a Git commit or pull request for a release pipeline configured to integrate with Azure Boards.  
 
 :::image type="content" source="media/deployments-control/deployment-control-intro.png " alt-text="Screenshot of Work item form, Deployment control.":::
+
+
+## How linking is supported 
+ Work items linked to a Git repository Branch, Commit, or Pull Request participate in populating the **Deployment** control.   
+ 
+Each work item linked to a Git commit or pull request are candidates for 
+You can view all links through the work item form **Links** tab. 
+
+Which work items are linked to? 
+- Work items associated with commits in the build will show the status of the release  
+- Only work items co-located with the same project where the release pipeline is defined are linked to. 
+  
+:::image type="content" source="../../notifications/media/types-of-work-item-links.png" alt-text="Conceptual image of Git and integrated link types.":::
+
+To learn how to associate work items to commits, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) or [Link to work items from other objects](../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json). To view objects linked to a work item, see [View list of links for a work item](#view-link-list).  
 
 ## Prerequisites
 
@@ -58,20 +73,6 @@ Question - can you link to work items in a different project ???
 
 --> 
 
-## Work items and linking 
-
-Work items linked to a Git repository Branch, Commit, or Pull Request participate in populating the **Deployment** control.   
- 
-Each work item linked to a Git commit or pull request are candidates for 
-You can view all links through the work item form **Links** tab. 
-
-Which work items are linked to? 
-- Work items associated with commits in the build will show the status of the release  
-- Only work items co-located with the same project where the release pipeline is defined are linked to. 
-  
-:::image type="content" source="../../notifications/media/types-of-work-item-links.png" alt-text="Conceptual image of Git and integrated link types.":::
-
-To learn how to associate work items to commits, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md) or [Link to work items from other objects](../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json). To view objects linked to a work item, see [View list of links for a work item](#view-link-list).  
 
 
 ### Deployment control and work item types
