@@ -167,7 +167,7 @@ Then, when you create a new release, you can edit the values for these variables
 
 ## How do I integrate and report release status?
 
-With release pipelines integrations, you can report your deployment status to multiple sources such as your repository host, your work items(links or deployments), or to Jira issues.
+With release pipelines integrations, you can report your deployment status to multiple sources such as your repository host, your work items (links or deployments), or to Jira issues.
 
 To configure your release pipeline integrations, select the **Options** tab, and then select **Integrations** from your release pipeline definition.
 
