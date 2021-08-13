@@ -47,6 +47,30 @@ Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension has b
 
 ::: moniker range=">=azure-devops-2019"
 
+## Get started with Azure Artifacts
+
+With Azure Artifacts you can publish, consume, and share different types of packages depending on your team's need.
+
+- [NuGet](./get-started-nuget.md).
+- [Npm](./get-started-npm.md).
+- [Maven](./get-started-maven.md).
+- [Python](./python-packages.md).
+- [Universal Packages](./universal-packages.md).
+
+## Versions and compatibility
+
+Check out the compatibility table to verify if your package type is supported.
+
+| Feature                           | Azure DevOps Services  |          Azure DevOps Server          |                    TFS                       |
+|-----------------------------------|------------------------| --------------------------------------|  --------------------------------------------|
+| **NuGet**                         | Yes                    | Yes                                   | TFS 2017 and newer                           |
+| **npm**                           | Yes                    | Yes                                   | TFS 2017 Update 1 and newer                  |
+| **NuGet.org upstream source**     | Yes                    | Yes                                   | TFS 2018 Update 2 and newer                  |
+| **Maven**                         | Yes                    | Yes                                   | TFS 2018 and newer                           |
+| **Maven Central upstream source** | Yes                    | Azure DevOps Server 2019 Update 1 and newer, Azure DevOps Server 2020| Yes           |
+| **Python**                        | Yes                    | Azure DevOps Server 2019 Update 1 and newer, Azure DevOps Server 2020| Yes           |
+| **Universal Packages**            | Yes                    | No                                    | No                                           |
+
 ## Artifacts free tier and upgrade
 
 Azure Artifacts is free for every organization up to 2 GiB of storage. Once you reach the maximum storage limit, you can no longer upload new artifacts and will need to either delete some of your existing artifacts, or [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) to increase your storage limit. See the [Pricing Calculator](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) to learn more about Azure DevOps billing.
