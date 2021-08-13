@@ -241,8 +241,6 @@ For details on each setting, use one of the following links:
 <a id="auto-link-work-items-builds" />
 
 
-::: moniker-end 
-
 ::: moniker range=">= azure-devops-2020"
 
 ## Automatically link work items to builds or releases 
@@ -256,6 +254,8 @@ By enabling automatic linking, you can track the builds or releases that have in
 ## Automatically link work items to builds
 
 By enabling automatic linking, you can track the builds that have incorporated work without having to manually search through a large set of builds. Each successful build associated with the work item automatically appears in the **Development** control of the work item form.  
+
+::: moniker-end 
 
 <a id="yaml-auto-link" /> 
 
@@ -273,8 +273,6 @@ By enabling automatic linking, you can track the builds that have incorporated w
 	Once enabled, **Integrated in build** links are generated for all work items linked to the selected pull request with each release run. 
 ::: moniker-end
 	
-
-
 ::: moniker range="< azure-devops-2020"
 This feature isn't supported for YAML pipelines in Azure DevOps Server 2019. 
 ::: moniker-end
@@ -292,7 +290,6 @@ This feature isn't supported for YAML pipelines in Azure DevOps Server 2019.
 	To view a list of work items linked to the build, choose the Related link on the Summary page.  
 
 	:::image type="content" source="media/pipelines-integration/build-view-work-items.png" alt-text="Screenshot of link to view work items linked to build.":::
-
 
 # [Classic Release](#tab/classic-release) 
  
@@ -324,7 +321,7 @@ This feature isn't supported for Azure DevOps Server 2019 and earlier versions.
  
 ### What work items are included in automatic linking? 
 
-When developing your software, you can link work items when you create a branch, commit, or pull request. Or, you can initiate a branch, commit, or pull request from a work item, automatically linking these objects as described in [Drive Git development from a work item](../../boads/backlogs/connect-work-items-to-git-dev-ops.md). For example, here we create a new branch from the Cancel order form user story.
+When developing your software, you can link work items when you create a branch, commit, or pull request. Or, you can initiate a branch, commit, or pull request from a work item, automatically linking these objects as described in [Drive Git development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md). For example, here we create a new branch from the Cancel order form user story.
 
 :::image type="content" source="media/pipelines-integration/create-branch-link-work-item.png" alt-text="Create branch dialog from work item form.":::
 
