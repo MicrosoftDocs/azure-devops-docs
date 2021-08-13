@@ -106,7 +106,7 @@ Follow the links provided in the following table to learn more about the Azure s
 :::row:::
    :::column span="1":::
       [Azure Blob Storage](https://azure.microsoft.com/services/storage/blobs/)
-      [Azure Storage](https://azure.microsoft.com/en-us/services/#storage)
+      [Azure Storage](https://azure.microsoft.com/services/#storage)
    :::column-end::: 
    :::column span="3":::
       Store and access unstructured data at scale using Azure Pipelines and Azure Blob Storage. 
@@ -144,7 +144,7 @@ Follow the links provided in the following table to learn more about the Azure s
 :::row:::
    :::column span="1":::
       [Azure Databricks](https://azure.microsoft.com/services/databricks)  
-      [Azure Data Factory](https://azure.microsoft.com/en-us/services/data-factory/)
+      [Azure Data Factory](https://azure.microsoft.com/services/data-factory/)
    :::column-end::: 
    :::column span="3":::
       Configure a pipeline to integrate with a fully managed, serverless data integration service and unlock insights from all your data. To learn more, see the following resources: 
@@ -156,7 +156,7 @@ Follow the links provided in the following table to learn more about the Azure s
 :::row:::
    :::column span="1":::
       [Azure DevTest Labs](https://azure.microsoft.com/services/databricks)  
-      [Azure Data Factory](https://azure.microsoft.com/en-us/services/data-factory/)
+      [Azure Data Factory](https://azure.microsoft.com/services/data-factory/)
    :::column-end::: 
    :::column span="3":::
       Configure a pipeline to integrate with a fully managed, serverless data integration service and unlock insights from all your data. To learn more, see [Build a data pipeline by using Azure Data Factory, DevOps, and machine learning; Configure Azure Databricks and Azure Data Factory](apps/cd/azure/build-data-pipeline.md#configure-azure-databricks-and-azure-data-factory).
@@ -235,7 +235,7 @@ Follow the links provided in the following table to learn more about the Azure s
 --- 
 :::row:::
    :::column span="1":::
-      [Azure Policy](https://azure.microsoft.com/en-us/services/azure-policy/) 
+      [Azure Policy](https://azure.microsoft.com/services/azure-policy/) 
    :::column-end::: 
    :::column span="3":::
         Manage and prevent IT issues by using policy definitions that enforce rules and effects for your resources. To learn how, see [Check policy compliance with gates](policies/azure-policy.md).
