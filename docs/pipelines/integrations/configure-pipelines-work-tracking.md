@@ -19,7 +19,7 @@ To support integration and traceability across Azure DevOps services with pipeli
 
 ## Supported pipeline and work tracking integration features 
 
-Several features provide support for end-to-end traceability as user stories and features move through the development cycle. As with Azure Repos, you can link work items to pipeline objects with the following link types: *Build, Integrated in build*, and *Integrated in release*.  
+Several features provide support for end-to-end traceability as user stories and features move through the development cycle. As with Azure Repos, you can link work items to pipeline objects with the following link types: *Build, Integrated in build*, and *Integrated in release*.  Note, that the *Integrated in release environment* link can only be created by enabling the **Report release status to Boards** option in Classic release pipelines. 
 
 :::image type="content" source="media/pipelines-integration/concept-link-types-pipelines.png" alt-text="Conceptual image of link types that link work items to Azure Pipelines objects.":::
 
@@ -240,8 +240,22 @@ For details on each setting, use one of the following links:
 
 <a id="auto-link-work-items-builds" />
 
-## Automatically link work items to builds 
 
+::: moniker-end 
+
+::: moniker range=">= azure-devops-2020"
+
+## Automatically link work items to builds or releases 
+
+By enabling automatic linking, you can track the builds or releases that have incorporated work without having to manually search through a large set of builds or releases. Each successful build associated with the work item automatically appears in the **Development** control of the work item form. Each release stage associated with the work item automatically appears in the **Deployment** control of the work item form.
+
+::: moniker-end 
+
+::: moniker range="< azure-devops-2020"
+
+## Automatically link work items to builds
+
+By enabling automatic linking, you can track the builds that have incorporated work without having to manually search through a large set of builds. Each successful build associated with the work item automatically appears in the **Development** control of the work item form.  
 
 <a id="yaml-auto-link" /> 
 
@@ -281,72 +295,49 @@ This feature isn't supported for YAML pipelines in Azure DevOps Server 2019.
 
 
 # [Classic Release](#tab/classic-release) 
-
-<a id="class-report-work" />
-
-::: moniker range=">= azure-devops-2019"
-
-Prior to choosing your integration options, you should set up the release stages as described in [Define your multi-stage continuous deployment (CD) pipeline](../../pipelines/release/define-multistage-release-process.md).
-
-1. Open **Options>Integrations** as describe in [Release integration options](#classic-release-options).
  
-1. Check the **Report deployment status to Work** checkbox. Map the **Deployment type** to each stage, or leave **Unmapped**.
-
-	:::image type="content" source="media/pipelines-integration/report-deployment-status-boards-4-environments.png" alt-text="Screenshot of Report deployment status to Boards, Classic, 4 environments.":::
-
-	To view a list of work items linked to the release, choose **Release (old view)** from :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More commands**, and then choose the **Work Items** tab.   
-
-	:::image type="content" source="media/pipelines-integration/release-pipeline-view-work-items.png" alt-text="Screenshot of link to view work items linked to a release.":::
-
-::: moniker-end
-
-::: moniker range="TFS-2018"
-Refer to the **Classic Build** procedures.
-::: moniker-end
-
-
-*** 
- 
-
-When we establish traceability between work items and builds/releases, there are the following two aspects:
-
-- List the work items that were newly built as part of a build. You can find this when you're looking at a build instance.
-- List the builds that this work item was built in. You can find the list in the "Development" section in a work item form.
-The setting to "Automatically link new work in this build" has nothing to do with how we compute the first bulleted item. It only influences how we compute the second bulleted item.
-
-The computation for the first bullet is as follows for a build: 
-Let's say, for example, that you started a new build. Whatever the setting, we compute a list of new commits for the build. We do the following tasks:
-
-- We find the commit c2 that is being built now.
-- We find the commit c1 that was built in the last successful build of the same branch (Build.SourceBranch).
-- We find all the commits between c1 and c2 (in the commit tree).
-
-It could happen that there's no last known successful build on the same branch. For example, when you run a build for the first time on a branch, or when all the previous builds on a branch have been deleted (possibly through retention policies). The list could be long in these cases.
-
-Once we have the list of commits, we enumerate all the work items associated with each of those commits. This is the list that you see in a build.
- 
- 
-
 <a id="classic-report-boards" />
 
 ::: moniker range=">= azure-devops-2020"
- 
-
-## Report deployment status to Boards (Classic)   
- 
 
 Prior to choosing your integration options, you should set up the release stages as described in [Define your multi-stage continuous deployment (CD) pipeline](../../pipelines/release/define-multistage-release-process.md).
 
 1. Open **Options>Integrations** for the release pipeline as describe in [Release integration options](#classic-release-options).
 
-1. Check the **Report deployment status to Boards** checkboxc. Map the **Deployment type** to each stage, or leave **Unmapped**. Select this option if you want to create links to all work items that represent associated changes to the source, when a release is complete. 
+1. Check the **Report deployment status to Boards** checkbox. Map the **Deployment type** to each stage, or leave **Unmapped**. Select this option if you want to create links to all work items that represent associated changes to the source, when a release is complete. 
 
 	:::image type="content" source="media/pipelines-integration/release-settings-stages-1.png" alt-text="Screenshot of Report deployment status to Boards, Classic release, 5 stages.":::
  
+	To view a list of work items linked to the release, choose **Release (old view)** from :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More commands**, and then choose the **Work Items** tab.   
+
+	:::image type="content" source="media/pipelines-integration/release-pipeline-view-work-items.png" alt-text="Screenshot of link to view work items linked to a release.":::
 
 ::: moniker-end
+ 
 
+::: moniker range="< azure-devops-2019"
 
+This feature isn't supported for Azure DevOps Server 2019 and earlier versions.
+::: moniker-end
+
+*** 
+ 
+### What work items are included in automatic linking? 
+
+When developing your software, you can link work items when you create a branch, commit, or pull request. Or, you can initiate a branch, commit, or pull request from a work item, automatically linking these objects as described in [Drive Git development from a work item](../../boads/backlogs/connect-work-items-to-git-dev-ops.md). For example, here we create a new branch from the Cancel order form user story.
+
+:::image type="content" source="media/pipelines-integration/create-branch-link-work-item.png" alt-text="Create branch dialog from work item form.":::
+
+When automatically linking work items to builds, the following computations are made: 
+
+- For a first-time build: 
+	- Identify all work items linked to the branch, commits, and pull requests associated with the build.  
+
+- For subsequent builds: 
+	- Identify all work items associated with the current commit (C1) being built. 
+	- Identify all work items associated with the commit (C2) of the last successful build of the same source branch. 
+	- Identify all work items associated with the commits between C1 and C2 in the commit tree. 
+ 
 
 <a id="create-work-item-on-failure" /> 
 
