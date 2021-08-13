@@ -221,10 +221,10 @@ For Classic release pipelines, open **Pipelines>Releases**, choose to edit your 
 
 
 For details on each setting, use one of the following links: 
-- [Report deployment status to the repository host](#classic-report-git)
+- [Report deployment status to the repository host](../release/index.md#reportstatus)
 - [Report deployment status to Work](#auto-link-work-items-builds)
 - [Report deployment status to Boards](#classic-report-boards)
-- [Report deployment status to Jira](#classic-report-jira)
+- [Report deployment status to Jira](../release/index.md#reportstatus)
 - [Enable the deployment status badge](#enable-status-badge)
 ::: moniker-end 
 
@@ -233,7 +233,7 @@ For details on each setting, use one of the following links:
 > ![Screenshot of Integrations options for Classic pipelines, Azure DevOps 2019 and earlier versions](../release/media/what-is-release-management/report-options.png)
 
 For details on each setting, use one of the following links: 
-- [Report deployment status to the repository host](#classic-report-git)
+- [Report deployment status to the repository host](../release/index.md#reportstatus)
 - [Report deployment status to Work](#auto-link-work-items-builds)
 - [Enable the deployment status badge](#status-badge)
 ::: moniker-end 
@@ -328,7 +328,7 @@ To verify the integration is working, perform the following steps:
 
 1. Open one of the linked work items and view the [**Deployment**](../../boards/work-items/work-item-deployments-control.md) control control. As shown in the following image, the  **Deployment** control shows release information for two release stages those work items that have been linked to a Git commit or pull request for a release pipeline configured to integrate with Azure Boards.  
 
-:::image type="content" source="../../boards/backlogs/media/deployments-control/deployment-control-intro.png " alt-text="Screenshot of Work item form, Deployment control.":::
+:::image type="content" source="../../boards/work-items/media/deployments-control/deployment-control-intro.png " alt-text="Screenshot of Work item form, Deployment control.":::
  
 ::: moniker-end
  
@@ -426,12 +426,13 @@ Select this option if you want to display the latest outcome of a stage deployme
 ***
 
 
+<!---
+
 <a id="report-release-status" />
 <a id="classic-report-git" />
 
 ::: moniker range=">= azure-devops-2019"
-
-
+ 
 ## Report deployment status to the repository host (Classic)
 
 When you code is stored in an Azure Repos Git repository, you can configure your release pipeline to display a badge on the Azure Repos pages. The badge indicates where the specific commit got deployed and whether the deployment is passing or failing. This option improves the traceability from code commit to deployment. 
@@ -466,23 +467,10 @@ To support integration with Jira issue tracking, install [Azure Pipelines integr
 ::: moniker-end
 
 
-
+-->
 
 <!--- 
-
-## Verify the integration
-
-To verify the configuration is correct perform the next set of steps: 
-1. Create a branch  
-1. Make changes to a file and commit those changes
-1. Create a pull request and merge it
-1. Build and then deploy it using your release pipeline.
-
-*If the associations are being created and the work items are being linked properly, you'll see the links added under the Development section, as shown in the image below:*
  
-
-
-
 ## Configure GitHub comment triggers 
 
  Usually for security, teams may not want to automatically build pull requests. Instead, they want a team member to review the pull request and once it's deemed safe, trigger the build with a [pull request comment](../pipelines/repos/github.md?view=azure-devops&preserve-view=true#comment-triggers). The following setting provides flexibility, keeps this option while still allowing automatic pull request builds _only_ for team members.
