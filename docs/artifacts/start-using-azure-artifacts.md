@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
 author: chcomley
-ms.date: 07/02/2021
+ms.date: 08/13/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -49,17 +49,17 @@ Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension has b
 
 ## Get started with Azure Artifacts
 
-With Azure Artifacts you can publish, consume, and share different types of packages depending on your team's need.
+With Azure Artifacts you can publish, consume, and share different types of packages depending on your team's need. Select your package type to lean more: 
 
-- [NuGet](./get-started-nuget.md).
-- [Npm](./get-started-npm.md).
-- [Maven](./get-started-maven.md).
-- [Python](./python-packages.md).
-- [Universal Packages](./universal-packages.md).
+- [NuGet](./get-started-nuget.md)
+- [Npm](./get-started-npm.md)
+- [Maven](./get-started-maven.md)
+- [Python](./quickstarts/python-packages.md)
+- [Universal Packages](./quickstarts/universal-packages.md)
 
-## Versions and compatibility
+## Feature availability
 
-Check out the compatibility table to verify if your package type is supported.
+Check out the compatibility table to see if your package type is supported.
 
 | Feature                           | Azure DevOps Services  |          Azure DevOps Server          |                    TFS                       |
 |-----------------------------------|------------------------| --------------------------------------|  --------------------------------------------|
