@@ -112,7 +112,7 @@ steps:
 - **current**: download artifacts produced by the current pipeline run. Options: current, specific.
 
 > [!TIP]
-> You can use [Pipeline resources](../process/resources.md#resources-pipelines) to define your source in one place and use it anywhere in your pipeline.
+> You can use [Pipeline resources](../process/resources.md#define-a-pipelines-resource) to define your source in one place and use it anywhere in your pipeline.
 
 > [!NOTE]
 > The `download` keyword is a shortcut to the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
