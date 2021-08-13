@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 07/14/2021
+ms.date: 08/13/2021
 --- 
 
 # Link and view work items to builds and deployments

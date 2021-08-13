@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2018'
-ms.date: 08/02/2021
+ms.date: 08/13/2021
 ---
 
 # Configure pipelines to support work tracking
