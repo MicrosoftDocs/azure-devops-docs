@@ -16,7 +16,7 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
-If users no longer require access to a team, project, or your organization, you can remove their access.
+If users no longer require access to a team, project, or your organization, you can remove their access.The workitems which were assigned to them will not be affected.
 
 ## Prerequisites  
 
