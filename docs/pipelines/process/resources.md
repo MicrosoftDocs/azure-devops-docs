@@ -10,7 +10,7 @@ monikerRange: azure-devops
 
 # Define resources in YAML
 
-[!INCLUDE [version-team-services](../includes/version-team-services.md)
+**Azure Pipelines**
 
 Resources in YAML represent sources of pipelines, builds, repositories, containers, packages, and webhooks.
 Resources also provide you the full traceability of the services used in your pipeline including the version, artifacts, associated commits, and work items. When you define a resource, it can be consumed anywhere in your pipeline. And, you can fully automate your DevOps workflow by subscribing to trigger events on your resources.
@@ -412,8 +412,7 @@ The `git` type refers to Azure Repos Git repos.
 
 |Type specified |Outcome  |Example  |
 |---------|---------|---------|
-|`type: git`   | The `name` value refers to another repository in the same project.        | `name: otherRepo` To refer to a repository in another project within the same organization, prefix the name with that project's name.
-  An example is `name: OtherProject/otherRepo`.        |
+|`type: git`   | The `name` value refers to another repository in the same project.        | `name: otherRepo` To refer to a repository in another project within the same organization, prefix the name with that project's name. An example is `name: OtherProject/otherRepo`.  |
 |`type: github`     | The `name` value is the full name of the GitHub repository and includes the user or organization.  | `name: Microsoft/vscode`  |
 |`type: githubenterprise`    | the `name` value is the full name of the GitHub Enterprise repository and includes the user or organization. | `name: Microsoft/vscode`        |
 |`type: bitbucket`   | The `name` value is the full name of the Bitbucket Cloud repository and includes the user or organization.        | `name: MyBitbucket/vscode`        |
