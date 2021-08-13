@@ -28,12 +28,10 @@ As shown in the following image, the  **Deployment** control shows release infor
 
 
 ## How linking is supported 
- Work items linked to a Git repository Branch, Commit, or Pull Request participate in populating the **Deployment** control.   
- 
-Each work item linked to a Git commit or pull request are candidates for 
-You can view all links through the work item form **Links** tab. 
 
-Which work items are linked to? 
+ Work items linked to a Git repository branch, commit, or pull request participate in populating the **Deployment** control.   
+You can view all links through the work item form **Links** tab. 
+ 
 - Work items associated with commits in the build will show the status of the release  
 - Only work items co-located with the same project where the release pipeline is defined are linked to. 
   
@@ -101,11 +99,11 @@ When you open the work item, you can see the stages the release is being deploye
 
 ## View list of links for a work item
 
-To view and navigate to the builds and releases linked to a work item, choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Links** tab. Links are grouped under their link type and listed in the order they were created. Choose the **State** or **Latest Update** column headings to sort by the column.
+To view and navigate to the builds and releases linked to a work item, choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: **Links** tab. Links are grouped under their link type and listed in the order they were created. Choose the **State** or **Latest Update** column headings to sort by the column. Links prefaced with the :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: red exclamation mark indicate that the build, release, or other object has been deleted. This is usually due to retention policies which automatically delete these objects after a certain time period has passed. 
 
 :::image type="content" source="media/deployments-control/links-list.png" alt-text="Screenshot of Links tab, Integrated in build and Integrated in release stage.":::
 
-Links prefaced with the :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: red exclamation mark indicate that the build, release, or other object has been deleted. This is usually due to retention policies which automatically delete these objects after a certain time period has passed. 
+
 
 ## Unlink work items  
 
@@ -120,6 +118,13 @@ You can't query for work items that are included in releases. However, you can c
 
 ## Related articles  
 
+
+**Azure Repos, Git**
+
+- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md)
+- [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
+
+
 **Azure Pipelines**
 
 - [Define your multi-stage continuous deployment (CD) pipeline](../../pipelines/release/define-multistage-release-process.md)
@@ -128,7 +133,7 @@ You can't query for work items that are included in releases. However, you can c
 - [How to retrieve all work items associated with a release pipeline using Azure DevOps API](https://devblogs.microsoft.com/premier-developer/how-to-retrieve-all-work-items-associated-with-a-release-pipeline-using-azure-devops-api/)
  
 **Link work items**
-- [Associate work items to commits](../backlogs/connect-work-items-to-git-dev-ops.md)
+
 - [Link to work items from other objects](../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
 - [End-to-end traceability](../../cross-service/end-to-end-traceability.md)
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
