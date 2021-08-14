@@ -1940,11 +1940,11 @@ steps:
 - pwsh: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
-  errorActionPreference: enum  # see the following "Error action preference" topic
-  warningPreference: enum  # see the following "Warning preference" topic
-  informationPreference: enum  # see the following "Information preference" topic
-  verbosePreference: enum  # see the following "Verbose preference" topic
-  debugPreference: enum  # see the following "Debug preference" topic
+  errorActionPreference: enum  # see the following "Output stream action preferences" topic
+  warningPreference: enum  # see the following "Output stream action preferences" topic
+  informationPreference: enum  # see the following "Output stream action preferences" topic
+  verbosePreference: enum  # see the following "Output stream action preferences" topic
+  debugPreference: enum  # see the following "Output stream action preferences" topic
   ignoreLASTEXITCODE: boolean  # see the following "Ignore last exit code" topic
   failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
   workingDirectory: string  # initial working directory for the step
@@ -1987,11 +1987,11 @@ steps:
 - powershell: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
-  errorActionPreference: enum  # see the following "Error action preference" topic
-  warningPreference: enum  # see the following "Warning preference" topic
-  informationPreference: enum  # see the following "Information preference" topic
-  verbosePreference: enum  # see the following "Verbose preference" topic
-  debugPreference: enum  # see the following "Debug preference" topic
+  errorActionPreference: enum  # see the following "Output stream action preferences" topic
+  warningPreference: enum  # see the following "Output stream action preferences" topic
+  informationPreference: enum  # see the following "Output stream action preferences" topic
+  verbosePreference: enum  # see the following "Output stream action preferences" topic
+  debugPreference: enum  # see the following "Output stream action preferences" topic
   ignoreLASTEXITCODE: boolean  # see the following "Ignore last exit code" topic
   failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
   workingDirectory: string  # initial working directory for the step
@@ -2040,11 +2040,11 @@ The following table lists the output streams supported by the PowerShell task an
 | ------ | -------------- |
 | [Error](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#error-stream) | `Stop` |
 | [Warning](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#warning-stream) | `Continue` |
-| [Information](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#information-stream) | `Continue` |
+| [Information](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#information-stream)* | `Continue` |
 | [Verbose](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#verbose-stream) | `SilentlyContinue` |
 | [Debug](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#debug-stream) | `SilentlyContinue` |
 
-\* Note that the Information stream is not supported in PowerShell 3.0.
+\* Not supported in PowerShell 3.0.
 
 # [Schema](#tab/schema)
 
@@ -2065,7 +2065,7 @@ steps:
     Write-Warning 'This warning will be ignored'
     Write-Information 'This information message will print to the task logs'
     Write-Verbose 'This verbose message will print to the task logs'
-    Write-Debug 'This debug message will failed the task'
+    Write-Debug 'This debug message will fail the task'
   displayName: Output stream action preferences
   errorActionPreference: silentlyContinue
   warningPreference: silentlyContinue
