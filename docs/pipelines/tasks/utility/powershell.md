@@ -38,6 +38,10 @@ The PowerShell task also has two shortcuts in YAML:
   displayName:  #
   failOnStderr:  #
   errorActionPreference:  #
+  warningPreference:  #
+  informationPreference:  #
+  verbosePreference:  #
+  debugPreference:  #
   ignoreLASTEXITCODE:  #
   env:  # mapping of environment variables to add
 ```
@@ -48,6 +52,10 @@ The PowerShell task also has two shortcuts in YAML:
   displayName:  #
   failOnStderr:  #
   errorActionPreference:  #
+  warningPreference:  #
+  informationPreference:  #
+  verbosePreference:  #
+  debugPreference:  #
   ignoreLASTEXITCODE:  #
   env:  # mapping of environment variables to add
 ```
@@ -71,6 +79,10 @@ Both of these resolve to the `PowerShell@2` task.
   Note: unused when Type is <code>inline</code>.</td></tr>
 <tr><td><code>script</code><br/>Script</td><td>(Required) Contents of the script. Required if targetType is <code>inline</code>. <br/>The maximum supported inline script length is 32766 characters. If you need more than that, use the script from file. <br/>Default value: # Write your PowerShell commands here.<br/> Write-Host "Hello World"</td></tr>
 <tr><td><code>errorActionPreference</code><br/>ErrorActionPreference</td><td>(Optional) Prepends the line <code>$ErrorActionPreference = 'VALUE'</code> at the top of your script<br/>Default value: stop</td></tr>
+<tr><td><code>warningPreference</code><br/>WarningPreference</td><td>(Optional) Prepends the line <code>$WarningPreference = 'VALUE'</code> at the top of your script<br/>Default value: continue</td></tr>
+<tr><td><code>informationPreference</code><br/>InformationPreference</td><td>(Optional) Prepends the line <code>$InformationPreference = 'VALUE'</code> at the top of your script<br/>Default value: continue</td></tr>
+<tr><td><code>verbosePreference</code><br/>VerbosePreference</td><td>(Optional) Prepends the line <code>$VerbosePreference = 'VALUE'</code> at the top of your script<br/>Default value: silentlyContinue</td></tr>
+<tr><td><code>debugPreference</code><br/>DebugPreference</td><td>(Optional) Prepends the line <code>$DebugPreference = 'VALUE'</code> at the top of your script<br/>Default value: silentlyContinue</td></tr>
 <tr><td><code>failOnStderr</code><br/>Fail on Standard Error</td><td>(Optional) If this is true, this task will fail if any errors are written to the error pipeline, or if any data is written to the Standard Error stream. Otherwise the task will rely on the exit code to determine failure<br/>Default value: false</td></tr>
 <tr><td><code>ignoreLASTEXITCODE</code><br/>Ignore $LASTEXITCODE</td><td>(Optional) If this is false, the line <code>if ((Test-Path -LiteralPath variable:\\LASTEXITCODE)) { exit $LASTEXITCODE }</code> is appended to the end of your script. This will cause the last exit code from an external command to be propagated as the exit code of powershell. Otherwise the line is not appended to the end of your script<br/>Default value: false</td></tr>
 <tr><td><code>pwsh</code><br/>Use PowerShell Core</td><td>(Optional) If this is true, then on Windows the task will use pwsh.exe from your PATH instead of powershell.exe<br/>Default value: false</td></tr>

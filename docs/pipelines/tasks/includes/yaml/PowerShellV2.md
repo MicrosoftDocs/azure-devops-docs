@@ -15,6 +15,10 @@ ms.technology: devops-cicd-tasks
     #arguments: # Optional
     #script: '# Write your PowerShell commands here.Write-Host Hello World' # Required when targetType == Inline
     #errorActionPreference: 'stop' # Optional. Options: stop, continue, silentlyContinue
+    #warningPreference: 'continue' # Optional. Options: stop, continue, silentlyContinue
+    #informationPreference: 'continue' # Optional. Options: stop, continue, silentlyContinue
+    #verbosePreference: 'silentlyContinue' # Optional. Options: stop, continue, silentlyContinue
+    #debugPreference: 'silentlyContinue' # Optional. Options: stop, continue, silentlyContinue
     #failOnStderr: false # Optional
     #ignoreLASTEXITCODE: false # Optional
     #pwsh: false # Optional
