@@ -117,7 +117,7 @@ Using the administration console, you can delete a project from a project collec
 
 3. Choose whether to delete external data associated with the project and then start the delete action.
 
-    :::image type="content" source="media/delete-project/confirm-deletion.png)" alt-text="Delete team projects dialog."::: 
+    :::image type="content" source="media/delete-project/confirm-deletion.png" alt-text="Delete team projects dialog."::: 
 
 4. (Optional) To review the status of the delete action, open the **Status** tab.
 
