@@ -24,7 +24,7 @@ Use a pipeline to automatically build and test your Java projects. Learn how to:
 * Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
 * Build and test your code with Maven, Gradle, or Ant.
 
-Once you build and test your app, you can deploy to [Azure App Service](java-webapp.md), (Azure Functions)[(java-function.md)], or [Azure Kubernetes Service](kubernetes/aks-template.md).If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).
+Once you build and test your app, you can deploy to [Azure App Service](java-webapp.md), [Azure Functions](java-function.md), or [Azure Kubernetes Service](kubernetes/aks-template.md).If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).
 
 ## Create your first pipeline
 
