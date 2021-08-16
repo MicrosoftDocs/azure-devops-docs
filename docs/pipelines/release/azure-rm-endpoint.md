@@ -45,29 +45,27 @@ When you save your new ARM service connection, Azure DevOps then:
 
 <a name="troubleshoot"></a>
 
-## How do I troubleshoot errors that may occur while creating a connection?
+## Troubleshooting scenarios
 
-Errors that may occur when the system attempts to create the service connection include:
+Below are some of the issues that may occur when creating service connections:
 
-* [Insufficient privileges to complete the operation](#privileges)
-* [Failed to obtain an access token](#sessionexpired)
-* [A valid refresh token was not found](#sessionexpired)
-* [Failed to assign contributor role](#contributorrole)
-* [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
-* [Subscription isn't listed when creating a service connection](#subscription-isnt-listed-service-connection)
-* [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
-* [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
-* [Creating a service connection with Artifactory instance fails despite allowlisted IPs](#service-connection-artifactory)
-* [Can't create a service connection manually by using PowerShell scripts and Azure Cloud Shell](#cant-create-service-connection-manually)
-* [Azure subscription not taken directly from previous task output](#azure-subscription-not-taken-directly-from-previous-task-output)
-* [What authentication mechanisms are supported? How do managed identities work?](#authentication-mechanisms)
+- [Insufficient privileges to complete the operation](#privileges)
+- [Failed to obtain an access token](#sessionexpired)
+- [A valid refresh token was not found](#sessionexpired)
+- [Failed to assign contributor role](#contributorrole)
+- [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
+- [Subscription isn't listed when creating a service connection](#subscription-isnt-listed-service-connection)
+- [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
+- [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
+- [Creating a service connection with Artifactory instance fails despite allowlisted IPs](#service-connection-artifactory)
+- [Can't create a service connection manually by using PowerShell scripts and Azure Cloud Shell](#cant-create-service-connection-manually)
+- [Azure subscription not taken directly from previous task output](#azure-subscription-not-taken-directly-from-previous-task-output)
 
 <a name="privileges"></a>
 
 ### Insufficient privileges to complete the operation
 
-This typically occurs when the system attempts to create an
-application in Azure AD on your behalf.
+This typically occurs when the system attempts to create an application in Azure AD on your behalf.
 
 This is a permission issue that may be due to the following causes:
 
@@ -86,15 +84,13 @@ The best approach to resolve this issue, while granting only the minimum additio
 
 1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
 
-1. In the **MANAGE** section select **Users**.
+1. Select **Users** from the **Manage** section.
 
 1. Select **User settings**.
 
-1. In the **External users** section, select **Manage external collaboration settings**.
+1. Select **Manage external collaboration settings** from the **External users** section.
 
-1. The **External collaboration settings** blade opens.
-
-1. Change **Guest user permissions are limited** to **No**.
+1. Change the **Guest user permissions are limited** option  to **No**.
 
 Alternatively, if you are prepared to give the user additional permissions (administrator-level), you can make the user a member of the **Global administrator** role. To do so follow the steps below:
 
@@ -103,19 +99,17 @@ Alternatively, if you are prepared to give the user additional permissions (admi
 
 1. Sign in to the Azure portal using an administrator account. The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner), [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator--company-administrator), or [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
 
-1. Select **Azure Active Directory** in the left navigation bar.
+1. Select **Azure Active Directory** from the left navigation pane.
 
 1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
 
-1. In the **MANAGE** section select **Users**.
+1. Select **Users** from the **Manage** section.
    
-1. Use the search box to filter the list and then select the user you want to manage.
+1. Use the search box to search for the user you want to manage.
 
-1. In the **MANAGE** section select **Directory role** and change the role to **Global administrator**.
+1. Select **Directory role** from the **Manage** section, and then change the role to **Global administrator**. Select **Save** when you are done.
 
-1. Save the change.
-
-It typically takes 15 to 20 minutes to apply the changes globally. After this period has elapsed, the user can retry creating the service connection.
+It typically takes 15 to 20 minutes to apply the changes globally. The user then can try recreating the service connection.
 
 <a name="notauthtoadd"></a>
 
@@ -123,15 +117,15 @@ It typically takes 15 to 20 minutes to apply the changes globally. After this pe
 
 You must have permissions to add integrated applications in the directory. The directory administrator has permissions to change this setting.
 
-1. Select **Azure Active Directory** in the left navigation bar.
+1. Select **Azure Active Directory** in the left navigation pane.
 
 1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
 
-1. In the **MANAGE** section select **Users**.
+1. select **Users** from the **Manage** section.
 
 1. Select **User settings**.
 
-1. In the **App registrations** section, change **Users can register applications** to **Yes**.
+1. Under **App registrations**, change the **Users can register applications** option to **Yes**.
 
 #### Create the service principal manually with the user already having required permissions in Azure Active Directory
 
