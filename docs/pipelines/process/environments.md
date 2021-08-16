@@ -1,7 +1,7 @@
 ---
-title: Environment
-description: Collection of deployment targets useful for traceability and recording deployment history
-ms.topic: conceptual
+title: Create target environment
+description: Collection of deployment targets useful for traceability and recording deployment history.
+ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
 ms.date: 08/16/2021
 monikerRange: '>= azure-devops-2020'
