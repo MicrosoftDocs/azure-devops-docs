@@ -1,10 +1,10 @@
 ---
 title: Build Java apps
-description: Automatically building Java apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
+description: Automatically building Java apps with Azure Pipelines, and Azure DevOps
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
 ms.reviewer: dastahel
 ms.topic: quickstart
-ms.date: 08/30/2019
+ms.date: 08/16/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -107,7 +107,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 ::: moniker range=">=azure-devops-2020"
 
-You can use Azure Pipelines to build Java apps without needing to set up any infrastructure of your own. You can build on Windows, Linux, or MacOS images. The Microsoft-hosted agents in Azure Pipelines have modern JDKs and other tools for Java pre-installed. To know which versions of Java are installed, see [Microsoft-hosted agents](../agents/hosted.md).
+You can use Azure Pipelines to build Java apps without needing to set up any infrastructure of your own. You can build on Windows, Linux, or macOS images. The Microsoft-hosted agents in Azure Pipelines have modern JDKs and other tools for Java pre-installed. To know which versions of Java are installed, see [Microsoft-hosted agents](../agents/hosted.md).
 
 Update the following snippet in your `azure-pipelines.yml` file to select the appropriate image.
 
@@ -118,7 +118,7 @@ pool:
 
 See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.
 
-As an alternative to using Microsoft-hosted agents, you can set up [self-hosted agents](../agents/agents.md#install) with Java installed. You can also use self-hosted agents to save additional time if you have a large repository or you run incremental builds.
+As an alternative to using Microsoft-hosted agents, you can set up [self-hosted agents](../agents/agents.md#install) with Java installed. You can also use self-hosted agents to save more time if you have a large repository or you run incremental builds.
 
 ::: moniker-end
 
