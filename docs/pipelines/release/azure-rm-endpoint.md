@@ -134,7 +134,7 @@ You can also create the service principal with an existing user who already has 
 These errors typically occur when your session has expired. To resolve these issues:
 
 1. Sign out of Azure DevOps.
-1. Open an InPrivate or incognito browser window and navigate to [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
+1. Open an InPrivate or incognito browser window and navigate to [Azure DevOps](https://azure.microsoft.com/services/devops/).
 1. Sign in using the appropriate credentials.
 1. Select your organization and your project.
 1. [Create your service connection](../library/service-endpoints.md).
@@ -177,31 +177,31 @@ To fix this issue you will need to modify the supported account types, and who c
 
 ### Subscription isn't listed when creating a service connection
 
-A maximum of 50 Azure subscriptions are listed in the various Azure subscription drop-down menus (billing, service connection, etc.). If you're setting up a service connection and you have more than 50 Azure subscriptions, some of your subscriptions won't be listed. In this scenario, complete these steps:
+A maximum of 50 Azure subscriptions are listed in the various Azure subscription drop-down menus (billing, service connection, etc.). If you're setting up a service connection and you have more than 50 Azure subscriptions, some of your subscriptions won't be listed. In this scenario, complete the following steps:
 
-1. Create a new, native Azure AD user in the Azure AD instance for the Azure subscription. 
+1. Create a new, native Azure AD user in the Azure AD instance of your Azure subscription. 
 
-1. Set up the Azure AD user so that it has the proper permissions in the Azure subscription to set up Azure DevOps billing or a service connection. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/add-backup-billing-managers.md).
+1. Set up the Azure AD user so that it has the proper permissions to set up billing or create service connections. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/add-backup-billing-managers.md).
  
-1. Add the Azure AD user to the Azure DevOps org with the access level of **Stakeholder** and add them to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
+1. Add the Azure AD user to the Azure DevOps org with a **Stakeholder** access level, and then add it to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
 
-1. Log in to Azure DevOps as this user and set up a billing service connection. You'll only see one Azure subscription in the list.
+1. Log in to Azure DevOps with the new user credentials, and set up a billing. You'll only see one Azure subscription in the list.
 
 <a name="autoCreatedSecretExpiration"></a>
 
-### Automatically created service principal client secret has expired
+### Service principal's token expired
 
-An issue that often arises with service principals that are automatically created is that the service principal's token expires and needs to be renewed. If you run into issues with refreshing the token, check out [our other troubleshooting resolutions](#troubleshoot). 
+An issue that often arises with service principals that are automatically created is that the service principal's token expires and needs to be renewed. However, if you have an issue with refreshing the token, see [valid refresh token was not found](#troubleshoot).
 
-To renew the token for an automatically created service principal:
+To renew the access token for an automatically created service principal:
 
-1. Go to the Azure Resource Manager service connection that was created by using the Automatic method.
+1. Go to **Project settings** > **Service connections**, and then select the service connection you want to modify.
 
-1. In the upper-right corner, click **Edit**.
+1. Select **Edit** in the upper-right corner, and the select **Verify**. 
 
-1. Click **Verify** on the service connection page. 
+1. Select **Save**.
 
-1. Click **Save**. The client secret for that service principal has now been renewed for two years.
+Your service principal's token has now been renewed for two more years.
 
 <a name="failedToObtainJWT"></a>
 
@@ -211,22 +211,20 @@ This issue occurs when you try to verify a service connection that has an expire
 
 To resolve this issue:
 
-1. Go to the Azure Resource Manager service connection you want to update.
+1. Go to **Project settings** > **Service connections**, and then select the service connection you want to modify.
 
-1. Make a change to the service connection. The easiest and recommended change is to add a description.
+1. Select **Edit** in the upper-right corner, and then make any change to your service connection. The easiest and recommended change is to add a description.
 
-1. Save the service connection.
+1. Select **Save** to save the service connection.
 
    > [!NOTE]
-   > Select **Save**. Don't try to verify at this step.
+   > Select **Save**. Don't try to verify the service connection at this step.
 
-1. Exit the service connection, and then refresh the service connections page.
+1. Exit the service connection edit window, and then refresh the service connections page.
 
-1. Edit the service connection again.
+1. Select **Edit** in the upper-right corner, and now select **Verify**.
 
-1. Click **Verify**.
-
-1. Save the service connection.
+1. Select **Save** to save your service connection.
 
 <a name="service-connection-artifactory"></a>
 
