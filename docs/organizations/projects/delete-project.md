@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/11/2021
+ms.date: 08/16/2021
 ---
 
 # Delete a project
 
 [!INCLUDE [version-all](../../includes/version-all.md)]  
 
-If you have a project that's no longer valid, you can delete it from your organization in Azure DevOps. This action also helps to simplify navigating to only those projects that are in use. 
+If you have a project that's no longer valid, you can delete it from your organization or collection in Azure DevOps. Or, if you are migrating from an on-premises Azure DevOps server to Azure DevOps Services, you'll need to delete project(s). Deleting projects also helps to simplify navigating to only those projects that are in use. 
 
 > [!Caution]
-> Projects get permanently deleted if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
+> Deleting projects from the web portal generate a soft-delete where projects get permanently deleted if not restored within 28 days. Projects deleted from the on-premises Azure DevOps Administration Console undergo a hard delete and cannot be restored. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
 
 ## Prerequisites
 
@@ -49,6 +49,8 @@ If you have a project that's no longer valid, you can delete it from your organi
 
 #### [Browser](#tab/browser) 
 
+Use your web browser to perform a soft-delete. After 28 days, projects will be  permanently deleted if not restored within that time.
+
 ::: moniker range=">= azure-devops-2019"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
@@ -67,7 +69,62 @@ If you have a project that's no longer valid, you can delete it from your organi
 
 ::: moniker-end
 
+
+::: moniker range="<= tfs-2018"
+
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/gear-icon.png" border="false"::: gear icon to open **Collection Settings**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Organization settings, Policy page, Security policies](/azure/devops/media/settings/open-organization-settings.png)
+
+2. From there, you can choose a page. Settings are organized based on the service they support.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Organization settings, Projects](/azure/devops/media/settings/open-admin-settings-horizontal.png)
+
+::: moniker-end
+
 Your project is deleted and can be restored up to 28 days afterward. Your deleted project is removed from your projects list.
+
+
+#### [Administration Console](#tab/admin-console) 
+
+
+Use the Azure DevOps Administration Console to perform a hard delete. Projects are permanently deleted and not subject to restoration.
+
+<a name="delete-team-proj"></a>
+
+::: moniker range="azure-devops"
+The Administration Console is only supported for on-premises Azure DevOps Servers.
+
+::: moniker-end
+::: moniker range="< azure-devops"
+
+[!INCLUDE [temp](../../includes/open-admin-organization-settings.md)]
+
+Using the administration console, you can delete a project from a project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd) to delete all artifacts.
+
+1. If you're not a member of one or more of the following administrator groups, [get permissions now](/azure/devops/server/admin/add-administrator):
+
+    - Team Foundation Administrators group (required).
+
+    - SQL Server System Administrators group (required).
+
+    - Farm Administrators group for SharePoint Products (required when your deployment uses SharePoint Products).
+
+2. Open the administration console and delete the project from its project collection.
+
+    ![project collection delete button](media/delete-project/ic686856.png)
+
+3. Choose whether to delete external data associated with the project and then start the delete action.
+
+    ![delete projects dialog](media/delete-project/delete-project-2019.1)
+
+4. (Optional) To review the status of the delete action, open the **Status** tab.
+
+    To review the details of the delete action, you can open the log file from either the **Status** tab or **Logs** tab.
+
+::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
@@ -105,47 +162,13 @@ az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
 
 * * * 
 
-<a name="delete-team-proj"></a>
+ 
 
-::: moniker range="<= tfs-2018"
-
-[!INCLUDE [temp](../../includes/open-admin-organization-settings.md)]
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-## Delete a project 
-
-Using the administration console, you can delete a project from a project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd) to delete all artifacts.
-
-1. If you're not a member of one or more of the following administrator groups, [get permissions now](/azure/devops/server/admin/add-administrator):
-
-    - Team Foundation Administrators group (required).
-
-    - SQL Server System Administrators group (required).
-
-    - Farm Administrators group for SharePoint Products (required when your deployment uses SharePoint Products).
-
-2. Open the administration console and delete the project from its project collection.
-
-    ![project collection delete button](media/delete-project/ic686856.png)
-
-3. Choose whether to delete external data associated with the project and then start the delete action.
-
-    ![delete projects dialog](media/delete-project/ic687180.png)
-
-4. (Optional) To review the status of the delete action, open the **Status** tab.
-
-    To review the details of the delete action, you can open the log file from either the **Status** tab or **Logs** tab.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
+::: moniker range="<= azure-devops-2020"
 
 ## Delete reports that remain after deleting a project
 
-If your project used reporting and you didn't delete external artifacts, you can delete the reports using SQL Server Report Manager. From the project collection page, delete the folder that corresponds to the deleted project.
+If your project used SQL Server reporting and you didn't delete external artifacts, you can delete the reports using SQL Server Report Manager. From the project collection page, delete the folder that corresponds to the deleted project.
 
 ![context menu with delete command](media/delete-project/ic686857.png)
 
