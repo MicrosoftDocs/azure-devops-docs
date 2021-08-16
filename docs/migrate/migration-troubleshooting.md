@@ -193,23 +193,35 @@ INSERT into @p6 values('{GroupSid}','Microsoft.TeamFoundation.Identity','{Member
 EXEC prc_UpdateGroupMembership @partitionId=1,@scopeId='{ScopeId}',@idempotent=1,@incremental=1,@insertInactiveUpdates=0,@updates=@p6,@eventAuthor='9EE20697-5343-43FC-8FC5-3D5D455D21C5',@updateGroupAudit=0
 ```
 
-
 Below is an example ISVError: 300005 message from the data migration tool. 
 
 ```cmdline
 ISVError:300005 Unexpected non group identity was found to have direct membership to everyone group. GroupSid:S-1-9-1551374245-3746625149-2333054533-2458719197-2313548623-0-0-0-0-3, MemberId:76050ddf-4fd8-48c4-a1ff-859e44364519, ScopeId:7df650df-0f8b-4596-928d-13dd89e5f34f
 ```
+If you see the MemberId from the error message comes back as a SID instead of a GUID, you need to get the MemberID from the dbo.tbl_Identity table in Configuration DB to get the GUID for the Member Sid.
 
+```cmdline
+ISVError:300005 Unexpected non group identity was found to have direct membership to everyone group. GroupSid:S-1-9-1551374245-3746625149-2333054533-2458719197-2313548623-0-0-0-0-3, MemberSid:System.Security.Principal.WindowsIdentity;S-1-5-21-124525095-708259637-1543119021-1737349, ScopeId:7df650df-0f8b-4596-928d-13dd89e5f34f
+```
+```SQL
+DECLARE @MemberId uniqueidentifier 
+
+SET @MemberId = (Select Id from dbo.tbl_Identity where Sid ='S-1-5-21-124525095-708259637-1543119021-1737349');
+
+SELECT @MemberId
+```
 
 Copy the GroupSid, MemberId, and ScopeId into the SQL command.
 
 ```SQL
+
 DECLARE @p6 dbo.typ_GroupMembershipTable
 
 INSERT into @p6 values('S-1-9-1551374245-3746625149-2333054533-2458719197-2313548623-0-0-0-0-3','Microsoft.TeamFoundation.Identity','76050ddf-4fd8-48c4-a1ff-859e44364519',0)
  
 EXEC prc_UpdateGroupMembership @partitionId=1,@scopeId='7df650df-0f8b-4596-928d-13dd89e5f34f',@idempotent=1,@incremental=1,@insertInactiveUpdates=0,@updates=@p6,@eventAuthor='9EE20697-5343-43FC-8FC5-3D5D455D21C5'
 ```
+   
 
 Run the completed command against the Azure DevOps Server configuration database. You'll need to repeat this command for each ISVError: 300005 instance reported. You can batch errors with the same scope ID into a single command. Once you've executed the commands, rerun the data migration tool validate again to ensure that the errors have been corrected. If the errors still persist, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport). 
 
