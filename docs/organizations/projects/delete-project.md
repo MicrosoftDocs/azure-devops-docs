@@ -90,8 +90,6 @@ Your project is deleted and can be restored up to 28 days afterward. Your delete
 #### [Administration Console](#tab/admin-console) 
 
 
-Use the Azure DevOps Administration Console to perform a hard delete. Projects are permanently deleted and not subject to restoration.
-
 <a name="delete-team-proj"></a>
 
 ::: moniker range="azure-devops"
@@ -100,7 +98,8 @@ The Administration Console is only supported for on-premises Azure DevOps Server
 ::: moniker-end
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../includes/open-admin-organization-settings.md)]
+
+Use the Azure DevOps Administration Console to perform a hard delete. Projects are permanently deleted and not subject to restoration.
 
 Using the administration console, you can delete a project from a project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd) to delete all artifacts.
 
@@ -118,7 +117,7 @@ Using the administration console, you can delete a project from a project collec
 
 3. Choose whether to delete external data associated with the project and then start the delete action.
 
-    :::image type="content" source="(media/delete-project/confirm-deletion.png)" alt-text="Delete team projects dialog."::: 
+    :::image type="content" source="media/delete-project/confirm-deletion.png)" alt-text="Delete team projects dialog."::: 
 
 4. (Optional) To review the status of the delete action, open the **Status** tab.
 
