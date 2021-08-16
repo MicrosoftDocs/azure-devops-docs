@@ -1,41 +1,42 @@
 ---
 title: Troubleshoot Azure Resource Manager service connections
 ms.custom: seodec18
-description: DevOps CI CD - Troubleshoot Azure Resource Manager service connections in Azure Pipelines and Team Foundation Server (TFS)
+description: How to troubleshoot Azure Resource Manager service connections in Azure Pipelines
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 10/15/2020
+ms.date: 08/16/2021
 monikerRange: '>= tfs-2015'
 ---
 
-# Troubleshoot Azure Resource Manager service connections
+# Troubleshoot ARM service connections
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
 
-::: moniker range="<= tfs-2018"
-
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
-::: moniker-end
-
-This topic will help you resolve issues you may encounter when creating a connection to Microsoft Azure using an [Azure Resource Manager service connection](../library/service-endpoints.md) for your Azure DevOps CI/CD processes.
+This article presents the common troubleshooting scenarios to help you resolve issues you may encounter when creating an Azure Resource Manager service connections. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
 
 <a name="whathappens"></a>
 
-## What happens when you create a Resource Manager service connection?
+## What happens when you create an ARM service connection?
 
-1. In Azure DevOps, open the Service connections page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings). In TFS, open the **Services** page from the "settings" icon in the top menu bar.
+If you don't have a service connection, you create one as follows:
 
-1. Choose **+ New service connection** and select the type of service connection you need.
+1. From within your project, select **Project settings**, and then select **Service connections**.
 
-1. In the **Add Azure Resource Manager service connection** dialog, provide a connection name, and select a subscription from drop-down list of your subscriptions.  
+    :::image type="content" source="media/service-connections.png" alt-text="Screenshot showing how to access service connections from project settings":::
 
-> [!div class="mx-imgBorder"]
-> ![The Add Azure Resource Manager service connection dialog](media/azure-rm-endpoint/endpoint-01.png)
+1. Select **New service connection** to add a new service connection, and then select **Azure Resource Manager**. Select **Next** when you are done.
 
-When you select **OK**, the system:
+    :::image type="content" source="media/arm-service-connections.png" alt-text="Screenshot showing the service connections types.":::
+
+1. Select **Service principal (automatic)**, and then select **Next.
+
+1. Select **Subscription**, and then select your subscription from the drop-down list. Fill out the form and then select **Save** when you are done.
+
+    :::image type="content" source="media/new-arm-service-connection.png" alt-text="Screenshot showing the new ARM service connection form.":::
+
+When you save your new ARM service connection, Azure DevOps then:
 
 1. Connects to the Azure Active Directory (Azure AD) tenant for to the selected subscription.
 1. Creates an application in Azure AD on behalf of the user.
