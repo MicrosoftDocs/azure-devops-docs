@@ -508,7 +508,7 @@ From SQL Server Management Studio (SSMS), open the extended properties for the s
 
 **VS403379**
 
-Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import.
+Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import. For details, see [Delete a project](../organizations/projects/delete-project.md).
 
 ```cmdline
 VS403379: Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import.
@@ -526,6 +526,8 @@ If the error is more complex, then the email you receive provides instructions o
 
 - [Validate and import](migration-import.md) 
 - [Post-import](migration-post-import.md)
+- [Delete a project](../organizations/projects/delete-project.md)
+- [Restore a project](../organizations/projects/restore-project.md)
 
 
 
