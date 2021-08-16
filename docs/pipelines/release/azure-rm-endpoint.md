@@ -28,7 +28,7 @@ If you don't have a service connection, you create one as follows:
 
 1. Select **New service connection** to add a new service connection, and then select **Azure Resource Manager**. Select **Next** when you are done.
 
-    :::image type="content" source="media/arm-service-connections.png" alt-text="Screenshot showing the service connections types.":::
+    :::image type="content" source="media/arm-service-connection.png" alt-text="Screenshot showing the service connections types.":::
 
 1. Select **Service principal (automatic)**, and then select **Next.
 
@@ -121,53 +121,47 @@ You must have permissions to add integrated applications in the directory. The d
 
 1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
 
-1. select **Users** from the **Manage** section.
+1. Select **Users**, and then select **User settings**.
 
-1. Select **User settings**.
+1. Under **App registrations**, and then change the **Users can register applications** option to **Yes**.
 
-1. Under **App registrations**, change the **Users can register applications** option to **Yes**.
-
-#### Create the service principal manually with the user already having required permissions in Azure Active Directory
-
-You can also create the service principal with an existing user who already has the required permissions in Azure Active Directory. For more information, see [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal).
+You can also create the service principal with an existing user who already has the required permissions in Azure Active Directory. See [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal) for more information.
 
 <a name="sessionexpired"></a>
 
 ### Failed to obtain an access token or a valid refresh token was not found
 
-These errors typically occur when your session has expired.
+These errors typically occur when your session has expired. To resolve these issues:
 
-To resolve these issues:
-
-1. Sign out of Azure Pipelines or TFS.
-1. Open an InPrivate or incognito browser window and navigate to [https://visualstudio.microsoft.com/team-services/](https://visualstudio.microsoft.com/team-services/).
-1. If you are prompted to sign out, do so.
+1. Sign out of Azure DevOps.
+1. Open an InPrivate or incognito browser window and navigate to [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
 1. Sign in using the appropriate credentials.
-1. Choose the organization you want to use from the list.
-1. Select the project you want to add the service connection to.
-1. Create the service connection you need by opening the **Settings** page. Then, select **Services** > **New service connection** > **Azure Resource Manager**.
+1. Select your organization and your project.
+1. [Create your service connection](../library/service-endpoints.md).
 
 <a name="contributorrole"></a>
 
 ### Failed to assign Contributor role
 
-This error typically occurs when you do not have **Write** permission for the selected Azure subscription when the system attempts to assign the **Contributor** role.
+This error typically occurs when you do not have **Write** permission for the selected Azure subscription.
 
-To resolve this issue, ask the subscription administrator to [assign you the appropriate role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+To resolve this issue, ask the subscription administrator to [assign you the appropriate role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) in Azure Active Directory.
 
 <a name="missingSubscriptions"></a>
 
 ### Some subscriptions are missing from the list of subscriptions
 
-To fix this issue you will need to modify the supported account types and who can use your application. To do so, follow the steps below:
+To fix this issue you will need to modify the supported account types, and who can use your application. To do so, follow the steps below:
 
 1. Sign in to the Azure portal.
 
 1. If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant in which you want to register an application.
 
-1. Search for and select **Azure Active Directory**.
+    :::image type="content" source="media/directory-and-subscriptions.png" alt-text="Screenshot showing the directory and subscriptions icon in Azure Portal.":::
 
-1. Under **Manage**, select **App registrations**.
+1. Select **Azure Active Directory** from the left pane.
+
+1. Select **App registrations**.
 
 1. Select you application from the list of registered applications.
 
@@ -175,7 +169,9 @@ To fix this issue you will need to modify the supported account types and who ca
 
 1. Under **Supported account types**, _Who can use this application or access this API?_ select **Accounts in any organizational directory**.
 
-1. Select **Save**.
+    :::image type="content" source="media/supported-account-types.png" alt-text="Screenshot showing the supported account types.":::
+
+1. Select **Save** when you are done.
 
 <a name="subscription-isnt-listed-service-connection"></a>
 
