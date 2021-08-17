@@ -32,7 +32,7 @@ You can use many languages with Azure Pipelines, including Python, Java, JavaScr
 
 You can use Azure Pipelines with most application types, such as Java, JavaScript, Node.js, Python, .NET, C++, Go, PHP, and XCode.
 
-Azure DevOps has a number of tasks to build and test your application. For example, tasks exist to build .Net, Java, Node, Android, Xcode, and C++ applications. Similarly, there are tasks to run tests using a number of testing frameworks and services. You can also run command line, PowerShell, or Shell scripts in your automation.
+Azure DevOps has a number of tasks to build and test your application. For example, tasks exist to build .NET, Java, Node, Android, Xcode, and C++ applications. Similarly, there are tasks to run tests using a number of testing frameworks and services. You can also run command line, PowerShell, or Shell scripts in your automation.
 
 ## Deployment targets
 
