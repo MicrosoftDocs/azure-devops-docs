@@ -264,7 +264,7 @@ Follow the links provided in the following table to learn more about the Azure s
       [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric)
    :::column-end::: 
    :::column span="3":::
-      - Distributed systems platform that can run in many environments, including Azure or on-premises. To learn more, see the following articles: [Tutorial: Deploy an application with CI/CD to a Service Fabric cluster](/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts) and [Service Fabric Application Deployment task](tasks/deploy/service-fabric-deploy.md).  
+       Distributed systems platform that can run in many environments, including Azure or on-premises. To learn more, see the following articles: [Tutorial: Deploy an application with CI/CD to a Service Fabric cluster](/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts) and [Service Fabric Application Deployment task](tasks/deploy/service-fabric-deploy.md).  
    :::column-end:::
 :::row-end:::
 --- 
