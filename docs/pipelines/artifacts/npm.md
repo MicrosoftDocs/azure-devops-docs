@@ -84,11 +84,11 @@ To publish a package to an npm registry, add the following snippet to your yaml 
 - task: Npm@1
   inputs:
     command: publish
-    publishRegistry: UseExternalRegistry
+    publishRegistry: useExternalRegistry
     publishEndpoint: '<NAME_OF_YOUR_SERVICE_CONNECTION>'
 ```
 
-- **publishEndpoint**: required when `publishRegistry == UseExternalRegistry`. Copy and paste the name of the service connection you created earlier.
+- **publishEndpoint**: required when `publishRegistry == useExternalRegistry`. Copy and paste the name of the service connection you created earlier.
 
 ::: moniker-end
 
