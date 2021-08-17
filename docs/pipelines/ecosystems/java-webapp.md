@@ -86,15 +86,21 @@ az webapp create -g myapp-rg -p myapp-service-plan -n my-app-name --runtime "JAV
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-1. When the **Configure** tab appears, select **Show more**, and then select **Maven package Java project Web App to Linux on Azure**. 
+8. When the **Configure** tab appears, select **Show more**, and then select **Maven package Java project Web App to Linux on Azure**. 
 
-1. You can automatically create an [Azure Resource Manager service connection](../library/connect-to-azure.md) while creating your pipeline. To get started, Select your Azure subscription where you created a resource group.
+9. You can automatically create an [Azure Resource Manager service connection](../library/connect-to-azure.md) while creating your pipeline. To get started, Select your Azure subscription where you created a resource group.
 
-1. Select your web app name. You previously created this app in the Azure portal. 
+10. Select **Validate and configure**. The new pipeline includes a new Azure Resource Manager service connection. 
 
-1. Select **Validate and configure** to add your pipeline. The new pipeline includes an Azure Resource Manager service connection. 
+    As Azure Pipelines creates an azure-pipelines.yml file, which defines your CI/CD pipeline, it:
 
-[!INCLUDE [include](includes/create-pipeline-after-template-selected.md)]
+    * Includes a Build stage, which builds your project, and a Deploy stage, which deploys it to Azure as a Linux web app.
+    * As part of the Deploy stage, it also creates an [Environment](../../process/environments.md) with default name same as the Web App. You can choose to modify the environment name. 
+
+11. Take a look at the pipeline to see what it does. Make sure that all the default inputs are appropriate for your code.
+
+12. After you've looked at what the pipeline does, select **Save and run**, after which you're prompted for a commit message because Azure Pipelines adds the *azure-pipelines.yml* file to your repository. After editing the message, select **Save and run** again to see your pipeline in action.
+ 
 
 ## See the pipeline run, and your app deployed
 
@@ -123,6 +129,6 @@ Also explore deployment history for the App by navigating to the "Environment". 
 
 ## Next steps
 
-* [Azure for Java developer documentation](/azure/developer/java/)
+* [Azure for Java developer documentation](/azure/developer/java)
 * [Quickstart: Create a Java app on Azure App Service](/azure/app-service/quickstart-java)
  
