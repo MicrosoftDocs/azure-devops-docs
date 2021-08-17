@@ -3,7 +3,7 @@ title: What is Azure Pipelines?
 ms.custom: seodec18
 description: Learn how to automatically build, test, and deploy your code with Azure Pipelines
 ms.topic: overview
-ms.date: 05/31/2019
+ms.date: 07/29/2021
 monikerRange: '>= tfs-2017'
 ---
 
