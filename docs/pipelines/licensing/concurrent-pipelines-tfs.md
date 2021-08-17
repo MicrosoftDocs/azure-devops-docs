@@ -5,7 +5,7 @@ description: Learn about the parallel jobs pricing and availability in Team Foun
 ms.topic: conceptual
 ms.assetid: 8C578915-5C23-4563-957E-7AD1C6FB80FF
 ms.author: jukullam
-ms.date: 08/14/2019
+ms.date: 09/23/2020
 monikerRange: '>= tfs-2015 < azure-devops'
 ---
 
