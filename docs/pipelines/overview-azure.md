@@ -41,11 +41,11 @@ If you're just getting started, we recommend you review and get started with the
 ---
 :::row:::
    :::column span="1":::
-      [Azure Portal](/azure/azure-portal/azure-portal-overview)
+      [Azure portal](/azure/azure-portal/azure-portal-overview)
    :::column-end::: 
    :::column span="3":::
-      The Azure portal is a web-based, unified console from which you can build, manage, and monitor everything from simple web apps to complex cloud deployments. Also, you can create custom dashboards for an organized view of resources and configure accessibility options. If you have an Azure DevOps Services organization, you have access to the Azure Portal.  
-      [Sign in to your Azure Portal](https://portal.azure.com/).
+      The Azure portal is a web-based, unified console from which you can build, manage, and monitor everything from simple web apps to complex cloud deployments. Also, you can create custom dashboards for an organized view of resources and configure accessibility options. If you have an Azure DevOps Services organization, you have access to the Azure portal.  
+      [Sign in to your Azure portal](https://portal.azure.com/).
    :::column-end:::
 :::row-end:::
 ---
@@ -264,7 +264,7 @@ Follow the links provided in the following table to learn more about the Azure s
       [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric)
    :::column-end::: 
    :::column span="3":::
-      -Distributed systems platform that can run in many environments, including Azure or on-premises. To learn more, see the following articles: [Tutorial: Deploy an application with CI/CD to a Service Fabric cluster](/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts) and [Service Fabric Application Deployment task](tasks/deploy/service-fabric-deploy.md).  
+      - Distributed systems platform that can run in many environments, including Azure or on-premises. To learn more, see the following articles: [Tutorial: Deploy an application with CI/CD to a Service Fabric cluster](/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts) and [Service Fabric Application Deployment task](tasks/deploy/service-fabric-deploy.md).  
    :::column-end:::
 :::row-end:::
 --- 
