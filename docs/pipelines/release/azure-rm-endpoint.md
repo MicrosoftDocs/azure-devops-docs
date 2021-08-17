@@ -8,13 +8,14 @@ ms.author: ronai
 author: RoopeshNair
 ms.date: 08/16/2021
 monikerRange: '>= tfs-2015'
+"recommendations": "true"
 ---
 
 # Troubleshoot ARM service connections
 
 **Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
 
-This article presents the common troubleshooting scenarios to help you resolve issues you may encounter when creating an Azure Resource Manager service connections. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
+This article presents the common troubleshooting scenarios to help you resolve issues you may encounter when creating an Azure Resource Manager service connection. See [Manage service connections](../library/service-endpoints.md) to learn how to create, edit, and secure service connections.
 
 <a name="whathappens"></a>
 
@@ -40,7 +41,7 @@ When you save your new ARM service connection, Azure DevOps then:
 
 1. Connects to the Azure Active Directory (Azure AD) tenant for to the selected subscription.
 1. Creates an application in Azure AD on behalf of the user.
-1. After the application has been successfully created, assigns the application as a contributor to the selected subscription.
+1. After the application has been successfully created, assign the application as a contributor to the selected subscription.
 1. Creates an Azure Resource Manager service connection using this application's details.
 
 <a name="troubleshoot"></a>
@@ -226,23 +227,11 @@ To resolve this issue:
 
 1. Select **Save** to save your service connection.
 
-<a name="service-connection-artifactory"></a>
+### Azure subscription is not passed from the previous task output
 
-### Creating a service connection with Artifactory instance fails despite allowlisted IPs
+When you set your Azure subscription dynamically for your release pipeline and want to consume the output variable from a preceding task, you might encounter this issue. 
 
-Be sure that the correct IP addresses are allowlisted. See [Microsoft-hosted agents](../agents/hosted.md#networking) and the [current list of IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts) that's published weekly based on geographic location.  
-
-<a name="cant-create-service-connection-manually"></a>
-
-### Can't create a service connection manually by using PowerShell scripts and Azure Cloud Shell
-
-To learn how to manually create an Azure Resource Manager service connection, see [Create an Azure service principal to use with an Azure Resource Manager service connection](https://azuredevopslabs.com/labs/devopsserver/azureserviceprincipal).
-
-### Azure subscription not taken directly from previous task output
-
-When you set an Azure subscription dynamically for the release pipeline and the subscription is an output variable from a preceding task, you might encounter this issue. 
-
-To resolve the issue, ensure that the values are defined within the pipeline variables section, which can be used in the subscription name or in the service connection.
+To resolve the issue, ensure that the values are defined within the variables section of your pipeline. You can then pass this variable between your pipeline's tasks.
 
 <a name="authentication-mechanisms"></a>
 
@@ -253,6 +242,11 @@ An Azure Resource Manager service connection can connect to an Azure subscriptio
 To learn about managed identities for virtual machines, see [Assigning roles](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm).  
 
 > [!NOTE]
-> Managed identities aren't supported in Microsoft-hosted agents. In this scenario, you must [set up a self-hosted agent](../agents/agents.md#install) on an Azure VM and configure a managed identity for the VM.
+> Managed identities aren't supported in Microsoft-hosted agents. In this scenario, you must [set up a self-hosted agent](../agents/agents.md#install) on an Azure VM and configure a managed identity for that VM.
 
-[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
+## Related articles
+
+- [Troubleshoot pipeline runs](../troubleshooting/troubleshooting.md)
+- [Review pipeline logs](./troubleshooting/review-logs.md)
+- [Define variables](../process/variables.md)
+- [Classic release and artifacts variables](./variables.md)
