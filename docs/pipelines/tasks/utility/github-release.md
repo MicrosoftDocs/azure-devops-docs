@@ -62,7 +62,7 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 The following YAML creates a GitHub release every time the task runs. The build number is used as the tag version for the release. All .exe files and README.txt files in the $(Build.ArtifactStagingDirectory) folder are uploaded as assets. By default, the task also generates a change log (a list of commits and issues that are part of this release) and publishes it as release notes.
 
 ```YAML
-- task: GithubRelease@0 
+- task: GithubRelease@1 
   displayName: 'Create GitHub Release'      
   inputs:
     gitHubConnection: zenithworks
@@ -77,7 +77,7 @@ The following YAML creates a GitHub release every time the task runs. The build 
 You can also control the creation of the release based on repository tags. The following YAML creates a GitHub release only when the commit that triggers the pipeline has a Git tag associated with it. The GitHub release is created with the same tag version as the associated Git tag.
 
 ```YAML
-- task: GithubRelease@0 
+- task: GithubRelease@1 
   displayName: 'Create GitHub Release'      
   inputs:
     gitHubConnection: zenithworks
@@ -88,7 +88,7 @@ You can also control the creation of the release based on repository tags. The f
 You may also want to use the task in conjunction with task conditions to get even finer control over when the task runs, thereby restricting the creation of releases. For example, in the following YAML the task runs only when the pipeline is triggered by a Git tag matching the pattern 'refs/tags/release-v*'.
 
 ```YAML
-- task: GithubRelease@0 
+- task: GithubRelease@1 
   displayName: 'Create GitHub Release'   
   condition: startsWith(variables['Build.SourceBranch'], 'refs/tags/release-v')   
   inputs:
@@ -102,7 +102,7 @@ You may also want to use the task in conjunction with task conditions to get eve
 The following YAML updates the status of a GitHub release from 'draft' to 'published'. The release to be edited is determined by the specified tag.
 
 ```YAML
-- task: GithubRelease@0
+- task: GithubRelease@1
   displayName: 'Edit GitHub Release'
   inputs:
     gitHubConnection: zenithworks
@@ -117,7 +117,7 @@ The following YAML updates the status of a GitHub release from 'draft' to 'publi
 The following YAML deletes a GitHub release. The release to be deleted is determined by the specified tag.
 
 ```YAML
-- task: GithubRelease@0
+- task: GithubRelease@1
   displayName: 'Delete GitHub Release'
   inputs:
     gitHubConnection: zenithworks
