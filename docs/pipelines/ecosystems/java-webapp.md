@@ -100,9 +100,19 @@ az webapp create -g myapp-rg -p myapp-service-plan -n my-app-name --runtime "JAV
 
 As your pipeline runs, watch as your build stage, and then your deployment stage, go from blue (running) to green (completed). You can select the stages and jobs to watch your pipeline in action.
 
+
+# [Tomcat](#tab/java-tomcat)
+
 After the pipeline has run, check out your site!
 
 `https://my-app-name.azurewebsites.net/petclinic`
+# [Java SE](#tab/java-se)
+
+After the pipeline has run, check out your site!
+
+`https://my-app-name.azurewebsites.net`
+
+---
 
 Also explore deployment history for the App by navigating to the "Environment". From the pipeline summary:
 
