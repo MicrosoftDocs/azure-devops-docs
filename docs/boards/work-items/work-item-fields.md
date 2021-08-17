@@ -64,7 +64,7 @@ The field data type determines the kind and size of data that you can store in t
 
 ::: moniker range=">= azure-devops-2019"
 
-When you add a custom field to an inherited process, Azure DevOps assigns a reference name prefixed with *Custom* and then then name of the field with spaces removed. For example, you add a field named DevOps Triage, the reference name is **Custom.DevOpsTriage**. No spaces are allowed within the reference name.  
+When you add a custom field to an inherited process, Azure DevOps assigns a reference name prefixed with *Custom* and then the name of the field with spaces removed. For example, you add a field named *DevOps Triage*, the reference name is **Custom.DevOpsTriage**. No spaces are allowed within the reference name.  
 
 ::: moniker-end
 
