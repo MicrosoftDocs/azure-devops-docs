@@ -979,7 +979,7 @@
       href: troubleshooting/review-logs.md
     - name: Debug deployment issues
       href: release/variables.md#debug-mode
-    - name: Troubleshoot Azure connections
+    - name: Troubleshoot ARM service connections
       href: release/azure-rm-endpoint.md
 - name: Reference
   items:
