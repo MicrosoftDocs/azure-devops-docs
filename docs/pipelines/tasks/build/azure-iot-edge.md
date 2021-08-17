@@ -138,3 +138,14 @@ steps:
 |--- |--- |
 |containerregistrytype <br/>Container registry type|(Required) Select Azure Container Registry for ACR or Generic Container Registry for generic registries including Docker hub.|
 |dockerRegistryEndpoint <br/>Docker Registry Connection|(Required) Select a generic Docker registry connection. Required for Build and Push <br/>Argument aliases: `dockerRegistryConnection`|
+
+## Examples
+
+For step-by-step examples of how to use these actions in Azure Pipelines, see the following articles:
+
+* [Continuous integration and continuous deployment to Azure IoT Edge devices (YAML)](/azure/iot-edge/how-to-continuous-integration-continuous-deployment)
+* [Continuous integration and continuous deployment to Azure IoT Edge devices (classic editor)](/azure/iot-edge/how-to-continuous-integration-continuous-deployment-classic)
+
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
