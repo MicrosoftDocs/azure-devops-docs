@@ -5,7 +5,7 @@ description: Learn how to deploy to Azure using Azure Pipelines. Tutorials, refe
 ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235  
 ms.author: jukullam
 author: juliakm
-ms.date: 08/13/2021
+ms.date: 08/17/2021
 ms.type: reference
 monikerRange: '>= tfs-2015'
 ---
@@ -145,21 +145,22 @@ Follow the links provided in the following table to learn more about the Azure s
    :::column span="1":::
       [Azure Databricks](https://azure.microsoft.com/services/databricks)  
       [Azure Data Factory](https://azure.microsoft.com/services/data-factory/)
+      [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) 
    :::column-end::: 
    :::column span="3":::
-      Configure a pipeline to integrate with a fully managed, serverless data integration service and unlock insights from all your data. To learn more, see the following resources: 
+      Configure a pipeline to integrate with a fully managed, serverless data integration service and unlock insights from all your data. Create an Azure Pipeline that builds and deploys a machine learning model as a web service and to automate the machine learning lifecycle. To learn more, see the following resources: 
       - [Build a data pipeline by using Azure Data Factory, DevOps, and machine learning; Configure Azure Databricks and Azure Data Factory](apps/cd/azure/build-data-pipeline.md#configure-azure-databricks-and-azure-data-factory)
-      - [DevOps for Azure Databricks](https://marketplace.visualstudio.com/items?itemName=riserrad.azdo-databricks).
+      - [DevOps for Azure Databricks](https://marketplace.visualstudio.com/items?itemName=riserrad.azdo-databricks)
+      - [Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines](targets/azure-machine-learning.md).
    :::column-end:::
 :::row-end:::
 --- 
 :::row:::
    :::column span="1":::
-      [Azure DevTest Labs](https://azure.microsoft.com/services/databricks)  
-      [Azure Data Factory](https://azure.microsoft.com/services/data-factory/)
+      [Azure DevTest Labs](https://azure.microsoft.com/services/devtest-lab/)   
    :::column-end::: 
    :::column span="3":::
-      Configure a pipeline to integrate with a fully managed, serverless data integration service and unlock insights from all your data. To learn more, see [Build a data pipeline by using Azure Data Factory, DevOps, and machine learning; Configure Azure Databricks and Azure Data Factory](apps/cd/azure/build-data-pipeline.md#configure-azure-databricks-and-azure-data-factory).
+      Quickly provision development and test stages using reusable templates. To learn more, see [Manage a virtual machine in Azure DevTest Labs](apps/cd/azure/deploy-provision-devtest-lab.md).
    :::column-end:::
 :::row-end:::
 --- 
@@ -168,7 +169,7 @@ Follow the links provided in the following table to learn more about the Azure s
       [Azure Functions](https://azure.microsoft.com/services/functions/)
    :::column-end::: 
    :::column span="3":::
-      Provides a serverless solution for hosting applications. To learn more, see:
+      Provides a fully managed Platform as a service (PaaS) to implement serverless architecture. To learn more, see:
       - [Deploy an Azure Function](targets/azure-functions.md)
       - [Azure Function App task](tasks/deploy/azure-function-app.md)
       - [Azure Function App for Containers task](tasks/deploy/azure-rm-functionapp-containers.md) 
@@ -211,15 +212,6 @@ Follow the links provided in the following table to learn more about the Azure s
    :::column-end:::
 :::row-end:::
 ---
-:::row:::
-   :::column span="1":::
-      [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) 
-   :::column-end::: 
-   :::column span="3":::
-      Create an Azure Pipeline that builds and deploys a machine learning model as a web service and to automate the machine learning lifecycle. To learn more, see [Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines](targets/azure-machine-learning.md). 
-   :::column-end:::
-:::row-end:::
---- 
 :::row:::
    :::column span="1":::
       [Azure Monitor](https://azure.microsoft.com/services/monitor/) 
