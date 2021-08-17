@@ -113,7 +113,7 @@ Using the administration console, you can delete a project from a project collec
 
 2. Open the administration console and delete the project from its project collection.
 
-    :::image type="content" source="media/delete-project/delete-project-2019.1.png" alt-text="Admin Console, Delete project."::: 
+    :::image type="content" source="media/delete-project/delete-project-2019-1.png" alt-text="Admin Console, Delete project."::: 
 
 3. Choose whether to delete external data associated with the project and then start the delete action.
 
