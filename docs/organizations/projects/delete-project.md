@@ -16,7 +16,7 @@ ms.date: 08/16/2021
 
 [!INCLUDE [version-all](../../includes/version-all.md)]  
 
-If you have a project that's no longer valid, you can delete it from your organization or collection in Azure DevOps. Or, if you are migrating from an on-premises Azure DevOps server to Azure DevOps Services, you'll need to delete project(s). Deleting projects also helps to simplify navigating to only those projects that are in use. 
+If you have a project that's no longer valid, you can delete it from your organization or collection in Azure DevOps. Or, if you are migrating from an on-premises Azure DevOps Server to Azure DevOps Services, you'll need to delete project(s). Deleting projects also helps to simplify navigating to only those projects that are in use. 
 
 > [!Caution]
 > Deleting projects from the web portal generate a soft-delete where projects get permanently deleted if not restored within 28 days. Projects deleted from the on-premises Azure DevOps Administration Console undergo a hard delete and cannot be restored. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
