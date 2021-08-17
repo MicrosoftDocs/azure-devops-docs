@@ -58,9 +58,7 @@ Below are some of the issues that may occur when creating service connections:
 - [Subscription isn't listed when creating a service connection](#subscription-isnt-listed-service-connection)
 - [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
 - [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
-- [Creating a service connection with Artifactory instance fails despite allowlisted IPs](#service-connection-artifactory)
-- [Can't create a service connection manually by using PowerShell scripts and Azure Cloud Shell](#cant-create-service-connection-manually)
-- [Azure subscription not taken directly from previous task output](#azure-subscription-not-taken-directly-from-previous-task-output)
+- [Azure subscription is not passed from the previous task output](#azure-subscription-is-not-passed-from-the-previous-task-output)
 
 <a name="privileges"></a>
 
@@ -247,6 +245,6 @@ To learn about managed identities for virtual machines, see [Assigning roles](/a
 ## Related articles
 
 - [Troubleshoot pipeline runs](../troubleshooting/troubleshooting.md)
-- [Review pipeline logs](./troubleshooting/review-logs.md)
+- [Review pipeline logs](../troubleshooting/review-logs.md)
 - [Define variables](../process/variables.md)
 - [Classic release and artifacts variables](./variables.md)
