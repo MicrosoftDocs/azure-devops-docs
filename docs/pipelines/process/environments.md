@@ -116,7 +116,7 @@ The Creator, Administrator, and user roles can manage approvals and checks. The 
 
 The deployment history view within environments provides the following advantages.
 
-- View jobs from all pipelines that target a specific environment. For example, two micro-services, each having its own pipeline, are deploying to the same environment. The deployment history listing helps identify all pipelines that effect this environment and also helps visualize the sequence of deployments by each pipeline.
+- View jobs from all pipelines that target a specific environment. For example, two micro-services, each having its own pipeline, are deploying to the same environment. The deployment history listing helps identify all pipelines that affect this environment and also helps visualize the sequence of deployments by each pipeline.
 
    > [!div class="mx-imgBorder"]
    > ![Deployment history](media/environments-deployment-history.png)
@@ -132,9 +132,9 @@ The deployment history view within environments provides the following advantage
 
 Control who can create, view, use, and manage the environments with user permissions. There are four roles - Creator (scope: all environments), Reader, User, and Administrator. In the specific environment's **user permissions** panel, you can set the permissions that are inherited and you can override the roles for each environment.
 
-- Go to the specific **Environment** that you want to authorize.
-- Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: > **Security** to view the settings.
-- Select **User permissions** > **+Add** > **User or group**, and then select a suitable role.
+1. Go to the specific **Environment** that you want to authorize.
+1. Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: > **Security** to view the settings.
+1. Select **User permissions** > **+Add** > **User or group**, and then select a suitable role.
 
 [!INCLUDE [temp](../../organizations/security/includes/environment-roles.md)]
 
