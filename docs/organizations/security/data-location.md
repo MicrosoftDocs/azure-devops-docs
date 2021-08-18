@@ -6,7 +6,7 @@ ms.topic: article
 ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
-ms.date: 08/09/2021
+ms.date: 08/18/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -51,6 +51,10 @@ Azure DevOps stores information that's global in nature, such as user identities
 - EU-based users: profile data is in EU data center  
 - US-based users: profile data is in US data center
 - Users from all other countries and regions: profile data is in US data center
+
+## Allow list data for tenant policies
+
+We recommend using groups with your tenant policy allow list(s). If you use a named user, be aware that a reference to the named user's identity will reside in the United States, Europe (EU), and Southeast Asia (Singapore).
 
 ## Transferring your data
 

@@ -11992,6 +11992,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/artifacts/overview.md",
+      "redirect_url": "/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/articles/migrate-to-vsts-from-tfs.md",
       "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
       "redirect_document_id": false
