@@ -1,11 +1,11 @@
 ---
-title: Delete and recover packages | Azure Artifacts
-description: Recover deleted packages and set up retention policies
+title: Delete and recover packages
+description: How to recover deleted packages and set up retention policies
 ms.technology: devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.custom: contperf-fy21q2
 ms.topic: conceptual
-ms.date: 10/13/2020
+ms.date: 08/17/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -13,24 +13,43 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-Azure Artifacts keeps all of your artifacts safe for as long as you need them, whether you published them directly or saved them from upstream sources. But, as older artifacts fall out of use, you may want to clean them up or let Azure Artifacts remove them automatically. In this article, you’ll learn how to:
+Azure Artifacts safely stores different types of packages in your feed whether you published them directly or saved them from upstream sources. But, as older package versions fall out of use, you may want to clean them up either manually or automatically using retention policies. 
 
-1. Delete packages from Azure Artifacts feeds.
-1. Set up retention policies to automatically delete older, unwanted packages from feeds.
-1. Recover recently deleted packages from the recycle bin.
+In this article, you will learn how to:
+
+> [!div class="checklist"]  
+> * Delete packages from feeds.
+> * Set up retention policies to automatically delete older packages.
+> * Recover recently deleted packages from the recycle bin.
 
 > [!NOTE]
-> To delete, recover packages and set up retention policies, you need to be an **Owner** of that particular feed.
+> To delete/recover packages or set up retention policies, you must be a feed **Owner**.
 
-## Delete packages from Azure Artifacts feeds
+## Delete packages
 
 #### [Maven](#tab/maven/)
-Choose the artifact from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
-> [!div class="mx-imgBorder"]
-> ![Delete Maven artifact Azure DevOps Services](../media/delete/delete-maven-package.png)
+::: moniker range=">= azure-devops-2019"
 
-When you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
+1. Select **Artifacts**, and then select your feed.
+
+1. Select the package you want to delete, and then select **Delete latest**. Select **Delete** to confirm. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops-2019"
+
+1. Select **Build and Release**, and then select **Packages**.
+
+1. Select your feed, and then select the package you want to delete.
+
+1. Select **Delete latest** to delete the latest version of your package.
+
+    :::image type="content" source="../media/delete/delete-maven-package.png" alt-text="Screenshot showing the delete latest button to delete packages from feeds.":::  
+
+In Azure Artifacts, packages are immutable. When you publish a package to your feed, its version number will be reserved permanently. You cannot upload a new package with that same version number even if you delete it from your feed.
+
+::: moniker-end
 
 #### [npm](#tab/npm/)
 There are two options available to remove a version of an npm package from a feed.
