@@ -80,7 +80,7 @@ You also need to install both the `xDnsServer` and `xNetworking` DSC modules on 
 ### TestAgent1
 
 This is the computer that is configured as a DNS server by the DSC configuration in this example.
-The computer must be running [Windows Server 2016](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016).
+The computer must be running [Windows Server 2016](https://www.microsoft.com/evalcenter/evaluate-windows-server-2016).
 
 ### TestAgent2
 
