@@ -1,5 +1,9 @@
 ---
+ms.technology: devops-cicd
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 08/18/2021
 ---
 
 <!--- TFS version only build-->
@@ -8,7 +12,6 @@ ms.topic: include
 <table>
 <tr valign="bottom">
 <th>Task</th>
-<th>Stakeholders</th>
 <th>Readers</th>
 <th>Contributors</th>
 <th>Build<br/>Admins</th>
@@ -18,7 +21,6 @@ ms.topic: include
 <tr>
 <td align="left">View builds
 </td>
-<td>  </td>
 <td>✔️</td>
 <td>✔️</td>
 <td>✔️</td>
@@ -27,7 +29,6 @@ ms.topic: include
 <tr>
 <td align="left">View build definition 
 </td>
-<td>  </td>
 <td>✔️</td>
 <td>✔️</td>
 <td>✔️</td>
@@ -38,14 +39,12 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td>  </td>
 <td>✔️</td>
 <td>✔️</td>
 </tr>
 <tr>
 <td align="left">Delete or Edit build definitions 
 </td>
-<td>  </td>
 <td>  </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -56,14 +55,12 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td>  </td>
 <td>✔️</td>
 <td>✔️</td>
 </tr>
 <tr>
 <td align="left">Edit build quality 
 </td>
-<td>  </td>
 <td> </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -74,14 +71,12 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td>  </td>
 <td>✔️</td>
 <td>✔️</td>
 </tr>
 <tr>
 <td align="left">Manage build queue
 </td>
-<td>  </td>
 <td>  </td>
 <td>  </td>
 <td>✔️</td>
@@ -93,13 +88,11 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>  </td>
 <td>✔️</td>
 </tr>
 <tr>
 <td align="left">Queue builds
 </td>
-<td>  </td>
 <td>  </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -110,7 +103,6 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td>  </td>
 <td>✔️</td>
 <td>✔️</td>
 </tr>
@@ -119,14 +111,12 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td>  </td>
 <td>✔️</td>
 <td>✔️</td>
 </tr>
 <tr>
 <td align="left">Update build information
 </td>
-<td>  </td>
 <td>  </td>
 <td>  </td>
 <td>  </td>
