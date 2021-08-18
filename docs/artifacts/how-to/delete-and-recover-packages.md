@@ -61,7 +61,7 @@ There are two options to delete an npm package from your feed:
 In Azure Artifacts, packages are immutable. When you publish a package to your feed, its version number will be reserved permanently. You cannot upload a new package with that same version number even if you delete it from your feed.
 
 > [!NOTE]
-> You must be a **Contributor** to deprecate packages and an **Owner** to unpublish them.
+> You must be a **Contributor** to deprecate a package and an **Owner** to unpublish it.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -105,65 +105,65 @@ In Azure Artifacts, packages are immutable. When you publish a package to your f
 > `npm unpublish` will not unpublish all versions of the package. See [deprecate](https://docs.npmjs.com/cli/deprecate) or [unpublish](https://docs.npmjs.com/cli/unpublish) documentation for more details.
 
 #### [NuGet](#tab/nuget/)
-There are two options available to remove a version of a NuGet package from a feed.
 
-1. **Unlist:** Unlisting a package version hides it from the search results, Visual Studio UI and from appearing on NuGet.org.
-2. **Delete:**  Deleting a version of a package makes it unavailable to install. Deleted packages can be restored from the Recycle Bin within 30 days of deletion. The packages will be deleted permanently afterwards.
+There are two options available to delete a NuGet package from your feed.
 
-When you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
+1. **Unlist:** unlisting a package version hides it from the search results in Artifacts feeds an NuGet.org.
+2. **Delete:**  deleting a package version makes it unavailable to install. Deleted packages can be restored from the Recycle Bin within 30 days of deletion, after which the package will be permanently deleted.
+
+In Azure Artifacts, packages are immutable. When you publish a package to your feed, its version number will be reserved permanently. You cannot upload a new package with that same version number even if you delete it from your feed.
+
+> [!NOTE]
+> You must be a **Contributor** to unlist a package and an **Owner** to delete it.
 
 ::: moniker range=">= azure-devops-2019"
 
-### Unlisting or deleting a NuGet package
+1. Select **Artifacts**, and then select your feed.
 
-You must be a **contributor** to unlist a package and an **owner** to delete it.
+1. Select the package you want to delete/deprecate, and then select **Unlist** or **Delete latest**.
 
-From within your feed, select the appropriate package and select **Unlist** or **Delete latest**.
-
-> [!div class="mx-imgBorder"]
-> ![Unlist or delete nuget packages](../media/delete/unlist-delete-nuget-package-newnav.png)
+    :::image type="content" source="../media/delete/unlist-delete-nuget-package-newnav.png" alt-text="Screenshot showing the unlist and delete latest for NuGet packages.":::
 
 ::: moniker-end
 
 ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-### Unlisting or deleting a NuGet package
+1. Select **Build and Release**.
 
-You must be a **contributor** to unlist a package and an **owner** to delete it.
+1. Select **Packages**, and then select the package you want to delete. 
 
-Select **Build and Release**, then **Packages**. select the appropriate package and select **Unlist** or **Delete latest**.
+1. Select **Unlist** or **Delete latest**.
 
-> [!div class="mx-imgBorder"]
-> ![Unlist or delete nuget package TFS](../media/delete/unlist-delete-nuget-package.png)
+    :::image type="content" source="../media/delete/unlist-delete-nuget-package.png" alt-text="Screenshot showing the unlist and delete latest for NuGet packages in TFS.":::
 
 ::: moniker-end
 
-### Unlisting a NuGet package using NuGet.exe
-1. Navigate to your feed and select **Connect to feed**
+### Unlist a NuGet package with NuGet.exe
+
+1. Select **Artifacts**, and the navigate to your feed. Select **Connect to feed**.
 
    ::: moniker range=">= azure-devops-2019"
 
-    > [!div class="mx-imgBorder"] 
-    > ![Connect to feed button](../media/connect-to-feed-azure-devops-newnav.png)
+     :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot highlighting the connect to a feed button.":::
 
    ::: moniker-end
 
    ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-    > [!div class="mx-imgBorder"]
-    > ![Connect to feed button TFS](../media/connect-to-feed.png)
+    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot highlighting the connect to a feed button TFS.":::
 
    ::: moniker-end
 
-2. Select **NuGet.exe** then find and Copy the _Package Source_ URL.
+2. Select **NuGet.exe**, and then find and Copy your **Package Source** URL.
 
 3. Run the following command:
 
-    ```
-    nuget.exe delete {your_package_id} {version} -Source {feed URL} -ApiKey key
+    ```Command
+    nuget.exe delete <PACKAGE_NAME> <PACKAGE_VERSION> -Source <PACKAGE_SOURCE_URL> -ApiKey <KEY>
     ```
 
-NuGet.exe currently only performs the **unlist** packages operation. Azure DevOps Services and TFS interpret the `nuget.exe delete` command as an **unlist** operation. To **delete** a package, you must use the REST API or the web interface.
+> [!NOTE]
+> Azure DevOps and TFS interpret the `nuget.exe delete` command as an **unlist** operation. To delete a package, you must use the REST API or the web interface.
 
 #### [Python](#tab/python/)
 You must be an **owner** to delete a Python package.
