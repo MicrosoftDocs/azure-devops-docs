@@ -3,30 +3,27 @@ title: Migrate from Jenkins to Azure Pipelines
 titleSuffix: Azure Pipelines
 description: How to migrate from Jenkins to Azure Pipelines
 ms.topic: conceptual
-ms.date: 02/07/2019
+ms.date: 08/18/2021
 monikerRange: azure-devops
 ---
 
 # Migrate from Jenkins to Azure Pipelines
 
-Jenkins has traditionally been installed by enterprises in their own data
-centers and managed in an on-premises fashion, though a number of providers
-offer managed Jenkins hosting.
+[Jenkins](https://www.jenkins.io/), an open-source automation server, has traditionally been installed by enterprises in their own data
+centers and managed on-premises. Many providers
+also offer managed Jenkins hosting.
 
-Azure Pipelines, on the other hand, is a cloud native continuous integration
-pipeline, providing the management of build and release pipelines and build
+Alternatively, Azure Pipelines is a cloud native continuous integration
+pipeline, providing the management of multi-stage pipelines and build
 agent virtual machines hosted in the cloud.
 
-However, Azure Pipelines offers a fully on-premises option as well with
+Azure Pipelines offers a fully on-premises option as well with
 [Azure DevOps Server](https://azure.microsoft.com/services/devops/server/), for those customers who have compliance or
 security concerns that require them to keep their code and build within
 the enterprise data center.
 
-In addition, Azure Pipelines supports a hybrid cloud and on-premises model,
-where Azure Pipelines manages the build and release orchestration and
-enabling build agents both in the cloud and installed on-premises, for
-customers with custom needs and dependencies for some build agents but
-who are looking to move most workloads to the cloud.
+In addition, Azure Pipelines supports hybrid cloud and on-premises models. Azure Pipelines can manage build and release orchestration and
+enabling build agents, both in the cloud and installed on-premises. 
 
 This document provides a guide to translate a Jenkins pipeline configuration
 to Azure Pipelines, information about moving container-based builds and
@@ -42,7 +39,7 @@ into your version control system. Unlike Jenkins, however, Azure Pipelines
 uses the industry-standard [YAML to configure the build
 pipeline](../yaml-schema.md).
 
-Despite the language difference, however, the concepts between Jenkins and
+The concepts between Jenkins and
 Azure Pipelines and the way they're configured are similar. A Jenkinsfile
 lists one or more _stages_ of the build process, each of which contains one
 or more _steps_ that are performed in order. For example, a "build" stage
@@ -73,7 +70,7 @@ pipeline {
 }
 ```
 
-This translates easily to an Azure Pipelines YAML configuration, with
+The jenkinsfile translates easily to an Azure Pipelines YAML configuration, with
 a _job_ corresponding to each stage, and steps to perform in each job:
 
 **azure-pipelines.yml**
@@ -102,7 +99,7 @@ in Azure Pipelines.
 Using containers in your build pipeline allows you to build and test within
 a docker image that has the exact dependencies that your pipeline needs,
 already configured. It saves you from having to include a build step that
-installs additional software or configures the environment. Both Jenkins
+installs more software or configures the environment. Both Jenkins
 and Azure Pipelines support container-based builds.
 
 In addition, both Jenkins and Azure Pipelines allow you to share the build
@@ -182,8 +179,7 @@ that allows you to run, build, or push an image.
 
 Jenkins offers build agent selection using the `agent` option to ensure
 that your build pipeline - or a particular stage of the pipeline - runs
-on a particular build agent machine. Similarly, Azure Pipelines offers a
-number of options to configure where your build environment runs.
+on a particular build agent machine. Similarly, Azure Pipelines offers many options to configure where your build environment runs.
 
 ### Hosted Agent Selection
 
@@ -244,7 +240,7 @@ variables:
 ```
 
 Additionally, in Azure Pipelines you can define variables that are set
-only for the duration of a particular job:
+only during a particular job:
 
 **azure-pipelines.yml**
 
@@ -313,10 +309,10 @@ post {
 ```
 
 Similarly, Azure Pipelines has a rich conditional execution framework that
-allows you to run a job, or steps of a job, based on a number of conditions
+allows you to run a job, or steps of a job, based on many conditions
 including pipeline success or failure.
 
-To emulate the simple Jenkins `post`-build conditionals, you can define jobs
+To emulate Jenkins `post`-build conditionals, you can define jobs
 that run based on the `always()`, `succeeded()` or `failed()` conditions:
 
 **azure-pipelines.yml**

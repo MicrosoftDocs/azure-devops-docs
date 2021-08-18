@@ -1,17 +1,11 @@
 - name: Azure Artifacts
   href: index.yml
   displayName: index, hub, artifacts 
-- name: What is Azure Artifacts?
-  href: overview.md
-  displayName: overview, artifacts 
-- name: Get started
+- name: Overview
   items:
-  - name: Get started with Azure Artifacts
+  - name: Azure Artifacts overview
     href: start-using-azure-artifacts.md
     displayName: get started, introduction 
-  - name: Where is Package Management?
-    href: where-is-package-management.md
-    displayName: tfs, package management 
   - name: View Artifacts storage consumption
     href: artifact-storage.md
     displayName: storage, limit, size, consumption, billing, charges 
@@ -20,7 +14,10 @@
     displayName: best practices, concepts
   - name: Search packages
     href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-    displayName: search, packages 
+    displayName: search, packages
+  - name: Where is Package Management?
+    href: where-is-package-management.md
+    displayName: tfs, package management 
 - name: Packages
   items:
   - name: About
