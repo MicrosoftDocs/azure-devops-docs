@@ -31,7 +31,7 @@ Visual Studio subscribers get access included with their subscription, and their
 
 Ensure the following is true:
 
-* [Licensing is set up for your organization via Azure](https://azure.microsoft.com/en-us/pricing/details/devops/server/)
+* [Licensing is set up for your organization via Azure](https://azure.microsoft.com/pricing/details/devops/server/)
 * You have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
 
 ## Pay through Azure

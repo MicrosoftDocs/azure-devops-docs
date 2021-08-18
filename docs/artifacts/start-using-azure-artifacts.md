@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: rabououn
 author: chcomley
-ms.date: 07/02/2021
+ms.date: 08/13/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -46,6 +46,30 @@ Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension has b
 ::: moniker-end
 
 ::: moniker range=">=azure-devops-2019"
+
+## Get started with Azure Artifacts
+
+With Azure Artifacts you can publish, consume, and share different types of packages depending on your team's need. Select your package type to lean more: 
+
+- [NuGet](./get-started-nuget.md)
+- [Npm](./get-started-npm.md)
+- [Maven](./get-started-maven.md)
+- [Python](./quickstarts/python-packages.md)
+- [Universal Packages](./quickstarts/universal-packages.md)
+
+## Feature availability
+
+Check out the compatibility table to see if your package type is supported.
+
+| Feature                           | Azure DevOps Services  |          Azure DevOps Server          |                    TFS                       |
+|-----------------------------------|------------------------| --------------------------------------|  --------------------------------------------|
+| **NuGet**                         | Yes                    | Yes                                   | TFS 2017 and newer                           |
+| **npm**                           | Yes                    | Yes                                   | TFS 2017 Update 1 and newer                  |
+| **NuGet.org upstream source**     | Yes                    | Yes                                   | TFS 2018 Update 2 and newer                  |
+| **Maven**                         | Yes                    | Yes                                   | TFS 2018 and newer                           |
+| **Maven Central upstream source** | Yes                    | Azure DevOps Server 2019 Update 1 and newer, Azure DevOps Server 2020| Yes           |
+| **Python**                        | Yes                    | Azure DevOps Server 2019 Update 1 and newer, Azure DevOps Server 2020| Yes           |
+| **Universal Packages**            | Yes                    | No                                    | No                                           |
 
 ## Artifacts free tier and upgrade
 
