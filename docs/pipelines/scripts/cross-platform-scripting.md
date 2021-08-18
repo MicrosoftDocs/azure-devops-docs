@@ -130,7 +130,7 @@ It requires each agent to have PowerShell Core installed.
 
 ## Switch based on platform
 
-In general we recommend that you avoid platform-specific scripts to avoid problems such as duplication of your pipeline logic. Duplication causes extra work and extra risk of bugs.
+In general, we recommend that you avoid platform-specific scripts to avoid problems such as duplication of your pipeline logic. Duplication causes extra work and extra risk of bugs.
 However, if there's no way to avoid platform-specific scripting, then you can use a `condition` to detect what platform you're on. 
 
 For example, suppose that for some reason you need the IP address of the build
@@ -183,7 +183,7 @@ First, add a Linux script.
 
 4. Change the value of **Run this task** to "Custom conditions".
 
-5. In the **Custom condition** field which appears, enter "eq( variables['Agent.OS'], 'Linux' )".
+5. In the **Custom condition** field that appears, enter "eq( variables['Agent.OS'], 'Linux' )".
 
 Next, add a macOS script.
 
@@ -209,9 +209,9 @@ Next, add a Windows script.
 
 4. Change the value of **Run this task** to "Custom conditions".
 
-5. In the **Custom condition** field which appears, enter "eq( variables['Agent.OS'], 'Windows_NT' )".
+5. In the **Custom condition** field that appears, enter "eq( variables['Agent.OS'], 'Windows_NT' )".
 
-Finally, add a task which uses the value, no matter how we got it.
+Finally, add a task that uses the value, no matter how we got it.
 
 1. Add a **Command line** task to your pipeline.
 
