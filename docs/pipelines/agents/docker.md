@@ -389,7 +389,9 @@ If you're sure you want to do this, see the [bind mount](https://docs.docker.com
 ## Use Azure Kubernetes Service cluster
 
 > [!NOTE]
-> Running Azure Pipelines agent is not supported in AKS 1.19 and later.
+> Running Azure Pipelines agent is not supported in AKS 1.19 and later due to docker-in-docker no longer being available.
+> 
+> The following instructions only work on AKS versions lower than 1.18.
 
 ### Deploy and configure Azure Kubernetes Service 
 
