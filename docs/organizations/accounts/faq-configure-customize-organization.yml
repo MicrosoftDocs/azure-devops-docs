@@ -116,7 +116,7 @@ sections:
       - question: |
           Q: How do I create another organization?
         answer: |
-          A: Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
+          A: Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
           
           ![Create another organization.](media/sign-up-visual-studio-team-services/my-info-organization-list.png)
           
@@ -228,7 +228,7 @@ sections:
       - question: |
           Q: Can I change my organization Owner?
         answer: |
-          A: Yes. If you have at least Basic access, you can change the organization Owner in your organization settings. For more information, see [Change the organization owner](./change-organization-ownership.md).
+          A: Yes. If you are a Project Collection Administrator, you can change the organization Owner in your organization settings. For more information, see [Change the organization owner](./change-organization-ownership.md).
           
       - question: |
           Q: Can I change the organization name (URL), too?

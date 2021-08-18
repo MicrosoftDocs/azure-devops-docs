@@ -134,7 +134,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 Use these shortcuts when working in Team Explorer. 
 
 <table>
-<tbody valign="top" width="100%" style="font-size:90%">
+<tbody>
 <tr>
 <td width="56%">
 <p><strong>Navigate</strong></p> 

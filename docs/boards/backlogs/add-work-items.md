@@ -64,7 +64,7 @@ Create as many work items as you need of the type you need to track the work you
 
 1.  From **Work**, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
-    <img src="media/add-work-items-choose-user-story.png" alt="Add a work item" style="border: 1px solid #C3C3C3;" /> 
+    <img src="media/add-work-items-choose-user-story.png" alt="Add a work item" /> 
 
     > [!NOTE]  
     >Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), 

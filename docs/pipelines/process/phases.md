@@ -322,6 +322,7 @@ Currently, only the following tasks are supported out of the box for agentless j
 * [Delay task](../tasks/utility/delay.md)
 * [Invoke Azure Function task](../tasks/utility/azure-function.md)
 * [Invoke REST API task](../tasks/utility/http-rest-api.md)
+* [Manual Validation task](../tasks/utility/manual-validation.md)
 * [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
 * [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
 * [Query Work Items task](../tasks/utility/work-item-query.md)
@@ -614,7 +615,7 @@ time the job is queued or is waiting for an agent.
 
 The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. When `0` is specified, the maximum limit is used (described above).
 
-The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time when the deployment task is set to keep running if a previous task has failed. When not specified, the default is 5 minutes.
+The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time when the deployment task is set to keep running if a previous task has failed. When not specified, the default is 5 minutes. The value should be in range from **1** to **35790** minutes.
 
 ```yaml
 jobs:

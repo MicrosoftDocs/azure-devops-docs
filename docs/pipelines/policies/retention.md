@@ -145,6 +145,7 @@ The following information is deleted when a run is deleted:
 * Binaries
 * Test results
 * Run metadata
+* Source labels (TFVC) or tags (Git)
 
 Universal packages, NuGet, npm, and other packages are not tied to pipelines retention. 
 
@@ -506,9 +507,13 @@ No. Manual test results are not deleted.
 
 ::: moniker range=">= azure-devops-2019"
 
-### How do I preserve my version control labels? 
+### How do I preserve my version control labels or tags? 
 
-Version control labels created during a build will be deleted when your build is deleted. If you need to preserve version control labels, you'll need to retain any associated builds. 
+> [!CAUTION]
+> Any version control labels or tags that are applied during a build pipeline that arent automatically created from the Sources task will be preserved, even if the build is deleted. 
+> However, any version control labels or tags that are automatically created from the Sources task during a build are considered part of the build artifacts and will be deleted when the build is deleted. 
+
+If version control labels or tags need to be preserved, even when the build is deleted, they will need to be either applied as part of a task in the pipeline, manually labeled outside of the pipeline, or the build will need to be retained indefinitely.
 
 ::: moniker-end
 

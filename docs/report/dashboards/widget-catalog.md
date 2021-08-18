@@ -898,7 +898,7 @@ You may find additional widgets of interest from the [Marketplace](https://marke
 
 If your organization owner or project collection administrator disables a marketplace widget, you'll see the following image: 
 
-<img src="media/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" style="border: 2px solid #C3C3C3;" />   
+<img src="media/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" />   
 
 To regain access to it, request your admin to reinstate or reinstall the widget. 
 

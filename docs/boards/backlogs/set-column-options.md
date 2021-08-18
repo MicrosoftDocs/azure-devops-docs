@@ -14,6 +14,7 @@ ms.date: 07/09/2021
 # Change column options 
 
 [!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [temp](../includes/version-visual-studio.md)]
 
 <a id="column-options">  </a>
 
@@ -187,6 +188,9 @@ Start by opening the **Column Options** dialog. If you don't see the option, cho
 
 ## Add or remove columns
 
+
+#### [Browser](#tab/browser/)
+
 ::: moniker range=">= tfs-2018"
 
 In the Column options dialog, choose **Add a column** to add a field that isn't shown. To change the order of the fields, drag-and-drop the field where you want it within the set of selected fields. And, to remove a field, choose the ![delete icon](../media/icons/delete_icon.png).
@@ -210,6 +214,28 @@ Find the field you want to add from the **Available columns** set and choose **>
 ![Column options dialog, TFS](media/b-vs-b-column-options.png)
 
 ::: moniker-end
+
+
+#### [Visual Studio](#tab/visual-studio/)
+
+You can only change column options for queries in Visual Studio. To open, choose **Column Options**.
+
+:::image type="content" source="media/columns/open-column-options-visual-studio.png" alt-text="Screenshot of Query Results, Visual Studio, open Column Options.":::
+
+### Add or remove fields 
+In the Column Options dialog, to add a field, choose the field from Available columns and choose the **> Add selected columns**. To add multiple fields, use shift click to select the fields. Fields are added to the bottom of the Selected columns area. 
+
+To change the field order, choose the field and choose the up or down arrows.  
+
+:::image type="content" source="media/columns/column-options-dialog-visual-studio.png" alt-text="Column Options dialog, Visual Studio, Fields tab.":::
+
+### Change the sort order 
+
+To change the fields use to sort the query results, choose the **Sorting** tab. Add or remove a column field same as before, and use the up and down arrows to specify the order of fields to use to sort. Choose the up or down arrows to choose whether it sorts in ascending or descending order.  To reverse the sort order for a field, select it and then choose **Sort ascending** or **Sort descending**.  
+
+:::image type="content" source="media/columns/column-options-dialog-sorting-visual-studio.png" alt-text="Column Options dialog, Visual Studio, Sorting tab.":::
+
+* * *
 
 ::: moniker range=">= azure-devops-2020"
 

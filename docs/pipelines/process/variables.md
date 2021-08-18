@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 07/08/2021
+ms.date: 07/27/2021
 
 monikerRange: '>= tfs-2015'
 ---
@@ -92,7 +92,7 @@ Macro syntax variables remain unchanged with no value because an empty value lik
 Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`. Macro variables are not expanded when used to display a job name inline. Instead, you must use the `displayName` property.
 
 > [!NOTE]
-> Variables are only expanded for `stages`, `jobs`, and `steps`.
+> Macro syntax variables are only expanded for `stages`, `jobs`, and `steps`.
 > You cannot, for example, use macro syntax inside a `resource` or `trigger`.
 
 In this example, macro syntax is used with Bash, PowerShell, and a script task. The syntax for calling a variable with macro syntax is the same for all three. 
@@ -757,7 +757,7 @@ When `issecret` is set to true, the value of the variable will be saved as secre
 steps:
 # Create a variable
 - bash: |
-    echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
+    echo "##vso[task.setvariable variable=sauce]crushed tomatoes" # remember to use double quotes
 
 # Use the variable
 # "$(sauce)" is replaced by the contents of the `sauce` variable by Azure Pipelines

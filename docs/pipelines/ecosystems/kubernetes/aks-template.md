@@ -219,4 +219,4 @@ We invite you to learn more about:
   - [Environments](../../process/environments.md)
   - [Deployment jobs](../../process/deployment-jobs.md)
   - [Stages](../../process/stages.md)
-  - [Docker registry service connections](../../library/service-endpoints.md#sep-docreg) (the method your pipeline uses to connect to the service)
+  - [Docker registry service connections](../../library/service-endpoints.md#docker-registry-service-connection) (the method your pipeline uses to connect to the service)

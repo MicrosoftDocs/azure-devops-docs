@@ -223,7 +223,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 
 Backlog displays with work item icons is supported for TFS 2017.2 and later versions. For TFS 2017.1 and earlier versions, items that are owned by other teams appear with hollow-filled bars.  
 
-<img src="media/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership, TFS 2017 version." style="border: 1px solid #C3C3C3;" /> 
+<img src="media/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership, TFS 2017 version." /> 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015" 
@@ -269,7 +269,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 ::: moniker range="<= tfs-2015" 
 
-<img src="media/ALM_OB_MutliTeamOwnershipEpics.png" alt="Drill-down of Epics showing features and backlog items owned by other teams" style="border: 1px solid #C3C3C3;" />  
+<img src="media/ALM_OB_MutliTeamOwnershipEpics.png" alt="Drill-down of Epics showing features and backlog items owned by other teams" />  
 
 ::: moniker-end 
 

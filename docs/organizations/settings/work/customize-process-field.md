@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 05/21/2021 
+ms.date: 08/16/2021 
 ---
 
 # Add and manage fields (Inheritance process)   
@@ -50,6 +50,11 @@ For descriptions and usage of each field, as well as the Reference name for each
 <a id="add-field">  </a>
 <a id="add-custom-field">  </a>
 
+
+## Custom field names
+
+When you add a custom field to an inherited process, Azure DevOps assigns a reference name prefixed with *Custom* and then then name of the field with spaces removed. For example, you add a field named DevOps Triage, the reference name is **Custom.DevOpsTriage**. No spaces are allowed within the reference name.  
+
 ## Add a custom field 
 
 You can add fields and specify the group and page where they should appear. Also, once you've added a field, you can drag-and-drop it within a page to move its placement within the form. If you have several fields you want to add to a custom page or group, then [add those pages or groups first](customize-process-form.md) and then add your fields. 
@@ -78,19 +83,19 @@ You can add fields and specify the group and page where they should appear. Also
 	
 	Here we add an Integer field labeled Customer Ticket. 
 
-    <img src="media/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" style="border: 1px solid #C3C3C3;" /> 
+    <img src="media/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" /> 
 
 	<a id="options">  </a>
 1.	(Optional) On the <strong>Options</strong> tab, indicate if the field is required and specify a default value. Or leave the values blank. By making a field **Required**, users must specify a value for the field to save the work item. When you create a work item as well as every time someone opens a work item  and the field is empty, the default value is set.  
 
-	<img src="media/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" />  
 
 	<a id="layout">  </a>
 1.	(Optional) On the <strong>Layout</strong> tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form.
 
 	Here, we add the Customer Ticket field to a new group labeled Customer focus. 
 
-	<img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" />  
 
 	> [!NOTE]    
 	> While you can change the form label, you must use the field name when you are adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [Taskboard](../../../boards/sprints/customize-taskboard.md)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
@@ -184,7 +189,7 @@ Use an Identity-based field to add a field similar to the Assigned To field. Ide
 
 2. Choose Boolean as the type, and give it a label. Here we label the field as Triaged to track the triage state of the bug.  
 
-	<img src="media/process/cpfield-add-boolean-field-to-bug.png" alt="Add a boolean field" style="border: 1px solid #C3C3C3;" />   
+	<img src="media/process/cpfield-add-boolean-field-to-bug.png" alt="Add a boolean field" />   
 
 3. (Optional) Open the <strong>Options</strong> tab and specify if the field should be required. 
 
@@ -315,7 +320,7 @@ You can choose to show or hide an inherited field or a custom control from appea
 
 2. Confirm that you want to remove the field.  
 
-	<img src="media/process/customize-process-remove-field-confirm.png" alt="Confirm to remove field from the bug work item form" style="border: 1px solid #C3C3C3;" />   
+	<img src="media/process/customize-process-remove-field-confirm.png" alt="Confirm to remove field from the bug work item form" />   
 
 1. To add a custom field that's been removed, choose **New field** and select **Use an existing field**.  
 

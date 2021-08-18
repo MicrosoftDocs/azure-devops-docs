@@ -49,8 +49,8 @@ helm install --name sampleapp stable/prometheus-operator
 
 ## Create service connections
 - Navigate to **Project settings** -> **Pipelines** -> **Service connections**.
-- Create a [Docker registry service connection](../../library/service-endpoints.md#sep-docreg) associated with your container registry. Name it **azure-pipelines-canary-k8s**.
-- Create a [Kubernetes service connection](../../library/service-endpoints.md#sep-kuber) for the Kubernetes cluster and namespace you want to deploy to. Name it **azure-pipelines-canary-k8s**.
+- Create a [Docker registry service connection](../../library/service-endpoints.md#docker-registry-service-connection) associated with your container registry. Name it **azure-pipelines-canary-k8s**.
+- Create a [Kubernetes service connection](../../library/service-endpoints.md#kubernetes-service-connection) for the Kubernetes cluster and namespace you want to deploy to. Name it **azure-pipelines-canary-k8s**.
 
 ## Setup continuous integration
 1. Navigate to **Pipelines** -> **New pipeline** and select your repository.

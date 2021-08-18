@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Patterns for safe cross-platform scripting
 ms.topic: conceptual
 ms.assetid: 96b7da24-617e-4a58-b65f-040c374e60e2
-ms.date: 07/03/2019
+ms.date: 11/10/2020
 monikerRange: '>= tfs-2018'
 ---
 

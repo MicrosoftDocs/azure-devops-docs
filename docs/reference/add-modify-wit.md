@@ -203,7 +203,7 @@ In the web portal, work items appear in query results and on the backlog and boa
 > [!NOTE]    
 >**Feature availability:** <!---For Hosted XML process model, you can customize the WIT color, icon, and workflow state color. -->For On-premises XML, you can customize the workflow state color for TFS 2015.2 or later versions, and you can customize the WIT icon for TFS 2017.2 and later versions.  
  
-<img src="media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
+<img src="media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" />  
 
 
 ## Change the type of an existing work item  

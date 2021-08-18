@@ -827,6 +827,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/artifacts/symbols/setting-up-github-sourcelinking.md",
+      "redirect_url": "/azure/devops/pipelines/artifacts/symbols?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/notifications/manage-personal-notifications.md",
       "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
       "redirect_document_id": false
@@ -18158,6 +18163,46 @@
     {
       "source_path": "docs/organizations/security/git-permissions-before-2017.md",
       "redirect_url": "/azure/devops/repos/git/set-git-repository-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/api-ref/iprocess-templates-add-update-template.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/api-ref/iprocess-templates-add-update-template",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/api-ref/open.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/api-ref/open",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/api-ref/partialopen.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/api-ref/partialopen",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/create-your-backlog-tasks-using-project.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/schedule-projects-using-microsoft-project.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/schedule-projects-using-microsoft-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/add-share-storyboard-shapes.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/add-share-storyboard-shapes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/rollup-estimated-and-actual-work-using-project.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/rollup-estimated-and-actual-work-using-project",
       "redirect_document_id": false
     }
   ]

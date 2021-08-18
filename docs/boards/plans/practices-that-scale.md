@@ -30,7 +30,7 @@ As your organization grows, you'll want to scale your practices to remain agile 
 	- "Keep the values, keep the principles, think for yourself.  A core premise of Agile is that the people doing the work are the people who can best figure out how to do it." 
 
 ## Create rhythm and flow 
-<meta name="keywords" content="Agile culture,scaling agile,Agile tools" />
+
 By adopting a shared cadence and set of periodic communications, you create a constant flow of activity throughout the organization. Practices that help create rhythm and flow within larger organizations include: 
 
 - **Shared cadence**: [Regular sprints and releases](../sprints/define-sprints.md) establish the rhythm of the business. Having all teams work to a shared cadence helps with all coordination and collaboration activities. 
@@ -54,7 +54,6 @@ Engaging customers throughout your product lifecycle is a primary Agile principl
 
 ## Improve project visibility
 
-<meta name="keywords" content="Agile culture,Agile project management,Agile tools" />
 The more insight you and your teams have into the goal, vision, and progress of the work being done, the better enabled you&#39;ll be to reduce risks and manage dependencies. 
 
 - **Team structure**: No matter how large your organization gets, structuring your organization around small teams of 6 to 9 scales. Create [vertical, autonomous feature teams](agile-culture.md#horizontal-vs-vertical) grouped under portfolio management areas. 

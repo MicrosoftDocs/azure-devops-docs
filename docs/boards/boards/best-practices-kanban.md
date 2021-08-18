@@ -60,7 +60,7 @@ After a team has worked with WIP limits for several weeks, discuss the challenge
 
 * **Use metrics to adjust processes.** Periodically check Kanban metrics of work in progress and lead time to determine when changes need to be made. 
 
-* **Manage culture changes mindfully.** People want to do their best work&mdash;a core tenant underlying Kanban and its associated disciplines. Apply change management principles as you adopt new practices. Create greater ownership within the team for the success of implementing WIP limits.
+* **Manage culture changes mindfully.** People want to do their best work&mdash;a core tenet underlying Kanban and its associated disciplines. Apply change management principles as you adopt new practices. Create greater ownership within the team for the success of implementing WIP limits.
 
 <a id="dod" />
 
@@ -83,7 +83,7 @@ As a starting point, consider some of the following criteria as you work with yo
   </tr>
   <tr valign="top">
     <td>Before work starts on a feature, user story, or requirement</td>
-    <td style="padding:100">
+    <td>
 <ol>
 <li>User story is properly scoped and estimated.</li>
 <li>Acceptance criteria is well defined.</li>
@@ -143,7 +143,7 @@ Acceptance criteria corresponds to what a customer should expect when a user sto
 
 Acceptance criteria defines when a feature is shippable. Capture the criteria for each backlog item in the Acceptance Criteria field (for Scrum product backlog items) or the Description field (for Agile user stories and CMMI requirements).
 
-<img src="media/vso-product-backlog-work-item-form-acceptance-criteria.png" alt="Acceptance criteria field on work item form]" style="border: 1px solid #C3C3C3;" />  
+<img src="media/vso-product-backlog-work-item-form-acceptance-criteria.png" alt="Acceptance criteria field on work item form]" />  
 
 The Definition of Done, on the other hand, is about delivering an incremental piece of a feature as it moves from not started to complete. Agile teams meet with greater success when each handoff made is in a ready state for the recipient to begin their work. 
 

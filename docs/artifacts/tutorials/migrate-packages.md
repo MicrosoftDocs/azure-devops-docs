@@ -43,9 +43,9 @@ To migrate your packages, you will need the index URL to your source, and destin
 
 You can easily copy the destination URL from the **Connect to feed** dialog box.
 
-<img alt="Go to Artifacts Home, Select Connect to Feed" src="../media/connect-to-feed-azure-devops-newnav.png" style="border: 1px solid #CCCCCC" />
+<img alt="Go to Artifacts Home, Select Connect to Feed" src="../media/connect-to-feed-azure-devops-newnav.png" />
 
-<img alt="Copy the index URL" src="../media/nuget-index-url.png" style="border: 1px solid #CCCCCC" />
+<img alt="Copy the index URL" src="../media/nuget-index-url.png" />
 
 ### Get Index URL from MyGet
 

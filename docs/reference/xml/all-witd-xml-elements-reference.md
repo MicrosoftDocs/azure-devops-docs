@@ -48,8 +48,8 @@ You can customize an existing work item type (WIT) or create a WIT to meet your 
 The structural elements used in the previous example are described in the following table:  
 
 
-<table Responsive="true" summary="table">
-<tr Responsive="true">
+<table>
+<tr>
 <th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th>
 </tr>
 <tr>

@@ -35,9 +35,6 @@
   - name: "Use @mentions in discussions" 
     href: ../../notifications/at-mentions.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     displayname: people picker 
-  - name: "Use #ID to link to work items"
-    href: ../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    displayname: pull requests, commits, comments, build, wiki
   - name: Add tags to work items
     href: ../queries/add-tags-to-work-items.md
     displayname: chart, color-code, filter, show, query, bulk modify
@@ -49,6 +46,15 @@
   - name: Email or print work items
     href: email-work-items.md  
     displayName: cards 
+- name: Track work, code, builds, and releases
+  items:
+  - name: "Use #ID to link to work items"
+    href: ../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    displayname: pull requests, commits, comments, build, wiki
+  - name: Configure Git repositories to integrate with work tracking 
+    href: ../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Auto complete work items with pull requests
+    href: auto-complete-work-items-pull-requests.md  
   - name: Drive Git development
     displayName: create branch, new branch, build 
     href: ../backlogs/connect-work-items-to-git-dev-ops.md
