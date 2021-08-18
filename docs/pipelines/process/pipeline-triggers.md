@@ -25,7 +25,7 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 ## Configure pipeline resource triggers
 
-To trigger a pipeline upon the completion of another pipeline, specify the triggering pipeline as a [pipeline resource](resources.md#resources-pipelines).
+To trigger a pipeline upon the completion of another pipeline, specify the triggering pipeline as a [pipeline resource](resources.md#define-a-pipelines-resource).
 
 The following example has two pipelines - `app-ci` (the pipeline defined by the YAML snippet), and `security-lib-ci` (the triggering pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of `security-lib-ci` is built.
 
@@ -92,7 +92,7 @@ resources:
 ```
 
 > [!NOTE]
-> The pipeline resource also has a `tags` property. The `tags` property of the pipeline resource is used to determine which pipeline run to retrieve artifacts from, when the pipeline is triggered manually or by a scheduled trigger. For more information, see [Resources: pipelines](resources.md#resources-pipelines) and [Evaluation of artifact version](resources.md#evaluation-of-artifact-version).
+> The pipeline resource also has a `tags` property. The `tags` property of the pipeline resource is used to determine which pipeline run to retrieve artifacts from, when the pipeline is triggered manually or by a scheduled trigger. For more information, see [Resources: pipelines](resources.md#define-a-pipelines-resource) and [Evaluation of artifact version](resources.md#evaluation-of-artifact-version).
 
 ## Stage filters
 
