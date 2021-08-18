@@ -23,11 +23,11 @@ Feed owners have the ability to specify who can create or administer Artifacts f
 
 By default, everyone in the same organization have the permission to create new feeds. A user who creates a feed is both an owner and an administrator of that feed.
 
-1: Users in the same organization are able to create new feeds.
+1. Users in the same organization are able to create new feeds.
 
-2: Only feed administrators and users or groups specified here 2 are able to create new feeds.
+2. Only feed administrators and users or groups specified here 2 are able to create new feeds.
 
-3: Users or groups added here become administrators of all the feeds in the organization.
+3. Users or groups added here become administrators of all the feeds in the organization.
 
 :::image type="content" source="media/artifacts-settings.png" alt-text="Screenshot showing how to set up Azure Artifacts settings":::
 
@@ -56,7 +56,7 @@ By default, everyone in the same organization have the permission to create new 
 
     :::image type="content" source="media/add-users-groups.png" alt-text="Screenshot showing the add users/groups button.":::
 
-4. Add new user(s)/group(s), and then select their access role. Select *Save** when you are done.
+4. Add new user(s)/group(s), and then select their access role. Select **Save** when you are done.
 
     :::image type="content" source="media/add-users-groups-dialogue.png" alt-text="Screenshot showing how to add new users or groups.":::
 
