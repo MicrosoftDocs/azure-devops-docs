@@ -182,7 +182,8 @@ sections:
           No, you can't use the monthly Azure credits from [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/subscriber-benefits-vs)
           to pay for Azure DevOps. Before you make purchases by using this type of Azure subscription, you must [remove your spending limit](https://azure.microsoft.com/pricing/spending-limits/).
           
-          <img alt="Spending limit" src="media/spending-limit.png" style="border: 1px solid #CCCCCC" />
+          > [!div class="mx-imgBorder"]
+          > ![Screenshot of spending limit.](media/spending-limit.png)
           
           <a name="spending-limit"></a>
           
@@ -190,8 +191,8 @@ sections:
           > Remove your spending limit indefinitely. This prevents disabling your Azure subscription when your recurring monthly charges are billed the next month.
           > Otherwise, all resources billed to this subscription are suspended, including virtual machines and all other workloads.
           
-          
-          <img alt="Remove spending limit indefinitely" src="media/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
+          > [!div class="mx-imgBorder"]
+          > ![Screenshot of removing spending limit indefinitely.](media/remove-spending-limit.png)
           
           
       - question: |

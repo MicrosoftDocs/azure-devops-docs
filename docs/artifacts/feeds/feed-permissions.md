@@ -92,7 +92,7 @@ In Azure Artifacts, feeds can be grouped into two categories: project-scoped and
 | Edit feeds settings                           |          |              |             | &#x2713; |     &#x2713;    |
 
 > [!NOTE]
-> To access a feed in a different organization, you must be given access to the project hosting that feed.
+> To access a project-scoped feed, a user must also have access to the project hosting that feed.
 
 ## Views permissions
 

@@ -102,19 +102,11 @@ To get selection events (information about what work items are selected) impleme
 	}
 ...
 ```
-	
 
-## Next Steps
+## Next steps
 
-<div name="row" style="padding-top:15px">
-    <div style="vertical-align:top;display:inline-block;float:left;width:50%">
-        <div class="index-button" align="right" style="padding-right:10px">
-        <a href="../publish/overview.md"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Package, Publish, and Install</button></a>
-        </div>
-    </div>
-    <div style="vertical-align:top;display:inline-block;float:left;width:50%">
-        <div class="index-button" align="left" style="padding-left:10px">
-        <a href="/previous-versions/azure/devops/extend/test/debug-in-browser"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Test and Debug</button></a>
-        </div>
-    </div>
-</div>
+> [!div class="nextstepaction"]
+> [Package, Publish, and Install](../publish/overview.md)
+or
+> [!div class="nextstepaction"]
+> [Test and Debug](https://docs.microsoft.com/previous-versions/azure/devops/extend/test/debug-in-browser)
