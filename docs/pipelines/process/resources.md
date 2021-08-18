@@ -738,7 +738,7 @@ Whenever a pipeline deploys to an environment, you can see a list of resources t
 
 ### Show associated CD pipelines information in CI pipelines
 
-To provide end-to-end traceability, you can track which CD pipelines are consuming a giving CI pipeline. You can see the list of CD YAML pipelines runs where a CI pipeline run is consumed through the `pipeline` resource. If other pipelines consume your CI pipeline , you see an "Associated pipelines" tab in the run view,. Her you can find all the pipeline runs that consume your pipeline and artifacts from it.
+To provide end-to-end traceability, you can track which CD pipelines are consuming a giving CI pipeline. You can see the list of CD YAML pipelines runs where a CI pipeline run is consumed through the `pipeline` resource. If other pipelines consume your CI pipeline, you see an "Associated pipelines" tab in the run view. Here you can find all the pipeline runs that consume your pipeline and artifacts from it.
 
 ![CD pipelines information in CI pipeline](media/cdinfo-in-ci-pipelines.png)
 
