@@ -3,7 +3,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 05/12/2021
+ms.date: 08/18/2021
 ---
 
 
@@ -20,9 +20,6 @@ ms.date: 05/12/2021
 :::row:::
    :::column span="2":::
       **Task or permission** 
-   :::column-end:::
-   :::column span="1":::
-      **Stakeholder**
    :::column-end:::
    :::column span="1":::
      **Readers**
@@ -48,17 +45,11 @@ ms.date: 05/12/2021
    :::column span="1":::
       ✔️
    :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
       **Edit work items in this node** 
       (Area Path permission)
-   :::column-end:::
-   :::column span="1":::
-      ✔️
    :::column-end:::
    :::column span="1":::
       
@@ -74,9 +65,6 @@ ms.date: 05/12/2021
    :::column span="2":::
       **Create tag definition** 
       *(Stakeholders can assign existing tags to work items, but can't add new tags)*
-   :::column-end:::
-   :::column span="1":::
-      ✔️
    :::column-end:::
    :::column span="1":::
        
@@ -95,9 +83,6 @@ ms.date: 05/12/2021
       (Project-level permission)
    :::column-end:::
    :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
        
    :::column-end:::
    :::column span="1":::
@@ -111,9 +96,6 @@ ms.date: 05/12/2021
    :::column span="2":::
       **Move work items out of this project**
       (Project-level permission)
-   :::column-end:::
-   :::column span="1":::
-       
    :::column-end:::
    :::column span="1":::
       
@@ -131,9 +113,6 @@ ms.date: 05/12/2021
       Email work items
    :::column-end:::
    :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
 
    :::column-end:::
    :::column span="1":::
@@ -147,9 +126,6 @@ ms.date: 05/12/2021
 :::row:::
    :::column span="2":::
       Apply a work item template
-   :::column-end:::
-   :::column span="1":::
-      ✔️
    :::column-end:::
    :::column span="1":::
       
@@ -170,9 +146,6 @@ ms.date: 05/12/2021
       (able to restore from the Recycle bin)
    :::column-end:::
    :::column span="1":::
-
-   :::column-end:::
-   :::column span="1":::
       
    :::column-end:::
    :::column span="1":::
@@ -188,9 +161,6 @@ ms.date: 05/12/2021
    :::column span="2":::
       **Permanently delete work items**
       (Project-level permission) 
-   :::column-end:::
-   :::column span="1":::
-
    :::column-end:::
    :::column span="1":::
       
@@ -209,9 +179,6 @@ ms.date: 05/12/2021
       [Provide feedback](/azure/devops/project/feedback/give-feedback) (through the Microsoft Feedback client)
    :::column-end:::
    :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
       
    :::column-end:::
    :::column span="1":::
@@ -225,9 +192,6 @@ ms.date: 05/12/2021
 :::row:::
    :::column span="2":::
       [Request feedback](/azure/devops/project/feedback/get-feedback) 
-   :::column-end:::
-   :::column span="1":::
-
    :::column-end:::
    :::column span="1":::
       
