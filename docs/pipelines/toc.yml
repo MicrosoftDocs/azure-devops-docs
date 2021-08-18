@@ -581,7 +581,7 @@
       href: agents/docker.md
     - name: Use a self-signed certificate
       href: agents/certificate.md
-    - name: Create & use deployment groups
+    - name: Create & use deployment groups (Classic)
       items:
         #    - name: About deployment groups & deployment group jobs
         #      href: release/deployment-groups/index.md
