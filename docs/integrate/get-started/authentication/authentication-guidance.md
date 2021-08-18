@@ -4,7 +4,7 @@ description: Guidance for authentication with Azure DevOps Services.
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.custom: has-adal-ref
+ms.custom: 
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
