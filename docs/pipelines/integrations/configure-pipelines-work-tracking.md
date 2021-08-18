@@ -322,7 +322,7 @@ Prior to choosing your integration options, you should set up the release stages
 To verify the integration is working, perform the following steps:  
 
 1. Link one or more work items to a commit or pull request in Azure Repos Git repository. For details, see: 
-	-  [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)  
+	-  [Drive Git development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md)  
 	-  [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
 1.  Run the pipeline. 
 
