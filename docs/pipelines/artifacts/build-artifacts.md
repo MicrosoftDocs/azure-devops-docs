@@ -1,6 +1,6 @@
 ---
 title: Publish and consume build artifacts
-description: How to use Artifacts in Azure pipelines
+description: How to use Artifacts in Azure Pipelines
 ms.custom: seodec18
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
