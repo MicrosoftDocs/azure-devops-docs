@@ -162,5 +162,5 @@ A: If you see the message "Access denied: {User} needs Create permissions to do 
 
 ## Related articles
 
-[Define variables](variables.md)
-[Define resources in YAML](resources.md)
+- [Define variables](variables.md)
+- [Define resources in YAML](resources.md)
