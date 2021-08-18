@@ -34,6 +34,13 @@ In the tables provided in this article, a ✔️ indicates that the correspondin
 For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](change-individual-permissions.md), you can do so.
 
 
+## Stakeholder access 
+
+::: moniker range="azure-devops"
+
+Users granted Stakeholder access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
+
+::: moniker-end    
 
 [!INCLUDE [temp](includes/stakeholder-access.md)]
 
@@ -44,16 +51,10 @@ For a comparison chart of Stakeholder versus Basic access, see the [Feature matr
 
 ## Azure Boards
 
-You can plan and track work from the web portal **Boards** hub, and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). To change permissions, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md).
+You can plan and track work from the web portal **Boards** hub, and using Visual Studio, Excel, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). To change permissions, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md). In addition to the permissions set at the [project level via the built-in groups](set-project-collection-level-permissions.md), you can set permissions for the following objects: [area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md) and individual [queries and query folders](../../boards/queries/set-query-permissions.md).  
 
 ::: moniker-end
-
-::: moniker range="azure-devops"
-
-Users granted Stakeholder access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
-
-::: moniker-end    
-
+ 
 ::: moniker range="<= tfs-2018"
 
 ## Work tracking
@@ -69,7 +70,14 @@ Access to the following tasks are controlled by each user's access level or by p
 
 ### General work item feature access
 
-You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md).   
+You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md). 
+
+<!---
+::: moniker range=">= tfs-2013 <= tfs-2018"  
+> [!NOTE]  
+> There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).   
+::: moniker-end  
+-->  
 
 [!INCLUDE [temp](includes/boards-work-items.md)]
 
@@ -92,7 +100,7 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 [!INCLUDE [temp](includes/boards-sprints.md)]
 
-### Queries and semantic search 
+### Queries 
 
 [**Queries**](../../boards/queries/view-run-query.md) are filtered lists of work items based on criteria that you define by using a query editor. [Adhoc searches](../../boards/queries/search-box-queries.md) are powered by a semantic search engine.
 
@@ -109,17 +117,6 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 ::: moniker-end
 
-### Additional permissions 
-
-In addition to the permissions set at the [project level via the built-in groups](set-project-collection-level-permissions.md), you can set permissions for the following objects: [area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md) and individual [queries and query folders](../../boards/queries/set-query-permissions.md).  
-
-
-<!---
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-> [!NOTE]  
-> There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).   
-::: moniker-end  
--->
 
 
 ::: moniker range=">= azure-devops-2019"

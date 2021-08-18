@@ -13,9 +13,6 @@ ms.date: 03/11/2021
       **Task** 
    :::column-end:::
    :::column span="1":::
-      **Stakeholder**
-   :::column-end:::
-   :::column span="1":::
      **Readers**
    :::column-end:::
    :::column span="1":::
@@ -30,9 +27,6 @@ ms.date: 03/11/2021
       Access Azure Test Plans (formerly Test Manager, purchased separately)
    :::column-end:::
    :::column span="1":::
-
-   :::column-end:::
-   :::column span="1":::
       
    :::column-end:::
    :::column span="1":::
@@ -45,9 +39,6 @@ ms.date: 03/11/2021
 :::row:::
    :::column span="2":::
       Create and delete test runs
-   :::column-end:::
-   :::column span="1":::
-      
    :::column-end:::
    :::column span="1":::
       
@@ -72,16 +63,10 @@ ms.date: 03/11/2021
    :::column span="1":::
       ✔️
    :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
       Request feedback using the Test & Feedback extension
-   :::column-end:::
-   :::column span="1":::
-      
    :::column-end:::
    :::column span="1":::
       
@@ -96,9 +81,6 @@ ms.date: 03/11/2021
 :::row:::
    :::column span="2":::
       Exploratory testing, view test runs 
-   :::column-end:::
-   :::column span="1":::
-       
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -119,9 +101,6 @@ ms.date: 03/11/2021
        
    :::column-end:::
    :::column span="1":::
-       
-   :::column-end:::
-   :::column span="1":::
       ✔️
    :::column-end:::
    :::column span="1":::
@@ -131,9 +110,6 @@ ms.date: 03/11/2021
 :::row:::
    :::column span="2":::
       Exploratory testing 
-   :::column-end:::
-   :::column span="1":::
-       
    :::column-end:::
    :::column span="1":::
       
@@ -149,9 +125,6 @@ ms.date: 03/11/2021
 :::row:::
    :::column span="2":::
       Apply a work item template to a test case
-   :::column-end:::
-   :::column span="1":::
-      ✔️
    :::column-end:::
    :::column span="1":::
       
@@ -170,9 +143,6 @@ ms.date: 03/11/2021
       Delete delete test plans, test cases, and other test related work items (able to restore from the Recycle bin)
    :::column-end:::
    :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
       
    :::column-end:::
    :::column span="1":::
@@ -187,9 +157,6 @@ ms.date: 03/11/2021
 :::row:::
    :::column span="2":::
       Permanently delete test plans, test cases, and other test related work items (same as Permanently delete work items)
-   :::column-end:::
-   :::column span="1":::
-
    :::column-end:::
    :::column span="1":::
       

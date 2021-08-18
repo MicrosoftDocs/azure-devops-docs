@@ -6,7 +6,6 @@ ms.topic: include
 ms.date: 08/18/2021
 ---
 
-## Stakeholder access 
 
 ### Azure Boards access
 
@@ -83,3 +82,75 @@ ms.date: 08/18/2021
       - Create and save managed My queries
    :::column-end:::
 :::row-end:::
+
+
+
+### Azure Test Plans access
+
+:::row:::
+   :::column span="1":::
+      **Services** 
+   :::column-end:::
+   :::column span="3":::
+      **Supported features**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Azure Test Plans ** 
+   :::column-end:::
+   :::column span="3":::
+      - Provide feedback using the Test & Feedback extension
+      - Apply a work item template to a test case
+      - Delete delete test plans, test cases, and other test related work items (able to restore from the Recycle bin) 
+   :::column-end:::
+:::row-end:::
+
+
+
+### Azure Pipelines access
+
+> [!NOTE]   
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the :::image type="icon" source="/azure/devops/media/icons/preview.png" border="false"::: preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../provide-stakeholder-pipeline-access.md).
+
+:::row:::
+   :::column span="1":::
+      **Services** 
+   :::column-end:::
+   :::column span="3":::
+      **Supported features**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Private project** 
+   :::column-end:::
+   :::column span="3":::
+      - View and approve releases
+      - View build pipelines
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Public project** 
+   :::column-end:::
+   :::column span="3":::
+      - View release pipelines  
+      - Define builds with continuous integration  
+      - Define releases and manage deployments  
+      - Approve releases  
+      - Azure Artifacts (5 users free)  
+      - Queue builds, edit build quality  
+      - Manage build queues and build qualities  
+      - Manage build retention policies, delete and destroy builds  
+      - Administer build permissions   
+      - Manage release permissions  
+      - Create and edit task groups   
+      - Manage task group permissions  
+      - Can view library items such as variable groups   
+      - Use and manage library items such as variable groups   
+   :::column-end:::
+:::row-end:::
+
+
+
