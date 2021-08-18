@@ -4,7 +4,7 @@ description: Learn the basic patterns for using the REST APIs for Azure DevOps.
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.custom: has-adal-ref
+ms.custom: 
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
