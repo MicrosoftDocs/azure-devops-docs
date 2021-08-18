@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 05/13/2021
+ms.date: 07/22/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -123,6 +123,11 @@ Depending on the execution context, different variables are available.
 - If you create release pipelines using classic editor, then [release variables](../release/variables.md) are available.
 
 Variables are always strings. If you want to use typed values, then you should use [parameters](runtime-parameters.md) instead.
+
+> [!NOTE]
+> There is a limitation for using variables with expressions for both Classical and YAML pipelines when setting up such variables via variables tab UI. Variables that are defined as expressions shouldn't depend on another variable with expression in value since **it isn't guaranteed** that both expressions will be evaluated properly. For example we have variable `a` whose value `$[ <expression> ]` is used as a part for the value of variable `b`. Since the order of processing variables isn't guaranteed variable `b` could have an incorrect value of variable `a` after evaluation.
+>
+> Described constructions are only allowed while setup variables through [variables keyword](./variables.md#set-variables-in-pipeline) in YAML pipeline. It is required to place the variables in the order they should be processed to get the correct values after processing.
 
 ## Functions
 
@@ -376,7 +381,7 @@ steps:
 * Example: `notIn('D', 'A', 'B', 'C')` (returns True)
 
 ### or
-* Evaluates `True` if any parameter is `true`
+* Evaluates `True` if any parameter is `True`
 * Min parameters: 2. Max parameters: N
 * Casts parameters to Boolean for evaluation
 * Short-circuits after first `True`
@@ -449,7 +454,7 @@ You can use the following status check functions as expressions in conditions, b
 
 ## Conditional insertion
 
-You can use an `if` clause to conditionally assign the value or a variable or set inputs for tasks. Conditionals only work when using template syntax.
+You can use an `if` clause to conditionally assign the value or a variable or set inputs for tasks. Conditionals only work when using template syntax. Learn more about [variable syntax](variables.md#understand-variable-syntax). 
 
 For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md).
 

@@ -9,29 +9,33 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 03/29/2021
+ms.date: 07/27/2021
 ---
 
 # Define a query
 
 [!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [temp](../includes/version-visual-studio.md)]
 
 Work item queries generate lists of work items based on the filter criteria you provide. You can then save and share these managed queries with others. In contrast, semantic searches list work items, but can't be saved or shared. 
 
 You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
 
 #### [Browser](#tab/browser/) 
+
 > [!div class="mx-imgBorder"]  
 > ![Query Editor, web browser.](media/using-queries/query-editor.png)  
  
 #### [Visual Studio](#tab/visual-studio/)
-> [!div class="mx-imgBorder"]  
-> ![Query Editor, Visual Studio.](media/using-queries/visual-studio-new-query-editor.png)  
 
-***
+> [!div class="mx-imgBorder"]  
+> ![Query Editor, Visual Studio.](media/using-queries/visual-studio-new-query-editor.png) 
 
 > [!NOTE]  
-> To define queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
+> To define queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option. 
+
+* * *
+
 
 If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
@@ -197,19 +201,47 @@ In addition to the filters you use from the Query Editor, you can interactively 
 
 You can start a fresh, new query from the **Queries** tab in the web portal or the **Work Items** tab in Team Explorer.  
 
+#### [Browser](#tab/browser/) 
+
+
 ::: moniker range=">= azure-devops-2019"  
 
 > [!div class="mx-imgBorder"]  
 > ![Add new query, new experience](media/view-run-queries/new-query-new-exp.png)  
 
+The Query Editor displays with the following default settings: **Flat list of work items**, **Work Item Type=[Any]**, and **State=[Any]**. 
+
+:::image type="content" source="media/using-queries/new-query-web-portal.png" alt-text="Screenshot of Query Editor with flat list of work items selected."::: 
+
+You can modify the **Values** and [add or remove clauses](#define-clause). Or, change the **Type of query** to [Work items and direct links](#directs-link-query) or to a [Tree of work items](#tree-query). 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 
 ![Queries page, Choose New query from the drop down menu](media/using-queries-new-query-ts.png)  
 
+The Query Editor displays with the following default settings: **Flat list of work items**, **Team Project=@Project** (the current project), **Work Item Type=[Any]**, and **State=[Any]**. 
+
+:::image type="content" source="media/using-queries/new-query-flat-list-tfs.png" alt-text="Screenshot of Query Editor with flat list of work items selected, TFS 2018 and earlier versions."::: 
+
+You can modify the **Values** and [add or remove clauses](#define-clause). Or, change the **Type of query** to [Work items and direct links](#directs-link-query) or to a [Tree of work items](#tree-query). 
+
 ::: moniker-end  
 
+ 
+#### [Visual Studio](#tab/visual-studio/)
+
+Choose **New Query** from the **Work Items** page. 
+
+:::image type="content" source="media/using-queries/new-query-visual-studio-2019.png" alt-text="Screenshot of Work Items, choose New Query."::: 
+The Query Editor displays with the following default settings: **Flat list (Default)**, **Team Project=current project**, **Work Item Type=[Any]**, and **State=[Any]**. 
+
+:::image type="content" source="media/using-queries/visual-studio-new-query-editor.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query."::: 
+
+You can modify the **Values** and [add or remove clauses](#define-clause). Or, change the **Type of query** to [Work items and direct links](#directs-link-query) or to a [Tree of work items](#tree-query). 
+
+
+* * * 
 
 <a id="query-across-projects" /> 
 
@@ -219,11 +251,13 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 
 By default, new queries are scoped to the current project. However, you can create queries to find work items defined within the organization or project collection. All queries that you save, however, are saved under a specific project. 
 
+#### [Browser](#tab/browser/) 
+
 ::: moniker range=">= tfs-2015"  
 
 To list work items defined in two or more projects, checkmark **Query across projects**. For example, the following query finds all features created in all projects within the last 30 days.
  
-<img src="media/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across projects" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/using-queries/portal-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across projects" /> 
 
 ::: moniker-end
 
@@ -236,58 +270,90 @@ To list work items defined in two or more projects, checkmark **Query across pro
 
 ::: moniker range=">= tfs-2015"  
 
-With the **Query across projects** checked, you can add the Team Project field to filter to a select number of projects.   
+With the **Query across projects** checked, you can add the **Team Project** field to filter to a select number of projects.   
 
-<img src="media/using-queries-query-across-select-projects.png" alt="Azure Boards and TFS 2015.1, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
+<img src="media/using-queries/portal-query-across-two-projects.png" alt="Azure Boards and TFS 2015.1, Web portal, Query across select projects using the In operator" />
 
 > [!NOTE]
 > Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
 
-The *Team Project* field becomes available only after you check  **Query across projects**.  Moreover, when **Query across projects** is unchecked, only those fields from those WITs defined in the current project appear in the Field drop-down menu. When **Query across projects** is checked, all fields from all WITs defined in all projects in the collection appear in the Field drop-down menu.  
+The **Team Project** field becomes available only after you check  **Query across projects**.  Moreover, when **Query across projects** is unchecked, only those fields from those work item types defined in the current project appear in the **Field** drop-down menu. When **Query across projects** is checked, all fields from all work item types defined in all projects in the collection appear in the **Field** drop-down menu.  
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2013"   
 
-To find all features created in all projects within the last 30 days, remove the <strong>Team Project=@Project</strong> clause from the query.  
+To find all features created in all projects within the last 30 days, remove the **Team Project=@Project** clause from the query.  
 
-<img src="media/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
+<img src="media/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select projects using the In operator" />
 
-All fields from all WITs defined in all projects in the collection always appear in the Field drop-down menu.  
+All fields from all work item types defined in all projects in the collection always appear in the **Field** drop-down menu.  
 
-Use <strong>Team Project=@Project</strong> to scope the query to find only those work items defined for the current project. 
+Use **Team Project=@Project** to scope the query to find only those work items defined for the current project. 
+
 
 ::: moniker-end  
+
+#### [Visual Studio](#tab/visual-studio/)
+
+To list work items defined in two or more projects, change the clause for the **Team Project** using the **In** operator, and enter the names of the projects to search in. For example, the following query finds work items defined in the *Fabrikam Fiber* and *Design Agile* projects.  
+
+:::image type="content" source="media/using-queries/visual-studio-query-multiple-projects.png" alt-text="Screenshot of Visual Studio Query Editor, flat-list query, specify two projects clause":::  
+
+To query across all projects, delete the clause with the **Team Project** field. 
+
+* * *
+
+ 
 <a id="define-clause" />
 
 ## Define a clause
 
-You create a query by defining one or more clauses. Each clause defines a filter criteria for a single field. Choose **Add new clause** to add another clause and then choose the **Field**, **Operator**, and **Value** for that clause.  
+You create a query by defining one or more clauses. Each clause defines a filter criteria for a single field. 
 
-> [!div class="mx-imgBorder"]  
-> ![Define a clause.](media/using-queries/define-clause.png)  
 
-For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (=) operator, and the <strong>@Me</strong> macro which represents your user identity.
+#### Sample query clause 
 
-### Sample query clause 
-
-<table>
-<tr>
-	<th>And/Or</th>
-	<th>Field</th>
-	<th>Operator</th>
-	<th>Value</th></tr>
-<tr>
-	<td><p><strong>And</strong></p></td>
-	<td><p><strong>Assigned To</strong></p></td>
-	<td><p><strong>=</strong></p></td>
-	<td><p><strong>&#64;Me</strong></p></td>
-</tr>
-</table>
+|And/Or|Field|Operator|Value|
+|------|-----|--------|-----|
+|**And**|**Assigned To**|**=**|**&#64;Me**|
 
 For a quick reference of the operators available based on the field data type, see [Query index quick reference](query-index-quick-ref.md#fields-operators-macros). 
 
 All clauses you add are added as an **And** statement. Choose **Or** to change the grouping. You group clauses to ensure that the clause statements are executed in the sequence required. 
+
+#### [Browser](#tab/browser/) 
+
+Choose **Add new clause** to add another clause at then end of the query, and then choose the **Field**, **Operator**, and **Value** for that clause.  
+
+> [!div class="mx-imgBorder"]  
+> ![Define a clause.](media/using-queries/define-clause.png)  
+
+For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (**=**) operator, and the **@Me** macro which represents your user identity.
+
+
+#### [Visual Studio](#tab/visual-studio/)
+
+Choose **Click here to add a clause** to add another clause at then end of the query, and then choose the **Field**, **Operator**, and **Value** for that clause.  
+
+:::image type="content" source="media/using-queries/visual-studio-add-new-clause.png" alt-text="Screenshot of Visual Studio Query Editor, add new clause.":::  
+
+To insert a clause within the existing set of query clauses, place your cursor on the clause below where you want to insert the clause, and then choose **Insert Clause**. Then choose the **Field**, **Operator**, and **Value** for that clause.  
+
+:::image type="content" source="media/using-queries/visual-studio-add-new-clause.png" alt-text="Screenshot of Visual Studio Query Editor, insert clause.":::  
+
+Or, open the context menu for the clause and choose **Insert Clauses**. 
+
+:::image type="content" source="media/using-queries/visual-studio-insert-delete-clauses.png" alt-text="Screenshot of Visual Studio Query Editor, context-menu for insert clauses and delete clause."::: 
+
+To delete a clause, choose the clause you want to delete, and choose :::image type="icon" source="../media/icons/icon-delete-clause-visual-studio.png" border="false"::: **Delete Clause**.
+
+When finished, choose :::image type="icon" source="../media/icons/run_query.png" border="false"::: **Run** or :::image type="icon" source="../media/icons/icon-save-visual-studio.png" border="false"::: **Save Query**.
+ 
+
+
+* * *
+
 
 [!INCLUDE [temp](../includes/tip-wiql-extension.md)]
 
@@ -357,7 +423,7 @@ Define the filter criteria for both parent and child work items. To find linked 
 
 ::: moniker-end  
 
-#### [Visual Studio 2015](#tab/visual-studio/)
+#### [Visual Studio](#tab/visual-studio/)
 
 :::image type="content" source="media/using-queries/tree-backlog-te.png" alt-text="Screenshot, Query Editor, Tree Query, Team Explorer. ":::
 
@@ -397,9 +463,9 @@ Filter your first-tier list of work items by choosing one of these options:
 - **Return all top level items**: All first-tier work items are returned regardless of the linked work items filter criteria. Second-tier work items that are linked to the first tier are returned if they match the linked work items filter criteria.
 
 - **Only return items that do not have matching links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
-- 
+ 
 
-#### [Visual Studio 2015](#tab/visual-studio/)
+#### [Visual Studio](#tab/visual-studio/)
 
 :::image type="content" source="media/using-queries/direct-links-te.png" alt-text="Screenshot, Query Editor, Direct Links Query, Team Explorer.":::
 
@@ -412,7 +478,7 @@ Filter your first-tier list of work items by choosing one of these options:
 - **Only return items that have the specified links**: First-tier work items are returned, but only if they have links to work items specified by the linked work items filter criteria. 
 
 - **Only return items that do not have the specified links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
-- 
+ 
 * * * 
 
 
@@ -435,7 +501,7 @@ You can group query clauses to operate as a single unit separate from the rest o
 
 ### Group clauses
 
-Grouped clauses operate as a single unit separate from the rest of the query, similar to putting parentheses around a mathematical equation or logic expression. The And or Or operator for the first clause in the group applies to the whole group.
+Grouped clauses operate as a single unit separate from the rest of the query, similar to putting parentheses around a mathematical equation or logic expression. The **And** or **Or** operator for the first clause in the group applies to the whole group.
 
 As the following examples show, the grouped clauses are translated to the corresponding logical expression.
 
@@ -478,7 +544,17 @@ If your query results don't return expected results, follow these steps:
 
 ### Ungroup a clause
 
+
+#### [Browser](#tab/browser/) 
+
 To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungroup clauses icon for the grouped clause. 
+
+
+#### [Visual Studio](#tab/visual-studio/)
+
+To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungroup-clause-visual-studio.png" border="false"::: ungroup clauses icon for the grouped clause, Visual Studio. 
+
+* * *
 
 ## Related articles
 

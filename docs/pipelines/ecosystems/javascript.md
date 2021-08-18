@@ -5,7 +5,7 @@ ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: conceptual
 ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js
-ms.date: 08/19/2020
+ms.date: 07/23/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -459,7 +459,7 @@ The following table lists the most commonly used test runners and the reporters 
 | mocha | [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter)<br />[cypress-multi-reporters](https://www.npmjs.com/package/cypress-multi-reporters) |
 | jasmine | [jasmine-reporters](https://www.npmjs.com/package/jasmine-reporters) |
 | jest | [jest-junit](https://www.npmjs.com/package/jest-junit)<br />[jest-junit-reporter](https://www.npmjs.com/package/jest-junit-reporter) |
-| karma | [karma-junit-reporter](https://www.npmjs.com/package/karma-junit-reporter) |
+| karma | [karma-junit-reporter](https://karma-runner.github.io) |
 | Ava | [tap-xunit](https://github.com/aghassemi/tap-xunit) |
 
 This example uses the [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter) and invokes `mocha test` directly by using a script. This produces the JUnit XML output at the default location of `./test-results.xml`. 
@@ -793,7 +793,7 @@ The first example assumes that you manage version information (such as through a
 - script: npm publish
 ```
 
-The next example publishes to a custom registry defined in your repo's `.npmrc` file. You'll need to set up an [npm service connection](/azure/devops/pipelines/library/service-endpoints#sep-npm) to inject authentication credentials into the connection as the build runs.
+The next example publishes to a custom registry defined in your repo's `.npmrc` file. You'll need to set up an [npm service connection](/azure/devops/pipelines/library/service-endpoints#npm-service-connection) to inject authentication credentials into the connection as the build runs.
 
 ```yaml
 - task: Npm@1

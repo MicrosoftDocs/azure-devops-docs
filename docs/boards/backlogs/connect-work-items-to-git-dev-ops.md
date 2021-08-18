@@ -39,7 +39,7 @@ Review this article to learn:
 The **Development** section records all Git development processes that support completion of the work item. This section can show your team information needed to take the next development step and minimize navigational steps to accomplish common development tasks. It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item.<br/>    
 
 
-<img src="media/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />  
+<img src="media/drive-git-development-dev-section.png" alt="Work item form, Development section" />  
 
 ::: moniker range="tfs-2017"
 
@@ -78,15 +78,15 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 1. Start work on the work item by creating a branch. You can add a new Git branch from within the Development section...  
 
-	<img src="media/git-dev-pr-create-branch.png" alt="User story work item form, Development section, create new branch" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/git-dev-pr-create-branch.png" alt="User story work item form, Development section, create new branch" /> 
  
 	... or, from the form's   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu.  
 
-	<img src="media/git-dev-pr-create-branch-from-action-menu.png" alt="User story work item form, Action menu, add new branch" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/git-dev-pr-create-branch-from-action-menu.png" alt="User story work item form, Action menu, add new branch" /> 
 
 	Name the branch and select the repository on which it's based.   
 
-	<img src="media/git-dev-create-branch.png" alt="Create a branch dialog box" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/git-dev-create-branch.png" alt="Create a branch dialog box" />  
 
 	Branches you create are automatically linked to the work item.  
 
@@ -111,7 +111,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 	You create a pull request to merge the changes you made to a main branch and get your changes reviewed by other members of your team.  
 
-	<img src="media/git-dev-pr-create-pull-request-b.png" alt="Work item form, create pull request" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/git-dev-pr-create-pull-request-b.png" alt="Work item form, create pull request" /> 
 
 5.	Your view will switch to **Code**, Pull Requests page. Complete creating the pull request as shown. 
   
@@ -144,11 +144,11 @@ You can also add a new branch from the work item listed on the backlog or Kanban
 
 For example, here we select the first five items to link to a new branch.  
 
-<img src="media/git-dev-multi-select-backlog-create-new-branch.png" alt="Select multiple items from backlog" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/git-dev-multi-select-backlog-create-new-branch.png" alt="Select multiple items from backlog" /> 
 
 And, we specify the name of the branch.  
 
-<img src="media/add-work-item-create-branch-multi-items.png" alt="Create new branch dialog" style="border: 1px solid #C3C3C3;" />   
+<img src="media/add-work-item-create-branch-multi-items.png" alt="Create new branch dialog" />   
 
 
 <a id="link-objects">  </a>
@@ -211,7 +211,7 @@ Keep in mind that the **Development** section only appears within the web portal
 
 With Git commits, any work items that have been linked to a commit are listed under the Associated work items in the build summary page.  
 
-<img src="media/developer-associated-work-items-build.png" alt="Linked work items listed under Associated work items in the build summary page." style="border: 1px solid #C3C3C3;" />  
+<img src="media/developer-associated-work-items-build.png" alt="Linked work items listed under Associated work items in the build summary page." />  
 
 <!--- Add info about option to set build linking; link to release notes if needed --> 
  
@@ -228,13 +228,13 @@ Hovering over any entry listed under the Development section activates the hyper
 ::: moniker range=">= azure-devops-2019"
 The link types you can add within the development section are Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
-<img src="../queries/media/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
+<img src="../queries/media/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" /> 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 The link types you can add within the development section are Branch, Build, Changeset, Commit, Pull Request, and Versioned Item. 
 
-<img src="media/git/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/git/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" /> 
 
 ::: moniker-end
 

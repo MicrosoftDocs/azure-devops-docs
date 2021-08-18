@@ -36,11 +36,11 @@ You can use either the web portal or Team Explorer to view the history of a work
 <a id="team-services" /> 
 
 ::: moniker range=">= tfs-2017"
-<img src="media/hist-audit-query-ts-bt.png" alt="Screenshot of Query Editor to Search for items based on words contained in the History field." style="border: 1px solid #C3C3C3;" /> 
+<img src="media/hist-audit-query-ts-bt.png" alt="Screenshot of Query Editor to Search for items based on words contained in the History field." /> 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-<img src="media/ALM_HA_HistoryQuery.png" alt="Screenshot of Query Editor to Search for items based on words contained in the History field, earlier versions." style="border: 1px solid #C3C3C3;" /> 
+<img src="media/ALM_HA_HistoryQuery.png" alt="Screenshot of Query Editor to Search for items based on words contained in the History field, earlier versions." /> 
 ::: moniker-end
 
 
@@ -115,13 +115,12 @@ Items I&#39;ve been associated with
 
 ### Tips for using the query editor
 
-<ul>
-<li>Type the complete word or phrase that is specified in the <strong>History</strong> field of those work items that you want to find.</li>
-<li>Enter the full text for the word that you want to search. The <strong>History</strong> field is indexed for full-text search. If you enter only a partial word, the query will not return work items that contain the full word. For example, if the <strong>History</strong> field contains the phrase <em>reproducible behavior</em> and you search for <em>repro</em>, the work item will not be found. However, if you search for the complete word <em>reproducible</em>, the work item will be found. You can also search for the string with a wild card, such as <code>repro*</code>. </li>
-<li>The query editor ignores common words or stop words as defined in <a href="/sql/relational-databases/search/configure-and-manage-stopwords-and-stoplists-for-full-text-search"[Configure and Manage Stopwords and Stoplists for Full-Text Search](/sql/relational-databases/search/configure-and-manage-stopwords-and-stoplists-for-full-text-search)">Configure and Manage Stopwords and Stoplists for Full-Text Search</a>.</li>
-<li>On the query editor toolbar, choose <img src="../media/icons/run_query.png" alt="Run query"/> or <img src="../media/icons/run_query_te.png" alt="Run query, earlier version"/> icon and confirm that your query returns expected results.</li>
-<li>If you don&#39;t receive the results you expect, adjust the word or phrase that you entered, and run the query again.</li> 
-</ul> 
+- Type the complete word or phrase that is specified in the **History** field of those work items that you want to find.
+- Enter the full text for the word that you want to search. The **History** field is indexed for full-text search. If you enter only a partial word, the query will not return work items that contain the full word. For example, if the **History** field contains the phrase *reproducible behavior* and you search for *repro*, the work item will not be found. However, if you search for the complete word *reproducible*, the work item will be found. You can also search for the string with a wild card, such as `repro*`. 
+- The query editor ignores common words or stop words as defined in  [Configure and Manage Stopwords and Stoplists for Full-Text Search](/sql/relational-databases/search/configure-and-manage-stopwords-and-stoplists-for-full-text-search).
+- On the query editor toolbar, choose <img src="../media/icons/run_query.png" alt="Run query"/> or <img src="../media/icons/run_query_te.png" alt="Run query, earlier version"/> icon and confirm that your query returns expected results. 
+- If you don&#39;t receive the results you expect, adjust the word or phrase that you entered, and run the query again. 
+ 
 
 
 <a id="view-history" />

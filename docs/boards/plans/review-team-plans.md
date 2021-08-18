@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 05/06/2021
+ms.date: 07/29/2021
 ---
 
 
@@ -173,6 +173,15 @@ As changes occur to the schedule, you can update the iteration for a backlog ite
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing moving a card to a different iteration](media/plans/move-card-iteration.png)
 
+## Print a Delivery Plan 
+
+You can print all or a portion of your delivery plan depending on the view you want to capture and share. You can only print one page at a time using your browser's **Print** feature. 
+
+Here are some tips for printing portions of a plan: 
+
+- Choose :::image type="icon" source="../../media/icons/full-screen-mode.png" border="false"::: **Full screen mode**. 
+- Expand or collapse one or more teams and zoom in or out to get the view that you want. 
+- Take a screenshot of the plan view or choose the **Print** function of your browser. 
 
 ## Related articles  
  

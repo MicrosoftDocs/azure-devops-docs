@@ -83,7 +83,7 @@ Here are a few more SQL Azure VM configurations that we recommend:
 
 ## (Optional) Restrict access to Azure DevOps Services IPs only 
 
-We highly recommend that you restrict access to your VM to only IPs from Azure DevOps Services. You do this by allowing connections only from the set of Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your collection database depend on the region you're importing into. The following tables can help you identify the correct IPs. The only port that's required to be opened to connections is the standard SQL connection port 1433.
+We highly recommend that you restrict access to your VM to only IPs from Azure DevOps Services. You do this by allowing connections only from the set of Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your collection database depend on the region you're importing into. The following tables can help you identify the correct IPs. The only port that's required to be opened to connections is the standard SQL connection port 1433. 
 
 First, no matter what Azure DevOps Services region you import into, you must grant the following IP addresses access to your collection database. 
 
@@ -236,6 +236,9 @@ If you included preview features with your import, add an exception for the anal
 | Analytics service - UK South | 40.81.159.247 |
 
 <br> 
+
+> [!NOTE] 
+> Alternatively, you can also use [Service Tags](/azure/virtual-network/service-tags-overview) in place of explicit IP ranges. Azure Service Tags are a convenient way for customers to manage their networking configuration to allow traffic from specific Azure services. Customers can easily allow access by adding the tag name azuredevops to their network security groups or firewalls either through the portal or programmatically. 
 
 ## Configure IP firewall exceptions
 

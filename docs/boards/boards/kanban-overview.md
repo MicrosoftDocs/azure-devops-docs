@@ -143,7 +143,7 @@ The Average work in progress value excludes completed work items. Use the intera
 
 ::: moniker range="<= azure-devops-2019"
 
-<img src="media/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
+<img src="media/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" />   
 
 The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement from the time it was first proposed.  
 

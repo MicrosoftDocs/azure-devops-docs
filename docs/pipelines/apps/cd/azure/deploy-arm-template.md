@@ -4,7 +4,7 @@ description: Use an Azure Resource Manager template to deploy a Linux web app to
 ms.topic: quickstart
 ms.author: jukullam
 author: JuliaKM
-ms.date: 12/09/2020
+ms.date: 07/30/2021
 monikerRange: '=azure-devops'
 ms.custom: subject-armqs, contperf-fy21q2
 ---
@@ -23,10 +23,10 @@ Before you begin, you need:
 
 ## Get the code
 
-Fork this repo in GitHub:
+For this repository on GitHub:
 
 ```
-https://github.com/Azure/azure-quickstart-templates/
+https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.web/webapp-linux-managed-mysql
 ```
 
 ## Review the template

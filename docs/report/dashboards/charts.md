@@ -204,7 +204,7 @@ When a chart contains more than seven items within the data series, values in th
    ::: moniker-end  
 
    ::: moniker range="<= tfs-2018"  
-   <img src="media/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link." style="border: 2px solid #C3C3C3;" />  
+   <img src="media/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link." />  
    ::: moniker-end  
 
 	If you have Stakeholder access, the **Charts** and **New Chart** links won't appear. 
@@ -270,7 +270,7 @@ A stacked bar chart lets you track progress against two field values. Node Name 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2018"  
-<img src="media/charts-add-stacked-bar.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart" style="border: 2px solid #C3C3C3;" />
+<img src="media/charts-add-stacked-bar.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart" />
 ::: moniker-end  
 
 
@@ -405,11 +405,11 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 3. Choose the **Chart for work items** widget and then choose **Add**. 
 
-	<img src="media/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" /> 
 
 4. Choose the widget's :::image type="icon" source="media/icons/gear-icon.png" border="false"::: gear icon to open the configuration dialog. 
 
-	<img src="media/charts-chart-wit-widget-configure-dialog.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget, Configuration dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/charts-chart-wit-widget-configure-dialog.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget, Configuration dialog" /> 
 
 5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type.   
 

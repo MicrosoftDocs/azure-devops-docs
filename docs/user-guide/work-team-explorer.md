@@ -116,9 +116,8 @@ To learn more about each page, see the following articles.
 <li><a href="../boards/queries/organize-queries.md" data-raw-source="[Query folders](../boards/queries/organize-queries.md)">Query folders</a></li>
 <li><a href="../boards/queries/set-query-permissions.md" data-raw-source="[Query permissions](../boards/queries/set-query-permissions.md)">Query permissions</a></li>
 <li><a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Open query in Excel</a></li>
-<li><a href="../boards/backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Open query in Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)">Open query in Project</a></li>
 <li><a href="../boards/queries/share-plans.md" data-raw-source="[Email query results using Outlook](../boards/queries/share-plans.md)">Email query results using Outlook</a></li>
-<li><a href="../report/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
+<li><a href="../report/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (on-premises Azure DevOps only)</li>
 </ul>
 </td>
 
@@ -189,7 +188,6 @@ To learn more about each page, see the following articles.
 <li><a href="../boards/queries/organize-queries.md" data-raw-source="[Query folders](../boards/queries/organize-queries.md)">Query folders</a></li>
 <li><a href="../boards/queries/set-query-permissions.md" data-raw-source="[Query permissions](../boards/queries/set-query-permissions.md)">Query permissions</a></li>
 <li><a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Open query in Excel</a></li>
-<li><a href="../boards/backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Open query in Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)">Open query in Project</a></li>
 <li><a href="../boards/queries/share-plans.md" data-raw-source="[Email query results using Outlook](../boards/queries/share-plans.md)">Email query results using Outlook</a></li>
 <li><a href="../report/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
 

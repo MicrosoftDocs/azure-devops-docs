@@ -388,6 +388,9 @@ If you're sure you want to do this, see the [bind mount](https://docs.docker.com
 
 ## Use Azure Kubernetes Service cluster
 
+> [!NOTE]
+> Running Azure Pipelines agent is not supported in AKS 1.19 and later.
+
 ### Deploy and configure Azure Kubernetes Service 
 
 Follow the steps in [Quickstart: Deploy an Azure Kubernetes Service (AKS) cluster by using the Azure portal](/azure/aks/kubernetes-walkthrough-portal). After this, your PowerShell or Shell console can use the `kubectl` command line.
@@ -476,17 +479,17 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 Now your agents will run the AKS cluster.
 
-## Mounting volumes using Docker in Docker
+## Mounting volumes using Docker within a Docker container
 
 If a Docker container runs inside another Docker container, they both use host's daemon, so all mount paths reference the host, not the container.
 
-For example, if we want to mount path from host into outer Docker container, we can use this:
+For example, if we want to mount path from host into outer Docker container, we can use this command:
 
    ```
    docker run ... -v <path-on-host>:<path-on-outer-container> ...
    ```
 
-And if we want to mount path from host into inner Docker container, we can use this:
+And if we want to mount path from host into inner Docker container, we can use this command:
 
    ```
    docker run ... -v <path-on-host>:<path-on-inner-container> ...

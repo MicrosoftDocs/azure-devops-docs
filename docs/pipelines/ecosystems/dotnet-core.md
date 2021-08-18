@@ -4,7 +4,7 @@ description: Use .NET Core to build apps with Azure Pipelines, Azure DevOps, & T
 ms.topic: conceptual
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
-ms.date: 05/10/2021
+ms.date: 07/29/2021
 ms.custom: contperf-fy20q4
 monikerRange: '>= tfs-2017'
 ---
@@ -516,7 +516,7 @@ To run tests and publish code coverage with Coverlet:
     displayName: 'dotnet test'
     inputs:
       command: 'test'
-      arguments: '--configuration $(buildConfiguration) --collect:"XPlat Code Coverage" /p:CoverletOutputFormat=cobertura /p:CoverletOutput=$(Build.SourcesDirectory)/TestResults/Coverage/'
+      arguments: '--configuration $(buildConfiguration) --collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura'
       publishTestResults: true
       projects: 'MyTestLibrary' # update with your test project directory
     
@@ -534,7 +534,7 @@ To run tests and publish code coverage with Coverlet:
     displayName: 'dotnet test'
     inputs:
       command: 'test'
-      arguments: '--configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=$(Build.SourcesDirectory)/TestResults/Coverage/'
+      arguments: '--configuration $(buildConfiguration) --collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura'
       publishTestResults: true
       projects: '**/test-library/*.csproj' # update with your test project directory
 

@@ -13,14 +13,13 @@ ms.date: 04/11/2019
 ---
 
 # CMMI process
- 
-<meta name="keywords" content="CMMI tools" />
+
 
 [!INCLUDE [temp](../../includes/version-all.md)]
 
 The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They are based on the [Capability Maturity Model Integration (CMMI)](./cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts) process.
 
-<img src="media/cmmi-process-work-tracking-wits.png" alt="Agile process work item types" style="border: 1px solid #C3C3C3;" />  
+<img src="media/cmmi-process-work-tracking-wits.png" alt="Agile process work item types" />  
 
 In addition to the WITs, teams have access to a set of work item queries to track information, analyze progress, and make decisions.  
 
@@ -29,8 +28,6 @@ In addition to the WITs, teams have access to a set of work item queries to trac
 <a id="start-using" />
 
 ## Plan and track work with CMMI
-
-<meta name="description" content="CMMI project management" />
 
 Teams plan their project by capturing features and requirements. When teams work in sprints, they define tasks and link them to requirements. To gain insight into a rollup of requirements across teams, program managers link requirements to a feature. Blocking issues are tracked using issues. For details on using these WITs, see [CMMI process work item types and workflow](cmmi-process-workflow.md)
 
@@ -67,7 +64,6 @@ Or, use one of the shared queries that the CMMI process provides.
 
 ## Monitor progress  
 
-<meta name="description" content="CMMI monitor progress" />
 All processes&mdash;Agile, Scrum, and CMMI&mdash;support <a href="../../../report/dashboards/overview.md" data-raw-source="[building status and trend charts and dashboards](../../../report/dashboards/overview.md)">building status and trend charts and dashboards</a>. In addition, several charts are automatically built based on the Agile tools you use. These charts display within the web portal.  
 
 ## Create light-weight charts  

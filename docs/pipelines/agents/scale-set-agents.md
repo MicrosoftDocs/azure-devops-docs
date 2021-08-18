@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 05/05/2021
+ms.date: 07/09/2021
 monikerRange: azure-devops
 ---
 
@@ -35,7 +35,9 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 - You want to simplify periodically updating the base image for your agents.
 
 > [!NOTE]
-> You cannot run Mac agents using scale sets. You can only run Windows or Linux agents this way.
+> - You cannot run Mac agents using scale sets. You can only run Windows or Linux agents this way.
+> 
+> - Using VMSS agent pools for Azure DevOps Services is only supported for Azure Public (global service) cloud. Currently, VMSS agent pools does not support any other [national cloud offerings](/azure/active-directory/develop/authentication-national-cloud). 
 
 
 ## Create the scale set

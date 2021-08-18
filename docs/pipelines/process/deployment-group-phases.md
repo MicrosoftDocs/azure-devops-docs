@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand deployment group jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 05956924-242A-43D6-AA29-C93149C0265B
 ms.topic: conceptual
-ms.date: 5/3/2018
+ms.date: 03/19/2021
 monikerRange: '>= tfs-2018'
 ---
 

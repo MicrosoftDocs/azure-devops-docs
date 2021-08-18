@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 01/11/2019
 ---
 
@@ -102,9 +102,7 @@ Project managers who want to use familiar tools can import and export work item 
 ::: moniker-end
 ::: moniker range="<= tfs-2018"
 
-Project managers who want to use familiar tools can import and export work item queries to and from Microsoft Office Excel and Project. To learn more, see: 
-- [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Create your backlog and tasks by using Project](../backlogs/office/create-your-backlog-tasks-using-project.md)
+Project managers who want to use familiar tools can import and export work item queries to and from Microsoft Office Excel. To learn more, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 
 ::: moniker-end
 

@@ -154,7 +154,7 @@ If you support several products, you can assign work items by feature area by de
 > [!div class="mx-tdBreakAll"] 
 > |Iterations| Areas |
 > |-------------|----------| 
-> |<img src="../organizations/settings/media/areas/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="../organizations/settings/media/areas/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
+> |<img src="../organizations/settings/media/areas/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" /> | <img src="../organizations/settings/media/areas/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" /> | 
 
 
 ## Customize work-tracking processes
