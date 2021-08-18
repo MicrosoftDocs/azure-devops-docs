@@ -52,56 +52,57 @@ In Azure Artifacts, packages are immutable. When you publish a package to your f
 ::: moniker-end
 
 #### [npm](#tab/npm/)
-There are two options available to remove a version of an npm package from a feed.
 
-1. **Deprecate:** deprecating a version of a package adds a deprecation message that most npm clients, and Azure DevOps Services, will show whenever the package is viewed or installed. 
-Deprecating a version can help you discourage new usage of it by presenting a warning message when the package is installed.
-2. **Unpublish:** Unpublishing a version of a package makes it unavailable to install. Unpublished packages can be restored from the Recycle Bin within 30 days of deletion. After 30 days, the package will be deleted permanently.
+There are two options to delete an npm package from your feed:
 
-When you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
+1. **Deprecate:** when you deprecate a package version, a warning message is added to the package's metadata. Azure Artifacts and most npm clients will display the warning message whenever the package is viewed or installed. 
+2. **Unpublish:** Unpublishing a package version makes it unavailable to install. Unpublished packages can be restored from the Recycle Bin within 30 days of deletion, after which the package will be permanently deleted.
+
+In Azure Artifacts, packages are immutable. When you publish a package to your feed, its version number will be reserved permanently. You cannot upload a new package with that same version number even if you delete it from your feed.
+
+> [!NOTE]
+> You must be a **Contributor** to deprecate packages and an **Owner** to unpublish them.
 
 ::: moniker range=">= azure-devops-2019"
 
-### Deprecate or unpublish an npm package
+1. Select **Artifacts**, and then select your feed.
 
-You must be a **contributor** to deprecate a package and an **owner** to unpublish it.
+1. Select the package you want to delete/deprecate, and then select **Deprecate** or **Unpublish latest**.
 
-
-From within your feed, select the appropriate package and select **Deprecate** or **Unpublish**.
-
-> [!div class="mx-imgBorder"]
-> ![Unpublish npm package](../media/delete/deprecate-unpublish-npm-package-newnav.png)
+    :::image type="content" source="../media/delete/deprecate-unpublish-npm-package-newnav.png" alt-text="Screenshot showing the deprecate and unpublish latest buttons.":::
 
 ::: moniker-end
 
 ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-### Deprecate or unpublish an npm package in TFS
+1. Select **Build and Release**.
 
-You must be a **contributor** to deprecate and an **owner** to unpublish.
+1. Select **Packages**, and then select the package you want to delete. 
 
-Select **Build and Release**, then **Packages**. select the appropriate package and select **Deprecate** or **Unpublish**.
+1. Select **Deprecate** or **Unpublish latest**.
 
-> [!div class="mx-imgBorder"]
-> ![Unpublish npm package in TFS](../media/delete/deprecate-unpublish-npm-package.png)
+    :::image type="content" source="../media/delete/deprecate-unpublish-npm-package.png" alt-text="Screenshot showing the deprecate and unpublish latest buttons TFS.":::
 
 ::: moniker-end
 
-### Deprecate or unpublish an npm package using npm
-1. You must first [set up your client's npmrc](../npm/npmrc.md).
-1. To deprecate a package, run the following command:
-    ```
+#### Deprecate or unpublish an npm package using the CLI
+
+- You must first [set up your client's npmrc](../npm/npmrc.md).
+
+- Deprecate:
+
+    ```Command
     npm deprecate <package>[@<version>] <message>
     ```
-1. To unpublish a package, run the following command:
-    ```
+
+- Unpublish latest:
+
+    ```Command
     npm unpublish <package>@<version>
     ```
 
 > [!NOTE]
-> `npm unpublish` will not unpublish all versions of the package.
-
-See the [deprecate](https://docs.npmjs.com/cli/deprecate) or [unpublish](https://docs.npmjs.com/cli/unpublish) npm documentation for more info.
+> `npm unpublish` will not unpublish all versions of the package. See [deprecate](https://docs.npmjs.com/cli/deprecate) or [unpublish](https://docs.npmjs.com/cli/unpublish) documentation for more details.
 
 #### [NuGet](#tab/nuget/)
 There are two options available to remove a version of a NuGet package from a feed.
