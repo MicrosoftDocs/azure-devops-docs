@@ -3,7 +3,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 04/14/2021
+ms.date: 08/18/2021
 ---
 
  
@@ -21,7 +21,8 @@ ms.date: 04/14/2021
      **Contributors**
    :::column-end:::
    :::column span="1":::
-     **Team Admins**
+     **Team admins**  
+     **Project admins**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -117,7 +118,6 @@ ms.date: 04/14/2021
 :::row:::
    :::column span="2":::
       Configure team settings, backlog levels, show bugs, work days off  
-      *(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)*
    :::column-end:::
    :::column span="1":::
       

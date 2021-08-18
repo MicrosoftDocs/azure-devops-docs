@@ -16,7 +16,7 @@ ms.date: 05/12/2021
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-To use  Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
+To use  Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to most Azure DevOps services, except for Azure Test Plans. **Stakeholder** access level provides partial support to Azure Boards and Azure Pipelines. **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
 The most common built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
 
@@ -35,6 +35,7 @@ For a comparison chart of Stakeholder versus Basic access, see the [Feature matr
 
 
 
+[!INCLUDE [temp](includes/stakeholder-access.md)]
 
 
 <a id="agile-tools-and-work-tracking" />
