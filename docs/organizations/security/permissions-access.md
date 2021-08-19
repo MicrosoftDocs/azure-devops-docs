@@ -1,7 +1,7 @@
 ---
 title: Default permissions and access quick reference
 titleSuffix: Azure DevOps 
-description: At-a-glance view of permissions and access levels for common user tasks for Azure DevOps 
+description: Default permissions and access to common user tasks for Azure DevOps 
 ms.technology: devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 05/12/2021
+ms.date: 08/18/2021
 ---
 
 # Default permissions and access for Azure DevOps
