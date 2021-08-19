@@ -1,5 +1,5 @@
 ---
-title: Default permissions and access quick reference
+title: Default permissions quick reference
 titleSuffix: Azure DevOps 
 description: Default permissions and access to common user tasks for Azure DevOps 
 ms.technology: devops-security
@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 08/18/2021
 ---
 
-# Default permissions for Azure DevOps
+# Default permissions quick reference for Azure DevOps
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
