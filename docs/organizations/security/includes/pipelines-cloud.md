@@ -11,8 +11,8 @@ ms.date: 08/18/2021
 |----|-------|------------|------------|--------------|--------------|
 |View release pipelines|✔️|✔️|✔️|✔️|✔️|
 |Define builds with continuous integration|  |✔️|✔️|✔️|  |
-|Define releases and manage deployments|  |✔️| |✔️|✔️|  |
-|Approve releases|✔️|  |✔️|  |✔️|✔️|
+|Define releases and manage deployments|  |✔️| |✔️|✔️|  
+|Approve releases| | ✔️ |✔️|  |✔️|✔️|
 |Azure Artifacts (5 users free)|  |✔️|  |✔️|✔️|
 |Queue builds, edit build quality| |✔️|✔️|✔️|  |
 |Manage build queues and build qualities|  |  |✔️|✔️|

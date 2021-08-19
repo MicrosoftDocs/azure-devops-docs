@@ -12,11 +12,14 @@ monikerRange: '<= azure-devops'
 ms.date: 08/18/2021
 ---
 
-# Default permissions and access for Azure DevOps
+# Default permissions for Azure DevOps
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-To use  Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to most Azure DevOps services, except for Azure Test Plans. **Stakeholder** access level provides partial support to Azure Boards and Azure Pipelines. To learn more, see [Stakeholder access quick reference](stakeholder-access.md). 
+To use  Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to most Azure DevOps services, except for Azure Test Plans. **Stakeholder** access level provides partial support to Azure Boards and Azure Pipelines. To learn more about access levels, see [About access levels](access-levels.md) and [Stakeholder access quick reference](stakeholder-access.md). 
+
+
+## Assign users to a security group 
 
 The most common built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
 
@@ -45,7 +48,7 @@ You can plan and track work from the web portal **Boards** hub, and using Visual
 
 ## Work tracking
 
-You can plan and track work from the web portal **Work** hub, and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). 
+You can plan and track work from the web portal **Work** hub, and using Eclipse, Visual Studio, Excel, Project, and other clients. 
 
 ::: moniker-end
 
@@ -207,22 +210,19 @@ You can define and manage your builds and releases from the web portal, **Build 
 
 ## Azure Test Plans
 
+Users granted **Basic + Test Plans** or **Visual Studio Enterprise** access level can define and manage manual tests from the web portal. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set most [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings > Permissions**. 
+
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018" 
+::: moniker range="<= tfs-2018" 
 
 ## Test
 
+Users granted **Visual Studio Enterprise** or **Advanced** access level can define and manage manual tests from the web portal. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set most [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings > Permissions**. 
+
 ::: moniker-end
-
-::: moniker range=">= tfs-2015"
-
-You can define and manage manual tests from the web portal, **Test Plans** or **Test**. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings > Permissions**. 
 
 [!INCLUDE [temp](includes/test.md)]
-
-::: moniker-end
-
 
 ::: moniker range=">= azure-devops-2019" 
 

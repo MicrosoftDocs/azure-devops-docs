@@ -64,7 +64,6 @@ ms.date: 08/18/2021
 :::row:::
    :::column span="2":::
       **Create tag definition** 
-      *(Stakeholders can assign existing tags to work items, but can't add new tags)*
    :::column-end:::
    :::column span="1":::
        
@@ -141,8 +140,7 @@ ms.date: 08/18/2021
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="2":::
-      Delete and restore work items  
-      (Project-level permission) 
+      **Delete and restore work items** (Project-level permission) 
       (able to restore from the Recycle bin)
    :::column-end:::
    :::column span="1":::

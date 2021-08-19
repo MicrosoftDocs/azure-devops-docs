@@ -43,14 +43,24 @@ In general, use the following guidance when assigning **Stakeholder** access use
 
 Users granted **Stakeholder** access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
 
-[!INCLUDE [temp](../../includes/stakeholder-access-table.md)]
 
+> [!div class="mx-tdBreakAll"]  
+> | Service, application, or setting | Private project | Public project|
+> |------------|-----------------|---------------|
+> |**Azure Boards** | Partial access | Full access | 
+> |**Azure Repos** | No access | Full access | 
+> |**Azure Pipelines**  | Full access | Full access | 
+> |**Azure Test Plans**  | No access | No access | 
+> |**Azure Artifacts**  | Full access | Full access | 
+> |**Notifications**  | Full access | Full access | 
+> |**Semantic search** | Full access | Full access | 
+> |**Project settings**  | Partial access | Partial access | 
+> |**Organization settings**  | Partial access | Partial access | 
+> |**Dashboards** | Partial access | Full access | 
+> |**Wiki (Project wiki)** | Partial access | Full access | 
+> |**Wiki (Code wiki)**  | No access | Full access | 
 ::: moniker-end
-
-[!INCLUDE [temp](../../includes/features-not-available-stakeholder.md)]
-
-
-
+ 
 
 ## Azure Boards access
 
@@ -215,31 +225,22 @@ The following table summarizes the features Stakeholder access users have access
 
 ## Azure Pipelines access
 
-> [!NOTE]   
->  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the :::image type="icon" source="/azure/devops/media/icons/preview.png" border="false"::: preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
+The following table summarizes the features available to Stakeholder access users for Private and Public projects. When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
 
 :::row:::
-   :::column span="1":::
-      **Services** 
+   :::column span="2":::
+      **Private project**
    :::column-end:::
-   :::column span="3":::
-      **Supported features**
+   :::column span="2":::
+      **Public project** 
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
-      **Private project** 
-   :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       - View and approve releases
       - View build pipelines
    :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **Public project** 
-   :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       - View release pipelines  
       - Define builds with continuous integration  
       - Define releases and manage deployments  
