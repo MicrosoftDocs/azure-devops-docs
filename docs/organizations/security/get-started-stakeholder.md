@@ -17,7 +17,7 @@ ms.date: 09/10/2020
 
 ::: moniker range="azure-devops" 
 
-Stakeholders are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items, manage build and release pipelines, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. For a quick overview of the features available to Stakeholders, see the [Features and functions available to Stakeholders](#features) later in this article.
+Stakeholders are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items, manage build and release pipelines, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. For a quick overview of the features available to Stakeholders, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 > [!NOTE]   
 > For public projects, Stakeholder access gives users greater access to features. To learn more, see [Default roles and access for public projects](../public/default-roles-access-public.md#pipelinesbuild-and-release). For information about working with pipelines, see these articles: [Build your GitHub repository](../../pipelines/create-first-pipeline.md) and [Build OSS repositories](../../pipelines/repos/index.md).
@@ -389,26 +389,6 @@ To view or edit a work item, select it and choose **Enter**.
 
 ::: moniker-end
 
-<a id="features" /> 
-
-## Features and functions available to Stakeholders
-
-With Stakeholder access, users can create and modify work items and create and save queries. They have limited access to many of the Azure Boards features. They also can view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. 
- 
-> [!NOTE]
-> Stakeholders that choose a feature that's not available to them may in some instances receive an error message indicating that they don't have permissions to complete a task.
-
-::: moniker range="azure-devops"
-
-### Public versus private feature access
-
-Stakeholder access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
-
-[!INCLUDE [temp](../../includes/stakeholder-access-table.md)]
-
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/features-not-available-stakeholder.md)]
 
 <a id="related-articles" /> 
 

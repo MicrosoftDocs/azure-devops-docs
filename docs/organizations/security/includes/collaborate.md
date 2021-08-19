@@ -181,8 +181,8 @@ ms.date: 08/18/2021
       ✔️
    :::column-end:::
 :::row-end:::
-:::row:::
 ::: moniker range="tfs-2017" 
+:::row:::
    :::column span="2":::
       Search across projects, organizations, collections
    :::column-end:::
