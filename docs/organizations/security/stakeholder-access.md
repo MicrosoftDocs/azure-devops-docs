@@ -93,8 +93,8 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
       **Features can't use**
    :::column-end:::
 :::row-end:::
-:::row:::
 ::: moniker range=">= azure-devops-2019" 
+:::row:::
    :::column span="1":::
       **Work Items** 
    :::column-end:::
@@ -112,7 +112,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
       - Move work items to another project
    :::column-end:::
 :::row-end:::
-::: moniker-end
+::: moniker-end 
 ::: moniker range="< azure-devops-2019" 
 :::row:::
    :::column span="1":::
@@ -130,7 +130,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
       - Move work items to another project
    :::column-end:::
 :::row-end:::
-::: moniker-end
+::: moniker-end 
 ::: moniker range="azure-devops" 
 :::row:::
    :::column span="1":::
