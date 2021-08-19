@@ -71,6 +71,8 @@ Users granted **Stakeholder** access are granted different access to features de
 
 The following table summarizes the features Stakeholder access users have access to from Azure Boards. Stakeholders access users can view and edit all work items for which they have Area Path permissions, which by default is set to Allow for all user security groups. To learn more, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).
 
+For an overview of work tracking features, see [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md) 
+
 ::: moniker range="azure-devops" 
 > [!NOTE]   
 > Public project **Stakeholder** access users have full access to all features. 
@@ -237,7 +239,9 @@ The following table summarizes the features Stakeholder access users have access
 ::: moniker-end
 
 ::: moniker range="azure-devops" 
-The following table summarizes the features available to **Stakeholder** access users for Private and Public projects. When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
+The following table summarizes the features available to **Stakeholder** access users for Private and Public projects. When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all features listed under **Public project**.  Without this feature enabled, **Stakeholder** access users can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
+
+For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md).
 
 :::row:::
    :::column span="2":::
@@ -275,7 +279,7 @@ The following table summarizes the features available to **Stakeholder** access 
 
 ::: moniker range=">= azure-devops-2019 < azure-devops" 
 
-Users granted **Stakeholder** access can perform the following tasks:
+Users granted **Stakeholder** access can perform the following build and release tasks. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md).
 - View and approve releases
 - View build pipelines
 ::: moniker-end
@@ -284,29 +288,29 @@ Users granted **Stakeholder** access can perform the following tasks:
 ::: moniker range=">= azure-devops-2019" 
 ## Azure Test Plans 
 ::: moniker-end
+
 ::: moniker range="< azure-devops-2019" 
 ## Test 
 ::: moniker-end
 
-Users granted **Stakeholder** access can perform the following tasks related to testing:
+Users granted **Stakeholder** access can perform the following tasks related to testing. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml).  
+
 - Provide feedback using the Test & Feedback extension
 - Apply a work item template to a test case  
-
-::: moniker-end
  
-
 ::: moniker range=">= tfs-2018" 
 
 ## Dashboards, notifications, READMEs, and wikis 
 
-View team and project dashboards (including work item query charts added to dashboards) 
+The following table summarizes the features **Stakeholder** access users have to these areas: [Dashboards](../../report/dashboards/overview.md), [Notifications](../../notifications/about-notifications.md), [Project pages](../../project/navigation/work-across-projects.md), [READMEs](../../project/wiki/about-readme-wik.md#readmes), and [Wikis](../../project/wiki/provisioned-vs-published-wik.md).
 
-
+::: moniker-end
 ::: moniker range="azure-devops" 
 > [!NOTE]   
 > Public project **Stakeholder** access users have full access to all dashboard and Wiki features. 
 ::: moniker-end
 
+::: moniker range=">= tfs-2018" 
 :::row:::
    :::column span="1":::
       **Feature area** 
@@ -318,6 +322,8 @@ View team and project dashboards (including work item query charts added to dash
       **Features can't use**
    :::column-end:::
 :::row-end:::
+::: moniker-end
+::: moniker range="azure-devops" 
 :::row:::
    :::column span="1":::
       Dashboards
@@ -326,15 +332,25 @@ View team and project dashboards (including work item query charts added to dash
       - View dashboards   
    :::column-end:::
    :::column span="2":::
-      ::: moniker range="azure-devops" 
       - Add and configure team dashboards  	 
       - Add and configure project dashboards 
-      ::: moniker-end
-      ::: moniker range="< azure-devops" 
-      - Add and configure dashboards  	 
-      ::: moniker-end
    :::column-end:::
 :::row-end:::
+::: moniker-end
+::: moniker range=">=tfs-2018 < azure-devops" 
+:::row:::
+   :::column span="1":::
+      Dashboards
+   :::column-end:::
+   :::column span="2":::
+      - View dashboards   
+   :::column-end:::
+   :::column span="2":::
+      - Add and configure team dashboards  	 
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range=">= tfs-2018" 
 :::row:::
    :::column span="1":::
       Notifications
@@ -345,7 +361,7 @@ View team and project dashboards (including work item query charts added to dash
       - Set project-level notifications or alerts<sup>1</sup>
    :::column-end:::
    :::column span="2":::
-      
+         
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -393,8 +409,10 @@ View team and project dashboards (including work item query charts added to dash
    :::column-end:::
    :::column span="2":::
       - View code wikis
+      - Edit project or code wikis
    :::column-end:::
 :::row-end:::
+::: moniker-end
  
-Notes:
+**Notes:**
 1. Requires team administrator role or addition to Project Administrators group.
