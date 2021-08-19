@@ -21,7 +21,7 @@ sections:
   - name: Ignored
     questions:
       - question: |
-        Q: Some of my users in Azure DevOps have GitHub identities. Do I need to add them as new GitHub users into my organization?
+         Q: Some of my users in Azure DevOps have GitHub identities. Do I need to add them as new GitHub users into my organization?
         answer: |
           No. Ask your users to sign out, and then from a fresh browser session, sign back in to the organization with their GitHub credentials. This action will help establish the users as having valid GitHub identities.
           <a id="github-users" />    
