@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
-ms.date: 11/18/2020
+ms.date: 08/13/2021
 ---
 
 # Drive Git development from a work item   
@@ -176,34 +176,15 @@ Or, you can select it from the **Links** :::image type="icon" source="media/icon
 
 ## Related articles
 
-Learn more about tracking work with work items and developing with Git from these resources: 
 
-::: moniker range="azure-devops" 
- 
+- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md)
+- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md)
+- [Add work items](add-work-items.md)  
+- [Git overview](../../repos/git/index.yml) 
+- [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)  
 - [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
 - [Add work items](add-work-items.md)  
 - [Git overview](../../repos/git/index.yml) 
-- [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md) 
-- [Create your backlog](create-your-backlog.md)   
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"  
-
-- [Add work items](add-work-items.md)  
-- [Git overview](../../repos/git/index.yml) 
-- [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md) 
-- [Create your backlog](create-your-backlog.md)   
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-- [Add work items](add-work-items.md)  
-- [Git overview](../../repos/git/index.yml)  
-- [Create your backlog](create-your-backlog.md)   
-
-::: moniker-end
 
 Keep in mind that the **Development** section only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients don't display several of the features that are available from the web portal. 
 
