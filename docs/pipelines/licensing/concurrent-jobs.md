@@ -22,7 +22,7 @@ A TFS _parallel job_ gives you the ability to run a single release at a time in 
 
 One free parallel job is included with every collection in a Team Foundation Server. Every Visual Studio Enterprise subscriber in a Team Foundation Server contributes one additional parallel job. 
 
-You can buy additional private jobs from the Visual Studio Marketplace.
+You can buy additional private jobs from the Visual Studio Marketplace. There is a maximum limit of 25 parallel jobs for Microsoft Hosted agents.
 
 ::: moniker-end
 
