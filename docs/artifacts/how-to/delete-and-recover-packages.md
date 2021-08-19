@@ -166,77 +166,89 @@ In Azure Artifacts, packages are immutable. When you publish a package to your f
 > Azure DevOps and TFS interpret the `nuget.exe delete` command as an **unlist** operation. To delete a package, you must use the REST API or the web interface.
 
 #### [Python](#tab/python/)
-You must be an **owner** to delete a Python package.
 
-From within your feed, select the appropriate package and select **Delete latest**.
+1. Select **Artifacts**, and then select your feed.
 
-> [!div class="mx-imgBorder"]
-> ![Unlist or delete a Python package](../media/delete/delete-python-package.png)
+1. Select the package you want to delete, and then select **Delete latest**.
 
-#### [Universal](#tab/universal/)
-You must be an **owner** to delete a Universal Package.
+> [!NOTE]
+> You must be a feed **Owner** to delete a Python package.
 
-From within your feed, select the appropriate package and select **Delete latest**.
+:::image type="content" source="../media/delete/delete-python-package.png" alt-text="Screenshot highlighting the delete latest button - Python.":::
 
-> [!div class="mx-imgBorder"]
-> ![Unlist or delete a Universal package](../media/delete/delete-universal-package.png)
+#### [Universal Package](#tab/universal/)
+
+1. Select **Artifacts**, and then select your feed.
+
+1. Select the package you want to delete, and then select **Delete latest**.
+
+> [!NOTE]
+> You must be a feed **Owner** to delete a Universal Package.
+
+:::image type="content" source="../media/delete/delete-universal-package.png" alt-text="Screenshot highlighting the delete latest button - Universal Packages.":::
 
 * * *
 
 > [!NOTE]
-> Packages that are placed in the recycle bin will be deleted permanently after 30 days. However, these packages still count as part of your storage bill. If you want to delete them sooner, you can navigate to the recycle bin and delete them manually.
+> Packages sent to the Recycle Bin will be deleted permanently after 30 days. However, these packages still count as part of your storage bill. If you want to delete them sooner, you can navigate to the Recycle Bin and delete them manually.
 
-## Automatically delete old package versions with retention policies
+## Delete packages automatically with retention policies
 
-Over time, the number of versions for each package being hosted in your feed can grow quickly. You can set up retention policies to automatically delete old packages and save storage space.
+Over time, the number of versions for each package hosted in your feed can grow quickly. To free up some storage space, you can set up retention policies to automatically delete old packages.
 
-- **maximum number of versions**: allow you to chose how many versions of a package you want to keep.
-- **days to keep recently downloaded packages**. Packages will be deleted only if they have not been downloaded for the number of days set in here.
-
-If you'd like to retain a package indefinitely, you can promote it to a [view](../concepts/views.md). Versions that got promoted to views are exempt from retention policies and will not be deleted.
+If you'd like to retain a package indefinitely, you can promote it to a [view](../concepts/views.md). Packages promoted to a view are exempt from retention policies and will not be deleted.
 
 > [!NOTE]
-> Package demotion is not currently supported. If you want this feature to be added to future releases, please feel free to **Suggest a feature** on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). See [Get started with feed views](../feeds/views.md#get-started-with-feed-views) for more information.
+> Package demotion is not supported. If you want this feature to be added to future releases, feel free to **Suggest a feature** on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) page.
 
 To configure retention policies:
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Navigate to Azure Artifacts.
+1. Select **Artifacts**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
+    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot highlighting the Artifacts button.":::
 
-2. Select the gear icon in your feed and select **Feed settings**.
-    > [!div class="mx-imgBorder"]
-    > ![Top right of screen, gear icon and then feed settings](../media/feed-settings-azure-devops-newnav.png)
+1. Select the gear icon in your feed, and then select **Feed settings**.
 
-2. From the **Feed details** tab, in the **Retention policies** setting, enter the maximum number of versions per package to retain, and the number of days to keep recently downloaded packages.
-    > [!div class="mx-imgBorder"]
-    > ![Edit retention policy settings for old packages in Azure DevOps Services or TFS](../media/retention-policy-settings.png)
+    :::image type="content" source="../media/feed-settings-azure-devops-newnav.png" alt-text="Screenshot highlighting feed settings.":::
 
-3. Select **Save**.
+1. Select the **Feed details** tab, and then check the **Enable package retention** checkbox. Enter the maximum number of versions per package to retain, and the number of days to keep recently downloaded packages.
+
+    :::image type="content" source="../media/retention-policy-settings.png" alt-text="Screenshot showing how to enable retention policies for your feed.":::
+
+    - **Maximum number of versions per package**: how many versions of a package you want to keep.
+    - **Days to keep recently downloaded packages**. packages will be deleted only if they have not been downloaded for the number of days set in here.
+
+1. Select **Save** when you are done.
 
 ::: moniker-end
 
 ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-1. Select **Build and Release**, then **Packages** to navigate to your feed and select the gear icon. 
-    > [!div class="mx-imgBorder"]
-    > ![Edit an Azure DevOps Services feed in Package](../media/edit-feed-full.png)
+1. Select **Build and Release**.
 
-2. From the **Retention** tab, enter the maximum number of versions per package to retain.
-    > [!div class="mx-imgBorder"]
-    > ![Edit retention policy settings for old packages in Azure DevOps Services or TFS](../media/retention-policy-settings-tfs.png)
+1. Select **Packages**, and then select the gear icon to access your feed's settings. 
 
-3. Select **Save**.
+    :::image type="content" source="../media/edit-feed-full.png" alt-text="Screenshot showing how access the feed's settings - TFS.":::
+
+
+1. From the **Retention** tab, enter the maximum number of versions per package to retain, and the number of days to keep recently downloaded packages.
+
+    :::image type="content" source="../media/retention-policy-settings-tfs.png" alt-text="Screenshot showing retention policies - TFS.":::
+
+    - **Maximum number of versions per package**: how many versions of a package you want to keep.
+    - **Days to keep recently downloaded packages**. packages will be deleted only if they have not been downloaded for the number of days set in here.
+    
+1. Select **Save** when you are done.
 
 ::: moniker-end
 
 > [!NOTE]
-> When you enable retention policies, a version of a package will be deleted when **both** of the following criteria are met:
-> 1. The number of published versions of that package reaches the **maximum number of versions** limit, **AND** 
-> 2. A version of that package has not been downloaded within the number of **days to keep recently downloaded packages**.
+> When you enable package retention, a version of a package will be deleted when **both** of the following criteria are met:
+> 1. The number of published versions reaches the **Maximum number of versions per package** limit.
+> **AND** 
+> 2. A version of that package has not been downloaded for the period defined in: **Days to keep recently downloaded packages**.
 
 ## Recover a deleted package from the recycle bin
 
