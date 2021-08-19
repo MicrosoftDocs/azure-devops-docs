@@ -178,7 +178,6 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
    :::column-end:::
 :::row-end:::
 :::row:::
-:::row:::
    :::column span="1":::
       **Backlogs** 
    :::column-end:::
