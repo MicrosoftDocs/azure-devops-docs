@@ -170,7 +170,6 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
 :::row-end:::
 ::: moniker-end
 ::: moniker range="< azure-devops-2020" 
-::: moniker-end
 :::row:::
    :::column span="1":::
       **Boards** 
