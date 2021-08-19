@@ -13,6 +13,9 @@ ms.date: 08/18/2021
 
 # Stakeholder access quick reference
 
+
+[!INCLUDE [version-all](../../includes/version-all.md)]
+
 **Stakeholder** access level provides partial support to Azure Boards and Azure Pipelines. **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders.  
 
 With Stakeholder access, users can create and modify work items and create and save queries. They also can view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. If they need to contribute to the code base, then you must assign them **Basic** or higher-level access.  
@@ -90,13 +93,14 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
    :::column-end:::
 :::row-end:::
 :::row:::
+::: moniker range=">= azure-devops-2019" 
    :::column span="1":::
       **Work Items** 
    :::column-end:::
    :::column span="2":::
-      - View work items   
-      - Edit work items  
+      - View, add, and edit work items   
       - Assign existing tags to work items 
+      - Use the [Work Items hub](../../boards/work-items/view-add-work-items.md)
       - Change work item type<sup>1</sup>   
       - Email work items
       - Apply a work item template
@@ -107,6 +111,25 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
       - Move work items to another project
    :::column-end:::
 :::row-end:::
+::: moniker-end
+::: moniker range="< azure-devops-2019" 
+:::row:::
+   :::column span="1":::
+      **Work Items** 
+   :::column-end:::
+   :::column span="2":::
+      - View, add, and edit work items   
+      - Assign existing tags to work items  
+      - Email work items 
+      - Apply a work item template
+   :::column-end:::
+   :::column span="2":::
+      - Add new work item tags
+      - Delete work items
+      - Move work items to another project
+   :::column-end:::
+:::row-end:::
+::: moniker-end
 :::row:::
    :::column span="1":::
       **Boards** 
@@ -302,7 +325,7 @@ Users granted **Stakeholder** access can perform the following tasks related to 
 
 ## Dashboards, notifications, READMEs, and wikis 
 
-The following table summarizes the features **Stakeholder** access users have to these areas: [Dashboards](../../report/dashboards/overview.md), [Notifications](../../notifications/about-notifications.md), [Project pages](../../project/navigation/work-across-projects.md), [READMEs](../../project/wiki/about-readme-wik.md#readmes), and [Wikis](../../project/wiki/provisioned-vs-published-wik.md).
+The following table summarizes the features **Stakeholder** access users have to these areas: [Dashboards](../../report/dashboards/overview.md), [Notifications](../../notifications/about-notifications.md), [Project pages](../../project/navigation/work-across-projects.md), [READMEs](../../project/wiki/about-readme-wiki.md#readmes), and [Wikis](../../project/wiki/provisioned-vs-published-wiki.md).
 
 ::: moniker-end
 ::: moniker range="azure-devops" 
