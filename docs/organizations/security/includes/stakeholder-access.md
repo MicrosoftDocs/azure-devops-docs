@@ -154,3 +154,36 @@ ms.date: 08/18/2021
 
 
 
+## Dashboards and Analytics
+
+
+View team and project dashboards (including work item query charts added to dashboards) 
+
+
+:::row:::
+   :::column span="1":::
+      **Services** 
+   :::column-end:::
+   :::column span="3":::
+      **Supported features**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Dashboards, Private projects** 
+   :::column-end:::
+   :::column span="3":::
+      - View team and project dashboards 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Dashboards, Public project** 
+   :::column-end:::
+   :::column span="3":::
+      - View team and project dashboards
+      - Add and configure team or project dashboards 
+   :::column-end:::
+:::row-end:::
+
+1. Public project Stakeholders have full access to all features. 

@@ -8,16 +8,16 @@ ms.date: 08/18/2021
 
 
 |Task|Readers|Contributors|Build Admins|Project Admins|Release Admins|
-|----|------------|-------|------------|------------|--------------|--------------|
+|----|-------|------------|------------|--------------|--------------|
 |View release pipelines|✔️|✔️|✔️|✔️|✔️|
-|Define builds with continuous integration|  |✔️|✔️|✔️|
-|Define releases and manage deployments|  |✔️| |✔️|✔️|
+|Define builds with continuous integration|  |✔️|✔️|✔️|  |
+|Define releases and manage deployments|  |✔️| |✔️|✔️|  |
 |Approve releases|✔️|  |✔️|  |✔️|✔️|
 |Azure Artifacts (5 users free)|  |✔️|  |✔️|✔️|
-|Queue builds, edit build quality| |✔️|✔️|✔️|
+|Queue builds, edit build quality| |✔️|✔️|✔️|  |
 |Manage build queues and build qualities|  |  |✔️|✔️|
-|Manage build retention policies, delete and destroy builds|  |✔️|✔️|✔️|
-|Administer build permissions|  |  |✔️|✔️|
+|Manage build retention policies, delete and destroy builds|  |✔️|✔️|✔️|  |
+|Administer build permissions|  |  |✔️|✔️|  |
 |Manage release permissions|  |  |  |✔️|✔️|
 |Create and edit task groups |  |✔️|✔️|✔️|✔️|
 |Manage task group permissions|  |  |✔️|✔️|✔️|
