@@ -61,8 +61,13 @@ Users granted **Stakeholder** access are granted different access to features de
 > |**Wiki (Code wiki)**  | No access | Full access | 
 ::: moniker-end
  
+::: moniker range=">= azure-devops-2019" 
+## Azure Boards 
+::: moniker-end
 
-## Azure Boards access
+::: moniker range="< azure-devops-2019" 
+## Work tracking 
+::: moniker-end
 
 The following table summarizes the features Stakeholder access users have access to from Azure Boards. Stakeholders access users can view and edit all work items for which they have Area Path permissions, which by default is set to Allow for all user security groups. To learn more, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).
 
@@ -90,7 +95,7 @@ The following table summarizes the features Stakeholder access users have access
       - View work items   
       - Edit work items  
       - Assign existing tags to work items 
-      - Change work item type (Project-level permission)
+      - Change work item type<sup>1</sup>   
       - Email work items
       - Apply a work item template
    :::column-end:::
@@ -104,49 +109,49 @@ The following table summarizes the features Stakeholder access users have access
    :::column span="1":::
       **Boards** 
    :::column-end:::
-   ::: moniker range="azure-devops" 
    :::column span="2":::
+      ::: moniker range="azure-devops" 
+      - View boards, open and edit work items
+      - Add work items to a board
+      - Update status through drag-and-drop
+      - Add child items to a checklist
+      - Assign to a sprint (from card field)
+      - Configure team boards<sup>1</sup> 
+      ::: moniker-end
+      ::: moniker range="azure-devops-2020" 
+      - View boards, open and edit work items
+      - Update status through drag-and-drop
+      - Add child items to a checklist
+      - Assign to a sprint (from card field)
+      - Configure team boards<sup>2</sup> 
+      ::: moniker-end
+      ::: moniker range="< azure-devops-2020" 
       - View boards, open and edit work items
       - Add work items to a board; update status through drag-and-drop
       - Add child items to a checklist
       - Assign to a sprint (from card field)
-      - Configure team boards (requires assignment as a team administrator or member of the Project Administrators Group)
+      - Configure team boards<sup>2</sup> 
+      ::: moniker-end
    :::column-end:::
    :::column span="2":::
+      ::: moniker range="azure-devops" 
       - Change the priority of an item within a board
       - Change fields on cards on a board, except for State field
-   :::column-end:::
-   ::: moniker-end
-   ::: moniker range="azure-devops-2020" 
-   :::column span="2":::
-      - View boards, open and edit work items
-      - Update status through drag-and-drop
-      - Add child items to a checklist
-      - Assign to a sprint (from card field)
-      - Configure team boards (requires assignment as a team administrator or member of the Project Administrators Group)
-   :::column-end:::
-   :::column span="2":::
+      ::: moniker-end
+      ::: moniker range="azure-devops-2020" 
       - Add work items to a board
       - Change the priority of an item within a board
       - Change fields on cards on a board, except for State field
-   :::column-end:::
-   ::: moniker-end
-   ::: moniker range="< azure-devops-2020" 
-   :::column span="2":::
-      - View boards, open and edit work items
-      - 
-      - Add child items to a checklist
-      - Assign to a sprint (from card field)
-      - Configure team boards (requires assignment as a team administrator or member of the Project Administrators Group)
-   :::column-end:::
-   :::column span="2":::
+      ::: moniker-end
+      ::: moniker range="< azure-devops-2020" 
       - Add work items to a board
       - Update status through drag-and-drop
       - Change the priority of an item within a board
       - Change fields on cards on a board, except for State field
+      ::: moniker-end
    :::column-end:::
-   ::: moniker-end
 :::row-end:::
+:::row:::
 :::row:::
    :::column span="1":::
       **Backlogs** 
@@ -171,7 +176,7 @@ The following table summarizes the features Stakeholder access users have access
       - View work details  
       - Add work items to the bottom of a sprint backlog  
       - Use bulk edit features
-      - Configure team sprint taskboards (requires assignment as a team administrator or member of the Project Administrators Group)
+      - Configure team sprint taskboards<sup>2</sup> 
    :::column-end:::
    :::column span="2":::
       - Change the priority of an item within a backlog
@@ -222,10 +227,17 @@ The following table summarizes the features Stakeholder access users have access
 :::row-end:::
 ::: moniker-end
 
+**Notes:**
+1. Controllable through project-level permission.
+2. Requires assignment as a team administrator or member of the Project Administrators Group.
 
-## Azure Pipelines access
 
-The following table summarizes the features available to Stakeholder access users for Private and Public projects. When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
+::: moniker range=">= azure-devops-2019" 
+## Azure Pipelines 
+::: moniker-end
+
+::: moniker range="azure-devops" 
+The following table summarizes the features available to **Stakeholder** access users for Private and Public projects. When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
 
 :::row:::
    :::column span="2":::
@@ -258,27 +270,29 @@ The following table summarizes the features available to Stakeholder access user
    :::column-end:::
 :::row-end:::
 
+::: moniker-end
 
-## Azure Test Plans access
 
-:::row:::
-   :::column span="1":::
-      **Services** 
-   :::column-end:::
-   :::column span="3":::
-      **Supported features**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **Azure Test Plans** 
-   :::column-end:::
-   :::column span="3":::
-      - Provide feedback using the Test & Feedback extension
-      - Apply a work item template to a test case
-      - Delete delete test plans, test cases, and other test related work items (able to restore from the Recycle bin) 
-   :::column-end:::
-:::row-end:::
+::: moniker range=">= azure-devops-2019 < azure-devops" 
+
+Users granted **Stakeholder** access can perform the following tasks:
+- View and approve releases
+- View build pipelines
+::: moniker-end
+
+
+::: moniker range=">= azure-devops-2019" 
+## Azure Test Plans 
+::: moniker-end
+::: moniker range="< azure-devops-2019" 
+## Test 
+::: moniker-end
+
+Users granted **Stakeholder** access can perform the following tasks related to testing:
+- Provide feedback using the Test & Feedback extension
+- Apply a work item template to a test case
+::: moniker-end
+ 
 
 ## Dashboards, ReadMEs, and Wikis 
 
