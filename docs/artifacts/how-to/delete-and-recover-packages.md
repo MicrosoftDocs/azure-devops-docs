@@ -1,12 +1,13 @@
 ---
 title: Delete and recover packages
-description: How to recover deleted packages and set up retention policies
+description: How to delete packages manually and with retention policies, and how to recover deleted packages from the recycle bin
 ms.technology: devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
-ms.custom: contperf-fy21q2
+ms.custom: contperf-fy21q2, contperf-fy22q1
 ms.topic: conceptual
 ms.date: 08/17/2021
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
 # Delete and recover packages
@@ -250,6 +251,10 @@ To configure retention policies:
 > **AND** 
 > 2. A version of that package has not been downloaded for the period defined in: **Days to keep recently downloaded packages**.
 
+### What happens with old/existing packages when we enable retention policies?
+
+Those packages will get soft-deleted and moved to the recycle bin. The deletion job runs once a day but there could be an initial delay after the policy is turned on for the first time due to an influx of packages. Packages remain in the recycle bin for 30 days before they are permanently deleted. To remove the packages from your billable storage, you can chose to delete them manually using the UI or the REST API before the 30 days is up. 
+
 ## Recover deleted packages
 
 Deleted packages will remain in the Recycle Bin for 30 days after which it will be permanently deleted. You must be a feed **Owner** to recover deleted packages.
@@ -290,14 +295,9 @@ Deleted packages will remain in the Recycle Bin for 30 days after which it will 
 
 ::: moniker-end
 
-## Q&A
+## Related articles
 
-### Q: What happens with old/existing packages when we enable retention policies?
-
-A: Those packages will get soft-deleted and moved to the recycle bin. The deletion job runs once a day but there could be an initial delay after the policy is turned on for the first time due to an influx of packages. Packages remain in the recycle bin for 30 days before they are permanently deleted. To remove the packages from your billable storage, you can chose to delete them manually using the UI or the REST API before the 30 days is up. 
-
-## What's next?
-
-- [Set up upstream sources](./set-up-upstream-sources.md)
-- [Configure permissions](../feeds/feed-permissions.md)
+- [Understand upstream sources](../concepts/upstream-sources.md)
+- [Feeds permissions](../feeds/feed-permissions.md)
+- [Configure upstream sources](./set-up-upstream-sources.md)
 - [Promote a package to a view](../feeds/views.md)
