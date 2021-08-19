@@ -67,7 +67,6 @@ ms.date: 08/18/2021
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker-end  
 :::row:::
    :::column span="2":::
       Set team notifications or alerts 
