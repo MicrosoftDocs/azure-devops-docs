@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 0803ABDD-002B-4179-B824-9765403F4289
 ms.manager: dastahel
 ms.author: vijayma
-ms.date: 03/20/2019
+ms.date: 08/20/2021
 monikerRange: azure-devops
 author: vijayma
 ---
@@ -13,6 +13,8 @@ author: vijayma
 # Azure IoT Edge task
 
 Use this task to build, test, and deploy applications quickly and efficiently to Azure IoT Edge.
+
+This task supports custom variables. If you're not familiar with how to use variables in pipelines, see [Define variables](../process/variables.md).
 
 ## Build module images
 
@@ -42,7 +44,7 @@ The following YAML example builds module images:
 |`templateFilePath` <br/>.template.json file|(Required) The path of your Azure IoT Edge solution .template.json file. This file defines the modules and routes in an Azure IoT Edge solution. The filename must end with .template.json. <br/>Default value: deployment.template.json.|
 |`defaultPlatform` <br/>Default platform|(Required) In your .template.json file you can leave the modules platform unspecified, in which case the default platform will be used. <br/>Default value: amd64.|
 |`fillRegistryCredential` <br/>Add registry credential to deployment manifest|(Required) Add registry credentials to the deployment manifest to give the edgeAgent module access to pull private docker images. <br/>Default value: true.|
-|`bypassModules` <br/>Bypass module(s)|(Optional) Specify the module(s) that you do not need to build or push from the list of module names separated by commas in the .template.json file. For example, if you have two modules, "SampleModule1,SampleModule2" in your file and you want to build or push just SampleModule1, specify SampleModule2 as the bypass module(s). Leave empty to build or push all the modules in .template.json.|
+|`bypassModules` <br/>Bypass module(s)|(Optional) Specify the module(s) that you do not need to build or push from the list of module names separated by commas in the .template.json file. For example, if you have two modules, "SampleModule1,SampleModule2" in your file and you want to build or push just SampleModule1, specify SampleModule2 as the bypass module(s). Leave empty to build or push all the modules in .template.json. <br/>Located in the **Advanced** section of the Azure Pipelines web UI.|
 
 The following YAML example pushes module images:
 
@@ -58,7 +60,7 @@ steps:
     action: Push module images
     containerregistrytype: Azure Container Registry
     azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
-    azureContainerRegistry: {"loginServer":"$(azureContainerRegistry)", "id":"/subscriptions/$(azureSubscriptionEndpoint)"}
+    azureContainerRegistry: {"loginServer":"$(azureContainerRegistry)"}
     templateFilePath: deployment.template.json
     defaultPlatform: amd64
     fillRegistryCredential: true
@@ -77,10 +79,6 @@ steps:
 The following YAML example creates a deployment manifest based on the template file:
 
 ```YAML
-variables:
-  azureSubscriptionEndpoint: Contoso
-  azureContainerRegistry: contoso.azurecr.io
-
 steps:    
 - task: AzureIoTEdge@2
   displayName: AzureIoTEdge - Generate deployment manifest
@@ -101,10 +99,10 @@ steps:
 |`connectedServiceNameARM` <br/>Azure subscription contains IoT Hub|(Required) Select an Azure subscription that contains an IoT Hub <br/>Argument aliases: `azureSubscription`|
 |`iothubname` <br/>IoT Hub name|(Required) Select the IoT Hub|
 |`deviceOption` <br/>Choose single/multiple device|(Required) Choose to deploy to a single device, or to multiple devices specified by using tags.|
-|`deploymentid` <br/>IoT Edge deployment ID|(Required) Enter the IoT Edge Deployment ID. If an ID already exists, it will be overridden. Up to 128 lowercase letters, numbers, and the characters `- : + % _ # * ? ! ( ) , = @ ;`. [More details](/azure/iot-edge/how-to-deploy-monitor#monitor-a-deployment). <br/>Default value: $(System.TeamProject)-devops-deployment.|
-|`priority` <br/>IoT Edge deployment priority|(Required) A positive integer used to resolve deployment conflicts. When a device is targeted by multiple deployments it will use the one with highest priority or, in the case of two deployments with the same priority, the one with the latest creation time. <br/>Default value: 0.|
 |`deviceId` <br/>IoT Edge device ID|(Required if device option is single device) Specify the IoT Edge Device ID.|
 |`targetcondition` <br/>IoT Edge device target condition|(Required if device option is multiple devices) Specify the target condition of the devices to which you want to deploy. For example, tags.building=9 and tags.environment='test'. Do not include double quotes. [More details](/azure/iot-edge/how-to-deploy-monitor#monitor-a-deployment).|
+|`deploymentid` <br/>IoT Edge deployment ID|(Required) Enter the IoT Edge Deployment ID. If an ID already exists, it will be overridden. Up to 128 lowercase letters, numbers, and the characters `- : + % _ # * ? ! ( ) , = @ ;`. [More details](/azure/iot-edge/how-to-deploy-monitor#monitor-a-deployment). <br/>Located in the **Advanced** section of the Azure Pipelines web UI. <br/>Default value: $(System.TeamProject)-devops-deployment.|
+|`priority` <br/>IoT Edge deployment priority|(Required) A positive integer used to resolve deployment conflicts. When a device is targeted by multiple deployments it will use the one with highest priority or, in the case of two deployments with the same priority, the one with the latest creation time. <br/>Located in the **Advanced** section of the Azure Pipelines web UI. <br/>Default value: 0.|
 
 The following YAML example deploys module images:
 ```YAML
