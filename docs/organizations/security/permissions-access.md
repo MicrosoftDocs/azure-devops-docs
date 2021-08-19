@@ -16,7 +16,7 @@ ms.date: 08/18/2021
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-To use  Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to most Azure DevOps services, except for Azure Test Plans. **Stakeholder** access level provides partial support to Azure Boards and Azure Pipelines. **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
+To use  Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to most Azure DevOps services, except for Azure Test Plans. **Stakeholder** access level provides partial support to Azure Boards and Azure Pipelines. **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders. To learn more, see [Stakeholder access quick reference](stakeholder-access.md). 
 
 The most common built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
 
@@ -28,22 +28,11 @@ In general, use the following guidance when assigning users to an access level a
 
 To learn more about administrative tasks see [About user, team, project, and organization-level settings](../settings/about-settings.md).  For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about access levels, see [About access levels](access-levels.md). 
 
-In the tables provided in this article, a ✔️ indicates that the corresponding access level or security group has access to a feature by default. 
+In the tables provided in this article, a ✔️ (checkmark) indicates that the corresponding access level or security group has access to a feature by default. 
+ 
+To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](change-individual-permissions.md), you can do so.
 
-
-For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](change-individual-permissions.md), you can do so.
-
-
-## Stakeholder access 
-
-::: moniker range="azure-devops"
-
-Users granted Stakeholder access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
-
-::: moniker-end    
-
-[!INCLUDE [temp](includes/stakeholder-access.md)]
-
+ 
 
 <a id="agile-tools-and-work-tracking" />
 

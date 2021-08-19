@@ -1,13 +1,50 @@
 ---
-ms.technology: devops-agile
+title: Stakeholder access quick reference
+titleSuffix: Azure DevOps 
+description: Stakeholder access to common user tasks for Azure DevOps 
+ms.technology: devops-security
+toc: show
 ms.author: kaelli
 author: KathrynEE
-ms.topic: include
+ms.topic: overview
+monikerRange: '<= azure-devops'
 ms.date: 08/18/2021
 ---
 
+# Stakeholder access quick reference
 
-### Azure Boards access
+
+With Stakeholder access, users can create and modify work items and create and save queries. They have limited access to several Azure Boards features. They also can view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. 
+ 
+To get started as a Stakeholder, see [Get started as a Stakeholder](get-started-stakeholder.md).
+::: moniker range="azure-devops"
+
+Users granted Stakeholder access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more, see [Stakeholder access quick reference](stakeholder-access.md).
+
+::: moniker-end    
+
+
+
+<a id="stakeholder-access">  </a>
+<a id="feature-access">  </a>
+ 
+
+::: moniker range="azure-devops"
+
+## Public versus private feature access
+
+Stakeholder access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
+
+[!INCLUDE [temp](../../includes/stakeholder-access-table.md)]
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/features-not-available-stakeholder.md)]
+
+
+
+
+## Azure Boards access
 
 :::row:::
    :::column span="1":::

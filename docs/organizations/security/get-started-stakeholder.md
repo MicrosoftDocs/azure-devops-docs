@@ -37,13 +37,13 @@ Stakeholders are users with free but limited access to Azure DevOps features and
 
 ::: moniker range="azure-devops"
 
-Stakeholder access is one of several supported access levels as described in [About access levels](access-levels.md#stakeholder-access). To get access as a Stakeholder, ask your organization owner or Project Collection Administrator to [add you to a project with Stakeholder access](../accounts/add-organization-users.md). 
+Stakeholder access is one of several supported access levels as described in [Stakeholder access quick reference](stakeholder-access.md). To get access as a Stakeholder, ask your organization owner or Project Collection Administrator to [add you to a project with Stakeholder access](../accounts/add-organization-users.md). 
 
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"
 
-Stakeholder access is one of several supported access levels as described in [About access levels](access-levels.md#stakeholder-access). To get access as a Stakeholder, ask your server administrator to [add you to a security group that has Stakeholder access](change-access-levels.md). 
+Stakeholder access is one of several supported access levels as described in [Stakeholder access quick reference](stakeholder-access.md). To get access as a Stakeholder, ask your server administrator to [add you to a security group that has Stakeholder access](change-access-levels.md). 
 
 ::: moniker-end  
 
