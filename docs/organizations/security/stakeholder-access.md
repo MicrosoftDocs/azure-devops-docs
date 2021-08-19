@@ -16,9 +16,9 @@ ms.date: 08/18/2021
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-**Stakeholder** access level provides partial support to Azure Boards and Azure Pipelines. **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders.  
+**Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders.  In general, **Stakeholder** access users gain limited access to Azure Boards, Azure Pipelines, and collaboration tools. They have no access to code repositories. 
 
-With Stakeholder access, users can create and modify work items and create and save queries. They also can view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. If they need to contribute to the code base, then you must assign them **Basic** or higher-level access.  
+**Stakeholder** access users  can create and modify work items and create and save queries. They can also view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. If they need to contribute to the code base, then you must assign them **Basic** or higher-level access.  
 
 If you've been assigned **Stakeholder** access and want to start using Azure Boards to track work, see [Get started as a Stakeholder](get-started-stakeholder.md). If you've been tasked to support administrative tasks, see [Manage your project](../../user-guide/project-admin-tutorial.md).
  
@@ -62,6 +62,7 @@ Users granted **Stakeholder** access are granted different access to features de
 > |**Dashboards** | Partial access | Full access | 
 > |**Wiki (Project wiki)** | Partial access | Full access | 
 > |**Wiki (Code wiki)**  | No access | Full access | 
+
 ::: moniker-end
  
 ::: moniker range=">= azure-devops-2019" 
@@ -141,7 +142,7 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
       - Update status through drag-and-drop
       - Add child items to a checklist
       - Assign to a sprint (from card field)
-      - Configure team boards<sup>1</sup> 
+      - Configure team boards<sup>2</sup> 
       ::: moniker-end
       ::: moniker range="azure-devops-2020" 
       - View boards, open and edit work items
