@@ -250,38 +250,43 @@ To configure retention policies:
 > **AND** 
 > 2. A version of that package has not been downloaded for the period defined in: **Days to keep recently downloaded packages**.
 
-## Recover a deleted package from the recycle bin
+## Recover deleted packages
 
-Deleted packages will remain in the recycle bin for 30 days after which it will be permanently deleted. You must be assigned an **owner** role in order for you to recover deleted packages.
+Deleted packages will remain in the Recycle Bin for 30 days after which it will be permanently deleted. You must be a feed **Owner** to recover deleted packages.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Select Azure Artifacts.
+1. Select **Artifacts**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
+    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot of how to access Azure Artifacts.":::
 
-2. Select "Recycle Bin".
+1. Select **Recycle Bin**.
 
-3. Select the appropriate package then select the package version.
+    :::image type="content" source="../media/artifacts-recycle-bin.png" alt-text="Screenshot of the recycle bin button.":::
 
-4. Select **Restore to feed**.
+1. Select the appropriate package then select the package version you want to delete.
+
+1. Select **Restore to feed**.
+
+    :::image type="content" source="../media/restore-packages.png" alt-text="Screenshot of how to restore deleted packages.":::
 
 ::: moniker-end
 
 ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-1. Select **Build and Release**, then **Packages** to navigate to your feed and select **Recycle bin**. 
-    > [!div class="mx-imgBorder"]
-    > ![Recycle Bin TFS](../media/recycle-bin/find-recycle-bin.png)
+1. Select **Build and Release**, and then select **Packages**. 
 
-2. Select the appropriate package then select the package version.
-    > [!div class="mx-imgBorder"]
-    > ![Recycle Bin package view TFS](../media/recycle-bin/recycle-bin-view.png)
+1. Select **Recycle bin**
 
-3. Select **Restore to feed**.
-    > [!div class="mx-imgBorder"]
-    > ![Restore package TFS](../media/recycle-bin/recycle-bin-restore.png)
+    :::image type="content" source="../media/recycle-bin/find-recycle-bin.png" alt-text="Screenshot of how to access the recycle bin - TFS.":::
+
+1. Select the appropriate package then select the package version you want to delete.
+
+    :::image type="content" source="../media/recycle-bin/recycle-bin-view.png" alt-text="Screenshot showing the package in the recycle bin - TFS.":::
+
+1. Select **Restore to feed**.
+
+    :::image type="content" source="../media/recycle-bin/recycle-bin-restore.png" alt-text="Screenshot showing the restore to feed button - TFS.":::
 
 ::: moniker-end
 
