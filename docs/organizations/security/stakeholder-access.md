@@ -131,52 +131,65 @@ For an overview of work tracking features, see [What is Azure Boards?](../../boa
    :::column-end:::
 :::row-end:::
 ::: moniker-end
+::: moniker range="azure-devops" 
 :::row:::
    :::column span="1":::
       **Boards** 
    :::column-end:::
    :::column span="2":::
-      ::: moniker range="azure-devops" 
       - View boards, open and edit work items
       - Add work items to a board
       - Update status through drag-and-drop
       - Add child items to a checklist
       - Assign to a sprint (from card field)
       - Configure team boards<sup>2</sup> 
-      ::: moniker-end
-      ::: moniker range="azure-devops-2020" 
+   :::column-end:::
+   :::column span="2":::
+      - Change the priority of an item within a board
+      - Change fields on cards on a board, except for State field
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range="azure-devops-2020" 
+:::row:::
+   :::column span="1":::
+      **Boards** 
+   :::column-end:::
+   :::column span="2":::
       - View boards, open and edit work items
       - Update status through drag-and-drop
       - Add child items to a checklist
       - Assign to a sprint (from card field)
       - Configure team boards<sup>2</sup> 
-      ::: moniker-end
-      ::: moniker range="< azure-devops-2020" 
+   :::column-end:::
+   :::column span="2":::
+      - Add work items to a board
+      - Change the priority of an item within a board
+      - Change fields on cards on a board, except for State field
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range="< azure-devops-2020" 
+::: moniker-end
+:::row:::
+   :::column span="1":::
+      **Boards** 
+   :::column-end:::
+   :::column span="2":::
       - View boards, open and edit work items
       - Add work items to a board; update status through drag-and-drop
       - Add child items to a checklist
       - Assign to a sprint (from card field)
       - Configure team boards<sup>2</sup> 
-      ::: moniker-end
    :::column-end:::
    :::column span="2":::
-      ::: moniker range="azure-devops" 
-      - Change the priority of an item within a board
-      - Change fields on cards on a board, except for State field
-      ::: moniker-end
-      ::: moniker range="azure-devops-2020" 
-      - Add work items to a board
-      - Change the priority of an item within a board
-      - Change fields on cards on a board, except for State field
-      ::: moniker-end
-      ::: moniker range="< azure-devops-2020" 
       - Add work items to a board
       - Update status through drag-and-drop
       - Change the priority of an item within a board
       - Change fields on cards on a board, except for State field
-      ::: moniker-end
    :::column-end:::
 :::row-end:::
+::: moniker-end
 :::row:::
    :::column span="1":::
       **Backlogs** 
