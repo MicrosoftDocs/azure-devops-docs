@@ -35,7 +35,7 @@ ms.topic: include
 :::row-end:::
 :::row:::
    :::column span="2":::
-      View a shared Analytics view</td>
+      View a shared Analytics view 
    :::column span="1":::
        
    :::column-end:::
@@ -48,7 +48,20 @@ ms.topic: include
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Edit and delete Analytics views 
+      Add a private or shared Analytics view  
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Edit and delete shared Analytics views 
    :::column span="1":::
       
    :::column-end:::

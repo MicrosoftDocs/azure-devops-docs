@@ -19,6 +19,9 @@ ms.date: 08/18/2021
      **Contributors**
    :::column-end:::
    :::column span="1":::
+     **Team admins**
+   :::column-end:::
+   :::column span="1":::
      **Project admins**
      **Project Collection admins**
    :::column-end:::
@@ -27,6 +30,9 @@ ms.date: 08/18/2021
 :::row:::
    :::column span="2":::
       View the project page, navigate using the project page
+   :::column-end:::
+   :::column span="1":::
+      ✔️
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -49,6 +55,9 @@ ms.date: 08/18/2021
       
    :::column-end:::
    :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
       ✔️
    :::column-end:::
 :::row-end:::
@@ -59,6 +68,9 @@ ms.date: 08/18/2021
    :::column-end:::
    :::column span="1":::
       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -80,6 +92,9 @@ ms.date: 08/18/2021
    :::column span="1":::
       ✔️
    :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
@@ -92,12 +107,18 @@ ms.date: 08/18/2021
       
    :::column-end:::
    :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
       ✔️
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
       View Project READMEs
+   :::column-end:::
+   :::column span="1":::
+      ✔️
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -123,6 +144,9 @@ ms.date: 08/18/2021
    :::column span="1":::
       ✔️
    :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
@@ -137,6 +161,9 @@ ms.date: 08/18/2021
    :::column span="1":::
       ✔️
    :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
@@ -144,6 +171,9 @@ ms.date: 08/18/2021
    :::column-end:::
    :::column span="1":::
       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -166,10 +196,16 @@ ms.date: 08/18/2021
    :::column span="1":::
       ✔️
    :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
       Provide feedback
+   :::column-end:::
+   :::column span="1":::
+      ✔️
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -185,6 +221,9 @@ ms.date: 08/18/2021
 :::row:::
    :::column span="2":::
       Search across projects, organizations, collections
+   :::column-end:::
+   :::column span="1":::
+      ✔️
    :::column-end:::
    :::column span="1":::
       ✔️

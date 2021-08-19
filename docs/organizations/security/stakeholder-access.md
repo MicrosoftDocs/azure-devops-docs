@@ -218,7 +218,7 @@ The following table summarizes the features Stakeholder access users have access
       **Delivery Plans** (Extension)
    :::column-end:::
    :::column span="2":::
-      - Not supported 
+      - None
    :::column-end:::
    :::column span="2":::
       - View delivery plans
@@ -290,43 +290,111 @@ Users granted **Stakeholder** access can perform the following tasks:
 
 Users granted **Stakeholder** access can perform the following tasks related to testing:
 - Provide feedback using the Test & Feedback extension
-- Apply a work item template to a test case
+- Apply a work item template to a test case  
+
 ::: moniker-end
  
 
-## Dashboards, ReadMEs, and Wikis 
+::: moniker range=">= tfs-2018" 
+
+## Dashboards, notifications, READMEs, and wikis 
 
 View team and project dashboards (including work item query charts added to dashboards) 
 
 
 ::: moniker range="azure-devops" 
 > [!NOTE]   
-> Public project **Stakeholder** access users have full access to all features. 
+> Public project **Stakeholder** access users have full access to all dashboard and Wiki features. 
 ::: moniker-end
 
 :::row:::
    :::column span="1":::
-      **Services** 
+      **Feature area** 
    :::column-end:::
-   :::column span="3":::
-      **Supported features**
+   :::column span="2":::
+      **Features can use**
    :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      **Dashboards, Private projects** 
-   :::column-end:::
-   :::column span="3":::
-      - View team and project dashboards 
+   :::column span="2":::
+      **Features can't use**
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      **Dashboards, Public project** 
+      Dashboards
    :::column-end:::
-   :::column span="3":::
-      - View team and project dashboards
-      - Add and configure team or project dashboards 
+   :::column span="2":::
+      - View dashboards   
+   :::column-end:::
+   :::column span="2":::
+      ::: moniker range="azure-devops" 
+      - Add and configure team dashboards  	 
+      - Add and configure project dashboards 
+      ::: moniker-end
+      ::: moniker range="< azure-devops" 
+      - Add and configure dashboards  	 
+      ::: moniker-end
    :::column-end:::
 :::row-end:::
-
+:::row:::
+   :::column span="1":::
+      Notifications
+   :::column-end:::
+   :::column span="2":::
+      - Set personal notifications or alerts
+      - Set team notifications or alerts<sup>1</sup>
+      - Set project-level notifications or alerts<sup>1</sup>
+   :::column-end:::
+   :::column span="2":::
+      
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Project pages
+   :::column-end:::
+   :::column span="2":::
+      - View the project page
+      - Navigate using the Project pages
+      - Set personal favorites
+   :::column-end:::
+   :::column span="2":::
+      - View repository READMEs 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Search
+   :::column-end:::
+   :::column span="2":::
+      - Perform work tracking and project wiki search
+   :::column-end:::
+   :::column span="2":::
+      - Perform code search
+      - Perform code wiki search
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      READMEs
+   :::column-end:::
+   :::column span="2":::
+      - Can view project README 
+   :::column-end:::
+   :::column span="2":::
+      - View repository READMEs 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Wikis
+   :::column-end:::
+   :::column span="2":::
+      - View project wikis
+   :::column-end:::
+   :::column span="2":::
+      - View code wikis
+   :::column-end:::
+:::row-end:::
+ 
+Notes:
+1. Requires team administrator role or addition to Project Administrators group.
