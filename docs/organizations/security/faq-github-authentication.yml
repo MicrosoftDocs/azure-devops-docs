@@ -23,18 +23,18 @@ sections:
       - question: |
          Q: Some of my users in Azure DevOps have GitHub identities. Do I need to add them as new GitHub users into my organization?
         answer: |
-          No. Ask your users to sign out, and then from a fresh browser session, sign back in to the organization with their GitHub credentials. This action will help establish the users as having valid GitHub identities.
+          A: No. Ask your users to sign out, and then from a fresh browser session, sign back in to the organization with their GitHub credentials. This action will help establish the users as having valid GitHub identities.
           <a id="github-users" />    
       - question: |
          Q: I'm an organization Administrator and I turned on the policy that enables inviting GitHub users. Why can't I invite new GitHub users?
         answer: |
-          Once the setting is changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials. For more information, see [Add external user](../accounts/add-external-user.md).
+          A: Once the setting is changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials. For more information, see [Add external user](../accounts/add-external-user.md).
           
           ![Screenshot of External user access policy turned on.](../accounts/media/add-external-user/guest-access-preview.png)    
       - question: |
          Q: I signed in with my GitHub credentials, but why can't I invite GitHub users?
         answer: |
-          Only organization or project Administrators can invite new users to join the organization. You might not have the permission required to add new users. Work with your administrator to get you the right permissions or ask them to add the user for you.
+          A: Only organization or project Administrators can invite new users to join the organization. You might not have the permission required to add new users. Work with your administrator to get you the right permissions or ask them to add the user for you.
           
 additionalContent: |
 
