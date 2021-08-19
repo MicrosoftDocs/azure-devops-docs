@@ -3,7 +3,7 @@ title: Securing Azure Pipelines
 description: Guidelines and recommendations for securing pipelines.
 ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
 ms.reviewer: vijayma
-ms.date: 07/30/2021
+ms.date: 08/19/2021
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -21,7 +21,7 @@ Security must be balanced with giving teams the flexibility and power they need 
 
 Traditionally, organizations implemented security through draconian lock-downs.
 Code, pipelines, and production environments had severe restrictions on access and use.
-In small organizations with a small number of users and projects, this stance was relatively easy to manage.
+In small organizations with a few users and projects, this stance was relatively easy to manage.
 However, that's not the case in larger organizations.
 Where many users have contributor access to code, one must "assume breach".
 Assuming breach means behaving as if an adversary has contributor access to some (if not all) of the repositories.
@@ -30,7 +30,7 @@ The goal in this case is to prevent that adversary from running malicious code i
 Malicious code may steal secrets or corrupt production environments.
 Another goal is to prevent lateral exposure to other projects, pipelines, and repositories from the compromised pipeline.
 
-This series of topics outlines recommendations to help you put together a secure YAML-based CI/CD pipeline.
+This series of articles outlines recommendations to help you put together a secure YAML-based CI/CD pipeline.
 It also covers the places where you can make trade-offs between security and flexibility.
 The series also assumes familiarity with [Azure Pipelines](../get-started/what-is-azure-pipelines.md), the core [Azure DevOps security constructs](../../organizations/security/about-security-identity.md), and [Git](https://git-scm.com).
 
