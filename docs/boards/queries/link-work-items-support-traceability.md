@@ -264,12 +264,12 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 - You can use the [git-commit](https://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, you apply this comment #35 Catch null exception to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35. 
 - And, with the **Development** control, you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
 ::: moniker-end
-	::: moniker range=">= azure-devops-2019"  
-	:::image type="content" source="media/git/development-control.png" alt-text="Screenshot of work item form, Development control.":::
-	::: moniker-end
-	::: moniker range=">= tfs-2017 < azure-devops-2019"  
-    ![Work item form, Development section](../backlogs/media/drive-git-development-dev-section.png)  
-	::: moniker-end
+::: moniker range=">= azure-devops-2019"  
+:::image type="content" source="media/git/development-control.png" alt-text="Screenshot of work item form, Development control.":::
+::: moniker-end
+::: moniker range=">= tfs-2017 < azure-devops-2019"  
+![Work item form, Development section](../backlogs/media/drive-git-development-dev-section.png)  
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 
 
