@@ -32,21 +32,38 @@ You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to depl
 
 ## Prerequisites - Azure DevOps
 
-[!INCLUDE [include](../includes/prerequisites.md)]
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+[!INCLUDE [include](../includes/prerequisites.md)]
 
 ## Build your app
-
 #### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
-If you Fork this repo in GitHub:
+To get started, fork the following repository into your GitHub account.
 
 ```
 https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
 
+### Create your pipeline
 
+1. Sign in to your Azure DevOps organization and navigate to your project.
+
+1. Go to **Pipelines**, and then select **New Pipeline**.
+
+1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+
+1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+
+1. When the list of repositories appears, select your repository.
+
+1. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
+
+1.  When the **Configure** tab appears, select **ASP.NET Core**.
+
+1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+
+1. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
 ::: moniker-end
 
@@ -360,7 +377,7 @@ You can control the order of deployment. To learn more, see [Stages](../process/
 For most language stacks, [app settings](/azure/app-service/configure-common?toc=%252fazure%252fapp-service%252fcontainers%252ftoc.json#configure-app-settings) and [connection strings](/azure/app-service/configure-common?toc=%252fazure%252fapp-service%252fcontainers%252ftoc.json#configure-connection-strings) can be set as environment variables at runtime. 
 App settings can also be resolved from Key Vault using [Key Vault references](/azure/app-service/app-service-key-vault-references).
 
-For ASP.NET and ASP.NET Core developers, setting app settings in App Service are like setting them in <appSettings> in Web.config.
+For ASP.NET and ASP.NET Core developers, setting app settings in App Service are like setting them in `<appSettings>` in Web.config.
 You might want to apply a specific configuration for your web app target before deploying to it. 
 This is useful when you deploy the same build to multiple web apps in a pipeline.
 For example, if your Web.config file contains a connection string named `connectionString`,
