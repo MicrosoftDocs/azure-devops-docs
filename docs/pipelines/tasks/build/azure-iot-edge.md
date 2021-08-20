@@ -14,7 +14,7 @@ author: vijayma
 
 Use this task to build, test, and deploy applications quickly and efficiently to Azure IoT Edge.
 
-This task supports custom variables. If you're not familiar with how to use variables in pipelines, see [Define variables](../process/variables.md).
+This task supports custom variables. If you're not familiar with how to use variables in pipelines, see [Define variables](../../process/variables.md).
 
 ## Build module images
 
