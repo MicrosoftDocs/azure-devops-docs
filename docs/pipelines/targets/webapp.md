@@ -30,13 +30,47 @@ You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to depl
 
 ::: moniker-end
 
-## Prerequisites - Azure DevOps
+## Prerequisites
 
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 [!INCLUDE [include](../includes/prerequisites.md)]
 
+
+## Create an Azure App Service
+
+Create an Azure App Service on Linux or Windows. 
+
+# [Linux](#tab/linux)
+
+Create an Azure App Service on Linux.
+
+```azurecli
+# Create a resource group
+az group create --location eastus2 --name myapp-rg
+
+# Create an app service plan of type Linux
+az appservice plan create -g myapp-rg -n myapp-service-plan --is-linux
+
+# Create an App Service from the plan 
+az webapp create -g myapppipeline-rg -p myapp-service-plan -n my-app-dotnet --runtime "DOTNETCORE|3.1" 
+```
+# [Windows](#tab/windows)
+
+```azurecli
+# Create a resource group
+az group create --location eastus2 --name myapp-rg
+
+# Create an app service plan of type Linux
+az appservice plan create -g myapp-rg -n myapp-service-plan
+
+# Create an App Service from the plan 
+az webapp create -g myapppipeline-rg -p myapp-service-plan -n my-app-dotnet-win --runtime "DOTNETCORE|3.1" 
+```
+---
+
 ## Build your app
 #### [YAML](#tab/yaml/)
+
 ::: moniker range="azure-devops"
 
 To get started, fork the following repository into your GitHub account.
@@ -63,7 +97,15 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
-1. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+###  Add the Azure App Service Deploy task
+
+1. Use the Task assistant to add the [Azure Web App](../tasks/deploy/azure-rm-web-app.md) task. 
+    :::image type="content" source="media/app-service-deploy-task.png" alt-text="Add the App Service Deploy task.":::
+
+1. Select **Azure Resource Manager** for the **Connection type** and select your **Azure subscription** where you will host your app. Make sure to **Authorize** for connection. 
+
+1. Select  **Web App on Linux**. 
+
 
 ::: moniker-end
 
