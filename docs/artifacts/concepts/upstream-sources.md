@@ -1,10 +1,10 @@
 ---
 title: Upstream sources 
-description: Use packages from internal and external sources with upstream sources
+description: Upstream sources concepts
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 12/21/2020
+ms.date: 08/20/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -12,17 +12,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-> [!NOTE]
-> Check [Versions and compatibility](../overview.md#versions-compatibility) to ensure compatibility. 
-
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public package managers (npmjs.com, NuGet.org, Maven Central, and PyPI) and Artifacts feeds. Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
-
-Already familiar with the concepts and want to jump right in? Start with these how-tos:
-
-- [How-to: Set up upstream sources](../how-to/set-up-upstream-sources.md)
-- [Use nuget.org as an upstream](../nuget/upstream-sources.md)
-- [Use npmjs.com as an upstream](../npm/upstream-sources.md)
-- [Use Maven Central as an upstream](../maven/upstream-sources.md)
+Upstream sources enable you to use a single feed to store packages from different sources: the ones you publish and the ones you consume from feeds and public registries such as NuGet.org, npmjs.com, Maven Central, and PyPI. Once you enable an upstream source, any user connected to your feed can install a package from upstream and a copy will be saved to your feed.
 
 ::: moniker range="azure-devops"
 
@@ -31,14 +21,14 @@ Already familiar with the concepts and want to jump right in? Start with these h
 
 ::: moniker-end
 
-## Benefits of upstream sources
+## Advantages
 
-Upstream sources enable you to manage all of your product's dependencies in a single feed. We recommend publishing all of the packages for a given product to that product's feed, and managing its dependencies from remote feeds in the same feed, via upstream sources. This setup has a few benefits:
+Upstream sources enable you to manage all of your product's dependencies in a single feed. Publishing all your packages to a single feed has a few benefits:
 
-- **Simplicity:** your NuGet.config, .npmrc, or settings.xml contains exactly one feed (your feed).
-- **Determinism:** your feed resolves package requests in order, so rebuilding the same codebase at the same commit or changeset uses the same set of packages.
-- **Provenance:** your feed knows the provenance of packages it saved via upstream sources, so you can verify that you're using the original package, not a custom, or malicious copy published to your feed.
-- **Peace of mind:** packages used via upstream sources are guaranteed to be saved in the feed on first use. If the upstream source is disabled/removed or the remote feed goes down or deletes a package you depend on, you can continue to develop and build.
+- **Simplicity:** your config file such as NuGet.config, .npmrc, or settings.xml will contain only one feed so it less prone to mistakes and bugs.
+- **Determinism:** your feed resolves package requests in order, so rebuilding your code will be more consistent.
+- **Provenance:** your feed knows the provenance of the packages it saved from upstream sources, so you can verify that you're using the original package and not a copy or malicious package.
+- **Peace of mind:** a copy will be saved to your feed for any package installed from upstream sources. So if the upstream source is disabled, removed, or undergoing maintenance, you can still continue to develop and build because you have a copy of that package in your feed.
 
 ## Best practices: feed consumers
 
