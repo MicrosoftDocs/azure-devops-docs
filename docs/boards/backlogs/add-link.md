@@ -67,13 +67,13 @@ For a list of all link types and supported link relationships, see [Linking, tra
 > The following link relationships are restricted: 
 > - You can't assign a work item more than one parent using a parent/child or other tree topology link type. 
 > - You can't add links in such a way as to create a circular relationship. 
-> - You can't link more than 1,000 work item to a single work item. 
+> - You can't link more than 1,000 work items to a single work item. 
 
 [!INCLUDE [temp](../includes/prerequisites.md)] 
 
 <a id="link"> </a>
 
-&nbsp;
+ 
 
 ## Link several work items 
 

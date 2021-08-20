@@ -19,38 +19,39 @@ ms.date: 04/16/2021
 By linking to work items from other objects, such as builds, commits, pull requests, and more, you support your team's ability to maintain an audit trail of related work. All users can add links to their work items.
 
 > [!TIP]
-> If you're looking for guidance on how to: 
-> - link to work items from GitHub, see [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md).
-> - link your work items to other work items, see [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md).
+> You can set up automatic linking and other settings that link work items to Git or GitHub commits, pull requests, builds, and more. To learn how, see the following resources:   
+> - [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+> - [Configure pipelines to support work tracking](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+> - [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
+> - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md).
+
 
 You can enter `#ID` from within the following areas to link to your work items:
 
 ::: moniker range=">= azure-devops-2020"
 - A work item discussion or any rich-text field
-- A pull request discussion
-- Commit comments
-- Changeset or shelveset comments
+- Git commit comments and pull request discussions
+- TFVC changeset or shelveset comments
 - Wiki pages
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 - A work item discussion 
-- A pull request discussion
-- Commit comments
-- Changeset or shelveset comments
-- Wiki page 
+- Git commit comments and pull request discussions
+- TFVC changeset or shelveset comments
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < tfs-2018"
-- A work item discussion 
-- A pull request discussion
-- Commit comments
-- Changeset or shelveset comments
-::: moniker-end
+The following image illustrates the link types that support linking work items to code, build, and release objects. These include All links, except for *Integrated in release* stage, can be made from a work item.
 
-The following image shows several types of links that are possible from a work item.
+The link types used to link work items to devops objects&mdash;as illustrated in the following image&mdash;are *Build*, *Found in build*, *Integrated in build*, *Integrated in release*  for build and release pipelines; *Branch*, *Commit*, *Pull Request*, and *Tag* for Git repositories, and *Changeset*, *Shelveset* and *VersionedItem* for Team Foundation Version Control (TFVC) repositories. These are all designated as external link types.
 
-:::image type="content" source="media/types-of-work-item-links.png" alt-text="Graph showing the types of work item links.":::
+:::image type="content" source="media/add-link/conceptual-link-types-devops-objects.png" alt-text="Conceptual image of link types used to link work items to devops objects.":::
+ 
+
+> [!NOTE]
+> From the work item form, **Links** tab, you can [view all the objects linked to the work item](#view-list-links) as described later in this article. However, you can't create a work item query to list those links. Work item queries only return work items that are linked to other work items. However, you can create a query that lists work items that contain external links. To learn how, see [Query by link or attachment count](../../boards/queries/linking-attachments.md).
+
+
 
 ::: moniker range="azure-devops"
 
@@ -82,9 +83,6 @@ Linking your work items to other objects also produces the following benefits:
    :::image type="content" source="media/keyword-pr-link.png" alt-text="Screenshot of entering keyword after # and resulting work item in search":::
 
    To further filter the list, continue to enter keywords until you find a match. You can enter up to five keywords.
-
-> [!NOTE]
-> From the work item form, **Links** tab, you can view all the objects linked to the work item. However, you can't create a work item query to list those links. Work item queries only return work items that are linked to other work items.
 
 ::: moniker range="tfs-2015"
 > [!NOTE]  
@@ -165,7 +163,7 @@ For more information about the built-in wiki, see [Add & edit wiki pages](../pro
 
 - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
 - [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
-- [Link work items to deployments](../boards/queries/linking-attachments.md)
+- [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
 - [Save work with commits](../repos/git/commits.md)
 - [View and manage pull requests](../repos/git/pull-requests.md)
 
