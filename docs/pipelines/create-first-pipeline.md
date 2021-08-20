@@ -66,11 +66,11 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 [!INCLUDE [include](ecosystems/includes/create-pipeline-before-template-selected.md)]
 
-    > When the **Configure** tab appears, select **ASP.NET Core**.
+> When the **Configure** tab appears, select **ASP.NET Core**.
 
 1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
-1. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
    If you want to watch your pipeline in action, select the build job.
 
@@ -78,7 +78,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
-1. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 Learn more about [working with .NET Core](ecosystems/dotnet-core.md) in your pipeline.
 
@@ -1469,4 +1469,3 @@ To learn more about build pipeline settings, see:
 Currently, the Azure CLI and Azure APIs don't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](./build/triggers.md).
 
 ::: moniker-end
-
