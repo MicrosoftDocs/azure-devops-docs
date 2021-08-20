@@ -49,8 +49,8 @@
 - name: Track work, code, builds, and releases
   items:
   - name: End-to-end traceability
-    href: ../../cross-service/cross-service/end-to-end-traceability.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    displayname: pull requests, commits, comments, build, wiki
+    href: ../../cross-service/end-to-end-traceability.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    displayname: pull requests, commits, comments, build 
   - name: "Use #ID to link to work items"
     href: ../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     displayname: pull requests, commits, comments, build, wiki

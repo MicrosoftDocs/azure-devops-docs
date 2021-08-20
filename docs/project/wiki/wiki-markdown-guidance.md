@@ -123,6 +123,10 @@ title: Hello world
 
 ![YAML tags with list example](media/wiki/yaml_tags_with_list.png)
 
+
+
+::: moniker range=">= azure-devops-2019"
+
 ## Embed Azure Boards query results in Wiki
 
 To embed Azure Boards query results in a wiki page as a table, use the following syntax:
@@ -137,6 +141,8 @@ You can also use the **toolbar** and the **query selector** to embed the query r
 > ![Query Results Icon](media/query_selector_icon.png)
 >
 > ![Query Selector Pane](media/query_selector_pane.png)
+
+::: moniker-end
 
 ## @mention users and groups
 

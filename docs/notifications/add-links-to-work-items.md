@@ -18,14 +18,6 @@ ms.date: 04/16/2021
 
 By linking to work items from other objects, such as builds, commits, pull requests, and more, you support your team's ability to maintain an audit trail of related work. All users can add links to their work items.
 
-> [!TIP]
-> You can set up automatic linking and other settings that link work items to Git or GitHub commits, pull requests, builds, and more. To learn how, see the following resources:   
-> - [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-> - [Configure pipelines to support work tracking](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-> - [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
-> - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md).
-
-
 You can enter `#ID` from within the following areas to link to your work items:
 
 ::: moniker range=">= azure-devops-2020"
@@ -41,26 +33,36 @@ You can enter `#ID` from within the following areas to link to your work items:
 - TFVC changeset or shelveset comments
 ::: moniker-end
 
-The following image illustrates the link types that support linking work items to code, build, and release objects. These include All links, except for *Integrated in release* stage, can be made from a work item.
 
+::: moniker range="azure-devops"
+
+Linking work items to other objects supports the following benefits:
+
+- Automatically close work items when a pull request gets completed and merged.
+- 
+
+::: moniker-end
+
+> [!TIP]
+> You can set up automatic linking and other settings that link work items to Git or GitHub commits, pull requests, builds, and more. To learn how, see the following resources:   
+> - [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+> - [Configure pipelines to support work tracking](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+> - [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md).
+
+
+## Supported link types to devops objects 
+ 
 The link types used to link work items to devops objects&mdash;as illustrated in the following image&mdash;are *Build*, *Found in build*, *Integrated in build*, *Integrated in release*  for build and release pipelines; *Branch*, *Commit*, *Pull Request*, and *Tag* for Git repositories, and *Changeset*, *Shelveset* and *VersionedItem* for Team Foundation Version Control (TFVC) repositories. These are all designated as external link types.
 
 :::image type="content" source="media/add-link/conceptual-link-types-devops-objects.png" alt-text="Conceptual image of link types used to link work items to devops objects.":::
  
+From the work item form, **Links** tab, you can [view all the objects linked to the work item](#view-list-links) as described later in this article. However, you can't create a work item query to list those links. Work item queries only return work items that are linked to other work items. However, you can create a query that lists work items that contain external links. To learn how, see [Query by link or attachment count](../boards/queries/linking-attachments.md).
+
+
 
 > [!NOTE]
-> From the work item form, **Links** tab, you can [view all the objects linked to the work item](#view-list-links) as described later in this article. However, you can't create a work item query to list those links. Work item queries only return work items that are linked to other work items. However, you can create a query that lists work items that contain external links. To learn how, see [Query by link or attachment count](../../boards/queries/linking-attachments.md).
+> You can also link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md. This requires connecting your Azure DevOps project to your GitHub repository. To learn more, see [Azure Boards-GitHub integration](../boards/github/index.md).
 
-
-
-::: moniker range="azure-devops"
-
-Linking your work items to other objects also produces the following benefits:
-
-- Automatically close work items when a pull request gets completed and merged.
-- When you link a query results table to a wiki, it provides links to the number of work items. For more information, see [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page).
-
-::: moniker-end
 
 <a id="mention-wit-id">  </a>
 
@@ -153,7 +155,10 @@ Keyword logic helps with intent matching. For example, you might enter “Resolv
 Enter `#` to trigger the `#ID` work item picker from within a Wiki page.
 
 For more information about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md) and [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md).
+::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
+You can also you link a query results table to a wiki. This supports quick access to each linked work item in the query. For more information, see [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page).
 ::: moniker-end
 
 
@@ -161,9 +166,29 @@ For more information about the built-in wiki, see [Add & edit wiki pages](../pro
 
 ## Related articles
 
+::: moniker range=">= azure-devops-2020"
+
+- [End-to-end traceability](../cross-service/end-to-end-traceability.md)
+- [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Configure pipelines to support work tracking](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
 - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
 - [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
-- [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
 - [Save work with commits](../repos/git/commits.md)
 - [View and manage pull requests](../repos/git/pull-requests.md)
+- [Link type reference](../boards/queries/queries/link-type-reference.md)
+- [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
+::: moniker-end
 
+::: moniker range="< azure-devops-2020"
+
+- [End-to-end traceability](../cross-service/end-to-end-traceability.md)
+- [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Configure pipelines to support work tracking](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
+- [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
+- [Link type reference](../boards/queries/queries/link-type-reference.md)
+- [Save work with commits](../repos/git/commits.md)
+- [View and manage pull requests](../repos/git/pull-requests.md)
+- [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
+::: moniker-end
