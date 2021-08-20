@@ -6,6 +6,7 @@ ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 08/20/2021
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
 # Upstream sources
@@ -30,44 +31,49 @@ Upstream sources enable you to manage all of your product's dependencies in a si
 - **Provenance:** your feed knows the provenance of the packages it saved from upstream sources, so you can verify that you're using the original package and not a copy or malicious package.
 - **Peace of mind:** a copy will be saved to your feed for any package installed from upstream sources. So if the upstream source is disabled, removed, or undergoing maintenance, you can still continue to develop and build because you have a copy of that package in your feed.
 
-## Best practices: feed consumers
+## Best practices - package consumers
 
-To take full advantage of the benefits of upstream sources as a consumer of another feed, consider applying the following best practices to your project.
+To take full advantage of the benefits of upstream sources as a package consumer, follow these best practices:
 
 <a name="single-feed"></a>
 
-### Use a single feed on the client
+#### Use a single feed in your config file
 
-In order for your feed to provide [deterministic restore](#search-order), it's important to ensure that your package feed configuration file (.npmrc_ or _nuget.config) references only your Azure Artifacts feed with upstream sources enabled. For NuGet, the `<packageSources>` section should look like this:
+In order for your feed to provide [deterministic restore](#search-order), it's important to ensure that your configuration file such as nuget.config or .npmrc references only one feed with the upstream sources enabled.
 
-```xml
-<packageSources>
-  <clear />
-  <add key="FabrikamFiber" value="https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/nuget/v3/index.json" />
-</packageSources>
-```
+Example:
+
+- **nuget.config** 
+
+    ```
+    <packageSources>
+      <clear />
+      <add key="FabrikamFiber" value="https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/nuget/v3/index.json" />
+    </packageSources>
+    ```
 
 > [!NOTE]
 > The `<clear />` tag is required because NuGet composes [several configuration files](/nuget/consume-packages/configuring-nuget-behavior) to determine the full set of options to use. `<clear />` tells NuGet to ignore all other `<packageSources>` defined in higher-level configuration files.
 
-For npm, you should have only one `registry` line:
+- **.npmrc**:
 
-```ini
-registry=https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/npm/registry/
-always-auth=true
-```
+    ```
+    registry=https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/npm/registry/
+    always-auth=true
+    ```
 
-### Order your upstream sources intentionally
+#### Order your upstream sources intentionally
 
-If you only use public package managers (e.g. nuget.org or npmjs.com), the order of your upstream sources is irrelevant. Requests to the feed will follow the [search order](#search-order).
+If you're only using public registries such as nuget.org or npmjs.com, the order of your upstream sources is irrelevant. Requests to the feed will follow the [search order](#search-order).
 
-If you use multiple upstream sources, or a mixture of public package managers and upstream sources, their order is taken into account in step 3 of the [search order](#search-order). In that case, we recommend putting the public package managers first. This ensures that you look for OSS packages from the public repos before checking any upstream sources, which could contain modified versions of public packages.
+If you are using multiple sources such as a mixture of feeds and public registries, then each upstream is searched in the order it's listed in the feed's configuration settings. In this case, we recommend placing the public registries first in the list of upstream sources.
 
-In rare cases, some organizations choose to modify OSS packages to fix security issues, to add functionality, or to satisfy requirements that the package is built from scratch internally, rather than consumed directly from the public repository. If your organization does this, put the upstream source that contains these modified OSS packages before the public package managers to ensure you use your organization's modified versions.
+In rare cases, some organizations choose to modify OSS packages to fix security issues, to add functionality, or to satisfy requirements that the package is built from scratch internally, rather than consumed directly from the public repository.
+If your organization does this, place the upstream source that contains these modified OSS packages before the public package managers to ensure you use your organization's modified versions.
 
-### Use the suggested default view
+#### Use the suggested default view
 
-Upstream sources require you to select a **view** of the remote feed when you add it as an upstream source. This prevents your upstream sources from creating a cycle and it requires and encourages your upstream feed to provide you with a [complete package graph](package-graph.md). In general, the feed owner should [select the correct default view](#local), as the view communicates which packages and versions the producer wants consumers to use.
+When you add a remote feed as an upstream source, you must select its feed's view. This enables the upstream sources to construct a set of available packages. See [complete package graphs](package-graph.md) for more details. 
 
 ## Best practices: feed owners/package producers
 
