@@ -28,9 +28,7 @@ sections:
       - question: |
          Q: I'm an organization Administrator and I turned on the policy that enables inviting GitHub users. Why can't I invite new GitHub users?
         answer: |
-          A: Once the setting is changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials. For more information, see [Add external user](../accounts/add-external-user.md).
-          
-          ![Screenshot of External user access policy turned on.](../accounts/media/add-external-user/guest-access-preview.png)    
+          A: Once the setting is changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials.    
       - question: |
          Q: I signed in with my GitHub credentials, but why can't I invite GitHub users?
         answer: |
