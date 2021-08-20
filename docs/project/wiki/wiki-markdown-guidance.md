@@ -125,7 +125,7 @@ title: Hello world
 
 
 
-::: moniker range=">= azure-devops-2019"
+
 
 ## Embed Azure Boards query results in Wiki
 
@@ -143,7 +143,6 @@ You can also use the **toolbar** and the **query selector** to embed the query r
 
 ![Query Selector Pane](media/query_selector_pane.png)
 
-::: moniker-end
 
 ## @mention users and groups
 
