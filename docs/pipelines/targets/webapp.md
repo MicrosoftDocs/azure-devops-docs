@@ -7,7 +7,7 @@ ms.assetid:
 ms.custom: seodec18
 ms.author: jukullam
 author: juliakm
-ms.date: 09/04/2020
+ms.date: 08/20/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -17,7 +17,11 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-You can automatically deploy your web app to an Azure App Service web app after every successful build.
+You can use Azure Pipelines to continuously deploy your web app to [Azure App Service](/azure/app-service/overview) on every successful build. 
+
+Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
+
+You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to deploy to Azure App Service in your pipeline. 
 
 ::: moniker range="tfs-2017"
 
@@ -26,12 +30,23 @@ You can automatically deploy your web app to an Azure App Service web app after 
 
 ::: moniker-end
 
+## Prerequisites - Azure DevOps
+
+[!INCLUDE [include](includes/prerequisites.md)]
+* An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+
 ## Build your app
 
 #### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
-Follow the guidance in [Create your first pipeline](../create-first-pipeline.md) and use the .NET Core sample offered there before you use this topic. When you're done, you'll have a YAML pipeline to build, test, and publish the source as an artifact.
+If you Fork this repo in GitHub:
+
+```
+https://github.com/MicrosoftDocs/pipelines-dotnet-core
+```
+
+
 
 ::: moniker-end
 
