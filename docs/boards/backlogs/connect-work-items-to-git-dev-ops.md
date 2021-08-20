@@ -29,10 +29,7 @@ Review this article to learn:
 
 
 ::: moniker range=">= azure-devops-2019"  
-
-> [!IMPORTANT]   
-> This article addresses creating new branches and adding links to commits and pull requests to a Git repository hosted on Azure DevOps. To link to GitHub commits and pull requests, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md). 
-
+This article addresses creating new branches and adding links to commits and pull requests to a Git repository hosted on Azure DevOps. To link to GitHub commits and pull requests, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md). 
 ::: moniker-end
 
 > [!TIP]
@@ -126,7 +123,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 	You create a pull request to merge the changes you made to a main branch and get your changes reviewed by other members of your team.  
 
-	<img src="media/git/create-pull-request.png" alt="Work item form, create pull request" /> 
+	:::image type="content" source="media/git/create-pull-request.png" alt-text="Screenshot of Development control, Create pull request link.":::  
 
 5.	Your view will switch to **Code**, Pull Requests page. Complete creating the pull request as shown. 
   
@@ -159,7 +156,7 @@ You can also add a new branch from the work item listed on the backlog or Kanban
 
 For example, here we select the first five items to link to a new branch.  
 
-<img src="media/git/git-dev-multi-select-backlog-create-new-branch.png" alt="Select multiple items from backlog" /> 
+:::image type="content" source="media/git/git-dev-multi-select-backlog-create-new-branch.png" alt-text="Screenshot of select multiple items from backlog, Create branch link.":::
 
 And, we specify the name of the branch.  
 
