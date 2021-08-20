@@ -206,7 +206,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
 - [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
 - [Linking, traceability, and managing dependencies](../boards/queries/link-work-items-support-traceability.md)
-- [Link type reference](../boards/queries/queries/link-type-reference.md)
+- [Link type reference](../boards/queries/link-type-reference.md)
 
 
 ### Testing

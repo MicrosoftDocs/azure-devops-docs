@@ -35,21 +35,31 @@ Review this article to learn:
 
 ::: moniker-end
 
+> [!TIP]
+> You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. To learn how, see the following resources:   
+> - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+> - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+> - [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md).
 
-The **Development** section records all Git development processes that support completion of the work item. This section can show your team information needed to take the next development step and minimize navigational steps to accomplish common development tasks. It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item.<br/>    
+## Development control
 
+The **Development** control records all Git development processes that support completion of the work item. This control can show your team information needed to take the next development step and minimize navigational steps to accomplish common development tasks. It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item.   
 
+::: moniker range=">= azure-devops-2019"  
+:::image type="content" source="media/git/development-control.png" alt-text="Screenshot of work item form, Development control.":::
+::: moniker-end
+::: moniker range="< azure-devops-2019"  
 <img src="media/drive-git-development-dev-section.png" alt="Work item form, Development section" />  
+::: moniker-end
 
 ::: moniker range="tfs-2017"
-
 > [!NOTE]   
-> The **Development** section within the work item form is not supported in TFS 2015 and earlier versions. Consider [upgrading to a later Azure DevOps Server version](https://visualstudio.microsoft.com/downloads/). 
-
+> The **Development** control within the work item form is not supported in TFS 2015 and earlier versions. Consider [upgrading to a later Azure DevOps Server version](https://visualstudio.microsoft.com/downloads/). 
 ::: moniker-end
 
 From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can initiate a pull request for a branch you've created or linked to from the work item.  
 
+Keep in mind that the **Development** control only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients don't display several of the features that are available from the web portal. 
 
 ## Prerequisites
 
@@ -78,11 +88,16 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 1. Start work on the work item by creating a branch. You can add a new Git branch from within the Development section...  
 
+	::: moniker range=">= azure-devops-2019"  
+	:::image type="content" source="media/git/development-control-git-github-create-branch.png" alt-text="Screenshot of Development control, Create branch link.":::
+	::: moniker-end
+	::: moniker range="< azure-devops-2019"  
 	<img src="media/git-dev-pr-create-branch.png" alt="User story work item form, Development section, create new branch" /> 
- 
+	::: moniker-end
+
 	... or, from the form's   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu.  
 
-	<img src="media/git-dev-pr-create-branch-from-action-menu.png" alt="User story work item form, Action menu, add new branch" /> 
+	:::image type="content" source="media/git/actions-menu-new-branch-option.png" alt-text="User story work item form, Action menu, add new branch."::: 
 
 	Name the branch and select the repository on which it's based.   
 
@@ -111,29 +126,29 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 	You create a pull request to merge the changes you made to a main branch and get your changes reviewed by other members of your team.  
 
-	<img src="media/git-dev-pr-create-pull-request-b.png" alt="Work item form, create pull request" /> 
+	<img src="media/git/create-pull-request.png" alt="Work item form, create pull request" /> 
 
 5.	Your view will switch to **Code**, Pull Requests page. Complete creating the pull request as shown. 
   
- 	![Code view, Pull Request page.](media/git-dev-create-pull-request.png)   
+ 	![Code view, Pull Request page.](media/git/git-dev-create-pull-request.png)   
 
 	> [!NOTE]  
 	> Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.  
 	 
-	![Pull Request page, Create pull request.](media/git-dev-pr-complete.png)  
+	![Pull Request page, Create pull request.](media/git/git-dev-pr-complete.png)  
 
 	Check the box for **Squash changes when merging** and then complete the merge. 
 
-	![Complete pull request dialog box, check squash-merge](media/git-dev-complete-merge.png)  
+	![Complete pull request dialog box, check squash-merge](media/git/git-dev-complete-merge.png)  
 
 6. Upon completion, you should see a similar screen as follows.   
 
 	> [!div class="mx-imgBorder"]
-	> ![Pull request, completed notification](media/git-dev-pr-completed.png)
+	> ![Pull request, completed notification](media/git/git-dev-pr-completed.png)
 
 7.	Open the work item form or refresh the form, expand the **Development** section (choose **Maximize Development** :::image type="icon" source="../media/icons/full-screen-icon.png" border="false":::), and you'll see the links that have been added to support the operations you just completed.  
 
-	![Work item form, Development section, links added](media/git-dev-development-section-completed-links.png)  
+	![Work item form, Development section, links added](media/git/git-dev-development-section-completed-links.png)  
 
 
 <a id="add-branch-multi-wi">  </a>
@@ -144,7 +159,7 @@ You can also add a new branch from the work item listed on the backlog or Kanban
 
 For example, here we select the first five items to link to a new branch.  
 
-<img src="media/git-dev-multi-select-backlog-create-new-branch.png" alt="Select multiple items from backlog" /> 
+<img src="media/git/git-dev-multi-select-backlog-create-new-branch.png" alt="Select multiple items from backlog" /> 
 
 And, we specify the name of the branch.  
 
@@ -176,17 +191,14 @@ Or, you can select it from the **Links** :::image type="icon" source="media/icon
 
 ## Related articles
 
-
 - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md)
 - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md)
 - [Add work items](add-work-items.md)  
 - [Git overview](../../repos/git/index.yml) 
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)  
 - [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
-- [Add work items](add-work-items.md)  
-- [Git overview](../../repos/git/index.yml) 
 
-Keep in mind that the **Development** section only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients don't display several of the features that are available from the web portal. 
+
 
 ### Associated work items in build 
 
