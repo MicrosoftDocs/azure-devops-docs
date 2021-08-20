@@ -56,6 +56,8 @@ az webapp create -g myapppipeline-rg -p myapp-service-plan -n my-app-dotnet --ru
 ```
 # [Windows](#tab/windows)
 
+Create an Azure App Service on Linux.
+
 ```azurecli
 # Create a resource group
 az group create --location eastus2 --name myapp-rg
