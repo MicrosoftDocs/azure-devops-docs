@@ -646,7 +646,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
    ![Add the publish artifact task](media/get-started-designer/publish-artifact-task-tfs-2018-2.png)
 
-   **Path to publish**: Select the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: button to browse and select the script you created.
+   **Path to publish**: Select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse and select the script you created.
 
    **Artifact name**: Enter `drop`.
 
@@ -663,7 +663,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
    ![Select add to add the publish artifact task](media/get-started-designer/publish-artifact-task.png)
 
-   **Path to Publish**: Select the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: button to browse and select the script you created.
+   **Path to Publish**: Select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse and select the script you created.
 
    **Artifact Name**: Enter `drop`.
 
@@ -916,7 +916,7 @@ Define the process for running the script in two stages.
 
 1. On the left side, select your new **PowerShell** script task.
 
-1. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: button to browse your artifacts and select the script you created.
+1. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse your artifacts and select the script you created.
 
 1. Add these **Arguments**:
 
@@ -974,7 +974,7 @@ Define the process for running the script in two stages.
 
 10. On the left side, select your new **PowerShell** script task.
 
-11. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: button to browse your artifacts and select the script you created.
+11. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse your artifacts and select the script you created.
 
 12. Add these **Arguments**:
 
@@ -1014,7 +1014,7 @@ Define the process for running the script in two stages.
 
 6. On the **Task catalog** dialog box, select **Utility**, locate the **PowerShell** task, and then select its **Add** button. Select the **Close** button.
 
-7. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: button to browse your artifacts and select the script you created.
+7. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse your artifacts and select the script you created.
 
 8. Add these **Arguments**:
 
