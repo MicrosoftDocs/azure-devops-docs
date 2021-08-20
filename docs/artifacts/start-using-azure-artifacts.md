@@ -110,7 +110,7 @@ A: 1 GiB is currently our lowest granularity, so you most likely haven't reached
 
 ### Q: How can I control how many days Artifacts are kept?
 
-A: You can set up the retention policies to delete packages automatically. See [how to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies) for more details.
+A: You can set up the retention policies to delete packages automatically. See [how to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) for more details.
 
 ### Q: How can I delete my Artifacts? 
 
