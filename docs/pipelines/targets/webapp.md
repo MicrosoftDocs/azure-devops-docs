@@ -32,7 +32,7 @@ You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to depl
 
 ## Prerequisites - Azure DevOps
 
-[!INCLUDE [include](includes/prerequisites.md)]
+[!INCLUDE [include](../includes/prerequisites.md)]
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 ## Build your app
