@@ -167,7 +167,7 @@ You can also you link a query results table to a wiki. This supports quick acces
 - [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
 - [Save work with commits](../repos/git/commits.md)
 - [View and manage pull requests](../repos/git/pull-requests.md)
-- [Link type reference](../boards/queries/queries/link-type-reference.md)
+- [Link type reference](../boards/queries/link-type-reference.md)
 - [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
 ::: moniker-end
 
@@ -179,7 +179,7 @@ You can also you link a query results table to a wiki. This supports quick acces
 - [Drive Git development from a work item](..//boards/backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
 - [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
-- [Link type reference](../boards/queries/queries/link-type-reference.md)
+- [Link type reference](../boards/queries/link-type-reference.md)
 - [Save work with commits](../repos/git/commits.md)
 - [View and manage pull requests](../repos/git/pull-requests.md)
 - [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)

@@ -145,7 +145,9 @@ Open a work item and click one of the Links tab. From the links control tab you 
 ::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio/)
+
 <a id="team-explorer-link" />
+
 If you primarily work in Visual Studio or Team Explorer, and want to link work items, you can do so in a number of ways. Depending on the work item form and customizations that may have been made to your work item form, you may see several Link tabs. Link tabs can be customized to allow or restrict specific link types.  
 
 Open a work item and choose the **Links** tab. From the links control tab you can link to new or existing work items, open the linked object, edit the link type, delete a link, or open the list of links in a query or Excel or Project.
@@ -213,7 +215,7 @@ As you develop your software, you can capture which code changes and builds supp
 ::: moniker range=">= azure-devops-2019"
 The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, Versioned Item, and Integrated in release environment. 
 
-![Artifact-to-artifact link types](media/link-tracking-artifact-to-artifact-link-types.png)  
+:::image type="content" source="media/link-type-reference/conceptual-link-types-devops-objects.png" alt-text="Conceptual image of devops link types.":::
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -225,39 +227,49 @@ To learn more about the links control or to customize the Development links cont
 
 ::: moniker-end
 
-You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../../reference/process/new-work-item-experience.md). 
+You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the **Development** control within the work item form as described in [Work items linked to Git code development](#git-code-development). 
 
 ::: moniker range=">= azure-devops-2019"
 See the following articles for additional information: 
 ::: moniker-end
 ::: moniker range=">= azure-devops-2020"
+- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+- [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
+- [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md)
 - [Link to work items from pull requests, commits, and comments](../../notifications/add-links-to-work-items.md#link-wit-id)
-- [Set work item state in pull request](../../notifications/add-links-to-work-items.md#work-item-state-pull-request)
-- [Link work items to a build ](../backlogs/add-link.md#link-builds)
+- [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+- [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link to work items from pull requests, commits, and comments](../../notifications/add-links-to-work-items.md#link-wit-id)
-- [Link work items to a build ](../backlogs/add-link.md#link-builds)
+- [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
+<a id="git-code-development" /> 
+
 ## Work items linked to Git code development  
 
-The recommended method is to drive development from the work item or add the work item ID when creating branches, commits (git), changesets (TFVC), pull requests (git). 
+The recommended method is to drive development from the work item or add the work item ID when creating branches, commits, and pull requests. 
 
 Git lets you link work items to commits by using the **Commit** link type. You can do this in several ways:
 
 - In Visual Studio Team Explorer, add work item IDs before you commit your changes  
     ![Add work item ID or drag items before you commit your changes](media/link-git-commit-items.png)  
 - You can use the [git-commit](https://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, you apply this comment #35 Catch null exception to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35. 
-- And, with the new work item form (available from Azure Boards and TFS 2017), you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
-
-    ![Work item form, Development section](../backlogs/media/drive-git-development-dev-section.png)  
-
+- And, with the **Development** control, you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
 ::: moniker-end
-
+	::: moniker range=">= azure-devops-2019"  
+	:::image type="content" source="media/git/development-control.png" alt-text="Screenshot of work item form, Development control.":::
+	::: moniker-end
+	::: moniker range=">= tfs-2017 < azure-devops-2019"  
+    ![Work item form, Development section](../backlogs/media/drive-git-development-dev-section.png)  
+	::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 
 
