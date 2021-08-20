@@ -10,10 +10,7 @@ ms.date: 03/11/2021
 
 :::row:::
    :::column span="2":::
-      **Task** 
-   :::column-end:::
-   :::column span="1":::
-      **Stakeholder**
+      **Task or permission** 
    :::column-end:::
    :::column span="1":::
      **Readers**
@@ -27,27 +24,8 @@ ms.date: 03/11/2021
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Access Azure Test Plans (formerly Test Manager, purchased separately)
-   :::column-end:::
-   :::column span="1":::
-
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      Create and delete test runs
-   :::column-end:::
-   :::column span="1":::
-      
+      **Create test runs** (Project-level permission)  
+      **Delete test runs** (Project-level permission)
    :::column-end:::
    :::column span="1":::
       
@@ -72,9 +50,6 @@ ms.date: 03/11/2021
    :::column span="1":::
       ✔️
    :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
@@ -84,9 +59,6 @@ ms.date: 03/11/2021
       
    :::column-end:::
    :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
       ✔️
    :::column-end:::
    :::column span="1":::
@@ -95,10 +67,7 @@ ms.date: 03/11/2021
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Exploratory testing, view test runs 
-   :::column-end:::
-   :::column span="1":::
-       
+      **View test runs** (Project-level permission)  
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -112,11 +81,11 @@ ms.date: 03/11/2021
 :::row-end:::
 :::row:::
    :::column span="2":::
-      Manage test plans and test suites  
-      Manage test configurations and test environments 
-   :::column-end:::
-   :::column span="1":::
-       
+      **Manage test plans** (Area Path permission)  
+      **Manage test suites** (Area Path permission)  
+      **Manage test configurations** (Project-level permission)  
+      **Manage test environments** (Project-level permission) 
+      (Includes add and delete operations)
    :::column-end:::
    :::column span="1":::
        
@@ -131,9 +100,6 @@ ms.date: 03/11/2021
 :::row:::
    :::column span="2":::
       Exploratory testing 
-   :::column-end:::
-   :::column span="1":::
-       
    :::column-end:::
    :::column span="1":::
       
@@ -151,9 +117,6 @@ ms.date: 03/11/2021
       Apply a work item template to a test case
    :::column-end:::
    :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
       
    :::column-end:::
    :::column span="1":::
@@ -167,10 +130,7 @@ ms.date: 03/11/2021
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="2":::
-      Delete delete test plans, test cases, and other test related work items (able to restore from the Recycle bin)
-   :::column-end:::
-   :::column span="1":::
-      ✔️
+      **Delete test runs** 
    :::column-end:::
    :::column span="1":::
       
@@ -183,23 +143,5 @@ ms.date: 03/11/2021
    :::column-end:::
 :::row-end:::
 ::: moniker-end  
-::: moniker range=">= tfs-2015"
-:::row:::
-   :::column span="2":::
-      Permanently delete test plans, test cases, and other test related work items (same as Permanently delete work items)
-   :::column-end:::
-   :::column span="1":::
-
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-::: moniker-end 
+ 
 

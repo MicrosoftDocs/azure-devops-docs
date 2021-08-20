@@ -5,9 +5,12 @@
   - name: About permissions, access, & security groups  
     href: about-permissions.md
     displayName: security, group, membership, inheritance, roles
-  - name: Default permissions & access 
+  - name: Default permissions
     href: permissions-access.md
     displayName: security, group, role, Basic, administrator
+  - name: Stakeholder access
+    href: stakeholder-access.md
+    displayName: public, private
   - name: View permissions 
     href: view-permissions.md
     displayName: default, project, object, valid, user, group
