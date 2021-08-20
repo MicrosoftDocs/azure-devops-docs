@@ -92,7 +92,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 	:::image type="content" source="media/git/development-control-git-github-create-branch.png" alt-text="Screenshot of Development control, Create branch link.":::
 	::: moniker-end
 	::: moniker range="< azure-devops-2019"  
-	<img src="media/git-dev-pr-create-branch.png" alt="User story work item form, Development section, create new branch" /> 
+	<img src="media/git/git-dev-pr-create-branch.png" alt="User story work item form, Development section, create new branch" /> 
 	::: moniker-end
 
 	... or, from the form's   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu.  
@@ -101,7 +101,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 	Name the branch and select the repository on which it's based.   
 
-	<img src="media/git-dev-create-branch.png" alt="Create a branch dialog box" />  
+	<img src="media/git/git-dev-create-branch.png" alt="Create a branch dialog box" />  
 
 	Branches you create are automatically linked to the work item.  
 
@@ -118,7 +118,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 	From Visual Studio or other supported IDE, commit and push changes from your local branch to the repository.  
 
-	![Commit and push changes](media/git-dev-commit-sync.png)  
+	![Commit and push changes](media/git/git-dev-commit-sync.png)  
 
 	If this is the first time pushing changes from a new branch, you'll need to publish the branch before pushing your changes. For more details, see [Share code with push](../../repos/git/pushing.md).   
 
