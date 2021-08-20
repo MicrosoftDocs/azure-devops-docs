@@ -324,6 +324,8 @@ Additional features you can use to quickly link or change links that use the par
 - To add or delete work items or change the link structure, you can use Excel. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
 
 
+[!INCLUDE [temp](../includes/view-linked-objects.md)]
+
 ## Related articles
 
 ::: moniker range=">= azure-devops-2020"

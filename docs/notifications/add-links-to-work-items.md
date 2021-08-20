@@ -32,19 +32,9 @@ You can enter `#ID` from within the following areas to link to your work items:
 - Git commit comments and pull request discussions
 - TFVC changeset or shelveset comments
 ::: moniker-end
-
-
-::: moniker range="azure-devops"
-
-Linking work items to other objects supports the following benefits:
-
-- Automatically close work items when a pull request gets completed and merged.
-- 
-
-::: moniker-end
-
+ 
 > [!TIP]
-> You can set up automatic linking and other settings that link work items to Git or GitHub commits, pull requests, builds, and more. To learn how, see the following resources:   
+> You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. To learn how, see the following resources:   
 > - [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
 > - [Configure pipelines to support work tracking](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
 > - [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md).
@@ -171,6 +161,7 @@ You can also you link a query results table to a wiki. This supports quick acces
 - [End-to-end traceability](../cross-service/end-to-end-traceability.md)
 - [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
 - [Configure pipelines to support work tracking](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Drive Git development from a work item](..//boards/backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
 - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
 - [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
@@ -185,7 +176,8 @@ You can also you link a query results table to a wiki. This supports quick acces
 - [End-to-end traceability](../cross-service/end-to-end-traceability.md)
 - [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
 - [Configure pipelines to support work tracking](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-- [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
+- [Drive Git development from a work item](..//boards/backlogs/connect-work-items-to-git-dev-ops.md)
+- [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
 - [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
 - [Link type reference](../boards/queries/queries/link-type-reference.md)
 - [Save work with commits](../repos/git/commits.md)
