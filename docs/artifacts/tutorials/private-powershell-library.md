@@ -271,17 +271,19 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     ```powershell
         Get-PSRepository
     ```
+    > [!NOTE]
+    > The following commands have previously been listed without authentication, this only works on machines set up to publish to the repository. On machines that are only consuming the repository you will need to provide authentication to connect to the new repository for each command run.
 
 5. Find modules in our repository:
 
     ```powershell
-        Find-Module -Repository PowershellAzureDevopsServices
+        Find-Module -Repository PowershellAzureDevopsServices -Credential $credsAzureDevopsServices
     ```
 
     Our `Get-Hello` module should be one of the entries in the previous cmdlet's return message. To install it, run the following command:
     
     ```powershell
-        Install-Module -Name Get-Hello -Repository PowershellAzureDevopsServices
+        Install-Module -Name Get-Hello -Repository PowershellAzureDevopsServices -Credential $credsAzureDevopsServices
     ```
 
     You can check for your module by running the following command:
