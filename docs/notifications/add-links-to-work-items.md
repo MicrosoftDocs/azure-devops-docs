@@ -51,7 +51,7 @@ From the work item form, **Links** tab, you can [view all the objects linked to 
 
 
 > [!NOTE]
-> You can also link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md. This requires connecting your Azure DevOps project to your GitHub repository. To learn more, see [Azure Boards-GitHub integration](../boards/github/index.md).
+> You can also link to work items from GitHub commits, pull requests, and issues. This requires connecting your Azure DevOps project to your GitHub repository. To learn more, see [Azure Boards-GitHub integration](../boards/github/index.md).
 
 
 <a id="mention-wit-id">  </a>
