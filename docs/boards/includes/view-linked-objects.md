@@ -18,7 +18,7 @@ To view the list of all objects linked to a work item, open the work item and ch
 
 Linked objects are grouped under their link type, with a count within each group. You can expand or collapse each group, and sort within each group by **State**, **Latest Update**, or **Comment** by choosing the corresponding column title. 
 
-For example, the following Links tab shows a portion of the 64 linked objects for a work item. 
+For example, the following **Links** tab shows a portion of the 64 linked objects for a work item. 
 
 :::image type="content" source="../media/view-link-list/list-linked-objects-links-tab.png" alt-text="Screenshot of Links tab with many linked objects.":::
 
