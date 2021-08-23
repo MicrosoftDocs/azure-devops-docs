@@ -47,8 +47,11 @@ To publish code coverage results for JavaScript with Istanbul using YAML, see [J
 
 |Argument|Description|
 |--- |--- |
+|`codeCoverageTool`<br/>Code coverage tool|(Required) By default use **JaCoCo**. Available options: JaCoCo, Cobertura. |
 |`summaryFileLocation` <br/>Path to summary files|(Required) Path of the summary file containing code coverage statistics, such as line, method, and class coverage. Multiple summary files will be merged into a single report. The value may contain minimatch patterns. <br/>For example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura/coverage.xml`|
 |`pathToSources` <br/>Path to Source files|(Optional) Path to source files is required when coverage XML reports do not contain absolute path to source files. <br/>For example, JaCoCo reports do not use absolute paths and when publishing JaCoCo coverage for Java apps, the pattern would be similar to `$(System.DefaultWorkingDirectory)/MyApp/src/main/java/`. <br/>This input is also needed if tests are run in a docker container. This input should point to absolute path to source files on the host. <br/>For example, `$(System.DefaultWorkingDirectory)/MyApp/`|
+|`reportDirectory`<br/>Report directory|(Optional) Path of the code coverage HTML report directory. The report directory is published for later viewing as an artifact of the build. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura`|
+|`additionalCodeCoverageFiles`<br/>Additional files|(Optional) File path pattern specifying any additional code coverage files to be published as artifacts of the build. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/**/*.exec`|
 |`failIfCoverageEmpty`<br/>Fail if code coverage results are missing|(Optional) Fail the task if code coverage did not produce any results to publish.|
 
 ## Docker

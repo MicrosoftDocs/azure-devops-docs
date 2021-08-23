@@ -24,7 +24,7 @@ In Azure Pipelines, all of the following are considered *protected* resources:
 - [secure files](../library/secure-files.md)
 - [service connections](../library/service-endpoints.md)
 - [environments](../process/environments.md)
-- [repositories](../process/environments.md)
+- [repositories](../process/repository-resource.md)
 
 "Protected" means:
 - They can be made accessible to specific users and specific pipelines within the project.

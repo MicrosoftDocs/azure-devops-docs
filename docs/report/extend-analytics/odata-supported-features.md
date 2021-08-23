@@ -39,7 +39,8 @@ Analytics supports several OData functions as summarized in this article. Unsupp
 When multiple clauses are used in a query, they are applied in the order specified above. The order of clauses in the query string are ignored. For example, in the following query, work items are first  grouped and aggregated. Next, the groups are filtered. After that, the filtered groups are sorted. Finally, the first 5 records are returned. The query returns the top five work item types used at least 100 times.
 
 ``` 
-WorkItems?$filter=Count ge 100$apply=groupby((WorkItemType), aggregate($count as Count))&&$orderby=Count&top=5
+WorkItems?$filter=Count ge 100&$apply=groupby((WorkItemType), aggregate($count as Count))&$orderby=Count&top=5
+
 ```
 
 

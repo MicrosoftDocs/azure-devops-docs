@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 05/21/2021 
+ms.date: 08/16/2021 
 ---
 
 # Add and manage fields (Inheritance process)   
@@ -49,6 +49,11 @@ For descriptions and usage of each field, as well as the Reference name for each
 <a id="open-process-wit">  </a>
 <a id="add-field">  </a>
 <a id="add-custom-field">  </a>
+
+
+## Custom field names
+
+When you add a custom field to an inherited process, Azure DevOps assigns a reference name prefixed with *Custom* and then then name of the field with spaces removed. For example, you add a field named DevOps Triage, the reference name is **Custom.DevOpsTriage**. No spaces are allowed within the reference name.  
 
 ## Add a custom field 
 

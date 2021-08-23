@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 06/08/2021
+ms.date: 08/16/2021
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 
 Templates let you define reusable content, logic, and parameters. Templates function in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. The second approach is useful for [building secure pipelines with templates](../security/templates.md).
 
-If a template is used to include content, it functions like an include directive in many programming languages. Content from one file is inserted into another file. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow.  
+If a template is used to include content, it functions like an include directive in many programming languages. Content from one file is inserted into another file. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow. 
 
 ::: moniker-end
 
@@ -175,7 +175,9 @@ steps:
 
 ## Insert a template
 
-You can copy content from one YAML and reuse it in a different YAML. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
+You can copy content from one YAML and reuse it in a different YAML. Copying content from one YAML to another saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
+
+Template files need to exist on your filesystem at the start of a pipeline run. You can't reference templates in an artifact. 
 
 ```yaml
 # File: templates/include-npm-steps.yml
@@ -1171,7 +1173,7 @@ For `type: git` (Azure Repos), `name` is `<project>/<repo>`.
 The project must be in the same organization; cross-organization references are not supported.
 
 Repositories are resolved only once, when the pipeline starts up.
-After that, the same resource is used for the duration of the pipeline.
+After that, the same resource is used during the pipeline.
 Only the template files are used.
 Once the templates are fully expanded, the final pipeline runs as if it were defined entirely in the source repo.
 This means that you can't use scripts from the template repo in your pipeline.
@@ -1421,7 +1423,7 @@ steps:
 
 The `each` directive allows iterative insertion based on a YAML sequence (array) or mapping (key-value pairs).
 
-For example, you can wrap the steps of each job with additional pre- and post-steps:
+For example, you can wrap the steps of each job with extra pre- and post-steps:
 
 ```yaml
 # job.yml
@@ -1455,7 +1457,7 @@ jobs:
 ```
 
 You can also manipulate the properties of whatever you're iterating over.
-For example, to add additional dependencies:
+For example, to add more dependencies:
 
 ```yaml
 # job.yml
