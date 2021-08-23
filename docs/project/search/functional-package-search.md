@@ -14,15 +14,17 @@ ms.date: 04/15/2021
 
 [!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
-Package Search is available to all users of Azure DevOps. For information on semantic search functions, see [Get started with semantic search](get-started-search.md).
+Package Search is available to all users of Azure DevOps. For information on main search functions, see [Get started with search](get-started-search.md).
+
 ## Prerequisites
 
 Package Search is automatically available to users of Azure DevOps.
+
 ## Apply supported functions to package search
 
 1. The Views filter only appears if a single feed is selected from Feeds filter. Use the filter to show the selector lists.
 
-	:::image type="content" source="media/shared/pkgsrch-results-filtericon.png" alt-text="Showing the filter lists":::   
+	:::image type="content" source="media/shared/pkgsrch-results-filtericon.png" alt-text="Showing the filter lists":::
 
 2. Select the criteria you want in the selector lists, or search across the entire organization.
 
@@ -55,5 +57,4 @@ You can use APIs to extend or supplement the capabilities listed in this article
 * [Get started with Search](get-started-search.md)
 * [Search code](functional-code-search.md)
 * [Search work items](functional-work-item-search.md)
-* [Search wiki](../wiki/search-wiki.md)
 * [Search FAQs](faq-search.yml)

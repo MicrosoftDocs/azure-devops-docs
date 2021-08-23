@@ -123,7 +123,7 @@
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left">Powerful semantic code search
+<td align="left">Powerful code search
 </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -132,7 +132,7 @@
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left">Powerful semantic work tracking search
+<td align="left">Powerful work tracking search
 </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -276,7 +276,7 @@
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left">Powerful semantic code search
+<td align="left">Powerful code search
 </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -285,7 +285,7 @@
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left">Powerful semantic work tracking search
+<td align="left">Powerful work tracking search
 </td>
 <td>✔️</td>
 <td>✔️</td>
