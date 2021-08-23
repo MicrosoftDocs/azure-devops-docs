@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
-Functional work item search command filters extend your ability to refine your search of work items based on assignment, work item type, specific fields, and more. This is in addition to the filter functions documented in [Get started with semantic search](get-started-search.md). Work item search is a built-in feature available to all Azure DevOps users.
+Functional work item search command filters extend your ability to refine your search of work items based on assignment, work item type, specific fields, and more. This is in addition to the filter functions documented in [Get started with search](get-started-search.md). Work item search is a built-in feature available to all Azure DevOps users.
 
 ::: moniker range=" azure-devops"
 
@@ -64,19 +64,18 @@ You can easily search across all work item fields, including custom fields, whic
   - When you have one project selected, you see a list of area paths in that project for which you have read access - you won't see any projects and area paths for which you don't have read permission
   - Select area paths in the tree to narrow your search if necessary.
 - The selected projects are always at the top of the list. Notice that hit counts are also shown for projects that aren't selected. 
-- Open the search results in a new browser tab from either the semantic search or by selecting **Ctrl** + **Shift** + **Enter**.
+- Open the search results in a new browser tab from either the main search function or by selecting **Ctrl** + **Shift** + **Enter**.
 
 ## Work item search best practices
 
 - Use a text search across all fields to efficiently locate relevant work items. Text search is useful when you're trying to, for example, search for all work items that had similar exception trace.
 - Use the quick in-line search filters on any work item field to narrow down to a list of work items in seconds. The list of suggestions helps complete your search faster.
 
-## Semantic search vs. managed work item queries
+## Search vs. managed work item queries
 
-You have two ways to find and list work items: managed queries and semantic searches. If you're looking for a single work item, use the semantic search. If you want to generate a list of work items to triage, update, chart, or share with others, use a managed query.
+You have two ways to find and list work items: managed queries and the main search function. If you're looking for a single work item, use the main search. If you want to generate a list of work items to triage, update, chart, or share with others, use a managed query.
 
-> [!NOTE]    
-> With semantic search, you search against a more fully indexed set of fields than that of managed queries.  
+With the main search function, you can search against a more fully indexed set of fields than that of managed queries.  
 
 ---
 :::row:::
@@ -84,37 +83,38 @@ You have two ways to find and list work items: managed queries and semantic sear
       **Use a managed query**
    :::column-end:::
    :::column span="1":::
-      **Use a semantic search**
+      **Search**
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
       - List items to perform bulk updates to fields.  
-      - Review work that's in progress or recently closed.    
-      - Triage work: set priority, review, update. 
-      - Create a chart and add it to a dashboard.    
-      - Create a chart to get a count of items or sum a field.    
-      - Create a chart that shows a burndown or burnup over time.   
-      - View a tree of parent-child related work items.   
-      - List work items with link relationships.    
-      - List work items for a single project, multiple projects, or across all projects.    
+      - Review work that's in progress or recently closed.
+      - Triage work: set priority, review, update.
+      - Create a chart and add it to a dashboard.
+      - Create a chart to get a count of items or sum a field.
+      - Create a chart that shows a burndown or burnup over time.
+      - View a tree of parent-child related work items.
+      - List work items with link relationships.
+      - List work items for a single project, multiple projects, or across all projects.
    :::column-end:::
    :::column span="1":::
-      - Find a specific work item using its ID or a keyword.   
+      - Find a specific work item using its ID or a keyword.
       - Find one or more work items across all projects in a fast, flexible manner.  
       - Perform full text search across all work item fields.  
       - Review work items assigned to a specific team member.  
       - Search against specific work item fields to quickly narrow down a list of work items.  
       - Determine what key words will support a managed search.  
-      - List work items for a single project, multiple projects, or across all projects.    
+      - List work items for a single project, multiple projects, or across all projects.
    :::column-end:::
 :::row-end:::
 ---
 
-To get started, see the following articles:  
+To get started, see the following articles:
+
 - [View and run a query](../../boards/queries/view-run-query.md)
-- [Use semantic search](../../boards/queries/search-box-queries.md)  
+- [Use search](../../boards/queries/search-box-queries.md)  
 - [Define a query](../../boards/queries/using-queries.md)   
 
 For specific managed query examples, see [Query quick reference, Example queries](../../boards/queries/query-index-quick-ref.md).  
@@ -249,5 +249,4 @@ You can use APIs to extend or supplement the capabilities listed in this article
 - [Get started with Search](get-started-search.md)
 - [Search code](functional-code-search.md)
 - [Search artifacts and packages](functional-package-search.md)
-- [Search wiki](../wiki/search-wiki.md)
 - [Search FAQs](faq-search.yml)

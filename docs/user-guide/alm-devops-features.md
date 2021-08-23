@@ -2074,7 +2074,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Code search</b></p>
-<p><a href="../project/search/get-started-search.md" data-raw-source="[Find code based on keywords and semantic search filters](../project/search/get-started-search.md)">Find code based on keywords and semantic search filters</a> across your Git repositories.</p>
+<p><a href="../project/search/get-started-search.md" data-raw-source="[Find code based on keywords and semantic search filters](../project/search/get-started-search.md)">Find code based on keywords and search filters</a> across your Git repositories.</p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 <p><b>CodeLens search</b></p>
 <p><a href="/visualstudio/ide/find-code-changes-and-other-history-with-codelens" data-raw-source="[Find references and changes to your code, linked bugs, work items, code reviews, and unit tests](/visualstudio/ide/find-code-changes-and-other-history-with-codelens)">Find references and changes to your code, linked bugs, work items, code reviews, and unit tests</a>.</p>

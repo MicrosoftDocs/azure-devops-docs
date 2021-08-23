@@ -8422,8 +8422,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/collaborate/search-wiki.md",
-      "redirect_url": "/azure/devops/project/wiki/search-wiki",
+      "source_path": "docs/project/wiki/search-wiki.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": false
     },
     {
