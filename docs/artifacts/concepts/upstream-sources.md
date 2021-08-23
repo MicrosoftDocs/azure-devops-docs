@@ -75,41 +75,45 @@ If your organization does this, place the upstream source that contains these mo
 
 When you add a remote feed as an upstream source, you must select its feed's view. This enables the upstream sources to construct a set of available packages. See [complete package graphs](package-graph.md) for more details. 
 
-## Best practices: feed owners/package producers
+## Best practices: feed owners/package publishers
 
-To make your feed easily usable as an upstream source to other feeds, consider applying the following best practices to your feed.
+To make sure your feed is easily configured as an upstream source, consider applying the following best practices:
 
 <a name="local"></a>
 
-### When in doubt, `@local` is your default view
+#### Use the default view
 
-If you don't use [views](views.md), the `@local` view should be your default view (and is the default view on all newly created feeds). @local contains all packages uploaded/pushed/published to the feed from a public package repository (e.g. nuget.exe) **and** all packages saved from any upstream source. @local, like [all views](views.md), does **not** include packages that are available in the feed's upstream sources but have never been saved into the feed.
+The `@local` view is the default view for all newly created feeds. It contains all the packages published to your feed or saved from upstream sources.
 
-If you do use views to release package versions, you can set the default view to whichever view contains the packages you want to make available to your consumers.
+If you want to use views to release new package versions, you can promote your package to a view such as `@release` and make it available to your consumers.
 
-### Provide a complete graph
+#### Construct a package graph
 
-Because your consumers require a [complete graph](package-graph.md) to successfully install and consume your package, you should ensure that your [default view](#local) contains one. This is most easily done by connecting to the feed's default view ([NuGet](../nuget/consume.md), [npm](../npm/npmrc.md)) and installing the package you wish to share. You may need to do this once connected to the feed (instead of the feed@view). If the package installs correctly while you're connected to the default view, all of its dependencies are in the view.
+When a feed query its upstream source for a package, Azure Artifacts return the packages in the view that was configured for that specific upstream source. To construct a package graph, simply connect to the feed's default view and install the package you wish to share. When the package is installed correctly in the default view, users who want to consume it will be able to resolve the package graph and install the desired package.
 
 <a name="search-order"></a>
 
-## Determining the package to use: search order
+## Search order
 
-For public package managers that support multiple feeds (NuGet and Maven), the order in which feeds are consulted is sometimes unclear or non-deterministic (for example in NuGet, parallel requests are made to all feeds in the config file and the first response wins). Upstream sources prevent this non-determinism by searching the feed and its upstream sources using the following order:
+For public package managers that support multiple feeds (NuGet and Maven), the order in which feeds are queried is sometimes unclear or non-deterministic. For example in NuGet, parallel queries are made to all the feeds in the config file, and the responses are processed first-In, first-out FIFO.
 
-1. Packages pushed to the feed
-2. Packages saved via an upstream source
-3. Packages available via upstream sources: each upstream is searched in the order it's listed in the feed's configuration
+Upstream sources prevent this non-deterministic behavior by searching the feed and its upstream sources using the following order:
 
-To take advantage of the determinism provided by upstream sources, you should ensure that your client's configuration file [only references your product feed](#single-feed), and not any other feeds like the public package managers.
+1. Packages pushed to the feed.
+
+1. Packages saved from an upstream source.
+
+1. Packages available from upstream sources: each upstream is searched in the order it's listed in the feed's configuration
+
+To take full advantage of the fast lookup feature, we recommend that you only include one feed in your config file.
 
 <a name="saved-packages"></a>
 
-## Saving packages from upstream sources: continuity
+## Save packages from upstream sources: continuity
 
-When you enable an upstream source, packages installed from the upstream source via the feed will automatically be saved in the feed. These packages could be installed directly from the upstream (for example, `npm install express`) or they could be installed as part of dependency resolution (for example, the install of `express` would also save dependencies like `accepts`).
+When you enable upstream sources for your feed, packages installed from upstream sources will be automatically saved to your feed. These packages could be installed directly from the upstream as follows `npm install express` or they could be installed as part of a dependency resolution (installing `express` would also save dependencies like `accepts`).
 
-Saving can improve download performance and save network bandwidth especially for TFS servers located on internal networks.
+Saving packages can improve download performance and save network bandwidth especially for TFS servers in internal networks.
 
 <a name="overriding-packages"></a>
 
