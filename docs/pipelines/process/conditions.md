@@ -68,7 +68,7 @@ stages:
 
 Conditions are evaluated to decide whether to start a stage, job, or step.
 This means that nothing computed at runtime inside that unit of work will be available.
-For example, if you have a job which sets a variable using a runtime expression using `$[ ]` syntax, you can't use that variable in your custom condition. 
+For example, if you have a job that sets a variable using a runtime expression using `$[ ]` syntax, you can't use that variable in your custom condition. 
 
 ::: moniker-end
 
