@@ -146,20 +146,21 @@ and(always(), eq(variables['Build.Reason'], 'Schedule'))
 condition: eq(variables['System.debug'], 'true')
 ```
 
+
 ### Run if a variable is null (empty string)
 
 Since all variables are treated as strings in Azure Pipelines, an empty string is equivalent to `null` in this pipeline. 
 
 ```yaml
 variables:
-- name: testNull
+- name: testEmpty
   value: ''
 
 jobs:
   - job: A
     steps:
-    - script: echo testNull is blank
-    condition: eq('${{ variables.testNull }}', '')
+    - script: echo testEmpty is blank
+    condition: eq('${{ variables.testEmpty }}', '')
 ```
 
 ### Use a template parameter as part of a condition
