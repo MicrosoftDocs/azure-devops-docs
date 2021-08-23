@@ -27,7 +27,7 @@ sections:
 
       - question: What's the difference between a query and a semantic search? 
         answer: |
-          While both query and semantic search finds and list work items, the filter features and results presentation are different. To learn more, see [Functional work item search, Semantic search vs. managed work item queries](../../project/search/functional-work-item-search.md#semantic-search-vs-managed-work-item-queries).  
+          While both query and semantic search finds and list work items, the filter features and results presentation are different. To learn more, see [Functional work item search, Semantic search vs. managed work item queries](../../project/search/functional-work-item-search.md#search-vs-managed-work-item-queries).  
 
       - question: Can I export a query and import to another project?  
         answer: |

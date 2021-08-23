@@ -109,7 +109,7 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 
 
 <tr>
-<td align="left"><strong>Semantic search</strong></td>
+<td align="left"><strong>Search</strong></td>
 <td>Full access</td>
 <td>Full access</td>
 <td>Full access</td>
