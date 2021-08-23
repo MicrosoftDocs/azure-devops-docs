@@ -33,7 +33,7 @@ Non-members of a public project have read-only access to a limited set of servic
 * [View and filter work items](view-filter-work-items-public.md)
 * [View a project page or dashboard](view-project-dashboard-public.md)
 * [View the project Wiki](view-wiki-public.md) 
-* Do semantic search of the [code](code-search-public.md) or [work items](work-item-search-public.md) 
+* Do search of the [code](code-search-public.md) or [work items](work-item-search-public.md) 
 
 For more information, see [Differences and limitations for non-members of a public project](feature-differences.md).
 
