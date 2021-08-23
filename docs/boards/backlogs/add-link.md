@@ -67,13 +67,13 @@ For a list of all link types and supported link relationships, see [Linking, tra
 > The following link relationships are restricted: 
 > - You can't assign a work item more than one parent using a parent/child or other tree topology link type. 
 > - You can't add links in such a way as to create a circular relationship. 
-> - You can't link more than 1,000 work item to a single work item. 
+> - You can't link more than 1,000 work items to a single work item. 
 
 [!INCLUDE [temp](../includes/prerequisites.md)] 
 
 <a id="link"> </a>
 
-&nbsp;
+ 
 
 ## Link several work items 
 
@@ -323,6 +323,8 @@ Additional features you can use to quickly link or change links that use the par
 - To indent (![Indent](../queries/media/IC588323.png)), outdent (![Outdent](../queries/media/IC588324.png)), and change the tree hierarchy, use a tree query in Visual Studio.  
 - To add or delete work items or change the link structure, you can use Excel. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
 
+
+[!INCLUDE [temp](../includes/view-linked-objects.md)]
 
 ## Related articles
 

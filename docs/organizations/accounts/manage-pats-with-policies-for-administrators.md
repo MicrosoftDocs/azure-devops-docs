@@ -6,7 +6,7 @@ ms.technology: devops-accounts
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 07/29/2021
+ms.date: 08/18/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -85,6 +85,9 @@ The Azure DevOps Administrator in Azure AD defines the maximum lifespan of a PAT
 4. Enter the number of maximum days, and then select **Save**.
 
 ## Add Azure AD users or groups to the allowlist
+
+> [!WARNING]
+> We recommend using groups with your tenant policy allow list(s). If you use a named user, be aware that a reference to the named user's identity will reside in the United States, Europe (EU), and Southeast Asia (Singapore).
 
 Users or groups on the allowlist are exempt from the restrictions and enforcements created by these policies when they're turned on. Select **Add AAD user or group** to add the user or group to the list, and then select **Add**. Each policy has its own allowlist. If a user is on the allowlist for one policy, any other activated policies still apply. In other words, if you want a user to be exempt from all policies, you should add them to each allowlist.
 

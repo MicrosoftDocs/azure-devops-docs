@@ -59,7 +59,7 @@ Checklists are a feature of all Kanban boards, both product and portfolio backlo
 	To add work item types to track as checklists, add them to the next-lower hierarchical backlog. To learn how, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md) or [Process configuration XML element reference (On-premises XML process)](../../reference/xml/process-configuration-xml-element.md). 
 
 > [!TIP]    
-If you find that you don't use this feature, you can disable it from the [common configurations dialog](customize-cards.md#annotations).  
+> If you find that you don't use this feature, you can disable it from the [common configurations dialog](customize-cards.md#annotations).  
 
 
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]

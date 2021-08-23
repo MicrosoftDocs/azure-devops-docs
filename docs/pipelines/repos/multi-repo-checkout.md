@@ -367,4 +367,4 @@ Choose **View** or **Authorize resources**, and follow the prompts to authorize 
 
 :::image type="content" source="media/multi-repo-checkout/permit-access.png" alt-text="Permit access":::
 
-For more information, see [Troubleshooting authorization for a YAML pipeline](../process/resources.md#troubleshooting-authorization-for-a-yaml-pipeline).
+For more information, see [Troubleshooting authorization for a YAML pipeline](../process/resources.md#authorize-a-yaml-pipeline).
