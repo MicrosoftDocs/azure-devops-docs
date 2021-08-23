@@ -7,7 +7,7 @@ ms.assetid:
 ms.custom: seodec18
 ms.author: jukullam
 author: juliakm
-ms.date: 08/20/2021
+ms.date: 08/23/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -21,6 +21,7 @@ You can use Azure Pipelines to continuously deploy your web app to [Azure App Se
 
 Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
 
+You'll use the Azure Web App Deploy task to deploy to Azure App Service. The 
 You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to deploy to Azure App Service in your pipeline. 
 
 ::: moniker range="tfs-2017"
@@ -179,6 +180,35 @@ add the following snippet to your azure-pipelines.yml file:
 The snippet assumes that the build steps in your YAML file produce the zip archive in the `$(System.DefaultWorkingDirectory)` folder on your agent.
 
 For information on Azure service connections, see the [following section](#endpoint).
+
+
+### Deploy a .NET app
+
+if you're building a [.NET Core app](../ecosystems/dotnet-core.md), use the following snipped to deploy the build to an app. 
+
+```yaml
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: '<Azure service connection>'
+    appType: 'webAppLinux'
+    appName: '<Name of web app>'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+```
+
+* **azureSubscription**: your Azure subscription.
+* **appType**: your Web App type.
+* **appName**: the name of your existing app service.
+* **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
 
 ### Deploy a Java app
 
