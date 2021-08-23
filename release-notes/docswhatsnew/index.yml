@@ -43,4 +43,4 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: What's new in Azure DevOps
-            url: ../features-timeline.md#current-features
+            url: ../features-timeline.md#released-features
