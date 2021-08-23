@@ -21,8 +21,7 @@ You can use Azure Pipelines to continuously deploy your web app to [Azure App Se
 
 Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
 
-You'll use the Azure Web App Deploy task to deploy to Azure App Service. The 
-You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to deploy to Azure App Service in your pipeline. 
+You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to deploy to Azure App Service in your pipeline. For more complicated scenarios such as needing to use XML parameters in your deploy, you can use the [Azure App Service Deploy task](../tasks/deploy/azure-rm-web-app-deployment.md).  
 
 ::: moniker range="tfs-2017"
 
@@ -100,15 +99,38 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
-###  Add the Azure App Service Deploy task
+###  Add the Azure Web App task
 
-1. Use the Task assistant to add the [Azure Web App](../tasks/deploy/azure-rm-web-app.md) task. 
-    :::image type="content" source="media/app-service-deploy-task.png" alt-text="Add the App Service Deploy task.":::
+1. Use the Task assistant to add the [Azure Web App Deploy](../tasks/deploy/azure-rm-web-app.md) task. 
+    :::image type="content" source="media/deploy-to-azure/azure-web-app-task.png" alt-text="Azure web app deploy task.":::
 
 1. Select **Azure Resource Manager** for the **Connection type** and select your **Azure subscription** where you will host your app. Make sure to **Authorize** for connection. 
 
-1. Select  **Web App on Linux**. 
+1. Select  **Web App on Linux** and enter your `azureSubscription`, `appName`, and `package`. Your complete YAML should look like this. 
 
+    ```yaml
+    variables:
+      buildConfiguration: 'Release'
+    
+    steps:
+    - script: dotnet build --configuration $(buildConfiguration)
+      displayName: 'dotnet build $(buildConfiguration)'
+    - task: DotNetCoreCLI@2
+      inputs:
+        command: 'publish'
+        publishWebProjects: true
+    - task: AzureWebApp@1
+      inputs:
+        azureSubscription: '<Azure service connection>'
+        appType: 'webAppLinux'
+        appName: '<Name of web app>'
+        package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    ```
+
+    * **azureSubscription**: your Azure subscription.
+    * **appName**: the name of your existing app service.
+    * **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
+    
 
 ::: moniker-end
 
@@ -150,7 +172,7 @@ To get started:
 
 5. Link the build pipeline as an artifact for this release pipeline. Save the release pipeline and create a release to see it in action.
 
-* * *
+---
 Now you're ready to read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
 
 ## Azure Web App Deploy task
@@ -209,30 +231,6 @@ steps:
 * **appType**: your Web App type.
 * **appName**: the name of your existing app service.
 * **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
-
-### Deploy a Java app
-
-If you're building a [Java app](../ecosystems/java.md), use the following snippet to deploy the web archive (.war) to a Linux Webapp:
-
-```yaml
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: '<Azure service connection>'
-    appType: webAppLinux
-    appName: '<Name of web app>'
-    package: '$(System.DefaultWorkingDirectory)/**/*.war'
-```
-
-* **azureSubscription**: your Azure subscription.
-* **appType**: your Web App type.
-* **appName**: the name of your existing app service.
-* **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
-
-The snippet assumes that the build steps in your YAML file produce the .war archive in one of the folders in your source code folder structure;
-for example, under `<project root>/build/libs`. If your build steps copy the .war file to `$(System.DefaultWorkingDirectory)`
-instead, change the last line in the snippet to `$(System.DefaultWorkingDirectory)/**/*.war`.
-
-For information on Azure service connections, see the [following section](#endpoint).
 
 ### Deploy a JavaScript Node.js app
 
