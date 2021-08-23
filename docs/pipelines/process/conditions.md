@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 07/30/2021
+ms.date: 08/23/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -68,7 +68,7 @@ stages:
 
 Conditions are evaluated to decide whether to start a stage, job, or step.
 This means that nothing computed at runtime inside that unit of work will be available.
-For example, if you have a job which sets a variable using a runtime expression using `$[ ]` syntax, you can't use that variable in your custom condition. 
+For example, if you have a job that sets a variable using a runtime expression using `$[ ]` syntax, you can't use that variable in your custom condition. 
 
 ::: moniker-end
 
