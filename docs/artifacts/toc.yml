@@ -166,7 +166,7 @@
       displayName: promote, artifact feed, promote packages, feed views 
   - name: Upstream sources
     items:
-    - name: Understand upstream sources
+    - name: Upstream sources overview
       href: concepts/upstream-sources.md
       displayName: upstream, sources, upstreams 
     - name: Set up upstream sources
