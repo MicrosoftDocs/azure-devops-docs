@@ -1,6 +1,6 @@
 ---
-title: Upstream sources 
-description: Upstream sources concepts
+title: Upstream sources overview
+description: Understand upstream sources
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -69,7 +69,7 @@ If you're only using public registries such as nuget.org or npmjs.com, the order
 If you are using multiple sources such as a mixture of feeds and public registries, then each upstream is searched in the order it's listed in the feed's configuration settings. In this case, we recommend placing the public registries first in the list of upstream sources.
 
 In rare cases, some organizations choose to modify OSS packages to fix security issues, to add functionality, or to satisfy requirements that the package is built from scratch internally, rather than consumed directly from the public repository.
-If your organization does this, place the upstream source that contains these modified OSS packages before the public package managers to ensure you use your organization's modified versions.
+If your organization follows this pattern, place the upstream source that contains these modified OSS packages before the public package managers to ensure you use your organization's modified versions.
 
 #### Use the suggested default view
 
@@ -109,7 +109,7 @@ To take full advantage of the fast lookup feature, we recommend that you only in
 
 <a name="saved-packages"></a>
 
-## Save packages from upstream sources: continuity
+## Save packages from upstream sources
 
 When you enable upstream sources for your feed, packages installed from upstream sources will be automatically saved to your feed. These packages could be installed directly from the upstream as follows `npm install express` or they could be installed as part of a dependency resolution (installing `express` would also save dependencies like `accepts`).
 
@@ -117,48 +117,51 @@ Saving packages can improve download performance and save network bandwidth espe
 
 <a name="overriding-packages"></a>
 
-## Overriding a package from an upstream source
+## Override packages from upstream sources
 
-You can't publish any package-version that already exists in any upstream source enabled on your feed. For instance, if the nuget.org upstream source is enabled you cannot publish `Newtonsoft.Json 10.0.3` because that same package-version is already present on nuget.org.
+When you enable upstream sources, you must be aware that publishing a package version that already exists in upstream won't be possible. For instance, when you enable the NuGet.org upstream, you cannot publish the `Newtonsoft.Json 10.0.3` package because that same package version is already present NuGet.org.
 
-If you must push a package-version that already exists on one of your upstream sources, you must disable the upstream source, push your package, then re-enable the upstream source. Note that you can only push a package-version that wasn't previously saved from the upstream, because saved packages remain in the feed even if the upstream source is disabled or removed. See the [immutability concept](../artifacts-key-concepts.md#immutability) for more info.
+If you must publish a package version that already exists on one of your upstream sources, you must disable that upstream source, publish your package, and then re-enable the upstream source.
+
+> [!Note]
+> You can only publish a package version that wasn't previously saved from upstream. Saved packages remain in the feed even if the upstream source is disabled or removed.
 
 <a name="upstream-health-status"></a>
 
-## Upstream sources health status
+## Health status
 
-If a feed has a failing upstream source, the metadata can no longer be refreshed for packages of the same protocol. To view your upstream sources health status, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**, then select **Upstream sources**. 
+If a feed has a failing upstream source, the metadata can no longer be refreshed for packages of the same protocol. To view your upstream source's health status, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**, and then select **Upstream sources**. 
 
-If there are any failures, a warning message will be displayed. The settings page will also indicate which one of the upstream sources is failing. Selecting the failing source will provide more details on the reason of failure and instructions on how to solve it.
+If there are any failures, a warning message will be displayed. The settings page will also indicate which one of the upstream sources is failing. Selecting the failing upstream will provide more details such as the reason of failure and instructions on how to solve it.
 
-> [!div class="mx-imgBorder"]
-> ![Upstream health](media/upstream-health.png)
+:::image type="content" source="media/upstream-health.png" alt-text="Screenshot showing the upstream source's health status":::
+
+> [!NOTE]
+> For public registries such as NuGet.org, there is a 3-6 hour delay between when a package is pushed to the public registry and when it is available for download by your feed. This delay depends on job timing and data propagation. The is no latency when the upstream source is an Azure Artifacts feed.
 
 <a name="offline-upstreams"></a>
 
-> [!NOTE]
-> For feeds that have public package respositories such as nuget.org as upstream sources, there is a 3-6 hour delay between when a package is pushed to the public repository and when it is available for download by your feed. This delay depends on job timing and package data propagation. The delay doesn't apply when the upstream sources are Azure DevOps feeds.
-
 ## Offline upstream sources
 
-Upstream sources are a great way to protect your CI/CD infrastructure from public package managers outages. When a package is ingested in the downstream feed, a copy of the package is created, so even when the upstream feed is not available, the package is still available in the downstream feed.
+Upstream sources are a great way to protect your consumers and infrastructure from unplanned outages. When you install a package from an upstream source, a copy of that package is saved to your feed. If the upstream source is down, undergoing maintenance, or not available, you can still access the packages you need from your feed.
 
 ## FAQs
 
-### Q: I can't see my package even though I can see it in one of my feed's upstreams?
+##### Q: I can't see my package even though I can see it in one of my feed's upstreams?
 
-A: Packages belonging to an upstream are available downstream soon after they are published, but will only show up in the feed's UI once they have been 'ingested,' which requires installing the package version for the first time in the downstream feed.
+A: Packages belonging to an upstream are available downstream soon after they are published. However the package will only show up in your feed's UI once they have been ingested, which requires installing the package version for the first time in the downstream feed.
 
-### Q: What are feed views?
+##### Q: What are feed views?
 
 A: Views enable developers to only share a subset of package versions that have been tested and validated and excluding any packages that are still under development and/or didn't meet the quality bar. See [What are feed views](./views.md) for more details.
 
-### Q: I can't find the feed that I want to configure as an upstream?
+##### Q: I can't find the feed that I want to configure as an upstream?
 
-A: It could be that the feed's owner has not shared a view to be available as an upstream source.
+A: Make sure that the feed's owner is sharing a view as an upstream source.
 
 ## Related articles
 
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md)
-- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
-- [Manage feed permissions](..//feeds/feed-permissions.md)
+- [Manage dependencies](../tutorials/protect-oss-packages-with-upstream-sources.md)
+- [Configure upstream behavior](./upstream-behavior.md)
+- [Feed permissions](../feeds/feed-permissions.md)
