@@ -95,7 +95,7 @@ Team and project administrators can add existing users to their team or project.
       Add existing users or groups to a team, or remove a member. 
    :::column-end:::
 :::row-end:::
-::: moniker range="azure-devops"
+::: moniker range=">= tfs-2018"
 :::row:::
    :::column span="1":::
       Project Administrators
@@ -444,12 +444,16 @@ Choose the **Current page** tab for information on adding a user to a team. The 
 
 <a name="summary-page"></a>
 
-::: moniker range="azure-devops"
+::: moniker range=">= tfs-2018"
 
 ## Invite users from the Summary page 
 
-As a member of the Project Administrators group, you can add members to a project from the **Summary** page and optionally add them to one or more teams. 
+As a member of the Project Administrators group, you can add members to a project from the **Summary** page and optionally add them to one or more teams. To learn more about the **Summary** page, see [Share your project vision, view project activity](../../organizations/projects/project-vision-status.md).
 
+::: moniker range="< azure-devops"
+> [!NOTE]
+> For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts).  
+::: moniker-end
 
 1. Open the **Project>Summary** page, and choose **Invite**.  
 

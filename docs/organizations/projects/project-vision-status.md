@@ -8,36 +8,62 @@ ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 03/26/2019
+ms.date: 08/24/2021
 ---
 
 # Share your project vision, view project activity
 
 [!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
-Each project provides a **Summary** page to support your teams to understand the purpose of your project. Use this page to support the following tasks:
-
-- Share your project vision 
-- View the latest project activity 
-- Provide links for details on how to contribute 
-- Indicate who project members should contact to elevate permissions, access, or other requests 
-- Invite people to contribute to your project 
-
-> [!NOTE]   
-> Hosted projects can be designated as **Private** or **Public**. For public projects, anonymous users can view the project **Summary**, except for the **Members** section. Also the **Like** and **Favorite** icons aren't visible to anonymous users. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md)
+Each project provides a **Summary** page to share information, add project members, and check the latest project activity. From this page you can also perform the following tasks depending on your administration status. 
+ 
+:::row:::
+   :::column span="1":::
+      **Project Administrator tasks** 
+   :::column-end:::
+   :::column span="1":::
+     **Project member tasks**
+   :::column-end:::
+   :::column-end:::
+:::row-end:::
+   :::column span="1":::
+      ::: moniker range=">= azure-devops-2019" 
+      - Add a short project description 
+      - Set project tags 
+      - Choose a README file or wiki for project Summary information
+      - Invite people to contribute to your project 
+      ::: moniker-end
+      ::: moniker range="<= tfs-2018" 
+      - Choose a README file for project Summary information
+      - Invite people to contribute to your project  
+      ::: moniker-end
+   :::column-end:::
+   :::column span="1":::
+      ::: moniker range=">= azure-devops-2019" 
+     - View project description and readme 
+     - View project stats
+     - Favorite a project 
+     - Email or initiate a chat with a team member
+     - Initiate a search across your project 
+      ::: moniker-end
+      ::: moniker range="<= tfs-2018" 
+     - View project information
+     - View project stats  
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
 
 :::image type="content" source="media/summary/project-summary-page-intro.png" alt-text="Screenshot of summary page.":::
 
-
-::: moniker range=">= azure-devops-2019"
-Learn how to share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
-
-If you want to use a project wiki, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
+::: moniker range=">= azure-devops-2019" 
+If you want to use a project wiki for your project Summary information, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
+::: moniker-end
+ 
+::: moniker range="azure-devops" 
+> [!NOTE]   
+> Hosted projects can be designated as **Private** or **Public**. For public projects, anonymous users can view the project **Summary**, except for the **Members** section. Also the **Like** and **Favorite** icons aren't visible to anonymous users. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md)
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
-From the project home page, share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file.
-::: moniker-end
 
 ## Prerequisites
 
@@ -53,7 +79,7 @@ From the project home page, share your project with your team, add project membe
 > If you don't have permissions to edit a page or use a feature, the corresponding icons and links aren't visible. 
 
 
-## Open project summary
+## Open project Summary
 
 ::: moniker range=">= azure-devops-2019"
 From your web browser, choose **Overview*>Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
@@ -104,13 +130,11 @@ The **Summary** page displays either the **README** file defined in a project re
 
 	:::image type="content" source="media/summary/about-this-project-dialog.png" alt-text="About this project dialog.":::
 
-1. Optionally add one or more **Tags** for your project. These tags are similar to [work item tags](../../boards/queries/add-tags-to-work-items.md). You can add several tags at a time by using the comma or semi-colon delimiters. Tags must conform to the following rules: 
-
-
-- Tags must be 40 characters or less
-- Tags can;t contain the forward slash (/) character or end with hyphen character (-)
-- No more than 15 tags can be added to a project  
-- Tags are case-insensitive and no duplicate tags or empty tags are allowed.
+1. Optionally add one or more **Tags** for your project. These tags are similar to [work item tags](../../boards/queries/add-tags-to-work-items.md). You can add several tags at a time by using the comma or semi-colon delimiters. Tags must conform to the following rules:  
+	- Tags must be 40 characters or less
+	- Tags can;t contain the forward slash (/) character or end with hyphen character (-)
+	- No more than 15 tags can be added to a project  
+	- Tags are case-insensitive and no duplicate tags or empty tags are allowed.
 
 	> [!NOTE]   
 	> The search and filter functions can't be used to search or filter on project tags. 
@@ -128,29 +152,58 @@ The **Summary** page displays either the **README** file defined in a project re
 
 1. To update the contents of the referenced README file or wiki, edit the corresponding file. For more information, see [Create a README for your repo](../../repos/git/create-a-readme.md) or [Add and edit wiki pages](../../project/wiki/add-edit-wiki.md). 
  
-	Suggested information to provide in your **Summary** page include the following:
+	Consider including the following types of information in your **Summary** page:
 	- Ways in which users can contribute to your project 
-	- Who to contact to elevate your permissions or add extensions  
+	- Who to contact to elevate permissions or add extensions  
 	- Roadmap information 
-	- Links to instructions for setting up their development environment 
+	- Links to instructions for setting up their development and test environments 
 	- Links to instructions for collaborating on code, tracking work, building pipelines, deploying releases 
-	- Link to a template to file a bug, issue, or request 
-	- Link to a distribution list to email a question or a Slack or Teams channel. 
+	- Links to templates to file a bug, issue, or request 
+	- Links to distribution lists to email a question or post a question on Slack or Teams channel. 
  
+::: moniker range=">= tfs-2018"
 
 ## Invite people to contribute to your project 
 
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 You can send an email to invite users to contribute to your project by choosing **Invite**. To learn more, see [Add users or groups to a team or project, Invite users from the Summary page](../security/add-users-team-project.md#invite-users-from-the-summary-page).
 
 :::image type="content" source="../security/media/add-users/summary-invite-users.png" alt-text="Screenshot of Summary page, Invite button.":::
 
+::: moniker-end
 
+::: moniker range="tfs-2018"
 
-## Review project statistics  
+To add users to the project, choose the **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
+
+:::image type="content" source="../security/media/add-users/invite-members-tfs-2018.png" alt-text="Screenshot of Summary page, Add members button.":::
+::: moniker-end
+
+::: moniker range="< azure-devops"
+> [!NOTE]
+> For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts).  
+::: moniker-end
+ 
+::: moniker range=">= tfs-2018"
+
+<a id="cross-project-activity">  </a>
+
+## View project activity  
 
 From the **Project stats** section, you can view updates made to the project in the last 1, 7, and 30 days. Choose the view option as shown in the following image. 
+::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/summary/project-stats.png" alt-text="Screenshot of Summary page, Stats section.":::
+ 
+
+::: moniker range="tfs-2018"
+:::image type="content" source="media/project-summary/project-summary-activity-tfs-2018.png" alt-text="Screenshot of Summary page, Activity section, TFS-2018.":::
+::: moniker-end
+
+
 
 ## Email or chat with a project member 
 
@@ -162,18 +215,21 @@ From the **Members** section, you can see how many members have been added to th
 > 100+ indicates that 100 or more members have been added to the project. 
 
 To email or initiate a chat session, choose the team member shown and select your option. 
-
 :::image type="content" source="media/summary/connect-with-team-member.png" alt-text="Screenshot of Summary page, Members section, options available to connect to a team member.":::
 
+::: moniker range="< azure-devops"
+> [!NOTE]
+> For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts).  
+::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
 
 ## Initiate a project search  
 
 From the **Summary** page, you can initiate a search of your code, work items, and wiki. To learn more, see [Get started with search](../../project/search/get-started-search.md). 
-
 :::image type="content" source="media/summary/project-search.png" alt-text="Screenshot of Summary page, search box.":::
 
-
+::: moniker-end
 
 <a id="initialize-git"> </a>
 
@@ -312,27 +368,6 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 
 ::: moniker-end
 
-<a id="cross-project-activity">  </a>
-
-## View project activity, add project members
-
-In addition to sharing information, the project summary page pulls data from the applications to give visitors a bird's-eye view of your project activity.
-
-::: moniker range=">= azure-devops-2019"
-To add users to the project, select :::image type="icon" source="media/share-project/add-members-new-nav.png" border="false"::: **add**. You can only add users to a project that you have already added to the organization. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
-
-> [!div class="mx-imgBorder"]
-> ![Project stats](media/share-project/project-stats-new-nav.png)
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-To add users to the project, choose the **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
-
-![Project Home Page, Activity](../../project/wiki/media/project-home-page-activity.png)  
-
-::: moniker-end
 
 <a id="change-repo" />
 
