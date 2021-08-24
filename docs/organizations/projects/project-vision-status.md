@@ -25,6 +25,7 @@ Each project provides a **Summary** page to share information, add project membe
      **Project member tasks**
    :::column-end:::
 :::row-end:::
+:::row:::
    :::column span="1":::
       ::: moniker range=">= azure-devops-2019" 
       - Add a short project description 
@@ -33,6 +34,10 @@ Each project provides a **Summary** page to share information, add project membe
       - Invite people to contribute to your project 
       ::: moniker-end
       ::: moniker range="<= tfs-2018" 
+      - Choose a README file or wiki for project Summary information
+      - Invite people to contribute to your project  
+      ::: moniker-end
+      ::: moniker range="< tfs-2018" 
       - Choose a README file for project Summary information
       - Invite people to contribute to your project  
       ::: moniker-end
@@ -337,7 +342,6 @@ For projects that selected TFVC for version control, the README.md file needs to
    > ![Add new file dialog, new nav](media/share-project/create-readme-file-web-portal.png)
 
 6. Add the contents of your README file in Markdown format, and then choose **Check in...**.  
-
    > [!div class="mx-imgBorder"]  
    > ![Enter README file contents, new nav](media/share-project/tfvc-readme-file.png)
 
@@ -372,13 +376,13 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 
 ::: moniker-end
 
-
+::: moniker range="tfs-2018"
 <a id="change-repo" />
 
 ## Change the repository
 
 You can change the repository used to support your project vision, including pointing it to the home page of your [built-in Wiki](../../project/wiki/wiki-create-repo.md).
-
+::: moniker-end
 ::: moniker range=">= azure-devops-2019"
 
 1. Open **Overview > Summary** .
@@ -397,10 +401,6 @@ You can change the repository used to support your project vision, including poi
 
    > [!TIP]  
    > If you choose the Wiki option, only the Wiki home page displays. To access additional Wiki pages, go to the Wiki.
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
 
 1. From your project home page, choose **Change**.
 
