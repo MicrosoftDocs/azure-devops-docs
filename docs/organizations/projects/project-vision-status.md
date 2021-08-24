@@ -178,7 +178,7 @@ You can send an email to invite users to contribute to your project by choosing 
 
 To add users to the project, choose the **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
-:::image type="content" source="../security/media/add-users/invite-members-tfs-2018.png" alt-text="Screenshot of Summary page, Add members button.":::
+:::image type="content" source="media/summary/invite-members-tfs-2018.png" alt-text="Screenshot of Summary page, Add members button.":::
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -197,10 +197,10 @@ From the **Project stats** section, you can view updates made to the project in 
 
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/summary/project-stats.png" alt-text="Screenshot of Summary page, Stats section.":::
- 
+ ::: moniker-end
 
 ::: moniker range="tfs-2018"
-:::image type="content" source="media/project-summary/project-summary-activity-tfs-2018.png" alt-text="Screenshot of Summary page, Activity section, TFS-2018.":::
+:::image type="content" source="media/summary/project-summary-activity-tfs-2018.png" alt-text="Screenshot of Summary page, Activity section, TFS-2018.":::
 ::: moniker-end
 
 
