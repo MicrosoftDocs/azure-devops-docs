@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'
-ms.date: 07/14/2020
+ms.date: 08/24/2021
 ---
 
 # Widget catalog 
@@ -112,13 +112,20 @@ Widgets are annotated as follows:
       - [Sprint overview](#sprint-overview-widget)  
       - [Work links](#work-links-widget)  
       ::: moniker-end
-   :::column-end:::
-   :::column span="1":::
-      ::: moniker range=">= azure-devops-2019"
+      ---
+      ::: moniker range="<= tfs-2018"
       **Repos** 
       - [Code tile](#code-tile-widget) (Repository, Branch, Folder)
       - [Pull request](#pull-request-widget) (Team)
-      ---
+      ::: moniker-end
+      ::: moniker range=">= azure-devops-2019"
+      **Code** 
+      - [Code tile](#code-tile-widget) (Repository, Branch, Folder)
+      - [Pull request](#pull-request-widget) (Team)
+      ::: moniker-end
+   :::column-end:::
+   :::column span="1":::
+      ::: moniker range=">= azure-devops-2019"
       **Pipelines**
       - [Build history](#build-history-widget) (Build pipeline)
       - [Deployment status](#deployment-status-widget) (Build pipeline)
@@ -130,7 +137,7 @@ Widgets are annotated as follows:
       - [Test results trend (Advanced)](#test-trend-results-advanced) (Analytics, Build or Release pipeline) 
       - [Test results trend](#test-trend-results) (Build or Release pipeline)  
       ---
-      **Other, Links, and Informational**
+      **Information and links**
       - [Embedded web page](#embedded-webpage-widget)  
       - [Markdown](#markdown-widget)  
       - [Other links](#other-links-widget)  
@@ -139,10 +146,6 @@ Widgets are annotated as follows:
       - [Welcome](#how-to-widget) 
       ::: moniker-end
       ::: moniker range=">= tfs-2017 <= tfs-2018"
-      **Code** 
-      - [Code tile](#code-tile-widget) (Repository, Branch, Folder)
-      - [Pull request](#pull-request-widget) (Team)
-      ---
       **Build & Release**
       - [Build history](#build-history-widget) (Build pipeline)
       - [Deployment status](#deployment-status-widget) (Build pipeline)
@@ -152,10 +155,10 @@ Widgets are annotated as follows:
       **Test**
       - [Chart for test plans](#chart-test-plan-widget)
       - [Test results trend](#test-trend-results) (Build or Release pipeline)  
-      ---
       ::: moniker-end
+      ---
       ::: moniker range="tfs-2018"
-      **Other, Links, and Informational**
+      **Information and links**
       - [Embedded web page](#embedded-webpage-widget)  
       - [Markdown](#markdown-widget)  
       - [Other links](#other-links-widget-2018)  
@@ -164,7 +167,7 @@ Widgets are annotated as follows:
       - [Welcome](#how-to-widget) 
       ::: moniker-end
       ::: moniker range="tfs-2017"
-      **Other, Links, and Informational**
+      **Information and links**
       - [Embedded web page](#embedded-webpage-widget)  
       - [Markdown](#markdown-widget)  
       - [Other links](#other-links-widget-2018)  
@@ -174,14 +177,10 @@ Widgets are annotated as follows:
       - [Welcome](#how-to-widget) 
       ::: moniker-end
       ::: moniker range="tfs-2015"
-      **Code** 
-      - [Code tile](#code-tile-widget) (Repository, Branch, Folder)
-      - [Pull request](#pull-request-widget) (Team)
-      ---
       **Build**
       - [Build history](#build-history-widget) (Build pipeline)
       ---
-      **Other, Links, and Informational** 
+      **Information and links**
       - [Markdown](#markdown-widget)  
       - [Other links](#other-links-widget-2018)  
       - [Team members](#team-members-widget) (Team) 
@@ -207,6 +206,8 @@ Widgets are annotated as follows:
 ## Work widgets 
 ::: moniker-end
 
+Add work tracking widgets to your dashboards to show status, progress, or trends. In addition to the widgets listed here, you can add a work item query chart to your dashboard. To learn more, see [Track progress with status and trend query-based charts](charts.md).
+
    ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
@@ -216,7 +217,7 @@ Widgets are annotated as follows:
    :::column-end:::
    :::column span="1":::
       <a id="assigned-to-me-widget"></a>
-      Displays the list of work items currently assigned to the currently logged in user. The list ignores closed or deleted work items.
+      Displays the list of active work items assigned to the currently logged in user. The list ignores closed, removed, cut, or deleted work items.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -235,43 +236,31 @@ Widgets are annotated as follows:
 :::row:::
    :::column span="1":::
       ### Burnup chart  
-<a id="burnup-analytics-widget"></a> 	
-
       ![Burnup chart widget](media/widget-burnup-chart.png)  
    :::column-end:::
    :::column span="1":::
-          
-
-Adds a tile that displays a burnup chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).
+      <a id="burnup-analytics-widget"></a> 	    
+      Adds a tile that displays a burnup chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
 :::row:::
    :::column span="1":::
       ### Chart for work items  
-
-<a id="chart-wit-widget"></a> 
-	
       ![Chart work item query widget](media/widget-chart-work-query.png)  
    :::column-end:::
    :::column span="1":::
-        
-
-Adds a tile to display a progress or trend chart that builds off a shared work item query.  
-From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget).   
-
-
-::: moniker range="tfs-2015"
-Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.
+      <a id="chart-wit-widget"></a>   
+      Adds a tile to display a progress or trend chart that builds off a shared work item query. From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget).   
+      ::: moniker range="tfs-2015"
+      Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.
+      ::: moniker-end
    :::column-end:::
 :::row-end:::  
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
       ### Cumulative flow diagram   
-
       ![Cumulative flow diagram widget](media/widget-cfd-chart.png)  
    :::column-end:::
    :::column span="1":::
@@ -295,17 +284,14 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 :::row-end:::  
 ::: moniker-end
 ::: moniker range=">= azure-devops-2019"
-
 :::row:::
    :::column span="1":::
       ### Lead time  
-
       ![Lead time widget](media/widget-lead-time.png)  
    :::column-end:::
    :::column span="1":::
       <a id="lead-time-widget"></a>    
-      Displays the lead time of work items closed in a specified timeframe for a single team and backlog level. The lead time of a work item is defined as the time taken to close a work item after it was created.
-
+      Displays the lead time of work items closed in a specified timeframe for a single team and backlog level. The lead time of a work item is defined as the time taken to close a work item after it was created.  
       Each marker on the chart corresponds to one or more work items with a particular lead time. The lower the lead time, the faster work is being delivered to the customer. To learn more, see [Lead time and cycle time control charts](cycle-time-and-lead-time.md). 
    :::column-end:::
 :::row-end:::  
@@ -360,6 +346,7 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
    :::column-end:::
 :::row-end:::
 ::: moniker-end
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="1":::
       ### Sprint burndown (Legacy) 
@@ -371,10 +358,11 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
       Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint. Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
    :::column-end:::
 :::row-end::: 
+::: moniker-end
+::: moniker range="< azure-devops-2020"
 :::row:::
    :::column span="1":::
       ### Sprint burndown 
-
      ![Sprint burndown widget, Azure DevOps Server 2019 and earlier versions.](media/widget-sprint-burndown.png)  
    :::column-end:::
    :::column span="1":::
@@ -383,10 +371,10 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
       Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
    :::column-end:::
 :::row-end:::
+::: moniker-end
 :::row:::
    :::column span="1":::
       ### Sprint capacity 
-
       ![Sprint capacity widget](media/widget-sprint-capacity.png)  
    :::column-end:::
    :::column span="1":::
@@ -398,7 +386,6 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 :::row:::
    :::column span="1":::
       ### Sprint overview 
-
       ![Sprint overview widget](media/widget-sprint-overview.png)  
    :::column-end:::
    :::column span="1":::
@@ -415,19 +402,17 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 :::row:::
    :::column span="1":::
       ### Velocity   
-      
      ![Sprint velocity widget](media/widget-velocity.png)  
    :::column-end:::
    :::column span="1":::
       <a id="velocity-widget"></a> 
-     The Velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of Analytics data. You can track the velocity for a single team, not multiple teams. For additional guidance, see [Velocity](team-velocity.md).
+      The Velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of Analytics data. You can track the velocity for a single team, not multiple teams. For additional guidance, see [Velocity](team-velocity.md).
    :::column-end:::
 :::row-end:::
 ::: moniker-end
 :::row:::
    :::column span="1":::
       ### Work links 
-
      ![Work links widget](media/widget-work-links.png)  
    :::column-end:::
    :::column span="1":::
@@ -450,108 +435,107 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 ## Code widgets
 ::: moniker-end
 
-<a id="code-tile-widget"></a> 
-### Code tile    
+Add code tracking widgets to track changes made within a repository or get quick access to Git pull requests for your team.  
 
-![Code tile widget](media/widget-code-tile.png)
+:::row:::
+   :::column span="1":::
+      ### Code tile 
+     ![Code tile widget](media/widget-code-tile.png)  
+   :::column-end:::
+   :::column span="1":::
+      Adds a configurable tile to display the summary of a code folder or Git repository. To configure, simply choose the added tile, select a repository, select a branch (Git only) and select a path. The code tile supports both TFVC and Git repositories. 
+      ::: moniker range="tfs-2015"
+      Requires TFS 2015.1 or later version.
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      ### Pull request 
+      ![Pull request widget](media/widget-catalog-pull-request.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="pull-request-widget"></a> 
+      Adds a configurable widget to display active pull requests requested by the team, or assigned to or requested by the person logged in. Select the team and  Git repository for the pull requests of interest. To learn more about pull requests, see [Review code with pull requests](../../repos/git/pull-requests.md).
+      ::: moniker range="tfs-2015"
+      Requires TFS 2015.2 or later version.
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
 
-Adds a configurable tile to display the summary of a code folder or Git repository. To configure, simply choose the added tile, select a repository, select a branch (Git only) and select a path. The code tile supports both TFVC and Git repositories. 
-
-::: moniker range="tfs-2015"
-Requires TFS 2015.1 or later version.
-::: moniker-end
-
-----
-
-<a id="pull-request-widget"></a> 
-### Pull request 
-
-![Pull request widget](media/widget-catalog-pull-request.png)
-
-Adds a configurable tile to display active pull requests requested by the team, or assigned to or requested by the person logged in. Select the Git repository for the pull requests of interest. 
-
-You need to add a widget for each Git repository of interest.
-To learn more about pull requests, see [Review code with pull requests](../../repos/git/pull-requests.md).
-
-
-::: moniker range="tfs-2015"
-Requires TFS 2015.2 or later version.
-::: moniker-end
-
-
-----
 
 
 ::: moniker range=">= azure-devops-2019"
 ## Azure Pipelines widgets 
+
+Add build and release pipeline widgets to track the health of your builds and releases.  
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 ## Build and Release widgets
+
+Add build and release pipeline widgets to track the health of your builds and releases.  
 ::: moniker-end
-
-
-<a id="build-history-widget"></a> 
-### Build history  
-
-![Build history widget](media/widget-build-history-chart.png)   
-
-Adds a tile to display a histogram of all builds run for the configured build pipeline.
-From the configuration dialog, select the build you want to monitor. 
-Hover over a bar to learn how long the build took to complete. Choose the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
 
 
 ::: moniker range="tfs-2015"
-Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#build-history) to add a build summary chart to a dashboard. 
+## Build and Release widgets
+Add the Build History pipeline widget to track the health of your builds.  
 ::: moniker-end
 
-----
 
+:::row:::
+   :::column span="1":::
+      ### Build history  
+      ![Build history widget](media/widget-build-history-chart.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="build-history-widget"></a> 
+      Adds a tile to display a histogram of all builds run for the configured build pipeline.
+      From the configuration dialog, select the build you want to monitor. 
+      Hover over a bar to learn how long the build took to complete. Choose the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
+      ::: moniker range="tfs-2015"
+      Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#build-history) to add a build summary chart to a dashboard. 
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
 ::: moniker range=">= tfs-2017"
-
-<a id="deployment-status-widget"></a> 
-### Deployment status 
-
-![Deployment status widget](media/widget-deployment-status.png)  
-
-Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build pipeline, branch, and linked release pipelines. 
-
-In order view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate. You can choose any cell to see a more [detailed](../../pipelines/test/review-continuous-test-results-after-build.md) view for the selected environment.
-
+:::row:::
+   :::column span="1":::
+      ### Deployment status 
+      ![Deployment status widget](media/widget-deployment-status.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="deployment-status-widget"></a> 
+      Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build pipeline, branch, and linked release pipelines.  
+      In order to view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate. You can choose any cell to see a more [detailed view](../../pipelines/test/review-continuous-test-results-after-build.md) for the selected environment.  
+      Requires TFS 2017.1 or later version. 
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
-::: moniker range="tfs-2017"
-Requires TFS 2017.1 or later version. 
-::: moniker-end
-::: moniker range=">= tfs-2017"
-
-----
-
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2019"
-
-<a id="release-definition-widget"></a> 
-### Release pipeline overview 
-
-![Release pipeline overview widget](media/widget-release-definitions.png)  
-
-Configurable widget that you can use to view and track the status of a release pipeline. This widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release pipeline in the left column to filter the list to just releases for that pipeline.
-
----- 
+:::row:::
+   :::column span="1":::
+      ### Release pipeline overview 
+      ![Release pipeline overview widget](media/widget-release-definitions.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="release-definition-widget"></a> 
+      Configurable widget that you can use to view and track the status of a release pipeline. This widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release pipeline in the left column to filter the list to just releases for that pipeline.
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
-
- 
 ::: moniker range=">= tfs-2017"
-
-<a id="requirements-quality-widget"></a> 
-### Requirements quality 
-<a id="requirements-quality-widget"></a>  
-
-![Requirements quality widget](media/widget-requirements-quality.png)  
-
-Configurable widget that you can use to track quality continuously from a build or release pipeline. The widget shows the mapping between a requirement and latest test results executed against that requirement. It provides insights into requirements traceability e.g. requirements not meeting the quality, requirements not tested etc. To learn more about setting up traceability see [Requirements traceability](../../pipelines/test/requirements-traceability.md) 
-
----- 
+:::row:::
+   :::column span="1":::
+      ### Requirements quality 
+      ![Requirements quality widget](media/widget-requirements-quality.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="requirements-quality-widget"></a>  
+      Configurable widget that you can use to track quality continuously from a build or release pipeline. The widget shows the mapping between a requirement and latest test results executed against that requirement. It provides insights into requirements traceability e.g. requirements not meeting the quality, requirements not tested etc. To learn more about setting up traceability see [Requirements traceability](../../pipelines/test/requirements-traceability.md) 
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
 
 
@@ -756,6 +740,7 @@ Requires TFS 2015.1 or later version.
 
 ----
 
+<a id="marketplace" />
 
 ## Marketplace widgets
 
@@ -775,6 +760,7 @@ Using the REST API service, you can [create a dashboard widget](../../extend/dev
 
 ## Related articles
 
+- [Track progress with status and trend query-based charts](charts.md)
 - [Add, rename, and delete dashboards](dashboards.md)  
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
 - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)
