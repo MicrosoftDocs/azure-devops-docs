@@ -40,7 +40,16 @@ To learn how to deploy to an Azure Web App for Linux Containers, see [Deploy an 
 
 ## Create an Azure App Service in the Azure portal
 
-Create an Azure App Service on Linux or Windows. 
+Create an Azure App Service on Linux or Windows with Azure Cloud Shell.  
+
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+1. 
+1. Launch the Cloud Shell from the upper navigation pane of the portal.
+
+    :::image type="content" source="media/deploy-to-azure/portal-launch-icon.png" alt-text="Open the Cloud Shell.":::
+
+For more information, see [Overview of Azure Cloud Shell](/azure/cloud-shell/overview).
+
 
 # [Linux](#tab/linux)
 
@@ -284,7 +293,7 @@ This is where the task picks up the web package for deployment.
 
 To deploy to Azure App Service, you'll need to use an Azure Resource Manager [service connection](../library/service-endpoints.md). The Azure service connection stores the credentials to connect from Azure Pipelines or Azure DevOps Server to Azure.
 
-Learn more about connect-to-azure[Azure Resource Manager service connections](../library/connect-to-azure.md). If your service connection is not working as expected, see [Troubleshooting service connections](../release/azure-rm-endpoint.md). 
+Learn more about [Azure Resource Manager service connections](../library/connect-to-azure.md). If your service connection is not working as expected, see [Troubleshooting service connections](../release/azure-rm-endpoint.md). 
 
 
 #### [YAML](#tab/yaml/)
