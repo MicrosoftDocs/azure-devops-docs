@@ -40,14 +40,11 @@ To learn how to deploy to an Azure Web App for Linux Containers, see [Deploy an 
 
 ## Create an Azure App Service in the Azure portal
 
-Create an Azure App Service on Linux or Windows with Azure Cloud Shell.  
+Create an Azure App Service on Linux or Windows with Azure Cloud Shell. To get started:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
-1. 
 1. Launch the Cloud Shell from the upper navigation pane of the portal.
-
     :::image type="content" source="media/deploy-to-azure/portal-launch-icon.png" alt-text="Open the Cloud Shell.":::
-
 For more information, see [Overview of Azure Cloud Shell](/azure/cloud-shell/overview).
 
 
