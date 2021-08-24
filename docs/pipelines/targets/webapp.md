@@ -110,8 +110,8 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 ###  Add the Azure Web App task
 
-1. Use the Task assistant to add the [Azure Web App Deploy](../tasks/deploy/azure-rm-web-app.md) task. 
-    :::image type="content" source="media/deploy-to-azure/azure-web-app-task.png" alt-text="Azure web app deploy task.":::
+1. Use the Task assistant to add the [Azure Web App](../tasks/deploy/azure-rm-web-app.md) task. 
+    :::image type="content" source="media/deploy-to-azure/azure-web-app-task.png" alt-text="Azure web app task.":::
 
 1. Select **Azure Resource Manager** for the **Connection type** and choose your **Azure subscription**. Make sure to **Authorize** your connection. 
 
@@ -184,12 +184,12 @@ To get started:
 ---
 Now you're ready to read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
 
-## Use the Azure Web App Deploy task
+## Use the Azure Web App task
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-The simplest way to deploy to an Azure Web App is to use the **Azure Web App Deploy** (`AzureWebApp`) task.
+The simplest way to deploy to an Azure Web App is to use the **Azure Web App** (`AzureWebApp`) task.
 
 ### Deploy a Web Deploy package (ASP.NET)
 
@@ -273,7 +273,7 @@ YAML pipelines aren't available on TFS.
 
 # [Classic](#tab/classic)
 ::: moniker range=">= azure-devops-2019"
-The simplest way to deploy to an Azure Web App is to use the **Azure Web App Deploy** task.
+The simplest way to deploy to an Azure Web App is to use the **Azure Web App** task.
 ::: moniker-end
 
 To deploy to any Azure App service (Web app for Windows, Linux, container, Function app or web jobs), use the **Azure App Service Deploy** task.
@@ -404,7 +404,7 @@ YAML pipelines aren't available on TFS.
 You can configure the Azure Web App to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 
 ::: moniker range=">= azure-devops-2019"
-Use the option **Deploy to Slot or App Service Environment** in the **Azure Web App Deploy** task to specify the slot to deploy to. 
+Use the option **Deploy to Slot or App Service Environment** in the **Azure Web App** task to specify the slot to deploy to. 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
