@@ -23,6 +23,8 @@ Azure App Service is a managed environment for hosting web applications, REST AP
 
 You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to deploy to Azure App Service in your pipeline. For more complicated scenarios such as needing to use XML parameters in your deploy, you can use the [Azure App Service Deploy task](../tasks/deploy/azure-rm-web-app-deployment.md).  
 
+To learn how to deploy to an Azure Web App for Linux Containers, see [Deploy an Azure Web App Container](webapp-on-container-linux.md). 
+
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
@@ -175,12 +177,6 @@ To get started:
 ---
 Now you're ready to read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
 
-## Use a service connection
-
-To deploy to Azure App Service, you'll need to use an Azure Resource Manager [service connection](../library/service-endpoints.md). The Azure service connection stores the credentials to connect from Azure Pipelines or Azure DevOps Server to Azure.
-
-Learn more about connect-to-azure[Azure Resource Manager service connections](../library/connect-to-azure.md). If your service connection is not working as expected, see [Troubleshooting service connections](../release/azure-rm-endpoint.md). 
-
 ## Use the Azure Web App Deploy task
 
 #### [YAML](#tab/yaml/)
@@ -284,10 +280,12 @@ This is where the task picks up the web package for deployment.
 * * *
 <a name="endpoint"></a>
 
-## Azure service connection
+## Use a service connection
 
-All the built-in Azure tasks require an Azure service connection as an
-input. The Azure service connection stores the credentials to connect from Azure Pipelines or TFS to Azure.
+To deploy to Azure App Service, you'll need to use an Azure Resource Manager [service connection](../library/service-endpoints.md). The Azure service connection stores the credentials to connect from Azure Pipelines or Azure DevOps Server to Azure.
+
+Learn more about connect-to-azure[Azure Resource Manager service connections](../library/connect-to-azure.md). If your service connection is not working as expected, see [Troubleshooting service connections](../release/azure-rm-endpoint.md). 
+
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -317,7 +315,8 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 ::: moniker-end
 
-* * *
+---
+
 ## Deploy to a virtual application
 
 #### [YAML](#tab/yaml/)
