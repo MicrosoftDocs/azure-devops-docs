@@ -17,7 +17,9 @@ ms.date: 08/24/2021
 [!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
 ::: moniker range=">= tfs-2018"
-Widgets display information and charts on dashboards. Many widgets are configurable or are scoped to a team or to the logged in user account. Many display information available from one or more data stores or charts maintained within the system. You add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md). For example, you can add the **Build History** widget from the dashboard's **Add widget** dialog. 
+Widgets display information and charts on dashboards. Many widgets are configurable or are scoped to a team or to the logged in user account. Many display information available from one or more data stores or charts maintained within the system. You add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md). 
+
+For example, you can add the **Build History** widget from the dashboard's **Add widget** dialog. 
 ::: moniker-end
 
 ::: moniker range="< tfs-2018"
@@ -30,22 +32,27 @@ This article provides a quick reference of all out-of-box (OOB) widgets that you
 
 ## Supported OOB widgets
 
-Widgets listed in the following table are provided out-of-box. They are organized under the service they support. 
-
-Widgets that derive their data from [Analytics](../powerbi/what-is-analytics.md) are annotated with **Analytics**. 
-
-Widgets are annotated as follows: 
+Widgets listed in the following table are provided out-of-box. They are organized under the service they support. Widgets are annotated as follows: 
 
 ::: moniker range=">= azure-devops-2019"
 - **Analytics**: Widget derives data from [Analytics data](../powerbi/what-is-analytics.md)  
+- **Build**: Widget derives data for a selected build pipeline  
 - **Project**: indicates you can select the project and team when configuring the widget
+- **Release**: Widget derives data for a selected release pipeline  
 - **Team**: Widget is scoped to a single team  
 - **Teams**: Widget is scoped to one or more teams
 - **User**: Widget is scoped to the logged in user account
 ::: moniker-end
 
+::: moniker range=">= tfs-2017 <= tfs-2018"
+- **Build**: Widget derives data for a selected build pipeline  
+- **Release**: Widget derives data for a selected release pipeline  
+- **Team**: Widget is scoped to a single team  
+- **User**: Widget is scoped to the logged in user account
+::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="tfs-2015"
+- **Build**: Widget derives data for a selected build pipeline  
 - **Team**: Widget is scoped to a single team  
 - **User**: Widget is scoped to the logged in user account
 ::: moniker-end
@@ -54,11 +61,11 @@ Widgets are annotated as follows:
    :::column span="1":::
       ::: moniker range=">= azure-devops-2020"
       **Boards**
-      - [Assigned to me](#assigned-to-me-widget)
-      - [Burndown chart](#burndown-analytics-widget) (Analytics, Teams)    
-      - [Burnup chart](#burnup-analytics-widget) (Analytics, Teams)     
+      - [Assigned to me](#assigned-to-me-widget) (User)
+      - [Burndown chart](#burndown-analytics-widget) (Analytics, Project, Teams)    
+      - [Burnup chart](#burnup-analytics-widget) (Analytics, Project, Teams)     
       - [Chart for work items](#chart-wit-widget)  
-      - [Cumulative flow diagram](#cfd-widget)  
+      - [Cumulative flow diagram](#cfd-widget) (Team)   
       - [Cycle time (Analytics)](#cycle-time-widget) (Analytics, Team)  
       - [Lead time (Analytics)](#lead-time-widget) (Analytics, Team) 
       - [New Work item](#new-work-item-widget)  
@@ -73,7 +80,7 @@ Widgets are annotated as follows:
       ::: moniker-end
       ::: moniker range="azure-devops-2019"
       **Boards**
-      - [Assigned to me](#assigned-to-me-widget)
+      - [Assigned to me](#assigned-to-me-widget) (User)
       - [Burndown chart](#burndown-analytics-widget) (Analytics)    
       - [Burnup chart](#burnup-analytics-widget) (Analytics)    
       - [Chart for work items](#chart-wit-widget)  
@@ -91,7 +98,7 @@ Widgets are annotated as follows:
       ::: moniker-end
       ::: moniker range=">= tfs-2017 <= tfs-2018"
       **Work**
-      - [Assigned to me](#assigned-to-me-widget)
+      - [Assigned to me](#assigned-to-me-widget) (User)
       - [Chart for work items](#chart-wit-widget)  
       - [New Work item](#new-work-item-widget)  
       - [Query results](#query-results-widget)  
@@ -116,7 +123,7 @@ Widgets are annotated as follows:
       ::: moniker range="<= tfs-2018"
       **Repos** 
       - [Code tile](#code-tile-widget) (Repository, Branch, Folder)
-      - [Pull request](#pull-request-widget) (Team)
+      - [Pull request](#pull-request-widget) (Team, User)
       ::: moniker-end
       ::: moniker range=">= azure-devops-2019"
       **Code** 
@@ -547,102 +554,92 @@ Add the Build History pipeline widget to track the health of your builds.
 ## Test widgets  
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
 
-<a id="chart-test-plan-widget"></a> 
-
-### Chart for test plans  
-	
-![Chart for test plans](media/widget-chart-test-plans.png)  
-
-Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots. 
-
-To learn more, see [Track your test results](../../test/track-test-status.md).
-
-::: moniker-end
-::: moniker range="tfs-2017"
-Requires TFS 2017.2 or later version.
-::: moniker-end
-::: moniker range=">= tfs-2017"
-
-----
-
-::: moniker-end
+Add test tracking widgets to your dashboards to show status, progress, or trends of your testing efforts. In addition to the widgets listed here, you can add test tracking charts to your dashboard. To learn more, see [Track test status](../../test/track-test-status.md).
 
 ::: moniker range=">= tfs-2017"
-
-<a id="test-results-widget"></a>
-### Test results trend 
-
-![Test results trend widget](media/widget-test-results-trend.png)
-
-Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time, thereby surfacing patterns about test failures, test duration etc. 
-
-From the configuration dialog, select the build or release whose test results you'd like to monitor. There are multiple chart options to choose from (Line, Column & Stacked Column) based on your preference. Optionally you can map the trend of test duration on the existing chart by adding a secondary line chart. 
-
-The widget provides the basic trend of the test results. To get deeper insights and higher configurability view [Test Analytics](../../pipelines/test/test-analytics.md) 
-
----- 
+:::row:::
+   :::column span="1":::
+      ### Chart for test plans  
+      ![Chart for test plans](media/widget-chart-test-plans.png) 
+   :::column-end:::
+   :::column span="2":::
+      <a id="chart-test-plan-widget"></a> 
+      Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots.  
+      To learn more, see [Track your test results](../../test/track-test-status.md).
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
-
+::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="1":::
+      ### Test results trend 
+      ![Test results trend widget](media/widget-test-results-trend.png) 
+   :::column-end:::
+   :::column span="1":::
+      <a id="test-results-widget"></a>
+      Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time, thereby surfacing patterns about test failures, test duration etc.  
+      From the configuration dialog, select the build or release whose test results you'd like to monitor. There are multiple chart options to choose from (Line, Column & Stacked Column) based on your preference. Optionally you can map the trend of test duration on the existing chart by adding a secondary line chart.  
+      The widget provides the basic trend of the test results. To get deeper insights and higher configurability view [Test Analytics](../../pipelines/test/test-analytics.md)
+   :::column-end:::
+:::row-end:::
+::: moniker-end
 ::: moniker range=">= azure-devops-2019"
-<a id="test-trend-results-advanced"></a>
-
-### Test Results Trend (Advanced)
-
-<!--- QUESTION - Is this available on 2019? --> 
-
-> [!div class="mx-imgBorder"]  
-> ![Test results trend widget, Advanced version based on Analytics service.](media/widget-test-results-trend-advanced.png)
- 
-The Test Results Trend (Advanced) widget provides near real-time visibility into test data for multiple builds and releases. The widget shows a trend of your test results for selected pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.
-
-The widget supports tracking advanced metrics for one or more build pipelines or release pipelines. The widget also allows filtering of test results by outcome, stacking metrics, and more. 
-
-To learn more, see [Configure the Test Results Trend (Advanced) widget](./configure-test-results-trend.md).
-
----- 
+:::row:::
+   :::column span="1":::
+      ### Test Results Trend (Advanced)
+   :::column span="2":::
+      > [!div class="mx-imgBorder"]  
+   :::column span="2":::
+      > ![Test results trend widget, Advanced version based on Analytics service.](media/widget-test-results-trend-advanced.png) 
+   :::column-end:::
+   :::column span="2":::
+      <!--- QUESTION - Is this available on 2019? --> 
+      <a id="test-trend-results-advanced"></a>
+      The Test Results Trend (Advanced) widget provides near real-time visibility into test data for multiple builds and releases. The widget shows a trend of your test results for selected pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.  
+      The widget supports tracking advanced metrics for one or more build pipelines or release pipelines. The widget also allows filtering of test results by outcome, stacking metrics, and more.  
+      To learn more, see [Configure the Test Results Trend (Advanced) widget](./configure-test-results-trend.md).
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
-
 
 
 ## Informational content and other links 
 
+Add one or more of the following widgets to support adding configurable content or links to features or functions your team accesses often.
 
 ::: moniker range=">= tfs-2017"
-
-<a id="embedded-webpage-widget"></a> 
-### Embedded web page 
-
-![Embedded web page widget](media/embedded-web-page-widget.png)
-
-Adds a configurable tile to display the contents of a web page. Only webpages that allow [iframe embedding](https://go.microsoft.com/fwlink/?LinkId=808035) are supported.
-
-----
+:::row:::
+   :::column span="1":::
+      ### Embedded web page 
+      ![Embedded web page widget](media/embedded-web-page-widget.png) 
+   :::column-end:::
+   :::column span="1":::
+      <a id="embedded-webpage-widget"></a> 
+      Adds a configurable tile to display the contents of a web page. Only webpages that allow [iframe embedding](https://go.microsoft.com/fwlink/?LinkId=808035) are supported.
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
-
-
-<a id="markdown-widget"></a> 
-<a id="markdown"></a>
-### Markdown 
-
-![Markdown widget](media/widget-markdown-tile.png)
-
-::: moniker range=">= tfs-2017"
-Adds a configurable tile to display any type of information, guidance, or links that you want. You can also configure the widget to point to a file stored in your repository. From the configuration dialog, add the information you want to share with your team. To learn more, see [Add Markdown to a dashboard](add-markdown-to-dashboard.md). 
-::: moniker-end
-
-::: moniker range="tfs-2015"
-Adds a configurable tile to display any type of information, guidance, or links that you want. From the configuration dialog, add the information you want to share with your team. To learn more, see [Add Markdown to a dashboard](add-markdown-to-dashboard.md). 
-
-Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.   
-::: moniker-end
-
+:::row:::
+   :::column span="1":::
+      ### Markdown 
+      ![Markdown widget](media/widget-markdown-tile.png) 
+   :::column-end:::
+   :::column span="1":::
+      <a id="markdown-widget"></a>  <a id="markdown"></a>
+      ::: moniker range=">= tfs-2017"
+      Adds a configurable tile to display any type of information, guidance, or links that you want. You can also configure the widget to point to a file stored in your repository. From the configuration dialog, add the information you want to share with your team. To learn more, see [Add Markdown to a dashboard](add-markdown-to-dashboard.md). 
+      ::: moniker-end
+      ::: moniker range="tfs-2015"
+      Adds a configurable tile to display any type of information, guidance, or links that you want. From the configuration dialog, add the information you want to share with your team. To learn more, see [Add Markdown to a dashboard](add-markdown-to-dashboard.md).  
+      Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.   
+      ::: moniker-end
+   :::column-end:::
+:::row-end::: 
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
       ### Other links 
-
       ![Other links widget](media/widget-other-links.png)  
    :::column-end:::
    :::column span="1":::
@@ -658,87 +655,76 @@ Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can 
 :::row:::
    :::column span="1":::
       ### Other links 
-
       ![Other links widget](media/widget-other-links.png)  
    :::column-end:::
    :::column span="1":::
       <a id="other-links-widget-2018"></a>   
- 
       The following links are displayed when the corresponding resource is configured for the project: 
-
       ![Other links widget, TFS-2018 and earlier versions.](media/widget-other-links-tfs.png)  
-
       - [View project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal) (opens either a SharePoint site or URL that's been configured as the project's portal.  
       - [View process guidance](../../project/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance.  
       - [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
-
-
-<a name="team-members-widget"></a> 
-### Team members 
-
-![Team members widget](media/widget-team-members.png)
-
-Shows team member profiles and, on-hover, their user alias.
-For team admins, supports access to the quick dialog to [add or remove team members](../../organizations/settings/add-teams.md). 
-
-> [!NOTE]  
-> This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../../organizations/settings/add-teams.md#add-team-members). 
-
-::: moniker range="tfs-2015"
-Requires TFS 2015.1 or later version.    
-::: moniker-end
-
-----
+:::row:::
+   :::column span="1":::
+      ### Team members 
+      ![Team members widget](media/widget-team-members.png) 
+   :::column-end:::
+   :::column span="1":::
+      <a name="team-members-widget"></a> 
+      Shows team member profiles and, on-hover, their user alias. 
+      For team admins, supports access to the quick dialog to [add or remove team members](../../organizations/settings/add-teams.md).  
+      > [!NOTE]  
+      > This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../../organizations/settings/add-teams.md#add-team-members). 
+      ::: moniker range="tfs-2015"
+      Requires TFS 2015.1 or later version.
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
-
-<a id="team-room-widget"></a> 
-### Team room  
-
-![Team room widget](media/widget-team-room.png)
-
-Provides status and access to [team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room). Available for TFS 2015.1 through TFS 2017.2 versions.  
-  
-Team rooms support increased team productivity by providing a space to discuss work in progress, ask questions, share status, and clarify issues that arise. Team administrators can create additional team rooms.  
-
-> [!NOTE]  
-> Team Rooms have been deprecated as described in [Deprecation of Team Rooms](https://devblogs.microsoft.com/devops/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](../../service-hooks/services/slack.md).  
-
-----
-
+:::row:::
+   :::column span="1":::
+      ### Team room  
+      ![Team room widget](media/widget-team-room.png) 
+   :::column-end:::
+   :::column span="1":::
+      <a id="team-room-widget"></a> 
+      Provides status and access to [team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room). Available for TFS 2015.1 through TFS 2017.2 versions.  
+      Team rooms support increased team productivity by providing a space to discuss work in progress, ask questions, share status, and clarify issues that arise. Team administrators can create additional team rooms.  
+      > [!NOTE]  
+      > Team Rooms have been deprecated as described in [Deprecation of Team Rooms](https://devblogs.microsoft.com/devops/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](../../service-hooks/services/slack.md).
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
-
-
-<a id="visual-studio-widget"></a> 
-### Visual Studio Shortcuts 
-
-![Visual Studio widget](media/widget-visual-studio.png)
-
-Provides links to open or download Visual Studio. The Visual Studio IDE client comes with the [Team Explorer plug-in](../../user-guide/work-team-explorer.md) which provides quick access to several features (some of which aren't available through the web portal).
-
-::: moniker range="tfs-2015"
-Requires TFS 2015.1 or later version.
-::: moniker-end
-
-----
-
-
-<a id="how-to-widget"></a>
-### Welcome 
-
-![How to links widget](media/widget-how-to-links.png)
-
-Provides links to the **Boards/Boards (Work/Boards)**, **Repos (Code)**, and **Pipelines (Build or Build-Release)** pages and reference documentation on how to add charts.
-
-
-::: moniker range="tfs-2015"
-Requires TFS 2015.1 or later version.
-::: moniker-end
-
-----
+:::row:::
+   :::column span="1":::
+      ### Visual Studio Shortcuts 
+      ![Visual Studio widget](media/widget-visual-studio.png) 
+   :::column-end:::
+   :::column span="1":::
+      <a id="visual-studio-widget"></a> 
+      Provides links to open or download Visual Studio. The Visual Studio IDE client comes with the [Team Explorer plug-in](../../user-guide/work-team-explorer.md) which provides quick access to several features (some of which aren't available through the web portal).
+      ::: moniker range="tfs-2015"
+      Requires TFS 2015.1 or later version.
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      ### Welcome 
+      ![How to links widget](media/widget-how-to-links.png) 
+   :::column-end:::
+   :::column span="1":::
+      <a id="how-to-widget"></a>
+      Provides links to the **Boards/Boards (Work/Boards)**, **Repos (Code)**, and **Pipelines (Build or Build-Release)** pages and reference documentation on how to add charts.
+      ::: moniker range="tfs-2015"
+      Requires TFS 2015.1 or later version.
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
 
 <a id="marketplace" />
 
