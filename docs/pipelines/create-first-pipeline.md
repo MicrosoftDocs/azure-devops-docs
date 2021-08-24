@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 12/03/2020
+ms.date: 08/20/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -561,7 +561,7 @@ Create a build pipeline that prints "Hello world."
    
 7. On the left side, select your new **PowerShell** script task.
 
-8. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
+8. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: button to browse your repository and select the script you created.
 
    > [!div class="mx-imgBorder"] 
    > ![Select your script](media/get-started-designer/powershell-task-1-azure-devops-newnavon.png)
@@ -590,7 +590,7 @@ Create a build pipeline that prints "Hello world."
 
 15. On the left side, select your new **PowerShell** script task.
 
-16. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
+16. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: button to browse your repository and select the script you created.
 
     ![Select the PowerShell task](media/get-started-designer/powershell-task-1-tfs-2018.png)
 
@@ -620,7 +620,7 @@ Create a build pipeline that prints "Hello world."
 
 8. On the left side, select your new **PowerShell** script task.
 
-9. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
+9. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: button to browse your repository and select the script you created.
 
    ![Browse to find the script](media/get-started-designer/powershell-task-1.png)
 
@@ -646,7 +646,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
    ![Add the publish artifact task](media/get-started-designer/publish-artifact-task-tfs-2018-2.png)
 
-   **Path to publish**: Select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse and select the script you created.
+   **Path to publish**: Select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse and select the script you created.
 
    **Artifact name**: Enter `drop`.
 
@@ -663,7 +663,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
    ![Select add to add the publish artifact task](media/get-started-designer/publish-artifact-task.png)
 
-   **Path to Publish**: Select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse and select the script you created.
+   **Path to Publish**: Select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse and select the script you created.
 
    **Artifact Name**: Enter `drop`.
 
@@ -916,7 +916,7 @@ Define the process for running the script in two stages.
 
 1. On the left side, select your new **PowerShell** script task.
 
-1. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your artifacts and select the script you created.
+1. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse your artifacts and select the script you created.
 
 1. Add these **Arguments**:
 
@@ -974,7 +974,7 @@ Define the process for running the script in two stages.
 
 10. On the left side, select your new **PowerShell** script task.
 
-11. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your artifacts and select the script you created.
+11. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse your artifacts and select the script you created.
 
 12. Add these **Arguments**:
 
@@ -1014,7 +1014,7 @@ Define the process for running the script in two stages.
 
 6. On the **Task catalog** dialog box, select **Utility**, locate the **PowerShell** task, and then select its **Add** button. Select the **Close** button.
 
-7. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your artifacts and select the script you created.
+7. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse your artifacts and select the script you created.
 
 8. Add these **Arguments**:
 
@@ -1469,4 +1469,3 @@ To learn more about build pipeline settings, see:
 Currently, the Azure CLI and Azure APIs don't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](./build/triggers.md).
 
 ::: moniker-end
-
