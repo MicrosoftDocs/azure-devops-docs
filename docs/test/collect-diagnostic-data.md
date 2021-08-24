@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 Collect diagnostic data while testing your apps.
 This data will be included in the bugs you file 
 during the test. You can collect diagnostic data from
-web apps and from desktop apps, web apps and from desktop apps,
+web apps and from desktop apps,
 and view it in Azure Test Plans or Team Foundation Server.
 
 [!INCLUDE [feature-availability](includes/feature-availability.md)] 
