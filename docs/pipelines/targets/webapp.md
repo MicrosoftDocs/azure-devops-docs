@@ -359,16 +359,32 @@ The following example shows how to deploy to a staging slot, and then swap to a 
 - task: AzureWebApp@1
   inputs:
     azureSubscription: '<Azure service connection>'
+    appType: webAppLinux
     appName: '<name of web app>'
+    deployToSlotOrASE: true
+    resourceGroupName: '<name of resource group>'
     slotName: staging
 
 - task: AzureAppServiceManage@0
   inputs:
     azureSubscription: '<Azure service connection>'
+    appType: webAppLinux
     WebAppName: '<name of web app>'
     ResourceGroupName: '<name of resource group>'
     SourceSlot: staging
+    SwapWithProduction: true
 ```
+
+* **azureSubscription**: your Azure subscription.
+* **appType**: (optional) Use `webAppLinux` to deploy to a Web App on Linux.
+* **appName**: the name of your existing app service.
+* **deployToSlotOrASE**: Boolean. Deploy to an existing deployment slot or Azure App Service Environment.
+* **resourceGroupName**: Name of the resource group. Required if `deployToSlotOrASE` is true. 
+* **slotName**: Name of the slot, defaults to `production`. Required if `deployToSlotOrASE` is true. 
+* **SourceSlot**: Slot sent to production when `SwapWithProduction` is true. 
+* **SwapWithProduction**: Boolean. Swap the traffic of source slot with production. 
+
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
