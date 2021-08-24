@@ -15,14 +15,16 @@ ms.date: 08/24/2021
 
 [!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
 
-Each project provides a **Summary** or home page to share information and showcase the latest project activity. 
- 
+::: moniker range="> tfs-2017"
+Each project provides a **Summary** or home page to share information and showcase the latest project activity. Use this page to perform one or more of the following tasks. 
+::: moniker-end
 ::: moniker range="tfs-2017"
+Each project provides a **Summary** or home page to share information and showcase the latest project activity. 
 > [!NOTE]
 > The project **Home** page is available for TFS 2017.1 and later versions. It replaces the Welcome page used in TFS 2015 and TFS 2017.
-::: moniker-end
 
 Use this page to perform one or more of the following tasks. 
+::: moniker-end
 
 :::row:::
    :::column span="1":::
@@ -109,10 +111,9 @@ Use this page to perform one or more of the following tasks.
 > [!TIP]    
 > If you don't have permissions to edit a page or use a feature, the corresponding icons and links aren't visible. 
 
-
+::: moniker range=">= azure-devops-2019"
 ## Open project Summary
 
-::: moniker range=">= azure-devops-2019"
 From your web browser, choose **Overview*>Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
 
 If you haven't set up your project summary yet, you'll see this welcome page:
@@ -132,6 +133,8 @@ Select one of the following tasks to get started:
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
+
+## Open project Home page
 From your web browser, open the team project drop down menu and select the home page. If you don't have a  project, [create a team project](../../organizations/projects/create-project.md).
 
 ![Open Project Summary](media/share-project/project-vision-status-project-home-page.png)
@@ -141,7 +144,7 @@ To define a README file for your project, see [Initialize a README file for your
 ::: moniker-end
 
  
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= tfs-2018"
 
 ## Update the page
 
@@ -191,47 +194,7 @@ The **Summary** page displays either the **README** file defined in a project re
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
-<a id="change-repo" />
 
-## Change the repository
-
-You can change the repository used to support your project vision, including pointing it to the home page of your [built-in Wiki](../../project/wiki/wiki-create-repo.md).
-::: moniker-end
-::: moniker range=">= azure-devops-2019"
-
-1. Open **Overview > Summary** .
-
-2. Select :::image type="icon" source="../../media/icons/edit.png" border="false"::: **Edit**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  
-
-   If you don't see **Edit**, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
-
-3. Select a different repository or choose the Wiki option.
-
-   > [!div class="mx-imgBorder"]  
-   > ![Select a different repository or choose the Wiki option.](media/share-project/change-repo-new-nav.png)  
-
-   > [!TIP]  
-   > If you choose the Wiki option, only the Wiki home page displays. To access additional Wiki pages, go to the Wiki.
-
-1. From your project home page, choose **Change**.
-
-   > [!div class="mx-imgBorder"]  
-   > ![Project page, Change repo](media/share-project/markdown-welcome-page-change-location.png)  
-
-   If you don't see **Change** link, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
-
-2. From the select file dialog, choose an existing repo from the drop-down menu, or choose the Wiki option, shown as follows.
-
-   <img src="media/share-project/select-file-to-display-dialog.png" alt="Web portal, Project page, Select file to display dialog" />
-
-   > [!TIP]  
-   > Only the Wiki home page displays. To access additional Wiki pages, go to the Wiki.
-
-::: moniker-end
 
 ## Invite people to contribute to your project 
 
@@ -244,7 +207,7 @@ You can send an email to invite users to contribute to your project by choosing 
 
 ::: moniker range="<= tfs-2018"
 
-To add users to the project, choose the **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
+To add users to the project, choose the **Add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
 :::image type="content" source="media/summary/invite-members-tfs-2018.png" alt-text="Screenshot of Summary page, Add members button.":::
 ::: moniker-end
@@ -269,18 +232,17 @@ From the **Project stats** section, you can view updates made to the project in 
 :::image type="content" source="media/summary/project-summary-activity-tfs-2018.png" alt-text="Screenshot of Summary page, Activity section, TFS-2018.":::
 ::: moniker-end
 
-
-
 ## Email or chat with a project member 
 
 From the **Members** section, you can see some of the members that have been added to the project, and connect to them via email or chat with a member. 
 
-:::image type="content" source="media/summary/project-stats.png" alt-text="Screenshot of Summary page, Members section.":::
+:::image type="content" source="media/summary/project-members.png" alt-text="Screenshot of Summary page, Members section.":::
 
 > [!NOTE]   
 > 100+ indicates that 100 or more members have been added to the project. 
 
 To email or initiate a chat session, choose the team member shown and select your option. 
+
 :::image type="content" source="media/summary/connect-with-team-member.png" alt-text="Screenshot of Summary page, Members section, options available to connect to a team member.":::
 
 ::: moniker range="< azure-devops"
