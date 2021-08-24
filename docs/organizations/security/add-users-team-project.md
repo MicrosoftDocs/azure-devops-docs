@@ -95,7 +95,7 @@ Team and project administrators can add existing users to their team or project.
       Add existing users or groups to a team, or remove a member. 
    :::column-end:::
 :::row-end:::
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
       Project Administrators
@@ -444,7 +444,7 @@ Choose the **Current page** tab for information on adding a user to a team. The 
 
 <a name="summary-page"></a>
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 ## Invite users from the Summary page 
 
@@ -459,11 +459,11 @@ As a member of the Project Administrators group, you can add members to a projec
 
 	:::image type="content" source="media/add-users/summary-invite-users.png" alt-text="Screenshot of Summary page, Invite button.":::
 ::: moniker-end
-::: moniker range="tfs-2018"
-To add users to the project, choose the **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).  
-:::image type="content" source="../projects/media/summary/invite-members-tfs-2018.png" alt-text="Screenshot of Summary page, Add members button.":::
+::: moniker range=">=tfs-2017 <= tfs-2018"
+1. Open the **Project>Summary** page, and choose the **Add** button.  
+	:::image type="content" source="../projects/media/summary/invite-members-tfs-2018.png" alt-text="Screenshot of Summary page, Add members button.":::
 ::: moniker-end
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2017"
 2. For new users, enter their email address. For existing users, type their name until it resolves as a known name to the system. You can add several email addresses or account names by separating them with a semicolon (;). 
 
 	:::row:::
