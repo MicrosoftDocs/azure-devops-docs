@@ -7,16 +7,23 @@ ms.technology: devops-collab
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2015'
+monikerRange: '>= tfs-2017'
 ms.date: 08/24/2021
 ---
 
 # Share your project vision, view project activity
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
 
-Each project provides a **Summary** page to share information, add project members, and check the latest project activity. From this page you can also perform the following tasks depending on your administration status. 
+Each project provides a **Summary** or home page to share information and showcase the latest project activity. 
  
+::: moniker range="tfs-2017"
+> [!NOTE]
+> The project **Home** page is available for TFS 2017.1 and later versions. It replaces the Welcome page used in TFS 2015 and TFS 2017.
+::: moniker-end
+
+Use this page to perform one or more of the following tasks. 
+
 :::row:::
    :::column span="1":::
       **Project Administrator tasks** 
@@ -29,33 +36,39 @@ Each project provides a **Summary** page to share information, add project membe
    :::column span="1":::
       ::: moniker range=">= azure-devops-2019" 
       - Add a short project description 
-      - Set project tags 
-      - Choose a README file or wiki for project Summary information
+      - Choose a README file or wiki for project information
       - Invite people to contribute to your project 
+      - Set project tags 
       ::: moniker-end
-      ::: moniker range="<= tfs-2018" 
-      - Choose a README file or wiki for project Summary information
+      ::: moniker range="tfs-2018" 
+      - Choose a README file or wiki for project information
       - Invite people to contribute to your project  
       ::: moniker-end
-      ::: moniker range="< tfs-2018" 
-      - Choose a README file for project Summary information
+      ::: moniker range="tfs-2017" 
+      - Choose a README file for project information
       - Invite people to contribute to your project  
       ::: moniker-end
    :::column-end:::
    :::column span="1":::
       ::: moniker range=">= azure-devops-2019" 
-     - View project description and readme 
-     - View project stats
+     - View project information
+     - View project activity
      - Favorite a project 
      - Email or initiate a chat with a team member
      - Initiate a search across your project 
       ::: moniker-end
       ::: moniker range="<= tfs-2018" 
      - View project information
-     - View project stats  
+     - Email or initiate a chat with a team member
+     - View project activity  
       ::: moniker-end
    :::column-end:::
 :::row-end:::
+
+::: moniker range="azure-devops" 
+> [!NOTE]   
+> Hosted projects can be designated as **Private** or **Public**. For public projects, anonymous users can view the project **Summary**, except for the **Members** section. Also the **Like** and **Favorite** icons aren't visible to anonymous users. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md)
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 
 :::image type="content" source="media/summary/project-summary-page-intro.png" alt-text="Screenshot of summary page.":::
@@ -64,26 +77,35 @@ Each project provides a **Summary** page to share information, add project membe
 :::image type="content" source="media/summary/project-summary-page-intro-tfs-2018.png" alt-text="Screenshot of summary page, TFS-2018.":::
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019" 
-If you want to use a project wiki for your project Summary information, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
-::: moniker-end
- 
-::: moniker range="azure-devops" 
+::: moniker range=">= tfs-2018" 
 > [!NOTE]   
-> Hosted projects can be designated as **Private** or **Public**. For public projects, anonymous users can view the project **Summary**, except for the **Members** section. Also the **Like** and **Favorite** icons aren't visible to anonymous users. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md)
+> If you want to use a project wiki for your project Summary information, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
 ::: moniker-end
+  
 
 
 ## Prerequisites
 
+::: moniker range=">= tfs-2018" 
 - You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
   - Edit information on the project page
-  - Change the repository that you use to share your project mission
+  - Change the repository that you use to share project information
   - Manage project membership
 - To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
 - To view the project **Summary**, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-permissions.md#validusers).
 - To add or edit project **Tags**, you must have the project-level **Manage properties** permission set to **Allow**. This permission controls the project properties REST API. The project properties REST API is used to drive the project tags experience in the product.  
- 
+::: moniker-end
+
+
+::: moniker range="< tfs-2018" 
+- You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
+  - Edit information on the project page
+  - Change the repository that you use to share project information
+  - Manage project membership
+- To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
+- To view the project **Summary**, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-permissions.md#validusers). 
+::: moniker-end
+
 > [!TIP]    
 > If you don't have permissions to edit a page or use a feature, the corresponding icons and links aren't visible. 
 
@@ -112,25 +134,22 @@ Select one of the following tasks to get started:
 ::: moniker range="< azure-devops-2019"
 From your web browser, open the team project drop down menu and select the home page. If you don't have a  project, [create a team project](../../organizations/projects/create-project.md).
 
-![Open Project Summary ](media/share-project/project-vision-status-project-home-page.png)
+![Open Project Summary](media/share-project/project-vision-status-project-home-page.png)
 
 To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or  [Initialize a README file for your TFVC repo](#initialize-tfvc).
 
 ::: moniker-end
 
-::: moniker range="tfs-2017"
-> [!NOTE]
-> The project page described in this section is available for TFS 2017.1 and later versions. It replaces the Welcome page used in TFS 2015 and TFS 2017.
-::: moniker-end
+ 
+::: moniker range=">= azure-devops-2019"
 
-
-## Update the project description and home page
+## Update the page
 
 The **Summary** page displays either the **README** file defined in a project repository or the home page of a project wiki. If you want to use the project wiki home page, first set that up as described in [Create a Wiki for your project](../../project/wiki/wiki-create-repo.md).
 
-1. To edit the **Summary** page:
+1. To edit the page:
 
-	- If it is the first time editing the page, choose Add Project Description.  
+	- If it is the first time editing the page, choose **Add Project Description**.  
 	:::image type="content" source="media/summary/add-project-description.png" alt-text="Screenshot of summary page, first time editing.":::
 
 	- If editing the page after it's been set up, choose the :::image type="icon" source="../../media/icons/edit.png" border="false"::: **Edit project information**. This icon is only visible to members with permissions to edit the project **Summary** page.
@@ -169,12 +188,52 @@ The **Summary** page displays either the **README** file defined in a project re
 	- Links to instructions for collaborating on code, tracking work, building pipelines, deploying releases 
 	- Links to templates to file a bug, issue, or request 
 	- Links to distribution lists to email a question or post a question on Slack or Teams channel. 
- 
-::: moniker range=">= tfs-2018"
+::: moniker-end
 
-## Invite people to contribute to your project 
+
+::: moniker range="tfs-2018"
+<a id="change-repo" />
+
+## Change the repository
+
+You can change the repository used to support your project vision, including pointing it to the home page of your [built-in Wiki](../../project/wiki/wiki-create-repo.md).
+::: moniker-end
+::: moniker range=">= azure-devops-2019"
+
+1. Open **Overview > Summary** .
+
+2. Select :::image type="icon" source="../../media/icons/edit.png" border="false"::: **Edit**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  
+
+   If you don't see **Edit**, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
+
+3. Select a different repository or choose the Wiki option.
+
+   > [!div class="mx-imgBorder"]  
+   > ![Select a different repository or choose the Wiki option.](media/share-project/change-repo-new-nav.png)  
+
+   > [!TIP]  
+   > If you choose the Wiki option, only the Wiki home page displays. To access additional Wiki pages, go to the Wiki.
+
+1. From your project home page, choose **Change**.
+
+   > [!div class="mx-imgBorder"]  
+   > ![Project page, Change repo](media/share-project/markdown-welcome-page-change-location.png)  
+
+   If you don't see **Change** link, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
+
+2. From the select file dialog, choose an existing repo from the drop-down menu, or choose the Wiki option, shown as follows.
+
+   <img src="media/share-project/select-file-to-display-dialog.png" alt="Web portal, Project page, Select file to display dialog" />
+
+   > [!TIP]  
+   > Only the Wiki home page displays. To access additional Wiki pages, go to the Wiki.
 
 ::: moniker-end
+
+## Invite people to contribute to your project 
 
 ::: moniker range=">= azure-devops-2019"
 You can send an email to invite users to contribute to your project by choosing **Invite**. To learn more, see [Add users or groups to a team or project, Invite users from the Summary page](../security/add-users-team-project.md#invite-users-from-the-summary-page).
@@ -183,7 +242,7 @@ You can send an email to invite users to contribute to your project by choosing 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range="<= tfs-2018"
 
 To add users to the project, choose the **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
@@ -195,8 +254,6 @@ To add users to the project, choose the **add** button. To learn more, see [Add 
 > For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts).  
 ::: moniker-end
  
-::: moniker range=">= tfs-2018"
-
 <a id="cross-project-activity">  </a>
 
 ## View project activity  
@@ -208,7 +265,7 @@ From the **Project stats** section, you can view updates made to the project in 
 :::image type="content" source="media/summary/project-stats.png" alt-text="Screenshot of Summary page, Stats section.":::
  ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range="<= tfs-2018"
 :::image type="content" source="media/summary/project-summary-activity-tfs-2018.png" alt-text="Screenshot of Summary page, Activity section, TFS-2018.":::
 ::: moniker-end
 
@@ -216,7 +273,7 @@ From the **Project stats** section, you can view updates made to the project in 
 
 ## Email or chat with a project member 
 
-From the **Members** section, you can see how many members have been added to the project, and connect via email or chat with a member. 
+From the **Members** section, you can see some of the members that have been added to the project, and connect to them via email or chat with a member. 
 
 :::image type="content" source="media/summary/project-stats.png" alt-text="Screenshot of Summary page, Members section.":::
 
@@ -376,47 +433,6 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
-<a id="change-repo" />
-
-## Change the repository
-
-You can change the repository used to support your project vision, including pointing it to the home page of your [built-in Wiki](../../project/wiki/wiki-create-repo.md).
-::: moniker-end
-::: moniker range=">= azure-devops-2019"
-
-1. Open **Overview > Summary** .
-
-2. Select :::image type="icon" source="../../media/icons/edit.png" border="false"::: **Edit**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  
-
-   If you don't see **Edit**, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
-
-3. Select a different repository or choose the Wiki option.
-
-   > [!div class="mx-imgBorder"]  
-   > ![Select a different repository or choose the Wiki option.](media/share-project/change-repo-new-nav.png)  
-
-   > [!TIP]  
-   > If you choose the Wiki option, only the Wiki home page displays. To access additional Wiki pages, go to the Wiki.
-
-1. From your project home page, choose **Change**.
-
-   > [!div class="mx-imgBorder"]  
-   > ![Project page, Change repo](media/share-project/markdown-welcome-page-change-location.png)  
-
-   If you don't see **Change** link, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
-
-2. From the select file dialog, choose an existing repo from the drop-down menu, or choose the Wiki option, shown as follows.
-
-   <img src="media/share-project/select-file-to-display-dialog.png" alt="Web portal, Project page, Select file to display dialog" />
-
-   > [!TIP]  
-   > Only the Wiki home page displays. To access additional Wiki pages, go to the Wiki.
-
-::: moniker-end
 
 ## Related articles
 
@@ -431,20 +447,4 @@ You can change the repository used to support your project vision, including poi
 - [Projects - Get Project Properties](/rest/api/azure/devops/core/projects/get-project-properties)
 - [Projects - Set Project Properties](/rest/api/azure/devops/core/projects/set-project-properties)
 
- 
-### Git repository
-
- 
-> [!div class="mx-imgBorder"]  
-> ![Git new project summary page](media/share-project/git-start-page-readme.png)
-
-> [!div class="mx-imgBorder"]  
-> ![Initialize README file, new nav](media/share-project/initialize-readme-prev-nav.png)
-
-Use this page to leverage all the built-in DevOps functionality of Azure DevOps and to perform the following activities.
-
-> [!div class="mx-tdCol2BreakAll"]
-> |Git repository   |TFVC repository   |  
-> |-------------|----------|
-> |- Clone your project to your client computer<br/>- Push an existing repository from the command line<br/>- Import a repository<br/>- Initialize a README or gitignore<br/>- Setup a build from an external repository<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity) |- Setup a build<br/>- Add a README for your project<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity) |
  
