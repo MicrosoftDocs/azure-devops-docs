@@ -32,21 +32,25 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">=tfs-2017 < azure-devops-2019"
+
+1. Select **Build & Release**, and then select **Packages**.
 
     :::image type="content" source="../media/goto-feed-hub.png" alt-text="Screenshot showing how to navigate to Azure Artifacts - TFS.":::
 
 ::: moniker-end
 
-1. Select **Create Feed** to create a new feed.
-
 ::: moniker range=">= azure-devops-2019"
+
+1. Select **Create Feed** to create a new feed.
 
     :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button."::
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">=tfs-2017 < azure-devops-2019"
+
+1. Select **New Feed** to create a new feed.
 
     :::image type="content" source="../media/new-feed-button.png" alt-text="Screenshot showing the create feed button - TFS."::
 
@@ -60,34 +64,11 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">=tfs-2017 < azure-devops-2019"
 
     :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window - TFS."::
 
 ::: moniker-end
-
-::: moniker range=">=tfs-2017 < azure-devops"
-
-1. Navigate to the **Packages** page:
-
-   ![The Packages tab shows All in Release view and All packages in Source.](../media/goto-feed-hub.png)
-
-1. Select **+ New feed**:
-
-   ![The + New feed button is highlighted.](../media/new-feed-button.png)
-
-1. In the dialog:
-
-   - Give the feed a name.
-   - Choose who can read and contribute (or update) packages in your feed.
-   - Select _Use packages from public sources through this feed_
-   - When you're done, choose **Create**.
-
-   ![New feed dialog](../media/new-feed-dialog.png)
-
-::: moniker-end
-
-Now that you've created the feed that we will use to store your packages, you will update your configuration files to point to the newly created feed.
 
 ## Replace the public registry in configuration files with the Azure Artifacts feed
 
