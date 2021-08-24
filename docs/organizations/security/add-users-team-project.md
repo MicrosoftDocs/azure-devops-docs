@@ -449,16 +449,21 @@ Choose the **Current page** tab for information on adding a user to a team. The 
 ## Invite users from the Summary page 
 
 As a member of the Project Administrators group, you can add members to a project from the **Summary** page and optionally add them to one or more teams. To learn more about the **Summary** page, see [Share your project vision, view project activity](../../organizations/projects/project-vision-status.md).
-
+::: moniker-end
 ::: moniker range="< azure-devops"
 > [!NOTE]
 > For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts).  
 ::: moniker-end
-
+::: moniker range="> azure-devops-2019"
 1. Open the **Project>Summary** page, and choose **Invite**.  
 
 	:::image type="content" source="media/add-users/summary-invite-users.png" alt-text="Screenshot of Summary page, Invite button.":::
-
+::: moniker-end
+::: moniker range="tfs-2018"
+To add users to the project, choose the **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).  
+:::image type="content" source="media/summary/invite-members-tfs-2018.png" alt-text="Screenshot of Summary page, Add members button.":::
+::: moniker-end
+::: moniker range=">= tfs-2018"
 2. For new users, enter their email address. For existing users, type their name until it resolves as a known name to the system. You can add several email addresses or account names by separating them with a semicolon (;). 
 
 	:::row:::
@@ -480,7 +485,6 @@ As a member of the Project Administrators group, you can add members to a projec
 
 	> [!NOTE]  
 	> Any valid email address is acceptable. When the user accepts the invitation and signs into Azure DevOps, they register their email address as a Microsoft account and choose a password.  
-
 
 2. Optionally, select the teams you want to add the user to and then choose **Add** to complete the invitation.
 
@@ -537,7 +541,6 @@ As a member of the Project Administrators group, you can add members to a projec
 
 ::: moniker-end
 
- 
 <a name="add-users-team-project"></a>
 <a name="add-users-to-a-project"></a>
 

@@ -24,7 +24,6 @@ Each project provides a **Summary** page to share information, add project membe
    :::column span="1":::
      **Project member tasks**
    :::column-end:::
-   :::column-end:::
 :::row-end:::
    :::column span="1":::
       ::: moniker range=">= azure-devops-2019" 
@@ -53,7 +52,12 @@ Each project provides a **Summary** page to share information, add project membe
    :::column-end:::
 :::row-end:::
 
+::: moniker range=">= azure-devops-2019" 
 :::image type="content" source="media/summary/project-summary-page-intro.png" alt-text="Screenshot of summary page.":::
+::: moniker-end
+::: moniker range="< azure-devops-2019" 
+:::image type="content" source="media/summary/project-summary-page-intro-tfs-2018.png" alt-text="Screenshot of summary page, TFS-2018.":::
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 
 If you want to use a project wiki for your project Summary information, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
@@ -413,13 +417,6 @@ You can change the repository used to support your project vision, including poi
    > Only the Wiki home page displays. To access additional Wiki pages, go to the Wiki.
 
 ::: moniker-end
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Create a wiki for your team project](../../project/wiki/wiki-create-repo.md)
-
-
 
 ## Related articles
 
