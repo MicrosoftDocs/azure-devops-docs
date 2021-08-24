@@ -111,7 +111,8 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ###  Add the Azure Web App task
 
 1. Use the Task assistant to add the [Azure Web App](../tasks/deploy/azure-rm-web-app.md) task. 
-    :::image type="content" source="media/deploy-to-azure/azure-web-app-task.png" alt-text="Azure web app task.":::
+   
+   :::image type="content" source="media/deploy-to-azure/azure-web-app-task.png" alt-text="Azure web app task.":::
 
 1. Select **Azure Resource Manager** for the **Connection type** and choose your **Azure subscription**. Make sure to **Authorize** your connection. 
 
