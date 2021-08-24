@@ -113,7 +113,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 1. Use the Task assistant to add the [Azure Web App Deploy](../tasks/deploy/azure-rm-web-app.md) task. 
     :::image type="content" source="media/deploy-to-azure/azure-web-app-task.png" alt-text="Azure web app deploy task.":::
 
-1. Select **Azure Resource Manager** for the **Connection type** and choose your **Azure subscription**. Make sure to **Authorize** for connection. 
+1. Select **Azure Resource Manager** for the **Connection type** and choose your **Azure subscription**. Make sure to **Authorize** your connection. 
 
 1. Select  **Web App on Linux** and enter your `azureSubscription`, `appName`, and `package`. Your complete YAML should look like this. 
 
