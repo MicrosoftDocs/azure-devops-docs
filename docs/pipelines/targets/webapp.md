@@ -36,7 +36,7 @@ You'll use the [Azure Web App task](../tasks/deploy/azure-rm-web-app.md) to depl
 [!INCLUDE [include](../includes/prerequisites.md)]
 
 
-## Create an Azure App Service
+## Create an Azure App Service in the Azure portal
 
 Create an Azure App Service on Linux or Windows. 
 
@@ -70,7 +70,7 @@ az webapp create -g myapppipeline-rg -p myapp-service-plan -n my-app-dotnet-win 
 ```
 ---
 
-## Build your app
+## Build your app with Azure Pipelines
 #### [YAML](#tab/yaml/)
 
 ::: moniker range="azure-devops"
@@ -104,7 +104,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 1. Use the Task assistant to add the [Azure Web App Deploy](../tasks/deploy/azure-rm-web-app.md) task. 
     :::image type="content" source="media/deploy-to-azure/azure-web-app-task.png" alt-text="Azure web app deploy task.":::
 
-1. Select **Azure Resource Manager** for the **Connection type** and select your **Azure subscription** where you will host your app. Make sure to **Authorize** for connection. 
+1. Select **Azure Resource Manager** for the **Connection type** and choose your **Azure subscription**. Make sure to **Authorize** for connection. 
 
 1. Select  **Web App on Linux** and enter your `azureSubscription`, `appName`, and `package`. Your complete YAML should look like this. 
 
@@ -175,7 +175,13 @@ To get started:
 ---
 Now you're ready to read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
 
-## Azure Web App Deploy task
+## Use a service connection
+
+To deploy to Azure App Service, you'll need to use an Azure Resource Manager [service connection](../library/service-endpoints.md). The Azure service connection stores the credentials to connect from Azure Pipelines or Azure DevOps Server to Azure.
+
+Learn more about connect-to-azure[Azure Resource Manager service connections](../library/connect-to-azure.md). If your service connection is not working as expected, see [Troubleshooting service connections](../release/azure-rm-endpoint.md). 
+
+## Use the Azure Web App Deploy task
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -250,7 +256,7 @@ the iisnode handler on the Azure Web App:
 * **azureSubscription**: your Azure subscription.
 * **appName**: the name of your existing app service.
 * **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
-* **customWebConfig**: generate web.config parameters for Python, Node.js, Go and Java apps. A standard `web.config` file will be generated and deployed to Azure App Service if the application does not have one.
+* **customWebConfig**: generate web.config parameters for Python, Node.js, Go, and Java apps. A standard `web.config` file will be generated and deployed to Azure App Service if the application does not have one.
 
 For information on Azure service connections, see the [following section](#endpoint).
 
@@ -286,7 +292,7 @@ input. The Azure service connection stores the credentials to connect from Azure
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-You must supply an Azure service connection to the `AzureWebApp` task. The Azure service connection stores the credentials to connect from Azure Pipelines to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
+You'll need an Azure service connection for the `AzureWebApp` task. The Azure service connection stores the credentials to connect from Azure Pipelines to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
 
 ::: moniker-end
 
