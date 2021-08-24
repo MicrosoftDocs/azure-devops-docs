@@ -373,12 +373,10 @@
       displayName: resource manager, service connection, service principal
     - name: Azure App Service (Web Apps)
       items:
-        - name: Web App on Linux
-          href: targets/webapp-linux.md
-        - name: Web App on Linux Container
-          href: targets/webapp-on-container-linux.md
-        - name: Web App on Windows
+        - name: Azure Web App
           href: targets/webapp.md
+        - name: Azure Web App on Linux Container
+          href: targets/webapp-on-container-linux.md
         - name: Visual Studio Code Deploy to Azure extension
           href: targets/deploy-to-azure-vscode.md
         - name: Azure Web App (Classic)
