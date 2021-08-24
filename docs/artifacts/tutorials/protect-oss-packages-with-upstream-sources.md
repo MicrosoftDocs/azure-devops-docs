@@ -22,50 +22,47 @@ In this tutorial, you will:
 > * Run an initial package restore to populate your feed.
 > * Check your feed to view the saved copy of the packages you consumed from the public registry.
 
-## Create a feed with upstream sources enabled
-
-1. Navigate to **Azure Artifacts**:
+## Create a feed and enable upstream sources
 
 ::: moniker range=">= azure-devops-2019"
 
-   > [!div class="mx-imgBorder"] 
-   >![Artifacts is highlighted in the navigation pane.](../media/goto-feed-hub-azure-devops-newnav.png)
+1. Select **Artifacts**.
+
+    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot showing how to navigate to Azure Artifacts.":::
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-   ![Go to Azure Artifacts](../media/goto-feed-hub.png)
+    :::image type="content" source="../media/goto-feed-hub.png" alt-text="Screenshot showing how to navigate to Azure Artifacts - TFS.":::
 
 ::: moniker-end
 
-1. Select **+ New feed**:
+1. Select **Create Feed** to create a new feed.
 
 ::: moniker range=">= azure-devops-2019"
 
-   > [!div class="mx-imgBorder"] 
-   >![On Packages there is a list of packages, and + Create Feed is highlighted.](../media/new-feed-button-azure-devops-newnav.png)
+    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button."::
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-   ![New feed button](../media/new-feed-button.png)
+    :::image type="content" source="../media/new-feed-button.png" alt-text="Screenshot showing the create feed button - TFS."::
 
 ::: moniker-end
 
-1. In the dialog, provide a feed name and click _Create_. 
+1. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
 
 ::: moniker range=">= azure-devops-2019"
 
-   > [!div class="mx-imgBorder"] 
-   >![New feed dialog](../media/new-feed-dialog.png)
+    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window."::
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-   ![New feed dialog](../media/new-feed-dialog.png)
+    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window - TFS."::
 
 ::: moniker-end
 
