@@ -1,13 +1,13 @@
 ---
 title: Sign up for Azure Pipelines
 ms.custom: seodec18
-description: Learn how to sign up for Azure Pipelines to begin managing CI/CD to deploy your code.
+description: Walk through signing up for Azure Pipelines to begin managing CI/CD to deploy your code.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-ms.date: 08/09/2021
+ms.date: 08/24/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 
 Sign up for an Azure DevOps organization and Azure Pipelines to begin managing CI/CD to deploy your code with high-performance pipelines.
 
-For more information on Azure Pipelines, see [What is Azure Pipelines](what-is-azure-pipelines.md).
+For more information about Azure Pipelines, see [What is Azure Pipelines](what-is-azure-pipelines.md).
 
 ## Sign up with a personal Microsoft account
 
@@ -25,26 +25,29 @@ If you have a Microsoft account, complete the following steps to sign up for Azu
 
 1. Open [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines) and select **Start free**.
 
-   ![Start free with Azure Pipelines](media/start-free-azure-pipelines.png)
+   ![Screenshot of Start free with Azure Pipelines page.](media/start-free-azure-pipelines.png)
 
 2. Enter your email address, phone number, or Skype ID for your Microsoft account. If you're a Visual Studio subscriber and you get Azure DevOps as a benefit, use the Microsoft account associated with your subscription. Select **Next**.
 
-    > [!div class="mx-imgBorder"]
-    >![Create a Microsoft account](../../boards/get-started/media/acquisition/sign-in-new.png)
+   ![Create a Microsoft account](../../boards/get-started/media/acquisition/sign-in-new.png)
 
 3. Enter your password and select **Sign in**.
 
-   ![Enter your password and sign in](../../media/enter-password-sign-in.png)
+   ![Enter your password and sign in.](../../media/enter-password-sign-in.png)
 
 4. To get started with Azure Pipelines, select **Continue**.
 
-    ![Choose Continue to sign up for Azure DevOps](../../media/sign-up-azure-devops.png)
+    ![Choose Continue to sign up for Azure DevOps.](../../media/sign-up-azure-devops.png)
 
-5. Select the service you'd like to start your project with, **Pipelines**.
+5. Enter a name for your organization, select a host location from the drop-down menu, enter the characters you see, and then select **Continue**.
+
+   :::image type="content" source="../media/almost-done-name-organization.png" alt-text="Screenshot of Almost done pane, name your organization.":::
+
+6. Select the service you'd like to start your project with, **Pipelines**.
 
     ![New project, select Azure Pipelines](../media/new-project-select-pipelines.png)
 
-   An organization is created based on the account you used to sign in. Use the following URL to sign in to your organization at any time:
+   An organization gets created based on the account you used to sign in with. Use the following URL to sign in to your organization at any time:
 
    `https://dev.azure.com/{yourorganization}`
 
@@ -103,9 +106,9 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 
 ## Invite team members - optional
 
-You don't need to invite team members to sign up for Azure Pipelines. You can add and invite others to work on your project by adding their email address to your organization and project.
+You don't need to invite team members to sign up for Azure Pipelines. Add and invite others to work on your project by adding their email address to your organization and project.
 
-1. From your project web portal, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps icon, and then select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+1. From your project web portal, choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps > ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
    ![Open Organization settings](../../media/settings/open-admin-settings-vert-2.png)
 
@@ -134,7 +137,7 @@ For more information, see [Add organization users for Azure DevOps Services](../
 
 ## Change organization or project settings
 
-You can rename and delete your organization, or change the organization location. To learn more, see the following articles:
+You can rename and delete your organization, or change the organization location. For more information, see the following articles:
 
 - [Manage organizations](../../organizations/accounts/organization-management.md)
 - [Rename an organization](../../organizations/accounts/rename-organization.md)
@@ -155,4 +158,4 @@ You can rename your project or change its visibility. To learn more about managi
 
 - [What is Azure Pipelines?](what-is-azure-pipelines.md)
 - [Key concepts for new Azure Pipelines users](key-pipelines-concepts.md)
-- [Create your first pipeline](../create-first-pipeline.md)
+- [Customize your pipeline](../customize-pipeline.md)
