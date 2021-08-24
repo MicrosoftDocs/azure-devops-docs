@@ -16,333 +16,186 @@ ms.date: 07/14/2020
 
 [!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
-Widgets display information and charts on dashboards. Many widgets are configurable or are scoped to a team or to the current user identity. Many of them are configurable and display information available from one or more data stores or charts maintained within the system. 
- 
+::: moniker range=">= tfs-2018"
+Widgets display information and charts on dashboards. Many widgets are configurable or are scoped to a team or to the logged in user account. Many display information available from one or more data stores or charts maintained within the system. You add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md). For example, you can add the **Build History** widget from the dashboard's **Add widget** dialog. 
+::: moniker-end
 
-The following widgets are organized under the service they support. Widgets that derive their data from [Analytics](../powerbi/what-is-analytics.md) are annotated with **Analytics**. 
- 
+::: moniker range="< tfs-2018"
+Widgets display information and charts on dashboards. Many widgets are configurable and scoped to a team or to the logged in user account. Many display information available from one or more data stores or charts maintained within the system. You add a widget to a dashboard as described in [Add a widget to a dashboard](add-widget-to-dashboard.md). For example, you can add the **Build History** widget from the dashboard's **Add widget** dialog. 
+::: moniker-end
+
+![Build history widget](media/widget-build-history-chart.png)   
+
+This article provides a quick reference of all out-of-box (OOB) widgets that you can add to your dashboard. In addition to the OOB widgets, you may find additional widgets from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance)
+
+## Supported OOB widgets
+
+Widgets listed in the following table are provided out-of-box. They are organized under the service they support. 
+
+Widgets that derive their data from [Analytics](../powerbi/what-is-analytics.md) are annotated with **Analytics**. 
+
+Widgets are annotated as follows: 
 
 ::: moniker range=">= azure-devops-2019"
-- **Analytics**: indicates data is derived from [Analytics data](../powerbi/what-is-analytics.md)  
+- **Analytics**: Widget derives data from [Analytics data](../powerbi/what-is-analytics.md)  
 - **Project**: indicates you can select the project and team when configuring the widget
-- **Team**: Indicates a widget that is scoped to a team  
-- **User**: Indicates a widget that is scoped to a user identity 
+- **Team**: Widget is scoped to a single team  
+- **Teams**: Widget is scoped to one or more teams
+- **User**: Widget is scoped to the logged in user account
 ::: moniker-end
 
 
-::: moniker range=">=tfs-2015 <= tfs-2018"
-- **Team**: Indicates a widget that is scoped to a team  
-- **User**: Indicates a widget that is scoped to a user identity 
+::: moniker range="<= tfs-2018"
+- **Team**: Widget is scoped to a single team  
+- **User**: Widget is scoped to the logged in user account
 ::: moniker-end
 
-
-To add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md).   
+:::row:::
+   :::column span="1":::
+      ::: moniker range=">= azure-devops-2020"
+      **Boards**
+      - [Assigned to me](#assigned-to-me-widget)
+      - [Burndown chart](#burndown-analytics-widget) (Analytics, Teams)    
+      - [Burnup chart](#burnup-analytics-widget) (Analytics, Teams)     
+      - [Chart for work items](#chart-wit-widget)  
+      - [Cumulative flow diagram](#cfd-widget)  
+      - [Cycle time (Analytics)](#cycle-time-widget) (Analytics, Team)  
+      - [Lead time (Analytics)](#lead-time-widget) (Analytics, Team) 
+      - [New Work item](#new-work-item-widget)  
+      - [Query results](#query-results-widget)  
+      - [Query tile](#query-tile-widget)  
+      - [Sprint burndown](#sprint-burndown-analytics-widget) (Analytics, Team)  
+      - [Sprint burndown - Legacy](#sprint-burndown-widget) (Team)   
+      - [Sprint capacity](#sprint-capacity-widget) (Team) 
+      - [Sprint overview](#sprint-overview-widget) (Team)   
+      - [Velocity](#velocity-widget) (Analytics, Team)  
+      - [Work links](#work-links-widget)  
+      ::: moniker-end
+      ::: moniker range="azure-devops-2019"
+      **Boards**
+      - [Assigned to me](#assigned-to-me-widget)
+      - [Burndown chart](#burndown-analytics-widget) (Analytics)    
+      - [Burnup chart](#burnup-analytics-widget) (Analytics)    
+      - [Chart for work items](#chart-wit-widget)  
+      - [Cumulative flow diagram](#cfd-widget)  
+      - [Cycle time (Analytics)](#cycle-time-widget) (Analytics)    
+      - [Lead time (Analytics)](#lead-time-widget) (Analytics)   
+      - [New Work item](#new-work-item-widget)  
+      - [Query results](#query-results-widget)  
+      - [Query tile](#query-tile-widget)  
+      - [Sprint burndown](#sprint-burndown-widget)  
+      - [Sprint capacity](#sprint-capacity-widget)  
+      - [Sprint overview](#sprint-overview-widget)  
+      - [Velocity](#velocity-widget) (Analytics)  
+      - [Work links](#work-links-widget)  
+      ::: moniker-end
+      ::: moniker range=">= tfs-2017 <= tfs-2018"
+      **Work**
+      - [Assigned to me](#assigned-to-me-widget)
+      - [Chart for work items](#chart-wit-widget)  
+      - [New Work item](#new-work-item-widget)  
+      - [Query results](#query-results-widget)  
+      - [Query tile](#query-tile-widget)  
+      - [Sprint burndown](#sprint-burndown-widget)  
+      - [Sprint capacity](#sprint-capacity-widget)  
+      - [Sprint overview](#sprint-overview-widget)  
+      - [Work links](#work-links-widget)  
+      ::: moniker-end
+      ::: moniker range="tfs-2015"
+      **Work**
+      - [Chart for work items](#chart-wit-widget)  
+      - [New Work item](#new-work-item-widget)  
+      - [Query results](#query-results-widget)  
+      - [Query tile](#query-tile-widget)  
+      - [Sprint burndown](#sprint-burndown-widget)  
+      - [Sprint capacity](#sprint-capacity-widget)  
+      - [Sprint overview](#sprint-overview-widget)  
+      - [Work links](#work-links-widget)  
+      ::: moniker-end
+   :::column-end:::
+   :::column span="1":::
+      ::: moniker range=">= azure-devops-2019"
+      **Repos** 
+      - [Code tile](#code-tile-widget) (Repository, Branch, Folder)
+      - [Pull request](#pull-request-widget) (Team)
+      ---
+      **Pipelines**
+      - [Build history](#build-history-widget) (Build pipeline)
+      - [Deployment status](#deployment-status-widget) (Build pipeline)
+      - [Release pipeline overview](#release-definition-widget) (Release pipeline)
+      - [Requirements quality](#requirements-quality-widget) (Query, Build or Release pipeline)
+      ---
+      **Test Plans**
+      - [Chart for test plans](#chart-test-plan-widget)
+      - [Test results trend (Advanced)](#test-trend-results-advanced) (Analytics, Build or Release pipeline) 
+      - [Test results trend](#test-trend-results) (Build or Release pipeline)  
+      ---
+      **Other, Links, and Informational**
+      - [Embedded web page](#embedded-webpage-widget)  
+      - [Markdown](#markdown-widget)  
+      - [Other links](#other-links-widget)  
+      - [Team members](#team-members-widget) (Team) 
+      - [Visual Studio Shortcuts](#visual-studio-widget) 
+      - [Welcome](#how-to-widget) 
+      ::: moniker-end
+      ::: moniker range=">= tfs-2017 <= tfs-2018"
+      **Code** 
+      - [Code tile](#code-tile-widget) (Repository, Branch, Folder)
+      - [Pull request](#pull-request-widget) (Team)
+      ---
+      **Build & Release**
+      - [Build history](#build-history-widget) (Build pipeline)
+      - [Deployment status](#deployment-status-widget) (Build pipeline)
+      - [Release pipeline overview](#release-definition-widget) (Release pipeline)
+      - [Requirements quality](#requirements-quality-widget) (Query, Build or Release pipeline)
+      ---
+      **Test**
+      - [Chart for test plans](#chart-test-plan-widget)
+      - [Test results trend](#test-trend-results) (Build or Release pipeline)  
+      ---
+      ::: moniker-end
+      ::: moniker range="tfs-2018"
+      **Other, Links, and Informational**
+      - [Embedded web page](#embedded-webpage-widget)  
+      - [Markdown](#markdown-widget)  
+      - [Other links](#other-links-widget-2018)  
+      - [Team members](#team-members-widget) (Team) 
+      - [Visual Studio Shortcuts](#visual-studio-widget) 
+      - [Welcome](#how-to-widget) 
+      ::: moniker-end
+      ::: moniker range="tfs-2017"
+      **Other, Links, and Informational**
+      - [Embedded web page](#embedded-webpage-widget)  
+      - [Markdown](#markdown-widget)  
+      - [Other links](#other-links-widget-2018)  
+      - [Team members](#team-members-widget) (Team) 
+      - [Team room](#team-room-widget) (Team) 
+      - [Visual Studio Shortcuts](#visual-studio-widget) 
+      - [Welcome](#how-to-widget) 
+      ::: moniker-end
+      ::: moniker range="tfs-2015"
+      **Code** 
+      - [Code tile](#code-tile-widget) (Repository, Branch, Folder)
+      - [Pull request](#pull-request-widget) (Team)
+      ---
+      **Build**
+      - [Build history](#build-history-widget) (Build pipeline)
+      ---
+      **Other, Links, and Informational** 
+      - [Markdown](#markdown-widget)  
+      - [Other links](#other-links-widget-2018)  
+      - [Team members](#team-members-widget) (Team) 
+      - [Team room](#team-room-widget) (Team) 
+      - [Visual Studio Shortcuts](#visual-studio-widget) 
+      - [Welcome](#how-to-widget) 
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
+  
  
-
-::: moniker range=">= azure-devops-2020"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="44%"> 
-<strong>Boards</strong>
-<ul>
-<li><a href="#assigned-to-me-widget">Assigned to me</a></li>
-<li><a href="#burndown-analytics-widget">Burndown chart</a> (Analytics)</li>
-<li><a href="#burnup-analytics-widget">Burnup chart</a> (Analytics) </li>
-<li><a href="#chart-wit-widget">Chart for work items</a></li>
-<li><a href="#cfd-widget">Cumulative flow diagram</a> (Analytics) </li>
-<li><a href="#cycle-time-widget">Cycle time</a> (Analytics)</li>
-<li><a href="#lead-time-widget">Lead time</a> (Analytics) </li>
-<li><a href="#new-work-item-widget" >New Work item</a></li>
-<li><a href="#query-results-widget">Query results</a></li>
-<li><a href="#query-tile-widget" >Query tile</a></li>
-<li><a href="#sprint-burndown-analytics-widget">Sprint burndown</a> (Analytics) </li>
-<li><a href="#sprint-burndown-widget">Sprint burndown - Legacy</a> </li>
-<li><a href="#sprint-capacity-widget">Sprint capacity</a></li>
-<li><a href="#sprint-overview-widget">Sprint overview</a> </li>
-<li><a href="#velocity-widget">Velocity</a> (Analytics) </li>
-<li><a href="#work-links-widget">Work links</a></li>
-</ul>
-
-</td>
-<td width="28%">
-<strong>Repos</strong>
-<ul>
-<li><a href="#code-tile-widget" data-raw-source="[Code tile](#code-tile-widget)">Code tile</a></li>
-<li><a href="#pull-request-widget" data-raw-source="[Pull request](#pull-request-widget)">Pull request</a> </li>
-</ul>
-<br/>
-<strong>Pipelines</strong>
-<ul>
-<li><a href="#build-history-widget" data-raw-source="[Chart for build history](#build-history-widget)">Chart for build history</a></li>
-<li><a href="#deployment-status-widget" data-raw-source="[Deployment status](#deployment-status-widget)">Deployment status</a></li>
-<li><a href="#release-definition-widget" data-raw-source="[Release pipeline overview](#release-definition-widget)">Release pipeline overview</a></li>
-<li><a href="#test-trend-results-advanced" data-raw-source="[Test results trend (Advanced)](#test-trend-results-advanced)">Test results trend (Advanced)</a> (Analytics)</li>
-<li><a href="#requirements-quality-widget" data-raw-source="[Requirements quality](#requirements-quality-widget)">Requirements quality</a></li>
-</ul>
-<br/>
-<strong>Test Plans</strong>
-<li><a href="#chart-test-plan-widget" data-raw-source="[Chart for test plans](#chart-test-plan-widget)">Chart for test plans</a></li>
-
-</ul>
-</td>
-<td width="28%">
-<strong>Other</strong>
-<ul>
-<li><a href="#embedded-webpage-widget" data-raw-source="[Embedded web page](#embedded-webpage-widget)">Embedded web page</a></li>
-<li><a href="#markdown-widget" data-raw-source="[Markdown](#markdown-widget)">Markdown</a></li>
-<li><a href="#other-links-widget" data-raw-source="[Other links](#other-links-widget)">Other links</a> </li>
-<li><a href="#team-members-widget" data-raw-source="[Team members](#team-members-widget)">Team members</a> </li>
-<li><a href="#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](#visual-studio-widget)">Visual Studio Shortcuts</a></li>
-<li><a href="#how-to-widget" data-raw-source="[Welcome](#how-to-widget)">Welcome</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
-
-
-::: moniker range="azure-devops-2019"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="44%"> 
-<strong>Boards</strong>
-<ul>
-<li><a href="#assigned-to-me-widget" data-raw-source="[Assigned to me](#assigned-to-me-widget)">Assigned to me</a></li>
-<li><a href="#burndown-analytics-widget" data-raw-source="[Burndown chart](#burndown-analytics-widget)">Burndown chart</a> (Analytics)</li>
-<li><a href="#burnup-analytics-widget" data-raw-source="[Burnup chart](#burnup-analytics-widget)">Burnup chart</a> (Analytics) </li>
-<li><a href="#chart-wit-widget" data-raw-source="[Chart for work items](#chart-wit-widget)">Chart for work items</a></li>
-<li><a href="#cfd-widget" data-raw-source="[Cumulative flow diagram](#cfd-widget)">Cumulative flow diagram</a> (Analytics) </li>
-<li><a href="#cycle-time-widget" data-raw-source="[Cycle time](#cycle-time-widget)">Cycle time</a> (Analytics)</li>
-<li><a href="#lead-time-widget" data-raw-source="[Lead time](#lead-time-widget)">Lead time</a> (Analytics) </li>
-<li><a href="#new-work-item-widget" data-raw-source="[New Work item](#new-work-item-widget)">New Work item</a></li>
-<li><a href="#query-results-widget" data-raw-source="[Query results](#query-results-widget)">Query results</a></li>
-<li><a href="#query-tile-widget" data-raw-source="[Query tile](#query-tile-widget)">Query tile</a></li>
-<li><a href="#sprint-burndown-widget" data-raw-source="[Sprint burndown](#sprint-burndown-widget)">Sprint burndown</a> </li>
-<li><a href="#sprint-capacity-widget" data-raw-source="[Sprint capacity](#sprint-capacity-widget)">Sprint capacity</a></li>
-<li><a href="#sprint-overview-widget" data-raw-source="[Sprint overview](#sprint-overview-widget)">Sprint overview</a> </li>
-<li><a href="#velocity-widget" data-raw-source="[Velocity](#velocity-widget)">Velocity</a> (Analytics) </li>
-<li><a href="#work-links-widget" data-raw-source="[Work links](#work-links-widget)">Work links</a></li>
-</ul>
-
-</td>
-<td width="28%">
-<strong>Repos</strong>
-<ul>
-<li><a href="#code-tile-widget" data-raw-source="[Code tile](#code-tile-widget)">Code tile</a></li>
-<li><a href="#pull-request-widget" data-raw-source="[Pull request](#pull-request-widget)">Pull request</a> </li>
-</ul>
-<br/>
-<strong>Pipelines</strong>
-<ul>
-<li><a href="#build-history-widget" data-raw-source="[Chart for build history](#build-history-widget)">Chart for build history</a></li>
-<li><a href="#deployment-status-widget" data-raw-source="[Deployment status](#deployment-status-widget)">Deployment status</a></li>
-<li><a href="#release-definition-widget" data-raw-source="[Release pipeline overview](#release-definition-widget)">Release pipeline overview</a></li>
-<li><a href="#test-trend-results-advanced" data-raw-source="[Test results trend (Advanced)](#test-trend-results-advanced)">Test results trend (Advanced)</a> (Analytics)</li>
-<li><a href="#requirements-quality-widget" data-raw-source="[Requirements quality](#requirements-quality-widget)">Requirements quality</a></li>
-</ul>
-</td>
-<td width="28%">
-<strong>Test Plans</strong>
-<li><a href="#chart-test-plan-widget" data-raw-source="[Chart for test plans](#chart-test-plan-widget)">Chart for test plans</a></li>
-</ul>
-<strong>Other</strong>
-<ul>
-<li><a href="#embedded-webpage-widget" data-raw-source="[Embedded web page](#embedded-webpage-widget)">Embedded web page</a></li>
-<li><a href="#markdown-widget" data-raw-source="[Markdown](#markdown-widget)">Markdown</a></li>
-<li><a href="#other-links-widget" data-raw-source="[Other links](#other-links-widget)">Other links</a> </li>
-<li><a href="#team-members-widget" data-raw-source="[Team members](#team-members-widget)">Team members</a> </li>
-<li><a href="#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](#visual-studio-widget)">Visual Studio Shortcuts</a></li>
-<li><a href="#how-to-widget" data-raw-source="[Welcome](#how-to-widget)">Welcome</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
-> [!NOTE]  
-> Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, work tracking Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-
-::: moniker-end
-
-
-::: moniker range="tfs-2018"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%"> 
-<strong>Work</strong>
-<ul>
-<li><a href="#assigned-to-me-widget" data-raw-source="[Assigned to me](#assigned-to-me-widget)">Assigned to me</a></li>
-<li><a href="#chart-wit-widget" data-raw-source="[Chart for work items](#chart-wit-widget)">Chart for work items</a></li>
-<li><a href="#new-work-item-widget" data-raw-source="[New Work item](#new-work-item-widget)">New Work item</a> </li>
-<li><a href="#query-results-widget" data-raw-source="[Query results](#query-results-widget)">Query results</a></li>
-<li><a href="#query-tile-widget" data-raw-source="[Query tile](#query-tile-widget)">Query tile</a></li>
-<li><a href="#sprint-burndown-widget" data-raw-source="[Sprint burndown](#sprint-burndown-widget)">Sprint burndown</a> </li>
-<li><a href="#sprint-capacity-widget" data-raw-source="[Sprint capacity](#sprint-capacity-widget)">Sprint capacity</a> </li>
-<li><a href="#sprint-overview-widget" data-raw-source="[Sprint overview](#sprint-overview-widget)">Sprint overview</a></li>
-<li><a href="#work-links-widget" data-raw-source="[Work links](#work-links-widget)">Work links</a></li>
-</ul>
-<strong>Code</strong>
-<ul>
-<li><a href="#code-tile-widget" data-raw-source="[Code tile](#code-tile-widget)">Code tile</a></li>
-</ul>
-</td>
-<td width="33%">
-<strong>Build & Release</strong>
-<ul>
-<li><a href="#pull-request-widget" data-raw-source="[Pull request](#pull-request-widget)">Pull request</a> </li>
-<li><a href="#build-history-widget" data-raw-source="[Chart for build history](#build-history-widget)">Chart for build history</a></li>
-<li><a href="#deployment-status-widget" data-raw-source="[Deployment status](#deployment-status-widget)">Deployment status</a></li>
-<li>Release pipeline overview</li>
-<li><a href="#requirements-quality-widget" data-raw-source="[Requirements quality](#requirements-quality-widget)">Requirements quality</a></li>
-</ul>
-<br/>
-<strong>Test</strong>
-<li><a href="#chart-test-plan-widget" data-raw-source="[Chart for test plans](#chart-test-plan-widget)">Chart for test plans</a></li>
-<li><a href="#test-results-widget" data-raw-source="[Test results trend](#test-results-widget)">Test results trend</a></li>
-<li>Test results trend (Advanced)</li>
-</ul>
-</td>
-<td width="34%">
-<strong>Other</strong>
-<ul>
-<li><a href="#embedded-webpage-widget" data-raw-source="[Embedded web page](#embedded-webpage-widget)">Embedded web page</a></li>
-<li><a href="#markdown-widget" data-raw-source="[Markdown](#markdown-widget)">Markdown</a></li>
-<li><a href="#other-links-widget" data-raw-source="[Other links](#other-links-widget)">Other links</a> </li>
-<li><a href="#team-members-widget" data-raw-source="[Team members](#team-members-widget)">Team members</a> </li>
-<li>Team room</li>
-<li><a href="#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](#visual-studio-widget)">Visual Studio Shortcuts</a></li>
-<li><a href="#how-to-widget" data-raw-source="[Welcome](#how-to-widget)">Welcome</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
-
-
-
-::: moniker range="tfs-2017"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%"> 
-<strong>Work</strong>
-<ul>
-<li><a href="#assigned-to-me-widget" data-raw-source="[Assigned to me](#assigned-to-me-widget)">Assigned to me</a> </li>
-<li><a href="#chart-wit-widget" data-raw-source="[Chart for work items](#chart-wit-widget)">Chart for work items</a></li>
-<li><a href="#new-work-item-widget" data-raw-source="[New Work item](#new-work-item-widget)">New Work item</a> </li>
-<li><a href="#query-results-widget" data-raw-source="[Query results](#query-results-widget)">Query results</a></li>
-<li><a href="#query-tile-widget" data-raw-source="[Query tile](#query-tile-widget)">Query tile</a></li>
-<li><a href="#sprint-burndown-widget" data-raw-source="[Sprint burndown](#sprint-burndown-widget)">Sprint burndown</a> </li>
-<li><a href="#sprint-capacity-widget" data-raw-source="[Sprint capacity](#sprint-capacity-widget)">Sprint capacity</a> </li>
-<li><a href="#sprint-overview-widget" data-raw-source="[Sprint overview](#sprint-overview-widget)">Sprint overview</a></li>
-<li><a href="#work-links-widget" data-raw-source="[Work links](#work-links-widget)">Work links</a></li>
-</ul>
-<strong>Code</strong>
-<ul>
-<li><a href="#code-tile-widget" data-raw-source="[Code tile](#code-tile-widget)">Code tile</a></li>
-</ul>
-</td>
-<td width="33%">
-<strong>Build &amp; Release</strong>
-<ul>
-<li><a href="#pull-request-widget" data-raw-source="[Pull request](#pull-request-widget)">Pull request</a> </li>
-<li><a href="#build-history-widget" data-raw-source="[Chart for build history](#build-history-widget)">Chart for build history</a></li>
-<li><a href="#deployment-status-widget" data-raw-source="[Deployment status](#deployment-status-widget)">Deployment status</a></li>
-<li><a href="#requirements-quality-widget" data-raw-source="[Requirements quality](#requirements-quality-widget)">Requirements quality</a></li>
-</ul>
-<br/>
-<strong>Test</strong>
-<ul>
-<li><a href="#chart-test-plan-widget" data-raw-source="[Chart for test plans](#chart-test-plan-widget)">Chart for test plans</a></li>
-<li><a href="#test-results-widget" data-raw-source="[Test results trend](#test-results-widget)">Test results trend</a></li>
-</ul>
-</td>
-<td width="34%">
-<strong>Other</strong>
-<ul>
-<li><a href="#embedded-webpage-widget" data-raw-source="[Embedded web page](#embedded-webpage-widget)">Embedded web page</a></li>
-<li><a href="#markdown-widget" data-raw-source="[Markdown](#markdown-widget)">Markdown</a></li>
-<li><a href="#other-links-widget" data-raw-source="[Other links](#other-links-widget)">Other links</a> </li>
-<li><a href="#team-members-widget" data-raw-source="[Team members](#team-members-widget)">Team members</a></li>
-<li><a href="#team-room-widget" data-raw-source="[Team room](#team-room-widget)">Team room</a></li>
-<li><a href="#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](#visual-studio-widget)">Visual Studio Shortcuts</a></li>
-<li><a href="#how-to-widget" data-raw-source="[Welcome](#how-to-widget)">Welcome</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
-
-
 ::: moniker range="tfs-2015"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%"> 
-<strong>Work</strong>
-<ul>
-<li><a href="#assigned-to-me-widget">Assigned to me</a> </li>
-<li><a href="#chart-wit-widget" data-raw-source="[Chart for work items](#chart-wit-widget)">Chart for work items</a></li>
-<li><a href="#new-work-item-widget" data-raw-source="[New Work item](#new-work-item-widget)">New Work item</a> </li>
-<li><a href="#query-results-widget" data-raw-source="[Query results](#query-results-widget)">Query results</a></li>
-<li><a href="#query-tile-widget" data-raw-source="[Query tile](#query-tile-widget)">Query tile</a></li>
-<li><a href="#sprint-burndown-widget" data-raw-source="[Sprint burndown](#sprint-burndown-widget)">Sprint burndown</a> </li>
-<li><a href="#sprint-capacity-widget" data-raw-source="[Sprint capacity](#sprint-capacity-widget)">Sprint capacity</a> </li>
-<li><a href="#sprint-overview-widget" data-raw-source="[Sprint overview](#sprint-overview-widget)">Sprint overview</a> </li>
-<li><a href="#work-links-widget" data-raw-source="[Work links](#work-links-widget)">Work links</a></li>
-</ul>
-</td>
-<td width="33%">
-<strong>Code</strong>
-<ul>
-<li><a href="#code-tile-widget" data-raw-source="[Code tile](#code-tile-widget)">Code tile</a></li>
-</ul>
-<br/>
-<strong>Build</strong>
-<ul>
-<li><a href="#pull-request-widget" data-raw-source="[Pull request](#pull-request-widget)">Pull request</a> </li>
-<li><a href="#build-history-widget" data-raw-source="[Chart for build history](#build-history-widget)">Chart for build history</a></li>
-</ul>
-<br/>
-</td>
-<td width="34%">
-<strong>Other</strong>
-<ul>
-<li><a href="#markdown-widget" data-raw-source="[Markdown](#markdown-widget)">Markdown</a></li>
-<li><a href="#other-links-widget" data-raw-source="[Other links](#other-links-widget)">Other links</a></li>
-<li><a href="#team-members-widget" data-raw-source="[Team members](#team-members-widget)">Team members</a> </li>
-<li><a href="#team-room-widget" data-raw-source="[Team room](#team-room-widget)">Team room</a> </li>
-<li><a href="#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](#visual-studio-widget)">Visual Studio Shortcuts</a></li>
-<li><a href="#how-to-widget" data-raw-source="[Welcome](#how-to-widget)">Welcome</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-
 > [!NOTE]   
 > Widgets and multiple dashboards are not supported features in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
-
-
 ::: moniker-end
 
 
@@ -350,265 +203,242 @@ To add a widget to a dashboard or copy a widget from one dashboard to another, s
 ## Azure Boards widgets 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 ## Work widgets 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
-<a id="assigned-to-me-widget"></a>
-### Assigned to me  
+   ::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="1":::
+      ### Assigned to me  
  
-![Assigned to me widget](media/widget-assigned-to-me.png)  
-
-Displays the list of work items currently assigned to the currently logged in user. The list ignores closed or deleted work items.
- 
-----
+      ![Assigned to me widget](media/widget-assigned-to-me.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="assigned-to-me-widget"></a>
+      Displays the list of work items currently assigned to the currently logged in user. The list ignores closed or deleted work items.
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
-
 ::: moniker range=">= azure-devops-2019"
-### Burndown chart 
-<a id="burndown-analytics-widget"></a>  
-	
-![Burndown chart widget](media/widget-burndown-chart.png)  
-  
-Adds a tile that displays a burndown chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
-
-----
-
-### Burnup chart  
+:::row:::
+   :::column span="1":::
+      ### Burndown chart  
+      ![Burndown chart widget](media/widget-burndown-chart.png)  
+   :::column-end:::
+   :::column span="1":::
+        <a id="burndown-analytics-widget"></a>  
+        Adds a tile that displays a burndown chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).
+   :::column-end:::
+:::row-end:::  
+::: moniker-end
+:::row:::
+   :::column span="1":::
+      ### Burnup chart  
 <a id="burnup-analytics-widget"></a> 	
 
-![Burnup chart widget](media/widget-burnup-chart.png)    
+      ![Burnup chart widget](media/widget-burnup-chart.png)  
+   :::column-end:::
+   :::column span="1":::
+          
 
-Adds a tile that displays a burnup chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
-
-----
+Adds a tile that displays a burnup chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burnup, sprint burnup, or any burnup that spans teams and sprints. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).
+   :::column-end:::
+:::row-end:::  
 ::: moniker-end
-
-### Chart for work items  
+:::row:::
+   :::column span="1":::
+      ### Chart for work items  
 
 <a id="chart-wit-widget"></a> 
 	
-![Chart work item query widget](media/widget-chart-work-query.png)  
+      ![Chart work item query widget](media/widget-chart-work-query.png)  
+   :::column-end:::
+   :::column span="1":::
+        
 
 Adds a tile to display a progress or trend chart that builds off a shared work item query.  
 From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget).   
 
 
 ::: moniker range="tfs-2015"
-Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.    
+Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.
+   :::column-end:::
+:::row-end:::  
 ::: moniker-end
-
-----
-
 
 ::: moniker range=">= azure-devops-2019"
-<a id="cfd-widget"></a> 
+:::row:::
+   :::column span="1":::
+      ### Cumulative flow diagram   
 
-### Cumulative flow diagram   
-
-![Cumulative flow diagram widget](media/widget-cfd-chart.png)  
-
-Displays the cumulative flow of backlog items based on the time frame, team, backlog level and swimlane you select. 
-
-From the configuration dialog, [specify the team, backlog level, and other parameters you want](cumulative-flow.md#configure-widget).
-
-Hover over each color within the chart to see the count of items for a particular Kanban column. 
-
-----
-
-<a id="cycle-time-widget"></a> 
-### Cycle time  
-
-![Cycle time widget](media/widget-cycle-time.png)  
-
-Displays the cycle time of work items closed in a specified timeframe for a single team and backlog level. The cycle time of a work item is defined as the time taken to close a work item after work on it has started. 
-
-Each marker on the chart corresponds to one or more work items with a particular cycle time. The lower the cycle time, the faster work is progressing through your development pipeline. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md). 
-
-----
-
-<a id="lead-time-widget"></a> 
-### Lead time  
-
-![Lead time widget](media/widget-lead-time.png)   
- 
-Displays the lead time of work items closed in a specified timeframe for a single team and backlog level. The lead time of a work item is defined as the time taken to close a work item after it was created.
-
-Each marker on the chart corresponds to one or more work items with a particular lead time. The lower the lead time, the faster work is being delivered to the customer.
-
-To learn more, see [Lead time and cycle time control charts](cycle-time-and-lead-time.md). 
-  
-----
-
+      ![Cumulative flow diagram widget](media/widget-cfd-chart.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="cfd-widget"></a>   
+      Displays the cumulative flow of backlog items based on the time frame, team, backlog level and swimlane you select. From the configuration dialog, [specify the team, backlog level, and other parameters you want](cumulative-flow.md#configure-widget).
+      Hover over each color within the chart to see the count of items for a particular Kanban column.
+   :::column-end:::
+:::row-end:::  
 ::: moniker-end
-
-
-<a id="new-work-item-widget"></a>
-### New Work item
-	
-![New work item widget](media/widget-new-work-items.png)
-
-Enables you to add work items from the dashboard. You [use work items to plan and track work](../../boards/backlogs/add-work-items.md).  <br/><br/>
-
-Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration. To change team defaults, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
-
-::: moniker range="tfs-2015"
-Requires TFS 2015.1 or later version.    
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="1":::
+      ### Cycle time  
+      ![Cycle time widget](media/widget-cycle-time.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="cycle-time-widget"></a>   
+      Displays the cycle time of work items closed in a specified timeframe for a single team and backlog level. The cycle time of a work item is defined as the time taken to close a work item after work on it has started.  
+      Each marker on the chart corresponds to one or more work items with a particular cycle time. The lower the cycle time, the faster work is progressing through your development pipeline. To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md). 
+   :::column-end:::
+:::row-end:::  
 ::: moniker-end
+::: moniker range=">= azure-devops-2019"
 
+:::row:::
+   :::column span="1":::
+      ### Lead time  
 
-----
+      ![Lead time widget](media/widget-lead-time.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="lead-time-widget"></a>    
+      Displays the lead time of work items closed in a specified timeframe for a single team and backlog level. The lead time of a work item is defined as the time taken to close a work item after it was created.
 
-<a id="other-links-widget"></a> 
-### Other links 
-
-![Other links widget](media/widget-other-links.png)  
-
-Provides links to the following features: 
-- Opens a form to initiate a [request to provide feedback](../../project/feedback/get-feedback.md?toc=%252fazure%252fdevops%252fproject%252ffeedback%252ftoc.json).
-- Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md).
-- Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-area-paths.md).
-
-::: moniker range=">= tfs-2015 <= tfs-2018"
-The following links are displayed when the corresponding resource is configured for the project: 
-
-![Other links widget, TFS-2018 and earlier versions.](media/widget-other-links-tfs.png)  
-
-- [View project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal) (opens either a SharePoint site or URL that's been configured as the project's portal.  
-- [View process guidance](../../project/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance.  
-- [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md). 
-
+      Each marker on the chart corresponds to one or more work items with a particular lead time. The lower the lead time, the faster work is being delivered to the customer. To learn more, see [Lead time and cycle time control charts](cycle-time-and-lead-time.md). 
+   :::column-end:::
+:::row-end:::  
 ::: moniker-end
-
-----
-
-
-<a id="query-results-widget"></a> 
-### Query results 
-	
-![Query results widget](media/widget-query-results.png)
-
-Adds a configurable tile that lists the results of a shared query. 
-From the configuration dialog, select either a team favorite or shared query.  
-To create a shared query, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md). 
-
-----
-
-
-<a id="query-tile-widget"></a> 
-### Query tile 
-
-![Query tile widget](media/widget-query-tile.png)
-
-Adds a configurable tile to display the summary of a shared query results.
-From the configuration dialog, select either a team favorite or shared query. You can optionally specify rules to change the query tile color based on the number of work items returned by the query. 
-To create a shared query, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md). 
-  
-----
-
+:::row:::
+   :::column span="1":::
+      ### New Work item
+      ![New work item widget](media/widget-new-work-items.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="new-work-item-widget"></a>
+      Enables you to add work items from the dashboard. You [use work items to plan and track work](../../boards/backlogs/add-work-items.md).  
+      Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration. To change team defaults, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
+      ::: moniker range="tfs-2015"
+      Requires TFS 2015.1 or later version. 
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      ### Query results 
+      ![Query results widget](media/widget-query-results.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="query-results-widget"></a> 
+      Adds a configurable tile that lists the results of a shared query. 
+      From the configuration dialog, select either a team favorite or shared query.  
+      To create a shared query, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md).
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      ### Query tile 
+      ![Query tile widget](media/widget-query-tile.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="query-tile-widget"></a> 
+      Adds a configurable tile to display the summary of a shared query results.
+      From the configuration dialog, select either a team favorite or shared query. You can optionally specify rules to change the query tile color based on the number of work items returned by the query. 
+      To create a shared query, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md). 
+   :::column-end:::
+:::row-end:::  
 ::: moniker range=">= azure-devops-2020"
-
-<a id="sprint-burndown-analytics-widget"></a>
-
-### Sprint burndown (Analytics)  
-
-![Sprint burndown widget](media/widget-sprint-burndown-analytics.png)
-
-Adds a team's burndown chart for a sprint to the dashboard. This widget is based on Analytics data. You have several configuration options for this widget, including selecting a team, iteration, and time period. Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
-
-----
-
-<a id="sprint-burndown-widget"></a>
-
-<a id="burndown-widget"></a> 
-
-### Sprint burndown (Legacy) 
-
-![Sprint burndown widget, legacy versions.](media/widget-sprint-burndown-legacy.png)
-
-Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint. Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
-
+:::row:::
+   :::column span="1":::
+      ### Sprint burndown (Analytics)  
+      ![Sprint burndown widget](media/widget-sprint-burndown-analytics.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="sprint-burndown-analytics-widget"></a>
+      Adds a team's burndown chart for a sprint to the dashboard. This widget is based on Analytics data. You have several configuration options for this widget, including selecting a team, iteration, and time period. Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
+:::row:::
+   :::column span="1":::
+      ### Sprint burndown (Legacy) 
 
-::: moniker range=">= tfs-2015 < azure-devops-2020"
+      ![Sprint burndown widget, legacy versions.](media/widget-sprint-burndown-legacy.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="burndown-widget"></a>  
+      Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint. Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
+   :::column-end:::
+:::row-end::: 
+:::row:::
+   :::column span="1":::
+      ### Sprint burndown 
 
+     ![Sprint burndown widget, Azure DevOps Server 2019 and earlier versions.](media/widget-sprint-burndown.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="sprint-burndown-widget"></a>
+      Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint.
+      Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      ### Sprint capacity 
 
-<a id="sprint-burndown-widget"></a>
+      ![Sprint capacity widget](media/widget-sprint-capacity.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="sprint-capacity-widget"></a> 
+      Inserts the team's capacity bar chart for the current sprint. 
+      To plan and monitor their sprint resources, team set capacity and update Remaining Work throughout the sprint. See [Set capacity](../../boards/sprints/set-capacity.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      ### Sprint overview 
 
-<a id="burndown-widget"></a> 
-
-### Sprint burndown 
-
-![Sprint burndown widget, Azure DevOps Server 2019 and earlier versions.](media/widget-sprint-burndown.png)
-
-Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint.
-Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
-
-::: moniker-end
-
-----
-
-
-
-<a id="sprint-capacity-widget"></a> 
-
-### Sprint capacity 
-
-![Sprint capacity widget](media/widget-sprint-capacity.png)
-
-Inserts the team's capacity bar chart for the current sprint. 
-To plan and monitor their sprint resources, team set capacity and update Remaining Work throughout the sprint. See [Set capacity](../../boards/sprints/set-capacity.md).  
-
-----
-
-
-<a id="sprint-overview-widget"></a> 
-### Sprint overview 
-
-![Sprint overview widget](media/widget-sprint-overview.png)
-
- 
-::: moniker range=">= tfs-2017"
-
-Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assigning backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
-::: moniker-end
-
-::: moniker range=" tfs-2015"
-
-Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assign backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
-::: moniker-end
-
-----
-
-
+      ![Sprint overview widget](media/widget-sprint-overview.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="sprint-overview-widget"></a> 
+      ::: moniker range=">= tfs-2017"
+      Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assigning backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
+      ::: moniker-end
+      ::: moniker range=" tfs-2015"
+      Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assign backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
 ::: moniker range=">= azure-devops-2019"
-<a id="velocity-widget"></a> 
-
-### Velocity   
-
-![Sprint velocity widget](media/widget-velocity.png)
-
-The velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of Analytics data. You can track the velocity for a single team, not multiple teams.  
-
-For additional guidance, see [Velocity](team-velocity.md). 
-
-----
-
+:::row:::
+   :::column span="1":::
+      ### Velocity   
+      
+     ![Sprint velocity widget](media/widget-velocity.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="velocity-widget"></a> 
+     The Velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of Analytics data. You can track the velocity for a single team, not multiple teams. For additional guidance, see [Velocity](team-velocity.md).
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
+:::row:::
+   :::column span="1":::
+      ### Work links 
 
-<a id="work-links-widget"></a> 
-### Work links 
-
-![Work links widget](media/widget-work-links.png)  
-Provides quick access to open the following Agile tools and team resources:
-
-- [Backlog](../../boards/backlogs/create-your-backlog.md)  
-- [Kanban board](../../boards/boards/kanban-basics.md)  
-- [Task board](../../boards/sprints/task-board.md)  
-- [Queries](../../boards/queries/using-queries.md)  
-
-----
+     ![Work links widget](media/widget-work-links.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="work-links-widget"></a> 
+      Provides quick access to open the following Agile tools and team resources:  
+      - [Backlog](../../boards/backlogs/create-your-backlog.md)  
+      - [Kanban board](../../boards/boards/kanban-basics.md)  
+      - [Task board](../../boards/sprints/task-board.md)  
+      - [Queries](../../boards/queries/using-queries.md)
+   :::column-end:::
+:::row-end:::
 
 
 
@@ -662,7 +492,7 @@ Requires TFS 2015.2 or later version.
 
 
 <a id="build-history-widget"></a> 
-### Chart for build history  
+### Build history  
 
 ![Build history widget](media/widget-build-history-chart.png)   
 
@@ -824,7 +654,42 @@ Adds a configurable tile to display any type of information, guidance, or links 
 Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.   
 ::: moniker-end
 
----- 
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="1":::
+      ### Other links 
+
+      ![Other links widget](media/widget-other-links.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="other-links-widget"></a>   
+      Provides links to the following features: 
+      - Opens a form to initiate a [request to provide feedback](../../project/feedback/get-feedback.md?toc=%252fazure%252fdevops%252fproject%252ffeedback%252ftoc.json).
+      - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md).
+      - Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-area-paths.md).
+   :::column-end:::
+:::row-end:::  
+::: moniker-end
+::: moniker range="< azure-devops-2019"
+:::row:::
+   :::column span="1":::
+      ### Other links 
+
+      ![Other links widget](media/widget-other-links.png)  
+   :::column-end:::
+   :::column span="1":::
+      <a id="other-links-widget-2018"></a>   
+ 
+      The following links are displayed when the corresponding resource is configured for the project: 
+
+      ![Other links widget, TFS-2018 and earlier versions.](media/widget-other-links-tfs.png)  
+
+      - [View project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal) (opens either a SharePoint site or URL that's been configured as the project's portal.  
+      - [View process guidance](../../project/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance.  
+      - [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).
+   :::column-end:::
+:::row-end:::  
+::: moniker-end
 
 
 <a name="team-members-widget"></a> 
