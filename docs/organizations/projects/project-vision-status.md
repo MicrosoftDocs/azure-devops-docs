@@ -81,7 +81,7 @@ Use this page to perform one or more of the following tasks.
 
 ::: moniker range=">= tfs-2018" 
 > [!NOTE]   
-> If you want to use a project wiki for your project Summary information, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
+> If you want to use a project wiki for your project Summary information, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#update).
 ::: moniker-end
   
 
@@ -145,6 +145,8 @@ To define a README file for your project, see [Initialize a README file for your
 
  
 ::: moniker range=">= tfs-2018"
+
+<a id="update" />
 
 ## Update the page
 
