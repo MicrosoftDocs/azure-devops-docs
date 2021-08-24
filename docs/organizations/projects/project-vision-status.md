@@ -39,11 +39,6 @@ If you want to use a project wiki, then first [create a Wiki for your project](.
 From the project home page, share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file.
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
-> [!NOTE]
-> The features and functions available from your project page depend on the source control, Git, or Team Foundation Version Control (TFVC) that you selected when you [created your team project](../../organizations/projects/create-project.md).  
-::: moniker-end
-
 ## Prerequisites
 
 - You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
@@ -216,7 +211,7 @@ You can share your project and objective, as well as ways for team members to co
 
 ::: moniker-end
 
-::: moniker range="tfs-2018 || azure-devops"
+::: moniker range="tfs-2018"
 
 1. Open the Project home page.
 
@@ -236,7 +231,7 @@ You can share your project and objective, as well as ways for team members to co
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2017"  
+::: moniker range="<= tfs-2017"  
 
 1. You can start editing directly from the Welcome page.
 
@@ -298,7 +293,7 @@ For projects that selected TFVC for version control, the README.md file needs to
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
+::: moniker range="< azure-devops-2019"
 
 1. Open the Project home page.
 
@@ -331,7 +326,7 @@ To add users to the project, select :::image type="icon" source="media/share-pro
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="< azure-devops-2019"
 
 To add users to the project, choose the **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
@@ -366,7 +361,7 @@ You can change the repository used to support your project vision, including poi
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
+::: moniker range="< azure-devops-2019"
 
 1. From your project home page, choose **Change**.
 
@@ -407,7 +402,7 @@ You can change the repository used to support your project vision, including poi
  
 ### Git repository
 
-<img src="media/project-home-page-get-started-info.png" alt="Git new project" />
+ 
 > [!div class="mx-imgBorder"]  
 > ![Git new project summary page](media/share-project/git-start-page-readme.png)
 
