@@ -109,28 +109,17 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
 
 #### [NuGet](#tab/nuget/)
 
-1. Go to your feed [or create a feed if you haven't](../get-started-nuget.md?tabs=new-nav#create-a-feed). 
+1. Select **Artifacts**, and then select your feed. 
 
-2. Select **Connect to feed**:
+1. Select **Connect to feed**, and then choose **NuGet.exe**.
 
-   > [!div class="mx-imgBorder"] 
-   >![Connect to feed button on the upper right of the page](../media/connect-to-feed-nuget-exe-config-azure-devops-newnav.png)
-   >
+    :::image type="content" source="../media/nuget-connect-to-feed.png" alt-text="Screenshot showing how to connect to NuGet feeds.":::
 
-3. Select the **NuGet.exe** tab under the **NuGet** header 
+1. Copy the XML snippet in the **Project Setup** section.
 
-> [!NOTE]
-> If you don't have **NuGet** or the **credential provider** installed, select **Get the tools** in the top right and follow steps **1**  and **2** to get the tools to continue.
+1. Create a new file named *nuget.config* in the root of your project.
 
-4. Copy the XML snippet under **Project Setup** to your clipboard.
-
-   > [!div class="mx-imgBorder"] 
-   >![Copy the XML snippet under Project Setup to your clipboard.](../media/connect-to-feed-azure-devops-newnav.png)
-   >
-
-5. Create a new file named `nuget.config` in the root of your project.
-
-6. Paste the XML snippet from your clipboard to your `nuget.config` file.
+6. Paste the XML snippet to your config file.
  
 * * *
 
