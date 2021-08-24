@@ -1,25 +1,26 @@
 ---
-title: Keep your OSS packages safe with upstream sources | Azure Artifacts
-description: Use upstream sources in Azure Artifacts to keep your OSS packages safe from failing dependencies.
+title: How to use upstream sources in you Azure Artifacts feed
+description: Use upstream sources in Azure Artifacts to consume packages from public registries
 ms.technology: devops-artifacts
 ms.reviewer: amullans
-ms.date: 03/09/2020
+ms.date: 08/24/2021
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
-# Protect your open-source software packages with upstream sources
+# Tutorial: How to use upstream sources
 
-Upstream sources enable you to manage your product's OSS dependencies in a single feed. Using upstream sources makes it easy to use your favorite OSS packages, and can also give you additional protection against outages and corrupted or compromised packages. You can also publish private dependencies in the same feed that manages your OSS dependencies. Read all about [upstream sources and their benefits](../concepts/upstream-sources.md).
+Upstream sources enable you to manage your application dependencies from a single feed. Using upstream sources makes it easy to consume packages from public registries while having protection against outages or compromised packages. You can also publish your own packages to the same feed and manage all your dependencies in one location.
 
-This tutorial covers how to upgrade an existing project that uses OSS packages from public registries like nuget.org, npmjs.com, etc. to instead get those dependencies from an Azure Artifacts feed with upstream sources.
+This tutorial will walk you though how to enable upstream sources on your feed and consume packages from public registries such as NuGet.org or npmjs.com.
 
 In this tutorial, you will:
 
 >[!div class="checklist"]  
-> * Create a new feed using upstream sources
-> * Replace the public registry in your configuration files
-> * Run an initial package restore to populate your feed
-> * Check your feed to see the saved copy of everything you used from the public registry
+> * Create a new feed and enable upstream sources.
+> * Set up your configuration file.
+> * Run an initial package restore to populate your feed.
+> * Check your feed to view the saved copy of the packages you consumed from the public registry.
 
 ## Create a feed with upstream sources enabled
 
