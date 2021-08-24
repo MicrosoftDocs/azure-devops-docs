@@ -461,7 +461,7 @@ As a member of the Project Administrators group, you can add members to a projec
 ::: moniker-end
 ::: moniker range="tfs-2018"
 To add users to the project, choose the **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).  
-:::image type="content" source="media/summary/invite-members-tfs-2018.png" alt-text="Screenshot of Summary page, Add members button.":::
+:::image type="content" source="../projects/media/summary/invite-members-tfs-2018.png" alt-text="Screenshot of Summary page, Add members button.":::
 ::: moniker-end
 ::: moniker range=">= tfs-2018"
 2. For new users, enter their email address. For existing users, type their name until it resolves as a known name to the system. You can add several email addresses or account names by separating them with a semicolon (;). 
