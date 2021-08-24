@@ -114,7 +114,7 @@ Use this page to perform one or more of the following tasks.
 ::: moniker range=">= azure-devops-2019"
 ## Open project Summary
 
-From your web browser, choose **Overview*>Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
+From your web browser, choose **Overview>Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
 
 If you haven't set up your project summary yet, you'll see this welcome page:
 
@@ -163,7 +163,7 @@ The **Summary** page displays either the **README** file defined in a project re
 
 	:::image type="content" source="media/summary/about-this-project-dialog.png" alt-text="About this project dialog.":::
 
-1. Optionally add one or more **Tags** for your project. These tags are similar to [work item tags](../../boards/queries/add-tags-to-work-items.md). You can add several tags at a time by using the comma or semi-colon delimiters. Tags must conform to the following rules:  
+1. Optionally add one or more **Tags** for your project. These tags are similar to [work item tags](../../boards/queries/add-tags-to-work-items.md). You can add several tags at a time by using the comma or semicolon delimiters. Tags must conform to the following rules:  
 	- Tags must be 40 characters or less
 	- Tags can;t contain the forward slash (/) character or end with hyphen character (-)
 	- No more than 15 tags can be added to a project  
@@ -194,9 +194,7 @@ The **Summary** page displays either the **README** file defined in a project re
 	- Links to templates to file a bug, issue, or request 
 	- Links to distribution lists to email a question or post a question on Slack or Teams channel. 
 ::: moniker-end
-
-
-
+ 
 
 ## Invite people to contribute to your project 
 
@@ -223,8 +221,7 @@ To add users to the project, choose the **Add** button. To learn more, see [Add 
 
 ## View project activity  
 
-From the **Project stats** section, you can view updates made to the project in the last 1, 7, and 30 days. Choose the view option as shown in the following image. 
-::: moniker-end
+From the **Project stats** or **Activity** section, you can view updates made to the project in the last 1, 7, or 30 days. Choose the view option as shown in the following image. 
 
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/summary/project-stats.png" alt-text="Screenshot of Summary page, Stats section.":::
