@@ -1,7 +1,7 @@
 ---
-title: Share your project vision & view project activity
+title: Project Summary, vision, & view project activity
 titleSuffix: Azure DevOps 
-description: View or update your project home page to share project vision, objectives, and activity for Azure DevOps
+description: View or update your project Summary to share project vision, objectives, and activity for Azure DevOps
 ms.topic: quickstart
 ms.technology: devops-collab
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
@@ -15,13 +15,27 @@ ms.date: 03/26/2019
 
 [!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
+Each project provides a **Summary** page to support your teams to understand the purpose of your project. Use this page to support the following tasks:
+
+- Share your project vision 
+- View the latest project activity 
+- Provide links for details on how to contribute 
+- Indicate who project members should contact to elevate permissions, access, or other requests 
+- Invite people to contribute to your project 
+
+> [!NOTE]   
+> Hosted projects can be designated as **Private** or **Public**. For public projects, anonymous users can view the project **Summary**, except for the **Members** section. Also the **Like** and **Favorite** icons aren't visible to anonymous users. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md)
+
+:::image type="content" source="media/summary/project-summary-page-intro.png" alt-text="Screenshot of summary page.":::
+
+
 ::: moniker range=">= azure-devops-2019"
 Learn how to share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
 
 If you want to use a project wiki, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
 ::: moniker-end
 
-::: moniker range="tfs-2015"
+::: moniker range="< azure-devops-2019"
 From the project home page, share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file.
 ::: moniker-end
 
@@ -37,12 +51,17 @@ From the project home page, share your project with your team, add project membe
   - Change the repository that you use to share your project mission
   - Manage project membership
 - To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
-- To view the project page, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-permissions.md#validusers).
+- To view the project **Summary**, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-permissions.md#validusers).
+- To add or edit project **Tags**, you must have the project-level **Manage properties** permission set to **Allow**. This permission controls the project properties REST API. The project properties REST API is used to drive the project tags experience in the product.  
+ 
+> [!TIP]    
+> If you don't have permissions to edit a page or use a feature, the corresponding icons and links aren't visible. 
+
 
 ## Open project summary
 
 ::: moniker range=">= azure-devops-2019"
-From your web browser, choose **Overview** > **Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
+From your web browser, choose **Overview*>Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
 
 If you haven't set up your project summary yet, you'll see this welcome page:
 
@@ -58,10 +77,9 @@ Select one of the following tasks to get started:
 - **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
 - [Manage your services](../../organizations/settings/set-services.md) to disable the visibility of one or more services.
 
-To support your project mission, choose a README file that you maintain in a project repository, or the [project Wiki](../../project/wiki/wiki-create-repo.md). To choose between a README file or a Wiki, see [Change the repository](#change-repo). To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or [Initialize a README file for your TFVC repo](#initialize-tfvc).
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
+::: moniker range="< azure-devops-2019"
 From your web browser, open the team project drop down menu and select the home page. If you don't have a  project, [create a team project](../../organizations/projects/create-project.md).
 
 ![Open Project Summary ](media/share-project/project-vision-status-project-home-page.png)
@@ -71,11 +89,96 @@ To define a README file for your project, see [Initialize a README file for your
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
-
 > [!NOTE]
 > The project page described in this section is available for TFS 2017.1 and later versions. It replaces the Welcome page used in TFS 2015 and TFS 2017.
-
 ::: moniker-end
+
+
+## Update the project description and home page
+
+The **Summary** page displays either the **README** file defined in a project repository or the home page of a project wiki. If you want to use the project wiki home page, first set that up as described in [Create a Wiki for your project](../../project/wiki/wiki-create-repo.md).
+
+1. To edit the **Summary** page:
+
+	- If it is the first time editing the page, choose Add Project Description.  
+	:::image type="content" source="media/summary/add-project-description.png" alt-text="Screenshot of summary page, first time editing.":::
+
+	- If editing the page after it's been set up, choose the :::image type="icon" source="../../media/icons/edit.png" border="false"::: **Edit project information**. This icon is only visible to members with permissions to edit the project **Summary** page.
+ 
+1. Provide a brief description of the project purpose in the **Description** box.  
+
+	:::image type="content" source="media/summary/about-this-project-dialog.png" alt-text="About this project dialog.":::
+
+1. Optionally add one or more **Tags** for your project. These tags are similar to [work item tags](../../boards/queries/add-tags-to-work-items.md). You can add several tags at a time by using the comma or semi-colon delimiters. Tags must conform to the following rules: 
+
+
+- Tags must be 40 characters or less
+- Tags can;t contain the forward slash (/) character or end with hyphen character (-)
+- No more than 15 tags can be added to a project  
+- Tags are case-insensitive and no duplicate tags or empty tags are allowed.
+
+	> [!NOTE]   
+	> The search and filter functions can't be used to search or filter on project tags. 
+
+1. Choose whether to reference a **README** file or the project wiki home page for the rest of the Summary page contents.  
+
+	> [!TIP] 
+	> A default README is created within the repository added when you created your project. You can choose this README or create another repository and README file for this purpose. 
+
+	If choosing a **Readme file**, select the repository for the README. A preview of the current text for the README file is shown. 
+
+	:::image type="content" source="media/summary/select-readme-repository.png" alt-text="About this project dialog, choose and select README repository.":::
+
+	If choosing **Wiki**, note that the Wiki home page is referenced and must be the first file within the Wiki TOC. You can't change that reference.  
+
+1. To update the contents of the referenced README file or wiki, edit the corresponding file. For more information, see [Create a README for your repo](../../repos/git/create-a-readme.md) or [Add and edit wiki pages](../../project/wiki/add-edit-wiki.md). 
+ 
+	Suggested information to provide in your **Summary** page include the following:
+	- Ways in which users can contribute to your project 
+	- Who to contact to elevate your permissions or add extensions  
+	- Roadmap information 
+	- Links to instructions for setting up their development environment 
+	- Links to instructions for collaborating on code, tracking work, building pipelines, deploying releases 
+	- Link to a template to file a bug, issue, or request 
+	- Link to a distribution list to email a question or a Slack or Teams channel. 
+ 
+
+## Invite people to contribute to your project 
+
+You can send an email to invite users to contribute to your project by choosing **Invite**. To learn more, see [Add users or groups to a team or project, Invite users from the Summary page](../security/add-users-team-project.md#invite-users-from-the-summary-page).
+
+:::image type="content" source="../security/media/add-users/summary-invite-users.png" alt-text="Screenshot of Summary page, Invite button.":::
+
+
+
+## Review project statistics  
+
+From the **Project stats** section, you can view updates made to the project in the last 1, 7, and 30 days. Choose the view option as shown in the following image. 
+
+:::image type="content" source="media/summary/project-stats.png" alt-text="Screenshot of Summary page, Stats section.":::
+
+## Email or chat with a project member 
+
+From the **Members** section, you can see how many members have been added to the project, and connect via email or chat with a member. 
+
+:::image type="content" source="media/summary/project-stats.png" alt-text="Screenshot of Summary page, Members section.":::
+
+> [!NOTE]   
+> 100+ indicates that 100 or more members have been added to the project. 
+
+To email or initiate a chat session, choose the team member shown and select your option. 
+
+:::image type="content" source="media/summary/connect-with-team-member.png" alt-text="Screenshot of Summary page, Members section, options available to connect to a team member.":::
+
+
+
+## Initiate a project search  
+
+From the **Summary** page, you can initiate a search of your code, work items, and wiki. To learn more, see [Get started with search](../../project/search/get-started-search.md). 
+
+:::image type="content" source="media/summary/project-search.png" alt-text="Screenshot of Summary page, search box.":::
+
+
 
 <a id="initialize-git"> </a>
 
@@ -287,7 +390,21 @@ You can change the repository used to support your project vision, including poi
 > [Create a wiki for your team project](../../project/wiki/wiki-create-repo.md)
 
 
-<!---
+
+## Related articles
+
+- [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
+- [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
+- [Web portal navigation](../../project/navigation/index.md)
+- [What do I get with a project?](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+ 
+ 
+**REST APIs**
+
+- [Projects - Get Project Properties](/rest/api/azure/devops/core/projects/get-project-properties)
+- [Projects - Set Project Properties](/rest/api/azure/devops/core/projects/set-project-properties)
+
+ 
 ### Git repository
 
 <img src="media/project-home-page-get-started-info.png" alt="Git new project" />
@@ -303,5 +420,4 @@ Use this page to leverage all the built-in DevOps functionality of Azure DevOps 
 > |Git repository   |TFVC repository   |  
 > |-------------|----------|
 > |- Clone your project to your client computer<br/>- Push an existing repository from the command line<br/>- Import a repository<br/>- Initialize a README or gitignore<br/>- Setup a build from an external repository<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity) |- Setup a build<br/>- Add a README for your project<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity) |
-
--->
+ 
