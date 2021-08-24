@@ -44,7 +44,7 @@ In this tutorial, you will:
 
 1. Select **Create Feed** to create a new feed.
 
-    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button."::
+    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button.":::
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ In this tutorial, you will:
 
 1. Select **New Feed** to create a new feed.
 
-    :::image type="content" source="../media/new-feed-button.png" alt-text="Screenshot showing the create feed button - TFS."::
+    :::image type="content" source="../media/new-feed-button.png" alt-text="Screenshot showing the create feed button - TFS.":::
 
 ::: moniker-end
 
@@ -60,56 +60,52 @@ In this tutorial, you will:
 
 ::: moniker range=">= azure-devops-2019"
 
-    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window."::
+    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window.":::
 
 ::: moniker-end
 
 ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window - TFS."::
+    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window - TFS.":::
 
 ::: moniker-end
 
-## Replace the public registry in configuration files with the Azure Artifacts feed
+## Setup the configuration file
 
-The next step is to update your configuration file to point to the new Azure Artifacts feed instead of the public registry. There are two steps to achieve this:
+Now that we created our feed, we need to update the config file to point to our feed. To do this we must:
 
-1. Get your feed's URL
-2. Update the configuration file with the feed URL
+1. Get the source's URL
+1. Update the configuration file
 
 #### [npm](#tab/npm/)
+
 ::: moniker range=">= azure-devops-2019"
 
-1. From your **Packages** page, click _Connect to Feed_
+1. Select **Artifacts**, and then select **Connect to feed**.
 
-   > [!div class="mx-imgBorder"] 
-   >![Connect to feed button in Azure Artifacts](../media/connect-to-feed-azure-devops-newnav.png)
+    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
 
-2. Select the **npm** tab under the **npm** header
+1. On the left side of the page, select the **npm** tab.
 
-> [!NOTE]
-> If you don't have **npm** or the **artifacts-credhelper** installed, select **Get the tools** in the top right and follow steps **1** and **2** to get the tools to continue.
+1. Follow the instructions in the **Project setup** section to set up your config file.
 
-3. Follow the instructions under **Project setup** :
-
-   > [!div class="mx-imgBorder"] 
-   >![Connect to feed from Azure Artifacts](../media/connect-to-feed-npm-registry-azure-devops-newnav.png)
+    :::image type="content" source="../media/connect-to-feed-npm-registry-azure-devops-newnav.png" alt-text="Screenshot showing how to set up your project.":::
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-1. From your **Packages** page, click _Connect to Feed_
+1. Select **Build & Release** > **Packages**, and then select **Connect to Feed**.
 
-    ![Connect to feed button in Azure Artifacts](../media/connect-to-feed.png)
+    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed - TFS":::
 
-2. Copy the "registry" text:
+1. Copy the highlighted snippet to add it to your config file.
 
-    ![Connect to feed from Azure Artifacts](../media/connect-to-feed-npm-registry.png)
+    :::image type="content" source="../media/connect-to-feed-npm-registry.png" alt-text="Screenshot highlighting the snippet to be added to the config file - TFS":::
 
 ::: moniker-end
 
-After you've got the feed URL, create a new text file named `.npmrc` in the root of your project (in the same folder as your `package.json` file). Open your new `.npmrc` file and paste the text that you copied in step 2 above.
+If you don't have a *.npmrc* file already, create a new one in the root of your project (in the same folder as your *package.json*). Open your new *.npmrc* file and paste the snippet you just copied in the previous step.
 
 #### [NuGet](#tab/nuget/)
 
