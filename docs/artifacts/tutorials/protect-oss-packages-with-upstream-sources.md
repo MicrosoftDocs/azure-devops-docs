@@ -56,15 +56,17 @@ In this tutorial, you will:
 
 ::: moniker-end
 
-1. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
-
 ::: moniker range=">= azure-devops-2019"
+
+1. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
 
     :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window.":::
 
 ::: moniker-end
 
 ::: moniker range=">=tfs-2017 < azure-devops-2019"
+
+1. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
 
     :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window - TFS.":::
 
@@ -119,44 +121,43 @@ If you don't have a *.npmrc* file already, create a new one in the root of your 
 
 1. Create a new file named *nuget.config* in the root of your project.
 
-6. Paste the XML snippet to your config file.
+1. Paste the XML snippet in your config file.
  
 * * *
 
-## Run an initial package restore to populate your feed
+## Restore packages
 
-Now that you have upstream packages set up, you'll need to run an initial package restore to populate your new feed with the upstream packages.
+Now that you enabled upstream sources and set up your configuration file, we can run the package restore command to query the upstream source and retrieve the upstream packages.
 
-The basic steps are to clear your local package cache and then do a clean install of all the packages used by the project so that Azure Artifacts can save them from the upstream source. 
+We recommend clearing your local cache first before running the nuget restore. Azure Artifacts will have a saved copy of any packages you installed from upstream. 
 
 # [npm](#tab/npm)
 
-Remove the `node_modules` folder in your project (find out more about the [node_modules folder](https://docs.npmjs.com/files/folders.html#node-modules)), and rerun:
+Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
 
-```
+```Command
 npm install --force
 ```
 
-> The `-force` option is to ensure the cache is bypassed. 
+> [!NOTE]
+> The `--force` argument will force pull remotes even if a local copy exists. 
+
+Your feed now should contain any packages you saved from the upstream source.
 
 # [NuGet](#tab/nuget)
 
-Clear your local package cache:
+- **Clear your local cache**:
 
-```
-nuget locals -clear all
-```
+    ```Command
+    nuget locals -clear all
+    ```
 
-Then, download and install packages from the upstream sources:
+- **Restore packages**:
 
-```
-nuget restore
-```
+    ```Command
+    nuget.exe restore
+    ```
 
----
+Your feed now should contain any packages you saved from the upstream source.
 
-The instructions above show the simplest way to populate your feed. In larger projects, you can also consider setting up a continuous integration (CI) build that has a clean cache on each build run. This build will then save any new packages from upstream sources as they're used.
-
-## Check your feed to see the saved copy of everything you used from the public registry
-
-Navigate to the feed you created in [Step 1](#create-a-feed-with-upstream-sources-enabled). This feed should now be populated with the packages that are used in your project. The **Source** field contains the public registry, or other upstream source, that you were using before completing this tutorial.
+* * *
