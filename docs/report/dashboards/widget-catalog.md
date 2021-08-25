@@ -1,14 +1,14 @@
 ---
-title: Catalog of widgets you can add to a dashboard
+title: Catalog of OOB widgets you can add to a dashboard
 titleSuffix: Azure DevOps
-description: Determine which widgets you want to add to your dashboards when working in Azure DevOps or Team Foundation Server  
+description: Determine which widgets you want to add to your dashboards when working in Azure DevOps   
 ms.custom: dashboards
 ms.technology: devops-analytics
 ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2015'
+monikerRange: '>= tfs-2015'  
 ms.date: 08/24/2021
 ---
 
@@ -265,11 +265,11 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
    :::column-end:::
    :::column span="1":::
       <br/>
-      <a id="chart-wit-widget"></a>   
-      Adds a tile to display a progress or trend chart that builds off a shared work item query. From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget). 
-      ::: moniker range="tfs-2015"
-      Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.
-      ::: moniker-end
+      <a id="chart-wit-widget" />   
+      Adds a tile to display a progress or trend chart that builds off a shared work item query. From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget).   
+      ::: moniker range="tfs-2015"  
+      Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.  
+      ::: moniker-end  
    :::column-end:::
 :::row-end:::  
 ::: moniker range=">= azure-devops-2019"
@@ -281,7 +281,7 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
    :::column span="1":::
       <br/>
       <a id="cfd-widget"></a>   
-      Displays the cumulative flow of backlog items based on the time frame, team, backlog level and swimlane you select. From the configuration dialog, [specify the team, backlog level, and other parameters you want](cumulative-flow.md#configure-widget).
+      Displays the cumulative flow of backlog items based on the time frame, team, backlog level and swimlane you select. From the configuration dialog, [specify the team, backlog level, and other parameters you want](cumulative-flow.md#configure-widget).  
       
       Hover over each color within the chart to see the count of items for a particular Kanban column.
    :::column-end:::
@@ -609,7 +609,7 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
    :::column-end:::
    :::column span="1":::
       <br/>
-      <a id="test-trend-results"></a>
+      <a id="test-trend-results"></a> <a id="test-results-widget"></a>
       Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time, thereby surfacing patterns about test failures, test duration etc.  
       From the configuration dialog, select the build or release whose test results you'd like to monitor. There are multiple chart options to choose from (Line, Column & Stacked Column) based on your preference. Optionally you can map the trend of test duration on the existing chart by adding a secondary line chart.  
       The widget provides the basic trend of the test results. To get deeper insights and higher configurability view [Test Analytics](../../pipelines/test/test-analytics.md)
