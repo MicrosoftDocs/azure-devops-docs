@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 0803ABDD-002B-4179-B824-9765403F4289
 ms.manager: dastahel
 ms.author: vijayma
-ms.date: 08/20/2021
+ms.date: 08/25/2021
 monikerRange: azure-devops
 author: vijayma
 ---
@@ -43,7 +43,7 @@ The following YAML example builds module images:
 |`containerregistrytype` <br/>Container registry type|(Required) The type of container registry, which can be either `Azure Container Registry` if your registry is in Azure, or `Generic Container Registry` for other registries like docker hub. For more information, see [Container registry types](#container-registry-types). <br/>Default value: Azure Container Registry.|
 |`templateFilePath` <br/>.template.json file|(Required) The path of your Azure IoT Edge solution .template.json file. This file defines the modules and routes in an Azure IoT Edge solution. The filename must end with .template.json. <br/>Default value: deployment.template.json.|
 |`defaultPlatform` <br/>Default platform|(Required) In your .template.json file you can leave the modules platform unspecified, in which case the default platform will be used. <br/>Default value: amd64.|
-|`fillRegistryCredential` <br/>Add registry credential to deployment manifest|(Required) Add registry credentials to the deployment manifest to give the edgeAgent module access to pull private docker images. <br/>Default value: true.|
+|`fillRegistryCredential` <br/>Add registry credential to deployment manifest|(Required) Add registry credentials for Docker images to the deployment manifest. <br/>Default value: true.|
 |`bypassModules` <br/>Bypass module(s)|(Optional) Specify the module(s) that you do not need to build or push from the list of module names separated by commas in the .template.json file. For example, if you have two modules, "SampleModule1,SampleModule2" in your file and you want to build or push just SampleModule1, specify SampleModule2 as the bypass module(s). Leave empty to build or push all the modules in .template.json. <br/>Located in the **Advanced** section of the Azure Pipelines web UI.|
 
 The following YAML example pushes module images:
@@ -70,7 +70,7 @@ steps:
 
 |Parameters|Description|
 |--- |--- |
-|'action' <br/>Action|(Required) Select an Azure IoT Edge action, in this case **Generate deployment manifest**. <br/>Default value: Build module images.|
+|`action` <br/>Action|(Required) Select an Azure IoT Edge action, in this case **Generate deployment manifest**. <br/>Default value: Build module images.|
 |`templateFilePath` <br/>.template.json file|(Required) The path of your Azure IoT Edge solution .template.json file. This file defines the modules and routes in an Azure IoT Edge solution. The filename must end with .template.json. <br/>Default value: deployment.template.json.|
 |`defaultPlatform` <br/>Default platform|(Required) In your .template.json file you can leave the modules platform unspecified, in which case the default platform will be used. <br/>Default value: amd64.|
 |`deploymentManifestOutputPath` <br/>Output path|(Required) The output path of generated deployment manifest. <br/>Default value: $(System.DefaultWorkingDirectory)/config/deployment.json. |
