@@ -202,6 +202,7 @@ Ensure the following IP addresses are allowed for inbound connection, so your or
 > | Brazil South | 191.235.226.0/24 |  
 > | Central Canada | 52.228.82.0/24 |
 > | Asia Pacific (Hong Kong) | 20.189.107.0/24 |  
+> | Asia Pacific (Singapore) | 20.195.68.0/24 |
 > | South India | 20.41.194.0/24 |  
 > | Central United States | 20.37.158.0/23 |  
 > | West Central United States | 52.150.138.0/24 |  
@@ -213,9 +214,6 @@ Ensure the following IP addresses are allowed for inbound connection, so your or
 > | West 2 United States | 20.42.134.0/23 |  
 > | Western Europe | 40.74.28.0/23 |  
 > | United Kingdom South | 51.104.26.0/24 |  
-
-> [!NOTE]
-> Southeast Asia (SEA) isn't a supported geography yet. When we begin support for SEA, we'll publish the associated IP addresses.
 
 Azure Service Tags are supported for *inbound* connection. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall via a JSON file download.  
 
