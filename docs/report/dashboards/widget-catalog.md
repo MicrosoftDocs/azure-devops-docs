@@ -267,7 +267,10 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
    :::column span="1":::
       <br/>
       <a id="chart-wit-widget" />   
-      Adds a tile to display a progress or trend chart that builds off a shared work item query. From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget).   
+      Adds a tile to display a progress or trend chart that builds off a shared work item query.   
+        
+      From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget).     
+      
       ::: moniker range="tfs-2015"  
       Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.  
       ::: moniker-end  
@@ -282,9 +285,9 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
    :::column span="1":::
       <br/>
       <a id="cfd-widget"></a>   
-      Displays the cumulative flow of backlog items based on the time frame, team, backlog level and swimlane you select. From the configuration dialog, [specify the team, backlog level, and other parameters you want](cumulative-flow.md#configure-widget).  
+      Displays the cumulative flow of backlog items based on the time frame, team, backlog level and swimlane you select. Hover over each color within the chart to see the count of items for a particular Kanban column.  
       
-      Hover over each color within the chart to see the count of items for a particular Kanban column.
+      From the configuration dialog, [specify the team, backlog level, and other parameters you want](cumulative-flow.md#configure-widget). 
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
@@ -299,7 +302,7 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
       <a id="cycle-time-widget"></a>   
       Displays the cycle time of work items closed in a specified timeframe for a single team and backlog level. The cycle time of a work item is defined as the time taken to close a work item after work on it has started. Each marker on the chart corresponds to one or more work items with a particular cycle time. The lower the cycle time, the faster work is progressing through your development pipeline.  
       
-      To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md). 
+      To learn more, see [Lead time and cycle time control charts](cycle-time-and-lead-time.md).
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
@@ -313,7 +316,9 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
       <br/>
       <a id="lead-time-widget"></a>    
       Displays the lead time of work items closed in a specified timeframe for a single team and backlog level. The lead time of a work item is defined as the time taken to close a work item after it was created.  
-      Each marker on the chart corresponds to one or more work items with a particular lead time. The lower the lead time, the faster work is being delivered to the customer. To learn more, see [Lead time and cycle time control charts](cycle-time-and-lead-time.md). 
+      Each marker on the chart corresponds to one or more work items with a particular lead time. The lower the lead time, the faster work is being delivered to the customer.   
+      
+      To learn more, see [Lead time and cycle time control charts](cycle-time-and-lead-time.md). 
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
@@ -370,7 +375,9 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
    :::column span="1":::
       <br/>
       <a id="sprint-burndown-analytics-widget"></a>
-      Adds a team's burndown chart for a sprint to the dashboard. This widget is based on Analytics data. You have several configuration options for this widget, including selecting a team, iteration, and time period. Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
+      Adds a team's burndown chart for a sprint to the dashboard. This widget is based on Analytics data. You have several configuration options for this widget, including selecting a team, iteration, and time period.   
+      
+      Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -383,7 +390,9 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
    :::column span="1":::
       <br/>
       <a id="burndown-widget"></a>  
-      Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint. Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
+      Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint.   
+      
+      Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
    :::column-end:::
 :::row-end::: 
 ::: moniker-end
@@ -396,7 +405,9 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
    :::column span="1":::
       <br/>
       <a id="sprint-burndown-widget"></a>
-      Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint. Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
+      Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint.    
+      
+      Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -409,7 +420,9 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
       <br/>
       <a id="sprint-capacity-widget"></a> 
       Inserts the team's capacity bar chart for the current sprint. 
-      To plan and monitor their sprint resources, team set capacity and update Remaining Work throughout the sprint. See [Set capacity](../../boards/sprints/set-capacity.md).
+      To plan and monitor their sprint resources, team set capacity and update Remaining Work throughout the sprint.    
+      
+      See [Set capacity](../../boards/sprints/set-capacity.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -419,12 +432,20 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
    :::column-end:::
    :::column span="1":::
       <br/>
-      <a id="sprint-overview-widget"></a> 
+      <a id="sprint-overview-widget"></a>      
+      
+      
       ::: moniker range=">= tfs-2017"
-      Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assigning backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
-      ::: moniker-end
+      Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items.    
+      
+      Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assigning backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
+      ::: moniker-end   
+      
+      
       ::: moniker range=" tfs-2015"
-      Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assign backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
+      Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started.    
+      
+      Teams [plan their sprints by defining sprints](../../organizations/settings/set-iteration-paths-sprints.md) and [assign backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
       ::: moniker-end
    :::column-end:::
 :::row-end:::
@@ -436,7 +457,9 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
    :::column-end:::
    :::column span="1":::
       <a id="velocity-widget"></a> 
-      The Velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of Analytics data. You can track the velocity for a single team, not multiple teams. For additional guidance, see [Velocity](team-velocity.md).
+      The Velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of Analytics data. You can track the velocity for a single team, not multiple teams.    
+      
+      For additional guidance, see [Velocity](team-velocity.md).
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -448,11 +471,12 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
    :::column span="1":::
       <br/>
       <a id="work-links-widget"></a> 
-      Provides quick access to open the following Agile tools and team resources:  
-      - [Backlog](../../boards/backlogs/create-your-backlog.md)  
-      - [Kanban board](../../boards/boards/kanban-basics.md)  
-      - [Task board](../../boards/sprints/task-board.md)  
-      - [Queries](../../boards/queries/using-queries.md)
+      Provides quick access to open the following Agile tools and team resources:     
+      
+      - [Backlog](../../boards/backlogs/create-your-backlog.md)   
+      - [Kanban board](../../boards/boards/kanban-basics.md)    
+      - [Task board](../../boards/sprints/task-board.md)    
+      - [Queries](../../boards/queries/using-queries.md)  
    :::column-end:::
 :::row-end:::
 
@@ -477,9 +501,6 @@ Add code tracking widgets to track changes made within a repository or get quick
       <br/>
       <a id="code-tile-widget"></a> 
       Adds a configurable tile to display the summary of a code folder or Git repository. To configure, simply choose the added tile, select a repository, select a branch (Git only) and select a path. The code tile supports both TFVC and Git repositories. 
-      ::: moniker range="tfs-2015"
-      Requires TFS 2015.1 or later version.
-      ::: moniker-end
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -490,10 +511,9 @@ Add code tracking widgets to track changes made within a repository or get quick
    :::column span="1":::
       <br/>
       <a id="pull-request-widget"></a> 
-      Adds a configurable widget to display active pull requests requested by the team, or assigned to or requested by the person logged in. Select the team and  Git repository for the pull requests of interest. To learn more about pull requests, see [Review code with pull requests](../../repos/git/pull-requests.md).
-      ::: moniker range="tfs-2015"
-      Requires TFS 2015.2 or later version.
-      ::: moniker-end
+      Adds a configurable widget to display active pull requests requested by the team, or assigned to or requested by the person logged in. Select the team and  Git repository for the pull requests of interest.   
+      
+      To learn more about pull requests, see [Review code with pull requests](../../repos/git/pull-requests.md).
    :::column-end:::
 :::row-end:::
 
@@ -529,9 +549,6 @@ Add the Build History pipeline widget to track the health of your builds.
       Adds a tile to display a histogram of all builds run for the configured build pipeline.
       From the configuration dialog, select the build you want to monitor. 
       Hover over a bar to learn how long the build took to complete. Choose the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
-      ::: moniker range="tfs-2015"
-      Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#build-history) to add a build summary chart to a dashboard. 
-      ::: moniker-end
    :::column-end:::
 :::row-end:::
 ::: moniker range=">= tfs-2017"
@@ -544,7 +561,9 @@ Add the Build History pipeline widget to track the health of your builds.
       <br/>
       <a id="deployment-status-widget"></a> 
       Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build pipeline, branch, and linked release pipelines.  
-      In order to view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate. You can choose any cell to see a more [detailed view](../../pipelines/test/review-continuous-test-results-after-build.md) for the selected environment.  
+      In order to view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate.   
+      
+      You can choose any cell to see a more [detailed view](../../pipelines/test/review-continuous-test-results-after-build.md) for the selected environment.  
       Requires TFS 2017.1 or later version. 
    :::column-end:::
 :::row-end:::
@@ -558,7 +577,9 @@ Add the Build History pipeline widget to track the health of your builds.
    :::column span="1":::
       <br/>
       <a id="release-definition-widget"></a> 
-      Configurable widget that you can use to view and track the status of a release pipeline. This widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release pipeline in the left column to filter the list to just releases for that pipeline.
+      Configurable widget that you can use to view and track the status of a release pipeline. This widget shows the release as a series of environments, with the name of the release and the date or time it was started.   
+      
+      The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release pipeline in the left column to filter the list to just releases for that pipeline.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -571,7 +592,9 @@ Add the Build History pipeline widget to track the health of your builds.
    :::column span="1":::
       <br/>
       <a id="requirements-quality-widget"></a>  
-      Configurable widget that you can use to track quality continuously from a build or release pipeline. The widget shows the mapping between a requirement and latest test results executed against that requirement. It provides insights into requirements traceability e.g. requirements not meeting the quality, requirements not tested etc. To learn more about setting up traceability see [Requirements traceability](../../pipelines/test/requirements-traceability.md) 
+      Configurable widget that you can use to track quality continuously from a build or release pipeline. The widget shows the mapping between a requirement and latest test results executed against that requirement. It provides insights into requirements traceability e.g. requirements not meeting the quality, requirements not tested etc.   
+      
+      To learn more about setting up traceability see [Requirements traceability](../../pipelines/test/requirements-traceability.md) 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -594,10 +617,11 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
       ### Chart for test plans  
       ![Chart for test plans](media/widget-chart-test-plans.png) 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       <br/>
       <a id="chart-test-plan-widget"></a> 
-      Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots.  
+      Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots.    
+      
       To learn more, see [Track your test results](../../test/track-test-status.md).
    :::column-end:::
 :::row-end:::
@@ -611,9 +635,11 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
    :::column span="1":::
       <br/>
       <a id="test-trend-results"></a> <a id="test-results-widget"></a>
-      Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time, thereby surfacing patterns about test failures, test duration etc.  
-      From the configuration dialog, select the build or release whose test results you'd like to monitor. There are multiple chart options to choose from (Line, Column & Stacked Column) based on your preference. Optionally you can map the trend of test duration on the existing chart by adding a secondary line chart.  
-      The widget provides the basic trend of the test results. To get deeper insights and higher configurability view [Test Analytics](../../pipelines/test/test-analytics.md)
+      Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time, thereby surfacing patterns about test failures, test duration etc.    
+      
+      From the configuration dialog, select the build or release whose test results you'd like to monitor. There are multiple chart options to choose from (Line, Column & Stacked Column) based on your preference. Optionally you can map the trend of test duration on the existing chart by adding a secondary line chart.    
+      
+      To get deeper insights and higher configurability view [Test Analytics](../../pipelines/test/test-analytics.md)
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -629,7 +655,8 @@ Add test tracking widgets to your dashboards to show status, progress, or trends
       <br/>
       <a id="test-trend-results-advanced"></a>
       The Test Results Trend (Advanced) widget provides near real-time visibility into test data for multiple builds and releases. The widget shows a trend of your test results for selected pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.  
-      The widget supports tracking advanced metrics for one or more build pipelines or release pipelines. The widget also allows filtering of test results by outcome, stacking metrics, and more.  
+      The widget supports tracking advanced metrics for one or more build pipelines or release pipelines. The widget also allows filtering of test results by outcome, stacking metrics, and more.     
+      
       To learn more, see [Configure the Test Results Trend (Advanced) widget](./configure-test-results-trend.md).
    :::column-end:::
 :::row-end:::
@@ -649,7 +676,9 @@ Add one or more of the following widgets to support adding configurable content 
    :::column span="1":::
       <br/>
       <a id="embedded-webpage-widget"></a> 
-      Adds a configurable tile to display the contents of a web page. Only webpages that allow [iframe embedding](https://go.microsoft.com/fwlink/?LinkId=808035) are supported.
+      Adds a configurable tile to display the contents of a web page.    
+      
+      Only webpages that allow [iframe embedding](https://go.microsoft.com/fwlink/?LinkId=808035) are supported.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -660,12 +689,19 @@ Add one or more of the following widgets to support adding configurable content 
    :::column-end:::
    :::column span="1":::
       <br/>
-      <a id="markdown-widget"></a>  <a id="markdown"></a>
+      <a id="markdown-widget"></a>  <a id="markdown"></a>   
+      
       ::: moniker range=">= tfs-2017"
-      Adds a configurable tile to display any type of information, guidance, or links that you want. You can also configure the widget to point to a file stored in your repository. From the configuration dialog, add the information you want to share with your team. To learn more, see [Add Markdown to a dashboard](add-markdown-to-dashboard.md). 
-      ::: moniker-end
+      Adds a configurable tile to display any type of information, guidance, or links that you want. You can also configure the widget to point to a file stored in your repository. From the configuration dialog, add the information you want to share with your team.    
+      
+      To learn more, see [Add Markdown to a dashboard](add-markdown-to-dashboard.md). 
+      ::: moniker-end   
+      
+      
       ::: moniker range="tfs-2015"
-      Adds a configurable tile to display any type of information, guidance, or links that you want. From the configuration dialog, add the information you want to share with your team. To learn more, see [Add Markdown to a dashboard](add-markdown-to-dashboard.md).  
+      Adds a configurable tile to display any type of information, guidance, or links that you want. From the configuration dialog, add the information you want to share with your team.    
+      
+      To learn more, see [Add Markdown to a dashboard](add-markdown-to-dashboard.md).  
       Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.   
       ::: moniker-end
    :::column-end:::
@@ -679,10 +715,10 @@ Add one or more of the following widgets to support adding configurable content 
    :::column span="1":::
       <br/>
       <a id="other-links-widget"></a>   
-      Provides links to the following features: 
-      - Opens a form to initiate a [request to provide feedback](../../project/feedback/get-feedback.md?toc=%252fazure%252fdevops%252fproject%252ffeedback%252ftoc.json).
-      - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md).
-      - Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-area-paths.md).
+      Provides links to the following features:   
+      - Opens a form to initiate a [request to provide feedback](../../project/feedback/get-feedback.md).  
+      - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md).  
+      - Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-area-paths.md).  
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
@@ -695,7 +731,8 @@ Add one or more of the following widgets to support adding configurable content 
    :::column span="1":::
       <br/>
       <a id="other-links-widget-2018"></a>   
-      The following links are displayed when the corresponding resource is configured for the project: 
+      The following links are displayed when the corresponding resource is configured for the project:    
+      
       ![Other links widget, TFS-2018 and earlier versions.](media/widget-other-links-tfs.png)  
       - [View project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal) (opens either a SharePoint site or URL that's been configured as the project's portal.  
       - [View process guidance](../../project/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance.  
@@ -711,13 +748,12 @@ Add one or more of the following widgets to support adding configurable content 
    :::column span="1":::
       <br/>
       <a name="team-members-widget"></a> 
-      Shows team member profiles and, on-hover, their user alias. 
-      For team admins, supports access to the quick dialog to [add or remove team members](../../organizations/settings/add-teams.md).  
+      Shows team member profiles and, on-hover, their user alias.    
+      
+      For team admins, supports access to the quick dialog to [add or remove team members](../../organizations/settings/add-teams.md).     
+      
       > [!NOTE]  
-      > This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../../organizations/settings/add-teams.md#add-team-members). 
-      ::: moniker range="tfs-2015"
-      Requires TFS 2015.1 or later version.
-      ::: moniker-end
+      > This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../../organizations/settings/add-teams.md#add-team-members).  
    :::column-end:::
 :::row-end:::
 ::: moniker range=">= tfs-2015 <= tfs-2017"
@@ -730,7 +766,8 @@ Add one or more of the following widgets to support adding configurable content 
       <br/>
       <a id="team-room-widget"></a> 
       Provides status and access to [team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room). Available for TFS 2015.1 through TFS 2017.2 versions.  
-      Team rooms support increased team productivity by providing a space to discuss work in progress, ask questions, share status, and clarify issues that arise. Team administrators can create additional team rooms.  
+      Team rooms support increased team productivity by providing a space to discuss work in progress, ask questions, share status, and clarify issues that arise. Team administrators can create additional team rooms.     
+      
       > [!NOTE]  
       > Team Rooms have been deprecated as described in [Deprecation of Team Rooms](https://devblogs.microsoft.com/devops/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](../../service-hooks/services/slack.md).
    :::column-end:::
@@ -744,10 +781,9 @@ Add one or more of the following widgets to support adding configurable content 
    :::column span="1":::
       <br/>
       <a id="visual-studio-widget"></a> 
-      Provides links to open or download Visual Studio. The Visual Studio IDE client comes with the [Team Explorer plug-in](../../user-guide/work-team-explorer.md) which provides quick access to several features (some of which aren't available through the web portal).
-      ::: moniker range="tfs-2015"
-      Requires TFS 2015.1 or later version.
-      ::: moniker-end
+      Provides links to open or download Visual Studio.    
+      
+      The Visual Studio IDE client comes with the [Team Explorer plug-in](../../user-guide/work-team-explorer.md) which provides quick access to several features (some of which aren't available through the web portal).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -759,9 +795,6 @@ Add one or more of the following widgets to support adding configurable content 
       <br/>
       <a id="how-to-widget"></a>
       Provides links to the **Boards/Boards (Work/Boards)**, **Repos (Code)**, and **Pipelines (Build or Build-Release)** pages and reference documentation on how to add charts.
-      ::: moniker range="tfs-2015"
-      Requires TFS 2015.1 or later version.
-      ::: moniker-end
    :::column-end:::
 :::row-end:::
 
