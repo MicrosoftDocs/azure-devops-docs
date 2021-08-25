@@ -149,7 +149,7 @@ condition: eq(variables['System.debug'], 'true')
 
 ### Run if a variable is null (empty string)
 
-Since all variables are treated as strings in Azure Pipelines, an empty string is equivalent to `null` in this pipeline. 
+Since all variables are treated as strings in Azure Pipelines, an empty string is equivalent to `null` in this pipeline.  
 
 ```yaml
 variables:
@@ -160,7 +160,7 @@ jobs:
   - job: A
     steps:
     - script: echo testEmpty is blank
-    condition: eq('${{ variables.testEmpty }}', '')
+    condition: eq(variables.testEmpty, '')
 ```
 
 ### Use a template parameter as part of a condition
