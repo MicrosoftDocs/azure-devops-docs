@@ -17,7 +17,7 @@ ms.date: 08/24/2021
 [!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
 ::: moniker range=">= tfs-2018"
-Widgets display information and charts on dashboards. Many widgets are configurable or are scoped to a team or to the logged in user account. Many display information available from one or more data stores or charts maintained within the system. You add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md). 
+Widgets display information and charts on dashboards. Many widgets are configurable or are scoped to a team or to the logged in user account. Many display information available from one or more data stores or charts maintained within the system. You add a widget to a dashboard or copy a widget from one dashboard to another. To learn how, see [Add a widget to a dashboard](add-widget-to-dashboard.md). 
 
 For example, you can add the **Build History** widget from the dashboard's **Add widget** dialog. 
 ::: moniker-end
@@ -28,7 +28,7 @@ Widgets display information and charts on dashboards. Many widgets are configura
 
 ![Build history widget](media/widget-build-history-chart.png)   
 
-This article provides a quick reference of all out-of-box (OOB) widgets that you can add to your dashboard. In addition to the OOB widgets, you may find additional widgets from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance)
+This article provides a quick reference of all out-of-box (OOB) widgets that you can add to your dashboard. In addition to the OOB widgets, you may find additional widgets from the [Marketplace](#marketplace) or create your own.
 
 ## Supported OOB widgets
 
@@ -752,9 +752,10 @@ Add one or more of the following widgets to support adding configurable content 
       <br/>
       <a id="other-links-widget"></a>   
       Provides links to the following features:   
-      - Opens a form to initiate a [request to provide feedback](../../project/feedback/get-feedback.md)  <br/>
-      - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md)  <br/>
-      - Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-area-paths.md).   
+      
+      - [Opens a form to initiate a request to provide feedback](../../project/feedback/get-feedback.md)   
+      - [Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team](../../boards/sprints/define-sprints.md)   
+      - [Opens the team's quick dialog to modify your team's area path](../../organizations/settings/set-area-paths.md).   
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
@@ -770,9 +771,9 @@ Add one or more of the following widgets to support adding configurable content 
       The following links are displayed when the corresponding resource is configured for the project:    
       
       ![Other links widget, TFS-2018 and earlier versions.](media/widget-other-links-tfs.png)  
-      - [View project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal) (opens either a SharePoint site or URL that's been configured as the project's portal  <br/>
-      - [View process guidance](../../project/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance  <br/>
-      - [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services).
+      - [View project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal)  
+      - [View process guidance](../../project/configure-or-redirect-process-guidance.md)  
+      - [View reports](../sql-reports/reporting-services-reports.md)  
       
       To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).
    :::column-end:::
