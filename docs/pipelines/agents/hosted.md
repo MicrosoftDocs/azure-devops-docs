@@ -224,6 +224,7 @@ Microsoft-hosted agents run on secure Azure platform. However, you must be aware
 Microsoft-hosted agents:
 
 * Have [the above software](#software). You can also add software during your build or release using [tool installer tasks](../process/tasks.md#tool-installers).
+  * You get a freshly imaged agent for each job in your pipeline.
 * Provide 10 GB of storage for your source and build outputs.
 * Provide a free tier:
   * Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month. [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
