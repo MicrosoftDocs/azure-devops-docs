@@ -238,7 +238,8 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
    :::column span="1":::
       <br/>
       <a id="burndown-analytics-widget"></a>  
-      Adds a tile that displays a burndown chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints.  
+      Adds a tile that displays a burndown chart which you can configure to span one or more teams, work item types, and time period. With it, you can create a release burndown, sprint burndown, or any burndown that spans teams and sprints.    
+      
       To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).
    :::column-end:::
 :::row-end:::  
