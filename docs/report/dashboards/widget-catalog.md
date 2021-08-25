@@ -205,6 +205,40 @@ Widgets listed in the following table are provided out-of-box. They are organize
 > Widgets and multiple dashboards are not supported features in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
 ::: moniker-end
 
+## Prerequisites
+
+
+::: moniker range="azure-devops"
+- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/accounts/set-up-vs.md). 
+- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
+- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add, edit, or manage a dashboard, you must have **Basic** access or greater.  
+::: moniker-end
+
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
+- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
+- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add, edit, or manage a dashboard, you must have **Basic** access or greater.  
+::: moniker-end
+
+::: moniker range="tfs-2017 || tfs-2018"
+
+- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
+- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
+- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a team admin, a project admin, or have [dashboard permissions](../dashboards/dashboard-permissions.md). In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../../organizations/settings/add-team-administrator.md).  
+::: moniker-end
+
+::: moniker range="tfs-2015"
+- To add widgets to a dashboard, you must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
+- To add widgets from the marketplace, you must be a member of the [Project Collection Administrators group or be an organization owner](../../organizations/security/lookup-organization-owner-admin.md).
+- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).
+- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be added to the [team administrator role for the team](../../organizations/settings/add-team-administrator.md).    
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 ## Azure Boards widgets 
@@ -214,7 +248,9 @@ Widgets listed in the following table are provided out-of-box. They are organize
 ## Work widgets 
 ::: moniker-end
 
-Add work tracking widgets to your dashboards to show status, progress, or trends. In addition to the widgets listed here, you can add a work item query chart to your dashboard. To learn more, see [Track progress with status and trend query-based charts](charts.md).
+Add work tracking widgets to your dashboards to show status, progress, or trends. You [use work items to plan and track work](../../boards/backlogs/add-work-items.md). 
+
+In addition to the widgets listed here, you can add a work item query chart to your dashboard. To learn more, see [Track progress with status and trend query-based charts](charts.md).
 
 ::: moniker range=">= tfs-2017"
 :::row:::
@@ -330,7 +366,7 @@ Add work tracking widgets to your dashboards to show status, progress, or trends
    :::column span="1":::
       <br/>
       <a id="new-work-item-widget"></a>
-      Enables you to add work items from the dashboard. You [use work items to plan and track work](../../boards/backlogs/add-work-items.md). Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration.  
+      Enables you to add work items from the dashboard. Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration.  
       
       To change team defaults, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
       ::: moniker range="tfs-2015"
@@ -716,9 +752,9 @@ Add one or more of the following widgets to support adding configurable content 
       <br/>
       <a id="other-links-widget"></a>   
       Provides links to the following features:   
-      - Opens a form to initiate a [request to provide feedback](../../project/feedback/get-feedback.md).  
-      - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md).  
-      - Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-area-paths.md).  
+      - Opens a form to initiate a [request to provide feedback](../../project/feedback/get-feedback.md)  <br/>
+      - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md)  <br/>
+      - Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-area-paths.md).   
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
@@ -734,9 +770,11 @@ Add one or more of the following widgets to support adding configurable content 
       The following links are displayed when the corresponding resource is configured for the project:    
       
       ![Other links widget, TFS-2018 and earlier versions.](media/widget-other-links-tfs.png)  
-      - [View project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal) (opens either a SharePoint site or URL that's been configured as the project's portal.  
-      - [View process guidance](../../project/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance.  
-      - [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).
+      - [View project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal) (opens either a SharePoint site or URL that's been configured as the project's portal  <br/>
+      - [View process guidance](../../project/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance  <br/>
+      - [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services).
+      
+      To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).
    :::column-end:::
 :::row-end:::  
 ::: moniker-end
@@ -793,7 +831,7 @@ Add one or more of the following widgets to support adding configurable content 
    :::column-end:::
    :::column span="1":::
       <br/>
-      <a id="how-to-widget"></a>
+      <a id="how-to-widget"></a>    
       Provides links to the **Boards/Boards (Work/Boards)**, **Repos (Code)**, and **Pipelines (Build or Build-Release)** pages and reference documentation on how to add charts.
    :::column-end:::
 :::row-end:::
