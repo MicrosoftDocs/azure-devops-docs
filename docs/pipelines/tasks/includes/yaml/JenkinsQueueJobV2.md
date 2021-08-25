@@ -21,5 +21,5 @@ ms.technology: devops-cicd-tasks
     isParameterizedJob: 
     #jobParameters: # Optional
     #retryCount: #Optional
-    #retryTimer: #Optional
+    #delayBetweenRetries: #Optional
 ```

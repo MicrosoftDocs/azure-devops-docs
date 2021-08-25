@@ -112,7 +112,7 @@ None
        </td>
    </tr>
       <tr>
-      <td><code>retryTimer</code><br/>Timeout between connection retries</td>
+      <td><code>delayBetweenRetries</code><br/>Timeout between connection retries</td>
       <td>
          <p>(Optional) This option sets the amount of time between connection retries when an error occurs. This is specified in seconds.</p><br/>Default value: '60'
       </td>
