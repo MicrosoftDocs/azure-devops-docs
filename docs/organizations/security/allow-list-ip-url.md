@@ -46,6 +46,7 @@ https://amcdn.msftauth.net
 https://amp.azure.net
 https://app.vssps.dev.azure.com
 https://app.vssps.visualstudio.com
+https://*.vssps.visualstudio.com
 https://azure.microsoft.com
 https://azurecomcdn.azureedge.net
 https://cdn.vsassets.io
