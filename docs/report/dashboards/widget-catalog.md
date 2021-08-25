@@ -833,7 +833,8 @@ Add one or more of the following widgets to support adding configurable content 
    :::column span="1":::
       <br/>
       <a id="how-to-widget"></a>    
-      Provides links to the **Boards/Boards (Work/Boards)**, **Repos (Code)**, and **Pipelines (Build or Build-Release)** pages and reference documentation on how to add charts.
+      Provides links to the major Azure DevOps services&mdash;work tracking boards, code, and builds&mdash;and reference documentation on how to add charts.  
+      ![Screenshot of Welcome widget tile.](media/catalog/welcome-tile.png)
    :::column-end:::
 :::row-end:::
 
