@@ -23,7 +23,7 @@ As an organization Owner or a Project Administrator, there are a few tasks you m
 ## Add users to your project 
 
 ::: moniker range="azure-devops"  
-Ensure that all members of your organization or group are added to your organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine.
+Ensure that all members of your organization or group are added to your organization and projects. For small projects, you can [invite users to your project or team](../security/add-users-team-project.md#invite-users-from-the-summary-page).
 
 Larger enterprises may want to consider using Azure Active Directory to manage permissions and user access. To learn more, see [About organization management](../organizations/accounts/organization-management.md).
 
@@ -31,7 +31,7 @@ Larger enterprises may want to consider using Azure Active Directory to manage p
 
 ::: moniker range="< azure-devops"
  
-Ensure that all members of your organization or group are added to your organization and project. Larger organizations may want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory before installing TFS. To learn more, see the following articles.
+Ensure that all members of your organization or group are added to your organization and project. For small projects, you can [invite users to your project or team](../security/add-users-team-project.md#invite-users-from-the-summary-page). Larger organizations may want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory before installing TFS. To learn more, see the following articles.
 
 - [Install Azure Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
 - [Step-By-Step: Setting up Azure Active Directory in Windows Server 2016](/archive/blogs/canitpro/step-by-step-setting-up-active-directory-in-windows-server-2016)

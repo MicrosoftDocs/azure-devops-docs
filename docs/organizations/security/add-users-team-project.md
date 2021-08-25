@@ -95,7 +95,7 @@ Team and project administrators can add existing users to their team or project.
       Add existing users or groups to a team, or remove a member. 
    :::column-end:::
 :::row-end:::
-::: moniker range="azure-devops"
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
       Project Administrators
@@ -418,7 +418,7 @@ Choose the **Current page** tab for information on adding a user to a team. The 
 
 ::: moniker range=">= azure-devops-2019"
 
-5. To remove members, open the team's **Members** page, choose **direct** membership, return to this page, highlight the user name and choose **Remove**.
+1. To remove members, open the team's **Members** page, choose **direct** membership, return to this page, highlight the user name and choose **Remove**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Team profile page, remove a team member](media/add-users/team-page-remove-team-member-vert.png)   
@@ -444,18 +444,27 @@ Choose the **Current page** tab for information on adding a user to a team. The 
 
 <a name="summary-page"></a>
 
-::: moniker range="azure-devops"
+::: moniker range=">= tfs-2017"
 
 ## Invite users from the Summary page 
 
-As a member of the Project Administrators group, you can add members to a project from the **Summary** page and optionally add them to one or more teams. 
-
-
+As a member of the Project Administrators group, you can add members to a project from the **Summary** page and optionally add them to one or more teams. To learn more about the **Summary** page, see [Share your project vision, view project activity](../../organizations/projects/project-vision-status.md).
+::: moniker-end
+::: moniker range="< azure-devops"
+> [!NOTE]
+> For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts).  
+::: moniker-end
+::: moniker range="> azure-devops-2019"
 1. Open the **Project>Summary** page, and choose **Invite**.  
 
 	:::image type="content" source="media/add-users/summary-invite-users.png" alt-text="Screenshot of Summary page, Invite button.":::
-
-2. For new users, enter their email address. For existing users, type their name until it resolves as a known name to the system. You can add several email addresses or account names by separating them with a semicolon (;). 
+::: moniker-end
+::: moniker range=">=tfs-2017 <= tfs-2018"
+1. Open the **Project>Summary** page, and choose the **Add** button.  
+	:::image type="content" source="../projects/media/summary/invite-members-tfs-2018.png" alt-text="Screenshot of Summary page, Add members button.":::
+::: moniker-end
+::: moniker range=">= tfs-2017"
+1. For new users, enter their email address. For existing users, type their name until it resolves as a known name to the system. You can add several email addresses or account names by separating them with a semicolon (;). 
 
 	:::row:::
 	   :::column span="":::
@@ -477,8 +486,7 @@ As a member of the Project Administrators group, you can add members to a projec
 	> [!NOTE]  
 	> Any valid email address is acceptable. When the user accepts the invitation and signs into Azure DevOps, they register their email address as a Microsoft account and choose a password.  
 
-
-2. Optionally, select the teams you want to add the user to and then choose **Add** to complete the invitation.
+1. Optionally, select the teams you want to add the user to and then choose **Add** to complete the invitation.
 
 	:::row:::
 	   :::column span="":::
@@ -533,11 +541,9 @@ As a member of the Project Administrators group, you can add members to a projec
 
 ::: moniker-end
 
- 
 <a name="add-users-team-project"></a>
 <a name="add-users-to-a-project"></a>
-
-
+ 
 ## Add users or groups to a project
 
 As a member of the Project Administrators group, you can add users or groups to a project from the **Project settings> Permissions** page by adding them to a security group. To add a custom security group, see [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md).   
