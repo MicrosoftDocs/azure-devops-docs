@@ -248,7 +248,7 @@ If Microsoft-hosted agents don't meet your needs, then you can deploy your own [
 
 ### How can I see what software is included in an image?
 
-You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table. 
+You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Software](#software) table. 
 
 ### How does Microsoft choose the software and versions to put on the image?
 
