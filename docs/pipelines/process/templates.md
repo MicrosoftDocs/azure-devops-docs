@@ -222,19 +222,19 @@ steps:
 jobs:
 - job: Linux
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - template: templates/npm-steps.yml  # Template reference
 
 - job: macOS
   pool:
-    vmImage: 'macOS-10.14'
+    vmImage: 'macOS-latest'
   steps:
   - template: templates/npm-steps.yml  # Template reference
 
 - job: Windows
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
   steps:
   - script: echo This script runs before the template's steps, only on Windows.
   - template: templates/npm-steps.yml  # Template reference
@@ -370,17 +370,17 @@ jobs:
 - template: templates/npm-with-params.yml  # Template reference
   parameters:
     name: Linux
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
 
 - template: templates/npm-with-params.yml  # Template reference
   parameters:
     name: macOS
-    vmImage: 'macOS-10.14'
+    vmImage: 'macOS-latest'
 
 - template: templates/npm-with-params.yml  # Template reference
   parameters:
     name: Windows
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
 ```
 
 You can also use parameters with step or stage templates.
@@ -560,7 +560,7 @@ resources:
 jobs:
 - template: common.yml@templates  # Template reference
   parameters:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
 ```
 
 For `type: github`, `name` is `<identity>/<repo>` as in the examples above.
@@ -776,7 +776,7 @@ parameters:
 jobs:
 - job: Build
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
   steps:
   - script: cred-scan
   - ${{ parameters.preBuild }}
@@ -1043,7 +1043,7 @@ jobs:
 - template: templates/npm-with-params.yml  # Template reference
   parameters:
     name: Linux
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
 
 - template: templates/npm-with-params.yml  # Template reference
   parameters:
@@ -1053,7 +1053,7 @@ jobs:
 - template: templates/npm-with-params.yml  # Template reference
   parameters:
     name: Windows
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
 ```
 
 You can also use parameters with step or stage templates.
@@ -1165,7 +1165,7 @@ resources:
 jobs:
 - template: common.yml@templates  # Template reference
   parameters:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
 ```
 
 For `type: github`, `name` is `<identity>/<repo>` as in the examples above.
@@ -1308,7 +1308,7 @@ parameters:
 jobs:
 - job: Build
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
   steps:
   - script: cred-scan
   - ${{ parameters.preBuild }}

@@ -242,7 +242,7 @@ Caching Docker images dramatically reduces the time it takes to run your pipelin
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'ubuntu-latest'
 
 steps:
   - task: Cache@2

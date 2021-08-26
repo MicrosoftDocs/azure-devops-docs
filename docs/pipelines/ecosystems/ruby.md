@@ -61,7 +61,7 @@ Add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to set the ve
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/ecosystems/ruby
 pool:
-  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.14', 'vs2017-win2016'
+  vmImage: 'ubuntu-latest' # other options: 'macOS-latest', 'windows-latest'
 
 steps:
 - task: UseRubyVersion@0
