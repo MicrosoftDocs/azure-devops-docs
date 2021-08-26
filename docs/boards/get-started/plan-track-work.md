@@ -100,7 +100,7 @@ Here we show how to add user stories and child tasks from the web portal and add
 
 
 > [!NOTE]   
-> The ability to drag-and-drop cards to different columns  requires installation of Azure DevOps Server 2020.1 update. To learn more, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#stakeholders-can-move-work-items-across-board-columns).  
+> The ability for Stakeholders to drag-and-drop cards to different columns requires installation of Azure DevOps Server 2020.1 update. To learn more, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#stakeholders-can-move-work-items-across-board-columns).  
 
 ::: moniker-end
 

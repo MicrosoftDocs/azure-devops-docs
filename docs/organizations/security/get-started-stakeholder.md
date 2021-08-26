@@ -215,7 +215,7 @@ As work completes in one stage, update the status of an item by dragging it to a
 
 ::: moniker range="azure-devops-2020"
 > [!NOTE]   
-> The drag-and-drop feature to update the work item state requires installation of Azure DevOps Server 2020.1 update. To learn more, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#stakeholders-can-move-work-items-across-board-columns).  
+> The ability for Stakeholders to drag-and-drop cards to different columns requires installation of Azure DevOps Server 2020.1 update. To learn more, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#stakeholders-can-move-work-items-across-board-columns).  
 ::: moniker-end
 
 ## Add details to a work item
