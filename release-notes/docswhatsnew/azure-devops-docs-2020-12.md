@@ -180,7 +180,7 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Example script has been truncated or contains errors #9514](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9514)
 - [Use the OAuth token to access the REST API examples does not work as-is #9488](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9488)
 - [Wiki page menu options for code wikis aren't matching documentation #9480](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9480)
-- [Links to macos-10.14 readmes #9404](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9404)
+- [Links to macOS-latest readmes #9404](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9404)
 - [Arguments, RuntimeStack list link missing #9401](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9401)
 - [Predefined variables for repository resource trigger #9389](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9389)
 - [Can users contribute to their own branches only #9364](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9364)

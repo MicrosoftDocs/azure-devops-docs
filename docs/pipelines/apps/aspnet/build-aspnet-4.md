@@ -101,7 +101,7 @@ The sample app is a Visual Studio solution that has two projects:
 
 You can use Azure Pipelines to build your .NET Framework projects without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](../../agents/hosted.md) in Azure Pipelines have several released versions of Visual Studio pre-installed to help you build your projects.
 * Use `windows-2019` for Windows Server 2019 with Visual Studio 2019
-* Use `vs2017-win2016` for Windows Server 2016 with Visual Studio 2017
+* Use `windows-latest` for Windows Server 2016 with Visual Studio 2017
 
 You can also use a [self-hosted agent](../../agents/agents.md#install) to run your builds. This is helpful if you have a large repository and you want to avoid downloading the source code to a fresh machine for every build.
 

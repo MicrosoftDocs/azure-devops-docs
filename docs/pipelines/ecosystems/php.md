@@ -69,7 +69,7 @@ To use a PHP version other than the default, the symlink can be pointed to that 
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-latest'
 
 variables:
   phpVersion: 7.2

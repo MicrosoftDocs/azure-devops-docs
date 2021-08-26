@@ -56,7 +56,7 @@ This YAML file has a job that runs on a [Microsoft-hosted agent](../agents/hoste
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-latest'
 steps:
 - bash: echo "Hello world"
 ```
@@ -68,7 +68,7 @@ jobs:
 - job: myJob
   timeoutInMinutes: 10
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - bash: echo "Hello world"
 ```
@@ -408,17 +408,17 @@ Example jobs that build in parallel (no dependencies):
 jobs:
 - job: Windows
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
   steps:
   - script: echo hello from Windows
 - job: macOS
   pool:
-    vmImage: 'macOS-10.14'
+    vmImage: 'macOS-latest'
   steps:
   - script: echo hello from macOS
 - job: Linux
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - script: echo hello from Linux
 ```
@@ -868,7 +868,7 @@ When you specify one of the `clean` options, they are interpreted as follows:
   jobs:
   - deployment: deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
     workspace:
       clean: all
     environment: staging
@@ -914,7 +914,7 @@ This example YAML file publishes the artifact `WebSite` and then downloads the a
 jobs:
 - job: Build
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - script: npm test
   - task: PublishBuildArtifacts@1
@@ -925,7 +925,7 @@ jobs:
 # download the artifact and deploy it only if the build job succeeded
 - job: Deploy
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - checkout: none #skip checking out the default repository resource
   - task: DownloadBuildArtifacts@0

@@ -73,7 +73,7 @@ In the simplest case, you do not need any logical boundaries in your pipeline. I
 ```yaml
 # this has one implicit stage and one implicit job
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-latest'
 steps:
 - bash: echo "Hello world"
 ```

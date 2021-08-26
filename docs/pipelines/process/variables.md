@@ -806,7 +806,7 @@ jobs:
 # Set an output variable from job A
 - job: A
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
   steps:
   - powershell: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the value"
     name: setvarStep

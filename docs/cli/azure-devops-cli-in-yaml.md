@@ -136,18 +136,16 @@ trigger:
 # Run on all Microsoft-hosted agent images
 strategy:
   matrix:
-    linux16:
-      imageName: "ubuntu-16.04"
     linux18:
       imageName: "ubuntu-18.04"
     linux20:
       imageName: "ubuntu-20.04"
     mac1014:
-      imageName: "macos-10.14"
+      imageName: "macOS-latest"
     mac1015:
       imageName: "macos-10.15"
     windows2016:
-      imageName: "vs2017-win2016"
+      imageName: "windows-latest"
     windows2019:
       imageName: "windows-2019"
   maxParallel: 3

@@ -214,7 +214,7 @@ With this update, we added hub level security for service connections. Now, you 
 
 ### Ubuntu 18.04 pool
 
-Azure Pipelines now supports running your jobs on Ubuntu 18.04. We updated the Microsoft-hosted Azure Pipelines pool to include the Ubuntu-18.04 image. Now, when you reference `ubuntu-latest` pool in your YAML pipelines, it will mean `ubuntu-18.04` and not `ubuntu-16.04`. You can still target 16.04 images in your jobs by using `ubuntu-16.04` explicitly.
+Azure Pipelines now supports running your jobs on Ubuntu 18.04. We updated the Microsoft-hosted Azure Pipelines pool to include the Ubuntu-18.04 image. Now, when you reference `ubuntu-latest` pool in your YAML pipelines, it will mean `ubuntu-18.04` and not `ubuntu-latest`. You can still target 16.04 images in your jobs by using `ubuntu-latest` explicitly.
 
 ### Service Mesh Interface based canary deployments in KubernetesManifest task
 

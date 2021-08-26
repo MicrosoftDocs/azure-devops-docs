@@ -134,7 +134,7 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>Change in .NET SDK preinstallation policy on Microsoft hosted Ubuntu agents</td><td>Pipelines</td><td>Future</td></tr>
     <td>Permissions and checks on variable groups and secure files</td><td>Pipelines</td><td>Future</td></tr>
     <td>Preview of templates support in YAML editors</td><td>Pipelines</td><td>Future</td></tr>
-    <td>Ubuntu-16.04 will be removed from Microsoft-hosted pools in September 2021</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>ubuntu-latest will be removed from Microsoft-hosted pools in September 2021</td><td>Pipelines</td><td>N/A</td></tr>
     </tr>
     <td rowspan="4"><a href="2021/sprint-186-update.md" data-raw-source="[05 May 2021](2021/sprint-186-update.md)">05 May 2021</a></td>
     <td>PAT lifecycle management API general availability</td><td>General</td><td>Future</td></tr>
