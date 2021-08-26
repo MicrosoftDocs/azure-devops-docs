@@ -58,7 +58,7 @@ On [hosted agents](../agents/hosted.md), conda is left out of `PATH` by default 
 
 # [Hosted macOS](#tab/macos)
 
-Use the `macOS-10.14` agent with Anaconda. 
+Use the `macOS-latest` agent with Anaconda. 
 
 ```yaml
 - bash: echo "##vso[task.prependpath]$CONDA/bin"

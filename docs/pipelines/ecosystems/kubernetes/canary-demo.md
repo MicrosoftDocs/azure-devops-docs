@@ -61,7 +61,7 @@ helm install --name sampleapp stable/prometheus-operator
     - master
     
     pool:
-      vmImage: Ubuntu-16.04
+      vmImage: ubuntu-latest
     
     variables:
       imageName: azure-pipelines-canary-k8s
@@ -105,7 +105,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
     - master
     
     pool:
-      vmImage: Ubuntu-16.04
+      vmImage: ubuntu-latest
     
     variables:
       imageName: azure-pipelines-canary-k8s
@@ -121,7 +121,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
       - job: Build
         displayName: Build
         pool:
-          vmImage: Ubuntu-16.04
+          vmImage: ubuntu-latest
         steps:
         - task: Docker@2
           displayName: Build and push image
@@ -152,7 +152,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
       - deployment: Deploycanary
         displayName: Deploy canary
         pool:
-          vmImage: Ubuntu-16.04
+          vmImage: ubuntu-latest
         environment: 'akscanary.canarydemo'
         strategy:
           runOnce:
@@ -258,7 +258,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
       - deployment: PromoteCanary
         displayName: Promote Canary
         pool: 
-          vmImage: Ubuntu-16.04
+          vmImage: ubuntu-latest
         environment: 'akspromote.canarydemo'
         strategy:
           runOnce:
@@ -285,7 +285,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
       - deployment: RejectCanary
         displayName: Reject Canary
         pool: 
-          vmImage: Ubuntu-16.04
+          vmImage: ubuntu-latest
         environment: 'akscanary.canarydemo'
         strategy:
           runOnce:

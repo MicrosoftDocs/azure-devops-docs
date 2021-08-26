@@ -312,7 +312,7 @@ script: echo $MY_ENVIRONMENT_VARIABLE
 **azure-pipelines.yml**
 ``` yaml
 pool:
-  vmImage: 'macOS-10.14'
+  vmImage: 'macOS-latest'
 strategy:
   matrix:
     set_env_to_one:
@@ -393,11 +393,11 @@ script: echo Hello, world!
 strategy:
   matrix:
     linux:
-      imageName: 'ubuntu-16.04'
+      imageName: 'ubuntu-latest'
     mac:
-      imageName: 'macos-10.14'
+      imageName: 'macOS-latest'
     windows:
-      imageName: 'vs2017-win2016'
+      imageName: 'windows-latest'
 
 pool:
   vmImage: $(imageName)

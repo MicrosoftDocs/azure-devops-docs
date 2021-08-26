@@ -33,7 +33,7 @@ A pipeline is defined using a YAML file in your repo. Usually, this file is name
     - main
 
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'Ubuntu-latest'
 
     steps:
     - task: Maven@3
@@ -63,14 +63,14 @@ You can build your project on [Microsoft-hosted agents](../pipelines/agents/host
 
     ```yaml
     pool:
-      vmImage: "ubuntu-16.04"
+      vmImage: "ubuntu-latest"
     ```
 
 * To choose a different platform like Windows or Mac, change the `vmImage` value:
 
     ```yaml
     pool:
-      vmImage: "vs2017-win2016"
+      vmImage: "windows-latest"
     ```
 
     ```yaml
@@ -109,7 +109,7 @@ You can build and test your project on multiple platforms. One way to do it is w
 
     ```yaml
     pool:
-      vmImage: "ubuntu-16.04"
+      vmImage: "ubuntu-latest"
     ```
 
     with the following content:
@@ -118,11 +118,11 @@ You can build and test your project on multiple platforms. One way to do it is w
     strategy:
       matrix:
         linux:
-          imageName: "ubuntu-16.04"
+          imageName: "ubuntu-latest"
         mac:
-          imageName: "macos-10.14"
+          imageName: "macOS-latest"
         windows:
-          imageName: "vs2017-win2016"
+          imageName: "windows-latest"
       maxParallel: 3
 
     pool:
@@ -172,10 +172,10 @@ To build a project using different versions of that language, you can use a `mat
     strategy:
       matrix:
         jdk10_linux:
-          imageName: "ubuntu-16.04"
+          imageName: "ubuntu-latest"
           jdk_version: "1.10"
         jdk11_windows:
-          imageName: "vs2017-win2016"
+          imageName: "windows-latest"
           jdk_version: "1.11"
       maxParallel: 2
 

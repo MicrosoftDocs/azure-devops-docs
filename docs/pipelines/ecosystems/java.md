@@ -119,7 +119,7 @@ Update the following snippet in your `azure-pipelines.yml` file to select the ap
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-latest' # other options: 'macOS-latest', 'vs2017-win2016'
+  vmImage: 'ubuntu-latest' # other options: 'macOS-latest', 'windows-latest'
 ```
 
 See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.

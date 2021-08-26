@@ -428,7 +428,7 @@ jobs:
 
 - job: buildandtest
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   # publish an artifact called drop
   - task: PublishBuildArtifacts@1
@@ -443,7 +443,7 @@ jobs:
 
 - job: deploy
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   dependsOn: buildandtest
   condition: succeeded()
   steps:
