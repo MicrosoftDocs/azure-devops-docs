@@ -220,10 +220,7 @@ parameters:
   default: ubuntu-latest
   values:
   - windows-latest
-  - windows-latest
   - ubuntu-latest
-  - ubuntu-latest
-  - macOS-latest
   - macOS-latest
 
 steps:
