@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 01/18/2021
+ms.date: 08/26/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -30,13 +30,15 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md)
-| Windows Server 2016 with Visual Studio 2017 | *vs2017-win2016* | `vs2017-win2016` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2016-Readme.md)
+| Windows Server 2022 with Visual Studio 2022 | *windows-2022* |  `windows-2022` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2022-Readme.md) |
+| Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md) |
+| Windows Server 2016 with Visual Studio 2017 | *vs2017-win2016* | `vs2017-win2016` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2016-Readme.md) |
 | Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-latest` OR `ubuntu-20.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-README.md)
-| Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md)
-| Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1604-README.md)
-| macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-10.14` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md)
-| macOS X Catalina 10.15 | *macOS-10.15* |  `macOS-latest` OR `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md)
+| Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md) |
+| Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1604-README.md) |
+| macOS 11 Big Sur | *macOS-11* |  `macOS-11` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11-Readme.md) |
+| macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-10.14` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md) |
+| macOS X Catalina 10.15 | *macOS-10.15* |  `macOS-latest` OR `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md) |
 
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
 
@@ -104,11 +106,11 @@ layout of the hosted agents is subject to change without warning.
 
 ## Hardware
 
-Microsoft-hosted agents that run Windows and Linux images are provisioned on Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series). These virtual machines are colocated in the same geography as your Azure DevOps organization.
+Microsoft-hosted agents that run Windows and Linux images are provisioned on Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series) with a 2 core CPU, 7 GB of RAM, and 14 GB of SSD disk space. These virtual machines are co-located in the same geography as your Azure DevOps organization.
 
-Agents that run macOS images are provisioned on Mac pros. These agents always run in the US irrespective of the location of your Azure DevOps organization. If data sovereignty is important to you and if your organization is not in the US, then you should not use macOS images. [Learn more](../../organizations/security/data-location.md).
+Agents that run macOS images are provisioned on Mac pros with a 3 core CPU, 14 GB of RAM, and 14 GB of SSD disk space. These agents always run in the US irrespective of the location of your Azure DevOps organization. If data sovereignty is important to you and if your organization is not in the US, then you should not use macOS images. [Learn more](../../organizations/security/data-location.md).
 
-All of these machines have 10 GB of free disk space available for your pipelines to run. This free space is consumed when your pipeline checks out source code, downloads packages, pulls docker images, or generates intermediate files.
+All of these machines have at least 10 GB of free disk space available for your pipelines to run. This free space is consumed when your pipeline checks out source code, downloads packages, pulls docker images, or generates intermediate files.
 
 > [!IMPORTANT]
 > We cannot honor requests to increase disk space on Microsoft-hosted agents, or to provision more powerful machines. If the specifications of Microsoft-hosted agents do not meet your needs, then you should consider [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md).
@@ -136,7 +138,7 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 1. Retrieve the IP addresses for all regions in your geography from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South** or **West Europe**, you must include additional IP ranges based on your fallback geography, as described in the following note.
 
 >[!NOTE]
->Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges as described in the previous section, additional IP ranges must be included for the regions in the capacity fallback geography.
+>Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges for all the regions in your geography as described in the previous section, additional IP ranges must be included for the regions in the capacity fallback geography.
 >
 >If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**.
 >
@@ -160,23 +162,26 @@ namespace WeeklyFileIPRanges
     class Program
     {
         // Path to the locally saved weekly file
-        const string weeklyFilePath = @"C:\MyPath\ServiceTags_Public_20200504.json";
+        const string weeklyFilePath = @"C:\MyPath\ServiceTags_Public_20210823.json";
 
         static void Main(string[] args)
         {
             // United States geography has the following regions:
-            // Central US, East US 2, East US, North Central US, 
-            // South Central US, West Central US, West US, West US 2
+            // Central US, East US, East US 2, East US 3, North Central US, 
+            // South Central US, West Central US, West US, West US 2, West US 3
+            // This list is accurate as of 8/26/2021
             List<string> USGeographyRegions = new List<string>
             {
                 "centralus",
                 "eastus",
                 "eastus2",
+                "eastus3",
                 "northcentralus",
                 "southcentralus",
                 "westcentralus",
                 "westus",
-                "westus2"
+                "westus2",
+                "westus3"
             };
 
             // Load the weekly file
@@ -222,10 +227,12 @@ Microsoft-hosted agents run on secure Azure platform. However, you must be aware
 Microsoft-hosted agents:
 
 * Have [the above software](#software). You can also add software during your build or release using [tool installer tasks](../process/tasks.md#tool-installers).
+  * You get a freshly imaged agent for each job in your pipeline.
 * Provide 10 GB of storage for your source and build outputs.
 * Provide a free tier:
   * Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month. [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
   * Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
+  * When you create a new Azure DevOps organization, you are not given these free grants by default. To request the free grant for public or private projects, submit [a request](https://aka.ms/azpipelines-parallelism-request).
 * Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series)
 * Run as an administrator on Windows and a passwordless sudo user on Linux
 * (Linux only) Run steps in a `cgroup` that offers 6 GB of physical memory and 13 GB of total memory
@@ -246,7 +253,7 @@ If Microsoft-hosted agents don't meet your needs, then you can deploy your own [
 
 ### How can I see what software is included in an image?
 
-You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table. 
+You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Software](#software) table. 
 
 ### How does Microsoft choose the software and versions to put on the image?
 
