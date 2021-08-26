@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 08/25/2021
+ms.date: 08/26/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -162,23 +162,26 @@ namespace WeeklyFileIPRanges
     class Program
     {
         // Path to the locally saved weekly file
-        const string weeklyFilePath = @"C:\MyPath\ServiceTags_Public_20200504.json";
+        const string weeklyFilePath = @"C:\MyPath\ServiceTags_Public_20210823.json";
 
         static void Main(string[] args)
         {
             // United States geography has the following regions:
-            // Central US, East US 2, East US, North Central US, 
-            // South Central US, West Central US, West US, West US 2
+            // Central US, East US, East US 2, East US 3, North Central US, 
+            // South Central US, West Central US, West US, West US 2, West US 3
+            // This list is accurate as of 8/26/2021
             List<string> USGeographyRegions = new List<string>
             {
                 "centralus",
                 "eastus",
                 "eastus2",
+                "eastus3",
                 "northcentralus",
                 "southcentralus",
                 "westcentralus",
                 "westus",
-                "westus2"
+                "westus2",
+                "westus3"
             };
 
             // Load the weekly file
