@@ -42,7 +42,7 @@ In this tutorial, you will:
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Select **Create Feed** to create a new feed.
+2. Select **Create Feed** to create a new feed.
 
     :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button.":::
 
@@ -50,7 +50,7 @@ In this tutorial, you will:
 
 ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-1. Select **New Feed** to create a new feed.
+2. Select **New Feed** to create a new feed.
 
     :::image type="content" source="../media/new-feed-button.png" alt-text="Screenshot showing the create feed button - TFS.":::
 
@@ -58,7 +58,7 @@ In this tutorial, you will:
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
+3. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
 
     :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window.":::
 
@@ -66,7 +66,7 @@ In this tutorial, you will:
 
 ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-1. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
+3. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
 
     :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window - TFS.":::
 
