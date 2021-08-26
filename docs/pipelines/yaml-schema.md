@@ -543,7 +543,7 @@ jobs:
 - deployment: DeployWeb
   displayName: deploy Web App
   pool:
-    vmImage: 'Ubuntu-16.04'
+    vmImage: 'Ubuntu-latest'
   # creates an environment if it doesn't exist
   environment: 'smarthotel-dev'
   strategy:
@@ -774,13 +774,13 @@ stages:
   jobs:
   - job: ${{ parameters.name }}_Windows
     pool:
-      vmImage: vs2017-win2016
+      vmImage: windows-latest
     steps:
     - script: npm install
     - script: npm test -- --file=${{ parameters.testFile }}
   - job: ${{ parameters.name }}_Mac
     pool:
-      vmImage: macos-10.14
+      vmImage: macOS-latest
     steps:
     - script: npm install
     - script: npm test -- --file=${{ parameters.testFile }}
@@ -855,19 +855,19 @@ jobs:
   parameters:
     name: macOS
     pool:
-      vmImage: 'macOS-10.14'
+      vmImage: 'macOS-latest'
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Linux
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Windows
     pool:
-      vmImage: 'vs2017-win2016'
+      vmImage: 'windows-latest'
     sign: true  # Extra step on Windows only
 ```
 
@@ -912,19 +912,19 @@ steps:
 jobs:
 - job: macOS
   pool:
-    vmImage: 'macOS-10.14'
+    vmImage: 'macOS-latest'
   steps:
   - template: steps/build.yml # Template reference
 
 - job: Linux
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - template: steps/build.yml # Template reference
 
 - job: Windows
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
   steps:
   - template: steps/build.yml # Template reference
   - script: sign              # Extra step on Windows only
@@ -972,7 +972,7 @@ The variables are specified only once.
 # File: variables/build.yml
 variables:
 - name: vmImage
-  value: vs2017-win2016
+  value: windows-latest
 - name: arch
   value: x64
 - name: config
@@ -1035,11 +1035,8 @@ parameters:
   default: ubuntu-latest
   values:
   - windows-latest
-  - vs2017-win2016
   - ubuntu-latest
-  - ubuntu-16.04
   - macOS-latest
-  - macOS-10.14
 
 trigger: none
 
@@ -1714,7 +1711,7 @@ To use a Microsoft-hosted pool, omit the name and specify one of the available [
 
 ```yaml
 pool:
-  vmImage: ubuntu-16.04
+  vmImage: ubuntu-latest
 ```
 
 To use a private pool with no demands:
@@ -2113,9 +2110,9 @@ steps:
 ```
 ### Artifact download location
 
-Artifacts from the current pipeline are downloaded to $(**Pipeline.Workspace**)/<artifact name>.
+Artifacts from the current pipeline are downloaded to `$(**Pipeline.Workspace**)/<artifact name>`.
 
-Artifacts from the associated pipeline resource are downloaded to $(**Pipeline.Workspace**)/\<pipeline resource identifier\>/<artifact name>.
+Artifacts from the associated pipeline resource are downloaded to `$(**Pipeline.Workspace**)/\<pipeline resource identifier\>/<artifact name>`.
 
 ### Automatic download in deployment jobs
 
