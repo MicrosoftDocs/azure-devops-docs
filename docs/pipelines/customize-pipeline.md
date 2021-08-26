@@ -287,7 +287,7 @@ jobs:
 > [!NOTE] 
 > Azure Boards allows you to configure your work item tracking using several different processes, such as Agile or Basic. Each process has different work item types, and not every work item type is available in each process. For a list of work item types supported by each process, see [Work item types (WITs)](../boards/work-items/about-work-items.md#work-item-types-wits).
 
-The previous example uses [Runtime paramaters](process/runtime-parameters.md) to configure whether the pipeline succeeds or fails. When manually running the pipeline, you can set the value of the `succeed` parameter. The `script` step in the first job of the pipeline evaluates the `succeed` parameter and only runs when `succeed` is set to false.
+The previous example uses [Runtime parameters](process/runtime-parameters.md) to configure whether the pipeline succeeds or fails. When manually running the pipeline, you can set the value of the `succeed` parameter. The `script` step in the first job of the pipeline evaluates the `succeed` parameter and only runs when `succeed` is set to false.
 
 The second job in the pipeline has a dependency on the first pipeline, and only runs if the first job fails. The second job uses the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command to create a bug. For more information on running Azure DevOps CLI commands from a pipeline, see [Run commands in a YAML pipeline](../cli/azure-devops-cli-in-yaml.md).
 
