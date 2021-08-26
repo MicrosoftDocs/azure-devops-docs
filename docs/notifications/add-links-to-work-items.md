@@ -22,14 +22,14 @@ You can enter `#ID` from within the following areas to link to your work items:
 
 ::: moniker range=">= azure-devops-2020"
 - A work item discussion or any rich-text field
-- Git commit comments and pull request discussions
+- Git commit comments and pull request descriptions
 - TFVC changeset or shelveset comments
 - Wiki pages
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 - A work item discussion 
-- Git commit comments and pull request discussions
+- Git commit comments and pull request descriptions
 - TFVC changeset or shelveset comments
 ::: moniker-end
  
@@ -165,11 +165,11 @@ You can also you link a query results table to a wiki. This supports quick acces
 - [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
 - [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
 - [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
-- [Save work with commits](../repos/git/commits.md)
-- [View and manage pull requests](../repos/git/pull-requests.md)
 - [Link type reference](../boards/queries/link-type-reference.md)
 - [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
 ::: moniker-end
+
+
 
 ::: moniker range="< azure-devops-2020"
 
@@ -180,7 +180,11 @@ You can also you link a query results table to a wiki. This supports quick acces
 - [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
 - [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
 - [Link type reference](../boards/queries/link-type-reference.md)
-- [Save work with commits](../repos/git/commits.md)
-- [View and manage pull requests](../repos/git/pull-requests.md)
 - [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
 ::: moniker-end
+
+
+### Azure Repos, Git
+
+- [Save work with commits](../repos/git/commits.md)
+- [View and manage pull requests](../repos/git/pull-requests.md)

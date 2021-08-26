@@ -11,7 +11,7 @@ ms.date: 08/24/2021
 ---
 
 
-# Auto complete work items with pull requests 
+# Auto-complete work items with pull requests 
 
 [!INCLUDE [temp](../includes/version-azure-boards-plus-2018-2020.md)]
 
@@ -28,7 +28,7 @@ When you link a work item to a pull request (PR), you have the option to automat
 To learn more about pull requests, see [Create, view, and manage pull requests](../../repos/git/pull-requests.md).
 
 
-## Auto-complete work items upon pull request merge
+## Auto-complete work items  
 
 As shown in the following image, check the box to **Complete linked work items after merging**. The system defaults to your selection for future PRs. 
 
@@ -50,7 +50,7 @@ To learn more about process models, see [Customize your work tracking experience
 
 ::: moniker range=">= azure-devops-2020"
 
-## Specify the workflow state of linked work items when merging a pull request
+## Specify the workflow state of linked work items 
 
 To transition a work item to a specific workflow state, you can enter the information in the pull request Description. Prefix the **#ID** with a valid workflow state for the work item you mention. 
 ::: moniker-end 
