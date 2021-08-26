@@ -4,7 +4,7 @@ titleSuffix: Azure Pipelines
 description: How to migrate from Travis to Azure Pipelines
 ms.topic: conceptual
 ms.assetid: F4592A2E-714A-4208-AD46-00D1A6D709C4
-ms.date: 12/17/2020
+ms.date: 08/26/2021
 monikerRange: azure-devops
 ---
 
@@ -91,7 +91,7 @@ that are executed automatically for the most commonly-used languages:
 | `go`                     | `go get -t -v ./...`<br>`make` **or** `go test` |
 | `java`<br>`groovy`       | **Gradle**:<br>`gradle assemble`<br>`gradle check`<br><br>**Maven**:<br>`mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V`<br>`mvn test -B`<br><br>**Ant**:<br>`ant test` |
 | `node_js`                | `npm install` **or** `npm ci` **or** `yarn`<br>`npm test` |
-| <span style="white-space: nowrap">`objective-c`</span><br>`swift` | `pod install` **or** `bundle exec pod install`<br>`xcodebuild -scheme [scheme] build test \| xcpretty` |
+| `objective-c`<br>`swift` | `pod install` **or** `bundle exec pod install`<br>`xcodebuild -scheme [scheme] build test \| xcpretty` |
 | `perl`                   | `cpanm --quiet --installdeps --notest .`<br><br>**Build.PL**:<br>`perl ./Build.pl`<br>`./Build test`<br><br>**Makefile.PL**:<br>`perl Makefile.PL`<br>`make test`<br><br>**Makefile**:<br>`make test` |
 | `php`                    | `phpunit` |
 | `python`                 | `pip install -r requirements.txt`
