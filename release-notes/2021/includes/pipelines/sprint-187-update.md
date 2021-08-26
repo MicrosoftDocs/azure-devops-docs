@@ -86,11 +86,11 @@ Post validation, you can choose to navigate into the template. You will be able 
 Please note that this feature is in preview. There are known limitations, some of which we are working to address.
 If the template has required parameters that are not provided as inputs in the main YAML file, then the validation fails and prompts you to provide those inputs. In an ideal experience, the validation should not be blocked and you should be able to fill in the input parameters using intellisense. In addition, you cannot create a new template from the editor. You can only use or edit existing templates.
 
-### ubuntu-latest will be removed from Microsoft-hosted pools in September 2021
+### Ubuntu-16.04 will be removed from Microsoft-hosted pools in September 2021
 
 Traditional 5-years support of Ubuntu 16.04 by Canonical [ends in April, 2021](https://ubuntu.com/16-04). To keep our environment updated and secured, we will remove Ubuntu 16.04 on September 20, 2021.
 
-You will need to migrate ubuntu-latest workflows to ubuntu-18.04 or ubuntu-latest which will run on Ubuntu 20.04 LTS.
+You will need to migrate ubuntu-16.04 workflows to ubuntu-18.04 or ubuntu-latest which will run on Ubuntu 20.04 LTS.
 
 To make sure everyone is aware of this change, we have scheduled two short brownouts. Any Ubuntu 16.04 builds will fail during the brownout period. Therefore, it is recommended to migrate your pipelines prior to September 6, 2021.
 
