@@ -96,7 +96,7 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Is it possible to include one agent to multiple pools? #7367](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7367)
 - [Pre-reqs need some clarification. #7350](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7350)
 - [Header vs Page Title Mismatch #7344](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7344)
-- [Is macOS-latest really macOS-latest? The latest is 10.15 #7343](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7343)
+- [Is macOS-latest really macOS-10.14? The latest is 10.15 #7343](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7343)
 - [spelling mistake. #7309](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7309)
 - [Powershell Version #7300](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7300)
 - [Agent.BuildDirectory and Pipeline.Workspace seem synonymous but not sure #7298](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7298)

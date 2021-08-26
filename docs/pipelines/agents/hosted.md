@@ -31,11 +31,11 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
 | Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md)
-| Windows Server 2016 with Visual Studio 2017 | *windows-latest* | `windows-latest` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2016-Readme.md)
+| Windows Server 2016 with Visual Studio 2017 | *vs2017-win2016* | `vs2017-win2016` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2016-Readme.md)
 | Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-latest` OR `ubuntu-20.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-README.md)
 | Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md)
-| Ubuntu 16.04 | *ubuntu-latest* | `ubuntu-latest` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1604-README.md)
-| macOS X Mojave 10.14 | *macOS-latest* |  `macOS-latest` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macOS-latest-Readme.md)
+| Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1604-README.md)
+| macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-10.14` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md)
 | macOS X Catalina 10.15 | *macOS-10.15* |  `macOS-latest` OR `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md)
 
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
@@ -47,7 +47,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 > - [macOS X High Sierra 10.13](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.13-Readme.md) (`macOS-10.13`)
 > - [Windows Server Core 1803](https://github.com/actions/virtual-environments/tree/main/images/win) - (`win1803`)
 >
-> Customers are encouraged to migrate to `windows-latest`, `macOS-latest`, or a [self-hosted agent](v2-windows.md) respectively.
+> Customers are encouraged to migrate to `vs2017-win2016`, `macOS-10.14`, or a [self-hosted agent](v2-windows.md) respectively.
 >
 > For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
 
@@ -330,7 +330,7 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh <symlink>"`
 
   The list of all available Xamarin SDK versions and symlinks can be found in the agents documentation:
-  - [macOS 10.14](https://github.com/actions/virtual-environments/blob/main/images/macos/macOS-latest-Readme.md#xamarin)
+  - [macOS 10.14](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md#xamarin)
   - [macOS 10.15](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xamarin)
 
   This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.

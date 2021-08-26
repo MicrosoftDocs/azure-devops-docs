@@ -140,12 +140,8 @@ strategy:
       imageName: "ubuntu-18.04"
     linux20:
       imageName: "ubuntu-20.04"
-    mac1014:
-      imageName: "macOS-latest"
     mac1015:
       imageName: "macos-10.15"
-    windows2016:
-      imageName: "windows-latest"
     windows2019:
       imageName: "windows-2019"
   maxParallel: 3
