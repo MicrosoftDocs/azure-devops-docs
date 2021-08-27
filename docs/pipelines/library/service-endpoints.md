@@ -30,8 +30,6 @@ You define and manage service connections from the Admin settings of your projec
 * Azure DevOps: `https://dev.azure.com/{organization}/{project}/_settings/adminservices`
 * Team Foundation Server (TFS): `https://{tfsserver}/{collection}/{project}/_admin/_services`
 
-<a name="create-new"></a>
-
 ## Create a service connection
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
@@ -41,10 +39,7 @@ You define and manage service connections from the Admin settings of your projec
 
 1. Fill in the parameters for the service connection. The list of parameters differs for each type of service connection - see the [following list](#common-service-connection-types).
    
-1. Decide if you want the service connection to be accessible for any pipeline by
-   setting the **Allow all pipelines to use this connection** option. This option allows pipelines
-   defined in YAML, which are not automatically authorized for service connections,
-   to use this service connection. See [Use a service connection](#use-connection).
+1. Decide if you want the service connection to be accessible for any pipeline by setting the **Allow all pipelines to use this connection** option. This option allows pipelines defined in YAML, which are not automatically authorized for service connections, to use this service connection. See [Use a service connection](#use-a-service-connection).
 
 1. Choose **OK** to create the connection. For example, this is the default **Azure Resource Manager** connection dialog:
 
@@ -58,8 +53,7 @@ You define and manage service connections from the Admin settings of your projec
 
 ## Manage a service connection
 
-1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
-   Or, in TFS, open the **Services** page from the "settings" icon in the top menu bar.
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings). Or, in TFS, open the **Services** page from the **Settings** icon in the top menu bar.
 
 1. Select the service connection you want to manage.
 
@@ -76,8 +70,6 @@ You define and manage service connections from the Admin settings of your projec
 1. **Approvals and checks**, **Security**, and **Delete** are part of the more options at the top-right corner.
 
    ![Azure Resource Manager more options](../release/_img/azure-rm-endpoint/azure-rm-more-options.png)
-
-<a name="security"></a>
 
 ## Secure a service connection
 
@@ -175,8 +167,6 @@ Project permissions control which projects can use this service connection. By d
 > [!NOTE]
 > Project permissions feature is dependent on the new service connections UI and once we enable this feature, the old service connections UI is no longer usable.
 
-<a name="use-a-service-connection"></a>
-
 ## Use a service connection
 
 After the new service connection is created:
@@ -210,14 +200,12 @@ Next, you must authorize the service connection. To do this, or if you encounter
 > [!NOTE]
 > A service connection cannot be specified by using a variable.
 
-<a name="common-service-connection-types"></a>
-
 ## Common service connection types
 
 Azure Pipelines and TFS support various service connection types by default, including:
 
 - [Azure Classic](#azure-classic-service-connection)
-- [Azure Repos/Team Foundation Server](#azure-repos-service-connection)
+- [Azure Repos/Team Foundation Server](#azure-repos)
 - [Azure Resource Manager](#azure-resource-manager-service-connection)
 - [Azure Service Bus](#azure-service-bus-service-connection)
 - [Azure Service Fabric](#azure-service-fabric-service-connection)
@@ -251,7 +239,7 @@ the information you entered, and indicates if the call succeeded.
 
 Defines and secures a connection to a Microsoft Azure subscription using Azure credentials or an Azure management certificate.
 
-[How do I create a new service connection?](#create-new)
+[How do I create a new service connection?](#create-a-service-connection)
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -268,7 +256,7 @@ Defines and secures a connection to a Microsoft Azure subscription using Azure c
 
 ---
 
-<a name=azure-repos-service-connection></a>
+<a name=azure-repos></a>
 
 ### Azure Repos/Team Foundation Server service connection
 
@@ -462,8 +450,8 @@ Defines a connection to a container registry.
 ### External Git service connection
 
 Defines and secures a connection to a Git repository server.
-There is a specific service connection for [GitHub](#github-service-connection)
-and [GitHub Enterprise Server](#github-enterprise-server-service-connection) connections.
+
+There is a specific service connection for [GitHub](#github-service-connection) and [GitHub Enterprise Server](#github-enterprise-server-service-connection) connections.
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -497,7 +485,7 @@ Defines and secures a connection to any other type of service or application.
 
 Defines a connection to a GitHub repository.
 
-Note that there is a specific service connection for [External Git servers](#external-github-service-connection) and [GitHub Enterprise Server](#github-enterprise-server-service-connection) connections.
+Note that there is a specific service connection for [External Git servers](#external-git-service-connection) and [GitHub Enterprise Server](#github-enterprise-server-service-connection) connections.
 
 |      Parameter       |                                                                                                                                  Description                                                                                                                                   |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -522,7 +510,7 @@ Also see [Artifact sources](../release/artifacts.md#tfvcsource).
 ### GitHub Enterprise Server service connection
 
 Defines a connection to a GitHub repository.
-Note that there is a specific service connection for [External Git servers](#external-github-service-connection) and [standard GitHub service connections](#github-service-connection).
+Note that there is a specific service connection for [External Git servers](#external-git-service-connection) and [standard GitHub service connections](#github-service-connection).
 
 
 |                 Parameter                  |                                                                                                                                  Description                                                                                                                                   |
