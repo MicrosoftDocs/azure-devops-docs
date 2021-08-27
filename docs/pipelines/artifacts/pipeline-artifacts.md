@@ -1,27 +1,23 @@
 ---
-title: Publish and consume artifacts in pipelines
-titleSuffix: Azure Pipelines and TFS
+title: Publish and download artifacts in your pipeline
 ms.custom: seodec18
-description: Understand pipeline artifacts in Azure Pipelines and Azure DevOps Server
+description: How to publish and consume pipeline artifacts
 ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference
-ms.date: 07/13/2020
+ms.date: 08/27/2021
 monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
 
-# Publish and download artifacts in Azure Pipelines
+# Publish and download pipeline Artifacts
 
 **Azure Pipelines**
 
-Pipeline artifacts provide a way to share files between stages in a pipeline or between different pipelines. They are typically the output of a build process that needs to be consumed by another job or be deployed. Artifacts are associated with the run they were produced in and remain available after the run has completed.
-
-> [!NOTE]
-> Both `PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2` require a minimum agent version of 2.153.1
+Using Azure Pipelines, you can download artifacts from earlier stages in your pipeline or from a another pipeline. You can also publish your artifact to a file share or make it available as a pipeline artifact.
 
 ## Publish artifacts
 
-You can publish your artifacts using YAML, the classic web UI, or Azure CLI
+You can publish your artifacts using YAML, the classic editor, or Azure CLI:
 
 # [YAML](#tab/yaml)
 
@@ -32,7 +28,7 @@ steps:
 ```
 
 > [!NOTE]
-> The `publish` keyword is a shortcut for the **Publish Pipeline Artifact** task.
+> The `publish` keyword is a shortcut for the [Publish Pipeline Artifact task](../tasks/utility/publish-pipeline-artifact.md) .
 
 # [YAML (task)](#tab/yaml-task)
 
@@ -47,7 +43,8 @@ steps:
 - **targetPath**: the path to the folder or file you want to publish.
 - **artifactName**: the name of the artifact that you want to create.
 
-See the [publish Pipeline Artifacts task](../tasks/utility/publish-pipeline-artifact.md) for more details.
+> [!NOTE]
+> Publishing pipeline artifacts is not supported in release pipelines.
 
 # [Classic](#tab/classic)
 
@@ -61,7 +58,7 @@ See the [publish Pipeline Artifacts task](../tasks/utility/publish-pipeline-arti
 
 # [Azure CLI](#tab/azure-cli)
 
-- Run the following command to publish your Artifact
+- Run the following command to publish your Artifact:
 
   ```Command
     az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
@@ -69,19 +66,18 @@ See the [publish Pipeline Artifacts task](../tasks/utility/publish-pipeline-arti
 
 ---
 
-Things to keep in mind:
+Although the artifact's name is optional, it is a good practice to specify a name that accurately reflects the contents of your artifact. If you plan to consume the artifact from a job running on a different OS, you must ensure all the file paths are valid for the target environment. For example, a file name containing the character `\` or `*` will fail to download on Windows.
 
-* Although artifact name is optional, it is a good practice to specify a name that accurately reflects the contents of the artifact.
-
-* The path of the file or folder to publish is required. It can be an absolute or a relative path to `$(System.DefaultWorkingDirectory)`.
-
-* If you plan to consume the artifact from a job running on a different operating system or file system, you must ensure all file paths are valid for the target environment. For example, a file name containing a `\` or `*` character will typically fail to download on Windows.
+The path of the file/folder to you want to publish is required. This can be an absolute or a relative path to `$(System.DefaultWorkingDirectory)`.
 
 > [!NOTE]
-> You will not be billed for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching. For more information, see [Which artifacts count toward my total billed storage](../../artifacts/start-using-azure-artifacts.md#q-which-artifacts-count-toward-my-total-billed-storage).
+> Packages in Azure Artifacts are immutable. Once you publish a package, its version will be permanently reserved. rerunning failed jobs will fail if the package has been published. See [Concepts](../../artifacts/artifacts-key-concepts.md) for more details.
+
+> [!NOTE]
+> You will not be billed for storing Pipeline Artifacts. Pipeline Caching is also exempt from storage billing. See [Which artifacts count toward my total billed storage](../../artifacts/start-using-azure-artifacts.md#q-which-artifacts-count-toward-my-total-billed-storage).
 
 > [!CAUTION]
-> Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.
+> Deleting a pipeline run will result in the deletion of all Artifacts associated with that run.
 
 ### Use .artifactignore
 
@@ -99,7 +95,7 @@ Example: ignore all files except **.exe** files:
 
 ## Download artifacts
 
-You can download artifacts using YAML, the classic web UI, or Azure CLI.
+You can download artifacts using YAML, the classic editor, or Azure CLI.
 
 # [YAML](#tab/yaml)
 
