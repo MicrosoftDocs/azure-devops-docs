@@ -229,9 +229,7 @@ Azure Pipelines and TFS support various service connection types by default, inc
 - [Subversion](#subversion-service-connection)
 - [Visual Studio App Center](#visual-studio-app-center-service-connection)
 
-After you enter the parameters when creating a service connection, validate the
-connection. The validation link uses a REST call to the external service with
-the information you entered, and indicates if the call succeeded.
+After you enter the parameters when creating a service connection, validate the connection. The validation link uses a REST call to the external service with the information you entered, and indicates if the call succeeded.
 
 <a name=azure-classic-service-connection></a>
 
@@ -253,6 +251,8 @@ Defines and secures a connection to a Microsoft Azure subscription using Azure c
 | Management Certificate | Required for Certificate-based authentication. Copy the value of the management certificate key from your [publish settings XML file](https://go.microsoft.com/fwlink/?LinkID=312990) or the Azure portal. |
 
 > If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service connection.
+
+<br />
 
 ---
 
@@ -276,6 +276,8 @@ Use the **Verify connection** link to validate your connection information.
 
 See also [Authenticate access with personal access tokens for Azure DevOps](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
+<br />
+
 ---
 
 <a name=azure-resource-manager-service-connection></a>
@@ -298,10 +300,14 @@ The dialog offers two main modes:
   This is also a useful way to maximize security and limit access.
     Service principals are valid for two years. 
 
-For more information, see [Connect to Microsoft Azure](connect-to-azure.md)
+For more information, see [Connect to Microsoft Azure](connect-to-azure.md).
 
 > [!NOTE]
 > If you don't see any Azure subscriptions or instances, or you have problems validating the connection, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
+
+<br />
+
+---
 
 <a name=azure-service-bus-service-connection></a>
 
@@ -417,6 +423,8 @@ Defines and secures a connection to a Docker host.
 
 Ensure you protect your connection to the Docker host. [Learn more](https://docs.docker.com/engine/security/https/).
 
+<br />
+
 ---
 
 <a name=docker-registry-service-connection></a>
@@ -462,6 +470,8 @@ There is a specific service connection for [GitHub](#github-service-connection) 
 
 Also see [Artifact sources](../release/artifacts.md#sources).
 
+<br />
+
 ---
 
 <a name=generic-service-connection></a>
@@ -503,6 +513,8 @@ Note that there is a specific service connection for [External Git servers](#ext
 
 Also see [Artifact sources](../release/artifacts.md#tfvcsource).
 
+<br />
+
 ---
 
 <a name=github-enterprise-server-service-connection></a>
@@ -533,6 +545,9 @@ Note that there is a specific service connection for [External Git servers](#ext
 > 1. In the **Security** tab, in the right column, choose **Personal access tokens**.
 > 1. Choose the **Add** link and enter the information required to create the token.
 
+
+<br />
+
 ---
 
 <a name=jenkins-service-connection></a>
@@ -550,10 +565,11 @@ Defines a connection to the Jenkins service.
 |             User name             |                                                                                                               Required. The username to connect to the service.                                                                                                                |
 |             Password              |                                                                                                               Required. The password for the specified username.                                                                                                               |
 
-<p />
 
 Also see [Azure Pipelines Integration with Jenkins](https://devblogs.microsoft.com/devops/vsts-visual-studio-team-services-integration-with-jenkins/) 
 and [Artifact sources](../release/artifacts.md#jenkinssource).
+
+<br />
 
 ---
 
@@ -669,8 +685,9 @@ Defines and secures a connection to a NuGet server.
 |       Username        |                                                                                          Required when connection type is **Basic authentication**. The username for authentication.                                                                                           |
 |       Password        |                                                                                           Required when connection type is **Basic authentication**. The password for the username.                                                                                            |
 
+To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, see [NuGet Authenticate](../tasks/package/nuget-authenticate.md). 
 
-To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, See [NuGet Authenticate](../tasks/package/nuget-authenticate.md). 
+<br />
 
 ---
 
@@ -742,9 +759,10 @@ Defines and secures a connection to a remote host using Secure Shell (SSH).
 | Password or passphrase |                                                                                            The password or passphrase for the specified username if using a keypair as credentials.                                                                                            |
 |      Private key       |                                                                                               The entire contents of the private key file if using this type of authentication.                                                                                                |
 
-<p />
 
 Also see [SSH task](../tasks/deploy/ssh.md) and [Copy Files Over SSH](../tasks/deploy/copy-files-over-ssh.md).
+
+<br />
 
 ---
 
