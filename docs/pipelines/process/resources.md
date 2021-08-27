@@ -233,7 +233,7 @@ All artifacts from the current pipeline and from all `pipeline` resources are au
 steps:
 - download: [ current | pipeline resource identifier | none ] # disable automatic download if "none"
   artifact: string ## artifact name, optional; downloads all the available artifacts if not specified
-  terns: string # terns representing files to include; optional
+  patterns: string # patterns representing files to include; optional
 ```
 
 ## [Example](#tab/example)
