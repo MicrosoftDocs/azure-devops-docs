@@ -1748,6 +1748,8 @@ pool:
 
 ---
 
+Learn more about [demands](./process/demands.md).
+
 ::: moniker range=">=azure-devops-2020"
 
 ## Environment
