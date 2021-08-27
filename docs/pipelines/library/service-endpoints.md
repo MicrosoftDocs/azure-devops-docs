@@ -94,7 +94,7 @@ Service connection is a critical resource for various workflows in Azure DevOps 
 
 ### User permissions
 
-You can control who can create, view, use, and manage the service connection with user permissions. There are four roles to manage each of these actions: Creator, Reader, User, and Administrator. In the service connections tab, you can set the hub level permissions. Hub level permissions are inherited. You can also can override the roles for each service connection in the service connections tab. 
+You can control who can create, view, use, and manage the service connection with user permissions. There are four roles to manage each of these actions: Creator, Reader, User, and Administrator. In the service connections tab, you can set the hub level permissions. Hub level permissions are inherited. You can also override the roles for each service connection in the service connections tab. 
 
 | Role on a service connection | Purpose |
 |------------------------------------|---------|
