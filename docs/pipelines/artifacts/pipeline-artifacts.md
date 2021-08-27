@@ -70,8 +70,19 @@ Although the artifact's name is optional, it is a good practice to specify a nam
 
 The path of the file/folder to you want to publish is required. This can be an absolute or a relative path to `$(System.DefaultWorkingDirectory)`.
 
-> [!NOTE]
-> Packages in Azure Artifacts are immutable. Once you publish a package, its version will be permanently reserved. rerunning failed jobs will fail if the package has been published. See [Concepts](../../artifacts/artifacts-key-concepts.md) for more details.
+Packages in Azure Artifacts are immutable. Once you publish a package, its version will be permanently reserved. rerunning failed jobs will fail if the package has been published. A good way to approach this if you want to be able to rerun failed jobs without facing an error *package already exists*, is to use [Conditions](../process/conditions.md) to only run if the previous job succeeded.
+
+```yml
+  jobs:
+  - job: Job1
+    steps:
+      - script: echo Hello Job1!
+
+  - job: Job2
+    steps:
+      - script: echo Hello Job2!
+    dependsOn: Job1
+``` 
 
 > [!NOTE]
 > You will not be billed for storing Pipeline Artifacts. Pipeline Caching is also exempt from storage billing. See [Which artifacts count toward my total billed storage](../../artifacts/start-using-azure-artifacts.md#q-which-artifacts-count-toward-my-total-billed-storage).
