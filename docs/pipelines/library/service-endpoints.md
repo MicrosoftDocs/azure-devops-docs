@@ -21,16 +21,14 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 Service connections enable you to connect to external and remote services to execute tasks in a job. For example, you may need to connect to your Microsoft Azure
-subscription, to a different build server or file server, to an online continuous
-integration environment, or to services you install on remote computers.
+subscription, to a different build server or file server, to an online continuous integration environment, or to services you install on remote computers.
 
-It's possible to define service connections in Azure Pipelines that are available for use in all your tasks. For example, you can create a service connection for your Azure subscription
-and use this service connection name in an Azure Web Site Deployment task in a release pipeline.
+It's possible to define service connections in Azure Pipelines that are available for use in all your tasks. For example, you can create a service connection for your Azure subscription and use this service connection name in an Azure Web Site Deployment task in a release pipeline.
 
 You define and manage service connections from the Admin settings of your project:
 
 * Azure DevOps: `https://dev.azure.com/{organization}/{project}/_settings/adminservices`
-* TFS: `https://{tfsserver}/{collection}/{project}/_admin/_services`
+* Team Foundation Server (TFS): `https://{tfsserver}/{collection}/{project}/_admin/_services`
 
 <a name="create-new"></a>
 
@@ -41,15 +39,14 @@ You define and manage service connections from the Admin settings of your projec
 
 1. Choose **+ New service connection** and select the type of service connection you need.
 
-1. Fill in the parameters for the service connection. The list of parameters differs for each type of service connection - see the [following list](#ep-types).
+1. Fill in the parameters for the service connection. The list of parameters differs for each type of service connection - see the [following list](#common-service-connection-types).
    
 1. Decide if you want the service connection to be accessible for any pipeline by
    setting the **Allow all pipelines to use this connection** option. This option allows pipelines
    defined in YAML, which are not automatically authorized for service connections,
    to use this service connection. See [Use a service connection](#use-connection).
 
-1. Choose **OK** to create the connection.
-For example, this is the default **Azure Resource Manager** connection dialog:
+1. Choose **OK** to create the connection. For example, this is the default **Azure Resource Manager** connection dialog:
 
    ![Azure Resource Manager connection dialog](../release/_img/azure-rm-endpoint/new-azure-rm-connection-01.png)
 
@@ -66,16 +63,19 @@ For example, this is the default **Azure Resource Manager** connection dialog:
 
 1. Select the service connection you want to manage.
 
-1. You will land in the **Overview** tab of the service connection where you can see the details of the service connection i.e. type, creator, authentication type (like Token, Username/Password or OAuth etc.).
-![Azure Resource Manager connection overview](../release/_img/azure-rm-endpoint/azure-rm-overview-page.png)
+1. You will land in the **Overview** tab of the service connection where you can see the details of the service connection, for example, type, creator, authentication type (like Token, Username/Password, or OAuth).
+
+   ![Azure Resource Manager connection overview](../release/_img/azure-rm-endpoint/azure-rm-overview-page.png)
 
 1. Next to the overview tab, you can see **Usage history** that shows the list of pipelines using the service connection.
-![Azure Resource Manager usage history](../release/_img/azure-rm-endpoint/azure-rm-usage-history.png)
 
-1. To update the service connection, select **Edit** at the top right corner of the page.
+   ![Azure Resource Manager usage history](../release/_img/azure-rm-endpoint/azure-rm-usage-history.png)
 
-1. **Approvals and checks**, **Security** and **Delete** are part of the more options at the top right corner.
-![Azure Resource Manager more options](../release/_img/azure-rm-endpoint/azure-rm-more-options.png)
+1. To update the service connection, select **Edit** at the top-right corner of the page.
+
+1. **Approvals and checks**, **Security**, and **Delete** are part of the more options at the top-right corner.
+
+   ![Azure Resource Manager more options](../release/_img/azure-rm-endpoint/azure-rm-more-options.png)
 
 <a name="security"></a>
 
@@ -88,10 +88,12 @@ To manage the security for a connection:
 
 
 1. To manage user permissions at hub level, go to the more options at the top-right corner and choose **Security**.
-![Service connection hub security](../release/media/azure-rm-endpoint/service-connection-hub-security.png)
+
+   ![Service connection hub security](../release/media/azure-rm-endpoint/service-connection-hub-security.png)
 
 1. To manage security for a service connection, open the service connection and go to more options at top-right corner and choose **Security**.
-![Azure Resource Manager security](../release/media/azure-rm-endpoint/security.png)
+
+    ![Azure Resource Manager security](../release/media/azure-rm-endpoint/security.png)
 
 Service connection is a critical resource for various workflows in Azure DevOps like Classic Build and Release pipelines, YAML pipelines, KeyVault Variable groups etc. Based on the usage patterns, service connection security is divided into three categories in the service connections new UI.
 * User permissions
@@ -99,6 +101,7 @@ Service connection is a critical resource for various workflows in Azure DevOps 
 * Project permissions
 
 ### User permissions
+
 You can control who can create, view, use, and manage the service connection with user permissions. There are four roles to manage each of these actions: Creator, Reader, User, and Administrator. In the service connections tab, you can set the hub level permissions. Hub level permissions are inherited. You can also can override the roles for each service connection in the service connections tab. 
 
 | Role on a service connection | Purpose |
@@ -108,69 +111,71 @@ You can control who can create, view, use, and manage the service connection wit
 | User | Members of this role can use the service connection when authoring build or release pipelines or authorize yaml pipelines. |
 | Administrator | In addition to using the service connection, members of this role can manage membership of all other roles for the service connection in the project. Project administrators are added as members by default |
 
-Previously, two special groups, Endpoint Creators and Endpoint Administrator groups were used to control who can create and manage service connections. Now, as part of service connection new UI, we are moving to pure RBAC model i.e. using roles.
-For backward compatibility, in the existing projects, Endpoint Administrators group is added as Administrator role and Endpoint creators group is assigned with creator role which ensures there is no change in the behavior for existing service connections. 
+Previously, two special groups, Endpoint Creators and Endpoint Administrator groups were used to control who can create and manage service connections. Now, as part of service connection new UI, we are moving to pure RBAC model, that is, using roles.
+For backward compatibility, in the existing projects, Endpoint Administrators group is added as Administrator role and Endpoint creators group is assigned with creator role, which ensures there is no change in the behavior for existing service connections. 
 
 > [!NOTE]
 > This change is applicable only in Azure DevOps Services where new UI is available. 
 > Azure DevOps Server 2019 and older versions still follow the previous security model.
 
-Along with the new service connections UI, we are introducing **Sharing of service connections across projects**. With this feature, service connections now become an organization level object however scoped to current project by default. In User permissions section, you can see **Project** and **Organization** level permissions. And the functionalities of administrator role is split between the two levels.
+Along with the new service connections UI, we are introducing **Sharing of service connections across projects**. With this feature, service connections now become an organization level object however scoped to current project by default. In User permissions section, you can see **Project** and **Organization** level permissions. And the functionalities of administrator role are split between the two levels.
 
-#### Project level permissions
+#### Project-level permissions
 
-The project level permissions are the user permissions with reader, user, creator and administrator roles, as explained above, within the project scope. You have inheritance and you can set the roles at the hub level as well as for each service connection. 
+The project-level permissions are the user permissions with reader, user, creator and administrator roles, as explained above, within the project scope. You have inheritance and you can set the roles at the hub level as well as for each service connection. 
 
-The project-level administrator have limited administrative capabilities as below:
+The project-level administrator has limited administrative capabilities:
+
 * A project-level administrator can manage other users and roles at project scope.
 * A project-level administrator can rename a service connection, update description and enable/disable "Allow pipeline access" flag.
-* A project-level administrator can delete a service connection which removes the existence of service connection from the project.
+* A project-level administrator can delete a service connection, which removes the existence of a service connection from the project.
 
 ![Azure Resource Manager project security](../release/_img/azure-rm-endpoint/azure-rm-project-level-security.png)
 
 The user that created the service connection is automatically added to the project level Administrator role for that service connection. And users/groups assigned administrator role at hub level are inherited if the inheritance is turned on.
 
-#### Organization level permissions
-Organization level permissions are introduced along with cross project sharing feature. Any permissions set at this level are reflected across all the projects where the service connection is shared. 
+#### Organization-level permissions
 
-There is no inheritance for organization level permissions. Today we only have administrator role at organization level.
+Organization-level permissions are introduced along with cross-project sharing feature. Any permissions set at this level are reflected across all the projects where the service connection is shared. 
+
+There is no inheritance for organization-level permissions. Currently, we only have administrator role at organization level.
 
 The organization-level administrator has all the administrative capabilities that include:
-* A organization-level administrator can manage organization level users.
-* A organization-level administrator can edit all the fields of a service connection.
-* A organization-level administrator can share/un-share a service connection with other projects.
+
+* An organization-level administrator can manage organization-level users.
+* An organization-level administrator can edit all the fields of a service connection.
+* An organization-level administrator can share/unshare a service connection with other projects.
 
 ![Azure Resource Manager organization security](../release/_img/azure-rm-endpoint/azure-rm-organization-security.png)
 
-The user that created the service connection is automatically added as a organization level Administrator role for that service connection. In all the existing service connections, for backward compatibility, all the connection administrators are made organization-level administrators to ensure there is no change in the behavior.
-
+The user that created the service connection is automatically added as an organization-level Administrator role for that service connection. In all the existing service connections, for backward compatibility, all the connection administrators are made organization-level administrators to ensure there is no change in the behavior.
 
 ### Pipeline permissions
-Pipeline permissions control which YAML pipelines are authorized to use this service connection. This is interlinked with 'Allow pipeline access' checkbox you find in service connection creation dialogue.
 
-You can either choose to open access for all pipelines to consume this service connection from the more options at top right corner of the **Pipeline permissions** section in security tab of a service connection.
+Pipeline permissions control which YAML pipelines are authorized to use this service connection. This is interlinked with **Allow pipeline access** checkbox you find in service connection creation dialog.
+
+You can either choose to open access for all pipelines to consume this service connection from the more options at top-right corner of the **Pipeline permissions** section on the **Security** tab of a service connection.
 
 Or you can choose to lock down the service connection and only allow selected YAML pipelines to consume this service connection. If any other YAML pipeline refers to this service connection, an authorization request is raised which has to be approved by the connection administrators.
 
 ![Azure Resource Manager pipeline permissions](../release/_img/azure-rm-endpoint/azure-rm-pipeline-permissions.png)
 
-### Project permissions - Cross project sharing of service connections
+### Project permissions - Cross-project sharing of service connections
+
 Project permissions control which projects can use this service connection. By default, service connections are not shared with any other projects.
 
 * Only the organization-level administrators from **User permissions** can share the service connection with other projects.
-* The user who is sharing the service connection with a project should have atleast create service connection permission in the target project.
+* The user who is sharing the service connection with a project should have at least create service connection permission in the target project.
 * The user who shares the service connection with a project becomes the project-level administrator for that service connection  and the project-level inheritance is turned on in the target project.
 * The service connection name is appended with the project name and it can be renamed in the target project scope.
-* Organization level administrator can un-share a service connection from any shared project.
+* Organization level administrator can unshare a service connection from any shared project.
 
 ![Azure Resource Manager project permissions](../release/_img/azure-rm-endpoint/azure-rm-project-permissions.png)
 
 > [!NOTE]
-> Project permissions feature is dependent on the new service connections UI and once we enable this feature, the old service
-> connections UI is no longer usable.
+> Project permissions feature is dependent on the new service connections UI and once we enable this feature, the old service connections UI is no longer usable.
 
-
-<a name="use-connection"></a>
+<a name="use-a-service-connection"></a>
 
 ## Use a service connection
 
@@ -194,63 +199,58 @@ Select the connection name you assigned in the **Azure subscription** (or the eq
 
 ---
 
-Next you must authorize the service connection.
-To do this, or if you encounter a resource authorization error in your build,
-use one of the following techniques:
+Next, you must authorize the service connection. To do this, or if you encounter a resource authorization error in your build, use one of the following techniques:
 
-- If you want to authorize any pipeline to use the service connection,
-  go to Azure Pipelines, open the Settings page, select Service connections,
-  and enable the setting **Allow all pipelines to use this connection** option for the connection.
+- If you want to authorize any pipeline to use the service connection, go to Azure Pipelines, open the **Settings** page, select **Service connections**, and then enable the setting **Allow all pipelines to use this connection** option for the connection.
 
-- If you want to authorize a service connection for a specific pipeline, open the pipeline
-  by selecting **Edit** and queue a build manually. You will see a resource authorization error
-  and an "Authorize resources" action on the error. Choose this action to explicitly add the pipeline as an
-  authorized user of the service connection.
+- If you want to authorize a service connection for a specific pipeline, open the pipeline by selecting **Edit** and queue a build manually. You will see a resource authorization error and an **Authorize resources** action on the error. Choose this action to explicitly add the pipeline as an authorized user of the service connection.
 
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
 > [!NOTE]
-> Service connection cannot be specified by variable
+> A service connection cannot be specified by using a variable.
 
-<a name="ep-types"></a>
+<a name="common-service-connection-types"></a>
 
 ## Common service connection types
 
 Azure Pipelines and TFS support various service connection types by default, including:
 
-- [Azure Classic](#sep-azure-classic)
-- [Azure Repos/Team Foundation Server](#sep-tfsts)
-- [Azure Resource Manager](#sep-azure-resource-manager)
-- [Azure Service Bus](#sep-servbus)
-- [Bitbucket Cloud](#sep-bbucket)
-- [Chef](#sep-chef)
-- [Docker Host](#sep-dochost)
-- [Docker Registry](#sep-docreg)
-- [External Git](#sep-extgit)
-- [Generic](#sep-generic)
-- [GitHub](#sep-github)
-- [GitHub Enterprise Server](#sep-githubent)
-- [Jenkins](#sep-jenkins)
-- [Kubernetes](#sep-kuber)
-- [Maven](#sep-maven)
-- [npm](#sep-npm)
-- [NuGet](#sep-nuget)
-- [Power Platform](#sep-power-platform)
-- [Python package download](#sep-python-download)
-- [Python package upload](#sep-python-upload)
-- [Service Fabric](#sep-fabric)
-- [SSH](#sep-ssh)
-- [Subversion](#sep-subversion)
-- [Visual Studio App Center](#sep-vsmobile)
+- [Azure Classic](#azure-classic-service-connection)
+- [Azure Repos/Team Foundation Server](#azure-repos-service-connection)
+- [Azure Resource Manager](#azure-resource-manager-service-connection)
+- [Azure Service Bus](#azure-service-bus-service-connection)
+- [Azure Service Fabric](#azure-service-fabric-service-connection)
+- [Bitbucket Cloud](#bitbucket-cloud-service-connection)
+- [Chef](#chef-service-connection)
+- [Docker Host](#docker-host-service-connection)
+- [Docker Registry](#docker-registry-service-connection)
+- [External Git](#external-git-service-connection)
+- [Generic](#generic-service-connection)
+- [GitHub](#github-service-connection)
+- [GitHub Enterprise Server](#github-enterprise-server-service-connection)
+- [Jenkins](#jenkins-service-connection)
+- [Kubernetes](#kubernetes-service-connection)
+- [Maven](#maven-service-connection)
+- [npm](#npm-service-connection)
+- [NuGet](#nuget-service-connection)
+- [Power Platform](#power-platform-service-connection)
+- [Python package download](#python-package-download-service-connection)
+- [Python package upload](#python-package-upload-service-connection)
+- [SSH](#ssh-service-connection)
+- [Subversion](#subversion-service-connection)
+- [Visual Studio App Center](#visual-studio-app-center-service-connection)
 
 After you enter the parameters when creating a service connection, validate the
 connection. The validation link uses a REST call to the external service with
 the information you entered, and indicates if the call succeeded.
 
-<h3 id="sep-azure-classic">Azure Classic service connection</h3>
+<a name=azure-classic-service-connection></a>
 
-Defines and secures a connection to a Microsoft Azure subscription
-using Azure credentials or an Azure management certificate.
+### Azure Classic service connection
+
+Defines and secures a connection to a Microsoft Azure subscription using Azure credentials or an Azure management certificate.
+
 [How do I create a new service connection?](#create-new)
 
 | Parameter | Description |
@@ -266,9 +266,11 @@ using Azure credentials or an Azure management certificate.
 
 > If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service connection.
 
-*****
+---
 
-<h3 id="sep-tfsts">Azure Repos/Team Foundation Server</h3>
+<a name=azure-repos-service-connection></a>
+
+### Azure Repos/Team Foundation Server service connection
 
 Defines and secures a connection to another Azure DevOps organization.
 
@@ -282,20 +284,18 @@ Defines and secures a connection to another Azure DevOps organization.
 |       Password        |                                                                                                  Required for Basic authentication. The password for the specified username.                                                                                                   |
 | Personal Access Token |                      Required for Token Based authentication (TFS 2017 and newer and Azure Pipelines only). The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).                       |
 
-<p />
-
 Use the **Verify connection** link to validate your connection information.
 
 See also [Authenticate access with personal access tokens for Azure DevOps](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
-*****
+---
 
-<a name="sep-azure-resource-manager-conditions"></a>
+<a name=azure-resource-manager-service-connection></a>
 <a name="arm-auto-connect"></a>
 <a name="arm-manual-connect"></a>
 <a name="sep-azure-resource-manager-existingsp"></a>
 
-<h3 id="sep-azure-resource-manager">Azure Resource Manager service connection</h3>
+### Azure Resource Manager service connection
 
 Defines and secures a connection to a Microsoft Azure subscription
 using Service Principal Authentication (SPA) or an Azure Managed Service Identity.
@@ -315,11 +315,9 @@ For more information, see [Connect to Microsoft Azure](connect-to-azure.md)
 > [!NOTE]
 > If you don't see any Azure subscriptions or instances, or you have problems validating the connection, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
-*****
+<a name=azure-service-bus-service-connection></a>
 
-<h3 id="sep-servbus">Azure Service Bus service connection</h3>
-
-
+### Azure Service Bus service connection
 
 Defines and secures a connection to a Microsoft Azure Service Bus queue.
 
@@ -330,13 +328,13 @@ Defines and secures a connection to a Microsoft Azure Service Bus queue.
 | Service Bus ConnectionString |                                                                    The URL of your Azure Service Bus instance. [More information](/azure/service-bus-messaging/service-bus-fundamentals-hybrid-solutions).                                                                     |
 |    Service Bus Queue Name    |                                                                                                                The name of an existing Azure Service Bus queue.                                                                                                                |
 
-<p />
+---
+
+<a name=azure-service-fabric-service-connection></a>
+
+### Azure Service Fabric service connection
 
 <!--
-
-*****
-
-<h3 id="sep-servfabric">Azure Service Fabric service connection</h3>
 
 Defines and secures a connection to a Microsoft Azure Service Fabric cluster.
 
@@ -357,15 +355,35 @@ You can use the following PowerShell script to obtain a Base64-encoded represent
 [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes("path-to-certificate-file\certificate.pfx"))
 ```
 
+---
+
 -->
 
-*****
+Defines and secures a connection to a Service Fabric cluster.
 
-<h3 id="sep-bbucket">Bitbucket Cloud service connection</h3>
+
+|           Parameter           |                                                                                                                                  Description                                                                                                                                   |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|        Connection Name        | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+|       Cluster Endpoint        |                                                                                                                   Required. The TCP endpoint of the cluster.                                                                                                                   |
+| Server Certificate Thumbprint |                                                                                             Required when connection type is **Certificate based** or **Azure Active Directory**.                                                                                              |
+|      Client Certificate       |                                                                                                            Required when connection type is **Certificate based**.                                                                                                             |
+|           Password            |                                                                                               Required when connection type is **Certificate based**. The certificate password.                                                                                                |
+|           Username            |                                                                                         Required when connection type is **Azure Active Directory**. The username for authentication.                                                                                          |
+|           Password            |                                                                                          Required when connection type is **Azure Active Directory**. The password for the username.                                                                                           |
+|     Use Windows security      |                                                                                                                  Required when connection type is **Others**.                                                                                                                  |
+|          Cluster SPN          |                                                                                                    Required when connection type is **Others** and using Windows security.                                                                                                     |
+
+---
+
+<a name=bitbucket-cloud-service-connection></a>
+
+### Bitbucket Cloud service connection
 
 Defines a connection to Bitbucket Cloud. You can use OAuth with **Grant authorization** or a username and password with **Basic Authentication**. For pipelines to keep working, your repository access must remain active.
 
-### Grand authorization
+### Grant authorization
+
 | Parameter | Description |
 | --------- | ----------- |
 | OAuth Configuration | Required.  OAuth connection to Bitbucket. |
@@ -378,9 +396,11 @@ Defines a connection to Bitbucket Cloud. You can use OAuth with **Grant authoriz
 | User name | Required. The username to connect to the service. |
 | Password | Required. The password for the specified username. |
 
-*****
+---
 
-<h3 id="sep-chef">Chef service connection</h3>
+<a name=chef-service-connection></a>
+
+### Chef service connection
 
 Defines and secures a connection to a [Chef](https://docs.chef.io/chef_overview.html) automation server.
 
@@ -391,9 +411,11 @@ Defines and secures a connection to a [Chef](https://docs.chef.io/chef_overview.
 | Node Name (Username) | Required. The name of the node to connect to. Typically this is your username. |
 | Client Key | Required. The key specified in the Chef .pem file. |
 
-*****
+---
 
-<h3 id="sep-dochost">Docker Host service connection</h3>
+<a name=docker-host-service-connection></a>
+
+### Docker Host service connection
 
 Defines and secures a connection to a Docker host.
 
@@ -407,9 +429,11 @@ Defines and secures a connection to a Docker host.
 
 Ensure you protect your connection to the Docker host. [Learn more](https://docs.docker.com/engine/security/https/).
 
-*****
+---
 
-<h3 id="sep-docreg">Docker Registry service connection</h3>
+<a name=docker-registry-service-connection></a>
+
+### Docker Registry service connection
 
 Defines a connection to a container registry.
 
@@ -431,13 +455,15 @@ Defines a connection to a container registry.
 | Password | Required. The password for the account user identified above. (Docker Hub requires a PAT instead of a password.) |
 | Email | Optional. An email address to receive notifications. |
 
-*****
+---
 
-<h3 id="sep-extgit">External Git service connection</h3>
+<a name=external-git-service-connection></a>
+
+### External Git service connection
 
 Defines and secures a connection to a Git repository server.
-There is a specific service connection for [GitHub](#sep-github)
-and [GitHub Enterprise Server](#sep-githubent) connections.
+There is a specific service connection for [GitHub](#github-service-connection)
+and [GitHub Enterprise Server](#github-enterprise-server-service-connection) connections.
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -448,9 +474,11 @@ and [GitHub Enterprise Server](#sep-githubent) connections.
 
 Also see [Artifact sources](../release/artifacts.md#sources).
 
-*****
+---
 
-<h3 id="sep-generic">Generic service connection</h3>
+<a name=generic-service-connection></a>
+
+### Generic service connection
 
 Defines and secures a connection to any other type of service or application.
 
@@ -461,14 +489,15 @@ Defines and secures a connection to any other type of service or application.
 | User name | Optional. The username to connect to the service. |
 | Password/Token Key | Optional. The password or access token for the specified username. |
 
-*****
+---
 
-<h3 id="sep-github">GitHub service connection</h3>
+<a name=github-service-connection></a>
+
+### GitHub service connection
 
 Defines a connection to a GitHub repository.
-Note that there is a specific service connection for [External Git servers](#sep-extgit)
-and [GitHub Enterprise Server](#sep-githubent) connections.
 
+Note that there is a specific service connection for [External Git servers](#external-github-service-connection) and [GitHub Enterprise Server](#github-enterprise-server-service-connection) connections.
 
 |      Parameter       |                                                                                                                                  Description                                                                                                                                   |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -476,32 +505,24 @@ and [GitHub Enterprise Server](#sep-githubent) connections.
 |        Token         |                                                                                                       Required for Personal access token authorization. See notes below.                                                                                                       |
 |   Connection Name    | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 
-<p />
-
 > [!NOTE]
-> If you select **Grant authorization** for the **Choose authorization** option,
-the dialog shows an **Authorize** button that opens the GitHub login page.
-If you select **Personal access token** you must obtain a suitable token
-and paste it into the **Token** textbox. The dialog shows the recommended scopes
-for the token: **repo, user, admin:repo_hook**. See
-[this page](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
-on GitHub for information about obtaining an access token. Then register your
-GitHub account in your profile:
-
-1. Open your profile from your organization name at the right of the Azure Pipelines page heading.
-1. At the top of the left column, under **DETAILS**, choose **Security**.
-1. In the **Security** tab, in the right column, choose **Personal access tokens**.
-1. Choose the **Add** link and enter the information required to create the token.
+> If you select **Grant authorization** for the **Choose authorization** option, the dialog shows an **Authorize** button that opens the GitHub login page. If you select **Personal access token** you must obtain a suitable token and paste it into the **Token** textbox. The dialog shows the recommended scopes for the token: **repo, user, admin:repo_hook**. See [this page](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) on GitHub for information about obtaining an access token. Then register your GitHub account in your profile:
+>
+> 1. Open your profile from your organization name at the right of the Azure Pipelines page heading.
+> 1. At the top of the left column, under **DETAILS**, choose **Security**.
+> 1. In the **Security** tab, in the right column, choose **Personal access tokens**.
+> 1. Choose the **Add** link and enter the information required to create the token.
 
 Also see [Artifact sources](../release/artifacts.md#tfvcsource).
 
-*****
+---
 
-<h3 id="sep-githubent">GitHub Enterprise Server service connection</h3>
+<a name=github-enterprise-server-service-connection></a>
+
+### GitHub Enterprise Server service connection
 
 Defines a connection to a GitHub repository.
-Note that there is a specific service connection for [External Git servers](#sep-extgit)
-and [standard GitHub service connections](#sep-github).
+Note that there is a specific service connection for [External Git servers](#external-github-service-connection) and [standard GitHub service connections](#github-service-connection).
 
 
 |                 Parameter                  |                                                                                                                                  Description                                                                                                                                   |
@@ -516,24 +537,19 @@ and [standard GitHub service connections](#sep-github).
 |            OAuth configuration             |                                                                                             Required for OAuth2 authorization. The OAuth configuration specified in your account.                                                                                              |
 | GitHub Enterprise Server configuration URL |                                                                                                                  The URL is fetched from OAuth configuration.                                                                                                                  |
 
-<p />
-
 > [!NOTE]
-> If you select **Personal access token** you must obtain a suitable token
-and paste it into the **Token** textbox. The dialog shows the recommended scopes
-for the token: **repo, user, admin:repo_hook**. See
-[this page](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
-on GitHub for information about obtaining an access token. Then register your
-GitHub account in your profile:
+> If you select **Personal access token** you must obtain a suitable token and paste it into the **Token** textbox. The dialog shows the recommended scopes for the token: **repo, user, admin:repo_hook**. See [this page](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) on GitHub for information about obtaining an access token. Then register your GitHub account in your profile:
+>
+> 1. Open your profile from your account name at the right of the Azure Pipelines page heading.
+> 1. At the top of the left column, under **DETAILS**, choose **Security**.
+> 1. In the **Security** tab, in the right column, choose **Personal access tokens**.
+> 1. Choose the **Add** link and enter the information required to create the token.
 
-1. Open your profile from your account name at the right of the Azure Pipelines page heading.
-1. At the top of the left column, under **DETAILS**, choose **Security**.
-1. In the **Security** tab, in the right column, choose **Personal access tokens**.
-1. Choose the **Add** link and enter the information required to create the token.
+---
 
-*****
+<a name=jenkins-service-connection></a>
 
-<h3 id="sep-jenkins">Jenkins service connection</h3>
+### Jenkins service connection
 
 Defines a connection to the Jenkins service.
 
@@ -551,9 +567,11 @@ Defines a connection to the Jenkins service.
 Also see [Azure Pipelines Integration with Jenkins](https://devblogs.microsoft.com/devops/vsts-visual-studio-team-services-integration-with-jenkins/) 
 and [Artifact sources](../release/artifacts.md#jenkinssource).
 
-*****
+---
 
-<h3 id="sep-kuber">Kubernetes service connection</h3>
+<a name=kubernetes-service-connection></a>
+
+### Kubernetes service connection
 
 Defines a connection to a Kubernetes cluster.
 
@@ -598,7 +616,7 @@ The above command fetches the name of the secret associated with a ServiceAccoun
 kubectl get secret <service-account-secret-name> -n <namespace> -o json
 ```
 
-Copy and paste the Secret object fetched in YAML form into the Secret text-field.
+Copy and paste the Secret object fetched in YAML form into the Secret text field.
 
 > [!NOTE]
 > When using the service account option, [ensure that a RoleBinding exists](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#kubectl-create-rolebinding), which grants permissions in the `edit` `ClusterRole` to the desired service account. This is needed so that the service account can be used by Azure Pipelines for creating objects in the chosen namespace.
@@ -608,12 +626,14 @@ Copy and paste the Secret object fetched in YAML form into the Secret text-field
 | Parameter | Description |
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this service connection in task inputs. |
-| Kubeconfig | Required. Contents of the kubeconfig file  |
-| Context | Context within the kubeconfig file that is to be used for identifying the cluster |
+| Kubeconfig | Required. Contents of the kubeconfig file.  |
+| Context | Context within the kubeconfig file that is to be used for identifying the cluster. |
 
-*****
+---
 
-<h3 id="sep-maven">Maven service connection</h3>
+<a name=maven-service-connection></a>
+
+### Maven service connection
 
 Defines and secures a connection to a Maven repository.
 
@@ -621,16 +641,16 @@ Defines and secures a connection to a Maven repository.
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Connection Name    | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 |     Registry URL      |                                                                                                                      Required. The URL of the Maven repository.                                                                                                                      |
-|     Registry ID       |                                                                                           Required. This is the ID of the server that matches the id element of the repository/mirror that Maven tries to connect to.                                                           |
+|     Registry ID       |                                                                                           Required. This is the ID of the server that matches the `id` element of the repository/mirror that Maven tries to connect to.                                                           |
 |       Username        |                                                                                          Required when connection type is **Username and Password**. The username for authentication.                                                                                          |
 |       Password        |                                                                                           Required when connection type is **Username and Password**. The password for the username.                                                                                           |
 | Personal Access Token |                                  Required when connection type is **Authentication Token**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).                                   |
 
-<p />
+---
 
-*****
+<a name=npm-service-connection></a>
 
-<h3 id="sep-npm">npm service connection</h3>
+### npm service connection
 
 Defines and secures a connection to an npm server.
 
@@ -643,11 +663,11 @@ Defines and secures a connection to an npm server.
 |       Password        |                                                                                           Required when connection type is **Username and Password**. The password for the username.                                                                                           |
 | Personal Access Token |                                  Required when connection type is **External Azure Pipelines**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).                                   |
 
-<p />
+---
 
-*****
+<a name=nuget-service-connection></a>
 
-<h3 id="sep-nuget">NuGet service connection</h3>
+### NuGet service connection
 
 Defines and secures a connection to a NuGet server. 
 
@@ -661,13 +681,14 @@ Defines and secures a connection to a NuGet server.
 |       Username        |                                                                                          Required when connection type is **Basic authentication**. The username for authentication.                                                                                           |
 |       Password        |                                                                                           Required when connection type is **Basic authentication**. The password for the username.                                                                                            |
 
-<p />
 
 To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, See [NuGet Authenticate](../tasks/package/nuget-authenticate.md). 
 
 ---
 
-<h3 id="sep-power-platform">Power Platform service connection</h3>
+<a name=power-platform-service-connection></a>
+
+### Power Platform service connection
 
 Defines and secures a connection to a Power Platform instance.
 
@@ -675,16 +696,16 @@ Defines and secures a connection to a Power Platform instance.
 |    Parameter                       | Description  |
 |------------------------------------|--------------|
 |    Connection Name                 | Required. The name you will use to refer to this service connection in task properties. |
-|    Server URL                      | Required. The URL of the Power Platform instance. Example: *https://contoso.crm4.dynamics.com* |
-|    Tenant ID                       | Required. Tenant ID (also called directory ID in Azure portal) to authenticate to. Refer to [https://aka.ms/buildtools-spn](https://aka.ms/buildtools-spn) for a script that shows Tenant ID and configures Application ID and associated Client Secret. The application user must also be [created in CDS](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) |
+|    Server URL                      | Required. The URL of the Power Platform instance. Example: `https://contoso.crm4.dynamics.com` |
+|    Tenant ID                       | Required. Tenant ID (also called directory ID in Azure portal) to authenticate to. Refer to [https://aka.ms/buildtools-spn](https://aka.ms/buildtools-spn) for a script that shows Tenant ID and configures Application ID and associated Client Secret. The application user must also be [created in CDS](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) |
 |    Application ID                  | Required. Azure Application ID to authenticate with. |
 |    Client secret of Application ID | Required. Client secret of the Service Principal associated to above Application ID used to prove identity. |
 
-<p />
+---
 
-*****
+<a name=python-package-download-service-connection></a>
 
-<h3 id="sep-python-download">Python package download service connection</h3>
+### Python package download service connection
 
 Defines and secures a connection to a Python repository for downloading Python packages.
 
@@ -697,11 +718,11 @@ Defines and secures a connection to a Python repository for downloading Python p
 |              Username              |                                                                                          Required when connection type is **Username and Password**. The username for authentication.                                                                                          |
 |              Password              |                                                                                           Required when connection type is **Username and Password**. The password for the username.                                                                                           |
 
-<p />
+---
 
-*****
+<a name=python-package-upload-service-connection></a>
 
-<h3 id="sep-python-upload">Python package upload service connection</h3>
+### Python package upload service connection
 
 Defines and secures a connection to a Python repository for uploading Python packages.
 
@@ -715,32 +736,11 @@ Defines and secures a connection to a Python repository for uploading Python pac
 |             Username             |                                                                                          Required when connection type is **Username and Password**. The username for authentication.                                                                                          |
 |             Password             |                                                                                           Required when connection type is **Username and Password**. The password for the username.                                                                                           |
 
-<p />
+---
 
-*****
+<a name=ssh-service-connection></a>
 
-<h3 id="sep-fabric">Service Fabric service connection</h3>
-
-Defines and secures a connection to a Service Fabric cluster.
-
-
-|           Parameter           |                                                                                                                                  Description                                                                                                                                   |
-|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|        Connection Name        | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
-|       Cluster Endpoint        |                                                                                                                   Required. The TCP endpoint of the cluster.                                                                                                                   |
-| Server Certificate Thumbprint |                                                                                             Required when connection type is **Certificate based** or **Azure Active Directory**.                                                                                              |
-|      Client Certificate       |                                                                                                            Required when connection type is **Certificate based**.                                                                                                             |
-|           Password            |                                                                                               Required when connection type is **Certificate based**. The certificate password.                                                                                                |
-|           Username            |                                                                                         Required when connection type is **Azure Active Directory**. The username for authentication.                                                                                          |
-|           Password            |                                                                                          Required when connection type is **Azure Active Directory**. The password for the username.                                                                                           |
-|     Use Windows security      |                                                                                                                  Required when connection type is **Others**.                                                                                                                  |
-|          Cluster SPN          |                                                                                                    Required when connection type is **Others** and using Windows security.                                                                                                     |
-
-<p />
-
-*****
-
-<h3 id="sep-ssh">SSH service connection</h3>
+### SSH service connection
 
 Defines and secures a connection to a remote host using Secure Shell (SSH).
 
@@ -756,12 +756,13 @@ Defines and secures a connection to a remote host using Secure Shell (SSH).
 
 <p />
 
-Also see [SSH task](../tasks/deploy/ssh.md)
-and [Copy Files Over SSH](../tasks/deploy/copy-files-over-ssh.md).
+Also see [SSH task](../tasks/deploy/ssh.md) and [Copy Files Over SSH](../tasks/deploy/copy-files-over-ssh.md).
 
-*****
+---
 
-<h3 id="sep-subversion">Subversion service connection</h3>
+<a name=subversion-service-connection></a>
+
+### Subversion service connection
 
 Defines and secures a connection to the Subversion repository.
 
@@ -775,13 +776,11 @@ Defines and secures a connection to the Subversion repository.
 |             User name             |                                                                                                               Required. The username to connect to the service.                                                                                                                |
 |             Password              |                                                                                                               Required. The password for the specified username.                                                                                                               |
 
-<p />
+---
 
-*****
+<a name=visual-studio-app-center-service-connection></a>
 
-
-
-<h3 id="sep-vsmobile">Visual Studio App Center service connection</h3>
+### Visual Studio App Center service connection
 
 Defines and secures a connection to Visual Studio App Center.
 
@@ -791,9 +790,7 @@ Defines and secures a connection to Visual Studio App Center.
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 |    API Token    |                                                                                        Required. The token to use to authenticate with the service. [Learn more](/appcenter/api-docs/).                                                                                        |
 
-<p />
-
-*****
+---
 
 ## Extensions for other service connections
 
