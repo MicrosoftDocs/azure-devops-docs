@@ -148,21 +148,10 @@ These examples are tags set on the continuous integration (CI) pipeline. These t
 ---
 
 > [!IMPORTANT]
-> When you define a resource trigger, if its pipeline resource is from the same repository as the current pipeline, triggering follows the same branch and commit on which the event is raised.
-> But, if the pipeline resource is from a different repository, the current pipeline triggers on the default branch.
+> When you define a resource trigger, if its pipeline resource is from the same repository (say self) as the current pipeline, triggering follows the same branch and commit on which the event is raised.
+> But, if the pipeline resource is from a different repository, the current pipeline triggers on the default branch of the self repository.
 
-### Change default branch for triggers (optional)
 
-Triggers for resources get created based on the default branch configuration of your YAML, which is `main`. However, if you want to configure resource triggers from a different branch, you need to change the default branch for the pipeline. Do the following steps to change the default branch for a pipeline.
-
-1. Go to the pipeline and select **Edit**.
-2. Select  :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **more actions** and choose **Triggers**.
-
-   ![Triggers view in a pipeline](media/triggers-view.png)
-
-3. Select **YAML** > **Get sources**, and then select a source, which is the default branch for your pipeline.
-
-   ![Triggers default branch for a pipeline](media/triggers-default-branch.png)
 
 ### Evaluation of artifact version
 
