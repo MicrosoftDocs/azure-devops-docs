@@ -66,7 +66,6 @@ A [deployment job](deployment-jobs.md) is a collection of steps to be run sequen
           - script: echo Hello world
 ```
 
-If the specified environment doesn't already exist, an empty environment gets created using the environment name provided.
 
 <a name="target-resource-from-deployment-job"></a>
 
@@ -159,6 +158,17 @@ Use pipeline permissions to authorize all or selected pipelines for deployment t
 ### Q: Why do I get an error message when I try to create an environment?
 
 A: If you see the message "Access denied: {User} needs Create permissions to do the action", check your organization-level permissions. Go to **Organization Settings** > **Users** and check if you have the stakeholder role. The stakeholder role can't create environments. Change your access level and then check to see if you can create environments. For more information, see [User and permissions management FAQ](../../organizations/accounts/faq-user-and-permissions-management.yml).
+
+### Q: Why am I getting error "Job XXXX: Environment XXXX could not be found. The environment does not exist or has not been authorized for use"?
+
+A: There is a change related to environment creation flow if it does not exists before pipeline run. see [release notes for sprint 188](https://docs.microsoft.com/en-us/azure/devops/release-notes/2021/sprint-188-update#changes-in-the-automatic-creation-of-environments)
+    
+  These are some of the possible reasons of the failure:
+
+   a) If you have modified the YAML file from repository instead of YAML editor to add the environment name and run the pipeline. In this case environment will not be created, please use YAML editor to add or modify the environment name and run the pipeline.
+   b) If you are using [runtime parameter](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/runtime-parameters?view=azure-devops&tabs=script) for creating the environment, it will fail as these parameters gets expanded during run time. Environment creation happen at compile time, so we have to use [variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/runtime-parameters?view=azure-devops&tabs=script) to create the environment.
+   c) A user with stakeholder access level cannot create the environment as stakeholders does not access to repository.
+
 
 ## Related articles
 
