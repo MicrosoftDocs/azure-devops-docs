@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how to define YAML resources that can be consumed anywhere in your pipelines.
 ms.topic: how-to
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 08/12/2021
+ms.date: 08/28/2021
 monikerRange: azure-devops
 ---
 
