@@ -104,6 +104,19 @@ None
               </p>
        </td>
    </tr>
+   <tr>
+      <td><code>retryCount</code><br/>Number of times agent shall retry connection on error</td>
+      <td>
+         <p>(Option) This option sets the amount of connection retries when connection failure or error occurs.</p><br/>Default value: '3'
+      </td>
+       </td>
+   </tr>
+      <tr>
+      <td><code>delayBetweenRetries</code><br/>Timeout between connection retries</td>
+      <td>
+         <p>(Optional) This option sets the amount of time between connection retries when an error occurs. This is specified in seconds.</p><br/>Default value: '60'
+      </td>
+   </tr>
 </table>
 
 ## Team Foundation Server Plug-in
