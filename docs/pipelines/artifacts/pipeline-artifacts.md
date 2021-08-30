@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Using Azure Pipelines, you can download artifacts from earlier stages in your pipeline or from a another pipeline. You can also publish your artifact to a file share or make it available as a pipeline artifact.
+Using Azure Pipelines, you can download artifacts from earlier stages in your pipeline or from another pipeline. You can also publish your artifact to a file share or make it available as a pipeline artifact.
 
 ## Publish artifacts
 
@@ -92,7 +92,7 @@ Packages in Azure Artifacts are immutable. Once you publish a package, its versi
 
 ### Use .artifactignore
 
-`.artifactignore` uses the identical file-globbing syntax of `.gitignore` (with very few limitations) to provide a version-controlled way to specify which files should not be included when publishing artifacts. See [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) for more details.
+`.artifactignore` uses the identical file-globbing syntax of `.gitignore` (with few limitations) to provide a version-controlled way to specify which files should not be included when publishing artifacts. See [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) for more details.
 
 Example: ignore all files except **.exe** files:
 
@@ -122,7 +122,7 @@ steps:
 > You can use [Pipeline resources](../process/resources.md#define-a-pipelines-resource) to define your source in one place and use it anywhere in your pipeline.
 
 > [!NOTE]
-> The `download` keyword is a shortcut to the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
+> The `download` keyword is a shortcut for the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
 
 # [YAML (task)](#tab/yaml-task)
 
