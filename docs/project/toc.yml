@@ -3,6 +3,8 @@
 - name: Work across projects and services 
   expanded: true
   items:
+  - name: Cross-service integration overview
+    href: ../cross-service/cross-service-overview.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
   - name: Project summary
     href: ../organizations/projects/project-vision-status.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
     displayname: stats, members, wiki, README, invite, share, collaborate
