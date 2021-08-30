@@ -60,7 +60,7 @@ If you're using this import method, determine where to create your SQL Azure VM 
 | Brazil South | Brazil South |
 | South India | Central India, South India, West India |
 | Central Canada | Canada Central, Canada East |
-| Asia Pacific (Hong Kong) | East Asia, Southeast Asia |
+| Asia Pacific | Southeast Asia (Singapore) |
 | UK South | UK South, UK West |
 
 <br> 
@@ -106,7 +106,7 @@ Next, grant access to the Regional Identity Service. You need to grant an except
 | Regional Identity Service - Brazil South | 20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175, 191.235.226.0/24 |
 | Regional Identity Service - India South | 104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252, 20.41.194.0/24 |
 | Regional Identity Service - Canada Central | 52.237.19.6, 40.82.190.38, 52.228.82.0/243 |
-| Regional Identity Service - Asia Pacific (Hong Kong) | 52.175.28.40, 40.81.25.218, 13.94.26.58, 20.189.107.0/24
+| Regional Identity Service - Asia Pacific (Singapore) | 20.195.68.0/24 |
 | Regional Identity Service - UK South | 40.81.159.67, 51.104.26.0/24 |
 
 <br> 
@@ -121,7 +121,7 @@ Next, grant access to the data migration tool for Azure DevOps itself. You need 
 | Data migration tool - Brazil South | 104.41.24.164, 20.40.115.123 |
 | Data migration tool - India South | 13.71.120.31, 40.81.76.137 |
 | Data migration tool - Canada Central | 52.237.18.100, 52.237.24.61, 40.82.191.163 |
-| Data migration tool - Asia Pacific (Hong Kong) | 13.75.106.194, 40.81.27.181 |
+| Data migration tool - Asia Pacific (Singapore) | 20.195.68.0/24 |
 | Data migration tool - UK South | 40.81.153.223, 51.105.8.98, 51.104.26.2 |
 
 <br> 
@@ -136,7 +136,7 @@ Next, grant Azure DevOps Services access. Again, you need to grant an exception 
 | Azure DevOps Services - Brazil South | 20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175 |
 | Azure DevOps Services - India South | 104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252 |
 | Azure DevOps Services - Canada Central | 52.237.19.6, 40.82.190.38 |
-| Azure DevOps Services - Asia Pacific (Hong Kong) | 52.175.28.40, 40.81.25.218, 13.94.26.58 |
+| Azure DevOps Services - Asia Pacific (Singapore) | 20.195.68.0/24 |
 | Azure DevOps Services - UK South | 40.81.159.67, 51.105.8.98, 51.104.26.2, 51.104.26.5 |
 
 <br> 
@@ -153,7 +153,7 @@ Next, grant Azure Pipelines Releases service access. You need to grant an except
 | Releases service - Brazil South | 191.235.94.154, 20.40.116.69 |
 | Releases service - India South | 52.172.15.233, 40.81.79.60 |
 | Releases service - Canada Central | 52.237.28.171, 40.82.189.127 |
-| Releases service - Asia Pacific (Hong Kong) | 13.107.6.175, 40.81.29.43 |
+| Releases service - Asia Pacific (Singapore) | 20.195.68.0/24 |
 | Releases service - UK South | 40.81.156.207 |
 
 <br>   
@@ -172,7 +172,7 @@ Add exceptions for all three services that make up Azure Artifacts.
 | Azure Artifacts - Brazil South | 191.234.179.224, 20.40.115.214 |
 | Azure Artifacts - India South | 52.172.11.191, 40.81.74.79 |
 | Azure Artifacts - Canada Central | 52.237.24.224, 40.85.224.121, 13.71.189.199, 40.82.188.122 |
-| Azure Artifacts - Asia Pacific (Hong Kong) | 52.229.175.18, 65.52.162.53, 40.83.74.71, 40.81.27.130 |
+| Azure Artifacts - Asia Pacific (Singapore) | 20.195.68.0/24 |
 | Azure Artifacts - UK South | 51.145.120.132 |
 
 <br> 
@@ -185,7 +185,7 @@ Add exceptions for all three services that make up Azure Artifacts.
 | Azure Artifacts Feed - Brazil South | 191.235.93.87, 20.40.116.17 |
 | Azure Artifacts Feed - India South | 52.172.8.41,40.81.79.49 |
 | Azure Artifacts Feed - Canada Central | 52.237.19.70, 40.82.188.254 |
-| Azure Artifacts Feed - Asia Pacific (Hong Kong) | 52.229.163.155, 40.81.28.59, 40.81.59.77 |
+| Azure Artifacts Feed - Asia Pacific (Singapore) | 20.195.68.0/24 |
 | Azure Artifacts Feed - UK South | 51.145.120.49 |
 
 <br>   
@@ -198,7 +198,7 @@ Add exceptions for all three services that make up Azure Artifacts.
 | Azure Artifacts Blob - Brazil South | 191.235.90.183 |
 | Azure Artifacts Blob - India South | 52.172.54.122 |
 | Azure Artifacts Blob - Canada Central | 52.237.16.145, 52.237.16.145, 52.233.38.115, 40.82.187.186 |
-| Azure Artifacts Blob - Asia Pacific (Hong Kong) | 13.94.26.58 |
+| Azure Artifacts Blob - Asia Pacific (Singapore) | 20.195.68.0/24 |
 | Azure Artifacts Blob - UK South | 51.143.174.59, 40.81.152.41 |
 
 <br>  
@@ -215,7 +215,7 @@ Add exceptions for Test Plans IP addresses only in the region you're migrating i
 | Test Plans - Brazil South | 20.40.118.62 |
 | Test Plans - India South | 40.81.72.10 |
 | Test Plans - Canada Central | 40.82.184.28 |
-| Test Plans - Asia Pacific (Hong Kong) | 52.184.81.26 |
+| Test Plans - Asia Pacific (Singapore) | 20.195.68.0/24 |
 | Test Plans - UK South | 40.81.159.9 |
 
 <br>  
@@ -232,7 +232,7 @@ If you included preview features with your import, add an exception for the anal
 | Analytics service - Brazil South | 20.40.113.248 |
 | Analytics service - India South | 40.81.73.58 |
 | Analytics service - Canada Central | 40.82.185.214 |
-| Analytics service - Asia Pacific (Hong Kong) | 40.81.25.239 |
+| Analytics service - Asia Pacific (Singapore) | 20.195.68.0/24 |
 | Analytics service - UK South | 40.81.159.247 |
 
 <br> 
