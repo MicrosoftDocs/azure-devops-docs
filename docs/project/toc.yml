@@ -5,7 +5,7 @@
   - name: Cross-service integration overview
     href: ../cross-service/cross-service-overview.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
   - name: GitHub integration 
-    href: ../cross-service/cross-service-overview.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+    href: ../cross-service/github-integration.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
   - name: Deploy to Azure
     href: ../pipelines/overview-azure.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
 - name: Work across projects and services 

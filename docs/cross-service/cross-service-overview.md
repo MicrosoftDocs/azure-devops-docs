@@ -442,7 +442,7 @@ Built-in widgets you can add to your dashboard are listed below. They are organi
 Widgets are annotated as follows: 
 
 ::: moniker range=">= azure-devops-2019"
-- **Analytics**: Widget derives data from [Analytics data](../powerbi/what-is-analytics.md)  
+- **Analytics**: Widget derives data from [Analytics data](../report/powerbi/what-is-analytics.md)  
 - **Build**: Widget derives data for a selected build pipeline  
 - **Project**: indicates you can select the project and team when configuring the widget
 - **Release**: Widget derives data for a selected release pipeline  
@@ -607,11 +607,11 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
    :::column span="1":::
        **Boards** 
    :::column-end:::
-   :::column span=2"":::
+   :::column span="2":::
       [Widgets](../report/dashboards/analytics-widgets.md)  
       [In-context reports](../report/dashboards/overview.md#in-context-reports-work-tracking)  
       [OData](../report/extend-analytics/quick-ref.md)
-      [Power BI](report/overview.md)
+      [Power BI](../report/overview.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -665,10 +665,10 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
 ---
 :::row:::
    :::column span="1":::
-      **Test Plans **
+      **Test Plans**
    :::column-end:::
    :::column span="2":::
-      [Progress Report](../../test/track-test-status.md)
+      [Progress Report](../test/track-test-status.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -694,10 +694,7 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
 :::row-end:::
 ---
 
-
-> [!NOTE]   
-> Analytics doesn't support reporting on plain text and HTML fields. 
-
+ 
 ## Related articles
 
 - [End-to-end traceability](end-to-end-traceability.md)
