@@ -90,7 +90,7 @@ You can also use the Azure portal web UI to create your Azure Container Registry
 
 ## How we build your pipeline
 
-The pipeline that we just created in the previous section was generated from the _Docker container template_ YAML. The build stage uses the Docker task `Docker@2` to build and push your Docker image to the container registry.
+The pipeline that we just created in the previous section was generated from the _Docker container template_ YAML. The build stage uses the [Docker task](/azure/devops/pipelines/tasks/build/docker?view=azure-devops) `Docker@2` to build and push your Docker image to the container registry.
 
 ```YAML
 - stage: Build
