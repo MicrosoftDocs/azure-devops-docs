@@ -369,34 +369,199 @@ The following table summarizes the integration features between Azure Repos and 
 
 ::: moniker-end
 
+ 
 
-<!---
+<a id="test"></a>
 
-## Azure Test Plans - Azure Pipelines 
+## Azure Boards - Azure Repos - Azure Test Plans 
 
-TO BE COMPLETED. 
+Several collaboration scenarios are supported through Azure Boards work item types. As with other work item types, you can use [managed queries](../boards/queries/about-managed-queries.md) and the [Azure DevOps search function](../project/search/get-started-search.md) to find and list work items. 
+
+> [!NOTE]  
+> Several of these work item types&mdash;such as Feedback Request, Code Review Request, Shared Steps, and Shared Parameters&mdash; are designed to be created through a specific tool or form. They aren't meant to be created manually. Therefore, they are added to the Hidden Types category. Work item types that are added to the Hidden Types category don't appear in the menus used to add work items. 
+> 
+> Also, for the Inherited process model, you can only customize the following work item types: Test Plan, Test Suite, Test Case.  
 
 :::row:::
    :::column span="1":::
-      **Feature**
+      **Scenario**
    :::column-end::: 
-   :::column span="2":::
+   :::column span="1":::
+      **Work item type**
+   :::column-end:::
+   :::column span="3":::
       **Description**
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      Requirements traceability
+      Request code review
    :::column-end::: 
-   :::column span="2":::
-       See [Requirements traceability](../pipelines/test/requirements-traceability.md).
+   :::column span="1":::
+      **Code Review Request**
+   :::column-end:::
+   :::column span="3":::
+      Tracks information entered into the TFVC New Code Review form. To learn more, see [Get your code reviewed with Visual Studio](../repos/tfvc/get-code-reviewed-vs.md). 
    :::column-end:::
 :::row-end:::
---- 
+---
+:::row:::
+   :::column span="1":::
+      Provide code review
+   :::column-end::: 
+   :::column span="1":::
+      **Code Review Response**
+   :::column-end:::
+   :::column span="3":::
+      Tracks review comments provided by code reviewers in response to a code review request. To learn more, see [Respond to the code review request](../repos/tfvc/get-code-reviewed-vs.md#respond-to-the-code-review-request). 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Request feedback
+   :::column-end::: 
+   :::column span="1":::
+      **Feedback Request**
+   :::column-end:::
+   :::column span="3":::
+      Tracks information entered into a request feedback form. There are two forms that you can use to initiate a feedback request. 
+      -  [Request stakeholder feedback](../test/request-stakeholder-feedback.md)
+      -  [Get feedback](../project/feedback/get-feedback.md). 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Provide feedback
+   :::column-end::: 
+   :::column span="1":::
+      **Feedback Review**
+   :::column-end:::
+   :::column span="3":::
+      Enables stakeholders to provide feedback based on request for feedback or by volunteering feeback using the and using the [Microsoft Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) marketplace extension. To learn more, see the following articles: 
+      - [Provide feedback ](../test/provide-stakeholder-feedback.md)  
+      - [Voluntarily provide stakeholder feedback](../test/voluntary-stakeholder-feedback.md)  
+      - [Give feedback](../project/feedback/give-feedback.md).  
+   :::column-end::: 
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Manual testing
+   :::column-end::: 
+   :::column span="1":::
+      **Test Plan**
+   :::column-end:::
+   :::column span="3":::
+      Groups one or more test suites and individual test cases together. Test plans include static test suites, requirement-based suites, and query-based suites. To get started, see [Create test plans and test suites](../test/create-a-test-plan.md).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Manual testing
+   :::column-end::: 
+   :::column span="1":::
+      **Test Suite**
+   :::column-end:::
+   :::column span="3":::
+      Groups one or more test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. To learn more, see [Create test plans and test suites](../test/create-a-test-plan.md).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Manual testing
+   :::column-end::: 
+   :::column span="1":::
+      **Test Case**
+   :::column-end:::
+   :::column span="3":::
+      Defines steps used to validate individual parts of your code to ensure your code works correctly, has no errors, and meets business and customer requirements. You can add individual test cases to a test plan without creating a test suite. More than one test suite or test plan can refer to a test case. You can effectively reuse test cases without having to copy or clone them for each suite or plan. To learn more, see [Create manual test cases](../test/create-test-cases.md).
+   :::column-end:::
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Manual testing
+   :::column-end::: 
+   :::column span="1":::
+      **Shared Steps**
+   :::column-end:::
+   :::column span="3":::
+      Enables sharing steps across several test cases. For details, see [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Manual testing
+   :::column-end::: 
+   :::column span="1":::
+      **Shared Parameters**
+   :::column-end:::
+   :::column span="3":::
+      Enables repeating the same test cases with different data. For more information, see [Repeat a test with different data](../test/repeat-test-with-different-data.md).
+   :::column-end:::
+:::row-end:::
+---
 
--->
+## Test work item types
 
+Work item types that support the test experience are linked together using the link types shown in the following image. These include *Tested By/Tests*, *Test Cases/Shared Steps*, and *Reference By/References*. 
+
+![Test management work item types](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
+
+From the web portal, you can view which test cases are defined for a test suite, and which test suites are defined for a test plan. However, these objects aren't connected to each other through specific link types. 
+  
+
+## Bug tracking 
+
+When tracking bugs using the Bug work item type, note the following supported integrations. 
+
+
+:::row:::
+   :::column span="1":::
+      **Scenario**
+   :::column-end::: 
+   :::column span="1":::
+      **Work item type**
+   :::column-end:::
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Create a bug from a testing tool
+   :::column-end::: 
+   :::column span="3":::
+      You can add a bug from Test Runner or the Test & Feedback extension. To learn more, see [../boards/backlogs/manage-bugs.md#create-a-bug-from-a-testing-tool].
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Create inline tests linked to bugs or user stories
+   :::column-end::: 
+   :::column span="3":::
+      When your team tracks bugs as requirements, you can use the Kanban board to add tests to verify bug fixes or user stories. To learn more, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Track build information with bugs
+   :::column-end::: 
+   :::column span="3":::
+      The Bug work item form contains System Info, Found in Build, and Integrated in Build that support tracking code defects found and resolved within pipeline builds.  To learn more, see [Query based on build and test integration fields](../boards/queries/build-test-integration.md).
+   :::column-end:::
+:::row-end:::
+---
 
 <a id="analytics" /> 
 
