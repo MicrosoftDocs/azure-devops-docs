@@ -7,35 +7,24 @@ ms.custom: cross-service
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017'
+monikerRange: '>= azure-devops-2019'
 ms.date: 08/31/2021
 ---
  
 
 # Azure DevOps and GitHub integration overview
 
-[!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)]
-
-
-
-
-::: moniker range=">= azure-devops-2019"
-
-## GitHub integration 
+[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
 Azure Boards and Azure Pipelines provide several integration points with GitHub and GitHub Enterprise. 
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+ 
+ 
 
 ### Sign-in with GitHub credentials 
 
 Azure DevOps simplifies deployment from your repository with seamless access to the Azure portal and Azure DevOps using your GitHub account credentials.
 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+ 
 ---
 :::row:::
    :::column span="1":::
@@ -69,7 +58,6 @@ Azure DevOps simplifies deployment from your repository with seamless access to 
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
       Connect to a GitHub repository from Visual Studio 
@@ -78,18 +66,13 @@ Azure DevOps simplifies deployment from your repository with seamless access to 
       Provides a user interface to support cloning GitHub repositories, pushing and pulling commits, and more. For details, see [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison?view=vs-2019&&preserve-view=true). 
    :::column-end:::
 :::row-end:::
-::: moniker-end
-
-
-::: moniker range=">= azure-devops-2019"
+ 
+ 
 
 ### Azure Boards and GitHub integration
 
 By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits, pull requests, and issues to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. To get started, see [Azure Boards-GitHub integration](../boards/github/index.md).
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+ 
 ---
 :::row:::
    :::column span="1":::
@@ -100,8 +83,6 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
       Connect Azure Boards project to GitHub repos  
@@ -111,7 +92,6 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
@@ -122,8 +102,7 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=">= azure-devops-2019"
+::: moniker-end 
 :::row:::
    :::column span="1":::
       Link work items to GitHub commits, pull requests, and issues. Quickly view and open linked objects from the Kanban board. 
@@ -135,8 +114,6 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
       Add status badges of Azure Boards to a GitHub repository README file. 
@@ -147,8 +124,6 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
       Work items linked to GitHub commit in Release Summary
@@ -158,8 +133,6 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
       Sync GitHub Issues to Azure Boards Work Items
@@ -169,10 +142,8 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-
-
-::: moniker range=">= tfs-2018"
+ 
+ 
 
 ### Azure Pipelines and GitHub integration
 
@@ -182,10 +153,8 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
 
 :::image type="content" source="media/overview/github-azure-devops-integration.png" alt-text="Conceptual image of GitHub and Azure Pipelines integration.":::   
 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2018"
+ 
+ 
 :::row:::
    :::column span="1":::
       **Feature**
@@ -195,8 +164,7 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=">= tfs-2018 < azure-devops"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="1":::
       GitHub repository and pull request builds
@@ -225,7 +193,7 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= tfs-2018 < azure-devops"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="1":::
       GitHub Enterprise builds
@@ -271,19 +239,6 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
       - [Download GitHub Release task](../pipelines/tasks/utility/download-github-release.md) 
       - [GitHub Release task](../pipelines/tasks/utility/github-release.md)
       - [Open source Azure Pipeline tasks](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks) 
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-::: moniker range="tfs-2018"
-:::row:::
-   :::column span="1":::
-      Manage GitHub releases  
-   :::column-end::: 
-   :::column span="2":::
-      - Inline GitHub connection as a release artifact source.  
-      For details, see:
-      - [CI triggers](../pipelines/repos/github.md#ci-triggers)
    :::column-end:::
 :::row-end:::
 ---
@@ -343,7 +298,7 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
 ---
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops-2020" 
+::: moniker range=">= azure-devops-2019 < azure-devops-2020" 
 :::row:::
    :::column span="1":::
       Use build tags to trace GitHub sources 
@@ -399,4 +354,9 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
+::: moniker-end  
+
+## Related articles
+
+- [Azure Boards-GitHub integration](../boards/github/index.md)
+- [Build GitHub repositories](../pipelines/repos/github.md) 
