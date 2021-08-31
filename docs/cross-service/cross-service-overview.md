@@ -18,13 +18,97 @@ ms.date: 08/30/2021
 
 One of the major strengths of Azure DevOps is the integration it supports across its core services. Azure DevOps supports multiple integration points across each of the major services&mdash;Azure Boards, Azure Repos, Azure Pipelines, and Azure Test Plans. 
 
-Review this article to understand the various integration points across Azure DevOps Services.  
+Review this article to understand the various integration points across Azure DevOps. 
+
+
+
+## Collaboration across Azure Devops 
+
+Collaborating within and across teams is supported with many of the features summarized in the following table. 
+
+ 
+:::row:::
+   :::column span="1":::
+      **Feature**
+   :::column-end::: 
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      `@mentions` (add to discussions and comments)
+   :::column-end::: 
+   :::column span="3":::
+      You can @mention a team member or an entire team within a work item form discussion or the comment section of a commit, pull request, or changeset. For details, see [Use @mentions in work items and pull requests](../notifications/at-mentions.md).  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      `#ID` (link to a work item) 
+   :::column-end::: 
+   :::column span="3":::
+      To support end-to-end traceability, you can link to work items from commits, pull requests, and changesets. For details, see [Link to work items from other objects](../notifications/add-links-to-work-items.md).  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Teams
+   :::column-end::: 
+   :::column span="3":::
+      Each team gets access to a suite of Agile tools and team assets. These tools let teams work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work. For quick navigation, they can favorite repositories, pipelines, and test plans. To learn more, see:  
+      - [About teams and Agile tools](..//organizations/settings/about-teams-and-settings.md)
+      - [Set personal or team favorites](..//project/navigation/set-favorites.md)
+      - [Unsubscribe from default notification](../notifications/unsubscribe-default-notification.md)
+      - [Manage team, group, and Global notifications](../notifications/manage-team-group-global-organization-notifications.md).  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Set up alerts
+   :::column-end::: 
+   :::column span="3":::
+      Configure or opt out of personal, team, project, or organization-level alerts. Subscribe to email alerts when changes occur to work items, code reviews, pull requests, source control files, builds and more. To learn more, see:  
+      - [About notifications](../notifications/about-notifications.md)
+      - [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
+      - [Unsubscribe from default notification](../notifications/unsubscribe-default-notification.md)
+      - [Manage team, group, and Global notifications](../notifications/manage-team-group-global-organization-notifications.md).  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Share summaries by email
+   :::column-end::: 
+   :::column span="3":::
+       - [Email a list of work items](../boards/backlogs/bulk-modify-work-items.md)
+       - [Email query items](../boards/queries/view-run-query.md)
+       - [Send release summaries by email](../pipelines/release/index.md#how-do-i-send-release-summaries-by-email)
+   :::column-end:::
+:::row-end:::
+---  
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="1":::
+      Wiki
+   :::column-end::: 
+   :::column span="3":::
+      [Embed Azure Boards query results in Wiki](../project/wiki/wiki-markdown-guidance.md#embed-azure-boards-query-results-in-wiki). 
+   :::column-end:::
+:::row-end:::
+---  
+::: moniker-end
+
 
 ## Azure Boards - Azure Repos 
 
 The following table summarizes the integration points between Azure Boards and Azure Repos. Through various link types, you can track code changes&mdash;commits and pull requests for Git, and changesets and versioned items for Team Foundation Version Control (TFVC)&mdash;that support development of user stories and features. The link types used to construct these links include *Branch , Commit, Pull Request*, and *Tag* for Git repositories, and *Changeset*, and *Versioned Item* for TFVC repositories. To learn more, see [Link to work items from other objects, View list of linked objects](../notifications/add-links-to-work-items.md#view-list-links).
 
-:::image type="content" source="media/integration-overview/concept-link-types-repos.png" alt-text="Conceptual image of link types that link work items to Azure Repos objects."::: 
+:::image type="content" source="media/overview/concept-link-types-repos.png" alt-text="Conceptual image of link types that link work items to Azure Repos objects."::: 
 
 
 :::row:::
@@ -42,7 +126,7 @@ The following table summarizes the integration points between Azure Boards and A
    :::column-end::: 
    :::column span="2":::
       You can initiate a Git branch or link to Git commits or pull requests and drive your Git development cycle for a work item from within the work item form.  
-      :::image type="content" source="media/integration-overview/development-control-git.png" alt-text="Screenshot of Development control for Git repositories.":::  
+      :::image type="content" source="media/overview/development-control-git.png" alt-text="Screenshot of Development control for Git repositories.":::  
       For details, see [Drive Git development from a work item](../boards/backlogs/connect-work-items-to-git-dev-ops.md).
    :::column-end:::
 :::row-end:::
@@ -56,7 +140,7 @@ The following table summarizes the integration points between Azure Boards and A
       - Automatically create links for work items mentioned in a commit comment 
       - Allow mentions in commit comments to close work items 
       - Remember user preferences for completing work items with pull requests.  
-      <br/>For details, see [Configure branch policies to support integration](configure-repos-integration.md).
+      <br/>For details, see [Configure branch policies to support integration](../repos/git/configure-repos-work-tracking.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -65,7 +149,7 @@ The following table summarizes the integration points between Azure Boards and A
       Check for linked work items in a Git branch
    :::column-end::: 
    :::column span="2":::
-      Encourage traceability by checking for linked work items on pull requests. For details, see [Configure branch policies to support integration](configure-repos-integration.md).
+      Encourage traceability by checking for linked work items on pull requests. For details, see [Configure branch policies to support integration](../repos/git/configure-repos-work-tracking.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -97,7 +181,7 @@ The following table summarizes the integration points between Azure Boards and A
 
 The following table summarizes the integration points between Azure Boards and Azure Pipelines. Several features provide support for end-to-end traceability as user stories and features move through the development cycle. As with Azure Repos, you can link work items to pipeline objects with the following link types: *Build, Integrated in build*, and *Integrated in release*.  
 
-:::image type="content" source="media/integration-overview/concept-link-types-pipelines.png" alt-text="Conceptual image of link types that link work items to Azure Pipelines objects.":::
+:::image type="content" source="media/overview/concept-link-types-pipelines.png" alt-text="Conceptual image of link types that link work items to Azure Pipelines objects.":::
 
 :::row:::
    :::column span="1":::
@@ -126,18 +210,18 @@ The following table summarizes the integration points between Azure Boards and A
       Set integration option to automatically create *Integrated in build* links to work items linked to a branch, commit, or pull request associated with a pipeline.
    :::column-end::: 
    :::column span="2":::
-      Required to populate the **Development** control with Integrated in build links. The work items or commits that are part of a release are computed from the versions of artifacts. For example, each build in Azure Pipelines is associated with a set of work items and commits. For details, see [Configure pipelines to support integration](configure-pipelines-integration.md).
-      :::image type="content" source="media/integration-overview/development-control.png" alt-text="Screenshot of Development control showing several links.":::  
+      Required to populate the **Development** control with Integrated in build links. The work items or commits that are part of a release are computed from the versions of artifacts. For example, each build in Azure Pipelines is associated with a set of work items and commits. For details, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md).
+      :::image type="content" source="media/overview/development-control.png" alt-text="Screenshot of Development control showing several links.":::  
    :::column-end:::
 :::row-end:::
 --- 
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      Set option and branch to automatically create *Integrated in build* and *Integrated in release stage* links to work items linked to a branch, commit, or pull request associated with a Classic or YAML pipeline. For details, see [Configure pipelines to support integration](configure-pipelines-integration.md). 
+      Set option and branch to automatically create *Integrated in build* and *Integrated in release stage* links to work items linked to a branch, commit, or pull request associated with a Classic or YAML pipeline. For details, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md). 
    :::column-end::: 
    :::column span="2":::
-      Required to populate the work item form **Development** control with *Integrated in build* links and the **Deployment** control with *Integrated in release stage* links when running a Classic or YAML pipeline. For details, see [Configure pipelines to support integration](configure-pipelines-integration.md). 
+      Required to populate the work item form **Development** control with *Integrated in build* links and the **Deployment** control with *Integrated in release stage* links when running a Classic or YAML pipeline. For details, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md). 
    :::column-end:::
 :::row-end:::
 --- 
@@ -148,7 +232,7 @@ The following table summarizes the integration points between Azure Boards and A
       Set integration option to automatically create *Integrated in release stage* links to work items linked to a branch, commit, or pull request associated with a release.
    :::column-end::: 
    :::column span="2":::
-      Required to populate **Deployment** control in work item form with **Integrated in release stage** links. For details, see [Configure pipelines to support integration](configure-pipelines-integration.md#auto-link-work-items). 
+      Required to populate **Deployment** control in work item form with **Integrated in release stage** links. For details, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md#auto-link-work-items). 
    :::column-end:::
 :::row-end:::
 --- 
@@ -266,7 +350,7 @@ The following table summarizes the integration features between Azure Repos and 
       Report deployment status
    :::column-end::: 
    :::column span="2":::
-       Indicates the status of a deployment on the **Files**, **Commits**, and **Branches** pages for Git repositories. This feature improves the traceability from code commit to deployment. You can configure the release environments to report deployment status. For details, see [Configure pipelines to support integration](configure-pipelines-integration.md#report-release-status).
+       Indicates the status of a deployment on the **Files**, **Commits**, and **Branches** pages for Git repositories. This feature improves the traceability from code commit to deployment. You can configure the release environments to report deployment status. For details, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md#report-release-status).
    :::column-end:::
 :::row-end:::
 --- 
@@ -448,86 +532,4 @@ Built-in widgets you can add to your dashboard are listed below. You may find ad
    :::column-end:::
 :::row-end:::
 --- 
-::: moniker-end
-
-
-## Collaboration across Azure Devops 
-
-Collaborating within and across teams is supported with many of the features summarized in the following table. 
-
- 
-:::row:::
-   :::column span="1":::
-      **Feature**
-   :::column-end::: 
-   :::column span="3":::
-      **Description**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      `@mentions` (add to discussions and comments)
-   :::column-end::: 
-   :::column span="3":::
-      You can @mention a team member or an entire team within a work item form discussion or the comment section of a commit, pull request, or changeset. For details, see [Use @mentions in work items and pull requests](../notifications/at-mentions.md).  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      `#ID` (link to a work item) 
-   :::column-end::: 
-   :::column span="3":::
-      To support end-to-end traceability, you can link to work items from commits, pull requests, and changesets. For details, see [Link to work items from other objects](../notifications/add-links-to-work-items.md).  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Teams
-   :::column-end::: 
-   :::column span="3":::
-      Each team gets access to a suite of Agile tools and team assets. These tools let teams work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work. For quick navigation, they can favorite repositories, pipelines, and test plans. To learn more, see:  
-      - [About teams and Agile tools](..//organizations/settings/about-teams-and-settings.md)
-      - [Set personal or team favorites](..//project/navigation/set-favorites.md)
-      - [Unsubscribe from default notification](../notifications/unsubscribe-default-notification.md)
-      - [Manage team, group, and Global notifications](../notifications/manage-team-group-global-organization-notifications.md).  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Set up alerts
-   :::column-end::: 
-   :::column span="3":::
-      Configure or opt out of personal, team, project, or organization-level alerts. Subscribe to email alerts when changes occur to work items, code reviews, pull requests, source control files, builds and more. To learn more, see:  
-      - [About notifications](../notifications/about-notifications.md)
-      - [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
-      - [Unsubscribe from default notification](../notifications/unsubscribe-default-notification.md)
-      - [Manage team, group, and Global notifications](../notifications/manage-team-group-global-organization-notifications.md).  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Share summaries by email
-   :::column-end::: 
-   :::column span="3":::
-       - [Email a list of work items](../boards/backlogs/bulk-modify-work-items.md)
-       - [Email query items](../boards/queries/view-run-query.md)
-       - [Send release summaries by email](../pipelines/release/index.md#how-do-i-send-release-summaries-by-email)
-   :::column-end:::
-:::row-end:::
----  
-::: moniker range=">= azure-devops-2019"
-:::row:::
-   :::column span="1":::
-      Wiki
-   :::column-end::: 
-   :::column span="3":::
-      [Embed Azure Boards query results in Wiki](../project/wiki/wiki-markdown-guidance.md#embed-azure-boards-query-results-in-wiki). 
-   :::column-end:::
-:::row-end:::
----  
 ::: moniker-end
