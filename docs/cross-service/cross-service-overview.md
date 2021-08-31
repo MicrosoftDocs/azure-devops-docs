@@ -18,11 +18,11 @@ ms.date: 08/31/2021
 
 One of the major strengths of Azure DevOps is the integration it supports across its core services. Azure DevOps supports multiple integration points across each of the major services&mdash;Azure Boards, Azure Repos, Azure Pipelines, and Azure Test Plans. 
 
-Review this article to understand the various integration points across Azure DevOps. 
+Review this article to understand how to use various features to support collaboration and traceability for all your devops tasks. 
 
 
 
-## Collaboration across Azure Devops 
+## Collaboration across Azure DevOps 
 
 Collaborating within and across teams is supported with many of the features summarized in the following table. 
 
@@ -365,9 +365,42 @@ The following table summarizes the integration features between Azure Repos and 
    :::column-end:::
 :::row-end:::
 --- 
-
-
-::: moniker-end
+:::row:::
+   :::column span="1":::
+      Code coverage
+   :::column-end::: 
+   :::column span="2":::
+      Publish and review code coverage results that indicate the proportion of your project's code that is actually being tested. To learn more, see [Publish Code Coverage Results task](../pipelines/tasks/test/publish-code-coverage-results.md) and [Review code coverage results](../pipelines/test/review-code-coverage-results.md). 
+   :::column-end:::
+:::row-end:::
+--- 
+:::row:::
+   :::column span="1":::
+      View test results in builds and releases
+   :::column-end::: 
+   :::column span="2":::
+      Measure pipeline quality, review traceability, and troubleshoot failures by surfacing test reulst in pipeline builds and releases. To learn more, see [Review test results](../pipelines/test/review-continuous-test-results-after-build.md). 
+   :::column-end:::
+:::row-end:::
+--- 
+:::row:::
+   :::column span="1":::
+      Run automated tests in build pipelines
+   :::column-end::: 
+   :::column span="2":::
+      Associate test plans with a build pipeline so that they run with each build. To learn more, see [Run automated tests from test plans](..//test/run-automated-tests-from-test-hub.md). 
+   :::column-end:::
+:::row-end:::
+--- 
+:::row:::
+   :::column span="1":::
+      Run automated tests in build pipelines
+   :::column-end::: 
+   :::column span="2":::
+      Associate test plans with a build pipeline so that they run with each build. To learn more, see [Run automated tests from test plans](..//test/run-automated-tests-from-test-hub.md). 
+   :::column-end:::
+:::row-end:::
+--- 
 
  
 
@@ -481,7 +514,6 @@ Several collaboration scenarios are supported through Azure Boards work item typ
    :::column span="3":::
       Defines steps used to validate individual parts of your code to ensure your code works correctly, has no errors, and meets business and customer requirements. You can add individual test cases to a test plan without creating a test suite. More than one test suite or test plan can refer to a test case. You can effectively reuse test cases without having to copy or clone them for each suite or plan. To learn more, see [Create manual test cases](../test/create-test-cases.md).
    :::column-end:::
-   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -509,7 +541,7 @@ Several collaboration scenarios are supported through Azure Boards work item typ
 :::row-end:::
 ---
 
-## Test work item types
+### Test work item types
 
 Work item types that support the test experience are linked together using the link types shown in the following image. These include *Tested By/Tests*, *Test Cases/Shared Steps*, and *Reference By/References*. 
 
@@ -518,7 +550,7 @@ Work item types that support the test experience are linked together using the l
 From the web portal, you can view which test cases are defined for a test suite, and which test suites are defined for a test plan. However, these objects aren't connected to each other through specific link types. 
   
 
-## Bug tracking 
+### Bug tracking 
 
 When tracking bugs using the Bug work item type, note the following supported integrations. 
 
@@ -527,9 +559,6 @@ When tracking bugs using the Bug work item type, note the following supported in
    :::column span="1":::
       **Scenario**
    :::column-end::: 
-   :::column span="1":::
-      **Work item type**
-   :::column-end:::
    :::column span="3":::
       **Description**
    :::column-end:::
@@ -540,7 +569,7 @@ When tracking bugs using the Bug work item type, note the following supported in
       Create a bug from a testing tool
    :::column-end::: 
    :::column span="3":::
-      You can add a bug from Test Runner or the Test & Feedback extension. To learn more, see [../boards/backlogs/manage-bugs.md#create-a-bug-from-a-testing-tool].
+      You can add a bug from Test Runner or the Test & Feedback extension. To learn more, see [Define, capture, triage, and manage bugs](../boards/backlogs/manage-bugs.md#create-a-bug-from-a-testing-tool).
    :::column-end:::
 :::row-end:::
 ---
@@ -745,6 +774,8 @@ Widgets are annotated as follows:
 ---
 
 
+::: moniker range=">= azure-devops-2019" 
+
 ## Data available from Analytics
  
 Analytics provides the reporting platform for Azure DevOps. Analytics is generally available for Azure DevOps Service and Azure DevOps Server 2020. It is in preview for Azure DevOps Server 2019. 
@@ -754,9 +785,11 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
 ---
 :::row:::
    :::column span="1":::
+                
       **Service**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
+                
       **Data availability**
    :::column-end:::
    :::column span="1":::
@@ -772,7 +805,7 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
    :::column span="1":::
        **Boards** 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       [Widgets](../report/dashboards/analytics-widgets.md)  
       [In-context reports](../report/dashboards/overview.md#in-context-reports-work-tracking)  
       [OData](../report/extend-analytics/quick-ref.md)
@@ -796,7 +829,7 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
    :::column span="1":::
       **Repos** 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       None
    :::column-end:::
    :::column span="1":::
@@ -832,7 +865,7 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
    :::column span="1":::
       **Test Plans**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       [Progress Report](../test/track-test-status.md)
    :::column-end:::
    :::column span="1":::
@@ -845,7 +878,7 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
 ---
 :::row:::
    :::column span="1":::
-      Artifacts 
+      **Artifacts** 
    :::column-end:::
    :::column span="2":::
       None
@@ -858,6 +891,10 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
    :::column-end:::
 :::row-end:::
 ---
+
+
+::: moniker-end 
+
 
  
 ## Related articles

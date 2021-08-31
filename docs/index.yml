@@ -232,31 +232,31 @@ additionalContent:
         # Card
         - title: Cross-service, Wikis, Public Projects
           links:
-            - text: Search
-              url: ./project/search/get-started-search.md  
-            - text: Work across projects
-              url: ./project/navigation/work-across-projects.md  
-            - text: Work across projects FAQs
-              url: ./project/work-across-projects-faqs.yml  
+            - text: Cross-service integration and collaboration overview 
+              url: ./cross-service/cross-service-overview.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json   
             - text: End-to-end traceability
               url: ./cross-service/end-to-end-traceability.md
+            - text: Work across projects
+              url: ./project/navigation/work-across-projects.md  
             - text: Create a wiki for your project
               url: ./project/wiki/wiki-create-repo.md
             - text: Syntax guidance for Markdown usage in Wiki
               url: ./project/wiki/wiki-markdown-guidance.md
-            - text: Create a public project
-              url: ./organizations/public/create-public-project.md
             - text: "See more >"
               url: ./project/index.yml
         # Card
         - title: GitHub integration
           links:
+            - url: ./cross-service/github-integration.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+              text: GitHub integration 
             - url: ./boards/github/connect-to-github.md
               text: Azure Boards & GitHub
             - url: ./pipelines/create-first-pipeline.md
               text: Azure Pipelines & GitHub
             - url: /azure/devops-project/azure-devops-project-github
               text: Azure DevOps Projects & GitHub
+            - url: /visualstudio/version-control/git-with-visual-studio
+              text: Git experience in Visual Studio
     - title: Configure & customize resources
       items:    
         # Card
