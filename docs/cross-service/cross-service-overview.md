@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 08/30/2021
+ms.date: 08/31/2021
 ---
  
 
@@ -60,8 +60,8 @@ Collaborating within and across teams is supported with many of the features sum
    :::column-end::: 
    :::column span="3":::
       Each team gets access to a suite of Agile tools and team assets. These tools let teams work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work. For quick navigation, they can favorite repositories, pipelines, and test plans. To learn more, see:  
-      - [About teams and Agile tools](..//organizations/settings/about-teams-and-settings.md)
-      - [Set personal or team favorites](..//project/navigation/set-favorites.md)
+      - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
+      - [Set personal or team favorites](../project/navigation/set-favorites.md)
       - [Unsubscribe from default notification](../notifications/unsubscribe-default-notification.md)
       - [Manage team, group, and Global notifications](../notifications/manage-team-group-global-organization-notifications.md).  
    :::column-end:::
@@ -218,7 +218,7 @@ The following table summarizes the integration points between Azure Boards and A
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      Set option and branch to automatically create *Integrated in build* and *Integrated in release stage* links to work items linked to a branch, commit, or pull request associated with a Classic or YAML pipeline. For details, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md). 
+      Set option and branch to automatically create *Integrated in build* and *Integrated in release stage* links to work items linked to a branch, commit, or pull request associated with a Classic or YAML pipeline. 
    :::column-end::: 
    :::column span="2":::
       Required to populate the work item form **Development** control with *Integrated in build* links and the **Deployment** control with *Integrated in release stage* links when running a Classic or YAML pipeline. For details, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md). 
@@ -232,7 +232,7 @@ The following table summarizes the integration points between Azure Boards and A
       Set integration option to automatically create *Integrated in release stage* links to work items linked to a branch, commit, or pull request associated with a release.
    :::column-end::: 
    :::column span="2":::
-      Required to populate **Deployment** control in work item form with **Integrated in release stage** links. For details, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md#auto-link-work-items). 
+      Required to populate **Deployment** control in work item form with **Integrated in release stage** links. For details, see [Release pipelines, How do I integrate and report release status?](../pipelines/release/index.md#reportstatus). 
    :::column-end:::
 :::row-end:::
 --- 
@@ -284,7 +284,7 @@ The following table summarizes the integration points between Azure Boards and A
    :::column-end::: 
    :::column span="2":::
       The work item form **Deployment** control lists set of stages work item is associated with. You can expand a stage to view status of select runs and quickly open each stage or run. For details, see [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md).  
-      :::image type="content" source="../boards/work-items/media/deployments-control/deployment-control-intro.png " alt-text="Screenshot of Deployment control showing several expandable deployment stages.":::  
+      :::image type="content" source="media/overview/deployment-control.png" alt-text="Screenshot of Deployment control showing several links.":::  
    :::column-end:::
 :::row-end:::
 ---  
@@ -350,7 +350,7 @@ The following table summarizes the integration features between Azure Repos and 
       Report deployment status
    :::column-end::: 
    :::column span="2":::
-       Indicates the status of a deployment on the **Files**, **Commits**, and **Branches** pages for Git repositories. This feature improves the traceability from code commit to deployment. You can configure the release environments to report deployment status. For details, see [Configure pipelines to support integration](../pipelines/integrations/configure-pipelines-work-tracking.md#report-release-status).
+       Indicates the status of a deployment on the **Files**, **Commits**, and **Branches** pages for Git repositories. This feature improves the traceability from code commit to deployment. You can configure the release environments to report deployment status. For details, see [Release pipelines, How do I integrate and report release status?](../pipelines/release/index.md#reportstatus)..
    :::column-end:::
 :::row-end:::
 --- 
@@ -437,99 +437,268 @@ For on-premises deployments, SQL Server reports provides additional monitoring c
 Dashboards provide an easy way to monitor progress and status. Using widgets, teams can add configurable widgets to support their goals. SQL Server reports provide additional monitoring capabilities. To learn more, see [Reporting Services reports](../report/sql-reports/reporting-services-reports.md). 
 ::: moniker-end 
 
-Built-in widgets you can add to your dashboard are listed below. You may find additional widgets from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
- 
+Built-in widgets you can add to your dashboard are listed below. They are organized under the service they support. You may find additional widgets from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
+
+Widgets are annotated as follows: 
+
 ::: moniker range=">= azure-devops-2019"
----
-:::row:::
-   :::column span="1":::
-      **Azure Boards**
-      - [Assigned to me](../report/dashboards/widget-catalog.md#assigned-to-me-widget)  
-      - [Burndown chart (Analytics)](../report/dashboards/widget-catalog.md#burndown-analytics-widget)  
-      - [Burnup chart (Analytics)](../report/dashboards/widget-catalog.md#burnup-analytics-widget)  
-      - [Chart for work items](../report/dashboards/widget-catalog.md#chart-wit-widget)  
-      - [Cumulative flow diagram](../report/dashboards/widget-catalog.md#cfd-widget)  
-      - [Cycle time (Analytics)](../report/dashboards/widget-catalog.md#cycle-time-widget)  
-      - [Lead time (Analytics)](../report/dashboards/widget-catalog.md#lead-time-widget)  
-      - [New Work item](../report/dashboards/widget-catalog.md#new-work-item-widget)  
-      - [Query results](../report/dashboards/widget-catalog.md#query-results-widget)  
-      - [Query tile](../report/dashboards/widget-catalog.md#query-tile-widget)  
-      - [Sprint burndown (Analytics)](../report/dashboards/widget-catalog.md#sprint-burndown-analytics-widget)  
-      - [Sprint burndown (Legacy)](../report/dashboards/widget-catalog.md#sprint-burndown-widget)  
-      - [Sprint capacity](../report/dashboards/widget-catalog.md#sprint-capacity-widget)  
-      - [Sprint overview](../report/dashboards/widget-catalog.md#sprint-overview-widget)  
-      - [Velocity (Analytics)](../report/dashboards/widget-catalog.md#velocity-widget)  
-      - [Work links](../report/dashboards/widget-catalog.md#work-links-widget)  
-      ---
-      **Azure Repos**
-      - [Code tile](../report/dashboards/widget-catalog.md#code-tile-widget)  
-      - [Pull request](../report/dashboards/widget-catalog.md#pull-request-widget)  
-   :::column-end::: 
-   :::column span="1":::
-      **Azure Pipelines**  
-      - [Chart for build history](../report/dashboards/widget-catalog.md#build-history-widget)  
-      - [Deployment status](../report/dashboards/widget-catalog.md#deployment-status-widget)  
-      - [Release pipeline overview](../report/dashboards/widget-catalog.md#release-definition-widget)"  
-      - [Test results trend, Advanced (Analytics)](../report/dashboards/widget-catalog.md#test-trend-results-advanced)  
-      - [Requirements quality](../report/dashboards/widget-catalog.md#requirements-quality-widget)  
-      ---
-      **Azure Test Plans** 
-      - [Chart for test plans](../report/dashboards/widget-catalog.md#chart-test-plan-widget) 
-      - [Test results trend](../report/dashboards/widget-catalog.md#test-results-widget)  
-      - [Test results trend, Advanced(Analytics)](../report/dashboards/widget-catalog.md#test-trend-results-advanced)   
-      ---
-      **Other**
-      - [Embedded web page](../report/dashboards/widget-catalog.md#embedded-webpage-widget)  
-      - [Markdown](../report/dashboards/widget-catalog.md#markdown-widget)  
-      - [Other links](../report/dashboards/widget-catalog.md#other-links-widget)  
-      - [Team members](../report/dashboards/widget-catalog.md#team-members-widget)  
-      - [Visual Studio Shortcuts](../report/dashboards/widget-catalog.md#visual-studio-widget)  
-      - [Welcome](../report/dashboards/widget-catalog.md#how-to-widget)  
-   :::column-end:::
-:::row-end:::
---- 
+- **Analytics**: Widget derives data from [Analytics data](../powerbi/what-is-analytics.md)  
+- **Build**: Widget derives data for a selected build pipeline  
+- **Project**: indicates you can select the project and team when configuring the widget
+- **Release**: Widget derives data for a selected release pipeline  
+- **Team**: Widget is scoped to a single team  
+- **Teams**: Widget is scoped to one or more teams
+- **User**: Widget is scoped to the logged in user account
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+- **Build**: Widget derives data for a selected build pipeline  
+- **Release**: Widget derives data for a selected release pipeline  
+- **Team**: Widget is scoped to a single team  
+- **User**: Widget is scoped to the logged in user account
 ::: moniker-end
 
 
-::: moniker range="< azure-devops-2019"
-
+---
 :::row:::
    :::column span="1":::
-      **Work**
-      - [Assigned to me](../report/dashboards/widget-catalog.md#assigned-to-me-widget)  
-      - [Chart for work items<](../report/dashboards/widget-catalog.md#chart-wit-widget)  
+      ::: moniker range=">= azure-devops-2020"
+      **Boards**
+      - [Assigned to me](../report/dashboards/widget-catalog.md#assigned-to-me-widget) (User)
+      - [Burndown chart](../report/dashboards/widget-catalog.md#burndown-analytics-widget) (Analytics, Project, Teams)    
+      - [Burnup chart](../report/dashboards/widget-catalog.md#burnup-analytics-widget) (Analytics, Project, Teams)     
+      - [Chart for work items](../report/dashboards/widget-catalog.md#chart-wit-widget)  
+      - [Cumulative flow diagram](../report/dashboards/widget-catalog.md#cfd-widget) (Team)   
+      - [Cycle time (Analytics)](../report/dashboards/widget-catalog.md#cycle-time-widget) (Analytics, Team)  
+      - [Lead time (Analytics)](../report/dashboards/widget-catalog.md#lead-time-widget) (Analytics, Team) 
+      - [New Work item](../report/dashboards/widget-catalog.md#new-work-item-widget)  
+      - [Query results](../report/dashboards/widget-catalog.md#query-results-widget)  
+      - [Query tile](../report/dashboards/widget-catalog.md#query-tile-widget)  
+      - [Sprint burndown](../report/dashboards/widget-catalog.md#sprint-burndown-analytics-widget) (Analytics, Team)  
+      - [Sprint burndown - Legacy](../report/dashboards/widget-catalog.md#sprint-burndown-widget) (Team)   
+      - [Sprint capacity](../report/dashboards/widget-catalog.md#sprint-capacity-widget) (Team) 
+      - [Sprint overview](../report/dashboards/widget-catalog.md#sprint-overview-widget) (Team)   
+      - [Velocity](../report/dashboards/widget-catalog.md#velocity-widget) (Analytics, Team)  
+      - [Work links](../report/dashboards/widget-catalog.md#work-links-widget)  
+      ::: moniker-end
+      ::: moniker range="azure-devops-2019"
+      **Boards**
+      - [Assigned to me](../report/dashboards/widget-catalog.md#assigned-to-me-widget) (User)
+      - [Burndown chart](../report/dashboards/widget-catalog.md#burndown-analytics-widget) (Analytics)    
+      - [Burnup chart](../report/dashboards/widget-catalog.md#burnup-analytics-widget) (Analytics)    
+      - [Chart for work items](../report/dashboards/widget-catalog.md#chart-wit-widget)  
+      - [Cumulative flow diagram](../report/dashboards/widget-catalog.md#cfd-widget)  
+      - [Cycle time (Analytics)](../report/dashboards/widget-catalog.md#cycle-time-widget) (Analytics)    
+      - [Lead time (Analytics)](../report/dashboards/widget-catalog.md#lead-time-widget) (Analytics)   
       - [New Work item](../report/dashboards/widget-catalog.md#new-work-item-widget)  
       - [Query results](../report/dashboards/widget-catalog.md#query-results-widget)  
       - [Query tile](../report/dashboards/widget-catalog.md#query-tile-widget)  
       - [Sprint burndown](../report/dashboards/widget-catalog.md#sprint-burndown-widget)  
       - [Sprint capacity](../report/dashboards/widget-catalog.md#sprint-capacity-widget)  
       - [Sprint overview](../report/dashboards/widget-catalog.md#sprint-overview-widget)  
-      - [Work links](../report/dashboards/widget-catalog.md#work-links-widget)</br>  
+      - [Velocity](../report/dashboards/widget-catalog.md#velocity-widget) (Analytics)  
+      - [Work links](../report/dashboards/widget-catalog.md#work-links-widget)  
+      ::: moniker-end
+      ::: moniker range=">= tfs-2017 <= tfs-2018"
+      **Work**
+      - [Assigned to me](../report/dashboards/widget-catalog.md#assigned-to-me-widget) (User)
+      - [Chart for work items](../report/dashboards/widget-catalog.md#chart-wit-widget)  
+      - [New Work item](../report/dashboards/widget-catalog.md#new-work-item-widget)  
+      - [Query results](../report/dashboards/widget-catalog.md#query-results-widget)  
+      - [Query tile](../report/dashboards/widget-catalog.md#query-tile-widget)  
+      - [Sprint burndown](../report/dashboards/widget-catalog.md#sprint-burndown-widget)  
+      - [Sprint capacity](../report/dashboards/widget-catalog.md#sprint-capacity-widget)  
+      - [Sprint overview](../report/dashboards/widget-catalog.md#sprint-overview-widget)  
+      - [Work links](../report/dashboards/widget-catalog.md#work-links-widget)  
+      ::: moniker-end
       ---
-     **Code**
-      - [Code tile](../report/dashboards/widget-catalog.md#code-tile-widget)
-      - [Pull request](../report/dashboards/widget-catalog.md#pull-request-widget)</br>    
-      ---
-      **Test** 
-      - [Chart for test plans](../report/dashboards/widget-catalog.md#chart-test-plan-widget)  
-   :::column-end::: 
+      ::: moniker range="<= tfs-2018"
+      **Repos** 
+      - [Code tile](../report/dashboards/widget-catalog.md#code-tile-widget) (Repository, Branch, Folder)
+      - [Pull request](../report/dashboards/widget-catalog.md#pull-request-widget) (Team, User)
+      ::: moniker-end
+      ::: moniker range=">= azure-devops-2019"
+      **Code** 
+      - [Code tile](../report/dashboards/widget-catalog.md#code-tile-widget) (Repository, Branch, Folder)
+      - [Pull request](../report/dashboards/widget-catalog.md#pull-request-widget) (Team)
+      ::: moniker-end
+   :::column-end:::
    :::column span="1":::
-      **Build and Release**  
-      - [Chart for build history](../report/dashboards/widget-catalog.md#build-history-widget)  
-      - [Deployment status](../report/dashboards/widget-catalog.md#deployment-status-widget)  
-      - [Release pipeline overview](../report/dashboards/widget-catalog.md#release-definition-widget)
-      - [Test results trend (Advanced, Analytics)](../report/dashboards/widget-catalog.md#test-results-widget)  
-      - [Test results trend (Advanced, Analytics)](../report/dashboards/widget-catalog.md#test-trend-results-advanced)  
-      - [Requirements quality](../report/dashboards/widget-catalog.md#requirements-quality-widget)</br>  
+      ::: moniker range=">= azure-devops-2019"
+      **Pipelines**
+      - [Build history](../report/dashboards/widget-catalog.md#build-history-widget) (Build pipeline)
+      - [Deployment status](../report/dashboards/widget-catalog.md#deployment-status-widget) (Build pipeline)
+      - [Release pipeline overview](../report/dashboards/widget-catalog.md#release-definition-widget) (Release pipeline)
+      - [Requirements quality](../report/dashboards/widget-catalog.md#requirements-quality-widget) (Query, Build or Release pipeline)
       ---
-      **Other**
+      **Test Plans**
+      - [Chart for test plans](../report/dashboards/widget-catalog.md#chart-test-plan-widget)
+      - [Test results trend (Advanced)](../report/dashboards/widget-catalog.md#test-trend-results-advanced) (Analytics, Build or Release pipeline) 
+      - [Test results trend](../report/dashboards/widget-catalog.md#test-trend-results) (Build or Release pipeline)  
+      ---
+      **Information and links**
       - [Embedded web page](../report/dashboards/widget-catalog.md#embedded-webpage-widget)  
       - [Markdown](../report/dashboards/widget-catalog.md#markdown-widget)  
       - [Other links](../report/dashboards/widget-catalog.md#other-links-widget)  
-      - [Team members](../report/dashboards/widget-catalog.md#team-members-widget)  
-      - [Visual Studio Shortcuts](../report/dashboards/widget-catalog.md#visual-studio-widget)  
-      - [Welcome](../report/dashboards/widget-catalog.md#how-to-widget)  
+      - [Team members](../report/dashboards/widget-catalog.md#team-members-widget) (Team) 
+      - [Visual Studio Shortcuts](../report/dashboards/widget-catalog.md#visual-studio-widget) 
+      - [Welcome](../report/dashboards/widget-catalog.md#how-to-widget) 
+      ::: moniker-end
+      ::: moniker range=">= tfs-2017 <= tfs-2018"
+      **Build & Release**
+      - [Build history](../report/dashboards/widget-catalog.md#build-history-widget) (Build pipeline)
+      - [Deployment status](../report/dashboards/widget-catalog.md#deployment-status-widget) (Build pipeline)
+      - [Release pipeline overview](../report/dashboards/widget-catalog.md#release-definition-widget) (Release pipeline)
+      - [Requirements quality](../report/dashboards/widget-catalog.md#requirements-quality-widget) (Query, Build or Release pipeline)
+      ---
+      **Test**
+      - [Chart for test plans](../report/dashboards/widget-catalog.md#chart-test-plan-widget)
+      - [Test results trend](../report/dashboards/widget-catalog.md#test-trend-results) (Build or Release pipeline)  
+      ::: moniker-end
+      ---
+      ::: moniker range="tfs-2018"
+      **Information and links**
+      - [Embedded web page](../report/dashboards/widget-catalog.md#embedded-webpage-widget)  
+      - [Markdown](../report/dashboards/widget-catalog.md#markdown-widget)  
+      - [Other links](../report/dashboards/widget-catalog.md#other-links-widget-2018)  
+      - [Team members](../report/dashboards/widget-catalog.md#team-members-widget) (Team) 
+      - [Visual Studio Shortcuts](../report/dashboards/widget-catalog.md#visual-studio-widget) 
+      - [Welcome](../report/dashboards/widget-catalog.md#how-to-widget) 
+      ::: moniker-end
+      ::: moniker range="tfs-2017"
+      **Information and links**
+      - [Embedded web page](../report/dashboards/widget-catalog.md#embedded-webpage-widget)  
+      - [Markdown](../report/dashboards/widget-catalog.md#markdown-widget)  
+      - [Other links](../report/dashboards/widget-catalog.md#other-links-widget-2018)  
+      - [Team members](../report/dashboards/widget-catalog.md#team-members-widget) (Team) 
+      - [Team room](../report/dashboards/widget-catalog.md#team-room-widget) (Team) 
+      - [Visual Studio Shortcuts](../report/dashboards/widget-catalog.md#visual-studio-widget) 
+      - [Welcome](../report/dashboards/widget-catalog.md#how-to-widget) 
+      ::: moniker-end
    :::column-end:::
 :::row-end:::
---- 
-::: moniker-end
+---
+
+
+## Data available from Analytics
+ 
+Analytics provides the reporting platform for Azure DevOps. Analytics is generally available for Azure DevOps Service and Azure DevOps Server 2020. It is in preview for Azure DevOps Server 2019. 
+
+ You can access the following data from Analytics.  
+
+---
+:::row:::
+   :::column span="1":::
+      **Service**
+   :::column-end:::
+   :::column span="2":::
+      **Data availability**
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Services**  
+      **Azure DevOps Server 2020**  
+   :::column-end:::
+   :::column span="1":::
+      **Azure DevOps Server 2019**  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       **Boards** 
+   :::column-end:::
+   :::column span=2"":::
+      [Widgets](../report/dashboards/analytics-widgets.md)  
+      [In-context reports](../report/dashboards/overview.md#in-context-reports-work-tracking)  
+      [OData](../report/extend-analytics/quick-ref.md)
+      [Power BI](report/overview.md)
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+      ✔️   
+      ✔️   
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+        
+      ✔️   
+      ✔️   
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **Repos** 
+   :::column-end:::
+   :::column span="2":::
+      None
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **Pipelines**
+   :::column-end:::
+   :::column span="2":::
+      [Test Analytics](../pipelines/test/test-analytics.md)  
+      [Pipeline Analytics](../pipelines/reports/pipelinereport.md)  
+      [OData Preview](../report/extend-analytics/quick-ref.md) 
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+      ✔️   
+      ✔️    
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+          
+          
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **Test Plans **
+   :::column-end:::
+   :::column span="2":::
+      [Progress Report](../../test/track-test-status.md)
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+         
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Artifacts 
+   :::column-end:::
+   :::column span="2":::
+      None
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+:::row-end:::
+---
+
+
+> [!NOTE]   
+> Analytics doesn't support reporting on plain text and HTML fields. 
+
+## Related articles
+
+- [End-to-end traceability](end-to-end-traceability.md)
+- [Data model for Analytics](../report/extend-analytics/data-model-analytics-service.md)
