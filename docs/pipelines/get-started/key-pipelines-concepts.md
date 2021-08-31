@@ -107,5 +107,9 @@ A [task](../process/tasks.md) is the building block for defining automation in a
 
 A trigger is something that's set up to tell the pipeline when to run. You can configure a pipeline to run upon a push to a repository, at scheduled times, or upon the completion of another build. All of these actions are known as triggers. For more information, see [build triggers](../build/triggers.md) and [release triggers](../release/triggers.md).
 
+## Library
+
+All the files that are used within Pipelines and Releases are saved here, under **Secure files**. We can access these files wherever we want. Many times, we need to save a file at the DevOps level and use it only during build or deployment. In that case, you can save the file within [Library](../library/index.md) and use it whenever and wherever required. 
+
 ### About the authors
 - [Dave Jarvis](https://github.com/DaveJarvis) contributed to the key concepts overview graphic.
