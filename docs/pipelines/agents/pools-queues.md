@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="<= tfs-2018"
 
-Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. In TFS, pools are scoped to the entire server; so you can share an agent pool across project collections and projects.
+Agent pools are groups of agents that run your pipelines. Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. In TFS, pools are scoped to the entire server; so you can share an agent pool across project collections and projects.
 
 An **agent queue** provides access to an **agent pool** within a project. When you create a build or release pipeline, you specify which queue it uses. Queues are scoped to your project in TFS 2017 and newer, so you can only use them across build and release pipelines within a project.
 
@@ -42,11 +42,21 @@ Agent pools are scoped to project collections.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="= azure-devops"
 
-Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. In Azure Pipelines, pools are scoped to the entire organization; so you can share the agent machines across projects. In Azure DevOps Server, agent pools are scoped to the entire server; so you can share the agent machines across projects and collections.
+Agent pools are groups of agents that run your pipelines. Instead of managing each [agent](agents.md) individually, you organize agents into agent pools. When you configure an agent, it is registered with a single pool, and when you create a pipeline, you specify the pool in which the pipeline runs. When you run the pipeline, it runs on an agent from that pool that meets the [demands](../process/demands.md) of the pipeline.
 
-When you configure an agent, it is registered with a single pool, and when you create a pipeline, you specify which pool the pipeline uses. When you run the pipeline, it runs on an agent from that pool that meets the [demands](../process/demands.md) of the pipeline.
+::: moniker-end
+
+::: moniker range="= azure-devops"
+
+In Azure Pipelines, pools are scoped to the entire organization; so you can share the agent machines across projects. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+In Azure DevOps Server, agent pools are scoped to the entire server; so you can share the agent machines across projects and collections. 
 
 ::: moniker-end
 
