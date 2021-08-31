@@ -18,9 +18,8 @@ ms.date: 08/31/2021
 
 Azure Boards and Azure Pipelines provide several integration points with GitHub and GitHub Enterprise. 
  
- 
 
-### Sign-in with GitHub credentials 
+## Sign-in with GitHub credentials 
 
 Azure DevOps simplifies deployment from your repository with seamless access to the Azure portal and Azure DevOps using your GitHub account credentials.
 
@@ -35,7 +34,6 @@ Azure DevOps simplifies deployment from your repository with seamless access to 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="1":::
@@ -67,9 +65,8 @@ Azure DevOps simplifies deployment from your repository with seamless access to 
    :::column-end:::
 :::row-end:::
  
- 
 
-### Azure Boards and GitHub integration
+## Azure Boards and GitHub integration
 
 By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits, pull requests, and issues to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. To get started, see [Azure Boards-GitHub integration](../boards/github/index.md).
  
@@ -143,9 +140,8 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
 :::row-end:::
 ---
  
- 
 
-### Azure Pipelines and GitHub integration
+## Azure Pipelines and GitHub integration
 
 You can use Azure Pipelines to automatically build, test, package, release, and deploy your GitHub repository code. To get started, see [Build GitHub repositories](../pipelines/repos/github.md). 
 
@@ -328,7 +324,7 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      Github packages support in YAML pipelines
+      GitHub packages support in YAML pipelines
    :::column-end::: 
    :::column span="2":::
       In your YAML pipeline, specify a package type (NuGet or npm) that you want to consume from GitHub. For details, see [Resources: packages](../pipelines/process/resources.md). 
@@ -346,8 +342,9 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
       - **GitHub Checks** allows for sending detailed information about the pipeline status, test, code coverage, and errors. Status is posted to GitHub Checks for each job in the pipeline. 
       - **Status badges**: Supports adding Markdown syntax to a GitHub repo README.md file to display the pipeline status.  
       - GitHub artifacts show associated commits deployed in a release. To enhance traceability, you can see all the commits that were deployed to an environment for GitHub repositories, as a part of a specific release.  
-      - Track GitHub commits and associated issues in releases. Lists commits made in GitHub repos and the associated GitHub issues that are being deployed with a release. For details, see [Track GitHub commits and associated issues in releases (Release Notes)](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#new-build-status-badge-url). 
-      For details, see:
+      - Track GitHub commits and associated issues in releases. Lists commits made in GitHub repos and the associated GitHub issues that are being deployed with a release. For details, see [Track GitHub commits and associated issues in releases (Release Notes)](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#new-build-status-badge-url).  
+            
+      For details, see:  
       - [Create your first pipeline, Add a status badge to your repository](../pipelines/create-first-pipeline.md#add-a-status-badge-to-your-repository).  
       - [GitHub Checks API](https://docs.github.com/en/rest/reference/checks)
       - [Display status for each pipeline job in GitHub Checks (Release Notes)](/azure/devops/release-notes/2019/sprint-146-update#automatic-github-service-connections-in-pipelines).   
@@ -358,5 +355,6 @@ You can map your GitHub repositories to one or more projects in Azure DevOps.
 
 ## Related articles
 
-- [Azure Boards-GitHub integration](../boards/github/index.md)
-- [Build GitHub repositories](../pipelines/repos/github.md) 
+- [Azure Boards-GitHub integration](../boards/github/index.md)  
+- [Build GitHub repositories](../pipelines/repos/github.md)  
+- [Git experience in Visual Studio](/visualstudio/version-control/git-with-visual-studio)
