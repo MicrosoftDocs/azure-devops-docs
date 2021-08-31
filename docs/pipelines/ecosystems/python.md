@@ -137,7 +137,7 @@ To run a pipeline with multiple Python versions, for example to test a package a
 jobs:
 - job: 'Test'
   pool:
-    vmImage: 'ubuntu-16.04' # other options: 'macOS-10.14', 'vs2017-win2016'
+    vmImage: 'ubuntu-latest' # other options: 'macOS-latest', 'windows-latest'
   strategy:
     matrix:
       Python27:
@@ -248,7 +248,7 @@ Azure Pipelines can run parallel Tox test jobs to split up the work. On a develo
 - job:
 
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   strategy:
     matrix:
       Python27:

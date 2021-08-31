@@ -2,166 +2,119 @@
 ms.topic: include
 ---
 
-::: moniker range=">= azure-devops-2019"
-
-<table>
-<tr valign="bottom">
-<th width="41%">Task</th>
-<th width="15%">Stakeholders</th>
-<th width="12%">Readers</th>
-<th width="15%">Contributors</th>
-<th width="17%">Team admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">View sprint backlogs, taskboards, and open work items</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Add work items to a sprint backlog<br/><em>(Stakeholders can add backlog items to the bottom of a sprint backlog)</em></td>
-<td>✔️</td>
-<td></td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Add work items to a taskboard<br/><em>(Stakeholders can add backlog items but not tasks)</em></td>
-<td></td>
-<td></td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Prioritize/reorder a sprint backlog or taskboard; add child items to a backlog item; reassign items to a sprint using the Planning pane </td>
-<td> </td>
-<td>  </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">View team capacity (work details) </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Set team capacity</td>
-<td></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Use bulk edit features
-</td>
-<td>✔️</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Define sprints, set sprint dates</td>
-<td></td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Customize a sprint backlog or taskboard, configure team settings<br/><em>(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)</em></td>
-<td>✔️</td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end    
-
-
-::: moniker range="<= tfs-2018"
-
-<table>
-<tr valign="bottom">
-<th width="41%">Task</th>
-<th width="15%">Stakeholders</th>
-<th width="12%">Readers</th>
-<th width="15%">Contributors</th>
-<th width="17%">Team admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">View sprint backlogs, taskboards, and open work items</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Add work items to a sprint backlog<br/><em>(Stakeholders can add backlog items to the bottom of a sprint backlog)</em></td>
-<td>✔️</td>
-<td></td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Add work items to a taskboard<br/><em>(Stakeholders can add backlog items but not tasks)</em></td>
-<td></td>
-<td></td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Prioritize/reorder a sprint backlog or taskboard; add child items to a backlog item; reassign items to another using drag-and-drop</td>
-<td> </td>
-<td>  </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">View team capacity (work details) </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Set team capacity</td>
-<td></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Use bulk edit features
-</td>
-<td>✔️</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Define sprints, set sprint dates</td>
-<td></td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Customize a sprint backlog or taskboard, configure team settings<br/><em>(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)</em></td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
-
-
-::: moniker-end    
-
+:::row:::
+   :::column span="2":::
+      **Task** 
+   :::column-end:::
+   :::column span="1":::
+     **Readers**
+   :::column-end:::
+   :::column span="1":::
+     **Contributors**
+   :::column-end:::
+   :::column span="1":::
+     **Team admins**
+     **Project admins**
+   :::column-end:::
+:::row-end:::
+::: moniker range="azure-devops"  
+:::row:::
+   :::column span="2":::
+      View sprint backlogs, taskboards, and open work items 
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker-end  
+:::row:::
+   :::column span="2":::
+      Add work items to a sprint backlog or taskboard
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Prioritize/reorder a sprint backlog or taskboard; add child items to a backlog item; reassign items to a sprint using the Planning pane 
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      View team capacity and work details
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Set team capacity
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Use bulk edit features
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Define team sprints
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
 

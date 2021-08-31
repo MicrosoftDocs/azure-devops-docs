@@ -163,7 +163,7 @@ To learn more about Excel macros, see [Automate tasks with the Macro Recorder](h
   
  ![Task board displays round&#45;trip rollup from Project](media/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
   
- To learn how, see [Rollup estimated and actual work](../../boards/backlogs/office/rollup-estimated-and-actual-work-using-project.md).  
+ To learn how, see [Rollup estimated and actual work](/previous-versions/azure/devops/boards/backlogs/office/rollup-estimated-and-actual-work-using-project).  
 ::: moniker-end
 
 

@@ -51,7 +51,7 @@ Or, select one of the following options:
 - **Edit Query**: Opens the [Query Editor](../queries/using-queries.md) for the selected query.
 - **New Query**: Opens the [Query Editor](../queries/using-queries.md) with the default new query options.
 - **Open in Microsoft Excel (Flat)**: [Opens the query in Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
-- **Send to Microsoft Outlook**: [Open](/queries/share-plans)
+- **Send to Microsoft Outlook**: [Open](/azure/devops/boards/queries/share-plans)
 - **Cut**: Cuts the query. You can then paste the query under a different folder. 
 - **Copy**: Copies the query. You can then paste the query under the same folder or a different folder. 
 - **Delete**: [Deletes the query](../queries/organize-queries.md).  

@@ -215,7 +215,7 @@ Update the following snippet in your `azure-pipelines.yml` file to select the ap
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-latest' # examples of other options: 'macOS-10.15', 'vs2017-win2016'
+  vmImage: 'ubuntu-latest' # examples of other options: 'macOS-10.15', 'windows-latest'
 ```
 
 Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - are pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. For the exact version of Node.js and npm that is preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process. 
@@ -793,7 +793,7 @@ The first example assumes that you manage version information (such as through a
 - script: npm publish
 ```
 
-The next example publishes to a custom registry defined in your repo's `.npmrc` file. You'll need to set up an [npm service connection](/azure/devops/pipelines/library/service-endpoints#sep-npm) to inject authentication credentials into the connection as the build runs.
+The next example publishes to a custom registry defined in your repo's `.npmrc` file. You'll need to set up an [npm service connection](/azure/devops/pipelines/library/service-endpoints#npm-service-connection) to inject authentication credentials into the connection as the build runs.
 
 ```yaml
 - task: Npm@1

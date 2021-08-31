@@ -1,17 +1,11 @@
 - name: Azure Artifacts
   href: index.yml
   displayName: index, hub, artifacts 
-- name: What is Azure Artifacts?
-  href: overview.md
-  displayName: overview, artifacts 
-- name: Get started
+- name: Overview
   items:
-  - name: Get started with Azure Artifacts
+  - name: Azure Artifacts overview
     href: start-using-azure-artifacts.md
     displayName: get started, introduction 
-  - name: Where is Package Management?
-    href: where-is-package-management.md
-    displayName: tfs, package management 
   - name: View Artifacts storage consumption
     href: artifact-storage.md
     displayName: storage, limit, size, consumption, billing, charges 
@@ -20,7 +14,10 @@
     displayName: best practices, concepts
   - name: Search packages
     href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-    displayName: search, packages 
+    displayName: search, packages
+  - name: Where is Package Management?
+    href: where-is-package-management.md
+    displayName: tfs, package management 
 - name: Packages
   items:
   - name: About
@@ -169,7 +166,7 @@
       displayName: promote, artifact feed, promote packages, feed views 
   - name: Upstream sources
     items:
-    - name: Understand upstream sources
+    - name: Upstream sources overview
       href: concepts/upstream-sources.md
       displayName: upstream, sources, upstreams 
     - name: Set up upstream sources
@@ -194,24 +191,21 @@
     displayName: caching, storage, pipeline cach 
   - name: Set up retention policies
     href: ../pipelines/policies/retention.md
-    displayName: policies, retention, pipeline artifact 
-  - name: Symbols
-    items:
-    - name: Symbols overview
-      href: concepts/symbols.md
-      displayName: symbols, debugging 
-    - name: Debug with Visual Studio
-      href: symbols/debug-with-symbols-visual-studio.md
-      displayName: symbols, visual studio symbols, debug, debugger 
-    - name: Debug with WinDbg
-      href: symbols/debug-with-symbols-windbg.md
-      displayName: symbols, windbg, debugger
-    - name: Publish symbols
-      href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-      displayName: symbols, debug, debugger, publish 
-    - name: Publish and consume symbols
-      href: symbols/setting-up-github-sourcelinking.md
-      displayName: publish, consume, debug, debugger, symbols 
+    displayName: policies, retention, pipeline artifact
+- name: Symbols
+  items:
+  - name: Symbols overview
+    href: concepts/symbols.md
+    displayName: symbols, debugging 
+  - name: Debug with Visual Studio
+    href: symbols/debug-with-symbols-visual-studio.md
+    displayName: symbols, visual studio symbols, debug, debugger 
+  - name: Debug with WinDbg
+    href: symbols/debug-with-symbols-windbg.md
+    displayName: symbols, windbg, debugger
+  - name: Publish symbols
+    href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
+    displayName: symbols, debug, debugger, publish
 - name: Concepts and references
   items:
   - name: Key concepts

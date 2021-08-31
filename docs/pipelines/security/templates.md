@@ -220,11 +220,8 @@ parameters:
   default: ubuntu-latest
   values:
   - windows-latest
-  - vs2017-win2016
   - ubuntu-latest
-  - ubuntu-16.04
   - macOS-latest
-  - macOS-10.14
 
 steps:
 - script: echo ${{ parameters.yesNo }}

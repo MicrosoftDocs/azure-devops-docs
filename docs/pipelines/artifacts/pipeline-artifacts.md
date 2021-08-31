@@ -1,27 +1,26 @@
 ---
-title: Publish and consume artifacts in pipelines
-titleSuffix: Azure Pipelines and TFS
+title: Publish and download artifacts in your pipeline
 ms.custom: seodec18
-description: Understand pipeline artifacts in Azure Pipelines and Azure DevOps Server
+description: How to publish and consume pipeline artifacts
 ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference
-ms.date: 07/13/2020
+ms.date: 08/30/2021
 monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
 
-# Publish and download artifacts in Azure Pipelines
+# Publish and download pipeline Artifacts
 
 **Azure Pipelines**
 
-Pipeline artifacts provide a way to share files between stages in a pipeline or between different pipelines. They are typically the output of a build process that needs to be consumed by another job or be deployed. Artifacts are associated with the run they were produced in and remain available after the run has completed.
-
-> [!NOTE]
-> Both `PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2` require a minimum agent version of 2.153.1
+Using Azure Pipelines, you can download artifacts from earlier stages in your pipeline or from another pipeline. You can also publish your artifact to a file share or make it available as a pipeline artifact.
 
 ## Publish artifacts
 
-You can publish your artifacts using YAML, the classic web UI, or Azure CLI
+You can publish your artifacts using YAML, the classic editor, or Azure CLI:
+
+> [!NOTE]
+> Publishing pipeline artifacts is not supported in release pipelines.
 
 # [YAML](#tab/yaml)
 
@@ -32,7 +31,7 @@ steps:
 ```
 
 > [!NOTE]
-> The `publish` keyword is a shortcut for the **Publish Pipeline Artifact** task.
+> The `publish` keyword is a shortcut for the [Publish Pipeline Artifact task](../tasks/utility/publish-pipeline-artifact.md) .
 
 # [YAML (task)](#tab/yaml-task)
 
@@ -47,8 +46,6 @@ steps:
 - **targetPath**: the path to the folder or file you want to publish.
 - **artifactName**: the name of the artifact that you want to create.
 
-See the [publish Pipeline Artifacts task](../tasks/utility/publish-pipeline-artifact.md) for more details.
-
 # [Classic](#tab/classic)
 
 - Add the :::image type="icon" source="../tasks/utility/media/publish-pipeline-artifact.png" border="false"::: **Publish Pipeline Artifact** task.
@@ -61,7 +58,7 @@ See the [publish Pipeline Artifacts task](../tasks/utility/publish-pipeline-arti
 
 # [Azure CLI](#tab/azure-cli)
 
-- Run the following command to publish your Artifact
+- Run the following command to publish your Artifact:
 
   ```Command
     az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
@@ -69,23 +66,33 @@ See the [publish Pipeline Artifacts task](../tasks/utility/publish-pipeline-arti
 
 ---
 
-Things to keep in mind:
+Although the artifact's name is optional, it is a good practice to specify a name that accurately reflects the contents of your artifact. If you plan to consume the artifact from a job running on a different OS, you must ensure all the file paths are valid for the target environment. For example, a file name containing the character `\` or `*` will fail to download on Windows.
 
-* Although artifact name is optional, it is a good practice to specify a name that accurately reflects the contents of the artifact.
+The path of the file/folder to you want to publish is required. This can be an absolute or a relative path to `$(System.DefaultWorkingDirectory)`.
 
-* The path of the file or folder to publish is required. It can be an absolute or a relative path to `$(System.DefaultWorkingDirectory)`.
+Packages in Azure Artifacts are immutable. Once you publish a package, its version will be permanently reserved. rerunning failed jobs will fail if the package has been published. A good way to approach this if you want to be able to rerun failed jobs without facing an error *package already exists*, is to use [Conditions](../process/conditions.md) to only run if the previous job succeeded.
 
-* If you plan to consume the artifact from a job running on a different operating system or file system, you must ensure all file paths are valid for the target environment. For example, a file name containing a `\` or `*` character will typically fail to download on Windows.
+```yml
+  jobs:
+  - job: Job1
+    steps:
+      - script: echo Hello Job1!
+
+  - job: Job2
+    steps:
+      - script: echo Hello Job2!
+    dependsOn: Job1
+``` 
 
 > [!NOTE]
-> You will not be billed for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching. For more information, see [Which artifacts count toward my total billed storage](../../artifacts/start-using-azure-artifacts.md#q-which-artifacts-count-toward-my-total-billed-storage).
+> You will not be billed for storing Pipeline Artifacts. Pipeline Caching is also exempt from storage billing. See [Which artifacts count toward my total billed storage](../../artifacts/start-using-azure-artifacts.md#q-which-artifacts-count-toward-my-total-billed-storage).
 
 > [!CAUTION]
-> Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.
+> Deleting a pipeline run will result in the deletion of all Artifacts associated with that run.
 
 ### Use .artifactignore
 
-`.artifactignore` uses the identical file-globbing syntax of `.gitignore` (with very few limitations) to provide a version-controlled way to specify which files should not be included when publishing artifacts. See [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) for more details.
+`.artifactignore` uses the identical file-globbing syntax of `.gitignore` (with few limitations) to provide a version-controlled way to specify which files should not be included when publishing artifacts. See [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) for more details.
 
 Example: ignore all files except **.exe** files:
 
@@ -99,7 +106,7 @@ Example: ignore all files except **.exe** files:
 
 ## Download artifacts
 
-You can download artifacts using YAML, the classic web UI, or Azure CLI.
+You can download artifacts using YAML, the classic editor, or Azure CLI.
 
 # [YAML](#tab/yaml)
 
@@ -112,10 +119,10 @@ steps:
 - **current**: download artifacts produced by the current pipeline run. Options: current, specific.
 
 > [!TIP]
-> You can use [Pipeline resources](../process/resources.md#resources-pipelines) to define your source in one place and use it anywhere in your pipeline.
+> You can use [Pipeline resources](../process/resources.md#define-a-pipelines-resource) to define your source in one place and use it anywhere in your pipeline.
 
 > [!NOTE]
-> The `download` keyword is a shortcut to the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
+> The `download` keyword is a shortcut for the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
 
 # [YAML (task)](#tab/yaml-task)
 
@@ -149,13 +156,7 @@ steps:
 
 ---
 
-Things to keep in mind:
-
-- By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a subdirectory will be created for each downloaded artifact.
-
-- File matching patterns can be used to limit which files are downloaded.
-
-- To download artifacts from a different pipeline or from earlier stages in your pipeline see, [Download Pipeline Artifacts](../tasks/utility/download-pipeline-artifact.md) task.
+By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a subdirectory will be created for each downloaded artifact. You can use matching patterns to limit which files get downloaded.
 
 ### Artifacts selection
 
@@ -208,7 +209,7 @@ steps:
 
 # [Azure CLI](#tab/azure-cli)
 
-Not available for this action.
+Not available.
 
 ---
 
@@ -256,7 +257,7 @@ steps:
 
 # [Azure CLI](#tab/azure-cli)
 
-Not available for this action.
+Not available.
 
 ---
 
@@ -303,7 +304,7 @@ stages:
 
 ## Migrate from build artifacts
 
-Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the **Publish Build Artifacts** task can continue to be downloaded using **Download Build Artifacts**, but we recommend using the latest **Download Pipeline Artifact** task instead.
+Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) can still be downloaded using [Download Build Artifacts](../tasks/utility/download-build-artifacts.md), but we recommend using the latest [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task instead.
 
 When migrating from build artifacts to pipeline artifacts:
 
@@ -312,23 +313,20 @@ When migrating from build artifacts to pipeline artifacts:
 2. By default, the **Download Pipeline Artifact** task downloads files to `$(Pipeline.Workspace)`. This is the default and recommended path for all types of artifacts.
 
 3. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. For more information, see [single artifact selection](#single-artifact).
- 
-> [!TIP]
-> For more information on billing and usage tiers, check out the [Azure DevOps pricing tool](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 ## FAQ
 
-- **Can this task publish artifacts to a shared folder or a network path?**
+#### Q: What are build artifacts?
 
-Not currently, but this feature is planned.
+A: Build artifacts are the files generated by your build. See [Build Artifacts](build-artifacts.md) to learn more about how to publish and consume your build artifacts.
 
-- **What are build artifacts?**
+#### Q: Can this task publish artifacts to a shared folder?
 
-Build artifacts are the files generated by your build. See [Build Artifacts](build-artifacts.md) to learn more about how to publish and consume your build artifacts.
+A: Not currently, but this feature is planned.
 
 ## Related articles
 
 - [Build artifacts](build-artifacts.md)
 - [Releases in Azure Pipelines](../release/releases.md)
 - [Release artifacts and artifact sources](../release/artifacts.md)
-- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/en-us/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)
+- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)

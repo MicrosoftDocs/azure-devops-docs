@@ -17,4 +17,6 @@ ms.technology: devops-cicd-tasks
     #overWrite: false # Optional
     #flattenFolders: false # Optional
     #preserveTimestamp: false # Optional
+    #retryCount: 0 # Optional
+    #ignoreMakeDirErrors: false # Optional
 ```

@@ -25,6 +25,8 @@
     #   href: get-started/pipelines-get-started.md
     - name: DevOps Starter
       href: /azure/devops-project/overview
+    - name: Configure pipelines to support work tracking
+      href: integrations/configure-pipelines-work-tracking.md
 - name: Pipeline basics
   items:
     - name: Key concepts
@@ -86,7 +88,7 @@
         - name: Task types & usage
           href: process/tasks.md
           displayName: custom tasks, task versions, task control options, conditions, task tool installers, build tool installers
-        - name: Task groups
+        - name: Task groups (classic)
           href: library/task-groups.md
         - name: Template types & usage
           href: process/templates.md
@@ -371,12 +373,10 @@
       displayName: resource manager, service connection, service principal
     - name: Azure App Service (Web Apps)
       items:
-        - name: Web App on Linux
-          href: targets/webapp-linux.md
-        - name: Web App on Linux Container
-          href: targets/webapp-on-container-linux.md
-        - name: Web App on Windows
+        - name: Azure Web App
           href: targets/webapp.md
+        - name: Azure Web App on Linux Container
+          href: targets/webapp-on-container-linux.md
         - name: Visual Studio Code Deploy to Azure extension
           href: targets/deploy-to-azure-vscode.md
         - name: Azure Web App (Classic)
@@ -525,33 +525,27 @@
     - name: Library & shared resources
       href: library/index.md
       displayName: resource, resources, pipeline resource, resources security, resources traceability
-    - name: Secure with resources
-      items:
-        - name: Add protection to a repository resource
-          href: process/repository-resource.md
-          displayName: protected resources, protection, checks
-        - name: Manage service connections
-          href: library/service-endpoints.md
-          displayName: service connection, project-level permissions, docker, GitHub, npm, Nuget, Azure Repos
-    - name: Share with resources
-      items:
-        - name: Add resources to a pipeline
-          href: process/resources.md
-        - name: Add & use variable groups
-          href: library/variable-groups.md
-          displayName: Azure key vault, link secrets, expansion, expand variables
-        - name: Use secure files
-          href: library/secure-files.md
-    - name: Trace with resources
-      items:
-        - name: Provision deployment groups
-          href: release/deployment-groups/index.md
-        - name: Define and target environments
-          href: process/environments.md
-        - name: Kubernetes resource
-          href: process/environments-kubernetes.md
-        - name: Virtual machine resource
-          href: process/environments-virtual-machines.md
+    - name: Add protection to a repository resource
+      href: process/repository-resource.md
+      displayName: protected resources, protection, checks
+    - name: Manage service connections
+      href: library/service-endpoints.md
+      displayName: service connection, project-level permissions, docker, GitHub, npm, Nuget, Azure Repos
+    - name: Add resources to a pipeline
+      href: process/resources.md
+    - name: Add & use variable groups
+      href: library/variable-groups.md
+      displayName: Azure key vault, link secrets, expansion, expand variables
+    - name: Use secure files
+      href: library/secure-files.md
+    - name: Provision deployment groups
+      href: release/deployment-groups/index.md
+    - name: Define and target environments
+      href: process/environments.md
+    - name: Kubernetes resource
+      href: process/environments-kubernetes.md
+    - name: Virtual machine resource
+      href: process/environments-virtual-machines.md
 - name: Manage agents & agent pools
   items:
     - name: About agents & agent pools
@@ -581,7 +575,7 @@
       href: agents/docker.md
     - name: Use a self-signed certificate
       href: agents/certificate.md
-    - name: Create & use deployment groups
+    - name: Create & use deployment groups (Classic)
       items:
         #    - name: About deployment groups & deployment group jobs
         #      href: release/deployment-groups/index.md
@@ -641,20 +635,20 @@
         - name: Other security considerations
           href: security/misc.md
           displayName: PATH, containers, control tasks, auditing
-    - name: Integrate with 3rd party software
-      items:
-        - name: Microsoft Teams
-          href: integrations/microsoft-teams.md
-          displayName: integrations, teams
-        - name: Slack
-          href: integrations/slack.md
-          displayName: integrations, slack
-        - name: Integrate with ServiceNow
-          href: release/approvals/servicenow.md
-          displayName: integrations, servicenow
-        - name: Integrate with Jenkins (Classic)
-          href: release/integrate-jenkins-pipelines-cicd.md
-          displayName: integrations, jenkins
+- name: Integrate with 3rd party software
+  items:
+  - name: Microsoft Teams
+    href: integrations/microsoft-teams.md
+    displayName: integrations, teams
+  - name: Slack
+    href: integrations/slack.md
+    displayName: integrations, slack
+  - name: Integrate with ServiceNow
+    href: release/approvals/servicenow.md
+    displayName: integrations, servicenow
+  - name: Integrate with Jenkins (Classic)
+    href: release/integrate-jenkins-pipelines-cicd.md
+    displayName: integrations, jenkins
 - name: Migrate
   items:
     - name: Migrate from Classic pipelines
@@ -979,7 +973,7 @@
       href: troubleshooting/review-logs.md
     - name: Debug deployment issues
       href: release/variables.md#debug-mode
-    - name: Troubleshoot Azure connections
+    - name: Troubleshoot ARM service connections
       href: release/azure-rm-endpoint.md
 - name: Reference
   items:

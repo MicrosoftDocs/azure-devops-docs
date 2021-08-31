@@ -46,6 +46,7 @@ https://amcdn.msftauth.net
 https://amp.azure.net
 https://app.vssps.dev.azure.com
 https://app.vssps.visualstudio.com
+https://*.vssps.visualstudio.com
 https://azure.microsoft.com
 https://azurecomcdn.azureedge.net
 https://cdn.vsassets.io
@@ -134,7 +135,7 @@ Also allow IP addresses in the "name": "AzureDevOps" section of [this downloadab
 
 ### Azure Pipelines Agents
 
-If you use Microsoft-hosted agent to run your jobs and you need the information about what IP addresses are used, see [Microsoft-hosted agents Agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges). See all [Azure virtual machine scale set agents](/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops).
+If you use Microsoft-hosted agent to run your jobs and you need the information about what IP addresses are used, see [Microsoft-hosted agents Agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges). See all [Azure virtual machine scale set agents](/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops&preserve-view=true).
 
 If you're running a firewall and your code is in Azure Repos, see [Self-hosted Windows agents FAQs](../../pipelines/agents/v2-windows.md). This article has information about which domain URLs and IP addresses your private agent needs to communicate with.
 
@@ -202,6 +203,7 @@ Ensure the following IP addresses are allowed for inbound connection, so your or
 > | Brazil South | 191.235.226.0/24 |  
 > | Central Canada | 52.228.82.0/24 |
 > | Asia Pacific (Hong Kong) | 20.189.107.0/24 |  
+> | Asia Pacific (Singapore) | 20.195.68.0/24 |
 > | South India | 20.41.194.0/24 |  
 > | Central United States | 20.37.158.0/23 |  
 > | West Central United States | 52.150.138.0/24 |  
@@ -213,9 +215,6 @@ Ensure the following IP addresses are allowed for inbound connection, so your or
 > | West 2 United States | 20.42.134.0/23 |  
 > | Western Europe | 40.74.28.0/23 |  
 > | United Kingdom South | 51.104.26.0/24 |  
-
-> [!NOTE]
-> Southeast Asia (SEA) isn't a supported geography yet. When we begin support for SEA, we'll publish the associated IP addresses.
 
 Azure Service Tags are supported for *inbound* connection. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall via a JSON file download.  
 

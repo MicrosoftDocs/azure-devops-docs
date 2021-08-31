@@ -185,6 +185,28 @@
   href: github/toc.yml
 - name: Work items
   href: work-items/toc.yml 
+- name: Track work, code, builds, and releases
+  items:
+  - name: End-to-end traceability
+    href: ../cross-service/end-to-end-traceability.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    displayname: pull requests, commits, comments, build 
+  - name: "Use #ID to link to work items"
+    href: ../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    displayname: pull requests, commits, comments, build, wiki
+  - name: Configure Git repositories to integrate with work tracking 
+    href: ../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    displayname: auto link, transition, check for linked work items, auto complete, external links 
+  - name: Configure pipelines to support work tracking
+    href: ../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    displayname: auto link, create work item on build failure, report deployment status,  
+  - name: Drive Git development
+    displayName: create branch, new branch, build 
+    href: backlogs/connect-work-items-to-git-dev-ops.md
+  - name: View deployment stages on work item form
+    href: work-items/work-item-deployments-control.md
+    displayname: release
+  - name: Auto complete work items with pull requests
+    href: work-items/auto-complete-work-items-pull-requests.md  
 - name: Boards & Kanban
   href: boards/toc.yml 
 - name: Backlogs
@@ -206,6 +228,18 @@
   - name: Excel FAQs
     href: backlogs/office/faqs.yml
     displayName: edit in Excel, open in Excel
+  - name: Project & Storyboarding (Deprecated)  
+    items:
+    - name: Create backlog items & tasks (Project) 
+      href: /previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project
+    - name: Schedule projects (Project) 
+      href: /previous-versions/azure/devops/boards/backlogs/office/schedule-projects-using-microsoft-project
+    - name: Rollup work using Project
+      href: /previous-versions/azure/devops/boards/backlogs/office/rollup-estimated-and-actual-work-using-project
+    - name: Storyboard your ideas (PowerPoint)
+      href: /previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint
+    - name: Add & share storyboard shapes (PowerPoint)
+      href: /previous-versions/azure/devops/boards/backlogs/office/add-share-storyboard-shapes
   - name: Troubleshooting
     items:
     - name: Office integration issues

@@ -1,5 +1,9 @@
 ---
+ms.technology: devops-cicd
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 08/18/2021
 ---
 
 <!--- TFS 2017 - 2018 version release only-->
@@ -7,7 +11,6 @@ ms.topic: include
 <table>
 <tr valign="bottom">
 <th>Task</th>
-<th>Stakeholders</th>
 <th>Readers</th>
 <th>Contributors</th>
 <th>Project Admins</th>
@@ -17,7 +20,6 @@ ms.topic: include
 <tr>
 <td align="left">Approve releases
 </td>
-<td>✔️</td>
 <td>  </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -30,12 +32,10 @@ ms.topic: include
 <td>✔️</td>
 <td>✔️</td>
 <td>✔️</td>
-<td>✔️</td>
 </tr>
 <tr>
 <td align="left">View release definition 
 </td>
-<td>  </td>
 <td>✔️</td>
 <td>✔️</td>
 <td>✔️</td>
@@ -46,14 +46,12 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td>  </td>
 <td>✔️</td>
 <td>✔️</td>
 </tr>
 <tr>
 <td align="left">Delete release definition or release stage
 </td>
-<td>  </td>
 <td>  </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -63,7 +61,6 @@ ms.topic: include
 <td align="left">Delete releases
 </td>
 <td>  </td>
-<td>  </td>
 <td>✔️</td>
 <td>✔️</td>
 <td>✔️</td>
@@ -71,7 +68,6 @@ ms.topic: include
 <tr>
 <td align="left">Edit release definition
 </td>
-<td>  </td>
 <td> </td>
 <td> </td>
 <td>✔️</td>
@@ -80,7 +76,6 @@ ms.topic: include
 <tr>
 <td align="left">Edit release stage
 </td>
-<td>  </td>
 <td>  </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -91,14 +86,12 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td>  </td>
 <td>✔️</td>
 <td>✔️</td>
 </tr>
 <tr>
 <td align="left">Manage release approvers
 </td>
-<td>  </td>
 <td>  </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -107,7 +100,6 @@ ms.topic: include
 <tr>
 <td align="left">Manage releases
 </td>
-<td>  </td>
 <td>  </td>
 <td>  </td>
 <td>✔️</td>

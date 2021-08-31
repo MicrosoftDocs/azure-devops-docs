@@ -31,7 +31,7 @@ go to the Service Hooks page.
 2. To view detailed activity for a subscription, including full request, response,
 and event payload data, select a subscription in the table and select **History**.
 
-   <img alt="View detailed activity for a subscription" src="./media/troubleshoot/detailed-activity.png" style="border: 1px solid #CCCCCC" />
+   <img alt="View detailed activity for a subscription" src="./media/troubleshoot/detailed-activity.png" />
 
 ::: moniker-end
 
@@ -40,12 +40,12 @@ and event payload data, select a subscription in the table and select **History*
 1. To view the activity and status of your subscriptions,
 go to the Service Hooks page. 
 
-   <img alt="View the activity" src="./media/troubleshoot/service-hooks.png" style="border: 1px solid #CCCCCC" />
+   <img alt="View the activity" src="./media/troubleshoot/service-hooks.png" />
 
 2. To view detailed activity for a subscription, including full request, response,
 and event payload data, select a subscription in the table and select **History**.
 
-   <img alt="View detailed activity for a subscription" src="./media/troubleshoot/detailed-activity.png" style="border: 1px solid #CCCCCC" />
+   <img alt="View detailed activity for a subscription" src="./media/troubleshoot/detailed-activity.png" />
 
 ::: moniker-end
 

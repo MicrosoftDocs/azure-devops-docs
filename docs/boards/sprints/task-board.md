@@ -397,7 +397,7 @@ Requires TFS 2015.1 or later version.
 - From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
 - From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.
 
-   <img src="media/sprint-backlog-multi-select-non-sequential-items.png" alt="multi-select items from the sprint backlog" style="border: 1px solid #C3C3C3;" />
+   <img src="media/sprint-backlog-multi-select-non-sequential-items.png" alt="multi-select items from the sprint backlog" />
   ::: moniker-end
 
 ::: moniker range="tfs-2013"
@@ -405,7 +405,7 @@ Requires TFS 2015.1 or later version.
 
 - From the sprint backlog, drag an item back to the backlog or to another sprint.
 
-	<img src="media/IC797613.png" alt="Drag items back to product backlog" style="border: 1px solid #C3C3C3;" />
+	<img src="media/IC797613.png" alt="Drag items back to product backlog" />
 
 - If you need to move several items, you can create a query from the sprint backlog and then use the query to [bulk modify the iteration path](../backlogs/bulk-modify-work-items.md).
 ::: moniker-end

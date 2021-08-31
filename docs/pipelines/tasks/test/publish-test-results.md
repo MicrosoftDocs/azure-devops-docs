@@ -330,7 +330,7 @@ The final image will be published to Docker or Azure Container Registry
    ```YAML
    # Build Docker image for this app, to be published to Docker Registry
    pool:
-     vmImage: 'ubuntu-16.04'
+     vmImage: 'ubuntu-latest'
    variables:
      buildConfiguration: 'Release'
    steps:
@@ -361,7 +361,7 @@ The final image will be published to Docker or Azure Container Registry
    ```YAML
    # Build Docker image for this app to be published to Azure Container Registry
    pool:
-     vmImage: 'ubuntu-16.04'
+     vmImage: 'ubuntu-latest'
    variables:
      buildConfiguration: 'Release'
 

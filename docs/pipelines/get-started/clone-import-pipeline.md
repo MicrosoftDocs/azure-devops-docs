@@ -2,7 +2,7 @@
 title: Clone or import a pipeline
 description: Create a pipeline by cloning or importing an existing pipeline
 ms.topic: conceptual
-ms.date: 10/15/2020
+ms.date: 08/26/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -54,6 +54,8 @@ This version of TFS doesn't support YAML pipelines.
 
 If your new pipeline can be created by copying another classic pipeline in the same project, follow the instructions in this section. If your pipeline is in another project, you can use [import/export](#export-and-import-a-pipeline) to copy the pipeline.
 
+You need `Edit release pipeline` or `Edit build pipeline` permissions to clone a Classic pipeline. 
+ 
 :::moniker range=">= azure-devops-2019"
 
 1. Navigate to the pipeline details page for your pipeline.

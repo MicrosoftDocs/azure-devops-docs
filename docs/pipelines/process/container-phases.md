@@ -59,7 +59,7 @@ the container is always up and running.
 ### Windows Containers
 
 Azure Pipelines can also run [Windows Containers](/virtualization/windowscontainers/about/).
-[Windows Server version 1803](/windows-server/get-started/get-started-with-1803) or higher is required.
+[Windows Server version 1803](/windows-server/get-started/whats-new-in-windows-server-1803) or higher is required.
 Docker must be installed. Be sure your pipelines agent has permission to access the Docker daemon.
 
 The Windows container must support running Node.js.
