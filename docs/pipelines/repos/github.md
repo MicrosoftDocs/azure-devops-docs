@@ -491,7 +491,7 @@ To enable comment triggers you must follow the following two steps:
     * Choose **On all pull requests** to require a team member's comment before building a pull request. With this workflow, a team member reviews the pull request and triggers the build with a comment once the pull request is deemed safe.
     * Choose **Only on pull requests from non-team members** to require a team member's comment only when a PR is made by a non-team member. In this workflow, a team member doesn't need a secondary team member's review to trigger a build.
 
-With these two changes, the pull request validation build will not be triggered automatically. Only repository owners and collaborators with 'Write' permission can trigger the build by commenting on the pull request with `/AzurePipelines run` or `/AzurePipelines run <pipeline-name>`.
+With these two changes, the pull request validation build will not be triggered automatically, unless **Only on pull requests from non-team members** is selected and the PR is made by a team member. Only repository owners and collaborators with 'Write' permission can trigger the build by commenting on the pull request with `/AzurePipelines run` or `/AzurePipelines run <pipeline-name>`.
 
 The following commands can be issued to Azure Pipelines in comments:
 
