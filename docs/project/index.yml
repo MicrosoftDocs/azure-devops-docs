@@ -91,5 +91,3 @@ landingContent:
             url: ./search/functional-package-search.md
           - text: Search work items
             url: ./search/functional-work-item-search.md
-          - text: Search wiki
-            url: ./wiki/search-wiki.md

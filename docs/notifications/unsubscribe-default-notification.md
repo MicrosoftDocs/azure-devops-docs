@@ -49,11 +49,11 @@ Start by opening your personal notification settings from your home page. Select
 
 1. From the web portal, select your initials or picture, and select **Notification settings** from the drop-down menu.
 
-    <img src="media/unsubscribe-open-notification-settings.png" alt="Open personal notification settings" style="border: 2px solid #C3C3C3;" />
+    <img src="media/unsubscribe-open-notification-settings.png" alt="Open personal notification settings" />
 
     The notifications you're subscribed to are indicated with the State as **On**.  
 
-    <img src="media/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
+    <img src="media/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" />
 
     The following image indicates a subscription is a default or out-of-the-box (OOB) subscription:
 
@@ -65,7 +65,7 @@ Start by opening your personal notification settings from your home page. Select
 
     In the following image the "Build completes" subscription is turned off.
 
-    <img src="media/unsubscribe-from-build-completes.png" alt="Unsubscribe from Build completes subscription" style="border: 2px solid #C3C3C3;" />
+    <img src="media/unsubscribe-from-build-completes.png" alt="Unsubscribe from Build completes subscription" />
 
 ::: moniker-end
 

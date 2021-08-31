@@ -87,7 +87,7 @@ The first step is to add a team for each feature team and management area. You c
 
 1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open **Project Settings.**  
 
-    <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
+    <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Open project admin page" />
 
 2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**. 
 
@@ -175,7 +175,7 @@ You do this by opening each area path associated with a feature team and changin
 
     For example, here we move the Customer Profile to under Account Management.
 
-    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams." style="border: 1px solid #C3C3C3;" />  
+    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams." />  
 
     Repeat this step for all feature team area paths. 
 
@@ -249,7 +249,7 @@ From **Areas**, open the :::image type="icon" source="../media/icons/context_men
 
 Here we choose to include sub-area paths for the Account Management area.  
 
-<img src="media/pm-include-sub-area-paths.png" alt="Include sub-area paths." style="border: 1px solid #C3C3C3;" /> 
+<img src="media/pm-include-sub-area-paths.png" alt="Include sub-area paths." /> 
 
 Repeat this step for all your management areas. Also, if you want to enable rollup across all feature teams and management areas to the top level area, repeat this step for the default team. In our example, that corresponds to Fabrikam.   
 
@@ -274,7 +274,7 @@ If your feature teams use Scrum or use sprints to assign their work, you'll want
 
 ::: moniker range="<= tfs-2015"  
 
-<img src="media/pm-6-3-week-sprints.png" alt="Sprint schedule selected sprints" style="border: 2px solid #C3C3C3;" />
+<img src="media/pm-6-3-week-sprints.png" alt="Sprint schedule selected sprints" />
 ::: moniker-end
 
 

@@ -3,7 +3,7 @@ title: Recommendations to protect shared infrastructure
 description: Learn why you should separate agents, user accounts, and other infrastructure components.
 ms.assetid: 1bda2617-a03b-47e1-b987-3849517a1e81
 ms.reviewer: vijayma
-ms.date: 02/04/2020
+ms.date: 04/24/2021
 monikerRange: '> azure-devops-2019'
 ---
 

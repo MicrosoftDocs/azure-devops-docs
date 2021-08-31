@@ -28,7 +28,7 @@ Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the sco
 | Argument | Description |  
 | -------- | ----------- |  
 |`artifactFeed` | (Optional) The Azure Artifacts feed name to authenticate with twine. For project-scoped feeds, use this syntax: ***projectName/feedName*** |  
-|`pythonUploadServiceConnection` | (Optional) A [twine service connection](../../library/service-endpoints.md#sep-python-upload) name from external organization to authenticate with twine. The credentials stored in the endpoint must have package upload permissions.|  
+|`pythonUploadServiceConnection` | (Optional) A [twine service connection](../../library/service-endpoints.md#python-package-upload-service-connection) name from external organization to authenticate with twine. The credentials stored in the endpoint must have package upload permissions.|  
 
 > [!TIP]
 > See [organization-scoped feeds vs project-scoped feeds](../../../artifacts/feeds/project-scoped-feeds.md#understanding-the-difference-between-an-organization-scoped-feed-and-a-project-scoped-feed) to understand the difference between the two types and learn how to check if your feed is project-scoped or organization-scoped.
@@ -66,7 +66,7 @@ The `artifactFeed` input will contain the project and the feed name if the feed 
 
 ### Publish python distribution to official python registry
 
-In this example, we are setting authentication for publishing to official python registry. Create a <a href="~/pipelines/library/service-endpoints.md#sep-python-upload" data-raw-source="[twine service connection](~/pipelines/library/service-endpoints.md#sep-python-upload)">twine service connection</a> entry for [pypi](https://pypi.org). The authenticate task uses that service connection to create a `.pypirc` file that contains the auth credentials required to publish the distribution.
+In this example, we are setting authentication for publishing to official python registry. Create a <a href="~/pipelines/library/service-endpoints.md#python-package-upload-service-connection" data-raw-source="[twine service connection](~/pipelines/library/service-endpoints.md#python-package-upload-service-connection)">twine service connection</a> entry for [pypi](https://pypi.org). The authenticate task uses that service connection to create a `.pypirc` file that contains the auth credentials required to publish the distribution.
 
 ```YAML 
 # Install python distributions like wheel, twine etc
@@ -112,7 +112,7 @@ No. While this task itself will work behind a web proxy <a href="~/pipelines/age
 
 ### My Pipeline needs to access a feed in a different project
 
-If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#pipelines-permissions) for more details.
 
 ## Open-source
 

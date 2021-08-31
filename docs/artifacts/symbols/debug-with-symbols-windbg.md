@@ -2,6 +2,7 @@
 title: Debug with symbols in WinDbg
 description: Use WinDbg to consume symbols and debug your application
 ms.assetid: C8C003EA-79C8-49EF-BEBD-35548505F0CF
+ms.custom: contperf-fy22q1
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 07/26/2021

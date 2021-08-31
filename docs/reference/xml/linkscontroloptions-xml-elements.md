@@ -29,7 +29,8 @@ The **LinksControlOptions** element is a child element of the **Control** elemen
 - **WorkItemTypeFilters**: Use to restrict the types of work items you can link to from the links control 
 - **Column**: Use to specify the work item fields and link type attributes listed within the links control
 
-<blockquote style="font-size: 13px"><b>Note: </b>The standard <img src="../../boards/media/icons/icon-links-tab-wi.png" alt="Links page icon"/> <a href="../../boards/work-items/work-item-form-controls.md#link-wi" data-raw-source="[Links page](../../boards/work-items/work-item-form-controls.md#link-wi)">Links page</a> provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.<br/></blockquote>      
+> [!NOTE]   
+> The standard :::image type="icon" source="../../boards/media/icons/icon-links-tab-wi.png" border="false"::: [**Links** tab](../../boards/work-items/work-item-form-controls.md#link-wi) provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects. 
 
 ## Summary of what's changed
 
@@ -83,7 +84,7 @@ When <code>ListViewOptions GroupLinks=&quot;true&quot;</code>, links are grouped
 <tr>
 <td>Composite display of link information</td>
 <td>For each listed item, the links control displays the Work Item Type, ID, Title, and Assigned To as a composite field called <em>Link</em> as shown:<br/>
-<img src="media/linkscontrol-composite-field.png" alt="Composite field" style="border: 1px solid #C3C3C3;" /><br/><p>When the links control width is less than 460 pixels, the field also displays the item&#39;s State and the time of its Latest Update (the creation or latest modification of the item). See <a href="#dynamic-sizing" data-raw-source="[Responsive design and dynamic resizing](#dynamic-sizing)">Responsive design and dynamic resizing</a> for details.
+<img src="media/linkscontrol-composite-field.png" alt="Composite field" /><br/><p>When the links control width is less than 460 pixels, the field also displays the item&#39;s State and the time of its Latest Update (the creation or latest modification of the item). See <a href="#dynamic-sizing" data-raw-source="[Responsive design and dynamic resizing](#dynamic-sizing)">Responsive design and dynamic resizing</a> for details.
 </td>
 <td>Not supported</td>
 </tr>
@@ -105,7 +106,7 @@ From the scoped links control, you can perform the same actions provided from th
 - To delete a link, highlight it and click the ![delete icon](../../boards/media/icons/delete_icon.png) delete icon   
 - To link to an existing item, or create and link a new work item, select one of the menu options.  
 
-<img src="media/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #C3C3C3;" />  
+<img src="media/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" />  
 
 
 <a id="dynamic-sizing"></a>
@@ -123,7 +124,7 @@ You can specify whether the links display as a list, grid, or dynamically by set
 Core system processes&mdash;[Agile, Scrum, CMMI](../../boards/work-items/guidance/choose-process.md)&mdash;have been updated to include the Development and Related Work scoped links control. 
 
 
-<img src="media/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #C3C3C3;" />  
+<img src="media/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" />  
 
 These controls appear on all default work item types, except the following:
 - Code Review Request/Code Review Response
@@ -296,51 +297,39 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p>Required child element of the <strong>WorkItemTypeFilters</strong> container element. Specifies the name of a work item type to include as an allowed type that users can link to from the links control. </p>
 <pre><code>&lt;Filter WorkItemType=&quot;WorkItemTypeName&quot;  /&gt;</code></pre>
 <p>You can specify any work item type defined within the project or project collection, including custom work item types. Typically, the work item types you specify depend on the process used to create your project. See <a href="../../boards/work-items/guidance/choose-process.md" data-raw-source="[Choose a process](../../boards/work-items/guidance/choose-process.md)">Choose a process</a> for details.</p><br/><p>The following lists the default work item types available based on the default system processes:</p>
-<div style="float:left;width:120px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Agile</p>
-<ul style="list-style-type:none;padding-left:10px">
-<li style="margin-bottom:0px">Bug</li>
-<li style="margin-bottom:0px">Epic</li>
-<li style="margin-bottom:0px">Feature</li>
-<li style="margin-bottom:0px">Issue</li>
-<li style="margin-bottom:0px">Task</li>
-<li style="margin-bottom:0px">Test Case</li>
-<li style="margin-bottom:0px">User Story</li>
+<p>Agile</p>
+<ul>
+<li>Bug</li>
+<li>Epic</li>
+<li>Feature</li>
+<li>Issue</li>
+<li>Task</li>
+<li>Test Case</li>
+<li>User Story</li>
 </ul>
-</div>
-
-<div style="float:left;width:180px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Scrum</p>
-<ul style="list-style-type:none;padding-left:20px">
-<li style="margin-bottom:0px">Bug</li>
-<li style="margin-bottom:0px">Epic</li>
-<li style="margin-bottom:0px">Feature</li>
-<li style="margin-bottom:0px">Impediment</li>
-<li style="margin-bottom:0px">Product Backlog Item</li>
-<li style="margin-bottom:0px">Task</li>
-<li style="margin-bottom:0px">Test Case</li>
+<p>Scrum</p>
+<ul>
+<li>Bug</li>
+<li>Epic</li>
+<li>Feature</li>
+<li>Impediment</li>
+<li>Product Backlog Item</li>
+<li>Task</li>
+<li>Test Case</li>
 </ul>
-</div>
-
-<div style="float:left;width:120px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">CMMI</p>
-<ul style="list-style-type:none;padding-left:30px">
-<li style="margin-bottom:0px">Bug</li>
-<li style="margin-bottom:0px">Change Request</li>
-<li style="margin-bottom:0px">Epic</li>
-<li style="margin-bottom:0px">Feature</li>
-<li style="margin-bottom:0px">Issue</li>
-<li style="margin-bottom:0px">Review</li>
-<li style="margin-bottom:0px">Requirement</li>
-<li style="margin-bottom:0px">Risk</li>
-<li style="margin-bottom:0px">Task</li>
-<li style="margin-bottom:0px">Test Case</li>
+<p>CMMI</p>
+<ul>
+<li>Bug</li>
+<li>Change Request</li>
+<li>Epic</li>
+<li>Feature</li>
+<li>Issue</li>
+<li>Review</li>
+<li>Requirement</li>
+<li>Risk</li>
+<li>Task</li>
+<li>Test Case</li>
 </ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
 </td>
 </tr>
 <tr>

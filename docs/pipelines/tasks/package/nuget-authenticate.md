@@ -25,7 +25,7 @@ Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repos
 
 | Argument                                                                                           | Description                                                         |
 | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `nuGetServiceConnections`<br/>Service connection credentials for feeds outside this organization   | (Optional) Comma-separated list of [NuGet service connection](~/pipelines/library/service-endpoints.md#sep-nuget) names for feeds outside this organization/collection to additionally set up. If you only need feeds in this organization/collection, leave this blank; the build’s credentials are used automatically. |
+| `nuGetServiceConnections`<br/>Service connection credentials for feeds outside this organization   | (Optional) Comma-separated list of [NuGet service connection](~/pipelines/library/service-endpoints.md#nuget-service-connection) names for feeds outside this organization/collection to additionally set up. If you only need feeds in this organization/collection, leave this blank; the build’s credentials are used automatically. |
 | `forceReinstallCredentialProvider`<br/>Reinstall the credential provider even if already installed | (Optional) Reinstall the credential provider to the user profile directory even if already installed. This may upgrade (or potentially downgrade) the credential provider. |
 | [!INCLUDE [temp](../includes/control-options-arguments-md.md)] | |
 
@@ -76,13 +76,13 @@ To use a service connection, specify the service connection in the `nuGetService
 # ...
 - script: dotnet nuget push --api-key AzureArtifacts --source https://pkgs.dev.azure.com/{organization}/_packaging/{feed1}/nuget/v3/index.json MyProject.*.nupkg
 ```
-In the above examples `OtherOrganizationFeedConnection` and `ThirdPartyRepositoryConnection` are the names of [NuGet service connections](~/pipelines/library/service-endpoints.md#sep-nuget) that have been configured and authorized for use in your pipeline, and have URLs that match those in your nuget.config or command line argument.
+In the above examples `OtherOrganizationFeedConnection` and `ThirdPartyRepositoryConnection` are the names of [NuGet service connections](~/pipelines/library/service-endpoints.md#nuget-service-connection) that have been configured and authorized for use in your pipeline, and have URLs that match those in your nuget.config or command line argument.
 
 The package source URL pointing to an Azure Artifacts feed may or may not contain the project. An URL for a project scoped feed must contain the project, and a URL for a organization scoped feed must not contain the project. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
 
 ### Restore and push NuGet packages outside your organization
 
-If you use Azure Artifacts feeds from a different organization or use a third-party authenticated package repository, you'll need to set up [NuGet service connections](~/pipelines/library/service-endpoints.md#sep-nuget) and specify them in the `nuGetServiceConnections` input.
+If you use Azure Artifacts feeds from a different organization or use a third-party authenticated package repository, you'll need to set up [NuGet service connections](~/pipelines/library/service-endpoints.md#nuget-service-connection) and specify them in the `nuGetServiceConnections` input.
 Feeds within your Azure Artifacts organization will also be automatically authenticated.
 
 #### nuget.config
@@ -124,7 +124,7 @@ Feeds within your Azure Artifacts organization will also be automatically authen
 # ...
 - script: dotnet nuget push --api-key AzureArtifacts --source "MyProjectFeed1"  MyProject.*.nupkg
 ```
-`OtherOrganizationFeedConnection` and `ThirdPartyRepositoryConnection` are the names of [NuGet service connections](~/pipelines/library/service-endpoints.md#sep-nuget) that have been configured and authorized for use in your pipeline, and have URLs that match those in your nuget.config or command line argument.
+`OtherOrganizationFeedConnection` and `ThirdPartyRepositoryConnection` are the names of [NuGet service connections](~/pipelines/library/service-endpoints.md#nuget-service-connection) that have been configured and authorized for use in your pipeline, and have URLs that match those in your nuget.config or command line argument.
 
 The package source URL pointing to an Azure Artifacts feed may or may not contain the project. An URL for a project scoped feed must contain the project, and a URL for a organization scoped feed must not contain the project. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
 
@@ -206,6 +206,6 @@ See the credential provider documentation for more details.
 
 ### My Pipeline needs to access a feed in a different project
 
-If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#pipelines-permissions) for more details.
 
 <!-- ENDSECTION -->

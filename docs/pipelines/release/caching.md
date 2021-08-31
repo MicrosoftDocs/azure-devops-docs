@@ -242,27 +242,21 @@ Caching Docker images dramatically reduces the time it takes to run your pipelin
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'ubuntu-latest'
 
 steps:
   - task: Cache@2
+    displayName: Cache Docker
     inputs:
-      key: 'docker | cache'
+      key: 'docker | "$(Agent.OS)" | cache'
+      restoreKeys: |
+        docker | "$(Agent.OS)"
       path: $(Pipeline.Workspace)/docker
-      cacheHitVar: DOCKER_CACHE_HIT
-    displayName: Cache Docker images
-  - script: |
-      docker load -i $(Pipeline.Workspace)/docker/cache.tar
-    displayName: Restore Docker image
-    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_HIT, 'true'))
-  - script: |
-      mkdir -p $(Pipeline.Workspace)/docker
-      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache
-    displayName: Save Docker image
-    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_HIT, 'true')))
 ```
 
-Replace `caching-docker.yml` with your own pipeline YAML file.
+- **key**: (required) - a unique identifier for the cache.
+- **path**: (required) - path of the folder or file that you want to cache.
+- **restoreKeys**: (optional) - If *key* fails, this will be the fallback key to find the cache.
 
 ## Golang
 

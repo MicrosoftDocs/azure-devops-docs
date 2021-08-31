@@ -35,9 +35,6 @@
   - name: "Use @mentions in discussions" 
     href: ../../notifications/at-mentions.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     displayname: people picker 
-  - name: "Use #ID to link to work items"
-    href: ../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    displayname: pull requests, commits, comments, build, wiki
   - name: Add tags to work items
     href: ../queries/add-tags-to-work-items.md
     displayname: chart, color-code, filter, show, query, bulk modify
@@ -49,12 +46,6 @@
   - name: Email or print work items
     href: email-work-items.md  
     displayName: cards 
-  - name: Drive Git development
-    displayName: create branch, new branch, build 
-    href: ../backlogs/connect-work-items-to-git-dev-ops.md
-  - name: View deployment stages on work item form
-    href: work-item-deployments-control.md
-    displayname: release
 - name: Modify, delete, import, or export 
   items:
   - name: Bulk modify (web)

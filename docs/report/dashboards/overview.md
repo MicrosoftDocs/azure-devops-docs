@@ -8,7 +8,7 @@ ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 07/14/2020
 ---
 
@@ -387,6 +387,11 @@ You add widgets to a dashboard to display a chart, information, or set of links.
 ### Sprint chart widgets 
 
 ![Sprint capacity widget](media/widget-sprint-capacity.png)  ![Sprint burndown widget](media/widget-sprint-burndown.png)   
+
+
+### Sprint scope change
+
+There is no chart or widget that tracks changes to sprint scope. However, you can determine work items added to a sprint or moved out of a sprint using the Query Editor. To learn how, see [About Sprints, Scrum and project management, Sprint scope change](../../boards/sprints/scrum-overview.md#sprint-scope-change). 
 
 ### Sample Cumulative Flow Diagram widget 
 

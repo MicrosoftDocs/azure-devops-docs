@@ -11,7 +11,7 @@ monikerRange: '> azure-devops-2019'
 
 [!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-vsts-plus-azdevserver-2019.md)]
 
-You can add protection to your [repository resource](resources.md#resources-repositories) with checks and pipeline permissions. When you add protection, you're better able to restrict repository ownership and editing privileges.
+You can add protection to your [repository resource](resources.md#define-a-repositories-resource) with checks and pipeline permissions. When you add protection, you're better able to restrict repository ownership and editing privileges.
 
 ## Prerequisites
 

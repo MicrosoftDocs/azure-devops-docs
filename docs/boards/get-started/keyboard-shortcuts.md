@@ -97,7 +97,7 @@ You can use the following keyboard shortcuts when [interacting with a delivery p
 Use these shortcuts when working in Team Explorer. 
 
 <table>
-<tbody valign="top" width="100%" style="font-size:90%">
+<tbody>
 <tr>
 <td width="56%">
 <p><strong>Navigate</strong></p> 

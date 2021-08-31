@@ -237,13 +237,13 @@ From the web portal, open the Security dialog for the object whose permissions y
 
 1. From the Security dialog, choose **Add**.  
 
-    <img src="media/change-individual-permissions/security-dialog-add-user-account-button.png" alt="Open the Add users or group permissions dialog" style="border: 1px solid #C3C3C3;" />
+    <img src="media/change-individual-permissions/security-dialog-add-user-account-button.png" alt="Open the Add users or group permissions dialog" />
 
 2. Enter the user ID, choose search, and then make your selection in the left pane.
 
 3. Update the permission setting to **Allow** or **Deny** for specific permissions. 
 
-    <img src="media/change-individual-permissions/set-permissions-individual-object-level.png" alt="Set permissions for a single user account" style="border: 1px solid #C3C3C3;" />
+    <img src="media/change-individual-permissions/set-permissions-individual-object-level.png" alt="Set permissions for a single user account" />
 
     For a description of specific permissions, see [Permissions and groups reference](permissions.md).
 

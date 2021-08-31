@@ -2,14 +2,11 @@
 author: gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes
-ms.date: 07/19/2021
+ms.date: 08/09/2021
 ms.topic: include
 ---
 
 ### Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy 
-
-> [!NOTE]
-> The new policies are still being rolled out to all customers. If the policies are not yet available for your organization, you can expect them before August 9th, 2021. We apologize for the delay and sincerely thank you for your patience. 
 
 Personal access tokens (PATs) make it easy to authenticate against Azure DevOps to integrate with your tools and services. However, leaked tokens could compromise your Azure DevOps account and data, putting your applications and services at risk.
 

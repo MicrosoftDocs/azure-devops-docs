@@ -112,13 +112,13 @@ authentication screens are identical. This walkthrough is done using Power BI De
 
 	::: moniker range="azure-devops"
 
-	<img src="media/authentication-6.png" alt="OData Feed URL" style="border: 2px solid #C3C3C3;" />
+	<img src="media/authentication-6.png" alt="OData Feed URL" />
 	
 	::: moniker-end  
 
 	::: moniker range=">= azure-devops-2019 < azure-devops"
 
-	<img src="media/authentication-6-onprem.png" alt="OData Feed URL" style="border: 2px solid #C3C3C3;" />
+	<img src="media/authentication-6-onprem.png" alt="OData Feed URL" />
 
 	::: moniker-end
 
@@ -128,13 +128,13 @@ authentication screens are identical. This walkthrough is done using Power BI De
 
      ::: moniker range="azure-devops"
 
-     <img src="media/authentication-7.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
+     <img src="media/authentication-7.png" alt="Authentication information" />  
 
      ::: moniker-end
 
      ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-     <img src="media/authentication-7-onprem.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
+     <img src="media/authentication-7-onprem.png" alt="Authentication information" />  
 
      ::: moniker-end
 
@@ -152,13 +152,13 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker range="azure-devops"
 
-	<img src="media/authentication-8.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
+	<img src="media/authentication-8.png" alt="Data source settings" />   
 
 	::: moniker-end
 
 	::: moniker range=">= azure-devops-2019 < azure-devops"
 
-	<img src="media/authentication-8-onprem.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
+	<img src="media/authentication-8-onprem.png" alt="Data source settings" />   
 
 	::: moniker-end
 
@@ -166,13 +166,13 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker range="azure-devops"
 
-	<img src="media/authentication-9.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/authentication-9.png" alt="Data source settings, 2nd dialog" />
 
 	::: moniker-end
 
 	::: moniker range=">= azure-devops-2019 < azure-devops"
 
-	<img src="media/authentication-9-onprem.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/authentication-9-onprem.png" alt="Data source settings, 2nd dialog" /> 
 
 	::: moniker-end
 
@@ -184,19 +184,19 @@ If you receive an access denied message, you may need to change your authenticat
 
 2. Click **New Query** > **Data Source Settings...**
 
-	<img src="media/client-auth-excel-open-data-source-settings.png" alt="Excel, Open Data source settings" style="border: 2px solid #C3C3C3;" />
+	<img src="media/client-auth-excel-open-data-source-settings.png" alt="Excel, Open Data source settings" />
 
 3. Select the correct URL to the OData Feed and click **Edit**.  
 
 	::: moniker range="azure-devops"
 
-	<img src="media/authentication-8.png" alt="Select the correct URL to the OData Feed and click Edit." style="border: 2px solid #C3C3C3;" />   
+	<img src="media/authentication-8.png" alt="Select the correct URL to the OData Feed and click Edit." />   
 
 	::: moniker-end
 
 	::: moniker range=">= azure-devops-2019 < azure-devops"
 
-	<img src="media/authentication-8-onprem.png" alt="Select the correct URL to the OData Feed and click Edit, on-premises version." style="border: 2px solid #C3C3C3;" />   
+	<img src="media/authentication-8-onprem.png" alt="Select the correct URL to the OData Feed and click Edit, on-premises version." />   
 
 	::: moniker-end
 
@@ -204,13 +204,13 @@ If you receive an access denied message, you may need to change your authenticat
  
 	::: moniker range="azure-devops"
 
-	<img src="media/authentication-9.png" alt="Data source settings, next dialog." style="border: 2px solid #C3C3C3;" />
+	<img src="media/authentication-9.png" alt="Data source settings, next dialog." />
 
 	::: moniker-end
 
 	::: moniker range=">= azure-devops-2019 < azure-devops"
 
-	<img src="media/authentication-9-onprem.png" alt="Data source settings, next dialog." style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/authentication-9-onprem.png" alt="Data source settings, next dialog." /> 
 
 	::: moniker-end
 
@@ -233,5 +233,5 @@ the **oAuth2** option.
 <!---
 From the Personal access tokens page, choose **Add**:  
 
-<img src="../../media/security-personal-access-tokens.png" alt="Personal Access Tokens, Added" style="border: 2px solid #C3C3C3;" />  
+<img src="../../media/security-personal-access-tokens.png" alt="Personal Access Tokens, Added" />  
 -->

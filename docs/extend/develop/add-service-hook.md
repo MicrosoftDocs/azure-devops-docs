@@ -48,16 +48,14 @@ Add a square image in the ```images``` folder that identifies your extension.
 It'a displayed in the Marketplace, and when someone installs your extension. You don't need to do this for your extension to work, 
 but below is a sample image you can use along with how it looks with the extension.
 
->NOTE: Name the image ```logo.png```, or remove the "icons" sections from the manifest file if you wish to skip this step.
+> [!NOTE]
+> Name the image ```logo.png```, or remove the "icons" sections from the manifest file if you wish to skip this step.
 
-<div style="vertical-align:middle;display:block;width:60%;margin-left:auto;margin-right:auto">
-<img alt="Sample logo" src="../get-started/media/logo.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
-</div>
-<div style="vertical-align:middle;display:block;width:60;margin-left:auto;margin-right:auto">
-<img alt="first sample extension example" src="../get-started/media/first-sample-extension.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
-</div>
+:::image type="content" source="../get-started/media/logo.png" alt-text="Sample logo.":::
+:::image type="content" source="../get-started/media/first-sample-extension.png" alt-text="First extension sample.":::
 
 ### Create the manifest file and populate it
+
 The [manifest file](./manifest.md) defines both your extension and the consumer service.
 
 Create a json file (`vss-extension.json`, for example) in the `home` directory of your extension with the following contents:

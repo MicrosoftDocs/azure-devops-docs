@@ -17,7 +17,7 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
-To focus on a single page or several pages, use the *Filter pages* feature in the table of contents (TOC). Or, to find pages containing a phrase or keyword, you can use the [Search wiki in this project](search-wiki.md).
+To focus on a single page or several pages, use the *Filter pages* feature in the table of contents (TOC). Or, to find pages containing a phrase or keyword, you can use the [search function](../search/get-started-search.md).
 
 To print a wiki page, you can select a page and then print it.  
 

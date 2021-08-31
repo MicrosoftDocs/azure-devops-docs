@@ -183,7 +183,7 @@ Azure DevOps Services is available in several [Azure regions](https://azure.micr
 | Australia | Australia East | EAU |
 | South America | Brazil South | SBR |
 | Asia Pacific | South India | MA |
-| Asia Pacific | Asia Pacific (Hong Kong) | EA |
+| Asia Pacific | Southeast Asia (Singapore) | SEA |
 | Canada | Central Canada | CC |
 
 <br> 
@@ -449,7 +449,7 @@ Azure DevOps Services is available in multiple [regions](https://azure.microsoft
 | Brazil South | Brazil South |
 | India South | India South |
 | Canada Central | Canada Central |
-| Asia Pacific (Hong Kong) | Asia Pacific (Hong Kong) |
+| Asia Pacific (Singapore) | Asia Pacific (Singapore) |
 
 <br> 
 
@@ -512,6 +512,20 @@ Using the Fabrikam example, the final import specification file should look like
 
 <a id="determine-the-type-of-import"></a> 
 <a id="import-type"></a> 
+
+### Restrict access to Azure DevOps Services IPs only
+
+We highly recommend that you restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You do this by allowing connections only from the set of Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your storage account depend on the region you're importing into. Use the IpList option to get the list of IPs that need to be granted access.
+
+Included in the help documentation are instructions and examples for running Migrator from the Azure DevOps Server instance itself and a remote machine. If you're running the command from one of the Azure DevOps Server instance's application tiers, your command should have the following structure:
+
+```cmdline
+Migrator IpList /collection:{CollectionURI} /tenantDomainName:{name} /region:{region}
+```
+
+> [!NOTE] 
+> Alternatively, you can also use [Service Tags](/azure/virtual-network/service-tags-overview) in place of explicit IP ranges. Azure Service Tags are a convenient way for customers to manage their networking configuration to allow traffic from specific Azure services. Customers can easily allow access by adding the tag name azuredevops to their network security groups or firewalls either through the portal or programmatically. 
+
 ### Determine the import type
 
 Imports can be queued as either a dry run or a production run. The **ImportType** parameter determines the import type: 

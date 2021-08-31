@@ -2486,8 +2486,8 @@ These permissions appear only for a project setup to use Team Foundation Version
 
 In version control permissions, explicit deny takes precedence over administrator group permissions.
 
-<table valign="top" width="100%" Responsive="true">
-<tbody valign="top">
+<table>
+<tbody>
     <tr>
         <th width="30%">Permission</th>
         <th width="70%">Description</th>

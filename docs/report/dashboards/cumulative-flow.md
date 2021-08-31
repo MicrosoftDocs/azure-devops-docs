@@ -263,13 +263,13 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 1. Open the backlog level for which you want to configure and then open the common configuration dialog. Choose the :::image type="icon" source="../../boards/media/icons/team-settings-gear-icon.png" border="false"::: gear icon.  
 
-	<img src="../../boards/boards/media/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />  
+	<img src="../../boards/boards/media/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" />  
 
 	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the team Kanban boards and CFD charts.  
 
 2. Choose **Cumulative flow** and specify the team's preferences.  
 
-	<img src="media/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" style="border: 2px solid #C3C3C3;" />  
+	<img src="media/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" />  
 
 ::: moniker-end
 
@@ -291,7 +291,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 1. Choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
-	<img src="media/cfd-configure.png" alt="Configure CFD chart" style="border: 2px solid #C3C3C3;" />   
+	<img src="media/cfd-configure.png" alt="Configure CFD chart" />   
 
 ::: moniker-end
 
@@ -305,7 +305,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 1. Choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
-	<img src="media/cfd-configure.png" alt="Configure CFD chart" style="border: 2px solid #C3C3C3;" />   
+	<img src="media/cfd-configure.png" alt="Configure CFD chart" />   
 
 ::: moniker-end
 
@@ -326,7 +326,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 2. Choose **Save** when done. The following image shows an example CFD chart showing 30 days of data. 
    
-	<img src="media/cfd-exampe-rolling-30-days.png" alt="Example CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" />    
+	<img src="media/cfd-exampe-rolling-30-days.png" alt="Example CFD chart, rolling 30 days" />    
 
 ::: moniker-end
 

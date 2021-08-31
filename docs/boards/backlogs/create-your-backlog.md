@@ -352,7 +352,7 @@ You usually choose to show Completed child items when you want to [view rollup c
 
 You usually choose to hide Completed child items when you want to forecast work. To learn more, see [Forecast your product backlog](../sprints/forecast.md).
 
-
+[!INCLUDE [temp](../includes/note-closed-items.md)]
 ::: moniker-end
 
 

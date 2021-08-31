@@ -174,13 +174,13 @@ You add query folders from the **Boards>Queries>All** page.
 
 2. Enter the name for the folder in the New folder dialog. If you want to change the location of the folder, select it from the Folder drop down menu.  
 
-	<img src="media/organize-queries/new-folder-dialog.png" alt="Enter the name and location of the folder." style="border: 2px solid #C3C3C3;" />
+	<img src="media/organize-queries/new-folder-dialog.png" alt="Enter the name and location of the folder." />
 
 3. To move items into a folder, drag-and-drop a query onto the folder. 
 
 	Optionally, you can choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, choose **Edit**, and then choose **Save As**. In the Save query as dialog, choose the folder you want to save the query in. 
 
-	<img src="media/organize-queries/save-query-as-dialog.png" alt="Save query as dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/organize-queries/save-query-as-dialog.png" alt="Save query as dialog" />
   
 ::: moniker-end
 

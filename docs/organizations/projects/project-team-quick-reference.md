@@ -146,6 +146,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Connect to GitHub](../../boards/github/connect-to-github.md)  
 - [Create project](create-project.md)  
 - [Delete project](delete-project.md)  
+- [Edit project Summary](project-vision-status.md)
 - [Enable/disable project services](../settings/set-services.md)  
 - [Export list of projects](create-project.md#list-and-connect-to-projects)  
 - [Export list of teams](../settings/add-teams.md#list-teams)  
@@ -191,6 +192,7 @@ Several of the following tasks require permissions granted to a member of the Pr
    :::column span="":::
 - [Create project](create-project.md)  
 - [Delete project](delete-project.md)  
+- [Edit project Summary](project-vision-status.md)
 - [Enable/disable project services](../settings/set-services.md)  
 - [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)  
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
@@ -230,6 +232,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Connect to a project](connect-to-projects.md)  
 - [Create project](create-project.md)  
 - [Delete project](delete-project.md)  
+- [Edit project Summary](project-vision-status.md)
 - [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)  
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
 - [Navigate the Web portal](../../project/navigation/index.md)  

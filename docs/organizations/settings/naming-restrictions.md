@@ -9,7 +9,7 @@ ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/17/2021
+ms.date: 08/09/2021
 ---
 
 # Naming restrictions and conventions  
@@ -1243,7 +1243,6 @@ Workspace names must conform to the following restrictions.
       - Must only contain alphanumeric characters and `'_'`
       - Must not start with a number
       - Must have a unique name
-      - Must have the following pattern: `^[-_A-Za-z0-9]*$`
       - Must not contain keywords, for example: "deployment"
    :::column-end:::
 :::row-end:::

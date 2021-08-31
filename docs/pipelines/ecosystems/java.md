@@ -1,10 +1,10 @@
 ---
 title: Build Java apps
-description: Automatically building Java apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
+description: Automatically building Java apps with Azure Pipelines, and Azure DevOps
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
 ms.reviewer: dastahel
 ms.topic: quickstart
-ms.date: 08/30/2019
+ms.date: 08/16/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,7 +18,13 @@ monikerRange: '>= tfs-2017'
 > This guidance uses YAML-based pipelines available in Azure Pipelines. For TFS, use tasks that correspond to those used in the YAML below.
 ::: moniker-end
 
-This guidance explains how to automatically build Java projects. (If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).)
+Use a pipeline to automatically build and test your Java projects. Learn how to:
+
+* Create your first Java pipeline.
+* Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
+* Build and test your code with Maven, Gradle, or Ant.
+
+Once you build and test your app, you can deploy to [Azure App Service](java-webapp.md), [Azure Functions](java-function.md), or [Azure Kubernetes Service](kubernetes/aks-template.md). If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).
 
 ## Create your first pipeline
 
@@ -107,18 +113,18 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 ::: moniker range=">=azure-devops-2020"
 
-You can use Azure Pipelines to build Java apps without needing to set up any infrastructure of your own. You can build on Windows, Linux, or MacOS images. The Microsoft-hosted agents in Azure Pipelines have modern JDKs and other tools for Java pre-installed. To know which versions of Java are installed, see [Microsoft-hosted agents](../agents/hosted.md).
+You can use Azure Pipelines to build Java apps without needing to set up any infrastructure of your own. You can build on Windows, Linux, or macOS images. The Microsoft-hosted agents in Azure Pipelines have modern JDKs and other tools for Java pre-installed. To know which versions of Java are installed, see [Microsoft-hosted agents](../agents/hosted.md).
 
 Update the following snippet in your `azure-pipelines.yml` file to select the appropriate image.
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.14', 'vs2017-win2016'
+  vmImage: 'ubuntu-latest' # other options: 'macOS-latest', 'windows-latest'
 ```
 
 See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.
 
-As an alternative to using Microsoft-hosted agents, you can set up [self-hosted agents](../agents/agents.md#install) with Java installed. You can also use self-hosted agents to save additional time if you have a large repository or you run incremental builds.
+As an alternative to using Microsoft-hosted agents, you can set up [self-hosted agents](../agents/agents.md#install) with Java installed. You can also use self-hosted agents to save more time if you have a large repository or you run incremental builds.
 
 ::: moniker-end
 
@@ -149,6 +155,8 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
 ```
+
+For [Spring Boot](https://spring.io/projects/spring-boot), you can use the [Maven](../tasks/build/maven.md) task as well. Make sure that your `mavenPomFile` value reflects the path to your `pom.xml` file. For example, if you are using the [Spring Boot sample repository](https://github.com/spring-guides/gs-spring-boot), your path will be `complete/pom.xml`. 
 
 #### Customize the build path
 
@@ -242,7 +250,7 @@ steps:
 
 ## Next Steps
 
-After you've built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a Maven package, 
+After you've built and tested your app, you can upload the build output to Azure Pipelines, create and publish a Maven package, 
 or package the build output into a .war/jar file to be deployed to a web application.
 
 ::: moniker-end

@@ -9,7 +9,7 @@ metadata:
   ms.topic: troubleshooting
   ms.author: chcomley
   author: chcomley
-  ms.date: 12/15/2020
+  ms.date: 08/25/2021
   monikerRange: '>= tfs-2015'
     
 title: Billing FAQs
@@ -88,7 +88,7 @@ sections:
       - question: |
           Does multi-organization billing make sense for all customers?
         answer: |
-          No. Each organization gets five free Basic users. Those users apply to the billing subscription, not the organization. When most users access only one organization, then five free users are most cost effective. If many users access multiple organizations, then multi-organization billing is likely the best option. 
+          No. For example, with the default assignment-based billing, each organization gets five free Basic users. When you change to multi-organization billing the Azure subscription gets five free Basic users, to be shared amongst all of the organizations that are linked to it. When most users access only one organization, then five free users are most cost effective. If many users access multiple organizations, then multi-organization billing is likely the best option. 
           
       - question: |
           Do I have to turn on multi-organization billing for each of my organizations?
@@ -182,7 +182,8 @@ sections:
           No, you can't use the monthly Azure credits from [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/subscriber-benefits-vs)
           to pay for Azure DevOps. Before you make purchases by using this type of Azure subscription, you must [remove your spending limit](https://azure.microsoft.com/pricing/spending-limits/).
           
-          <img alt="Spending limit" src="media/spending-limit.png" style="border: 1px solid #CCCCCC" />
+          > [!div class="mx-imgBorder"]
+          > ![Screenshot of spending limit.](media/spending-limit.png)
           
           <a name="spending-limit"></a>
           
@@ -190,8 +191,8 @@ sections:
           > Remove your spending limit indefinitely. This prevents disabling your Azure subscription when your recurring monthly charges are billed the next month.
           > Otherwise, all resources billed to this subscription are suspended, including virtual machines and all other workloads.
           
-          
-          <img alt="Remove spending limit indefinitely" src="media/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
+          > [!div class="mx-imgBorder"]
+          > ![Screenshot of removing spending limit indefinitely.](media/remove-spending-limit.png)
           
           
       - question: |

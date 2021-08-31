@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 05/03/2021
+ms.date: 08/23/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -58,7 +58,7 @@ stages:
       - script: echo Hello Stage A!
 
 - stage: B
-  condition: and(succeeded(), eq(variables.isMain, true))
+  condition: and(succeeded(), eq(variables.isMain, 'true'))
   jobs:
   - job: B1
     steps:
@@ -68,7 +68,7 @@ stages:
 
 Conditions are evaluated to decide whether to start a stage, job, or step.
 This means that nothing computed at runtime inside that unit of work will be available.
-For example, if you have a job which sets a variable using a runtime expression using `$[ ]` syntax, you can't use that variable in your custom condition. 
+For example, if you have a job that sets a variable using a runtime expression using `$[ ]` syntax, you can't use that variable in your custom condition. 
 
 ::: moniker-end
 
@@ -140,18 +140,27 @@ and(always(), eq(variables['Build.Reason'], 'Schedule'))
 
 > **Release.Artifacts.{artifact-alias}.SourceBranch** is equivalent to **Build.SourceBranch**.
 
-### Run if a variable is null
+### Run if a variable is set to true
+
+```
+condition: eq(variables['System.debug'], 'true')
+```
+
+
+### Run if a variable is null (empty string)
+
+Since all variables are treated as strings in Azure Pipelines, an empty string is equivalent to `null` in this pipeline.  
 
 ```yaml
 variables:
-- name: testNull
+- name: testEmpty
   value: ''
 
 jobs:
   - job: A
     steps:
-    - script: echo testNull is blank
-    condition: eq('${{ variables.testNull }}', '')
+    - script: echo testEmpty is blank
+    condition: eq(variables.testEmpty, '')
 ```
 
 ### Use a template parameter as part of a condition
@@ -166,7 +175,7 @@ parameters:
 
 steps:
 - script: echo I did a thing
-  condition: and(succeeded(), eq('${{ parameters.doThing }}', true))
+  condition: and(succeeded(), eq('${{ parameters.doThing }}', 'true'))
 ```
 
  However, when you pass a parameter to a template, the parameter will not have a value when the condition gets evaluated. As a result, if you set the parameter value in both the template and the pipeline YAML files, the value from the template will get used in your condition. 
@@ -182,7 +191,7 @@ jobs:
   - job: B
     steps:
     - script: echo I did a thing
-    condition: and(succeeded(), eq('${{ parameters.doThing }}', true))
+    condition: and(succeeded(), eq('${{ parameters.doThing }}', 'true'))
 ```
 
 ```yaml

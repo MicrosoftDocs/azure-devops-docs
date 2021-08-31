@@ -105,7 +105,7 @@ To choose a Microsoft-hosted agent from the Azure Pipelines pool in your Azure D
 
 ```yaml
 pool:
-  vmImage: ubuntu-16.04
+  vmImage: ubuntu-latest
 ```
 
 To use a private pool with no demands:
