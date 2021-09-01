@@ -365,6 +365,7 @@ The following table summarizes the integration features between Azure Repos and 
    :::column-end:::
 :::row-end:::
 --- 
+::: moniker-end
 :::row:::
    :::column span="1":::
       Code coverage
@@ -597,11 +598,15 @@ When tracking bugs using the Bug work item type, note the following supported in
 
 
 ::: moniker range=">= azure-devops-2019" 
+
 ## Dashboards, reporting, and Analytics  
+
 ::: moniker-end  
 
 ::: moniker range="< azure-devops-2019" 
+
 ## Dashboards and reporting
+
 ::: moniker-end  
 
 ::: moniker range=">= azure-devops-2019" 
