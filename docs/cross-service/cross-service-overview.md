@@ -474,7 +474,7 @@ Several collaboration scenarios are supported through Azure Boards work item typ
       **Feedback Review**
    :::column-end:::
    :::column span="3":::
-      Enables stakeholders to provide feedback based on request for feedback or by volunteering feeback using the and using the [Microsoft Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) marketplace extension. To learn more, see the following articles: 
+      Enables stakeholders to provide feedback based on request for feedback or by volunteering feedback using the [Microsoft Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web) marketplace extension. To learn more, see the following articles: 
       - [Provide feedback ](../test/provide-stakeholder-feedback.md)  
       - [Voluntarily provide stakeholder feedback](../test/voluntary-stakeholder-feedback.md)  
       - [Give feedback](../project/feedback/give-feedback.md).  
@@ -802,6 +802,7 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
       **Azure DevOps Server 2020**  
    :::column-end:::
    :::column span="1":::
+                
       **Azure DevOps Server 2019**  
    :::column-end:::
 :::row-end:::
@@ -849,7 +850,7 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
    :::column span="1":::
       **Pipelines**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       [Test Analytics](../pipelines/test/test-analytics.md)  
       [Pipeline Analytics](../pipelines/reports/pipelinereport.md)  
       [OData Preview](../report/extend-analytics/quick-ref.md) 
@@ -885,7 +886,7 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
    :::column span="1":::
       **Artifacts** 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       None
    :::column-end:::
    :::column span="1":::
