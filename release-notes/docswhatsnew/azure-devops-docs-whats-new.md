@@ -141,7 +141,7 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2021 through Augus
 
 - [What are the features in Azure DevOps?](/azure/devops/user-guide/alm-devops-features)
 
-# GitHub issue content updates
+## GitHub issue content updates
 
 Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2021-08-01..2021-08-31).
 
@@ -170,7 +170,6 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [What are the permissions needed to clone a pipeline? #10902](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10902)
 - [Parameter Descriptions Are Confusing #10852](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10852)
 - [[LOC]Back-Translation "az ml ?????"→"az ml experiment list" (ja-jp) #10712](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10712)
-- [Whitelist of URLs is not correct for organizations with *.visualstudio.com domain #10645](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10645)
 - [NuGet task versioningSchemes doc section unclear #10563](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10563)
 - [Pipeline artifacts may only be published once #10543](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10543)
 - [Reimaging - what does actually mean in the context of MS Hosted agents #10531](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10531)
