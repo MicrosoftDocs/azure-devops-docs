@@ -1,7 +1,7 @@
 ---
 title: Cross-service integration overview
 titleSuffix: Azure DevOps
-description: Learn about how Azure DevOps supports collaboration across all its services.
+description: Learn about how Azure DevOps supports collaboration across all its services. 
 ms.technology: devops-agile 
 ms.custom: cross-service
 ms.topic: overview
