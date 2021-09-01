@@ -319,11 +319,14 @@ Prior to choosing your integration options, you should set up the release stages
 
 1.	Save your pipeline.
 
+### Verify the integration 
+
 To verify the integration is working, perform the following steps:  
 
 1. Link one or more work items to a commit or pull request in Azure Repos Git repository. For details, see: 
 	-  [Drive Git development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md)  
 	-  [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
+
 1.  Run the pipeline. 
 
 1. Open one of the linked work items and view the [**Deployment**](../../boards/work-items/work-item-deployments-control.md) control control. As shown in the following image, the  **Deployment** control shows release information for two release stages those work items that have been linked to a Git commit or pull request for a release pipeline configured to integrate with Azure Boards.  
@@ -425,7 +428,6 @@ Select this option if you want to display the latest outcome of a stage deployme
 
 ***
 
-
 <!---
 
 <a id="report-release-status" />
@@ -465,8 +467,7 @@ To support integration with Jira issue tracking, install [Azure Pipelines integr
 
 
 ::: moniker-end
-
-
+ 
 -->
 
 <!--- 
