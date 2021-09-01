@@ -109,7 +109,7 @@ A trigger is something that's set up to tell the pipeline when to run. You can c
 
 ## Library
 
-All the files that are used within Pipelines and Releases are saved here, under **Secure files**. We can access these files wherever we want. Many times, we need to save a file at the DevOps level and use it only during build or deployment. In that case, you can save the file within [Library](../library/index.md) and use it whenever and wherever required. 
+The [Library](../library/index.md) includes **secure files** and **variable groups**. [Secure files](../library/secure-files.md) are a way to store files and share them across pipelines. You may need to save a file at the DevOps level and then use it during build or deployment. In that case, you can save the file within [Library](../library/index.md) and use it when you need it. [Variable groups](../library/variable-groups.md) store values and secrets that you might want to to be passed into a YAML pipeline or make available across multiple pipelines.
 
 ### About the authors
 - [Dave Jarvis](https://github.com/DaveJarvis) contributed to the key concepts overview graphic.
