@@ -2,8 +2,8 @@
 title: Advanced package search syntax
 titleSuffix: Azure Artifacts
 description: Advanced options for using Package Search across all your feeds in an Azure DevOps organization.
-ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.technology: devops-collab
+ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

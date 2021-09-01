@@ -2,8 +2,8 @@
 title: Functional code search options
 titleSuffix: Azure Repos
 description: Options for code searching across all your projects in Azure DevOps.
-ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.technology: devops-collab
+ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

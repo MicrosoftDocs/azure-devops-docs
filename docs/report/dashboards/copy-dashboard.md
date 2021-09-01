@@ -2,7 +2,7 @@
 title: Copy a dashboard
 titleSuffix: Azure DevOps  
 description: Copy a project or team dashboard 
-ms.custom: "dashboards" 
+ms.custom: "dashboards, cross-project" 
 ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE

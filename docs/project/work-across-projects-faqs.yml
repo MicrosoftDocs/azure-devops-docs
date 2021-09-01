@@ -4,6 +4,7 @@ metadata:
   description: Get answers to common questions about working across projects in Azure DevOps.  
   titleSuffix: Azure DevOps
   ms.technology: devops-new-user
+  ms.custom: cross-project
   ms.author: kaelli
   author: KathrynEE
   ms.topic: troubleshooting

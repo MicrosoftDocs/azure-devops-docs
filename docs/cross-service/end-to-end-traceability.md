@@ -3,6 +3,7 @@ title: End-to-end traceability
 titleSuffix: Azure DevOps
 description: Learn about the tools and features that support traceability from requirements to deployment    
 ms.technology: devops-agile 
+ms.custom: cross-service, cross-project
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
