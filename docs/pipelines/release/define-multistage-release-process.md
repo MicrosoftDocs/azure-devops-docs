@@ -1,16 +1,16 @@
 ---
-title: Define a multi-stage CD release pipeline
+title: Define a Classic release pipeline
 ms.custom: seodec18
 description: DevOps CI CD - Define a multi-stage continuous deployment (CD) pipeline for your ASP.NET Core app using Azure Pipelines
 ms.assetid: 12F57ADB-49B9-4E21-A346-5EDB1D1EC2F7
 ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair
-ms.date: 09/16/2020
+ms.date: 09/02/2021
 monikerRange: '>= tfs-2015'
 ---
 
-# Define your multi-stage continuous deployment (CD) pipeline
+# Define your Classic pipeline
 
 [!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
