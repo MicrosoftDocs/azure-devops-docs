@@ -1,8 +1,8 @@
 - name: Cross-service, Wikis, Public Projects
   href: index.yml
 - name: Get started
-  items:
   expanded: true
+  items:
   - name: Set your preferences
     href: ../organizations/settings/set-your-preferences.md
   - name: Set personal or team favorites
