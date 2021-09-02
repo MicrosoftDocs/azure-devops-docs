@@ -203,8 +203,14 @@ sections:
       - question: |
           Can tags be applied to organizations from the Azure portal?
         answer: |
-          No, but this feature is in our backlog to add in the future.
-
+          Yes. You can do that by selecting the Azure subscription that is linked to the desired Azure DevOps organization, locate the organization under Settings > Resources.
+          > [!div class="mx-imgBorder"]
+          > ![Screenshot of locating your organization.](media/organization-under-subscription.png)
+          
+          Select the desired organization from list and  apply tags by selecting the action 'Assign tags'. The tags you assign will appear in your Azure bill for the charges assoicated with the selected Azure Devops or4ganization.
+          > [!div class="mx-imgBorder"]
+          > ![Screenshot of applying tags.](media/apply-billing-tag-on-organization.png)
+          
           ## Understanding your bill
           
           Azure DevOps charges appear with other Azure charges on your [Azure bill](/azure/cost-management-billing/understand/review-individual-bill). This section helps you with understanding how to drill into your Azure DevOps specific charges.
