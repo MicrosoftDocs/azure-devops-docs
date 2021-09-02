@@ -28,6 +28,8 @@
   href: ../organizations/public/toc.yml
 - name: Navigation
   href: navigation/toc.yml
+- name: Notifications
+  href: ../notifications/toc.yml
 - name: REST API Reference
   items:
   - name: Projects
