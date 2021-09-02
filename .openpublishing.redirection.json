@@ -11997,7 +11997,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/artifacts/where-is-package-management",
+      "source_path": "docs/artifacts/where-is-package-management.md",
       "redirect_url": "/azure/devops/artifacts/start-using-azure-artifacts",
       "redirect_document_id": false
     },
