@@ -137,10 +137,7 @@ repositories {
 } 
 ```
 
-In the above example, you are publishing artifacts and downloading dependent artifacts from the same organization. You can configure publishing and downloading to use separate organizations, if you prefer. You can use the _project setup_ section, under **Connect to feed** > **Gradle**, as a guide to set up connection to your feed. 
-
-> [!NOTE]
-> You can use the Azure Artifacts connect to feed dialog box to copy the `maven` repository section to use in your build.gradle file.
+In the above example, you are publishing and downloading dependent artifacts from the same organization. You can also configure publishing and downloading to use separate organizations. See [Use predefined variables](../../pipelines/build/variables.md#systemaccesstoken) to lean more about the `System.AccessToken` security token.
 
 1. Replace the following fields with your own values:
 
