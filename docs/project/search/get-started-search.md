@@ -4,6 +4,7 @@ titleSuffix: Azure DevOps
 description: Quickly search within Azure DevOps, across all your code, wiki, packages, and work items.
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.technology: devops-collab
+ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley

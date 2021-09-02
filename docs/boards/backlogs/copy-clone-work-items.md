@@ -2,7 +2,7 @@
 title: Copy or clone stories, issues, or other work items
 titleSuffix: Azure Boards  
 description: Copy or clone user stories, issues, bugs, tasks, or other work items in Azure Boards, Azure DevOps  
-ms.custom: seodec18  
+ms.custom: "seodec18, cross-project"   
 ms.technology: devops-agile
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
 ms.author: kaelli
