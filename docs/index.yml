@@ -9,6 +9,7 @@ metadata:
   description: Collaborate on software development through source control, work tracking, and continuous integration and delivery, both on-premises and in the cloud!
   ms.prod: devops 
   ms.topic: hub-page 
+  ms.technology: devops
   author: KathrynEE 
   ms.author: kaelli 
   ms.date: 09/22/2020
