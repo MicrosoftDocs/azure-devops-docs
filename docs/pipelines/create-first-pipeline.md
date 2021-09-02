@@ -330,6 +330,7 @@ az pipelines update [--branch]
 - **queue-id**: Queue ID of the agent pool where the pipeline needs to run.
 - **yaml-path**: Path of the pipeline's yaml file in the repo.
 
+There are also global parameters you can use, including `output -o`. Global parameters include `debug`, `help`, `only-show-errors`, `query`, `output` and `verbose`.
 #### Example 
 
 The following command updates the pipeline with the **ID** of 12 with a new name and description and shows the result in table format.
@@ -353,6 +354,8 @@ az pipelines show [--folder-path]
                   [--open]
                   [--org]
                   [--project]
+                  [--query-examples]
+                  [--subscription]
 ``` 
 
 #### Parameters
@@ -363,6 +366,8 @@ az pipelines show [--folder-path]
 - **open**: Open the pipeline summary page in your web browser.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **query examples**: Recommend a JMESPath string for you.
+- **subscription**: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
 
 #### Example 
 
