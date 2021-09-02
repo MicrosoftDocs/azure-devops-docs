@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker range="azure-devops"
 
-This is a step-by-step guide to using Azure Pipelines to build a GitHub repository.
+This is a step-by-step guide to using Azure Pipelines to build a GitHub repository. This guide uses YAML pipelines configured with the [YAML pipeline editor](get-started/yaml-pipeline-editor.md). If you'd like to use Classic pipelines instead, see [Define your Classic pipeline](release/define-multistage-release-process.md).
 
 ## Prerequisites - Azure DevOps
 
@@ -330,7 +330,12 @@ az pipelines update [--branch]
 - **queue-id**: Queue ID of the agent pool where the pipeline needs to run.
 - **yaml-path**: Path of the pipeline's yaml file in the repo.
 
-There are also global parameters you can use, including `output -o`. Global parameters include `debug`, `help`, `only-show-errors`, `query`, `output` and `verbose`.
+ Global parameters include `debug`, `help`, `only-show-errors`, `query`, `output` and `verbose`.
+
+> [!TIP]
+> There are also global parameters you can use such as `--output`.
+> The `--output` parameter is available for all commands. The **table** value presents output in a friendly format. For more information, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
+
 #### Example 
 
 The following command updates the pipeline with the **ID** of 12 with a new name and description and shows the result in table format.
