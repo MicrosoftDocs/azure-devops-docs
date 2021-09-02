@@ -749,6 +749,11 @@ If you don't see the **Extensions** tab, then extensions aren't enabled for your
 
 For build and release tasks to package and publish Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
 
+## FAQ
+
+### How is cancellation signal being handled by a task?
+The pipeline agent sends SIGINT and SIGTERM signals to the relevant child process. There are no explicit means in [task library](https://github.com/microsoft/azure-pipelines-task-lib) to process this at the moment. You can find more info [here](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/jobcancellation.md).
+
 ## Related articles
 
 - [Extension Manifest Reference](./manifest.md)
