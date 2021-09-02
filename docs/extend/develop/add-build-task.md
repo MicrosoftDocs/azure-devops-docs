@@ -749,7 +749,7 @@ For build and release tasks to package and publish Azure DevOps Extensions to th
 ## FAQ
 
 ### How is cancellation signal being handled by a task?
-Pipeline agent sends SIGINT and SIGTERM signals to the relevant child process. There is no explicit means in [task library](https://github.com/microsoft/azure-pipelines-task-lib) to process this at the moment. You can find more info [here](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/jobcancellation.md).
+The pipeline agent sends SIGINT and SIGTERM signals to the relevant child process. There are no explicit means in [task library](https://github.com/microsoft/azure-pipelines-task-lib) to process this at the moment. You can find more info [here](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/jobcancellation.md).
 
 ## Related articles
 
