@@ -110,8 +110,16 @@ Follow the links provided in the following table to learn more about the Azure s
    :::column-end::: 
    :::column span="3":::
       Store and access unstructured data at scale using Azure Pipelines and Azure Blob Storage. 
-      - [Build a data pipeline by using Azure Data Factory, DevOps, and machine learning](apps/cd/azure/build-data-pipeline.md)
-      - [Azure File Copy task](tasks/deploy/azure-file-copy.md)
+   :::column-end:::
+:::row-end:::
+--- 
+:::row:::
+   :::column span="1":::
+      [Azure Static Web Apps](https://azure.microsoft.com/services/app-service/static/)
+   :::column-end::: 
+   :::column span="3":::
+      Use Azure Static Web Apps to automatically build and deploy a full stack web app to Azure from a code repository.
+      - [Tutorial: Publish Azure Static Web Apps with Azure DevOps](/azure/static-web-apps/publish-devops)
    :::column-end:::
 :::row-end:::
 --- 
