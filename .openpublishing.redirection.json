@@ -18214,6 +18214,11 @@
       "source_path": "docs/pipelines/targets/webapp-linux.md",
       "redirect_url": "/azure/devops/pipelines/targets/webapp",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/get-started/index.md",
+      "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
+      "redirect_document_id": false
     }
   ]
 }
