@@ -714,7 +714,7 @@ Other service connection types and tasks can be installed as extensions. See the
 * [VMware Resource Deployment](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.vmwareapp).
   Connect to a VMware vCenter Server from Visual Studio Team Services or TFS to provision. Start, stop, or snapshot VMware virtual machines.
 
-* [Microsoft Power Platform Build Tools for Azure DevOps](/power-platform/alm/devops-build-tools). Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related to apps built on Microsoft Power Platform. 
+* [Microsoft Power Platform Build Tools for Azure DevOps](/power-platform/alm/devops-build-tools). Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related to apps built on Microsoft Power Platform. After installing the extension, the **Power Platform** service connection type has the following properties.
 
     |    Parameter                       | Description  |
     |------------------------------------|--------------|
