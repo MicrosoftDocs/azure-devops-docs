@@ -265,7 +265,7 @@ You can also create your own [custom service connections](../../extend/develop/s
 
 Azure Pipelines supports the following service connection types by default:
 
-[Azure Classic](#azure-classic-service-connection) | [Azure Repos/TFS](#azure-repos) | [Azure Resource Manager](#azure-resource-manager-service-connection) | [Azure Service Bus](#azure-service-bus-service-connection) | [BitBucket](#bitbucket-cloud-service-connection) | [Chef](#chef-service-connection) | [Docker hub or others](#docker-hub-or-others) | [External Git](#external-git-service-connection) | [Generic](#generic-service-connection) | [GitHub](#github-service-connection) | [GitHub Enterprise Server](#github-enterprise-server-service-connection) | [Jenkins](#jenkins-service-connection) | [Kubernetes](#kubernetes-service-connection) | [Maven](#maven-service-connection) | [npm](#npm-service-connection) | [NuGet](#nuget-service-connection) | [Power Platform](#power-platform) | [Python package download](#python-package-download-service-connection) | [Python package upload](#python-package-upload-service-connection) | [Service Fabric](#service-fabric-service-connection) | [SSH](#ssh-service-connection) | [Subversion](#subversion-service-connection) | [Visual Studio App Center](#visual-studio-app-center-service-connection) |
+[Azure Classic](#azure-classic-service-connection) | [Azure Repos/TFS](#azure-repos) | [Azure Resource Manager](#azure-resource-manager-service-connection) | [Azure Service Bus](#azure-service-bus-service-connection) | [BitBucket](#bitbucket-cloud-service-connection) | [Chef](#chef-service-connection) | [Docker hub or others](#docker-hub-or-others) | [External Git](#external-git-service-connection) | [Generic](#generic-service-connection) | [GitHub](#github-service-connection) | [GitHub Enterprise Server](#github-enterprise-server-service-connection) | [Jenkins](#jenkins-service-connection) | [Kubernetes](#kubernetes-service-connection) | [Maven](#maven-service-connection) | [npm](#npm-service-connection) | [NuGet](#nuget-service-connection) | [Python package download](#python-package-download-service-connection) | [Python package upload](#python-package-upload-service-connection) | [Service Fabric](#service-fabric-service-connection) | [SSH](#ssh-service-connection) | [Subversion](#subversion-service-connection) | [Visual Studio App Center](#visual-studio-app-center-service-connection) |
 
 ### Azure Classic service connection
 
@@ -620,25 +620,6 @@ Use the following parameters when you define and secure a connection to a NuGet 
 
 To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, see [NuGet Authenticate](../tasks/package/nuget-authenticate.md).
 
-### Power Platform service connection
-
-Defines and secures a connection to a Power Platform instance.
-
-> [!NOTE]
-> Microsoft Power Platform Build Tools are not installed by default. For more information, see [Get Microsoft Power Platform Build Tools](/power-platform/alm/devops-build-tools#get-microsoft-power-platform-build-tools).
-
-
-|    Parameter                       | Description  |
-|------------------------------------|--------------|
-|    Connection Name                 | Required. The name you will use to refer to this service connection in task properties. |
-|    Server URL                      | Required. The URL of the Power Platform instance. Example: `https://contoso.crm4.dynamics.com` |
-|    Tenant ID                       | Required. Tenant ID (also called directory ID in Azure portal) to authenticate to. Refer to [https://aka.ms/buildtools-spn](https://aka.ms/buildtools-spn) for a script that shows Tenant ID and configures Application ID and associated Client Secret. The application user must also be [created in CDS](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) |
-|    Application ID                  | Required. Azure Application ID to authenticate with. |
-|    Client secret of Application ID | Required. Client secret of the Service Principal associated to above Application ID used to prove identity. |
-
----
-
-
 ### Python package download service connection
 
 Use the following parameters when you define and secure a connection to a Python repository for downloading Python packages.
@@ -732,6 +713,19 @@ Other service connection types and tasks can be installed as extensions. See the
 
 * [VMware Resource Deployment](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.vmwareapp).
   Connect to a VMware vCenter Server from Visual Studio Team Services or TFS to provision. Start, stop, or snapshot VMware virtual machines.
+
+* [Microsoft Power Platform Build Tools for Azure DevOps](/power-platform/alm/devops-build-tools). Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related to apps built on Microsoft Power Platform. 
+
+    |    Parameter                       | Description  |
+    |------------------------------------|--------------|
+    |    Connection Name                 | Required. The name you will use to refer to this service connection in task properties. |
+    |    Server URL                      | Required. The URL of the Power Platform instance. Example: `https://contoso.crm4.dynamics.com` |
+    |    Tenant ID                       | Required. Tenant ID (also called directory ID in Azure portal) to authenticate to. Refer to [https://aka.ms/buildtools-spn](https://aka.ms/buildtools-spn) for a script that shows Tenant ID and configures Application ID and associated Client Secret. The application user must also be [created in CDS](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) |
+    |    Application ID                  | Required. Azure Application ID to authenticate with. |
+    |    Client secret of Application ID | Required. Client secret of the Service Principal associated to above Application ID used to prove identity. |
+
+---
+
 
 You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
