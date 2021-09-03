@@ -131,6 +131,9 @@
         - name: Use predefined variables
           href: build/variables.md
           displayName: build variables, agent variables, pipeline variables, system variables
+        - name: Set variables in scripts
+          href: process/set-variables-scripts.md
+          displayName: variables, task, setname, scripts
         - name: Use runtime parameters
           href: process/runtime-parameters.md
           displayName: parameters in pipelines, conditionals, loop, data types
