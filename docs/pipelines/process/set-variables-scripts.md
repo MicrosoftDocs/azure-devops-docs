@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 You can use the `task.setvariable` logging command to set variables in [PowerShell](../scripts/powershell.md) and [Bash](../tasks/utility/bash.md) scripts. 
 
-When you add a variable in a task with `task.setvariable`, the following tasks can use the variable using macro syntax `$(myVar)`. The variable is exposed to future tasks as an enviromental variable. To use the variable in subsequent stages, you need to set the `isOutput` property to `true`. When a variable is set as an output variable, you'll include the task name to reference it. For example, `$(TaskName.myVar)`. 
+When you add a variable with `task.setvariable`, the following tasks can use the variable using macro syntax `$(myVar)`. The variable is exposed to future tasks as an enviromental variable. To use the variable in subsequent stages, you need to set the `isOutput` property to `true`. When a variable is set as an output variable, you'll include the task name to reference it. For example, `$(TaskName.myVar)`. 
 
 The `task.setvariable` command includes properties for setting a variable as secret. The available properties include:
 
