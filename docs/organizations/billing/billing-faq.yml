@@ -206,7 +206,7 @@ sections:
           Yes. You can do that by selecting the Azure subscription that is linked to the desired Azure DevOps organization, locate the organization under Settings > Resources.
           :::image type="content" source="media/billing-faq/organization-under-subscription.png" alt-text="Screenshot of locating your organization":::
           
-          Select the desired organization from list and  apply tags by selecting the action 'Assign tags'. The tags you assign will appear in your Azure bill for the charges assoicated with the selected Azure Devops or4ganization.
+          Select the desired organization from list and apply tags by selecting the action **Assign tags**. The tags you assign will appear in your Azure bill for the charges associated with the selected Azure DevOps organization.
           :::image type="content" source="media/billing-faq/apply-billing-tag-on-organization.png" alt-text="Screenshot of applying tags":::
           
           ## Understanding your bill
