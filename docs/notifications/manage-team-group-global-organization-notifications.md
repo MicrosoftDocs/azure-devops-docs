@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to get global organization, team, and group notifications when changes occur to source code, git, work items, and builds in Azure DevOps.  
 ms.technology: devops-collab
 ms.assetid: 6edc44d0-2729-46f5-8108-c8a5160a6a7a
-ms.custom: contperf-fy21q2
+ms.custom: contperf-fy21q2, cross-project
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
@@ -177,7 +177,7 @@ A subscription lets you control what your team is notified of and how the team r
    |**Team preference**   | use the team's default delivery preference. For more information, see [Manage delivery settings](#manage).        |
    |**Custom email address**    |  Send an email to a specified email address.       |
    |**Members of Azure DevOps**   |  Send an individual email to each member of the team.       |
-   |**SOAP**    | Send to an eamil address.      |
+   |**SOAP**    | Send to an email address.      |
 
    See the following roles and their descriptions:
 

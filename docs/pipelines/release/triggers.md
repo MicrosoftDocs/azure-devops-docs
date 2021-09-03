@@ -6,7 +6,7 @@ ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair
 ms.custom: seodec18, contperf-fy21q1
-ms.date: 09/25/2020
+ms.date: 08/31/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -35,6 +35,8 @@ Continuous deployment triggers allow you to create a release every time a new bu
 > ![Selecting a trigger for a release](media/trigger-01.png)
 
 Build branch filters allow you to trigger a release only for a build that is from one of the branches selected here.
+
+A release will be triggered only if the Git push contains a commit on the specified branch. For example, selecting `main` will trigger a release for a Git push which contains one or more commits to the main branch. To trigger a release for any commit to branches under `features/`, enter `features/*`. To trigger a release for commits to all branches, enter `*`. Note that all specified filters will be OR'ed. For example, an artifact matching at least one filter condition would be sufficient to trigger a release.
 
 You also have the option to specify branch tags. If you do so, a release will be triggered only if a new build tagged with the keywords specified here, is available.
 

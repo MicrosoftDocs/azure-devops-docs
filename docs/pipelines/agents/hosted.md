@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 08/26/2021
+ms.date: 08/30/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -106,7 +106,7 @@ layout of the hosted agents is subject to change without warning.
 
 ## Hardware
 
-Microsoft-hosted agents that run Windows and Linux images are provisioned on Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series) with a 2 core CPU, 7 GB of RAM, and 14 GB of SSD disk space. These virtual machines are co-located in the same geography as your Azure DevOps organization.
+Microsoft-hosted agents that run Windows and Linux images are provisioned on Azure general purpose virtual machines with a 2 core CPU, 7 GB of RAM, and 14 GB of SSD disk space. These virtual machines are co-located in the same geography as your Azure DevOps organization.
 
 Agents that run macOS images are provisioned on Mac pros with a 3 core CPU, 14 GB of RAM, and 14 GB of SSD disk space. These agents always run in the US irrespective of the location of your Azure DevOps organization. If data sovereignty is important to you and if your organization is not in the US, then you should not use macOS images. [Learn more](../../organizations/security/data-location.md).
 
@@ -167,21 +167,19 @@ namespace WeeklyFileIPRanges
         static void Main(string[] args)
         {
             // United States geography has the following regions:
-            // Central US, East US, East US 2, East US 3, North Central US, 
-            // South Central US, West Central US, West US, West US 2, West US 3
+            // Central US, East US, East US 2, North Central US, 
+            // South Central US, West Central US, West US, West US 2
             // This list is accurate as of 8/26/2021
             List<string> USGeographyRegions = new List<string>
             {
                 "centralus",
                 "eastus",
                 "eastus2",
-                "eastus3",
                 "northcentralus",
                 "southcentralus",
                 "westcentralus",
                 "westus",
-                "westus2",
-                "westus3"
+                "westus2"
             };
 
             // Load the weekly file

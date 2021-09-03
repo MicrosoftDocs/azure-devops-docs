@@ -533,3 +533,6 @@ Learn more about how to [set a multi-job output variable](variables.md#set-a-mul
  
 This can happen when there is a name conflict between two jobs. Verify that any deployment jobs in the same stage have a unique name and that job and stage names do not contain keywords. If renaming does not fix the problem, review [troubleshooting pipeline runs](../troubleshooting/troubleshooting.md).
 
+### Are decorators supported in deployment groups?
+
+No. You can't use decorators in deployment groups.

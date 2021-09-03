@@ -16,20 +16,17 @@ With Azure Artifacts, you can create two types of feeds: project-scoped and orga
    > [!div class="mx-imgBorder"] 
    > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
-2. Select **Create Feed**.
+1. Select **Create Feed**.
 
    > [!div class="mx-imgBorder"] 
    > ![New feed button](../media/new-feed-button-azure-devops-newnav.png)
 
-3. Give your feed a **Name** and choose its **visibility**, **upstream sources**, and **scope** settings.
+1. Give your feed a **Name** and choose its **visibility**, **upstream sources**, and **scope** settings.
 
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box](../media/new-feed-dialog-azure-devops.png)
 
-4. When you are done, select **Create**.
-
-> [!NOTE]   
-> Enabling upstream sources allows you to consume packages from public registries and gives you more protection against outages and corrupted packages.
+1. Select **Create** when you are done.
 
 ::: moniker-end
 
@@ -42,17 +39,16 @@ Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade
    > [!div class="mx-imgBorder"] 
    > ![Go to Azure Artifacts TFS](../media/goto-feed-hub.png)
 
-2. Select **+ New feed**.
+1. Select **+ New feed**.
 
    > [!div class="mx-imgBorder"] 
    > ![New feed button TFS](../media/new-feed-button.png)
 
-3. Give your feed a **Name**, a **Description**, and set up **who can read**, **who can contribute** and if you want to **Include external packages**.
+1. Give your feed a **Name**, a **Description**, and set up **who can read**, **who can contribute** and if you want to **Include external packages**.
 
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box TFS](../media/new-feed-dialog-azure-tfs.png)
 
-> [!NOTE]   
-> Enabling upstream sources allows you to consume packages from public registries and gives you more protection against outages and corrupted packages.
+1. Select **Create** when you are done.
 
 ::: moniker-end
