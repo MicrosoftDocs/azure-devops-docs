@@ -29,16 +29,9 @@ Release triggers are an automation tool to deploy your application. When the tri
 
 ## Continuous deployment triggers
 
-Continuous deployment triggers allow you to create a release every time a new build artifact is available. This feature is currently available only to build from Azure DevOps, TFS and Git-based repositories.
+Continuous deployment triggers allow you to create a release every time a new build artifact is available. Using the build branch filters you can trigger deployment for a specific target branch. A release will be triggered only if the Git push contains a commit on the specified branch. For example, selecting `main` will trigger a release for a Git push which contains one or more commits to the main branch. To trigger a release for any commit to branches under `features/`, enter `features/*`. To trigger a release for commits to all branches, enter `*`. Note that all specified filters will be OR'ed.
 
-> [!div class="mx-imgBorder"]
-> ![Selecting a trigger for a release](media/trigger-01.png)
-
-Build branch filters allow you to trigger a release only for a build that is from one of the branches selected here.
-
-A release will be triggered only if the Git push contains a commit on the specified branch. For example, selecting `main` will trigger a release for a Git push which contains one or more commits to the main branch. To trigger a release for any commit to branches under `features/`, enter `features/*`. To trigger a release for commits to all branches, enter `*`. Note that all specified filters will be OR'ed. For example, an artifact matching at least one filter condition would be sufficient to trigger a release.
-
-You also have the option to specify branch tags. If you do so, a release will be triggered only if a new build tagged with the keywords specified here, is available.
+:::image type="content" source="media/trigger-01.png" alt-text="Configure continuous deployment triggers":::
 
 > [!NOTE]
 > Automatically creating a release does not mean it will be automatically deployed to a stage. You must set up stages triggers to deploy your app to the various stages.
