@@ -183,7 +183,7 @@ Azure DevOps Services is available in several [Azure regions](https://azure.micr
 | Australia | Australia East | EAU |
 | South America | Brazil South | SBR |
 | Asia Pacific | South India | MA |
-| Asia Pacific | Asia Pacific (Hong Kong) | EA |
+| Asia Pacific | Southeast Asia (Singapore) | SEA |
 | Canada | Central Canada | CC |
 
 <br> 
@@ -449,7 +449,7 @@ Azure DevOps Services is available in multiple [regions](https://azure.microsoft
 | Brazil South | Brazil South |
 | India South | India South |
 | Canada Central | Canada Central |
-| Asia Pacific (Hong Kong) | Asia Pacific (Hong Kong) |
+| Asia Pacific (Singapore) | Asia Pacific (Singapore) |
 
 <br> 
 

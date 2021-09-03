@@ -197,7 +197,7 @@ If your pipeline gets triggered automatically, the CI pipeline version gets pick
 |Branches     | A new pipeline gets triggered whenever a CI run successfully completes that matches to the branches that are included.        |
 |Tags     | A new pipeline gets triggered whenever a CI run successfully completes that matches all the tags mentioned.        |
 |Stages     | A new pipeline gets triggered whenever a CI run has all the stages mentioned are completed successfully.        |
-|Branches, tags, and stages    | aA new pipeline run gets triggered whenever a CI run matches all the conditions.        |
+|Branches, tags, and stages    | A new pipeline run gets triggered whenever a CI run matches all the conditions.        |
 |Only `trigger: true`    | A new pipeline run gets triggered whenever a CI run successfully completes.        |
 |Nothing    | No pipeline run gets triggered. Triggers are disabled by default unless you specifically enable them.        |
 
@@ -233,7 +233,7 @@ All artifacts from the current pipeline and from all `pipeline` resources are au
 steps:
 - download: [ current | pipeline resource identifier | none ] # disable automatic download if "none"
   artifact: string ## artifact name, optional; downloads all the available artifacts if not specified
-  terns: string # terns representing files to include; optional
+  patterns: string # patterns representing files to include; optional
 ```
 
 ## [Example](#tab/example)

@@ -3,6 +3,7 @@ title: Use functional work item search options
 description: How to use Work Item Search - functional options for Work Item Search in Microsoft Azure DevOps for all projects. 
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.technology: devops-collab
+ms.custom: cross-service, cross-project
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
