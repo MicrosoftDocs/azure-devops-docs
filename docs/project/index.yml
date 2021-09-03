@@ -25,12 +25,8 @@ landingContent:
         links:
           - text: Integration overview
             url: ../cross-service/cross-service-overview.md
-      - linkListType: overview
-        links:
           - text: Azure DevOps and GitHub integration overview
             url: ../cross-service/github-integration.md
-      - linkListType: overview
-        links:
           - text: Deploy to Azure
             url: ../pipelines/overview-azure.md
   - title: Work across projects
@@ -61,7 +57,7 @@ landingContent:
             url: ../boards/work-items/work-item-deployments-control.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
           - text: Use #ID to link to work items
             url: ../notifications/add-links-to-work-items.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
-      - linkListType: how-to
+      - linkListType: how-to-guide
         links:
           - text: Configure Git repositories to integrate with work tracking 
             url: ../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
