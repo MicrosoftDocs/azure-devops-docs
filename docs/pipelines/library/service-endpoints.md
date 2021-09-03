@@ -624,6 +624,9 @@ To configure NuGet to authenticate with Azure Artifacts and other NuGet reposito
 
 Defines and secures a connection to a Power Platform instance.
 
+> [!NOTE]
+> Microsoft Power Platform Build Tools are not installed by default. For more information, see [Get Microsoft Power Platform Build Tools](/power-platform/alm/devops-build-tools#get-microsoft-power-platform-build-tools).
+
 
 |    Parameter                       | Description  |
 |------------------------------------|--------------|
