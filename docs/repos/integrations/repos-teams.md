@@ -6,7 +6,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.manager: gopinach
 ms.author: divais
-author: Divya
+author: divais
 monikerRange: 'azure-devops'
 ms.date: 10/21/2019
 ---
