@@ -1,23 +1,23 @@
 ---
 title: Update and monitor your Taskboard
 titleSuffix: Azure Boards and TFS
-description: Implement scrum using the sprint taskboard in Azure Boards & Team Foundation Server
+description: Implement scrum using the sprint Dashboard in Azure Boards.
 ms.technology: devops-agile
 ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 02/11/2021
+ms.date: 09/07/2021
 ---
 
 # 6. Update and monitor your Taskboard
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-Once you have your [sprint plan](assign-work-sprint.md) in place, you'll execute that plan for the duration of the sprint. In your daily Scrum meetings, your team can view progress made to backlog items and tasks from the sprint **Taskboard**.
+Once you have your [sprint plan](assign-work-sprint.md) in place, you'll execute that plan during the sprint. In your daily Scrum meetings, your team can view progress made to backlog items and tasks from the sprint **Taskboard**.
 
-Your **Taskboard** provides a visualization of flow and status of each sprint task. With it, you can focus on the status of backlog items as well as work assigned to each team member. It also summarizes the total amount of remaining work to complete for a task or within a column.
+Your **Taskboard** provides a visualization of flow and status of each sprint task. With it, you can focus on the status of backlog items and work assigned to each team member. It also summarizes the total amount of **Remaining Work** to complete for a task and within a column.
 
 In this article you'll learn how to:
 
@@ -37,9 +37,9 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ## Prerequisites
 
-* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
-* To add work items and exercise all board features, you must be granted **Basic** access or higher. Users granted **Stakeholder** access have limited access to features. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
+* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* Get added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
+* To add work items and exercise all board features, you must be granted **Basic** access or higher. Users granted **Stakeholder** accesses have limited access to features. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 * To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 
 ::: moniker range=">= azure-devops"
@@ -137,17 +137,17 @@ Each team can customize their **Taskboard** in the following ways:
 ::: moniker range=">= azure-devops-2020"
 
 - [Add or rename columns](customize-taskboard.md#add-columns).
-- [Customize cards](customize-taskboard.md#choose-fields) to show additional fields or change card color based on specified field criteria.
-- [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and **Taskboards** at the same level as tasks.
+- [Customize cards](customize-taskboard.md#choose-fields) to show another fields or change card color based on specified field criteria.
+- [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md). Your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and **Taskboards** at the same level as tasks.
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-- [Customize cards](../../boards/boards/customize-cards.md) that appear on the **Taskboard** to show additional fields.
-- [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and **Taskboards** at the same level as tasks.
+- [Customize cards](../../boards/boards/customize-cards.md) that appear on the **Taskboard** to show other fields.
+- [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md). Your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and **Taskboards** at the same level as tasks.
 
-Unlike the Kanban board for a product backlog, you can't add additional columns to the **Taskboard** via a team configuration setting. Instead, you need to modify the workflow definitions for the task work item type used by the project. This would update the columns for the **Taskboard** for all teams within the project.
+Unlike the Kanban board for a product backlog, you can't add another columns to the **Taskboard** via a team configuration setting. Instead, you need to modify the workflow definitions for the task work item type used by the project. Workflow customizations update the columns for the **Taskboard** for all teams within the project.
 
 ::: moniker-end
 
@@ -238,7 +238,7 @@ You can expand ![expand icon](../media/icons/expand_row_icon.png) and collapse !
 
 ## Show progress of individuals
 
-With this view, you can focus on the work completed and the work remaining for each individual team member. You can quickly see who may need help to complete their sprint tasks. This view shows items and tasks assigned to the selected team member.
+With this view, you can focus on the work completed and the work remaining for each individual team member. You can quickly see who may need help with completing their sprint tasks. This view shows items and tasks assigned to the selected team member.
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -303,13 +303,13 @@ Simply drag tasks to a downstream column to reflect if they are in progress or c
 
 ![taskboard, update task status](media/ALM_TB_Move_To_Done.png)
 
-When you move a task to the Done or Completed column, the system automatically updates the *Remaining Work* field to 0 in all processes, except CMMI. If you discover more work is remaining, change the State back to In progress or To do and enter a value for the remaining work.
+When you move a task to the **Done** or **Completed** column, the system automatically updates the **Remaining Work** field to 0 in all processes, except CMMI. If you discover more work is remaining, change the State back to **In progress** or **To do**, and enter a value for the **Remaining Work**.
 
-### Update remaining work
+### Update Remaining Work 
 
-Updating *Remaining Work*, preferably prior to the daily Scrum meeting, helps the team stay informed of the progress being made. It also ensures a smoother burndown chart.
+Updating **Remaining Work**, preferably prior to the daily Scrum meeting, helps the team stay informed of the progress being made. It also ensures a smoother burndown chart.
 
-Each team member can review the tasks they've worked on and estimate the work remaining. If they've discovered that it's taking longer than expected to complete, they should increase the remaining work for the task. *Remaining Work* should always reflect exactly how much work the team member estimates is remaining to complete the task.
+Each team member can review the tasks they've worked on and estimate the work remaining. If they've discovered that it's taking longer than expected to complete, they should increase the **Remaining Work** for the task. **Remaining Work** should always reflect exactly how much work the team member estimates is remaining to complete the task.
 
 ::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]
