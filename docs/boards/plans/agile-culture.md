@@ -25,8 +25,6 @@ However, to successfully scale Agile requires addressing both the culture and to
 
 ## Alignment enables autonomy
 
-<meta name="keywords" content="Agile culture,alignment,autonomy" /> 
-
 Organizations that aspire to be agile need to consider the twin obligations of creating alignment across the enterprise and supporting team autonomy. Teams need autonomy to be efficient. And, enterprises need alignment across teams and the organization to be efficient.  
 
 Too much alignment with insufficient team autonomy leads doesn't support innovation or agility of teams to get things done. Too little alignment with each team running their own program as they want doesn't provide the insight and coordination required to meet business objectives.  
@@ -128,7 +126,7 @@ As you plan how you want to grow your Agile tool set, consider the following are
 
 ## Feature teams   
 
-<meta name="keywords" content="Agile culture,feature teams,agile teams, horizontal team structure" /><br/>As you scale, one of the most important tasks to consider is how you structure your teams. Traditionally, horizontal team structures divide teams according to the software architecture: user interface, service-oriented architecture, and data teams.  
+As you scale, one of the most important tasks to consider is how you structure your teams. Traditionally, horizontal team structures divide teams according to the software architecture: user interface, service-oriented architecture, and data teams.  
 
 
 ![Horizontal vs vertical teams](media/horizontal-vs-vertical-teams.png)
@@ -145,7 +143,7 @@ Each team plans the features they'll deliver. They have the autonomy to determin
 
 ## Configure your Agile tools to scale
 
-<meta name="keywords" content="Agile culture,scaling agile" /><br/>As your organization grows, you can scale your Agile tools in the following ways.     
+As your organization grows, you can scale your Agile tools in the following ways.     
 
 - **[Add teams and filtered backlog views](../../organizations/settings/add-teams.md):** You add teams to support team autonomy and provide them with the tools they can configure and manage that supports how they want to work. These tools include product backlogs, Kanban boards, sprint backlogs and taskboards, and many others.
 

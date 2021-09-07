@@ -5,7 +5,7 @@ description: Learn the basics about Azure Pipelines and how to use it to automat
 ms.topic: overview
 ms.author: sdanie
 author: steved0x
-ms.date: 11/15/2019
+ms.date: 09/02/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -16,18 +16,16 @@ monikerRange: '>= tfs-2015'
 ::: moniker range=">= azure-devops-2019"
 
 Azure Pipelines supports continuous integration (CI) and continuous 
-delivery (CD) to constantly and consistently test and build your code 
-and ship it to any target. You accomplish this by defining a pipeline. 
-You define pipelines using the YAML syntax or through the user 
-interface (Classic). 
+delivery (CD) to continuously test, build, and deploy your code. You accomplish this by defining a pipeline. 
+
+The latest way to build pipelines is with the [YAML pipeline editor](yaml-pipeline-editor.md). You can also use Classic pipelines with the [Classic editor](../release/define-multistage-release-process.md). 
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
 Azure Pipelines supports continuous integration (CI) and continuous 
-delivery (CD) to constantly and consistently test and build your code 
-and ship it to any target. You accomplish this by defining a pipeline 
+delivery (CD) to continuously test, build, and deploy your code.  You accomplish this by defining a pipeline 
 using the user interface, also referred to as _Classic_. 
 
 ::: moniker-end
@@ -36,7 +34,7 @@ using the user interface, also referred to as _Classic_.
 
 ## Automate tests, builds, and delivery
 
-Continuous integration automates tests and builds for your project. CI helps to catch bugs or issues early in the development cycle, when they're easier and faster to fix. Items known as artifacts are produced from CI systems. They're used by the continuous delivery release pipelines to drive automatic deployments.
+Continuous integration (CI) automates tests and builds for your project. CI helps to catch bugs or issues early in the development cycle, when they're easier and faster to fix. Items known as artifacts are produced from CI systems. They're used by the continuous delivery release pipelines to drive automatic deployments.
 
 Continuous delivery automatically deploys and tests code in multiple stages to help drive quality. Continuous integration systems produce deployable artifacts, which include infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to the target of your choice.
 

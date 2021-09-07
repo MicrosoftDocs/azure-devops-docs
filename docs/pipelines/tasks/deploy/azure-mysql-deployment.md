@@ -6,7 +6,7 @@ ms.assetid: BD1BED02-F04E-11E7-8C3F-9A214CF093AE
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 04/28/2020
+ms.date: 09/03/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task to run your scripts and make changes to your database in Azure Database for MySQL. Note that this is a preview version.
+Use this task to run your scripts and make changes to your database in Azure Database for MySQL. Note that this is a preview version. The Azure Database for MySQL Deployment task only works with [Azure Database for MySQL Single Server](/azure/mysql/single-server-overview).
 
 ::: moniker range="> tfs-2018"
 

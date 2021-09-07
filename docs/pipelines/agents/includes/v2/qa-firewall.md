@@ -20,7 +20,7 @@ https://{organization_name}.visualstudio.com
 https://{organization_name}.vsrm.visualstudio.com
 https://{organization_name}.vstmr.visualstudio.com
 https://{organization_name}.pkgs.visualstudio.com
-https://{organization_name}.vsblob.visualstudio.net
+https://{organization_name}.vsblob.visualstudio.com
 https://{organization_name}.vssps.visualstudio.com
 ```
 
@@ -32,7 +32,7 @@ https://*.dev.azure.com
 https://login.microsoftonline.com
 https://management.core.windows.net
 https://vstsagentpackage.azureedge.net
-https://*.vsblob.visualstudio.net
+https://*.vsblob.visualstudio.com
 https://*.vssps.visualstudio.com
 ```
 

@@ -18,7 +18,8 @@ Custom controls allow you to change how users view and interact with a field on 
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
-<img alt="custom control in work item form" src="./media/customcontrol.png" style="width: 600px;"/>
+> [!div class="mx-imgBorder"]
+> ![Screenshot of custom control in work item form.](media/customcontrol.png)
 
 ## Add the custom control
 
@@ -57,7 +58,8 @@ If you want to dynamically resize the iframe, you can use the `resize method` av
 
 A custom control on the work item form is another type of [contribution](./contributions-overview.md) like [group & page contribution](./add-workitem-extension.md). The main difference between a control contribution and group and page contribution is that a control contribution can take a set of user inputs while group and page contributions can not. 
 
-## Control Contribution Inputs
+## Control contribution inputs
+
 To define the inputs for your control contribution, use `inputs` property in the contribution object in the manifest. In the sample below you see two inputs, FieldName and Colors.  `FieldName` specifies which field the control associates with.  `Colors` configures which colors map to which values in the control. The values for the inputs are provided by the users when they add it to the work item form and the values would be passed to the control contribution when its loaded on the form.
 
 ```json
@@ -113,7 +115,6 @@ These properties define a user input that the contribution can use:
             * `Field` - Only supported in TFS 15 RC1 and RC2 and not in Azure DevOps.
         * `isRequired` - A boolean value which indicates if the input is required to have a value or not
 
-
 ## JavaScript sample
 
 A control extension works like a group or page extension with one difference that it can take certain user inputs. To read the user input values, use `VSS.getConfiguration().witInputs`. This sample shows how to register an object that is called when various events happen on the work item form that may impact your contributed control. It also shows how to read input values provided by user for this control.
@@ -143,4 +144,3 @@ var provider = () => {
 
 VSS.register(VSS.getContribution().id, provider);
 ```
-    

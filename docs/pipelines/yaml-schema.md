@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: vijayma
-ms.date: 03/24/2021
+ms.date: 07/15/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -303,6 +303,8 @@ jobs:
     pools: [ string ] # Pool names, typically when using a matrix strategy for the job
 ```
 
+For more information about `uses`, see [Limit job authorization scope to referenced Azure DevOps repositories](repos/azure-repos-git.md#limit-job-authorization-scope-to-referenced-azure-devops-repositories). For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
+
 :::moniker-end
 
 :::moniker range="<azure-devops"
@@ -329,9 +331,11 @@ jobs:
   services: { string: string | container } # container resources to run as a service container
 ```
 
+For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
+
 :::moniker-end
 
-For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
+
 
 # [Example](#tab/example)
 
@@ -539,7 +543,7 @@ jobs:
 - deployment: DeployWeb
   displayName: deploy Web App
   pool:
-    vmImage: 'Ubuntu-16.04'
+    vmImage: 'Ubuntu-latest'
   # creates an environment if it doesn't exist
   environment: 'smarthotel-dev'
   strategy:
@@ -770,13 +774,13 @@ stages:
   jobs:
   - job: ${{ parameters.name }}_Windows
     pool:
-      vmImage: vs2017-win2016
+      vmImage: windows-latest
     steps:
     - script: npm install
     - script: npm test -- --file=${{ parameters.testFile }}
   - job: ${{ parameters.name }}_Mac
     pool:
-      vmImage: macos-10.14
+      vmImage: macOS-latest
     steps:
     - script: npm install
     - script: npm test -- --file=${{ parameters.testFile }}
@@ -851,19 +855,19 @@ jobs:
   parameters:
     name: macOS
     pool:
-      vmImage: 'macOS-10.14'
+      vmImage: 'macOS-latest'
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Linux
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Windows
     pool:
-      vmImage: 'vs2017-win2016'
+      vmImage: 'windows-latest'
     sign: true  # Extra step on Windows only
 ```
 
@@ -908,19 +912,19 @@ steps:
 jobs:
 - job: macOS
   pool:
-    vmImage: 'macOS-10.14'
+    vmImage: 'macOS-latest'
   steps:
   - template: steps/build.yml # Template reference
 
 - job: Linux
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - template: steps/build.yml # Template reference
 
 - job: Windows
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
   steps:
   - template: steps/build.yml # Template reference
   - script: sign              # Extra step on Windows only
@@ -968,7 +972,7 @@ The variables are specified only once.
 # File: variables/build.yml
 variables:
 - name: vmImage
-  value: vs2017-win2016
+  value: windows-latest
 - name: arch
   value: x64
 - name: config
@@ -1009,12 +1013,14 @@ The type and name fields are required when defining parameters. See all [paramet
 ```yaml
 parameters:
 - name: string          # name of the parameter; required
-  type: enum            # data types, see below
+  type: enum            # see the enum data types in the following section
   default: any          # default value; if no default, then the parameter MUST be given by the user at runtime
   values: [ string ]    # allowed list of values (for some data types)
 ```
 
 ### Types
+
+The `type` value must be one of the `enum` members from the following table.
 
 [!INCLUDE [parameter-data-types](process/includes/parameter-data-types.md)]
 
@@ -1029,11 +1035,8 @@ parameters:
   default: ubuntu-latest
   values:
   - windows-latest
-  - vs2017-win2016
   - ubuntu-latest
-  - ubuntu-16.04
   - macOS-latest
-  - macOS-10.14
 
 trigger: none
 
@@ -1327,7 +1330,7 @@ The `git` type refers to Azure Repos Git repos.
 
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
   An example is `name: MyBitbucket/vscode`.
-  Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket) for authorization.
+  Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#bitbucket-cloud-service-connection) for authorization.
 
 ### Packages resource
 
@@ -1708,7 +1711,7 @@ To use a Microsoft-hosted pool, omit the name and specify one of the available [
 
 ```yaml
 pool:
-  vmImage: ubuntu-16.04
+  vmImage: ubuntu-latest
 ```
 
 To use a private pool with no demands:
@@ -1744,6 +1747,8 @@ pool:
 ```
 
 ---
+
+Learn more about [demands](./process/demands.md).
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -2107,9 +2112,9 @@ steps:
 ```
 ### Artifact download location
 
-Artifacts from the current pipeline are downloaded to $(**Pipeline.Workspace**)/<artifact name>.
+Artifacts from the current pipeline are downloaded to `$(**Pipeline.Workspace**)/<artifact name>`.
 
-Artifacts from the associated pipeline resource are downloaded to $(**Pipeline.Workspace**)/\<pipeline resource identifier\>/<artifact name>.
+Artifacts from the associated pipeline resource are downloaded to `$(**Pipeline.Workspace**)/\<pipeline resource identifier\>/<artifact name>`.
 
 ### Automatic download in deployment jobs
 

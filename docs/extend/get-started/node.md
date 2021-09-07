@@ -162,7 +162,7 @@ All extensions, including extensions from Microsoft, are under a publisher. Anyo
 
 3. In the Create Publisher form, enter your name in the publisher name field. The ID field should get set automatically based on your name:
 
-    <img src="media/create-publisher.png" alt="Creat publisher" style="border: 1px solid #C3C3C3;" /> 
+    <img src="media/create-publisher.png" alt="Creat publisher" /> 
 
     > [!NOTE]
     > Make note of the ID. You need to set it in the manifest file of your extension.
@@ -212,7 +212,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
 2. Select **New extension**, and then select **Azure DevOps**.
 
-    <img src="media/upload-new-extension.png" alt="Visual Studio Marketplace new extension development" style="border: 1px solid #C3C3C3;" /> 
+    <img src="media/upload-new-extension.png" alt="Visual Studio Marketplace new extension development" /> 
 
 3. Drag and drop your file or select it to find your VSIX file, which you created in the previous packaging step, and then choose **Upload**. 
 
@@ -220,7 +220,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
    After a few seconds, your extension appears in the list of published extensions. Don't worry, the extension is only visible to you.
 
-   <img src="media/published-extension.png" alt="Extension appears in the list of published extensions." style="border: 1px solid #C3C3C3;" /> 
+   <img src="media/published-extension.png" alt="Extension appears in the list of published extensions." /> 
 
 ## Install your extension
 
@@ -228,11 +228,11 @@ To test an extension, it must be installed to an organization in Azure DevOps. I
 
 1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare** or **Publish/Unpublish**, depending on the extension; Share = Publish and Unshare = Unpublish.
 
-   <img src="media/share-menu.png" alt="Select extension and choose Share." style="border: 1px solid #C3C3C3;" /> 
+   <img src="media/share-menu.png" alt="Select extension and choose Share." /> 
 
 2. Select **Organization**, and then enter the name of your organization. Select **Enter**.
 
-   <img src="media/share-dialog.png" alt="Share with organization" style="border: 1px solid #C3C3C3;" /> 
+   <img src="media/share-dialog.png" alt="Share with organization" /> 
 
 3. Close the panel.
 
@@ -242,13 +242,13 @@ To test an extension, it must be installed to an organization in Azure DevOps. I
 
 :::moniker range="<= tfs-2018"
 
-   <img src="media/details-page.png" alt="Overview page" style="border: 1px solid #C3C3C3;" /> 
+   <img src="media/details-page.png" alt="Overview page" /> 
 
 :::moniker-end
 
 ::: moniker range=">= azure-devops-2019"
    
-  <img src="media/details-page2.png" alt="Overview page" style="border: 1px solid #C3C3C3;" /> 
+  <img src="media/details-page2.png" alt="Overview page" /> 
 
 :::moniker-end
 
@@ -257,7 +257,7 @@ To test an extension, it must be installed to an organization in Azure DevOps. I
 
 1. Select **Get it free** to start the installation process. Select the organization you shared the extension with from the dropdown menu.
 
-   <img src="media/install-dialog.png" alt="Instal extension panel" style="border: 1px solid #C3C3C3;" /> 
+   <img src="media/install-dialog.png" alt="Instal extension panel" /> 
 
 2. Select **Install**.
 
@@ -273,7 +273,7 @@ Your extension contributed a view named "My Hub" to the project-level Code area.
 
 2. Select any of the projects listed to navigate into it:
 
-   <img src="media/account-home2.png" alt="select project" style="border: 1px solid #C3C3C3;" /> 
+   <img src="media/account-home2.png" alt="select project" /> 
 
    If there aren't any projects in your organization, you're prompted to create one.
 
@@ -287,7 +287,7 @@ Your extension contributed a view named "My Hub" to the project-level Code area.
 
 2. Select **Organization settings**, and then select **Extensions** to see your newly installed extension.
 
-   <img src="media/organization-settings-extensions.png" alt="Organization settings, extensions page" style="border: 1px solid #C3C3C3;" /> 
+   <img src="media/organization-settings-extensions.png" alt="Organization settings, extensions page" /> 
 
 :::moniker-end
    

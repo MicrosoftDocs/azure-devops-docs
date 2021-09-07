@@ -1,2 +1,2 @@
-{:allowed-branchname-matches ["^master$" "^release..*"]
- :allowed-filename-matches ["docs" "release-notes"]}
+{:allowed-branchname-matches ["master" "release-.*"]
+ :allowed-filename-matches ["docs/" "release-notes/"]}

@@ -4,6 +4,9 @@
 - name: Project & team quick reference
   href: project-team-quick-reference.md
   displayname: administrator, users, actions, manage, concepts
+- name: Project summary
+  href: project-vision-status.md
+  displayname: readme, wiki, objective, administrator, summary, view, activity, members
 - name: Create a project
   href: create-project.md
   displayname: new, connect, list, add, repository
@@ -22,6 +25,9 @@
 - name: What do I get with a project?
   href: ../../user-guide/services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   displayname: features, services, dashboards, plan, track
+- name: Add users or groups to a project
+  href: ../security/add-users-team-project.md
+  displayName: create, new, account, default, custom, access, permission
 - name: Project configuration
   items:
   - name: "Area & iteration paths"
@@ -38,9 +44,6 @@
   - name: Manage your project
     href: ../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayname: policies, extensions 
-  - name: Share your project vision
-    href: project-vision-status.md
-    displayname: readme, wiki, objective, administrator, summary, view, activity, members
   - name: Rename a project
     href: rename-project.md
     displayname: update, change, work item, query, version control paths

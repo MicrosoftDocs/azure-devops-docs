@@ -3,6 +3,7 @@ title: End-to-end traceability
 titleSuffix: Azure DevOps
 description: Learn about the tools and features that support traceability from requirements to deployment    
 ms.technology: devops-agile 
+ms.custom: cross-service, cross-project
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
@@ -67,7 +68,7 @@ After code changes have been made to the new branch, developers can then create 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Create a pull request.](media/traceability/work-item-form-pull-request.png)   
 
-Another advantage of driving software development from the Kanban board and work item is to encourage developers to input comments as they work to further the audit trail of changes occuring. 
+Another advantage of driving software development from the Kanban board and work item is to encourage developers to input comments as they work to further the audit trail of changes occurring. 
 
  
 ## Add and run tests from requirements 
@@ -198,12 +199,15 @@ Open a build or release summary to view the top failing tests report. This repor
 
 To learn more about any of the concepts introduced in this article, refer to the following articles. 
 
-### Linking requirements  
+### Linking  
 
+- [Configure repositories and branches to integrate with work tracking](../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Configure pipelines to support work tracking](../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
 - [Drive Git development from a work item](../boards/backlogs/connect-work-items-to-git-dev-ops.md)
-- [Link work items to deployments](../boards/work-items/work-item-deployments-control.md) 
+- [Link and view work items to builds and deployments](../boards/work-items/work-item-deployments-control.md)
 - [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
 - [Linking, traceability, and managing dependencies](../boards/queries/link-work-items-support-traceability.md)
+- [Link type reference](../boards/queries/link-type-reference.md)
 
 
 ### Testing

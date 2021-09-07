@@ -2,7 +2,7 @@
 title: Work tracking, process, and project limits
 titleSuffix: Azure DevOps Services
 description: Limits placed on the number of objects that can be specified for work tracking objects, queries and more  
-ms.custom: "inherited-process, linked-from-support"
+ms.custom: "inherited-process, linked-from-support, cross-project"
 ms.technology: devops-agile
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
 ms.author: kaelli
@@ -80,6 +80,7 @@ Each backlog can display up to 10,000 work items. This is a limit on what the ba
 
 #### Additional notes:
 
+- Completed or closed work items don't display on the backlogs and boards once their **Changed Date** is greater than a year old. You can still list these items using a query. If you want them to show up on a backlog or board, then you can make a minor change to them which resets the clock for display.  
 - Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md). 
 - Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md#limitations-of-multi-team-kanban-board-views).
 - By default, work item limits might be initially configured to lower values.

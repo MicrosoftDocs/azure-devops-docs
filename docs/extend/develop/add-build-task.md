@@ -72,10 +72,10 @@ Create the folder structure for the task and install the required libraries and 
 From within your `buildandreleasetask` folder, run the following command:
 
 ```
-npm init
+npm init --yes
 ```
 
-`npm init` creates the `package.json` file. You can accept all of the default `npm init` options.
+`npm init` creates the `package.json` file. We added the `--yes` parameter to accept all of the default `npm init` options.
 
 > [!TIP]
 > The agent doesn't automatically install the required modules because it's expecting your task folder to include the node modules. To mitigate this, copy the `node_modules` to `buildandreleasetask`. As your task gets bigger, it's easy to exceed the size limit (50MB) of a VSIX file. Before you copy the node folder, you may want to run `npm install --production` or `npm prune --production`, or you can write a script to build and pack everything.
@@ -106,27 +106,30 @@ echo node_modules > .gitignore
 
 #### Choose typescript version
 
-Tasks can use typescript versions 2.3.4 or 4.0.2. You can install the chosen typescript version using this command:
+Tasks can use typescript versions 2.3.4 or 4.0.2. 
+
+>[!NOTE]
+>To have the `tsc` command available, make sure that TypeScript is installed globally with npm in your development environment.
+
+You can install the chosen typescript version using this command:
 
 ```
-npm install typescript@4.0.2 --save-dev
+npm install typescript@4.0.2 -g --save-dev
 ```
 
-If you skip this step, typescript version 2.3.4 gets used by default.
+If you skip this step, typescript version 2.3.4 gets used by default, and you still have to install the package globally to have the `tsc` command available.
+
 
 #### Create tsconfig.json compiler options
 
 This file ensures that your TypeScript files are compiled to JavaScript files.
 
 ```
-tsc --init
+tsc --init --target es6
 ```
 
-For example, we want to compile to the ES6 standard instead of ES5.
-To ensure the ES6 standard happens, open the newly generated `tsconfig.json` and update the `target` field to "es6."
+We want to compile to the ES6 standard instead of ES5. To ensure the ES6 standard is used, we added the `--target es6` parameter.
 
->[!NOTE]
->To have the command run successfully, make sure that TypeScript is installed globally with npm on your local machine.
 
 ### Task implementation
 
@@ -511,7 +514,7 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 - A project in your organization. If you need to create one, see [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).
 - An [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension installed in your organization.
 
-Create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How use a variable group](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group).
+Create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How to use a variable group](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group).
 
 Declare the following variables in the variable group:
 
@@ -745,6 +748,14 @@ If you can't see the **Extensions** tab, make sure you're in the control panel (
 If you don't see the **Extensions** tab, then extensions aren't enabled for your organization. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
 
 For build and release tasks to package and publish Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
+
+## FAQ
+
+### How is cancellation signal being handled by a task?
+The pipeline agent sends SIGINT and SIGTERM signals to the relevant child process. There are no explicit means in [task library](https://github.com/microsoft/azure-pipelines-task-lib) to process this at the moment. You can find more info [here](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/jobcancellation.md).
+
+### How can I remove the task from project collection?
+We do not support the automatic deletion of tasks, because this is unsafe and will certainly break existing pipelines that already use such tasks. However, you can mark tasks as deprecated. To do this, you need to bump the task version as described [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md) and follow steps described in [docs](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/deprecatedtasks.md).
 
 ## Related articles
 

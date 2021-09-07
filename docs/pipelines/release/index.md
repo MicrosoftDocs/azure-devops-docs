@@ -6,7 +6,7 @@ ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/16/2020
+ms.date: 08/11/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -167,44 +167,60 @@ Then, when you create a new release, you can edit the values for these variables
 
 ## How do I integrate and report release status?
 
-The current status for a release can be reported back in the source repository. In the **Options** tab of a release pipeline, open the **Integrations** page.
+With release pipelines integrations, you can report your deployment status to multiple sources such as your repository host, your work items (links or deployments), or to Jira issues.
 
-> [!div class="mx-imgBorder"]
-> ![Setting the options for reporting status](media/what-is-release-management/report-options.png)
+To configure your release pipeline integrations, select the **Options** tab, and then select **Integrations** from your release pipeline definition.
+
+:::image type="content" source="media/release-integrations.png" alt-text="Screenshot showing how to access release integrations in your release pipeline.":::
 
 **Report deployment status to the repository host**
 
-If your sources are in an Azure Repos Git repository in your project, this option displays a badge on the Azure Repos pages. The badge indicates where the specific commit got deployed and whether the deployment is passing or failing. This option improves the traceability from code commit to deployment. 
+If your source code is in Azure Repos, this option displays a status badge on the Azure Repos pages. The badge indicates where the specific commit got deployed and whether the deployment is passing or failing. By default, a deployment status is posted for all stages of your release pipeline. You can also select specific stages to display the deployment status.
 
-The deployment status is displayed in the following sections of Azure Repos:
+The deployment status is displayed in the following areas of Azure Repos:
 
-* **Files**: Indicates the status of the latest deployment for the selected branch.
-* **Commits**: Indicates the deployment status for each commit (requires the continuous integration (CD) trigger to be enabled for your release).
-* **Branches**: Indicates the status of the latest deployment for each branch.
+- **Files**: indicates the status of the latest deployment for the selected branch.
 
-If a commit gets deployed to multiple release pipelines, with multiple stages, each has an entry in the badge with status that's shown for each stage. By default, when you create a release pipeline, deployment status is posted for all stages. However, you can selectively choose the stages for which deployment status should be displayed in the status badge (for example, show only the production stage). Your team members can select the status badge to view the latest deployment status for each of the selected stages of the release pipelines.
+     :::image type="content" source="media/pipeline-status-files.png" alt-text="Screenshot showing the pipeline status for Files.":::
+
+- **Commits**: indicates the deployment status for each commit (requires the continuous integration trigger to be enabled).
+
+    :::image type="content" source="media/pipeline-status-commits.png" alt-text="Screenshot showing the pipeline status for Commits.":::
+
+- **Branches**: indicates the status of the latest deployment for each branch.
+
+    :::image type="content" source="media/pipeline-status-branches.png" alt-text="Screenshot showing the pipeline status for Branches.":::
 
 > [!NOTE]
-> If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines to automatically publish the deployment status to your repository. However, you can still use the _Enable the Deployment status badge_ option described as follows, to show deployment status within your version control system.
+> If your source code is not in Azure Repos, you can use the **Enable the Deployment status badge** feature to display your deployment status in external repositories.
 
 **Report deployment status to Work**
 
-Select this option if you want to create links to all work items that represent associated changes to the source, when a release is complete.
+Select this option if you want to link your release pipeline to your work items. The deployment status will be displayed in the **Links** tab of your work item. 
+
+:::image type="content" source="media/release-status-work.png" alt-text="Screenshot showing linked releases in the task tab of a work item.":::
+
+**Report deployment status to Boards**
+
+Select this option if you want to link your release pipeline to your work items and display the deployment status in the **Details** tab of your work item.
+
+:::image type="content" source="media/release-status-boards.png" alt-text="Screenshot showing linked releases in the details tab of a work item.":::
 
 **Enable the deployment status badge**
 
-Select this option if you want to display the latest outcome of a stage deployment on an external website. 
+Select this option if you want to display the deployment status on an external website. You can copy the stage badge and add it to your website to have a visualization of your deployment status:
 
-1.	Select "Enable the deployment status badge".
+1.	Select **Enable the deployment status badge**.
 
-1.	Select the stages for which you want to display the outcome. By default, all the stages are selected.
+1.	Select the stages for which you want to display the status. By default, all the stages are selected.
 
-1.	Save your pipeline.
+1.	Copy the badge URL and add it to your website or GitHub Readme file to display the deployment status.
 
-1.	Copy the badge URL for the required stage to the clipboard.
+    :::image type="content" source="media/release-badge.svg" alt-text="Screenshot showing the release status badge.":::
 
-1.	Use this badge URL as a source of an image in an external website.  
-    For example: `<img src="{URL you copied from the link}"/>`
+**Report deployment status to Jira**
+
+Select this option if you want to link your release pipeline to Jira issues. You must install [Azure Pipelines for Jira](https://marketplace.atlassian.com/apps/1220515/azure-pipelines-for-jira?hosting=cloud&tab=overview) and connect your Azure DevOps organization with your Jira account. Check out the [Jira integration](https://github.com/microsoft/azure-pipelines-jira/blob/master/tutorial.md) tutorial for more details.
 
 <a name="editrelease"></a>
 
@@ -298,5 +314,7 @@ Complete the following steps:
 
 ## Related articles
 
-* [Deploy pull request builds using Azure Pipelines](./deploy-pull-request-builds.md)
-* [Stage templates in Azure Pipelines](./env-templates.md)
+- [Link work items to deployments](../../boards/work-items/work-item-deployments-control.md)
+- [Deploy pull request Artifacts](./deploy-pull-request-builds.md)
+- [Stage templates](./env-templates.md)
+- [Deploy from multiple branches](./deploy-multiple-branches.md)

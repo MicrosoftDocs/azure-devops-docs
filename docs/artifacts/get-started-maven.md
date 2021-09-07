@@ -57,11 +57,6 @@ _Already have a feed?_ [Skip to the next step](#setup-your-POM-and-settings-.xml
 
 <a name="automate-with-continuous-integration"></a>
 
-## Automate the process with continuous integration
-
-You can use continuous integration systems such as Team Build to automate the installation and publishing of your Maven artifacts. 
-To get started with continuous integration, see the [Maven in Team Build guidance](../pipelines/artifacts/maven.md).
-
 ## What's next?
 
 Check out the [Azure Artifacts landing page](index.yml) to learn about other topics.

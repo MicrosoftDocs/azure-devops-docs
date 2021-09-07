@@ -240,15 +240,6 @@ To keep work items in sync from your local data store and Azure Boards, publish 
 
 To work in Excel, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md). 
 
-::: moniker range="<= tfs-2018" 
-
-### Azure DevOps and Project 
-
-![Azure DevOps and Project, conceptual image Exporting Work Items to Project](media/officeprojseq_1.png "OfficeProjSeq_1")
-
-To work in Project, see [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md).
-
-::: moniker-end  
 
 <a id="excel-project">  </a>
 <a id="excel">  </a>
@@ -269,12 +260,6 @@ To add or modify work items by using Excel, you connect your worksheet to a proj
 
 You can start work from the web portal, Excel, or Visual Studio/Team Explorer. Your worksheet is associated with either a list of work items or a work item query.  
 
-::: moniker range="<= tfs-2018" 
-
-> [!NOTE]  
-> To connect Azure DevOps project to Office Project, see [Create your backlog and tasks using Microsoft Project](create-your-backlog-tasks-using-project.md). And to connect PowerPoint Storyboarding to Azure Boards to support linking, see [Storyboard your ideas using Microsoft PowerPoint](storyboard-your-ideas-using-powerpoint.md).
-
-::: moniker-end  
 
 #### [Open query in Excel (web portal)](#tab/open-excel) 
 
@@ -490,6 +475,5 @@ For additional extensions that integrate with Microsoft Project, see [Azure Boar
 - [FAQs: Work in Excel connected to Azure Boards](faqs.yml) 
 - [Resolve publishing errors](faqs.yml#how-do-i-resolve-publishing-issues) 
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  
-- [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)  
 - [Create your backlog](../../backlogs/create-your-backlog.md)
 - [Requirements and compatibility](/azure/devops/server/requirements)

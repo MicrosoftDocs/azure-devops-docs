@@ -3,7 +3,7 @@ title: Size and count limits in Azure Artifacts
 description: Package count and size limits in Azure Artifacts 
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 10/31/2018
+ms.date: 08/20/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -13,7 +13,7 @@ Azure Artifacts is a highly-scalable artifact service. In the course of everyday
 
 ## Count limits
 
-* **5000 versions** per package ID; use [retention policies](../how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies) to automatically clean up old versions
+* **5000 versions** per package ID; use [retention policies](../how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies) to automatically clean up old versions
 * **Unlimited package IDs** per feed
  
 

@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Wikis, Public Projects, & work across projects
-summary: Share information, create public projects, and work across projects.  
+title: Cross-service, Cross-projects, Wikis, & Public Projects  
+summary: Work across Azure DevOps Services and projects, share information, and create public projects. 
 
 metadata:
-  title: Wikis, Public Projects, work across projects documentation
-  description: Share information, create public projects, and work across projects.
+  title: Cross-service, Cross-projects, Wikis, & Public Projects documentation
+  description: Work across Azure DevOps Services and projects, share information, and create public projects. 
   ms.prod: devops 
   ms.technology: devops-collab
   ms.topic: landing-page 
@@ -19,20 +19,50 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Create and manage a public project
+  - title: Work across services
     linkLists:
       - linkListType: overview
         links:
-          - text: What is a public project?
-            url: ../organizations/public/about-public-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
-      - linkListType: quickstart
+          - text: Integration overview
+            url: ../cross-service/cross-service-overview.md
+          - text: Azure DevOps and GitHub integration overview
+            url: ../cross-service/github-integration.md
+          - text: Deploy to Azure
+            url: ../pipelines/overview-azure.md
+  - title: Work across projects
+    linkLists:
+      - linkListType: get-started
         links:
-          - text: Create a public project
-            url: ../organizations/public/create-public-project.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
-          - text: Invite users to your public project
-            url: ../organizations/public/invite-users-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
-          - text: Make a private project public
-            url: ../organizations/public/make-project-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
+          - text: View work assigned to you
+            url: ./navigation/work-across-projects.md
+      - linkListType: tutorial
+        links:
+          - text: Set personal or team favorites
+            url: ./navigation/set-favorites.md
+      - linkListType: overview
+        links:
+          - text: Work across projects FAQs 
+            url: ./work-across-projects-faqs.yml
+  - title: Track work, code, builds, and releases
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: End-to-end traceability
+            url: ../cross-service/end-to-end-traceability.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+      - linkListType: tutorial
+        links:
+          - text: Drive Git development
+            url: ../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+          - text: View deployment stages on work item form
+            url: ../boards/work-items/work-item-deployments-control.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+          - text: Use #ID to link to work items
+            url: ../notifications/add-links-to-work-items.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+      - linkListType: how-to-guide
+        links:
+          - text: Configure Git repositories to integrate with work tracking 
+            url: ../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+          - text: Configure pipelines to support work tracking 
+            url: ../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
   - title: Add and manage wikis
     linkLists:
       - linkListType: overview
@@ -59,20 +89,6 @@ landingContent:
             url: ./wiki/markdown-guidance.md
           - text: Syntax guidance for Markdown usage in Wiki
             url: ./wiki/wiki-markdown-guidance.md
-  - title: Work across projects
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: View work assigned to you
-            url: ./navigation/work-across-projects.md
-      - linkListType: tutorial
-        links:
-          - text: Set personal or team favorites
-            url: ./navigation/set-favorites.md
-      - linkListType: overview
-        links:
-          - text: Work across projects FAQs 
-            url: ./work-across-projects-faqs.yml
   - title: Search
     linkLists:
       - linkListType: overview
@@ -91,5 +107,17 @@ landingContent:
             url: ./search/functional-package-search.md
           - text: Search work items
             url: ./search/functional-work-item-search.md
-          - text: Search wiki
-            url: ./wiki/search-wiki.md
+  - title: Create and manage a public project
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is a public project?
+            url: ../organizations/public/about-public-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
+      - linkListType: quickstart
+        links:
+          - text: Create a public project
+            url: ../organizations/public/create-public-project.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
+          - text: Invite users to your public project
+            url: ../organizations/public/invite-users-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
+          - text: Make a private project public
+            url: ../organizations/public/make-project-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  

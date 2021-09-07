@@ -82,7 +82,7 @@ From **Dashboards**, you gain access to user-configurable dashboards.
 
 ::: moniker range="<= tfs-2018"
 
-<img src="../report/dashboards/media/dashboard-view-with-widgets.png" alt="Dashboard, Overview" style="border: 2px solid #C3C3C3;" />
+<img src="../report/dashboards/media/dashboard-view-with-widgets.png" alt="Dashboard, Overview" />
 
 ::: moniker-end
 
@@ -121,7 +121,7 @@ From **Repos**, you gain access to your source control Git-based or Team Foundat
 
 From **Code**, you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
 
-<img src="media/services/code-git-hub.png" alt="Code, Git, files page" style="border: 2px solid #C3C3C3;" />
+<img src="media/services/code-git-hub.png" alt="Code, Git, files page" />
 
 ::: moniker-end
 
@@ -161,7 +161,7 @@ From **Boards**, you gain access to Agile tools to support planning and tracking
 
 From **Work**, you gain access to Agile tools to support planning and tracking work.
 
-<img src="media/services/work-hub-backlogs.png" alt="Work, Backlogs page" style="border: 2px solid #C3C3C3;" />
+<img src="media/services/work-hub-backlogs.png" alt="Work, Backlogs page" />
 
 ::: moniker-end
 
@@ -198,7 +198,7 @@ The rapid and reliable release of software comes from automating as many process
 
 **Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
-<img src="media/services/build-release-hub.png" alt="Build-Release, Build pipelines page" style="border: 2px solid #C3C3C3;" />
+<img src="media/services/build-release-hub.png" alt="Build-Release, Build pipelines page" />
 
 ::: moniker-end
 
@@ -225,7 +225,7 @@ Test features support manual and exploratory testing, and continuous testing.
 
 **Test** supports creating and managing manual tests.
 
-<img src="media/services/test-hub.png" alt="Test" style="border: 2px solid #C3C3C3;" />
+<img src="media/services/test-hub.png" alt="Test" />
 
 ::: moniker-end
 
@@ -343,7 +343,7 @@ There are features and tasks associated with administering a collaborative softw
 
 ::: moniker range="<= tfs-2018"
 
-<img src="media/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" />
+<img src="media/tour-admin-project-level.png" alt="Product backlog" />
 
 ::: moniker-end
 

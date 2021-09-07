@@ -25,5 +25,6 @@ ms.technology: devops-cicd-tasks
     #artifactName: # Required when downloadType == Single
     #itemPattern: '**' # Optional
     #downloadPath: '$(System.ArtifactsDirectory)' 
+    #cleanDestinationFolder: false # Optional
     #parallelizationLimit: '8' # Optional
 ```

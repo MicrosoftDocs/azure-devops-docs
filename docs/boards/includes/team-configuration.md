@@ -138,7 +138,7 @@ Not applicable
 <ul>
 <li><a href="/azure/devops/organizations/settings/set-area-paths" >Configure area paths</a></li>
 <li><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints" >Select default, current, and active iteration paths (sprints)</a></li>
-<li><a href="/azure/devops/organizations/settings/select-backlog-navigation-levels" ">Select backlog levels</a></li>
+<li><a href="/azure/devops/organizations/settings/select-backlog-navigation-levels">Select backlog levels</a></li>
 <li><a href="/azure/devops/organizations/settings/show-bugs-on-backlog" >Show bugs on backlogs &amp; boards</a></li>
 </ul>
 </td>

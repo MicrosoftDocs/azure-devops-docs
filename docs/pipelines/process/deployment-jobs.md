@@ -3,7 +3,7 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 12/15/2020
+ms.date: 07/28/2021
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -121,7 +121,7 @@ If you are using self-hosted agents, you can use the workspace clean options to 
   jobs:
   - deployment: deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
       workspace:
         clean: all
     environment: staging
@@ -175,9 +175,6 @@ With `maxParallel: <# or % of VMs>`, you can control the number/percentage of vi
 ### Canary deployment strategy
 
 Canary deployment strategy is an advanced deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. 
-
-You can only use the canary deployment strategy for Kubernetes resources.
-
 
 ```YAML
 strategy: 
@@ -233,7 +230,7 @@ jobs:
 - deployment: DeployWeb
   displayName: deploy Web App
   pool:
-    vmImage: 'Ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   # Creates an environment if it doesn't exist.
   environment: 'smarthotel-dev'
   strategy:
@@ -257,7 +254,7 @@ jobs:
 - deployment: DeployWeb
   displayName: deploy Web App
   pool:
-    vmImage: 'Ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   # Records deployment against bookings resource - Kubernetes namespace.
   environment: 'smarthotel-dev.bookings'
   strategy: 
@@ -387,7 +384,7 @@ While executing deployment strategies, you can access output variables across jo
 # Set an output variable in a lifecycle hook of a deployment job executing canary strategy.
 - deployment: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   environment: staging
   strategy:                  
     canary:      
@@ -403,7 +400,7 @@ While executing deployment strategies, you can access output variables across jo
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   variables:
     myVarFromDeploymentJob: $[ dependencies.A.outputs['deploy_10.setvarStep.myOutputVar'] ]
   steps:
@@ -417,7 +414,7 @@ For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
 # Set an output variable in a lifecycle hook of a deployment job executing runOnce strategy.
 - deployment: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   environment: staging
   strategy:                  
     runOnce:
@@ -432,7 +429,7 @@ For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   variables:
     myVarFromDeploymentJob: $[ dependencies.A.outputs['A.setvarStep.myOutputVar'] ]
   steps:
@@ -448,7 +445,7 @@ stages:
   jobs:
   - deployment: A1
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
     environment: env1
     strategy:                  
       runOnce:
@@ -459,7 +456,7 @@ stages:
           - bash: echo $(System.JobName)
   - deployment: A2
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
     environment: 
       name: env2
       resourceType: virtualmachine
@@ -473,7 +470,7 @@ stages:
   - job: B1
     dependsOn: A1
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
     variables:
       myVarFromDeploymentJob: $[ dependencies.A1.outputs['A1.setvarStep.myOutputVar'] ]
       
@@ -484,7 +481,7 @@ stages:
   - job: B2
     dependsOn: A2
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
     variables:
       myVarFromDeploymentJob: $[ dependencies.A2.outputs['A2.setvarStepTwo.myOutputVar'] ]
       myOutputVarTwo: $[ dependencies.A2.outputs['Deploy_vmsfortesting.setvarStepTwo.myOutputVarTwo'] ]
@@ -519,7 +516,7 @@ stages:
   jobs:
   - deployment: B1
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
     environment: envB
     strategy:                  
       runOnce:
@@ -536,3 +533,6 @@ Learn more about how to [set a multi-job output variable](variables.md#set-a-mul
  
 This can happen when there is a name conflict between two jobs. Verify that any deployment jobs in the same stage have a unique name and that job and stage names do not contain keywords. If renaming does not fix the problem, review [troubleshooting pipeline runs](../troubleshooting/troubleshooting.md).
 
+### Are decorators supported in deployment groups?
+
+No. You can't use decorators in deployment groups.

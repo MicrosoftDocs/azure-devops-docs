@@ -22,8 +22,6 @@
     href: wiki-view-history.md
   - name: Filter or print wiki content 
     href: filter-print-wiki.md
-  - name: Search wiki content
-    href: search-wiki.md
   - name: Follow wiki pages, get notifications
     href: follow-notifications-wiki-pages.md
   - name: Create work item from wiki content

@@ -3,7 +3,7 @@ title: Best practices when working with Azure Artifacts
 description: Best practices to publish and consume packages from Artifacts feeds
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 03/09/2021
+ms.date: 08/20/2021
 monikerRange: '>= tfs-2017'
 "recommendations": "true"
 ---
@@ -26,7 +26,7 @@ Follow these guidelines and best practices when creating or publishing your pack
 
 - **Enable retention policies to automatically clean up old package versions**:
 
-    Deleting old package versions improves client performance and releases storage space. You can choose how many versions of a package to retain when setting up your [retention policy](../how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies).
+    Deleting old package versions improves client performance and releases storage space. You can choose how many versions of a package to retain when setting up your [retention policy](../how-to/delete-and-recover-packages.md#delete-packages-automatically-with-retention-policies).
 
 - **Promote your package to the correct view**:
 
