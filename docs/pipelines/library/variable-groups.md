@@ -6,13 +6,13 @@ ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair
-ms.date: 07/26/2021
+ms.date: 09/03/2021
 monikerRange: '>= tfs-2017'
 ---
 
 # Add & use variable groups
 
-Variable groups store values and secrets that you might want to to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml&view=azure-devops&preserve-view=true#use-a-variable-group) or make available across multiple pipelines.
+Variable groups store values and secrets that you might want to to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml&view=azure-devops&preserve-view=true#use-a-variable-group) or make available across multiple pipelines. You can share use variables groups in multiple pipelines in the same project.
 
 Variables groups are [protected resources](../security/resources.md). You can add approvals and checks to these variables and set pipeline permissions.
 

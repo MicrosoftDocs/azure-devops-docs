@@ -15,9 +15,6 @@
   - name: Search packages
     href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
     displayName: search, packages
-  - name: Where is Package Management?
-    href: where-is-package-management.md
-    displayName: tfs, package management 
 - name: Packages
   items:
   - name: About

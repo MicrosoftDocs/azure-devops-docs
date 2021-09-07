@@ -426,6 +426,8 @@
       - name: Deploy a virtual machine scale set
         href: apps/cd/azure/deploy-virtual-scale-set-java.md
         displayName: vmss, custom image
+      - name: Deploy apps to a virtual machine scale set (Classic)
+        href: apps/cd/azure/deploy-azure-scaleset.md
     - name: Azure Government Cloud
       href: library/government-cloud.md
     - name: Azure Stack
