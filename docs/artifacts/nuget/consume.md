@@ -18,7 +18,7 @@ Using Azure Artifacts and Visual Studio, you can set up your development machine
 
 To connect Visual Studio to our feed, we must first get the *Source URL*:
 
-[!INCLUDE [Get source URL](nuget-consume-endpoint.md)]
+[!INCLUDE [](../includes/nuget/nuget-consume-endpoint.md)]
 
 ## Set up Visual Studio
 
@@ -34,13 +34,13 @@ To connect Visual Studio to our feed, we must first get the *Source URL*:
 
 1. Select **OK** when you are done.
 
-    :::image type="content" source="../../media/vs-addsource.png" alt-text="Screenshot showing how to add a new package source in Visual Studio - Windows":::
+    :::image type="content" source="../media/vs-addsource.png" alt-text="Screenshot showing how to add a new package source in Visual Studio - Windows":::
 
 <a name="mac-os"></a>
 
 #### [macOS](#tab/macOS/)
 
-1. Create a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) PAT.
+1. Create a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) PAT.
 
 1. In visual studio, select **Preferences** from the menu bar.
 
@@ -54,7 +54,7 @@ To connect Visual Studio to our feed, we must first get the *Source URL*:
 
 1. Select **OK** when you are done.
 
-    :::image type="content" source="../../media/vs-mac-settings.png" alt-text="Set up visual studio: macOS":::
+    :::image type="content" source="../media/vs-mac-settings.png" alt-text="Set up visual studio: macOS":::
 
 ---
 
@@ -68,12 +68,12 @@ Now that we set up Visual Studio and added a new package source pointing to our 
 
 1. Select **Browse**, and then select your feed from the **Package source** dropdown menu.
     
-    :::image type="content" source="../../media/select-pkg-src.png" alt-text="Select feed source":::
+    :::image type="content" source="../media/select-pkg-src.png" alt-text="Select feed source":::
 
 1. Use the search bar to look for packages from your feed.
 
 > [!NOTE]
-> If you enabled [upstream sources](../../nuget/upstream-sources.md), any packages that haven't been saved to your feed (by using them at least once) won't appear in the search result.
+> If you enabled [upstream sources](../nuget/upstream-sources.md), any packages that haven't been saved to your feed (by using them at least once) won't appear in the search result.
 
 ## Install packages from NuGet.org
 
