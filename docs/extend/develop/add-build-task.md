@@ -753,9 +753,6 @@ For build and release tasks to package and publish Azure DevOps Extensions to th
 
 ## FAQ
 
-### How is cancellation signal being handled by a task?
-The pipeline agent sends SIGINT and SIGTERM signals to the relevant child process. There are no explicit means in [task library](https://github.com/microsoft/azure-pipelines-task-lib) to process this at the moment. You can find more info [here](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/jobcancellation.md).
-
 ## How can I restrict vso commands usage for task?
 You can restrict vso commands usage and variables which can be set by task.
 This could be useful to prevent unrestricted access to variables/vso commands for custom scripts which task executes. It is recommended to set it up for new tasks.
@@ -789,6 +786,12 @@ If "restricted" value is specified for "mode" - only the following commands are 
 "commands" and "settableVariables" are orthogonal - if either the settableVariables or commands key are omitted - relevant restriction is not applied.
 
 Restriction feature is available from [2.182.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.182.1) agent version.
+
+### How can I remove the task from project collection?
+We do not support the automatic deletion of tasks, because this is unsafe and will certainly break existing pipelines that already use such tasks. However, you can mark tasks as deprecated. To do this, you need to bump the task version as described [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md) and follow steps described in [docs](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/deprecatedtasks.md).
+
+### How is cancellation signal being handled by a task?
+The pipeline agent sends SIGINT and SIGTERM signals to the relevant child process. There are no explicit means in [task library](https://github.com/microsoft/azure-pipelines-task-lib) to process this at the moment. You can find more info [here](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/jobcancellation.md).
 
 ## Related articles
 
