@@ -1,12 +1,12 @@
 ---
-title: Deploy a Docker container app to an AKS cluster
+title: Deploy a Docker container app to an Azure Kubernetes Service cluster
 description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure Kubernetes Service (AKS) from Azure Pipelines
 ms.assetid: 
 ms.topic: quickstart
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 08/30/2019
+ms.date: 09/07/2021
 monikerRange: '> tfs-2018'
 ---
 
@@ -147,10 +147,10 @@ It also packaged and published a Helm chart as an artifact. In the release pipel
        `helm upgrade stable/mysql` 
    
      * **Chart Path**: This can be a path to a packaged chart or a path to an unpacked chart directory.
-       In this example you are publishing the chart using a CI build, so select the file package using file picker
+       In this example, you are publishing the chart using a CI build, so select the file package using file picker
        or enter `$(System.DefaultWorkingDirectory)/**/*.tgz`
    
-     * **Release Name**: Enter a name for your release; for example `azuredevops`
+     * **Release Name**: Enter a name for your release; for example, `azuredevops`
    
      * **Recreate Pods**: Tick this checkbox if there is a configuration change during the release and you want to replace a running pod with the new configuration.
 
@@ -181,7 +181,7 @@ It also packaged and published a Helm chart as an artifact. In the release pipel
 ### Arguments used in the Helm upgrade task
 
 In the build pipeline, the container image is tagged with `$(Build.BuildId)` and this is pushed to an Azure Container Registry. 
-In a Helm chart you can parameterize the container image details such as the name and tag
+In a Helm chart, you can parameterize the container image details such as the name and tag
 because the same chart can be used to deploy to different environments.
 These values can also be specified in the **values.yaml** file or be overridden by a user-supplied values file,
 which can in turn be overridden by `--set` parameters during the Helm install or upgrade.
@@ -200,7 +200,7 @@ For example:
     tag: latest
 ```
 
-Another alternative is to set the **Set Values** option of the task to specify the argument values as comma separated key-value pairs.
+Another alternative is to set the **Set Values** option of the task to specify the argument values as comma-separated key-value pairs.
 
 ## Create a release to deploy your app
 

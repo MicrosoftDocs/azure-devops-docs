@@ -139,7 +139,7 @@ Now that the scaffolding is complete, we can create our custom task.
 
 Next, we create a `task.json` file in the buildandreleasetask folder. The `task.json` file describes the build or release task and is what the build/release system uses to render configuration options to the user and to know which scripts to execute at build/release time.
 
-Copy the following code and replace the `{{placeholders}}` with your task's information. The most important placeholder is the `taskguid`, and it must be unique. You can generate the `taskguid` by using [Microsoft's online GuidGen tool](https://www.guidgen.com/).
+Copy the following code and replace the `{{placeholders}}` with your task's information. The most important placeholder is the `taskguid`, and it must be unique.
 
 ```json
 {
@@ -753,6 +753,9 @@ For build and release tasks to package and publish Azure DevOps Extensions to th
 
 ### How is cancellation signal being handled by a task?
 The pipeline agent sends SIGINT and SIGTERM signals to the relevant child process. There are no explicit means in [task library](https://github.com/microsoft/azure-pipelines-task-lib) to process this at the moment. You can find more info [here](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/jobcancellation.md).
+
+### How can I remove the task from project collection?
+We do not support the automatic deletion of tasks, because this is unsafe and will certainly break existing pipelines that already use such tasks. However, you can mark tasks as deprecated. To do this, you need to bump the task version as described [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md) and follow steps described in [docs](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/deprecatedtasks.md).
 
 ## Related articles
 

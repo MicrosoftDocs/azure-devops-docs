@@ -479,6 +479,16 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 Now your agents will run the AKS cluster.
 
+### Set custom MTU parameter
+
+Allow specifying MTU value for networks used by container jobs (useful for docker-in-docker scenarios in k8s cluster).
+
+You need to set the environment variable AGENT_MTU_VALUE to set the MTU value, after that restart the self-hosted agent. You can find more about agent restart [here](./v2-windows.md?#how-do-i-restart-the-agent) and about setting different environment variables for each individual agent [here](./v2-windows.md?#how-do-i-set-different-environment-variables-for-each-individual-agent).
+
+This allows you to set up a network parameter for the job container, the use of this command is similar to the use of the next command while container network configuration:
+
+```-o com.docker.network.driver.mtu=AGENT_MTU_VALUE```
+
 ## Mounting volumes using Docker within a Docker container
 
 If a Docker container runs inside another Docker container, they both use host's daemon, so all mount paths reference the host, not the container.
