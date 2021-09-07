@@ -18224,6 +18224,12 @@
       "source_path": "docs/pipelines/get-started/index.md",
       "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/azure/build-azure-vm-template.md",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/azure/deploy-arm-template",
+      "redirect_document_id": false
+    } 
   ]
 }
+
