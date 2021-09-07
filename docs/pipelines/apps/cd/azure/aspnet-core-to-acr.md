@@ -1,11 +1,11 @@
 ﻿---
-title: Deploy ASP.NET Core app to Linux, Docker, & ACR
+title: Deploy ASP.NET Core app to Linux, Docker, & ACR (Classic)
 description: Set up a CI build for your ASP.NET Core app to Linux App Service using Azure Pipelines
 ms.author: mlearned
 author: mlearned
 ms.assetid: EF5F37B7-774B-410C-8A82-83F722EF9692
 ms.custom: "mvc, seodec18"
-ms.date: 12/07/2018
+ms.date: 09/07/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -42,7 +42,7 @@ Use the following steps to clone the sample solution and open it in Visual Studi
 3.  After authenticating, choose a directory and Select **clone** to finish cloning the code to your local environment.
 
 ## Install Continuous Delivery (CD) Tools for Visual Studio 2017    
-Continuous Delivery (CD) Tools for Visual Studio 2017 helps automate the creation of Azure Pipelines to Azure release pipelines.  Optionally, you can extend the generated pipeline to further enhance your CI/CD workflows.
+Continuous Delivery (CD) Tools for Visual Studio helps automate the creation of Azure Pipelines to Azure release pipelines.  Optionally, you can extend the generated pipeline to further enhance your CI/CD workflows.
 
 1.  In Visual Studio 2017 Select **Tools then Select Extensions and Updates**.
 2.  In the dialogue, Select **Online** and search for **Continuous Delivery Tools for Visual Studio**.
@@ -72,6 +72,6 @@ Visual Studio 2017 can automate the creation of a CI/CD pipeline.  The CD toolin
 You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD pipeline that automatically deploys your latest work to your Azure App Service.
 
 ## Next Steps    
-You've just put your own CI/CD processes in place. You can modify these build and release pipelines to meet the needs of your team. To learn more see this tutorial:
+You've just put your own CI/CD processes in place. You can modify these build and release pipelines to meet the needs of your team. To learn more, see this tutorial:
 
 * [Customize CD pipeline](../../../release/define-multistage-release-process.md)
