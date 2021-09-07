@@ -1,24 +1,24 @@
 ---
 title: Add, update, & follow stories, issues, bugs, & other work items
 titleSuffix: Azure Boards 
-description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or TFS  
+description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or Azure DevOps.  
 ms.custom: seodec18, devx-track-azurecli
 ms.technology: devops-agile
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.topic: quickstart
-ms.date: 07/09/2020
+ms.date: 09/07/2021
 ---
 
 # Add and update a work item
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-You add work items to plan and manage your project. You use different types of work items to track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.   
+You add work items to plan and manage your project. Different types of work items track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. Use work items to describe the work to be done, assign work, track status, and coordinate efforts within your team.   
 
-For additional clients that you can use, see [Best tools for adding, updating, and linking work items](../work-items/best-tool-add-update-link-work-items.md).
+For other clients that you can use, see [Best tools for adding, updating, and linking work items](../work-items/best-tool-add-update-link-work-items.md).
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
@@ -142,14 +142,14 @@ As work progresses, team members can update the state and reassign it as needed.
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
-Note that the location of the State field may differ depending on the work item type you are updating. 
+The location of the **State** field may differ depending on the work item type you are updating. 
 > [!div class="mx-imgBorder"]  
 > ![Update the State of an Issue](media/add-work/update-state-old-form.png)   
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
-The following image shows the work flow states for a user story. If you want to discard a work item, change the state to Removed, or you can delete it. For details, see [Move, change, or remove a work item](remove-delete-work-items.md).  
+The following image shows the workflow states for a user story. If you want to discard a work item, change the state to Removed, or you can delete it. For details, see [Move, change, or remove a work item](remove-delete-work-items.md).  
 
 ::: moniker-end
 
@@ -262,7 +262,7 @@ ID    Type    Title                Assigned To          State
 
 #### Add comments to a discussion
 
-You can use the **discussion** parameter to add comments to the **Discussion** section of a work item. The following command adds the specified comment to the bug with the ID 864 and opens the bug in your default web browser, where you can view the comment.
+Use the **discussion** parameter to add comments to the **Discussion** control of a work item. The following command adds the specified comment to the bug with the ID 864 and opens the bug in your default web browser, where you can view the comment.
 
 ```azurecli 
 az boards work-item update --id 864  --discussion  "This work item is about 50% complete" --open
@@ -312,7 +312,7 @@ When you want to track the progress of a single work item, choose the :::image t
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Follow icon control](../work-items/media/follow-work/follow-work-item.png) 
 
-You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
+You'll only receive notifications when other project members modify the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
 
@@ -329,7 +329,7 @@ To stop following changes, choose the  :::image type="icon" source="../media/ico
 
 ## Try this next  
 
-To quickly add backlog items, such as user stories, requirements or bugs, see these articles:  
+To quickly add backlog items, such as user stories, requirements, or bugs, see these articles:  
 > [!div class="nextstepaction"]
 > [Create your backlog](create-your-backlog.md)
 > [Kanban quickstart](../boards/kanban-quickstart.md) 
