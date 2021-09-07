@@ -242,6 +242,7 @@ You can manage plans using the [REST API, Plans](/rest/api/azure/devops/work/pla
 - [Review team plans](review-team-plans.md)
 - [Edit Delivery Plan permissions](edit-delivery-plan-permissions.md)
 - [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)  
+- [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md)  
 - [Add teams](../../organizations/settings/add-teams.md)  
 - [Portfolio management](portfolio-management.md)  
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  

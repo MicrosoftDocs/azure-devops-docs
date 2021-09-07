@@ -16,7 +16,7 @@ ms.date: 07/09/2020
 
 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to query features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
+> Users with **Stakeholder** access for a public project have full access to query features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker-end
 

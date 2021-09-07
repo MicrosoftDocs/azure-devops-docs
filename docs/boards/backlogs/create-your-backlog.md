@@ -134,7 +134,7 @@ Your backlog shows work that you plan to do or have started to work on. As soon 
 > [!TIP]  
 > If you already defined a long list of items, you don't have to reenter them one at a time. Instead, use [Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
 
-Users with **Stakeholder** access can only add work items to the end of the backlog. For details, see [About access levels](../../organizations/security/access-levels.md).
+Users with **Stakeholder** access can only add work items to the end of the backlog. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -190,7 +190,7 @@ To reorder your backlog, drag the work items. Or, if you prefer to use the keybo
 > ![Reorder work items](media/create-backlog/cyb-order-backlog.png)
 
 > [!NOTE]  
-> To reorder a backlog, you must have Basic or higher level access. For details, see [About access levels](../../organizations/security/access-levels.md). If you have Stakeholder access, you can't reorder backlog items. 
+> To reorder a backlog, you must have Basic or higher level access. If you have Stakeholder access, you can't reorder backlog items. For more information, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 Backlogs that participate in portfolio management or that contain nested same-type child items might not allow you to reorder the items. For more information, see these articles:  
 - [Backlogs, portfolios, and Agile project management, Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)

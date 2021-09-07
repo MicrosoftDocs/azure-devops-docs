@@ -57,7 +57,7 @@ You can plan and track work from the web portal **Work** hub, and using Eclipse,
 
 Access to the following tasks are controlled by each user's access level or by permission assignments. Members of the Readers, Contributors, or Project Administrators group are assumed to have Basic access or greater.  
 
-### General work item feature access
+### General work item permissions
 
 You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md). 
 
@@ -70,7 +70,7 @@ You can use work items to track anything you need to track. To learn more, see [
 
 [!INCLUDE [temp](includes/boards-work-items.md)]
 
-### Boards feature access
+### Boards  
 
 You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanban methods. Boards present work items as cards and support quick status updates through drag-and-drop.
 
@@ -83,7 +83,7 @@ You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanb
 [!INCLUDE [temp](includes/boards-backlogs.md)]
 
 
-### Sprints feature access
+### Sprints  
 
 You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/sprints/assign-work-sprint.md) set of tools provide filtered views of work items that a team has assigned to specific iteration paths or sprints. 
 
@@ -98,7 +98,7 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 ::: moniker range=">= tfs-2017"
 
-### Delivery plans feature access
+### Delivery plans  
 
 [Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team.  
 

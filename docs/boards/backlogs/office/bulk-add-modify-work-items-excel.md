@@ -57,7 +57,7 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 	> The only way to get the Azure DevOps Office Integration plug-in is by installing one of the latest editions of Visual Studio or the Azure DevOps Office Integration installer. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel.  
 - To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../get-started/sign-up-invite-teammates.md).  
 - To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).  
-- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../../organizations/security/access-levels.md). 
+- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md). 
 - To use the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by misspelling user names and when you must assign user names from a large group of user accounts.  
 
 ::: moniker-end  
@@ -70,7 +70,7 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 	> The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration 2017 plug-in supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
 - To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md). 
 - To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).  
-- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../../organizations/security/access-levels.md). 
+- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md). 
 - To use the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by misspelling user names and when you must assign user names from a large group of user accounts.  
 
 ::: moniker-end  
@@ -82,7 +82,7 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 - Installed Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
 - To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md). 
 - To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).  
-- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../../organizations/security/access-levels.md).   
+- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [Stakeholder access quick reference](../../../organizations/security/stakeholder-access.md).   
 
 ::: moniker-end  
 
