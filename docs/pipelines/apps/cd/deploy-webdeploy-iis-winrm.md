@@ -1,12 +1,12 @@
 ---
 title: Deploy to IIS using WinRM
-description: Deploy a ASP.NET or Node.js Web Deploy package to IIS servers from Azure Pipelines or TFS using Windows Remote Management (WinRM)
+description: Deploy a ASP.NET or Node.js Web Deploy package to IIS servers from Azure Pipelines using Windows Remote Management (WinRM)
 ms.assetid: 0D65C5BE-DF92-42F6-B6A4-217F0509D425
 ms.topic: conceptual
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 09/07/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2015'
 
 Continuous deployment means starting an automated deployment pipeline whenever a new successful build is available.
 Here we'll show you how to set up continuous deployment of your ASP.NET or Node.js app to one or more IIS servers using Azure Pipelines.
-A task running on the [Build and Release agent](../../agents/agents.md) opens a WinRM connection to each IIS server to run Powershell scripts remotely in order to deploy the Web Deploy package.
+A task running on the [Build and Release agent](../../agents/agents.md) opens a WinRM connection to each IIS server to run PowerShell scripts remotely in order to deploy the Web Deploy package.
 
 ## Get set up
 
@@ -42,7 +42,7 @@ Windows Remote Management (WinRM) requires target servers to be:
 
 * Domain-joined or workgroup-joined
 * Able to communicate using the HTTP or HTTPS protocol
-* Addressed by using a fully-qualified domain name (FQDN) or an IP address
+* Addressed by using a fully qualified domain name (FQDN) or an IP address
 
 This table shows the supported scenarios for WinRM.
 
@@ -135,11 +135,11 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
 
 1. Do one of the following:
 
-   * If you've just completed a CI build (see above) then, in the build's
+   * If you've just completed a CI build (see above), then, in the build's
      **Summary** tab under **Deployments**, choose **Create release** followed by **Yes**.
      This starts a new release pipeline that's automatically linked to the build pipeline.
 
-   * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
+   * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop down
      in the list of release pipelines, and choose **Create release pipeline**.
 
 1. Choose **Start with an empty pipeline**.
@@ -185,7 +185,7 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    
    - **Website Name**: `Default Web Site` (or the name of the website if you configured a different one earlier).<p />
 
-1. Edit the name of the release pipeline, click **Save**, and click **OK**. Note that the default stage is named Stage1, which you can edit by clicking directly on the name.
+1. Edit the name of the release pipeline, click **Save**, and click **OK**. The default stage is named Stage1, which you can edit by clicking directly on the name.
 
 You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build to IIS servers:
 
