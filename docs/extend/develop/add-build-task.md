@@ -189,7 +189,7 @@ Following are descriptions of some of the components of the `task.json` file:
 | `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
 | `execution`          | Execution options for this task, including scripts.                                                                         
-| `restrictions`       | Restrictions being applied to the task regarding [vso commands](./pipelines/scripts/logging-commands.md) task can call, and variables task can set. It is recommended to specify restiction mode for new tasks. See [How can I restrict vso commands usage for task](#how-can-i-restrict-vso-commands-usage-for-task) for more details.|
+| `restrictions`       | Restrictions being applied to the task regarding [vso commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. It is recommended to specify restiction mode for new tasks. See [How can I restrict vso commands usage for task](#how-can-i-restrict-vso-commands-usage-for-task) for more details.|
 |
 
 >[!NOTE]
