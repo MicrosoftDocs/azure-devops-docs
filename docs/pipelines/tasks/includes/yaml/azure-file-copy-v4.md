@@ -26,7 +26,7 @@ ms.technology: devops-cicd-tasks
     #targetPath: # Required when destination == AzureVMs
     #additionalArgumentsForBlobCopy: # Optional
     #additionalArgumentsForVMCopy: # Optional
-    #enableCopyPrerequisites: false # Optional
+    #enableCopyPrerequisites: false # Optional | Required to be true when destination == AzureVMs
     #copyFilesInParallel: true # Optional
     #cleanTargetBeforeCopy: false # Optional
     #skipCACheck: true # Optional
