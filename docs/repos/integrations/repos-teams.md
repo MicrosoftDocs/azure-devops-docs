@@ -37,7 +37,6 @@ Read this article to learn how to:
 To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md).
 - To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the Azure DevOps organization, see [Change application 
 access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
-- To enable subscriptions, the project and/or repository must be public, see [Make your project public or private](../../organizations/public/make-project-public.md).
 
 > [!NOTE]
 > * Notifications are currently not supported inside direct messages.
