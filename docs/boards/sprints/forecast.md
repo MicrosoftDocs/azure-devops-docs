@@ -35,7 +35,7 @@ Use this article to learn:
 * You must be granted **Basic** access or higher to use the forecast feature. For details, see [About access levels](../../organizations/security/access-levels.md).
 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to backlog and board features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
+> Users with **Stakeholder** access for a public project have full access to backlog and board features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 
 ::: moniker-end

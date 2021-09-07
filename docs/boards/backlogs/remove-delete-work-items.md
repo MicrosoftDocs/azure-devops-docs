@@ -83,7 +83,7 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 
 ::: moniker range="azure-devops" 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
+> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker-end
 
@@ -407,7 +407,7 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 - [Delete test artifacts](delete-test-artifacts.md) 
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)  
 - [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)  
-- [About access levels](../../organizations/security/access-levels.md) 
+- [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md) 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"  
@@ -418,7 +418,7 @@ To programmatically delete, restore, and destroy work items, see one of the foll
 - [Delete test artifacts](delete-test-artifacts.md) 
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)  
 - [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)  
-- [About access levels](../../organizations/security/access-levels.md) 
+- [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md) 
 
 ::: moniker-end
  

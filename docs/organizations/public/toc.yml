@@ -36,6 +36,8 @@
   items:
   - name: Default roles and access
     href: default-roles-access-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+  - name: Stakeholder access
+    href: ../security/stakeholder-access.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
   - name: Terms of service
     href: service-limits-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
   - name: Feature differences for non-members
