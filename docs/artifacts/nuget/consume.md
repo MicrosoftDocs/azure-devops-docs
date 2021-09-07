@@ -8,7 +8,7 @@ ms.date: 09/07/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Use NuGet packages in Visual Studio
+# Install NuGet packages with Visual Studio
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
@@ -58,7 +58,36 @@ To connect Visual Studio to our feed, we must first get the *Source URL*:
 
 ---
 
+<a name="consume-packages"></a>
 
+## Install packages from your feed
 
+Now that we set up Visual Studio and added a new package source pointing to our feed, we can now search and install packages from our feed.
 
-[!INCLUDE [](../includes/nuget/consume.md)]
+1. In Visual Studio, right-click on your project in the Solution Explorer, and then select **Manage NuGet Packages...**.
+
+1. Select **Browse**, and then select your feed from the **Package source** dropdown menu.
+    
+    :::image type="content" source="../../media/select-pkg-src.png" alt-text="Select feed source":::
+
+1. Use the search bar to look for packages from your feed.
+
+> [!NOTE]
+> If you enabled [upstream sources](../../nuget/upstream-sources.md), any packages that haven't been saved to your feed (by using them at least once) won't appear in the search result.
+
+## Install packages from NuGet.org
+
+1. Navigate to *NuGet.org* and search for the package you want to install.
+
+1. Select **Package Manager**, and then copy the *Install-Package* command.
+
+1. In Visual Studio, select **Tools** > **NuGet Package Manager** > **Package Manager Console** to open the package manager console.
+
+1. Paste the command into the Package Manager Console and then press Enter.
+
+## Related articles
+
+- [Publish to NuGet feeds using Azure Pipelines](../../pipelines/artifacts/nuget.md)
+- [Publish NuGet packages using the CLI](./publish.md)
+- [Publish packages to NuGet.org](./publish-to-nuget-org.md)
+- [Configure upstream sources](../how-to/set-up-upstream-sources.md)
