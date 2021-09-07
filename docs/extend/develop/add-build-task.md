@@ -788,6 +788,8 @@ If "restricted" value is specified for "mode" - only the following commands are 
 
 "commands" and "settableVariables" are orthogonal - if either the settableVariables or commands key are omitted - relevant restriction is not applied.
 
+Restriction feature is available from [2.182.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.182.1) agent version.
+
 ## Related articles
 
 - [Extension Manifest Reference](./manifest.md)
