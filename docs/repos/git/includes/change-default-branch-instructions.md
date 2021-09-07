@@ -8,7 +8,7 @@ ms.topic: include
 Configure your Git repo to use a different default branch to merge code into when your team creates new pull requests.
 You can use a branch other than `main` for new changes or change your main line of development in your repo. To change the default branch name for new repositories, see [All repositories settings and policies](../repository-settings.md#all-repositories-settings-and-policies).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2020"
 
 1. [Navigate](../../../project/navigation/go-to-project-repo.md) to your repository and select **Branches**.
 
@@ -25,7 +25,7 @@ In that case, you must create a second one in order to change the default.
 
 ::: moniker-end
 
-::: moniker range="= azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 1. Select the settings button in your project open bottom left corner to open the project administration page.
 
