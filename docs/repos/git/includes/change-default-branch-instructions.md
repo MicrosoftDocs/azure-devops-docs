@@ -25,6 +25,24 @@ In that case, you must create a second one in order to change the default.
 
 ::: moniker-end
 
+::: moniker range="= azure-devops-2019"
+
+1. Select the settings button in your project open bottom left corner to open the project administration page.
+
+   ![Open the administrative area of the web portal for your project](/azure/devops/repos/git/media/pull-requests/gear-icon-settings-2019.png)
+
+1. Select **Repositories**.
+
+1. Select your Git repository. Your branches are displayed under your repo.
+
+1. Select the **...** next to the branch you want to set as default, then select **Set as default branch**.
+
+   ![Set a default branch for a Git repo](/azure/devops/repos/git/media/pull-requests/set-default-branch-2019.png)
+
+1. Once you've set the new default branch, you may delete the previous one if desired.
+
+::: moniker-end
+
 ::: moniker range="<= tfs-2018"
 
 1. Select the settings button in your project open to open the project administration page.
