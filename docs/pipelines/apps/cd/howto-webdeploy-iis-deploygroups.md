@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 09/07/2021
 monikerRange: '>= tfs-2018'
 ---
 
@@ -58,8 +58,8 @@ If you deploy releases to multiple stages, you can substitute configuration sett
 ## Perform a safe rolling deployment
 
 If your deployment group consists of many IIS target servers, you can deploy to a subset of servers at a time.
-This ensures that your application is available to your customers at all times.
-Simply select the **Deployment group job** and use the slider to configure the **Maximum number of targets in parallel**.
+This ensures that your application is always available to your customers.
+Select the **Deployment group job** and use the slider to configure the **Maximum number of targets in parallel**.
 
 ![Configuring safe rolling deployment for the proportion of stages to update in parallel](media/howto-webdeploy-iis-deploygroups/safe-rolling-deployment.png)
 
