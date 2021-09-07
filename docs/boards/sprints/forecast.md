@@ -8,8 +8,8 @@ ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 09/07/2021
 ---
 
 # Forecast your product backlog
