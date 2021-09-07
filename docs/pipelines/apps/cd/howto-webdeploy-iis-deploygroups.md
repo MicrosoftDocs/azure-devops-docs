@@ -1,6 +1,6 @@
 ﻿---
 title: Deploy apps & databases with Deployment Groups
-description: Deploy an app to IIS servers using Deployment Groups in Azure Pipelines or Team Foundation Server (TFS)
+description: Deploy an app to IIS servers using Deployment Groups in Azure Pipelines
 ms.assetid: 9FC7A7FC-0386-478A-BE1D-0A0B8104ED42
 ms.topic: conceptual
 ms.custom: seodec18
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 You can quickly and easily deploy your ASP.NET or Node.js app to an IIS Deployment Group using
-Azure Pipelines or Team Foundation Server (TFS),
+Azure Pipelines,
 as demonstrated in [this example](deploy-webdeploy-iis-deploygroups.md).
 In addition, you can extend your deployment in a range of ways
 depending on your scenario and requirements. This topic shows you how to:
