@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2017'
-ms.date: 04/15/2021
+ms.date: 09/07/2021
 ---
 
 # Functional code search  
@@ -23,10 +23,10 @@ Functional code search command filters extend your ability to refine your search
 ::: moniker range="< azure-devops"
   For more information, see [Install and configure search](install-configure-search.md).
 ::: moniker-end
-- To use Code Search, you must have at least a Basic access. 
-- Users granted Stakeholder access don't have access to code, and so don't have access to Code Search.
+- To use Code Search, you must have at least a Basic access.
+- Users with Stakeholder access don't have access to code, therefore they can't search for code.
 ::: moniker range="azure-devops"
-- Users granted Stakeholder access for a private project can perform code searches, as they have [Full Access to the code](../../organizations/security/access-levels.md).
+- Users with Stakeholder access for a private project have [full access to code](../../organizations/security/access-levels.md), therefore they can search for code.
 ::: moniker-end
 - When you're searching across the organization or collection, only results for which a project member has access are listed.
 
