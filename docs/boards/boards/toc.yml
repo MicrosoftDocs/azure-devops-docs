@@ -20,6 +20,7 @@
   items:
   - name: Kanban board controls
     href: kanban-board-controls.md
+    displayname: live updates, view options, Configure team settings, filter  
   - name: Enable live updates
     href: live-updates.md
   - name: Add or edit columns

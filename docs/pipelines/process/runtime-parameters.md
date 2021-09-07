@@ -36,11 +36,11 @@ parameters:
   default: ubuntu-latest
   values:
   - windows-latest
-  - vs2017-win2016
+  - windows-latest
   - ubuntu-latest
-  - ubuntu-16.04
+  - ubuntu-latest
   - macOS-latest
-  - macOS-10.14
+  - macOS-latest
 
 trigger: none
 
@@ -72,11 +72,11 @@ parameters:
   displayName: Pool Image
   values:
   - windows-latest
-  - vs2017-win2016
+  - windows-latest
   - ubuntu-latest
-  - ubuntu-16.04
+  - ubuntu-latest
   - macOS-latest
-  - macOS-10.14
+  - macOS-latest
 - name: test
   displayName: Run Tests?
   type: boolean

@@ -4,9 +4,9 @@ description: Azure Pipelines and Team Foundation Server build task to run a shel
 ms.assetid: C6F8437B-FF52-4EA1-BCB0-F34924303CA8
 ms.topic: reference
 ms.custom: seodec18, devx-track-azurecli
-ms.author: UshaN
-author: UshaN
-ms.date: 02/17/2020
+ms.author: ushan
+author: N-Usha
+ms.date: 08/12/2021
 monikerRange: '> tfs-2018'
 ---
 
@@ -51,23 +51,35 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>scriptType</code><br/>Script Type</td>
-    <td>(Required) Type of script: <b>PowerShell/PowerShell Core/Bat/Shell</b> script. Select <b>bash/pscore</b> script when running on Linux agent or <b>batch/ps/pscore</b> script when running on Windows agent. PowerShell Core script can run on cross-platform agents (Linux, macOS, or Windows)</td>
+  <td>(Required) Type of script: </br>If you are using a <b>Linux agent</b>, select one of the following types:</br>
+     <ul>
+       <li><code>bash</code></li>
+       <li><code>pscore</code></li>
+    </ul>
+    If you are using a <b>Windows agent</b>, select one of the following types:</br>
+    <ul>
+      <li><code>batch</code></li>
+      <li><code>ps</code></li>
+      <li><code>pscore</code></li>
+    </ul></br><i>* PowerShell Core scripts can run on cross-platform agents (Linux, macOS, or Windows).</i>
+   </td>
 </tr>
 <tr>
     <td><code>scriptLocation</code><br/>Script Location</td>
-    <td>(Required) Path to script: File path or Inline script<br/>Default value: scriptPath</td>
+    <td>(Required) select <code>scriptPath</code> to use a script file or <code>inlineScript</code> if you want to write your script inline <br/>Default value: scriptPath</td>
 </tr>
 <tr>
     <td><code>scriptPath</code><br/>Script Path</td>
-    <td>(Required) Fully qualified path of the script(.ps1 or .bat or .cmd when using Windows-based agent else <code>.ps1 </code> or <code>.sh </code> when using linux-based agent) or a path relative to the default working directory</td>
+    <td>Required when <code>scriptLocation = scriptPath</code>. Fully qualified path of your script file or a path relative to the default working directory</td>
 </tr>
 <tr>
     <td><code>inlineScript</code><br/>Inline Script</td>
-    <td>(Required) You can write your scripts inline here. When using Windows agent, use PowerShell or PowerShell Core or batch scripting whereas use PowerShell Core or shell scripting when using Linux-based agents. For batch files use the prefix \"call\" before every Azure command. You can also pass predefined and custom variables to this script using arguments. <br/><b>Example for PowerShell/PowerShellCore/shell:</b> az --version az account show <br/><b>Example for batch:</b> call az --version call az account show</td>
+    <td>Required when <code>scriptLocation = inlineScript</code>. Use this option if you want to paste your scripts inline. Use PowerShell, PowerShell Core, or batch scripting for Windows agents and bash or PowerShell core when using Linux-based agents. Use the <code>call</code> prefix before every Azure command when you are using batch. You can also pass predefined and custom variables to your script using arguments. <br/><b>Examples:</b>
+<br/>PowerShell/PowerShellCore/shell: az --version az account show <br/>batch: call az --version call az account show</td>
 </tr>
 <tr>
     <td><code>arguments</code><br/>Script Arguments</td>
-    <td>(Optional) Arguments passed to the script</td>
+    <td>(Optional) Arguments passed to your script</td>
 </tr>
 <tr>
     <td><code>powerShellErrorActionPreference</code><br/>ErrorActionPreference</td>

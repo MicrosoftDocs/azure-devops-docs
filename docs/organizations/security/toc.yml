@@ -5,9 +5,12 @@
   - name: About permissions, access, & security groups  
     href: about-permissions.md
     displayName: security, group, membership, inheritance, roles
-  - name: Default permissions & access 
+  - name: Default permissions
     href: permissions-access.md
     displayName: security, group, role, Basic, administrator
+  - name: Stakeholder access
+    href: stakeholder-access.md
+    displayName: public, private
   - name: View permissions 
     href: view-permissions.md
     displayName: default, project, object, valid, user, group
@@ -152,7 +155,7 @@
   - name: Change individual permissions
     href: change-individual-permissions.md
     displayName: access, update, user, remove
-  - name: Set project-level permissions
+  - name: Add or remove project administrators, set project-level permissions
     href: set-project-collection-level-permissions.md
     displayName: access, security
   - name: Grant or restrict permissions to select tasks
@@ -170,8 +173,9 @@
 - name: Secure organizations/collections
   items:
   - name: Set organization/collection-level permissions
+  - name: Add or remove organization/collection-level administrators/permissions
     href: set-project-collection-level-permissions.md
-    displayName: user, group, access, security
+    displayName: Project Collection Administrators, project collection build service
   - name: Set permissions to manage extensions
     href: ../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: Marketplace, access, settings, users

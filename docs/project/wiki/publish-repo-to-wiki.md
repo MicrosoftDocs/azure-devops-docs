@@ -37,7 +37,7 @@ By publishing your Markdown files to a wiki, you gain the following benefits:
 - Manage content in the same way you manage your code base
 - Readers can search the wiki easily using the Wiki search feature
 
-For for information about managing the different wiki types, see [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md).
+For information about managing the different wiki types, see [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md).
 
 > [!TIP]
 > You can add and edit content you've published to a wiki using the steps outlined in this article. Or, you can also work offline and update wiki content in the same way you collaborate on code through a Git repository. For more information, see [Update wiki pages offline](wiki-update-offline.md).

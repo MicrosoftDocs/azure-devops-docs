@@ -388,6 +388,9 @@ If you're sure you want to do this, see the [bind mount](https://docs.docker.com
 
 ## Use Azure Kubernetes Service cluster
 
+> [!NOTE]
+> The following instructions only work on AKS 1.18 and lower because [Docker was replaced with containerd](/azure/aks/cluster-configuration#container-runtime-configuration) in Kubernetes 1.19, and Docker-in-Docker became unavailable.
+
 ### Deploy and configure Azure Kubernetes Service 
 
 Follow the steps in [Quickstart: Deploy an Azure Kubernetes Service (AKS) cluster by using the Azure portal](/azure/aks/kubernetes-walkthrough-portal). After this, your PowerShell or Shell console can use the `kubectl` command line.
@@ -475,6 +478,44 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
    ```
 
 Now your agents will run the AKS cluster.
+
+### Set custom MTU parameter
+
+Allow specifying MTU value for networks used by container jobs (useful for docker-in-docker scenarios in k8s cluster).
+
+You need to set the environment variable AGENT_MTU_VALUE to set the MTU value, after that restart the self-hosted agent. You can find more about agent restart [here](./v2-windows.md?#how-do-i-restart-the-agent) and about setting different environment variables for each individual agent [here](./v2-windows.md?#how-do-i-set-different-environment-variables-for-each-individual-agent).
+
+This allows you to set up a network parameter for the job container, the use of this command is similar to the use of the next command while container network configuration:
+
+```-o com.docker.network.driver.mtu=AGENT_MTU_VALUE```
+
+## Mounting volumes using Docker within a Docker container
+
+If a Docker container runs inside another Docker container, they both use host's daemon, so all mount paths reference the host, not the container.
+
+For example, if we want to mount path from host into outer Docker container, we can use this command:
+
+   ```
+   docker run ... -v <path-on-host>:<path-on-outer-container> ...
+   ```
+
+And if we want to mount path from host into inner Docker container, we can use this command:
+
+   ```
+   docker run ... -v <path-on-host>:<path-on-inner-container> ...
+   ```
+
+But we can't mount paths from outer container into the inner one; to work around that, we have to declare an ENV variable:
+
+   ```
+   docker run ... --env DIND_USER_HOME=$HOME ...
+   ```
+
+After this, we can start the inner container from the outer one using this command:
+
+   ```
+   docker run ... -v $DIND_USER_HOME:<path-on-inner-container> ...
+   ```
 
 ## Common errors
 

@@ -181,7 +181,7 @@ Also, the following articles walk you through the steps for configuring teams, a
 
 When you add a team, a security group is automatically created with the team name. You can use this group to filter queries. The name of team groups follows the pattern **[Project Name]\Team Name**. For example, the following query finds work assigned to members of the **[Fabrikam Fiber]\Email** team group.
 
-<img src="../../boards/plans/media/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
+<img src="../../boards/plans/media/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" /> 
 
 ::: moniker range=">= tfs-2017"
 

@@ -8,12 +8,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2013'
-ms.date: 04/21/2021
+ms.date: 07/09/2021
 ---
 
 # Change column options 
 
 [!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [temp](../includes/version-visual-studio.md)]
 
 <a id="column-options">  </a>
 
@@ -153,6 +154,20 @@ Once you set the column options for a specific view, your settings  persist unti
 ::: moniker-end
 
 
+::: moniker range="azure-devops"
+> [!NOTE]    
+> You can't set column options for other members of your team, nor can you set default column options.  
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+> [!NOTE]    
+> You can't set column options for other members of your team. Also, for projects that use the Inheritance process model, you can't set default column options. For projects that use the On-premises XML process model, you can set the default column options for product, portfolio, and sprint backlogs. To learn how, see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
+::: moniker-end
+::: moniker range="<= tfs-2018"
+> [!NOTE]    
+> You can't set column options for other members of your team. For projects that use the On-premises XML process model, you can set the default column options for product and portfolio backlogs. To learn how, see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
+::: moniker-end
+
 ## Open Column options
 
 Start by opening the **Column Options** dialog. If you don't see the option, choose the &hellip; and choose from the options provided.   
@@ -172,6 +187,9 @@ Start by opening the **Column Options** dialog. If you don't see the option, cho
 
 
 ## Add or remove columns
+
+
+#### [Browser](#tab/browser/)
 
 ::: moniker range=">= tfs-2018"
 
@@ -196,6 +214,28 @@ Find the field you want to add from the **Available columns** set and choose **>
 ![Column options dialog, TFS](media/b-vs-b-column-options.png)
 
 ::: moniker-end
+
+
+#### [Visual Studio](#tab/visual-studio/)
+
+You can only change column options for queries in Visual Studio. To open, choose **Column Options**.
+
+:::image type="content" source="media/columns/open-column-options-visual-studio.png" alt-text="Screenshot of Query Results, Visual Studio, open Column Options.":::
+
+### Add or remove fields 
+In the Column Options dialog, to add a field, choose the field from Available columns and choose the **> Add selected columns**. To add multiple fields, use shift click to select the fields. Fields are added to the bottom of the Selected columns area. 
+
+To change the field order, choose the field and choose the up or down arrows.  
+
+:::image type="content" source="media/columns/column-options-dialog-visual-studio.png" alt-text="Column Options dialog, Visual Studio, Fields tab.":::
+
+### Change the sort order 
+
+To change the fields use to sort the query results, choose the **Sorting** tab. Add or remove a column field same as before, and use the up and down arrows to specify the order of fields to use to sort. Choose the up or down arrows to choose whether it sorts in ascending or descending order.  To reverse the sort order for a field, select it and then choose **Sort ascending** or **Sort descending**.  
+
+:::image type="content" source="media/columns/column-options-dialog-sorting-visual-studio.png" alt-text="Column Options dialog, Visual Studio, Sorting tab.":::
+
+* * *
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -251,7 +291,7 @@ For additional keyboard shortcuts, enter **?** to display available shortcuts ba
 - [Backlogs, boards, and plans](backlogs-boards-plans.md)   
 - [View, run, or email a work item query](../queries/view-run-query.md)
 - [Create managed queries](../queries/using-queries.md)
-
+- [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"

@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn all about how you can make use of NuGet packages when you are building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
-ms.date: 09/10/2019
+ms.date: 08/13/2021
 monikerRange: '>= tfs-2018'
 ---
 
@@ -46,26 +46,26 @@ If you are working with .NET Core or .NET Standard, use the [.NET Core](../build
 | -------- | ----------- |
 | `command`<br/>Command | The NuGet command to run. Select 'Custom' to add arguments or to use a different command.<br/>Options: `restore`, `pack`, `custom`, `push` |
 | `restoreSolution`<br/>Path to solution, packages.config, or project.json | The path to the solution, packages.config, or project.json file that references the packages to be restored. |
-| `feedsToUse`<br/>Feeds to use | You can either select a feed from Azure Artifacts and/or NuGet.org, or commit a nuget.config file to your source code repository and set its path here. Options: `select`, `config`. |
+| `feedsToUse`<br/>Feeds to use | You can either select a feed from Azure Artifacts and/or NuGet.org, or commit a nuget.config file to your source code repository and set its path here.<br/>Options: `select`, `config`. |
 | `vstsFeed`<br/>Use packages from this Azure Artifacts/TFS feed | Include the selected feed in the generated NuGet.config. You must have Azure Artifacts installed and licensed to select a feed here. |
-| `includeNuGetOrg`<br/>Use packages from NuGet.org | Include NuGet.org in the generated NuGet.config. Default value is `true`. Required when `feedsToUse` == `Select`.|
-| `nugetConfigPath`<br/>Path to NuGet.config | The NuGet.config in your repository that specifies the feeds from which to restore packages. Required when `feedsToUse` == `Config`|
+| `includeNuGetOrg`<br/>Use packages from NuGet.org | Include NuGet.org in the generated NuGet.config. Default value is `true`.<br/>Required when `feedsToUse` == `Select`.|
+| `nugetConfigPath`<br/>Path to NuGet.config | The NuGet.config in your repository that specifies the feeds from which to restore packages.<br/>Required when `feedsToUse` == `Config`|
 | `externalFeedCredentials`<br/>Credentials for feeds outside this organization/collection | Credentials to use for external registries located in the selected NuGet.config. This is the name of your NuGet service connection. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically. |
 | `noCache`<br/>Disable local cache | Prevents NuGet from using packages from local machine caches. |
 | `disableParallelProcessing`<br/>Disable parallel processing | Prevents NuGet from installing multiple packages in parallel. |
 | `restoreDirectory`<br/>Destination directory | Specifies the folder in which packages are installed. If no folder is specified, packages are restored into a packages/ folder alongside the selected solution, packages.config, or project.json. |
 | `verbosityRestore`<br/>Verbosity | Specifies the amount of detail displayed in the output.<br/>Options: `Quiet`, `Normal`, `Detailed` |
-| `nuGetFeedType`<br/>Target feed location | Specifies whether the target feed is an internal feed/collection or an external NuGet server.<br/>Options: `internal`, `external`. Required when `command` == `Push` |
+| `nuGetFeedType`<br/>Target feed location | Specifies whether the target feed is an internal feed/collection or an external NuGet server.<br/>Options: `internal`, `external`.<br/>Required when `command` == `Push` |
 | `publishVstsFeed`<br/>Target feed | Select a feed hosted in this account. You must have Azure Artifacts installed and licensed to select a feed here. |
-| `packagesToPush`<br/>Packages location | The pattern to match or path to the nupkg files, e.g.: `'$(Build.ArtifactStagingDirectory)/*.nupkg'`. Required when `command` == `Push`|
+| `packagesToPush`<br/>Packages location | The pattern to match or path to the nupkg files.<br/>Example: '$(Build.ArtifactStagingDirectory)/*.nupkg'.<br/>Required when `command` == `Push`|
 | `publishPackageMetadata`<br/>Publish pipeline metadata | If you continually publish a set of packages and only change the version number of the subset of packages that changed, use this option. |
 | `allowPackageConflicts` | It allows the task to report success even if some of your packages are rejected with 409 Conflict errors.<br/>If NuGet.exe encounters a conflict, the task will fail. This option will not work and publish will fail if you are within a proxy environment. |
 | `publishFeedCredentials`<br/>NuGet server | The NuGet service connection that contains the external NuGet server’s credentials. |
 | `verbosityPush`<br/>Verbosity | Specifies the amount of detail displayed in the output.<br/>Options: `Quiet`, `Normal`, `Detailed` |
-| `packagesToPack`<br/>Path to csproj or nuspec file(s) to pack | Pattern to search for csproj directories to pack.<br />You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with '!'. Example: `**\\*.csproj;!**\\*.Tests.csproj` |
+| `packagesToPack`<br/>Path to csproj or nuspec file(s) to pack | Pattern to search for csproj directories to pack.<br />You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with *!*.<br/>Example: `**\\*.csproj;!**\\*.Tests.csproj` |
 | `configuration`<br/>Configuration to package | When using a csproj file this specifies the configuration to package. |
 | `packDestination`<br/>Package folder | Folder where packages will be created. If empty, packages will be created at the source root. |
-| `versioningScheme`<br/>Automatic package versioning | Cannot be used with include referenced projects. If you choose 'Use the date and time', this will generate a [SemVer](https://semver.org/spec/v1.0.0.html)-compliant version formatted as `X.Y.Z-ci-datetime` where you choose X, Y, and Z.<br />If you choose 'Use an environment variable', you must select an environment variable and ensure it contains the version number you want to use.<br />If you choose 'Use the build number', this will use the build number to version your package. **Note:** Under Options set the build number format to be '[$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)]()'.<br/>Options: `off`, `byPrereleaseNumber`, `byEnvVar`, `byBuildNumber` |
+| `versioningScheme`<br/>Automatic package versioning | Cannot be used with include referenced projects. If you choose `Use the date and time`, this will generate a [SemVer-compliant](https://semver.org/spec/v1.0.0.html) version formatted as `X.Y.Z-ci-datetime` where you choose X, Y, and Z.<br />If you choose `Use an environment variable`, you must select an environment variable and ensure it contains the version number you want to use.<br/>If you choose `Use the build number`, this will use the build number to version your package.<br/>**Note:** You can set the build number format using the *name* property as follows:<br/>name: $(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:.rr).<br/>Options: `off`, `byPrereleaseNumber`, `byEnvVar`, `byBuildNumber` |
 | `includeReferencedProjects`<br/>Environment variable | Enter the variable name without $, $env, or %. |
 | `majorVersion`<br/>Major | The 'X' in version [X.Y.Z](https://semver.org/spec/v1.0.0.html) |
 | `minorVersion`<br/>Minor | The 'Y' in version [X.Y.Z](https://semver.org/spec/v1.0.0.html) |
@@ -77,7 +77,6 @@ If you are working with .NET Core or .NET Standard, use the [.NET Core](../build
 | `basePath`<br/>Base path | The base path of the files defined in the nuspec file. |
 | `verbosityPack`<br/>Verbosity | Specifies the amount of detail displayed in the output.<br/>Options: `Quiet`, `Normal`, `Detailed` |
 | `arguments`<br/>Command and arguments | The command and arguments which will be passed to NuGet.exe for execution. If NuGet 3.5 or later is used, authenticated commands like list, restore, and publish against any feed in this organization/collection that the Project Collection Build Service has access to will be automatically authenticated. |
-| [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] | |
 
 ::: moniker range="> tfs-2018"
 
@@ -225,6 +224,6 @@ Check out the Azure Pipelines and Team Foundation Server out-of-the-box tasks [o
 
 ### My Pipeline needs to access a feed in a different project
 
-If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#pipelines-permissions) for more details.
 
 <!-- ENDSECTION -->

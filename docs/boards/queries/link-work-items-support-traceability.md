@@ -3,6 +3,7 @@ title: Link work items to support traceability
 titleSuffix: Azure Boards 
 description: Manage dependencies, link work items to other work items, code and build objects, add hyperlinks, and more
 ms.technology: devops-agile
+ms.custom: "boards-queries, cross-project, cross-org"
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
 ms.author: kaelli
 author: KathrynEE
@@ -15,21 +16,29 @@ ms.date: 04/16/2021
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-By linking work items and other objects, you can track related work, dependencies, and changes made over time. All links are defined with a specific link type. For example, you can use Parent/Child links to link work items to support a hierarchical tree structure. Whereas, the Commit and Branch link types support links between work items and commits and branches, respectively.    
+By linking work items to other work items, you can track related work, view a hierarchy of work, view dependencies, and more. By linking work items to devops and other objects, you support an auto trail of changes and enable quick navigation to work items and linked objects. 
+Different link types are used to link to the various objects. For example, you can use *Parent/Child* links to support a hierarchical tree structure of work items. Whereas, the *Commit* and *Branch* link types support links between work items and Git commits and branches, respectively.    
 
-In a nutshell, you can:
+Link work items to support the following goals:  
 
-- Link work items to other work items 
-- Link work items to test cases, and test cases to other test items and test results  
-- Link work items to code-related objects such as branches, commits, pull requests, and more 
-- Link select git code-related objects to builds  
-- Link work items to a web address or to a storyboard or a document on a network share 
-- Link work items to architecture diagrams (requires Visual Studio Enterprise edition).      
+- Track dependencies, related items, and work hierarchies 
+- Track which work items are tested by test cases and test results  
+- Support an audit trail of code changes and the work items they support
+- Support end-to-end traceability 
+- Share information by linking work items to a network share, storyboard, or document.
 
 This article describes the link types available for your use. You can link objects from the web portal or Visual Studio Team Explorer. For details on linking work items and deleting links, see [Add link to work items](../backlogs/add-link.md). 
 
-> [!NOTE]    
-> Work item forms and features available to you can differ depending on whether you open the form from the web portal or Visual Studio Team Explorer. 
+ 
+> [!TIP]
+> You can set up automatic linking and other settings that link work items to Git commits, pull requests, builds, and more. To learn how, see the following resources:   
+> - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+> - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+> - [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
+> - [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md).
+
+
+[!INCLUDE [temp](../includes/view-linked-objects.md)]
 
 <a id="link-work-items">  </a>
 
@@ -76,7 +85,8 @@ Organizations that use Azure Active Directory can link work items that exist in 
 
 You can create links between work items by using one of the links control tabs within a work item form. The user interface to link a work item differs based on the platform, version, and client you use. To link several work items to a new or existing item, see [Add link to work items](../backlogs/add-link.md). 
 
-[!INCLUDE [temp](../includes/image-differences.md)]
+> [!NOTE]    
+> Work item forms and features available to you can differ depending on whether you open the form from the web portal or Visual Studio Team Explorer. 
 
 
 #### [New web form](#tab/new-web-form/)
@@ -87,17 +97,25 @@ You can create links between work items by using one of the links control tabs w
 From the new work item form, you can add a link using the **Related Work** section or from the **Links** tab.
 
 Open a work item and choose the :::image type="icon" source="../media/icons/Action_Add.png" border="false"::: plus icon to add a link. 
+::: moniker-end
 
+::: moniker range=">= azure-devops-2020"
+:::image type="content" source="media/link-work-items-support-traceability/work-item-form-link-work-items.png" alt-text="Screenshot of work item form, Links tab, and Related work control.":::
+::: moniker-end
+::: moniker range=">= tfs-2017 < azure-devops-2020"
 ![Web portal, work item form, Related work section](media/link-work-items-new-form-control.png) 
-
+::: moniker-end
+::: moniker range=">= tfs-2017"
 Choose **Existing item** to link to a work item or other object using any supported link type. Choose **New item** to initiate a link and define a new work item at the same time. For details, see [Add link to work items](../backlogs/add-link.md).
 
-![Links control menu of options](../../reference/xml/media/linkscontrol-related-work-menu-options.png)   
+:::image type="content" source="media/link-work-items-support-traceability/related-work-menu.png" alt-text="Screenshot of Related work control, link menu options."::: 
 
 From the **Related Work** or **Links** tab, you can also perform these actions: 
 
+- [View the list of objects linked to the work item](#view-list-links)
 - Open an associated item or object: choose the linked item  
 - Delete a link: highlight it and choose the :::image type="icon" source="../media/icons/delete_icon.png" border="false"::: delete icon  
+
 
 From a query results page, you can also perform these actions: 
 - Link selected items to a new work item  
@@ -128,7 +146,9 @@ Open a work item and click one of the Links tab. From the links control tab you 
 ::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio/)
+
 <a id="team-explorer-link" />
+
 If you primarily work in Visual Studio or Team Explorer, and want to link work items, you can do so in a number of ways. Depending on the work item form and customizations that may have been made to your work item form, you may see several Link tabs. Link tabs can be customized to allow or restrict specific link types.  
 
 Open a work item and choose the **Links** tab. From the links control tab you can link to new or existing work items, open the linked object, edit the link type, delete a link, or open the list of links in a query or Excel or Project.
@@ -166,7 +186,7 @@ These features let you quickly link or change links that use the parent-child li
 -   To create and link tasks to backlog items, [use the sprint backlog page](../sprints/assign-work-sprint.md); from the web portal you can also drag-and-drop items to change the link structure. 
 -   To indent (![Indent](media/IC588323.png)), outdent (![Outdent](media/IC588324.png)), and change the link structure of a tree hierarchy, you can [re-parent and reorder items from a backlog in the web portal](../backlogs/organize-backlog.md) or use a [tree query in Team Explorer](using-queries.md#tree-query).
 
-You can also use Excel or Project to change the link structure. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
+You can also use Excel to change the link structure. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
 <a id="test-plan-links">  </a>
 
@@ -196,7 +216,7 @@ As you develop your software, you can capture which code changes and builds supp
 ::: moniker range=">= azure-devops-2019"
 The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, Versioned Item, and Integrated in release environment. 
 
-![Artifact-to-artifact link types](media/link-tracking-artifact-to-artifact-link-types.png)  
+:::image type="content" source="media/link-type-reference/conceptual-link-types-devops-objects.png" alt-text="Conceptual image of devops link types.":::
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -208,39 +228,49 @@ To learn more about the links control or to customize the Development links cont
 
 ::: moniker-end
 
-You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../../reference/process/new-work-item-experience.md). 
+You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the **Development** control within the work item form as described in [Work items linked to Git code development](#git-code-development). 
 
 ::: moniker range=">= azure-devops-2019"
 See the following articles for additional information: 
 ::: moniker-end
 ::: moniker range=">= azure-devops-2020"
+- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+- [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
+- [Link and view work items to builds and deployments](../work-items/work-item-deployments-control.md)
 - [Link to work items from pull requests, commits, and comments](../../notifications/add-links-to-work-items.md#link-wit-id)
-- [Set work item state in pull request](../../notifications/add-links-to-work-items.md#work-item-state-pull-request)
-- [Link work items to a build ](../backlogs/add-link.md#link-builds)
+- [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+- [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+- [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+- [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Link to work items from pull requests, commits, and comments](../../notifications/add-links-to-work-items.md#link-wit-id)
-- [Link work items to a build ](../backlogs/add-link.md#link-builds)
+- [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
+<a id="git-code-development" /> 
+
 ## Work items linked to Git code development  
 
-The recommended method is to drive development from the work item or add the work item ID when creating branches, commits (git), changesets (TFVC), pull requests (git). 
+The recommended method is to drive development from the work item or add the work item ID when creating branches, commits, and pull requests. 
 
 Git lets you link work items to commits by using the **Commit** link type. You can do this in several ways:
 
 - In Visual Studio Team Explorer, add work item IDs before you commit your changes  
     ![Add work item ID or drag items before you commit your changes](media/link-git-commit-items.png)  
 - You can use the [git-commit](https://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, you apply this comment #35 Catch null exception to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35. 
-- And, with the new work item form (available from Azure Boards and TFS 2017), you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
-
-    ![Work item form, Development section](../backlogs/media/drive-git-development-dev-section.png)  
-
+- And, with the **Development** control, you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
 ::: moniker-end
-
+::: moniker range=">= azure-devops-2019"  
+:::image type="content" source="../backlogs/media/git/development-control.png" alt-text="Screenshot of work item form, Development control.":::
+::: moniker-end
+::: moniker range=">= tfs-2017 < azure-devops-2019"  
+![Work item form, Development section](../backlogs/media/drive-git-development-dev-section.png)  
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 
 
@@ -297,7 +327,7 @@ For process templates associated with TFS 2015 and earlier versions, the  **Stor
 
 ::: moniker-end
 
-By using the Storyboard link type, you differentiate the link your adding to specify a storyboard or document that provides work item specifications. Use this link type to provide your team access to the shared file where they can add their comments. You can also link from a Power Point file to a work item using this link type as described in [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md).
+By using the Storyboard link type, you differentiate the link your adding to specify a storyboard or document that provides work item specifications. Use this link type to provide your team access to the shared file where they can add their comments. 
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"

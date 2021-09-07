@@ -3,11 +3,12 @@ title: Link types reference
 titleSuffix: Azure Boards
 description: Reference guide to all link types defined for Azure DevOps and Team Foundation Server 
 ms.technology: devops-agile
+ms.custom: "boards-queries, cross-project, cross-org"
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 07/09/2020
 ---
 
@@ -123,7 +124,7 @@ Link category: System-defined</p></td>
 Use this directional link to create one-to-many relationships between a single parent to one or more child items. Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the <a href="../backlogs/organize-backlog.md" data-raw-source="[mapping function](../backlogs/organize-backlog.md)">mapping function</a> or among backlog items and tasks using the <a href="../sprints/assign-work-sprint.md" data-raw-source="[sprint backlog](../sprints/assign-work-sprint.md)">sprint backlog</a> or <a href="../sprints/task-board.md" data-raw-source="[Taskboard](../sprints/task-board.md)">Taskboard</a>.
 <p>Typical uses include:</p> 
 <ul>
-<li><p>Create a work breakdown structure (WBS). See <a href="../backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Schedule tasks and assign resources using Microsoft Project](../backlogs/office/create-your-backlog-tasks-using-project.md)">Schedule tasks and assign resources using Microsoft Project</a>.</p></li><li><p>Map backlog items to portfolio backlog items. Mapping items automatically creates parent-child links between the items. To learn about mapping, see <a href="../backlogs/organize-backlog.md" data-raw-source="[Organize your backlog](../backlogs/organize-backlog.md)">Organize your backlog</a>.</p></li><li><p>Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.</p></li><li><p>Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.</p></li></ul>Restrictions and recommendations:<ul><li><p>Use Excel to bulk edit both work items and parent-child links. See <a href="../backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)">Bulk add or modify work items with Excel</a>.</p></li><li><p>A work item can have only one Parent. A parent work item can have many children.</p></li><li><p>Only use parent-child links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li></ul> </td>
+<li><p>Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.</p></li><li><p>Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.</p></li></ul>Restrictions and recommendations:<ul><li><p>Use Excel to bulk edit both work items and parent-child links. See <a href="../backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)">Bulk add or modify work items with Excel</a>.</p></li><li><p>A work item can have only one Parent. A parent work item can have many children.</p></li><li><p>Only use parent-child links to link work items in the same project. This action is recommended if you plan to use Excel to modify or update work item data.</p></li></ul> </td>
 </tr>
 <tr>
 <td><strong>Duplicate-Duplicate of</strong> <sup>1</sup><br/> 
@@ -438,7 +439,7 @@ The following table describes the external link types you can choose when adding
       Storyboard
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a PowerPoint file on a network. For details, see [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard).  
+      Used to link a work item to a PowerPoint file or other file that contains story boarding information on a network. 
    :::column-end:::
 :::row-end:::
 :::row:::

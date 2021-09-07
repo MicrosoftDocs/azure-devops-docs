@@ -29,7 +29,7 @@ You add all contributions by installing its extension from the [Visual Studio Ma
 
 For example, you can add the [**Who recently viewed a work item?** extension](https://marketplace.visualstudio.com/items?itemName=mmanela.vsts-workitem-recentlyviewed). This group-level contribution appears in your work item form as shown.
 
-<img src="media/process/custom-controls-group-extension-example-who-recently-viewed.png" alt="Work item form, group extension example, Who viewed this" style="border: 2px solid #C3C3C3;" />
+<img src="media/process/custom-controls-group-extension-example-who-recently-viewed.png" alt="Work item form, group extension example, Who viewed this" />
 
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
@@ -105,7 +105,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 
 	For example, here we specify the custom field, Triaged, and indicate the toggle labels to appear on the form.
 
-	<img src="media/process/custom-control-add-field-level-control-to-bug-options-tab.png" alt="Custom control dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/process/custom-control-add-field-level-control-to-bug-options-tab.png" alt="Custom control dialog" />
 
 6. (Optional) Open the **Layout** tab and specify the label for the field. 
  

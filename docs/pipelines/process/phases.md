@@ -56,7 +56,7 @@ This YAML file has a job that runs on a [Microsoft-hosted agent](../agents/hoste
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-latest'
 steps:
 - bash: echo "Hello world"
 ```
@@ -68,7 +68,7 @@ jobs:
 - job: myJob
   timeoutInMinutes: 10
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - bash: echo "Hello world"
 ```
@@ -322,6 +322,7 @@ Currently, only the following tasks are supported out of the box for agentless j
 * [Delay task](../tasks/utility/delay.md)
 * [Invoke Azure Function task](../tasks/utility/azure-function.md)
 * [Invoke REST API task](../tasks/utility/http-rest-api.md)
+* [Manual Validation task](../tasks/utility/manual-validation.md)
 * [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
 * [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
 * [Query Work Items task](../tasks/utility/work-item-query.md)
@@ -407,17 +408,17 @@ Example jobs that build in parallel (no dependencies):
 jobs:
 - job: Windows
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
   steps:
   - script: echo hello from Windows
 - job: macOS
   pool:
-    vmImage: 'macOS-10.14'
+    vmImage: 'macOS-latest'
   steps:
   - script: echo hello from macOS
 - job: Linux
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - script: echo hello from Linux
 ```
@@ -614,7 +615,7 @@ time the job is queued or is waiting for an agent.
 
 The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. When `0` is specified, the maximum limit is used (described above).
 
-The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time when the deployment task is set to keep running if a previous task has failed. When not specified, the default is 5 minutes.
+The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time when the deployment task is set to keep running if a previous task has failed. When not specified, the default is 5 minutes. The value should be in range from **1** to **35790** minutes.
 
 ```yaml
 jobs:
@@ -867,7 +868,7 @@ When you specify one of the `clean` options, they are interpreted as follows:
   jobs:
   - deployment: deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
     workspace:
       clean: all
     environment: staging
@@ -913,7 +914,7 @@ This example YAML file publishes the artifact `WebSite` and then downloads the a
 jobs:
 - job: Build
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - script: npm test
   - task: PublishBuildArtifacts@1
@@ -924,7 +925,7 @@ jobs:
 # download the artifact and deploy it only if the build job succeeded
 - job: Deploy
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - checkout: none #skip checking out the default repository resource
   - task: DownloadBuildArtifacts@0

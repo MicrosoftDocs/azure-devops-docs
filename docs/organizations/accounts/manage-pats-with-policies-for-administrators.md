@@ -6,7 +6,7 @@ ms.technology: devops-accounts
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 06/03/2021
+ms.date: 08/18/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -17,10 +17,15 @@ monikerRange: '>= tfs-2017'
 Learn how to turn on the Azure Active Directory (Azure AD) policies that restrict the creation, scope, and lifespan of new or renewed personal access tokens (PATs) for users in Azure DevOps.
 
 The following policies can be turned on or off. By default, these policies are set to *off*.
+
+- [Use policies to manage users' personal access tokens](#use-policies-to-manage-users-personal-access-tokens)
+  - [Prerequisites](#prerequisites)
   - [Restrict creation of global PATs](#restrict-creation-of-global-pats)
   - [Restrict creation of full-scoped PATs](#restrict-creation-of-full-scoped-pats)
   - [Set maximum lifespan for new PATs](#set-maximum-lifespan-for-new-pats)
   - [Add Azure AD users or groups to the allowlist](#add-azure-ad-users-or-groups-to-the-allowlist)
+  - [Next steps](#next-steps)
+  - [Related articles](#related-articles)
 
 > [!IMPORTANT]
 > Existing PATs, created via both the UI and APIs, apply per the remainder of their lifespan. Before these existing PATs can be successfully renewed, they must be updated to comply with the new restriction.
@@ -50,6 +55,9 @@ The Azure DevOps Administrator in Azure AD restricts users from creating global 
 
 The Azure DevOps Administrator in Azure AD restricts users from creating full-scoped PATs. Enabling this policy means new PATs must be limited to a specific custom defined set of scopes.
 
+> [!WARNING]
+> Some of our public APIs are currently unassociated with a PAT scope, and can therefore only be used with “full-scoped” PATs. Because of this, restricting the creation of full-scoped PATs might block some workflows. We're working to identify and document the affected APIs and eventually associate them with the appropriate scope. For now, these workflows can be unblocked by using the allow list.
+
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
@@ -77,6 +85,9 @@ The Azure DevOps Administrator in Azure AD defines the maximum lifespan of a PAT
 4. Enter the number of maximum days, and then select **Save**.
 
 ## Add Azure AD users or groups to the allowlist
+
+> [!WARNING]
+> We recommend using groups with your tenant policy allow list(s). If you use a named user, be aware that a reference to the named user's identity will reside in the United States, Europe (EU), and Southeast Asia (Singapore).
 
 Users or groups on the allowlist are exempt from the restrictions and enforcements created by these policies when they're turned on. Select **Add AAD user or group** to add the user or group to the list, and then select **Add**. Each policy has its own allowlist. If a user is on the allowlist for one policy, any other activated policies still apply. In other words, if you want a user to be exempt from all policies, you should add them to each allowlist.
 

@@ -44,7 +44,7 @@ This task can be used in only an [agentless job](../../process/phases.md#server-
 
 | Parameter | Comments |
 | --- | --- | --- |
-| **Connection type** | Required. Select **Azure Resource Manager** to invoke an Azure managment API or **Generic** for all other APIs. |
+| **Connection type** | Required. Select **Azure Resource Manager** to invoke an Azure management API or **Generic** for all other APIs. |
 | **Generic service connection** | Required. Generic service connection that provides the baseUrl for the call and the authorization to use. |
 | **Azure subscription** | Required. Azure Resource Manager subscription to configure and use for invoking Azure management APIs. |
 | **Method** | Required. The HTTP method with which the API will be invoked; for example, **GET**, **PUT**, or **UPDATE**. |
@@ -88,4 +88,9 @@ To signal completion, the external service should POST completion data to the fo
 See [this simple cmdline application](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/HttpRequestSampleWithoutHandler) for specifics. 
  
 In addition, a C# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](/archive/blogs/aseemb/async-http-agentless-task) 
- 
+
+### Can I use the response body as the input for another task?
+
+No, as this task is an agentless task and uses TFS's internal HttpRequest, which doesn't return the content of the HTTP request.
+
+

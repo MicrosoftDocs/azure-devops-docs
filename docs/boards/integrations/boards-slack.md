@@ -7,13 +7,13 @@ ms.topic: tutorial
 ms.reviewer: karrg
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azure-devops-2020'
-ms.date: 07/09/2020
+monikerRange: 'azure-devops'
+ms.date: 07/26/2021
 ---
  
 # Azure Boards with Slack
 
-[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 
 If you use [Slack](https://slack.com), you can use the [Azure Boards app for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installboardsapp) to create work items and monitor work item activity in your Azure Boards project from your Slack channel. 
@@ -33,15 +33,17 @@ Read this article to learn how to:
 > * Monitor work item activity in your Slack channel  
 > * Get notifications in private Slack channels
 
+> [!NOTE]
+> * Azure Boards and Slack integration is only supported for Azure DevOps Services.  
+> * Notifications are currently not supported inside direct messages.
+
 ## Prerequisites
 
 - To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md). 
 - To create subscriptions in a Slack channel for work item events, you must be a member of the Azure Boards Project Administrators group  or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, the **Third party application access via OAuth** setting must be enabled for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
 
-> [!NOTE]
-> * You can link the Azure Boards app for Slack only to a project hosted on Azure DevOps Services at this time.  
-> * Notifications are currently not supported inside direct messages.
+
 
 ## Add the Azure Boards app to your Slack workspace
 

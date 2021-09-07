@@ -68,7 +68,7 @@ Stakeholder access supports business owners, analysts, and other team members wh
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
-> For public projects, Stakeholder access gives users full access to all work-tracking features. To learn more, see [About access levels, Stakeholder access](../../organizations/security/access-levels.md#stakeholder-access).
+> For public projects, Stakeholder access gives users full access to all work-tracking features. To learn more, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker-end
 

@@ -44,8 +44,8 @@ The following table describes conditional rules that you can specify as child el
 -   `field`: A string that describes the field. Must contain 1 to 255 characters.   
 -   `value`: When the specified field has this value, the rules in the `WHEN` and `WHENNOT` elements are applied to the current field.    
 
-<table Responsive="true" summary="table">
-<tr Responsive="true">
+<table>
+<tr>
 <th scope="col" width="10%"><p>Element</p></th><th scope="col" width="40%"><p>Syntax</p></th><th scope="col"><p>Description</p></th></tr>
 <tbody valign="top">
 <tr><td data-th="Element"><p><strong>WHEN</strong></p></td><td data-th="Syntax">

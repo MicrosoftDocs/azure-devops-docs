@@ -123,20 +123,26 @@ title: Hello world
 
 ![YAML tags with list example](media/wiki/yaml_tags_with_list.png)
 
+
+
+
+
 ## Embed Azure Boards query results in Wiki
 
 To embed Azure Boards query results in a wiki page as a table, use the following syntax:
 
-```boards-query
+> [!div class="tabbedCodeSnippets"]
+```Query syntax
 ::: query-table <queryid>
 :::
 ```
 
 You can also use the **toolbar** and the **query selector** to embed the query results in a wiki page.
 
-> ![Query Results Icon](media/query_selector_icon.png)
->
-> ![Query Selector Pane](media/query_selector_pane.png)
+![Query Results Icon](media/query_selector_icon.png)
+
+![Query Selector Pane](media/query_selector_pane.png)
+
 
 ## @mention users and groups
 

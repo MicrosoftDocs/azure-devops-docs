@@ -20,6 +20,9 @@ Azure Artifacts uses a consumption-based billing for all the supported package t
 
 Using the artifact storage UI from your organization/project settings, you can view your storage consumption at both the organization level and the project level. Storage is also grouped by project and/or by artifact type.
 
+> [!NOTE]
+> Azure Artifacts offers 2GiB of free storage for **every organization**. Once the maximum storage limit is reached, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
+
 ## Organization-level storage
 
 The organization-level view shows your total storage summary and your storage consumption by artifact type and by project.

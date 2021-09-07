@@ -21,9 +21,9 @@ ms.date: 08/27/2020
 
 Both lead time and cycle time widgets are extremely useful to teams as they indicate how long it takes for work to flow through their development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for your team to complete work items once they begin actively working on them.  
 
-The following diagram illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a completed state. Cycle time is calculated from first entering an In Progress state to entering a Completed state. 
+The following diagram illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a completed state. Cycle time is calculated from first entering an In Progress or Resolved state category to entering a Completed state category. To understand how workflow states map to state categories, see [How workflow states and state categories are used in Backlogs and Boards](../../boards/work-items/workflow-and-state-categories.md). 
 
-![Conceptual image of how cycle time and lead time are measured](media/cycle-lead-time-concept-intro.png) 
+:::image type="content" source="media/cycle-lead-time-concept-intro.png" alt-text="Conceptual image of how cycle time and lead time are measured"::: 
 
 These measures help teams plan, spot variations in efficiency, and identify potential process issues. The lower the lead and cycle times, the faster the throughput your team has.
  
@@ -82,7 +82,7 @@ The Configuration dialog is the same for the Cycle Time and Lead Time widgets. Y
 
 2. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
-	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Screenshot ofExample CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Screenshot ofExample CFD chart, rolling 30 days" /> 
 
 	For your lead/cycle time charts to provide useful data, your team must [Update the status](../../boards/boards/kanban-basics.md#track-work) in a timely manner those work items that the widgets track. 
 
@@ -104,7 +104,7 @@ The Configuration dialog is the same for the Cycle Time and Lead Time widgets. Y
 
 2. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
-	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Screenshot  Example CFD chart, rolling 30 days, 2019 version" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Screenshot  Example CFD chart, rolling 30 days, 2019 version" /> 
 
 	For your lead/cycle time charts to provide useful data, your team must [Update the status](../../boards/boards/kanban-basics.md#track-work) in a timely manner those work items that the widgets track. 
 
@@ -118,7 +118,7 @@ Both Lead Time and Cycle Time widgets display as scatter-plot control charts. Th
 
 **Example Lead Time widget**  
 
-<img src="media/lead-time-control-chart.png" alt="Screenshot of Cycle Time widget." style="border: 2px solid #C3C3C3;" />
+<img src="media/lead-time-control-chart.png" alt="Screenshot of Cycle Time widget." />
 
 The chart dots represent completed work items where their position on the horizontal axis represents the date they were completed. Their position on the vertical axis represents the calculated lead time or cycle time. 
 - Larger dots represent multiple work items with the same lead/cycle time 

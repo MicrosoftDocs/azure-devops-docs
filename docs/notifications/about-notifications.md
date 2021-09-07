@@ -15,7 +15,8 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-all](../includes/version-all.md)]
 
-Notifications help you and your team stay informed about activity that occurs within your projects in Azure DevOps. You're notified when changes occur to the following items:
+Notifications help you and your team stay informed about activity that occurs within your projects in Azure DevOps. You can get notified when changes occur to the following items:
+
 - work items
 - code reviews
 - pull requests
@@ -24,7 +25,7 @@ Notifications help you and your team stay informed about activity that occurs wi
 
 For example, you can get notified whenever you or your team resolves a bug or are assigned a work item.
 
-You receive notifications based on rules or subscriptions. 
+Notifications get sent based on set up rules or subscriptions.
 Subscriptions arise from the following instances:
 
 - Out-of-the-box (OOB) or default
@@ -46,11 +47,11 @@ There are four types of notifications that you can manage in Azure DevOps. See t
 
 You can manage your personal notifications in the following manner.
 
-* View your notifications
-* Set alerts just for yourself
-* View and edit all subscriptions
-* Add a custom subscription
-* Unsubscribe or opt out of a team or project subscription
+- View your notifications
+- Set alerts just for yourself
+- View and edit all subscriptions
+- Add a custom subscription
+- Unsubscribe or opt out of a team or project subscription
 
 For more information, see [Manage your personal notifications](manage-your-personal-notifications.md).
 
@@ -61,11 +62,11 @@ You can create a subscription for the following categories and select from the f
 |Category  |Template options  |
 |---------|---------|
 |Build | <ul><li>a build completes</li><li>a build fails</li><li>a legacy XAML build controller or agent's status changes</li><li>a legacy XAML build's quality changes</li></ul>   |
-|Code (Git)  |  <ul><li>a commit is pushed</li><li>a pull request is created or updated</li><li>a pull request my team is a reviewer on is updated</li><li>a comment is made on a pull request</li></ul>  |   
-|Code (TFVC)    | <ul><li>code is checked in</li><li>code is checked in with a policy override</li><li>a file with a specific extension is checked in</li><li>a file under a specific path is checked in</li><li>any code review changes</li></ul>  |       
+|Code (Git)  |  <ul><li>a commit is pushed</li><li>a pull request is created or updated</li><li>a pull request my team is a reviewer on is updated</li><li>a comment is made on a pull request</li></ul>  |
+|Code (TFVC)    | <ul><li>code is checked in</li><li>code is checked in with a policy override</li><li>a file with a specific extension is checked in</li><li>a file under a specific path is checked in</li><li>any code review changes</li></ul>  |
 |Pipelines | <ul><li>run stage waiting for approval</li><li>run stage waiting for Manual validation</li></ul>
-|Work   | <ul><li>a work item is created</li><li>a work item is changed</li><li>a work item is deleted</li><li>a work item is restored</li><li>a work item is moved from this team project</li></ul>    |   
-|Artifacts    | <ul><li>a package is changed</li></ul>       |     
+|Work   | <ul><li>a work item is created</li><li>a work item is changed</li><li>a work item is deleted</li><li>a work item is restored</li><li>a work item is moved from this team project</li></ul>    |
+|Artifacts    | <ul><li>a package is changed</li></ul>       |
 |Extension management | <ul><li>an extension is modified</li></ul>   |
 |Release | <ul><li>an approval for a deployment is pending</li><li>a deployment is completed</li><li>a request for release creation failed</li><li>a manual intervention for a deployment is pending</li></ul> |
 
@@ -80,11 +81,11 @@ For more information, see [Manage team, group, and global notifications](manage-
 
 ### Global notifications
 
-Global notifications apply to all **projects** defined for an organization or collection. 
+Global notifications apply to all **projects** defined for an organization or collection.
 
-#### Default subscription 
+#### Default subscription
 
-The **Default subscriptions** tab lists all default global subscriptions available. The ![globe](media/oob-notification.png) on a notification subscription indicates the subscription is a default subscription. View all [default notification subscriptions](./oob-built-in-notifications.md). 
+The **Default subscriptions** tab lists all default global subscriptions available. The ![globe](media/oob-notification.png) on a notification subscription indicates the subscription is a default subscription. View all [default notification subscriptions](./oob-built-in-notifications.md).
 
 Members of the **Project Collection Administrators** group have permission to enable/disable any default subscription in this view. Any member of the **Project Collection Valid Users** group has permission to view the details of the default subscription. The view and enable options are available in the context menu (`...`) associated with each individual subscription.
 
@@ -94,22 +95,23 @@ Members of the **Project Collection Administrators** group have permission to en
 
 The **Subscribers** section begins with an empty identity search box. Enter any group, team, or individual to view the list of subscriptions associated with the specified identity.
 
-All notification subscriptions for the chosen identity are listed in this view. Management options are available from the context menu (`...`) associated with each subscription. The ![globe](media/oob-notification.png) on subscription row indicates a default subscription.    
+All notification subscriptions for the chosen identity are listed in this view. Management options are available from the context menu (`...`) associated with each subscription. The ![globe](media/oob-notification.png) on subscription row indicates a default subscription.
 
-   :::image type="content" source="media/view-organization-notification-subscribers.png" alt-text="Screenshot of organization-level notifications page: Subscribers list.":::        
+   :::image type="content" source="media/view-organization-notification-subscribers.png" alt-text="Screenshot of organization-level notifications page: Subscribers list.":::
 
 #### Statistics
 
 The **Statistics** section shows the most active notification subscriptions and the top event initiators (group, team, or individual). The statistics are only for the current day and reset at 00:00 UTC. A benefit of these statistics is identifying unintended high volume subscriptions or event initiators.
 
-   :::image type="content" source="media/view-organization-notification-stats.png" alt-text="Screenshot of organization-level notifications page, Statistics section.":::                                                                                                                                                                                                              
+   :::image type="content" source="media/view-organization-notification-stats.png" alt-text="Screenshot of organization-level notifications page, Statistics section.":::
+
 #### Settings
 
-Manage global-level **Settings**, such as delivery preferences.   
+Manage global-level **Settings**, such as delivery preferences.
 
 The **Settings** section allows organization-level management by any member of the **Project Collection Administrators** group. All teams and groups inherit the _Default delivery option_ setting. This setting, _Default delivery option_,  isn't explicitly set at the team or group level.
 
-   :::image type="content" source="media/view-organization-notification-settings.png" alt-text="Screenshot of organization-level notifications page: Settings.":::                                                                                                                                       
+   :::image type="content" source="media/view-organization-notification-settings.png" alt-text="Screenshot of organization-level notifications page: Settings.":::
 
 For more information, see [Manage team, group, and global notifications](manage-team-group-global-organization-notifications.md).
 
@@ -130,7 +132,7 @@ The preferred email address for your organization profile gets notifications, by
 
 ::: moniker range=">= tfs-2017 < azure-devops"
 
-## Integrating with other services 
+## Integrating with other services
 
 If your team uses an external service to collaborate&mdash;such as Campfire, Flowdock, or Slack&mdash;you can configure notifications to be sent to these services. These services are supported out of the box:
 
@@ -147,15 +149,15 @@ You can also use a third-party service like Zapier to send notifications to hund
 ::: moniker range="< azure-devops"
 
 ## On-premises SMTP server
- 
+
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
 ::: moniker-end
 
 ## Related articles
 
-* [Default and supported notifications](oob-built-in-notifications.md)
-* [Query with group clauses](../boards/queries/using-queries.md#group-clauses)
-* [FAQs](faq-notifications.yml)
-* [Default permissions and access set for collaboration tools](../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
-* [Azure DevOps data protection overview](../organizations/security/data-protection.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+- [Default and supported notifications](oob-built-in-notifications.md)
+- [Query with group clauses](../boards/queries/using-queries.md#group-clauses)
+- [FAQs](faq-notifications.yml)
+- [Default permissions and access set for collaboration tools](../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+- [Azure DevOps data protection overview](../organizations/security/data-protection.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)

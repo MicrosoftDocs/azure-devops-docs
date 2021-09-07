@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 12/03/2020
+ms.date: 09/02/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker range="azure-devops"
 
-This is a step-by-step guide to using Azure Pipelines to build a GitHub repository.
+This is a step-by-step guide to using Azure Pipelines to build a sample application. This guide uses YAML pipelines configured with the [YAML pipeline editor](get-started/yaml-pipeline-editor.md). If you'd like to use Classic pipelines instead, see [Define your Classic pipeline](release/define-multistage-release-process.md).
 
 ## Prerequisites - Azure DevOps
 
@@ -330,6 +330,12 @@ az pipelines update [--branch]
 - **queue-id**: Queue ID of the agent pool where the pipeline needs to run.
 - **yaml-path**: Path of the pipeline's yaml file in the repo.
 
+ Global parameters include `debug`, `help`, `only-show-errors`, `query`, `output` and `verbose`.
+
+> [!TIP]
+> There are also global parameters you can use such as `--output`.
+> The `--output` parameter is available for all commands. The **table** value presents output in a friendly format. For more information, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
+
 #### Example 
 
 The following command updates the pipeline with the **ID** of 12 with a new name and description and shows the result in table format.
@@ -353,6 +359,8 @@ az pipelines show [--folder-path]
                   [--open]
                   [--org]
                   [--project]
+                  [--query-examples]
+                  [--subscription]
 ``` 
 
 #### Parameters
@@ -363,6 +371,8 @@ az pipelines show [--folder-path]
 - **open**: Open the pipeline summary page in your web browser.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **query examples**: Recommend a JMESPath string for you.
+- **subscription**: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
 
 #### Example 
 
@@ -561,7 +571,7 @@ Create a build pipeline that prints "Hello world."
    
 7. On the left side, select your new **PowerShell** script task.
 
-8. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
+8. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: button to browse your repository and select the script you created.
 
    > [!div class="mx-imgBorder"] 
    > ![Select your script](media/get-started-designer/powershell-task-1-azure-devops-newnavon.png)
@@ -590,7 +600,7 @@ Create a build pipeline that prints "Hello world."
 
 15. On the left side, select your new **PowerShell** script task.
 
-16. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
+16. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: button to browse your repository and select the script you created.
 
     ![Select the PowerShell task](media/get-started-designer/powershell-task-1-tfs-2018.png)
 
@@ -620,7 +630,7 @@ Create a build pipeline that prints "Hello world."
 
 8. On the left side, select your new **PowerShell** script task.
 
-9. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
+9. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: button to browse your repository and select the script you created.
 
    ![Browse to find the script](media/get-started-designer/powershell-task-1.png)
 
@@ -646,7 +656,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
    ![Add the publish artifact task](media/get-started-designer/publish-artifact-task-tfs-2018-2.png)
 
-   **Path to publish**: Select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse and select the script you created.
+   **Path to publish**: Select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse and select the script you created.
 
    **Artifact name**: Enter `drop`.
 
@@ -663,7 +673,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
    ![Select add to add the publish artifact task](media/get-started-designer/publish-artifact-task.png)
 
-   **Path to Publish**: Select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse and select the script you created.
+   **Path to Publish**: Select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse and select the script you created.
 
    **Artifact Name**: Enter `drop`.
 
@@ -916,7 +926,7 @@ Define the process for running the script in two stages.
 
 1. On the left side, select your new **PowerShell** script task.
 
-1. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your artifacts and select the script you created.
+1. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse your artifacts and select the script you created.
 
 1. Add these **Arguments**:
 
@@ -974,7 +984,7 @@ Define the process for running the script in two stages.
 
 10. On the left side, select your new **PowerShell** script task.
 
-11. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your artifacts and select the script you created.
+11. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse your artifacts and select the script you created.
 
 12. Add these **Arguments**:
 
@@ -1014,7 +1024,7 @@ Define the process for running the script in two stages.
 
 6. On the **Task catalog** dialog box, select **Utility**, locate the **PowerShell** task, and then select its **Add** button. Select the **Close** button.
 
-7. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your artifacts and select the script you created.
+7. For the **Script Path** argument, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: button to browse your artifacts and select the script you created.
 
 8. Add these **Arguments**:
 
@@ -1214,7 +1224,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 <a name="version-control"></a>
 
-### What kinds of version control can I use?
+### What version control system can I use?
 
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
 
@@ -1464,9 +1474,8 @@ To learn more about build pipeline settings, see:
 
 ::: moniker range="azure-devops"
 
-### Can I use a single command at the command line to run multiple pipelines in Azure DevOps Services?
+### Can I run multiple pipelines in Azure DevOps Services using a single command?
 
-Currently, the Azure CLI and Azure APIs don't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](./build/triggers.md).
+Currently, the Azure CLI and Azure APIs doesn't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](./build/triggers.md).
 
 ::: moniker-end
-

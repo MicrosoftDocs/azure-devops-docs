@@ -4,7 +4,7 @@ ms.custom: contperf-fy21q1
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
-ms.date: 03/13/2020
+ms.date: 07/15/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -85,7 +85,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 1. Follow the instructions on the page to download the agent.
 
-1. Unpack the agent into the directory of your choice. Then run `config.cmd`. This will ask you a series of questions to configure the agent.
+1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues. Then run `config.cmd`. This will ask you a series of questions to configure the agent.
 
 ::: moniker-end
 
@@ -111,7 +111,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 1. Follow the instructions on the page to download the agent.
 
-1. Unpack the agent into the directory of your choice. Then run `config.cmd`. This will ask you a series of questions to configure the agent.
+1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues. Then run `config.cmd`. This will ask you a series of questions to configure the agent.
 
 ::: moniker-end
 
@@ -133,7 +133,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 1. Follow the instructions on the page to download the agent.
 
-1. Unpack the agent into the directory of your choice. Then run `config.cmd`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
+1. Unpack the agent into the directory of your choice. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces. A recommended folder is `C:\agents`. Extracting in the download folder or other user folders may cause permission issues. Then run `config.cmd`. 
 
 ::: moniker-end
 

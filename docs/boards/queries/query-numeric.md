@@ -8,7 +8,7 @@ ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 10/03/2019
 ---
 
@@ -102,7 +102,7 @@ Create an  active bugs query and modify the column options to show Assigned To a
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-<img src="media/query-effort-config-chart-count-bugs-state-pivot-chart.png" alt="Configure chart, count of bugs by developer, area, pivot chart" style="border: 1px solid #C3C3C3;" />  
+<img src="media/query-effort-config-chart-count-bugs-state-pivot-chart.png" alt="Configure chart, count of bugs by developer, area, pivot chart" />  
 ::: moniker-end
 
 ### Count of bugs by state and area 
@@ -141,7 +141,7 @@ You can assign Story Points to user stories or bugs when you work in an Agile pr
 
 Create a query that filters for User Story as the work item type and modify the column options to show Story Points and State. 
 
-<img src="media/query-effort-sum-story-points-iteration.png" alt="Query editor, flat list, open stories" style="border: 2px solid #C3C3C3;" />
+<img src="media/query-effort-sum-story-points-iteration.png" alt="Query editor, flat list, open stories" />
 
 Then, add a stacked bar chart that sums the Story Points. 
 
@@ -151,7 +151,7 @@ Then, add a stacked bar chart that sums the Story Points.
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-<img src="media/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart." style="border: 2px solid #C3C3C3;" />
+<img src="media/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart." />
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
@@ -165,7 +165,7 @@ For information on system-defined cumulative flow diagrams, see [Cumulative flow
 
 Create a query that filters for User Story as the work item type and in the Active or Closed state. Modify the column options to show Story Points. 
 
-<img src="media/query-effort-sum-story-points-active-closed.png" alt="Query editor, flat list, user stories - active or closed" style="border: 2px solid #C3C3C3;" />
+<img src="media/query-effort-sum-story-points-active-closed.png" alt="Query editor, flat list, user stories - active or closed" />
 
 Then, add a stacked area trend chart that sums the Story Points. 
 
@@ -175,7 +175,7 @@ Then, add a stacked area trend chart that sums the Story Points.
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-<img src="media/query-effort-config-chart-sum-story-points-burnup.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
+<img src="media/query-effort-config-chart-sum-story-points-burnup.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" />
 ::: moniker-end
 
 
@@ -196,7 +196,7 @@ Based on the process your project references, you can assign the following field
 
 If you follow Scrum practices and estimate Remaining Work for your tasks and bugs, you can get a roll up of the amount of work remaining for each developer with the following query and chart. By using the In operator and including both Task and Bug, you include any bugs that are being tracked as tasks. 
 
-<img src="media/query-effort-tasks-bugs-list.png" alt="Query of tasks and bugs for sprint" style="border: 1px solid #C3C3C3;" />  
+<img src="media/query-effort-tasks-bugs-list.png" alt="Query of tasks and bugs for sprint" />  
 
 Add Remaining Work as a column option to the query and save. To view a sum of the remaining work, add a pivot chart as shown. 
 
@@ -206,7 +206,7 @@ Add Remaining Work as a column option to the query and save. To view a sum of th
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-<img src="media/example-query-config-chart-sum-remaining-work-pivot-chart.png" alt="Configure chart, sum of remaining work by developer, area, pivot chart" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/example-query-config-chart-sum-remaining-work-pivot-chart.png" alt="Configure chart, sum of remaining work by developer, area, pivot chart" /> 
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
@@ -357,7 +357,6 @@ For more information on using work items and queries, see:
 
 Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard. For other rollup requirements, see the following topics: 
 - [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md)  
-- [Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)  
 - [Create rollup charts with Power BI](../../report/powerbi/data-connector-connect.md)  
 
 <a id="category"/>

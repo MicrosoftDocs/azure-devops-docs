@@ -108,7 +108,7 @@ https://ServerName:8080/tfs/_home/About
 
 A page similar to the following example opens showing the version number.
 
-<img src="../media/version-tfs.png" alt="Azure DevOps Server About page, version number" style="border: 1px solid #CCCCCC;" />
+<img src="../media/version-tfs.png" alt="Azure DevOps Server About page, version number" />
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 
