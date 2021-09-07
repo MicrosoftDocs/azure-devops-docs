@@ -488,11 +488,6 @@ You need to set the environment variable AGENT_MTU_VALUE to set the MTU value, a
 This allows you to set up a network parameter for the job container, the use of this command is similar to the use of the next command while container network configuration:
 
 ```-o com.docker.network.driver.mtu=AGENT_MTU_VALUE```
-#### To set up environment variables on Windows:
-```setx AGENT_MTU_VALUE=<VALUE>```
-#### To set up environment variables on Linux:
-```export AGENT_MTU_VALUE=<VALUE>```
-
 
 ## Mounting volumes using Docker within a Docker container
 
