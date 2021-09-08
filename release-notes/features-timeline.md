@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 8/4/2021
+ms.date: 8/7/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -107,6 +107,18 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="10"><a href="2021/sprint-192-update.md" data-raw-source="[8 September 2021](2021/sprint-192-update.md)">8 September 2021</a></td>
+    <td>New YAML conditional expressions</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Support for wild cards in path filters</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Support for multiple statuses in Bitbucket</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Allow contributors to skip seeking PR comments prior to build validation</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Windows Server 2022 with Visual Studio 2022 is now available on Microsoft-hosted agents (preview)</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>General availability of macOS 11 Big Sur on Microsoft-hosted agents</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Removal of Ubuntu 16.04 image on Microsoft-hosted agents</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>New TFVC pages are generally available</td><td>Repos</td><td>Future</td></tr>
+    <td>Configure branch creators to not get "Manage permissions" on their branches</td><td>Repos</td><td>Future</td></tr>
+    <td>Prevent fork users from voting on their upstream PRs</td><td>Repos</td><td>Future</td></tr>
+    </tr>   
     <td rowspan="3"><a href="2021/sprint-191-update.md" data-raw-source="[19 August 2021](2021/sprint-191-update.md)">19 August 2021</a></td>
     <td>Improve web experience to better handle re-authentication requests</td><td>General</td><td>Future</td></tr>
     <td>Improvements to Delivery Plans</td><td>Boards</td><td>Future</td></tr>
