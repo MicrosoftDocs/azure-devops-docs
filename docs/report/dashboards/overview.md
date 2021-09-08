@@ -143,7 +143,7 @@ The steps to creating charts that track manual testing progress and results are 
  
 For details, see: 
 - [Create test plans and test suites](../../test/create-a-test-plan.md)
-- [Create manual test cases](../../test/create-test-case.md)
+- [Create manual test cases](../../test/create-test-cases.md)
 - [Track test status charts](../../test/track-test-status.md#charts) 
 
 **Sample light-weight test charts** 
@@ -178,21 +178,20 @@ You add widgets to a dashboard to display a chart, information, or set of links.
       - [Work links](widget-catalog.md#work-links-widget)  
       ---
       **Code** 
-      - [Code tile](widget-catalog.md#code-tile-widget) (Repository, Branch, Folder)
-      - [Pull request](widget-catalog.md#pull-request-widget) (Team)
+      - [Code tile](widget-catalog.md#code-tile-widget) 
+      - [Pull request](widget-catalog.md#pull-request-widget) 
    :::column-end:::
    :::column span="1":::
       **Build**
-      - [Chart for build history](widget-catalog.md#build-history-widget) (Build pipeline)
+      - [Chart for build history](widget-catalog.md#build-history-widget) 
       ---
       **Information and links**  
       - [Markdown](widget-catalog.md#markdown-widget)  
       - [Other links](widget-catalog.md#other-links-widget-2018)  
-      - [Team members](widget-catalog.md#team-members-widget) (Team) 
-      - [Team room](widget-catalog.md#team-room-widget) (Team) 
+      - [Team members](widget-catalog.md#team-members-widget) 
+      - [Team room](widget-catalog.md#team-room-widget)  
       - [Visual Studio Shortcuts](widget-catalog.md#visual-studio-widget) 
       - [Welcome](widget-catalog.md#how-to-widget) 
-      ::: moniker-end
    :::column-end:::
 :::row-end:::
 ---
@@ -352,17 +351,49 @@ To learn more about these reports, see one of the following articles:
 - [Team velocity](team-velocity.md)
 - [View/configure sprint burndown](configure-sprint-burndown.md)  
 
-::: moniker range=">= azure-devops-2020"
+
 
 <a id="incontext-reports" />  
 
-## In-context reports: Pipeline Failures and Test Failures
+::: moniker range=">= azure-devops-2019"
 
-Several in-context reports are provided for Azure Pipelines. These reports derive from Analytics data. Open a pipeline (or release summary for Test failure) to view the reports and select the **Analytics** tab. The summarized cards are present for all reports. You can click on the cards for a detailed report.
+## In-context reports: Pipelines and Test 
+
+Several in-context reports are provided for Azure Pipelines. These reports derive from Analytics data. Open a pipeline (or release summary for Test failure) to view the reports and select the **Analytics** tab. Choose **View full report** on a summary card for a detailed report.
 
 > [!div class="mx-imgBorder"]
 > ![Analytics Tab](../../pipelines/reports/media/pipelines-reports/analyticstab.png)
 
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+For more information on each in-context Analytics report for pipeline runs, see the following: 
+::: moniker-end
+::: moniker range="azure-devops"
+- [Historical graph for agent pools (Preview)](../../pipelines/agents/pool-consumption-report.md) 
+- [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report)
+- [Test pass rate report](../../pipelines/reports/pipelinereport.md#test-failures-report)
+- [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report)
+- [Test analytics for builds](../../pipelines/test/test-analytics.md)
+- [Test analytics for releases](../../pipelines/test/test-analytics.md)
+
+::: moniker-end
+ 
+::: moniker range="azure-devops-2020"
+- [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report)
+- [Test pass rate report](../../pipelines/reports/pipelinereport.md#test-failures-report)
+- [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report)
+- [Test analytics for builds](../../pipelines/test/test-analytics.md)
+- [Test analytics for releases](../../pipelines/test/test-analytics.md)
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+- [Test failures report](../../pipelines/reports/pipelinereport.md#test-failures-report)
+::: moniker-end
+
+
+::: moniker range=">= azure-devops-2020"
+In addition, you can use Power BI and OData to create reports based on pipeline and test data. For details, see [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md)
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -411,6 +442,24 @@ Learn more about the [Pipeline duration report](../../pipelines/reports/pipeline
 
 ::: moniker-end
 
+
+## Add custom work tracking fields
+
+::: moniker range="azure-devops"
+
+You can add data to support reporting requirements by [adding a custom field](../../organizations/settings/work/customize-process-field.md).   
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+You can add data to support reporting requirements by adding a custom field [Inheritance process](../../organizations/settings/work/customize-process-field.md) or [On-premises XML process](../../reference/add-modify-field.md).
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+You can add data to support reporting requirements by [adding a custom field](../../reference/add-modify-field.md).  
+::: moniker-end
+
 ::: moniker range=">= tfs-2015"
 
 ## Marketplace widgets and extensibility
@@ -432,23 +481,11 @@ Or, you can [create your own widget using the REST API](../../extend/develop/add
 
 ::: moniker-end
 
-### Add custom work tracking fields
 
-::: moniker range="azure-devops"
 
-You can add data to support reporting requirements by [adding a custom field](../../organizations/settings/work/customize-process-field.md).   
-::: moniker-end
+## Related articles
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-You can add data to support reporting requirements by adding a custom field [Inheritance process](../../organizations/settings/work/customize-process-field.md) or [On-premises XML process](../../reference/add-modify-field.md).
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-You can add data to support reporting requirements by [adding a custom field](../../reference/add-modify-field.md).  
-::: moniker-end
-
+- [Cross-service integration and collaboration overview](../../cross-service/cross-service-overview.md)
 
 [excel-adhoc-query-report]: ../create-status-and-trend-excel-reports.md
 [add-a-team]: ../../organizations/settings/add-teams.md
