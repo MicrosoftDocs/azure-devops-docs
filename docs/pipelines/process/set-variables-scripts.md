@@ -26,19 +26,20 @@ The `task.setvariable` command includes properties for setting a variable as sec
 
 To use the variable in the next stage, set the `isoutput` property to `true`. To reference a variable with the `isoutput` set to true, you'll include the task name. For example, `$(TaskName.myVar)`. 
 
-To set a variable as read only so that it can't be overwritten by downstream tasks, set `isreadonly` to `true`. Setting a variable as read only enhances securing by making that variable immutable. 
-#### Variable examples
+When you set a variable as read only it can't be overwritten by downstream tasks. Set `isreadonly` to `true`. Setting a variable as read only enhances securing by making that variable immutable. 
+
+## Variable examples
 
 # [Bash](#tab/bash)
 
-Set the variables:
+Set the variable `myVar` with the value `foo`. 
 
 ```yaml
 - bash: |
     echo "##vso[task.setvariable variable=myVar;]foo"
 ```
 
-Read the variables:
+Read the variable `myVar`:
 
 ```yaml
 - bash: |
@@ -47,17 +48,55 @@ Read the variables:
 
 # [PowerShell](#tab/powershell)
 
-Set the variables:
+Set the variable `myVar` with the value `foo`. 
 
 ```yaml
 - pwsh: |
     Write-Host "##vso[task.setvariable variable=myVar;]foo"
 ```
 
-Read the variables:
+Read the variable `myVar`:
 
 ```yaml
 - pwsh: |
     Write-Host "You can use macro syntax for variables: $(myVar)"
+```
+---
+
+## Set a variable as secret
+
+When `issecret` is set to true, the value of the variable will be saved as secret and masked out from log.
+
+# [Bash](#tab/bash)
+
+Set the secret variable `mySecretVal`.
+
+```yaml
+- bash: |
+    echo "##vso[task.setvariable variable=mySecretVal;issecret=true]secretvalue"
+```
+
+Get the secret variable `mySecretVal`.
+
+```yaml
+- bash: |
+    echo "##vso[task.setvariable variable=mySecretVal;issecret=true]secretvalue"
+- bash: |
+    echo $(mySecretVal)
+```
+# [PowerShell](#tab/powershell)
+
+Set the secret variable `mySecretVal`.
+```yaml
+- pwsh: |
+    Write-Host "##vso[task.setvariable variable=mySecretVal;issecret=true]secretvalue"
+```
+
+Get the secret variable `mySecretVal`.
+```yaml
+- pwsh: |
+    Write-Host "##vso[task.setvariable variable=mySecretVal;issecret=true]secretvalue"
+- pwsh: |
+    Write-Host $(mySecretVal)
 ```
 ---
