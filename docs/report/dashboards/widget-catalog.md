@@ -2,8 +2,8 @@
 title: Catalog of OOB widgets you can add to a dashboard
 titleSuffix: Azure DevOps
 description: Determine which widgets you want to add to your dashboards when working in Azure DevOps   
-ms.custom: dashboards
-ms.technology: devops-analytics
+ms.custom: dashboards, 
+ms.technology: devops-analytics, contperf-fy22q1
 ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
 ms.topic: conceptual
 ms.author: kaelli
