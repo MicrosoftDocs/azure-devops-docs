@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 07/14/2020
+ms.date: 09/07/2021
 ---
 
 # About dashboards, charts, reports, & widgets   
@@ -103,12 +103,17 @@ Each team can [add and configure multiple dashboards](dashboards.md) to share in
 
 <a id="monitor-progress">  </a>
 
-## Charts: Work tracking status and trends
+## Charts: Work tracking status and trends 
 
-With flat-list queries, you can create various charts to monitor status, progress, and trends. To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
+With flat-list queries, you can create various charts to monitor status, progress, and trends. Prior to monitoring work progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../../boards/backlogs/create-your-backlog.md). 
 
+You can open a shared query, create a chart and add it to the dashboard. Once it's been added to the dashboard, you can change the **Chart for work items** widget configuration to resize or change the chart parameters. Or, from the dashboard, you can add a **Chart for work items** widget and choose a shared query and set the chart parameters. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts. 
 
-### Sample Agile tool light-weight charts   
+For details, see: 
+- [Define a query](../../boards/queries/using-queries.md)
+- [Track progress with status and trend query-based charts](charts.md)  
+
+**Sample Agile tool light-weight charts**   
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -124,27 +129,28 @@ With flat-list queries, you can create various charts to monitor status, progres
 ::: moniker-end
 
 
-#### Sequence for adding query-based charts to a dashboard  
+**Sequence for adding query-based charts to a dashboard**  
 
 <em>Click a box below to open the corresponding article.</em> 
 
 [![Edit query](media/gs-chart-query.png)](../../boards/queries/using-queries.md)[![Create chart](media/gs-chart-create.png)](charts.md)[![Add chart to dashboard](media/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)   
 
-Prior to monitoring work progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../../boards/backlogs/create-your-backlog.md). 
+
 
 ## Charts: Manual testing progress, results, and trends  
 
-The steps to creating charts that track manual testing progress and results are similar to those for tracking work. The starting point, however, begins with the test plan rather than a query. For example, you can find out how many test cases are ready to run, or how many tests are passing and failing in each test suite. 
+The steps to creating charts that track manual testing progress and results are similar to those for tracking work. The starting point, however, begins with the test plan rather than a query. For example, you can find out how many test cases are ready to run, or how many tests are passing and failing in each test suite. And, just like work item query-based charts, you can add these charts to a dashboard. 
+ 
+For details, see: 
+- [Create test plans and test suites](../../test/create-a-test-plan.md)
+- [Create manual test cases](../../test/create-test-case.md)
+- [Track test status charts](../../test/track-test-status.md#charts) 
 
-### Sample light-weight test charts 
+**Sample light-weight test charts** 
   
 ![Web Team test plan is a chart that shows counts of test in various stages. Tests by Suite breaks down the same tests by test suite.](media/gs-monitor-test-charts.png)
 
-And, just like work item query-based charts, you can add these charts to a dashboard.  
-
-**Sequence for adding test progress and result charts to a dashboard**  
-
-[![Choose test chart type](media/gs-chart-test-type.png)](../../test/track-test-status.md)[![Create chart](media/gs-chart-create.png)](charts.md)[![Add chart to dashboard](media/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
+ 
 
 ::: moniker range=">= tfs-2015"
 
@@ -154,231 +160,42 @@ You add widgets to a dashboard to display a chart, information, or set of links.
 
 ::: moniker-end 
 
-
-::: moniker range=">= azure-devops-2019"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%"> 
-<strong>Boards</strong>
-<ul>
-<li><a href="widget-catalog.md#assigned-to-me-widget" data-raw-source="[Assigned to me](widget-catalog.md#assigned-to-me-widget)">Assigned to me</a></li>
-<li><a href="configure-burndown-burnup-widgets.md" data-raw-source="[Burndown chart](configure-burndown-burnup-widgets.md)">Burndown chart</a></li>
-<li><a href="configure-burndown-burnup-widgets.md" data-raw-source="[Burnup chart](configure-burndown-burnup-widgets.md)">Burnup chart</a> </li>
-<li><a href="widget-catalog.md#chart-wit-widget" data-raw-source="[Chart for work items](widget-catalog.md#chart-wit-widget)">Chart for work items</a></li>
-<li><a href="widget-catalog.md#cfd-widget" data-raw-source="[Cumulative flow diagram](widget-catalog.md#cfd-widget)">Cumulative flow diagram</a> </li>
-<li><a href="cycle-time-and-lead-time.md" data-raw-source="[Cycle time](cycle-time-and-lead-time.md)">Cycle time</a></li>
-<li><a href="cycle-time-and-lead-time.md" data-raw-source="[Lead time](cycle-time-and-lead-time.md)">Lead time</a> </li>
-<li><a href="widget-catalog.md#new-work-item-widget" data-raw-source="[New Work item](widget-catalog.md#new-work-item-widget)">New Work item</a></li>
-<li><a href="widget-catalog.md#query-results-widget" data-raw-source="[Query results](widget-catalog.md#query-results-widget)">Query results</a></li>
-<li><a href="widget-catalog.md#query-tile-widget" data-raw-source="[Query tile](widget-catalog.md#query-tile-widget)">Query tile</a></li>
-<li><a href="widget-catalog.md#sprint-burndown-widget" data-raw-source="[Sprint burndown](widget-catalog.md#sprint-burndown-widget)">Sprint burndown</a> </li>
-<li><a href="widget-catalog.md#sprint-capacity-widget" data-raw-source="[Sprint capacity](widget-catalog.md#sprint-capacity-widget)">Sprint capacity</a></li>
-<li><a href="widget-catalog.md#sprint-overview-widget" data-raw-source="[Sprint overview](widget-catalog.md#sprint-overview-widget)">Sprint overview</a> </li>
-<li><a href="team-velocity.md" data-raw-source="[Velocity](team-velocity.md)">Velocity</a> </li>
-<li><a href="widget-catalog.md#work-links-widget" data-raw-source="[Work links](widget-catalog.md#work-links-widget)">Work links</a></li>
-</ul>
-</td>
-<td width="33%">
-<strong>Repos</strong>
-<ul>
-<li><a href="widget-catalog.md#code-tile-widget" data-raw-source="[Code tile](widget-catalog.md#code-tile-widget)">Code tile</a></li>
-<li><a href="widget-catalog.md#pull-request-widget" data-raw-source="[Pull request](widget-catalog.md#pull-request-widget)">Pull request</a> </li>
-</ul>
-<strong>Pipelines</strong>
-<ul>
-<li><a href="widget-catalog.md#build-history-widget" data-raw-source="[Chart for build history](widget-catalog.md#build-history-widget)">Chart for build history</a></li>
-<li><a href="widget-catalog.md#deployment-status-widget" data-raw-source="[Deployment status](widget-catalog.md#deployment-status-widget)">Deployment status</a></li>
-<li><a href="widget-catalog.md#release-definition-widget" data-raw-source="[Release pipeline overview](widget-catalog.md#release-definition-widget)">Release pipeline overview</a></li>
-<li><a href="widget-catalog.md#requirements-quality-widget" data-raw-source="[Requirements quality](widget-catalog.md#requirements-quality-widget)">Requirements quality</a></li>
-</ul>
-<strong>Test Plans</strong>
-<li><a href="widget-catalog.md#chart-test-plan-widget" data-raw-source="[Chart for test plans](widget-catalog.md#chart-test-plan-widget)">Chart for test plans</a></li>
-<li><a href="widget-catalog.md#test-results-widget" data-raw-source="[Test results trend](widget-catalog.md#test-results-widget)">Test results trend</a></li>
-<li><a href="widget-catalog.md#test-trend-results-advanced" data-raw-source="[Test results trend (Advanced)](widget-catalog.md#test-trend-results-advanced)">Test results trend (Advanced)</a></li>
-</ul>
-</td>
-<td width="34%">
-<strong>Informational</strong>
-<ul>
-<li><a href="widget-catalog.md#embedded-webpage-widget" data-raw-source="[Embedded web page](widget-catalog.md#embedded-webpage-widget)">Embedded web page</a></li>
-<li><a href="widget-catalog.md#markdown-widget" data-raw-source="[Markdown](widget-catalog.md#markdown-widget)">Markdown</a></li>
-<li><a href="widget-catalog.md#other-links-widget" data-raw-source="[Other links](widget-catalog.md#other-links-widget)">Other links</a> </li>
-<li><a href="widget-catalog.md#team-members-widget" data-raw-source="[Team members](widget-catalog.md#team-members-widget)">Team members</a> </li>
-<li><a href="widget-catalog.md#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](widget-catalog.md#visual-studio-widget)">Visual Studio Shortcuts</a></li>
-<li><a href="widget-catalog.md#how-to-widget" data-raw-source="[Welcome](widget-catalog.md#how-to-widget)">Welcome</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
-
-
-::: moniker range="tfs-2018"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%"> 
-<strong>Boards</strong>
-<ul>
-<li><a href="widget-catalog.md#assigned-to-me-widget" data-raw-source="[Assigned to me](widget-catalog.md#assigned-to-me-widget)">Assigned to me</a></li>
-<li><a href="widget-catalog.md#chart-wit-widget" data-raw-source="[Chart for work items](widget-catalog.md#chart-wit-widget)">Chart for work items</a></li>
-<li>Cumulative flow diagram</li>
-<li><a href="widget-catalog.md#new-work-item-widget" data-raw-source="[New Work item](widget-catalog.md#new-work-item-widget)">New Work item</a> </li>
-<li><a href="widget-catalog.md#query-results-widget" data-raw-source="[Query results](widget-catalog.md#query-results-widget)">Query results</a></li>
-<li><a href="widget-catalog.md#query-tile-widget" data-raw-source="[Query tile](widget-catalog.md#query-tile-widget)">Query tile</a></li>
-<li><a href="widget-catalog.md#sprint-burndown-widget" data-raw-source="[Sprint burndown](widget-catalog.md#sprint-burndown-widget)">Sprint burndown</a> </li>
-<li><a href="widget-catalog.md#sprint-capacity-widget" data-raw-source="[Sprint capacity](widget-catalog.md#sprint-capacity-widget)">Sprint capacity</a> </li>
-<li><a href="widget-catalog.md#sprint-overview-widget" data-raw-source="[Sprint overview](widget-catalog.md#sprint-overview-widget)">Sprint overview</a></li>
-<li><a href="widget-catalog.md#work-links-widget" data-raw-source="[Work links](widget-catalog.md#work-links-widget)">Work links</a></li>
-</ul>
-</td>
-<td width="33%">
-<strong>Repos</strong>
-<ul>
-<li><a href="widget-catalog.md#code-tile-widget" data-raw-source="[Code tile](widget-catalog.md#code-tile-widget)">Code tile</a></li>
-<li><a href="widget-catalog.md#pull-request-widget" data-raw-source="[Pull request](widget-catalog.md#pull-request-widget)">Pull request</a> </li>
-</ul>
-<strong>Pipelines</strong>
-<ul>
-<li><a href="widget-catalog.md#build-history-widget" data-raw-source="[Chart for build history](widget-catalog.md#build-history-widget)">Chart for build history</a></li>
-<li><a href="widget-catalog.md#deployment-status-widget" data-raw-source="[Deployment status](widget-catalog.md#deployment-status-widget)">Deployment status</a></li>
-<li>Release pipeline overview</li>
-<li><a href="widget-catalog.md#requirements-quality-widget" data-raw-source="[Requirements quality](widget-catalog.md#requirements-quality-widget)">Requirements quality</a></li>
-</ul>
-<strong>Test Plans</strong>
-<li><a href="widget-catalog.md#chart-test-plan-widget" data-raw-source="[Chart for test plans](widget-catalog.md#chart-test-plan-widget)">Chart for test plans</a></li>
-<li><a href="widget-catalog.md#test-results-widget" data-raw-source="[Test results trend](widget-catalog.md#test-results-widget)">Test results trend</a></li>
-<li>Test results trend (Advanced)</li>
-</ul>
-</td>
-<td width="34%">
-<strong>Informational</strong>
-<ul>
-<li><a href="widget-catalog.md#embedded-webpage-widget" data-raw-source="[Embedded web page](widget-catalog.md#embedded-webpage-widget)">Embedded web page</a></li>
-<li><a href="widget-catalog.md#markdown-widget" data-raw-source="[Markdown](widget-catalog.md#markdown-widget)">Markdown</a></li>
-<li><a href="widget-catalog.md#other-links-widget" data-raw-source="[Other links](widget-catalog.md#other-links-widget)">Other links</a> </li>
-<li><a href="widget-catalog.md#team-members-widget" data-raw-source="[Team members](widget-catalog.md#team-members-widget)">Team members</a> </li>
-<li>Team room</li>	
-<li><a href="widget-catalog.md#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](widget-catalog.md#visual-studio-widget)">Visual Studio Shortcuts</a></li>
-<li><a href="widget-catalog.md#how-to-widget" data-raw-source="[Welcome](widget-catalog.md#how-to-widget)">Welcome</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
-
-
-
-::: moniker range="tfs-2017"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%"> 
-<strong>Work</strong>
-<ul>
-<li><a href="widget-catalog.md#assigned-to-me-widget" data-raw-source="[Assigned to me](widget-catalog.md#assigned-to-me-widget)">Assigned to me</a> </li>
-<li><a href="widget-catalog.md#chart-wit-widget" data-raw-source="[Chart for work items](widget-catalog.md#chart-wit-widget)">Chart for work items</a></li>
-<li><a href="widget-catalog.md#new-work-item-widget" data-raw-source="[New Work item](widget-catalog.md#new-work-item-widget)">New Work item</a> </li>
-<li><a href="widget-catalog.md#query-results-widget" data-raw-source="[Query results](widget-catalog.md#query-results-widget)">Query results</a></li>
-<li><a href="widget-catalog.md#query-tile-widget" data-raw-source="[Query tile](widget-catalog.md#query-tile-widget)">Query tile</a></li>
-<li><a href="widget-catalog.md#sprint-burndown-widget" data-raw-source="[Sprint burndown](widget-catalog.md#sprint-burndown-widget)">Sprint burndown</a> </li>
-<li><a href="widget-catalog.md#sprint-capacity-widget" data-raw-source="[Sprint capacity](widget-catalog.md#sprint-capacity-widget)">Sprint capacity</a> </li>
-<li><a href="widget-catalog.md#sprint-overview-widget" data-raw-source="[Sprint overview](widget-catalog.md#sprint-overview-widget)">Sprint overview</a></li>
-<li><a href="widget-catalog.md#work-links-widget" data-raw-source="[Work links](widget-catalog.md#work-links-widget)">Work links</a></li>
-</ul>
-
-</td>
-<td width="33%">
-<strong>Code</strong>
-<ul>
-<li><a href="widget-catalog.md#code-tile-widget" data-raw-source="[Code tile](widget-catalog.md#code-tile-widget)">Code tile</a></li>
-<li><a href="widget-catalog.md#pull-request-widget" data-raw-source="[Pull request](widget-catalog.md#pull-request-widget)">Pull request</a> </li>
-</ul>
-<strong>Build &amp; Release</strong>
-<ul>
-<li><a href="widget-catalog.md#build-history-widget" data-raw-source="[Chart for build history](widget-catalog.md#build-history-widget)">Chart for build history</a></li>
-<li><a href="widget-catalog.md#deployment-status-widget" data-raw-source="[Deployment status](widget-catalog.md#deployment-status-widget)">Deployment status</a></li>
-<li><a href="widget-catalog.md#requirements-quality-widget" data-raw-source="[Requirements quality](widget-catalog.md#requirements-quality-widget)">Requirements quality</a></li>
-</ul>
-<strong>Test</strong>
-<ul>
-<li><a href="widget-catalog.md#chart-test-plan-widget" data-raw-source="[Chart for test plans](widget-catalog.md#chart-test-plan-widget)">Chart for test plans</a></li>
-<li><a href="widget-catalog.md#test-results-widget" data-raw-source="[Test results trend](widget-catalog.md#test-results-widget)">Test results trend</a></li>
-</ul>
-</td>
-<td width="34%">
-<strong>Informational</strong>
-<ul>
-<li><a href="widget-catalog.md#embedded-webpage-widget" data-raw-source="[Embedded web page](widget-catalog.md#embedded-webpage-widget)">Embedded web page</a></li>
-<li><a href="widget-catalog.md#markdown-widget" data-raw-source="[Markdown](widget-catalog.md#markdown-widget)">Markdown</a></li>
-<li><a href="widget-catalog.md#other-links-widget" data-raw-source="[Other links](widget-catalog.md#other-links-widget)">Other links</a> </li>
-<li><a href="widget-catalog.md#team-members-widget" data-raw-source="[Team members](widget-catalog.md#team-members-widget)">Team members</a></li>
-<li><a href="widget-catalog.md#team-room-widget" data-raw-source="[Team room](widget-catalog.md#team-room-widget)">Team room</a></li>
-<li><a href="widget-catalog.md#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](widget-catalog.md#visual-studio-widget)">Visual Studio Shortcuts</a></li>
-<li><a href="widget-catalog.md#how-to-widget" data-raw-source="[Welcome](widget-catalog.md#how-to-widget)">Welcome</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
-
+[!INCLUDE [temp](../includes/widgets-oob.md)]
 
 ::: moniker range="tfs-2015"
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%"> 
-<strong>Work</strong>
-<ul>
-<li>Assigned to me</li>	
-<li><a href="widget-catalog.md#chart-wit-widget" data-raw-source="[Chart for work items](widget-catalog.md#chart-wit-widget)">Chart for work items</a></li>
-<li><a href="widget-catalog.md#new-work-item-widget" data-raw-source="[New Work item](widget-catalog.md#new-work-item-widget)">New Work item</a> </li>
-<li><a href="widget-catalog.md#query-results-widget" data-raw-source="[Query results](widget-catalog.md#query-results-widget)">Query results</a></li>
-<li><a href="widget-catalog.md#query-tile-widget" data-raw-source="[Query tile](widget-catalog.md#query-tile-widget)">Query tile</a></li>
-<li><a href="widget-catalog.md#sprint-burndown-widget" data-raw-source="[Sprint burndown](widget-catalog.md#sprint-burndown-widget)">Sprint burndown</a> </li>
-<li><a href="widget-catalog.md#sprint-capacity-widget" data-raw-source="[Sprint capacity](widget-catalog.md#sprint-capacity-widget)">Sprint capacity</a> </li>
-<li><a href="widget-catalog.md#sprint-overview-widget" data-raw-source="[Sprint overview](widget-catalog.md#sprint-overview-widget)">Sprint overview</a> </li>
-<li><a href="widget-catalog.md#work-links-widget" data-raw-source="[Work links](widget-catalog.md#work-links-widget)">Work links</a></li>
-</ul>
-</td>
-<td width="33%">
-<strong>Code</strong>
-<ul>
-<li><a href="widget-catalog.md#code-tile-widget" data-raw-source="[Code tile](widget-catalog.md#code-tile-widget)">Code tile</a></li>
-<li><a href="widget-catalog.md#pull-request-widget" data-raw-source="[Pull request](widget-catalog.md#pull-request-widget)">Pull request</a> </li>
-</ul>
-<strong>Build</strong>
-<ul>
-<li><a href="widget-catalog.md#build-history-widget" data-raw-source="[Chart for build history](widget-catalog.md#build-history-widget)">Chart for build history</a></li>
-</ul>
-<br/>
-</td>
-<td width="34%">
-<strong>Other</strong>
-<ul>
-<li>Embedded web page</li>	
-<li><a href="widget-catalog.md#markdown-widget" data-raw-source="[Markdown](widget-catalog.md#markdown-widget)">Markdown</a></li>
-<li><a href="widget-catalog.md#other-links-widget" data-raw-source="[Other links](widget-catalog.md#other-links-widget)">Other links</a></li>
-<li><a href="widget-catalog.md#team-members-widget" data-raw-source="[Team members](widget-catalog.md#team-members-widget)">Team members</a> </li>
-<li><a href="widget-catalog.md#team-room-widget" data-raw-source="[Team room](widget-catalog.md#team-room-widget)">Team room</a> </li>
-<li><a href="widget-catalog.md#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](widget-catalog.md#visual-studio-widget)">Visual Studio Shortcuts</a></li>
-<li><a href="widget-catalog.md#how-to-widget" data-raw-source="[Welcome](widget-catalog.md#how-to-widget)">Welcome</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+---
+:::row:::
+   :::column span="1":::
+      **Work**
+      - [Chart for work items](widget-catalog.md#chart-wit-widget)  
+      - [New Work item](widget-catalog.md#new-work-item-widget)  
+      - [Query results](widget-catalog.md#query-results-widget)  
+      - [Query tile](widget-catalog.md#query-tile-widget)  
+      - [Sprint burndown](widget-catalog.md#sprint-burndown-widget)  
+      - [Sprint capacity](widget-catalog.md#sprint-capacity-widget)  
+      - [Sprint overview](widget-catalog.md#sprint-overview-widget)  
+      - [Work links](widget-catalog.md#work-links-widget)  
+      ---
+      **Code** 
+      - [Code tile](widget-catalog.md#code-tile-widget) (Repository, Branch, Folder)
+      - [Pull request](widget-catalog.md#pull-request-widget) (Team)
+   :::column-end:::
+   :::column span="1":::
+      **Build**
+      - [Chart for build history](widget-catalog.md#build-history-widget) (Build pipeline)
+      ---
+      **Information and links**  
+      - [Markdown](widget-catalog.md#markdown-widget)  
+      - [Other links](widget-catalog.md#other-links-widget-2018)  
+      - [Team members](widget-catalog.md#team-members-widget) (Team) 
+      - [Team room](widget-catalog.md#team-room-widget) (Team) 
+      - [Visual Studio Shortcuts](widget-catalog.md#visual-studio-widget) 
+      - [Welcome](widget-catalog.md#how-to-widget) 
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
+---
 
 ::: moniker-end
 
@@ -388,15 +205,21 @@ You add widgets to a dashboard to display a chart, information, or set of links.
 
 ![Sprint capacity widget](media/widget-sprint-capacity.png)  ![Sprint burndown widget](media/widget-sprint-burndown.png)   
 
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 ### Sprint scope change
 
 There is no chart or widget that tracks changes to sprint scope. However, you can determine work items added to a sprint or moved out of a sprint using the Query Editor. To learn how, see [About Sprints, Scrum and project management, Sprint scope change](../../boards/sprints/scrum-overview.md#sprint-scope-change). 
 
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
 ### Sample Cumulative Flow Diagram widget 
 
 ![Cumulative flow diagram widget](media/cfd-exampe-rolling-30-days.png)   
-
 
 ::: moniker-end
 
@@ -404,7 +227,7 @@ There is no chart or widget that tracks changes to sprint scope. However, you ca
 
 ### Monitor code activity, build progress and deployment status
 
-With the code tile widgets, you can monitor the activity occurring within a repo or branch folder. Build history displays a histogram of all builds run for a specific build pipeline. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
+With the code tile widgets, you can monitor the activity occurring within a repository or branch folder. Build history displays a histogram of all builds run for a specific build pipeline. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
 
 **Code, build, and release chart widgets**  
 
@@ -413,48 +236,43 @@ With the code tile widgets, you can monitor the activity occurring within a repo
 
 ::: moniker-end
 
+
+::: moniker range=">= azure-devops-2019"
+
+### Analytics widgets and reports 
+
+::: moniker-end
+
 ::: moniker range=">= azure-devops-2020"
 
-### Analytics widgets
+The Analytics service is the reporting platform for Azure DevOps. As described in [What is the Analytics service?](../powerbi/what-is-analytics.md), it replaces the previous platform based on SQL Server Reporting Services. The Analytics service supports Analytics widgets, [in-context Analytics reports](#work-tracking-analytics), and [Analytics views for Power BI reporting](../powerbi/what-are-analytics-views.md). 
 
-Analytics widgets provide rich data based on the Analytics data. Analytics is available to all organizations using Azure DevOps Services. 
-
-#### Sample Lead time widget 
-
-![Lead time widget](media/lead-time-control-chart.png) 
-
-To learn more, see the following articles: 
-- [What is Analytics?](../powerbi/what-is-analytics.md)
-- [Widgets based on Analytics data](../dashboards/analytics-widgets.md)
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-### Analytics and Analytics widgets
+The Analytics service is the reporting platform for Azure DevOps. As described in [What is the Analytics service?](../powerbi/what-is-analytics.md), it replaces the previous platform based on SQL Server Reporting Services. The Analytics service supports Analytics widgets and [Analytics views for Power BI reporting](../powerbi/what-are-analytics-views.md). 
 
-Analytics is in preview for Azure DevOps Server 2019. 
+> [!NOTE]   
+> Analytics is in preview for Azure DevOps Server 2019 and generally available for Azure DevOps Server 2020 and later versions.  
 
-#### Sample Lead time widget 
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+**Sample Lead time widget**
 
 ![Lead time widget](media/lead-time-control-chart.png) 
 
 To learn more, see the following articles: 
 - [Widgets based on Analytics](../dashboards/analytics-widgets.md)  
--  [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-dashboard.md#add-analytics-widget)  
-- [What is Analytics?](../powerbi/what-is-analytics.md)  
+- [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-dashboard.md#add-analytics-widget)  
 
 ::: moniker-end
 
+ 
 
-::: moniker range=">= tfs-2015"
 
-### Marketplace widgets
-
-In addition to the widgets available to your from the widget catalog, you may find additional widgets of interest from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
-
-Or, you can [create your own widget using the REST API](../../extend/develop/add-dashboard-widget.md). 
-
-::: moniker-end
 
 <a id="work-tracking-analytics" />
 
@@ -595,6 +413,16 @@ Learn more about the [Pipeline duration report](../../pipelines/reports/pipeline
 
 ::: moniker range=">= tfs-2015"
 
+## Marketplace widgets and extensibility
+
+In addition to the widgets available to your from the widget catalog, you may find additional widgets of interest from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
+
+Or, you can [create your own widget using the REST API](../../extend/develop/add-dashboard-widget.md). 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
+
 ## Try this next
 
 > [!div class="nextstepaction"]
@@ -621,13 +449,6 @@ You can add data to support reporting requirements by adding a custom field [Inh
 You can add data to support reporting requirements by [adding a custom field](../../reference/add-modify-field.md).  
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
-
-### Extensibility 
-
-Using the REST API service, you can [create a custom widget](../../extend/develop/add-dashboard-widget.md). 
-
-::: moniker-end
 
 [excel-adhoc-query-report]: ../create-status-and-trend-excel-reports.md
 [add-a-team]: ../../organizations/settings/add-teams.md
