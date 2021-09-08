@@ -6,6 +6,8 @@
     - name: 2021
       expanded: true
       items:
+        - name: September 8
+          href: 2021/sprint-192-update.md
         - name: August 19
           href: 2021/sprint-191-update.md
         - name: August 4
@@ -20,9 +22,9 @@
           href: 2021/sprint-185-update.md
         - name: March 23
           href: 2021/sprint-184-update.md
-        - name: March 03
+        - name: March 3
           href: 2021/sprint-183-update.md
-        - name: February 04
+        - name: February 4
           href: 2021/sprint-182-update.md
         - name: January 14
           href: 2021/sprint-181-update.md
@@ -493,6 +495,8 @@
     - name: 2021
       expanded: false
       items:
+        - name: September 8
+          href: 2021/repos/sprint-192-update.md
         - name: June 17
           href: 2021/repos/sprint-188-update.md
         - name: March 23
@@ -549,6 +553,8 @@
     - name: 2021
       expanded: false
       items:
+        - name: September 8
+          href: 2021/pipelines/sprint-192-update.md
         - name: August 19
           href: 2021/pipelines/sprint-191-update.md
         - name: August 4
@@ -561,9 +567,9 @@
           href: 2021/pipelines/sprint-186-update.md
         - name: March 23
           href: 2021/pipelines/sprint-184-update.md
-        - name: March 03
+        - name: March 3
           href: 2021/pipelines/sprint-183-update.md
-        - name: February 04
+        - name: February 4
           href: 2021/pipelines/sprint-182-update.md
         - name: January 14
           href: 2021/pipelines/sprint-181-update.md
