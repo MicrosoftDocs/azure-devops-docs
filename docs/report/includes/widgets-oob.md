@@ -12,7 +12,7 @@ Widgets are annotated as follows:
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-- **Analytics**: Widget derives data from [Analytics data](../report/powerbi/what-is-analytics.md)  
+- **Analytics**: Widget derives data from [Analytics data](../powerbi/what-is-analytics.md)  
 - **Build**: Widget derives data for a selected build pipeline  
 - **Project**: indicates you can select the project and team when configuring the widget
 - **Release**: Widget derives data for a selected release pipeline  
