@@ -355,7 +355,7 @@ To learn more about these reports, see one of the following articles:
 
 <a id="incontext-reports" />  
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2020"
 
 ## In-context reports: Pipelines and Test 
 
@@ -364,11 +364,10 @@ Several in-context reports are provided for Azure Pipelines. These reports deriv
 > [!div class="mx-imgBorder"]
 > ![Analytics Tab](../../pipelines/reports/media/pipelines-reports/analyticstab.png)
 
-::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
 For more information on each in-context Analytics report for pipeline runs, see the following: 
 ::: moniker-end
+
 ::: moniker range="azure-devops"
 - [Historical graph for agent pools (Preview)](../../pipelines/agents/pool-consumption-report.md) 
 - [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report)
@@ -387,24 +386,9 @@ For more information on each in-context Analytics report for pipeline runs, see 
 - [Test analytics for releases](../../pipelines/test/test-analytics.md)
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-- [Test failures report](../../pipelines/reports/pipelinereport.md#test-failures-report)
-::: moniker-end
-
 
 ::: moniker range=">= azure-devops-2020"
 In addition, you can use Power BI and OData to create reports based on pipeline and test data. For details, see [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md)
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-## In-context reports: Pipeline Test Failures
-
-Azure Pipelines provides an in-context Test failures report, derived from Analytics data. Open a release summary to view the report and select the **Analytics** tab. Select the summarized card for a detailed report.
-
-> [!div class="mx-imgBorder"]
-> ![Analytics Tab](../../pipelines/reports/media/pipelines-reports/analyticstab-server-2019.png)
-
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
@@ -418,7 +402,6 @@ The **Pipeline pass rate** report provides a trend of pipeline failure and task 
 
 Learn more about the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report).
 
-::: moniker-end
 
 ### Test failures report
 
@@ -428,8 +411,6 @@ The **Test failures** report provides a granular view of the top failing tests i
 > ![Test analytics detail view](../../pipelines/test/media/test-analytics/test-failures.png)
 
 Learn more about the [Test failures report](../../pipelines/test/test-analytics.md#test-failures).
-
-::: moniker range=">= azure-devops-2020"
 
 ### Pipeline duration report
 
@@ -442,6 +423,17 @@ Learn more about the [Pipeline duration report](../../pipelines/reports/pipeline
 
 ::: moniker-end
 
+
+::: moniker range="azure-devops-2019"
+
+## In-context reports: Pipeline Test Failures
+
+Azure Pipelines provides an in-context Test failures report, derived from Analytics data. Open a release summary to view the report and select the **Analytics** tab. Select the summarized card for a detailed report. To learn more, see [Test failures report](../../pipelines/reports/pipelinereport.md#test-failures-report).
+
+> [!div class="mx-imgBorder"]
+> ![Analytics Tab, Azure DevOps Server 2019](../../pipelines/reports/media/pipelines-reports/analyticstab-server-2019.png)
+
+::: moniker-end
 
 ## Add custom work tracking fields
 
