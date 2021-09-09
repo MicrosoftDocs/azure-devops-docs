@@ -192,7 +192,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 1. Open **Test>Test Plans** and then **Charts** and select the dashboard to add the test chart to.  
 
 	![Select the dashboard to add the test chart to.](media/add-a-chart-test-plan.png)  
-   ::: moniker-end
+::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 <a id="test-quality"></a>  
@@ -266,7 +266,6 @@ Requires TFS 2015.2 or later version.
 ::: moniker-end
 
 ::: moniker range="> tfs-2015 <= tfs-2018"
-<!-- TODO: Update image - I don't think this is supported for latest version-->
 <img src="../../project/wiki/media/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code, README file, Add Markdown page to a dashboard" />
 ::: moniker-end
 
