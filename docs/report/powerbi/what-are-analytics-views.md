@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/14/2020
+ms.date: 09/08/2021
 ---
 
 
@@ -15,16 +15,11 @@ ms.date: 07/14/2020
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=865481  --> 
 
-An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. 
+An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. **Analytics views** only support Azure Boards data (work items). Analytics views don't support other data types, such as pipelines and tests.  Each view corresponds to a flat-list of work items. Work item hierarchies aren't supported. 
 
-[!INCLUDE [temp](includes/analytics-views-warning.md)]
-
-Each view defines a dataset designed to support viewing, sharing, and publishing work tracking data for Azure DevOps through Power BI. You can use default Analytics views or create custom views and open the view using the [Power BI Data Connector](data-connector-connect.md). You create custom views in the web portal for Azure DevOps. 
-
-You can use the [default Analytics views](analytics-default-views.md) we provide or [create your own custom views](analytics-views-create.md).
+You can use a [default Analytics view](analytics-default-views.md) or [create a custom view](analytics-views-create.md). You create custom views in the web portal for Azure DevOps. Once you've defined a view that supports the data of interest, you can then open the view using [Power BI Data Connector](data-connector-connect.md) to create a report. 
 
 [!INCLUDE [temp](../includes/boards-disabled.md)]
 
