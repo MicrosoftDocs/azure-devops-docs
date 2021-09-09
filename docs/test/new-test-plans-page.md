@@ -1,6 +1,6 @@
 ---
-title: New test plans page   
-description: New Test Plans page
+title: Navigate Test Plans  
+description: Learn how to navigate Test Plans.
 ms.assetid: FFBBD2F9-C1C5-4273-916A-28834B794CC3
 ms.technology: devops-test
 ms.topic: conceptual
@@ -9,41 +9,34 @@ author: steved0x
 ms.date: 06/12/2020
 monikerRange: '>=azure-devops-2020'
 ---
-# New Test Plans page
+
+
+# Navigate Test Plans 
 
 [!INCLUDE [version-2020-rtm](includes/version-2020-rtm.md)]
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
-
-A new Test Plans Page (Test Plans*) for your planned testing needs is available for Azure DevOps Services and Azure DevOps Server 2020. The new page provides you with streamlined views to help you focus on the task at hand - be it test planning, authoring, execution, or tracking. It is also clutter-free and consistent with the rest of Azure DevOps offering. We hope that you find it easy and intuitive to use.
-
-This new page has been in public preview for past few quarters and is the default for all Test Plans users. During this time, we have continued to add the missing features/capabilities and address the feedback you have been providing us. We are almost towards the end of this journey and now are ready to pull out the old page by **the end of November 2020**. We highly recommend leveraging the new page and [sharing your feedback](#feedback) with us. However, if you absolutely need to leverage the prior page then enable it using the information provided in [Manage or enable features](../project/navigation/preview-features.md).
-
-## Overview
-
-
-> [!NOTE]   
-> Any action performed in either page will reflect on the other too since the backend data store is the same.
-
-
-:::image type="content" source="media/new-test-plans-page/test-plan-overview.png" alt-text="test plan overview page":::
-
-The new Test Plans page has total of six sections of which the first four are new, while the Charts & Extensibility sections are the existing functionality. 
-1. **Test plan header**: Use this to locate, favorite, edit, copy or clone a test plan.
-2. **Test suites tree**: Use this to add, manage, export, or order test suites. Leverage this to also assign configurations and perform user acceptance testing.
+Learn how to navigate Test Plans to support your test goals and operations. Use the following sections of the Test Plans page to accomplish the corresponding tasks. 
+ 
+1. **Test plan header**: Locate, favorite, edit, copy or clone a test plan.
+2. **Test suites tree**: Add, manage, export, or order test suites. Leverage this to also assign configurations and perform user acceptance testing.
 3. **Define tab**: Collate, add, and manage test cases in a test suite of choice via this tab.
 4. **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
 5. **Chart tab**: Track test execution and status via charts, which can also be pinned to dashboards.
-6. **Extensibility**: Supports the [current extensibility points](../extend/overview.md) within the product.
+6. **Extensibility**: Supports [extensibility points](../extend/overview.md) added to Test Plans.
+ 
+ 
+:::image type="content" source="media/navigate/test-plan-overview.png" alt-text="test plan overview page":::
 
-Lets take a broad stroke view of these new sections below.
+ 
 
+[!INCLUDE [prerequisites](includes/prerequisites.md)] 
 
+ 
 <a name="testplanheader"></a>
 
 ## Test plan header
 
-:::image type="content" source="media/new-test-plans-page/test-plan-header.png" alt-text="test plan header page":::
+:::image type="content" source="media/navigate/test-plan-header.png" alt-text="test plan header page":::
 
 **Tasks** 
 
@@ -68,7 +61,7 @@ The context menu on the Test Plan header provides the following options:
 
 ***Copy test plan (new capability)***
 
-:::image type="content" source="media/new-test-plans-page/copy-test-plan-dialog.png" alt-text="copy test plan page":::
+:::image type="content" source="media/navigate/copy-test-plan-dialog.png" alt-text="copy test plan page":::
 
 We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging 'Copy test plan' capability, you can copy or clone test plans within the project. Its backing REST API is covered [here](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1&preserve-view=true). The API lets you copy/clone a test plan across projects too.<br>
 For more guidelines on Test Plans usage, refer [here](/archive/blogs/visualstudioalmrangers/test-planning-and-management-guide-updated).
@@ -78,7 +71,7 @@ For more guidelines on Test Plans usage, refer [here](/archive/blogs/visualstudi
 
 ## Test suites tree
 
-:::image type="content" source="media/new-test-plans-page/test-suites-tree.png" alt-text="test suites tree page":::
+:::image type="content" source="media/navigate/test-suites-tree.png" alt-text="test suites tree page":::
 
 **Tasks** 
 
@@ -107,7 +100,7 @@ The context menu on the Test suites tree provides the following options:
 
 ***Import test suites (new capability)***
 
-:::image type="content" source="media/new-test-plans-page/import-test-suites.png" alt-text="test suites tree import page":::
+:::image type="content" source="media/navigate/import-test-suites-dialog.png" alt-text="test suites tree import page":::
 
 It is now easier to reuse the suites you have created already and import them into the current suite/plan. You can select the project, test plan, and test suite from which you want to import the tests. Depending upon the suite selected, the entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone/copy. 
 
@@ -116,16 +109,17 @@ It is now easier to reuse the suites you have created already and import them in
 
 ## Define tab
 
-:::image type="content" source="media/new-test-plans-page/define-tab-toolbar.png" alt-text="define tab page":::
+:::image type="content" source="media/navigate/define-tab-tasks.png" alt-text="Define tab tasks.":::
 
-Define tab lets you collate, add, and manage test cases for a test suite. Whereas the execute tab is for assigning test points and executing them. 
+From the **Define** tab, you can collate, add, and manage test cases for a test suite. Whereas you use the **Execute** tab for assigning test points and executing them. 
 
-> The Define tab and certain operations are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Everything else should be exercisable by a user with 'Basic' access level.
+> [!NOTE]   
+> Select **Define** tab operations are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Users with **Basic** access can exercise other tasks.
 
 
-**Tasks** 
+### Tasks 
 
-The Define tab allows you to perform the following tasks:
+From the **Define** tab you can exercise the following tasks:
 
 - *Add New test case using work item form*: This option allows you to create a new test case using the work item form. The test case created will automatically be added to the suite. 
 - *Add New test case using grid*: This option allows you to create one or more test cases using the test cases grid view. The test cases created will automatically be added to the suite. 
@@ -139,11 +133,11 @@ The Define tab allows you to perform the following tasks:
 - *Column options*: You can manage the list of columns visible in the Define tab using "Column options". The list of columns available for selection are primarily the fields from the test case work item form. 
 
 
-**Context menu options**
+### Context menu options 
 
-:::image type="content" source="media/new-test-plans-page/define-tab-context-menu.png" alt-text="define tab context menu page":::
+:::image type="content" source="media/navigate/define-tab-context-menu.png" alt-text="Define tab context menu page.":::
 
-The context menu on the Test case node within the Define tab provides the following options:
+The context menu on the Test case node within the **Define** tab provides the following options:
 
 - *Open/edit test case work item form*: This option allows you to edit a Test case using the work item form wherein you edit the work item fields including test steps.
 - *Edit test cases*: This option allows you to bulk edit Test case work item fields. However, you cannot use this option to bulk edit test steps. 
@@ -154,16 +148,16 @@ The context menu on the Test case node within the Define tab provides the follow
 - *View linked items*: This option allows you to look at the linked items for a given test case. See below for more details. 
 
 
-***Copy/clone test cases (new capability)***
+### Copy/clone test cases 
 
-:::image type="content" source="media/new-test-plans-page/copy-test-cases.png" alt-text="define tab copy test cases page":::
+:::image type="content" source="media/navigate/copy-test-cases.png" alt-text="Define tab copy test cases menu option and dialog.":::
 
 For scenarios where you want to copy/clone a test case, you can use the "Copy test case" option. You can specify the destination project, destination test plan and destination test suite in which to create the copy/cloned test case. In addition, you can also specify whether you want to include existing links/attachments to flow into the cloned copy. 
 
 
-***View linked items (new capability)***
+### View linked item 
 
-:::image type="content" source="media/new-test-plans-page/view-linked-items.png" alt-text="define tab view linked items page":::
+:::image type="content" source="media/navigate/view-linked-items.png" alt-text="define tab view linked items page":::
 
 Traceability among test artifacts, requirements and bugs is a critical value proposition of the Test Plans product. Using the "View linked items" option, you can easily look at all the linked Requirements that this test case is linked with, all the Test suites/Test plans where this test case has been used and all the bugs that have been filed as part of test execution. 
 
@@ -172,7 +166,7 @@ Traceability among test artifacts, requirements and bugs is a critical value pro
 
 ## Execute tab
 
-:::image type="content" source="media/new-test-plans-page/execute-tab-toolbar.png" alt-text="execute tab page":::
+:::image type="content" source="media/navigate/execute-tab-toolbar.png" alt-text="execute tab page":::
 
 Define tab lets you collate, add and manage test cases for a test suite. Whereas the execute tab is for assigning test points and executing them. 
 
@@ -184,7 +178,7 @@ One of the primary benefits of the new page is for users who mainly do test exec
 > The Define tab and certain operations are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Everything else, including the "Execute" tab should be exercisable by a user with 'Basic' access level.
 
 
-**Tasks** 
+### Tasks 
 
 The Execute tab allows you to perform the following tasks:
 
@@ -195,9 +189,9 @@ The Execute tab allows you to perform the following tasks:
 - *Filtering*: Using the filter bar, you can filter the list of test points using the fields of "test case title", "assigned to", "state", "test outcome", "Tester" and "Configuration". You can also sort the list by clicking on the column headers.
 
 
-**Context menu options**
+### Context menu options 
 
-:::image type="content" source="media/new-test-plans-page/execute-tab-context-menu.png" alt-text="execute tab context menu page":::
+:::image type="content" source="media/navigate/execute-tab-context-menu.png" alt-text="execute tab context menu page":::
 
 The context menu on the Test point node within the Execute tab provides the following options:
 
@@ -209,11 +203,5 @@ The context menu on the Test point node within the Execute tab provides the foll
 - *View test result*: This option allows you to view the latest test outcome details including the outcome of each test step, comments added or bugs filed. 
 - *View execution history*: This option allows you to view the execution history for the test case in a side panel. You can move across the test points or open the detailed execution history from the panel - refer below image
 
-:::image type="content" source="media/new-test-plans-page/execute-tab-execution-history.png" alt-text="execute tab execution history":::
+:::image type="content" source="media/navigate/execute-tab-execution-history.png" alt-text="execute tab execution history":::
 
-<a name="feedback"></a>
-
-## Provide feedback
-Thank you for all the feedback you have provided on this page. We have tried to address most of the feedback submitted and have filled all the functionality gaps. As such, we are reaching towards the end of this journey and plan to pull out the old page soon. 
-
-Reach us at [community forum](https://developercommunity.visualstudio.com/content/problem/post.html?space=21) for any queries. In the process, share screenshots as appropriate.

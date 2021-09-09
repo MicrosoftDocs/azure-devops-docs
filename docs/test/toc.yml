@@ -7,6 +7,9 @@
 - name: Get started
   expanded: true
   items:
+  - name: Navigate Test Plans
+    href: new-test-plans-page.md
+    displayName: test suites tree, define, execute, chart 
   - name: Create a test plan
     href: create-a-test-plan.md
     displayName: create, plan 
@@ -21,9 +24,6 @@
     displayName: access, permissions
 - name: Manual testing
   items:
-  - name: New test plans page
-    href: new-test-plans-page.md
-    displayName: test plans, new, 
   - name: Test from the Kanban board
     href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
     displayName: kanban, tesr, board
