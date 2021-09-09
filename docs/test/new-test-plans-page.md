@@ -1,12 +1,11 @@
 ---
 title: Navigate Test Plans  
-description: Learn how to navigate Test Plans.
-ms.assetid: FFBBD2F9-C1C5-4273-916A-28834B794CC3
+description: Learn how to navigate Test Plans. 
 ms.technology: devops-test
 ms.topic: conceptual
-ms.author: sdanie
-author: steved0x
-ms.date: 06/12/2020
+ms.author: kaelli
+author: KathrynEE
+ms.date: 09/09/2021
 monikerRange: '>=azure-devops-2020'
 ---
 
@@ -17,15 +16,14 @@ monikerRange: '>=azure-devops-2020'
 
 Learn how to navigate Test Plans to support your test goals and operations. Use the following sections of the Test Plans page to accomplish the corresponding tasks. 
  
-1. **Test plan header**: Locate, favorite, edit, copy or clone a test plan.
-2. **Test suites tree**: Add, manage, export, or order test suites. Leverage this to also assign configurations and perform user acceptance testing.
-3. **Define tab**: Collate, add, and manage test cases in a test suite of choice via this tab.
-4. **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
-5. **Chart tab**: Track test execution and status via charts, which can also be pinned to dashboards.
-6. **Extensibility**: Supports [extensibility points](../extend/overview.md) added to Test Plans.
+- **Test plan header**: Locate, favorite, edit, copy or clone a test plan.
+- **Test suites tree**: Add, manage, export, or order test suites. Leverage this to also assign configurations and perform user acceptance testing.
+- **Define tab**: Collate, add, and manage test cases in a test suite of choice via this tab.
+- **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
+- **Chart tab**: Track test execution and status via charts, which can also be copied to dashboards.
  
  
-:::image type="content" source="media/navigate/test-plan-overview.png" alt-text="test plan overview page":::
+:::image type="content" source="media/navigate/test-plan-overview-2.png" alt-text="Test plans page, navigation elements.":::
 
  
 
@@ -38,19 +36,18 @@ Learn how to navigate Test Plans to support your test goals and operations. Use 
 
 :::image type="content" source="media/navigate/test-plan-header.png" alt-text="test plan header page":::
 
-**Tasks** 
+### Tasks  
 
-The Test Plan header allows you to perform the following tasks:
+From the Test Plan header, you can do the following tasks:  
 
-- Mark a test plan as favorite 
-- Unmark a favorited test plan
+- Mark or unmark a test plan as a favorite  
 - Easily navigate among your favorite test plans
-- View the iteration path of the test plan, which clearly indicates if the test plan is Current or Past
-- View the quick summary of the Test Progress report with a link to navigate to the report
-- Navigate back to the All/Mine Test Plans page
+- View the iteration path of the test plan, which clearly indicates if the test plan is **Current** or **Past**
+- Navigate to the Test Progress report via the **View report** link
+- Navigate back to the **All/Mine** Test Plans page by choosing :::image type="icon" source="media/navigate/all-test-plans-icon.png" border="false"::: **All test plans**.
 
 
-**Context menu options**
+### Context menu options 
 
 The context menu on the Test Plan header provides the following options:
 
@@ -59,13 +56,11 @@ The context menu on the Test Plan header provides the following options:
 - *Test plan settings*: This option allows you to configure the Test Run settings (to associate build or release pipelines) and the Test Outcome settings
 
 
-***Copy test plan (new capability)***
+### Copy test plan 
 
-:::image type="content" source="media/navigate/copy-test-plan-dialog.png" alt-text="copy test plan page":::
+:::image type="content" source="media/navigate/copy-test-plan.png" alt-text="copy test plan page":::
 
-We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging 'Copy test plan' capability, you can copy or clone test plans within the project. Its backing REST API is covered [here](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1&preserve-view=true). The API lets you copy/clone a test plan across projects too.<br>
-For more guidelines on Test Plans usage, refer [here](/archive/blogs/visualstudioalmrangers/test-planning-and-management-guide-updated).
-
+We recommend creating a new Test Plan per sprint/release. When doing so, generally you can copy the Test Plan for the prior cycle and with few changes the copied test plan is ready for the new cycle. Use the **Copy test plan** menu option. This option lets you copy or clone test plans within a project.
 
 <a name="testsuitestree"></a>
 
@@ -73,7 +68,7 @@ For more guidelines on Test Plans usage, refer [here](/archive/blogs/visualstudi
 
 :::image type="content" source="media/navigate/test-suites-tree.png" alt-text="test suites tree page":::
 
-**Tasks** 
+### Tasks 
 
 The Test suite header allows you to perform the following tasks:
 
@@ -82,7 +77,7 @@ The Test suite header allows you to perform the following tasks:
 - *Order suites*: You can drag/drop suites to either reorder the hierarchy of suites or move them from one suite hierarchy to another within the test plan. 
 
 
-**Context menu options**
+### Context menu options 
 
 The context menu on the Test suites tree provides the following options:
 
@@ -98,7 +93,7 @@ The context menu on the Test suites tree provides the following options:
 - *Import test suites*: Use this option to import test cases present in other suites from same or other test plans and even across projects. More details below.
 
 
-***Import test suites (new capability)***
+### Import test suites  
 
 :::image type="content" source="media/navigate/import-test-suites-dialog.png" alt-text="test suites tree import page":::
 
@@ -205,3 +200,25 @@ The context menu on the Test point node within the Execute tab provides the foll
 
 :::image type="content" source="media/navigate/execute-tab-execution-history.png" alt-text="execute tab execution history":::
 
+## Chart tab
+
+From the chart tab you can create various test case or test result charts. To learn how, see [Track test status, Charts](track-test-status.md#charts). 
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Create test plans and test suites](create-a-test-plan.md)
+
+
+
+## Related articles
+
+- [Track test status](track-test-status.md). 
+- [About pipeline tests](../pipelines/test/test-glossary.md)
+- [What are extensions?](../extend/overview.md) 
+- [Test Planning and Management Guide](/archive/blogs/visualstudioalmrangers/test-planning-and-management-guide-updated).
+ 
+
+### REST APIs 
+
+- [Test Management REST API](/rest/api/azure/devops/test) 
