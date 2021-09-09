@@ -199,13 +199,16 @@ Initiate pull requests directly from Visual Studio.
 
    ![Initiate pull request from the Branches view.](media/pull-requests/new-pr-from-branch.png)
 
+::: moniker range=">=azure-devops-2020"
+
 ### From the Azure DevOps Services CLI
 
-You can now manage your pull requests and other resources from the command line with [azure-devops](/cli/azure/?view=azure-cli-latest&preserve-view=true). Azure Repos and Azure DevOps Server, formerly Team Foundation Server 2017 Update 2 or later, support pull requests by using the command line.
+You can manage your pull requests and other resources from the command line with [azure-devops](/cli/azure/?view=azure-cli-latest&preserve-view=true). Azure Repos and Azure DevOps Server.
 
-For a list of commands to create and manage pull requests, see [Manage pull requests](/cli/vsts/code/pr).
+For more information about working with the Azure DevOps Services CLI, see [Get started with CLI](../../cli/index.md).
 
-For more information about working with the Azure DevOps Services CLI, see [Get started with CLI](/cli/vsts/get-started).
+::: moniker-end
+
 
 <a name="finish"></a>
 

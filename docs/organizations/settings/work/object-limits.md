@@ -8,13 +8,13 @@ ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: ">= tfs-2013"
+monikerRange: "<= azure-devops"
 ms.date: 06/09/2021
 ---
 
 # Work tracking, process, and project limits
 
-[!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 This article defines operational and object limits placed on work tracking operations and work tracking customization. In addition to the specified hard limits on select objects, certain practical limits apply. When you customize work item types (WITs), consider the limits placed on objects. 
 
