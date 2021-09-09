@@ -7,34 +7,34 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 08/30/2019
----
+monikerRange: '<= azure-devops'
+ms.date: 09/07/2021
+--- 
 
 # Add charts to a dashboard
 
 [!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
-
-::: moniker range="tfs-2013"
-> [!NOTE]   
-> Adding charts to a dashboard is not a supported feature in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md). Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
-::: moniker-end
-
 <a id="add-charts"></a>
 
 ::: moniker range=">= azure-devops-2020"
-You can add the charts described in this article to a dashboard from their corresponding functional page, such as Analytics, Builds, Releases, or Queries. 
+You can add query-based charts and in-context reports to a dashboard from their functional page. For example, you can add the Team Velocity in-context Analytics report to a dashboard. You can then modify the corresponding widget configuration parameters.   
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < azure-devops-2020"
 You can add the charts described in this article to a dashboard from their corresponding functional page, such as Builds, Releases, or Queries. 
 ::: moniker-end
 
+
+::: moniker range="tfs-2013"
+> [!NOTE]   
+> Adding charts to a dashboard is not a supported feature in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md). Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the [widget catalog](widget-catalog.md) and [multiple team dashboards](dashboards.md).  
+::: moniker-end
+
 <a id="prerequisites">  </a>
-
+::: moniker range=">= tfs-2015"
 ## Prerequisites  
-
+::: moniker-end
 ::: moniker range="azure-devops"
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/accounts/set-up-vs.md). 
@@ -43,9 +43,7 @@ You can add the charts described in this article to a dashboard from their corre
 - Anyone with access to a project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards.
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](../../organizations/settings/add-team-administrator.md), a project admin, or have [dashboard permissions](./dashboard-permissions.md). In general, you need to be a member of the team to edit a team dashboard.
 
-
 ::: moniker-end
-
 
 ::: moniker range=">= tfs-2018 <= azure-devops-2020"
 
@@ -54,8 +52,6 @@ You can add the charts described in this article to a dashboard from their corre
 - If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a team admin, a project admin, or have [dashboard permissions](./dashboard-permissions.md). In general, you need to be a member of the team to edit a team dashboard.
  Request your current team or project admin to add you as a [team admin](../../organizations/settings/add-team-administrator.md).  
-
-
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
@@ -73,16 +69,39 @@ You can add the charts described in this article to a dashboard from their corre
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be added to the [team administrator role for the team](../../organizations/settings/add-team-administrator.md).  
 
 ::: moniker-end
-
+::: moniker range=">= tfs-2015"
 To learn more, see [Default permissions and access for charts and dashboards](charts-dashboard-permissions-access.md).
+::: moniker-end
 
+::: moniker range=">= tfs-2015"
+<a id="work-item-query"></a>
 
+## Add a work item query or chart  
 
-## In-context work tracking reports 
+You add work item queries and charts to a dashboard from the Queries page. Queries and charts must be associated with queries under the Shared queries folder.  
+
+> [!NOTE]  
+> You can also add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
+
+1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) as needed.  
+
+2. If you aren't a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can add and customize team dashboards.  
+
+3. If you haven't yet created the dashboard, [do that now](dashboards.md).  
+
+4. From the charts Actions menu, choose the team dashboard.  
+
+	![Chart context menu, add to a dashboard](media/pin-chart-to-a-dashboard.png)  
+
+	You can only add charts associated with shared queries. Charts associated with queries under My Queries folder won't display the add to dashboard option.  
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
+## Add an in-context work tracking report  
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
-
-You can add each of the in-context Analytics reports to a dashboard. 
+You can add each of the in-context **Analytics** reports to a dashboard. 
 
 1. Simply open the report, choose the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
 
@@ -96,7 +115,7 @@ You can add each of the in-context Analytics reports to a dashboard.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose the dashboard and choose OK.](media/add-charts/select-a-dashboard-dialogue.png)  
 
-1. (Optional) Open the dashboard and choose the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon for the widget to configure the size or change other report properties. 
+1. (Optional) Open the dashboard and choose :::image type="icon" source="media/icons/actions-icon.png" border="false"::: **More actions** for the widget to configure the size or change other chart properties. 
 
 ::: moniker-end
 
@@ -192,9 +211,9 @@ As you create and run tests, you can track your status by defining [lightweight 
 1. Open **Test>Test Plans** and then **Charts** and select the dashboard to add the test chart to.  
 
 	![Select the dashboard to add the test chart to.](media/add-a-chart-test-plan.png)  
-   ::: moniker-end
+::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="test-quality"></a>  
 
 ## Add a test quality trend chart   
@@ -228,33 +247,11 @@ Requires TFS 2017.2 or later version.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
-<a id="work-item-query"></a>
-
-## Add a work item query or chart  
-
-You add work item queries and charts to a dashboard from the Queries page. Queries and charts must be associated with queries under the Shared queries folder.  
-
-> [!NOTE]  
-> You can also add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
-
-1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) as needed.  
-
-2. If you aren't a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can add and customize team dashboards.  
-
-3. If you haven't yet created the dashboard, [do that now](dashboards.md).  
-
-4. From the charts Actions menu, choose the team dashboard.  
-
-	![Chart context menu, add to a dashboard](media/pin-chart-to-a-dashboard.png)  
-
-	You can only add charts associated with shared queries. Charts associated with queries under My Queries folder won't display the add to dashboard option.  
-::: moniker-end
 
 <a id="add-to-dashboard">  </a>
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-## Add a markdown file to a dashboard  
+## Add a markdown repository file to a dashboard  
 
 Open the Markdown file defined in your repository and make sure you are in your team context. 
 
@@ -265,16 +262,15 @@ Choose **Add to dashboard**, and then choose the team dashboard to add the markd
 Requires TFS 2015.2 or later version. 
 ::: moniker-end
 
-::: moniker range="> tfs-2015 <= tfs-2018"
-<!-- TODO: Update image - I don't think this is supported for latest version-->
+::: moniker range=">= tfs-2015 <= tfs-2018"
 <img src="../../project/wiki/media/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code, README file, Add Markdown page to a dashboard" />
 ::: moniker-end
 
 
-
+::: moniker range=">= tfs-2015"
  
 ## Related articles
-
+::: moniker-end
 ::: moniker range=">= azure-devops-2019"
 - [Analyze test results](../../pipelines/test/test-analytics.md)
 - [Burndown guidance](burndown-guidance.md)
