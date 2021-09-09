@@ -28,7 +28,7 @@ In this article you'll learn how to perform the following tasks:
 > * Create a trend chart 
 > * Add a query chart to a dashboard
 > * Configure a query widget    
-> * Group a **Chart by Work Items** widget by tags  
+> * Group a **Chart for Work Items** widget by tags  
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -40,6 +40,10 @@ In this article you'll learn how to perform the following tasks:
 > * Add a chart to a dashboard
 > * Configure a query widget    
 ::: moniker-end
+
+> [!NOTE] 
+> This article describes how to configure work tracking query charts and the **Chart for Work Items** widget. To add existing query charts to dashboards, see [Add charts to a dashboard](add-charts-to-dashboard.md). For an overview of all work tracking charts and in-context reports, see [About dashboards, charts, reports, & widgets](overview.md).
+
 
 ::: moniker range=">= azure-devops-2019"
 

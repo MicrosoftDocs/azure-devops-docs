@@ -7,28 +7,28 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 08/30/2019
----
+monikerRange: '<= azure-devops'
+ms.date: 09/07/2021
+--- 
 
 # Add charts to a dashboard
 
 [!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
-
-::: moniker range="tfs-2013"
-> [!NOTE]   
-> Adding charts to a dashboard is not a supported feature in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md). Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
-::: moniker-end
-
 <a id="add-charts"></a>
 
 ::: moniker range=">= azure-devops-2020"
-You can add the charts described in this article to a dashboard from their corresponding functional page, such as Analytics, Builds, Releases, or Queries. 
+You can add query-based charts and in-context reports to a dashboard from their functional page. For example, you can add the Team Velocity in-context Analytics report to a dashboard. You can then modify the corresponding widget configuration parameters.   
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < azure-devops-2020"
 You can add the charts described in this article to a dashboard from their corresponding functional page, such as Builds, Releases, or Queries. 
+::: moniker-end
+
+
+::: moniker range="tfs-2013"
+> [!NOTE]   
+> Adding charts to a dashboard is not a supported feature in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md). Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the [widget catalog](widget-catalog.md) and [multiple team dashboards](dashboards.md).  
 ::: moniker-end
 
 <a id="prerequisites">  </a>
@@ -82,7 +82,7 @@ To learn more, see [Default permissions and access for charts and dashboards](ch
 
 ::: moniker range=">= azure-devops-2020"
 
-You can add each of the in-context Analytics reports to a dashboard. 
+You can add each of the in-context **Analytics** reports to a dashboard. 
 
 1. Simply open the report, choose the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
 
