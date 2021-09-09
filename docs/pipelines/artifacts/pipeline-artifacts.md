@@ -158,6 +158,15 @@ steps:
 
 By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a subdirectory will be created for each downloaded artifact. You can use matching patterns to limit which files get downloaded.
 
+```yml
+steps:
+- download: current
+  artifact: WebApp
+  patterns: |
+    **/*.js
+    **/*.zip
+```
+
 ### Artifacts selection
 
 A single download step can download one or more artifacts. To download multiple artifacts, leave the _artifact name_ field empty and use file matching patterns to limit which files will be downloaded. `**` is the default file matching pattern (all files in all artifacts).
