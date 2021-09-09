@@ -60,7 +60,7 @@ The follow table indicates which preview features can be enabled per user or tea
       [Copy Dashboard Experience](../../report/dashboards/copy-dashboard.md)  
       [Experimental themes](#experimental-themes)  
       [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  
-      [Historical graph for agent pools](/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview) 
+      [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) 
    :::column-end:::
    :::column span=".5"::: 
        ✔️   
