@@ -8,8 +8,8 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2013'
-ms.date: 06/14/2021
+monikerRange: '<= azure-devops'
+ms.date: 09/07/2021
 ---
 
 # Track work with user stories, issues, bugs, features, and epics 
@@ -408,7 +408,7 @@ You can add or modify the fields contained within a work item type or add a cust
 
 As a member added to the Contributors group of a project, you can use most features provided under **Boards** or **Work**. Users with Basic access have full access to all features. Users with Stakeholder access are limited to certain features. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
 
-To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) and [About access levels](../../organizations/security/access-levels.md).  
+To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) and [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).  
 
 To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 

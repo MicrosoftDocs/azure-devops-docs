@@ -46,6 +46,7 @@ To create extensions for Azure DevOps, you need the following software and tools
   |--- buildandreleasetask            // where your task scripts are placed
   |--- vss-extension.json             // extension's manifest
   ```
+
 - The [vss-web-extension-sdk package installation](https://github.com/Microsoft/vss-web-extension-sdk).
 
 > [!IMPORTANT]
@@ -139,7 +140,7 @@ Now that the scaffolding is complete, we can create our custom task.
 
 Next, we create a `task.json` file in the buildandreleasetask folder. The `task.json` file describes the build or release task and is what the build/release system uses to render configuration options to the user and to know which scripts to execute at build/release time.
 
-Copy the following code and replace the `{{placeholders}}` with your task's information. The most important placeholder is the `taskguid`, and it must be unique. You can generate the `taskguid` by using [Microsoft's online GuidGen tool](https://www.guidgen.com/).
+Copy the following code and replace the `{{placeholders}}` with your task's information. The most important placeholder is the `taskguid`, and it must be unique.
 
 ```json
 {
@@ -310,8 +311,7 @@ describe('Sample task tests', function () {
 
 ### Create success test
 
-The success test validates that when the tool has the appropriate inputs, it succeeds with no errors
-or warnings and returns the correct output.
+The success test validates that with the appropriate inputs, it succeeds with no errors or warnings and returns the correct output.
 
 Create a file containing your task mock runner. This file creation simulates running the task and mocks all calls to outside methods.
 
@@ -408,6 +408,7 @@ $env:TASK_TEST_TRACE=1
 <a name="extensionmanifest"></a>
 
 ## Step 3: Create the extension manifest file
+
 The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images folders. Ensure you've created an images folder with extension-icon.png. The following example is an extension manifest that contains the build or release task.
 
 Copy the following .json code and save it as your `vss-extension.json` file in your `home` directory. Don't create this file in the buildandreleasetask folder.
@@ -513,7 +514,7 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 
 ### Prerequisites
 
-- A project in your organization. If you need to create one, see [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).
+- A project in your organization. For more information, see [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).
 - An [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension installed in your organization.
 
 Create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How to use a variable group](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group).
@@ -707,10 +708,10 @@ After the test results have been published, the output under the tests tab shoul
     - Override Type: Replace Only Patch (1.0.r).
     - Extension Visibility: If the extension is still in development, set the value to private. To release the extension to the public, set the value to public.
 1. Add the "Copy files" task to copy published files. Use the following inputs:
-    - Contents: All of the files that need to be copied for publishing them as an artifact
+    - Contents: All of the files to be copied for publishing them as an artifact
     - Target folder: The folder that the files get copied to
        - For example: $(Build.ArtifactStagingDirectory)
-1. Add "Publish build artifacts" to publish the artifacts for use in other jobs or pipelines. Use the following inputs:
+2. Add "Publish build artifacts" to publish the artifacts for use in other jobs or pipelines. Use the following inputs:
     - Path to publish: The path to the folder that contains the files that are being published.
        - For example: $(Build.ArtifactStagingDirectory).
     - Artifact name: The name given to the artifact.
@@ -749,7 +750,7 @@ If you can't see the **Extensions** tab, make sure you're in the control panel (
 
 If you don't see the **Extensions** tab, then extensions aren't enabled for your organization. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
 
-For build and release tasks to package and publish Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
+To package and publish Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
 
 ## FAQ
 
@@ -787,14 +788,16 @@ If "restricted" value is specified for "mode" - only the following commands are 
 
 Restriction feature is available from [2.182.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.182.1) agent version.
 
-### How can I remove the task from project collection?
-We do not support the automatic deletion of tasks, because this is unsafe and will certainly break existing pipelines that already use such tasks. However, you can mark tasks as deprecated. To do this, you need to bump the task version as described [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md) and follow steps described in [docs](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/deprecatedtasks.md).
-
 ### How is cancellation signal being handled by a task?
-The pipeline agent sends SIGINT and SIGTERM signals to the relevant child process. There are no explicit means in [task library](https://github.com/microsoft/azure-pipelines-task-lib) to process this at the moment. You can find more info [here](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/jobcancellation.md).
+
+The pipeline agent sends SIGINT and SIGTERM signals to the relevant child process. There are no explicit means in [task library](https://github.com/microsoft/azure-pipelines-task-lib) to process. You can find more info [here](https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/jobcancellation.md).
+
+### How can I remove the task from project collection?
+
+We don't support the automatic deletion of tasks. Automatic deletion isn't safe and breaks existing pipelines that already use such tasks. But, you can mark tasks as deprecated. To do so, bump the task version as described [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md) and follow steps described in [docs](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/deprecatedtasks.md).
 
 ## Related articles
 
-- [Extension Manifest Reference](./manifest.md)
+- [Extension manifest reference](./manifest.md)
 - [Build/Release Task JSON Schema](./integrate-build-task.md)
 - [Build/Release Task Examples](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)

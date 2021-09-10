@@ -714,6 +714,20 @@ Other service connection types and tasks can be installed as extensions. See the
 * [VMware Resource Deployment](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.vmwareapp).
   Connect to a VMware vCenter Server from Visual Studio Team Services or TFS to provision. Start, stop, or snapshot VMware virtual machines.
 
+* [Power Platform Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools).
+  Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related to apps built on [Microsoft Power Platform](/power-platform/alm/devops-build-tools). After installing the extension, the **Power Platform** service connection type has the following properties.
+
+    |    Parameter                       | Description  |
+    |------------------------------------|--------------|
+    |    Connection Name                 | Required. The name you will use to refer to this service connection in task properties. |
+    |    Server URL                      | Required. The URL of the Power Platform instance. Example: `https://contoso.crm4.dynamics.com` |
+    |    Tenant ID                       | Required. Tenant ID (also called directory ID in Azure portal) to authenticate to. Refer to [https://aka.ms/buildtools-spn](https://aka.ms/buildtools-spn) for a script that shows Tenant ID and configures Application ID and associated Client Secret. The application user must also be [created in CDS](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) |
+    |    Application ID                  | Required. Azure Application ID to authenticate with. |
+    |    Client secret of Application ID | Required. Client secret of the Service Principal associated to above Application ID used to prove identity. |
+
+---
+
+
 You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
 <!--  ## FAQs and Troubleshoot service connections -->

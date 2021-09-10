@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 01/19/2021
+ms.date: 09/07/2021
 ---
 
 # Track progress with status and trend query-based charts 
@@ -28,7 +28,7 @@ In this article you'll learn how to perform the following tasks:
 > * Create a trend chart 
 > * Add a query chart to a dashboard
 > * Configure a query widget    
-> * Group a **Chart by Work Items** widget by tags  
+> * Group a **Chart for Work Items** widget by tags  
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -40,6 +40,10 @@ In this article you'll learn how to perform the following tasks:
 > * Add a chart to a dashboard
 > * Configure a query widget    
 ::: moniker-end
+
+> [!NOTE] 
+> This article describes how to configure work tracking query charts and the **Chart for Work Items** widget. To add existing query charts to dashboards, see [Add charts to a dashboard](add-charts-to-dashboard.md). For an overview of all work tracking charts and in-context reports, see [About dashboards, charts, reports, & widgets](overview.md).
+
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -60,7 +64,7 @@ For example, the following image illustrates four different charts created from 
 
 ## Prerequisites
 
-By default, users with **Basic** access or higher can create charts. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [About access levels](../../organizations/security/access-levels.md).
+By default, users with **Basic** access or higher can create charts. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker range="azure-devops"
 
@@ -70,7 +74,7 @@ By default, users with **Basic** access or higher can create charts. Users with 
 * You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard. 
 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
+> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker-end
 
@@ -102,6 +106,7 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 To learn more about default groups, see [Get started with permissions, Permission inheritance and security groups](../../organizations/security/about-permissions.md#inheritance).
 
+[!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]
 
 ## Create a flat-list query  
 
@@ -115,7 +120,7 @@ When creating a query to support your chart, follow these guidelines.
 	- To group by team, include the **Node Name** field which displays the leaf node of the Area Path 
 	- To group by a custom field, include it.  
 - To sum a numeric column, include the corresponding field in your query clause or column options. For additional examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md). 
-- If you plan to add your query to a dashboard, save your query as a Shared query.
+- If you plan to add your query to a dashboard, [save your query as a **Shared query**](../../boards/queries/organize-queries.md).
 
 ::: moniker range="azure-devops"
 
@@ -125,9 +130,10 @@ When creating a query to support your chart, follow these guidelines.
 	-  Plain text, such as Title 
 	-  Rich-text, such as Description, Repro Steps 
 	-  Tags (You can filter a query using tags, however you can't use tags to configure your chart).
+
 > [!NOTE]   
 > You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard.  
-> 
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -166,20 +172,17 @@ Charts display in browsers that support Scalable Vector Graphics (SVG). This inc
 
 ### Sort by Value or Label 
 
-Most charts allow you to choose how you want to sort the data. 
+Most charts allow you to choose how you want to sort the data. You can sort by **Value** or **Label** and choose **Ascending** or **Descending**. 
 
 - **Value**: Sorts data by the numeric value 
-- **Label**: Sorts by the label selected for grouping the data
- 
+- **Label**: Sorts by the label selected for grouping the data.
+
 ### Limited display of series 
 
 ::: moniker range="> tfs-2018"
-
-When a chart contains more than eight or 12 items within the data series, values in the 9 or 13-plus items are consolidated into a set labeled "other"?  
+When a chart contains more than eight or 12 items within the data series, values in the 9 or 13-plus items are consolidated into a set labeled "other"? However, if you increase the chart size through the configurable widget on a dashboard you may increase the series limit.  
 
 ![Other category groups data beyond 12 set series](media/charts/other-12-series.png)  
-
-Display of query chart widgets you configure through a dashboard may exceed the query-chart limit. 
 
 ::: moniker-end 
 
@@ -192,7 +195,7 @@ When a chart contains more than seven items within the data series, values in th
 
 ::: moniker-end 
 
-[!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]
+
 
 ## Create a query-based chart  
 
@@ -445,24 +448,6 @@ To learn more about using tags, see [Add tags to work items](../../boards/querie
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
-
-## Widgets and Analytics data
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
-
-Analytics provides a number of [additional widgets based on Analytics data](../dashboards/analytics-widgets.md).  
- 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-Analytics provides a number of [additional widgets based on Analytics data](../dashboards/analytics-widgets.md). The Analytics service is in preview for Azure DevOps Server 2019. 
- 
-::: moniker-end
-
 ::: moniker range="< azure-devops"
 
 ## Query-based charts versus Excel-generated PivotCharts  
@@ -478,4 +463,4 @@ Query-based charts generate data from the work item tracking data store and ther
 - [View/configure sprint burndown](configure-sprint-burndown.md)  
 - [Test progress and test results](../../test/track-test-status.md)  
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
-- [Widget catalog charts](widget-catalog.md)
+- [Widget catalog](widget-catalog.md)

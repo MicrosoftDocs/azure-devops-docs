@@ -8,8 +8,8 @@ ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 09/07/2021
 ---
 
 # Forecast your product backlog
@@ -35,7 +35,7 @@ Use this article to learn:
 * You must be granted **Basic** access or higher to use the forecast feature. For details, see [About access levels](../../organizations/security/access-levels.md).
 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to backlog and board features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
+> Users with **Stakeholder** access for a public project have full access to backlog and board features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 
 ::: moniker-end
