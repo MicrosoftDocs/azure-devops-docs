@@ -26,7 +26,7 @@ landingContent:
         links:
           - text: What is Azure Test Plans?
             url: ../test/overview.md
-          - text: Navigate Test Plans?
+          - text: Navigate Test Plans
             url: ../test/navigate-test-plans.md
       - linkListType: video
         links:
