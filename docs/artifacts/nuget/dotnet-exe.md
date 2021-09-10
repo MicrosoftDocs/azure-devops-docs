@@ -5,18 +5,19 @@ ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 9/10/2021
-monikerRange: '>= tfs-2017'
+monikerRange: '>= azure-devops-2019'
+"recommendations": "true"
 ---
 
-# use dotnet with Azure Artifacts
+# Use dotnet CLI with Azure Artifacts
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-With Azure Artifacts you can connect to a feed, publish your .NET packages, and control who can access them. You can use the dotnet command line interface to publish and restore your packages.
+With Azure Artifacts you can connect to a feed, publish your .NET packages, and control who can access them. You can use the dotnet command-line interface to publish and restore your packages to and from your Azure Artifacts feed.
 
 ## Project setup
 
-1. From within your project select **Artifacts**, and then select your feed from the dropdown menu. [Create a feed](../get-started-nuget.md#create-a-feed), if you don't have one already. 
+1. Select **Artifacts**, and then select your feed from the dropdown menu. [Create a feed](../get-started-nuget.md#create-a-feed), if you don't have one already. 
 
 1. Select **Connect to feed**.
 
@@ -54,3 +55,9 @@ dotnet nuget push --source <FEED_NAME> --api-key <ANY_STRING> <PACKAGE_PATH>
 
 > [!TIP]
 > If you want to authenticate with Azure Artifacts from your pipeline, use the [NuGet Authenticate task](../../pipelines/tasks/package/nuget-authenticate.md) to connect to Azure Artifacts and other NuGet repositories. Another way to authenticate programmatically is to use the [Azure Artifacts Credential Provider](https://github.com/Microsoft/artifacts-credprovider) and pass in credentials using the `VSS_NUGET_EXTERNAL_FEED_ENDPOINTS` [environment variable](https://github.com/Microsoft/artifacts-credprovider/blob/master/README.md#environment-variables).
+
+## Related articles
+
+- [Use NuGet.exe with Azure Artifacts](./nuget-exe.md)
+- [Publish packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
+- [Publish packages to NuGet.org](./publish-to-nuget-org.md)
