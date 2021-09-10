@@ -180,10 +180,10 @@ Choose **Copy test case** to copy or clone a test case. Specify the destination 
 
 ### View linked item 
 
-Use **View linked items** option, to review objects linked to the test case. Choose each tab to view the links listed under the linked oject type: 
+Use **View linked items** option, to review objects linked to the test case. Choose each tab to view the links listed under the linked object type: 
 - **Test Suites**
-- Requirements: Includes any work item that belongs to the Requirements Category, such as User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI), or a custom work item type.
-- Bugs: Includes bugs that have been filed as part of test execution and any work items that belong to the Bug Category that have been linked to the test case.
+- **Requirements**: Includes any work item that belongs to the Requirements Category, such as User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI), or a custom work item type.
+- **Bugs**: Includes bugs that have been filed as part of test execution and any work items that belong to the Bug Category that have been linked to the test case.
  
 :::image type="content" source="media/navigate/view-linked-items.png" alt-text="Define tab, View linked items dialog.":::
   
