@@ -1,5 +1,6 @@
 ---
 title: How to connect to a feed and use the dotnet CLI
+description: How to connect to an Azure Artifacts feed and use the dotnet CLI to publish and restore NuGet packages.
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -13,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 With Azure Artifacts you can connect to a feed, publish your .NET packages, and control who can access them. You can use the dotnet command line interface to publish and restore your packages. Follow the instructions below to set up your project:
 
-1. From within your project select **Artifacts**, and then select your feed from the dropdown menu. [Create a feed](../get-started-nuget#create-a-feed), if you don't have one already. 
+1. From within your project select **Artifacts**, and then select your feed from the dropdown menu. [Create a feed](../get-started-nuget.md#create-a-feed), if you don't have one already. 
 
 1. Select **Connect to feed**.
 
