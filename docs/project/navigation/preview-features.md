@@ -332,7 +332,7 @@ With **Experimental themes** enabled, you can select among a number of additiona
 
 ### Azure Test Plans
 
-- [New Test Plans Page](../../test/new-test-plans-page.md)  
+- [New Test Plans Page](../../test/navigate-test-plans.md)  
 - [New Test Plan Experience](/azure/devops/release-notes/2018/jun-19-vsts#test-1)  
 
 ### Dashboards and Analytics 

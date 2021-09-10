@@ -8,7 +8,7 @@
   expanded: true
   items:
   - name: Navigate Test Plans
-    href: new-test-plans-page.md
+    href: navigate-test-plans.md
     displayName: test suites tree, define, execute, chart 
   - name: Create a test plan
     href: create-a-test-plan.md
