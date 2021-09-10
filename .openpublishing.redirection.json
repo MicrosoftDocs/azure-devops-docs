@@ -18229,6 +18229,11 @@
       "source_path": "docs/pipelines/apps/cd/azure/build-azure-vm-template.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/azure/deploy-arm-template",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/new-test-plans-page.md",
+      "redirect_url": "/azure/devops/test/navigate-test-plans",
+      "redirect_document_id": false
     } 
   ]
 }
