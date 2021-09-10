@@ -13,6 +13,8 @@ ms.date: 10/21/2019
 
 # Azure Repos with Microsoft Teams
 
+[!INCLUDE [temp](../../includes/version-azure-devops.md)]  
+
 If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can use the 
 [Azure Repos app for Teams](https://appsource.microsoft.com/product/office/WA200000643) to easily monitor your repositories. 
 Set up and manage subscriptions to receive notifications in your channel whenever code is pushed/checked 
@@ -33,15 +35,12 @@ Read this article to learn how to:
 
 ## Prerequisites
 
-- To create subscriptions for repository-related events, you must be a member of the Azure DevOps Project Administrators group or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
-To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md).
-- To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the Azure DevOps organization, see [Change application 
-access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
-- To enable subscriptions, the project and/or repository must be public, see [Make your project public or private](../../organizations/public/make-project-public.md).
+- To create subscriptions for repository-related events, you must be a member of the Project Administrators group or added to the team administrator role for the team.  To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
+- To receive notifications, you must enable the **Third-party application access via OAuth** setting for the Azure DevOps organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 
 > [!NOTE]
 > * Notifications are currently not supported inside direct messages.
-> * You can only link the Azure Repos app for Microsoft Teams to a project hosted on Azure DevOps Services at this time.
+> * You can only link the Azure Repos app for Microsoft Teams to a project hosted on Azure DevOps Services.
 
 ## Add the Azure Repos app to your team in Microsoft Teams
 

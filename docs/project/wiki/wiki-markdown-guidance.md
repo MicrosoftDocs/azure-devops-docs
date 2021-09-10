@@ -47,7 +47,7 @@ Consistency is maintained in the formatting in TOC.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## Add Mermaid diagrams to a Wiki page
 
@@ -71,8 +71,6 @@ There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
 > [!NOTE]
 > Most HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
-> 
-> This feature is supported only in Azure DevOps Services (not in Azure DevOps Server).
 
 ::: moniker-end
 
