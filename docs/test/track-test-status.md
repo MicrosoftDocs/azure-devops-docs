@@ -21,6 +21,7 @@ View the status of your planned testing using an out-of-the-box Progress Report 
 :::moniker range=">= azure-devops-2020"
 
 ## Progress Report
+
 To track the progress of more than one test plan or test suite, use the Progress Report. It helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
 1. How much testing is complete?
 2. What is the current status - how many tests have passed, failed or are blocked?
@@ -30,11 +31,13 @@ To track the progress of more than one test plan or test suite, use the Progress
 6. View the progress each suite has made within a test plan and identify the areas that need attention.
 
 ### Configuring the report
+
 By navigating to Test Plans > Progress Report, you can start using the report. It requires no setup and is applicable for all Azure DevOps Services organizations. When you view the report, it shows you the status of the test plan you had accessed last. However, using the filter bar, you can select one or more test plans in the project.
 
 ### Understanding the report
+
 The progress report consists of three sections:
-1. **Summary**: This section provides you with a consolidated view for the selected test plans. To understand what test points are, refer [here](new-test-plans-page.md).
+1. **Summary**: This section provides you with a consolidated view for the selected test plans. To understand what test points are, see [Navigate Test Plans](navigate-test-plans.md).
 2. **Outcome trend**: This graph renders a daily snapshot to give you an execution and status trendline. It can show data for 14 days (default), 30 days, or a custom range of your choice. Data for today may or may not appear in this chart based on the time of the day you are looking at the report.
 3. **Details**: This section lets you drill down by each test plan and gives you summary of each test suite in it. The section also lets you navigate to a test plan or suite of choice by double-clicking on it.
 
