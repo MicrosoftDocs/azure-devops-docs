@@ -29,7 +29,10 @@ Learn how to navigate Test Plans to support your test goals and operations. Use 
 
 [!INCLUDE [prerequisites](includes/prerequisites.md)] 
 
- 
+> [!NOTE] 
+> Most operations under the **Define** tab are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Most operations under the **Execute** tab can be exercised by users granted a **Basic** access level.
+
+
 <a name="testplanheader"></a>
 
 ## Test plan header
@@ -38,7 +41,7 @@ Learn how to navigate Test Plans to support your test goals and operations. Use 
 
 ### Tasks  
 
-From the Test Plan header, you can do the following tasks:  
+Use the Test Plan header, to do one of the following tasks:  
 
 - Mark or unmark a test plan as a favorite  
 - Easily navigate among your favorite test plans
@@ -49,12 +52,14 @@ From the Test Plan header, you can do the following tasks:
 
 ### Context menu options 
 
-The context menu on the Test Plan header provides the following options:
+Choose the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More options** to open the context menu for the Test Plan to perform one of the following actions: 
 
-- *Copy test plan*: This is a new option that allows you to quickly copy the current test plan. More details below.
-- *Edit test plan*: This option allows you to edit the Test Plan work item form to manage the work item fields.
-- *Test plan settings*: This option allows you to configure the Test Run settings (to associate build or release pipelines) and the Test Outcome settings
+- **Copy test plan**: Quickly copy the current test plan.  
+- **Edit test plan**: Edit the Test Plan work item form to define work item fields or add to the description or discussion.
+- **Test plan settings**: Configure the Test Run settings (to associate build or release pipelines) and the Test Outcome settings.
+ 
 
+:::image type="content" source="media/navigate/test-plan-settings-dialog-undefined.png" alt-text="Test plan settings dialog, undefined.":::
 
 ### Copy test plan 
 
@@ -66,67 +71,79 @@ We recommend creating a new Test Plan per sprint/release. When doing so, general
 
 ## Test suites tree
 
-:::image type="content" source="media/navigate/test-suites-tree.png" alt-text="test suites tree page":::
+:::image type="content" source="media/navigate/test-suites-tree.png" alt-text="Test suites tree menu options":::
 
 ### Tasks 
 
 The Test suite header allows you to perform the following tasks:
 
-- *Expand/collapse*: This toolbar option allows you to expand or collapse the suite hierarchy tree.
-- *Show test points from child suites*: This toolbar option is only visible when you are in the "Execute" tab. This allows you to view all the test points for the given suite and its children in one view for easier management of test points without having to navigate to individual suites one at a time. 
-- *Order suites*: You can drag/drop suites to either reorder the hierarchy of suites or move them from one suite hierarchy to another within the test plan. 
+- **Expand/collapse**: Choose the :::image type="icon" source="media/navigate/expand-collapse-icons.png" border="false"::: **Expand All/Collapse All** toolbar options  to expand or collapse the suite hierarchy tree.
+- **Show test points from child suites**: Choose the :::image type="icon" source="media/navigate/show-test-points-from-child-nodes-icon.png" border="false":::  **Show test points from child suites** toolbar option, which is only visible when you are in the **Execute** tab, to view all the test points for the given suite and its children in one view for easier management of test points without having to navigate to individual suites one at a time. 
+- **Order suites**: Drag/drop suites to either reorder the hierarchy of suites or move them from one suite hierarchy to another within the test plan. 
 
 
 ### Context menu options 
 
-The context menu on the Test suites tree provides the following options:
+Choose the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More options**  to open the context menu for the Test Suite and perform one of the following actions: 
 
-- *Create new suites*: You can create three different types of suites as follows: 
-	- Use static suite or folder suite to organize your tests.
-	- Use requirement-based suite to directly link to the requirements/user stories for seamless traceability.
-	- Use query-based to dynamically organize test cases that meet a query criteria.
-- *Assign configurations*: You can assign configurations for the suite (example: Chrome, Firefox, EdgeChromium) and these would then be applicable to all the existing test cases or new test cases that you add later to this suite. 
-- *Export as pdf/email*: Export the Test plan properties, test suite properties along with details of the test cases and test points as either "email" or "print to pdf".
-- *Open test suite work item*: This option allows you to edit the Test suite work item form to manage the work item fields.
-- *Assign testers to run all tests*: This option is very useful for User Acceptance testing (UAT) scenarios where the same test needs to be run/executed by multiple testers, generally belonging to different departments. 
-- *Rename/Delete*: These options allow you to manage the suite name or remove the suite and its content from the test plan.
-- *Import test suites*: Use this option to import test cases present in other suites from same or other test plans and even across projects. More details below.
+- **Create new suites**: You can create one of three different types of suites: 
+	- Choose **Static suite** to organize your tests within a folder suite.
+	- Choose **Requirement-based suite** to directly link to the requirements/user stories for seamless traceability.
+	- Choose **Query-based suite** to dynamically organize test cases that meet a query criteria.
+- **Assign configurations**: Assign configurations for the suite. For example, assign *Chrome*, *Firefox*, *EdgeChromium*, which then become applicable to all existing or new test cases that you add later to the suite. 
+- **Export**: Export the test plan properties, test suite properties along with details of the test cases and test points as either an email or print to pdf.  
+- **Open test suite work item**: This option allows you to edit the Test suite work item form to manage the work item fields.
+- **Assign testers to run all tests**: This option is very useful for User Acceptance testing (UAT) scenarios where the same test needs to be run/executed by multiple testers, generally belonging to different departments. 
+- **Rename/Delete**: These options allow you to manage the suite name or remove the suite and its content from the test plan.
+- **Import test suites**: Use this option to import test cases present in other suites from same or other test plans and even across projects. More details below.
 
+
+**Export test suite dialog**  
+:::image type="content" source="media/navigate/export-dialog.png" alt-text="Define tab tasks.":::
 
 ### Import test suites  
 
 :::image type="content" source="media/navigate/import-test-suites-dialog.png" alt-text="test suites tree import page":::
 
-It is now easier to reuse the suites you have created already and import them into the current suite/plan. You can select the project, test plan, and test suite from which you want to import the tests. Depending upon the suite selected, the entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone/copy. 
+Reuse the suites you have created and import them into the current suite/plan. You can select the **Project**, **Test Plan**, and **Test Suite** from which you want to import the tests. Depending upon the suite you select, the entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone or copy. 
 
 
 <a name="definetab"></a>
 
 ## Define tab
 
-:::image type="content" source="media/navigate/define-tab-tasks.png" alt-text="Define tab tasks.":::
-
 From the **Define** tab, you can collate, add, and manage test cases for a test suite. Whereas you use the **Execute** tab for assigning test points and executing them. 
 
-> [!NOTE]   
-> Select **Define** tab operations are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Users with **Basic** access can exercise other tasks.
-
+:::image type="content" source="media/navigate/define-tab-tasks.png" alt-text="Define tab tasks.":::
+ 
 
 ### Tasks 
 
 From the **Define** tab you can exercise the following tasks:
 
-- *Add New test case using work item form*: This option allows you to create a new test case using the work item form. The test case created will automatically be added to the suite. 
-- *Add New test case using grid*: This option allows you to create one or more test cases using the test cases grid view. The test cases created will automatically be added to the suite. 
-- *Add Existing test cases using a query*: This option allows you to add existing test cases to the suite by specifying a query. 
-- *Order test cases by drag/drop*: You can reorder test cases by dragging/dropping of one or more test cases within a given suite. The order of test cases only applies to manual test cases and not to automated tests.
-- *Move test cases from one suite to another*: Using drag/drop, you can move test cases from one test suite to another. 
-- *Export / Import as CSV*: Using this option, you can export the existing test cases to Excel CSV file, make changes to the CSV file and then import the file back into the suite. This has been one of the most requested features and we are happy to share that we are opening this for beta testing. See [here for more options.](https://pkuma-msft.github.io/azure-test-plans/articles/testcase-import-export-csv.html)
-- *Show grid*: You can use the grid mode for viewing/editing test cases along with test steps.
-- *Full screen view*: You can view the contents of the entire Define tab in a full screen mode using this option. 
-- *Filtering*: Using the filter bar, you can filter the list of test cases using the fields of "test case title", "assigned to" and "state". You can also sort the list by clicking on the column headers.
-- *Column options*: You can manage the list of columns visible in the Define tab using "Column options". The list of columns available for selection are primarily the fields from the test case work item form. 
+- **New Test Case**:
+	- **Add Test Case**: Create a new test case using the work item form and automatically add it to the suite.
+	- **Add existing test cases**: Open a dialog to query for existing test cases that you can select from and add to the test suite.   
+	- **Add New test case using grid**: Create one or more test cases using the test cases grid view and automatically add them to the suite.
+- **Order test cases**: Reorder test cases by dragging/dropping one or more test cases within a given suite. The order of test cases only applies to manual test cases and not to automated tests.
+- **Move test cases from one suite to another**: Using drag/drop, move test cases from one test suite to another. 
 
+**Add existing test cases to a test suite dialog**
+
+:::image type="content" source="media/navigate/add-test-cases-to-suite-dialog.png" alt-text="**Define** tab, add existing test cases dialog.":::
+
+### Toolbar options
+
+:::image type="content" source="media/navigate/define-tab-toolbar-2.png" alt-text="**Define** tab, toolbar options.":::
+
+From the **Define** tab, toolbar, you can exercise the following options: 
+
+- **Export test cases to CSV**: Export existing test cases to a CSV file and make changes using Excel.
+- **Import test cases from CSV**: Import changes made to test cases from a CSV file. 
+- **Grid View**: Use the grid mode for viewing or editing multiple test cases along with test steps.
+- **Toggle full screen mode**: Expand the view by choosing full screen mode. 
+- **Filter**: Choose :::image type="icon" source="media/navigate/filter-icon.png" border="false"::: **Filter**  to toggle the filter toolbar to filter the list of test cases.
+- **Column options**: Add or remove fields to display and sort on. The list of columns available for selection are primarily the fields from the test case work item form. 
 
 ### Context menu options 
 
@@ -134,71 +151,90 @@ From the **Define** tab you can exercise the following tasks:
 
 The context menu on the Test case node within the **Define** tab provides the following options:
 
-- *Open/edit test case work item form*: This option allows you to edit a Test case using the work item form wherein you edit the work item fields including test steps.
-- *Edit test cases*: This option allows you to bulk edit Test case work item fields. However, you cannot use this option to bulk edit test steps. 
-- *Edit test cases in grid*: This option allows you to bulk edit the selected test cases including test steps using the grid view.
-- *Assign configurations*: This option allows you to override the suite level configurations with test case level configurations. 
-- *Remove test cases*: This option allows you to remove the test cases from the given suite. It does not change the underlying test case work item though. 
-- *Create a copy/clone of test cases*: This option allows you to create a copy/clone of selected test cases. See below for more details.
-- *View linked items*: This option allows you to look at the linked items for a given test case. See below for more details. 
+- **Open/edit test case work item form**: This option allows you to edit a Test case using the work item form wherein you edit the work item fields including test steps.
+- **Edit test cases**: This option allows you to bulk edit Test case work item fields. However, you cannot use this option to bulk edit test steps. 
+- **Edit test cases in grid**: This option allows you to bulk edit the selected test cases including test steps using the grid view.
+- **Assign configurations**: This option allows you to override the suite level configurations with test case level configurations. 
+- **Remove test cases**: This option allows you to remove the test cases from the given suite. It does not change the underlying test case work item though. 
+- **Create a copy/clone of test cases*: This option allows you to create a copy/clone of selected test cases. See below for more details.
+- **View linked items**: This option allows you to look at the linked items for a given test case. See below for more details. 
 
 
-### Copy/clone test cases 
+### Copy or clone test cases 
+
+Choose **Copy test case** to copy or clone a test case. Specify the destination project, destination test plan and destination test suite in which to create the copy/cloned test case. In addition, you can also specify whether you want to include existing links/attachments to flow into the cloned copy. 
 
 :::image type="content" source="media/navigate/copy-test-cases.png" alt-text="Define tab copy test cases menu option and dialog.":::
 
-For scenarios where you want to copy/clone a test case, you can use the "Copy test case" option. You can specify the destination project, destination test plan and destination test suite in which to create the copy/cloned test case. In addition, you can also specify whether you want to include existing links/attachments to flow into the cloned copy. 
-
+ 
 
 ### View linked item 
 
-:::image type="content" source="media/navigate/view-linked-items.png" alt-text="define tab view linked items page":::
+Use **View linked items** option, to review all linked Requirements that this test case is linked with, all the Test suites/Test plans where this test case has been used, and all the bugs that have been filed as part of test execution. 
 
-Traceability among test artifacts, requirements and bugs is a critical value proposition of the Test Plans product. Using the "View linked items" option, you can easily look at all the linked Requirements that this test case is linked with, all the Test suites/Test plans where this test case has been used and all the bugs that have been filed as part of test execution. 
+:::image type="content" source="media/navigate/view-linked-items.png" alt-text="Define tab, View linked items dialog.":::
+  
 
+### Bulk update using the Grid view
+
+
+Choose the :::image type="icon" source="media/navigate/grid-icon.png" border="false"::: **Grid View**  to perform bulk updates to the test cases.  
+
+:::image type="content" source="media/navigate/grid-view.png" alt-text="Define tab, grid view.":::
+
+Click within a cell to edit the text in that cell. Right-click within a cell to choose an option to **Insert row**, **Delete row**, or **Clear row**.  Choose :::image type="icon" source="media/navigate/bulk-save-icon.png" border="false"::: **Save test cases** to perform a bulk save of your changes. Or, choose :::image type="icon" source="media/navigate/grid-refresh.png" border="false"::: **Refresh** to clear your changes. When complete, choose **Close Grid**. 
+
+:::image type="content" source="media/navigate/grid-view-cell-options.png" alt-text="Define tab, grid view, cell options.":::
 
 <a name="executetab"></a>
 
 ## Execute tab
 
-:::image type="content" source="media/navigate/execute-tab-toolbar.png" alt-text="execute tab page":::
+Use the **Execute** tab to assign test points or run tests.   
 
-Define tab lets you collate, add and manage test cases for a test suite. Whereas the execute tab is for assigning test points and executing them. 
+:::image type="content" source="media/navigate/execute-tab-toolbar.png" alt-text="Execute tab overview.":::
+ 
 
-**What is a test point?** Test cases by themselves are not executable. When you add a test case to a test suite then test point(s) are generated. A test point is a unique combination of test case, test suite, configuration, and tester. Example: if you have a test case as "Test login functionality" and you add 2 configurations to it as Edge and Chrome then this results in 2 test points. Now these test points can be executed. On execution, test results are generated. Through the test results view (execution history) you can see all executions of a test point. The latest execution for the test point is what you see in the execute tab. <br>
-Hence, test cases are reusable entities. By including them in a test plan or suite, test points are generated. By executing test points, you determine the quality of the product or service being developed.
+**What is a test point?** Test cases by themselves are not executable. When you add a test case to a test suite then test point(s) are generated. A test point is a unique combination of test case, test suite, configuration, and tester.  
+For example, if you have a test case named *Test login functionality* and you add two configurations for the Edge and Chrome browsers, you have two test points. You can execute or run each of these test points. On execution, test results are generated. Through the test results view, or execution history, you can see all executions of a test point. The latest execution for the test point is what you see in the **Execute** tab.  
+
+Test cases are reusable entities. By including them in a test plan or suite, test points are generated. By executing test points, you determine the quality of the product or service under development.
 
 One of the primary benefits of the new page is for users who mainly do test execution/tracking (need to have only 'Basic' access level), they are not overwhelmed by the complexity of suite management (define tab is hidden for such users). 
 
-> The Define tab and certain operations are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Everything else, including the "Execute" tab should be exercisable by a user with 'Basic' access level.
 
 
 ### Tasks 
 
-The Execute tab allows you to perform the following tasks:
+From the **Execute** tab you can do one of the following tasks:
 
-- *Bulk mark test points*: This option allows you to quickly mark the outcome of the test points - passed, failed, blocked or not applicable, without having to run the test case via the Test runner. The outcome can be marked for one or multiple test points at one go. 
-- *Run test points*: This option allows you to run the test cases by individually going through each test step and marking them pass/fail using a Test runner. Depending upon the application you are testing, you can use the "Web Runner" for testing a "web application" or the "desktop runner" for testing desktop and/or web applications. You can also invoke the "Run with options" to specify a Build against which the testing you want to perform. 
-- *Column options*: You can manage the list of columns visible in the Execute tab using "Column options". The list of columns available for selection are associated with test points, such as Run by, Assigned Tester, Configuration, etc. 
-- *Full screen view*: You can view the contents of the entire Execute tab in a full screen mode using this option. 
-- *Filtering*: Using the filter bar, you can filter the list of test points using the fields of "test case title", "assigned to", "state", "test outcome", "Tester" and "Configuration". You can also sort the list by clicking on the column headers.
+- **Bulk mark test points**: Quickly mark the outcome of or more test points&mdash;**Passed**, **Failed**, **Blocked** or **Not Applicable**&mdash;without having to run the test case via the Test runner.  
+- **Run test points**:Run the test cases by individually going through each test step and marking them pass/fail using a Test runner. Depending upon the application you are testing, you can use the **Web Runner** for testing a "web application" or the **Desktop Runner** for testing desktop or web applications. Invoke **Run with options** to specify a **Build** against which the testing you want to perform. 
+- **Column options**: Add or remove colums. The list of columns available for selection are associated with test points, such as Run by, Assigned Tester, Configuration, etc. 
+- **Toggle Full screen view**: View the contents of the page in a full screen mode. 
+- **Filter**: Filter the list of test points using the fields of a test case **Title**, **ID**, **Outcome**, **Tester**, **Configuration**, **Assigned To**, or **State**.   You can also sort the list by choosing a column header.
+
+ 
+### Change column options
+
+Choose :::image type="icon" source="media/navigate/column-options-icon.png" border="false"::: **Column options** to open the Column options dialog. Add or remove columns and drag and drop them in the order you want. 
+
+:::image type="content" source="media/navigate/column-options.png" alt-text="Column options dialog.":::
 
 
 ### Context menu options 
 
-:::image type="content" source="media/navigate/execute-tab-context-menu.png" alt-text="execute tab context menu page":::
+:::image type="content" source="media/navigate/test-point-node-context-menu.png" alt-text="Execute tab, test point node More options menu.":::
 
-The context menu on the Test point node within the Execute tab provides the following options:
+Choose the :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More options** to open the context menu for a Test Point node to perform one of the following actions:
 
-- *Mark test outcome*: Same as above, allows you to quickly mark the outcome of the test points - passed, failed, blocked or not applicable.
-- *Run test points*: Same as above, allows you to run the test cases via test runner.
-- *Reset test to active*: This option allows you to reset the test outcome to active, thereby ignoring the last outcome of the test point. 
-- *Open/edit test case work item form*: This option allows you to edit a Test case using the work item form wherein you edit the work item fields including test steps.
-- *Assign tester*: This option allows you to assign the test points to testers for test execution.
-- *View test result*: This option allows you to view the latest test outcome details including the outcome of each test step, comments added or bugs filed. 
-- *View execution history*: This option allows you to view the execution history for the test case in a side panel. You can move across the test points or open the detailed execution history from the panel - refer below image
+- **View execution history**: View the execution history for the test case in a side pane. You can move across the test points or open the detailed execution history from the pane.
+- **Mark Outcome**: Quickly mark the outcome of the test points&mdash;**Passed**, **Failed**, **Blocked** or **Not Applicable**.
+- **Run** - Initiate a test runner with options to **Run for web application**, **Run for desktop**, **Run with options**.
+- **Reset test to active**: Reset the test outcome to **Active**, ignoring the last outcome of the test point. 
+- **Edit test case**: Open the work item form, optionally edit work item fields including test steps.
+- **Assign tester**: Assign the test points to a tester for test execution.
 
-:::image type="content" source="media/navigate/execute-tab-execution-history.png" alt-text="execute tab execution history":::
 
 ## Chart tab
 
@@ -222,3 +258,6 @@ From the chart tab you can create various test case or test result charts. To le
 ### REST APIs 
 
 - [Test Management REST API](/rest/api/azure/devops/test) 
+
+
+This has been one of the most requested features and we are happy to share that we are opening this for beta testing. See [here for more options.](https://pkuma-msft.github.io/azure-test-plans/articles/testcase-import-export-csv.html)
