@@ -168,9 +168,8 @@ The context menu on the Test case node within the **Define** tab provides the fo
 - **Edit test cases in grid**: This option allows you to bulk edit the selected test cases including test steps using the grid view.
 - **Assign configurations**: This option allows you to override the suite level configurations with test case level configurations. 
 - **Remove test cases**: This option allows you to remove the test cases from the given suite. It does not change the underlying test case work item though. 
-- **Create a copy/clone of test cases*: This option allows you to create a copy/clone of selected test cases. See below for more details.
-- **View linked items**: This option allows you to look at the linked items for a given test case. See below for more details. 
-
+- **Create a copy/clone of test cases**: Create a copy or clone selected test cases.  
+- **View linked items**: Review items linked to a test case.  
 
 ### Copy or clone test cases 
 
@@ -178,12 +177,14 @@ Choose **Copy test case** to copy or clone a test case. Specify the destination 
 
 :::image type="content" source="media/navigate/copy-test-cases.png" alt-text="Define tab copy test cases menu option and dialog.":::
 
- 
 
 ### View linked item 
 
-Use **View linked items** option, to review all linked Requirements that this test case is linked with, all the Test suites/Test plans where this test case has been used, and all the bugs that have been filed as part of test execution. 
-
+Use **View linked items** option, to review objects linked to the test case. Choose each tab to view the links listed under the linked oject type: 
+- **Test Suites**
+- Requirements: Includes any work item that belongs to the Requirements Category, such as User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI), or a custom work item type.
+- Bugs: Includes bugs that have been filed as part of test execution and any work items that belong to the Bug Category that have been linked to the test case.
+ 
 :::image type="content" source="media/navigate/view-linked-items.png" alt-text="Define tab, View linked items dialog.":::
   
 
@@ -242,6 +243,8 @@ Choose the :::image type="icon" source="../media/icons/more-actions.png" border=
 - **Edit test case**: Open the work item form, optionally edit work item fields including test steps.
 - **Assign tester**: Assign the test points to a tester for test execution.
 
+To learn more about executing tests, see [Run manual tests](run-manual-tests.md) and [Run automated tests from test plans](run-automated-tests-from-test-hub.md).
+
 
 ## Chart test cases and test results 
 
@@ -255,6 +258,8 @@ From the chart tab you can create various test case or test result charts. To le
 
 ## Related articles
 
+- [Run manual tests](run-manual-tests.md) 
+- [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
 - [Track test status](track-test-status.md). 
 - [About pipeline tests](../pipelines/test/test-glossary.md)
 - [What are extensions?](../extend/overview.md) 
