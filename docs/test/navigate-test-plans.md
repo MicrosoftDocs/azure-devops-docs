@@ -264,6 +264,3 @@ From the chart tab you can create various test case or test result charts. To le
 ### REST APIs 
 
 - [Test Management REST API](/rest/api/azure/devops/test) 
-
-
-This has been one of the most requested features and we are happy to share that we are opening this for beta testing. See [here for more options.](https://pkuma-msft.github.io/azure-test-plans/articles/testcase-import-export-csv.html)
