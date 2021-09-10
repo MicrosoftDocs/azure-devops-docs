@@ -10,7 +10,7 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 03/05/2021  
+ms.date: 09/10/2021  
 ---
 
 # Publish a Git repository to a wiki
@@ -112,7 +112,7 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 The head of the Git repo branch is now mapped to the wiki. Any changes made within the branch and selected folder(s) are automatically reflected in the Wiki. There are no other workflows involved.
 
 > [!NOTE]
-> You're limited to publishing 10 branches as code wikis.
+> You can publish up to 10 total wikis.
 
 For the Wiki that's provisioned with the Markdown files you've added, you can now add or edit pages in the same way that you maintain code in your Git repository.  
 
