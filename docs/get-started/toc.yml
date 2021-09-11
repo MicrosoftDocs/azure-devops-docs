@@ -1,31 +1,61 @@
-- name: Azure DevOps Get Started Documentation
-  href: index.md
-- name: Start Using Azure DevOps
+- name: Get started 
+  href: index.yml
+- name: Start using Azure DevOps
   href: ../user-guide/toc.yml
-- name: Web Portal Navigation
-  href: ../project/navigation/toc.yml 
-- name: Search Across Azure DevOps
-  href: ../project/search/toc.yml 
-- name: Migrate & Import
+- name: Integration overview
+  items:
+  - name: Cross-service integration overview
+    href: ../cross-service/cross-service-overview.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: GitHub integration 
+    href: ../cross-service/github-integration.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Deploy to Azure
+    href: ../pipelines/overview-azure.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+- name: Web portal navigation
+  items:
+  - name: Navigation 
+    href: ../project/navigation/index.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Open a service, page, or setting 
+    href: ../project/navigation/go-to-service-page.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
+  - name: Add an artifact or team artifacts
+    href: ../project/navigation/add-artifact-team.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Use breadcrumbs, selectors, and directories
+    href: ../project/navigation/use-breadcrumbs-selectors.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Open another project or repo  
+    href: ../project/navigation/go-to-project-repo.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json   
+  - name: Set favorites 
+    href: ../project/navigation/set-favorites.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
+  - name: Filter basics 
+    href: ../project/navigation/filter-basics.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Search your repo, work items, or wiki 
+    href: ../project/search/get-started-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
+  - name: Manage or enable features  
+    href: ../project/navigation/preview-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+- name: Search
+  items:
+  - name: Get started with search
+    href: ../project/search/get-started-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Search code
+    href: ../project/search/functional-code-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Search work items
+    href: ../project/search/functional-work-item-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+- name: Migrate & import
   href: ../migrate/toc.yml 
-- name: Reference
+- name: Permissions & access
   items:
   - name: "Permissions and access (Security)"
     href: ../organizations/security/permissions-access.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: About access levels
     href: ../organizations/security/access-levels.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Navigate in Team Explorer
-    href: ../user-guide/work-team-explorer.md  
-  - name: FAQs
-    href: ../user-guide/faqs.md
+- name: Status & security 
+  items: 
   - name: Service status  
-    href: ../user-guide/service-status-info.md
-  - name: Service limits  
-    href: ../user-guide/service-limits.md
-- name: REST API Reference
-  items:
-  - name: Search
-    href: https://docs.microsoft.com/rest/api/vsts/search/?view=vsts-rest-4.1
+    href: ../user-guide/service-status-info.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Data protection
+    href: ../organizations/security/data-protection.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Data location
+    href: ../organizations/security/data-location.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Credential storage
+    href: ../organizations/security/credential-storage.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
 - name: IDE Client Resources
   items:
   - name: Visual Studio IDE
@@ -35,40 +65,26 @@
   - name: Visual Studio for Mac
     href: /visualstudio/mac
   - name: Eclipse
-    href: /azure/devops/java/download-eclipse-plug-in
+    href: /previous-versions/azure/devops/java/download-eclipse-plug-in
   - name: IntelliJ IDEA
-    href: /azure/devops/java/download-intellij-plug-in
-- name: Azure DevOps Services status & security
-  items: 
-  - name: Service status  
-    href: ../user-guide/service-status-info.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Azure DevOps data protection
-    href: ../organizations/security/data-protection.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Azure DevOps data location
-    href: ../organizations/security/data-location.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Azure DevOps credential storage
-    href: ../organizations/security/credential-storage.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-- name: Journey articles
-  items:
-    - name: Agile
-      href: /azure/devops/learn/agile/what-is-agile
-    - name: DevOps
-      href: /azure/devops/learn/what-is-devops
-    - name: Git at Scale
-      href: /azure/devops/learn/git/git-at-scale
+    href: /previous-versions/azure/devops/java/download-intellij-plug-in
 - name: Resources
   items:
-  - name: Set your preferences  
-    href: /azure/devops/organizations/settings/set-your-preferences
+  - name: Settings, security, & usage
+    href: ../organizations/index.yml
   - name: Manage projects 
-    href: /azure/devops/organizations/projects/index
-  - name: Permissions, Security, & Identity 
-    href: /azure/devops/organizations/security/index
-  - name: Marketplace & Extensibility
-    href: /azure/devops/marketplace-extensibility/index
+    href: ../organizations/projects/about-projects.md
+  - name: Marketplace & extensibility
+    href: ../marketplace-extensibility/index.yml
   - name: Search your Wiki
     href: https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/
-  - name: Code Search Video
+  - name: Code search video
     href: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
-
-
+- name: DevOps Resource Center
+  items:
+    - name: What is DevOps?
+      href: /devops/what-is-devops
+    - name: What is Agile?
+      href: /devops/plan/what-is-agile
+    - name: What is Git?
+      href: /devops/develop/git/what-is-git

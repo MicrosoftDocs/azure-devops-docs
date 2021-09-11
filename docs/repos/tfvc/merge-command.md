@@ -3,11 +3,7 @@ title: Merge Command
 titleSuffix: Azure Repos
 description: Merge Command
 ms.assetid: 4075b4a8-1d11-49d5-8dbe-4fd00cdb0fca
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,25 +12,28 @@ monikerRange: '>= tfs-2015'
 
 # Merge Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 The **merge** command applies changes from one branch into another.
 
 > [!NOTE]
-> The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+> The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)).
 
 **Required Permissions**
 
 To use the **merge** command, you must have the **Check out** permission set to **Allow** for the workspace folder that contains the *destination* and you must have the **Read** permission set to **Allow** for the workspace folder that contains the source. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf merge [/recursive] [/force] [/candidate] [/discard] 
-    [/version:versionspec] [/lock:none|checkin|checkout] [/preview] 
-    [/baseless] [/nosummary] [/noimplicitbaseless] [/conservative] [/format:(brief|detailed)] [/noprompt] [/login:username,[password]] source destination
+```
+tf merge [/recursive] [/force] [/candidate] [/discard] 
+[/version:versionspec] [/lock:none|checkin|checkout] [/preview] 
+[/baseless] [/nosummary] [/noimplicitbaseless] [/conservative] [/format:(brief|detailed)] [/noprompt] [/login:username,[password]] source destination
+```
+
 ## Parameters
 
 |**Argument**|**Description**|
 |---|---|
-|*versionspec*|Provides a value such as C2 for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be).|
+|*versionspec*|Provides a value such as C2 for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).|
 |*source*|Specifies the file or folder to act as the source of the merge.|
 |*destination*|Specifies the file or folder to act as the destination of the merge.|
 |*username*|Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName* or *UserName*.|
@@ -92,7 +91,7 @@ You can use the **merge** command of the **tf** command-line utility to apply ch
 
 The **merge** command also lets you query for changes in a source branch which have not been migrated to the target branch. Additionally, it lets you indicate that certain changes will never be merged from the source to the destination and should no longer be displayed as candidates for a merge operation.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ### Baseless Merge
 
@@ -104,44 +103,51 @@ If you run **tf merge** with the **/noimplicitbaseless** option set, when Team F
 ## Examples
 The following example merges changes from MyFile\_beta1 that have not been merged into MyFile\_RTM.
 
-    c:\projects>tf merge MyFile_beta1 MyFile_RTM /recursive
+```
+c:\projects>tf merge MyFile_beta1 MyFile_RTM /recursive
+```
 
 The following example merges changeset 137 into branch2.
 
-    c:\projects>tf merge /version:C137~C137 branch1 branch2 /recursive
+```
+c:\projects>tf merge /version:C137~C137 branch1 branch2 /recursive
+```
 
 The following example merges all the changesets up to changeset 137 into branch2.
 
-    c:\projects>tf merge /version:C137 branch1 branch2 /recursive
+```
+c:\projects>tf merge /version:C137 branch1 branch2 /recursive
+```
 
 The following example prints a list of the changesets in branch1 that have not been merged into branch2.
 
-    c:\projects>tf merge /candidate branch1 branch2 /recursive
+```
+c:\projects>tf merge /candidate branch1 branch2 /recursive
+```
 
 The following example prints a list of changesets in branch2 that have not been merged back into branch1.
 
-    c:\projects>tf merge /candidate branch2 branch1 /recursive
+```
+c:\projects>tf merge /candidate branch2 branch1 /recursive
+```
 
 The following example discards changeset 137 as a candidate for merging into branch2.
 
-    c:\projects>tf merge /discard /version:C137 branch1 branch2 /recursive
+```
+c:\projects>tf merge /discard /version:C137~C137 branch1 branch2 /recursive
+```
 
-## See Also
+The following example discards all the changesets up to changeset 137 as a candidate for merging into branch2.
 
-#### Tasks
+```
+c:\projects>tf merge /discard /version:C137 branch1 branch2 /recursive
+```
 
-[Resolve Conflicts between Two Files](https://msdn.microsoft.com/library/ms181433)
+## Related articles
 
-#### Reference
-
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
-
-[Branch Command](branch-command.md)
-
-[Merges Command](merges-command.md)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
-
-[Branching and Merging](use-branches-isolate-risk-team-foundation-version-control.md)
+- [Resolve Conflicts between Two Files](/previous-versions/visualstudio/visual-studio-2010/ms181433(v=vs.100))
+- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+- [Branch Command](branch-command.md)
+- [Merges Command](merges-command.md)
+- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Branching and Merging](./branching-strategies-with-tfvc.md)

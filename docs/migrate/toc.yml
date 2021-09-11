@@ -1,24 +1,23 @@
-- name: Migrate & Import
-  href: index.md?toc=/azure/devops/migrate/toc.json&bc=/azure/devops/migrate/breadcrumb/toc.json
-- name: Migrate data from TFS to Azure DevOps Services
+- name: Migrate data to Azure DevOps Services
   href: migration-overview.md
+  displayName: migration, migration guide, migration tool
 - name: Migrate options
   href: migrate-from-tfs.md
+  displayName: migration options, database, migration guide
 - name: Import
   href: migration-import.md
+  displayName: database import, data migration tool, validate collection
+- name: Import large collections
+  href: migration-import-large-collections.md
+  displayName: reduce collection size
 - name: Process templates
   href: migration-processtemplates.md
+  displayName: inherited process model, hosted xml process model
 - name: Post-import
   href: migration-post-import.md
 - name: Troubleshooting
   href: migration-troubleshooting.md
-- name: Azure DevOps articles
-  items:
-    - name: Add Continuous Security Validation to your CICD Pipeline 
-      href: security-validation-cicd-pipeline.md  
-    - name: Build and Deployment Automation Case Study
-      href: build-deployment-best-practices.md
-    - name: Progressively expose your features using feature flags
-      href: phase-features-with-feature-flags.md
-    - name: Progressively expose your releases using deployment rings
-      href: phase-rollout-with-rings.md
+  displayName: maximum supported size, isverror 100014, isverror 300005, VS4034, VS4032, VS4033
+- name: FAQs, migration and process models
+  href: faqs.yml
+  displayName: hosted xml

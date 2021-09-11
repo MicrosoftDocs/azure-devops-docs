@@ -3,19 +3,17 @@ title: Review team activities to support useful reports
 titleSuffix: TFS
 description: Ensure basic operations are performed by team members to generate useful SQL Server reports when working in Team Foundation Server    
 ms.assetid: 46456FBF-EECC-4096-9A98-3A9457F97EB2  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: "<= azure-devops-2019" 
+monikerRange: '< azure-devops' 
 ms.date: 11/19/2018
 ---
 
 # Review team activities to support useful reports 
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 
 > [!IMPORTANT]
@@ -23,10 +21,10 @@ ms.date: 11/19/2018
 
 This is the fourth task in the four-task sequence to add reports to your team project. To generate useful reports, team members must perform certain tasks. this article summarizes those tasks.     
 
-[![Add a report server](_img/step-1-add-a-report-server.png)](add-a-report-server.md)
-[![Upload reports](_img/step-2-upload-reports.png)](upload-reports.md)
-[![Grant permissions](_img/step-3-grant-permissions.png)](grant-permissions-to-reports.md) 
-[![Review team activities](_img/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
+[![Add a report server](media/step-1-add-a-report-server.png)](add-a-report-server.md)
+[![Upload reports](media/step-2-upload-reports.png)](upload-reports.md)
+[![Grant permissions](media/step-3-grant-permissions.png)](grant-permissions-to-reports.md) 
+[![Review team activities](media/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
 
 
 Now that you've uploaded reports, how do you use them to track progress, gain insight, and improve processes?
@@ -44,9 +42,9 @@ Build reports track the quality of software under development. By defining tests
 <b>Build and test activities</b> 
 <ol>
 <li><a href="../../pipelines/agents/agents.md" data-raw-source="[Configure a build system](../../pipelines/agents/agents.md)">Configure a build system</a></li>
-<li><a href="../../pipelines/get-started-designer.md" data-raw-source="[Get started with CI/CD](../../pipelines/get-started-designer.md)">Get started with CI/CD</a></li>
+<li><a href="/azure/devops/pipelines/create-first-pipeline" data-raw-source="[Get started with CI/CD](../../pipelines/create-first-pipeline.md)">Get started with CI/CD</a></li>
 <li><a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[Run tests in your build process](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)">Run tests in your build process</a></li>
-<li>(Optional) <a href="https://msdn.microsoft.com/library/ms181734.aspx" data-raw-source="[Rate completed builds](https://msdn.microsoft.com/library/ms181734.aspx)">Rate completed builds</a> to populate the Build Quality dimension.</li>
+<li>(Optional) <a href="/previous-versions/ms181734(v=vs.140)" data-raw-source="[Rate completed builds](/previous-versions/ms181734(v=vs.140))">Rate completed builds</a> to populate the Build Quality dimension.</li>
 </ol>
 </td>
 <td>
@@ -66,7 +64,7 @@ Build reports track the quality of software under development. By defining tests
 
 **Sample build success over time report**  
 
-![Sample build summary report](_img/IC665009.png)  
+![Sample build summary report](media/IC665009.png)  
 
 ## Monitor progress
 Project management reports provide insight into how much work the team is tackling within a sprint or release, and the rate of their progress. By linking work items and updating specific fields as work is performed, you can track the progress of individual stories and be able to more accurately estimate future activities. 
@@ -118,7 +116,7 @@ Project management reports provide insight into how much work the team is tackli
 </table>
 
 **Sample stories overview report**  
-![Sample stories overview report](_img/IC665011.png)  
+![Sample stories overview report](media/IC665011.png)  
 
 
 ## Monitor test plans and bug tracking
@@ -149,7 +147,7 @@ Test planning reports support monitoring the test progress and coverage of backl
 </table>
 
 **Sample test plan progress report**   
-![Sample test plan progress report](_img/IC665012.png)  
+![Sample test plan progress report](media/IC665012.png)  
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

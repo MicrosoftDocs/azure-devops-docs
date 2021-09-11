@@ -2,7 +2,6 @@
 title: GitHub Enterprise support and automatic GitHub service connections in build pipelines - Sprint 146 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 01/14/2019
 description: In the Sprint 146 Update of Azure DevOps, we added more functionality to support GitHub integration
@@ -18,43 +17,43 @@ Check out the [Features](#features) list below for more.
 
 General:
 
-[!INCLUDE [sprint-146-update-links](_shared/general/sprint-146-update-links.md)]
+[!INCLUDE [sprint-146-update-links](includes/general/sprint-146-update-links.md)]
 
 Azure Boards:
 
-[!INCLUDE [sprint-146-update-links](_shared/boards/sprint-146-update-links.md)]
+[!INCLUDE [sprint-146-update-links](includes/boards/sprint-146-update-links.md)]
 
 Azure Pipelines:
 
-[!INCLUDE [sprint-146-update-links](_shared/pipelines/sprint-146-update-links.md)]
+[!INCLUDE [sprint-146-update-links](includes/pipelines/sprint-146-update-links.md)]
 
 Azure Artifacts:
 
-[!INCLUDE [sprint-146-update-links](_shared/artifacts/sprint-146-update-links.md)]
+[!INCLUDE [sprint-146-update-links](includes/artifacts/sprint-146-update-links.md)]
 
 Wiki:
 
-[!INCLUDE [sprint-146-update-links](_shared/wiki/sprint-146-update-links.md)]
+[!INCLUDE [sprint-146-update-links](includes/wiki/sprint-146-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-146-update](_shared/general/sprint-146-update.md)]
+[!INCLUDE [sprint-146-update](includes/general/sprint-146-update.md)]
 
 ## Azure Boards
 
-[!INCLUDE [sprint-146-update](_shared/boards/sprint-146-update.md)]
+[!INCLUDE [sprint-146-update](includes/boards/sprint-146-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-146-update](_shared/pipelines/sprint-146-update.md)]
+[!INCLUDE [sprint-146-update](includes/pipelines/sprint-146-update.md)]
 
 ## Azure Artifacts
 
-[!INCLUDE [sprint-146-update](_shared/artifacts/sprint-146-update.md)]
+[!INCLUDE [sprint-146-update](includes/artifacts/sprint-146-update.md)]
 
 ## Wiki
 
-[!INCLUDE [sprint-146-update](_shared/wiki/sprint-146-update.md)]
+[!INCLUDE [sprint-146-update](includes/wiki/sprint-146-update.md)]
 
 ## Next steps
 
@@ -64,14 +63,14 @@ Wiki:
 Read about the new features below and head over to Azure DevOps to try them for yourself.
 
 > [!div class="nextstepaction"]
-> [Go to Azure DevOps](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![Make a suggestion](../_img/help-make-a-suggestion.png)
+> ![Make a suggestion](../media/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

@@ -4,19 +4,17 @@ titleSuffix: Azure Boards
 description: Index to all fields used in the Agile, Scrum, and CMMI processes/process templates for Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: work-items
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
-ms.topic: reference  
-ms.manager: jillfra
+ms.topic: conceptual  
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/09/2020
 ---
 
 # Work item field index  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Basic](../../get-started/plan-track-work.md), [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your project](../../../organizations/projects/create-project.md).
 
@@ -26,7 +24,7 @@ To support additional tracking needs, you can [define your own custom work item 
 
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019"  
+::: moniker range=">= azure-devops-2019 < azure-devops"  
 
 To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md) using the Inheritance process model, or if your project collection is configured to use the On-premises XML process model, then see [Modify or add a custom field](../../../reference/add-modify-field.md).  
 
@@ -93,9 +91,9 @@ Values in parenthesis indicate the following:
 <h3>B</h3>
 <ul><li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Backlog Priority](../../queries/planning-ranking-priorities.md)">Backlog Priority</a> (Scrum)</li>
 <li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Blocked](../../queries/planning-ranking-priorities.md)">Blocked</a></li>
-<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Board Column](../../queries/query-by-workflow-changes.md)">Board Column</a></li>
-<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Board Column Done](../../queries/query-by-workflow-changes.md)">Board Column Done</a></li>
-<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Board Lane](../../queries/query-by-workflow-changes.md)">Board Lane</a></li>
+<li><a href="../../queries/query-by-workflow-changes.md">Board Column<sup>1</sup></a></li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Board Column Done](../../queries/query-by-workflow-changes.md)">Board Column Done<sup>1</sup></a></li>
+<li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Board Lane](../../queries/query-by-workflow-changes.md)">Board Lane<sup>1</sup></a></li>
 <li><a href="../../queries/query-numeric.md" data-raw-source="[Business Value](../../queries/query-numeric.md)">Business Value</a></li>
 </ul>
 <h3>C</h3>
@@ -108,7 +106,7 @@ Values in parenthesis indicate the following:
 <li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Closed Status](guidance-code-review-feedback-field-reference.md)">Closed Status</a></li>
 <li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Closed Status Code](guidance-code-review-feedback-field-reference.md)">Closed Status Code</a></li>
 <li><a href="guidance-code-review-feedback-field-reference.md" data-raw-source="[Closing Comment](guidance-code-review-feedback-field-reference.md)">Closing Comment</a></li>
-<li><a href="../../queries/linking-attachments.md" data-raw-source="[Comment Count](../../queries/linking-attachments.md)">Comment Count</a></li>
+<li><a href="../../queries/linking-attachments.md">Comment Count<sup>2</sup></a></li>
 <li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Comments](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Comments</a> (CMMI)</li>
 <li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Committed](../../queries/planning-ranking-priorities.md)">Committed</a> (CMMI)</li>
 <li><a href="../../queries/query-numeric.md" data-raw-source="[Completed Work](../../queries/query-numeric.md)">Completed Work</a></li>
@@ -149,7 +147,7 @@ Values in parenthesis indicate the following:
 <li><a href="cmmi/guidance-change-request-field-reference-cmmi.md" data-raw-source="[Impact on User Experience](cmmi/guidance-change-request-field-reference-cmmi.md)">Impact on User Experience</a> (CMMI)</li>
 <li><a href="../../queries/build-test-integration.md" data-raw-source="[Integrated in Build](../../queries/build-test-integration.md)">Integrated in Build</a> (TCM)</li>
 <li><a href="../../queries/build-test-integration.md" data-raw-source="[Issue](../../queries/build-test-integration.md)">Issue</a> (TCM)</li>
-<li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Id](../../queries/query-by-area-iteration-path.md)">Iteration Id</a>  (System)</li>
+<li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Id](../../queries/query-by-area-iteration-path.md)">Iteration ID</a>  (System)</li>
 <li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Path](../../queries/query-by-area-iteration-path.md)">Iteration Path</a> (System)</li>
 </ul>
 <h3>J-L-M-N</h3>
@@ -169,9 +167,10 @@ Values in parenthesis indicate the following:
 <li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Optional Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Optional Attendee 1-8</a> (CMMI)</li>
 <li><a href="../../queries/query-numeric.md" data-raw-source="[Original Estimate](../../queries/query-numeric.md)">Original Estimate</a></li>
 <li><a href="../../queries/build-test-integration.md" data-raw-source="[Parameters](../../queries/build-test-integration.md)">Parameters</a> (TCM)</li>
+<li><a href="../../queries/linking-attachments.md#parent">Parent<sup>3</sup></a></li>
 <li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Priority](../../queries/planning-ranking-priorities.md)">Priority</a> </li>
 <li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Probability](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Probability</a> (CMMI)</li>
-<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md" data-raw-source="[Proposed Fix](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)">Proposed Fix</a> (CMMI) </li>
+<li><a href="cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md">Proposed Fix</a> (CMMI) </li>
 <li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Purpose](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Purpose</a> (CMMI)</li>
 <li><a href="../../queries/build-test-integration.md" data-raw-source="[Query Text](../../queries/build-test-integration.md)">Query Text</a> (TCM)</li>
 </ul>
@@ -182,13 +181,13 @@ Values in parenthesis indicate the following:
 <li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Reason](../../queries/query-by-workflow-changes.md)">Reason</a> (System)</li>
 <li><a href="../../queries/linking-attachments.md" data-raw-source="[Related Link Count](../../queries/linking-attachments.md)">Related Link Count</a> (System)</li>
 <li><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a> </li>
-<li><a href="../../queries/linking-attachments.md#remote-link-count" data-raw-source="[Remote Link Count](../../queries/linking-attachments.md#remote-link-count)">Remote Link Count</a> (System)</li>
+<li><a href="../../queries/linking-attachments.md#remote-link-count">Remote Link Count<sup>4</sup></a> (System)</li>
 <li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Repro Steps](../../queries/titles-ids-descriptions.md)">Repro Steps</a></li>
 <li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Required Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Required Attendee 1-8</a> (CMMI)</li>
 <li><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md)">Requirement Type</a> (CMMI)</li>
 <li><a href="../../queries/query-numeric.md" data-raw-source="[Requires Review](../../queries/query-numeric.md)">Requires Review</a> (CMMI)</li>
 <li><a href="../../queries/query-numeric.md" data-raw-source="[Requires Test](../../queries/query-numeric.md)">Requires Test</a> (CMMI)</li>
-<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Resolution]](../../queries/titles-ids-descriptions.md)">Resolution]</a> (Scrum)</li>
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Resolution](../../queries/titles-ids-descriptions.md)">Resolution</a> (Scrum)</li>
 <li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Resolved By](../../queries/query-by-workflow-changes.md)">Resolved By</a></li>
 <li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Resolved Date](../../queries/query-by-workflow-changes.md)">Resolved Date</a></li>
 <li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Resolved Reason](../../queries/query-by-workflow-changes.md)">Resolved Reason</a></li>
@@ -242,6 +241,14 @@ Values in parenthesis indicate the following:
 <hr/>
 <br/>
 
+
+#### Notes: 
+
+1. These fields are available from Azure DevOps Services and TFS 2015.1 or later versions. 
+2. The Comment Count field is available from Azure DevOps Services and TFS 2017 or later versions. 
+3. These fields are available from Azure DevOps Services and Azure DevOps Server 2020.
+4. These fields are available from Azure DevOps Services only.
+
 By using the system fields or other fields you have added to your project collection, you can enable meaningful cross-project reports and queries. In addition, any non-system field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any non-system field that you might want to use to generate a query or report in the **FIELDS** section.  
 
 
@@ -282,9 +289,9 @@ The following articles describe fields that are used in common by several WITs, 
 ## Related articles
 
 - [About work item fields](../work-item-fields.md)
-- [Create managed queries](../../queries/example-queries.md)
+- [About managed queries](../../queries/about-managed-queries.md)
 - [Define a query](../../queries/using-queries.md) 
 - [Choose a process](choose-process.md)  
-- [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises TFS only)    
+- [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises Azure DevOps only)    
 
 

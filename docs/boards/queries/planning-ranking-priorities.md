@@ -1,27 +1,24 @@
 ---
 title: Pick list queries
 titleSuffix: Azure Boards
-description: Create queries based on planning, ranking, and priority, integer and picklist fields in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Create queries based on planning, ranking, priority, and picklist fields in Azure DevOps
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/09/2020
 ---
 
 # Query by picklist value
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You use planning, ranking, and priority fields to specify which work the team should complete first.  By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
 
 You rank and prioritize work items when you [Create your backlog](../backlogs/create-your-backlog.md).
-
 
 ## Supported operators and macros 
 
@@ -68,9 +65,13 @@ Features and stories that address Architectural areas<br/>
 </tbody>
 </table>  
 
+
+<a id="fields-table" />
+
+
 ## Fields used to plan and prioritize work  
 
-The following table describes the fields that you can use to plan and prioritize work. Some fields are only valid for a specific process&mdash;[Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).
+The following table describes the fields that you can use to plan and prioritize work. Some fields are only valid for a specific process&mdash;[Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [Capability Maturity Model Integration (CMMI)](../work-items/guidance/cmmi-process.md).
 
 
 <table width="100%">
@@ -84,7 +85,7 @@ The following table describes the fields that you can use to plan and prioritize
 <tbody valign="top">
 <tr>
     <td><p>Backlog Priority <sup>1</sup></p></td>
-    <td><p>A number usually assigned by a background process used to track the list order of items on a backlog or board in the web portal.</p>
+    <td><p>A number usually assigned by a background process used to track the sequence of items on a backlog or board.</p>
 <p>Reference name=Microsoft.VSTS.Common.BacklogPriority, Data type=Double</p>
 </td><br/>
 <td><p>Bug, Epic, Feature, Product backlog item, Task (Scrum)</p></td>
@@ -92,26 +93,26 @@ The following table describes the fields that you can use to plan and prioritize
 
 <tr>
     <td><p>Blocked</p></td>
-    <td><p>Indicates whether a team member is prevented from making progress toward implementing a requirement or task or resolving a bug, change request, or risk. If an issue has been opened to track a blocking problem, a link should be made to the issue.</p><p>You can specify <strong>Yes</strong> or <strong>No</strong>.</p>
+    <td><p>Indicates that no further work can be performed on the work item. If an issue has been opened to track a blocking problem, a link should be made to the issue.</p><p>You can specify <strong>Yes</strong> or <strong>No</strong>.</p>
 <p>Reference name=Microsoft.VSTS.CMMI.Blocked, Data type=String</p>  </td><br/>    <td><p>Bug, Change Request, Requirement, Risk, Task (CMMI, Scrum)</p>
 </td>
 </tr>
 <tr>
     <td><p>Committed</p></td>
-    <td><p>Indicates whether the requirement is committed in the project or not. You can specify <strong>Yes</strong> or <strong>No</strong>.</p>
+    <td><p>Indicates whether or not the requirement is committed in the project. You can specify <strong>Yes</strong> or <strong>No</strong>.</p>
 <p>Reference name=Microsoft.VSTS.CMMI.Committed, Data type=String</p></td>
     <td><p>Requirement (CMMI)</p></td>
 </tr>
 <tr>
     <td><p>Escalate</p></td>
-    <td><p>Indicates whether the issue is affecting the critical path of the project plan. You can specify <strong>Yes</strong> or <strong>No</strong>.</p> 
+    <td><p>Indicates whether or not the issue is affecting the critical path of the project plan. You can specify <strong>Yes</strong> or <strong>No</strong>.</p> 
 <p>Reference name=Microsoft.VSTS.CMMI.Escalate, Data type=String</p></td>
     <td><p>Issue (CMMI)</p></td>
 </tr>
 <tr>
-    <td><p>Priority <sup>1</sup></p></td>
+    <td><a id="priority" /><p>Priority <sup>1</sup></p></td>
     <td><p>A subjective rating of the bug, issue, task, or test case as it relates to the business. You can specify the following values:</p>
-<ul style="list-style-type:none">
+<ul>
 <li><p><strong>1</strong>: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.</p></li>
 <li><p><strong>2</strong>: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.</p></li>
 <li><p><strong>3</strong>: Resolution of the work item is optional based on resources, time, and risk.</p></li></ul> 
@@ -119,14 +120,14 @@ The following table describes the fields that you can use to plan and prioritize
     <td><p>Bug, Change Request, Epic, Feature, Impediment, Issue, Product backlog item, Requirement, Risk, Shared Step, Task, Test Case, User Story</p></td>
 </tr>
 <tr>
-    <td><p>Risk</p></td>
-    <td><p>A subjective rating of the relative uncertainty around the successful completion of a user story.</p><p>Defined allowed values are:</p><ul style="list-style-type:none"><li><p><strong>1 - High</strong></p></li><li><p><strong>2 - Medium</strong></p></li><li><p><strong>3 - Low</strong></p></li></ul>
+    <td><a id="risk" /><p>Risk</p></td>
+    <td><p>A subjective rating of the relative uncertainty around the successful completion of a user story.</p><p>Defined allowed values are:</p><ul><li><p><strong>1 - High</strong></p></li><li><p><strong>2 - Medium</strong></p></li><li><p><strong>3 - Low</strong></p></li></ul>
 <p>Reference name=Microsoft.VSTS.Common.Risk, Data type=String</p></td>
     <td><p>Epic, Feature, User Story (Agile) </p></td>
 </tr>
 <tr>
     <td><p>Severity  <sup>1</sup></p></td>
-    <td><p>A subjective rating of the impact of a bug on the project. You can specify the following values:</p><ul style="list-style-type:none"><li><p><strong>1 - Critical</strong></p></li><li><p><strong>2 - High</strong></p></li><li><p><strong>3 - Medium</strong></p></li><li><p><strong>4 - Low</strong></p></li></ul> 
+    <td><p>A subjective rating of the impact of a bug on the project. You can specify the following values:</p><ul><li><p><strong>1 - Critical</strong></p></li><li><p><strong>2 - High</strong></p></li><li><p><strong>3 - Medium</strong></p></li><li><p><strong>4 - Low</strong></p></li></ul> 
 <p>Reference name=Microsoft.VSTS.Common.Severity, Data type=String</p>  </td>
     <td>Bug, Issue (CMMI), Risk (CMMI)</td>
 </tr>
@@ -160,8 +161,29 @@ The following table describes the fields that you can use to plan and prioritize
 </table>
 
 #### Notes:  
-1. To change the menu selection, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
-1. The sequence of items on the product backlog page is determined according to where you have added the items or dragged the items on the page. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, CMMI) field which is assigned to `type="Order"` in the ProcessConfiguration file.  
+
+1.  To change the menu selection, see [Add and manage fields (Inherited process)](../../organizations/settings/work/customize-process-field.md) or [Add or modify a field, customize a picklist (On-premises XML process)](../../reference/add-modify-field.md).  
+1. The sequence of items on a product backlog page is determined according to where you have added or dragged the items. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, Basic, CMMI) field. These fields determine the order in which backlog items appear on a backlog page. They are assigned to `type="Order"` in the ProcessConfiguration file.  
+
+
+## More on Backlog Priority or Stack Rank fields
+
+The Backlog Priority and Stack Rank fields don't appear on the work item forms. (To learn why, see [Where is the field on the work item form to order the backlog?](https://devblogs.microsoft.com/devops/where-is-the-field-on-the-work-item-form-to-order-the-backlog).
+
+To add the field to the form:
+
+- For an Inherited process, add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
+- For an On-premises XML process, add the field to the form, [modify the WIT XML definition to add the following control element](../../reference/add-modify-wit.md):
+
+    ```xml
+    <Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
+    ```
+
+    or, for Scrum:
+
+    ```xml
+    <Control FieldName="Microsoft.VSTS.Common.BacklogPriority" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
+    ```
 
 
 ## Related articles 
@@ -170,22 +192,3 @@ The following table describes the fields that you can use to plan and prioritize
 - [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Work item fields and attributes](../work-items/work-item-fields.md).  
 
-### More on Backlog Priority or Stack Rank fields
-
-The Backlog Priority and Stack Rank fields don't appear on the work item forms. (To learn why, see [Where is the field on the work item form to order the backlog?](https://devblogs.microsoft.com/devops/where-is-the-field-on-the-work-item-form-to-order-the-backlog).
-
-::: moniker range="azure-devops"  
-To add the field to the form, add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
-
-::: moniker-end  
-
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-To add the field to the form, [modify the WIT XML definition to add the following control element](../../reference/add-modify-wit.md):
-
-    `<Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />`
-
-    or, for Scrum
-
-    `<Control FieldName="Microsoft.VSTS.Common.BacklogPriority" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />`
-
-::: moniker-end  

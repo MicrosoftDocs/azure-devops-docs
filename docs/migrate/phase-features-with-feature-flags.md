@@ -1,19 +1,17 @@
 ---
 title:  Progressively expose your features using feature flags 
 description: Explore how to progressively expose your features in production for some or all users 
-ms.prod: devops
-ms.topic: article
-ms.technology: devops-whitepapers
-ms.manager: jillfra
+ms.topic: conceptual
+ms.technology: devops-migrate
 ms.date: 04/26/2018
-ms.author: sdanie
-author: wpschaub
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ---
 
 # Explore how to progressively expose your features in production for some or all users 
 
-[!INCLUDE [version-azure-devops](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-azure-devops](../includes/version-vsts-tfs-all-versions.md)]
 
 In today's fast-paced, feature-driven markets, it's important to continuously deliver value and receive feedback on features quickly and continuously. Partnering with end users to get early versions of features vetted out is valuable.
 
@@ -36,7 +34,7 @@ Before you introduce feature flags to your engineering process, it's important t
 
 Before you flip your first feature flag in production, take the time to read:
 * ["A Rough Patch", by Brian Harry](https://blogs.msdn.microsoft.com/bharry/2013/11/25/a-rough-patch)
-* ["Feature Flags with Branching", by LaunchDarkly](https://launchdarkly.com/guide/flagsbranching.html)
+* ["Feature Flags with Branching", by LaunchDarkly](https://launchdarkly.com/blog/feature-branching-using-feature-flags/)
 
 ## What are Feature Flags (FF)?
 
@@ -45,7 +43,7 @@ Before you flip your first feature flag in production, take the time to read:
 
 Feature flags support a customer-first DevOps mindset, to enable (expose) and disable (hide) features in a solution, even before they are complete and ready for release.
 
-![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-feature-flag.png)
+![Feature Flag](./media/phase-features-with-ff/phase-features-with-ff-feature-flag.png)
 
 View a feature flag as an ON | OFF switch for a specific feature. As shown, you can deploy a solution to production that includes both an email and a print feature. If the feature flag is set (ON), you'll email, else you'll print.
 
@@ -56,13 +54,13 @@ When you combine a feature flag with an experiment, led by a hypothesis, you int
 >
 > **For** {user} **who** {action} **the** {solution} **is a** {how} **that** {value} **unlike** {competition} **we** {do better}
 
-![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-ab-test.png)
+![Feature Flag with AB testing.](./media/phase-features-with-ff/phase-features-with-ff-ab-test.png)
 
 As shown, the email feature (option A) is more popular with your users and wins.
 
 ## Evaluating Feature Flag solutions
 
-As outlined in [how to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/), the ALM | DevOps Rangers evaluated a number of FF frameworks and solutions. 
+As outlined in [how to implement feature flags and A|B testing](/archive/blogs/visualstudioalmrangers/how-to-implement-feature-flags-and-ab-testing), the ALM | DevOps Rangers evaluated a number of FF frameworks and solutions. 
 
 They chose the [LaunchDarkly](https://launchdarkly.com/index.html) solution for several reasons:
 
@@ -76,7 +74,7 @@ They chose the [LaunchDarkly](https://launchdarkly.com/index.html) solution for 
 
 ## Common scenarios
 
-You have a [CI/CD pipeline](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/) for every Azure DevOps extension you're hosting on the [marketplace](https://marketplace.visualstudio.com). You are using a ring deployment model and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. You're looking for an engineering process, which enables you to:
+You have a [CI/CD pipeline](https://devblogs.microsoft.com/visualstudio/tag/cicd/) for every Azure DevOps extension you're hosting on the [marketplace](https://marketplace.visualstudio.com). You are using a ring deployment model and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. You're looking for an engineering process, which enables you to:
 * Continuously deploy to production
 * Never roll back in production
 * Fine-tune the user experience in production
@@ -87,13 +85,13 @@ You have probably guessed it - feature flags!
 
 You would like to include hidden features in your release and enable them for **all** users in production. For example, you want to be able to collect verbose logging data for troubleshooting. Using a feature flag, you can enable and disable verbose logging as needed.
 
-![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-all-or-nothing.png)
+![Feature Flag for everyone.](./media/phase-features-with-ff/phase-features-with-ff-all-or-nothing.png)
 
 ### Enable or disable a feature for selected users
 
 With this scenario, you can target specific users or groups of users. For example, you could enable the verbose logging feature for a specific user experiencing a problem or enable a preview feature for early adopters.
 
-![Feature Flag](./_img/phase-features-with-ff/phase-features-with-ff-user-group.png)
+![Feature Flag for selected users.](./media/phase-features-with-ff/phase-features-with-ff-user-group.png)
 
 ### Enable | disable a feature as selected by user
 
@@ -101,9 +99,9 @@ Lastly, you'd like to give the users a list of preview features and allow each u
 
 ## Manage features with feature flags in your engineering process
 
-To protect the flags from malicious users, you need to generate and pass the hash of the user key to the LaunchDarkly API calls. As Azure DevOps extensions can only use client-side code, the ALM | DevOps Rangers chose Azure Functions to help generate the hash, as shown. Read [how we checked and fixed the 503 error and Performance issue in our Azure Function](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2018/04/03/how-we-checked-and-fixed-the-503-error-and-performance-issue-in-our-azure-function/) for details.
+To protect the flags from malicious users, you need to generate and pass the hash of the user key to the LaunchDarkly API calls. As Azure DevOps extensions can only use client-side code, the ALM | DevOps Rangers chose Azure Functions to help generate the hash, as shown. Read [how we checked and fixed the 503 error and Performance issue in our Azure Function](/archive/blogs/visualstudioalmrangers/how-we-checked-and-fixed-the-503-error-and-performance-issue-in-our-azure-function) for details.
 
-![Extension calls an Azure Function, which calls the LaunchDarkly SDK](./_img/phase-features-with-ff/phase-features-with-ff-ld-azure-fx.png)
+![Extension calls an Azure Function, which calls the LaunchDarkly SDK](./media/phase-features-with-ff/phase-features-with-ff-ld-azure-fx.png)
 
 Administration of feature flags is straight-forward. 
 1. You have a different environment for each extension, allowing you to have different feature flag values for Early Adopters and Users. 
@@ -113,7 +111,7 @@ Administration of feature flags is straight-forward.
 
 You have granular control of each feature flag.
 
-![LaunchDarkly Admin Dashboard](./_img/phase-features-with-ff/phase-features-with-ff-admin.png)
+![LaunchDarkly Admin Dashboard](./media/phase-features-with-ff/phase-features-with-ff-admin.png)
 
 ## What's the value?
 
@@ -144,11 +142,11 @@ Now that you've covered the concepts and considerations of feature flags, you sh
 
 ### How does the Azure DevOps team use feature flags?
 
-Buck’s [feature flags blog post](https://blogs.msdn.microsoft.com/buckh/2016/09/30/controlling-exposure-through-feature-flags-in-vs-team-services/) and the [presentation/article](/azure/devops/learn/devops-at-microsoft/progressive-experimentation-feature-flags) are great sources to get an understanding of the custom-built feature flag system used with Team Foundation Server (TFS) and Azure DevOps Services.
+Buck’s [feature flags blog post](https://blogs.msdn.microsoft.com/buckh/2016/09/30/controlling-exposure-through-feature-flags-in-vs-team-services/) and the [presentation/article](/devops/operate/progressive-experimentation-feature-flags) are great sources to get an understanding of the custom-built feature flag system used with Team Foundation Server (TFS) and Azure DevOps Services.
 
 ### How do the ALM | DevOps Rangers use feature flags?
 
-The Rangers use the [LaunchDarkly](https://www.launchdarkly.com/) SaaS solution. You can find their learnings in this [blog series](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/launchdarkly/).
+The Rangers use the [LaunchDarkly](https://www.launchdarkly.com/) SaaS solution. You can find their learnings in this [blog series](https://devblogs.microsoft.com/devops/effective-patterns-for-feature-flags/).
 
 ### When should you remove feature flags?
 
@@ -160,9 +158,9 @@ No, rings and feature flags are symbiotic. Read [Feature Flags or Rings](https:/
 
 ## Reference information
 
-* [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)
-* [DevOps @ Microsoft](https://aka.ms/devops)
-* [How to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/)
+* [CI/CD pipeline examples](https://devblogs.microsoft.com/visualstudio/tag/cicd/)
+* [DevOps @ Microsoft](/devops/)
+* [How to implement feature flags and A|B testing](/archive/blogs/visualstudioalmrangers/how-to-implement-feature-flags-and-ab-testing)
 
 > Authors: Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
  

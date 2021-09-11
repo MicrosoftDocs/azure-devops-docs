@@ -1,86 +1,102 @@
 ---
-title: Get started with Python packages in Azure Artifacts - Azure DevOps Services
-description: Quickly start hosting python packages in Azure DevOps Services
-ms.prod: devops
+title: Get started with Python packages in Azure Artifacts
+description: Quickly start hosting python packages with Azure Artifacts
 ms.technology: devops-artifacts
 ms.topic: quickstart
-ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
-ms.date: 10/31/2018
-monikerRange: '=azure-devops'
+ms.date: 02/26/2021
+monikerRange: '>= tfs-2017'
+ms.custom: devx-track-python
+"recommendations": "true"
 ---
 
 # Get started with Python packages in Azure Artifacts
 
-**Azure DevOps Services** | **Azure DevOps Server 2019 Update 1**
+**Azure DevOps Services | Azure DevOps Server 2019 | Azure DevOps Server 2020**
 
-This quickstart guides you through using Azure Artifacts to consume and publish Python packages in Azure DevOps Services. It covers license assigning and setup.
+This guide will walk you through using Azure Artifacts to publish and consume Python packages to and from your feed.
 
 ## Create a feed
 
-On your first visit to Azure Artifacts, you're welcomed with an image that prompts you to create a new feed. Select the **+ New feed** button.
+[!INCLUDE [](../includes/create-feed.md)]
+     
+## Connect to feed
 
-In the dialog box:
-* **Name**: Give the feed a name. "PyPI" is the default repository name for `twine`, which is a tool for publishing Python packages. We recommend that you don't name your feed "PyPI," because you might accidentally push to the wrong repository if you don't provide a repository name with `-r`. 
-* **Visibility**: Choose who can read and contribute (or update) packages in your feed.  An organization-visible feed is created with permissions that allow all users in the organization to see and use your feed (recommended).  A private feed is created with permissions such that only you have access.
-* **Packages from public sources**: Selecting **Use packages from public sources through this feed** will add the public npm, NuGet, and PyPI registries as upstreams to your feed. When upstreams are enabled, your client will be able to fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you select **Use packages published to this feed**, your feed will be created without connectivity to public registries. You can connect them later if you want.
-* When you're done, select **Create**.
+There are two primary ways to connect to a feed to publish or consume your Python packages:
 
-> [!div class="mx-imgBorder"] 
->![New feed dialog box](../_shared/_img/new-feed-dialog-azure-devops-newnav.png)
-> 
+1. Install and use the [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package, which will automatically set up authentication for you.
+1. Manually set up credentials for **pip.ini**/**pip.conf** for pushes, and **.pypirc** for pulls with a personal access token (PAT).
 
-You can change these settings later by [editing the feed](../feeds/edit-feed.md).
+> [!NOTE]
+> **artifacts-keyring** is not supported on newer versions of Ubuntu.
 
-## Connect to your feed
+## Use artifacts-keyring to set up authentication
 
-There are two primary ways to connect to a feed to push or pull Python packages:
-1. Install and use the [Python Credential Provider (artifacts-keyring) (preview)](https://github.com/microsoft/artifacts-keyring), which sets up authentication for you
-2. Set up your `pip.ini`/`pip.conf` for pushes, or your `.pypirc` for pulls, manually with credentials via a PAT
+The **artifacts-keyring** package allows you to set up authentication to publish and consume your Python packages to and from your feed. Both [pip](https://pypi.org/project/pip/) and [twine](https://pypi.org/project/twine/) use the Python [keyring library](https://pypi.org/project/keyring/) to find credentials. 
 
-### Option 1: Connect with Python Credential Provider (preview) to automate authentication
+> [!IMPORTANT]
+> You must have pip 19.2 and twine 1.13.0 or higher to use **artifacts-keyring**.
 
-The Python Credential Provider is a package (artifacts-keyring) in public preview that can be installed from the Python Package Index (PyPI). It allows the [pip command](https://pypi.org/project/pip/) (for package pulls) and the [twine command](https://pypi.org/project/twine/) (for package pushes) to authenticate to your feed by sending you through an authentication flow in your web browser. 
-
-**IMPORTANT:** You must have `pip version 19.2` and `twine version 1.13.0` or higher installed to use the Python Credential Provider.
-
-1. From your command-line, install the [artifacts-keyring package](https://github.com/microsoft/artifacts-keyring):
+1. In an elevated command prompt window, run the following command to install the artifacts-keyring package:
+   
+   ```Command
+   pip install artifacts-keyring
+   ```
+   
+1. Install packages from your feed. 
     
-    `pip install artifacts-keyring --pre`
+   ```Command
+   pip install <package-name> --index-url https://pkgs.dev.azure.com/<your-organization-name>/<your-project-name>/_packaging/<your-feed-name>/pypi/simple
+   ```
 
-2. Install or upload packages to your feed:
-    1. Install: `pip install <package_name> --index-url https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/pypi/simple`
-    2. Upload: `twine upload --repository-url https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/pypi/upload <package_wheel_or_other_dist_format>`
-3. Follow the authentication flow in your browser
+1. Publish packages to your feed.
+   
+   ```Command
+   twine upload --repository-url https://pkgs.dev.azure.com/<your-organization-name>/<your-project-name>/_packaging/<your-feed-name>/pypi/upload
+   ```
 
-> **Note:** The Python Credential Provider is designed for manual interaction. If you want to set up authentication in an Azure DevOps pipeline, you will want to use the [Pip Authenticate Task](../../pipelines/tasks/package/pip-authenticate.md) for installing packages or [Twine Authentication Task](../../pipelines/tasks/package/twine-authenticate.md) for pushing.
+> [!NOTE]
+> The artifacts-keyring package is layered on top of our Azure Artifacts Credential Provider. For more advanced configuration options, check out the [artifacts-credprovider](https://github.com/microsoft/artifacts-credprovider) repository.
 
+## Manually configure authentication
 
-### Option 2: Connect by manually configuring authentication
+1. Create a [Personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) with **Packaging** > **Read** scope to authenticate into Azure DevOps.
 
-1. From your feed in **Azure Artifacts**, select **Connect to feed**.
+1. From within your feed, select **Connect to feed**.
 
-   > [!div class="mx-imgBorder"] 
-   >![Connect to feed button on the upper right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
-   > 
+   :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Connect to feed button":::
 
-2. When the **Connect to feed** dialog box opens, choose Python from the left menu. 
+1. Select **pip** under the **Python** header. 
 
-This will bring up instructions on how to publish a package to your feed by using [Python’s twine command](https://pypi.org/project/twine/), and how to consume and download packages by using [pip](https://pypi.org/project/pip/).
+   :::image type="content" source="media/pip-feed.png" alt-text="Select pip to connect to your feed":::
 
-## Next steps
+1. Make sure you have installed the latest version of the **Azure Artifacts keyring** from the "Get the tools" menu.
 
-### Publish Python packages from your builds
+    > [!NOTE]
+    > The **artifacts-keyring** package provides authentication for publishing and consuming Python packages to and from Azure Artifacts feeds.
 
-If you want to consume or publish Python packages as part of your continuous integration/continuous delivery (CI/CD) pipeline, check out the [Publish Python packages from Azure Pipelines guide](../../pipelines/targets/pypi.md).
+1. [Create a virtualenv](https://docs.python.org/3/library/venv.html), if you don't already have one.
 
-### Build Python apps with Azure Pipelines
+1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) file to your virtualenv. Make sure you don't check your personal access token into a public repository. 
 
-To learn more about how to create, configure, and use Python packages as part of your project or pipeline, check out the [Build Python apps with Azure Pipelines guide](../../pipelines/ecosystems/python.md).
+    ```
+    [global]
+    extra-index-url=https://<your-feed-name>:<your-PAT-key>@pkgs.dev.azure.com/<your-organization-name>/<your-project-name>/_packaging/<your-feed-name>/pypi/simple/
+    ```
 
-## Resources
+1. Run the following command to install a package
 
-If you’d like to learn more about how Python packages work, there’s a great write-up in the *Architecture of Open Source Applications* book. Here's an excerpt:
+    ```Command
+    pip install <package-name>
+    ```
 
-* [The Architecture of Open Source Applications: Python Packaging](http://www.aosabook.org/en/packaging.html)
+When you connect to Azure DevOps for the first time, you will be prompted for credentials. Enter your user name(any string) and your personal access token in the appropriate fields. The credentials will be cached locally and used to automatically sign you in the next time you use the service.
+
+> [!NOTE]
+> If you want to set up authentication in Azure Pipelines, use the [Python Pip Authenticate](../../pipelines/tasks/package/pip-authenticate.md) task to install packages, or the [Python Twine Upload Authenticate](../../pipelines/tasks/package/twine-authenticate.md) task to push packages.
+
+## Related articles
+
+- [Publish Python packages in Azure Pipelines](../../pipelines/artifacts/pypi.md).
+
+- [Build Python apps](../../pipelines/ecosystems/python.md).
+

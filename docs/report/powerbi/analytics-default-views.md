@@ -2,43 +2,41 @@
 title: Default Analytics views
 titleSuffix: Azure DevOps
 description: Filtered set of data based on Analytics for Azure DevOps which supports creating Power BI reports  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: angurusw
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/14/2020
 ---
 
 # Default Analytics views
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 An Analytics view filters Azure DevOps data derived from Analytics. You use views to quickly load the data of interest in Power BI to generate reports. 
 
-[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+[!INCLUDE [temp](includes/analytics-views-warning.md)]
 
 A default set of Analytics views are provided, as shown below. 
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]  
-> To access <strong>Analytics views</strong>, you must enable the feature as described in [Enable preview features](/azure/devops/project/navigation/preview-features).  
+> To access **Analytics views**, you must enable the feature as described in [Manage or enable features](../../project/navigation/preview-features.md).  
 
 ::: moniker-end
 
 > [!div class="mx-imgBorder"] 
-> ![Default Analytics views](./_img/default-views/default-views.png)
+> ![Default Analytics views](./media/default-views/default-views.png)
 
-[!INCLUDE [temp](../_shared/analytics-image-differences.md)] 
+[!INCLUDE [temp](../includes/analytics-image-differences.md)] 
 
 These views are immediately available from Power BI, as shown in the Navigator dialog illustrated below, and are a great way to get started.
 
 > [!div class="mx-imgBorder"] 
-> ![Azure DevOps Power BI Data Connector - Default Analytics views](_img/default-views/navigator-dialog-default-views.png)
+> ![Azure DevOps Power BI Data Connector - Default Analytics views](media/default-views/navigator-dialog-default-views.png)
 
 
 Each default Analytics view provides a combination of options for work item types and historical data. The following tables describe each set of options. 
@@ -69,7 +67,7 @@ Default views automatically include the most common fields for the included work
 For example, the following fields are included when filtered for bugs and user stories. You can look up the description of most of these fields from the [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
 
 > [!div class="mx-imgBorder"]
-> ![Analytics views common fields](_img/editable-views/common-fields.png)
+> ![Analytics views common fields](media/editable-views/common-fields.png)
 
 Two fields that are reported on are only available from Analytics data, Cycle Time Days and Lead Time Days. To learn more about how these days are calculated, see [Cumulative flow, lead time, and cycle time guidance, Lead time versus cycle time](../dashboards/cumulative-flow-cycle-lead-time-guidance.md#lead-time-versus-cycle-time).
 

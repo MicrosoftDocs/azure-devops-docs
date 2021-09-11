@@ -2,20 +2,18 @@
 title: Query for linked work items 
 titleSuffix: Azure DevOps 
 description: How to guidance for creating a query for linked work items using Analytics for Azure DevOps   
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/2/2018
+ms.date: 07/14/2020
 ---
 
 # Query for linked work items 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there is some additional complexity.
 
@@ -27,9 +25,9 @@ In this article you'll learn:
 > * How to construct a query to return hierarchically (parent-child) linked work items
 > * How to construct a query to return non-hierarchically (related, direct) linked work items 
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
-
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!NOTE]
 > The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
@@ -39,18 +37,18 @@ In this article you'll learn:
 > https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
 > ```
 
-[!INCLUDE [temp](../_shared/api-versioning.md)]
+::: moniker-end
 
 
+[!INCLUDE [temp](../includes/api-versioning.md)]
 
-## Parent/Child hierarchy
+## Parent-child hierarchy
 
 You can include items related through Parent/Child links by using ```$expand``` on the Parent and Children properties.
 
 ### Example: Parent to child query
 
 To return information about an item's children use ```$expand``` on the **Children** navigation property.
-
 
 **Request**
 
@@ -95,7 +93,7 @@ By replacing **Children** with **Parent** in the ```$expand``` option you can re
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 105
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State)&$filter=WorkItemId eq 105
 > ```
 
 **Response**
@@ -112,17 +110,13 @@ By replacing **Children** with **Parent** in the ```$expand``` option you can re
 >             "WorkItemId": 55,
 >             "Title": "Story 22",
 >             "State": "New",
->             "Parent": {
->                 "WorkItemId": 103,
->                 "Title": "Feature Y",
->                 "State": "New"
->             }
 >         }
 >     }]
 > }
 > ```
 
 ## Query for non-hierarchical links
+
 In addition to the Parent/Child hierarchy items can be directly related to other items with link types like *Related* or *Duplicate*. The **Links** navigation property allows you to request these relationships.
 
 ### Example: Request an item's links

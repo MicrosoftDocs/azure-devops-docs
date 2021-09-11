@@ -2,12 +2,12 @@
 title: Define link controls, restrict link relationships 
 titleSuffix: TFS
 description: Controls and restrict the link relationships that the team members can view and make from that control to include only links to other features - Team Foundation Server (TFS) 
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 994c90ad-e61c-41ca-ae78-96fdb59c7312
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< azure-devops' 
 ms.date: 02/14/2017
 ---
 
@@ -37,7 +37,7 @@ For a summary of the link restrictions that are defined within the process templ
  
 **Links control** 
  
- ![Example of links control added to a work item form](_img/wit_ss_linkscontrol.png "WIT_SS_LinksControl")  
+ ![Example of links control added to a work item form](media/wit_ss_linkscontrol.png "WIT_SS_LinksControl")  
  
   
 ```xml

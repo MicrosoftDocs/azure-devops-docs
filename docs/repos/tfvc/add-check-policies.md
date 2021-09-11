@@ -3,11 +3,7 @@ title: Add Check-In Policies
 titleSuffix: Azure Repos
 description: Add Check-In Policies
 ms.assetid: 1f3046e3-1ea2-4477-99ca-76d3fc70c47b
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/18/2016
 monikerRange: '>= tfs-2015'
@@ -16,9 +12,9 @@ monikerRange: '>= tfs-2015'
 
 # Add Check-In Policies
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
-Administrators of Team Foundation version control can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control, for example a user can be required to associate a work item with a changeset. For more information about check-ins, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411). By default, the following check-in policy types are available:
+Administrators of Team Foundation version control can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control, for example a user can be required to associate a work item with a changeset. For more information about check-ins, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)). By default, the following check-in policy types are available:
 
 -   **Builds**   Requires that the last build was successful before a check-in.
 
@@ -59,16 +55,8 @@ Administrators of Team Foundation version control can add check-in policy requir
 
 4.  When you are satisfied with the settings for the check-in policies, click **OK**; the new check-in policy now displays with future check-ins.
 
-## See Also
+## Related articles 
 
-#### Reference
-
-[Configure Command](configure-command.md)
-
-#### Concepts
-
-[Set and Enforce Quality Gates](set-enforce-quality-gates.md)
-
-#### Other Resources
-
-[Walkthrough: Customizing Checkin Policies and Notes](https://msdn.microsoft.com/library/ms181281)
+- [Configure Command](configure-command.md)
+- [Set and Enforce Quality Gates](set-enforce-quality-gates.md)
+- [Walkthrough: Customizing Checkin Policies and Notes](/previous-versions/ms181281(v=vs.100))

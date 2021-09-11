@@ -2,18 +2,18 @@
 title: Define pick lists 
 titleSuffix: Azure DevOps & TFS
 description: Syntax and Usage for the ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES elements to enumerate the drop-down menu for a field - Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 309c8545-249a-4d7a-8c91-fc10227fa0ba
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< azure-devops' 
 ms.date: 05/10/2017
 ---
 
 # Define pick lists
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You can enumerate a set of values for a field by defining a pick list as part of its definition or at some point during the workflow. You can specify that the list can contain only allowed values, cannot contain prohibited values, or can suggest values. If you suggest values, users can specify a value other those in the pick list.  
 
@@ -188,7 +188,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
 
 ## Related articles
 
--  [Apply a field rule](apply-rule-work-item-field.md)
+-  [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)
 -  [Modify a field or add a custom field](../add-modify-field.md)  
 -  [Customize a process for import (Hosted XML)](../../organizations/settings/work/import-process/customize-process.md)
 -  [Manage global lists for work item types](../witadmin/manage-global-lists-for-work-item-types.md)

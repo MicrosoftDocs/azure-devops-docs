@@ -3,11 +3,7 @@ title: Status command
 titleSuffix: Azure Repos
 description: Status command
 ms.assetid: e9f0b3a1-b8b1-45cf-b113-9fea2948405d
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,18 +12,23 @@ monikerRange: '>= tfs-2015'
 
 # Status command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
-Displays information about pending changes to files and folders in one or more workspaces. Or, when you use the **/shelveset** option, displays information about pending changes in a shelveset.
+Displays information both about pending changes to files and folders and pending change candidates in one or more workspaces. Or, when you use the **/shelveset** option, displays information about pending changes in a shelveset.
+
+> [!NOTE]
+> A pending changes candidate is a file in the workspace's folder or sub folder that wasn't added to version control. To view all pending changes candidates in Visual Studio, go to **Team Explorer** > **Pending Changes** > **Excluded Changes**, and then select **Detected**.  
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
-    [/login:username,[password]]
-    ([/workspace:workspacename[;workspaceowner]] 
-    | [/shelveset:shelvesetname[;shelvesetowner]])
-    [/format:(brief|detailed)] [/recursive][/user:(*|username)]
-    [/nodetect]
+```
+tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
+[/login:username,[password]]
+([/workspace:workspacename[;workspaceowner]] 
+| [/shelveset:shelvesetname[;shelvesetowner]])
+[/format:(brief|detailed)] [/recursive][/user:(*|username)]
+[/nodetect]
+```
 
 ## Parameters
 
@@ -36,7 +37,7 @@ Displays information about pending changes to files and folders in one or more w
 <tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
 	<td><p><strong>/collection</strong>: <em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>When you use the <strong>/workspace</strong> option, specifies the URL of the project collection that contains the workspace that contains the pending changes. For example: <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>. If not specified, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.</p><p>Ignored if you do not use the <strong>/workspace</strong> option.</p><table><thead>
+    <td><p>When you use the <strong>/workspace</strong> option, specifies the URL of the project collection that contains the workspace that contains the pending changes. For example: `http://myserver:8080/tfs/DefaultCollection`. If not specified, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.</p><p>Ignored if you do not use the <strong>/workspace</strong> option.</p><table><thead>
 <tr><th><strong>Note</strong></th></tr></thead><tbody>
 <tr>
 	<td><p>See Remarks, below, for the limitations of this option.</p></td></tr></tbody></table></td></tr>
@@ -57,7 +58,7 @@ Displays information about pending changes to files and folders in one or more w
 	<td><p>Specifies the shelveset that contains the changes you want to list.</p><p>This option cannot be combined with the <strong>/workspace</strong> option.</p></td></tr>
 <tr>
 	<td><p><strong>/user</strong></p></td>
-    <td><p>Lists all pending changes made by the specified user. An asterisk (<strong></strong></em>) symbol includes data about changes from all users. The default is the current user.</p><table><thead>
+    <td><p>Lists all pending changes made by the specified user. An asterisk (<strong></strong></em>) symbol includes data about changes from all users. The default is the current user.</p><p>Acceptable values for this option:</p><ul><li>username</li><li>useraccount</li><li>an asterisk</li></ul><table><thead>
 <tr><th><strong>Note</strong></th></tr></thead><tbody>
 <tr>
 	<td><p>See Remarks, below, for the limitations of this option.</p></td></tr></tbody></table></td></tr>
@@ -81,19 +82,25 @@ In all the following examples, assume that `$/SiteApp/Main/` is mapped to `c:\\c
 
 ### List all changes in the current workspace
 
-    c:\code\SiteApp\Main\SolutionA\>tf stat
+```
+c:\code\SiteApp\Main\SolutionA\>tf stat
+```
 
 Lists all pending changes in the workspace.
 
 ### List all changes in a folder
 
-    c:\code\SiteApp\Main>tf stat SolutionA\*
+```
+c:\code\SiteApp\Main>tf stat SolutionA\*
+```
 
 Lists all pending changes to all items in the SolutionA folder.
 
 ### List all changes in a folder and its subfolders
 
-    c:\code\SiteApp\Main>tf stat SolutionA\* /recursive
+```
+c:\code\SiteApp\Main>tf stat SolutionA\* /recursive
+```
 
 Lists pending changes to all items in the SolutionA folder, including those in its subfolders).
 

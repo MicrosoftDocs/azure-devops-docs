@@ -2,18 +2,17 @@
 title: Add or modify work item categories 
 titleSuffix: Azure DevOps & TFS
 description: Add or modify categories to your process template for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 93f146df-8424-4183-89f7-298943eb8c0f
-ms.author: kaelliauthor: KathrynEE
-ms.manager: jillfra
+ms.author: kaelli
 ms.topic: reference
+monikerRange: '< azure-devops' 
 ms.date: 09/08/2017
 ---
 
 # Add type definitions for work item categories to a process template
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You can add categories to your process template. A category associates a group label with one or more work item types (WITs). Categories are useful when your projects contain similar WITs that are named differently. You specify the category definitions in one file, and then you specify that file to upload within the **taskxml** element of the WorkItemTracking plug-in.  
   

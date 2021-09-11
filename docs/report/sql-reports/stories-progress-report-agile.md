@@ -1,26 +1,25 @@
 ---
 title: Stories Progress Report (Agile) 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Lists all user stories, filtered by product area and iteration in order of importance.
 ms.assetid: 1478227b-50b9-4ef1-be5b-838cd5a5467b
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 
 # Stories Progress Report (Agile)
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 The Stories Progress report lists all user stories, filtered by product area and iteration in order of importance.  
   
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
 > [!NOTE]
->  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+>  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
  
 **You can use this report to answer the following questions**:<br /><br /> -   How much progress has the team made toward completing the work for each story?<br />-   How much work must the team still perform to implement each user story?<br />-   How much work did the team perform in the last calendar period?
@@ -32,7 +31,7 @@ The Stories Progress report lists all user stories, filtered by product area and
 ##  <a name="Data"></a> Data in the Report  
  The Stories Progress report shows the status of completion as determined by the tasks that have been defined to implement the user story, as the following illustration shows. The data in the report is derived from the data warehouse.  
   
- ![Example Stories Progress Report](_img/procguid_repstoriesprogress.png "ProcGuid_RepStoriesProgress")  
+ ![Example Stories Progress Report](media/procguid_repstoriesprogress.png "ProcGuid_RepStoriesProgress")  
   
  This report displays the following information for each user story that appears in the report:  
   
@@ -82,7 +81,7 @@ The Stories Progress report lists all user stories, filtered by product area and
   
    By default, the value of this field is seven days.  
   
-- Click ![Expand](_img/icon_expand.gif "Icon_Expand") or ![Collapse](_img/icon_collapse.gif "Icon_Collapse") to expand or collapse a user story and display child stories. Parent stories display a rollup of all task hours that are assigned to it and its child stories.  
+- Click ![Expand](media/icon_expand.gif "Icon_Expand") or ![Collapse](media/icon_collapse.gif "Icon_Collapse") to expand or collapse a user story and display child stories. Parent stories display a rollup of all task hours that are assigned to it and its child stories.  
   
   For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.  
   
@@ -116,7 +115,7 @@ The Stories Progress report lists all user stories, filtered by product area and
 ### Healthy Version of Report  
  A healthy Stories Progress report shows that the team recently completed work (light green) on all stories that are expected to be in progress, as the following illustration shows.  
   
- ![Example of Healthy Stories Progress](_img/procguid_healthy.png "ProcGuid_Healthy")  
+ ![Example of Healthy Stories Progress](media/procguid_healthy.png "ProcGuid_Healthy")  
   
 ### Unhealthy Version of Report  
  An unhealthy Stories Progress report might show one or more of the following indications:  
@@ -144,7 +143,7 @@ The Stories Progress report lists all user stories, filtered by product area and
   
   The following illustration shows the available filters and display options.  
   
-  ![Filters for Stories Progress report](_img/procguid_progressfilters.png "ProcGuid_ProgressFilters")  
+  ![Filters for Stories Progress report](media/procguid_progressfilters.png "ProcGuid_ProgressFilters")  
   
 #### To filter the user stories that appear in the report  
   

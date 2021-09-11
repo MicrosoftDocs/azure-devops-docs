@@ -1,22 +1,20 @@
 ---
-title: What are best practices for working with product and portfolio backlogs 
+title: Product and portfolio backlog best practices
 titleSuffix: Azure Boards
 description: Best practices to manage and refine your product backlog in Azure Boards & TFS 
 ms.custom: "boards-backlogs, seodec18"  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: best-practice
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---
 
 # Refine your backlog  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
  
 A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
 information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 
@@ -76,7 +74,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 > 
 > By collaborating on acceptance criteria the team is minimizing risk and greatly increasing the chance of delivering successfully. 
 > I don't think it's a coincidence that the first bullet in the 
-> [Agile Manifesto](http://agilemanifesto.org/) states ". . . we have come to value 
+> [Agile Manifesto](https://agilemanifesto.org/) states ". . . we have come to value 
 > **individual and interactions** over processes and tools".
 > Agile teams work together. And by working together, they create better software.  
 > 
@@ -108,7 +106,6 @@ A meeting to refine the backlog should occur separate from the sprint planning m
 
 You'll know that you've done a good job refining your backlog when your sprint planning meetings run smoothly and efficiently. Such meetings shouldn't contain a lot of surprises, and your team should feel they can contribute fully.    
 
-[Refining your Agile backlogs for success](http://www.batimes.com/robert-galen/grooming-your-agile-backlogs-for-success.html) provides a nice quality checklist to guide your backlog refinement efforts
 
 
 <a name="spikes"></a>
@@ -121,5 +118,5 @@ As the need to perform this work arises, capture it along with other items on yo
 
 ## Additional resources
 
-- [What is Agile?](/azure/devops/learn/agile/what-is-agile)  
-- [Building productive, customer focused teams](/azure/devops/learn/agile/productive-teams)  
+- [What is Agile?](/devops/plan/what-is-agile)  
+- [Building productive, customer focused teams](/devops/plan/building-productive-teams)  

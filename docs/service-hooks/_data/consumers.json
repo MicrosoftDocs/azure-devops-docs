@@ -7,7 +7,7 @@
 "name": "Zendesk",
 "description": "Zendesk is a SaaS suite that offers help desk ticketing, issue tracking, and customer service support.",
 "imageUrl": "",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkID=396756",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkID=396756",
 "authenticationType": "external",
 "inputDescriptors": [
 {
@@ -71,7 +71,7 @@
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/zapier",
 "name": "Zapier",
 "description": "Zapier enables you to automate tasks between 200+ online services. <b>Note:</b> Subscriptions for this service must be created and managed at zapier.com.",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkID=390581",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkID=390581",
 "authenticationType": "none",
 "externalConfiguration": {
 "editSubscriptionPropertyName": "editSubscriptionUrl"
@@ -109,7 +109,7 @@
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/webHooks",
 "name": "Web Hooks",
 "description": "Provides event communication via HTTP",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkID=390531",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkID=390531",
 "authenticationType": "none",
 "inputDescriptors": [],
 "actions": [
@@ -118,7 +118,7 @@
 "consumerId": "webHooks",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/webHooks/actions/httpRequest",
 "name": "Post via HTTP",
-"description": "This action posts a JSON object representation of the event to the specified URL. Secure, HTTPS endpoints are recommended due to the potential for private data in the event payload. <a href='http://go.microsoft.com/fwlink/?LinkID=390531'>Learn More</a>",
+"description": "This action posts a JSON object representation of the event to the specified URL. Secure, HTTPS endpoints are recommended due to the potential for private data in the event payload. <a href='https://go.microsoft.com/fwlink/?LinkID=390531'>Learn More</a>",
 "supportedEventTypes": [
 "*"
 ],
@@ -291,7 +291,7 @@
 "name": "UserVoice",
 "description": "UserVoice integrates easy-to-use feedback, helpdesk, and knowledge base management tools in one platform that empowers users to speak and companies to understand",
 "imageUrl": "",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkID=393617",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkID=393617",
 "authenticationType": "external",
 "inputDescriptors": [],
 "actions": [
@@ -340,13 +340,13 @@
 "name": "Trello",
 "description": "Provides integration with Trello",
 "imageUrl": "https://d2k1ftgv7pobq7.cloudfront.net/images/bd87ee916375920ae72dffadbb10d412/logo-blue-lg.png",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkID=390530",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkID=390530",
 "authenticationType": "external",
 "inputDescriptors": [
 {
 "id": "userToken",
-"name": "User token (need one? <a href='http://go.microsoft.com/fwlink/?LinkID=390580'>Get it now</a>)",
-"description": "Your user token provided by Trello.  Click the link in the action description above to learn how to obtain this token.",
+"name": "User token (need one? <a href='https://go.microsoft.com/fwlink/?LinkID=390580'>Get it now</a>)",
+"description": "Your user token provided by Trello.  Select the link in the previously mentioned action description to learn how to obtain this token.",
 "inputMode": "textBox",
 "isConfidential": true,
 "useInDefaultDescription": false,
@@ -364,7 +364,7 @@
 "consumerId": "trello",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/trello/actions/createList",
 "name": "Create a list",
-"description": "This action creates a list on an existing board in Trello. A list is used to organize cards on a board and typically represents a state. <a href='http://go.microsoft.com/fwlink/?LinkID=390530'>Learn More</a>",
+"description": "This action creates a list on an existing board in Trello. A list is used to organize cards on a board and typically represents a state. <a href='https://go.microsoft.com/fwlink/?LinkID=390530'>Learn More</a>",
 "supportedEventTypes": [
 "*"
 ],
@@ -408,7 +408,7 @@
 "consumerId": "trello",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/trello/actions/createCard",
 "name": "Create a card",
-"description": "This action creates a card on an existing list in Trello. A card can represent a task, issue, event, or just about anything. A card's state is typically determined by what list it is on. <a href='http://go.microsoft.com/fwlink/?LinkID=390530'>Learn More</a>",
+"description": "This action creates a card on an existing list in Trello. A card can represent a task, issue, event, or just about anything. A card's state is typically determined by what list it is on. <a href='https://go.microsoft.com/fwlink/?LinkID=390530'>Learn More</a>",
 "supportedEventTypes": [
 "*"
 ],
@@ -487,8 +487,8 @@
 },
 {
 "id": "addToTop",
-"name": "Create at top of list",
-"description": "Indicates if the card should be created at the top of the Trello list, instead of the bottom.",
+"name": "Create at beginning of list",
+"description": "Indicates if the card should be created at the beginning of the Trello list, instead of the end.",
 "inputMode": "checkBox",
 "isConfidential": false,
 "useInDefaultDescription": false,
@@ -509,7 +509,7 @@
 "name": "MyGet",
 "description": "MyGet allows you to create and host your own NuGet feeds with your own packages and those from other package sources such as NuGet.org",
 "imageUrl": "https://www.myget.org/Content/images/myget/logo.png",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkID=393619",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkID=393619",
 "authenticationType": "external",
 "inputDescriptors": [],
 "actions": [
@@ -597,7 +597,7 @@
 "name": "Kato",
 "description": "Kato provides a messaging service for modern organizations",
 "imageUrl": "",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkID=393614",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkID=393614",
 "authenticationType": "external",
 "inputDescriptors": [
 {
@@ -646,7 +646,7 @@
 "name": "Jenkins",
 "description": "Jenkins is a continuous integration server which allows building and testing software projects continuously.",
 "imageUrl": "http://jenkins-ci.org/sites/default/files/images/headshot.png",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkID=393616",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkID=393616",
 "authenticationType": "external",
 "inputDescriptors": [
 {
@@ -731,7 +731,7 @@
 {
 "id": "buildParameterized",
 "name": "Accepts parameters",
-"description": "Indicates if the build is parameterized or not (build parameters are optionally specified above)",
+"description": "Indicates if the build is parameterized or not (build parameters are optionally specified previously)",
 "inputMode": "checkBox",
 "isConfidential": false,
 "useInDefaultDescription": false,
@@ -772,7 +772,7 @@
 "name": "HipChat",
 "description": "HipChat provides group instant messaging for companies and teams.",
 "imageUrl": "http://www.hipchat.com/img/logo.png",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkId=392098",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkId=392098",
 "authenticationType": "external",
 "inputDescriptors": [
 {
@@ -794,7 +794,7 @@
 "consumerId": "hipChat",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/hipChat/actions/postMessageToRoom",
 "name": "Post a message to a room",
-"description": "Post a message about the event to a room in HipChat. <a href='http://go.microsoft.com/fwlink/?LinkId=392098'>Learn more.</a>",
+"description": "Post a message about the event to a room in HipChat. <a href='https://go.microsoft.com/fwlink/?LinkId=392098'>Learn more.</a>",
 "supportedEventTypes": [
 "*"
 ],
@@ -820,7 +820,7 @@
 {
 "id": "notifyRoom",
 "name": "Notify room participants",
-"description": "Whether or not this message should trigger a notification for people in the room (change the tab color, play a sound, etc). Each recipient's notification preferences are taken into account.",
+"description": "Whether or not this message should trigger a notification for people in the room (change the tab color, play a sound, and so on). Each recipient's notification preferences are taken into account.",
 "inputMode": "checkBox",
 "isConfidential": false,
 "useInDefaultDescription": false,
@@ -888,7 +888,7 @@
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/flowdock",
 "name": "Flowdock",
 "description": "Flowdock is Chat & inbox for teams.",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkID=393615",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkID=393615",
 "authenticationType": "external",
 "inputDescriptors": [
 {
@@ -934,7 +934,7 @@
 "consumerId": "flowdock",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/flowdock/actions/postMessageToChat",
 "name": "Post a message to a team chat",
-"description": "Post a message about the event to a team chat in Flowdock. <a href='http://go.microsoft.com/fwlink/?LinkId=392098'>Learn more.</a>",
+"description": "Post a message about the event to a team chat in Flowdock. <a href='https://go.microsoft.com/fwlink/?LinkId=392098'>Learn more.</a>",
 "supportedEventTypes": [
 "*"
 ],
@@ -971,7 +971,7 @@
 "consumerId": "flowdock",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/flowdock/actions/postMessageToTeamInbox",
 "name": "Post a message to a team inbox",
-"description": "Post a message about the event to a team inbox in Flowdock. <a href='http://go.microsoft.com/fwlink/?LinkId=392098'>Learn more.</a>",
+"description": "Post a message about the event to a team inbox in Flowdock. <a href='https://go.microsoft.com/fwlink/?LinkId=392098'>Learn more.</a>",
 "supportedEventTypes": [
 "*"
 ],
@@ -1057,7 +1057,7 @@
 "name": "Campfire",
 "description": "Campfire is like instant messaging, but designed exclusively for groups.",
 "imageUrl": "https://campfirenow.com/images/logo_campfire-full.png",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkID=393613",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkID=393613",
 "authenticationType": "external",
 "inputDescriptors": [
 {
@@ -1093,7 +1093,7 @@
 "consumerId": "campfire",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/campfire/actions/postMessageToRoom",
 "name": "Post a message to a room",
-"description": "Post a message about the event to a room in Campfire. <a href='http://go.microsoft.com/fwlink/?LinkID=393613'>Learn more.</a>",
+"description": "Post a message about the event to a room in Campfire. <a href='https://go.microsoft.com/fwlink/?LinkID=393613'>Learn more.</a>",
 "supportedEventTypes": [
 "*"
 ],
@@ -1136,8 +1136,8 @@
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/azureServiceBus",
 "name": "Azure Service Bus",
 "description": "Provides integration with Microsoft Azure Service Bus, including Notification Hubs.",
-"imageUrl": "http://www.windowsazure.com/css/images/logo.png",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkID=392636",
+"imageUrl": "https://www.windowsazure.com/css/images/logo.png",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkID=392636",
 "authenticationType": "external",
 "inputDescriptors": [
 {
@@ -1161,7 +1161,7 @@
 "consumerId": "azureServiceBus",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/azureServiceBus/actions/serviceBusNotificationHubSend",
 "name": "Send a message to a Notification Hub",
-"description": "This action sends a generic, template notification to the specified Azure Notification Hub. <a href='http://go.microsoft.com/fwlink/?LinkID=392636'>Learn More</a>",
+"description": "This action sends a generic, template notification to the specified Azure Notification Hub. <a href='https://go.microsoft.com/fwlink/?LinkID=392636'>Learn More</a>",
 "supportedEventTypes": [
 "*"
 ],
@@ -1203,7 +1203,7 @@
 "consumerId": "azureServiceBus",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/azureServiceBus/actions/serviceBusQueueSend",
 "name": "Send a message to a Service Bus Queue",
-"description": "This action sends a JSON string representation of the event to the specified Azure Service Bus queue. <a href='http://go.microsoft.com/fwlink/?LinkID=392636'>Learn More</a>",
+"description": "This action sends a JSON string representation of the event to the specified Azure Service Bus queue. <a href='https://go.microsoft.com/fwlink/?LinkID=392636'>Learn More</a>",
 "supportedEventTypes": [
 "*"
 ],
@@ -1340,7 +1340,7 @@
 "consumerId": "azureServiceBus",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/azureServiceBus/actions/serviceBusTopicSend",
 "name": "Send a message to a Service Bus Topic",
-"description": "This action sends a JSON string representation of the event to the specified Azure Service Bus topic. <a href='http://go.microsoft.com/fwlink/?LinkID=392636'>Learn More</a>",
+"description": "This action sends a JSON string representation of the event to the specified Azure Service Bus topic. <a href='https://go.microsoft.com/fwlink/?LinkID=392636'>Learn More</a>",
 "supportedEventTypes": [
 "*"
 ],
@@ -1479,8 +1479,8 @@
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/azureStorageQueue",
 "name": "Azure Storage",
 "description": "Provides integration with Microsoft Azure Storage",
-"imageUrl": "http://www.windowsazure.com/css/images/logo.png",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkID=390532",
+"imageUrl": "https://www.windowsazure.com/css/images/logo.png",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkID=390532",
 "authenticationType": "external",
 "inputDescriptors": [
 {
@@ -1518,7 +1518,7 @@
 "consumerId": "azureStorageQueue",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/azureStorageQueue/actions/enqueue",
 "name": "Insert a message in a Storage Queue",
-"description": "This action inserts a JSON string representation of the event to the specified Azure storage queue. <a href='http://go.microsoft.com/fwlink/?LinkID=390532'>Learn More</a>",
+"description": "This action inserts a JSON string representation of the event to the specified Azure storage queue. <a href='https://go.microsoft.com/fwlink/?LinkID=390532'>Learn More</a>",
 "supportedEventTypes": [
 "*"
 ],
@@ -1687,7 +1687,7 @@
 "name": "AppVeyor",
 "description": "Continuous Integration service for Windows developers that securely builds and tests code in parallel and then deploys successful bits to on-premises or cloud environments",
 "imageUrl": "",
-"informationUrl": "http://go.microsoft.com/fwlink/?LinkID=396758",
+"informationUrl": "https://go.microsoft.com/fwlink/?LinkID=396758",
 "authenticationType": "external",
 "inputDescriptors": [],
 "actions": [
@@ -1696,7 +1696,7 @@
 "consumerId": "appVeyor",
 "url": "https://fabrikam.visualstudio.com/_apis/hooks/consumers/appVeyor/actions/triggerBuild",
 "name": "Trigger a AppVeyor build",
-"description": "Trigger a AppVeyor build <a href='http://go.microsoft.com/fwlink/?LinkID=396758'>Learn more</a>",
+"description": "Trigger a AppVeyor build <a href='https://go.microsoft.com/fwlink/?LinkID=396758'>Learn more</a>",
 "supportedEventTypes": [
 "git.push"
 ],

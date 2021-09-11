@@ -2,19 +2,19 @@
 title: All FIELD XML elements reference 
 titleSuffix: Azure DevOps & TFS
 description: Index to XML syntax elements for the FIELD element for Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 552c2ada-2186-4b89-848c-34f54dfe0823
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
 ms.topic: reference
+monikerRange: '< azure-devops'
 ms.date: 06/16/2017
 ---
 
 # All FIELD XML elements reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 Use this topic to look up the syntax of the `FIELD` element or one of its child elements.  
 
@@ -60,10 +60,10 @@ Use this topic to look up the syntax of the `FIELD` element or one of its child 
 ##  FIELD child elements  
 Use child elements to set various restrictions on what data can be entered into a field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. The following table provides the syntax structure for each child element.  
 
-To learn how to use these elements, see [Apply a field rule](apply-rule-work-item-field.md).  Restrictions exist on applying most rules to system fields. All child elements are optional.  
+To learn how to use these elements, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).  Restrictions exist on applying most rules to system fields. All child elements are optional.  
 
-<table Responsive="true" summary="table">
-<tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description and syntax</p></th>
+<table>
+<tr><th scope="col"><p>Element</p></th><th scope="col"><p>Description and syntax</p></th>
 </tr>
 <tbody valign="top">
 <tr>
@@ -86,7 +86,7 @@ expanditems="true | false" filteritems="excludegroups"&gt;
 
 <p>For more information, see <a href="define-pick-lists.md" data-raw-source="[Define pick lists](define-pick-lists.md)">Define pick lists</a> .</p></td></tr><tr><td data-th="Element"><p><strong>CANNOTLOSEVALUE</strong></p></td><td data-th="Description and syntax"><p>Specifies that users cannot clear a field of all values after a value has been specified. After the field contains a value, that field must always contain a non-NULL value.</p>
 <pre><code>&lt;CANNOTLOSEVALUE for="userGroupName" not="userGroupName" /&gt</code></pre>
-<p>For more information, see <a href="apply-rule-work-item-field.md" data-raw-source="[Apply a field rule](apply-rule-work-item-field.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>COPY</strong></p></td><td data-th="Description and syntax"><p>Copies a specified value to a field when a user creates or modifies a work item.</p>
+<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>COPY</strong></p></td><td data-th="Description and syntax"><p>Copies a specified value to a field when a user creates or modifies a work item.</p>
 <pre><code>&lt;COPY for="userGroupName" not="userGroupName"  
 from="value | field | clock | currentuser" 
 value="valueToCopy" field="fieldReferenceName" /&gt;</code></pre>
@@ -96,21 +96,21 @@ from="value | field | clock | currentuser"
 value="value to copy" field="field reference name" /&gt;</code></pre>
 <p>For more information, see <a href="define-default-copy-value-field.md" data-raw-source="[Define a default value or copy a value to a field](define-default-copy-value-field.md)">Define a default value or copy a value to a field</a>.</p></td></tr><tr><td data-th="Element"><p><strong>EMPTY</strong></p></td><td data-th="Description and syntax"><p>Clears the field of any value that it contains. The <strong>EMPTY</strong> rule also makes a field read-only, and you should not be use it with the <strong>READONLY</strong> rule.</p><p>The field value is cleared when a user saves the work item, and you cannot specify any value. This rule is primarily used during state transition to clear fields that apply to the state to which the item is transitioning.</p>
 <pre><code>&lt;EMPTY for="userGroupName" not=" userGroupName" /&gt;</code></pre>
-<p>For more information, see <a href="apply-rule-work-item-field.md" data-raw-source="[Apply a field rule](apply-rule-work-item-field.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>FROZEN</strong></p></td><td data-th="Description and syntax"><p>Specifies that you cannot change the field to a non-empty value after changes are committed. As soon as a user saves the work item with a value in that field, the value can no longer be modified.</p>
+<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>FROZEN</strong></p></td><td data-th="Description and syntax"><p>Specifies that you cannot change the field to a non-empty value after changes are committed. As soon as a user saves the work item with a value in that field, the value can no longer be modified.</p>
 
 <pre><code>&lt;FROZEN for="userGroupName" not="userGroupName" /&gt;</code></pre>
 
-<p>For more information, see <a href="apply-rule-work-item-field.md" data-raw-source="[Apply a field rule](apply-rule-work-item-field.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>HELPTEXT</strong></p></td><td data-th="Description and syntax"><p>Defines the text to appear when a user points to the field in the work item form. </p><p><em>tooltipText</em>: A string of text that contains between 1 and 255 characters.</p>
+<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>HELPTEXT</strong></p></td><td data-th="Description and syntax"><p>Defines the text to appear when a user points to the field in the work item form. </p><p><em>tooltipText</em>: A string of text that contains between 1 and 255 characters.</p>
 
 <pre><code>&lt;HELPTEXT&gt;tooltipText &lt;/HELPTEXT&gt;</code></pre>
 
-<p>For more information, see <a href="apply-rule-work-item-field.md" data-raw-source="[Apply a field rule](apply-rule-work-item-field.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>MATCH</strong></p></td><td data-th="Description and syntax"><p>Defines a pattern that values of String type fields must match.</p>
+<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>MATCH</strong></p></td><td data-th="Description and syntax"><p>Defines a pattern that values of String type fields must match.</p>
 <pre><code>&lt;MATCH pattern="patternValue" for="userGroupName" not="userGroupName" /&gt;
 </code></pre>
 <p>For more information, see <a href="apply-pattern-matching-to-string-field.md" data-raw-source="[Apply pattern matching to a string field](apply-pattern-matching-to-string-field.md)">Apply pattern matching to a string field</a>.</p></td></tr><tr><td data-th="Element"><p><strong>NOTSAMEAS</strong></p></td><td data-th="Description and syntax"><p>Specifies that a field is not assigned the same value as that to which  another specified field is assigned. The value of the <strong>field</strong> attribute must be a valid reference name of a field.</p>
 <pre><code>&lt;NOTSAMEAS field="fieldReferenceName" for="userGroupName" not="userGroupName" /&gt;
 </code></pre>
-<p>For more information, see <a href="apply-rule-work-item-field.md" data-raw-source="[Apply a field rule](apply-rule-work-item-field.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>PROHIBITEDVALUES</strong></p></td><td data-th="Description and syntax"><p>Defines a list of values that a field cannot contain. Users cannot save a work item if the field contains a prohibited value.</p>
+<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>PROHIBITEDVALUES</strong></p></td><td data-th="Description and syntax"><p>Defines a list of values that a field cannot contain. Users cannot save a work item if the field contains a prohibited value.</p>
 <pre><code>&lt;PROHIBITEDVALUES for="userGroupName" not="userGroupName" 
 expanditems="true | false" filteritems="excludegroups"&gt;
    &lt;GLOBALLIST name="globalListName"&gt;
@@ -123,11 +123,11 @@ expanditems="true | false" filteritems="excludegroups"&gt;
 <pre><code>&lt;READONLY for="userGroupName" not="userGroupName" /&gt;
 </code></pre>
 <p><strong>Note:</strong> Do not use this element together with the <strong>EMPTY</strong> element because <strong>EMPTY</strong> also makes a field read-only. If you combine these elements, results will be inconsistent.</p>
-<p>For more information, see <a href="apply-rule-work-item-field.md" data-raw-source="[Apply a field rule](apply-rule-work-item-field.md)">Apply a field rule</a>.</p></td></tr>
+<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr>
 <tr><td data-th="Element"><p><strong>REQUIRED</strong></p></td><td data-th="Description and syntax"><p>Specifies that users must specify a value for the field. Required fields cannot be empty. Users cannot save a work item until they have assigned values to all required fields.</p>
 <pre><code>&lt;REQUIRED for="userGroupName" not="userGroupName" /&gt;</code></pre>
 
-<p>For more information, see <a href="apply-rule-work-item-field.md" data-raw-source="[Apply a field rule](apply-rule-work-item-field.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>SERVERDEFAULT</strong></p></td><td data-th="Description and syntax"><p>Copies a specified server value to a field when a user saves a work item. These fields usually appear as read-only on the form.</p>
+<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>SERVERDEFAULT</strong></p></td><td data-th="Description and syntax"><p>Copies a specified server value to a field when a user saves a work item. These fields usually appear as read-only on the form.</p>
 <pre><code>&lt;SERVERDEFAULT for="userGroupName" not="userGroupName" 
 from="clock | currentuser" /&gt;
 </code></pre>
@@ -142,7 +142,7 @@ expanditems="true | false" filteritems="excludegroups"&gt;
 </code></pre>
 <p>For more information, see <a href="define-pick-lists.md" data-raw-source="[Define pick lists](define-pick-lists.md)">Define pick lists</a>.</p></td></tr><tr><td data-th="Element"><p><strong>VALIDUSER</strong></p></td><td data-th="Description and syntax"><p>Restricts work items from being modified by users who belong to the group that you specify. The default group is the Team Foundation Valid Users group. </p><p>All attributes are optional.  All attributes must consist of a string of text that contains between 1 and 255 characters. You can use tokens to specify groups. </p>
 <pre><code>&lt; VALIDUSER group="groupName" for="userName" not="userName" /&gt;</code></pre>
-<p>For more information, see <a href="apply-rule-work-item-field.md" data-raw-source="[Apply a field rule](apply-rule-work-item-field.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>WHEN</strong></p></td><td data-th="Description and syntax"><p>Specifies one or more rules to apply to the current field when another field has a specific value. The parent <strong>FIELD</strong> element defines the current field.</p>
+<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>WHEN</strong></p></td><td data-th="Description and syntax"><p>Specifies one or more rules to apply to the current field when another field has a specific value. The parent <strong>FIELD</strong> element defines the current field.</p>
 <pre><code>&lt;WHEN field="fieldReferenceName" value="value"&gt;
     &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
     &lt;ALLOWEXISTINGVALUE&gt; . . . &lt;ALLOWEXISTINGVALUE&gt;
@@ -226,8 +226,8 @@ expanditems="true | false" filteritems="excludegroups"&gt;
 
  You specify the **GLOBALLIST** and **LISTITEM** elements as child elements of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements. You can use these elements to enumerate a list of values that appears. Users select values from a pick list or a drop-down menu. For more information, see [GLOBALLIST XML element reference](define-global-lists.md).   
 
-<table Responsive="true" summary="table">
-<tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th></tr>
+<table>
+<tr><th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th></tr>
 <tbody valign="top">
 <tr><td data-th="Element"><p><strong>GLOBALIST</strong></p></td><td data-th="Description"><p>Defines a set of <strong>LISTITEM</strong> elements that is stored for a project collection and that all projects in a collection can use.</p>
 <pre><code>&lt;GLOBALLIST name="globalListName"&gt;
@@ -242,7 +242,7 @@ expanditems="true | false" filteritems="excludegroups"&gt;
 <a name="Attributes">  </a> 
 
 ## Attributes specified by FIELD child elements  
- You can qualify most **FIELD** rules to apply or not apply to a set of groups or users by including the `for` or `not` attributes. For more information, see [Apply a field rule](apply-rule-work-item-field.md).  
+ You can qualify most **FIELD** rules to apply or not apply to a set of groups or users by including the `for` or `not` attributes. For more information, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).  
 
 |Attribute|Syntax|Description|  
 |---------------|------------|-----------------|  

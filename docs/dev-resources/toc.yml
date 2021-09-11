@@ -1,7 +1,9 @@
-- name: Azure DevOps Developer Resources Documentation
-  href: index.md
+- name: Developer resources 
+  href: index.yml
 - name: Azure DevOps CLI
   href: ../cli/toc.yml
+- name: Cross-platform CLI for Azure DevOps
+  href: ../extend/publish/command-line.md
 - name: Azure DevOps REST APIs
   href: /rest/api/azure/devops/
 - name: Azure DevOps Demo Generator

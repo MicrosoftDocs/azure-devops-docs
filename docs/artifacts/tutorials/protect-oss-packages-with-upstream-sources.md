@@ -1,205 +1,170 @@
 ---
-title: Keep your OSS packages safe with upstream sources | Azure Artifacts
-description: Use upstream sources in Azure Artifacts to keep your OSS packages safe from failing dependencies.
-ms.prod: devops
+title: How to use upstream sources in your Azure Artifacts feed
+description: Use upstream sources in Azure Artifacts to consume packages from public registries
 ms.technology: devops-artifacts
-ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
 ms.reviewer: amullans
-ms.date: 12/04/2018
+ms.date: 08/24/2021
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
-# Protect your open-source software packages with upstream sources
+# Tutorial: How to use upstream sources
 
-Upstream sources enable you to manage your product's OSS dependencies in a single feed. Using upstream sources makes it easy to use your favorite OSS packages, and can also give you additional protection against outages and corrupted or compromised packages. You can also publish private dependencies in the same feed that manages your OSS dependencies. Read all about [upstream sources and their benefits](/azure/devops/artifacts/concepts/upstream-sources).
+Using upstream sources in your feed enables you to manage your application dependencies from a single feed. Using upstream sources makes it easy to consume packages from public registries while having protection against outages or compromised packages. You can also publish your own packages to the same feed and manage all your dependencies in one location.
 
-This tutorial covers how to upgrade an existing project that uses OSS packages from public registries like nuget.org, npmjs.com, etc. to instead get those dependencies from an Azure Artifacts feed with upstream sources.
+This tutorial will walk you though how to enable upstream sources on your feed and consume packages from public registries such as NuGet.org or npmjs.com.
 
 In this tutorial, you will:
 
 >[!div class="checklist"]  
-> * Create a new feed using upstream sources
-> * Replace the public registry in your configuration files
-> * Run an initial package restore to populate your feed
-> * Check your feed to see the saved copy of everything you used from the public registry
+> * Create a new feed and enable upstream sources.
+> * Set up your configuration file.
+> * Run an initial package restore to populate your feed.
+> * Check your feed to view the saved copy of the packages you consumed from the public registry.
 
-## Create a feed with upstream sources enabled
-
-1. Navigate to **Azure Artifacts**:
+## Create a feed and enable upstream sources
 
 ::: moniker range=">= azure-devops-2019"
 
-   > [!div class="mx-imgBorder"] 
-   >![Go to Azure Artifacts](../_shared/_img/goto-feed-hub-azure-devops-newnav.png)
+1. Select **Artifacts**.
+
+    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot showing how to navigate to Azure Artifacts.":::
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-   ![Go to Azure Artifacts](../_shared/_img/goto-feed-hub.png)
+1. Select **Build & Release**, and then select **Packages**.
+
+    :::image type="content" source="../media/goto-feed-hub.png" alt-text="Screenshot showing how to navigate to Azure Artifacts - TFS.":::
 
 ::: moniker-end
-
-1. Select **+ New feed**:
 
 ::: moniker range=">= azure-devops-2019"
 
-   > [!div class="mx-imgBorder"] 
-   >![New feed button](../_shared/_img/new-feed-button-azure-devops-newnav.png)
+2. Select **Create Feed** to create a new feed.
+
+    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot showing the create feed button.":::
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-   ![New feed button](../_shared/_img/new-feed-button.png)
+2. Select **New Feed** to create a new feed.
+
+    :::image type="content" source="../media/new-feed-button.png" alt-text="Screenshot showing the create feed button - TFS.":::
 
 ::: moniker-end
-
-1. In the dialog, provide a feed name and click _Create_. 
 
 ::: moniker range=">= azure-devops-2019"
 
-   > [!div class="mx-imgBorder"] 
-   >![New feed dialog](../_shared/_img/new-feed-dialog-azure-devops-newnav.png)
+3. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
+
+    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window.":::
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-   ![New feed dialog](../_shared/_img/new-feed-dialog.png)
+3. Provide a name for your feed, and then select its visibility. Make sure your check the **Include packages from common public sources** checkbox to enable upstream sources. Select **Create** when you are done
 
-::: moniker-end
-
-::: moniker range=">=tfs-2017 < azure-devops"
-
-1. Navigate to the **Packages** page:
-
-   ![Go to Azure Artifacts](../_shared/_img/goto-feed-hub.png)
-
-1. Select **+ New feed**:
-
-   ![New feed button](../_shared/_img/new-feed-button.png)
-
-1. In the dialog:
-
-   - Give the feed a name.
-   - Choose who can read and contribute (or update) packages in your feed.
-   - Select _Use packages from public sources through this feed_
-   - When you're done, choose **Create**.
-
-   ![New feed dialog](../_shared/_img/new-feed-dialog.png)
+    :::image type="content" source="../media/new-feed-dialog.png" alt-text="Screenshot showing the create a new feed window - TFS.":::
 
 ::: moniker-end
 
-Now that you've created the feed that we will use to store your packages, you will update your configuration files to point to the newly created feed.
+## Set up the configuration file
 
-## Replace the public registry in configuration files with the Azure Artifacts feed
+Now that we created our feed, we need to update the config file to point to our feed. To do this we must:
 
-The next step is to update your configuration file to point to the new Azure Artifacts feed instead of the public registry. There are two steps to achieve this:
-
-1. Get your feed's URL
-2. Update the configuration file with the feed URL
+1. Get the source's URL
+1. Update the configuration file
 
 #### [npm](#tab/npm/)
+
 ::: moniker range=">= azure-devops-2019"
 
-1. From your **Packages** page, click _Connect to Feed_
+1. Select **Artifacts**, and then select **Connect to feed**.
 
-   > [!div class="mx-imgBorder"] 
-   >![Connect to feed button in Azure Artifacts](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
+    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
 
-2. Copy the "registry" text:
+1. On the left side of the page, select the **npm** tab.
 
-   > [!div class="mx-imgBorder"] 
-   >![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed-npm-registry-azure-devops-newnav.png)
+1. Follow the instructions in the **Project setup** section to set up your config file.
 
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-1. From your **Packages** page, click _Connect to Feed_
-
-    ![Connect to feed button in Azure Artifacts](../_shared/_img/connect-to-feed.png)
-
-2. Copy the "registry" text:
-
-    ![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed-npm-registry.png)
+    :::image type="content" source="../media/connect-to-feed-npm-registry-azure-devops-newnav.png" alt-text="Screenshot showing how to set up your project.":::
 
 ::: moniker-end
 
-After you've got the feed URL, create a new text file named `.npmrc` in the root of your project (in the same folder as your `package.json` file). Open your new `.npmrc` file and paste the text that you copied in step 2 above.
+::: moniker range=">=tfs-2017 < azure-devops-2019"
+
+1. Select **Build & Release** > **Packages**, and then select **Connect to Feed**.
+
+    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed - TFS":::
+
+1. Copy the highlighted snippet to add it to your config file.
+
+    :::image type="content" source="../media/connect-to-feed-npm-registry.png" alt-text="Screenshot highlighting the snippet to be added to the config file - TFS":::
+
+::: moniker-end
+
+If you don't have a *.npmrc* file already, create a new one in the root of your project (in the same folder as your *package.json*). Open your new *.npmrc* file and paste the snippet you just copied in the previous step.
 
 #### [NuGet](#tab/nuget/)
-[!INCLUDE [get a NuGet URL](../_shared/nuget/nuget-consume-endpoint.md)]
 
-Now that we have the feed URL, we can add our feed as a package source by following these steps:
+1. Select **Artifacts**, and then select your feed. 
 
-1. Create a new file named `nuget.config` in the root of your project.
+1. Select **Connect to feed**, and then choose **NuGet.exe**.
 
-2. Copy and paste the template below into your new `nuget.config` file:
+    :::image type="content" source="../media/nuget-connect-to-feed.png" alt-text="Screenshot showing how to connect to NuGet feeds.":::
 
-   ```xml
-       <?xml version="1.0" encoding="utf-8"?>
-       <configuration>
-       </configuration>
-   ```
+1. Copy the XML snippet in the **Project Setup** section.
 
-3. Run the following command with your feed name and feed URL:
+1. Create a new file named *nuget.config* in the root of your project.
 
-   ```
-   nuget sources add -Name "<feed_name>" -Source <feed_url> -configfile nuget.config
-   ```
-
-Now, we recommend a few steps to ensure that we use our feed instead of the public registry. To do so:
-
-1. Add a `<clear />` tag to the `<packageSources>` section your `nuget.config` file, which was created in the previous step. For example:
-
-   ```xml
-   ...
-   <packageSources>
-   <clear />
-   ...
-   </packageSources>
-   ```
-
+1. Paste the XML snippet in your config file.
+ 
 * * *
-## Run an initial package restore to populate your feed
 
-Now that you have upstream packages set up, you'll need to run an initial package restore to populate your new feed with the upstream packages.
+## Restore packages
 
-The basic steps are to clear your local package cache and then do a clean install of all the packages used by the project so that Azure Artifacts can save them from the upstream source. 
+Now that you enabled upstream sources and set up your configuration file, we can run the package restore command to query the upstream source and retrieve the upstream packages.
+
+We recommend clearing your local cache first before running the *nuget restore*. Azure Artifacts will have a saved copy of any packages you installed from upstream. 
 
 # [npm](#tab/npm)
 
-Remove the `node_modules` folder in your project (find out more about the [node_modules folder](https://docs.npmjs.com/files/folders.html#node-modules)), and rerun:
+Remove the *node_modules* folder from your project and run the following command in an elevated command prompt window:
 
-```
+```Command
 npm install --force
 ```
 
-> The `-force` option is to ensure the cache is bypassed. 
+> [!NOTE]
+> The `--force` argument will force pull remotes even if a local copy exists. 
+
+Your feed now should contain any packages you saved from the upstream source.
 
 # [NuGet](#tab/nuget)
 
-Clear your local package cache:
+- **Clear your local cache**:
 
-```
-nuget locals --clear all
-```
+    ```Command
+    nuget locals -clear all
+    ```
 
-Then, download and install packages from the upstream sources:
+- **Restore packages**:
 
-```
-nuget restore
-```
+    ```Command
+    nuget.exe restore
+    ```
 
----
+Your feed now should contain any packages you saved from the upstream source.
 
-The instructions above show the simplest way to populate your feed. In larger projects, you can also consider setting up a continuous integration (CI) build that has a clean cache on each build run. This build will then save any new packages from upstream sources as they're used.
+* * *
 
+## Related articles
 
-## Check your feed to see the saved copy of everything you used from the public registry
-
-Navigate to the feed you created in [Step 1](#create-a-feed-with-upstream-sources-enabled). This feed should now be populated with the packages that are used in your project. The **Source** field contains the public registry, or other upstream source, that you were using before completing this tutorial.
+- [upstream sources overview](../concepts/upstream-sources.md)
+- [Upstream behavior](../concepts/upstream-behavior.md)
+- [Feed permissions](../feeds/feed-permissions.md)
+- [Publish packages to NuGet.org](../nuget/publish-to-nuget-org.md)

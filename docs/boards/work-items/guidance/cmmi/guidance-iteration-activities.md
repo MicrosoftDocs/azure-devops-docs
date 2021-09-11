@@ -1,12 +1,10 @@
 ---
 title: CMMI process guidance, Iteration activities
 titleSuffix: Azure Boards
-description: Specify the set of requirements, review the requirements that are assigned to the iteration and create task work items for the work that must be performed to implement and test each requirement - Team Foundation Server (TFS)
-ms.prod: devops
+description: Specify the set of requirements, review the requirements that are assigned to the iteration and create task work items for the work that must be performed to implement and test each requirement  
 ms.technology: devops-agile
 ms.assetid: 085a4bc1-e4f3-4105-bf29-add86b2dfd80
 ms.topic: conceptual
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,7 +13,7 @@ ms.date: 01/20/2017
 
 # Iteration activities
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 In MSF for CMMI Process Improvement, you plan a project as a series of iterations. Each iteration is typically four to six weeks long, during which the development team implements a specified set of requirements.  
   
@@ -45,10 +43,10 @@ In MSF for CMMI Process Improvement, you plan a project as a series of iteration
  Development work for the tests should be included in the tasks that are linked to the product requirement.  
   
 ### Rolling and nightly builds  
- The build system builds the product from recently checked-in updates and runs automated tests. You can set principal tests to run on a continuous basis, and you can set a full suite to run every night. This practice helps to ensure that multiple increments do not create an accumulation of bugs. For more information see [Continuous integration & delivery](/azure/devops/pipelines/index).  
+ The build system builds the product from recently checked-in updates and runs automated tests. You can set principal tests to run on a continuous basis, and you can set a full suite to run every night. This practice helps to ensure that multiple increments do not create an accumulation of bugs. For more information see [Continuous integration & delivery](../../../../pipelines/index.yml).  
   
 ### Stand-up meeting  
- The whole team conducts a brief daily review of progress on the tasks of the iteration. Team members can use the [taskboard](../../../sprints/task-board.md) or project the [Progress Dashboard](../../../../report/sharepoint-dashboards/progress-dashboard-agile-cmmi.md) on the wall, share it by using Office Live Meeting, or both.  
+ The whole team conducts a brief daily review of progress on the tasks of the iteration. Team members can use the [taskboard](../../../sprints/task-board.md) or project the [Progress Dashboard](/previous-versions/azure/devops/report/sharepoint-dashboards/progress-dashboard-agile-cmmi) on the wall, share it by using Office Live Meeting, or both.  
   
 -   Each team member briefly reports recent progress, work in hand for the day, and any blocking issues.  
   
@@ -91,7 +89,7 @@ The requirements are considered completed only if the associated tests pass.
 -   What you will do as a result.  
   
 ### Integration  
- If this project is part of a larger program, each team performs its work in a branch  of the version control system. The Main branch is reserved for integrating the work of the teams. At the end of an iteration, the team might perform an integration with the main branch. For more information, see [Use branches](../../../../repos/tfvc/use-branches-isolate-risk-team-foundation-version-control.md).  
+ If this project is part of a larger program, each team performs its work in a branch  of the version control system. The Main branch is reserved for integrating the work of the teams. At the end of an iteration, the team might perform an integration with the main branch. For more information, see [Use branches](../../../../repos/tfvc/branching-strategies-with-tfvc.md).  
   
  The integration consists of two steps:  
   

@@ -3,7 +3,6 @@ title: Build an Azure DevOps Demo Generator template
 description: Learn to build a template for the Azure DevOps Services Demo Generator
 ms.prod: devops  
 ms.technology: devops-new-user
-ms.manager: jillfra
 ms.author: sraj
 author: hsachinraj
 ms.topic: conceptual
@@ -25,27 +24,27 @@ Setup an Azure DevOps project and make sure it is ready to be extracted. The ext
 
 1. Access the generator with the query parameter **"enableextractor=true"** added to the URL: [https://azuredevopsdemogenerator.azurewebsites.net/?enableextractor=true](https://azuredevopsdemogenerator.azurewebsites.net/?enableextractor=true)
 
-    ![Azure DevOps Generator Home Page](_img/homepage.png)
+    ![Azure DevOps Generator Home Page](media/homepage.png)
 
 1. After you sign in, on the main page, you will see a new link labeled **"Build your template"**
 
-    ![Build your template link on the main page](_img/buildyourtemplatelink.png)
+    ![Build your template link on the main page](media/buildyourtemplatelink.png)
 
 1. Selecting that will open the **extractor** main page in a new tab. 
 
-    ![Extractor Home Page](_img/extractorhomepage.png)
+    ![Extractor Home Page](media/extractorhomepage.png)
 
 1. Select the organization and then the project that you want to turn into a template.
 
 1. Click **Analyze**. This will validate if the project is one of the supported types (only Agile, Scrum and Basic process based projects are supported for the time being) and that all of the contents can be read. At the end of the analysis, you will see the artifacts and count of items for you to confirm if the extractor has read all items correctly.
 
-    ![Analyzing the project](_img/analyze.png)
+    ![Analyzing the project](media/analyze.png)
 
 1. If it is correct and you wish to proceed, select the **Generate Artifacts** button. This will again read all the items from the project but this time, the contents will be saved as JSON data. After all the items have been extracted, the folder will be archived into a zip file.
 
 1. Select the link to download the zip file. Note that the zip file is not stored on the server side - so, make sure you download the file.  It will not be available after you close the page. 
 
-    ![Downloadin the generated template](_img/generatedfile.png)
+    ![Downloading the generated template](media/generatedfile.png)
 
 **Note:** The Extractor supports only limited artifacts and work item types and so it should not be considered as a migration tool for moving projects from one server to another. For what's supported and what's not supported, see the limitations section
 
@@ -57,14 +56,14 @@ Setup an Azure DevOps project and make sure it is ready to be extracted. The ext
 
 1. You will see a new tab labeled **Private**. Select the tab.
 
-    ![privateTab.png](_img/privatetab.png)
+    ![Screenshot showing the Private tab.](media/privatetab.png)
 
 1. Under the private tab, you have the option to import template from your local drive, GitHub or any https URL. 
     
-    ![ImportFromGitHub](_img/uploadfromGithub.png)
+    ![ImportFromGitHub](media/uploadfromGithub.png)
 
 
-    ![ImportFromHttps](_img/uploadfromurl.png)
+    ![ImportFromHttps](media/uploadfromurl.png)
 
 
     > If the URL needs authentication, please provide **Access Token** or **Username & Password**
@@ -79,5 +78,5 @@ Setup an Azure DevOps project and make sure it is ready to be extracted. The ext
 
 -------------
 
-Previous: [Using the Generator](/About-Azure-DevOps-Demo-Generator/Using-the-Generator) 
+Previous: [Using the Generator](use-demo-generator-v2.md) 
 

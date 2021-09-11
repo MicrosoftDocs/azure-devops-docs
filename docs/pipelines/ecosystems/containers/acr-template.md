@@ -1,115 +1,96 @@
 ---
-title: Build and push to Azure Container Registry
-description: Build and push images to Azure Container Registry
-ms.prod: devops
-ms.technology: devops-cicd
+title: Build and push Docker images to Azure Container Registry
+description: Build and push Docker images with Azure Pipelines
 ms.topic: tutorial
 ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
-ms.manager: jillfra
-ms.author: shasb
-author: shashankbarsin
-ms.date: 08/30/2019
+ms.author: atulmal
+author: azooinmyluggage
+ms.date: 05/20/2021
 monikerRange: 'azure-devops'
 ---
 
-# Build and push to Azure Container Registry
+# Build and push Docker images to Azure Container Registry
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
-
-In this step-by-step guide, you'll learn how to create a pipeline that continuously builds a repository that contains a Dockerfile. Every time you change your code, the images are automatically pushed to Azure Container Registry.
+In this step-by-step tutorial, you'll learn how to set up a continuous integration pipeline to build a containerized application. New pull requests trigger the pipeline to build and publish Docker images to Azure Container Registry.
 
 ## Prerequisites
 
-[!INCLUDE [include](../../_shared/prerequisites.md)]
+* A GitHub account. [Create a free GitHub account](https://github.com), if you don't already have one.
 
-[!INCLUDE [include](../../_shared/azure-prerequisites.md)]
+* An Azure DevOps organization and a project. [Create a new organization](../../../organizations/accounts/create-organization.md) and/or a [new project](../../..//organizations/projects/create-project.md), if you don't already have one.
+
+* An Azure account. Sign up for a [free Azure account](https://azure.microsoft.com/free/), if you don't already have one.
 
 ## Get the code
 
-Based on the desired runtime, [import](../../../repos/git/import-git-repository.md) (into Azure DevOps) or fork (into GitHub) the following repository.
-
-#### [Java](#tab/java)
-
-[!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
-
-```
-https://github.com/spring-guides/gs-spring-boot-docker.git
-```
-#### [JavaScript](#tab/java-script)
-
-[!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+Fork or clone the *pipeline-javascript-docker* sample application:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
-#### [Python](#tab/python)
-
-[!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
-
-```
-https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
-```
-#### [.NET Core](#tab/dotnet-core)
-
-[!INCLUDE [include](../_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
-
-```
-https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
-```
-* * *
 
 ## Create a container registry
 
-[!INCLUDE [include](../_shared/sign-in-azure-cli.md)]
+1. Sign in to [Azure](https://portal.azure.com/), and then select the **Azure Cloud Shell** button in the upper-right corner.
 
-```azurecli-interactive
-# Create a resource group
-az group create --name myapp-rg --location eastus
+    :::image type="content" source="../media/azure-cloud-shell.png" alt-text="Azure Cloud Shell button":::
 
-# Create a container registry
-az acr create --resource-group myapp-rg --name myContainerRegistry --sku Basic
-```
+1. Run the following commands to create a resource group and an Azure Container Registry using the Azure CLI
 
-## Sign in to Azure Pipelines
+    ```azurecli-interactive
+    # Create a resource group
+    az group create --name myapp-rg --location eastus
+    
+    # Create a container registry
+    az acr create --resource-group myapp-rg --name myContainerRegistry --sku Basic
+    ```
 
-[!INCLUDE [include](../_shared/sign-in-azure-pipelines.md)]
+You can also use the Azure portal web UI to create your Azure Container Registry. See the [Create a container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) for details.
 
-[!INCLUDE [include](../_shared/create-project.md)]
+> [!IMPORTANT]
+> You must enable the admin user account in order for you to deploy a Docker image from an Azure Container Registry. See [Container registry authentication](/azure/container-registry/container-registry-authentication#admin-account) for more details.
 
 ## Create the pipeline
 
-### Connect and select repository
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
-[!INCLUDE [include](../_shared/create-pipeline-before-template-selected.md)]
+1. Select **Pipelines**, and then select **New Pipeline** to create a new pipeline.
 
-When the **Configure** tab appears, select **Docker**.
+    :::image type="content" source="../media/new-pipeline.png" alt-text="Create a new pipeline":::
 
-1. If you are prompted, select the subscription in which you created your registry.
+1. Select **GitHub YAML**, and then select **Authorize Azure Pipelines** to provide the appropriate permissions to access your repository.
 
-2. Select the container registry that you created above.
+1. You might be asked to sign in to GitHub. If so, enter your GitHub credentials, and then select your repository from the list of repositories.
 
-3. Select **Validate and configure**.
+1. From the **Configure** tab, select the **Docker - Build and push an image to Azure Container Registry** task.
+
+    :::image type="content" source="../media/docker-task.png" alt-text="Build and push Docker images to Azure Container Registry":::
+
+1. Select your **Azure Subscription**, and then select your **Container registry** from the dropdown menu. 
+
+1. Provide an **Image Name** to your container image, and then select **Validate and configure**.
 
    As Azure Pipelines creates your pipeline, it:
 
-   * Creates a _Docker registry service connection_ to enable your pipeline to push images into your container registry.
+   * Creates a _Docker registry service connection_ to enable your pipeline to push images to your container registry.
 
    * Generates an *azure-pipelines.yml* file, which defines your pipeline.
   
-4. When your new pipeline appears, take a look at the YAML to see what it does (for more information, see [How we build your pipeline](#how) below). When you're ready, select **Save and run**.
+1. Review your pipeline YAML and select **Save and run** when you are ready.
 
-5. The commit that will create your new pipeline appears. Select **Save and run**.
+    :::image type="content" source="../media/review-your-pipeline.png" alt-text="Review your pipeline, save & run":::
 
-6. If you want, change the **Commit message** to something like _Add pipeline to our repository_. When you're ready, select **Save and run** to commit the new pipeline into your repository, and then begin the first run of your new pipeline!
+1. Add a **Commit message**, and then select **Save and run** to commit your changes and run your pipeline.
 
-As your pipeline runs, select the build job to watch your pipeline in action.
+1. As your pipeline runs, select the build job to watch your pipeline in action.
+
+    :::image type="content" source="../media/jobs-build.png" alt-text="Monitor builds":::
 
 <a name="how"></a>
+
 ## How we build your pipeline
 
-When you finished selecting options and then proceeded to validate and configure the pipeline (see above) Azure Pipelines created a pipeline for you, using the _Docker container template_.
-
-The build stage uses the _Docker task_ to build and push the image to the container registry.
+The pipeline that we just created in the previous section was generated from the _Docker container template_ YAML. The build stage uses the [Docker task](/azure/devops/pipelines/tasks/build/docker?view=azure-devops) `Docker@2` to build and push your Docker image to the container registry.
 
 ```YAML
 - stage: Build
@@ -131,18 +112,16 @@ The build stage uses the _Docker task_ to build and push the image to the contai
           $(tag)
 ```
 
-[!INCLUDE [include](../_shared/clean-up-resources.md)]
+## Clean up resources
 
-## Learn more
+If you are not going to continue to use this application, you can delete the resources you created in this tutorial to avoid incurring ongoing charges. Run the following to delete your resource group. 
 
-We invite you to learn more about:
-* The services:
-  - [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
-* The template used to create your pipeline: [docker-container](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/docker-container.yml)
-* The method your pipeline uses to connect to the service: [Docker registry service connections](../../library/service-endpoints.md#sep-docreg)
-* Some of the tasks used in your pipeline, and how you can customize them:
-   * [Docker task](../../tasks/build/docker.md)
-   * [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md)
-* Some of the key concepts for this kind of pipeline:
-   * [Jobs](../../process/phases.md)
-   * [Docker registry service connections](../../library/service-endpoints.md#sep-docreg) (the method your pipeline uses to connect to the service)
+```azurecli-interactive
+az group delete --name myapp-rg
+```
+
+## Related articles
+
+- [Deploy containerized ASP.NET Core apps](../../apps/cd/azure/aspnet-core-to-acr.md)
+- [Deploy to Azure Web App for Containers (Classic)](../../apps/cd/deploy-docker-webapp.md)
+- [Docker Content Trust](/azure/devops/pipelines/ecosystems/containers/content-trust)

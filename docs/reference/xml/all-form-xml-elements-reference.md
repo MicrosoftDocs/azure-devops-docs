@@ -2,13 +2,13 @@
 title: All FORM XML elements reference
 titleSuffix: Azure DevOps & TFS
 description: Index to XML syntax elements and main attributes for the work item form for Team Foundation Server  
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 07E12386-621F-4749-BF75-F753B710393B
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
 ms.topic: reference
+monikerRange: '< azure-devops'
 ms.date: 03/02/2017
 ---
 
@@ -75,8 +75,8 @@ You can specify how information and work item fields are grouped and appear in a
 >  For best results, you should nest `Control` elements in a `Group`, and you should nest `Group` elements in a `Column`, even if the column spans the full width of the form. Also, you should nest every `Column` section in a `Group`, even if the group has no visible label or boundary.  
 
 
-<table Responsive="true" summary="table">
-<tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th><th scope="col"><p>Required?</p></th>
+<table>
+<tr><th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th><th scope="col"><p>Required?</p></th>
 </tr>
 <tr><td data-th="Element"><p><strong>Column</strong></p></td><td data-th="Description"><p>Divides a form&#39;s regions into columns.</p>
 <code>

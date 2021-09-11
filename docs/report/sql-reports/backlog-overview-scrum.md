@@ -1,25 +1,23 @@
 ---
 title: Backlog overview (Scrum) 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Reports the lists of all product backlog items (PBIs) - Team Foundation Server  
 ms.assetid: b3e2c54e-99de-47d1-9fa5-08539ff31c87
-ms.author: kaelliauthor: KathrynEE
-ms.manager: jillfra
-ms.date: 10/17/17
+ms.author: kaelli
+ms.date: 10/17/2017
 ---
 
 
 
 # Backlog overview (Scrum)
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 The Backlog Overview report lists all product backlog items (PBIs), both active and completed. It doesn't include bugs. The report presents a snapshot of the work that has been performed for the filtered set of PBIs.  
   
- ![Backlog Overview report](_img/alm_pg_agile_addbug.png "ALM_PG_Agile_AddBug")  
+ ![Backlog Overview report](media/alm_pg_agile_addbug.png "ALM_PG_Agile_AddBug")  
   
  To learn how to open the report, refresh the data, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
@@ -31,7 +29,7 @@ The Backlog Overview report lists all product backlog items (PBIs), both active 
   
  **Requirements**  
   
--   This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+-   This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
 -   To view the report, you must be assigned or belong to a group that has been assigned a **Browser** or **Content Manager** role in Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
   
@@ -61,7 +59,7 @@ The Backlog Overview report lists all product backlog items (PBIs), both active 
 ### Required activities to track the backlog  
  To populate the report with useful data, the team performs the following activities:  
   
--   Define PBIs and tasks. Make sure that tasks are linked to their parent PBIs through a **Child** link. Also, create a **Child** link from any subtasks to its parent task. For more information, see [Define the tasks required to implement PBIs and bugs](https://msdn.microsoft.com/34c866ea-a130-4371-bfc4-a3d9f87dccca).  
+-   Define PBIs and tasks. Make sure that tasks are linked to their parent PBIs through a **Child** link. Also, create a **Child** link from any subtasks to its parent task. For more information, see [Define the tasks required to implement PBIs and bugs](../../boards/work-items/guidance/scrum-process-workflow.md?viewFallbackFrom=vsts).  
   
      If you subdivide a task into subtasks, specify hours only for the subtasks. Hours are roll up as summary values for the parent task and PBI.  
   

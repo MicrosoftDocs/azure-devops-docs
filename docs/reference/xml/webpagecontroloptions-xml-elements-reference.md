@@ -2,17 +2,17 @@
 title: WebpageControlOptions XML elements reference 
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage for the WebpageControlOptions to display content defined for a Web page or within a CDATA tag on a work item form.
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: affebf93-892c-4bce-9ad0-cbdc98410d61
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 04/05/2017
 ---
 
 # WebpageControlOptions XML elements reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 You can display content defined for a Web page or within a CDATA tag on a work item form by using the `WebpageControlOptions` element. You can include either the **Link** or the **Content** child elements to specify either a URL or HTML for the content to appear in the form.  
   
@@ -46,7 +46,7 @@ The `WebpageControlOptions` element is a child element of the **CONTROL** elemen
 |  |`AllowScript`|Optional `WebpageControlOptions` attribute.<br /> Specifies whether JavaScript within the Web page is allowed to run (`true`) or not (`false`). The attribute type is `xs:boolean`.<br /> All other settings such as ActiveX are based on the Internet Explorer settings defined for the client.|  
 |  |`ReloadOnParamChange`|Optional `WebpageControlOptions` attribute.<br /> Specifies whether to reload (`true`) the contents of the Web page when a parameter in the work item form is changed (`true`) or not (`false`). The attribute type is `xs:boolean`.<br /> The default value is `true`.|  
 |`Link`|  |Optional `WebpageControlOptions` element. This element is mutually exclusive with the `Content` element.<br /> Specifies the URL for the Web page to be rendered in the work item form.<br /> For more information, see [Link and Param](link-param-xml-elements-reference.md).|  
-|`Content`|  |Optional `WebpageControlOptions` element.<br /><br /> This element is mutually exclusive with the `Link` element.<br /> Specifies the HTML content that is to be rendered by the Web page control. The content is specified within a CDATA tag. For example:<br /><br /> `<![CDATA[Click here for detailed <b><a href="http://www.microsoft.com">Process Guidance</a></b>]]>`<br /> The element type is `xs:string`. **Note:**  The HTML content is not validated prior to rendering it in the work item form.|  
+|`Content`|  |Optional `WebpageControlOptions` element.<br /><br /> This element is mutually exclusive with the `Link` element.<br /> Specifies the HTML content that is to be rendered by the Web page control. The content is specified within a CDATA tag. For example:<br /><br /> `<![CDATA[Click here for detailed <b><a href="https://www.microsoft.com">Process Guidance</a></b>]]>`<br /> The element type is `xs:string`. **Note:**  The HTML content is not validated prior to rendering it in the work item form.|  
   
 ### Parent Elements  
   
@@ -80,7 +80,7 @@ The following example shows how to load a work item form with HTML defined in a 
 > <Control Type="WebpageControl">
 >    <WebpageControlOptions>
 >       <Content>
->          <![CDATA[Click here for detailed <b><a href="http://www.microsoft.com">Process Guidance</a></b>]]>
+>          <![CDATA[Click here for detailed <b><a href="https://www.microsoft.com">Process Guidance</a></b>]]>
 >       </Content>
 >    </WebpageControlOptions>
 > ```

@@ -2,19 +2,19 @@
 title: All WITD XML elements reference
 titleSuffix: Azure DevOps & TFS
 description: Index to XML syntax elements and main attributes for work item tracking for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: d125917c-9e67-49e6-8274-8b169e76639a
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
 ms.topic: reference
+monikerRange: '< azure-devops'
 ms.date: 02/14/2017
 ---
 
 # All WITD XML elements reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 You can customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements. A WIT defines the fields, rules, and workflow states and transitions for an item of work that will be tracked for a project, such as a bug, requirement, or risk. You [create a project](../../organizations/projects/create-project.md) either in Azure DevOps Services or an on-premises Team Foundation Server (TFS).  
 
@@ -23,7 +23,9 @@ You can customize an existing work item type (WIT) or create a WIT to meet your 
  To customize or create a WIT definition, you modify the type definition XML file. WITs are scoped to a project within a project collection.  
 
 <a name="SyntaxStructure"></a> 
+
 ##  WITD syntax structure  
+
  The following example shows the high-level structure of a WIT definition.  
 
 > [!div class="tabbedCodeSnippets"]
@@ -40,21 +42,21 @@ You can customize an existing work item type (WIT) or create a WIT to meet your 
 > ```  
 
 <a name="ChildElements"></a> 
+
 ## WITD child elements  
 
 The structural elements used in the previous example are described in the following table:  
 
 
-<table Responsive="true" summary="table">
-<tr Responsive="true">
+<table>
+<tr>
 <th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th>
 </tr>
 <tr>
 <td><p><strong>WITD</strong></p></td>
 <td><p>The complete WIT definition is wrapped by the tag <strong>WITD</strong>. You can use any name for the application name. The version identifies the WIT schema that may change from one release to the next. Use &quot;1.0&quot;.</p>
 <pre><code>
-&lt;witd:WITD application="Work item type editor" version="1.0"  
-xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/typedef"&gt;  
+&lt;witd:WITD application="Work item type editor" version="1.0" &gt;  
    &lt;WORKITEMTYPE&gt;   
 &#160;&#160;&#160;. . .  
 &lt;/WORKITEMTYPE&gt;  
@@ -80,7 +82,6 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 <blockquote>
 <strong>Note</strong>: You can view the description only in the XML definition. You cannot view the description anywhere in the user interface, and it has no relationship to the field <strong>System.Definition</strong>.
 </blockquote>
-
 <pre><code>
 &lt;DESCRIPTION&gt; DescriptionOfWorkItemType&lt;/DESCRIPTION&gt;
 </code></pre>
@@ -96,7 +97,6 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 </td></tr>
 <tr>
 <td data-th="Element"><b>FORM</b></td><td data-th="Description"><p>Specifies the  <a href="design-work-item-form.md">design of the work item form</a> by defining the fields and controls that appear on the form and in what order.</p>
-
 <p><b>For TFS 2015 and earlier versions</b>, the <b>FORM</b> element contains <strong>Layout</strong>, <strong>Control</strong>, <strong>Group</strong>, <strong>TAB</strong>, <strong>TabGroup</strong>, <strong>Splitter</strong>, and other elements. </p>
 <code></pre>
 &lt;FORM&gt;<br/>   &lt;Layout&gt; . . . &lt;/Layout&gt;<br/>&lt;/FORM&gt;<br/></code>
@@ -112,12 +112,8 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
       &lt;/Page&gt;
 . . .
 &lt;/WebLayout&gt;</code></pre>
-
 <blockquote><strong>Important</strong>:<br/>For the Hosted XML and On-premises XML process models (TFS 2017 and later versions), see <a href="weblayout-xml-elements.md" data-raw-source="[WebLayout and Control elements](weblayout-xml-elements.md)">WebLayout and Control elements</a>. 
 </blockquote>
-
-
-
 </td>
 </tr>
 <tr><td><strong>WORKFLOW</strong></td>
@@ -130,11 +126,11 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 </code></pre>
 </td>
 </tr>
-
 </table>
 
 
 <a name="PredefinedWITs"></a> 
+
 ## Process template work item types  
 
 Upon installing or upgrading an instance of an on-premises TFS, the [default process templates](../../boards/work-items/guidance/choose-process.md) are downloaded to the following directory:  

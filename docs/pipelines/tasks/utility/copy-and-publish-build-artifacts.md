@@ -2,13 +2,10 @@
 title: Copy and Publish Build Artifacts task
 description: Copy build artifacts to a staging folder and publish them with Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 67C942BB-6DC7-4016-9364-50E3A3FEACDD
-ms.manager: jillfra
 ms.custom: seodec18
-ms.author: wismyth
-author: willsmythe
+ms.author: vijayma
+author: vijayma
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -17,27 +14,22 @@ monikerRange: '>= tfs-2015'
 
 **TFS 2015**
 
-Use this task in a build or release pipeline to copy build artifacts to a staging folder and then publish them to the server or a file share.
+Use this task to copy build artifacts to a staging folder and then publish them to the server or a file share.
 Files are copied to the `$(Build.ArtifactStagingDirectory)` staging folder and then published.
 
 ::: moniker range="> tfs-2015"
 
 > [!IMPORTANT]
-> 
-> If you're using Azure Pipelines, or Team Foundation Server (TFS) 2017 or newer, we recommend that you do NOT use this deprecated task.
-> Instead, use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).
+> This task is deprecated. If you're using Team Foundation Server 2017 or newer, we recommend that you use [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md).
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
 > [!IMPORTANT]
-> 
-> Are you using Team Foundation Server (TFS) 2015.4? If so, we recommend that you do NOT use this deprecated task.
-> Instead, use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).
+> This task is deprecated. If you're using Team Foundation Server 2017 or newer, we recommend that you use [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md).
 >
-> You should use this task only if you're using Team Foundation Server (TFS) 2015 RTM.
-> In that version of TFS, this task is listed under the **Build** category and is named **Publish Build Artifacts**.
+> Use this task only if you're using Team Foundation Server (TFS) 2015 RTM. You can find this task under the **Build** category **Publish Build Artifacts**.
 
 ## Demands
 
@@ -88,7 +80,7 @@ None
 
 </table>
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -102,9 +94,9 @@ This task has a couple of known issues:
 
 You can avoid these issues by instead using the [Copy Files task](copy-files.md) and the [Publish Build Artifacts task](publish-build-artifacts.md).
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

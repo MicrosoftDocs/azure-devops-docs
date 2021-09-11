@@ -3,11 +3,7 @@ title: Reconcile differences between two folders
 titleSuffix: Azure Repos
 description: Reconcile differences between two folders
 ms.assetid: 8776e3dd-fc70-422c-a191-81b22a989403
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Reconcile differences between two folders
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 After you compare a server folder and a local folder, you can reconcile the differences between the folder contents and between files that have conflicting pending changes in your local folder. For more information, see [Compare folders](compare-folders.md).
 
@@ -24,8 +20,8 @@ After you compare a server folder and a local folder, you can reconcile the diff
 
 To perform these procedures, you must have the **Read** and **Check out** permissions set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
->**Note:**
->  To reconcile two local folders or files, you do not need Team Foundation Server permissions.
+> [!NOTE]
+> To reconcile two local folders or files, you do not need Team Foundation Server permissions.
 
 ### To reconcile differences
 
@@ -39,8 +35,8 @@ To perform these procedures, you must have the **Read** and **Check out** permis
 
 3.  In the **Folder Difference** window, right-click the folder or file you want to reconcile, and click **Reconcile**.
 
-    >**Note**:
-    >  You can select multiple folders and files by holding down the CTRL key and clicking additional folders or files. Also, you can press CTRL+A to select all folders and files.
+    > [!NOTE]
+    > You can select multiple folders and files by holding down the CTRL key and clicking additional folders or files. Also, you can press CTRL+A to select all folders and files.
 
     The **Reconcile Folder Differences** window appears.
 

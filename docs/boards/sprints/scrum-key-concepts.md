@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Key concepts and glossary of terms for Sprints and Scrum tools in Azure Boards and Team Foundation Server (TFS)  
 ms.custom: boards-sprints
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -16,7 +14,7 @@ ms.date: 11/19/2018
 
 #  Sprints and Scrum key concepts
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 
 This article provides a short dictionary of terms and available tools used in tracking work using Sprints and Scrum methods. See also: 
@@ -25,9 +23,9 @@ This article provides a short dictionary of terms and available tools used in tr
 - [Project management and navigation glossary](../../project/navigation/glossary.md)  
 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/agile-tools.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/agile-tools.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/bugs.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/bugs.md)] 
 
 <!---
 ## Burndown charts 
@@ -39,7 +37,7 @@ Capacity correlates to actual task time, either hours or days, that an individua
 
 By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity as well as days off. Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. Learn more: [Set sprint capacity](set-capacity.md). 
 
-![Team capacity planning tool](_img/team-capacity-planning-tool.png) 
+![Team capacity planning tool](media/team-capacity-planning-tool.png) 
 
 ## Capacity bars 
 
@@ -50,7 +48,7 @@ With capacity bars, you can quickly see who is over, at, or under capacity. Capa
 
 |Capacity colors |Capacity bars |
 |----------------|--------------|
-|![These colors help you distinguish capacity](_img/capacity-planning-tool-color-chart.png) | ![Capacity bars](_img/ALM_DS_CapacityBars_S.png) | 
+|![These colors help you distinguish capacity](media/capacity-planning-tool-color-chart.png) | ![Capacity bars](media/ALM_DS_CapacityBars_S.png) | 
 
 Learn more: [Adjust work to fit sprint capacity](adjust-work.md). 
 
@@ -68,15 +66,14 @@ The forecast tool helps team plan their sprints by showing them the backlog item
 As shown here, a velocity of 20 indicates that it will take five sprints to complete the work shown.  Learn more: <a href="forecast.md" data-raw-source="[Forecast your product backlog](forecast.md)">Forecast your product backlog</a>.
 
 > [!div class="mx-imgBorder"]  
-> ![Boards>Backlog, Forecast results for 6 sprints](_img/forecast-s125.png)
+> ![Boards>Backlog, Forecast results for 6 sprints](media/forecast-s125.png)
 
-[!INCLUDE [temp](../../_shared/glossary-terms/issues.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/iterations.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/iterations.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/product-backlog.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/product-backlog.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/product-backlog-item.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/product-backlog-item.md)] 
 
 <!---
 ## Product Backlog Item Effort  
@@ -91,19 +88,20 @@ The role of product owners is to act as the interface between customers and the 
 
 
 ## Scrum master role
+
 Scrum Masters help build and maintain healthy teams by employing Scrum processes. They guide, coach, teach, and assist Scrum teams in the proper employment of Scrum methods. Scrum Masters also act as change agents to help teams overcome impediments and to drive the team toward significant productivity increases. Learn more: [Scrum best practices, Role of the Scrum Master](best-practices-scrum.md#scrum-master-role).   
 
-[!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/sprints.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/sprint-backlogs.md)]  
+[!INCLUDE [temp](../../includes/glossary-terms/sprint-backlogs.md)]  
 
 <a id="sbc" />
 
 ## Sprint burndown chart
 
-The sprint burndown chart reflects the progress made by a team in completing all the work they estimated during their sprint planning meeting. Team's monitor it to mitigate risk and check for scope creep throughout their sprint cycle. The ideal trend line always indicates a smooth and steady burndown. The blue area, as shown in the following chart, represents what's actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks. Learn more: [Monitor sprint burndown](sprint-burndown.md). 
+The sprint burndown chart reflects the progress made by a team in completing all the work they estimated during their sprint planning meeting. Team's monitor it to mitigate risk and check for scope creep throughout their sprint cycle. The ideal trend line always indicates a smooth and steady burndown. The blue area, as shown in the following chart, represents what's actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks. Learn more: [Monitor sprint burndown](../../report/dashboards/configure-sprint-burndown.md). 
  
-![Sprint burndown chart](_img/ALM_DS_SprntBD_Chrt_S.png)
+![Sprint burndown chart](media/ALM_DS_SprntBD_Chrt_S.png)
  
 ## Sprint goals
 
@@ -127,9 +125,9 @@ A type of work item used to track estimated and remaining work. In Scrum a task 
 
 A taskboard provides an interactive progress board for work required to complete a team&#39;s sprint backlog. During your sprint you&#39;ll want to update the status of tasks and the remaining work for each task. Updating tasks daily or several times a week yields a smoother <a href="#sbc" data-raw-source="[sprint burndown chart](#sbc)">sprint burndown chart</a>.  Learn more: <a href="task-board.md" data-raw-source="[Taskboard](task-board.md)">Taskboard</a>.
 
-![taskboard](_img/ALM_DS_Task_board_S.png)
+![taskboard](media/ALM_DS_Task_board_S.png)
 
-[!INCLUDE [temp](../../_shared/glossary-terms/teams.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/teams.md)] 
 
 ## Team member
 
@@ -139,14 +137,14 @@ To add users to a team, see [Add users to a project or specific team](../../orga
 
 ## Technical debt 
 
-Technical debt includes anything the team must do to deploy production quality code and keep it running in production. Examples are bugs, performance issues, operational issues, accessibility, and others. Learn more about how to minimize technical debt: [What is Agile Development?](/learn/agile/what-is-agile-development).  
+Technical debt includes anything the team must do to deploy production quality code and keep it running in production. Examples are bugs, performance issues, operational issues, accessibility, and others. Learn more about how to minimize technical debt: [What is Agile Development?](/devops/plan/what-is-agile-development).  
 
 ## Triage meetings 
 
 Triage meetings are used to review and prioritize the backlog and bugs assigned to a team. Additional details, such as estimates, acceptance criteria, and more may be added to the work items. Typically, a product owner runs triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them. 
 Learn more: [Triage work items](../queries/triage-work-items.md).
 
-[!INCLUDE [temp](../../_shared/glossary-terms/user-story.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/user-story.md)] 
 
 ## Velocity and velocity chart
 
@@ -156,7 +154,7 @@ Velocity is a measure of how much work a team can complete based on their sprint
 
 For example, in the chart shown below the green bar indicates the total estimated effort (story points) of the user stories completed within each sprint. Blue corresponds to the estimated effort of items not yet completed. Learn more: [View and work with the built-in team velocity chart](../../report/dashboards/team-velocity.md). 
 
-![Velocity chart](_img/velocity-chart.png)
+![Velocity chart](media/velocity-chart.png)
 
 ::: moniker range=">= azure-devops-2019"  
 In addition to the built-in Velocity chart, you can add a Velocity widget to your team dashboard. You can configure this widget to sum a count of work items or the sum of effort. Learn more: [Configure the Velocity widget](../../report/dashboards/team-velocity.md). 
@@ -170,6 +168,6 @@ Each team is associated with one and only one velocity chart. Velocity will vary
 - [Refine your backlog](../backlogs/best-practices-product-backlog.md)
 - [Scrum best practices](best-practices-scrum.md). 
 - [About Sprints and Scrum](scrum-overview.md)  
-- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
+- [What is Scrum?](/devops/plan/what-is-scrum)
 
 

@@ -2,10 +2,8 @@
 title: Copy Files Over SSH task
 description: Copy Files Over SSH task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
 ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4
-ms.prod: devops
 ms.technology: devops-cicd 
 ms.topic: reference
-ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,17 +13,17 @@ monikerRange: '>= tfs-2017'
 
 # Copy Files Over SSH task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to copy files from a source folder to a target folder on a remote machine over SSH.
+Use this task to copy files from a source folder to a target folder on a remote machine over SSH.
 
 This task allows you to connect to a remote machine using SSH and copy files matching a set of minimatch patterns from specified
 source folder to target folder on the remote machine. Supported protocols for file transfer are SFTP and SCP via SFTP.
-In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supported-for-target-machines-running-operating-systems-other-than-linux)).
+In addition to Linux, macOS is partially supported (see [FAQ](#is-this-task-supported-for-target-machines-running-operating-systems-other-than-linux)).
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -38,7 +36,7 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/CopyFilesOverSSHV0.md)]
+[!INCLUDE [temp](../includes/yaml/CopyFilesOverSSHV0.md)]
 
 ::: moniker-end
 
@@ -55,24 +53,55 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 | **Advanced - Flatten folders** | If this option is selected, the folder structure is not preserved and all the files will be copied into the specified target folder on the remote machine. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
+## Supported algorithms
+
+### Key pair algorithms
+
+* RSA
+* DSA
+
+### Encryption algorithms
+
+* aes256-cbc
+* aes192-cbc
+* aes128-cbc
+* blowfish-cbc
+* 3des-cbc
+* arcfour256
+* arcfour128
+* cast128-cbc
+* arcfour
+
+For OpenSSL v1.0.1 and higher (on agent):
+* aes256-ctr
+* aes192-ctr
+* aes128-ctr
+
+For OpenSSL v1.0.1 and higher, NodeJS v0.11.12 and higher (on agent):
+* aes128-gcm
+* aes128-gcm@openssh.com
+* aes256-gcm
+* aes256-gcm@openssh.com
+
+
 ## See also
 
-* [Install SSH Key task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/install-ssh-key?view=azure-devops)
+* [Install SSH Key task](../utility/install-ssh-key.md)
 
 * [SSH task](ssh.md)
 
-* Blog post [SSH build task](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/30/ssh-build-task/)
+* Blog post [SSH build task](https://devblogs.microsoft.com/devops/ssh-build-task/)
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-ssh-supported-keys](../_shared/qa-ssh-supported-keys.md)]
+[!INCLUDE [qa-ssh-supported-keys](../includes/qa-ssh-supported-keys.md)]
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ### Is this task supported for target machines running operating systems other than Linux?
 This task is intended for target machines running Linux.
@@ -81,7 +110,7 @@ This task is intended for target machines running Linux.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

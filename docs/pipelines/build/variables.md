@@ -2,45 +2,49 @@
 title: Predefined variables
 ms.custom: seodec18
 description: A comprehensive list of all available predefined variables
-ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
+ms.topic: conceptual
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
-ms.manager: jillfra
-ms.author: sdanie
-author: steved0x
-ms.date: 08/23/2019
+ms.author: jukullam
+author: juliakm
+ms.date: 06/03/2021
 monikerRange: '>= tfs-2015'
 ---
 
-# Predefined variables
+# Use predefined variables
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Variables give you a convenient way to get key bits of data into various parts of your pipeline.
-This is the comprehensive list of predefined variables.
+This is a list of predefined variables that are available for your use. There may be a few other predefined variables, but they are mostly for internal use.
 
-These variables are automatically set by the system and read-only. (The exceptions are Build.Clean and System.Debug.)
+
+These variables are automatically set by the system and read-only. (The exceptions are Build.Clean and System.Debug.) 
+
+::: moniker range=">=azure-devops-2020"
+
+In YAML pipelines, you can reference predefined variables as environment variables. For example, the variable `Build.ArtifactStagingDirectory` becomes the variable `BUILD_ARTIFACTSTAGINGDIRECTORY`.
+
+For classic pipelines, you can use [release variables](../release/variables.md) in your deploy tasks to share the common information (e.g. — Environment Name, Resource Group, etc).
+
+::: moniker-end
+
 Learn more about [working with variables](../process/variables.md).
-
-> [!NOTE]
-> You can use [release variables](../release/variables.md) in your deploy tasks to share the common information (e.g. — Environment Name, Resource Group, etc)
 
 ## Build.Clean 
 
 ::: moniker range="> tfs-2017"
 
 This is a deprecated variable that modifies how the build agent cleans up source.
-To learn how to clean up source, see [source repositories](../repos/index.md).
+To learn how to clean up source, see [Clean the local repo on the agent](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
 This variable modifies how the build agent cleans up source.
-To learn more, see [source repositories](../repos/index.md).
+To learn more, see [Clean the local repo on the agent](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent).
 
 ::: moniker-end
 
@@ -50,18 +54,22 @@ To learn more, see [source repositories](../repos/index.md).
 
 # [YAML](#tab/yaml)
 
-In YAML, you must explicitly map System.AccessToken into the pipeline using a
+In YAML, you must explicitly map `System.AccessToken` into the pipeline using a
 variable. You can do this at the step or task level:
 
 ```yaml
 steps:
-  - bash: echo This is a script that could use $SYSTEM_ACCESSTOKEN
+  - bash: echo This script could use $SYSTEM_ACCESSTOKEN
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-  - powershell: Write-Host "This is a script that could use $env:SYSTEM_ACCESSTOKEN"
+  - powershell: | 
+      Write-Host "This is a script that could use $env:SYSTEM_ACCESSTOKEN"
+      Write-Host "$env:SYSTEM_ACCESSTOKEN = $(System.AccessToken)"
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
+
+You can configure the default scope for `System.AccessToken` using [build job authorization scope](../process/access-tokens.md#job-authorization-scope). 
 
 # [Classic](#tab/classic)
 
@@ -78,35 +86,51 @@ pushes and pulls in your scripts.
 
 ## System.Debug
 
-For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`.
+For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`. 
+
+
+1. Edit your pipeline. 
+1. Select **Variables**. 
+1. Add a new variable with the name  `System.Debug` and value `true`.
+
+    :::image type="content" source="media/options/system-debug.png" alt-text="Set System Debug to true":::
+
+1. Save the new variable. 
+
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/variables-hosted.md)]
+[!INCLUDE [include](includes/variables-hosted.md)]
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+[!INCLUDE [include](includes/variables-server-2020.md)]
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-[!INCLUDE [include](_shared/variables-server2019.md)]
+[!INCLUDE [include](includes/variables-server2019.md)]
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-[!INCLUDE [include](_shared/variables-tfs2018.md)]
+[!INCLUDE [include](includes/variables-tfs2018.md)]
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-[!INCLUDE [include](_shared/variables-tfs2017.md)]
+[!INCLUDE [include](includes/variables-tfs2017.md)]
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
-[!INCLUDE [include](_shared/variables-tfs2015.md)]
+[!INCLUDE [include](includes/variables-tfs2015.md)]
 
 ::: moniker-end
 

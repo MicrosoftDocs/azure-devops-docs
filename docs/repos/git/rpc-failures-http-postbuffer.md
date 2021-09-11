@@ -2,19 +2,16 @@
 title: RPC failures and http.postBuffer
 titleSuffix: Azure Repos
 description: RPC failures and http.postBuffer
-ms.prod: devops
 ms.technology: devops-code-git 
 ms.manager: jepling
-ms.author: jobourne
-author: joebourneMS
 ms.topic: conceptual
 ms.date: 01/22/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # RPC failures and http.postBuffer
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
 
 If you see an `RPC failed` error during `git push`, such as:
 
@@ -23,7 +20,7 @@ If you see an `RPC failed` error during `git push`, such as:
 * `Unable to rewind rpc post data - try increasing http.postBuffer`
   `error: RPC failed; result=56, HTTP code = 0`
 
-... and search for help on [Stack Overflow](https://stackoverflow.com/questions/2702731/git-fails-when-pushing-commit-to-github) or [MSDN forums](https://social.msdn.microsoft.com/Forums/vstudio/en-US/cdeb11b8-5c79-4563-bf7d-db969e2e951d/tfs-2013-visual-studio-online-git-push-size-limitation?forum=TFService), you'll see a lot of old recommendations to set `http.postBuffer`.
+... and search for help on [Stack Overflow](https://stackoverflow.com/questions/2702731/git-fails-when-pushing-commit-to-github) or [MSDN forums](https://social.msdn.microsoft.com/Forums/vstudio/cdeb11b8-5c79-4563-bf7d-db969e2e951d/tfs-2013-visual-studio-online-git-push-size-limitation?forum=TFService), you'll see a lot of old recommendations to set `http.postBuffer`.
 
 **Don't do it!** At least not blindly. First, review the suggestions in this article.
 
@@ -44,8 +41,8 @@ Unpacking objects: 100% (4/4), done.
 
 Check if these hotfixes are applicable if your TFS server is running Windows 2012 R2 or earlier:
 
-* [A large file upload or a large repository clone fails on VSO in Windows Server 2012 R2](https://support.microsoft.com/en-us/help/3100477/a-large-file-upload-or-a-large-repository-clone-fails-on-vso-in-window)
-* [Pushing large files to Team Foundation Server by Git client hangs](https://support.microsoft.com/en-us/help/4017691/pushing-large-files-to-team-foundation-server-by-git-client-hangs)
+* [A large file upload or a large repository clone fails on VSO in Windows Server 2012 R2](https://support.microsoft.com/help/3100477/a-large-file-upload-or-a-large-repository-clone-fails-on-vso-in-window)
+* [Pushing large files to Team Foundation Server by Git client hangs](https://support.microsoft.com/help/4017691/pushing-large-files-to-team-foundation-server-by-git-client-hangs)
 
 ## Check if you're using a proxy or load balancer
 If you're using a terrible proxy that's buggy or doesn’t support chunked encoding, you'll see errors for larger pushes. The same thing can happen if you put on-prem TFS behind a misconfigured load balancer. If the same push succeeds when bypassing the proxy, or bypassing the load balancer (e.g. by pushing to localhost from the server itself), then fix your proxy or load balancer instead!

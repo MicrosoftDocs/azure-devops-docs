@@ -3,11 +3,7 @@ title: Undo Changes in Another User's Workspace
 titleSuffix: Azure Repos
 description: Undo Changes in Another User's Workspace
 ms.assetid: 038a4364-0a70-436e-95cc-24735d0ad9e7
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 09/11/2018
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Undo Changes in Another User's Workspace
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Updated: October 2011
 
@@ -24,7 +20,7 @@ If a team member is blocked from checking in a file that is locked by someone el
 
 If you must also remove an exclusive lock on a file, but not the pending changes, you can use the **tf lock** command. For more information, see [Lock Command](lock-command.md).
 
-If you must also delete another user's workspace, you can use the **tf workspace** command. For more information, see [Remove a Workspace](https://msdn.microsoft.com/library/ms245474).
+If you must also delete another user's workspace, you can use the **tf workspace** command. For more information, see [Remove a Workspace](/previous-versions/ms245474(v=vs.110)).
 
 **Required Permissions**
 
@@ -40,32 +36,10 @@ To undo pending changes in another user's workspace, you must have the **Adminis
 
 For more information, see [Undo Command](undo-command.md).
 
-## See Also
+## Related articles
 
-#### Concepts
+- [Create a Workspace to Work with your Project](create-work-workspaces.md)
+- [Using the Check In and Pending Changes Windows](develop-code-manage-pending-changes.md)
+- [Working with Version Control Locks](work-version-control-locks.md)
 
-[Create a Workspace to Work with your Project](create-work-workspaces.md)
-
-[Using the Check In and Pending Changes Windows](develop-code-manage-pending-changes.md)
-
-#### Other Resources
-
-[Working with Version Control Locks](work-version-control-locks.md)
-## Change History<table>
-<thead>
-<tr>
-<th><p>Date</p></th>
-<th><p>History</p></th>
-<th><p>Reason</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p></p>
-<p>October 2011</p></td>
-<td><p>Corrected step to launch the command prompt.</p></td>
-<td><p></p>
-<p>Customer feedback.</p></td>
-</tr>
-</tbody>
-</table>
+ 

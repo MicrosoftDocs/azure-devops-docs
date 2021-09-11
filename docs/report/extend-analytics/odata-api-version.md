@@ -2,25 +2,23 @@
 title: OData API versioning
 titleSuffix: Azure DevOps 
 description: How Analytics for Azure DevOps manages changes to the OData API  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: prprice
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/14/2020
 ---
 
 # OData API versioning
 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 As Analytics grows we are dedicated to providing consistency and reliability to our users. Therefore Analytics for Azure DevOps provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
 
-The API version follows the _odata element in the request path and is formatted as **v1.0** or **v1.0-preview**.
+The API version follows the _odata element in the request path and has value as one of our supported versions: **v1.0**, **v2.0** or **v3.0-preview**.
 
 ::: moniker range="azure-devops"
 
@@ -31,21 +29,21 @@ The API version follows the _odata element in the request path and is formatted 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
-> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+> https://{servername}:{port}/tfs/{CollectionName}/{ProjectName}/_odata/{version}/$metadata
 > ```
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 
 ## Preview versions
 
-<strong>3.0-preview</strong>
+<strong>v3.0-preview</strong>
 
 ## Released versions
 
@@ -82,7 +80,7 @@ Deprecated versions are no longer supported, and requests made to them will not 
 ## Breaking vs non-breaking changes
 
 The data model exposed by Analytics defines the contract between the service and its clients. The OData spec requires that clients be tolerant of additive changes to the data model, so breaking changes will be introduced in future versions. For more information see the OData spec: 
-[OData Version 4.0 Part 5: Versioning](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
+[OData Version 4.0 Part 5: Versioning](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
 
 > [!NOTE]  
 > The system doesn't version any custom work item fields. Also, it's possible to cause breaking changes to your model by removing, or changing the types of work items or custom fields. All work items, and their revisions, will reflect the current custom field configuration.
@@ -147,4 +145,4 @@ Since removal of the `UserType` field is a breaking change, the field won't be r
 ## Related articles
 
 - [Data model for Analytics](data-model-analytics-service.md)
-- [OData Version 4.0 Part 5: Versioning](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
+- [OData Version 4.0 Part 5: Versioning](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)

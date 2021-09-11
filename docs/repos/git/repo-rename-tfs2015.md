@@ -1,13 +1,9 @@
 ---
 title: Rename a Git repo in TFS 2015
 titleSuffix: Azure Repos
-description: You can rename a Git repository in a few steps, but be aware that your team will have to take a few more steps to adapt to the change.
+description: You can rename a Git repository in TFS 2015 in a few steps, but your team will have to take a few more steps to adapt to the change.
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013 <= tfs-2015'
@@ -15,7 +11,7 @@ monikerRange: '>= tfs-2013 <= tfs-2015'
 
 
 #  Rename a Git repository in TFS 2015
-#### TFS 2015 | VS 2017 | VS 2015
+**TFS 2015 | VS 2017 | VS 2015**
 
 You can rename a Git repository in a project from your web browser. After you rename the repo, each member of your team will have to take a few steps to re-enable their dev machines to connect to the repo on the server.
 
@@ -24,11 +20,11 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ## Rename the repo on the server
 
-[!INCLUDE [temp](_shared/steps-open-control-panel-team-project.md)]
+[!INCLUDE [temp](includes/steps-open-control-panel-team-project.md)]
 
 1. Rename the repo from the Version Control tab.
 
-   ![Rename a repository](_img/repo-rename/AdminVC.png)
+   ![Rename a repository](media/repo-rename/AdminVC.png)
 
 ## Update the Git remotes on your dev machines
 
@@ -41,25 +37,25 @@ Each member of your team must update their local Git repos to continue connectin
 
 Copy the repository URL to your clipboard.
 
-![Remote URL for the repository](_img/share-your-code-in-git-xcode/newrepocopycloneurl.png)
+![Remote URL for the repository](media/share-your-code-in-git-xcode/newrepocopycloneurl.png)
 
 ### Update your remote in Visual Studio 2015 or 2017
 
 1. Connect to the repo.
 
-   ![Connect to the repository](_img/repo-rename/RepoConnect.png)
+   ![Connect to the repository](media/repo-rename/RepoConnect.png)
  
 2. Open the project settings.
  
-   ![Project settings](_img/repo-rename/ProjectSettings.png)
+   ![Project settings](media/repo-rename/ProjectSettings.png)
 
 3. Open the repo settings.
 
-   ![Repository settings](_img/repo-rename/RepoSettings.png)
+   ![Repository settings](media/repo-rename/RepoSettings.png)
 
 4. Edit the fetch and push remote references and paste the URL that you [copied from the remote repo](#copy_remote_repo_url).
 
-   ![Edit remote](_img/repo-rename/EditRepoSettings.png)
+   ![Edit remote](media/repo-rename/EditRepoSettings.png)
 
 ### Update your remote in older versions of Visual Studio from the command prompt
 
@@ -75,11 +71,11 @@ If you use an older version of Visual Studio or work with Git from the command p
 
 1. Refresh Team Explorer.
 
-   ![Refresh Team Explorer](_img/repo-rename/RefreshTeamExplorer.png)
+   ![Refresh Team Explorer](media/repo-rename/RefreshTeamExplorer.png)
 
 2. Team Explorer now shows the updated repo name. 
 
-   ![Team Explorer Updated](_img/repo-rename/Result.png)
+   ![Team Explorer Updated](media/repo-rename/Result.png)
 
 ## Q&A
 

@@ -2,10 +2,7 @@
 title: Invoke HTTP REST API task
 description: Build and release task to invoke an HTTP API and parse the response with a build or release pipeline in Azure Pipelines and TFS
 ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,13 +12,13 @@ monikerRange: '>= tfs-2018'
 
 # Invoke REST API task
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
-Use this task in a build or release pipeline to invoke an HTTP API and parse the response.
+Use this task to invoke an HTTP API and parse the response.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -39,7 +36,7 @@ This task can be used in only an [agentless job](../../process/phases.md#server-
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/InvokeRestApiV1.md)]
+[!INCLUDE [temp](../includes/yaml/InvokeRestApiV1.md)]
 
 ::: moniker-end
 
@@ -47,7 +44,7 @@ This task can be used in only an [agentless job](../../process/phases.md#server-
 
 | Parameter | Comments |
 | --- | --- | --- |
-| **Connection type** | Required. Select **Azure Resource Manager** to invoke an Azure managment API or **Generic** for all other APIs. |
+| **Connection type** | Required. Select **Azure Resource Manager** to invoke an Azure management API or **Generic** for all other APIs. |
 | **Generic service connection** | Required. Generic service connection that provides the baseUrl for the call and the authorization to use. |
 | **Azure subscription** | Required. Azure Resource Manager subscription to configure and use for invoking Azure management APIs. |
 | **Method** | Required. The HTTP method with which the API will be invoked; for example, **GET**, **PUT**, or **UPDATE**. |
@@ -64,7 +61,7 @@ The **Invoke REST API task** does not perform deployment actions directly.
 Instead, it allows you to invoke any generic HTTP REST API as part of the automated
 pipeline and, optionally, wait for it to be completed.
 
-![Configuring an Invoke REST API task](_img/invoke-rest-api-task.png)
+![Configuring an Invoke REST API task](media/invoke-rest-api-task.png)
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 
@@ -72,7 +69,7 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see [this task on GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1).
 
-## Q&A
+## FAQ
 
 ### What base URLs are used when invoking Azure Management APIs?
 
@@ -90,6 +87,10 @@ To signal completion, the external service should POST completion data to the fo
  
 See [this simple cmdline application](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/HttpRequestSampleWithoutHandler) for specifics. 
  
-In addition, a C# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](https://blogs.msdn.microsoft.com/aseemb/2017/12/18/async-http-agentless-task/) 
- 
- 
+In addition, a C# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](/archive/blogs/aseemb/async-http-agentless-task) 
+
+### Can I use the response body as the input for another task?
+
+No, as this task is an agentless task and uses TFS's internal HttpRequest, which doesn't return the content of the HTTP request.
+
+

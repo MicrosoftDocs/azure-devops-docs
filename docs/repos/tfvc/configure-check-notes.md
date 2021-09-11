@@ -3,11 +3,7 @@ title: Configure Check-In Notes
 titleSuffix: Azure Repos
 description: Configure Check-In Notes
 ms.assetid: c7829273-4d53-412c-99d6-4944780ebc74
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,9 +12,9 @@ monikerRange: '>= tfs-2015'
 
 # Configure Check-In Notes
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
-Administrators of Team Foundation version control can add, configure, and remove check-in notes. Check-in notes settings are set in the Source Control Settings window. For more information about check-ins, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+Administrators of Team Foundation version control can add, configure, and remove check-in notes. Check-in notes settings are set in the Source Control Settings window. For more information about check-ins, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)).
 
 **Required Permissions**  
 To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
@@ -49,7 +45,7 @@ To complete this procedure, you must have the **Edit project-level information**
 2.  In the **Source** **Control** **Settings** dialog box, select the **Check-in** **Notes** tab.  
 3.  Select the check-in note for which you want to change the order.  
 4.  Use the up and down arrow buttons to move the note to the desired order.  
-5.  Repeat process until all the check-in notes are in the order you desire. This ordering is reflected during the check-in process. For more information, see [Using the Check In and Pending Changes Windows](develop-code-manage-pending-changes.md) and [Associate Check-in Notes with Changesets](https://msdn.microsoft.com/library/ms245464).
+5.  Repeat process until all the check-in notes are in the order you desire. This ordering is reflected during the check-in process. For more information, see [Using the Check In and Pending Changes Windows](develop-code-manage-pending-changes.md) and [Associate Check-in Notes with Changesets](/previous-versions/visualstudio/visual-studio-2010/ms245464(v=vs.100)).
 
 ### To remove check-in notes
 
@@ -62,7 +58,7 @@ To complete this procedure, you must have the **Edit project-level information**
 #### Tasks
 
 [Add Check-In Policies](add-check-policies.md)  
-[Associate Check-in Notes with Changesets](https://msdn.microsoft.com/library/ms245464)
+[Associate Check-in Notes with Changesets](/previous-versions/visualstudio/visual-studio-2010/ms245464(v=vs.100))
 #### Other Resources
 
-[Administering Team Foundation Version Control](administering-team-foundation-version-control.md)
+[Administering Team Foundation Version Control](./configure-check-out-settings.md)

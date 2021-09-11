@@ -1,18 +1,112 @@
-- name: Azure DevOps Reporting Documentation
+- name: Reporting
   expanded: false
-  href: index.md  
-- name: Reporting roadmap 
-  href: powerbi/reporting-roadmap.md
-- name: Dashboards, Charts, Reports, & Widgets   
-  href: dashboards/toc.yml  
-- name: Power BI Integration 
+  href: index.yml
+- name: Get started
+  items:
+  - name: Dashboards, charts, reports, & widgets
+    displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
+    href: dashboards/overview.md
+  - name: Quick reference
+    href: dashboards/quick-ref.md
+  - name: Widget catalog
+    href: dashboards/widget-catalog.md
+  - name: Analytics-based widgets
+    href: dashboards/analytics-widgets.md
+  - name: What is the Analytics service?
+    href: powerbi/what-is-analytics.md
+  - name: Reporting roadmap 
+    href: powerbi/reporting-roadmap.md
+- name: Dashboards
+  items:
+  - name: "Add, rename, & delete dashboards"
+    displayname: filter, dashboard, auto-refresh, add widget, delete widget
+    href: dashboards/dashboards.md
+  - name: Add widgets to a dashboard
+    displayname: select dashboard, add widget, configure widget, move widget, delete widget, copy widget, widget size, disabled widget 
+    href: dashboards/add-widget-to-dashboard.md
+  - name: Add charts to a dashboard
+    href: dashboards/add-charts-to-dashboard.md
+  - name: Add markdown to a dashboard
+    displayname: markdown widget 
+    href: dashboards/add-markdown-to-dashboard.md
+  - name: Copy a dashboard
+    displayname: project, team 
+    href: dashboards/copy-dashboard.md
+  - name: Set dashboard permissions (Security)
+    href: dashboards/dashboard-permissions.md
+- name: Work tracking charts
+  items:
+  - name: Create work tracking charts
+    href: dashboards/charts.md
+    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
+  - name: Create test tracking charts
+    href: ../test/track-test-status.md?bc=%2fazure%2fdevops%2freport%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2ftoc.json#charts
+    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
+  - name: View/configure CFD
+    href: dashboards/cumulative-flow.md
+    displayname: cumulative flow diagram, in-context report, team, analytics 
+  - name: View/configure velocity 
+    displayname: planned, completed, completed late, incomplete, team, in-context report, analytics
+    href: dashboards/team-velocity.md
+  - name: View/configure sprint burndown
+    displayname: sprint backlog, current, past
+    href: dashboards/configure-sprint-burndown.md
+  - name: Configure a Burndown or Burnup widget
+    href: dashboards/configure-burndown-burnup-widgets.md
+    displayname: release burndown, burndown widget, burndown metrics, burnup metrics, scope, date range, main metric, % completed, average burndown, items not estimated, total scope increase, projected completion, orginal scope, total scope, calculate burndown, time period, plotting interval 
+  - name: Configure Lead/Cycle time widget
+    href: dashboards/cycle-time-and-lead-time.md
+    displayname: lead time, cycle time, rolling period, scatter-plot, control chart, moving average, standard deviation, 
+- name: Pipelines & test charts
+  href: dashboards/toc.yml 
+- name: Guidance
+  items:
+  - name: Burndown guidance
+    href: dashboards/burndown-guidance.md
+    displayname: scope increase, scope creep, risk
+  - name: "Cumulative flow & lead/cycle time guidance"
+    href: dashboards/cumulative-flow-cycle-lead-time-guidance.md 
+    displayname: lead time, cycle time, work in progress, scope, scope change, work in progress, process issues, 
+  - name: Velocity guidance
+    href: dashboards/velocity-guidance.md
+    displayname: team, forecast, planned, completed, 
+  - name: Visibility across teams & projects
+    href: ../boards/plans/visibility-across-teams.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+    displayname: delivery plans, calendar, portfolio backlogs, multi-teams
+- name: Analytics & Power BI integration 
   href: powerbi/toc.yml  
 - name: Extend Analytics with OData (Preview)  
   href: extend-analytics/toc.yml  
 - name: SQL Server Reporting (Legacy)  
   href: sql-reports/toc.yml 
-- name: SharePoint Integration (Deprecated)  
-  href: sharepoint-dashboards/toc.yml 
+- name: Work tracking field reference 
+  items:
+  - name: "Rollup of work & other fields"
+    href: ../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  - name: Work item field index  
+    href: ../boards/work-items/guidance/work-item-field.md?bc=%252fazure%252fdevops%252freport%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252freport%252ftoc.json
+  - name: Reportable fields reference 
+    href: ../reference/xml/reportable-fields-reference.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  - name: Change reporting attributes
+    href: ../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+- name: Reference
+  items:
+  - name: Markdown guidance
+    href: ../project/wiki/markdown-guidance.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  - name: Configure or add a project portal
+    href: ../project/configure-or-add-a-project-portal.md 
+  - name: Configure or redirect process guidance
+    href: ../project/configure-or-redirect-process-guidance.md 
+  - name: SharePoint Integration (Deprecated)  
+    href: /previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration
+- name: Extension samples (REST API) 
+  items:
+  - name: Add a dashboard widget
+    href: ../extend/develop/add-dashboard-widget.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  - name: Add a chart widget 
+    href: ../extend/develop/add-chart.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+  - name: Add an Analytics widget  
+    href: extend-analytics/example-analytics-widget.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
 - name: REST API Reference
   items:
   - name: Dashboards
@@ -26,18 +120,18 @@
 - name: Resources
   items:
   - name: Azure Boards  
-    href: /azure/devops/boards/index
-  - name: Azure Test Plans  
-    href: /azure/devops/test-plans/index
+    href: ../boards/index.yml
   - name: Azure Pipelines  
-    href: /azure/devops/pipelines/index
-  - name: Work item field index  
-    href: /azure/devops/boards/work-items/guidance/work-item-field?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json
+    href: ../pipelines/index.yml
+  - name: Azure Test Plans  
+    href: ../test/index.yml
+  - name: Server Administration 
+    href: /azure/devops/server/server/index
   - name: Marketplace widgets
-    href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
-  - name: Power BI Documentation
+    href: https://marketplace.visualstudio.com/search?term=widget&target=AzureDevOps&category=All%20categories&sortBy=Relevance
+  - name: Power BI documentation
     href: /power-bi/
   - name: "Developer Community: Power BI support forum"
     href: https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=PowerBI
   - name: OData Extension for Data Aggregation Version 4.0
-    href: http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html
+    href: https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html

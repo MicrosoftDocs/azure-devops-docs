@@ -3,11 +3,7 @@ title: Branch folders and files
 titleSuffix: Azure Repos
 description: Branch folders and files
 ms.assetid: 437854e0-3f64-4d68-8e18-748ea7f889aa
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 05/12/2017
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Branch folders and files
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 You can use branches to accomplish the following goals:  
 -   Manage concurrent work by multiple teams on the same codebase  
@@ -27,7 +23,7 @@ For example, the following illustration shows how the DinnerNow company develope
 
 The following screenshot shows the DinnerNow branch structure in the Hierarchy window.  
 
-![Hierarchy window](_img/branch-folders-files/IC452318.png)  
+![Hierarchy window](media/branch-folders-files/IC452318.png)  
 
 Feature Team A and Feature Team B each do their work in separate branches. When the teams are ready to integrate their work, they merge their branches into the Dev branch. When the builds from the Dev branch are stable and ready to test, the teams merge the Dev branch into the Test branch.
 
@@ -35,10 +31,10 @@ As each version is released, the Main branch is branched into a new version bran
 
 You can perform a branching operation by using either **Source Control Explorer**, as this topic demonstrates, or the Branch command at a command prompt. For more information, see [Branch Command](branch-command.md).
 
->**Tip:**  
->Branching is an important and powerful technique for creating a parallel set of versions of your files. However, using branches can add complexity and cost to your project. For example, when you merge two branches, you may have to resolve conflicts.  
+> [!TIP]
+> Branching is an important and powerful technique for creating a parallel set of versions of your files. However, using branches can add complexity and cost to your project. For example, when you merge two branches, you may have to resolve conflicts.  
 >
->Before you create a branch, you should consider whether you can better meet your needs by applying a label. By applying a label, you can quickly and easily take a snapshot of the state of your files so that you can then later retrieve or build the files in that state. For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
+> Before you create a branch, you should consider whether you can better meet your needs by applying a label. By applying a label, you can quickly and easily take a snapshot of the state of your files so that you can then later retrieve or build the files in that state. For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
 
 ## Convert a Folder to a Branch
 
@@ -46,7 +42,7 @@ The release of Visual Studio Team Foundation Server 2010 began a distinction bet
 
 DinnerNow folder structure in Source Control Explorer  
 
-![Folder structure in Source Control Explorer](_img/branch-folders-files/IC277127.png)  
+![Folder structure in Source Control Explorer](media/branch-folders-files/IC277127.png)  
 
 As the illustration shows, you can still use folders to organize branches within a project's version control hierarchy. However, folders and branches have a different appearance and different capabilities. When you right-click a folder or branch and click **Properties**, you display different information and different functionality.
 
@@ -61,7 +57,7 @@ To perform the following procedure, your **Manage branch** permission must be se
 
 1.  In **Source Control Explorer**, make sure that the folder that you want to convert exists on the server.
 
-2.  If the pending addition icon (![TFSC Pending Addition Status Icon](_img/branch-folders-files/IC106108.gif)) appears next to the folder, right-click the folder, and then click **Check In Pending Changes**.
+2.  If the pending addition icon (![TFSC Pending Addition Status Icon](media/branch-folders-files/IC106108.gif)) appears next to the folder, right-click the folder, and then click **Check In Pending Changes**.
 
 3.  Right-click the folder that you want to convert, point to **Branching and Merging**, and then click **Convert to Branch**.
 
@@ -86,7 +82,7 @@ To perform the following procedure, your **Manage branch** permission must be se
 >[!IMPORTANT]  
 >You cannot nest branches; therefore, you cannot convert any folder to a branch if it either contains a branch or is contained by a branch. For example, the following illustration shows how neither the parent nor the child of the **FeatureTeamA** branch can be converted to a branch.  
 >
->![Nested branches are not allowed](_img/branch-folders-files/IC272396.png)
+>![Nested branches are not allowed](media/branch-folders-files/IC272396.png)
 >
 >  
 

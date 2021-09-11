@@ -1,7 +1,0 @@
-- name: Azure DevOps
-  tocHref: /azure/devops/
-  topicHref: /azure/devops/index
-  items: 
-  - name: Azure Test Plans
-    tocHref: /azure/devops/test-plans/
-    topicHref: /azure/devops/test-plans/index

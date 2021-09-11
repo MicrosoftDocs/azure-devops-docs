@@ -3,11 +3,7 @@ title: Check out and edit files
 titleSuffix: Azure Repos
 description: Check out and edit files
 ms.assetid: eb404d63-c448-4994-9416-3e6d50ec554a
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,12 +12,12 @@ monikerRange: '>= tfs-2015'
 
 # Check out and edit files
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 When you want to edit a file you can open it from Solution Explorer or from Source Control Explorer. When you begin editing a file, it is automatically checked out to you. In rare situations (for example, you want to check out and lock the file to make sure your changes are checked in before changes from other team members), you might need to manually check out (and optionally lock) an item.
 
 **Required permissions**  
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](https://msdn.microsoft.com/library/ms253077).
+You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
 
 ## Manually check out items
 
@@ -38,25 +34,22 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
    -   **Unchanged**: Do not apply a lock to the items.  
    -   **Check Out**: Prevent other users from checking out and checking in the items until you check in and unlock them.
 
-       >**Note:**  
-       >In Visual Studio Team Foundation Server 2012 this option is not available if you are using a [local workspace](decide-between-using-local-server-workspace.md). Also, this lock is not enforceable because other users might be using local workspaces. See [Understand lock types](understand-lock-types.md).</p></td>
-       </tr>
-       </tbody>
-       </table>
+       > [!NOTE]
+       > In Visual Studio Team Foundation Server 2012 this option is not available if you are using a [local workspace](decide-between-using-local-server-workspace.md). Also, this lock is not enforceable because other users might be using local workspaces. See [Understand lock types](understand-lock-types.md).
 
    -   **Check In**: Allow other users to check out the items you are checking out, but prevent them from checking in their changes until you check in your changes and unlock the items.
 
-   > **Note:**  
-   > The **Lock type** menu is not available if:</p>
-   > <ul>
-   > <li>Another team member has locked the file.</li>
-   > <li>The <strong>Enable multiple check-out</strong> option has been cleared (not a recommended practice) by an Administrator of your project. Administrator: On the menu bar, choose <strong>Team</strong>, <strong>Project Settings</strong>, <strong>Source Control</strong>).</li></ul>  
+   > [!NOTE]
+   > The **Lock type** menu is not available if:
+   >
+   > - Another team member has locked the file.
+   > - The **Enable multiple check-out** option has been cleared (not a recommended practice) by an Administrator of your project. Administrator: On the menu bar, choose **Team**, **Project Settings**, **Source Control**).
 
    If any other users have locked any of the specified items, the lock operation will fail. For more information, see [Lock and unlock folders or files](lock-unlock-folders-files.md).
 
 3. Choose **Check Out**.
 
-In Solution Explorer and in Source Control Explorer, a check mark ![TFSC Checked-Out Status Icon](_img/check-out-edit-files/IC51402.gif) appears next to the items that you have checked out. In Team Explorer, a pending **edit** change to the file is displayed on the Pending Changes page. In Source Control Explorer, a pending **edit** change is visible to you and to members of your team.
+In Solution Explorer and in Source Control Explorer, a check mark ![TFSC Checked-Out Status Icon](media/check-out-edit-files/IC51402.gif) appears next to the items that you have checked out. In Team Explorer, a pending **edit** change to the file is displayed on the Pending Changes page. In Source Control Explorer, a pending **edit** change is visible to you and to members of your team.
 
 ## Work from the command prompt
 

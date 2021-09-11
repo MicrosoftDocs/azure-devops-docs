@@ -1,24 +1,26 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
-title: Developing extensions for Azure DevOps Services vertical web navigation | Azure DevOps Services
-description: Guidance for developing Azure DevOps Services extensions to be used in the new vertical web navigation
+title: Developing extensions for vertical web navigation
+description: Guidance for developing extensions to be used with vertical web navigation
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
-ms.manager: jillfra
 monikerRange: 'azure-devops'
-ms.author: wismythe
-author: willsmythe
-ms.date: 06/21/2018
+ms.author: apawast
+author: apawast
+ms.date: 06/08/2021
 ---
 
-# Guidance for extension developers impacted by new navigation preview
+# Vertical navigation guidance
 
-Our new vertical navigation preview brings with it changes that impact some extensions. This includes support for extension icons along with changes to team context.
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+
+Vertical navigation brings with it changes that affect some extensions. These outcomes include support for extension icons along with changes to team context.
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Team context
 
-In traditional horizontal navigation, a user could navigate into a project or team by selecting it from a picker located in the top left of the page header. This picker presented a list of recent teams and a way to browse for all teams. In the new vertical navigation, a user can only navigate into a project (and not into a team). This change was made to simplify the overall experience, but it introduces a challenge for web extensions that rely on users being able to switch teams using the traditional team picker in the page header.
+In traditional horizontal navigation, users could go to a project or team by selecting from a picker that's in the top left of the page header. This picker presented a list of recent teams and a way to browse for all teams. In the new vertical navigation, a user can only navigate into a project (and not into a team). This change was made to simplify the overall experience. But, it introduced a challenge for web extensions that rely on users' ability to switch teams using the traditional team picker in the page header.
 
 `VSS.getWebContext()` is a client-side API provided by the VSS SDK that provides information about the current organization, project, and team the user is operating in:
 
@@ -38,10 +40,12 @@ In traditional horizontal navigation, a user could navigate into a project or te
     }
 }
 ```
-We do not recommend relaying on `VSS.getWebContext().team` and follow below guidance based on category your extension falls under.
+
+We don't recommend relying on `VSS.getWebContext().team`. Instead, follow the guidance below, based on the category your extension falls under.
 
 ### Hub extensions that are team aware
-If your extension needs to provide users a way to select a team, you can use the Teams REST API to get a list of teams for the current project. Here is an example of how to call this API from your extension:
+
+If your extension needs to provide users a way to select a team, you can use the Teams REST API to get a list of teams for the current project. The following example shows how to call this API from your extension.
 
 ```javascript
 VSS.require(["VSS/Service", "TFS/Core/RestClient"],
@@ -55,6 +59,7 @@ VSS.require(["VSS/Service", "TFS/Core/RestClient"],
       );
 });
 ```
+
 For an example of an extension that provides a team picker control, see [Team Calendar](https://github.com/Microsoft/vsts-team-calendar).
 
 ### Pivots/Panels extensions that are in team aware hubs like Backlogs and Dashboard
@@ -78,13 +83,13 @@ function getCurrentTeam() {
 
 ### Actions extensions that are in team aware hubs like Backlogs and Dashboard
 
-Your extension can check the *actionContext* object passed to the callback invoked when a user clicks the contributed menu item. Example shows reading team from the *actionContext*.
+Your extension can check the *actionContext* object passed to the callback invoked when a user selects the contributed menu item. Example shows reading team from the *actionContext*.
 
 ```javascript
 var menuContributionHandler = (function () {
         "use strict";
         return {
-            // This is a callback that gets invoked when a user clicks the newly contributed menu item
+            // This is a callback that gets invoked when a user selects the newly contributed menu item
             // The actionContext parameter contains team information.
             execute: function (actionContext) {
                 if("team" in actionContext) {
@@ -99,17 +104,18 @@ var menuContributionHandler = (function () {
 
 You can optionally set an asset (like a .png or .jpg) as the icon for your hub. This icon appears next to the hub in the vertical navigation bar. It must be packaged with your extension.
 
-> Note: these icons don't appear in horizontal navigation
+> [!NOTE]
+> These icons don't appear in horizontal navigation.
 
-To set an icon for your hub:
+Complete the following steps to set an icon for your hub.
 
-1. Set the `iconAsset` property of the hub contribution to the fully-qualified asset identifier, which follows the pattern: `{publisher-id}.{extension-id}/{asset-path}`.
+1. Set the `iconAsset` property of the hub contribution to the fully qualified asset identifier, which follows the pattern: `{publisher-id}.{extension-id}/{asset-path}`.
 
-2. Add an entry for this asset in the `_shareData` contribution property.
+2. Add an entry for this asset in the `includesata` contribution property.
 
 3. Package the asset with your extension by listing it in the `files` property at the root of your manifest.
 
-For example:
+**Example #1:**
 
 ```json
 {
@@ -126,7 +132,7 @@ For example:
             "properties": {
                 "name": "My Hub",
                 "iconAsset": "my-publisher.my-extension/images/fabrikam-logo.png",
-                "_sharedData": {
+                "includesData": {
                     "assets": [
                         "my-publisher.my-extension/images/fabrikam-logo.png"
                     ]
@@ -140,5 +146,29 @@ For example:
          "addressable": true
      }
  ]
+}
+```
+
+**Example #2:**
+
+When themes like light versus dark get applied, you can specify the icons in your extension manifest as follows.
+
+```json
+
+{
+    "id": "hub",
+    "type": "ms.vss-web.hub",
+    "targets": [
+        "ms.vss-work-web.work-hub-group"
+    ],
+    "properties": {
+        "name": "Hub",
+        "description": "Something",
+        "uri": "pages/Hub.html",
+        "icon": {
+            "light": "img/hub-light.png",
+            "dark": "img/hub-dark.png"
+        }
+    }
 }
 ```

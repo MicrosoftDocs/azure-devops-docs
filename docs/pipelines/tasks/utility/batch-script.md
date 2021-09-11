@@ -2,26 +2,27 @@
 title: Batch Script task
 description: Execute .bat or .cmd scripts when building your code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4
-ms.manager: jillfra
 ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
-ms.date: 08/28/2019
+ms.date: 02/18/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Batch Script task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to run a Windows .bat or .cmd script and optionally allow it to permanently modify environment variables.
+Use this task to run a Windows .bat or .cmd script.
+Optionally, allow it to permanently modify environment variables.
+
+> [!NOTE]
+> This task is not compatible with Windows containers. If you need to run a batch script on a Windows container, use the [command line task](command-line.md) instead.
+> 
+> For information on supporting multiple platforms, see [cross platform scripting](../../scripts/cross-platform-scripting.md).
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -29,53 +30,19 @@ Use this task in a build or release pipeline to run a Windows .bat or .cmd scrip
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/BatchScriptV1.md)]
+[!INCLUDE [temp](../includes/yaml/BatchScriptV1.md)]
 
 ::: moniker-end
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Path</td>
-<td><p>Specify the path to the .bat or .cmd script you want to run. The path must be a fully qualified path or a valid path relative to the default working directory.</p>
-<p>
-In Team Foundation Build, this directory is <a href="../../build/variables.md" data-raw-source="[$(Build.SourcesDirectory)](../../build/variables.md)">$(Build.SourcesDirectory)</a>.</p>
-</td>
-</tr>
-<tr>
-<td>Arguments</td>
-<td>Specify arguments to pass to the script.</td>
-</tr>
-<tr>
-<tr>
-<td>Modify environment</td>
-<td>Select this check box if you want stage variable modifications in the script to affect subsequent tasks.</td>
-</tr>
-<th style="text-align: center" colspan="2">Advanced</th>
-</tr>
-<tr>
-<td>Working folder</td>
-<td>Specify the working directory in which you want to run the script. If you leave it empty, the working directory is the folder where the script is located.
-</td>
-</tr>
-<tr>
-<td>Fail on standard error</td>
-<td>Select this check box if you want the build to fail if errors are written to the StandardError stream.</td>
-</tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
+|Argument|Description|
+|--- |--- |
+|`filename`<br/>Path|(Required) Path of the cmd or bat script to execute. Should be fully qualified path or relative to the default working directory (please note that working directory could differ from 'workingFolder' which could be specified for this task).|
+|`arguments`<br/>Arguments|(Optional) Specify arguments to pass to the script.|
+|`modifyEnvironment`<br/>Modify environment|(Optional) Determines whether environment variable modifications will affect subsequent tasks <br/>Default value: `False`|
+|`workingFolder`<br/>Working folder|(Optional) Current working directory when script is run. Defaults to the agent's default working directory|
+|`failOnStandardError`<br/>Fail on Standard Error|(Optional) If this is true, this task will fail if any errors are written to the StandardError stream. <br/>Default value: `false`|
 
 ## Example
 
@@ -100,7 +67,7 @@ On the Build tab of a build pipeline, add this task:
    <tr>
       <td>
 
-![](_img/batch-script.png)
+:::image type="icon" source="media/batch-script.png" border="false":::
 
 <br/>**Utility: Batch Script**</td>
 
@@ -117,23 +84,23 @@ On the Build tab of a build pipeline, add this task:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn Windows commands?
 
-[An A-Z Index of the Windows CMD command line](http://ss64.com/nt/)
+[An A-Z Index of the Windows CMD command line](https://ss64.com/nt/)
 
-[!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
+[!INCLUDE [include](../../includes/variable-set-in-script-qa.md)]
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

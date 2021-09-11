@@ -2,11 +2,12 @@
 title: TRANSITION XML element 
 titleSuffix: TFS
 description: Syntax and usage of the TRANSITION element used to specify a valid progression or regression from one state to another for a work item type
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: bb4ced9a-bebb-4011-8646-4beb94655afa
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '< azure-devops'
 ms.date: 10/27/2017
 ---
 
@@ -14,7 +15,7 @@ ms.date: 10/27/2017
 
 # TRANSITION XML element  
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You use the **TRANSITION** element to specify a valid progression or regression from one state to another for a type of work item. The **TRANSITION** element is a required child element of the **TRANSITIONS** element.  
   
@@ -69,9 +70,9 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
   
  Additionally, you can optionally use the attributes `for` and `not` in the transition element of workflow to refine who is and who is not able to perform a transition. When you do this, `denies` takes precedence over `allows`. If neither of these attributes is specified, anyone can modify the work item.  
   
- Multiple groups are supported only by creating a parent group and specifying that parent group in the `TRANSITION` element. To learn more about the for and not attributes, see [Apply a field rule](apply-rule-work-item-field.md).  
+ Multiple groups are supported only by creating a parent group and specifying that parent group in the `TRANSITION` element. To learn more about the for and not attributes, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).  
   
-## Example  
+## Example, define reasons  
  In the following example, the reasons are defined for the transition from the **Active** to the **Resolved** workflow state.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -90,7 +91,8 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 > </TRANSITION>  
 > ```  
   
-## Example  
+## Example, restrict transition
+  
  In the following rule, the ability to transition a work item from the **Resolved** to the **Completed** state is restricted to all project testers, except for new testers who have just joined the team.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -100,6 +102,7 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 > ```  
   
 ::: moniker range=">= tfs-2018" 
+
 ## Auto completion of work items with pull requests  
 
 When you link a work item to a pull request (PR), you have the option to automatically complete those work items when you successfully complete the PR. 

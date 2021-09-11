@@ -1,43 +1,47 @@
 ---
 title: Debug with symbols in WinDbg
-description: Debug with symbols in WinDbg using the Symbol Server in Azure Artifacts
+description: Use WinDbg to consume symbols and debug your application
 ms.assetid: C8C003EA-79C8-49EF-BEBD-35548505F0CF
-ms.prod: devops
+ms.custom: contperf-fy22q1
 ms.technology: devops-artifacts
-ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
-ms.date: 10/18/2017
+ms.date: 07/26/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Debug with symbols in WinDbg
+# Debug with WinDbg
 
-[!INCLUDE [](../_shared/availability-symbols.md)]
-
-Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../concepts/symbols.md); to publish symbols, see [this page](/azure/devops/pipelines/artifacts/symbols). To use symbols in Visual Studio, see [this page](debug-with-symbols-visual-studio.md).
-
-## Ensure WinDbg can find tf.exe
-
-1. Open `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\srcsrv.ini`
-2. Ensure that it contains the following content:
-
-```
-[trusted commands]
-tf.exe="CommonExtensions\Microsoft\TeamFoundation\Team Explorer\TF.exe"
-```
+ Azure Artifacts offers a dedicated symbols server to publish your symbols. You can connect a debugger to automatically retrieve the correct symbol files and debug your application. Using WinDbg, you can load an executable or attach the debugger to a running process, consume your symbols, set up breakpoints, and step through and analyze your code.
 
 ## Add the symbol server to WinDbg
 
-To use the Azure DevOps Services symbol server in WinDbg, you'll add your organization to the symbol search path.
+To use the Azure Artifacts symbol server, you must add your organization to the symbols search path, but before we can do that, we must first create a personal access token.
 
-1. Open WinDbg (you can [install it from the Store](https://www.microsoft.com/store/p/windbg-preview/9pgjgd53tn86)).
-2. Load the executable you wish to debug.
-3. Copy this command and replace `<yourOrg>` with your Azure DevOps Services account name: `.sympath+ https://artifacts.dev.azure.com/<yourOrg>/_apis/symbol/symsrv`
-4. In the Command window in WinDbg, enter the command from the previous step
-5. Set a breakpoint (`bp`), which will cause WinDbg to issue a symbols request
-6. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with the **Symbols (read)** scope and copy it to your clipboard
-7. In the authentication prompt that appears, leave the username blank and enter your PAT from the previous step as the password
+1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Symbols (read)** scope and copy it to your clipboard.
+1. Open WinDbg, or [install](https://www.microsoft.com/store/p/windbg-preview/9pgjgd53tn86) it if you haven't already.
+1. Select **File** > **OpenExecutable** to load the executable you wish to debug.
+1. Run the following command to set the symbols path. Replace the placeholder *<ORGANIZATION_NAME>* with your organization name:
 
-WinDbg should then acquire symbols for your executable. You can run `lm` to confirm.
+    ```Command
+    .sympath+ https://artifacts.dev.azure.com/<ORGANIZATION_NAME>/_apis/symbol/symsrv
+    ```
+
+1. Set a breakpoint by running the [bp command](/windows-hardware/drivers/debugger/bp--bu--bm--set-breakpoint-). this will trigger a symbols request.
+1. In the authentication prompt, paste your personal access token that you created earlier. You can leave the username field blank.
+
+WinDbg should then acquire the symbols for your executable. To verify if your symbols are loaded, run the **lm** command to list all loaded modules.
+
+## Start debugging
+
+With WinDbg, you can debug both kernel-mode and user-mode components:
+
+- [Getting started with WinDbg (user-mode)](/windows-hardware/drivers/debugger/getting-started-with-windbg).
+- [Getting started with WinDbg (kernel-mode)](/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-).
+- [Using the WinDbg Graphical Interface](/windows-hardware/drivers/debugger/windbg-graphical-interface).
+- [Using the Debugger Command Window](/windows-hardware/drivers/debugger/the-debugger-command-window).
+
+## Related articles
+
+- [Symbols overview](../concepts/symbols.md).
+- [Debug with Visual Studio](./debug-with-symbols-visual-studio.md).
+- [How the Debugger Recognizes Symbols](/windows-hardware/drivers/debugger/how-the-debugger-recognizes-symbols).

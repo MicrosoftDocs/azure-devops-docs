@@ -3,11 +3,7 @@ title: Git view command
 titleSuffix: Azure Repos
 description: Git view command
 ms.assetid: e9ec11ff-9f66-454a-8448-e2b354ae5b74
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 01/07/2019
 monikerRange: '>= tfs-2015'
@@ -16,25 +12,27 @@ monikerRange: '>= tfs-2015'
 
 # Git view command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Retrieves a file from a Git repository to a temporary location on your computer and displays it.         
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf git view /collection:TeamProjectCollectionUrl
-                /teamproject:TeamProjectIdentifier
-                /repository:RepositoryIdentifier
-                (/blobId:blobId | /path:path [/commitId:commitId])
-                [/output:localfile]
-                [/console]
-                [/login:username,[password]]
+```
+tf git view /collection:TeamProjectCollectionUrl
+            /teamproject:TeamProjectIdentifier
+            /repository:RepositoryIdentifier
+            (/blobId:blobId | /path:path [/commitId:commitId])
+            [/output:localfile]
+            [/console]
+            [/login:username,[password]]
+```
 
 ## Parameters
 
 |                     Parameter                     |                                                                                                            Description                                                                                                            |
 |---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **/collection:**<em>TeamProjectCollectionUrl</em> |            Specifies the URL of the project collection that contains the file to view. For example: <http://myserver:8080/tfs/DefaultCollection> or https://dev.azure.com/fabrikam-fiber. This parameter is required.             |
+| **/collection:**<em>TeamProjectCollectionUrl</em> |            Specifies the URL of the project collection that contains the file to view. For example: `http://myserver:8080/tfs/DefaultCollection` or `https://dev.azure.com/fabrikam-fiber`. This parameter is required.             |
 |  **/teamproject:**<em>TeamProjectIdentifier</em>  |                                                                       Specifies the name of the project that contains the repo. This parameter is required.                                                                       |
 |   **/repository:**<em>RepositoryIdentifier</em>   |                                                                    Specifies the name of the repo that contains the file to view. This parameter is required.                                                                     |
 |            **/blobId:**<em>blobId</em>            |                                          Specifies the ID of a blob to retrieve. This option cannot be used with the **path** parameter. One of either **path** or **blob** is required.                                          |

@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 463 490"
+   version="1.1"
+   id="svg288"
+   sodipodi:docname="upstream-source-graph-2.svg"
+   width="463"
+   height="490"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+  <metadata
+     id="metadata294">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>blog-package-upstream-diagram-2</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs292" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview290"
+     showgrid="false"
+     inkscape:zoom="1.336478"
+     inkscape:cx="318"
+     inkscape:cy="228.21176"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg288"
+     inkscape:document-rotation="0" />
+  <title
+     id="title2">blog-package-upstream-diagram-2</title>
+  <rect
+     style="fill:#ffffff;fill-opacity:1"
+     id="rect972"
+     width="441.45883"
+     height="458.66824"
+     x="11.22353"
+     y="17.957647" />
+  <line
+     x1="22.016666"
+     y1="387.97061"
+     x2="50.502018"
+     y2="387.97061"
+     fill="none"
+     stroke="#004880"
+     stroke-miterlimit="10"
+     stroke-width="2.19244"
+     id="line4" />
+  <polygon
+     points="53.806,497.055 67,509.324 53.806,521.591 51.76,519.393 62.595,509.324 51.76,499.252 "
+     fill="#004880"
+     id="polygon6"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <path
+     d="M 133.81667,267.00347 H 322.3 a 7.8833333,8.1975737 0 0 1 7.88333,8.19757 V 463 H 141.7 a 7.8833333,8.1975737 0 0 1 -7.88333,-8.19757 z"
+     fill="#b4a0ff"
+     id="path8"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text10"
+     x="276.82007"
+     y="343.68668"
+     style="stroke-width:0.730811">Gadgets</text>
+  <rect
+     x="251.43886"
+     y="362.26151"
+     width="46.582619"
+     height="41.423084"
+     fill="#ffffff"
+     id="rect12"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="409.777,479.602 342.264,479.602 347.753,485.515 409.777,485.515 "
+     fill="#c2c2c2"
+     id="polygon14"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <rect
+     x="298.02078"
+     y="362.26151"
+     width="7.3723497"
+     height="41.423084"
+     fill="#737373"
+     id="rect16"
+     style="stroke-width:0.730811" />
+  <rect
+     x="247.55669"
+     y="356.67972"
+     width="54.346268"
+     height="10.632998"
+     fill="#ffffff"
+     id="rect18"
+     style="stroke-width:0.730811" />
+  <rect
+     x="300.96985"
+     y="356.67972"
+     width="7.3723497"
+     height="10.632998"
+     fill="#737373"
+     id="rect20"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text24"
+     x="268.43768"
+     y="375.84238"
+     style="stroke-width:0.730811">1.0.0<tspan
+   x="268.43768"
+   y="389.87393"
+   id="tspan22"
+   style="stroke-width:0.730811">2.0.0</tspan></text>
+  <path
+     d="m 253.03847,331.57575 a 6.40055,6.6556846 0 0 0 -6.41345,6.67283 v 7.21312 a 6.4012667,6.6564298 0 0 0 6.41345,6.67357 h 6.93231 a 6.4019833,6.657175 0 0 0 6.41417,-6.67357 v -7.21387 a 6.4012667,6.6564298 0 0 0 -6.41417,-6.67282 z m -1.36167,3.5026 a 2.3986851,2.4943 0 0 1 0,4.9886 v 0 a 2.3986851,2.4943 0 0 1 0,-4.9886 z m 7.64468,6.06695 a 4.1487833,4.3141594 0 1 1 -4.14663,4.31416 4.1480667,4.3134142 0 0 1 4.14663,-4.31416 z M 245.33,328.60972 a 2.2689667,2.3594107 0 1 1 -2.26825,2.35867 2.2675333,2.3579203 0 0 1 2.26825,-2.35867 z"
+     fill="#004880"
+     id="path26"
+     style="stroke-width:0.730811" />
+  <path
+     d="M 250.63333,33 H 439.11667 A 7.8833333,8.1975737 0 0 1 447,41.197574 V 229.74177 H 258.51667 a 7.8833333,8.1975737 0 0 1 -7.88334,-8.19758 z"
+     fill="#cbe247"
+     id="path28"
+     style="stroke-width:0.730811" />
+  <path
+     d="m 17,33 h 188.48333 a 7.8833333,8.1975737 0 0 1 7.88334,8.197574 V 229.74177 H 24.883333 A 7.8833333,8.1975737 0 0 1 17,221.54419 Z"
+     fill="#b0cdda"
+     id="path30"
+     style="stroke-width:0.730811" />
+  <path
+     d="M 213.36667,61.567054 V 41.197574 A 7.8833333,8.1975737 0 0 0 205.48333,33 H 17 v 28.567054 z"
+     fill="#cadee6"
+     id="path32"
+     style="stroke-width:0.730811" />
+  <path
+     d="M 447,61.567054 V 41.197574 A 7.8833333,8.1975737 0 0 0 439.11667,33 H 250.63333 v 28.567054 z"
+     fill="#e6f26d"
+     id="path34"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="17.5395px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text40"
+     x="83.03978"
+     y="51.3624"
+     style="stroke-width:0.730811"><tspan
+       letter-spacing="-0.034em"
+       id="tspan36"
+       style="stroke-width:0.618677">F</tspan><tspan
+       x="91.00415"
+       y="51.3624"
+       id="tspan38"
+       style="stroke-width:0.730811">abrikam</tspan></text>
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="17.5395px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text42"
+     x="322.46872"
+     y="51.3624"
+     style="stroke-width:0.730811">Contoso</text>
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text44"
+     x="111.03421"
+     y="110.55807"
+     style="stroke-width:0.730811">Widgets</text>
+  <rect
+     x="88.755531"
+     y="124.53187"
+     width="46.582619"
+     height="41.423084"
+     fill="#ffffff"
+     id="rect46"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="182.777,160.602 115.264,160.602 120.753,166.515 182.777,166.515 "
+     fill="#c2c2c2"
+     id="polygon48"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <rect
+     x="135.33743"
+     y="124.53187"
+     width="7.3723497"
+     height="41.423084"
+     fill="#939393"
+     id="rect50"
+     style="stroke-width:0.730811" />
+  <rect
+     x="84.873352"
+     y="118.95007"
+     width="54.346268"
+     height="10.632998"
+     fill="#ffffff"
+     id="rect52"
+     style="stroke-width:0.730811" />
+  <rect
+     x="138.28651"
+     y="118.95007"
+     width="7.3723497"
+     height="10.632998"
+     fill="#939393"
+     id="rect54"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text58"
+     x="102.54366"
+     y="142.71375"
+     style="stroke-width:0.730811">1.0.0<tspan
+   x="102.54366"
+   y="156.7453"
+   id="tspan56"
+   style="stroke-width:0.730811">2.0.0</tspan></text>
+  <path
+     d="m 90.355133,93.846118 a 6.40055,6.6556846 0 0 0 -6.41345,6.672822 v 7.21312 a 6.4012667,6.6564298 0 0 0 6.41345,6.67357 h 6.932317 a 6.4019833,6.657175 0 0 0 6.41417,-6.67357 v -7.21386 a 6.4012667,6.6564298 0 0 0 -6.41417,-6.672827 z m -1.361666,3.5026 a 2.3986833,2.4942981 0 0 1 0,4.988592 v 0 a 2.3986833,2.4942981 0 0 1 0,-4.988592 z m 7.644683,6.066952 a 4.1487833,4.3141594 0 1 1 -4.146633,4.31416 4.1480667,4.3134142 0 0 1 4.146633,-4.31416 z M 82.646667,90.880087 a 2.2689667,2.3594107 0 1 1 -2.26825,2.358665 2.2675333,2.3579203 0 0 1 2.26825,-2.358665 z"
+     fill="#004880"
+     id="path60"
+     style="stroke-width:0.730811" />
+  <path
+     d="M 330.18333,296.39847 V 275.20104 A 7.8833333,8.1975737 0 0 0 322.3,267.00347 H 133.81667 v 29.395 z"
+     fill="#c7b8ff"
+     id="path62"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="17.5395px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text68"
+     x="172.32146"
+     y="280.83698"
+     style="stroke-width:0.730811">Adventure<tspan
+   x="252.60249"
+   y="280.83698"
+   letter-spacing="-0.039em"
+   id="tspan64"
+   style="stroke-width:0.618677">W</tspan><tspan
+   x="268.30029"
+   y="280.83698"
+   id="tspan66"
+   style="stroke-width:0.730811">orks</tspan></text>
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text70"
+     x="185.45413"
+     y="342.54297"
+     style="stroke-width:0.730811">Things</text>
+  <rect
+     x="161.05"
+     y="360.90295"
+     width="46.583332"
+     height="41.733101"
+     fill="#ffffff"
+     id="rect72"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="284,478 215.499,478 221.069,484 284,484 "
+     fill="#c2c2c2"
+     id="polygon74"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <rect
+     x="207.63333"
+     y="360.90295"
+     width="7.1666665"
+     height="41.733101"
+     fill="#737373"
+     id="rect76"
+     style="stroke-width:0.730811" />
+  <rect
+     x="157.46666"
+     y="355.68631"
+     width="54.466667"
+     height="10.433275"
+     fill="#ffffff"
+     id="rect78"
+     style="stroke-width:0.730811" />
+  <rect
+     x="210.5"
+     y="355.68631"
+     width="7.1666665"
+     height="10.433275"
+     fill="#737373"
+     id="rect80"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text82"
+     x="176.35553"
+     y="374.69867"
+     style="stroke-width:0.730811">1.0.0</text>
+  <path
+     d="m 156.03333,336.99211 v 7.55295 a 6.4141667,6.669844 0 0 0 6.41417,6.66984 h 7.23833 A 6.4141667,6.669844 0 0 0 176.1,344.54506 v -7.52686 a 6.41775,6.6735702 0 0 0 -6.41775,-6.66985 h -7.23475 a 6.3905167,6.6452513 0 0 0 -6.41417,6.64376 z m 5.3449,-3.07781 a 2.3986833,2.4942981 0 0 1 0,4.98785 v 0 a 2.3986833,2.4942981 0 0 1 0,-4.98785 z m 7.64469,6.0662 a 4.1487833,4.3141594 0 1 1 -4.14664,4.31416 4.1480667,4.3134142 0 0 1 4.14664,-4.31416 z M 155.03,327.44194 a 2.2689667,2.3594107 0 1 1 -2.26825,2.35941 2.26825,2.3586655 0 0 1 2.26825,-2.35941 z"
+     fill="#004880"
+     id="path84"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text86"
+     x="24.156168"
+     y="403.20026"
+     style="stroke-width:0.730811">Upstream source</text>
+  <line
+     x1="22.016666"
+     y1="438.03467"
+     x2="53.549999"
+     y2="438.03467"
+     fill="none"
+     stroke="#737373"
+     stroke-miterlimit="10"
+     stroke-width="1.46162"
+     stroke-dasharray="2.92325, 2.92325"
+     id="line88" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text90"
+     x="24.156168"
+     y="448.51053"
+     style="stroke-width:0.730811">Feed link</text>
+  <path
+     d="m 350.25,226.76083 v 135.63258 c 0,12.66898 -5.73333,18.63085 -18.63333,18.63085 h -19.35"
+     fill="none"
+     stroke="#737373"
+     stroke-miterlimit="10"
+     stroke-width="1.46162"
+     stroke-dasharray="2.92325, 2.92325"
+     id="path92" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text94"
+     x="352.27924"
+     y="88.22084"
+     style="stroke-width:0.730811">Gizmos</text>
+  <rect
+     x="325.25552"
+     y="101.7538"
+     width="46.582619"
+     height="41.423084"
+     fill="#ffffff"
+     id="rect96"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="512.777,130.036 445.264,130.036 450.753,135.95 512.777,135.95 "
+     fill="#c2c2c2"
+     id="polygon98"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <rect
+     x="371.75"
+     y="101.56152"
+     width="7.1666665"
+     height="41.733101"
+     fill="#939393"
+     id="rect100"
+     style="stroke-width:0.730811" />
+  <rect
+     x="321.58334"
+     y="96.344887"
+     width="54.466667"
+     height="10.433275"
+     fill="#ffffff"
+     id="rect102"
+     style="stroke-width:0.730811" />
+  <rect
+     x="374.61667"
+     y="96.344887"
+     width="7.1666665"
+     height="10.433275"
+     fill="#939393"
+     id="rect104"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text108"
+     x="343.71121"
+     y="120.37652"
+     style="stroke-width:0.730811">1.0.0<tspan
+   x="343.71121"
+   y="134.40808"
+   id="tspan106"
+   style="stroke-width:0.730811">3.0.0</tspan></text>
+  <path
+     d="m 326.85513,71.067296 a 6.4012667,6.6564298 0 0 0 -6.41345,6.673571 v 7.212374 a 6.4012667,6.6564298 0 0 0 6.41345,6.67357 h 6.93232 a 6.4019833,6.657175 0 0 0 6.41417,-6.67357 v -7.212374 a 6.4019833,6.657175 0 0 0 -6.41417,-6.673571 z m -1.36166,3.5026 a 2.3986833,2.4942981 0 0 1 0,4.987851 v 0 a 2.3986833,2.4942981 0 0 1 0,-4.987851 z m 7.64468,6.066205 a 4.1487833,4.3141594 0 1 1 -4.14663,4.314159 4.1480667,4.3134142 0 0 1 4.14663,-4.314159 z M 319.14667,68.10052 a 2.2689667,2.3594107 0 1 1 -2.26825,2.359411 2.26825,2.3586655 0 0 1 2.26825,-2.359411 z"
+     fill="#004880"
+     id="path110"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text112"
+     x="352.0936"
+     y="165.68677"
+     style="stroke-width:0.730811">Gadgets</text>
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text114"
+     x="344.44202"
+     y="197.84245"
+     style="stroke-width:0.730811">2.0.0</text>
+  <path
+     d="m 327.5718,150.0621 a 6.4012667,6.6564298 0 0 0 -6.41345,6.67357 v 7.21237 a 6.4012667,6.6564298 0 0 0 6.41345,6.67357 h 6.93232 a 6.4019833,6.657175 0 0 0 6.41416,-6.67357 v -7.21237 a 6.4019833,6.657175 0 0 0 -6.41416,-6.67357 z m -1.36167,3.5026 a 2.3986833,2.4942981 0 0 1 0,4.98785 v 0 a 2.3986833,2.4942981 0 0 1 0,-4.98785 z m 7.64469,6.0662 a 4.1487833,4.3141594 0 1 1 -4.14664,4.31416 4.1480667,4.3134142 0 0 1 4.14664,-4.31416 z m -13.99149,-12.53558 a 2.2689667,2.3594107 0 1 1 -2.26825,2.35941 2.26825,2.3586655 0 0 1 2.26825,-2.35941 z"
+     fill="#004880"
+     id="path116"
+     style="stroke-width:0.730811" />
+  <rect
+     x="320.14999"
+     y="180.55632"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect118"
+     style="stroke-width:0.730811" />
+  <rect
+     x="320.14999"
+     y="177.57539"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect120"
+     style="stroke-width:0.730811" />
+  <rect
+     x="380.35001"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect122"
+     style="stroke-width:0.730811" />
+  <rect
+     x="377.48334"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect124"
+     style="stroke-width:0.730811" />
+  <rect
+     x="374.61667"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect126"
+     style="stroke-width:0.730811" />
+  <rect
+     x="371.75"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect128"
+     style="stroke-width:0.730811" />
+  <rect
+     x="368.88333"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect130"
+     style="stroke-width:0.730811" />
+  <rect
+     x="366.01666"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect132"
+     style="stroke-width:0.730811" />
+  <rect
+     x="363.14999"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect134"
+     style="stroke-width:0.730811" />
+  <rect
+     x="360.28333"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect136"
+     style="stroke-width:0.730811" />
+  <rect
+     x="357.41666"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect138"
+     style="stroke-width:0.730811" />
+  <rect
+     x="354.54999"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect140"
+     style="stroke-width:0.730811" />
+  <rect
+     x="351.68332"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect142"
+     style="stroke-width:0.730811" />
+  <rect
+     x="348.81668"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect144"
+     style="stroke-width:0.730811" />
+  <rect
+     x="345.95001"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect146"
+     style="stroke-width:0.730811" />
+  <rect
+     x="343.08334"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect148"
+     style="stroke-width:0.730811" />
+  <rect
+     x="340.21667"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect150"
+     style="stroke-width:0.730811" />
+  <rect
+     x="337.35001"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect152"
+     style="stroke-width:0.730811" />
+  <rect
+     x="334.48334"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect154"
+     style="stroke-width:0.730811" />
+  <rect
+     x="331.61667"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect156"
+     style="stroke-width:0.730811" />
+  <rect
+     x="328.75"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect158"
+     style="stroke-width:0.730811" />
+  <rect
+     x="325.88333"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect160"
+     style="stroke-width:0.730811" />
+  <rect
+     x="323.01666"
+     y="174.59445"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect162"
+     style="stroke-width:0.730811" />
+  <rect
+     x="380.35001"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect164"
+     style="stroke-width:0.730811" />
+  <rect
+     x="380.35001"
+     y="180.55632"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect166"
+     style="stroke-width:0.730811" />
+  <rect
+     x="380.35001"
+     y="177.57539"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect168"
+     style="stroke-width:0.730811" />
+  <rect
+     x="371.75"
+     y="180.55632"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect170"
+     style="stroke-width:0.730811" />
+  <rect
+     x="371.75"
+     y="177.57539"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect172"
+     style="stroke-width:0.730811" />
+  <rect
+     x="377.48334"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect174"
+     style="stroke-width:0.730811" />
+  <rect
+     x="374.61667"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect176"
+     style="stroke-width:0.730811" />
+  <rect
+     x="371.75"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect178"
+     style="stroke-width:0.730811" />
+  <rect
+     x="368.88333"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect180"
+     style="stroke-width:0.730811" />
+  <rect
+     x="366.01666"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect182"
+     style="stroke-width:0.730811" />
+  <rect
+     x="363.14999"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect184"
+     style="stroke-width:0.730811" />
+  <rect
+     x="360.28333"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect186"
+     style="stroke-width:0.730811" />
+  <rect
+     x="357.41666"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect188"
+     style="stroke-width:0.730811" />
+  <rect
+     x="354.54999"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect190"
+     style="stroke-width:0.730811" />
+  <rect
+     x="351.68332"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect192"
+     style="stroke-width:0.730811" />
+  <rect
+     x="348.81668"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect194"
+     style="stroke-width:0.730811" />
+  <rect
+     x="345.95001"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect196"
+     style="stroke-width:0.730811" />
+  <rect
+     x="343.08334"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect198"
+     style="stroke-width:0.730811" />
+  <rect
+     x="340.21667"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect200"
+     style="stroke-width:0.730811" />
+  <rect
+     x="337.35001"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect202"
+     style="stroke-width:0.730811" />
+  <rect
+     x="334.48334"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect204"
+     style="stroke-width:0.730811" />
+  <rect
+     x="331.61667"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect206"
+     style="stroke-width:0.730811" />
+  <rect
+     x="328.75"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect208"
+     style="stroke-width:0.730811" />
+  <rect
+     x="325.88333"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect210"
+     style="stroke-width:0.730811" />
+  <rect
+     x="323.01666"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect212"
+     style="stroke-width:0.730811" />
+  <rect
+     x="320.14999"
+     y="183.53726"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect214"
+     style="stroke-width:0.730811" />
+  <rect
+     x="320.14999"
+     y="180.55632"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect216"
+     style="stroke-width:0.730811" />
+  <rect
+     x="320.14999"
+     y="177.57539"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect218"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="440,225 441.022,225 441.022,224.999 442,224.999 442,223 440,223 440,224.624 440,224.897 "
+     fill="#107c10"
+     id="polygon220"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <rect
+     x="376.76666"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect222"
+     style="stroke-width:0.730811" />
+  <rect
+     x="373.89999"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect224"
+     style="stroke-width:0.730811" />
+  <rect
+     x="371.03333"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect226"
+     style="stroke-width:0.730811" />
+  <rect
+     x="368.16666"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect228"
+     style="stroke-width:0.730811" />
+  <rect
+     x="365.29999"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect230"
+     style="stroke-width:0.730811" />
+  <rect
+     x="362.43332"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect232"
+     style="stroke-width:0.730811" />
+  <rect
+     x="359.56668"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect234"
+     style="stroke-width:0.730811" />
+  <rect
+     x="356.70001"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect236"
+     style="stroke-width:0.730811" />
+  <rect
+     x="353.83334"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect238"
+     style="stroke-width:0.730811" />
+  <rect
+     x="350.96667"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect240"
+     style="stroke-width:0.730811" />
+  <rect
+     x="348.10001"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect242"
+     style="stroke-width:0.730811" />
+  <rect
+     x="345.23334"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect244"
+     style="stroke-width:0.730811" />
+  <rect
+     x="342.36667"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect246"
+     style="stroke-width:0.730811" />
+  <rect
+     x="339.5"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect248"
+     style="stroke-width:0.730811" />
+  <rect
+     x="336.63333"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect250"
+     style="stroke-width:0.730811" />
+  <rect
+     x="333.76666"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect252"
+     style="stroke-width:0.730811" />
+  <rect
+     x="330.89999"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect254"
+     style="stroke-width:0.730811" />
+  <rect
+     x="328.03333"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect256"
+     style="stroke-width:0.730811" />
+  <rect
+     x="325.16666"
+     y="221.54419"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect258"
+     style="stroke-width:0.730811" />
+  <path
+     d="m 326.6,214.09185 h -1.43333 v -1.49046 H 326.6 Z m 0,-2.98093 h -1.43333 v -1.49047 H 326.6 Z m 0,-2.98094 h -1.43333 v -1.49047 H 326.6 Z m 0,-2.98093 h -1.43333 v -1.49047 H 326.6 Z m 0,-2.98094 h -1.43333 v -1.49047 H 326.6 Z m 0,-2.98093 h -1.43333 v -1.49047 H 326.6 Z m 0,-2.98094 h -1.43333 v -1.49047 H 326.6 Z m 0,-2.98094 h -1.43333 v -1.49046 H 326.6 Z m 0,-2.98093 h -1.43333 V 188.7539 H 326.6 Z m 0,-2.98094 h -1.43333 v -1.49047 H 326.6 Z"
+     fill="#107c10"
+     id="path260"
+     style="stroke-width:0.730811" />
+  <rect
+     x="325.16666"
+     y="218.56326"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect262"
+     style="stroke-width:0.730811" />
+  <rect
+     x="325.16666"
+     y="215.58232"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect264"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="447,276 448.022,276 448.022,275.999 449,275.999 449,274 447,274 447,275.624 447,275.897 "
+     fill="#107c10"
+     id="polygon266"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <path
+     d="m 369.6,214.09185 h -1.43333 v -1.49046 H 369.6 Z m 0,-2.98093 h -1.43333 v -1.49047 H 369.6 Z m 0,-2.98094 h -1.43333 v -1.49047 H 369.6 Z m 0,-2.98093 h -1.43333 v -1.49047 H 369.6 Z m 0,-2.98094 h -1.43333 v -1.49047 H 369.6 Z m 0,-2.98093 h -1.43333 v -1.49047 H 369.6 Z m 0,-2.98094 h -1.43333 v -1.49047 H 369.6 Z m 0,-2.98094 h -1.43333 v -1.49046 H 369.6 Z m 0,-2.98093 h -1.43333 V 188.7539 H 369.6 Z m 0,-2.98094 h -1.43333 v -1.49047 H 369.6 Z"
+     fill="#107c10"
+     id="path268"
+     style="stroke-width:0.730811" />
+  <rect
+     x="368.16666"
+     y="218.56326"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect270"
+     style="stroke-width:0.730811" />
+  <rect
+     x="368.16666"
+     y="215.58232"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect272"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="507,276 508.022,276 508.022,275.999 509,275.999 509,274 507,274 507,275.624 507,275.897 "
+     fill="#107c10"
+     id="polygon274"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <path
+     d="m 378.2,214.09185 h -1.43333 v -1.49046 H 378.2 Z m 0,-2.98093 h -1.43333 v -1.49047 H 378.2 Z m 0,-2.98094 h -1.43333 v -1.49047 H 378.2 Z m 0,-2.98093 h -1.43333 v -1.49047 H 378.2 Z m 0,-2.98094 h -1.43333 v -1.49047 H 378.2 Z m 0,-2.98093 h -1.43333 v -1.49047 H 378.2 Z m 0,-2.98094 h -1.43333 v -1.49047 H 378.2 Z m 0,-2.98094 h -1.43333 v -1.49046 H 378.2 Z m 0,-2.98093 h -1.43333 V 188.7539 H 378.2 Z m 0,-2.98094 h -1.43333 v -1.49047 H 378.2 Z"
+     fill="#107c10"
+     id="path276"
+     style="stroke-width:0.730811" />
+  <rect
+     x="376.76666"
+     y="218.56326"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect278"
+     style="stroke-width:0.730811" />
+  <rect
+     x="376.76666"
+     y="215.58232"
+     width="1.4333333"
+     height="1.4904679"
+     fill="#107c10"
+     id="rect280"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="519,276 520.022,276 520.022,275.999 521,275.999 521,274 519,274 519,275.624 519,275.897 "
+     fill="#107c10"
+     id="polygon282"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <line
+     x1="283.24167"
+     y1="267.00348"
+     x2="283.24167"
+     y2="233.65648"
+     fill="none"
+     stroke="#004880"
+     stroke-miterlimit="10"
+     stroke-width="2.19244"
+     id="line284" />
+  <polygon
+     points="376.233,312.194 388.503,299 400.77,312.194 398.572,314.24 388.503,303.405 378.431,314.24 "
+     fill="#004880"
+     id="polygon286"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+</svg>

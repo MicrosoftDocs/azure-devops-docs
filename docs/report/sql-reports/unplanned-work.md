@@ -1,20 +1,19 @@
 ---
 title: Unplanned Work 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Use the Unplanned Work report to determine how much work was added to the iteration that was not planned at the start of the iteration.
 ms.assetid: 4c174c3c-2e3d-4f09-913d-bbc17b6382a8
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 
 
 # Unplanned Work
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 Toward the end of an iteration, you can use the Unplanned Work report to determine how much work was added to the iteration that was not planned at the start of the iteration. You can view the unplanned work as measured by work items added, such as tasks, test cases, user stories, and bugs.  
   
@@ -23,7 +22,7 @@ Toward the end of an iteration, you can use the Unplanned Work report to determi
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
 > [!NOTE]
->  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+>  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
 **You can use this report to answer the following questions**:<br /><br /> -   How much work was added after the iteration started?<br />-   Is too much work being added during the iteration?
   
@@ -39,7 +38,7 @@ Toward the end of an iteration, you can use the Unplanned Work report to determi
   
  The following illustration shows an example of the Unplanned Work report. This example is fairly healthy because only 10 items were added after the start of the iteration, representing a 16% increase over the work that was planned  
   
- ![Unplanned Work report](_img/procg_reportunplanned.png "ProcG_ReportUnplanned")  
+ ![Unplanned Work report](media/procg_reportunplanned.png "ProcG_ReportUnplanned")  
   
  The data about work item count is derived from the cube, and other parameter information comes from the data warehouse.  
   
@@ -96,7 +95,7 @@ Toward the end of an iteration, you can use the Unplanned Work report to determi
   
   The following illustration shows the available filters and display options:  
   
-  ![Filters for Unplanned Work report](_img/procg_unplannedwork.png "ProcG_UnplannedWork")  
+  ![Filters for Unplanned Work report](media/procg_unplannedwork.png "ProcG_UnplannedWork")  
   
 #### To filter the tasks, user stories, and bugs that appear in the report  
   

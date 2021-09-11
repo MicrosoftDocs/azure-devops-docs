@@ -2,10 +2,9 @@
 title: LinksControlOptions XML elements (client) 
 titleSuffix: TFS  
 description: XML syntax to scope the allowed links within a links control element used in the client and web forms for Team Foundation Server (TFS)  
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: b43e4e57-3a42-4705-9e52-eec2f8fb5f72
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -15,7 +14,7 @@ ms.date: 02/02/2017
 
 # LinksControlOptions elements
 
-**TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../includes/version-tfs-2013-2015.md)] 
 
 > [!IMPORTANT]  
 >This topic applies to project customization for the On-premises XML process model for TFS 2015 and earlier versions. For the Hosted XML process model and TFS 2017 and later versions, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md).  
@@ -126,17 +125,17 @@ The `LinksControlOptions` element is a child element of the `CONTROL` element.
 ##  LinksControl toolbar buttons  
 Each `Control` element of Type=LinksControl provides a toolbar, which contains the buttons shown in the next illustration:  
   
-![Work item form link toolbar controls](_img/procguid_linktoolbar.png "ProcGuid_LinkToolbar")  
+![Work item form link toolbar controls](media/procguid_linktoolbar.png "ProcGuid_LinkToolbar")  
   
 These buttons become available only after you perform a specific action:  
   
--   The button to create a work item that is linked to the open work item (![Add New Linked Work Item icon](_img/icon_addnewlinkedworkitem.png "Icon_addNewLinkedWorkItem")) becomes available only after you save the open work item.    
--   The buttons to open the list of work items in a query (![Open in Query](_img/icon_openinquery.png "Icon_openInQuery")) and in a Microsoft Office client (![Open in Office](_img/wit_iconoffice.png "WIT_IconOffice")) become available only when at least one work item is listed in the links control tab.   
--   The buttons to open a work item (![Open Work Item](_img/icon_openworkitem.png "Icon_openWorkItem")), edit a link (![Edit link](_img/icon_witlinkedit.png "Icon_WITLinkEdit")), and delete a link (![Delete link](_img/icon_witlinkdelete.png "Icon_WITLinkDelete")) become available only after you click one or more work items listed in the links control tab.  
+-   The button to create a work item that is linked to the open work item (![Add New Linked Work Item icon](media/icon_addnewlinkedworkitem.png "Icon_addNewLinkedWorkItem")) becomes available only after you save the open work item.    
+-   The buttons to open the list of work items in a query (![Open in Query](media/icon_openinquery.png "Icon_openInQuery")) and in a Microsoft Office client (![Open in Office](media/wit_iconoffice.png "WIT_IconOffice")) become available only when at least one work item is listed in the links control tab.   
+-   The buttons to open a work item (![Open Work Item](media/icon_openworkitem.png "Icon_openWorkItem")), edit a link (![Edit link](media/icon_witlinkedit.png "Icon_WITLinkEdit")), and delete a link (![Delete link](media/icon_witlinkdelete.png "Icon_WITLinkDelete")) become available only after you click one or more work items listed in the links control tab.  
   
 The links control that is displayed is the same for both the web portal and Team Explorer, except when it is configured to only render `Storyboard` links. In that case, the toolbar only contains those controls to add a new link, open the linked item, and delete the link. Also, the web portal version displays the **Start Storyboarding** link within the control menu.  
   
-![Storyboard links control](_img/alm_twa_storyboard_linkscontrol.png "ALM_TWA_Storyboard_LinksControl")  
+![Storyboard links control](media/alm_twa_storyboard_linkscontrol.png "ALM_TWA_Storyboard_LinksControl")  
   
 
   

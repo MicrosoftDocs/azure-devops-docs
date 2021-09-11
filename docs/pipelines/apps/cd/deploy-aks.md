@@ -1,15 +1,12 @@
 ---
-title: Deploy a Docker container app to AKS
+title: Deploy a Docker container app to an Azure Kubernetes Service cluster
 description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure Kubernetes Service (AKS) from Azure Pipelines
-ms.assetid:
-ms.prod: devops
-ms.technology: devops-cicd
+ms.assetid: 
 ms.topic: quickstart
-ms.manager: jillfra
 ms.custom: seodec18
-ms.author: ronai
-author: RoopeshNair
-ms.date: 08/30/2019
+ms.author: atulmal
+author: azooinmyluggage
+ms.date: 09/07/2021
 monikerRange: '> tfs-2018'
 ---
 
@@ -29,28 +26,28 @@ If you want some sample code that works with this guidance, [import](../../../re
 
 #### [Java](#tab/java)
 
-[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/spring-guides/gs-spring-boot-docker.git
 ```
 #### [JavaScript](#tab/java-script)
 
-[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
 #### [Python](#tab/python)
 
-[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
 ```
 #### [.NET Core](#tab/dotnet-core)
 
-[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
@@ -66,7 +63,7 @@ Set up a CI pipeline for [building an image](../../ecosystems/containers/build-i
 
 You'll need an Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-## Create an AKS to host your app
+## Create an AKS cluster to host your app
 
 1. Sign into Azure at [https://portal.azure.com](https://portal.azure.com).
 
@@ -83,9 +80,9 @@ You'll need an Azure subscription. You can get one free through [Visual Studio D
 When you use Azure Container Registry (ACR) with Azure Kubernetes Service (AKS),
 you must establish an authentication mechanism. This can be achieved in two ways:
 
-1. Grant AKS access to ACR. See [Authenticate with Azure Container Registry from Azure Kubernetes Service](https://docs.microsoft.com/azure/container-registry/container-registry-auth-aks#grant-aks-access-to-acr).
+1. Grant AKS access to ACR. See [Authenticate with Azure Container Registry from Azure Kubernetes Service](/azure/container-registry/container-registry-auth-aks).
 
-1. Use a [Kubernetes image pull secret](https://docs.microsoft.com/azure/container-registry/container-registry-auth-aks#access-with-kubernetes-secret).
+1. Use a [Kubernetes image pull secret](/azure/container-registry/container-registry-auth-aks).
    An image pull secret can be created by using the [Kubernetes deployment task](../../tasks/deploy/kubernetes.md).
 
 ## Create a release pipeline
@@ -150,10 +147,10 @@ It also packaged and published a Helm chart as an artifact. In the release pipel
        `helm upgrade stable/mysql` 
    
      * **Chart Path**: This can be a path to a packaged chart or a path to an unpacked chart directory.
-       In this example you are publishing the chart using a CI build, so select the file package using file picker
+       In this example, you are publishing the chart using a CI build, so select the file package using file picker
        or enter `$(System.DefaultWorkingDirectory)/**/*.tgz`
    
-     * **Release Name**: Enter a name for your release; for example `azuredevops`
+     * **Release Name**: Enter a name for your release; for example, `azuredevops`
    
      * **Recreate Pods**: Tick this checkbox if there is a configuration change during the release and you want to replace a running pod with the new configuration.
 
@@ -184,7 +181,7 @@ It also packaged and published a Helm chart as an artifact. In the release pipel
 ### Arguments used in the Helm upgrade task
 
 In the build pipeline, the container image is tagged with `$(Build.BuildId)` and this is pushed to an Azure Container Registry. 
-In a Helm chart you can parameterize the container image details such as the name and tag
+In a Helm chart, you can parameterize the container image details such as the name and tag
 because the same chart can be used to deploy to different environments.
 These values can also be specified in the **values.yaml** file or be overridden by a user-supplied values file,
 which can in turn be overridden by `--set` parameters during the Helm install or upgrade.
@@ -203,7 +200,7 @@ For example:
     tag: latest
 ```
 
-Another alternative is to set the **Set Values** option of the task to specify the argument values as comma separated key-value pairs.
+Another alternative is to set the **Set Values** option of the task to specify the argument values as comma-separated key-value pairs.
 
 ## Create a release to deploy your app
 

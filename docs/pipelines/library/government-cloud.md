@@ -3,10 +3,7 @@ title: Azure Government Cloud deployment
 ms.custom: seodec18
 description: Understand Azure Government Cloud deployment in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 857AB27D-FA16-44DB-B1C4-CBE946A0A1AD
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -18,7 +15,7 @@ monikerRange: '>= tfs-2017'
 **Azure Pipelines | TFS 2017  | TFS 2018**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 [Azure Government Clouds](https://azure.microsoft.com/overview/clouds/government/)
@@ -41,4 +38,4 @@ You can then use the service connection in your [build and release pipeline task
 * [Deploy an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
 * [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

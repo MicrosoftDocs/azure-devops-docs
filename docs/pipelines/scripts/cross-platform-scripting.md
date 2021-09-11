@@ -3,31 +3,28 @@ title: Cross-platform scripting
 ms.custom: seodec18
 description: Patterns for safe cross-platform scripting
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 96b7da24-617e-4a58-b65f-040c374e60e2
-ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
-ms.date: 07/03/2019
+ms.date: 08/18/2021
 monikerRange: '>= tfs-2018'
 ---
 
 # Run cross-platform scripts
 
-[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
 
-With Azure Pipelines and Team Foundation Server (TFS), you can run your builds on macOS, Linux, and Windows.
-If you develop on cross-platform technologies such as Node.js and Python, these capabilities bring benefits, and also some challenges.
+With Azure Pipelines, you can run your builds on macOS, Linux, and Windows machines. If you develop on cross-platform technologies such as .NET Core, Node.js and Python, these capabilities bring both benefits and challenges.
+
 For example, most pipelines include one or more scripts that you want to run during the build process.
 But scripts often don't run the same way on different platforms.
 Below are some tips on how to handle this kind of challenge.
 
 ## Run cross-platform tools with a script step
 
-Some scripts just pass arguments to a cross-platform tool. For instance, calling
+The script keyword is a shortcut for the [command line task](../tasks/utility/command-line.md). The `script` keyword runs Bash on Linux and macOS and cmd.exe on Windows.
+
+Using `script` can be useful when your task just passes arguments to a cross-platform tool. For instance, calling
 `npm` with a set of arguments can be easily accomplished with a `script` step.
-`script` runs in each platform's native script interpreter: Bash on macOS and Linux, CMD on Windows.
+`script` runs in each platform's native script interpreter: Bash on macOS and Linux, cmd.exe on Windows.
 
 #### [YAML](#tab/yaml/)
 ```yaml
@@ -54,7 +51,7 @@ Command line, PowerShell, and Bash each have different ways of reading environme
 If you need to access an operating system-provided value like PATH, you'll need different techniques per platform.
 
 However, Azure Pipelines offers a cross-platform way to refer to variables that
-it knows about. By surrounding a variable name in `$( )`, it will be expanded
+it knows about called [macro syntax](../process/variables.md#understand-variable-syntax). By surrounding a variable name in `$( )`, it will be expanded
 before the platform's shell ever sees it. For instance, if you want to echo out
 the ID of the pipeline, the following script is cross-platform friendly:
 
@@ -86,8 +83,8 @@ steps:
 ## Consider Bash or pwsh
 
 If you have more complex scripting needs than the examples shown above, then consider writing them in Bash.
-Most macOS and Linux agents have Bash as an available shell, and Windows agents include Git Bash or [Windows Subsystem for Linux](https://docs.microsoft.com/windows/wsl/about) Bash.
-::: moniker range="azure-devops"
+Most macOS and Linux agents have Bash as an available shell, and Windows agents include Git Bash or [Windows Subsystem for Linux](/windows/wsl/about) Bash.
+::: moniker range=">=azure-devops-2020"
 For Azure Pipelines, the Microsoft-hosted agents always have Bash available.
 ::: moniker-end
 
@@ -133,7 +130,7 @@ It requires each agent to have PowerShell Core installed.
 
 ## Switch based on platform
 
-In general we recommend that you avoid platform-specific scripts to avoid problems such as duplication of your pipeline logic. Duplication causes extra work and extra risk of bugs.
+In general, we recommend that you avoid platform-specific scripts to avoid problems such as duplication of your pipeline logic. Duplication causes extra work and extra risk of bugs.
 However, if there's no way to avoid platform-specific scripting, then you can use a `condition` to detect what platform you're on. 
 
 For example, suppose that for some reason you need the IP address of the build
@@ -155,7 +152,7 @@ steps:
   displayName: Get IP on Linux
 # macOS
 - bash: |
-    export IPADDR=$(ifconfig | grep 'en0' -A3 | tail -n1 | awk '{print $2}')
+    export IPADDR=$(ifconfig | grep 'en0' -A3 | grep inet | tail -n1 | awk '{print $2}')
     echo "##vso[task.setvariable variable=IP_ADDR]$IPADDR"
   condition: eq( variables['Agent.OS'], 'Darwin' )
   displayName: Get IP on macOS
@@ -186,7 +183,7 @@ First, add a Linux script.
 
 4. Change the value of **Run this task** to "Custom conditions".
 
-5. In the **Custom condition** field which appears, enter "eq( variables['Agent.OS'], 'Linux' )".
+5. In the **Custom condition** field that appears, enter "eq( variables['Agent.OS'], 'Linux' )".
 
 Next, add a macOS script.
 
@@ -212,9 +209,9 @@ Next, add a Windows script.
 
 4. Change the value of **Run this task** to "Custom conditions".
 
-5. In the **Custom condition** field which appears, enter "eq( variables['Agent.OS'], 'Windows_NT' )".
+5. In the **Custom condition** field that appears, enter "eq( variables['Agent.OS'], 'Windows_NT' )".
 
-Finally, add a task which uses the value, no matter how we got it.
+Finally, add a task that uses the value, no matter how we got it.
 
 1. Add a **Command line** task to your pipeline.
 

@@ -3,11 +3,7 @@ title: Shelve Command
 titleSuffix: Azure Repos
 description: Shelve Command
 ms.assetid: f6b9e3c8-9a5a-4ebb-9823-d3a430ca08de
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Shelve Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Stores a set of pending changes, together with pending check-in notes, a comment, and a list of associated work items on the server that is running Visual Studio Team Foundation Server without actually checking them into the version control server.
 
@@ -24,12 +20,18 @@ Stores a set of pending changes, together with pending check-in notes, a comment
 
 If you want to use the **shelve** command to delete a shelveset, you must be a shelveset owner, or your **Administer shelved changes** permission must be set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf shelve  [/replace] [/comment:("comment"|@commentfile)] [shelvesetname] [/validate][/noprompt] [/login:username,[password]]
+```
+tf shelve  [/replace] [/comment:("comment"|@commentfile)] [shelvesetname] [/validate][/noprompt] [/login:username,[password]]
+```
 
-    tf shelve [/move] [/replace] [/comment:("comment"|@commentfile)] 
-    [/recursive] [shelvesetname] itemspec [/validate] [/noprompt] [/login:username,[password]]
+```
+tf shelve [/move] [/replace] [/comment:("comment"|@commentfile)] 
+[/recursive] [shelvesetname] itemspec [/validate] [/noprompt] [/login:username,[password]]
+```
 
-    tf shelve /delete shelvesetname[;owner] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
+```
+tf shelve /delete shelvesetname[;owner] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
+```
 
 ## Parameters
 
@@ -37,11 +39,11 @@ If you want to use the **shelve** command to delete a shelveset, you must be a s
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |       *commentfile*        |                                                                                                                      Specifies a file system path of a file from which comments for the shelveset should be read.                                                                                                                       |
 |         *comment*          |                                                                                                                                                Specifies the comment for the shelveset.                                                                                                                                                 |
-|         *itemspec*         | Identifies the files or folders to shelve. By default, all pending changes in the current workspace are shelved if this parameter is not specified. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](https://msdn.microsoft.com/library/4y2ash30). |
+|         *itemspec*         | Identifies the files or folders to shelve. By default, all pending changes in the current workspace are shelved if this parameter is not specified. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100). |
 |      *shelvesetname*       |                               Specifies a name by which the shelveset can be retrieved from the Team Foundation server. You can specify an existing combination of *shelvesetname \*and \*owner \*but only if \*\*/replace*\* is also specified.<br /><br />You must provide a value for this parameter.                                |
 |          *owner*           |                                                                                  Identifies the current or intended owner of the shelveset by user name. By default, the current user is assigned ownership of the shelveset if one is not specified.                                                                                   |
 |         *username*         |                                                                                                        Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                                                                                        |
-| *TeamProjectCollectionUrl* |                                                                                       The URL of the project collection that contains the files or folders that you want to shelve (for example, <http://myserver:8080/tfs/DefaultCollection/>).                                                                                        |
+| *TeamProjectCollectionUrl* |                                                                                       The URL of the project collection that contains the files or folders that you want to shelve (for example, `http://myserver:8080/tfs/DefaultCollection/`).                                                                                        |
 
 | **Option** | **Description** |
 |---|---|
@@ -51,7 +53,7 @@ If you want to use the **shelve** command to delete a shelveset, you must be a s
 | **/comment** | Adds a specified comment describing the shelved changes. |
 | **/recursive** | Shelves all items in the specified shelveset folder, its subfolders and all items therein if the itemspec you provide is a folder. |
 | **/noprompt** | Suppresses any prompts for input from you. |
-| **/validate** | Only valid when not combined with **/noprompt**.<br /><br />This option selects the validation check box in the **Shelve - Source Files **dialog box when it opens. When the validation check box is selected, the dialog box will evaluate the check-in policies and verify that require check-in notes have been filled in. This option is useful when the changes are being handed off for review and check-in by someone else. |
+| **/validate** | Only valid when not combined with **/noprompt**.<br /><br />This option selects the validation check box in the **Shelve - Source Files** dialog box when it opens. When the validation check box is selected, the dialog box will evaluate the check-in policies and verify that require check-in notes have been filled in. This option is useful when the changes are being handed off for review and check-in by someone else. |
 | **/login** | Specifies the user name and password to authenticate the user with Team Foundation Server. |
 | **/collection** | Specifies the project collection. |
 
@@ -76,35 +78,43 @@ If you include the **/move** option, the **shelve** command rolls back all shelv
 
 If you include the **/delete** option, Team Foundation permanently removes the specified shelveset from the Team Foundation server.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ## Examples
 
 The following example creates a new shelveset on the Team Foundation Server called Reflector\_BuddyTest, assigns ownership to the user Hans, then returns all items in the current workspace to the latest version downloaded during the last **get** operation, and a sets a read-only state.
 
-    c:\projects> tf shelve Reflector_BuddyTest;Hans /move
+```
+c:\projects> tf shelve Reflector_BuddyTest;Hans /move
+```
 
 The following example deletes the existing shelveset, "new-feature" from the server, creates a new shelveset by that name, and retains all pending changes in the current workspace.
 
-    c:\projects> tf shelve new-feature /replace
+```
+c:\projects> tf shelve new-feature /replace
+```
 
 The following example creates a shelveset named HelloWorld\_TestMe that includes all pending changes to all .cs files in the C:\\projects working folder and its subfolders.
 
-    c:\projects> tf shelve HelloWorld_TestMe c:\projects\*.cs /recursive
+```
+c:\projects> tf shelve HelloWorld_TestMe c:\projects\*.cs /recursive
+```
 
 The following example deletes the HelloWorld\_24 shelveset.
 
-    c:\projects> tf shelve HelloWorld_24 /delete
+```
+c:\projects> tf shelve HelloWorld_24 /delete
+```
 
 ## See Also
 
 #### Tasks
 
-[Shelve and Unshelve Pending Changes](https://msdn.microsoft.com/library/ms181404)
+[Shelve and Unshelve Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181404(v=vs.100))
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Checkin Command](checkin-command.md)
 
@@ -116,8 +126,8 @@ The following example deletes the HelloWorld\_24 shelveset.
 
 [Working with Shelvesets](suspend-your-work-manage-your-shelvesets.md)
 
-[Pending Changes](https://msdn.microsoft.com/library/ms181409)
+[Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181409(v=vs.100))
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

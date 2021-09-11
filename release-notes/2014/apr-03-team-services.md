@@ -1,7 +1,6 @@
 ---
 title: Visual Studio Online General Availability
 description: VSTS release notes for April 3 2014
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: bfe41b66-a230-42f6-b0f0-07f2b164496c
@@ -32,7 +31,7 @@ Part of our GA announcement is the addition of a financially-backed SLA for our 
 -We guarantee at least 99.9% availability to execute build operations using the paid **Visual Studio Online Build Service**.
 -We guarantee at least 99.9% availability to execute load testing operations using the paid **Visual Studio Load Testing Service**.
 
-All availability is calculated over a monthly billing cycle. For more details, please visit: [http://www.windowsazure.com/support/legal/sla/](http://www.windowsazure.com/support/legal/sla/).
+All availability is calculated over a monthly billing cycle. For more details, please visit: [https://www.windowsazure.com/support/legal/sla/](https://www.windowsazure.com/support/legal/sla/).
 
 ### Data Export Window
 
@@ -40,46 +39,20 @@ Many of our users started out with VS Online before we’d painted much of a pic
 
 ## Application Insights Limited Preview
 
-Application Insights, first [announced](https://visualstudio.microsoft.com/articles/news/2013/nov-13-team-services) back in November of 2013, is moving to “Limited Preview” and an invitation code is no longer required to try it out. With this change you can login to Visual Studio Online and start using Application Insights by selecting “Try Application Insights” tile.
+Application Insights, first [announced](../2013/nov-13-team-services.md#announcing-application-insights-limited-preview) back in November of 2013, is moving to “Limited Preview” and an invitation code is no longer required to try it out. With this change you can login to Visual Studio Online and start using Application Insights by selecting “Try Application Insights” tile.
 
-![Visual Studio Online: Try Application Insights](_img/4_3_01.png)
+![Visual Studio Online: Try Application Insights](media/4_3_01.png)
 
 ## Shared Parameters for Test Cases
 
 Finally, we’ve turned on a new feature today that gives you the ability to re-use Test Case parameters. If you’re like me, you often want to run a test case multiple times, each time with different sets of test data. You can do this by adding parameter names to test steps and specifying parameter values in the test case. But, if you use the same parameter values in multiple test cases, you have to manage all such test cases individually, one at a time. Argh. This can lead to a lot of overhead and turn into a maintenance nightmare. With today’s deployment, you can use “Shared Parameters” to consolidate similar parameter data in a single location and reference it across multiple Test Cases. Moreover, when you update shared parameters, it’s reflected in all referenced Test Cases automatically. To get started, convert your existing local parameters in test cases to shared parameters or create new ones by navigating to the Parameters tab in Test hub.
 
-![convert your existing local parameters to shared parameters](_img/4_3_02.png)
+![convert your existing local parameters to shared parameters](media/4_3_02.png)
 
-![Creating new shared parameters](_img/4_3_03.png)
+![Creating new shared parameters](media/4_3_03.png)
 
 That’s all the news for today. Thank you to each and every one of you that has given us feedback on the service and helped us reach today’s important milestone!
 
 Thanks,
 
 Brian Harry
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

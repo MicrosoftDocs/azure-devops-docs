@@ -3,18 +3,17 @@ title: Resolve data warehouses schema conflicts
 titleSuffix: TFS
 description: Resolve schema conflicts that are occurring in the data warehouse when connecting to Team Foundation Server    
 ms.assetid: BB517672-2A9A-4A5B-8F27-E4409F199C02  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-monikerRange: "<= azure-devops-2019" 
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '< azure-devops' 
 ms.date: 11/19/2018
 ---
 
 # Resolve data warehouse schema conflicts
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)] 
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)] 
 
 Schema conflicts occur when a set of attributes for reportable fields differs across team project collections. When a schema conflict occurs, fields that are not in conflict are processed as usual but fields that are in conflict are assigned null values until you resolve the conflicts and then process as usual. In addition, the system generates a notification event for each conflict that it detects. By subscribing to the event, you can receive alerts when schema conflicts occur for any team projects that are defined for a collection. You must correct all schema conflicts to unblock the processing of the associated data for the warehouse and to enable the associated reports to display current data. 
 
@@ -103,7 +102,7 @@ You can review the event log on the application-tier server to obtain more infor
     ```
 	witadmin listfields /collection:CollectionURL /n:RefName   ```
 
-	For more information, see [Manage work item fields](https://msdn.microsoft.com/library/dd236909.aspx).
+	For more information, see [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md?viewFallbackFrom=vsts).
 
 2. Determine in which of the following ways you want to resolve the conflict:
 
@@ -139,13 +138,13 @@ You can verify that the schema conflicts have been resolved by [manually process
 
 2. Process the cube on demand by using the **ProcessAnalysisDatabase** operation of the **WarehouseControlService**.
 
-3. Open a dashboard or Report Manager, and verify that the reports are being updated. For more information, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md) or [Reports (SQL Server Reporting Services)](../sql-reports/reporting-services-reports.md).
+3. Open a dashboard or Report Manager, and verify that the reports are being updated. For more information, see [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards) or [Reports (SQL Server Reporting Services)](../sql-reports/reporting-services-reports.md).
 
 	If error messages continue to appear, you can obtain more information about the data conflict and the affected blocked adapters by running the **GetProcessingStatus** operation of the **WarehouseControlService**. 
 
 ## Related content
 
-- [Manage work item fields using **witadmin**](https://msdn.microsoft.com/library/dd236909.aspx)  
+- [Manage work item fields using **witadmin**](../../reference/witadmin/manage-work-item-fields.md?viewFallbackFrom=vsts)  
 - [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md)  
-- [Dashboards and reports](../overview.md)  
-- [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md)  
+- [Dashboards and reports](../dashboards/overview.md)  
+- [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md)

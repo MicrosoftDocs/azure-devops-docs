@@ -2,28 +2,27 @@
 title: Define the classification plug-in 
 titleSuffix: Azure DevOps & TFS
 description: Define areas to organize work items into logical, physical, or functional categories-Team Foundation Server
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 7c1284c6-9c03-41e9-94c1-923db90957be
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
 ms.topic: reference
+monikerRange: '< azure-devops' 
 ms.date: 09/08/2017
 ---
 
 
 # Define the classification plug-in
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 Classifications facilitate tracking, grouping, and reporting on work based on useful categories, such as related product features and project milestones. You define areas to organize work items into logical, physical, or functional categories. You define iterations to group work items into milestones or time cycle categories. For example, a team could organize the product work into a client area, a server area, and an extensibility area. Iterations that you define determine how many times the team will repeat a particular set of major activities, such as plan, develop, and test.  
 
 The classifications that you define appear on the **Areas** and **Iterations** pages, as the following illustration shows and described in [Set project-level area paths](../../organizations/settings/set-area-paths.md) and [Set project-level iteration paths](../../organizations/settings/set-iteration-paths-sprints.md). You access this page from the administration web portal.  
 
-[!INCLUDE [temp](../../_shared/image-differences.md)]
+[!INCLUDE [temp](../../includes/image-differences.md)]
 
-<img src="../_img/mareas-work-areas-admin-page.png" alt="Areas, defaults defined for project" style="border: 1px solid #C3C3C3;" /> 
+<img src="../media/mareas-work-areas-admin-page.png" alt="Areas, defaults defined for project" /> 
 
 For an overview of using the web portal, see [Web portal navigation](../../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json).  
 
@@ -145,7 +144,7 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
 > </properties>  
 > ```  
 
- To customize the FileMapping.xml file, see [Map Microsoft Project fields](../xml/map-microsoft-project-fields-to-tf-fields.md).  
+ To customize the FileMapping.xml file, see [Map Microsoft Project fields](/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields).  
 
 ##  <a name="elements"></a> Classification plug-in element reference  
  You specify the following  elements within a `taskXml` container element in the Classification plug-in file. , See [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md) for information about `taskXml`.  

@@ -3,11 +3,7 @@ title: Configure Command
 titleSuffix: Azure Repos
 description: Configure Command
 ms.assetid: c61c2a48-20d4-4452-b6e1-6c1aa3b521ee
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Configure Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Enables an administrator to view and change the following configuration settings for a project in the **Source Control Settings** dialog box:
 
@@ -30,7 +26,9 @@ Enables an administrator to view and change the following configuration settings
 
 To use the **configure** command, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf configure [PathOfTeamProject] [/collection:TeamProjectCollectionUrl][/login:username,[password]]
+```
+tf configure [PathOfTeamProject] [/collection:TeamProjectCollectionUrl][/login:username,[password]]
+```
 
 ## Parameters
 
@@ -57,21 +55,25 @@ You can manage the following project settings using the **configure** command:
 
 The settings are configured in the **Source Control Settings** dialog box which appears after you run the **configure** command. When you complete your changes, click **OK** to save them to the server.
 
-For more information about these settings, see [Walkthrough: Customizing Checkin Policies and Notes](https://msdn.microsoft.com/library/ms181281).
+For more information about these settings, see [Walkthrough: Customizing Checkin Policies and Notes](/previous-versions/ms181281(v=vs.100)).
 
-For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all the workspaces that map to it, see [Informational Commands](https://msdn.microsoft.com/library/ms181450).
+For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ## Examples
 
 The following example displays the **Source** **Control** **Settings** dialog box in which you can examine and modify the project settings of the workspace for the c:\\projects folder.
 
-    c:\projects>tf configure
+```
+c:\projects>tf configure
+```
 
-The following example displays the myproj project settings in the project collection at http://myserver:8080/tfs/DefaultCollection.
+The following example displays the myproj project settings in the project collection at `http://myserver:8080/tfs/DefaultCollection`.
 
-    c:\projects>tf configure $/myproj / http://myserver:8080/tfs/DefaultCollection 
+```
+c:\projects>tf configure $/myproj / http://myserver:8080/tfs/DefaultCollection 
+```
 
 ## See Also
 
@@ -85,4 +87,4 @@ The following example displays the myproj project settings in the project collec
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

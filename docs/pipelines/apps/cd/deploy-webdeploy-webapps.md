@@ -1,15 +1,12 @@
 ---
 title: Deploy a web app to App Services
-description: Set up CD of an ASP.NET or Node.js web deploy package to Azure App Services in Azure Pipelines and TFS
+description: Set up CD of an ASP.NET or Node.js web deploy package to Azure App Services with Azure Pipelines
 ms.assetid: 449254BF-EAC1-466E-B10C-85C2DE086F30
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 09/07/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,7 +15,7 @@ monikerRange: '>= tfs-2015'
 **Azure Pipelines | TFS 2018 | TFS 2017.2**
 
 We'll show you how to set up continuous deployment of your ASP.NET or Node.js app to an Azure Web App using
-Azure Pipelines or Team Foundation Server (TFS). You can use the steps in this quickstart
+Azure Pipelines. You can use the steps in this quickstart
 as long as your continuous integration pipeline publishes a Web Deploy package.
 
 ## Prerequisites
@@ -33,7 +30,7 @@ Before you begin, you'll need a CI build that publishes your Web Deploy package.
 
 You'll also need an Azure Web App where you will deploy the app.
 
-[!INCLUDE [create-release](../_shared/create-release.md)]
+[!INCLUDE [create-release](../includes/create-release.md)]
 
 ## Next step
 

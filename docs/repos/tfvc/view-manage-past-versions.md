@@ -3,11 +3,7 @@ title: View and manage past versions
 titleSuffix: Azure Repos
 description: View and manage past versions
 ms.assetid: 752b4a6f-4212-4117-a994-03856d0c8ea9
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # View and manage past versions
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 One advantage of building your app under version control is that you can look back in time to get detailed information about what changes have been made to your files. Team Foundation Version Control (TFVC) maintains historical data related to every version of every file that has ever been checked in.
 

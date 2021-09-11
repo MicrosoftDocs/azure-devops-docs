@@ -1,37 +1,50 @@
 ---
 title: Change the maximum attachment size for work items
-titleSuffix: TFS
-description: Use the TFS web service to increase the size of files you attach for Team Foundation Server 
-ms.prod: devops
+titleSuffix: Azure DevOps Server
+description: Use the web service to increase the size of files you attach for Team Foundation Server 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: a37734d7-8db0-44e5-9e4a-31ddf9261e9e
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
 ms.topic: conceptual
-monikerRange: '<= azure-devops'
-ms.date: 05/10/2017  
+monikerRange: '< azure-devops'
+ms.date: 11/18/2020  
 ---
 
 # Change the maximum attachment size for work items
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
 
-By default, Azure DevOps and Team Foundation Server (TFS) limit the size of work item attachments to 4 MB. For on-premises deployments, you can use the web service to increase the size of files you attach to up to 2GB. 
+ 
+::: moniker range="> tfs-2017"
+
+By default, Azure DevOps Server limits the size of work item attachments to 60 MB. You can use the web service to increase the size of files you attach to up to 2GB. 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
+
+By default, Team Foundation Server limits the size of work item attachments to 4 MB. You can use the web service to increase the size of files you attach to up to 2GB. 
+
+::: moniker-end
   
-1.  If you're not a member of the TFS **Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md).    
+1.  If you're not a member of the **Team Foundation Administrators** group, [get added as one](/azure/devops/server/admin/add-administrator?view=azure-devops-2020&preserve-view=true).    
   
-2.  Log on to the application-tier server for TFS.  
+2.  Log on to the application-tier server for Azure DevOps Server.  
   
 3.  In a supported web browser, open the following URL:  
-  
-     `http://localhost:8080/tfs/DefaultCollection/WorkItemTracking/v1.0/ConfigurationSettingsService.asmx?op=SetMaxAttachmentSize`  
-  
-     If the project resides on a different project collection, specify the name of the collection in place of *DefaultCollection*.  
-  
+	::: moniker range=">= azure-devops-2019"
+     `http://localhost:8080/DefaultCollection/WorkItemTracking/v1.0/ConfigurationSettingsService.asmx?`
+	::: moniker-end
+	::: moniker range="< azure-devops-2019"
+	`http://localhost:8080/tfs/DefaultCollection/WorkItemTracking/v1.0/ConfigurationSettingsService.asmx?op=SetMaxAttachmentSize`  
+	::: moniker-end
+	If the project resides on a different project collection, specify the name of the collection in place of *DefaultCollection*.  
+
 4.  Enter the size in bytes, and then choose **Invoke**.  
   
-     ![SetMaxAttachmentSize, ConfigurationSettingsService](_img/alm_wit_attachsize.png "ALM_WIT_AttachSize")  
+     ![SetMaxAttachmentSize, ConfigurationSettingsService](media/alm_wit_attachsize.png "ALM_WIT_AttachSize")  
   
      The maximum size you can specify is 2 gigabytes (or `2000000000`).  
 

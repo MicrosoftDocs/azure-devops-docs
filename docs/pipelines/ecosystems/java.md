@@ -1,21 +1,16 @@
 ---
 title: Build Java apps
-description: Automatically building Java apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.prod: devops
-ms.technology: devops-cicd
+description: Automatically building Java apps with Azure Pipelines, and Azure DevOps
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
-ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
 ms.reviewer: dastahel
 ms.topic: quickstart
-ms.date: 08/30/2019
+ms.date: 08/16/2021
 monikerRange: '>= tfs-2017'
 ---
 
 # Build Java apps
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 > [!NOTE]
@@ -23,11 +18,17 @@ monikerRange: '>= tfs-2017'
 > This guidance uses YAML-based pipelines available in Azure Pipelines. For TFS, use tasks that correspond to those used in the YAML below.
 ::: moniker-end
 
-This guidance explains how to automatically build Java projects. (If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).)
+Use a pipeline to automatically build and test your Java projects. Learn how to:
+
+* Create your first Java pipeline.
+* Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
+* Build and test your code with Maven, Gradle, or Ant.
+
+Once you build and test your app, you can deploy to [Azure App Service](java-webapp.md), [Azure Functions](java-function.md), or [Azure Kubernetes Service](kubernetes/aks-template.md). If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).
 
 ## Create your first pipeline
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 > Are you new to Azure Pipelines? If so, then we recommend you try this section to create before moving on to other sections.
 
@@ -35,9 +36,9 @@ This guidance explains how to automatically build Java projects. (If you're work
 
 ### Get the code
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
 ::: moniker-end
 
@@ -57,28 +58,28 @@ Import this repo into your Git repo in TFS:
 https://github.com/MicrosoftDocs/pipelines-java
 ```
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ### Sign in to Azure Pipelines
 
-[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](_shared/create-project.md)]
+[!INCLUDE [include](includes/create-project.md)]
 
 ::: moniker-end
 
 ### Create the pipeline
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
-[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
 > When the **Configure** tab appears, select **Maven**.
 
 1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
+   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
 2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
@@ -110,20 +111,20 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 ## Build environment
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
-You can use Azure Pipelines to build Java apps without needing to set up any infrastructure of your own. You can build on Windows, Linux, or MacOS images. The Microsoft-hosted agents in Azure Pipelines have modern JDKs and other tools for Java pre-installed. To know which versions of Java are installed, see [Microsoft-hosted agents](../agents/hosted.md).
+You can use Azure Pipelines to build Java apps without needing to set up any infrastructure of your own. You can build on Windows, Linux, or macOS images. The Microsoft-hosted agents in Azure Pipelines have modern JDKs and other tools for Java pre-installed. To know which versions of Java are installed, see [Microsoft-hosted agents](../agents/hosted.md).
 
 Update the following snippet in your `azure-pipelines.yml` file to select the appropriate image.
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
+  vmImage: 'ubuntu-latest' # other options: 'macOS-latest', 'windows-latest'
 ```
 
 See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.
 
-As an alternative to using Microsoft-hosted agents, you can set up [self-hosted agents](../agents/agents.md#install) with Java installed. You can also use self-hosted agents to save additional time if you have a large repository or you run incremental builds.
+As an alternative to using Microsoft-hosted agents, you can set up [self-hosted agents](../agents/agents.md#install) with Java installed. You can also use self-hosted agents to save more time if you have a large repository or you run incremental builds.
 
 ::: moniker-end
 
@@ -154,6 +155,8 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
 ```
+
+For [Spring Boot](https://spring.io/projects/spring-boot), you can use the [Maven](../tasks/build/maven.md) task as well. Make sure that your `mavenPomFile` value reflects the path to your `pom.xml` file. For example, if you are using the [Spring Boot sample repository](https://github.com/spring-guides/gs-spring-boot), your path will be `complete/pom.xml`. 
 
 #### Customize the build path
 
@@ -247,12 +250,12 @@ steps:
 
 ## Next Steps
 
-After you've built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a Maven package, 
+After you've built and tested your app, you can upload the build output to Azure Pipelines, create and publish a Maven package, 
 or package the build output into a .war/jar file to be deployed to a web application.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Next we recommend that you learn more about creating a CI/CD pipeline for the deployment target you choose:
 

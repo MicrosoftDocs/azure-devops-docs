@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
-title: Auth and Security | Extensions for Azure DevOps Services
-description: Auth and security for Azure DevOps Services Extensions
+title: Auth and Security | Extensions for Azure DevOps 
+description: Learn about authentication and security for Azure DevOps extensions.
 ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
 ms.topic: conceptual
-ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -14,12 +12,16 @@ ms.date: 08/29/2016
 
 # Auth and security
 
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+
 > [!NOTE]
 > This page pertains only to _web extensions_, and not Pipelines task extensions or service endpoint extensions. For those tasks, you can use the [Publish to Azure Service Bus Task](../../pipelines/tasks/utility/publish-to-azure-service-bus.md).
 
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+
 ## Calling REST APIs from your extension
 
-Most extensions have a need to call Azure DevOps Services REST APIs on behalf of the current user. 
+Most extensions have a need to call Azure DevOps REST APIs on behalf of the current user. 
 * If you are using the provided `JavaScript REST clients`, authentication is automatically handled for you. These clients automatically request an access token from the core SDK and set it in the Authorization header of the request.
 * If you are not using the provided clients, you need to request a token from the `Core SDK` and set it in the Authorization header of your request:
 
@@ -37,7 +39,7 @@ Most extensions have a need to call Azure DevOps Services REST APIs on behalf of
 
 ## Authenticating requests to your service
 
-A common scenario is to make calls to a back-end service from an extension. To verify these calls are coming from your extension running in Azure DevOps Services and to verify the authenticity of the current user (and other context information), a special type of token is made available to your extension. This token contains information about who is making the call and also a signature that you can validate to know that the request came from your extension. 
+A common scenario is to make calls to a back-end service from an extension. To verify these calls are coming from your extension running in Azure DevOps and to verify the authenticity of the current user (and other context information), a special type of token is made available to your extension. This token contains information about who is making the call and also a signature that you can validate to know that the request came from your extension. 
 
 ### Get your extension's key
 
@@ -45,7 +47,7 @@ Your extension's unique key (which is generated when the extension is published)
 
 To get this key, right-click a [published extension](../publish/overview.md) and select **Certificate**.
 
-![key](./_img/get-extension-key.png)
+![key](./media/get-extension-key.png)
 
 > [!WARNING]
 > Scope changes in an extension cause the certificate to change. If you make changes to the scope, you need a new extension key.
@@ -157,6 +159,7 @@ namespace TokenSample.Core.API
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseAuthentication();
+            app.UseAuthorization();
             app.UseMvc();
             app.UseStaticFiles();
         }

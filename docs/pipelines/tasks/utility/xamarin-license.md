@@ -2,10 +2,7 @@
 title: Xamarin License task
 description: Activate or deactivate a Xamarin license when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 07F571D7-DB66-4B8E-8CB1-F37B6D56EBD7
-ms.manager: jillfra
 ms.custom: seodec18
 ms.author: dastahel
 author: davidstaheli
@@ -15,13 +12,14 @@ monikerRange: '>= tfs-2015'
 
 # Xamarin License task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 This task was used in a build or release pipeline to activate or deactivate Xamarin licenses.
 
 ## Deprecated
 
-> **NOTE:** This task is deprecated because you no longer need a Xamarin license to [build your Xamarin app](../../apps/mobile/xamarin.md).
+> [!NOTE]
+> This task is deprecated because you no longer need a Xamarin license to [build your Xamarin app](../../ecosystems/xamarin.md).
 > Use the free version of Xamarin from [https://store.xamarin.com](https://store.xamarin.com).
 
 ## Demands
@@ -38,24 +36,24 @@ None
 | Password | Xamarin account password.<br /><br />Use a [secret variable](../../build/variables.md) to avoid exposing this value. |
 | Xamarin Product | Select the build task that you're running in this build pipeline, such as **Xamarin.Android** or **Xamarin.iOS**. |
 | Advanced - Timeout in Seconds | Specify how long you want to allow the build task to wait for the activation or deactivation. |
-| [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] |
+| [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] |
 
 ## Example
 
-[Build your Xamarin app](../../apps/mobile/xamarin.md)
+[Build your Xamarin app](../../ecosystems/xamarin.md)
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

@@ -1,13 +1,9 @@
----
-title: Check in to a folder that is controlled by a gated check-in build process
+﻿---
+title: Check in to a folder controlled by gated build process
 titleSuffix: Azure Repos
 description: Check in to a folder that is controlled by a gated check-in build process
 ms.assetid: 28fabf92-d3e0-43bb-96b5-7e5c10baa336
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,14 +12,14 @@ monikerRange: '>= tfs-2015'
 
 # Check in to a folder that is controlled by a gated check-in build process
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 When you check in files to a version control folder that is controlled by a [gated check-in build process](../../pipelines/build/triggers.md), there are some additional steps that you must take to complete the check-in.
 
-![Build process](_img/check-folder-controlled-by-gated-check-build-process/IC572351.png)
+![Build process](media/check-folder-controlled-by-gated-check-build-process/IC572351.png)
 **Required permissions**
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](https://msdn.microsoft.com/library/ms253077).
+You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
 
 <a name="begin_checkin"></a>
 
@@ -43,7 +39,7 @@ If the **Gated Check-in** dialog box appears during your check-in, then your cha
 
     -   **Cancel the check-in operation and continue working**: If you do not want to try building your changes yet, choose **Cancel**, and then when the system asks you if you want to delete the shelveset, choose **Yes**.
 
-    -   **Cancel the check-in operation and start a private build of your changes**: If you want to build the code yourself in a private build, choose **Cancel**. You can now build the shelveset manually. For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
+    -   **Cancel the check-in operation and start a private build of your changes**: If you want to build the code yourself in a private build, choose **Cancel**. You can now build the shelveset manually. For more information, see [Get started with CI/CD](../../pipelines/create-first-pipeline.md).
 
     -   **Proceed with the check-in operation while keeping your changes in your workspace**: To proceed with the check-in operation and continue working with your changes, see [Proceed with the Gated Check-in after Keeping the Changes in Your Workspace](check-folder-controlled-by-gated-check-build-process.md#proceed_and_keep_changes).
 
@@ -63,7 +59,7 @@ The gated check-in process provides a way to proceed with the check-in and conti
 
 2.  In the **Gated Check-in** dialog box, choose **Build Changes**.
 
-    In **Team Explorer**, when the information message appears in the **Pending Changes** page, monitor the build by choosing the **here** link to display the build results window. You can also choose ![Build process](_img/check-folder-controlled-by-gated-check-build-process/IC547418.png) **Home**, and then choose ![Build process](_img/check-folder-controlled-by-gated-check-build-process/IC588244.png) **Builds** to monitor the build on the **Builds** page.
+    In **Team Explorer**, when the information message appears in the **Pending Changes** page, monitor the build by choosing the **here** link to display the build results window. You can also choose ![Build process then Home.](media/check-folder-controlled-by-gated-check-build-process/IC547418.png) **Home**, and then choose ![Build process then Builds.](media/check-folder-controlled-by-gated-check-build-process/IC588244.png) **Builds** to monitor the build on the **Builds** page.
 
 3.  After the build is completed:
 
@@ -87,7 +83,7 @@ If you want to proceed with the gated check-in operation and you do not plan to 
 
     -   Choose **Build Changes**.
 
-3.  In **Team Explorer**, when the information message appears in the **Pending Changes** page, monitor the build by choosing the **here** link to display the build results window. You can also choose ![Build process](_img/check-folder-controlled-by-gated-check-build-process/IC547418.png) **Home**, and then choose ![Build process](_img/check-folder-controlled-by-gated-check-build-process/IC588244.png) **Builds** to monitor the build on the **Builds** page.
+3.  In **Team Explorer**, when the information message appears in the **Pending Changes** page, monitor the build by choosing the **here** link to display the build results window. You can also choose ![Gated check Build process then Home.](media/check-folder-controlled-by-gated-check-build-process/IC547418.png) **Home**, and then choose ![Gated check Build process then Builds.](media/check-folder-controlled-by-gated-check-build-process/IC588244.png) **Builds** to monitor the build on the **Builds** page.
 
 4.  After the build is completed:
 
@@ -109,6 +105,6 @@ If you want to proceed with the gated check-in operation and you do not plan to 
 
  [Use a gated check-in build process to validate changes](../../pipelines/build/triggers.md) 
 
- [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411) 
+ [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)) 
 
- [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md) 
+ [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md)

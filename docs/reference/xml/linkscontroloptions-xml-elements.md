@@ -3,25 +3,23 @@ title: LinksControlOptions XML elements reference
 titleSuffix: Azure DevOps & TFS  
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
 ms.technology: devops-agile
-ms.prod: devops
+ms.custom: process
 ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2017 < azure-devops'
 ms.date: 06/25/2019
 ---
 
 # LinksControlOptions XML elements (Web form) 
 
-**Azure DevOps Services (Hosted XML) | TFS 2018 | TFS 2017 | [Previous versions](linkscontroloptions-elements.md)**
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
 
+By linking work items to other objects, you can track related work, dependencies, and changes made over time. With the updated [**Control** element](weblayout-xml-elements.md), you can specify a scoped links control within the work item form for the web portal by setting **type="LinksControl"**.   
 
 > [!IMPORTANT]  
-> This article applies to project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015)](linkscontroloptions-elements.md). <br/><br/>
+> This article applies to project customization for On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015)](linkscontroloptions-elements.md). <br/><br/>
 > Customizing the links control is not a supported feature For the Inheritance process model. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
-
-By linking work items to other objects, you can track related work, dependencies, and changes made over time. With the updated [**Control** element](weblayout-xml-elements.md), you can specify a scoped links control within the work item form for the web portal by setting **type="LinksControl"**.    
 
 The **LinksControlOptions** element is a child element of the **Control** element. With a scoped links control, you can specify filters that restrict the types of links that users can add and the types of work items to which users can create links. Specifically, you use the following child elements to scope the control:
 
@@ -31,11 +29,12 @@ The **LinksControlOptions** element is a child element of the **Control** elemen
 - **WorkItemTypeFilters**: Use to restrict the types of work items you can link to from the links control 
 - **Column**: Use to specify the work item fields and link type attributes listed within the links control
 
-<blockquote style="font-size: 13px"><b>Note: </b>The standard <img src="../../boards/_img/icons/icon-links-tab-wi.png" alt="Links page icon"/> <a href="../../boards/work-items/work-item-form-controls.md#link-wi" data-raw-source="[Links page](../../boards/work-items/work-item-form-controls.md#link-wi)">Links page</a> provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.<br/></blockquote>      
+> [!NOTE]   
+> The standard :::image type="icon" source="../../boards/media/icons/icon-links-tab-wi.png" border="false"::: [**Links** tab](../../boards/work-items/work-item-form-controls.md#link-wi) provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects. 
 
 ## Summary of what's changed
 
-The updated **LinksControlOptions** element introduces several new elements and deprecates several elements that are still in use with the [client **LinksControlOptions** element version](https://msdn.microsoft.com/library/aa337625.aspx). Overall, it's a much simpler syntax structure than its predecessor. 
+The updated **LinksControlOptions** element introduces several new elements and deprecates several elements that are still in use with the [client **LinksControlOptions** element version](./control-xml-element-reference.md?viewFallbackFrom=vsts). Overall, it's a much simpler syntax structure than its predecessor. 
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -85,7 +84,7 @@ When <code>ListViewOptions GroupLinks=&quot;true&quot;</code>, links are grouped
 <tr>
 <td>Composite display of link information</td>
 <td>For each listed item, the links control displays the Work Item Type, ID, Title, and Assigned To as a composite field called <em>Link</em> as shown:<br/>
-<img src="_img/linkscontrol-composite-field.png" alt="Composite field" style="border: 1px solid #C3C3C3;" /><br/><p>When the links control width is less than 460 pixels, the field also displays the item&#39;s State and the time of its Latest Update (the creation or latest modification of the item). See <a href="#dynamic-sizing" data-raw-source="[Responsive design and dynamic resizing](#dynamic-sizing)">Responsive design and dynamic resizing</a> for details.
+<img src="media/linkscontrol-composite-field.png" alt="Composite field" /><br/><p>When the links control width is less than 460 pixels, the field also displays the item&#39;s State and the time of its Latest Update (the creation or latest modification of the item). See <a href="#dynamic-sizing" data-raw-source="[Responsive design and dynamic resizing](#dynamic-sizing)">Responsive design and dynamic resizing</a> for details.
 </td>
 <td>Not supported</td>
 </tr>
@@ -101,13 +100,13 @@ When <code>ListViewOptions GroupLinks=&quot;true&quot;</code>, links are grouped
 
 ### Add links through a scoped links control 
 
-From the scoped links control, you can perform the same actions provided from the standard ![Links page icon](../../boards/_img/icons/icon-links-tab-wi.png) Links page&mdash;you simply do them from a menu rather than a tool bar.  
+From the scoped links control, you can perform the same actions provided from the standard ![Links page icon](../../boards/media/icons/icon-links-tab-wi.png) Links page&mdash;you simply do them from a menu rather than a tool bar.  
 
 - To open an associated item or object, click the linked item  
-- To delete a link, highlight it and click the ![delete icon](../../boards/_img/icons/delete_icon.png) delete icon   
+- To delete a link, highlight it and click the ![delete icon](../../boards/media/icons/delete_icon.png) delete icon   
 - To link to an existing item, or create and link a new work item, select one of the menu options.  
 
-<img src="_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #C3C3C3;" />  
+<img src="media/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" />  
 
 
 <a id="dynamic-sizing"></a>
@@ -125,7 +124,7 @@ You can specify whether the links display as a list, grid, or dynamically by set
 Core system processes&mdash;[Agile, Scrum, CMMI](../../boards/work-items/guidance/choose-process.md)&mdash;have been updated to include the Development and Related Work scoped links control. 
 
 
-<img src="_img/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #C3C3C3;" />  
+<img src="media/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" />  
 
 These controls appear on all default work item types, except the following:
 - Code Review Request/Code Review Response
@@ -260,8 +259,6 @@ The following table describes the **LinksControlOptions** element and its child 
 </tr>
 </thead>
 <tbody valign="top" >
-
-
 <tr>
 <td><p> <strong>Column</strong> </p></td>
 <td><p>Required <strong>Columns</strong> element used to specify the work item and link-related fields to display within the links control. </p>
@@ -284,7 +281,7 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p> <strong>ExternalLinkFilter</strong> </p></td>
 <td><p>Optional <strong>LinkFilters</strong> element used to specify an external link type. With an external link type, users can create a link relationship to objects that are not work items, such as changesets, hyperlinks, and files under version control. </p>
 <pre><code>&lt;ExternalLinkFilter Type=&quot;ExternalLinkName&quot; /&gt;</code></pre>
-<p>Examples of external link types you can specify include: <code>Fixed in Changeset</code>, <code>Fixed in Commit</code>, <code>Source Code File</code>, <code>Pull Request</code>, and <code>Hyperlink</code>. See <a href="../../boards/queries/link-type-reference.md#external-link-types" data-raw-source="[Link type reference](../../boards/queries/link-type-reference.md#external-link-types)">Link type reference</a>for a complete list. </p>
+<p>Examples of external link types you can specify include: <code>Fixed in Changeset</code>, <code>Fixed in Commit</code>, <code>Source Code File</code>, <code>Pull Request</code>, <code>Wiki page</code>, and <code>Hyperlink</code>. See <a href="../../boards/queries/link-type-reference.md#external-link-types" data-raw-source="[Link type reference](../../boards/queries/link-type-reference.md#external-link-types)">Link type reference</a> for a complete list. </p>
 <blockquote><b>Important: </b>For import purposes, use the name <code>Workitem Hyperlink</code> in place of <code>Hyperlink</code> and <code>Source Code File</code> in place of <code>Versioned item</code>. 
 </blockquote>
 
@@ -300,51 +297,39 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p>Required child element of the <strong>WorkItemTypeFilters</strong> container element. Specifies the name of a work item type to include as an allowed type that users can link to from the links control. </p>
 <pre><code>&lt;Filter WorkItemType=&quot;WorkItemTypeName&quot;  /&gt;</code></pre>
 <p>You can specify any work item type defined within the project or project collection, including custom work item types. Typically, the work item types you specify depend on the process used to create your project. See <a href="../../boards/work-items/guidance/choose-process.md" data-raw-source="[Choose a process](../../boards/work-items/guidance/choose-process.md)">Choose a process</a> for details.</p><br/><p>The following lists the default work item types available based on the default system processes:</p>
-<div style="float:left;width:120px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Agile</p>
-<ul style="list-style-type:none;padding-left:10px">
-<li style="margin-bottom:0px">Bug</li>
-<li style="margin-bottom:0px">Epic</li>
-<li style="margin-bottom:0px">Feature</li>
-<li style="margin-bottom:0px">Issue</li>
-<li style="margin-bottom:0px">Task</li>
-<li style="margin-bottom:0px">Test Case</li>
-<li style="margin-bottom:0px">User Story</li>
+<p>Agile</p>
+<ul>
+<li>Bug</li>
+<li>Epic</li>
+<li>Feature</li>
+<li>Issue</li>
+<li>Task</li>
+<li>Test Case</li>
+<li>User Story</li>
 </ul>
-</div>
-
-<div style="float:left;width:180px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Scrum</p>
-<ul style="list-style-type:none;padding-left:20px">
-<li style="margin-bottom:0px">Bug</li>
-<li style="margin-bottom:0px">Epic</li>
-<li style="margin-bottom:0px">Feature</li>
-<li style="margin-bottom:0px">Impediment</li>
-<li style="margin-bottom:0px">Product Backlog Item</li>
-<li style="margin-bottom:0px">Task</li>
-<li style="margin-bottom:0px">Test Case</li>
+<p>Scrum</p>
+<ul>
+<li>Bug</li>
+<li>Epic</li>
+<li>Feature</li>
+<li>Impediment</li>
+<li>Product Backlog Item</li>
+<li>Task</li>
+<li>Test Case</li>
 </ul>
-</div>
-
-<div style="float:left;width:120px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">CMMI</p>
-<ul style="list-style-type:none;padding-left:30px">
-<li style="margin-bottom:0px">Bug</li>
-<li style="margin-bottom:0px">Change Request</li>
-<li style="margin-bottom:0px">Epic</li>
-<li style="margin-bottom:0px">Feature</li>
-<li style="margin-bottom:0px">Issue</li>
-<li style="margin-bottom:0px">Review</li>
-<li style="margin-bottom:0px">Requirement</li>
-<li style="margin-bottom:0px">Risk</li>
-<li style="margin-bottom:0px">Task</li>
-<li style="margin-bottom:0px">Test Case</li>
+<p>CMMI</p>
+<ul>
+<li>Bug</li>
+<li>Change Request</li>
+<li>Epic</li>
+<li>Feature</li>
+<li>Issue</li>
+<li>Review</li>
+<li>Requirement</li>
+<li>Risk</li>
+<li>Task</li>
+<li>Test Case</li>
 </ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
 </td>
 </tr>
 <tr>

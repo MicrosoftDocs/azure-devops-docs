@@ -1,7 +1,6 @@
 ---
 title: Visual Studio Online Updates - May 12
 description: VSTS release notes for May 12 2014
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: c2b37732-0483-4345-9832-b0cda35b8c5e
@@ -25,7 +24,7 @@ You can find more information about the types of scenarios now possible at our [
 
 Our JSON REST APIs enable a lightweight way to work with Visual Studio Online from virtually any device, platform, or technology stack, including Android, iOS, Node.js, .NET, and others. You can create and query work items, queue a build, get recent team room messages, access source code, and accomplish almost any team or code management task.
 
-[Learn the basics](/rest/api/vsts/?view=vsts-rest-4.1)
+[Learn the basics](/rest/api/vsts/?view=vsts-rest-4.1&preserve-view=true)
 
 [Explore the APIs](/azure/devops/integrate/)
 
@@ -33,7 +32,7 @@ Our JSON REST APIs enable a lightweight way to work with Visual Studio Online fr
 
 With OAuth 2.0 support in Visual Studio Online, now you can safely access information and perform operations on Visual Studio Online on behalf of a user. OAuth enables users to safely grant your app or service access to their resources.
 
-[Authorizing with OAuth](/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops)
+[Authorizing with OAuth](/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops&preserve-view=true)
 
 [Registering your app](https://app.vssps.visualstudio.com/app/register?_ga=1.9631093.1191187031.1470846728)
 
@@ -45,20 +44,20 @@ There are three options for receiving events:
 
 1.Use a generic web hook.
 2.Use one of the service hooks built for a specific service. An initial set are provided as part of this release. More will be added over time and we will be enabling third-party service hook submission in the future.
-3.Use [Zapier](http://www.zapier.com/) to link a Visual Studio Online service hook to another service that Zapier supports. Look for Visual Studio Online in Zapier’s service list.
+3.Use [Zapier](https://www.zapier.com/) to link a Visual Studio Online service hook to another service that Zapier supports. Look for Visual Studio Online in Zapier’s service list.
 Services hooks can be found as a new hub in project administration.
 
-![Selecting a target service](_img/5_12_01.png)
+![Selecting a target service](media/5_12_01.png)
 
 [Learn more](https://visualstudio.microsoft.com/get-started/integrate/integrating-with-service-hooks-vs)
 
 [Creating subscriptions programmatically](/azure/devops/integrate/)
 
-[Supported events](/azure/devops/service-hooks/events?view=azure-devops)
+[Supported events](/azure/devops/service-hooks/events?view=azure-devops&preserve-view=true)
 
 ### Extensibility Preview
 
-re anxious to get your feedback and officially release them. While in preview, the REST APIs may change. You can protect yourself by ensuring you pass the appropriate version as part of your requests. As these features evolve in preview, you will have time to migrate forward. For more information, see [Get started with the REST APIs](https://msdn.microsoft.com/library/bb165336.aspx).
+re anxious to get your feedback and officially release them. While in preview, the REST APIs may change. You can protect yourself by ensuring you pass the appropriate version as part of your requests. As these features evolve in preview, you will have time to migrate forward. For more information, see [Get started with the REST APIs](/previous-versions/visualstudio/visual-studio-2015/extensibility/visual-studio-sdk).
 
 Give it a try. We can’t wait to see what you come up with.
 
@@ -66,26 +65,16 @@ Give it a try. We can’t wait to see what you come up with.
 
 Since we launched Visual Studio Online, many of our on-premises Team Foundation Server customers who have loved used TFS have wanted to start using Visual Studio Online. One of the things customers have asked us to help them with for that transition is to be able to migrate their work items, test cases, test results, and source code files in version control repositories. Today, we’re happy to announce a free migration utility that we have partnered with OpsHub to create that will help you with a one-way migration of the most commonly requested artifacts in TFS to bring them to your Visual Studio Online account. You can now find it on the [Visual Studio Gallery](https://aka.ms/OpsHubVSOMigrationUtility):
 
-![Service Migration Utility](_img/5_12_02.png)
+![Service Migration Utility](media/5_12_02.png)
 
 The migration utility will take you through a step-by-step process for mapping your team projects in Team Foundation Server on-premises to Visual Studio Online team projects. Team projects using standard process templates from TFS 2010, TFS 2012, and TFS 2013 are supported with this free migration utility, and you do not need to have upgraded the process templates used by the team projects or upgrade to the latest version of TFS 2013 to use the utility. Once you are finished migrating to Visual Studio Online, you’ll be on our latest version, able to take advantage of all of the latest features automatically!
 
-We suggest you test out your migration before having your team come on board. You’ll want to get a sense of how long your migration will take, see whether you run into any issues to be addressed, and give yourself a chance to inspect the test migration after it is finished. You can always [delete the team project](http://blogs.msdn.com/b/buckh/archive/2013/09/13/how-to-delete-a-team-project-from-team-foundation-service.aspx) in Visual Studio Online and run the migration utility as many times as you need to until you are satisfied with your migration plan.
+We suggest you test out your migration before having your team come on board. You’ll want to get a sense of how long your migration will take, see whether you run into any issues to be addressed, and give yourself a chance to inspect the test migration after it is finished. You can always [delete the team project](https://devblogs.microsoft.com/buckh/how-to-delete-a-team-project-from-team-foundation-service-tfs-visualstudio-com/) in Visual Studio Online and run the migration utility as many times as you need to until you are satisfied with your migration plan.
 
-For those with more advanced scenarios, such as integrating or synchronizing TFS and Visual Studio Online with other devops tools (HP devops/Quality Center, IBM Rational, Atlassian Jira, etc.) and enable customized business rules during the migration with customized process templates, OpsHub also has a commercially available offering to help: the [OpsHub Integration Platform](https://aka.ms/OpsHub). Also, keep in mind some data will ultimately not be migrated with this free utility, such as builds, team room history, lab management environments, team and personal favorites, work item queries, alerts, security and permissions, team settings, and other types of data. You’ll want to keep backup copies of your Team Foundation Server databases around in case you need data that isn’t migrated.
+For those with more advanced scenarios, such as integrating or synchronizing TFS and Visual Studio Online with other devops tools (HP devops/Quality Center, IBM Rational, Atlassian Jira, etc.) and enable customized business rules during the migration with customized process templates, OpsHub also has a commercially available offering to help: the [OpsHub Integration Platform](https://www.opshub.com/integrations/azure-devops-vsts-integration/). Also, keep in mind some data will ultimately not be migrated with this free utility, such as builds, team room history, lab management environments, team and personal favorites, work item queries, alerts, security and permissions, team settings, and other types of data. You’ll want to keep backup copies of your Team Foundation Server databases around in case you need data that isn’t migrated.
 
-If you have any additional questions, the OpsHub team will be monitoring for questions marked with the OpsHub and visual-studio-online tags on [StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-online)!
+If you have any additional questions, the OpsHub team will be monitoring for questions marked with the OpsHub and visual-studio-online tags on [StackOverflow](https://stackoverflow.com/questions/tagged/visual-studio-online)!
 
 Thanks,
 
 Will Smythe
-
-
-
-
-
-
-
-
-
-

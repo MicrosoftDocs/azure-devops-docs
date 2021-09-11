@@ -1,26 +1,23 @@
 ---
-title: Deploy to IIS on a Windows VM
+title: Deploy to IIS on a Windows VM (Classic)
 description: Deploy an ASP.NET or Node.js web deployment package to an IIS web server on a Windows virtual machine using Deployment Groups
 ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 09/07/2021
 monikerRange: '>= tfs-2018'
 ---
 
 # Deploy to a Windows Virtual Machine
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
-We'll show you how to set up continuous deployment of your ASP.NET or Node.js app to an IIS web server running on Windows using
+Learn how to set up continuous deployment of your ASP.NET or Node.js app to an IIS web server running on Windows using
 Azure Pipelines. You can use the steps in this quickstart as long as your continuous integration pipeline publishes a web deployment package.
 
-![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
+![A typical release pipeline for web applications](azure/media/vscode-git-ci-cd-to-azure.png)
 
 After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
 
@@ -42,17 +39,17 @@ The configuration varies depending on the type of app you are deploying.
 
 #### ASP.NET app
 
-[!INCLUDE [prepare-aspnet-windows-vm](../_shared/prepare-aspnet-windows-vm.md)]
+[!INCLUDE [prepare-aspnet-windows-vm](../includes/prepare-aspnet-windows-vm.md)]
 
 #### ASP.NET Core app
 
-[!INCLUDE [prepare-aspnetcore-windows-vm](../_shared/prepare-aspnetcore-windows-vm.md)]
+[!INCLUDE [prepare-aspnetcore-windows-vm](../includes/prepare-aspnetcore-windows-vm.md)]
 
 #### Node.js app
 
 Follow the instructions in [this topic](https://github.com/Azure/iisnode) to install and configure IISnode on IIS servers.
 
-[!INCLUDE [create-deployment-group](../_shared/create-deployment-group.md)]
+[!INCLUDE [create-deployment-group](../includes/create-deployment-group.md)]
 
 ## Define your CD release pipeline
 
@@ -76,7 +73,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
    release pipeline from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
-   and add a filter to include the **master** branch.
+   and add a filter to include the **main** branch.
 
 1. Open the **Tasks** tab and select the **IIS Deployment** job. For the **Deployment Group**, select the deployment group you created earlier (such as *myIIS*).
 
@@ -86,7 +83,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
 You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
 
-[!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
+[!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
 
 ## Next steps
 

@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
-title: Add an Action | Extensions for Azure DevOps Services
-description: Add an action for your extension that extends Azure DevOps Services.
+title: Add an Action | Extensions for Azure DevOps
+description: Add an action for your extension that extends Azure DevOps.
 ms.assetid: 7b117bbf-f188-41ce-8ff6-3723ebccea81
 ms.topic: conceptual
-ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -13,11 +11,16 @@ ms.date: 08/22/2016
 ---
 
 # Add a menu action
-In this example, we'll add an action to the query context menu in the work item queries hub.
+
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+
+In this example, we add an action to the query context menu in the work item queries hub.
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Prerequisites for this article
 
-- You'll need to create a web app for your action, which can be found in the [hub example](./add-hub.md).
+- You need to create a web app for your action, which can be found in the [hub example](./add-hub.md).
 - If you haven't, take a look at the [write your first extension tutorial](../get-started/node.md) to learn about the basics.
 
 ## Update extension manifest file
@@ -51,11 +54,11 @@ Below is the code snippet that adds your action to the contributions section of 
 | text               | Text that appears on the menu item.                                                                         |                  
 | title              | Tooltip text that appears on the menu item.                                                                 |                   
 | icon               | URL to an icon that appears on the menu item. Relative URLs are resolved using baseUri.                     |                   
-| groupId            | Determines where this menu item appears in relation to the others. [How to discover menu group identifiers](../test/discover-menu-group-ids.md). |
+| groupId            | Determines where this menu item appears in relation to the others. |
 | uri                | URI to a page that registers the menu action handler (see below).                                               |                   
 | registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contributor id.                          |                   
 
-Learn about all of the places where you can add actions in the [contributions reference](../reference/targets/overview.md).
+Learn about all of the places where you can add actions in the [contributions reference](/previous-versions/azure/devops/extend/reference/targets/overview).
 
 ## Your HTML page
 
@@ -72,14 +75,14 @@ in your extension's manifest file.
 	<body>
 		<div>
 			The end user doesn't see the content on this page.
-			It is only in the background to handle the contributed menu item being clicked.
+			It is only in the background to handle the contributed menu item being selected.
 		</div>
 	</body>
 	</html>
 ```
 
 ## Your JavaScript
-The script below registers the handler object to handle the action, place it in the `head` section of the HTML page above.
+The script below registers the handler object to handle the action, place it in the `head` section of the previous HTML page.
 
 > We aliased `lib` to be `node_modules/vss-web-extension-sdk/lib` in our `vss-extension.json` manifest file.
 
@@ -92,7 +95,7 @@ The script below registers the handler object to handle the action, place it in 
     var menuContributionHandler = (function () {
         "use strict";
         return {
-            // This is a callback that gets invoked when a user clicks the newly contributed menu item
+            // This is a callback that gets invoked when a user selects the newly contributed menu item
             // The actionContext parameter contains context data surrounding the circumstances of this
             // action getting invoked.
             execute: function (actionContext) {
@@ -106,10 +109,12 @@ The script below registers the handler object to handle the action, place it in 
 </script>
 ```
 
-## Next Steps
+[!INCLUDE [tip-for-more-information](../includes/tip-for-more-information.md)]
+
+## Next steps
 
 Now that you've written your extension, the next steps are to Package, Publish, and Install your extension. You can also check out the 
 documentation for Testing and Debugging your extension. 
 
 * [Package, publish, and install extensions](../publish/overview.md)
-* [Testing and debugging extensions](../test/debug-in-browser.md)
+* [Testing and debugging extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)

@@ -1,0 +1,290 @@
+### YamlMime:FAQ
+metadata:
+  title: Query FAQs 
+  description: Get answers to common questions about working with work item queries in Azure DevOps. 
+  titleSuffix: Azure Boards
+  ms.custom: boards-queries
+  ms.technology: devops-agile
+  ms.author: kaelli
+  author: KathrynEE
+  ms.topic: troubleshooting
+  monikerRange: '<= azure-devops'
+  ms.date: 05/21/2021
+
+title: Query FAQs 
+
+summary: | 
+  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
+
+  The Query Editor supports finding work items by specifying query clauses based on fields, operators, and values. You can save and share these queries with others in your team. Here are some answers to frequently asked questions about work item queries. 
+ 
+sections:
+  - name: General
+    questions: 
+      - question: Can I use a wildcard in my query?
+        answer: |
+           Yes. The wildcard character is an asterisk (*). For samples, see [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md#keyword-or-phrase-query-with-wildcards).
+
+      - question: What's the difference between a query and a semantic search? 
+        answer: |
+          While both query and semantic search finds and list work items, the filter features and results presentation are different. To learn more, see [Functional work item search, Semantic search vs. managed work item queries](../../project/search/functional-work-item-search.md#search-vs-managed-work-item-queries).  
+
+      - question: Can I export a query and import to another project?  
+        answer: |
+          **Yes**. You can save a query as a `.wiq` file, update the syntax, and then import it to another project, organization, or collection.  
+          To learn more, see [Cross-service and enhanced query operations](query-support-integration-cross-service-extensions.md#wiql).  
+
+      - question: What are all the query filter functions? 
+        answer: |
+          From the Query Editor, you can exercise the following filter functions. Choose the filter to jump to an article with sample queries. In addition to the query filters, you can [interactively apply filters to query results](/azure/devops/boards/backlogs/filter-backlogs-boards-plans).  
+          ::: moniker range=">= azure-devops-2019"
+          > [!NOTE] 
+          > Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches supports both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Advanced work items search](/azure/devops/project/search/advanced-work-item-search-syntax).
+          ::: moniker-end
+
+          ---
+          :::row:::
+             :::column span="2":::
+                **Filter features**
+             :::column-end::: 
+             :::column span="2":::
+                **Macros**
+             :::column-end:::
+          :::row-end:::
+          ---
+          :::row:::
+             :::column span="1":::
+                ::: moniker range=">= azure-devops-2019"
+                - [Compare fields](./query-field-value.md) 
+                - [Key words](./titles-ids-descriptions.md)  
+                - [Linked work items](./linking-attachments.md)  
+                - [Logical groupings](./using-queries.md#logical-groupings)  
+                - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
+                - [Tags](./add-tags-to-work-items.md#query)  
+                - [Was Ever](./query-by-workflow-changes.md)  
+                - [Wildcard](./titles-ids-descriptions.md)  
+                ::: moniker-end
+                ::: moniker range="tfs-2018"
+                - [Compare fields](./query-field-value.md) 
+                - [Key words](./titles-ids-descriptions.md)  
+                - [Linked work items](./linking-attachments.md)  
+                - [Logical groupings](./using-queries.md#logical-groupings)  
+                - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
+                - [Tags](./add-tags-to-work-items.md#query)  
+                - [Was Ever](./query-by-workflow-changes.md)  
+                - [Wildcard](./titles-ids-descriptions.md)  
+                ::: moniker-end
+                ::: moniker range="tfs-2017"
+                - [Compare fields](./query-field-value.md) 
+                - [Key words](./titles-ids-descriptions.md)  
+                - [Linked work items](./linking-attachments.md)  
+                - [Logical groupings](./using-queries.md#logical-groupings)   
+                - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
+                - [Tags](./add-tags-to-work-items.md#query)  
+                - [Was Ever](./query-by-workflow-changes.md)  
+                - [Wildcard](./titles-ids-descriptions.md)  
+                ::: moniker-end
+                ::: moniker range="tfs-2015"
+                - [Compare fields](./query-field-value.md)
+                - [Key words](./titles-ids-descriptions.md)   
+                - [Linked work items](./linking-attachments.md)  
+                - [Logical groupings](./using-queries.md#logical-groupings)  
+                - [Query macros or variables](./about-managed-queries.md#macros) 
+                ::: moniker-end
+                ::: moniker range="tfs-2013"
+                - [Compare fields](./query-field-value.md)
+                - [Key words](./titles-ids-descriptions.md)   
+                - [Linked work items](./linking-attachments.md)  
+                - [Logical groupings](./using-queries.md#logical-groupings)  
+                - [Query macros or variables](./about-managed-queries.md#macros) 
+                ::: moniker-end
+             :::column-end::: 
+             :::column span="1":::
+               ::: moniker range=">= azure-devops-2019"
+                - [Blank or empty fields](./titles-ids-descriptions.md#empty-or-not-empty-html-field-queries)
+                - [Boolean searches](./query-by-workflow-changes.md#kanban-board-change-queries) 
+                - [History and Discussion](./history-and-auditing.md) 
+                - [Kanban board fields](./query-by-workflow-changes.md#kanban-board-change-queries)
+                - [In and Not In Group searches](./planning-ranking-priorities.md) 
+                - [Search across projects](./using-queries.md#across-projects)
+                ::: moniker-end
+                ::: moniker range="tfs-2018"
+                - [Boolean searches](./query-by-workflow-changes.md#kanban-board-change-queries) 
+                - [History and Discussion](./history-and-auditing.md) 
+                - [In and Not In Group searches](./planning-ranking-priorities.md) 
+                - [Search across projects](./using-queries.md#across-projects)
+                - [In and Not In Group searches](./planning-ranking-priorities.md) 
+                ::: moniker-end
+                ::: moniker range="tfs-2017"
+                - [Boolean searches](./query-by-workflow-changes.md#kanban-board-change-queries) 
+                - [History and Discussion](./history-and-auditing.md) 
+                - [Search across projects](./using-queries.md#across-projects)
+                ::: moniker-end
+                ::: moniker range="tfs-2015"
+                - [Search across projects](./using-queries.md#across-projects)
+                - [Tags](./add-tags-to-work-items.md#query)
+                - [Was Ever](./query-by-workflow-changes.md) 
+                - [Wildcard](./titles-ids-descriptions.md)
+                ::: moniker-end
+                ::: moniker range="tfs-2013"
+                - [Tags](./add-tags-to-work-items.md#query)
+                - [Was Ever](./query-by-workflow-changes.md) 
+                - [Wildcard](./titles-ids-descriptions.md)
+                ::: moniker-end
+             :::column-end:::
+             :::column span="2":::
+                ::: moniker range=">= azure-devops-2019"
+                - [[Any]](titles-ids-descriptions.md)
+                - [@Me](query-by-workflow-changes.md)
+                - [@Today](query-by-date-or-current-iteration.md) 
+                - [@CurrentIteration, @CurrentIteration +/-n](query-by-date-or-current-iteration.md)   
+                - [@Follows](titles-ids-descriptions.md#following)
+                - [@MyRecentActivity, @RecentMentions, @RecentProjectActivity](titles-ids-descriptions.md#recent-macros)
+                - [@StartOfDay, @StartOfMonth, @StartOfWeek, @StartOfYear](query-by-date-or-current-iteration.md)   
+                - [@TeamAreas](query-by-area-iteration-path.md)
+                ::: moniker-end
+                ::: moniker range="tfs-2018"
+                - [[Any]](titles-ids-descriptions.md)
+                - [@Me](query-by-workflow-changes.md)
+                - [@Today](query-by-date-or-current-iteration.md) 
+                - [@CurrentIteration](query-by-date-or-current-iteration.md)   
+                - [@Follows](titles-ids-descriptions.md#following)
+                - [@MyRecentActivity, @RecentMentions, @RecentProjectActivity](titles-ids-descriptions.md#recent-macros)
+                ::: moniker-end
+                ::: moniker range="tfs-2017"
+                - [[Any]](titles-ids-descriptions.md)
+                - [@Me](query-by-workflow-changes.md)
+                - [@Today](query-by-date-or-current-iteration.md) 
+                - [@CurrentIteration](query-by-date-or-current-iteration.md)   
+                - [@Follows](titles-ids-descriptions.md#following)
+                ::: moniker-end
+                ::: moniker range="tfs-2013 || tfs-2015"
+                - [[Any]](titles-ids-descriptions.md)
+                - [@Me](query-by-workflow-changes.md)
+                - [@Today](query-by-date-or-current-iteration.md) 
+                - [@CurrentIteration](query-by-date-or-current-iteration.md)   
+                ::: moniker-end
+             :::column-end:::
+          :::row-end:::
+          ---
+
+      - question: Can I filter the Query Results?
+        answer: |
+          **Yes**. See [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md). 
+
+      - question: Can I run several queries at the same time?
+        answer: |
+          **Yes**. Simply open a query in a new browser tab to run several queries at the same time.  
+
+      - question: What query macros are only supported from the web portal?
+        answer: |
+          The following macros are only supported from the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
+
+  - name: Navigate 
+    questions: 
+      - question: How do I quickly navigate to queries I view frequently? 
+        answer: |
+          - Favorite those queries and other artifacts that you view frequently. Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a query. 
+          - Favorited queries (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
+
+          > [!div class="mx-imgBorder"]  
+          > ![Screenshot of favorited queries breadcrumb selector.](media/example-queries/queries-selector.png)  
+          Or, you can select from any of your favorited items by choosing the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon and choose **Favorites**.  
+
+          ![Screenshot of your favorites listing queries.](media/example-queries/favorites-selector.png)  
+
+      - question: How do I quickly navigate to queries within the same query folder? 
+        answer: |
+          When viewing a query, you can use the queries breadcrumb selector (:::image type="icon" source="../../media/icons/breadcrumb-selector.png" border="false"::: the breadcrumb icon changes to :::image type="icon" source="../../media/icons/context-menu-selector.png" border="false"::: a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
+
+          > [!div class="mx-imgBorder"]  
+          > ![Screenshot of queries breadcrumb selector.](media/view-run-queries/folder-selector.png)  
+           
+  - name: Find work items
+    questions:
+      - question: Where can I find work assigned to me or work that I'm following?
+        answer: | 
+          Open **Queries>All**. Under the **My Queries** section are two fully customizable queries: **Assigned to me** and **Followed work items**. 
+
+      - question: Where can I find recent work item activity?
+        answer: | 
+          - Open **Boards>Work Items** and select the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).  
+
+          - You can also use the macros &mdash; <strong>@Me</strong>, <strong>@Follows</strong>, **MyRecentActivity**, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros). 
+
+
+      - question: How do I sort on the Parent field?  
+        answer: | 
+          You can't. Sorting a query on the **Parent** field isn't a supported feature. 
+
+  - name: Linked work item queries 
+    questions: 
+
+      - question: How do I query for a list of related work items?   
+        answer:  |
+          You can't query for work items that contain links solely based on the **Related** link type. You can query for work items that have links by specifying `Related Link Count > 0`, however, the results contain all work items containing links to other work items, including **Parent-Child**, **Predecesor-Successor**, and other link types. 
+
+      - question: Can I query for work items linked across projects? 
+        answer:  |
+          **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported. 
+
+      - question: Can I link work items across organizations or collections?
+        answer: |
+          ::: moniker range="azure-devops"
+          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../backlogs/add-link.md#link-to-a-remote-work-item). However, you can't perform a search for work items linked from other projects than the current project you are connected to. 
+          ::: moniker-end
+          ::: moniker range="< azure-devops"
+          **No** across collections. This isn't a supported feature. 
+          ::: moniker-end
+
+  - name: Bulk add and update work items using queries
+    questions: 
+      - question: Can I export a cross-project query to Excel? 
+        answer: |
+          ::: moniker range=">= azure-devops-2019"
+          **No**. Cross-project queries won't open in Excel. However, you can export a cross-project query to a .csv file, open it in Excel, and import it to Azure Boards. To learn more, see [Bulk import or update work items using CSV files](import-work-items-from-csv.md). 
+          ::: moniker-end
+          ::: moniker range="<= tfs-2018"
+          **No**. Cross-project queries won't open in Excel.   
+          ::: moniker-end
+
+      - question: How do I manage dependencies across projects?  
+        answer: |
+          To manage dependencies in Azure Boards, you can link work items using the Predecessor/Successor link type. To learn how, see [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md).  
+
+  - name: Query folders
+    questions:
+      - question: Can I change the owner of a query or folder? 
+        answer: |
+          ::: moniker range=">= tfs-2017"
+          **No**. You can only enable permissions for users and groups from the permissions window for the query or folder.
+          ::: moniker-end
+          ::: moniker range="<= tfs-2015"
+          **Yes**. This is a supported feature from the [query Security dialog](set-query-permissions.md). 
+          ::: moniker-end
+ 
+      - question: Can I move a query or a folder?
+        answer: |
+          **Yes**. In the web portal, choose **Rename** from the context menu. In Team Explorer for Visual Studio, simply drag the folder to the new location. In Team Explorer Everywhere or Eclipse, choose **Move** from the context menu and select the folder to which you want to move the item.
+
+      - question: Can I add folders to My Favorites or Team Favorites?
+        answer: |
+          **No**. This is not a supported feature. 
+
+      - question: Are the queries and folders I create from the web portal the same as in Team Explorer?
+        answer: |
+          **Yes**. You may have to refresh your browser or client to see changes you make in another client. For Visual Studio 2019, you must [choose the legacy experience](../work-items/set-work-item-experience-vs.md) to see work item queries and folders. 
+
+  - name: Monitor progress with queries 
+    questions:
+      - question: How can I best use queries to monitor progress on a project or team?
+        answer: |
+          - [Define a chart for a query](../../report/dashboards/charts.md) and add it to a dashboard, or add the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to a dashboard. Each time you open the dashboard, the query will automatically run and refresh. 
+          - Periodically, [triage query results](triage-work-items.md) to review and update status.   
+
+additionalContent: |
+  ## Related articles
+  -  [Azure Boards FAQs](../faqs.yml) 
+  -  [Work across projects FAQs](../../project/work-across-projects-faqs.yml)
+  -  [Excel FAQs](../backlogs/office/faqs.yml)
+
