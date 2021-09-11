@@ -2,19 +2,18 @@
 title: Control access to functional areas
 titleSuffix: Azure DevOps & TFS
 description: Configure the initial security settings for the following functional areas for a project in Team Foundation Server  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6c967b40-4842-41db-9350-bb3320f3e57c
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
 ms.topic: reference
+monikerRange: '< azure-devops' 
 ms.date: 09/08/2017
 ---
 
 # Control access to functional areas
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You can configure the initial security settings for the following functional areas for a project: 
 - Work item queries
@@ -107,6 +106,6 @@ You can control access to activities in Lab Management by changing the Lab plug-
 ## Related articles
 - [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
 - [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)
-- [Configure Lab Management with TFSLabConfig, Permissions](/azure/devops/server/command-line/tfslabconfig-cmd#permissions)
+- [Configure Lab Management with TFSLabConfig, Permissions](/azure/devops/server/command-line/tfslabconfig-cmd)
 
  

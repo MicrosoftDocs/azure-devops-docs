@@ -1,140 +1,151 @@
 ---
-title: View, change user preferences 
+title: Set your preferences 
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Change picture, set preferred email, or other user preferences from your profile defined for Azure DevOps 
-ms.prod: devops
+description: Change picture, set preferred email, or other user preferences from your Azure DevOps profile. 
 ms.technology: devops-settings
 ms.assetid: 
-ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
-ms.date: 07/12/2019
+monikerRange: '<= azure-devops'
+ms.date: 09/02/2021
 ---
 
-# Set user preferences
+# Set your preferences
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
-
-From your profile page, you can change your picture or other account preferences. Specifically, you can set the following:
-
-
-<table width="80%">
-<tbody valign="top">
-<tr>
-<th width="35%">Area</th>
-<th width="65%">Task</th>
-</tr>
-<tr>
-<td>Profile </td>
-<td>
-<ul>
-<li>Change your picture</li>
-<li>Change your display name</li>
-<li>Change your preferred email</li>
-<li>Change your locale settings</li> 
-</ul>
-</td>
-</tr>
-<tr>
-<td>Security</td>
-<td>
-<ul>
-<li><a href="../../accounts/use-personal-access-tokens-to-authenticate.md" data-raw-source="[Personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)">Personal access tokens</a></li>
-<li><a href="../../repos/git/auth-overview.md#alternate-credentials" data-raw-source="[Alternate authentication credentials](../../repos/git/auth-overview.md#alternate-credentials)">Alternate authentication credentials</a></li>
-<li><a href="../../integrate/get-started/authentication/oauth.md" data-raw-source="[OAuth authorizations](../../integrate/get-started/authentication/oauth.md)">OAuth authorizations</a></li>
-<li><a href="../../repos/git/use-ssh-keys-to-authenticate.md" data-raw-source="[SSH public keys](../../repos/git/use-ssh-keys-to-authenticate.md)">SSH public keys</a></li>
- <li><a href="manage-authorizations.md" data-raw-source="[Manage authorizations](manage-authorizations.md)">Manage authorizations</a></li>
-<li> 
-</ul>
-</td>
-</tr>
-<tr>
-<td>Other</td>
-<td>
-<ul>
-<li><a href="../../notifications/howto-manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)">Manage personal notifications</a></li>
-<li><a href="../../integrate/concepts/rate-limits.md" data-raw-source="[Usage](../../integrate/concepts/rate-limits.md)">Usage</a></li>
-<li><a href="../../project/navigation/preview-features.md" data-raw-source="[Enable preview features](../../project/navigation/preview-features.md)">Enable preview features</a></li> 
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-Locale settings include language, date and time pattern, time zone, and user interface theme.
-
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 ::: moniker range="azure-devops"
 
-## Change profile settings  
+From your Azure DevOps user profile page, you can change your picture, display name, and preferred email. 
 
-1. To change your user preferences, open your profile menu, and then select **User settings**.
+Other tools for setting your Azure DevOps preferences include:
 
-   ![Open profile user settings](_img/open-profile-user-settings.png)
-
-2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. 
-
-   ![Edit the About page](_img/edit-about-page.png)
-
-3. From the **Time and Locale** page, you can change your preferred language, date and time pattern, and time zone.
-
-   ![Set time and locale preferences](_img/set-time-and-locale-user-preferences.png)
-  
-  If you can't find a setting, like the UI theme setting, visit your complete [Azure DevOps profile page](https://aex.dev.azure.com/go/profile/?campaign=o~msft~old~vsts~profile) and then select **Edit profile** > **Preferences**.
+- **[Time and Locale](../accounts/change-time-zone.md#change-your-user-profile-time-zone)**: Change your preferred language, date and time patterns, and time zone. 
+- **[Notifications](../../notifications/manage-your-personal-notifications.md)**: Add or review subscriptions to event changes. 
+- **Permissions**: Use to refresh your permissions to cause any recent changes to take effect.
+- **[Preview features](../../project/navigation/preview-features.md)**: Enable or disable a preview feature for your user account.
+- **Theme**: Choose the user interface theme to use with your Azure DevOps web portal. 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"  
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+From your Azure DevOps user profile, you can change your picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences. 
+
+Other tools for setting your Azure DevOps preferences include: 
+
+- [Use personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
+- [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
+- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)  
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+From your user profile, you can change your picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences. 
+
+Other tools for setting your Azure DevOps preferences include **[Notifications](../../notifications/manage-your-personal-notifications.md)** to add or review subscriptions to event changes. 
+
+::: moniker-end
+
+> [!NOTE]
+> You can't change your Azure DevOps  user interface (UI) theme if you're using Internet Explorer (IE).
+
 
 ## Change profile settings  
 
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the **New account manager**, see [Manage or enable features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. From your home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then select **Profile**.
+
+   ![Open Azure DevOps profile](../../media/open-user-settings-profile-preview.png)
+
+2. From the **Profile** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**. Select the **Time and Locale** tab to change more settings, like language, date and time pattern, time zone, and UI.
+
+   ![Edit the Profile page](media/edit-about-page-preview.png)
+
+#### [Current page](#tab/current-page) 
+
+1. To change your user preferences, open your profile menu, and then select **User settings**.
+
+   ![Open profile user settings](media/open-profile-user-settings.png)
+
+2. Select **Edit profile**.
+
+   :::image type="content" source="media/select-edit-no-preview.png" alt-text="Select Edit profile no preview":::
+
+1. You can change your profile picture, display name, contact information, and country. Select **Save**. Select the **Preferences** tab to change more settings, like language, date and time pattern, time zone, and UI.
+
+   ![Edit the About page](media/edit-about-page.png)
+
+::: moniker-end
+
+* * *
+
+::: moniker range="azure-devops-2019 || azure-devops-2020" 
+
 1. To change your user preferences, open your profile menu, and then select **My profile**.
 
-   ![Select your profile menu, and then My profile](_img/select-profile-my-profile-2019.png) 
+	:::image type="content" source="media/user-preferences/open-profile-menu-2020.png" alt-text="Select your profile menu, and then My profile":::
 
-2. From the **General** tab, you can change your profile picture, change your display name, contact information, and whether or not borders appear on work item forms for fields.
+2. From the **General** tab, you can change the following information:
+   - Profile picture
+   - Display name
+   - Preferred email 
+   - Whether borders appear for fields on work item forms.
 
-	![General user settings](_img/general-user-settings-2019.png)
+	:::image type="content" source="media/user-preferences/user-profile-dialog-general-tab.png" alt-text="User Profile dialog, General tab":::
 
 3. From the **Locale** tab, you can change your preferred language, date and time pattern, and time zone. 
 
-   ![Change locale](_img/locale-user-settings-2019.png)
+	:::image type="content" source="media/user-preferences/user-profile-dialog-locale-tab.png" alt-text="User Profile dialog, Locale tab":::
 
 4. To change your UI theme, go back to your profile menu and select **Theme**. Choose between **Dark** and **Light**.
 
-   ![Change the theme to dark or light](_img/change-theme-2019.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018" 
 
-## Change profile settings  
-
 1. To change your user preferences, open your profile menu.
 
-	![Open Profile menu](../../_shared/_img/settings/open-profile-tfs-2017.png)
+	![Open Profile menu](../../media/settings/open-profile-tfs-2017.png)
 
 2. Choose **Edit profile**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../_shared/_img/settings/profile-jamal-h.png)
+	> ![Screenshot of highlighted Edit profile button ](../../media/settings/profile-jamal-h.png)
 
 3. From the **About** page, you can change your profile picture, change your display name, contact information, and country. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../_shared/_img/settings/edit-profile-about-dialog.png)
+	> ![Screenshot of the About User profile page](../../media/settings/edit-profile-about-dialog.png)
 
-4. From the **Preferences** page, you can change your preferred language, date and time pattern, time zone, UI theme, and whether or not borders appear on work item forms for fields.
+4. From the **Preferences** page, you can change the following information:
+    - preferred language
+    - date and time pattern
+    - time zone
+    - UI theme
+    - whether borders appear for fields on work item forms
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../_shared/_img/settings/edit-profile-preferences-dialog.png)
+	> ![Screenshot of Preferences page with Save changes button](../../media/settings/edit-profile-preferences-dialog.png)
 
-::: moniker-end  
+::: moniker-end
+
+Your profile settings are updated.
 
 ## Related articles
 
-- [Set favorites](../../project/navigation/set-favorites.md)
-
+- [Time zone settings and usage](../settings/timezone-settings-usage.md)
+- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)  
+- [Usage](../../integrate/concepts/rate-limits.md)  
+- [Set favorites](../../notifications/manage-your-personal-notifications.md)  
+- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)

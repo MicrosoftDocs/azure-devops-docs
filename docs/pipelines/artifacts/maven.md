@@ -1,31 +1,39 @@
 ---
 title: Use Maven artifact feeds
 description: Learn about how you can use Maven artifacts with Azure Artifacts or Team Foundation Server (TFS).
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: fc81d7ee-fa9a-4c04-ac8c-6269d91987d3
-ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 02/12/2019
+ms.date: 06/12/2020
 monikerRange: '>= tfs-2018'
 ---
 
 # Set up Azure Pipelines and Maven
 
-[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 This guide covers the basics of using Azure Pipelines to work with Maven artifacts in Azure Artifacts feeds.
 
-1. Navigate to your Maven feed and click "Connect to Feed". Click on "Maven".
-![Connect to Feed - Maven](_img/maven/consume-artifacts-using-maven.png)
+## Set up your feed
+
+::: moniker range=">=tfs-2018 < azure-devops-2019"
+
+1. Select **Build and Release**.
+
+1. Select **Packages**.
+
+1. With your feed selected, select **Connect to feed**.
+
+1. Select **Maven**.
+
+    > [!div class="mx-imgBorder"]
+    >![Connect to Maven feed](media/maven/connect-to-maven-feed.png)
 
 1. Click on "Generate Maven Credentials"
 
@@ -48,7 +56,77 @@ This guide covers the basics of using Azure Pipelines to work with Maven artifac
 
 1. Add tasks to your pipeline to [download the secure file](../tasks/utility/download-secure-file.md) and to copy it to the `(~/.m2)` directory. The latter can be accomplished with the following PowerShell script, where `settingsxml` is the reference name of the "Download secure file" task:
 
-```powershell
-New-Item -Type Directory -Force "${HOME}/.m2"
-Copy-Item -Force "$(settingsxml.secureFilePath)" "${HOME}/.m2/settings.xml"
+    ```PowerShell
+    New-Item -Type Directory -Force "${HOME}/.m2"
+    Copy-Item -Force "$(settingsxml.secureFilePath)" "${HOME}/.m2/settings.xml"
+    ```
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2019"
+
+1. Navigate to **Artifacts**.
+
+1. With your feed selected, select **Connect to feed**.
+
+1. Select **Maven**.
+
+    > [!div class="mx-imgBorder"]
+    >![Connect to Maven feed Azure DevOps](media/maven/connect-to-maven-feed-devops2019.png)
+
+1. Set up your project by following these steps:
+
+    1. Add the repo to **both** your pom.xml's `<repositories>` and `<distributionManagement>` sections. Replace the `[ORGANIZATION_NAME]` placeholder with your own organization.
+    
+        ```xml
+        <repository>
+          <id>[ORGANIZATION_NAME]</id>
+          <url>https://pkgs.dev.azure.com/[ORGANIZATION_NAME]/_packaging/[FEED_NAME]/maven/v1</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+        ```
+
+    1. Add or edit the settings.xml file in ${user.home}/.m2. Replace the `[ORGANIZATION_NAME]` placeholder with your own organization.
+    
+        ```xml
+        <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                                      https://maven.apache.org/xsd/settings-1.0.0.xsd">
+          <servers>
+            <server>
+              <id>[FEED_NAME]</id>
+              <username>[ORGANIZATION_NAME]</username>
+              <password>[PERSONAL_ACCESS_TOKEN]</password>
+            </server>
+          </servers>
+        </settings>
+        ```
+
+    1. Generate a [Personal Access Token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) with **Packaging read & write** scopes and paste it into the `<password>` tag.
+
+> [!IMPORTANT]
+> In order to automatically authenticate Maven feeds from Azure Artifacts, you must have the `mavenAuthenticateFeed` argument set to `true` in your Maven task. See [Maven build task](../tasks/build/maven.md) for more information.
+
+## Restore your package
+
+Run this command in your project directory to restore your package.
+
+```
+mvn build
+```
+
+::: moniker-end
+
+## Publish your package
+
+Run this command in your project directory to publish your package.
+
+```
+mvn deploy
 ```

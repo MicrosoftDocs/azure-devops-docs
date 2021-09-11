@@ -2,10 +2,7 @@
 title: Build Machine Image task
 description: Build a machine image using Packer to use for Azure Virtual machine scale set deployment
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 845fd4f4-642d-4694-8514-047948a5a556
-ms.manager: jillfra
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/07/2018
@@ -16,13 +13,13 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to build a machine image using Packer. This image can be used for Azure Virtual machine scale set deployment.
+Use this task to build a machine image using Packer. This image can be used for Azure Virtual machine scale set deployment.
 
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PackerBuildV1.md)]
+[!INCLUDE [temp](../includes/yaml/PackerBuildV1.md)]
 
 ::: moniker-end
 
@@ -47,7 +44,7 @@ Use this task in a build or release pipeline to build a machine image using Pack
 <tr><td>Skip temporary file cleanup during deprovision</td><td>(Optional) During deprovisioning of VM, skip clean-up of temporary files uploaded to VM. Refer <a href="https://www.packer.io/docs/builders/azure.html#skip_clean" data-raw-source="[here](https://www.packer.io/docs/builders/azure.html#skip_clean)">here</a></td></tr>
 <tr><td>Image URL</td><td>(Optional) Provide a name for the output variable which will store generated machine image url.</td></tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../includes/control-options-arguments.md)]
 
 </table>
 

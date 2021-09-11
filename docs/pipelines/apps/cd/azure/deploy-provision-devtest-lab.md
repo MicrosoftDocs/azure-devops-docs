@@ -2,23 +2,20 @@
 title: Manage a VM in DevTest Labs
 description: Create, manage, and delete Azure virtual machines (VMs) in Azure DevTest Labs in Azure Pipelines and TFS
 ms.assetid: 4FC75F92-EC04-4458-8069-53EEBF855D2F
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 09/07/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Manage a virtual machine in Azure DevTest Labs
 
-[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 The [Azure DevTest Labs](https://azure.microsoft.com/services/devtest-lab/)
@@ -26,7 +23,7 @@ service lets you quickly provision development and test stages using reusable
 templates. You can use pre-created images, minimize waste with quotas and policies,
 and minimize costs by using automated shutdown.
 
-By using an extension installed in Azure Pipelines or Team Foundation Server (TFS) you
+By using an extension installed in Azure Pipelines, you
 can easily integrate your build and release pipeline with  Azure DevTest Labs.
 The extension installs three tasks to create a VM, create a custom image from
 a VM, and delete a VM. This makes it easy to, for example, quickly deploy a 
@@ -50,16 +47,14 @@ extension from Visual Studio Marketplace, Azure DevOps tab:
 Carry out these tasks to create the Azure Resource Manager (ARM) template that you can
 use to create an Azure Virtual Machine on demand.
 
-1. Follow the steps in [these documents](/azure/devtest-lab/devtest-lab-overview)
+1. Follow the steps in [these documents](/azure/devtest-labs/devtest-lab-overview)
    on the Azure website to create an ARM template in your subscription.
 
-1. Follow the steps in [these documents](/azure/devtest-lab/devtest-lab-overview)
+1. Follow the steps in [these documents](/azure/devtest-labs/devtest-lab-overview)
    on the Azure website to save the ARM template as a file
    on your computer. Name the file **CreateVMTemplate.json**.
 
-1. Edit the **CreateVMTemplate.json** file as described in 
-   [this post](http://www.visualstudiogeeks.com/blog/DevOps/Configure-winrm-with-ARM-template-in-AzureDevTestLab-VM-deployment-using-PowerShell-artifact)
-   on Tarun Arora's blog to configure it for Windows Remote
+1. Edit the **CreateVMTemplate.json** file to configure it for Windows Remote
    Management (WinRM).
 
    >WinRM access is required to use deploy tasks such as 
@@ -147,10 +142,10 @@ release pipeline in Azure Pipelines.
 
 1. Configure the **Azure DevTest Labs Create VM** task as follows:
 
-   ![Azure DevTest Labs Tasks](_img/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Create the VM to use for subsequent deployments.
+   ![Azure DevTest Labs Tasks](media/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Create the VM to use for subsequent deployments.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more information, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Lab Name**: Select the name of the instance you created earlier.
    
@@ -158,7 +153,7 @@ release pipeline in Azure Pipelines.
    
    - **Template Parameters**: Enter the parameters for the variables defined in the template. Use the names of the variables you defined in the stage, for example: `-newVMName '$(vmName)' -userName '$(userName)' -password (ConvertTo-SecureString -String '$(password)' -AsPlainText -Force)`.
    
-   - **Output Variables - Lab VM ID**: You will need the ID of the newly created VM in subsequent tasks. The default name of the stage variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if required, but remember to use the correct name in subsequent tasks. The Lab VM ID is in the form: `/subscriptions/{subId}/resourceGroups/{rgName}/providers/Microsoft.DevTestLab/labs/{labName}/virtualMachines/{vmName}`.<p />
+   - **Output Variables - Lab VM ID**: You will need the ID of the newly created VM in subsequent tasks. The default name of the stage variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if necessary, but remember to use the correct name in subsequent tasks. The Lab VM ID is in the form: `/subscriptions/{subId}/resourceGroups/{rgName}/providers/Microsoft.DevTestLab/labs/{labName}/virtualMachines/{vmName}`.<p />
 
 1. The next stage is to execute the script you created earlier
    to collect the details of the DevTest Labs VM.
@@ -166,12 +161,12 @@ release pipeline in Azure Pipelines.
    and add an **Azure PowerShell** task from the **Deploy** tab.
    Configure the task as follows:
 
-   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShellV3) - Execute the script to collect the details of the DevTest Labs VM.
+   ![Azure PowerShell](../../../tasks/deploy/media/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShellV3) - Execute the script to collect the details of the DevTest Labs VM.
    
    - **Azure Connection Type**: `Azure Resource Manager`.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more information, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Script Type**: `Script File`.
    
@@ -201,10 +196,10 @@ release pipeline in Azure Pipelines.
    and add an **Azure DevTest Labs Create Custom Image** task
    from the **Deploy** tab. Configure it as follows:
 
-   ![Azure DevTest Labs Tasks](_img/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Create an image of the VM.
+   ![Azure DevTest Labs Tasks](media/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Create an image of the VM.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more information, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Lab Name**: Select the name of the instance you created earlier.
    
@@ -214,19 +209,19 @@ release pipeline in Azure Pipelines.
    
    - **Source Lab VM - Source Lab VM ID**: If you changed the default name of the stage variable that was automatically populated with the ID of the lab VM by an earlier task, edit it here. The default is `$(labVMId)`.
    
-   - **Output Variables - Lab VM ID**: You will need the ID of the newly created image when you want to manage or delete it. The default name of the stage variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if required.<p />
+   - **Output Variables - Lab VM ID**: You will need the ID of the newly created image when you want to manage or delete it. The default name of the stage variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if necessary.<p />
     
 1. The final stage in this example is to delete the VM you deployed
-   in your Azure DevTest Labs instance. In reality you will, of course,
+   in your Azure DevTest Labs instance. In reality you will
    do this _after_ you execute the dev tasks or run the tests you need
    on the deployed VM. In the release pipeline, select 
    **+ Add tasks** and add an **Azure DevTest Labs Delete VM** task
    from the **Deploy** tab. Configure it as follows:
 
-   ![Azure DevTest Labs Tasks](_img/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Delete the VM.
+   ![Azure DevTest Labs Tasks](media/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Delete the VM.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more information, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Lab VM ID**: If you changed the default name of the stage variable that was automatically populated with the ID of the lab VM by an earlier task, edit it here. The default is `$(labVMId)`.<p />
 
@@ -244,14 +239,14 @@ release pipeline in Azure Pipelines.
    improvements to the extension, visit the 
    [DevTest Labs feedback forum](https://feedback.azure.com/forums/320373-azure-devtest-labs).  
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../../includes/rm-help-support-shared.md)]

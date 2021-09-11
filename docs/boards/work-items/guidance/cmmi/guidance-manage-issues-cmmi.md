@@ -2,19 +2,18 @@
 title: CMMI process guidance, Manage issues  
 titleSuffix: Azure Boards
 description: Use the issue work item to help you to track problems with the project plan and its activities and tasks  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4f90afe9-9748-42e9-9117-e98ee6543417
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
 # Manage issues (CMMI)
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 You can use the issue work item to help you track problems with the project plan and its activities and tasks. Issues are not to be confused with bugs. The bug work item type is provided to track problems with the code and specific failing tests. The issue work item type is provided to help you track all other problems with the project. Some examples are ambiguity in the requirements, unavailability of personnel or other resources, problems with environments, other project risks that are occurring, and, in general, anything that puts successful delivery of the project at risk.  
   
@@ -25,7 +24,7 @@ You can use the issue work item to help you track problems with the project plan
   
  The work item form for an issue stores data in the fields and tabs that appear in the following illustrations:  
   
- ![CMMI Issue work item form](_img/procguid_cmmi_wform.png "ProcGuid_CMMI_Wform")  
+ ![CMMI Issue work item form](media/procguid_cmmi_wform.png "ProcGuid_CMMI_Wform")  
   
 ##  <a name="Review"></a> Review the issues  
  The open issues on the project should be reviewed regularly.  
@@ -39,7 +38,7 @@ You can use the issue work item to help you track problems with the project plan
   
  Record the action plan, and then break the work into task work items, linked to the issue work item as children. Tasks should be assigned to individual team members for resolution. Each task should be created together with a task type of "corrective action."  
   
- ![CMMI Task work item form](_img/procguid_cmmi_wtask.png "ProcGuid_CMMI_WTask")  
+ ![CMMI Task work item form](media/procguid_cmmi_wtask.png "ProcGuid_CMMI_WTask")  
   
 ##  <a name="Verify"></a> Verify Resolved Issues  
  During your regular review of open issues, it's a good idea to review issues that have been marked as resolved. If a consensus accepts the documented resolution, mark the issue as "closed," and set its reason to "resolved." Use the open issues query, and filter for state equals "resolved."  
@@ -54,7 +53,7 @@ You can use the issue work item to help you track problems with the project plan
  If the issue has not been successfully resolved, rework the corrective action tasks, and assign them to suitable personnel for resolution. Reconsider the priority of the issue, and consider raising it to expedite resolution and to avoid additional delay.  
   
 ## Additional resources  
- For more information about SCAMPI appraisals, see the following Web page: [Software Engineering Institute](http://go.microsoft.com/fwlink/?LinkId=179026).  
+ For more information about SCAMPI appraisals, see the following Web page: [Software Engineering Institute](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=9247).  
   
 ## Related articles
  [Fields that track bugs, issues, and risks (CMMI)](guidance-bugs-issues-risks-field-reference-cmmi.md)

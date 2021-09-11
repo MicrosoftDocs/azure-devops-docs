@@ -1,20 +1,19 @@
 ---
 title: CMMI process guidance, Develop requirements
 titleSuffix: Azure Boards
-description: Describes the requirements what the stakeholders expect from the product and allowing them to be easily discussed with the business stakeholders, using the vocabulary and concepts of the business domain - Team Foundation Server (TFS)
-ms.prod: devops
+description: Describes the requirements what the stakeholders expect from the product and allowing them to be easily discussed with the business stakeholders, using the vocabulary and concepts of the business domain  
 ms.technology: devops-agile
 ms.assetid: 4947c45a-c6a4-4865-9e3a-677740a0a1bc
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 04/28/2017
 ---
 
 # Develop requirements
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 Requirements describe what the stakeholders expect from the product. You should express your requirements in terms that allow them to be easily discussed with the business stakeholders, using the vocabulary and concepts of the business domain. Requirements should neither discuss nor depend on the implementation. Requirements include not only the behavioral and quality of service expectations of the users but also statutory constraints and commercial standards.  
   
@@ -97,7 +96,7 @@ Requirements describe what the stakeholders expect from the product. You should 
   
 -   Requirement documents. Requirement documents give you the freedom to provide the appropriate level of detail for each requirement. If you decide to use documents, create a Word document for each requirement, and attach the document to the requirement work item, or upload the file to the team portal and add a hyperlink to the work item.  
   
--   Unified Markup Language (UML) sequence diagram. A sequence diagram is especially useful where several parties interact. For example, ordering the meal requires the customer, the DinnerNow Web site, the payment system, and the restaurant to interact in a specific sequence. Draw the sequence diagram in a UML model, check it into Team Foundation Server, and enter a link in the requirement work item. For more information, see [UML Sequence Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409389).  
+-   Unified Markup Language (UML) sequence diagram. A sequence diagram is especially useful where several parties interact. For example, ordering the meal requires the customer, the DinnerNow Web site, the payment system, and the restaurant to interact in a specific sequence. Draw the sequence diagram in a UML model, check it into Team Foundation Server, and enter a link in the requirement work item. For more information, see [UML Sequence Diagrams: Guidelines](/visualstudio/modeling/uml-sequence-diagrams-guidelines).  
   
 ### Specific scenarios  
  Start by writing specific scenarios, which follow a particular set of actors through a specific sequence. For example, "Carlos orders a pizza and garlic bread at the DinnerNow Web site. The Web site redirects Carlos to Woodgrove Bank's payment service. Fourth Coffee prepares the pizza and delivers it."  
@@ -118,9 +117,9 @@ Requirements describe what the stakeholders expect from the product. You should 
 ### Organizing the scenarios  
  You can organize scenarios by using the following methods:  
   
--   Draw use case diagrams that show each scenario as a use case. This method is recommended because it makes the scenarios very easy to present and discuss. For more information, see [UML Use Case Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432).  
+-   Draw use case diagrams that show each scenario as a use case. This method is recommended because it makes the scenarios very easy to present and discuss. For more information, see [UML Use Case Diagrams: Guidelines](/visualstudio/modeling/uml-use-case-diagrams-guidelines).  
   
-    -   Link each use case to the work item that defines the scenario. For more information, see [Link model elements and work items](https://msdn.microsoft.com/library/dd465152).  
+    -   Link each use case to the work item that defines the scenario. For more information, see [Link model elements and work items](/visualstudio/modeling/link-model-elements-and-work-items).  
   
     -   Draw Extends relationships to show that one scenario is a variation of another. For example, "Customer specifies separate payment and delivery addresses" is an extension of the basic "Customer makes an order" use case. Extensions are particularly useful to separate out scenarios that will be implemented in a later iteration.  
   
@@ -137,27 +136,27 @@ Requirements describe what the stakeholders expect from the product. You should 
   
  Save the model in version control.  
   
- For more information, see [Model user requirements](https://msdn.microsoft.com/library/dd409376).  
+ For more information, see [Model user requirements](/visualstudio/modeling/model-user-requirements).  
   
 ### Modeling behaviors  
- Draw activity diagrams to summarize scenarios. Use swimlanes to group the actions that are performed by different actors. For more information, see [UML Activity Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409389).  
+ Draw activity diagrams to summarize scenarios. Use swimlanes to group the actions that are performed by different actors. For more information, see [UML Activity Diagrams: Guidelines](/visualstudio/modeling/uml-sequence-diagrams-guidelines).  
   
  Although a scenario usually describes a specific sequence of events, an activity diagram shows all the possibilities. Drawing an activity diagram can prompt you to think about alternative sequences and to ask your business clients what should happen in those cases.  
   
  The following illustration shows a simple example of an activity diagram.  
   
- ![Activity with three actions and a loop.](_img/uc_reqmwfact.png "UC_ReqmWFAct")  
+ ![Activity with three actions and a loop.](media/uc_reqmwfact.png "UC_ReqmWFAct")  
   
  Where the interchange of messages is important, it might be more effective to use a sequence diagram that includes a lifeline for each actor and major product component.  
   
- Use case diagrams let you summarize the different flows of activity that your product supports. Each node on the diagram represents a series of interactions between the users and the application in pursuit of a particular user goal. You can also factor common sequences and optional extensions into separate use case nodes. For more information, see [UML Use Case Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409389.aspx).  
+ Use case diagrams let you summarize the different flows of activity that your product supports. Each node on the diagram represents a series of interactions between the users and the application in pursuit of a particular user goal. You can also factor common sequences and optional extensions into separate use case nodes. For more information, see [UML Use Case Diagrams: Guidelines](/visualstudio/modeling/uml-sequence-diagrams-guidelines).  
   
  The following illustration shows a simple example of a use case diagram.  
   
- ![Use cases for previous actions](_img/uml_reqmwfuc.png "UML_ReqmWFUC")  
+ ![Use cases for previous actions](media/uml_reqmwfuc.png "UML_ReqmWFUC")  
   
 ### Modeling concepts  
- Draw domain class diagrams to describe the important entities and their relationships that are mentioned in the scenarios. For example, the DinnerNow model shows Restaurant, Menu, Order, Menu Item, and so on. For more information, see [UML Class Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409389).  
+ Draw domain class diagrams to describe the important entities and their relationships that are mentioned in the scenarios. For example, the DinnerNow model shows Restaurant, Menu, Order, Menu Item, and so on. For more information, see [UML Class Diagrams: Guidelines](/visualstudio/modeling/uml-sequence-diagrams-guidelines).  
   
  Label the roles (ends) of the relationships with names and cardinalities.  
   
@@ -165,7 +164,7 @@ Requirements describe what the stakeholders expect from the product. You should 
   
  The following illustration shows a simple example of a class diagram.  
   
- ![Rule in Comment attached to Order class.](_img/uml_reqmcd2.png "UML_ReqmCD2")  
+ ![Rule in Comment attached to Order class.](media/uml_reqmcd2.png "UML_ReqmCD2")  
   
 ### Static constraints  
  Add to the class diagrams constraints that govern the attributes and relationships. For example, the items on an order must all come from the same restaurant. These types of rules are important for the design of the product.  
@@ -230,14 +229,14 @@ Requirements describe what the stakeholders expect from the product. You should 
 ## Additional resources  
  For more information, see the following Web resources:  
   
--   [Modern Requirements Suite 4TFS](http://www.modernrequirements.com/), a requirement management software platform that bi-directionally connects Microsoft Office technologies with Azure Boards and TFS to increase stakeholder engagement and provide end-to-end traceability.  
+-   [Modern Requirements Suite 4TFS](https://www.modernrequirements.com/), a requirement management software platform that bi-directionally connects Microsoft Office technologies with Azure Boards and TFS to increase stakeholder engagement and provide end-to-end traceability.  
     
--   [A Practical Guide to Feature Driven Development](http://go.microsoft.com/fwlink/?LinkId=179031), Stephen R. Palmer and Malcolm J. Felsing; Prentice-Hall PTR, 2002.  
+-   [A Practical Guide to Feature Driven Development](https://go.microsoft.com/fwlink/?LinkId=179031), Stephen R. Palmer and Malcolm J. Felsing; Prentice-Hall PTR, 2002.  
   
--   [Streamlined Object Modeling: Patterns, Rules and Implementation](http://go.microsoft.com/fwlink/?LinkId=179032), Jill Nicola, Mark Mayfield, and Mike Abney; Prentice Hall PTR, 2001.  
+-   [Streamlined Object Modeling: Patterns, Rules and Implementation](https://go.microsoft.com/fwlink/?LinkId=179032), Jill Nicola, Mark Mayfield, and Mike Abney; Prentice Hall PTR, 2001.  
   
--   [Agile Modeling: Effective Practices for Extreme Programming and the Unified Process, Scott Ambler](http://go.microsoft.com/fwlink/?LinkId=179033); Wiley, 2002.  
+-   [Agile Modeling: Effective Practices for Extreme Programming and the Unified Process, Scott Ambler](https://go.microsoft.com/fwlink/?LinkId=179033); Wiley, 2002.  
   
--   [Domain Driven Design: Tackling Complexity in the Heart of Software](http://go.microsoft.com/fwlink/?LinkId=179034), Eric Evans; Addison Wesley Professional, 2003.  
+-   [Domain Driven Design: Tackling Complexity in the Heart of Software](https://go.microsoft.com/fwlink/?LinkId=179034), Eric Evans; Addison Wesley Professional, 2003.  
   
--   [Object Design: Roles, Responsibilities and Collaborations, Rebecca Wirfs-Brock and Alan McKean](http://go.microsoft.com/fwlink/?LinkId=179035); Addison Wesley Professional, 2002.
+-   [Object Design: Roles, Responsibilities and Collaborations, Rebecca Wirfs-Brock and Alan McKean](https://go.microsoft.com/fwlink/?LinkId=179035); Addison Wesley Professional, 2002.

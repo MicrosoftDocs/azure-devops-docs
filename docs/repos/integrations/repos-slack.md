@@ -2,14 +2,13 @@
 title: Azure Repos with Slack
 titleSuffix: Azure Repos
 description: Monitor Azure Repos from Slack
-ms.prod: devops
 ms.technology: devops-code-git
 ms.topic: conceptual
 ms.manager: bijuv
-ms.author: karrg
-author: RGKarthik
+ms.author: Divais
+author: Divais
 monikerRange: 'azure-devops'
-ms.date: 08/05/2019
+ms.date: 10/21/2019
 ---
 
 # Azure Repos with Slack
@@ -20,7 +19,7 @@ in and whenever a pull request (PR) is created, updated or a merge is attempted.
 Team Foundation Version Control (TFVC) events.
 
 > [!div class="mx-imgBorder"]
-> ![Notifications image](_img/integrations-slack/notifications.png)
+> ![Notifications image](media/integrations-slack/notifications.png)
 
 Read this article to learn how to: 
 
@@ -34,8 +33,8 @@ Read this article to learn how to:
 
 ## Prerequisites
 
-- To create subscriptions in a Slack channel for repository-related events, you must be a member of the Azure Project Administrators group. 
-To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md).
+- To create subscriptions in a Slack channel for repository-related events, you must be a member of the Azure Project Administrators group or Team Administrators group. 
+To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the organization. See [Change application 
 access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 
@@ -50,7 +49,7 @@ access policies for your organization](../../organizations/accounts/change-appli
 2.	Once added, you'll see a welcome message from the app as shown in the following image.
    
     > [!div class="mx-imgBorder"]
-    > ![Welcome message](./_img/integrations-slack/welcome-message.png)
+    > ![Welcome message](./media/integrations-slack/welcome-message.png)
 
 3.	Use the `/azrepos` Slack handle to interact with the app. A full list of commands is provided in the [Command reference](#command-reference) section of this article.
 
@@ -60,9 +59,22 @@ access policies for your organization](../../organizations/accounts/change-appli
 1.	Once the app has been installed in your Slack workspace, connect and authenticate yourself to Azure Repos using `/azrepos signin` command.
    
     > [!div class="mx-imgBorder"]
-    > ![Sign in prompt image ](./_img/integrations-slack/sign-in.png)
+    > ![Sign in prompt image ](./media/integrations-slack/sign-in.png)
 
-2.	To start monitoring a repository, use the following slash command inside a channel:
+2.	To start monitoring all Git repositories in a project, use the following slash command inside a channel:
+
+    ```
+    /azrepos subscribe [project url]
+    ```
+    The project URL can be to any page within your project (except URLs to repositories).
+
+    For example:
+
+    ```
+    /azrepos subscribe https://dev.azure.com/myorg/myproject/
+    ```
+
+    You can also monitor a specific repository using the following command:
 
     ```
     /azrepos subscribe [repository url]
@@ -81,12 +93,14 @@ access policies for your organization](../../organizations/accounts/change-appli
     ```
     /azrepos subscribe https://dev.azure.com/myorg/myproject/_versionControl
     ```
+    
+    > [!NOTE]
+    > You can subscribe only to public repositories. 
 
-3. The subscribe command gets you started with a default subscription. For Git repositories, the channel is subscribed to the **Pull request created** 
-event, and for TFVC repositories, the channel is subscribed to the **Code checked in** event.
+3. The subscribe command gets you started with a default subscription. For Git repositories, the channel is subscribed to the **Pull request created** event (with target branch =  master), and for TFVC repositories, the channel is subscribed to the **Code checked in** event.
 
     > [!div class="mx-imgBorder"]
-    > ![Default subscriptions creation message](./_img/integrations-slack/subscriptions-added-confirmation.png)
+    > ![Default subscriptions creation message](./media/integrations-slack/subscriptions-added-confirmation.png)
 
 
 ## Manage subscriptions
@@ -100,8 +114,11 @@ To view, add and remove subscriptions for a channel, use the `subscriptions` com
 This command lists all the current subscriptions for the channel and allows you to add new subscriptions or remove existing ones. 
 When adding subscriptions, you can customize the notifications you get by using various filters, as described in the following section.
 
+[!NOTE]
+Team administrators aren't able to remove or modify subscriptions created by Project administrators.
+
 > [!div class="mx-imgBorder"]
-> ![View subscriptions](./_img/integrations-slack/subscriptions-list.png)
+> ![View subscriptions](./media/integrations-slack/subscriptions-list.png)
 
 ## Using filters effectively to customize subscriptions
 
@@ -119,12 +136,12 @@ The following steps demonstrate how to customize subscriptions.
 ### Example: Get notifications only when my team is in the reviewer list for a PR
 
 > [!div class="mx-imgBorder"]
-> ![Reviewer has my team](./_img/integrations-slack/reviewer-filters.png)
+> ![Reviewer has my team](./media/integrations-slack/reviewer-filters.png)
 
 ### Example: Tell me when merge attempts fail due to a policy violation
 
 > [!div class="mx-imgBorder"]
-> ![Merge attempt unsuccessful – due to policy violation](./_img/integrations-slack/merge-filters.png)
+> ![Merge attempt unsuccessful – due to policy violation](./media/integrations-slack/merge-filters.png)
 
 > [!NOTE]
 >* All the filters are typically drop-downs. However if the drop-down were to have greater than 100 items, then users are asked to enter the values manually.
@@ -135,19 +152,38 @@ The following steps demonstrate how to customize subscriptions.
 When a user pastes the URL of a PR, a preview is shown like the one in the following image. This helps to keep PR-related conversations contextual and accurate.
 
 > [!div class="mx-imgBorder"]
-> ![URL unfurling](./_img/integrations-slack/url-unfurling.png)
+> ![URL unfurling](./media/integrations-slack/url-unfurling.png)
+
+For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a workspace.
+
+## Remove subscriptions and repositories from a channel
+
+- Many a time, users want to clean up their channel by removing repositories and subscriptions. Use the below command to achieve the same.
+
+	```
+	/azrepos unsubscribe all [project url]
+	```
+
+	For example:
+
+	```
+	/azrepos unsubscribe all https://dev.azure.com/myorg/myproject
+	```
+This command will delete all the subscriptions related to any repository in the project and removes the repositories from the channel. Only project admins can run this command.
 
 ## Command reference
 
-The following table lists all the `/azrepos commands` you can use in your Slack channel
+The following table lists all the `/azrepos commands` you can use in your Slack channel.
 
 |Slash command	| Functionality |
 | -------------------- |----------------|
-| /azrepos subscribe [repository url]	| Subscribe to a repository to receive notifications |
+| /azrepos subscribe [repository url/ project url]	| Subscribe to a repository or all repositories in a project to receive notifications |
 | /azrepos subscriptions	| Add or remove subscriptions for this channel |
 | /azrepos signin	| Sign in to your Azure Repos organization |
 | /azrepos signout	| Sign out from your Azure Repos organization |
 | /azrepos feedback	| Report a problem or suggest a feature |
+| /azrepos unsubscribe all [project url] | Remove all repositories (belonging to a project) and their associated subscriptions from a channel |
+
 
 ### Notifications in Private channels
 
@@ -159,20 +195,19 @@ using `/invite @azrepos`. Post that, you can set up and manage your notification
 
 If you are experiencing the following errors when using the [Azure Repos App for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installreposapp), follow the procedures in this section. 
 
-[!INCLUDE [troubleshooting](./_shared/repos-troubleshoot-authentication.md)]
+[!INCLUDE [troubleshooting](./includes/repos-troubleshoot-authentication.md)]
 
 In the **same browser**, start a new tab, navigate to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azrepos signout` command followed by the `/azrepos signin` command. 
 
 Select the `Sign in` button and you'll be redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign in process.
 
 > [!div class="mx-imgBorder"]
-> ![Consent to the requested app permissions](_img/troubleshooting/repos-consent-page-slack.png)
+> ![Consent to the requested app permissions](media/troubleshooting/repos-consent-page-slack.png)
 
-If these steps don't resolve your authentication issue, contact us at `AzureDevOpsSlackApps@microsoft.com`.
+If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Related articles
 
-- [Azure Boards with Slack](https://aka.ms/AzureBoardsSlackIntegration)
-- [Azure Pipelines with Slack](https://aka.ms/AzurePipelinesSlackIntegration)
+- [Azure Boards with Slack](../../boards/integrations/boards-slack.md)
+- [Azure Pipelines with Slack](../../pipelines/integrations/slack.md)
 - [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)
-

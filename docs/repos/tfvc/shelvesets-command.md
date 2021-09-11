@@ -3,11 +3,7 @@ title: Shelvesets Command
 titleSuffix: Azure Repos
 description: Shelvesets Command
 ms.assetid: 731a4339-1ba7-45ab-a551-51c3f4ae158c
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Shelvesets Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Displays information about a set of shelved changes.
 
@@ -24,7 +20,10 @@ Displays information about a set of shelved changes.
 
 To use the **shelvesets** command, you must the have **Read** permission and the **Check out** permission set to **Allow** for the items in the shelvesets. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf shelvesets [/owner:ownername] [/format:(brief|detailed)] [/collection:TeamProjectCollectionUrl]] [/login:username,[password]] shelvesetname
+```
+tf shelvesets [/owner:ownername] [/format:(brief|detailed)] [/collection:TeamProjectCollectionUrl]] [/login:username,[password]] shelvesetname
+```
+
 ## Parameters<table>
 
 |**Argument**|**Description**|
@@ -48,27 +47,33 @@ For detailed information about the individual source file revisions of which a p
 
 You can compare a shelved revision to its base shelveset version without unshelving the item into your workspace. You can use this feature to conduct a quick peer code review.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ### Examples
 
 The following example displays information about the BuddyTest\_23 shelveset for the Team Foundation Server to which the current directory maps.
 
-    c:\projects>tf shelvesets BuddyTest_23
+```
+c:\projects>tf shelvesets BuddyTest_23
+```
 
 The following example lists the shelvesets owned by "John."
 
-    c:\projects>tf shelvesets /owner:John
+```
+c:\projects>tf shelvesets /owner:John
+```
 
 The following example displays information about the shelvesets on the Team Foundation Server to which the current directory maps.
 
-    c:\projects>tf shelvesets /owner:*
+```
+c:\projects>tf shelvesets /owner:*
+```
 
 ## See Also
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Status Command](status-command.md)
 
@@ -84,4 +89,4 @@ The following example displays information about the shelvesets on the Team Foun
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

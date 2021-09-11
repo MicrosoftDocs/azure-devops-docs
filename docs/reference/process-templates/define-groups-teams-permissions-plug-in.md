@@ -2,20 +2,18 @@
 title: Define groups, teams, and permissions 
 titleSuffix: TFS
 description: Customize the Groups and Permission plug-in to preconfigure groups, teams, and user permissions
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 322a80cc-0396-43d7-8be3-63d5cce058d3
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= azure-devops-2019'
+monikerRange: '< azure-devops-2019'
 ms.date: 09/08/2017
 ---
 
 # Define groups, teams, and permissions using the Groups and Permissions Plug-in
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You can define security groups to control access to functional areas within a project. In addition to the [default security groups](../../organizations/security/permissions.md), you can configure a project's initial groups, group members, and security permissions by customizing the Groups and Permissions plug-in. With this plug-in, you can define groups, teams, add groups and users as members to groups, and grant permissions to the groups.  
   
@@ -197,6 +195,6 @@ You must specify permissions for each group that you create. You use the **permi
 ## Related articles
 -  [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
 -  [Control access to functional areas](control-access-to-functional-areas.md)   
--  [Apply a field rule](../xml/apply-rule-work-item-field.md)
+-  [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)
 -  [Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups)  
 -  [Customize a process](customize-process.md)

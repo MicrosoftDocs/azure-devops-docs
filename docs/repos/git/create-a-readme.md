@@ -4,20 +4,16 @@ titleSuffix: Azure Repos
 description: Tips, advice, and suggestions on how to create a great readme file for your Git repo.
 ms.assetid: fcd84ee1-909c-4837-9c39-bf036afe6232
 toc: show
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Create a README for your repo
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
 
 Your Git repo should have a readme file so that viewers know what your code does and how they can get started using it. 
 Your readme should speak to the following audiences:
@@ -52,9 +48,11 @@ If your project is a library or an interface to an API, put a code snippet showi
 
 ## Provide build steps for developers
 
-Use the next section of your readme to show developers how to build your code from a fresh clone of the repo and run any included tests.
-Give details about the tools needed to build the code and document the steps to configure them to get a clean build. 
-Break out dense or complex build instructions into a separate page in your documentation and link to it if needed.   
+Use the next section of your readme to show developers how to build your code from a fresh clone of the repo and run any included tests.  
+Give details about the tools needed to build the code and document the steps to configure them to get a clean build.  
+Break out dense or complex build instructions into a separate page in your documentation and link to it if needed.  
+Run through the instructions as you write them in order to verify the instructions would work for a new contributor.  
+Remember, the developer relying on these instructions could be yourself after not working on a project for some time.   
 
 Provide the commands to run any test cases provided with the source code after the build is successful. 
 Developers lean on these test cases to ensure that they don't break your code as they make changes. 

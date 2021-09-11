@@ -1,13 +1,9 @@
 ---
-title: Use the Lock Command to lock or unlock a TFVC file or folder
+title: Use Lock Command to lock/unlock a TFVC file/folder
 titleSuffix: Azure Repos
 description: Lock or unlock files or folder under TFVC version control using the Lock Command
 ms.assetid: 5b62627b-fdb3-4832-a387-811dcc2808e3
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Lock Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Locks or unlocks a file or folder to deny or restore the right of users to check out an item for edit into a different workspace or to check in pending changes to an item from a different workspace.
 
@@ -24,8 +20,10 @@ Locks or unlocks a file or folder to deny or restore the right of users to check
 
 To use the **lock** command, you must have the **Lock** permission set to **Allow**. Having the Unlock other user's changes permission set to **Allow** is required to remove a lock held by another user if you do not have **Write** permission for that user's workspace. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md#lock-permission).
 
-    tf lock itemspec /lock:(none|checkout|checkin) 
-    [/workspace:workspacename] [/recursive] [/login:username,[password]] [/collection:TeamProjectCollectionUrl] 
+```
+tf lock itemspec /lock:(none|checkout|checkin) 
+[/workspace:workspacename] [/recursive] [/login:username,[password]] [/collection:TeamProjectCollectionUrl] 
+```
 
 ## Parameters
 
@@ -33,7 +31,7 @@ To use the **lock** command, you must have the **Lock** permission set to **Allo
 <tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
 	<td><p><em>itemspec</em></p></td>
-	<td><p>Identifies the file or folder to lock or unlock. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30)">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
+	<td><p>Identifies the file or folder to lock or unlock. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
 <tr>
 	<td><p><em>workspacename</em></p></td>
 	<td><p>The user-provided value for the <strong>/workspace</strong> option.</p></td></tr>
@@ -42,7 +40,7 @@ To use the **lock** command, you must have the **Lock** permission set to **Allo
     <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName.</em></p></td></tr>
 <tr>
 	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>The URL of the project collection that contains the file or folder that you want to lock or unlock (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td></tr></tbody>
+    <td><p>The URL of the project collection that contains the file or folder that you want to lock or unlock (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr></tbody>
 </table>
 
 <table><thead>
@@ -64,10 +62,10 @@ To use the **lock** command, you must have the **Lock** permission set to **Allo
 ## Remarks
 You can use the lock command to temporarily freeze the Team Foundation version control server version of an item so that you can check in a pending change without having to resolve any merge conflicts. If you want to permanently prevent access to an item in the Team Foundation version control server, you should use the [Permission Command](permission-command.md) instead.
 
->**Note:**  
->As a courtesy to your teammates, notify them when you apply a lock to an item, explain why you are doing this, and estimate when you plan to remove the lock, if you can.
+> [!NOTE]
+> As a courtesy to your teammates, notify them when you apply a lock to an item, explain why you are doing this, and estimate when you plan to remove the lock, if you can.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ### How to Lock an Item
 
@@ -113,38 +111,35 @@ You can determine which files are locked in the Team Foundation version control 
 ## Examples
 The following example prevents other users from checking out 314.cs.
 
-    c:\projects>tf lock /lock:checkout 314.cs
+```
+c:\projects>tf lock /lock:checkout 314.cs
+```
 
 The following example prevents other users from checking in changes to 1256.cs but enables them to check it out in their workspaces.
 
-    c:\projects>tf lock /lock:checkin 1256.cs
+```
+c:\projects>tf lock /lock:checkin 1256.cs
+```
 
 The following example prevents other users from pending changes to any items in the src/ folder in the Team Foundation version control server.
 
-    c:\projects>tf lock /lock:checkout $/src
+```
+c:\projects>tf lock /lock:checkout $/src
+```
 
 The following example unlocks and makes all files in the src/ Team Foundation version control server folder available for check-out and check-in by other users.
 
-    c:\projects>tf lock /lock:none src/
+```
+c:\projects>tf lock /lock:none src/
+```
 
-## See Also
 
-#### Reference
+## Related articles
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
-
-[Checkout and Edit Commands](checkout-or-edit-command.md)
-
-[Status Command](status-command.md)
-
-#### Concepts
-
-[Understanding Lock Types](understand-lock-types.md)
-
-[Create a Workspace to Work with your Project](create-work-workspaces.md)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
-
-[Working with Version Control Locks](work-version-control-locks.md)
+- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+- [Checkout and Edit Commands](checkout-or-edit-command.md)
+- [Status Command](status-command.md)
+- [Understanding Lock Types](understand-lock-types.md)
+- [Create a Workspace to Work with your Project](create-work-workspaces.md)
+- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Working with Version Control Locks](work-version-control-locks.md)

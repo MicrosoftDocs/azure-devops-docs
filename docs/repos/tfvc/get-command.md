@@ -1,13 +1,9 @@
----
-title: Use the Get command to download TFVC files or folders
+﻿---
+title: Use the Get command to download TFVC files/folders
 titleSuffix: Azure Repos
 description: Get files or folders under TFVC version control using the Get command
 ms.assetid: f374dfcb-9c1b-4cab-9a20-3c81d29593a3
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,15 +12,17 @@ monikerRange: '>= tfs-2015'
 
 # Get command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Gets (downloads) either the latest version or a specified version of one or more files or folders from Team Foundation Server to the workspace. Although the **Get** command provides a different user interface than Visual Studio (see [Download (get) files from the Server](download-get-files-from-server.md)), the process is fundamentally the same.
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
-    [/recursive] [/preview] [/noautoresolve] [/noprompt]
-    [/login:username,[password]]
+```
+tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
+[/recursive] [/preview] [/noautoresolve] [/noprompt]
+[/login:username,[password]]
+```
 
 ## Parameters
 
@@ -78,7 +76,7 @@ Gets (downloads) either the latest version or a specified version of one or more
 </tr>
 <tr>
 <td><p><strong>/remap</strong></p></td>
-<td><p>See <a href="http://go.microsoft.com/fwlink/?LinkId=253390">phkelley&#39;s blog: tf get /remap</a>.</p></td>
+<td><p>See <a href="/archive/blogs/phkelley/tf-get-remap">phkelley&#39;s blog: tf get /remap</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/version</strong>:<i>versionspec</i></p></td>
@@ -94,37 +92,49 @@ In all the following examples, assume that `$/SiteApp/Main/` is mapped to `c:\\c
 
 ### Get the latest version of all items in a workspace
 
-    c:\code\SiteApp\Main\SolutionA>tf get
+```
+c:\code\SiteApp\Main\SolutionA>tf get
+```
 
 Gets the latest versions of all items in the workspace. For example, the above command would recursively get all files in `$/SiteApp/Main/` including all its child folders.
 
 ### Recursively get the latest version of items of a certain type in a folder
 
-    c:\code\SiteApp\Main\SolutionA\Project1>tf get *.cs /recursive
+```
+c:\code\SiteApp\Main\SolutionA\Project1>tf get *.cs /recursive
+```
 
 Gets the latest version of all C\# (.cs) files in `c:\\code\\SiteApp\\Main\\SolutionA\\Project1`.
 
 ###  Get the latest version of a file
 
-    c:\code\SiteApp\Main\SolutionA\Project1>tf get program.cs
+```
+c:\code\SiteApp\Main\SolutionA\Project1>tf get program.cs
+```
 
 Gets the latest version of program.cs in Project1.
 
 ### Get a specific version of a file
 
-    c:\code\SiteApp\Main\SolutionA\Project1>tf get program.cs;8
+```
+c:\code\SiteApp\Main\SolutionA\Project1>tf get program.cs;8
+```
 
 Gets version 8 of program.cs in Project1.
 
 ### Get the latest version of two files
 
-    c:\code\SiteApp\Main\SolutionA\Project1>tf get file1.cs file2.cs
+```
+c:\code\SiteApp\Main\SolutionA\Project1>tf get file1.cs file2.cs
+```
 
 Gets the latest version of file1.cs and file2.cs in Project1.
 
 ### Synchronize a workspace to match a version of the team's codebase
 
-    c:\code\SiteApp\Main>tf get /v:15
+```
+c:\code\SiteApp\Main>tf get /v:15
+```
 
 Synchronizes the workspace to match the codebase as it existed when changeset 15 was created:
 
@@ -136,7 +146,9 @@ Synchronizes the workspace to match the codebase as it existed when changeset 15
 
 ### Synchronize a workspace to match a labeled version of the team's codebase
 
-    c:\code\SiteApp\Main>tf get /v:LLastKnownGood
+```
+c:\code\SiteApp\Main>tf get /v:LLastKnownGood
+```
 
 Synchronizes the workspace to match the items in the codebase that are [labeled](use-labels-take-snapshot-your-files.md) **LastKnownGood**:
 
@@ -152,12 +164,12 @@ Synchronizes the workspace to match the items in the codebase that are [labeled]
 
 ## Tips
 
--   ![Tip](_img/get-command/IC572374.png) If you are beginning a new task, it's probably a good idea for you to run `tf get` (you can do so from any directory in your workspace) to download the latest files from the server before you check out files and begin your work.
+-   ![Tip](media/get-command/IC572374.png) If you are beginning a new task, it's probably a good idea for you to run `tf get` (you can do so from any directory in your workspace) to download the latest files from the server before you check out files and begin your work.
 
--   ![Tip](_img/get-command/IC572374.png) As needed, this command creates folders on disk to contain the child items that the command is downloading.
+-   ![Tip](media/get-command/IC572374.png) As needed, this command creates folders on disk to contain the child items that the command is downloading.
 
--   ![Tip](_img/get-command/IC572374.png) You can view information about the history of an item using the [History command](history-command.md) and the [Changeset Command](changeset-command.md).
+-   ![Tip](media/get-command/IC572374.png) You can view information about the history of an item using the [History command](history-command.md) and the [Changeset Command](changeset-command.md).
 
--   ![Tip](_img/get-command/IC572374.png) If you are concerned about what changes might occur to the files in the workspace, you can use the **/preview** option to see the changes that would occur without actually implementing them.
+-   ![Tip](media/get-command/IC572374.png) If you are concerned about what changes might occur to the files in the workspace, you can use the **/preview** option to see the changes that would occur without actually implementing them.
 
--   ![Tip](_img/get-command/IC572374.png) Conflicts could block your get. A typical cause of conflicts is trying to get an item on which you have pending changes. You can use the [Resolve Command](resolve-command.md) to resolve these conflicts.
+-   ![Tip](media/get-command/IC572374.png) Conflicts could block your get. A typical cause of conflicts is trying to get an item on which you have pending changes. You can use the [Resolve Command](resolve-command.md) to resolve these conflicts.

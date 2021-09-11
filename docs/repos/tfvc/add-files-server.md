@@ -3,11 +3,7 @@ title: Add files to the server
 titleSuffix: Azure Repos
 description: Add files to the server
 ms.assetid: 9b457eb0-9cdf-438d-935d-ceac7ce2201a
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 03/20/2018
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Add files to the server
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Adding a file to version control is often automatic when you use Solution Explorer and your project is under version control. However, in some cases, you have to take some extra steps to add the project to version control.
 
@@ -27,7 +23,7 @@ Adding a file to version control is often automatic when you use Solution Explor
 
 You can simultaneously create a new project and add it to version control so that you and your team can immediately enjoy all the benefits of version control beginning from the first line of code you write.
 
-![New Project dialog box](_img/add-files-server/IC579084.png)
+![New Project dialog box](media/add-files-server/IC579084.png)
 
 1.  In Visual Studio, if you have not already done so, [connect to the project](../../organizations/projects/connect-to-projects.md).
 
@@ -47,7 +43,7 @@ You can simultaneously create a new project and add it to version control so tha
 
 7.  Choose **OK** to create the code project, which you can then view in Solution Explorer (Keyboard: Ctrl + Alt + L).
 
-    ![New Code Project in Solution Explorer](_img/add-files-server/IC612253.png)
+    ![New Code Project in Solution Explorer](media/add-files-server/IC612253.png)
 
 8.  In **Solution Explorer**, open the context menu of the solution you created or modified and then choose **Check In** to [submit your pending changes](check-your-work-team-codebase.md).
 
@@ -147,7 +143,7 @@ Many teams develop code that depends on binaries that are not built by the solut
 Sometimes these binaries come from another team in the same company. For example, Team A depends on binaries produced by Team B, and each team must for some reason work in different project collections. As a result, Team B delivers binaries to Team A, which then checks them into version control.
 
 >[!TIP]  
->If your dev machines and [build agents](../../pipelines/agents/agents.md) can access the Internet, then [NuGet](http://go.microsoft.com/fwlink/?LinkId=246165) may make it easier for your team to manage your dependencies and keep your binaries up to date. You can store your packages in TFS or Azure DevOps Services using [Azure Artifacts](../../artifacts/index.md).
+>If your dev machines and [build agents](../../pipelines/agents/agents.md) can access the Internet, then [NuGet](https://go.microsoft.com/fwlink/?LinkId=246165) may make it easier for your team to manage your dependencies and keep your binaries up to date. You can store your packages in TFS or Azure DevOps Services using [Azure Artifacts](../../artifacts/index.yml).
 
 The folder and workspace structure you should use to store your third-party binaries depends on the way your solutions depend on these libraries.
 
@@ -157,14 +153,14 @@ If you place your third-party binaries in the same parent folder that contains y
 
 For example, a team uses this folder structure:
 
-![Library folder within the main parent folder](_img/add-files-server/IC591735.png)  
+![Library folder within the main parent folder](media/add-files-server/IC591735.png)  
 Every code project can then reference the libraries folder with the following relative path: `../../Lib`
 
 If, later in your project, your team needs to isolate separate efforts that require different versions of the binaries, you can branch the library folder along with your solution folder.
 
 For example, Version 1 an app leverages Version 1 of a library. As some developers on the Data Access team work on the next version, they leverage Version 2. But the other teams are not yet ready to upgrade. You can use branches to manage this kind of situation.
 
-![Library folder within a branch structure](_img/add-files-server/IC581098.png)
+![Library folder within a branch structure](media/add-files-server/IC581098.png)
 
 ### Use a workspace to map in the binaries
 
@@ -172,11 +168,11 @@ Some companies must manage more complicated dependencies on third-party librarie
 
 For example, FabrikamFiber puts the following project, branch, and folder structure in place:
 
-![Libraries stored in a dedicated project](_img/add-files-server/IC579087.png)  
+![Libraries stored in a dedicated project](media/add-files-server/IC579087.png)  
 
 Raisa sets up her dev machine with two workspaces for two different efforts, each of which map in the libraries she needs:
 
-![Workspaces map in the libraries](_img/add-files-server/IC579088.png)
+![Workspaces map in the libraries](media/add-files-server/IC579088.png)
 
 <a name="tfignore"></a>
 
@@ -204,21 +200,23 @@ The following rules apply to a .tfignore file:
 
 ### .tfignore file example
 
-    ######################################
-    # Ignore .cpp files in the ProjA sub-folder and all its subfolders
-    ProjA\*.cpp
-    #
-    # Ignore .txt files in this folder
-    \*.txt
-    #
-    # Ignore .xml files in this folder and all its sub-folders
-    *.xml
-    #
-    # Ignore all files in the Temp sub-folder
-    \Temp
-    #
-    # Do not ignore .dll files in this folder nor in any of its sub-folders
-    !*.dll
+```
+######################################
+# Ignore .cpp files in the ProjA sub-folder and all its subfolders
+ProjA\*.cpp
+#
+# Ignore .txt files in this folder
+\*.txt
+#
+# Ignore .xml files in this folder and all its sub-folders
+*.xml
+#
+# Ignore all files in the Temp sub-folder
+\Temp
+#
+# Do not ignore .dll files in this folder nor in any of its sub-folders
+!*.dll
+```
 
 ### Create and use a .tfignore file
 

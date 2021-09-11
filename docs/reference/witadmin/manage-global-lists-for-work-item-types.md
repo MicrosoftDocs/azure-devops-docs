@@ -1,21 +1,20 @@
 ---
 title: Import and export global lists using witadmin
-titleSuffix: TFS  
+titleSuffix: Azure DevOps Server 
 description: Customize or update a global list by export/import using witadmin for Team Foundation Server 
 ms.technology: devops-agile
-ms.prod: devops
+ms.custom: witadmin
 ms.assetid: 64725cfe-72f8-4ac5-8946-95e808e035f9
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
 ms.date: 02/26/2018
 ---
 
 # Manage global lists for work item types
 
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
 Global lists are pick lists that you can include in one or more fields and types of work items. Use them to minimize the work that is required to update a list that is shared by multiple types of work items. Because global lists are defined for a project collection, they can be included in work item types for all projects within the collection.  
   
@@ -30,9 +29,9 @@ You can define a global list within its own definition file, in the definition f
   
 See [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]
 
-[!INCLUDE [temp](../../_shared/process-editor.md)] 
+[!INCLUDE [temp](../../includes/process-editor.md)] 
   
 ## Prerequisites  
   
@@ -43,7 +42,7 @@ For the project collection where the global lists are defined, you must have the
 -   To destroy a global list using **witadmin destroygloballist**, you must be a member of the **Project Collection Administrators** security group.  
   
 > [!NOTE]   
-> Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut window, and choose **Run as Administrator**. For more information, see this page on the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
+> Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut window, and choose **Run as Administrator**. For more information, see this page on the Microsoft Web site: [User Access Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
   
 ## Syntax  
   
@@ -60,7 +59,7 @@ witadmin listgloballist /collection:CollectionURL
 |-------------------|---------------------|  
 |**/collection**:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
 |**/n**:`GlobalListName`|The name of the global list to destroy.|  
-|**/f**:`FileName`|The path and the name of the global list XML definition file to export or import.<br /><br />**Note:**  If the client computer runs Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the following pages on the Microsoft Web site: [Registry Virtualization](http://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=92323). To avoid this redirection, you can export the file to a location where you have permissions.|  
+|**/f**:`FileName`|The path and the name of the global list XML definition file to export or import.<br /><br />**Note:**  If the client computer runs Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the [Registry Virtualization](/windows/win32/sysinfo/registry-virtualization) page on the Microsoft Web site. To avoid this redirection, you can export the file to a location where you have permissions.|  
 |**/e**:`Encoding`|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
 |**/noprompt**|Disables the prompt for confirmation.|  
 |**/?** or **help**|Displays help about the command in the Command Prompt window.|  

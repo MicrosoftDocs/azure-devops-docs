@@ -3,11 +3,7 @@ title: Merge folders and files
 titleSuffix: Azure Repos
 description: Merge folders and files
 ms.assetid: b23efc53-f715-4eef-9631-64455663cfcc
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Merge folders and files
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 For the various reasons described in [Branch folders and files](branch-folders-files.md), many software development teams work in a codebase that is forked into various branches. If you use branches, eventually your team must integrate the work that has been completed on different branches during certain phases of your project. For example, when you are ready to test a full version of your software, you will need the changes made on different feature team branches to be merged together.
 
@@ -45,7 +41,7 @@ To perform these procedures, you must have the following permissions set:
 <tbody>
 <tr>
 <td><p>The release of Visual Studio Team Foundation Server 2010 began a distinction between branches and folders. For example, in the following illustration you can see how branches and folders are displayed with different icons.</p>
-<p><img src="_img/merge-folders-files/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
+<p><img src="media/merge-folders-files/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
 <p>While you can still branch and merge among folders, the best practice for your team to follow is to branch and merge only among branches. For more information, see <a href="branch-folders-files.md">Branch folders and files</a>.</p></td>
 </tr>
 </tbody>
@@ -72,7 +68,7 @@ You can use the **Tracking Changeset** window to view information such as, where
 <tbody>
 <tr>
 <td><p>This procedure can be performed only for changesets that affect a branch. For example, in the following illustration you can view how branches and folders are displayed with different icons.</p>
-<p><img src="_img/merge-folders-files/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
+<p><img src="media/merge-folders-files/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
 <p>For more information, see <a href="branch-folders-files.md">Branch folders and files</a>.</p></td>
 </tr>
 </tbody>
@@ -84,7 +80,7 @@ You can use the **Tracking Changeset** window to view information such as, where
 
 2. Right-click the selected item and click **View History**.
 
-3. In the <strong>History **window, right-click the changeset that you want to view and select **Track Changeset</strong>.
+3. In the **History** window, right-click the changeset you want to view and select **Track Changeset**.
 
    The **Select Branches** dialog box appears.
 
@@ -106,9 +102,9 @@ Julie gets back to her desk and finds the latest source, but she does not see th
 
 Tracking Changeset Window: Merge to Parent Branch
 
-![Tracking Changeset window: merge to parent branch](_img/merge-folders-files/IC269735.png)
+![Tracking Changeset window: merge to parent branch](media/merge-folders-files/IC269735.png)
 
-From the **Tracking Changeset** window, Julie can see that Chris checked in the method with changeset 50, and merged it to the **Dev** branch with changeset 51. But Julie cannot get the new code until changeset 50 is merged into the **FeatureTeamB** branch. So she drags the **Dev** branch onto the **FeatureTeamB** branch to launch the **Source Control Merge Wizard**, which she then uses to complete the merge.
+From the **Tracking Changeset** window, Julie can see that Chris checked in the method with changeset 50, and merged it to the **Dev** branch with changeset 51. But Julie cannot get the new code until changeset 51 is merged into the **FeatureTeamB** branch. So she drags the **Dev** branch onto the **FeatureTeamB** branch to launch the **Source Control Merge Wizard**, which she then uses to complete the merge.
 
 <a name="sourcecontrolwizard"></a>
 
@@ -124,8 +120,8 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
 
 3.  Select the range of changes that you want to merge into the target branch by selecting either the **All changes up to a specific version** or **Selected changesets** option, and click **Next**.
 
-    >**Tip:**
-    >  If possible, click **All changes up to a specific version**, as it will reduce the risk of conflicts in future merges.
+    > [!TIP]
+    > If possible, click **All changes up to a specific version**, as it will reduce the risk of conflicts in future merges.
 
     -   If you selected **All changes up to a specific version**, then the **Select the versions of the source items** page appears. Select the version of the items that you want to use.
 
@@ -154,10 +150,10 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
         </tbody>
         </table>
 
-    -   If you selected **Selected changesets**, then the **Select changesets to merge into the target branch **page appears. Select the changeset you want to merge.
+    -   If you selected **Selected changesets**, then the **Select changesets to merge into the target branch** page appears. Select the changeset you want to merge.
 
-        >**Tip:**
-        >  You can press and hold the CONTROL or SHIFT keys and then select multiple items in a continuous range.
+        > [!TIP]
+        > You can press and hold the CONTROL or SHIFT keys and then select multiple items in a continuous range.
 
 4.  Click **Next**, and then on the **Perform the merge operation** page, click **Finish**.
 
@@ -169,16 +165,10 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
 
     2.  Use the Pending Changes window to check in the changes. For more information, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
 
-## See Also
 
-#### Other Resources
-
- [Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md) 
-
- [Merge Command](merge-command.md) 
-
- [Merges Command](merges-command.md) 
-
- [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 
-
- [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md) 
+## Related articles
+-  [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md) 
+-  [Merge Command](merge-command.md) 
+-  [Merges Command](merges-command.md) 
+-  [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 
+-  [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)

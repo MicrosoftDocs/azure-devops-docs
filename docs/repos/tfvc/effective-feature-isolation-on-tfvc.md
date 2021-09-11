@@ -2,19 +2,18 @@
 title: Manage feature isolation in TFVC
 description: Explore the feature isolation strategy using Team Foundation Version Control (TFVC)
 ms.assetid: 00303E47-5B7F-4A25-901B-0B6F2007911D
-ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
-ms.manager: jillfra
+ms.technology: devops-code-tfvc
 ms.date: 04/25/2018
-ms.author: sdanie
 author: wpschaub
 monikerRange: '>= tfs-2015'
 ---
 
-# Explore the feature isolation strategy using Team Foundation Version Control (TFVC)
+# Explore the feature isolation strategy  
 
-Are you planning to implement [Team Foundation Version Control](overview.md)'s feature isolation strategy in Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+
+Are you planning to implement [Team Foundation Version Control](./what-is-tfvc.md)'s feature isolation strategy in Azure DevOps? You probably have a few questions, such as:
 
 - Is it practical with large development teams?
 - Does it align well with your agile process(es)?
@@ -40,7 +39,7 @@ The feature isolation strategy allows you to work on features or fix bugs in **f
 
 It's typical to create one feature branch per feature or bug, but in this strategy, you can create a miscellaneous feature branch to isolate a couple of low risk features. 
 
-![Basic feature isolation](./_img/effective-feature-isolation-on-tfvc/feature-isolation-basic.png)
+![Basic feature isolation](./media/effective-feature-isolation-on-tfvc/feature-isolation-basic.png)
 
 Unlike Git branches, which are repository-scoped, TFVC branches are path-scoped and therefore not as lightweight. To work around this, limit the number of and the lifetime of your TFVC feature branches, and [optimize your workspace](optimize-your-workspace.md) using explicit, implicit, cloaked, and non-recursive folder mappings, to improve performance, and to reduce required disk space on your machine.
 
@@ -65,7 +64,7 @@ Create a feature branch when you need to work on a feature, typically within the
 
 To protect your parent branch and minimize merge conflicts, regularly forward integrate (FI) changes from the parent branch to your feature branch. It ensures that you resolve merge conflicts on your feature branch, not the parent branch.
 
-![Feature isolation drift](./_img/effective-feature-isolation-on-tfvc/feature-isolation-basic-drift.png)
+![Feature isolation drift](./media/effective-feature-isolation-on-tfvc/feature-isolation-basic-drift.png)
 
 This strategy also keeps features from getting out of sync with the parent branch. Remember to FI before you reverse integrate (RI) your changes back to the parent branch!
 
@@ -73,15 +72,15 @@ This strategy also keeps features from getting out of sync with the parent branc
 >
 > Keep your feature branch **short-lived**! 
 > 
-> Unlike main or other central branches, feature branches have a limited life time. They are scoped to features, bugs, and hot fixes, which are typically developed within a sprint or iteration. Consider removing your feature branch once your feature has met your team's definition of done [DoD](https://aka.ms/vsardod) and changes have been merged with the parent branch.
+> Unlike main or other central branches, feature branches have a limited life time. They are scoped to features, bugs, and hot fixes, which are typically developed within a sprint or iteration. Consider removing your feature branch once your feature has met your team's definition of done [DoD](/archive/blogs/visualstudioalmrangers/?p=2395) and changes have been merged with the parent branch.
 
 As the number of your feature branches increase, your storage requirements and branch hierarchy visualization noise increases. With only five feature branches, the diagram is already noisy and rapidly losing its monitoring qualities. Can you imagine the impact of your team creating hundreds of feature branches?
  
-![Feature isolation noise](./_img/effective-feature-isolation-on-tfvc/feature-isolation-basic-noise.png)
+![Feature isolation noise](./media/effective-feature-isolation-on-tfvc/feature-isolation-basic-noise.png)
 
 Similarly, the **Source Control Explorer** view becomes noisy and impractical as the number of branches increases. Unless you have a consistent naming convention, finding a specific feature branch among hundreds of feature branches is challenging.
 
-![Feature isolation noise](./_img/effective-feature-isolation-on-tfvc/feature-isolation-basic-noise-vside.png)
+![Feature isolation noise in Source Control Explorer view.](./media/effective-feature-isolation-on-tfvc/feature-isolation-basic-noise-vside.png)
 
 > [!TIP]
 >
@@ -92,7 +91,7 @@ Similarly, the **Source Control Explorer** view becomes noisy and impractical as
 
 By [deleting](delete-restore-files-folders.md#delete-an-item) feature branches, you minimize noise and focus on active feature development. 
 
-![Delete feature branches](./_img/effective-feature-isolation-on-tfvc/feature-isolation-delete-branches.png)
+![Delete feature branches](./media/effective-feature-isolation-on-tfvc/feature-isolation-delete-branches.png)
 
 Remember it's a soft delete and your history isn't lost. Deleted branches can be unhidden:
 
@@ -101,7 +100,7 @@ Remember it's a soft delete and your history isn't lost. Deleted branches can be
 
 If needed, you can also [restore](delete-restore-files-folders.md#restore-items-deleted-from-visual-studio) deleted branches and associated items. 
 
-![Show deleted feature branches](./_img/effective-feature-isolation-on-tfvc/feature-isolation-delete-branches-show.png)
+![Show deleted feature branches](./media/effective-feature-isolation-on-tfvc/feature-isolation-delete-branches-show.png)
 
 If no one in your team has destroyed a branch using the [destroy](destroy-command-team-foundation-version-control.md) command, you'll have the complete history needed for auditing and migration tools that rely on replaying history.
 
@@ -116,9 +115,9 @@ Now that you're using feature isolation, you should explore continuous integrati
 ## Reference information
 * [Branching Strategies with TFVC (new guidance)](./effective-tfvc-branching-strategies-for-devops.md)
 * [Branching and Merging Guidance (latest copy of classic guidance)](https://vsardata.blob.core.windows.net/projects/TFS%20Version%20Control%20Part%201%20-%20Branching%20Strategies.pdf)
-* [Continuous Integration](/azure/devops/learn/what-is-continuous-integration)
-* [Feature Toggles](https://msdn.microsoft.com/magazine/dn683796.aspx)
-* [Team Foundation Version Control (TFVC)](overview.md)
+* [Continuous Integration](/devops/develop/what-is-continuous-integration)
+* [Feature Toggles](/archive/msdn-magazine/2014/may/alm-rangers-software-development-with-feature-toggles)
+* [Team Foundation Version Control (TFVC)](./what-is-tfvc.md)
 
 > Author: Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
  

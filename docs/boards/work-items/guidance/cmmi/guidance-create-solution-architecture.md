@@ -1,21 +1,19 @@
----
-title: CMMI process guidance, Create a solution architecture
+﻿---
+title: Create a solution architecture
 titleSuffix: Azure Boards
 description: Investigate alternative architectural strategies to create good architecture  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 77707311-8835-4bc8-9b28-17534d7a7d9c
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
 # Create a solution architecture
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 
 Part of creating a good architecture is investigating alternative architectural strategies. Alternative strategies have different benefits that are based on platform selection, technologies that are used, and code reuse. Each strategy is designed and proofs of concept are built to further investigate the costs and benefits of each strategy. The strategies are assessed against product and quality requirements, and ultimately a strategy is chosen to be used to implement the product. Finally, security and performance are architectural concerns for which work must be done over the entire product.  
@@ -54,13 +52,13 @@ Part of creating a good architecture is investigating alternative architectural 
   
  You can represent system diagrams in Visual Studio in the following ways:  
   
-- Use case diagrams. The main user scenarios are represented as use cases, and the major components of the system are shown as subsystems. Each use case can be placed inside the subsystem that deals with it. For more information, see [UML Use Case Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432.aspx).  
+- Use case diagrams. The main user scenarios are represented as use cases, and the major components of the system are shown as subsystems. Each use case can be placed inside the subsystem that deals with it. For more information, see [UML Use Case Diagrams: Guidelines](/visualstudio/modeling/uml-use-case-diagrams-guidelines).  
   
-- UML component diagrams. These diagrams let you show communications channels between the components, in addition to dependencies. You might also want to create class diagrams to describe the types that are visible at the interfaces to the components, and you can create sequence diagrams to show their interactions. For more information, see [UML Component Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432.aspx), [UML Class Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432.aspx), and [UML Sequence Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432.aspx).  
+- UML component diagrams. These diagrams let you show communications channels between the components, in addition to dependencies. You might also want to create class diagrams to describe the types that are visible at the interfaces to the components, and you can create sequence diagrams to show their interactions. For more information, see [UML Component Diagrams: Guidelines](/visualstudio/modeling/uml-use-case-diagrams-guidelines), [UML Class Diagrams: Guidelines](/visualstudio/modeling/uml-use-case-diagrams-guidelines), and [UML Sequence Diagrams: Guidelines](/visualstudio/modeling/uml-use-case-diagrams-guidelines).  
   
-- [Layer diagrams](https://msdn.microsoft.com/library/dd418995). A layer diagram describes the block structure of the application. It shows only components and the dependencies between them. It has the benefit that, after the code is written, you can validate the code and the dependencies against the diagram. For more information, see [Layer Diagrams: Guidelines](https://msdn.microsoft.com/library/dd418995).  
+- [Layer diagrams](/visualstudio/modeling/layer-diagrams-guidelines). A layer diagram describes the block structure of the application. It shows only components and the dependencies between them. It has the benefit that, after the code is written, you can validate the code and the dependencies against the diagram. For more information, see [Layer Diagrams: Guidelines](/visualstudio/modeling/layer-diagrams-guidelines).  
   
-  For each subsystem, you can create a package that describes its types and behavior in more detail. For more information, see [Define packages and namespaces](https://msdn.microsoft.com/library/dd465144).  
+  For each subsystem, you can create a package that describes its types and behavior in more detail. For more information, see [Define packages and namespaces](/visualstudio/modeling/define-packages-and-namespaces).  
   
 ##  <a name="CreateProofs"></a> Create Proofs of Concept  
  Significant risks to the project can be mitigated by creating an architectural proof of concept. It is important to address risk as early as possible in the project so that key strategic and architectural decisions can be made while it is still easy to modify fundamental pieces of the architecture. Creating early proofs of concept reduces overall project risk and unknowns. Lower project risk and fewer unknowns make planning and estimating in later iterations more accurate. Proofs of concept can be temporary and discarded after the issues have been addressed, or they can be built as the foundation of the core architecture.  
@@ -125,4 +123,4 @@ Part of creating a good architecture is investigating alternative architectural 
  Identify the scenarios that do not meet budget allocations. Measure the performance of the scenarios. Use prototyping in early iterations if code is not available. Repeat the budgeting, evaluation, and validation steps as necessary by using data that is acquired during validation.  
   
 ## Develop a Threat Model  
- For more information, see the following page on the Microsoft Web site: [Security Developer Center](http://go.microsoft.com/fwlink/?LinkId=158810).
+ For more information, see the following page on the Microsoft Web site: [Security Developer Center](https://go.microsoft.com/fwlink/?LinkId=158810).

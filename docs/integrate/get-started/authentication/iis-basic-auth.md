@@ -1,12 +1,10 @@
----
-title: Enabling IIS Basic Authentication invalidates using Personal Access Tokens
+﻿---
+title: IIS Basic Authentication invalidates using PATs
 description: Enabling IIS Basic Authentication invalidates using Personal Access Tokens
 ms.assetid: 173198c4-9b65-4c4a-a8f1-931b6b6c295a
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 04/22/2019
@@ -14,7 +12,7 @@ ms.date: 04/22/2019
 
 # Enabling IIS Basic Authentication invalidates using Personal Access Tokens
 
-[!INCLUDE [version-header-tfs-only](../../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [version-all](../../../includes/version-all.md)]
 
 We recommend you keep [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) turned 
 off at all times when using Azure DevOps Server.  Only if necessary should you enable IIS Basic Authentication. When IIS 
@@ -22,14 +20,14 @@ Basic Authentication is enabled on your windows machine, it prevents you from us
 authentication mechanism. 
 
 For example, if you use a PAT to allow a third-party app to retrieve bug information and email that info to the 
-assignee of the bug, and IIS Basic Authentication is enabled, then that app will fail authentication.  The app 
+assignee of the bug, and IIS Basic Authentication is enabled, then that app fails authentication.  The app 
 can't retrieve bug info.
 
 **Git with IIS Basic Authentication enabled:**
 
 > [!WARNING]
-> If you use Git with IIS Basic Authentication, Git will break because it requires PATs for user 
-authentication.  Although we do not recommend you use IIS Basic Authentication, by adding an extra header to Git 
+> If you use Git with IIS Basic Authentication, Git breaks because it requires PATs for user 
+authentication. Although we don't recommend you use IIS Basic Authentication, by adding an extra header to Git 
 requests, you can use Git with IIS Basic Authentication: 
 
    The extra header must include a base 64 encoding of "user:PAT"

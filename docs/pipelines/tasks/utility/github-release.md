@@ -2,15 +2,12 @@
 title: GitHub Release task
 description: Create, edit, or discard a GitHub release.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 7B5A6198-ADF8-4B16-9939-7ADDF85708B2
-ms.manager: jillfra
 ms.custom: seodec18
-ms.author: dastahel
-author: davidstaheli
+ms.author: vijayma
+author: vijayma
 ms.date: 12/07/2018
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # GitHub Release task
@@ -22,20 +19,20 @@ Use this task in your pipeline to create, edit, or discard a [GitHub release](ht
 ## Prerequisites
 
 ### GitHub service connection
-This task requires a [GitHub service connection](../../library/service-endpoints.md#sep-github) with **Write** permission to the GitHub repository. You can create a GitHub service connection in your Azure Pipelines project. Once created, use the name of the service connection in this task's settings.
+This task requires a [GitHub service connection](../../library/service-endpoints.md#github-service-connection) with **Write** permission to the GitHub repository. You can create a GitHub service connection in your Azure Pipelines project. Once created, use the name of the service connection in this task's settings.
 
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/GitHubReleaseV0.md)]
+[!INCLUDE [temp](../includes/yaml/GitHubReleaseV0.md)]
 
 ::: moniker-end
 
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>GitHub Connection</td><td>(Required) Enter the service connection name for your GitHub connection. Learn more about service connections <a href="https://aka.ms/AA3am5s" data-raw-source="[here.](https://aka.ms/AA3am5s)">here.</a></td></tr>
+<tr><td>GitHub Connection</td><td>(Required) Enter the service connection name for your GitHub connection. Learn more about service connections <a href="/azure/devops/pipelines/library/service-endpoints" data-raw-source="[here.](../../library/service-endpoints.md)">here.</a></td></tr>
 <tr><td>Repository</td><td>(Required) Select the name of GitHub repository in which GitHub releases will be created.</td></tr>
 <tr><td>Action</td><td>(Required) Select the type of release operation you want perform. This task can create, edit, or discard a GitHub release.</td></tr>
 <tr><td>Target</td><td>(Required) This is the commit SHA for which the GitHub release will be created. E.g. <code>48b11d8d6e92a22e3e9563a3f643699c16fd6e27</code>. You can also use variables here.</td></tr>
@@ -65,7 +62,7 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 The following YAML creates a GitHub release every time the task runs. The build number is used as the tag version for the release. All .exe files and README.txt files in the $(Build.ArtifactStagingDirectory) folder are uploaded as assets. By default, the task also generates a change log (a list of commits and issues that are part of this release) and publishes it as release notes.
 
 ```YAML
-- task: GithubRelease@0 
+- task: GithubRelease@1 
   displayName: 'Create GitHub Release'      
   inputs:
     gitHubConnection: zenithworks
@@ -73,14 +70,14 @@ The following YAML creates a GitHub release every time the task runs. The build 
     tagSource: manual
     tag: $(Build.BuildNumber)      
     assets: |
-         $(Build.ArtifactStagingDirectory)/*.exe
-         $(Build.ArtifactStagingDirectory)/README.txt
+      $(Build.ArtifactStagingDirectory)/*.exe
+      $(Build.ArtifactStagingDirectory)/README.txt
 ```
 
 You can also control the creation of the release based on repository tags. The following YAML creates a GitHub release only when the commit that triggers the pipeline has a Git tag associated with it. The GitHub release is created with the same tag version as the associated Git tag.
 
 ```YAML
-- task: GithubRelease@0 
+- task: GithubRelease@1 
   displayName: 'Create GitHub Release'      
   inputs:
     gitHubConnection: zenithworks
@@ -91,7 +88,7 @@ You can also control the creation of the release based on repository tags. The f
 You may also want to use the task in conjunction with task conditions to get even finer control over when the task runs, thereby restricting the creation of releases. For example, in the following YAML the task runs only when the pipeline is triggered by a Git tag matching the pattern 'refs/tags/release-v*'.
 
 ```YAML
-- task: GithubRelease@0 
+- task: GithubRelease@1 
   displayName: 'Create GitHub Release'   
   condition: startsWith(variables['Build.SourceBranch'], 'refs/tags/release-v')   
   inputs:
@@ -105,7 +102,7 @@ You may also want to use the task in conjunction with task conditions to get eve
 The following YAML updates the status of a GitHub release from 'draft' to 'published'. The release to be edited is determined by the specified tag.
 
 ```YAML
-- task: GithubRelease@0
+- task: GithubRelease@1
   displayName: 'Edit GitHub Release'
   inputs:
     gitHubConnection: zenithworks
@@ -120,7 +117,7 @@ The following YAML updates the status of a GitHub release from 'draft' to 'publi
 The following YAML deletes a GitHub release. The release to be deleted is determined by the specified tag.
 
 ```YAML
-- task: GithubRelease@0
+- task: GithubRelease@1
   displayName: 'Delete GitHub Release'
   inputs:
     gitHubConnection: zenithworks

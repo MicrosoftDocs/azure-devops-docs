@@ -1,56 +1,52 @@
-- name: Public projects
-  href: index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
 - name: What is a public project? 
-  href: about-public-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
-- name: Quickstarts
+  href: about-public-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+- name: Get started
   items:
-  - name: Build OSS repositories 
-    href: /azure/devops/pipelines/repos/index?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
   - name: Create a public project
-    href: create-public-project.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
+    href: create-public-project.md
   - name: Invite users to contribute 
-    href: invite-users-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
+    href: invite-users-public.md
   - name: Make a project public
-    href: make-project-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
-  - name: Share your project vision
-    href: ../projects/project-vision-status.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
-  - name: Browse code, download code 
-    href: browse-code-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json  
-  - name: View and filter work items
-    href: view-filter-work-items-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
-- name: Concepts
-  items:
-  - name: Private-to-public migration checklist
-    href: migration-checklist.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
-  - name: Glossary of key terms
-    href: glossary-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
-- name: How-to guides
-  items:
+    href: make-project-public.md
   - name: Clone a repository
-    href: clone-git-repo-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json 
+    href: clone-git-repo-public.md
+  - name: Build OSS repositories 
+    href: ../../pipelines/repos/index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+  - name: Share your project vision
+    href: ../projects/project-vision-status.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+  - name: Browse code, download code 
+    href: browse-code-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
+  - name: View and filter work items
+    href: view-filter-work-items-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+  - name: Private-to-public migration checklist
+    href: migration-checklist.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+- name: View & search
+  items:
   - name: View build and release pipelines 
-    href: view-build-release-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
-  - name: Provide Stakeholders access to edit pipelines 
-    href: ../../organizations/security/provide-stakeholder-pipeline-access.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
+    href: view-build-release-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
   - name: View a project page or dashboard
-    href: view-project-dashboard-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
+    href: view-project-dashboard-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
   - name: View project Wikis
-    href: view-wiki-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
+    href: view-wiki-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
   - name: Search the code base
-    href: code-search-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json 
+    href: code-search-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
   - name: Search work items
-    href: work-item-search-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
+    href: work-item-search-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Default roles and access
-    href: default-roles-access-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json 
+    href: default-roles-access-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+  - name: Stakeholder access
+    href: ../security/stakeholder-access.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
   - name: Terms of service
-    href: service-limits-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json 
+    href: service-limits-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
   - name: Feature differences for non-members
-    href: feature-differences.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json 
+    href: feature-differences.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
   - name: Extensions and public project support 
-    href: ../../extend/develop/public-project.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
+    href: ../../extend/develop/public-project.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
   - name: Data protection overview
-    href: ../../organizations/security/data-protection.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
-
-
+    href: ../../organizations/security/data-protection.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+  - name: Provide Stakeholders access to edit pipelines 
+    href: ../../organizations/security/provide-stakeholder-pipeline-access.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+  - name: Glossary of key terms
+    href: glossary-public.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json

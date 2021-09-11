@@ -1,29 +1,35 @@
 ---
-title: Search Wiki content defined in your team project
+title: Share info with a project, repo, README, or Wiki
 titleSuffix: Azure DevOps
 description: Share information using a project, repo, README, or Wiki in Azure DevOps. 
 ms.technology: devops-collab
 ms.custom: wiki
-ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 ms.topic: overview
-ms.date: 03/11/2019
+ms.date: 07/23/2020  
 monikerRange: '>= tfs-2015'
 ---
 
-::: moniker range=">= azure-devops-2019"
 
 # About Wikis, READMEs, and Markdown
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+
+::: moniker range=">= tfs-2018"
 
 To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within a team project Wiki, content you add to a dashboard, your team project README file, or other repository README file.  
 
 ::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2017"
+
+To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within content you add to a dashboard, your team project README file, or other repository README file.  
+
+::: moniker-end
+
 
 ::: moniker range=">= tfs-2018"
 
@@ -31,11 +37,17 @@ To support your team or contributors to your project, use [Markdown](https://en.
 
 Use your team project wiki to share information with other team members. When you provision a wiki from scratch, a new Git repository stores your Markdown files, images, attachments, and sequence of pages. This wiki supports collaborative editing of its content and structure.
 
+<br/> 
+
+> [!VIDEO https://www.youtube.com/embed/744v1IefE-E?start=0]
+
+<br/> 
+
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see  [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
+> The built-in wiki is available with TFS 2018 and later versions. To download Azure DevOps Server, see  [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
@@ -51,7 +63,6 @@ The following features are supported for the team project wiki.
 
 - [Add and edit wiki pages](add-edit-wiki.md)  
 - [View wiki page history and revert](wiki-view-history.md)
-- [Search Wiki content](search-wiki.md)  
 - [Version, select, or unpublish a published wiki](wiki-select-unpublish-versions.md)
 - [Clone and update wiki content offline](wiki-update-offline.md)
 - [Use Wiki keyboard shortcuts](wiki-keyboard-shortcuts.md)
@@ -89,9 +100,6 @@ The following features are supported for the team project wiki you create in the
 > |[Preview a Wiki page while editing](add-edit-wiki.md) | TFS 2018.2 |
 > |[Print a Wiki page](filter-print-wiki.md) <sup>1</sup> | TFS 2018.2 |
 > |[Wiki keyboard shortcuts](wiki-keyboard-shortcuts.md) | TFS 2018.2 |
-> |[Wiki search](search-wiki.md) | TFS 2018.2 |  
-> [!NOTE]
-> This feature may not be available from the Firefox web browser.
 
 ::: moniker-end
 
@@ -112,15 +120,6 @@ There are significant differences between how you manage the content for a wiki 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-# About READMEs and Markdown
-
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
-
-To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within content you add to a dashboard, your team project README file, or other repository README file.  
-
-::: moniker-end
 
 ::: moniker range=">= tfs-2015"
 

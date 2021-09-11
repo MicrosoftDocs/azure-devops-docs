@@ -1,51 +1,65 @@
 ---
 title: Debug with symbols in Visual Studio
-description: Debug with symbols in Visual Studio using the Symbol Server in Azure Artifacts
+description: Use symbols to debug your application with Visual Studio.
 ms.assetid: 318323C4-5B2F-45DE-A834-CCE03C670F8C
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
+ms.custom: contperf-fy22q1
 ms.topic: conceptual
-ms.date: 10/18/2017
+ms.date: 07/20/2021
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
-# Debug with symbols in Visual Studio
+# Debug with Visual Studio
 
-[!INCLUDE [](../_shared/availability-symbols.md)]
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../concepts/symbols.md); to publish symbols, see [this page](/azure/devops/pipelines/artifacts/symbols?toc=/azure/devops/artifacts/toc.json). To use symbols in WinDbg, see [this page](debug-with-symbols-windbg.md).
+Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. These files contain useful information for the debugger and generally have the *PDB* extension. You can use Visual Studio to consume your symbols from Azure Artifacts symbol server or other external sources to step into your code and debug your application.
 
-## Add the symbol server to Visual Studio
+## Add Azure Artifacts symbol server
 
-To debug with symbols, select and add the Azure DevOps Services symbol server to your Visual Studio environment using the Tools->Options->Debugger->Symbols page.
+To debug with symbols from the Azure Artifacts symbol server, we must authenticate to the server and add a new Azure DevOps Services symbol server to our Visual Studio environment.
 
-![Add Azure DevOps Services Symbol Server in VS Debugger](_img/vsdebugger1.jpg)
+1. From Visual Studio, select **Tools** > **Options** > **Debugging**.
 
-In the **Connect to Azure DevOps Services Symbol Server** dialog, select the organization to which the symbols have been published and the corresponding user identity that has access to this organization. 
+1. Select **Symbols** from the list, and then select the `+` sign to add a new Azure DevOps symbol server location.
 
-![Connect to Azure DevOps Services Symbol Server](_img/connectsymbolserver.png)
+    :::image type="content" source="media/add-server-location.png" alt-text="Add a new Azure DevOps symbol server location":::
 
-Click **Connect** in the above dialog. The Azure DevOps Services Symbol Server is now remembered by Visual Studio. When a debugging session begins, Visual Studio will be able to get symbols from Azure DevOps Services.
+1. A new dialog box **Connect to Azure DevOps Symbol Server** will open, select your account from the dropdown menu, and then select the organization that you wish to connect to. Select **Connect** when you are done to connect to the symbol server.
 
-![Add Azure DevOps Services Symbol Server in VS Debugger](_img/vsdebugger2.png)
+    :::image type="content" source="media/connect-to-symbol-server.png" alt-text="Connect to Azure DevOps Symbol Server":::
+
+1. Your symbol server is then added to the list of symbol file locations.
+
+    :::image type="content" source="media/symbol-locations.png" alt-text="New symbol server added to the list of symbol file locations":::
 
 ## Debugging optimized modules
 
-If you're debugging an optimized module (e.g. something that was built with the `Release` configuration) and you haven't changed the default "Enable Just My Code" setting in Options, Visual Studio will not automatically fetch symbols for the optimized module. If this is the case, the Modules window will have a warning message.
+If you're planning to debug an optimized module (example release binaries) or a third-party source code, we recommend that you uncheck the `Enable Just My Code` checkbox in Visual Studio options.
 
-To debug the module, you can either:
-- Open the Modules window, right-click the module, and choose "Load Symbols" (recommended)
-- In Options > Debugging > General, uncheck "Enable Just My Code"
+To do so, select **Tools** > **Options** and then **Debugging**. Select **General** from the list and then uncheck **Enable Just My Code**.
 
-## Source Link support
+:::image type="content" source="media/enable-just-my-code.png" alt-text="Enable just my code - enable 3rd party source code debugging":::
 
-We recommend checking "Enable Source Link support" in Options > Debugging > General (it's checked by default).
+> [!NOTE]
+> To enable support for portable PDB files, check the **Enable Source Link Support** checkbox from **Tools** > **Options** > **Debugging** > **General**.
+> 
+> To enable support for Windows PDB files on symbol servers, check the **Enable Source Server Support** checkbox from **Tools** > **Options** > **Debugging** > **General**.
 
-If you choose to enable source server support, please consider the [security implications](/visualstudio/debugger/source-server-security-alert) before doing so.
+## Start debugging
 
-### Portable PDBs and Source Link
+You can start debugging your application in a few different ways:
+- Press **F5** to start the app with the debugger attached to the app process.
+- Select **Debug** > **Start Debugging**.
+- Select the **Start Debugging** button in the debug toolbar.
 
-If you're using [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), [Source Link](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md) cannot currently authenticate to private source repositories (like Azure DevOps Services), and thus will not work.
+When you start the debugger, Visual Studio will attempt to load your symbols from the cache folder first before downloading them from the Artifacts symbol server that we added in the previous section. 
+
+Once Visual Studio finds and loads your symbols, you should be able to step through your code and debug your application. See [Navigate through code with the Visual Studio debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger) for more details.
+
+## Related articles
+
+- [Symbols overview](../concepts/symbols.md).
+- [Debug with WinDbg](debug-with-symbols-windbg.md).
+- [Artifacts in Azure Pipelines](../../pipelines/artifacts/artifacts-overview.md)

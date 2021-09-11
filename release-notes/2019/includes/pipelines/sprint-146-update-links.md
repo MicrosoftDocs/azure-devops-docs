@@ -1,0 +1,24 @@
+---
+ms.topic: include
+---
+
+- [GitHub Enterprise support in the pipeline wizard](#github-enterprise-support-in-the-pipeline-wizard)
+- [Automatic GitHub service connections in pipelines](#automatic-github-service-connections-in-pipelines)
+- [Display status for each pipeline job in GitHub Checks](#display-status-for-each-pipeline-job-in-github-checks)
+- [Default authorization for YAML resources in GitHub](#default-authorization-for-yaml-resources-in-github)
+- [Service containers for YAML pipelines](#service-containers-for-yaml-pipelines)
+- [Work items linked to GitHub commits in Release Summary](#work-items-linked-to-github-commits-in-release-summary)
+- [New Azure App service tasks optimized for YAML](#new-azure-app-service-tasks-optimized-for-yaml)
+- [Azure Active Directory (AD) authentication support for Azure SQL task](#azure-active-directory-ad-authentication-support-for-azure-sql-task)
+- [Grafana annotations service hook](#grafana-annotations-service-hook)
+- [Query Azure Monitor alerts tasks](#query-azure-monitor-alerts-tasks)
+- [Inline input of spec file in Deploy to Kubernetes task](#inline-input-of-spec-file-in-deploy-to-kubernetes-task)
+- [Docker CLI Installer task](#docker-cli-installer-task)
+- [Java long-term support (LTS) on Microsoft hosted agents](#java-long-term-support-lts-on-microsoft-hosted-agents)
+- [YAML support for Bitbucket Cloud pipelines](#yaml-support-for-bitbucket-cloud-pipelines)
+- [Avoid triggering multiple CI builds for pull requests](#avoid-triggering-multiple-ci-builds-for-pull-requests)
+- [Change build numbers, upload and download artifacts in forked repository builds](#change-build-numbers-upload-and-download-artifacts-in-forked-repository-builds)
+- [New option in Publish Test Results task to fail build on failed tests](#new-option-in-publish-test-results-task-to-fail-build-on-failed-tests)
+- [Updates to the Azure Portal for creating an Azure DevOps project](#updates-to-the-azure-portal-for-creating-an-azure-devops-project)
+- [Use the Azure Portal to setup and deploy to a CosmosDB database](#use-the-azure-portal-to-setup-and-deploy-to-a-cosmosdb-database)
+- [Setup builds and release pipelines for Functions in Azure Portal](#setup-builds-and-release-pipelines-for-functions-in-azure-portal)

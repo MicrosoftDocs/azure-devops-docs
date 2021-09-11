@@ -3,14 +3,10 @@ title: Author names in Git
 titleSuffix: Azure Repos
 description: How Git stores author names
 ms.assetid: 09e60acb-fa48-4843-9f5d-5dfed981f467
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 

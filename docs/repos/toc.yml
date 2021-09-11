@@ -1,6 +1,16 @@
 - name: Azure Repos Documentation
-  href: index.md
-- name: Start Using Azure Repos
+  href: index.yml
+- name: "What is Azure Repos?"
+  href: get-started/what-is-repos.md
+- name: Compare Git and TFVC
+  href: tfvc/comparison-git-tfvc.md
+- name: Use Git and TFVC
+  href: git/team-projects.md 
+- name: Key concepts
+  href: get-started/key-concepts-repos.md
+- name: Search code repositories
+  href: ../project/search/functional-code-search.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+- name: Get started  
   href: get-started/toc.yml
 - name: Git
   href: git/toc.yml 
@@ -10,6 +20,8 @@
   items:
   - name: Azure Repos with Slack
     href: integrations/repos-slack.md
+  - name: Azure Repos with Microsoft Teams
+    href: integrations/repos-teams.md
 - name: REST API Reference
   items:
   - name: Git
@@ -25,42 +37,26 @@
   - name: Visual Studio for Mac
     href: /visualstudio/mac
   - name: Eclipse
-    href: /azure/devops/java/download-eclipse-plug-in
+    href: /previous-versions/azure/devops/java/download-eclipse-plug-in
   - name: IntelliJ IDEA
-    href: /azure/devops/java/download-intellij-plug-in
-- name: Azure DevOps Learn
+    href: /previous-versions/azure/devops/java/download-intellij-plug-in
+- name: DevOps Resource Center
   items:
-  - name: What is Git?
-    href: /azure/devops/learn/git/what-is-git
-  - name: What is version control?
-    href: /azure/devops/learn/git/what-is-version-control
-  - name: Learn Git
-    href: /azure/devops/learn/git/learn-git-with-team-services/
-  - name: Git at Scale
-    href: /azure/devops/learn/git/git-at-scale
+  - name: Selecting a development environment
+    href: /devops/develop/selecting-development-environment
   - name: How we use Git at Microsoft
-    href: /azure/devops/learn/devops-at-microsoft/use-git-microsoft
+    href: /devops/develop/how-microsoft-develops-devops
   - name: Plan your migration to Git
-    href: /azure/devops/learn/git/centralized-to-git
+    href: /devops/develop/git/centralized-to-git
   - name: Migrate from TFVC to Git
-    href: /azure/devops/learn/git/migrate-from-tfvc-to-git
+    href: /devops/develop/git/migrate-from-tfvc-to-git
   - name: Migrate from Subversion (SVN) to Git
     href: git/perform-migration-from-svn-to-git.md
 - name: Resources
   items:
   - name: GitHub & Azure Boards 
-    href: /azure/devops/boards/github/index
+    href: ../boards/github/index.md
   - name: Manage projects
-    href: /azure/devops/organizations/projects/index
-  - name: "Default Git permissions (Security)"
-    href: /azure/devops/organizations/security/default-git-permissions
-  - name: "Default TFVC permissions (Security)"
-    href: /azure/devops/organizations/security/default-tfvc-permissions
-  - name: "Set permissions (Security)"
-    href: /azure/devops/organizations/security/set-git-tfvc-repository-permissions
+    href: ../organizations/projects/about-projects.md
   - name: Marketplace extensions
     href: https://marketplace.visualstudio.com/search?target=VSTS&category=Code&sortBy=Downloads
-
-
-
-

@@ -2,7 +2,6 @@
 title: Draft pull requests and new work item text editor - Sprint 143 Update
 author: erindormier
 ms.author: egeaney
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 2/13/2018
 description: In the Sprint 143 Update of Azure DevOps, we introduce draft pull requests and a new work item text editor
@@ -49,7 +48,7 @@ Azure Artifacts:
 
 ### REST API version 5.0
 
-Every API request should include an api-version. However, if you are making a REST request to a previously released endpoint without an api-version, the default version of that request will switch from 4.1 to 5.0 with this deployment. For more information on REST and api-versions, please see [Azure DevOps Services REST API Reference](https://aka.ms/azure-devops-rest-50).
+Every API request should include an api-version. However, if you are making a REST request to a previously released endpoint without an api-version, the default version of that request will switch from 4.1 to 5.0 with this deployment. For more information on REST and api-versions, please see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/?viewFallbackFrom=azure-devops-rest-5.0).
 
 ## Azure Boards
 
@@ -60,12 +59,12 @@ We're excited to announce the general availability of the new text editor on the
 You can use this control in any text field on the work item form, including in your discussions. Here is the new experience that you can expect to see:
 
 > [!div class="mx-imgBorder"]
-> ![Text editor](_img/143_05.png)
+> ![Text editor](media/143_05.png)
 
 Below, you can see the code snippet experience. With this addition, you can easily and clearly discuss code in the work item form.
 
 > [!div class="mx-imgBorder"]
-> ![Text editor code](_img/143_06.png)
+> ![Text editor code](media/143_06.png)
 
 We really want to start making the work item a more social experience. Our first step in that journey is bringing emoji support to your text fields and discussions on the work item. Using emojis, you will be able to bring your descriptions and comments to life and give them a bit more personality!
 
@@ -78,7 +77,7 @@ The work done for this editor is open source, so please feel free to check out t
 Most of the experiences in **Azure Repos** require you to select a repo and then a branch in that repo. To improve this experience for organizations with large number of branches, we are rolling out a new branch picker. The picker now allows you to select your favorite branches or quickly search for a branch.
 
 > [!div class="mx-imgBorder"]
-> ![Branch picker](_img/143_04.png)
+> ![Branch picker](media/143_04.png)
 
 ### Draft pull requests
 
@@ -87,12 +86,12 @@ In order to prevent pull requests from being completed before they're ready and 
 Draft pull requests can be created by selecting **Create as draft** from the **Create** button drop down when creating a pull request.
 
 > [!div class="mx-imgBorder"]
-> ![Create PR draft](_img/143_02.png)
+> ![Create PR draft](media/143_02.png)
 
 Once you have created a draft pull request, you will see a badge indicating its status next to the title. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](_img/143_03.png)
+> ![Badge indicating status.](media/143_03.png)
 
 Draft pull requests do not include reviewers or run builds by default but allow you to manually add reviewers and run builds. To promote the pull request to a normal pull request, simply click the **Publish** button from the pull request detail page.
 
@@ -134,7 +133,7 @@ Previously, we required you to declare your container resources in YAML pipeline
 jobs:
 - job: my-container-job
   container:
-    image: microsoft/dotnet:latest
+    image: mcr.microsoft.com/dotnet/core/runtime:latest
 ```
 
 ### Changes to default permissions for new projects
@@ -146,7 +145,7 @@ Up until now, project contributors could not create pipelines unless they are ex
 By default, **Azure Pipelines** used to re-run all jobs when you redeploy a previously failed run. Now, you can override this behavior by configuring the **Deployment Option** when deploying. By selecting the **All jobs and limit to failed targets in a deployment group** option, the re-run will run all the jobs and skip the deployments to the targets that are already up to date.  
 
 > [!div class="mx-imgBorder"]
-> ![Badge](_img/143_08.png)
+> ![Deploy to failed targets in a Deployment Group.](media/143_08.png)
 
 ### Support for Infrastructure as Code
 
@@ -156,17 +155,17 @@ We are adding support of Infrastructure as Code (IaC) to our [Azure DevOps proje
 
 ### Exclude files in artifact uploads
 
-Previously, in order to exclude files from published artifacts, you would have to copy the files to a staging directory, remove the files to be excluded, and then upload. Now, both Universal Packages and Pipeline Artifacts will look for a file called [.artifactignore](https://docs.microsoft.com/azure/devops/artifacts/reference/artifactignore?view=azure-devops) in the directory being uploaded to and automatically exclude those files, removing the need for a staging directory.
+Previously, in order to exclude files from published artifacts, you would have to copy the files to a staging directory, remove the files to be excluded, and then upload. Now, both Universal Packages and Pipeline Artifacts will look for a file called [.artifactignore](/azure/devops/artifacts/reference/artifactignore?view=azure-devops&preserve-view=true) in the directory being uploaded to and automatically exclude those files, removing the need for a staging directory.
 
 ### Provenance information on packages
 
-With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [npm](https://docs.microsoft.com/azure/devops/pipelines/artifacts/npm?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
-), [NuGet](https://docs.microsoft.com/azure/devops/pipelines/artifacts/nuget?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
-) and .NET Core, [Twine Authenticate](https://docs.microsoft.com/azure/devops/pipelines/artifacts/pypi?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
-) (for Python), and [Universal Packages](https://docs.microsoft.com/azure/devops/pipelines/artifacts/universal-packages?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml) tasks.
+With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [npm](/azure/devops/pipelines/artifacts/npm?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops&preserve-view=true
+), [NuGet](/azure/devops/pipelines/artifacts/nuget?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops&preserve-view=true
+) and .NET Core, [Twine Authenticate](/azure/devops/pipelines/artifacts/pypi?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops&preserve-view=true
+) (for Python), and [Universal Packages](/azure/devops/pipelines/artifacts/universal-packages?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops&preserve-view=true) tasks.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](_img/143_10.png)
+> ![Provenance information on packages.](media/143_10.png)
 
 ### Azure Artifacts REST API documentation updates
 
@@ -181,14 +180,14 @@ With this sprint's update, we're rolling out substantial updates to the document
 Read about the new features below and head over to Azure DevOps to try them for yourself.
 
 > [!div class="nextstepaction"]
-> [Go to Azure DevOps](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![Make a suggestion](../_img/help-make-a-suggestion.png)
+> ![Make a suggestion](../media/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

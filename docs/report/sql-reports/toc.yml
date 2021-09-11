@@ -1,161 +1,143 @@
-- name: SQL Reports (Legacy)
-  href: index.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
 - name: Reporting Services Reports
-  href: reporting-services-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-- name: Quickstarts
-  items:
-  - name: Create Excel reports from a work item query
-    href: ../excel/create-status-and-trend-excel-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-  - name: Grant permissions to view or create reports
-    href: ../admin/grant-permissions-to-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-- name: Concepts
-  items:
-  - name: Choose data source and authoring tool
-    href: ../dashboards/choose-source-data-authoring-tool.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-  - name: Components of the data warehouse
-    href: components-data-warehouse.md
-- name: How-to Guides
+  href: reporting-services-reports.md
+- name: Create Excel reports from a work item query
+  href: ../create-status-and-trend-excel-reports.md
+- name: Grant permissions to view or create reports
+  href: ../admin/grant-permissions-to-reports.md
+- name: Choose data source and authoring tool
+  href: ../dashboards/choose-source-data-authoring-tool.md
+- name: Components of the data warehouse
+  href: components-data-warehouse.md
+- name: Add and manage reports
   items:
   - name: Add reports to a team project
-    href: ../admin/add-reports-to-a-team-project.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-    items:
-    - name: Add a report server
-      href: ../admin/add-a-report-server.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-    - name: Upload reports to a team project
-      href: ../admin/upload-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-    - name: Set permissions to view or create reports
-      href: ../admin/grant-permissions-to-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-    - name: Review team activities
-      href: ../admin/review-team-activities-for-useful-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-    - name: Locate reports after the upgrade to TFS 2010
-      href: ../admin/locate-reports-after-upgrade.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-  - name: Manage data warehouse
-    items:
-    - name: Manage the data warehouse and cube
-      href: ../admin/manage-reports-data-warehouse-cube.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-    - name: Manually process the data warehouse and cube
-      href: ../admin/manually-process-data-warehouse-and-cube.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-    - name: Change a process control setting
-      href: ../admin/change-a-process-control-setting.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-    - name: Rebuild the data warehouse and cube
-      href: ../admin/rebuild-data-warehouse-and-cube.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-  - name: Manage Reporting Services reports
-    items:
-    - name: Create and manage Reporting Services reports
-      href: create-and-manage-reporting-services-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-    - name: Create a Report Server Project
-      href: create-a-report-server-project.md
-    - name: Create a detailed report
-      href: create-a-detailed-report-using-report-designer.md
-    - name: Create an aggregate report
-      href: create-aggregate-report-report-designer-analysis-services-cube.md
-    - name: View, organize, & configure reports
-      href: ../admin/view-organize-configure-reports-using-report-manager.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-    - name: View, upload, & organize reports 
-      href: ../admin/view-upload-organize-reporting-services-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-  - name: Disable the data warehouse
-    href: ../admin/disable-data-warehouse.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-- name: Reference
+    href: ../admin/add-reports-to-a-team-project.md
+  - name: Add a report server
+    href: ../admin/add-a-report-server.md
+  - name: Upload reports to a team project
+    href: ../admin/upload-reports.md
+  - name: Set permissions to view or create reports
+    href: ../admin/grant-permissions-to-reports.md
+  - name: Review team activities
+    href: ../admin/review-team-activities-for-useful-reports.md
+  - name: Locate reports after the upgrade to TFS 2010
+    href: ../admin/locate-reports-after-upgrade.md
+- name: Manage data warehouse
   items:
-  - name: Reportable fields reference 
-    href: ../../reference/xml/reportable-fields-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Reporting Services reports 
-    items:
-    - name: Backlog Overview (Scrum)
-      href: backlog-overview-scrum.md
-    - name: Bug Status
-      href: bug-status-report.md
-    - name: Bug Trends
-      href: bug-trends-report.md
-    - name: Build Quality Indicators
-      href: build-quality-indicators-report.md
-    - name: Build Success Over Time
-      href: build-success-over-time-report.md
-    - name: Build Summary
-      href: build-summary-report.md
-    - name: Burndown and Burn Rate
-      href: burndown-and-burn-rate-report.md
-    - name: Reactivations
-      href: reactivations-report.md
-    - name: Release Burndown
-      href: release-burndown.md
-    - name: Remaining Work
-      href: remaining-work-report.md
-    - name: Requirements Overview (CMMI)
-      href: requirements-overview-report-cmmi.md
-    - name: Requirements Progress (CMMI)
-      href: requirements-progress-report-cmmi.md
-    - name: Status on All Iterations
-      href: status-on-all-iterations-report.md
-    - name: Stories Overview (Agile)
-      href: stories-overview-report-agile.md
-    - name: Stories Progress (Agile)
-      href: stories-progress-report-agile.md
-    - name: Test Case Readiness
-      href: test-case-readiness-report.md
-    - name: Test Plan Progress
-      href: test-plan-progress-report.md
-    - name: Unplanned Work
-      href: unplanned-work.md
-    - name: Sprint Burndown (Scrum)
-      href: sprint-burndown-scrum.md
-    - name: Velocity (Scrum)
-      href: velocity.md
-  - name: Data warehouse table reference 
-    items:
-    - name: Data warehouse tables
-      href: table-reference-relational-warehouse-database.md
-    - name: Build Changeset tables
-      href: table-reference-build-changeset.md
-    - name: Build Coverage tables
-      href: table-reference-build-coverage.md
-    - name: Build Details tables
-      href: table-reference-build-details.md
-    - name: Build Project tables
-      href: table-reference-build-project.md
-    - name: Code Churn tables
-      href: table-reference-code-churn.md
-    - name: Current Work Item tables
-      href: table-reference-current-work-items.md
-    - name: Run Coverage tables
-      href: run-coverage-tables.md
-    - name: Test Result tables
-      href: test-result-tables.md
-    - name: Work Item Category tables
-      href: work-item-category-tables.md
-    - name: Work Item Changeset tables
-      href: work-item-changeset-tables.md
-    - name: Work Item History tables
-      href: work-item-history-tables.md
-    - name: Work Item Link History tables
-      href: work-item-link-history-tables.md
-    - name: Work Item Test Result tables
-      href: work-item-test-result-tables.md
+  - name: Manage the data warehouse and cube
+    href: ../admin/manage-reports-data-warehouse-cube.md
+  - name: Manually process the data warehouse and cube
+    href: ../admin/manually-process-data-warehouse-and-cube.md
+  - name: Change a process control setting
+    href: ../admin/change-a-process-control-setting.md
+  - name: Rebuild the data warehouse and cube
+    href: ../admin/rebuild-data-warehouse-and-cube.md
+  - name: Disable the data warehouse
+    href: ../admin/disable-data-warehouse.md
+- name: Manage reports
+  items:
+  - name: Create and manage Reporting Services reports
+    href: create-and-manage-reporting-services-reports.md
+  - name: Create a Report Server Project
+    href: create-a-report-server-project.md
+  - name: Create a detailed report
+    href: create-a-detailed-report-using-report-designer.md
+  - name: Create an aggregate report
+    href: create-aggregate-report-report-designer-analysis-services-cube.md
+  - name: View, organize, & configure reports
+    href: ../admin/view-organize-configure-reports-using-report-manager.md
+  - name: View, upload, & organize reports 
+    href: ../admin/view-upload-organize-reporting-services-reports.md
+- name: Report descriptions
+  items:
+  - name: Backlog Overview (Scrum)
+    href: backlog-overview-scrum.md
+  - name: Bug Status
+    href: bug-status-report.md
+  - name: Bug Trends
+    href: bug-trends-report.md
+  - name: Build Quality Indicators
+    href: build-quality-indicators-report.md
+  - name: Build Success Over Time
+    href: build-success-over-time-report.md
+  - name: Build Summary
+    href: build-summary-report.md
+  - name: Burndown and Burn Rate
+    href: burndown-and-burn-rate-report.md
+  - name: Reactivations
+    href: reactivations-report.md
+  - name: Release Burndown
+    href: release-burndown.md
+  - name: Remaining Work
+    href: remaining-work-report.md
+  - name: Requirements Overview (CMMI)
+    href: requirements-overview-report-cmmi.md
+  - name: Requirements Progress (CMMI)
+    href: requirements-progress-report-cmmi.md
+  - name: Status on All Iterations
+    href: status-on-all-iterations-report.md
+  - name: Stories Overview (Agile)
+    href: stories-overview-report-agile.md
+  - name: Stories Progress (Agile)
+    href: stories-progress-report-agile.md
+  - name: Test Case Readiness
+    href: test-case-readiness-report.md
+  - name: Test Plan Progress
+    href: test-plan-progress-report.md
+  - name: Unplanned Work
+    href: unplanned-work.md
+  - name: Sprint Burndown (Scrum)
+    href: sprint-burndown-scrum.md
+  - name: Velocity (Scrum)
+    href: velocity.md
+- name: Reference-Data warehouse tables
+  items:
+  - name: Data warehouse tables
+    href: table-reference-relational-warehouse-database.md
+  - name: Build Changeset tables
+    href: table-reference-build-changeset.md
+  - name: Build Coverage tables
+    href: table-reference-build-coverage.md
+  - name: Build Details tables
+    href: table-reference-build-details.md
+  - name: Build Project tables
+    href: table-reference-build-project.md
+  - name: Code Churn tables
+    href: table-reference-code-churn.md
+  - name: Current Work Item tables
+    href: table-reference-current-work-items.md
+  - name: Run Coverage tables
+    href: run-coverage-tables.md
+  - name: Test Result tables
+    href: test-result-tables.md
+  - name: Work Item Category tables
+    href: work-item-category-tables.md
+  - name: Work Item Changeset tables
+    href: work-item-changeset-tables.md
+  - name: Work Item History tables
+    href: work-item-history-tables.md
+  - name: Work Item Link History tables
+    href: work-item-link-history-tables.md
+  - name: Work Item Test Result tables
+    href: work-item-test-result-tables.md
+- name: Reference-Cube perspectives and measure groups
+  items:
   - name: Cube perspectives and measure groups
-    items:
-    - name: Cube perspectives and measure groups
-      href: perspective-measure-groups-cube.md
-    - name: Shared dimensions
-      href: shared-dimensions-in-the-analysis-services-cube.md
-    - name: Build details and coverage
-      href: perspective-build-analyze-report-build-details-coverage.md
-    - name: Code churn and code coverage
-      href: perspective-code-analyze-report-code-churn-coverage.md
-    - name: Test results
-      href: perspective-test-analyze-report-test-results.md
-    - name: Work items and test case data
-      href: perspective-test-analyze-report-work.md
+    href: perspective-measure-groups-cube.md
+  - name: Shared dimensions
+    href: shared-dimensions-in-the-analysis-services-cube.md
+  - name: Build details and coverage
+    href: perspective-build-analyze-report-build-details-coverage.md
+  - name: Code churn and code coverage
+    href: perspective-code-analyze-report-code-churn-coverage.md
+  - name: Test results
+    href: perspective-test-analyze-report-test-results.md
+  - name: Work items and test case data
+    href: perspective-test-analyze-report-work.md
 - name: Troubleshooting
   items:
   - name: Address inaccuracies published for summary values
     href: address-inaccuracies-published-for-summary-values.md
   - name: Resolve schema conflicts in the data warehouse
-    href: ../admin/resolve-schema-conflicts.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-- name: Resources
-  items:
-  - name: Change reporting attributes
-    href: ../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-  - name: SharePoint Integration (Deprecated)
-    href: ../sharepoint-dashboards/index.md
-  - name: Server Administration 
-    href: /azure/devops/server/server/index
+    href: ../admin/resolve-schema-conflicts.md
+

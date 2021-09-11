@@ -4,18 +4,13 @@ title: Build your Azure Cloud Service
 ms.topic: conceptual
 ms.custom: seodec18
 description: Define a continuous integration (CI) build for your Azure Cloud Service in Azure Pipelines or Team Foundation Server (TFS)
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
-ms.date: 01/02/2017
+ms.date: 01/27/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Build your Azure Cloud Service
 
-[!INCLUDE [temp](../../_shared/version.md)]
+[!INCLUDE [temp](../../includes/version.md)]
 
 Here we'll show you how to define your continuous integration (CI) pipeline for your Azure Cloud Service project.
 
@@ -24,7 +19,7 @@ Here we'll show you how to define your continuous integration (CI) pipeline for 
 For the instructions in this topic, you need an Azure Cloud Service project in Visual Studio.
 
 > [!TIP]
-> If you don't yet have an app but want to try this out, then see the [Q&A below](#new_solution).
+> If you don't yet have an app but want to try this out, then see the [FAQ below](#new_solution).
 
 ## Define your CI build pipeline
 
@@ -32,7 +27,7 @@ For the instructions in this topic, you need an Azure Cloud Service project in V
 
 <ol>
 
-[!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
+[!INCLUDE [include](../../includes/begin-create-build-definition.md)]
 
 <li>Select the <strong>Azure Cloud Service</strong> template.</li>
 
@@ -53,9 +48,9 @@ Save the build pipeline and queue a new build by selecting the **Queue new build
 
 After you've run the build, you're ready to create a release pipeline to deploy your app to:
 
-* <a href="../cd/deploy-cloudservice-cloudservice.md"><img src="../../tasks/deploy/_img/azure-cloud-service-deployment-icon.png"/> An Azure Cloud Service</a>
+* <a href="../cd/deploy-cloudservice-cloudservice.md">:::image type="icon" source="../../tasks/deploy/media/azure-cloud-service-deployment-icon.png" border="false"::: An Azure Cloud Service</a>
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

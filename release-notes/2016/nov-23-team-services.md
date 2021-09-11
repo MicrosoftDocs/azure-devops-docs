@@ -1,8 +1,7 @@
----
+﻿---
 title: Follow a PR, task versioning, and search for commits in branches – Nov 23
 description: VSTS release notes for Nov 23 2016
 ms.ContentId: 3ddd918f-81cd-4745-9b1c-4fb6f1dae6fd
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
@@ -16,21 +15,21 @@ We have a bunch of new features rolling out this sprint.
 ## Search for commits in branches
 You can now search for a commit in a specified branch or a tag by clicking on the __Search in branches__ button on the commit details page.
 
-![commit search](_img/11_23_03.png)
+![commit search](media/11_23_03.png)
 
 You can select tags and branches in the window to view whether these branches and tags contain the particular commit.
 
-![commit search dialog](_img/11_23_04.png)
+![commit search dialog](media/11_23_04.png)
 
 ## Search for a file or folder in commit history
 Similar to the files tab, users can now search for a file or folder in a repository and see the history of commits for that file or folder. For any Git repository, go to the path control box on the History tab and start typing to initiate a history search experience for the file or folder you are looking for.
 
-![commit history](_img/11_23_06.png)
+![commit history](media/11_23_06.png)
 
 ## Follow a pull request
 You can now follow a pull request to stay notified of any changes via email alerts. The option to __Follow__ is available in the context menu.
 
-![Follow PR](_img/11_23_01.png)
+![Follow PR](media/11_23_01.png)
 
 ## Restart pull request merge
 Another option has been added to re-attempt the merge for a pull request where the target branch has been updated. This __Restart merge__ option is useful when you want to verify that recent changes to the target branch haven’t created conflicts or broken your PR build.
@@ -38,7 +37,7 @@ Another option has been added to re-attempt the merge for a pull request where t
 ## Completion blocked on rejected pull requests
 Branches that have the code review policy set will notice that the PR is unable to be completed if it is rejected by one or more reviewers. Many users expect this behavior, so we’ve changed the default behavior. For teams that want the original behavior, there is a new option in the branch policy setting page.
 
-![code review policy](_img/11_23_02.png)
+![code review policy](media/11_23_02.png)
 
 ## Markdown in pull request description
 Spice up your pull request description with Markdown. The same Markdown support you know and love in pull request comments is now available in the pull request description.
@@ -69,7 +68,7 @@ If you don’t see the option yet, just give it a little time. We’re rolling t
 To make continuous integration and deployment (CI/CD) of Docker apps a whole lot simpler for you, we’ve:
 * Updated the [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker) with support for Azure Container Service and Azure Container Registry. 
 * Begun a preview of the Hosted Linux pool preview so that you don’t have to set up your own Docker hosts.
-* Released [Visual Studio 2017 RC](https://visualstudio.microsoft.com/vs/visual-studio-2017-rc/) and included [new continuous delivery tools](/azure/devops/pipelines/archive/apps/aspnet/aspnetcore-docker-to-azure?view=azure-devops) for ASP.NET Core Preview apps. You can use these tools to configure a CI/CD process quickly in Team Services. Any ASP.NET Core project with Docker support enabled can be set up to run an automated build and deployment to Azure Container Service with every Git push.
+* Released [Visual Studio 2017 RC](https://visualstudio.microsoft.com/vs/visual-studio-2017-rc/) and included [new continuous delivery tools](/azure/devops/pipelines/archive/apps/aspnet/aspnetcore-docker-to-azure?view=azure-devops&preserve-view=true) for ASP.NET Core Preview apps. You can use these tools to configure a CI/CD process quickly in Team Services. Any ASP.NET Core project with Docker support enabled can be set up to run an automated build and deployment to Azure Container Service with every Git push.
 
 ## New licensing model for Build and Release Management
 Over the next two weeks, Build and Release Management will move from the current agent-based licensing model to a concurrent pipeline based licensing model. Each pipeline lets you run one build or deploy one release at a time. The maximum number of concurrent builds that you can run and releases that you can deploy at the same time is limited only by the number of pipelines that you have.
@@ -88,11 +87,11 @@ We’ve updated the NuGet + Credential Provider Bundle to NuGet 3.5. NuGet 3.5 c
 ## Delete test artifacts
 Customers already had the ability to delete work items, except for test artifacts and any work items which are linked to test artifacts. With this update, users will now have the ability to permanently delete test artifacts&mdash;test plans, test suites, test cases, shared parameters and shared steps&mdash;both from the __Test__ hub and the __Work__ hub by using the __Permanently delete__ option in the work item form context menu. 
 
-![delete test artifacts menu](_img/11_23_07.png)
+![delete test artifacts menu](media/11_23_07.png)
 
 Deletion of a test artifact not only deletes the selected artifact but also all the child items like child test suites, tests across all configurations and testers, their test result history and other associated history that fall in its hierarchy. In the confirmation dialog box, users can view the impact of their delete operation to help them make an informed decision. 
 
-![delete test artifacts confirm](_img/11_23_08.png)
+![delete test artifacts confirm](media/11_23_08.png)
 
 ## Inline service connections in Build and Release
 With this feature, you can create service connections right in the build/release definition without having to navigate to the __Services__ tab. This will be auto-enabled for all extensions which are defined declaratively, such as Docker, Jenkins, VMWare, and SCVMM. 
@@ -100,9 +99,9 @@ With this feature, you can create service connections right in the build/release
 ## Link build artifacts from another team project
 Until now, release definitions could only link artifact sources from the current project. Now, you can now link build artifacts from another project as well. While linking an artifact, the project drop down will list all the projects in the account.
 
-![build artifacts](_img/11_23_09.png)
+![build artifacts](media/11_23_09.png)
 
-As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

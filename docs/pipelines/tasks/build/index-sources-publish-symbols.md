@@ -1,32 +1,29 @@
 ---
-title: Index Sources & Publish Symbols build and release task
+title: Index Sources & Publish Symbols
 ms.custom: seodec18
 description: Index Sources & Publish Symbols build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
-ms.manager: jillfra
-ms.author: pbora
-author: PBoraMSFT
-ms.date: 11/14/2017
+ms.author: shashban
+author: shashban
+ms.date: 04/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
 
 # Index Sources & Publish Symbols task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 > [!NOTE]
 > A symbol server is available with Package Management in **Azure Artifacts** and works best with **Visual Studio 2017.4 and newer**.
 > **Team Foundation Server** users and users without the Package Management extension can publish symbols to a file share using this task.
 
-Use this task in a build or release pipeline to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
+Use this task to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
 
 Indexing source code enables you to use your .pdb symbol files to debug an app on a machine other than the one you used to build the app. For example, you can debug an app built by a build agent from a dev machine that does not have the source code.
 
-Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](/azure/devops/artifacts/concepts/symbols); to publish symbols, use this task and see [the walkthrough](/azure/devops/pipelines/artifacts/symbols).
+Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../../../artifacts/concepts/symbols.md); to publish symbols, use this task and see [the walkthrough](../../artifacts/symbols.md).
 
 > [!NOTE]
 > This build task works only:
@@ -41,7 +38,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PublishSymbolsV2.md)]
+[!INCLUDE [temp](../includes/yaml/PublishSymbolsV2.md)]
 
 ::: moniker-end
 
@@ -55,35 +52,35 @@ None
         </tr>
     </thead>
     <tr>
-        <td>Path to symbols folder</td>
+        <td><code>SymbolsFolder</code><br/>Path to symbols folder</td>
         <td>
-            <p>The root path that is searched for symbol files using the search patterns supplied in the next input.</p>
+            <p>(Optional) The path to the folder that is searched for symbol files. The default is $(Build.SourcesDirectory), Otherwise specify a rooted path. Note that UNC paths aren't supported if you select the Azure Artifacts symbol server as the server type.<br/>For example: $(Build.BinariesDirectory)/MyProject</p>
         </td>
     </tr>
     <tr>
-        <td>Search pattern</td>
+        <td><code>SearchPattern</code><br/>Search pattern</td>
         <td>
-            <p><a href="../file-matching-patterns.md" data-raw-source="[File matching pattern(s)](../file-matching-patterns.md)">File matching pattern(s)</a> (rooted at the path supplied in the previous input) used to discover <code>pdbs</code> that contain symbols.</p>
+            <p>(Required) <a href="../file-matching-patterns.md" data-raw-source="[File matching pattern(s)](../file-matching-patterns.md)">File matching pattern(s)</a> The pattern used to discover the pdb files to publish</p><br/>Default value: **/bin/**/*.pdb
         </td>
     </tr>
     <tr>
-        <td>Index sources</td>
+        <td><code>IndexSources</code><br/>Index sources</td>
         <td>
-            <p>Adds information about the location of the source repository to the symbols. This enables users using these symbols to navigate to the relevant source code.</p>
+            <p>(Optional) Indicates whether to inject source server information into the PDB files</p><br/>Default value: true
         </td>
     </tr>
     <tr>
-        <td>Publish symbols</td>
+        <td><code>PublishSymbols</code><br/>Publish symbols</td>
         <td>
-            <p>Publishes symbols to the symbol server selected in the next inputs.</p>
+            <p>(Optional) Indicates whether to publish the symbol files</p><br/>Default value: true
         </td>
     </tr>
     <tr>
-        <td>Symbol server type</td>
-        <td>
-            <strong>Package Management in Azure Artifacts:</strong>
+        <td><code>SymbolServerType</code><br/>Symbol server type</td>
+        <td>(Required) Choose where to publish symbols. Symbols published to the Azure Artifacts symbol server are accessible by any user with access to the organization/collection. Azure DevOps Server only supports the "File share" option. Follow <a href="../../artifacts/symbols.md" data-raw-source="[these instructions](../../artifacts/symbols.md)">these instructions</a> to use Symbol Server in Azure Artifacts.<br/>
+            <strong>TeamServices:</strong>
             <ul>
-                <li>Select this option to use the symbol server built into the <a href="https://marketplace.visualstudio.com/items?itemName=ms.feed" data-raw-source="[Package Management extension](https://marketplace.visualstudio.com/items?itemName=ms.feed)">Package Management extension</a>.</li>
+                <li>Symbol Server in this organization/collection (requires Azure Artifacts)</li>
             </ul>
             <strong>File share:</strong>
             <ul>
@@ -92,9 +89,9 @@ None
         </td>
     </tr>
     <tr>
-        <td>Path to publish symbols</td>
+        <td><code>SymbolsPath</code><br/>Path to publish symbols</td>
         <td>
-            <p>The path to the SymStore file share.
+            <p>(Optional) The file share that hosts your symbols. This value will be used in the call to <b>symstore.exe add</b> as the <b>/s</b> parameter.
             </p>
             <p>To prepare your SymStore symbol store:</p>
             <ol>
@@ -106,9 +103,9 @@ None
         </td>
     </tr>
         <tr>
-        <td>Compress symbols</td>
+        <td><code>CompressSymbols</code><br/>Compress symbols</td>
         <td>
-            <p>Only available when <strong>File share</strong> is selected as the <strong>Symbol server type</strong>. Compresses your <code>pdbs</code> to save space. 
+            <p>(Required) Only available when <strong>File share</strong> is selected as the <strong>Symbol server type</strong>. Compresses your <code>pdbs</code> to save space. <br/>Default value: false
         </td>
     </tr>
     <tr>
@@ -116,51 +113,48 @@ None
     </tr>
     <tr>
         <tr>
-            <td>Verbose logging</td>
+            <td><code>DetailedLog</code><br/>Verbose logging</td>
             <td>
-                Enables additional log details.
+                (Optional) Enables additional log details. <br/>Default value: true
             </td>
         </tr>
-        <td>Warn if not indexed</td>
+        <td><code>TreatNotIndexedAsWarning</code><br/>Warn if not indexed</td>
         <td>
-            <p>Enable this option if you want the build summary to show a warning when sources are not indexed for a PDB file.
-                A common cause of sources to not be indexed are when your solution depends on binaries that it doesn&#39;t build.</p>
+            <p>(Optional) Indicates whether to warn if sources are not indexed for a PDB file. Otherwise the messages are logged as normal output. <br/>
+                A common cause of sources to not be indexed are when your solution depends on binaries that it doesn&#39;t build.</p> 
             <p>Even if you don&#39;t select this option, the messages are written in log.
-            </p>
+            </p><br/>Default value: false
         </td>
     </tr>
     <tr>
-        <td>Max wait time (min) </td>
-        <td>If you want to set a time limit for this task, specify the number of minutes here. The build fails when the limit
-            is reached. If you leave it blank, limit is 2 hours.</td>
+        <td><code>SymbolsMaximumWaitTime</code><br/>Max wait time (min) </td>
+        <td>(Optional) The number of minutes to wait before failing this task. If you leave it blank, limit is 2 hours.</td>
     </tr>
     <tr>
-        <td>Product</td>
-        <td>If you are publishing your symbols, you can specify the product parameter that is passed to symstore.exe. If blank,
-            <a href="../../build/variables.md" data-raw-source="[$(Build.DefinitionName)](../../build/variables.md)">$(Build.DefinitionName)</a> is passed.</td>
+        <td><code>SymbolsProduct</code><br/>Product</td>
+        <td>(Optional) Specify the product parameter to symstore.exe.  The default is $(Build.DefinitionName)</td>
     </tr>
     <tr>
-        <td>Version</td>
-        <td>If you are publishing your symbols, you can specify the version parameter that is passed to symstore.exe. If blank,
-            <a href="../../build/variables.md" data-raw-source="[$(Build.BuildNumber)](../../build/variables.md)">$(Build.BuildNumber)</a> is passed.</td>
+        <td><code>SymbolsVersion</code><br/>Version</td>
+        <td>(Optional) Specify the version parameter to symstore.exe.  The default is $(Build.BuildNumber).</td>
     </tr>
     <tr>
-        <td>Artifact name</td>
-        <td>Specify the pattern used for the name of the link from the artifact tab in the build summary to the file share where
-            you are publishing your symbols. For example, if you specify <code>Symbols_$(BuildConfiguration)</code>, then the name
-            of the link to your published release symbols would be <em>Symbols_release</em></td>
+        <td><code>SymbolsArtifactName</code><br/>Artifact name</td>
+        <td>(Optional) Specify the artifact name to use for the Symbols artifact.  The default is Symbols_$(BuildConfiguration). <br/>Default value: Symbols_$(BuildConfiguration)</td>
     </tr>
-
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
-
 </table>
+
+For more information about the different types of tasks and their uses, see [Task control options](../../process/tasks.md#controloptions).
+
+> [!IMPORTANT]
+> To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../../policies/retention.md#delete-a-run).
 
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### How does indexing work?
@@ -178,19 +172,19 @@ No, source indexing is currently not enabled for Portable PDBs as SourceLink doe
 
 ### Where can I learn more about symbol stores and debugging?
 
-[Symbol Server and Symbol Stores](https://msdn.microsoft.com/library/ms680693%28VS.85%29.aspx)
+[Symbol Server and Symbol Stores](/windows/win32/debug/symbol-servers-and-symbol-stores)
 
-[SymStore](https://msdn.microsoft.com/library/ff558848%28VS.85%29.aspx)
+[SymStore](/windows-hardware/drivers/debugger/symstore)
 
-[Use the Microsoft Symbol Server to obtain debug symbol files](https://msdn.microsoft.com/library/windows/desktop/ee416588%28v=vs.85%29.aspx)
+[Use the Microsoft Symbol Server to obtain debug symbol files](/windows/win32/dxtecharts/debugging-with-symbols)
 
-[The Srcsrv.ini File](https://msdn.microsoft.com/library/windows/hardware/ff558876%28v=vs.85%29.aspx)
+[The Srcsrv.ini File](/windows-hardware/drivers/debugger/the-srcsrv-ini-file)
 
-[Source Server](https://msdn.microsoft.com/library/windows/desktop/ms680641%28v=vs.85%29.aspx)
+[Source Server](/windows/win32/debug/source-server-and-source-indexing)
 
-[Source Indexing and Symbol Servers: A Guide to Easier Debugging](http://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
+[Source Indexing and Symbol Servers: A Guide to Easier Debugging](https://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ### How long are Symbols retained?
 

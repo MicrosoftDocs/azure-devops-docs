@@ -2,10 +2,6 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Process Customization
+  - name: Boards settings
     tocHref: /azure/devops/reference/
     topicHref: /azure/devops/reference/index
-    items:
-    - name: Process Templates
-      tocHref: /azure/devops/reference/process-templates/
-      topicHref: /azure/devops/reference/process-templates/index

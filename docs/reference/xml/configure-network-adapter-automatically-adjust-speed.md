@@ -1,12 +1,11 @@
 ---
-title: Configure a network adapter to automatically adjust speed
+title: Configure network adapter to auto adjust speed
 titleSuffix: TFS
 description: Configure to automatically adjust the link speed of its network adapter - Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 26b43d25-a60e-4d8d-b12b-890d152b0d14
-ms.author: kaelliauthor: KathrynEE
-ms.manager: jillfra
+ms.author: kaelli
+monikerRange: 'tfs-2013'
 ms.date: 02/22/2017 
 ---
 

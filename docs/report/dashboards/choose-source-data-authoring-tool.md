@@ -1,21 +1,19 @@
----
+﻿---
 title: Choose the source of data and authoring tool
 titleSuffix: Azure DevOps Server
 description: Guide to data sources and tools for creating and customizing reports, Azure DevOps Server & Team Foundation Server  
 ms.custom: dashboards
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: cc71c69f-230b-47e6-b29b-398e3e280894
-ms.author: kaelliauthor: KathrynEE
-ms.manager: jillfra
-monikerRange: '<= azure-devops-2019'
+ms.author: kaelli
+monikerRange: '< azure-devops'
 ms.date: 04/05/2019
 ---
 
 # Choose the source of data and authoring tool
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 When you create reports that show data from Azure DevOps Server, previously named Team Foundation Server (TFS), you specify one of three sources of data and use one of three authoring tools. The choice of data source and authoring tool are interrelated.
 
@@ -40,7 +38,7 @@ For more information about how you can create reports that access the three sour
 |Authoring tool|Source of data|Related topic|
 |---|---|---|
 |Excel|Work item query results|[Use the query editor to list and manage queries](../../boards/queries/using-queries.md)|
-|Excel|OLAP data cube|[Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md)|
+|Excel|OLAP data cube|[Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md)|
 |Report Designer|OLAP data cube|[Create an aggregate report using Report Designer and the Analysis Services Cube](../sql-reports/create-aggregate-report-report-designer-analysis-services-cube.md) </li></ul>|
 |Report Designer|Warehouse database|[Create a Detailed Report using Report Designer](../sql-reports/create-a-detailed-report-using-report-designer.md)|
 
@@ -54,7 +52,7 @@ The analysis services database organizes data in a cube structure. The cube cont
 > Some measures, such as **Work Item.Work Item Count**, are not pre-aggregated. They are calculated when the query is performed.
 
 
-You can easily build PivotTable and PivotChart reports in Excel by using the analysis services database. For more information, see [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md).
+You can easily build PivotTable and PivotChart reports in Excel by using the analysis services database. For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).
 
 For more information about this source of data, see [Perspectives and measure groups provided in the Analysis Services cube for Visual Studio](../sql-reports/perspective-measure-groups-cube.md).
 
@@ -63,15 +61,14 @@ For more information about this source of data, see [Perspectives and measure gr
 The warehouse database is a relational database that organizes data in a set of related tables and provides views and table-valued functions for accessing that data. Data from the project collections is gathered and maintained in the warehouse database. If you are familiar with writing Transact-SQL queries, you can create reports by using the warehouse database.
 
 > [!NOTE]   
-> The warehouse database might contain detailed data that is not present in the analysis services database, depending on the work items that your project uses. For more information about how work item fields are mapped to the warehouse, see [Reportable fields reference for Visual Studio ALM](../../reference/xml/reportable-fields-reference.md).
+> The warehouse database might contain detailed data that is not present in the analysis services database, depending on the work items that your project uses. For more information about how work item fields are mapped to the warehouse, see [Reportable fields reference](../../reference/xml/reportable-fields-reference.md).
 
 
 For more information about the warehouse database, see [Table reference for the relational warehouse database](../sql-reports/table-reference-relational-warehouse-database.md).
 
 ## Related articles
 
-- [Create Excel status and trend charts from a query](../excel/create-status-and-trend-excel-reports.md)
+- [Create Excel status and trend charts from a query](../create-status-and-trend-excel-reports.md)
 - [Dashboards and reports](overview.md)
-- [Design Reporting Services Paginated Reports with Report Designer (SSRS)](https://msdn.microsoft.com/library/ms156280.aspx) 
-- [Report Builder in SQL Server 2016](https://msdn.microsoft.com/library/dd220460.aspx)
-
+- [Design Reporting Services Paginated Reports with Report Designer (SSRS)](/sql/reporting-services/tools/design-reporting-services-paginated-reports-with-report-designer-ssrs) 
+- [Report Builder in SQL Server 2016](/sql/reporting-services/report-builder/report-builder-in-sql-server-2016)

@@ -1,7 +1,6 @@
 ---
 title: Pull Requests refresh and much, much more – Aug 17
 description: VSTS release notes for August 17 2016
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 7ecf0247-57e9-4439-97cc-730d78905324
@@ -22,25 +21,25 @@ The pull request experience has some major updates this release, bringing some r
 
 When opening a pull request, the new look and feel is evident immediately. We’ve reorganized the header to summarize all of the critical states and actions, making them accessible from every view in the experience.
 
-![Pull request header](_img/8_17_01.png)
+![Pull request header](media/8_17_01.png)
 
 ### Overview
 
 The Overview now highlights the  pull request description and makes it easier than ever to give feedback. Events and comments are shown with the newest items on top to help reviewers see the latest changes and comments front and center. Policies, work items, and reviewers are all provided in detail and reorganized to be more clear and concise.
 
-![Pull request overview](_img/8_17_02.png)
+![Pull request overview](media/8_17_02.png)
 
 ### Files
 
 The biggest new feature in this release is the ability to see past updates made to a pull request. A few sprints ago ([July 7th](jul-07-team-services.md)), we released the ability to properly track comments as a  pull request is updated with changes. However, it’s not always easy to see what’s between updates. In the Files view, you can now see exactly what changed each time new code is pushed to your pull request. This is really useful if you’ve given feedback on some code and want to see exactly how it changed isolated from all of the other changes in the review.
 
-![Viewing changes on a pull request](_img/8_17_03.png)
+![Viewing changes on a pull request](media/8_17_03.png)
 
 ### Updates
 
 The new Updates view is used to show how the  pull request is changing over time.  While the Files view shows how the files have changed over time, the Updates view shows the commits added in each update. If a force push ever happens, the Updates view will continue to show the past updates as they occurred in history.
 
-![Updates view](_img/8_17_04.png)
+![Updates view](media/8_17_04.png)
 
 The Commits view is useful in conjunction with the Updates view to show the current changes to be merged when the PR is completed.
 
@@ -48,21 +47,21 @@ The Commits view is useful in conjunction with the Updates view to show the curr
 
 Use the full power of markdown in all of your discussions, including formatting, code with syntax highlighting, links, images, and emoji. The commenting controls also have a more user friendly editing experience allowing multiple comments to be edited (and then saved) at one time.
 
-![Comments](_img/8_17_05.png)
+![Comments](media/8_17_05.png)
 
 ### Auto-complete pull requests waiting on policies
 
-Teams that are using branch policies ([/vsts/repos/git/branch-policies-overview](/azure/devops/repos/git/branch-policies-overview?view=azure-devops)) to protect their branches will want to check out the auto-complete action. Many times, the author of a pull request will be ready to merge their PR, but they’re waiting on a build to finish before they can click Complete. Other times, the build is passing, but there is one reviewer that hasn’t given the final approval. In these cases, the auto-complete action lets the author set the PR to automatically complete as soon as the policies are all approved.
+Teams that are using branch policies ([/vsts/repos/git/branch-policies-overview](/azure/devops/repos/git/branch-policies-overview?view=azure-devops&preserve-view=true)) to protect their branches will want to check out the auto-complete action. Many times, the author of a pull request will be ready to merge their PR, but they’re waiting on a build to finish before they can click Complete. Other times, the build is passing, but there is one reviewer that hasn’t given the final approval. In these cases, the auto-complete action lets the author set the PR to automatically complete as soon as the policies are all approved.
 
-![Auto-complete](_img/8_17_06.png)
+![Auto-complete](media/8_17_06.png)
 
 Just like the manual complete action, the author has a chance to customize the message of the merge commit and select the appropriate merge options.
 
-![Selecting auto-complete options](_img/8_17_07.png)
+![Selecting auto-complete options](media/8_17_07.png)
 
 Once auto-complete has been set, the pull request will display a banner that confirms that the auto-complete is set and waiting for policies to complete.
 
-![Auto-complete banner](_img/8_17_08.png)
+![Auto-complete banner](media/8_17_08.png)
 
 When all of the policies have been met (i.e., the build completes, or that final approval is granted), the  pull request will be merged using the options and comments specified. As expected, if there is a build failure or the reviewer doesn’t approve, the PR will remain active until the policies are passing.
 
@@ -78,15 +77,15 @@ Now, when viewing a Team Services Git repository in your browser, you can invoke
 
 You can now download a package directly from the Package Management web interface. Look for the Download button on any package.
 
-![Package download button on Package Management UI](_img/8_17_09.png)
+![Package download button on Package Management UI](media/8_17_09.png)
 
 ### Get started quickly
 
 We’ve also updated the empty feed and connect to feed experiences to help you jump quickly into the most common Package Management tasks: pushing and restoring packages. Look for the new bright blue Connect to feed button in the upper right.
 
-![Connect to feed button](_img/8_17_10.png)
+![Connect to feed button](media/8_17_10.png)
 
-![Connect to feed options](_img/8_17_11.png)
+![Connect to feed options](media/8_17_11.png)
 
 ## Continuous integration
 
@@ -100,11 +99,11 @@ The Jenkins service hook has been enhanced to support Jenkins’ Cross-Site Requ
 
 ### Run SSH commands on remote machines from builds and releases
 
-The SSH task provides a way to run commands and scripts on remote machines via secure shell (SSH) as part of Team Services builds and releases. This enables deployment and validation scenarios such as installation of build artifacts on a Docker container or Linux virtual machine. For more information, see [https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/30/ssh-build-task/](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/30/ssh-build-task/).
+The SSH task provides a way to run commands and scripts on remote machines via secure shell (SSH) as part of Team Services builds and releases. This enables deployment and validation scenarios such as installation of build artifacts on a Docker container or Linux virtual machine. For more information, see [https://devblogs.microsoft.com/devops/ssh-build-task/](https://devblogs.microsoft.com/devops/ssh-build-task/).
 
 ### Create archives from builds and releases
 
-A new build task called “Archive Files” allows packaging and compressing files in multiple archive formats such as .zip, .tar, .tar.gz, and .7z. For more information, see [https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/12/archive-files-build-task-for-team-services/](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/12/archive-files-build-task-for-team-services/).
+A new build task called “Archive Files” allows packaging and compressing files in multiple archive formats such as .zip, .tar, .tar.gz, and .7z. For more information, see [https://devblogs.microsoft.com/devops/archive-files-build-task-for-team-services/](https://devblogs.microsoft.com/devops/archive-files-build-task-for-team-services/).
 
 ### Copy files over SSH from builds and releases
 
@@ -134,7 +133,7 @@ Welcome to the new build definitions UX! The experience focuses on the builds yo
 
 Here you'll find the builds you care about most. The **Mine** tab features your favorites, team favorites, and builds of code that you've checked in.
 
-![Definitions, Mine](_img/8_17_12.png)
+![Definitions, Mine](media/8_17_12.png)
 
 The 7-day pass rate shows the percentage of builds that succeeded or partially succeeded out of all the builds completed during the past week. The arrow tells you if today's builds are doing better or worse than the 7-day rate.
 
@@ -142,27 +141,28 @@ The 7-day pass rate shows the percentage of builds that succeeded or partially s
 
 When you want to see what's happening right now and in recent history, check out the **Queued** tab.
 
-![Definitions, Queued](_img/8_17_13.png)
+![Definitions, Queued](media/8_17_13.png)
 
 ### All Definitions tab adds folders
 
 Does your team have a lot of build definitions. You can now use folders to keep them organized in the **All Definitions** tab.
 
-![Definitions, All](_img/8_17_14.png)
+![Definitions, All](media/8_17_14.png)
 
-![Manage folders](_img/8_17_15.png)
+![Manage folders in All Definitions tab.](media/8_17_15.png)
 
-**Tip:** Have a batch of definitions that need the same permissions? Put them in a folder and then you can give permissions to the folder.
+> [!TIP]
+> Have a batch of definitions that need the same permissions? Put them in a folder and then you can give permissions to the folder.
 
-![Manage folders](_img/8_17_16.png)
+![Manage folders](media/8_17_16.png)
 
 ### Improved build details
 
 When you click down to focus on a specific build, we now give you a lot more information about what's happening and overall code quality. 
 
-![Definition summary](_img/8_17_17.png)
+![Definition summary](media/8_17_17.png)
 
-![Definition history](_img/8_17_18.png)
+![Definition history](media/8_17_18.png)
 
 ### View and queue XAML builds
 
@@ -174,7 +174,7 @@ Still have some XAML builds? Visual Studio is still your primary tool for editin
 
 We added the ability to create rich work item templates directly into the native web experience. This capability was previously very limited in the web, and only available in this new form through a Visual Studio power tool. Teams can now create and manage a set of templates for quickly modifying common fields.
 
-![Work item template option](_img/8_17_19.png)
+![Work item template option](media/8_17_19.png)
 
 ### Quickly “Unfollow” work item
 
@@ -184,13 +184,13 @@ The “Followed work items” view now lets you quickly unfollow one (or many) w
 
 Work item attachments can now be created by simply dragging and dropping a file directly onto the Attachments tab. We also added support for attaching multiple files and editing the comments of attachments.
 
-![Drag and drop work item attachment](_img/8_17_20.png)
+![Drag and drop work item attachment](media/8_17_20.png)
 
 ### Assigned to Me widget
 
 We added a new widget to the catalog that summarizes all the open work assigned to the logged in user. This widget can be dragged onto any dashboard to allow users to “at a glance” see the work on their plate that needs attention. The widget supports sorting and quick filtering by type.
 
-![Assigned to Me widget](_img/8_17_21.png)
+![Assigned to Me widget](media/8_17_21.png)
 
 ### Dashboard permissions
 
@@ -204,7 +204,7 @@ You can now adjust the permissions team members have with regards to dashboards.
 
 We heard your feedback that the Sprint Overview was confusing, and made a few adjustments. The widget has been redesigned to  show clearly the number of days remaining in the sprint, and a quick summary of the work not started, in progress, and completed.
 
-![Sprint Overview widget](_img/8_17_22.png)
+![Sprint Overview widget](media/8_17_22.png)
 
 ## Test
 
@@ -216,7 +216,7 @@ We have now added the ability to configure the behavior of test outcomes for tes
 
 We are added more properties Test Run and Test Result summary pages to help you navigate to the artifacts like Releases and Test plans with a single click. If tests are run in the Release workflow, the properties show the Release and Environments in which the tests ran. For manual tests, you can find the Test Plan, Test Suite and the Test Case associated with a manual test result.
 
-![Test run and test result summary views](_img/8_17_23.png)
+![Test run and test result summary views](media/8_17_23.png)
 
 ## Marketplace
 
@@ -230,7 +230,7 @@ You can unpublish free extensions, if you no longer want to offer them in the Ma
 
 To unpublish, select the extension on your [Marketplace publisher page](https://aka.ms/vsmarketplace-manage) and choose Unpublish on the menu. Your extension will be unpublished immediately from Marketplace and new users won’t be able to install it. Ratings and reviews for your extension will stay intact. To offer your extension again in Marketplace, choose Publish on the menu.
 
-Important: If you must remove your extension due to legal or security problems, contact the [Marketplace team](https://aka.ms/vsmarketplace-contact). We will review the request and manually delete the extension.
+Important: If you must remove your extension due to legal or security problems, contact the [Marketplace team](mailto:vsmarketplace@microsoft.com). We will review the request and manually delete the extension.
 
 ## Administration
 
@@ -242,15 +242,15 @@ Our current thresholds are quite high: two hundred times the consumption of a ty
 
 When an individual user’s requests are slowed down by a significant amount, an email will be sent to that user and a warning banner will appear in the Web UI.
 
-![Rate limit warning banner](_img/8_17_24.png)
+![Rate limit warning banner](media/8_17_24.png)
 
 If the user does not have an email address—for example, if the “user” is actually a build service account—the notification email will be sent to the members of the project collection administrators group. The warning banner and the notification email will both include links to a new Usage page, which can be used to investigate the usage that exceeded our thresholds, as well as the requests that were delayed.
 
-![Usage page showing rate limiting instance](_img/8_17_25.png)
+![Usage page showing rate limiting instance](media/8_17_25.png)
 
 These changes will be rolled out slowly to avoid having unexpected impacts on large numbers of users. As such, the Usage page may not be available in all accounts for some time. For more information, see [https://visualstudio.microsoft.com/docs/reference/rate-limits](https://visualstudio.microsoft.com/docs/reference/rate-limits).
 
-That’s it for this sprint. If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+That’s it for this sprint. If you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

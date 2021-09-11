@@ -1,31 +1,31 @@
 ---
 title: Import and export categories
-titleSuffix: TFS  
-description: Import and export categories defined for a project in Team Foundation Server 
-ms.prod: devops
+titleSuffix: Azure DevOps Server 
+description: Import and export categories defined for an Azure DevOps  project 
 ms.technology: devops-agile
+ms.custom: witadmin
 ms.assetid: da37f5a5-1a52-457c-b0fc-c91fee134788
 ms.topic: reference
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-monikerRange: '<= azure-devops-2019'
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '< azure-devops'
 ms.date: 03/20/2018
 ---
 
 
 # Import and export categories
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]  
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]  
 
 You can import and export categories defined for a project by using the following **witadmin** commands:   
--   **exportcategories**:  Exports the XML definition of categories defined on a server that runs Team Foundation Server.   
--   **importcategories**:  Imports a work item type XML definition file into a project on a server that runs TFS.  If a category with the same name already exists, this command overwrites the existing definition. If the work item type does not already exist, this command creates a new category.  
+-   **exportcategories**:  Exports the XML definition of categories defined for a project.   
+-   **importcategories**:  Imports a work item type XML definition file into a project.  If a category with the same name already exists, this command overwrites the existing definition. If the work item type does not already exist, this command creates a new category.  
   
 To learn about the default categories and how they are used, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]    
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]    
   
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../includes/process-editor.md)]
   
 ## Prerequisites   
   

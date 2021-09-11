@@ -3,10 +3,8 @@ title: Rate and service limits
 titleSuffix: Azure DevOps Services Public Project
 description: Terms of service  
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid:
 ms.reviewer: 
-ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
@@ -14,11 +12,11 @@ ms.date: 07/02/2018
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Review rate and service limits 
+# Review rate and service limits 
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
-In this quickstart, you learn which service limits and rate that your public projects are subject to. 
+Learn which service limits and rate that your public projects are subject to. 
 
 <!---
 ## Pipelines

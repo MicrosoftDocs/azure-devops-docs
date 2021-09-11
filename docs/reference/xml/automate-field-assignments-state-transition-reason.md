@@ -2,34 +2,36 @@
 title: Automate field assignments 
 titleSuffix: TFS
 description: Transition work items from one state to another state based on an event that occurs elsewhere for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: f4c6c550-ed55-4bff-a5a7-0e25e87249a5
-ms.author: kaelliauthor: KathrynEE
-ms.manager: jillfra
+ms.author: kaelli
 ms.topic: reference
+monikerRange: '< azure-devops'
 ms.date: 02/14/2017
 ---
 
 # Automate field assignments based on State, Transition, or Reason
 
-[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)] 
+[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)] 
 
-You may want to automatically transition work items from one state to another state based on an event that occurs within or external to your TFS project. For example, you may want to automate the transition of a bug from one state to another based on what occurs in a call tracking tool. The work item type model and the Work Item Tracking API are extended to support automatic transitioning of work items by other systems.  
+You may want to automatically transition work items from one state to another state based on an event that occurs within or external to your Azure DevOps project. For example, you may want to automate the transition of a bug from one state to another based on what occurs in a call tracking tool. The work item type model and the Work Item Tracking API are extended to support automatic transitioning of work items by other systems.  
   
- If you have code that changes the state of a work item, you can generalize that code by associating your action with the appropriate state transition by using the **ACTION** element. You can pass the value of your action to the [WorkItem.GetNextState](assetId:///WorkItem.GetNextState?qualifyHint=False&autoUpgrade=True) method to get the post-action state of that work item. The version control check-in dialog box uses this method to resolve bugs and close tasks that are associated with the check-in.  
+ If you have code that changes the state of a work item, you can generalize that code by associating your action with the appropriate state transition by using the **ACTION** element. You can pass the value of your action to the `[WorkItem.GetNextState](assetId:///WorkItem.GetNextState?qualifyHint=False&autoUpgrade=True)` method to get the post-action state of that work item. The version control check-in dialog box uses this method to resolve bugs and close tasks that are associated with the check-in.  
   
  `ACTION` is an optional child element of `ACTIONS`.  
   
 > [!NOTE]  
-> The Work Item Tracking API is part of the Visual Studio ALM SDK, as described by the following page on the Microsoft website: [Extending Team Foundation](http://go.microsoft.com/fwlink/?LinkId=121098).  
+> The Work Item Tracking API is part of the Visual Studio ALM SDK, as described by the following page on the Microsoft website: [Extending Team Foundation](/previous-versions/visualstudio/visual-studio-2013/bb130146(v=vs.120)).  
   
  For example, a tool is preset to automatically transition a work item to "Resolved" after the user checks in a change. However, as an integration provider, you do not know what state the work item type author has declared as "Resolved". The author might mean Resolved, Closed, Completed, Ready For Test, Include In Build, and so on. One option would be to require all work item type authors to include a state explicitly named "Resolved".  
   
  That solution is too restrictive. It is also poor from an international perspective because it does not enable localization of states. Instead, system integrators can declare an action such as "Check-in" or "Complete" that induces an automatic transition for work items. The work item type author would then declare this action on the appropriate transition.  
   
  <a name="Syntax"></a> 
+
 ##  Syntax for the ACTION element  
+
  The following syntax is used for the **ACTION** element. The value attribute specifies the name of the action and is required. You should follow the same naming conventions for actions as for field reference names. For example, Team Foundation version control uses Microsoft.VSTS.Actions.CheckIn to identify the transition that is appropriate for work items that are associated with the check-in. For more information, see [Naming conventions for work item tracking objects](../../organizations/settings/naming-restrictions.md).  
   
 > [!div class="tabbedCodeSnippets"]
@@ -37,23 +39,81 @@ You may want to automatically transition work items from one state to another st
 > <ACTION value="NameOfAction" />  
 > ```  
   
-  
+## System-defined actions
+
+The following table describes the system-defined actions that appear in select XML definition files. 
+
+:::row:::
+   :::column span="1":::
+      **System Action**
+   :::column-end:::
+   :::column span="2":::
+      **Description**
+   :::column-end:::
+   :::column span="1":::
+      **Work Item Types**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `Microsoft.VSTS.Actions.CheckIn`
+   :::column-end:::
+   :::column span="2":::
+      This action transitions the state of work items associated with a changeset at a checkin. It is only valid when checking in code into a TFVC repository and the work items have been linked to a changeset (See Note 1). 
+   :::column-end:::
+   :::column span="1":::
+      Bug (Agile, CMMI), Change Request, Code Review Request, Issue, Requirement, Task, User Story 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `Microsoft.VSTS.Actions.StartWork`
+   :::column-end:::
+   :::column span="2":::
+      This action supports the Visual Studio, Team Explorer **My Work** (See Note 2) feature to transition the state of work items when a developer moves a work item to In Progress. The State is automatically moved from *New* to *Active* (Agile), from *To Do* and *In Progress* (Scrum), from *Proposed* to *Active* (CMMI), from *To Do* to *Doing* (Basic). It is only valid when developing code maintained in a TFVC repository. 
+   :::column-end:::
+   :::column span="1":::
+      Bug, Task 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `Microsoft.VSTS.Actions.StopWork`
+   :::column-end:::
+   :::column span="2":::
+      This action supports the Visual Studio, Team Explorer **My Work** feature to transition the state of work items when a developer moves a work item to Suspended Work.  The State is automatically moved from from *Active* to *New* (Agile), from *In Progress* to *To Do* (Scrum), from *Active* to *Proposed* (CMMI), from *Doing* (Basic) to *To Do*. It is only valid when developing code maintained in a TFVC repository. 
+   :::column-end:::
+   :::column span="1":::
+      Bug, Task 
+   :::column-end:::
+:::row-end:::
+
+#### Get more information
+
+- For more information on linking work items to changesets, see [Develop and share your code in TFVC using Visual Studio, Snapshot (check in) your code](../../repos/tfvc/share-your-code-in-tfvc-vs.md#snapshot-check-in-your-code).
+- For more information on **My Work**, see [Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md). 
+
+
 <a name="RequiredSteps"></a>   
+
 ##  Required steps to support automation  
- To integrate a tool with Work Item Tracking, the tool must perform the following steps:  
+
+To integrate a tool with Work Item Tracking, the tool must perform the following steps:  
   
 1.  Determine what state the work item should be transitioned to when the action is performed.  
   
 2.  Set the work item to the "to" state.  
   
-     The Work Item Tracking API provides methods for performing these steps. The Work Item Tracking API is part of the Visual Studio ALM SDK. For more information, see the following page on the Microsoft website: [Team Foundation Server SDK](http://go.microsoft.com/fwlink/?LinkId=121098).  
+     The Work Item Tracking API provides methods for performing these steps. The Work Item Tracking API is part of the Visual Studio ALM SDK. For more information, see the following page on the Microsoft website: [Team Foundation Server SDK](/previous-versions/visualstudio/visual-studio-2013/bb130146(v=vs.120)).  
   
     > [!NOTE]  
     >  The transaction action that caused a particular state transition to occur is not recorded. If you must track which action caused a transition, you can specify an additional work item field to track it, or you can define a Reason value.  
   
  
-<a name="AssociatingState"></a>   
+<a name="AssociatingState"></a> 
+  
 ##  Associate a State transition with an Action  
+
  You can use state transition actions to automate transitions of work items at various points in their workflow. For example, a Team Foundation Server version control system must support automatic transitions of work items at check-in time. To support this, a `microsoft.vsts.actions.checkin` action has been defined.  
   
  A work item type author can define a "Defect" work item type that has a state called "Working" and use this work item when a developer is making changes. The work item type author can define another state called "Ready To Build," which means that the developer has declared the code that was affected by the defect to be ready for the nightly build.  
@@ -73,8 +133,10 @@ You may want to automatically transition work items from one state to another st
 > ```  
   
  
-<a name="TransactionDetails"></a>  
+<a name="TransactionDetails"></a> 
+ 
 ##  Transition action details  
+
  Use state transition actions to automate transitions of work items at various points in their workflow. You might consider the following usage details about transition actions:  
   
 - Transition actions are optional. If the current state of the work item instance has an action entry for the specified action, it returns the "to" state. If not, the return value is Null. Integrations should handle Null return values gracefully. That is:  
@@ -104,8 +166,10 @@ You may want to automatically transition work items from one state to another st
   
 - Action names should follow the same reference namespace convention as field reference names, to avoid action name conflicts between vendors and customers. However, this convention is not enforced by the tool. Visual Studio ALM uses **Microsoft.VSTS.Actions.\<your action>**.  
 
-<a name="ErrorChecking"></a>   
+<a name="ErrorChecking"></a> 
+  
 ##  Auto-transition error checking  
+
  Integrators can try two types of auto-transitions. The first is an auto-transition that occurs because of a user action. The second is an auto-transition that occurs by unattended automation, such as a nightly build.  
   
 - **User action auto-transitions** For this kind of auto-transition, a user is present to react to any rule-related issues that appear. You must make sure that you support the situation that occurs when the author of a work item type adds a required field that the integration does not recognize. To support this situation, perform the auto-transition and then inspect the work item type for rule violations. If you find any, display the form for the user to resolve.  
@@ -123,7 +187,8 @@ You may want to automatically transition work items from one state to another st
   For example, you have created the transition action Check-In, which transitions the state of a work item from "Working" to "Ready to Build". The work item's rules for "Ready to Build" require that the "Resolved By" field be set. You would then define a **DEFAULT** or **COPY** rule element for "ResolvedBy" in the **TRANSITION** section. Additionally, you would define a **DEFAULTREASON** to make sure that the required field can be set without user intervention.  
   
 ## Related articles
+
 - [Customize your work tracking experience](../customize-work.md)
 - [Control](control-xml-element-reference.md)    
-- [Apply a field rule](apply-rule-work-item-field.md)  
-- [Change the workflow](change-workflow-wit.md)   
+- [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)  
+- [Change the workflow](change-workflow-wit.md)

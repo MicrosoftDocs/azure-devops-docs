@@ -2,25 +2,23 @@
 title: Query work tracking data using OData 
 titleSuffix: Azure DevOps
 description: How to generate work item tracking reports for Azure DevOps using OData Analytics  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 06/11/2021
 ---
 
 # Query your work tracking data using OData Analytics
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 
 Using Analytics for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 In this article, the base root URL is scoped to a project as shown:  
 
@@ -33,7 +31,7 @@ In this article, the base root URL is scoped to a project as shown:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -51,16 +49,16 @@ All additional URL parts are specified as an additional part of the query string
 
 ::: moniker range="azure-devops"
 - You will need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). 
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md). 
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](../powerbi/analytics-security.md).
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).  
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.  
-- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+::: moniker range=">= azure-devops-2019 < azure-devops"
+- [Verify that Analytics](../dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service.  
+- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
+- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](../powerbi/analytics-security.md).
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
 ::: moniker-end
 
@@ -70,13 +68,13 @@ All additional URL parts are specified as an additional part of the query string
 
 ::: moniker range="azure-devops"
 
-You construct a basic query by entering the OData URL into a [supported web browser](/tfs/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{ProjectName}` with your organization name and the name of the project that you want to query. 
+You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{ProjectName}` with your organization name and the name of the project that you want to query. 
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-You construct a basic query by entering the OData URL into a [supported web browser](/tfs/server/compatibility#supported-browsers). In the examples provided, make the following replacements:
+You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, make the following replacements:
 - `analytics.dev.azure.com` with `{ServerName}:{Port}/tfs/`
 - `{OrganizationName}` with your project collection name (default is DefaultCollection) 
 - `{ProjectName}` with the name of the project that you want to query. 
@@ -84,7 +82,7 @@ You construct a basic query by entering the OData URL into a [supported web brow
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/api-versioning.md)]
+[!INCLUDE [temp](../includes/api-versioning.md)]
 
 <a id="single-entity" />
 
@@ -100,6 +98,8 @@ For example, you query Areas by adding `/Areas`. The full URL is:
 > ```
 
 This is equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, this may take several seconds. If you have more than 10000 work items [server-side paging will be enforced](#server-force-paging).
+
+
  
 <a id="select-columns" />
 
@@ -159,6 +159,28 @@ With the full OData query:
 > ```
 
 Additionally, you can apply various functions such as `contains`, `startswith`, `endswith` and more. See the [Supported OData features and clauses, Supported functions](odata-supported-features.md#supported-functions). 
+
+<a id="date-range-queries" /> 
+
+## Date range queries
+
+The following example returns work items whose **Changed Date** is greater than equal to January 1, 2021. 
+
+> [!div class="tabbedCodeSnippets"]
+> ```JSON
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2021-01-01Z
+> ```
+
+
+The following example returns work items whose **Changed Date** occurs during the week of April 26 through April 30th, 2021.  
+
+> [!div class="tabbedCodeSnippets"]
+> ```JSON
+> https://analytics.dev.azure.com{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2021-04-26Z&ChangedDate le 2021-04-30Z
+> ```
+ 
+
+
 
 <a id="filter-related-entities" />
 
@@ -408,6 +430,7 @@ Analytics forces paging when query results exceed 10000 records. In that case, y
 > When pulling data into client tools such as Power BI Desktop or Excel, tools will automatically follow next link and load all required records. 
 
 
+
 ## Try this next
 
 > [!div class="nextstepaction"]
@@ -418,6 +441,5 @@ Analytics forces paging when query results exceed 10000 records. In that case, y
 
 - [Query guidelines](odata-query-guidelines.md) 
 - [Supported OData features](odata-supported-features.md)
-- [OData v4.0 specification](http://www.odata.org/documentation/)  
-- [OData v4.0 Part 2: URL Conventions Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)  
-
+- [OData v4.0 specification](https://www.odata.org/documentation/)  
+- [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)

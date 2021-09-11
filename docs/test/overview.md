@@ -2,22 +2,20 @@
 title: Exploratory and manual testing overview
 description: Test tools - Drive quality and collaboration throughout the development process with manual and exploratory testing capabilities
 ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
-ms.date: 12/04/2018
+ms.date: 09/26/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Exploratory and manual testing scenarios and capabilities
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](includes/version-header.md)]
 
 Quality is a vital aspect of software systems, and manual testing 
-and exploratory testing continue to be an important techniques for maximizing this.
+and exploratory testing continue to be important techniques for maximizing this.
 In today's software development processes,
 everybody in the team owns quality - including developers, managers, 
 product owners, user experience advocates, and more.
@@ -37,12 +35,13 @@ and gathering feedback from stakeholders.
 
 * **[Stakeholder feedback](#stakeholder-feedback)**. Testing carried out by stakeholders outside the development team, such as users from marketing and sales divisions.  
 
-![Holistic approach to manual testing, types of manual testing and personas involved](_img/manual-testing/schematic-01.png)  
+![Holistic approach to manual testing, types of manual testing and personas involved](media/manual-testing/schematic-01.png)  
 &nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="manual-testing"></a>
+
 ## Planned manual testing
 
 Manual testing has evolved with the software development process
@@ -51,7 +50,45 @@ can begin manual testing right from their Kanban boards in the Work
 hub. Teams that need more advanced capabilities can use the Test
 hub for all their test management needs.
 
-### Manual testing from the Kanban board
+Learn how to create tests plans and test cases, and run them using the Azure DevOps web portal. Use the Test &amp; Feedback extension to explore and find bugs in your apps. 
+
+:::row:::
+    :::column:::
+        :::image type="icon" source="media/testplan-icon.png" border="false":::  
+        [Create a test plan](create-a-test-plan.md)  
+
+        :::image type="icon" source="media/marketplace-icon.png" border="false":::  
+        [Install the extension](perform-exploratory-tests.md)  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="media/testcases-icon.png" border="false":::  
+        [Create test cases](create-test-cases.md)  
+
+        :::image type="icon" source="media/connectedmode-icon.png" border="false":::  
+        [Test in Connected mode](connected-mode-exploratory-testing.md)  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="media/runtests2-icon.png" border="false":::  
+        [Run manual tests](run-manual-tests.md)  
+
+        :::image type="icon" source="media/standalonemode-icon.png" border="false":::  
+        [Test in Standalone mode](standalone-mode-exploratory-testing.md)  
+    :::column-end:::
+:::row-end:::
+
+## Videos
+
+:::row:::
+    :::column:::
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u-fdqhxonPc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+        <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe>  
+    :::column-end:::
+    :::column:::
+        <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="560" height="315" allowFullScreen="true" frameBorder="0"></iframe>  
+    :::column-end:::
+:::row-end:::
+
+## Manual testing from the Kanban board
 
 Get started with manual testing easily using the Kanban board in 
 the Work hub. Add, view, and interact with test cases directly
@@ -61,11 +98,11 @@ rich capabilities to simplify maximizing quality within their teams.
 In Azure DevOps, you need just [Basic access](../organizations/billing/buy-basic-access-add-users.md)
 to use these features. See more at [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json).
 
-![Managing manual tests from the Kanban board](_img/manual-testing/kanban-board-01.png)
+![Managing manual tests from the Kanban board](media/manual-testing/kanban-board-01.png)
 
-### Manual testing in Test Manager
+## Manual testing in Test Manager
 
-[!INCLUDE [test-hub-include](_shared/test-hub-include.md)] provides
+[!INCLUDE [test-hub-include](includes/test-hub-include.md)] provides
 a rich test management solution for teams that need advanced manual
 testing capabilities. It includes all the capabilities
 required for the testing lifecycle - including test planning, authoring,
@@ -73,34 +110,34 @@ execution, and tracking. Get started using the advanced manual
 testing features with the
 [Test Manager extension for Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
-#### Test planning
+### Test planning
 
 Create and manage test plans and test suites for your teams with ease.
 Create static suites, requirement-based suites, or query-based suites.
 Export and share the test plans and test suites with your team.
 See more at [Create test plans](create-a-test-plan.md)
 
-![Creating manual test plans](_img/manual-testing/create-test-plans-01.png)
+![Creating manual test plans](media/manual-testing/create-test-plans-01.png)
 
-#### Test authoring
+### Test authoring
 
 Create multiple test cases in one operation, or easily add existing
 test cases to a test suite. Assign single or multiple testers to 
 execute the tests. View test results and references to a test case
 across test suites. See more at [Create test cases](create-test-cases.md).
 
-![Creating manual test cases](_img/manual-testing/create-test-cases-01.png)
+![Creating manual test cases](media/manual-testing/create-test-cases-01.png)
 
-#### Testing applications
+### Testing applications
 
-[!INCLUDE [test-hub-include](_shared/test-hub-include.md)] provides
+[!INCLUDE [test-hub-include](includes/test-hub-include.md)] provides
 test runners to run tests for your web and desktop applications. Mark test steps and test outcomes as pass or fail, and collect
 diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all the captured diagnostic data
 to help your developers reproduce the issues. See more at [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
 
-![Testing web applications](_img/manual-testing/test-web-app-01.png)
+![Testing web applications](media/manual-testing/test-web-app-01.png)
 
-#### Test tracking
+## Test tracking
 
 Quickly configure lightweight charts to track your manual test results
 using the chart types of your choice, and pin the charts to your dashboard to
@@ -108,9 +145,10 @@ easily analyze these results. Choose a retention policy to control how
 long your manual testing results are retained.
 See more at [Track test status](track-test-status.md).
 
-![Test status tracking](_img/manual-testing/track-test-status-01.png)
+![Test status tracking](media/manual-testing/track-test-status-01.png)
 
 <a name="user-acceptance"></a>
+
 ## User acceptance testing
 
 User acceptance testing (UAT) is a key factor in software development
@@ -122,9 +160,10 @@ execute these tests using test artifacts provided by the engineering team.
 Easily monitor UAT progress and results using lightweight charts.
 See more at [User acceptance testing](user-acceptance-testing.md).
 
-![Assigning testers to run all tests](_img/manual-testing/assign-testers-01.png)
+![Assigning testers to run all tests](media/manual-testing/assign-testers-01.png)
 
 <a name="exploratory-testing"></a>
+
 ## Exploratory testing for everyone
 
 Maximizing quality in modern software development processes is a
@@ -138,11 +177,11 @@ anytime and anywhere, and is simple enough for everyone in the team to use.
 It helps to improve productivity by allowing you to spend more time
 finding issues, and less time filing them.
 
-![Exploratory testing your web apps](_img/manual-testing/exploratory-testing-01.png)
+![Exploratory testing your web apps](media/manual-testing/exploratory-testing-01.png)
 
 Using the extension is a simple, three step process:
 
-![Schematic showing process steps Capture, Create, Collaborate](_img/perform-exploratory-tests/getstarted-05.png)
+![Schematic showing process steps Capture, Create, Collaborate](media/perform-exploratory-tests/getstarted-05.png)
  
 * **Capture your findings** quickly and easily using the tools in the extension. 
   Capture notes, screenshots with annotations, and screen recordings 
@@ -165,13 +204,14 @@ Using the extension is a simple, three step process:
   bugs and tasks, and managing feedback requests in one place.
 
 As users perform exploratory testing, you can
-[get insights from the sessions](insights-exploratory-testing.md) in [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)] of 
+[get insights from the sessions](insights-exploratory-testing.md) in [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)] of 
 Azure DevOps or TFS. View completed exploratory sessions and derive meaningful
 insights across all the sessions. Get end-to-end traceability such as a breakdown 
 of the work items created, the work items explored and not explored, session owners,
 and more.
 
 <a name="stakeholder-feedback"></a>
+
 ## Stakeholder feedback
 
 Seeking feedback from stakeholders outside the development team, such
@@ -184,11 +224,11 @@ data and filing bugs and tasks directly.
 See more at [Request stakeholder feedback](request-stakeholder-feedback.md) 
 and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 
-![Requesting and providing stakeholder feedback](_img/manual-testing/stakeholder-feedback-01.png)
+![Requesting and providing stakeholder feedback](media/manual-testing/stakeholder-feedback-01.png)
 
 ## Key benefits
 
-* **Test on any platform**. With [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], you can use your browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, web-based interface that can be accessed from all major browsers on any platform.
+* **Test on any platform**. With [!INCLUDE [test-hub-include](includes/test-hub-include.md)], you can use your browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, web-based interface that can be accessed from all major browsers on any platform.
 
 * **Rich Diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
 
@@ -204,6 +244,6 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 * [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)
 * [Get stakeholder feedback with exploratory testing](request-stakeholder-feedback.md)
 
-> See also [Continuous testing](../pipelines/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+> See also [Continuous testing](../pipelines/index.yml), [Unit testing](/visualstudio/test/developer-testing-scenarios).
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

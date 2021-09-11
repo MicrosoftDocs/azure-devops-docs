@@ -3,12 +3,10 @@ title: Build and test integration queries
 titleSuffix: Azure DevOps
 description: Track work by creating queries based on build and test integration fields in Azure Boards and Team Foundation Server (TFS)
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '>= tfs-2013'
 ms.date: 02/06/2019
 ---
@@ -16,7 +14,7 @@ ms.date: 02/06/2019
 
 # Query based on build and test integration fields
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Work item fields that support build and test integration support the following actions:  
 -   Associate bugs with the builds where they were found or fixed  
@@ -97,7 +95,7 @@ Most build and test integration fields have a data type of String, PlainText, or
 
 Open a new query, set the query type to Work items and direct links. Filter for bugs in the top-level and add the filter for Test Cases in the linked work items filter. 
 
-<img src="_img/query-build-integration-bugs-linked-test-cases.png" alt="List bugs and the test cases that test them" />
+<img src="media/query-build-integration-bugs-linked-test-cases.png" alt="List bugs and the test cases that test them" />
 
 > [!NOTE]    
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the **Test>Test Plans** page](../../test/create-a-test-plan.md). 
@@ -202,8 +200,8 @@ Repro Steps (or Steps to reproduce)
 **Notes**  
 1.  Do not customize the picklist for these fields. The system accepts only those values listed.  
 2.  By adding a `GLOBALLIST` element to the `FIELD` definition, you can provide a drop-down menu of builds that users can choose from. To learn how, see [Builds and global list auto-population](#global-list) later in this article.
-3.  Requires TFS 2013.2 or later version to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see [Configure features after a TFS upgrade](../../reference/configure-features-after-upgrade.md).  
-4.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite. To learn more, see [Configure features after a TFS upgrade](../../reference/configure-features-after-upgrade.md). 
+3.  Requires TFS 2013.2 or later version to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
+4.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade). 
 
 ## Additional fields
 
@@ -322,7 +320,7 @@ When the **Integration Build** field is present in the WIT definition, Team Foun
 
 ### Builds and global list auto-population
 
-The first time you queue a build for a project using Team Foundation Build, TFS automatically adds a global list labeled <strong>Build - <project name></strong>. Each time a build is run, a <strong>LISTITEM</strong> is added to this global list with the name of the build.
+The first time you queue a build for a project using Team Foundation Build, TFS automatically adds a global list labeled <strong>Build - <em>ProjectName</em></strong>. Each time a build is run, a <strong>LISTITEM</strong> is added to this global list with the name of the build.
 
 ::: moniker range="< azure-devops"
 
@@ -391,6 +389,6 @@ Test Manager and the test work item types (WITs) use the following fields to tra
 |---|---|---|
 |<ul><li>Bug</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li><li>Test Plan</li><li>Test Suite</li></ul>|
 
-To learn more about upgrading an existing project to get WITs that your project currently doesn't have, see [Configure features after an upgrade](../../reference/configure-features-after-upgrade.md).
+To learn more about upgrading an existing project to get WITs that your project currently doesn't have, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).
 
 ::: moniker-end  

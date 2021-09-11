@@ -3,11 +3,8 @@ title: Get started with Azure Boards
 titleSuffix: Azure Boards
 description: Learn how to sign up and start using Azure Boards. Use Azure Boards to add and track work items on a Kanban board.
 ms.custom: boards-get-started 
-ms.prod: devops
 ms.technology: devops-new-user
-ms.topic: landing-page
-ms.assetid:  
-ms.manager: jillfra
+ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -17,7 +14,7 @@ ms.date: 09/09/2021
 
 # How to get started with Azure Boards 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Use this guide to sign up and start using Azure Boards. Start with [Sign up and invite some teammates](sign-up-invite-teammates.md).
 
@@ -30,24 +27,20 @@ Then, read [Plan and track work](plan-track-work.md) to start adding and trackin
 
 If you're tasked with managing Azure Boards settings, review [Manage your Azure Boards project](manage-boards.md) for other configurations and resources that you may want to make. 
 
-## Azure Boards concepts
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+
+## Related articles
 
 - [Why use Azure Boards?](why-use-azure-boards.md)
-- [Key concepts](key-concepts.md)
-
-## Azure Boards reference
-
-- [System fields reference](../work-items/guidance/basic-field-reference.md)  
 - [Default permissions & access (Security)](permissions-access-boards.md) 
+- [Agile glossary](../work-items/agile-glossary.md) 
 
 ## More resources
 
 - [Best tool for the job](../work-items/best-tool-add-update-link-work-items.md)  
-- [Connect a project to GitHub](../../boards/github/connect-to-github.md)  
+- [Work items](../work-items/about-work-items.md)  
+- [Sprints (Scrum)](../sprints/scrum-overview.md)
 - [Web portal navigation](../../project/navigation/index.md) 
-- [Work items](../work-items/index.md)  
-- [Sprints (Scrum)](../sprints/index.md)
-- [Process customization](../../organizations/settings/work/inheritance-process-model.md)
 
 
 

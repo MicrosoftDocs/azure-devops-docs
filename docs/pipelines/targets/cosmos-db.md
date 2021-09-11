@@ -3,9 +3,6 @@ title: Deploy to App Services and Cosmos DB
 description: Use Azure Pipelines to enable Continuous Integration (CI) and Continuous Deployment (CD) for your ASP.NET App service and Azure Cosmos DB.
 ms.custom: seodec18
 ms.author: mlearned
-ms.manager: jillfra
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.date: 12/07/2018
 author: mlearned
@@ -60,9 +57,9 @@ Set up CI for your ASP.NET application and Cosmos DB to build and create deploya
 
 4. Search for the **ASP.NET Application** build template, and then select **Apply**.
 
-   ![ASP.NET Template](_img/cosmos-db/aspnettemplate.png)
+   ![ASP.NET Template](media/cosmos-db/aspnettemplate.png)
 
-5. Select the **triggers**, and then select the checkbox for ""Enable continuous integration**.  This setting ensures every commit to the repository executes a build.
+5. Select the **triggers**, and then select the checkbox for **Enable continuous integration**.  This setting ensures every commit to the repository executes a build.
 
 6. Select **Save & Queue**, and then choose **Save and Queue** to execute a new build.
 
@@ -80,7 +77,7 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 4. Select the **Azure Subscription**, and then select **Authorize**.
 
-   ![Authorize Azure Subscription](_img/cosmos-db/authorizeazure.png)
+   ![Authorize Azure Subscription](media/cosmos-db/authorizeazure.png)
 
 5. Choose an **App Service name**.
 
@@ -92,7 +89,7 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 9. Retrieve your **endpoint** (URL) and **authKey** (primary or secondary key) for your Azure Cosmos DB account.  This information can be found on the Azure portal.
 
-   ![Auth and endpoint](_img/cosmos-db/keys.png)
+   ![Auth and endpoint](media/cosmos-db/keys.png)
 
 10. Select **+ Add** to create a new variable named **endpoint**.  Select **+ Add** to create a second variable named **authKey**.
 
@@ -119,7 +116,7 @@ Follow the steps below to test and review the CI/CD pipeline.
 1. Once the release finishes, navigate to your Cosmos DB service to see your new database.
 
 
-The continuous integration trigger you enabled earlier ensures a build executes for every commit that is pushed to the master branch. The build will complete and start a deployment to Azure. Navigate to Cosmos DB in the Azure portal, and you will see the CD pipeline created a new database.
+The continuous integration trigger you enabled earlier ensures a build executes for every commit that is pushed to the main branch. The build will complete and start a deployment to Azure. Navigate to Cosmos DB in the Azure portal, and you will see the CD pipeline created a new database.
 
 ## Clean up resources
 

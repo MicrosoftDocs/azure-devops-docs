@@ -3,11 +3,7 @@ title: Use Team Foundation version control commands
 titleSuffix: Azure Repos
 description: Use Team Foundation version control commands
 ms.assetid: efeff6e0-c4ab-4686-bc63-20a6136be39a
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Use Team Foundation version control commands
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 You can use version control commands to do nearly all tasks you can do in Visual Studio, and also several tasks that can't be done in Visual Studio. You can use the **tf.exe** tool to run version control commands from a command prompt or within a script.
 
@@ -28,8 +24,9 @@ To launch the Visual Studio command prompt, from Windows **Start**, choose **Vis
 
 In most cases, you run the version control command in the context of a directory that is mapped in the workspace. For example, `$/SiteApp/Main/` is mapped to `c:\\code\\SiteApp\\Main\\`. To get the latest version of all items in the workspace:
 
-    c:\code\SiteApp\Main\SolutionA>tf get
-
+```
+c:\code\SiteApp\Main\SolutionA>tf get
+```
 
 ### Set up your dev machine and manage workspaces
 
@@ -160,7 +157,7 @@ Use the following commands to isolate risk using branches:
 
 [Merges Command](merges-command.md) (Visual Studio 2010)  
 
-See also: [Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md).
+See also: [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
 
 ### Administer Version Control
 
@@ -170,7 +167,7 @@ Use the following commands to administer your version control system:
 
 [Permission Command](permission-command.md) (Visual Studio 2010)  
 
-See also: [Administering Team Foundation Version Control](administering-team-foundation-version-control.md) (Visual Studio 2010).
+See also: [Administering Team Foundation Version Control](./configure-check-out-settings.md) (Visual Studio 2010).
 
 ### Get Help on Version Control Commands
 
@@ -204,7 +201,9 @@ Some commands support shortcuts. For example, you can call the [Delete command](
 
 For example, the [Checkout command](checkout-or-edit-command.md):
 
-    tf checkout [/lock:( none|checkin|checkout)] [/recursive] itemspec [/login: username,[ password]]
+```
+tf checkout [/lock:( none|checkin|checkout)] [/recursive] itemspec [/login: username,[ password]]
+```
 
 Let's review the arguments from this example:
 
@@ -238,15 +237,19 @@ A server itemspec argument specifies a path to items on your Team Foundation Ser
 
 You typically use server itemspec arguments when you need run a command on items not on the client machine. For example, you are working on a dev machine and need to get some revision history data about some items that are in a project collection you don't work in:
 
-    c:\>tf history /collection:http://fabrikam-3:8080/tfs/DefaultCollection
-    $/SiteApp/Main/SolutionA/Project1/* /recursive  
-    /noprompt 
+```
+c:\>tf history /collection:http://fabrikam-3:8080/tfs/DefaultCollection
+$/SiteApp/Main/SolutionA/Project1/* /recursive  
+/noprompt 
+```
 
 #### Multiple itemspec arguments
 
 For some commands, you can specify multiple *itemspec* arguments. For example:
 
-    c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+```
+c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+```
 
 Checks out program.cs and program2.c.
 
@@ -260,7 +263,9 @@ You use a *versionspec* (version specification) to specify the version of items 
 
 When you use the [History command](history-command.md) or the [Difference Command](difference-command.md), you can specify a range of versions by separating the versions with a tilde (~). For example:
 
-    c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D4/24/2012
+```
+c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D4/24/2012
+```
 
 Use the following syntax to specify a *versionspec*.
 
@@ -367,7 +372,7 @@ Use the following syntax to specify a *versionspec*.
 </div>
 
 <p>Updates the workspace to match the codebase as it existed on 3/22/2004 at 09:00 (9 AM).</p>
-<p>For more information about .NET Framework-supported date and time formats see <a href="https://msdn.microsoft.com/library/system.datetime" data-raw-source="[DateTime](https://msdn.microsoft.com/library/system.datetime)">DateTime</a> and <a href="https://msdn.microsoft.com/library/az4se3k1" data-raw-source="[Standard Date and Time Format Strings](https://msdn.microsoft.com/library/az4se3k1)">Standard Date and Time Format Strings</a>.</p></td>
+<p>For more information about .NET Framework-supported date and time formats see <a href="/dotnet/api/system.datetime" data-raw-source="[DateTime](/dotnet/api/system.datetime)">DateTime</a> and <a href="/dotnet/standard/base-types/standard-date-and-time-format-strings" data-raw-source="[Standard Date and Time Format Strings](/dotnet/standard/base-types/standard-date-and-time-format-strings)">Standard Date and Time Format Strings</a>.</p></td>
 </tr>
 <tr>
 <td><p>Workspace (current)</p></td>
@@ -412,11 +417,15 @@ Use the **/login** option to specify the Team Foundation Server user account to 
 
 For example, Julia is working with Peter at his dev machine. She uses the [Lock command](lock-command.md) to unlock a file that she locked earlier:
 
-    c:\code\SiteApp\Main> tf lock /lock:none program.cs /login:JuliaI,JuliaPassword
+```
+c:\code\SiteApp\Main> tf lock /lock:none program.cs /login:JuliaI,JuliaPassword
+```
 
 If she wants to avoid having her password appear in the command prompt, she can enter the command without the password:
 
-    c:\code\SiteApp\Main> tf lock /lock:none program.cs /login:JuliaI
+```
+c:\code\SiteApp\Main> tf lock /lock:none program.cs /login:JuliaI
+```
 
 After she enters this command, the system then prompts her to type her password in a dialog box that masks her input.
 
@@ -437,17 +446,19 @@ After she enters this command, the system then prompts her to type her password 
 
 Use the **/lock** option to apply or remove a lock at the same time you run another command such as [Add](add-command.md) or [Edit](checkout-or-edit-command.md).
 
-    /lock:(none|checkin|checkout)
+```
+/lock:(none|checkin|checkout)
+```
 
 -   **None**: No lock is placed on an item. If a lock is already in place, it is removed.
 
 -   **Checkin** or **Checkout**: Applies a lock. See [Understand lock types](understand-lock-types.md).
 
->**Note:**  
->In a few cases, the lock operation can fail:
+> [!NOTE]
+> In a few cases, the lock operation can fail:
 >
->- If any other users have locked any of the specified items, the lock operation will fail.
->- The system ignores this switch if there is already a pending change to the item. In this case, you must use the [Lock Command](lock-command.md) to change a lock on an item.
+> - If any other users have locked any of the specified items, the lock operation will fail.
+> - The system ignores this switch if there is already a pending change to the item. In this case, you must use the [Lock Command](lock-command.md) to change a lock on an item.
 
 ### Use option shortcuts
 
@@ -569,6 +580,8 @@ Version control commands return the following exit codes:
 
 For example:
 
-    c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+```
+c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+```
 
 If one of the files you are trying to check out does not exist on the server, the command returns **1** to indicate partial success.

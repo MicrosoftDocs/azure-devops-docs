@@ -3,11 +3,14 @@ title: Develop code and manage pending changes
 titleSuffix: Azure Repos
 description: Develop code and manage pending changes
 ms.assetid: dded21d3-4869-4e19-bca4-62e27179539c
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
+f1_keywords:
+- vs.tfc.sourcecontrol.DialogOpenFromScc
+- vs.tfc.sourcecontrol.ToolWindowPendingCheckins
+- vs.tfc.sourcecontrol.DialogConfirmUndoEdit
+- vs.tfs.teamexplorer.MyWorkPageMain
+- vs.tfc.sourcecontrol.DialogPromoteCandidates
+- vs.tfc.sourcecontrol.DialogUndoPendingChanges
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 # Develop code and manage pending changes
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Most changes that you make to your files are queued as pending changes. As you work, you can organize, manage, and get details about what you've changed.
 
@@ -24,19 +27,19 @@ Most changes that you make to your files are queued as pending changes. As you w
 
 From the team explorer home page (Keyboard: Ctrl + 0, H), you can begin coding in a new or in an existing solution.
 
-![Open a solution from the Team Explorer Home page](_img/develop-code-manage-pending-changes/IC673341.png)  
+![Open a solution from the Team Explorer Home page](media/develop-code-manage-pending-changes/IC673341.png)  
 After you open your solution, open the solution explorer (Keyboard: Ctrl + Alt + L).
 
-![Solution Explorer with Test and Class projects](_img/develop-code-manage-pending-changes/IC612257.png)  
-When you open and modify a file from the solution explorer, the file is automatically checked out for you. Icons appear to indicate which files you have not changed ![TFSC Checked-In Status Icon](_img/develop-code-manage-pending-changes/IC97411.gif), those you have checked out ![TFSC Checked-Out Status Icon](_img/develop-code-manage-pending-changes/IC51402.gif), and those you have added to the solution ![TFSC Pending Addition Status Icon](_img/develop-code-manage-pending-changes/IC106108.gif).
+![Solution Explorer with Test and Class projects](media/develop-code-manage-pending-changes/IC612257.png)  
+When you open and modify a file from the solution explorer, the file is automatically checked out for you. Icons appear to indicate which files you have not changed ![TFSC Checked-In Status Icon](media/develop-code-manage-pending-changes/IC97411.gif), those you have checked out ![TFSC Checked-Out Status Icon](media/develop-code-manage-pending-changes/IC51402.gif), and those you have added to the solution ![TFSC Pending Addition Status Icon](media/develop-code-manage-pending-changes/IC106108.gif).
 
-If you're working in a solution that contains a lot of files, you'll probably find it convenient to filter the solution explorer to show only the files you have changed ![Changes filter](_img/develop-code-manage-pending-changes/IC668001.png) (Keyboard: Ctrl + [, P).
+If you're working in a solution that contains a lot of files, you'll probably find it convenient to filter the solution explorer to show only the files you have changed ![Changes filter](media/develop-code-manage-pending-changes/IC668001.png) (Keyboard: Ctrl + [, P).
 
 ## Use the My Work page to manage your work
 
 If you're using Visual Studio Premium or Visual Studio Ultimate, you can use the My Work (Keyboard: Ctrl + 0, M) page in the team explorer to manage your work.
 
-![To Do List on My Work Page in Team Navigator](_img/develop-code-manage-pending-changes/IC591023.png)  
+![To Do List on My Work Page in Team Navigator](media/develop-code-manage-pending-changes/IC591023.png)  
 You can use My Work to:  
 -   Track your work against [work items](../../boards/queries/link-work-items-support-traceability.md)    
 -   Suspend and later resume your work (including file changes, associated work items, and Visual Studio state such as window positions and breakpoints)  
@@ -46,19 +49,19 @@ For a step-by-step example, see [Day in the life of an devops Developer: Write n
 
 ### Tips
 
--   You can control the kinds of work items that appear in the **Available Work Items** section. Choose one of the default options or any of your personal queries that are contained in the root **My Queries** folder. To work with these queries, in the team explorer choose ![Home icon](_img/develop-code-manage-pending-changes/IC547418.png) **Home**, and then choose **Work Items**.  
--   When you move a work item to **Available**, **In Progress**, or **Suspended**, the work item state or comments are updated so that your team is automatically advised on the status of your work. For example, the task board for your team is updated to show your status. See [Collaborate [redirected]](https://msdn.microsoft.com/library/hh500404).  
--   If your project contains customized work item type definitions, you might have problems using My Work, unless an Administrator for your project has taken certain steps. See [Configure and customize Agile planning tools for a project](../../boards/work-items/guidance/agile-process.md) and [Update a customized process template to access new features](https://msdn.microsoft.com/library/ms194972).
+-   You can control the kinds of work items that appear in the **Available Work Items** section. Choose one of the default options or any of your personal queries that are contained in the root **My Queries** folder. To work with these queries, in the team explorer choose ![Home icon](media/develop-code-manage-pending-changes/IC547418.png) **Home**, and then choose **Work Items**.  
+-   When you move a work item to **Available**, **In Progress**, or **Suspended**, the work item state or comments are updated so that your team is automatically advised on the status of your work. For example, the task board for your team is updated to show your status. See [Collaborate [redirected]](/previous-versions/hh500404(v=vs.120)).  
+-   If your project contains customized work item type definitions, you might have problems using My Work, unless an Administrator for your project has taken certain steps. See [Configure and customize Agile planning tools for a project](../../boards/work-items/guidance/agile-process.md) and [Update a customized process template to access new features](/previous-versions/azure/devops/reference/upgrade/update-customized-process-template).
 
 ## Use the Pending Changes page to manage your work
 
 You can use the Pending Changes page (Keyboard: Ctrl + 0, P) in the team explorer to manage your work.
 
-![Checking in the pending changes](_img/develop-code-manage-pending-changes/IC591276.png)
+![Checking in the pending changes](media/develop-code-manage-pending-changes/IC591276.png)
 
->**Tip:**  
->-  You can <img src="_img/develop-code-manage-pending-changes/IC667296.png" title="Undock" alt="Undock" style="border: 1px solid black;"/> undock the Pending Changes page from the team explorer and open it in a new window.  
->-  You can toggle between list and tree view from the actions menu.
+> [!TIP]
+> -  You can :::image type="content" source="media/develop-code-manage-pending-changes/IC667296.png" alt-text="Undock"::: undock the Pending Changes page from the team explorer and open it in a new window.
+> -  You can toggle between list and tree view from the actions menu.
 
 Almost every change that you make to the files on your dev machine is stored in your workspace as a pending change until you check it in:  
 -   [add](add-files-server.md)  
@@ -77,13 +80,14 @@ If you are working in a [local workspace](decide-between-using-local-server-work
 
 If you add or remove a file outside Visual Studio, for example, in Windows Explorer (File Explorer in Windows 8), the **Detected changes** link appears in the **Excluded Changes** section. Choose this link if you want to include these changes. The **Promote Candidate Changes** dialog box appears. You can open the context menu of added items and choose **Browse in Windows Explorer** to display them or **Delete from disk** to delete them.
 
->**Note:**  Empty folders will not appear.
+> [!NOTE]
+> Empty folders will not appear.
 
 If items that you don't need to check in appear regularly in the **Promote Candidate Changes** dialog box, you can select one of them, open its context menu, and choose **Ignore this local item** to ignore the item. You can also choose **Ignore by extension** or **Ignore by file name** to create a file that will cause Visual Studio to systematically ignore this kind of file. For more information on .tfignore files, see [Add files to the server](add-files-server.md).
 
 ### Associate work items
 
-It's a best practice to associate [work items](../../boards/queries/link-work-items-support-traceability.md) (such as tasks or bugs) with your changes. Under Related Work Items, drag work items from a [query](https://msdn.microsoft.com/library/dd286705) or add it by ID.
+It's a best practice to associate [work items](../../boards/queries/link-work-items-support-traceability.md) (such as tasks or bugs) with your changes. Under Related Work Items, drag work items from a [query](../../boards/queries/using-queries.md) or add it by ID.
 
 ### Exclude changes
 
@@ -115,17 +119,18 @@ The Diff window appears. See [Compare files](compare-files.md).
 
 You can discard one, a few, or all of the pending changes in your workspace.
 
->**Note:**  
->A few other options:  
->-  You can first [put the changes away in a shelveset on your server](suspend-your-work-manage-your-shelvesets.md) before removing them from your workspace.  
->- If you have already checked in the change and want to revert it, see [Roll back changesets](roll-back-changesets.md).
+> [!NOTE]
+> A few other options:
+>
+> -  You can first [put the changes away in a shelveset on your server](suspend-your-work-manage-your-shelvesets.md) before removing them from your workspace.  
+> - If you have already checked in the change and want to revert it, see [Roll back changesets](roll-back-changesets.md).
 
 ### To undo a few of your pending changes
 
 1.  In Solution Explorer, the Pending Changes Window, or Source Control Explorer, select one or more items, open their context menu and choose **Undo** or **Undo Pending Changes**.
 
-    >**Tip:**  
-    >To undo all changes you have made in your solution or a code project, open the context menu, and then choose **Undo Pending Change**.
+    > [!TIP]
+    > To undo all changes you have made in your solution or a code project, open the context menu, and then choose **Undo Pending Change**.
 
 2.  In the **Undo Pending Changes** dialog box, make sure the changes you want to undo are selected, and then choose **Undo Changes**.
 
@@ -139,8 +144,8 @@ You can discard one, a few, or all of the pending changes in your workspace.
 - [Checkin command](checkin-command.md) : View pending changes in the **Check In** dialog box.  
 - [Undo command](undo-command.md) : Undo pending changes.
 
-  >**Tip:**  
-  >You can use this command to undo another user's check-out if you have sufficient permissions.
+  > [!TIP]
+  > You can use this command to undo another user's check-out if you have sufficient permissions.
 
 - [Difference Command](difference-command.md) : See what you have changed in a file.
 

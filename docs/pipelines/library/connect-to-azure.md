@@ -3,27 +3,24 @@ title: Connect to Microsoft Azure
 ms.custom: seodec18
 description: Use an ARM service connection to connect Azure Pipelines or TFS to Microsoft Azure
 ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/18/18
+ms.date: 10/15/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Connect to Microsoft Azure
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 To deploy your app to an Azure resource (to an app service or to a virtual machine), you need an Azure Resource Manager service connection. 
 
 > For other types of connection, and general information about creating and using connections, see [Service connections for builds and releases](service-endpoints.md).
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Create an Azure Resource Manager service connection using automated security
 
@@ -39,7 +36,7 @@ We recommend this simple approach if:
 
 1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
+   ![Choosing a service connection type](media/new-service-endpoint-2.png)
 
 1. Specify the following parameters.
 
@@ -61,6 +58,13 @@ We recommend this simple approach if:
    * If you're using the classic editor, select data you need. For example, the App service name.
    * If you're using YAML, then go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
 
+> [!NOTE]
+> 
+> When you follow this approach, Azure DevOps *connects with Azure Active Directory (Azure AD) and creates an app registration with a secret that's valid for two years*. When the service connection is close to two years old, Azure AD displays this prompt: **A certificate or secret is expiring soon. Create a new one**. In this scenario, you must refresh the service connection.
+>
+> To refresh a service connection, in the Azure DevOps portal, edit the connection and select **Verify**. After you save the edit, the service connection is valid for another two years.
+> 
+
 See also: [Troubleshoot Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
 
 If you have problems using this approach (such as no subscriptions being shown in the drop-down list),
@@ -75,20 +79,19 @@ or a [VM with a managed service identity](#use-msi).
 
 1. If you want to use a pre-defined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
 
-   * [Use the portal to create an Azure Active Directory application and service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
-   * [How to create and test Azure Service Principal using Azure CLI](https://blogs.msdn.microsoft.com/arsen/2016/05/11/how-to-create-and-test-azure-service-principal-using-azure-cli/)
-   * [How to create Azure Service Principal with a certificate using Azure PowerShell](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)   
+   * [Use the portal to create an Azure Active Directory application and a service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
+   * [Use Azure PowerShell to create an Azure service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)   
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
 1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
+   ![Choosing a service connection type](media/new-service-endpoint-2.png)
 
-1. Switch from the simplified version of the dialog to the full version using the link in the dialog.
+1. Choose Service Principal (manual) option and enter the Service Principal details.
 
-   ![Opening the full version of the service  dialog](_img/rm-endpoint-link.png)
+   ![Opening the full version of the service  dialog](media/rm-endpoint-link.png)
 
 1. Enter a user-friendly **Connection name** to use when referring to this service connection.
 
@@ -122,7 +125,7 @@ or a [VM with a managed service identity](#use-msi).
 
 1. If required, modify the service principal to expose the appropriate permissions. For more details, see 
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
-   [This blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
+   [This blog post](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/)
    also contains more information about using service principal authentication.
 
 See also: [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
@@ -131,22 +134,28 @@ See also: [Troubleshoot Azure Resource Manager service connections](../release/a
 
 ## Create an Azure Resource Manager service connection to a VM with a managed service identity
 
+> [!NOTE]
+> 
+> You are required to use a self-hosted agent on an Azure VM in order to use managed service identity 
+
 You can configure Azure Virtual Machines (VM)-based agents with an
-[Azure Managed Service Identity](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview)
+[Azure Managed Service Identity](/azure/active-directory/managed-service-identity/overview)
 in Azure Active Directory (Azure AD). This lets you use the system assigned identity (Service Principal)
  to grant the Azure VM-based agents access to any Azure resource that supports Azure AD,
 such as Key Vault, instead of persisting credentials in Azure DevOps for the connection.
+
+
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
 1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
+   ![Choosing a service connection type](media/new-service-endpoint-2.png)
 
 1. Select the **Managed Identity Authentication** option.
 
-   ![Opening the managed service identity settings](_img/rm-endpoint-msi.png)
+   ![Opening the managed service identity settings](media/rm-endpoint-msi.png)
 
 1. Enter a user-friendly **Connection name** to use when referring to this service connection.
 
@@ -166,7 +175,7 @@ such as Key Vault, instead of persisting credentials in Azure DevOps for the con
 
 1. Ensure that the VM (agent) has the appropriate permissions.
    For example, if your code needs to call Azure Resource Manager, assign the VM the appropriate role using Role-Based Access Control (RBAC) in Azure AD.
-   For more details, see [How can I use managed identities for Azure resources?](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview#how-can-i-use-managed-identities-for-azure-resources) and
+   For more details, see [How can I use managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview#how-can-i-use-managed-identities-for-azure-resources) and
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
 
 See also: [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
@@ -189,4 +198,4 @@ For information about connecting to Azure Stack, see:
 * [Connect Azure Stack to Azure using VPN](/azure/azure-stack/azure-stack-connect-vpn)
 * [Connect Azure Stack to Azure using ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

@@ -1,47 +1,54 @@
-- name: Sprints (Scrum) 
-  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-- name: About sprints and Scrum
+- name: About Sprints and Scrum
   href: scrum-overview.md
-- name: Quickstarts
-  items:
-  - name: Schedule sprints
-    href: define-sprints.md 
-  - name: Define iteration paths or sprints
-    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json    
-- name: Tutorials 
+  displayname: capacity, burndown, monitor, forecast, velocity
+- name: Change sprint dates
+  href: define-sprints.md 
+  displayname: get started, schedule, release
+- name: Forecast
+  displayname: velocity, sprints, iterations  
+  href: forecast.md
+- name: Plan and work a sprint 
   items:
   - name: 1. Assign backlog items to a sprint
     href: assign-work-sprint.md
+    displayname: multi-select, bulk modify
   - name: 2. Add tasks 
     href: add-tasks.md
+    displayname: unparented
   - name: 3. Set sprint capacity 
     href: set-capacity.md
   - name: 4. Adjust work to fit capacity 
     href: adjust-work.md
+    displayname: load balance
   - name: 5. Share your sprint plan 
     href: share-plan.md
+    displayname: email, query
   - name: 6. Update the Taskboard 
     displayname: status, remaining work, scope 
     href: task-board.md
-  - name: Monitor sprint burndown
-    displayname: charts, in-context charts, in context reports, remaining work, scope 
-    href: sprint-burndown.md
-  - name: Forecast
-    displayname: velocity, sprints, iterations  
-    href: forecast.md
-- name: Concepts
-  items:
-  - name: Scrum best practices
-    href: best-practices-scrum.md
-  - name: Key concepts
-    href: scrum-key-concepts.md
-  - name: Scrum and sprint planning tools
-    href: scrum-sprint-planning-tools.md
-- name: How-to-Guides
+- name: Customize your sprint backlogs
   items:
   - name: Customize a Taskboard
     displayname: cards, fields, styles, columns 
     href: customize-taskboard.md
-
-
-
+  - name: Change column options
+    href: ../backlogs/set-column-options.md
+    displayname: persistence
+  - name: Filter your sprint views
+    href: ../backlogs/filter-backlogs-boards-plans.md 
+    displayname: group, parent, tags  
+  - name: Set working days
+    href: ../../organizations/settings/set-working-days.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+    displayname: team
+- name: Best practices, monitoring, & reports
+  items:
+  - name: Scrum best practices
+    href: best-practices-scrum.md
+  - name: Scrum concepts
+    href: scrum-key-concepts.md
+    displayname: capacity bars, scrum, scrum master, product owner, technical debt, triage, velocity
+  - name: View/configure sprint burndown
+    href: ../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    displayname: charts, in-context charts, in context 
+  - name: Configure a Burndown or Burnup widget
+    href: ../../report/dashboards/configure-burndown-burnup-widgets.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json

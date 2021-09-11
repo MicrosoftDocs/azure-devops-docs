@@ -1,22 +1,28 @@
 - name: Feedback 
-  href: index.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json
-- name: Request feedback (Test & Feedback extension) 
-  href: ../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
-- name: Request feedback (Work tracking)
-  href: get-feedback.md  
-- name: Provide feedback (Test & Feedback extension)
-  href: ../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
-- name: Provide feedback (Feedback client)
-  href: give-feedback.md
-- name: Track feedback (Test & Feedback extension)
-  href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
-- name: Voluntarily provide stakeholder feedback (Test & Feedback extension)
-  href: ../../test/voluntary-stakeholder-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json  
-- name: "Set feedback permissions (Security)"
-  href: give-permissions-feedback.md
-- name: Enable remote audio capture
-  href: enable-remote-audio-capture.md
-- name: Change the audio device or annotation tool
-  href: change-audio-device-annotation-tool.md
+  href: index.md
+- name: Test & Feedback extension
+  items:
+  - name: Request feedback 
+    href: ../../test/request-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+  - name: Provide feedback 
+    href: ../../test/provide-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+  - name: Voluntarily provide stakeholder feedback
+    href: ../../test/voluntary-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+  - name: Track feedback 
+    href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json  
+- name: Work tracking
+  items:
+  - name: Request feedback
+    href: get-feedback.md  
+  - name: Provide feedback (Feedback client)
+    href: give-feedback.md
+- name: How-to-guides
+  items:
+  - name: "Set feedback permissions (Security)"
+    href: give-permissions-feedback.md
+  - name: Enable remote audio capture
+    href: enable-remote-audio-capture.md
+  - name: Change the audio device or annotation tool
+    href: change-audio-device-annotation-tool.md
 
 

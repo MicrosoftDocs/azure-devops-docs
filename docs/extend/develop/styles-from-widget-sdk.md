@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
-title: Basic styles for widgets | Extensions for Azure DevOps Services
-description: Styles from Widget SDK to be used in widgets on dashboards in Azure DevOps Services.
+title: Basic styles for widgets | Extensions for Azure DevOps
+description: Styles from Widget SDK to be used in widgets on dashboards in Azure DevOps.
 ms.assetid: E5CB346F-E3EA-4A47-B10C-FFC300766585
 ms.topic: conceptual
-ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -14,8 +12,12 @@ ms.date: 08/04/2016
 
 # Basic styles for your widgets
 
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+
 We recommend you use the basic styles provided via the Widget SDK. Using these styles helps you quickly and easily create a widget that's consistent with the rest of the widgets on the dashboard.
-To use these styles, add the below line inside the `VSS.require` block in the javascript code for your widget.
+To use these styles, add the below line inside the `VSS.require` block in the JavaScript code for your widget.
 
 ```javascript
 	WidgetHelpers.IncludeWidgetStyles();
@@ -24,7 +26,7 @@ To use these styles, add the below line inside the `VSS.require` block in the ja
 This pulls a stylesheet by the name sdk-widget.css and include it in the iframe for your widget. It includes styles for font-family, font-size, margin and paddings for your widget. 
 It also includes styles for headings (h1, h2, h3 etc.), links, and more.
 
-Similarly, to use common styles in the widget configuration, include the line below inside the `VSS.require` block in the javascript code for your widget configuration.
+Similarly, to use common styles in the widget configuration, include the line below inside the `VSS.require` block in the JavaScript code for your widget configuration.
 
 ```javascript
 	WidgetHelpers.IncludeWidgetConfigurationStyles();
@@ -45,7 +47,7 @@ By adding the class "widget" on the HTML element that contains your widget, you 
 You should always have a title for your widget. This helps the user identify your widget and its functionality at a glance. 
 Use `<h2>` with class "title". This also helps people using screen readers to quickly identify the different widgets on the dashboard.
 
-![Widget with title and description](../_shared/procedures/_img/styles-from-widget-sdk/title-description.png)
+![Widget with title and description](../media-procedures/styles-from-widget-sdk/title-description.png)
 
 > **Design principle:** Widgets should have a title. Use the `<h2>` tag with the "title" class. 
 
@@ -66,7 +68,7 @@ In such cases, use the class "description" on the HTML element you wish to use f
 
 Subtitles are text that supplement the title. They may not always make sense when read out of context without reading the title.
 
-![Widget with title and subtitle](../_shared/procedures/_img/styles-from-widget-sdk/title-subtitle.png)
+![Widget with title and subtitle](../media-procedures/styles-from-widget-sdk/title-subtitle.png)
 
 > **Design principle:** Use the "subtitle" class to provide more information about the widget. It may not make sense out of the widget context.  
 
@@ -91,7 +93,7 @@ You can use any html element for the title and subtitle combination. Here are so
 
 Some widgets have links which have an icon, text and subtext per link.
 
-![Widget that has link with icon and text](../_shared/procedures/_img/styles-from-widget-sdk/link-with-icon-text.png)
+![Widget that has link with icon and text](../media-procedures/styles-from-widget-sdk/link-with-icon-text.png)
 
 > **Design principle:** Use links with an icon and subtext to make the purpose of the link obvious to the user. Ensure that the icon symbolizes the link's target. 
 
@@ -118,7 +120,7 @@ To get the same look and feel, use the below HTML structure and classes.
 The primary purpose of some widgets is to display the count of some data. The Query Tile and the Code Tile widgets are examples in this category of widgets. 
 To use the same styles as these widgets, add the "big-count" class on the HTML element holding the number to get the big font that is used by the Query Tile and the Code Tile widgets.
 
-![Counter Widget](../_shared/procedures/_img/styles-from-widget-sdk/counter.png)
+![Counter Widget](../media-procedures/styles-from-widget-sdk/counter.png)
 
 > **Design principle:** Use the "big-count" class to present the user with numbers in large font. It should not be used with non-numeric characters.
 
@@ -147,7 +149,7 @@ The widget also gets a custom visual cue on focus to help users who use the keyb
 
 ```html 
 <div class="widget clickable">
-    <a href="http://bing.com"  target="_blank">
+    <a href="https://bing.com"  target="_blank">
 		<h2 class="title">Counter widget</h2>
 		<div class="big-count">223</div>
 		<div>Click me!</div>
@@ -171,7 +173,7 @@ To use basic styles from the widget sdk for common form elements in widget confi
 
 The example below uses each of the form elements listed in the table.  
 
-![Example for Widget Configuration](../_shared/procedures/_img/styles-from-widget-sdk/widget-configuration.png)
+![Example for Widget Configuration](../media-procedures/styles-from-widget-sdk/widget-configuration.png)
 
 ```html
 <div class="widget-configuration">
@@ -220,7 +222,7 @@ The example below uses each of the form elements listed in the table.
 ### Display validation errors below a form element
 
 We recommend providing validation errors below the relevant form elements. 
-In order to display these messages in a manner consistent with 1st party widgets, add the following code snippet under each form element for which you want to show the error message.
+To display these messages in a manner consistent with 1st party widgets, add the following code snippet under each form element for which you want to show the error message.
 
 ```html
 <span class="validation-error">
@@ -229,12 +231,12 @@ In order to display these messages in a manner consistent with 1st party widgets
 </span>
 ```
 
-The above has the visibility hidden by default. Whenever you want to display an error message, find the corresponding "validation-error-text", add text to it and set `visibility:visible` on its parent.
+The previous code snippet has the visibility hidden by default. Whenever you want to display an error message, find the corresponding "validation-error-text", add text to it and set `visibility:visible` on its parent.
 
 Example:
 There is a simple text box where the user needs to type in a string. You need to show an error message if the text box is empty.
 
-![Example for Widget Configuration Error](../_shared/procedures/_img/styles-from-widget-sdk/widget-configuration-error.png)
+![Example for Widget Configuration Error](../media-procedures/styles-from-widget-sdk/widget-configuration-error.png)
 
 
 The html for this would be:
@@ -253,7 +255,7 @@ The html for this would be:
 </div>
 ```
 
-And the javascript code behind this would be:
+And the JavaScript code behind this would be:
 
 ```javascript
 var $singleLineInput = $(".single-line-text-input input");

@@ -1,35 +1,33 @@
 ---
 title: Analyze and report on code churn and code coverage 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: View measures, dimensions, and attributes that are associated with the changes in lines of codes 
 ms.assetid: 7a6c9101-c38d-4d6d-be8d-d64a3931487b
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 
 # Analyze and report on code churn and coverage using the code churn and run coverage perspectives
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can report on the software quality by using the Code Churn and Run Coverage perspectives from the SQL Server Analysis Services cube for Visual Studio Team Foundation Server.  By using these perspectives, you can view just the measures, dimensions, and attributes that are associated with the changes in lines of codes and the extent to which code is covered in builds and test runs.  
   
  These perspectives are based on the relational tables that you can use to report on code changes and coverage as a property of the build, the build assembly or platform, the test run, or the changeset. For more information, see [Code Churn tables](table-reference-code-churn.md) and [Run Coverage tables](run-coverage-tables.md).  
   
  
-![Code Churn Measure Group](_img/rpt_codechurn.png "RPT_CodeChurn")
+![Code Churn Measure Group](media/rpt_codechurn.png "RPT_CodeChurn")
 
 By using the Code Churn perspective, you can create reports that answer the following questions:
 - How many files with a specific file name extension changed in a particular build?
 - How many lines of code are in the source base for a particular build?
 - Which changesets have been submitted, and what are the details of each change? (For example, who made the change, which files were changed, and on what date was the change made)?
 
-![Code Coverage Measure Group](_img/rpt_codecoverage.png "RPT_CodeCoverage")
+![Code Coverage Measure Group](media/rpt_codecoverage.png "RPT_CodeCoverage")
 
 By using the Run Coverage perspective, you can create reports that answer the following questions:
 Which assemblies have the least test coverage?<br />-   Which test runs cover the most code?
@@ -43,18 +41,18 @@ Which architectures or build types have the most test coverage?
 ##  Example: Code Churn Report  
 By using a PivotChart report in Excel, you can create a trend report that displays the code churn over time, similar to the report that the following illustration shows.  
   
- ![Code Churn Report](_img/procguid_codechurn.png "ProcGuid_CodeChurn")  
+ ![Code Churn Report](media/procguid_codechurn.png "ProcGuid_CodeChurn")  
   
- The process templates for Microsoft Solutions Framework (MSF) [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) provide the Code Churn report in Excel. For more information, see [Code Churn](../excel/code-churn-excel-report.md).  
+ The process templates for Microsoft Solutions Framework (MSF) [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) provide the Code Churn report in Excel. For more information, see [Code Churn](/previous-versions/azure/devops/report/excel/code-churn-excel-report).  
   
 ### Select and filter pivot fields  
- ![Pivot Fields for Code Churn Report](_img/alm_rpt_pivot_codechurn.png "ALM_RPT_Pivot_CodeChurn")  
+ ![Pivot Fields for Code Churn Report](media/alm_rpt_pivot_codechurn.png "ALM_RPT_Pivot_CodeChurn")  
   
  You can create a code churn report by performing the following steps:  
   
 1.  In Excel, connect to the SQL Server Analysis Services cube for Visual Studio Team Foundation Server, and insert a PivotChart report.  
   
-     For more information, see [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md).  
+     For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
   
 2.  Right-click the chart and then choose **Change Chart Type**, **Area**, **Stacked Area**.  
   
@@ -147,13 +145,13 @@ The following table describes the measures in the Run Coverage measure group. By
  To create reports that contain code churn and code coverage data, team members should review the information in the following topics:  
   
 -   [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)  
--   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)  
+-   [Using Code Coverage to Determine How Much Code is being Tested](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)  
   
--   [Configure unit tests by using a .runsettings file](https://msdn.microsoft.com/library/jj635153.aspx)  
+-   [Configure unit tests by using a .runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)  
   
 ## Related notes
--  [Code Churn](../excel/code-churn-excel-report.md)   
--  [Code Churn](../excel/code-coverage-excel-report.md)  
+-  [Code Churn](/previous-versions/azure/devops/report/excel/code-churn-excel-report)   
+-  [Code Coverage](/previous-versions/azure/devops/report/excel/code-coverage-excel-report)  
 -  [Code Churn tables](table-reference-code-churn.md)   
 -  [Run Coverage tables](run-coverage-tables.md)   
 -  [Perspectives and measure groups in the Analysis Services cube](perspective-measure-groups-cube.md)

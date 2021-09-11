@@ -2,28 +2,24 @@
 title: Create an Analytics view 
 titleSuffix: Azure DevOps
 description: Steps to add a custom Analytics view to for easy generation of Power BI reports for Azure DevOps
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 08/10/2020
 ---
 
 # Create an Analytics view in Azure DevOps 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 You create a custom Analytics view to define the filtered set of data and other criteria to support your Power BI reporting needs. A custom view provides you with greater flexibility over filter criteria and the fields loaded into a Power BI report over those available with a default Analytics view. 
 
-[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+[!INCLUDE [temp](includes/analytics-views-warning.md)]
 
 You create custom views in the web portal for Azure DevOps, and then load the view using the [Power BI Data Connector](data-connector-connect.md). Like work item queries, you can create views only for your use, or share them with others on your team. 
-
-[!INCLUDE [temp](../_shared/boards-disabled.md)]
 
 Use this article to learn how to:
 
@@ -34,25 +30,27 @@ Use this article to learn how to:
 > * Create a custom Analytics view
 > * Review filter criteria for a view 
 
-[!INCLUDE [temp](../_shared/analytics-prerequisites.md)] 
+[!INCLUDE [temp](../includes/boards-disabled.md)]
 
-[!INCLUDE [temp](../_shared/analytics-open.md)] 
+[!INCLUDE [temp](../includes/analytics-prerequisites.md)] 
+
+[!INCLUDE [temp](../includes/analytics-open.md)] 
 
 ## Browse your views
 
 From the **All** page as shown in the following image, you can access all Analytics views defined for the project. **My Views** are views that only you can use or edit. **Shared Views** are views that are shared across the project. Anyone on your team can connect and use shared views in Power BI.
 
 > [!div class="mx-imgBorder"]
-> ![Analytics Views directory](_img/editable-views/directory-actions.png)
+> ![Analytics Views directory](media/editable-views/directory-actions.png)
 
-[!INCLUDE [temp](../_shared/analytics-image-differences.md)] 
+[!INCLUDE [temp](../includes/analytics-image-differences.md)] 
 
-To favorite a view, hover over the view and choose the ![star icon](../../_img/icons/icon-favorite-star.png). Views you favorite will appear on the **Favorites** page.
+To favorite a view, hover over the view and choose the ![star icon](../../media/icons/icon-favorite-star.png). Views you favorite will appear on the **Favorites** page.
 
 
 ## Create a custom view
 
-Choose ![plus icon](../_img/icons/blue-plus.png) **New View** to open the dialog for creating a custom view. Fill out the forms provided in each tab to fully define the filter criteria for shaping the data you want to view in Power BI. 
+Choose ![plus icon](../media/icons/blue-plus.png) **New View** to open the dialog for creating a custom view. Fill out the forms provided in each tab to fully define the filter criteria for shaping the data you want to view in Power BI. 
 
 1.	Name the view and choose a sharing option
 2.	Specify work item filters
@@ -62,12 +60,15 @@ Choose ![plus icon](../_img/icons/blue-plus.png) **New View** to open the dialog
 
 Choose **Continue** to move to the next tab in the panel. If you need to revisit a tab, simply click the tab title. 
 
+> [!NOTE]   
+> The Kanban board fields&mdash;**Board Column**, **Board Column Done**, and **Board Lane**&mdash;aren't available to add as filters or selection to view at this time. A feature request is defined to add them, [Analytics View - Add Board Column to list of available Fields in Views](https://developercommunity.visualstudio.com/idea/467446/analytics-view-add-board-column-to-list-of-availab-1.html). 
+
 ### 1. Name the view and choose a sharing option
 
 Enter a name for the view and provide a description. To allow others to view and use the Analytics view, choose the **Shared** option. With shared views, you can set permissions as to who can view, edit, and delete the view as described in [Manage Analytics views](analytics-views-manage.md).
 
 > [!div class="mx-imgBorder"]
-> ![Analytics views General](_img/editable-views/general.png)
+> ![Analytics views General](media/editable-views/general.png)
 
 
 <a id="specify-wi-filters" />
@@ -76,7 +77,7 @@ Enter a name for the view and provide a description. To allow others to view and
 
 Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data.
 > [!div class="mx-imgBorder"]
-> ![Analytics views General](_img/editable-views/work-items-default.png)
+> ![Specify Work items filters.](media/editable-views/work-items-default.png)
 
 > [!TIP]
 > Scope your data to generate reports that quickly refresh. For large datasets, refreshing non-filtered views can fail. To narrow your results, add the right set of filters. The more filters you add, the faster the view loads and refreshes in Power BI.
@@ -87,21 +88,21 @@ Specify filters to reduce the number of results returned by your view. In the wo
 
   You can change the selected teams for the current project or add additional projects to the filter. You can also change from filtering on teams to area Paths. Here is a view filtered by two Fabrikam area paths.
   > [!div class="mx-imgBorder"]
-  > ![Area Path picker example](_img/editable-views/area-path.png)
+  > ![Area Path picker example](media/editable-views/area-path.png)
 
 * **Add filters for backlogs and work items types**
 
    Scope the data to specific Work item types in your project. You can specify a backlog to filter by work item types associated with a specific backlog level or add individual specific work item types. Work items of the selected types are included in the view.
 
     > [!div class="mx-imgBorder"]
-    > ![Work item type picker](_img/editable-views/wi-type-picker.png)
+    > ![Work item type picker](media/editable-views/wi-type-picker.png)
 
 * **Add filters by field criteria**
 
     In addition to all previous filter criteria, you can add filters based on different work item fields. You specify these fields in the same way you do for fields you add to a work item query. As shown in the following example, you can filter to show only high Priority bugs with the specific "Hotfix" tag.
 
     > [!div class="mx-imgBorder"] 
-    > ![Filter by Bugs, Priority, and Tags example](_img/editable-views/field-criteria.png)
+    > ![Filter by Bugs, Priority, and Tags example](media/editable-views/field-criteria.png)
 
 	For details about working with tags, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
 
@@ -112,10 +113,10 @@ Specify filters to reduce the number of results returned by your view. In the wo
 
 ### 3. Select the fields to appear in the report
 
-In the next tab, <strong>Fields</strong>, you can add and remove fields that you'll use in your report. Choose the ![plus icon](../_img/icons/blue-plus.png) <strong>Add</strong> to add a field. To start with a fresh list, choose <strong>Remove All</strong>. 
+In the next tab, <strong>Fields</strong>, you can add and remove fields that you'll use in your report. Choose the ![plus icon](../media/icons/blue-plus.png) <strong>Add</strong> to add a field. To start with a fresh list, choose <strong>Remove All</strong>. 
 
 > [!div class="mx-imgBorder"]
-> ![Choose fields](_img/analytics-views/fields-customize-no-common.png)
+> ![Choose fields](media/analytics-views/fields-customize-no-common.png)
 
 You can add any custom fields you've added through an inherited process.
 
@@ -133,7 +134,7 @@ As shown in the following example, if you have 10 work items and choose a rollin
 
 
  > [!div class="mx-imgBorder"]
- > ![History tab, choose history and granularity options](_img/editable-views/history-example.png)
+ > ![History tab, choose history and granularity options](media/editable-views/history-example.png)
 
 
 #### History
@@ -151,7 +152,7 @@ For a snapshot of the current status, choose **Current only**. For trend charts,
 **Exclude closed items**  - Analytics stores all work item history, including any revisions for a closed work item. As a result, in an Analytics view if you select a rolling period of 14 days your view will include the current revision for all work items that were closed before this period. To Exclude work items that were completed before a specific date,simply check the corresponding box under any of the options for history. This greatly decreases the amount of data loaded into Power BI and helps advanced calculations, like [time in state](create-timeinstate-report.md) to be much more performant. For Rolling period and Date range, the date work items will be excluded by is set by the start of the period. For Current only and All history, you need to provide that date. For example, the image below excludes all work times that were completed before Mon May 14.
 
  > [!div class="mx-imgBorder"]
- >![Exclude work items for a rolling period of 14 days](_img/editable-views/history-exclude.png)
+ >![Exclude work items for a rolling period of 14 days](media/editable-views/history-exclude.png)
 
 #### Granularity
 
@@ -181,7 +182,7 @@ Once your view successfully verifies, save it. You can then start using it in [P
 If a view fails to verify successfully, you'll get an error explaining the issue and pointing to a possible fix. Try changing the definitions and verify the view again. When the view verifies successfully, you'll get an estimation of the row count included in your view.
 
 > [!div class="mx-imgBorder"]
-> ![successful verification](_img/editable-views/verify-success.png)
+> ![successful verification](media/editable-views/verify-success.png)
 
 For example, if you try to filter by a field that is no longer defined for the project, you'll get an error. You can easily remove that field from the filters in the [Work Items filters](#specify-wi-filters) tab and verify again. 
 
@@ -193,7 +194,7 @@ Choose any view from the **Favorites** or **All** page of Analytics views to see
 Choose the **Edit** link to edit a view.
 
 > [!div class="mx-imgBorder"]
-> ![Summary panel](_img/editable-views/summary-panel.png)
+> ![Summary panel](media/editable-views/summary-panel.png)
 
 <a id="q-a">  </a>
 

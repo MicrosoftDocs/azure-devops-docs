@@ -1,28 +1,31 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
-title: Create a consumer service for service hooks | Extensions for Azure DevOps Services
-description: Tutorial for creating a custom consumer service for service hooks in Azure DevOps Services.
+title: Create a consumer service for service hooks | Extensions for Azure DevOps 
+description: Tutorial for creating a custom consumer service for service hooks in Azure DevOps.
 ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8
 ms.topic: conceptual
-ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
 ms.date: 08/22/2016
 ---
 
-# Service hooks in Azure DevOps Services
+# Create a consumer service for service hooks
 
-Service hooks enable you to perform tasks on other services when events happen in your Azure DevOps Services projects. For example, create a card in Trello 
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+
+Service hooks enable you to perform tasks on other services when events happen in your Azure DevOps projects. For example, create a card in Trello 
 when a work item is created or send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services 
 as a more efficient way to drive activities when events happen in your projects.
 
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+
 ## How service hooks work
+
 Service hook **publishers** define a set of *events*. **Subscriptions** listen for the *events* and define **actions** to take based on the event. 
 Subscriptions also target **consumers**, which are external services that can perform their own actions, when an event occurs. 
 
-<center><img src="./_img/service-hooks.png" alt="Service Hooks Diagram"/></center>
+<center><img src="./media/service-hooks.png" alt="Service Hooks Diagram"/></center>
 
 ## Tutorial Overview - Custom Consumer Service
 
@@ -36,7 +39,7 @@ This tutorial walks through developing an extension that implements a **sample c
 
 > Note: This tutorial refers to the home directory for your project as "home". 
 
-<center><img src="./_img/consumer-service.png" alt="Sample Consumer Service"/></center>
+<center><img src="./media/consumer-service.png" alt="Sample Consumer Service"/></center>
 
 ## Create the extension
 ### Add an icon
@@ -45,16 +48,14 @@ Add a square image in the ```images``` folder that identifies your extension.
 It'a displayed in the Marketplace, and when someone installs your extension. You don't need to do this for your extension to work, 
 but below is a sample image you can use along with how it looks with the extension.
 
->NOTE: Name the image ```logo.png```, or remove the "icons" sections from the manifest file if you wish to skip this step.
+> [!NOTE]
+> Name the image ```logo.png```, or remove the "icons" sections from the manifest file if you wish to skip this step.
 
-<div style="vertical-align:middle;display:block;width:60%;margin-left:auto;margin-right:auto">
-<img alt="Sample logo" src="../get-started/_img/logo.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
-</div>
-<div style="vertical-align:middle;display:block;width:60;margin-left:auto;margin-right:auto">
-<img alt="first sample extension example" src="../get-started/_img/first-sample-extension.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
-</div>
+:::image type="content" source="../get-started/media/logo.png" alt-text="Sample logo.":::
+:::image type="content" source="../get-started/media/first-sample-extension.png" alt-text="First extension sample.":::
 
 ### Create the manifest file and populate it
+
 The [manifest file](./manifest.md) defines both your extension and the consumer service.
 
 Create a json file (`vss-extension.json`, for example) in the `home` directory of your extension with the following contents:
@@ -161,4 +162,4 @@ Now that you've written your extension, the next steps are to Package, Publish, 
 documentation for Testing and Debugging your extension. 
 
 * [Package, publish, and install extensions](../publish/overview.md)
-* [Testing and debugging extensions](../test/debug-in-browser.md)
+* [Testing and debugging extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)

@@ -3,12 +3,9 @@ title: Control deployments by using gates
 ms.custom: seodec18
 description: Understand gated releases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: ronai
-author: RoopeshNair
+ms.author: shashban
+author: azooinmyluggage
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -47,7 +44,7 @@ For details of how to enable gates, see [Configure a gate](../deploy-using-appro
 
 The **Delay before evaluation** is a time delay at the beginning of the gate evaluation 
 process that allows the gates to initialize, stabilize, and begin providing accurate results
-for the current deployment (see [Gate evaluation flows](#eval-examples)). For example:
+for the current deployment (see [Gate evaluation flows](#gate-evaluation-flow-examples)). For example:
 
 * For **pre-deployment gates**, the delay would be the time required for all bugs to be logged
   against the artifacts being deployed.  
@@ -67,7 +64,7 @@ The following gates are available by default:
   For more details, see [Work item query task](../../tasks/utility/work-item-query.md).
 * **Security and compliance assessment**: Assess Azure Policy compliance on resources within the scope of a
   given subscription and resource group, and optionally at a specific resource level. For more details, see
-  [Security Compliance and Assessment task](../../tasks/utility/azure-policy.md).
+  [Security Compliance and Assessment task](../../tasks/deploy/azure-policy.md).
 
 You can [create your own gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md) with Marketplace extensions.
    
@@ -83,48 +80,49 @@ The evaluation options that apply to all the gates you've added are:
   For pre-deployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards.
   This saves the system from evaluating the gate functions if the release is rejected by the user.
   For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful.
- This ensures the approvers have all the information required for a sign-off.
+ This ensures the approvers have all the information required to approve.
    
 For information about viewing gate results and logs, see
-[View the logs for approvals](../deploy-using-approvals.md#view-approvals) and
+[View the logs for approvals](../deploy-using-approvals.md#set-up-manual-validation) and
 [Monitor and track deployments](../define-multistage-release-process.md#monitor-track).
-
-<a name="eval-examples"></a>
 
 ### Gate evaluation flow examples
 
 The following diagram illustrates the flow of gate evaluation where, after the
 initial stabilization delay period and three sampling intervals, the deployment is approved.
 
-![Successful gates](_img/gate-results-pass.png)
+![Successful gates](media/gate-results-pass.png)
 
 The following diagram illustrates the flow of gate evaluation where, after the
 initial stabilization delay period, not all gates have succeeded at each sampling interval. In
 this case, after the timeout period expires, the deployment is rejected.
 
-![Failed gates](_img/gate-results-fail.png)
+![Failed gates](media/gate-results-fail.png)
 
-## Related topics
+
+## Video 
+
+> [!VIDEO https://www.youtube.com/embed/7WLcqwhTZ_4?start=0]
+
+## Related articles
 
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
-* [Security Compliance and Assessment task](../../tasks/utility/azure-policy.md)
+* [Security Compliance and Assessment task](../../tasks/deploy/azure-policy.md)
 * [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
-## See also
 
-* [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
-* [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
+## Additional resources
+
+* [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)  
+* [Configure your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
 * [Tutorial: Use approvals and gates to control your deployment](../deploy-using-approvals.md)
 * [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)
 * [GitHub issues as a release gate](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm)
 * [Author custom gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md). [Library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) 
 
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
 
-## Videos 
-
-> [!VIDEO https://www.youtube.com/embed/7WLcqwhTZ_4?start=0]

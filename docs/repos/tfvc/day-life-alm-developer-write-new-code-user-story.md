@@ -3,11 +3,7 @@ title: Write new code for a user story
 titleSuffix: Azure Repos
 description: A day in the life of an devops developer. Write new code for a user story.
 ms.assetid: 1407effb-0d9b-451b-97b0-b40e0c48594c
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,20 +12,20 @@ monikerRange: '>= tfs-2015'
 
 # Day in the life of a devops developer: write new code for a user story
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Are you a new user of Visual Studio and Team Foundation Server (TFS)? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
 
 Then take a few minutes to walk step-by step through this two-chapter tutorial and follow a day in the lives of Peter and Julia, two developers at Fabrikam Fiber-a fictitious company that provides cable television and related services. You'll see examples of how you can use Visual Studio and TFS to check out and update code, suspend work when you're interrupted, request a code review, check in your changes, and perform other tasks.
 
 **The story so far**  
-The team recently began [adopting Visual Studio and Team Foundation Server for devops](https://msdn.microsoft.com/library/dd286491). They set up their server and client machines, created a backlog, planned an iteration, and completed other planning necessary to begin developing their app.
+The team recently began [adopting Visual Studio and Team Foundation Server for devops](/previous-versions/visualstudio/visual-studio-2013/hh561426(v=vs.120)). They set up their server and client machines, created a backlog, planned an iteration, and completed other planning necessary to begin developing their app.
 
 **Overview of this chapter**  
 Peter briefly reviews his backlog and selects the task he will work on today. He writes unit tests for the code he plans to develop. Typically, he runs the tests several times in an hour, gradually writing more detailed tests and then writing the code that makes them pass. He often discusses the interface of his code with colleagues who will use the method he is writing.
 
->**Note:**  
->The My Work and Code Coverage features that are discussed in this topic are available only in Visual Studio Premium and Visual Studio Ultimate.
+> [!NOTE]
+> The My Work and Code Coverage features that are discussed in this topic are available only in Visual Studio Premium and Visual Studio Ultimate.
 
 ## Review personal backlog and prepare tasks to begin work
 
@@ -37,11 +33,11 @@ In **Team Explorer**, Peter opens the **My Work** page. The team has agreed that
 
 ### To review personal backlog and prepare tasks to begin work
   
- ![To Do List on My Work Page in Team Navigator](_img/day-life-alm-developer-write-new-code-user-story/IC591023.png)  
+ ![To Do List on My Work Page in Team Navigator](media/day-life-alm-developer-write-new-code-user-story/IC591023.png)  
 
 1.  In **Team Explorer**:  
     1.  If you are not already connected to the project that you want to work in, then [connect to the project](../../organizations/projects/connect-to-projects.md).  
-    2.  Choose ![Home icon](_img/day-life-alm-developer-write-new-code-user-story/IC547418.png) **Home**, and then choose ![My Work icon](_img/day-life-alm-developer-write-new-code-user-story/IC588354.png) **My Work**.  
+    2.  Choose ![Home icon](media/day-life-alm-developer-write-new-code-user-story/IC547418.png) **Home**, and then choose ![My Work icon](media/day-life-alm-developer-write-new-code-user-story/IC588354.png) **My Work**.  
 2.  On the **My Work** page, drag the task from the **Available Work Items** list to the **In Progress Work Items** section.
 
     You can also select a task in the **Available Work Items** list and then choose **Start**.
@@ -69,38 +65,38 @@ Peter begins by creating a unit test. He begins with the unit test because he wa
 
 This is the first unit test for the class library that he is testing, so he creates a new unit test project. He opens the **New Project** dialog box and chooses **Visual C\#**, **Test**, and then **Unit Test Project**.
 
-![Unit Test selected in New Project dialog](_img/day-life-alm-developer-write-new-code-user-story/IC591729.png)  
+![Unit Test selected in New Project dialog](media/day-life-alm-developer-write-new-code-user-story/IC591729.png)  
 
 The unit test project provides a C\# file into which he can write his example. At this stage, he just wants to illustrate how one of his new methods will be invoked:
 
-**C\#**
+```csharp
+using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-    using System;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-    namespace Fabrikam.Math.UnitTest
+namespace Fabrikam.Math.UnitTest
+{
+    [TestClass]
+    public class UnitTest1
     {
-        [TestClass]
-        public class UnitTest1
+        [TestMethod]
+        // Demonstrates how to call the method.
+        public void SignatureTest()
         {
-            [TestMethod]
-            // Demonstrates how to call the method.
-            public void SignatureTest()
-            {
-                // Create an instance:
-                var math = new Fabrikam.Math.LocalMath();
+            // Create an instance:
+            var math = new Fabrikam.Math.LocalMath();
 
-                // Get a value to calculate:
-                double input = 0.0;
+            // Get a value to calculate:
+            double input = 0.0;
 
-                // Call the method:
-                double actualResult = math.SquareRoot(input);
+            // Call the method:
+            double actualResult = math.SquareRoot(input);
 
-                // Use the result:
-                Assert.AreEqual(0.0, actualResult);
-            }
+            // Use the result:
+            Assert.AreEqual(0.0, actualResult);
         }
     }
+}
+```
 
 He writes the example in a test method because, by the time he has written his code, he wants the example to work.
 
@@ -116,61 +112,61 @@ This procedure uses the Visual Studio Unit Test Framework, but you can also use 
 
     Each unit test must be prefixed by the `TestMethod` attribute, and the unit test method should have no parameters. You can use any name that you want for a unit test method:
 
-    **C\#**
+    ```csharp
+    [TestMethod]
+    public void SignatureTest()
+    {...}
+    ```
 
-                [TestMethod]
-                public void SignatureTest()
-                {...}
-
-	**VB**
-
-				<TestMethod()>
-    			Public Sub SignatureTest()
-    			...
-    			End Sub
+    ```vb
+    <TestMethod()>
+    Public Sub SignatureTest()
+    ...
+    End Sub
+    ```
 
 -   Each test method should call a method of the `Assert` class, to indicate whether it has passed or failed. Typically, you verify that the expected and actual results of an operation are equal:
 
-	**C\#**
+    ```csharp
+    Assert.AreEqual(expectedResult, actualResult);
+    ```
 
-        Assert.AreEqual(expectedResult, actualResult);
-
-	**VB**
-
-		Assert.AreEqual(expectedResult, actualResult)
+    ```vb
+    Assert.AreEqual(expectedResult, actualResult)
+    ```
 
 -   Your test methods can call other ordinary methods that do not have the `TestMethod` attribute.  
 -   You can organize your tests into more than one class. Each class must be prefixed by the `TestClass` attribute.
 
-    **C\#**
+    ```csharp
+    [TestClass]
+    public class UnitTest1
+    { ... }
+    ```
 
-        [TestClass]
-        public class UnitTest1
-        { ... }
+    ```vb
+    <TestClass()>
+    Public Class UnitTest1
+    ...
+    End Class
+    ```
 
-	**VB**
-
-		<TestClass()>
-		Public Class UnitTest1
-		...
-		End Class
-
-For more information about how to write unit tests in C++, see [Writing Unit tests for C/C++ with the Microsoft Unit Testing Framework for C++](https://msdn.microsoft.com/library/hh598953).
+For more information about how to write unit tests in C++, see [Writing Unit tests for C/C++ with the Microsoft Unit Testing Framework for C++](/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp).
 
 ## Create a stub for the new code
 
 Next, Peter creates a class library project for his new code. There is now a project for the code under development and a project for the unit tests. He adds a project Reference from the test project to the code under development.
 
-![Solution Explorer with Test and Class projects](_img/day-life-alm-developer-write-new-code-user-story/IC612257.png)  
+![Solution Explorer with Test and Class projects](media/day-life-alm-developer-write-new-code-user-story/IC612257.png)  
 
 In the new project, he adds the new class and a minimal version of the method that will at least allow the test to build successfully. The quickest way to do that is to generate a class and method stub from the invocation in the test.
 
-**C\#**
-
-            public double SquareRoot(double p)
-            {
-                throw new NotImplementedException();
-            }
+```csharp
+public double SquareRoot(double p)
+{
+    throw new NotImplementedException();
+}
+```
 
 ### To generate classes and methods from tests
 
@@ -189,25 +185,25 @@ First, create the project where you want to add the new class, unless it already
 
 Peter builds and runs the test by pressing CTRL+R, T. The test result shows a red Failed indicator and the test appears under the list of **Failed Tests**.
 
-![Unit Test Explorer showing one failed test](_img/day-life-alm-developer-write-new-code-user-story/IC675817.png)  
+![Unit Test Explorer showing one failed test](media/day-life-alm-developer-write-new-code-user-story/IC675817.png)  
 
 He makes a simple change to the code:
 
-**C\#**
-
-           public double SquareRoot(double p)
-            {
-                return 0.0;
-            }
+```csharp
+public double SquareRoot(double p)
+{
+    return 0.0;
+}
+```
 
 He runs the test again and it passes:
 
-![Unit Test Explorer with one passed test](_img/day-life-alm-developer-write-new-code-user-story/IC675818.png)  
+![Unit Test Explorer with one passed test](media/day-life-alm-developer-write-new-code-user-story/IC675818.png)  
 
 ### To run unit tests
 
 
-![Test Explorer showing Run All button](_img/day-life-alm-developer-write-new-code-user-story/IC675819.png)  
+![Test Explorer showing Run All button](media/day-life-alm-developer-write-new-code-user-story/IC675819.png)  
 
 -   On the **Test** menu, choose **Run**, **All Tests**.  
     - - or -  
@@ -240,29 +236,29 @@ Peter replies, "The first test is just to make sure that the name and parameters
 
 Together they write the following test:
 
-**C\#**
-      
-          [TestMethod]
-            public void QuickNonZero()
-            {
-                // Create an instance to test:
-                LocalMath math = new LocalMath();
+```csharp
+[TestMethod]
+public void QuickNonZero()
+{
+    // Create an instance to test:
+    LocalMath math = new LocalMath();
 
-                // Create a test input and expected value:
-                var expectedResult = 4.0;
-                var inputValue = expectedResult * expectedResult;
+    // Create a test input and expected value:
+    var expectedResult = 4.0;
+    var inputValue = expectedResult * expectedResult;
 
-                // Run the method:
-                var actualResult = math.SquareRoot(inputValue);
+    // Run the method:
+    var actualResult = math.SquareRoot(inputValue);
 
-                // Validate the result:
-                var allowableError = expectedResult/1e6;
-                Assert.AreEqual(expectedResult, actualResult, allowableError,
-                    "{0} is not within {1} of {2}", actualResult, allowableError, expectedResult);
-            }
+    // Validate the result:
+    var allowableError = expectedResult/1e6;
+    Assert.AreEqual(expectedResult, actualResult, allowableError,
+        "{0} is not within {1} of {2}", actualResult, allowableError, expectedResult);
+}
+```
 
->**Tip:**  
->For this function, Peter is using Test First Development, in which he first writes the unit test for a feature, and then writes code that satisfies the test. In other cases, he finds that this practice is not realistic, so instead, he writes the tests after he writes the code. But he considers it very important to write unit tests-whether before or after the code-because they keep the code stable.
+> [!TIP]
+> For this function, Peter is using Test First Development, in which he first writes the unit test for a feature, and then writes code that satisfies the test. In other cases, he finds that this practice is not realistic, so instead, he writes the tests after he writes the code. But he considers it very important to write unit tests-whether before or after the code-because they keep the code stable.
 
 ## Red, Green, Refactor...
 
@@ -274,65 +270,68 @@ Peter presses CTRL+R, T to run the new test that he created with Julia. After he
 
 Another useful practice is to set **Run Tests after Build**. This option runs the tests in the background every time you build the solution, so that you have a continual report of the test status of your code. Peter was at first suspicious that it might make Visual Studio slow to respond, but he finds that this rarely happens.
 
-![Unit Test Explorer with one failed test](_img/day-life-alm-developer-write-new-code-user-story/IC675829.png)
+![Unit Test Explorer with one failed test](media/day-life-alm-developer-write-new-code-user-story/IC675829.png)
 
 ### Green
   
 Peter writes his first attempt at the code of the method that he is developing:
 
-**C\#**
-
-        public class LocalMath
+```csharp
+public class LocalMath
+{
+    public double SquareRoot(double x)
+    {
+        double estimate = x;
+        double previousEstimate = -x;
+        while (System.Math.Abs(estimate - previousEstimate) > estimate / 1000)
         {
-            public double SquareRoot(double x)
-            {
-                double estimate = x;
-                double previousEstimate = -x;
-                while (System.Math.Abs(estimate - previousEstimate) > estimate / 1000)
-                {
-                    previousEstimate = estimate;
-                    estimate = (estimate * estimate - x) / (2 * estimate);
-                }
-                return estimate;
-            }
-            
+            previousEstimate = estimate;
+            estimate = (estimate * estimate - x) / (2 * estimate);
+        }
+        return estimate;
+    }
+```
+
 
 Peter runs the tests again and all the tests pass:
 
-![Unit Test Explorer with two passed tests](_img/day-life-alm-developer-write-new-code-user-story/IC675830.png)
+![Unit Test Explorer with two passed tests](media/day-life-alm-developer-write-new-code-user-story/IC675830.png)
 
 ### Refactor
   
 Now that the code performs its main function, Peter looks at the code to find ways of making it perform better, or to make it easier to change in the future. He realizes that he can reduce the number of calculations performed in the loop:
 
-    public class LocalMath
+```csharp
+public class LocalMath
+{
+    public double SquareRoot(double x)
+    {
+        double estimate = x;
+        double previousEstimate = -x;
+        while (System.Math.Abs(estimate - previousEstimate) > estimate / 1000)
         {
-            public double SquareRoot(double x)
-            {
-                double estimate = x;
-                double previousEstimate = -x;
-                while (System.Math.Abs(estimate - previousEstimate) > estimate / 1000)
-                {
-                    previousEstimate = estimate; 
-                    estimate = (estimate + x / estimate) / 2;
-                    //was: estimate = (estimate * estimate - x) / (2 * estimate);
-                }
-                return estimate;
-            }
+            previousEstimate = estimate; 
+            estimate = (estimate + x / estimate) / 2;
+            //was: estimate = (estimate * estimate - x) / (2 * estimate);
+        }
+        return estimate;
+    }
+```
 
 He verifies that the tests still pass:
 
-![Unit Test Explorer with two passed tests](_img/day-life-alm-developer-write-new-code-user-story/IC675830.png)
+![Unit Test Explorer with two passed tests](media/day-life-alm-developer-write-new-code-user-story/IC675830.png)
 
-> **Tip:**  
-> Every change you make while you are developing the code should be either a refactoring or an extension:  
-> <ul><li>Refactoring means that you do not change the tests because you are not adding new functionality.</li>  
-> <li>Extension means adding tests and making the code changes that are necessary to pass both existing and new tests.</li></ul>
-> 
-> If you are updating existing code to requirements that have changed, you will also delete old tests that no longer represent the current requirements.  
-> 
-> Avoid changing tests that have already passed. Instead, add new tests. Only write tests that represent a real requirement.  
-> 
+> [!TIP]
+> Every change you make while you are developing the code should be either a refactoring or an extension:
+>
+> - Refactoring means that you do not change the tests because you are not adding new functionality.
+> - Extension means adding tests and making the code changes that are necessary to pass both existing and new tests.
+>
+> If you are updating existing code to requirements that have changed, you will also delete old tests that no longer represent the current requirements.
+>
+> Avoid changing tests that have already passed. Instead, add new tests. Only write tests that represent a real requirement.
+>
 > Run the tests after every change.
 
 ### ... and repeat
@@ -341,105 +340,107 @@ Peter continues his series of extension and refactoring steps, using his list of
 
 Sometimes he adds a test that requires no change to the code, but that adds to his confidence that his code works correctly. For example, he wants to make sure that the function works over a broad range of inputs. He writes more tests, such as this one:
 
-**C\#**
-
-            [TestMethod]
-            public void SqRtValueRange()
-            {
-                LocalMath math = new LocalMath();
-                for (double expectedResult = 1e-8;
-                    expectedResult < 1e+8;
-                    expectedResult = expectedResult * 3.2)
-                {
-                    VerifyOneRootValue(math, expectedResult);
-                }
-            }
-            private void VerifyOneRootValue(LocalMath math, double expectedResult)
-            {
-                double input = expectedResult * expectedResult;
-                double actualResult = math.SquareRoot(input);
-                Assert.AreEqual(expectedResult, actualResult, expectedResult / 1e6);
-            }
+```csharp
+[TestMethod]
+public void SqRtValueRange()
+{
+    LocalMath math = new LocalMath();
+    for (double expectedResult = 1e-8;
+        expectedResult < 1e+8;
+        expectedResult = expectedResult * 3.2)
+    {
+        VerifyOneRootValue(math, expectedResult);
+    }
+}
+private void VerifyOneRootValue(LocalMath math, double expectedResult)
+{
+    double input = expectedResult * expectedResult;
+    double actualResult = math.SquareRoot(input);
+    Assert.AreEqual(expectedResult, actualResult, expectedResult / 1e6);
+}
+```
 
 This test passes the first time it runs:
 
-![Unit Test Explorer with three passed tests](_img/day-life-alm-developer-write-new-code-user-story/IC675831.png)  
+![Unit Test Explorer with three passed tests](media/day-life-alm-developer-write-new-code-user-story/IC675831.png)  
 
 Just to make sure this result is not a mistake, he temporarily introduces a small error into his test to make it fail. After seeing the failure, he fixes it again.
 
->**Tip:**  
->Always make a test fail before you make it pass.
+> [!TIP]
+> Always make a test fail before you make it pass.
 
 ### Exceptions
   
 Peter now moves on to writing tests for exceptional inputs:
 
-    [TestMethod]
-            public void RootTestNegativeInput()
-            {
-                LocalMath math = new LocalMath();
-                try
-                {
-                    math.SquareRoot(-10.0);
-                }
-                catch (ArgumentOutOfRangeException)
-                {
-                    return;
-                }
-                catch
-                {
-                    Assert.Fail("Wrong exception on negative input");
-                    return;
-                }
-                Assert.Fail("No exception on negative input");
-            }
+```csharp
+[TestMethod]
+public void RootTestNegativeInput()
+{
+    LocalMath math = new LocalMath();
+    try
+    {
+        math.SquareRoot(-10.0);
+    }
+    catch (ArgumentOutOfRangeException)
+    {
+        return;
+    }
+    catch
+    {
+        Assert.Fail("Wrong exception on negative input");
+        return;
+    }
+    Assert.Fail("No exception on negative input");
+}
+```
 
 This test puts the code into a loop. He has to use the **Cancel** button in Test Explorer. This terminates the code within 10 seconds.
 
 Peter wants to make sure that an endless loop could not happen on the build server. Although the server imposes a timeout on a complete run, it is a very long timeout, and would cause substantial delay. Therefore, he adds an explicit timeout to this test:
 
-**C\#**
-
-            [TestMethod, Timeout(1000)]
-            public void RootTestNegativeInput()
-            {...
+```csharp
+[TestMethod, Timeout(1000)]
+public void RootTestNegativeInput()
+{...
+```
 
 The explicit timeout makes the test fail.
 
 Peter then updates the code to deal with this exceptional case:
 
-**C\#**
-
-           public double SquareRoot(double x)
-            {
-                if (x <= 0.0) 
-                {
-                    throw new ArgumentOutOfRangeException();
-                }
+```csharp
+public double SquareRoot(double x)
+{
+    if (x <= 0.0) 
+    {
+        throw new ArgumentOutOfRangeException();
+    }
+```
 
 ### Regression
   
 The new test passes, but there is a regression. A test that used to pass now fails:
 
-![Unit Test failed which previously passed](_img/day-life-alm-developer-write-new-code-user-story/IC675832.png)  
+![Unit Test failed which previously passed](media/day-life-alm-developer-write-new-code-user-story/IC675832.png)  
 
 Peter finds and fixes the mistake:
 
-**C\#**
-
-          public double SquareRoot(double x)
-            {
-                if (x < 0.0)  // not <=
-                {
-                    throw new ArgumentOutOfRangeException();
-                }
+```csharp
+public double SquareRoot(double x)
+{
+    if (x < 0.0)  // not <=
+    {
+        throw new ArgumentOutOfRangeException();
+    }
+```
 
 After it is fixed, all the tests pass:
 
-![Unit Test Explorer with four passed tests](_img/day-life-alm-developer-write-new-code-user-story/IC675833.png)
+![Unit Test Explorer with four passed tests](media/day-life-alm-developer-write-new-code-user-story/IC675833.png)
 
->**Tip:**  
->Make sure every tests passes after every change that you make to the code.
+> [!TIP]
+> Make sure every tests passes after every change that you make to the code.
 
 <a name="coverage"></a>
 
@@ -453,7 +454,7 @@ Good coverage is not a guarantee that the full functionality of the component ha
 
 To get a code coverage report, on the **Tests** menu, choose **Run**, **Analyze Code Coverage for All Tests**. Then run all the tests again.
 
-![Code Coverage result and Show Color button](_img/day-life-alm-developer-write-new-code-user-story/IC592882.png)  
+![Code Coverage result and Show Color button](media/day-life-alm-developer-write-new-code-user-story/IC592882.png)  
 
 Peter gets a total coverage of 86%. When he expands the total in the report, it shows that the code he is developing has coverage of 100%. This is very satisfactory, because the important score is for the code under test. The uncovered sections are actually in the tests themselves. By toggling the **Show Code Coverage Coloring** button, Peter can see which parts of the test code have not been exercised. However, he decides that these sections are unimportant for coverage because they are in the test code and would only be used if an error is detected.
 
@@ -464,7 +465,7 @@ To verify that a specific test reaches into specific branches of the code, you c
 Peter continues to update the code in small steps until he is satisfied that:  
 -   All the available unit tests pass.
 
-    In a project with a very large set of unit tests, it can be impractical for a developer to wait for them all to run. Instead, the project operates a gated check-in service, in which all the automated tests are run for each checked-in shelveset before it is merged into the source tree. The check-in is rejected if the run fails. This allows the developer to run a minimal set of unit tests on his own machine, and then proceed with other work, without running the risk of breaking the build. For more information, see [Use a gated check-in build process to validate changes](../../pipelines/build/repository.md).  
+    In a project with a very large set of unit tests, it can be impractical for a developer to wait for them all to run. Instead, the project operates a gated check-in service, in which all the automated tests are run for each checked-in shelveset before it is merged into the source tree. The check-in is rejected if the run fails. This allows the developer to run a minimal set of unit tests on his own machine, and then proceed with other work, without running the risk of breaking the build. For more information, see [Use a gated check-in build process to validate changes](../../pipelines/repos/index.md).  
 -   Code coverage meets the team's standard. 75% is a typical project requirement.  
 -   His unit tests simulate every aspect of the behavior that is required, including both typical and exceptional inputs.  
 -   His code is easy to understand and extend.
@@ -490,7 +491,7 @@ Peter is notified when the build is completed. In the build results window, he s
 
 ### To check in the changes
   
- ![Checking in the pending changes](_img/day-life-alm-developer-write-new-code-user-story/IC591276.png)  
+ ![Checking in the pending changes](media/day-life-alm-developer-write-new-code-user-story/IC591276.png)  
 
 1.  On the menu bar, choose **View**, **Team Explorer**.
 
@@ -512,10 +513,10 @@ Peter is notified when the build is completed. In the build results window, he s
 
 For more information about how to define a continuous integration build process, see [Set up a CI build](../../pipelines/build/triggers.md). After you have set up this build process, you can choose to be notified about the results of team builds.
 
-![Peter is notified that CI Build succeeded](_img/day-life-alm-developer-write-new-code-user-story/IC558300.png)
+![Peter is notified that CI Build succeeded](media/day-life-alm-developer-write-new-code-user-story/IC558300.png)
 
-![CI Build results](_img/day-life-alm-developer-write-new-code-user-story/IC591277.png)  
+![CI Build results](media/day-life-alm-developer-write-new-code-user-story/IC591277.png)  
 
-For more information, see [Run, monitor, and manage builds](../../pipelines/overview.md).
+For more information, see [Run, monitor, and manage builds](../../pipelines/get-started/what-is-azure-pipelines.md).
  
 [Next (Suspend work, fix a bug, and conduct a code review)](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)

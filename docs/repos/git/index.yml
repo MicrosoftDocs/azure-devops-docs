@@ -1,0 +1,113 @@
+### YamlMime:Landing
+
+title: Azure Repos Git Documentation
+summary: Collaborate on code development using free Git public and private repositories, pull requests, and code review.
+
+metadata:
+  title: Azure Repos Git Documentation
+  description: Collaborate on code development using free Git public and private repositories, pull requests, and code review.
+  ms.prod: devops
+  ms.technology: devops-code-git
+  ms.topic: landing-page
+  ms.author: sdanie
+  author: steved0x
+  ms.date: 06/15/2021
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Azure Repos Git
+    linkLists:
+      - linkListType: video
+        links:
+          - text: Get started with Git in Azure DevOps
+            url: https://sec.ch9.ms/ch9/a282/b834a9a0-92dc-46ea-9195-abfb81b1a282/CONN17T178_high.mp4
+          - text: Use Pull Requests with Azure DevOps
+            url: https://sec.ch9.ms/ch9/151a/ba7ad81b-ed67-4dfc-a9fb-4ebf323e151a/CONN17T184_high.mp4
+      - linkListType: overview
+        links:
+          - text: What is Azure Repos?
+            url: ../get-started/what-is-repos.md
+          - text: Connect to a project or repository
+            url: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+          - text: Authentication
+            url: ./auth-overview.md
+  - title: Get started with Git or GitHub and Visual Studio 2017
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Create a new repo
+            url: ./create-new-repo.md
+          - text: Clone an existing repo
+            url: ./clone.md
+          - text: Commit, share, and sync your code
+            url: ./gitquickstart.md
+          - text: Share your code with Visual Studio
+            url: ./share-your-code-in-git-vs-2017.md
+          - text: Update code with fetch and pull
+            url: ./pulling.md
+  - title: Work from different IDEs
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: New Git experience in Visual Studio 2019
+            url: /visualstudio/version-control/git-with-visual-studio/
+          - text: Create repo - Visual Studio 2017
+            url: ./share-your-code-in-git-vs-2017.md
+          - text: Create repo - IntelliJ
+            url: ./create-repo-intellij.md
+          - text: Create repo - Eclipse
+            url: ./share-your-code-in-git-eclipse.md
+          - text: Create repo - Xcode
+            url: ./share-your-code-in-git-xcode.md
+  - title: Key concepts
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Branches & branch policies
+            url: ./branch-policies-overview.md
+          - text: Branch organization
+            url: ./git-branching-guidance.md
+          - text: Forks
+            url: ./forks.md
+          - text: History
+            url: ./history.md
+          - text: Pull requests
+            url: ./pull-requests.md
+  - title: Set up your Azure Repos Git repositories
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Improve code quality with branch policies
+            url: ./branch-policies.md
+          - text: Set up credential manager
+            url: ./set-up-credential-managers.md
+          - text: Use SSH key authentication
+            url: ./use-ssh-keys-to-authenticate.md
+  - title: Configure resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Configure repository settings
+            url: ./repository-settings.md
+          - text: Manage Git branch policies
+            url: ./branch-policies.md
+          - text: Manage repository permissions
+            url: ./set-git-repository-permissions.md
+          - text: Set branch permissions
+            url: ./branch-permissions.md
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Git command reference
+            url: ./command-prompt.md
+          - text: Azure DevOps CLI
+            url: ../../cli/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+          - text: Git REST API
+            url: /rest/api/azure/devops/git/
+
+

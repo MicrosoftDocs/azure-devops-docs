@@ -2,10 +2,9 @@
 title: Specify work item form controls 
 titleSuffix: TFS
 description: Provides a quick reference to the Control element, its child elements, and attributes.
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: eb87afdf-66f4-4607-94c9-3909fd208079
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2015'
@@ -15,7 +14,7 @@ ms.date: 06/16/2017
 
 # Specify work item form controls
 
-[!INCLUDE [temp](../../_shared/version-tfs-2013-2015.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2013-2015.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md).
@@ -106,7 +105,7 @@ The field will appear as a checkbox on the form.
 You use the `DateTimeControl` type to give users a calendar picker to select a date for a `DateTime` field. By using this control, you can quickly select a date and time for the field.  
 
 **Calendar Field with Format="Short"**  
-![Calendar field](_img/alm_wit_custom_calendarfield.png "ALM_WIT_Custom_CalendarField")  
+![Calendar field](media/alm_wit_custom_calendarfield.png "ALM_WIT_Custom_CalendarField")  
 
 For example, you can specify a preferred start date or a review date that is in the future.  
 
@@ -122,7 +121,7 @@ Label="Preferred Start Time:" LabelPosition="Left" Format="Time" />
 |Attribute|Description|  
 |---------------|-----------------|  
 |`Format`|Specifies the format for the date-time field that corresponds to one value of the DateTimePickerFormat enum. Valid values are as follows: `Custom`, `Long`, `Short`, `Time`.<br /><br /> When you specify `Custom`, you must also set the `CustomFormat` attribute.|  
-|`CustomFormat`|Specifies the custom format that is used for the date-time field that corresponds to the syntax that is defined for the DateTimePicker.CustomFormat property. For example:<br /><br /> Format="Custom"<br /><br /> CustomFormat = "MMM dd, 'of the year' yyyy"<br /><br /> For more information, see the Microsoft Web site: [DateTimePicker.CustomFormat Property](http://go.microsoft.com/fwlink/?LinkId=148757).|  
+|`CustomFormat`|Specifies the custom format that is used for the date-time field that corresponds to the syntax that is defined for the DateTimePicker.CustomFormat property. For example:<br /><br /> Format="Custom"<br /><br /> CustomFormat = "MMM dd, 'of the year' yyyy"<br /><br /> For more information, see the Microsoft Web site: [DateTimePicker.CustomFormat Property](/dotnet/api/system.windows.forms.datetimepicker.customformat).|  
 
 
 ## Add a rich-text (HTML) field  
@@ -131,7 +130,7 @@ Specify the `HTMLControl` to add an `HTML` field to capture rich-text formatting
 
 `<Control Type="HtmlFieldControl" FieldName="Microsoft.VSTS.Notes" Label="Notes" Dock="Fill" />`  
 
-![HTML field shown on work item form](_img/alm_wit_custom_htmlfield.png "ALM_WIT_Custom_HTMLField")
+![HTML field shown on work item form](media/alm_wit_custom_htmlfield.png "ALM_WIT_Custom_HTMLField")
 
 > [!TIP]  
 >  When you add several `HTMLFieldControl` elements on a form that will be stacked vertically, you should specify the `MinimumSize` attribute for each field control. In this manner, you can make the text boxes all a similar size. Otherwise, the last HTML control element is sized to fill the form, and the previous elements appear together with smaller text boxes.  
@@ -142,7 +141,7 @@ Use the `LabelControl` to display plain or hyperlinked text that is not associat
 
 You use the `LabelText` and `Link` child and container elements to specify the text, hyperlink, and position of a field or label whose text is partly associated with a hyperlink. For more information, see [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md), [LabelText and Text](labeltext-and-text-xml-elements-reference.md), and [Link and Param](link-param-xml-elements-reference.md).
 
-![Example of two hyperlinks applied to text](_img/wit_ss_hyperlinkcombolabel.png "WIT_SS_HyperlinkComboLabel")
+![Example of two hyperlinks applied to text](media/wit_ss_hyperlinkcombolabel.png "WIT_SS_HyperlinkComboLabel")
 
 
 
@@ -156,7 +155,7 @@ For more information, see [Edit a WIT definition to add web content to a work it
 
 You use `LinksControl` to create and manage links between work items. This control is usually contained in its own tab group, as shown in the following illustration.
 
-![Example of links control added to a work item form](_img/wit_ss_linkscontrol.png "WIT_SS_LinksControl")
+![Example of links control added to a work item form](media/wit_ss_linkscontrol.png "WIT_SS_LinksControl")
 
 You can also use the `LinksControlOptions` to define the link filters and layout of column fields that are used to display the list of links. For more information, see [Define link controls to restrict link relationships](define-link-controls.md) and [LinksControlOptions](linkscontroloptions-xml-elements.md).
 
@@ -164,7 +163,7 @@ You can also use the `LinksControlOptions` to define the link filters and layout
 
 Use the `StoryboardsControl` to open PowerPoint Storyboarding from a work item and link to Storyboard files saved to a network share. This control is usually contained in its own tab group, as shown in the following illustration.
 
-![Storyboard links control](_img/alm_twa_storyboard_linkscontrol.png "ALM_TWA_Storyboard_LinksControl")
+![Storyboard links control](media/alm_twa_storyboard_linkscontrol.png "ALM_TWA_Storyboard_LinksControl")
 
 To add the `StoryboardsControl` to the `FORM` section, add the following code snippet:
 
@@ -203,7 +202,7 @@ You use the `WorkItemClassificationControl` type to add fields whose data type i
 
 You use the `WorkItemLogControl` to provide a control field for the History field that tracks discussion threads and other historical information, as shown in the following illustration.
 
-![History tab and field on work item form](_img/alm_wit_history.png "ALM_WIT_History")
+![History tab and field on work item form](media/alm_wit_history.png "ALM_WIT_History")
 
 You can use this control only to support the display of the history field of a work item, the System.History work item field. By using this control, you can expand and collapse details about historical revisions to a work item. You can also format text that you add to the history field.
 
@@ -215,7 +214,7 @@ You can use this control only to support the display of the history field of a w
 
 Use the `AttachmentsControl` to attach files to a work item form. This control is usually contained in its own tab group, as shown in the following illustration.
 
-![Attach files to a work item](_img/procguid_attachment.png "ProcGuid_Attachment")
+![Attach files to a work item](media/procguid_attachment.png "ProcGuid_Attachment")
 
 For more information, see [Add the Attachments control](add-the-attachments-control.md).
 
@@ -289,6 +288,4 @@ In the second method, you specify the `ReadOnly` attribute for the `CONTROL` ele
 |`NumberFormat`|`FieldControl`|Specifies the characters that you can enter in the field control. The following values are valid: `WholeNumbers`, `SignedWholeNumbers`, `DecimalNumbers`, and `SignedDecimalNumbers`.|  
 |`MaxLength`|`FieldControl`|Specifies the maximum length of characters that you can use for a field control.|  
 |`Format`|`DateTimeControl`|Specifies the format for the date-time field that corresponds to one value of the DateTimePickerFormat enum. The following values are valid: `Custom`, `Long`, `Short`, `Time`.|  
-|`CustomFormat`|`DateTimeControl`|Specifies the custom format that is used for the date-time field that corresponds to the syntax that is defined for the DateTimePicker.CustomFormat property.|  
-
-
+|`CustomFormat`|`DateTimeControl`|Specifies the custom format that is used for the date-time field that corresponds to the syntax that is defined for the DateTimePicker.CustomFormat property.|

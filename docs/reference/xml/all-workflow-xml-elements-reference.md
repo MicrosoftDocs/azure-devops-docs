@@ -2,18 +2,18 @@
 title: All WORKFLOW XML elements reference
 titleSuffix: Azure DevOps & TFS
 description: Quick reference to all WORKFLOW XML elements and main attributes for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 59689226-f7f1-4046-866e-3030aad806ae
-ms.author: kaelliauthor: KathrynEE
-ms.topic: reference
-ms.manager: jillfra
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '< azure-devops'
 ms.date: 02/10/2017
 ---
 
 # All WORKFLOW XML elements reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 
 You can use the information in this topic as a quick reference to all the elements and main attributes that control the workflow for a type of work item. You specify these elements in the `WORKFLOW` element container, which is the second major section of the definition of a work item type. You use the **STATES** and **TRANSITIONS** child elements to define the different states that a user can specify for a type of work item and which transitions are allowed between states. For more information about how to define these elements, see [Change the workflow](change-workflow-wit.md)  
@@ -75,7 +75,7 @@ For each transition, you specify a set of reasons for changing the state of the 
   
 
 <table>
-<tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description and syntax</p></th><th scope="col"><p>Required?</p></th></tr><tr><td data-th="Element"><p><strong>ACTION</strong></p></td><td data-th="Description and syntax"><p>Defines a text string that corresponds to an action to be performed when the system for tracking work items calls the <strong>WorkItem.GetNextState</strong> method to get the post-action state of the work item.</p>
+<tr><th scope="col"><p>Element</p></th><th scope="col"><p>Description and syntax</p></th><th scope="col"><p>Required?</p></th></tr><tr><td data-th="Element"><p><strong>ACTION</strong></p></td><td data-th="Description and syntax"><p>Defines a text string that corresponds to an action to be performed when the system for tracking work items calls the <strong>WorkItem.GetNextState</strong> method to get the post-action state of the work item.</p>
 
 <pre>
 &lt;ACTION value="NameOfAction" /&gt;
@@ -123,7 +123,6 @@ For each transition, you specify a set of reasons for changing the state of the 
 
 </pre>
 </td><td data-th="Required?"><p>Optional</p></td></tr><tr><td data-th="Element"><p><strong>REASON</strong></p></td><td data-th="Description and syntax"><p>Defines an additional explanation  for why a team member changed the state of a work item. </p>
-<div id="code-snippet-7" class="codeSnippetContainer" xmlns="">
 <pre>
 &lt;REASON value="NameOfReason"&gt;
    &lt;FIELDS&gt;. . . &lt;/FIELDS&gt;
@@ -147,7 +146,6 @@ For each transition, you specify a set of reasons for changing the state of the 
 &lt;STATES&gt;
    &lt;STATE&gt;. . . &lt;/STATE&gt;
 &lt;/STATES&gt;
-
 </pre>
 </td><td data-th="Required?"><p>Required</p></td></tr><tr><td data-th="Element"><p><strong>TRANSITION</strong></p></td><td data-th="Description and syntax"><p>Specifies a valid progression or regression from one state to another for work items of a particular type.</p>
 <pre>

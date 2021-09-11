@@ -2,23 +2,22 @@
 title: CMMI process guidance, Track bugs  
 titleSuffix: Azure Boards
 description: Use the bug work item to describe and track progress for each bug that you find.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 87247b22-4919-4507-af64-372f4cc9bd2f
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
 # Track bugs
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 As you run tests to verify your requirements, you are bound to find bugs. Use the bug work item to describe and track progress for each bug that you find.  
   
- ![Bug for CMMI project &#40;work item form&#41;](_img/procguid_cmmiwitform.png "ProcGuid_CMMIwitForm")  
+ ![Bug for CMMI project &#40;work item form&#41;](media/procguid_cmmiwitform.png "ProcGuid_CMMIwitForm")  
   
  For more information about how to create bug work items, see [Run manual tests](../../../../test/run-manual-tests.md). As bugs are found, follow the process in this article to prioritize them, to make sure that they get fixed, and to make sure that you have a record of the work and the decisions that were involved.  
   
@@ -48,7 +47,7 @@ As you run tests to verify your requirements, you are bound to find bugs. Use th
  Working with other team members, the developer may recommend a fix that has implications for other sections of the code and that may require significant regression testing. Any conversations that relate to assessing the risk of such a fix should be recorded in the bug work item history because it documents useful decision analysis and risk management evidence for an audit or Standard CMMI Appraisal Method for Process Improvement (SCAMPI) appraisal. For more information about CMMI see [Background to CMMI](guidance-background-to-cmmi.md).  
   
 ### Update and run unit tests for fixing the bug  
- Unit tests verify the correct implementation of a unit of code. Writing and performing unit tests identifies bugs before testing starts and, therefore, helps reduce the cost of quality control. Developers must write unit tests for all code that will be written as part of implementing a development task or implementing a fix for the bug. For more information, see [Unit Test Your Code](https://msdn.microsoft.com/library/dd264975).  
+ Unit tests verify the correct implementation of a unit of code. Writing and performing unit tests identifies bugs before testing starts and, therefore, helps reduce the cost of quality control. Developers must write unit tests for all code that will be written as part of implementing a development task or implementing a fix for the bug. For more information, see [Unit Test Your Code](/visualstudio/test/unit-test-your-code).  
   
  You may prefer to write the unit test before making any code fixes in a test-first development strategy. This type of strategy is preferred by agile software developers. The CMMI does not require that unit tests are written in a particular sequence, only that effective verification of functionality is achieved.  
   

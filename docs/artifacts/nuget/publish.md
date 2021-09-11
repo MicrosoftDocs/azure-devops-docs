@@ -1,23 +1,26 @@
 ---
-title: Publish a NuGet package from the command line
-description: Publish NuGet packages to Azure DevOps Services or Team Foundation Server from the command line
+title: Connect to a feed and publish NuGet packages using the command line
+description: How to connect to your feed and publish NuGet packages using the command line
 ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
-ms.date: 09/01/2017
+ms.date: 07/15/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Publish a NuGet package from the command line
+# Publish a NuGet package using the command line
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-[!INCLUDE [](../_shared/nuget/publish.md)]
+With Azure Artifacts, you can publish your NuGet packages to public or private feeds, and then share them with others depending on your feed's visibility settings. 
 
-## Publishing with upstream sources
-There are some important things to consider when publishing packages that involve upstream sources. Check out the documentation on [overriding a package from an upstream source](../concepts/upstream-sources.md#overriding-a-package-from-an-upstream-source) for more information.
+## Connect to a NuGet feed
+
+[!INCLUDE [](../includes/nuget/nuget-publish-endpoint.md)]
+
+## Related articles
+
+- [Upstream sources overview](../concepts/upstream-sources.md)
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md). 
+- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md).
 

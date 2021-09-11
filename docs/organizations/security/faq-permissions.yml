@@ -1,0 +1,60 @@
+### YamlMime:FAQ
+metadata:
+  title: Permissions and access frequently asked questions 
+  description: Learn about frequently asked questions (FAQs) on permissions and access in Azure DevOps.
+  titleSuffix: Azure DevOps
+  ms.custom:
+  ms.technology: azure-devops
+  ms.author: chcomley
+  author: ChComley
+  ms.topic: FAQ
+  monikerRange: 'azure-devops'
+  ms.date: 03/30/2021
+
+title: Access and permissions FAQs 
+
+summary: | 
+  **Azure DevOps Services**  
+
+  See the following frequently asked questions (FAQs) and answers for access and permissions in Azure DevOps. For troubleshooting information, see [Troubleshoot access and permission issues](troubleshoot-permissions.md).
+
+sections:
+  - name: General
+    questions: 
+      - question: Why can't users access some features?
+        answer: |
+           They may need a different [access level](access-levels.md#supported-access-levels) assigned. This is in addition to permissions granted through security groups. For example, [Stakeholder access](stakeholder-access.md) access level provides partial support to select features, allowing users to view and modify work items, but not to use all features.
+
+      - question: How do I find my administrator? 
+        answer: |
+          See [Find your administrator](lookup-organization-owner-admin.md).
+
+      - question: I accidentally removed my permissions and am unable to grant them again. What should I do?
+        answer: |
+          The only way to resolve this scenario is to [find your project/org administrator](lookup-organization-owner-admin.md) and ask them to grant the permission again.
+
+  - name: Users and guest users
+    questions: 
+      - question: How do I remove users from Azure DevOps? 
+        answer: |
+          See [How to remove users from Azure DevOps](../accounts/delete-organization-users.md).
+      
+      - question: I added a user to my project. Why can't they see the project?  
+        answer: |
+          To view a [project](permissions.md#project-level-groups), users must have the [**view project level information permission** set to **allow**](set-project-collection-level-permissions.md#set-permissions-at-the-project--or-collection-level).  
+      - question: Why can't guest users search for Azure Active Directory users?
+        answer: |
+          By default, [Azure AD guests can't search the Azure AD in the manner required by Azure DevOps](../accounts/faq-azure-access.yml#q--why-are--no-identities-found--when-i-try-to-add-users-from-azure-ad-to-my-azure-devops-organization-).
+
+  - name: Organizations
+    questions:
+      - question: Why can't I create an organization? 
+        answer: |
+          Contact your administrator to determine if your organization is using [the Azure AD tenant policy to restrict new organization creation](../accounts/azure-ad-tenant-policy-restrict-org-creation.md).
+ 
+additionalContent: |
+  ## Related articles
+    - [Troubleshoot access and permission issues in Azure DevOps](troubleshoot-permissions.md)
+    - [Azure access FAQs](../accounts/faq-azure-access.yml)
+
+  *Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*

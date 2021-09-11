@@ -2,7 +2,6 @@
 title: Azure DevOps Services release notes - Enhancements to Azure Boards - Sprint 156 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 08/12/2019
 description: In the **Sprint 156 Update** of Azure DevOps, we continue to improve Azure Boards to include items that can help improve the user experience. 
@@ -22,67 +21,67 @@ Check out the [Features](#features) list below for more.
 
 ### General:
 
-[!INCLUDE [sprint-156-update-links](_shared/general/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/general/sprint-156-update-links.md)]
 
 ### Azure Boards:
 
-[!INCLUDE [sprint-156-update-links](_shared/boards/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/boards/sprint-156-update-links.md)]
 
 ### Azure Repos:
 
-[!INCLUDE [sprint-156-update-links](_shared/repos/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/repos/sprint-156-update-links.md)]
 
 ### Azure Artifacts:
 
-[!INCLUDE [sprint-156-update-links](_shared/artifacts/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/artifacts/sprint-156-update-links.md)]
 
 ### Azure Pipelines:
 
-[!INCLUDE [sprint-156-update-links](_shared/pipelines/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/pipelines/sprint-156-update-links.md)]
 
 ### Azure Test Plans:
 
-[!INCLUDE [sprint-156-update-links](_shared/testplans/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/testplans/sprint-156-update-links.md)]
 
 ### Reporting:
 
-[!INCLUDE [sprint-156-update-links](_shared/reporting/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/reporting/sprint-156-update-links.md)]
 
 ### Wiki:
 
-[!INCLUDE [sprint-156-update-links](_shared/wiki/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/wiki/sprint-156-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-156-update](_shared/general/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/general/sprint-156-update.md)]
 
 ## Azure Boards
 
-[!INCLUDE [sprint-156-update](_shared/boards/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/boards/sprint-156-update.md)]
 
 ## Azure Repos
 
-[!INCLUDE [sprint-156-update](_shared/repos/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/repos/sprint-156-update.md)]
 
 ## Azure Artifacts
 
-[!INCLUDE [sprint-156-update](_shared/artifacts/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/artifacts/sprint-156-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-156-update](_shared/pipelines/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/pipelines/sprint-156-update.md)]
 
 ## Azure Test Plans
 
-[!INCLUDE [sprint-156-update](_shared/testplans/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/testplans/sprint-156-update.md)]
 
 ## Reporting
 
-[!INCLUDE [sprint-156-update](_shared/reporting/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/reporting/sprint-156-update.md)]
 
 ## Wiki
 
-[!INCLUDE [sprint-156-update](_shared/wiki/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/wiki/sprint-156-update.md)]
 
 ## Next steps
 
@@ -92,17 +91,17 @@ Check out the [Features](#features) list below for more.
 Head over to Azure DevOps and take a look.
 
 > [!div class="nextstepaction"]
-> [Go to Azure DevOps](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![Make a suggestion](../_img/make-a-suggestion.png)
+> ![Make a suggestion](../media/make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
 
 Thanks,
 
-[!INCLUDE [sprint-156](_shared/signer/sprint-156.md)]
+[!INCLUDE [sprint-156](includes/signer/sprint-156.md)]

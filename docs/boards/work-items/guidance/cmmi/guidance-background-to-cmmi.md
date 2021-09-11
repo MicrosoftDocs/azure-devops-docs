@@ -2,19 +2,17 @@
 title: Capability Maturity Model Integration (CMMI)
 titleSuffix: Azure Boards
 description: Guide to the Capability Maturity Model Integration (CMMI) for Development 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 77e18a8c-e101-4210-9755-33a7c99b2593
 ms.topic: conceptual
-ms.author: kaelli  author: KathrynEE  
-ms.manager: jillfra
+ms.author: kaelli  
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
 # Background to CMMI
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 The definitive guide to the Capability Maturity Model Integration (CMMI) for Development is published by the Software Engineering Institute as "CMMI: Guidelines for Process Integration and Product Improvement." This book specifically describes the CMMI for Development (CMMI-DEV) version 1.3, which is one of the models within the current CMMI product suite at the time of this writing. This model is extremely stable and should continue to be current well beyond 2010. You may also find "CMMI Distilled: A Practical Introduction to Integrated Process Improvement" to be a useful and accessible book about the topic.   
   
@@ -41,13 +39,13 @@ The definitive guide to the Capability Maturity Model Integration (CMMI) for Dev
   
  The CMMI-DEV is really two models that share the same underlying elements. The first and most familiar is the Staged Representation, which presents the 22 process areas mapped into one of five organizational maturity levels. An appraisal of an organization would assess the level at which it was operating, and this level would be an indicator of its ability to manage risk and, therefore, deliver on its promises.  
   
- ![CMMI Staged Representation](_img/cmmi_stagedrep_1.png "CMMI_StagedRep_1")  
+ ![CMMI Staged Representation](media/cmmi_stagedrep_1.png "CMMI_StagedRep_1")  
   
  Levels 4 and 5 are often referred to as higher maturity levels. There is often a clear difference between higher maturity organizations, which exhibit the quantitative management and optimizing behaviors, and lower maturity organizations, which are merely managed or following defined processes. Higher maturity organizations exhibit lower variability in processes and often use leading indicators as part of a statistically defensible management method. As a result, higher maturity organizations tend to be both more predictable and faster at responding to new information, assuming that other bureaucracy does not get in the way. Where low maturity organizations tend to exhibit heroic effort, high maturity organizations may blindly follow processes when under stress and fail to recognize that a process change may be a more appropriate response.  
   
  The second, the Continuous Representation, models process capability within each of the 22 process areas individually, allowing the organization to tailor their improvement efforts to the processes that offer the highest business value. This representation is more in line with Crosby's original model. Appraisals against this model result in profiles of capability rather than a single number. Of course, because the organizational maturity level is the level that most managers and executives understand, there are ways of mapping the results of a continuous model assessment into the five stages.  
   
- ![CMMI Continuous Representation](_img/cmmi_contrepresentation.png "CMMI_ContRepresentation")  
+ ![CMMI Continuous Representation](media/cmmi_contrepresentation.png "CMMI_ContRepresentation")  
   
  Using the staged model as a basis for a process improvement program can be dangerous because implementers may forget that the CMMI is not a process or workflow model but provides goals for process and workflow to achieve. Meeting those goals will improve the maturity of the organization and the likelihood that events unfold as planned. Perhaps the biggest failure mode is making achieving a level the goal and then creating processes and infrastructure simply to pass the appraisal. The goal of any process improvement activity should be measurable improvement, not a number.  
   
@@ -84,11 +82,11 @@ The definitive guide to the Capability Maturity Model Integration (CMMI) for Dev
   
  In the Staged Representation, the process areas are mapped against each stage, as shown in the following illustration.  
   
- ![Stage representation showing process areas](_img/cmmi_detailstagedrep.png "CMMI_DetailStagedRep")  
+ ![Stage representation showing process areas](media/cmmi_detailstagedrep.png "CMMI_DetailStagedRep")  
   
  In the Continuous Representation, the process areas are mapped into functional groupings, as shown in the following illustration.  
   
- ![Continuous Representation showing Process Areas](_img/cmmi_detailcontrep.png "CMMI_DetailContRep")  
+ ![Continuous Representation showing Process Areas](media/cmmi_detailcontrep.png "CMMI_DetailContRep")  
   
  Each process area is made up of required, expected, and informative components. Only the required components are actually required to satisfy an appraisal against the model. The required components are the specific and generic goals for each process area. The expected components are the specific and generic practices for each specific or generic goal. Note that, because an expected component is merely expected and not required, this indicates that a specific or generic practice can be replaced by an equivalent practice. The expected practices are there to guide implementers and appraisers. If an alternative practice is chosen, it will be up to the implementer to advise an appraiser and justify why an alternative practice is appropriate. Informative components provide details that help implementers get started with a process improvement initiative that is guided by the CMMI model. Informative components include sub-practices of generic and specific practices and typical work products.  
   

@@ -1,64 +1,76 @@
 ---
-title: Use stage templates in deployments
+title: Use stage templates in release pipelines
 ms.custom: seodec18
-description: DevOps CI CD - Understand stage templates in Azure Pipelines and Team Foundation Server (TFS)
+description: How to use stage templates in Azure Pipelines
 ms.assetid: BE9E2883-5CEB-4A91-A038-CB45B728A0C4
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/24/2018
+ms.date: 08/03/2021
 monikerRange: '>= tfs-2015'
+"recommendations": "true"
 ---
 
-# Stage templates in Azure Pipelines
+# Stage templates
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
+Azure Pipelines provide a list of stage templates you can choose from when creating a new release pipeline or adding a stage to your existing one. The templates are pre-defined with the appropriate tasks and settings to help you save time and effort when creating your release pipeline.
 
-When you start a new release pipeline, or when you add a stage to
-an existing release pipeline, you can choose from a list of templates for
-each stage. These templates pre-populate the stage with the
-appropriate tasks and settings, which can considerably reduce the time and
-effort required to create a release pipeline for your DevOps CI/CD processes.
+Aside from the pre-defined templates, you can also create your own custom stage templates based on your specific needs.
 
-A set of pre-defined stage templates are available in
-Azure Pipelines and in each version of TFS. You can use these templates
-when you create a new release pipeline or add a new
-stage to a pipeline. You can also create your own custom
-stage templates from a stage you have populated and
-configured.
+When a stage is created from a template, the tasks in the template are copied over to the stage. Any further updates to the template have no impact on existing stages. If you are trying to add multiple stages to your release pipeline and update them all in one operation, you should use [task groups](../library/task-groups.md) instead.
 
-> Templates do not have any additional security capability. There is no way to restrict the use of a template to specific users. All templates, pre-defined and custom, are available for use by all users who have permission to create release pipelines.
+> [!NOTE]
+> Templates cannot be restrict to specific users or groups. All templates, pre-defined or custom, are available to all users who have the permission to create release pipelines.
 
-When a stage is created from a template, the tasks in the template are copied over to the stage.
-Any further updates to the template have no impact on existing stages.
-If you want a way to easily insert a number of stages into release pipelines
-(perhaps to keep the definitions consistent) and to enable these stages to all be updated
-in one operation, use [task groups](../library/task-groups.md) instead of stage templates.
+## Save a stage template
 
-## Q & A
+You can save a stage template from within your classic release pipeline. 
 
-### Can I export templates or share them with other subscriptions, enterprises, or projects?
+1. Select your release pipeline, and then select **Edit**. 
 
-Custom templates that you create are scoped to the project that you created them in.
-Templates cannot be exported or shared with another project, collection, server, or organization.
-You can, however, export a release pipeline and import it into another project, collection, server, or subscription.
-Then you can re-create the template for use in that location.
+1. Select the stage you want to export. 
 
-### How do I delete a custom stage template?
+1. Select the three dots button, and then select **Save as template**.
 
-You can delete an existing custom template from the list of templates that is displayed when you add a new stage to our pipeline.
+    :::image type="content" source="media/stage-templates/save-stage-template.png" alt-text="Select the three dots and save as template.":::
 
-![Delete custom template](_img/delete-custom-template.png)
+1. Name your template, and then select **Ok** when you are done.
+  
+    :::image type="content" source="media/stage-templates/name-stage-template.png" alt-text="Add a name for your stage template.":::
 
-### How do I update a custom stage template?
+## Use a stage template
 
-To update an stage template, delete the existing template in a release pipeline and then save the stage as a template with the same name.
+1. From within your release pipeline definition, select **Add** to add a stage. 
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+1. Select **New stage**.
+
+    :::image type="content" source="media/use-stage-template.png" alt-text="Screenshot showing how to add a stage template":::
+
+1. Use the search bar to search for your custom template. Select **Add** to use your custom template.
+
+    :::image type="content" source="media/load-custom-stage-template.png" alt-text="Screenshot showing how to load a custom stage template":::
+
+## FAQs
+
+### Q: Can I export templates or share them with other subscriptions, enterprises, or projects?
+
+Custom templates are scoped to the project that hosts them. Templates cannot be exported or shared with other projects, collections, servers, or organizations.
+You can, however, export a release pipeline into another project, collection, server, or subscription and then re-create the template and use it in that new location.
+
+### Q: How do I delete a custom stage template?
+
+Existing custom templates can be deleted from the *Select a Template* window panel. From within your release pipeline definition, select **Add** > **New Stage** to access the list of templates.
+
+:::image type="content" source="media/delete-custom-template.png" alt-text="Screenshot showing how to delete a custom stage template":::
+
+### Q: How do I update a custom stage template?
+
+To update a stage template, delete the existing one from the list of templates, and then save the new one with the same name.
+
+## Related articles
+
+- [Deploy pull request Artifacts ](deploy-pull-request-builds.md).
+- [Deploy from multiple branches](deploy-multiple-branches.md).
+- [View release progress and test summary](visualize-release-test-progress.md).

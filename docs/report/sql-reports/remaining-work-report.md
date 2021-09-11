@@ -1,26 +1,25 @@
 ---
 title: Remaining Work Report 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Tracks the team's progress and identify any problems in the flow of work
 ms.assetid: 61990591-ac5a-4cec-80f6-6627a723a910
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 
 # Remaining Work Report
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 After the team has estimated its tasks and begun work, you can use the Remaining Work report to track the team's progress and identify any problems in the flow of work.  
   
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
 > [!NOTE]
->  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+>  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
 
 **You can use this report to answer the following questions**:<br /><br /> -   What is the cumulative flow of work?<br />-   Is the team likely to finish the iteration on time?<br />-   Is the amount of work or number of work items in the iteration growing?<br />-   Does the team have too much work in progress?<br />-   How is the team doing in estimating work for the iteration?
@@ -45,12 +44,12 @@ After the team has estimated its tasks and begun work, you can use the Remaining
 ### Hours of Work  
  The following illustration shows an example of the Remaining Work report in the **Hours of Work** view. This example is healthy in that a steady rate of work is being completed. However, the team significantly underestimated the amount of work that was required to complete the iteration, as shown by the hours remaining at the start and the hours completed at the end.  
   
- ![Example of Remaining Work report](_img/procguide_reportsremainingwork.png "ProcGuide_ReportsRemainingWork")  
+ ![Example of Remaining Work report](media/procguide_reportsremainingwork.png "ProcGuide_ReportsRemainingWork")  
   
 ### Number of Work Items  
  The following illustration shows the same report as in the previous illustration but in the **Number of Work Items** view, with the work items grouped by state. Although the team made good progress resolving and closing work items, the estimate of work items increased from the start of the iteration to almost three times more by the end of the iteration.  
   
- ![Example of number of work items report](_img/procguid_numberofwi_remainingwork.png "ProcGuid_NumberOfWi_RemainingWork")  
+ ![Example of number of work items report](media/procguid_numberofwi_remainingwork.png "ProcGuid_NumberOfWi_RemainingWork")  
   
  The following table summarizes the data that the report shows, subject to which filters and display option you specify.  
   
@@ -105,12 +104,12 @@ After the team has estimated its tasks and begun work, you can use the Remaining
 ### Healthy Version of Report  
  A healthy Remaining Work report shows steady progress in resolving and closing tasks, as the following illustration shows. The rectangular shape of the diagram indicates that the estimated work closely matched the required work.  
   
- ![Healthy version of Remaining Work report](_img/procguid_healthywork.png "ProcGuid_HealthyWork")  
+ ![Healthy version of Remaining Work report](media/procguid_healthywork.png "ProcGuid_HealthyWork")  
   
 ### Unhealthy Version of Report  
  The following illustration shows an unhealthy version of the Remaining Work report. Little progress is made for several weeks at a time, as indicated by the flat line of work items remaining in an unchanged state. Also, the number of work items increases past the midpoint of the iteration, which indicates that more features have been introduced.  
   
- ![Unhealthy version of Remaining Work report](_img/procguid_unhealthywork.png "ProcGuid_UnhealthyWork")  
+ ![Unhealthy version of Remaining Work report](media/procguid_unhealthywork.png "ProcGuid_UnhealthyWork")  
   
  An unhealthy Remaining Work report might show one or more of the following indicators:  
   
@@ -133,7 +132,7 @@ After the team has estimated its tasks and begun work, you can use the Remaining
   
   The following illustration shows the available filters and display options:  
   
-  ![Filters for Remaining Work report](_img/procguid_remainingwork.png "ProcGuid_RemainingWork")  
+  ![Filters for Remaining Work report](media/procguid_remainingwork.png "ProcGuid_RemainingWork")  
   
 #### To filter the tasks, user stories, and bugs that appear in the report  
   

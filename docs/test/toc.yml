@@ -1,108 +1,116 @@
-- name: Exploratory & Manual Testing 
-  href: index.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+- name: Azure Test Plans 
+  href: index.yml
+  displayName: test plans
 - name: About exploratory and manual testing
-  href: overview.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
-- name: About load testing
-  href: load-test/overview.md
-- name: Quickstarts
+  href: overview.md
+  displayName: manual testing
+- name: Get started
+  expanded: true
   items:
-  - name: Manual testing
-    items:
-    - name: Create a test plan
-      href: create-a-test-plan.md
-    - name: Create test cases
-      href: create-test-cases.md
-    - name: Run manual tests
-      href: run-manual-tests.md
-    - name: New test plans page
-      href: new-test-plans-page.md 
-  - name: "Test & Feedback extension"
-    items:
-    - name: Install the extension
-      href: perform-exploratory-tests.md
-    - name: Test in Connected mode
-      href: connected-mode-exploratory-testing.md
-    - name: Test in Standalone mode
-      href: standalone-mode-exploratory-testing.md
-  - name: Load testing
-    items:
-    - name: Load test with Visual Studio
-      href: load-test/getting-started-with-performance-testing.md
-    - name: Load test with Azure DevOps
-      href: load-test/get-started-simple-cloud-load-test.md
-    - name: Load test with Azure portal
-      href: load-test/app-service-web-app-performance-test.md
-    - name: View and compare results
-      href: load-test/performance-reports.md
-- name: Tutorials
+  - name: Navigate Test Plans
+    href: navigate-test-plans.md
+    displayName: test suites tree, define, execute, chart 
+  - name: Create a test plan
+    href: create-a-test-plan.md
+    displayName: create, plan 
+  - name: Create test cases
+    href: create-test-cases.md
+    displayName: create, case
+  - name: Run manual tests
+    href: run-manual-tests.md
+    displayName: manual test, run, test runs
+  - name: Set permissions and access 
+    href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+    displayName: access, permissions
+- name: Manual testing
   items:
   - name: Test from the Kanban board
     href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
-  - name: Load test before release
-    href: load-test/run-performance-tests-app-before-release.md
-- name: How-to Guides
+    displayName: kanban, tesr, board
+  - name: Track test status
+    href: track-test-status.md
+    displayName: track, status
+  - name: Perform user acceptance testing
+    href: user-acceptance-testing.md
+    displayName: user acceptance, testing
+  - name: Test different configurations
+    href: test-different-configurations.md
+    displayName: configuration, testing
+  - name: Repeat a test with different data
+    href: repeat-test-with-different-data.md
+    displayName: data, testing
+  - name: Collect diagnostic data
+    href: collect-diagnostic-data.md
+    displayName: diagnostic, data, testing
+  - name: Manage test results
+    href: how-long-to-keep-test-results.md
+    displayName: results, logs
+  - name: Associate tests with test cases
+    href: associate-automated-test-with-test-case.md
+    displayName: test cases, automated, associate
+  - name: Run automated tests from test plans
+    href: run-automated-tests-from-test-hub.md
+    displayName: automated, test plans, run
+  - name: Delete test artifacts
+    href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md
+    displayName: delete, artifacts 
+- name: "Test & Feedback extension"
   items:
-  - name: Manual testing
-    items:
-    - name: Track test status
-      href: track-test-status.md
-    - name: Delete test artifacts
-      href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
-    - name: Perform user acceptance testing
-      href: user-acceptance-testing.md
-    - name: Test different configurations
-      href: test-different-configurations.md
-    - name: Repeat a test with different data
-      href: repeat-test-with-different-data.md
-    - name: Collect diagnostic data
-      href: collect-diagnostic-data.md
-    - name: Manage test results
-      href: how-long-to-keep-test-results.md
-    - name: Associate tests with test cases
-      href: associate-automated-test-with-test-case.md
-    - name: Run tests from test plans
-      href: run-automated-tests-from-test-hub.md
-  - name: "Test & Feedback extension"
-    items:
-    - name: Explore work items
-      href: explore-workitems-exploratory-testing.md
-    - name: Add to existing bugs
-      href: add-to-bugs-exploratory-testing.md
-    - name: Get insights from tests
-      href: insights-exploratory-testing.md
-    - name: Request stakeholder feedback
-      href: request-stakeholder-feedback.md
-    - name: Provide stakeholder feedback
-      href: provide-stakeholder-feedback.md
-    - name: Get voluntary stakeholder feedback
-      href: voluntary-stakeholder-feedback.md
-    - name: Track stakeholder feedback requests
-      href: track-stakeholder-feedback.md
-  - name: Load testing
-    items:
-    - name: Add app performance data
-      href: load-test/get-performance-data-for-load-tests.md
-    - name: Run Apache JMeter load tests
-      href: load-test/get-started-jmeter-test.md
-    - name: Record and replay tests
-      href: load-test/record-and-replay-cloud-load-tests.md
-    - name: Test private and intranet apps
-      href: load-test/clt-behind-firewall.md
-    - name: Test using your own servers
-      href: load-test/clt-with-private-machines.md
-    - name: Install certificates and software
-      href: load-test/install-certs-and-software.md
+  - name: Install the extension
+    href: perform-exploratory-tests.md
+    displayName: extension, install
+  - name: Test in Connected mode
+    href: connected-mode-exploratory-testing.md
+    displayName: connected, mode
+  - name: Test in Standalone mode
+    href: standalone-mode-exploratory-testing.md
+    displayName: standalone, mode
+  - name: Explore work items
+    href: explore-workitems-exploratory-testing.md
+    displayName: items, workitems
+  - name: Add to existing bugs
+    href: add-to-bugs-exploratory-testing.md
+    displayName: bugs, exploratory
+  - name: Get insights from tests
+    href: insights-exploratory-testing.md
+    displayName: insights, exploratory
+  - name: Request stakeholder feedback
+    href: request-stakeholder-feedback.md
+    displayName: stakeholder, feedback, request
+  - name: Provide stakeholder feedback
+    href: provide-stakeholder-feedback.md
+    displayName: stakeholder, feedback, provide
+  - name: Get voluntary stakeholder feedback
+    href: voluntary-stakeholder-feedback.md
+    displayName: stakeholder, feedback, voluntary
+  - name: Track stakeholder feedback requests
+    href: track-stakeholder-feedback.md
+    displayName: stakeholder, feedback, track
 - name: Reference
   items:
+  - name: Default permissions (Security)
+    href: manual-test-permissions.md
   - name: Manual testing FAQs
-    href: reference-qa.md
-  - name: Load testing FAQs
-    href: load-test/reference-qa.md
+    href: reference-qa.md 
   - name: TCM Reporting FAQs
     href: reference-tcm.md
   - name: Unable to connect
-    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/azure/devops/breadcrumb/toc.json
-  - name: Default permissions (Security)
-    href: manual-test-permissions.md
-
-
+    href: ../organizations/projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+- name: REST API Reference
+  items:
+  - name: Test Management
+    href: /rest/api/azure/devops/test
+  - name: Test Plans
+    href: /rest/api/azure/devops/testplan/test%20%20plans/list
+- name: Resources
+  items:
+  - name: Azure Pipelines Test
+    href: ../pipelines/test/test-glossary.md
+  - name: Azure DevOps Blog, Test
+    href: https://devblogs.microsoft.com/devops/
+  - name: Plug-ins for Visual Studio
+    href: https://devblogs.microsoft.com/devops/visual-studio-11-beta-unit-testing-plugins-list/
+  - name: Create custom code & plug-ins
+    href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
+  - name: Load testing (Deprecated)
+    href: /previous-versions/azure/devops/test/load-test/overview

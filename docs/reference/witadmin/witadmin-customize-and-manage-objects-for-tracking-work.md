@@ -1,38 +1,37 @@
 ---
-title: witAdmin:Customize and manage objects for tracking work 
-titleSuffix: TFS  
+title: witAdmin Customize and manage objects for tracking work 
+titleSuffix: Azure DevOps Server  
 description: Tracks your team's progress by creating and customizing objects that track work items.
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: witadmin
 ms.assetid: 7853f6db-98c9-4012-b6a5-51618c41d58c
 ms.topic: reference
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
-ms.date: 03/20/2018
+monikerRange: '< azure-devops'
+ms.date: 08/02/2021
 ---
 
 
 
 # witAdmin: Customize and manage objects for tracking work 
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
-You can change how you track your team's progress by creating and customizing objects that track work items. By using the **witadmin** command-line tool, you can create, delete, import, and export objects such as categories, global lists, global workflow, types of links, and types of work items. You can also permanently delete types of work item types, and you can delete, list, or change the attributes of fields in work item.  
+You can change how you track your team's progress by creating and customizing objects that track work items. By using the **witadmin** command-line tool, you can create, delete, import, and export objects such as categories, global lists, global workflow, types of links, and types of work items. You can also delete, list, or change the attributes of work item fields.  
   
 > [!NOTE]   
 > The **witadmin** command-line tool is not supported on Azure DevOps Services. Instead, you use [inherited processes](../../organizations/settings/work/manage-process.md). 
 
 As the following illustration shows, you manage categories and types of and work items for each project. You manage global lists, types of links, and fields in work item for each project collection. You can customize global workflow for a project or a collection.  
   
-![Work Item Tracking Objects](_img/pnt_wit_objects.png "PNT_WIT_Objects")  
+![Work Item Tracking Objects](media/pnt_wit_objects.png "PNT_WIT_Objects")  
   
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../includes/process-editor.md)]
 
 For most commands, you must be a member of the Project Administrators or Project Collection Administrators groups. For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md). 
 
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
 
 <a name="global"></a> 
 ## Global parameters  
@@ -47,9 +46,9 @@ For most commands, you must be a member of the Project Administrators or Project
  
 ## witadmin commands  
 
-All work tracking objects&mdash;such as, work item types (WITs), process configuration, global lists&mdash; are customized by their XML definitions.  
+You customize all work tracking objects&mdash;such as, work item types (WITs), process configuration, global lists&mdash;by updating their XML definitions.  
 
-All **witadmin** commands can be run against an on-premises TFS. If you are new to work tracking customization and for definitions of the work tracking objects your can customize, see [Customize your work tracking experience](../customize-work.md). 
+You run **witadmin** commands against an on-premises Azure DevOps Server. If you're new to work tracking customization, see [Customize your work tracking experience](../customize-work.md). 
 
 ## [Work item types](witadmin-import-export-manage-wits.md)
   
@@ -62,10 +61,19 @@ All **witadmin** commands can be run against an on-premises TFS. If you are new 
 
 ## [Fields](manage-work-item-fields.md)
 
+::: moniker range=">= azure-devops-2019"
+- **deletefield**: Delete a field  
+- **listfields**: List field attributes  
+- **changefield**: Change a field attribute   
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
 - **deletefield**: Delete a field  
 - **listfields**: List field attributes  
 - **indexfield**: Turn field indexing on/off  
 - **changefield**: Change a field attribute   
+::: moniker-end
+
 
 ## [Process configuration](witadmin-import-export-process-configuration.md)
   
@@ -95,10 +103,11 @@ All **witadmin** commands can be run against an on-premises TFS. If you are new 
 - **importglobalworkflow**: Import the global workflow file   
 
 
+::: moniker range="< azure-devops-2019"
 ## [Work items](remove-work-items-permanently.md) 
 
 - **destroywi**: Permanently delete work items    
-
+::: moniker-end
 
 ## [Client cache](rebuild-client-cache.md)
   

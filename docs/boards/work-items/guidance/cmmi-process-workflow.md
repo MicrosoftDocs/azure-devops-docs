@@ -4,24 +4,22 @@ titleSuffix: Azure Boards
 ms.custom: work-items
 description: How to guide for using the CMMI process  work item types and workflow to track work in Azure Boards, Azure DevOps, & Team Foundation Server   
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
 ms.topic: conceptual
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/20/2018
+ms.date: 03/24/2021
 ---
 
 # CMMI process work item types and workflow
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using the Kanban board, track progress by updating the status of requirements.
  
-![CMMI process work item types, conceptual image](_img/cmmi-process-plan-wits.png)
+![CMMI process work item types, conceptual image](media/cmmi-process-plan-wits.png)
 
 To gain insight into a portfolio of requirements, product owners can map requirements to features. When teams work in iterations, they define tasks that automatically link to requirements.
 
@@ -30,18 +28,28 @@ Using Microsoft Test Manager and the web portal, testers create and run test cas
 To support additional CMMI processes, teams can track change requests, risks, issues, and notes captured in review meetings. If you are new to the CMMI process, review the section [Plan and track work with CMMI](cmmi-process.md#start-using) to get started. 
 
   
-[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)] 
+[!INCLUDE [temp](../../includes/note-work-item-form-differences.md)] 
 
 ## Define requirements 
 
-Create requirements from the quick add panel on the [product backlog page](../../backlogs/create-your-backlog.md). Alternatively, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md).
+Create requirements from the quick add panel on the [product backlog page](../../backlogs/create-your-backlog.md). 
 
-<img src="_img/cmmi-quick-add-panel.png" alt="CMMI process, Quick add panel on the requirements backlog page" style="border: 2px solid #C3C3C3;" />
-
+<img src="media/cmmi-quick-add-panel.png" alt="CMMI process, Quick add panel on the requirements backlog page" />
 
 Later, you can open each requirement to provide more details and estimate its size.
 
-![Requirement work item form](_img/cmmi-requirement-form.png)  
+![Requirement work item form](media/cmmi-requirement-form.png)  
+
+::: moniker range="> tfs-2018"
+Alternatively, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md). 
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+Alternatively, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project).
+::: moniker-end
+
+
+[!INCLUDE [temp](../../includes/deprecate-project.md)]
 
 Requirements specify the functions and product elements that teams need to create. Product owners typically define and stack rank requirements on the product backlog page. The team then scopes the size of the effort to deliver the highest priority items.
 
@@ -152,7 +160,7 @@ Use the following guidance and that provided for [fields used in common across w
         <a href="../../queries/query-numeric.md" data-raw-source="[Size](../../queries/query-numeric.md)">Size</a> </p>
     </td>
     <td>
-      <p>Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. </p><p> By defining the <strong>Size</strong> for requirements, teams can use the Agile <a href="../../../report/dashboards/team-velocity.md" data-raw-source="[velocity charts](../../../report/dashboards/team-velocity.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools to estimate future iterations or work efforts. The Kanban <a href="../../boards/kanban-basics.md" data-raw-source="[Cumulative Flow Diagram](../../boards/kanban-basics.md)">Cumulative Flow Diagram</a> references the values in this field. For additional guidance, see the <a href="https://msdn.microsoft.com/library/hh765979" data-raw-source="[Estimating](https://msdn.microsoft.com/library/hh765979)">Estimating</a> white paper.</p>
+      <p>Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. </p><p> By defining the <strong>Size</strong> for requirements, teams can use the Agile <a href="../../../report/dashboards/team-velocity.md" data-raw-source="[velocity charts](../../../report/dashboards/team-velocity.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools to estimate future iterations or work efforts. The Kanban <a href="../../boards/kanban-basics.md" data-raw-source="[Cumulative Flow Diagram](../../boards/kanban-basics.md)">Cumulative Flow Diagram</a> references the values in this field. For additional guidance, see the <a href="/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)" data-raw-source="[Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120))">Estimating</a> white paper.</p>
     </td>
   </tr>
 <tr>
@@ -163,8 +171,7 @@ Use the following guidance and that provided for [fields used in common across w
 </tr>
 <tr>
     <td><p><a href="../../queries/query-by-date-or-current-iteration.md" data-raw-source="[Start Date/Finish Date](../../queries/query-by-date-or-current-iteration.md)">Start Date/Finish Date</a> </p></td>
-    <td><p>The target dates for when the work will start or finish. These fields are filled in by <a href="../../backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Microsoft Project](../../backlogs/office/create-your-backlog-tasks-using-project.md)">Microsoft Project</a> when you use it for scheduling.</p>
-<p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
+    <td><p>The target dates for when the work will start or finish. </p>
 </td>
 </tr>
   <tr>
@@ -189,7 +196,6 @@ Use the following guidance and that provided for [fields used in common across w
         </li>
       </ul>
       <p>
-        
       </p>
     </td>
   </tr>
@@ -284,13 +290,13 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
-[!INCLUDE [temp](../../_shared/discussion-tip.md)] 
+[!INCLUDE [temp](../../includes/discussion-tip.md)] 
 
 ## Track progress
 
 As work progresses, you change the State field to update the status. Optionally, you can specify a reason. The state and reason fields appear on the work item form in the header area. 
 
-<img src="_img/agile-bug-form-state-reason.png" alt="Bug work item form, header area" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/agile-bug-form-state-reason.png" alt="Bug work item form, header area" /> 
 
 ### CMMI workflow states 
 
@@ -299,7 +305,7 @@ These diagrams show the main progression and regression states for the Requireme
 > [!div class="mx-tdBreakAll"]  
 > |Requirement  |Bug |Task |  
 > |-------------|----------|---------| 
-> |<img src="_img/IC757081.png" title="Requirement workflow states, CMMI process" alt="Requirement workflow states, CMMI process" /> |<img src="_img/IC757084.png" title="Bug workflow states, CMMI process" alt="Bug workflow states, CMMI process" /> |<img src="_img/IC757087.png" title="Task workflow states, CMMI process" alt="Task workflow states, CMMI process" /> |
+> |<img src="media/IC757081.png" title="Requirement workflow states, CMMI process" alt="Requirement workflow states, CMMI process" /> |<img src="media/IC757084.png" title="Bug workflow states, CMMI process" alt="Bug workflow states, CMMI process" /> |<img src="media/IC757087.png" title="Task workflow states, CMMI process" alt="Task workflow states, CMMI process" /> |
 
 The typical workflow progression for a requirement is:  
 -   The product owner creates a requirement in the **Proposed** state with the default reason, **New requirement**.  
@@ -311,13 +317,13 @@ The typical workflow progression for a requirement is:
 
 Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
-<img src="../../boards/_img/ALM_CC_MoveCard.png" alt="Web portal, Track progress on the Kanban board" style="border: 2px solid #C3C3C3;" />
+<img src="../../boards/media/ALM_CC_MoveCard.png" alt="Web portal, Track progress on the Kanban board" />
 
 You can customize the Kanban board to support additional [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For additional customization options, see [Customize your work tracking experience](#customize-work-tracking).
 
 ## Map requirements to features
 
-hen you manage a suite of products or user experiences, you might want to view the scope and progress of work across the product portfolio. You can do this by [defining features](../../backlogs/define-features-epics.md) and [mapping requirements to features](../../backlogs/organize-backlog.md).
+When you manage a suite of products or user experiences, you might want to view the scope and progress of work across the product portfolio. You can do this by [defining features](../../backlogs/define-features-epics.md) and [mapping requirements to features](../../backlogs/organize-backlog.md).
 
 Using portfolio backlogs, you can [drill down from one backlog to another](../../plans/portfolio-management.md) to view the level of detail you want. Also, you can use portfolio backlogs to view a rollup of work in progress across several teams when you [setup a hierarchy of teams](../../../organizations/settings/add-teams.md).
 
@@ -329,11 +335,11 @@ The feature work item contains similar fields provided for requirements and incl
 
 When your team manages their work in sprints, they can use the [sprint backlog page](../../sprints/assign-work-sprint.md) to break down the work to be accomplished into distinct tasks.  
 
-<img src="_img/IC697755.png" alt="Web portal, Add task link on a sprint backlog page" style="border: 2px solid #C3C3C3;" />
+<img src="media/IC697755.png" alt="Web portal, Add task link on a sprint backlog page" />
 
 Name the task and estimate the work it will take.
 
-![CMMI Task work item form](_img/cmmi-task-form.png)
+![CMMI Task work item form](media/cmmi-task-form.png)
 
 When teams estimate work they define tasks and estimate the hours or days to complete tasks. Teams forecast work and define tasks at the start of an iteration, and each team member performs a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement requirements, and a tester can define tasks to write and run test cases. By linking tasks to requirements and bugs, they see the progress made on these items. For additional guidance, see [Iteration activities](cmmi/guidance-iteration-activities.md).
 
@@ -374,7 +380,7 @@ When teams estimate work they define tasks and estimate the hours or days to com
 <tr>
 <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a></p></td>
 <td>
-<p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../../sprints/set-capacity.md" data-raw-source="[capacity charts](../../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../sprints/sprint-burndown.md" data-raw-source="[sprint burndown chart](../../sprints/sprint-burndown.md)">sprint burndown chart</a>, and the <a href="https://msdn.microsoft.com/library/ff731588.aspx" data-raw-source="[Sprint Burndown](https://msdn.microsoft.com/library/ff731588.aspx)">Sprint Burndown</a> report. </p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p>
+<p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../../sprints/set-capacity.md" data-raw-source="[capacity charts](../../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md)">sprint burndown chart</a>, and the <a href="/azure/devops/report/sql-reports/sprint-burndown-scrum" data-raw-source="[Sprint Burndown](../../../report/sql-reports/sprint-burndown-scrum.md)">Sprint Burndown</a> report. </p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p>
 </td>
 </tr>
 <tr>
@@ -389,15 +395,15 @@ When teams estimate work they define tasks and estimate the hours or days to com
 
 ### Test requirements
 
-From the web portal or Test Manager, you can [create test cases that automatically link to a requirement or bug](../../../test/create-test-cases.md).  Or, you can link a requirement to a test case from the ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab). 
+From the web portal or Test Manager, you can [create test cases that automatically link to a requirement or bug](../../../test/create-test-cases.md).  Or, you can link a requirement to a test case from the :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab). 
 
-![Select the test suite and add a test case](_img/IC793453.png)  
+![Select the test suite and add a test case](media/IC793453.png)  
 
 The test case contains a number of fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).  
 
-<img src="_img/agile-test-case-form.png" alt="Web portal, Test case work item form" style="border: 2px solid #C3C3C3;" />
+<img src="media/agile-test-case-form.png" alt="Web portal, Test case work item form" />
 
-The ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab) lists all the requirements and bugs in a test case. By using linking, the team can track the progress made in testing each item and supports information that appears in the [Requirements Overview Report](../../../report/sql-reports/requirements-overview-report-cmmi.md) report.
+The :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab) lists all the requirements and bugs in a test case. By using linking, the team can track the progress made in testing each item and supports information that appears in the [Requirements Overview Report](../../../report/sql-reports/requirements-overview-report-cmmi.md) report.
 
 ### Track code defects
 
@@ -413,22 +419,22 @@ In addition to the requirement, feature, task, and bug WITs, you can track infor
 -   [Risk](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) to track the probability  and degree of variance between actual and desired outcomes. When you [manage risks](cmmi/guidance-manage-risks.md), you strategically minimize the variance between the outcome that you want and the actual outcome.  
 -   [Review](cmmi/guidance-review-meeting-field-reference-cmmi.md) to document the results of a design or code review. Team members can [capture the details of how the design or code meets standards](cmmi/guidance-implement-development-tasks.md) in areas of name correctness, code relevance, extensibility, code complexity, algorithmic complexity, and code security.  
 <br/>
-You can add an issue from the  [New work item widget](../../../report/dashboards/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../Report/dashboards.md), or from the **New** menu on the Queries page. 
+You can add an issue from the  [New work item widget](../../../report/dashboards/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../report/dashboards/dashboards.md), or from the **New** menu on the Queries page. 
 
-![Add work item from a New work item widget](_img/cmmi-new-work-item-widget.png)  
+![Add work item from a New work item widget](media/cmmi-new-work-item-widget.png)  
 
 Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
 
 
-[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
+[!INCLUDE [temp](../../includes/common-work-item-fields.md)]   
 
 ## Customize work item types
 
-[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
+[!INCLUDE [temp](../../includes/customize-work-tracking.md)] 
 
 ## Related articles 
 
-[!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
+[!INCLUDE [temp](../../includes/create-team-project-links.md)]  
 
 
 ### Backlog list order

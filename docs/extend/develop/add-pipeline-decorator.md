@@ -2,23 +2,23 @@
 title: Pipeline decorators
 description: Inject steps before and after every pipeline job
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
-ms.manager: jillfra
-ms.author: stfrance
-author: stephenmichaelf
-ms.date: 02/28/2019
+ms.date: 09/16/2020
 monikerRange: '> azure-devops-2019'
 ---
 
 # Use a decorator to inject steps into a pipeline
 
-Pipeline decorators allow you to add steps to the beginning and end of every job.
-This is different than adding steps to a single definition because it applies to all pipelines in an organization.
+[!INCLUDE [version-cloud-plus-2020](../../includes/version-cloud-plus-2020.md)]
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+
+Pipeline decorators let you add steps to the beginning and end of every job.
+This process is different than adding steps to a single definition because it applies to all pipelines in an organization.
 
 Suppose our organization requires running a virus scanner on all build outputs that could be released.
-Instead of requiring every pipeline author to remember to add that step, we'll create a decorator which automatically injects the step.
+Pipeline authors don't need to remember to add that step. We create a decorator that automatically injects the step.
 Our pipeline decorator injects a custom task that does virus scanning at the end of every pipeline job.
 
 ## Author a pipeline decorator
@@ -55,14 +55,28 @@ In this file, add contribution for our new pipeline decorator.
 }
 ```
 
-Let's take a look at the properties and what they are used for:
+### Contribution options
+
+Let's take a look at the properties and what they're used for:
 
 | Property | Description |
 | ------------- |:-------------|
 | `id` | Contribution identifier. Must be unique among contributions in this extension. |
 | `type` | Specifies that this contribution is a pipeline decorator. Must be the string `ms.azure-pipelines.pipeline-decorator`. |
-| `targets` | Decorators can run before your job, after, or both. The two targets are `ms.azure-pipelines-agent-job.pre-job-tasks` and `ms.azure-pipelines-agent-job.post-job-tasks`. In this example, we use only `post-job-tasks` because we want to run at the end of the job. |
-| `properties` | The only property required is a `template`. The template is a YAML file included in your extension which defines the steps for your pipeline decorator. It's a relative path from the root of your extension folder. |
+| `targets` | Decorators can run before your job, after, or both. See the table below for available options. |
+| `properties` | The only property required is a `template`. The template is a YAML file included in your extension, which defines the steps for your pipeline decorator. It's a relative path from the root of your extension folder. |
+
+### Targets
+
+| Target | Description |
+| ------ |:----------- |
+| `ms.azure-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic build or YAML pipeline. Due to differences in how source code checkout happens, this target runs before checkout in a YAML pipeline but after checkout in a classic build pipeline. |
+| `ms.azure-pipelines-agent-job.post-checkout-tasks` | Run after the last `checkout` task in a classic build or YAML pipeline. |
+| `ms.azure-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic build or YAML pipeline. |
+| `ms.azure-release-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic RM pipeline. |
+| `ms.azure-release-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic RM pipeline. |
+
+In this example, we use `ms.azure-pipelines-agent-job.post-job-tasks` only because we want to run at the end of all build jobs.
 
 This extension contributes a pipeline decorator.
 Next, we'll create a template YAML file to define the decorator's behavior.
@@ -72,36 +86,32 @@ Next, we'll create a template YAML file to define the decorator's behavior.
 In the extension's properties, we chose the name "my-decorator.yml".
 Create that file in the root of your contribution.
 It holds the set of steps to run after each job.
-We'll start with a very simple example and work up to the full task.
+We'll start with a basic example and work up to the full task.
 
 #### my-decorator.yml (initial version)
 ------
 ```yaml
+steps:
 - task: CmdLine@2
   displayName: 'Run my script (injected from decorator)'
   inputs:
     script: dir
 ```
 
-## Installating the decorator
+## Installing the decorator
 
-In order to add a pipeline decorator to your organization, you must [install an extension](../../marketplace/install-extension.md).
-Only private extensions can contribute pipeline decorators.
-The extension needs to be authored and shared with your organization before it can be used.
+To add a pipeline decorator to your organization, you must [install an extension](../../marketplace/install-extension.md).
+**Only private extensions can contribute pipeline decorators.**
+The extension must be authored and shared with your organization before it can be used.
 
 Once the extension has been shared with your organization, [search for the extension](https://marketplace.visualstudio.com/search?term=tag%3APipeline%20decorator&target=AzureDevOps&category=All%20categories&visibilityQuery=all&sortBy=Relevance) and install it.
 
-> [!IMPORTANT]
-> Pipeline decorators are in preview.
-> You must [enable the feature at the organization level](../../project/navigation/preview-features.md#enable-features-at-the-organization-level-for-all-users)
-> Otherwise, pipeline decorators don't run.
-
 Save the file, then [build and install the extension](../get-started/node.md).
-Create and run a simple pipeline.
+Create and run a basic pipeline.
 The decorator automatically injects our `dir` script at the end of every job.
 A pipeline run looks similar to:
 
-![Pipeline decorator running a simple script](_img/mydecorator-runmyscript.png)
+![Pipeline decorator running a simple script](media/mydecorator-runmyscript.png)
 
 > [!NOTE] 
 > The decorator runs on every job in every pipeline in the organization.
@@ -111,7 +121,7 @@ A pipeline run looks similar to:
 
 In our example, we only need to run the virus scanner if the build outputs might be released to the public.
 Let's say that only builds from the default branch (typically `master`) are ever released.
-Therefore, we should limit the decorator to jobs running against the default branch.
+We should limit the decorator to jobs running against the default branch.
 
 The updated file looks like this:
 
@@ -125,14 +135,14 @@ steps:
 ```
 
 You can start to see the power of this extensibility point.
-We're able to use the context of the current job to conditionally inject steps at runtime.
-We can use [YAML expressions](../../pipelines/process/expressions.md) to make decisions about what steps to inject and when.
+Use the context of the current job to conditionally inject steps at runtime.
+Use [YAML expressions](../../pipelines/process/expressions.md) to make decisions about what steps to inject and when.
 See [pipeline decorator expression context](pipeline-decorator-context.md) for a full list of available data.
 
 There's another condition we need to consider: what if the user already included the virus scanning step?
 We shouldn't waste time running it again.
 In this simple example, we'll pretend that any `script` task found in the job is running the virus scanner.
-(In a real implementation, you'd have a custom task and check for that instead.)
+(In a real implementation, you'd have a custom task to check for that instead.)
 
 The script task's ID is `d9bafed4-0b18-4f58-968d-86655b4d2ce9`.
 If we see another script task, we shouldn't inject ours.
@@ -168,9 +178,9 @@ You also may want to see what data you have available in the context.
 You can set the `system.debugContext` variable to `true` when you queue a pipeline.
 Then, look at the pipeline summary page.
 
-You'll see the following:
+You see something similar to the following image:
 
-![View pipeline decorator context](_img/system-debugcontext.png)
+![View pipeline decorator context](media/system-debugcontext.png)
 
 Select the task to see the logs, which report the available context is available and runtime values.
 

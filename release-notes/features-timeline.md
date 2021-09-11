@@ -2,29 +2,28 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 09/06/2019
+ms.date: 8/7/2021
 ms.topic: article
-ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: jillfra
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
 hide_comments: true
 ---
-
 # Azure DevOps Feature Timeline
 
-****
+---
 
-| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a> 
-| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a> 
-| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a> 
-| <a href="https://docs.microsoft.com/azure/devops/?view=azure-devops" target="blank">Documentation</a> |
+\| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a>
+\| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a>
+\| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a>
+\| <a href="/azure/devops/?view=azure-devops&preserve-view=true" target="blank">Documentation</a> \|
 
-****
+---
 
 ## Features under development
 
-This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Each feature is linked to the public roadmap project where you can learn more about a particular item. These features and dates are the current plans at this time and are subject to change. The “Timeframe” column reflects when the feature will be available on Azure DevOps Services, the “Area” column reflects the area of the product the feature aligns with most, and the “Server” column reflects when it will be available in Azure DevOps Server on-premises, if applicable.
+This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. 
+
+Each feature is linked to the public roadmap project where you can learn more about a particular item. These features and dates are the current plans at this time and are subject to change. The "Timeframe" column reflects when the feature will be available on Azure DevOps Services, the "Area" column reflects the area of the product the feature aligns with most, and the "Server" column reflects when it will be available in Azure DevOps Server on-premises, if applicable.
 
 <table>
     <thead>
@@ -36,85 +35,67 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td rowspan="51"><strong>2019 Q3</strong></td>
-            <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1510185" data-raw-source="[Improve built-in charts: Sprint Burndown, CFD, and Velocity](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1510185)">Improve built-in charts: Sprint Burndown, CFD, and Velocity</a></td><td>Boards</td><td>2020</td>        
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1561105" data-raw-source="[Better Azure Pipelines and Azure Boards integrations](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1561105)">Better Azure Pipelines and Azure Boards integrations</a></td><td>Boards</td><td>2020</td></tr>        
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561110" data-raw-source="[@Mention support in HTML fields](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561110)">@Mention support in HTML fields</a></td><td>Boards</td><td>2020</td></tr>        
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582455" data-raw-source="[Live updates on task board](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582455)">Live updates on task board</a></td><td>Boards</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510184" data-raw-source="[Display Rollup on Azure Boards – Backlogs](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510184)">Display Rollup on Azure Boards – Backlogs</a></td><td>Boards</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582466" data-raw-source="[Import work items using csv/Excel from the web experience](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582466)">Import work items using csv/Excel from the web experience</a></td><td>Boards</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561619" data-raw-source="[Update work item notifications to be more customizable and flexible](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561619)">Update work item notifications to be more customizable and flexible</a></td><td>Boards</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221136" data-raw-source="[VFS for Git - Public Preview of macOS support](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221136)">VFS for Git - Public Preview of macOS support</a></td><td>Repos</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437728" data-raw-source="[Better support for branch policy administration across repos & projects](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437728)">Better support for branch policy administration across repos & projects</a></td><td>Repos</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1476894" data-raw-source="[Support for more granular required reviewer policy across specific required reviewers](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1476894)">Support for more granular required reviewer policy across specific required reviewers</a></td><td>Repos</td><td>2019.1</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1476896" data-raw-source="[Enable users to customize their notifications for pull request comments](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1476896)">Enable users to customize their notifications for pull request comments</a></td><td>Repos</td><td>2019.1</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553151" data-raw-source="[Add ability to update work items on commits](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553151)">Add ability to update work items on commits</a></td><td>Repos</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553152" data-raw-source="[Support 'Push Policies' to block commits meeting certain criteria](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553152)">Support 'Push Policies' to block commits meeting certain criteria</a></td><td>Repos</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553153" data-raw-source="[Allow manual builds to expire in PR policy](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553153)">Allow manual builds to expire in PR policy</a></td><td>Repos</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553154" data-raw-source="[Support per-file marking during PR review](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553154)">Support per-file marking during PR review</a></td><td>Repos</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553248" data-raw-source="[Add comment notifications to service hooks](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553248)">Add comment notifications to service hooks</a></td><td>Repos</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553249" data-raw-source="[Fix casing papercuts in the PR and file explorer experiences](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1553249)">Fix casing papercuts in the PR and file explorer experiences</a></td><td>Repos</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221169" data-raw-source="[Release traceability – Work Item integration](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221169)">Release traceability – Work Item integration</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437713" data-raw-source="[Unified hosted pool](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437713)">Unified hosted pool</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454026" data-raw-source="[Multi-repository support for YAML pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454026)">Multi-repository support for YAML pipelines</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454027" data-raw-source="[Retry failed run or redeploy an older run](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454027)">Retry failed run or redeploy an older run</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454030" data-raw-source="[Support for various trigger types in YAML](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454030)">Support for various trigger types in YAML</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454367" data-raw-source="[Control which secrets & resources can be used in specific pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454367)">Control which secrets & resources can be used in specific pipelines</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1458319" data-raw-source="[Speed up pipelines with caching](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1458319)">Speed up pipelines with caching</a></td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1458324" data-raw-source="[Faster, more flexible artifacts](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1458324)">Faster, more flexible artifacts</a></td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1505234" data-raw-source="[Runtime parameters and pipeline variables](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1505234)">Runtime parameters and pipeline variables</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570268" data-raw-source="[Auditing for release events](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570268)">Auditing for release events</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570283" data-raw-source="[Automatic creation of Release notes with wiki](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570283)">Automatic creation of Release notes with wiki</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510336" data-raw-source="[Approvals in YAML pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510336)">Approvals in YAML pipelines</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1511438" data-raw-source="[Support for Ubuntu 18.04 in hosted agents](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1511438)">Support for Ubuntu 18.04 in hosted agents</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1551124" data-raw-source="[Administrators can force all builds to use project-scoped tokens](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1551124)">Administrators can force all builds to use project-scoped tokens</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570285" data-raw-source="[Automated checks (gates) between stages](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570285)">Automated checks (gates) between stages</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570286" data-raw-source="[Deployment strategies](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570286)">Deployment strategies</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570277" data-raw-source="[Container images as a first class pipeline resource](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570277)">Container images as a first class pipeline resource</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570280" data-raw-source="[Azure Resource Group based environments](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570280)">Azure Resource Group based environments</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570266" data-raw-source="[Configure pipelines to consume artifacts published by another pipeline](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570266)">Configure pipelines to consume artifacts published by another pipeline</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570271" data-raw-source="[Environment to support virtual machine resource](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570271)">Environment to support virtual machine resource</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1424595" data-raw-source="[Test Progress Report](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1424595)">Test Progress Report</a></td><td>Test Plans</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221151" data-raw-source="[Upstream sources work across organizations, with 15-minute refresh times](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221151)">Upstream sources work across organizations, with 15-minute refresh times</a></td><td>Artifacts</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566496" data-raw-source="[Simplified set-up and Pipelines experiences](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566496)">Simplified set-up and Pipelines experiences</a></td><td>Artifacts</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566498" data-raw-source="[Billing management and cost controls](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566498)">Billing management and cost controls</a></td><td>Artifacts</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561620" data-raw-source="[Bring markdown comments to wiki pages](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1561620)">Bring markdown comments to wiki pages</a></td><td>Wiki</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574751" data-raw-source="[Mermaid support in Wiki](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574751)">Mermaid support in Wiki</a></td><td>Wiki</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580258" data-raw-source="[Rollup on Backlog](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580258)">Rollup on Backlog</a></td><td>Reporting</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580259" data-raw-source="[Sprint Burndown widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580259)">Sprint Burndown widget</a></td><td>Reporting</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366420" data-raw-source="[Pay for users once per user across organizations under the same Azure subscription](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366420)">Pay for users once per user across organizations under the same Azure subscription</a></td><td>Administration</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510705" data-raw-source="[Policy to control and restrict new Azure DevOps organizations](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510705)">Policy to control and restrict new Azure DevOps organizations</a></td><td>Administration</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1511602" data-raw-source="[Export list of all Azure DevOps users paid under an Azure subscription](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1511602)">Export list of all Azure DevOps users paid under an Azure subscription</a></td><td>Administration</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1562854" data-raw-source="[Improve the team management and team member management user experience in project settings](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1562854)">Improve the team management and team member management user experience in project settings</a></td><td>Administration</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366414" data-raw-source="[Updated Security & Org Settings pages](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366414)">Updated Security & Org Settings pages</a></td><td>Administration</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1565788" data-raw-source="[Streaming for Azure DevOps Auditing](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1565788)">Streaming for Azure DevOps Auditing</a></td><td>Administration</td><td>TBD</td></tr>
-        </tr>
-        <tr>
-            <td rowspan="6"><strong>2019 Q4</strong></td>
-            <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582456" data-raw-source="[Hide field based on group membership](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582456)">Hide field based on group membership</a></td><td>Boards</td><td>TBD</td>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582465" data-raw-source="[Full support for parent field on backlogs, boards, and queries](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1582465)">Full support for parent field on backlogs, boards, and queries</a></td><td>Boards</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1502833" data-raw-source="[Universal Packages feature updates](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1502833)">Universal Packages feature updates</a></td><td>Artifacts</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570281" data-raw-source="[Auditing for pipeline events](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570281)">Auditing for pipeline events</a></td><td>Pipelines</td><td>TBD</td>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574749" data-raw-source="[Page visits in Wiki](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1574749)">Page visits in Wiki</a></td><td>Wiki</td><td>TBD</td>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580261" data-raw-source="[Team-less Dashboards](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1580261)">Team-less Dashboards</a></td><td>Reporting</td><td>TBD</td>
-        </tr>
-        <tr>
-            <td rowspan="6"><strong>Future</strong></td>
-            <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138" data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Boards</td><td>TBD</td>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221139" data-raw-source="[A discussion-centric Work Item form](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221139)">A discussion-centric Work Item form</a></td><td>Boards</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221167" data-raw-source="[Deployment Groups easy configuration of Azure VMs](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221167)">Deployment Groups easy configuration of Azure VMs</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221174" data-raw-source="[Extensible Pool Providers](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221174)">Extensible Pool Providers</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221164" data-raw-source="[CC/BCC (carbon copy) recipient support for email notifications](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221164)">CC/BCC (carbon copy) recipient support for email notifications</a></td><td>Administration</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221165" data-raw-source="[Notification feed](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221165)">Notification feed</a></td><td>Administration</td><td>TBD</td>
-        </tr>
-     </tbody>
+<tr><td rowspan="3"><strong>2021 Q3</strong></td>
+    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924" data-raw-source="[Accessibility and UX Modernization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924)">Accessibility and UX Modernization</a></td><td>Boards</td><td>Future</td>   
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640 data-raw-source="[Azure DevOps Server Integration with GitHub.com](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640)">Azure DevOps Server Integration with GitHub.com</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859333 data-raw-source="[Support wild cards in path filters](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859333)">Support wild cards in path filters</a></td><td>Pipelines</td><td>Future</td>
+</tr>
+<tr><td rowspan="2"><strong>2021 Q4</strong></td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330 data-raw-source="[Automatically retry a task](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330)">Automatically retry a task</a></td><td>Pipelines</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Pipelines</td><td>Future</td>
+</tr>
+<tr><td rowspan="15"><strong>Future</strong></td>
+    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547" data-raw-source="[Support Azure Managed Identities](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547)">Support Azure Managed Identities</a></td><td>General</td><td>N/A</td>
+    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840548" data-raw-source="[Support Azure Service Principals](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840548)">Support Azure Service Principals</a></td><td>General</td><td>N/A</td>
+    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700" data-raw-source="[Conditional Access Policy support for device state](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700)">Conditional Access Policy support for device state</a></td><td>General</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678 data-raw-source="[Access events for PAT, SSH will be available in the Auditing Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678)">Access events for PAT, SSH will be available in the Auditing Log</a></td><td>General</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609307 data-raw-source="[Package promote task in Azure Pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609307)">Package promote task in Azure Pipelines</a></td><td>Artifacts</td><td>TBD</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297 data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td><td>Artifacts</td><td>TBD</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196 data-raw-source="[Preview attachments for word, excel, ppt, project, pdf from the work item](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196)">Preview attachments for word, excel, ppt, project, pdf from the work item</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942 data-raw-source="[Delivery Plans 2.0 - Dependency Tracking Visualization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942)">Delivery Plans 2.0 - Dependency Tracking Visualization</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638 data-raw-source="[Delivery Plans - Progress Roll-ups by Effort](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638)">Delivery Plans - Progress Roll-ups by Effort</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844639 data-raw-source="[Delivery Plans - Tags Color Styling](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844639)">Delivery Plans - Tags Color Styling</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193 data-raw-source="[Maintain backlog hierarchy when filters are applied](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193)">Maintain backlog hierarchy when filters are applied</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138 data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Boards</td><td>TBD</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343 data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343)">Support Flexible Orchestration mode in scale set agent pools</a></td><td>Pipelines</td><td>TBD</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876 data-raw-source="[Make file diff viewing easier in PR summary](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876)">Make file diff viewing easier in PR summary</a></td><td>Repos</td><td>Future</td> </tr>
+   </tr>
+    </tbody>
 </table>
 
-## Current features
+## Features in preview
 
-The features timeline lists significant features delivered to Azure DevOps Services and the corresponding version of Azure DevOps Server.
-Versions in the “Server” column are linked to the appropriate download location. You can also [view the build numbers for each version](#server-build-numbers). Versions in italics are planned for the future and subject to change.
+This list includes features that are currently in preview. The "Released" column reflects when the feature was released in public preview, the "Area" column reflects the area of the product the feature aligns with most, and the "Server" column reflects when it will be available in Azure DevOps Server on-premises, if applicable.
+
+<table>
+    <thead>
+        <tr>
+            <th>Released</th>
+            <th>Feature</th>
+            <th>Area</th>
+            <th>Server</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr><td rowspan="2"><strong>2021 Q1</strong></td>
+    <td><a href="https://devblogs.microsoft.com/devops/limit-user-visibility-and-collaboration-to-specific-projects/" data-raw-source="[Limit user visibility and collaboration for projects](https://devblogs.microsoft.com/devops/limit-user-visibility-and-collaboration-to-specific-projects/)">Limit user visibility and collaboration for projects</a></td><td>General</td><td>Future</td>
+     <tr><td><a href=https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview data-raw-source="[Analytics for consumption of parallel jobs](https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview)">Analytics for consumption of parallel jobs</a></td><td>Pipelines</td><td>Future</td>
+</tr>
+<tr><td rowspan="3"><strong>2021 Q2</strong></td>
+    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202" data-raw-source="[IPv6 conditional access policy support](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202)">IPv6 conditional access policy support</a></td><td>General</td><td>Future</td>
+    <tr><td><a href=https://devblogs.microsoft.com/devops/copy-dashboard-public-preview/ data-raw-source="[Copy Dashboard](https://devblogs.microsoft.com/devops/copy-dashboard-public-preview/)">Copy Dashboard</a></td><td>Reporting</td><td>Future</td></tr>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283 data-raw-source="[Improvements to YAML editor](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283)">Improvements to YAML editor</a></td><td>Pipelines</td><td>TBD</td>
+</tr>
+ </tbody>
+</table>
+
+## Released features
+
+The released features timeline lists significant features delivered to Azure DevOps Services and the corresponding version of Azure DevOps Server.
+Versions in the "Server" column are linked to the appropriate download location. 
+
+You can also [view the build numbers for each version](#azure-devops-server-build-numbers). Versions in italics are planned for the future and subject to change.
 
 <table>
     <thead>
@@ -125,148 +106,491 @@ Versions in the “Server” column are linked to the appropriate download locat
             <th>Server</th>
         </tr>
     </thead>
-    <tbody>
+<tr>
+    <td rowspan="10"><a href="2021/sprint-192-update.md" data-raw-source="[8 September 2021](2021/sprint-192-update.md)">8 September 2021</a></td>
+    <td>New YAML conditional expressions</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Support for wild cards in path filters</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Support for multiple statuses in Bitbucket</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Allow contributors to skip seeking PR comments prior to build validation</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Windows Server 2022 with Visual Studio 2022 is now available on Microsoft-hosted agents (preview)</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>General availability of macOS 11 Big Sur on Microsoft-hosted agents</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Removal of Ubuntu 16.04 image on Microsoft-hosted agents</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>New TFVC pages are generally available</td><td>Repos</td><td>Future</td></tr>
+    <td>Configure branch creators to not get "Manage permissions" on their branches</td><td>Repos</td><td>Future</td></tr>
+    <td>Prevent fork users from voting on their upstream PRs</td><td>Repos</td><td>Future</td></tr>
+    </tr>   
+    <td rowspan="3"><a href="2021/sprint-191-update.md" data-raw-source="[19 August 2021](2021/sprint-191-update.md)">19 August 2021</a></td>
+    <td>Improve web experience to better handle re-authentication requests</td><td>General</td><td>Future</td></tr>
+    <td>Improvements to Delivery Plans</td><td>Boards</td><td>Future</td></tr>
+    <td>Support for environment variables in Linux Scale Set agents</td><td>Pipelines</td><td>N/A</td></tr>
+    </tr>   
+    <td rowspan="5"><a href="2021/sprint-190-update.md" data-raw-source="[4 August 2021](2021/sprint-190-update.md)">29 July 2021</a></td>
+    <td>Display correct persona on commit links</td><td>Boards</td><td>Future</td></tr>
+    <td>Support queuing or serial deployments as an option in exclusive lock check</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Support for Quebec version of ServiceNow</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Change in .NET SDK preinstallation policy on Microsoft hosted Windows and macOS agents</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Changes to PublishBuildArtifacts and DownloadBuildArtifacts tasks</td><td>Pipelines</td><td>Future</td></tr>
+    </tr>    
+    <td rowspan="6"><a href="2021/sprint-188-update.md" data-raw-source="[17 June 2021](2021/sprint-188-update.md)">17 June 2021</a></td>
+    <td>Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy</td><td>General</td><td>Future</td></tr>
+    <td>Conditional access policy support for IPv6 traffic</td><td>General</td><td>Future</td></tr>
+    <td>Retain pipelines that are consumed in other pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Changes in the automatic creation of environments</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Remove Insights dialogue from Build Pipeline</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Updates to Team Foundation Version Control (TFVC) Windows Shell extension for Visual Studio 2019</td><td>Pipelines</td><td>Future</td></tr>
+    </tr>    
+    <td rowspan="7"><a href="2021/sprint-187-update.md" data-raw-source="[26 May 2021](2021/sprint-187-update.md)">26 May 2021</a></td>
+    <td>Delivery Plans 2.0 general availability</td><td>Board</td><td>Future</td></tr>
+    <td>New iteration capacity REST API</td><td>Board</td><td>Future</td></tr>
+    <td>Copy Dashboard is now available in public preview</td><td>Board</td><td>Future</td></tr>
+    <td>Change in .NET SDK preinstallation policy on Microsoft hosted Ubuntu agents</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Permissions and checks on variable groups and secure files</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Preview of templates support in YAML editors</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Ubuntu-16.04 will be removed from Microsoft-hosted pools in September 2021</td><td>Pipelines</td><td>N/A</td></tr>
+    </tr>
+    <td rowspan="4"><a href="2021/sprint-186-update.md" data-raw-source="[05 May 2021](2021/sprint-186-update.md)">05 May 2021</a></td>
+    <td>PAT lifecycle management API general availability</td><td>General</td><td>Future</td></tr>
+    <td>Fixed several issues with Delivery Plans 2.0</td><td>Board</td><td>Future</td></tr>
+    <td>Repos as a protected resource in YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Enable empty recycle bin for feeds</td><td>Artifacts</td><td>Future</td></tr>
+    </tr>
+    <td rowspan="2"><a href="2021/sprint-185-update.md" data-raw-source="[13 April 2021](2021/sprint-185-update.md)">13 April 2021</a></td>
+    <td>Delivery Plans 2.0 Dependency tracking cleanup</td><td>Boards</td><td>Future</td></tr>
+    </tr>
+    <tr><td>Display custom work item types in burndown widget</td><td>Reporting</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="7"><a href="2021/sprint-183-update.md" data-raw-source="[03 March 2021](2021/sprint-183-update.md)">03 March 2021</a></td>
+    <td>Limit user visibility and collaboration to specific projects</td><td>General</td><td>Future</td></tr>
+    </tr>
+    <tr><td>Hide Organization Settings</td><td>General</td><td>Future</td></tr>
+    <tr><td>Token management events now in Audit Logs</td><td>General</td><td>Future</td></tr>
+    <tr><td>PAT lifecycle management API (private preview)</td><td>General</td><td>Future</td></tr>
+    <tr><td>Approver details available in audit logs</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Change in process for obtaining free pipelines grant in public projects</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Changes to Azure Artifacts upstream behavior</td><td>Artifacts</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="5"><a href="2021/sprint-182-update.md" data-raw-source="[04 February 2021](2021/sprint-182-update.md)">04 February 2021</a></td>
+    <td>Limited people-picker search and tagging</td><td>General</td><td>Future</td>
+    </tr>
+    <tr><td>Removed items on work items hub</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Delivery Plans 2.0: Increase team limit to 15</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>.NET Core 3.0 to be removed from Linux and macOS hosted agents</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Group By Tags available in chart widgets</td><td>Reporting</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="4"><a href="2021/sprint-181-update.md" data-raw-source="[14 January 2021](2021/sprint-181-update.md)">14 January 2021</a></td>
+    <td>Delivery Plans: Rollup Information</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Delivery Plans: Condensed views</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>"uses" statement for pre-declaring resources</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Manual Validation for YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="10"><a href="2020/sprint-179-update.md" data-raw-source="[03 December 2020](2020/sprint-179-update.md)">03 December 2020</a></td>
+    <td>Single-click to toggle between inline and diff views</td><td>Repos</td><td>Future</td>
+    </tr>
+    <tr><td>Navigation to parent commits</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Preserve scroll position when resizing diff pane in PR files tab</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>New Test Plans page general availability</td><td>Test Plans</td><td>Future</td></tr>
+    <tr><td>Search for a commit on a mobile device</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Improved usage of space for new PR file diff mobile view</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Enhanced images in PR summary view</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Enhanced branch experience when creating a new PR</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Historical graph for agent pools (Preview)</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>ServiceNow change management integration with YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="4"><a href="2020/sprint-178-update.md" data-raw-source="[12 November 2020](2020/sprint-178-update.md)">12 November 2020</a></td>
+    <td>Removed items on the Work Items page</td><td>Boards</td><td>2020.1</td>
+    </tr>
+    <tr><td>Delivery Plans (Preview)</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Improve YAML conversion in the classic build designer</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>New Test Plans page general availability</td><td>Test Plans</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="4"><a href="2020/sprint-177-update.md" data-raw-source="[22 October 2020](2020/sprint-177-update.md)">22 October 2020</a></td>
+    <td>Removing "Assigned To" rule on Bug work item type</td><td>Boards</td><td>2020.1</td>
+    </tr>
+    <tr><td>A batch of improvements to the Pull Request experience</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Node 14 in the Azure Pipelines agent</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Save an unhealthy agent for investigation in scale set agents</td><td>Pipelines</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="5"><a href="2020/sprint-176-update.md" data-raw-source="[01 October 2020](2020/sprint-176-update.md)">01 October 2020</a></td>
+    <td>Customize work item state when pull request is merged</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Parent field on the task board</td><td>Boards</td><td>2020.1</td></tr>
+    <tr><td>Org-level setting for default branch</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Add a new auth scope for contributing PR comments</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Configure draft PR validation for GitHub repositories</td><td>Pipelines</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="8"><a href="2020/sprint-175-update.md" data-raw-source="[10 September 2020](2020/sprint-175-update.md)">10 September 2020</a></td>
+    <td>Allow stakeholders to move work items across board columns</td><td>Boards</td><td>2020.1</td>
+    </tr>
+    <tr><td>Link your work item to builds in another project</td><td>Boards</td><td>2020.1</td></tr>
+    <tr><td>Editing description (help text) on system fields</td><td>Boards</td><td>2020.1</td></tr>
+    <tr><td>General availability of scale-set agents</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Run this job next</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Template expressions allowed in YAML resources block</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Control over automated task updates from Marketplace</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>The Test and Feedback extension is now available in the Microsoft Edge store</td><td>Test Plans</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="13"><a href="2020/sprint-174-update.md" data-raw-source="[24 August 2020](2020/sprint-174-update.md)">24 August 2020</a></td>
+    <td>System work item types on backlogs and boards</td><td>Boards</td><td>2020.1</td>
+    </tr>
+    <tr><td>Audit logging event</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Azure Boards GitHub app repo limit raised</td><td>Boards</td><td>2020.1</td></tr>
+    <tr><td>Customize work item state when pull request is merged</td><td>Boards</td><td>2020.1</td></tr>
+    <tr><td>Pipelines images announcements</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Agent log uploads improved</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Optionally mount container volumes read-only</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Fine-grained control over container start/stop</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Unzip task bundles for each step</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Improve release security by restricting scope of access tokens</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>YAML preview API enhancements</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Configure upstream sources for Universal Packages</td><td>Artifacts</td><td>Future</td></tr>
+    <tr><td>Update Package Version REST API now available for Maven packages</td><td>Artifacts</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="5"><a href="2020/sprint-173-update.md" data-raw-source="[03 August 2020](2020/sprint-173-update.md)">03 August 2020</a></td>
+    <td>Allow stakeholders to drag and drop work items</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Default branch name preference</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Updates to Mac OS 10.14 (Mojave) image </td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>[Feedback] Git Draft Pull Requests should not trigger the pipeline</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Multi-repo triggers for Azure Repos</td><td>Pipelines</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="9"><a href="2020/sprint-172-update.md" data-raw-source="[10 July 2020](2020/sprint-172-update.md)">10 July 2020</a></td>
+    <td>State transition restriction rules</td><td>Boards</td><td>2020.1</td>
+    </tr>
+    <tr><td>Copy work item to copy children</td><td>Boards</td><td>2020.1</td></tr>
+    <tr><td>Improved rules for activated and resolved fields</td><td>Boards</td><td>2020.1</td></tr>
+    <tr><td>System work item types on backlogs and boards (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Exclusive deployment lock policy</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Stages filters for pipeline resource triggers</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Generic webhook based triggers for YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>YAML resource trigger issues support and traceability</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Ability to create org-scoped feeds from UI</td><td>Artifacts</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="5"><a href="2020/sprint-171-update.md" data-raw-source="[18 June 2020](2020/sprint-171-update.md)">18 June 2020</a></td>
+        <td>Restrict new user invitations from Project and Team Administrators</td><td>General</td><td>2020.1</td>
+    </tr>
+    <tr><td>State transition restriction rules (private preview)</td><td>Boards</td><td>TBD</td></tr>
+    <tr><td>Tag filter support for pipeline resources</td><td>Pipelines</td><td>2020.1</td></tr>
+    <tr><td>Additional agent platform: ARM64</td><td>Pipelines</td><td>2020.1</td></tr>
+    <tr><td>Control which tasks are allowed in pipelines</td><td>Pipelines</td><td>2020.1</td></tr>
+    <tr>
+    <td rowspan="8"><a href="2020/sprint-170-update.md" data-raw-source="[28 May 2020](2020/sprint-170-update.md)">01 June 2020</a></td>
+        <td>Add "Parent Work Item" filter to the task board and sprint backlog</td><td>Boards</td><td>2020</td>    
+        </tr>
+        <tr><td>Improve error handling experience –– required fields on Bug/Task</td><td>Boards</td><td>N/A</td></tr>
+        <tr><td>Preview of scale set agents</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Github packages support in YAML pipelines</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Ubuntu 20.04 in preview for Azure Pipelines hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Notifications for disabled upstream sources</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>License expressions and embedded licenses</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Lightweight authentication tasks</td><td>Artifacts</td><td>2020</td></tr>
+    <tr>
+        <td rowspan="6"><a href="2020/sprint-169-update.md" data-raw-source="[11 May 2020](2020/sprint-169-update.md)">11 May 2020</a></td>
+        <td>Pipelines YAML CD features now generally available</td><td>Pipelines</td><td>2020</td>
+        </tr>
+        <tr><td>Service connections new UI as default experience</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Role-based access for service connections</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Showing associated CD pipeline info in CI pipeline</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Cross-project sharing of service connections is now public</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Pipeline resource version picker in the create run dialogue</td><td>Pipelines</td><td>2020</td></tr>
+    </tr>  
+    <tr>
+        <td rowspan="9"><a href="2020/sprint-168-update.md" data-raw-source="[4 May 2020](2020/sprint-168-update.md)">4 May 2020</a></td>
+        <td>Azure DevOps now allows team admin(s) to create subscriptions from MS Teams & Slack</td><td>General</td><td>N/A</td>
+        </tr>
+        <tr><td>MS Teams & Slack notifications for Repos events</td><td>General</td><td>2020.1</td></tr>
+        <tr><td>Add attachments while creating a pull request</td><td>Repos</td><td>2020.1</td></tr>
+        <tr><td>New web platform conversion - Team Foundation Version Control Hubs</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Limit build service repos scope access</td><td>Pipeline</td><td>N/A</td></tr>
+        <tr><td>Run conditional job depending on variables from prior stage</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Getting details at runtime about multiple repositories</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Multi stage pipelines GA</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Configure Deployment Strategies from Azure portal</td><td>Pipelines</td><td>N/A</td>
+    </tr>    
+       <tr>
+            <td rowspan="10"><a href="2020/sprint-167-update.md" data-raw-source="[13 April 2020](2020/sprint-167-update.md)">13 April 2020</a></td>
+            <td>Support for Team Admins to create subscriptions for messaging apps in Slack and Teams</td></td><td>General</td><td>2020</td>
+        </tr>
+        <tr><td>Multi tenant support for Azure Boards, Repos and Pipelines app in Microsoft Teams</td></td><td>General</td><td>2020</td></tr>
+        <tr><td>Sync GitHub Issues to Azure DevOps Work Items</td><td>Boards</td><td>2019</td></tr>
+        <tr><td>Improved PR actionability</td><td>Repos</td><td>2020.1</td></tr>
+        <tr><td>Improved comment-related filtering within pull requests</td><td>Repos</td><td>2020.1</td></tr>
+        <tr><td>Add built-in checks & extensibility using marketplace extensions</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Approval notification</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Accessibility improvements</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Auditing events are now available</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>npm performance improvements</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr>
+            <td rowspan="4"><a href="2020/sprint-166-update.md" data-raw-source="[9 March 2020](2020/sprint-166-update.md)">16 March 2020</a></td>
+            <td>Pay for users once across multiple organizations</td><td>General</td><td>2020</td>
+        </tr>
+        <tr><td>Assign a new owner to your orphaned organization</td><td>General</td><td>2020</td></tr>
+        <tr><td>Runtime parameters</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Agent diagnostics</td><td>Pipelines</td><td>2020</td></tr>
+        <tr>
+        <tr>
+            <td rowspan="5"><a href="2020/sprint-165-update.md" data-raw-source="[17 February 2020](2020/sprint-163-update.md)">17 February 2020</a></td>
+            <td>Disable Request Access policy</td><td>General</td><td>Future</td>
+        </tr>
+        <tr><td>Preview fully parsed YAML document without running the pipeline</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Disable automatic agents upgrades at a pool level</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Azure File Copy Task now supports AzCopy V10</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Custom notification subscription for draft pull requests</td><td>Repos</td><td>2020</td></tr>
+        <tr>
+            <td rowspan="5"><a href="2020/sprint-164-update.md" data-raw-source="[28 January 2020](2020/sprint-164-update.md)">28 January 2020</a></td>
+            <td>Restrict organization creation via Azure AD tenant policy</td><td>General</td><td>Future</td>
+        </tr>
+        <tr><td>Read-only variables</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Support for output variables in deployment job</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Avoid rollback of critical changes</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Removing older images in Azure Pipelines hosted pools</td><td>Pipelines</td><td>Future</td></tr>
+        <tr>
+            <td rowspan="7"><a href="2020/sprint-163-update.md" data-raw-source="[13 January 2020](2020/sprint-163-update.md)">13 January 2020</a></td>
+            <td>Get compact and organized notifications in the Microsoft Teams app from Azure Boards, Azure Pipelines and Azure Repos</td><td>General</td><td>N/A</td>
+        </tr> 
+        <tr><td>Delete bulk subscriptions created in a Microsoft Teams or Slack channel</td><td>General</td><td>N/A</td></tr>
+        <tr><td>Use pipeline decorators to inject steps automatically in a deployment job</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Allow repository references to other Azure Repos organizations</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Step targeting and command isolation</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Builds and releases auditing</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Enhancements to evaluate artifacts checks policy in pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr>
+            <td rowspan="12"><a href="2019/sprint-162-update.md" data-raw-source="[16 December 2019](2019/sprint-162-update.md)">16 December 2019</a></td>
+            <td>New web platform conversion landing pages</td><td>Repos</td><td>2020</td>
+        </tr> 
+        <tr><td>Support for Kotlin language</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Updated multi-stage pipelines UI</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>VSTest TestResultsDirectory option is available in the task UI</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Use extends keyword in pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Markdown support in automated test error messages</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Collect automatic and user-specified metadata from pipeline</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Updates to service connections UI</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>VM deployments with Environments</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Skipping stages in a YAML pipeline</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Inline sprint burndown thumbnail</td><td>Reporting</td><td>2020</td></tr>
+        <tr><td>Create a dashboard without a team</td><td>Reporting</td><td>2020</td></tr>
+        <tr>
+            <td rowspan="8"><a href="2019/sprint-161-update.md" data-raw-source="[2 December 2019](2019/sprint-161-update.md)">2 December 2019</a></td>
+            <td>Use publish profile to deploy Azure WebApps for Windows from the Deployment Center</td><td>General</td><td>2020</td>
+        </tr>
+        <tr><td>Checkout multiple repositories in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Use GitHub Actions to trigger a run in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updated ServiceNow integration with Azure Pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Set VSTest tasks to fail if a minimum number of test are not run</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>UCS-4 support for Python 2.7</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Create bulk subscriptions in Azure Pipelines app for Slack and Microsoft Teams</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Create bulk subscriptions in Azure Repos app for Slack and Microsoft Teams</td><td>Repos</td><td>N/A</td></tr>
+        <tr>
+            <td rowspan="23"><a href="2019/sprint-160-update.md" data-raw-source="[4 November 2019](2019/sprint-160-update.md)">4 November 2019</a></td>
+            <td>Cross-repo branch policy administration</td><td>Repos</td><td>2020</td>
+        </tr>
+        <tr><td>Multi-stage pipelines UX</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Orchestrate canary deployment strategy on environment for Kubernetes</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Approval policies for YAML pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>ACR as a first-class pipeline resource</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Pipeline resource meta-data as predefined variables</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Traceability for pipelines and ACR resources</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Simplified resource authorization in YAML pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Improve pipeline security by restricting the scope of access tokens</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Evaluate artifact check</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Markdown support in automated test error messages</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Diagnosing cron schedules in YAML</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Updates to the ARM template deployment task</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Project level security for service connections</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Ubuntu 18.04 pool</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Service Mesh Interface based canary deployments in KubernetesManifest task</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>ReviewApp in Environment</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Updated Connect to feed experience</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Public feeds are now generally available with upstream support</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Create project-scoped feeds from the portal</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>A Sprint Burndown widget with everything you've been asking for</td><td>Reporting</td><td>2020</td></tr>
+        <tr><td>Synchronous scroll for editing wiki pages</td><td>Wiki</td><td>2020</td></tr>
+        <tr><td>Page visits for wiki pages</td><td>Wiki</td><td>2020</td></tr>
+        <tr>
+            <td rowspan="17"><a href="2019/sprint-159-update.md" data-raw-source="[14 October 2019](2019/sprint-159-update.md)">14 October 2019</a></td>
+            <td>Azure Boards app for Microsoft Teams</td><td>Boards</td><td>N/A</td>
+        </tr>
+        <tr><td>Import work items from a CSV file</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Add parent field to work item cards</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Add parent field to backlog and queries</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Quick navigation in Azure Boards search</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Azure Repos app for Microsoft Teams</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>Mark files as reviewed in a pull request</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>New Web UI for Azure Repos landing pages (preview)</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Proximity support for code search</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>Deploy Azure Resource Manager (ARM) to subscription and management group level</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>CD capabilities for your multi-stage YAML pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Bitbucket integration and other improvements in getting started with pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Support for PowerShell scripts in Azure CLI task</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Search for wiki pages across accounts</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>Access recently visited wiki pages</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>Instant search for wiki</td><td>Wiki</td><td>Future</td></tr>
+        <tr>
+            <td rowspan="21"><a href="2019/sprint-158-update.md" data-raw-source="[23 September 2019](2019/sprint-1578-update.md)">23 September 2019</a></td>
+            <td>User assignment-based billing and default access level</td><td>General</td><td>N/A</td>
+        </tr>
+        <tr><td>New UI to manage organization and project permissions</td><td>General</td><td>2020</td></tr>
+        <tr><td>New rule to hide fields in a work item form based on condition</td><td>Boards</td><td>2020</td></tr>  
+        <tr><td>Custom work item notification settings</td><td>Boards</td><td>2020</td></tr>  
+        <tr><td>Link work items to deployments</td><td>Boards</td><td>2020</td></tr>  
+        <tr><td>Use service account based authentication to connect to AKS</td><td>Repos</td><td>2020</td></tr>  
+        <tr><td>Preview Markdown files in pull request Side-by-side diff</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Build policy expiration for manual builds</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Retry failed stages</td><td>Pipelines</td><td>2020</td></tr>  
+        <tr><td>Enhancements to approvals in YAML pipelines</td><td>Pipelines</td><td>2020</td></tr>  
+        <tr><td>Container structure testing support in Azure Pipelines</td><td>Pipelines</td><td>2020</td></tr>  
+        <tr><td>Flaky bug management and resolution</td><td>Pipelines</td><td>2020</td></tr>  
+        <tr><td>Enhancements to Azure Pipelines app for Slack and Microsoft Teams</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>  
+        <tr><td>Open Policy Agent installer task</td><td>Pipelines</td><td>2020</td></tr>  
+        <tr><td>Pipeline decorators for release pipelines</td><td>Pipelines</td><td>2020</td></tr>  
+        <tr><td>New Test Plans page</td><td>Test Plans</td><td>2020</td></tr>  
+        <tr><td>Support for custom fields in Rollup columns</td><td>Reporting</td><td>2020</td></tr> 
+        <tr><td>Inline sprint burndown using story points</td><td>Reporting</td><td>2020</td></tr> 
+        <tr><td>Short and readable Wiki page URLs</td><td>Wiki</td><td>2020</td></tr> 
+        <tr><td>Mermaid diagram support in wiki</td><td>Wiki</td><td>Future</td></tr>   
         <tr>
             <td rowspan="20"><a href="2019/sprint-157-update.md" data-raw-source="[3 September 2019](2019/sprint-157-update.md)">3 September 2019</a></td>
             <td>Get personalized notifications with @mention support in Slack apps</td><td>General</td><td>N/A</td>
-         </tr>
-        <tr><td>Download a list of organizations to a directory</td><td>General</td><td>Future</td></tr>      
-        <tr><td>Track the progress of parent items using Rollup on Boards backlog</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Taskboard live updates</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Policy to block files with specified patterns</td><td>Repos</td><td>Future</td></tr>
-        <tr><td>Resolve work items via commits using key words</td><td>Repos</td><td>Future</td></tr>
-        <tr><td>Granularity for automatic reviewers</td><td>Repos</td><td>Future</td></tr>
-        <tr><td>Get latest Universal Package with Semantic Versioning (SemVer) wildcard</td><td>Artifacts</td><td>Future</td></tr>
-        <tr><td>Azure Artifacts feeds in the Visual Studio Package Manager</td><td>Artifacts</td><td>Future</td></tr>
-        <tr><td>Create Azure Pipelines from VSCode</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>New task for configuring Azure App Service app settings</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Azure App Service now supports Swap with preview</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>YAML templates for Python and .NET Functions apps</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Service hooks for YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Enhancement to Azure Pipelines app for Jira</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>GitHub release task enhancements</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Stage level filter for Azure Container Registry and Docker Hub artifacts</td><td>Pipelines</td><td>Future</td></tr>            
-        <tr><td>Sovereign cloud support in Kubernetes service connection</td><td>Pipelines</td><td>Future</td></tr>
+        </tr>
+        <tr><td>Download a list of organizations to a directory</td><td>General</td><td>2020</td></tr>      
+        <tr><td>Track the progress of parent items using Rollup on Boards backlog</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Taskboard live updates</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Policy to block files with specified patterns</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Resolve work items via commits using key words</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Granularity for automatic reviewers</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Get latest Universal Package with Semantic Versioning (SemVer) wildcard</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Azure Artifacts feeds in the Visual Studio Package Manager</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Create Azure Pipelines from VSCode</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>New task for configuring Azure App Service app settings</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Azure App Service now supports Swap with preview</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>YAML templates for Python and .NET Functions apps</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Service hooks for YAML pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Enhancement to Azure Pipelines app for Jira</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>GitHub release task enhancements</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Stage level filter for Azure Container Registry and Docker Hub artifacts</td><td>Pipelines</td><td>2020</td></tr>            
+        <tr><td>Sovereign cloud support in Kubernetes service connection</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Lead and Cycle Time widgets advanced filtering</td><td>Reporting</td><td>Future</td></tr>
+        <tr><td>Lead and Cycle Time widgets advanced filtering</td><td>Reporting</td><td>2020</td></tr>
         <tr>
             <td rowspan="27"><a href="2019/sprint-156-update.md" data-raw-source="[12 August 2019](2019/sprint-156-update.md)">12 August 2019</a></td>
-            <td>New UI to request access to an organization</td><td>General</td><td>Future</td>
-         </tr>
-        <tr><td>Read-only and required rules for group membership</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Customize system picklist values</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>New work item URL parameter</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Mention people, work items and PRs in text fields</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Reactions on discussion comments</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Pin Azure Boards reports to the dashboard</td><td>Boards</td><td>Future</td></tr>
+            <td>New UI to request access to an organization</td><td>General</td><td>2020</td>
+        </tr>
+        <tr><td>Read-only and required rules for group membership</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Customize system picklist values</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>New work item URL parameter</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Mention people, work items and PRs in text fields</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Reactions on discussion comments</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Pin Azure Boards reports to the dashboard</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Azure Repos app for Slack</td><td>Repos</td><td>N/A</td></tr>
-        <tr><td>Configure upstreams in different organizations within an AAD tenant</td><td>Artifacts</td><td>Future</td></tr>
-        <tr><td>Use Python Credential Provider to authenticate pip and twine with Azure Artifacts feeds</td><td>Artifacts</td><td>Future</td></tr>
-        <tr><td>Pipelines caching improvements</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Increase in gates timeout limit and frequency</td><td>Pipelines</td><td>Future</td></tr>    
-        <tr><td>New build image template for Dockerfile</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Arguments input in Docker Compose task</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Fix warning in large test attachments</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Configure upstreams in different organizations within an AAD tenant</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Use Python Credential Provider to authenticate pip and twine with Azure Artifacts feeds</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Pipelines caching improvements</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Increase in gates timeout limit and frequency</td><td>Pipelines</td><td>2020</td></tr>    
+        <tr><td>New build image template for Dockerfile</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Arguments input in Docker Compose task</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Fix warning in large test attachments</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Support for Bitbucket repositories in Deployment Center for AKS and Web App for containers</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Linux Web App support for Java workflows in Azure DevOps Projects</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Pipeline variable group and variable management commands</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Run pipeline for a PR branch</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Skip the first pipeline run</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Service endpoint command enhancement</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Test Plan progress report (public preview)</td><td>Test Plans</td><td>Future</td></tr>
-        <tr><td>Enhancement to Test Plans page</td><td>Test Plans</td><td>Future</td></tr>
-        <tr><td>Improvement to the Query Results widget</td><td>Reporting</td><td>Future</td></tr>
-        <tr><td>Comments in wiki pages</td><td>Wiki</td><td>Future</td></tr>
-        <tr><td>Hide folders and files starting with “.” in wiki tree</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>Support for Bitbucket repositories in Deployment Center for AKS and Web App for containers</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Linux Web App support for Java workflows in Azure DevOps Projects</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Pipeline variable group and variable management commands</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Run pipeline for a PR branch</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Skip the first pipeline run</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Service endpoint command enhancement</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Test Plan progress report (public preview)</td><td>Test Plans</td><td>2020</td></tr>
+        <tr><td>Enhancement to Test Plans page</td><td>Test Plans</td><td>2020</td></tr>
+        <tr><td>Improvement to the Query Results widget</td><td>Reporting</td><td>2020</td></tr>
+        <tr><td>Comments in wiki pages</td><td>Wiki</td><td>2020</td></tr>
+        <tr><td>Hide folders and files starting with "." in wiki tree</td><td>Wiki</td><td>2020</td></tr>
         <tr>
             <td rowspan="29"><a href="2019/sprint-155-update.md" data-raw-source="[22 July 2019](2019/sprint-155-update.md)">22 July 2019</a></td>
-            <td>Invite GitHub collaborators into Azure DevOps</td><td>General</td><td>Future</td>
-         </tr>
-        <tr><td>Get insights into your team’s health with three new Azure Boards Analytics reports</td><td>Boards</td><td>Future</td></tr>
+            <td>Invite GitHub collaborators into Azure DevOps</td><td>General</td><td>2020</td>
+        </tr>
+        <tr><td>Get insights into your team's health with three new Azure Boards Analytics reports</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Azure Boards app for Slack</td><td>Boards</td><td>N/A</td></tr>
-        <tr><td>Customize taskboard columns</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Toggle to show or hide completed child work items on the backlog</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Search for boards, backlogs, queries and sprint from the instant search box</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Most recent tags displayed when tagging a work item</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Improved code search filtering options</td><td>Boards</td><td>Future</td></tr>
-         <tr><td>Share your packages publicly with public feeds (preview)</td><td>Artifacts</td><td>Future</td></tr>
-        <tr><td>Code coverage metrics and branch policy for pull requests</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Filter comment notifications from pull requests</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Service hooks for pull request comments</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Approvals in multi-stage YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Manage pipeline variables in YAML editor</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>New predefined variables in YAML pipeline</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Cancel stage in a multi-stage YAML pipeline run</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Show correct pool information on each job</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Link work items with multi-stage pipelines</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>CI triggers for new branches</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Pipeline caching (public preview)</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Single hosted pool</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>kustomize and kompose as bake options in KubernetesManifest task</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Support for cluster admin credentials in HelmDeploy task</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>In-product support for flaky test management</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Improvements to the Deployment Center for WebApp in the Azure Portal</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Enhancements to DevOps Project for virtual machine</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Terraform integration with Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Integration with Google Analytics</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Customize taskboard columns</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Toggle to show or hide completed child work items on the backlog</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Search for boards, backlogs, queries, and sprint from the instant search box</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Most recent tags displayed when tagging a work item</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Improved code search filtering options</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Share your packages publicly with public feeds (preview)</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Code coverage metrics and branch policy for pull requests</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Filter comment notifications from pull requests</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Service hooks for pull request comments</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Approvals in multi-stage YAML pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Manage pipeline variables in YAML editor</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>New predefined variables in YAML pipeline</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Cancel stage in a multi-stage YAML pipeline run</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Show correct pool information on each job</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Link work items with multi-stage pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>CI triggers for new branches</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Pipeline caching (public preview)</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Single hosted pool</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>kustomize and kompose as bake options in KubernetesManifest task</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Support for cluster admin credentials in HelmDeploy task</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>In-product support for flaky test management</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Improvements to the Deployment Center for WebApp in the Azure portal</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Enhancements to DevOps Project for virtual machine</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Terraform integration with Azure Pipelines</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Integration with Google Analytics</td><td>Pipelines</td><td>2020</td></tr>
         <tr>
             <td rowspan="28"><a href="2019/sprint-154-update.md" data-raw-source="[1 July 2019](2019/sprint-154-update.md)">1 July 2019</a></td>
-            <td>Azure DevOps CLI general availability</td><td>General</td><td>N/A</td>
-         </tr>
-        <tr><td>Work item live reload</td><td>General</td><td>Future</td></tr>
-        <tr><td>Manage iteration and area paths from the command line</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Work item parent column as column option</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Instant search for work items</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Search for a work item as you type</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Change the process used by a project</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Hide custom fields from layout</td><td>Boards</td><td>Future</td></tr>
+            <td>Azure DevOps CLI general availability</td><td>General</td><td>2020</td>
+        </tr>
+        <tr><td>Work item live reload</td><td>General</td><td>2020</td></tr>
+        <tr><td>Manage iteration and area paths from the command line</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Work item parent column as column option</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Instant search for work items</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Search for a work item as you type</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Change the process used by a project</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Hide custom fields from layout</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Azure Pipelines app for Jira</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Improvements to the Azure Pipelines app for Slack</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Add a GitHub release as an artifact source</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Updated Agent Pool interface in organization settings</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Add a GitHub release as an artifact source</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Updated Agent Pool interface in organization settings</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Single hosted pool</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Deployments in YAML pipeline</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Control variables that can be overridden at queue time</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Optimizely integration</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Support for large test attachments</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Deployments in YAML pipeline</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Control variables that can be overridden at queue time</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Optimizely integration</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Support for large test attachments</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Pay for additional pipelines from the Azure DevOps portal</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Approve releases directly from Releases hub</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Azure Kubernetes Service Cluster link in Kubernetes environments resource view</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Release folder filters in notification subscriptions</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Approve releases directly from Releases hub</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Azure Kubernetes Service Cluster link in Kubernetes environments resource view</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Release folder filters in notification subscriptions</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Deploy external Git repositories to Azure Kubernetes Services (AKS)</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Support for BitBucket repositories in DevOps Projects</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Support for Bitbucket repositories in DevOps Projects</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Select a Dockerfile in deployment center for AKS and WebApp Containers</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>New Test Plan page public preview</td><td>Test Plans</td><td>Future</td></tr>
-        <tr><td>Auditing for Azure Repos events</td><td>Repos</td><td>Future</td></tr>
-        <tr><td>Rich editing for code wiki pages</td><td>Wiki</td><td>Future</td></tr>
-        <tr><td>Create and embed work items from a wiki page</td><td>Wiki</td><td>Future</td></tr>
+        <tr><td>New Test Plan page public preview</td><td>Test Plans</td><td>2020</td></tr>
+        <tr><td>Auditing for Azure Repos events</td><td>Repos</td><td>2020</td></tr>
+        <tr><td>Rich editing for code wiki pages</td><td>Wiki</td><td>2020</td></tr>
+        <tr><td>Create and embed work items from a wiki page</td><td>Wiki</td><td>2020</td></tr>
         <tr>
         <tr>
             <td rowspan="16"><a href="2019/sprint-153-update.md" data-raw-source="[10 June 2019](2019/sprint-153-update.md)">10 June 2019</a></td>
             <td>Changes to Azure DevOps IP address ranges</td><td>General</td><td>N/A</td>
-         </tr>
+        </tr>
         <tr><td>Auditing public preview</td><td>General</td><td>N/A</td></tr>
         <tr><td>Manage security groups and permissions from the command line</td><td>General</td><td>N/A</td></tr>
         <tr><td>Quickly view linked GitHub activity from the Kanban board</td><td>Boards</td><td>2019.1</td></tr>
-        <tr><td>Copy work items with attachments and links</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Preview text files on work item</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>See all teams in Boards, Backlogs, and Sprints pickers</td><td>Boards</td><td>Future</td></tr>
+        <tr><td>Copy work items with attachments and links</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Preview text files on work item</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>See all teams in Boards, Backlogs, and Sprints pickers</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>A simpler way to work with artifacts</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>A simpler way to work with artifacts</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Use cron syntax to specify schedules in a YAML file</td><td>Pipelines</td><td>2019.1</td></tr>
-        <tr><td>Updates to multi-stage pipelines public preview</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updates to multi-stage pipelines public preview</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Go get command support in Azure Repos</td><td>Repos</td><td>2019.1</td></tr>
-        <tr><td>Filtered downloads for Universal Packages</td><td>Artifacts</td><td>Future</td></tr>
-        <tr><td>Package Search</td><td>Artifacts</td><td>Future</td></tr>
+        <tr><td>Filtered downloads for Universal Packages</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Package Search</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>Support for queries with tree of work items</td><td>Wiki</td><td>2019</td></tr>
         <tr><td>Top publisher certification program</td><td>Marketplace</td><td>N/A</td></tr>
         <tr>
         <tr>
             <td rowspan="15"><a href="2019/sprint-152-update.md" data-raw-source="[20 May 2019](2019/sprint-152-update.md)">20 May 2019</a></td>
             <td>Manage extensions from the command line</td><td>General</td><td>N/A</td>
-         </tr>
+        </tr>
         <tr><td>Invoke REST APIs from the command line</td><td>General</td><td>N/A</td></tr>
         <tr><td>Manage users from the command line</td><td>General</td><td>N/A</td></tr>
         <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
@@ -287,7 +611,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>Signing into Azure DevOps using your GitHub credentials</td><td>General</td><td>N/A</td>
         </tr>
         <tr><td>Kubernetes integration for Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Multi-stage YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Multi-stage YAML pipelines</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Pay-per-GB</td><td>Artifacts</td><td>N/A</td></tr>
         <tr><td>General availability of Python and Universal Packages</td><td>Artifacts</td><td>Future</td></tr>
         <tr><td>A simpler way to buy Azure DevOps</td><td>Administration</td><td>N/A</td></tr>
@@ -306,7 +630,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>Dark theme general availability</td><td>General</td><td>2019.1</td>
         </tr>
         <tr><td>Query work based on Azure Active Directory groups</td><td>Boards</td><td>Future</td></tr>
-        <tr><td>Share you team’s board using a badge</td><td>Boards</td><td>2019.1</td></tr>
+        <tr><td>Share you team's board using a badge</td><td>Boards</td><td>2019.1</td></tr>
         <tr><td>Query for work relative to the start of the day, week, month, or year</td><td>Boards</td><td>2019.1</td></tr>
         <tr><td>Export query results to a CSV file</td><td>Boards</td><td>2019.1</td></tr>
         <tr><td>New merge types for completing pull requests</td><td>Repos</td><td>2019.1</td></tr>
@@ -354,7 +678,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>Azure DevOps CLI extension</td><td>General</td><td>N/A</td>
         </tr>
         <tr><td>Navigate to Azure Boards work items directly from GitHub pull request mentions</td><td>Boards</td><td>2019.1</td></tr>
-        <tr><td>Deploy your local Git web apps for Windows, Linux and Containers to Azure</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Deploy your local Git web apps for Windows, Linux, and Containers to Azure</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>New Azure subscription option in Kubernetes service connection</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Notifications on failure of a release creation request</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Azure Pipelines app for Slack</td><td>Pipelines</td><td>N/A</td></tr>
@@ -400,7 +724,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Display status for each pipeline job in GitHub Checks</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Default authorization for YAML resources in GitHub</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Service containers for YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Work items linked to GitHub commits in Release Summary</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Work items linked to GitHub commit in Release Summary</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>New Azure App Service tasks optimized for YAML</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Azure AD authentication support for Azure SQL task</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Grafana annotations service hook</td><td>Pipelines</td><td>2019.1</td></tr>
@@ -410,11 +734,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Java long-term support (LTS) on Microsoft hosted agents</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>YAML support for Bitbucket Cloud pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Avoid triggering multiple CI builds for pull requests</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Change build numbers, upload and download artifacts in forked repository builds</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Change build numbers, upload, and download artifacts in forked repository builds</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>New option in &#39;Publish Test Results&#39; task to fail build on failed tests</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Updates to the Azure Portal for creating an Azure DevOps project</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Use the Azure Portal to setup and deploy to a CosmosDB database</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Setup builds and release pipelines for Functions in Azure Portal</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updates to the Azure portal for creating an Azure DevOps project</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Use the Azure portal to set up and deploy to a CosmosDB database</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Setup builds and release pipelines for Functions in Azure portal</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Package usage stats</td><td>Artifacts</td><td>2019.1</td></tr>
         <tr><td>Monospaced font for Wiki markdown editor</td><td>Wiki</td><td>2019.1</td></tr>
         <tr><td>Bold Wiki page titles</td><td>Wiki</td><td>Future</td></tr>
@@ -426,9 +750,9 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>Link GitHub commits and pull requests to Azure Boards work items</td><td>Boards</td><td>2019</td>
         </tr>
         <tr><td>Acquire Azure Boards as a service</td><td>Boards</td><td>N/A</td></tr>
-        <tr><td>Rerun expired build for auto-complete pull requests</td><td>Repos</td><td>2019.1</td></tr>
+        <tr><td>Rerun expired build for autocomplete pull requests</td><td>Repos</td><td>2019.1</td></tr>
         <tr><td>Manage GitHub releases using pipelines</td><td>Pipelines</td><td>2019.1</td></tr>
-        <tr><td>VS Code extension for YAML based pipelines</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>VS Code extension for YAML-based pipelines</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Web editor with IntelliSense for YAML pipelines</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>ServiceNow Change Management integration</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Links to specific lines in a build log</td><td>Pipelines</td><td>2019.1</td></tr>
@@ -446,7 +770,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Improved branch picker</td><td>Repos</td><td>2019</td></tr>
         <tr><td>Draft pull requests</td><td>Repos</td><td>2019.1</td></tr>
         <tr><td>Trigger YAML pipelines with tags</td><td>Pipelines</td><td>2019.1</td></tr>
-        <tr><td>Setting to auto cancel an existing pipeline when a pull requests is updated</td><td>Pipelines</td><td>2019.1</td></tr>
+        <tr><td>Setting to auto cancel an existing pipeline when a pull request is updated</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Declare container resources inline</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Changes to default permissions for new projects</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Deploy to failed targets in a Deployment Group</td><td>Pipelines</td><td>2019.1</td></tr>
@@ -492,7 +816,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Support AAD users in MSA accounts</td><td>Administration</td><td>N/A</td></tr>
         <tr>
             <td rowspan="10"><a href="2018/sprint-140-update.md" data-raw-source="[20 September 2018](2018/sprint-140-update.md)">20 September 2018</a></td>
-            <td>Control specific build dependencies using container jobs</td><td>Pipelines</td><td>Future</td>
+            <td>Control-specific build dependencies using container jobs</td><td>Pipelines</td><td>Future</td>
         </tr>
         <tr><td>Enable code coverage in .NET Core task</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Leverage restructured Process REST APIs</td><td>Boards</td><td><em>2019</em></td></tr>
@@ -508,7 +832,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>Azure DevOps Services</td><td>General</td><td>N/A</td>
         </tr>
         <tr><td>Add Azure Pipelines from the GitHub Marketplace</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Build open source projects with Azure Pipelines for free</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Build open-source projects with Azure Pipelines for free</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Configure builds using YAML</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Create YAML build pipelines using the new wizard</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Manage build pipelines using the new Builds page</td><td>Pipelines</td><td><em>2019</em></td></tr>
@@ -541,7 +865,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Browse dependencies in npm packages</td><td>Package</td><td><em>2019</em></td></tr>
         <tr><td>View VSTS dashboards within Microsoft Teams</td><td>Reporting</td><td>N/A</td></tr>
         <tr><td>Investigate build history through a new build dashboard widget</td><td>Reporting</td><td><em>2019</em></td></tr>
-        <tr><td>Manage billing for your organization directly through the Azure Portal</td><td>Admin</td><td>N/A</td></tr>
+        <tr><td>Manage billing for your organization directly through the Azure portal</td><td>Admin</td><td>N/A</td></tr>
         <tr>
             <td rowspan="14"><a href="2018/jul-10-vsts.md" data-raw-source="[10 July 2018](2018/jul-10-vsts.md)">10 July 2018</a></td>
             <td>Create pull requests without a default team as reviewer</td><td></td><td><em>2019</em></td>
@@ -663,7 +987,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Leverage your existing subscription using an Azure AD-based alternate email account</td><td></td><td>N/A</td></tr>
         <tr>
             <td rowspan="20"><a href="2018/feb-14-vsts.md" data-raw-source="[14 Feb 2018](2018/feb-14-vsts.md)">14 Feb 2018</a></td>
-            <td>Recover a recently-deleted repository via API</td><td></td>
+            <td>Recover a recently deleted repository via API</td><td></td>
             <td><em>2018.2</em></td>
         </tr>
         <tr><td>Discuss work items in Microsoft Teams using the VSTS messaging extension</td><td></td><td>N/A</td></tr>
@@ -691,9 +1015,9 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td><em>2019</em></td>
         </tr>
         <tr><td>Integrate Power BI with VSTS Analytics using new views</td><td></td><td><em>2019</em></td></tr>
-        <tr><td>View pull request merge commit</td><td></td><td><em>2018.2</em></td></tr>
+        <tr><td>Views pull request merge commit</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Help reviewers using pull request labels</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>View remaining policy criteria for pull request auto-complete</td><td></td><td><em>2018.2</em></td></tr>
+        <tr><td>View remaining policy criteria for pull request autocomplete</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Discuss math in pull requests</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Control who can contribute to pull requests</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Integrate using the pull request status API and branch policy</td><td></td><td><em>2018.2</em></td></tr>
@@ -719,7 +1043,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Blame now has history</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>SSH URLs are changing</td><td></td><td>N/A</td></tr>
         <tr><td>Generate YAML templates from existing build definitions</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>Enhancements to multi-phase builds</td><td></td><td><em>2018.2</em></td></tr>
+        <tr><td>Enhancements to multi-phase build</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Hide empty contributed sections in build results page</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Skip scheduled builds if nothing has changed in the repo</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Run UI tests and install software on Hosted VS2017 agents</td><td></td><td>N/A</td></tr>
@@ -729,7 +1053,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Release triggers branch enhancements</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Filter large test results</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Identify flaky tests</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>Pass parameters to your test run using .testsettings file</td><td></td><td><em>2018.2</em></td></tr>
+        <tr><td>Pass parameters to your test run using. testsettings file</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Access information pertinent to test cases in your automated tests when running in the CI/CD pipeline</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Automated tests that use TestCase as a data source can now be run using the VSTest task</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Improved Marketplace experience</td><td></td><td>N/A</td></tr>
@@ -774,7 +1098,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Jenkins multi-branch pipeline support and link jobs organized in folders</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Jenkins work items in release for JIRA and VSTS Work Items</td><td></td><td>N/A</td></tr>
         <tr><td>Save packages from NuGet.org in your feed</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>Maven support now generally available</td><td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td></tr>
+        <tr><td>Maven supports now generally available</td><td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td></tr>
         <tr><td>Easier feed creation and editing</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Previous package versions are now a full-page list</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Promote, unlist, and deprecate multiple packages</td><td></td><td><em>2018.2</em></td></tr>
@@ -836,7 +1160,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td rowspan="13"><a href="2017/oct-06-vsts.md" data-raw-source="[06 Oct 2017](2017/oct-06-vsts.md)">06 Oct 2017</a></td>
-            <td>New experience for code and work items search</td>
+            <td>New experience for code and work items searches</td>
             <td></td><td><em>2018.2</em></td>
         </tr>
         <tr>
@@ -910,7 +1234,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Create a folder in a repository using web</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Get a permanent link to code</td>
@@ -922,7 +1246,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Wiki page deep linking</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Move page in Wiki using keyboard</td>
@@ -942,7 +1266,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Personalized notifications for releases</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Manage variables using the List and Grid views in the new release definition editor</td>
@@ -950,19 +1274,19 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Branch filters in environment triggers</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Improved Deployment Groups UI</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Run webtests using the VSTest task</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Chart widget for test plans and test suites</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Preview improvements and support for different log types generated by Visual Studio Test task</td>
@@ -1007,27 +1331,27 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Inline add on Delivery Plans</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Forks</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>File minimap</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Bracket matching</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Toggle white space</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Updated email templates for push notification</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Complete Work Items settings</td>
@@ -1039,27 +1363,27 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Update default repo permissions for admins</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>CI builds for Bitbucket repositories</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td>Pause build definitions</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td>Pauses build definitions</td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Task input validations support</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>New Release Definition Editor general availability</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Enhancements in new Release Definition editor</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Release Template Extensibility</td>
@@ -1079,11 +1403,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Upload attachments to test runs and test results</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Test batching</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>JMeter 3.2 for load testing</td>
@@ -1112,7 +1436,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Updated order of the last column in the Kanban board</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>See the projects using a process</td>
@@ -1120,43 +1444,43 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Filtering on Kanban board</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Wiki in Public Preview</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Improvements in Wiki edit experience</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Revert a Wiki revision</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Create a Wiki page from a broken link</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Setting to turn off web editing for TFVC repos</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Identify stale branches</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Search for a deleted branch and re-create it</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Branch updates page is now Pushes</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Retain filename when moving from Files to Commits</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Pull Request Status Extensibility in Public Preview</td>
@@ -1164,15 +1488,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Let contributed build sections control section visibility</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Variable group support</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>dotnet task supports authenticated feeds, web projects</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Ansible Extension on Marketplace</td>
@@ -1180,45 +1504,45 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Variable groups, Retention, and Options tab now available in the new Release Definition Editor</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
-            <td>Release status badge in Code hub</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td>Release status badge-in Code hub</td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Enhancements to Build definition menu when adding artifacts</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Revert your release definition to older version</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr><br/>        <tr>
             <td>Exploratory testing traceability improvements for work item links, iterations, and area paths</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Screenshot and annotation support for desktop apps with Chrome browser for manual tests</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Filters for Test Case work items in Test Plans and Suites in Test Hub</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Test trend charts for Release Environments and Test Runs</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Markdown formatting support for Test Run and Test Result comments</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Add link to existing bug for a failing test</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
-            <td>Re-order favorite groups</td>
+            <td>Reorder favorite groups</td>
             <td></td><td><em>2018.2</em></td>
         </tr>
         <tr>
@@ -1232,67 +1556,67 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Filtering on Backlogs, Sprints, and Queries</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Expand to show empty fields on a Kanban card</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Automatically complete work items when completing pull requests</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Policies: Reset votes on push/new iteration</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Notifications: Great email templates for pull request workflows</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Pull request details: View original diff for code comments</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Task lists in pull request descriptions and comments</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Ability to &quot;Like&quot; comments in pull requests</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Pull request build variables</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Faster publishing of artifacts from Windows agents to file shares</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Code information in Release with Jenkins CI</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Task group References</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Task group versioning</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Multi Configuration support in Server Side (Agentless) tasks</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Task group import and export</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>New Release Definition Editor (Preview)</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Velocity Widget for the Analytics Extension</td>
@@ -1300,10 +1624,10 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Notifications: Give team admins control over the delivery of notifications targeting the team</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
-            <td>Constraints on SVG images, screenshots and badges</td>
+            <td>Constraints on SVG images, screenshots, and badges</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
@@ -1321,35 +1645,35 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Allow extensions to block work item save</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Collapsible pull request comments</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Improved workflow when approving with suggestions</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
-            <td>Filter pull request tree by file name</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td>Filters pull request tree by file name</td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Pull request callout on commit details page becomes richer</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Filter tree view in Code</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Git tags web view</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Export and import build definitions</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Visual Studio latest and hosted agent pools</td>
@@ -1357,15 +1681,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Build definition menu on build summary page</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Release Triggers: Continuous deployment for changes pushed to a Git repository</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Enhancements to Server tasks</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Consume Secrets from an Azure Key Vault as variables</td>
@@ -1373,11 +1697,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Package Management experience updates</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
-            <td>Package build task updates</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td>Packages build task updates</td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Project Collection Administrators can link/make initial purchase</td>
@@ -1406,7 +1730,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="19"><a href="2017/jun-01-team-services.md" data-raw-source="[1 Jun 2017](2017/jun-01-team-services.md)">1 Jun 2017</a></td>
             <td>Mobile work item form general availability</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>New widgets for Analytics extension</td>
@@ -1414,15 +1738,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Path filtering support for Git notifications</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>More pull request comments filtering options</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Search for a commit in branches starting with a prefix</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Visual Studio Enterprise benefit for pipelines in Team Services</td>
@@ -1430,31 +1754,31 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Work with secure files such as Apple certificates</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Extensions with build templates</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Deprecate a task in an extension</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Task group references</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Variables Support in Manual Intervention task</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Control releases to an environment based on the source branch</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Release Triggers for Git repositories as an artifact source</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>On-demand triggering of automated tests</td>
@@ -1477,20 +1801,20 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td>Azure AD sign in address rename</td>
+            <td>Azure AD sign in address renames</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
             <td rowspan="25"><a href="2017/may-11-team-services.md" data-raw-source="[11 May 2017](2017/may-11-team-services.md)">11 May 2017</a></td>
             <td>VM deployment (Public Preview)</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Azure virtual machine scale set</td>
             <td></td><td>2017.2</td>
         </tr>
         <tr>
-            <td>Built-in tasks for building and deploying container based applications</td>
+            <td>Built-in tasks for building and deploying container-based applications</td>
             <td></td><td>2017.2</td>
         </tr>
         <tr>
@@ -1542,7 +1866,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>2017.2</td>
         </tr>
         <tr>
-            <td>Share pull requests with teams</td>
+            <td>Shares pull requests with teams</td>
             <td></td><td>2017.2</td>
         </tr>
         <tr>
@@ -1559,7 +1883,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Maven for Package Management (Public Preview)</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>NuGet Restore, Command, and Tool Installer build tasks</td>
@@ -1591,7 +1915,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>2017.2</td>
         </tr>
         <tr>
-            <td>Git commit comments use the new discussion control</td>
+            <td>Git commits comments use the new discussion control</td>
             <td></td><td>2017.2</td>
         </tr>
         <tr>
@@ -1600,7 +1924,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Build tool installers</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>SSH deployment improvements</td>
@@ -1720,7 +2044,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td>Enhancements to display publisher’s terms, license, and privacy policy in Marketplace</td>
+            <td>Enhancements to display publisher's terms, license, and privacy policy in Marketplace</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
@@ -1734,11 +2058,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>New mobile discussion experience</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Optimized mobile identity picker</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Customized backlog levels</td>
@@ -2045,7 +2369,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td>Link build artifacts from another team project</td>
+            <td>Links build artifacts from another team project</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
@@ -2079,7 +2403,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
-            <td>Rollback build definitions</td>
+            <td>Rollbacks build definitions</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
@@ -2103,7 +2427,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
-            <td>Azure Web App Service manage task</td>
+            <td>Azure Web App Services manage task</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
@@ -2239,51 +2563,51 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Work item history tab</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td>Managing a NuGet package’s lifecycle</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td>Managing a NuGet package's lifecycle</td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Build queue tab</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Hosted build pool build agent migration</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Xamarin license step removed</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Jenkins with untrusted SSL certificates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Apple App Store extension</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Request Feedback</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Checkstyle static analysis</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Deployment manual intervention</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Service endpoint improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>SQL database deployment task</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>User lifecycle management improvements</td>
@@ -2298,47 +2622,47 @@ Versions in the “Server” column are linked to the appropriate download locat
                 Updates <br />
                 Comments, now with markdown and emoji <br />
                 Auto-complete pull requests waiting on policies</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Clone Git repositories from your browser using Tower</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Download packages without NuGet</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Packages: Get started quickly</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Queue Jenkins jobs from builds and releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Jenkins service hook enhancements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Run SSH commands on remote machines from builds and releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Create archives from builds and releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Copy files over SSH from builds and releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Download Jenkins artifacts to builds and releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Use FTP or FTPS to upload files from builds and releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Google Play Extension improvements</td>
@@ -2350,31 +2674,31 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Work item templates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td>Quickly “Unfollow” work item</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td>Quickly "Unfollow" work item</td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Drag and drop attachments</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Assigned to Me widget</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Dashboard permissions</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Configure test outcomes for tests across different test suites</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test Run and Test Result summary – traceability to Releases and manual test artifacts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Unpublish extension – Removing a public extension from the Marketplace</td>
@@ -2387,11 +2711,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="9"><a href="2016/jul-29-team-services.md" data-raw-source="[29 Jul 2016](2016/jul-29-team-services.md)">29 Jul 2016</a> </td>
             <td>Git and TFVC – History view and diff view updates</td>
-            <td></td><td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-update1-vs" data-raw-source="[2017](https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-update1-vs)">2017</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2015-update1-vs" data-raw-source="[2017](/visualstudio/releasenotes/tfs2015-update1-vs)">2017</a></td>
         </tr>
         <tr>
             <td>Restrict Package Management feed creation</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release management improvements – Azure deployments, release policies: <br />
@@ -2401,23 +2725,23 @@ Versions in the “Server” column are linked to the appropriate download locat
                 Policies – Retention of releases and builds <br />
                 Release definition authoring improvements – linked artifacts improvements <br />
                 Release – redeploy after success</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test traceability and release environments support in Test History</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Exploratory testing improvements – view unexplored work items, capture web page load data</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Dashboard improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Java PMD analysis in Gradle build task</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>User management – export users and licenses</td>
@@ -2425,187 +2749,187 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Backlog extension points</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="18"><a href="2016/jul-07-team-services.md" data-raw-source="[7 Jul 2016](2016/jul-07-team-services.md)">7 Jul 2016</a>  </td>
             <td>Resizable WIT charts on dashboards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Filter boards to a parent work item</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Links front and center</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test settings configuration for Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Comment tracking for pull requests</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Browse Code Coverage reports in the web</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Maven and Gradle tasks produce a build summary when running a SonarQube analysis</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Agent queue role-based security</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Task-level time-outs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Import/Export/Clone release definition</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Web app deployment using ARM</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Partially successful deployments</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>View and download attachments associated with releases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>GitHub artifacts for RM</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>.NET SQL Extension</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Image action log in Web Test runner</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Order tests in Test hub</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Pick a build to test with</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="22"><a href="2016/jun-17-team-services.md" data-raw-source="[17 Jun 2016](2016/jun-17-team-services.md)">17 Jun 2016</a></td>
             <td>Git &amp; TFVC – Browsing branches</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Git &amp; TFVC – Ahead/behind</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td>Git &amp; TFVC – Branch picker includes “Mine”</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td>Git &amp; TFVC – Branch picker includes "Mine"</td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Git &amp; TFVC – Path control</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Git &amp; TFVC – File type icons</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Work Items – An improved header</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Work Items – Custom states</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Exploratory Testing – Insights</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Exploratory Testing – Auto stop screen recordings</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Screen recording support in Web runner (for Chrome) </td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Bugs filed as children – Web runner / Exploratory testing extension</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test – History across branches</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test – Automated testing for SCVMM and VMWare</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release – Test status visibility</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release – Support Java PMD analysis in Maven build task</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release – Passing oauth tokens to scripts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Build – Enable path filters for Git CI triggers</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Build – Updated hosted pool software</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Dashboards – Resizable query results widget</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Third-party plugins – Jenkins plug-in to RM</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Marketplace – Publisher review responses</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Team Rooms – Build vNext support</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td rowspan="1"><a href="https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/06/visual-studio-team-services-is-in-brazil/" data-raw-source="[6 Jun 2016](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/06/visual-studio-team-services-is-in-brazil/)">6 Jun 2016</a></td>
+            <td rowspan="1"><a href="https://devblogs.microsoft.com/devops/visual-studio-team-services-is-in-brazil/" data-raw-source="[6 Jun 2016](https://devblogs.microsoft.com/devops/visual-studio-team-services-is-in-brazil/)">6 Jun 2016</a></td>
             <td>Brazil region for Visual Studio Team Services</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
             <td rowspan="15"><a href="2016/jun-01-team-services.md" data-raw-source="[1 Jun 2016](2016/jun-01-team-services.md)">1 Jun 2016</a></td>
             <td>Filtering in Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Process configuration REST APIs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Dashboards REST APIs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>SSH clients can connect to Git repos</td>
@@ -2613,56 +2937,56 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Redesigned Branches page</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Create and send links to specific sections of code</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>API updates for package management</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Screenshot and system info support in Chrome Web runner</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Ordering of tests in Test Hub</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Docker integration for build and release management</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>SonarQube results in pull request view</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test results trend for build</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Service hooks for release management</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>TeamCity artifacts for release management</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release Management Client SDK</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="19"><a href="2016/may-06-team-services.md" data-raw-source="[6 May 2016](2016/may-06-team-services.md)">6 May 2016</a></td>
             <td>Email improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Checkbox control</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Work Item page management</td>
@@ -2670,108 +2994,108 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Turning board annotations on/off</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Clear Formatting command</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Dashboard updates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Adding attachments during manual testing</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Test plan/suite columns</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Build and release summary updates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release Management repository linking</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Copy, Export, and Import release definitions</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Schedule based deployments</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release Management REST APIs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Simplified Release definition wizard</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>New Release Management job execution variables</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Improved build and pull request traceability</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Team Project rename permission</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Admin settings Work hub</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>UX improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="17"><a href="2016/apr-13-team-services.md" data-raw-source="[13 Apr 2016](2016/apr-13-team-services.md)">13 Apr 2016</a></td>
             <td>Follow a work item</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Change work item type</td>
-            <td></td><td>Future</td>
+            <td></td><td>2019 </td>
         </tr>
         <tr>
             <td>Work Item move (single or bulk)</td>
-            <td></td><td>Future</td>
+            <td></td><td>2019</td>
         </tr>
         <tr>
             <td>Kanban board live updates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Pick lists for work Items</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Checklist improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Build to Line number</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Build log view supports much larger logs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Java Build templates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Xamarin Build Tasks</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Widget SDK: Reusable CSS and DOM templates</td>
@@ -2787,28 +3111,28 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Release Management – Email release summary</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release Management – Dashboard widget for release definition summary</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release Management – Deploy based on conditions in multiple environments</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Release Management – Provision VMs or run a PS script using SCVMM extension</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="11"><a href="2016/mar-24-team-services.md" data-raw-source="[24 Mar 2016](2016/mar-24-team-services.md)">24 Mar 2016</a></td>
             <td>Commit traceability</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>View Git LFS files in the web</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Git for Windows now includes Team Services authentication by default</td>
@@ -2820,64 +3144,64 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Test progress from your cards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Capture screen recordings</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Queue a Run by specifying your test suite</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Configuration management in the Test Hub</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Enable build result extensions to specify order and column</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Configure status API reporting for a build definition</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Tab contribution point</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="13"><a href="2016/mar-03-team-services.md" data-raw-source="[3 Mar 2016](2016/mar-03-team-services.md)">3 Mar 2016</a></td>
             <td>View test results for each release environment</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Triggers: Deploy based on completion in multiple environments (join)</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Epic and Feature board drill-down</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Exploratory testing directly from a work item</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Data collection: Image action log</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Create test cases based on Image action log data</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Assigning configurations to test plans, test suites and test cases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Squash merge pull requests</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Clone in IntelliJ, Android Studio, etc.</td>
@@ -2910,23 +3234,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Work item query charts in the dashboard catalog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Cumulative flow diagram widget</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Flexible build policy for Git</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>SonarQube Quality Gates in Build</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>RM: UI extensibility</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>SCVMM support</td>
@@ -2934,7 +3258,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Exploratory Testing improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Azure SQL Database Deployment task</td>
@@ -2942,15 +3266,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Delete Test Plan</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>#mention</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Keyboard shortcuts for Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td rowspan="17"><a href="2016/jan-25-team-services.md" data-raw-source="[25 Jan 2016](2016/jan-25-team-services.md)">25 Jan 2016</a></td>
@@ -2959,35 +3283,35 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Create branch and links to related artifacts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Build widgets in the catalog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Markdown widget with file from repository</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
-            <td>Auto-refresh dashboards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td>Autorefresh dashboards</td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Richer visualizations in the build summary page</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>View passed test results and file bugs in build summary page</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Test summary in build status notification email</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Support for editing tags in the bulk edit dialog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Deleting a custom field</td>
@@ -2995,15 +3319,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Keyboard shortcuts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Test plan improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Exploratory testing improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Release orchestration improvements</td>
@@ -3015,11 +3339,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Search scope selector</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Search across Git and TFVC projects</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="8"><a href="2015/dec-10-team-services.md" data-raw-source="[10 Dec 2015](2015/dec-10-team-services.md)">10 Dec 2015</a></td>
@@ -3028,23 +3352,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Work item discussion</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Work item history improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Deleting work items</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Dashboards edit mode</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Keyboard shortcuts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>On-Premises support for Exploratory Testing extension:</td>
@@ -3052,36 +3376,36 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Scope code search using path filters</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td rowspan="7"><a href="2015/nov-24-team-services.md" data-raw-source="[24 Nov 2015](2015/nov-24-team-services.md)">24 Nov 2015</a></td>
             <td>Git and TFVC in the same team project</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Package Management build tasks</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Implement a task once for multiple platforms</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Pull Request Widget for Dashboards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td><xref href="mention" data-throw-if-not-resolved="False" data-raw-source="@mention"></xref> and #ID in code</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Reordering cards on boards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Global shortcut keys</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td rowspan="7"><a href="2015/nov-18-team-services.md" data-raw-source="[18 Nov 2015](2015/nov-18-team-services.md)">18 Nov 2015</a></td>
@@ -3102,7 +3426,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Test Results in Build</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](http://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
             <td>Exploratory Testing extension</td>
@@ -3115,27 +3439,27 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="6"><a href="2015/oct-30-team-services.md" data-raw-source="[30 Oct 2015](2015/oct-30-team-services.md)">30 Oct 2015</a></td>
             <td>Dashboards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Improved pull request experience</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Manual test iteration results</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Retention policy for test results</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
-            <td>Reorder and re-parent tasks from the Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td>Reorder and reparent tasks from the Kanban board</td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>PREVIEW: New Work Item form</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="5"><a href="2015/oct-08-team-services.md" data-raw-source="[8 Oct 2015](2015/oct-08-team-services.md)">8 Oct 2015</a></td>
@@ -3144,40 +3468,40 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Starting with Git, made easy</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Improved commit details</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>SonarQube analysis from a Maven build task</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>PREVIEW: New Work Item form</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td rowspan="7"><a href="2015/sep-18-team-services.md" data-raw-source="[18 Sep 2015](2015/sep-18-team-services.md)">18 Sep 2015</a></td>
             <td>Inline tasks on the Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Query and display of Kanban fields</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Multi-select items on the backlog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Branch policy to require linked work items</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Export test outcomes</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Work item trend and rollup reporting in Power BI</td>
@@ -3185,67 +3509,67 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Support for publishing xUnit results</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2015/aug-26-team-services.md" data-raw-source="[26 Aug 2015](2015/aug-26-team-services.md)">26 Aug 2015</a></td>
             <td>Rename columns in place</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Choosing users for capacity planning</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Burndown with available capacity</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>SonarQube analysis build tasks</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2015/aug-07-team-services.md" data-raw-source="[7 Aug 2015](2015/aug-07-team-services.md)">7 Aug 2015</a></td>
             <td>Multi-select items on the product backlog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Reorder cards when changing columns</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Color tags and titles on your cards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Libraries for integrating with VSTS now available at nuget.org</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="1"><a href="http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/22/reporting-on-work-items-with-power-bi.aspx" data-raw-source="[22 Jul 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/22/reporting-on-work-items-with-power-bi.aspx)">22 Jul 2015</a></td>
+            <td rowspan="1"><a href="https://devblogs.microsoft.com/devops/reporting-on-work-items-with-power-bi/" data-raw-source="[22 Jul 2015](https://devblogs.microsoft.com/devops/reporting-on-work-items-with-power-bi/)">22 Jul 2015</a></td>
             <td>Power BI reporting on Work Item data</td>
             <td></td><td>Future</td>
         </tr>
         <tr>
             <td rowspan="7"><a href="2015/jul-17-team-services.md" data-raw-source="[17 Jul 2015](2015/jul-17-team-services.md)">17 Jul 2015</a></td>
             <td>Multiple activities per team member</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Configure settings directly from backlogs/boards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Hide empty fields on cards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Card coloring on Taskboard</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Drag any item to an iteration from anywhere</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Build your projects hosted in GitHub</td>
@@ -3258,57 +3582,57 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2015/jul-07-team-services.md" data-raw-source="[7 Jul 2015](2015/jul-07-team-services.md)">7 Jul 2015</a></td>
             <td>Card coloring on Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Personal access tokens</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](http://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
             <td>Adding work directly to a sprint</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2015/jun-03-team-services.md" data-raw-source="[3 Jun 2015](2015/jun-03-team-services.md)">3 Jun 2015</a></td>
             <td>Kanban swim lanes</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>#Mention work items</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Automated testing in Build vNext</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Team settings API</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td rowspan="7"><a href="2015/may-15-team-services.md" data-raw-source="[15 May 2015](2015/may-15-team-services.md)">15 May 2015</a></td>
             <td>Build vNext</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Backlog navigation update</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Opt-in to portfolio backlogs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Improved SAFe support</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Kanban collapsed columns</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Git branch policies</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Power BI &amp; VSO</td>
@@ -3324,7 +3648,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="http://blogs.msdn.com/b/bharry/archive/2015/05/10/vs-online-hosted-in-australia.aspx" data-raw-source="[8 May 2015](http://blogs.msdn.com/b/bharry/archive/2015/05/10/vs-online-hosted-in-australia.aspx)">8 May 2015</a></td>
+            <td><a href="https://blogs.msdn.com/b/bharry/archive/2015/05/10/vs-online-hosted-in-australia.aspx" data-raw-source="[8 May 2015](https://blogs.msdn.com/b/bharry/archive/2015/05/10/vs-online-hosted-in-australia.aspx)">8 May 2015</a></td>
             <td>Australia region for Visual Studio Team Services</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3341,15 +3665,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="4"><a href="2015/apr-27-team-services.md" data-raw-source="[27 Apr 2015](2015/apr-27-team-services.md)">27 Apr 2015</a></td>
             <td>Adding fields to cards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Kanban board filtering</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Card options on the Taskboard</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Account restore</td>
@@ -3358,96 +3682,96 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td><a href="2015/apr-24-team-services.md" data-raw-source="[24 Apr 2015](2015/apr-24-team-services.md)">24 Apr 2015</a></td>
             <td>Team Project Rename</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td><a href="2015/apr-22-team-services.md" data-raw-source="[22 Apr 2015](2015/apr-22-team-services.md)">22 Apr 2015</a></td>
             <td>Application Insights: <br />
                 Synthetic data filtering <br />
-                New usage experience for ASP.NET, Java and other applications <br />
+                New usage experience for ASP.NET, Java, and other applications <br />
                 Daily Active User calculations</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/17/general-availability-of-codelens-in-visual-studio-online.aspx" data-raw-source="[17 Apr 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/17/general-availability-of-codelens-in-visual-studio-online.aspx)">17 Apr 2015</a></td>
+            <td><a href="https://devblogs.microsoft.com/devops/general-availability-of-codelens-in-visual-studio-online/" data-raw-source="[17 Apr 2015](https://devblogs.microsoft.com/devops/general-availability-of-codelens-in-visual-studio-online/)">17 Apr 2015</a></td>
             <td>CodeLens General Availability on Visual Studio Team Services</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2015/apr-10-team-services.md" data-raw-source="[10 Apr 2015](2015/apr-10-team-services.md)">10 Apr 2015</a></td>
             <td>Configure cards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Markdown editing for definition of done</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>CFD options</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Web history view for Git projects</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td><a href="2015/mar-27-team-services.md" data-raw-source="[27 Mar 2015](2015/mar-27-team-services.md)">27 Mar 2015</a></td>
-            <td>Application Insights: Save search page, pause export and export on alert fail</td>
+            <td>Application Insights: Save search page, pause export, and export on alert fail</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
             <td rowspan="7"><a href="2015/mar-10-team-services.md" data-raw-source="[10 Mar 2015](2015/mar-10-team-services.md)">10 Mar 2015</a></td>
             <td>Current iteration query token</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Reordering on the Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Kanban definition of done</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Responsive card sizes</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Bugs on the Taskboard</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Syntax highlight for XML, Sass, Objective-C, R</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>CodeLens for accounts in West Europe</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="https://azure.microsoft.com/documentation/articles/app-insights-java-get-started/" data-raw-source="[9 Mar 2015](https://azure.microsoft.com/documentation/articles/app-insights-java-get-started/)">9 Mar 2015</a></td>
+            <td><a href="/azure/azure-monitor/app/java-get-started" data-raw-source="[9 Mar 2015](/azure/azure-monitor/app/java-get-started)">9 Mar 2015</a></td>
             <td>Application Insights support for Java</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2015/feb-18-team-services.md" data-raw-source="[18 Feb 2015](2015/feb-18-team-services.md)">18 Feb 2015</a></td>
             <td>Adding and editing directly from the board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Split columns on the Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Assign multiple people to test suites</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
-            <td>Application Insights in the Azure Preview Portal</td>
+            <td>Application Insights in the Azure portal (Preview)</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="http://blogs.msdn.com/b/visualstudioalm/archive/2015/02/13/announcing-limited-preview-for-visual-studio-online-code-search.aspx" data-raw-source="[13 Feb 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/02/13/announcing-limited-preview-for-visual-studio-online-code-search.aspx)">13 Feb 2015</a></td>
+            <td><a href="https://devblogs.microsoft.com/devops/announcing-limited-preview-for-visual-studio-online-code-search/" data-raw-source="[13 Feb 2015](https://devblogs.microsoft.com/devops/announcing-limited-preview-for-visual-studio-online-code-search/)">13 Feb 2015</a></td>
             <td>Limited preview for Code Search</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3459,37 +3783,37 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="4"><a href="2015/jan-27-team-services.md" data-raw-source="[27 Jan 2015](2015/jan-27-team-services.md)">27 Jan 2015</a></td>
             <td>Basic license upgraded</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Reordering on the Taskboard</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Unparented Tasks on the Taskboard</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Inline editing on the Kanban board</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
-            <td><a href="http://blogs.msdn.com/b/bharry/archive/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx" data-raw-source="[15 Jan 2015](http://blogs.msdn.com/b/bharry/archive/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx)">15 Jan 2015</a></td>
+            <td><a href="https://blogs.msdn.com/b/bharry/archive/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx" data-raw-source="[15 Jan 2015](https://blogs.msdn.com/b/bharry/archive/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx)">15 Jan 2015</a></td>
             <td>VS Online ISO 27001 Certification</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
             <td rowspan="6"><a href="2014/dec-17-team-services.md" data-raw-source="[17 Dec 2014](2014/dec-17-team-services.md)">17 Dec 2014</a></td>
             <td>Quick code editing</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Filtering on backlogs and queries</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Sprint backlog and task board improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>New integrations: Slack and Azuqua</td>
@@ -3497,7 +3821,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Preview APIs for adding and updating files in source control</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>CodeLens for Visual Studio Team Services</td>
@@ -3515,23 +3839,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="5"><a href="2014/dec-02-team-services.md" data-raw-source="[2 Dec 2014](2014/dec-02-team-services.md)">2 Dec 2014</a></td>
             <td>Identity control and avatars</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Pull Request improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Taskboard changes</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Kanban board persisted column headers</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Sharing personal queries</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td><a href="2014/dec-02-team-services.md" data-raw-source="[12 Nov 2014](2014/dec-02-team-services.md)">12 Nov 2014</a></td>
@@ -3541,31 +3865,31 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="7"><a href="2014/nov-04-team-services.md" data-raw-source="[4 Nov 2014](2014/nov-04-team-services.md)">4 Nov 2014</a></td>
             <td>Bugs on the backlog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Test execution charts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Recent test results</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Preview Markdown and HTML files in Code Explorer</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Browse link dialog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>REST batch support</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Third-party OAuth scopes</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2014/oct-28-team-services.md" data-raw-source="[28 Oct 2014](2014/oct-28-team-services.md)">28 Oct 2014</a></td>
@@ -3583,45 +3907,45 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="2"><a href="2014/oct-14-team-services.md" data-raw-source="[14 Oct 2014](2014/oct-14-team-services.md)">14 Oct 2014</a></td>
             <td>Test artifacts as work items</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.3](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.3</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.3](https://www.microsoft.com/download/details.aspx?id=44911)">2013.3</a></td>
         </tr>
         <tr>
             <td>Copy and paste query results</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2014/sep-23-team-services.md" data-raw-source="[23 Sep 2014](2014/sep-23-team-services.md)">23 Sep 2014</a></td>
             <td>Maximizing text area fields</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Navigating to links</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Work item performance improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="6"><a href="2014/sep-04-team-services.md" data-raw-source="[4 Sep 2014](2014/sep-04-team-services.md)">4 Sep 2014</a></td>
             <td>Work Item query improvements</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Quick search through tree controls</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Longer trend charts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Test Cases related to Test Suites</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>WIT REST API v1.2</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Event and resource versioning within service hooks</td>
@@ -3630,16 +3954,16 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td><a href="2014/aug-27-team-services.md" data-raw-source="[27 Aug 2014](2014/aug-27-team-services.md)">27 Aug 2014</a></td>
             <td>A license for Stakeholders</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2014/aug-18-team-services.md" data-raw-source="[18 Aug 2014](2014/aug-18-team-services.md)">18 Aug 2014</a></td>
             <td>Project Welcome pages</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](http://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Tagging support in the Test Hub</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="5"><a href="2014/jul-21-team-services.md" data-raw-source="[21 Jul 2014](2014/jul-21-team-services.md)">21 Jul 2014</a></td>
@@ -3647,12 +3971,12 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td>Viewing existing projects in the Azure Preview Portal</td>
+            <td>Viewing existing projects in the Azure portal (Preview)</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
             <td>Trend charts + aggregation</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Test Hub added to the Advanced License</td>
@@ -3665,20 +3989,20 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2014/jul-01-team-services.md" data-raw-source="[1 Jul 2014](2014/jul-01-team-services.md)">1 Jul 2014</a></td>
             <td>Hiding work in progress on the backlog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.3](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.3</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.3](https://www.microsoft.com/download/details.aspx?id=44911)">2013.3</a></td>
         </tr>
         <tr>
             <td>Full Screen on the backlog and boards</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Move to position on the backlog</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td><a href="2014/jun-10-team-services.md" data-raw-source="[10 Jun 2014](2014/jun-10-team-services.md)">10 Jun 2014</a></td>
             <td>Pull Requests</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](http://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2014/may-20-team-services.md" data-raw-source="[20 May 2014](2014/may-20-team-services.md)">20 May 2014</a></td>
@@ -3687,7 +4011,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Copy/Paste shared parameter data between VS Online and Excel</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.3](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.3</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.3](https://www.microsoft.com/download/details.aspx?id=44911)">2013.3</a></td>
         </tr>
         <tr>
             <td>End of data export period</td>
@@ -3713,7 +4037,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Shared Parameters for Test Cases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2014/mar-18-team-services.md" data-raw-source="[18 Mar 2014](2014/mar-18-team-services.md)">18 Mar 2014</a></td>
@@ -3727,7 +4051,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2014/feb-28-team-services.md" data-raw-source="[28 Feb 2014](2014/feb-28-team-services.md)">28 Feb 2014</a></td>
             <td>Build support for Java code managed in Git</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td>Java JDK, Ant, and Maven libraries preinstalled in hosted build</td>
@@ -3735,29 +4059,29 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Maven support for TF version control projects</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2014/feb-10-team-services.md" data-raw-source="[10 Feb 2014](2014/feb-10-team-services.md)">10 Feb 2014</a></td>
             <td>Exporting test artifacts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
-            <td>New “create tags” permission</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td>New "create tags" permission</td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2014/jan-22-team-services.md" data-raw-source="[22 Jan 2014](2014/jan-22-team-services.md)">22 Jan 2014</a></td>
             <td>Querying tags</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td>Removing weekends from the Burndown</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td>Configurable CFD dates</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/dec-11-team-services.md" data-raw-source="[11 Dec 2013](2013/dec-11-team-services.md)">11 Dec 2013</a></td>
@@ -3770,7 +4094,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Asynchronous backlogs</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/nov-13-team-services.md" data-raw-source="[13 Nov 2013](2013/nov-13-team-services.md)">13 Nov 2013</a></td>
@@ -3788,12 +4112,12 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td><a href="2013/nov-08-team-services.md" data-raw-source="[8 Nov 2013](2013/nov-08-team-services.md)">8 Nov 2013</a></td>
             <td>Work item chart pinning</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td><a href="2013/oct-21-team-services.md" data-raw-source="[21 Oct 2013](2013/oct-21-team-services.md)">21 Oct 2013</a></td>
             <td>New account and project pages</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td><a href="2013/oct-17-team-services.md" data-raw-source="[17 Oct 2013](2013/oct-17-team-services.md)">17 Oct 2013</a></td>
@@ -3803,59 +4127,59 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2013/sep-30-team-services.md" data-raw-source="[30 Sep 2013](2013/sep-30-team-services.md)">30 Sep 2013</a></td>
             <td>New languages supported for code syntax highlighting</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td>Color picking in charts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td>Column options for the test case grid view</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](http://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2013/sep-09-team-services.md" data-raw-source="[9 Sep 2013](2013/sep-09-team-services.md)">9 Sep 2013</a></td>
             <td>Work item charts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Bulk edit of test cases</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Delete a team project</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Work items from code discussion</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td><a href="2013/aug-19-team-services.md" data-raw-source="[19 Aug 2013](2013/aug-19-team-services.md)">19 Aug 2013</a></td>
             <td>Improved code commenting</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/jul-29-team-services.md" data-raw-source="[29 Jul 2013](2013/jul-29-team-services.md)">29 Jul 2013</a></td>
             <td>Improved permission management for Git repos</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Team room Git push events</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Deleting team rooms</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2013/jul-10-team-services.md" data-raw-source="[10 Jul 2013](2013/jul-10-team-services.md)">10 Jul 2013</a></td>
             <td>Backlog mapping</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Team permission changes</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/jun-26-team-services.md" data-raw-source="[26 Jun 2013](2013/jun-26-team-services.md)">26 Jun 2013</a></td>
@@ -3864,41 +4188,41 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Paste images into work items in the web</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Open Microsoft Test Runner from web</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/jun-19-team-services.md" data-raw-source="[19 Jun 2013](2013/jun-19-team-services.md)">19 Jun 2013</a></td>
             <td>Agile Portfolio Management updates – view filter and quick decompose</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Open MTM from web</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Admin panel color change</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="5"><a href="2013/jun-03-team-services.md" data-raw-source="[3 Jun 2013](2013/jun-03-team-services.md)">3 Jun 2013</a></td>
             <td>Agile Portfolio Management</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Lightweight code commenting</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Team Room</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Create/modify test plans through Web UI</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Cloud load testing</td>
@@ -3911,89 +4235,89 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Git alerts</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Backlog updates – name changed to &quot;backlogs&quot; and now backlogs show all items until they reach the completed state</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2013/may-13-team-services.md" data-raw-source="[13 May 2013](2013/may-13-team-services.md)">13 May 2013</a></td>
             <td>Work item colors based on process template settings</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Usability updates – icon updates and sentence casing</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Navigation updates in Web UI, including ability to view past iterations</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Git multi-repo support</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2013/mar-22-team-services.md" data-raw-source="[22 Mar 2013](2013/mar-22-team-services.md)">22 Mar 2013</a></td>
             <td>Branches view for Git</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>TCM Improvements – bulk edit test step pass/fail, double click test step reorder, hover over inline images</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2013/mar-04-team-services.md" data-raw-source="[4 Mar 2013](2013/mar-04-team-services.md)">4 Mar 2013</a></td>
             <td>Customizable Kanban columns</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>TCM improvements – edit test steps when running tests</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Annotate/Blame for version control</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Scheduled builds for Git-based projects</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2013/feb-11-team-services.md" data-raw-source="[11 Feb 2013](2013/feb-11-team-services.md)">11 Feb 2013</a></td>
             <td>Continuous Integration for Git</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
-            <td>TCM improvements – view test step attachments when running tests, add attachments when running tests, pause and resume tests in Test Runner</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td>TCM improvements – view test step attachments when running tests, add attachments when running tests, pause, and resume tests in Test Runner</td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>WIT tagging cleanup for unused tags</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Download as Zip for version control</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/jan-30-team-services.md" data-raw-source="[30 Jan 2013](2013/jan-30-team-services.md)">30 Jan 2013</a></td>
             <td>Work item tagging</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Git support</td>
-            <td></td><td><a href="http://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](http://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
+            <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
             <td>Test Hub in Web UI</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td><a href="2013/jan-21-team-services.md" data-raw-source="[21 Jan 2013](2013/jan-21-team-services.md)">21 Jan 2013</a></td>
             <td>Changeset context menu in Web UI</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td><a href="2013/jan-09-team-services.md" data-raw-source="[9 Jan 2013](2013/jan-09-team-services.md)">9 Jan 2013</a></td>
@@ -4003,32 +4327,32 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="5"><a href="2013/jan-07-team-services.md" data-raw-source="[7 Jan 2013](2013/jan-07-team-services.md)">7 Jan 2013</a></td>
             <td>Email work items from backlog</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Search for changesets by ID in Web UI</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Full screen mode for code viewing</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Inline diff of images in version control</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Collapsible left pane in all left panels in Web UI</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2012/dec-10-team-services.md" data-raw-source="[10 Dec 2012](2012/dec-10-team-services.md)">10 Dec 2012</a></td>
             <td>Renamed Source to Code in Web UI hub</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Code Explorer updates in Web UI</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Hosted build updates for Azure SDK 1.8, TypeScript 0.8.1, and VS 2012 Update 1</td>
@@ -4037,11 +4361,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="2"><a href="2012/nov-19-team-services.md" data-raw-source="[19 Nov 2012](2012/nov-19-team-services.md)">19 Nov 2012</a></td>
             <td>Send work items in email from TFS web access</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Build file counts and sizes in summary reports</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td><a href="2012/oct-31-team-services.md" data-raw-source="[31 Oct 2012](2012/oct-31-team-services.md)">31 Oct 2012</a></td>
@@ -4056,29 +4380,29 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td><a href="2012/oct-08-team-services.md" data-raw-source="[8 Oct 2012](2012/oct-08-team-services.md)">8 Oct 2012</a></td>
             <td>400 character server paths for version control</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2012/sep-17-team-services.md" data-raw-source="[17 Sep 2012](2012/sep-17-team-services.md)">17 Sep 2012</a></td>
             <td>Drag/drop in sprint planning to assign to person or activity</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>Web usability improvements (tabs and UX modified, collapse left pane in work items)</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>Process template updates to Agile 6.1 and Scrum 2.1</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2012/aug-27-team-services.md" data-raw-source="[27 Aug 2012](2012/aug-27-team-services.md)">27 Aug 2012</a></td>
             <td>Improved source browsing, viewing, and searching</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>Improved source &quot;diff&quot;</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>Hosted builds of SharePoint components</td>
@@ -4091,29 +4415,29 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2012/aug-13-team-services.md" data-raw-source="[13 Aug 2012](2012/aug-13-team-services.md)">13 Aug 2012</a></td>
             <td>Kanban board</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>Cumulative Flow Diagram</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>WIP Limits</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2012/aug-06-team-services.md" data-raw-source="[6 Aug 2012](2012/aug-06-team-services.md)">6 Aug 2012</a></td>
             <td>Drag/drop in task board to move tasks between people and stories</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>Azure continuous deployment summary report</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
     </tbody>
 </table>
 
-## Server Build Numbers
+## Azure DevOps Server Build Numbers
 
 <table>
 <thead>
@@ -4125,88 +4449,99 @@ Versions in the “Server” column are linked to the appropriate download locat
 </thead>
 <tbody>
         <tr>
-          <td><a href="https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019u1)">2019.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020&preserve-view=true" data-raw-source="[2020 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020&preserve-view=true)">2020 RTW</a></td>
+          <td>Oct. 6, 2020</td>
+          <td>18.170.30525.1</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](/azure/devops/server/release-notes/azuredevops2019u1)">2019.1.1</a></td>
+          <td>Dec. 10, 2019</td>
+          <td>17.153.29522.3</td>
+        </tr>
+        <tr>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](/azure/devops/server/release-notes/azuredevops2019u1)">2019.1</a></td>
           <td>Aug. 20, 2019</td>
           <td>17.153.29207.5</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019.0.1](https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019)">2019.0.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019.0.1](/azure/devops/server/release-notes/azuredevops2019)">2019.0.1</a></td>
           <td>May 21, 2019</td>
           <td>17.143.28912.1</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019 RTW](https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019)">2019 RTW</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019 RTW](/azure/devops/server/release-notes/azuredevops2019)">2019 RTW</a></td>
           <td>Mar. 5, 2019</td>
           <td>17.143.28621.4</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.2](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3)">2018.3.2 Rerelease</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.2](/visualstudio/releasenotes/tfs2018-update3)">2018.3.2 Rerelease</a></td>
           <td>Feb. 6, 2019</td>
           <td>16.131.28601.4</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.2](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3)">2018.3.2</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.2](/visualstudio/releasenotes/tfs2018-update3)">2018.3.2</a></td>
           <td>Jan. 15, 2019</td>
           <td>16.131.28507.4</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.1](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3)">2018.3.1</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.1](/visualstudio/releasenotes/tfs2018-update3)">2018.3.1</a></td>
           <td>Nov 11, 2018</td>
           <td>16.131.28226.3</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3)">2018.3</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3](/visualstudio/releasenotes/tfs2018-update3)">2018.3</a></td>
           <td>Sep. 12, 2018</td>
           <td>16.131.28106.2</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update2" data-raw-source="[2018.2](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update2)">2018.2</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update2" data-raw-source="[2018.2](/visualstudio/releasenotes/tfs2018-update2)">2018.2</a></td>
           <td>May 7, 2018</td>
           <td>16.131.27701.1</td>
         </tr>
          <tr>
-          <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1.2](https://aka.ms/tfs2018-update1)">2018.1.2</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update1" data-raw-source="[2018.1.2](/visualstudio/releasenotes/tfs2018-update1)">2018.1.2</a></td>
           <td>Nov. 27, 2018</td>
           <td>16.122.28313.3</td>
         </tr>
          <tr>
-          <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1.1](https://aka.ms/tfs2018-update1)">2018.1.1</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update1" data-raw-source="[2018.1.1](/visualstudio/releasenotes/tfs2018-update1)">2018.1.1</a></td>
           <td>Sep. 12, 2018</td>
           <td>16.122.28028.4</td>
         </tr>
          <tr>
-          <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1](https://aka.ms/tfs2018-update1)">2018.1</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update1" data-raw-source="[2018.1](/visualstudio/releasenotes/tfs2018-update1)">2018.1</a></td>
           <td>Feb. 20, 2018</td>
           <td>16.122.27409.2</td>
         </tr>
         <tr>
-          <td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018 RTW](https://aka.ms/relnotes-tfs2018)">2018 RTW</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018 RTW](/visualstudio/releasenotes/tfs2018-relnotes)">2018 RTW</a></td>
           <td>Nov. 15, 2017</td>
           <td>16.122.27102.1</td>
         </tr>
         <tr>
-          <td><a href="https://aka.ms/relnotes-tfs2017-update3" data-raw-source="[2017.3.1](https://aka.ms/relnotes-tfs2017-update3)">2017.3.1</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2017-update3" data-raw-source="[2017.3.1](/visualstudio/releasenotes/tfs2017-update3)">2017.3.1</a></td>
           <td>Feb. 28, 2018</td>
           <td>15.117.27414.0</td>
         </tr>
         <tr>
-          <td><a href="https://aka.ms/relnotes-tfs2017-update3" data-raw-source="[2017.3](https://aka.ms/relnotes-tfs2017-update3)">2017.3</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2017-update3" data-raw-source="[2017.3](/visualstudio/releasenotes/tfs2017-update3)">2017.3</a></td>
           <td>Nov. 6, 2017</td>
           <td>15.117.27024.0</td>
         </tr>
         <tr>
-          <td><a href="https://aka.ms/relnotes-tfs2017-update2" data-raw-source="[2017.2](https://aka.ms/relnotes-tfs2017-update2)">2017.2</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2017-update2" data-raw-source="[2017.2](/visualstudio/releasenotes/tfs2017-update2)">2017.2</a></td>
           <td>Jul. 24, 2017</td>
           <td>15.117.26714.00</td>
         </tr>
         <tr>
           <td>2017.1</td>
           <td>Mar. 9, 2017 (Mar. 7, 2017)</td>
-          <td>15.112.26307.00
-          (15.112.26301.0)<a href="https://visualstudio.microsoft.com/news/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier" data-raw-source="[*](https://visualstudio.microsoft.com/news/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)"><em></a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier" data-raw-source="[15.112.26307.00
+          (15.112.26301.0)](/visualstudio/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)">15.112.26307.00
+          (15.112.26301.0)<em></a></td>
         </tr>
         <tr>
-          <td><a href="https://aka.ms/tfs2017-relnotes" data-raw-source="[2017.0.1](https://aka.ms/tfs2017-relnotes)">2017.0.1</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2017-relnotes" data-raw-source="[2017.0.1](/visualstudio/releasenotes/tfs2017-relnotes)">2017.0.1</a></td>
           <td>Feb. 28, 2018</td>
           <td>15.105.27412.0</td>
         </tr><br/>        <tr>
@@ -4215,13 +4550,13 @@ Versions in the “Server” column are linked to the appropriate download locat
           <td>15.105.25910.00</td>
         </tr>
         <tr>
-          <td><a href="https://aka.ms/tfs2015-update4-vs" data-raw-source="[2015.4.2](https://aka.ms/tfs2015-update4-vs)">2015.4.2</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2015-update4-vs" data-raw-source="[2015.4.2](/visualstudio/releasenotes/tfs2015-update4-vs)">2015.4.2</a></td>
           <td>Apr. 9, 2019</td>
           <td>14.114.28805.0</td>
         </tr>
         <tr>
         <tr>
-          <td><a href="https://aka.ms/tfs2015-update4-vs" data-raw-source="[2015.4.1](https://aka.ms/tfs2015-update4-vs)">2015.4.1</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2015-update4-vs" data-raw-source="[2015.4.1](/visualstudio/releasenotes/tfs2015-update4-vs)">2015.4.1</a></td>
           <td>Feb. 28, 2018</td>
           <td>14.114.26412.0</td>
         </tr>
@@ -4305,11 +4640,11 @@ Versions in the “Server” column are linked to the appropriate download locat
     </table>
 * TFS 2015 RTM has multiple build numbers, due to the componentized nature of its build and packaging process. The number of the installer, which will show up in Add/Remove Programs, is 14.0.23129.01. The number of the majority of the assemblies, which will show up in the TFS Administration Console, is 14.0.23128.00.
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-> [!div class="mx-imgBorder"]
-> ![Make a suggestion](_img/help-make-a-suggestion.png)
+> [!div class="mx-imgBorder"] 
+> ![Make a suggestion](media/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).

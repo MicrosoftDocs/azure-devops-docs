@@ -1,26 +1,25 @@
 ---
 title: Status on All Iterations Report
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Helps you track the team's performance over successive iterations.
 ms.assetid: ab92d41e-aab1-4d82-ad57-a4f868adc102
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 
 # Status on All Iterations Report
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 After work has progressed on several iterations, also known as sprints, you can view the team progress by viewing the Status on All Iterations report. This report helps you track the team's performance over successive iterations.  
   
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
 > [!NOTE]
->  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+>  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
 
 **You can use this report to answer the following questions**:<br /><br /> -   Is steady progress being made across all iterations?<br />-   How many stories did the team complete for each iteration?<br />-   How many hours did the team work for each iteration?<br />-   For each iteration, how many bugs did the team find, resolve, or close?
@@ -32,7 +31,7 @@ After work has progressed on several iterations, also known as sprints, you can 
 ##  <a name="Data"></a> Data in the report  
  The Status on All Iterations report presents a snapshot of work that the team accomplished across several iterations, as the following illustration shows. The data is derived from the data warehouse.  
   
- ![Example Status on All Iterations Report](_img/procguid_statusonall2.png "ProcGuid_StatusOnAll2")  
+ ![Example Status on All Iterations Report](media/procguid_statusonall2.png "ProcGuid_StatusOnAll2")  
   
  For each iteration that is defined for the product areas that you specify, this report displays the following information:  
   
@@ -76,7 +75,7 @@ After work has progressed on several iterations, also known as sprints, you can 
 ### Healthy version of report  
  A healthy Status on All Iterations report shows more progress with each successive iteration, as the following illustration shows.  
   
- ![Healthy version of Status on All Iterations](_img/procguid_alliterations.png "ProcGuid_AllIterations")  
+ ![Healthy version of Status on All Iterations](media/procguid_alliterations.png "ProcGuid_AllIterations")  
   
 ### Unhealthy version of report  
  An unhealthy Status on All Iterations report might show one or more of the following indicators:  
@@ -95,7 +94,7 @@ After work has progressed on several iterations, also known as sprints, you can 
   
 - **Number of bugs being found is not increasing with each successive iteration**.  
   
-  ![Unhealthy version of Status on All Iterations](_img/procguid_unhealthy.png "ProcGuid_Unhealthy")  
+  ![Unhealthy version of Status on All Iterations](media/procguid_unhealthy.png "ProcGuid_Unhealthy")  
   Unhealthy Version of a Status on All Iterations Report  
   
 ##  <a name="Changing"></a> Filter the report  

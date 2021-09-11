@@ -1,18 +1,20 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
-title: Modal Dialog | Extensions for Azure DevOps Services
-description: Use the modal dialog provided by the host
+title: Modal Dialog | Extensions for Azure DevOps
+description: Use the modal dialog provided by the host for Azure DevOps.
 ms.assetid: 59748E0E-2D5E-FF79-ED0E-4B76037A8010
 ms.topic: conceptual
-ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 09/19/2019
 ---
 
 # Modal dialog
+
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 The HostDialogService enables you to present a modal dialog to the user and prevent interaction with all parts of web access until the dialog is dismissed. 
 
@@ -115,7 +117,7 @@ The `uri` property references a page that is rendered within the content area of
 
 ### Showing the dialog
 
-To show the dialog (for example when a user clicks an action on a toolbar or menu), call the `openDialog` function on an instance of the HostDialogService, passing the fully-qualified identifer of the dialog content, for example `my-publisher.my-extension.registration-form` and any dialog options:
+To show the dialog (for example, when a user selects an action on a toolbar or menu), call the `openDialog` function on an instance of the HostDialogService, passing the fully-qualified identifer of the dialog content, for example `my-publisher.my-extension.registration-form` and any dialog options:
 
 ```javascript
     VSS.getService(VSS.ServiceIds.Dialog).then(function(dialogService) {
@@ -136,7 +138,7 @@ To show the dialog (for example when a user clicks an action on a toolbar or men
 
 ### Showing the dialog (advanced) 
 
-A function can be called when the OK button is clicked. This function is specified by `getDialogResult` in the options you provide when showing the dialog.
+A function can be called when the OK button is selected. This function is specified by `getDialogResult` in the options you provide when showing the dialog.
 
 If a call to `getDialogResult` returns a non-null value, this value is then passed to the function specified by `okCallback` (also in the options) and the dialog is closed.
 
@@ -166,7 +168,7 @@ In this example, the `attachFormChanged` callback gets called when inputs on the
             // Get registrationForm instance which is registered in registrationFormContent.html
             dialog.getContributionInstance("registration-form").then(function (registrationFormInstance) {
             
-                // Keep a reference of registration form instance (to be used above in dialog options)
+                // Keep a reference of registration form instance (to be used previously in dialog options)
                 registrationForm = registrationFormInstance;
                 
                 // Subscribe to form input changes and update the Ok enabled state
@@ -246,4 +248,12 @@ To not show any buttons on the dialog, you can set the `buttons` attribute to `n
         buttons: null
     };
 ```
+
+### More information
+
+If you have a question or are looking for more information, consider going to one of the following areas:
+
+- [Azure DevOps on Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops)
+- [Developer Community](https://developercommunity.visualstudio.com/content/problem/post.html?space=21)
+
 

@@ -1,19 +1,18 @@
 ---
 title: Test Plan Progress Report 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Use the Test Plan Progress report to track the team's progress in testing the product 
 ms.assetid: 97d112d1-2d31-4890-b518-124fbeebea30
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 # Test Plan Progress Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 After the team creates test plans and starts to run tests by using the test management tools provided with Team Foundation Server (TFS) which include Test Runner, Microsoft Test Manager, or web portal **Test**. With the Test Plan Progress report, you can track the team's progress in testing the product.  
   
@@ -27,14 +26,14 @@ After the team creates test plans and starts to run tests by using the test mana
   
 -   To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
--   The team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node. If you need to add reports, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).  
+-   The team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node. If you need to add reports, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).  
   
 ##  <a name="Data"></a> Data in the Report  
  The data that appears in the Test Plan Progress report is derived from the data warehouse and the test results that are generated when tests are run by using Microsoft Test Manager. The report presents an area graph that shows the most recent result of running any test in the specified test plans over time. For more information, see [Run your tests](../../test/run-manual-tests.md).  
   
  The following illustration shows an example of a Test Plan Progress report:  
   
- ![Example Test Plan Progress report](_img/procguid_reports_testprogress.png "ProcGuid_Reports_TestProgress")  
+ ![Example Test Plan Progress report](media/procguid_reports_testprogress.png "ProcGuid_Reports_TestProgress")  
   
  The horizontal axis shows days in a sprint or iteration, and the vertical axis shows test points. A test point is a pairing of a test case with a test configuration in a specific test suite. For more information about test points, see [Reporting on testing progress for test plans](../../test/track-test-status.md). The following table describes the meaning of each test result:  
   
@@ -92,7 +91,7 @@ After the team creates test plans and starts to run tests by using the test mana
 ### Healthy Version of the Report  
  A healthy Test Plan Progress report shows a steady progress in test plans running and passing as the following illustration shows. Ideally, the report shows a relatively flat number of test cases for a given plan. As the development cycle progresses, the number of passing test cases should increase, and the numbers of test cases in other states should decrease.  
   
- ![Healthy version of Test Plan Progress](_img/procguid_testplanprogress_healthy.png "ProcGuid_TestPlanProgress_Healthy")  
+ ![Healthy version of Test Plan Progress](media/procguid_testplanprogress_healthy.png "ProcGuid_TestPlanProgress_Healthy")  
   
 ### Unhealthy Version of the Report  
  An unhealthy Test Plan Progress report shows one or more of the following indicators:  
@@ -105,12 +104,12 @@ After the team creates test plans and starts to run tests by using the test mana
   
      As the following illustration shows, the number of test cases that are passing, failing, or never run is flat. You might want to investigate the specific causes that affect each area.  
   
-     ![Unhealthy version of the Test Plan Progress](_img/procguid_testplanprogress_unhealthy.png "ProcGuid_TestPlanProgress_Unhealthy")  
+     ![Unhealthy version of the Test Plan Progress](media/procguid_testplanprogress_unhealthy.png "ProcGuid_TestPlanProgress_Unhealthy")  
   
 ##  <a name="Changing"></a> Filtering the Report  
  You can filter the Test Plan Progress report to show only those test cases that are defined for the iteration, product areas, test plans, or test plan states that you specify. The following illustration shows the available filters:  
   
- ![Filters for Test Plan Progress report](_img/procguid_planprogressfilters.png "ProcGuid_PlanProgressFilters")  
+ ![Filters for Test Plan Progress report](media/procguid_planprogressfilters.png "ProcGuid_PlanProgressFilters")  
   
 #### To change the time interval of the report  
   

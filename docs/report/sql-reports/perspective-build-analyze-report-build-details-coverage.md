@@ -1,21 +1,19 @@
 ---
 title: Analyze and report on build details and build coverage
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: View the measures, dimensions, and attributes in the SQL Server Analysis Services cube for Team Foundation Server
 ms.assetid: 36b4e35a-d81d-4851-bd49-8b23d177fb53
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
-ms.date: 10/17/17
+monikerRange: '< azure-devops'
+ms.date: 10/17/2017
 ---
 
 # Analyze and report on build details and build coverage using the Build perspective
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 By using the Build perspective, you can view just the measures, dimensions, and attributes in the SQL Server Analysis Services cube for Visual Studio Team Foundation Server that pertain to the build process. For example, you can use these measures to determine how many builds are failing and how much of the code changed within a build.  
 
@@ -26,7 +24,7 @@ By using the Build perspective, you can view just the measures, dimensions, and 
  The Build perspective is based on the relational tables that enable reporting on builds as either a property of the build, code coverage, or a changeset in version control. For more information, see [Build Details tables](table-reference-build-details.md), [Build Project tables](table-reference-build-project.md), [Build Coverage tables](table-reference-build-coverage.md), and [Build Changeset tables](table-reference-build-changeset.md).  
   
  
-![Build Measure Group](_img/rpt_cubemg.png "RPT_CubeMG")
+![Build Measure Group](media/rpt_cubemg.png "RPT_CubeMG")
 
 By using the Build perspective, you can create reports that answer the following questions:
 
@@ -47,19 +45,19 @@ By using the Build perspective, you can create reports that answer the following
 ##  Example: Build status report  
 By using PivotChart reports in Excel, you can display the build status over time, similar to the data in the following illustration.  
   
- ![Build Status report](_img/procguid_agileexcel.png "ProcGuid_AgileExcel")  
+ ![Build Status report](media/procguid_agileexcel.png "ProcGuid_AgileExcel")  
   
- The [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) process templates include the Build Status report in Excel. For more information, see [Build Status](../excel/build-status-excel-report.md).  
+ The [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) process templates include the Build Status report in Excel. For more information, see [Build Status](/previous-versions/azure/devops/report/excel/build-status-excel-report).  
   
 ### Pivot field selection and filters  
 
- ![Pivot Fields for Build Summary Status report](_img/alm_rpt_pivot_build.png "ALM_RPT_Pivot_Build")  
+ ![Pivot Fields for Build Summary Status report](media/alm_rpt_pivot_build.png "ALM_RPT_Pivot_Build")  
   
  You can create the summary report for build status by performing the following steps:  
   
 1.  In Excel, connect to the Analysis Services cube for Team Foundation Server, and insert a PivotChart report.  
   
-     For more information, see [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md).  
+     For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
   
 2.  Open the context menu for the chart and then choose **Change Chart Type**, **Area**, **Stacked Column**.  
   
@@ -117,7 +115,7 @@ By using PivotChart reports in Excel, you can display the build status over time
 ||Build Start Time|The date and time when the build started.|  
 ||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of builds: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build pipeline triggers](../../pipelines/build/triggers.md).|  
 ||Drop Location|The Uniform Resource Locator (URL) for the completed build. A URL specifies the protocol with which web browsers will to locate Internet resources. Each URL includes the name of the server on which the details of the build resides. You can also include the path to a resource.|  
-|Build Flavor|Build Flavor|(Published test results only) A name that designates the category of builds that was assigned to a set of completed builds that were published as part of a test run. For example, a build flavor can designate a beta release or final release. For more information, see [Command-Line options for publishing test results](https://msdn.microsoft.com/library/ms243151.aspx).|  
+|Build Flavor|Build Flavor|(Published test results only) A name that designates the category of builds that was assigned to a set of completed builds that were published as part of a test run. For example, a build flavor can designate a beta release or final release. For more information, see [Command-Line options for publishing test results](/previous-versions/ms243151(v=vs.140)).|  
 |Build Platform|Build Platform|The name of the platform for which an end-to-end (not desktop) build was made (for example, **x86** or **Any CPU**). For an example of a report that uses this attribute, see [Build Summary](build-summary-report.md). For more information, see [How do I build multiple configurations for multiple platforms?](../../pipelines/tasks/build/visual-studio-build.md#how-do-i-build-multiple-configurations-for-multiple-platforms).|  
 |Build Quality|Build Quality|The quality of the build. For example, you can rate a completed build's quality as **Ready for Deployment**, **Rejected**, or **Under Investigation**. |  
 |Build Status|Build Status Name|The current state of the build. Valid values are **Failed**, **Partially Succeeded**, **Stopped**, **Succeeded**, and **Unknown**.|  
@@ -131,12 +129,12 @@ By using PivotChart reports in Excel, you can display the build status over time
 ##  <a name="tracking"></a> Required activities  
  To create reports that contain useful data about builds, team members should review the information in the following topics:  
   
--   [Run tests in your build process](../../pipelines/test/test-build.md)   
--   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)  
+-   [Run tests in your build process](../../pipelines/index.yml)   
+-   [Using Code Coverage to Determine How Much Code is being Tested](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)  
   
 ## Related notes
--  [Build Quality](../excel/build-quality-excel-report.md)   
--  [Build Status](https://msdn.microsoft.com/library/dd695786.aspx)   
+-  [Build Quality](/previous-versions/azure/devops/report/excel/build-quality-excel-report)   
+-  [Build Status](/previous-versions/azure/devops/report/excel/build-status-excel-report)   
 -  [Build Quality Indicators](build-quality-indicators-report.md)   
 -  [Build Success Over Time](build-success-over-time-report.md)   
 -  [Build Summary](build-summary-report.md)   

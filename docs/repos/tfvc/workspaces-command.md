@@ -3,11 +3,7 @@ title: Workspaces Command
 titleSuffix: Azure Repos
 description: Workspaces Command
 ms.assetid: 4b6f05fb-0520-44f8-8a31-7108ff956a72
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,20 +12,24 @@ monikerRange: '>= tfs-2015'
 
 # Workspaces Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Displays information about workspaces in the system and updates cached information about a user name or computer name change on the server that is running Visual Studio Team Foundation Server.
 
 **Required Permissions**  
 To use the **workspaces** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf workspaces [/owner:ownername] [/computer:computername] 
-    [/collection:TeamProjectCollectionUrl] [/format:(brief|detailed)] 
-    [/updateUserName:oldUserName] [/updateComputerName:oldComputerName] 
-    [workspacename][/login:username,[password]]
+```
+tf workspaces [/owner:ownername] [/computer:computername] 
+[/collection:TeamProjectCollectionUrl] [/format:(brief|detailed|xml)] 
+[/updateUserName:oldUserName] [/updateComputerName:oldComputerName] 
+[workspacename][/login:username,[password]]
+```
 
-    tf workspaces /remove:(*|workspace1[,workspace2,...]) 
-    /collection:(*|TeamProjectCollectionUrl)
+```
+tf workspaces /remove:(*|workspace1[,workspace2,...]) 
+/collection:(*|TeamProjectCollectionUrl)
+```
 
 ## Parameters
 
@@ -63,7 +63,7 @@ To use the **workspaces** command, you must have the **Read** permission set to 
 </tr>
 <tr>
 <td><p><em>TeamProjectCollectionUrl</em></p></td>
-<td><p>The URL of the project collection that contains the workspaces about which you want to display information (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the project collection that contains the workspaces about which you want to display information (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
 </tr>
 <tr>
 <td><p><em>username</em></p></td>
@@ -90,7 +90,7 @@ To use the **workspaces** command, you must have the **Read** permission set to 
 </tr>
 <tr>
 <td><p><strong>/format</strong></p></td>
-<td><p>Specifies the format of the workspace information. <strong>Brief</strong> returns workspace information without mappings. <strong>Detailed</strong> returns workspace information and also the mappings. The detailed format can only be used when the <strong>/collection</strong> option is specified. <strong>Brief</strong> is the default value.</p></td>
+<td><p>Specifies the format of the workspace information. <strong>Brief</strong> returns workspace information without mappings. <strong>Detailed</strong> returns workspace information and also the mappings. <strong>Xml</strong> returns workspace information, mapping, latest access date, and also the owner aliases. The detailed format can only be used when the <strong>/collection</strong> option is specified. <strong>Brief</strong> is the default value.</p></td>
 </tr>
 <tr>
 <td><p><strong>/updateUserName</strong></p></td>
@@ -120,33 +120,43 @@ The **workspaces** command of the **tf** command-line utility displays informati
 
 For more information about how to edit workspace properties, see [Workspace Command](workspace-command.md).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 ## Examples
 The following example displays a list of all workspaces for the current user on the current computer.
 
-    c:\projects>tf workspaces
+```
+c:\projects>tf workspaces
+```
 
-The following example displays the list of all workspaces for all users on all computers that have been created in the following project collection at the address http://myserver:8080/tfs/DefaultCollection.
+The following example displays the list of all workspaces for all users on all computers that have been created in the following project collection at the address `http://myserver:8080/tfs/DefaultCollection`.
 
-    c:\projects>tf workspaces /owner:* /computer:* /collection:http://myserver:8080/tfs/DefaultCollection
+```
+c:\projects>tf workspaces /owner:* /computer:* /collection:http://myserver:8080/tfs/DefaultCollection
+```
 
-The following example displays detailed information about all workspaces that the current user has created in the project collection at the address http://myserver:8080/tfs/DefaultCollection.
+The following example displays detailed information about all workspaces that the current user has created in the project collection at the address `http://myserver:8080/tfs/DefaultCollection`.
 
-    c:\projects>tf workspaces /computer:* /format:detailed /collection:http://myserver:8080/tfs/DefaultCollection
+```
+c:\projects>tf workspaces /computer:* /format:detailed /collection:http://myserver:8080/tfs/DefaultCollection
+```
 
 The following example displays detailed information including a list of workspace mappings about the workspace "WS1," which is owned by the current user and is located on the current computer.
 
-    c:\projects>tf workspaces /format:detailed /collection:http://myserver:8080/tfs/DefaultCollection WS1
+```
+c:\projects>tf workspaces /format:detailed /collection:http://myserver:8080/tfs/DefaultCollection WS1
+```
 
-The following example removes all cached workspaces from the cache in the project collection at the address http://myserver:8080/tfs/DefaultCollection.
+The following example removes all cached workspaces from the cache in the project collection at the address `http://myserver:8080/tfs/DefaultCollection`.
 
-    c:\projects>tf workspaces /remove:* /collection:http://myserver:8080/tfs/DefaultCollection
+```
+c:\projects>tf workspaces /remove:* /collection:http://myserver:8080/tfs/DefaultCollection
+```
 
 ## See Also
 
 ### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)  
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))  
 [Workspace Command](workspace-command.md)  
 [Workfold Command](workfold-command.md)  
 ### Concepts
@@ -154,5 +164,5 @@ The following example removes all cached workspaces from the cache in the projec
 [Create a Workspace to Work with your Project](create-work-workspaces.md)  
 ### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)  
-[Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)  
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))  
+[Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)

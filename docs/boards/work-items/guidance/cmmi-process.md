@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 ms.custom: work-items
 description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards, Azure DevOps, & Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
 ms.topic: conceptual
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,24 +13,21 @@ ms.date: 04/11/2019
 ---
 
 # CMMI process
- 
-<meta name="keywords" content="CMMI tools" />
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They are based on the [Capability Maturity Model Integration (CMMI)](https://msdn.microsoft.com/library/ee461556.aspx) process.
+[!INCLUDE [temp](../../includes/version-all.md)]
 
-<img src="_img/cmmi-process-work-tracking-wits.png" alt="Agile process work item types" style="border: 1px solid #C3C3C3;" />  
+The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They are based on the [Capability Maturity Model Integration (CMMI)](./cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts) process.
+
+<img src="media/cmmi-process-work-tracking-wits.png" alt="Agile process work item types" />  
 
 In addition to the WITs, teams have access to a set of work item queries to track information, analyze progress, and make decisions.  
 
-[!INCLUDE [temp](../../_shared/process-customize.md)] 
+[!INCLUDE [temp](../../includes/process-customize.md)] 
 
 <a id="start-using" />
 
 ## Plan and track work with CMMI
-
-<meta name="description" content="CMMI project management" />
 
 Teams plan their project by capturing features and requirements. When teams work in sprints, they define tasks and link them to requirements. To gain insight into a rollup of requirements across teams, program managers link requirements to a feature. Blocking issues are tracked using issues. For details on using these WITs, see [CMMI process work item types and workflow](cmmi-process-workflow.md)
 
@@ -40,7 +35,7 @@ The essential flow for getting started is as shown. To get started using Scrum o
 
 *Click one of the following images to go to the linked article.*
 
-[![Define stories](../../backlogs/_img/overview/gs-planning-define-stories.png)](../../backlogs/create-your-backlog.md)[![Organize backlog](../../backlogs/_img/overview/gs-planning-organize-backlog.png)](../../backlogs/organize-backlog.md)[![Manage bugs](../../backlogs/_img/overview/gs-planning-manage-bugs.png)](../../backlogs/manage-bugs.md)[![Manage issues](../../backlogs/_img/overview/gs-planning-manage-issues.png)](../../backlogs/manage-issues-impediments.md)
+[![Define stories](../../backlogs/media/overview/gs-planning-define-stories.png)](../../backlogs/create-your-backlog.md)[![Organize backlog](../../backlogs/media/overview/gs-planning-organize-backlog.png)](../../backlogs/organize-backlog.md)[![Manage bugs](../../backlogs/media/overview/gs-planning-manage-bugs.png)](../../backlogs/manage-bugs.md)[![Manage issues](../../backlogs/media/overview/gs-planning-manage-issues.png)](../../backlogs/manage-issues-impediments.md)
 
 > [!NOTE]  
 > A work item is a database record that contains the definition, assignment, priority, and state of work. Work item types define the template of fields, workflow, and form for each type. Work items can be linked to each other to support tracking dependencies, roll up of work, and reports.  
@@ -52,36 +47,35 @@ The essential flow for getting started is as shown. To get started using Scrum o
 
 You can use work item queries to list work items based on their type, such as change requests, bugs, tasks, and requirements.  
 
-[!INCLUDE [temp](../../_shared/shared-queries.md)] 
+[!INCLUDE [temp](../../includes/shared-queries.md)] 
 
 
 ::: moniker range="<= tfs-2018"
 
 Or, use one of the shared queries that the CMMI process provides.
 
-![CMMI shared queries](_img/IC667909.png)
+![CMMI shared queries](media/IC667909.png)
 
 [Descriptions of predefined queries](#predefined-queries) are listed later in this article.  
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/quick-tips-shared-query.md)] 
+[!INCLUDE [temp](../../includes/quick-tips-shared-query.md)] 
 
 ## Monitor progress  
 
-<meta name="description" content="CMMI monitor progress" />
 All processes&mdash;Agile, Scrum, and CMMI&mdash;support <a href="../../../report/dashboards/overview.md" data-raw-source="[building status and trend charts and dashboards](../../../report/dashboards/overview.md)">building status and trend charts and dashboards</a>. In addition, several charts are automatically built based on the Agile tools you use. These charts display within the web portal.  
 
 ## Create light-weight charts  
 To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
 
-[![Edit query](../../../report/dashboards/_img/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/_img/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/_img/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
+[![Edit query](../../../report/dashboards/media/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/media/gs-chart-create.png)](../../../report/dashboards/charts.md)[![Add dashboard.](../../../report/dashboards/media/gs-chart-add-dashboard.png)](../../../report/dashboards/add-charts-to-dashboard.md)  
 
 
-[!INCLUDE [temp](../../_shared/powerbi-reports-links.md)] 
+[!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 <a id="reports"></a>
 ## SQL Server reports  
 
@@ -98,14 +92,14 @@ If you need to add reporting services or update reports to the latest versions, 
 
 You can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to perform common tasks quickly. These dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
 
-To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
+To use [SharePoint dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards) your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../project/configure-or-add-a-project-portal.md).
 
 ::: moniker-end
 
 
 ## Related notes  
 
-[!INCLUDE [temp](../../_shared/create-team-project-links.md)]
+[!INCLUDE [temp](../../includes/create-team-project-links.md)]
 
 
 ### CMMI process versions  
@@ -115,7 +109,7 @@ As updates are made to the CMMI process template, the version number is updated.
 > [!div class="mx-tdCol2BreakAll"]
 > |TFS version | CMMI name | Major version |
 > |-------------|-------------------|--------------|
-> | Azure DevOps Server 2019 | CMMI | 17 |
+> | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | CMMI | 17 |
 > | TFS 2018 | CMMI | 16 |
 > | TFS 2017 | CMMI | 15 |
 > | TFS 2015 | CMMI | 7 |
@@ -138,7 +132,7 @@ The situations and working practices of development teams vary widely, and most 
 
 Using the CMMI template and guidance can help you achieve the aims of CMMI if you use it as part of a process improvement program. You should adapt this guidance to your own situation, which will depend on the type and history of the product that you are developing, the project's scale, the background of the team members, and accepted practices in your organization.
 
- This guidance was developed in partnership with David Anderson. For more information, see the following Web page: [David J Anderson & Associates](http://go.microsoft.com/fwlink/?LinkId=178527).  
+ This guidance was developed in partnership with David Anderson. For more information, see the following Web page: [David J Anderson & Associates](https://djaa.com/).  
 
 
 <a id="predefined-queries" />
@@ -211,7 +205,7 @@ Product owners can use the shared queries that are described in the following ta
 > | Blocked Work Items | Lists all work items where the **Blocked** field is set to **Yes**.<br /><br />Only requirements, tasks, bugs, issues, and change requests can be blocked. |
 > | Corrective Action Status | Lists all tasks whose **Task Type** is set to **Corrective Action**. |
 > | Mitigation Actions | Lists all tasks whose **Task Type** is set to **Mitigation Action**. |
-> | Open Issues | Lists all issues that are not closed.<br /><br />The [Issues workbook](https://msdn.microsoft.com/library/ee461548) references this query. |
+> | Open Issues | Lists all issues that are not closed.<br /><br />The [Issues workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts) references this query. |
 > | Risks | Lists all risks, sorted by ID. |
 
 ::: moniker-end
@@ -222,10 +216,9 @@ Product owners can use the shared queries that are described in the following ta
 
 You can use Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your project has been configured with a SharePoint portal. Each workbook references a shared query.  
 
--  The [Issues workbook](../../../report/sharepoint-dashboards/workbooks.md) uses the Open Issues shared query
--  The [Triage workbook](../../../report/sharepoint-dashboards/workbooks.md) uses the Untriaged Work Items shared query  
+-  The [Issues workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) uses the Open Issues shared query
+-  The [Triage workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) uses the Untriaged Work Items shared query  
 
 Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.
  
 ::: moniker-end
-

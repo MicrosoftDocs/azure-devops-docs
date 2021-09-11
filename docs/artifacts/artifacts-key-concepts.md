@@ -1,12 +1,8 @@
 ---
 title: Key concepts for Azure Artifacts
-description: Key concepts for Azure Artifacts within Azure DevOps Services and Team Foundation Server
-ms.prod: devops
+description: Important concepts for Azure Artifacts
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
 ms.date: 2/6/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -28,7 +24,7 @@ If a package is broken, buggy, or shares unintended content (like secrets), the 
 The only way to work around the immutability constraint is to create a new feed and publish the desired package version to the new feed.
 
 > [!NOTE]
-> If you delete a feed to recreate it, it will take a few minutes to be able to create a new feed with the same name.
+> If you delete a feed to recreate it, it will go in feed recycle bin and will be permanently deleted after 30 days. Feed name will free up once the feed is permanently deleted from the feed recycle bin.
 
 ## Recycle Bin
 

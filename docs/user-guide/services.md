@@ -1,36 +1,63 @@
 ---
-title: Features and services included
+title: Features and services included with Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Understand the services provided by in Azure DevOps Services and Team Foundation Server 
+description: Understand the services provided in Azure DevOps. 
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.topic: overview
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: chcomley
 ms.author: chcomley
 author: chcomley
-ms.date: 04/05/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
+ms.date: 11/11/2020
 ---
 
 # What features and services do I get with Azure DevOps?
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 With Azure DevOps, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client/server model. Many of them are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build pipelines, and work tracking, can also be managed through a client.  
 
-Access web services through the following areas, as shown in the following image.
 
 ::: moniker range=">= azure-devops-2019"
 
-![Azure DevOps Services, main](_img/services-hubs-vert.png)
+You access Azure DevOps services through the left pane, as shown in the following image. To jump to information for each major service, see the associated articles. 
+
+---
+:::row:::
+   :::column span="1":::
+      ![Azure DevOps Services, main](media/services-hubs-vert.png)
+   :::column-end:::
+   :::column span="1":::
+      - [Dashboards](../report/dashboards/overview.md) 
+      - [Wiki](../project/wiki/about-readme-wiki.md)
+      - [Boards](../boards/get-started/what-is-azure-boards.md)
+      - [Repos](..//repos/get-started/what-is-repos.md)
+      - [Pipelines](../pipelines/get-started/pipelines-get-started.md)
+      - [Test Plans](../test/overview.md)
+      - [Artifacts](../artifacts/overview.md)
+   :::column-end:::
+:::row-end:::
+---
+
+
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![Azure DevOps Services, main](../_img/services-hubs.png)  
+You access Azure DevOps services through the top navigational bar, as shown in the following image. To jump to information for each major service, see the associated articles. 
+
+![Azure DevOps Services, main](../media/services-hubs.png) 
+
+- [Dashboards](../report/dashboards/overview.md) 
+- [Code](../repos/get-started/what-is-repos.md)
+- [Work](../boards/get-started/what-is-azure-boards.md)
+- [Build & Release](../pipelines/get-started/pipelines-get-started.md)
+- [Test](../test/overview.md)
+- [Wiki](../project/wiki/about-readme-wiki.md)
+
 
 ::: moniker-end
 
@@ -49,13 +76,13 @@ From **Dashboards**, you gain access to user-configurable dashboards.
 
 ::: moniker range=">= azure-devops-2019"
 
-![Azure DevOps Services, main](_img/dashboard-overview.png)
+![Azure DevOps Services, Dashboards.](media/dashboard-overview.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-<img src="../report/dashboards/_img/dashboard-view-with-widgets.png" alt="Dashboard, Overview" style="border: 2px solid #C3C3C3;" />
+<img src="../report/dashboards/media/dashboard-view-with-widgets.png" alt="Dashboard, Overview" />
 
 ::: moniker-end
 
@@ -63,7 +90,7 @@ You can do the following tasks in **Dashboards**:
 
 - Add, configure, and manage dashboards
 - Configure widgets that you add to dashboards
-- Quickly navigate to different areas of your project
+- Quickly go to different areas of your project
 
 To learn more, see [Dashboards](../report/dashboards/dashboards.md).
 
@@ -86,7 +113,7 @@ With TFVC, developers have only one version of each file on their dev machines. 
 
 From **Repos**, you gain access to your source control Git-based or Team Foundation Version Control (TFVC) repositories to support version control of your software projects. These repositories are private.
 
-![Azure Repos, Git files page](_img/repos-git-hub.png)
+![Azure Repos, Git files page](media/repos-git-hub.png)
 
 ::: moniker-end
 
@@ -94,7 +121,7 @@ From **Repos**, you gain access to your source control Git-based or Team Foundat
 
 From **Code**, you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
 
-<img src="_img/services/code-git-hub.png" alt="Code, Git, files page" style="border: 2px solid #C3C3C3;" />
+<img src="media/services/code-git-hub.png" alt="Code, Git, files page" />
 
 ::: moniker-end
 
@@ -105,11 +132,11 @@ From Azure Repos for Git, you can do the following tasks:
 - Review, create, approve, comment on, and complete pull requests  
 - Add and manage Git tags
 
-To learn more, see the overviews for [Git](../repos/git/overview.md) or [TFVC](../repos/tfvc/overview.md).
+To learn more, see the overviews for [Git](../repos/git/index.yml) or [TFVC](../repos/tfvc/index.yml).
 
 ## Plan and track work
 
-Software development projects require ways to easily share information and track the status of work, tasks, issues, or code defects. In the past, perhaps you used one or more tools. For example, Microsoft Excel, Microsoft Project, a bug tracking system, or a combination of tools. Now, many teams have adopted Agile methods and practices to support planning and development.
+Software development projects require ways to easily share information and track the status of work, tasks, issues, or code defects. In the past, perhaps you used one or more tools. Microsoft Excel, Microsoft Project, a bug tracking system, or a combination of tools, for example. Now, many teams have adopted Agile methods and practices to support planning and development.
 
 Our systems provide several types of work items that you use to track features, requirements, user stories, tasks, bugs, and issues. Each work item is associated with a work item type and a set of fields that can be updated, as progress is made.
 
@@ -126,7 +153,7 @@ Project managers and developers share information by tracking work items on the 
 
 From **Boards**, you gain access to Agile tools to support planning and tracking work.
 
-![Azure Boards backlogs](_img/boards-backlogs.png)
+![Azure Boards backlogs](media/boards-backlogs.png)
 
 ::: moniker-end
 
@@ -134,7 +161,7 @@ From **Boards**, you gain access to Agile tools to support planning and tracking
 
 From **Work**, you gain access to Agile tools to support planning and tracking work.
 
-<img src="_img/services/work-hub-backlogs.png" alt="Work, Backlogs page" style="border: 2px solid #C3C3C3;" />
+<img src="media/services/work-hub-backlogs.png" alt="Work, Backlogs page" />
 
 ::: moniker-end
 
@@ -162,7 +189,8 @@ The rapid and reliable release of software comes from automating as many process
 
 **Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
-![Builds, Azure Pipelines page](_img/builds-pipelines-page.png)
+> [!div class="mx-imgBorder"] 
+> ![Azure Pipelines landing page](media/pipelines-landing-page.png)
 
 ::: moniker-end
 
@@ -170,7 +198,7 @@ The rapid and reliable release of software comes from automating as many process
 
 **Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
-<img src="_img/services/build-release-hub.png" alt="Build-Release, Build pipelines page" style="border: 2px solid #C3C3C3;" />
+<img src="media/services/build-release-hub.png" alt="Build-Release, Build pipelines page" />
 
 ::: moniker-end
 
@@ -179,7 +207,7 @@ Use pipelines to implement continuous integration and continuous delivery.
 - **Build automation**: Define the steps to take during build and the triggers that start a build.
 - **Release management**: Supports a rapid release cadence and management of simultaneous releases. You can configure release pipelines that represent your environments from development to production. Run automation to deploy your app to each environment. Add approvers to confirm that the app has been successfully deployed in an environment. Create your release manually or automatically from a build. Then track your releases as they're deployed to various environments.
 
-To learn more, see [Continuous integration on any platform](../pipelines/overview.md).
+To learn more, see [Continuous integration on any platform](../pipelines/get-started/what-is-azure-pipelines.md).
 
 ## Manual and exploratory testing  
 
@@ -189,7 +217,7 @@ Test features support manual and exploratory testing, and continuous testing.
 
 **Test Plans** supports creating and managing manual tests.
 
-![Test Plans](_img/test-plans-vert.png)
+![Test Plans](media/test-plans-vert.png)
 
 ::: moniker-end
 
@@ -197,7 +225,7 @@ Test features support manual and exploratory testing, and continuous testing.
 
 **Test** supports creating and managing manual tests.
 
-<img src="_img/services/test-hub.png" alt="Test" style="border: 2px solid #C3C3C3;" />
+<img src="media/services/test-hub.png" alt="Test" />
 
 ::: moniker-end
 
@@ -212,7 +240,7 @@ With test features, you gain access to the following features:
 - Browser-based test execution on any platform  
 - Real-time charts for tracking test activity
 
-To learn more, see [Testing overview](../test/index.md).
+To learn more, see [Testing overview](../test/index.yml).
 
 ## Collaboration services
 
@@ -284,7 +312,7 @@ Service hooks enable you to complete tasks on other services when events happen 
 
 The following services are available as the target of service hooks. To learn about other apps and services that integrate with Azure DevOps, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 
-For the latest set of supported services, see [Integrate with service hooks](../service-hooks/index.md).
+For the latest set of supported services, see [Integrate with service hooks](../service-hooks/overview.md).
 
 ## Cloud-hosted services based on usage
 
@@ -301,7 +329,7 @@ Azure provides cloud-hosted services to support application development and depl
 
 To browse the directory of integrated services, features, and bundled suites, see [Azure products](https://azure.microsoft.com/services/).  
 
-For continuous delivery to Azure from Azure DevOps Services, see [Automatically build and deploy to Azure web apps or cloud services](https://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso/).
+For continuous delivery to Azure from Azure DevOps Services, see [Automatically build and deploy to Azure web apps or cloud services](/azure/cloud-services/cloud-services-choose-me).
 
 ## Administrative services
 
@@ -309,13 +337,13 @@ There are features and tasks associated with administering a collaborative softw
 
 ::: moniker range=">= azure-devops-2019"
 
-![Project settings](_img/project-settings.png)
+![Project settings](media/project-settings.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-<img src="_img/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" />
+<img src="media/tour-admin-project-level.png" alt="Product backlog" />
 
 ::: moniker-end
 
@@ -326,7 +354,4 @@ There are features and tasks associated with administering a collaborative softw
 - [Software development roles](roles.md)  
 - [Azure DevOps pricing](https://visualstudio.microsoft.com/team-services/pricing/)
 - [Azure DevOps data protection overview](../organizations/security/data-protection.md)
-
-<!---
-**System Center integration**: Enables a release pipeline to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and **VMware Resource Deployment**: Connect to a VMware vCenter Server from Azure DevOps Services or Azure DevOps Server to provision, start, stop, or snapshot VMware virtual machines. 
--->
+ 

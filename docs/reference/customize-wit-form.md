@@ -3,19 +3,17 @@ title: Customize the layout of the work item web form
 titleSuffix: Azure DevOps & TFS
 description: Customize the web version of the work item form in Azure DevOps Services & Team Foundation Server    
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '< azure-devops' 
 ms.date: 12/15/2017  
 ---
 
 # Customize the work tracking web form  
 
-[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]  
+[!INCLUDE [temp](../includes/dev15-and-ts-version-header.md)]  
 
 
 > [!IMPORTANT]  
@@ -36,13 +34,13 @@ You customize transformed WITs in much the same way as you have previously.  The
 
 Use this sequence when you use the On-premises XML process model, i.e., you manage your TFS work tracking customization  through import of individual XML definition files. 
 
-[![Export WIT definition file](_img/cust-wit-form-export-def-file.png)](#witadmin)[![Edit XML definition file](_img/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import WIT definition file](_img/cust-wit-form-import-def-file.png)](#witadmin)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
+[![Export WIT definition file](media/cust-wit-form-export-def-file.png)](#witadmin)[![Edit XML definition file](media/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import WIT definition file](media/cust-wit-form-import-def-file.png)](#witadmin)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
 
 
 ## Import/export process zip files 
 Use this sequence when you use the Hosted XML process model, i.e., when you manage your work tracking customization by importing a process or process template. 
 
-[![Export process](_img/cust-wit-form-export-process.png)](../organizations/settings/work/import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](../organizations/settings/work/import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
+[![Export process](media/cust-wit-form-export-process.png)](../organizations/settings/work/import-process/import-process.md#export-process)[![Edit XML definition file(s)](media/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import process](media/cust-wit-form-import-process.png)](../organizations/settings/work/import-process/import-process.md)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
 
 
 The main difference is that there are now two main layout sections within the **FORM** node. The first section, contained within the **Layout** element, defines the form layout when viewed through a client such as Visual Studio. The second section, contained within the **WebLayout** element, defines the form layout when viewed through a web browser. 
@@ -74,7 +72,7 @@ See the following topics to make the indicated customizations:
 
 1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).  
   
-1. Open a Command Prompt window according to the instructions provided in [witAdmin: Customize and manage objects for tracking work](/azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work#run-witadmin-tool). 
+1. Open a Command Prompt window according to the instructions provided in [witAdmin: Customize and manage objects for tracking work](./witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md#run-witadmin-tool). 
 
    For example:
   
@@ -84,15 +82,19 @@ See the following topics to make the indicated customizations:
 
 2. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
-       witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
+    ```
+    witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
+    ```
 
-   An example of a <em>CollectionURL</em> for an organization is https://dev.azure.com/*OrganizationName*.
+   An example of a <em>CollectionURL</em> for an organization is https:\//dev.azure.com/*OrganizationName*.
 
 3. Edit the file. For details, see [WebLayout XML elements](xml/weblayout-xml-elements.md).  
 
 4. Import the WIT definition file.  
 
-       witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"  
+    ```
+    witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"  
+    ```
 
 5. Open either the web portal to view the changes. If the client is already open, refresh the page. 
 
@@ -101,7 +103,7 @@ See the following topics to make the indicated customizations:
    For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
 
 
-[!INCLUDE [temp](../_shared/process-editor.md)]  
+[!INCLUDE [temp](../includes/process-editor.md)]  
 
 <a id="resizing"></a>  
 ## Layout and resizing 
@@ -157,5 +159,4 @@ If you're new to WIT customization, see [Add and modify a WIT](add-modify-wit.md
 
 You'll receive a warning when you import a modified WIT definition if you add a **Control** element for a required field in only the **WebLayout** or **Layout** node, but not the other. 
 
-You'll receive an error if you enable the new form, and then modify a WIT definition in which you delete the **WebLayout** node.  
-
+You'll receive an error if you enable the new form, and then modify a WIT definition in which you delete the **WebLayout** node.
