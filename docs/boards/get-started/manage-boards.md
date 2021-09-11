@@ -1,7 +1,7 @@
 ---
-title: Quickstart guide to customizing your board
+title: Customize your Azure Boards project
 titleSuffix: Azure Boards 
-description: Customize your issues board to show fields, add columns, and change card color
+description: Learn how to customize your issues board to show fields, add columns, and change card color.
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.prod: devops
@@ -11,34 +11,34 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 07/17/2019
+ms.date: 09/09/2021
 ---
 
 
-# Configure settings and manage your Azure Boards project
+# Configure and manage your Azure Boards project
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You can start using Azure Boards and configure resources as you go. No up-front work is required. Most settings define defaults.
+You can start using Azure Boards project and configure resources as you go. No up-front work is required. Most settings define defaults.
 
-As an organization owner or a project admin, there are a few items you might want to attend to at the start, to ensure a smooth operational experience. If you own a large organization, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.
+As an organization owner or a project admin, there are a few items you might want to attend to at the start. If you own a large organization, you'll want to consider other tasks to structure your projects. More tasks can be structured to help support multiple teams or software development apps.
 
-Specifically, consider performing one or more of the following tasks: 
+Specifically, consider doing one or more of the following tasks: 
 
 ::: moniker range=">= tfs-2018"
 
 - [Add users to your project](#add-users). To assign users to issues or tasks, you need to add them to your project. 
-- [Share your project vision](#share-vision). To support people who'll contribute to your project, provide them some directions via the project summary page, or through your [project wiki](../../project/wiki/index.md). 
-- [Define area and iteration paths](#areas-iterations). If you work with Scrum methods or want to time-box your issues and tasks, you'll want to define Iteration Paths.
-- [Customize your issues or tasks](#customize). If you need additional fields to track data, or other type of work item, you can customize your process.  
+- [Share your project vision](#share-vision). To support people who will contribute to your project, provide them some directions via the project summary page, or through your [project wiki](../../project/wiki/index.md). 
+- [Define area and iteration paths](#areas-iterations). Define Iteration Paths if you work with Scrum methods or want to time-box your issues and tasks.
+- [Customize your issues or tasks](#customize). If you need more fields to track data, or other type of work item, you can customize your process.  
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 
 - [Add users to your project](#add-users). To assign users to issues or tasks, you need to add them to your project. 
-- [Define area and iteration paths](#areas-iterations). If you work with Scrum methods or want to time-box your issues and tasks, you'll want to define Iteration Paths.
-- [Customize your issues or tasks](#customize). If you need additional fields to track data, or other type of work item, you can customize your process.  
+- [Define area and iteration paths](#areas-iterations). Define Iteration Paths if you work with Scrum methods or want to time-box your issues and tasks.
+- [Customize your issues or tasks](#customize). If you need more fields to track data, or other type of work item, you can customize your process.  
 
 ::: moniker-end
 
@@ -75,7 +75,7 @@ If you support several products or feature areas, you can assign issues and task
 
 ## Customize your work item types
 
-You and your team can start using all work-tracking tools immediately after you create a project. But often, one or more users want to customize the experience to meet one or more business needs. Although you can customize the process easily through the user interface, you'll want to establish a methodology for who will manage the updates and evaluate requests. 
+You and your team can start using all work-tracking tools immediately after you create a project. But often, one or more users want to customize the experience to meet one or more business needs. You can customize the process easily through the user interface. As such, you'll want to establish a methodology for who will manage the updates and evaluate requests. 
 
 > [!NOTE]   
 > By default, organization owners and users added to the **Project Collection Administrators** security group are granted permission to create, edit, and manage processes used to customize the work-tracking experience. If you want to lock down who is able to perform these tasks, you can set permissions at the organization-level to **Deny**.  
@@ -100,7 +100,7 @@ To learn more, see these articles:
 
 ## Review and update notifications
 
-A number of notifications are predefined for each project. Notifications are based on subscription rules. Subscriptions arise from the following areas:
+Many notifications are predefined for each project. Notifications are based on subscription rules. Subscriptions arise from the following areas:
 
 - [Out-of-the-box or default subscriptions](../../notifications/oob-built-in-notifications.md).
 - [Team notifications](../../notifications/howto-manage-team-notifications.md), managed by a team administrator.

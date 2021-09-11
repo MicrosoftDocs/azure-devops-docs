@@ -1,7 +1,7 @@
 ---
 title: Key concepts and terminology for Azure Boards
 titleSuffix: Azure Boards
-description: Key definitions for objects and items used to plan and track work by using Azure Boards
+description: Learn about key definitions in Azure Boards. For example, learn about objects and items used to plan and track work.
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.prod: devops
@@ -11,14 +11,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '<= azure-devops'
-ms.date: 07/17/2019
+ms.date: 09/09/2021
 ---
 
 # Key concepts and terms used for Azure Boards 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Here are definitions of key concepts and artifacts used in Azure Boards. For more information, see also: 
+Here are definitions of key concepts and artifacts used in Azure Boards. For more information, see: 
 - [Kanban key concepts](../boards/kanban-key-concepts.md)
 - [Sprints and scrum key concepts](../sprints/scrum-key-concepts.md)
 - [Work item field index](../work-items/guidance/work-item-field.md)
@@ -34,9 +34,9 @@ This suite of web-based tools is used to track work and support Agile methodolog
 
 [!INCLUDE [temp](../../_shared/glossary-terms/area-paths.md)] 
 
-## Bug 
+## Bug work item
 
-A bug is a type of work item that records a potential source of dissatisfaction with the product. Bug is the common name of a work item type that's used to track code defects. The Bug work item type is available with the Agile, Scrum, and CMMI processes.
+A bug is a type of work item. A bug records a potential source of dissatisfaction with the product. Bug is the common name of a work item type that's used to track code defects. The Bug work item type is available with the Agile, Scrum, and CMMI processes.
 
 [!INCLUDE [temp](../../_shared/glossary-terms/collections.md)] 
 
@@ -44,9 +44,9 @@ A bug is a type of work item that records a potential source of dissatisfaction 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/favorites.md)] 
 
-## Field 
+## Fields 
 
-Fields are used to track a piece of information about the work to perform. Values you assign to a field are stored in the work-tracking data store. You can use the data store to query and generate charts to view status and trends. Your project contains 100 or more data fields. To update data, you [modify the data field within a work item](plan-track-work.md). Each work item is associated with a work item type (WIT). The data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](../work-items/guidance/work-item-field.md). 
+Fields are used to track a piece of information about the work to do. Values you assign to a field are stored in the work-tracking data store. You can use the data store to query and generate charts to view status and trends. Your project contains 100 or more data fields. To update data, you [modify the data field within a work item](plan-track-work.md). Each work item is associated with a work item type (WIT). The data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/follow.md)] 
 
@@ -54,11 +54,11 @@ Fields are used to track a piece of information about the work to perform. Value
 
 The Inheritance process model is used to customize work-tracking objects and Agile tools for a project through the user interface. This process model is available only for accounts hosted on the Azure DevOps Services cloud platform. Projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md).
 
-## Issue 
+## Issue work item
 
-**Agile process**: An issue is a type of work item that defines an item that you want to track as it may impact the completion of other work. It is defined for the Agile process and doesn't appear on any backlog or board. See [Manage issues and impediments](../backlogs/manage-issues-impediments.md)). 
+**Agile process**: An issue is a type of work item that defines an item that you want to track as it may impact the completion of other work. It's defined for the Agile process and doesn't appear on any backlog or board. See [Manage issues and impediments](../backlogs/manage-issues-impediments.md)). 
 
-**Basic process**: An issue is a type of work item that defines some work or code defect that needs to be tracked. It is defined for the Basic process and appears on the product backlog and [Issues Kanban board](plan-track-work.md). 
+**Basic process**: An issue is a type of work item that defines some work or code defect that needs to be tracked. It's defined for the Basic process and appears on the product backlog and [Issues Kanban board](plan-track-work.md). 
 
 [!INCLUDE [temp](../_shared/basic-process-note.md)] 
 
@@ -66,7 +66,7 @@ The Inheritance process model is used to customize work-tracking objects and Agi
 
 ## Kanban board 
 
-A Kanban board is an interactive, electronic signboard that supports visualization of the flow of work from concept to completion and lean methods. To learn more, see [Kanban basics](../boards/kanban-quickstart.md).
+A Kanban board is an interactive, electronic signboard. The board supports visualization of the flow of work from concept to completion and lean methods. To learn more, see [Kanban basics](../boards/kanban-quickstart.md).
 
  
 [!INCLUDE [temp](../../_shared/glossary-terms/links-and-link-types.md)] 
@@ -97,7 +97,7 @@ A picklist specifies an enumerated set of values that appear within a drop-down 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/teams.md)] 
 
-## User story
+## User story work item
 
 A user story is a type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank user stories. A user story is defined with the Agile process. To learn more, see [Agile process work item types and workflow](../work-items/guidance/agile-process-workflow.md). 
 

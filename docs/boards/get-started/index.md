@@ -1,7 +1,7 @@
 ---
-title: Get started guide for Azure Boards 
-titleSuffix: Azure Boards & TFS
-description: Sign up and get started using Azure Boards 
+title: Get started with Azure Boards 
+titleSuffix: Azure Boards
+description: Learn how to sign up and start using Azure Boards. Use Azure Boards to add and track work items on a Kanban board.
 ms.custom: boards-get-started 
 ms.prod: devops
 ms.technology: devops-new-user
@@ -11,11 +11,11 @@ ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 07/24/2019
+ms.date: 09/09/2021
 ---
 
 
-# Start using Azure Boards    
+# How to get started with Azure Boards 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -28,19 +28,19 @@ Then, read [Plan and track work](plan-track-work.md) to start adding and trackin
 > 
 > If you use GitHub and want to track your issues in Azure Boards, see [GitHub & Azure Boards](../github/index.md).
 
-If you are tasked with managing Azure Boards settings, review [Manage your Azure Boards project](manage-boards.md) for additional configurations and resources that you may want to make. 
+If you're tasked with managing Azure Boards settings, review [Manage your Azure Boards project](manage-boards.md) for other configurations and resources that you may want to make. 
 
-## Concepts
+## Azure Boards concepts
 
 - [Why use Azure Boards?](why-use-azure-boards.md)
 - [Key concepts](key-concepts.md)
 
-## Reference 
+## Azure Boards reference
 
 - [System fields reference](../work-items/guidance/basic-field-reference.md)  
 - [Default permissions & access (Security)](permissions-access-boards.md) 
 
-## Additional resources
+## More resources
 
 - [Best tool for the job](../work-items/best-tool-add-update-link-work-items.md)  
 - [Connect a project to GitHub](../../boards/github/connect-to-github.md)  

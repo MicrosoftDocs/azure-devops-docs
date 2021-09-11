@@ -1,7 +1,7 @@
 ---
-title: Quickstart guide to plan and track work for either the Basic or Agile process
+title: Plan and track work in Azure Boards with Basic or Agile processes
 titleSuffix: Azure Boards 
-description: Plan and track work in your new team project on Azure Boards
+description: Learn how to plan and track work in your new team project in Azure Boards.
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.prod: devops
@@ -11,15 +11,15 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 08/23/2019
+ms.date: 09/09/2021
 ---
 
 
-# Plan and track work  
+# Plan and track work in Azure Boards
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board for the Basic process, or creating user stories and tasks using for the Agile process. 
+You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board. You can learn the Basic process or the Agile process for creating these items. 
 
 > [!NOTE]  
 > The Basic process is currently only available from Azure DevOps Services. For on-premises deployments, choose the Agile process. 
@@ -30,7 +30,7 @@ Choose either the **Basic process** or **Agile process** for guidance depending 
 
 #### [Basic process](#tab/basic-process) 
 
-The Basic process provides three work item types&mdash;epics, issues, and tasks&mdash;to plan and track work. We recommend you start by adding issues to track your user stories, bugs, or feature items. If you need to group them into a hierarchy, you can define epics. If you want to track additional details of work, you can add tasks to an issue. 
+The Basic process provides three work item types&mdash;epics, issues, and tasks&mdash;to plan and track work. We recommend you start by adding issues to track your user stories, bugs, or feature items. If you need to group them into a hierarchy, you can define epics. To track other work details, you can add tasks to an issue. 
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
@@ -39,12 +39,12 @@ The Basic process provides three work item types&mdash;epics, issues, and tasks&
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
-Here we show how to add issues and child tasks from the web portal and add details to those work items . 
+Here we show how to add issues and child tasks from the web portal and add details to those work items. 
 
 
 #### [Agile process](#tab/agile-process) 
 
-The Agile process provides several work item types&mdash;for example, user stories, tasks, bugs, features, and epics among others&mdash;to plan and track work. We recommend you start by adding user stories. If you need to group them into a hierarchy, you can define features. If you want to track additional details of work, you can add tasks to a user story.  
+The Agile process provides several work item types&mdash;for example, user stories, tasks, bugs, features, and epics among others&mdash;to plan and track work. We recommend you start by adding user stories. If you need to group them into a hierarchy, you can define features. To track other work details, you can add tasks to a user story.  
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
@@ -53,7 +53,7 @@ The Agile process provides several work item types&mdash;for example, user stori
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
-Here we show how to add user stories and child tasks from the web portal and add details to those work items . 
+Here we show how to add user stories and child tasks from the web portal and add details to those work items. 
 
 * * * 
 
@@ -74,7 +74,7 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 
 <a id="define-new-work">  </a>
 
-## Open the Kanban board 
+## Open your Kanban board 
 
 #### [Basic process](#tab/basic-process) 
 
@@ -154,7 +154,7 @@ For example, here we assign the issue to Raisa Pokrovskaya and we add a discussi
 
 Choose **Save & Close** when done. 
 
-### Field description
+### Field descriptions
 
 <table valign="top" width="100%">
 <tbody valign="top" >
@@ -167,7 +167,7 @@ Choose **Save & Close** when done.
 	<td><p>Enter a description of 255 characters or less. You can always modify the title later.</p></td></tr>
 <tr>
     <td><p><a href="/azure/devops/boards/queries/query-by-workflow-changes" data-raw-source="[Assigned To](/azure/devops/boards/queries/query-by-workflow-changes)">Assigned To</a></p></td>
-	<td><p>Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the project.</p></td></tr>
+	<td><p>Assign the work item to the team member responsible for doing the work. Depending on the context you're working in, the drop-down menu will list only team members or contributors to the project.</p></td></tr>
 <tr>
     <td><p><a href="/azure/devops/boards/queries/query-by-workflow-changes" data-raw-source="[State](/azure/devops/boards/queries/query-by-workflow-changes)">State</a></p></td>
 	<td><p>When the work item is created, the State defaults to the first state in the workflow. As work progresses, update it to reflect the current state.</p></td></tr>
@@ -180,7 +180,7 @@ Choose **Save & Close** when done.
 </tr>
 <tr>
     <td><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Iteration](/azure/devops/organizations/settings/set-area-paths)">Iteration</a></td>
-    <td>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)">Define iteration paths (aka sprints) and configure team iterations</a>.</td>
+    <td>Choose the sprint or iteration in which the work is to be completed. Or, leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)">Define iteration paths (aka sprints) and configure team iterations</a>.</td>
 </tr>
 <tr>
 <td><a href="../queries/titles-ids-descriptions.md" data-raw-source="[Description](../queries/titles-ids-descriptions.md)">Description</a></td> 
@@ -189,10 +189,10 @@ Choose **Save & Close** when done.
 <tr>
     <td><p><a href="../queries/planning-ranking-priorities.md" data-raw-source="[Priority](../queries/planning-ranking-priorities.md)">Priority</a></p></td>
 	<td><p>A subjective rating of the issue or task it relates to the business. You can specify the following values:</p>
-<p><strong>1</strong>: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.</p>
-<p><strong>2</strong>: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.</p>
+<p><strong>1</strong>: Product can't ship without the successful resolution of the work item, and it should be addressed soon.</p>
+<p><strong>2</strong>: Product can't ship without the successful resolution of the work item, but it doesn't need to be addressed immediately.</p>
 <p><strong>3</strong>: Resolution of the work item is optional based on resources, time, and risk.</p>
-<p><strong>4</strong>: Resolution of the work item is not required.</p>
+<p><strong>4</strong>: Resolution of the work item isn't required.</p>
 </td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ Choose **Save & Close** when done.
 <td>
 <a name="estimates"></a>
 Provide a relative estimate of the amount of work required to complete an issue. 
-<p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers. </p>
+<p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, and so on). Use any numeric unit of measurement your team prefers. </p>
 <p>The estimates you set for <strong>Effort</strong> are used to calculate <a href="../../report/dashboards/team-velocity.md">velocity</a> and to <a href="../sprints/forecast.md">forecast sprints</a>.</p>
 </td> 
 </tr>
@@ -233,7 +233,7 @@ For example, here we assign the story to Raisa Pokrovskaya and we add a discussi
 	<td><p>Enter a description of 255 characters or less. You can always modify the title later.</p></td></tr>
 <tr>
     <td><p><a href="/azure/devops/boards/queries/query-by-workflow-changes" data-raw-source="[Assigned To](/azure/devops/boards/queries/query-by-workflow-changes)">Assigned To</a></p></td>
-	<td><p>Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the project.</p></td></tr>
+	<td><p>Assign the work item to the team member responsible for doing the work. Depending on the context you're working in, the drop-down menu will list only team members or contributors to the project.</p></td></tr>
 <tr>
     <td><p><a href="/azure/devops/boards/queries/query-by-workflow-changes" data-raw-source="[State](/azure/devops/boards/queries/query-by-workflow-changes)">State</a></p></td>
 	<td><p>When the work item is created, the State defaults to the first state in the workflow. As work progresses, update it to reflect the current state.</p></td></tr>
@@ -246,7 +246,7 @@ For example, here we assign the story to Raisa Pokrovskaya and we add a discussi
 </tr>
 <tr>
     <td><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Iteration](/azure/devops/organizations/settings/set-area-paths)">Iteration</a></td>
-    <td>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)">Define iteration paths (aka sprints) and configure team iterations</a>.</td>
+    <td>Choose the sprint or iteration in which the work is to be completed. Or, leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)">Define iteration paths (also known as sprints) and configure team iterations</a>.</td>
 </tr>
 <tr>
 <td><a href="../queries/titles-ids-descriptions.md" data-raw-source="[Description](../queries/titles-ids-descriptions.md)">Description</a></td> 
@@ -254,16 +254,16 @@ For example, here we assign the story to Raisa Pokrovskaya and we add a discussi
 </tr>
 <tr>
     <td><p><a href="../queries/titles-ids-descriptions.md" data-raw-source="[Acceptance Criteria](../queries/titles-ids-descriptions.md)">Acceptance Criteria</a> </p></td>
-    <td><p>Provide the criteria to be met before the user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p>
+    <td><p>Provide the criteria to be met before the user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p>
 </td>
 </tr>
 <tr>
     <td><p><a href="../queries/planning-ranking-priorities.md" data-raw-source="[Priority](../queries/planning-ranking-priorities.md)">Priority</a></p></td>
 	<td><p>A subjective rating of the issue or task it relates to the business. You can specify the following values:</p>
-<p><strong>1</strong>: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.</p>
-<p><strong>2</strong>: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.</p>
+<p><strong>1</strong>: Product can't ship without the successful resolution of the work item, and it should be addressed soon.</p>
+<p><strong>2</strong>: Product can't ship without the successful resolution of the work item, but it doesn't need to be addressed immediately.</p>
 <p><strong>3</strong>: Resolution of the work item is optional based on resources, time, and risk.</p>
-<p><strong>4</strong>: Resolution of the work item is not required.</p>
+<p><strong>4</strong>: Resolution of the work item isn't required.</p>
 </td>
 </tr>
 <tr>
@@ -273,7 +273,7 @@ For example, here we assign the story to Raisa Pokrovskaya and we add a discussi
         <ul>
         <li>
           <p>
-            <strong>Architectural </strong>: Technical services to implement business features that deliver solution 
+            <strong>Architectural</strong>: Technical services to implement business features that deliver solution 
           </p>
         </li>
         <li>
@@ -289,7 +289,7 @@ For example, here we assign the story to Raisa Pokrovskaya and we add a discussi
 <td>
 <a name="estimates"></a>
 Provide a relative estimate of the amount of work required to complete an issue.
-<p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers. </p>
+<p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, and so on). Use any numeric unit of measurement your team prefers. </p>
 <p>The estimates you set are used to calculate <a href="../../report/dashboards/team-velocity.md" data-raw-source="[velocity](../../report/dashboards/team-velocity.md)">velocity</a> and <a href="../sprints/forecast.md" data-raw-source="[forecast sprints](../sprints/forecast.md)">forecast sprints</a>.</p>
 </td> 
 </tr>
@@ -300,7 +300,7 @@ Provide a relative estimate of the amount of work required to complete an issue.
 * * *
 
 
-## Update status
+## Update work status
 
 #### [Basic process](#tab/basic-process) 
 
@@ -315,7 +315,7 @@ You can add or rename columns as needed, see [Customize your board](customize-bo
 #### [Agile process](#tab/agile-process) 
 
 
-As work starts, drag the user story card from the **Backlog** column to the **Active** column. Once work is ready for review, move to the **Resolved** column. After it is reviewed and accepted, move to the **Closed** column. 
+As work starts, drag the user story card from the **Backlog** column to the **Active** column. Once work is ready for review, move to the **Resolved** column. After it's reviewed and accepted, move to the **Closed** column. 
 
 > [!div class="mx-imgBorder"]  
 > ![Update status on Kanban board](_img/plan-track-work/update-status.png) 
@@ -331,7 +331,7 @@ You can add or rename columns as needed, see [Customize your board](customize-bo
 
 #### [Basic process](#tab/basic-process) 
 
-Task checklists provide a quick and easy way to track elements of work which are important to support completing an issue. 
+Task checklists provide a quick and easy way to track elements of work that are important to support completing an issue. 
 
 1. To start adding tasks, choose the ![](../../_img/icons/actions-icon.png) actions icon for the issue and select the  ![plus icon](../../_img/icons/green_plus_icon.png) **Add Task** option.  
 
@@ -343,7 +343,7 @@ Task checklists provide a quick and easy way to track elements of work which are
 	> [!div class="mx-imgBorder"]  
 	> ![Add first task](_img/track-issues/enter-first-task.png) 
 
-1. If you have a number of tasks to add, simply keep typing your task titles and type Enter.   
+1. If you have many tasks to add, keep typing your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Several tasks added](_img/track-issues/add-several-tasks.png)  
@@ -353,14 +353,14 @@ Task checklists provide a quick and easy way to track elements of work which are
 	> [!div class="mx-tdCol2BreakAll"]  
 	> |Mark a task as done |Reorder and reparent tasks | Expand or collapse the checklist| 
 	> |------------------|--------------|--------------|  
-	> |To mark a task as complete, check the task checkbox. The task State changes to **Done**.<br/>![Mark task as done](_img/track-issues/mark-tasks-as-done.png) |To reorder a task, drag it within the checklist. To reparent a the task, drag it to another issue on the board.<br/>![Drag tasks to reorder them within the list](_img/track-issues/reorder-task.png)  |To expand or collapse a task checklist, simply choose the task annotation.<br/>![Collapse task checklist](_img/track-issues/collapse-task-list.png) |  
+	> |To mark a task as complete, check the task checkbox. The task State changes to **Done**.<br/>![Mark task as done](_img/track-issues/mark-tasks-as-done.png) |To reorder a task, drag it within the checklist. To reparent a the task, drag it to another issue on the board.<br/>![Drag tasks to reorder them within the list](_img/track-issues/reorder-task.png)  |To expand or collapse a task checklist, choose the task annotation.<br/>![Collapse task checklist](_img/track-issues/collapse-task-list.png) |  
 
 
 
 #### [Agile process](#tab/agile-process) 
 
 
-Task checklists provide a quick and easy way to track elements of work which are important to support completing a user story. In addition, you can assign individual tasks to different team members. 
+Task checklists provide a quick and easy way to track elements of work that are important to support completing a user story. Also, you can assign individual tasks to different team members. 
 
 1. To start adding tasks, choose the ![](../../_img/icons/actions-icon.png) actions icon for the story and select the  ![plus icon](../../_img/icons/green_plus_icon.png) **Add Task** option.  
 
@@ -372,7 +372,7 @@ Task checklists provide a quick and easy way to track elements of work which are
 	> [!div class="mx-imgBorder"]  
 	> ![Add first task](_img/plan-track-work/prep-images-task.png) 
 
-1. If you have a number of tasks to add, simply keep typing your task titles and type Enter.   
+1. If you have many tasks to add, keep typing your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Several tasks added](_img/plan-track-work/add-several-tasks.png)  
@@ -382,7 +382,7 @@ Task checklists provide a quick and easy way to track elements of work which are
 	> [!div class="mx-tdCol2BreakAll"]  
 	> |Mark a task as done |Reorder and reparent tasks | Expand or collapse the checklist| 
 	> |------------------|--------------|--------------|  
-	> |To mark a task as complete, check the task checkbox. The task State changes to **Done**.<br/>![Mark task as done](_img/plan-track-work/mark-tasks-as-done.png) |To reorder a task, drag it within the checklist. To reparent a the task, drag it to another issue on the board.<br/>![Drag tasks to reorder them within the list](_img/plan-track-work/reorder-task.png)  |To expand or collapse a task checklist, simply choose the task annotation.<br/>![Collapse task checklist](_img/plan-track-work/collapse-task-list.png) |  
+	> |To mark a task as complete, check the task checkbox. The task State changes to **Done**.<br/>![Mark task as done](_img/plan-track-work/mark-tasks-as-done.png) |To reorder a task, drag it within the checklist. To reparent a the task, drag it to another issue on the board.<br/>![Drag tasks to reorder them within the list](_img/plan-track-work/reorder-task.png)  |To expand or collapse a task checklist, choose the task annotation.<br/>![Collapse task checklist](_img/plan-track-work/collapse-task-list.png) |  
 
 
 * * *
@@ -402,7 +402,7 @@ Here we assign the task to Jamal.
 
 ### Field descriptions
 
-In addition to the fields you can define for an issue, you can specify the following fields for a task to support capacity and time tracking. 
+Along with the fields you can define for an issue, you can specify the following fields for a task to support capacity and time tracking. 
 <table valign="top" width="100%">
 <tbody valign="top" >
 <tr>
@@ -412,7 +412,7 @@ In addition to the fields you can define for an issue, you can specify the follo
 <tr>
 <tr>
     <td><a href="../queries/query-numeric.md" data-raw-source="[Activity](../queries/query-numeric.md)">Activity</a></td>
-    <td><p>The type of activity that is required to perform a task.To learn more about how this field is used, see <a href="../sprints/set-capacity.md" data-raw-source="[Capacity planning](../sprints/set-capacity.md)">Capacity planning</a>. Allowed values are:</p><ul><li><p>Deployment</p></li><li><p>Design</p></li><li><p>Development</p></li><li><p>Documentation</p></li><li><p>Requirements</p></li><li><p>Testing</p></li></ul>
+    <td><p>The type of activity that is required to complete a task.To learn more about how this field is used, see <a href="../sprints/set-capacity.md" data-raw-source="[Capacity planning](../sprints/set-capacity.md)">Capacity planning</a>. Allowed values are:</p><ul><li><p>Deployment</p></li><li><p>Design</p></li><li><p>Development</p></li><li><p>Documentation</p></li><li><p>Requirements</p></li><li><p>Testing</p></li></ul>
 </td>
 </tr>
 <tr>
@@ -420,7 +420,7 @@ In addition to the fields you can define for an issue, you can specify the follo
 </td>
 <td>
 <p>The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field even though the taskboard always shows "h" for hours in relationship to Remaining Work.  </p>
-<p>Remaining Work is often used to calculate burn down for a sprint. </p>
+<p>Remaining Work is often used to calculate burndown for a sprint. </p>
 </td> 
 </tr>
 </tbody>
@@ -437,7 +437,7 @@ Here we assign the task to Christie Church.
 
 ### Field descriptions
 
-In addition to the fields you can define for a user story, you can specify the following fields for a task to support capacity and time tracking. 
+Along with the fields you can define for a user story, you can specify the following fields for a task to support capacity and time tracking. 
 <table valign="top" width="100%">
 <tbody valign="top" >
 <tr>
@@ -447,13 +447,13 @@ In addition to the fields you can define for a user story, you can specify the f
 <tr>
 <tr>
     <td><a href="../queries/query-numeric.md" data-raw-source="[Activity](../queries/query-numeric.md)">Activity</a></td>
-    <td><p>The type of activity that is required to perform a task.To learn more about how this field is used, see <a href="../sprints/set-capacity.md" data-raw-source="[Capacity planning](../sprints/set-capacity.md)">Capacity planning</a>. Allowed values are:</p><ul><li><p>Deployment</p></li><li><p>Design</p></li><li><p>Development</p></li><li><p>Documentation</p></li><li><p>Requirements</p></li><li><p>Testing</p></li></ul>
+    <td><p>The type of activity that is required to complete a task.To learn more about how this field is used, see <a href="../sprints/set-capacity.md" data-raw-source="[Capacity planning](../sprints/set-capacity.md)">Capacity planning</a>. Allowed values are:</p><ul><li><p>Deployment</p></li><li><p>Design</p></li><li><p>Development</p></li><li><p>Documentation</p></li><li><p>Requirements</p></li><li><p>Testing</p></li></ul>
 
 </td>
 </tr>
 <tr>
 <td><p><a href="../queries/query-numeric.md" data-raw-source="[Original Estimate](../queries/query-numeric.md)">Original Estimate</a></p></td>
-<td><p>The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.</p>
+<td><p>The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it's assigned.</p>
 <p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 </td>
 </tr>
@@ -476,7 +476,7 @@ In addition to the fields you can define for a user story, you can specify the f
 [!INCLUDE [temp](../_shared/discussion-tip.md)]
 
 
-## Try this next  
+## Next step  
  
 > [!div class="nextstepaction"]
 > [Customize your board](customize-boards.md)
