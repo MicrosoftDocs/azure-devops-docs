@@ -1,7 +1,7 @@
 ---
-title: Start using Azure Boards, sign up and invite teammates
+title: Sign up for and invite teammates to use projects in Azure Boards
 titleSuffix: Azure Boards
-description: Quickstart guide to signing up and inviting others to join a team project in Azure Boards
+description: Learn how to sign up for and invite others to join a team project in Azure Boards.
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.prod: devops
@@ -12,16 +12,15 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 07/17/2019
+ms.date: 09/10/2021
 ---
-
 
 
 # Sign up for free and invite others to collaborate on your project
 
 [!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
-Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. This sequence walks you through the sign-up process for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). In the end, you'll have a project the uses the [Basic process for work tracking](what-is-azure-boards-basic-process.md).
+Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. This sequence walks you through the sign-up process. This process is for users located in the United States that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). In the end, you'll have a project the uses the [Basic process for work tracking](what-is-azure-boards-basic-process.md).
 
 You can sign up for free with either a Microsoft or GitHub account. If you don't have a Microsoft account, this article will guide you in acquiring one. 
 
@@ -62,7 +61,7 @@ If you don't have a Microsoft account or GitHub account, follow these steps.
 
    ![Choose Continue to sign up for Azure DevOps](_img/acquisition/create-project-new-account.png)
 
-	Your project name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
+	Your project name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. Public visibility means anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
 
 Your next step is to start using your Kanban board to [track issues and tasks](plan-track-work.md), or [invite other users](#invite-others) to collaborate with your project. 
 
@@ -128,14 +127,19 @@ Your next step is to  [create a project](#create-project).
 
 ## Create a project 
 
-If you signed up for Azure DevOps with an existing MSA or GitHub identity, you're automatically prompted to create a project. You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/public/about-public-projects.md). 
+If you signed up for Azure DevOps with an existing MSA or GitHub identity, you're automatically prompted to create a project. You can create a public project or a private project. To learn more about public projects, see [What is a public project?](../../organizations/public/about-public-projects.md). 
 
 1. Enter a name for your project, select the visibility, and optionally provide a description. Then choose **Create project**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project dialog](_img/sign-up/nf-create-project.png)
 
-	The name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
+	The name can't: 
+    * Contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), 
+    * Begin with an underscore
+    * Begin or end with a period
+
+    The name must be 64 characters or less. Visibility is either public or private. Public visibility means anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
 	
 2. When your project has been created, the Kanban board automatically appears.
 
@@ -147,7 +151,7 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 
 <a id="invite-others" />
 
-## Invite team members
+## Invite team members to your project
 
 You can add and invite others to work on your project by adding their email address to your organization and project.
 
@@ -169,7 +173,7 @@ You can add and invite others to work on your project by adding their email addr
 		</ul>
 	</li>
     <li><strong>Add to project:</strong> Select the project you named in the preceding procedure.</li>
-    <li><strong>Azure DevOps Groups:</strong> Select one of the following security groups which will determine the permissions the users have to perform select tasks (To learn more, see [Default permissions and access for Azure Boards](permissions-access-boards.md).):
+    <li><strong>Azure DevOps Groups:</strong> Select one of the following security groups that will determine the permissions the users have to complete select tasks (To learn more, see [Default permissions and access for Azure Boards](permissions-access-boards.md).):
 	<ul>
         <li><strong>Project Readers</strong>: Assign to users who only require read-only access. </li>
         <li><strong>Project Contributors</strong>: Assign to users who will contribute fully to the project. </li>
@@ -184,7 +188,7 @@ You can add and invite others to work on your project by adding their email addr
 
 For more information, see [Add organization users for Azure DevOps Services](../../organizations/accounts/add-organization-users.md).
 
-## Change organization or project settings
+## Change your organization or project settings
 
 You can rename and delete your organization, or change the organization location. To learn more, see the following articles:
 
@@ -192,7 +196,7 @@ You can rename and delete your organization, or change the organization location
 - [Rename an organization](../../organizations/accounts/rename-organization.md)
 - [Change the location of your organization](../../organizations/accounts/change-organization-location.md)
 
-You can rename your project or change it's visibility. To learn more about managing projects, see the following articles:
+You can rename your project or change its visibility. To learn more about managing projects, see the following articles:
 
 - [Manage projects](../../organizations/projects/about-projects.md)
 - [Rename a project](../../organizations/projects/rename-project.md)
@@ -201,7 +205,7 @@ You can rename your project or change it's visibility. To learn more about manag
 > [!NOTE]   
 > Your first project was created using the Basic process which uses Epics, Issues, and Tasks to track work. If you want a project that uses the Agile, Scrum, or CMMI process, then you can [add another project](../../organizations/projects/create-project.md) and specify the process through advanced setting options. See [Choose a process for a comparison of processes](../work-items/guidance/choose-process.md). 
  
-## Try this next  
+## Next step  
  
 > [!div class="nextstepaction"]
 > [Track issues and tasks](plan-track-work.md)

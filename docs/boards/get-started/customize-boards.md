@@ -1,7 +1,7 @@
 ---
-title: Quickstart guide to customizing your Kanban boards
+title: Quickstart guide for customizing your Kanban boards
 titleSuffix: Azure Boards 
-description: Customize your issues board to show fields, add columns, and change card color
+description: Learn how to customize your Kanban board to show fields, add columns, and change card color.
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.prod: devops
@@ -11,26 +11,25 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 01/11/2019
+ms.date: 09/09/2021
 ---
 
-
-# Customize your boards
+# Customize your Kanban boards
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 This article shows how to customize a Kanban board. You have one Kanban board for each active product or portfolio backlog. 
 
 You can configure your Kanban board in several ways to support specific tracking needs. For example:  
-- Update fields directly from the card  
-- Highlight cards based on field assignments  
-- Add columns to track other workflow states  
-- Add swimlanes to expedite work or differentiate work assigned to different service classes. 
+- Update fields directly from the card. 
+- Highlight cards based on field assignments.  
+- Add columns to track other workflow states. 
+- Add swimlanes to speed up work or differentiate work assigned to different service classes.
 
 
-## Open Settings for the board
+## Open board settings 
 
-#### [Basic process](#tab/basic-process) 
+### [Basic process](#tab/basic-process)
 
 Each team can customize their Issues and Epics boards and sprint Taskboards.  
 
@@ -38,7 +37,7 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
 
 1. [Open your Kanban board](plan-track-work.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
 
-2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board setting settings.  
+2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board settings.  
 
 	::: moniker range="azure-devops"
 	> [!div class="mx-imgBorder"]
@@ -74,11 +73,11 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
     <li><strong>Working days</strong>: Set the active weekdays to use when tracking capacity and burndown.</li>
 	</ul>
 
-#### [Agile process](#tab/agile-process) 
+### [Agile process](#tab/agile-process)
 
 1. [Open your Kanban board](plan-track-work.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
 
-2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board setting settings.  
+2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board settings.  
 
 	::: moniker range="azure-devops"
 	> [!div class="mx-imgBorder"]
@@ -118,11 +117,11 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
 * * *
 
 
-## Customize fields
+## Customize fields on a card
 
 To quickly assign fields from the card without having to open the work item, add them to display on the card. 
 
-#### [Basic process](#tab/basic-process) 
+### [Basic process](#tab/basic-process) 
 
 1. To configure the fields displayed on cards, choose the **Fields** tab. 
 
@@ -139,7 +138,7 @@ To quickly assign fields from the card without having to open the work item, add
 
 4. Choose **Save and close** when done. To learn more, see [Customize cards](../boards/customize-cards.md). 
 
-#### [Agile process](#tab/agile-process) 
+### [Agile process](#tab/agile-process)
 
 1. To configure the fields displayed on cards, choose the **Fields** tab. 
 
@@ -160,11 +159,11 @@ To quickly assign fields from the card without having to open the work item, add
 * * *
 
 
-## Customize columns
+## Customize your columns
 
 You can add columns or change column names. 
 
-#### [Basic process](#tab/basic-process) 
+### [Basic process](#tab/basic-process)
 
 1. To add a column or change column settings, choose **Columns** tab.
 
@@ -176,7 +175,7 @@ You can add columns or change column names.
 1. Choose **Save and close** when done. To learn more about column settings, see [Add columns to your Kanban board](../boards/add-columns.md). 
 
 
-#### [Agile process](#tab/agile-process) 
+### [Agile process](#tab/agile-process)
 
 1. To add a column or change column settings, choose **Columns** tab.
 
@@ -190,7 +189,7 @@ You can add columns or change column names.
 * * *
 
 
-## Customize swimlanes 
+## Customize your swimlanes 
 
 Swimlanes appear as rows within the Kanban board and provide yet another way to categorize work you want to track. 
 
@@ -202,15 +201,14 @@ Swimlanes appear as rows within the Kanban board and provide yet another way to 
 	> [!div class="mx-imgBorder"]
 	> ![Settings,Swimlanes dialog, Add Expedite swimlane](_img/customize-boards/settings-swimlanes-dialog-expedite.png) 
 
-1. Choose **Save and close** when done. To learn more about working with swimlanes , see [Expedite work with swimlanes](../boards/expedite-work.md). 
+1. Choose **Save and close** when done. To learn more about working with swimlanes, see [Expedite work with swimlanes](../boards/expedite-work.md). 
 
 
 ## Add or remove backlog levels
 
+### [Basic process](#tab/basic-process)
 
-#### [Basic process](#tab/basic-process) 
-
-If you decide you don't want to use Epics to track work, you can turn it off and it won't show up as a board or backlog. By default, it is enabled for new projects.
+If you decide you don't want to use Epics to track work, you can turn it off and it won't show up as a board or backlog. By default, it's enabled for new projects.
 
 1. Choose **Backlogs** tab and uncheck the work item type you no longer want to track on backlogs and boards.
 
@@ -220,7 +218,7 @@ If you decide you don't want to use Epics to track work, you can turn it off and
 1. Choose **Save and close** when done. 
 
 
-#### [Agile process](#tab/agile-process) 
+### [Agile process](#tab/agile-process)
 
 If you decide you want to use Epics to track work, you can turn it on and it will show up as a board or backlog. By default, it isn't enabled for new projects.  
 
@@ -241,7 +239,7 @@ If you decide you want to use Epics to track work, you can turn it on and it wil
 
 After you close the settings dialog, refresh (F5) your board to view your changes. Verify that all changes appear as expected, or revisit the Settings dialog to make a change. 
 
-#### [Basic process](#tab/basic-process) 
+### [Basic process](#tab/basic-process)
 
 Here we show the customizations made in this article. The following image also shows a style applied to the color when the Priority=1. 
 
@@ -257,7 +255,7 @@ Here we show the customizations made in this article. The following image also s
 > ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/boards-customized-view.png) 
 ::: moniker-end
 
-#### [Agile process](#tab/agile-process) 
+### [Agile process](#tab/agile-process)
 
 Here we show the customizations made in this article. The following image also shows a style applied to the color when the Priority=1. 
 
@@ -272,14 +270,14 @@ Here we show the customizations made in this article. The following image also s
 
 * * *
 
-## Try this next  
+## Next step
  
 > [!div class="nextstepaction"]
 > [Manage your project](manage-boards.md) 
 
 ## Related articles
 
-* [Customize cards](../boards/customize-cards.md) (addresses **Styles**, **Tag colors**, **Annotations** and **Tests**)  
+* [Customize cards](../boards/customize-cards.md) (addresses **Styles**, **Tag colors**, **Annotations**, and **Tests**)  
 * [Card reordering](../boards/reorder-cards.md)
 * [Work in Progress limits](../boards/wip-limits.md)  
 * [Split columns](../boards/split-columns.md)   

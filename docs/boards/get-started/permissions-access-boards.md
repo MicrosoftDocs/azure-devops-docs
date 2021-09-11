@@ -1,7 +1,7 @@
 ---
 title: Default permissions and access for Azure Boards
 titleSuffix: Azure Boards & TFS 
-description: Default permissions and access levels to support work-tracking tasks in Azure DevOps Services and Team Foundation Server
+description: Learn about default permissions and access levels in Azure Boards. The permissions and access levels help you support work-tracking tasks in Azure DevOps Services.
 ms.custom: boards-get-started
 ms.technology: devops-agile
 ms.prod: devops
@@ -11,14 +11,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 01/11/2019
+ms.date: 09/09/2021
 ---
 
-# Default permissions and access for Azure Boards 
+# Default permissions and access levels for Azure Boards 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-As a member of an Azure Boards project, you can use the majority of features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
+As a member of an Azure Boards project, you can use most features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash;and team administrator role grant permissions to specific features. 
 
 In the tables provided in this article, a ![ ](/azure/devops/_img/icons/checkmark.png) checkmark indicates that the corresponding access level or security group has access to a feature by default. 
 
@@ -27,7 +27,7 @@ In the tables provided in this article, a ![ ](/azure/devops/_img/icons/checkmar
 
 For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../../organizations/accounts/add-organization-users.md). If you need to [grant specific users select permissions](../../organizations/security/change-individual-permissions.md), you can do so.
 
-## General work item feature access
+## Work item feature access
 
 You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../work-items/about-work-items.md).
 
@@ -177,7 +177,8 @@ You can use work items to track anything you need to track. To learn more, see [
 </tbody>
 </table>
 
-## Backlogs features access
+## Backlogs feature access
+
 [**Backlogs**](../backlogs/create-your-backlog.md) display work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy.  
 
 <table>
@@ -216,7 +217,7 @@ You can use work items to track anything you need to track. To learn more, see [
 </tr>
 
 <tr>
-<td align="left">Add child items to a backlog item; prioritize or reorder a backlog; parent items using the Mapping pane; Assign items to a sprint using the Planning pane </td>
+<td align="left">Add child items to a backlog item; reorder a backlog; parent items using the Mapping pane; Assign items to a sprint using the Planning pane </td>
 <td> </td>
 <td></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -604,9 +605,9 @@ The following table summarizes a subset of the default permissions assigned to t
 
 <a id="stakeholder-access"></a>
 
-## More on Stakeholder access
+## Stakeholder access
 
-Stakeholder access supports business owners, analysts, and other team members who don't manage the work of a project, but need to be able to view and add ideas to the backlog, add context and information to work items, and review status and progress. All members of an organization who don't use Visual Studio but want to contribute to work item tracking and monitor progress can be assigned as a stakeholder. Note, even if you change the permission level for a user assigned **Stakeholder** access, the user won't be able to access the feature. 
+Stakeholder access supports business owners. It also supports analysts and other team members who don't manage the work of a project, but need to view and add ideas to the backlog, add context and information to work items, and review status and progress. All members of an organization who don't use Visual Studio but want to contribute to work item tracking and monitor progress can be assigned as a stakeholder. Note, even if you change the permission level for a user assigned **Stakeholder** access, the user will be blocked from accessing the feature. 
 
 > [!NOTE]   
 > For public projects, Stakeholder access gives users full access to all work-tracking features. To learn more, see [About access levels, Stakeholder access](../../organizations/security/access-levels.md#stakeholder-access).
