@@ -600,9 +600,7 @@ The path to the image file can be a relative path or the absolute path in Git or
   - It's also possible to specify only the WIDTH by leaving out the HEIGHT value: `IMAGE_URL =WIDTHx`
 
 > [!TIP]
-> You can include an absolute link to an .svg image, but relative links won't render. For example:
-> Absolute: `![410](https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/410.svg)`
-> Relative: `![410](./410.svg)`
+> We don't support SVGs in repository files.
 
 ::: moniker-end
 
