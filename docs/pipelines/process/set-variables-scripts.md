@@ -28,7 +28,7 @@ To use the variable in the next stage, set the `isoutput` property to `true`. To
 
 When you set a variable as read only it can't be overwritten by downstream tasks. Set `isreadonly` to `true`. Setting a variable as read only enhances securing by making that variable immutable. 
 
-## Variable examples
+## Set a variable in the same stage
 
 # [Bash](#tab/bash)
 
@@ -84,6 +84,10 @@ Get the secret variable `mySecretVal`.
 - bash: |
     echo $(mySecretVal)
 ```
+
+Secret variable output in bash.
+
+:::image type="content" source="media/task-var-bash.png" alt-text="Output of bash variable.":::
 # [PowerShell](#tab/powershell)
 
 Set the secret variable `mySecretVal`.
@@ -99,4 +103,59 @@ Get the secret variable `mySecretVal`.
 - pwsh: |
     Write-Host $(mySecretVal)
 ```
+
+Output of PowerShell variable. 
+
+:::image type="content" source="media/task-var-powershell.png" alt-text="Output of secret PowerShell variable.":::
+
+---
+
+## Set a variable for future stages
+
+Output variables can be used across stages in pipelines. This helps you pass useful information, such as the ID of a generated output, from one stage to the next. 
+
+When you set a variable with the `isoutput` property, you can reference that variable in later stages with the task name and the `stageDependencies` syntax. Learn more about [dependencies](expressions.md). 
+
+
+# [Bash](#tab/bash)
+
+Set the output variable `myStageVal`.
+
+```yaml
+steps:
+    - bash: echo "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
+      name: MyOutputVar
+```
+
+Pass `myStageVal` to a different stage and output the variable as `myStageAVar`. 
+
+```yaml
+stages:
+- stage: A
+  jobs:
+  - job: A1
+    steps:
+     - bash: echo "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
+       name: MyOutputVar
+- stage: B
+  jobs:
+  - job: B1
+    variables:
+      myStageAVar: $[stageDependencies.A.A1.outputs['MyOutputVar.myStageVal']]
+    steps:
+      - bash: echo $(myStageAVar)
+```
+
+# [PowerShell](#tab/powershell)
+
+Set the output variable `myStageVal`.
+
+```yaml
+    steps:
+     - powershell: Write-Host "##vso[task.setvariable variable=myStageVal;isOutput=true]this is a stage output variable"
+       name: MyOutputVar
+```
+
+Pass `myStageVal` to a different stage and output the variable as `myStageAVar`. 
+
 ---
