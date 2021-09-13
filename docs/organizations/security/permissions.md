@@ -3078,6 +3078,9 @@ View releases
  
 You manage permissions [for each release defined in the web portal](../../pipelines/policies/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the project level, for a specific release pipeline, or for a specific environment in a release pipeline. Within this hierarchy, permissions can be inherited from the parent or overridden.
 
+
+:::image type="content" source="media/permissions/release-object-level-permissions.png" alt-text="Releases object-level permissions.":::
+
 > [!NOTE]   
 > The project-level Release Administrator's group is created at the same time the first release pipeline is defined. 
 
