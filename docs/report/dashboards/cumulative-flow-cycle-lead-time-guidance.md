@@ -5,8 +5,7 @@ description: Process guidance to work with cumulative flow diagrams to improve y
 ms.custom: dashboards
 ms.prod: devops  
 ms.technology: devops-analytics  
-ms.topic: conceptual
-ms.reviewer: greggboe
+ms.topic: conceptual 
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
