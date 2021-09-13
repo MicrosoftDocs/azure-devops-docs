@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 04/26/2021
+ms.date: 09/13/2021
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -600,7 +600,7 @@ The path to the image file can be a relative path or the absolute path in Git or
   - It's also possible to specify only the WIDTH by leaving out the HEIGHT value: `IMAGE_URL =WIDTHx`
 
 > [!TIP]
-> We don't support SVGs in repository files.
+> We don't support SVG file types.
 
 ::: moniker-end
 
