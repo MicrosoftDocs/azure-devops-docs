@@ -5,9 +5,7 @@ description: Monitor test trends and gain insights about  pipeline test efforts 
 ms.custom: dashboards   
 ms.technology: devops-analytics  
 ms.assetid: 
-ms.topic: tutorial
-ms.reviewer: divais
-ms.manager: 
+ms.topic: tutorial 
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019' 
