@@ -66,7 +66,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>scriptLocation</code><br/>Script Location</td>
-    <td>(Required) select <code>scriptPath</code> to use a script file or <code>inlineScript</code> if you want to write your script inline <br/>Default value: scriptPath</td>
+    <td>(Required) Select <code>scriptPath</code> to use a script file or <code>inlineScript</code> if you want to write your script inline <br/>Default value: scriptPath</td>
 </tr>
 <tr>
     <td><code>scriptPath</code><br/>Script Path</td>
