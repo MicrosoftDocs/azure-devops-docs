@@ -255,7 +255,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 ### How does Microsoft choose the software and versions to put on the image?
 
-More information about the versions of software included on the images can be found at [Guidelines for what's installed](https://github.com/actions/virtual-environments#guidelines-for-whats-installed). 
+More information about the versions of software included on the images can be found at [Guidelines for what's installed](https://github.com/actions/virtual-environments/blob/main/docs/software-and-images-guidelines.md). 
 
 ### When are the images updated?
 
