@@ -2026,34 +2026,35 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](pr
 
 PowerShell provides [multiple output streams](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams) that can be used to log different types of messages. The Error, Warning, Information, Verbose, and Debug streams all convey information that is useful in an automated environment such as an agent job. PowerShell allows users to assign an action to each stream whenever a message is written to it. For example, if the `Error` stream were assigned the `Stop` action, PowerShell would halt execution anytime the `Write-Error` cmdlet was called.
 
-The [PowerShell task](tasks/utility/powershell.md) allows you to choose a default action for each of these output streams when your script is run. This is done by prepending a line to the top of your script that sets the stream's corresponding [preference variable](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables) to the action of choice. The following table lists the actions supported by the PowerShell task and what happens when a message is written to the stream:
+The [PowerShell task](tasks/utility/powershell.md) allows you to override the default PowerShell action for each of these output streams when your script is run. This is done by prepending a line to the top of your script that sets the stream's corresponding [preference variable](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables) to the action of choice. The following table lists the actions supported by the PowerShell task and what happens when a message is written to the stream:
 
 | Action | Description |
 | ------ | ----------- |
-| `Stop` | Prints the message to the task logs, terminates the task, and marks it as failed. |
-| `Continue` | Prints the message to the task logs. |
-| `SilentlyContinue` | Ignores the message. |
+| Default | Use PowerShell's [default action](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables). |
+| Stop | Prints the message to the task logs, terminates the task, and marks it as failed. |
+| Continue | Prints the message to the task logs. |
+| SilentlyContinue | Ignores the message. |
 
 The following table lists the output streams supported by the PowerShell task and their default actions:
 
 | Stream | Default Action |
 | ------ | -------------- |
-| [Error](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#error-stream) | `Stop` |
-| [Warning](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#warning-stream) | `Continue` |
-| [Information](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#information-stream)* | `Continue` |
-| [Verbose](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#verbose-stream) | `SilentlyContinue` |
-| [Debug](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#debug-stream) | `SilentlyContinue` |
+| [Error](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#error-stream) | Stop |
+| [Warning](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#warning-stream) | [Default](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables#warningpreference) |
+| [Information](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#information-stream)* | [Default](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables#informationpreference) |
+| [Verbose](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#verbose-stream) | [Default](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables#verbosepreference) |
+| [Debug](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#debug-stream) | [Default](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables#debugpreference) |
 
 \* Not supported in PowerShell 3.0.
 
 # [Schema](#tab/schema)
 
 ```yaml
-errorActionPreference: stop | continue | silentlyContinue
-warningPreference: stop | continue | silentlyContinue
-informationPreference: stop | continue | silentlyContinue
-verbosePreference: stop | continue | silentlyContinue
-debugPreference: stop | continue | silentlyContinue
+errorActionPreference: default | stop | continue | silentlyContinue
+warningPreference: default | stop | continue | silentlyContinue
+informationPreference: default | stop | continue | silentlyContinue
+verbosePreference: default | stop | continue | silentlyContinue
+debugPreference: default | stop | continue | silentlyContinue
 ```
 
 # [Example](#tab/example)
