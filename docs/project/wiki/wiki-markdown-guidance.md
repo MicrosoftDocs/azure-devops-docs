@@ -70,9 +70,10 @@ There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 ![Mermaid diagram visual](media/wiki/mermaid-diagram.png)
 
 > [!NOTE]
+>
 > - Most HTML tags and fontawesome aren't supported in the Mermaid diagram syntax.
-> - We support the LongArrow `---->` in Mermaid live editor, but not in Azure DevOps.
 > - Mermaid isn't supported in the Internet Explorer browser.
+> - The previous diagram-type links go to a newer version of Mermaid, which may include some syntax that isn't supported by Azure DevOps. For instance, for flowcharts we support the LongArrow `---->` in Mermaid live editor, but not in Azure DevOps.
 
 ::: moniker-end
 
