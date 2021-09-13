@@ -47,7 +47,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
   </thead>
 <tr>
     <td><code>azureSubscription</code><br/>Azure subscription</td>
-    <td>(Required) Select an Azure Resource Manager subscription for the deployment. This parameter is shown only when the selected task version is 0.* as Azure CLI task v1.0 supports only Azure Resource Manager (ARM) subscriptions</td>
+    <td>(Required) Name of an Azure Resource Manager service connection for authentication.</td>
 </tr>
 <tr>
     <td><code>scriptType</code><br/>Script Type</td>
