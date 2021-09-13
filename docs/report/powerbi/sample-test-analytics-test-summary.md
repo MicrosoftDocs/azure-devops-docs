@@ -48,8 +48,6 @@ Specifically, you'll find sample queries for the following reports:
 ```
 let
    Source = OData.Feed (""
-in
-    Source
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate} "
         &"And Workflow eq 'Build' "
