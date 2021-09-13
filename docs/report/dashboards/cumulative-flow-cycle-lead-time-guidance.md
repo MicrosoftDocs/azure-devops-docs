@@ -59,25 +59,26 @@ CFD charts display the count of work items grouped by state/Kanban column over t
 
 :::row:::
    :::column span="1":::
-      Metric
+      **Metric**
    :::column-end:::
-   :::column span="4":::
-      Definition
+   :::column span="3":::
+      **Definition**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
-      Cycle Time  <sup>1</sup>
+      **Cycle Time** <sup>1</sup>
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Measures the time it takes to move work through a single process or workflow state. Calculation is from the start of one process to the start of the subsequent process. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Lead Time  <sup>1</sup>
+      **Lead Time** <sup>1</sup>
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       *For a continuous flow process*: Measures the amount of time it takes from when a request is made (such as adding a proposed user story) until that request is completed (closed).  
       
       *For a sprint or fixed period process*: Measures the time from when work on a request begins until the work is completed  (i.e. the time from Active to Closed).
@@ -85,17 +86,17 @@ CFD charts display the count of work items grouped by state/Kanban column over t
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Work in Progress
+      **Work in Progress**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Measures the amount of work or number of work items that are actively being worked.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Scope
+      **Scope**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Represents the amount of work committed for the given period of time. Only applies to fixed period processes.
    :::column-end:::
 :::row-end:::
