@@ -219,7 +219,8 @@ Ensure the following IP addresses are allowed for inbound connection, so your or
 Azure Service Tags are supported for *inbound* connection. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall via a JSON file download.  
 
 > [!NOTE]
-> The Service Tag or previously mentioned inbound IP addresses don't apply to Microsoft Hosted Agents. Customers are still required to allow the [entire geography for the Microsoft Hosted Agents](../../pipelines/agents/hosted.md#agent-ip-ranges).  If allowing the entire geography is a concern, we recommend using the [Azure Virtual Machine Scale Set Agents](../../pipelines/agents/scale-set-agents.md). The Scale Set Agents are a form of self-hosted agents that can be auto-scaled to meet your demands.
+> The Service Tag or previously mentioned inbound IP addresses don't apply to Microsoft Hosted Agents. Customers are still required to allow the [entire geography for the Microsoft Hosted Agents](../../pipelines/agents/hosted.md#agent-ip-ranges).  If allowing the entire geography is a concern, we recommend using the [Azure Virtual Machine Scale Set Agents](../../pipelines/agents/scale-set-agents.md). The Scale Set Agents are a form of self-hosted agents that can be auto-scaled to meet your demands.  
+Hosted macOS agents are hosted in GitHub's macOS cloud. IP ranges can be retrieved using the [GitHub metadata API](https://docs.github.com/en/rest/reference/meta#get-github-meta-information) using the instructions provided [here](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#ip-addresses).
 
 ### Other IP addresses
 
