@@ -6,8 +6,8 @@ ms.technology: devops-test
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
+ms.date: 09/14/2021
 ---
 
 # Test different configurations
@@ -20,12 +20,12 @@ operating systems, web browsers, and other variations.
 You will want to run at least some of your tests in 
 stages that have those different configurations. 
 
-Use your test plan to decide which tests you want to run 
+Use your test plans to decide which tests you want to run 
 on which configurations. You have to make sure that when 
 you run your tests that you have set up your stages 
 for the configurations that you need.
 
-You might draw up a schematic matrix of the combinations that you want to test:
+You might draw a schematic matrix of the combinations that you want to test:
 
 ![Test matrix of browser and operating system configurations](media/shared/testing-configurations-schematic.png)
 
@@ -35,14 +35,12 @@ Then you can:
 * [Assign the configurations to test plans and test suites](#assign-configs)
 * [Run tests with each of the configurations](#run-configs)
 * [Track your test results for each configuration](#track-configs)
-
-> [!NOTE]
-> This feature is available only in Azure DevOps.
-> In addition, Stakeholders and Basic users cannot create or manage configurations.
-
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+ 
+ 
+[!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
 <a name="create-configs"></a>
+
 ## Create configurations and variables
 
 A test configuration is a combination of configuration variable 
@@ -154,9 +152,9 @@ or test suite apply to all tests or suites within it.
 > If you have a test case that appears in several test plans and test suites, you can set the different configurations for each of these. 
 The same test case can have different configuration settings in different test suites and test plans.
 
-## See also
+## Related articles
 
 * [Overview of manual and exploratory testing](index.yml)
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 

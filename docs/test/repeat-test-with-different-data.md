@@ -6,8 +6,8 @@ ms.technology: devops-test
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 06/02/2019
 monikerRange: '>= tfs-2015'
+ms.date: 09/14/2021
 ---
 
 # Repeat a test with different data
@@ -27,7 +27,8 @@ use the web portal with TFS 2015 and later or
 Azure DevOps. That way you can run multiple test cases with the 
 same data.
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+
+[!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
 ## Add parameters to a test case
 
@@ -136,7 +137,7 @@ values, and then play it back for the other sets.
 Record and playback doesn't work with all applications. For details, see 
 [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 
-## See also
+## Related articles
 
 * [FAQs for manual testing](reference-qa.md#repeatdifferent)
 * [Overview of manual and exploratory testing](index.yml)
@@ -144,4 +145,4 @@ Record and playback doesn't work with all applications. For details, see
 * [Collect diagnostic data](collect-diagnostic-data.md)
 * [Manage test results](how-long-to-keep-test-results.md)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 

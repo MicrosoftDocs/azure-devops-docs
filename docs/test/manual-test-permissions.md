@@ -63,7 +63,7 @@ To learn more, see [About access levels](../organizations/security/access-levels
 
 Permissions can be applied on area paths and at the project-level. To learn how, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md). 
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 
 
 ## Related articles
 

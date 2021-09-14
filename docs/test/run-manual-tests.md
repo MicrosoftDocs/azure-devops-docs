@@ -6,8 +6,8 @@ ms.technology: devops-test
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
-ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
+ms.date: 09/14/2021
 ---
 
 # Run manual tests
@@ -20,14 +20,11 @@ use Test Runner to create a bug. Test steps, screenshots, and comments
 are automatically included in the bug. 
 You can use the web runner for web apps, or the desktop runner for desktop app data collection.  
 
-> You just need [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/) 
-to run tests that have been assigned to you with Azure DevOps. 
-Learn more about the [access](https://visualstudio.microsoft.com/pricing/visual-studio-online-pricing-vs) 
-that you need for more advanced testing features.
-
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+ 
+[!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
 
 <a name="run-web"></a>
+
 ## Run tests for web apps
 
 1. If you haven't already, [create your manual tests](create-test-cases.md#test-cases).
@@ -86,6 +83,7 @@ that you need for more advanced testing features.
 [Can I run tests offline and then import the results?](reference-qa.md#runoffline)
 
 <a name="run-desktop"></a>
+
 ## Run tests for desktop apps
 
 If you want to collect more diagnostic data for your desktop application, run your tests using Test Runner client:
@@ -105,7 +103,7 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 [Can I run tests offline and then import the results?](reference-qa.md#runoffline)
 
-## See also
+## Related articles
 
 *  [FAQs for manual testing](reference-qa.md#runtests)
 

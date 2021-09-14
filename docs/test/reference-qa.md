@@ -601,4 +601,4 @@ b. To assign configuration to test case(s), navigate to test plan > test suite a
 
 *****
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]
+

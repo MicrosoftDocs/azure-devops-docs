@@ -10,6 +10,9 @@
   - name: Navigate Test Plans
     href: navigate-test-plans.md
     displayName: test suites tree, define, execute, chart 
+  - name: Test objects
+    href: test-objects-overview.md
+    displayName: test plan, test case, test suites, test runs
   - name: Create a test plan
     href: create-a-test-plan.md
     displayName: create, plan 

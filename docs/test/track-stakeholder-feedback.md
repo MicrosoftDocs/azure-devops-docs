@@ -17,6 +17,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [feedback-header-text](includes/feedback-header-text.md)] 
 
 <a name="track"></a>
+
 ## Track feedback requests
 
 1. Select your project and open the **Queries** page of the **Agile** section in Azure DevOps or the **Work** hub in TFS.
@@ -29,7 +30,7 @@ monikerRange: '>= tfs-2017'
 
 1. Open the response work item to see the details of the feedback.
 
-## See also
+## Related articles
 
 * [Request stakeholder feedback using the Test &amp; Feedback extension](request-stakeholder-feedback.md#request)
 * [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md#provide)
@@ -37,4 +38,4 @@ monikerRange: '>= tfs-2017'
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 
