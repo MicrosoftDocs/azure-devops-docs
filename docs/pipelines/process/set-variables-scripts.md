@@ -38,14 +38,14 @@ Read the variable `myVar`:
 Set the variable `myVar` with the value `foo`. 
 
 ```yaml
-- pwsh: |
+- powershell: |
     Write-Host "##vso[task.setvariable variable=myVar;]foo"
 ```
 
 Read the variable `myVar`:
 
 ```yaml
-- pwsh: |
+- powershell: |
     Write-Host "You can use macro syntax for variables: $(myVar)"
 ```
 ---
@@ -93,15 +93,15 @@ Secret variable output in bash.
 
 Set the secret variable `mySecretVal`.
 ```yaml
-- pwsh: |
+- powershell: |
     Write-Host "##vso[task.setvariable variable=mySecretVal;issecret=true]secretvalue"
 ```
 
 Get the secret variable `mySecretVal`.
 ```yaml
-- pwsh: |
+- powershell: |
     Write-Host "##vso[task.setvariable variable=mySecretVal;issecret=true]secretvalue"
-- pwsh: |
+- powershell: |
     Write-Host $(mySecretVal)
 ```
 
@@ -153,6 +153,7 @@ jobs:
   - bash: |
      echo $(setOutput.myOutputJobVar)
 ```
+
 # [PowerShell](#tab/powershell)
 
 Set the same-job output variable `myJobVar` without specifying `isoutput` and sets `myOutputJobVar` with `isoutput`. 
@@ -184,6 +185,8 @@ jobs:
   - powershell: |
      Write-Host $(setOutput.myOutputJobVar)
 ```
+
+---
 ## Set an output variable in a future job
 
 When you use output variables across jobs, you'll reference them with `dependencies`. Learn more about [dependencies](expressions.md). 
