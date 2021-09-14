@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 01/27/2020
+ms.date: 09/13/2021
 ---
 
 # Set permissions and access for testing
@@ -17,9 +17,9 @@ ms.date: 01/27/2020
 
 To exercise the full features of Azure Test Plans, you mustbe granted [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or have one of the following subscriptions:
 
-	- [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
-	- [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
-	- [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)
+- [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
+- [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
+- [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)
 
 In addition, you can grant or restrict access to various manual test features by granting users or groups specific permissions for an object or project. Many test artifacts correspond to test-specific work item types. So, work-tracking permissions apply to test-specific work items, such as test plans, test suites, test cases and more. You set permissions for work items and manual testing features   for area paths and at the project-level. You set permissions to manage test controllers at the organization or collection level. Test controllers are used in performing load tests.   
 
