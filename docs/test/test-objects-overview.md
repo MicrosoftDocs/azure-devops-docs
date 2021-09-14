@@ -1,6 +1,7 @@
 ---
-title: Test objects overview
-description: Understand the different test objects that you define and create using manual or automated testing.
+title: Test objects and terms
+titleSuffix: Azure Test Plans
+description: Understand the different test objects and terms that support manual or automated testing.
 ms.technology: devops-test
 ms.topic: overview
 ms.author: kaelli
@@ -10,16 +11,17 @@ ms.date: 09/14/2021
 ---
 
 
-# Test objects overview 
+# Test objects and terms
+
+A number of test-specific objects and terms are used when working within Azure Test Plans. 
+
 
 <a name="testplans"></a>
 
 ## Test-specific work item types 
 
-the **Test Plans** web portal. provides three main types of test management artifacts: test plans, test suites, and test cases.
-These elements are stored in your work repository as special types of work items. 
-You can export and share them with your team, and benefit from close integration for all of your DevOps tasks.
-
+**Test Plans** provides three main types of test management artifacts: test plans, test suites, and test cases.
+These elements are stored in the work data store as specific types of work items. You can export and share them with your team, and benefit from close integration for all of your DevOps tasks.
 
 The following table describes the work item types used to support the Azure DevOps test experience. Test-specific work items link together using the link types shown in the following image.  
 
