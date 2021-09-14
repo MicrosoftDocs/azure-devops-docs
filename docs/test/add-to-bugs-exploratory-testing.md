@@ -71,5 +71,4 @@ After you file bugs, create tasks, or create test cases, all these show up in th
 * [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
 * [Exploratory testing with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager)
 * [Overview of manual and exploratory testing](index.yml)
-
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 

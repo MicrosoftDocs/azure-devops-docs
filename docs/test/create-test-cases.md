@@ -21,7 +21,7 @@ meet your users' needs. Organize your test cases by adding them
 to test plans and test suites. Then choose which testers you want to run 
 the tests.
 
-For an overview of test artifacts, see [Test artifacts overview](artifacts-overview.md).
+For an overview of test artifacts, see [Test artifacts overview](test-objects-overview.md).
 
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
