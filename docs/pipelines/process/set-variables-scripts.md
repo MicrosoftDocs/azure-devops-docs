@@ -113,10 +113,12 @@ Output of PowerShell variable.
 
 ## Levels of output variables
 
-There are three levels of output variables with distinct syntaxes:
-    - Output variables set in the same job
-    - Output variables set in a future job
-    - Output variables set in future stages
+There are four different types of output variables with distinct syntaxes:
+
+* [Output variables set in the same job without the `isoutput` parameter](#set-an-output-variable-in-the-same-job). To reference these variables, you'll use macro syntax. Example: `$(myVar)`.
+* [Output variables set in the same job with the `isoutput` parameter](#set-an-output-variable-in-the-same-job). To reference these variables, you'll include the task name. Example: `$(myTask.myVar)`.
+* [Output variables set in a future job](#set-an-output-variable-in-a-future-job). To reference these variables, you'll reference the variable in the `variables` section with `dependency` syntax.  
+* [Output variables set in future stages](#set-a-variable-for-future-stages). To reference these variables, you'll reference the variable in the `variables` section with `stageDependencies` syntax.  
 
 ## Set an output variable in the same job
 
