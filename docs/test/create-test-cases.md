@@ -6,9 +6,10 @@ ms.technology: devops-test
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
-ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
+ms.date: 09/14/2021
 ---
+
 
 # Create manual test cases
 
@@ -20,13 +21,11 @@ meet your users' needs. Organize your test cases by adding them
 to test plans and test suites. Then choose which testers you want to run 
 the tests.
 
-[What are test plans, test suites, and test cases?](create-a-test-plan.md#testplans)
+For an overview of test artifacts, see [Test artifacts overview](artifacts-overview.md).
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
-> [!NOTE]
-> Stakeholders cannot create or manage test cases. You must have at least Basic access.
-> See [Default manual testing permissions and access](manual-test-permissions.md).
+[!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
+
 
 <a name="createcase"></a>
 ## Create test cases
@@ -84,7 +83,7 @@ the tests.
    Testers need just [Basic access](../organizations/security/access-levels.md)
    to run tests from Azure Test Plans.
 
-## See also
+## Related articles
 
 * [FAQs for manual testing](reference-qa.md#testcases)
 * [Link test cases to work items](../boards/queries/link-work-items-support-traceability.md)

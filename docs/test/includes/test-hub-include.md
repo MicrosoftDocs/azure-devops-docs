@@ -1,5 +1,9 @@
 ---
 ms.topic: include
 ---
-
-**Azure Test Plans** or the **Test** hub in Azure DevOps Server (see [Web portal navigation](../../project/navigation/index.md))
+::: moniker range="> tfs-2018"
+the **Test Plans** web portal.
+::: moniker-end
+::: moniker range="<= tfs-2018"
+the **Test** web portal.
+::: moniker-end

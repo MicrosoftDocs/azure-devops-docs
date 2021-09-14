@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 View completed exploratory testing sessions and derive meaningful insights
 at team or individual level, and for a specific period. 
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+[!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
 
 1. Open the **Recent exploratory sessions** page. You can do this:
 
@@ -138,4 +138,4 @@ Use a query to explore the work items that users have not yet explored.
 * [Exploratory testing with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 

@@ -6,8 +6,8 @@ ms.technology: devops-test
 ms.topic: overview
 ms.author: sdanie
 author: steved0x
-ms.date: 09/26/2019
 monikerRange: '>= tfs-2015'
+ms.date: 09/14/2021
 ---
 
 # Exploratory and manual testing scenarios and capabilities
@@ -37,8 +37,6 @@ and gathering feedback from stakeholders.
 
 ![Holistic approach to manual testing, types of manual testing and personas involved](media/manual-testing/schematic-01.png)  
 &nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
-
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="manual-testing"></a>
 
@@ -246,4 +244,4 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 
 > See also [Continuous testing](../pipelines/index.yml), [Unit testing](/visualstudio/test/developer-testing-scenarios).
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]
+

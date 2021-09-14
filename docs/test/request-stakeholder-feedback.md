@@ -11,10 +11,13 @@ monikerRange: '>= tfs-2017'
 ---
 
 # Request stakeholder feedback using the Test &amp; Feedback extension
- 
+
+[!INCLUDE [version-header](includes/version-header.md)] 
+
 [!INCLUDE [feedback-header-text](includes/feedback-header-text.md)] 
 
 <a name="request"></a>
+
 ## Request feedback from stakeholders
 
 Request feedback from stakeholders directly from an Azure DevOps or TFS work item. 
@@ -39,7 +42,7 @@ Request feedback from stakeholders directly from an Azure DevOps or TFS work ite
 > Just add their names in the feedback request form so that a **Request feedback** email is sent to them.
 > Also see [Can users with Basic access respond to feedback requests?](provide-stakeholder-feedback.md#non-stakeholder-feedback).
 
-## See also
+## Related articles
 
 * [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md#provide)
 * [Voluntary stakeholder feedback using the Test &amp; Feedback extension](voluntary-stakeholder-feedback.md#voluntary)
@@ -47,5 +50,5 @@ Request feedback from stakeholders directly from an Azure DevOps or TFS work ite
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 
 

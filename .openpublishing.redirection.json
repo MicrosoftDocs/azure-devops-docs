@@ -18234,6 +18234,11 @@
       "source_path": "docs/test/new-test-plans-page.md",
       "redirect_url": "/azure/devops/test/navigate-test-plans",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/preview/new-test-plan-page.md",
+      "redirect_url": "/azure/devops/test/navigate-test-plans",
+      "redirect_document_id": false
     } 
   ]
 }

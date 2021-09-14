@@ -239,4 +239,4 @@ You can find a Sample custom warehouse adapter below, that you can use as a star
 
 [https://code.msdn.microsoft.com/Tfs2010SampleAdapter](https://code.msdn.microsoft.com/Tfs2010SampleAdapter)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]
+

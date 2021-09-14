@@ -134,4 +134,3 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 * [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
 * [Run automated tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]
