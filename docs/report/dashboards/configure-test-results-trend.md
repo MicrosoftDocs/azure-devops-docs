@@ -5,21 +5,19 @@ description: Monitor test trends and gain insights about  pipeline test efforts 
 ms.custom: dashboards   
 ms.technology: devops-analytics  
 ms.assetid: 
-ms.topic: tutorial
-ms.reviewer: divais
-ms.manager: 
+ms.topic: tutorial 
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019' 
-ms.date: 08/02/2019
+ms.date: 09/13/2021
 ---
 
 # Configure the Test Results Trend (Advanced) widget 
 
-[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Teams track their test collateral health&mdash;for example, test pass percentage, test failures, and test duration&mdash;to ensure effective continuous testing in a pipeline. 
-With the test results trend widget, you can monitor test trends over a period of time, detect patterns around test failures, test duration, and more, and generate actionable insights.
+With the **Test Results Trend** widget, you can monitor test trends over a period of time, detect patterns around test failures, test duration, and more, and generate actionable insights.
 
 **Example Test Results Trend widget showing pass percentage and test failure for last 7 days**  
 

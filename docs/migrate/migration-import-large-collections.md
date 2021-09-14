@@ -54,14 +54,14 @@ If you're using this import method, determine where to create your SQL Azure VM 
 
 | Desired import region | SQL Azure VM region |
 | --- | --- |
-| Central United States | Central US, East US, East US 2, North Central US, South Central US, West Central US, West US, West US 2 |
-| Western Europe | North Europe, West Europe |
-| Australia East | Australia Central, Australia East, Australia Southeast |
+| Central United States | Central US |
+| Western Europe |  West Europe |
+| Australia East | Australia East |
 | Brazil South | Brazil South |
-| South India | Central India, South India, West India |
-| Central Canada | Canada Central, Canada East |
+| South India | South India |
+| Central Canada | Canada Central |
 | Asia Pacific | Southeast Asia (Singapore) |
-| UK South | UK South, UK West |
+| UK South | UK South |
 
 <br> 
 
