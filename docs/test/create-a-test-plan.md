@@ -28,7 +28,7 @@ If you want to use Azure Test Plans, and haven't done so already, [sign up for A
 
 You need a project. For more information, see [create your project](../organizations/accounts/organization-management.md). Then [create your backlog](../boards/backlogs/create-your-backlog.md).
 
-1. In Azure DevOps Services or Azure DevOps Server, open your project and go to [!INCLUDE [test-hub-include](includes/test-hub-include.md)].
+1. In Azure DevOps Services or Azure DevOps Server, open your project and go to the **Test Plans** web portal.
    If you already have a test plan, choose **Test Plans** to go to the page that lists all test plans.
 
    ![Opening the list of test plans page](media/create-a-test-plan/goto-test-plans-page.png)

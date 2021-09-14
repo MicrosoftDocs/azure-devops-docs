@@ -26,7 +26,7 @@ at team or individual level, and for a specific period.
  
      ![Opening the insights page from the extension](media/insights-exploratory-testing/insights-exploratory-testing-01.png)
  
-   - From [!INCLUDE [test-hub-include](includes/test-hub-include.md)] by opening the **Runs** page and choosing **Recent exploratory sessions**.  
+   - From the **Test Plans** web portal. by opening the **Runs** page and choosing **Recent exploratory sessions**.  
 
      ![Opening the insights page](media/insights-exploratory-testing/insights-exploratory-testing-02.png)
 

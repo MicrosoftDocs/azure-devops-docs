@@ -14,7 +14,7 @@ ms.date: 09/14/2021
 
 [!INCLUDE [version-header-tfs17](includes/version-header-tfs17.md)] 
 
-Automate test cases in your test plans and run them directly from [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)]. Automated tests provide you with the following benefits:
+Automate test cases in your test plans and run them directly from **Azure Test Plans** . Automated tests provide you with the following benefits:
 
 * A user-friendly process for testers who may not be well
   versed with running tests in Build or Release workflows.
@@ -56,7 +56,7 @@ In addition, you'll need:
 
 3. You will need a release pipeline that was created from the 
    **Run automated tests from Test Manager** template to run tests from test plans
-   in [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)]. If you have an existing release pipeline that was created
+   in **Azure Test Plans** . If you have an existing release pipeline that was created
    using this template, select it and then select the existing stage in the
    release pipeline where the tests will be executed.
    Otherwise, choose the **Create new** link in the
@@ -152,7 +152,7 @@ In addition, you'll need:
 
 ## Run the automated tests
 
-1. In [!INCLUDE [test-hub-include](includes/test-hub-include.md)], open the test plan and select a test suite that contains the
+1. In the **Test Plans** web portal, open the test plan and select a test suite that contains the
    automated tests.
 
 2. Select the test(s) you want to run, open the **Run** menu,
@@ -179,7 +179,7 @@ In addition, you'll need:
    console logs, and attachments. 
  
 5. After test execution is complete, the **Runs** page of the
-   [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)] shows the test results. The **Run summary** page
+   **Azure Test Plans**  shows the test results. The **Run summary** page
    shows an overview of the run.
 
    ![Viewing the test run summary](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-110.png)

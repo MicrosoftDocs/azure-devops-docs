@@ -165,7 +165,7 @@ The extension lets you create test cases as you explore your application.
 
    ![View the exploratory testing session](media/connected-mode-exploratory-testing/create-bugs-06.png)
 
-   Alternatively, open the **Recent exploratory sessions** list directly in the **Runs** page of [!INCLUDE [test-hub-include](includes/test-hub-include.md)].
+   Alternatively, open the **Recent exploratory sessions** list directly in the **Runs** page of the **Test Plans** web portal.
  
    ![View exploratory testing sessions on the server](media/connected-mode-exploratory-testing/create-bugs-07.png)
 

@@ -204,13 +204,13 @@ position. After reordering the tests, you can sort them by the
 **A:** Yes, you can tag test cases in a suite with any tag that 
 you want. For example, tag all the tests related to login so that 
 you can rerun these tests if a bug is fixed for the login page. 
-Then you can filter on that tag from [!INCLUDE [test-hub-include](includes/test-hub-include.md)]. 
+Then you can filter on that tag from the **Test Plans** web portal. 
 
 You can add and edit tags when you edit a test case, or bulk edit tags 
 in the grid view. You can also create suites based on queries when
 you use tags.
 
-![In [!INCLUDE [test-hub-include](includes/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](media/create-test-cases/TestHubTags.png)
+![In the **Test Plans** web portal, on the Test Plans page, choose or add tags from the test case pane](media/create-test-cases/TestHubTags.png)
 
 ### Q: Can I share test steps between test cases?
 

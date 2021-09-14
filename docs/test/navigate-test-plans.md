@@ -35,11 +35,7 @@ To learn about specific test artifacts, see the following articles:
 [!INCLUDE [prerequisites](includes/prerequisites.md)] 
 
 > [!NOTE] 
-> Most operations under the **Define** tab are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Most operations under the **Execute** tab can be exercised by users granted a **Basic** access level.
-
-test-plans-list.png
-
-
+> Most operations under the **Define** tab are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Most operations under the **Execute** tab can be exercised by users granted a **Basic** access level. 
 
 
 ## The "Mine" page

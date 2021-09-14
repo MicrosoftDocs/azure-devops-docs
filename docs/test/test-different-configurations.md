@@ -51,7 +51,7 @@ might be "Windows 8 + 32-bit CPU" or "Windows 10 + 64-bit CPU."
 You must create the configuration variables first. Then combine 
 multiple variable values to create a configuration.
  
-1. Open the **Configurations** page in [!INCLUDE [test-hub-include](includes/test-hub-include.md)], choose 
+1. Open the **Configurations** page in the **Test Plans** web portal, choose 
    the ![new](media/plus-and-arrow-icon.png) icon, and select 
    **New configuration variable**.
 
