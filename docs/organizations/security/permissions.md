@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/22/2021
+ms.date: 09/13/2021
 --- 
 
 
@@ -3054,7 +3054,7 @@ Create releases
 Delete release definition
 Delete release environment
 Delete releases
-Edit release definition
+Edit release pipeline
 Edit release environment
 Manage deployments
 Manage release approvers
@@ -3077,6 +3077,9 @@ View releases
 ::: moniker range=">= tfs-2017"
  
 You manage permissions [for each release defined in the web portal](../../pipelines/policies/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the project level, for a specific release pipeline, or for a specific environment in a release pipeline. Within this hierarchy, permissions can be inherited from the parent or overridden.
+
+
+:::image type="content" source="media/permissions/release-object-level-permissions.png" alt-text="Releases object-level permissions.":::
 
 > [!NOTE]   
 > The project-level Release Administrator's group is created at the same time the first release pipeline is defined. 
@@ -3140,7 +3143,7 @@ The following permissions are defined in Release Management. The scope column ex
     <tr>
         <td id="edit-release-permission">Edit release pipeline</td>
         <td>
-           Can save any changes to a release pipeline, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release pipeline. To make changes to a specific environment in a release pipeline, the user also needs <strong>Edit release environment</strong> permission. 
+           Can add and edit a release pipeline, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release pipeline. To make changes to a specific environment in a release pipeline, the user also needs <strong>Edit release environment</strong> permission. 
         </td>
         <td>
             Project, Release pipeline 
@@ -3149,7 +3152,7 @@ The following permissions are defined in Release Management. The scope column ex
     <tr>
         <td id="edit-release-environment-permission">Edit release environment</td>
         <td>
-            Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs <strong>Edit release definition</strong> permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs <strong>Manage releases</strong> permission to save the modified release.
+            Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs <strong>Edit release pipeline</strong> permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs <strong>Manage releases</strong> permission to save the modified release.
         </td>
         <td>
             Project, Release pipeline, Environment  
@@ -3176,7 +3179,7 @@ The following permissions are defined in Release Management. The scope column ex
     <tr>
         <td id="manage-releases-permission">Manage releases</td>
         <td>
-           Can edit the configuration in releases. To edit the configuration of a specific environment in a release instance, the user also needs <strong>Edit release environment</strong> permission.  
+           Can edit a release configuration, such as stages, approvers, and variables. To edit the configuration of a specific environment in a release instance, the user also needs <strong>Edit release environment</strong> permission.  
         </td>
         <td>
             Project, Release pipeline
