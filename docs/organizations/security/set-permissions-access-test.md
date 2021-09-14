@@ -15,39 +15,71 @@ ms.date: 01/27/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-You grant or restrict access to various manual test features by granting users or groups specific permissions for an object or project.  
+To exercise the full features of Azure Test Plans, you mustbe granted [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or have one of the following subscriptions:
 
-You set manual test permissions for area paths and at the project-level. You set permissions to manage test controllers at the organization or collection level. Test controllers are used in performing load tests.   
+	- [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
+	- [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
+	- [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)
 
-::: moniker range=">= tfs-2017"
+In addition, you can grant or restrict access to various manual test features by granting users or groups specific permissions for an object or project. Many test artifacts correspond to test-specific work item types. So, work-tracking permissions apply to test-specific work items, such as test plans, test suites, test cases and more. You set permissions for work items and manual testing features   for area paths and at the project-level. You set permissions to manage test controllers at the organization or collection level. Test controllers are used in performing load tests.   
 
 - **Object-level, Area path level**  
-	- Manage test plans
-	- Manage test suites
+	- **Edit work items in this node**: Add or edit test-specific work items, such as test plans, test suites, test cases, shared steps, or shared parameters. 
+	- **Manage test plans**: Modify test plan properties such as build and test settings. 
+	- **Manage test suites**: Create and delete test suites, add, and remove test cases from test suites, change test configurations associated with test suites, and modify a test suite hierarchy (move a test suite). 
 - **Project-level** 
-	- Manage test configurations 
-	- Manage test environments
-	- Create test runs
-	- Delete test runs
+	::: moniker range=">= tfs-2017"
+	- **Manage test configurations**: Add or edit [test configurations and configuration variables](../../test/test-different-configurations.md).  
+	- **Manage test environments**: Add or edit [test plan settings](../../test/run-automated-tests-from-test-hub.md).
+	- **Create test runs**: [Run manual tests](../../test/run-manual-tests.md) 
+	- **Delete and restore work items**: [Delete test-specific work items](../../boards/backlogs/remove-delete-work-items.md)
+	- **Delete test runs**: [Delete test results](../../boards/backlogs/delete-test-artifacts.md) 
+	- **Manage test configurations**: Add or edit [test configurations and configuration variables](../../test/test-different-configurations.md).  
+	- **Manage test environments**: Add or edit [test plan settings](../../test/run-automated-tests-from-test-hub.md).
+	- **Move work items out of this project**: [Move work items from one project to another](../../boards/backlogs/move-change-type.md)
+	- **Permanently delete work items**: [Permanently delete test-specific work items](../../boards/backlogs/remove-delete-work-items.md)
+	::: moniker-end
+	::: moniker range="< tfs-2017"
+	- **Manage test configurations**: Add or edit [test configurations and configuration variables](../../test/test-different-configurations.md).  
+	- **Manage test environments**: Add or edit [test plan settings](../../test/run-automated-tests-from-test-hub.md).
+	- **Create test runs**: [Run manual tests](../../test/run-manual-tests.md) 
+	- **Delete and restore work items**: [Delete test-specific work items](../../boards/backlogs/remove-delete-work-items.md)
+	- **Manage test configurations**: Add or edit [test configurations and configuration variables](../../test/test-different-configurations.md).  
+	- **Manage test environments**: Add or edit [test plan settings](../../test/run-automated-tests-from-test-hub.md).
+	- **Move work items out of this project**: [Move work items from one project to another](../../boards/backlogs/move-change-type.md)
+	- **Permanently delete work items**: [Permanently delete test-specific work items](../../boards/backlogs/remove-delete-work-items.md)
+	::: moniker-end
 - **Organization or collection-level** 
-	- Manage test controllers 
+	- **Manage test controllers**  
  
+## Prerequisites 
+
+::: moniker range="azure-devops"
+ 
+- To manage access levels or organization-level permissions, you must be a member of the **Project Collection Administrators** security group, or have your **Edit instance-level information** set to **Allow**. 
+- To manage project or object-level test-related permissions, you must be a member of the **Project Administrators** security group. 
+ 
+For more information, see the following articles: 
+
+- [About access levels](access-levels.md)
+- [Add organization users and manage access](../accounts/add-organization-users.md)
+- [Change access levels for users or groups](change-access-levels.md)  
+- [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md)  
 ::: moniker-end
 
-::: moniker range="< tfs-2017"
+::: moniker range="< azure-devops"
+- To manage access-levels, you must be a member of the **Azure DevOps Server Administrators** group.  
+- To manage project or object-level test-related permissions, you must be a member of the **Project Administrators** security group. 
+- To manage collection-level permissions or manage access levels, you must be a member of the **Project Collection Administrators** security group, or have your **Edit instance-level information** set to **Allow**.
+ 
 
-- **Object-level, Area path level**  
-	- Manage test plans
-	- Manage test suites
-- **Project-level** 
-	- Manage test configurations 
-	- Manage test environments
-	- Create test runs
-- **Organization or collection-level** 
-	- Manage test controllers 
+For more information, see the following articles: 
 
+- [About access levels](access-levels.md)
+- [Add a server-level administrator](/azure/devops/server/admin/add-administrator) 
+- [Change access levels for users or groups](change-access-levels.md)  
+- [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md)  
 ::: moniker-end
-
 
 <a id="license"></a>
 
@@ -113,7 +145,7 @@ As a project admin you can grant a user, team group, or other group you've creat
 > [!NOTE]   
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
 
-In this example, we grant members assigned to the Test Admin group permissions to create and view test runs and manage test configurations and environments.   
+In this example, we grant members assigned to the Team Admin group permissions to create and view test runs and manage test configurations and environments.   
 
 #### [Preview page](#tab/preview-page) 
 
@@ -122,7 +154,7 @@ In this example, we grant members assigned to the Test Admin group permissions t
 #### [Current page](#tab/current-page) 
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Set project-level test permissions for a custom group, Team Admin.](media/test-permissions/set-project-level-test-permissions-new-ui.png)  
+> ![Screenshot of Set project-level test permissions for a custom group, Team Admin.](media/test-permissions/project-level-permissions-2020-earlier.png)  
 
 ::: moniker-end    
 

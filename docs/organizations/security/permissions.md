@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/22/2021
+ms.date: 09/13/2021
 --- 
 
 
@@ -24,217 +24,73 @@ For a quick reference to default assignments, see [Default permissions and acces
 
 To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
-::: moniker range="azure-devops"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%">
-<h4>Users and groups</h4>
-<ul>
-<li><a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
-<li><a href="../accounts/add-organization-users.md">Add users to an organization</a></li> 
-<li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
-<li><a href="../settings/add-team-administrator.md">Make a user a team admin</a></li>
-</ul>
-<h4>Wiki</h4>
-<ul>
-<li><a href="../../project/wiki/manage-readme-wiki-permissions.md">README & Wiki</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>DevOps permissions</h4>
-<ul>
-<li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
-<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Build and release pipelines</a></li>
-<li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>    
-<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>    
-<li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>Work tracking </h4>
-<ul>
-<li><a href="set-permissions-access-work-tracking.md">Area and iteration paths</a></li>
-<li><a href="../../boards/queries/set-query-permissions.md">Work item queries and folders</a></li>
-<li><a href="../../boards/plans/edit-delivery-plan-permissions.md">Plan permissions</a></li>
-<li><a href="set-permissions-access-work-tracking.md#process-permissions">Customize process</a></li>
-</ul>
-<h4>Reporting permissions</h4>
-<ul>
-<li><a href="../../report/dashboards/dashboard-permissions.md#set-permissions">Dashboard permissions</a></li>
-<li><a href="../../report/powerbi/analytics-security.md">Analytics</a></li>
-<li><a href="../../report/powerbi/analytics-security.md">Analytics views</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019 || azure-devops-2020"
-
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%">
-<h4>Users and groups</h4>
-<ul>
-<li><a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
-<li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
-<li><a href="../settings/add-team-administrator.md">Make a user a team admin</a></li>
-</ul>
-<h4>Wiki</h4>
-<ul>
-<li><a href="../../project/wiki/manage-readme-wiki-permissions.md">README & Wiki</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>DevOps permissions</h4>
-<ul>
-<li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
-<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
-<li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>    
-<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>    
-<li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>Work tracking</h4>
-<ul>
-<li><a href="set-permissions-access-work-tracking.md">Area and iteration paths</a></li>
-<li><a href="../../boards/queries/set-query-permissions.md">Work item queries and folders</a></li>
-<li><a href="../../boards/plans/edit-delivery-plan-permissions.md">Plan permissions</a></li>
-<li><a href="set-permissions-access-work-tracking.md#process-permissions">Customize process</a></li>
-</ul>
-<h4>Reporting permissions</h4>
-<ul>
-<li><a href="../../report/dashboards/dashboard-permissions.md#set-permissions">Dashboard permissions</a></li>
-<li><a href="../../report/powerbi/analytics-security.md">Analytics</a></li>
-<li><a href="../../report/powerbi/analytics-security.md">Analytics views</a></li>
-<li><a href="../../report/admin/grant-permissions-to-reports.md">SQL Server Reports</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-::: moniker-end
-
-
-::: moniker range="tfs-2018"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%">
-<h4>Users and groups</h4>
-<ul>
-<li>
-<li><a href="/azure/devops/server/admin/add-administrator">Add users to Team Foundation Administrators group</a></li>
-<a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
-<li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
-<li><a href="../settings/add-team-administrator.md">Make a user a team admin</a></li>
-</ul>
-<h4>Wiki</h4>
-<ul>
-<li><a href="../../project/wiki/manage-readme-wiki-permissions.md">README &amp; Wiki</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>DevOps permissions</h4>
-<ul>
-<li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
-<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
-<li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#task-group">Task groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group">Variable groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>Work tracking </h4>
-<ul>
-<li><a href="set-permissions-access-work-tracking.md">Area and iteration paths</a></li>
-<li><a href="../../boards/queries/set-query-permissions.md">Work item queries and folders</a></li>
-<li><a href="../../boards/plans/edit-delivery-plan-permissions.md">Plan permissions</a></li>
-<li><a href="set-permissions-access-work-tracking.md">Customize process</a></li>
-</ul>
-<h4>Reporting permissions</h4>
-<ul>
-<li><a href="../../report/dashboards/dashboard-permissions.md#set-permissions">Dashboard permissions</a></li>
-<li><a href="../../report/admin/grant-permissions-to-reports.md">SQL Server Reports</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
-
-
-
-::: moniker range="<= tfs-2017"
-
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%">
-<h4>Users and groups</h4>
-<ul>
-<li><a href="/azure/devops/server/admin/add-administrator">Add users to Team Foundation Administrators group</a></li>
-<li><a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
-<li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
-<li><a href="../settings/add-team-administrator.md">Make a user a team admin</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>DevOps permissions</h4>
-<ul>
-<li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
-<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
-<li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>Work tracking </h4>
-<ul>
-<li><a href="set-permissions-access-work-tracking.md">Area and iteration paths</a></li>
-<li><a href="../../boards/queries/set-query-permissions.md">Work item queries and folders</a></li>
-<li><a href="../../boards/plans/edit-delivery-plan-permissions.md">Plan permissions</a></li>
-</ul>
-<h4>Reporting permissions</h4>
-<ul>
-<li><a href="../../report/dashboards/dashboard-permissions.md#set-permissions">Dashboard permissions</a></li>
-<li><a href="../../report/admin/grant-permissions-to-reports.md">SQL Server Reports</a></li>
-<li><a href="set-sharepoint-permissions.md">SharePoint integration</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
+---
+:::row:::
+   :::column span="1":::
+      **Users and groups**
+      ::: moniker range="azure-devops"
+      -[Add users to an administrator role](set-project-collection-level-permissions.md)  
+      -[Add users to an organization](../accounts/add-organization-users.md)  
+      -[Add users to a project or a team](add-users-team-project.md)  
+      -[Add a team admin](../settings/add-team-administrator.md)  
+      ::: moniker-end
+      ::: moniker range="< azure-devops"
+      -[Add a server-level administrator](/azure/devops/server/admin/add-administrator)  
+      -[Add users to an administrator role](set-project-collection-level-permissions.md)  
+      -[Add users to a project or team](add-users-team-project.md)  
+      -[Add a team admin](../settings/add-team-administrator.md)  
+      ::: moniker-end
+      ---
+      **Wiki**
+      -[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)  
+   :::column-end:::
+   :::column span="1":::
+      *DevOps **
+      -[Git branch](../../repos/git/branch-permissions.md)  
+      -[Git repositories](../../repos/git/set-git-repository-permissions.md)  
+      -[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)  
+      -[Build and release pipelines](../../pipelines/policies/set-permissions.md)  
+      -[Approvals and approvers](../../pipelines/release/approvals/index.md)  
+      -[Task groups](../../pipelines/policies/set-permissions.md)   
+      -[Variable groups](../../pipelines/policies/set-permissions.md)      
+      -[Role-based resources](../../pipelines/policies/set-permissions.md)  
+      ---
+      **Wiki**
+   :::column-end:::
+   :::column span="1":::
+      **Work tracking**
+      ::: moniker range=">= tfs-2017"
+      -[Area and iteration paths](set-permissions-access-work-tracking.md)  
+      -[Queries and folders](../../boards/queries/set-query-permissions.md)  
+      -[Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md)  
+      -[Customize process](set-permissions-access-work-tracking.md#process-permissions)  
+      ::: moniker-end
+      ::: moniker range="< tfs-2017"
+      -[Area and iteration paths](set-permissions-access-work-tracking.md)  
+      -[Queries and folders](../../boards/queries/set-query-permissions.md)  
+      -[Customize process](set-permissions-access-work-tracking.md#process-permissions)  
+      ::: moniker-end
+      ---
+      **Reporting**
+      ::: moniker range="azure-devops"
+      -[Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
+      -[Analytics](../../report/powerbi/analytics-security.md)  
+      -[Analytics views](../../report/powerbi/analytics-security.md)  
+      ::: moniker-end
+      ::: moniker range="> tfs-2018 < azure-devops"
+      -[Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
+      -[Analytics](../../report/powerbi/analytics-security.md)  
+      -[Analytics views](../../report/powerbi/analytics-security.md) 
+      -[SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) 
+      ::: moniker-end
+      ::: moniker range="<= tfs-2018"
+      -[Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
+      -[SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) 
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
+---
+    
 
 
 <a id="image-diff"></a>  
@@ -696,12 +552,6 @@ Release Administrators (TFS 2017, Azure DevOps)
 
 For each project that you create, the system creates the followings project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
 
-> The full name of each of these groups is **[{project name}]\\{group name}**.
-> For example, the contributors group for a project called "My Project" is 
-> **[My Project]\\Contributors**.
-
-
-
 
 ::: moniker range="azure-devops"
 
@@ -730,6 +580,12 @@ For each project that you create, the system creates the followings project-leve
 [![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 ::: moniker-end
+
+
+> [!TIP]  
+> The full name of each of these groups is **[{project name}]\\{group name}**. 
+> For example, the contributors group for a project called "My Project" is 
+> **[My Project]\\Contributors**.
 
 :::row:::
    :::column span="1":::
@@ -1545,17 +1401,7 @@ You manage project-level permissions through the [web portal admin context](set-
     <tr>
         <td id="edit-team-project-level-information-permission">Edit project-level information</td>
         <td>
-            Can edit project level permissions for users and groups.
-            <blockquote>
-                <p>
-                    <strong>Edit project-level information</strong> includes the ability
-                    to perform these tasks for the project:
-                </p>
-                <ul>
-                    <li>Edit the project description</li>
-                    <li><a href="../settings/set-services.md">Modify project services visibility</a></li>
-                </ul>
-            </blockquote>
+            Can edit [project description](../projects/project-vision-status.md) and [project services visibility](../settings/set-services.md).
         </td>
     </tr>
     <tr>
@@ -1579,7 +1425,7 @@ You manage project-level permissions through the [web portal admin context](set-
     </tr>
     <tr>
         <td id="view-team-project-level-information-permission">View project-level information</td>
-        <td>Can view project level group membership and permissions.</td>
+        <td>Can view project-level information, including security information group membership and permissions.</td>
     </tr>
     <tr><td><h4>Boards</hr></td><td> </td> 
     </tr>
