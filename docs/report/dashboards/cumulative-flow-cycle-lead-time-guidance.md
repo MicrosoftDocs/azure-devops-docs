@@ -56,7 +56,7 @@ Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lea
 
 CFD charts display the count of work items grouped by state/Kanban column over time. The two primary metrics to track, cycle time and lead time, can be extracted from the chart.  
 
-
+---
 :::row:::
    :::column span="1":::
       **Metric**
@@ -100,11 +100,8 @@ CFD charts display the count of work items grouped by state/Kanban column over t
       Represents the amount of work committed for the given period of time. Only applies to fixed period processes.
    :::column-end:::
 :::row-end:::
-
- 
-
-**Note**:
-1. The CFD widget (Analytics) and built-in CFD chart (work tracking data store) do not provide discrete numbers on Lead Time and Cycle Time. However, the [Lead Time and Cycle Time widgets](cycle-time-and-lead-time.md) do provide these numbers.  
+--- 
+<sup>1</sup> The CFD widget (Analytics) and built-in CFD chart (work tracking data store) do not provide discrete numbers on Lead Time and Cycle Time. However, the [Lead Time and Cycle Time widgets](cycle-time-and-lead-time.md) do provide these numbers.  
 
 There is a well-defined correlation between Lead Time/Cycle Time and Work in Progress (WIP). The more work in progress, the longer the cycle time, which also leads to longer lead times. The opposite is also true&mdash;the less work in progress, the shorter the cycle and lead time. When the development team focuses on fewer items, they reduce the cycle and lead times. This correlation is a key reason why you can and should set [Work In Progress limits on the Kanban board](../../boards/boards/wip-limits.md).  
 
@@ -138,7 +135,7 @@ Two problems show up visually as flat lines and as bulges.
 
 :::row:::
    :::column span="2":::
-      Flat lines appear when the team doesn&#39;t update their work with a regular cadence. The <a href="../../boards/boards/kanban-basics.md" data-raw-source="[Kanban board](../../boards/boards/kanban-basics.md)">Kanban board</a> provides the quickest way to transition work from one column to another.  
+      Flat lines appear when the team doesn&#39;t update their work with a regular cadence. The  [Kanban board](../../boards/boards/kanban-basics.md) provides the quickest way to transition work from one column to another.  
       Flat lines can also appear when the work across one or more processes takes longer than planned. Flat lines appear across many parts of the system because if only one part of the system or two parts of a system have problems then you'll see a bulge. 
    :::column-end:::
    :::column span="3":::
