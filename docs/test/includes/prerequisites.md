@@ -3,13 +3,13 @@ ms.technology:  devops-test
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 07/09/2020
+ms.date: 07/13/2021
 ---
 
 
 ## Prerequisites
 
-- You must connect to a project. If you don't have a project yet, [create one](../user-guide/sign-up-invite-teammates.md). 
+- You must connect to a project. If you don't have a project yet, [create one](../../user-guide/sign-up-invite-teammates.md). 
 - You must be added to a project. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 - To view test-related work items or run test cases, you must have **Basic** access or higher. Users with **Stakeholder** access have no access to Test Plans.  
 - To exercise the full range of test-related features, you must have been granted [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or have one of the following subscriptions:
@@ -30,6 +30,6 @@ ms.date: 07/09/2020
 	- To delete or restore test-based work items, you must have the **Delete and restore work items** permission set to **Allow**.  
 	- To permanently delete test-based work items, you must have the **Permanently delete work items** permission set to **Allow**.  
 
-To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
+To learn more, see [Set permissions and access for testing](../../organizations/security/set-permissions-access-test.md). 
 
 
