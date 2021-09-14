@@ -5,31 +5,24 @@ description: Process guidance to work with cumulative flow diagrams to improve y
 ms.custom: dashboards
 ms.prod: devops  
 ms.technology: devops-analytics  
-ms.topic: conceptual
-ms.reviewer: greggboe
+ms.topic: conceptual 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 06/21/2021
+monikerRange: '<= azure-devops'
+ms.date: 09/13/2021
 ---
 
 # Cumulative flow, lead time, and cycle time guidance 
 
 [!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
-::: moniker range=">= tfs-2013" 
-
-You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart.  
-
-::: moniker-end
+You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. The two primary metrics to track, cycle time and lead time, can be extracted from the chart. To configure or view CFD charts, see [Configure a cumulative flow chart](cumulative-flow.md). 
 
 ::: moniker range=">= azure-devops-2019" 
 
 Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards. 
 
 ::: moniker-end
-
-To configure or view CFD charts, see [Configure a cumulative flow chart](cumulative-flow.md).
 
 ## Sample charts and primary metrics
 
@@ -63,42 +56,58 @@ To configure or view CFD charts, see [Configure a cumulative flow chart](cumulat
 
 CFD charts display the count of work items grouped by state/Kanban column over time. The two primary metrics to track, cycle time and lead time, can be extracted from the chart.  
 
+---
+:::row:::
+   :::column span="1":::
+      **Metric**
+   :::column-end:::
+   :::column span="3":::
+      **Definition**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **Cycle Time** <sup>1</sup>
+   :::column-end:::
+   :::column span="3":::
+      Measures the time it takes to move work through a single process or workflow state. Calculation is from the start of one process to the start of the subsequent process. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Lead Time** <sup>1</sup>
+   :::column-end:::
+   :::column span="3":::
+      *For a continuous flow process*: Measures the amount of time it takes from when a request is made (such as adding a proposed user story) until that request is completed (closed).  
+      
+      *For a sprint or fixed period process*: Measures the time from when work on a request begins until the work is completed  (i.e. the time from Active to Closed).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Work in Progress**
+   :::column-end:::
+   :::column span="3":::
+      Measures the amount of work or number of work items that are actively being worked.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Scope**
+   :::column-end:::
+   :::column span="3":::
+      Represents the amount of work committed for the given period of time. Only applies to fixed period processes.
+   :::column-end:::
+:::row-end:::
+--- 
+<sup>1</sup> The CFD widget (Analytics) and built-in CFD chart (work tracking data store) do not provide discrete numbers on Lead Time and Cycle Time. However, the [Lead Time and Cycle Time widgets](cycle-time-and-lead-time.md) do provide these numbers.  
 
-<table>
-<tbody valign="top">
-<tr>
-<th width="18%">Metric</th>
-<th>Definition</th>
-</tr>
-<tr>
-<td>Cycle Time  <sup>1</sup></td>
-<td>Measures the time it takes to move work through a single process or workflow state, calculated by the start of the given process to the start of the subsequent process. 
-</td>
-</tr>
-<tr>
-<td>Lead Time  <sup>1</sup></td>
-<td><em>For a continuous flow process:</em> measures the amount of time it takes from when a request is made (such as adding a proposed user story) until that request is completed (closed).<br/><br/>
-<em>For a sprint or fixed period process:</em> measures the time from when work on a request begins until the work is completed  (i.e. the time from Active to Closed).<br/></td>
-</tr>
-<tr>
-<td>Work in Progress</td>
-<td>Measures the amount of work or number of work items that are actively being worked.</td>
-</tr>
-<tr>
-<td>Scope</td>
-<td>Represents the amount of work committed for the given period of time. Only applies to fixed period processes.</td>
-</tr>
-</tbody>
-</table>
-
-**Note**:
-1. The CFD widget (Analytics) and built-in CFD chart (work tracking data store) do not provide discrete numbers on Lead Time and Cycle Time. However, the [Lead Time and Cycle Time widgets](cycle-time-and-lead-time.md) do provide these numbers.  
-
-There is a very tight, well defined correlation between Lead Time/Cycle Time and Work in Progress (WIP). The more work in progress, the longer the cycle time which leads to longer lead times. The opposite is also true&mdash;the less work in progress, the shorter the cycle and lead time is because the development team can focus on fewer items. This is a key reason why you can and should set [Work In Progress limits on the Kanban board](../../boards/boards/wip-limits.md).  
+There is a well-defined correlation between Lead Time/Cycle Time and Work in Progress (WIP). The more work in progress, the longer the cycle time, which also leads to longer lead times. The opposite is also true&mdash;the less work in progress, the shorter the cycle and lead time. When the development team focuses on fewer items, they reduce the cycle and lead times. This correlation is a key reason why you can and should set [Work In Progress limits on the Kanban board](../../boards/boards/wip-limits.md).  
 
 The count of work items indicates the total amount of work on a given day. In a fixed period CFD, a change in this count indicates scope change for a given period. In a continuous flow CFD, it indicates the total amount of work in the queue and completed for a given day.  
 
-Decomposing this work into specific Kanban board columns provides a view into where work is in the process. This provides insights on where work is moving smoothly, where there are blockages and where no work is being done at all. It's difficult to decipher a tabular view of the data, however, the visual CFD chart provides clear evidence that something is happening in a given way. 
+Decomposing work into specific Kanban board columns provides a view where work is in process. This view provides insights on where work is moving smoothly, where there are blockages and where no work is being done at all. It's difficult to decipher a tabular view of the data, however, the visual CFD chart provides evidence that something is happening in a given way. 
 
 ## Identify issues, take appropriate actions 
  
@@ -106,7 +115,7 @@ The CFD answers several specific questions and based on the answer, actions can 
 
 ### Will the team complete work on time? 
  
-This question applies to fixed period CFDs only. You gain an understanding of this by looking at the curve (or progression) of work in the last column of the Kanban board.  
+This question applies to fixed period CFDs only. You gain an understanding by looking at the curve (or progression) of work in the last column of the Kanban board.  
 
 ![Sample CFD with a half completed chart, dotted lines show the work won't be completed](media/cfd-incomplete.png)  
 
@@ -116,42 +125,40 @@ There may however be other reasons which can be determined by looking at other d
 
 ### How is the flow of work progressing?
 
-Is the team completing work at a steady pace? One way to tell this is to look at the spacing between the different columns on the chart. Are they of a similar or uniform distance from each other from beginning to end? Does a column appear to flat-line over a period of multiple days? Or, does it seem to "bulge"?  
-
-Two problems show up visually as flat lines and as bulges. 
-
-<table>
-<tbody valign="top">
-<tr>
-<td width="235">
-<p>Flat lines appear when the team doesn&#39;t update their work with a regular cadence. The <a href="../../boards/boards/kanban-basics.md" data-raw-source="[Kanban board](../../boards/boards/kanban-basics.md)">Kanban board</a> provides the quickest way to transition work from one column to another. </p>
-<p>Flat lines can also appear when the work across one or more processes takes longer than planned for. For this to occur, flat lines must appear across many parts of the system because if only one part of the system or two parts of a system have problems then you&#39;ll see a bulge. </p>
-</td>
-<td width="35%"><strong>Flat lines</strong><br/><img src="media/cfd-flatline.png" alt="CFD metrics, flat lines"/><br/></td>
-</tr>
-<tr>
-<td>
-<p>Bulges occur when work builds up in one part of the system and it isn&#39;t moving through a process. </p>
-<p>An example of this may be that testing is taking a long period of time but development is taking a short period of time therefore work is accumulating in the development state (bulges indicate that a succeeding step is having a problem, not necessarily the step in which the bulge is occurring).  </p>
-</td>
-<td width="65%"><strong>Bulges</strong><br/>
-<img src="media/cfd-bulge.png" alt="CFD metrics, bulges"/><br/>
-</td>
-</tr>
-</tbody>
-</table>
-
+Is the team completing work at a steady pace? One way to tell is to look at the spacing between the different columns on the chart. Are they of a similar or uniform distance from each other from beginning to end? Does a column appear to flat-line over a period of multiple days? Or, does it seem to "bulge"?  
 
 Mura, the lean term for flat lines and bulges, means unevenness and indicates a form of waste (Muda) in the system. Any unevenness in the system will cause bulges to appear in the CFD.  
 
 Monitoring the CFD for flat lines and bulges supports a key part of the Theory of Constraints project management process. Protecting the slowest area of the system is referred to as the drum-buffer-rope process and is part of how work is planned.  
 
+Two problems show up visually as flat lines and as bulges. 
 
-**How do you fix flow problems?**
+:::row:::
+   :::column span="2":::
+      Flat lines appear when the team doesn&#39;t update their work with a regular cadence. The  [Kanban board](../../boards/boards/kanban-basics.md) provides the quickest way to transition work from one column to another.  
+      Flat lines can also appear when the work across one or more processes takes longer than planned. Flat lines appear across many parts of the system because if only one part of the system or two parts of a system have problems then you'll see a bulge. 
+   :::column-end:::
+   :::column span="3":::
+      **Flat lines**  
+      ![CFD metrics, flat lines.](media/cfd-flatline.png) 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Bulges occur when work builds up in one part of the system and isn't moving through a process.  
+      For example, a bulge can occur when testing takes a long period of time while development takes a shorter period of time, causing work to accumulate in the development state (bulges indicate that a succeeding step is having a problem, not necessarily the step in which the bulge is occurring). 
+   :::column-end:::
+   :::column span="3":::
+      **Bulges**  
+      ![CFD metrics, bulges.](media/cfd-bulge.png) 
+   :::column-end:::
+:::row-end:::
+  
+### How do you fix flow problems? 
 
 You can solve the problem of lack of timely updates through daily stand-ups, other regular meetings, or scheduling a daily team reminder email.  
 
-Systemic flat-line problems indicate a more challenging problem (although you should rarely if ever see this). This problem means that work across the system has stopped. This may be the result of process-wide blockages, processes taking a very long time, or work shifting to other opportunities that aren't captured on the board. 
+Systemic flat-line problems indicate a more challenging problem, although such problems are rare.  Flat-lines indicate that work across the system has stopped. Underlying causes can be process-wide blockages, processes taking a very long time, or work shifting to other opportunities that aren't captured on the board. 
 
 One example of systemic flat-line can occur with a features CFD. Feature work can take much longer than work on user stories because features are composed of several stories. In these situations, either the slope is expected (as in the example above) or the issue is well known and already being raised by the team as an issue, in which case, problem resolution is outside the scope of this article to provide guidance.  
 
@@ -164,9 +171,9 @@ Two potentially easy ways to solve this problem are: 1) Shift developers from th
 
 ### Did the scope change?  
 
-Scope changes apply to fixed period CFDs only. The top line of the chart indicates the scope of work because a sprint is pre-loaded with the work to do on the first day, this becomes a set level of work. Changes to this top line indicate worked was added or removed.  
+Scope changes apply to fixed period CFDs only. The top line of the chart indicates the scope of work. A sprint is pre-loaded with the work to do on the first day. Changes to the top line indicate work was added or removed.  
 
-The one scenario where you can't track scope changes with a CFD occurs when the same number of works are added as removed on the same day. The line would continue to be flat. This is the primary reason why several charts should be used in conjunction with one another to monitor for specific issues. For example, the [View/configure sprint burndown](configure-sprint-burndown.md) can also show scope changes.   
+The one scenario where you can't track scope changes with a CFD occurs when the same number of works are added as removed on the same day. The line would continue to be flat. For this reason, review several charts in conjunction with one another to monitor for specific issues. For example, [View/configure sprint burndown](configure-sprint-burndown.md) to monitor scope changes. 
 
 
 ### Too much work in progress?  
