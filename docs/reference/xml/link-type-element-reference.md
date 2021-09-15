@@ -145,10 +145,4 @@ In addition to defining link types, you can customize the work item type definit
 -  [Link work items to track dependencies](../../boards/queries/link-work-items-support-traceability.md)    
 -  [Customizing your work tracking experience](../customize-work.md)
 
-To programmatically interact with link types, see [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list).
-
-
-
-
- 
-  
+To programmatically interact with link types, see [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list).
