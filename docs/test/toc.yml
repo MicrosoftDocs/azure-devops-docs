@@ -10,15 +10,17 @@
   - name: Navigate Test Plans
     href: navigate-test-plans.md
     displayName: test suites tree, define, execute, chart 
-  - name: Test objects
+  - name: Test objects and terms
     href: test-objects-overview.md
-    displayName: test plan, test case, test suites, test runs
+    displayName: test plan, test case, test suites, test runs, test results, test points
   - name: Create test plans and test suites
     href: create-a-test-plan.md
     displayName: create, plan 
   - name: Create test cases
     href: create-test-cases.md
     displayName: create, case
+  - name: Share steps between test cases
+    href: share-steps-between-test-cases.md
   - name: Run manual tests
     href: run-manual-tests.md
     displayName: manual test, run, test runs
@@ -48,7 +50,7 @@
   - name: Manage test results
     href: how-long-to-keep-test-results.md
     displayName: results, logs
-  - name: Associate tests with test cases
+  - name: Associate automated tests with test cases
     href: associate-automated-test-with-test-case.md
     displayName: test cases, automated, associate
   - name: Run automated tests from test plans
