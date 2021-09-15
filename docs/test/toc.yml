@@ -13,7 +13,7 @@
   - name: Test objects
     href: test-objects-overview.md
     displayName: test plan, test case, test suites, test runs
-  - name: Create a test plan
+  - name: Create test plans and test suites
     href: create-a-test-plan.md
     displayName: create, plan 
   - name: Create test cases
@@ -41,7 +41,7 @@
     displayName: configuration, testing
   - name: Repeat a test with different data
     href: repeat-test-with-different-data.md
-    displayName: data, testing
+    displayName: data, testing, shared steps, shared parameters
   - name: Collect diagnostic data
     href: collect-diagnostic-data.md
     displayName: diagnostic, data, testing

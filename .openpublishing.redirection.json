@@ -4973,7 +4973,7 @@
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/share-steps-between-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases",
+      "redirect_url": "/azure/devops/test/share-steps-between-test-cases",
       "redirect_document_id": false
     },
     {
@@ -5258,7 +5258,7 @@
     },
     {
       "source_path": "docs/manual-test/mtm/share-steps-between-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases",
+      "redirect_url": "/azure/devops/test/share-steps-between-test-cases",
       "redirect_document_id": false
     },
     {
@@ -16998,7 +16998,7 @@
     },
     {
       "source_path": "docs/test/mtm/share-steps-between-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases",
+      "redirect_url": "/azure/devops/test/share-steps-between-test-cases",
       "redirect_document_id": false
     },
     {
