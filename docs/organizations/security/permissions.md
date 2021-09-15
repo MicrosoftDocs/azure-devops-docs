@@ -1300,6 +1300,7 @@ Can edit a [custom inherited process](../settings/work/customize-process.md).
 :::row-end:::
 :::row:::
    :::column span="1":::
+   <a id="administer-shelved-changes"></a>
    Administer shelved changes
    :::column-end:::
    :::column span="1":::
@@ -1395,6 +1396,7 @@ as part of their membership within the Project Collection Valid Users group.
 :::row-end:::
 :::row:::
    :::column span="1":::
+   <a id="audit-streams-permissions"></a>
    #### Auditing
    :::column-end:::
    :::column span="1":::
@@ -1403,7 +1405,7 @@ as part of their membership within the Project Collection Valid Users group.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Delete audit streams
+   <a id="delete-audit-streams-permission"></a>Delete audit streams
    :::column-end:::
    :::column span="1":::
    Can delete an audit stream. Audit streams are in preview. For details, see [Create audit streaming](../audit/auditing-streaming.md). 
@@ -1411,7 +1413,7 @@ as part of their membership within the Project Collection Valid Users group.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Manage audit streams
+   <a id="manage-audit-streams-permission"></a>Manage audit streams
    :::column-end:::
    :::column span="1":::
    Can add an audit stream. Audit streams are in preview. For details, see [Create audit streaming](../audit/auditing-streaming.md).
@@ -1419,7 +1421,7 @@ as part of their membership within the Project Collection Valid Users group.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   View audit log
+   <a id="view-audit-log-permission"></a>View audit log
    :::column-end:::
    :::column span="1":::
    Can view and export audit logs. Audit logs are in preview. For details, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md). 
@@ -1435,7 +1437,7 @@ as part of their membership within the Project Collection Valid Users group.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Manage enterprise policies
+   <a id="manage-enterprise-policies-permission"></a>Manage enterprise policies
    :::column-end:::
    :::column span="1":::
    Can enable and disable application connection policies as described in [Change application connection policies](../accounts/change-application-access-policies.md).
@@ -3013,15 +3015,16 @@ By default, the project level Readers groups have only Read permissions.
    Can push and edit Git notes.<br/>
    :::column-end:::
 :::row-end:::
+:::row:::   
    :::column span="1":::
    Manage permissions
    :::column-end:::
    :::column span="1":::
    
    Can set permissions for the repository.
-
    :::column-end:::
 :::row-end:::
+
 :::row:::
    :::column span="1":::
    Read
@@ -3169,7 +3172,7 @@ In version control permissions, explicit deny takes precedence over administrato
    Lock<br/>
    :::column-end:::
    :::column span="1":::
-   
+   <a id="lock-permission"></a>
    Can lock and unlock folders or files. A folder or file tracked can be locked or unlocked to deny or restore a user&#39;s privileges. Privileges include checking out an item for edit into a different workspace or checking in Pending Changes to an item from a different workspace. For more information, see [Lock command](../../repos/tfvc/lock-command.md).
 
    :::column-end:::
