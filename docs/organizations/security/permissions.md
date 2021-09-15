@@ -1099,9 +1099,11 @@ You manage organization-level permissions through the [web portal admin context]
    Description
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
-   <h4>General</hr>
-   :::column-end:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
+   #### General
+   :::column-end:::
+   :::column span="1":::
 
    :::column-end::: 
 :::row:::
@@ -1182,9 +1184,11 @@ no users will be able to access projects in the organization or project collecti
 </blockquote>
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
-   <h4>Service Account</hr>
-   :::column-end:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
+   #### Service Account
+   :::column-end:::
+   :::column span="1":::
 
    :::column-end::: 
 :::row-end:::
@@ -1221,9 +1225,11 @@ such as Project Collection Administrators.
    Can call the synchronization application programming interfaces. Assign only to service accounts.
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
-   <h4>Boards</hr>
-   :::column-end:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
+   #### Boards
+   :::column-end:::
+   :::column span="1":::
 
    :::column-end::: 
 :::row-end:::
@@ -1281,9 +1287,11 @@ Can edit a [custom inherited process](../settings/work/customize-process.md).
 
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
-   <h4>Repos</hr>
-   :::column-end:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
+   #### Repos
+   :::column-end:::
+   :::column span="1":::
 
    :::column-end::: 
 :::row-end:::
@@ -1319,9 +1327,11 @@ as part of their membership within the Project Collection Valid Users group.
 
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
-   <h4>Pipelines</hr>
-   :::column-end:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
+   #### Pipelines
+   :::column-end:::
+   :::column span="1":::
 
    :::column-end::: 
 :::row-end:::
@@ -1364,9 +1374,11 @@ as part of their membership within the Project Collection Valid Users group.
    Can view, but not use, build controllers and build agents that are configured for an organization or project collection.
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
-   <h4>Test Plans</hr>
-   :::column-end:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
+   #### Test Plans
+   :::column-end:::
+   :::column span="1":::
 
    :::column-end::: 
 :::row-end:::
@@ -1378,9 +1390,11 @@ as part of their membership within the Project Collection Valid Users group.
    Can register and de-register test controllers.
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
-   <h4>Auditing</hr>
-   :::column-end:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
+   #### Auditing
+   :::column-end:::
+   :::column span="1":::
 
    :::column-end::: 
 :::row-end:::
@@ -1408,9 +1422,11 @@ as part of their membership within the Project Collection Valid Users group.
    Can view and export audit logs. Audit logs are in preview. For details, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md). 
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
-   <h4>Policies</hr>
-   :::column-end:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
+   #### Policies
+   :::column-end:::
+   :::column span="1":::
 
    :::column-end::: 
 :::row-end:::
@@ -1774,9 +1790,11 @@ You manage project-level permissions through the [web portal admin context](set-
    Description
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
-   <h4>General</hr>
-   :::column-end:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
+   #### General
+   :::column-end:::
+   :::column span="1":::
 
    :::column-end::: 
 :::row-end:::
@@ -1851,9 +1869,11 @@ Can provide or edit metadata for a project. For example, a user can provide high
    Can view project level group membership and permissions.
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
-   <h4>Boards</hr>
-   :::column-end:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
+   #### Boards
+   :::column-end:::
+   :::column span="1":::
 
    :::column-end::: 
 :::row-end:::
@@ -1912,9 +1932,11 @@ All users granted Stakeholder access for a private project can only add existing
    Can [permanently delete work items](../../boards/backlogs/remove-delete-work-items.md) from this project. 
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
-   <h4>Analytics</hr>
-   :::column-end:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
+   #### Analytics
+   :::column-end:::
+   :::column span="1":::
 
    :::column-end::: 
 :::row-end:::
@@ -1943,9 +1965,11 @@ that have been saved under the Shared area.
    Can access data available from the [Analytics service](../../report/powerbi/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/powerbi/analytics-security.md).   
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
-   <h4>Test Plans</hr>
-   :::column-end:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
+   #### Test Plans
+   :::column-end:::
+   :::column span="1":::
 
    :::column-end::: 
 :::row-end:::
