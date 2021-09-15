@@ -1100,9 +1100,11 @@
    Description
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
    #### General
-   :::column-end:::   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
     
    :::column-end::: 
 :::row:::
@@ -1183,9 +1185,11 @@
    </blockquote>
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
    #### Service Account
-   :::column-end:::   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
     
    :::column-end::: 
 :::row-end:::
@@ -1222,9 +1226,11 @@
    Can call the synchronization application programming interfaces. Assign only to service accounts.
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
    #### Boards
-   :::column-end:::   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
     
    :::column-end::: 
 :::row-end:::
@@ -1282,9 +1288,11 @@
 
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
    #### Repos
-   :::column-end:::   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
     
    :::column-end::: 
 :::row-end:::
@@ -1320,9 +1328,11 @@
 
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
    #### Pipelines
-   :::column-end:::   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
     
    :::column-end::: 
 :::row-end:::
@@ -1365,9 +1375,11 @@
    Can view, but not use, build controllers and build agents that are configured for an organization or project collection.
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
    #### Test Plans
-   :::column-end:::   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
     
    :::column-end::: 
 :::row-end:::
@@ -1379,9 +1391,11 @@
    Can register and de-register test controllers.
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
    <a id="audit-streams-permissions"></a> #### Auditing
-   :::column-end:::   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
     
    :::column-end::: 
 :::row-end:::
@@ -1409,9 +1423,11 @@
    Can view and export audit logs. Audit logs are in preview. For details, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md). 
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
    #### Policies
-   :::column-end:::   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
     
    :::column-end::: 
 :::row-end:::
@@ -1775,9 +1791,11 @@
    Description
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
    #### General
-   :::column-end:::   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
     
    :::column-end::: 
 :::row-end:::
@@ -1852,9 +1870,11 @@
    Can view project level group membership and permissions.
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
    #### Boards
-   :::column-end:::   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
     
    :::column-end::: 
 :::row-end:::
@@ -1913,9 +1933,11 @@
    Can [permanently delete work items](../../boards/backlogs/remove-delete-work-items.md) from this project. 
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
    #### Analytics
-   :::column-end:::   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
     
    :::column-end::: 
 :::row-end:::
@@ -1944,9 +1966,11 @@
    Can access data available from the [Analytics service](../../report/powerbi/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/powerbi/analytics-security.md).   
    :::column-end:::
 :::row-end:::
-:::row:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
    #### Test Plans
-   :::column-end:::   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
     
    :::column-end::: 
 :::row-end:::
