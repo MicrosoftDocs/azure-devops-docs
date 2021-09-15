@@ -241,146 +241,335 @@ ms.date: 08/18/2021
 <!---
 ::: moniker range=">= tfs-2018"
 
-<table>
-<tr valign="bottom">
-<th width="310px">Task</th>
-<th>Stakeholders</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Team Admins</th>
-<th width="16%">Organization Owner/<br/>Project Admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">Set personal notifications or alerts 
-</td>
-<td>✔️</td>
-<td>  </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Set team notifications or alerts 
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Set project-level notifications or alerts 
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">READMEs</td>
-<td>See Note 1</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">View Project Wikis</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">View Code Wikis</td>
-<td></td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Provision or create a Wiki</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Publish Code as Wiki</td>
-<td> </td>
-<td> </td>
-<td>✔️ </td>
-<td>See Note 2 </td>
-<td>See Note 2</td>
-</tr>
-<tr>
-<td align="left">View the project page
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Edit the project page
-</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Navigate using the Project pages
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Request feedback</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Provide feedback</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Powerful semantic code search
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Powerful semantic work tracking search
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   Task
+   :::column-end:::
+   :::column span="1":::
+   Stakeholders
+   :::column-end:::
+   :::column span="1":::
+   Readers
+   :::column-end:::
+   :::column span="1":::
+   Contributors
+   :::column-end:::
+   :::column span="1":::
+   Team Admins
+   :::column-end:::
+   :::column span="1":::
+   Organization Owner/<br/>Project Admins
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Set personal notifications or alerts 
+
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Set team notifications or alerts 
+
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Set project-level notifications or alerts 
+
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   READMEs
+   :::column-end:::
+   :::column span="1":::
+   See Note 1
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   View Project Wikis
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   View Code Wikis
+   :::column-end:::
+   :::column span="1":::
+   
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Provision or create a Wiki
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Publish Code as Wiki
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ✔️ 
+   :::column-end:::
+   :::column span="1":::
+   See Note 2 
+   :::column-end:::
+   :::column span="1":::
+   See Note 2
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   View the project page
+
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Edit the project page
+
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Navigate using the Project pages
+
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Request feedback
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Provide feedback
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Powerful semantic code search
+
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Powerful semantic work tracking search
+
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+
 
 #### Notes
 
@@ -393,146 +582,335 @@ ms.date: 08/18/2021
 
 ::: moniker range="tfs-2017" 
 
-<table>
-<tr valign="bottom">
-<th width="310px">Task</th>
-<th>Stakeholders</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Team Admins</th>
-<th width="16%">Organization Owner/<br/>Project Admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">Set personal notifications or alerts 
-</td>
-<td>✔️</td>
-<td>  </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Set team notifications or alerts 
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Set project-level notifications or alerts 
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">READMEs</td>
-<td>See Note 1</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">View Project Wikis</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">View Code Wikis</td>
-<td></td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Provision or create a Wiki</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Publish Code as Wiki</td>
-<td> </td>
-<td> </td>
-<td>✔️ </td>
-<td>See Note 2 </td>
-<td>See Note 2</td>
-</tr>
-<tr>
-<td align="left">View the project page
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Edit the project page
-</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Navigate using the Project pages
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Request feedback</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Provide feedback</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Powerful semantic code search
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Powerful semantic work tracking search
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   Task
+   :::column-end:::
+   :::column span="1":::
+   Stakeholders
+   :::column-end:::
+   :::column span="1":::
+   Readers
+   :::column-end:::
+   :::column span="1":::
+   Contributors
+   :::column-end:::
+   :::column span="1":::
+   Team Admins
+   :::column-end:::
+   :::column span="1":::
+   Organization Owner/<br/>Project Admins
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Set personal notifications or alerts 
+
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Set team notifications or alerts 
+
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Set project-level notifications or alerts 
+
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   READMEs
+   :::column-end:::
+   :::column span="1":::
+   See Note 1
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   View Project Wikis
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   View Code Wikis
+   :::column-end:::
+   :::column span="1":::
+   
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Provision or create a Wiki
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Publish Code as Wiki
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ✔️ 
+   :::column-end:::
+   :::column span="1":::
+   See Note 2 
+   :::column-end:::
+   :::column span="1":::
+   See Note 2
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   View the project page
+
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Edit the project page
+
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Navigate using the Project pages
+
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Request feedback
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Provide feedback
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Powerful semantic code search
+
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Powerful semantic work tracking search
+
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+
 
 #### Notes
 
@@ -543,77 +921,170 @@ ms.date: 08/18/2021
 
 ::: moniker range="tfs-2015" 
 
-<table>
-<tr valign="bottom">
-<th width="310px">Task</th>
-<th>Stakeholders</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Team Admins</th>
-<th width="16%">Organization Owner/<br/>Project Admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">Set personal notifications or alerts 
-</td>
-<td>✔️</td>
-<td>  </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Set team notifications or alerts 
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Set project-level notifications or alerts 
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Participate in Team (chat) rooms</td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">READMEs<p><em>Can view project READMEs, but not READMEs defined for a repository.</em></p></td>
-<td><em>Partial access</em></td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Request feedback</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Provide feedback</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   Task
+   :::column-end:::
+   :::column span="1":::
+   Stakeholders
+   :::column-end:::
+   :::column span="1":::
+   Readers
+   :::column-end:::
+   :::column span="1":::
+   Contributors
+   :::column-end:::
+   :::column span="1":::
+   Team Admins
+   :::column-end:::
+   :::column span="1":::
+   Organization Owner/<br/>Project Admins
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Set personal notifications or alerts 
+
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Set team notifications or alerts 
+
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Set project-level notifications or alerts 
+
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Participate in Team (chat) rooms
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   READMEs<p><em>Can view project READMEs, but not READMEs defined for a repository.</em></p>
+   :::column-end:::
+   :::column span="1":::
+   <em>Partial access</em>
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Request feedback
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Provide feedback
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+
 
 
 
@@ -623,76 +1094,157 @@ ms.date: 08/18/2021
 
 ::: moniker range="tfs-2013"
 
-<table>
-<tr valign="bottom">
-<th width="310px">Task</th>
-<th>Stakeholders</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Team Admins</th>
-<th width="16%">Organization Owner/<br/>Project Admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">Set personal notifications or alerts 
-</td>
-<td>✔️</td>
-<td>  </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
+:::row:::
+   :::column span="1":::
+   Task
+   :::column-end:::
+   :::column span="1":::
+   Stakeholders
+   :::column-end:::
+   :::column span="1":::
+   Readers
+   :::column-end:::
+   :::column span="1":::
+   Contributors
+   :::column-end:::
+   :::column span="1":::
+   Team Admins
+   :::column-end:::
+   :::column span="1":::
+   Organization Owner/<br/>Project Admins
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Set personal notifications or alerts 
 
-<tr>
-<td align="left">Set team notifications or alerts 
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td align="left">Set project-level notifications or alerts 
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>✔️</td>
-</tr>
+:::row:::
+   :::column span="1":::
+   Set team notifications or alerts 
 
-<tr>
-<td align="left">Participate in Team (chat) rooms</td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td align="left">Request feedback</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
+:::row:::
+   :::column span="1":::
+   Set project-level notifications or alerts 
 
-<tr>
-<td align="left">Provide feedback</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Participate in Team (chat) rooms
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Request feedback
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Provide feedback
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
 
 
-</tbody>
-</table>
+
 
 
 ::: moniker-end    

@@ -74,78 +74,143 @@ For a summary of permissions for the above roles, see [Default permissions and a
 
 To delegate tasks to other members within your organization, consider creating a custom security group and then granting permissions as indicated in the following table.  
 
-<table>
-<tr>
-<td width="25%"><strong>Role</strong>
-</td>
-<td width="30%"><strong>Tasks to perform</strong>
-</td>
-<td width="45%"><strong>Permissions to set to Allow</strong>
-</td>
-</tr>
-<tr>
-<td>Development lead (Git)</td>
-<td> Manage branch policies</td>
-<td>Edit policies, Force push, and Manage permissions<br/>See <a href="../../repos/git/branch-permissions.md" data-raw-source="[Set branch permissions](../../repos/git/branch-permissions.md)">Set branch permissions</a>.</td>
-</tr>
-<tr>
-<td>Development lead (TFVC)</td>
-<td>Manage repository and branches</td>
-<td>Administer labels, Manage branch, and Manage permissions<br/>See <a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)">Set TFVC repository permissions</a>.</td>
-</tr>
-<tr>
-<td>Software architect (Git)</td>
-<td>Manage repositories</td>
-<td>Create repositories, Force push, and Manage permissions<br/>See <a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)">Set Git repository permissions </a></td>
-</tr>
-<tr>
-<td>Team administrators</td>
-<td>Add area paths for their team<br/>Add shared queries for their team</td>
-<td>Create child nodes, Delete this node, Edit this node<br/>See <a href="set-permissions-access-work-tracking.md#set-permissions-area-path" data-raw-source="[Create child nodes, modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path)">Create child nodes, modify work items under an area path</a><br/>
-Contribute, Delete, Manage permissions (for a query folder), See <a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Set query permissions](../../boards/queries/set-query-permissions.md)">Set query permissions</a>.</td>
-</tr>
-<tr>
-<td>Contributors</td>
-<td>Add shared queries under a query folder, Contribute to dashboards</td>
-<td>Contribute, Delete (for a query folder), See <a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Set query permissions](../../boards/queries/set-query-permissions.md)">Set query permissions</a><br/>
-View, Edit, and Manage dashboards, See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="[Set dashboard permissions](../../report/dashboards/dashboard-permissions.md)">Set dashboard permissions</a>.
-</td>
-</tr>
-<tr>
-<td>Project or product manager</td>
-<td>Add area paths, iteration paths, and shared queries<br/>
-Delete and restore work items, Move work items out of this project, Permanently delete work items</td>
-<td>Edit project-level information, See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.</td>
-</tr>
-<tr>
-<td>Process template manager (<a href="../settings/work/inheritance-process-model.md" data-raw-source="[Inheritance process model](../settings/work/inheritance-process-model.md)">Inheritance process model</a>)</td>
-<td>Work tracking customization </td>
-<td>Administer process permissions, Create new projects, Create process, Delete field from account, Delete process, Delete project, Edit process<br/>See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.</td>
-</tr>
-<tr>
-<td>Process template manager (<a href="../settings/work/hosted-xml-process-model.md" data-raw-source="[Hosted XML process model](../settings/work/hosted-xml-process-model.md)">Hosted XML process model</a>)</td>
-<td>Work tracking customization </td>
-<td>Edit collection-level information, See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.</td>
-</tr>
-<tr>
-<td>Project management (<a href="../../reference/on-premises-xml-process-model.md" data-raw-source="[On-premises XML process model](../../reference/on-premises-xml-process-model.md)">On-premises XML process model</a>)</td>
-<td>Work tracking customization </td>
-<td>Edit project-level information, See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.</td>
-</tr>
-<tr>
-<td>Permissions manager</td>
-<td>Manage permissions for a project, account, or collection </td>
-<td>For a project, Edit project-level information<br/> 
-For an account or collection, Edit instance-level (or collection-level) information<br/> To understand the scope of these permissions, see <a href="permissions-lookup-guide.md" data-raw-source="[Permission lookup guide](permissions-lookup-guide.md)">Permission lookup guide</a>. To grant permissions, See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.<br/><br/>You can also grant permissions to manage permissions for the following objects:
-<ul>
-<li><a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)">Set Git repository permissions </a></li>
-<li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Manage Git branch permissions](../../repos/git/branch-permissions.md)">Manage Git branch permissions</a></li>
-<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)">Set TFVC repository permissions </a></li>
-<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Administer build and release permissions](../../pipelines/policies/set-permissions.md)">Administer build and release permissions</a></li>
-<li><a href="../../project/wiki/manage-readme-wiki-permissions.md" data-raw-source="[Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)">Manage Wiki permissions</a>.</li>
-</td>
-</tr>
-</table>
+:::row:::
+   :::column span="1":::
+   <strong>Role</strong>
+
+   :::column-end:::
+   :::column span="1":::
+   <strong>Tasks to perform</strong>
+
+   :::column-end:::
+   :::column span="1":::
+   <strong>Permissions to set to Allow</strong>
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Development lead (Git)
+   :::column-end:::
+   :::column span="1":::
+    Manage branch policies
+   :::column-end:::
+   :::column span="1":::
+   Edit policies, Force push, and Manage permissions<br/>See [Set branch permissions](../../repos/git/branch-permissions.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Development lead (TFVC)
+   :::column-end:::
+   :::column span="1":::
+   Manage repository and branches
+   :::column-end:::
+   :::column span="1":::
+   Administer labels, Manage branch, and Manage permissions<br/>See [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Software architect (Git)
+   :::column-end:::
+   :::column span="1":::
+   Manage repositories
+   :::column-end:::
+   :::column span="1":::
+   Create repositories, Force push, and Manage permissions<br/>See [Set Git repository permissions ](../../repos/git/set-git-repository-permissions.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Team administrators
+   :::column-end:::
+   :::column span="1":::
+   Add area paths for their team<br/>Add shared queries for their team
+   :::column-end:::
+   :::column span="1":::
+   Create child nodes, Delete this node, Edit this node<br/>See [Create child nodes, modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>
+   Contribute, Delete, Manage permissions (for a query folder), See [Set query permissions](../../boards/queries/set-query-permissions.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Contributors
+   :::column-end:::
+   :::column span="1":::
+   Add shared queries under a query folder, Contribute to dashboards
+   :::column-end:::
+   :::column span="1":::
+   Contribute, Delete (for a query folder), See [Set query permissions](../../boards/queries/set-query-permissions.md)<br/>
+   View, Edit, and Manage dashboards, See [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md).
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Project or product manager
+   :::column-end:::
+   :::column span="1":::
+   Add area paths, iteration paths, and shared queries<br/>
+   Delete and restore work items, Move work items out of this project, Permanently delete work items
+   :::column-end:::
+   :::column span="1":::
+   Edit project-level information, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Process template manager ([Inheritance process model](../settings/work/inheritance-process-model.md))
+   :::column-end:::
+   :::column span="1":::
+   Work tracking customization 
+   :::column-end:::
+   :::column span="1":::
+   Administer process permissions, Create new projects, Create process, Delete field from account, Delete process, Delete project, Edit process<br/>See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Process template manager ([Hosted XML process model](../settings/work/hosted-xml-process-model.md))
+   :::column-end:::
+   :::column span="1":::
+   Work tracking customization 
+   :::column-end:::
+   :::column span="1":::
+   Edit collection-level information, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Project management ([On-premises XML process model](../../reference/on-premises-xml-process-model.md))
+   :::column-end:::
+   :::column span="1":::
+   Work tracking customization 
+   :::column-end:::
+   :::column span="1":::
+   Edit project-level information, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Permissions manager
+   :::column-end:::
+   :::column span="1":::
+   Manage permissions for a project, account, or collection 
+   :::column-end:::
+   :::column span="1":::
+   For a project, Edit project-level information<br/> 
+   For an account or collection, Edit instance-level (or collection-level) information<br/> To understand the scope of these permissions, see [Permission lookup guide](permissions-lookup-guide.md). To grant permissions, See [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).<br/><br/>You can also grant permissions to manage permissions for the following objects:
+   
+   - [Set Git repository permissions ](../../repos/git/set-git-repository-permissions.md)
+   - [Manage Git branch permissions](../../repos/git/branch-permissions.md)
+   - [Set TFVC repository permissions ](../../repos/tfvc/set-tfvc-repository-permissions.md)
+   - [Administer build and release permissions](../../pipelines/policies/set-permissions.md)
+   - [Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md).
+
+   :::column-end:::
+:::row-end:::
+
 
 
 
@@ -187,32 +252,51 @@ Users and groups who are added to the **Project-Scoped Users** group can only se
 Azure DevOps is designed to enable all valid users to view all objects defined in the system. You can restrict access to resources by setting the permission state to **Deny**. You can set permissions for members that belong to a custom security group or for an individual user. To learn more about how to set these types of permissions, see [Change individual permissions, grant select access to specific functions](change-individual-permissions.md). 
 
 
-<table>
-<tr>
-<td width="25%"><strong>Area to restrict</strong><br/></td>
-<td width="75%"><strong>Permissions to set to Deny</strong>
-</td>
-</tr>
-<tr>
-<td>View or contribute to a repository</td>
-<td>View, Contribute<br/>See <a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)">Set Git repository permissions</a> or <a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)">Set TFVC repository permissions</a>.</td>
-</tr>
-<tr>
-<td>View, create, or modify work items within an area path</td>
-<td>Edit work items in this node, View work items in this node<br/>See <a href="set-permissions-access-work-tracking.md" data-raw-source="[Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md)">Set permissions and access for work tracking, Modify work items under an area path</a>.</td>
-</tr>
-<tr>
-<td>View or update select build and release pipelines</td>
-<td>Edit build pipeline, View build pipeline<br/>
-Edit release pipeline, View release pipeline<br/>
-You set these permissions at the object level. See <a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Set build and release permissions](../../pipelines/policies/set-permissions.md)">Set build and release permissions</a>.</td>
-</tr>
-<tr>
-<td>Edit a dashboard</td>
-<td>View dashboards<br/>
-See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="[Set dashboard permissions](../../report/dashboards/dashboard-permissions.md)">Set dashboard permissions</a>.</td>
-</tr>
-</table>
+:::row:::
+   :::column span="1":::
+   <strong>Area to restrict</strong><br/>
+   :::column-end:::
+   :::column span="1":::
+   <strong>Permissions to set to Deny</strong>
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   View or contribute to a repository
+   :::column-end:::
+   :::column span="1":::
+   View, Contribute<br/>See [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md) or [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   View, create, or modify work items within an area path
+   :::column-end:::
+   :::column span="1":::
+   Edit work items in this node, View work items in this node<br/>See [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   View or update select build and release pipelines
+   :::column-end:::
+   :::column span="1":::
+   Edit build pipeline, View build pipeline<br/>
+   Edit release pipeline, View release pipeline<br/>
+   You set these permissions at the object level. See [Set build and release permissions](../../pipelines/policies/set-permissions.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Edit a dashboard
+   :::column-end:::
+   :::column span="1":::
+   View dashboards<br/>
+   See [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md).
+   :::column-end:::
+:::row-end:::
+
 
 <a id="restrict-modifications-wits" /> 
 
