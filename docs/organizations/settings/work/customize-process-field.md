@@ -40,7 +40,7 @@ To review the list of fields defined for all processes and the WITs that referen
 
 Fields listed correspond to all fields defined for the organization. This includes all custom fields and those defined for system processes. 
 
-For descriptions and usage of each field, as well as the Reference name for each field, you can look it up from the [Work item field index](../../../boards/work-items/guidance/work-item-field.md). You can also get the Reference name of fields from the [Work Item Types Field - List REST API](/rest/api/azure/devops/wit/work%20item%20types%20field/list).
+For descriptions and usage of each field, as well as the Reference name for each field, you can look it up from the [Work item field index](../../../boards/work-items/guidance/work-item-field.md). You can also get the Reference name of fields from the [Work Item Types Field - List REST API](/rest/api/azure/devops/wit/work-item-types-field/list).
 
 > [!div class="mx-imgBorder"]  
 > ![Make a copy of a selected inherited process](media/process/list-fields.png) 
