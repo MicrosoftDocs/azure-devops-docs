@@ -1,7 +1,7 @@
 ---
 title: Set permissions and access for manual testing
 titleSuffix: Azure DevOps
-description: How to grant or restrict access to manual test tasks for Azure DevOps & TFS
+description: How to grant or restrict access to test plans, test suites, test cases, and other test-related features.
 ms.technology: devops-security
 ms.assetid: 
 ms.author: kaelli
@@ -15,7 +15,7 @@ ms.date: 09/13/2021
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-To exercise the full features of Azure Test Plans, you mustbe granted [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or have one of the following subscriptions:
+To exercise the full features of Azure Test Plans, you must be granted [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or have one of the following subscriptions:
 
 - [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
 - [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
@@ -50,7 +50,7 @@ In addition, you can grant or restrict access to various manual test features by
 	- **Permanently delete work items**: [Permanently delete test-specific work items](../../boards/backlogs/remove-delete-work-items.md)
 	::: moniker-end
 - **Organization or collection-level** 
-	- **Manage test controllers**  
+	- **Manage test controllers**: Permission associated with a deprecated feature for TFS 2018 and later versions. To learn more, see [Overview of test agents and test controllers for running load tests](/visualstudio/test/configure-test-agents-and-controllers-for-load-tests) and [Install test agents and test controllers](/visualstudio/test/lab-management/install-configure-test-agents).   
  
 ## Prerequisites 
 
