@@ -724,7 +724,8 @@ So the full name of the administrator group for the default collection is
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-       Project-Scoped Users <a id="project-scoped-user-group" />
+       Project-Scoped Users
+       <a id="project-scoped-user-group" ></a>
    :::column-end:::
    :::column span="1":::
        Has limited access to view organization settings and projects other than those projects they are specifically added to. Also, people picker options are limited to those users and groups that have been explicitly added to the project the user is connected to.
@@ -761,7 +762,7 @@ Release Administrators (TFS 2017, Azure DevOps)
 [team name]
 -->
 
-<a id="project-level-groups" />
+<a id="project-level-groups" ></a>
 
 ## Project-level groups
 
@@ -848,7 +849,8 @@ For each project that you create, the system creates the followings project-leve
 :::row-end:::
 :::row:::
    :::column span="1":::
-       Project Administrators<a id="project-administrator-group" />
+       Project Administrators
+       <a id="project-administrator-group" ></a>
    :::column-end:::
    :::column span="1":::
        Has permissions to administer all aspects of teams and project, although they can't create team projects.
@@ -892,7 +894,8 @@ For each project that you create, the system creates the followings project-leve
 ::: moniker-end
 :::row:::
    :::column span="1":::
-       *TeamName* <a id="team-group" /> 
+       *TeamName* 
+       <a id="team-group" ></a> 
    :::column-end:::
    :::column span="1":::
        Has permissions to contribute fully to the project code base and work item tracking.  The default Team group is created when you create a project, and by default is added to the Contributors group for the project. Any new teams you create will also have a group created for them and added to the Contributors group.
@@ -1503,7 +1506,8 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="administer-build-resource-permissions-permission" />Administer build resource permissions
+      <a id="administer-build-resource-permissions-permission" ></a>
+      Administer build resource permissions
    :::column-end:::
    :::column span="3":::
       Can modify permissions for build pipelines at the project collection-level. This includes the following artifacts: 
@@ -1517,7 +1521,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="":::
-      <a id="administer-process-permissions-permission" />Administer process permissions
+      <a id="administer-process-permissions-permission"></a>Administer process permissions
    :::column-end:::
    :::column span="3":::
       Can modify permissions for customizing work tracking by creating and customizing [inherited processes](../settings/work/inheritance-process-model.md). Requires the collection to be configured to support the Inherited process model. See also: 
@@ -1529,7 +1533,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 ::: moniker range="<= tfs-2017"
 :::row:::
    :::column span="":::
-      <a id="administer-Project-Server-integration-permission" />Administer Project Server integration
+      <a id="administer-Project-Server-integration-permission" ></a>Administer Project Server integration
    :::column-end:::
    :::column span="3":::
       Can [configure the integration of TFS and Project Server](/previous-versions/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server) to enable data synchronization between the two server products. Applies to TFS 2017 and earlier versions only.
@@ -1539,7 +1543,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="":::
-      <a id="administer-shelved-changes-permission" />Administer shelved changes
+      <a id="administer-shelved-changes-permission" ></a>Administer shelved changes
    :::column-end:::
    :::column span="3":::
       Can delete [shelvesets created by other users](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md). Applies when TFVC is used as the source control. 
@@ -1547,7 +1551,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="administer-workspaces-permission" />Administer workspaces
+      <a id="administer-workspaces-permission" ></a>Administer workspaces
    :::column-end:::
    :::column span="3":::
       Can [create and delete workspaces for other users](../../repos/tfvc/create-work-workspaces.md). Applies when TFVC is used as the source control.
@@ -1555,7 +1559,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="alter-trace-settings-permission" />Alter trace settings
+      <a id="alter-trace-settings-permission" ></a>Alter trace settings
    :::column-end:::
    :::column span="3":::
       Can [change the trace settings](/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps Web services.
@@ -1563,7 +1567,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="create-a-workspace-permission" />Create a workspace
+      <a id="create-a-workspace-permission" ></a>Create a workspace
    :::column-end:::
    :::column span="3":::
       Can create a version control workspace. Applies when TFVC is used as the source control. This permission is granted to all users as part of their membership within the Project Collection Valid Users group.
@@ -1571,7 +1575,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="create-new-team-projects-permission" />Create new projects (formerly Create new team projects)
+      <a id="create-new-team-projects-permission" ></a>Create new projects (formerly Create new team projects)
    :::column-end:::
    :::column span="3":::
       Can [add projects to a project collection](../projects/create-project.md). Additional permissions may be required depending on your on-premises deployment. 
@@ -1579,7 +1583,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="create-new-team-projects-permission" />Create new projects (formerly Create new team projects)
+      <a id="create-new-team-projects-permission" ></a>Create new projects (formerly Create new team projects)
    :::column-end:::
    :::column span="3":::
       Can [add projects to a project collection](../projects/create-project.md). Additional permissions may be required depending on your on-premises deployment. 
@@ -1589,7 +1593,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="":::
-      <a id="create-process-permission" />Create process
+      <a id="create-process-permission" ></a>Create process
    :::column-end:::
    :::column span="3":::
       Can [create an inherited process](../settings/work/manage-process.md)"> used to customize work tracking and Azure Boards. Requires the collection to be configured to support the Inherited process model.  
@@ -1597,7 +1601,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="delete-field-permission" />Delete field from organization (formerly Delete field from account )
+      <a id="delete-field-permission" ></a>Delete field from organization (formerly Delete field from account )
    :::column-end:::
    :::column span="3":::
       Can [delete a custom field that was added to a process](../settings/work/customize-process-field.md). For on-premises deployments, requires the collection to be configured to support Inherited process model.  
@@ -1615,7 +1619,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="":::
-      <a id="delete-team-project-permission" />Delete team project
+      <a id="delete-team-project-permission" ></a>Delete team project
    :::column-end:::
    :::column span="3":::
       Can [delete a project](../projects/delete-project.md).
@@ -1650,7 +1654,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="":::
-      <a id="edit-process-permission" />Edit process
+      <a id="edit-process-permission" ></a>Edit process
    :::column-end:::
    :::column span="3":::
       Can edit a [custom inherited process](../settings/work/customize-process.md). Requires the collection to be configured to support the Inherited process model. 
@@ -1660,7 +1664,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="":::
-      <a id="make-requests-on-behalf-of-others-permission" />Make requests on behalf of others
+      <a id="make-requests-on-behalf-of-others-permission" ></a>Make requests on behalf of others
    :::column-end:::
    :::column span="3":::
       Can perform operations on behalf of other users or services. 
@@ -1669,7 +1673,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="manage-build-resources-permission" />Manage build resources
+      <a id="manage-build-resources-permission" ></a>Manage build resources
    :::column-end:::
    :::column span="3":::
       Can manage build computers, build agents, and build controllers. 
@@ -1677,7 +1681,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="manage-process-template-permission" />Manage process template
+      <a id="manage-process-template-permission" ></a>Manage process template
    :::column-end:::
    :::column span="3":::
       Can [download, create, edit, and upload process templates](../../boards/work-items/guidance/manage-process-templates.md). A process template defines the building blocks of the work item tracking system as well as other subsystems you access through Azure Boards. Requires the collection to be configured to support ON=premises XML process model.  
@@ -1685,7 +1689,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="manage-test-controllers-permission" />Manage test controllers
+      <a id="manage-test-controllers-permission" ></a>Manage test controllers
    :::column-end:::
    :::column span="3":::
       Can register and de-register test controllers. 
@@ -1693,7 +1697,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="trigger-events-permission" />Trigger events
+      <a id="trigger-events-permission" ></a>Trigger events
    :::column-end:::
    :::column span="3":::
       Can trigger project alert events within the collection. Assign only to service accounts. Users with this permission can't remove built-in collection level groups such as Project Collection Administrators. 
@@ -1701,7 +1705,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="use-build-resources-permission" />Use build resources
+      <a id="use-build-resources-permission" ></a>Use build resources
    :::column-end:::
    :::column span="3":::
       Can reserve and allocate build agents. Assign only to service accounts for build services.
@@ -1709,7 +1713,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="view-build-resources-permission" />View build resources
+      <a id="view-build-resources-permission" ></a>View build resources
    :::column-end:::
    :::column span="3":::
       Can view, but not use, build controllers and build agents that are configured for an organization or project collection.  
@@ -1717,7 +1721,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="view-collection-level-information-permission" />View instance-level information<br/>or View collection-level information
+      <a id="view-collection-level-information-permission" ></a>View instance-level information<br/>or View collection-level information
    :::column-end:::
    :::column span="3":::
       Can view project collection-level group membership and permissions.
@@ -1725,7 +1729,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="view-system-synchronization-information-permission" />View system synchronization information
+      <a id="view-system-synchronization-information-permission" ></a>View system synchronization information
    :::column-end:::
    :::column span="3":::
       Can call the synchronization application programming interfaces. Assign only to service accounts. 
@@ -2279,7 +2283,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="bypass-rules-permission" />Bypass rules on work item updates
+      <a id="bypass-rules-permission" ></a>Bypass rules on work item updates
    :::column-end:::
    :::column span="3":::
       Users with this permission can save a work item that ignores rules, such as [copy, constraint, or conditional rules](../settings/work/rule-reference.md), defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.  
@@ -2290,7 +2294,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="":::
-      <a id="change-process-team-project-permission" />Change process of project
+      <a id="change-process-team-project-permission" ></a>Change process of project
    :::column-end:::
    :::column span="3":::
       When combined with the 'Edit project-level information' permission, allows users to change the Inheritance process for a project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md). Requires the project uses the Inherited process model. 
@@ -2300,7 +2304,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="":::
-      <a id="create-tag-definition-permission" />Create tag definition
+      <a id="create-tag-definition-permission" ></a>Create tag definition
    :::column-end:::
    :::column span="3":::
       [Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md) By default, all members of the Contributors group have this permission.  
@@ -2326,7 +2330,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="delete-work-items-in-this-project-permission" />Delete and restore work items or<br/>Delete work items in this project
+      <a id="delete-work-items-in-this-project-permission" ></a>Delete and restore work items or<br/>Delete work items in this project
    :::column-end:::
    :::column span="3":::
       Can [mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md).
@@ -2336,7 +2340,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="alter-trace-settings-permission" />Alter trace settings
+      <a id="alter-trace-settings-permission" ></a>Alter trace settings
    :::column-end:::
    :::column span="3":::
       Can [change the trace settings](/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps Web services.
@@ -2346,7 +2350,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="":::
-      <a id="delete-shared-analytic-views-permission" />Delete shared Analytics view
+      <a id="delete-shared-analytic-views-permission" ></a>Delete shared Analytics view
    :::column-end:::
    :::column span="3":::
       Can delete [Analytics views](../../report/powerbi/analytics-views-manage.md) that have been saved under the Shared area. Requires the project uses the Inherited process model. 
@@ -2356,7 +2360,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="":::
-      <a id="delete-team-project-permission" />Delete project
+      <a id="delete-team-project-permission" ></a>Delete project
    :::column-end:::
    :::column span="3":::
       Can [delete the project](../projects/delete-project.md) from the project collection. 
@@ -2364,7 +2368,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="delete-test-runs-permission" />Delete test runs
+      <a id="delete-test-runs-permission" ></a>Delete test runs
    :::column-end:::
    :::column span="3":::
       Can delete a test run.
@@ -2372,7 +2376,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="edit-team-project-level-information-permission" />Edit project-level information
+      <a id="edit-team-project-level-information-permission" ></a>Edit project-level information
    :::column-end:::
    :::column span="3":::
        Can edit project level permissions for users and groups. This permission includes the ability  to perform these tasks for the project:
@@ -2387,7 +2391,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="":::
-      <a id="edit-shared-analytic-views-permission" />Edit shared Analytics view
+      <a id="edit-shared-analytic-views-permission" ></a>Edit shared Analytics view
    :::column-end:::
    :::column span="3":::
       Can create and modify [shared Analytics views](../../report/powerbi/analytics-views-manage.md). Requires the project uses the Inherited process model. 
@@ -2397,7 +2401,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="":::
-      <a id="manage-team-project-property-permission" />Manage project properties
+      <a id="manage-team-project-property-permission" ></a>Manage project properties
    :::column-end:::
    :::column span="3":::
       Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](/rest/api/azure/devops/core/projects/set%20project%20properties).
@@ -2407,7 +2411,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="":::
-      <a id="manage-test-configurations-permission" />Manage test configurations
+      <a id="manage-test-configurations-permission" ></a>Manage test configurations
    :::column-end:::
    :::column span="3":::
       Can create and delete [test configurations](../../test/test-different-configurations.md). 
@@ -2415,7 +2419,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="manage-test-environments-permission" />Manage test environments
+      <a id="manage-test-environments-permission" ></a>Manage test environments
    :::column-end:::
    :::column span="3":::
       Can create and delete [test environments](../../test/test-different-configurations.md).
@@ -2425,7 +2429,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="":::
-      <a id="move-work-items-out-of-this-project-permission" />Move work items out of this project
+      <a id="move-work-items-out-of-this-project-permission" ></a>Move work items out of this project
    :::column-end:::
    :::column span="3":::
       Can [move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md) within the collection. Requires the project uses the Inherited process model.
@@ -2435,7 +2439,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="":::
-      <a id="permanently-delete-work-items-in-this-project-permission" />Permanently delete work items in this project
+      <a id="permanently-delete-work-items-in-this-project-permission" ></a>Permanently delete work items in this project
    :::column-end:::
    :::column span="3":::
       Can [permanently delete work items](../../boards/backlogs/remove-delete-work-items.md) from this project. 
@@ -2443,7 +2447,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="rename-team-project-permission" />Rename project
+      <a id="rename-team-project-permission" ></a>Rename project
    :::column-end:::
    :::column span="3":::
       Can [change the name of the project](../projects/rename-project.md).
@@ -2451,7 +2455,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 :::row-end:::
 :::row:::
    :::column span="":::
-      <a id="suppress-notifications-for-work-item-updates-permission" />Suppress notifications for work item updates
+      <a id="suppress-notifications-for-work-item-updates-permission" ></a>Suppress notifications for work item updates
    :::column-end:::
    :::column span="3":::
       Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.  
@@ -2462,7 +2466,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::row:::
    :::column span="":::
-      <a id="view-analytics-permission" />View analytics
+      <a id="view-analytics-permission" ></a>View analytics
    :::column-end:::
    :::column span="3":::
       Can access data available from the [Analytics service](../../report/powerbi/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/powerbi/analytics-security.md). Requires the project uses the Inherited process model.  
@@ -2472,7 +2476,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="":::
-      <a id="view-team-project-level-information-permission" />View project-level information
+      <a id="view-team-project-level-information-permission" ></a>View project-level information
    :::column-end:::
    :::column span="3":::
       Can view project level group membership and permissions.
@@ -2694,8 +2698,10 @@ The following permissions are defined in Build. All of these can be set at both 
    Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. 
    :::column-end:::
 :::row-end:::
+
+   <a id="edit-build-pipeline-permission" ></a>
+
 :::row:::
-   <a id="edit-build-pipeline-permission" />
    :::column span="1":::
    Edit build pipeline</br>Edit build definition
    :::column-end:::
