@@ -215,7 +215,7 @@ you use tags.
 ### Q: Can I share test steps between test cases?
 
 **A:** Yes, choose the steps that you want to share. Find out more about 
-[sharing test steps](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases).
+[sharing test steps](share-steps-between-test-cases.md).
 
 ![Create shared test steps](media/create-test-cases/CreateSharedSteps.png)
 
@@ -271,6 +271,7 @@ test case is removed from the test suite. Also, it's no
 longer linked to the backlog item for that test suite.
 
 <a name="ViewAssignedTests"></a>
+
 ### Q: Why do I see the wrong test suite and tests when I click 'View Tests' from the notification email about tests that are assigned to me?
 
 **A:** This might happen if you were prompted to enter sign-in 
@@ -281,11 +282,13 @@ again to see the correct test suite and tests.
 *****
 
 <a name="runtests"></a>
+
 ## Running manual tests
 
 [Go to related topic &gt;](run-manual-tests.md)
 
 <a name="qanda"></a>
+
 ### Q: How do I rerun a test?
 
 **A:** Just select any test and choose **Run**.
@@ -475,6 +478,7 @@ especially with continuous integration builds.
 Test results are often deleted before you can analyze them. 
 
 <a name="keep-build-indefinitely"></a>
+
 ### Q: How do I keep a build indefinitely?
 
 **A**: Like this:
@@ -484,9 +488,10 @@ Test results are often deleted before you can analyze them.
 *****
 
 <a name="sharesteps"><a/>
-## Sharing steps between test cases
 
-[Go to related topic &gt;](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases)
+## Share steps between test cases
+
+[Go to related topic &gt;](share-steps-between-test-cases.md)
 
 ### Q: Can I share steps between test plans and projects?**  
 
@@ -500,11 +505,13 @@ You don't have to provide values in the shared steps definition. However, you ca
 *****
 
 <a name="tandfext"><a/>
+
 ## Test &amp; Feedback extension
 
 [Go to related topic &gt;](perform-exploratory-tests.md)
 
 <a name="browser-support"><a/>
+
 ### Q: Which web browsers does the extension support?
 
 **A:** The Test &amp; Feedback extension is currently available for
@@ -538,6 +545,7 @@ For more details, see
 <a href="https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web" data-raw-source="[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web)">Visual Studio Marketplace</a>, Azure DevOps tab.
 
 <a name="recording-playback"><a/>
+
 ### Q: How do I play the video recordings I created with the extension?
 
 **A:** The video recordings created by the Test &amp; Feedback extension can be
@@ -552,6 +560,7 @@ mode with all the functionality except session insights and the request
 and provide feedback flow, which are supported only for TFS 2017.
 
 <a name="addsimilar"></a>
+
 ### Q: Can I edit an existing bug instead of creating a new bug when using the Test &amp; Feedback extension?
 
 **A:** Yes, the extension automatically shows bugs that may be related to the one you are creating
@@ -568,6 +577,7 @@ For more details, see [Add findings to existing bugs with exploratory testing](a
 ## FAQ on New Test Plans Page
 
 ### Q: How can I assign configurations to my test cases?
+
 **A:** You can assign configurations in two ways: 
 
 a. To assign configuration to whole suite, go to test suite tree, select the test suite and open the in-context menu bar to assign configurations.
@@ -577,14 +587,17 @@ b. To assign configuration to test case(s), navigate to test plan > test suite a
 
 
 ### Q: How can I see the configurations assigned to my test cases?
+
 **A:** Once you assign the configurations to the test cases in Define tab, the corresponding test points are created in the Execute tab. Navigate to Execute tab and see the configurations assigned to all the test points.
 ![Screenshot showing configurations assigned to the test points.](media/FAQ2.png)
 
 ### Q: How can I edit the test case?
+
 **A:** If you have Basic Access Level, you can edit the test case by navigating to test plan > test suite > Execute  > Test Point and clicking on In-context menu bar. If you have Basic + Test Plans Access Level, in addition to editing in Execute tab, you can also navigate to Define tab and double click on test case to edit it.
 ![Screenshot that shows editing the test case.](media/FAQ3.png)
 
 ### Q: How can I see the outcome of each test case?
+
 **A:** The executable unit of a test case is called the test point. Hence, outcome is linked to each test point and not the test case. You can view it by navigating to test plan > test suite > Execute and see outcome.
 ![Screenshot that shows viewing the outcome of the test case.](media/FAQ4.png)
 
@@ -593,10 +606,12 @@ b. To assign configuration to test case(s), navigate to test plan > test suite a
 ![Screenshot that shows assigning testers to test cases.](media/FAQ5.png)
 
 ### Q: How can I view the execution history of the test case?
+
 **A:** You can view the execution history by navigating to Test Plan > Test Suite > Execute and right click on In-Context Menu bar. Initially, it will show the history of all the test points for that test case in that test suite. You can clear filters to view the execution history of that test case across all the test suites.
 
 
 ### Q: Can I select more than 1 work item while creating a requirement based suite?
+
 **A:** No, the requirement based suite is linked to one work item.
 
 *****
