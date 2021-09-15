@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 Access to Azure Test Plans features are controlled by access level and permissions. To access the Test Plans web portal, you must have a **Basic** access level or greater. To define and manage test plans, test suites, and test cases, you need **Basic + Test Plans**, which is available from Azure DevOps.
  
 > [!NOTE]  
-> Users granted **Stakeholder** access have no access to features or functions supported through the Test Plans or Test web portal. However, they are able to provide feedback through the **Test & Feedback** extension. To learn more, see [Stakeholder access quick reference](../s/organizations/security/stakeholder-access.md).
+> Users granted **Stakeholder** access have no access to features or functions supported through the Test Plans or Test web portal. However, they are able to provide feedback through the **Test & Feedback** extension. To learn more, see [Stakeholder access quick reference](../organizations/security/stakeholder-access.md).
 
 
 ## Access and licensing 
@@ -49,9 +49,13 @@ The following table summarizes the license requirements required to exercise sel
 | Prepare for execution such as assigning configurations or testers | Basic + Test Plans  | 
 | Prepare User Acceptance Testing | Basic + Test Plans  |
 
+<a id="access-by-user-role" /> 
+
 ## Permissions
 
-In addition to having the necessary access level, you also need the necessary permissions to exercise select tasks. Because manual testing is managed through [test-specific work item types](test-objects-overview.md), they are subject to some of the same permissions that manage work items. The following table provides the default permissions assigned to the built-in security groups: **Readers**, **Contributors**, and **Project Administrators**. Permissions are assigned for Area Paths and at the project-level. To learn how, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md). 
+In addition to having the necessary access level, you also need the necessary permissions to exercise select tasks. Because manual testing is managed through [test-specific work item types](test-objects-overview.md), they are subject to some of the same permissions that manage work items.  
+
+The following table provides the default permissions assigned to the built-in security groups: **Readers**, **Contributors**, and **Project Administrators**. Permissions are assigned for Area Paths and at the project-level. To learn how, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md). 
 
 
 [!INCLUDE [test](../organizations/security/includes/test.md)] 
@@ -61,7 +65,7 @@ For a simplified view of all default permissions assigned to built-in groups, se
 
 ## Related articles
 
-- [Test objects and terms](test-objects-overview.md)
-- [Set permissions and access for manual testing](../organizations/security/set-permissions-access-test.md)
-- [Default permissions and access](../organizations/security/permissions-access.md)
-- [Security groups, service accounts, and permissions in Azure DevOps](../organizations/security/permission.md)
+- [Test objects and terms](test-objects-overview.md)  
+- [Set permissions and access for manual testing](../organizations/security/set-permissions-access-test.md)  
+- [Default permissions and access](../organizations/security/permissions-access.md)  
+- [Security groups, service accounts, and permissions in Azure DevOps](../organizations/security/permission.md)  

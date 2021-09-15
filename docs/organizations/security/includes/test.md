@@ -27,24 +27,6 @@ ms.date: 09/15/2021
 :::row-end:::
 :::row:::
    :::column span="2":::
-      **Create test runs**  
-      **Delete test runs** 
-   :::column-end:::
-   :::column span="1":::
-     Project-level
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
       **View test runs**  
    :::column-end:::
    :::column span="1":::
@@ -62,25 +44,7 @@ ms.date: 09/15/2021
 :::row-end:::
 :::row:::
    :::column span="2":::
-      **Manage test configurations** 
-      **Manage test environments**  
-   :::column-end:::
-   :::column span="1":::
-     Project-level
-   :::column-end:::
-   :::column span="1":::
-       
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-::: moniker range=">= tfs-2015"
-:::row:::
-   :::column span="2":::
+      **Create test runs**  
       **Delete test runs** 
    :::column-end:::
    :::column span="1":::
@@ -96,17 +60,17 @@ ms.date: 09/15/2021
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker-end  
-::: moniker range="tfs-2013"
+
 :::row:::
    :::column span="2":::
-      **Create tag definition**  
+      **Manage test configurations**  
+      **Manage test environments**  
    :::column-end:::
    :::column span="1":::
      Project-level
    :::column-end:::
    :::column span="1":::
-      
+       
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -115,28 +79,6 @@ ms.date: 09/15/2021
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=">= azure-devops-2019"
-:::row:::
-   :::column span="2":::
-      **Create tag definition**   
-      **Delete and restore work items**  
-   :::column-end:::
-   :::column span="1":::
-     Project-level
-   :::column-end:::
-   :::column span="1":::
-      
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2015 < azure-devops-2019"
 :::row:::
    :::column span="2":::
       **Create tag definition**   
@@ -155,8 +97,6 @@ ms.date: 09/15/2021
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="2":::
       **Permanently delete work items**  
@@ -174,7 +114,6 @@ ms.date: 09/15/2021
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker-end
 :::row:::
    :::column span="2":::
       **View work items in this node**  
