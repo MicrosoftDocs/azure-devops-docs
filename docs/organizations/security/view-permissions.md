@@ -177,10 +177,10 @@ From the web portal, open the Security dialog for the object whose permissions y
 
 :::row:::
    :::column span="1":::
-   Area
+   **Area**
    :::column-end:::
    :::column span="1":::
-   Task
+   **Task**
    :::column-end:::
 :::row-end:::
 :::row:::
