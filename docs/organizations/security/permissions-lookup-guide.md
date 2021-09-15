@@ -33,7 +33,6 @@ Values in parenthesis indicate what level the permission is managed:
    
    - [Administer build permissions (Object)](../../pipelines/policies/permissions.md)
    - [Administer build resource permissions (Collection)](set-project-collection-level-permissions.md#collection-level)
-
    - [Administer release permissions (Object)](../../pipelines/policies/permissions.md)
    - [Administer process permissions (Collection)](set-project-collection-level-permissions.md#collection-level)
    - [Administer shelved changes (Collection)](set-project-collection-level-permissions.md#collection-level)
@@ -94,7 +93,6 @@ Values in parenthesis indicate what level the permission is managed:
    - [Delete field from organization (Collection)](../settings/work/customize-process-field.md)
    - [Delete team project (Project)](set-project-collection-level-permissions.md#project-level)
    - [Delete test runs (Project)](set-project-collection-level-permissions.md#project-level)
-
    - [Delete release pipeline (Object)](../../pipelines/policies/permissions.md)
    - [Delete release stage (Object)](../../pipelines/policies/permissions.md)
    - [Delete releases (Object)](../../pipelines/policies/permissions.md)

@@ -332,247 +332,247 @@ You can't remove or delete the default server level groups.
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 
-    :::row:::
-           :::column span="1":::
+:::row:::
+   :::column span="1":::
    Group name
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Permissions
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Membership
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Azure DevOps Service Accounts
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    <p>Has service-level permissions for the server instance.</p>
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            <p>
-                Contains the service account that was supplied during installation
-            </p>
-            <p>
-                This group should contain only service accounts
-                and not user accounts or groups that contain user accounts.
-                By default, this group is a member of <strong>Team Foundation Administrators</strong>.
-            </p>
-            <p>
-                If you need to add an account to this group after you install Azure DevOps Server or TFS, you can do so using
-                the TFSSecurity.exe utility in the <strong>Tools</strong> subfolder of your TFS installation directory.
-                The command to do this is <code>TFSSecurity /g+ "[TEAM FOUNDATION]\Team Foundation Service Accounts" n:domain\username /server:http(s)://tfsservername</code>
-            </p>
-        
+<p>
+Contains the service account that was supplied during installation
+</p>
+<p>
+This group should contain only service accounts
+and not user accounts or groups that contain user accounts.
+By default, this group is a member of <strong>Team Foundation Administrators</strong>.
+</p>
+<p>
+If you need to add an account to this group after you install Azure DevOps Server or TFS, you can do so using
+the TFSSecurity.exe utility in the <strong>Tools</strong> subfolder of your TFS installation directory.
+The command to do this is <code>TFSSecurity /g+ "[TEAM FOUNDATION]\Team Foundation Service Accounts" n:domain\username /server:http(s)://tfsservername</code>
+</p>
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Azure DevOps Valid Users
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Has permission to view server instance-level information.
-        
+Has permission to view server instance-level information.
+
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Contains all users known to exist in the server instance.
-            You can&#39;t modify the membership of this group.
-        
+Contains all users known to exist in the server instance.
+You can&#39;t modify the membership of this group.
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Team Foundation Administrators
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Has permissions to perform all server-level operations.
-        
+Has permissions to perform all server-level operations.
+
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            <p>
-                <strong>Local Administrators</strong> group (BUILTIN\Administrators)
-                for any server that hosts Azure DevOPs/Team Foundation application services.
-            </p>
-            <p>
-                <em>Server</em> <strong>\Team Foundation Service Accounts</strong> group
-                and the members of the <strong>\Project Server Integration Service Accounts</strong> group.
-            </p>
-            <p>
-                This group should be restricted to the smallest possible number of users
-                who need total administrative control over server-level operations.
-            </p>
-            <blockquote>
-                If your deployment uses SharePoint or Reporting,
-                consider [adding the members of this group](/azure/devops/server/admin/add-administrator)
-                to the Farm Administrators and Site Collection Administrators groups in SharePoint
-                and the Team Foundation Content Managers groups in Reporting Services.
-            </blockquote>
-        
+<p>
+<strong>Local Administrators</strong> group (BUILTIN\Administrators)
+for any server that hosts Azure DevOPs/Team Foundation application services.
+</p>
+<p>
+<em>Server</em> <strong>\Team Foundation Service Accounts</strong> group
+and the members of the <strong>\Project Server Integration Service Accounts</strong> group.
+</p>
+<p>
+This group should be restricted to the smallest possible number of users
+who need total administrative control over server-level operations.
+</p>
+<blockquote>
+If your deployment uses SharePoint or Reporting,
+consider [adding the members of this group](/azure/devops/server/admin/add-administrator)
+to the Farm Administrators and Site Collection Administrators groups in SharePoint
+and the Team Foundation Content Managers groups in Reporting Services.
+</blockquote>
+
    :::column-end:::
-    :::row-end:::
+:::row-end:::
 
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 
-    :::row:::
-           :::column span="1":::
+:::row:::
+   :::column span="1":::
    Group name
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Permissions
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Membership
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Team Foundation Administrators
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Has permissions to perform all server-level operations.
-        
+Has permissions to perform all server-level operations.
+
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            <p>
-                <strong>Local Administrators</strong> group (BUILTIN\Administrators)
-                for any server that hosts Azure DevOPs/Team Foundation application services.
-            </p>
-            <p>
-                <em>Server</em> <strong>\Team Foundation Service Accounts</strong> group
-                and the members of the <strong>\Project Server Integration Service Accounts</strong> group.
-            </p>
-            <p>
-                This group should be restricted to the smallest possible number of users
-                who need total administrative control over server-level operations.
-            </p>
-            <blockquote>
-                If your deployment uses SharePoint or Reporting,
-                consider [adding the members of this group](/azure/devops/server/admin/add-administrator)
-                to the Farm Administrators and Site Collection Administrators groups in SharePoint
-                and the Team Foundation Content Managers groups in Reporting Services.
-            </blockquote>
-        
+<p>
+<strong>Local Administrators</strong> group (BUILTIN\Administrators)
+for any server that hosts Azure DevOPs/Team Foundation application services.
+</p>
+<p>
+<em>Server</em> <strong>\Team Foundation Service Accounts</strong> group
+and the members of the <strong>\Project Server Integration Service Accounts</strong> group.
+</p>
+<p>
+This group should be restricted to the smallest possible number of users
+who need total administrative control over server-level operations.
+</p>
+<blockquote>
+If your deployment uses SharePoint or Reporting,
+consider [adding the members of this group](/azure/devops/server/admin/add-administrator)
+to the Farm Administrators and Site Collection Administrators groups in SharePoint
+and the Team Foundation Content Managers groups in Reporting Services.
+</blockquote>
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Team Foundation Proxy Service Accounts
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Has service level permissions for Team Foundation Server Proxy,
-            and some service-level permissions.
-            <blockquote>
-                Created when you install the TFS proxy service.
-            </blockquote>
-        
+Has service level permissions for Team Foundation Server Proxy,
+and some service-level permissions.
+<blockquote>
+Created when you install the TFS proxy service.
+</blockquote>
+
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            This group should contain only service accounts and not user accounts or groups
-            that contain user accounts.
-        
+This group should contain only service accounts and not user accounts or groups
+that contain user accounts.
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Team Foundation Service Accounts
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    <p>Has service-level permissions for the server instance.</p>
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            <p>
-                Contains the service account that was supplied during installation
-            </p>
-            <p>
-                This group should contain only service accounts
-                and not user accounts or groups that contain user accounts.
-                By default, this group is a member of <strong>Team Foundation Administrators</strong>.
-            </p>
-            <p>
-                If you need to add an account to this group after you install Azure DevOps Server or TFS, you can do so using
-                the TFSSecurity.exe utility in the <strong>Tools</strong> subfolder of your TFS installation directory.
-                The command to do this is <code>TFSSecurity /g+ "[TEAM FOUNDATION]\Team Foundation Service Accounts" n:domain\username /server:http(s)://tfsservername</code>
-            </p>
-        
+<p>
+Contains the service account that was supplied during installation
+</p>
+<p>
+This group should contain only service accounts
+and not user accounts or groups that contain user accounts.
+By default, this group is a member of <strong>Team Foundation Administrators</strong>.
+</p>
+<p>
+If you need to add an account to this group after you install Azure DevOps Server or TFS, you can do so using
+the TFSSecurity.exe utility in the <strong>Tools</strong> subfolder of your TFS installation directory.
+The command to do this is <code>TFSSecurity /g+ "[TEAM FOUNDATION]\Team Foundation Service Accounts" n:domain\username /server:http(s)://tfsservername</code>
+</p>
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Team Foundation Valid Users
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Has permission to view server instance-level information.
-            <blockquote>
-                If you set the <strong>View instance-level information</strong>
-                permission to <strong>Deny</strong> or <strong>Not set</strong> for this group,
-                no users will be able to access the deployment.
-            </blockquote>
-        
+Has permission to view server instance-level information.
+<blockquote>
+If you set the <strong>View instance-level information</strong>
+permission to <strong>Deny</strong> or <strong>Not set</strong> for this group,
+no users will be able to access the deployment.
+</blockquote>
+
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Contains all users known to exist in the server instance.
-            You can&#39;t modify the membership of this group.
-        
+Contains all users known to exist in the server instance.
+You can&#39;t modify the membership of this group.
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Project Server Integration Service Accounts   
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Has service level permissions for the Project Server deployments
-            that are configured for inter-operation with the server instance
-            and some TFS service level permissions.
-            <blockquote>
-                Created when you install Project Service integration.
-            </blockquote>
-        
+Has service level permissions for the Project Server deployments
+that are configured for inter-operation with the server instance
+and some TFS service level permissions.
+<blockquote>
+Created when you install Project Service integration.
+</blockquote>
+
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            This group should contain only service accounts
-            and not user accounts or groups that contain user accounts.
-            By default, this group is a member of <strong>Team Foundation Administrators</strong>.
-        
+This group should contain only service accounts
+and not user accounts or groups that contain user accounts.
+By default, this group is a member of <strong>Team Foundation Administrators</strong>.
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    SharePoint Web Application Services
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Has service level permissions for the SharePoint Web applications
-            that are configured for use with TFS
-            and some service level permissions for TFS.
-        
+Has service level permissions for the SharePoint Web applications
+that are configured for use with TFS
+and some service level permissions for TFS.
+
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            This group should contain only service accounts
-            and not user accounts or groups that contain user accounts.
-            Unlike the Service Accounts group, this group is not a member
-            of <strong>Team Foundation Administrators</strong>.
-        
+This group should contain only service accounts
+and not user accounts or groups that contain user accounts.
+Unlike the Service Accounts group, this group is not a member
+of <strong>Team Foundation Administrators</strong>.
+
    :::column-end:::
-    :::row-end:::
+:::row-end:::
 
 
 ::: moniker-end
@@ -942,135 +942,135 @@ You manage server-level permissions through the [Team Foundation Administration 
 > ![Screenshot of Server-level permissions.](media/permissions/global-security-azdo-server-2019-update-1.png) 
 
 
-    :::row:::
-           :::column span="1":::
+:::row:::
+   :::column span="1":::
    Permission
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Description
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Administer warehouse
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            <p>
-                Can process or change settings for the data warehouse or SQL Server Analysis cube
-                by using the [Warehouse Control Web Service](../../report/admin/manage-reports-data-warehouse-cube.md).
-            </p>
-            <p>
-                Additional permissions may be required to fully process
-                or [rebuild the data warehouse and Analysis cube](../../report/admin/rebuild-data-warehouse-and-cube.md).
-            </p>
-        
+<p>
+Can process or change settings for the data warehouse or SQL Server Analysis cube
+by using the [Warehouse Control Web Service](../../report/admin/manage-reports-data-warehouse-cube.md).
+</p>
+<p>
+Additional permissions may be required to fully process
+or [rebuild the data warehouse and Analysis cube](../../report/admin/rebuild-data-warehouse-and-cube.md).
+</p>
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Create project collection
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can create and administer collections.
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Delete project collection
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can delete a collection from the deployment.
-            <blockquote>
-                Deleting a collection will not delete the collection database from SQL Server.
-            </blockquote>
-        
+Can delete a collection from the deployment.
+<blockquote>
+Deleting a collection will not delete the collection database from SQL Server.
+</blockquote>
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Edit instance-level information
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can edit server-level permissions for users and groups,
-            and add or remove server level groups from the collection.
-            <blockquote>
-                <p>
-                    <strong>Edit instance-level information</strong> includes the ability to perform these tasks
-                    for all team projects defined in all collections defined for the instance:
-                </p>
-                
-                    - Create and modify areas and iterations
-                    - Edit check-in policies
-                    - Edit shared work item queries
-                    - Edit project level and collection level permission ACLs
-                    - Create and modify global lists
-                    - Edit [event subscriptions](#alerts) (email or SOAP).
-                
-                <p>
-                    When set through the menus, the <strong>Edit instance-level information</strong> permission
-                    also implicitly allows the user to modify version control permissions.
-                    To grant all these permissions at a command prompt,
-                    you must use the <code>tf.exe Permission</code> command
-                    to grant the <strong>AdminConfiguration</strong> and <strong>AdminConnections</strong> permissions
-                    in addition to GENERIC_WRITE.
-                </p>
-            </blockquote>
-        
+Can edit server-level permissions for users and groups,
+and add or remove server level groups from the collection.
+<blockquote>
+<p>
+<strong>Edit instance-level information</strong> includes the ability to perform these tasks
+for all team projects defined in all collections defined for the instance:
+</p>
+
+- Create and modify areas and iterations
+- Edit check-in policies
+- Edit shared work item queries
+- Edit project level and collection level permission ACLs
+- Create and modify global lists
+- Edit [event subscriptions](#alerts) (email or SOAP).
+
+<p>
+When set through the menus, the <strong>Edit instance-level information</strong> permission
+also implicitly allows the user to modify version control permissions.
+To grant all these permissions at a command prompt,
+you must use the <code>tf.exe Permission</code> command
+to grant the <strong>AdminConfiguration</strong> and <strong>AdminConnections</strong> permissions
+in addition to GENERIC_WRITE.
+</p>
+</blockquote>
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Make requests on behalf of others
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can perform operations on behalf of other users or services. Only assign to service accounts.
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Trigger events
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can trigger server-level alert events.
-            Only assign to service accounts and members of the Team Foundation Administrators group.
-        
+Can trigger server-level alert events.
+Only assign to service accounts and members of the Team Foundation Administrators group.
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Use full Web Access features
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can use all on-premises Web portal features. This permission has been deprecated with Azure DevOps Server 2019 and later versions. 
-            <blockquote>
-                If the <strong>Use full Web Access</strong> features permission is set to Deny, the user will only see
-                those features permitted for the <strong>Stakeholder</strong> group
-                (see [Change access levels](change-access-levels.md)).
-                A Deny will override any implicit Allow,
-                even for accounts that are members of administrative groups
-                such as Team Foundation Administrators.
-            </blockquote>
-        
+Can use all on-premises Web portal features. This permission has been deprecated with Azure DevOps Server 2019 and later versions. 
+<blockquote>
+If the <strong>Use full Web Access</strong> features permission is set to Deny, the user will only see
+those features permitted for the <strong>Stakeholder</strong> group
+(see [Change access levels](change-access-levels.md)).
+A Deny will override any implicit Allow,
+even for accounts that are members of administrative groups
+such as Team Foundation Administrators.
+</blockquote>
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    View instance-level information
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can view server level group membership and the permissions of those users.
-            <blockquote>
-                The <strong>View instance-level information</strong> permission is also assigned to the Team Foundation Valid Users group.
-            </blockquote>
-        
+Can view server level group membership and the permissions of those users.
+<blockquote>
+The <strong>View instance-level information</strong> permission is also assigned to the Team Foundation Valid Users group.
+</blockquote>
+
    :::column-end:::
-    :::row-end:::
+:::row-end:::
 
 
 ::: moniker-end
@@ -1091,338 +1091,337 @@ You manage organization-level permissions through the [web portal admin context]
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Organization-level permissions and groups, Azure DevOps Services.](media/permissions/collection-level-permissions-new.png)   
 
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row:::
+   :::column span="1":::
    Permission
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Description
    :::column-end:::
-    :::row-end:::
-    :::row:::   :::column span="1":::
+:::row-end:::
+:::row:::   :::column span="1":::
    <h4>General</hr>
    :::column-end:::   :::column span="1":::
-    
+
    :::column-end::: 
-    :::row:::
-           :::column span="1":::
+:::row:::
+   :::column span="1":::
    Alter trace settings
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can [change the trace settings](/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps Web services.
-        
+Can [change the trace settings](/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps Web services.
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Create new projects (formerly Create new team projects)
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can [add a project](../projects/create-project.md) to an organization or project collection. Additional permissions may be required depending on your on-premises deployment. 
-        
+Can [add a project](../projects/create-project.md) to an organization or project collection. Additional permissions may be required depending on your on-premises deployment. 
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Delete team project
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can [delete a project](../projects/delete-project.md).
-            <blockquote>
-                Deleting a project will delete all data that is associated with the project.
-                You cannot undo the deletion of a project except
-                by restoring the collection to a point
-                before the project was deleted.
-            </blockquote>
-        
+Can [delete a project](../projects/delete-project.md).
+<blockquote>
+Deleting a project will delete all data that is associated with the project.
+You cannot undo the deletion of a project except
+by restoring the collection to a point
+before the project was deleted.
+</blockquote>
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Edit instance-level information
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can add users and groups, and edit organization-level permissions for users and groups.
-            <blockquote>
-                <p>
-                    Edit instance-level information includes the ability to perform these tasks
-                    for all projects defined in a collection:
-                </p>
-                
-                    - Add and administer teams and all team-related features
-                    - Edit instance-level permissions for users and groups in the collection
-                    - Add or remove instance-level security groups from the collection
-                    - Implicitly allows the user to modify version control permissions 
-                    - Edit project level and instance-level permission ACLs
-                    - Edit [event subscriptions](#alerts) (email or SOAP) on project or collection level events.
-                
-                <p>
-                    When you set <strong>Edit instance-level information</strong> to <strong>Allow</strong>,
-                    users can add or remove collection-level groups and implicitly
-                    allows these users to modify version control permissions.
-                </p>
-            </blockquote>
-        
+Can add users and groups, and edit organization-level permissions for users and groups.
+<blockquote>
+<p>
+Edit instance-level information includes the ability to perform these tasks
+for all projects defined in a collection:
+</p>
+
+- Add and administer teams and all team-related features
+- Edit instance-level permissions for users and groups in the collection
+- Add or remove instance-level security groups from the collection
+- Implicitly allows the user to modify version control permissions 
+- Edit project level and instance-level permission ACLs
+- Edit [event subscriptions](#alerts) (email or SOAP) on project or collection level events.
+
+<p>
+When you set <strong>Edit instance-level information</strong> to <strong>Allow</strong>,
+users can add or remove collection-level groups and implicitly
+allows these users to modify version control permissions.
+</p>
+</blockquote>
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    View instance-level information<br/>or View collection-level information
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can view project collection-level group membership and permissions.
-            <blockquote>
-                If you set the <strong>View instance-level information</strong> permission
-                to <strong>Deny</strong> or <strong>Not set</strong> for this group,
-                no users will be able to access projects in the organization or project collection.
-            </blockquote>
+<blockquote>
+If you set the <strong>View instance-level information</strong> permission
+to <strong>Deny</strong> or <strong>Not set</strong> for this group,
+no users will be able to access projects in the organization or project collection.
+</blockquote>
    :::column-end:::
-    :::row-end:::
-    :::row:::   :::column span="1":::
+:::row-end:::
+:::row:::   :::column span="1":::
    <h4>Service Account</hr>
    :::column-end:::   :::column span="1":::
-    
+
    :::column-end::: 
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Make requests on behalf of others
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can perform operations on behalf of other users or services.
-            Assign this permission only to on-premises [service accounts](/azure/devops/server/admin/service-accounts-dependencies).
-        
+Can perform operations on behalf of other users or services.
+Assign this permission only to on-premises [service accounts](/azure/devops/server/admin/service-accounts-dependencies).
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Trigger events
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can trigger project alert events within the collection. Assign only to service accounts.
-            <blockquote>
-                Users with this permission can&#39;t remove built-in collection level groups
-                such as Project Collection Administrators.
-            </blockquote>
-        
+Can trigger project alert events within the collection. Assign only to service accounts.
+<blockquote>
+Users with this permission can&#39;t remove built-in collection level groups
+such as Project Collection Administrators.
+</blockquote>
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    View system synchronization information
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can call the synchronization application programming interfaces. Assign only to service accounts.
    :::column-end:::
-    :::row-end:::
-    :::row:::   :::column span="1":::
+:::row-end:::
+:::row:::   :::column span="1":::
    <h4>Boards</hr>
    :::column-end:::   :::column span="1":::
-    
+
    :::column-end::: 
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Administer process permissions
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can modify permissions for customizing work tracking by creating and customizing [inherited processes](../settings/work/inheritance-process-model.md). 
-            
-            - [Customize a project](../settings/work/customize-process.md)
-            - [Add and manage processes](../settings/work/manage-process.md)
-            
-        
+Can modify permissions for customizing work tracking by creating and customizing [inherited processes](../settings/work/inheritance-process-model.md). 
+
+- [Customize a project](../settings/work/customize-process.md)
+- [Add and manage processes](../settings/work/manage-process.md)
+
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Create process
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can [create an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. Users  granted Basic and Stakeholder access are granted this permission by default. 
-        
+Can [create an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. Users  granted Basic and Stakeholder access are granted this permission by default. 
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Delete field from organization
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can [delete a custom field that was added to a process](../settings/work/customize-process-field.md).
-        
+Can [delete a custom field that was added to a process](../settings/work/customize-process-field.md).
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Delete process
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can [delete an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. 
-        
+Can [delete an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. 
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Edit process
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can edit a [custom inherited process](../settings/work/customize-process.md).
-        
+Can edit a [custom inherited process](../settings/work/customize-process.md).
+
    :::column-end:::
-    :::row-end:::
-    :::row:::   :::column span="1":::
+:::row-end:::
+:::row:::   :::column span="1":::
    <h4>Repos</hr>
    :::column-end:::   :::column span="1":::
-    
+
    :::column-end::: 
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Administer shelved changes
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can delete [shelvesets created by other users](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md). Applies when TFVC is used as the source control. 
-        
+Can delete [shelvesets created by other users](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md). Applies when TFVC is used as the source control. 
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Administer workspaces
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [create and delete workspaces for other users](../../repos/tfvc/create-work-workspaces.md). Applies when TFVC is used as the source control. 
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Create a workspace
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can create a version control workspace. Applies when TFVC is used as the source control. 
-            <blockquote>
-                The <strong>Create a workspace</strong> permission is granted to all users
-                as part of their membership within the Project Collection Valid Users group.
-            </blockquote>
-        
+Can create a version control workspace. Applies when TFVC is used as the source control. 
+<blockquote>
+The <strong>Create a workspace</strong> permission is granted to all users
+as part of their membership within the Project Collection Valid Users group.
+</blockquote>
+
    :::column-end:::
-    :::row-end:::
-    :::row:::   :::column span="1":::
+:::row-end:::
+:::row:::   :::column span="1":::
    <h4>Pipelines</hr>
    :::column-end:::   :::column span="1":::
-    
+
    :::column-end::: 
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Administer build resource permissions
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can modify permissions for build pipelines at the organization or project collection-level. This includes: 
-            
-            - [Set retention policies](../../pipelines/policies/retention.md)
-            - [Set resource limits for pipelines](/azure/devops/pipelines/licensing/concurrent-jobs)
-            - [Add and manage agent pools](../../pipelines/agents/pools-queues.md)
-            - [Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)
-            
-            
+
+- [Set retention policies](../../pipelines/policies/retention.md)
+- [Set resource limits for pipelines](/azure/devops/pipelines/licensing/concurrent-jobs)
+- [Add and manage agent pools](../../pipelines/agents/pools-queues.md)
+- [Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)
+
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Manage build resources
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can manage build computers, build agents, and build controllers.
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Use build resources
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can reserve and allocate build agents. Assign only to service accounts for build services.
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    View build resources
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can view, but not use, build controllers and build agents that are configured for an organization or project collection.
    :::column-end:::
-    :::row-end:::
-    :::row:::   :::column span="1":::
+:::row-end:::
+:::row:::   :::column span="1":::
    <h4>Test Plans</hr>
    :::column-end:::   :::column span="1":::
-    
+
    :::column-end::: 
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Manage test controllers
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can register and de-register test controllers.
    :::column-end:::
-    :::row-end:::
-    :::row:::   :::column span="1":::
+:::row-end:::
+:::row:::   :::column span="1":::
    <h4>Auditing</hr>
    :::column-end:::   :::column span="1":::
-    
+
    :::column-end::: 
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Delete audit streams
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can delete an audit stream. Audit streams are in preview. For details, see [Create audit streaming](../audit/auditing-streaming.md). 
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Manage audit streams
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can add an audit stream. Audit streams are in preview. For details, see [Create audit streaming](../audit/auditing-streaming.md).
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    View audit log
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can view and export audit logs. Audit logs are in preview. For details, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md). 
    :::column-end:::
-    :::row-end:::
-    :::row:::   :::column span="1":::
+:::row-end:::
+:::row:::   :::column span="1":::
    <h4>Policies</hr>
    :::column-end:::   :::column span="1":::
-    
+
    :::column-end::: 
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Manage enterprise policies
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can enable and disable application connection policies as described in [Change application connection policies](../accounts/change-application-access-policies.md).
    :::column-end:::
-    :::row-end:::
+:::row-end:::
 
  
 ::: moniker-end
@@ -1767,229 +1766,229 @@ You manage project-level permissions through the [web portal admin context](set-
 
 #### [Preview page](#tab/preview-page) 
 
-    :::row:::
-           :::column span="1":::
+:::row:::
+   :::column span="1":::
    Permission
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Description
    :::column-end:::
-    :::row-end:::
-    :::row:::   :::column span="1":::
+:::row-end:::
+:::row:::   :::column span="1":::
    <h4>General</hr>
    :::column-end:::   :::column span="1":::
-    
+
    :::column-end::: 
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Delete team project
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [delete a project](../projects/delete-project.md) from an organization or project collection.
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Edit project-level information
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can edit project level permissions for users and groups.
-            <blockquote>
-                <p>
-                    <strong>Edit project-level information</strong> includes the ability
-                    to perform these tasks for the project:
-                </p>
-                
-                    - Edit the project description
-                    - [Modify project services visibility](../settings/set-services.md)
-                
-            </blockquote>
-        
+Can edit project level permissions for users and groups.
+<blockquote>
+<p>
+<strong>Edit project-level information</strong> includes the ability
+to perform these tasks for the project:
+</p>
+
+- Edit the project description
+- [Modify project services visibility](../settings/set-services.md)
+
+</blockquote>
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Manage project properties
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](/rest/api/azure/devops/core/projects/set%20project%20properties). 
-        
+Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](/rest/api/azure/devops/core/projects/set%20project%20properties). 
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Rename project
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [change the name of the project](../projects/rename-project.md).
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Suppress notifications for work item updates
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    <p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via [Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update).</p>
-       
+   
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Update project visibility
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [change the project visibility](../public/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    View project-level information
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can view project level group membership and permissions.
    :::column-end:::
-    :::row-end:::
-    :::row:::   :::column span="1":::
+:::row-end:::
+:::row:::   :::column span="1":::
    <h4>Boards</hr>
    :::column-end:::   :::column span="1":::
-    
+
    :::column-end::: 
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Bypass rules on work item updates
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    <p>Users with this permission can save a work item that ignores rules, such as [copy, constraint, or conditional rules](../settings/work/rule-reference.md), defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update) and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
-        
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Change process of project
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    When combined with the 'Edit project-level information' permission, allows users to change the Inheritance process for a project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md).  
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Create tag definition
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    [Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md). By default, all members of the Contributors group have this permission. </p>
-        <blockquote>
-        All users granted Stakeholder access for a private project can only add existing tags, not add new tags, even if the <strong>Create tag definition</strong> permission is set to Allow. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. 
-        <blockquote>
+<blockquote>
+All users granted Stakeholder access for a private project can only add existing tags, not add new tags, even if the <strong>Create tag definition</strong> permission is set to Allow. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. 
+<blockquote>
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    
    <p>Delete and restore work items</p><p>or Delete work items in this project</p>
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md). Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
 
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Move work items out of this project
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    <p>Can [move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md) within the collection.   
-        
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Permanently delete work items in this project
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [permanently delete work items](../../boards/backlogs/remove-delete-work-items.md) from this project. 
    :::column-end:::
-    :::row-end:::
-    :::row:::   :::column span="1":::
+:::row-end:::
+:::row:::   :::column span="1":::
    <h4>Analytics</hr>
    :::column-end:::   :::column span="1":::
-    
+
    :::column-end::: 
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Delete shared Analytics view
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can delete [Analytics views](../../report/powerbi/analytics-views-manage.md)
 that have been saved under the Shared area.   
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Edit shared Analytics view
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can create and modify [shared Analytics views](../../report/powerbi/analytics-views-manage.md).   
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    View analytics
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can access data available from the [Analytics service](../../report/powerbi/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/powerbi/analytics-security.md).   
    :::column-end:::
-    :::row-end:::
-    :::row:::   :::column span="1":::
+:::row-end:::
+:::row:::   :::column span="1":::
    <h4>Test Plans</hr>
    :::column-end:::   :::column span="1":::
-    
+
    :::column-end::: 
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Create test runs
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can add and remove test results and add or modify test runs. To learn more, see [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) and [Run manual tests](../../test/run-manual-tests.md). 
    :::column-end:::
-    :::row-end:::
+:::row-end:::
    :::row:::
-           :::column span="1":::
+   :::column span="1":::
    Delete test runs
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [delete a test run](../../boards/backlogs/delete-test-artifacts.md). 
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Manage test configurations
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can create and delete [test configurations](../../test/test-different-configurations.md).
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Manage test environments
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can create and delete [test environments](../../test/test-different-configurations.md).
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    View test runs
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can view test plans under the project area path.
    :::column-end:::
-    :::row-end:::
+:::row-end:::
 
 
 
@@ -1997,214 +1996,214 @@ that have been saved under the Shared area.
 #### [Current page](#tab/current-page) 
 
 
-    :::row:::
-           :::column span="1":::
+:::row:::
+   :::column span="1":::
    Permission
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Description
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Bypass rules on work item updates
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    <p>Users with this permission can save a work item that ignores rules, such as [copy, constraint, or conditional rules](../settings/work/rule-reference.md), defined for the work item type. Scenarios where this is useful are migrations where you don&#39;t want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update) and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Change process of project
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    When combined with the 'Edit project-level information' permission, allows users to change the Inheritance process for a project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md).  
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Create tag definition
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    [Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md). By default, all members of the Contributors group have this permission. </p>
-        <blockquote>
-        All users granted Stakeholder access for a private project can only add existing tags, not add new tags, even if the <strong>Create tag definition</strong> permission is set to Allow. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. 
-        <blockquote>
+<blockquote>
+All users granted Stakeholder access for a private project can only add existing tags, not add new tags, even if the <strong>Create tag definition</strong> permission is set to Allow. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. 
+<blockquote>
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Create test runs
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can add and remove test results and add or modify test runs. To learn more, see [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) and [Run manual tests](../../test/run-manual-tests.md). 
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    
    <p>Delete and restore work items</p><p>or Delete work items in this project</p>
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md). Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
    
    - For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to <strong>Allow</strong> by default. 
    - For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to <strong>Not set</strong> by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. <br/>
 
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Delete shared Analytics view
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can delete [Analytics views](../../report/powerbi/analytics-views-manage.md)
 that have been saved under the Shared area.   
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Delete project
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [delete a project](../projects/delete-project.md) from an organization or project collection.
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Delete test runs
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can delete a test run.
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Edit project-level information
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can edit project level permissions for users and groups.
-            <blockquote>
-                <p>
-                    <strong>Edit project-level information</strong> includes the ability
-                    to perform these tasks for the project:
-                </p>
-                
-                    - Create and modify areas and iterations
-                    - Edit check-in policies
-                    - Edit shared work item queries
-                    - Edit project level permission ACLs
-                    - Manage process templates
-                    - Customize a project
-                    - Create and modify global lists
-                    - Edit [event subscriptions](#alerts) (email or SOAP) on project level events.
-                    - When combined with the 'Change process of project' permission, allows users to change the Inheritance process for a project.
-                
-            </blockquote>
-        
+Can edit project level permissions for users and groups.
+<blockquote>
+<p>
+<strong>Edit project-level information</strong> includes the ability
+to perform these tasks for the project:
+</p>
+
+- Create and modify areas and iterations
+- Edit check-in policies
+- Edit shared work item queries
+- Edit project level permission ACLs
+- Manage process templates
+- Customize a project
+- Create and modify global lists
+- Edit [event subscriptions](#alerts) (email or SOAP) on project level events.
+- When combined with the 'Change process of project' permission, allows users to change the Inheritance process for a project.
+
+</blockquote>
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Edit shared Analytics view
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can create and modify [shared Analytics views](../../report/powerbi/analytics-views-manage.md).  
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Manage project properties
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    
-            Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](/rest/api/azure/devops/core/projects/set%20project%20properties). 
-        
+Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](/rest/api/azure/devops/core/projects/set%20project%20properties). 
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Manage test configurations
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can create and delete [test configurations](../../test/test-different-configurations.md).
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Manage test environments
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can create and delete [test environments](../../test/test-different-configurations.md).
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Move work items out of this project
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md) within the collection. 
-        
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Permanently delete work items in this project
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [permanently delete work items](../../boards/backlogs/remove-delete-work-items.md) from this project. 
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Rename project
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [change the name of the project](../projects/rename-project.md).
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Suppress notifications for work item updates
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    <p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via [Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update).</p>
-        
+
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    Update project visibility
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [change the project visibility](../public/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    View analytics
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can access data available from the [Analytics service](../../report/powerbi/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/powerbi/analytics-security.md).  
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    View project-level information
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can view project level group membership and permissions.
    :::column-end:::
-    :::row-end:::
-    :::row:::
-           :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    View test runs
    :::column-end:::
-           :::column span="1":::
+   :::column span="1":::
    Can [delete a test run](../../boards/backlogs/delete-test-artifacts.md). 
    :::column-end:::
-    :::row-end:::
+:::row-end:::
 
 
 * * *

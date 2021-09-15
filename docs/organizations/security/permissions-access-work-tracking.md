@@ -257,19 +257,19 @@ The following table summarizes a subset of the default permissions assigned to t
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Readers
+   **Readers**
    :::column-end:::
    :::column span="1":::
-   Contributors
+   **Contributors**
    :::column-end:::
    :::column span="1":::
-   Team Administrators
+   **Team Administrators**
    :::column-end:::
    :::column span="1":::
-   Project Administrators
+   **Project Administrators**
    :::column-end:::
 :::row-end:::
 :::row:::
