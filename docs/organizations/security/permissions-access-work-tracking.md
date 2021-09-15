@@ -254,70 +254,124 @@ The **Edit project-level information** permission includes the ability to perfor
 The following table summarizes a subset of the default permissions assigned to the project Readers, Contributors and Project Administrators groups and the Team Administrator role. Team admin permissions extend only to the team for which they're an administrator. Project Administrator permissions extend across all teams defined for the project.
 
 
-<table>
 
-<tr valign="bottom">
-<th width="38%">Permission</th>
-<th width="10%">Readers</th>
-<th width="16%">Contributors</th>
-<th width="18%">Team Administrators</th>
-<th width="18%">Project Administrators</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
+:::row:::
+   :::column span="1":::
+   Permission
+   :::column-end:::
+   :::column span="1":::
+   Readers
+   :::column-end:::
+   :::column span="1":::
+   Contributors
+   :::column-end:::
+   :::column span="1":::
+   Team Administrators
+   :::column-end:::
+   :::column span="1":::
+   Project Administrators
+   :::column-end:::
+:::row-end:::
+:::row:::
 
-<td align="left"><a href="../../organizations/settings/add-team-administrator.md" data-raw-source="[Add a team administrator](../../organizations/settings/add-team-administrator.md)">Add a team administrator</a> </p>
-</td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
+   :::column span="1":::
+   [Add a team administrator](../../organizations/settings/add-team-administrator.md) </p>
 
-<td align="left">
-<a href="../../organizations/settings/add-teams.md" data-raw-source="[Add team members](../../organizations/settings/add-teams.md)">Add team members</a> </p>
-</td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
+   :::column-end:::
+   :::column span="1":::
+   <p>&nbsp;&nbsp;</p>
+   :::column-end:::
+   :::column span="1":::
+   <p>&nbsp;&nbsp;</p>
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
 
-<td align="left"><a href="../../boards/queries/using-queries.md" data-raw-source="[View shared work item queries](../../boards/queries/using-queries.md)">View shared work item queries</a></p>
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
+   :::column span="1":::
+   
+   [Add team members](../../organizations/settings/add-teams.md) </p>
 
-<tr>
-<td align="left">
-<a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Manage shared query and query folder permissions](../../boards/queries/set-query-permissions.md)">Manage shared query and query folder permissions</a><br/>(Contribute, Delete, Manage Permissions)
-</p>
-</td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td>✔️</td>
-</tr>
+   :::column-end:::
+   :::column span="1":::
+   <p>&nbsp;&nbsp;</p>
+   :::column-end:::
+   :::column span="1":::
+   <p>&nbsp;&nbsp;</p>
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
 
-<tr>
-<td align="left">
-<a href="/azure/devops/report/dashboards/dashboards" data-raw-source="[Add and edit dashboards](../../report/dashboards/dashboards.md)">Add and edit dashboards</a> 
-</p>
-</td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
+   :::column span="1":::
+   [View shared work item queries](../../boards/queries/using-queries.md)</p>
 
-</tbody>
-</table>
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
 
+:::row:::
+   :::column span="1":::
+   
+   [Manage shared query and query folder permissions](../../boards/queries/set-query-permissions.md)<br/>(Contribute, Delete, Manage Permissions)
+   </p>
+
+   :::column-end:::
+   :::column span="1":::
+   <p>&nbsp;&nbsp;</p>
+   :::column-end:::
+   :::column span="1":::
+   <p>&nbsp;&nbsp;</p>
+   :::column-end:::
+   :::column span="1":::
+   <p>&nbsp;&nbsp;</p>
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   
+   [Add and edit dashboards](/azure/devops/report/dashboards/dashboards) 
+   </p>
+
+   :::column-end:::
+   :::column span="1":::
+   <p>&nbsp;&nbsp;</p>
+   :::column-end:::
+   :::column span="1":::
+   <p>&nbsp;&nbsp;</p>
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
 
 
 

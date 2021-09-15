@@ -175,46 +175,59 @@ You can define the security or permissions for a number of objects. You access t
 
 From the web portal, open the Security dialog for the object whose permissions you want to set. For specific instructions, see the following articles: 
 
-<table width="80%">
-<tbody valign="top">
-<tr>
-<th width="35%">Area</th>
-<th width="65%">Task</th>
-</tr>
-<tr>
-<td>Wiki &amp; Dashboard permissions</td>
-<td>
-<ul>
-<li><a href="../../project/wiki/manage-readme-wiki-permissions.md" data-raw-source="[README &amp; Wiki](../../project/wiki/manage-readme-wiki-permissions.md)">README &amp; Wiki</a></li>
-<li><a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="[Dashboards](../../report/dashboards/dashboard-permissions.md)">Dashboards</a></li>
+:::row:::
+   :::column span="1":::
+   Area
+   :::column-end:::
+   :::column span="1":::
+   Task
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Wiki &amp; Dashboard permissions
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - [README &amp; Wiki](../../project/wiki/manage-readme-wiki-permissions.md)
+   - [Dashboards](../../report/dashboards/dashboard-permissions.md)
 
-</ul>
-</td>
-</tr>
-<tr>
-<td>Azure Repos, Azure Pipelines/DevOps (code, build, test, release) permissions </td>
-<td>
-<ul>
-<li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Git branch](../../repos/git/branch-permissions.md)">Git branch</a></li>
-<li><a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Git repository](../../repos/git/set-git-repository-permissions.md)">Git repository</a></li>
-<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Builds](../../pipelines/policies/set-permissions.md)">Builds</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Release pipeline security](../../pipelines/policies/set-permissions.md)">Release pipeline security</a></li>
-<li><a href="../../pipelines/release/approvals/index.md" data-raw-source="[Approvals and approvers](../../pipelines/release/approvals/index.md)">Approvals and approvers</a></li> 
-</ul>
-</td>
-</tr>
-<tr>
-<td>Azure Boards/Work tracking permissions</td>
-<td>
-<ul>
-<li><a href="../../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a></li>
-<li><a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Work item query and folder](../../boards/queries/set-query-permissions.md)">Work item query and folder</a></li>
-<li>Plan permissions</li><br/></ul>
-</td>
-</tr>
-</tbody>
-</table>
+   
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Azure Repos, Azure Pipelines/DevOps (code, build, test, release) permissions 
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - [Git branch](../../repos/git/branch-permissions.md)
+   - [Git repository](../../repos/git/set-git-repository-permissions.md)
+   - [TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)
+   - [Builds](../../pipelines/policies/set-permissions.md)
+   - [Release pipeline security](../../pipelines/policies/set-permissions.md)
+   - [Approvals and approvers](../../pipelines/release/approvals/index.md) 
+   
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Azure Boards/Work tracking permissions
+   :::column-end:::
+   :::column span="1":::
+   
+   
+   - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)
+   - [Work item query and folder](../../boards/queries/set-query-permissions.md)
+   - Plan permissions<br/>
+
+   :::column-end:::
+:::row-end:::
+
 
 ## Next steps
 
