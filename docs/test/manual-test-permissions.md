@@ -68,4 +68,4 @@ For a simplified view of all default permissions assigned to built-in groups, se
 - [Test objects and terms](test-objects-overview.md)  
 - [Set permissions and access for manual testing](../organizations/security/set-permissions-access-test.md)  
 - [Default permissions and access](../organizations/security/permissions-access.md)  
-- [Security groups, service accounts, and permissions in Azure DevOps](../organizations/security/permission.md)  
+- [Security groups, service accounts, and permissions in Azure DevOps](../organizations/security/permissions.md)  

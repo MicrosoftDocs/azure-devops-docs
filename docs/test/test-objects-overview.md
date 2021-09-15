@@ -27,7 +27,7 @@ To support manual and automated testing, you add and group three main types of t
 
 The following table describes the work item types used to support the Azure DevOps test experience. Test-specific work items link together using the link types shown in the previous image.  
  
----
+ 
 :::row:::
    :::column span="1":::
      **Work item type**
@@ -95,7 +95,7 @@ The following fields and tabs appear in most work items. Each tab is used to tra
 The only required field for all work item types is **Title**. When the work item is saved, the system assigns it a unique **ID**. The form highlights required field in yellow. For information about test-related fields, see [Query based on build and test integration fields](../boards/queries/build-test-integration.md). For all other fields, see [Work item field index](../boards/work-items/guidance/work-item-field.md). 
 
   
----
+ 
 :::row:::
    :::column span="":::
       **Field**
@@ -170,7 +170,7 @@ The only required field for all work item types is **Title**. When the work item
 
 Several controls appear in several test-specific work items as described in the following table. If these controls are not of interest, you can hide them from the work item form layout as described in [Add and manage fields (Inheritance process)](../organizations/settings/work/customize-process-field.md#hide-a-field-or-custom-control).
 
----
+ 
 :::row:::
    :::column span="":::
       **Control**
@@ -374,14 +374,6 @@ The following table describes several terms used in manual and exploratory testi
      **Test points**
    :::column-end:::
    :::column span="3":::
-      **Definition**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-     **Term**
-   :::column-end:::
-   :::column span="3":::
       Test cases by themselves are not executable. When you add a test case to a test suite then test point(s) are generated. A test point is a unique combination of test case, test suite, configuration, and tester. For example, if you have a test case named Test login functionality and you add two configurations for the *Edge* and *Chrome* browsers, you have two test points. You can execute or run each of these test points. On execution, test results are generated. Through the test results view, or execution history, you can see all executions of a test point. The latest execution for the test point is what you see in the Execute tab.
    :::column-end:::
 :::row-end:::
@@ -411,7 +403,8 @@ The following table describes several terms used in manual and exploratory testi
       - **Pass Test**
       - **Fail Test**
       - **Block Test**
-      - **Not Applicable**
+      - **Not Applicable**  
+      ---
       To learn more, see [Repeat a test with different data](repeat-test-with-different-data.md). Note that pipeline test outcomes differ as described in [About pipeline tests](../pipelines/test/test-glossary.md). 
    :::column-end:::
 :::row-end:::
