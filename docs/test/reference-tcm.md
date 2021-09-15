@@ -222,7 +222,7 @@ However, there are couple of ways of getting this Step related data:
 1. **TFS APIs**: You could get this information using the [TFS APIs](/previous-versions/dd998375(v=vs.140))
    Refer to a sample Test Steps Report, which was created using the TFS APIs.
 
-   [http://geekswithblogs.net/TarunArora/archive/2011/10/02/mtm-testing-scorecard-using-tfs-api.aspx](http://geekswithblogs.net/TarunArora/archive/2011/10/02/mtm-testing-scorecard-using-tfs-api.aspx)
+   `http://geekswithblogs.net/TarunArora/archive/2011/10/02/mtm-testing-scorecard-using-tfs-api.aspx`
 
    Since this sample also has source code, you could customize it to suit your organization needs.
 
