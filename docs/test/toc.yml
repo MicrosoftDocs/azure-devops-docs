@@ -24,9 +24,8 @@
   - name: Run manual tests
     href: run-manual-tests.md
     displayName: manual test, run, test runs
-  - name: Set permissions and access 
-    href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
-    displayName: access, permissions
+  - name: Default permissions (Security)
+    href: manual-test-permissions.md
 - name: Manual tests
   items:
   - name: Test different configurations
@@ -47,6 +46,9 @@
   - name: Delete test artifacts
     href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md
     displayName: delete, artifacts 
+  - name: Set permissions and access 
+    href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+    displayName: access, permissions
 - name: Automated tests
   items:
   - name: Associate automated tests with test cases
@@ -99,8 +101,6 @@
     displayName: stakeholder, feedback, track
 - name: Reference
   items:
-  - name: Default permissions (Security)
-    href: manual-test-permissions.md
   - name: Manual testing FAQs
     href: reference-qa.md 
   - name: TCM Reporting FAQs
@@ -109,14 +109,24 @@
     href: ../organizations/projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
 - name: REST API Reference
   items:
-  - name: Test Management
+  - name: Test  
     href: /rest/api/azure/devops/test
   - name: Test Plans
-    href: /rest/api/azure/devops/testplan/test%20%20plans/list
+    href: /rest/api/azure/devops/testplan/test-plans
+  - name: Test Suites
+    href: /rest/api/azure/devops/testplan/test-suites
+  - name: Test Variables
+    href: /rest/api/azure/devops/testplan/variables
+  - name: Test Results
+    href: /rest/api/azure/devops/testresults/result-meta-data
 - name: Resources
   items:
   - name: Azure Pipelines Test
     href: ../pipelines/test/test-glossary.md
+  - name: Azure Boards, About work items
+    href: ../boards/work-items/about-work-items.md
+  - name: Marketplace extensions
+    href: https://marketplace.visualstudio.com/search?term=test&target=AzureDevOps&category=All%20categories&sortBy=Relevance
   - name: Azure DevOps Blog, Test
     href: https://devblogs.microsoft.com/devops/
   - name: Plug-ins for Visual Studio
