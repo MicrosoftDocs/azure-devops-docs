@@ -20,18 +20,13 @@ A number of test-specific objects and terms are used when working within Azure T
 
 ## Test-specific work item types 
 
-**Test Plans** provides three main types of test management artifacts: test plans, test suites, and test cases.
-These elements are stored in the work data store as specific types of work items. You can export and share them with your team, and benefit from close integration for all of your DevOps tasks.
+You add and group three main types of test management work item types: test plans, test suites, and test cases. To support sharing of various test steps and test parameters, you define shared steps and shared parameters. These objects are stored in the work data store as specific types of work items. You can export and share these work items in a similar manner as you do with work items. 
 
-The following table describes the work item types used to support the Azure DevOps test experience. Test-specific work items link together using the link types shown in the following image.  
 
 ![Test management work item types](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
 
-From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite, 
-and which test suites are defined for a test plan. 
-However, these objects aren't connected to each other through link types. 
 
-
+The following table describes the work item types used to support the Azure DevOps test experience. Test-specific work items link together using the link types shown in the previous image.  
 ---
 :::row:::
    :::column span="1":::
@@ -47,15 +42,21 @@ However, these objects aren't connected to each other through link types.
      **Test plans**
    :::column-end:::
    :::column span="3":::
-      Are used to group test suites and individual test cases. Test plans include static test suites, requirement-based suites, and [query-based suites](reference-qa.md#query-based-suites).
+      Are used to group test suites and individual test cases. When creating a test plan, you can specify one of three types: 
+      - Static test suites
+      - Requirement-based suites
+      - [Query-based suites](reference-qa.md#query-based-suites).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-     **Test suites**
+     **Test suite**
    :::column-end:::
    :::column span="3":::
-      Group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete.
+      Group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. When creating a test suite, you can specify one of three types: 
+      - **Static test suites**: 
+      - Requirement-based suites
+      - [Query-based suites](reference-qa.md#query-based-suites).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -110,6 +111,7 @@ If you change the workflow for the test plan and test suite, you might need to u
 | **Test result** | Single instance of execution of a test case with a specific outcome and details. |
 | **Test run** | Logical grouping of test results based on:<br />- **Test executed using built-in tasks**: All tests executed using a single task such as [Visual Studio Test](../pipelines/tasks/test/vstest.md), [Ant](../pipelines/tasks/build/ant.md), [Maven](../pipelines/tasks/build/maven.md), [Gulp](../pipelines/tasks/build/gulp.md), [Grunt](../pipelines/tasks/build/grunt.md) or [Xcode](../pipelines/tasks/build/xcode.md) will be reported under a single test run<br />- **Results published using [Publish Test Results](../pipelines/tasks/test/publish-test-results.md) task**: Provides an option to group all test results from one or more test results files into a single run, or individual runs per file<br />- **Tests results published using API(s)**: [API(s)](/rest/api/vsts/test/runs) provide the flexibility to create test runs and organize test results for each run as required. |
 | **Traceability** | Ability to [trace](../pipelines/test/requirements-traceability.md) forward or backward to a requirement, bug, or source code from a test result. |
+| **Test Points** | 
 
 
 ## Share work items across your test experience 

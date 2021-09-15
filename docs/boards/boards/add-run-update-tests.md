@@ -16,7 +16,7 @@ ms.date: 09/14/2021
 
 [!INCLUDE [temp](../../includes/dev15-and-ts-version-header.md)]  
 
-Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md). 
+Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests cases, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md). If you're new to testing, see [Exploratory and manual testing scenarios and capabilities](../../test/overview.md).
 
 In this article, you'll learn: 
 > [!div class="checklist"]    

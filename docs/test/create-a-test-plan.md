@@ -20,15 +20,15 @@ For more information about manual testing, see [Planned manual testing](overview
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
+[!INCLUDE [note-new-ui](includes/note-new-ui.md)] 
+
 <a name="testplan"></a>
 
 ## Create a test plan
 
-If you want to use Azure Test Plans, and haven't done so already, [sign up for Azure DevOps Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs).
+In general, you create test plans to test requirements. Prior to creating a test plan, therefore, you may want to [define your backlog of requirements](../boards/backlogs/create-your-backlog.md). 
 
-You need a project. For more information, see [create your project](../organizations/accounts/organization-management.md). Then [create your backlog](../boards/backlogs/create-your-backlog.md).
-
-1. In Azure DevOps Services or Azure DevOps Server, open your project and go to the **Test Plans** web portal.
+1. From the web portal, open your project and go to **Test Plans**.
    If you already have a test plan, choose **Test Plans** to go to the page that lists all test plans.
 
    ![Opening the list of test plans page](media/create-a-test-plan/goto-test-plans-page.png)
@@ -42,9 +42,6 @@ You need a project. For more information, see [create your project](../organizat
 
    ![Adding test plan details](media/create-a-test-plan/CreateATestPlan2.png) 
 
-> [!TIP]
-> You can also create a test plan and a test suite automatically when you create a test from a User Story work item in Azure Boards or Azure DevOps Server.
-> Open the shortcut menu for the work item and choose **Add test**.
 
 <a name="backlog"></a>
 ## Add a requirement-based test suite and select backlog items to test
@@ -84,5 +81,6 @@ Or filter the list of tests using **Outcome**, **Tester**, and **Configuration**
 
 ## Related articles
 
+* [Test objects and terms](test-objects-overview.md) 
 * [FAQs for manual testing](reference-qa.md#testplans)
 * [Link test cases to work items](../boards/queries/link-work-items-support-traceability.md)
