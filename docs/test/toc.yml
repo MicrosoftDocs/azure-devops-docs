@@ -27,38 +27,44 @@
   - name: Set permissions and access 
     href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
     displayName: access, permissions
-- name: Manual testing
+- name: Manual tests
   items:
-  - name: Test from the Kanban board
-    href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
-    displayName: kanban, tesr, board
-  - name: Track test status
-    href: track-test-status.md
-    displayName: track, status
-  - name: Perform user acceptance testing
-    href: user-acceptance-testing.md
-    displayName: user acceptance, testing
   - name: Test different configurations
     href: test-different-configurations.md
     displayName: configuration, testing
   - name: Repeat a test with different data
     href: repeat-test-with-different-data.md
     displayName: data, testing, shared steps, shared parameters
+  - name: Test from the Kanban board
+    href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+    displayName: inline testing
+  - name: Perform user acceptance testing
+    href: user-acceptance-testing.md
+    displayName: user acceptance, testing
   - name: Collect diagnostic data
     href: collect-diagnostic-data.md
     displayName: diagnostic, data, testing
-  - name: Manage test results
-    href: how-long-to-keep-test-results.md
-    displayName: results, logs
+  - name: Delete test artifacts
+    href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md
+    displayName: delete, artifacts 
+- name: Automated tests
+  items:
   - name: Associate automated tests with test cases
     href: associate-automated-test-with-test-case.md
     displayName: test cases, automated, associate
   - name: Run automated tests from test plans
     href: run-automated-tests-from-test-hub.md
     displayName: automated, test plans, run
-  - name: Delete test artifacts
-    href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md
-    displayName: delete, artifacts 
+- name: Track progress and results
+  items:
+  - name: Track test status
+    href: track-test-status.md
+    displayName: track, status
+  - name: Requirements traceability
+    href: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md
+  - name: Set test retention policies
+    href: how-long-to-keep-test-results.md
+    displayName: results, logs
 - name: "Test & Feedback extension"
   items:
   - name: Install the extension

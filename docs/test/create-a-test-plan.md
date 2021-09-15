@@ -76,6 +76,30 @@ Or filter the list of tests using **Outcome**, **Tester**, and **Configuration**
 
   ![Finding a test plan](media/create-a-test-plan/select-test-plan.png)
   
+
+## Share work items across your test experience 
+****
+For example, you're building version 1.* of your product and you might create several test cases for that version.
+Each of these test cases can be updated, and more added, at any time.
+For each development cycle and release of your product, you create a test plan and import the existing test cases into that plan.
+You can also, if you wish, divide the test cases into separate test suites within the plan to enable easier management and monitoring of these separate sets of test cases.
+
+After you create your test plan, you [assign test configurations](test-different-configurations.md) and [assign testers](create-test-cases.md#assign-testers) to cover the required test matrix.
+These testers [run the tests](run-manual-tests.md) and gauge the quality of the product.
+Testers continue testing until the product meets exit criteria.
+For the next development cycle and release, you can create a new test plan and reuse the same test cases.
+You repeat this development-test-release cycle by importing the same test cases into each new test plan.
+
+The great thing is that, because test plans refer to test cases, updates to a test case automatically reflect in all the test plans and test suites that use it.
+
+In the next version of the product, you can reuse the existing test cases.
+However, a better option may be to [copy or clone the test cases](reference-qa.md#creating-manual-test-cases). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
+
+> [!TIP]
+> For more information about the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.md#testplans).
+
+
+
 ##  Next steps
 
 > [!div class="nextstepaction"]
