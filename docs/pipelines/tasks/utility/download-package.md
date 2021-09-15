@@ -70,7 +70,7 @@ Requires the Package Management extension.
 
 ### How do I find the ID of the feed (or project) I want to download my artifact from
 
-The get feed api can be used to retrieve the feed and project ID for your feed. The api is documented [here](/rest/api/azure/devops/artifacts/feed%20%20management/get%20feed).
+The get feed api can be used to retrieve the feed and project ID for your feed. The api is documented [here](/rest/api/azure/devops/artifacts/feed-management/get-feed).
 
 ### Can I use the project or feed name instead of IDs
 
