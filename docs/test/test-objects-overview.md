@@ -256,7 +256,7 @@ There are a number of permissions that control select features for viewing, modi
 :::row-end:::
 :::row:::
    :::column span="2":::
-      **Manage test configurations** 
+      **Manage test configurations**  
       **Manage test environments**  
    :::column-end:::
    :::column span="1":::
@@ -339,7 +339,7 @@ There are a number of permissions that control select features for viewing, modi
 :::row-end:::
 
 
-To learn more about setting these permissions, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md) and [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md). 
+To learn more about setting these permissions, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md) and [Set permissions at the project- or collection-level](../organizations/security/set-project-collection-level-permissions.md). 
 
 ## Export, import, and bulk update of test-specific work items 
 
@@ -358,8 +358,8 @@ As with other work items, you can bulk edit test-specific work items. To learn m
 ## Test terms 
 
 The following table describes several terms used in manual and exploratory testing. 
+ 
 
----
 :::row:::
    :::column span="1":::
      **Term**
