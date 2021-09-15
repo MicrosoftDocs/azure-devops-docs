@@ -724,7 +724,7 @@
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-   Project-Scoped Users <a id="project-scoped-user-group" />
+   Project-Scoped Users <a id="project-scoped-user-group" ></a>
    :::column-end:::
    :::column span="1":::
    Has limited access to view organization settings and projects other than those projects they are specifically added to. Also, people picker options are limited to those users and groups that have been explicitly added to the project the user is connected to.
@@ -1091,7 +1091,7 @@
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Organization-level permissions and groups, Azure DevOps Services.](media/permissions/collection-level-permissions-new.png)   
 
-:::row-end:::
+
 :::row:::
    :::column span="1":::
    Permission
@@ -1107,6 +1107,7 @@
    :::column span="1":::
     
    :::column-end::: 
+:::row-end:::
 :::row:::
    :::column span="1":::
    <a id="alter-trace-settings"></a> Alter trace settings
@@ -1393,7 +1394,8 @@
 :::row-end:::
 :::row:::
    :::column span="1":::
-   <a id="audit-streams-permissions"></a> #### Auditing
+   <a id="audit-streams-permissions"></a>
+   #### Auditing
    :::column-end:::
    :::column span="1":::
     
@@ -2696,7 +2698,6 @@
    :::column-end:::
 :::row-end:::
 :::row:::
-   <a id="edit-build-pipeline-permission" />
    :::column span="1":::
    <a id="edit-build-definition-permission"></a> Edit build pipeline</br>Edit build definition
    :::column-end:::
@@ -3015,6 +3016,7 @@
    Can push and edit Git notes.<br/>
    :::column-end:::
 :::row-end:::
+:::row:::
    :::column span="1":::
    <a id="git-create-repository-permission"></a> Manage permissions
    :::column-end:::
@@ -3168,7 +3170,7 @@
 :::row:::
    :::column span="1":::
    
-   Lock<br/>
+   <a id="lock-permission"></a>Lock<br/>
    :::column-end:::
    :::column span="1":::
    
@@ -3332,6 +3334,7 @@
    Description
    :::column-end:::
 :::row-end:::
+
 :::row:::
    :::column span="1":::
    <a id="area-create-child-nodes-permission"></a> Create child nodes
