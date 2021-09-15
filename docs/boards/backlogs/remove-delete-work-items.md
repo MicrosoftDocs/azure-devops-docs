@@ -394,7 +394,7 @@ The **witadmin** command-line tool installs with any version of Visual Studio or
 To programmatically delete, restore, and destroy work items, see one of the following REST API resources:  
 
 - [Recycle bin REST API Reference](/rest/api/azure/devops/wit/recyclebin)
-- [Work Items - Delete REST API Reference](/rest/api/azure/devops/wit/work%20items/delete)
+- [Work Items - Delete REST API Reference](/rest/api/azure/devops/wit/work-items/delete)
   
 ::: moniker-end
 
@@ -489,5 +489,4 @@ In this article you'll learn:
 > * How to permanently delete work items (**witadmin destroy** command-line tool)   
 
 ::: moniker-end
---> 
-	
+-->

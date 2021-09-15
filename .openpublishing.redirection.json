@@ -12093,7 +12093,12 @@
     },
     {
       "source_path": "docs/articles/phase-features-with-feature-flags.md",
-      "redirect_url": "/azure/devops/migrate/phase-features-with-feature-flags",
+      "redirect_url": "/devops/operate/progressive-experimentation-feature-flags",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/migrate/phase-features-with-feature-flags.md",
+      "redirect_url": "/devops/operate/progressive-experimentation-feature-flags",
       "redirect_document_id": false
     },
     {

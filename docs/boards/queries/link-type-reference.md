@@ -231,7 +231,7 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
 <td>Hyperlink</td>
 <td>Work item tracking</td>
 <td>Hyperlink</td>
-<td>Used to link a work item to a URL. Note that <strong>Workitem Hyperlink</strong> is the name of this link type in the <a href="/rest/api/azure/devops/wit/artifact%20link%20types/list" data-raw-source="[Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list)">Artifact Link Types API</a>. </td>
+<td>Used to link a work item to a URL. Note that <strong>Workitem Hyperlink</strong> is the name of this link type in the <a href="/rest/api/azure/devops/wit/artifact-link-types/list" data-raw-source="[Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list)">Artifact Link Types API</a>. </td>
 </tr>
 </tbody>
 </table>
@@ -481,7 +481,7 @@ The following table describes the external link types you can choose when adding
       LatestItemVersion
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a file or changeset defined within a TFVC repository. Note that **Source Code File** is the name of this link type in the [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list).   
+      Used to link a work item to a file or changeset defined within a TFVC repository. Note that **Source Code File** is the name of this link type in the [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list).   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -660,7 +660,7 @@ To get a list of link types, you can use one of the supported command line tools
 
 ### az boards work-item relation list-type  
 
-You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
 az boards work-item relation list-type [--org]
@@ -746,7 +746,7 @@ The default json format provides additional information about the attributes def
 
 ### witadmin listlinktypes 
 
-You can list link types supported for your project collection using the [**witadmin listlinktypes**](../../reference/witadmin/manage-link-types.md) command line tool or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. 
+You can list link types supported for your project collection using the [**witadmin listlinktypes**](../../reference/witadmin/manage-link-types.md) command line tool or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work-item-relation-types/list) REST API command. 
 
 Here we list the link types for the fabrikam-sever default collection: 
 
@@ -918,4 +918,4 @@ The following table provides descriptions for each of the link type attributes r
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 - [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology)
-- [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list)
+- [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list)
