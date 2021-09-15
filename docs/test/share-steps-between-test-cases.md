@@ -30,7 +30,7 @@ While you're editing a test case, select a sequence of steps that you want to sh
   
 The steps you selected are replaced with a link to the new shared steps work item:  
   
-![Resulting test case with a shared step.](media/shared-steps/almt_ws34create-shared-result.png)  
+![Resulting test case with a shared step.](media/shared-steps/create-shared-result.png)  
   
 ## Use shared steps  
 

@@ -20,7 +20,7 @@ Learn how to navigate Test Plans to support your test goals and operations. Use 
 - **All**: View a list of all test plans defined for the project. 
 - **Test plan header**: Locate, favorite, edit, copy or clone a test plan.
 - **Test suites tree**: Add, manage, export, or order test suites. Leverage this to also assign configurations and perform user acceptance testing.
-- **Define tab**: Collate, add, and manage test cases in a test suite of choice via this tab.
+- **Define tab**: Collate, add, and manage test cases in a test suite of choice via this tab. This tab doesn't appear for users with **Basic** access. 
 - **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
 - **Chart tab**: Track test execution and status via charts, which can also be copied to dashboards.
 
