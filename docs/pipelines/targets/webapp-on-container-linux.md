@@ -16,7 +16,7 @@ Use App Service on Linux and pipelines to automatically deploy your web app to a
 Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
 
 You'll use the [Azure Web App for Container task
-](../tasks/deploy/azure-rm-web-app-containers) to deploy to Azure App Service in your pipeline.
+](../tasks/deploy/azure-rm-web-app-containers.md) to deploy to Azure App Service in your pipeline.
 
 To learn how to deploy to an Azure Web App without a container, see [Deploy an Azure Web App](webapp.md). 
 
@@ -27,11 +27,10 @@ To learn how to deploy to an Azure Web App without a container, see [Deploy an A
 
 ::: moniker-end
 
-# Prerequisites
+## Prerequisites
 
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-[!INCLUDE [include](../includes/prerequisites.md)]
-    * A deployed App Service on Linux custom container. To get started, see [Run a custom container in Azure](/azure/app-service/quickstart-custom-container).
+* A deployed App Service on Linux custom container. To get started, see [Run a custom container in Azure](/azure/app-service/quickstart-custom-container).
 
 ## Build your app
 
@@ -64,7 +63,7 @@ To learn how to deploy to an Azure Web App without a container, see [Deploy an A
                Dockerfile: app/Dockerfile
     ```
 
-    Windows container images can be built using either Microsoft hosted Windows agents or Windows platform based self-hosted agents (all Microsoft hosted Windows platform-based agents are shipped with Moby engine and client needed for Docker builds). Linux container images can be built using Microsoft hosted Ubuntu agents or Linux platform based self-hosted agents. Learn more about the Windows and Linux agent options available with [Microsoft hosted agents](../../agents/hosted.md).
+    Windows container images can be built using either Microsoft hosted Windows agents or Windows platform based self-hosted agents (all Microsoft hosted Windows platform-based agents are shipped with Moby engine and client needed for Docker builds). Linux container images can be built using Microsoft hosted Ubuntu agents or Linux platform based self-hosted agents. Learn more about the Windows and Linux agent options available with [Microsoft hosted agents](../agents/hosted.md).
     
     > [!NOTE]
     > Currently the Microsoft hosted MacOS agents can't be used to build container images as the Moby engine needed for building the images is not pre-installed on these agents.
