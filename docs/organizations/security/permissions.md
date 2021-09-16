@@ -54,7 +54,6 @@ To learn how to add users to a group or set a specific permission that you can m
       -[Task groups](../../pipelines/policies/set-permissions.md)   
       -[Variable groups](../../pipelines/policies/set-permissions.md)      
       -[Role-based resources](../../pipelines/policies/set-permissions.md)  
-      ---
       **Wiki**
    :::column-end:::
    :::column span="1":::
