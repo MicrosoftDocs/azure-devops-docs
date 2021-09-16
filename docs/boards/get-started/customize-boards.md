@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 09/09/2021
+ms.date: 09/15/2021
 ---
 
 # Customize your Kanban boards

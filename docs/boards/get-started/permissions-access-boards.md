@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 09/09/2021
+ms.date: 09/15/2021
 ---
 
 # Default permissions and access levels for Azure Boards 
