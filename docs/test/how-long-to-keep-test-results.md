@@ -1,5 +1,5 @@
 ---
-title: Manage how long to keep test results
+title: Set test retention policies
 description: Manage how long Azure DevOps keeps your manual test results by clearing test results that you do not need anymore or when you delete your builds
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.technology: devops-test
@@ -10,7 +10,7 @@ ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
 
-# Control how long to keep test results
+# Set test retention policies
 
 [!INCLUDE [version-header](includes/version-header.md)]
 
@@ -74,6 +74,7 @@ set the retention limits at the project level as described in [Set retention per
 
 ## Related articles
 
-*  [FAQs for manual testing](reference-qa.md#manageresults)
+- [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md)
+- [FAQs for manual testing](reference-qa.md#manageresults)
 
  

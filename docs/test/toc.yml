@@ -62,6 +62,8 @@
   - name: Track test status
     href: track-test-status.md
     displayName: track, status
+  - name: Progress report
+    href: progress-report.md 
   - name: Requirements traceability
     href: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md
   - name: Set test retention policies

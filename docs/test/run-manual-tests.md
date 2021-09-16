@@ -103,11 +103,13 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 [Can I run tests offline and then import the results?](reference-qa.md#runoffline)
 
-## Related articles
-
-*  [FAQs for manual testing](reference-qa.md#runtests)
 
 ## Next step
 
 > [!div class="nextstepaction"]
 > [View your test progress](track-test-status.md)
+
+## Related articles
+
+- [FAQs for manual testing](reference-qa.md#runtests)
+
