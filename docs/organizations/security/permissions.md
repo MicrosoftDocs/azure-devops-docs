@@ -45,7 +45,7 @@ To learn how to add users to a group or set a specific permission that you can m
       -[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)  
    :::column-end:::
    :::column span="1":::
-      *DevOps **
+      **DevOps**
       -[Git branch](../../repos/git/branch-permissions.md)  
       -[Git repositories](../../repos/git/set-git-repository-permissions.md)  
       -[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)  
