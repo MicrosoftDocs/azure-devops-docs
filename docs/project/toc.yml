@@ -46,6 +46,8 @@
   href: navigation/toc.yml
 - name: Notifications
   href: ../notifications/toc.yml
+- name: Feedback
+  href: ../feedback/toc.yml
 - name: REST API Reference
   items:
   - name: Projects

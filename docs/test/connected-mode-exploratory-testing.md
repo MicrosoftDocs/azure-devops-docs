@@ -6,8 +6,8 @@ ms.technology: devops-test
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
-ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
+ms.date: 09/14/2021
 ---
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-header](includes/version-header.md)] 
 
 To use the Test &amp; Feedback extension in **Connected** mode you must connect 
-to Azure DevOps or TFS 2015 and later.
+to an Azure DevOps project.
 This automatically configures the extension based on your access level: 
 
 * Users with **Basic** access can use the extension to perform exploratory
@@ -29,10 +29,11 @@ This automatically configures the extension based on your access level:
   by the team by choosing the **Provide feedback** link in the email.
   [More details](provide-stakeholder-feedback.md#email).
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
 
 <a name="connectvtfs"></a>
-## Connect to Azure DevOps or TFS
+
+## Connect to Azure DevOps 
 
 1. If you want to use Azure DevOps, and you haven't already done so, 
    [sign up for a subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs)
@@ -164,7 +165,7 @@ The extension lets you create test cases as you explore your application.
 
    ![View the exploratory testing session](media/connected-mode-exploratory-testing/create-bugs-06.png)
 
-   Alternatively, open the **Recent exploratory sessions** list directly in the **Runs** page of [!INCLUDE [test-hub-include](includes/test-hub-include.md)].
+   Alternatively, open the **Recent exploratory sessions** list directly in the **Runs** page of the **Test Plans** web portal.
  
    ![View exploratory testing sessions on the server](media/connected-mode-exploratory-testing/create-bugs-07.png)
 
