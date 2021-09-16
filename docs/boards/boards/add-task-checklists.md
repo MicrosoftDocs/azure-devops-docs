@@ -166,9 +166,4 @@ To configure or change the layout of the Kanban board, see [Customize your board
 - [Kanban board controls](kanban-board-controls.md)
 
 ### REST API resources
-To programmatically create work items, see the [REST API, Work Items reference](/rest/api/azure/devops/wit/work%20items/create?view=azure-devops-rest-6.0&preserve-view=true ).
-
-
-
-
-
+To programmatically create work items, see the [REST API, Work Items reference](/rest/api/azure/devops/wit/work-items/create).

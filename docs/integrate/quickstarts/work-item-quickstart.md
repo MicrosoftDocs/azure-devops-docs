@@ -14,11 +14,11 @@ ms.date: 06/27/2017
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-A common scenario in Azure DevOps Services is to fetch work items using queries. This guide details how to implement that scenario programmatically using our REST APIs or .NET client libraries. 
+A common scenario in Azure DevOps Services is to fetch work items using queries. This article details how to implement that scenario programmatically using our REST APIs or .NET client libraries.
 
 ## Prerequisites
 
-You need the following prerequisites:
+You must have the following items:
 
 * An organization in Azure DevOps Services. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
 * A Personal Access Token, [find out how to create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
@@ -113,7 +113,7 @@ public class QueryExecutor
             var fields = new[] { "System.Id", "System.Title", "System.State" };
 
             // get work items for the ids found in query
-            return await httpClient.GetWorkItemsAsync(ids, fields, result.AsOf).ConfigureAwait(false);
+            return await httpClient.GetWorkItemsBatchAsync(ids, fields, result.AsOf).ConfigureAwait(false);
         }
     }
 
