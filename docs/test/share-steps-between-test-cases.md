@@ -52,4 +52,4 @@ When you [run a test](run-manual-tests.md), you can either mark the whole shared
 
 
 * [Test objects and terms](test-objects-overview.md) 
-- [FAQs for manual testing](https://docs.microsoft.com/azure/devops/test/reference-qa#sharesteps)
+- [FAQs for manual testing](reference-qa.md#sharesteps)
