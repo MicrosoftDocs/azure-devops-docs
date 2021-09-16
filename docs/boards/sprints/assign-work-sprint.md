@@ -1,7 +1,7 @@
 ---
 title: Assign backlog items to a sprint
 titleSuffix: Azure Boards
-description: Assign work to a sprint or iteration working with Scrum methods in Azure Boards or Team Foundation Server (TFS)
+description: Learn how to assign work to a sprint or iteration using Agile processes and tools in Azure Boards.
 ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.assetid: 
@@ -9,18 +9,15 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 09/15/2021
 ---
 
 
-# 1. Assign backlog items to a sprint 
+# 1. Assign backlog items to a sprint in Azure Boards
  
 [!INCLUDE [temp](../includes/version-all.md)] 
 
-The first step in planning your sprint is to assign work from your backlog to a sprint. 
-Your team builds the sprint backlog during the sprint planning meeting, typically held on the first day of the sprint. 
-Each sprint corresponds to a time-boxed interval which supports your team's ability to work using Agile processes and tools. 
-During the planning meeting, your product owner works with your team to identify those stories or backlog items to complete in the sprint.  
+The first step in planning your sprint is to assign work from your backlog to a sprint. Your team builds the sprint backlog during the sprint planning meeting, typically held on the first day of the sprint. Each sprint corresponds to a time-boxed interval that supports your team's ability to work using Agile processes and tools. During the planning meeting, your product owner works with your team to identify those stories or backlog items to complete in the sprint.  
 
 > [!NOTE]   
 > Your project comes with several predefined sprints. You can quickly add more sprints 
@@ -75,7 +72,7 @@ some or all of the items based on these estimates.
 
 From your web browser, open your product backlog. 
 
-1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
+1. (1) Check that you've selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-backlogs-backlog-s155-co.png)
@@ -102,7 +99,7 @@ From your web browser, open your product backlog.
 
 ::: moniker range="azure-devops-2019"  
 
-1. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
+1. From your web browser, open your product backlog. (1) Check that you've selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Work, Backlogs, for a team](media/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -149,7 +146,7 @@ From your web browser, open your product backlog.
 
 ## Assign work from your backlog to a sprint 
    
-Before you start planning your sprint, you'll want to have [created, prioritized, and estimated your backlog](../backlogs/create-your-backlog.md). 
+Before you start planning your sprint, you'll want to have [created, organized, and estimated your backlog](../backlogs/create-your-backlog.md). 
 
 Also, you'll want to have [set the start and end dates for your sprint](define-sprints.md#quick-start-schedule). 
 
@@ -172,14 +169,14 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Drag-drop items onto sprint](media/define-sprints/drag-drop-backlog-items-to-sprint.png)
 
-2. Select one or more items from the backlog and drag them to the sprint you are planning. This action will update the Iteration Path of the backlog items and any of its child tasks to the sprint you selected. 
+2. Select one or more items from the backlog and drag them to the sprint you're planning. This action will update the Iteration Path of the backlog items and any of its child tasks to the sprint you selected. 
 
-3. Check the level of effort displayed in the sprint window.  As you assign backlog items to a sprint, the sprint window updates with a running tally of the number of backlog items and tasks, as well as the **Planned Effort**. 
+3. Check the level of effort displayed in the sprint window.  As you assign backlog items to a sprint, the sprint window updates with a running tally of the number of backlog items and tasks and the **Planned Effort**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Product backlog page, drag work items to sprint or assign to sprint through the context menu](media/assign-items-sprint/sprint-window-effort.png)   
 
-	*Planned Effort* provides a sum of all *Story Points* or *Effort* defined for backlog items assigned to the sprint. This represents your initial guess at what your team will be able to complete in the sprint. Next, you'll define tasks, estimate that work, and use your team's capacity to make sure it fits in the sprint. 
+	*Planned Effort* provides a sum of all *Story Points* or *Effort* defined for backlog items assigned to the sprint. This sum represents your initial guess at the amount of work your team will complete in the sprint. Next, you'll define tasks, estimate that work, and use your team's capacity to make sure it fits in the sprint. 
 
 ::: moniker-end
 
@@ -198,11 +195,11 @@ Select one or more items and drag them to one of the listed sprints.
 
 <a id="bulk-modify">  </a>
 
-## Use multi-select to bulk modify items
+## Use the multi-select feature to modify items in bulk
 
 Multi-select of work items on the product and sprint backlogs works in the same way as multi-select works within query results. 
 
-With multi-select, you can perform several actions on several work items at once, such as: 
+With multi-select, you can complete several actions on several work items at once, such as: 
 
 - Move to a sprint
 - Change the backlog priority  
@@ -227,7 +224,7 @@ To learn more, see [Bulk modify work items](../backlogs/bulk-modify-work-items.m
 
 ::: moniker-end
 
-## Try this next
+## Next step
 
 Now that you've defined your sprint plan, your team's ready to begin work on the sprint tasks.
 
@@ -236,6 +233,6 @@ Now that you've defined your sprint plan, your team's ready to begin work on the
 
 ## Related articles
 
-If you need to add or rename the sprints your team uses, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).  
+To add or rename the sprints your team uses, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).  
 
 If your backlog doesn't show the work items you expect, see [Setup your Backlogs & Boards](../backlogs/set-up-your-backlog.md). 

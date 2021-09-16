@@ -1,7 +1,7 @@
 ---
 title: Adjust work to fit sprint capacity
-titleSuffix: Azure Boards and TFS
-description: Change work items assigned to a sprint or iteration working with Scrum methods 
+titleSuffix: Azure Boards
+description: Learn how to adjust items assigned to a sprint to align with a team's sprint capacity. 
 ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.assetid: 
@@ -9,18 +9,16 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 09/15/2021
 ---
 
-
-
-# 4. Adjust work to fit sprint capacity
+# Adjust work to fit sprint capacity
 
 [!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="adjust-work">  </a>
 
-After you've defined all the tasks for all the sprint backlog items, you'll want to check whether your team is at or over capacity. If under capacity, you can consider adding more items onto the sprint. If over capacity, you'll want to remove items out of the backlog.  
+Check your team's capacity after you've defined all the tasks for all the sprint backlog items. You can consider adding more items onto the sprint if your team is under capacity. If over capacity, you'll want to remove items out of the backlog.  
 
 Next, check whether any team member is under, at, or over capacity. Or, if someone hasn't even been assigned any work. Use the capacity bars to make these determinations. If you haven't yet [set capacity for your team](set-capacity.md), do that now.
 
@@ -40,7 +38,7 @@ Use this article to learn how to:
 
 ::: moniker range=">= azure-devops-2020"
 
-1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+1. From your web browser, open your team's sprint backlog. (1) Check that you've selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Work, Sprints, for a team](media/add-tasks/open-sprint-backlog-s155-co.png)
@@ -62,7 +60,7 @@ Use this article to learn how to:
 
 ::: moniker range="azure-devops-2019"
 
-1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+1. From your web browser, open your team's sprint backlog. (1) Check that you've selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
     ![Open Work, Sprints, for a team](media/add-tasks/open-sprints-backlog-agile.png)
 
@@ -126,9 +124,9 @@ To view capacity charts, you'll want to turn **Work details** on for a sprint.
 ::: moniker-end
 
 
-## Team over capacity: move items out of the sprint
+## Move items out of a sprint
 
-If your team's over capacity, you can move items from the sprint backlog back to the product backlog. This will reset the Iteration Path to the default set for your team. Or, you can move the item into the next sprint your team will work in. All the tasks that you've defined for that item will move with the backlog items.   
+Move items from the sprint backlog back to the product backlog if your team is over capacity. This action will reset the Iteration Path to the default set for your team. Or, you can move the item into the next sprint your team will work in. All the tasks that you've defined for that item will move with the backlog items.   
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -155,7 +153,7 @@ Here we select the last item in the sprint backlog and drag it to the product ba
 ::: moniker-end
 
 
-## Load balance work across the team
+## Balance work across the team
 
 To quickly reassign tasks, drag the task onto the new assignee's capacity bar. 
 
@@ -178,6 +176,6 @@ As you reassign tasks, capacity bars automatically update.
 ![Reassign tasks](media/IC797838.png) 
 ::: moniker-end
 
-## Try this next
+## Next step
 > [!div class="nextstepaction"]
 > [5. Share your sprint plan](share-plan.md) 
