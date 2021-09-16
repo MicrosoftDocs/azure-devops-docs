@@ -70,7 +70,13 @@ sections:
           What's the difference between daily pro-rated charges instead of monthly committed purchases?
         answer: |
           As part of the change to user assignment-based billing, we've also switched from monthly to daily billing. When you give a user paid access for a few weeks, or even a few days, you pay only for the time they got assigned to the paid access, rather than for a full month. As we switch your organization from monthly to daily billing, your next Azure bill is likely lower than it was previously. The next month is back to normal once a full month of daily charges has accumulated.
-          
+
+      - question: |
+          Does daily pro-rated charges apply to other purchases also?
+        answer: |
+          Pro-rated charges apply to all purchases including pipelines (self-hosted and MS hosted) and artifacts storage. For example, if you purchased 5 MS hosted pipelines on the 20th of the month, then the charges for that month for pipelines will be pro-rated. In this case you will be charged 1/3rd of the monthly cost (~$77 instead of $200) taking a flat $40/month cost for a single MS hosted pipeline.
+
+
       - question: |
           How did paid extensions change in the Azure DevOps Marketplace in July 2019?
         answer: |
