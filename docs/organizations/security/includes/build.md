@@ -20,7 +20,8 @@ ms.date: 08/18/2021
    Contributors
    :::column-end:::
    :::column span="1":::
-   Build<br/>Admins
+   Build  
+   Admins
    :::column-end:::
    :::column span="1":::
    Project Admins
