@@ -726,7 +726,7 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -734,7 +734,7 @@
    :::column span="1":::
    <a id="administer-warehouse-permission"></a> Administer warehouse
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can process or change settings for the data warehouse or SQL Server Analysis cube
    by using the [Warehouse Control Web Service](../../report/admin/manage-reports-data-warehouse-cube.md).  
 
@@ -746,7 +746,7 @@
    :::column span="1":::
    <a id="create-team-project-collection-permission"></a> Create project collection
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can create and administer collections.
    :::column-end:::
 :::row-end:::
@@ -754,7 +754,7 @@
    :::column span="1":::
    <a id="delete-team-project-collection-permission"></a> Delete project collection
    :::column-end:::
-   :::column span="1":::   
+   :::column span="2":::   
    Can delete a collection from the deployment.
 
    > Deleting a collection will not delete the collection database from SQL Server.
@@ -764,7 +764,7 @@
    :::column span="1":::
    <a id="edit-instance-level-information-permission"></a> Edit instance-level information
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can edit server-level permissions for users and groups,
    and add or remove server level groups from the collection.
@@ -784,7 +784,7 @@
    :::column span="1":::
    <a id="make-requests-on-behalf-of-others-permission"></a> Make requests on behalf of others
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can perform operations on behalf of other users or services. Only assign to service accounts.
    :::column-end:::
 :::row-end:::
@@ -792,7 +792,7 @@
    :::column span="1":::
    <a id="trigger-events-permission"></a> Trigger events
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can trigger server-level alert events.
    Only assign to service accounts and members of the Team Foundation Administrators group.
@@ -803,7 +803,7 @@
    :::column span="1":::
    <a id="use-full-web-access-features-permission"></a> Use full Web Access features
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can use all on-premises Web portal features. This permission has been deprecated with Azure DevOps Server 2019 and later versions. 
 
@@ -814,7 +814,7 @@
    :::column span="1":::
    <a id="view-instance-level-information-permission"></a> View instance-level information
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can view server level group membership and the permissions of those users.
 
@@ -2842,7 +2842,7 @@
 :::row-end:::
 :::row:::
    :::column span="1":::   
-   Lock
+   <a id="lock-permission"></a>Lock
    :::column-end:::
    :::column span="1":::
    
