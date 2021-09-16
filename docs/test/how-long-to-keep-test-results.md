@@ -74,7 +74,7 @@ set the retention limits at the project level as described in [Set retention per
 
 ## Related articles
 
-- [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md)
+- [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
 - [FAQs for manual testing](reference-qa.md#manageresults)
 
  

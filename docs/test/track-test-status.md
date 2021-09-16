@@ -15,7 +15,8 @@ ms.date: 09/14/2021
 [!INCLUDE [version-header](includes/version-header.md)] 
 
 View the status of your planned testing using an out-of-the-box Progress Report and lightweight charts.
- 
+
+<a id="charts" /> 
 
 ## Track testing progress
 

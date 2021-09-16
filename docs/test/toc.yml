@@ -101,8 +101,12 @@
   - name: Track stakeholder feedback requests
     href: track-stakeholder-feedback.md
     displayName: stakeholder, feedback, track
-- name: Reference
+- name: Troubleshooting & Reference
   items:
+  - name: Work item field index
+    href: ../boards/work-items/guidance/work-item-field.md
+  - name: Build and test integration fields
+    href: ../boards/queries/build-test-integration.md
   - name: Manual testing FAQs
     href: reference-qa.md 
   - name: TCM Reporting FAQs
