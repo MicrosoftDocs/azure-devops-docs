@@ -6,8 +6,8 @@ ms.technology: devops-test
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 09/04/2019
 monikerRange: '>= tfs-2015'
+ms.date: 09/14/2021
 ---
 
 # Track test status
@@ -15,8 +15,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-header](includes/version-header.md)] 
 
 View the status of your planned testing using an out-of-the-box Progress Report and lightweight charts.
-
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+ 
 
 :::moniker range=">= azure-devops-2020"
 
@@ -30,11 +29,11 @@ To track the progress of more than one test plan or test suite, use the Progress
 5. Get a breakdown by test plan and suite to understand where execution is going slow or has many failed or blocked tests.
 6. View the progress each suite has made within a test plan and identify the areas that need attention.
 
-### Configuring the report
+### Configure the report
 
 By navigating to Test Plans > Progress Report, you can start using the report. It requires no setup and is applicable for all Azure DevOps Services organizations. When you view the report, it shows you the status of the test plan you had accessed last. However, using the filter bar, you can select one or more test plans in the project.
 
-### Understanding the report
+### Understand the report
 
 The progress report consists of three sections:
 1. **Summary**: This section provides you with a consolidated view for the selected test plans. To understand what test points are, see [Navigate Test Plans](navigate-test-plans.md).
@@ -51,23 +50,22 @@ An example of an unhealthy outcome trend is as follows because as time is progre
 
 ![bad trend](media/progress-report/badtrend.png)
 
-### Filtering
+### Filter
+
 By using the filter bar you can filter this report by Test Suites, Configuration, Tester, Test Case priority, and Test Case Assigned to. As example: you can filter by configuration 'Chrome' and then 'Edge' to understand where the execution and pass % are higher. Note: Tester is the person to whom the test point is assigned for execution whereas Assigned to is the person who is responsible for the reusable test case.
 
+> [!NOTE]   
 > The test plan is considered Level 1. Its child suites are considered level 2. Their child suites in turn are considered level 3. The Test Suites filter shows only the Level 3 test suites inside the selected test plans. To select a Level 2 test suite select all the Level 3 test suites underneath it. This assumes the Level 2 test suites itself does not have any test points.
 
 ### Behavior
+
 When using this progress report, it is good to know the following points:
 1. The report lets you view data for one or more Test Plans in a single project. To view data across projects, use the [OData APIs](../report/extend-analytics/data-model-analytics-service.md). This report is also rendered using the same OData APIs. 
 2. Whenever you visit the report, it will show you the data for the test plan you had accessed last. Currently we do not store your last set of filters and also do not let you store an instance of this report.
 3. All the data shown in the report is as per the current suite hierarchy in the selected test plans. Currently, we are not storing the hierarchy history.
 4. Data processing for this report is occurring approximately every 15 mins. Do not use this report for real-time analysis or reporting. Expect ~15 mins of duration between a test execution and the same to show up in this report. 
 5. Data for test plans migrated from TFS/Server will not show up in this report. You can leverage this report for test plans created in Azure DevOps Services on or after September 1, 2019. 
-
-### Provide feedback
-
-To report any issues you might be having with the Progress Report, go to https://developercommunity.visualstudio.com/content/problem/post.html?space=21. If relevant to the issue you report, include screenshots.
-
+ 
 :::moniker-end
 
 ## Charts
@@ -105,6 +103,7 @@ for your team. If you already know how to add a chart, jump to the
    for the test plan or test suite that you selected.
 
 <a name="TestResultsExamples"></a>
+
 #### Test results examples
 
 **What's the test status for a specific test suite?**
@@ -194,6 +193,7 @@ create for test cases.
    page for the test plan or test suite that you selected.
 
 <a name="ExamplesTestCase"></a>
+
 #### Test case examples
 
 **How can I track burn down for test case creation?**
@@ -239,15 +239,12 @@ You can [configure the dashboard widget](../report/dashboards/widget-catalog.md)
 to show a range of chart types.
 You must be a team administrator to configure the dashboard widget, but team members with 
 Stakeholder access can view the charts on the dashboard. 
+  
 
-Learn more about
-[dashboards](../report/dashboards/dashboards.md). 
-Or learn more about
-[team administration](../organizations/settings/manage-teams.md).
+## Related articles
+- [Control how long to keep test results](how-long-to-keep-test-results.md)
+- [FAQs for manual testing](reference-qa.md#trackstatus)
+- [Widget catalog](../report/dashboards/widget-catalog.md)
+- [Team administration](../organizations/settings/manage-teams.md) 
 
-## See also
-*  [FAQs for manual testing](reference-qa.md#trackstatus)
 
-##  Next step
-> [!div class="nextstepaction"]
-> [Control how long to keep test results](how-long-to-keep-test-results.md)

@@ -6,8 +6,8 @@ ms.technology: devops-test
 ms.topic: overview
 ms.author: sdanie
 author: steved0x
-ms.date: 09/26/2019
 monikerRange: '>= tfs-2015'
+ms.date: 09/14/2021
 ---
 
 # Exploratory and manual testing scenarios and capabilities
@@ -37,8 +37,6 @@ and gathering feedback from stakeholders.
 
 ![Holistic approach to manual testing, types of manual testing and personas involved](media/manual-testing/schematic-01.png)  
 &nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
-
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="manual-testing"></a>
 
@@ -102,7 +100,7 @@ to use these features. See more at [Add, run, and update inline tests](../boards
 
 ## Manual testing in Test Manager
 
-[!INCLUDE [test-hub-include](includes/test-hub-include.md)] provides
+the **Test Plans** web portal. provides
 a rich test management solution for teams that need advanced manual
 testing capabilities. It includes all the capabilities
 required for the testing lifecycle - including test planning, authoring,
@@ -130,7 +128,7 @@ across test suites. See more at [Create test cases](create-test-cases.md).
 
 ### Testing applications
 
-[!INCLUDE [test-hub-include](includes/test-hub-include.md)] provides
+the **Test Plans** web portal. provides
 test runners to run tests for your web and desktop applications. Mark test steps and test outcomes as pass or fail, and collect
 diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all the captured diagnostic data
 to help your developers reproduce the issues. See more at [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
@@ -204,7 +202,7 @@ Using the extension is a simple, three step process:
   bugs and tasks, and managing feedback requests in one place.
 
 As users perform exploratory testing, you can
-[get insights from the sessions](insights-exploratory-testing.md) in [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)] of 
+[get insights from the sessions](insights-exploratory-testing.md) in **Azure Test Plans**  of 
 Azure DevOps or TFS. View completed exploratory sessions and derive meaningful
 insights across all the sessions. Get end-to-end traceability such as a breakdown 
 of the work items created, the work items explored and not explored, session owners,
@@ -228,7 +226,7 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 
 ## Key benefits
 
-* **Test on any platform**. With [!INCLUDE [test-hub-include](includes/test-hub-include.md)], you can use your browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, web-based interface that can be accessed from all major browsers on any platform.
+* **Test on any platform**. With the **Test Plans** web portal, you can use your browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, web-based interface that can be accessed from all major browsers on any platform.
 
 * **Rich Diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
 
@@ -246,4 +244,4 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 
 > See also [Continuous testing](../pipelines/index.yml), [Unit testing](/visualstudio/test/developer-testing-scenarios).
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]
+

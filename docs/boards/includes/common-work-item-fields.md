@@ -3,13 +3,13 @@ ms.topic: include
 ---
 
 
-## Definitions for common WIT fields  
+## Definitions for common work tracking fields  
 
 <a id="definitions-in-common"></a>
 
 The following fields and tabs appear in most work items. Each tab is used to track specific information, such as :::image type="icon" source="/azure/devops/boards/backlogs/media/icon-history-tab-wi.png" border="false"::: history, :::image type="icon" source="/azure/devops/boards/backlogs/media/icon-links-tab-wi.png" border="false"::: links, or :::image type="icon" source="/azure/devops/boards/backlogs/media/icon-attachments-tab-wi.png" border="false"::: attachments. These three tabs provide a history of changes, view of linked work items, and ability to view and attach files.  
 
-The only required field for all WITs is **Title**. When the work item is saved, the system assigns it a unique **ID**. The form highlights required field in yellow. For information about other fields, see [Work item field index](../work-items/guidance/work-item-field.md).   
+The only required field for all work item types is **Title**. When the work item is saved, the system assigns it a unique **ID**. The form highlights required field in yellow. For information about other fields, see [Work item field index](../work-items/guidance/work-item-field.md).   
 
 <table><thead>
 <tr><th><p>Field/tab</p></th><th><p>Usage</p></th></tr></thead>

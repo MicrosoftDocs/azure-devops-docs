@@ -5,8 +5,8 @@ ms.technology: devops-test
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-ms.date: 09/09/2021
 monikerRange: '>=azure-devops-2020'
+ms.date: 09/14/2021
 ---
 
 
@@ -16,9 +16,11 @@ monikerRange: '>=azure-devops-2020'
 
 Learn how to navigate Test Plans to support your test goals and operations. Use the following sections of the Test Plans page to accomplish the corresponding tasks. 
  
+- **Mine**: View list of test plans that you created or are of interest to you. 
+- **All**: View a list of all test plans defined for the project. 
 - **Test plan header**: Locate, favorite, edit, copy or clone a test plan.
 - **Test suites tree**: Add, manage, export, or order test suites. Leverage this to also assign configurations and perform user acceptance testing.
-- **Define tab**: Collate, add, and manage test cases in a test suite of choice via this tab.
+- **Define tab**: Collate, add, and manage test cases in a test suite of choice via this tab. This tab doesn't appear for users with **Basic** access. 
 - **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
 - **Chart tab**: Track test execution and status via charts, which can also be copied to dashboards.
 
@@ -33,8 +35,33 @@ To learn about specific test artifacts, see the following articles:
 [!INCLUDE [prerequisites](includes/prerequisites.md)] 
 
 > [!NOTE] 
-> Most operations under the **Define** tab are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Most operations under the **Execute** tab can be exercised by users granted a **Basic** access level.
+> Most operations under the **Define** tab are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Most operations under the **Execute** tab can be exercised by users granted a **Basic** access level. 
 
+
+## The "Mine" page
+
+The **Mine** page shows a list of test plans that are of interest to you.
+This includes plans for teams you are a member of, and test plans you have marked as favorites.
+You can expand and hide the plans for each team to make it easier to locate or review specific team plans. Use the shortcut menu to edit or delete the selected plan.
+
+:::image type="content" source="media/navigate/mine-page-more-options-menu.png" alt-text="Mine page, menu options to edit or delete a test plan.":::
+
+Show the filter controls to help you find plans if you have a large number of plans in the list.
+Filter the plans by name, team, state, or iteration. 
+
+:::image type="content" source="media/navigate/filter-options.png" alt-text="Filter a test plans list."::: 
+
+## The "All" page
+
+The **All** page shows a list of all test plans.
+Filter test plans, and edit and delete plans using the shortcut menu, in the same way as in the **Mine** page. Use this page to add any test plan to your favorites list. 
+
+:::image type="content" source="media/navigate/all-page-favorite-test-plan.png" alt-text="The All list of test plans, favorite a test plan."::: 
+
+You can also add a plan to your favorites list while you are viewing it.
+
+:::image type="content" source="media/navigate/test-plan-favorite.png" alt-text="Add a plan to your favorites list."::: 
+ 
 
 <a name="testplanheader"></a>
 
