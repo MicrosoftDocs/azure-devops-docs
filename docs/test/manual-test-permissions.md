@@ -6,8 +6,8 @@ ms.technology: devops-test
 ms.topic: reference
 ms.author: sdanie
 author: steved0x
-ms.date: 06/02/2019
 monikerRange: '>= tfs-2015'
+ms.date: 09/15/2021
 ---
 
 # Manual test access and permissions 
