@@ -24,6 +24,7 @@
 
    To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
+<<<<<<< HEAD
 ::: moniker range="azure-devops"
 
 :::row:::
@@ -249,6 +250,77 @@
 
 
    <a id="image-diff"></a>  
+=======
+---
+:::row:::
+   :::column span="1":::
+      **Users and groups**
+      ::: moniker range="azure-devops"
+      -[Add users to an administrator role](set-project-collection-level-permissions.md)  
+      -[Add users to an organization](../accounts/add-organization-users.md)  
+      -[Add users to a project or a team](add-users-team-project.md)  
+      -[Add a team admin](../settings/add-team-administrator.md)  
+      ::: moniker-end
+      ::: moniker range="< azure-devops"
+      -[Add a server-level administrator](/azure/devops/server/admin/add-administrator)  
+      -[Add users to an administrator role](set-project-collection-level-permissions.md)  
+      -[Add users to a project or team](add-users-team-project.md)  
+      -[Add a team admin](../settings/add-team-administrator.md)  
+      ::: moniker-end
+      ---
+      **Wiki**
+      -[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)  
+   :::column-end:::
+   :::column span="1":::
+      **DevOps**
+      -[Git branch](../../repos/git/branch-permissions.md)  
+      -[Git repositories](../../repos/git/set-git-repository-permissions.md)  
+      -[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)  
+      -[Build and release pipelines](../../pipelines/policies/set-permissions.md)  
+      -[Approvals and approvers](../../pipelines/release/approvals/index.md)  
+      -[Task groups](../../pipelines/policies/set-permissions.md)   
+      -[Variable groups](../../pipelines/policies/set-permissions.md)      
+      -[Role-based resources](../../pipelines/policies/set-permissions.md)  
+      **Wiki**
+   :::column-end:::
+   :::column span="1":::
+      **Work tracking**
+      ::: moniker range=">= tfs-2017"
+      -[Area and iteration paths](set-permissions-access-work-tracking.md)  
+      -[Queries and folders](../../boards/queries/set-query-permissions.md)  
+      -[Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md)  
+      -[Customize process](set-permissions-access-work-tracking.md#process-permissions)  
+      ::: moniker-end
+      ::: moniker range="< tfs-2017"
+      -[Area and iteration paths](set-permissions-access-work-tracking.md)  
+      -[Queries and folders](../../boards/queries/set-query-permissions.md)  
+      -[Customize process](set-permissions-access-work-tracking.md#process-permissions)  
+      ::: moniker-end
+      ---
+      **Reporting**
+      ::: moniker range="azure-devops"
+      -[Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
+      -[Analytics](../../report/powerbi/analytics-security.md)  
+      -[Analytics views](../../report/powerbi/analytics-security.md)  
+      ::: moniker-end
+      ::: moniker range="> tfs-2018 < azure-devops"
+      -[Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
+      -[Analytics](../../report/powerbi/analytics-security.md)  
+      -[Analytics views](../../report/powerbi/analytics-security.md) 
+      -[SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) 
+      ::: moniker-end
+      ::: moniker range="<= tfs-2018"
+      -[Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
+      -[SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) 
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
+---
+    
+
+
+<a id="image-diff"></a>  
+>>>>>>> cab65e224b3127fef0bcf02383ee24dcd8b8237a
 
 >[!NOTE]  
 > The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to Azure DevOps. However, the basic functionality available to you remains the same unless explicitly mentioned. 
@@ -767,12 +839,6 @@
 
    For each project that you create, the system creates the followings project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
 
-> The full name of each of these groups is **[{project name}]\\{group name}**.
-> For example, the contributors group for a project called "My Project" is 
-> **[My Project]\\Contributors**.
-
-
-
 
 ::: moniker range="azure-devops"
 
@@ -801,6 +867,12 @@
 [![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 ::: moniker-end
+
+
+> [!TIP]  
+> The full name of each of these groups is **[{project name}]\\{group name}**. 
+> For example, the contributors group for a project called "My Project" is 
+> **[My Project]\\Contributors**.
 
 :::row:::
    :::column span="1":::
@@ -1459,7 +1531,266 @@
 
 ::: moniker range="<= azure-devops-2019"
 
+<<<<<<< HEAD
    You manage collection-level permissions through the [web portal admin context](../../project/navigation/go-to-service-page.md#collection-admin-context) or the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
+=======
+You manage project-level permissions through the [web portal admin context](set-project-collection-level-permissions.md#project-level) or the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
+
+> [!NOTE]
+> Several permissions are granted to members of the [Project Administrators group](#project-administrator-group) and aren't surfaced within the user interface.  
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+#### [Preview page](#tab/preview-page) 
+
+<table valign="top" width="100%">
+<tbody valign="top">
+    <tr>
+        <th width="30%">Permission</th>
+        <th width="70%">Description</th>
+    </tr>
+    <tr><td><h4>General</hr></td><td> </td> 
+    </tr>
+    <tr>
+        <td id="delete-team-project-permission">Delete team project</td>
+        <td>Can <a href="../projects/delete-project.md">delete a project</a> from an organization or project collection.</td>
+    </tr>
+    <tr>
+        <td id="edit-team-project-level-information-permission">Edit project-level information</td>
+        <td>
+            Can edit [project description](../projects/project-vision-status.md) and [project services visibility](../settings/set-services.md).
+        </td>
+    </tr>
+    <tr>
+        <td id="manage-team-project-property-permission">Manage project properties</td>
+        <td>
+            Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the <a href="/rest/api/azure/devops/core/projects/set%20project%20properties">Set project properties REST API</a>. 
+        </td>
+    </tr>
+    <tr>
+        <td id="rename-team-project-permission">Rename project</td>
+        <td>Can <a href="../projects/rename-project.md" data-raw-source="[change the name of the project](../projects/rename-project.md)">change the name of the project</a>.</td>
+    </tr>
+    <tr>
+        <td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
+        <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work-items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update)">Work Items - update REST API</a>.</p>
+       </td>
+    </tr>
+    <tr>
+        <td id="update-project-visibility">Update project visibility</td>
+        <td>Can <a href="../public/make-project-public.md" data-raw-source="[change the project visibility](../public/make-project-public.md)">change the project visibility</a> from private to public or public to private. Applies to Azure DevOps Services only.</td>
+    </tr>
+    <tr>
+        <td id="view-team-project-level-information-permission">View project-level information</td>
+        <td>Can view project-level information, including security information group membership and permissions.</td>
+    </tr>
+    <tr><td><h4>Boards</hr></td><td> </td> 
+    </tr>
+    <tr>
+        <td id="bypass-rules-permission">Bypass rules on work item updates</td>
+        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../settings/work/rule-reference.md" data-raw-source="[copy, constraint, or conditional rules](../settings/work/rule-reference.md)">copy, constraint, or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work-items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
+        </td>
+    </tr>
+    <tr>
+        <td id="change-process-team-project-permission">Change process of project</td>
+        <td>When combined with the 'Edit project-level information' permission, allows users to change the Inheritance process for a project. To learn more, see <a href="../settings/work/manage-process.md" data-raw-source="[Create and manage inherited processes](../settings/work/manage-process.md)">Create and manage inherited processes</a>.  </td>
+    </tr>
+    <tr>
+        <td id="create-tag-definition-permission">Create tag definition</td>
+        <td><a href="../../boards/queries/add-tags-to-work-items.md" data-raw-source="[Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md)">Can add tags to a work item</a>. By default, all members of the Contributors group have this permission. </p>
+        <blockquote>
+        All users granted Stakeholder access for a private project can only add existing tags, not add new tags, even if the <strong>Create tag definition</strong> permission is set to Allow. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. 
+        <blockquote></td>
+    </tr>
+    <tr>
+        <td id="delete-work-items-in-this-project-permission">
+<p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md)">mark work items in the project as deleted</a>. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
+</td>
+    </tr>
+    <tr>
+        <td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
+        <td><p>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md)">move a work item from one project to another project</a> within the collection.   
+        </td>
+    </tr>
+    <tr>
+        <td id="permanently-delete-work-items-in-this-project-permission">Permanently delete work items in this project</td>
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[permanently delete work items](../../boards/backlogs/remove-delete-work-items.md)">permanently delete work items</a> from this project. </td>
+    </tr>
+    <tr><td><h4>Analytics</hr></td><td> </td> 
+    </tr>
+    <tr>
+        <td id="delete-shared-analytic-views-permission">Delete shared Analytics view</td>
+        <td>Can delete <a href="../../report/powerbi/analytics-views-manage.md" data-raw-source="[Analytics views](../../report/powerbi/analytics-views-manage.md)">Analytics views</a>
+that have been saved under the Shared area.   </td>
+    </tr>
+    <tr>
+        <td id="edit-shared-analytic-views-permission">Edit shared Analytics view</td>
+        <td>Can create and modify <a href="../../report/powerbi/analytics-views-manage.md" data-raw-source="[shared Analytics views](../../report/powerbi/analytics-views-manage.md)">shared Analytics views</a>.   </td>
+    </tr>
+    <tr>
+        <td id="view-analytics-permission">View analytics</td>
+        <td>Can access data available from the <a href="../../report/powerbi/what-is-analytics.md" data-raw-source="[Analytics service](../../report/powerbi/what-is-analytics.md)">Analytics service</a>. For details, see <a href="../../report/powerbi/analytics-security.md" data-raw-source="[Permissions required to access the Analytics service](../../report/powerbi/analytics-security.md)">Permissions required to access the Analytics service</a>.   </td>
+    </tr>
+    <tr><td><h4>Test Plans</hr></td><td> </td> 
+    </tr>
+    <tr>
+        <td id="create-test-runs-permission">Create test runs</td>
+        <td>Can add and remove test results and add or modify test runs. To learn more, see <a href="../../test/how-long-to-keep-test-results.md" data-raw-source="[Control how long to keep test results](../../test/how-long-to-keep-test-results.md)">Control how long to keep test results</a> and <a href="../../test/run-manual-tests.md" data-raw-source="[Run manual tests](../../test/run-manual-tests.md)">Run manual tests</a>. </td>
+    </tr>
+   <tr>
+        <td id="delete-test-runs-permission">Delete test runs</td>
+        <td>Can <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[delete a test run](../../boards/backlogs/delete-test-artifacts.md)">delete a test run</a>. </td>
+    </tr>
+    <tr>
+        <td id="manage-test-configurations-permission">Manage test configurations</td>
+        <td>Can create and delete <a href="../../test/test-different-configurations.md" data-raw-source="[test configurations](../../test/test-different-configurations.md)">test configurations</a>.</td>
+    </tr>
+    <tr>
+        <td id="manage-test-environments-permission">Manage test environments</td>
+        <td>Can create and delete <a href="../../test/test-different-configurations.md" data-raw-source="[test environments](../../test/test-different-configurations.md)">test environments</a>.</td>
+    </tr>
+    <tr>
+        <td id="view-test-runs-permission">View test runs</td>
+        <td>Can view test plans under the project area path.</td>
+    </tr>
+</tbody>
+</table>
+
+
+
+#### [Current page](#tab/current-page) 
+
+
+<table valign="top" width="100%">
+<tbody valign="top">
+    <tr>
+        <th width="30%">Permission</th>
+        <th width="70%">Description</th>
+    </tr>
+    <tr>
+        <td id="bypass-rules-permission">Bypass rules on work item updates</td>
+        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../settings/work/rule-reference.md" data-raw-source="[copy, constraint, or conditional rules](../settings/work/rule-reference.md)">copy, constraint, or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don&#39;t want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work-items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p></td>
+    </tr>
+    <tr>
+        <td id="change-process-team-project-permission">Change process of project</td>
+        <td>When combined with the 'Edit project-level information' permission, allows users to change the Inheritance process for a project. To learn more, see <a href="../settings/work/manage-process.md" data-raw-source="[Create and manage inherited processes](../settings/work/manage-process.md)">Create and manage inherited processes</a>.  </td>
+    </tr>
+    <tr>
+        <td id="create-tag-definition-permission">Create tag definition</td>
+        <td><a href="../../boards/queries/add-tags-to-work-items.md" data-raw-source="[Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md)">Can add tags to a work item</a>. By default, all members of the Contributors group have this permission. </p>
+        <blockquote>
+        All users granted Stakeholder access for a private project can only add existing tags, not add new tags, even if the <strong>Create tag definition</strong> permission is set to Allow. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default. 
+        <blockquote></td>
+    </tr>
+    <tr>
+        <td id="create-test-runs-permission">Create test runs</td>
+        <td>Can add and remove test results and add or modify test runs. To learn more, see <a href="../../test/how-long-to-keep-test-results.md" data-raw-source="[Control how long to keep test results](../../test/how-long-to-keep-test-results.md)">Control how long to keep test results</a> and <a href="../../test/run-manual-tests.md" data-raw-source="[Run manual tests](../../test/run-manual-tests.md)">Run manual tests</a>. </td>
+    </tr>
+    <tr>
+        <td id="delete-work-items-in-this-project-permission">
+<p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md)">mark work items in the project as deleted</a>. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
+<ul>
+<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to <strong>Allow</strong> by default.</li> 
+<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to <strong>Not set</strong> by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
+</td>
+    </tr>
+    <tr>
+        <td id="delete-shared-analytic-views-permission">Delete shared Analytics view</td>
+        <td>Can delete <a href="../../report/powerbi/analytics-views-manage.md" data-raw-source="[Analytics views](../../report/powerbi/analytics-views-manage.md)">Analytics views</a>
+that have been saved under the Shared area.   </td>
+    </tr>
+    <tr>
+        <td id="delete-team-project-permission">Delete project</td>
+        <td>Can <a href="../projects/delete-project.md" data-raw-source="[delete a project](../projects/delete-project.md)">delete a project</a> from an organization or project collection.</td>
+    </tr>
+    <tr>
+        <td id="delete-test-runs-permission">Delete test runs</td>
+        <td>Can delete a test run.</td>
+    </tr>
+    <tr>
+        <td id="edit-team-project-level-information-permission">Edit project-level information</td>
+        <td>
+            Can edit project level permissions for users and groups.
+            <blockquote>
+                <p>
+                    <strong>Edit project-level information</strong> includes the ability
+                    to perform these tasks for the project:
+                </p>
+                <ul>
+                    <li>Create and modify areas and iterations</li>
+                    <li>Edit check-in policies</li>
+                    <li>Edit shared work item queries</li>
+                    <li>Edit project level permission ACLs</li>
+                    <li>Manage process templates</li>
+                    <li>Customize a project</li>
+                    <li>Create and modify global lists</li>
+                    <li>Edit <a href="#alerts" data-raw-source="[event subscriptions](#alerts)">event subscriptions</a> (email or SOAP) on project level events.</li>
+                    <li>When combined with the 'Change process of project' permission, allows users to change the Inheritance process for a project.</li>
+                </ul>
+            </blockquote>
+        </td>
+    </tr>
+    <tr>
+        <td id="edit-shared-analytic-views-permission">Edit shared Analytics view</td>
+        <td>Can create and modify <a href="../../report/powerbi/analytics-views-manage.md" data-raw-source="[shared Analytics views](../../report/powerbi/analytics-views-manage.md)">shared Analytics views</a>.  </td>
+    </tr>
+    <tr>
+        <td id="manage-team-project-property-permission">Manage project properties</td>
+        <td>
+            Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the <a href="/rest/api/azure/devops/core/projects/set%20project%20properties" data-raw-source="[Set project properties REST API](/rest/api/azure/devops/core/projects/set%20project%20properties)">Set project properties REST API</a>. 
+        </td>
+    </tr>
+    <tr>
+        <td id="manage-test-configurations-permission">Manage test configurations</td>
+        <td>Can create and delete <a href="../../test/test-different-configurations.md" data-raw-source="[test configurations](../../test/test-different-configurations.md)">test configurations</a>.</td>
+    </tr>
+    <tr>
+        <td id="manage-test-environments-permission">Manage test environments</td>
+        <td>Can create and delete <a href="../../test/test-different-configurations.md" data-raw-source="[test environments](../../test/test-different-configurations.md)">test environments</a>.</td>
+    </tr>
+    <tr>
+        <td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md)">move a work item from one project to another project</a> within the collection. 
+        </td>
+    </tr>
+    <tr>
+        <td id="permanently-delete-work-items-in-this-project-permission">Permanently delete work items in this project</td>
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[permanently delete work items](../../boards/backlogs/remove-delete-work-items.md)">permanently delete work items</a> from this project. </td>
+    </tr>
+    <tr>
+        <td id="rename-team-project-permission">Rename project</td>
+        <td>Can <a href="../projects/rename-project.md" data-raw-source="[change the name of the project](../projects/rename-project.md)">change the name of the project</a>.</td>
+    </tr>
+    <tr>
+        <td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
+        <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work-items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update)">Work Items - update REST API</a>.</p>
+        </td>
+    </tr>
+    <tr>
+        <td id="update-project-visibility">Update project visibility</td>
+        <td>Can <a href="../public/make-project-public.md" data-raw-source="[change the project visibility](../public/make-project-public.md)">change the project visibility</a> from private to public or public to private. Applies to Azure DevOps Services only.</td>
+    </tr>
+    <tr>
+        <td id="view-analytics-permission">View analytics</td>
+        <td>Can access data available from the <a href="../../report/powerbi/what-is-analytics.md" data-raw-source="[Analytics service](../../report/powerbi/what-is-analytics.md)">Analytics service</a>. For details, see <a href="../../report/powerbi/analytics-security.md" data-raw-source="[Permissions required to access the Analytics service](../../report/powerbi/analytics-security.md)">Permissions required to access the Analytics service</a>.  </td>
+    </tr>
+    <tr>
+        <td id="view-team-project-level-information-permission">View project-level information</td>
+        <td>Can view project level group membership and permissions.</td>
+    </tr>
+    <tr>
+        <td id="view-test-runs-permission">View test runs</td>
+        <td>Can <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[delete a test run](../../boards/backlogs/delete-test-artifacts.md)">delete a test run</a>. </td>
+    </tr>
+</tbody>
+</table>
+
+* * *
+>>>>>>> cab65e224b3127fef0bcf02383ee24dcd8b8237a
 
 ::: moniker-end
 
