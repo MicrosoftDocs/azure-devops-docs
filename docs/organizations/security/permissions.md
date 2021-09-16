@@ -1116,7 +1116,8 @@
 :::row-end:::
 :::row:::
    :::column span="1":::
-   <a id="audit-streams-permissions"></a> #### Auditing
+   <a id="audit-streams-permissions"></a> 
+   #### Auditing
    :::column-end:::
    :::column span="2":::
     
@@ -1739,7 +1740,7 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -1747,7 +1748,7 @@
    :::column span="1":::
    <a id="bypass-rules-permission"></a> Bypass rules on work item updates
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Users with this permission can save a work item that ignores rules, such as [copy, constraint, or conditional rules](../settings/work/rule-reference.md), defined for the work item type. Scenarios where this is useful are migrations where you don&#39;t want to update the by/date fields on import, or when you want to skip the validation of a work item.  
    
    Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).
@@ -1757,7 +1758,7 @@
    :::column span="1":::
    <a id="change-process-team-project-permission"></a> Change process of project
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    When combined with the 'Edit project-level information' permission, allows users to change the Inheritance process for a project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md).  
    :::column-end:::
 :::row-end:::
@@ -1765,7 +1766,7 @@
    :::column span="1":::
    <a id="create-tag-definition-permission"></a> Create tag definition
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    [Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md). By default, all members of the Contributors group have this permission.  
 
    > All users granted Stakeholder access for a private project can only add existing tags, not add new tags, even if the **Create tag definition** permission is set to Allow. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.  
@@ -1775,7 +1776,7 @@
    :::column span="1":::
    <a id="create-test-runs-permission"></a> Create test runs
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can add and remove test results and add or modify test runs. To learn more, see [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) and [Run manual tests](../../test/run-manual-tests.md). 
    :::column-end:::
 :::row-end:::
@@ -1786,7 +1787,7 @@
    
    or Delete work items in this project
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md). Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
    
    - For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default. 
@@ -1797,7 +1798,7 @@
    :::column span="1":::
    <a id="delete-shared-analytic-views-permission"></a> Delete shared Analytics view
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can delete [Analytics views](../../report/powerbi/analytics-views-manage.md)
    that have been saved under the Shared area.   
    :::column-end:::
@@ -1806,7 +1807,7 @@
    :::column span="1":::
    <a id="delete-team-project-permission"></a> Delete project
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [delete a project](../projects/delete-project.md) from an organization or project collection.
    :::column-end:::
 :::row-end:::
@@ -1814,7 +1815,7 @@
    :::column span="1":::
    <a id="delete-test-runs-permission"></a> Delete test runs
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can delete a test run.
    :::column-end:::
 :::row-end:::
@@ -1822,7 +1823,7 @@
    :::column span="1":::
    <a id="edit-team-project-level-information-permission"></a> Edit project-level information
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can edit project level permissions for users and groups.
    
@@ -1843,7 +1844,7 @@
    :::column span="1":::
    <a id="edit-shared-analytic-views-permission"></a> Edit shared Analytics view
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can create and modify [shared Analytics views](../../report/powerbi/analytics-views-manage.md).  
    :::column-end:::
 :::row-end:::
@@ -1851,7 +1852,7 @@
    :::column span="1":::
    <a id="manage-team-project-property-permission"></a> Manage project properties
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](/rest/api/azure/devops/core/projects/set%20project%20properties). 
 
@@ -1861,7 +1862,7 @@
    :::column span="1":::
    <a id="manage-test-configurations-permission"></a> Manage test configurations
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can create and delete [test configurations](../../test/test-different-configurations.md).
    :::column-end:::
 :::row-end:::
@@ -1869,7 +1870,7 @@
    :::column span="1":::
    <a id="manage-test-environments-permission"></a> Manage test environments
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can create and delete [test environments](../../test/test-different-configurations.md).
    :::column-end:::
 :::row-end:::
@@ -1877,7 +1878,7 @@
    :::column span="1":::
    <a id="move-work-items-out-of-this-project-permission"></a> Move work items out of this project
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md) within the collection. 
 
    :::column-end:::
@@ -1886,7 +1887,7 @@
    :::column span="1":::
    <a id="permanently-delete-work-items-in-this-project-permission"></a> Permanently delete work items in this project
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [permanently delete work items](../../boards/backlogs/remove-delete-work-items.md) from this project. 
    :::column-end:::
 :::row-end:::
@@ -1894,7 +1895,7 @@
    :::column span="1":::
    <a id="rename-team-project-permission"></a> Rename project
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [change the name of the project](../projects/rename-project.md).
    :::column-end:::
 :::row-end:::
@@ -1902,7 +1903,7 @@
    :::column span="1":::
    <a id="suppress-notifications-for-work-item-updates-permission"></a> Suppress notifications for work item updates
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.  
    
    Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update).
@@ -1912,7 +1913,7 @@
    :::column span="1":::
    <a id="update-project-visibility"></a> Update project visibility
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [change the project visibility](../public/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
    :::column-end:::
 :::row-end:::
@@ -1920,7 +1921,7 @@
    :::column span="1":::
    <a id="view-analytics-permission"></a> View analytics
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can access data available from the [Analytics service](../../report/powerbi/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/powerbi/analytics-security.md).  
    :::column-end:::
 :::row-end:::
@@ -1928,7 +1929,7 @@
    :::column span="1":::
    <a id="view-team-project-level-information-permission"></a> View project-level information
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can view project level group membership and permissions.
    :::column-end:::
 :::row-end:::
@@ -1936,7 +1937,7 @@
    :::column span="1":::
    <a id="view-test-runs-permission"></a> View test runs
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [delete a test run](../../boards/backlogs/delete-test-artifacts.md). 
    :::column-end:::
 :::row-end:::
@@ -2221,7 +2222,7 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -2229,7 +2230,7 @@
    :::column span="1":::
    <a id="av-delete-permission"></a> Delete shared Analytics views
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can delete the shared Analytics view.
 
@@ -2239,7 +2240,7 @@
    :::column span="1":::
    <a id="av-edit-permission"></a> Edit shared Analytics views
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can change the parameters of the shared Analytics view.
 
@@ -2249,7 +2250,7 @@
    :::column span="1":::
    <a id="av-view-permission"></a> View shared Analytics views
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can view and use the shared Analytics view from Power BI desktop. 
 
@@ -3660,15 +3661,15 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
-   Description
+   :::column span="2":::
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    Delete Environment and Virtual Machines
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can delete environments and templates. The permission is checked for the object that is being deleted.
 
    :::column-end:::
@@ -3677,7 +3678,7 @@
    :::column span="1":::
    Delete Environment and Virtual Machines
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can delete environments and templates. The permission is checked for the object that is being deleted.
 
    :::column-end:::
@@ -3686,7 +3687,7 @@
    :::column span="1":::
    Delete Lab Locations
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can delete the locations for Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To delete a location, you must have the **Delete Lab Location** permission for that location.
 
    :::column-end:::
@@ -3695,7 +3696,7 @@
    :::column span="1":::
    Edit Environment and Virtual Machines
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can edit environments and templates. The permission is checked for the object that is being edited.
 
    :::column-end:::
@@ -3704,7 +3705,7 @@
    :::column span="1":::
    Environment Operations
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can start, stop, pause, and manage snapshots, in addition to performing other operations on an environment.
 
    :::column-end:::
@@ -3713,7 +3714,7 @@
    :::column span="1":::
    Import Virtual Machine
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can import a virtual machine from a VMM library share. This permission differs from Write because it only creates an object in Lab Management and does not write anything to the Virtual Machine Manager host group or library share. 
 
    :::column-end:::
@@ -3722,7 +3723,7 @@
    :::column span="1":::
    Manage Child Permissions
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can change the permissions of all the child Lab Management objects. For example, if a user has **Manage Child Permission** for a project host group, the user can change permissions for all the environments under that project host group. 
 
@@ -3732,7 +3733,7 @@
    :::column span="1":::
    Manage Lab Locations
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
  Can edit the locations of Lab Management resources, which include collection host groups, collection library shares, project host groups, and project library shares. To edit a specific location, you must have the **Manage Lab Location** permission for that location. This permission for collection level locations (collection host groups and collection library shares) also allows you to create project level locations (project host group and project library share).
 
@@ -3742,7 +3743,7 @@
    :::column span="1":::
    Manage Permissions
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can modify the permissions for a Lab Management object. This permission is checked for the object whose permissions are being modified.
 
    :::column-end:::
@@ -3751,7 +3752,7 @@
    :::column span="1":::
    Manage Snapshots
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can perform all snapshot management tasks for an environment, which include taking a snapshot, reverting to a snapshot, renaming a snapshot, deleting a snapshot, and reading a snapshot.
 
    :::column-end:::
@@ -3760,7 +3761,7 @@
    :::column span="1":::
    Pause Environment
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can pause an environment.
    :::column-end:::
 :::row-end:::
@@ -3768,7 +3769,7 @@
    :::column span="1":::
    Start
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can start an environment.
    :::column-end:::
 :::row-end:::
@@ -3776,7 +3777,7 @@
    :::column span="1":::
    Stop
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can stop an environment.
    :::column-end:::
 :::row-end:::
@@ -3784,12 +3785,15 @@
    :::column span="1":::
    View Lab Resources
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can view information for the various Lab Management resources, which include collection host groups, project host groups, and environment. To view information about a specific lab resource, you must have the **View Lab Resources** permission for that resource.
+   :::column-end:::
+   :::row-end:::
+:::row:::
    :::column span="1":::
    Write Environment and Virtual Machines
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can create environments for a project host group. Users who have this permission for a project library share can store environments and templates.
 
    :::column-end:::
