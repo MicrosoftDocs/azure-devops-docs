@@ -845,12 +845,12 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="3":::
    #### General
    :::column-end:::
 
@@ -859,7 +859,7 @@
    :::column span="1":::
    <a id="alter-trace-settings"></a> Alter trace settings
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can [change the trace settings](/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps Web services.
 
@@ -869,7 +869,7 @@
    :::column span="1":::
    <a id="create-new-team-projects"></a> Create new projects (formerly Create new team projects)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can [add a project](../projects/create-project.md) to an organization or project collection. Additional permissions may be required depending on your on-premises deployment. 
 
@@ -879,7 +879,7 @@
    :::column span="1":::
    <a id="delete-team-project"></a> Delete team project
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can [delete a project](../projects/delete-project.md).
 
@@ -890,7 +890,7 @@
    :::column span="1":::
    <a id="edit-collection-level-information"></a> Edit instance-level information
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can add users and groups, and edit organization-level permissions for users and groups.
    > Edit instance-level information includes the ability to perform these tasks for all projects defined in a collection:
@@ -910,7 +910,7 @@
    <a id="view-collection-level-information"></a> View instance-level information  
    or View collection-level information
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can view project collection-level group membership and permissions.
    
    > If you set the **View instance-level information** permission to **Deny** or **Not set** for this group, no users will be able to access projects in the organization or project collection.
@@ -920,7 +920,7 @@
    :::column span="1":::
    #### Service Account
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    &nbsp;&nbsp; 
    :::column-end::: 
 :::row-end:::
@@ -928,7 +928,7 @@
    :::column span="1":::
    <a id="make-requests-on-behalf-of-others"></a> Make requests on behalf of others
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can perform operations on behalf of other users or services.
    Assign this permission only to on-premises [service accounts](/azure/devops/server/admin/service-accounts-dependencies).
@@ -939,7 +939,7 @@
    :::column span="1":::
    <a id="trigger-events"></a> Trigger events
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can trigger project alert events within the collection. Assign only to service accounts.
    
@@ -950,7 +950,7 @@
    :::column span="1":::
    <a id="view-system-synchronization-information"></a> View system synchronization information
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can call the synchronization application programming interfaces. Assign only to service accounts.
    :::column-end:::
 :::row-end:::
@@ -958,7 +958,7 @@
    :::column span="1":::
    #### Boards
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
     &nbsp;
    :::column-end::: 
 :::row-end:::
@@ -966,21 +966,19 @@
    :::column span="1":::
    <a id="administer-process-permissions"></a> Administer process permissions
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can modify permissions for customizing work tracking by creating and customizing [inherited processes](../settings/work/inheritance-process-model.md). 
    
    - [Customize a project](../settings/work/customize-process.md)
    - [Add and manage processes](../settings/work/manage-process.md)
-   
-
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    <a id="create-process"></a> Create process
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can [create an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. Users  granted Basic and Stakeholder access are granted this permission by default. 
 
@@ -990,7 +988,7 @@
    :::column span="1":::
    <a id="delete-field"></a> Delete field from organization
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can [delete a custom field that was added to a process](../settings/work/customize-process-field.md).
 
@@ -1000,7 +998,7 @@
    :::column span="1":::
    <a id="delete-process"></a> Delete process
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can [delete an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. 
 
@@ -1010,7 +1008,7 @@
    :::column span="1":::
    <a id="edit-process"></a> Edit process
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can edit a [custom inherited process](../settings/work/customize-process.md).
 
@@ -1020,7 +1018,7 @@
    :::column span="1":::
    #### Repos
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
     &nbsp;&nbsp;
    :::column-end::: 
 :::row-end:::
@@ -1028,7 +1026,7 @@
    :::column span="1":::
    <a id="administer-shelved-changes"></a> Administer shelved changes
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can delete [shelvesets created by other users](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md). Applies when TFVC is used as the source control. 
 
@@ -1038,7 +1036,7 @@
    :::column span="1":::
    <a id="administer-workspaces"></a> Administer workspaces
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [create and delete workspaces for other users](../../repos/tfvc/create-work-workspaces.md). Applies when TFVC is used as the source control. 
    :::column-end:::
 :::row-end:::
@@ -1046,7 +1044,7 @@
    :::column span="1":::
    <a id="create-a-workspace"></a> Create a workspace
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can create a version control workspace. Applies when TFVC is used as the source control. 
    
@@ -1057,7 +1055,7 @@
    :::column span="1":::
    #### Pipelines
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
     &nbsp;&nbsp;
    :::column-end::: 
 :::row-end:::
@@ -1065,7 +1063,7 @@
    :::column span="1":::
    <a id="administer-build-resource-permissions"></a> Administer build resource permissions
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can modify permissions for build pipelines at the organization or project collection-level. This includes: 
    
    - [Set retention policies](../../pipelines/policies/retention.md)
@@ -1080,7 +1078,7 @@
    :::column span="1":::
    <a id="manage-build-resources"></a> Manage build resources
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can manage build computers, build agents, and build controllers.
    :::column-end:::
 :::row-end:::
@@ -1088,7 +1086,7 @@
    :::column span="1":::
    <a id="use-build-resources"></a> Use build resources
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can reserve and allocate build agents. Assign only to service accounts for build services.
    :::column-end:::
 :::row-end:::
@@ -1096,7 +1094,7 @@
    :::column span="1":::
    <a id="view-build-resources"></a> View build resources
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can view, but not use, build controllers and build agents that are configured for an organization or project collection.
    :::column-end:::
 :::row-end:::
@@ -1104,7 +1102,7 @@
    :::column span="1":::
    #### Test Plans
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
     
    :::column-end::: 
 :::row-end:::
@@ -1112,7 +1110,7 @@
    :::column span="1":::
    <a id="manage-test-controllers"></a> Manage test controllers
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can register and de-register test controllers.
    :::column-end:::
 :::row-end:::
@@ -1120,7 +1118,7 @@
    :::column span="1":::
    <a id="audit-streams-permissions"></a> #### Auditing
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
     
    :::column-end::: 
 :::row-end:::
@@ -1128,7 +1126,7 @@
    :::column span="1":::
    <a id="delete-audit-streams-permission"></a> Delete audit streams
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can delete an audit stream. Audit streams are in preview. For details, see [Create audit streaming](../audit/auditing-streaming.md). 
    :::column-end:::
 :::row-end:::
@@ -1136,7 +1134,7 @@
    :::column span="1":::
    <a id="manage-audit-streams-permission"></a> Manage audit streams
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can add an audit stream. Audit streams are in preview. For details, see [Create audit streaming](../audit/auditing-streaming.md).
    :::column-end:::
 :::row-end:::
@@ -1144,7 +1142,7 @@
    :::column span="1":::
    <a id="view-audit-log-permission"></a> View audit log
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can view and export audit logs. Audit logs are in preview. For details, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md). 
    :::column-end:::
 :::row-end:::
@@ -1152,7 +1150,7 @@
    :::column span="1":::
    #### Policies
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
     
    :::column-end::: 
 :::row-end:::
@@ -1160,7 +1158,7 @@
    :::column span="1":::
    <a id="manage-enterprise-policies-permission"></a> Manage enterprise policies
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can enable and disable application connection policies as described in [Change application connection policies](../accounts/change-application-access-policies.md).
    :::column-end:::
 :::row-end:::
