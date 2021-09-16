@@ -2365,7 +2365,7 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -2373,7 +2373,7 @@
    :::column span="1":::
    <a id="administer-build-permissions-permission"></a> Administer build permissions
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can administer the build permissions for other users.
    :::column-end:::
 :::row-end:::
@@ -2381,7 +2381,7 @@
    :::column span="1":::
    <a id="delete-build-definition-permission"></a> Delete build definition
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can delete build definitions for this project.
    :::column-end:::
 :::row-end:::
@@ -2389,7 +2389,7 @@
    :::column span="1":::
    <a id="delete-builds-permission"></a> Delete builds
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can delete a completed build. Builds that are deleted are [retained](../../pipelines/policies/retention.md) in the **Deleted** tab for a period of time before they are destroyed.
    :::column-end:::
 :::row-end:::
@@ -2397,7 +2397,7 @@
    :::column span="1":::
    <a id="destroy-builds-permission"></a> Destroy builds
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can permanently delete a completed build.
    :::column-end:::
 :::row-end:::
@@ -2405,7 +2405,7 @@
    :::column span="1":::
    <a id="edit-build-pipeline-permission"></a> Edit build pipeline
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. 
    :::column-end:::
 :::row-end:::
@@ -2414,7 +2414,7 @@
    <a id="edit-build-pipeline-permission"></a>
    <a id="edit-build-definition-permission"></a> Edit build pipeline</br>Edit build definition
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    **Edit build pipeline** Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. Replaces Edit build definition.  
    **Edit build definition** Can create and modify build definitions for this project.
@@ -2431,7 +2431,7 @@
    :::column span="1":::
    <a id="edit-build-quality-permission"></a> Edit build quality
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can add information about the quality of the build through Team Explorer or the web portal.
    :::column-end:::
 :::row-end:::
@@ -2439,7 +2439,7 @@
    :::column span="1":::
    <a id="manage-build-qualities-permission"></a> Manage build qualities
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can add or remove build qualities. *Only applies to XAML builds*.
    :::column-end:::
 :::row-end:::
@@ -2447,7 +2447,7 @@
    :::column span="1":::
    <a id="manage-build-queue-permission"></a> Manage build queue
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can cancel, reprioritize, or postpone queued builds. *Only applies to XAML builds*.
    :::column-end:::
 :::row-end:::
@@ -2455,7 +2455,7 @@
    :::column span="1":::
    <a id="override-check-in-validation-by-build-permission"></a> Override check-in validation by build
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can commit a TFVC change set that affects a gated build definition
    without triggering the system to shelve and build their changes first.
@@ -2467,7 +2467,7 @@
    :::column span="1":::
    <a id="queue-builds-permission"></a> Queue builds
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can put a build in the queue through the interface for Team Foundation Build or at a command prompt.
    They can also stop the builds that they have queued.
@@ -2478,7 +2478,7 @@
    :::column span="1":::
    <a id="retain-indefinitely-permission"></a> Retain indefinitely
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can toggle the retain indefinitely flag on a build. This feature marks a build so that the system won&#39;t automatically delete it based on any applicable retention policy.
    :::column-end:::
 :::row-end:::
@@ -2486,7 +2486,7 @@
    :::column span="1":::
    <a id="stop-builds-permission"></a> Stop builds
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can stop any build that is in progress, including builds queued and started by another user.
    :::column-end:::
 :::row-end:::
@@ -2494,7 +2494,7 @@
    :::column span="1":::
    <a id="update-build-information-permission"></a> Update build information
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can add build information nodes to the system, and can also add information about the quality of a build.
    Assign only to service accounts.
@@ -2505,7 +2505,7 @@
    :::column span="1":::
    <a id="view-build-definition-permission"></a> View build definition
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can view the build definitions that have been created for the project.
    :::column-end:::
 :::row-end:::
@@ -2513,7 +2513,7 @@
    :::column span="1":::
    <a id="view-builds-permission"></a> View builds
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can view the queued and completed builds for this project.
    :::column-end:::
 :::row-end:::
@@ -2578,7 +2578,7 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -2586,7 +2586,7 @@
    :::column span="1":::
    <a id="git-bypass-policies-when-completing-pull-requests"></a> Bypass policies when completing pull requests
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can opt in to override branch policies by checking **Override branch policies and enable merge** when completing a PR.
    
@@ -2598,7 +2598,7 @@
    :::column span="1":::
    <a id="git-bypass-policies-when-pushing"></a> Bypass policies when pushing
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can push to a branch that has branch policies enabled. When a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.
    
@@ -2610,7 +2610,7 @@
    :::column span="1":::
    <a id="git-contribute-permission"></a> Contribute
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    At the repository level, can push their changes to existing branches in the repository and can complete pull requests. Users who lack this permission but who have the **Create branch** permission may push changes to new branches. Does not override restrictions in place from [branch policies](../../repos/git/branch-policies.md).  
    
@@ -2621,7 +2621,7 @@
    :::column span="1":::
    <a id="git-contribute-to-pull-requests-permission"></a> Contribute to pull requests
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can create, comment on, and vote on pull requests.
    :::column-end:::
 :::row-end:::
@@ -2629,7 +2629,7 @@
    :::column span="1":::
    <a id="git-create-branch-permission"></a> Create branch
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can create and publish branches in the repository. 
    Lack of this permission does not limit users from creating branches in their local repository; it merely prevents them from publishing local branches to the server.  
@@ -2641,7 +2641,7 @@
    :::column span="1":::
    <a id="git-create-repository-permission"></a> Create repository
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can create new repositories. This permission is only available from the Security dialog for the top-level **Git repositories** object. 
 
@@ -2651,7 +2651,7 @@
    :::column span="1":::
    <a id="git-create-tag-permission"></a> Create tag
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can push tags to the repository.
 
@@ -2661,7 +2661,7 @@
    :::column span="1":::
    <a id="git-delete-repository-permission"></a> Delete repository
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can delete the repository. At the top-level **Git repositories** level, can delete any repository.
 
@@ -2671,7 +2671,7 @@
    :::column span="1":::
    <a id="git-edit-policies-permission"></a> Edit policies
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can edit policies for the repository and its branches.
 
@@ -2681,7 +2681,7 @@
    :::column span="1":::
    <a id="git-exempt-from-policy-permission"></a> Exempt From policy enforcement
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can bypass branch policies and perform the following two actions:  
    
@@ -2696,7 +2696,7 @@
    :::column span="1":::
    <a id="git-force-push-permission"></a> Force push (rewrite history, delete branches and tags)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can force an update to a branch, delete a branch, and modify the commit history of a branch. Can delete tags and notes.
 
@@ -2706,7 +2706,7 @@
    :::column span="1":::
    <a id="git-note-management-permission"></a> Manage notes
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can push and edit Git notes.
    :::column-end:::
 :::row-end:::
@@ -2714,7 +2714,7 @@
    :::column span="1":::
    <a id="git-create-repository-permission"></a> Manage permissions
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can set permissions for the repository.
    :::column-end:::
 :::row-end:::
@@ -2722,7 +2722,7 @@
    :::column span="1":::
    <a id="git-read-permission"></a> Read
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can clone, fetch, pull, and explore the contents of the repository.
 
@@ -2732,7 +2732,7 @@
    :::column span="1":::
    <a id="git-remove-others-locks-permission"></a> Remove others&#39; locks
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can remove [branch locks](../../repos/git/lock-branches.md) set by other users. Locking a branch blocks any new commits from being added to the branch by others and prevents other users from changing the existing commit history. 
 
@@ -2742,7 +2742,7 @@
    :::column span="1":::
    <a id="git-rename-repository-permission"></a> Rename repository
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can change the name of the repository. When set at the top-level **Git repositories** entry, can change the name of any repository.
 
@@ -2774,7 +2774,7 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -2784,7 +2784,7 @@
    Administer labels
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can edit or delete labels created by another user.
 
@@ -2794,7 +2794,7 @@
    :::column span="1":::
    Check in
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can check in items and revise any committed change set comments.
    Pending changes are committed at check-in.
@@ -2806,7 +2806,7 @@
    :::column span="1":::   
    Check in other users&#39; changes
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can check in changes that were made by other users.
    Pending changes are committed at check-in. 
@@ -2820,7 +2820,7 @@
    Pend a change in a server workspace (TFS 2017 and higher)
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can check out and make a pending change to items in a folder.
    Examples of pending changes include adding, editing, renaming, deleting,
@@ -2836,7 +2836,7 @@
    :::column span="1":::   
    Label 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Can label items. 
    :::column-end:::
 :::row-end:::
@@ -2844,7 +2844,7 @@
    :::column span="1":::   
    <a id="lock-permission"></a>Lock
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can lock and unlock folders or files. A folder or file tracked can be locked or unlocked to deny or restore a user&#39;s privileges. Privileges include checking out an item for edit into a different workspace or checking in Pending Changes to an item from a different workspace. For more information, see [Lock command](../../repos/tfvc/lock-command.md).
 
@@ -2856,7 +2856,7 @@
    Manage branch 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can convert any folder under that path into a branch,
    and also take the following actions on a branch:
@@ -2874,7 +2874,7 @@
    Manage permissions
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can manage other users&#39; permissions for folders and files in version control. 
 
@@ -2887,7 +2887,7 @@
    Merge
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can merge changes into this path. 
    
@@ -2900,7 +2900,7 @@
    Read 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can read the contents of a file or folder.
    If a user has Read permissions for a folder,
@@ -2915,7 +2915,7 @@
    Revise other users&#39; changes
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can edit the comments on checked-in files, even if another user checked in the file. 
    
@@ -2928,7 +2928,7 @@
    Undo other users&#39; changes Merge
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can undo a pending change made by another user. 
 
@@ -2941,7 +2941,7 @@
    Unlock other users&#39; changes
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can unlock files locked by other users.
 
@@ -2977,7 +2977,7 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -2985,7 +2985,7 @@
    :::column span="1":::
    <a id="area-create-child-nodes-permission"></a> Create child nodes
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can create area nodes.
    Users who have both this permission and the **Edit this node** permission
@@ -2998,7 +2998,7 @@
    :::column span="1":::
    <a id="area-delete-this-node-permission"></a> Delete this node
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Users who have both this permission and the **Edit this node** permission for another node
    can delete area nodes and reclassify existing work items from the deleted node. 
@@ -3011,7 +3011,7 @@
    :::column span="1":::
    <a id="area-edit-this-node-permission"></a> Edit this node
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can set permissions for this node and rename area nodes. 
 
@@ -3022,7 +3022,7 @@
    :::column span="1":::
    <a id="area-edit-work-items-in-this-node-permission"></a> Edit work items in this node
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can edit work items in this area node.
 
@@ -3033,7 +3033,7 @@
    :::column span="1":::
    <a id="area-manage-test-plans-permission"></a> Manage test plans
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can modify test plan properties such as build and test settings.
 
@@ -3044,7 +3044,7 @@
    :::column span="1":::
    <a id="area-manage-test-suites-permission"></a> Manage test suites
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can create and delete test suites,
    add, and remove test cases from test suites,
@@ -3058,7 +3058,7 @@
    :::column span="1":::
    <a id="area-view-permissions-for-this-node-permission"></a> View permissions for this node
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can view the security settings for this node.
    :::column-end:::
 :::row-end:::
@@ -3066,7 +3066,7 @@
    :::column span="1":::
    <a id="area-view-work-items-in-this-node-permission"></a> View work items in this node
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can view, but not change, work items in this area node.
    
@@ -3091,7 +3091,7 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -3099,7 +3099,7 @@
    :::column span="1":::
    <a id="iteration-create-child-nodes-permission"></a> Create child nodes
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can create iteration nodes.
    Users who have both this permission and the **Edit this node** permission
@@ -3112,7 +3112,7 @@
    :::column span="1":::
    <a id="iteration-delete-this-node-permission"></a> Delete this node
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Users who have both this permission and the **Edit this node** permission for another node
    can delete iteration nodes and reclassify existing work items from the deleted node.
@@ -3125,7 +3125,7 @@
    :::column span="1":::
    <a id="iteration-edit-this-node-permission"></a> Edit this node
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can set permissions for this node and rename iteration nodes.
    
@@ -3136,7 +3136,7 @@
    :::column span="1":::
    <a id="iteration-view-permissions-for-this-node-permission"></a> View permissions for this node
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can view the security settings for this node.
    
@@ -3163,7 +3163,7 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -3171,7 +3171,7 @@
    :::column span="1":::
    <a id="workitemqueryfolders-contribute-permission"></a> Contribute
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can view and modify this query or query folder.
    :::column-end:::
 :::row-end:::
@@ -3179,7 +3179,7 @@
    :::column span="1":::
    <a id="workitemqueryfolders-delete-permission"></a> Delete
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can delete a query or query folder and its contents.
    :::column-end:::
 :::row-end:::
@@ -3187,7 +3187,7 @@
    :::column span="1":::
    <a id="workitemqueryfolders-manage-permissions-permission"></a> Manage permissions
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can manage the permissions for this query or query folder.
    :::column-end:::
 :::row-end:::
@@ -3195,7 +3195,7 @@
    :::column span="1":::
    <a id="workitemqueryfolders-read-permission"></a> Read
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can view and use the query or the queries in a folder,
    but cannot modify the query or query folder contents.
@@ -3228,7 +3228,7 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -3236,7 +3236,7 @@
    :::column span="1":::
    <a id="delete-plan-permission"></a> Delete
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can delete the selected plan.
    :::column-end:::
 :::row-end:::
@@ -3244,7 +3244,7 @@
    :::column span="1":::
    <a id="edit-plan-permission"></a> Edit
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can edit the configuration and settings defined for the selected plan.
    :::column-end:::
 :::row-end:::
@@ -3252,7 +3252,7 @@
    :::column span="1":::
    <a id="manage-plan-permission"></a> Manage
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can manage the permissions for the selected plan.
    :::column-end:::
 :::row-end:::
@@ -3260,7 +3260,7 @@
    :::column span="1":::
    <a id="view-plan-permission"></a> View
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can view the lists of plans, open, and interact with a plan, but cannot modify the plan configuration or settings.
    :::column-end:::
 :::row-end:::
@@ -3282,7 +3282,7 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -3290,7 +3290,7 @@
    :::column span="1":::
    <a id="admin-process-permission"></a> Administer process permissions
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can set or change the permissions for an inherited process.  
    :::column-end:::
 :::row-end:::
@@ -3298,7 +3298,7 @@
    :::column span="1":::
    <a id="delete-process-permission"></a> Delete process
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can delete the inherited process.  
    :::column-end:::
 :::row-end:::
@@ -3306,7 +3306,7 @@
    :::column span="1":::
    <a id="edit-process-permission"></a> Edit process
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can create an inherited process from a system process, or copy or modify an inherited process.  
    :::column-end:::
 :::row-end:::
@@ -3324,7 +3324,7 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -3332,7 +3332,7 @@
    :::column span="1":::
    <a id="create-tag-definition-permission"></a> Create tag definition
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    [.Can create new tags and apply them to work items.](../../boards/queries/add-tags-to-work-items.md)
    Users without this permission can only select from the existing set of tags for the project.
@@ -3346,7 +3346,7 @@
    :::column span="1":::
    <a id="delete-tag-definition-permission"></a> Delete tag definition
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can remove a tag from the list of available tags for that project.
    
@@ -3359,7 +3359,7 @@
    :::column span="1":::
    <a id="enumerate-tag-definition-permission"></a> Enumerate tag definition
    :::column-end:::
-   :::column span="1":::   
+   :::column span="2":::   
    Can view a list of tags available for the work item within the project.
    Users without this permission will not have a list of available tags
    from which to choose in the work item form or in the query editor.
@@ -3373,7 +3373,7 @@
    :::column span="1":::
    <a id="update-tag-definition-permission"></a> Update tag definition
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can rename a tag by using the REST API.
    
