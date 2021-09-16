@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Deploy an Azure Web App Container
 
-Use App Service on Linux and pipelines to automatically deploy your web app to a [custom container in Azure](/azure/app-service/quickstart-custom-container) after every successful build. 
+You can use App Service on Linux and pipelines to automatically deploy your web app to a [custom container in Azure](/azure/app-service/quickstart-custom-container) after every successful build. 
 
 Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
 
@@ -32,61 +32,53 @@ To learn how to deploy to an Azure Web App without a container, see [Deploy an A
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * A deployed App Service on Linux custom container. To get started, see [Run a custom container in Azure](/azure/app-service/quickstart-custom-container).
 
-## Build your app
+## Build and push your image
+
+Azure Pipelines can be used to [push images](../ecosystems/containers/push-image.md) to container registries such as Azure Container Registry (ACR), Docker Hub, Google Container Registries, and others. This example pushes an image to Azure Container Registry. 
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
-2. Go to **Pipelines**, and then select **New Pipeline**.
-3. Select **GitHub** as the location of your source code and select your repository.
+1. Go to **Pipelines**, and then select **New Pipeline**.
+1. Select **GitHub** as the location of your source code and select your repository.
 
    > [!NOTE]
    > You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
    > You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
 
-4. Select **Starter pipeline**. Replace the contents of azure-pipelines.yml with this code. If you are building a Linux app, use `ubuntu-1604` for your `vmImage`.  You can use `windows-latest` for your `vmImage` for Windows. 
- 
-   ```yaml
-           trigger:
-           - main
-           
-           pool:
-             vmImage: 'ubuntu-latest' # set to windows-latest or another Windows vmImage for Windows builds
-           
-           variables:
-             imageName: 'pipelines-javascript-docker'
-           
-           steps:
-           - task: Docker@2
-             displayName: Build an image
-             inputs:
-               repository: $(imageName)
-               command: build
-               Dockerfile: app/Dockerfile
-    ```
+1. From the Configure tab, select the **Docker - Build and push an image to Azure Container Registry** task.
 
-    Windows container images can be built using either Microsoft hosted Windows agents or Windows platform based self-hosted agents (all Microsoft hosted Windows platform-based agents are shipped with Moby engine and client needed for Docker builds). Linux container images can be built using Microsoft hosted Ubuntu agents or Linux platform based self-hosted agents. Learn more about the Windows and Linux agent options available with [Microsoft hosted agents](../agents/hosted.md).
-    
-    > [!NOTE]
-    > Currently the Microsoft hosted MacOS agents can't be used to build container images as the Moby engine needed for building the images is not pre-installed on these agents.
-        
-5. Select **Save and run**. You'll see a prompt to add a commit message when adding `azure-pipelines.yml`  to your repository. Edit the message and then select **Save and run** again to see the pipeline in action.
+1. Select your **Azure Subscription**, and then select your **Container registry** from the dropdown menu.
 
+1. Provide an **Image Name** to your container image, and then select **Validate and configure**.
 
-#### [YAML](#tab/yaml/)
-::: moniker range="azure-devops"
+   As Azure Pipelines creates your pipeline, it:
 
-#### [.NET Core](#tab/dotnet-core/)
+   * Creates a _Docker registry service connection_ to enable your pipeline to push images to your container registry.
 
-Follow the [Build, test, and push Docker container apps](../ecosystems/containers/build-image.md) till **push an image** section to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and push the image to container registry.
+   * Generates an *azure-pipelines.yml* file, which defines your pipeline.
 
-#### [Java](#tab/java)
+1. Save and run your pipeline. Your YAML pipeline should look similar to this:
 
-Set up a CI pipeline for [building an image](../ecosystems/containers/build-image.md) and [pushing it to a container registry](../ecosystems/containers/push-image.md).
+```yaml
+```YAML
+- stage: Build
+  displayName: Build and push stage
+  jobs:  
+  - job: Build
+    displayName: Build job
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: Docker@2
+      displayName: Build and push an image to container registry
+      inputs:
+        command: buildAndPush
+        repository: $(imageRepository)
+        dockerfile: $(dockerfilePath)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          $(tag)
+```
 
-#### [Nodejs](#tab/nodejs)
-
-Set up a CI pipeline for [building an image](../ecosystems/containers/build-image.md) and [pushing it to a container registry](../ecosystems/containers/push-image.md).
-
-::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
@@ -131,16 +123,15 @@ Now that the build pipeline is in place, you will learn a few more common config
 
 <a name="endpoint"></a>
 
-## Azure service connection
+## Deploy to Azure Web App for Containers
 
-The **Azure WebApp Container** task similar to other built-in Azure tasks, requires an Azure service connection as an
-input. The Azure service connection stores the credentials to connect from Azure Pipelines or Azure DevOps Server to Azure.
+You'll use the [Azure Web App for Container task](../tasks/deploy/azure-rm-web-app-containers.md) to deploy to Azure App Service in your pipeline.
 
 #### [YAML](#tab/yaml/)
 
 ::: moniker range=">= azure-devops-2019"
 
-You must supply an Azure service connection to the `AzureWebAppContainer` task. Add the following YAML snippet to your existing **azure-pipelines.yaml** file. Make sure you add the service connection details in the variables section as shown below-
+You must supply an Azure service connection to the `AzureWebAppContainer` task. Add the following YAML snippet to your existing `azure-pipelines.yaml` file. Make sure you add the service connection details in the variables section as shown below-
 
 ```yaml
 variables: 
