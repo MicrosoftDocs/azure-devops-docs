@@ -189,7 +189,9 @@ Following are descriptions of some of the components of the `task.json` file:
 | `instanceNameFormat` | How the task is displayed within the build or release step list. You can use variable values by using **$(variablename)**. |
 | `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
-| `execution`          | Execution options for this task, including scripts.                                                                         |
+| `execution`          | Execution options for this task, including scripts.                                                                         
+| `restrictions`       | Restrictions being applied to the task regarding [vso commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. It is recommended to specify restiction mode for new tasks. See [How can I restrict vso commands usage for task](#how-can-i-restrict-vso-commands-usage-for-task) for more details.|
+|
 
 >[!NOTE]
 >For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, check out the **[build/release task reference](./integrate-build-task.md)**.
@@ -751,6 +753,40 @@ If you don't see the **Extensions** tab, then extensions aren't enabled for your
 To package and publish Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
 
 ## FAQ
+
+## How can I restrict vso commands usage for task?
+You can restrict vso commands usage and variables which can be set by task.
+This could be useful to prevent unrestricted access to variables/vso commands for custom scripts which task executes. It is recommended to set it up for new tasks.
+To apply - you may need to add the following statement to your task.json file:
+
+```json
+  "restrictions": {
+    "commands": {
+      "mode": "restricted"
+    },
+    "settableVariables": {
+      "allowed": ["variable1", "test*"]
+    }
+}
+```
+
+If "restricted" value is specified for "mode" - only the following commands are allowed to be executed by task:
+- `logdetail`
+- `logissue`
+- `complete`
+- `setprogress`
+- `setsecret`
+- `setvariable`
+- `debug`
+- `settaskvariable`
+- `prependpath`
+- `publish`
+
+"settableVariables" restrictions allow you to pass in an allow list of variables which can be set by `setvariable` or `prependpath` commands. It allows basic regular expressions as well. So for example, if your allow list was: ['abc', 'test*'], setting abc, test, or test1 as variables with any value or prepending them to the path would succeed, but if you try to set a variable proxy it would warn. Empty list means that no variables are allowed to be changed by task.
+
+"commands" and "settableVariables" are orthogonal - if either the settableVariables or commands key are omitted - relevant restriction is not applied.
+
+Restriction feature is available from [2.182.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.182.1) agent version.
 
 ### How is cancellation signal being handled by a task?
 

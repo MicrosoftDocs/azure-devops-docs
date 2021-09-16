@@ -210,7 +210,7 @@ steps:
 * Prefix is a string expression. A separate value of counter is tracked for each unique value of prefix
 * Seed is the starting value of the counter
 
-You can create a counter that is automatically incremented by one in each execution of your pipeline. When you define a counter, you provide a `prefix` and a `seed`. Here is an example that demonstrates this.
+You can create a counter that is automatically incremented by one in each execution of your pipeline. When you define a counter, you provide a `prefix` and a `seed`. Here is an example that demonstrates this. The `prefix` value cannot contain some special characters, including `.`.
 
 ```yaml
 variables:

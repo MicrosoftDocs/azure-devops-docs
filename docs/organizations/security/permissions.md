@@ -1570,7 +1570,7 @@ You manage project-level permissions through the [web portal admin context](set-
     </tr>
     <tr>
         <td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
-        <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a>.</p>
+        <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work-items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update)">Work Items - update REST API</a>.</p>
        </td>
     </tr>
     <tr>
@@ -1585,7 +1585,7 @@ You manage project-level permissions through the [web portal admin context](set-
     </tr>
     <tr>
         <td id="bypass-rules-permission">Bypass rules on work item updates</td>
-        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../settings/work/rule-reference.md" data-raw-source="[copy, constraint, or conditional rules](../settings/work/rule-reference.md)">copy, constraint, or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
+        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../settings/work/rule-reference.md" data-raw-source="[copy, constraint, or conditional rules](../settings/work/rule-reference.md)">copy, constraint, or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work-items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
         </td>
     </tr>
     <tr>
@@ -1667,7 +1667,7 @@ that have been saved under the Shared area.   </td>
     </tr>
     <tr>
         <td id="bypass-rules-permission">Bypass rules on work item updates</td>
-        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../settings/work/rule-reference.md" data-raw-source="[copy, constraint, or conditional rules](../settings/work/rule-reference.md)">copy, constraint, or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don&#39;t want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p></td>
+        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../settings/work/rule-reference.md" data-raw-source="[copy, constraint, or conditional rules](../settings/work/rule-reference.md)">copy, constraint, or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don&#39;t want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work-items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p></td>
     </tr>
     <tr>
         <td id="change-process-team-project-permission">Change process of project</td>
@@ -1762,7 +1762,7 @@ that have been saved under the Shared area.   </td>
     </tr>
     <tr>
         <td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
-        <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a>.</p>
+        <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work-items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update)">Work Items - update REST API</a>.</p>
         </td>
     </tr>
     <tr>
@@ -1837,7 +1837,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
    :::column-end:::
    :::column span="3":::
       Users with this permission can save a work item that ignores rules, such as [copy, constraint, or conditional rules](../settings/work/rule-reference.md), defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.  
-      Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).  
+      Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).  
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -2009,7 +2009,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
    :::column-end:::
    :::column span="3":::
       Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.  
-      Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via the [Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update).  
+      Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via the [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update).  
    :::column-end:::
 :::row-end:::
 ::: moniker-end
