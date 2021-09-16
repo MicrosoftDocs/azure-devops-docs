@@ -275,7 +275,7 @@ To learn more about executing tests, see [Run manual tests](run-manual-tests.md)
 
 ## Chart test cases and test results 
 
-From the chart tab you can create various test case or test result charts. To learn how, see [Track test status, Charts](track-test-status.md#charts). 
+From the chart tab you can create various test case or test result charts. To learn how, see [Track test status, Charts](track-test-status.md). 
 
 ## Next steps
 

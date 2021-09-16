@@ -157,7 +157,7 @@ This command lists all the current subscriptions for the channel and allows you 
 
 ## Search and share work items using compose extension
 
-To help users search and share work items, the Azure Boards app for Microsoft Teams supports compose extension. You can search for work items by work item ID or by title. For compose extension to work, users must sign in to Azure Boards app either by running `@azure boards signin` command or by signing into the compose extension directly.
+To help users search and share work items, the Azure Boards app for Microsoft Teams supports compose extension. You can search for work items by work item ID, title, or supported functional command. For a list of commands, see [Functional work item search](../../project/search/functional-work-item-search.md). To use the compose extension, users must sign in to Azure Boards app either by running `@azure boards signin` command or by signing into the compose extension directly.
 
 ![Signing into the compose extension.](./media/integrations-teams/teams-boards-compose-extension.png)
 
