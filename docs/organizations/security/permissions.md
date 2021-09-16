@@ -944,10 +944,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1094,10 +1094,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1787,10 +1787,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2025,10 +2025,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2509,10 +2509,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2651,10 +2651,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2882,10 +2882,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3080,10 +3080,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3328,10 +3328,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 
@@ -3471,10 +3471,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3556,10 +3556,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3621,10 +3621,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3675,10 +3675,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3717,10 +3717,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3850,13 +3850,13 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
    :::column span="1":::
-   Scopes
+   **Scopes**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -4086,10 +4086,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
