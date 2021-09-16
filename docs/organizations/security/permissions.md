@@ -166,13 +166,13 @@
 
 :::row:::
    :::column span="1":::
-   Group name
+   **Group name**
    :::column-end:::
    :::column span="1":::
-   Permissions
+   **Permissions**
    :::column-end:::
    :::column span="1":::
-   Membership
+   **Membership**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -233,13 +233,13 @@
 
 :::row:::
    :::column span="1":::
-   Group name
+   **Group name**
    :::column-end:::
    :::column span="1":::
-   Permissions
+   **Permissions**
    :::column-end:::
    :::column span="1":::
-   Membership
+   **Membership**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -724,10 +724,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -841,22 +841,20 @@
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Organization-level permissions and groups, Azure DevOps Services.](media/permissions/collection-level-permissions-new.png)   
 
-:::row-end:::
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    #### General
    :::column-end:::
-   :::column span="1":::
-   &nbsp;&nbsp;
-   :::column-end::: 
+
+:::row-end:::
 :::row:::
    :::column span="1":::
    <a id="alter-trace-settings"></a> Alter trace settings
@@ -1023,7 +1021,7 @@
    #### Repos
    :::column-end:::
    :::column span="1":::
-    &nbsp;&nbsp
+    &nbsp;&nbsp;
    :::column-end::: 
 :::row-end:::
 :::row:::
@@ -1512,17 +1510,17 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
-   :::column span="1":::
-   Description
+   :::column span="2":::
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    #### General
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
     
    :::column-end::: 
 :::row-end:::
@@ -1530,7 +1528,7 @@
    :::column span="1":::
    <a id="delete-team-project-permission"></a> Delete team project
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [delete a project](../projects/delete-project.md) from an organization or project collection.
    :::column-end:::
 :::row-end:::
@@ -1538,7 +1536,7 @@
    :::column span="1":::
    <a id="edit-team-project-level-information-permission"></a> Edit project-level information
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can edit [project description](../projects/project-vision-status.md) and [project services visibility](../settings/set-services.md).
 
@@ -1548,7 +1546,7 @@
    :::column span="1":::
    <a id="manage-team-project-property-permission"></a> Manage project properties
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can provide or edit metadata for a project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](/rest/api/azure/devops/core/projects/set%20project%20properties). 
 
@@ -1558,7 +1556,7 @@
    :::column span="1":::
    <a id="rename-team-project-permission"></a> Rename project
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [change the name of the project](../projects/rename-project.md).
    :::column-end:::
 :::row-end:::
@@ -1566,7 +1564,7 @@
    :::column span="1":::
    <a id="suppress-notifications-for-work-item-updates-permission"></a> Suppress notifications for work item updates
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.  
    
    Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update).
@@ -1576,7 +1574,7 @@
    :::column span="1":::
    <a id="update-project-visibility"></a> Update project visibility
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [change the project visibility](../public/make-project-public.md) from private to public or public to private. Applies to Azure DevOps Services only.
    :::column-end:::
 :::row-end:::
@@ -1584,7 +1582,7 @@
    :::column span="1":::
    <a id="view-team-project-level-information-permission"></a> View project-level information
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can view project-level information, including security information group membership and permissions.
    :::column-end:::
 :::row-end:::
@@ -1592,7 +1590,7 @@
    :::column span="1":::
    #### Boards
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
     
    :::column-end::: 
 :::row-end:::
@@ -1600,7 +1598,7 @@
    :::column span="1":::
    <a id="bypass-rules-permission"></a> Bypass rules on work item updates
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Users with this permission can save a work item that ignores rules, such as [copy, constraint, or conditional rules](../settings/work/rule-reference.md), defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.  
    
    Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).
@@ -1610,7 +1608,7 @@
    :::column span="1":::
    <a id="change-process-team-project-permission"></a> Change process of project
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    When combined with the 'Edit project-level information' permission, allows users to change the Inheritance process for a project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md).  
    :::column-end:::
 :::row-end:::
@@ -1618,7 +1616,7 @@
    :::column span="1":::
    <a id="create-tag-definition-permission"></a> Create tag definition
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    [Can add tags to a work item](../../boards/queries/add-tags-to-work-items.md). By default, all members of the Contributors group have this permission.  
 
    > All users granted Stakeholder access for a private project can only add existing tags, not add new tags, even if the **Create tag definition** permission is set to Allow. This is part of the Stakeholder access settings. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
@@ -1631,7 +1629,7 @@
    
    or Delete work items in this project
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md). Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
    :::column-end:::
 :::row-end:::
@@ -1639,7 +1637,7 @@
    :::column span="1":::
    <a id="move-work-items-out-of-this-project-permission"></a> Move work items out of this project
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md) within the collection.
    :::column-end:::
 :::row-end:::
@@ -1647,7 +1645,7 @@
    :::column span="1":::
    <a id="permanently-delete-work-items-in-this-project-permission"></a> Permanently delete work items in this project
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [permanently delete work items](../../boards/backlogs/remove-delete-work-items.md) from this project. 
    :::column-end:::
 :::row-end:::
@@ -1655,7 +1653,7 @@
    :::column span="1":::
    #### Analytics
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
     
    :::column-end::: 
 :::row-end:::
@@ -1663,7 +1661,7 @@
    :::column span="1":::
    <a id="delete-shared-analytic-views-permission"></a> Delete shared Analytics view
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can delete [Analytics views](../../report/powerbi/analytics-views-manage.md)
    that have been saved under the Shared area.   
    :::column-end:::
@@ -1672,7 +1670,7 @@
    :::column span="1":::
    <a id="edit-shared-analytic-views-permission"></a> Edit shared Analytics view
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can create and modify [shared Analytics views](../../report/powerbi/analytics-views-manage.md).   
    :::column-end:::
 :::row-end:::
@@ -1680,7 +1678,7 @@
    :::column span="1":::
    <a id="view-analytics-permission"></a> View analytics
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can access data available from the [Analytics service](../../report/powerbi/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/powerbi/analytics-security.md).   
    :::column-end:::
 :::row-end:::
@@ -1688,7 +1686,7 @@
    :::column span="1":::
    #### Test Plans
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
     
    :::column-end::: 
 :::row-end:::
@@ -1696,7 +1694,7 @@
    :::column span="1":::
    <a id="create-test-runs-permission"></a> Create test runs
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can add and remove test results and add or modify test runs. To learn more, see [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) and [Run manual tests](../../test/run-manual-tests.md). 
    :::column-end:::
 :::row-end:::
@@ -1704,7 +1702,7 @@
    :::column span="1":::
    <a id="delete-test-runs-permission"></a> Delete test runs
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can [delete a test run](../../boards/backlogs/delete-test-artifacts.md). 
    :::column-end:::
 :::row-end:::
@@ -1712,7 +1710,7 @@
    :::column span="1":::
    <a id="manage-test-configurations-permission"></a> Manage test configurations
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can create and delete [test configurations](../../test/test-different-configurations.md).
    :::column-end:::
 :::row-end:::
@@ -1720,7 +1718,7 @@
    :::column span="1":::
    <a id="manage-test-environments-permission"></a> Manage test environments
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can create and delete [test environments](../../test/test-different-configurations.md).
    :::column-end:::
 :::row-end:::
@@ -1728,7 +1726,7 @@
    :::column span="1":::
    <a id="view-test-runs-permission"></a> View test runs
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Can view test plans under the project area path.
    :::column-end:::
 :::row-end:::
@@ -1741,10 +1739,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2223,10 +2221,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2365,10 +2363,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2412,8 +2410,8 @@
    :::column-end:::
 :::row-end:::
 :::row:::
-   <a id="edit-build-pipeline-permission" />
    :::column span="1":::
+   <a id="edit-build-pipeline-permission"></a>
    <a id="edit-build-definition-permission"></a> Edit build pipeline</br>Edit build definition
    :::column-end:::
    :::column span="1":::
@@ -2426,6 +2424,7 @@
    > When inheritance is On, the build definition respects the build permissions defined at the project level or a group or user. For example, a custom Build Managers group has permissions set to manually queue a build for project Fabrikam. Any build definition with inheritance On for project Fabrikam would allow a member of the Build Managers group the ability to manually queue a build.
    >
    > However, by turning Inheritance Off for project Fabrikam, you can set permissions that only allow Project Administrators to manually queue a build for a specific build definition. This would then allow me to set permissions for that build definition specifically.
+
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2577,10 +2576,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2708,17 +2707,15 @@
    <a id="git-note-management-permission"></a> Manage notes
    :::column-end:::
    :::column span="1":::
-   
    Can push and edit Git notes.
    :::column-end:::
 :::row-end:::
+:::row:::
    :::column span="1":::
    <a id="git-create-repository-permission"></a> Manage permissions
    :::column-end:::
    :::column span="1":::
-   
    Can set permissions for the repository.
-
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2775,10 +2772,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2978,10 +2975,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3092,10 +3089,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3164,10 +3161,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3229,10 +3226,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3283,10 +3280,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3325,10 +3322,10 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3427,13 +3424,13 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
-   Description
+   **Description**
    :::column-end:::
    :::column span="1":::
-   Scopes
+   **Scopes**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3663,7 +3660,7 @@
 
 :::row:::
    :::column span="1":::
-   Permission
+   **Permission**
    :::column-end:::
    :::column span="1":::
    Description
