@@ -27,14 +27,12 @@ As a member of an Azure DevOps project, you can use most of the features to trac
 
 ::: moniker-end
 
-
 In the tables provided in this article, a ✔️ indicates that the corresponding access level or security group has access to a feature by default. 
 
 > [!NOTE]   
 > Team administrators can configure settings for their team's tools. Organization owners and members of the Project Administrators group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
 
 For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](change-individual-permissions.md), you can do so.
-
 
 ## Work items
 
@@ -54,7 +52,6 @@ You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanb
 
 [!INCLUDE [temp](includes/boards-backlogs.md)]
 
-
 ## Sprints 
 
 You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/sprints/assign-work-sprint.md) set of tools provide filtered views of work items that a team has assigned to specific iteration paths or sprints. 
@@ -70,7 +67,6 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 [!INCLUDE [temp](includes/boards-queries.md)]
 
-
 ::: moniker range=">= tfs-2017"  
 
 ## Delivery plans
@@ -83,13 +79,11 @@ You can manage permissions for individual plans. To learn more, see [Edit or man
 
 ::: moniker-end
 
-
 ## Test management
 
 Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
 [!INCLUDE [temp](includes/test.md)]
-
 
 Area permissions for web-based test case management and test execution control access to the following actions.  
 
@@ -104,11 +98,9 @@ The **Manage test plans** permission enables users to:
 - Add or remove test suites to or from test plans 
 - Change test plan properties such as build and test settings 
 
-
 ## Project-level resources  
 
 You set project-level information permissions from **Project settings** > **Permissions**. You set permissions for area and iteration paths under **Project settings**> **Project configuration**. These resources are defined for a project which all valid users of the project can view. 
-
 
 ---
 :::row:::
@@ -246,14 +238,9 @@ The **Edit project-level information** permission includes the ability to perfor
 - Create and modify global lists  
 - Edit [event subscriptions](permissions.md#alerts) (email or SOAP) on project level events.
 
-
-
-
 ## Team administrator role and permissions  
 
 The following table summarizes a subset of the default permissions assigned to the project Readers, Contributors and Project Administrators groups and the Team Administrator role. Team admin permissions extend only to the team for which they're an administrator. Project Administrator permissions extend across all teams defined for the project.
-
-
 
 :::row:::
    :::column span="1":::
@@ -273,36 +260,14 @@ The following table summarizes a subset of the default permissions assigned to t
    :::column-end:::
 :::row-end:::
 :::row:::
-
    :::column span="1":::
-   [Add a team administrator](../../organizations/settings/add-team-administrator.md) </p>
-
+   [Add a team administrator](../../organizations/settings/add-team-administrator.md)
    :::column-end:::
    :::column span="1":::
-   <p>&nbsp;&nbsp;</p>
+   &nbsp;&nbsp;
    :::column-end:::
    :::column span="1":::
-   <p>&nbsp;&nbsp;</p>
-   :::column-end:::
-   :::column span="1":::
-   ✔️
-   :::column-end:::
-   :::column span="1":::
-   ✔️
-   :::column-end:::
-:::row-end:::
-:::row:::
-
-   :::column span="1":::
-   
-   [Add team members](../../organizations/settings/add-teams.md) </p>
-
-   :::column-end:::
-   :::column span="1":::
-   <p>&nbsp;&nbsp;</p>
-   :::column-end:::
-   :::column span="1":::
-   <p>&nbsp;&nbsp;</p>
+   &nbsp;&nbsp;
    :::column-end:::
    :::column span="1":::
    ✔️
@@ -312,16 +277,14 @@ The following table summarizes a subset of the default permissions assigned to t
    :::column-end:::
 :::row-end:::
 :::row:::
-
-   :::column span="1":::
-   [View shared work item queries](../../boards/queries/using-queries.md)</p>
-
+   :::column span="1":::   
+   [Add team members](../../organizations/settings/add-teams.md)
    :::column-end:::
    :::column span="1":::
-   ✔️
+   &nbsp;&nbsp;
    :::column-end:::
    :::column span="1":::
-   ✔️
+   &nbsp;&nbsp;
    :::column-end:::
    :::column span="1":::
    ✔️
@@ -330,40 +293,50 @@ The following table summarizes a subset of the default permissions assigned to t
    ✔️
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
-   
-   [Manage shared query and query folder permissions](../../boards/queries/set-query-permissions.md)<br/>(Contribute, Delete, Manage Permissions)
-   </p>
-
+   [View shared work item queries](../../boards/queries/using-queries.md)
    :::column-end:::
    :::column span="1":::
-   <p>&nbsp;&nbsp;</p>
+   ✔️
    :::column-end:::
    :::column span="1":::
-   <p>&nbsp;&nbsp;</p>
+   ✔️
    :::column-end:::
    :::column span="1":::
-   <p>&nbsp;&nbsp;</p>
+   ✔️
    :::column-end:::
    :::column span="1":::
    ✔️
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
-   
-   [Add and edit dashboards](/azure/devops/report/dashboards/dashboards) 
-   </p>
-
+   [Manage shared query and query folder permissions](../../boards/queries/set-query-permissions.md)  
+   (Contribute, Delete, Manage Permissions)
    :::column-end:::
    :::column span="1":::
-   <p>&nbsp;&nbsp;</p>
+   &nbsp;&nbsp;
    :::column-end:::
    :::column span="1":::
-   <p>&nbsp;&nbsp;</p>
+   &nbsp;&nbsp;
+   :::column-end:::
+   :::column span="1":::
+   &nbsp;&nbsp;
+   :::column-end:::
+   :::column span="1":::
+   ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Add and edit dashboards](/azure/devops/report/dashboards/dashboards)
+   :::column-end:::
+   :::column span="1":::
+   &nbsp;&nbsp;
+   :::column-end:::
+   :::column span="1":::
+   &nbsp;&nbsp;
    :::column-end:::
    :::column span="1":::
    ✔️
@@ -372,8 +345,6 @@ The following table summarizes a subset of the default permissions assigned to t
    ✔️
    :::column-end:::
 :::row-end:::
-
-
 
 <a id="stakeholder-access"></a>
 
@@ -386,7 +357,6 @@ For a comparison chart of Stakeholder versus basic access, see the [Feature Matr
 For information about each access levels, see [About access levels](access-levels.md). To assign access levels, see: 
 - **Azure DevOps Services**: [Add users and assign licenses in Azure DevOps](../accounts/add-organization-users.md)
 - **Azure DevOps Server, TFS**: [Change access levels](change-access-levels.md)  
-
 
 <a id="grant-add-permissions"></a>  
 

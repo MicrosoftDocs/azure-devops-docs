@@ -22,7 +22,8 @@ ms.date: 08/18/2021
    Project Admins
    :::column-end:::
    :::column span="1":::
-   Release<br/>Admins
+   Release  
+   Admins
    :::column-end:::
 :::row-end:::
 :::row:::

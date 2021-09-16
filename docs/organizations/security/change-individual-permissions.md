@@ -242,7 +242,7 @@ From the web portal, open the Security dialog for the object whose permissions y
    
    - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)
    - [Work item query and folder](../../boards/queries/set-query-permissions.md)
-   - [Plan permissions](set-permissions-access-work-tracking.md)<br/>
+   - [Plan permissions](set-permissions-access-work-tracking.md)  
 
    :::column-end:::
 :::row-end:::
