@@ -28,7 +28,7 @@ To exercise the full range of test-related features, you must have been granted 
 	- [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
 	- [MSDN Platform](https://visualstudio.microsoft.com/msdn-platforms/)
 
-Users who have one of the above subscritptions can exercise all Test Plans features for no additional charge. For more information, see [Compare Visual Studio subscriptions](https://www.visualstudio.com/vs/pricing).
+Users who have one of the above subscriptions can exercise all Test Plans features for no additional charge. For more information, see [Compare Visual Studio subscriptions](https://www.visualstudio.com/vs/pricing).
  
 Non-subscribers must purchase **Basic + Test Plans** to use Test Plans. This can be for any specified number of users.
 
