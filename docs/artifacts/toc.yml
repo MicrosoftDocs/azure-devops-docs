@@ -54,7 +54,7 @@
     - name: Use NuGet or dotnet with TFS
       href: nuget/tfs.md
       displayName: nuget, dotnet, tfs, publish, download 
-    - name: NuGet upstream source
+    - name: NuGet.org upstream source
       href: nuget/upstream-sources.md
       displayName: upstream sources, upstreams, artifact feeds 
     - name: Set up a multi-developer environment
