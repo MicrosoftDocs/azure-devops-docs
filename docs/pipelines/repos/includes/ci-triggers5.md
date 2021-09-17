@@ -42,7 +42,5 @@ trigger:
     - feature/*-working
   paths:
     include:
-    - 'docs/*.md'
-    exclude:
-    - 'docs/*' # same as 'docs/'
+    - docs/*.md
 ```
