@@ -213,6 +213,7 @@ You can specify how information and work item fields are grouped and appear in a
 > [!TIP]  
 > The schema definition for work item tracking defines all **FORM** child elements as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](control-xml-element-reference.md).    
 
+
 :::row:::
    :::column span="1":::
       **Element**
@@ -227,12 +228,12 @@ You can specify how information and work item fields are grouped and appear in a
       **Control**
    :::column-end:::
    :::column span="3":::
-      Optional child element for a <strong>Group</strong> within <strong>WebLayout</strong>. Defines a field, text, hyperlink, or other control element to appear on the work item form.
+      Optional child element for a **Group** within **WebLayout**. Defines a field, text, hyperlink, or other control element to appear on the work item form.
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <Control FieldName="FieldName" Type="DateTimeControl | ExtensionsControl |  
-      FieldControl | HtmlFieldControl | LabelControl | WebpageControl" 
-      Label="LabelText" EmptyText="TextString"
+      FieldControl | HtmlFieldControl | LabelControl | WebpageControl"  
+      Label="LabelText" EmptyText="TextString" 
       ReadOnly="True | False" Name="InstanceName" />
       ```
       See [Control element attributes](#control-attributes) and [control type](#control-types)for information about each attribute.
@@ -243,14 +244,14 @@ You can specify how information and work item fields are grouped and appear in a
      **ControlContribution**
    :::column-end:::
    :::column span="3":::
-      Optional child element of <strong>Group</strong> within <strong>WebLayout</strong> used to specify a field-level work item extension to appear on the form.   </p>
+      Optional child element of **Group** within <strong>WebLayout</strong> used to specify a field-level work item extension to appear on the form.    
       > [!div class="tabbedCodeSnippets"]
       ```XML
-      <ControlContribution Id="ContributionId" Label="Name"  >
-      &nbsp;&nbsp;&nbsp;<Inputs>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Input Id="FieldName" Value="Value" />
-      &nbsp;&nbsp;&nbsp;</Inputs>
-      </ControlContribution>
+      <ControlContribution Id="ContributionId" Label="Name">  
+         <Inputs>  
+            <Input Id="FieldName" Value="Value" />  
+         </Inputs>  
+      </ControlContribution>  
       ```
       The *ContributionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).
    :::column-end:::
@@ -263,7 +264,7 @@ You can specify how information and work item fields are grouped and appear in a
       Required child element for <strong>Extensions</strong>. Use to specify an extension ID of a work item control extension to display in the work item form. You must specify each extension that is used in the layout for a <strong>ControlContribution</strong>, <strong>GroupContribution</strong>, or <strong>PageContribution</strong> element. 
       > [!div class="tabbedCodeSnippets"]
       ```XML
-      <Extension Id="ExtensionId" />
+      <Extension Id="ExtensionId" />  
       ```
       The <em>ExtensionId</em> you specify must be installed on the account or project collection. The WIT definition files that you export contain a <a href="#extensions" data-raw-source="[list of installed extensions](#extensions)">list of installed extensions</a>.
    :::column-end:::
@@ -276,13 +277,13 @@ You can specify how information and work item fields are grouped and appear in a
       Optional container child element of **WebLayout** used to support specifying one or more **Extension** elements. If extensions are used in the form, specify them prior to a **Page** element.
       > [!div class="tabbedCodeSnippets"]
       ```XML
-      <WebLayout >
-      &nbsp;&nbsp;&nbsp;<Extensions >
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Extension Id="ExtensionId" />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . . 
-      &nbsp;&nbsp;&nbsp;</Extensions >
+      <WebLayout >  
+         <Extensions >  
+            <Extension Id="ExtensionId" />  
+            . . .   
+         </Extensions>   
       . . .
-      </WebLayout >
+      </WebLayout>  
       ```
    :::column-end:::
 :::row-end:::
@@ -294,10 +295,10 @@ You can specify how information and work item fields are grouped and appear in a
       Required child element of **WITD** used to specify the layout and controls to appear on the work item form. Parent element for both the **Layout** (client form layout) and **WebLayout** (web form layout) elements.
        > [!div class="tabbedCodeSnippets"]
       ```XML
-      <FORM>
-       &nbsp;&nbsp;&nbsp;<Layout> . . . </Layout>
-       &nbsp;&nbsp;&nbsp;<WebLayout> . . . </WebLayout>
-      </FORM>
+      <FORM>  
+          <Layout> . . . </Layout>  
+          <WebLayout> . . . </WebLayout>  
+      </FORM>  
       ```
    :::column-end:::
 :::row-end:::
@@ -309,9 +310,9 @@ You can specify how information and work item fields are grouped and appear in a
       Required child element of **Section**. Provides a visual grouping of elements within a section which you can label.
       > [!div class="tabbedCodeSnippets"]
       ```XML
-      <Group Label="LabelText" 
-      &nbsp;&nbsp;&nbsp;<Control> . . . </Control>
-      </Group >
+      <Group Label="LabelText"   
+         <Control> . . . </Control>  
+      </Group>  
       ```
    :::column-end:::
 :::row-end:::
@@ -323,7 +324,7 @@ You can specify how information and work item fields are grouped and appear in a
       Optional child element of **Section<** within **WebLayout** used to specify a group-level work item extension to appear on the form. The extension will appear as a group within the form.
       > [!div class="tabbedCodeSnippets"]
       ```XML
-      <GroupContribution Id="ContributionId" Label="Name" />
+      <GroupContribution Id="ContributionId" Label="Name" />  
       ```
      The *ContributionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).
    :::column-end:::
@@ -336,7 +337,7 @@ You can specify how information and work item fields are grouped and appear in a
       Required child element for **Inputs** that specifies input data for an extension.
       > [!div class="tabbedCodeSnippets"]
       ```XML
-      <Input Id="FieldName" Value="Value" />
+      <Input Id="FieldName" Value="Value" />  
       ```
    :::column-end:::
 :::row-end:::
@@ -349,7 +350,7 @@ You can specify how information and work item fields are grouped and appear in a
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <Inputs>
-      &nbsp;&nbsp;&nbsp;<Input Id="FieldName" Value="Value" />
+         <Input Id="FieldName" Value="Value" />  
       </Inputs>
       ```
    :::column-end:::
@@ -364,13 +365,13 @@ You can specify how information and work item fields are grouped and appear in a
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <Page Label="PageName" LayoutMode="FirstColumnWide | EqualColumns ">  
-      &nbsp;&nbsp;&nbsp;<Section>  
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Group> . . . 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control> . . . </Control>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control> . . . </Control>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Group>
-      &nbsp;&nbsp;&nbsp;</Section>
-      </Page>
+         <Section>    
+            <Group> . . .   
+               <Control> . . . </Control>  
+               <Control> . . . </Control>  
+            </Group>  
+         </Section>  
+      </Page>  
       ```
    :::column-end:::
 :::row-end:::
@@ -382,7 +383,7 @@ You can specify how information and work item fields are grouped and appear in a
       Optional child element of **WebLayout** used to specify a page-level work item extension to appear on the form. The extension will appear as a page within the form. 
       > [!div class="tabbedCodeSnippets"]
       ```XML
-      <PageContribution Id="ContributionId" Label="Name"  />
+      <PageContribution Id="ContributionId" Label="Name"  />  
       ```
      The *ContributionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).
    :::column-end:::
@@ -396,13 +397,13 @@ You can specify how information and work item fields are grouped and appear in a
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <Page>  
-      &nbsp;&nbsp;&nbsp;<Section>  
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Group> . . . 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control> . . . </Control>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control> . . . </Control>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Group>
-      &nbsp;&nbsp;&nbsp;</Section>
-      </Page>
+         <Section>    
+            <Group> . . .   
+               <Control> . . . </Control>  
+               <Control> . . . </Control>  
+            </Group>  
+         </Section>  
+      </Page>  
       ```
    :::column-end:::
 :::row-end:::
@@ -414,17 +415,17 @@ You can specify how information and work item fields are grouped and appear in a
       Required child element for **WebLayout**. Defines the labels and empty text values for controls present in the header of the web form . This also includes, the labels for the **History**, **Links**, and **Attachments** pages
       > [!div class="tabbedCodeSnippets"]
       ```XML
-      <SystemControls>  
-      &nbsp;&nbsp;&nbsp;<Control Type="FieldControl" FieldName="System.Title" EmptyText="Enter title" /> 
-      &nbsp;&nbsp;&nbsp;<Control Label="Assi&gned To" Type="FieldControl" FieldName="System.AssignedTo" />
-      &nbsp;&nbsp;&nbsp;<Control Label="Stat&e" Type="FieldControl" FieldName="System.State" />
-      &nbsp;&nbsp;&nbsp;<Control Label="Reason" Type="FieldControl" FieldName="System.Reason" />
-      &nbsp;&nbsp;&nbsp;<Control Label="&Area" Type="WorkItemClassificationControl" FieldName="System.AreaPath" />
-      &nbsp;&nbsp;&nbsp;<Control Label="Ite&ration" Type="WorkItemClassificationControl" FieldName="System.IterationPath" />
-      &nbsp;&nbsp;&nbsp;<Control Label="History" Type="WorkItemLogControl" FieldName="System.History" />
-      &nbsp;&nbsp;&nbsp;<Control Label="Links" Type="LinksControl" Name="Links" />
-      &nbsp;&nbsp;&nbsp;<Control Label="Attachments" Type="AttachmentsControl" Name="Attachments" />
-      </SystemControls>
+      <SystemControls>    
+         <Control Type="FieldControl" FieldName="System.Title" EmptyText="Enter title" />   
+         <Control Label="Assi&gned To" Type="FieldControl" FieldName="System.AssignedTo" />  
+         <Control Label="Stat&e" Type="FieldControl" FieldName="System.State" />  
+         <Control Label="Reason" Type="FieldControl" FieldName="System.Reason" />  
+         <Control Label="&Area" Type="WorkItemClassificationControl" FieldName="System.AreaPath" />  
+         <Control Label="Ite&ration" Type="WorkItemClassificationControl" FieldName="System.IterationPath" />  
+         <Control Label="History" Type="WorkItemLogControl" FieldName="System.History" />  
+         <Control Label="Links" Type="LinksControl" Name="Links" />  
+         <Control Label="Attachments" Type="AttachmentsControl" Name="Attachments" />  
+      </SystemControls>  
       ```
    :::column-end:::
 :::row-end:::
@@ -436,22 +437,21 @@ You can specify how information and work item fields are grouped and appear in a
       Required child element of **FORM**. Defines the layout of the work item form displayed in the web portal. Includes one or more **Page** elements.
       > [!div class="tabbedCodeSnippets"]
       ```XML
-      <WebLayout> 
-      &nbsp;&nbsp;&nbsp;<Page>  
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Section>  
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Group> . . . 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control> . . . </Control>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control> . . . </Control>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Group>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Section>
-      &nbsp;&nbsp;&nbsp;</Page>
+      <WebLayout>  
+         <Page>  
+            <Section>  
+               <Group> . . . 
+                  <Control> . . . </Control>  
+                  <Control> . . . </Control>  
+               </Group>  
+            </Section>  
+         </Page>  
       . . .
       </WebLayout>
       ```
    :::column-end:::
 :::row-end::: 
       
-
 
 
 
