@@ -19,7 +19,7 @@ ms.date: 11/28/2017
 You use the **WebLayout** element to define the layout and controls that appear on work item forms displayed through the web portal. It supports the [new work item experience](../process/new-work-item-experience.md). It is in addition to the [**Layout** element](all-form-xml-elements-reference.md) which defines the form elements that appear when viewed through Visual Studio and other non-web clients.
 
 > [!IMPORTANT]  
-> This topic applies to project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015 and earlier versions, see [Layout XML element reference](layout-xml-element-reference.md). 
+> This article applies to project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015 and earlier versions, see [Layout XML element reference](layout-xml-element-reference.md). 
 >
 > For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
@@ -217,7 +217,7 @@ You can specify how information and work item fields are grouped and appear in a
    :::column span="1":::
       Element
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Description
    :::column-end:::
 :::row-end:::
@@ -226,7 +226,7 @@ You can specify how information and work item fields are grouped and appear in a
    :::column span="1":::
       **Control**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Optional child element for a <strong>Group</strong> within <strong>WebLayout</strong>. Defines a field, text, hyperlink, or other control element to appear on the work item form.
       > [!div class="tabbedCodeSnippets"]
       ```XML
@@ -242,7 +242,7 @@ You can specify how information and work item fields are grouped and appear in a
    :::column span="1":::
      **ControlContribution**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Optional child element of <strong>Group</strong> within <strong>WebLayout</strong> used to specify a field-level work item extension to appear on the form.   </p>
       > [!div class="tabbedCodeSnippets"]
       ```XML
@@ -259,7 +259,7 @@ You can specify how information and work item fields are grouped and appear in a
    :::column span="1":::
       **Extension**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Required child element for <strong>Extensions</strong>. Use to specify an extension ID of a work item control extension to display in the work item form. You must specify each extension that is used in the layout for a <strong>ControlContribution</strong>, <strong>GroupContribution</strong>, or <strong>PageContribution</strong> element. 
       > [!div class="tabbedCodeSnippets"]
       ```XML
@@ -270,9 +270,9 @@ You can specify how information and work item fields are grouped and appear in a
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Extensions
+      **Extensions**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Optional container child element of **WebLayout** used to support specifying one or more **Extension** elements. If extensions are used in the form, specify them prior to a **Page** element.
       > [!div class="tabbedCodeSnippets"]
       ```XML
@@ -288,9 +288,9 @@ You can specify how information and work item fields are grouped and appear in a
 :::row-end:::
 :::row:::
    :::column span="1":::
-      FORM
+      **FORM**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Required child element of **WITD** used to specify the layout and controls to appear on the work item form. Parent element for both the **Layout** (client form layout) and **WebLayout** (web form layout) elements.
        > [!div class="tabbedCodeSnippets"]
       ```XML
@@ -303,9 +303,9 @@ You can specify how information and work item fields are grouped and appear in a
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Group
+      **Group**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Required child element of **Section**. Provides a visual grouping of elements within a section which you can label.
       > [!div class="tabbedCodeSnippets"]
       ```XML
@@ -317,22 +317,22 @@ You can specify how information and work item fields are grouped and appear in a
 :::row-end:::
 :::row:::
    :::column span="1":::
-      GroupContribution
+      **GroupContribution**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Optional child element of **Section<** within **WebLayout** used to specify a group-level work item extension to appear on the form. The extension will appear as a group within the form.
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <GroupContribution Id="ContributionId" Label="Name" />
       ```
-     The <em>ContributionId</em> you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).
+     The *ContributionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
       Input
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Required child element for **Inputs** that specifies input data for an extension.
       > [!div class="tabbedCodeSnippets"]
       ```XML
@@ -342,9 +342,9 @@ You can specify how information and work item fields are grouped and appear in a
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Inputs
+      **Inputs**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Optional container child element for **ControlContribution** used to support specification of input data for an extension.
       > [!div class="tabbedCodeSnippets"]
       ```XML
@@ -356,9 +356,9 @@ You can specify how information and work item fields are grouped and appear in a
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Page
+      **Page**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Required child element of **WebLayout**. Defines the layout of a page within the web form.   
       Specify the name of the page and the layout to use. 
       > [!div class="tabbedCodeSnippets"]
@@ -376,7 +376,7 @@ You can specify how information and work item fields are grouped and appear in a
 :::row-end:::
 :::row:::
    :::column span="1":::
-      PageContribution
+      **PageContribution**
    :::column-end:::
    :::column span="4":::
       Optional child element of **WebLayout** used to specify a page-level work item extension to appear on the form. The extension will appear as a page within the form. 
@@ -389,9 +389,9 @@ You can specify how information and work item fields are grouped and appear in a
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Section
+      **Section**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Required child element of **Page**. Defines the layout of a section within a page of the web form. Sections form groups that [support variable resizing](../customize-wit-form.md#resizing). A limit of four sections can be defined within a **Page**. 
       > [!div class="tabbedCodeSnippets"]
       ```XML
@@ -408,9 +408,9 @@ You can specify how information and work item fields are grouped and appear in a
 :::row-end:::
 :::row:::
    :::column span="1":::
-      SystemControls
+      **SystemControls**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Required child element for **WebLayout**. Defines the labels and empty text values for controls present in the header of the web form . This also includes, the labels for the **History**, **Links**, and **Attachments** pages
       > [!div class="tabbedCodeSnippets"]
       ```XML
@@ -430,7 +430,7 @@ You can specify how information and work item fields are grouped and appear in a
 :::row-end:::
 :::row:::
    :::column span="1":::
-      WebLayout
+      **WebLayout**
    :::column-end:::
    :::column span="4":::
       Required child element of **FORM**. Defines the layout of the work item form displayed in the web portal. Includes one or more **Page** elements.
