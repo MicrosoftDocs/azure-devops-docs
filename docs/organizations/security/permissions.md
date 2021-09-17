@@ -39,20 +39,6 @@
   -[Add a team admin](../settings/add-team-administrator.md)  
   ::: moniker-end
   ---
-  **Wiki**
-  -[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)  
-   :::column-end:::
-   :::column span="1":::
-  **DevOps**
-  -[Git branch](../../repos/git/branch-permissions.md)  
-  -[Git repositories](../../repos/git/set-git-repository-permissions.md)  
-  -[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)  
-  -[Build and release pipelines](../../pipelines/policies/set-permissions.md)  
-  -[Approvals and approvers](../../pipelines/release/approvals/index.md)  
-  -[Task groups](../../pipelines/policies/set-permissions.md)   
-  -[Variable groups](../../pipelines/policies/set-permissions.md)  
-  -[Role-based resources](../../pipelines/policies/set-permissions.md)  
-  **Wiki**
    :::column-end:::
    :::column span="1":::
   **Work tracking**
@@ -86,7 +72,23 @@
   ::: moniker-end
    :::column-end:::
 :::row-end:::
-
+:::row::
+   :::column span="1":::
+  **Wiki**
+  -[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)  
+   :::column-end:::
+   :::column span="1":::
+  **DevOps**
+  -[Git branch](../../repos/git/branch-permissions.md)  
+  -[Git repositories](../../repos/git/set-git-repository-permissions.md)  
+  -[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)  
+  -[Build and release pipelines](../../pipelines/policies/set-permissions.md)  
+  -[Approvals and approvers](../../pipelines/release/approvals/index.md)  
+  -[Task groups](../../pipelines/policies/set-permissions.md)   
+  -[Variable groups](../../pipelines/policies/set-permissions.md)  
+  -[Role-based resources](../../pipelines/policies/set-permissions.md)  
+   :::column-end:::
+:::row-end:::
    <a id="image-diff"></a>  
 
 >[!NOTE]  
@@ -171,7 +173,7 @@
    :::column span="1":::
    **Permissions**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Membership**
    :::column-end:::
 :::row-end:::
@@ -182,7 +184,7 @@
    :::column span="1":::
    Has service-level permissions for the server instance.
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Contains the service account that was supplied during installation  
 
    This group should contain only service accounts
@@ -201,7 +203,7 @@
    :::column span="1":::   
    Has permission to view server instance-level information.
    :::column-end:::
-   :::column span="1":::   
+   :::column span="2":::   
    Contains all users known to exist in the server instance.
    You can&#39;t modify the membership of this group.
    :::column-end:::
@@ -213,7 +215,7 @@
    :::column span="1":::   
    Has permissions to perform all server-level operations.
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Local Administrators** group (BUILTIN\Administrators)
    for any server that hosts Azure DevOPs/Team Foundation application services.  
 
@@ -757,7 +759,9 @@
    :::column span="2":::   
    Can delete a collection from the deployment.
 
-   > Deleting a collection will not delete the collection database from SQL Server.
+   > [!NOTE]  
+   > Deleting a collection won't delete the collection database from SQL Server.
+
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3428,7 +3432,7 @@
    :::column span="1":::
    **Description**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Scopes**
    :::column-end:::
 :::row-end:::
@@ -3441,7 +3445,7 @@
    Can change any of the other permissions listed here.
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Project, Release pipeline, Environment
 
@@ -3456,7 +3460,7 @@
    Can create new releases.
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Project, Release pipeline
 
@@ -3471,7 +3475,7 @@
    Can delete release pipeline(s).
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Project, Release pipeline
 
@@ -3486,7 +3490,7 @@
    Can delete environment(s) in release pipeline(s).
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Project, Release pipeline, Environment
 
@@ -3501,7 +3505,7 @@
    Can delete releases for a pipeline.  
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Project, Release pipeline
 
@@ -3516,7 +3520,7 @@
    Can add and edit a release pipeline, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release pipeline. To make changes to a specific environment in a release pipeline, the user also needs **Edit release environment** permission. 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Project, Release pipeline 
 
@@ -3531,7 +3535,7 @@
    Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs **Edit release pipeline** permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs **Manage releases** permission to save the modified release.
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Project, Release pipeline, Environment  
 
@@ -3546,7 +3550,7 @@
   Can initiate a direct deployment of a release to an environment. This permission is only for direct deployments that are manually initiated by selecting the **Deploy** action in a release. If the condition on an environment is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release.  
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Project, Release pipeline, Environment
 
@@ -3561,7 +3565,7 @@
    Can add or edit approvers for environment(s) in release pipeline(s). This permission also controls whether a user can edit the approvers inside the environment of a specific release instance.  
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Project, Release pipeline, Environment
 
@@ -3576,7 +3580,7 @@
    Can edit a release configuration, such as stages, approvers, and variables. To edit the configuration of a specific environment in a release instance, the user also needs **Edit release environment** permission.  
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Project, Release pipeline
 
@@ -3591,7 +3595,7 @@
    Can view release pipeline(s). 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Project, Release pipeline 
 
@@ -3606,7 +3610,7 @@
    Can view releases belonging to release pipeline(s).  
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Project, Release pipeline 
 
