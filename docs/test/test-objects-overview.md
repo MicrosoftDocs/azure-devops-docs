@@ -371,6 +371,37 @@ The following table describes several terms used in manual and exploratory testi
 ---
 :::row:::
    :::column span="1":::
+     **Configuration**
+   :::column-end:::
+   :::column span="3":::
+      Specifies the unique environment used to test an application or code. To define a test configuration, you first define the configuration variables, and then define the test configuration. For details, see [Test different configurations](test-different-configurations.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+     **Configuration variable**
+   :::column-end:::
+   :::column span="3":::
+      Specifies a single aspect of a test environment such as an operating system, processing power, web browser, or other variation. For details, see [Test different configurations](test-different-configurations.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+     **Outcome** 
+   :::column-end:::
+   :::column span="3":::
+      Outcome of a test point as marked by the tester upon executing the test. Valid options are: 
+      - **Active** (Unspecified)
+      - **Pass Test**
+      - **Fail Test**
+      - **Block Test**
+      - **Not Applicable**  
+      ---
+      To learn more, see [Repeat a test with different data](repeat-test-with-different-data.md). Note that pipeline test outcomes differ as described in [About pipeline tests](../pipelines/test/test-glossary.md). 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
      **Test points**
    :::column-end:::
    :::column span="3":::
@@ -391,21 +422,6 @@ The following table describes several terms used in manual and exploratory testi
    :::column-end:::
    :::column span="3":::
       Dialog used to choose how test outcomes in multiple suites under the same test plans should be configured.  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-     **Outcome** 
-   :::column-end:::
-   :::column span="3":::
-      Outcome of a test point as marked by the tester upon executing the test. Valid options are: 
-      - **Active** (Unspecified)
-      - **Pass Test**
-      - **Fail Test**
-      - **Block Test**
-      - **Not Applicable**  
-      ---
-      To learn more, see [Repeat a test with different data](repeat-test-with-different-data.md). Note that pipeline test outcomes differ as described in [About pipeline tests](../pipelines/test/test-glossary.md). 
    :::column-end:::
 :::row-end:::
 :::row:::

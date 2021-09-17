@@ -17,6 +17,8 @@
   href: ../../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
 - name: Test impact analysis 
   href: ../../pipelines/test/test-impact-analysis.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+- name: Test progress report 
+  href: ../../test/progress-report.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
 
 
 

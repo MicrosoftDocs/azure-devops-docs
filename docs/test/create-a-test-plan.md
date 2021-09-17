@@ -18,6 +18,30 @@ Create test plans and test suites to track manual testing for sprints or milesto
 That way, you can see when the testing for a specific sprint or milestone is complete.
 For more information about manual testing, see [Planned manual testing](overview.md#planned-manual-testing) and [Automated and Manual Testing with Azure Test Plans](https://www.youtube.com/watch?v=LF0hmSysWCg).
 
+
+## Share work items across your test experience 
+ 
+For example, you're building version 1.* of your product and you might create several test cases for that version.
+Each of these test cases can be updated, and more added, at any time.
+For each development cycle and release of your product, you create a test plan and import the existing test cases into that plan.
+You can also, if you wish, divide the test cases into separate test suites within the plan to enable easier management and monitoring of these separate sets of test cases.
+
+After you create your test plan, you [assign test configurations](test-different-configurations.md) and [assign testers](create-test-cases.md#assign-testers) to cover the required test matrix.
+These testers [run the tests](run-manual-tests.md) and gauge the quality of the product.
+Testers continue testing until the product meets exit criteria.
+For the next development cycle and release, you can create a new test plan and reuse the same test cases.
+You repeat this development-test-release cycle by importing the same test cases into each new test plan.
+
+The great thing is that, because test plans refer to test cases, updates to a test case automatically reflect in all the test plans and test suites that use it.
+
+In the next version of the product, you can reuse the existing test cases.
+However, a better option may be to [copy or clone the test cases](reference-qa.md#creating-manual-test-cases). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
+
+> [!TIP]
+> For more information about the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.md#testplans).
+
+
+
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
 [!INCLUDE [note-new-ui](includes/note-new-ui.md)] 
@@ -49,6 +73,9 @@ In general, you create test plans to test requirements. Prior to creating a test
 
 Now add test suites for the backlog items that need manual tests. These tests could be user stories, requirements, or other work items based your project.
 
+> [!NOTE] 
+> Requirement tracking is supported only for test cases linked through a **Requirement-based test suite**. The association between a requirement work item&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md)) and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
+
 1. To add a suite to a test plan, select the **+** new drop-down list and choose a type of test suite.
 
    ![Creating a requirement-based test suite](media/create-a-test-plan/AddRequirementSuitesToTestPlan.png) 
@@ -77,28 +104,6 @@ Or filter the list of tests using **Outcome**, **Tester**, and **Configuration**
   ![Finding a test plan](media/create-a-test-plan/select-test-plan.png)
   
 
-## Share work items across your test experience 
-****
-For example, you're building version 1.* of your product and you might create several test cases for that version.
-Each of these test cases can be updated, and more added, at any time.
-For each development cycle and release of your product, you create a test plan and import the existing test cases into that plan.
-You can also, if you wish, divide the test cases into separate test suites within the plan to enable easier management and monitoring of these separate sets of test cases.
-
-After you create your test plan, you [assign test configurations](test-different-configurations.md) and [assign testers](create-test-cases.md#assign-testers) to cover the required test matrix.
-These testers [run the tests](run-manual-tests.md) and gauge the quality of the product.
-Testers continue testing until the product meets exit criteria.
-For the next development cycle and release, you can create a new test plan and reuse the same test cases.
-You repeat this development-test-release cycle by importing the same test cases into each new test plan.
-
-The great thing is that, because test plans refer to test cases, updates to a test case automatically reflect in all the test plans and test suites that use it.
-
-In the next version of the product, you can reuse the existing test cases.
-However, a better option may be to [copy or clone the test cases](reference-qa.md#creating-manual-test-cases). A copy creates a new baseline. Changes to these new test cases don't affect your previous test plans.
-
-> [!TIP]
-> For more information about the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.md#testplans).
-
-
 
 ##  Next steps
 
@@ -109,4 +114,4 @@ However, a better option may be to [copy or clone the test cases](reference-qa.m
 
 * [Test objects and terms](test-objects-overview.md) 
 * [FAQs for manual testing](reference-qa.md#testplans)
-* [Link test cases to work items](../boards/queries/link-work-items-support-traceability.md)
+* [End-to-end traceability](../cross-service/end-to-end-traceability.md)
