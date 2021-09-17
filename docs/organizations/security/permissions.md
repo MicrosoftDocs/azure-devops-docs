@@ -39,6 +39,21 @@
   -[Add a team admin](../settings/add-team-administrator.md)  
   ::: moniker-end
   ---
+  **Wiki**  
+
+  -[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)  
+   :::column-end:::
+   :::column span="1":::
+  **DevOps**  
+
+  -[Git branch](../../repos/git/branch-permissions.md)  
+  -[Git repositories](../../repos/git/set-git-repository-permissions.md)  
+  -[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)  
+  -[Build and release pipelines](../../pipelines/policies/set-permissions.md)  
+  -[Approvals and approvers](../../pipelines/release/approvals/index.md)  
+  -[Task groups](../../pipelines/policies/set-permissions.md)   
+  -[Variable groups](../../pipelines/policies/set-permissions.md)  
+  -[Role-based resources](../../pipelines/policies/set-permissions.md)  
    :::column-end:::
    :::column span="1":::
   **Work tracking**
@@ -72,23 +87,7 @@
   ::: moniker-end
    :::column-end:::
 :::row-end:::
-:::row::
-   :::column span="1":::
-  **Wiki**
-  -[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)  
-   :::column-end:::
-   :::column span="1":::
-  **DevOps**
-  -[Git branch](../../repos/git/branch-permissions.md)  
-  -[Git repositories](../../repos/git/set-git-repository-permissions.md)  
-  -[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)  
-  -[Build and release pipelines](../../pipelines/policies/set-permissions.md)  
-  -[Approvals and approvers](../../pipelines/release/approvals/index.md)  
-  -[Task groups](../../pipelines/policies/set-permissions.md)   
-  -[Variable groups](../../pipelines/policies/set-permissions.md)  
-  -[Role-based resources](../../pipelines/policies/set-permissions.md)  
-   :::column-end:::
-:::row-end:::
+
    <a id="image-diff"></a>  
 
 >[!NOTE]  
