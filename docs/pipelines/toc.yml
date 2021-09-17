@@ -423,6 +423,8 @@
       - name: Deploy a virtual machine scale set
         href: apps/cd/azure/deploy-virtual-scale-set-java.md
         displayName: vmss, custom image
+      - name: Deploy apps to a virtual machine scale set (Classic)
+        href: apps/cd/azure/deploy-azure-scaleset.md
     - name: Azure Government Cloud
       href: library/government-cloud.md
     - name: Azure Stack
@@ -999,7 +1001,7 @@
     - name: Progressively expose releases using deployment rings
       href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Progressively expose features in production
-      href: ../migrate/phase-features-with-feature-flags.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+      href: https://docs.microsoft.com/devops/operate/progressive-experimentation-feature-flags?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
       displayName: feature-flags
 - name: Developer resources
   items:

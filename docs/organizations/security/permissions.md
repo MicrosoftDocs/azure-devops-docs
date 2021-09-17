@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/22/2021
+ms.date: 09/13/2021
 --- 
 
 
@@ -24,217 +24,72 @@ For a quick reference to default assignments, see [Default permissions and acces
 
 To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
-::: moniker range="azure-devops"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%">
-<h4>Users and groups</h4>
-<ul>
-<li><a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
-<li><a href="../accounts/add-organization-users.md">Add users to an organization</a></li> 
-<li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
-<li><a href="../settings/add-team-administrator.md">Make a user a team admin</a></li>
-</ul>
-<h4>Wiki</h4>
-<ul>
-<li><a href="../../project/wiki/manage-readme-wiki-permissions.md">README & Wiki</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>DevOps permissions</h4>
-<ul>
-<li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
-<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Build and release pipelines</a></li>
-<li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>    
-<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>    
-<li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>Work tracking </h4>
-<ul>
-<li><a href="set-permissions-access-work-tracking.md">Area and iteration paths</a></li>
-<li><a href="../../boards/queries/set-query-permissions.md">Work item queries and folders</a></li>
-<li><a href="../../boards/plans/edit-delivery-plan-permissions.md">Plan permissions</a></li>
-<li><a href="set-permissions-access-work-tracking.md#process-permissions">Customize process</a></li>
-</ul>
-<h4>Reporting permissions</h4>
-<ul>
-<li><a href="../../report/dashboards/dashboard-permissions.md#set-permissions">Dashboard permissions</a></li>
-<li><a href="../../report/powerbi/analytics-security.md">Analytics</a></li>
-<li><a href="../../report/powerbi/analytics-security.md">Analytics views</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019 || azure-devops-2020"
-
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%">
-<h4>Users and groups</h4>
-<ul>
-<li><a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
-<li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
-<li><a href="../settings/add-team-administrator.md">Make a user a team admin</a></li>
-</ul>
-<h4>Wiki</h4>
-<ul>
-<li><a href="../../project/wiki/manage-readme-wiki-permissions.md">README & Wiki</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>DevOps permissions</h4>
-<ul>
-<li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
-<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
-<li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>    
-<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>    
-<li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>Work tracking</h4>
-<ul>
-<li><a href="set-permissions-access-work-tracking.md">Area and iteration paths</a></li>
-<li><a href="../../boards/queries/set-query-permissions.md">Work item queries and folders</a></li>
-<li><a href="../../boards/plans/edit-delivery-plan-permissions.md">Plan permissions</a></li>
-<li><a href="set-permissions-access-work-tracking.md#process-permissions">Customize process</a></li>
-</ul>
-<h4>Reporting permissions</h4>
-<ul>
-<li><a href="../../report/dashboards/dashboard-permissions.md#set-permissions">Dashboard permissions</a></li>
-<li><a href="../../report/powerbi/analytics-security.md">Analytics</a></li>
-<li><a href="../../report/powerbi/analytics-security.md">Analytics views</a></li>
-<li><a href="../../report/admin/grant-permissions-to-reports.md">SQL Server Reports</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-::: moniker-end
-
-
-::: moniker range="tfs-2018"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%">
-<h4>Users and groups</h4>
-<ul>
-<li>
-<li><a href="/azure/devops/server/admin/add-administrator">Add users to Team Foundation Administrators group</a></li>
-<a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
-<li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
-<li><a href="../settings/add-team-administrator.md">Make a user a team admin</a></li>
-</ul>
-<h4>Wiki</h4>
-<ul>
-<li><a href="../../project/wiki/manage-readme-wiki-permissions.md">README &amp; Wiki</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>DevOps permissions</h4>
-<ul>
-<li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
-<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
-<li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#task-group">Task groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group">Variable groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>Work tracking </h4>
-<ul>
-<li><a href="set-permissions-access-work-tracking.md">Area and iteration paths</a></li>
-<li><a href="../../boards/queries/set-query-permissions.md">Work item queries and folders</a></li>
-<li><a href="../../boards/plans/edit-delivery-plan-permissions.md">Plan permissions</a></li>
-<li><a href="set-permissions-access-work-tracking.md">Customize process</a></li>
-</ul>
-<h4>Reporting permissions</h4>
-<ul>
-<li><a href="../../report/dashboards/dashboard-permissions.md#set-permissions">Dashboard permissions</a></li>
-<li><a href="../../report/admin/grant-permissions-to-reports.md">SQL Server Reports</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
-
-
-
-::: moniker range="<= tfs-2017"
-
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%">
-<h4>Users and groups</h4>
-<ul>
-<li><a href="/azure/devops/server/admin/add-administrator">Add users to Team Foundation Administrators group</a></li>
-<li><a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
-<li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
-<li><a href="../settings/add-team-administrator.md">Make a user a team admin</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>DevOps permissions</h4>
-<ul>
-<li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
-<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
-<li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>Work tracking </h4>
-<ul>
-<li><a href="set-permissions-access-work-tracking.md">Area and iteration paths</a></li>
-<li><a href="../../boards/queries/set-query-permissions.md">Work item queries and folders</a></li>
-<li><a href="../../boards/plans/edit-delivery-plan-permissions.md">Plan permissions</a></li>
-</ul>
-<h4>Reporting permissions</h4>
-<ul>
-<li><a href="../../report/dashboards/dashboard-permissions.md#set-permissions">Dashboard permissions</a></li>
-<li><a href="../../report/admin/grant-permissions-to-reports.md">SQL Server Reports</a></li>
-<li><a href="set-sharepoint-permissions.md">SharePoint integration</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
+---
+:::row:::
+   :::column span="1":::
+      **Users and groups**
+      ::: moniker range="azure-devops"
+      -[Add users to an administrator role](set-project-collection-level-permissions.md)  
+      -[Add users to an organization](../accounts/add-organization-users.md)  
+      -[Add users to a project or a team](add-users-team-project.md)  
+      -[Add a team admin](../settings/add-team-administrator.md)  
+      ::: moniker-end
+      ::: moniker range="< azure-devops"
+      -[Add a server-level administrator](/azure/devops/server/admin/add-administrator)  
+      -[Add users to an administrator role](set-project-collection-level-permissions.md)  
+      -[Add users to a project or team](add-users-team-project.md)  
+      -[Add a team admin](../settings/add-team-administrator.md)  
+      ::: moniker-end
+      ---
+      **Wiki**
+      -[README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)  
+   :::column-end:::
+   :::column span="1":::
+      **DevOps**
+      -[Git branch](../../repos/git/branch-permissions.md)  
+      -[Git repositories](../../repos/git/set-git-repository-permissions.md)  
+      -[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)  
+      -[Build and release pipelines](../../pipelines/policies/set-permissions.md)  
+      -[Approvals and approvers](../../pipelines/release/approvals/index.md)  
+      -[Task groups](../../pipelines/policies/set-permissions.md)   
+      -[Variable groups](../../pipelines/policies/set-permissions.md)      
+      -[Role-based resources](../../pipelines/policies/set-permissions.md)  
+      **Wiki**
+   :::column-end:::
+   :::column span="1":::
+      **Work tracking**
+      ::: moniker range=">= tfs-2017"
+      -[Area and iteration paths](set-permissions-access-work-tracking.md)  
+      -[Queries and folders](../../boards/queries/set-query-permissions.md)  
+      -[Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md)  
+      -[Customize process](set-permissions-access-work-tracking.md#process-permissions)  
+      ::: moniker-end
+      ::: moniker range="< tfs-2017"
+      -[Area and iteration paths](set-permissions-access-work-tracking.md)  
+      -[Queries and folders](../../boards/queries/set-query-permissions.md)  
+      -[Customize process](set-permissions-access-work-tracking.md#process-permissions)  
+      ::: moniker-end
+      ---
+      **Reporting**
+      ::: moniker range="azure-devops"
+      -[Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
+      -[Analytics](../../report/powerbi/analytics-security.md)  
+      -[Analytics views](../../report/powerbi/analytics-security.md)  
+      ::: moniker-end
+      ::: moniker range="> tfs-2018 < azure-devops"
+      -[Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
+      -[Analytics](../../report/powerbi/analytics-security.md)  
+      -[Analytics views](../../report/powerbi/analytics-security.md) 
+      -[SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) 
+      ::: moniker-end
+      ::: moniker range="<= tfs-2018"
+      -[Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)  
+      -[SQL Server Reports](../../report/admin/grant-permissions-to-reports.md) 
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
+---
+    
 
 
 <a id="image-diff"></a>  
@@ -696,12 +551,6 @@ Release Administrators (TFS 2017, Azure DevOps)
 
 For each project that you create, the system creates the followings project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
 
-> The full name of each of these groups is **[{project name}]\\{group name}**.
-> For example, the contributors group for a project called "My Project" is 
-> **[My Project]\\Contributors**.
-
-
-
 
 ::: moniker range="azure-devops"
 
@@ -730,6 +579,12 @@ For each project that you create, the system creates the followings project-leve
 [![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 ::: moniker-end
+
+
+> [!TIP]  
+> The full name of each of these groups is **[{project name}]\\{group name}**. 
+> For example, the contributors group for a project called "My Project" is 
+> **[My Project]\\Contributors**.
 
 :::row:::
    :::column span="1":::
@@ -1545,17 +1400,7 @@ You manage project-level permissions through the [web portal admin context](set-
     <tr>
         <td id="edit-team-project-level-information-permission">Edit project-level information</td>
         <td>
-            Can edit project level permissions for users and groups.
-            <blockquote>
-                <p>
-                    <strong>Edit project-level information</strong> includes the ability
-                    to perform these tasks for the project:
-                </p>
-                <ul>
-                    <li>Edit the project description</li>
-                    <li><a href="../settings/set-services.md">Modify project services visibility</a></li>
-                </ul>
-            </blockquote>
+            Can edit [project description](../projects/project-vision-status.md) and [project services visibility](../settings/set-services.md).
         </td>
     </tr>
     <tr>
@@ -1570,7 +1415,7 @@ You manage project-level permissions through the [web portal admin context](set-
     </tr>
     <tr>
         <td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
-        <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a>.</p>
+        <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work-items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update)">Work Items - update REST API</a>.</p>
        </td>
     </tr>
     <tr>
@@ -1579,13 +1424,13 @@ You manage project-level permissions through the [web portal admin context](set-
     </tr>
     <tr>
         <td id="view-team-project-level-information-permission">View project-level information</td>
-        <td>Can view project level group membership and permissions.</td>
+        <td>Can view project-level information, including security information group membership and permissions.</td>
     </tr>
     <tr><td><h4>Boards</hr></td><td> </td> 
     </tr>
     <tr>
         <td id="bypass-rules-permission">Bypass rules on work item updates</td>
-        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../settings/work/rule-reference.md" data-raw-source="[copy, constraint, or conditional rules](../settings/work/rule-reference.md)">copy, constraint, or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
+        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../settings/work/rule-reference.md" data-raw-source="[copy, constraint, or conditional rules](../settings/work/rule-reference.md)">copy, constraint, or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work-items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
         </td>
     </tr>
     <tr>
@@ -1667,7 +1512,7 @@ that have been saved under the Shared area.   </td>
     </tr>
     <tr>
         <td id="bypass-rules-permission">Bypass rules on work item updates</td>
-        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../settings/work/rule-reference.md" data-raw-source="[copy, constraint, or conditional rules](../settings/work/rule-reference.md)">copy, constraint, or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don&#39;t want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p></td>
+        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../settings/work/rule-reference.md" data-raw-source="[copy, constraint, or conditional rules](../settings/work/rule-reference.md)">copy, constraint, or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don&#39;t want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work-items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p></td>
     </tr>
     <tr>
         <td id="change-process-team-project-permission">Change process of project</td>
@@ -1762,7 +1607,7 @@ that have been saved under the Shared area.   </td>
     </tr>
     <tr>
         <td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
-        <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a>.</p>
+        <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work-items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update)">Work Items - update REST API</a>.</p>
         </td>
     </tr>
     <tr>
@@ -1837,7 +1682,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
    :::column-end:::
    :::column span="3":::
       Users with this permission can save a work item that ignores rules, such as [copy, constraint, or conditional rules](../settings/work/rule-reference.md), defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.  
-      Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).  
+      Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).  
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -2009,7 +1854,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
    :::column-end:::
    :::column span="3":::
       Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.  
-      Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via the [Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update).  
+      Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via the [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update).  
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -3054,7 +2899,7 @@ Create releases
 Delete release definition
 Delete release environment
 Delete releases
-Edit release definition
+Edit release pipeline
 Edit release environment
 Manage deployments
 Manage release approvers
@@ -3077,6 +2922,9 @@ View releases
 ::: moniker range=">= tfs-2017"
  
 You manage permissions [for each release defined in the web portal](../../pipelines/policies/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the project level, for a specific release pipeline, or for a specific environment in a release pipeline. Within this hierarchy, permissions can be inherited from the parent or overridden.
+
+
+:::image type="content" source="media/permissions/release-object-level-permissions.png" alt-text="Releases object-level permissions.":::
 
 > [!NOTE]   
 > The project-level Release Administrator's group is created at the same time the first release pipeline is defined. 
@@ -3140,7 +2988,7 @@ The following permissions are defined in Release Management. The scope column ex
     <tr>
         <td id="edit-release-permission">Edit release pipeline</td>
         <td>
-           Can save any changes to a release pipeline, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release pipeline. To make changes to a specific environment in a release pipeline, the user also needs <strong>Edit release environment</strong> permission. 
+           Can add and edit a release pipeline, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release pipeline. To make changes to a specific environment in a release pipeline, the user also needs <strong>Edit release environment</strong> permission. 
         </td>
         <td>
             Project, Release pipeline 
@@ -3149,7 +2997,7 @@ The following permissions are defined in Release Management. The scope column ex
     <tr>
         <td id="edit-release-environment-permission">Edit release environment</td>
         <td>
-            Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs <strong>Edit release definition</strong> permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs <strong>Manage releases</strong> permission to save the modified release.
+            Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs <strong>Edit release pipeline</strong> permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs <strong>Manage releases</strong> permission to save the modified release.
         </td>
         <td>
             Project, Release pipeline, Environment  
@@ -3176,7 +3024,7 @@ The following permissions are defined in Release Management. The scope column ex
     <tr>
         <td id="manage-releases-permission">Manage releases</td>
         <td>
-           Can edit the configuration in releases. To edit the configuration of a specific environment in a release instance, the user also needs <strong>Edit release environment</strong> permission.  
+           Can edit a release configuration, such as stages, approvers, and variables. To edit the configuration of a specific environment in a release instance, the user also needs <strong>Edit release environment</strong> permission.  
         </td>
         <td>
             Project, Release pipeline

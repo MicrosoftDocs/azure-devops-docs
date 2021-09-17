@@ -8,8 +8,8 @@ ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 09/07/2021
 ---
 
 
@@ -26,13 +26,11 @@ By default, only members of the Project Administrators group can create and edit
 By creating folders under Shared Queries, you can grant permissions to users for each folder. For example, if you have several teams contributing to a project, then you might want to create a folder under Shared Queries for each team to manage their own set of shared queries.  
 
 ## Prerequisites
-- To create or edit a shared query or manage permissions, you must be a member of the Project Collection Administrators or Project Administrators groups with Basic or higher access level 
-- Or, to create a query or folder under a shared query folder, you must have the **Contribute** permission set explicitly to **Allow** to and be granted Basic or higher access level 
-- Or, to change permissions of a query or query folder, you must have the **Manage Permissions** permission set explicitly to **Allow** and be granted Basic or higher access level. 
+- To create or edit a shared query or manage permissions, you must be a member of the Project Collection Administrators or Project Administrators groups with **Basic** or higher access level. 
+- Or, to create a query or folder under a shared query folder, you must have the **Contribute** permission set explicitly to **Allow**  and be granted **Basic** or higher access level. 
+- Or, to change permissions of a query or query folder, you must have the **Manage Permissions** permission set explicitly to **Allow** and be granted **Basic** or higher access level. 
 
-Users with Stakeholder access can't create or save queries in a Shared folder.  
-
-To learn more about access levels, see [About access levels](../../organizations/security/access-levels.md). 
+Users with Stakeholder access can't create or save queries in a Shared folder. To learn more about access levels, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
 
 > [!TIP]    
 > Consider creating a query folder for each team and give the team administrators or the team group query permissions to manage their folder. 
@@ -180,8 +178,7 @@ To keep anyone else from modifying a shared query that you create, you may want 
    ![Permissions dialog for a query, TFS 2018 and earlier versions](media/set-permissions-deny-for-query.png)
 
 ::: moniker-end
-
-
+ 
 
 ## Related articles  
 

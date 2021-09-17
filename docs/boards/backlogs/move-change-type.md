@@ -2,13 +2,13 @@
 title: Move work items, change work item type  
 titleSuffix: Azure Boards
 description: How to change type or move work items to another project in Azure Boards
-ms.custom: "boards-backlogs, seodec18" 
+ms.custom: "boards-backlogs, seodec18, cross-project" 
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 05/21/2021 
+ms.date: 09/07/2021
 ---
 
 # Move work items, change work item type 
@@ -41,11 +41,11 @@ In this article you'll learn:
 
 * You must be a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
-* To change the work item type, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
+* To change the work item type, you must be granted **Stakeholder** access or higher. 
 * To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set.
 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
+> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ In this article you'll learn:
 * To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
 * To move work items to another project, the project must use an Inherited process model.  
 * To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set.
-* To change the work item type, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
+* To change the work item type, you must be granted **Stakeholder** access or higher. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md).
 
 	> [!IMPORTANT]  
 	> You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you'll use the [Analytics Service](../../report/powerbi/what-is-analytics.md) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](../../report/admin/disable-data-warehouse.md). 

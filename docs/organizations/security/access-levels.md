@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 08/18/2021
+ms.date: 09/07/2021
 ---
 
 
@@ -36,7 +36,7 @@ Assign users or groups of users to one of the following access levels:
 
 ::: moniker range="azure-devops"
 
-- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Stakeholder**: Can be assigned to unlimited users for free. Provides partial access to private projects and mostly full access to public projects. Assign to users with no license or subscriptions who need access to a limited set of features. For feature access details, see [Stakeholder access quick reference](stakeholder-access.md). 
 - **Basic**: Provides access to most features. Assign to users with a Visual Studio Professional subscription, an Azure DevOps Server CAL, and to users for whom you're paying for Basic access in an organization.
 - **Basic + Test Plans**: Provides access to all features included in Basic, as well as Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
 - **Visual Studio subscription**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features that are included in their subscription level. If you assign Basic or Stakeholder, they also receive their Visual Studio subscription benefits upon sign-in.
@@ -684,7 +684,7 @@ To learn how to grant access to an extension, see [Get extensions for TFS](../..
 
 ::: moniker range="azure-devops"
 
-You can manage access levels programmatically using the [`az devops user add` (Azure DevOps Services only)](../accounts/add-organization-users.md) or the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+You can manage access levels programmatically using the [`az devops user add` (Azure DevOps Services only)](../accounts/add-organization-users.md) or the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
 
 | Access level (user interface)| AccountLicenseType | msdnLicenseType| 
 | --------------------------|-----------------------------|-----------|
@@ -702,7 +702,7 @@ You can manage access levels programmatically using the [`az devops user add` (A
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020" 
 
-You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
 
 | Access level (user interface)| AccountLicenseType | msdnLicenseType| 
 | --------------------------|-----------------------------|
@@ -716,7 +716,7 @@ You can manage access levels programmatically using the [User Entitlement - Add 
 
 ::: moniker range="tfs-2018" 
 
-You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
 
 | Access level (user interface)| AccountLicenseType | msdnLicenseType| 
 | --------------------------|-----------------------------|

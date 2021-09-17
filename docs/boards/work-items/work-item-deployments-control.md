@@ -2,7 +2,7 @@
 title: Link work items to deployments
 titleSuffix: Azure Boards
 description: Improve traceability, visualize and navigate to deployments which include work items by linking them to releases
-ms.custom: boards-work-items  
+ms.custom: boards-work-items, contperf-fy22q1  
 ms.technology: devops-agile
 ms.topic: how-to
 ms.author: kaelli

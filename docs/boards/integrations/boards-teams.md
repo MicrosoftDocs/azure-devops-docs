@@ -45,8 +45,8 @@ Read this article to learn how to:
 ## Prerequisites
 
 - To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md). 
-- To create subscriptions in a Teams channel for work item events, you must be a member of the Azure Boards Project Administrators group or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
-- To receive notifications, you must enable the **Third-party application access via OAuth** setting for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
+- To create subscriptions in a Teams channel for work item events, you must be a member of the Azure Boards Project Administrators group or or added to the team administrator role for the team. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add team administrator](../../organizations/settings/add-team-administrator.md). 
+- To receive notifications, you must enable the **Third-party application access via OAuth** setting for the Azure DevOps organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 
 > [!NOTE]
 > * You can link the Azure Boards app for Microsoft Teams only to a project hosted on Azure DevOps Services at this time.  
@@ -157,7 +157,7 @@ This command lists all the current subscriptions for the channel and allows you 
 
 ## Search and share work items using compose extension
 
-To help users search and share work items, the Azure Boards app for Microsoft Teams supports compose extension. You can search for work items by work item ID or by title. For compose extension to work, users must sign in to Azure Boards app either by running `@azure boards signin` command or by signing into the compose extension directly.
+To help users search and share work items, the Azure Boards app for Microsoft Teams supports compose extension. You can search for work items by work item ID, title, or supported functional command. For a list of commands, see [Functional work item search](../../project/search/functional-work-item-search.md). To use the compose extension, users must sign in to Azure Boards app either by running `@azure boards signin` command or by signing into the compose extension directly.
 
 ![Signing into the compose extension.](./media/integrations-teams/teams-boards-compose-extension.png)
 
@@ -283,7 +283,7 @@ In your organization if you are using a different email or tenant for Microsoft 
         <u>email2@pqr.com</u> (tenant 2) 
    </td>
    <td>
-        Sign in using <strong>Sign in with different email address</strong>, in the email id picker use the email2 to sign in to Azure DevOps.
+        Sign in using <strong>Sign in with different email address</strong>, in the email ID picker use the email2 to sign in to Azure DevOps.
    </td>
   </tr>
   <tr>

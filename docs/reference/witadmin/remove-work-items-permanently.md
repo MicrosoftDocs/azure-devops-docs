@@ -19,7 +19,7 @@ ms.date: 07/12/2018
 You can permanently remove work items from the on-premises Azure DevOps work tracking data store by using the **witadmin destroywi** command. Work items whose state is set to Closed remain in the database and can be reactivated. Use this command to permanently delete work items, after which you can't restore or reactivate them.  
 
 > [!NOTE]
-> This command has been deprecated for TFS 2018.2 and later versions. Instead, you can use the [Recycle bin](../../boards/backlogs/remove-delete-work-items.md#restore) to permanently delete work items, or use [REST API `DELETE`](/rest/api/azure/devops/wit/work%20items/delete).
+> This command has been deprecated for TFS 2018.2 and later versions. Instead, you can use the [Recycle bin](../../boards/backlogs/remove-delete-work-items.md#restore) to permanently delete work items, or use [REST API `DELETE`](/rest/api/azure/devops/wit/work-items/delete).
 
 You can run **witadmin destroywi** against an on-premises Azure DevOps Server only. 
 

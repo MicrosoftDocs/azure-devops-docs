@@ -4973,7 +4973,7 @@
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/share-steps-between-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases",
+      "redirect_url": "/azure/devops/test/share-steps-between-test-cases",
       "redirect_document_id": false
     },
     {
@@ -5258,7 +5258,7 @@
     },
     {
       "source_path": "docs/manual-test/mtm/share-steps-between-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases",
+      "redirect_url": "/azure/devops/test/share-steps-between-test-cases",
       "redirect_document_id": false
     },
     {
@@ -11997,6 +11997,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/artifacts/where-is-package-management.md",
+      "redirect_url": "/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/articles/migrate-to-vsts-from-tfs.md",
       "redirect_url": "/azure/devops/migrate/migrate-from-tfs",
       "redirect_document_id": false
@@ -12088,7 +12093,12 @@
     },
     {
       "source_path": "docs/articles/phase-features-with-feature-flags.md",
-      "redirect_url": "/azure/devops/migrate/phase-features-with-feature-flags",
+      "redirect_url": "/devops/operate/progressive-experimentation-feature-flags",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/migrate/phase-features-with-feature-flags.md",
+      "redirect_url": "/devops/operate/progressive-experimentation-feature-flags",
       "redirect_document_id": false
     },
     {
@@ -16993,7 +17003,7 @@
     },
     {
       "source_path": "docs/test/mtm/share-steps-between-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases",
+      "redirect_url": "/azure/devops/test/share-steps-between-test-cases",
       "redirect_document_id": false
     },
     {
@@ -18214,6 +18224,27 @@
       "source_path": "docs/pipelines/targets/webapp-linux.md",
       "redirect_url": "/azure/devops/pipelines/targets/webapp",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "docs/pipelines/get-started/index.md",
+      "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/azure/build-azure-vm-template.md",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/azure/deploy-arm-template",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/new-test-plans-page.md",
+      "redirect_url": "/azure/devops/test/navigate-test-plans",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/preview/new-test-plan-page.md",
+      "redirect_url": "/azure/devops/test/navigate-test-plans",
+      "redirect_document_id": false
+    } 
   ]
 }
+

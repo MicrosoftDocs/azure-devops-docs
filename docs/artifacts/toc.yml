@@ -15,9 +15,6 @@
   - name: Search packages
     href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
     displayName: search, packages
-  - name: Where is Package Management?
-    href: where-is-package-management.md
-    displayName: tfs, package management 
 - name: Packages
   items:
   - name: About
@@ -45,9 +42,9 @@
     - name: Publish to NuGet.org
       href: nuget/publish-to-nuget-org.md
       displayName: publish package, nuget package, nuget.org 
-    - name: Consume NuGet packages in Visual Studio
+    - name: Install NuGet packages with Visual Studio
       href: nuget/consume.md
-      displayName: consume package, nuget package, consume, visual studio
+      displayName: install package, nuget, visual studio
     - name: Use NuGet with Artifacts feeds
       href: nuget/nuget-exe.md
       displayName: nuget package, artifacts feeds, publish packages, download packages 

@@ -23,9 +23,9 @@ Deployment jobs provide the following benefits:
  - **Apply deployment strategy**: You define how your application is rolled out.
 
    > [!NOTE] 
-   > We currently support only the *runOnce*, *rolling*, and the *canary* strategies. 
+   > We currently support only the *runOnce*, *rolling*, and the *canary* strategies.  
 
-A deployment job doesn't automatically clone the source repo. You can checkout the source repo within your job with `checkout: self`. 
+A deployment job doesn't automatically clone the source repo. You can checkout the source repo within your job with `checkout: self`. Deployment jobs only support one checkout step. 
 
 ## Schema
 
@@ -533,3 +533,6 @@ Learn more about how to [set a multi-job output variable](variables.md#set-a-mul
  
 This can happen when there is a name conflict between two jobs. Verify that any deployment jobs in the same stage have a unique name and that job and stage names do not contain keywords. If renaming does not fix the problem, review [troubleshooting pipeline runs](../troubleshooting/troubleshooting.md).
 
+### Are decorators supported in deployment groups?
+
+No. You can't use decorators in deployment groups.

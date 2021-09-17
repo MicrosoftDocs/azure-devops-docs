@@ -54,14 +54,14 @@ If you're using this import method, determine where to create your SQL Azure VM 
 
 | Desired import region | SQL Azure VM region |
 | --- | --- |
-| Central United States | Central US, East US, East US 2, North Central US, South Central US, West Central US, West US, West US 2 |
-| Western Europe | North Europe, West Europe |
-| Australia East | Australia Central, Australia East, Australia Southeast |
+| Central United States | Central US |
+| Western Europe |  West Europe |
+| Australia East | Australia East |
 | Brazil South | Brazil South |
-| South India | Central India, South India, West India |
-| Central Canada | Canada Central, Canada East |
+| South India | South India |
+| Central Canada | Canada Central |
 | Asia Pacific | Southeast Asia (Singapore) |
-| UK South | UK South, UK West |
+| UK South | UK South |
 
 <br> 
 
@@ -242,7 +242,7 @@ If you included preview features with your import, add an exception for the anal
 
 ## Configure IP firewall exceptions
 
-Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started, go to your SQL Azure VM in the [Azure portal](https://ms.portal.azure.com). In **Settings**, select **Networking**. This will take you to the network interface page for your SQL Azure VM. The data migration tool requires the Azure DevOps Services IPs to be configured for inbound connections only on port 1431. You can grant exceptions for the IPs by selecting **Add inbound port rule** in the networking settings. 
+Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started, go to your SQL Azure VM in the [Azure portal](https://ms.portal.azure.com). In **Settings**, select **Networking**. This will take you to the network interface page for your SQL Azure VM. The data migration tool requires the Azure DevOps Services IPs to be configured for inbound connections only on port 1433. You can grant exceptions for the IPs by selecting **Add inbound port rule** in the networking settings. 
 
 ![Screenshot of the "Add inbound port rule" button on your SQL Azure VM network interface page.](media/migration-import/inbound.png)
 
