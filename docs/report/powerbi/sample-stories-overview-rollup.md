@@ -25,6 +25,9 @@ An example is shown in the following image.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Stories Overview Rollup Report](media/odatapowerbi-storiesoverview-rollup.png)
 
+> [!NOTE] 
+> Requirement tracking is supported only for test cases linked through a [**Requirement-based test suite**](../../test/create-a-test-plan.md#backlog). The association between a requirement work item&mdash;User Story ([Agile](../../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../../boards/get-started/plan-track-work.md)) and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
+
 [!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)]
 
 [!INCLUDE [stories-overview-prereqs](includes/sample-stories-overview-prereqs.md)]
