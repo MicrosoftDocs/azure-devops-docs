@@ -283,7 +283,7 @@ In your organization if you are using a different email or tenant for Microsoft 
         <u>email2@pqr.com</u> (tenant 2) 
    </td>
    <td>
-        Sign in using <strong>Sign in with different email address</strong>, in the email id picker use the email2 to sign in to Azure DevOps.
+        Sign in using <strong>Sign in with different email address</strong>, in the email ID picker use the email2 to sign in to Azure DevOps.
    </td>
   </tr>
   <tr>
