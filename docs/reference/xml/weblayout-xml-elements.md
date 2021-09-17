@@ -213,167 +213,244 @@ You can specify how information and work item fields are grouped and appear in a
 > [!TIP]  
 > The schema definition for work item tracking defines all **FORM** child elements as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](control-xml-element-reference.md).    
 
-
-<table width="100%" >
-<thead>
-<tr>
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-    <td><strong>Control</strong></td>
-    <td>Optional child element for a <strong>Group</strong> within <strong>WebLayout</strong>. Defines a field, text, hyperlink, or other control element to appear on the work item form.
-<pre><code>&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;DateTimeControl | ExtensionsControl | 
-FieldControl | HtmlFieldControl | LabelControl | WebpageControl&quot; 
-Label=&quot;LabelText&quot; EmptyText=&quot;TextString&quot;
-ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
-</code></pre>
-<p>See <a href="#control-attributes" data-raw-source="[Control element attributes](#control-attributes)">Control element attributes</a> and <a href="#control-types" data-raw-source="[control type](#control-types)">control type</a> for information about each attribute.</p></td>
-</tr>
-<tr>
-    <td><p><strong>ControlContribution</strong></p></td>
-    <td><p>Optional child element of <strong>Group</strong> within <strong>WebLayout</strong> used to specify a field-level work item extension to appear on the form.   </p>
-<pre><code>&lt;ControlContribution Id="ContributionId" Label="Name"  &gt;
-   &lt;Inputs&gt;
-      &lt;Input Id="FieldName" Value="Value" /&gt;
-   &lt;/Inputs&gt;
-&lt;/ControlContribution&gt;
-</code></pre>
-<p>The <em>ContributionId</em> you specify must be installed on the account or project collection. The WIT definition files that you export contain a <a href="#extensions" data-raw-source="[list of installed contributions](#extensions)">list of installed contributions</a>.</p>
-</td>
-</tr>
-<tr>
-    <td><p><strong>Extension</strong></p></td>
-    <td><p>Required child element for <strong>Extensions</strong>. Use to specify an extension ID of a work item control extension to display in the work item form. You must specify each extension that is used in the layout for a <strong>ControlContribution</strong>, <strong>GroupContribution</strong>, or <strong>PageContribution</strong> element. </p>
-<pre><code>&lt;Extension Id="ExtensionId" /&gt;
-</code></pre>
-<p>The <em>ExtensionId</em> you specify must be installed on the account or project collection. The WIT definition files that you export contain a <a href="#extensions" data-raw-source="[list of installed extensions](#extensions)">list of installed extensions</a>.</p>
-<p> </p>
-</td>
-</tr>
-<tr>
-    <td><p><strong>Extensions</strong></p></td>
-    <td><p>Optional container child element of <strong>WebLayout</strong> used to support specifying one or more <strong>Extension</strong> elements. If extensions are used in the form, specify them prior to a <strong>Page</strong> element. </p>
-<pre><code>&lt;WebLayout &gt;
-   &lt;Extensions &gt;
-       &lt;Extension Id="ExtensionId" /&gt;
-      . . . 
-   &lt;/Extensions &gt;
-. . .
-&lt;/WebLayout &gt;
-</code></pre>
-</td>
-</tr>
-<tr>
-<td><p><strong>FORM</strong></p></td>
-<td><p>Required child element of <strong>WITD</strong> used to specify the layout and controls to appear on the work item form. Parent element for both the <strong>Layout</strong> (client form layout) and <strong>WebLayout</strong> (web form layout) elements. </p>
-<pre><code>&lt;FORM&gt;
-      &lt;Layout&gt; . . . &lt;/Layout&gt;
-      &lt;WebLayout&gt; . . . &lt;/WebLayout&gt;
-&lt;/FORM&gt;</code></pre></td>
-</tr>
-<tr>
-<td><p><strong>Group</strong> </p></td>
-<td><p>Required child element of <strong>Section</strong>. Provides a visual grouping of elements within a section which you can label. </p>
-<pre><code>&lt;Group Label=&quot;LabelText&quot; 
-   &lt;Control&gt; . . . &lt;/Control&gt;
-&lt;/Group &gt;</code></pre></td>
-</tr>
-<tr>
-    <td><p><strong>GroupContribution</strong></p></td>
-    <td><p>Optional child element of <strong>Section</strong> within  <strong>WebLayout</strong> used to specify a group-level work item extension to appear on the form. The extension will appear as a group within the form.   </p>
-<pre><code>&lt;GroupContribution Id="ContributionId" Label="Name" /&gt;
-</code></pre>
-<p>The <em>ContributionId</em> you specify must be installed on the account or project collection. The WIT definition files that you export contain a <a href="#extensions" data-raw-source="[list of installed contributions](#extensions)">list of installed contributions</a>.</p>
-</td>
-</tr>
-<tr>
-    <td><p><strong>Input</strong></p></td>
-    <td><p>Required child element for <strong>Inputs</strong> that specifies input data for an extension.  </p>
-<pre><code>&lt;Input Id="FieldName" Value="Value" /&gt;
-</code></pre>
-</td>
-</tr>
-<tr>
-    <td><p><strong>Inputs</strong></p></td>
-    <td><p>Optional container child element for <strong>ControlContribution</strong> used to support specification of input data for an extension.   </p>
-<pre><code>&lt;Inputs&gt;
-   &lt;Input Id="FieldName" Value="Value" /&gt;
-&lt;/Inputs&gt;
-</code></pre>
-</td>
-</tr>
-<tr>
-    <td><p><strong>Page</strong></p></td>
-    <td><p>Required child element of <strong>WebLayout</strong>. Defines the layout of a page within the web form.  </p>
-<p>Specify the name of the page and the layout to use. 
-<pre><code>&lt;Page Label="PageName" LayoutMode="FirstColumnWide | EqualColumns "&gt;  
-      &lt;Section&gt;  
-          &lt;Group&gt; . . . 
-              &lt;Control&gt; . . . &lt;/Control&gt;
-              &lt;Control&gt; . . . &lt;/Control&gt;
-          &lt;/Group&gt;
-      &lt;/Section&gt;
-&lt;/Page&gt;</code></pre>
-</td>
-</tr>
-<tr>
-    <td><p><strong>PageContribution</strong></p></td>
-    <td><p>Optional child element of <strong>WebLayout</strong> used to specify a page-level work item extension to appear on the form. The extension will appear as a page within the form. </p>
-<pre><code>&lt;PageContribution Id="ContributionId" Label="Name"  /&gt;
-</code></pre>
-<p>The <em>ContributionId</em> you specify must be installed on the account or project collection. The WIT definition files that you export contain a <a href="#extensions" data-raw-source="[list of installed contributions](#extensions)">list of installed contributions</a>.</p>
-</td>
-</tr>
-<tr>
-    <td><p><strong>Section</strong></p></td>
-<td><p>Required child element of <strong>Page</strong>. Defines the layout of a section within a page of the web form. Sections form groups that <a href="../customize-wit-form.md#resizing" data-raw-source="[support variable resizing](../customize-wit-form.md#resizing)">support variable resizing</a>. A limit of four sections can be defined within a <strong>Page</strong>. </p>
-<pre><code>&lt;Page&gt;  
-      &lt;Section&gt;  
-          &lt;Group&gt; . . . 
-              &lt;Control&gt; . . . &lt;/Control&gt;
-              &lt;Control&gt; . . . &lt;/Control&gt;
-          &lt;/Group&gt;
-      &lt;/Section&gt;
-&lt;/Page&gt;</code></pre>
-</td>
-</tr>
-<tr>
-<td><strong>SystemControls</strong></td>
-<td><p>Required child element for <strong>WebLayout</strong>. Defines the labels and empty text values for controls present in the header of the web form . This also includes, the labels for the History, Links, and Attachments pages.</p>
-<pre><code>&lt;SystemControls&gt;  
-    &lt;Control Type="FieldControl" FieldName="System.Title" EmptyText="Enter title" /&gt; 
-    &lt;Control Label="Assi&amp;gned To" Type="FieldControl" FieldName="System.AssignedTo" /&gt;
-    &lt;Control Label="Stat&amp;e" Type="FieldControl" FieldName="System.State" /&gt;
-    &lt;Control Label="Reason" Type="FieldControl" FieldName="System.Reason" /&gt;
-    &lt;Control Label="&amp;Area" Type="WorkItemClassificationControl" FieldName="System.AreaPath" /&gt;
-    &lt;Control Label="Ite&amp;ration" Type="WorkItemClassificationControl" FieldName="System.IterationPath" /&gt;
-    &lt;Control Label="History" Type="WorkItemLogControl" FieldName="System.History" /&gt;
-    &lt;Control Label="Links" Type="LinksControl" Name="Links" /&gt;
-    &lt;Control Label="Attachments" Type="AttachmentsControl" Name="Attachments" /&gt;
-&lt;/SystemControls&gt;</code></pre>
-</td>
-</tr>
-<tr>
-    <td><strong>WebLayout</strong></td>
-    <td>Required child element of <strong>FORM</strong>. Defines the layout of the work item form displayed in the web portal. Includes one or more <strong>Page</strong> elements.
-<pre><code>&lt;WebLayout&gt; 
-      &lt;Page&gt;  
-          &lt;Section&gt;  
-              &lt;Group&gt; . . . 
-                  &lt;Control&gt; . . . &lt;/Control&gt;
-                  &lt;Control&gt; . . . &lt;/Control&gt;
-              &lt;/Group&gt;
-          &lt;/Section&gt;
-      &lt;/Page&gt;
-. . .
-&lt;/WebLayout&gt;</code></pre>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+      Element
+   :::column-end:::
+   :::column span="4":::
+      Description
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **Control**
+   :::column-end:::
+   :::column span="4":::
+      Optional child element for a <strong>Group</strong> within <strong>WebLayout</strong>. Defines a field, text, hyperlink, or other control element to appear on the work item form.
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <Control FieldName="FieldName" Type="DateTimeControl | ExtensionsControl |  
+      FieldControl | HtmlFieldControl | LabelControl | WebpageControl" 
+      Label="LabelText" EmptyText="TextString"
+      ReadOnly="True | False" Name="InstanceName" />
+      ```
+      See [Control element attributes](#control-attributes) and [control type](#control-types)for information about each attribute.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+     **ControlContribution**
+   :::column-end:::
+   :::column span="4":::
+      Optional child element of <strong>Group</strong> within <strong>WebLayout</strong> used to specify a field-level work item extension to appear on the form.   </p>
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <ControlContribution Id="ContributionId" Label="Name"  >
+         <Inputs>
+            <Input Id="FieldName" Value="Value" />
+         </Inputs>
+      </ControlContribution>
+      ```
+      The *ContributionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Extension**
+   :::column-end:::
+   :::column span="4":::
+      Required child element for <strong>Extensions</strong>. Use to specify an extension ID of a work item control extension to display in the work item form. You must specify each extension that is used in the layout for a <strong>ControlContribution</strong>, <strong>GroupContribution</strong>, or <strong>PageContribution</strong> element. 
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <Extension Id="ExtensionId" />
+      ```
+      The <em>ExtensionId</em> you specify must be installed on the account or project collection. The WIT definition files that you export contain a <a href="#extensions" data-raw-source="[list of installed extensions](#extensions)">list of installed extensions</a>.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Extensions
+   :::column-end:::
+   :::column span="4":::
+      Optional container child element of **WebLayout** used to support specifying one or more **Extension** elements. If extensions are used in the form, specify them prior to a **Page** element.
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <WebLayout >
+         <Extensions >
+             <Extension Id="ExtensionId" />
+            . . . 
+         </Extensions >
+      . . .
+      </WebLayout >
+      ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      FORM
+   :::column-end:::
+   :::column span="4":::
+      Required child element of **WITD** used to specify the layout and controls to appear on the work item form. Parent element for both the **Layout** (client form layout) and **WebLayout** (web form layout) elements.
+       > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <FORM>
+          <Layout> . . . </Layout>
+          <WebLayout> . . . </WebLayout>
+      </FORM>
+      ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Group
+   :::column-end:::
+   :::column span="4":::
+      Required child element of **Section**. Provides a visual grouping of elements within a section which you can label.
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <Group Label="LabelText" 
+         <Control> . . . </Control>
+      </Group >
+      ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      GroupContribution
+   :::column-end:::
+   :::column span="4":::
+      Optional child element of **Section<** within **WebLayout** used to specify a group-level work item extension to appear on the form. The extension will appear as a group within the form.
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <GroupContribution Id="ContributionId" Label="Name" />
+      ```
+     The <em>ContributionId</em> you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Input
+   :::column-end:::
+   :::column span="4":::
+      Required child element for **Inputs** that specifies input data for an extension.
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <Input Id="FieldName" Value="Value" />
+      ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Inputs
+   :::column-end:::
+   :::column span="4":::
+      Optional container child element for **ControlContribution** used to support specification of input data for an extension.
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <Inputs>
+         <Input Id="FieldName" Value="Value" />
+      </Inputs>
+      ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Page
+   :::column-end:::
+   :::column span="4":::
+      Required child element of **WebLayout**. Defines the layout of a page within the web form.   
+      Specify the name of the page and the layout to use. 
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <Page Label="PageName" LayoutMode="FirstColumnWide | EqualColumns ">  
+            <Section>  
+                <Group> . . . 
+                    <Control> . . . </Control>
+                    <Control> . . . </Control>
+                </Group>
+            </Section>
+      </Page>
+      ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      PageContribution
+   :::column-end:::
+   :::column span="4":::
+      Optional child element of **WebLayout** used to specify a page-level work item extension to appear on the form. The extension will appear as a page within the form. 
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <PageContribution Id="ContributionId" Label="Name"  />
+      ```
+     The *ContributionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Section
+   :::column-end:::
+   :::column span="4":::
+      Required child element of **Page**. Defines the layout of a section within a page of the web form. Sections form groups that [support variable resizing](../customize-wit-form.md#resizing). A limit of four sections can be defined within a **Page**. 
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <Page>  
+            <Section>  
+                <Group> . . . 
+                    <Control> . . . </Control>
+                    <Control> . . . </Control>
+                </Group>
+            </Section>
+      </Page>
+      ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      SystemControls
+   :::column-end:::
+   :::column span="4":::
+      Required child element for **WebLayout**. Defines the labels and empty text values for controls present in the header of the web form . This also includes, the labels for the **History**, **Links**, and **Attachments** pages
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <SystemControls>  
+          <Control Type="FieldControl" FieldName="System.Title" EmptyText="Enter title" /> 
+          <Control Label="Assi&gned To" Type="FieldControl" FieldName="System.AssignedTo" />
+          <Control Label="Stat&e" Type="FieldControl" FieldName="System.State" />
+          <Control Label="Reason" Type="FieldControl" FieldName="System.Reason" />
+          <Control Label="&Area" Type="WorkItemClassificationControl" FieldName="System.AreaPath" />
+          <Control Label="Ite&ration" Type="WorkItemClassificationControl" FieldName="System.IterationPath" />
+          <Control Label="History" Type="WorkItemLogControl" FieldName="System.History" />
+          <Control Label="Links" Type="LinksControl" Name="Links" />
+          <Control Label="Attachments" Type="AttachmentsControl" Name="Attachments" />
+      </SystemControls>
+      ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      WebLayout
+   :::column-end:::
+   :::column span="4":::
+      Required child element of **FORM**. Defines the layout of the work item form displayed in the web portal. Includes one or more **Page** elements.
+      > [!div class="tabbedCodeSnippets"]
+      ```XML
+      <WebLayout> 
+            <Page>  
+                <Section>  
+                    <Group> . . . 
+                        <Control> . . . </Control>
+                        <Control> . . . </Control>
+                    </Group>
+                </Section>
+            </Page>
+      . . .
+      </WebLayout>
+      ```
+   :::column-end:::
+:::row-end::: 
+      
 
 
 
