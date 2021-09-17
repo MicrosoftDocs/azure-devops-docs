@@ -204,6 +204,6 @@ Now that we built a Docker image and pushed it to Azure Container Registry. we m
 
 ## Related article
 
-- [Deploy a web app to Azure App Services](../apps/cd/deploy-webdeploy-webapps.md)
+- [Deploy a web app to Azure App Service](../apps/cd/deploy-webdeploy-webapps.md)
 - [Deploy to Azure Web App for Containers](../apps/cd/deploy-docker-webapp.md)
 - [Deploy a Docker container app to Azure Kubernetes Service](../apps/cd/deploy-aks.md)
