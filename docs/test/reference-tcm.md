@@ -33,21 +33,21 @@ You can view basic reporting information within Microsoft Test Manager:
 
   ![clip_image002](media/tcm-reporting/tcm-02.png)
 
-## I would like to create reports in Excel using Work Item Queries, but I cannot do so for all the Test artifacts such as Test Suites, Test Runs etc? Why?
+## I would like to create reports in Excel using Work Item Queries, but I cannot do so for all the Test artifacts such as Test Suites, Test Runs, etc.? Why?
 
 [Creating Reports in Microsoft Excel by Using Work Item Queries](../report/create-status-and-trend-excel-reports.md?viewFallbackFrom=azure-devops)
 
 You can use the above method to query for any TFS "Work Items". So, you should be able to create a report for "Test Case", "Bug", "Task" work items.
 
-However, all the other Test artifacts, such as Test Plan, Test Settings, Test Configurations, Test Suites, Test Points etc are not "work items". Hence, you cannot use the work item queries for them.
+However, all the other Test artifacts, such as Test Plan, Test Settings, Test Configurations, Test Suites, Test Points, etc., are not "work items". Hence, you cannot use the work item queries for them.
 
 ![clip_image003](media/tcm-reporting/tcm-03.png)
 
 All the test artifacts which are enclosed within the black box (in above diagram) are not work items but they are stored directly within the Test Case Management store.
 
-## The reporting information shown within MTM is very basic in nature - are there any other Test reports that ship out-of-the-box that I can use?
+## The reporting information shown within MTM is basic in nature - are there any other Test reports that ship out-of-the-box that I can use?
 
-Most of the out-of-the-box TFS reports, including Test related reports, can be accessed from within Team Explorer.
+Most of the out-of-the-box TFS reports, including Test-related reports, can be accessed from within Team Explorer.
 
 There are two types of reports that can be viewed from Team Explorer - Excel Reports and SQL Reporting Services Reports.
 
@@ -55,9 +55,9 @@ There are two types of reports that can be viewed from Team Explorer - Excel Rep
 
    ![clip_image004](media/tcm-reporting/tcm-04.png)
 
-   All the test specific reports are highlighted in the above diagram.
+   All the test-specific reports are highlighted in the above diagram.
 
-   Details of each of the Test related reports can be found below:
+   Details of each of the Test-related reports can be found below:
 
    * [Test Management Reports](/previous-versions/azure/devops/report/excel/test-management-reports)
 
@@ -87,9 +87,9 @@ There are two types of reports that can be viewed from Team Explorer - Excel Rep
 
    ![clip_image005](media/tcm-reporting/tcm-05.png)
 
-   All the test specific reports are highlighted in the above diagram.
+   All the test-specific reports are highlighted in the above diagram.
 
-   Details of each of the Test related reports can be found below:
+   Details of each of the Test-related reports can be found below:
 
    * [Build Quality Indicators Report](../report/sql-reports/build-quality-indicators-report.md)
 
@@ -155,7 +155,7 @@ There are two ways of doing this, start from scratch or use one of the existing 
 
      ![clip_image011](media/tcm-reporting/tcm-11.jpg)
 
-  1. This should connect you to the TFS_Analysis database. If your Azure DevOps data warehouse uses SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube. Choose the CUBE or the TEST perspective to create test related reports.
+  1. This should connect you to the TFS_Analysis database. If your Azure DevOps data warehouse uses SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube. Choose the CUBE or the TEST perspective to create test-related reports.
 
      ![clip_image012](media/tcm-reporting/tcm-12.jpg)
 
@@ -177,9 +177,9 @@ There are two ways of doing this, start from scratch or use one of the existing 
 
   The simplicity of Excel reports (of just using drag and drop of dimensions or measures) is one of the main reasons why you will see a lot more out-of-the-box reports for Excel rather than Reporting Services based reports.
 
-## What are the different Test related measures in the Analysis Services cube that I can use to create my custom test reports?
+## What are the different Test-related measures in the Analysis Services cube that I can use to create my custom test reports?
 
-All the test related measures present in the Analysis Services cube are shown below:
+All the test-related measures present in the Analysis Services cube are shown below:
 
 ![clip_image016](media/tcm-reporting/tcm-16.png)
 
@@ -191,13 +191,13 @@ A list of all the perspectives and measure groups present in Team Foundation Ser
 
 [https://msdn.microsoft.com/library/ms244710.aspx](../report/sql-reports/perspective-measure-groups-cube.md)
 
-## What are the different Test related dimensions in the Analysis Services cube that I can use to create my custom test reports?
+## What are the different Test-related dimensions in the Analysis Services cube that I can use to create my custom test reports?
 
 All the dimensions present in the Analysis Services cube are shown below:
 
 ![clip_image017](media/tcm-reporting/tcm-17.png)
 
-Description for all the Test specific dimensions can be found here:
+Description for all the Test-specific dimensions can be found here:
 
 [https://msdn.microsoft.com/library/ms244708.aspx#dimensions](../report/sql-reports/perspective-test-analyze-report-test-results.md#dimensions)
 
@@ -233,7 +233,7 @@ However, there are couple of ways of getting this Step related data:
 
    - "Test Run Summary" view which you can use to get detailed Run level information - however it does not provide a breakdown of individual test results within a particular test run.
 
-## I want to write a custom 3rd party warehouse adapter, how should I go about it?
+## I want to write a custom third-party warehouse adapter, how should I go about it?
 
 You can find a Sample custom warehouse adapter below, that you can use as a starting point:
 
