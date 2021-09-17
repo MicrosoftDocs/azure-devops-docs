@@ -1319,7 +1319,7 @@
   <a id="create-process-permission" />Create process
    :::column-end:::
    :::column span="3":::
-  Can [create an inherited process](../settings/work/manage-process.md)"> used to customize work tracking and Azure Boards. Requires the collection to be configured to support the Inherited process model.  
+  Can [create an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. Requires the collection to be configured to support the Inherited process model.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -2636,7 +2636,8 @@
    Can create and publish branches in the repository. 
    Lack of this permission does not limit users from creating branches in their local repository; it merely prevents them from publishing local branches to the server.  
    
-   > **NOTE**: When a user creates a new branch on the server, they have Contribute, Edit Policies, Force Push, Manage Permissions, and Remove Others&#39; Locks permissions for that branch by default. This means that users can add new commits to the repo via their branch.
+   > [!NOTE]  
+   > When a user creates a new branch on the server, they have Contribute, Edit Policies, Force Push, Manage Permissions, and Remove Others&#39; Locks permissions for that branch by default. This means that users can add new commits to the repo via their branch.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -3336,7 +3337,7 @@
    :::column-end:::
    :::column span="2":::
    
-   [.Can create new tags and apply them to work items.](../../boards/queries/add-tags-to-work-items.md)
+   [Can create new tags and apply them to work items.](../../boards/queries/add-tags-to-work-items.md)
    Users without this permission can only select from the existing set of tags for the project.
    
    > By default, Contributors are assinged the **Create tag definition** permission.  

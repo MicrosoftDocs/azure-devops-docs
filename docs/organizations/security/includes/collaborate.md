@@ -1026,10 +1026,11 @@ ms.date: 08/18/2021
 :::row-end:::
 :::row:::
    :::column span="1":::
-   READMEs<p><em>Can view project READMEs, but not READMEs defined for a repository.</em></p>
+   READMEs  
+   *Can view project READMEs, but not READMEs defined for a repository.*
    :::column-end:::
    :::column span="1":::
-   <em>Partial access</em>
+   *Partial access*
    :::column-end:::
    :::column span="1":::
    ✔️
