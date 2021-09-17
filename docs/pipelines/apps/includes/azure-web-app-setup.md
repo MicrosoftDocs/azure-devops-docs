@@ -7,7 +7,7 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
-### Create the Azure app service
+### Create the Azure App Aervice
 
 An [Azure App Service](/azure/app-service/overview) is where you'll deploy your application. Technically speaking, an app service is a resource with a specific pricing tier in Azure that can then host multiple, distinct applications. In this example we'll use a [Web App](/azure/app-service/overview).
 If you're creating a new App Service for this example, you can use the [Free pricing tier](https://azure.microsoft.com/pricing/details/app-service/).

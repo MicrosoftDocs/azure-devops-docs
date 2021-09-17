@@ -34,7 +34,7 @@ If you're just getting started, we recommend you review and get started with the
       [Azure DevOps Projects/Azure DevOps Starter](https://azure.microsoft.com/features/devops-projects/)
    :::column-end::: 
    :::column span="3":::
-      Start using Azure Pipelines to automate the setup of a CI/CD of your application to Azure. Choose where to  deploy your application such as Virtual Machines, App Service, Azure Kubernetes Services (AKS), Azure SQL Database, or Azure Service Fabric.  
+      Start using Azure Pipelines to automate the setup of a CI/CD of your application to Azure. Choose where to  deploy your application such as Virtual Machines, Azure App Service, Azure Kubernetes Services (AKS), Azure SQL Database, or Azure Service Fabric.  
       To learn more, see [Overview of DevOps Starter](/azure/devops-project/overview).
    :::column-end:::
 :::row-end:::
@@ -83,7 +83,7 @@ Follow the links provided in the following table to learn more about the Azure s
        An HTTP-based service for hosting web applications, REST APIs, and mobile back ends; the Azure App Service employs Azure Pipelines to deliver CI/CD. To learn more, see:  
       - [App Service overview](/azure/app-service/overview)
       - [Deploy an Azure Web App](targets/webapp.md)
-      - [Deploy a web app to Azure App Services (Classic)](apps/cd/deploy-webdeploy-webapps.md)
+      - [Deploy a web app to Azure App Service (Classic)](apps/cd/deploy-webdeploy-webapps.md)
       - [Use CI/CD to deploy a Python web app to Azure App Service on Linux](ecosystems/python-webapp.md)
       - [Continuously deploy from a Jenkins build](release/integrate-jenkins-pipelines-cicd.md)
       - [Azure App Service Deploy task](tasks/deploy/azure-rm-web-app-deployment.md)

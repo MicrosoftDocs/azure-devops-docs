@@ -100,7 +100,10 @@ For an overview of test artifacts, see [Test objects and terms](test-objects-ove
 
 ## Related articles
 
-* [Test objects and terms](test-objects-overview.md) 
-* [FAQs for manual testing](reference-qa.md#testcases)
-* [Link test cases to work items](../boards/queries/link-work-items-support-traceability.md)
+- [Share steps between test cases](share-steps-between-test-cases.md)
+- [Test different configurations](test-different-configurations.md)
+- [Repeat a test with different data](repeat-test-with-different-data.md)
+- [Test objects and terms](test-objects-overview.md) 
+- [FAQs for manual testing](reference-qa.md#testcases)
+
 

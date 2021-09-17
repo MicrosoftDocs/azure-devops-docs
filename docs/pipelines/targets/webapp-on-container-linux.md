@@ -203,7 +203,7 @@ variables:
     containers: $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
-The snippet assumes that the build steps in your YAML file build and push the docker image to your Azure container registry. The **Azure Web App on Container** task will pull the appropriate docker image corresponding to the BuildId from the repository specified, and then deploys the image to the Linux App Service.
+The snippet assumes that the build steps in your YAML file build and push the docker image to your Azure container registry. The **Azure Web App on Container** task will pull the appropriate docker image corresponding to the BuildId from the repository specified, and then deploys the image to Azure App Service on Linux.
 
 ::: moniker-end
 
