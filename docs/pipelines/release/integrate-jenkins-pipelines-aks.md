@@ -372,7 +372,7 @@ The second task deploys to the AKS cluster:
 
 ## Test the CI/CD pipeline with a pull request
 
-You can initiate the CI build and the subsequent CD deployment to Azure by completing a pull request into your main branch.  The Jenkins build will initiate due to the service hook you set up earlier, and the Jenkins post build action will initiate an Azure Pipelines release which will deploy your app to the Azure App Service.
+You can initiate the CI build and the subsequent CD deployment to Azure by completing a pull request into your main branch.  The Jenkins build will initiate due to the service hook you set up earlier, and the Jenkins post build action will initiate an Azure Pipelines release which will deploy your app to Azure App Service.
 
 1. Navigate to **Code** in Azure Repos, then select your **repository**.
 
