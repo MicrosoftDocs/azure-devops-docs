@@ -1,79 +1,76 @@
 ---
 title: Use packages from nuget.org
-description: Use packages from nuget.org using scopes or upstream sources
+description: How to use packages from nuget.org with Azure Artifacts
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 09/16/2021
 monikerRange: '>= tfs-2018'
+"recommendations": "true"
 ---
 
- 
+# NuGet.org upstream source
 
-# Use packages from nuget.org
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-**Azure DevOps Services** | **TFS 2018**
-
-> [!NOTE]
-> NuGet upstream sources are only available for **Azure DevOps Services and TFS 2018 Update 2 and newer**.
-
-The NuGet client natively supports multiple package sources, so you can use packages from both nuget.org and private feeds (like your Azure Artifacts feed). However, there are some limitations (outlined on the [upstream sources concepts page](../concepts/upstream-sources.md)) with that configuration, and we recommend instead managing package sources server-side using a single feed and upstream sources.
-
-The nuget.org upstream source allows you to merge the contents of nuget.org into your feed such that the NuGet client can install packages from both locations without making multiple search queries. Enabling upstream sources also automatically enables saving of packages you use from the upstream source.
-
-To learn more about the concept of upstream sources, please see the [concepts page](../concepts/upstream-sources.md).
-
-## Enable the upstream on a new feed
-
-1. [Create a new feed](../index.yml). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
-1. [Update your NuGet configuration](#update-nuget-configuration).
+Enabling upstream sources on your feed allow you to publish and consume packages from your feed and public registries. Adding the nuget.org upstream allows you to consume NuGet packages from the public registry.
 
 <a name="existing-feed"></a>
-## Enable the upstream on an existing feed
 
-> [!IMPORTANT]
-> Enabling the nuget.org upstream source on a widely-used feed can result in unexpected packages being saved into that feed. [Learn more](#adding-upstreams-to-a-popular-feed)
+## Add a new upstream source
 
-1. Edit your feed. Select the **gear icon** in the top right of the page to open feed settings.
-1. Select the **Upstream sources** pivot.
-1. Select **Add upstream source** in the CommandBar.
-1. Select **Select a feed URL** and select **nuget.org (https://api.nuget.org/v3/index.json)**. If you like, customize the upstream name.
-1. Select **Add**.
-1. [Update your NuGet configuration](#update-nuget-configuration).
+1. Select **Artifacts**, and then select your feed.
 
-<a name="adding-upstreams-to-a-popular-feed"></a>
+1. Select the ![gear icon](../../media/icons/gear-icon.png) button in the top right of the page to open **Feed settings**.
 
-### Adding upstreams to a popular feed
+1. Select the **Upstream sources** tab.
 
-Once you enable the nuget.org upstream source, any `Owner` or `Contributor` that runs a package request against your feed can save packages from nuget.org into your feed. If you've distributed your feed URL to a large set of consumers, this means that users outside your team could save packages you weren't expecting into your feed.
+    :::image type="content" source="../media/upstreams-settings.png" alt-text="Screenshot showing how to access feed settings.":::
 
-If you're concerned about this, consider creating a new feed then adding nuget.org and your current feed as upstream sources to that feed.
+1. Select **Add upstream source**.
+
+    :::image type="content" source="../media/add-upstream.png" alt-text="Screenshot showing the add a new upstream source button.":::
+
+1. Select **Public source**, and then fill out the required fields.
+
+    :::image type="content" source="../media/add-new-upstream.png" alt-text="Screenshot showing how to add a new upstream source.":::
+
+1. Select **Add** when you are done.
 
 <a name="update-nuget-configuration"></a>
 
-## Update your NuGet configuration
+## Update nuget.config
 
-To use your feed and upstream source, follow the instructions to [consume NuGet packages](consume.md). If you've previously set up this feed, still take a quick pass through those instructions and ensure you've disabled NuGet.org as a source. This ensures that all package requests are sent to your Azure DevOps Services feed, which is required to take advantage of the [guaranteed save](../concepts/upstream-sources.md#offline-upstreams) functionality of the nuget.org upstream source.
+1. Select **Artifacts**, and then select your feed. 
 
-## Filter to saved packages
+1. Select **Connect to feed**, and then choose **NuGet.exe**.
 
-You can see the packages you have saved in your feed by selecting the appropriate Source filter.
+    :::image type="content" source="../media/nuget-connect-to-feed.png" alt-text="Screenshot showing how to connect to NuGet feeds.":::
 
+1. Copy the XML snippet in the **Project Setup** section.
+
+1. Create a new file named *nuget.config* in the root of your project.
+
+1. Paste the XML snippet in your config file.
+
+## View saved packages
+
+You can view the packages you saved in your feed by selecting the appropriate **Source** filter.
 
 ::: moniker range=">= azure-devops-2019"
 
-![Source is set to filter on nuget.org.](media/view-cached-packages-newnav.png)
+:::image type="content" source="media/view-cached-packages-newnav.png" alt-text="Screenshot showing how to filter upstream sources.":::
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-![Viewing your cached packages](media/view-cached-packages.png)
-
-::: moniker-end
-
-::: moniker range=">=tfs-2017 < azure-devops"
-
-![Filtering is on the source nuget.org.](media/view-cached-packages.png)
+:::image type="content" source="media/view-cached-packages.png" alt-text="Screenshot showing how to filter upstream sources - TFS.":::
 
 ::: moniker-end
+
+## Related articles
+
+- [Publish NuGet packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
+- [Publish packages to NuGet.org](./publish-to-nuget-org.md)
+- [Upstream sources overview](../concepts/upstream-sources.md)
