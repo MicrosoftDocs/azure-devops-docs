@@ -71,7 +71,7 @@ msbuild, visualstudio
          <p>To avoid problems overall, you must make sure this value matches the version of Visual Studio used to create your solution.</p>
          <p>The value you select here adds the <code>/p:VisualStudioVersion={numeric_visual_studio_version}</code> argument to the MSBuild command run by the build. For example, if you select <strong>Visual Studio 2015</strong>, <code>/p:VisualStudioVersion=14.0</code> is added to the MSBuild command.</p>
          <blockquote>
-            <p><strong>Azure Pipelines:</strong>If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select <strong>Hosted VS2017</strong> as your default build pool. See <a href="../../agents/hosted.md" data-raw-source="[Microsoft-hosted agents](../../agents/hosted.md)">Microsoft-hosted agents</a>.</p>
+            <p><strong>Azure Pipelines:</strong>If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select <strong>vs2017-win2016</strong> as your default build pool. See <a href="../../agents/hosted.md" data-raw-source="[Microsoft-hosted agents](../../agents/hosted.md)">Microsoft-hosted agents</a>.</p>
          </blockquote>
          <br/>Default value: latest
       </td>
