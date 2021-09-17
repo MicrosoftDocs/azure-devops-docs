@@ -41,7 +41,7 @@ You'll need:
   - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
 * Two separate targets where you will deploy the app. These could be virtual machines, web servers, on-premises physical deployment groups, or other types of deployment target.
-  In this example, we are using Azure App Services website instances. If you decide to do the same, you will have to choose names that are unique, but it's a good idea to include
+  In this example, we are using Azure App Service website instances. If you decide to do the same, you will have to choose names that are unique, but it's a good idea to include
   "QA" in the name of one, and "Production" in the name of the other so that you can easily identify them. Use the Azure portal to create a new web app.
 
 ## Continuous deployment (CD) triggers

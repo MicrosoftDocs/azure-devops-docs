@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [include](../../includes/version-team-services.md)]
 
-Use this task to deploy web applications to Azure App service.
+Use this task to deploy web applications to Azure App Service.
 
 ## Arguments
 

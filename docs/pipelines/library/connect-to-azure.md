@@ -55,7 +55,7 @@ We recommend this simple approach if:
 
 1. To deploy to a specific Azure resource, the task will need additional data about that resource.
 
-   * If you're using the classic editor, select data you need. For example, the App service name.
+   * If you're using the classic editor, select data you need. For example, the App Service name.
    * If you're using YAML, then go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
 
 > [!NOTE]
