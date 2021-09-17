@@ -3428,10 +3428,10 @@
    :::column span="1":::
    **Permission**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    **Scopes**
    :::column-end:::
 :::row-end:::
@@ -3439,12 +3439,12 @@
    :::column span="1":::
    <a id="admin-release-permission"></a> Administer release permissions
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can change any of the other permissions listed here.
 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    
    Project, Release pipeline, Environment
 
@@ -3454,12 +3454,12 @@
    :::column span="1":::
    <a id="create-releases-permission"></a> Create releases
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can create new releases.
 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    
    Project, Release pipeline
 
@@ -3469,12 +3469,12 @@
    :::column span="1":::
    <a id="delete-release-pipeline-permission"></a> Delete release pipeline
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can delete release pipeline(s).
 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    
    Project, Release pipeline
 
@@ -3484,12 +3484,12 @@
    :::column span="1":::
    <a id="delete-release-environment-permission"></a> Delete release environment
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can delete environment(s) in release pipeline(s).
 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    
    Project, Release pipeline, Environment
 
@@ -3499,12 +3499,12 @@
    :::column span="1":::
    <a id="delete-releases-permission"></a> Delete releases
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can delete releases for a pipeline.  
 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    
    Project, Release pipeline
 
@@ -3514,12 +3514,12 @@
    :::column span="1":::
    <a id="edit-release-permission"></a> Edit release pipeline
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can add and edit a release pipeline, including configuration variables, triggers, artifacts, and retention policy as well as configuration within an environment of the release pipeline. To make changes to a specific environment in a release pipeline, the user also needs **Edit release environment** permission. 
 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    
    Project, Release pipeline 
 
@@ -3529,12 +3529,12 @@
    :::column span="1":::
    <a id="edit-release-environment-permission"></a> Edit release environment
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs **Edit release pipeline** permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs **Manage releases** permission to save the modified release.
 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    
    Project, Release pipeline, Environment  
 
@@ -3544,12 +3544,12 @@
    :::column span="1":::
    <a id="manage-deployments-permission"></a> Manage deployments
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
   Can initiate a direct deployment of a release to an environment. This permission is only for direct deployments that are manually initiated by selecting the **Deploy** action in a release. If the condition on an environment is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release.  
 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    
    Project, Release pipeline, Environment
 
@@ -3559,12 +3559,12 @@
    :::column span="1":::
    <a id="manage-release-environment-permission"></a> Manage release approvers
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can add or edit approvers for environment(s) in release pipeline(s). This permission also controls whether a user can edit the approvers inside the environment of a specific release instance.  
 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    
    Project, Release pipeline, Environment
 
@@ -3574,12 +3574,12 @@
    :::column span="1":::
    <a id="manage-releases-permission"></a> Manage releases
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can edit a release configuration, such as stages, approvers, and variables. To edit the configuration of a specific environment in a release instance, the user also needs **Edit release environment** permission.  
 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    
    Project, Release pipeline
 
@@ -3589,12 +3589,12 @@
    :::column span="1":::
    <a id="view-release-environment-permission"></a> View release pipeline
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can view release pipeline(s). 
 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    
    Project, Release pipeline 
 
@@ -3604,12 +3604,12 @@
    :::column span="1":::
    <a id="view-releases-permission"></a> View releases
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Can view releases belonging to release pipeline(s).  
 
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    
    Project, Release pipeline 
 
