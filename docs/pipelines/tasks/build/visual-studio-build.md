@@ -26,7 +26,7 @@ Use this task to build with MSBuild and set the Visual Studio version property.
 
 msbuild, visualstudio
 
-> **Azure Pipelines:** If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select **Hosted VS2017** as your default build pool. See [Microsoft-hosted agents](../../agents/hosted.md).
+> **Azure Pipelines:** If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select **vs2017-win2016** as your default build pool. See [Microsoft-hosted agents](../../agents/hosted.md).
 
 ::: moniker range="> tfs-2018"
 
@@ -143,6 +143,16 @@ msbuild, visualstudio
       <td>
          Optional log file verbosity
          <br/>Default value: normal
+      </td>
+   </tr>
+   <tr>
+      <td><code>customVersion</code><br/>Custom Version</td>
+      <td>
+         <p>(Optional) Allows setting custom version of Visual Studio. Examples: <code>15.0</code>, <code>16.0</code>, <code>17.0</code>. </p>
+         <p>Tip: Make sure that the required version of Visual Studio is installed in the system. </p>
+         <blockquote>
+            <p><strong>Azure Pipelines:</strong> If your team wants to use Visual Studio 2022 with the Microsoft-hosted agents, select <strong>windows-2022</strong> as your default build pool. For more info see <a href="../../agents/hosted.md" data-raw-source="[Microsoft-hosted agents](../../agents/hosted.md)">Microsoft-hosted agents</a>.</p>
+         </blockquote>
       </td>
    </tr>
    <tr>
