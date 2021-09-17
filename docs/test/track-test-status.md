@@ -1,7 +1,7 @@
 ---
-title: Track test status
-description: Track test status with charts and graphs using Azure DevOps
-ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
+title: View progress report 
+titleSUffic: Azure Test Plans
+description: View and understand the Progress report
 ms.technology: devops-test
 ms.topic: conceptual
 ms.author: sdanie
@@ -15,62 +15,10 @@ ms.date: 09/14/2021
 [!INCLUDE [version-header](includes/version-header.md)] 
 
 View the status of your planned testing using an out-of-the-box Progress Report and lightweight charts.
- 
 
-:::moniker range=">= azure-devops-2020"
+<a id="charts" /> 
 
-## Progress Report
-
-To track the progress of more than one test plan or test suite, use the Progress Report. It helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
-1. How much testing is complete?
-2. What is the current status - how many tests have passed, failed or are blocked?
-3. Is the testing likely to complete in time?
-4. What is the rate of execution on a daily basis?
-5. Get a breakdown by test plan and suite to understand where execution is going slow or has many failed or blocked tests.
-6. View the progress each suite has made within a test plan and identify the areas that need attention.
-
-### Configure the report
-
-By navigating to Test Plans > Progress Report, you can start using the report. It requires no setup and is applicable for all Azure DevOps Services organizations. When you view the report, it shows you the status of the test plan you had accessed last. However, using the filter bar, you can select one or more test plans in the project.
-
-### Understand the report
-
-The progress report consists of three sections:
-1. **Summary**: This section provides you with a consolidated view for the selected test plans. To understand what test points are, see [Navigate Test Plans](navigate-test-plans.md).
-2. **Outcome trend**: This graph renders a daily snapshot to give you an execution and status trendline. It can show data for 14 days (default), 30 days, or a custom range of your choice. Data for today may or may not appear in this chart based on the time of the day you are looking at the report.
-3. **Details**: This section lets you drill down by each test plan and gives you summary of each test suite in it. The section also lets you navigate to a test plan or suite of choice by double-clicking on it.
-
-![Progress report](media/progress-report/snippet.PNG)
-
-An example of a healthy outcome trend is as follows because as time is progressing, the number of not run tests are decreasing (because tests are being executed) and the number of passed tests are on the rise.
-
-![good trend](media/progress-report/goodtrend.PNG)
-
-An example of an unhealthy outcome trend is as follows because as time is progressing, there is no significant execution occurring and the # of passed and failed tests are continuing to remain flat. In such situations, use the details card to drill down and take suitable actions.
-
-![bad trend](media/progress-report/badtrend.png)
-
-### Filter
-
-By using the filter bar you can filter this report by Test Suites, Configuration, Tester, Test Case priority, and Test Case Assigned to. As example: you can filter by configuration 'Chrome' and then 'Edge' to understand where the execution and pass % are higher. Note: Tester is the person to whom the test point is assigned for execution whereas Assigned to is the person who is responsible for the reusable test case.
-
-> [!NOTE]   
-> The test plan is considered Level 1. Its child suites are considered level 2. Their child suites in turn are considered level 3. The Test Suites filter shows only the Level 3 test suites inside the selected test plans. To select a Level 2 test suite select all the Level 3 test suites underneath it. This assumes the Level 2 test suites itself does not have any test points.
-
-### Behavior
-
-When using this progress report, it is good to know the following points:
-1. The report lets you view data for one or more Test Plans in a single project. To view data across projects, use the [OData APIs](../report/extend-analytics/data-model-analytics-service.md). This report is also rendered using the same OData APIs. 
-2. Whenever you visit the report, it will show you the data for the test plan you had accessed last. Currently we do not store your last set of filters and also do not let you store an instance of this report.
-3. All the data shown in the report is as per the current suite hierarchy in the selected test plans. Currently, we are not storing the hierarchy history.
-4. Data processing for this report is occurring approximately every 15 mins. Do not use this report for real-time analysis or reporting. Expect ~15 mins of duration between a test execution and the same to show up in this report. 
-5. Data for test plans migrated from TFS/Server will not show up in this report. You can leverage this report for test plans created in Azure DevOps Services on or after September 1, 2019. 
- 
-:::moniker-end
-
-## Charts
-
-### Track testing progress
+## Track testing progress
 
 Use test results charts to track how your testing is going. 
 Choose from a fixed set of pre-populated fields related to results.
@@ -104,7 +52,7 @@ for your team. If you already know how to add a chart, jump to the
 
 <a name="TestResultsExamples"></a>
 
-#### Test results examples
+## Test results examples
 
 **What's the test status for a specific test suite?**
 
@@ -156,7 +104,7 @@ or a pivot table chart. Choose **Tester** for the rows and
 **Resolution** for the columns. (Resolution type for test 
 results can only be set using Microsoft Test Manager.)
 
-### Track test case status
+## Track test case status
 
 Use test case charts to find out the progress of your 
 test case authoring. The charts for test cases give 
@@ -194,7 +142,7 @@ create for test cases.
 
 <a name="ExamplesTestCase"></a>
 
-#### Test case examples
+## Test case examples
 
 **How can I track burn down for test case creation?**
 
@@ -228,7 +176,7 @@ Use a stacked bar chart or a pivot table chart. Choose
 
 <a name="configure-test-widget"></a>
 
-### Share charts on your team's dashboard
+## Share charts on your team's dashboard
 
 Pin a chart to your team's dashboard for all the team to view. 
 Use the chart's context menu.
@@ -242,6 +190,8 @@ Stakeholder access can view the charts on the dashboard.
   
 
 ## Related articles
+
+- [Progress report](progress-report.md) 
 - [Control how long to keep test results](how-long-to-keep-test-results.md)
 - [FAQs for manual testing](reference-qa.md#trackstatus)
 - [Widget catalog](../report/dashboards/widget-catalog.md)
