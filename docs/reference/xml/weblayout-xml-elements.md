@@ -1,7 +1,7 @@
 ---
 title: WebLayout XML elements reference 
-titleSuffix: Azure DevOps & TFS
-description: Syntax and usage of all elements used in the new web form layout for Team Foundation Server
+titleSuffix: Azure DevOps 
+description: Syntax and usage of all elements used in the new web form layout for Azure DevOps
 ms.technology: devops-agile
 ms.custom: process
 ms.assetid: 67ed8539-61b8-42c7-9d0f-95b124cf5ed8
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2017'
-ms.date: 11/28/2017
+ms.date: 09/17/2021
 ---
 
 # WebLayout and Control elements  
@@ -215,10 +215,10 @@ You can specify how information and work item fields are grouped and appear in a
 
 :::row:::
    :::column span="1":::
-      Element
+      **Element**
    :::column-end:::
    :::column span="3":::
-      Description
+      **Description**
    :::column-end:::
 :::row-end:::
 ---
@@ -247,9 +247,9 @@ You can specify how information and work item fields are grouped and appear in a
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <ControlContribution Id="ContributionId" Label="Name"  >
-         <Inputs>
-            <Input Id="FieldName" Value="Value" />
-         </Inputs>
+      &nbsp;&nbsp;&nbsp;<Inputs>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Input Id="FieldName" Value="Value" />
+      &nbsp;&nbsp;&nbsp;</Inputs>
       </ControlContribution>
       ```
       The *ContributionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).
@@ -277,10 +277,10 @@ You can specify how information and work item fields are grouped and appear in a
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <WebLayout >
-         <Extensions >
-             <Extension Id="ExtensionId" />
-            . . . 
-         </Extensions >
+      &nbsp;&nbsp;&nbsp;<Extensions >
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Extension Id="ExtensionId" />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . . 
+      &nbsp;&nbsp;&nbsp;</Extensions >
       . . .
       </WebLayout >
       ```
@@ -295,8 +295,8 @@ You can specify how information and work item fields are grouped and appear in a
        > [!div class="tabbedCodeSnippets"]
       ```XML
       <FORM>
-          <Layout> . . . </Layout>
-          <WebLayout> . . . </WebLayout>
+       &nbsp;&nbsp;&nbsp;<Layout> . . . </Layout>
+       &nbsp;&nbsp;&nbsp;<WebLayout> . . . </WebLayout>
       </FORM>
       ```
    :::column-end:::
@@ -310,7 +310,7 @@ You can specify how information and work item fields are grouped and appear in a
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <Group Label="LabelText" 
-         <Control> . . . </Control>
+      &nbsp;&nbsp;&nbsp;<Control> . . . </Control>
       </Group >
       ```
    :::column-end:::
@@ -349,7 +349,7 @@ You can specify how information and work item fields are grouped and appear in a
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <Inputs>
-         <Input Id="FieldName" Value="Value" />
+      &nbsp;&nbsp;&nbsp;<Input Id="FieldName" Value="Value" />
       </Inputs>
       ```
    :::column-end:::
@@ -364,12 +364,12 @@ You can specify how information and work item fields are grouped and appear in a
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <Page Label="PageName" LayoutMode="FirstColumnWide | EqualColumns ">  
-            <Section>  
-                <Group> . . . 
-                    <Control> . . . </Control>
-                    <Control> . . . </Control>
-                </Group>
-            </Section>
+      &nbsp;&nbsp;&nbsp;<Section>  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Group> . . . 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control> . . . </Control>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control> . . . </Control>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Group>
+      &nbsp;&nbsp;&nbsp;</Section>
       </Page>
       ```
    :::column-end:::
@@ -378,7 +378,7 @@ You can specify how information and work item fields are grouped and appear in a
    :::column span="1":::
       **PageContribution**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Optional child element of **WebLayout** used to specify a page-level work item extension to appear on the form. The extension will appear as a page within the form. 
       > [!div class="tabbedCodeSnippets"]
       ```XML
@@ -396,12 +396,12 @@ You can specify how information and work item fields are grouped and appear in a
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <Page>  
-            <Section>  
-                <Group> . . . 
-                    <Control> . . . </Control>
-                    <Control> . . . </Control>
-                </Group>
-            </Section>
+      &nbsp;&nbsp;&nbsp;<Section>  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Group> . . . 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control> . . . </Control>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control> . . . </Control>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Group>
+      &nbsp;&nbsp;&nbsp;</Section>
       </Page>
       ```
    :::column-end:::
@@ -415,15 +415,15 @@ You can specify how information and work item fields are grouped and appear in a
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <SystemControls>  
-          <Control Type="FieldControl" FieldName="System.Title" EmptyText="Enter title" /> 
-          <Control Label="Assi&gned To" Type="FieldControl" FieldName="System.AssignedTo" />
-          <Control Label="Stat&e" Type="FieldControl" FieldName="System.State" />
-          <Control Label="Reason" Type="FieldControl" FieldName="System.Reason" />
-          <Control Label="&Area" Type="WorkItemClassificationControl" FieldName="System.AreaPath" />
-          <Control Label="Ite&ration" Type="WorkItemClassificationControl" FieldName="System.IterationPath" />
-          <Control Label="History" Type="WorkItemLogControl" FieldName="System.History" />
-          <Control Label="Links" Type="LinksControl" Name="Links" />
-          <Control Label="Attachments" Type="AttachmentsControl" Name="Attachments" />
+      &nbsp;&nbsp;&nbsp;<Control Type="FieldControl" FieldName="System.Title" EmptyText="Enter title" /> 
+      &nbsp;&nbsp;&nbsp;<Control Label="Assi&gned To" Type="FieldControl" FieldName="System.AssignedTo" />
+      &nbsp;&nbsp;&nbsp;<Control Label="Stat&e" Type="FieldControl" FieldName="System.State" />
+      &nbsp;&nbsp;&nbsp;<Control Label="Reason" Type="FieldControl" FieldName="System.Reason" />
+      &nbsp;&nbsp;&nbsp;<Control Label="&Area" Type="WorkItemClassificationControl" FieldName="System.AreaPath" />
+      &nbsp;&nbsp;&nbsp;<Control Label="Ite&ration" Type="WorkItemClassificationControl" FieldName="System.IterationPath" />
+      &nbsp;&nbsp;&nbsp;<Control Label="History" Type="WorkItemLogControl" FieldName="System.History" />
+      &nbsp;&nbsp;&nbsp;<Control Label="Links" Type="LinksControl" Name="Links" />
+      &nbsp;&nbsp;&nbsp;<Control Label="Attachments" Type="AttachmentsControl" Name="Attachments" />
       </SystemControls>
       ```
    :::column-end:::
@@ -432,19 +432,19 @@ You can specify how information and work item fields are grouped and appear in a
    :::column span="1":::
       **WebLayout**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Required child element of **FORM**. Defines the layout of the work item form displayed in the web portal. Includes one or more **Page** elements.
       > [!div class="tabbedCodeSnippets"]
       ```XML
       <WebLayout> 
-            <Page>  
-                <Section>  
-                    <Group> . . . 
-                        <Control> . . . </Control>
-                        <Control> . . . </Control>
-                    </Group>
-                </Section>
-            </Page>
+      &nbsp;&nbsp;&nbsp;<Page>  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Section>  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Group> . . . 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control> . . . </Control>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Control> . . . </Control>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Group>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Section>
+      &nbsp;&nbsp;&nbsp;</Page>
       . . .
       </WebLayout>
       ```
