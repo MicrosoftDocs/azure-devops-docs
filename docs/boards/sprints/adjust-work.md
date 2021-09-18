@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 09/15/2021
+ms.date: 09/20/2021
 ---
 
 # Adjust work to fit sprint capacity

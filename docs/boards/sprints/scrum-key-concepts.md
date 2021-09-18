@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 09/17/2021
+ms.date: 09/20/2021
 ---
 
 #  Sprints and Scrum key concepts in Azure Boards
