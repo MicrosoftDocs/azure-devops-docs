@@ -1,7 +1,7 @@
 ---
-title: Customize a Taskboard
+title: Customize a sprint taskboard in Azure Boards
 titleSuffix: Azure Boards
-description: Customize cards on a Sprint Taskboard in Azure Boards or Azure DevOps 
+description: Learn how to customize cards on a sprint taskboard in Azure Boards or Azure DevOp.
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
@@ -9,24 +9,24 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2015'
-ms.date: 7/09/2020
+ms.date: 09/16/2021
 ---
 
 
-# Customize a sprint Taskboard  
+# Customize cards on a sprint taskboard in Azure Boards 
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
 
 ::: moniker range=">= azure-devops-2020"
 
-Sprint Taskboards are similar to Kanban boards in that they show work items as cards instead of as lists, but are different in the ways summarized in [Backlogs, Boards, and Plans, Kanban and Taskboards](../backlogs/backlogs-boards-plans.md#kanban-taskboards). Similar to the Kanban boards, you can customize cards and add columns.  
+Sprint Taskboards are similar to Kanban boards because they show work items as cards instead of as lists. They're different in the ways summarized in [Backlogs, Boards, and Plans](../backlogs/backlogs-boards-plans.md#kanban-taskboards). Similar to the Kanban boards, you can customize cards and add columns.  
 
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2015 <= azure-devops-2019"
 
-Sprint Taskboards are similar to Kanban boards in that they show work items as cards instead of as lists, but are different in the ways summarized in [Backlogs, Boards, and Plans, Kanban and Taskboards](../backlogs/backlogs-boards-plans.md#kanban-taskboards). Similar to the Kanban boards, you can customize cards. To change column names or add columns, you need to customize the workflow.   
+Sprint Taskboards are similar to Kanban boards in that they show work items as cards instead of as lists. They're different in the ways summarized in [Backlogs, Boards, and Plans](../backlogs/backlogs-boards-plans.md#kanban-taskboards). Similar to the Kanban boards, you can customize cards. To change column names or add columns, you need to customize the workflow.   
 
 ::: moniker-end
 
@@ -108,9 +108,9 @@ To add or remove columns, choose **Column Options**. You customize all other opt
 > Each team can customize their Taskboard columns and cards. Taskboard settings are not inherited from other teams that they may share portions of area paths. 
 
 
-## Taskboard customization sequence 
+## Understand the Taskboard customization sequence 
 
-Before you configure your Taskboard, you'll want to make sure the following tasks are complete as possible. Otherwise, you'll find yourself revisiting your configuration.  
+Before you configure your Taskboard, you'll want to make sure the following tasks are as complete as possible. Otherwise, you'll find yourself revisiting your configuration.  
 
 **Process Administrator**: 
 1. Add custom work item types that you want to appear on your Taskboard. For details, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
@@ -139,9 +139,9 @@ Before you configure your Taskboard, you'll want to make sure the following task
 
 <a id="show-bugs" > </a>
 
-## Show bugs on your Taskboard 
+## Show bugs on your taskboard 
 
-If you want bugs to appear on the taskboard, change your team settings for [show bugs on the backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
+If you want bugs to appear on your taskboard, change your team settings for [show bugs on the backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
 
 
 <a id="add-columns" > </a>
@@ -153,9 +153,9 @@ If you want bugs to appear on the taskboard, change your team settings for [show
 You can add columns or rename columns that appear in your Taskboard. You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md). 
 
 > [!NOTE] 
-> Additional columns you add to a Taskboard aren't supported with corresponding fields such as the Kanban board columns you add which is supported with Board Column field. 
+> Columns you add to a Taskboard aren't supported with corresponding fields such as the Kanban board columns you add which is supported with Board Column field. 
 
-The changes made apply to all sprint Taskboards for the selected team. 
+The changes made apply to all sprint taskboards for the selected team. 
 
 1. From your web browser, open your team's sprint Taskboard as described in [Update and monitor your Taskboard](task-board.md). Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.
 
@@ -186,24 +186,21 @@ The changes made apply to all sprint Taskboards for the selected team.
 
 ::: moniker-end
 
-
-
-
 <a id="choose-fields" > </a>
 
-## Add fields to cards  
+## Add fields to cards on a sprint taskboard 
 
 Scrum teams use the Taskboard to burn down work and report on progress during daily stand ups. Each sprint Taskboard shows cards that correspond to both requirements and tasks.
 
-### Information rich cards
+### Provide information-rich cards
 
-Information rich cards not only provide at-a-glance information of interest to you and your team, but also provide a way for you to update a field without opening the work item. And, with style rules, you can highlight those work items with select colors based on the criteria you set.  
+Information rich cards not only provide at-a-glance information of interest to you and your team. They also provide a way for you to update a field without opening the work item. And, with style rules, you can highlight those work items with select colors based on the criteria you set.  
 
-Each card corresponds to a work item which you use to share information, track status, and assign work. 
+Each card corresponds to a work item that you use to share information, track status, and assign work. 
 
 [!INCLUDE [temp](../includes/setup-backlogs-boards.md)]
 
-In this example, the bug work item type (WIT) shows all the core fields, three additional fields, and tags. Also, To make severity 1 bugs stand out, a styling rule has been added to cause the card to display as yellow.  
+In this example, the bug work item type (WIT) shows all the core fields. It also shows three other fields and tags. To make severity 1 bugs stand out, a styling rule has been added to cause the card to display as yellow.  
 
 In the card shown below, the following customizations have been set for the task work item type (WIT):
 - Show all core fields: ID, Assigned To, Remaining Work, Tags
@@ -214,9 +211,9 @@ In the card shown below, the following customizations have been set for the task
 
 You can either increase or simplify the information that displays on your cards. It all depends on what's of interest to your team. Does your team like to refer to work items by their ID? Do they want to see estimates? Do they want to highlight work items according to set criteria? Or, will just the bare bones of title and assignment suffice? 
 
-Your best bet is to show fields on cards based on what your team frequently refers to or updates when using the Taskboards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Sprint planning](../../boards/sprints/assign-work-sprint.md). 
+Your best bet is to show fields on cards based on what your team frequently refers to. Or, you can show fields based on updates when using the Taskboards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Sprint planning](../../boards/sprints/assign-work-sprint.md). 
 
-### Add or remove fields 
+### Add or remove fields from cards on the Taskboard
 
 You change the way cards appear on the Taskboard in the same way you change the appearance of cards on Kanban boards. Only here, you start from the Taskboard.
 
@@ -308,15 +305,15 @@ Using the board views provides you with quick and easy ways to update work items
 
 To update status of a work item, you simply drag-and-drop cards to a different column. To change the order or stack ranking of a work item, you drag a card up or down within a column. 
 
-For example, on the Taskboard, moving the card from In Progress to the Done column updates the corresponding State field. In this case, the State field updates from Doing to Done. 
+Moving the card from In Progress to the Done column on the Task board, for example, updates the corresponding State field. In this case, the State field updates from Doing to Done. 
 
 ![Taskboard, move a work item](media/alm_tb_move_to_done.png)
 
-Another handy feature is to simply update a field without having to open the work item. You can update most fields shown on the card. Here we reassign a task. 
+Another handy feature is to update a field without having to open the work item. You can update most fields shown on the card. Here we reassign a task. 
 
 ![Kanban board, assign a work item](media/customize/field-reassign.png)
 
-This quick update feature is particularly useful when you need to update a number of work items at once. For example, you can add estimates or update Remaining Work. 
+This quick update feature is useful when you need to update many work items at once. For example, you can add estimates or update Remaining Work. 
 
 To change the title, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then choose **Edit title**. 
 
@@ -344,7 +341,7 @@ This feature requires TFS 2015.1 or later versions.
 
 ### Example styling rules 
 
-What rules should you apply to highlight work items? Here are a few examples and their associated criteria . 
+What rules should you apply to highlight work items? Here are a few examples and their associated criteria. 
 
 > [!div class="mx-tdCol2BreakAll"]
 > | Work items | Criteria |
@@ -371,7 +368,7 @@ You can apply style rules to change the color of Taskboard cards based on specif
 
 3. Choose **Styles** to specify a style rule. Choose the :::image type="icon" source="../../media/icons/green_plus_icon.png" border="false"::: plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
 
-	In this example we show the **Styles** dialog for the taskboard. 
+	In this example, we show the **Styles** dialog for the taskboard. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Settings, Styles dialog](media/customize/taskboard-styles-priority.png)
@@ -380,10 +377,10 @@ You can apply style rules to change the color of Taskboard cards based on specif
    - The criteria you specify works in a similar fashion as when [constructing a query](../queries/using-queries.md). 
    - All clauses are considered AND clauses, grouping clauses isn't supported.  
    - Card rules apply to all work items that meet the rule criteria  
-   - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.  
+   - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Drag them into the order you want them applied.  
    - You can quickly enable and disable a style rule.     
 
-     Here we add a Stale tasks rule which highlights tasks that haven't changed in the last five days.
+     Here we add a Stale tasks rule that highlights tasks that haven't changed in the last five days.
 
      ![taskboard, Style dialog, example style rule](media/customize/task-board-card-style-rule-stale-tasks.png)   
 
@@ -410,7 +407,7 @@ Requires TFS 2015.1 or later version.
 
 3. Choose **Styles** to specify a style rule. Choose the :::image type="icon" source="../../media/icons/green_plus_icon.png" border="false"::: plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
 
-	In this example we show the **Styles** dialog for the taskboard. 
+	In this example, we show the **Styles** dialog for the taskboard. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Settings, Styles dialog](media/customize/taskboard-styles-priority.png)
@@ -419,10 +416,10 @@ Requires TFS 2015.1 or later version.
    - The criteria you specify works in a similar fashion as when [constructing a query](../queries/using-queries.md) 
    - All clauses are considered AND clauses, grouping clauses isn't supported  
    - Card rules apply to all work items that meet the rule criteria  
-   - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.  
+   - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Drag them into the order you want them applied.  
    - You can quickly enable and disable a style rule     
 
-     Here we add a Stale tasks rule which highlights tasks that haven't changed in the last five days.
+     Here we add a Stale tasks rule that highlights tasks that haven't changed in the last five days.
 
      ![taskboard, Style dialog, example style rule](media/customize/task-board-card-style-rule-stale-tasks.png)   
 
@@ -434,7 +431,7 @@ Requires TFS 2015.1 or later version.
 
 ::: moniker range=">= azure-devops-2020"
 
-## Taskboard automatically updates 
+## Changes cause automatic taskboard updates 
 
 Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the background.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
 

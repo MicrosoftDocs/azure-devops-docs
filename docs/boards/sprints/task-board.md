@@ -1,14 +1,14 @@
 ---
-title: Update and monitor your Taskboard
+title: Track progress and individual items on the Taskboard
 titleSuffix: Azure Boards and TFS
-description: Implement scrum using the sprint Dashboard in Azure Boards.
+description: Learn how to implement scrum by using the sprint dashboard in Azure Boards.
 ms.technology: devops-agile
 ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/07/2021
+ms.date: 09/17/2021
 ---
 
 # 6. Update and monitor your Taskboard
@@ -62,7 +62,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 1. From your web browser, open the sprint backlog for your team.
 
-   1. Check that you have selected the right **Project**
+   1. Check that you've selected the right **Project**
    2. Choose **Boards>Sprints**
    3. Select the correct **Team** from the team selector menu
    4. Choose **Taskboard**
@@ -87,7 +87,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ::: moniker range="azure-devops-2019"
 
-1. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
+1. From your web browser, open the sprint backlog for your team. (1) Check that you've selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the sprint Taskboard for a team](media/taskboard/open-taskboard-agile.png)
@@ -210,7 +210,7 @@ With this view, you can quickly see which items are nearing completion and which
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To show cards based on their backlog-to-task groupings, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Backlog items** (for Scrum), **Stories** (for Agile) and **Requirements** (for CMMI).
+1. To show cards based on their backlog-to-task groupings, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Backlog items** (for Scrum), **Stories** (for Agile), and **Requirements** (for CMMI).
 
 	> [!div class="mx-imgBorder"]
 	> ![Set view options](media/taskboard/group-items-all-agile.png)
@@ -236,7 +236,7 @@ You can expand ![expand icon](../media/icons/expand_row_icon.png) and collapse !
 
 <a id="show-individual-progress">  </a>
 
-## Show progress of individuals
+## Show a team member's progress
 
 With this view, you can focus on the work completed and the work remaining for each individual team member. You can quickly see who may need help with completing their sprint tasks. This view shows items and tasks assigned to the selected team member.
 
@@ -261,7 +261,7 @@ Choose the **Group by People** option, and then select a specific team member, o
 
 <a id="group-by-team">  </a>
 
-## Group by team members
+## Group tasks by team members
 
 With this view, you can quickly see all the tasks associated with each team member. Backlog items don't appear in this view, only the tasks associated with each individual.
 
@@ -297,9 +297,9 @@ The **Taskboard** makes quick work of updating both task status and remaining wo
 
 <a id="update-task-status">  </a>
 
-### Update task status
+### Update a task's status
 
-Simply drag tasks to a downstream column to reflect if they are in progress or completed.
+Drag tasks to a downstream column to reflect if they are in progress or completed.
 
 ![taskboard, update task status](media/ALM_TB_Move_To_Done.png)
 
@@ -307,7 +307,7 @@ When you move a task to the **Done** or **Completed** column, the system automat
 
 ### Update Remaining Work 
 
-Updating **Remaining Work**, preferably prior to the daily Scrum meeting, helps the team stay informed of the progress being made. It also ensures a smoother burndown chart.
+Updating **Remaining Work**, preferably before the daily Scrum meeting, helps the team stay informed of the progress being made. It also ensures a smoother burndown chart.
 
 Each team member can review the tasks they've worked on and estimate the work remaining. If they've discovered that it's taking longer than expected to complete, they should increase the **Remaining Work** for the task. **Remaining Work** should always reflect exactly how much work the team member estimates is remaining to complete the task.
 
@@ -322,14 +322,14 @@ Each team member can review the tasks they've worked on and estimate the work re
 
 <a id="close-sprint">  </a>
 
-## Close out a sprint, update your Taskboard
+## Close out a sprint and update your Taskboard
 
-At the end of the sprint, you'll want to perform these final tasks:
+At the end of the sprint, you'll want to complete these final tasks:
 *	Zero out *Remaining Work* of all completed tasks  
 *	Update the status of all completed backlog items  
 *	Drag incomplete backlog items and tasks to the next sprint or back to the product backlog.
 
-Dragging an incomplete item to the product backlog or to a future sprint updates the Iteration Path of all uncompleted child tasks to correspond to the product backlog iteration path or future sprint.
+Drag an incomplete item to the product backlog or to a future sprint updates the Iteration Path of all unfinished child tasks to correspond to the product-backlog iteration path or future sprint.
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 You can [drag-and-drop work items onto a sprint from any backlog or board](assign-work-sprint.md#drag-drop).
@@ -338,14 +338,14 @@ You can [drag-and-drop work items onto a sprint from any backlog or board](assig
 You can [drag-and-drop work items onto a sprint from any backlog or board](assign-work-sprint.md#drag-drop). Requires TFS 2015.1 or later version.
 ::: moniker-end
 
-## Try this next
+## Next step
 
 Work with [sprint burndown](../../report/dashboards/configure-sprint-burndown.md) charts to monitor progress, manage scope creep, and mitigate risks.
 
 
 ## Related articles
 
-As you can see, the Taskboard provides a lot of support for your Scrum activities. For related topics, see:
+As you can see, the Taskboard provides support for your Scrum activities. For related articles, see:
 
 - [Assign backlog items to a sprint](assign-work-sprint.md)  
 - [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
@@ -387,7 +387,7 @@ You can reduce the number of items on the taskboard by moving them to the backlo
 ::: moniker range=">= tfs-2017"
 
 - From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
-- From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.
+- From the sprint backlog, multi-select the items to move and then select the context menu for an item. Then, select the iteration to move them to.
 
 ![multi-select items from the sprint backlog](media/sprint-backlog-multi-select-non-sequential-items.png)
 ::: moniker-end
@@ -395,7 +395,7 @@ You can reduce the number of items on the taskboard by moving them to the backlo
 ::: moniker range="tfs-2015"
 Requires TFS 2015.1 or later version.
 - From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
-- From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.
+- From the sprint backlog, multi-select the items to move. Then, select the context menu for an item and select the iteration to move them to.
 
    <img src="media/sprint-backlog-multi-select-non-sequential-items.png" alt="multi-select items from the sprint backlog" />
   ::: moniker-end

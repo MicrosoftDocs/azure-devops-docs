@@ -1,7 +1,7 @@
 ---
-title: Forecasting 
+title: Forecast your product backlog in Azure Boards
 titleSuffix: Azure Boards   
-description: Determine how much work your team can deliver across several sprints by forecasting in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Learn how to determine how much work your team can deliver across several sprints by forecasting in Azure Boards. 
 ms.custom: boards-sprints    
 ms.technology: devops-agile
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/07/2021
+ms.date: 09/17/2021
 ---
 
 # Forecast your product backlog
@@ -30,7 +30,7 @@ Use this article to learn:
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
+* Connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
 * You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](../../organizations/security/add-users-team-project.md). 
 * You must be granted **Basic** access or higher to use the forecast feature. For details, see [About access levels](../../organizations/security/access-levels.md).
 
@@ -42,7 +42,7 @@ Use this article to learn:
 
 ::: moniker range="< azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 * You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](../../organizations/security/add-users-team-project.md). 
 * You must be granted **Basic** access or higher to add or modify work items. For details, see [About access levels](../../organizations/security/access-levels.md).
 
@@ -64,7 +64,7 @@ Here's what you need to have in place before you attempt to forecast your team's
 *	Define and size backlog items to [minimize variability](../../report/dashboards/velocity-guidance.md#minimize-variability).  
 *	Determine how your team wants to [treat bugs](../../organizations/settings/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting. 
 *	[Set your team's area path](../../organizations/settings/set-area-paths.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
-*	Don't  create a hierarchy of backlog items and bugs. The display of the leaf node, the last node in a same-category hierarchy, may only appear on Kanban boards, sprint backlogs, and taskboards. To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](../backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).<br/>Instead of nesting requirements, bugs, and tasks, maintain a flat list&mdash;only creating parent-child links one level deep between different-category items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
+*	Don't  create a hierarchy of backlog items and bugs. The display of the leaf node, the last node in a same-category hierarchy, may only appear on Kanban boards, sprint backlogs, and taskboards. To learn more, see [Fix reordering and nesting issues, How backlogs and boards display hierarchical (nested) items](../backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).<br/>Instead of nesting requirements, bugs, and tasks, maintain a flat list&mdash;only creating parent-child links one level deep between different-category items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features. The map creates parent-child links in the background.  
 *	At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.
 
 
@@ -75,15 +75,15 @@ Here's what you need to have in place before you attempt to forecast your team's
 
 ## Forecast upcoming sprints
 
-You can use the forecast tool to get an idea of how many items you can complete within a sprint. By plugging in a velocity, you can see which items are within scope for the set of sprints the team has activated. 
+Use the forecast tool to get an idea of how many items you can complete within a sprint. By plugging in a velocity, you can see which items are within scope for the set of sprints the team has activated. 
 
-To forecast your product backlog, perform the following actions.
+To forecast your product backlog, complete the following actions.
 
 
 ::: moniker range=">= azure-devops-2020"
 
 
-1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
+1. (1) Check that you've selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-backlogs-backlog-s155-co.png)
@@ -118,14 +118,14 @@ To forecast your product backlog, perform the following actions.
 	> [!TIP]    
 	> If your team has been working for several sprints, you can gain an idea of your team's velocity from the [Velocity widget](../../report/dashboards/team-velocity.md).
 
-	The tool draws lines for each future sprint selected by the team. The Forecast lines show how much work your team should be able to complete in future sprints. Typically, items above the first line are already in progress for the current sprint. Items that fall between the first and second forecast lines indicate what can be completed in the named sprint.
+	The tool draws lines for each future sprint selected by the team. The Forecast lines show how much work your team can complete in future sprints. Typically, items above the first line are already in progress for the current sprint. Items that fall between the first and second forecast lines indicate what can be completed in the named sprint.
 
 ::: moniker-end
 
 
 ::: moniker range="azure-devops-2019"
 
-1. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
+1. From your web browser, open your product backlog. (1) Check that you've selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Work, Backlogs, for a team](media/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -159,13 +159,13 @@ To forecast your product backlog, perform the following actions.
 	> [!TIP]    
 	> If your team has been working for several sprints, you can gain an idea of your team's velocity from the [Velocity widget](../../report/dashboards/team-velocity.md).
 
-	The tool draws lines for each future sprint selected by the team. The Forecast lines show how much work your team should be able to complete in future sprints. Typically, items above the first line are already in progress for the current sprint. Items that fall between the first and second forecast lines indicate what can be completed in the named sprint.
+	The tool draws lines for each future sprint selected by the team. The Forecast lines show how much work your team can complete in future sprints. Typically, items above the first line are already in progress for the current sprint. Items that fall between the first and second forecast lines indicate what can be completed in the named sprint.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-To forecast your product backlog, perform the following actions.
+To forecast your product backlog, complete the following actions.
 
 1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -190,7 +190,7 @@ To forecast your product backlog, perform the following actions.
 
 3. Set **In progress** items to **Hide** to hide those items that won't be counted in the forecast. The forecast tool ignores Scrum items set to Committed or Done and Agile and CMMI items set to Active, Resolved, or Completed. 
 
-	The tool draws lines for each future sprint selected by the team. The Forecast lines show how much work your team should be able to complete in future sprints. Typically, items above the first line are already in progress for the current sprint. Items that fall between the first and second forecast lines indicate what can be completed in the named sprint.  
+	The tool draws lines for each future sprint selected by the team. The Forecast lines show how much work your team can complete in future sprints. Typically, items above the first line are already in progress for the current sprint. Items that fall between the first and second forecast lines indicate what can be completed in the named sprint.  
 
 ::: moniker-end
 
@@ -203,9 +203,9 @@ To forecast your product backlog, perform the following actions.
 
 ::: moniker range=">= tfs-2018" 
 
-In this example, a Velocity of 20 is used. The forecast tool limits the number of items shown between the forecast lines to those that can be completed within the sprint or using unused velocity points from the previous sprint. 
+In this example, a Velocity of 20 is used. The forecast tool limits the number of items that are shown between the forecast lines to those items that can be completed within the sprint or using unused velocity points from the previous sprint. 
 
-The forecast tool shows between two and four items can be worked on during Iterations 2 through 6 based on the amount of Story Points assigned to each user story or bug. The forecast logic carries over velocity points from one sprint to the next. 
+The forecast tool shows between two and four items can be worked on during Iterations 2 through 6 based on the number of Story Points you assigned to each user story or bug. The forecast logic carries over velocity points from one sprint to the next. 
 
 - **Iteration 2**: 13 Story Points, items 1 and 2 can be completed; 7 velocity points are carried over to the next sprint
 - **Iteration 3**: 24 Story Points, items 3 through 5 can be completed; 3 (=20+7-24) velocity points are carried over to the next sprint   
@@ -226,12 +226,12 @@ The forecast tool shows between two and four items can be worked on during Itera
 >
 > Now, all items listed between the lines can be started in the sprint labeled by the first line, but may not be completed within the sprint. The amount of effort (Effort, Story Points, Size) that can't be completed in one sprint are carried over to the next sprint. For example, for a velocity of 15, if Item 1 has 35 Effort points, 20 Effort points are carried over to next sprint, then again 5 Effort points are carried over to the sprint after that.
 
-In this example, a Velocity of 15 is used. The forecast tool shows between two and four items can be started or completed during the first six sprints based on the amount of Effort assigned to each work item. The forecast logic carries over effort points from one sprint to the next. 
+In this example, a Velocity of 15 is used. The forecast tool shows between two and four items can be started or completed during the first six sprints. This total is based on the amount of Effort that is assigned to each work item. The forecast logic carries over effort points from one sprint to the next. 
 
 - **Sprint 1**: 19 Effort points, items 1 and 2 can be completed and item 3 can be started; 4 Effort points are carried over into the next sprint.
 - **Sprint 2**: 13 Effort points, item 3 from the previous sprint can be completed, item 4 can be completed, and item 5 can be started; 2 Effort points are carried over into the next sprint.
-- **Sprint 3**: 15 Effort points, item 5 from the previous sprint and items 6 through 8 can be completed, and item 9 can be started; 2 Effort points are carried over into the next sprint. 
-- **Sprint 4**: 13 Effort points, item 9 from the previous sprint and items 10 and 11 can be completed; no Effort points are carried over into the next sprint.
+- **Sprint 3**: 15 Effort points, item 5 from the previous sprint and items 6 through 8 can be completed. Item 9 can be started and 2 Effort points are carried over into the next sprint. 
+- **Sprint 4**: 13 Effort points, item 9 from the previous sprint and items 10 and 11 can be completed. No Effort points are carried over into the next sprint.
 - **Sprint 5**: 19 Effort points, items 12 and 13 can be completed and item 14 can be started; 4 Effort points are carried over into the next sprint.
 
 ![Web portal, Backlog, Forecast On](media/vel-forecast-forecast-ts.png)  
@@ -258,12 +258,12 @@ In summary:
 
 ## Determine the velocity needed to complete all items in the backlog
 
-Another way to use the forecast tool is to enter different velocity values until all the backlog items are completed within a given set of sprints. This provides an estimate of what velocity is required to complete your backlog of items. 
+Another way to use the forecast tool is to enter different velocity values until all the backlog items are completed within a given set of sprints. This forecast provides an estimate of what velocity is required to complete your backlog of items. 
 
-You can then assess the delta between the current team's velocity and the required velocity to determine what additional resources are required to meet production demands within a required time. 
+You can then assess the delta between the current team's velocity and the required velocity. The delta helps determine what other resources are required to meet production demands within a required time. 
 
  
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Assign work to a sprint](assign-work-sprint.md)
