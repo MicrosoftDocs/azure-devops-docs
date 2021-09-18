@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 04/23/2020
+ms.date: 09/20/2021
 ---
 
 # Implement Scrum practices for your team in Azure Boards 
