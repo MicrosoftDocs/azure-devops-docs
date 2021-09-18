@@ -1,7 +1,7 @@
 ---
-title: Set sprint capacity 
+title: Set sprint capacity in Azure Boards
 titleSuffix: Azure Boards 
-description: Set team capacity for a sprint or iteration working with Scrum methods
+description: Learn how to determine team capacity and how to set the capacity for a sprint in Azure Boards.
 ms.technology: devops-agile
 ms.custom: boards-sprints
 ms.assetid: 
@@ -14,7 +14,7 @@ ms.date: 09/07/2021
 
 
 
-# 3. Set sprint capacity
+# 3. Determine and set sprint capacity
 
 <a id="set-capacity">  </a>
 
@@ -22,9 +22,9 @@ ms.date: 09/07/2021
 
 <a id="set-capacity">  </a>
 
-As a next step, you'll want to determine your team's actual capacity. Whereas velocity correlates to how your team estimates requirements, capacity correlates to actual task time - either hours or days. Capacity takes into consideration the variation in work hours by team members as well as holidays, vacation days, and non-working days. 
+As a next step, you'll want to determine your team's actual capacity. While velocity correlates to how your team estimates requirements, capacity correlates to actual task time. Time is calculated in either hours or days. Capacity takes into consideration the variation in work hours by team members. It also considers holidays, vacation days, and non-working days. 
 
-Because days off and time available for each team member can vary from sprint to sprint, you can set capacity for each sprint. The capacity tool helps you make sure your team isn't over or under committed for the sprint. Also, as you work day-to-day, you'll be able to see if your team is on track.
+Because days off and time available for each team member may vary from sprint to sprint, set capacity for each sprint. The capacity tool helps you make sure your team isn't over or undercommitted for the sprint. Also, as you work day-to-day, you'll see if your team is on track.
 
 > [!div class="checklist"]   
 > * Set team capacity for a sprint
@@ -33,11 +33,11 @@ Because days off and time available for each team member can vary from sprint to
 > * Add or remove user accounts from capacity planning for a sprint  
 > * Track capacity when working on more than one team  
 
-If you haven't set up sprints yet for your team, go [here to do that now](define-sprints.md).
+If you haven't set up sprints yet for your team, see the [Manage sprint timelines while working in Scrum](define-sprints.md) article.
 
 ## Prerequisites
 
-* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
 * To view or set capacity, you must be granted **Basic** access or higher. Users with **Stakeholder** access can't view or set capacity. For details, see [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md). 
 * To set capacity, you must be a member of the team. For details, see [Add users to a project or team](../../organizations/security/add-users-team-project.md#add-users-to-a-team). 
@@ -64,13 +64,13 @@ To change the **Activity** or **Discipline** menu selections, see [Add or modify
 
 ## Capacity per day entries 
  
-Most teams specify capacity in terms of hours. However, you can also specify it in days or any other units your team chooses. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit your team uses to estimate and track their time. For example, the entries they'll make to the [Original Estimate or Remaining Work](../queries/query-numeric.md#fields-used-to-estimate-and-track-work) fields.  
+Most teams specify capacity in hours. You can also specify it in days or any other units your team chooses. For example, 0.5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit your team uses to estimate and track their time. For example, the entries they'll make to the [Original Estimate or Remaining Work](../queries/query-numeric.md#fields-used-to-estimate-and-track-work) fields.  
 
-## Open a Sprint backlog for a team 
+## Open a sprint backlog for a team 
 
 ::: moniker range=">= azure-devops-2019"
 
-1. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Capacity**. 
+1. From your web browser, open your product backlog. (1) Check that you've selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Capacity**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot showing Open Sprints for a team.](media/capacity/open-capacity-agile.png)
@@ -198,7 +198,7 @@ By copying the capacity from the previous sprint, you save time. With the basics
 > [!NOTE]    
 > This feature is available from TFS 2015.1 and later versions.
 
-Notice that only the capacity per day and activity are copied over. Individual and team days off remain unset. The copy operation always copies the latest updates made to the previous sprint. So you can repeat the copy operation if you've made changes to the previous sprint that you want to copy to the latest sprint. 
+Notice that only the capacity-per-day value and activity value are copied over. Individual and team days off remain unset. The copy operation always copies the latest updates made to the previous sprint. So you can repeat the copy operation if you've made changes to the previous sprint that you want to copy to the latest sprint. 
 
 ::: moniker-end
 
@@ -223,7 +223,7 @@ For example, here we choose Sprint 2 and copy the capacity set for Sprint 1.
 
 ## Remove a user from capacity 
 
-To remove a user, choose the option from the users  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action menu. This will not remove the user from the team.
+To remove a user, choose the option from the users  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action menu. This action won't remove the user from the team.
 
 ::: moniker-end
 
@@ -249,7 +249,7 @@ To remove a user, choose the option from the users  :::image type="icon" source=
 
 ## Review capacity charts 
 
-As you define tasks and estimate the work, you'll see capacity charts start to fill in for each team member. Capacity bars track the remaining work against the capacity for each team member as well as the entire team.  
+As you define tasks and estimate the work, you'll see capacity charts start to fill in for each team member. Capacity bars track the remaining work against the capacity for each team member and the entire team.  
 
 You'll also see a roll-up of the remaining work required to complete each requirement or bug.  
 
@@ -290,11 +290,11 @@ From this view, you can easily see which individuals are at or near capacity. Te
 
 ::: moniker range=">= tfs-2015"
 
-## Track capacity when performing multiple activities
+## Track capacity when completing multiple activities
 
 Because individual team members have different sets of skills and duties, you can track their activity and capacity for each activity and for each sprint. 
 
-Here, Jamal divides his time between Deployment and Development. 
+Here, Jamal divides time between Deployment and Development. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Add activity to capacity tracking for an individual.](media/capacity/add-activity-to-capacity-planning.png) 
@@ -313,7 +313,7 @@ Here, Jamal divides his time between Deployment and Development.
 
 ## Track capacity when working on more than one team
 
-If you work on more than one team, you'll want to specify your sprint capacity for each team. For example, both Christie and Raisa split their time between the Web and Phone teams. They therefore allocate 3 hours a day to the Web team, and 3 hours a day to the Phone team.  
+If you work on more than one team, you'll want to specify your sprint capacity for each team. For example, both Christie and Raisa split their time between the Web and Phone teams. As such, give 3 hours a day to the Web team, and 3 hours a day to the Phone team.  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Allocate capacity for team Web.](media/capacity/set-capacity-web-team.png)
@@ -324,7 +324,7 @@ If you work on more than one team, you'll want to specify your sprint capacity f
 If your name isn't listed in the capacity view, you need to be added as a team member. 
 
 
-## Try this next
+## Next step
 
 > [!div class="nextstepaction"]
 > [4. Adjust work](adjust-work.md) 
@@ -332,7 +332,7 @@ If your name isn't listed in the capacity view, you need to be added as a team m
 
 ## Related articles
 
-Setting capacity and [estimating remaining work for each task](assign-work-sprint.md) provides you with the tools you need to track the amount of work and resources you have allocated sprint over sprint.  
+Setting capacity and [estimating remaining work for each task](assign-work-sprint.md) provides you with the tools you need to track the amount of work and resources you have given sprint over sprint.  
 
 - [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md)
 - [Velocity](../../report/dashboards/team-velocity.md)  
