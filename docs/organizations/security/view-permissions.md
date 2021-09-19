@@ -11,7 +11,6 @@ monikerRange: '<= azure-devops'
 ms.date: 07/22/2019
 ---
 
-
 # View permissions for yourself or others
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
@@ -20,7 +19,6 @@ Learn how to view your permissions or the permissions that are set for others in
 
 Permissions are set at the collection, project, and object level as described in [Get started with permissions, access, and security groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
 
-
 > [!NOTE]
 > This article shows how to view permissions assigned to a user at the project-level or collection-level. However, the steps are similar when you work from the Security dialog of an object.
 
@@ -28,7 +26,6 @@ Permissions are set at the collection, project, and object level as described in
 
 * You must have a project to connect to. If you don't have a project yet, [create one](../projects/create-project.md).
 * You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.
-
 
 ## View project-level permissions
 
@@ -58,7 +55,6 @@ Permissions are set at the collection, project, and object level as described in
 
     > [!div class="mx-imgBorder"]
     > ![Permissions tab, User name, Members tab](media/view-permissions/member-of-view-s154.png)  
-
 
 #### [Current page](#tab/current-page) 
 
@@ -118,7 +114,6 @@ Permissions are set at the collection, project, and object level as described in
 
 ::: moniker-end
 
-
 ## View organization or collection-level permissions 
 
 Open admin settings for the organization or a project collection. 
@@ -134,6 +129,7 @@ Open admin settings for the organization or a project collection.
 
     > [!div class="mx-imgBorder"]  
     > ![Permissions, Project Collection Administrators group, Members tab](media/view-permissions/project-collection-admin-users-s154.png)  
+
 3. Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
 
 ::: moniker-end 
@@ -175,46 +171,46 @@ You can define the security or permissions for a number of objects. You access t
 
 From the web portal, open the Security dialog for the object whose permissions you want to set. For specific instructions, see the following articles: 
 
-<table width="80%">
-<tbody valign="top">
-<tr>
-<th width="35%">Area</th>
-<th width="65%">Task</th>
-</tr>
-<tr>
-<td>Wiki &amp; Dashboard permissions</td>
-<td>
-<ul>
-<li><a href="../../project/wiki/manage-readme-wiki-permissions.md" data-raw-source="[README &amp; Wiki](../../project/wiki/manage-readme-wiki-permissions.md)">README &amp; Wiki</a></li>
-<li><a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="[Dashboards](../../report/dashboards/dashboard-permissions.md)">Dashboards</a></li>
-
-</ul>
-</td>
-</tr>
-<tr>
-<td>Azure Repos, Azure Pipelines/DevOps (code, build, test, release) permissions </td>
-<td>
-<ul>
-<li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Git branch](../../repos/git/branch-permissions.md)">Git branch</a></li>
-<li><a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Git repository](../../repos/git/set-git-repository-permissions.md)">Git repository</a></li>
-<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Builds](../../pipelines/policies/set-permissions.md)">Builds</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Release pipeline security](../../pipelines/policies/set-permissions.md)">Release pipeline security</a></li>
-<li><a href="../../pipelines/release/approvals/index.md" data-raw-source="[Approvals and approvers](../../pipelines/release/approvals/index.md)">Approvals and approvers</a></li> 
-</ul>
-</td>
-</tr>
-<tr>
-<td>Azure Boards/Work tracking permissions</td>
-<td>
-<ul>
-<li><a href="../../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a></li>
-<li><a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Work item query and folder](../../boards/queries/set-query-permissions.md)">Work item query and folder</a></li>
-<li>Plan permissions</li><br/></ul>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Area**
+   :::column-end:::
+   :::column span="1":::
+   **Task**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Wiki &amp; Dashboard permissions
+   :::column-end:::
+   :::column span="1":::   
+   - [README &amp; Wiki](../../project/wiki/manage-readme-wiki-permissions.md)
+   - [Dashboards](../../report/dashboards/dashboard-permissions.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Azure Repos, Azure Pipelines/DevOps (code, build, test, release) permissions 
+   :::column-end:::
+   :::column span="1":::   
+   - [Git branch](../../repos/git/branch-permissions.md)
+   - [Git repository](../../repos/git/set-git-repository-permissions.md)
+   - [TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)
+   - [Builds](../../pipelines/policies/set-permissions.md)
+   - [Release pipeline security](../../pipelines/policies/set-permissions.md)
+   - [Approvals and approvers](../../pipelines/release/approvals/index.md) 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Azure Boards/Work tracking permissions
+   :::column-end:::
+   :::column span="1":::
+   - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)
+   - [Work item query and folder](../../boards/queries/set-query-permissions.md)
+   - Plan permissions
+   :::column-end:::
+:::row-end:::
 
 ## Next steps
 
@@ -225,4 +221,3 @@ From the web portal, open the Security dialog for the object whose permissions y
 
 - [Troubleshoot permissions](troubleshoot-permissions.md)
 - [Permissions and role lookup guide](permissions-lookup-guide.md)
-
