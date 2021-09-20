@@ -5,7 +5,7 @@ services: vsts
 ms.topic: conceptual
 ms.assetid:
 ms.custom: seodec18
-ms.date: 09/16/2021
+ms.date: 09/20/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -123,98 +123,64 @@ To get started:
 
 Now that the build pipeline is in place, you will learn a few more common configurations to customize the deployment of the Azure Container Web App.
 
-<a name="endpoint"></a>
-
-## Deploy to Azure Web App for Containers
-
-You'll use the [Azure Web App for Container task](../tasks/deploy/azure-rm-web-app-containers.md) to deploy to Azure App Service in your pipeline.
-
-# [YAML](#tab/yaml/)
-
-::: moniker range=">= azure-devops-2019"
-
-You must supply an Azure service connection to the `AzureWebAppContainer` task. Add the following YAML snippet to your existing `azure-pipelines.yaml` file. Make sure you add the service connection details in the variables section as shown below-
-
-```yaml
-variables: 
-  ## Add this under variables section in the pipeline
-  azureSubscription: <Name of the Azure subscription>
-  appName: <Name of the Web App>
-  containerRegistry: <Name of the Azure container registry>
-
-## Add the below snippet at the end of your pipeline
-- task: AzureWebAppContainer@1
-  displayName: 'Azure Web App on Container Deploy'
-  inputs:
-    azureSubscription: $(azureSubscription)
-    appName: $(appName)
-    containers: $(containerRegistry)/$(imageRepository):$(tag)
-```    
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-YAML pipelines aren't available on TFS.
-
-::: moniker-end
-
-# [Classic](#tab/classic/)
-
-::: moniker range="azure-devops"
-
-The easiest way to get started with this task is to be signed in as a user who owns both the Azure DevOps Services organization and the Azure subscription.
-In this case, you won't have to manually create the service connection.
-Otherwise, to learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-To learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
-
-::: moniker-end
-
----
-
-## Configure registry credentials in web app
-
-App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to **Container settings** from the web app and update the **Image source, Registry** and save.
-
-![Screenshot showing Update image source and Registry in container settings.](media/webapp-linux/container-settings.png)
-
 ## Deploy with Azure Web App for Container
 
 # [YAML](#tab/yaml/)
 
 ::: moniker range=">= azure-devops-2019"
 
-The simplest way to deploy to an Azure Web App Container is to use the **[Azure Web App for Containers](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureWebAppContainerV1)** task.
-
-To deploy to an Azure Web App container, add the following snippet at the end of your **azure-pipelines.yml** file:
+Deploy to an Azure App custom container with the [Azure Web App for Container task](../tasks/deploy/azure-rm-web-app-containers.md). 
 
 ```yaml
-trigger:
-- main
 
-variables:
-  # Container registry service connection established during pipeline creation
-  imageRepository: <Name of your image repository>
+trigger:
+- master
+
+resources:
+- repo: self
+
+variables: 
+  ## Add this under variables section in the pipeline
+  azureSubscription: <Name of the Azure subscription>
+  appName: <Name of the Web App>
   containerRegistry: <Name of the Azure container registry>
+  dockerRegistryServiceConnection: '4fa4efbc-59af-4c0b-8637-1d5bf7f268fc'
+  imageRepository: <Name of image repository>
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
-  
-  # Agent VM image name
+
   vmImageName: 'ubuntu-latest'
 
-- task: AzureWebAppContainer@1 # Add this at the end of your file
-  inputs:
-    azureSubscription: '<Azure service connection>'
-    appName: '<Name of the container web app>'
-    containers: $(containerRegistry)/$(imageRepository):$(tag)
+stages:
+- stage: Build
+  displayName: Build and push stage
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: Docker@2
+      displayName: Build and push an image to container registry
+      inputs:
+        command: buildAndPush
+        repository: $(imageRepository)
+        dockerfile: $(dockerfilePath)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          $(tag)
+
+
+    ## Add the below snippet at the end of your pipeline
+    - task: AzureWebAppContainer@1
+      displayName: 'Azure Web App on Container Deploy'
+      inputs:
+        azureSubscription: $(azureSubscription)
+        appName: $(appName)
+        containers: $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
-The snippet assumes that the build steps in your YAML file build and push the docker image to your Azure container registry. The **Azure Web App on Container** task will pull the appropriate docker image corresponding to the BuildId from the repository specified, and then deploys the image to Azure App Service on Linux.
+The **Azure Web App on Container** task will pull the appropriate Docker image corresponding to the BuildId from the repository specified, and then deploy the image to your Azure App Service on Linux.
 
 ::: moniker-end
 
@@ -273,3 +239,12 @@ You can configure the Azure Web App for container to have multiple slots. Slots 
 Use the option **Deploy to Slot** in the **Azure Web App Container** task to specify the slot to deploy to. You can swap the slots by using the **Azure App Service Manage** task.
 
 ---
+
+## FAQ
+### How do I find my registry credentials for the web app?
+
+<a name="endpoint"></a>
+
+App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to **Container settings** from the web app and update the **Image source, Registry** and save.
+
+![Screenshot showing Update image source and Registry in container settings.](media/webapp-linux/container-settings.png)
