@@ -161,7 +161,7 @@ In a TFVC project, you see a list of folder paths in that project for which you 
 
 ## Search code with REST API
 
-You can use APIs to extend or supplement the capabilities listed in this article. For information about Code Search with REST API, see [Fetch Code Search Results](/rest/api/azure/devops/search/code%20search%20results/fetch%20code%20search%20results).
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Code Search with REST API, see [Fetch Code Search Results](/rest/api/azure/devops/search/code-search-results/fetch-code-search-results).
 
 ## Next steps
 
