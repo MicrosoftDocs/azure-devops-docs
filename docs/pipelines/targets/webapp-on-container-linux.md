@@ -36,6 +36,8 @@ To learn how to deploy to an Azure Web App without a container, see [Deploy an A
 
 Azure Pipelines can be used to [push images](../ecosystems/containers/push-image.md) to container registries such as Azure Container Registry (ACR), Docker Hub, Google Container Registries, and others. This example pushes an image to Azure Container Registry. 
 
+# [YAML](#tab/yaml/)
+
 1. Sign in to your Azure DevOps organization and navigate to your project.
 1. Go to **Pipelines**, and then select **New Pipeline**.
 1. Select **GitHub** as the location of your source code and select your repository.
@@ -93,7 +95,7 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-#### [Classic](#tab/classic/)
+# [Classic](#tab/classic/)
 
 ::: moniker range="< azure-devops"
 
@@ -117,7 +119,7 @@ To get started:
 
 5. Link the build pipeline to this release pipeline as an artifact. Save the release pipeline and create a release to see it in action.
 
-* * *
+---
 
 Now that the build pipeline is in place, you will learn a few more common configurations to customize the deployment of the Azure Container Web App.
 
@@ -127,7 +129,7 @@ Now that the build pipeline is in place, you will learn a few more common config
 
 You'll use the [Azure Web App for Container task](../tasks/deploy/azure-rm-web-app-containers.md) to deploy to Azure App Service in your pipeline.
 
-#### [YAML](#tab/yaml/)
+# [YAML](#tab/yaml/)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -157,7 +159,7 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-#### [Classic](#tab/classic/)
+# [Classic](#tab/classic/)
 
 ::: moniker range="azure-devops"
 
@@ -173,7 +175,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 ::: moniker-end
 
-* * *
+---
 
 ## Configure registry credentials in web app
 
@@ -183,7 +185,7 @@ App Service needs information about your registry and image to pull the private 
 
 ## Deploy with Azure Web App for Container
 
-#### [YAML](#tab/yaml/)
+# [YAML](#tab/yaml/)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -222,16 +224,16 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-#### [Classic](#tab/classic/)
+# [Classic](#tab/classic/)
 The simplest way to deploy to an Azure Web App Container is to use the **Azure Web App On Container Deploy** task.
 This task is added to the release pipeline when you select the deployment task for Azure Web App on Container deployment.
 Templates exist for apps developed in various programming languages. If you can't find a template for your language, select the generic **Azure App Service Deployment** template.
 
-* * *
+---
 
 ## Deploy to a slot
 
-#### [YAML](#tab/yaml/)
+# [YAML](#tab/yaml/)
 
 ::: moniker range=">= azure-devops"
 
@@ -265,9 +267,9 @@ YAML pipelines aren't available on TFS.
 
 ::: moniker-end
 
-#### [Classic](#tab/classic/)
+# [Classic](#tab/classic/)
 
 You can configure the Azure Web App for container to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 Use the option **Deploy to Slot** in the **Azure Web App Container** task to specify the slot to deploy to. You can swap the slots by using the **Azure App Service Manage** task.
 
-* * *
+---
