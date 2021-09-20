@@ -33,50 +33,130 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
 
 ## Parameters
 
-<table>
-<thead>
-<tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><em>itemspec1</em> <em>[itemspec2...itemspecN]</em></p></td>
-	<td><p>Specifies the server path of the file or folder to be destroyed. Use multiple <em>itemspec</em> values to delete multiple items. For example, <code>tf destroy $/TeamProject1 $/teamProject2 $/TeamProject3</code>.</p><p>Local paths are not supported.</p></td></tr>
-<tr>
-	<td><p><em>versionspec</em></p></td>
-	<td><p>Provides a version such as C58 for the <strong>/keephistory</strong> or <strong>/stopat</strong> options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td></tr>
-<tr>
-	<td><p><em>username</em></p></td>
-    <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName.</em></p></td></tr>
-<tr>
-	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>The URL of the project collection that contains files that you want to destroy (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *itemspec1* *[itemspec2...itemspecN]*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the server path of the file or folder to be destroyed. Use multiple *itemspec* values to delete multiple items. For example, `tf destroy $/TeamProject1 $/teamProject2 $/TeamProject3`.
+   Local paths are not supported.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *versionspec*
+   :::column-end:::
+   :::column span="1":::
+   Provides a version such as C58 for the **/keephistory** or **/stopat** options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN UserName* or *UserName.*
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="1":::
+   The URL of the project collection that contains files that you want to destroy (for example, http://myserver:8080/tfs/DefaultCollection).
+   :::column-end:::
+:::row-end:::
 
-<table><thead>
-<tr><th><p><strong>Option</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><strong>/keephistory</strong></p></td>
-	<td><p>Optional. Specifies that the history of a file is preserved even as its contents are destroyed. This cannot be specified with the <strong>/preview</strong> option.</p></td></tr>
-<tr>
-	<td><p><strong>/stopat</strong></p></td>
-	<td><p>Optional. Can be used only if <strong>/keephistory</strong> is specified also.</p><p>Specifies the file version for the file, and the files that follow thereafter, for which the history is preserved.</p><p>The default version for <strong>/stopat</strong> is tip (T) for the latest checked-in version of an item.</p><p>You cannot use label or workspace <em>versionspec</em> values to specify an item for <strong>/stopat</strong> option.</p></td></tr>
-<tr>
-	<td><p><strong>/preview</strong></p></td>
-	<td><p>Displays in the Command Prompt window the files that would be destroyed. When <strong>tf destroy</strong> runs in the preview mode, the files are not actually destroyed.</p><strong>Note:</strong> The text in the Command Prompt window displays the word &quot;Destroyed&quot; with each file that would be destroyed. However, the file is actually not destroyed when the <strong>/preview</strong> option is used.</td></tr>
-<tr>
-	<td><p><strong>/startcleanup</strong></p></td>
-	<td><p>Forces the TFVC metadata clean-up process to start immediately after the deletion finishes. If the user does not specify <strong>/startcleanup</strong>, the destroyed metadata clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Visual Studio Team Foundation Server. By default, the clean-up is scheduled to run every 5 days. Seven days after the TFVC metadata are cleaned up the content will be deleted by another clean-up process. By default, this content clean-up process runs once each day.</p></td></tr>
-<tr>
-	<td><p><strong>/noprompt</strong></p><p><strong>/i</strong></p></td>
-	<td><p>Specifies that the destruction of files is non-interactive. <strong>/i</strong> is an alias for <strong>/noprompt</strong>.</p></td></tr>
-<tr>
-	<td><p><strong>/silent</strong></p></td>
-	<td><p>Specifies that, when you destroy files or folders, the output is not written to the command prompt window.</p></td></tr>
-<tr>
-	<td><p><strong>/login</strong></p></td>
-	<td><p>Specifies the user name and password to authenticate the user with Team Foundation Server.</p></td></tr>
-<tr>
-	<td><p><strong>/collection</strong></p></td>
-	<td><p>Specifies the project collection.</p></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/keephistory**
+   :::column-end:::
+   :::column span="1":::
+   Optional. Specifies that the history of a file is preserved even as its contents are destroyed. This cannot be specified with the **/preview** option.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/stopat**
+   :::column-end:::
+   :::column span="1":::
+   Optional. Can be used only if **/keephistory** is specified also.
+   
+   Specifies the file version for the file, and the files that follow thereafter, for which the history is preserved.
+   
+   The default version for **/stopat** is tip (T) for the latest checked-in version of an item.
+   
+   You cannot use label or workspace *versionspec* values to specify an item for **/stopat** option.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/preview**
+   :::column-end:::
+   :::column span="1":::
+   Displays in the Command Prompt window the files that would be destroyed. When **tf destroy** runs in the preview mode, the files are not actually destroyed.
+
+   > [!Note]  
+   > The text in the Command Prompt window displays the word &quot;Destroyed&quot; with each file that would be destroyed. However, the file is actually not destroyed when the **/preview** option is used.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/startcleanup**
+   :::column-end:::
+   :::column span="1":::
+   Forces the TFVC metadata clean-up process to start immediately after the deletion finishes. If the user does not specify **/startcleanup**, the destroyed metadata clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Visual Studio Team Foundation Server. By default, the clean-up is scheduled to run every 5 days. Seven days after the TFVC metadata are cleaned up the content will be deleted by another clean-up process. By default, this content clean-up process runs once each day.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   
+   **/i**
+   :::column-end:::
+   :::column span="1":::
+   Specifies that the destruction of files is non-interactive. **/i** is an alias for **/noprompt**.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/silent**
+   :::column-end:::
+   :::column span="1":::
+   Specifies that, when you destroy files or folders, the output is not written to the command prompt window.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user name and password to authenticate the user with Team Foundation Server.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/collection**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the project collection.
+   :::column-end:::
+:::row-end:::
 
 ## Remarks
 When you use **tf destroy** to destroy version-control files, the application tier of Team Foundation Server receives the destroy request and checks to see whether you are a member of the **Team Foundation Administrators** security group. If you are not a member, the system displays an error-message dialog box that tells you that you do not have sufficient permissions to perform the operation.
