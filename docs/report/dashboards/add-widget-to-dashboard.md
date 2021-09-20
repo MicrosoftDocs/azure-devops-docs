@@ -109,18 +109,7 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 
 This example shows how to add the Velocity widget available from Analytics to a dashboard. 
 
-1. Connect to the web portal for your project and choose **Overview>Dashboards**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Web portal, open Dashboards](media/dashboards/open-dashboards-vert.png)
-
-	If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
-
-1. Make sure that the [Analytics Marketplace extension](../dashboards/analytics-extension.md) has been installed. The Analytics widgets won't be available until it is installed.  
-
-2. [Choose the dashboard](dashboards.md#choose-dashboard) that you want to modify. 
-
-3. Choose ![edit icon](media/icons/edit-icon.png) **Edit** to modify a dashboard. The widget catalog opens.  
+1. Choose ![edit icon](media/icons/edit-icon.png) **Edit** to modify a dashboard. The widget catalog opens.  
 
 4. In the right pane search box, type **Velocity** to quickly locate the Velocity widget within the widget catalog.  
 
