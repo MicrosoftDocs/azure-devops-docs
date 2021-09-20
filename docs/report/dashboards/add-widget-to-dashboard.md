@@ -1,7 +1,7 @@
 ---
 title: Add a widget to a team dashboard 
 titleSuffix: Azure DevOps
-description: Choose and configure widgets that you add to a team dashboard in Azure DevOps & Team Foundation Server  
+description: Choose and configure widgets that you add to a team dashboard in Azure DevOps  
 ms.custom: dashboards
 ms.technology: devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
-ms.date: 04/05/2019
+ms.date: 09/21/2021
 ---
 
 
@@ -34,7 +34,7 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widgets t
 ::: moniker-end
 
 
-## Select a dashboard 
+## Open a dashboard 
 
 All dashboards are associated with a team. You need to be a team administrator, project administrator, or a team member with permissions to modify a dashboard. 
 
@@ -82,7 +82,7 @@ When you're finished with your additions, choose  **Done Editing** to exit dashb
 > [!TIP]   
 > When you're in dashboard edit mode, you can remove, rearrange, and configure widgets, as well as add new widgets. Once you leave edit mode, the widget tiles remain locked, reducing the chances of accidentally moving a widget.
 
-To remove a widget, choose the ![actions icon](../../media/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
+To remove a widget, choose ![actions icon](../../media/icons/actions-icon.png) **More actions** and choose **Delete** from the menu.  
 
 > [!div class="mx-imgBorder"]  
 > ![Delete a widget from a dashboard](media/dashboards/delete-widget.png) 
@@ -92,7 +92,7 @@ To remove a widget, choose the ![actions icon](../../media/icons/actions-icon.pn
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 Choose ![Edit dashboard icon](media/edit-dashboard-icon.png) to modify a dashboard. Choose ![add a widget icon](media/add-widget-icon.png) to add a widget to the dashboard.  
 
-The [widget catalog](widget-catalog.md) describes all the available widgets, many of which are scoped to the selected team context.  
+The [widget catalog](widget-catalog.md) describes all available widgets, many of which are scoped to the selected team context.  
 
 ::: moniker-end
 
@@ -103,7 +103,7 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 
 <a id="add-analytics-widget" />
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019"
 
 ## Add an Analytics widget
 
@@ -130,7 +130,7 @@ This example shows how to add the Velocity widget available from Analytics to a 
 5. Choose the widget, then **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. 
 
 6. Next, configure the widget. For details, see the following articles: 
-	- [Configure burndown or burnup](configure-burndown-burnup-widgets.md)
+	- [Configure burndown or Turnup](configure-burndown-burnup-widgets.md)
 	- [Configure cumulative flow](cumulative-flow.md)  
 	- [Configure lead/cycle time](cycle-time-and-lead-time.md)  
 	- [Configure velocity](team-velocity.md)  
@@ -190,7 +190,7 @@ Once you've configured the widget, you can edit it by opening the actions menu.
 
 ## Move or delete a widget 
 
-To move a widget, you need to enable the dashboard edit mode. To delete a widget, simply select the delete option provided from the widget&#39;s options menu. 
+To move a widget, you need to enable the dashboard edit mode. To delete a widget, select the delete option provided from the widget&#39;s **More actions** menu. 
 
 ::: moniker range="tfs-2015"
 Just as you have to be a team or project admin to add items to a dashboard, you must have admin permissions to remove items. 
@@ -273,7 +273,7 @@ For example, the Chart for work items widget allows you to select an area size r
 
 In addition to the widgets described in the Widget catalog, you can add widgets from the [Marketplace](https://marketplace.visualstudio.com/search?term=widget&target=AzureDevOps&category=All%20categories&sortBy=Relevance), or create your own widgets using the [Widget REST APIs](../../extend/develop/add-dashboard-widget.md). 
 
-### Disabled Marketplace widget 
+## Disabled Marketplace widgets 
 If your organization owner or project collection administrator disables a marketplace widget, you'll see the following image: 
 
 <img src="media/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" />   
