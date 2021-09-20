@@ -1,6 +1,6 @@
 ---
-title: Deploy an Azure Web App Container
-description: Deploy to Azure Web App Container from Azure Pipelines or TFS
+title: Deploy an Azure App custom container
+description: Deploy to Azure App custom container from Azure Pipelines
 services: vsts
 ms.topic: conceptual
 ms.assetid:
@@ -9,9 +9,9 @@ ms.date: 09/20/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy an Azure Web App Container
+# Deploy an Azure App custom container
 
-You can use App Service on Linux and pipelines to automatically deploy your web app to a [custom container in Azure](/azure/app-service/quickstart-custom-container) after every successful build. 
+You can use App Service on Linux and pipelines to automatically deploy your web app to a [custom container in Azure](/azure/app-service/quickstart-custom-container). 
 
 Azure App Service is a managed environment for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite languages, including .NET, Python, and JavaScript. 
 
@@ -84,7 +84,6 @@ Azure Pipelines can be used to [push images](../ecosystems/containers/push-image
 
 ::: moniker range="azure-devops-2019"
 
-We aren't yet advising new users to use YAML pipelines to deploy from Azure DevOps Server 2019.
 If you're an experienced pipeline user and already have a YAML pipeline to build your .NET Core app, then you might find the examples below useful.
 
 ::: moniker-end
@@ -115,7 +114,7 @@ To get started:
 
 3. Save the pipeline and queue a build to see it in action.
 
-4. Create a release pipeline and select the **Empty job** for your stage. Search for the **AzureWebAppContainer** task and configure accordingly.
+4. Create a release pipeline and select the **Empty job** for your stage. Search for the **AzureWebAppContainer** task and configure.
 
 5. Link the build pipeline to this release pipeline as an artifact. Save the release pipeline and create a release to see it in action.
 
