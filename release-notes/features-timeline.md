@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 8/7/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -35,14 +35,17 @@ Each feature is linked to the public roadmap project where you can learn more ab
         </tr>
     </thead>
     <tbody>
-<tr><td rowspan="3"><strong>2021 Q3</strong></td>
-    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924" data-raw-source="[Accessibility and UX Modernization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924)">Accessibility and UX Modernization</a></td><td>Boards</td><td>Future</td>   
+<tr><td rowspan="4"><strong>2021 Q3</strong></td>
+    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924" data-raw-source="[Accessibility and UX Modernization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924)">Accessibility and UX Modernization</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844639 data-raw-source="[Delivery Plans - Tags Color Styling](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844639)">Delivery Plans - Tags Color Styling</a></td><td>Boards</td><td>Future</td>   
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640 data-raw-source="[Azure DevOps Server Integration with GitHub.com](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640)">Azure DevOps Server Integration with GitHub.com</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859333 data-raw-source="[Support wild cards in path filters](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859333)">Support wild cards in path filters</a></td><td>Pipelines</td><td>Future</td>
 </tr>
-<tr><td rowspan="2"><strong>2021 Q4</strong></td>
-    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330 data-raw-source="[Automatically retry a task](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330)">Automatically retry a task</a></td><td>Pipelines</td><td>Future</td>
+<tr><td rowspan="4"><strong>2021 Q4</strong></td>
+    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330 data-raw-source="[Automatically retry a task](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330)">Automatically retry a task</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Pipelines</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887 data-raw-source="[Show Link with Parent Name in Query Results Widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887)">Show Link with Parent Name in Query Results Widget</a></td><td>Reporting</td><td>Future</td>
 </tr>
 <tr><td rowspan="15"><strong>Future</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547" data-raw-source="[Support Azure Managed Identities](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547)">Support Azure Managed Identities</a></td><td>General</td><td>N/A</td>
@@ -53,12 +56,12 @@ Each feature is linked to the public roadmap project where you can learn more ab
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297 data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609297)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td><td>Artifacts</td><td>TBD</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196 data-raw-source="[Preview attachments for word, excel, ppt, project, pdf from the work item](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196)">Preview attachments for word, excel, ppt, project, pdf from the work item</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942 data-raw-source="[Delivery Plans 2.0 - Dependency Tracking Visualization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942)">Delivery Plans 2.0 - Dependency Tracking Visualization</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638 data-raw-source="[Delivery Plans - Progress Roll-ups by Effort](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638)">Delivery Plans - Progress Roll-ups by Effort</a></td><td>Boards</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844639 data-raw-source="[Delivery Plans - Tags Color Styling](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844639)">Delivery Plans - Tags Color Styling</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193 data-raw-source="[Maintain backlog hierarchy when filters are applied](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193)">Maintain backlog hierarchy when filters are applied</a></td><td>Boards</td><td>Future</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162 data-raw-source="[Improve GitHub Connection Experience](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875162)">Improve GitHub Connection Experience</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138 data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Boards</td><td>TBD</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343 data-raw-source="[Support Flexible Orchestration mode in scale set agent pools](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859343)">Support Flexible Orchestration mode in scale set agent pools</a></td><td>Pipelines</td><td>TBD</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289 data-raw-source="[Elastic self-hosted pools (Kubernetes)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289)">Elastic self-hosted pools (Kubernetes)</a></td><td>Pipelines</td><td>TBD</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876 data-raw-source="[Make file diff viewing easier in PR summary](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876)">Make file diff viewing easier in PR summary</a></td><td>Repos</td><td>Future</td> </tr>
    </tr>
     </tbody>

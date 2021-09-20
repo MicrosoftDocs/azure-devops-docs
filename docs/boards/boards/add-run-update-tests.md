@@ -33,18 +33,18 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
-* You must be added to a [team or project](../../organizations/security/add-users-team-project.md). 
-* To add work items and exercise all board features, you must be granted [**Basic** access or higher](../../organizations/security/access-levels.md).
-* To view or modify work items, your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+- You must connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
+- You must be added to a [team or project](../../organizations/security/add-users-team-project.md). 
+- To add work items and exercise all board features, you must be granted [**Basic** access or higher](../../organizations/security/access-levels.md).
+- To view or modify work items, your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 - To view or run tests, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or run tests.  
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* You must be added to a [team or project](../../organizations/security/add-users-team-project.md). 
-* To add work items and exercise all board features, you must be granted [**Basic** access or higher](../../organizations/security/access-levels.md).
-* To view or modify work items, your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+- You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+- You must be added to a [team or project](../../organizations/security/add-users-team-project.md). 
+- To add work items and exercise all board features, you must be granted [**Basic** access or higher](../../organizations/security/access-levels.md).
+- To view or modify work items, your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 - To view or run tests, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or run tests.  
 
 ::: moniker-end
