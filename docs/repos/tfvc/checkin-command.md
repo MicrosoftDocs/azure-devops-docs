@@ -32,127 +32,184 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
 
 ## Parameters
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Parameter</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>/author</strong>:<i>author name</i></p></td>
-<td><p>Identifies the author of the pending changes so that one user can check in changes on behalf of another user.</p>
-<p>Requires the <strong>CheckinOther </strong>permission. See <a href="../../organizations/security/permissions.md" data-raw-source="[Permissions and groups reference](../../organizations/security/permissions.md)">Permissions and groups reference</a></p></td>
-</tr>
-<tr>
-<td><p><strong>/bypass</strong></p></td>
-<td><p>Bypasses a gated check-in requirement. For more information, see <a href="check-folder-controlled-by-gated-check-build-process.md">Check in to a folder that is controlled by a gated check-in build process</a>.</p></td>
-</tr>
-<tr>
-<td><p><strong>/collection</strong>:<i>TeamProjectCollectionUrl</i></p></td>
-<td><p>If you use the <strong>shelveset</strong> option, the <strong>/collection</strong> option specifies the URL of the project collection that contains the shelveset. For example:`http://myserver:8080/tfs/DefaultCollection`.</p>
-<p>By default, the project collection is presumed to be the one that contains the workspace that maps the current directory.</p></td>
-</tr>
-<tr>
-<td><p><strong>/comment</strong></p></td>
-<td><p>Associates a comment with the changeset using one of the following arguments:</p>
-<ul>
-<li><p><i>Comment</i>: A user-provided comment about the check-in.</p></li>
-<li><p><i><xref href="comment" data-throw-if-not-resolved="False" data-raw-source="@comment"></xref> file</i>: The path to a file on disk that contains the comment for the check-in.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>/force</strong></p></td>
-<td><p>Forces a check-in on items with pending edits even when there are no content changes in the file.</p></td>
-</tr>
-<tr>
-<td><p><i>itemspec</i></p></td>
-<td><p>Specifies the scope of the items to check in from the user&#39;s workspace. You can specify more than one <em>Itemspec</em> argument. For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
-</tr>
-<tr>
-<td><p><strong>/login</strong>:<i>username</i>,[<i>password</i>]</p></td>
-<td><p>Specifies the user account to run the command. See <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
-</tr>
-<tr>
-<td><p><strong>/new</strong></p></td>
-<td><p>The selected state of each pending change (as shown in the <strong>Check In</strong> dialog box), the comment, associated work items, check-in notes, and check-in policy override reason, are stored on your dev machine as pending changes until you check them in. The <strong>/new</strong> option clears this check-in metadata before you check in.</p>
-<p>This option and the behavior it modifies have no effect when you use the <strong>/noprompt</strong> option.</p></td>
-</tr>
-<tr>
-<td><p><strong>/noautoresolve</strong></p></td>
-<td><p>By default, the system automatically attempts to <strong>AutoResolve All</strong> (see <a href="resolve-team-foundation-version-control-conflicts.md">Resolve Team Foundation Version Control conflicts</a>). Specify this option to disable this default behavior.</p></td>
-</tr>
-<tr>
-<td><p><strong>/noprompt</strong></p></td>
-<td><p>Suppresses the display of windows and dialog boxes (such as the <strong>Check In</strong> dialog box) and redirects output data to the command prompt. See <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
-</tr>
-<tr>
-<td><p><strong>/notes</strong></p></td>
-<td><p>Provides one or more check-in notes to associate with the changeset using one of the following arguments:</p>
-<ul>
-<li><p><i>NoteFieldName=NoteFieldValue</i>: Sets the value of the check-in note field. You can provide multiple, semicolon-separated &quot;field=value&quot; expressions.</p></li>
-<li><p><i>Notefile</i>: The user-provided path of a file on disk that contains check-in note field names and values in the format of &quot;field=value&quot;. A semicolon separated note tile can span multiple lines, for example:</p>
-<p>Field1=Value1;</p>
-<p>Field2=First line of Value2</p>
-<p>Second line Value2;</p>
-<p>Field3=Value3;</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>/override</strong></p></td>
-<td><p>Overrides a check-in policy using one of the following arguments:</p>
-<ul>
-<li><p><i>reason</i>: A user-provided reason why the check-in policy is being ignored.</p></li>
-<li><p><i>Reasonfile</i>: The path to a file that contains a user-provided description of the reason why the check-in policy is being ignored.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>/recursive</strong></p></td>
-<td><p>Recursively checks in items in the specified directory and any subdirectories.</p></td>
-</tr>
-<tr>
-<td><p><strong>/saved</strong></p></td>
-<td><p>Ignore this parameter.</p></td>
-</tr>
-<tr>
-<td><p><strong>/shelveset</strong>:<i>shelvesetname[;owner]</i></p></td>
-<td><p>Specifies a shelveset to check in. The optional <i>owner</i> argument is used to specify a shelveset that the current user does not own.</p>
-<div class="alert">
-<table>
-<thead>
-<tr>
-<th> <strong>Note</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>After you check in the shelveset, the system deletes it.</p></td>
-</tr>
-</tbody>
-</table>
-</div></td>
-</tr>
-<tr>
-<td><p><strong>/validate</strong></p></td>
-<td><p>Tests whether the check in would succeed without checking in the files. The system evaluates check-in policies, check-in notes, and lists conflicts.</p>
-<div class="alert">
-<table>
-<thead>
-<tr>
-<th> <strong>Note</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>If you do not specify the <strong>/noprompt</strong> option, you must choose the <strong>Check In</strong> button on the <strong>Check In</strong> dialog box to validate the check in. After you choose this button, the system will not check in the files.</p></td>
-</tr>
-</tbody>
-</table>
-</div></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Parameter**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/author**:*author name*
+   :::column-end:::
+   :::column span="1":::
+   Identifies the author of the pending changes so that one user can check in changes on behalf of another user.
+
+   Requires the **CheckinOther **permission. See [Permissions and groups reference](../../organizations/security/permissions.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/bypass**
+   :::column-end:::
+   :::column span="1":::
+   Bypasses a gated check-in requirement. For more information, see [Check in to a folder that is controlled by a gated check-in build process](check-folder-controlled-by-gated-check-build-process.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/collection**:*TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="1":::
+   If you use the **shelveset** option, the **/collection** option specifies the URL of the project collection that contains the shelveset. For example:`http://myserver:8080/tfs/DefaultCollection`.
+
+   By default, the project collection is presumed to be the one that contains the workspace that maps the current directory.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/comment**
+   :::column-end:::
+   :::column span="1":::
+   Associates a comment with the changeset using one of the following arguments:
+
+   
+   - *Comment*: A user-provided comment about the check-in.
+
+   - *<xref href="comment" data-throw-if-not-resolved="False" data-raw-source="@comment"></xref> file*: The path to a file on disk that contains the comment for the check-in.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/force**
+   :::column-end:::
+   :::column span="1":::
+   Forces a check-in on items with pending edits even when there are no content changes in the file.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the scope of the items to check in from the user&#39;s workspace. You can specify more than one *Itemspec* argument. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**:*username*,[*password*]
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/new**
+   :::column-end:::
+   :::column span="1":::
+   The selected state of each pending change (as shown in the **Check In** dialog box), the comment, associated work items, check-in notes, and check-in policy override reason, are stored on your dev machine as pending changes until you check them in. The **/new** option clears this check-in metadata before you check in.
+
+   This option and the behavior it modifies have no effect when you use the **/noprompt** option.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noautoresolve**
+   :::column-end:::
+   :::column span="1":::
+   By default, the system automatically attempts to **AutoResolve All** (see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md)). Specify this option to disable this default behavior.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   :::column-end:::
+   :::column span="1":::
+   Suppresses the display of windows and dialog boxes (such as the **Check In** dialog box) and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/notes**
+   :::column-end:::
+   :::column span="1":::
+   Provides one or more check-in notes to associate with the changeset using one of the following arguments:
+
+   
+   - *NoteFieldName=NoteFieldValue*: Sets the value of the check-in note field. You can provide multiple, semicolon-separated &quot;field=value&quot; expressions.
+
+   - *Notefile*: The user-provided path of a file on disk that contains check-in note field names and values in the format of &quot;field=value&quot;. A semicolon separated note tile can span multiple lines, for example:
+
+   Field1=Value1;
+
+   Field2=First line of Value2
+
+   Second line Value2;
+
+   Field3=Value3;
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/override**
+   :::column-end:::
+   :::column span="1":::
+   Overrides a check-in policy using one of the following arguments:
+
+   
+   - *reason*: A user-provided reason why the check-in policy is being ignored.
+
+   - *Reasonfile*: The path to a file that contains a user-provided description of the reason why the check-in policy is being ignored.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   Recursively checks in items in the specified directory and any subdirectories.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/saved**
+   :::column-end:::
+   :::column span="1":::
+   Ignore this parameter.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/shelveset**:*shelvesetname[;owner]*
+   :::column-end:::
+   :::column span="1":::
+   Specifies a shelveset to check in. The optional *owner* argument is used to specify a shelveset that the current user does not own.
+
+   > [!Note]  
+   > After you check in the shelveset, the system deletes it.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/validate**
+   :::column-end:::
+   :::column span="1":::
+   Tests whether the check in would succeed without checking in the files. The system evaluates check-in policies, check-in notes, and lists conflicts.
+
+   > [!Note]  
+   > If you do not specify the **/noprompt** option, you must choose the **Check In** button on the **Check In** dialog box to validate the check in. After you choose this button, the system will not check in the files.</p>
+   :::column-end:::
+:::row-end:::
+
 
 ## Examples
 
