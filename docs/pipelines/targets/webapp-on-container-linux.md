@@ -61,7 +61,6 @@ Azure Pipelines can be used to [push images](../ecosystems/containers/push-image
 1. Save and run your pipeline. Your YAML pipeline should look similar to this:
 
 ```yaml
-```YAML
 - stage: Build
   displayName: Build and push stage
   jobs:  
