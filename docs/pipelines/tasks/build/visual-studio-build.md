@@ -106,7 +106,7 @@ msbuild, visualstudio
       </td>
    </tr>
    <tr>
-      <th style="text-align: center" colspan="2">Advanced</th>
+      <th colspan="2">Advanced</th>
    </tr>
    <tr>
       <td><code>maximumCpuCount</code><br/>Build in Parallel</td>
@@ -156,7 +156,7 @@ msbuild, visualstudio
       </td>
    </tr>
    <tr>
-      <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+      <th colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
    </tr>
 </table>
 
