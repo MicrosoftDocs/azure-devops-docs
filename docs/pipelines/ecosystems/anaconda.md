@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: 50ed6bb4-5f35-4e1e-aafc-295eb10198df
 ms.reviewer: vijayma
 ms.custom: seodec18, devx-track-python
-ms.date: 07/30/2021
+ms.date: 09/21/2021
 monikerRange: azure-devops
 author: JuliaKM
 ---
@@ -70,7 +70,7 @@ Use the `macOS-latest` agent with Anaconda.
   displayName: Take ownership of conda installation
 ```
 
-# [Hosted VS2017](#tab/vs2017)
+# [Hosted VS2019](#tab/windows-2019)
 
 ```yaml
 - powershell: Write-Host "##vso[task.prependpath]$env:CONDA\Scripts"
@@ -99,7 +99,7 @@ The `conda create` command will create an environment with the arguments you pas
   displayName: Create Anaconda environment
 ```
 
-# [Hosted VS2017](#tab/vs2017)
+# [Windows 2019](#tab/windows-2019)
 
 ```yaml
 - script: conda create --yes --quiet --name myEnvironment
@@ -149,7 +149,7 @@ The following YAML installs the `scipy` package in the conda environment named `
   displayName: Install Anaconda packages
 ```
 
-# [Hosted VS2017](#tab/vs2017)
+# [Hosted VS2019](#tab/windows-2019)
 
 ```yaml
 - script: |
@@ -195,7 +195,7 @@ The following YAML installs the `scipy` package in the conda environment named `
   condition: succeededOrFailed()
 ```
 
-# [Hosted VS2017](#tab/vs2017)
+# [Windows 2019](#tab/windows-2019)
 
 ```yaml
 - script: |
