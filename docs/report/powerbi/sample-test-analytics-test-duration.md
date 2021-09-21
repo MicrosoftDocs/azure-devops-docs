@@ -49,9 +49,8 @@ Specifically, you'll find sample queries for the following reports:
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate} "
         &"And Workflow eq 'Build' "
@@ -249,9 +248,8 @@ You may want to view the test duration of all the tests of a pipeline for **Rele
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate}) "
         &"/groupby((TestSK, Test/TestName, Workflow), "
@@ -300,9 +298,8 @@ You may want to view the test duration for all the tests of a pipeline for a par
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate} "
         &"And Workflow eq 'Build') "
@@ -353,9 +350,8 @@ You may want to view the test duration of all the tests of a pipeline for a part
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate} "
         &"And Workflow eq 'Build') "
@@ -406,9 +402,8 @@ You may want to view the test duration of all the tests of a pipeline for tests 
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate} "
         &"And Workflow eq 'Build') "
