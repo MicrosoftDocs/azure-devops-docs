@@ -14,6 +14,9 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
+> [!NOTE]
+> We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](../../artifacts/pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster performance. 
+
 Use this task to download build artifacts.
 
 ::: moniker range="> tfs-2018"
