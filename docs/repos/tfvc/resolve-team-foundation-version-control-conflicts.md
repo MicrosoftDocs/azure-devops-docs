@@ -112,64 +112,91 @@ When you choose **AutoResolve All**, and then **Specific Conflict Types**, the *
 
 :::image type="content" source="media/resolve-team-foundation-version-control-conflicts/IC612249.png" alt-text="Understand the automatic options":::
 
-<table>
-<thead>
-<tr>
-<th><p>If you want the system to automatically resolve conflicts that occurred because...</p></th>
-<th><p>As explained in this example...</p></th>
-<th><p>Then select this check box...</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>Non-conflicting content changes were made in each version of a file</p></td>
-<td><p>In the file version on the left, a <strong>zero</strong> was added at the beginning. In the file on the right, a <strong>three</strong> was added at the end:</p>
-<img src="media/resolve-team-foundation-version-control-conflicts/IC377394.png" title="Non-conflicting content changes" alt="Non-conflicting content changes" /></td>
-<td><p><strong>Conflicts with any content changes</strong></p></td>
-</tr>
-<tr>
-<td><p>Content changes were made that are unique to the workspace (during get or checkin operation) or target version (during merge or rollback operation)</p></td>
-<td><p><strong>four</strong> and <strong>five</strong> were added to the workspace or target version:</p>
-<img src="media/resolve-team-foundation-version-control-conflicts/IC377395.png" title="Content changes unique to workspace or target" alt="Content changes unique to workspace or target" /></td>
-<td><p><strong>Conflicts with content changes made only in the local workspace or target branch</strong></p></td>
-</tr>
-<tr>
-<td><p>Content changes were made that are unique to the server (during get or checkin operation) or source version (during merge or rollback operation)</p></td>
-<td><p><strong>four</strong> and <strong>five</strong> were added to the server or source version:</p>
-<img src="media/resolve-team-foundation-version-control-conflicts/IC377396.png" title="Content changes unique to server or source" alt="Content changes unique to server or source" /></td>
-<td><p><strong>Conflicts with content changes made only in the server version or source branch</strong></p></td>
-</tr>
-<tr>
-<td><p>A file on the server (during get or checkin operation) or in the source branch (during merge or rollback operation) was renamed</p></td>
-<td><p>You checked out a file that is named <strong>launch.cs</strong> and worked on it. During that time, someone else checked in a changeset that affected the same file. That changeset did not modify the contents of the file, but it did change the name of the file to <strong>start.cs</strong>.</p></td>
-<td><p><strong>Conflicts caused by renaming file in the server version or source branch</strong></p></td>
-</tr>
-<tr>
-<td><ul>
-<li><p>Common content changes were made that resulted in identical content in each version</p></li>
-<li><p>You changed a file, checked it in through a Gated Check-in build, and selected the <strong>Preserve my pending changes locally</strong> option</p></li>
-</ul></td>
-<td><p>Changes to each version resulted in identical file content. The changes can be to the content in the files, as shown in the following example:</p>
-<img src="media/resolve-team-foundation-version-control-conflicts/IC377397.png" title="Identical content changes in each version" alt="Identical content changes in each version" />
-<p>This option also resolves conflicts that are caused by all other operations (for example, rename, delete, undelete, and branch) and that result in identical files.</p>
-<div class="alert">
-<table>
-<thead>
-<tr>
-<th> <strong>Tip</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>If you select this check box, when you proceed, the system will resolve these changes by taking (downloading) the server version onto your workspace.</p></td>
-</tr>
-</tbody>
-</table>
-</div></td>
-<td><p><strong>Conflicts caused by identical change in the server and workspace</strong></p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   If you want the system to automatically resolve conflicts that occurred because...
+   :::column-end:::
+   :::column span="1":::
+   As explained in this example...
+   :::column-end:::
+   :::column span="1":::
+   Then select this check box...
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Non-conflicting content changes were made in each version of a file
+   :::column-end:::
+   :::column span="1":::
+   In the file version on the left, a **zero** was added at the beginning. In the file on the right, a **three** was added at the end:
+
+   ![Non-conflicting content changes](media/resolve-team-foundation-version-control-conflicts/IC377394.png)
+   :::column-end:::
+   :::column span="1":::
+   **Conflicts with any content changes**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Content changes were made that are unique to the workspace (during get or checkin operation) or target version (during merge or rollback operation)
+   :::column-end:::
+   :::column span="1":::
+   **four** and **five** were added to the workspace or target version:
+
+   ![Content changes unique to workspace or target](media/resolve-team-foundation-version-control-conflicts/IC377395.png)
+   :::column-end:::
+   :::column span="1":::
+   **Conflicts with content changes made only in the local workspace or target branch**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Content changes were made that are unique to the server (during get or checkin operation) or source version (during merge or rollback operation)
+   :::column-end:::
+   :::column span="1":::
+   **four** and **five** were added to the server or source version:
+
+   ![Content changes unique to server or source](media/resolve-team-foundation-version-control-conflicts/IC377396.png)
+   :::column-end:::
+   :::column span="1":::
+   **Conflicts with content changes made only in the server version or source branch**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   A file on the server (during get or checkin operation) or in the source branch (during merge or rollback operation) was renamed
+   :::column-end:::
+   :::column span="1":::
+   You checked out a file that is named **launch.cs** and worked on it. During that time, someone else checked in a changeset that affected the same file. That changeset did not modify the contents of the file, but it did change the name of the file to **start.cs**.
+   :::column-end:::
+   :::column span="1":::
+   **Conflicts caused by renaming file in the server version or source branch**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   - Common content changes were made that resulted in identical content in each version
+
+   - You changed a file, checked it in through a Gated Check-in build, and selected the **Preserve my pending changes locally** option
+
+   
+   :::column-end:::
+   :::column span="1":::
+   Changes to each version resulted in identical file content. The changes can be to the content in the files, as shown in the following example:
+
+   ![Identical content changes in each version](media/resolve-team-foundation-version-control-conflicts/IC377397.png)
+   This option also resolves conflicts that are caused by all other operations (for example, rename, delete, undelete, and branch) and that result in identical files.
+
+   > [!Tip]  
+   > If you select this check box, when you proceed, the system will resolve these changes by taking (downloading) the server version onto your workspace.
+   :::column-end:::
+   :::column span="1":::
+   **Conflicts caused by identical change in the server and workspace**
+   :::column-end:::
+:::row-end:::
+
 
 <a name="command_prompt"></a>
 

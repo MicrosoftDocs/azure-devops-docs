@@ -26,77 +26,111 @@ tf dir itemspec [/version:versionspec] [/recursive]
 [/folders] [/deleted] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
 ```
 
-## Parameters<table>
-<thead>
-<tr>
-<th><p><strong>Argument</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><i>itemspec</i></p></td>
-<td><p>Identifies the file or folder to return information about. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p>
-<div class="alert">
-<div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
-<div class="mtps-row">
-<strong>Note</strong>
-</div>
-<div class="mtps-row">
-You can specify more than one Itemspec argument.
-</div>
-</div>
-</div></td>
-</tr>
-<tr>
-<td><p><i>versionspec</i></p></td>
-<td><p>The user-provided value for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td>
-</tr>
-<tr>
-<td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName</i>.</p></td>
-</tr>
-<tr>
-<td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains one or more files or folders about which you want to display information (for example, http://myserver:8080/tfs/DefaultCollection/).</p></td>
-</tr>
-</tbody>
-</table>
+## Parameters
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Option</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>/version</strong></p></td>
-<td><p>Specifies that Team Foundation should only show files and folders of a certain version.</p></td>
-</tr>
-<tr>
-<td><p><strong>/recursive</strong></p></td>
-<td><p>Displays all files and subfolders in the specified directory.</p></td>
-</tr>
-<tr>
-<td><p><strong>/folders</strong></p></td>
-<td><p>Displays folders only.</p></td>
-</tr>
-<tr>
-<td><p><strong>/deleted</strong></p></td>
-<td><p>Displays deleted items and existing items. The deleted items are followed with ;<em>X</em>3 where 3 is the deletion id.</p></td>
-</tr>
-<tr>
-<td><p><strong>/login</strong></p></td>
-<td><p>Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.</p></td>
-</tr>
-<tr>
-<td><p><strong>/collection</strong></p></td>
-<td><p>Specifies the project collection.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   *itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Identifies the file or folder to return information about. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
+
+   > [!Note]  
+   > You can specify more than one Itemspec argument.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *versionspec*
+   :::column-end:::
+   :::column span="1":::
+   The user-provided value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName*.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="1":::
+   The URL of the project collection that contains one or more files or folders about which you want to display information (for example, http://myserver:8080/tfs/DefaultCollection/).
+   :::column-end:::
+:::row-end:::
+
+
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/version**
+   :::column-end:::
+   :::column span="1":::
+   Specifies that Team Foundation should only show files and folders of a certain version.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   Displays all files and subfolders in the specified directory.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/folders**
+   :::column-end:::
+   :::column span="1":::
+   Displays folders only.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/deleted**
+   :::column-end:::
+   :::column span="1":::
+   Displays deleted items and existing items. The deleted items are followed with ;*X*3 where 3 is the deletion id.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/collection**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the project collection.
+   :::column-end:::
+:::row-end:::
+
 ## Remarks
 The <strong>dir</strong> command operates on the Team Foundation version control server copies of files, not the local copies. The command uses the local mapped folder to locate the appropriate Team Foundation version control server path. You use this command to explore the Team Foundation version control server and identify files you may have to obtain.
 

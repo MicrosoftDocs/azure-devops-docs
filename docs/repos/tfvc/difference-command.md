@@ -44,36 +44,102 @@ tf diff[erence] /configure
 
 ## Parameters
 
-<table><thead>
-<tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><em>itemspec</em></p></td>
-	<td><p>Required. Specifies the item to be compared. If no version or path is specified, the <em>current workspace version </em>is assumed. Accepts both local and Team Foundation version control server paths.</p><p>For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p><p>The <strong>difference</strong> command does not support wildcard characters.</p><p>This parameter cannot be combined with the <strong>/shelveset</strong> option.</p></td></tr>
-<tr>
-	<td><p><em>Itemspec2</em></p></td>
-	<td><p>Optional. The item to which the <em>itemspec</em> is to be compared. If you do not provide a second i<em>temspec</em>, the latest Team Foundation version control server version of the item is used.</p></td></tr>
-<tr>
-	<td><p><em>Filetype</em></p></td>
-	<td><p>Provides a value for the <strong>/type</strong> option. You can specify &quot;binary&quot; or &quot;text,&quot; and a codepage number or the friendly name for a codepage.</p></td></tr>
-<tr>
-	<td><p><em>Format</em></p></td>
-	<td><p>Used with the <strong>/format</strong> option to specify an output format of one of the following types:</p><ul><li><p>Visual</p></li><li><p>Brief</p></li><li><p>Context</p></li><li><p>RCS</p></li><li><p>SS</p></li><li><p>SS_SideBySide</p></li><li><p>SS_Unix</p></li><li><p>Unified</p></li><li><p>Unix</p></li></ul><p>These outputs formats are explained in the Remarks section of this topic.</p></td></tr>
-<tr>
-	<td><p><em>Versionspec</em></p></td>
-	<td><p>The user-provided value for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td></tr>
-<tr>
-	<td><p><em>Shelvesetowner</em></p></td>
-	<td><p>Identifies the owner of the shelveset by user name. If a value for this parameter is not provided, the current user is assumed.</p></td></tr>
-<tr>
-	<td><p><em>Shelvesetname</em></p></td>
-	<td><p>Specifies the name of a shelveset. You can create more than one shelveset with the same name on the server that is running Team Foundation Server as long as a different user owns each shelveset.</p></td></tr>
-<tr>
-	<td><p><em>Shelveset_itemspec</em></p></td>
-	<td><p>Specifies the name of a folder or file in the shelveset to compare to the base shelveset version.</p></td></tr>
-<tr>
-	<td><p><em>username</em></p></td>
-    <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName.</em></p></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Required. Specifies the item to be compared. If no version or path is specified, the *current workspace version *is assumed. Accepts both local and Team Foundation version control server paths.
+   For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   The **difference** command does not support wildcard characters.
+   This parameter cannot be combined with the **/shelveset** option.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Itemspec2*
+   :::column-end:::
+   :::column span="1":::
+   Optional. The item to which the *itemspec* is to be compared. If you do not provide a second i*temspec*, the latest Team Foundation version control server version of the item is used.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Filetype*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value for the **/type** option. You can specify &quot;binary&quot; or &quot;text,&quot; and a codepage number or the friendly name for a codepage.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Format*
+   :::column-end:::
+   :::column span="1":::
+   Used with the **/format** option to specify an output format of one of the following types:
+   
+   - Visual
+   - Brief
+   - Context
+   - RCS
+   - SS
+   - SS_SideBySide
+   - SS_Unix
+   - Unified
+   - Unix
+   
+   These outputs formats are explained in the Remarks section of this topic.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Versionspec*
+   :::column-end:::
+   :::column span="1":::
+   The user-provided value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Shelvesetowner*
+   :::column-end:::
+   :::column span="1":::
+   Identifies the owner of the shelveset by user name. If a value for this parameter is not provided, the current user is assumed.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Shelvesetname*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the name of a shelveset. You can create more than one shelveset with the same name on the server that is running Team Foundation Server as long as a different user owns each shelveset.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Shelveset_itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the name of a folder or file in the shelveset to compare to the base shelveset version.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN UserName* or *UserName.*
+   :::column-end:::
+:::row-end:::
+
 
 |**Option**|**Description**|
 |---|---|

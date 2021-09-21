@@ -30,170 +30,158 @@ tf reconcile [itemspec]
 
 ## Parameters
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Argument</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><em>itemspec</em></p></td>
-<td><p>Used to identify the file or folder for which to apply the reconcile command. If omitted, all suitable items will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p>
-<div class="alert">
-<div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
-<div class="mtps-row">
-<strong>Note</strong>
-</div>
-<div class="mtps-row">
-You can specify more than one <em>Itemspec</em> argument.
-</div>
-</div>
-</div></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Option</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>/clean</strong></p></td>
-<td><p>Updates local items on disk to match the server's structure. <p>Remove items that are not present in version control and add those that are missing on disk but present in version control.</p>
-</td>
-</tr>
-<tr>
-<td><p><strong>/promote</strong></p></td>
-<td><p>Promote local file changes to version control.
-<p>Add locally created items to version control (similar to <strong>tf add</strong>) and remove those </p>
-<div class="alert">
-<div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
-<div class="mtps-row">
-<strong>Note</strong>
-</div>
-<div class="mtps-row">
-Should specify <strong>/adds</strong> or(and) <strong>/deletes</strong> when using with <strong>/noprompt</strong>.
-</div>
-</div>
-</div>
-</td>
-</tr>
-<tr>
-<td><p><strong>/adds</strong></p></td>
-<td><p>Promote locally added files and folders to version control.</p>
-<div class="alert">
-<div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
-<div class="mtps-row">
-<strong>Note</strong>
-</div>
-<div class="mtps-row">
-Can be used with <strong>/promote</strong> only.
-</div>
-</div>
-</div>
-</td>
-</tr>
-<tr>
-<td><p><strong>/deletes</strong></p></td>
-<td><p>Promote deleted files and folders to version control.</p>
-<div class="alert">
-<div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
-<div class="mtps-row">
-<strong>Note</strong>
-</div>
-<div class="mtps-row">
-Can be used with <strong>/promote</strong> only.
-</div>
-</div>
-</div>
-</td>
-</tr>
-<tr>
-<td><p><strong>/exclude</strong></p></td>
-<td><p>Items specified in the <strong>/exclude</strong> option will be ignored. The items are separated by comma.</p>
-<div class="alert">
-<div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
-<div class="mtps-row">
-<strong>Note</strong>
-</div>
-<div class="mtps-row">
-This option overrides <strong>/ignore</strong>, <strong>/noignore</strong> and <strong>/unmapped</strong> options in case of intersections.
-</div>
-</div>
-</div>
-</td>
-</tr>
-<tr>
-<td><p><strong>/unmapped</strong></p></td>
-<td><p>By default unmapped and cloaked items are not affected by the <strong>/clean</strong> command. Use this option to clean unmapped and cloaked items as well (see <a href="../../pipelines/repos/tfvc.md#mappings-workspace">Mapping Workspace</a>).</p>
-<div class="alert">
-<div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
-<div class="mtps-row">
-<strong>Note</strong>
-</div>
-<div class="mtps-row">
-Can be used with <strong>/clean</strong> only.
-</div>
-</div>
-</div>
-</td>
-</tr>
-<tr>
-<td><p><strong>/diff</strong></p></td>
-<td><p>Compares items with source control using MD5 hashes. Use this option to detect items which are different from the workspace
-version but still have their read-only bit set (+R).</p>
-</td>
-</tr>
-<tr>
-<td><p><strong>/preview</strong></p></td>
-<td><p>Displays what would occur, without actually performing the <strong>Reconcile</strong> operation.</p></td>
-</tr>
-<tr>
-<td><p><strong>/ignore</strong></p></td>
-<td><p>By default <strong>tf /clean</strong> command will update all items based on the current server state, including ignored by version control items. Use this option to avoid changing the ignored items.<p> You can configure which kinds of items are ignored using a ".tfignore" file (see <a href="add-files-server.md#tfignore">Add Files: .tfignore file</a>).</p>
-<div class="alert">
-<div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
-<div class="mtps-row">
-<strong>Note</strong>
-</div>
-<div class="mtps-row">
-Can be used with <strong>/clean</strong> only.
-</div>
-</div>
-</div>
-</td>
-</tr>
-<tr>
-<td><p><strong>/noignore</strong></p></td>
-<td><p>By default <strong>tf /promote</strong> command will promote all items except those that are ignored by version control. Use this option to promote the ignored items as well. This behavior is similar to using <strong>/noignore</strong> in the <strong>tf add</strong> command.<p> You can configure which kinds of items are ignored using a ".tfignore" file (see <a href="add-files-server.md#tfignore">Add Files: .tfignore file</a>).</p>
-<div class="alert">
-<div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
-<div class="mtps-row">
-<strong>Note</strong>
-</div>
-<div class="mtps-row">
-Can be used with <strong>/promote</strong> only.
-</div>
-</div>
-</div>
-</td>
-</tr>
-<tr>
-<td><p><strong>/recursive</strong></p></td>
-<td><p>Reconciles items in the specific directory and subdirectories.</p></td>
-</tr>
-<tr>
-<td><p><strong>/noprompt</strong></p></td>
-<td><p>Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   *itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Used to identify the file or folder for which to apply the reconcile command. If omitted, all suitable items will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+
+   > [!Note]  
+   > You can specify more than one *Itemspec* argument.
+   :::column-end:::
+:::row-end:::
+
+
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/clean**
+   :::column-end:::
+   :::column span="1":::
+   Updates local items on disk to match the server's structure.
+   
+   Remove items that are not present in version control and add those that are missing on disk but present in version control.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/promote**
+   :::column-end:::
+   :::column span="1":::
+   Promote local file changes to version control.
+
+   Add locally created items to version control (similar to **tf add**) and remove those 
+
+   > [!Note]  
+   > Should specify **/adds** or(and) **/deletes** when using with **/noprompt**.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/adds**
+   :::column-end:::
+   :::column span="1":::
+   Promote locally added files and folders to version control.
+
+   > [!Note]  
+   > Can be used with **/promote** only.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/deletes**
+   :::column-end:::
+   :::column span="1":::
+   Promote deleted files and folders to version control.
+
+   > [!Note]  
+   > Can be used with **/promote** only.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/exclude**
+   :::column-end:::
+   :::column span="1":::
+   Items specified in the **/exclude** option will be ignored. The items are separated by comma.
+
+   > [!Note]  
+   > This option overrides **/ignore**, **/noignore** and **/unmapped** options in case of intersections.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/unmapped**
+   :::column-end:::
+   :::column span="1":::
+   By default unmapped and cloaked items are not affected by the **/clean** command. Use this option to clean unmapped and cloaked items as well (see [Mapping Workspace](../../pipelines/repos/tfvc.md#mappings-workspace)).
+
+   > [!Note]  
+   > Can be used with **/clean** only.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/diff**
+   :::column-end:::
+   :::column span="1":::
+   Compares items with source control using MD5 hashes. Use this option to detect items which are different from the workspace version but still have their read-only bit set (+R).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/preview**
+   :::column-end:::
+   :::column span="1":::
+   Displays what would occur, without actually performing the **Reconcile** operation.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/ignore**
+   :::column-end:::
+   :::column span="1":::
+   By default **tf /clean** command will update all items based on the current server state, including ignored by version control items. Use this option to avoid changing the ignored items.<p> You can configure which kinds of items are ignored using a ".tfignore" file (see [Add Files: .tfignore file](add-files-server.md#tfignore)).
+
+   > [!Note]  
+   > Can be used with **/clean** only.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noignore**
+   :::column-end:::
+   :::column span="1":::
+   By default **tf /promote** command will promote all items except those that are ignored by version control. Use this option to promote the ignored items as well. This behavior is similar to using **/noignore** in the **tf add** command.<p> You can configure which kinds of items are ignored using a ".tfignore" file (see [Add Files: .tfignore file](add-files-server.md#tfignore)).
+
+   > [!Note]  
+   > Can be used with **/promote** only.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   Reconciles items in the specific directory and subdirectories.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   :::column-end:::
+   :::column span="1":::
+   Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
 
 ## Remarks
 You can use the **reconcile** command to synchronize your local workspace state with the server's one.

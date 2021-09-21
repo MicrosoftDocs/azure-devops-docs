@@ -33,42 +33,100 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
 ## Parameters
 
 
-<table><thead>
-<tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><strong>/collection</strong>: <em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>When you use the <strong>/workspace</strong> option, specifies the URL of the project collection that contains the workspace that contains the pending changes. For example: `http://myserver:8080/tfs/DefaultCollection`. If not specified, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.</p><p>Ignored if you do not use the <strong>/workspace</strong> option.</p><table><thead>
-<tr><th><strong>Note</strong></th></tr></thead><tbody>
-<tr>
-	<td><p>See Remarks, below, for the limitations of this option.</p></td></tr></tbody></table></td></tr>
-<tr>
-	<td><p><strong>/format</strong></p></td>
-    <td><p>Specifies how much detail to display about each pending change:</p><ul><li><p><strong>Brief</strong> (default): Displays one line about each pending change that includes: file name, changes, whether the item is locked (indicated by an asterisk (<strong></strong><em>) symbol), local path, and user (if using the <strong>/collection</strong> and <strong>/workspace</strong> options). Some of the data might be truncated.</p></li><li><p><strong>Detailed</strong>: Displays a full description of each pending change. In addition to the above information, this option displays additional data such as date and time, and lock.</p></li></ul></td></tr>
-<tr>
-	<td><p><em>itemspec</em></p></td>
-	<td><p>Specifies the items for which you want pending change data. For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>. You can specify more than one <em>itemspec</em> argument.</p></td></tr>
-<tr>
-	<td><p><strong>/login</strong></p></td>
-	<td><p>Specifies the user account to use to run the command. See <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td></tr>
-<tr>
-	<td><p><strong>/recursive</strong></p></td>
-	<td><p>Recursively retrieves data about pending changes to items in the specified directory and any subdirectories.</p></td></tr>
-<tr>
-	<td><p><strong>/shelveset</strong>:<em>shelvesetname</em>[;<em>shelvesetowner</em>]</p></td>
-	<td><p>Specifies the shelveset that contains the changes you want to list.</p><p>This option cannot be combined with the <strong>/workspace</strong> option.</p></td></tr>
-<tr>
-	<td><p><strong>/user</strong></p></td>
-    <td><p>Lists all pending changes made by the specified user. An asterisk (<strong></strong></em>) symbol includes data about changes from all users. The default is the current user.</p><p>Acceptable values for this option:</p><ul><li>username</li><li>useraccount</li><li>an asterisk</li></ul><table><thead>
-<tr><th><strong>Note</strong></th></tr></thead><tbody>
-<tr>
-	<td><p>See Remarks, below, for the limitations of this option.</p></td></tr></tbody></table></td></tr>
-<tr>
-	<td><p><strong>/workspace</strong> <em>workspacename</em>[;<em>workspaceowner</em>]</p></td>
-	<td><p>Specifies the name of the workspace that contains the pending changes. If not specified, the workspace is the one that maps the current directory.</p><p>You can specify <em>workspaceowner</em> to get data about pending changes in a workspace that belongs to a specific user. If not specified, the workspace is presumed to be the current user, or if specified, the <strong>/login:</strong><em>username</em>.</p><p>This option cannot be combined with the <strong>/shelveset</strong> option.</p><table><thead>
-<tr><th><strong>Note</strong></th></tr></thead><tbody>
-<tr>
-	<td><p>See Remarks, below, for the limitations of this option.</p></td></tr></tbody></table></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/collection**: *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="1":::
+   When you use the **/workspace** option, specifies the URL of the project collection that contains the workspace that contains the pending changes. For example: `http://myserver:8080/tfs/DefaultCollection`. If not specified, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.
+
+   Ignored if you do not use the **/workspace** option.
+
+   > [!Note]  
+   > See Remarks, below, for the limitations of this option.
+  :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/format**
+   :::column-end:::
+   :::column span="1":::
+   Specifies how much detail to display about each pending change:
+   - **Brief** (default): Displays one line about each pending change that includes: file name, changes, whether the item is locked (indicated by an asterisk (****<em>) symbol), local path, and user (if using the **/collection** and **/workspace** options). Some of the data might be truncated.
+   - **Detailed**: Displays a full description of each pending change. In addition to the above information, this option displays additional data such as date and time, and lock.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the items for which you want pending change data. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md). You can specify more than one *itemspec* argument.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user account to use to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   Recursively retrieves data about pending changes to items in the specified directory and any subdirectories.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/shelveset**:*shelvesetname*[;*shelvesetowner*]
+   :::column-end:::
+   :::column span="1":::
+   Specifies the shelveset that contains the changes you want to list.
+
+   This option cannot be combined with the **/workspace** option.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/user**
+   :::column-end:::
+   :::column span="1":::
+   Lists all pending changes made by the specified user. An asterisk (**/***) symbol includes data about changes from all users. The default is the current user.
+
+   Acceptable values for this option:
+   - username- useraccount- an asterisk
+   
+   > [!Note]  
+   > See Remarks, below, for the limitations of this option.
+  :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/workspace** *workspacename*[;*workspaceowner*]
+   :::column-end:::
+   :::column span="1":::
+   Specifies the name of the workspace that contains the pending changes. If not specified, the workspace is the one that maps the current directory.
+
+   You can specify *workspaceowner* to get data about pending changes in a workspace that belongs to a specific user. If not specified, the workspace is presumed to be the current user, or if specified, the **/login:***username*.
+
+   This option cannot be combined with the **/shelveset** option.
+   
+   > [!Note]  
+   > See Remarks, below, for the limitations of this option.
+  :::column-end:::
+:::row-end:::
 
 ## Remarks
 

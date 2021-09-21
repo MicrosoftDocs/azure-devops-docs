@@ -20,20 +20,26 @@ Displays help on the command line that contains information about syntax for a T
 tf help commandname
 ```
 
-## Parameters<table>
-<thead>
-<tr>
-<th><p><strong>Argument</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><em>commandname</em></p></td>
-<td><p>Specifies a Team Foundation command for which to display help about the syntax.</p></td>
-</tr>
-</tbody>
-</table>
+## Parameters
+
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   *commandname*
+   :::column-end:::
+   :::column span="1":::
+   Specifies a Team Foundation command for which to display help about the syntax.
+   :::column-end:::
+:::row-end:::
+
 ## Remarks
 If you do not know which command you need, type <strong>tf help</strong> for a list of all commands.
 

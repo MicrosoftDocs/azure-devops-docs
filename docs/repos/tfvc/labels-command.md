@@ -25,7 +25,7 @@ tf labels [/owner:ownername] [/format:(brief|detailed)]
 [/collection:TeamProjectCollectionUrl] [labelname] [/login:username,[password]]
 ```
 
-## Parameters<table>
+## Parameters
 
 |**Argument**|**Description**|
 |---|---|

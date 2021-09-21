@@ -28,85 +28,146 @@ tf hist[ory] itemspec [/version:versionspec]
 
 ## Parameters
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Parameter</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>/collection</strong>: <i>TeamProjectCollectionUrl</i></p></td>
-<td><p>Specifies the URL of the project collection that contains the items. For example: `http://myserver:8080/tfs/DefaultCollection`.</p>
-<p>By default, the project collection is presumed to be the one that contains the workspace that maps the current directory.</p></td>
-</tr>
-<tr>
-<td><p><strong>/format</strong></p></td>
-<td><p>Specifies how much detail to display about each changeset when the <strong>/noprompt</strong> option is specified:</p>
-<ul>
-<li><p><strong>Brief</strong> (default): Displays one line about each changeset that includes: ID number, changes made, user who made the changes, date, and comment. Some of the data may be truncated.</p></li>
-<li><p><strong>Detailed</strong>: Displays a full description of each changeset. In addition to the above information, this option displays additional data such as date with time, items changed, check-in notes, and check-in policy warnings.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>/itemmode</strong></p></td>
-<td><p>You cannot combine this option with the <strong>/slotmode</strong> option. See <a href="/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
-</tr>
-<tr>
-<td><p><i>itemspec</i></p></td>
-<td><p>Specifies the items for which to display history. For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
-</tr>
-<tr>
-<td><p><strong>/noprompt</strong></p></td>
-<td><p>This option:</p>
-<ul>
-<li><p>Suppresses the display of windows and dialog boxes (such as the <strong>History</strong> window) and redirects output data to the command prompt. See <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></li>
-<li><p>Does not display the history of revisions that occurred before an item was moved, renamed, branched, or merged.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>/login</strong>:<i>username</i>,[<i>password</i>]</p></td>
-<td><p>Specifies the user account to run the command. See <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
-</tr>
-<tr>
-<td><p><strong>/recursive</strong></p></td>
-<td><p>Recursively retrieves historical data on items in the specified directory and any subdirectories.</p></td>
-</tr>
-<tr>
-<td><p><strong>/slotmode</strong></p></td>
-<td><p>You cannot combine this option with the <strong>/itemmode</strong> option. See <a href="/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
-</tr>
-<tr>
-<td><p><strong>/sort</strong></p></td>
-<td><p>Sorts the revision history for one or more files or folders in either of the following orders:</p>
-<ul>
-<li><p><strong>Ascending</strong>: from the oldest to the most recent revision.</p></li>
-<li><p><strong>Descending</strong> (default): from the most recent to the oldest revision.</p></li>
-</ul>
-<p>You must use the <strong>/noprompt</strong> option with this option.</p></td>
-</tr>
-<tr>
-<td><p><strong>/stopafter</strong>:<i>number</i></p></td>
-<td><p>Specifies the maximum number of changesets to display in the history data.</p></td>
-</tr>
-<tr>
-<td><p><strong>/user</strong>:<i>username</i></p></td>
-<td><p>Filters the historical data to show changes made by the specified user. An asterisk (<strong>*</strong>) symbol includes data on changes from all users (the default).</p></td>
-</tr>
-<tr>
-<td><p><strong>/version</strong>:<i>versionspec</i></p></td>
-<td><p>Specifies one of the following limits on the history data:</p>
-<ul>
-<li><p>The maximum version</p></li>
-<li><p>The minimum and the maximum versions using the range <strong>~</strong> syntax.</p></li>
-</ul>
-<p>The default is <code>/version:W</code> (the version in the workspace).</p>
-<p>For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p>
-<p>You cannot combine this option with the <strong>/slotmode</strong> option.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Parameter**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/collection**: *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the URL of the project collection that contains the items. For example: `http://myserver:8080/tfs/DefaultCollection`.
+
+   By default, the project collection is presumed to be the one that contains the workspace that maps the current directory.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/format**
+   :::column-end:::
+   :::column span="1":::
+   Specifies how much detail to display about each changeset when the **/noprompt** option is specified:
+
+   
+   - **Brief** (default): Displays one line about each changeset that includes: ID number, changes made, user who made the changes, date, and comment. Some of the data may be truncated.
+
+   - **Detailed**: Displays a full description of each changeset. In addition to the above information, this option displays additional data such as date with time, items changed, check-in notes, and check-in policy warnings.   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/itemmode**
+   :::column-end:::
+   :::column span="1":::
+   You cannot combine this option with the **/slotmode** option. See [Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control](/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the items for which to display history. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   :::column-end:::
+   :::column span="1":::
+   This option:
+
+   
+   - Suppresses the display of windows and dialog boxes (such as the **History** window) and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+
+   - Does not display the history of revisions that occurred before an item was moved, renamed, branched, or merged.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**:*username*,[*password*]
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   Recursively retrieves historical data on items in the specified directory and any subdirectories.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/slotmode**
+   :::column-end:::
+   :::column span="1":::
+   You cannot combine this option with the **/itemmode** option. See [Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control](/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/sort**
+   :::column-end:::
+   :::column span="1":::
+   Sorts the revision history for one or more files or folders in either of the following orders:
+
+   
+   - **Ascending**: from the oldest to the most recent revision.
+
+   - **Descending** (default): from the most recent to the oldest revision.
+
+   
+   You must use the **/noprompt** option with this option.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/stopafter**:*number*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the maximum number of changesets to display in the history data.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/user**:*username*
+   :::column-end:::
+   :::column span="1":::
+   Filters the historical data to show changes made by the specified user. An asterisk (*****) symbol includes data on changes from all users (the default).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/version**:*versionspec*
+   :::column-end:::
+   :::column span="1":::
+   Specifies one of the following limits on the history data:
+
+   
+   - The maximum version
+
+   - The minimum and the maximum versions using the range **~** syntax.
+
+   
+   The default is `/version:W` (the version in the workspace).
+
+   For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+
+   You cannot combine this option with the **/slotmode** option.
+   :::column-end:::
+:::row-end:::
+
 
 ## Examples
 
