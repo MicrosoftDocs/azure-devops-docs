@@ -45,9 +45,8 @@ Specifically, you'll find sample queries for the following reports:
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineId eq 7813 "
                 &"And Date/Date ge 2020-02-04Z "
         &"And Workflow eq 'Build') "
@@ -270,9 +269,8 @@ You may want to view the flaky tests of a pipeline for **Release** workflow, ins
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate}) "
         &"/groupby((TestSK, Test/TestName, Workflow), "
@@ -329,9 +327,8 @@ You may want to view the flaky tests of a pipeline for a particular branch only.
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate} "
         &"And Workflow eq 'Build') "
@@ -390,9 +387,8 @@ You may want to view the flaky tests of a pipeline for a particular test file on
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate}) "
         &"/groupby((TestSK, Test/TestName, Test/ContainerName), "
@@ -449,9 +445,8 @@ You may want to view the flaky tests of a pipeline for tests owned by a particul
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate}) "
         &"/groupby((TestSK, Test/TestName, Test/TestOwner), "
