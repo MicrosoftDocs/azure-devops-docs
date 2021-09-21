@@ -6,7 +6,6 @@ ms.custom: dashboards
 ms.technology: devops-analytics  
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
 ms.topic: tutorial
-ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013' 

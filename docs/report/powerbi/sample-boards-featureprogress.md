@@ -1,15 +1,14 @@
 ---
 title: Feature Progress rollup sample Power BI report 
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to display Feature progress rollup by Story Pointas  
+description: How to generate feature progress rollup by Story Points Power BI report
 ms.technology: devops-analytics
-ms.reviewer: greggboe
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 03/06/2020
+ms.date: 09/21/2021
 ---
 
 # Feature progress rollup sample report
@@ -189,6 +188,8 @@ The following table describes each part of the query.
    :::column-end:::
 :::row-end:::
  
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
 
 ## Power BI transforms
 

@@ -48,26 +48,26 @@ Analytics data model for Azure DevOps consists of entity sets, whose members (en
 
 [!INCLUDE [temp](../includes/api-versioning.md)]
 
-The following EntitySets are supported with the indicated API versions. For the latest version information, see [OData API versioning](odata-api-version.md).
+The following **EntitySets** are supported with the indicated API versions. For the latest version information, see [OData API versioning](odata-api-version.md).
 
 ## Work tracking EntitySets
 
 > [!div class="mx-tdCol2BreakAll"]  
 > | EntitySet | Description | v1.0 | v2.0 | v3.0-preview |
 > |-----------|-------------|------|------|--------------|
-> |**Areas** | The work item Area Paths, with properties for grouping and filtering by area hierarchy | ✔️|✔️|✔️ |  
-> |**Iterations** | The work item Iteration Paths, with properties for grouping and filtering by iteration hierarchy |✔️|✔️|✔️ |  
-> |**BoardLocations** | The Kanban board cell locations, as identified by board column, lane, and split, includes historic board settings| ✔️|✔️|✔️ |  
+> |**Areas** | The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | ✔️|✔️|✔️ |  
+> |**Iterations** | The work item **Iteration Paths**, with properties for grouping and filtering by iteration hierarchy.  |✔️|✔️|✔️ |  
+> |**BoardLocations** | The Kanban board cell locations, as identified by board column, lane, and split, includes historic board settings. | ✔️|✔️|✔️ |  
 > |**Dates** | The dates used to filter and group other entities using relationships | ✔️|✔️|✔️ |  
 > |**Projects** | All projects defined for an organization |✔️|✔️|✔️ |  
 > |**Processes** | Backlog information - used to expand or filter work items and work item types|  |✔️|✔️ |  
 > |**Tags** | All work item tags for each project | ✔️|✔️|✔️ |  
 > |**Teams** | All teams defined for the project (To add a team, see [Add teams](../../organizations/settings/add-teams.md)) | ✔️|✔️|✔️ | 
-> |**Users** | User information that is used to expand or filter various work item properties (e.g. Assigned To, Created By)| ✔️|✔️|✔️ | 
+> |**Users** | User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. | ✔️|✔️|✔️ | 
 > |**WorkItemBoardSnapshot** | (Composite) The state of each work item on each calendar date, including Kanban board location - used for trend reporting| ✔️|✔️|✔️ |  
 > |**WorkItemLinks** | The links between work items (e.g. child, parent, related) - includes only latest revision of links (no history) - hyperlinks not included | ✔️|✔️|✔️ |  
-> |**WorkItemRevisions** | All historic work item revisions, including the current revision - does not include deleted work items| ✔️|✔️|✔️ |  
-> |**WorkItemSnapshot** | (Composite) The state of each work item on each calendar date - used for trend reporting| ✔️|✔️|✔️ |  
+> |**WorkItemRevisions** | All historic work item revisions, including the current revision. Does not include deleted work items. | ✔️|✔️|✔️ |  
+> |**WorkItemSnapshot** | (Composite) The state of each work item on each calendar date, typically used for trend reporting.| ✔️|✔️|✔️ |  
 > |**WorkItems** | The current state of work items| ✔️|✔️|✔️ |  
 > |**WorkItemTypeFields** | The work item properties for each work item type and process - used for report building| ✔️|✔️|✔️ |  
 
@@ -75,27 +75,27 @@ The following EntitySets are supported with the indicated API versions. For the 
 
 ## Branch, Pipelines, and Test EntitySets
 
-The following EntitySets are only supported with the **v3.0-preview** API version.
+The following **EntitySets** are supported with the **v3.0-preview** or **v4.0-preview** API versions.
 
 > [!div class="mx-tdCol2BreakAll"]  
 > | EntitySet | Description | v3.0-preview | v4.0-preview |
 > |-----------|-------------|------|
-> |**Branches** | Basic information about branches used in tests or pipelines |  ✔️ | ✔️ |
-> |**Pipelines**| Properties for a pipeline |  ✔️ | ✔️ |
+> |**Branches** | Basic information about branches used in tests or pipelines. |  ✔️ | ✔️ |
+> |**Pipelines**| Properties for a pipeline. |  ✔️ | ✔️ |
 > |**PipelineJobs** | Individual execution results for a specific Test associated with a TestRun | ✔️ | ✔️ |
 > |**PipelineRunActivityResults** | Merged log of all the stages/steps/jobs/tasks within a specific pipeline execution |   ✔️ | ✔️ |
 > |**PipelineRuns** | Execution information for pipelines |  ✔️ | ✔️ |
 > |**PipelineTasks** | Properties for tasks that are used within a pipeline |  ✔️ | ✔️ |
 > |**TestConfigurations** | Test plan configuration information |  ✔️ | ✔️ |
-> |**TestResultsDaily** | A daily snapshot aggregate of TestResult executions, grouped by Test (not TestRun) |  ✔️ |
-> |**TestRuns** | Execution information for tests run under a pipeline with aggregate TestResult |  ✔️ | ✔️ |
-> |**Tests** | Properties for a test | ✔️ | ✔️ |
-> |**TestResults** | Individual execution results for a specific Test associated with a TestRun |  ✔️ | ✔️ |
-> |**TestPointHistorySnapshots** | Individual execution results for a specific Test associated with a TestRun |  ✔️ | ✔️ |
+> |**TestResults** | Individual execution results for a specific Test associated with a TestRun.  |  ✔️ | ✔️ |
+> |**TestResultsDaily** | A daily snapshot aggregate of **TestResult** executions, grouped by Test (not TestRun).  |  ✔️ |
+> |**TestRuns** | Execution information for tests run under a pipeline with aggregate TestResult. |  ✔️ | ✔️ |
+> |**Tests** | Properties for a test case, such as | ✔️ | ✔️ |
+> |**TestPointHistorySnapshots** | Individual execution results for a specific Test associated with a TestRun. |  ✔️ | ✔️ |
 > |**TestSuites**| Test suitesinformation |  ✔️ | ✔️ |
-> |**ParallelPipelineJobsSnapshot** | (Composite) TBD |   | ✔️ |
+> |**ParallelPipelineJobsSnapshot** | (Composite) To learn more about parallel pipeline tests, see [Run tests in parallel using the Visual Studio Test task](../../pipelines/test/parallel-testing-vstest.md). |   | ✔️ |
 > |**TaskAgentPoolSizeSnapshots** | (Composite) TBD |   | ✔️ |
-> |**TaskAgentRequestSnapshots** | (Composite) TBD |   | ✔️ |
+> |**TaskAgentRequestSnapshots** | (Composite) TBD  |   | ✔️ |
 
 ::: moniker-end
 
