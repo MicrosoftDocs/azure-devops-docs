@@ -13,17 +13,17 @@ To determine available query filters, query the metadata as described in [Explor
 For example, the OData metadata for the **EntitySet Name="TestPoints"** is as shown below for **v4.0-preview**.  You can add filters based on any of the listed **NavigationPropertyBinding Path** values. 
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-> 	<EntitySet Name="TestPoints" EntityType="Microsoft.VisualStudio.Services.Analytics.Model.TestPoint">
-		<NavigationPropertyBinding Path="ChangedOn" Target="Dates"/>
-		<NavigationPropertyBinding Path="Project" Target="Projects"/>
-		<NavigationPropertyBinding Path="TestSuite" Target="TestSuites"/>
-		<NavigationPropertyBinding Path="TestConfiguration" Target="TestConfigurations"/>
-		<NavigationPropertyBinding Path="TestCase" Target="WorkItems"/>
-		<NavigationPropertyBinding Path="Tester" Target="Users"/>
-		<NavigationPropertyBinding Path="AssignedTo" Target="Users"/>
-		<Annotation Term="Org.OData.Display.V1.DisplayName" String="Test Points"/>
-	</EntitySet>
+> ```XML
+> <EntitySet Name="TestPoints" EntityType="Microsoft.VisualStudio.Services.Analytics.Model.TestPoint">
+> 	<NavigationPropertyBinding Path="ChangedOn" Target="Dates"/>
+> 	<NavigationPropertyBinding Path="Project" Target="Projects"/>
+> 	<NavigationPropertyBinding Path="TestSuite" Target="TestSuites"/>
+> 	<NavigationPropertyBinding Path="TestConfiguration" Target="TestConfigurations"/>
+> 	<NavigationPropertyBinding Path="TestCase" Target="WorkItems"/>
+> 	<NavigationPropertyBinding Path="Tester" Target="Users"/>
+> 	<NavigationPropertyBinding Path="AssignedTo" Target="Users"/>
+> 	<Annotation Term="Org.OData.Display.V1.DisplayName" String="Test Points"/>
+> </EntitySet>
 > ```
 
 
