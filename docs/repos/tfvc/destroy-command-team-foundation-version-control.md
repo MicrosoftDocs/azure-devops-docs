@@ -36,7 +36,8 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
 :::row:::
    :::column span="1":::
    **Argument**
-   :::column-end:::   :::column span="1":::
+   :::column-end:::   
+   :::column span="1":::
    **Description**
    :::column-end:::
 :::row-end:::
