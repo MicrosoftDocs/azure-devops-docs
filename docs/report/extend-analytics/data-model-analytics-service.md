@@ -55,22 +55,21 @@ The following EntitySets are supported with the indicated API versions. For the 
 > [!div class="mx-tdCol2BreakAll"]  
 > | EntitySet | Description | v1.0 | v2.0 | v3.0-preview |
 > |-----------|-------------|------|------|--------------|
-> |Areas | The work item Area Paths, with properties for grouping and filtering by area hierarchy | ✔️|✔️|✔️ |
-> |Iterations | The work item Iteration Paths, with properties for grouping and filtering by iteration hierarchy |✔️|✔️|✔️ |  
-> |BoardLocations | The Kanban board cell locations, as identified by board column, lane, and split, includes historic board settings| ✔️|✔️|✔️ | 
-> |Dates | The dates used to filter and group other entities using relationships | ✔️|✔️|✔️ | 
-> |Projects | All projects defined for an organization |✔️|✔️|✔️ |
-> |Processes | Backlog information - used to expand or filter work items and work item types|  |✔️|✔️ | 
-> |Tags | All work item tags for each project | ✔️|✔️|✔️ | 
-> |Teams | All teams defined for the project (To add a team, see [Add teams](../../organizations/settings/add-teams.md)) | ✔️|✔️|✔️ | 
-> |Users | User information that is used to expand or filter various work item properties (e.g. Assigned To, Created By)| ✔️|✔️|✔️ | 
-> |WorkItemBoardSnapshot | (Composite) The state of each work item on each calendar date, including Kanban board location - used for trend reporting| ✔️|✔️|✔️ | 
-
-> |WorkItemLinks | The links between work items (e.g. child, parent, related) - includes only latest revision of links (no history) - hyperlinks not included | ✔️|✔️|✔️ | 
-> |WorkItemRevisions | All historic work item revisions, including the current revision - does not include deleted work items| ✔️|✔️|✔️ | 
-> |WorkItemSnapshot | (Composite) The state of each work item on each calendar date - used for trend reporting| ✔️|✔️|✔️ | 
-> |WorkItems | The current state of work items| ✔️|✔️|✔️ | 
-> |WorkItemTypeFields | The work item properties for each work item type and process - used for report building| ✔️|✔️|✔️ | 
+> |**Areas** | The work item Area Paths, with properties for grouping and filtering by area hierarchy | ✔️|✔️|✔️ |  
+> |**Iterations** | The work item Iteration Paths, with properties for grouping and filtering by iteration hierarchy |✔️|✔️|✔️ |  
+> |**BoardLocations** | The Kanban board cell locations, as identified by board column, lane, and split, includes historic board settings| ✔️|✔️|✔️ |  
+> |**Dates** | The dates used to filter and group other entities using relationships | ✔️|✔️|✔️ |  
+> |**Projects** | All projects defined for an organization |✔️|✔️|✔️ |  
+> |**Processes** | Backlog information - used to expand or filter work items and work item types|  |✔️|✔️ |  
+> |**Tags** | All work item tags for each project | ✔️|✔️|✔️ |  
+> |**Teams** | All teams defined for the project (To add a team, see [Add teams](../../organizations/settings/add-teams.md)) | ✔️|✔️|✔️ | 
+> |**Users** | User information that is used to expand or filter various work item properties (e.g. Assigned To, Created By)| ✔️|✔️|✔️ | 
+> |**WorkItemBoardSnapshot** | (Composite) The state of each work item on each calendar date, including Kanban board location - used for trend reporting| ✔️|✔️|✔️ |  
+> |**WorkItemLinks** | The links between work items (e.g. child, parent, related) - includes only latest revision of links (no history) - hyperlinks not included | ✔️|✔️|✔️ |  
+> |**WorkItemRevisions** | All historic work item revisions, including the current revision - does not include deleted work items| ✔️|✔️|✔️ |  
+> |**WorkItemSnapshot** | (Composite) The state of each work item on each calendar date - used for trend reporting| ✔️|✔️|✔️ |  
+> |**WorkItems** | The current state of work items| ✔️|✔️|✔️ |  
+> |**WorkItemTypeFields** | The work item properties for each work item type and process - used for report building| ✔️|✔️|✔️ |  
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -81,22 +80,22 @@ The following EntitySets are only supported with the **v3.0-preview** API versio
 > [!div class="mx-tdCol2BreakAll"]  
 > | EntitySet | Description | v3.0-preview | v4.0-preview |
 > |-----------|-------------|------|
-> |Branches | Basic information about branches used in tests or pipelines |  ✔️ | ✔️ |
-> |Pipelines| Properties for a pipeline |  ✔️ | ✔️ |
-> |PipelineJobs | Individual execution results for a specific Test associated with a TestRun | ✔️ | ✔️ |
-> |PipelineRunActivityResults | Merged log of all the stages/steps/jobs/tasks within a specific pipeline execution |   ✔️ | ✔️ |
-> |PipelineRuns | Execution information for pipelines |  ✔️ | ✔️ |
-> |PipelineTasks | Properties for tasks that are used within a pipeline |  ✔️ | ✔️ |
-> |TestConfigurations | Test plan configuration information |  ✔️ | ✔️ |
-> |TestResultsDaily | A daily snapshot aggregate of TestResult executions, grouped by Test (not TestRun) |  ✔️ |
-> |TestRuns | Execution information for tests run under a pipeline with aggregate TestResult |  ✔️ | ✔️ |
-> |Tests | Properties for a test | ✔️ | ✔️ |
-> |TestResults | Individual execution results for a specific Test associated with a TestRun |  ✔️ | ✔️ |
-> |TestPointHistorySnapshots | Individual execution results for a specific Test associated with a TestRun |  ✔️ | ✔️ |
-> |TestSuites| Test suitesinformation |  ✔️ | ✔️ |
-> |ParallelPipelineJobsSnapshot | (Composite) TBD |   | ✔️ |
-> |TaskAgentPoolSizeSnapshots | (Composite) TBD |   | ✔️ |
-> |TaskAgentRequestSnapshots | (Composite) TBD |   | ✔️ |
+> |**Branches** | Basic information about branches used in tests or pipelines |  ✔️ | ✔️ |
+> |**Pipelines**| Properties for a pipeline |  ✔️ | ✔️ |
+> |**PipelineJobs** | Individual execution results for a specific Test associated with a TestRun | ✔️ | ✔️ |
+> |**PipelineRunActivityResults** | Merged log of all the stages/steps/jobs/tasks within a specific pipeline execution |   ✔️ | ✔️ |
+> |**PipelineRuns** | Execution information for pipelines |  ✔️ | ✔️ |
+> |**PipelineTasks** | Properties for tasks that are used within a pipeline |  ✔️ | ✔️ |
+> |**TestConfigurations** | Test plan configuration information |  ✔️ | ✔️ |
+> |**TestResultsDaily** | A daily snapshot aggregate of TestResult executions, grouped by Test (not TestRun) |  ✔️ |
+> |**TestRuns** | Execution information for tests run under a pipeline with aggregate TestResult |  ✔️ | ✔️ |
+> |**Tests** | Properties for a test | ✔️ | ✔️ |
+> |**TestResults** | Individual execution results for a specific Test associated with a TestRun |  ✔️ | ✔️ |
+> |**TestPointHistorySnapshots** | Individual execution results for a specific Test associated with a TestRun |  ✔️ | ✔️ |
+> |**TestSuites**| Test suitesinformation |  ✔️ | ✔️ |
+> |**ParallelPipelineJobsSnapshot** | (Composite) TBD |   | ✔️ |
+> |**TaskAgentPoolSizeSnapshots** | (Composite) TBD |   | ✔️ |
+> |**TaskAgentRequestSnapshots** | (Composite) TBD |   | ✔️ |
 
 ::: moniker-end
 
@@ -127,16 +126,16 @@ The following table provides _*a partial list*_ of the **WorkItemRevision** enti
 
 | Property | Type | Description|  
 |--------|------------|------------|  
-|**CreatedDate** | DateTimeOffset | The date the work item was created, expressed in the [time zone defined for the organization](../../organizations/accounts/change-organization-location.md). Commonly used for filtering and for display.
-|**CreatedDateSK** | Int32 | The date the work item was created, expressed as `YYYYMMDD` in the time zone defined for the organization. Used by external tools to join related entities.
-|**CreatedOn** | Navigation | Navigation property to the Date entity for the date the work item was created, in the time zone defined for the organization. Commonly used to reference properties from the Date entity in ```groupby``` statements.
-|**StoryPoints** | Double | The points assigned to this work item - commonly aggregated as a sum.
-|**Tags** | Navigation | Navigation property to a Tag entity collection. Commonly used in ```$expand``` statements to access the Name property for multiple work item tags.
-|**Title** | String | The work item title. 
-|**Revision** | Int32 | The revision of the work item. 
-|**WorkItemId** | Int32 | The ID for the work item.
-|**WorkItemRevisionSK** | Int32 | The Analytics unique key for the work item revision - used by external tools to join related entities.
-|**WorkItemType** | String | The work item type, for example Bug, Task, User Story).
+|**CreatedDate** | DateTimeOffset | The date the work item was created, expressed in the [time zone defined for the organization](../../organizations/accounts/change-organization-location.md). Commonly used for filtering and for display. | 
+|**CreatedDateSK** | Int32 | The date the work item was created, expressed as `YYYYMMDD` in the time zone defined for the organization. Used by external tools to join related entities. | 
+|**CreatedOn** | Navigation | Navigation property to the Date entity for the date the work item was created, in the time zone defined for the organization. Commonly used to reference properties from the Date entity in ```groupby``` statements. | 
+|**StoryPoints** | Double | The points assigned to a work item, commonly aggregated as a sum. | 
+|**Tags** | Navigation | Navigation property to a Tag entity collection. Commonly used in ```$expand``` statements to access the Name property for multiple work item tags. | 
+|**Title** | String | The work item title.  | 
+|**Revision** | Int32 | The revision of the work item.  | 
+|**WorkItemId** | Int32 | The ID for the work item. | 
+|**WorkItemRevisionSK** | Int32 | The Analytics unique key for the work item revision - used by external tools to join related entities. | 
+|**WorkItemType** | String | The work item type, for example Bug, Task, User Story). | 
 
 
 
