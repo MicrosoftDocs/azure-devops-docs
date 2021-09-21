@@ -83,7 +83,7 @@ Given the high flexibility, Azure functions provide a great way to author your o
 
 :::image type="content" source="media/checks/azure-function-check.png" alt-text="Configuring Azure function check.":::
 
-The checks fails if the stage has not started execution within the specified **Timeout** period.  
+The checks fails if the stage has not started execution within the specified **Timeout** period. See [Azure Function App task](../tasks/deploy/azure-function-app.md) for more details.
 
 > [!NOTE]
 > User defined pipeline variables are not accessbile to the check. You can only access the pre-defined variables and variables from the linked variable group in the request body.
@@ -93,7 +93,7 @@ The checks fails if the stage has not started execution within the specified **T
 
 Invoke REST API check enables you to integrate with any of your existing services. Periodically, make a call to a REST API and continue if it returns a successful response. [Learn More](../tasks/utility/http-rest-api.md)
 
-The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. The checks fails if the stage has not started execution within the specified **Timeout** period.  
+The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. The checks fails if the stage has not started execution within the specified **Timeout** period. See [Invoke REST API task](../tasks/utility/http-rest-api.md) for more details.
 
 > [!NOTE]
 > User defined pipeline variables are not accessbile to the check. You can only access the pre-defined variables and variables from the linked variable group in the request body.
