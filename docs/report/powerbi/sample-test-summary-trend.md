@@ -50,9 +50,8 @@ Specifically, you'll find sample queries for the following reports:
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestRuns?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"and CompletedOn/Date ge {startdate} "
         &"and Workflow eq 'Build' "
@@ -261,10 +260,9 @@ You may want to view the test summary trend of a pipeline for **Release** workfl
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
-                &"Pipeline/PipelineName eq '{pipelineName}' "
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestRuns?
+$apply=filter("
+	  &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"and CompletedOn/Date ge {startdate}) "
         &"/groupby((Workflow, CompletedOn/Date), "
         &"aggregate( "
@@ -316,9 +314,8 @@ You may want to view the test summary trend of a pipeline for a particular branc
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestRuns?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"and CompletedOn/Date ge {startdate} "
         &"and Workflow eq 'Build') "
@@ -373,9 +370,8 @@ You may want to view the test summary trend of a pipeline for a particular test 
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"and CompletedOn/Date ge {startdate} "
         &"And Workflow eq 'Build') "
@@ -430,9 +426,8 @@ You may want to view the test summary trend of a pipeline for tests owned by a p
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"and CompletedOn/Date ge {startdate} "
         &"And Workflow eq 'Build') "
