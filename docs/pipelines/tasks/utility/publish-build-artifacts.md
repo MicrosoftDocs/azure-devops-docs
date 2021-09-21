@@ -6,18 +6,23 @@ ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 12/07/2018
+ms.date: 09/21/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Publish Build Artifacts task
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015.3**
+**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015.3**
+
+::: moniker range="azure-devops"
 
 > [!NOTE]
-> This task is deprecated. If you're using Team Foundation Server 2017 or newer, we recommend that you use the [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md) task instead.
+> This task is deprecated. We recommend that you use the [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md) task instead.
+
+::: moniker-end
 
 Use this task in a build pipeline to publish build artifacts to Azure Pipelines, TFS, or a file share.
+
 
 ## Demands
 
