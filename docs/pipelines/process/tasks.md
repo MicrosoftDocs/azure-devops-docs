@@ -287,7 +287,7 @@ The following example runs the `script` step which is a shortcut for the [Comman
 
 #### [Classic](#tab/classic/)
 
-You cna work with environment variables using the **Environment Variables** section of the task editor.
+You can work with environment variables using the **Environment Variables** section of the task editor.
 
 :::image type="content" source="media/tasks/task-environment-variables.png" alt-text="Task environment variables.":::
 
