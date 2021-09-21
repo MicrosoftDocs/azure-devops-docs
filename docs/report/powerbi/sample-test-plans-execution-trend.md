@@ -20,7 +20,7 @@ This article shows you how to get the execution state of one or more Test Plans 
 
 [!INCLUDE [temp](includes/preview-note.md)]
  
-The report generated is similar to following image and the Outcome trend chart of the [Track test status - Progress report](../../test/track-test-status.md).
+The report generated is similar to following image and the Outcome trend chart of the [Progress report](../../test/progress-report.md).
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
