@@ -205,7 +205,7 @@ You can rename or delete a dashboard. When you enable auto-refresh, the dashboar
 
 ::: moniker range=">= azure-devops-2020"  
 > [!NOTE]  
-> To delete a project dashboard, you must be a member of the [Project Collection Administrators group](../../organizations/security/.   
+> To delete a project dashboard, you must be a member of the [Project Collection Administrators group](../../organizations/security/set-project-collection-level-permissions.md).  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"  
