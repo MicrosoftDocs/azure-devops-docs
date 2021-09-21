@@ -76,9 +76,7 @@
     href: ../boards/plans/visibility-across-teams.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
     displayname: delivery plans, calendar, portfolio backlogs, multi-teams
 - name: Analytics & Power BI integration 
-  href: powerbi/toc.yml  
-- name: Extend Analytics with OData (Preview)  
-  href: extend-analytics/toc.yml  
+  href: powerbi/toc.yml   
 - name: SQL Server Reporting (Legacy)  
   href: sql-reports/toc.yml 
 - name: Work tracking field reference 
@@ -99,8 +97,6 @@
     href: ../project/configure-or-add-a-project-portal.md 
   - name: Configure or redirect process guidance
     href: ../project/configure-or-redirect-process-guidance.md 
-  - name: SharePoint Integration (Deprecated)  
-    href: /previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration
 - name: Extension samples (REST API) 
   items:
   - name: Add a dashboard widget
@@ -137,3 +133,5 @@
     href: https://developercommunity.visualstudio.com/search.html?f=&type=question+OR+problem&type=question+OR+problem&c=&redirect=search%2Fsearch&sort=relevance&q=PowerBI
   - name: OData Extension for Data Aggregation Version 4.0
     href: https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html
+  - name: SharePoint Integration (Deprecated)  
+    href: /previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration
