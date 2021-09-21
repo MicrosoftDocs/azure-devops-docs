@@ -468,7 +468,7 @@ resources:
       work: boolean # the work directory
 ```
 
-You can use a generic container resource as an image consumed as part of your job, or it can also be used for [Container jobs](../process/container-phases.md).
+You can use a generic container resource as an image consumed as part of your job, or it can also be used for [Container jobs](../process/container-phases.md). If your pipeline requires the support of one or more services, you'll want to create and connect to [service containers](service-containers.md). You can use volumes to share data between services.
 
 ## [Example](#tab/example)
 

@@ -1,7 +1,7 @@
 ---
 title: Markdown syntax for wikis in Azure DevOps
 titleSuffix: Azure DevOps
-description: Learn how to share information, add tables & mathematical notation using Markdown within wikis
+description: Learn how to share information and add tables & mathematical notation using Markdown within wikis.
 ms.technology: devops-collab
 ms.assetid:
 ms.author: chcomley
@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2018'
-ms.date: 09/13/2021 
+ms.date: 09/20/2021 
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -35,7 +35,7 @@ The \[[\_TOC\_]] can be placed anywhere in the page to render the table of conte
 Only Markdown headings are considered for TOC (HTML heading tags aren't considered).
 
 All HTML and Markdown tags get stripped from the headings while adding it inside the TOC block.
-For example, adding bold and italics to a heading text renders the TOC as follows.
+See the following example of how the TOC renders when you add bold and italics to a heading.
 
 > [!div class="mx-imgBorder"]
 > ![Tags for TOC](media/toc_tags.png)
@@ -138,12 +138,19 @@ To embed Azure Boards query results in a wiki page as a table, use the following
 :::
 ```
 
+For example:
+
+:::
+query-table 6ff7777e-8ca5-4f04-a7f6-9e63737dddf7
+:::
+
 You can also use the **toolbar** and the **query selector** to embed the query results in a wiki page.
 
 ![Query Results Icon](media/query_selector_icon.png)
 
 ![Query Selector Pane](media/query_selector_pane.png)
 
+For more information about how to copy the query URL, which provides a GUID for the query, see [Email query items or share query URL](../../boards/queries/view-run-query.md#email-query-items-or-share-a-query-url).
 
 ## @mention users and groups
 
