@@ -11,7 +11,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops'  
-ms.date: 08/14/2020
+ms.date: 09/21/2021
 ---
 
 # Test duration sample report
@@ -99,7 +99,7 @@ Each query contains the following strings that you must substitute with your val
 - {organization} - Your organization name
 - {project} - Your team project name
 - {pipelinename} - Your pipeline name. Example: **Fabrikam hourly build pipeline**.
-- {startdate} - The date to start your report. Format: YYYY-MM-DDZ. Example: **2019-09-04Z** represents September 4, 2019. Don't enclose in quotes or brackets and use two digits for both, month and date.
+- {startdate} - The date to start your report. Format: YYYY-MM-DDZ. Example: **2021-09-01Z** represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
 ### Query breakdown
 
@@ -153,6 +153,9 @@ The following table describes each part of the query.
 <tr>
 </tbody>
 </table>
+
+
+[!INCLUDE [temp](includes/query-filters-test.md)]
 
 
 ## Power BI transforms

@@ -1,18 +1,18 @@
 ---
 title: Add a Team slicer to a Power BI report
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to add a Team slicer to a Power BI report
+description: How to add a team slicer to a Power BI report
 ms.technology: devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/18/2020
+ms.date: 09/21/2021
 ---
 
 
-# Add a Team slicer to a Power BI report
+# Add a team slicer to a Power BI report
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
@@ -81,6 +81,7 @@ The following table describes each part of the query.
 </tbody>
 </table>
 
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
 
 ## Power BI transforms
 
