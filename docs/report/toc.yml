@@ -24,6 +24,8 @@
   - name: Add widgets to a dashboard
     displayname: select dashboard, add widget, configure widget, move widget, delete widget, copy widget, widget size, disabled widget 
     href: dashboards/add-widget-to-dashboard.md
+  - name: Pin items to a team dashboard
+    href: dashboards/team-dashboard.md
   - name: Add charts to a dashboard
     href: dashboards/add-charts-to-dashboard.md
   - name: Add markdown to a dashboard
