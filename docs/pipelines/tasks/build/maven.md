@@ -6,7 +6,7 @@ ms.topic: reference
 ms.assetid: A5B82F26-1053-47E4-B264-6E01B37C215F
 ms.author: vijayma
 author: vijayma
-ms.date: 12/17/2019
+ms.date: 09/21/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -162,9 +162,6 @@ The build agent must have the following capability:
        <td><code>findbugsAnalysisEnabled</code><br/>Run FindBugs</td>
        <td>(Optional) Use the FindBugs static analysis tool to look for bugs in the code. Results are uploaded as build artifacts. <br/>Default value: false <br/>Argument aliases: <code>findBugsRunAnalysis</code></td>
     </tr>
-    <tr>
-       <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-    </tr>
 </table>
 
 >[!IMPORTANT]
@@ -190,3 +187,8 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ::: moniker-end
 
 <!-- ENDSECTION -->
+
+## Related articles
+
+- [Maven authenticate](../package/maven-authenticate.md)
+- [Build Java apps](../../ecosystems/java.md)
