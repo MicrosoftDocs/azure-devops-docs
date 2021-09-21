@@ -162,9 +162,6 @@ The build agent must have the following capability:
        <td><code>findbugsAnalysisEnabled</code><br/>Run FindBugs</td>
        <td>(Optional) Use the FindBugs static analysis tool to look for bugs in the code. Results are uploaded as build artifacts. <br/>Default value: false <br/>Argument aliases: <code>findBugsRunAnalysis</code></td>
     </tr>
-    <tr>
-       <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-    </tr>
 </table>
 
 >[!IMPORTANT]
