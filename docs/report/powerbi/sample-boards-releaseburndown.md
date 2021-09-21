@@ -1,7 +1,7 @@
 ---
 title: Release Burndown sample Power BI report 
 titleSuffix: Azure DevOps
-description: How to generate a Release Burndown Power BI report
+description: How to generate a release burndown Power BI report
 ms.technology: devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
@@ -11,7 +11,7 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 09/21/2021
 ---
 
-# Sample - Release Burndown
+# Release burndown sample report
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
