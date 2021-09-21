@@ -70,7 +70,7 @@ Use the `macOS-latest` agent with Anaconda.
   displayName: Take ownership of conda installation
 ```
 
-# [Hosted VS2019](#tab/windows-2019)
+# [Windows 2019](#tab/windows-2019)
 
 ```yaml
 - powershell: Write-Host "##vso[task.prependpath]$env:CONDA\Scripts"
@@ -149,7 +149,7 @@ The following YAML installs the `scipy` package in the conda environment named `
   displayName: Install Anaconda packages
 ```
 
-# [Hosted VS2019](#tab/windows-2019)
+# [Windows 2019](#tab/windows-2019)
 
 ```yaml
 - script: |
