@@ -66,39 +66,50 @@ You can define one or more global lists and their items by using one of the foll
 
 The following table describes the **GLOBALLIST** and **LISTITEM** elements. You can use these elements to enumerate a list of values that is presented to the user as a pick list or drop-down menu of items.  
 
-<table width="80%">
-<thead>
-<tr>
-<th width="15%"><p>Element</p></th>
-<th width="95%"><p>Description</p></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-<td><p><strong>GLOBALLIST</strong></p></td>
-<td><p>Defines a set of <strong>LISTITEM</strong> elements that are stored for a collection and that all projects in a collection can use.</p>
+:::row:::
+   :::column span="1":::
+   **Element**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
 
-<code>
-&#60;GLOBALLIST name=&quot;globalListName&quot;&#62;<br/>    &#60;LISTITEM&#62; . . . &#60;/LISTITEM&#62;<br/>&#60;/GLOBALLIST&#62;<br/></code>
+:::row:::
+   :::column span="1":::
+   **GLOBALLIST**
 
-<p><em>globalListName</em>: A string of text that contains between 1 and 255 characters.</p>
-<p><strong>GLOBALLIST</strong> is a required child element of the <strong>GLOBALLISTS</strong> element and an optional child element of the <code>ALLOWEDVALUES</code>, <code>SUGGESTEDVALUES</code>, and <code>PROHIBITEDVALUES</code> elements. For more information, see <a href="define-pick-lists.md" data-raw-source="[ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](define-pick-lists.md)">ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements</a>.</p>
+   :::column-end:::
+   :::column span="1":::
+   Defines a set of **LISTITEM** elements that are stored for a collection and that all projects in a collection can use.
 
-</td>
-</tr>
-<tr>
-<td><p><strong>LISTITEM</strong></p></td>
-<td><p>Defines a valid list value. Global lists must not include project-scoped groups because they are not scoped to a project.</p>
 
-<code>&#60;LISTITEM value="Name" /&#62;
-</code>
+   ```
+   <GLOBALLIST name="globalListName">  
+   <LISTITEM> . . . </LISTITEM>  
+   </GLOBALLIST>
+   ```
+   *globalListName*: A string of text that contains between 1 and 255 characters. 
 
-<p><strong>LISTITEM</strong> is a required child element of <strong>GLOBALLIST</strong> and an optional child element of the <code>ALLOWEDVALUES</code>, <code>SUGGESTEDVALUES</code>, and <code>PROHIBITEDVALUES</code> elements.</p>
+   **GLOBALLIST** is a required child element of the **GLOBALLISTS** element and an optional child element of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements. For more information, see [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](define-pick-lists.md).
+   :::column-end:::
+:::row-end:::
 
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **LISTITEM**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines a valid list value. Global lists must not include project-scoped groups because they are not scoped to a project.
+
+   ```
+   <LISTITEM value="Name" />
+   ```
+
+   **LISTITEM** is a required child element of **GLOBALLIST** and an optional child element of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements.
+   :::column-end:::
+:::row-end:::
 
 <a name="SyntaxWITD"></a> 
 

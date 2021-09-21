@@ -74,104 +74,285 @@ For each transition, you specify a set of reasons for changing the state of the 
  By using the elements that the following table describes, you can specify to which states a team member can set a work item of a particular type. In the `WORKFLOW` section of the definition, you define states first, and then you define transitions. For more information, see [Change the workflow](change-workflow-wit.md).  
   
 
-<table>
-<tr><th scope="col"><p>Element</p></th><th scope="col"><p>Description and syntax</p></th><th scope="col"><p>Required?</p></th></tr><tr><td data-th="Element"><p><strong>ACTION</strong></p></td><td data-th="Description and syntax"><p>Defines a text string that corresponds to an action to be performed when the system for tracking work items calls the <strong>WorkItem.GetNextState</strong> method to get the post-action state of the work item.</p>
+:::row:::
+   :::column span="1":::
+   **Element**
+   :::column-end:::
+   :::column span="1":::
+   **Description and syntax**
+   :::column-end:::
+   :::column span="1":::
+   **Required?**
+   :::column-end:::
+:::row-end:::
 
-<pre>
-&lt;ACTION value="NameOfAction" /&gt;
-</pre>
-<p>For more information, see <a href="automate-field-assignments-state-transition-reason.md" data-raw-source="[Automate field assignments based on State, Transition, or Reason](automate-field-assignments-state-transition-reason.md)">Automate field assignments based on State, Transition, or Reason</a> </p></td><td data-th="Required?"><p>Optional</p></td></tr><tr><td data-th="Element"><p><strong>ACTIONS</strong></p></td><td data-th="Description and syntax"><p>Defines a collection of <strong>ACTION</strong> elements.</p>
-<pre>
-&lt;ACTIONS&gt;
-   &lt;ACTION&gt;. . . &lt;/ACTION&gt;
-&lt;/ACTIONS&gt;
-</pre>
-</td><td data-th="Required?"><p>Optional</p></td></tr><tr><td data-th="Element"><p><strong>DEFAULTREASON</strong></p></td><td data-th="Description and syntax"><p>Defines the most common cause of a team member changing a work item from one particular state to another particular state.</p>
-<pre>
-&lt;DEFAULTREASON value="ValueOfDefaultReason"&gt;
-   &lt;FIELDS&gt;. . . &lt;/FIELDS&gt;
-&lt;/DEFAULTREASON&gt;
-</pre>
-</td><td data-th="Required?"><p>Required</p></td></tr><tr><td data-th="Element"><p><strong>FIELD</strong></p></td><td data-th="Description and syntax"><p>Specifies a field for a type of work item and the rules and conditions that will be applied to that field when a team member changes the state of a work item of that type and specifies a reason for the change.</p>
-<pre>
-&lt;FIELD refname="FieldReferenceName"&gt;
-   &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
-   &lt;ALLOWEXISTINGVALUE /&gt;
-   &lt;CANNOTLOSEVALUE /&gt;
-   &lt;COPY /&gt;
-   &lt;DEFAULT /&gt;
-   &lt;EMPTY /&gt;
-   &lt;FROZEN /&gt;
-   &lt;MATCH /&gt;
-   &lt;NOTSAMEAS /&gt;
-   &lt;PROHIBITEDVALUES /&gt; . . . &lt;/PROHIBITEDVALUES&gt;
-   &lt;READONLY /&gt;
-   &lt;SERVERDEFAULT /&gt;
-   &lt;SUGGESTEDVALUES /&gt; . . . &lt;/SUGGESTEDVALUES&gt;
-   &lt;VALIDUSER /&gt;
-   &lt;WHEN&gt;&gt; . . . &lt;/WHEN&gt;
-   &lt;WHENNOT&gt; . . . &lt;/WHENNOT&gt;
-   &lt;WHENCHANGED&gt; . . . &lt;/WHENCHANGED&gt;
-   &lt;WHENNOTCHANGED&gt; . . . &lt;/WHENNOTCHANGED&gt;
-&lt;FIELD&gt;
-</pre>
-<p>For more information, see <a href="all-workflow-xml-elements-reference.md" data-raw-source="[FIELD (Workflow) element reference](all-workflow-xml-elements-reference.md)">FIELD (Workflow) element reference</a>.</p></td><td data-th="Required?"><p>Optional</p></td></tr><tr><td data-th="Element"><p><strong>FIELDS</strong></p></td><td data-th="Description and syntax"><p>Specifies a collection of <strong>FIELD</strong> elements.</p>
-<pre>
-&lt;FIELDS&gt;
-   &lt;FIELD . . . &lt;/FIELD&gt;
-&lt;/FIELDS&gt;
+:::row:::
+   :::column span="1":::
+   **ACTION**
 
-</pre>
-</td><td data-th="Required?"><p>Optional</p></td></tr><tr><td data-th="Element"><p><strong>REASON</strong></p></td><td data-th="Description and syntax"><p>Defines an additional explanation  for why a team member changed the state of a work item. </p>
-<pre>
-&lt;REASON value="NameOfReason"&gt;
-   &lt;FIELDS&gt;. . . &lt;/FIELDS&gt;
-&lt;/REASON&gt;
-</pre>
-</td><td data-th="Required?"><p>Optional</p></td></tr><tr><td data-th="Element"><p><strong>REASONS</strong></p></td><td data-th="Description and syntax"><p>A collection of one <strong>DEFAULTREASON</strong> and optional <strong>REASON</strong> elements that explain why a team member changed the state of a work item.</p>
-<pre>
-&lt;REASONS&gt;
-   &lt;DEFAULTREASON&gt;. . . &lt;/DEFAULTREASON&gt;
-   &lt;REASON&gt;. . . &lt;/REASON&gt;
-&lt;/REASONS&gt;
-</pre>
-</td><td data-th="Required?"><p /></td></tr><tr><td data-th="Element"><p><strong>STATE</strong></p></td><td data-th="Description and syntax"><p>Defines a valid state for the work item type. This element can contain a <strong>FIELDS</strong> element, which references rules and conditions that will be applied to a specific field when a team member changes the state of a work item of that type.</p>
-<pre>
-&lt;STATE value="NameOfState"&gt;
-  &lt;FIELDS&gt;. . . &lt;/FIELDS&gt;
-&lt;/STATE&gt;
-</pre>
-</td><td data-th="Required?"><p>Required</p></td></tr><tr><td data-th="Element"><p><strong>STATES</strong></p></td><td data-th="Description and syntax"><p>Specifies a collection of <strong>STATE</strong> elements that define the valid states to which a user can assign a work item of that type.</p>
-<pre>
-&lt;STATES&gt;
-   &lt;STATE&gt;. . . &lt;/STATE&gt;
-&lt;/STATES&gt;
-</pre>
-</td><td data-th="Required?"><p>Required</p></td></tr><tr><td data-th="Element"><p><strong>TRANSITION</strong></p></td><td data-th="Description and syntax"><p>Specifies a valid progression or regression from one state to another for work items of a particular type.</p>
-<pre>
-&lt;TRANSITION from="NameOfStartingState" 
-   to="NameOfEndingState" 
-   for="UserOrGroupName"
-   not="UserOrGroupName"&gt;
-   &lt;ACTIONS&gt;. . . &lt;/ACTIONS&gt;
-   &lt;REASONS&gt;. . . &lt;/REASONS&gt;
-   &lt;FIELDS&gt;. . . &lt;/FIELDS&gt;
-&lt;/TRANSITION&gt;
-</pre>
-<p>For more information, see <a href="transition-xml-element.md" data-raw-source="[TRANSITION element](transition-xml-element.md)">TRANSITION element</a>.</p></td><td data-th="Required?"><p>Required</p></td></tr><tr><td data-th="Element"><p><strong>TRANSITIONS</strong></p></td><td data-th="Description and syntax"><p>Specifies a collection of <strong>TRANSITION</strong> elements.</p>
-<pre>
-&lt;TRANSITIONS&gt;
-    &lt;TRANSITION&gt;. . . &lt;/TRANSITION&gt;
-&lt;/TRANSITIONS&gt;
-</pre>
-</td><td data-th="Required?"><p>Required</p></td></tr><tr><td data-th="Element"><p><strong>WORKFLOW</strong></p></td><td data-th="Description and syntax"><p>Specifies the collection of <strong>STATES</strong> and <strong>TRANSITIONS</strong> container elements that together define the workflow for the type of work item. </p>
-<pre>
-&lt;WORKFLOW&gt;
-   &lt;STATES&gt;. . . &lt;/STATES&gt;
-   &lt;TRANSITIONS&gt;. . . &lt;/TRANSITIONS&gt;
-&lt;/WORKFLOW&gt;
-</pre>
-</td><td data-th="Required?"><p>Required</p></td></tr></table>
+   :::column-end:::
+   :::column span="1":::
+   Defines a text string that corresponds to an action to be performed when the system for tracking work items calls the **WorkItem.GetNextState** method to get the post-action state of the work item.
+
+
+   ```
+   <ACTION value="NameOfAction" />
+   ```
+   For more information, see [Automate field assignments based on State, Transition, or Reason](automate-field-assignments-state-transition-reason.md) 
+
+   :::column-end:::
+   :::column span="1":::
+   Optional
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **ACTIONS**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines a collection of **ACTION** elements.
+
+   ```
+   <ACTIONS>
+      <ACTION>. . . </ACTION>
+   </ACTIONS>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Optional
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **DEFAULTREASON**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines the most common cause of a team member changing a work item from one particular state to another particular state.
+
+   ```
+   <DEFAULTREASON value="ValueOfDefaultReason">
+      <FIELDS>. . . </FIELDS>
+   </DEFAULTREASON>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Required
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **FIELD**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies a field for a type of work item and the rules and conditions that will be applied to that field when a team member changes the state of a work item of that type and specifies a reason for the change.
+
+   ```
+   <FIELD refname="FieldReferenceName">
+      <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
+      <ALLOWEXISTINGVALUE />
+      <CANNOTLOSEVALUE />
+      <COPY />
+      <DEFAULT />
+      <EMPTY />
+      <FROZEN />
+      <MATCH />
+      <NOTSAMEAS />
+      <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>
+      <READONLY />
+      <SERVERDEFAULT />
+      <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>
+      <VALIDUSER />
+      <WHEN>> . . . </WHEN>
+      <WHENNOT> . . . </WHENNOT>
+      <WHENCHANGED> . . . </WHENCHANGED>
+      <WHENNOTCHANGED> . . . </WHENNOTCHANGED>
+   <FIELD>
+   ```
+   For more information, see [FIELD (Workflow) element reference](all-workflow-xml-elements-reference.md).
+
+   :::column-end:::
+   :::column span="1":::
+   Optional
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **FIELDS**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies a collection of **FIELD** elements.
+
+   ```
+   <FIELDS>
+      <FIELD . . . </FIELD>
+   </FIELDS>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Optional
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **REASON**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines an additional explanation  for why a team member changed the state of a work item. 
+
+   ```
+   <REASON value="NameOfReason">
+      <FIELDS>. . . </FIELDS>
+   </REASON>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Optional
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **REASONS**
+
+   :::column-end:::
+   :::column span="1":::
+   A collection of one **DEFAULTREASON** and optional **REASON** elements that explain why a team member changed the state of a work item.
+
+   ```
+   <REASONS>
+      <DEFAULTREASON>. . . </DEFAULTREASON>
+      <REASON>. . . </REASON>
+   </REASONS>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **STATE**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines a valid state for the work item type. This element can contain a **FIELDS** element, which references rules and conditions that will be applied to a specific field when a team member changes the state of a work item of that type.
+
+   ```
+   <STATE value="NameOfState">
+     <FIELDS>. . . </FIELDS>
+   </STATE>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Required
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **STATES**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies a collection of **STATE** elements that define the valid states to which a user can assign a work item of that type.
+
+   ```
+   <STATES>
+      <STATE>. . . </STATE>
+   </STATES>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Required
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **TRANSITION**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies a valid progression or regression from one state to another for work items of a particular type.
+
+   ```
+   <TRANSITION from="NameOfStartingState" 
+      to="NameOfEndingState" 
+      for="UserOrGroupName"
+      not="UserOrGroupName">
+      <ACTIONS>. . . </ACTIONS>
+      <REASONS>. . . </REASONS>
+      <FIELDS>. . . </FIELDS>
+   </TRANSITION>
+   ```
+   For more information, see [TRANSITION element](transition-xml-element.md).
+
+   :::column-end:::
+   :::column span="1":::
+   Required
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **TRANSITIONS**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies a collection of **TRANSITION** elements.
+
+   ```
+   <TRANSITIONS>
+       <TRANSITION>. . . </TRANSITION>
+   </TRANSITIONS>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Required
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **WORKFLOW**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies the collection of **STATES** and **TRANSITIONS** container elements that together define the workflow for the type of work item. 
+
+   ```
+   <WORKFLOW>
+      <STATES>. . . </STATES>
+      <TRANSITIONS>. . . </TRANSITIONS>
+   </WORKFLOW>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Required
+
+   :::column-end:::
+:::row-end:::
 
  
 ## Related articles 
