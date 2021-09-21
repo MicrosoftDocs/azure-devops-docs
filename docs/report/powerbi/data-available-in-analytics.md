@@ -83,7 +83,7 @@ Currently, you can access the following data from Analytics. This information wa
 ---
 :::row:::
    :::column span="":::
-      - [Test Plans](https://azure.microsoft.com/services/devops/test-plans/)
+      [Test Plans](https://azure.microsoft.com/services/devops/test-plans/)
    :::column-end:::
    :::column span="":::
       - [Progress Report](../../test/progress-report.md)

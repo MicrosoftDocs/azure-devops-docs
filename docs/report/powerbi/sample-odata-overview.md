@@ -107,3 +107,9 @@ The OData Query is provided in case you want to modify and test the OData query 
 
 For more information on how to write OData queries against Analytics, check out the [OData Query Quick Reference](../extend-analytics/quick-ref.md) 
 
+## Related articles
+
+- [Data available from Analytics](data-available-in-analytics.md)
+- [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
+- [Analytics views dataset design](data-connector-dataset.md)
+- [OData API versioning](../extend-analytics/odata-api-version.md)

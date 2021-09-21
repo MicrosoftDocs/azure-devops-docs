@@ -23,9 +23,9 @@ Analytics data model for Azure DevOps consists of entity sets, whose members (en
 
 <a id="entities" />
 
-## Entities  
+## EntityTypes and EntitySets  
 
-Entity types are named structured types with a key. They define the named properties and relationships of each entity. The key of an **EntityType** is formed from a subset of the primitive properties (e.g. *WorkItemId*, *PipelineId*, *ReleasePipelineId*, etc.) of the entity type.
+Entity types are named structured types with a key. They define the named properties and relationships of each entity. The key of an **EntityType** is formed from a subset of the primitive properties, for example&mdash;*WorkItemId*, *PipelineId*, *ReleasePipelineId*&mdash;and more of the entity type.
 
 Entity sets are named collections of entities. For example, **WorkItems** is an entity set containing **WorkItem** entities. An entity's key uniquely identifies the entity within an entity set. If multiple entity sets use the same entity type, the same combination of key values can appear in more than one entity set and identifies different entities, one per entity set where this key combination appears. Each of these entities has a different entity-id. Entity sets provide entry points into the data model.
 
@@ -54,26 +54,26 @@ Entity sets are named collections of entities. For example, **WorkItems** is an 
 
 The following **EntitySets** are supported with the indicated API versions. For the latest version information, see [OData API versioning](odata-api-version.md).
 
-## Work tracking EntitySets
+## Work tracking EntityTypes and EntitySets
 
 > [!div class="mx-tdCol2BreakAll"]  
-> |EntityType | EntitySet | Description | v1.0 | v2.0 | v3.0-preview | v4.0-preview |
-> |-----------|-----------|-------------|------|------|--------------|--------------|
-> |**Area** | **Areas** |The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | ✔️|✔️|✔️ | ✔️ |  
-> |**Iteration** | **Iterations** | The work item **Iteration Paths**, with properties for grouping and filtering by iteration hierarchy.  |✔️|✔️|✔️ | ✔️ |  
-> |**BoardLocation** | **BoardLocations** |The Kanban board cell locations, as identified by board column, lane, and split, includes historic board settings. For a description of each Kanban board field, see [Workflow and Kanban board fields](../../boards/queries/query-by-workflow-changes.md#workflow-and-kanban-board-fields).| ✔️|✔️|✔️ | ✔️ |  
+> |EntityType/EntitySet | Description | v1.0 | v2.0 | v3.0-preview | v4.0-preview |
+> |----------------------|-------------|------|------|--------------|--------------|
+> |**Area**/<br/>**Areas** |The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | ✔️|✔️|✔️ | ✔️ |  
+> |**Iteration**/<br/>**Iterations** | The work item **Iteration Paths**, with properties for grouping and filtering by iteration hierarchy.  |✔️|✔️|✔️ | ✔️ |  
+> |**BoardLocation**/<br/>**BoardLocations** |The Kanban board cell locations, as identified by board column, lane, and split, includes historic board settings. For a description of each Kanban board field, see [Workflow and Kanban board fields](../../boards/queries/query-by-workflow-changes.md#workflow-and-kanban-board-fields).| ✔️|✔️|✔️ | ✔️ |  
 > |**CalendarDate** | **Dates** | The dates used to filter and group other entities using relationships.  | ✔️|✔️|✔️ | ✔️ |  
-> |**Project** | **Projects** |All projects defined for an organization. |✔️|✔️|✔️ | ✔️ |  
-> |**Process** | **Processes** |Backlog information used to expand or filter work items and work item types. For an example that uses **Processes** to filter a report, see [Requirements tracking sample report](../powerbi/sample-stories-overview.md). |  |✔️|✔️ | ✔️ |  
-> |**Tag** | **Tags** | All work item tags for each project. For an example that uses **Tags** to filter a report, see [Release burndown sample report](../powerbi/sample-boards-releaseburndown.md). | ✔️|✔️|✔️ |  
-> |**Team** | **Teams** | All teams defined for the project. For an example that uses **Teams** to filter a report, see [Add a Team slicer to a Power BI report](../powerbi/sample-boards-teamslicer.md).  | ✔️|✔️|✔️ | ✔️ | 
+> |**Project**/<br/>**Projects** |All projects defined for an organization. |✔️|✔️|✔️ | ✔️ |  
+> |**Process**/<br/>**Processes** |Backlog information used to expand or filter work items and work item types. For an example that uses **Processes** to filter a report, see [Requirements tracking sample report](../powerbi/sample-stories-overview.md). |  |✔️|✔️ | ✔️ |  
+> |**Tag**/<br/>**Tags** | All work item tags for each project. For an example that uses **Tags** to filter a report, see [Release burndown sample report](../powerbi/sample-boards-releaseburndown.md). | ✔️|✔️|✔️ |  
+> |**Team**/<br/>**Teams** | All teams defined for the project. For an example that uses **Teams** to filter a report, see [Add a Team slicer to a Power BI report](../powerbi/sample-boards-teamslicer.md).  | ✔️|✔️|✔️ | ✔️ | 
 > |**User** | **Users** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. | ✔️|✔️|✔️ | ✔️ | 
-> |**WorkItemBoardSnapshot** | **WorkItemBoardSnapshot** |(Composite) The state of each work item on each calendar date, including Kanban board location, used to generate trend reports.   For a sample report, see [Cumulative Flow Diagram (CFD) sample report](../powerbi/sample-boards-cfd.md). | ✔️|✔️|✔️ | ✔️ |  
-> |**WorkItemLink** | **WorkItemLinks** | The links between work items, for example, *Child*, *Parent*, and *Related*. Includes only the latest revision of links, no history. Hyperlinks aren't included. For a sample report, see [Cumulative Flow Diagram (CFD) sample report](../powerbi/sample-boards-cfd.md).  | ✔️|✔️|✔️ |  ✔️ | 
-> |**WorkItemRevision** | **WorkItemRevisions** |All historic work item revisions, including the current revision. Does not include deleted work items. | ✔️|✔️|✔️ | ✔️ |  
-> |**WorkItemSnapshot** | **WorkItemSnapshot** |(Composite) The state of each work item on each calendar date, typically used for trend reporting.| ✔️|✔️|✔️ | ✔️ |  
-> |**WorkItem** | **WorkItems** |The current state of work items| ✔️|✔️|✔️ |  
-> |**WorkItemTypeField** | **WorkItemTypeFields** |The work item properties for each work item type and process - used for report building| ✔️|✔️|✔️ | ✔️ |  
+> |**WorkItemBoardSnapshot**/<br/>**WorkItemBoardSnapshot** |(Composite) The state of each work item on each calendar date, including Kanban board location, used to generate trend reports.   For a sample report, see [Cumulative Flow Diagram (CFD) sample report](../powerbi/sample-boards-cfd.md). | ✔️|✔️|✔️ | ✔️ |  
+> |**WorkItemLink**/<br/>**WorkItemLinks** | The links between work items, for example, *Child*, *Parent*, and *Related*. Includes only the latest revision of links, no history. Hyperlinks aren't included.  | ✔️|✔️|✔️ |  ✔️ | 
+> |**WorkItemRevision**/<br/>**WorkItemRevisions** |All historic work item revisions, including the current revision. Does not include deleted work items. | ✔️|✔️|✔️ | ✔️ |  
+> |**WorkItemSnapshot**/<br/>**WorkItemSnapshot** |(Composite) The state of each work item on each calendar date, used to support trend reporting. For a sample report, see [Bug trends sample report](../powerbi/sample-boards-bugtrend.md).  | ✔️|✔️|✔️ | ✔️ |  
+> |**WorkItem**/<br/>**WorkItems** |The current state of work items. Used to support status reports. For a sample report, see [Rollup child work item values to parent sample report](../powerbi/sample-boards-rollup.md). | ✔️|✔️|✔️ | ✔️ | 
+> |**WorkItemTypeField**/<br/>**WorkItemTypeFields** |The work item properties for each work item type and process. Used to support building reports. | ✔️|✔️|✔️ | ✔️ |  
 
 **Additional resources:**
 
@@ -88,37 +88,37 @@ The following **EntitySets** are supported with the indicated API versions. For 
 
 ::: moniker range=">= azure-devops-2020"
 
-## Branch, Pipelines, and Test EntitySets
+## Branch, Pipelines, and Test EntityTypes and EntitySets
 
 The following **EntityTypes** and **EntitySets** are supported with the **v3.0-preview** or **v4.0-preview** API versions.  
 
 > [!div class="mx-tdCol2BreakAll"]  
-> |EntityType | EntitySet | Description | v3.0-preview | v4.0-preview |
-> |-----------|-----------|-------------|--------------|--------------|
-> |**Branch** | **Branches** | Basic information about branches used in tests or pipelines. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md).|  ✔️ | ✔️ |
-> |**Pipeline**| **Pipelines**| Properties for a pipeline. |  ✔️ | ✔️ |
-> |**PipelineJob** | **PipelineJobs** |Individual execution results for a specific Test associated with a TestRun | ✔️ | ✔️ |
-> |**PipelineRun** | **PipelineRuns** | Execution information for pipelines. For a sample report, see [Pipeline pass rate trend sample report](../powerbi/sample-pipelines-pass-rate-trend.md).  |  ✔️ | ✔️ |
-> |**PipelineRunActivityResult** | **PipelineRunActivityResults** | Merged log of all the stages, steps, jobs, and tasks within a specific pipeline execution. For a sample report, see [Pipeline task duration sample report](../powerbi/sample-pipelines-task-duration.md). |   ✔️ | ✔️ |
-> |**PipelineTask** | **PipelineTasks** | Properties for tasks that are used within a pipeline.  |  ✔️ | ✔️ |
-> |**TestConfiguration** | **TestConfigurations** |Test plan configuration information. For details on configuring tests, see [Test different configurations](../../test/test/test-different-configurations.md)  |  ✔️ | ✔️ |
-> |**TestResult** | **TestResults** | Individual execution results for a specific **Test** associated with a **TestRun**.  |  ✔️ | ✔️ |
+> |EntityType/EntitySet | Description | v3.0-preview | v4.0-preview |
+> |----------------------|-------------|--------------|--------------|
+> |**Branch**/<br/>**Branches** | Basic information about branches used in tests or pipelines. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md).|  ✔️ | ✔️ |
+> |**ParallelPipelineJobsSnapshot**/<br/>**ParallelPipelineJobsSnapshot** | (Composite) Supports understanding of parallel pipeline consumption. To learn more about parallel pipeline tests, see [Run tests in parallel using the Visual Studio Test task](../../pipelines/test/parallel-testing-vstest.md). |   | ✔️ |
+> |**Pipeline**/<br/>**Pipelines**| Properties for a pipeline. |  ✔️ | ✔️ |
+> |**PipelineJob**/<br/>**PipelineJobs** |Individual execution results for a specific Test associated with a TestRun | ✔️ | ✔️ |
+> |**PipelineRun**/<br/>**PipelineRuns** | Execution information for pipelines. For a sample report, see [Pipeline pass rate trend sample report](../powerbi/sample-pipelines-pass-rate-trend.md).  |  ✔️ | ✔️ |
+> |**PipelineRunActivityResult**/<br/>**PipelineRunActivityResults** | Merged log of all the stages, steps, jobs, and tasks within a specific pipeline execution. For a sample report, see [Pipeline task duration sample report](../powerbi/sample-pipelines-task-duration.md). |   ✔️ | ✔️ |
+> |**PipelineTask**/<br/>**PipelineTasks** | Properties for tasks that are used within a pipeline.  |  ✔️ | ✔️ |
+> |**TestConfiguration** | **TestConfigurations** |Test plan configuration information. For details on configuring tests, see [Test different configurations](../../test/test-different-configurations.md)  |  ✔️ | ✔️ |
+> |**TestResult**/<br/>**TestResults** | Individual execution results for a specific **Test** associated with a **TestRun**.  |  ✔️ | ✔️ |
 > |**TestResultsDaily** | **TestResultsDaily** | A daily snapshot aggregate of **TestResult** executions, grouped by Test (not TestRun).  For a sample report, see [Test summary trend sample report](../powerbi/sample-test-summary-trend.md). |  ✔️ | ✔️ |
-> |**TestRun** | **TestRuns** | Execution information for tests run under a pipeline with aggregate TestResult. |  ✔️ | ✔️ |
-> |**Test** | **Tests** | Properties for a test case, such as test name and test owner. For details on defining test cases, see [Create manual test cases](../../test/create-test-cases.md).  | ✔️ | ✔️ |
-> |**TestPoint** | **TestPoints** | Execution information for test points. A test point is a unique combination of test case, test suite, configuration, and tester. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md). | ✔️ | ✔️ |
-> |**TestPointHistorySnapshot** | **TestPointHistorySnapshots** | (Composite) Individual execution results for a specific **Test** associated with a **TestRun**. For a sample report, see [Manual test execution trend sample report](../powerbi/sample-test-plans-execution-trend.md)|  ✔️ | ✔️ |
-> |**TestSuite**| **TestSuites**| Test suites information. For details on defining test suites, see [Create test plans and test suites](../../test/create-a-test-plan.md). |  ✔️ | ✔️ |
-> |**ParallelPipelineJobsSnapshot** | **ParallelPipelineJobsSnapshot** | (Composite) Supports understanding of parallel pipeline consumption. To learn more about parallel pipeline tests, see [Run tests in parallel using the Visual Studio Test task](../../pipelines/test/parallel-testing-vstest.md). |   | ✔️ |
-> |**TaskAgentPoolSizeSnapshot** | **TaskAgentPoolSizeSnapshots** |(Composite) Supports understanding of pool size, pipeline jobs, and concurrency. The [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) illustrates how this entity set can be used. |   | ✔️ |
-> |**TaskAgentRequestSnapshot** | **TaskAgentRequestSnapshots** |(Composite) TBD.  |   | ✔️ |
+> |**TestRun**/<br/>**TestRuns** | Execution information for tests run under a pipeline with aggregate TestResult. |  ✔️ | ✔️ |
+> |**Test**/<br/>**Tests** | Properties for a test case, such as test name and test owner. For details on defining test cases, see [Create manual test cases](../../test/create-test-cases.md).  | ✔️ | ✔️ |
+> |**TestPoint**/<br/>**TestPoints** | Execution information for test points. A test point is a unique combination of test case, test suite, configuration, and tester. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md). | ✔️ | ✔️ |
+> |**TestPointHistorySnapshot**/<br/>**TestPointHistorySnapshots** | (Composite) Individual execution results for a specific **Test** associated with a **TestRun**. For a sample report, see [Manual test execution trend sample report](../powerbi/sample-test-plans-execution-trend.md)|  ✔️ | ✔️ |
+> |**TestSuite**/<br/>**TestSuites**| Test suites information. For details on defining test suites, see [Create test plans and test suites](../../test/create-a-test-plan.md). |  ✔️ | ✔️ |
+> |**TaskAgentPoolSizeSnapshot**/<br/>**TaskAgentPoolSizeSnapshots** |(Composite) Supports understanding of pool size, pipeline jobs, and concurrency. The [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) illustrates how this entity set can be used. |   | ✔️ |
+> |**TaskAgentRequestSnapshot**/<br/>**TaskAgentRequestSnapshots** |(Composite) TBD.  |   | ✔️ |
 
 **Additional resources:**
 
 - [Use Azure Pipelines](../../pipelines/get-started/pipelines-get-started.md)
 - [About pipeline tests](../../pipelines/test/test-glossary.md)
 - [Test objects and terms](../../test/test-objects-overview.md) 
-- 
+=
 ::: moniker-end
 
 
@@ -126,7 +126,7 @@ The following **EntityTypes** and **EntitySets** are supported with the **v3.0-p
 
 Composite entities support specific scenarios. They are composed from simpler entities, often require more computing resources to generate, and may return larger result sets. To achieve the best performance and avoid unnecessary throttling, ensure that you query the correct entity for your scenario.
 
-For example, **WorkItemSnapshot** combines **WorkItemRevisions** and Dates such that each date has one revision for each work item. This representation supports OData queries that focus on trend data for a filtered set of work items. However, you should not use this composite entity to query the current state of work items. Instead, you should use the **WorkItems** entity set to generate a more quick-running query.
+For example, **WorkItemSnapshot** combines **WorkItemRevisions** and **Dates** such that each date has one revision for each work item. This representation supports OData queries that focus on trend data for a filtered set of work items. However, you should not use this composite entity to query the current state of work items. Instead, you should use the **WorkItems** entity set to generate a more quick-running query.
 
 Similarly, some entities may contain all historic values, while others may only contain current values. **WorkItemRevision** contains all work item history, which you should not use in scenarios where the current values are of interest.
 
@@ -157,7 +157,7 @@ The following table provides _*a partial list*_ of the **WorkItemRevision** enti
 |**Revision** | Int32 | The revision of the work item.  | 
 |**WorkItemId** | Int32 | The ID for the work item. | 
 |**WorkItemRevisionSK** | Int32 | The Analytics unique key for the work item revision - used by external tools to join related entities. | 
-|**WorkItemType** | String | The work item type, for example Bug, Task, User Story). | 
+|**WorkItemType** | String | The work item type, for example Bug, Task, User Story. | 
 
 
 
@@ -168,6 +168,7 @@ The following table provides _*a partial list*_ of the **WorkItemRevision** enti
 
 ## Related articles 
 
+- [Query guidelines for Analytics with OData](odata-query-guidelines.md)
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)
 - [Exploring Analytics OData metadata](analytics-metadata.md) 
