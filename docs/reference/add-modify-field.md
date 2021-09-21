@@ -110,28 +110,27 @@ Pick lists are the enumerated values that appear within a drop-down menu in a wo
 
 To modify the pick list for most string or integer fields within a work item form, edit the WIT definition. For example, to add a custom Resolution field and pick-list, specify the XML code as shown.
 
-<table>
-<tbody>
-<tr>
-<td>Custom field and pick list<br /><br />
-<img src="media/custom-pick-list.png" alt="Custom pick list"/><br/></td>
-<td>
-<pre><code>&lt;FIELD name=&quot;Resolution&quot; refname=&quot;MyCompany.Resolution&quot; type=&quot;String&quot;&gt;    
-&lt;ALLOWEDVALUES&gt;
-   &lt;LISTITEM value=&quot;By Design&quot; /&gt;
-   &lt;LISTITEM value=&quot;Duplicate&quot; /&gt;
-   &lt;LISTITEM value=&quot;External&quot; /&gt;
-   &lt;LISTITEM value=&quot;Fixed&quot; /&gt;
-   &lt;LISTITEM value=&quot;Not Repro&quot; /&gt;
-   &lt;LISTITEM value=&quot;Postponed&quot; /&gt;
-   &lt;LISTITEM value=&quot;Won't Fix&quot; /&gt;
-&lt;/ALLOWEDVALUES&gt;
-&lt;/FIELD&gt;</code></pre>
-</td>
-</tr>
-</tbody>
-</table>
-
+:::row:::
+   :::column span="1":::
+   Custom field and pick list   
+   ![Custom pick list](media/custom-pick-list.png)
+   :::column-end:::
+   :::column span="1":::
+   ```
+   <FIELD name="Resolution" refname="MyCompany.Resolution" type="String">    
+   <ALLOWEDVALUES>
+      <LISTITEM value="By Design" />
+      <LISTITEM value="Duplicate" />
+      <LISTITEM value="External" />
+      <LISTITEM value="Fixed" />
+      <LISTITEM value="Not Repro" />
+      <LISTITEM value="Postponed" />
+      <LISTITEM value="Won't Fix" />
+   </ALLOWEDVALUES>
+   </FIELD>
+   ```
+   :::column-end:::
+:::row-end:::
 
 Rules support combining lists, restricting to whom a list applies, and setting conditions on when a list appears on the work item form. Rules control whether a distribution list is expanded to show its individual members or a list is filtered by using the optional **expanditems** and **filteritems** attributes. Use global lists to minimize the work that is required to update a list that is shared across WITs or projects.
 
@@ -339,40 +338,11 @@ To get added as an administrator, [Add administrators](../organizations/security
 
 To list or review fields, you can use one of the following tools, depending on the process model&mdash;Inheritance, Hosted XML, or On-premises XML&mdash;you use. For an index of fields defined within the default processes, see [Work item field index](../boards/work-items/guidance/work-item-field.md).  
 
-<table>
-<tr valign="bottom">
-<th>Tool</th>
-<th>Inheritance</th>
-<th>Hosted XML </th>
-<th>On-premises XML </th>
-</tr>
-
-<tbody valign="top" align="center">
-
-<tr>
-<td align="left"><a href="../organizations/settings/work/customize-process-field.md#review-fields" data-raw-source="[Web portal: List inherited and custom-defined fields](../organizations/settings/work/customize-process-field.md#review-fields)">Web portal: List inherited and custom-defined fields</a></td>
-<td>✔️</td>
-<td>✔️<sup>1</sup></td>
-<td> </td>
-</tr>
-
-<tr>
-<td align="left"><a href="#wi-explorer" data-raw-source="[Work Item Field Explorer](#wi-explorer)">Work item field explorer</a></td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-
-<tr>
-<td align="left"><a href="witadmin/manage-work-item-fields.md" data-raw-source="[witadmin listfields command line tool](witadmin/manage-work-item-fields.md)">witadmin listfields command line tool</a></td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-
-</tbody>
-</table>
-
+| Tool | Inheritance | Hosted XML | On-premises XML |
+| --- | --- | --- | --- |
+| [Web portal: List inherited and custom-defined fields](../organizations/settings/work/customize-process-field.md#review-fields) | ✔️  | ✔️1 |     |
+| [Work item field explorer](#wi-explorer) | ✔️  | ✔️  | ✔️  |
+| [witadmin listfields command line tool](witadmin/manage-work-item-fields.md) | ✔️  | ✔️  | ✔️  |
  
 **Notes:** 
 1. Only supported for default processes (Agile, CMMI, Scrum). 

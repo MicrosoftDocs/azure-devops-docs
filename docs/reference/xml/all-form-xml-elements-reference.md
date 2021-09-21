@@ -75,58 +75,202 @@ You can specify how information and work item fields are grouped and appear in a
 >  For best results, you should nest `Control` elements in a `Group`, and you should nest `Group` elements in a `Column`, even if the column spans the full width of the form. Also, you should nest every `Column` section in a `Group`, even if the group has no visible label or boundary.  
 
 
-<table>
-<tr><th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th><th scope="col"><p>Required?</p></th>
-</tr>
-<tr><td data-th="Element"><p><strong>Column</strong></p></td><td data-th="Description"><p>Divides a form&#39;s regions into columns.</p>
-<code>
-&lt;Column PercentWidth=&quot;WidthPercentOfContainingElement&quot; FixedWidth=&quot;WidthInPixels&quot;&gt;<br/>&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;<br/>&#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;<br/>&#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;<br/>&#160;&#160;&#160;&lt;Splitter&gt; . . . &lt;/Splitter&gt;<br/>&lt;/Column &gt;<br/></code>
-</td><td data-th="Required?"><p>Recommended</p></td>
-</tr>
+:::row:::
+   :::column span="1":::
+   **Element**
 
-<tr><td data-th="Element"><p><strong>Control</strong></p></td>
-<td data-th="Description"><p>Defines a field, text, hyperlink, or other control element to appear on the work item form.</p>
-<code>
-&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;AttachmentsControl | DateTimeControl | FieldControl |<br/>&#160;HtmlFieldControl | LabelControl | LinksControl | WebpageControl | WorkItemClassificationControl |<br/>&#160;WorkItemLogControl&quot; Label=&quot;LabelText&quot; LabelPosition=&quot;Top | Bottom | Left | Right&quot;<br/>&#160;Padding=&quot;(top, bottom, left, right)&quot; 
-&#160;Margin=&quot;( top, bottom, left, right)&quot;<br/>&#160;ReadOnly=&quot;True | False&quot; MinimumSize=&quot;(Width,Height)&quot;<br/>&#160;Name=&quot;InstanceName&quot; /&gt;
-</code>
-<p>For more information, see <a href="control-xml-element-reference.md" data-raw-source="[Control XML element reference](control-xml-element-reference.md)">Control XML element reference</a>.</p></td><td data-th="Required?"><p>Required</p></td>
-</tr>
-<tr><td data-th="Element"><p><strong>FORM</strong></p></td><td data-th="Description"><p>Defines the top-level form element.</p>
-<code>
-&lt;FORM&gt;<br/>&#160;&#160;&#160;&lt;Layout&gt; . . . &lt;/Layout&gt;<br/>&lt;/FORM&gt;
-</code>
-</td><td data-th="Required?"><p>Required</p></td>
-</tr>
-<tr><td data-th="Element"><p><strong>Group</strong></p></td><td data-th="Description"><p>Provides a visual grouping of elements, similar to the Windows GroupBox.</p>
-<code>
-&lt;Group Label=&quot;LabelText&quot; Padding=&quot;(top, bottom, left, right)&quot; Margin=&quot;(top, bottom, left, right)&quot;&gt;<br/>   &lt;Column&gt; . . . &lt;/Column&gt;<br/>&lt;/Group &gt;<br/></code>
-</td><td data-th="Required?"><p>Recommended</p></td>
-</tr>
-<tr><td data-th="Element"><p><strong>Layout</strong></p></td><td data-th="Description"><p>Defines the layout of the work item form.</p>
-<code>
-&lt;Layout Target=&quot;ClientName&quot; MinimumSize=&quot;(width,height)&quot; Padding=&quot;(top, bottom, left, right)&quot;<br/>Margin=&quot;(left, top, right, bottom)&quot; ControlSpacing=&quot;Distance&quot; LabelSpacing=&quot;Distance&quot;&gt;<br/>&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;<br/>&#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;<br/>&#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;<br/>&#160;&#160;&#160;&lt;Splitter&gt; . . . &lt;/Splitter&gt;<br/>&lt;/Layout&gt;
-</code>
-</td><td data-th="Required?"><p>Required</p></td>
-</tr>
-<tr><td data-th="Element"><p><strong>Splitter</strong></p></td><td data-th="Description"><p>Divides a form into two areas to support the layout of two sibling form elements.</p>
-<code>
-&lt;Splitter /&gt;<br/></code>
-</td><td data-th="Required?"><p>Optional</p></td>
-</tr>
-<tr><td data-th="Element"><p><strong>Tab</strong></p></td><td data-th="Description"><p>Defines the layout of a single tab in a tab group.</p>
-<code>
-&lt;Tab Label=&quot;LabelText&quot; Padding=&quot;(top, bottom, left, right)&quot; Margin=&quot;(top, bottom, left, right)&quot;&gt;<br/>&#160;&#160;&#160;&lt;Group&gt; . . . &lt;/Group&gt;<br/>&#160;&#160;&#160;&lt;Control&gt; . . . &lt;/Control&gt;<br/>&#160;&#160;&#160;&lt;TabGroup&gt; . . . &lt;/TabGroup&gt;<br/>&#160;&#160;&#160;&lt;Splitter&gt; . . . &lt;/Splitter&gt;<br/>&lt;/Tab&gt;<br/></code>
-</td><td data-th="Required?"><p>Optional</p></td>
-</tr>
-<tr>
-<td data-th="Element"><p><strong>TabGroup</strong></p></td><td data-th="Description"><p>Defines one or more tabs for the form.</p>
-<code>
-&lt;TabGroup Padding=&quot;( top, bottom, left, right)&quot; Margin=&quot;(top, bottom, left, right)&quot;&gt;<br/>&#160;&#160;&#160;&lt;Tab&gt; . . . &lt;/Tab&gt;<br/>&lt;/TabGroup&gt;<br/></code>
-</td><td data-th="Required?"><p>Optional</p></td>
-</tr>
-</table>
+   :::column-end:::
+   :::column span="1":::
+   **Description**
 
+   :::column-end:::
+   :::column span="1":::
+   **Required?**
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **Column**
+
+   :::column-end:::
+   :::column span="1":::
+   Divides a form&#39;s regions into columns.
+
+   ```
+   <Column PercentWidth="WidthPercentOfContainingElement" 
+   FixedWidth="WidthInPixels">  
+      <Group> . . . </Group>  
+	  <Control> . . . </Control>  
+	  <TabGroup> . . . </TabGroup>  
+	  <Splitter> . . . </Splitter>  
+   </Column >  
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Recommended
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **Control**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines a field, text, hyperlink, or other control element to appear on the work item form.
+
+   ```
+   <Control FieldName="FieldName" Type="AttachmentsControl | 
+   DateTimeControl | FieldControl |  
+   HtmlFieldControl | LabelControl | LinksControl | 
+   WebpageControl | WorkItemClassificationControl |  
+   WorkItemLogControl" Label="LabelText" LabelPosition="Top | 
+   Bottom | Left | Right"
+   Padding="(top, bottom, left, right)" Margin="( top, bottom, 
+   left, right)"  
+   ReadOnly="True | False" MinimumSize="(Width,Height)"  
+   Name="InstanceName" />
+   ```
+   For more information, see [Control XML element reference](control-xml-element-reference.md).
+
+   :::column-end:::
+   :::column span="1":::
+   Required
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **FORM**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines the top-level form element.
+
+   ```
+   <FORM>
+      <Layout> . . . </Layout>  
+   </FORM>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Required
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **Group**
+
+   :::column-end:::
+   :::column span="1":::
+   Provides a visual grouping of elements, similar to the Windows GroupBox.
+
+   ```
+   <Group Label="LabelText" Padding="(top, bottom, left, right)" 
+   Margin="(top, bottom, left, right)">     
+   <Column> . . . </Column>  
+   </Group >  
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Recommended
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **Layout**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines the layout of the work item form.
+
+   ```
+   <Layout Target="ClientName" MinimumSize="(width,height)" 
+   Padding="(top, bottom, left, right)"  
+   Margin="(left, top, right, bottom)" ControlSpacing="Distance" 
+   LabelSpacing="Distance">  
+      <Group> . . . </Group>  
+	  <Control> . . . </Control>  
+	  <TabGroup> . . . </TabGroup>  
+	  <Splitter> . . . </Splitter>  
+   </Layout>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Required
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **Splitter**
+
+   :::column-end:::
+   :::column span="1":::
+   Divides a form into two areas to support the layout of two sibling form elements.
+
+   ```
+   <Splitter />  
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Optional
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **Tab**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines the layout of a single tab in a tab group.
+
+   ```
+   <Tab Label="LabelText" Padding="(top, bottom, left, right)" 
+   Margin="(top, bottom, left, right)">  
+      <Group> . . . </Group>  
+	  <Control> . . . </Control>  
+	  <TabGroup> . . . </TabGroup>  
+	  <Splitter> . . . </Splitter>  
+   </Tab>  
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Optional
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **TabGroup**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines one or more tabs for the form.
+
+   ```
+   <TabGroup Padding="( top, bottom, left, right)" Margin="(top, 
+   bottom, left, right)">  
+      <Tab> . . . </Tab>  
+   </TabGroup>  
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Optional
+
+   :::column-end:::
+:::row-end:::
 
 <a name="FormAttributes"></a> 
 ## Attributes that are used to format FORM elements  

@@ -62,163 +62,436 @@ Use child elements to set various restrictions on what data can be entered into 
 
 To learn how to use these elements, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).  Restrictions exist on applying most rules to system fields. All child elements are optional.  
 
-<table>
-<tr><th scope="col"><p>Element</p></th><th scope="col"><p>Description and syntax</p></th>
-</tr>
-<tbody valign="top">
-<tr>
-<td><p><strong>ALLOWEDVALUES</strong></p></td>
-<td><p>Defines a list of values that users can specify in a field list on work item forms and in the query editor. Users must specify one of the values that you list.</p>
-<pre><code>&lt;ALLOWEDVALUES for="userGroupName" not="userGroupName" 
-expanditems="true | false" filteritems="excludegroups"&gt;
-   &lt;GLOBALLIST name="globalListName"&gt;
-      &lt;LISTITEM value="Name" /&gt;
-. . . 
-   &lt;/GLOBALLIST&gt;
-&lt;/ALLOWEDVALUES&gt;
-</code></pre>
-<p>For more information, see <a href="define-pick-lists.md" data-raw-source="[Define pick lists](define-pick-lists.md)">Define pick lists</a> .</p>
-</td>
-</tr>
-<tr><td data-th="Element"><p><strong>ALLOWEXISTINGVALUE</strong></p></td><td data-th="Description and syntax"><p>Specifies that a field can retain an existing value, even if it is no longer in a pick list. All new field values must be in the list.</p>
+:::row:::
+   :::column span="1":::
+   **Element**
+   :::column-end:::
+   :::column span="1":::
+   **Description and syntax**
+   :::column-end:::
+:::row-end:::
 
-<pre><code>&lt;ALLOWEXISTINGVALUE /&gt;</code></pre>
+:::row:::
+   :::column span="1":::
+   **ALLOWEDVALUES**
 
-<p>For more information, see <a href="define-pick-lists.md" data-raw-source="[Define pick lists](define-pick-lists.md)">Define pick lists</a> .</p></td></tr><tr><td data-th="Element"><p><strong>CANNOTLOSEVALUE</strong></p></td><td data-th="Description and syntax"><p>Specifies that users cannot clear a field of all values after a value has been specified. After the field contains a value, that field must always contain a non-NULL value.</p>
-<pre><code>&lt;CANNOTLOSEVALUE for="userGroupName" not="userGroupName" /&gt</code></pre>
-<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>COPY</strong></p></td><td data-th="Description and syntax"><p>Copies a specified value to a field when a user creates or modifies a work item.</p>
-<pre><code>&lt;COPY for="userGroupName" not="userGroupName"  
-from="value | field | clock | currentuser" 
-value="valueToCopy" field="fieldReferenceName" /&gt;</code></pre>
-<p>For more information, see <a href="define-default-copy-value-field.md" data-raw-source="[Define a default value or copy a value to a field](define-default-copy-value-field.md)">Define a default value or copy a value to a field</a>.</p></td></tr><tr><td data-th="Element"><p><strong>DEFAULT</strong></p></td><td data-th="Description and syntax"><p>Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the default rule is ignored.</p>
-<pre><code>&lt;DEFAULT for="userGroupName" not="userGroupName" 
-from="value | field | clock | currentuser" 
-value="value to copy" field="field reference name" /&gt;</code></pre>
-<p>For more information, see <a href="define-default-copy-value-field.md" data-raw-source="[Define a default value or copy a value to a field](define-default-copy-value-field.md)">Define a default value or copy a value to a field</a>.</p></td></tr><tr><td data-th="Element"><p><strong>EMPTY</strong></p></td><td data-th="Description and syntax"><p>Clears the field of any value that it contains. The <strong>EMPTY</strong> rule also makes a field read-only, and you should not be use it with the <strong>READONLY</strong> rule.</p><p>The field value is cleared when a user saves the work item, and you cannot specify any value. This rule is primarily used during state transition to clear fields that apply to the state to which the item is transitioning.</p>
-<pre><code>&lt;EMPTY for="userGroupName" not=" userGroupName" /&gt;</code></pre>
-<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>FROZEN</strong></p></td><td data-th="Description and syntax"><p>Specifies that you cannot change the field to a non-empty value after changes are committed. As soon as a user saves the work item with a value in that field, the value can no longer be modified.</p>
+   :::column-end:::
+   :::column span="1":::
+   Defines a list of values that users can specify in a field list on work item forms and in the query editor. Users must specify one of the values that you list.
 
-<pre><code>&lt;FROZEN for="userGroupName" not="userGroupName" /&gt;</code></pre>
+   ```
+   <ALLOWEDVALUES for="userGroupName" not="userGroupName" 
+   expanditems="true | false" filteritems="excludegroups">
+      <GLOBALLIST name="globalListName">
+         <LISTITEM value="Name" />
+   . . . 
+       </GLOBALLIST>
+   </ALLOWEDVALUES>
+   ```
+   For more information, see [Define pick lists](define-pick-lists.md) .
 
-<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>HELPTEXT</strong></p></td><td data-th="Description and syntax"><p>Defines the text to appear when a user points to the field in the work item form. </p><p><em>tooltipText</em>: A string of text that contains between 1 and 255 characters.</p>
+   :::column-end:::
+:::row-end:::
 
-<pre><code>&lt;HELPTEXT&gt;tooltipText &lt;/HELPTEXT&gt;</code></pre>
+:::row:::
+   :::column span="1":::
+   **ALLOWEXISTINGVALUE**
 
-<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>MATCH</strong></p></td><td data-th="Description and syntax"><p>Defines a pattern that values of String type fields must match.</p>
-<pre><code>&lt;MATCH pattern="patternValue" for="userGroupName" not="userGroupName" /&gt;
-</code></pre>
-<p>For more information, see <a href="apply-pattern-matching-to-string-field.md" data-raw-source="[Apply pattern matching to a string field](apply-pattern-matching-to-string-field.md)">Apply pattern matching to a string field</a>.</p></td></tr><tr><td data-th="Element"><p><strong>NOTSAMEAS</strong></p></td><td data-th="Description and syntax"><p>Specifies that a field is not assigned the same value as that to which  another specified field is assigned. The value of the <strong>field</strong> attribute must be a valid reference name of a field.</p>
-<pre><code>&lt;NOTSAMEAS field="fieldReferenceName" for="userGroupName" not="userGroupName" /&gt;
-</code></pre>
-<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>PROHIBITEDVALUES</strong></p></td><td data-th="Description and syntax"><p>Defines a list of values that a field cannot contain. Users cannot save a work item if the field contains a prohibited value.</p>
-<pre><code>&lt;PROHIBITEDVALUES for="userGroupName" not="userGroupName" 
-expanditems="true | false" filteritems="excludegroups"&gt;
-   &lt;GLOBALLIST name="globalListName"&gt;
-      &lt;LISTITEM value="Name" /&gt;
-. . . 
-   &lt;/GLOBALLIST&gt;
-&lt;/PROHIBITEDVALUES&gt;
-</code></pre>
-<p>For more information, see <a href="define-pick-lists.md" data-raw-source="[Define pick lists](define-pick-lists.md)">Define pick lists</a>.</p></td></tr><tr><td data-th="Element"><p><strong>READONLY</strong></p></td><td data-th="Description and syntax"><p>Specifies that you cannot modify the value to which the field is assigned.</p>
-<pre><code>&lt;READONLY for="userGroupName" not="userGroupName" /&gt;
-</code></pre>
-<p><strong>Note:</strong> Do not use this element together with the <strong>EMPTY</strong> element because <strong>EMPTY</strong> also makes a field read-only. If you combine these elements, results will be inconsistent.</p>
-<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr>
-<tr><td data-th="Element"><p><strong>REQUIRED</strong></p></td><td data-th="Description and syntax"><p>Specifies that users must specify a value for the field. Required fields cannot be empty. Users cannot save a work item until they have assigned values to all required fields.</p>
-<pre><code>&lt;REQUIRED for="userGroupName" not="userGroupName" /&gt;</code></pre>
+   :::column-end:::
+   :::column span="1":::
+   Specifies that a field can retain an existing value, even if it is no longer in a pick list. All new field values must be in the list.
 
-<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>SERVERDEFAULT</strong></p></td><td data-th="Description and syntax"><p>Copies a specified server value to a field when a user saves a work item. These fields usually appear as read-only on the form.</p>
-<pre><code>&lt;SERVERDEFAULT for="userGroupName" not="userGroupName" 
-from="clock | currentuser" /&gt;
-</code></pre>
-<p>For more information, see <a href="define-default-copy-value-field.md" data-raw-source="[Define a default value or copy a value to a field](define-default-copy-value-field.md)">Define a default value or copy a value to a field</a>.</p></td></tr><tr><td data-th="Element"><p><strong>SUGGESTEDVALUES</strong></p></td><td data-th="Description and syntax"><p>Defines a suggested list of values that users can specify in a field list on work item forms and in the query editor. Users can specify values other than those that you suggest.</p>
-<pre><code>&lt;SUGGESTEDVALUES for="userGroupName" not="userGroupName" 
-expanditems="true | false" filteritems="excludegroups"&gt;
-   &lt;GLOBALLIST name="globalListName"&gt;
-      &lt;LISTITEM value="Name" /&gt;
-. . . 
-   &lt;/GLOBALLIST&gt;    
-&lt;/SUGGESTEDVALUES&gt;
-</code></pre>
-<p>For more information, see <a href="define-pick-lists.md" data-raw-source="[Define pick lists](define-pick-lists.md)">Define pick lists</a>.</p></td></tr><tr><td data-th="Element"><p><strong>VALIDUSER</strong></p></td><td data-th="Description and syntax"><p>Restricts work items from being modified by users who belong to the group that you specify. The default group is the Team Foundation Valid Users group. </p><p>All attributes are optional.  All attributes must consist of a string of text that contains between 1 and 255 characters. You can use tokens to specify groups. </p>
-<pre><code>&lt; VALIDUSER group="groupName" for="userName" not="userName" /&gt;</code></pre>
-<p>For more information, see <a href="../../organizations/settings/work/rule-reference.md" data-raw-source="[Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)">Apply a field rule</a>.</p></td></tr><tr><td data-th="Element"><p><strong>WHEN</strong></p></td><td data-th="Description and syntax"><p>Specifies one or more rules to apply to the current field when another field has a specific value. The parent <strong>FIELD</strong> element defines the current field.</p>
-<pre><code>&lt;WHEN field="fieldReferenceName" value="value"&gt;
-    &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
-    &lt;ALLOWEXISTINGVALUE&gt; . . . &lt;ALLOWEXISTINGVALUE&gt;
-    &lt;CANNOTLOSEVALUE&gt; . . . &lt;/CANNOTLOSEVALUE&gt;
-    &lt;COPY&gt; . . . &lt;/COPY&gt;
-    &lt;DEFAULT&gt; . . . &lt;/DEFAULT&gt;
-    &lt;EMPTY&gt; . . . &lt;/EMPTY&gt;
-    &lt;FROZEN&gt; . . . &lt;/FROZEN&gt;
-    &lt;MATCH&gt; . . . &lt;/MATCH&gt;
-    &lt;NOTSAMEAS&gt; . . . &lt;/NOTSAMEAS&gt;
-    &lt;PROHIBITEDVALUES&gt; . . . &lt;/PROHIBITEDVALUES&gt;
-    &lt;READONLY&gt; . . . &lt;/READONLY&gt;
-    &lt;REQUIRED&gt; . . . &lt;/REQUIRED&gt;
-    &lt;SERVERDEFAULT&gt; . . . &lt;/SERVERDEFAULT&gt;        
-    &lt;SUGGESTEDVALUES&gt; . . . &lt;/SUGGESTEDVALUES&gt;
-    &lt;VALIDUSER&gt; . . . &lt;/VALIDUSER&gt;
-&lt;/WHEN&gt;</code></pre>
+   ```
+   <ALLOWEXISTINGVALUE />
+   ```
 
-<p>For more information, see <a href="assign-conditional-based-values-and-rules.md" data-raw-source="[Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md)">Assign conditional-based values and rules</a>.</p></td></tr><tr><td data-th="Element"><p><strong>WHENNOT</strong></p></td><td data-th="Description and syntax"><p>Specifies one or more rules to apply to the current field when another field does not have a specific value. The parent <strong>FIELD</strong> element defines the current field.</p>
-<pre><code>&lt;WHENNOT field="fieldReferenceName" value="value"&gt;
-    &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
-    &lt;ALLOWEXISTINGVALUE&gt; . . . &lt;ALLOWEXISTINGVALUE&gt;
-    &lt;CANNOTLOSEVALUE&gt; . . . &lt;/CANNOTLOSEVALUE&gt;
-    &lt;COPY&gt; . . . &lt;/COPY&gt;
-    &lt;DEFAULT&gt; . . . &lt;/DEFAULT&gt;
-    &lt;EMPTY&gt; . . . &lt;/EMPTY&gt;
-    &lt;FROZEN&gt; . . . &lt;/FROZEN&gt;
-    &lt;MATCH&gt; . . . &lt;/MATCH&gt;
-    &lt;NOTSAMEAS&gt; . . . &lt;/NOTSAMEAS&gt;
-    &lt;PROHIBITEDVALUES&gt; . . . &lt;/PROHIBITEDVALUES&gt;
-    &lt;READONLY&gt; . . . &lt;/READONLY&gt;
-    &lt;REQUIRED&gt; . . . &lt;/REQUIRED&gt;
-    &lt;SERVERDEFAULT&gt; . . . &lt;/SERVERDEFAULT&gt;        
-    &lt;SUGGESTEDVALUES&gt; . . . &lt;/SUGGESTEDVALUES&gt;
-    &lt;VALIDUSER&gt; . . . &lt;/VALIDUSER&gt;
-&lt;/WHENNOT&gt;</code></pre>
+   For more information, see [Define pick lists](define-pick-lists.md) .
 
-<p>For more information, see <a href="assign-conditional-based-values-and-rules.md" data-raw-source="[Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md)">Assign conditional-based values and rules</a>.</p></td></tr><tr><td data-th="Element"><p><strong>WHENCHANGED</strong></p></td><td data-th="Description and syntax"><p>Specifies one or more rules to apply to the current field when another field is changed during the revision of the work item. The parent <strong>FIELD</strong> element defines the current field.</p>
-<pre><code>&lt;WHENCHANGED field="fieldReferenceName" &gt;
-    &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
-    &lt;ALLOWEXISTINGVALUE&gt; . . . &lt;ALLOWEXISTINGVALUE&gt;
-    &lt;CANNOTLOSEVALUE&gt; . . . &lt;/CANNOTLOSEVALUE&gt;
-    &lt;COPY&gt; . . . &lt;/COPY&gt;
-    &lt;DEFAULT&gt; . . . &lt;/DEFAULT&gt;
-    &lt;EMPTY&gt; . . . &lt;/EMPTY&gt;
-    &lt;FROZEN&gt; . . . &lt;/FROZEN&gt;
-    &lt;MATCH&gt; . . . &lt;/MATCH&gt;
-    &lt;NOTSAMEAS&gt; . . . &lt;/NOTSAMEAS&gt;
-    &lt;PROHIBITEDVALUES&gt; . . . &lt;/PROHIBITEDVALUES&gt;
-    &lt;READONLY&gt; . . . &lt;/READONLY&gt;
-    &lt;REQUIRED&gt; . . . &lt;/REQUIRED&gt;
-    &lt;SERVERDEFAULT&gt; . . . &lt;/SERVERDEFAULT&gt;        
-    &lt;SUGGESTEDVALUES&gt; . . . &lt;/SUGGESTEDVALUES&gt;
-    &lt;VALIDUSER&gt; . . . &lt;/VALIDUSER&gt;      
-&lt;/WHENCHANGED&gt;</code></pre>
-<p>For more information, see <a href="assign-conditional-based-values-and-rules.md" data-raw-source="[Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md)">Assign conditional-based values and rules</a>.</p></td></tr><tr><td data-th="Element"><p><strong>WHENNOTCHANGED</strong></p></td><td data-th="Description and syntax"><p>Specifies one or more rules to apply to the current field when another field is not changed during the revision of the work item. The parent element defines the current field.</p>
-<pre><code>&lt;WHENNOTCHANGED field="fieldReferenceName"&gt;
-    &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
-    &lt;ALLOWEXISTINGVALUE&gt; . . . &lt;ALLOWEXISTINGVALUE&gt;
-    &lt;CANNOTLOSEVALUE&gt; . . . &lt;/CANNOTLOSEVALUE&gt;
-    &lt;COPY&gt; . . . &lt;/COPY&gt;
-    &lt;DEFAULT&gt; . . . &lt;/DEFAULT&gt;
-    &lt;EMPTY&gt; . . . &lt;/EMPTY&gt;
-    &lt;FROZEN&gt; . . . &lt;/FROZEN&gt;
-    &lt;MATCH&gt; . . . &lt;/MATCH&gt;
-    &lt;NOTSAMEAS&gt; . . . &lt;/NOTSAMEAS&gt;
-    &lt;PROHIBITEDVALUES&gt; . . . &lt;/PROHIBITEDVALUES&gt;
-    &lt;READONLY&gt; . . . &lt;/READONLY&gt;
-    &lt;REQUIRED&gt; . . . &lt;/REQUIRED&gt;
-    &lt;SERVERDEFAULT&gt; . . . &lt;/SERVERDEFAULT&gt;        
-    &lt;SUGGESTEDVALUES&gt; . . . &lt;/SUGGESTEDVALUES&gt;
-    &lt;VALIDUSER&gt; . . . &lt;/VALIDUSER&gt;
-&lt;/WHENNOTCHANGED&gt;</code></pre>
-<p>For more information, see <a href="assign-conditional-based-values-and-rules.md" data-raw-source="[Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md)">Assign conditional-based values and rules</a>.</p></td></tr>
-</tbody>
-</table>
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **CANNOTLOSEVALUE**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies that users cannot clear a field of all values after a value has been specified. After the field contains a value, that field must always contain a non-NULL value.
+
+   ```
+   <CANNOTLOSEVALUE for="userGroupName" not="userGroupName" />
+   ```
+   
+   For more information, see [Apply a field rule](../../organizations/settings/work/rule-reference.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **COPY**
+
+   :::column-end:::
+   :::column span="1":::
+   Copies a specified value to a field when a user creates or modifies a work item.
+
+   ```
+   <COPY for="userGroupName" not="userGroupName"  
+   from="value | field | clock | currentuser" 
+   value="valueToCopy" field="fieldReferenceName" />
+   ```
+   For more information, see [Define a default value or copy a value to a field](define-default-copy-value-field.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **DEFAULT**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the default rule is ignored.
+
+   ```
+   <DEFAULT for="userGroupName" not="userGroupName" 
+   from="value | field | clock | currentuser" 
+   value="value to copy" field="field reference name" />
+   ```
+   For more information, see [Define a default value or copy a value to a field](define-default-copy-value-field.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **EMPTY**
+
+   :::column-end:::
+   :::column span="1":::
+   Clears the field of any value that it contains. The **EMPTY** rule also makes a field read-only, and you should not be use it with the **READONLY** rule.  
+   
+   The field value is cleared when a user saves the work item, and you cannot specify any value. This rule is primarily used during state transition to clear fields that apply to the state to which the item is transitioning.
+
+   ```
+   <EMPTY for="userGroupName" not=" userGroupName" />
+   ```
+   For more information, see [Apply a field rule](../../organizations/settings/work/rule-reference.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **FROZEN**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies that you cannot change the field to a non-empty value after changes are committed. As soon as a user saves the work item with a value in that field, the value can no longer be modified.
+
+
+   ```
+   <FROZEN for="userGroupName" not="userGroupName" />
+   ```
+
+   For more information, see [Apply a field rule](../../organizations/settings/work/rule-reference.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **HELPTEXT**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines the text to appear when a user points to the field in the work item form.   
+   *tooltipText*: A string of text that contains between 1 and 255 characters.
+
+   ```
+   <HELPTEXT>tooltipText </HELPTEXT>
+   ```
+   For more information, see [Apply a field rule](../../organizations/settings/work/rule-reference.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **MATCH**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines a pattern that values of String type fields must match.
+
+   ```
+   <MATCH pattern="patternValue" for="userGroupName" not="userGroupName" />
+   ```
+   For more information, see [Apply pattern matching to a string field](apply-pattern-matching-to-string-field.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **NOTSAMEAS**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies that a field is not assigned the same value as that to which  another specified field is assigned. The value of the **field** attribute must be a valid reference name of a field.
+
+   ```
+   <NOTSAMEAS field="fieldReferenceName" for="userGroupName" not="userGroupName" />
+   ```
+   For more information, see [Apply a field rule](../../organizations/settings/work/rule-reference.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **PROHIBITEDVALUES**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines a list of values that a field cannot contain. Users cannot save a work item if the field contains a prohibited value.
+
+   ```
+   <PROHIBITEDVALUES for="userGroupName" not="userGroupName" 
+   expanditems="true | false" filteritems="excludegroups">
+       <GLOBALLIST name="globalListName">
+           <LISTITEM value="Name" />
+   . . . 
+       </GLOBALLIST>
+   </PROHIBITEDVALUES>
+   ```
+   For more information, see [Define pick lists](define-pick-lists.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **READONLY**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies that you cannot modify the value to which the field is assigned.
+
+   ```
+   <READONLY for="userGroupName" not="userGroupName" />
+   ```
+   **Note:** Do not use this element together with the **EMPTY** element because **EMPTY** also makes a field read-only. If you combine these elements, results will be inconsistent.
+
+   For more information, see [Apply a field rule](../../organizations/settings/work/rule-reference.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **REQUIRED**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies that users must specify a value for the field. Required fields cannot be empty. Users cannot save a work item until they have assigned values to all required fields.
+
+   ```
+   <REQUIRED for="userGroupName" not="userGroupName" />
+   ```
+
+   For more information, see [Apply a field rule](../../organizations/settings/work/rule-reference.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **SERVERDEFAULT**
+
+   :::column-end:::
+   :::column span="1":::
+   Copies a specified server value to a field when a user saves a work item. These fields usually appear as read-only on the form.
+
+   ```
+   <SERVERDEFAULT for="userGroupName" not="userGroupName" 
+   from="clock | currentuser" />
+   ```
+   For more information, see [Define a default value or copy a value to a field](define-default-copy-value-field.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **SUGGESTEDVALUES**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines a suggested list of values that users can specify in a field list on work item forms and in the query editor. Users can specify values other than those that you suggest.
+
+   ```
+   <SUGGESTEDVALUES for="userGroupName" not="userGroupName" 
+   expanditems="true | false" filteritems="excludegroups">
+      <GLOBALLIST name="globalListName">
+         <LISTITEM value="Name" />
+   . . . 
+      </GLOBALLIST>
+   </SUGGESTEDVALUES>
+   ```
+   For more information, see [Define pick lists](define-pick-lists.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **VALIDUSER**
+
+   :::column-end:::
+   :::column span="1":::
+   Restricts work items from being modified by users who belong to the group that you specify. The default group is the Team Foundation Valid Users group.  
+   
+   All attributes are optional.  All attributes must consist of a string of text that contains between 1 and 255 characters. You can use tokens to specify groups. 
+
+   ```
+   < VALIDUSER group="groupName" for="userName" not="userName" />
+   ```
+   For more information, see [Apply a field rule](../../organizations/settings/work/rule-reference.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **WHEN**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies one or more rules to apply to the current field when another field has a specific value. The parent **FIELD** element defines the current field.
+
+   ```
+   <WHEN field="fieldReferenceName" value="value">
+       <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
+       <ALLOWEXISTINGVALUE> . . . <ALLOWEXISTINGVALUE>
+       <CANNOTLOSEVALUE> . . . </CANNOTLOSEVALUE>
+       <COPY> . . . </COPY>
+       <DEFAULT> . . . </DEFAULT>
+       <EMPTY> . . . </EMPTY>
+       <FROZEN> . . . </FROZEN>
+       <MATCH> . . . </MATCH>
+       <NOTSAMEAS> . . . </NOTSAMEAS>
+       <PROHIBITEDVALUES> . . . </PROHIBITEDVALUES>
+       <READONLY> . . . </READONLY>
+       <REQUIRED> . . . </REQUIRED>
+       <SERVERDEFAULT> . . . </SERVERDEFAULT>
+       <SUGGESTEDVALUES> . . . </SUGGESTEDVALUES>
+       <VALIDUSER> . . . </VALIDUSER>
+   </WHEN>
+   ```
+
+   For more information, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **WHENNOT**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies one or more rules to apply to the current field when another field does not have a specific value. The parent **FIELD** element defines the current field.
+
+   ```
+   <WHENNOT field="fieldReferenceName" value="value">
+       <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
+       <ALLOWEXISTINGVALUE> . . . <ALLOWEXISTINGVALUE>
+       <CANNOTLOSEVALUE> . . . </CANNOTLOSEVALUE>
+       <COPY> . . . </COPY>
+       <DEFAULT> . . . </DEFAULT>
+       <EMPTY> . . . </EMPTY>
+       <FROZEN> . . . </FROZEN>
+       <MATCH> . . . </MATCH>
+       <NOTSAMEAS> . . . </NOTSAMEAS>
+       <PROHIBITEDVALUES> . . . </PROHIBITEDVALUES>
+       <READONLY> . . . </READONLY>
+       <REQUIRED> . . . </REQUIRED>
+       <SERVERDEFAULT> . . . </SERVERDEFAULT>
+       <SUGGESTEDVALUES> . . . </SUGGESTEDVALUES>
+       <VALIDUSER> . . . </VALIDUSER>
+    </WHENNOT>
+    ```
+
+    For more information, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **WHENCHANGED**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies one or more rules to apply to the current field when another field is changed during the revision of the work item. The parent **FIELD** element defines the current field.
+
+   ```
+   <WHENCHANGED field="fieldReferenceName" >
+       <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
+       <ALLOWEXISTINGVALUE> . . . <ALLOWEXISTINGVALUE>
+       <CANNOTLOSEVALUE> . . . </CANNOTLOSEVALUE>
+       <COPY> . . . </COPY>
+       <DEFAULT> . . . </DEFAULT>
+       <EMPTY> . . . </EMPTY>
+       <FROZEN> . . . </FROZEN>
+       <MATCH> . . . </MATCH>
+       <NOTSAMEAS> . . . </NOTSAMEAS>
+	   <PROHIBITEDVALUES> . . . </PROHIBITEDVALUES>
+       <READONLY> . . . </READONLY>
+       <REQUIRED> . . . </REQUIRED>
+       <SERVERDEFAULT> . . . </SERVERDEFAULT>
+       <SUGGESTEDVALUES> . . . </SUGGESTEDVALUES>
+       <VALIDUSER> . . . </VALIDUSER>  
+   </WHENCHANGED>
+   ```
+   For more information, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **WHENNOTCHANGED**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies one or more rules to apply to the current field when another field is not changed during the revision of the work item. The parent element defines the current field.
+
+   ```
+   <WHENNOTCHANGED field="fieldReferenceName">
+       <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
+       <ALLOWEXISTINGVALUE> . . . <ALLOWEXISTINGVALUE>
+       <CANNOTLOSEVALUE> . . . </CANNOTLOSEVALUE>
+       <COPY> . . . </COPY>
+       <DEFAULT> . . . </DEFAULT>
+       <EMPTY> . . . </EMPTY>
+       <FROZEN> . . . </FROZEN>
+       <MATCH> . . . </MATCH>
+       <NOTSAMEAS> . . . </NOTSAMEAS>
+       <PROHIBITEDVALUES> . . . </PROHIBITEDVALUES>
+       <READONLY> . . . </READONLY>
+       <REQUIRED> . . . </REQUIRED>
+       <SERVERDEFAULT> . . . </SERVERDEFAULT>
+       <SUGGESTEDVALUES> . . . </SUGGESTEDVALUES>
+       <VALIDUSER> . . . </VALIDUSER>
+   </WHENNOTCHANGED>
+   ```
+   For more information, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
+
+   :::column-end:::
+:::row-end:::
+
 
 <a name="LISTElements"></a>
 
@@ -226,18 +499,52 @@ expanditems="true | false" filteritems="excludegroups"&gt;
 
  You specify the **GLOBALLIST** and **LISTITEM** elements as child elements of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements. You can use these elements to enumerate a list of values that appears. Users select values from a pick list or a drop-down menu. For more information, see [GLOBALLIST XML element reference](define-global-lists.md).   
 
-<table>
-<tr><th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th></tr>
-<tbody valign="top">
-<tr><td data-th="Element"><p><strong>GLOBALIST</strong></p></td><td data-th="Description"><p>Defines a set of <strong>LISTITEM</strong> elements that is stored for a project collection and that all projects in a collection can use.</p>
-<pre><code>&lt;GLOBALLIST name="globalListName"&gt;
-    &lt;LISTITEM&gt; . . . &lt;/LISTITEM&gt;
-&lt;/GLOBALLIST&gt; </code></pre>
-<p><em>globalListName</em>: A string of text that contains between 1 and 255 characters.</p><p><strong>GLOBALLIST</strong> is a required child element of the <strong>GLOBALLISTS</strong> element and an optional child element of the <strong>ALLOWEDVALUES</strong>, <strong>SUGGESTEDVALUES</strong>, and <strong>PROHIBITEDVALUES</strong> elements. You can define a global list within a work item definition, a global list definition, or a global workflow. </p></td></tr><tr><td data-th="Element"><p><strong>LISTITEM</strong></p></td><td data-th="Description"><p>Defines a valid list value.</p>
-<pre><code>&lt;LISTITEM value="listName" /&gt;</code></pre>
-<p><strong>LISTITEM</strong> is a required child element of <strong>GLOBALLIST</strong> and an optional child element of the <strong>ALLOWEDVALUES</strong>, <strong>SUGGESTEDVALUES</strong>, and <strong>PROHIBITEDVALUES</strong> elements.</p></td></tr>
-</tbody> 
-</table>
+:::row:::
+   :::column span="1":::
+   **Element**
+
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **GLOBALIST**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines a set of **LISTITEM** elements that is stored for a project collection and that all projects in a collection can use.
+
+   ```
+   <GLOBALLIST name="globalListName">
+       <LISTITEM> . . . </LISTITEM>
+   </GLOBALLIST> 
+   ```
+   *globalListName*: A string of text that contains between 1 and 255 characters.  
+   
+   **GLOBALLIST** is a required child element of the **GLOBALLISTS** element and an optional child element of the  **ALLOWEDVALUES**, **SUGGESTEDVALUES**, and **PROHIBITEDVALUES** elements. You can define a global list within a work item definition, a global list definition, or a global workflow. 
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **LISTITEM**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines a valid list value.
+
+   ```
+   <LISTITEM value="listName" />
+   ```
+   
+   **LISTITEM** is a required child element of **GLOBALLIST** and an optional child element of the **ALLOWEDVALUES**, **SUGGESTEDVALUES**, and **PROHIBITEDVALUES** elements.
+
+   :::column-end:::
+:::row-end:::
 
 <a name="Attributes">  </a> 
 
