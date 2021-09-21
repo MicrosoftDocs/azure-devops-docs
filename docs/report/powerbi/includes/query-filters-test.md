@@ -8,9 +8,10 @@ ms.date: 09/21/2021
 
 ## Query filters
 
-To determine available query filters, query the metadata as described in [Explore the Analytics OData metadata](../../extend-analytics/analytics-metadata.md). You can filter your queries using any of the **NavigationPropertyBinding Path** values listed under an **EntitySet**. 
+To determine available query filters, query the metadata as described in [Explore the Analytics OData metadata](../../extend-analytics/analytics-metadata.md). You can filter your queries using any of the **NavigationPropertyBinding Path** values listed under an **EntitySet**. To learn more about the data type of each value, review the metadata provided for the corresponding **EntityType**. Each **EntitySet** corresponds to the singular value for an **EntityType**. 
 
-For example, the OData metadata for the **EntitySet Name="TestPoints"** is as shown below for **v4.0-preview**.  You can add filters based on any of the listed **NavigationPropertyBinding Path** values. 
+
+For example, the **EntitySet Name="TestPoints"** corresponds to the **EntityType Name="TestPoint"**. The OData metadata for the **EntitySet Name="TestPoints"** is as shown below for **v4.0-preview**.  You can add filters based on any of the listed **NavigationPropertyBinding Path** values. 
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
