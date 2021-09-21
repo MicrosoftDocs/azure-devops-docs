@@ -357,7 +357,7 @@ Jenkins is a continuous integration server which allows building and testing sof
 
 ### Trigger Git build
 
-Triggers a build configured to use a Git repository using the [Jenkins Git Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin).
+Triggers a build configured to use a Git repository using the [Jenkins Git Plugin](https://plugins.jenkins.io/git/).
 
 * Consumer ID: **jenkins**
 * Action ID: **triggerGitBuild**
