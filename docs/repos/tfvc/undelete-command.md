@@ -36,21 +36,54 @@ tf undelete [/noget] [/lock:(none|checkin|checkout)]
 | *deletionID* |                                                                           Specifies a unique identifier that disambiguates multiple deleted items with the same name.                                                                           |
 |  *username*  |                                                            Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                                            |
 
-<table><thead>
-<tr><th><p><strong>Option</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><strong>/noget</strong></p></td>
-	<td><p>Restores the deleted item to your workspace and then, pending completion of a check-in operation, restores the item on the server but does not immediately retrieve a physical copy of the item to disk.</p></td></tr>
-<tr>
-	<td><p><strong>/lock</strong></p></td>
-	<td><p>Prevents other users from checking in or checking out the specified files. For more information, see <a href="understand-lock-types.md">Understanding Lock Types</a>.</p><p>Lock Options:</p><ul><li><p><strong>None</strong></p><p>Default. No lock is applied.</p></li><li><p><strong>Checkin</strong></p><p>Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.</p></li><li><p><strong>Checkout</strong></p><p>Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check in. If any other users have locked any one of the specified items, the lock operation fails.</p></li></ul></td></tr>
-<tr>
-	<td><p><strong>/recursive</strong></p></td>
-	<td><p>Restores all files and subfolders from the specified directory.</p></td></tr>
-<tr>
-	<td><p><strong>/login</strong></p></td>
-	<td><p>Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.</p></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noget**
+   :::column-end:::
+   :::column span="1":::
+   Restores the deleted item to your workspace and then, pending completion of a check-in operation, restores the item on the server but does not immediately retrieve a physical copy of the item to disk.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/lock**
+   :::column-end:::
+   :::column span="1":::
+   Prevents other users from checking in or checking out the specified files. For more information, see [Understanding Lock Types](understand-lock-types.md).
+
+   Lock Options:
+   - **None**
+   Default. No lock is applied.
+   - **Checkin**
+   Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
+   - **Checkout**
+   Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check in. If any other users have locked any one of the specified items, the lock operation fails.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   Restores all files and subfolders from the specified directory.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   :::column-end:::
+:::row-end:::
 
 ## Remarks
 The Undelete command of the tf command-line feature schedules specified files or folders for restoration pending the completion of a check-in operation. It also retrieves the specified items from the server to the local disk unless you explicitly include the **/noget** option.

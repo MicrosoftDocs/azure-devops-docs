@@ -26,42 +26,51 @@ tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,
 
 ## Parameters
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Argument</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains the item that you want to remove from an existing label (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
-</tr>
-<tr>
-<td><p><i>labelname</i></p></td>
-<td><p>Specifies the name of the label to remove from the specified items.</p></td>
-</tr>
-<tr>
-<td><p><i>itemspec</i></p></td>
-<td><p>Identifies the file or folder from which to remove the specified label. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p>
-<div class="alert">
-<div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
-<div class="mtps-row">
-<strong>Note</strong>
-</div>
-<div class="mtps-row">
-You can specify more than one <em>itemspec</em> argument.
-</div>
-</div>
-</div></td>
-</tr>
-<tr>
-<td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName</i>.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="1":::
+   The URL of the project collection that contains the item that you want to remove from an existing label (for example, http://myserver:8080/tfs/DefaultCollection).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *labelname*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the name of the label to remove from the specified items.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Identifies the file or folder from which to remove the specified label. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+
+   > [!Note]  
+   > You can specify more than one *itemspec* argument.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName*.
+   :::column-end:::
+:::row-end:::
+
 
 | **Option** | **Description** |
 |---|---|

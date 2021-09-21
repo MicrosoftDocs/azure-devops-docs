@@ -27,30 +27,76 @@ tf undo [/workspace:workspacename[;workspaceowner]]
 ## Parameters
 
 
-<table><thead>
-<tr><th><p>Parameter</p></th><th><p>Description</p></th></tr></thead><tbody>
-<tr>
-	<td><p><strong>/collection</strong> : <em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>Specifies the URL of the project collection that contains the items. For example: `http://myserver:8080/tfs/DefaultCollection`.</p><p>If you do not use the <strong>/workspace</strong> option, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.</p></td></tr>
-<tr>
-	<td><p><em>itemspec</em></p></td>
-	<td><p>Specifies the scope of the items. You can specify more than one <em>itemspec</em> argument. For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td></tr>
-<tr>
-	<td><p><strong>/login</strong></p></td>
-	<td><p>Specifies the user account to use to run the command. See <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td></tr>
-<tr>
-	<td><p><strong>/noprompt</strong></p></td>
-	<td><p>Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td></tr>
-<tr>
-	<td><p><strong>/recursive</strong></p></td>
-	<td><p>Recursively undoes changes to items in the specified directory and any subdirectories.</p></td></tr>
-<tr>
-	<td><p><strong>/workspace</strong> <em>workspacename</em>[;<em>workspaceowner</em>]</p></td>
-    <td><p>Specifies the name of the workspace in which you want to undo pending changes. If not specified, the workspace is the one that maps the current directory.</p><p>You can specify <em>workspaceowner</em> to undo a pending change in a workspace that belongs to a specific user. If not specified, the workspace is presumed to be the current user, or if specified, the <strong>/login:</strong><em>username</em>. You must have the UndoOther permission set to Allow to undo changes in another user&#39;s workspace.</p><table><thead>
-<tr><th><strong>Note</strong></th></tr></thead><tbody>
-<tr>
-	<td><p>If you use the <strong>undo</strong> command to undo a pending change in a remote workspace that is still in use, then before continuing work in that workspace, a user must log on to the machine that hosts the workspace and then get (and in some cases <a href="get-command.md">get /all</a>) the items affected by the undo.</p></td></tr></tbody></table></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   Parameter
+   :::column-end:::
+   :::column span="1":::
+   Description
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/collection** : *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the URL of the project collection that contains the items. For example: `http://myserver:8080/tfs/DefaultCollection`.
+
+   If you do not use the **/workspace** option, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the scope of the items. You can specify more than one *itemspec* argument. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user account to use to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   :::column-end:::
+   :::column span="1":::
+   Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   Recursively undoes changes to items in the specified directory and any subdirectories.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/workspace** *workspacename*[;*workspaceowner*]
+   :::column-end:::
+   :::column span="1":::
+   Specifies the name of the workspace in which you want to undo pending changes. If not specified, the workspace is the one that maps the current directory.
+
+   You can specify *workspaceowner* to undo a pending change in a workspace that belongs to a specific user. If not specified, the workspace is presumed to be the current user, or if specified, the **/login:***username*. You must have the UndoOther permission set to Allow to undo changes in another user&#39;s workspace.
+:::row:::
+   :::column span="1":::
+   **Note**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   If you use the **undo** command to undo a pending change in a remote workspace that is still in use, then before continuing work in that workspace, a user must log on to the machine that hosts the workspace and then get (and in some cases [get /all](get-command.md)) the items affected by the undo.
+   :::column-end:::
+:::row-end:::
+  :::column-end:::
+:::row-end:::
 
 ## Remarks
 

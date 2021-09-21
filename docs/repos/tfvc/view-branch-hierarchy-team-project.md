@@ -34,20 +34,22 @@ You can use the **Hierarchy** window to perform the following tasks:
 
 -   Complete tasks for a specific branch.
 
-<table>
-<thead>
-<tr>
-<th> <strong>Important</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>This procedure can be performed on a branch and not on a folder. For example, in the following illustration you can see which objects are branches and which are folders.</p>
-<p><img src="media/view-branch-hierarchy-team-project/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
-<p>For more information, see <a href="branch-folders-files.md">Branch folders and files</a>.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Important**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   This procedure can be performed on a branch and not on a folder. For example, in the following illustration you can see which objects are branches and which are folders.
+
+   ![A branch and a folder](media/view-branch-hierarchy-team-project/IC268252.png)
+
+   For more information, see [Branch folders and files](branch-folders-files.md).
+   :::column-end:::
+:::row-end:::
+
 
 ### Display the Hierarchy Window from Source Control Explorer
 

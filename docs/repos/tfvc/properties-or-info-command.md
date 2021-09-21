@@ -27,21 +27,51 @@ itemspec [/version:versionspec] [/workspace]
 
 ## Parameters
 
-<table><thead>
-<tr><th><p><strong>Argument </strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>The URL of the project collection that contains the items for which you want to display properties (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr>
-<tr>
-	<td><p><em>Itemspec</em></p></td>
-	<td><p>Identifies the files and folders that are specified for property retrieval.</p><p>For more information about how Visual Studio Team Foundation Server parses <em>itemspecs</em> to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
-<tr>
-	<td><p><em>Versionspec</em></p></td>
-	<td><p>Provides a value such as C3 for the <strong>/version</strong> option. For more information about how Team Foundation Server parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td></tr>
-<tr>
-	<td><p><em>username</em></p></td>
-    <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>Domain</em>&lt;em&gt;UserName</em> or <em>UserName</em>.</p></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument **
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="1":::
+   The URL of the project collection that contains the items for which you want to display properties (for example, http://myserver:8080/tfs/DefaultCollection).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Identifies the files and folders that are specified for property retrieval.
+   
+   For more information about how Visual Studio Team Foundation Server parses *itemspecs* to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
+
+   > [!Note]  
+   > You can specify more than one *Itemspec* argument.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Versionspec*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value such as C3 for the **/version** option. For more information about how Team Foundation Server parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value to the **/login** option. You can specify a username value as either *Domain*&lt;em&gt;UserName</em> or *UserName*.
+   :::column-end:::
+:::row-end:::
 
 |**Option**|**Description**|
 |---|---|
@@ -54,48 +84,122 @@ itemspec [/version:versionspec] [/workspace]
 ## Remarks
 The properties command displays several pieces of information about a version-controlled item. Local and server information is listed separately.
 
-<table><thead>
-<tr><th><p><strong>Property Name</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p>Local path</p></td>
-	<td><p>Indicates the local path of the workspace folder for the specified item.</p></td></tr>
-<tr>
-	<td><p>Changeset</p></td>
-	<td><p>Indicates the version number of the file or folder that was last retrieved to the current workspace using the <a href="get-command.md">Get Command</a>.</p></td></tr>
-<tr>
-	<td><p>Change</p></td>
-	<td><p>Indicates where a change is pending.</p></td></tr>
-<tr>
-	<td><p>Type</p></td>
-	<td><p>Indicates the item type, for example file.</p></td></tr>
-<tr>
-	<td><p>Server path</p></td>
-	<td><p>Indicates the full path of the item on the version control server.</p></td></tr>
-<tr>
-	<td><p>Changeset</p></td>
-	<td><p>Indicates the version number of the item.</p></td></tr>
-<tr>
-	<td><p>Deletion ID</p></td>
-	<td><p>If the item is deleted, the deletion identification; otherwise 0.</p></td></tr>
-<tr>
-	<td><p>Lock</p></td>
-	<td><p>Indicates the type of lock.</p><ul><li><p><strong>Checkin</strong>   Check in is not permitted for the file.</p></li><li><p><strong>Checkout</strong>   Check out in not permitted for the file.</p></li><li><p><strong>None</strong>   A lock is not set. For more information, see <a href="lock-command.md">Lock Command</a>.</p></li></ul></td></tr>
-<tr>
-	<td><p>Lock Owner</p></td>
-	<td><p>Indicates the person who set a check-in lock.</p></td></tr>
-<tr>
-	<td><p>Last modified</p></td>
-	<td><p>Indicates the date and time stamp for when the item was last modified.</p></td></tr>
-<tr>
-	<td><p>Type</p></td>
-	<td><p>Indicates the item type, for example file.</p></td></tr>
-<tr>
-	<td><p>File Type</p></td>
-	<td><p>Displays the file type encoding. For example, Windows-1252.</p></td></tr>
-<tr>
-	<td><p>Size</p></td>
-	<td><p>Indicates the size of the file in bytes.</p></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Property Name**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Local path
+   :::column-end:::
+   :::column span="1":::
+   Indicates the local path of the workspace folder for the specified item.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Changeset
+   :::column-end:::
+   :::column span="1":::
+   Indicates the version number of the file or folder that was last retrieved to the current workspace using the [Get Command](get-command.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Change
+   :::column-end:::
+   :::column span="1":::
+   Indicates where a change is pending.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Type
+   :::column-end:::
+   :::column span="1":::
+   Indicates the item type, for example file.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Server path
+   :::column-end:::
+   :::column span="1":::
+   Indicates the full path of the item on the version control server.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Changeset
+   :::column-end:::
+   :::column span="1":::
+   Indicates the version number of the item.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Deletion ID
+   :::column-end:::
+   :::column span="1":::
+   If the item is deleted, the deletion identification; otherwise 0.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Lock
+   :::column-end:::
+   :::column span="1":::
+   Indicates the type of lock.
+   
+   - **Checkin**   Check in is not permitted for the file.
+   - **Checkout**   Check out in not permitted for the file.
+   - **None**   A lock is not set. For more information, see [Lock Command](lock-command.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Lock Owner
+   :::column-end:::
+   :::column span="1":::
+   Indicates the person who set a check-in lock.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Last modified
+   :::column-end:::
+   :::column span="1":::
+   Indicates the date and time stamp for when the item was last modified.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Type
+   :::column-end:::
+   :::column span="1":::
+   Indicates the item type, for example file.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   File Type
+   :::column-end:::
+   :::column span="1":::
+   Displays the file type encoding. For example, Windows-1252.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Size
+   :::column-end:::
+   :::column span="1":::
+   Indicates the size of the file in bytes.
+   :::column-end:::
+:::row-end:::
 
 For links to other Team Foundation commands that describe the items on the server and the workspaces that map to the server, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 

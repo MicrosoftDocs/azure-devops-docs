@@ -26,65 +26,114 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
 
 ## Parameters
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Parameter</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>/all</strong></p></td>
-<td><p>If you use a <a href="decide-between-using-local-server-workspace.md">local workspace</a> (recommended), then it&#39;s unlikely you will have to use this option.</p>
-<p>You can use this option to restore an item that you have accidentally deleted from a server workspace.</p>
-<p>Your Team Foundation Server maintains an internal record of all the items the workspace contains, including the version of each. By default, when you get files, if the internal record on the server indicates the workspace already has the version you are getting, then it does not retrieve the item. This option gets the items regardless of the data contained in this internal record.</p></td>
-</tr>
-<tr>
-<td><p><strong>/force</strong></p></td>
-<td><p>Combines <strong>/all</strong> and <strong>/overwrite</strong>.</p></td>
-</tr>
-<tr>
-<td><p><i>itemspec</i></p></td>
-<td><p>Specifies the scope of the items to get. You can specify more than one <i>itemspec</i> argument. If no <i>itemspec</i> is provided, the system recursively gets all items in the current workspace.</p>
-<p>For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
-</tr>
-<tr>
-<td><p><strong>/login</strong>:<i>username</i>,[<i>password</i>]</p></td>
-<td><p>Specifies the user account to run the command. See <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
-</tr>
-<tr>
-<td><p><strong>/noautoresolve</strong></p></td>
-<td><p>By default, the system automatically attempts to <strong>AutoResolve All</strong> (see <a href="resolve-team-foundation-version-control-conflicts.md">Resolve Team Foundation Version Control conflicts</a>). Specify this option to disable this default behavior.</p></td>
-</tr>
-<tr>
-<td><p><strong>/noprompt</strong></p></td>
-<td><p>Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
-</tr>
-<tr>
-<td><p><strong>/overwrite</strong></p></td>
-<td><p>If you use a <a href="decide-between-using-local-server-workspace.md">local workspace</a> (recommended), then it is unlikely you will have to use this option.</p>
-<p>By default, the system does not retrieve an item if it is writable (that is, if its read-only attribute is cleared) on the client machine. This option overrides the default behavior and overwrites a writable item, unless the item is checked out.</p></td>
-</tr>
-<tr>
-<td><p><strong>/preview</strong></p></td>
-<td><p>Displays what would occur, without actually performing the <strong>Get</strong> operation.</p></td>
-</tr>
-<tr>
-<td><p><strong>/recursive</strong></p></td>
-<td><p>Recursively gets items in the specified directory and any subdirectories. If you do not specify an <em>itemspec</em>, then this option is implied.</p></td>
-</tr>
-<tr>
-<td><p><strong>/remap</strong></p></td>
-<td><p>See <a href="/archive/blogs/phkelley/tf-get-remap">phkelley&#39;s blog: tf get /remap</a>.</p></td>
-</tr>
-<tr>
-<td><p><strong>/version</strong>:<i>versionspec</i></p></td>
-<td><p>Specifies the maximum version, or the minimum and the maximum versions, to display in the history data. The default is <code>/version:T</code> (the latest version).</p>
-<p>For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Parameter**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/all**
+   :::column-end:::
+   :::column span="1":::
+   If you use a [local workspace](decide-between-using-local-server-workspace.md) (recommended), then it&#39;s unlikely you will have to use this option.
+
+   You can use this option to restore an item that you have accidentally deleted from a server workspace.
+
+   Your Team Foundation Server maintains an internal record of all the items the workspace contains, including the version of each. By default, when you get files, if the internal record on the server indicates the workspace already has the version you are getting, then it does not retrieve the item. This option gets the items regardless of the data contained in this internal record.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/force**
+   :::column-end:::
+   :::column span="1":::
+   Combines **/all** and **/overwrite**.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the scope of the items to get. You can specify more than one *itemspec* argument. If no *itemspec* is provided, the system recursively gets all items in the current workspace.
+
+   For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**:*username*,[*password*]
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noautoresolve**
+   :::column-end:::
+   :::column span="1":::
+   By default, the system automatically attempts to **AutoResolve All** (see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md)). Specify this option to disable this default behavior.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   :::column-end:::
+   :::column span="1":::
+   Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/overwrite**
+   :::column-end:::
+   :::column span="1":::
+   If you use a [local workspace](decide-between-using-local-server-workspace.md) (recommended), then it is unlikely you will have to use this option.
+
+   By default, the system does not retrieve an item if it is writable (that is, if its read-only attribute is cleared) on the client machine. This option overrides the default behavior and overwrites a writable item, unless the item is checked out.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/preview**
+   :::column-end:::
+   :::column span="1":::
+   Displays what would occur, without actually performing the **Get** operation.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   Recursively gets items in the specified directory and any subdirectories. If you do not specify an *itemspec*, then this option is implied.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/remap**
+   :::column-end:::
+   :::column span="1":::
+   See [phkelley&#39;s blog: tf get /remap](/archive/blogs/phkelley/tf-get-remap).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/version**:*versionspec*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the maximum version, or the minimum and the maximum versions, to display in the history data. The default is `/version:T` (the latest version).
+
+   For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
+   :::column-end:::
+:::row-end:::
+
 
 ## Examples
 

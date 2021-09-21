@@ -27,54 +27,79 @@ To use the **rename** command, you have the **Check out** permission set to **Al
 tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem newitem
 ```
 
-## Parameters<table>
-<thead>
-<tr>
-<th><p><strong>Argument</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><i>olditem</i></p></td>
-<td><p>The original name and path of the file or folder that is to be renamed. You can specify a local workspace path such as C:\myfiles\314.cs or a Team Foundation version control server path such as $/myfiles/314.cs.</p></td>
-</tr>
-<tr>
-<td><p><i>newitem</i></p></td>
-<td><p>The new name of the file or folder. You can use this to specify a different local or a Team Foundation version control server path location.</p></td>
-</tr>
-<tr>
-<td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName</i>.</p></td>
-</tr>
-</tbody>
-</table>
+## Parameters
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Option</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>/lock</strong></p></td>
-<td><p>Include this option to prevent other users from checking in or checking out the specified items. If this option is not specified, the existing lock status of the item is not changed. For more information, see <a href="understand-lock-types.md">Understanding Lock Types</a>.</p>
-<p>Lock Options:</p>
-<ul>
-<li><p><strong>None</strong>  No lock is applied.</p></li>
-<li><p><strong>Checkin</strong>  Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.</p></li>
-<li><p><strong>Checkout</strong>  Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.</p>
-<p></p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>/login</strong></p></td>
-<td><p>Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   *olditem*
+   :::column-end:::
+   :::column span="1":::
+   The original name and path of the file or folder that is to be renamed. You can specify a local workspace path such as C:\myfiles\314.cs or a Team Foundation version control server path such as $/myfiles/314.cs.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *newitem*
+   :::column-end:::
+   :::column span="1":::
+   The new name of the file or folder. You can use this to specify a different local or a Team Foundation version control server path location.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName*.
+   :::column-end:::
+:::row-end:::
+
+
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/lock**
+   :::column-end:::
+   :::column span="1":::
+   Include this option to prevent other users from checking in or checking out the specified items. If this option is not specified, the existing lock status of the item is not changed. For more information, see [Understanding Lock Types](understand-lock-types.md).
+
+   Lock Options:
+
+   
+   - **None**  No lock is applied.
+
+   - **Checkin**  Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
+
+   - **Checkout**  Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   :::column-end:::
+:::row-end:::
+
 
 ## Remarks
 You can use the **rename** command of the **tf** command-line utility to move or rename a version-controlled item in your workspace. Use the **rename** command to move multiple files by specifying wildcard characters. The ability to rename multiple version-controlled files or folders, is only available from the command-line.

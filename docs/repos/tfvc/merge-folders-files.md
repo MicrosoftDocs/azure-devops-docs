@@ -32,20 +32,21 @@ To perform these procedures, you must have the following permissions set:
 
 ## Initiate a Merge from the Source Control Window
 
-<table>
-<thead>
-<tr>
-<th> <strong>Important</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>The release of Visual Studio Team Foundation Server 2010 began a distinction between branches and folders. For example, in the following illustration you can see how branches and folders are displayed with different icons.</p>
-<p><img src="media/merge-folders-files/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
-<p>While you can still branch and merge among folders, the best practice for your team to follow is to branch and merge only among branches. For more information, see <a href="branch-folders-files.md">Branch folders and files</a>.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Important**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   The release of Visual Studio Team Foundation Server 2010 began a distinction between branches and folders. For example, in the following illustration you can see how branches and folders are displayed with different icons.
+
+   ![A branch and a folder](media/merge-folders-files/IC268252.png)
+
+   While you can still branch and merge among folders, the best practice for your team to follow is to branch and merge only among branches. For more information, see [Branch folders and files](branch-folders-files.md).
+   :::column-end:::
+:::row-end:::
+
 
 ### Merge branches, files and folders from Source Control Explorer
 
@@ -59,20 +60,21 @@ To perform these procedures, you must have the following permissions set:
 
 You can use the **Tracking Changeset** window to view information such as, where a changeset was made, where it was merged, and when these events occurred. Branches where a changeset has not been merged are also highlighted. If you see such a branch where you know the changeset is needed but is missing, you can use a drag and drop operation to fix this problem.
 
-<table>
-<thead>
-<tr>
-<th> <strong>Important</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>This procedure can be performed only for changesets that affect a branch. For example, in the following illustration you can view how branches and folders are displayed with different icons.</p>
-<p><img src="media/merge-folders-files/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
-<p>For more information, see <a href="branch-folders-files.md">Branch folders and files</a>.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Important**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   This procedure can be performed only for changesets that affect a branch. For example, in the following illustration you can view how branches and folders are displayed with different icons.
+
+   ![A branch and a folder](media/merge-folders-files/IC268252.png)
+
+   For more information, see [Branch folders and files](branch-folders-files.md).
+   :::column-end:::
+:::row-end:::
+
 
 ### Drag and Drop a Changeset into the Tracking Changeset Window
 
@@ -125,30 +127,47 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
 
     -   If you selected **All changes up to a specific version**, then the **Select the versions of the source items** page appears. Select the version of the items that you want to use.
 
-        <table>
-                <tbody>
-        <tr>
-        <td><p><strong>Changeset</strong></p></td>
-        <td><p>Merge by specifying a <a href="find-view-changesets.md">changeset</a> version.</p></td>
-        </tr>
-        <tr>
-        <td><p><strong>Date</strong></p></td>
-        <td><p>Merge by specifying a date version.</p></td>
-        </tr>
-        <tr>
-        <td><p><strong>Label</strong></p></td>
-        <td><p>Merge by specifying a <a href="use-labels-take-snapshot-your-files.md">label</a> version.</p></td>
-        </tr>
-        <tr>
-        <td><p><strong>Latest Version</strong></p></td>
-        <td><p>Merge by specifying the latest version.</p></td>
-        </tr>
-        <tr>
-        <td><p><strong>Workspace</strong></p></td>
-        <td><p>Merge by specifying a <a href="create-work-workspaces.md">workspace</a> version.</p></td>
-        </tr>
-        </tbody>
-        </table>
+        :::row:::
+          :::column span="1":::
+          **Changeset**
+          :::column-end:::
+          :::column span="1":::
+          Merge by specifying a [changeset](find-view-changesets.md) version.
+          :::column-end:::
+       :::row-end:::
+       :::row:::
+          :::column span="1":::
+          **Date**
+          :::column-end:::
+          :::column span="1":::
+          Merge by specifying a date version.
+          :::column-end:::
+       :::row-end:::
+       :::row:::
+          :::column span="1":::
+          **Label**
+          :::column-end:::
+          :::column span="1":::
+          Merge by specifying a [label](use-labels-take-snapshot-your-files.md) version.
+          :::column-end:::
+       :::row-end:::
+       :::row:::
+          :::column span="1":::
+          **Latest Version**
+          :::column-end:::
+          :::column span="1":::
+          Merge by specifying the latest version.
+          :::column-end:::
+       :::row-end:::
+       :::row:::
+          :::column span="1":::
+          **Workspace**
+          :::column-end:::
+          :::column span="1":::
+          Merge by specifying a [workspace](create-work-workspaces.md) version.
+          :::column-end:::
+       :::row-end:::
+
 
     -   If you selected **Selected changesets**, then the **Select changesets to merge into the target branch** page appears. Select the changeset you want to merge.
 

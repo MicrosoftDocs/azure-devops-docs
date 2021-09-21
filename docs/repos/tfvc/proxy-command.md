@@ -47,58 +47,154 @@ tf proxy /enabled:(true|false)
 
 ## Parameters
 
-<table><thead>
-<tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><em>Url</em></p></td>
-    <td><p>Identifies the proxy server. You must use the following format: http://proxyServerName:proxyPortNumber.</p><p>Where <em>proxyServerName</em> is the name of the proxy server and <em>proxyPortNumber</em> is the assigned listening port (for example, <strong>http://server:8081</strong>).</p></td></tr>
-<tr>
-	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>Identifies the project collection. You must use the following format: http://ApplicationTierServerName:PortNumber/<em>Directory</em>/<em>CollectionName</em>.</p><p>Where <em>ApplicationTierServerName</em> is the name of the application-tier server, <em>PortNumber</em> is the assigned listening port, and <em>Directory</em>/<em>CollectionName</em> are the names of the directory and the collection (for example, <strong>http://server:8080/tfs/newcollection1</strong>).</p></td></tr>
-<tr>
-	<td><p><em>UserName</em></p></td>
-    <td><p>Provides a value to the <strong>/login</strong> option. You can specify a user name value as either <em>Domain</em>&lt;em&gt;UserName</em> or <em>UserName</em>.</p></td></tr>
-<tr>
-	<td><p><em>Password</em></p></td>
-	<td><p>Provides a password for the user name.</p></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Url*
+   :::column-end:::
+   :::column span="1":::
+   Identifies the proxy server. You must use the following format: http://proxyServerName:proxyPortNumber.
 
-<table><thead>
-<tr><th><p><strong>Option</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><strong>/configure</strong></p></td>
-	<td><p>Configures your client computer to use a proxy server.</p></td></tr>
-<tr>
-	<td><p><strong>/collection</strong></p></td>
-	<td><p>Specifies the project collection.</p></td></tr>
-<tr>
-	<td><p><strong>/login</strong></p></td>
-	<td><p>Specifies the user name and password to authenticate.</p></td></tr>
-<tr>
-	<td><p><strong>/add</strong></p></td>
-	<td><p>Adds a proxy record to Visual Studio Team Foundation Server about the location and availability of proxy servers on your network.</p></td></tr>
-<tr>
-	<td><p><strong>/name</strong></p></td>
-	<td><p>Associates a name with a proxy record.</p></td></tr>
-<tr>
-	<td><p><strong>/site</strong></p></td>
-	<td><p>Associates an Active Directory domain with a proxy record.</p></td></tr>
-<tr>
-	<td><p><strong>/description</strong></p></td>
-	<td><p>Specifies a description of the proxy record.</p></td></tr>
-<tr>
-	<td><p><strong>/default</strong></p></td>
-    <td><p>Specifies the scope of the proxy record. If you add a proxy record with the default set to global, the first time that a developer performs a get operation, Team Foundation Server will redirect that developer&#39;s request to the proxy that is specified by the global record. If you add a proxy record with the default set to site, the first time that a developer from within the specified Active Directory domain performs a get operation, Team Foundation Server will redirect that developer&#39;s request to the proxy that is specified by the record that is associated with the site.</p><p>You can specify one of the following values:</p><ul><li><p><strong>global</strong></p></li><li><p><strong>site</strong></p></li><li><p><strong>all</strong></p></li></ul></td></tr>
-<tr>
-	<td><p><strong>/delete</strong></p></td>
-	<td><p>Deletes a proxy record from Team Foundation Server.</p></td></tr>
-<tr>
-	<td><p><strong>/list</strong></p></td>
-	<td><p>Lists proxy records in Team Foundation Server.</p></td></tr>
-<tr>
-	<td><p><strong>/enabled</strong></p></td>
-	<td><p>Enables or disables proxy.</p><ul><li><p><strong>true</strong></p></li><li><p><strong>false</strong></p></li></ul></td></tr></tbody>
-</table>
+   Where *proxyServerName* is the name of the proxy server and *proxyPortNumber* is the assigned listening port (for example, **http://server:8081**).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="1":::
+   Identifies the project collection. You must use the following format: http://ApplicationTierServerName:PortNumber/*Directory*/*CollectionName*.
+
+   Where *ApplicationTierServerName* is the name of the application-tier server, *PortNumber* is the assigned listening port, and *Directory*/*CollectionName* are the names of the directory and the collection (for example, **http://server:8080/tfs/newcollection1**).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *UserName*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value to the **/login** option. You can specify a user name value as either *Domain*&lt;em&gt;UserName</em> or *UserName*.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Password*
+   :::column-end:::
+   :::column span="1":::
+   Provides a password for the user name.
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/configure**
+   :::column-end:::
+   :::column span="1":::
+   Configures your client computer to use a proxy server.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/collection**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the project collection.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user name and password to authenticate.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/add**
+   :::column-end:::
+   :::column span="1":::
+   Adds a proxy record to Visual Studio Team Foundation Server about the location and availability of proxy servers on your network.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/name**
+   :::column-end:::
+   :::column span="1":::
+   Associates a name with a proxy record.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/site**
+   :::column-end:::
+   :::column span="1":::
+   Associates an Active Directory domain with a proxy record.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/description**
+   :::column-end:::
+   :::column span="1":::
+   Specifies a description of the proxy record.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/default**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the scope of the proxy record. If you add a proxy record with the default set to global, the first time that a developer performs a get operation, Team Foundation Server will redirect that developer&#39;s request to the proxy that is specified by the global record. If you add a proxy record with the default set to site, the first time that a developer from within the specified Active Directory domain performs a get operation, Team Foundation Server will redirect that developer&#39;s request to the proxy that is specified by the record that is associated with the site.
+
+   You can specify one of the following values:
+   - **global**
+   - **site**
+   - **all**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/delete**
+   :::column-end:::
+   :::column span="1":::
+   Deletes a proxy record from Team Foundation Server.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/list**
+   :::column-end:::
+   :::column span="1":::
+   Lists proxy records in Team Foundation Server.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/enabled**
+   :::column-end:::
+   :::column span="1":::
+   Enables or disables proxy.
+   - **true**
+   - **false**
+   :::column-end:::
+:::row-end:::
 
 ## Remarks
 The proxy command has two purposes, and each purpose is aimed at a different type of user.

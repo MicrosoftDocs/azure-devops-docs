@@ -53,75 +53,125 @@ tf workfold /decloak serverfolder
 [/workspace:workspacename] [/collection:TeamProjectCollectionUrl][/login:username,[password]]
 ```
 
-## Parameters<table>
-<thead>
-<tr>
-<th><p><strong>Argument</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><i>workspacename</i></p></td>
-<td><p>Specifies the name of the workspace on which the command operates for the <strong>/workspace</strong> option.</p></td>
-</tr>
-<tr>
-<td><p><i>serverfolder</i></p></td>
-<td><p>Specifies the name of a Team Foundation version control server folder.</p></td>
-</tr>
-<tr>
-<td><p><i>localfolder</i></p></td>
-<td><p>Specifies the name of a local folder.</p></td>
-</tr>
-<tr>
-<td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains the folders that you want to compare with server folders (for example, http://myserver:8080/tfs/DefaultCollection/).</p></td>
-</tr>
-<tr>
-<td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName</i>.</p></td>
-</tr>
-</tbody>
-</table>
+## Parameters
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Option</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>/workspace</strong></p></td>
-<td><p>Specifies the name of the workspace to work in.</p></td>
-</tr>
-<tr>
-<td><p><strong>/map</strong></p></td>
-<td><p>Specifies an association between a local folder and the Team Foundation version control server folder. By default, the workfold command uses this option, even if unspecified, unless <strong>/unmap</strong>, <strong>/cloak</strong>, or <strong>/decloak</strong> is specified.</p></td>
-</tr>
-<tr>
-<td><p><strong>/unmap</strong></p></td>
-<td><p>Specifies which folder mapping should be removed from the workspace.</p></td>
-</tr>
-<tr>
-<td><p><strong>/cloak</strong></p></td>
-<td><p>Specifies that the folder should be excluded from any version control actions made in the workspace.</p></td>
-</tr>
-<tr>
-<td><p><strong>/decloak</strong></p></td>
-<td><p>Decloaks a folder so the folder can be retrieved into the workspace.</p></td>
-</tr>
-<tr>
-<td><p><strong>/collection</strong></p></td>
-<td><p>Specifies the project collection.</p></td>
-</tr>
-<tr>
-<td><p><strong>/login</strong></p></td>
-<td><p>Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   ****Argument****
+   :::column-end:::
+   :::column span="1":::
+   ****Description****
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   *workspacename*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the name of the workspace on which the command operates for the **/workspace** option.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *serverfolder*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the name of a Team Foundation version control server folder.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *localfolder*
+   :::column-end:::
+   :::column span="1":::
+   Specifies the name of a local folder.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="1":::
+   The URL of the project collection that contains the folders that you want to compare with server folders (for example, http://myserver:8080/tfs/DefaultCollection/).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName*.
+   :::column-end:::
+:::row-end:::
+
+
+:::row:::
+   :::column span="1":::
+   ****Option****
+   :::column-end:::
+   :::column span="1":::
+   ****Description****
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/workspace**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the name of the workspace to work in.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/map**
+   :::column-end:::
+   :::column span="1":::
+   Specifies an association between a local folder and the Team Foundation version control server folder. By default, the workfold command uses this option, even if unspecified, unless **/unmap**, **/cloak**, or **/decloak** is specified.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/unmap**
+   :::column-end:::
+   :::column span="1":::
+   Specifies which folder mapping should be removed from the workspace.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/cloak**
+   :::column-end:::
+   :::column span="1":::
+   Specifies that the folder should be excluded from any version control actions made in the workspace.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/decloak**
+   :::column-end:::
+   :::column span="1":::
+   Decloaks a folder so the folder can be retrieved into the workspace.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/collection**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the project collection.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   :::column-end:::
+:::row-end:::
+
 
 ## Remarks
 You can use the **workfold** command of the **tf** command-line utility to create and edit *workspace mappings*. A workspace mapping creates a client-side folder into which all files and subfolders in the Team Foundation version control server folder are retrieved when you execute a **tf** **get** operation. This **get** will not work if the client-side folder is cloaked.

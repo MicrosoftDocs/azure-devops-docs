@@ -26,93 +26,144 @@ tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:
 [/version:versionspec] [/login:username,[password]]
 ```
 
-## Parameters<table>
-<thead>
-<tr>
-<th><p><strong>Argument</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><em>TeamProjectCollectionUrl</em></p></td>
-<td><p>The URL of the project collection that contains a specific version of a file about which you want to retrieve information (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
-</tr>
-<tr>
-<td><p><em>shelvesetname [:owner]</em></p></td>
-<td><p>Identifies the shelveset. The optional <em>owner</em> argument is used to specify a shelveset that is not owned by the current user.</p></td>
-</tr>
-<tr>
-<td><p><em>Itemspec</em></p></td>
-<td><p>Identifies the file or folder to retrieve. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p>
-<div class="alert">
-<div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
-<div class="mtps-row">
-<strong>Note</strong>
-</div>
-<div class="mtps-row">
-You can specify more than one <em>Itemspec</em> argument. 
-</div>
-</div>
-</div></td>
-</tr>
-<tr>
-<td><p><em>Versionspec</em></p></td>
-<td><p>Provides a value such as C3 for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td>
-</tr>
-<tr>
-<td><p><em>username</em></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName</em>.</p></td>
-</tr>
-<tr>
-<td><p><em>localfile</em></p></td>
-<td><p>Provides the path of the folder to which you want to output the file.</p></td>
-</tr>
-</tbody>
-</table>
+## Parameters
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Option</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>/console</strong></p></td>
-<td><p>Specifies that the file output should be directed to the console. This is useful if you want to write the file out to disk using console redirection (with a different name or location than the versioned item).</p></td>
-</tr>
-<tr>
-<td><p><strong>/recursive</strong></p></td>
-<td><p>Views all items in the specified directory and any subdirectories.</p></td>
-</tr>
-<tr>
-<td><p><strong>/shelveset</strong></p></td>
-<td><p>Specifies the shelveset by name.</p></td>
-</tr>
-<tr>
-<td><p><strong>/noprompt</strong></p></td>
-<td><p>Specifies that Team Foundation should not prompt you before displaying each file when you include a wildcard in an <em>itemspec</em> that matches more than one file.</p></td>
-</tr>
-<tr>
-<td><p><strong>/version</strong></p></td>
-<td><p>Specifies the version of the file to open for viewing. If you omit this option, <strong>view</strong> retrieves the latest Team Foundation version control server version.</p></td>
-</tr>
-<tr>
-<td><p><strong>/collection</strong></p></td>
-<td><p>Specifies the project collection.</p></td>
-</tr>
-<tr>
-<td><p><strong>/login</strong></p></td>
-<td><p>Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.</p></td>
-</tr>
-<tr>
-<td><p><strong>/output</strong></p></td>
-<td><p>Outputs the file to a local folder instead of invoking a Windows shell to open the file.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="1":::
+   The URL of the project collection that contains a specific version of a file about which you want to retrieve information (for example, http://myserver:8080/tfs/DefaultCollection).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *shelvesetname [:owner]*
+   :::column-end:::
+   :::column span="1":::
+   Identifies the shelveset. The optional *owner* argument is used to specify a shelveset that is not owned by the current user.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Identifies the file or folder to retrieve. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
+
+   > [!Note]  
+   > You can specify more than one *Itemspec* argument. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Versionspec*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value such as C3 for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*&lt;em&gt;UserName</em> or *UserName*.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *localfile*
+   :::column-end:::
+   :::column span="1":::
+   Provides the path of the folder to which you want to output the file.
+   :::column-end:::
+:::row-end:::
+
+
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/console**
+   :::column-end:::
+   :::column span="1":::
+   Specifies that the file output should be directed to the console. This is useful if you want to write the file out to disk using console redirection (with a different name or location than the versioned item).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   Views all items in the specified directory and any subdirectories.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/shelveset**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the shelveset by name.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   :::column-end:::
+   :::column span="1":::
+   Specifies that Team Foundation should not prompt you before displaying each file when you include a wildcard in an *itemspec* that matches more than one file.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/version**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the version of the file to open for viewing. If you omit this option, **view** retrieves the latest Team Foundation version control server version.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/collection**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the project collection.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/output**
+   :::column-end:::
+   :::column span="1":::
+   Outputs the file to a local folder instead of invoking a Windows shell to open the file.
+   :::column-end:::
+:::row-end:::
+
 ## Remarks
 The <strong>view</strong> command of the <strong>tf</strong> command-line utility retrieves a read-only copy of a file from the Team Foundation version control server to a temporary folder on your computer and displays its contents. Unless you specify a particular version, Team Foundation retrieves the latest version of the file from the Team Foundation version control server.
 

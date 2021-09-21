@@ -25,63 +25,100 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
 [/recursive] [/noprompt][/login:username,[password]]
 ```
 
-## Parameters<table>
-<thead>
-<tr>
-<th><p>Argument</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><i>shelvesetname</i></p></td>
-<td><p>The name of the shelveset to restore.</p></td>
-</tr>
-<tr>
-<td><p><i>ownername</i></p></td>
-<td><p>The name of the shelveset owner.</p></td>
-</tr>
-<tr>
-<td><p><i>Itemspec</i></p></td>
-<td><p>Identifies the file or folder revisions to unshelve into the current workspace. If this parameter is not included, all pending changes in the specified shelveset are unshelved, by default. Server paths are not allowed.</p>
-<p>For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p>
-&gt;<strong>Note:</strong><br/>&gt;You can specify more than one <em>Itemspec</em> argument.
-</td>
-</tr>
-<tr>
-<td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName&lt;/i.</p></td>
-</tr>
-</tbody>
-</table>
+## Parameters
 
-<table>
-<thead>
-<tr>
-<th><p>Option</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>/move</strong></p></td>
-<td><p>Deletes the specified shelveset from the server for Team Foundation version control upon successful completion of the unshelve operation. This option cannot be combined with an <i>itemspec</i>.</p>
-<p>You can also delete a shelveset using the <strong>shelve</strong> command.</p></td>
-</tr>
-<tr>
-<td><p><strong>/recursive</strong></p></td>
-<td><p>If specified, the itemspec is matched recursively.</p></td>
-</tr>
-<tr>
-<td><p><strong>/noprompt</strong></p></td>
-<td><p>If specified, you are not prompted for input.</p></td>
-</tr>
-<tr>
-<td><p><strong>/login</strong></p></td>
-<td><p>Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   *shelvesetname*
+   :::column-end:::
+   :::column span="1":::
+   The name of the shelveset to restore.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *ownername*
+   :::column-end:::
+   :::column span="1":::
+   The name of the shelveset owner.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *Itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Identifies the file or folder revisions to unshelve into the current workspace. If this parameter is not included, all pending changes in the specified shelveset are unshelved, by default. Server paths are not allowed.
+
+   For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
+
+   > [!Note]  
+   > You can specify more than one *Itemspec* argument.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or <i>UserName&lt;/i.
+   :::column-end:::
+:::row-end:::
+
+
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/move**
+   :::column-end:::
+   :::column span="1":::
+   Deletes the specified shelveset from the server for Team Foundation version control upon successful completion of the unshelve operation. This option cannot be combined with an *itemspec*.
+
+   You can also delete a shelveset using the **shelve** command.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   If specified, the itemspec is matched recursively.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   :::column-end:::
+   :::column span="1":::
+   If specified, you are not prompted for input.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
+   :::column-end:::
+:::row-end:::
+
 
 ## Remarks
 The **unshelve** command of the **tf** command-line utility retrieves either all shelved file revisions or a defined subset of all shelved file revisions from the Team Foundation server into the current workspace.

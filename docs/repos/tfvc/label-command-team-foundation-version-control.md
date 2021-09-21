@@ -35,62 +35,91 @@ itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
 
 ## Parameters
 
-<table>
-<thead>
-<tr>
-<th><p><strong>Argument</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><i>labelname</i></p></td>
-<td><p>Identifies the name of the label to attach, modify, or remove from the specified items.</p></td>
-</tr>
-<tr>
-<td><p><i><xref href="scope" data-throw-if-not-resolved="False" data-raw-source="@scope"></xref></i></p></td>
-<td><p>Specifies a Team Foundation version control server directory within which the labelname is unique. This parameter lets you independently create, manage, retrieve, and delete one label or set of labeled items when two labels of the same name are in different parts of the Team Foundation version control server.</p></td>
-</tr>
-<tr>
-<td><p><i>ownername</i></p></td>
-<td><p>Provides a value such as DOMAIN\JuanGo or just juango to the <strong>/owner</strong> option.</p></td>
-</tr>
-<tr>
-<td><p><i>itemspec</i></p></td>
-<td><p>Identifies the file or folder from which to label, re-label, or modify. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p>
-<div class="alert">
-<div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
-<div class="mtps-row">
-<strong>Note</strong>
-</div>
-<div class="mtps-row">
-You can specify more than one <i>Itemspec</i> argument.
-</div>
-</div>
-</div></td>
-</tr>
-<tr>
-<td><p><i>versionspec</i></p></td>
-<td><p>Provides a value such as c2 for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td>
-</tr>
-<tr>
-<td><p><i>comment</i></p></td>
-<td><p>A user-provided comment about the label.</p></td>
-</tr>
-<tr>
-<td><p><i><xref href="commentfile" data-throw-if-not-resolved="False" data-raw-source="@commentfile"></xref></i></p></td>
-<td><p>The user-provided path of a file on disk that contains the comment to use for the check-in.</p></td>
-</tr>
-<tr>
-<td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName</i>.</p></td>
-</tr>
-<tr>
-<td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the specified project collection that contains a version of a file or folder to which you want to attach a label or from which you want to delete a label (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   *labelname*
+   :::column-end:::
+   :::column span="1":::
+   Identifies the name of the label to attach, modify, or remove from the specified items.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *<xref href="scope" data-throw-if-not-resolved="False" data-raw-source="@scope"></xref>*
+   :::column-end:::
+   :::column span="1":::
+   Specifies a Team Foundation version control server directory within which the labelname is unique. This parameter lets you independently create, manage, retrieve, and delete one label or set of labeled items when two labels of the same name are in different parts of the Team Foundation version control server.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *ownername*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value such as DOMAIN\JuanGo or just juango to the **/owner** option.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *itemspec*
+   :::column-end:::
+   :::column span="1":::
+   Identifies the file or folder from which to label, re-label, or modify. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+
+   > [!Note]  
+   > You can specify more than one *Itemspec* argument.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *versionspec*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value such as c2 for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *comment*
+   :::column-end:::
+   :::column span="1":::
+   A user-provided comment about the label.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *<xref href="commentfile" data-throw-if-not-resolved="False" data-raw-source="@commentfile"></xref>*
+   :::column-end:::
+   :::column span="1":::
+   The user-provided path of a file on disk that contains the comment to use for the check-in.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *username*
+   :::column-end:::
+   :::column span="1":::
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName*.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *TeamProjectCollectionUrl*
+   :::column-end:::
+   :::column span="1":::
+   The URL of the specified project collection that contains a version of a file or folder to which you want to attach a label or from which you want to delete a label (for example, http://myserver:8080/tfs/DefaultCollection).
+   :::column-end:::
+:::row-end:::
+
 
 | **Option** | **Description** |
 |---|---|

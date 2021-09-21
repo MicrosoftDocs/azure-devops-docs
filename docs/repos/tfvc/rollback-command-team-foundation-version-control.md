@@ -31,49 +31,151 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
 
 ## Parameters
 
-<table>
-<thead>
-<tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
-<tr>
-	<td><p><em>ChangesetFrom~ChangesetTo</em></p></td>
-	<td><p>Use this argument with the <strong>/changeset</strong> option to specify the changesets that you want to roll back. You can specify the changesets in the following ways:</p><ul><li><p>A single changeset</p><p>Example: <strong>/changeset:C11</strong></p></li><li><p>A range of changesets</p><p>Example: <strong>/changeset:C7~C20</strong></p></li><li><p>A date</p><p>Example: <strong>/changeset:D09/30/09</strong></p></li><li><p>A range of dates</p><p>Example:<strong>/changeset:D09/23/09~D10/07/09</strong></p></li><li><p>The most recent changeset</p><p>Example: <strong>/changeset:Tip</strong> or <strong>/changeset:T</strong></p></li></ul></td></tr>
-<tr>
-	<td><p><em>ItemSpec</em></p></td>
-	<td><p>Use this argument to specify one or more items that you want to roll back. If you are using the <strong>/toversion</strong> option, you must specify this argument.</p><p>For more information about how Team Foundation parses item specifications, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p><div class="alert"><div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml"><div class="mtps-row"><strong>Note:</strong></div><div class="mtps-row">
-You can specify more than one <em>Itemspec</em> argument.
-</div></div></div></td></tr>
-<tr>
-	<td><p><em>VersionSpec</em></p></td>
-	<td><p>The user-provided value for both the <strong>/version</strong> option and the <strong>/toversion</strong> option.</p><p>Use this argument with the <strong>/toversion</strong> option to revert a file to its state in a specific changeset. You can specify the version in the following ways:</p><ul><li><p>A single changeset</p><p>Example: <strong>/toversion:C32</strong></p></li><li><p>A date (at midnight)</p><p>Example: <strong>/toversion:D06/19/09</strong></p></li><li><p>A date and a time</p><p>Example: <strong>/toversion:D06/19/09T14:32</strong></p></li><li><p>A label</p><p>Example: <strong>/toversion:LTestLabel</strong></p></li><li><p>The version in the workspace that is mapped to the current directory</p><p>Example: <strong>/toversion:W</strong></p></li><li><p>The version in a specific workspace</p><p>Example: <strong>/toversion:WResolveRIConflicts;AKerry</strong></p></li></ul><p>For more information about how Team Foundation parses versionspecs, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td></tr></tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Argument**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *ChangesetFrom~ChangesetTo*
+   :::column-end:::
+   :::column span="1":::
+   Use this argument with the **/changeset** option to specify the changesets that you want to roll back. You can specify the changesets in the following ways:
 
-<table><tbody>
-<tr><th><p><strong>Option</strong></p></th><th><p><strong>Description</strong></p></th></tr>
-<tr>
-	<td><p><strong>/changeset</strong></p></td>
-	<td><p>Use this option to specify one or more specific changesets that you want to negate.</p></td></tr>
-<tr>
-	<td><p><strong>/keepmergehistory</strong></p></td>
-	<td><p>This option has an effect only if one or more of the changesets that you are rolling back include a <strong>branch</strong> or <strong>merge</strong> change. Specify this option if you want future merges between the same source and the same target to exclude the changes that you are rolling back.</p></td></tr>
-<tr>
-	<td><p><strong>/lock</strong></p></td>
-	<td><p>Specify this option to prevent other users from checking in or checking out items until you finish rolling back all associated changes. For more information, see <a href="/azure/devops/repos/tfvc/understand-lock-types?viewFallbackFrom=vsts">Understanding Lock Types</a>.</p><p>Lock Options</p><ul><li><p><strong>None</strong></p><p>Default. No lock is applied. If the file that you are rolling back has been locked, this option removes the lock.</p></li><li><p><strong>Checkin</strong></p><p>Locks an item until you release the lock by performing a check-in. Other users can check out the specified items, but the users cannot check in revisions until the lock is removed. You cannot lock a file that is already locked.</p></li><li><p><strong>Checkout</strong></p><p>Prevents users from checking in or out a locked item until you remove the lock by performing a check-in. </p></li></ul></td></tr>
-<tr>
-	<td><p><strong>/login</strong></p></td>
-	<td><p>For information about this option, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p></td></tr>
-<tr>
-	<td><p><strong>/noprompt</strong></p></td>
-	<td><p>Suppresses any dialog boxes that would otherwise appear during this operation.</p></td></tr>
-<tr>
-	<td><p><strong>/recursive</strong></p></td>
-	<td><p>Specify this option if you want the operation to include items in subfolders.</p></td></tr>
-<tr>
-	<td><p><strong>/toversion</strong></p></td>
-	<td><p>Specify this option to revert a file to its state in a specific changeset. When you use this option, you negate the effect of all changesets that have been applied since the version that you specify.</p></td></tr>
-<tr>
-	<td><p><strong>/version</strong></p></td>
-	<td><p>Specifies the current version of the files and folders that you want to roll back.</p></td></tr></tbody>
-</table>
+   - A single changeset
+   Example: **/changeset:C11**
+   - A range of changesets
+   Example: **/changeset:C7~C20**
+   - A date
+   Example: **/changeset:D09/30/09**
+   - A range of dates
+   Example:**/changeset:D09/23/09~D10/07/09**
+   - The most recent changeset
+   Example: **/changeset:Tip** or **/changeset:T**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *ItemSpec*
+   :::column-end:::
+   :::column span="1":::
+   Use this argument to specify one or more items that you want to roll back. If you are using the **/toversion** option, you must specify this argument.
+
+   For more information about how Team Foundation parses item specifications, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   
+   > [!Note]  
+   > You can specify more than one *Itemspec* argument.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   *VersionSpec*
+   :::column-end:::
+   :::column span="1":::
+   The user-provided value for both the **/version** option and the **/toversion** option.
+
+   Use this argument with the **/toversion** option to revert a file to its state in a specific changeset. You can specify the version in the following ways:
+   - A single changeset
+   Example: **/toversion:C32**
+   - A date (at midnight)
+   Example: **/toversion:D06/19/09**
+   - A date and a time
+   Example: **/toversion:D06/19/09T14:32**
+   - A label
+   Example: **/toversion:LTestLabel**
+   - The version in the workspace that is mapped to the current directory
+   Example: **/toversion:W**
+   - The version in a specific workspace
+   Example: **/toversion:WResolveRIConflicts;AKerry**
+
+   For more information about how Team Foundation parses versionspecs, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/changeset**
+   :::column-end:::
+   :::column span="1":::
+   Use this option to specify one or more specific changesets that you want to negate.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/keepmergehistory**
+   :::column-end:::
+   :::column span="1":::
+   This option has an effect only if one or more of the changesets that you are rolling back include a **branch** or **merge** change. Specify this option if you want future merges between the same source and the same target to exclude the changes that you are rolling back.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/lock**
+   :::column-end:::
+   :::column span="1":::
+   Specify this option to prevent other users from checking in or checking out items until you finish rolling back all associated changes. For more information, see [Understanding Lock Types](/azure/devops/repos/tfvc/understand-lock-types?viewFallbackFrom=vsts).
+
+   Lock Options
+   - **None**
+   Default. No lock is applied. If the file that you are rolling back has been locked, this option removes the lock.
+   - **Checkin**
+   Locks an item until you release the lock by performing a check-in. Other users can check out the specified items, but the users cannot check in revisions until the lock is removed. You cannot lock a file that is already locked.
+   - **Checkout**
+   Prevents users from checking in or out a locked item until you remove the lock by performing a check-in. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   For information about this option, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   :::column-end:::
+   :::column span="1":::
+   Suppresses any dialog boxes that would otherwise appear during this operation.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   Specify this option if you want the operation to include items in subfolders.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/toversion**
+   :::column-end:::
+   :::column span="1":::
+   Specify this option to revert a file to its state in a specific changeset. When you use this option, you negate the effect of all changesets that have been applied since the version that you specify.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/version**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the current version of the files and folders that you want to roll back.
+   :::column-end:::
+:::row-end:::
 
 ## Remarks
 
