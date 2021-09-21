@@ -46,81 +46,118 @@ You use the **tasks** element and its child elements to define the artifacts to 
  The following table describes each element that can define the tasks for a plug-in.  
   
   
-<table>
-<tr><th>Element</th><th>Description and syntax</th></tr>
-<tbody valign="top">
-<tr>
-<td><strong>dependencies</strong></td>
-<td>Optional child element of <strong>task</strong>. Specifies other groups on which a group depends.
-<pre><code>&lt;dependencies&gt; 
-  &lt;dependency&gt;. . . &lt;/dependency&gt;
-&lt;/dependencies/&gt;
-</code></pre>
-</td>
-</tr>
-<tr><td><strong>dependency</strong></td>
-<td>Optional child element of <strong>dependencies</strong>. Specifies the ID of another task on which this task depends. The other task must complete before this task can start.
-<pre><code>&lt;dependency taskId="taskId" /&gt;
-</code></pre>
-</td>
-</tr>
+:::row:::
+   :::column span="1":::
+   **Element**
+   :::column-end:::
+   :::column span="1":::
+   **Description and syntax**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **dependencies**
+   :::column-end:::
+   :::column span="1":::
+   Optional child element of **task**. Specifies other groups on which a group depends.  
+   ```
+   <dependencies> 
+      <dependency>. . . </dependency>
+   </dependencies/>
+   ```
+   :::column-end:::
+:::row-end:::
 
-<tr><td><strong>ProcessTemplate</strong></td>
-<td>Optional child element of <strong>taskXml</strong> element for the Build and Lab plug-ins. Specifies the name, location, and destination of a file to upload to support build processes for a project.
-<pre><code>&lt;ProcessTemplate Type="FileType" Filename="LocalPathAndFileName" 
-Description="FileDescription" ServerPath="UploadLocation" /&gt;
-</code></pre>
-<p>Where each attribute is defined as follows:</p>
-<ul>
-<li><strong>Type</strong>: The type of file that is being uploaded. The following values are valid: <code>Default</code> and <code>Upgrade</code> for build template files and <code>Custom</code> for lab template files.</li>
-<li><strong>Filename</strong>: The local directory path and name of the file to upload.</li>
-<li><strong>Description</strong>: A short text string that describes the file to upload.</li>
-<li><strong>ServerPath</strong>: The path of the server that is running Team Foundation Server where the file should be uploaded. The only valid upload location is <code>$/$$PROJECTNAME$$/BuildProcessTemplates</code>.</li></ul>
-</td>
-</tr>
+:::row:::
+   :::column span="1":::
+   **dependency**
+   :::column-end:::
+   :::column span="1":::
+   Optional child element of **dependencies**. Specifies the ID of another task on which this task depends. The other task must complete before this task can start.  
+   
+   ```
+   <dependency taskId="taskId" />
+   ```
+   :::column-end:::
+:::row-end:::
 
-<tr><td><strong>task</strong></td>
-<td>Required child element of <strong>tasks</strong>. Specifies work that must occur to configure something specific to the process in a new project.
+:::row:::
+   :::column span="1":::
+   **ProcessTemplate**
+   :::column-end:::
+   :::column span="1":::
+   Optional child element of **taskXml** element for the Build and Lab plug-ins. Specifies the name, location, and destination of a file to upload to support build processes for a project.  
+   
+   ```
+   <ProcessTemplate Type="FileType" Filename="LocalPathAndFileName" 
+   Description="FileDescription" ServerPath="UploadLocation" />
+   ```
+   Where each attribute is defined as follows:
 
-<pre><code>&lt;task id="task id" name="name of task"     plugin="Microsoft.ProjectCreationWizard.PluginName" 
-completionMessage="SuccessfulCompletionMessage"     
-completionDescription="InProcessMessage"&gt;
-   &lt;dependencies&gt; . . . &lt;/dependencies&gt;
-   &lt;taskXml&gt; . . . &lt;/taskXml&gt;
-&lt;/task/&gt;
-</code></pre>
-<p>Where each attribute is defined as follows:</p>
-<ul>
-<li><strong>Type</strong>: <strong>id</strong>: Specifies a name that identifies the task. If another task depends on this task, it references this ID. You must assign a unique value for the ID within the plug-in file.</li>
-<li><strong>name</strong>: Describes what the task does.</li>
-<li><strong>plugin</strong>: Identifies which plug-in must run this task.</li>
-<li><strong>completionMessage</strong>: Specifies the message to display during project creation to indicate that the task completed successfully. Maximum length is 256 characters.</li>
-<li><strong>completionDescription</strong>: Specifies the message to display during project creation to indicate that the task is being processed. Minimum length is 1 character.</li>
-</ul>
+   
+   - **Type**: The type of file that is being uploaded. The following values are valid: `Default` and `Upgrade` for build template files and `Custom` for lab template files.
+   - **Filename**: The local directory path and name of the file to upload.
+   - **Description**: A short text string that describes the file to upload.
+   - **ServerPath**: The path of the server that is running Team Foundation Server where the file should be uploaded. The only valid upload location is `$/$$PROJECTNAME$$/BuildProcessTemplates`.
+   :::column-end:::
+:::row-end:::
 
-</td>
-</tr>
+:::row:::
+   :::column span="1":::
+   **task**
+   :::column-end:::
+   :::column span="1":::
+   Required child element of **tasks**. Specifies work that must occur to configure something specific to the process in a new project.
 
-<tr><td><strong>tasks</strong></td>
-<td>Required child element of <strong>taskXml</strong>. Contains a collection of <strong>task</strong> elements that each specify work that must occur to configure something specific to the process in a new project.
-<pre><code>&lt;tasks&gt;
-     &lt;task/&gt;. . . &lt;/task&gt;
-&lt;/tasks /&gt;
-</code></pre>
-</td>
-</tr>
+   ```
+   <task id="task id" name="name of task"      plugin="Microsoft.ProjectCreationWizard.PluginName" 
+   completionMessage="SuccessfulCompletionMessage" 
+   completionDescription="InProcessMessage">
+       <dependencies> . . . </dependencies>
+       <taskXml> . . . </taskXml>
+   </task/>
+   ```
+   Where each attribute is defined as follows:
 
-<tr><td><strong>taskXml</strong></td>
-<td>Required root element for a plug-in file. Describes the work that is required to complete this task. The XML inside this element block varies and is specific to each plug-in.
-<blockquote><strong>Note:</strong> The XML processor does not try to validate the content within the element.
-</blockquote>
-<pre><code>&lt;taskXml&gt; . . . &lt;/taskXml&gt;
-</code></pre>
-</td>
-</tr>
-</tbody>
-</table>
-  
+   
+   - **Type**: **id**: Specifies a name that identifies the task. If another task depends on this task, it references this ID. You must assign a unique value for the ID within the plug-in file.
+   - **name**: Describes what the task does.
+   - **plugin**: Identifies which plug-in must run this task.
+   - **completionMessage**: Specifies the message to display during project creation to indicate that the task completed successfully. Maximum length is 256 characters.
+   - **completionDescription**: Specifies the message to display during project creation to indicate that the task is being processed. Minimum length is 1 character.  
+   
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **tasks**
+   :::column-end:::
+   :::column span="1":::
+   Required child element of **taskXml**. Contains a collection of **task** elements that each specify work that must occur to configure something specific to the process in a new project.   
+   ```
+   <tasks>
+        <task/>. . . </task>
+   </tasks />
+   ```
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **taskXml**
+   :::column-end:::
+   :::column span="1":::
+   Required root element for a plug-in file. Describes the work that is required to complete this task. The XML inside this element block varies and is specific to each plug-in.   
+   <blockquote>**Note:** The XML processor does not try to validate the content within the element.
+   </blockquote>   
+   
+   ```
+   <taskXml> . . . </taskXml>
+   ```
+   :::column-end:::
+:::row-end:::
+
 
 <a name="index"></a> 
 ##  Index to taskXML Elements by Function  

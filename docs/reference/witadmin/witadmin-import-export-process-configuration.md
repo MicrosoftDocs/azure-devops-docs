@@ -229,20 +229,166 @@ Other changes might require you to perform some manual operations when updating 
 
 **A:**  When you make one of the following changes to a project, you'll need to update the definitions for the WIT, categories, or process configuration. To avoid errors, always make your changes in this order: (1) WITs, (2) categories, and (3) process configuration.
 
-<table><tr><th><p>Customization</p></th><th><p>Update or verify the WIT definition</p></th><th scope="col"><p>Update or verify the process configuration definition</p></th>
-</tr>
-<tbody valign="top">
-<tr><td><p>Add a WIT to the Requirements Category </p><p>(A WIT can belong to the Requirements Category or the Task Category, but not both.)</p></td><td data-th="Update or verify the WIT definition"><p>To include the following fields: </p><ul class="unordered"><li><p>Backlog Priority (Scrum) or Stack Rank (Agile or CMMI) </p><p>(must match the field value assigned to type=Order in the process configuration file)</p></li><li><p>Effort (Scrum), Story Points (Agile), or Size (CMMI)</p><p>(must match the field value assigned to <code>type=Effort</code> in the process configuration file)</p></li><li><p>Area path or the field value assigned to <code>type=Team</code> in the process configuration file </p></li>
-<li><p>All fields that are included in the <code>AddPanel</code> section of the process configuration file (fields must be defined within the <code>FIELDS</code> section but don&#39;t have to be included within the <code>FORM</code> section.</p></li>
-</ul>
-</td><td data-th="Update or verify the process configuration definition"><p>To contain the necessary metastate mappings: </p><ul class="unordered"><li><p>Map the start of each workflow state to <code>type=&quot;Proposed&quot;</code> </p></li><li><p>Map each intermediate workflow state you want to have show up on the Kanban board to <code>type=&quot;InProgress&quot;</code> </p></li><li><p>Map the end of each workflow state to <code>type=&quot;Complete&quot;</code> </p><p>You can have only one State mapped to  <code>type=&quot;Complete&quot;</code></p></li></ul><p>To contain an entry to define the color codes associated with the WIT. For example: </p>
-<code>&lt;WorkItemColor primary=&quot;FF009CCC&quot; secondary=&quot;FFD6ECF2&quot;<br/>name=&quot;Product Backlog Item&quot; /&gt;</code></td></tr>
-<tr><td data-th="Customization"><p>Change the workflow of a WIT in the Requirements Category</p></td><td data-th="Update or verify the WIT definition"><p>N/A</p></td><td data-th="Update or verify the process configuration definition"><p>To contain the necessary metastate mappings as described above for adding a WIT to the Requirements Category. </p></td></tr><tr><td data-th="Customization"><p>Add a WIT to the Task Category</p></td><td data-th="Update or verify the WIT definition"><p>To include the following fields:</p><ul class="unordered"><li><p>Backlog Priority (Scrum) or Stack Rank (Agile or CMMI)</p></li><li><p>Activity (Scrum or Agile) or Discipline (CMMI) </p><p>(must match the field value assigned to <code>type=Activity</code> in the process configuration file)</p></li><li><p>Remaining Work</p><p>(must match the field value assigned to <code>type=RemainingWork</code> in the process configuration file)</p></li><li><p>Area path or the field value assigned to <code>type=Team</code> in the process configuration file </p></li><li><p>(Optional) Original Work and Completed Work (Agile and CMMI only) </p></li></ul></td><td data-th="Update or verify the process configuration definition"><p>To contain the necessary metastate mappings: </p><ul class="unordered"><li><p>Map the start of each workflow state to type=&quot;Proposed&quot; </p></li><li><p>Map each intermediate workflow state that you want to have show up on the task board to <code>type=&quot;InProgress&quot;</code> </p></li><li><p>Map the end of each workflow state to <code>type=&quot;Complete</code>&quot; </p><p>You can have only one State mapped to <code>type=&quot;Complete&quot;</code></p></li></ul><p>To contain an entry to define the color codes associated with the WIT. For example: </p>
-<code>&lt;WorkItemColor primary=&quot;FFF2CB1D&quot; secondary=&quot;FFF6F5D2&quot;<br/>name=&quot;Task&quot; /&gt;</code></td></tr><tr><td data-th="Customization"><p>Change the workflow of a WIT in the Task Category</p></td><td data-th="Update or verify the WIT definition"><p>N/A</p></td><td data-th="Update or verify the process configuration definition"><p>To contain the necessary metastate mappings as described above for adding a WIT to the Task Category. </p></td></tr><tr><td data-th="Customization"><p>Add a WIT to the Bug Category (Agile and CMMI only)</p><p>Change the workflow of a WIT in the Bug Category (Agile and CMMI only)</p></td><td data-th="Update or verify the WIT definition"><p>N/A</p></td><td data-th="Update or verify the process configuration definition"><p>To contain the necessary metastate mappings: </p><ul class="unordered"><li><p>Map the start of each workflow state to  <code>type=&quot;Proposed&quot;</code></p></li><li><p>Map each intermediate workflow state you want to have show up for My Work to <code>type=&quot;InProgress&quot;</code></p></li><li><p>Map the end of each workflow state  type=&quot;Complete&quot;</p><p>You can have only one State mapped to <code>type=&quot;Complete&quot;</code></p></li></ul><p>To learn more, see <a href="../xml/support-bug-update-status-using-my-work.md" data-raw-source="[Support bug update status using My Work](../xml/support-bug-update-status-using-my-work.md)">Support bug update status using My Work</a></a>.</p></td></tr><tr><td><p>Remove a WIT from the Requirements Category or Task Category</p></td><td><p>N/A</p></td>
-<td><p>To remove any metastate mappings that are only associated with that WIT</p></td></tr><tr><td data-th="Customization"><p>Remove a WIT from a project</p></td><td data-th="Update or verify the WIT definition"><p>To remove the WIT from the categories file.</p></td>
-<td><p>To remove any metastate mappings that are only associated with the WIT that you removed and the <code>WorkItemColor</code> element that defines the color codes for the WIT you removed.</p></td></tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::   
+   **Customization**
+   :::column-end:::
+   :::column span="1":::   
+   **Update or verify the WIT definition**
+   :::column-end:::
+   :::column span="1":::   
+   **Update or verify the process configuration definition**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Add a WIT to the Requirements Category  
+   
+   (A WIT can belong to the Requirements Category or the Task Category, but not both.)
+   :::column-end:::
+   :::column span="1":::
+   To include the following fields:  
+   - Backlog Priority (Scrum) or Stack Rank (Agile or CMMI)  
+   
+     (must match the field value assigned to type=Order in the process configuration file)
+   - Effort (Scrum), Story Points (Agile), or Size (CMMI)  
+   
+     (must match the field value assigned to `type=Effort` in the process configuration file)
+   - Area path or the field value assigned to `type=Team` in the process configuration file 
+   - All fields that are included in the `AddPanel` section of the process configuration file (fields must be defined within the `FIELDS` section but don't have to be included within the `FORM` section.   
+   :::column-end:::
+   :::column span="1":::
+   To contain the necessary metastate mappings:  
+   - Map the start of each workflow state to `type="Proposed"` 
+   - Map each intermediate workflow state you want to have show up on the Kanban board to `type="InProgress"` 
+   - Map the end of each workflow state to `type="Complete"`  
+   
+     You can have only one State mapped to  `type="Complete"`  
+	 
+   To contain an entry to define the color codes associated with the WIT. For example: 
+
+   `<WorkItemColor primary="FF009CCC" secondary="FFD6ECF2"  
+   name="Product Backlog Item" />`
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Change the workflow of a WIT in the Requirements Category
+   
+   :::column-end:::
+   :::column span="1":::
+   N/A
+
+   :::column-end:::
+   :::column span="1":::
+   To contain the necessary metastate mappings as described above for adding a WIT to the Requirements Category. 
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Add a WIT to the Task Category
+
+   :::column-end:::
+   :::column span="1":::
+   To include the following fields:  
+   - Backlog Priority (Scrum) or Stack Rank (Agile or CMMI)  
+   - Activity (Scrum or Agile) or Discipline (CMMI)  
+   
+   (must match the field value assigned to `type=Activity` in the process configuration file)  
+   - Remaining Work  
+   
+   (must match the field value assigned to `type=RemainingWork` in the process configuration file)
+   - Area path or the field value assigned to `type=Team` in the process configuration file 
+   - (Optional) Original Work and Completed Work (Agile and CMMI only) 
+
+   :::column-end:::
+   :::column span="1":::
+   To contain the necessary metastate mappings:  
+   - Map the start of each workflow state to type="Proposed" 
+   - Map each intermediate workflow state that you want to have show up on the task board to `type="InProgress"` 
+   - Map the end of each workflow state to `type="Complete`"   
+   
+   You can have only one State mapped to `type="Complete"`
+   To contain an entry to define the color codes associated with the WIT. For example: 
+
+   `<WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2"  
+   name="Task" />`
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Change the workflow of a WIT in the Task Category
+
+   :::column-end:::
+   :::column span="1":::
+   N/A
+
+   :::column-end:::
+   :::column span="1":::
+   To contain the necessary metastate mappings as described above for adding a WIT to the Task Category. 
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Add a WIT to the Bug Category (Agile and CMMI only)   
+   
+   Change the workflow of a WIT in the Bug Category (Agile and CMMI only)
+
+   :::column-end:::
+   :::column span="1":::
+   N/A
+
+   :::column-end:::
+   :::column span="1":::
+   To contain the necessary metastate mappings:  
+   - Map the start of each workflow state to  `type="Proposed"`
+   - Map each intermediate workflow state you want to have show up for My Work to `type="InProgress"`
+   - Map the end of each workflow state  type="Complete"  
+   
+   You can have only one State mapped to `type="Complete"`  
+   
+   To learn more, see [Support bug update status using My Work](../xml/support-bug-update-status-using-my-work.md).
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Remove a WIT from the Requirements Category or Task Category
+
+   :::column-end:::
+   :::column span="1":::
+   N/A
+
+   :::column-end:::
+   :::column span="1":::
+   To remove any metastate mappings that are only associated with that WIT
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Remove a WIT from a project
+
+   :::column-end:::
+   :::column span="1":::
+   To remove the WIT from the categories file.
+
+   :::column-end:::
+   :::column span="1":::
+   To remove any metastate mappings that are only associated with the WIT that you removed and the `WorkItemColor` element that defines the color codes for the WIT you removed.
+
+   :::column-end:::
+:::row-end:::
+
 
 
 ### Q: Do you want to work with two or more portfolio backlogs?  

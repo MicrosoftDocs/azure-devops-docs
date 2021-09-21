@@ -48,85 +48,159 @@ You can customize an existing work item type (WIT) or create a WIT to meet your 
 The structural elements used in the previous example are described in the following table:  
 
 
-<table>
-<tr>
-<th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th>
-</tr>
-<tr>
-<td><p><strong>WITD</strong></p></td>
-<td><p>The complete WIT definition is wrapped by the tag <strong>WITD</strong>. You can use any name for the application name. The version identifies the WIT schema that may change from one release to the next. Use &quot;1.0&quot;.</p>
-<pre><code>
-&lt;witd:WITD application="Work item type editor" version="1.0" &gt;  
-   &lt;WORKITEMTYPE&gt;   
-&#160;&#160;&#160;. . .  
-&lt;/WORKITEMTYPE&gt;  
-&lt;/witd:WITD&gt;
-</code></pre>
-</td>
-</tr>
-<tr>
-<td data-th="Element"><p><strong>WORKITEMTYPE</strong></p></td><td data-th="Description"><p>Names of WITs must be unique in a specific project. At run time, you use the name specified by this element. For example, the name can appear as a menu option. In this case, a user could choose <strong>Bug</strong> on the <strong>New Work Item</strong> menu. </p>
-<pre><code>
-&lt;WORKITEMTYPE name="WorkItemTypeName" refname="WITReferenceName" &gt;  
-&#160;&#160;&#160;&lt;DESCRIPTION&gt;Text&lt;/DESCRIPTION&gt;  
-&#160;&#160;&#160;&lt;GLOBALLISTS&gt; . . .&lt;/GLOBALLISTS&gt;  
-&#160;&#160;&#160;&lt;FIELDS&gt; . . . &lt;/FIELDS&gt;  
-&#160;&#160;&#160;&lt;WORKFLOW&gt; . . . &lt;/WORKFLOW&gt;  
-&#160;&#160;&#160;&lt;FORM&gt; . . .&lt;/FORM&gt;  
-&lt;/WORKITEMTYPE&gt;
-</code></pre>
-<p>Friendly name (<em>name</em>): Appears in the drop-down menus of work item queries. The friendly name must be unique across all WIT names that are defined within a project.  Specify a name no longer than 128 Unicode characters that uses alphanumeric, underscore, and hyphen characters.  </p>
-<p>Reference name (<em>refname</em>): Specify a name no longer than 70 Unicode characters that uses alphanumeric, underscore, and hyphen characters. The reference name must contain at least one period (.), but no period can appear at the start or end of a name. Also, the reference name cannot start with a number or an underscore, and it cannot have multiple consecutive hyphens, such as (--).</p><p>Do not specify a name that overlaps with the reserved System. <em>XXX</em> and Microsoft. <em>XXX</em> namespaces. </p></td></tr>
-<tr><td data-th="Element"><p><strong>DESCRIPTION</strong></p></td>
-<td data-th="Description"><p>Specifies a string that describes the type of work item that you are defining. The description should help any user who is customizing the WIT.</p>
-<blockquote>
-<strong>Note</strong>: You can view the description only in the XML definition. You cannot view the description anywhere in the user interface, and it has no relationship to the field <strong>System.Definition</strong>.
-</blockquote>
-<pre><code>
-&lt;DESCRIPTION&gt; DescriptionOfWorkItemType&lt;/DESCRIPTION&gt;
-</code></pre>
-<p>You specify a string of text that describes the type of work item that you are defining. </p></td>&lt;/tr
-<tr>
-<td data-th="Element"><b>GLOBALLISTS</b></td>
-<td><p>Contains the global list definitions that are used by the WIT. You use global lists to share pick lists among multiple WITs defined for a project collection. <a href="define-global-lists.md">Define global lists</a> to support cross-group collaboration and ease of maintenance. </p>
-<code></pre>
-&lt;GLOBALLIST name=&quot;globalListName&quot;&gt;<br/>   &lt;LISTITEM&gt; . . . &lt;/LISTITEM&gt;<br/>&lt;/GLOBALLIST&gt;<br/></code>
-<p /></td></tr><tr><td data-th="Element"><p><strong>FIELDS</strong></p></td><td data-th="Description"><p>Defines the fields used to track data for the WIT. Within the <strong>FIELDS</strong> element, you <a href="field-definition-element-reference.md" data-raw-source="[define all the fields](field-definition-element-reference.md)">define all the fields</a> that you want to use to track data. This includes fields that you will use to run queries and generate reports. </p>
-<pre><code>
-&lt;FIELDS&gt;<br/>   &lt;FIELD&gt; . . . &lt;/FIELD&gt;<br/>&lt;/FIELDS&gt;<br/></code>
-</td></tr>
-<tr>
-<td data-th="Element"><b>FORM</b></td><td data-th="Description"><p>Specifies the  <a href="design-work-item-form.md">design of the work item form</a> by defining the fields and controls that appear on the form and in what order.</p>
-<p><b>For TFS 2015 and earlier versions</b>, the <b>FORM</b> element contains <strong>Layout</strong>, <strong>Control</strong>, <strong>Group</strong>, <strong>TAB</strong>, <strong>TabGroup</strong>, <strong>Splitter</strong>, and other elements. </p>
-<code></pre>
-&lt;FORM&gt;<br/>   &lt;Layout&gt; . . . &lt;/Layout&gt;<br/>&lt;/FORM&gt;<br/></code>
-<p><strong>For the Hosted XML and On-premises XML (TFS 2017 and later versions) process models</strong>, the <strong>FORM</strong> element contains <strong>WebLayout</strong>, <strong>Control</strong>, <strong>SystemControls</strong>, <strong>Section</strong>, <strong>Page</strong>,  and other elements. </p>
-<pre><code>&lt;WebLayout&gt; 
-      &lt;Page&gt;  
-          &lt;Section&gt;  
-              &lt;Group&gt;  
-                  &lt;Control&gt; . . . &lt;/Control&gt;
-                  &lt;Control&gt; . . . &lt;/Control&gt;
-              &lt;/Group&gt;
-          &lt;/Section&gt;
-      &lt;/Page&gt;
-. . .
-&lt;/WebLayout&gt;</code></pre>
-<blockquote><strong>Important</strong>:<br/>For the Hosted XML and On-premises XML process models (TFS 2017 and later versions), see <a href="weblayout-xml-elements.md" data-raw-source="[WebLayout and Control elements](weblayout-xml-elements.md)">WebLayout and Control elements</a>. 
-</blockquote>
-</td>
-</tr>
-<tr><td><strong>WORKFLOW</strong></td>
-<td><p>Defines the workflow elements that help track the work item status as it moves from a new state to closed or done. This element contains the set of <strong>STATE</strong> and <strong>TRANSITION</strong> elements that define the workflow. The workflow is a set of valid transitions from one state to another and the specific conditions associated with each transition.</p>
-<pre><code>
-&lt;WORKFLOW&gt;  
-      &lt;STATES&gt; . . . &lt;/STATES&gt;  
-      &lt;TRANSITIONS&gt; . . . &lt;/TRANSITIONS&gt;  
-&lt;/WORKFLOW&gt;  
-</code></pre>
-</td>
-</tr>
-</table>
+:::row:::
+   :::column span="1":::
+   **Element**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **WITD**
+
+   :::column-end:::
+   :::column span="1":::
+   The complete WIT definition is wrapped by the tag **WITD**. You can use any name for the application name. The version identifies the WIT schema that may change from one release to the next. Use "1.0".
+
+   ```
+   <witd:WITD application="Work item type editor" version="1.0" >  
+      <WORKITEMTYPE>   
+      . . .  
+   </WORKITEMTYPE>  
+   </witd:WITD>
+   ```
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **WORKITEMTYPE**
+
+   :::column-end:::
+   :::column span="1":::
+   Names of WITs must be unique in a specific project. At run time, you use the name specified by this element. For example, the name can appear as a menu option. In this case, a user could choose **Bug** on the **New Work Item** menu. 
+
+   ```
+   <WORKITEMTYPE name="WorkItemTypeName" refname="WITReferenceName" >  
+      <DESCRIPTION>Text</DESCRIPTION>  
+      <GLOBALLISTS> . . .</GLOBALLISTS>  
+      <FIELDS> . . . </FIELDS>  
+      <WORKFLOW> . . . </WORKFLOW>  
+      <FORM> . . .</FORM>  
+   </WORKITEMTYPE>
+   ```
+   Friendly name (*name*): Appears in the drop-down menus of work item queries. The friendly name must be unique across all WIT names that are defined within a project.  Specify a name no longer than 128 Unicode characters that uses alphanumeric, underscore, and hyphen characters.  
+
+   Reference name (*refname*): Specify a name no longer than 70 Unicode characters that uses alphanumeric, underscore, and hyphen characters. The reference name must contain at least one period (.), but no period can appear at the start or end of a name. Also, the reference name cannot start with a number or an underscore, and it cannot have multiple consecutive hyphens, such as (--).  
+   
+   Do not specify a name that overlaps with the reserved System. *XXX* and Microsoft. *XXX* namespaces. 
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **DESCRIPTION**
+
+   :::column-end:::
+   :::column span="1":::
+   Specifies a string that describes the type of work item that you are defining. The description should help any user who is customizing the WIT.
+
+   > [!NOTE]:
+   > You can view the description only in the XML definition. You cannot view the description anywhere in the user interface, and it has no relationship to the field **System.Definition**.
+   
+   ```
+   <DESCRIPTION> DescriptionOfWorkItemType</DESCRIPTION>
+   ```
+   You specify a string of text that describes the type of work item that you are defining. 
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **GLOBALLISTS**
+   :::column-end:::
+   :::column span="1":::
+   Contains the global list definitions that are used by the WIT. You use global lists to share pick lists among multiple WITs defined for a project collection. [Define global lists](define-global-lists.md) to support cross-group collaboration and ease of maintenance. 
+
+   ```
+   <GLOBALLIST name="globalListName">   
+   <LISTITEM> . . . </LISTITEM>  
+   </GLOBALLIST>  
+   ```
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **FIELDS**
+
+   :::column-end:::
+   :::column span="1":::
+   Defines the fields used to track data for the WIT. Within the **FIELDS** element, you [define all the fields](field-definition-element-reference.md) that you want to use to track data. This includes fields that you will use to run queries and generate reports. 
+
+   ```
+   <FIELDS>   
+      <FIELD> . . . </FIELD>  
+   </FIELDS>
+   ```
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **FORM**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the  [design of the work item form](design-work-item-form.md) by defining the fields and controls that appear on the form and in what order.
+
+   **For TFS 2015 and earlier versions**, the **FORM** element contains **Layout**, **Control**, **Group**, **TAB**, **TabGroup**, **Splitter**, and other elements. 
+
+   ```
+   <FORM>   
+   <Layout> . . . </Layout>  
+   </FORM>  
+   ```
+   **For the Hosted XML and On-premises XML (TFS 2017 and later versions) process models**, the **FORM** element contains **WebLayout**, **Control**, **SystemControls**, **Section**, **Page**,  and other elements. 
+
+   ```
+   <WebLayout> 
+         <Page>  
+             <Section>  
+                 <Group>  
+                     <Control> . . . </Control>
+                     <Control> . . . </Control>
+                 </Group>
+             </Section>
+         </Page>
+   . . .
+   </WebLayout>
+   ```
+   > [!IMPORTANT]: 
+   > For the Hosted XML and On-premises XML process models (TFS 2017 and later versions), see [WebLayout and Control elements](weblayout-xml-elements.md). 
+   
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **WORKFLOW**
+   :::column-end:::
+   :::column span="1":::
+   Defines the workflow elements that help track the work item status as it moves from a new state to closed or done. This element contains the set of **STATE** and **TRANSITION** elements that define the workflow. The workflow is a set of valid transitions from one state to another and the specific conditions associated with each transition.
+
+   ```
+   <WORKFLOW>  
+         <STATES> . . . </STATES>  
+         <TRANSITIONS> . . . </TRANSITIONS>  
+   </WORKFLOW>  
+   ```
+   :::column-end:::
+:::row-end:::
 
 
 <a name="PredefinedWITs"></a> 

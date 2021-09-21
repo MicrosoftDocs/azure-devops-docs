@@ -151,58 +151,89 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
 
  Define areas and iterations by specifying a tree path of nested nodes and children nodes. For more information, see [Customize your area and iteration paths](../../organizations/settings/set-area-paths.md).  
 
-<table>
-<tr><th>Element</th><th>Description and syntax</th></tr>
-<tbody valign="top">
-<tr>
-<td><strong>Children</strong></td>
-<td>Optional child element of <strong>Node</strong>. Contains the definitions for children areas or iterations.<br /> 
-<pre><code>&lt;Children /&gt;
-   &lt;Node&gt; . . . &lt;/Node&gt;
-&lt;/Children&gt;
-</code></pre>
-</td>
-</tr>
-<tr><td><strong>Node</strong></td>
-<td>Optional child element of <strong>Nodes</strong> and <strong>Children</strong>. Defines the structure of the tree. Use <code>ProjectLifecycle</code> for iterations and <code>ProjectModelHierarchy</code> for areas. Node names should not exceed 255 characters.<br/><pre><code>&lt;Node StructureType="ProjectLifecycle | ProjectModelHierarchy" Name="NodeName"&gt;
-   &lt;Node&gt; . . . &lt;/Node&gt;
-   &lt;Children&gt; . . . &lt;/Children&gt;
-&lt;/Node&gt;
-</code></pre>
-</td>
-</tr>
-<tr>
-<td><strong>Nodes</strong></td>
-<td>Required child element of <strong>taskXml</strong> for the Classification plug-in. Contains the area and iteration definitions.
-<pre><code>&lt;Nodes&gt;
-   &lt;Node&gt; . . . &lt;/Node&gt;
-&lt;/Nodes&gt;
-</code></pre>
-</td></tr>
-<tr>
-<td><strong>properties</strong></td>
-<td>Optional child element of <strong>taskXml</strong> for the Classification plug-in. 
-<pre><code>&lt;properties&gt;
-   &lt;property /&gt;
-&lt;/properties&gt; 
-</code></pre>
-</td></tr><tr>
-<td><strong>property</strong>
-</td>
-<td>
-Required child element of <strong>properties</strong>. Defines project-related data such as the XML mapping data for Microsoft Project.
-<pre><code>&lt;property name="property name" value="Classification | FileName" isFile="true | false" /&gt;
-</code></pre>
-<p>Where the following definitions apply for each attribute:</p>
-<ul><li><code>name</code>: Required. Defines the name of the property. The only valid names are <code>MSPROJ</code> and <code>Process Template</code>.</li>
-<li><code>value</code>: Required. For <code>MSPROJ</code>, defines the relative path to the field mapping file. For <code>Process Template</code>, contains the name of the process that&#39;s associated with the process template. This property is added to the classification file when you <a href="../../organizations/settings/work/import-process/import-process.md" data-raw-source="[import a process for Hosted XML](../../organizations/settings/work/import-process/import-process.md)">import a process for Hosted XML</a>.</li>
-<li><code>isFile</code>: Optional. Specifies whether the property is defined in a file. If the value is true, the file must exist, or process template validation fails.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Element**
+   :::column-end:::
+   :::column span="1":::
+   **Description and syntax**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Children**
+   :::column-end:::
+   :::column span="1":::
+   Optional child element of **Node**. Contains the definitions for children areas or iterations.  
+   ```
+   <Children />
+       <Node> . . . </Node>
+   </Children>
+   ```
+   :::column-end:::
+:::row-end:::
 
+:::row:::
+   :::column span="1":::
+   **Node**
+   :::column-end:::
+   :::column span="1":::
+   Optional child element of **Nodes** and **Children**. Defines the structure of the tree. Use `ProjectLifecycle` for iterations and `ProjectModelHierarchy` for areas. Node names should not exceed 255 characters.  
+   ```
+   <Node StructureType="ProjectLifecycle | ProjectModelHierarchy" Name="NodeName">
+      <Node> . . . </Node>
+      <Children> . . . </Children>
+   </Node>
+   ```
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **Nodes**
+   :::column-end:::
+   :::column span="1":::
+   Required child element of **taskXml** for the Classification plug-in. Contains the area and iteration definitions.  
+   ```
+   <Nodes>
+      <Node> . . . </Node>
+   </Nodes>
+   ```
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **properties**
+   :::column-end:::
+   :::column span="1":::
+   Optional child element of **taskXml** for the Classification plug-in.  
+   ```
+   <properties>
+       <property />
+   </properties> 
+   ```
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **property**
+   :::column-end:::
+   :::column span="1":::
+   
+   Required child element of **properties**. Defines project-related data such as the XML mapping data for Microsoft Project.
+   ```
+   <property name="property name" value="Classification | FileName" isFile="true | false" />
+   ```
+   Where the following definitions apply for each attribute:
+
+   - `name`: Required. Defines the name of the property. The only valid names are `MSPROJ` and `Process Template`.
+   - `value`: Required. For `MSPROJ`, defines the relative path to the field mapping file. For `Process Template`, contains the name of the process that&#39;s associated with the process template. This property is added to the classification file when you [import a process for Hosted XML](../../organizations/settings/work/import-process/import-process.md).
+   - `isFile`: Optional. Specifies whether the property is defined in a file. If the value is true, the file must exist, or process template validation fails.
+   
+   :::column-end:::
+:::row-end:::
 
 ## Related articles 
 
