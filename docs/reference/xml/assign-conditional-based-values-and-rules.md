@@ -44,91 +44,148 @@ The following table describes conditional rules that you can specify as child el
 -   `field`: A string that describes the field. Must contain 1 to 255 characters.   
 -   `value`: When the specified field has this value, the rules in the `WHEN` and `WHENNOT` elements are applied to the current field.    
 
-<table>
-<tr>
-<th scope="col" width="10%"><p>Element</p></th><th scope="col" width="40%"><p>Syntax</p></th><th scope="col"><p>Description</p></th></tr>
-<tbody valign="top">
-<tr><td data-th="Element"><p><strong>WHEN</strong></p></td><td data-th="Syntax">
-<pre><code>
-&lt;WHEN field="fieldReferenceName" value="value"&gt;
-    &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
-    &lt;ALLOWEXISTINGVALUE&gt; . . . &lt;ALLOWEXISTINGVALUE&gt;
-    &lt;CANNOTLOSEVALUE&gt; . . . &lt;/CANNOTLOSEVALUE&gt;
-    &lt;COPY&gt; . . . &lt;/COPY&gt;
-    &lt;DEFAULT&gt; . . . &lt;/DEFAULT&gt;
-    &lt;EMPTY&gt; . . . &lt;/EMPTY&gt;
-    &lt;FROZEN&gt; . . . &lt;/FROZEN&gt;
-    &lt;MATCH&gt; . . . &lt;/MATCH&gt;
-    &lt;NOTSAMEAS&gt; . . . &lt;/NOTSAMEAS&gt;
-    &lt;PROHIBITEDVALUES&gt; . . . &lt;/PROHIBITEDVALUES&gt;
-    &lt;READONLY&gt; . . . &lt;/READONLY&gt;
-    &lt;REQUIRED&gt; . . . &lt;/REQUIRED&gt;
-    &lt;SERVERDEFAULT&gt; . . . &lt;/SERVERDEFAULT&gt;        
-    &lt;SUGGESTEDVALUES&gt; . . . &lt;/SUGGESTEDVALUES&gt;
-    &lt;VALIDUSER&gt; . . . &lt;/VALIDUSER&gt;
-&lt;/WHEN&gt;
-</code></pre>
-</td><td data-th="Description"><p>Specifies one or more rules to apply to the current field when another field has a specific value. The parent element defines the current field.</p><p>When the specified field has the specified value, the rules in this element are applied to the current field.</p></td></tr><tr><td data-th="Element"><p><strong>WHENNOT</strong></p></td><td data-th="Syntax">
-<pre><code>
-&lt;WHENNOT field=&quot;fieldReferenceName&quot; value=&quot;value&quot;&gt;
-    &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
-    &lt;ALLOWEXISTINGVALUE&gt; . . . &lt;ALLOWEXISTINGVALUE&gt;
-    &lt;CANNOTLOSEVALUE&gt; . . . &lt;/CANNOTLOSEVALUE&gt;
-    &lt;COPY&gt; . . . &lt;/COPY&gt;
-    &lt;DEFAULT&gt; . . . &lt;/DEFAULT&gt;
-    &lt;EMPTY&gt; . . . &lt;/EMPTY&gt;
-    &lt;FROZEN&gt; . . . &lt;/FROZEN&gt;
-    &lt;MATCH&gt; . . . &lt;/MATCH&gt;
-    &lt;NOTSAMEAS&gt; . . . &lt;/NOTSAMEAS&gt;
-    &lt;PROHIBITEDVALUES&gt; . . . &lt;/PROHIBITEDVALUES&gt;
-    &lt;READONLY&gt; . . . &lt;/READONLY&gt;
-    &lt;REQUIRED&gt; . . . &lt;/REQUIRED&gt;
-    &lt;SERVERDEFAULT&gt; . . . &lt;/SERVERDEFAULT&gt;<br/>    &lt;SUGGESTEDVALUES&gt; . . . &lt;/SUGGESTEDVALUES&gt;
-    &lt;VALIDUSER&gt; . . . &lt;/VALIDUSER&gt;
-&lt;/WHENNOT&gt;
+:::row:::
+   :::column span="1":::
+   **Element**
+   :::column-end:::
+   :::column span="1":::
+   **Syntax**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
 
-</code></pre>
-</td><td data-th="Description"><p>Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field changes. The parent element defines the current field.</p><p>When the specified field does not contain the specified value, the rules in this element are applied to the current field.</p></td></tr><tr><td data-th="Element"><p><strong>WHENCHANGED</strong></p></td><td data-th="Syntax">
-<pre><code>
-&lt;WHENCHANGED field="fieldReferenceName" &gt;
-    &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
-    &lt;ALLOWEXISTINGVALUE&gt; . . . &lt;ALLOWEXISTINGVALUE&gt;
-    &lt;CANNOTLOSEVALUE&gt; . . . &lt;/CANNOTLOSEVALUE&gt;
-    &lt;COPY&gt; . . . &lt;/COPY&gt;
-    &lt;DEFAULT&gt; . . . &lt;/DEFAULT&gt;
-    &lt;EMPTY&gt; . . . &lt;/EMPTY&gt;
-    &lt;FROZEN&gt; . . . &lt;/FROZEN&gt;
-    &lt;MATCH&gt; . . . &lt;/MATCH&gt;
-    &lt;NOTSAMEAS&gt; . . . &lt;/NOTSAMEAS&gt;
-    &lt;PROHIBITEDVALUES&gt; . . . &lt;/PROHIBITEDVALUES&gt;
-    &lt;READONLY&gt; . . . &lt;/READONLY&gt;
-    &lt;REQUIRED&gt; . . . &lt;/REQUIRED&gt;
-    &lt;SERVERDEFAULT&gt; . . . &lt;/SERVERDEFAULT&gt;        
-    &lt;SUGGESTEDVALUES&gt; . . . &lt;/SUGGESTEDVALUES&gt;
-    &lt;VALIDUSER&gt; . . . &lt;/VALIDUSER&gt;      
-&lt;/WHENCHANGED&gt;
-</code></pre>
-</td><td data-th="Description"><p>Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field is changed in a revision to a work item. The parent element defines the current field.</p></td></tr><tr><td data-th="Element"><p><strong>WHENNOTCHANGED</strong></p></td><td data-th="Syntax">
-<pre><code>
-&lt;WHENNOTCHANGED field=&quot;fieldReferenceName&quot;&gt;
-    &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
-    &lt;ALLOWEXISTINGVALUE&gt; . . . &lt;ALLOWEXISTINGVALUE&gt;
-    &lt;CANNOTLOSEVALUE&gt; . . . &lt;/CANNOTLOSEVALUE&gt;
-    &lt;COPY&gt; . . . &lt;/COPY&gt;
-    &lt;DEFAULT&gt; . . . &lt;/DEFAULT&gt;
-    &lt;EMPTY&gt; . . . &lt;/EMPTY&gt;
-    &lt;FROZEN&gt; . . . &lt;/FROZEN&gt;
-    &lt;MATCH&gt; . . . &lt;/MATCH&gt;
-    &lt;NOTSAMEAS&gt; . . . &lt;/NOTSAMEAS&gt;
-    &lt;PROHIBITEDVALUES&gt; . . . &lt;/PROHIBITEDVALUES&gt;
-    &lt;READONLY&gt; . . . &lt;/READONLY&gt;
-    &lt;REQUIRED&gt; . . . &lt;/REQUIRED&gt;
-    &lt;SERVERDEFAULT&gt; . . . &lt;/SERVERDEFAULT&gt;<br/>    &lt;SUGGESTEDVALUES&gt; . . . &lt;/SUGGESTEDVALUES&gt;
-    &lt;VALIDUSER&gt; . . . &lt;/VALIDUSER&gt;
-&lt;/WHENNOTCHANGED&gt;
+:::row:::
+   :::column span="1":::
+   **WHEN**
 
-</code></pre>
-</td><td data-th="Description"><p>Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field is not changed in a revision to a work item. The parent element defines the current field.</p></td></tr></table>
+   :::column-end:::
+   :::column span="1":::
+   
+   ```
+   <WHEN field="fieldReferenceName" value="value">
+       <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
+       <ALLOWEXISTINGVALUE> . . . <ALLOWEXISTINGVALUE>
+       <CANNOTLOSEVALUE> . . . </CANNOTLOSEVALUE>
+       <COPY> . . . </COPY>
+       <DEFAULT> . . . </DEFAULT>
+       <EMPTY> . . . </EMPTY>
+       <FROZEN> . . . </FROZEN>
+       <MATCH> . . . </MATCH>
+       <NOTSAMEAS> . . . </NOTSAMEAS>
+       <PROHIBITEDVALUES> . . . </PROHIBITEDVALUES>
+       <READONLY> . . . </READONLY>
+       <REQUIRED> . . . </REQUIRED>
+       <SERVERDEFAULT> . . . </SERVERDEFAULT>
+       <SUGGESTEDVALUES> . . . </SUGGESTEDVALUES>
+       <VALIDUSER> . . . </VALIDUSER>
+   </WHEN>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Specifies one or more rules to apply to the current field when another field has a specific value. The parent element defines the current field.  
+   
+   When the specified field has the specified value, the rules in this element are applied to the current field.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **WHENNOT**
+
+   :::column-end:::
+   :::column span="1":::
+   
+   ```
+   <WHENNOT field="fieldReferenceName" value="value">
+       <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
+       <ALLOWEXISTINGVALUE> . . . <ALLOWEXISTINGVALUE>
+       <CANNOTLOSEVALUE> . . . </CANNOTLOSEVALUE>
+       <COPY> . . . </COPY>
+       <DEFAULT> . . . </DEFAULT>
+       <EMPTY> . . . </EMPTY>
+       <FROZEN> . . . </FROZEN>
+       <MATCH> . . . </MATCH>
+       <NOTSAMEAS> . . . </NOTSAMEAS>
+       <PROHIBITEDVALUES> . . . </PROHIBITEDVALUES>
+       <READONLY> . . . </READONLY>
+       <REQUIRED> . . . </REQUIRED>
+       <SERVERDEFAULT> . . . </SERVERDEFAULT><br/><SUGGESTEDVALUES> . . . </SUGGESTEDVALUES>
+       <VALIDUSER> . . . </VALIDUSER>
+   </WHENNOT>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field changes. The parent element defines the current field.  
+   
+   When the specified field does not contain the specified value, the rules in this element are applied to the current field.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **WHENCHANGED**
+
+   :::column-end:::
+   :::column span="1":::
+   
+   ```
+   <WHENCHANGED field="fieldReferenceName" >
+       <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
+       <ALLOWEXISTINGVALUE> . . . <ALLOWEXISTINGVALUE>
+       <CANNOTLOSEVALUE> . . . </CANNOTLOSEVALUE>
+       <COPY> . . . </COPY>
+       <DEFAULT> . . . </DEFAULT>
+       <EMPTY> . . . </EMPTY>
+       <FROZEN> . . . </FROZEN>
+       <MATCH> . . . </MATCH>
+       <NOTSAMEAS> . . . </NOTSAMEAS>
+       <PROHIBITEDVALUES> . . . </PROHIBITEDVALUES>
+       <READONLY> . . . </READONLY>
+       <REQUIRED> . . . </REQUIRED>
+       <SERVERDEFAULT> . . . </SERVERDEFAULT>
+       <SUGGESTEDVALUES> . . . </SUGGESTEDVALUES>
+       <VALIDUSER> . . . </VALIDUSER>  
+   </WHENCHANGED>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field is changed in a revision to a work item. The parent element defines the current field.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **WHENNOTCHANGED**
+
+   :::column-end:::
+   :::column span="1":::
+   
+   ```
+   <WHENNOTCHANGED field="fieldReferenceName">
+       <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
+       <ALLOWEXISTINGVALUE> . . . <ALLOWEXISTINGVALUE>
+       <CANNOTLOSEVALUE> . . . </CANNOTLOSEVALUE>
+       <COPY> . . . </COPY>
+       <DEFAULT> . . . </DEFAULT>
+       <EMPTY> . . . </EMPTY>
+       <FROZEN> . . . </FROZEN>
+       <MATCH> . . . </MATCH>
+       <NOTSAMEAS> . . . </NOTSAMEAS>
+       <PROHIBITEDVALUES> . . . </PROHIBITEDVALUES>
+       <READONLY> . . . </READONLY>
+       <REQUIRED> . . . </REQUIRED>
+       <SERVERDEFAULT> . . . </SERVERDEFAULT>  
+	   <SUGGESTEDVALUES> . . . </SUGGESTEDVALUES>
+       <VALIDUSER> . . . </VALIDUSER>
+   </WHENNOTCHANGED>
+   ```
+   :::column-end:::
+   :::column span="1":::
+   Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field is not changed in a revision to a work item. The parent element defines the current field.
+   :::column-end:::
+:::row-end:::
 
 
  The following table describes how each optional, conditional-based rule is applied to the parent field when the conditional clause that you specify by using a **WHEN**, **WHENNOT**, **WHENCHANGED**, or **WHENNOTCHANGED** element is true. For more information, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).  
