@@ -25,7 +25,7 @@ Share progress and status with your team using configurable team dashboards. Das
 ::: moniker-end
 
  
-When a project is first created, a default team and default team dashboard is created labeled *Overview*. You can customize this dashboard by adding widgets. Each widget provides access to one or more features or functions. To learn more about each widget, see [Widget catalog](widget-catalog.md).  ::: moniker-end
+When a project is first created, a default team and default team dashboard is created labeled *Overview*. You can customize this dashboard by adding widgets. Each widget provides access to one or more features or functions. To learn more about each widget, see [Widget catalog](widget-catalog.md). 
 
 ::: moniker range="tfs-2015"
 
