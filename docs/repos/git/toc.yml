@@ -133,6 +133,8 @@
     href: pull-request-templates.md
   - name: Extend pull request workflows with pull request status
     href: pull-request-status.md
+  - name: Multiple merge bases warning
+    href: multiple-merge-bases.md
 - name: History
   items:
   - name: Review history
