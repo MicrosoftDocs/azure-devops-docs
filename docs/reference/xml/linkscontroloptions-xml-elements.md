@@ -47,56 +47,94 @@ The updated **LinksControlOptions** element introduces several new elements and 
 
 The following table summarizes the differences between the **LinksControlOptions** elements used within the **WebLayout** section and those that are used within the **Layout** section.  The **WebLayout** section supports display of work item forms through the web portal, while the **Layout** section supports display of work item forms from the web portal for TFS 2015 and clients such as Visual Studio. 
 
-<table width="100%"> 
-<tbody valign="top">
-<tr>
-<th width="20%">Control option</th>
-<th width="30%">Web portal elements (WebLayout)</th>
-<th width="30%">Client elements (Layout)</th>
-</tr>
-<tr>
-<td>Restrict link relationships to other objects (non work items) </td>
-<td>Specify to include an external link type using the <strong>ExternalLinkFilter</strong> element within the <strong>LinkFilters</strong> container element<br/>
-When <code>ListViewOptions GroupLinks=&quot;true&quot;</code>, links are grouped within the web form by type in the order they are listed within the <strong>LinkFilters</strong> container element</td>
-<td>Specify to include or exclude external link types using <strong>ExternalLinkFilters</strong></td>
-</tr>
+:::row:::
+   :::column span="1":::
+   **Control option**
+   :::column-end:::
+   :::column span="1":::
+   **Web portal elements (WebLayout)**
+   :::column-end:::
+   :::column span="1":::
+   **Client elements (Layout)**
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td>Restrict link relationships to other work items </td>
-<td>Specify to include a work link type using the <strong>WorkItemLinkFilter</strong> element within the <strong>LinkFilters</strong> container element, specifying a link type reference name<br/>
-When <code>ListViewOptions GroupLinks=&quot;true&quot;</code>, links are grouped within the web form by type in the order they are listed within the <strong>LinkFilters</strong> container element</td>
-<td>Specify to include or exclude work link types using <strong>WorkItemLinkFilters</strong>, specify a link type reference category </td>
-</tr>
+:::row:::
+   :::column span="1":::
+   Restrict link relationships to other objects (non work items) 
+   :::column-end:::
+   :::column span="1":::
+   Specify to include an external link type using the **ExternalLinkFilter** element within the **LinkFilters** container element  
+   When `ListViewOptions GroupLinks="true"`, links are grouped within the web form by type in the order they are listed within the **LinkFilters** container element
+   :::column-end:::
+   :::column span="1":::
+   Specify to include or exclude external link types using **ExternalLinkFilters**
+   :::column-end:::
+:::row-end:::
 
+:::row:::
+   :::column span="1":::
+   Restrict link relationships to other work items 
+   :::column-end:::
+   :::column span="1":::
+   Specify to include a work link type using the **WorkItemLinkFilter** element within the **LinkFilters** container element, specifying a link type reference name  
+   When `ListViewOptions GroupLinks="true"`, links are grouped within the web form by type in the order they are listed within the **LinkFilters** container element
+   :::column-end:::
+   :::column span="1":::
+   Specify to include or exclude work link types using **WorkItemLinkFilters**, specify a link type reference category 
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td>Restrict links allowed based on work item type </td>
-<td>Specify to include a work item type using the <strong>Filter</strong> element within the <strong>WorkItemTypeFilters</strong> container element</td>
-<td>Specify to include or exclude work item types using <strong>WorkItemTypeFilters</strong></td>
-</tr>
+:::row:::
+   :::column span="1":::
+   Restrict links allowed based on work item type 
+   :::column-end:::
+   :::column span="1":::
+   Specify to include a work item type using the **Filter** element within the **WorkItemTypeFilters** container element
+   :::column-end:::
+   :::column span="1":::
+   Specify to include or exclude work item types using **WorkItemTypeFilters**
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td>Link order and grouping</td>
-<td>When <code>ListViewOptions GroupLinks=&quot;true&quot;</code>, linked items are grouped by their link type and work items are arranged by work item type, owner, and title   (a user can change this order by clicking a column field in the control&#39;s grid display)<br/></td>
-<td>All links grouped by type and listed alphabetically or ordered by column field </td>
-</tr>
+:::row:::
+   :::column span="1":::
+   Link order and grouping
+   :::column-end:::
+   :::column span="1":::
+   When `ListViewOptions GroupLinks="true"`, linked items are grouped by their link type and work items are arranged by work item type, owner, and title   (a user can change this order by clicking a column field in the control's grid display)  
+   :::column-end:::
+   :::column span="1":::
+   All links grouped by type and listed alphabetically or ordered by column field 
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td>Composite display of link information</td>
-<td>For each listed item, the links control displays the Work Item Type, ID, Title, and Assigned To as a composite field called <em>Link</em> as shown:<br/>
-<img src="media/linkscontrol-composite-field.png" alt="Composite field" /><br/><p>When the links control width is less than 460 pixels, the field also displays the item&#39;s State and the time of its Latest Update (the creation or latest modification of the item). See <a href="#dynamic-sizing" data-raw-source="[Responsive design and dynamic resizing](#dynamic-sizing)">Responsive design and dynamic resizing</a> for details.
-</td>
-<td>Not supported</td>
-</tr>
+:::row:::
+   :::column span="1":::
+   Composite display of link information
+   :::column-end:::
+   :::column span="1":::
+   For each listed item, the links control displays the Work Item Type, ID, Title, and Assigned To as a composite field called *Link* as shown:  
+   ![Composite field](media/linkscontrol-composite-field.png)    
+   
+   When the links control width is less than 460 pixels, the field also displays the item's State and the time of its Latest Update (the creation or latest modification of the item). See [Responsive design and dynamic resizing](#dynamic-sizing) for details.
+   :::column-end:::
+   :::column span="1":::
+   Not supported
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td>Field and attribute display </td>
-<td>Specify the fields to display within the link control&#39;s grid using a <strong>Column</strong> element within the <strong>Columns</strong> container element </td>
-<td>Specify the default fields to display using <strong>LinkColumn</strong> elements, users can change the column options through the client form </td>
-</tr>
-
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   Field and attribute display 
+   :::column-end:::
+   :::column span="1":::
+   Specify the fields to display within the link control's grid using a **Column** element within the **Columns** container element 
+   :::column-end:::
+   :::column span="1":::
+   Specify the default fields to display using **LinkColumn** elements, users can change the column options through the client form 
+   :::column-end:::
+:::row-end:::
 
 ### Add links through a scoped links control 
 
@@ -251,159 +289,233 @@ The following table describes the **LinksControlOptions** element and its child 
 > </LinksControlOptions>
 > ```
 
-<table width="100%" >
-<thead>
-<tr>
-<th width="22%"><p>Element</p></th>
-<th width="78%"><p>Description</p></th>
-</tr>
-</thead>
-<tbody valign="top" >
-<tr>
-<td><p> <strong>Column</strong> </p></td>
-<td><p>Required <strong>Columns</strong> element used to specify the work item and link-related fields to display within the links control. </p>
-<p>The order in which the <strong>Column</strong> elements are listed defines the order in which the column fields display in the control&#39;s grid.</p>
-<pre><code>&lt;Column Name=&quot;FieldName&quot; /&gt;</code></pre>
-<p>To determine the reference name for a field, see <a href="../../boards/work-items/guidance/work-item-field.md" data-raw-source="[Work item field index](../../boards/work-items/guidance/work-item-field.md)">Work item field index</a>.</p>
-<p>Link-related fields include: <code>System.ExternalLinkCount, System.HyperLinkCount, System.Links.Comment, System.Links.LinkType,</code> and <code>System.Related.LinkCount</code>.</p>
-</td>
-</tr>
-<tr>
-<td><p> <strong>Columns</strong> </p></td>
-<td><p>Optional child element of the <strong>LinksControlOptions</strong> element.</p>
-<p>Container element for one or more <strong>Column</strong> elements you use to specify the fields that display in the control&#39;s grid. </p>
-<pre><code>&lt;Columns &gt;
-   &lt;Column Name=&quot;FieldName&quot; /&gt; 
-&lt;/Columns &gt;</code></pre>
-</td>
-</tr>
-<tr>
-<td><p> <strong>ExternalLinkFilter</strong> </p></td>
-<td><p>Optional <strong>LinkFilters</strong> element used to specify an external link type. With an external link type, users can create a link relationship to objects that are not work items, such as changesets, hyperlinks, and files under version control. </p>
-<pre><code>&lt;ExternalLinkFilter Type=&quot;ExternalLinkName&quot; /&gt;</code></pre>
-<p>Examples of external link types you can specify include: <code>Fixed in Changeset</code>, <code>Fixed in Commit</code>, <code>Source Code File</code>, <code>Pull Request</code>, <code>Wiki page</code>, and <code>Hyperlink</code>. See <a href="../../boards/queries/link-type-reference.md#external-link-types" data-raw-source="[Link type reference](../../boards/queries/link-type-reference.md#external-link-types)">Link type reference</a> for a complete list. </p>
-<blockquote><b>Important: </b>For import purposes, use the name <code>Workitem Hyperlink</code> in place of <code>Hyperlink</code> and <code>Source Code File</code> in place of <code>Versioned item</code>. 
-</blockquote>
+:::row:::
+   :::column span="1":::
+   **Element**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
 
-<p>Specify <code>System.Links.IncludeAll</code> to include all external link types.</p>
-<blockquote><b>Note: </b>When you specify  <code>System.Links.IncludeAll</code>, the system displays all links in alphabetical order by external link type. 
-</blockquote>
+:::row:::
+   :::column span="1":::
+    **Column** 
 
-</td>
-</tr>
+   :::column-end:::
+   :::column span="1":::
+   Required **Columns** element used to specify the work item and link-related fields to display within the links control. 
 
-<tr>
-<td><p> <strong>Filter</strong> </p></td>
-<td><p>Required child element of the <strong>WorkItemTypeFilters</strong> container element. Specifies the name of a work item type to include as an allowed type that users can link to from the links control. </p>
-<pre><code>&lt;Filter WorkItemType=&quot;WorkItemTypeName&quot;  /&gt;</code></pre>
-<p>You can specify any work item type defined within the project or project collection, including custom work item types. Typically, the work item types you specify depend on the process used to create your project. See <a href="../../boards/work-items/guidance/choose-process.md" data-raw-source="[Choose a process](../../boards/work-items/guidance/choose-process.md)">Choose a process</a> for details.</p><br/><p>The following lists the default work item types available based on the default system processes:</p>
-<p>Agile</p>
-<ul>
-<li>Bug</li>
-<li>Epic</li>
-<li>Feature</li>
-<li>Issue</li>
-<li>Task</li>
-<li>Test Case</li>
-<li>User Story</li>
-</ul>
-<p>Scrum</p>
-<ul>
-<li>Bug</li>
-<li>Epic</li>
-<li>Feature</li>
-<li>Impediment</li>
-<li>Product Backlog Item</li>
-<li>Task</li>
-<li>Test Case</li>
-</ul>
-<p>CMMI</p>
-<ul>
-<li>Bug</li>
-<li>Change Request</li>
-<li>Epic</li>
-<li>Feature</li>
-<li>Issue</li>
-<li>Review</li>
-<li>Requirement</li>
-<li>Risk</li>
-<li>Task</li>
-<li>Test Case</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><a id="links-control-options">  </a>
-<p><strong>LinksControlOptions</strong> </p></td>
-<td><p>Required container child element of <strong>Control</strong> element when <strong>type=&quot;LinksControl&quot;</strong> and when used within the <strong>WebLayout</strong> element.</p>
-<p>Use to scope the link types and work item types that users can add to a work item and the columns to appear for the list of link relationships in the work item form.</p>
-<pre><code>&lt;LinksControlOptions ViewMode="Dynamic | Grid | List" 
-ZeroDataExperience="Development" ShowCallToAction="true | false"  
-WorkItemTypeFiltersScope="project" &gt;
-  . . . 
-&lt;/LinksControlOptions&gt;</code></pre>
-<p>All attributes are optional. Supported attributes include: </p>
-<ul>
-<li><strong>ViewMode</strong>: Can be set to <code>Dynamic</code> (changing with size), <code>Grid</code>, or <code>List</code>.  Default is <code>Dynamic</code>. These view modes correspond to those described earlier in this topic in <a href="#dynamic-sizing" data-raw-source="[Responsive design and dynamic resizing](#dynamic-sizing)">Responsive design and dynamic resizing</a>.</li>
-<li><strong>ZeroDataExperience</strong>: Currently, only option is <code>Development</code>. This option causes the call-to-action links to appear for development, such as <em>Create branch, Create a pull request,</em> and more. To learn more, see <a href="../../boards/backlogs/connect-work-items-to-git-dev-ops.md" data-raw-source="[Drive Git development](../../boards/backlogs/connect-work-items-to-git-dev-ops.md)">Drive Git development</a>.</li>
-<li><strong>ShowCallToAction</strong>: Can be set to <code>true</code>, normally is <code>false</code>. Determines whether call-to-actions appear below linked artifacts. 
-<blockquote><b>Note: </b>Currently, the only supported call-to-action experience occurs when <code>ZeroDataExperience=&quot;Development&quot;</code>.
-</blockquote></li>
-<li><strong>WorkItemTypeFiltersScope</strong>: Can be set to <code>project</code> or <code>all</code>. When set to <code>project</code>, users can only link to work items within the current project scope. When set to <code>all</code>, users can link to work items within all projects defined in the collection. </li>
-</ul>
-</td>
-</tr>
+   The order in which the **Column** elements are listed defines the order in which the column fields display in the control's grid.
 
-<tr>
-<td><p><strong>LinkFilters</strong> </p></td>
-<td><p>Optional <strong>LinksControlOptions</strong>  child element.</p>
-<p>Use this container element to specify which link types are used to scope the control. List one or more <strong>ExternalLinkFilter</strong> or <strong>WorkItemLinkFilter</strong> elements to specify the link types to use to filter the links control.</p>
-<pre><code>&lt;LinkFilters&gt;     
-    &lt;ExternalLinkFilter Type="ExternalLinkName" /&gt;
-    &lt;WorkItemLinkFilter Type="WorkLinkTypeName" /&gt;
-&lt;/LinkFilters&gt;</code></pre>
-</td>
-</tr>
+   ```
+   <Column Name="FieldName" />
+   ```
+   To determine the reference name for a field, see [Work item field index](../../boards/work-items/guidance/work-item-field.md).
 
-<tr>
-<td><p> <strong>ListViewOptions</strong> </p></td>
-<td><p>Optional <strong>LinksControlOptions</strong> child element.</p>
-<p>Specifies whether or not to group links according to their type. If <code>GroupLinks=&quot;false&quot;</code> (default), links are not grouped by their link type.</p>
-<pre><code>&lt;ListViewOptions GroupLinks="true | false" /&gt;</code></pre>
-</td>
-</tr>
+   Link-related fields include: `System.ExternalLinkCount, System.HyperLinkCount, System.Links.Comment, System.Links.LinkType,` and `System.Related.LinkCount`.
 
-<tr>
-<td><p><strong>WorkItemLinkFilter</strong> </p></td>
-<td><p>Optional <strong>LinkFilters</strong> child element.</p>
-<p>Specifies a work-specific link type which is included within the links control. Users can create relationships to other work items only for those link types included in the links control.</p>
-<pre><code>&lt;WorkItemLinkFilter Type=&quot;WorkLinkTypeName&quot; /&gt;
-</code></pre>
-<p>Examples of work item link types you can specify include: <code>System.LinkTypes.Dependency</code>, <code>System.LinkTypes.Hierarchy-Forward</code>, <code>System.LinkTypes.Hierarchy-Reverse</code>, and <code>System.LinkTypes.Related</code>. </p>
-<p>For a complete list, see <a href="../../boards/queries/link-type-reference.md#work-link-types" data-raw-source="[Link type reference](../../boards/queries/link-type-reference.md#work-link-types)">Link type reference</a>. In addition, you can specify the reference name for a custom link type. </p>
-<p>Specify <code>System.Links.IncludeAll</code> to include all work link types.</p>
-<blockquote>When you specify  <code>System.Links.IncludeAll</code>, the system displays all links in alphabetical order by link type. 
-</blockquote>
-</td>
-</tr>
+   :::column-end:::
+:::row-end:::
 
+:::row:::
+   :::column span="1":::
+    **Columns** 
 
-<tr>
-<td><p> <strong>WorkItemTypeFilters</strong> </p></td>
-<td><p>Optional container child element of the <strong>LinkFilters</strong> element. Use this element to specify the set of work item types to include in the links control. This element restricts the work item types that users can create links to and those that will appear in the linked list. Specification of this element depends on specifying at least one <strong>WorkItemLinkFilter</strong> element.<br/></p>
-<pre><code>&lt;WorkItemTypeFilters &gt;
-   &lt;Filter WorkItemType=&quot;WorkItemTypeName&quot; /&gt;
-&lt;/WorkItemTypeFilters  &gt;
-</code>
-</pre>
+   :::column-end:::
+   :::column span="1":::
+   Optional child element of the **LinksControlOptions** element.
 
-</td>
-</tr>
+   Container element for one or more **Column** elements you use to specify the fields that display in the control's grid. 
 
-</tbody>
-</table>
+   ```
+   <Columns >
+      <Column Name="FieldName" /> 
+   </Columns >
+   ```
+   :::column-end:::
+:::row-end:::
 
+:::row:::
+   :::column span="1":::
+    **ExternalLinkFilter** 
 
+   :::column-end:::
+   :::column span="1":::
+   Optional **LinkFilters** element used to specify an external link type. With an external link type, users can create a link relationship to objects that are not work items, such as changesets, hyperlinks, and files under version control. 
+
+   ```
+   <ExternalLinkFilter Type="ExternalLinkName" />
+   ```
+   Examples of external link types you can specify include: `Fixed in Changeset`, `Fixed in Commit`, `Source Code File`, `Pull Request`, `Wiki page`, and `Hyperlink`. See [Link type reference](../../boards/queries/link-type-reference.md#external-link-types) for a complete list. 
+
+   > [!IMPORTANT]  
+   > For import purposes, use the name `Workitem Hyperlink` in place of `Hyperlink` and `Source Code File` in place of `Versioned item`. 
+   
+   Specify `System.Links.IncludeAll` to include all external link types.
+
+   > [!NOTE]  
+   > When you specify  `System.Links.IncludeAll`, the system displays all links in alphabetical order by external link type. 
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+    **Filter** 
+
+   :::column-end:::
+   :::column span="1":::
+   Required child element of the **WorkItemTypeFilters** container element. Specifies the name of a work item type to include as an allowed type that users can link to from the links control. 
+
+   ```
+   <Filter WorkItemType="WorkItemTypeName"  />
+   ```
+   You can specify any work item type defined within the project or project collection, including custom work item types. Typically, the work item types you specify depend on the process used to create your project. See [Choose a process](../../boards/work-items/guidance/choose-process.md) for details.  
+   
+   The following lists the default work item types available based on the default system processes:
+
+   Agile
+   
+   - Bug
+   - Epic
+   - Feature
+   - Issue
+   - Task
+   - Test Case
+   - User Story
+   
+   Scrum
+   
+   - Bug
+   - Epic
+   - Feature
+   - Impediment
+   - Product Backlog Item
+   - Task
+   - Test Case
+   
+   CMMI
+   
+   - Bug
+   - Change Request
+   - Epic
+   - Feature
+   - Issue
+   - Review
+   - Requirement
+   - Risk
+   - Task
+   - Test Case
+   
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **LinksControlOptions** 
+
+   :::column-end:::
+   :::column span="1":::
+   Required container child element of **Control** element when **type="LinksControl"** and when used within the **WebLayout** element.
+
+   Use to scope the link types and work item types that users can add to a work item and the columns to appear for the list of link relationships in the work item form.
+
+   ```
+   <LinksControlOptions ViewMode="Dynamic | Grid | List" 
+   ZeroDataExperience="Development" ShowCallToAction="true | false"  
+   WorkItemTypeFiltersScope="project" >
+     . . . 
+   </LinksControlOptions>
+   ```
+   
+   All attributes are optional. Supported attributes include: 
+   
+   - **ViewMode**: Can be set to `Dynamic` (changing with size), `Grid`, or `List`.  Default is `Dynamic`. These view modes correspond to those described earlier in this topic in [Responsive design and dynamic resizing](#dynamic-sizing).
+   - **ZeroDataExperience**: Currently, only option is `Development`. This option causes the call-to-action links to appear for development, such as *Create branch, Create a pull request,* and more. To learn more, see [Drive Git development](../../boards/backlogs/connect-work-items-to-git-dev-ops.md).
+   - **ShowCallToAction**: Can be set to `true`, normally is `false`. Determines whether call-to-actions appear below linked artifacts.   
+   
+   > [!NOTE]  
+   > Currently, the only supported call-to-action experience occurs when `ZeroDataExperience="Development"`.
+   
+   - **WorkItemTypeFiltersScope**: Can be set to `project` or `all`. When set to `project`, users can only link to work items within the current project scope. When set to `all`, users can link to work items within all projects defined in the collection.    
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **LinkFilters** 
+
+   :::column-end:::
+   :::column span="1":::
+   Optional **LinksControlOptions**  child element.
+
+   Use this container element to specify which link types are used to scope the control. List one or more **ExternalLinkFilter** or **WorkItemLinkFilter** elements to specify the link types to use to filter the links control.
+
+   ```
+   <LinkFilters> 
+       <ExternalLinkFilter Type="ExternalLinkName" />
+       <WorkItemLinkFilter Type="WorkLinkTypeName" />
+   </LinkFilters>
+   ```
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+    **ListViewOptions** 
+
+   :::column-end:::
+   :::column span="1":::
+   Optional **LinksControlOptions** child element.
+
+   Specifies whether or not to group links according to their type. If `GroupLinks="false"` (default), links are not grouped by their link type.
+
+   ```
+   <ListViewOptions GroupLinks="true | false" />
+   ```
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **WorkItemLinkFilter** 
+
+   :::column-end:::
+   :::column span="1":::
+   Optional **LinkFilters** child element.
+
+   Specifies a work-specific link type which is included within the links control. Users can create relationships to other work items only for those link types included in the links control.
+
+   ```
+   <WorkItemLinkFilter Type="WorkLinkTypeName" />
+   ```
+   Examples of work item link types you can specify include: `System.LinkTypes.Dependency`, `System.LinkTypes.Hierarchy-Forward`, `System.LinkTypes.Hierarchy-Reverse`, and `System.LinkTypes.Related`. 
+
+   For a complete list, see [Link type reference](../../boards/queries/link-type-reference.md#work-link-types). In addition, you can specify the reference name for a custom link type. 
+
+   Specify `System.Links.IncludeAll` to include all work link types.
+
+   > When you specify  `System.Links.IncludeAll`, the system displays all links in alphabetical order by link type. 
+   
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+    **WorkItemTypeFilters** 
+
+   :::column-end:::
+   :::column span="1":::
+   Optional container child element of the **LinkFilters** element. Use this element to specify the set of work item types to include in the links control. This element restricts the work item types that users can create links to and those that will appear in the linked list. Specification of this element depends on specifying at least one **WorkItemLinkFilter** element.  
+
+   ```
+   <WorkItemTypeFilters >
+      <Filter WorkItemType="WorkItemTypeName" />
+   </WorkItemTypeFilters  >
+   ```
+   :::column-end:::
+:::row-end:::
 
 ## Related articles 
 

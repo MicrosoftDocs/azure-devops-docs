@@ -477,137 +477,215 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 ## Control element attribute syntax  
 
 
-<table width="100%" >
-<tbody valign="top" >
-<tr>
-<th>Attribute</th>
-<th>Description</th>
-</tr>
-<tr>
-<td><p><strong>FieldName</strong> </p></td>
-<td>
-<p>Optional. Specifies the work item field with which the control is associated. Specify the reference name of the field which should be between 1 and 70 characters. </p>
-</td>
-</tr>
-<tr>
-<td><p> <strong>Type</strong> </p></td>
-<td><p>Required. Specifies the data type of the control. Specify a string from one of these built-in types: </p>
-<ul>
-<li><strong>DateTimeControl</strong>: Use to display formatted date fields with a field type of <strong>DateTime</strong>.</li>
-<li><strong>FieldControl</strong>: Use to display Boolean, plain text, numeric fields, person-name fields, and pick lists. Supports fields with a data type of <strong>Boolean</strong>, <strong>Double</strong>, <strong>Identity</strong>, <strong>Integer</strong>,<strong>PlainText</strong>m and <strong>String</strong>.
-<blockquote><strong>Feature availability:</strong> The Boolean data type field is supported for TFS 2017 and later versions.<br/></blockquote></li>
-<li><strong>HtmlFieldControl</strong>: Use to display multi-line, rich-text format of fields with a field type of <strong>HTML</strong>.</li>
-<li><strong>LabelControl</strong>: Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the <strong>LabelText</strong>, <strong>Link</strong> and <strong>Text</strong> elements.</li>
-<li><strong>WebpageControl</strong>: Use to display HTML-based content defined by a URI or embedded within a CDATA tag. This control does not have an associated field or field type. You specify the content and links to display using the <strong>WebpageControlOptions</strong> element.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><p><strong>EmptyText</strong> </p></td>
-<td>
-<p>Optional. Specifies a text string between 1 and 255 characters in length that appears when a field is empty.</p></td>
-</tr>
-<tr>
-<td><strong>Label</strong></td>
-<td>Optional. Specifies the visible text on the form that identifies the control. Specify a string of no more than 80 characters. If unspecified, the friendly name of the <code>FieldName</code> is used. </td>
-</tr>
-<tr>
-</tr>
-<tr>
-<td><strong>ReadOnly</strong></td>
-<td>Optional. Specifies that the field is read-only:
-<ul>
-<li><strong>True</strong>: Control field is read-only.</li>
-<li><strong>False</strong>: Control field isn&#39;t read-only.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><p><strong>Name</strong> </p></td>
-<td><p>Optional. Identifies a control uniquely. The <strong>Name</strong> is important if more than one control on the form is associated with the same work item field.  </p>
-<blockquote><b>Note:</b> You use the <strong>Name</strong> attribute when you want to have the same field displayed on more than one <strong>Page</strong> on the form. You specify a unique value for the <strong>Name</strong> attribute for both control entries so that the system identifies each control uniquely.<br/></blockquote><br/></td>
-</tr>
-<tr>
-<td><strong>Visible</strong></td>
-<td>Optional. Specify <code>Visible=&quot;false&quot;</code> when you want to hide a field normally included within the header area. You can only specify this attribute in conjunction with the System.Reason, System.AreaPath, or System.IterationPath fields. If you specify this attribute, you can&#39;t specify the <code>Replaces</code> attribute. 
-</td>
-</tr>
-<tr>
-<td><strong>Replaces</strong></td>
-<td>Optional. Specify <code>FieldName=&quot;ReplacementFieldRefName&quot; Replaces=&quot;FieldRefName&quot;</code> when you want to replace a field within the header area with another field. You can only specify this attribute in conjunction with the System.Reason, System.AreaPath, or System.IterationPath fields. If you specify this attribute, you can&#39;t specify the <code>Visible</code> attribute. Also, you need to remove the entry for the field you are replacing from within the section. 
-</td>
-</tr>
-</tbody> 
-</table>
+:::row:::
+   :::column span="1":::
+   **Attribute**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
 
+:::row:::
+   :::column span="1":::
+   **FieldName** 
+   :::column-end:::
+   :::column span="1":::   
+   Optional. Specifies the work item field with which the control is associated. Specify the reference name of the field which should be between 1 and 70 characters. 
 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    **Type** 
+
+   :::column-end:::
+   :::column span="1":::
+   Required. Specifies the data type of the control. Specify a string from one of these built-in types: 
+
+   
+   - **DateTimeControl**: Use to display formatted date fields with a field type of **DateTime**.
+   - **FieldControl**: Use to display Boolean, plain text, numeric fields, person-name fields, and pick lists. Supports fields with a data type of **Boolean**, **Double**, **Identity**, **Integer**,**PlainText**m and **String**.  
+   
+   > **Feature availability:** The Boolean data type field is supported for TFS 2017 and later versions.  
+   
+   - **HtmlFieldControl**: Use to display multi-line, rich-text format of fields with a field type of **HTML**.
+   - **LabelControl**: Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the **LabelText**, **Link** and **Text** elements.
+   - **WebpageControl**: Use to display HTML-based content defined by a URI or embedded within a CDATA tag. This control does not have an associated field or field type. You specify the content and links to display using the **WebpageControlOptions** element.
+   
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **EmptyText** 
+
+   :::column-end:::
+   :::column span="1":::   
+   Optional. Specifies a text string between 1 and 255 characters in length that appears when a field is empty.
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **Label**
+   :::column-end:::
+   :::column span="1":::
+   Optional. Specifies the visible text on the form that identifies the control. Specify a string of no more than 80 characters. If unspecified, the friendly name of the `FieldName` is used. 
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **ReadOnly**
+   :::column-end:::
+   :::column span="1":::
+   Optional. Specifies that the field is read-only:
+   
+   - **True**: Control field is read-only.
+   - **False**: Control field isn't read-only.
+   
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **Name** 
+
+   :::column-end:::
+   :::column span="1":::
+   Optional. Identifies a control uniquely. The **Name** is important if more than one control on the form is associated with the same work item field.  
+
+   > [!NOTE]: 
+   > You use the **Name** attribute when you want to have the same field displayed on more than one **Page** on the form. You specify a unique value for the **Name** attribute for both control entries so that the system identifies each control uniquely.  
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **Visible**
+   :::column-end:::
+   :::column span="1":::
+   Optional. Specify `Visible="false"` when you want to hide a field normally included within the header area. You can only specify this attribute in conjunction with the System.Reason, System.AreaPath, or System.IterationPath fields. If you specify this attribute, you can't specify the `Replaces` attribute. 
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **Replaces**
+   :::column-end:::
+   :::column span="1":::
+   Optional. Specify `FieldName="ReplacementFieldRefName" Replaces="FieldRefName"` when you want to replace a field within the header area with another field. You can only specify this attribute in conjunction with the System.Reason, System.AreaPath, or System.IterationPath fields. If you specify this attribute, you can't specify the `Visible` attribute. Also, you need to remove the entry for the field you are replacing from within the section. 
+   :::column-end:::
+:::row-end:::
 
 <a id="control-types" />
 
 ## Control element Type attribute syntax
 
+:::row:::
+   :::column span="1":::
+   **Type**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
 
-<table width="100%">
-<tr>
-<th>Type</th>
-<th>Description</th>
-</tr>
-<tbody valign="top">
-<tr>
-<td><strong>DateTimeControl</strong></td>
-<td>Use to display formatted date fields with a data type of <code>DateTime</code>. 
-<p>Use <code>FieldControl</code> to provide a text field for the input or display of a DateTime field.</p>
-<pre><code>&lt;Control FieldName=&quot; MyCompany.Group1.StartDate &quot; Type=&quot;FieldControl&quot; 
-Label=&quot;Start Date&quot; LabelPosition=&quot;Left&quot; /&gt;
-</code></pre>
-<p>Use <code>DateTimeControl</code> to provide a calendar picker to select a date for a field, as shown in the following illustration.</p>
-<img src="media/weblayout-date-time-control.png" alt="Date-Time control, Calendar field"/><br/><pre><code>&lt;Control Type=&quot;DateTimeControl&quot; FieldName=&quot;FabrikamFiber.Schedule.SubmittedDate&quot; 
-Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;Short&quot; /&gt;</code></pre>
-<blockquote><strong>Note:</strong>The date-time format displayed matches the <a href="/azure/devops/organizations/settings/set-your-preferences" data-raw-source="[user profile user profile](../../organizations/settings/set-your-preferences.md)">user profile user profile</a>. The WebLayout section doesn&#39;t not accept the <strong>Layout</strong> element <code>CustomFormat</code> property.<br/></blockquote>
-</td>
-</tr>
-<tr>
-<td><strong>FieldControl</strong></td>
-<td>Use to display fields with a data type of Boolean, String, Identity, Integer, Double, and PlainText. For example:<br/><pre><code>&lt;Control Type=&quot;FieldControl&quot; FieldName=&quot;FabrikamFiber.Milestone&quot; 
-Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&quot; /&gt;
-</code></pre>
-<blockquote>
-<strong>Feature availability:</strong> The Boolean data type field is only supported for TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</blockquote>
-<p>A Boolean field displays as a checkbox within the web work item form.</p>
-<img src="media/weblayout-ref-checkbox-control-boolean-field.png" alt="Boolean field display in web work item form"/>
-</td>
-</tr>
-<tr>
-<td><strong>HTMLFieldControl</strong></td>
-<td>Use to display multi-line, rich-text formatted control. Specify this control type for fields of <code>Type=HTML</code>.<br/>
-<img src="media/html-field-control.png" alt="HTML field shown on work item form"/><br/>
-For example:<br/><pre><code>&lt;Control Type=&quot;HtmlFieldControl&quot; FieldName=&quot;FabrikamFiber.ReleaseNotes&quot; 
-Label=&quot;Release Notes&quot; Dock=&quot;Fill&quot; /&gt;
-</code></pre>
-</td></tr>
-<tr>
-<td><strong>LabelControl</strong></td>
-<td>Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the <strong>LabelText</strong>, <strong>Link</strong> and <strong>Text</strong> elements. See <a href="labeltext-and-text-xml-elements-reference.md" data-raw-source="[LabelText and Text XML elements reference](labeltext-and-text-xml-elements-reference.md)">LabelText and Text XML elements reference</a> and <a href="link-param-xml-elements-reference.md" data-raw-source="[Link and Param XML elements reference](link-param-xml-elements-reference.md)">Link and Param XML elements reference</a>.</td>
-</tr>
-<tr>
-<td><strong>WebpageControlOptions</strong></td>
-<td><p>Use to display HTML-based content defined by a URI or embedded within a CDATA tag. This control does not have an associated field or field type.  You specify the content and links to display using the <strong>WebpageControlOptions</strong> element.</p>
-<p>The <strong>WebpageControlOptions</strong> element and its child elements have the following syntax structure:</p>
-<pre><code>&lt;WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" &gt;  
-      &lt;Link UrlRoot=&quot;UrlRoot&quot; UrlPath =&quot;UrlPathWithParameters&quot; &gt;  
-      &lt;Param index=&quot;IndexValue&quot; value=&quot;ParamValue&quot; type =&quot;Original | Current&quot;&gt;  
-      &lt;/Link&gt;  
-      &lt;Content&gt;  
-      &lt;![CDATA[Contents of HTML]]/&gt;  
-      &lt;Content/&gt;  
-&lt;WebpageControlOptions/&gt;</code></pre><br/>
+:::row:::
+   :::column span="1":::
+   **DateTimeControl**
+   :::column-end:::
+   :::column span="1":::
+   Use to display formatted date fields with a data type of `DateTime`. 
+   Use `FieldControl` to provide a text field for the input or display of a DateTime field.
 
-<p>You use the <strong>Content</strong>, <strong>LabelText</strong>, and <strong>Link</strong> elements to define plain text or hyperlinked labels, add hyperlinks to a field, or display Web page content in a work item form. See <a href="provide-help-text-hyperlinks-web-content-form.md" data-raw-source="[Provide help text, hyperlinks, or web content on a work item form](provide-help-text-hyperlinks-web-content-form.md)">Provide help text, hyperlinks, or web content on a work item form</a> for details about the syntax.</p>
-</td>
-</tr>
-</tbody>
-</table>
+   ```
+   <Control FieldName=" MyCompany.Group1.StartDate " Type="FieldControl" 
+   Label="Start Date" LabelPosition="Left" />
+   ```
+   Use `DateTimeControl` to provide a calendar picker to select a date for a field, as shown in the following illustration.
 
+   ![Date-Time control, Calendar field](media/weblayout-date-time-control.png)  
+   
+   ```
+   <Control Type="DateTimeControl" FieldName="FabrikamFiber.Schedule.SubmittedDate" 
+   Label="Submitted Date:" LabelPosition="Left"  Format="Short" />
+   ```
+   > [!NOTE]
+   > The date-time format displayed matches the [user profile user profile](/azure/devops/organizations/settings/set-your-preferences). The WebLayout section doesn&#39;t not accept the **Layout** element `CustomFormat` property.  
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **FieldControl**
+   :::column-end:::
+   :::column span="1":::
+   Use to display fields with a data type of Boolean, String, Identity, Integer, Double, and PlainText. For example:  
+   
+   ```
+   <Control Type="FieldControl" FieldName="FabrikamFiber.Milestone" 
+   Label="Milestone" Name="Milestone" LabelPosition="Left" />
+   ```
+   > **Feature availability:** The Boolean data type field is only supported for TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display. 
+   
+   A Boolean field displays as a checkbox within the web work item form.
+
+   ![Boolean field display in web work item form](media/weblayout-ref-checkbox-control-boolean-field.png)
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **HTMLFieldControl**
+   :::column-end:::
+   :::column span="1":::
+   Use to display multi-line, rich-text formatted control. Specify this control type for fields of `Type=HTML`.  
+   ![HTML field shown on work item form](media/html-field-control.png)  
+   For example:  
+   
+   ```
+   <Control Type="HtmlFieldControl" FieldName="FabrikamFiber.ReleaseNotes" 
+   Label="Release Notes" Dock="Fill" />
+   ```
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **LabelControl**
+   :::column-end:::
+   :::column span="1":::
+   Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the **LabelText**, **Link** and **Text** elements. See [LabelText and Text XML elements reference](labeltext-and-text-xml-elements-reference.md) and [Link and Param XML elements reference](link-param-xml-elements-reference.md).
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **WebpageControlOptions**
+   :::column-end:::
+   :::column span="1":::
+   Use to display HTML-based content defined by a URI or embedded within a CDATA tag. This control does not have an associated field or field type.  You specify the content and links to display using the **WebpageControlOptions** element.
+
+   The **WebpageControlOptions** element and its child elements have the following syntax structure:
+
+   ```
+   <WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
+         <Link UrlRoot="UrlRoot" UrlPath ="UrlPathWithParameters" >  
+         <Param index="IndexValue" value="ParamValue" type ="Original | Current">  
+         </Link>  
+         <Content>  
+         <![CDATA[Contents of HTML]]/>  
+         <Content/>  
+   <WebpageControlOptions/>
+   ```  
+
+   You use the **Content**, **LabelText**, and **Link** elements to define plain text or hyperlinked labels, add hyperlinks to a field, or display Web page content in a work item form. See [Provide help text, hyperlinks, or web content on a work item form](provide-help-text-hyperlinks-web-content-form.md) for details about the syntax.
+
+   :::column-end:::
+:::row-end:::
 
 ## Related articles
 

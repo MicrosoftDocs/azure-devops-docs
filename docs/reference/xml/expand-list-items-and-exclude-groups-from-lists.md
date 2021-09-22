@@ -34,207 +34,233 @@ To better understand how these attributes are used to populate a field's drop-do
 ##  Contents of lists and groups used in the examples  
  The examples provided in this topic use the following values:  
   
-<table>
-<tbody valign="top">
-<tr>
-<th scope="col"><p>Group name and list</p></th>
-<th scope="col"><p>Description</p></th>
-</tr>
-<tr>
-<td>
-[Project]\Business Analysts</p>
-<ul> 
-<li>JayHamlin</li>
-<li>PilarAckerman</li>
-<li>ReshmaPatel</li>
-</ul> 
-</td>
-<td> 
-<p>A project group that contains the names of three business analyst team members.</p>
+:::row:::
+   :::column span="1":::
+   **Group name and list**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
 
-<p><strong>Note:</strong> Use the literal prefix [Project] instead of using the actual name of the project.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Example1\MyReports</p>
-<ul> 
-<li>Development</li>
-<li>devuser</li>
-<li>Test</li>
-<li>Test user</li>
-<li>Program Management</li>
-<li>pmuser</li>
-<li>juser</li>
-</ul> 
-</td>
-<td> 
-<p>A project group that contains one team member, juser, and three subgroups, where each subgroup contains the name of one team member.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Example1\MyReports</p>
-<ul> 
-<li>UserOne</li>
-<li>UserTwo</li>
-<li>UserThree</li>
-<li>MyRemotes</li>
-<li>UserFour</li>
-<li>UserFive</li>
-</ul> 
-</td>
-<td>
-<p>A project group that contains the names of three team members and one subgroup which contains the names of two team members.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>BoolValues</p>
-<ul> 
-<li>true</li>
-<li>false</li>
-</ul> 
-</td>
-<td>
-<p>A global list with two entries.</p>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::   
+   [Project]\Business Analysts  
+    
+   - JayHamlin
+   - PilarAckerman
+   - ReshmaPatel
+    
+   :::column-end:::
+   :::column span="1":::    
+   A project group that contains the names of three business analyst team members.  
+
+   > [!NOTE]  
+   > Use the literal prefix [Project] instead of using the actual name of the project.
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   
+   Example1\MyReports  
+    
+   - Development
+   - devuser
+   - Test
+   - Test user
+   - Program Management
+   - pmuser
+   - juser
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   A project group that contains one team member, juser, and three subgroups, where each subgroup contains the name of one team member.
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   
+   Example1\MyReports  
+    
+   - UserOne
+   - UserTwo
+   - UserThree
+   - MyRemotes
+   - UserFour
+   - UserFive
+    
+   :::column-end:::
+   :::column span="1":::
+   
+   A project group that contains the names of three team members and one subgroup which contains the names of two team members.
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   
+   BoolValues
+    
+   - true
+   - false
+    
+   :::column-end:::
+   :::column span="1":::
+   
+   A global list with two entries.
+
+   :::column-end:::
+:::row-end:::
 
 ## Example: Expand lists and exclude groups
 
 In this example, the field contains a string value, a group, and a global list. At the time it is run, the list is expanded and groups are excluded.
 
-<table>
-<thead>
-<tr>
-<th ><p>Example</p></th>
-<th ><p>Drop down list values</p></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-<td>
+:::row:::
+   :::column span="1":::
+   **Example**
+   :::column-end:::
+   :::column span="1":::
+   **Drop down list values**
+   :::column-end:::
+:::row-end:::
 
-<pre><code>&lt;ALLOWEDVALUES expanditems="true" filteritems="excludegroups"&gt; 
-   &lt;LISTITEM value="string" /&gt; 
-   &lt;LISTITEM value="[Project]\Business Analysts" /&gt;  
-   &lt;GLOBALLIST name="BoolValues" /&gt; </code></pre>
+:::row:::
+   :::column span="1":::   
 
-
-</td>
-
-<td data-th="Drop-down list values">
-
-<ul> 
-<li>string</li>
-<li>true</li>
-<li>false</li>
-<li>JayHamlin</li>
-<li>PilarAckerman</li>
-<li>ReshmaPatel</li>
-</ul> 
-</td>
-</tr>
-</table> 
-
+   ```
+   <ALLOWEDVALUES expanditems="true" filteritems="excludegroups"> 
+      <LISTITEM value="string" /> 
+      <LISTITEM value="[Project]\Business Analysts" />  
+      <GLOBALLIST name="BoolValues" /> 
+   ```
+   :::column-end:::
+   :::column span="1":::
+    
+   - string
+   - true
+   - false
+   - JayHamlin
+   - PilarAckerman
+   - ReshmaPatel    
+   :::column-end:::
+:::row-end:::
 
 <a id="Example2"></a>
 ## Example: Expand lists and groups and do not filter
 
 In this example, the field contains a string value, two groups, and a global list. At the time it is run the list is expanded and groups are not excluded.
 
-<table>
-<tr>
-<th scope="col"><p>Example</p></th>
-<th scope="col"><p>Drop-down list values</p></th>
-</tr>
+:::row:::
+   :::column span="1":::
+   **Example**
+   :::column-end:::
+   :::column span="1":::
+   **Drop-down list values**
+   :::column-end:::
+:::row-end:::
 
-<tr valign="top">
-<td data-th="Example">
+:::row:::
+   :::column span="1":::   
 
-<pre><code>&lt;ALLOWEDVALUES expanditems="true"&gt;
-   &lt;LISTITEM value="string" /&gt;
-   &lt;LISTITEM value="Example1\MyReports"/&gt;
-   &lt;LISTITEM value="Example1\MyTeam" /&gt;
-   &lt;GLOBALLIST name="BoolValues" /&gt;
-&lt;/ALLOWEDVALUES&gt; 
-</code></pre>
-</td><td data-th="Drop-down list values">
-
-<ul> 
-<li>string</li>
-<li>true</li>
-<li>false</li>
-<li>juser</li>
-<li>juser2</li>
-<li>devuser</li>
-<li>testuser</li>
-<li>pmuser</li>
-<li>Development</li>
-<li>Test</li>
-<li>Program Management</li>
-</ul> 
-</td></tr>
-</table>
-
-
+   ```
+   <ALLOWEDVALUES expanditems="true">
+      <LISTITEM value="string" />
+      <LISTITEM value="Example1\MyReports"/>
+      <LISTITEM value="Example1\MyTeam" />
+      <GLOBALLIST name="BoolValues" />
+   </ALLOWEDVALUES> 
+   ```
+   :::column-end:::
+   :::column span="1":::
+    
+   - string
+   - true
+   - false
+   - juser
+   - juser2
+   - devuser
+   - testuser
+   - pmuser
+   - Development
+   - Test
+   - Program Management    
+   :::column-end:::
+:::row-end:::
 
 ## Example: Do not expand lists or groups, and do not filter
 
 In this example, the field contains a string value, two groups, and a global list. At run time, the list is not expanded and groups are not filtered out. This means that group names are displayed, but not the users within those groups.
 
 > [!NOTE]    
->The global list name and contents are not displayed.
+> The global list name and contents are not displayed.
 
+:::row:::
+   :::column span="1":::
+   **Example**
+   :::column-end:::
+   :::column span="1":::
+   **Drop-down list values**
+   :::column-end:::
+:::row-end:::
 
-<table>
-<tr>
-<th scope="col"><p>Example</p></th>
-<th scope="col"><p>Drop-down list values</p></th>
-</tr>
+:::row:::
+   :::column span="1":::   
 
-<tr valign="top">
-<td data-th="Example">
-
-<pre><code>&lt;ALLOWEDVALUES expanditems="false"&gt;
-   &lt;LISTITEM value="string" /&gt;
-   &lt;LISTITEM value="Example1\MyReports"/&gt;
-   &lt;LISTITEM value="Example1\MyTeam" /&gt;
-   &lt;GLOBALLIST name="BoolValues" /&gt;
-&lt;/ALLOWEDVALUES&gt; 
-</code></pre>
-</td>
-<td data-th="Drop-down list values">
-
-<ul> 
-<li>string</li>
-<li>MyTeam</li>
-<li>MyReports</li>
-</ul> 
-</td>
-</tr></table> 
-
+   ```
+   <ALLOWEDVALUES expanditems="false">
+      <LISTITEM value="string" />
+      <LISTITEM value="Example1\MyReports"/>
+      <LISTITEM value="Example1\MyTeam" />
+      <GLOBALLIST name="BoolValues" />
+   </ALLOWEDVALUES> 
+   ```
+   :::column-end:::
+   :::column span="1":::
+    
+   - string
+   - MyTeam
+   - MyReports
+    
+   :::column-end:::
+:::row-end:::
 
 ## Example: Expand lists and exclude groups and global lists
 In this example, the field contains a string value, one group, and a global list. At run time, the list is expanded and groups are filtered out.
 
 > [!NOTE]    
->*MyTeam* is a group that is excluded and not expanded, and *BoolValue*s is a global list, so neither one is expanded or shown.
+> *MyTeam* is a group that is excluded and not expanded, and *BoolValue*s is a global list, so neither one is expanded or shown.
 
-<table><tr><th scope="col"><p>Example</p></th><th scope="col"><p>Drop-down list values</p></th></tr><tr><td data-th="Example">
+:::row:::
+   :::column span="1":::   
+   **Example**
+   :::column-end:::
+   :::column span="1":::   
+   **Drop-down list values**
+   :::column-end:::
+:::row-end:::
 
-
-<pre><code>&lt;ALLOWEDVALUES expanditems="true" filteritems="excludegroups"&gt;
-   &lt;LISTITEM value="string" /&gt;
-   &lt;LISTITEM value="Example\MyTeam" /&gt;
-   &lt;GLOBALLIST name="BoolValues" /&gt;
-&lt;/ALLOWEDVALUES&gt; 
-</code></pre>
-</td><td data-th="Drop-down list values"><p>String</p></td></tr></table>
-
+:::row:::
+   :::column span="1":::   
+   ```
+   <ALLOWEDVALUES expanditems="true" filteritems="excludegroups">
+      <LISTITEM value="string" />
+      <LISTITEM value="Example\MyTeam" />
+      <GLOBALLIST name="BoolValues" />
+   </ALLOWEDVALUES> 
+   ```
+   :::column-end:::
+   :::column span="1":::
+   
+   String
+   :::column-end:::
+:::row-end:::
   
 ## Related articles 
 -  [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](define-pick-lists.md)   
