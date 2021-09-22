@@ -1,6 +1,6 @@
 ---
 title: Current Work Item tables 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about the current state of bugs, task, and other type of work items 

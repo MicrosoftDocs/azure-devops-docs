@@ -1,6 +1,6 @@
 ---
 title: Build Changeset tables 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Uses FactBuildChangeset to query for data about the changesets.

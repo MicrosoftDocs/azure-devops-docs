@@ -1,6 +1,6 @@
 ---
 title: Run Coverage tables 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Uses FactRunCoverage to query for data in Team Foundation Server

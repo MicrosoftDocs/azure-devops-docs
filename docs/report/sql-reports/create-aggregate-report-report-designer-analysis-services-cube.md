@@ -1,6 +1,6 @@
 ---
 title: Create an aggregate report with Report Designer 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: conceptual
 description: How to create a report that shows how many active work items are assigned to each person on the team - Team Foundation Server  

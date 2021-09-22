@@ -1,7 +1,7 @@
 ---
 title: Build Summary Report 
 description: Provides information about test results, test coverage, code churn, and quality notes for each build - Team Foundation Server 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: ac74cae8-5c9b-43d6-b4ef-c889dcb9440f

@@ -1,6 +1,6 @@
 ---
 title: Perspectives and measure groups
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Generate reports of aggregated information about the data stored in team project collections
