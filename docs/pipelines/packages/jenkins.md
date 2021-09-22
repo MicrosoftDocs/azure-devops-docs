@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 Azure Artifacts works with the continuous integration tools your team already uses.
 In this [Jenkins](https://jenkins-ci.org/) walkthrough, you'll create a NuGet package and publish it to an Azure Artifacts feed.
-If you need help on Jenkins setup, you can learn more on [the Jenkins wiki](https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins).
+If you need help on Jenkins setup, you can learn more on [the Jenkins wiki](https://www.jenkins.io/doc/book/using/).
 
 <a name="setup"></a>
 ## Setup
@@ -26,10 +26,10 @@ This walkthrough uses Jenkins 1.635 running on Windows 10.
 The walkthrough is simple, so any recent Jenkins and Windows versions should work.
 
 Ensure the following Jenkins plugins are enabled:
-* [MSBuild 1.24](https://wiki.jenkins-ci.org/display/JENKINS/MSBuild+Plugin)
-* [Git 2.4.0](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin)
-* [Git Client 1.19.0](https://wiki.jenkins-ci.org/display/JENKINS/Git+Client+Plugin)
-* [Credentials Binding plugin 1.6](https://wiki.jenkins-ci.org/display/JENKINS/Credentials+Binding+Plugin)
+* [MSBuild 1.24](https://plugins.jenkins.io/msbuild/)
+* [Git 2.4.0](https://plugins.jenkins.io/git/)
+* [Git Client 1.19.0](https://plugins.jenkins.io/git-client/)
+* [Credentials Binding plugin 1.6](https://plugins.jenkins.io/credentials-binding/)
 
 Some of these plugins are enabled by default.
 Others you will need to install by using Jenkins's "Manage Plugins" feature.
