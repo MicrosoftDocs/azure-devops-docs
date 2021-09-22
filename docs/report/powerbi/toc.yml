@@ -1,5 +1,7 @@
 - name: About Power BI integration
   href: overview.md
+- name: Extend Analytics with OData (Preview)
+  href: ../extend-analytics/quick-ref.md
 - name: Enable or install Analytics  
   href: ../dashboards/analytics-extension.md
 - name: Set Analytics permissions (Security)
@@ -33,7 +35,21 @@
     href: access-analytics-power-bi.md
   - name: Connect using Advanced Functions
     href: data-connector-functions.md
-- name: Sample reports-Analytics views
+- name: Sample queries>Work tracking
+  items:
+  - name: Query work item data 
+    href: ../extend-analytics/wit-analytics.md
+  - name: "Project & organization-scoped queries" 
+    href: ../extend-analytics/account-scoped-queries.md
+  - name: Query aggregate data
+    href: ../extend-analytics/aggregated-data-analytics.md
+  - name: Query trend data
+    href: ../extend-analytics/querying-for-trend-data.md
+  - name: Query work item links
+    href: ../extend-analytics/work-item-links.md
+  - name: Basic work tracking queries
+    href: ../extend-analytics/analytics-recipes.md
+- name: Sample reports>Analytics views
   items:
   - name: Active bugs report 
     href: active-bugs-sample-report.md
@@ -45,91 +61,101 @@
     href: create-team-filter.md  
   - name: Calculate time-in-state 
     href: create-timeinstate-report.md
-- name: Sample reports-OData query
+- name: Sample reports (Power BI and OData)
+  href: sample-odata-overview.md
+- name: Sample reports>Boards
   items:
-  - name: Sample OData reports overview
-    href: sample-odata-overview.md
-  - name: Boards
-    items:
-    - name: Open bugs
-      href: sample-boards-openbugs.md
-    - name: Bug trends
-      href: sample-boards-bugtrend.md
-    - name: Rollup
-      href: sample-boards-rollup.md
-    - name: Feature progress
-      href: sample-boards-featureprogress.md
-    - name: Work Items and Direct Links
-      href: sample-boards-directlinks.md
-    - name: Release burndown
-      href: sample-boards-releaseburndown.md
-    - name: Sprint burndown
-      href: sample-boards-sprintburndown.md
-    - name: Cumulative Flow Diagram 
-      href: sample-boards-cfd.md
-      displayname: CFD 
-    - name: Lead/Cycle time
-      href: sample-boards-leadcycletime.md
-    - name: Add a team slicer
-      href: sample-boards-teamslicer.md
-  - name: Pipelines
-    items:
-    - name: Outcome summary
-      href: sample-pipelines-outcome-summary.md
-    - name: Outcome summary for all pipelines
-      href: sample-pipelines-allpipelines.md
-    - name: Pass rate trend
-      href: sample-pipelines-pass-rate-trend.md
-    - name: Stage wise failures
-      href: sample-pipelines-stagewise-failures.md
-    - name: Duration
-      href: sample-pipelines-duration.md
-    - name: Duration trend
-      href: sample-pipelines-duration-trend.md
-    - name: Task duration
-      href: sample-pipelines-task-duration.md
-    - name: Task duration trend
-      href: sample-pipelines-task-duration-trend.md
-  - name: Pipelines test sample reports
-    items:
-      - name: Test summary
-        href: sample-test-analytics-test-summary.md
-      - name: Test summary trend
-        href: sample-test-summary-trend.md
-      - name: Failed tests
-        href: sample-test-analytics-failed-tests.md
-      - name: Flaky tests
-        href: sample-test-analytics-flaky-tests.md
-      - name: Test duration
-        href: sample-test-analytics-test-duration.md
-      - name: Test duration trend
-        href: sample-test-analyics-test-duration-trend.md
-      - name: Pass rate trend of test
-        href: sample-test-analytics-pass-rate-trend-test.md
-  - name: Test Plans
-    items:
-    - name: Progress status
-      href: sample-test-plans-progress-status.md
-    - name: Requirements tracking
-      href: sample-stories-overview.md
-    - name: Requirements tracking - Rollup
-      href: sample-stories-overview-rollup.md
-    - name: Execution trends
-      href: sample-test-plans-execution-trend.md
-    - name: Suite-level aggregation
-      href: sample-test-plans-aggregate-data-level.md
-    - name: Tester by outcome matrix
-      href: sample-test-plans-tester-by-outcome.md
-    - name: Configuration by outcome matrix
-      href: sample-test-plans-configuration-by-outcome.md
-- name: Reference
+  - name: Open bugs
+    href: sample-boards-openbugs.md
+  - name: Bug trends
+    href: sample-boards-bugtrend.md
+  - name: Rollup
+    href: sample-boards-rollup.md
+  - name: Feature progress
+    href: sample-boards-featureprogress.md
+  - name: Work Items and Direct Links
+    href: sample-boards-directlinks.md
+  - name: Release burndown
+    href: sample-boards-releaseburndown.md
+  - name: Sprint burndown
+    href: sample-boards-sprintburndown.md
+  - name: Cumulative Flow Diagram 
+    href: sample-boards-cfd.md
+    displayname: CFD 
+  - name: Lead/Cycle time
+    href: sample-boards-leadcycletime.md
+  - name: Add a team slicer
+    href: sample-boards-teamslicer.md
+- name: Sample reports>Pipelines
+  items:
+  - name: Outcome summary
+    href: sample-pipelines-outcome-summary.md
+  - name: Outcome summary for all pipelines
+    href: sample-pipelines-allpipelines.md
+  - name: Pass rate trend
+    href: sample-pipelines-pass-rate-trend.md
+  - name: Stage wise failures
+    href: sample-pipelines-stagewise-failures.md
+  - name: Duration
+    href: sample-pipelines-duration.md
+  - name: Duration trend
+    href: sample-pipelines-duration-trend.md
+  - name: Task duration
+    href: sample-pipelines-task-duration.md
+  - name: Task duration trend
+    href: sample-pipelines-task-duration-trend.md
+- name: Sample reports>Pipelines test 
+  items:
+    - name: Test summary
+      href: sample-test-analytics-test-summary.md
+    - name: Test summary trend
+      href: sample-test-summary-trend.md
+    - name: Failed tests
+      href: sample-test-analytics-failed-tests.md
+    - name: Flaky tests
+      href: sample-test-analytics-flaky-tests.md
+    - name: Test duration
+      href: sample-test-analytics-test-duration.md
+    - name: Test duration trend
+      href: sample-test-analyics-test-duration-trend.md
+    - name: Pass rate trend of test
+      href: sample-test-analytics-pass-rate-trend-test.md
+- name: Sample reports>Test Plans 
+  items:
+  - name: Progress status
+    href: sample-test-plans-progress-status.md
+  - name: Requirements tracking
+    href: sample-stories-overview.md
+  - name: Requirements tracking - Rollup
+    href: sample-stories-overview-rollup.md
+  - name: Execution trends
+    href: sample-test-plans-execution-trend.md
+  - name: Suite-level aggregation
+    href: sample-test-plans-aggregate-data-level.md
+  - name: Tester by outcome matrix
+    href: sample-test-plans-tester-by-outcome.md
+  - name: Configuration by outcome matrix
+    href: sample-test-plans-configuration-by-outcome.md
+- name: Data model reference
   items:
   - name: Data available from Analytics
     href: data-available-in-analytics.md
-  - name: Dataset design 
+  - name: Data model for Analytics
+    href: ../extend-analytics/data-model-analytics-service.md
+  - name: Explore Analytics metadata
+    href: ../extend-analytics/analytics-metadata.md
+  - name: Analytics views dataset design 
     href: data-connector-dataset.md
   - name: Filters applied to historical data
     href: analytics-historical-filtering.md
+  - name: "Supported functions & clauses"
+    href: ../extend-analytics/odata-supported-features.md 
+  - name: API versioning
+    href: ../extend-analytics/odata-api-version.md 
+- name: Troubleshooting
+  items:
+  - name: Query guidelines
+    href: ../extend-analytics/odata-query-guidelines.md
   - name: Performance & latency
-    href: performance-latency.md
-
+    href: performance-latency.md  
+ 
