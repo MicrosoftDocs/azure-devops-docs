@@ -34,12 +34,10 @@ To perform these procedures, you must have the following permissions set:
 
 > [!IMPORTANT]
 > The release of Visual Studio Team Foundation Server 2010 began a distinction between branches and folders. For example, in the following illustration you can see how branches and folders are displayed with different icons.
-
-   ![A branch and a folder](media/merge-folders-files/IC268252.png)
-
-   While you can still branch and merge among folders, the best practice for your team to follow is to branch and merge only among branches. For more information, see [Branch folders and files](branch-folders-files.md).
-   :::column-end:::
-:::row-end:::
+>
+> ![A branch and a folder](media/merge-folders-files/IC268252.png)
+>
+> While you can still branch and merge among folders, the best practice for your team to follow is to branch and merge only among branches. For more information, see [Branch folders and files](branch-folders-files.md).
 
 
 ### Merge branches, files and folders from Source Control Explorer
