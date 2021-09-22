@@ -26,7 +26,7 @@ Use this task to build with MSBuild and set the Visual Studio version property.
 
 msbuild, visualstudio
 
-> **Azure Pipelines:** If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select **Hosted VS2017** as your default build pool. See [Microsoft-hosted agents](../../agents/hosted.md).
+> **Azure Pipelines:** If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select **vs2017-win2016** as your default build pool. See [Microsoft-hosted agents](../../agents/hosted.md).
 
 ::: moniker range="> tfs-2018"
 
@@ -71,7 +71,7 @@ msbuild, visualstudio
          <p>To avoid problems overall, you must make sure this value matches the version of Visual Studio used to create your solution.</p>
          <p>The value you select here adds the <code>/p:VisualStudioVersion={numeric_visual_studio_version}</code> argument to the MSBuild command run by the build. For example, if you select <strong>Visual Studio 2015</strong>, <code>/p:VisualStudioVersion=14.0</code> is added to the MSBuild command.</p>
          <blockquote>
-            <p><strong>Azure Pipelines:</strong>If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select <strong>Hosted VS2017</strong> as your default build pool. See <a href="../../agents/hosted.md" data-raw-source="[Microsoft-hosted agents](../../agents/hosted.md)">Microsoft-hosted agents</a>.</p>
+            <p><strong>Azure Pipelines:</strong>If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select <strong>vs2017-win2016</strong> as your default build pool. See <a href="../../agents/hosted.md" data-raw-source="[Microsoft-hosted agents](../../agents/hosted.md)">Microsoft-hosted agents</a>.</p>
          </blockquote>
          <br/>Default value: latest
       </td>
@@ -106,7 +106,7 @@ msbuild, visualstudio
       </td>
    </tr>
    <tr>
-      <th style="text-align: center" colspan="2">Advanced</th>
+      <th colspan="2">Advanced</th>
    </tr>
    <tr>
       <td><code>maximumCpuCount</code><br/>Build in Parallel</td>
@@ -146,7 +146,17 @@ msbuild, visualstudio
       </td>
    </tr>
    <tr>
-      <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+      <td><code>customVersion</code><br/>Custom Version</td>
+      <td>
+         <p>(Optional) Allows setting custom version of Visual Studio. Examples: <code>15.0</code>, <code>16.0</code>, <code>17.0</code>. </p>
+         <p>Tip: Make sure that the required version of Visual Studio is installed in the system. </p>
+         <blockquote>
+            <p><strong>Azure Pipelines:</strong> If your team wants to use Visual Studio 2022 with the Microsoft-hosted agents, select <strong>windows-2022</strong> as your default build pool. For more info see <a href="../../agents/hosted.md" data-raw-source="[Microsoft-hosted agents](../../agents/hosted.md)">Microsoft-hosted agents</a>.</p>
+         </blockquote>
+      </td>
+   </tr>
+   <tr>
+      <th colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
    </tr>
 </table>
 
