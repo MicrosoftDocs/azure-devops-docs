@@ -144,7 +144,6 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    For folders branch all files inside, too
    :::column-end:::
 :::row-end:::
-:::row:::
 
 ## Remarks
 If you specify a local path such as c:\\00101 but do not specify a *versionspec*, Team Foundation uses the local workspace version as the basis for creating the new branch.
@@ -152,6 +151,7 @@ If you specify a local path such as c:\\00101 but do not specify a *versionspec*
 However, if you specify a server path such as $/00101/\*.cs and do not specify a *versionspec*, Team Foundation uses the latest Team Foundation version control server version as the basis for creating the new branch instead.
 
 For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+
 ## Examples
 The following example creates a branch file that contains the latest workspace version of 314.cs, names it "314\_branch", and saves it to the current directory on disk and also to the Team Foundation version control server folder to which it maps.
 

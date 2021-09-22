@@ -126,7 +126,7 @@ By using the **Changesets** tab, you can perform the following tasks:
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **Get a past version of the item: **Right-click a changeset and then click **Get This Version** to download the past version of the item to your workspace.
+   **Get a past version of the item:** Right-click a changeset and then click **Get This Version** to download the past version of the item to your workspace.
    :::column-end:::
    :::column span="1":::
    [Download (get) files from the Server](download-get-files-from-server.md) 
@@ -158,7 +158,7 @@ By using the **Changesets** tab, you can perform the following tasks:
 :::row-end:::
 :::row:::
    :::column span="3":::
-   **View other branches to which this changeset has been merged: **Right-click the changeset and click **Track Changeset**.
+   **View other branches to which this changeset has been merged:** Right-click the changeset and click **Track Changeset**.
    :::column-end:::
    :::column span="1":::
    [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md) 

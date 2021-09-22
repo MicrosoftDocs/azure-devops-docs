@@ -171,7 +171,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    **/global**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Used to view or assign a TFVC collection-level permission.
 
    To assign permissions, use the **/allow**, **/deny**, or **/remove** options.
@@ -199,7 +199,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
    :::column-end:::
 :::row-end:::

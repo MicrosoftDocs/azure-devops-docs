@@ -33,7 +33,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -76,15 +76,15 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
 
    - **None**
    
-   Default. No lock is applied. If you have placed a lock on the specified file, this option removes it. It does not remove a lock placed by someone else.
+     Default. No lock is applied. If you have placed a lock on the specified file, this option removes it. It does not remove a lock placed by someone else.
    
    - **Checkin**
    
-   Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
+     Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
    
    - **Checkout**
    
-   Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
+     Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -97,13 +97,13 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    - **tf delete folder1\folder2 /recursive** (where folder1\folder2 exists and is a directory) deletes all the files and subdirectories contained by folder1\folder2 and folder1\folder2 itself.
    - **tf delete folder1\folder2\filespec<em> /recursive** deletes all files and subdirectories matching filespec contained in folder1\folder2 and each of its subdirectories, as well as all files and subdirectories contained within any directory that matches the filespec.
    
-   For example, in a workspace containing:
+     For example, in a workspace containing:
    
-   Folder1\AVeryLongDirectoryName (with some files inside) and Folder1\Folder2\AVeryImportantFile.txt
+     Folder1\AVeryLongDirectoryName (with some files inside) and Folder1\Folder2\AVeryImportantFile.txt
    
-   **tf delete &#39;Folder1\AVer</em>&#39; /recursive**
+     **tf delete &#39;Folder1\AVer</em>&#39; /recursive**
    
-   deletes folder1\folder2\NeverDelete\AVeryImportantFile.txt because it matches the wildcard character.
+     deletes folder1\folder2\NeverDelete\AVeryImportantFile.txt because it matches the wildcard character.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -127,7 +127,9 @@ When you check in a pending deletion, Team Foundation marks the file as deleted 
 When your *itemspec* specifies a folder, Team Foundation deletes all its files and subfolders and the files they contain, by default.
 
 For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+
 ## Examples
+
 The following example deletes 314.cs on disk in the specified local workspace folder and then, when you check in the change, removes 314.c from the version control system non-permanently.
 
 ```

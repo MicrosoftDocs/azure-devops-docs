@@ -269,129 +269,181 @@ c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D
 
 Use the following syntax to specify a *versionspec*.
 
-<table>
-<thead>
-<tr>
-<th><p>Type</p></th>
-<th><p>Syntax</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>Changeset</p></td>
-<td><p><strong>[C]</strong><i>n</i></p></td>
-<td><p>Specifies items based on a changeset number. If an item that is in scope was not modified in the specified changeset, the system takes the latest version of the item that occurred before the specified changeset.</p>
-<div class="alert">
-<table>
-<thead>
-<tr>
-<th><strong>Tip</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>You can omit the <i>C</i> if you specify only a number.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Examples</strong></p>
+:::row:::
+   :::column span="1":::
+   **Type**
+   :::column-end:::
+   :::column span="1":::
+   **Syntax**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
 
-<div id="CodeSnippetContainerCode_ef3e28b0-5bde-46de-89e7-1607a4329249" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get readme.txt /v:C8</code></pre>
-</div>
-</div>
-<p>-- or --</p>
-<div id="code-snippet-7" class="codeSnippetContainer" xmlns="">
-<div class="codeSnippetContainerTabs">
+:::row:::
+   :::column span="1":::
+   Changeset
 
-<div id="CodeSnippetContainerCode_3ec2c94a-8633-431c-b2d0-29836c305073" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get readme.txt /v:8</code></pre>
-</div>
-</div>
+   :::column-end:::
+   :::column span="1":::
+   **[C]***n*
 
-<p>-- or --</p>
+   :::column-end:::
+   :::column span="3":::
+   Specifies items based on a changeset number. If an item that is in scope was not modified in the specified changeset, the system takes the latest version of the item that occurred before the specified changeset.
 
-<div id="CodeSnippetContainerCode_69203803-1efd-4882-8d47-b4c20c45426a" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get readme.txt;8</code></pre>
-</div>
-</div>
+   > [!Tip]  
+   > You can omit the *C* if you specify only a number.
 
-<p>If readme.txt was modified in changeset 8, gets that version of the file. Otherwise, gets the most recent version of readme.txt before version 8.</p></td>
-</tr>
-<tr>
-<td><p>Label</p></td>
-<td><p><strong>L</strong><i>label</i></p></td>
-<td><p>Specifies items to which <i>label</i> was applied.</p>
-<p><strong>Examples</strong></p>
+   **Examples**
 
-<div id="CodeSnippetContainerCode_08cf74c6-4a77-4c72-b034-1b2f0360d827" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get readme.txt;LJulyHotFix</code></pre>
-</div>
-</div>
+   ```
+   c:\code\SiteApp\Main&gt;tf get readme.txt /v:C8
+   ```
 
-<p>Gets the version of readme.txt that was labeled <strong>JulyHotFix</strong>.</p>
+   -- or --
 
-<div id="CodeSnippetContainerCode_3517ab06-4897-4514-bf12-fb70aa3848f4" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get /version:LLastKnownGood</code></pre>
-</div>
-</div>
+   <a id="CodeSnippetContainerCode_3ec2c94a-8633-431c-b2d0-29836c305073></a>
+   ```
+   c:\code\SiteApp\Main&gt;tf get readme.txt /v:8
+   ```
 
-<p>Retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled as <strong>LastKnownGood</strong> was created, for example, perhaps as part of an <a href="../../pipelines/build/triggers.md">automated build process<a/>.</p></td>
-</tr>
-<tr>
-<td><p>Date and time</p></td>
-<td><p><strong>D</strong><i>yyyy-mm-ddTxx:xx</i></p>
-<p>-or-</p>
-<p><strong>D</strong><i>mm/dd/yyyy</i></p>
-<p>-or-</p>
-<p>Any .NET Framework-supported format.</p>
-<p>-or-</p>
-<p>Any of the date formats supported on the local machine.</p></td>
-<td><p>Specifies a changeset created on a specified date and time.</p>
-<p><strong>Examples</strong></p>
+   -- or --
 
-<div id="CodeSnippetContainerCode_3e2c85b3-6c9b-4323-92f7-f43b953c7f15" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get /version:D2004-03-22</code></pre>
-</div>
-</div>
 
-<p>Updates the workspace to match the codebase as it existed on 3/22/2004 at 00:00 (midnight).</p>
+   <a id="CodeSnippetContainerCode_69203803-1efd-4882-8d47-b4c20c45426a"></a>
+   ```
+   c:\code\SiteApp\Main&gt;tf get readme.txt;8
+   ```
 
-<div id="CodeSnippetContainerCode_1f0ebab8-23be-4987-bf44-3424224903c9" class="codeSnippetContainerCode" dir="ltr">
-<div style="color:Black;">
-<pre><code>c:\code\SiteApp\Main&gt;tf get /version:D2004-03-22T09:00</code></pre>
-</div>
-</div>
+   If readme.txt was modified in changeset 8, gets that version of the file. Otherwise, gets the most recent version of readme.txt before version 8.
 
-<p>Updates the workspace to match the codebase as it existed on 3/22/2004 at 09:00 (9 AM).</p>
-<p>For more information about .NET Framework-supported date and time formats see <a href="/dotnet/api/system.datetime" data-raw-source="[DateTime](/dotnet/api/system.datetime)">DateTime</a> and <a href="/dotnet/standard/base-types/standard-date-and-time-format-strings" data-raw-source="[Standard Date and Time Format Strings](/dotnet/standard/base-types/standard-date-and-time-format-strings)">Standard Date and Time Format Strings</a>.</p></td>
-</tr>
-<tr>
-<td><p>Workspace (current)</p></td>
-<td><p><strong>W</strong></p></td>
-<td><p>Specifies the version in your workspace.</p></td>
-</tr>
-<tr>
-<td><p>Workspace (specified)</p></td>
-<td><p><strong>W</strong><i>workspacename</i>; <i>workspaceowner</i></p></td>
-<td><p>Specifies the version in a specified workspace.</p>
-<p>For example: <strong>WResolveRIConflicts;PeterW</strong></p></td>
-</tr>
-<tr>
-<td><p>Tip</p></td>
-<td><p><strong>T</strong></p></td>
-<td><p>Specifies the most recent version.</p></td>
-</tr>
-</tbody>
-</table>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Label
+
+   :::column-end:::
+   :::column span="1":::
+   **L***label*
+
+   :::column-end:::
+   :::column span="3":::
+   Specifies items to which *label* was applied.
+
+   **Examples**
+
+
+   <a id="CodeSnippetContainerCode_08cf74c6-4a77-4c72-b034-1b2f0360d827"></a>
+   ```
+   c:\code\SiteApp\Main&gt;tf get readme.txt;LJulyHotFix
+   ```
+
+   Gets the version of readme.txt that was labeled **JulyHotFix**.
+
+
+   <a id="CodeSnippetContainerCode_3517ab06-4897-4514-bf12-fb70aa3848f4"></a>
+   ```
+   c:\code\SiteApp\Main&gt;tf get /version:LLastKnownGood
+   ```
+   
+   Retrieves the version of all labeled items (and deletes those items not labeled) in the workspace as they existed when the changeset labeled as **LastKnownGood** was created, for example, perhaps as part of an <a href="../../pipelines/build/triggers.md">automated build process<a/>.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Date and time
+
+   :::column-end:::
+   :::column span="1":::
+   **D***yyyy-mm-ddTxx:xx*
+
+   -or-
+
+   **D***mm/dd/yyyy*
+
+   -or-
+
+   Any .NET Framework-supported format.
+
+   -or-
+
+   Any of the date formats supported on the local machine.
+
+   :::column-end:::
+   :::column span="3":::
+   Specifies a changeset created on a specified date and time.
+
+   **Examples**
+
+
+   <a id="CodeSnippetContainerCode_3e2c85b3-6c9b-4323-92f7-f43b953c7f15"></a>
+   ```
+   c:\code\SiteApp\Main&gt;tf get /version:D2004-03-22
+   ```
+
+   Updates the workspace to match the codebase as it existed on 3/22/2004 at 00:00 (midnight).
+
+
+   <a id="CodeSnippetContainerCode_1f0ebab8-23be-4987-bf44-3424224903c9"></a>
+   ```
+   c:\code\SiteApp\Main&gt;tf get /version:D2004-03-22T09:00
+   ```
+
+   Updates the workspace to match the codebase as it existed on 3/22/2004 at 09:00 (9 AM).
+
+   For more information about .NET Framework-supported date and time formats see [DateTime](/dotnet/api/system.datetime) and [Standard Date and Time Format Strings](/dotnet/standard/base-types/standard-date-and-time-format-strings).
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Workspace (current)
+
+   :::column-end:::
+   :::column span="1":::
+   **W**
+
+   :::column-end:::
+   :::column span="3":::
+   Specifies the version in your workspace.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Workspace (specified)
+
+   :::column-end:::
+   :::column span="1":::
+   **W***workspacename*; *workspaceowner*
+
+   :::column-end:::
+   :::column span="3":::
+   Specifies the version in a specified workspace.
+
+   For example: **WResolveRIConflicts;PeterW**
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Tip
+
+   :::column-end:::
+   :::column span="1":::
+   **T**
+
+   :::column-end:::
+   :::column span="3":::
+   Specifies the most recent version.
+
+   :::column-end:::
+:::row-end:::
+
 
 ## Use options to modify how a command functions
 
@@ -431,18 +483,8 @@ After she enters this command, the system then prompts her to type her password 
 
 ### Use the /lock option to apply or remove a lock
 
-<table>
-<thead>
-<tr>
-<th> <strong>Important</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>As a best practice, use the <strong>/lock</strong> option with discretion and notify your teammates why you are locking an item, and when you plan to remove the lock.</p></td>
-</tr>
-</tbody>
-</table>
+> [!Important]  
+> As a best practice, use the **/lock** option with discretion and notify your teammates why you are locking an item, and when you plan to remove the lock.
 
 Use the **/lock** option to apply or remove a lock at the same time you run another command such as [Add](add-command.md) or [Edit](checkout-or-edit-command.md).
 
@@ -464,119 +506,207 @@ Use the **/lock** option to apply or remove a lock at the same time you run anot
 
 You can abbreviate the following options.
 
-<table>
-<thead>
-<tr>
-<th><p>Option</p></th>
-<th><p>Option Alias</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>/comment</strong></p></td>
-<td><p><strong>-C</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/computer</strong></p></td>
-<td><p><strong>-M</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/delete</strong></p></td>
-<td><p><strong>-D</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/force</strong></p></td>
-<td><p><strong>-P</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/format</strong></p></td>
-<td><p><strong>-F</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/help</strong></p></td>
-<td><p><strong>-?, -H</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/lock</strong></p></td>
-<td><p><strong>-K</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/login</strong></p></td>
-<td><p><strong>-Y</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/newname</strong></p></td>
-<td><p><strong>-N</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/noprompt</strong></p></td>
-<td><p><strong>-I</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/owner</strong></p></td>
-<td><p><strong>-O</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/recursive</strong></p></td>
-<td><p><strong>-R</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/server</strong></p></td>
-<td><p><strong>-S</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/slotmode</strong></p></td>
-<td><p><strong>-X</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/template</strong></p></td>
-<td><p><strong>-T</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/user</strong></p></td>
-<td><p><strong>-U</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/version</strong></p></td>
-<td><p><strong>-V</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>/workspace</strong></p></td>
-<td><p><strong>-W</strong></p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="1":::
+   **Option Alias**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/comment**
+   :::column-end:::
+   :::column span="1":::
+   **-C**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/computer**
+   :::column-end:::
+   :::column span="1":::
+   **-M**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/delete**
+   :::column-end:::
+   :::column span="1":::
+   **-D**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/force**
+   :::column-end:::
+   :::column span="1":::
+   **-P**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/format**
+   :::column-end:::
+   :::column span="1":::
+   **-F**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/help**
+   :::column-end:::
+   :::column span="1":::
+   **-?, -H**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/lock**
+   :::column-end:::
+   :::column span="1":::
+   **-K**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   **-Y**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/newname**
+   :::column-end:::
+   :::column span="1":::
+   **-N**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   :::column-end:::
+   :::column span="1":::
+   **-I**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/owner**
+   :::column-end:::
+   :::column span="1":::
+   **-O**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   **-R**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/server**
+   :::column-end:::
+   :::column span="1":::
+   **-S**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/slotmode**
+   :::column-end:::
+   :::column span="1":::
+   **-X**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/template**
+   :::column-end:::
+   :::column span="1":::
+   **-T**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/user**
+   :::column-end:::
+   :::column span="1":::
+   **-U**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/version**
+   :::column-end:::
+   :::column span="1":::
+   **-V**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/workspace**
+   :::column-end:::
+   :::column span="1":::
+   **-W**
+   :::column-end:::
+:::row-end:::
+
 
 ## Understand exit codes
 
 Version control commands return the following exit codes:
 
-<table>
-<thead>
-<tr>
-<th><p>Exit Code</p></th>
-<th><p>Definition</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><strong>0</strong></p></td>
-<td><p>Success.</p></td>
-</tr>
-<tr>
-<td><p><strong>1</strong></p></td>
-<td><p>Partial success; this means at least something, or possibly everything, failed to succeed.</p></td>
-</tr>
-<tr>
-<td><p><strong>2</strong></p></td>
-<td><p>Unrecognized command.</p></td>
-</tr>
-<tr>
-<td><p><strong>100</strong></p></td>
-<td><p>Nothing succeeded.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Exit Code**
+   :::column-end:::
+   :::column span="3":::
+   **Definition**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **0**
+   :::column-end:::
+   :::column span="3":::
+   Success.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **1**
+   :::column-end:::
+   :::column span="3":::
+   Partial success; this means at least something, or possibly everything, failed to succeed.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **2**
+   :::column-end:::
+   :::column span="3":::
+   Unrecognized command.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **100**
+   :::column-end:::
+   :::column span="3":::
+   Nothing succeeded.
+   :::column-end:::
+:::row-end:::
+
 
 For example:
 

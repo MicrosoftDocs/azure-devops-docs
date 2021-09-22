@@ -94,7 +94,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column span="3":::
    Displays a list of merges for a specific range of target items (for example: **tf merges** tgt\file1.txt; C21-25). This option displays the types of merges (for example, add or edit) and detailed information about the source and target items. This option implies **/format: Detailed**.
 
-   > ![Note]  
+   > [!Note]  
    > You cannot use this option if you have specified a source item. 
    :::column-end:::
 :::row-end:::
