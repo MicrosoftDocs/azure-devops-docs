@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 09/25/2020
+ms.date: 09/22/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -270,15 +270,15 @@ The following example runs the `script` step which is a shortcut for the [Comman
 - script: az pipelines variable-group list --output table
   env:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
-  displayName: 'List variable groups'
+  displayName: 'List variable groups using the script step'
 
 # Using the task syntax
 - task: CmdLine@2
   inputs:
-    script: az pipelines variable-group variable list --group-id $(variableGroupId)
+    script: az pipelines variable-group list --output table
   env:
     AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
-  displayName: 'List variables in Fabrikam-2021 variable group using the command line task'
+  displayName: 'List variable groups using the command line task'
 
 ```
 
