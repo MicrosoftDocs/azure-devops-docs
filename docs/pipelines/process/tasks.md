@@ -261,9 +261,10 @@ inputs: # Specific to each task
 env:
   ENV_VARIABLE_NAME: value
   ENV_VARIABLE_NAME2: value
+  ...
 ```
 
-The following example runs the `script` step which is a shortcut for the [Command line task](../tasks/utility/command-line.md), followed by the equivalent task syntax.
+The following example runs the `script` step which is a shortcut for the [Command line task](../tasks/utility/command-line.md), followed by the equivalent task syntax. This example assigns a value to the `AZURE_DEVOPS_EXT_PAT` environment variable, which is used to authenticating with Azure DevOps CLI.
 
 ```yml
 # Using the script shortcut syntax
