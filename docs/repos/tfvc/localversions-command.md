@@ -31,7 +31,7 @@ tf localversions ItemSpec
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -40,7 +40,7 @@ tf localversions ItemSpec
    :::column span="1":::
    *Itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specify either a file or a folder that contains the files for which you want to display version numbers.
 
    You can specify only a local file or folder. For example, c:\project1\binder.cs is valid, but $/project1/binder.cs is not.
@@ -53,7 +53,7 @@ tf localversions ItemSpec
    :::column span="1":::
    *WorkSpaceName*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Use this argument with the **/workspace** option to specify a workspace other than the one that is mapped to the current directory.
    :::column-end:::
 :::row-end:::
@@ -61,7 +61,7 @@ tf localversions ItemSpec
    :::column span="1":::
    *WorkSpaceOwner*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Use this argument with the *WorkSpaceName* argument if you want to specify a public workspace.
    :::column-end:::
 :::row-end:::
@@ -69,7 +69,7 @@ tf localversions ItemSpec
    :::column span="1":::
    *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The URL of the project collection that contains one or more items for which you want to display the version (for example, http://myserver:8080/tfs/DefaultCollection).
    :::column-end:::
 :::row-end:::
@@ -78,7 +78,7 @@ tf localversions ItemSpec
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -87,7 +87,7 @@ tf localversions ItemSpec
    :::column span="1":::
    **/format**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specify one of the following options to control how the data returned by this command appears:
    
    - **Brief**
@@ -104,7 +104,7 @@ tf localversions ItemSpec
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specify this option if you want the operation to include items in subfolders.
    :::column-end:::
 :::row-end:::
@@ -112,7 +112,7 @@ tf localversions ItemSpec
    :::column span="1":::
    **/workspace**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specify this option to display data about the versions of items that are in a workspace other than the one that is mapped to the current directory.
    :::column-end:::
 :::row-end:::
@@ -120,7 +120,7 @@ tf localversions ItemSpec
    :::column span="1":::
    **/collection**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the project collection.
    :::column-end:::
 :::row-end:::

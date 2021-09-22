@@ -35,7 +35,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -44,7 +44,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    *perm*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Name of a permission or role to modify. For more information about the permission names, see [Team Foundation Server Permissions](../../organizations/security/permissions.md).
    :::column-end:::
 :::row-end:::
@@ -52,7 +52,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    *Username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/user** option. A username value can be expressed in one of two ways, depending on the network settings: DOMAIN\username or username.
    :::column-end:::
 :::row-end:::
@@ -60,7 +60,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    *Groupname*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The user-provided value for the **/group** option.
    :::column-end:::
 :::row-end:::
@@ -68,7 +68,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The URL of the project collection that contains the item for which you want to modify permissions (for example, http://myserver:8080/tfs/DefaultCollection).
    :::column-end:::
 :::row-end:::
@@ -76,7 +76,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    *Itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Identifies the file or folder for which to modify permissions. For more information about how Team Foundation parses *itemspecs* to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
 
    > [!Note]  
@@ -87,7 +87,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    *Username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*&lt;em&gt;UserName</em> or *UserName*.
    :::column-end:::
 :::row-end:::
@@ -97,7 +97,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -105,7 +105,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    **/allow**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a list of Team Foundation version control permissions to add to the allow ACL.
    :::column-end:::
 :::row-end:::
@@ -113,7 +113,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    **/deny**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a list of denied Team Foundation version control access permissions to add to the user access control list.
    :::column-end:::
 :::row-end:::
@@ -121,7 +121,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    **/remove**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a list of Team Foundation version control permissions to remove from both the allow and the deny ACLs.
    :::column-end:::
 :::row-end:::
@@ -129,7 +129,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    **/inherit**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    If you select **yes**, all permissions associated with a parent ACL are inherited by an item. Cannot be combined with the **/remove** option.
    :::column-end:::
 :::row-end:::
@@ -137,7 +137,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    **/user**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the name of a user to modify permissions for.
    :::column-end:::
 :::row-end:::
@@ -145,7 +145,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    **/group**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Name of the group for which to modify permissions.
    :::column-end:::
 :::row-end:::
@@ -153,7 +153,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    **/collection**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the project collection.
    :::column-end:::
 :::row-end:::
@@ -161,7 +161,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Applies the specified command to all items in the directory and any subdirectories.
 
    **/recursive** option works only when viewing the permissions for items in a source tree. It does not work when setting permissions, for example with **/allow**, **/deny** and **/remove** options.

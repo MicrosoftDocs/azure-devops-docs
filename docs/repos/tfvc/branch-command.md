@@ -43,7 +43,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -51,7 +51,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    :::column span="1":::
    **/version**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The version of the item at which you want to create the branch. You can specify a version by:
    
    - Date/time (D10/20/2005)
@@ -72,7 +72,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    :::column span="1":::
    **/lock**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Prevents other users from checking in or checking out items until you check in your pending branch and associated changes. For more information, see [Understanding Lock Types](understand-lock-types.md).
    
    Lock Options:
@@ -89,7 +89,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    :::column span="1":::
    **/noget**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    If this option is specified, local copies of the files and folders in the new branch are not created in the local workspace. However, local copies will be retrieved into the workspace the next time that you perform a recursive Get operation.
 
    > [!Note]  
@@ -100,7 +100,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    :::column span="1":::
    **/noprompt**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Suppresses any prompts for input from you.
    :::column-end:::
 :::row-end:::
@@ -108,7 +108,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    :::column span="1":::
    **/silent**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Implies **/noget** and specifies that output is not written to the Command Prompt window when you create a branch.
    :::column-end:::
 :::row-end:::
@@ -116,7 +116,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    :::column span="1":::
    **/checkin**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Creates and checks in the branch to the server in one operation. This option does not create any pending changes in the local workspace.
    :::column-end:::
 :::row-end:::
@@ -124,7 +124,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    :::column span="1":::
    **/comment**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Adds a comment to the new branch. This option is used only with the **/checkin** option.
    :::column-end:::
 :::row-end:::
@@ -132,7 +132,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    :::column span="1":::
    **/author**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Identifies the author of the new branch. This option is used only with the **/checkin** option.
    :::column-end:::
 :::row-end:::
@@ -140,7 +140,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    For folders branch all files inside, too
    :::column-end:::
 :::row-end:::

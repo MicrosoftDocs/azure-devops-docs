@@ -31,7 +31,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -39,7 +39,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
    :::column span="1":::
    *itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Identifies the file or folder to lock or unlock. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
 
    > [!Note]  
@@ -50,7 +50,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
    :::column span="1":::
    *workspacename*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The user-provided value for the **/workspace** option.
    :::column-end:::
 :::row-end:::
@@ -58,7 +58,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
    :::column span="1":::
    *username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*&lt;em&gt;UserName</em> or *UserName.*
    :::column-end:::
 :::row-end:::
@@ -66,7 +66,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
    :::column span="1":::
    *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The URL of the project collection that contains the file or folder that you want to lock or unlock (for example, http://myserver:8080/tfs/DefaultCollection).
    :::column-end:::
 :::row-end:::
@@ -76,7 +76,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -84,7 +84,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
    :::column span="1":::
    **/lock**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a lock type or removes a lock from an item. For more information, see [Understanding Lock Types](understand-lock-types.md).
    Lock Options:
    - **None**
@@ -99,7 +99,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
    :::column span="1":::
    **/workspace**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the name of a different workspace in which to apply the lock. By default, the lock is applied in the workspace in which you are currently.
    :::column-end:::
 :::row-end:::
@@ -107,7 +107,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
    :::column-end:::
 :::row-end:::
@@ -115,7 +115,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
    :::column span="1":::
    **/collection**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the project collection.
    :::column-end:::
 :::row-end:::

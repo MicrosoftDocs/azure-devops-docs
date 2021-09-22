@@ -34,7 +34,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -43,7 +43,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    *itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Used to identify the file or folder for which to apply the reconcile command. If omitted, all suitable items will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
 
    > [!Note]  
@@ -56,7 +56,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -65,7 +65,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **/clean**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Updates local items on disk to match the server's structure.
    
    Remove items that are not present in version control and add those that are missing on disk but present in version control.
@@ -75,7 +75,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **/promote**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Promote local file changes to version control.
 
    Add locally created items to version control (similar to **tf add**) and remove those 
@@ -88,7 +88,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **/adds**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Promote locally added files and folders to version control.
 
    > [!Note]  
@@ -99,7 +99,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **/deletes**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Promote deleted files and folders to version control.
 
    > [!Note]  
@@ -110,7 +110,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **/exclude**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Items specified in the **/exclude** option will be ignored. The items are separated by comma.
 
    > [!Note]  
@@ -121,7 +121,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **/unmapped**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    By default unmapped and cloaked items are not affected by the **/clean** command. Use this option to clean unmapped and cloaked items as well (see [Mapping Workspace](../../pipelines/repos/tfvc.md#mappings-workspace)).
 
    > [!Note]  
@@ -132,7 +132,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **/diff**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Compares items with source control using MD5 hashes. Use this option to detect items which are different from the workspace version but still have their read-only bit set (+R).
    :::column-end:::
 :::row-end:::
@@ -140,7 +140,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **/preview**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Displays what would occur, without actually performing the **Reconcile** operation.
    :::column-end:::
 :::row-end:::
@@ -148,7 +148,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **/ignore**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    By default **tf /clean** command will update all items based on the current server state, including ignored by version control items. Use this option to avoid changing the ignored items.<p> You can configure which kinds of items are ignored using a ".tfignore" file (see [Add Files: .tfignore file](add-files-server.md#tfignore)).
 
    > [!Note]  
@@ -159,7 +159,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **/noignore**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    By default **tf /promote** command will promote all items except those that are ignored by version control. Use this option to promote the ignored items as well. This behavior is similar to using **/noignore** in the **tf add** command.<p> You can configure which kinds of items are ignored using a ".tfignore" file (see [Add Files: .tfignore file](add-files-server.md#tfignore)).
 
    > [!Note]  
@@ -170,7 +170,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Reconciles items in the specific directory and subdirectories.
    :::column-end:::
 :::row-end:::
@@ -178,7 +178,7 @@ tf reconcile [itemspec]
    :::column span="1":::
    **/noprompt**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::

@@ -51,7 +51,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -59,7 +59,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    *Url*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Identifies the proxy server. You must use the following format: http://proxyServerName:proxyPortNumber.
 
    Where *proxyServerName* is the name of the proxy server and *proxyPortNumber* is the assigned listening port (for example, **http://server:8081**).
@@ -69,7 +69,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Identifies the project collection. You must use the following format: http://ApplicationTierServerName:PortNumber/*Directory*/*CollectionName*.
 
    Where *ApplicationTierServerName* is the name of the application-tier server, *PortNumber* is the assigned listening port, and *Directory*/*CollectionName* are the names of the directory and the collection (for example, **http://server:8080/tfs/newcollection1**).
@@ -79,7 +79,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    *UserName*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a user name value as either *Domain*&lt;em&gt;UserName</em> or *UserName*.
    :::column-end:::
 :::row-end:::
@@ -87,7 +87,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    *Password*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a password for the user name.
    :::column-end:::
 :::row-end:::
@@ -96,7 +96,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -104,7 +104,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    **/configure**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Configures your client computer to use a proxy server.
    :::column-end:::
 :::row-end:::
@@ -112,7 +112,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    **/collection**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the project collection.
    :::column-end:::
 :::row-end:::
@@ -120,7 +120,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate.
    :::column-end:::
 :::row-end:::
@@ -128,7 +128,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    **/add**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Adds a proxy record to Visual Studio Team Foundation Server about the location and availability of proxy servers on your network.
    :::column-end:::
 :::row-end:::
@@ -136,7 +136,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    **/name**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Associates a name with a proxy record.
    :::column-end:::
 :::row-end:::
@@ -144,7 +144,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    **/site**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Associates an Active Directory domain with a proxy record.
    :::column-end:::
 :::row-end:::
@@ -152,7 +152,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    **/description**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a description of the proxy record.
    :::column-end:::
 :::row-end:::
@@ -160,7 +160,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    **/default**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the scope of the proxy record. If you add a proxy record with the default set to global, the first time that a developer performs a get operation, Team Foundation Server will redirect that developer&#39;s request to the proxy that is specified by the global record. If you add a proxy record with the default set to site, the first time that a developer from within the specified Active Directory domain performs a get operation, Team Foundation Server will redirect that developer&#39;s request to the proxy that is specified by the record that is associated with the site.
 
    You can specify one of the following values:
@@ -173,7 +173,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    **/delete**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Deletes a proxy record from Team Foundation Server.
    :::column-end:::
 :::row-end:::
@@ -181,7 +181,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    **/list**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Lists proxy records in Team Foundation Server.
    :::column-end:::
 :::row-end:::
@@ -189,7 +189,7 @@ tf proxy /enabled:(true|false)
    :::column span="1":::
    **/enabled**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Enables or disables proxy.
    - **true**
    - **false**

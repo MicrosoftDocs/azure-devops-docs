@@ -29,7 +29,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -37,7 +37,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column span="1":::
    *source*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Filters the merge history to include only entries with the specified sources.
 
    This parameter is optional.
@@ -47,7 +47,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column span="1":::
    *destination*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the destination branch for which merge history is displayed.
 
    This parameter is required.
@@ -57,7 +57,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column span="1":::
    *username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*&lt;em&gt;UserName</em> or *UserName*.
    :::column-end:::
 :::row-end:::
@@ -65,7 +65,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column span="1":::
    *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The URL of the project collection that contains the branches about which you want to display the merge history (for example, http://myserver:8080/tfs/DefaultCollection).
    :::column-end:::
 :::row-end:::
@@ -75,7 +75,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -83,7 +83,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Displays information for all merges in specified Team Foundation version control server folder and its subfolders.
    :::column-end:::
 :::row-end:::
@@ -91,7 +91,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column span="1":::
    **/extended**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Displays a list of merges for a specific range of target items (for example: **tf merges** tgt\file1.txt; C21-25). This option displays the types of merges (for example, add or edit) and detailed information about the source and target items. This option implies **/format: Detailed**.
 
    > ![Note]  
@@ -102,7 +102,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column span="1":::
    **/format**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the formats in which merge history can appear:
 
    - **Brief**: default value, shows the changeset numbers for both the source and target items and the author and the date of the target checkin.
@@ -113,7 +113,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
    :::column-end:::
 :::row-end:::
@@ -121,7 +121,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column span="1":::
    **/showall**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Displays all past merges for a given target item under its current name and all previously used names.
    :::column-end:::
 :::row-end:::
@@ -129,7 +129,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column span="1":::
    **/collection**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the project collection.
    :::column-end:::
 :::row-end:::

@@ -31,7 +31,7 @@ tf undo [/workspace:workspacename[;workspaceowner]]
    :::column span="1":::
    Parameter
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Description
    :::column-end:::
 :::row-end:::
@@ -39,7 +39,7 @@ tf undo [/workspace:workspacename[;workspaceowner]]
    :::column span="1":::
    **/collection** : *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the URL of the project collection that contains the items. For example: `http://myserver:8080/tfs/DefaultCollection`.
 
    If you do not use the **/workspace** option, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.
@@ -49,7 +49,7 @@ tf undo [/workspace:workspacename[;workspaceowner]]
    :::column span="1":::
    *itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the scope of the items. You can specify more than one *itemspec* argument. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
@@ -57,7 +57,7 @@ tf undo [/workspace:workspacename[;workspaceowner]]
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user account to use to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
@@ -65,7 +65,7 @@ tf undo [/workspace:workspacename[;workspaceowner]]
    :::column span="1":::
    **/noprompt**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
@@ -73,7 +73,7 @@ tf undo [/workspace:workspacename[;workspaceowner]]
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Recursively undoes changes to items in the specified directory and any subdirectories.
    :::column-end:::
 :::row-end:::
@@ -81,7 +81,7 @@ tf undo [/workspace:workspacename[;workspaceowner]]
    :::column span="1":::
    **/workspace** *workspacename*[;*workspaceowner*]
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the name of the workspace in which you want to undo pending changes. If not specified, the workspace is the one that maps the current directory.
 
    You can specify *workspaceowner* to undo a pending change in a workspace that belongs to a specific user. If not specified, the workspace is presumed to be the current user, or if specified, the **/login:***username*. You must have the UndoOther permission set to Allow to undo changes in another user&#39;s workspace.

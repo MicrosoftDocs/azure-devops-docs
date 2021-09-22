@@ -32,7 +32,7 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column span="1":::
    **Parameter**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -41,7 +41,7 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column span="1":::
    **/collection**: *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the URL of the project collection that contains the items. For example: `http://myserver:8080/tfs/DefaultCollection`.
 
    By default, the project collection is presumed to be the one that contains the workspace that maps the current directory.
@@ -51,7 +51,7 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column span="1":::
    **/format**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies how much detail to display about each changeset when the **/noprompt** option is specified:
 
    
@@ -64,7 +64,7 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column span="1":::
    **/itemmode**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    You cannot combine this option with the **/slotmode** option. See [Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control](/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control).
    :::column-end:::
 :::row-end:::
@@ -72,7 +72,7 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column span="1":::
    *itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the items for which to display history. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
@@ -80,7 +80,7 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column span="1":::
    **/noprompt**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    This option:
 
    
@@ -95,7 +95,7 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column span="1":::
    **/login**:*username*,[*password*]
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
@@ -103,7 +103,7 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Recursively retrieves historical data on items in the specified directory and any subdirectories.
    :::column-end:::
 :::row-end:::
@@ -111,7 +111,7 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column span="1":::
    **/slotmode**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    You cannot combine this option with the **/itemmode** option. See [Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control](/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control).
    :::column-end:::
 :::row-end:::
@@ -119,7 +119,7 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column span="1":::
    **/sort**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Sorts the revision history for one or more files or folders in either of the following orders:
 
    
@@ -135,7 +135,7 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column span="1":::
    **/stopafter**:*number*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the maximum number of changesets to display in the history data.
    :::column-end:::
 :::row-end:::
@@ -143,7 +143,7 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column span="1":::
    **/user**:*username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Filters the historical data to show changes made by the specified user. An asterisk (*****) symbol includes data on changes from all users (the default).
    :::column-end:::
 :::row-end:::
@@ -151,7 +151,7 @@ tf hist[ory] itemspec [/version:versionspec]
    :::column span="1":::
    **/version**:*versionspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies one of the following limits on the history data:
 
    

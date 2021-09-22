@@ -30,7 +30,7 @@ tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -39,7 +39,7 @@ tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,
    :::column span="1":::
    *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The URL of the project collection that contains the item that you want to remove from an existing label (for example, http://myserver:8080/tfs/DefaultCollection).
    :::column-end:::
 :::row-end:::
@@ -47,7 +47,7 @@ tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,
    :::column span="1":::
    *labelname*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the name of the label to remove from the specified items.
    :::column-end:::
 :::row-end:::
@@ -55,7 +55,7 @@ tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,
    :::column span="1":::
    *itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Identifies the file or folder from which to remove the specified label. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
 
    > [!Note]  
@@ -66,7 +66,7 @@ tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,
    :::column span="1":::
    *username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName*.
    :::column-end:::
 :::row-end:::

@@ -38,7 +38,7 @@ To perform these procedures, you must have the following permissions set:
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    The release of Visual Studio Team Foundation Server 2010 began a distinction between branches and folders. For example, in the following illustration you can see how branches and folders are displayed with different icons.
 
    ![A branch and a folder](media/merge-folders-files/IC268252.png)
@@ -66,7 +66,7 @@ You can use the **Tracking Changeset** window to view information such as, where
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    This procedure can be performed only for changesets that affect a branch. For example, in the following illustration you can view how branches and folders are displayed with different icons.
 
    ![A branch and a folder](media/merge-folders-files/IC268252.png)
@@ -131,7 +131,7 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
           :::column span="1":::
           **Changeset**
           :::column-end:::
-          :::column span="1":::
+          :::column span="3":::
           Merge by specifying a [changeset](find-view-changesets.md) version.
           :::column-end:::
        :::row-end:::
@@ -139,7 +139,7 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
           :::column span="1":::
           **Date**
           :::column-end:::
-          :::column span="1":::
+          :::column span="3":::
           Merge by specifying a date version.
           :::column-end:::
        :::row-end:::
@@ -147,7 +147,7 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
           :::column span="1":::
           **Label**
           :::column-end:::
-          :::column span="1":::
+          :::column span="3":::
           Merge by specifying a [label](use-labels-take-snapshot-your-files.md) version.
           :::column-end:::
        :::row-end:::
@@ -155,7 +155,7 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
           :::column span="1":::
           **Latest Version**
           :::column-end:::
-          :::column span="1":::
+          :::column span="3":::
           Merge by specifying the latest version.
           :::column-end:::
        :::row-end:::
@@ -163,7 +163,7 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
           :::column span="1":::
           **Workspace**
           :::column-end:::
-          :::column span="1":::
+          :::column span="3":::
           Merge by specifying a [workspace](create-work-workspaces.md) version.
           :::column-end:::
        :::row-end:::

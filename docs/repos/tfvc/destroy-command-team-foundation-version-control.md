@@ -37,7 +37,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column span="1":::
    **Argument**
    :::column-end:::   
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -45,7 +45,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column span="1":::
    *itemspec1* *[itemspec2...itemspecN]*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the server path of the file or folder to be destroyed. Use multiple *itemspec* values to delete multiple items. For example, `tf destroy $/TeamProject1 $/teamProject2 $/TeamProject3`.
    Local paths are not supported.
    :::column-end:::
@@ -54,7 +54,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column span="1":::
    *versionspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a version such as C58 for the **/keephistory** or **/stopat** options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
    :::column-end:::
 :::row-end:::
@@ -62,7 +62,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column span="1":::
    *username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN UserName* or *UserName.*
    :::column-end:::
 :::row-end:::
@@ -70,7 +70,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column span="1":::
    *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The URL of the project collection that contains files that you want to destroy (for example, http://myserver:8080/tfs/DefaultCollection).
    :::column-end:::
 :::row-end:::
@@ -79,7 +79,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -87,7 +87,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column span="1":::
    **/keephistory**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Specifies that the history of a file is preserved even as its contents are destroyed. This cannot be specified with the **/preview** option.
    :::column-end:::
 :::row-end:::
@@ -95,7 +95,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column span="1":::
    **/stopat**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Can be used only if **/keephistory** is specified also.
    
    Specifies the file version for the file, and the files that follow thereafter, for which the history is preserved.
@@ -109,7 +109,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column span="1":::
    **/preview**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Displays in the Command Prompt window the files that would be destroyed. When **tf destroy** runs in the preview mode, the files are not actually destroyed.
 
    > [!Note]  
@@ -120,7 +120,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column span="1":::
    **/startcleanup**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Forces the TFVC metadata clean-up process to start immediately after the deletion finishes. If the user does not specify **/startcleanup**, the destroyed metadata clean-up process occurs when the database maintenance cleans up all the files that are no longer referenced by Visual Studio Team Foundation Server. By default, the clean-up is scheduled to run every 5 days. Seven days after the TFVC metadata are cleaned up the content will be deleted by another clean-up process. By default, this content clean-up process runs once each day.
    :::column-end:::
 :::row-end:::
@@ -130,7 +130,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    
    **/i**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies that the destruction of files is non-interactive. **/i** is an alias for **/noprompt**.
    :::column-end:::
 :::row-end:::
@@ -138,7 +138,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column span="1":::
    **/silent**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies that, when you destroy files or folders, the output is not written to the command prompt window.
    :::column-end:::
 :::row-end:::
@@ -146,7 +146,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate the user with Team Foundation Server.
    :::column-end:::
 :::row-end:::
@@ -154,7 +154,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column span="1":::
    **/collection**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the project collection.
    :::column-end:::
 :::row-end:::

@@ -29,7 +29,8 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
 
 ## Parameters
 
-:::row:::   :::column span="1":::
+:::row:::
+   :::column span="1":::
    **Argument**
    :::column-end:::
    :::column span="1":::
@@ -40,7 +41,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    :::column span="1":::
    *itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Identifies the file or folder to delete from the Team Foundation version control server. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
 
    > [!Note]  
@@ -51,7 +52,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    :::column span="1":::
    *username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*&lt;em&gt;UserName or *UserName.*
    :::column-end:::
 :::row-end:::
@@ -60,7 +61,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -68,7 +69,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    :::column span="1":::
    **/lock**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Prevents other users from checking in or checking out the specified items. For more information, see [Understanding Lock Types](understand-lock-types.md).
    
    Lock Options:
@@ -90,7 +91,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Deletes all files and/or folders and subfolders that match the itemspec from the specified directory.
 
    - **tf delete folder1\folder2 /recursive** (where folder1\folder2 exists and is a directory) deletes all the files and subdirectories contained by folder1\folder2 and folder1\folder2 itself.
@@ -109,7 +110,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
    :::column-end:::
 :::row-end:::

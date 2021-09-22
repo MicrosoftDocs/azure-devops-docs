@@ -40,7 +40,7 @@ tf undelete [/noget] [/lock:(none|checkin|checkout)]
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -48,7 +48,7 @@ tf undelete [/noget] [/lock:(none|checkin|checkout)]
    :::column span="1":::
    **/noget**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Restores the deleted item to your workspace and then, pending completion of a check-in operation, restores the item on the server but does not immediately retrieve a physical copy of the item to disk.
    :::column-end:::
 :::row-end:::
@@ -56,7 +56,7 @@ tf undelete [/noget] [/lock:(none|checkin|checkout)]
    :::column span="1":::
    **/lock**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Prevents other users from checking in or checking out the specified files. For more information, see [Understanding Lock Types](understand-lock-types.md).
 
    Lock Options:
@@ -72,7 +72,7 @@ tf undelete [/noget] [/lock:(none|checkin|checkout)]
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Restores all files and subfolders from the specified directory.
    :::column-end:::
 :::row-end:::
@@ -80,7 +80,7 @@ tf undelete [/noget] [/lock:(none|checkin|checkout)]
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
    :::column-end:::
 :::row-end:::

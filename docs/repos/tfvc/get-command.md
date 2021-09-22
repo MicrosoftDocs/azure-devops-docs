@@ -30,7 +30,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    :::column span="1":::
    **Parameter**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -39,7 +39,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    :::column span="1":::
    **/all**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    If you use a [local workspace](decide-between-using-local-server-workspace.md) (recommended), then it&#39;s unlikely you will have to use this option.
 
    You can use this option to restore an item that you have accidentally deleted from a server workspace.
@@ -51,7 +51,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    :::column span="1":::
    **/force**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Combines **/all** and **/overwrite**.
    :::column-end:::
 :::row-end:::
@@ -59,7 +59,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    :::column span="1":::
    *itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the scope of the items to get. You can specify more than one *itemspec* argument. If no *itemspec* is provided, the system recursively gets all items in the current workspace.
 
    For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
@@ -69,7 +69,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    :::column span="1":::
    **/login**:*username*,[*password*]
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
@@ -77,7 +77,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    :::column span="1":::
    **/noautoresolve**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    By default, the system automatically attempts to **AutoResolve All** (see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md)). Specify this option to disable this default behavior.
    :::column-end:::
 :::row-end:::
@@ -85,7 +85,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    :::column span="1":::
    **/noprompt**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Suppresses the display of windows and dialog boxes and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
@@ -93,7 +93,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    :::column span="1":::
    **/overwrite**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    If you use a [local workspace](decide-between-using-local-server-workspace.md) (recommended), then it is unlikely you will have to use this option.
 
    By default, the system does not retrieve an item if it is writable (that is, if its read-only attribute is cleared) on the client machine. This option overrides the default behavior and overwrites a writable item, unless the item is checked out.
@@ -103,7 +103,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    :::column span="1":::
    **/preview**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Displays what would occur, without actually performing the **Get** operation.
    :::column-end:::
 :::row-end:::
@@ -111,7 +111,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Recursively gets items in the specified directory and any subdirectories. If you do not specify an *itemspec*, then this option is implied.
    :::column-end:::
 :::row-end:::
@@ -119,7 +119,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    :::column span="1":::
    **/remap**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    See [phkelley&#39;s blog: tf get /remap](/archive/blogs/phkelley/tf-get-remap).
    :::column-end:::
 :::row-end:::
@@ -127,7 +127,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
    :::column span="1":::
    **/version**:*versionspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the maximum version, or the minimum and the maximum versions, to display in the history data. The default is `/version:T` (the latest version).
 
    For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).

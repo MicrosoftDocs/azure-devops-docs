@@ -59,7 +59,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    ****Argument****
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    ****Description****
    :::column-end:::
 :::row-end:::
@@ -68,7 +68,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    *workspacename*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the name of the workspace on which the command operates for the **/workspace** option.
    :::column-end:::
 :::row-end:::
@@ -76,7 +76,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    *serverfolder*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the name of a Team Foundation version control server folder.
    :::column-end:::
 :::row-end:::
@@ -84,7 +84,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    *localfolder*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the name of a local folder.
    :::column-end:::
 :::row-end:::
@@ -92,7 +92,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The URL of the project collection that contains the folders that you want to compare with server folders (for example, http://myserver:8080/tfs/DefaultCollection/).
    :::column-end:::
 :::row-end:::
@@ -100,7 +100,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    *username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName*.
    :::column-end:::
 :::row-end:::
@@ -110,7 +110,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    ****Option****
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    ****Description****
    :::column-end:::
 :::row-end:::
@@ -119,7 +119,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    **/workspace**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the name of the workspace to work in.
    :::column-end:::
 :::row-end:::
@@ -127,7 +127,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    **/map**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies an association between a local folder and the Team Foundation version control server folder. By default, the workfold command uses this option, even if unspecified, unless **/unmap**, **/cloak**, or **/decloak** is specified.
    :::column-end:::
 :::row-end:::
@@ -135,7 +135,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    **/unmap**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies which folder mapping should be removed from the workspace.
    :::column-end:::
 :::row-end:::
@@ -143,7 +143,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    **/cloak**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies that the folder should be excluded from any version control actions made in the workspace.
    :::column-end:::
 :::row-end:::
@@ -151,7 +151,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    **/decloak**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Decloaks a folder so the folder can be retrieved into the workspace.
    :::column-end:::
 :::row-end:::
@@ -159,7 +159,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    **/collection**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the project collection.
    :::column-end:::
 :::row-end:::
@@ -167,7 +167,7 @@ tf workfold /decloak serverfolder
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
    :::column-end:::
 :::row-end:::

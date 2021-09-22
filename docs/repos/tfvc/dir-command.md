@@ -31,7 +31,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -40,7 +40,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    :::column span="1":::
    *itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Identifies the file or folder to return information about. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
 
    > [!Note]  
@@ -48,10 +48,10 @@ tf dir itemspec [/version:versionspec] [/recursive]
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    *versionspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The user-provided value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
    :::column-end:::
 :::row-end:::
@@ -59,7 +59,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    :::column span="1":::
    *username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName*.
    :::column-end:::
 :::row-end:::
@@ -67,7 +67,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    :::column span="1":::
    *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The URL of the project collection that contains one or more files or folders about which you want to display information (for example, http://myserver:8080/tfs/DefaultCollection/).
    :::column-end:::
 :::row-end:::
@@ -77,7 +77,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -86,7 +86,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    :::column span="1":::
    **/version**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies that Team Foundation should only show files and folders of a certain version.
    :::column-end:::
 :::row-end:::
@@ -94,7 +94,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Displays all files and subfolders in the specified directory.
    :::column-end:::
 :::row-end:::
@@ -102,7 +102,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    :::column span="1":::
    **/folders**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Displays folders only.
    :::column-end:::
 :::row-end:::
@@ -110,7 +110,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    :::column span="1":::
    **/deleted**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Displays deleted items and existing items. The deleted items are followed with ;*X*3 where 3 is the deletion id.
    :::column-end:::
 :::row-end:::
@@ -118,7 +118,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
    :::column-end:::
 :::row-end:::
@@ -126,7 +126,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
    :::column span="1":::
    **/collection**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the project collection.
    :::column-end:::
 :::row-end:::
