@@ -287,7 +287,7 @@ Use the following syntax to specify a *versionspec*.
 
    :::column-end:::
    :::column span="1":::
-   **[C]***n*
+   [**C**]*n*
 
    :::column-end:::
    :::column span="3":::
@@ -304,7 +304,7 @@ Use the following syntax to specify a *versionspec*.
 
    -- or --
 
-   <a id="CodeSnippetContainerCode_3ec2c94a-8633-431c-b2d0-29836c305073></a>
+   <a id="CodeSnippetContainerCode_3ec2c94a-8633-431c-b2d0-29836c305073"></a>
    ```
    c:\code\SiteApp\Main&gt;tf get readme.txt /v:8
    ```
