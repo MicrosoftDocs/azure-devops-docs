@@ -36,7 +36,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **Parameter**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -45,7 +45,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/author**:*author name*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Identifies the author of the pending changes so that one user can check in changes on behalf of another user.
 
    Requires the **CheckinOther **permission. See [Permissions and groups reference](../../organizations/security/permissions.md)
@@ -55,7 +55,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/bypass**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Bypasses a gated check-in requirement. For more information, see [Check in to a folder that is controlled by a gated check-in build process](check-folder-controlled-by-gated-check-build-process.md).
    :::column-end:::
 :::row-end:::
@@ -63,7 +63,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/collection**:*TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    If you use the **shelveset** option, the **/collection** option specifies the URL of the project collection that contains the shelveset. For example:`http://myserver:8080/tfs/DefaultCollection`.
 
    By default, the project collection is presumed to be the one that contains the workspace that maps the current directory.
@@ -73,7 +73,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/comment**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Associates a comment with the changeset using one of the following arguments:
 
    
@@ -88,7 +88,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/force**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Forces a check-in on items with pending edits even when there are no content changes in the file.
    :::column-end:::
 :::row-end:::
@@ -96,7 +96,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    *itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the scope of the items to check in from the user&#39;s workspace. You can specify more than one *Itemspec* argument. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
@@ -104,7 +104,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/login**:*username*,[*password*]
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
@@ -112,7 +112,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/new**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The selected state of each pending change (as shown in the **Check In** dialog box), the comment, associated work items, check-in notes, and check-in policy override reason, are stored on your dev machine as pending changes until you check them in. The **/new** option clears this check-in metadata before you check in.
 
    This option and the behavior it modifies have no effect when you use the **/noprompt** option.
@@ -122,7 +122,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/noautoresolve**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    By default, the system automatically attempts to **AutoResolve All** (see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md)). Specify this option to disable this default behavior.
    :::column-end:::
 :::row-end:::
@@ -130,7 +130,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/noprompt**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Suppresses the display of windows and dialog boxes (such as the **Check In** dialog box) and redirects output data to the command prompt. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
@@ -138,7 +138,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/notes**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides one or more check-in notes to associate with the changeset using one of the following arguments:
 
    
@@ -160,7 +160,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/override**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Overrides a check-in policy using one of the following arguments:
 
    
@@ -175,7 +175,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Recursively checks in items in the specified directory and any subdirectories.
    :::column-end:::
 :::row-end:::
@@ -183,7 +183,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/saved**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Ignore this parameter.
    :::column-end:::
 :::row-end:::
@@ -191,7 +191,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/shelveset**:*shelvesetname[;owner]*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a shelveset to check in. The optional *owner* argument is used to specify a shelveset that the current user does not own.
 
    > [!Note]  
@@ -202,7 +202,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column span="1":::
    **/validate**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Tests whether the check in would succeed without checking in the files. The system evaluates check-in policies, check-in notes, and lists conflicts.
 
    > [!Note]  

@@ -31,7 +31,7 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -40,7 +40,7 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
    :::column span="1":::
    *shelvesetname*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The name of the shelveset to restore.
    :::column-end:::
 :::row-end:::
@@ -48,7 +48,7 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
    :::column span="1":::
    *ownername*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The name of the shelveset owner.
    :::column-end:::
 :::row-end:::
@@ -56,7 +56,7 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
    :::column span="1":::
    *Itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Identifies the file or folder revisions to unshelve into the current workspace. If this parameter is not included, all pending changes in the specified shelveset are unshelved, by default. Server paths are not allowed.
 
    For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
@@ -69,7 +69,7 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
    :::column span="1":::
    *username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or <i>UserName&lt;/i.
    :::column-end:::
 :::row-end:::
@@ -79,7 +79,7 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -88,7 +88,7 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
    :::column span="1":::
    **/move**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Deletes the specified shelveset from the server for Team Foundation version control upon successful completion of the unshelve operation. This option cannot be combined with an *itemspec*.
 
    You can also delete a shelveset using the **shelve** command.
@@ -98,7 +98,7 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    If specified, the itemspec is matched recursively.
    :::column-end:::
 :::row-end:::
@@ -106,7 +106,7 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
    :::column span="1":::
    **/noprompt**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    If specified, you are not prompted for input.
    :::column-end:::
 :::row-end:::
@@ -114,7 +114,7 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
    :::column-end:::
 :::row-end:::

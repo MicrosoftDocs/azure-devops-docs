@@ -30,7 +30,7 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -38,7 +38,7 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
    :::column span="1":::
    *Itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Identifies the file or folder that contains the branch you want to examine. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
    :::column-end:::
 :::row-end:::
@@ -46,7 +46,7 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
    :::column span="1":::
    *Versionspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
    :::column-end:::
 :::row-end:::
@@ -54,7 +54,7 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
    :::column span="1":::
    *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The URL of the project collection that contains a file or folder in a branch for which you want to display the history (for example, `http://myserver:8080/tfs/DefaultCollection`.
    :::column-end:::
 :::row-end:::
@@ -62,7 +62,7 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
    :::column span="1":::
    *username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *Domain\UserName* or *UserName*.
    :::column-end:::
 :::row-end:::
@@ -72,7 +72,7 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -81,7 +81,7 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
    :::column span="1":::
    **/version**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the version for the path. This option is rarely used.
    :::column-end:::
 :::row-end:::
@@ -89,7 +89,7 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
    :::column span="1":::
    **/collection**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the project collection.
    :::column-end:::
 :::row-end:::
@@ -97,7 +97,7 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
    :::column-end:::
 :::row-end:::

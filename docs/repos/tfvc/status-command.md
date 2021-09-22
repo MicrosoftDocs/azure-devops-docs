@@ -37,7 +37,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -45,7 +45,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
    :::column span="1":::
    **/collection**: *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    When you use the **/workspace** option, specifies the URL of the project collection that contains the workspace that contains the pending changes. For example: `http://myserver:8080/tfs/DefaultCollection`. If not specified, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.
 
    Ignored if you do not use the **/workspace** option.
@@ -58,7 +58,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
    :::column span="1":::
    **/format**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies how much detail to display about each pending change:
    - **Brief** (default): Displays one line about each pending change that includes: file name, changes, whether the item is locked (indicated by an asterisk (****<em>) symbol), local path, and user (if using the **/collection** and **/workspace** options). Some of the data might be truncated.
    - **Detailed**: Displays a full description of each pending change. In addition to the above information, this option displays additional data such as date and time, and lock.
@@ -68,7 +68,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
    :::column span="1":::
    *itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the items for which you want pending change data. For syntax, see [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md). You can specify more than one *itemspec* argument.
    :::column-end:::
 :::row-end:::
@@ -76,7 +76,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user account to use to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).
    :::column-end:::
 :::row-end:::
@@ -84,7 +84,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Recursively retrieves data about pending changes to items in the specified directory and any subdirectories.
    :::column-end:::
 :::row-end:::
@@ -92,7 +92,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
    :::column span="1":::
    **/shelveset**:*shelvesetname*[;*shelvesetowner*]
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the shelveset that contains the changes you want to list.
 
    This option cannot be combined with the **/workspace** option.
@@ -102,7 +102,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
    :::column span="1":::
    **/user**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Lists all pending changes made by the specified user. An asterisk (**/***) symbol includes data about changes from all users. The default is the current user.
 
    Acceptable values for this option:
@@ -116,7 +116,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
    :::column span="1":::
    **/workspace** *workspacename*[;*workspaceowner*]
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the name of the workspace that contains the pending changes. If not specified, the workspace is the one that maps the current directory.
 
    You can specify *workspaceowner* to get data about pending changes in a workspace that belongs to a specific user. If not specified, the workspace is presumed to be the current user, or if specified, the **/login:***username*.

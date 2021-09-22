@@ -26,7 +26,7 @@ tf help commandname
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -35,7 +35,7 @@ tf help commandname
    :::column span="1":::
    *commandname*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a Team Foundation command for which to display help about the syntax.
    :::column-end:::
 :::row-end:::

@@ -80,7 +80,7 @@ If the item is a file, then additional data is displayed in the following column
 By using the **Changesets** tab, you can perform the following tasks:
 
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    **Task**
    :::column-end:::
    :::column span="1":::
@@ -88,7 +88,7 @@ By using the **Changesets** tab, you can perform the following tasks:
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    **View the item as it existed when the changeset was checked in:** Double click the changeset or right-click it, and then click **View**. (This command is available only if the item is a file.)
    :::column-end:::
    :::column span="1":::
@@ -96,7 +96,7 @@ By using the **Changesets** tab, you can perform the following tasks:
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    **Get more details about a changeset:** Right-click a changeset and then click **Changeset Details** to get information such as:
 
    - Other source files that are part of the changeset.
@@ -108,7 +108,7 @@ By using the **Changesets** tab, you can perform the following tasks:
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    **Compare a past version with the current version:** Right-click a changeset and then click **Compare**.
    
    **Compare a past version with another past version:**
@@ -125,7 +125,7 @@ By using the **Changesets** tab, you can perform the following tasks:
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    **Get a past version of the item: **Right-click a changeset and then click **Get This Version** to download the past version of the item to your workspace.
    :::column-end:::
    :::column span="1":::
@@ -133,7 +133,7 @@ By using the **Changesets** tab, you can perform the following tasks:
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    **View which users made specific changes within a file:** Right-click a changeset and then click **Annotate**. (This command is available only if the item is a file.)
    :::column-end:::
    :::column span="1":::
@@ -141,7 +141,7 @@ By using the **Changesets** tab, you can perform the following tasks:
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    **Get more details about a merge:** If the changeset resulted from a **merge** change, you can expand this item. Expand the node to display the changesets that were merged into this item from another branch. (This command is available only if the item is a file.)
    :::column-end:::
    :::column span="1":::
@@ -149,7 +149,7 @@ By using the **Changesets** tab, you can perform the following tasks:
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    **Get more details about changes that were made before a rename change:** If the changeset includes a **rename** change, you can expand this item. Expand the node to display the changesets that occurred before the **rename** change was made.
    :::column-end:::
    :::column span="1":::
@@ -157,7 +157,7 @@ By using the **Changesets** tab, you can perform the following tasks:
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    **View other branches to which this changeset has been merged: **Right-click the changeset and click **Track Changeset**.
    :::column-end:::
    :::column span="1":::
@@ -165,7 +165,7 @@ By using the **Changesets** tab, you can perform the following tasks:
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    **Roll back changes from one changeset** Select a single changeset and choose **Rollback Entire Changeset**.
    :::column-end:::
    :::column span="1":::
@@ -173,7 +173,7 @@ By using the **Changesets** tab, you can perform the following tasks:
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    **Roll back changes from two or more consecutive changesets** Select a set of consecutive changesets and choose **Rollback**.
    :::column-end:::
    :::column span="1":::
@@ -181,7 +181,7 @@ By using the **Changesets** tab, you can perform the following tasks:
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
    **Display non-recursive history of a folder** You can get this data only from the command prompt.
    :::column-end:::
    :::column span="1":::

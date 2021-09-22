@@ -30,7 +30,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -39,7 +39,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    *sourcePath*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The local or server path that is the source path in the compare operation. If this argument is not supplied and *targetPath* is the local mapped path, *sourcePath* is the server path that is mapped to it.
    :::column-end:::
 :::row-end:::
@@ -47,7 +47,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    *targetPath*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The local or server path that is the target path in the compare operation.
    :::column-end:::
 :::row-end:::
@@ -55,7 +55,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    *filter*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a semicolon delimited list of inclusion and exclusion filter masks for the **/filter** option. Default is &quot;*&quot; (include all). The Remarks section in this topic includes a detailed description of filters and masks.
    :::column-end:::
 :::row-end:::
@@ -63,7 +63,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The URL of the project collection that contains the files for which you want to display and compare the differences (for example,`http://myserver:8080/tfs/DefaultCollection`).
    :::column-end:::
 :::row-end:::
@@ -71,7 +71,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    *username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName.*
    :::column-end:::
 :::row-end:::
@@ -81,7 +81,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -90,7 +90,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Specifies that the two folders are fully compared recursively.
    :::column-end:::
 :::row-end:::
@@ -98,7 +98,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    **/noprompt**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. **tf folderdiff** runs without displaying user interface. The output is displayed in the Command Prompt window instead.
    :::column-end:::
 :::row-end:::
@@ -106,7 +106,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    **/filter**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Specifies a list of inclusion and filter masks that are used to match the names of files and folders to be compared.
    :::column-end:::
 :::row-end:::
@@ -114,7 +114,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    **/filterLocalPathsOnly**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Specifies that only the local paths will be filtered, unless the corresponding server path exists.
    :::column-end:::
 :::row-end:::
@@ -122,7 +122,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    **/view**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Specifies what information is included in the output using a comma separated list of the following values:
 
    *same*-output displays files with the same content in both source and target directories.
@@ -140,7 +140,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    **/collection**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the project collection.
    :::column-end:::
 :::row-end:::
@@ -148,7 +148,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
    :::column-end:::
 :::row-end:::

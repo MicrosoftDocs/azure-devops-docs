@@ -35,7 +35,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -43,7 +43,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="1":::
    *ChangesetFrom~ChangesetTo*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Use this argument with the **/changeset** option to specify the changesets that you want to roll back. You can specify the changesets in the following ways:
 
    - A single changeset
@@ -62,7 +62,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="1":::
    *ItemSpec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Use this argument to specify one or more items that you want to roll back. If you are using the **/toversion** option, you must specify this argument.
 
    For more information about how Team Foundation parses item specifications, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
@@ -75,7 +75,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="1":::
    *VersionSpec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The user-provided value for both the **/version** option and the **/toversion** option.
 
    Use this argument with the **/toversion** option to revert a file to its state in a specific changeset. You can specify the version in the following ways:
@@ -100,7 +100,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -108,7 +108,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="1":::
    **/changeset**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Use this option to specify one or more specific changesets that you want to negate.
    :::column-end:::
 :::row-end:::
@@ -116,7 +116,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="1":::
    **/keepmergehistory**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    This option has an effect only if one or more of the changesets that you are rolling back include a **branch** or **merge** change. Specify this option if you want future merges between the same source and the same target to exclude the changes that you are rolling back.
    :::column-end:::
 :::row-end:::
@@ -124,7 +124,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="1":::
    **/lock**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specify this option to prevent other users from checking in or checking out items until you finish rolling back all associated changes. For more information, see [Understanding Lock Types](/azure/devops/repos/tfvc/understand-lock-types?viewFallbackFrom=vsts).
 
    Lock Options
@@ -140,7 +140,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    For information about this option, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
    :::column-end:::
 :::row-end:::
@@ -148,7 +148,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="1":::
    **/noprompt**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Suppresses any dialog boxes that would otherwise appear during this operation.
    :::column-end:::
 :::row-end:::
@@ -156,7 +156,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specify this option if you want the operation to include items in subfolders.
    :::column-end:::
 :::row-end:::
@@ -164,7 +164,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="1":::
    **/toversion**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specify this option to revert a file to its state in a specific changeset. When you use this option, you negate the effect of all changesets that have been applied since the version that you specify.
    :::column-end:::
 :::row-end:::
@@ -172,7 +172,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    :::column span="1":::
    **/version**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the current version of the files and folders that you want to roll back.
    :::column-end:::
 :::row-end:::

@@ -32,7 +32,7 @@ tf resolve [itemspec]
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -41,7 +41,7 @@ tf resolve [itemspec]
    :::column span="1":::
    *Itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Used to identify the file or folder for which to resolve version conflicts. If omitted, all items with conflicts will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
 
    > [!Note]  
@@ -52,7 +52,7 @@ tf resolve [itemspec]
    :::column span="1":::
    *overridetype*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Used with the **/overridetype** option. Specifies the encoding type of the files involved. For example; binary.
    :::column-end:::
 :::row-end:::
@@ -60,7 +60,7 @@ tf resolve [itemspec]
    :::column span="1":::
    *converttype*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Used with the **/converttotype** option. Specifies the encoding type, such as &quot;unicode.&quot;
    :::column-end:::
 :::row-end:::
@@ -68,7 +68,7 @@ tf resolve [itemspec]
    :::column span="1":::
    *path*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Used with the **/newname** option. Specifies the new path of the affected file or folder
    :::column-end:::
 :::row-end:::
@@ -76,7 +76,7 @@ tf resolve [itemspec]
    :::column span="1":::
    *username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*&lt;em&gt;UserName</em> or *UserName*.
    :::column-end:::
 :::row-end:::
@@ -86,7 +86,7 @@ tf resolve [itemspec]
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -95,7 +95,7 @@ tf resolve [itemspec]
    :::column span="1":::
    **/auto**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Resolves outstanding conflicts between different versions of specified items in the current workspace using one of the following options:
 
    
@@ -120,7 +120,7 @@ tf resolve [itemspec]
    :::column span="1":::
    **/preview**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Displays current conflicts but does nothing with them.
    :::column-end:::
 :::row-end:::
@@ -128,7 +128,7 @@ tf resolve [itemspec]
    :::column span="1":::
    **/overridetype**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies optional encoding for files involved in a three-way merge. The files are treated as the specified encoding. You must determine the correct encoding. Team Foundation Server saves the resulting merge output in the specified encoding in your workspace. For more information about file encodings, see [Managing File Types](/azure/devops/server/admin/manage-file-types).
 
    > [!Note]  
@@ -139,7 +139,7 @@ tf resolve [itemspec]
    :::column span="1":::
    **/converttotype**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the encoding used for temporary conversion for the input in a three-way merge operation. The merge output is saved in the specified encoding in your workspace. This option is an advanced option and seldom used. For more information about file encodings, see [Managing File Types](/azure/devops/server/admin/manage-file-types).
 
    > [!Note]  
@@ -150,7 +150,7 @@ tf resolve [itemspec]
    :::column span="1":::
    **/recursive**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Resolves items in the specific directory and subdirectories.
    :::column-end:::
 :::row-end:::
@@ -158,7 +158,7 @@ tf resolve [itemspec]
    :::column span="1":::
    **/newname**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Option used to resolve a name collision conflict. Can only be used in conjunction with **AutoMerge** and **KeepYoursRenameTheirs**. With **AutoMerge**, **/newname** is only valid with conflicts that involve rename and/or undelete. If used, you must supply a new *path*.
    :::column-end:::
 :::row-end:::
@@ -166,7 +166,7 @@ tf resolve [itemspec]
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate the user with Team Foundation Server.
    :::column-end:::
 :::row-end:::
@@ -174,7 +174,7 @@ tf resolve [itemspec]
    :::column span="1":::
    **/noprompt**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Suppresses any prompts for input.
    :::column-end:::
 :::row-end:::

@@ -33,7 +33,7 @@ tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem n
    :::column span="1":::
    **Argument**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -42,7 +42,7 @@ tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem n
    :::column span="1":::
    *olditem*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The original name and path of the file or folder that is to be renamed. You can specify a local workspace path such as C:\myfiles\314.cs or a Team Foundation version control server path such as $/myfiles/314.cs.
    :::column-end:::
 :::row-end:::
@@ -50,7 +50,7 @@ tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem n
    :::column span="1":::
    *newitem*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The new name of the file or folder. You can use this to specify a different local or a Team Foundation version control server path location.
    :::column-end:::
 :::row-end:::
@@ -58,7 +58,7 @@ tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem n
    :::column span="1":::
    *username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName*.
    :::column-end:::
 :::row-end:::
@@ -68,7 +68,7 @@ tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem n
    :::column span="1":::
    **Option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -77,7 +77,7 @@ tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem n
    :::column span="1":::
    **/lock**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Include this option to prevent other users from checking in or checking out the specified items. If this option is not specified, the existing lock status of the item is not changed. For more information, see [Understanding Lock Types](understand-lock-types.md).
 
    Lock Options:
@@ -95,7 +95,7 @@ tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem n
    :::column span="1":::
    **/login**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.
    :::column-end:::
 :::row-end:::

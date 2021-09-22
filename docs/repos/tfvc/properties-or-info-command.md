@@ -31,7 +31,7 @@ itemspec [/version:versionspec] [/workspace]
    :::column span="1":::
    **Argument **
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -39,7 +39,7 @@ itemspec [/version:versionspec] [/workspace]
    :::column span="1":::
    *TeamProjectCollectionUrl*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The URL of the project collection that contains the items for which you want to display properties (for example, http://myserver:8080/tfs/DefaultCollection).
    :::column-end:::
 :::row-end:::
@@ -47,7 +47,7 @@ itemspec [/version:versionspec] [/workspace]
    :::column span="1":::
    *Itemspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Identifies the files and folders that are specified for property retrieval.
    
    For more information about how Visual Studio Team Foundation Server parses *itemspecs* to determine which items are within scope, see [Command-Line Options](/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)).
@@ -60,7 +60,7 @@ itemspec [/version:versionspec] [/workspace]
    :::column span="1":::
    *Versionspec*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value such as C3 for the **/version** option. For more information about how Team Foundation Server parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
    :::column-end:::
 :::row-end:::
@@ -68,7 +68,7 @@ itemspec [/version:versionspec] [/workspace]
    :::column span="1":::
    *username*
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a value to the **/login** option. You can specify a username value as either *Domain*&lt;em&gt;UserName</em> or *UserName*.
    :::column-end:::
 :::row-end:::
@@ -88,7 +88,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    **Property Name**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -96,7 +96,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    Local path
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Indicates the local path of the workspace folder for the specified item.
    :::column-end:::
 :::row-end:::
@@ -104,7 +104,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    Changeset
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Indicates the version number of the file or folder that was last retrieved to the current workspace using the [Get Command](get-command.md).
    :::column-end:::
 :::row-end:::
@@ -112,7 +112,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    Change
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Indicates where a change is pending.
    :::column-end:::
 :::row-end:::
@@ -120,7 +120,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    Type
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Indicates the item type, for example file.
    :::column-end:::
 :::row-end:::
@@ -128,7 +128,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    Server path
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Indicates the full path of the item on the version control server.
    :::column-end:::
 :::row-end:::
@@ -136,7 +136,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    Changeset
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Indicates the version number of the item.
    :::column-end:::
 :::row-end:::
@@ -144,7 +144,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    Deletion ID
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    If the item is deleted, the deletion identification; otherwise 0.
    :::column-end:::
 :::row-end:::
@@ -152,7 +152,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    Lock
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Indicates the type of lock.
    
    - **Checkin**   Check in is not permitted for the file.
@@ -164,7 +164,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    Lock Owner
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Indicates the person who set a check-in lock.
    :::column-end:::
 :::row-end:::
@@ -172,7 +172,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    Last modified
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Indicates the date and time stamp for when the item was last modified.
    :::column-end:::
 :::row-end:::
@@ -180,7 +180,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    Type
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Indicates the item type, for example file.
    :::column-end:::
 :::row-end:::
@@ -188,7 +188,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    File Type
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Displays the file type encoding. For example, Windows-1252.
    :::column-end:::
 :::row-end:::
@@ -196,7 +196,7 @@ The properties command displays several pieces of information about a version-co
    :::column span="1":::
    Size
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Indicates the size of the file in bytes.
    :::column-end:::
 :::row-end:::
