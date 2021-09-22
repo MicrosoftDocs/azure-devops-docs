@@ -1,6 +1,6 @@
 ---
 title: Work Item Category tables
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for categories of work items defined in Team Foundation Server   

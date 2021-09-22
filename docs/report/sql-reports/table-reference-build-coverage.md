@@ -1,6 +1,6 @@
 ---
 title: Build Coverage tables
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about how thoroughly source code was covered by the tests that use specific builds.

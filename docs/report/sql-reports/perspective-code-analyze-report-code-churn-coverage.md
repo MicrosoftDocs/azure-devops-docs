@@ -1,6 +1,6 @@
 ---
 title: Analyze and report on code churn and code coverage 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: View measures, dimensions, and attributes that are associated with the changes in lines of codes 

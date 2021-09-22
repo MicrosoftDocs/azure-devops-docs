@@ -1,6 +1,6 @@
 ---
 title: Status on All Iterations Report
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Helps you track the team's performance over successive iterations.

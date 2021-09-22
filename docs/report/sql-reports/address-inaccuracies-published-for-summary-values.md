@@ -1,6 +1,6 @@
 ---
 title: Address inaccuracies published for summary values 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: troubleshooting
 description: Corrects the reports with hours that are counted twice with this procedure - Team Foundation Server 

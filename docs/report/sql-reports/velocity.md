@@ -1,6 +1,6 @@
 ---
 title: Velocity (Scrum)
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Use the velocity report to forecast release and product completion dates and plan future projects  

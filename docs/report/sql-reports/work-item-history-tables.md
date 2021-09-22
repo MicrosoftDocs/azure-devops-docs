@@ -1,6 +1,6 @@
 ---
 title: Work Item History tables
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for historical data about bugs, tasks, and other types of work items defined in an on-premises Team Foundation Server 

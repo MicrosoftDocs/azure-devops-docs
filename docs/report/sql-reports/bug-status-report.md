@@ -1,6 +1,6 @@
 ---
 title: Bug Status Report 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Track the team's progress toward resolving and closing bugs by viewing the Bug Status report - Team Foundation Server 

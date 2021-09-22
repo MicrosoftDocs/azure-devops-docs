@@ -1,6 +1,6 @@
 ---
 title: Burndown and Burn Rate Report
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Determine the rate of team progress by reviewing the Burndown and Burn Rate report - Team Foundation Server 

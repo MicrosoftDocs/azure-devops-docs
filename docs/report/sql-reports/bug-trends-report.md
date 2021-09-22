@@ -1,6 +1,6 @@
 ---
 title: Bug Trends Report 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Track the rate at which your team is discovering and resolving bugs - Team Foundation Server  

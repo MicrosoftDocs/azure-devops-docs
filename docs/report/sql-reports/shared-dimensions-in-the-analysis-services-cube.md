@@ -1,6 +1,6 @@
 ---
 title: Shared dimensions in the Analysis Services Cube 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Uses to show the data for only those team projects that you specify.

@@ -1,6 +1,6 @@
 ---
 title: Team home page or dashboard  
-titleSuffix: TFS
+titleSuffix: Azure DevOps Server
 description: View progress and gain quick access to code, builds, and work items from the team home page in Team Foundation Server (TFS)  
 ms.custom: dashboards
 ms.technology: devops-analytics
