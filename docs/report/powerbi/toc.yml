@@ -137,6 +137,7 @@
   - name: Configuration by outcome matrix
     href: sample-test-plans-configuration-by-outcome.md
 - name: Data model reference
+  items:
   - name: Data available from Analytics
     href: data-available-in-analytics.md
   - name: Data model for Analytics
