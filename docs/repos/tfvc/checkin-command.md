@@ -135,11 +135,11 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
-   **/notes**
-   :::column-end:::
-   :::column span="3":::
-   Provides one or more check-in notes to associate with the changeset using one of the following arguments:
+:::column span="1":::
+**/notes**
+:::column-end:::
+:::column span="3":::
+Provides one or more check-in notes to associate with the changeset using one of the following arguments:
 
    
 - *NoteFieldName=NoteFieldValue*: Sets the value of the check-in note field. You can provide multiple, semicolon-separated &quot;field=value&quot; expressions.
@@ -153,7 +153,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
   Second line Value2;  
      
   Field3=Value3;
-   :::column-end:::
+:::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
