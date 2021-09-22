@@ -1,7 +1,7 @@
 ---
 title: Create Excel reports from a work item query  
 titleSuffix: Azure DevOps Server
-description: How to create status and trend Excel charts from a flat list query with SQL Server ANalysis Services installed for on-premises projects and collections.    
+description: How to create status and trend Excel charts from a flat list query with SQL Server Analysis Services installed for on-premises projects and collections. 
 ms.assetid: EBBA2C3A-A9F4-4808-B746-5DC0F039EA53  
 ms.technology: devops-analytics
 ms.topic: quickstart
@@ -11,16 +11,16 @@ monikerRange: '< azure-devops'
 ms.date: 09/22/2021
 ---
 
-# Create Excel reports from a work item query  
+# Create status and trend reports from a work item query  
 
 [!INCLUDE [temp](./includes/tfs-report-platform-version.md)]
 
-One of the quickest ways to generate a custom report in Excel is to start with a flat list query. You can generate both status and trend charts. Also, once you've build a report, you can manipulate the data further by adding or filtering fields using the PivotTable. 
+One of the quickest ways to generate a custom work tracking report is to use Excel and start with a flat list query. You can generate both status and trend charts. Also, once you've built a report, you can manipulate the data further by adding or filtering fields using the PivotTable. 
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!NOTE]  
-> This feature is available with an on-premises Azure DevOps Server 2019 and later versions configured with SQL Server Analysis Services. 
+> This feature is only available with an on-premises Azure DevOps Server 2019 and later versions configured with SQL Server Analysis Services. Also, this feature requires projects are defined on project collections configured with the On-premises XML process model. If you're collection is configured to support the Inheritance process model, you can use Analytics views to filter work items and generate Power BI reports. To learn more, see [What are Analytics views?](./powerbi/what-are-analytics-views.md)
 > 
 > If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md). To get the latest version of the Azure Devops add-in for Office, install [Azure DevOps Office® Integration 2019](https://go.microsoft.com/fwlink/?linkid=2076587&clcid=0x409).  
 
@@ -117,7 +117,7 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
    * **Description**, **History**, and other HTML data-type fields. These fields won't be added to the PivotTable or used to generate a report. Excel does not support generating reports on these fields.
 
-   * Fields with filter criteria that specify the **Contains**, **Contains Words**, **Does Not Contain**, or **Does Not Contain Words** operators will not be added to the PivotTable. Excel does not support these operators. To learn more about these operators, see [Query fields, operators, and macros](../../boards/queries/query-operators-variables.md).
+   * Fields with filter criteria that specify the **Contains**, **Contains Words**, **Does Not Contain**, or **Does Not Contain Words** operators will not be added to the PivotTable. Excel does not support these operators. To learn more about these operators, see [Query fields, operators, and macros](../boards/queries/query-operators-variables.md).
 
 ### Q: Can I create reports if I'm working in Azure DevOps?
  
@@ -129,3 +129,22 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 <!-- ENDSECTION -->
 
+## Related articles
+
+::: moniker range=">= azure-devops-2019"
+- [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Track progress with status and trend query-based charts](./dashboards/charts.md)
+- [What are Analytics views?](./powerbi/what-are-analytics-views.md)
+- [Create a Power BI report with a default Analytics view](./powerbi/create-quick-report.md)
+- [Analytics Service](./powerbi/what-is-analytics.md)
+- [Reporting Services reports](./sql-reports/reporting-services-reports.md)
+- [Grant permissions to view or create SQL Server reports in Azure DevOps Server](./admin/grant-permissions-to-reports.md)
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+- [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Track progress with status and trend query-based charts](./dashboards/charts.md)
+- [Reporting Services reports](./sql-reports/reporting-services-reports.md)
+- [Grant permissions to view or create SQL Server reports in Azure DevOps Server](./admin/grant-permissions-to-reports.md)
+::: moniker-end
