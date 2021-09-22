@@ -38,17 +38,17 @@
 - name: Sample queries>Work tracking
   items:
   - name: Query work item data 
-    href: wit-analytics.md
+    href: ../extend-analytics/wit-analytics.md
   - name: "Project & organization-scoped queries" 
-    href: account-scoped-queries.md
+    href: ../extend-analytics/account-scoped-queries.md
   - name: Query aggregate data
-    href: aggregated-data-analytics.md
+    href: ../extend-analytics/aggregated-data-analytics.md
   - name: Query trend data
-    href: querying-for-trend-data.md
+    href: ../extend-analytics/querying-for-trend-data.md
   - name: Query work item links
-    href: work-item-links.md
+    href: ../extend-analytics/work-item-links.md
   - name: Basic work tracking queries
-    href: analytics-recipes.md
+    href: ../extend-analytics/analytics-recipes.md
 - name: Sample reports>Analytics views
   items:
   - name: Active bugs report 
@@ -143,7 +143,7 @@
   - name: Data model for Analytics
     href: ../extend-analytics/data-model-analytics-service.md
   - name: Explore Analytics metadata
-    href: ./extend-analytics/analytics-metadata.md
+    href: ../extend-analytics/analytics-metadata.md
   - name: Analytics views dataset design 
     href: data-connector-dataset.md
   - name: Filters applied to historical data
