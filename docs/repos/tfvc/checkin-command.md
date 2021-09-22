@@ -145,13 +145,14 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
    - *NoteFieldName=NoteFieldValue*: Sets the value of the check-in note field. You can provide multiple, semicolon-separated &quot;field=value&quot; expressions.
 
    - *Notefile*: The user-provided path of a file on disk that contains check-in note field names and values in the format of &quot;field=value&quot;. A semicolon separated note tile can span multiple lines, for example:  
-     Field1=Value1;  
+     
+      Field1=Value1;  
 
-     Field2=First line of Value2  
+      Field2=First line of Value2  
      
-     Second line Value2;  
+      Second line Value2;  
      
-     Field3=Value3;
+      Field3=Value3;
    :::column-end:::
 :::row-end:::
 :::row:::
