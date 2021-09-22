@@ -62,12 +62,12 @@ The following **EntitySets** are supported with the indicated API versions. For 
 > |**Area**/<br/>**Areas** |The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | ✔️|✔️|✔️ | ✔️ |  
 > |**Iteration**/<br/>**Iterations** | The work item **Iteration Paths**, with properties for grouping and filtering by iteration hierarchy.  |✔️|✔️|✔️ | ✔️ |  
 > |**BoardLocation**/<br/>**BoardLocations** |The Kanban board cell locations, as identified by board column, lane, and split, includes historic board settings. For a description of each Kanban board field, see [Workflow and Kanban board fields](../../boards/queries/query-by-workflow-changes.md#workflow-and-kanban-board-fields).| ✔️|✔️|✔️ | ✔️ |  
-> |**CalendarDate** | **Dates** | The dates used to filter and group other entities using relationships.  | ✔️|✔️|✔️ | ✔️ |  
+> |**CalendarDate**/<br/>**Dates** | The dates used to filter and group other entities using relationships.  | ✔️|✔️|✔️ | ✔️ |  
 > |**Project**/<br/>**Projects** |All projects defined for an organization. |✔️|✔️|✔️ | ✔️ |  
 > |**Process**/<br/>**Processes** |Backlog information used to expand or filter work items and work item types. For an example that uses **Processes** to filter a report, see [Requirements tracking sample report](../powerbi/sample-stories-overview.md). |  |✔️|✔️ | ✔️ |  
 > |**Tag**/<br/>**Tags** | All work item tags for each project. For an example that uses **Tags** to filter a report, see [Release burndown sample report](../powerbi/sample-boards-releaseburndown.md). | ✔️|✔️|✔️ |  
 > |**Team**/<br/>**Teams** | All teams defined for the project. For an example that uses **Teams** to filter a report, see [Add a Team slicer to a Power BI report](../powerbi/sample-boards-teamslicer.md).  | ✔️|✔️|✔️ | ✔️ | 
-> |**User** | **Users** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. | ✔️|✔️|✔️ | ✔️ | 
+> |**User**/<br/>**Users** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. | ✔️|✔️|✔️ | ✔️ | 
 > |**WorkItemBoardSnapshot**/<br/>**WorkItemBoardSnapshot** |(Composite) The state of each work item on each calendar date, including Kanban board location, used to generate trend reports.   For a sample report, see [Cumulative Flow Diagram (CFD) sample report](../powerbi/sample-boards-cfd.md). | ✔️|✔️|✔️ | ✔️ |  
 > |**WorkItemLink**/<br/>**WorkItemLinks** | The links between work items, for example, *Child*, *Parent*, and *Related*. Includes only the latest revision of links, no history. Hyperlinks aren't included.  | ✔️|✔️|✔️ |  ✔️ | 
 > |**WorkItemRevision**/<br/>**WorkItemRevisions** |All historic work item revisions, including the current revision. Does not include deleted work items. | ✔️|✔️|✔️ | ✔️ |  
@@ -102,23 +102,23 @@ The following **EntityTypes** and **EntitySets** are supported with the **v3.0-p
 > |**PipelineRun**/<br/>**PipelineRuns** | Execution information for pipelines. For a sample report, see [Pipeline pass rate trend sample report](../powerbi/sample-pipelines-pass-rate-trend.md).  |  ✔️ | ✔️ |
 > |**PipelineRunActivityResult**/<br/>**PipelineRunActivityResults** | Merged log of all the stages, steps, jobs, and tasks within a specific pipeline execution. For a sample report, see [Pipeline task duration sample report](../powerbi/sample-pipelines-task-duration.md). |   ✔️ | ✔️ |
 > |**PipelineTask**/<br/>**PipelineTasks** | Properties for tasks that are used within a pipeline.  |  ✔️ | ✔️ |
-> |**TestConfiguration** | **TestConfigurations** |Test plan configuration information. For details on configuring tests, see [Test different configurations](../../test/test-different-configurations.md)  |  ✔️ | ✔️ |
+> |**TestConfiguration**/<br/>**TestConfigurations** |Test plan configuration information. For details on configuring tests, see [Test different configurations](../../test/test-different-configurations.md)  |  ✔️ | ✔️ |
 > |**TestResult**/<br/>**TestResults** | Individual execution results for a specific **Test** associated with a **TestRun**.  |  ✔️ | ✔️ |
-> |**TestResultsDaily** | **TestResultsDaily** | A daily snapshot aggregate of **TestResult** executions, grouped by Test (not TestRun).  For a sample report, see [Test summary trend sample report](../powerbi/sample-test-summary-trend.md). |  ✔️ | ✔️ |
+> |**TestResultsDaily**/<br/>**TestResultsDaily** | A daily snapshot aggregate of **TestResult** executions, grouped by Test (not TestRun).  For a sample report, see [Test summary trend sample report](../powerbi/sample-test-summary-trend.md). |  ✔️ | ✔️ |
 > |**TestRun**/<br/>**TestRuns** | Execution information for tests run under a pipeline with aggregate TestResult. |  ✔️ | ✔️ |
 > |**Test**/<br/>**Tests** | Properties for a test case, such as test name and test owner. For details on defining test cases, see [Create manual test cases](../../test/create-test-cases.md).  | ✔️ | ✔️ |
 > |**TestPoint**/<br/>**TestPoints** | Execution information for test points. A test point is a unique combination of test case, test suite, configuration, and tester. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md). | ✔️ | ✔️ |
 > |**TestPointHistorySnapshot**/<br/>**TestPointHistorySnapshots** | (Composite) Individual execution results for a specific **Test** associated with a **TestRun**. For a sample report, see [Manual test execution trend sample report](../powerbi/sample-test-plans-execution-trend.md)|  ✔️ | ✔️ |
 > |**TestSuite**/<br/>**TestSuites**| Test suites information. For details on defining test suites, see [Create test plans and test suites](../../test/create-a-test-plan.md). |  ✔️ | ✔️ |
 > |**TaskAgentPoolSizeSnapshot**/<br/>**TaskAgentPoolSizeSnapshots** |(Composite) Supports understanding of pool size, pipeline jobs, and concurrency. The [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) illustrates how this entity set can be used. |   | ✔️ |
-> |**TaskAgentRequestSnapshot**/<br/>**TaskAgentRequestSnapshots** |(Composite) TBD.  |   | ✔️ |
+> |**TaskAgentRequestSnapshot**/<br/>**TaskAgentRequestSnapshots** |(Composite)    |   | ✔️ |
 
 **Additional resources:**
 
 - [Use Azure Pipelines](../../pipelines/get-started/pipelines-get-started.md)
 - [About pipeline tests](../../pipelines/test/test-glossary.md)
 - [Test objects and terms](../../test/test-objects-overview.md) 
-=
+ 
 ::: moniker-end
 
 
