@@ -1,6 +1,6 @@
 - name: Reporting Services Reports
   href: reporting-services-reports.md
-- name: Create Excel reports from a work item query
+- name: Create status and trend reports from a work item query
   href: ../create-status-and-trend-excel-reports.md
 - name: Grant permissions to view or create reports
   href: ../admin/grant-permissions-to-reports.md
