@@ -84,17 +84,10 @@ tf undo [/workspace:workspacename[;workspaceowner]]
    :::column span="3":::
    Specifies the name of the workspace in which you want to undo pending changes. If not specified, the workspace is the one that maps the current directory.
 
-   You can specify *workspaceowner* to undo a pending change in a workspace that belongs to a specific user. If not specified, the workspace is presumed to be the current user, or if specified, the **/login:***username*. You must have the UndoOther permission set to Allow to undo changes in another user&#39;s workspace.
-:::row:::
-   :::column span="1":::
-   **Note**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-   If you use the **undo** command to undo a pending change in a remote workspace that is still in use, then before continuing work in that workspace, a user must log on to the machine that hosts the workspace and then get (and in some cases [get /all](get-command.md)) the items affected by the undo.
-   :::column-end:::
-:::row-end:::
+   You can specify *workspaceowner* to undo a pending change in a workspace that belongs to a specific user. If not specified, the workspace is presumed to be the current user, or if specified, the **/login**:*username*. You must have the UndoOther permission set to Allow to undo changes in another user&#39;s workspace.
+
+   > [!Note]  
+   > If you use the **undo** command to undo a pending change in a remote workspace that is still in use, then before continuing work in that workspace, a user must log on to the machine that hosts the workspace and then get (and in some cases [get /all](get-command.md)) the items affected by the undo.
   :::column-end:::
 :::row-end:::
 

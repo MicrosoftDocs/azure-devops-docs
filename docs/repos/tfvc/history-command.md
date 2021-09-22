@@ -144,7 +144,7 @@ tf hist[ory] itemspec [/version:versionspec]
    **/user**:*username*
    :::column-end:::
    :::column span="3":::
-   Filters the historical data to show changes made by the specified user. An asterisk (*****) symbol includes data on changes from all users (the default).
+   Filters the historical data to show changes made by the specified user. An asterisk (**\***) symbol includes data on changes from all users (the default).
    :::column-end:::
 :::row-end:::
 :::row:::

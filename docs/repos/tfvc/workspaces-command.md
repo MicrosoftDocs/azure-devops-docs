@@ -35,10 +35,10 @@ tf workspaces /remove:(*|workspace1[,workspace2,...])
 
 :::row:::
    :::column span="1":::
-   Argument
+   **Argument**
    :::column-end:::
    :::column span="3":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 
@@ -102,10 +102,10 @@ tf workspaces /remove:(*|workspace1[,workspace2,...])
 
 :::row:::
    :::column span="1":::
-   Option
+   **Option**
    :::column-end:::
    :::column span="3":::
-   Description
+   **Description**
    :::column-end:::
 :::row-end:::
 

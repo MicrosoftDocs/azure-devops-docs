@@ -92,11 +92,11 @@ tf localversions ItemSpec
    
    - **Brief**
 
-   (Default.) Each directory appears only once, followed by the files that it contains.
+     (Default.) Each directory appears only once, followed by the files that it contains.
 
    - **Detailed**
 
-   Each file appears after its full path.
+     Each file appears after its full path.
    
    :::column-end:::
 :::row-end:::

@@ -61,11 +61,14 @@ tf undelete [/noget] [/lock:(none|checkin|checkout)]
 
    Lock Options:
    - **None**
-   Default. No lock is applied.
+  
+     Default. No lock is applied.
    - **Checkin**
-   Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
+    
+     Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
    - **Checkout**
-   Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check in. If any other users have locked any one of the specified items, the lock operation fails.
+     
+     Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check in. If any other users have locked any one of the specified items, the lock operation fails.
    :::column-end:::
 :::row-end:::
 :::row:::

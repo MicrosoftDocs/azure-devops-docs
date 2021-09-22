@@ -58,8 +58,11 @@ tf diff[erence] /configure
    :::column-end:::
    :::column span="3":::
    Required. Specifies the item to be compared. If no version or path is specified, the *current workspace version *is assumed. Accepts both local and Team Foundation version control server paths.
+
    For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
+
    The **difference** command does not support wildcard characters.
+
    This parameter cannot be combined with the **/shelveset** option.
    :::column-end:::
 :::row-end:::

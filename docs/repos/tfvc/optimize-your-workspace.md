@@ -54,7 +54,7 @@ The main problem with this approach is that it would also provide her with a lot
    :::column span="1":::
    ![Step 1](media/optimize-your-workspace/IC756627.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="4":::
    Raisa doesn&#39;t develop customized build processes so she doesn&#39;t need `$/SiteApp/BuildProcessTemplates`. Over time she expects the codebase to grow, and she also does not want to automatically download every new bit of code added to `$/SiteApp/Main/`. As teams working in those other folders change those files, when Raisa gets the latest files from the server, she could incur long delays waiting for updates to files she doesn&#39;t need.
 
    To develop her code, Raisa needs all the code projects that comprise the FabrikamFiber solution. Rather than **explicitly** including each code project (for example, `$/SiteApp/Main/FabrikamFiber/FabrikamFiber.DAL`) she instead maps `$/SiteApp/Main/FabrikamFiber/`, and thus she **implicitly** maps all the sub-folders that contain the code projects she needs.
@@ -64,7 +64,7 @@ The main problem with this approach is that it would also provide her with a lot
    :::column span="1":::
    ![Step 2](media/optimize-your-workspace/IC646325.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="4":::
    Raisa does not need the files in `$/SiteApp/Main/FabrikamFiber/3DModels` or `$/SiteApp/Main/FabrikamFiber/Docs`, and because they are implicitly mapped by![Step 1](media/optimize-your-workspace/IC756627.png), she uses two **cloaked** mappings to exclude these folders from her workspace.
    :::column-end:::
 :::row-end:::
@@ -72,7 +72,7 @@ The main problem with this approach is that it would also provide her with a lot
    :::column span="1":::
    ![Step 3](media/optimize-your-workspace/IC646326.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="4":::
    Raisa and others on her team maintain and sometimes augment a set of some fundamental libraries. She needs almost all current libraries in this folder and expects to need libraries her team adds there in the future, so she maps `$/SiteApp/Main/libraries/Common`.
    :::column-end:::
 :::row-end:::
@@ -80,7 +80,7 @@ The main problem with this approach is that it would also provide her with a lot
    :::column span="1":::
    ![Step 4](media/optimize-your-workspace/IC646327.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="4":::
    Raisa needs only a small segment of a large folder, `$/SiteApp/Main/libraries/Common/LibraryC`, so she maps it as **cloaked** and then explicitly maps just the sub-folder she needs: `$/SiteApp/Main/libraries/Common/LibraryC/Sub-Library1`.
    :::column-end:::
 :::row-end:::
@@ -88,7 +88,7 @@ The main problem with this approach is that it would also provide her with a lot
    :::column span="1":::
    ![Step 5](media/optimize-your-workspace/IC646328.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="4":::
    Raisa needs some of the files immediately within `LibraryD`, but she does not need the large contents of its sub-folders, so she applies a **non-recursive** mapping to this folder: `$/SiteApp/Main/libraries/Specialized/LibraryD/*`.
    :::column-end:::
 :::row-end:::
@@ -107,7 +107,7 @@ For example, at Fabrikam Fiber, the codebase and the staff have grown. To isolat
    :::column span="1":::
    ![Optimize your workspace](media/optimize-your-workspace/IC756627.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="4":::
    **Develop features** She modifies her default workspace to do work in the Extranet branch, where she participates in the development of the customer-facing website in this branch.
    :::column-end:::
 :::row-end:::
@@ -115,7 +115,7 @@ For example, at Fabrikam Fiber, the codebase and the staff have grown. To isolat
    :::column span="1":::
    ![Integrate and stabilize.](media/optimize-your-workspace/IC646325.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="4":::
    **Integrate and stabilize** She creates two new workspaces to do work in the Test and Dev branches, where she collaborates with other developers and testers to stabilize the code during integration.
    :::column-end:::
 :::row-end:::

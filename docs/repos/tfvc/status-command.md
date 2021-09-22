@@ -60,7 +60,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
    :::column-end:::
    :::column span="3":::
    Specifies how much detail to display about each pending change:
-   - **Brief** (default): Displays one line about each pending change that includes: file name, changes, whether the item is locked (indicated by an asterisk (****<em>) symbol), local path, and user (if using the **/collection** and **/workspace** options). Some of the data might be truncated.
+   - **Brief** (default): Displays one line about each pending change that includes: file name, changes, whether the item is locked (indicated by an asterisk (*) symbol), local path, and user (if using the **/collection** and **/workspace** options). Some of the data might be truncated.*
    - **Detailed**: Displays a full description of each pending change. In addition to the above information, this option displays additional data such as date and time, and lock.
    :::column-end:::
 :::row-end:::
@@ -106,7 +106,9 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
    Lists all pending changes made by the specified user. An asterisk (**/***) symbol includes data about changes from all users. The default is the current user.
 
    Acceptable values for this option:
-   - username- useraccount- an asterisk
+   - username
+   - useraccount
+   - an asterisk
    
    > [!Note]  
    > See Remarks, below, for the limitations of this option.
@@ -119,7 +121,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
    :::column span="3":::
    Specifies the name of the workspace that contains the pending changes. If not specified, the workspace is the one that maps the current directory.
 
-   You can specify *workspaceowner* to get data about pending changes in a workspace that belongs to a specific user. If not specified, the workspace is presumed to be the current user, or if specified, the **/login:***username*.
+   You can specify *workspaceowner* to get data about pending changes in a workspace that belongs to a specific user. If not specified, the workspace is presumed to be the current user, or if specified, the **\/login**:*username*.
 
    This option cannot be combined with the **/shelveset** option.
    

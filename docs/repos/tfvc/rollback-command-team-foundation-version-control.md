@@ -47,15 +47,20 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    Use this argument with the **/changeset** option to specify the changesets that you want to roll back. You can specify the changesets in the following ways:
 
    - A single changeset
-   Example: **/changeset:C11**
+     
+     Example: **/changeset:C11**
    - A range of changesets
-   Example: **/changeset:C7~C20**
+     
+     Example: **/changeset:C7~C20**
    - A date
-   Example: **/changeset:D09/30/09**
+     
+     Example: **/changeset:D09/30/09**
    - A range of dates
-   Example:**/changeset:D09/23/09~D10/07/09**
+     
+     Example:**/changeset:D09/23/09~D10/07/09**
    - The most recent changeset
-   Example: **/changeset:Tip** or **/changeset:T**
+     
+     Example: **/changeset:Tip** or **/changeset:T**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -80,17 +85,23 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
 
    Use this argument with the **/toversion** option to revert a file to its state in a specific changeset. You can specify the version in the following ways:
    - A single changeset
-   Example: **/toversion:C32**
+     
+     Example: **/toversion:C32**
    - A date (at midnight)
-   Example: **/toversion:D06/19/09**
+     
+     Example: **/toversion:D06/19/09**
    - A date and a time
-   Example: **/toversion:D06/19/09T14:32**
+     
+     Example: **/toversion:D06/19/09T14:32**
    - A label
-   Example: **/toversion:LTestLabel**
+     
+     Example: **/toversion:LTestLabel**
    - The version in the workspace that is mapped to the current directory
-   Example: **/toversion:W**
+     
+     Example: **/toversion:W**
    - The version in a specific workspace
-   Example: **/toversion:WResolveRIConflicts;AKerry**
+     
+     Example: **/toversion:WResolveRIConflicts;AKerry**
 
    For more information about how Team Foundation parses versionspecs, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
    :::column-end:::
@@ -129,11 +140,14 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
 
    Lock Options
    - **None**
-   Default. No lock is applied. If the file that you are rolling back has been locked, this option removes the lock.
+    
+     Default. No lock is applied. If the file that you are rolling back has been locked, this option removes the lock.
    - **Checkin**
-   Locks an item until you release the lock by performing a check-in. Other users can check out the specified items, but the users cannot check in revisions until the lock is removed. You cannot lock a file that is already locked.
+    
+     Locks an item until you release the lock by performing a check-in. Other users can check out the specified items, but the users cannot check in revisions until the lock is removed. You cannot lock a file that is already locked.
    - **Checkout**
-   Prevents users from checking in or out a locked item until you remove the lock by performing a check-in. 
+     
+     Prevents users from checking in or out a locked item until you remove the lock by performing a check-in. 
    :::column-end:::
 :::row-end:::
 :::row:::

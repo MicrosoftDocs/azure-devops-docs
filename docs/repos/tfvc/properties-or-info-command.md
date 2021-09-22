@@ -29,7 +29,7 @@ itemspec [/version:versionspec] [/workspace]
 
 :::row:::
    :::column span="1":::
-   **Argument **
+   **Argument**
    :::column-end:::
    :::column span="3":::
    **Description**

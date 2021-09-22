@@ -47,6 +47,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    :::column-end:::
    :::column span="3":::
    Specifies the server path of the file or folder to be destroyed. Use multiple *itemspec* values to delete multiple items. For example, `tf destroy $/TeamProject1 $/teamProject2 $/TeamProject3`.
+   
    Local paths are not supported.
    :::column-end:::
 :::row-end:::

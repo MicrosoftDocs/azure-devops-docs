@@ -114,13 +114,13 @@ When you choose **AutoResolve All**, and then **Specific Conflict Types**, the *
 
 :::row:::
    :::column span="1":::
-   If you want the system to automatically resolve conflicts that occurred because...
+   **If you want the system to automatically resolve conflicts that occurred because...**
    :::column-end:::
    :::column span="1":::
-   As explained in this example...
+   **As explained in this example...**
    :::column-end:::
    :::column span="1":::
-   Then select this check box...
+   **Then select this check box...**
    :::column-end:::
 :::row-end:::
 
