@@ -146,7 +146,7 @@ Provides one or more check-in notes to associate with the changeset using one of
 
 - *Notefile*: The user-provided path of a file on disk that contains check-in note field names and values in the format of &quot;field=value&quot;. A semicolon separated note tile can span multiple lines, for example:  
      
-   Field1=Value1;  
+&nbsp;&nbsp;   Field1=Value1;  
    
    Field2=First line of Value2  
    
