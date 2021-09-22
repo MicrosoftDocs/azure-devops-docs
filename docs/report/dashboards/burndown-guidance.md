@@ -5,7 +5,6 @@ description: Review Scrum progress during and at the end of a sprint when workin
 ms.custom: dashboards
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
