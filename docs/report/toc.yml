@@ -81,10 +81,10 @@
   href: sql-reports/toc.yml 
 - name: Work tracking field reference 
   items:
-  - name: "Rollup of work & other fields"
-    href: ../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
   - name: Work item field index  
     href: ../boards/work-items/guidance/work-item-field.md?bc=%252fazure%252fdevops%252freport%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252freport%252ftoc.json
+  - name: "Rollup of work & other fields"
+    href: ../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
   - name: Reportable fields reference 
     href: ../reference/xml/reportable-fields-reference.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
   - name: Change reporting attributes

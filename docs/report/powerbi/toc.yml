@@ -35,7 +35,7 @@
     href: access-analytics-power-bi.md
   - name: Connect using Advanced Functions
     href: data-connector-functions.md
-- name: Sample queries&#58; Work tracking
+- name: Sample queries>Work tracking
   items:
   - name: Query work item data 
     href: wit-analytics.md
@@ -49,7 +49,7 @@
     href: work-item-links.md
   - name: Basic work tracking queries
     href: analytics-recipes.md
-- name: Sample reports&#58; Analytics views
+- name: Sample reports>Analytics views
   items:
   - name: Active bugs report 
     href: active-bugs-sample-report.md
@@ -61,9 +61,9 @@
     href: create-team-filter.md  
   - name: Calculate time-in-state 
     href: create-timeinstate-report.md
-- name: Sample OData reports overview
+- name: Sample reports (Power BI and OData)
   href: sample-odata-overview.md
-- name: Sample reports&#58; Boards
+- name: Sample reports>Boards
   items:
   - name: Open bugs
     href: sample-boards-openbugs.md
@@ -86,7 +86,7 @@
     href: sample-boards-leadcycletime.md
   - name: Add a team slicer
     href: sample-boards-teamslicer.md
-- name: Sample reports&#58; Pipelines
+- name: Sample reports>Pipelines
   items:
   - name: Outcome summary
     href: sample-pipelines-outcome-summary.md
@@ -104,7 +104,7 @@
     href: sample-pipelines-task-duration.md
   - name: Task duration trend
     href: sample-pipelines-task-duration-trend.md
-- name: Sample reports&#58; Pipelines test 
+- name: Sample reports>Pipelines test 
   items:
     - name: Test summary
       href: sample-test-analytics-test-summary.md
@@ -120,7 +120,7 @@
       href: sample-test-analyics-test-duration-trend.md
     - name: Pass rate trend of test
       href: sample-test-analytics-pass-rate-trend-test.md
-- name: Sample reports&#58; Test Plans 
+- name: Sample reports>Test Plans 
   items:
   - name: Progress status
     href: sample-test-plans-progress-status.md
