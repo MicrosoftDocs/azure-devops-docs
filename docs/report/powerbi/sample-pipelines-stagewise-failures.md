@@ -1,7 +1,7 @@
 ---
 title: Pipeline stage wise failures sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to guide to generate a pipeline stage wise failure Power BI report  
+description: How-to generate a pipeline stage wise failure Power BI report  
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
@@ -9,7 +9,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'     
-ms.date: 12/18/2020
+ms.date: 09/21/2021
 ---
 
 # Pipeline stage wise failures sample report 
@@ -137,6 +137,7 @@ The following table describes each part of the query.
 </tbody>
 </table>
 
+[!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
 ## Power BI transforms
 
