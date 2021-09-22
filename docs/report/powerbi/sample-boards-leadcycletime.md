@@ -1,15 +1,14 @@
 ---
 title: Lead/Cycle time sample Power BI report 
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to generate Lead/Cycle Time reports
+description: How to generate Lead/Cycle time Power BI reports
 ms.technology: devops-analytics
-ms.reviewer: greggboe
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/07/2019
+ms.date: 09/21/2021
 ---
 
 # Lead/cycle time sample report
@@ -87,6 +86,8 @@ The following table describes each part of the query.
 </tbody>
 </table>
 
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
 
 ## Power BI transforms
 

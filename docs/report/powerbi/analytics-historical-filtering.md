@@ -1,12 +1,11 @@
 ---
 title: Filtering on historical data from Analytics
 titleSuffix: Azure DevOps
-description: TBD
+description: Understand how filters are applied to historical Analytics data for work tracking.
 ms.technology: devops-analytics
-ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
-ms.topic: tutorial
+ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
 ms.date: 04/05/2019
 ---

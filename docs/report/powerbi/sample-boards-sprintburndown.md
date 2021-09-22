@@ -1,14 +1,14 @@
 ---
 title: Sprint Burndown sample Power BI report 
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to generate a Sprint Burndown report
+description: How to generate a sprint burndown Power BI report
 ms.technology: devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/18/2020
+ms.date: 09/21/2021
 ---
 
 # Sprint burndown sample reports
@@ -108,6 +108,7 @@ The following table describes each part of the query.
 </tbody>
 </table>
 
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
 
 ## Power BI transforms
 
