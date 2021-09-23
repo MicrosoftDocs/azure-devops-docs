@@ -205,7 +205,7 @@ Provides one or more check-in notes to associate with the changeset using one of
    Tests whether the check in would succeed without checking in the files. The system evaluates check-in policies, check-in notes, and lists conflicts.
 
    > [!Note]  
-   > If you do not specify the **/noprompt** option, you must choose the **Check In** button on the **Check In** dialog box to validate the check in. After you choose this button, the system will not check in the files.</p>
+   > If you do not specify the **/noprompt** option, you must choose the **Check In** button on the **Check In** dialog box to validate the check in. After you choose this button, the system will not check in the files.
    :::column-end:::
 :::row-end:::
 

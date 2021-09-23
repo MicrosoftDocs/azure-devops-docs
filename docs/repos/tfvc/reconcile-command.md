@@ -149,7 +149,9 @@ tf reconcile [itemspec]
    **/ignore**
    :::column-end:::
    :::column span="3":::
-   By default **tf /clean** command will update all items based on the current server state, including ignored by version control items. Use this option to avoid changing the ignored items.<p> You can configure which kinds of items are ignored using a ".tfignore" file (see [Add Files: .tfignore file](add-files-server.md#tfignore)).
+   By default **tf /clean** command will update all items based on the current server state, including ignored by version control items. Use this option to avoid changing the ignored items.
+   
+   You can configure which kinds of items are ignored using a ".tfignore" file (see [Add Files: .tfignore file](add-files-server.md#tfignore)).
 
    > [!Note]  
    > Can be used with **/clean** only.
@@ -160,7 +162,9 @@ tf reconcile [itemspec]
    **/noignore**
    :::column-end:::
    :::column span="3":::
-   By default **tf /promote** command will promote all items except those that are ignored by version control. Use this option to promote the ignored items as well. This behavior is similar to using **/noignore** in the **tf add** command.<p> You can configure which kinds of items are ignored using a ".tfignore" file (see [Add Files: .tfignore file](add-files-server.md#tfignore)).
+   By default **tf /promote** command will promote all items except those that are ignored by version control. Use this option to promote the ignored items as well. This behavior is similar to using **/noignore** in the **tf add** command.
+   
+   You can configure which kinds of items are ignored using a ".tfignore" file (see [Add Files: .tfignore file](add-files-server.md#tfignore)).
 
    > [!Note]  
    > Can be used with **/promote** only.

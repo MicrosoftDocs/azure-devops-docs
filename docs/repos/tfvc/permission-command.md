@@ -208,7 +208,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
 
 ## Remarks
 
-You can use the <strong>permission</strong> command (or alternatively its shortcut, <strong>perm</strong>) to manage authorization settings for Team Foundation version control server objects. However, this command does not let you manage authentication settings such as creating or modifying Team Foundation security groups.
+You can use the **permission** command (or alternatively its shortcut, **perm**) to manage authorization settings for Team Foundation version control server objects. However, this command does not let you manage authentication settings such as creating or modifying Team Foundation security groups.
 
 For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 

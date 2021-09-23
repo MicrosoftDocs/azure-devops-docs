@@ -41,7 +41,7 @@ tf help commandname
 :::row-end:::
 
 ## Remarks
-If you do not know which command you need, type <strong>tf help</strong> for a list of all commands.
+If you do not know which command you need, type **tf help** for a list of all commands.
 
 If you specify the *commandname* parameter, the command line displays information about the arguments and options for that command. If the system cannot find a match for the *commandname*, it searches for aliases and short names. If it cannot find any matching command, alias, or short name, you will get an error.
 

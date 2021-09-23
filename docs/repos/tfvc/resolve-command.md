@@ -180,7 +180,7 @@ tf resolve [itemspec]
 :::row-end:::
 
 ## Remarks
-You can use the <strong>Resolve</strong> command to select a resolution for pending changes that conflict with the server version.
+You can use the **Resolve** command to select a resolution for pending changes that conflict with the server version.
 
 If version conflicts are detected between your version and the version on the destination server during a get, check-in, or merge operation, a prompt appears for you to select a conflict resolution using the **resolve** command. You must resolve conflicts before you can check in your pending changes.
 

@@ -215,7 +215,7 @@ Let's review the arguments from this example:
 
   - **/recursive**: If you want to recursively check out multiple items in a folder, you must specify this option verbatim.
 
-  - **/login**:*username*<em>,password</em>: If you want to run the command as another user, you must specify the **/login** option verbatim, replace *username* with the name of the user, and if necessary, you can supply the password.
+  - **/login**:*username,password*: If you want to run the command as another user, you must specify the **/login** option verbatim, replace *username* with the name of the user, and if necessary, you can supply the password.
 
 ## Specify the items affected by a command
 
