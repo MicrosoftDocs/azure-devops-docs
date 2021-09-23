@@ -1,6 +1,6 @@
 ---
 title: Unplanned Work 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Use the Unplanned Work report to determine how much work was added to the iteration that was not planned at the start of the iteration.
@@ -107,5 +107,5 @@ Toward the end of an iteration, you can use the Unplanned Work report to determi
   
 2.  Click **View Report**.  
   
-## Related notes
+## Related articles
  [Reporting Services Reports](reporting-services-reports.md)

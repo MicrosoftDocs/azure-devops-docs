@@ -1,14 +1,14 @@
 ---
 title: Open bugs sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to guide to generate an open bugs Power BI report  
+description: How-to generate an open bugs Power BI report  
 ms.technology: devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/07/2019
+ms.date: 09/21/2021
 ---
 
 # Open bugs sample report 
@@ -92,6 +92,8 @@ The following table describes each part of the query.
 </tbody>
 </table>
 
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
 
 ## Power BI transforms
 

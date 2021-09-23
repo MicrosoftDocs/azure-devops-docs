@@ -49,7 +49,7 @@ sections:
       - question: Can I create a dashboard with information that spans two or more projects? 
         answer: | 
           ::: moniker range=">= azure-devops-2020"
-          **Yes**. Project dashboards allow you to add widgets for any project and any team. To learn more, see [Add, rename, and delete dashboards, Add a dashboard](../report/dashboards/dashboards.md#add-a-dashboard). 
+          **Sometimes**.  Dashboards allow you to add widgets. Certain widgets are able to gather information from multiple projects. To learn more, see [Add, rename, and delete dashboards, Add a dashboard](../report/dashboards/dashboards.md#add-a-dashboard).  There is also an [open issue](https://developercommunity.visualstudio.com/t/single-dashboard-for-multiple-projects/365500) with additional information regarding this functionality.
           ::: moniker-end
 
           ::: moniker range="< azure-devops-2020"
@@ -139,7 +139,7 @@ sections:
           There is no user interface feature to extract this information. You can use the REST API to get this information as follows:  
           1. Get all projects using [Projects-List](/rest/api/azure/devops/core/projects/list).
           1. Get all repositories of each project using [Repositories - List](/rest/api/azure/devops/git/repositories/list).
-          1. Get all pull requests of each repository using [Pull Requests - Get Pull Requests](/rest/api/azure/devops/git/pull%20requests/get%20pull%20requests#pullrequeststatus). 
+          1. Get all pull requests of each repository using [Pull Requests - Get Pull Requests](/rest/api/azure/devops/git/pull-requests/get-pull-request#pullrequeststatus). 
  
 additionalContent: |
   ## Related articles

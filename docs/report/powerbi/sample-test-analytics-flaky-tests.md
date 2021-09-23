@@ -45,9 +45,8 @@ Specifically, you'll find sample queries for the following reports:
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineId eq 7813 "
                 &"And Date/Date ge 2020-02-04Z "
         &"And Workflow eq 'Build') "
@@ -102,7 +101,7 @@ Each query contains the following strings that you must substitute with your val
 - {organization} - Your organization name
 - {project} - Your team project name
 - {pipelinename} - Your pipeline name. Example: **Fabrikam hourly build pipeline**.
-- {startdate} - The date to start your report. Format: YYYY-MM-DDZ. Example: **2019-09-04Z** represents September 4, 2019. Don't enclose in quotes or brackets and use two digits for both, month and date.
+- {startdate} - The date to start your report. Format: YYYY-MM-DDZ. Example: **2021-09-01Z** represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
 ### Query breakdown
 
@@ -270,9 +269,8 @@ You may want to view the flaky tests of a pipeline for **Release** workflow, ins
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate}) "
         &"/groupby((TestSK, Test/TestName, Workflow), "
@@ -329,9 +327,8 @@ You may want to view the flaky tests of a pipeline for a particular branch only.
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate} "
         &"And Workflow eq 'Build') "
@@ -390,9 +387,8 @@ You may want to view the flaky tests of a pipeline for a particular test file on
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate}) "
         &"/groupby((TestSK, Test/TestName, Test/ContainerName), "
@@ -449,9 +445,8 @@ You may want to view the flaky tests of a pipeline for tests owned by a particul
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate}) "
         &"/groupby((TestSK, Test/TestName, Test/TestOwner), "
