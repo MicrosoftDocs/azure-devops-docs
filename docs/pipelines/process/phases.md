@@ -849,7 +849,7 @@ When you run an agent pool job, it creates a workspace on the agent. The workspa
 
 The `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build.
 
-When you run a pipeline on a **self-hosted agent**, by default, none of the other subdirectories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
+When you run a pipeline on a **self-hosted agent**, by default, none of the other subdirectories other than `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
 
 > [!IMPORTANT]
 > The workspace clean options are applicable only for self-hosted agents. When using Microsoft-hosted agents, job are always run on a new agent. 
