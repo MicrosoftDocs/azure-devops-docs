@@ -34,7 +34,7 @@ FactBuildProject is associated with the following dimension tables:
 -   DimFile    
 -   DimTeamProject  
   
-## Related notes
+## Related articles
 -  [Builds](perspective-build-analyze-report-build-details-coverage.md)   
 -  [Build Quality Indicators](build-quality-indicators-report.md)   
 -  [Build Success Over Time](build-success-over-time-report.md)   

@@ -107,5 +107,5 @@ Toward the end of an iteration, you can use the Unplanned Work report to determi
   
 2.  Click **View Report**.  
   
-## Related notes
+## Related articles
  [Reporting Services Reports](reporting-services-reports.md)

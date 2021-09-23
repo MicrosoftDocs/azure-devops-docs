@@ -38,7 +38,7 @@ One of the quickest ways to generate a custom work tracking report is to use Exc
 
 Here's an example of a status report generated from a flat-list query.  
 
-![Excel State pie chart report](media/excel-reports/IC733832.png)   
+![Excel State pie chart report](media/excel-reports/excel-pie-chart.png)   
 
 
 ## Prerequisites
@@ -67,11 +67,11 @@ Use this procedure when you work from the Team Explorer plug-in for Visual Studi
 
 2. Create a report in Excel From the query results view. The option to **Create Report in Microsoft Excel** only appears if all prerequisites are met.
 
-   ![Create Report in Microsoft Excel](media/excel-reports/IC730317.png)
+   ![Create Report in Microsoft Excel](media/excel-reports/create-report-in-excel.png)
 
 3. Select the check boxes of the reports that you want to generate.
 
-   ![Expanded nodes, New Work Item Report dialog box](media/excel-reports/IC730318.png)
+   ![Expanded nodes, New Work Item Report dialog box](media/excel-reports/new-work-item-report-dialog.png)
 
    Wait until Excel finishes generating the reports. This step might take several minutes, depending on the number of reports and quantity of data.
 
@@ -90,7 +90,7 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 	> The option **New Report** appears even if all prerequisites aren't met. Choosing it may cause Excel to stop responding or display the following error message:  
 	> :::image type="content" source="media/excel-reports/error-message-prereqs-not-met.png" alt-text="Error message displayed when prerequisites aren't met.":::
 
-	![New Report (Team menu selection)](media/excel-reports/IC733833.png)  
+	![New Report option from Team menu.](media/excel-reports/team-menu-new-report-option.png)  
 
    If you don't see the **Team** menu, you'll need to install you'll need to install the [Azure DevOps Office® Integration 2019](https://go.microsoft.com/fwlink/?linkid=2076587&clcid=0x409). See **Requirements** listed earlier in this article.   
 

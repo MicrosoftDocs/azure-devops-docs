@@ -3,7 +3,7 @@ title: Bug Status Report
 titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
-description: Track the team's progress toward resolving and closing bugs by viewing the Bug Status report - Team Foundation Server 
+description: Track the team's progress toward resolving and closing bugs by viewing the Bug Status report. 
 ms.assetid: ede30011-e04a-4914-ab68-b4c725a54f96
 ms.author: kaelli
 ms.date: 10/17/2017
@@ -142,7 +142,7 @@ After the team has started to find and fix bugs, you can track the team's progre
   
 2.  Click **View Report**.  
   
-## Related notes  
+## Related articles  
  [Bugs](/previous-versions/azure/devops/report/sharepoint-dashboards/bugs-dashboard-agile-cmmi)  
  [Bugs](/previous-versions/azure/devops/report/sharepoint-dashboards/bugs-dashboard-agile-cmmi)   
  [Workbooks](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks)  

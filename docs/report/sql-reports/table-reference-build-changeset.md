@@ -31,7 +31,7 @@ For information about the measures and dimensions that are associated with these
 -   DimPerson   
 -   DimTeamProject  
   
-## Related notes
+## Related articles
 - [Builds](perspective-build-analyze-report-build-details-coverage.md)   
 - [Find and view changesets](../../repos/tfvc/find-view-changesets.md)   
 - [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 

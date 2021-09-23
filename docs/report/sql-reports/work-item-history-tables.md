@@ -82,7 +82,7 @@ group by d.DateSK, wi.System_Id, wi.System_Title
 ```  
   
   
-## Related notes 
+## Related articles 
 - [COALESCE (Transact-SQL)](/sql/t-sql/language-elements/coalesce-transact-sql)  
 -  [Test cases and work items](perspective-test-analyze-report-work.md)    
 -  [Burndown](/previous-versions/azure/devops/report/excel/burndown-excel-report)    

@@ -153,5 +153,5 @@ The Requirements Overview report lists all requirements, filtered by area and it
   
 2.  Click **View Report** to refresh the report based on the new filter criteria.  
   
-## Related notes 
+## Related articles 
  [Reporting Services Reports](reporting-services-reports.md)

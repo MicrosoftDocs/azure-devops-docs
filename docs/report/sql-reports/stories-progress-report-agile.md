@@ -170,5 +170,5 @@ The Stories Progress report lists all user stories, filtered by product area and
   
 2.  Click **View Report** to refresh the display based on the new scale.  
   
-## Related notes
+## Related articles
  [Reporting Services Reports](reporting-services-reports.md)

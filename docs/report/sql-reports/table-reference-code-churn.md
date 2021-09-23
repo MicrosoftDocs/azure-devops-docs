@@ -30,7 +30,7 @@ You can query for data about the changes in the code that is under version contr
   
 -   DimTeamProject  
   
-## Related notes
+## Related articles
 -  [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md)   
 -  [Code Churn](/previous-versions/azure/devops/report/excel/code-churn-excel-report)   
 -  [Run Coverage tables](run-coverage-tables.md)   

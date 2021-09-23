@@ -156,5 +156,5 @@ The Stories Overview report lists all user stories, filtered by area and iterati
   
 2.  Click **View Report** to refresh the report based on the new filter criteria.  
   
-## Related notes
+## Related articles
 - [Reporting Services Reports](reporting-services-reports.md)  

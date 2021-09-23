@@ -33,7 +33,7 @@ You can query for data about how thoroughly a particular test run covered the co
 -   DimPerson   
 -   DimTestRun  
   
-## Related notes
+## Related articles
 -  [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md)   
 -  [Code Churn](/previous-versions/azure/devops/report/excel/code-coverage-excel-report)  
 -  [Build](/visualstudio/ide/walkthrough-building-an-application)   

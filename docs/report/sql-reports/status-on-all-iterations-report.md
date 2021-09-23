@@ -102,5 +102,5 @@ After work has progressed on several iterations, also known as sprints, you can 
   
 -   In the **Area** list, select the check box of each product area to include, and then choose **View Report**.  
   
-## Related notes
+## Related articles
  [Reporting Services Reports](reporting-services-reports.md)

@@ -64,7 +64,7 @@ By using the SQL Server Analysis Services cube for Visual Studio Team Foundation
 > [!NOTE]  
 >Perspectives are available only when your data warehouse is using SQL Server Enterprise Edition. Otherwise, you will see only a single perspective, the Team System cube. Each perspective provides a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole cube. A perspective is a subset of the features and objects of a cube.
   
-## Related notes
+## Related articles
 -  [Resolve schema conflicts occurring in the data warehouse](../admin/resolve-schema-conflicts.md)   
 -  [Create status and trend reports in Excel](../create-status-and-trend-excel-reports.md)   
 -  [Manage reports, data warehouse, and cube](../admin/manage-reports-data-warehouse-cube.md)
