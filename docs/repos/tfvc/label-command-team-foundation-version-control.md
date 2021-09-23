@@ -166,7 +166,7 @@ For information about an existing label that includes a list of the items to whi
 
 ### Managing Overloaded Labels
 
-Label names must be unique throughout a specified scope. When you add a label, you reserve the use of that label name at or under the specified or implied scope. The default value for the <em>@scope</em> parameter is the project, for example, $/TeamProject1.
+Label names must be unique throughout a specified scope. When you add a label, you reserve the use of that label name at or under the specified or implied scope. The default value for the *@scope* parameter is the project, for example, $/TeamProject1.
 
 If another team or user adds a common label such as "M3" to a set of version-controlled files in a different part of the Team Foundation version control server, you can apply the M3 label to version-controlled files in your project as long as the root project folders are in different directories. For example, if files in the $/math directory are labeled "M3," you can apply the "M3" to files in your $/projects directory.
 

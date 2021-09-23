@@ -132,7 +132,7 @@ tf dir itemspec [/version:versionspec] [/recursive]
 :::row-end:::
 
 ## Remarks
-The <strong>dir</strong> command operates on the Team Foundation version control server copies of files, not the local copies. The command uses the local mapped folder to locate the appropriate Team Foundation version control server path. You use this command to explore the Team Foundation version control server and identify files you may have to obtain.
+The **dir** command operates on the Team Foundation version control server copies of files, not the local copies. The command uses the local mapped folder to locate the appropriate Team Foundation version control server path. You use this command to explore the Team Foundation version control server and identify files you may have to obtain.
 
 For links to other Team Foundation commands that provide additional information about items in your Team Foundation version control server and the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 

@@ -70,7 +70,7 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
    *username*
    :::column-end:::
    :::column span="3":::
-   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or <i>UserName&lt;/i.
+   Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName*.
    :::column-end:::
 :::row-end:::
 

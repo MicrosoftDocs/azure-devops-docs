@@ -165,7 +165,7 @@ tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:
 :::row-end:::
 
 ## Remarks
-The <strong>view</strong> command of the <strong>tf</strong> command-line utility retrieves a read-only copy of a file from the Team Foundation version control server to a temporary folder on your computer and displays its contents. Unless you specify a particular version, Team Foundation retrieves the latest version of the file from the Team Foundation version control server.
+The **>view** command of the **tf** command-line utility retrieves a read-only copy of a file from the Team Foundation version control server to a temporary folder on your computer and displays its contents. Unless you specify a particular version, Team Foundation retrieves the latest version of the file from the Team Foundation version control server.
 
 The **view** command does not retrieve files into your workspace or check them out. See [Get Command](get-command.md) and [Checkout and Edit Commands](checkout-or-edit-command.md) for more information about how to get the Team Foundation version control server version of and check out files.
 
