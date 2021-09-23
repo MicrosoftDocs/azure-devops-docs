@@ -74,16 +74,13 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    
    Lock Options:
 
-   - **None**
-   
+   - **None**  
      Default. No lock is applied. If you have placed a lock on the specified file, this option removes it. It does not remove a lock placed by someone else.
    
-   - **Checkin**
-   
+   - **Checkin**  
      Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
    
-   - **Checkout**
-   
+   - **Checkout**     
      Prevents other users from checking in or checking out any one of the specified items until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
    :::column-end:::
 :::row-end:::
