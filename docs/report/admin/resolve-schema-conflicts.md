@@ -1,6 +1,6 @@
 ---
 title: Resolve data warehouses schema conflicts
-titleSuffix: TFS
+titleSuffix: Azure DevOps Server
 description: Resolve schema conflicts that are occurring in the data warehouse when connecting to Team Foundation Server    
 ms.assetid: BB517672-2A9A-4A5B-8F27-E4409F199C02  
 ms.technology: devops-analytics
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< azure-devops' 
-ms.date: 11/19/2018
+ms.date: 09/23/2021
 ---
 
 # Resolve data warehouse schema conflicts
