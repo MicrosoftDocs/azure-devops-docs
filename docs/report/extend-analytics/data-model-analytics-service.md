@@ -1,15 +1,14 @@
 ---
 title: Data model for Analytics
 titleSuffix: Azure DevOps 
-description: Describes the data entities and relationships provided by Analytics for Azure DevOps  
+description: Describes the EntityTypes and relationships provided by Analytics for Azure DevOps  
 ms.technology: devops-analytics
-ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
-ms.reviewer: angurusw
+ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177   
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/14/2020
+ms.date: 09/21/2021
 ---
 
 # Data model for Analytics  
@@ -24,10 +23,14 @@ Analytics data model for Azure DevOps consists of entity sets, whose members (en
 
 <a id="entities" />
 
-## Entities  
+## EntityTypes and EntitySets  
+
+Entity types are named structured types with a key. They define the named properties and relationships of each entity. The key of an **EntityType** is formed from a subset of the primitive properties, for example&mdash;*WorkItemId*, *PipelineId*, *ReleasePipelineId*&mdash;and more of the entity type.
+
+Entity sets are named collections of entities. For example, **WorkItems** is an entity set containing **WorkItem** entities. An entity's key uniquely identifies the entity within an entity set. If multiple entity sets use the same entity type, the same combination of key values can appear in more than one entity set and identifies different entities, one per entity set where this key combination appears. Each of these entities has a different entity-id. Entity sets provide entry points into the data model.
 
 > [!NOTE]  
->Entity sets are described in OData metadata, and vary by project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: 
+> Entity sets are described in OData metadata, and vary by project. You can explore the complete list of entity sets, entity types, and properties by requesting the OData metadata for your project. 
 
 ::: moniker range="azure-devops"
 
@@ -49,48 +52,73 @@ Analytics data model for Azure DevOps consists of entity sets, whose members (en
 
 [!INCLUDE [temp](../includes/api-versioning.md)]
 
-The following EntitySets are supported with the indicated API versions. For the latest version information, see [OData API versioning](odata-api-version.md).
+The following **EntitySets** are supported with the indicated API versions. For the latest version information, see [OData API versioning](odata-api-version.md).
 
-## Work tracking EntitySets
+## Work tracking EntityTypes and EntitySets
 
 > [!div class="mx-tdCol2BreakAll"]  
-> | EntitySet | Description | v1.0 | v2.0 | v3.0-preview |
-> |-----------|-------------|------|------|--------------|
-> |Areas | The work item Area Paths, with properties for grouping and filtering by area hierarchy | ✔️|✔️|✔️ |
-> |Iterations | The work item Iteration Paths, with properties for grouping and filtering by iteration hierarchy |✔️|✔️|✔️ |  
-> |BoardLocations | The Kanban board cell locations, as identified by board column, lane, and split, includes historic board settings| ✔️|✔️|✔️ | 
-> |Dates | The dates used to filter and group other entities using relationships | ✔️|✔️|✔️ | 
-> |Projects | All projects defined for an organization |✔️|✔️|✔️ |
-> |Processes | Backlog information - used to expand or filter work items and work item types|  |✔️|✔️ | 
-> |Tags | All work item tags for each project | ✔️|✔️|✔️ | 
-> |Teams | All teams defined for the project (To add a team, see [Add teams](../../organizations/settings/add-teams.md)) | ✔️|✔️|✔️ | 
-> |Users | User information that is used to expand or filter various work item properties (e.g. Assigned To, Created By)| ✔️|✔️|✔️ | 
-> |WorkItems | The current state of work items| ✔️|✔️|✔️ | 
-> |WorkItemLinks | The links between work items (e.g. child, parent, related) - includes only latest revision of links (no history) - hyperlinks not included | ✔️|✔️|✔️ | 
-> |WorkItemRevisions | All historic work item revisions, including the current revision - does not include deleted work items| ✔️|✔️|✔️ | 
-> |WorkItemSnapshot | (Composite) The state of each work item on each calendar date - used for trend reporting| ✔️|✔️|✔️ | 
-> |WorkItemBoardSnapshot | (Composite) The state of each work item on each calendar date, including Kanban board location - used for trend reporting| ✔️|✔️|✔️ | 
-> |WorkItemTypeFields | The work item properties for each work item type and process - used for report building| ✔️|✔️|✔️ | 
+> |EntityType/EntitySet | Description | v1.0 | v2.0 | v3.0-preview | v4.0-preview |
+> |----------------------|-------------|------|------|--------------|--------------|
+> |**Area**/<br/>**Areas** |The work item **Area Paths**, with properties for grouping and filtering by area hierarchy. | ✔️|✔️|✔️ | ✔️ |  
+> |**Iteration**/<br/>**Iterations** | The work item **Iteration Paths**, with properties for grouping and filtering by iteration hierarchy.  |✔️|✔️|✔️ | ✔️ |  
+> |**BoardLocation**/<br/>**BoardLocations** |The Kanban board cell locations, as identified by board column, lane, and split, includes historic board settings. For a description of each Kanban board field, see [Workflow and Kanban board fields](../../boards/queries/query-by-workflow-changes.md#workflow-and-kanban-board-fields).| ✔️|✔️|✔️ | ✔️ |  
+> |**CalendarDate**/<br/>**Dates** | The dates used to filter and group other entities using relationships.  | ✔️|✔️|✔️ | ✔️ |  
+> |**Project**/<br/>**Projects** |All projects defined for an organization. |✔️|✔️|✔️ | ✔️ |  
+> |**Process**/<br/>**Processes** |Backlog information used to expand or filter work items and work item types. For an example that uses **Processes** to filter a report, see [Requirements tracking sample report](../powerbi/sample-stories-overview.md). |  |✔️|✔️ | ✔️ |  
+> |**Tag**/<br/>**Tags** | All work item tags for each project. For an example that uses **Tags** to filter a report, see [Release burndown sample report](../powerbi/sample-boards-releaseburndown.md). | ✔️|✔️|✔️ |  
+> |**Team**/<br/>**Teams** | All teams defined for the project. For an example that uses **Teams** to filter a report, see [Add a Team slicer to a Power BI report](../powerbi/sample-boards-teamslicer.md).  | ✔️|✔️|✔️ | ✔️ | 
+> |**User**/<br/>**Users** |User information that is used to expand or filter various work item properties, for example **Assigned To**, **Created By**. | ✔️|✔️|✔️ | ✔️ | 
+> |**WorkItemBoardSnapshot**/<br/>**WorkItemBoardSnapshot** |(Composite) The state of each work item on each calendar date, including Kanban board location, used to generate trend reports.   For a sample report, see [Cumulative Flow Diagram (CFD) sample report](../powerbi/sample-boards-cfd.md). | ✔️|✔️|✔️ | ✔️ |  
+> |**WorkItemLink**/<br/>**WorkItemLinks** | The links between work items, for example, *Child*, *Parent*, and *Related*. Includes only the latest revision of links, no history. Hyperlinks aren't included.  | ✔️|✔️|✔️ |  ✔️ | 
+> |**WorkItemRevision**/<br/>**WorkItemRevisions** |All historic work item revisions, including the current revision. Does not include deleted work items. | ✔️|✔️|✔️ | ✔️ |  
+> |**WorkItemSnapshot**/<br/>**WorkItemSnapshot** |(Composite) The state of each work item on each calendar date, used to support trend reporting. For a sample report, see [Bug trends sample report](../powerbi/sample-boards-bugtrend.md).  | ✔️|✔️|✔️ | ✔️ |  
+> |**WorkItem**/<br/>**WorkItems** |The current state of work items. Used to support status reports. For a sample report, see [Rollup child work item values to parent sample report](../powerbi/sample-boards-rollup.md). | ✔️|✔️|✔️ | ✔️ | 
+> |**WorkItemTypeField**/<br/>**WorkItemTypeFields** |The work item properties for each work item type and process. Used to support building reports. | ✔️|✔️|✔️ | ✔️ |  
+
+**Additional resources:**
+
+- [Analytics views dataset design](../powerbi/data-connector-dataset.md)
+- [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md)
+- [About teams and Agile tools](../../settings/about-teams-and-settings.md)
+- [Project and team quick reference](../../organizations/projects/project-team-quick-reference.md)
+- [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md)
+- [Add teams](../../organizations/settings/add-teams.md)
+- [Link type reference](../../boards/queries/link-type-reference.md)
+
 
 ::: moniker range=">= azure-devops-2020"
 
-## Branch, Pipelines, and Test EntitySets
+## Branch, Pipelines, and Test EntityTypes and EntitySets
 
-The following EntitySets are only supported with the **v3.0-preview** API version.
+The following **EntityTypes** and **EntitySets** are supported with the **v3.0-preview** or **v4.0-preview** API versions.  
 
 > [!div class="mx-tdCol2BreakAll"]  
-> | EntitySet | Description | v3.0-preview |
-> |-----------|-------------|------|
-> |Branches | Basic information about branches used in tests or pipelines |  ✔️ |
-> |Pipelines| Properties for a pipeline |  ✔️ |
-> |PipelineTasks | Properties for tasks that are used within a pipeline |  ✔️ |
-> |PipelineRunActivityResults | Merged log of all the stages/steps/jobs/tasks within a specific pipeline execution |   ✔️ |
-> |PipelineRuns | Execution information for pipelines |  ✔️ |
-> |TestResultsDaily | A daily snapshot aggregate of TestResult executions, grouped by Test (not TestRun) |  ✔️ |
-> |TestRuns | Execution information for tests run under a pipeline with aggregate TestResult |  ✔️ |
-> |Tests | Properties for a test | ✔️ |
-> |TestResults | Individual execution results for a specific Test associated with a TestRun |  ✔️ |
+> |EntityType/EntitySet | Description | v3.0-preview | v4.0-preview |
+> |----------------------|-------------|--------------|--------------|
+> |**Branch**/<br/>**Branches** | Basic information about branches used in tests or pipelines. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md).|  ✔️ | ✔️ |
+> |**ParallelPipelineJobsSnapshot**/<br/>**ParallelPipelineJobsSnapshot** | (Composite) Supports understanding of parallel pipeline consumption. To learn more about parallel pipeline tests, see [Run tests in parallel using the Visual Studio Test task](../../pipelines/test/parallel-testing-vstest.md). |   | ✔️ |
+> |**Pipeline**/<br/>**Pipelines**| Properties for a pipeline. |  ✔️ | ✔️ |
+> |**PipelineJob**/<br/>**PipelineJobs** |Individual execution results for a specific Test associated with a TestRun | ✔️ | ✔️ |
+> |**PipelineRun**/<br/>**PipelineRuns** | Execution information for pipelines. For a sample report, see [Pipeline pass rate trend sample report](../powerbi/sample-pipelines-pass-rate-trend.md).  |  ✔️ | ✔️ |
+> |**PipelineRunActivityResult**/<br/>**PipelineRunActivityResults** | Merged log of all the stages, steps, jobs, and tasks within a specific pipeline execution. For a sample report, see [Pipeline task duration sample report](../powerbi/sample-pipelines-task-duration.md). |   ✔️ | ✔️ |
+> |**PipelineTask**/<br/>**PipelineTasks** | Properties for tasks that are used within a pipeline.  |  ✔️ | ✔️ |
+> |**TestConfiguration**/<br/>**TestConfigurations** |Test plan configuration information. For details on configuring tests, see [Test different configurations](../../test/test-different-configurations.md)  |  ✔️ | ✔️ |
+> |**TestResult**/<br/>**TestResults** | Individual execution results for a specific **Test** associated with a **TestRun**.  |  ✔️ | ✔️ |
+> |**TestResultsDaily**/<br/>**TestResultsDaily** | A daily snapshot aggregate of **TestResult** executions, grouped by Test (not TestRun).  For a sample report, see [Test summary trend sample report](../powerbi/sample-test-summary-trend.md). |  ✔️ | ✔️ |
+> |**TestRun**/<br/>**TestRuns** | Execution information for tests run under a pipeline with aggregate TestResult. |  ✔️ | ✔️ |
+> |**Test**/<br/>**Tests** | Properties for a test case, such as test name and test owner. For details on defining test cases, see [Create manual test cases](../../test/create-test-cases.md).  | ✔️ | ✔️ |
+> |**TestPoint**/<br/>**TestPoints** | Execution information for test points. A test point is a unique combination of test case, test suite, configuration, and tester. For a sample report, see [Progress status sample report](../powerbi/sample-test-plans-progress-status.md). | ✔️ | ✔️ |
+> |**TestPointHistorySnapshot**/<br/>**TestPointHistorySnapshots** | (Composite) Individual execution results for a specific **Test** associated with a **TestRun**. For a sample report, see [Manual test execution trend sample report](../powerbi/sample-test-plans-execution-trend.md)|  ✔️ | ✔️ |
+> |**TestSuite**/<br/>**TestSuites**| Test suites information. For details on defining test suites, see [Create test plans and test suites](../../test/create-a-test-plan.md). |  ✔️ | ✔️ |
+> |**TaskAgentPoolSizeSnapshot**/<br/>**TaskAgentPoolSizeSnapshots** |(Composite) Supports understanding of pool size, pipeline jobs, and concurrency. The [Historical graph for agent pools](../../pipelines/agents/pool-consumption-report.md) illustrates how this entity set can be used. |   | ✔️ |
+> |**TaskAgentRequestSnapshot**/<br/>**TaskAgentRequestSnapshots** |(Composite)    |   | ✔️ |
 
+**Additional resources:**
+
+- [Use Azure Pipelines](../../pipelines/get-started/pipelines-get-started.md)
+- [About pipeline tests](../../pipelines/test/test-glossary.md)
+- [Test objects and terms](../../test/test-objects-overview.md) 
+ 
 ::: moniker-end
 
 
@@ -98,9 +126,9 @@ The following EntitySets are only supported with the **v3.0-preview** API versio
 
 Composite entities support specific scenarios. They are composed from simpler entities, often require more computing resources to generate, and may return larger result sets. To achieve the best performance and avoid unnecessary throttling, ensure that you query the correct entity for your scenario.
 
-For example, WorkItemSnapshot combines WorkItemRevisions and Dates such that each date has one revision for each work item. This representation supports OData queries that focus on trend data for a filtered set of work items. However, you should not use this composite entity to query the current state of work items. Instead, you should use the WorkItems entity set to generate a more quick-running query.
+For example, **WorkItemSnapshot** combines **WorkItemRevisions** and **Dates** such that each date has one revision for each work item. This representation supports OData queries that focus on trend data for a filtered set of work items. However, you should not use this composite entity to query the current state of work items. Instead, you should use the **WorkItems** entity set to generate a more quick-running query.
 
-Similarly, some entities may contain all historic values, while others may only contain current values. WorkItemRevision contains all work item history, which you should not use in scenarios where the current values are of interest.
+Similarly, some entities may contain all historic values, while others may only contain current values. **WorkItemRevision** contains all work item history, which you should not use in scenarios where the current values are of interest.
 
 ## Relationships
 
@@ -112,24 +140,27 @@ Some navigation properties result in a single entity, while others result in a c
 
 ## Relationship keys
 
- Entity relationships are also represented as foreign keys so that external tools can join entities. These properties have the suffix "SK", and are either integer or GUID data types. Date properties have corresponding integer date key properties with the following format: YYYYMMDD.
+ Entity relationships are also represented as foreign keys so that external tools can join entities. These properties have the suffix "SK", and are either integer or GUID data types. Date properties have corresponding integer date key properties with the following format: **YYYYMMDD**.
 
 ## Entity properties
 
-The following table provides a partial list of the WorkItemRevision entity properties to illustrate some common details. The last three properties&mdash;CreatedDate, CreatedDateSK, CreatedOn&mdash;show that the same value is often expressed in multiple properties, each designed for different scenarios.
+The following table provides _*a partial list*_ of the **WorkItemRevision** entity properties to illustrate some common details. The first three properties&mdash;**CreatedDate**, **CreatedDateSK**, **CreatedOn**&mdash;show that the same value is often expressed in multiple properties, each designed for different scenarios.
 
 | Property | Type | Description|  
 |--------|------------|------------|  
-|WorkItemRevisionSK | Int32 | The Analytics unique key for the work item revision - used by external tools to join related entities.
-|WorkItemId | Int32 | The Id for the work item.
-|Revision | Int32 | The revision of the work item. 
-|Title | String | The work item title. 
-|WorkItemType | String | The work item type (e.g. Bug, Task, User Story).
-|StoryPoints | Double | The points assigned to this work item - commonly aggregated as a sum.
-| Tags | Navigation | Navigation property to a Tag entity collection. Commonly used in ```$expand``` statements to access the Name property for multiple work item tags.
-|CreatedDate | DateTimeOffset | The date the work item was created, expressed in the [time zone defined for the organization](../../organizations/accounts/change-organization-location.md). Commonly used for filtering and for display.
-|CreatedDateSK | Int32 | The date the work item was created, expressed as YYYYMMDD in the time zone defined for the organization. Used by external tools to join related entities.
-|CreatedOn | Navigation | Navigation property to the Date entity for the date the work item was created, in the time zone defined for the organization. Commonly used to reference properties from the Date entity in ```groupby``` statements.
+|**CreatedDate** | DateTimeOffset | The date the work item was created, expressed in the [time zone defined for the organization](../../organizations/accounts/change-organization-location.md). Commonly used for filtering and for display. | 
+|**CreatedDateSK** | Int32 | The date the work item was created, expressed as `YYYYMMDD` in the time zone defined for the organization. Used by external tools to join related entities. | 
+|**CreatedOn** | Navigation | Navigation property to the Date entity for the date the work item was created, in the time zone defined for the organization. Commonly used to reference properties from the Date entity in ```groupby``` statements. | 
+|**StoryPoints** | Double | The points assigned to a work item, commonly aggregated as a sum. | 
+|**Tags** | Navigation | Navigation property to a Tag entity collection. Commonly used in ```$expand``` statements to access the Name property for multiple work item tags. | 
+|**Title** | String | The work item title.  | 
+|**Revision** | Int32 | The revision of the work item.  | 
+|**WorkItemId** | Int32 | The ID for the work item. | 
+|**WorkItemRevisionSK** | Int32 | The Analytics unique key for the work item revision - used by external tools to join related entities. | 
+|**WorkItemType** | String | The work item type, for example Bug, Task, User Story. | 
+
+
+
 
 > [!NOTE]
 > Changes to custom work item fields will affect the shape of your data model and will affect all work item revisions. For instance, if you add a new field, queries on pre-existing revision data will reflect the presence of the new field. 
@@ -137,6 +168,7 @@ The following table provides a partial list of the WorkItemRevision entity prope
 
 ## Related articles 
 
+- [Query guidelines for Analytics with OData](odata-query-guidelines.md)
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)
 - [Exploring Analytics OData metadata](analytics-metadata.md) 
