@@ -11,3 +11,6 @@ ms.date: 07/07/2020
 
 * For CI triggers, the YAML file that is in the branch you are pushing is evaluated to see if a CI build should be run.
 * For PR triggers, the YAML file resulting from merging the source and target branches of the PR is evaluated to see if a PR build should be run.
+
+### Buil-In checkout mechanism doesn't use parameter that we require. What can we do?
+* In this case we recommend to use script with customized checkout tactic for that.
