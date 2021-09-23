@@ -233,7 +233,7 @@ The following table describes each plug-in file and whether or not it is support
    This plug-in also uploads the information contained in the following files and folders:
  
    
-   - **Process Guidance**: Uploads a set of .htm files which contain a URL that opens process guidance topics when a user clicks the ![ProcessGuidance_WI_Icon](media/processguidance_wi_icon.png) help icon from the client version of a work item form. These files can be customized to point to other resources for process guidance.  
+   - **Process Guidance**: Uploads a set of .htm files which contain a URL that opens process guidance topics when a user clicks the ![ProcessGuidance WI Icon](media/processguidance_wi_icon.png) help icon from the client version of a work item form. These files can be customized to point to other resources for process guidance.  
    - **Samples and Templates**: Uploads one or more Excel workbooks (.xlsx files) to support bug triage and track issues.  
    - **Shared Documents**: Uploads one or more sample document and template files as a starting point for creating work products.  
    <blockquote>
