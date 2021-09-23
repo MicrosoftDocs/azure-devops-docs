@@ -11,6 +11,8 @@ ms.date: 06/04/2020
 
 When a pipeline is triggered, Azure Pipelines pulls your source code from the Azure Repos Git repository. You can control various aspects of how this happens.
 
+> [!NOTE]
+> **Q: I need to use additional parameter on my fetch\checkout, how can we do it?** **A:** Not all of the available parameters are supported, so we recommend using script with customized checkout tactic for that.
 ### Preferred version of Git
 
 The Windows agent comes with its own copy of Git.
