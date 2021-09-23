@@ -1,18 +1,15 @@
 ---
-title: Share your team's sprint plan 
+title: Share your team's sprint plan with your team in Azure Boards
 titleSuffix: Azure Boards
-description: Share sprint plan working with Scrum methods 
+description: Learn how to share sprint plan working with Scrum methods.
 ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 09/20/2021
 ---
-
-
-
 
 # 5. Share your sprint plan
 
@@ -20,20 +17,20 @@ ms.date: 07/09/2020
  
 <a id="share" >  </a>
 
-Once you've completed your sprint plan, you can easily share it with other members of your team or organization.  This article shows you how to: 
+Once you've completed your sprint plan, you can easily share it with other members of your team or organization. This article shows you how to: 
 
 > [!div class="checklist"]   
 > * Create a query from your sprint plan    
 > * Email your sprint plan   
 
-Any stakeholder on your team (someone with permissions to connect to your project) can view your sprint plan. Simply send them the URL of your sprint backlog page. But also, you can share it with them through email or print a version. 
+Any stakeholder on your team (someone with permissions to connect to your project) can view your sprint plan. Send them the URL of your sprint backlog page. But also, you can share it with them through email or print a version. 
 
 
-## Open a Sprint backlog for a team 
+## Open a sprint backlog for a team 
 
 ::: moniker range=">= azure-devops-2020"
 
-1. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+1. From your web browser, open your product backlog. (1) Check that you've selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Work, Sprints, for a team](media/add-tasks/open-sprint-backlog-s155-co.png)
@@ -54,7 +51,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ::: moniker range="azure-devops-2019"
 
-1. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+1. From your web browser, open your product backlog. (1) Check that you've selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
 1. ![Open Work, Sprints, for a team](media/add-tasks/open-sprints-backlog-agile.png)
 
@@ -92,12 +89,12 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](media/add-tasks/choose-sprint-standard.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
+	The system lists only those sprints that have been selected for the current team focus. For more information, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
 
 
-## Create query of your sprint plan 
+## Create query for your sprint plan 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -148,7 +145,7 @@ Or, you can select all the items in the list, choose **Copy as HTML**, and paste
 
 
 
-## Try this next
+## Next step
 > [!div class="nextstepaction"]
 > [6. Update the taskboard](task-board.md) 
 
