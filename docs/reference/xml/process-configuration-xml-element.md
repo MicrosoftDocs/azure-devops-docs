@@ -921,6 +921,8 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 
    - **StateColors** sets the color values for workflow states. (Requires TFS 2017 or later version) 
 
+   <a id="state-colors">  </a>
+
    The value for the property is a comma-separated list of state names and hex colors. Prefix the six-digit Hex color code with FF which denotes that the color should be fully visible.
 
    `<Property name="StateColors" value="stateName1=color1,  
