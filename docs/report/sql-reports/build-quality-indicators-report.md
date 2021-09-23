@@ -1,9 +1,9 @@
 ---
 title: Build Quality Indicators Report
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
-description: Shows test coverage, code churn, and bug counts for a specified build definition - Team Foundation Server
+description: Shows test coverage, code churn, and bug counts for a specified build definition.
 ms.assetid: 7e9e87ae-43c7-4ede-9c66-dd887f5a8905
 ms.author: kaelli
 author: KathrynEE
@@ -207,5 +207,5 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
   
 2.  Click **View Report**.  
   
-## Related notes 
+## Related articles 
  [Reporting Services Reports](reporting-services-reports.md)
