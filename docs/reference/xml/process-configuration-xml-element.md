@@ -931,7 +931,9 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
    > [!NOTE]   
    > **Feature availability:** You can specify workflow state colors if you use Hosted XML or, for On-premises XML, you have upgraded to TFS 2015.2 or later version.  
    
-   For additional details, see the next section, [Specify workflow state colors](#workflow-colors).  
+   For additional details, see the next section, [Specify workflow state colors](#workflow-colors). 
+
+   <a id="wit-icons">  </a> 
     
    - **WorkItemTypeIcons** defines the icon to display for each work item type. The icon displays in lists of work items and in work item forms. The default entry for the Agile process is as shown. You can only specify an icon from the [supported list of icons](#supported-icons). 
 

@@ -557,7 +557,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    :::column span="1":::
    Optional. Identifies a control uniquely. The **Name** is important if more than one control on the form is associated with the same work item field.  
 
-   > [!NOTE]: 
+   > [!NOTE]  
    > You use the **Name** attribute when you want to have the same field displayed on more than one **Page** on the form. You specify a unique value for the **Name** attribute for both control entries so that the system identifies each control uniquely.  
    :::column-end:::
 :::row-end:::
