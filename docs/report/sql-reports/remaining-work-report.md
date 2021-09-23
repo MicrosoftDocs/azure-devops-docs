@@ -1,6 +1,6 @@
 ---
 title: Remaining Work Report 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Tracks the team's progress and identify any problems in the flow of work
@@ -154,5 +154,5 @@ After the team has estimated its tasks and begun work, you can use the Remaining
   
 2.  Click **View Report**.  
   
-## Related notes
+## Related articles
  [Reporting Services Reports](reporting-services-reports.md)
