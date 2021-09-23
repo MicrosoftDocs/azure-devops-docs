@@ -1,14 +1,14 @@
 ---
 title: Rollup child work item values to sample report
 titleSuffix: Azure DevOps
-description:  Sample Power BI queries to display rollup of child work item values to the parent 
+description:  How to generate a rollup of child work item values to the parent Power BI report
 ms.technology: devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/18/2020
+ms.date: 09/21/2021
 ---
 
 # Rollup child work item values to parent sample report
@@ -95,6 +95,8 @@ The following table describes each part of the query.
 </tbody>
 </table>
 
+
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
 
 ## Power BI transforms
 

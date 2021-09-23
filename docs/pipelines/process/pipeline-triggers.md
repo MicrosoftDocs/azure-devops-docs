@@ -113,7 +113,7 @@ resources:
     source: Farbrikam-CI  
     trigger:    
       stages:         # This stage filter is used when evaluating conditions for 
-      - PreProduction # triggering your pipeine. On successful completion of all the stages
+      - PreProduction # triggering your pipeline. On successful completion of all the stages
       - Production    # provided, your pipeline will be triggered. 
 ```
 

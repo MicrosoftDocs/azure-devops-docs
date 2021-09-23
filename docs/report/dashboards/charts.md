@@ -151,7 +151,7 @@ When creating a query to support your chart, follow these guidelines.
 - Charts saved under **Shared Queries** are viewable by all team members, except members with Stakeholder access, and can be added to dashboards.   
 - Charts that you create for queries under your **My Queries** folder are visible only to you.   
 - You can copy and email the URL of any chart page to share it with a project member. 
-- To create similar charts for tests, see [Track your test results](../../test/track-test-status.md).   
+- To create similar charts for tests, see [Track test status](../../test/track-test-status.md).   
 
 
 ### Display of areas and iterations
@@ -461,6 +461,6 @@ Query-based charts generate data from the work item tracking data store and ther
 - [Cumulative flow diagram](cumulative-flow.md)  
 - [Team velocity](team-velocity.md)  
 - [View/configure sprint burndown](configure-sprint-burndown.md)  
-- [Test progress and test results](../../test/track-test-status.md)  
+- [Track test status](../../test/track-test-status.md)  
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
 - [Widget catalog](widget-catalog.md)

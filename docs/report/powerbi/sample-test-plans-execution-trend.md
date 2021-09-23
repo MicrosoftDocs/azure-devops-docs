@@ -9,7 +9,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 07/14/2020
+ms.date: 09/21/2021
 ---
 
 # Manual test execution trend sample report
@@ -20,7 +20,7 @@ This article shows you how to get the execution state of one or more Test Plans 
 
 [!INCLUDE [temp](includes/preview-note.md)]
  
-The report generated is similar to following image and the Outcome trend chart of the [Track test status - Progress report](../../test/track-test-status.md).
+The report generated is similar to following image and the Outcome trend chart of the [Progress report](../../test/progress-report.md).
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
@@ -125,18 +125,59 @@ Each query contains the following strings that you must substitute with your val
 
 The following table describes each part of the query.
 
+---
+:::row:::
+   :::column span="1":::
+      **Query part**
+   :::column-end:::
+   :::column span="2":::
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      `filter((TestSuite/TestPlanTitle eq '{testPlanTitle}'))`
+   :::column-end:::
+   :::column span="2":::
+      Return data for only selected test plan. You can add multiple plans with a clause like `filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}'` or `TestSuite/TestPlanTitle eq '{testPlanTitle2}'))`. You can also apply any other filters related to test suites, test configurations here.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `and (DateSK ge {startDate} and DateSK le {endDate})`
+   :::column-end:::
+   :::column span="2":::
+      Date range of interest. You can enter the dates in **YYYYMMDD** format. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `/groupby((DateSK)`
+   :::column-end:::
+   :::column span="2":::
+      Group the data into bins of same date. This produces one set of values per day in given date range.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `/aggregate($count as TotalCount,`
+   :::column-end:::
+   :::column span="2":::
+      Aggregate data across the filtered test points with having count as `TotalCount`. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed,`
+   :::column-end:::
+   :::column span="2":::
+      While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as `Passed` metric. 
+   :::column-end:::
+:::row-end:::
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle}'))</code></td><td>Return data for only selected test plan. You can add multiple plans with a clause like <code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}'))</code>. You can also apply any other filters related to test suites, test configurations here.</td><tr>
-<tr><td><code>and (DateSK ge {startDate} and DateSK le {endDate})</code></td><td>Date range of interest. You can enter the dates in YYYYMMDD format.</td><tr>
-<tr><td><code>/groupby((DateSK)</code></td><td>Group the data into bins of same date. This produces one set of values per day in given date range.</td><tr>
-<tr><td><code>/aggregate($count as TotalCount,</code></td><td>Aggregate data across the filtered test points with having count as <code>TotalCount</code></td><tr>
-<tr><td><code>cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed,</code></td><td>While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as '<code>Passed</code>' metric.</td><tr>
-</tbody>
-</table>
-
+ 
+[!INCLUDE [temp](includes/query-filters-test.md)]
 
 ## Power BI transforms
 
