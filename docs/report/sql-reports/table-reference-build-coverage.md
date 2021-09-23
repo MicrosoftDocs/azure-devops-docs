@@ -1,6 +1,6 @@
 ---
 title: Build Coverage tables
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about how thoroughly source code was covered by the tests that use specific builds.
@@ -36,7 +36,7 @@ For information about the measures and dimensions that are associated with these
 -   DimDate  
 -   DimTeamProject  
   
-## Related notes
+## Related articles
 -  [Builds](perspective-build-analyze-report-build-details-coverage.md)   
 -  [Code Churn](/previous-versions/azure/devops/report/excel/code-coverage-excel-report)   
 -  [Run Coverage tables](run-coverage-tables.md)    

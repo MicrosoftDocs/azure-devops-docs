@@ -1,6 +1,6 @@
 ---
 title: Work Item History tables
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for historical data about bugs, tasks, and other types of work items defined in an on-premises Team Foundation Server 
@@ -82,7 +82,7 @@ group by d.DateSK, wi.System_Id, wi.System_Title
 ```  
   
   
-## Related notes 
+## Related articles 
 - [COALESCE (Transact-SQL)](/sql/t-sql/language-elements/coalesce-transact-sql)  
 -  [Test cases and work items](perspective-test-analyze-report-work.md)    
 -  [Burndown](/previous-versions/azure/devops/report/excel/burndown-excel-report)    

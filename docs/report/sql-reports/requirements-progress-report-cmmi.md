@@ -1,6 +1,6 @@
 ---
 title: Requirements Progress Report (CMMI) 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Lists all requirements, filtered by product area and iteration in order of importance.
@@ -170,6 +170,6 @@ The Requirements Progress report lists all requirements, filtered by product are
   
 2.  Click **View Report** to refresh the display based on the new scale.  
   
-## Related notes 
+## Related articles 
  [Requirements Overview](requirements-overview-report-cmmi.md)   
  [Reporting Services Reports](reporting-services-reports.md)

@@ -1,7 +1,7 @@
 ---
 title: Work Item Changeset tables 
 description: Query for data about work items that are linked to changesets 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference 
 ms.assetid: 0c017c1e-b19b-40b6-9927-b88b48700976
@@ -27,7 +27,7 @@ You can query for data about work items that are linked to changesets by using F
   
 -   DimWorkItem  
   
-## Related notes 
+## Related articles 
 -  [Test cases and work items](perspective-test-analyze-report-work.md)   
 -  [Find and view changesets](../../repos/tfvc/find-view-changesets.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

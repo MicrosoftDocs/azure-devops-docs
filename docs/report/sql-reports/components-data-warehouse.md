@@ -1,6 +1,6 @@
 ---
 title: Components of the SQL Server data warehouse 
-titleSuffix: TFS
+titleSuffix: Azure DevOps Server
 description: Understand the components of the Team Foundation Server data warehouse 
 ms.technology: devops-analytics
 ms.topic: conceptual

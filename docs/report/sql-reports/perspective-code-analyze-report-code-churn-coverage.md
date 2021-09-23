@@ -1,6 +1,6 @@
 ---
 title: Analyze and report on code churn and code coverage 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: View measures, dimensions, and attributes that are associated with the changes in lines of codes 
@@ -149,7 +149,7 @@ The following table describes the measures in the Run Coverage measure group. By
   
 -   [Configure unit tests by using a .runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)  
   
-## Related notes
+## Related articles
 -  [Code Churn](/previous-versions/azure/devops/report/excel/code-churn-excel-report)   
 -  [Code Coverage](/previous-versions/azure/devops/report/excel/code-coverage-excel-report)  
 -  [Code Churn tables](table-reference-code-churn.md)   

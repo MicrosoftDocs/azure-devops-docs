@@ -1,6 +1,6 @@
 ---
 title: Reactivations Report
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Determines how effectively the team is fixing bugs.
@@ -112,5 +112,5 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
   
 2.  Click **View Report**.  
   
-## Related notes  
+## Related articles  
  [Reporting Services Reports](reporting-services-reports.md)
