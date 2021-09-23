@@ -3,7 +3,7 @@ title: Bug Trends Report
 titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
-description: Track the rate at which your team is discovering and resolving bugs - Team Foundation Server  
+description: Track the rate at which your team is discovering and resolving bugs.  
 ms.assetid: 631ec793-644f-4eff-8403-e48e746e369e
 ms.author: kaelli
 ms.date: 10/17/2017
@@ -112,7 +112,7 @@ You can use the Bug Trends report to help track the rate at which your team is d
   
 2.  Click **View Report**.  
   
-## Related notes  
+## Related articles  
  [Bugs](/previous-versions/azure/devops/report/sharepoint-dashboards/bugs-dashboard-agile-cmmi)   
  [Workbooks](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks)   
  [Bug Status](bug-status-report.md)   

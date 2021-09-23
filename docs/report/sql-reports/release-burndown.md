@@ -48,6 +48,6 @@ By reviewing the release burndown report, you can understand how quickly your te
   
 -   How quickly is your team working through the product backlog?  
   
-## Related notes 
+## Related articles 
  [Scrum process](../../boards/work-items/guidance/scrum-process.md)   
 [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)

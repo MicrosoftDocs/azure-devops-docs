@@ -3,7 +3,7 @@ title: Create an aggregate report with Report Designer
 titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: conceptual
-description: How to create a report that shows how many active work items are assigned to each person on the team - Team Foundation Server  
+description: How to create a report that shows how many active work items are assigned to each person on the team.  
 ms.assetid: b02997f4-2c4b-4814-868e-37e0c2414254
 ms.author: kaelli
 author: KathrynEE
@@ -174,5 +174,5 @@ You can track your team's progress more easily by creating reports that aggregat
     > [!IMPORTANT]
     >  To successfully deploy the report, your project settings must be set to appropriate values. For more information, see [Create a Report Server Project](create-a-report-server-project.md).  
 
-## Related notes 
+## Related articles 
  [Perspectives and measure groups provided in the Analysis Services cube](./perspective-measure-groups-cube.md)

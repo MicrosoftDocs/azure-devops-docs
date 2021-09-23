@@ -154,5 +154,5 @@ After the team has estimated its tasks and begun work, you can use the Remaining
   
 2.  Click **View Report**.  
   
-## Related notes
+## Related articles
  [Reporting Services Reports](reporting-services-reports.md)

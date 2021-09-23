@@ -3,7 +3,7 @@ title: Analyze and report on build details and build coverage
 titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
-description: View the measures, dimensions, and attributes in the SQL Server Analysis Services cube for Team Foundation Server
+description: View the measures, dimensions, and attributes in the SQL Server Analysis Services cube for Azure DevOps Server
 ms.assetid: 36b4e35a-d81d-4851-bd49-8b23d177fb53
 ms.author: kaelli
 author: KathrynEE
@@ -55,7 +55,7 @@ By using PivotChart reports in Excel, you can display the build status over time
   
  You can create the summary report for build status by performing the following steps:  
   
-1.  In Excel, connect to the Analysis Services cube for Team Foundation Server, and insert a PivotChart report.  
+1.  In Excel, connect to the Analysis Services cube for Azure DevOps Server, and insert a PivotChart report.  
   
      For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
   
@@ -132,7 +132,7 @@ By using PivotChart reports in Excel, you can display the build status over time
 -   [Run tests in your build process](../../pipelines/index.yml)   
 -   [Using Code Coverage to Determine How Much Code is being Tested](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)  
   
-## Related notes
+## Related articles
 -  [Build Quality](/previous-versions/azure/devops/report/excel/build-quality-excel-report)   
 -  [Build Status](/previous-versions/azure/devops/report/excel/build-status-excel-report)   
 -  [Build Quality Indicators](build-quality-indicators-report.md)   

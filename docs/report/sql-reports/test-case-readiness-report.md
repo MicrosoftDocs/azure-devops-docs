@@ -17,7 +17,7 @@ ms.date: 10/17/2017
 After the team starts to define test cases, you can use the Test Case Readiness report to determine how many test cases have been defined and are ready to run.  
   
 > [!NOTE]
->  The Test Case Readiness report is useful only if your team is testing your application by using Test Runner and Microsoft Test Manager. For more information about how to define and use test cases, see [Plan your tests](../../test/create-test-cases.md).  
+>  The Test Case Readiness report is useful only if your team is testing your application by using Test Runner and Azure Test Plans. For more information about how to define and use test cases, see [Plan your tests](../../test/create-test-cases.md).  
   
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
@@ -109,6 +109,7 @@ After the team starts to define test cases, you can use the Test Case Readiness 
   
 2.  Click **View Report**.  
   
-## Related notes
+## Related articles
+
 - [Reporting Services Reports](reporting-services-reports.md)
 

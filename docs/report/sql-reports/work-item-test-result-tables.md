@@ -26,7 +26,7 @@ You can query for data about work items that are linked to test results by using
   
 -   DimWorkItem  
   
-## Related notes  
+## Related articles  
  [Test results](perspective-test-analyze-report-test-results.md)   
  [Test Result tables](test-result-tables.md)   
  [Current Work Item tables](table-reference-current-work-items.md)   

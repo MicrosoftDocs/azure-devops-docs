@@ -3,7 +3,7 @@ title: Address inaccuracies published for summary values
 titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: troubleshooting
-description: Corrects the reports with hours that are counted twice with this procedure - Team Foundation Server 
+description: Corrects the reports with hours that are counted twice with this procedure. 
 ms.assetid: 09e8e02d-9ecb-4012-9ee0-cebb89372096
 ms.author: kaelli
 ms.date: 10/31/2017

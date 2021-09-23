@@ -28,7 +28,7 @@ You can query for categories of work items by using the FactWorkItemToCategory a
   
 -   DimWorkItemCategory  
   
-## Related notes 
+## Related articles 
 -  [Test cases and work items](perspective-test-analyze-report-work.md)   
 -  [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

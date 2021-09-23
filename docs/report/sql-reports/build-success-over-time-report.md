@@ -3,7 +3,7 @@ title: Build Success Over Time Report
 titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
-description: Displays the status of the last build for each build category run for each day - Team Foundation Server  
+description: Displays the status of the last build for each build category run for each day.  
 ms.assetid: 1791d80f-91f6-4e4a-a544-a3289a8a39ac
 ms.author: kaelli
 author: KathrynEE
@@ -134,5 +134,5 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
 4.  Click **View Report**.  
   
-## Related notes
+## Related articles
  [Reporting Services Reports](reporting-services-reports.md)

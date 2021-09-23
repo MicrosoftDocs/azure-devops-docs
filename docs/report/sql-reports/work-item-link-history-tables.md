@@ -78,7 +78,7 @@ group by wi.System_Id, wi.System_Title
 order by wi.System_Id  
 ```  
   
-## Related notes 
+## Related articles 
  [Test cases and work items](perspective-test-analyze-report-work.md)   
  [Define a custom link type](../../reference/xml/define-custom-link-type.md)   
  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

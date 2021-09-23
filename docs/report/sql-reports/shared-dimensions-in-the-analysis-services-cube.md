@@ -45,6 +45,6 @@ You can report data from across team project collections because all reportable 
 
 <br /><br /> Under **More fields**, you can specify the granularity of the time axis for displaying trend reports as **Date**, **Month**, **Week**, or **Year**.<br /><br /> You can use the Date hierarchy with the **Year Month Day** attribute to aggregate measures by year, month, and the day of the month.<br /><br /> You can use the Date hierarchy with the **Year Week Day** attribute to aggregate measures by year, week of year, and the day of the week.
   
-## Related notes
+## Related articles
  
 - [Perspectives and measure groups provided in the Analysis Services cube](perspective-measure-groups-cube.md)
