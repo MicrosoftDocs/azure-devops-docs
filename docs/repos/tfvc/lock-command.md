@@ -87,16 +87,13 @@ tf lock itemspec /lock:(none|checkout|checkin)
    :::column span="3":::
    Specifies a lock type or removes a lock from an item. For more information, see [Understanding Lock Types](understand-lock-types.md).
    Lock Options:
-   - **None**
-
+   - **None**  
      Removes a lock from an item.
 
-   - **Checkin**
-   
+   - **Checkin**  
      Enables an item to be checked out and edited in all workspaces but prevents users from checking in changes to the item outside the specified **/workspace** until you explicitly release the check-in lock. If the specified item is locked in any other workspace, the lock operation fails.
 
-   - **Checkout**
-  
+   - **Checkout**  
      Prevents users from checking in or checking out the specified items until you explicitly release the lock. If users have locked any one of the specified items, or if pending changes exists against any one of the items, the lock operation fails.
    :::column-end:::
 :::row-end:::

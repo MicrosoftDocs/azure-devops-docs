@@ -90,12 +90,10 @@ tf localversions ItemSpec
    :::column span="3":::
    Specify one of the following options to control how the data returned by this command appears:
    
-   - **Brief**
-
+   - **Brief**  
      (Default.) Each directory appears only once, followed by the files that it contains.
 
-   - **Detailed**
-
+   - **Detailed**  
      Each file appears after its full path.
    
    :::column-end:::

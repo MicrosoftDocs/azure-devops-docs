@@ -97,16 +97,13 @@ tf merge [/recursive] [/force] [/candidate] [/discard]
    
    Lock Options:
    
-   - **None**
-  
+   - **None**  
      No lock is placed on an item and removes any existing lock from an item.
 
-   - **Checkin**
-    
+   - **Checkin**  
      Other users can check out the specified items but they cannot check in revisions to locked files until you release the lock by performing a check-in. If any other users have locked any one of the specified items, the lock operation fails.
 
-   - **Checkout**
-     
+   - **Checkout**  
      Prevents users from checking in or checking out any one of the specified items until you explicitly release the lock. If any other users have locked any one of the specified items, or if there are existing pending changes against any item, the lock operation fails.
    :::column-end:::
 :::row-end:::
