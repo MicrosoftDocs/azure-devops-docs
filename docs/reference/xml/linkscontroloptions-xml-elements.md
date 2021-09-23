@@ -410,7 +410,7 @@ The following table describes the **LinksControlOptions** element and its child 
    
    :::column-end:::
 :::row-end:::
-
+<a id="links-control-options">  </a>
 :::row:::
    :::column span="1":::
    **LinksControlOptions** 

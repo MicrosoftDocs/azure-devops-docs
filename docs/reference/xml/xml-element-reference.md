@@ -75,7 +75,7 @@ By using the index of elements in this topic, you can look up the syntax structu
    - [WORKFLOW](all-workflow-xml-elements-reference.md) 
    :::column-end:::
    :::column span="1":::
-
+   <p><a name="index_b"></a></p>
    <h3>FIELD</h3>
    - [ALLOWEDVALUES](define-pick-lists.md)  
    - [ALLOWEXISTINGVALUE](define-pick-lists.md)  

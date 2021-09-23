@@ -109,7 +109,7 @@ The structural elements used in the previous example are described in the follow
    :::column span="1":::
    Specifies a string that describes the type of work item that you are defining. The description should help any user who is customizing the WIT.
 
-   > [!NOTE]:
+   > [!NOTE]
    > You can view the description only in the XML definition. You cannot view the description anywhere in the user interface, and it has no relationship to the field **System.Definition**.
    
    ```
@@ -180,7 +180,7 @@ The structural elements used in the previous example are described in the follow
    . . .
    </WebLayout>
    ```
-   > [!IMPORTANT]: 
+   > [!IMPORTANT]   
    > For the Hosted XML and On-premises XML process models (TFS 2017 and later versions), see [WebLayout and Control elements](weblayout-xml-elements.md). 
    
    :::column-end:::
