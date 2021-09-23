@@ -1,6 +1,6 @@
 ---
 title: Build Details tables
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about builds, such as the status and quality.
@@ -34,7 +34,7 @@ For information about the measures and dimensions that are associated with these
 -   DimPerson    
 -   DimTeamProject  
   
-## Related notes
+## Related articles
 -  [Builds](perspective-build-analyze-report-build-details-coverage.md)   
 -  [Build Quality Indicators](build-quality-indicators-report.md)   
 -  [Build Success Over Time](build-success-over-time-report.md)   
