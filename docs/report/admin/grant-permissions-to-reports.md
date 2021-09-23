@@ -1,6 +1,6 @@
 ---
 title: Grant permissions to view or create reports 
-titleSuffix: TFS
+titleSuffix: Azure DevOps Server
 description: Grant permissions to view or create SQL Server reports configured to support Team Foundation Server
 ms.assetid: FBE3ECC1-51A0-43EC-9923-B7C4FC78E333  
 ms.technology: devops-analytics
@@ -11,7 +11,7 @@ monikerRange: '< azure-devops'
 ms.date: 11/19/2018
 ---
 
-# Grant permissions to view or create SQL Server reports in TFS
+# Grant permissions to view or create SQL Server reports in Azure DevOps Server
 
 [!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 

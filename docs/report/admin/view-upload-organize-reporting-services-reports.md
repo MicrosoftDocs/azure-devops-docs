@@ -1,6 +1,6 @@
 ---
 title: View, upload, and organize Reporting Services reports
-titleSuffix: TFS
+titleSuffix: Azure DevOps Server
 description: View, upload, and organize Reporting Services reports to analyze the progress and quality of the project  
 ms.technology: devops-analytics
 ms.topic: conceptual

@@ -1,6 +1,6 @@
 ---
 title: Rebuild the data warehouse and cube
-titleSuffix: TFS
+titleSuffix: Azure DevOps Server
 description: Rebuild the data warehouse and cube after performing maintenance operations on a Team Foundation Server 
 ms.assetid: 23CD5F6B-468D-47B5-8A03-96547B526C2D  
 ms.technology: devops-analytics
