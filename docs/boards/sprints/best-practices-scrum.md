@@ -89,7 +89,7 @@ Consider managing your bug bar and technical debt as part of your team's overall
 
 Every sprint, the team looks at any bugs remaining in the bug backlog and dedicates capacity to get that known set of bugs down to zero, or near-zero. Whether this is one day, one week, or the entire sprint, they fix the bugs first. Bugs found later, within the sprint, aren't considered part of that initial commitment. Unless they're high priority, they're put on the bug backlog for the next sprint.
 
-Many teams work in a commitment-based organization. Often, management places a high value on a team's ability to meet their commitments. Doing capacity planning against a known set of bugs makes sprint planning more deterministic, increasing their chance to meet commitments. Any new bugs discovered during the sprint aren't a part of the initial commitment, and will be tackled next sprint.>
+Many teams work in a commitment-based organization. Often, management places a high value on a team's ability to meet their commitments. Doing capacity planning against a known set of bugs makes sprint planning more deterministic, increasing their chance to meet commitments. Any new bugs discovered during the sprint aren't a part of the initial commitment, and will be tackled next sprint.
 
 ### Manage bug debt across an enterprise 
 
