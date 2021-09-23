@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
-ms.date: 03/24/2021
+ms.date: 09/23/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -656,6 +656,8 @@ From a single job you author, you can run multiple jobs on multiple agents in pa
    in parallel, for example, to different geographic regions.
 
 * **Multi-configuration testing:** You can run test multiple configurations in parallel.
+
+* Multi-configuration will always generate at least one job, even if a multi-configuration variable is empty. 
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
