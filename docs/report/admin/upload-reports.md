@@ -27,10 +27,10 @@ Here's the second task in the four-task sequence to add reports to your team pro
 
 
 By adding a report server to your TFS (on-premises) deployment, you can access a wealth of data about your team's projects like:
-- Build quality.
-- Bug trends.
-- Burndown.
-- Test progress.
+- Build quality
+- Bug trends
+- Burndown
+- Test progress
 
 SQL Server Reporting Services (SSRS) reports provide insight to help teams manage their work and improve processes.  
 
@@ -100,7 +100,7 @@ You use the **tfpt** command-line tool that TFS Power Tools provides.
 	cd %programfiles%\TFS 2015 Power Tools
     ```
 
-On a 64-bit edition of Windows, replace **%programfiles%** with **%programfiles(x86)%**.
+    On a 64-bit edition of Windows, replace **%programfiles%** with **%programfiles(x86)%**.
 
 4. Upload the reports. The process template you specify must be compatible with the one used to create the team project. And, it must have been uploaded to the team project collection that hosts your team project. 
 
@@ -134,7 +134,7 @@ On a 64-bit edition of Windows, replace **%programfiles%** with **%programfiles(
 
 To learn about which reports are provided with which process templates, see [Review team activities to support useful reports](review-team-activities-for-useful-reports.md).
  
-
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Q: How can I determine if my report is up to date?
