@@ -76,20 +76,87 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Wor
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td><td>Start filter()</td><tr>
-<tr><td><code>Team/TeamName eq '{teamname}'</code></td><td>Return items for a specific team</td><tr>
-<tr><td><code>and BoardName eq 'Stories'</code></td><td>Return items on the 'Stories' backlog. You can specify other backlog names, such as 'Epics', and 'Features'</td><tr>
-<tr><td><code>and DateValue ge {startdate}</code></td><td>Start CFD on or after the specified date. Example: <b>2019-04-01Z</b> represents 2019-April-01 2019-July-01</td><tr>
-<tr><td><code>)</code></td><td>Close filter()</td><tr>
-<tr><td><code>/groupby(</code></td><td>Start groupby()</td><tr>
-<tr><td><code>(DateValue, ColumnName, LaneName, State, WorkItemType,AssignedTo/UserName,Area/AreaPath), </code></td><td>Group by DateValue (used for trending), ColumnName, and any other fields you want to report on. Here we include LaneName to enabling filtering by LaneName</td><tr>
-<tr><td><code>aggregate($count as Count)</code></td><td>Aggregate as count of work items.</td><tr>
-<tr><td><code>)</code></td><td>Close groupby()</td><tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start filter()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `Team/TeamName eq '{teamname}'`
+   :::column-end:::
+   :::column span="1":::
+   Return items for a specific team
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and BoardName eq 'Stories'`
+   :::column-end:::
+   :::column span="1":::
+   Return items on the 'Stories' backlog. You can specify other backlog names, such as 'Epics', and 'Features'
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and DateValue ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Start CFD on or after the specified date. Example: **2019-04-01Z** represents 2019-April-01 2019-July-01
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close filter()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `(DateValue, ColumnName, LaneName, State, WorkItemType,AssignedTo/UserName,Area/AreaPath), `
+   :::column-end:::
+   :::column span="1":::
+   Group by DateValue (used for trending), ColumnName, and any other fields you want to report on. Here we include LaneName to enabling filtering by LaneName
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `aggregate($count as Count)`
+   :::column-end:::
+   :::column span="1":::
+   Aggregate as count of work items.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close groupby()
+   :::column-end:::
+:::row:::
+
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
 
