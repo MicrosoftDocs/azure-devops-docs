@@ -96,7 +96,7 @@ The following table describes each part of the query.
    :::column span="3":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -104,7 +104,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `Pipeline/PipelineName eq '{pipelinename}'`
@@ -112,7 +112,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return task results for a specific pipeline
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and PipelineRunCompletedOn/Date ge {startdate}`
@@ -120,7 +120,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return task results for pipeline runs on or after the specified date
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and PipelineRunOutcome eq 'Failed'`
@@ -128,7 +128,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return task results where build outcome is failed
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and TaskOutcome eq 'Failed'`
@@ -136,7 +136,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return task results where task outcome is failed
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -144,7 +144,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close of filter statement
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/groupby(`
@@ -152,7 +152,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `(PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/StageName ),`
@@ -160,7 +160,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Group by date of completion of pipeline run, Build Id and stage name.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `aggregate (FailedCount with sum as FailedCount))`
@@ -168,7 +168,7 @@ The following table describes each part of the query.
    :::column span="3":::
    For each day, build Id and Stage, count the total number of failures. This will be the total number of task failures & not stage failures
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/groupby(`
@@ -176,7 +176,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `(PipelineRunCompletedOn/Date, PipelineJob/StageName ),`
@@ -184,7 +184,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Group by day and stage name.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `aggregate`
@@ -192,7 +192,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start of aggregate
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `(cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount))`
@@ -200,7 +200,7 @@ The following table describes each part of the query.
    :::column span="3":::
    For each day, sum the number of times a stage failed
    :::column-end:::
-:::row:::docs\report\powerbi\sample-test-analytics-pass-rate-trend-test.md
+:::row-end:::
 
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]

@@ -79,7 +79,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$filter=startswith(AreaPath, '{areapath}')`
@@ -87,7 +87,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Return all teams mapped to an Area Path at or under the specified {areapath}. To include all teams in a project, omit this statement.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `&$select=AreaSK, AreaPath`
@@ -95,7 +95,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Returning Area Path fields, to use for mapping
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `&$expand=Teams($select=TeamName)`
@@ -103,7 +103,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Returning the Team associated with the Area Path
    :::column-end:::
-:::row:::
+:::row-end:::
 
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]

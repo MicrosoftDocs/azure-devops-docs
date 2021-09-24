@@ -88,7 +88,7 @@ The following table describes each part of the query.
    :::column span="3":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `filter((TestSuite/TestPlanTitle eq '{testPlanTitle}')) `
@@ -96,7 +96,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return data for only selected test plan. You can add multiple plans with a clause like `filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}'))`. You can also apply any other filters related to test suites, test configurations here.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/groupby((TestConfiguration/Name, LastResultOutcome),`
@@ -104,7 +104,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Grouping the points by the test configuration names and their outcome.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/aggregate($count as Count)`
@@ -112,7 +112,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Aggregate data across the filtered test points with having count as `Count`.
    :::column-end:::
-:::row:::
+:::row-end:::
 
 
 [!INCLUDE [temp](includes/query-filters-test.md)]

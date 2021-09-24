@@ -77,7 +77,7 @@ The following table describes each part of the query.
    :::column span="3":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$filter=WorkItemType eq 'Bug'`
@@ -85,7 +85,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return Bugs.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and StateCategory ne 'Completed'`
@@ -93,7 +93,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Filters out items that are completed. For more information on State Categories, see [How workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md) are used in Backlogs and Boards.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and startswith(Area/AreaPath,'{areapath}')`
@@ -103,7 +103,7 @@ The following table describes each part of the query.
    
    To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `&$select=WorkItemId, Title, WorkItemType, State, Priority, Severity, TagNames`
@@ -111,7 +111,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Select fields to return.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)`
@@ -119,8 +119,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Expand Assigned To, Iteration, Area entities and select entity fields.
    :::column-end:::
-:::row:::
-
+:::row-end:::
 
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]

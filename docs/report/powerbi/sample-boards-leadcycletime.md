@@ -80,7 +80,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$filter=WorkItemType eq 'User Story'`
@@ -88,7 +88,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Return User Stories
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and StateCategory eq 'Completed'`
@@ -96,7 +96,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Return only completed items. Only completed items have Lead/Cycle Times calculated. For more information on State Categories, see [How workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md) are used in Backlogs and Boards.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and CompletedDate ge {startdate}`
@@ -104,7 +104,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Return items Closed after the specified date. Example: **2019-04-01Z** represents 2019-April-01
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and startswith(Area/AreaPath,'{areapath}')`
@@ -114,7 +114,7 @@ The following table describes each part of the query.
    
    To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `&$select=WorkItemId, Title, WorkItemType, State, Priority, Severity, TagNames`
@@ -122,7 +122,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Select fields to return
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `, CycleTimeDays, LeadTimeDays, CompletedDateSK`
@@ -130,7 +130,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Also return the Cycle/Lead Time fields, as well as CompletedDateSK. CompletedDateSK is the CompletedDate as an integer
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)`
@@ -138,8 +138,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Expand Assigned To, Iteration, Area entities and select entity fields
    :::column-end:::
-:::row:::
-
+:::row-end:::
 
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]

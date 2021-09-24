@@ -103,7 +103,7 @@ The following table describes each part of the query.
    :::column span="3":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -111,7 +111,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `Pipeline/PipelineName eq '{pipelinename}'`
@@ -119,7 +119,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return pipeline runs for the specified pipeline
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and CompletedDate ge {startdate}`
@@ -127,7 +127,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return pipeline runs on or after the specified date
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and CanceledCount ne 1`
@@ -135,7 +135,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Omit the canceled pipeline runs
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -143,7 +143,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/groupby(`
@@ -151,7 +151,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `(CompletedOn/Date),`
@@ -159,7 +159,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Group by date of completion of pipeline run
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `aggregate`
@@ -167,7 +167,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start aggregate. For all the pipeline runs matching the above filter criteria:
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `($count as TotalCount,`
@@ -175,7 +175,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of runs as TotalCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `SucceededCount with sum as SucceededCount ,`
@@ -183,7 +183,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the number of successful runs as SucceededCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `FailedCount with sum as FailedCount,`
@@ -191,7 +191,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the number of failed runs as FailedCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `PartiallySucceededCount with sum as PartiallySucceededCount))`
@@ -199,7 +199,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the number of partially successful runs as PartiallySucceededCount. Close aggregate() and groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/compute(`
@@ -207,7 +207,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start of compute()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `SucceededCount mul 100.0 div TotalCount as PassRate,`
@@ -215,7 +215,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Calculate PassRate for each day by dividing number of successful runs by number of total runs
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `FailedCount mul 100.0 div TotalCount as FailRate,`
@@ -223,7 +223,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Calculate FailRate for each day by dividing number of failed runs by number of total runs
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)`
@@ -231,7 +231,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Calculate PartiallySuccessfulRate for each day by dividing number of partially successful runs by number of total runs
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `&$orderby=CompletedOn/Date asc`
@@ -239,7 +239,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Order the result in ascending order based on date of pipeline run
    :::column-end:::
-:::row:::
+:::row-end:::
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
 

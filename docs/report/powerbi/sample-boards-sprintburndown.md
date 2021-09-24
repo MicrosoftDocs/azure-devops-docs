@@ -96,7 +96,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -104,7 +104,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Start filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `WorkItemType eq 'User Story'`
@@ -112,7 +112,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Burndown on User Stories
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and startswith(Area/AreaPath,'{areapath}')`
@@ -122,7 +122,7 @@ The following table describes each part of the query.
    
    To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and StateCategory ne 'Completed'`
@@ -130,7 +130,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Filters out items that are completed. For more information on State Categories, see [How workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md) are used in Backlogs and Boards.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and DateValue ge Iteration/StartDate`
@@ -138,7 +138,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Begin trend at Iteration start.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and DateValue le Iteration/EndDate`
@@ -146,7 +146,7 @@ The following table describes each part of the query.
    :::column span="1":::
    End trend at Interation end.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and Iteration/StartDate le now()`
@@ -154,7 +154,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Select current Iteration.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and Iteration/EndDate ge now()`
@@ -162,7 +162,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Select current Iteration
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -170,7 +170,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Close filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/groupby(`
@@ -178,7 +178,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Start groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `(DateValue, State, WorkItemType, Priority, Area/AreaPath, Iteration/IterationPath), `
@@ -186,7 +186,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Group by DateValue (used for trending), and any fields you want to report on
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `aggregate($count as Count,  StoryPoints with sum as TotalStoryPoints)`
@@ -194,7 +194,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Aggregate by count of user stories, and sum of Story Points
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -202,7 +202,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Close groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
