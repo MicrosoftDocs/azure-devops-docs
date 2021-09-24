@@ -66,32 +66,63 @@ Schema conflicts occur when a project administrator performs one of the followin
 
 The following table provides examples of attribute assignments that will cause schema conflicts. In these examples, the reporting reference name and the reporting name are not assigned.
 
-<table width="100%">
-<tr valign="top">
-<th width="20%">Attribute</th>
-<th width="20%">Project Collection 1</th>
-<th width="20%">Project Collection 2</th>
-<th width="40%">Schema conflict</th>
-</tr>
-<tr>
-<td>Type</td>
-<td>String</td>
-<td>Integer</td>
-<td>Data types do not match.</td>
-</tr>
-<tr>
-<td>ReportingName</td>
-<td>Activity</td>
-<td>Common Activity</td>
-<td>Reporting names do not match.</td>
-</tr>
-<tr>
-<td>Reportable</td>
-<td>Detail</td>
-<td>Dimension</td>
-<td>Reporting types do not match.</td>
-</tr>
-</table>
+:::row:::
+   :::column span="1":::
+   Attribute
+   :::column-end:::
+   :::column span="1":::
+   Project Collection 1
+   :::column-end:::
+   :::column span="1":::
+   Project Collection 2
+   :::column-end:::
+   :::column span="2":::
+   Schema conflict
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Type
+   :::column-end:::
+   :::column span="1":::
+   String
+   :::column-end:::
+   :::column span="1":::
+   Integer
+   :::column-end:::
+   :::column span="2":::
+   Data types do not match.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   ReportingName
+   :::column-end:::
+   :::column span="1":::
+   Activity
+   :::column-end:::
+   :::column span="1":::
+   Common Activity
+   :::column-end:::
+   :::column span="2":::
+   Reporting names do not match.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Reportable
+   :::column-end:::
+   :::column span="1":::
+   Detail
+   :::column-end:::
+   :::column span="1":::
+   Dimension
+   :::column-end:::
+   :::column span="2":::
+   Reporting types do not match.
+   :::column-end:::
+:::row-end:::
+
 
 ## Resolve schema conflicts
 

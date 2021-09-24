@@ -73,18 +73,73 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$filter=WorkItemType eq 'User Story'</code></td><td>Return User Stories</td><tr>
-<tr><td><code>and StateCategory eq 'Completed'</code></td><td>Return only completed items. Only completed items have Lead/Cycle Times calculated. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td><tr>
-<tr><td><code>and CompletedDate ge {startdate}</code></td><td>Return items Closed after the specified date. Example: <b>2019-04-01Z</b> represents 2019-April-01</td><tr>
-<tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with "Area/AreaPath eq '{areapath}'" returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement <code>Teams/any(x:x/TeamName eq '{teamname})'</code></td><tr>
-<tr><td><code>&$select=WorkItemId, Title, WorkItemType, State, Priority, Severity, TagNames</code></td><td>Select fields to return</td><tr>
-<tr><td><code>, CycleTimeDays, LeadTimeDays, CompletedDateSK</code></td><td>Also return the Cycle/Lead Time fields, as well as CompletedDateSK. CompletedDateSK is the CompletedDate as an integer</td><tr>
-<tr><td><code>&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)</code></td><td>Expand Assigned To, Iteration, Area entities and select entity fields</td><tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `$filter=WorkItemType eq 'User Story'`
+   :::column-end:::
+   :::column span="1":::
+   Return User Stories
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and StateCategory eq 'Completed'`
+   :::column-end:::
+   :::column span="1":::
+   Return only completed items. Only completed items have Lead/Cycle Times calculated. For more information on State Categories, see [How workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md) are used in Backlogs and Boards.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and CompletedDate ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return items Closed after the specified date. Example: **2019-04-01Z** represents 2019-April-01
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and startswith(Area/AreaPath,'{areapath}')`
+   :::column-end:::
+   :::column span="1":::
+   Work items under a specific Area Path. Replacing with "Area/AreaPath eq '{areapath}'" returns items at a specific Area Path.
+   
+   To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `&$select=WorkItemId, Title, WorkItemType, State, Priority, Severity, TagNames`
+   :::column-end:::
+   :::column span="1":::
+   Select fields to return
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `, CycleTimeDays, LeadTimeDays, CompletedDateSK`
+   :::column-end:::
+   :::column span="1":::
+   Also return the Cycle/Lead Time fields, as well as CompletedDateSK. CompletedDateSK is the CompletedDate as an integer
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath)`
+   :::column-end:::
+   :::column span="1":::
+   Expand Assigned To, Iteration, Area entities and select entity fields
+   :::column-end:::
+:::row:::
+
 
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]

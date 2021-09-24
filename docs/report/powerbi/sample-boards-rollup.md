@@ -79,21 +79,97 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$filter=WorkItemType eq 'Feature'</code></td><td>Return Features.</td><tr>
-<tr><td><code>and State ne 'Cut'</code></td><td>Omit Closed bugs.</td><tr>
-<tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with <code>Area/AreaPath eq '{areapath}'</code> returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement <code>Teams/any(x:x/TeamName eq '{teamname})'</code>.</td><tr>
-<tr><td><code>and Descendants/any()</code></td><td>Include all Features, even those with no User Stories. Replace with "any(d:d/WorkItemType eq 'User Story')" to omit Features that don't have child User Stories.</td><tr>
-<tr><td><code>&$select=WorkItemId, Title, WorkItemType, State</code></td><td>Select fields to return.</td><tr>
-<tr><td><code>&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath),</code></td><td>Expand Assigned To, Iteration, Area entities and select entity fields.</td><tr>
-<tr><td><code>Descendants(</code></td><td>Expand Descendants.</td><tr>
-<tr><td><code>$apply=filter(WorkItemType eq 'User Story')</code></code></td><td>Filters the descendants. Only include User Stories (omits Tasks and Bugs).</td><tr>
-<tr><td><code>/aggregate($count as CountOfUserStories, StoryPoints with sum as TotalStoryPoints)</code></td><td>For all Descendants matching the filter clause above, count them, and sum the StoryPoints field.</td><tr>
-<tr><td><code>)</code></td><td>Close Descendants().</td><tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `$filter=WorkItemType eq 'Feature'`
+   :::column-end:::
+   :::column span="3":::
+   Return Features.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and State ne 'Cut'`
+   :::column-end:::
+   :::column span="3":::
+   Omit Closed bugs.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and startswith(Area/AreaPath,'{areapath}')`
+   :::column-end:::
+   :::column span="3":::
+   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
+   
+   To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and Descendants/any()`
+   :::column-end:::
+   :::column span="3":::
+   Include all Features, even those with no User Stories. Replace with "any(d:d/WorkItemType eq 'User Story')" to omit Features that don't have child User Stories.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `&$select=WorkItemId, Title, WorkItemType, State`
+   :::column-end:::
+   :::column span="3":::
+   Select fields to return.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath),`
+   :::column-end:::
+   :::column span="3":::
+   Expand Assigned To, Iteration, Area entities and select entity fields.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `Descendants(`
+   :::column-end:::
+   :::column span="3":::
+   Expand Descendants.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(WorkItemType eq 'User Story')`</code>
+   :::column-end:::
+   :::column span="3":::
+   Filters the descendants. Only include User Stories (omits Tasks and Bugs).
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `/aggregate($count as CountOfUserStories, StoryPoints with sum as TotalStoryPoints)`
+   :::column-end:::
+   :::column span="3":::
+   For all Descendants matching the filter clause above, count them, and sum the StoryPoints field.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="3":::
+   Close Descendants().
+   :::column-end:::
+:::row:::
+
 
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
