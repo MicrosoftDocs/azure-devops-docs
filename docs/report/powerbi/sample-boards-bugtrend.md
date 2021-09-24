@@ -89,7 +89,7 @@ The following table describes each part of the query.
 <tr><td><code>WorkItemType eq 'Bug'</code></td><td>Return Bugs.</td><tr>
 <tr><td><code>and State ne 'Closed'</code></td><td>Omit Closed bugs.</td><tr>
 <tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with <code>Area/AreaPath eq '{areapath}'</code> returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement <code>Teams/any(x:x/TeamName eq '{teamname})'</code>.</td><tr>
-<tr><td><code>and DateValue ge {startdate}</code></td><td>Start trend on or after the specified date. Example: <strong>2019-04-01Z</strong> represents 2019-April-01.</td><tr>
+<tr><td><code>and DateValue ge {startdate}</code></td><td>Start trend on or after the specified date. Example: <strong>2021-04-01Z</strong> represents 2021-April-01.</td><tr>
 <tr><td><code>)</code></td><td>Close filter()</td><tr>
 <tr><td><code>/groupby(</code></td><td>Start groupby()</td><tr>
 <tr><td><code>(DateValue, State, WorkItemType, Priority, Severity, Area/AreaPath, Iteration/IterationPath), </code></td><td>Group by DateValue (used for trending), and any fields you want to report on.</td><tr>
@@ -189,6 +189,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Bug trend with a snapshot every Friday
 
 Using a weekly snapshot reduces the amount of data pulled into Power BI, and increases query performance. 
+
 #### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
