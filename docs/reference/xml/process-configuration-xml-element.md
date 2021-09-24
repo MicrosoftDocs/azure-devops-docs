@@ -19,7 +19,7 @@ Process configuration defines the default configuration and functional capabilit
 
 Configuration elements specify the work item types (WITs), default columns, fields used by the tools, and other elements. The main configurations made determine which items will display for the portfolio, product, and sprint backlogs by defining the **PortfolioBacklog**, **RequirementBacklog**, and **TaskBacklog** sections of the process configuration XML definition file. In addition, process configuration defines the workflow mapping of state-to-state category for all WITs that require mapping.
 
-<img src="media/process-config-xml-element-groups.png" alt="Process configuration XML elements" /> 
+![Process configuration XML elements](media/process-config-xml-element-groups.png)
 
 For a summary of what you can configure through the user interface, see [Customize work tracking, Add teams and configure their Scrum and Kanban tools](../customize-work.md).
 
@@ -97,7 +97,7 @@ You configure backlogs within the XML sections that appear in the following samp
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -107,7 +107,7 @@ You configure backlogs within the XML sections that appear in the following samp
    **PortfolioBacklogs**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Container element for portfolio backlogs.
 
    :::column-end:::
@@ -117,7 +117,7 @@ You configure backlogs within the XML sections that appear in the following samp
    **PortfolioBacklog**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Up to five instances.  
 
    Container element that defines the state category mappings, default columns, and quick add panel for a portfolio backlog.
@@ -151,7 +151,7 @@ You configure backlogs within the XML sections that appear in the following samp
    **RequirementBacklog**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required. One instance only.
 
    Container element that defines the state category mappings, default columns, and quick add panel for the product backlog. The product backlog displays all active items in the team's backlog.
@@ -173,7 +173,7 @@ You configure backlogs within the XML sections that appear in the following samp
    **TaskBacklog**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required. One instance only.
 
    Container element used to customize the layout of sprint backlogs.
@@ -225,7 +225,7 @@ There are three groups of state categories: Agile, Bug, and Feedback. The follow
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -235,7 +235,7 @@ There are three groups of state categories: Agile, Bug, and Feedback. The follow
    **State**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required. Assigns a workflow state to a state category.
 
    ```
@@ -266,7 +266,7 @@ There are three groups of state categories: Agile, Bug, and Feedback. The follow
    **States**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a collection of **State** elements that associate WIT workflow states with state categories.
 
    Required element for the following parent elements:
@@ -309,7 +309,7 @@ Here's the default configuration defined by the Scrum process template for the p
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -319,7 +319,7 @@ Here's the default configuration defined by the Scrum process template for the p
    **Columns**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a collection of **Column** elements. Required element for the backlog elements: **PortfolioBacklog**, **RequirementBacklog**, and **TaskBacklog**.  
    :::column-end:::
 :::row-end:::
@@ -329,7 +329,7 @@ Here's the default configuration defined by the Scrum process template for the p
    **Column**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a field to appear as a column on a backlog.  
 
    ```
@@ -369,7 +369,7 @@ The following code corresponds to the default assignments defined in the Visual 
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -379,7 +379,7 @@ The following code corresponds to the default assignments defined in the Visual 
    **AddPanel**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Container element used to specify the "quick add" experience, the fields to appear within the panel area where new backlog items are defined.  
    :::column-end:::
 :::row-end:::
@@ -389,7 +389,7 @@ The following code corresponds to the default assignments defined in the Visual 
    **Fields**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a collection of **Field** elements.
 
    :::column-end:::
@@ -400,7 +400,7 @@ The following code corresponds to the default assignments defined in the Visual 
    **Field**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a work item field to appear within the panel for the product backlog.  
 
    ```
@@ -455,7 +455,7 @@ The following table describes the additional elements used to define the state c
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -465,7 +465,7 @@ The following table describes the additional elements used to define the state c
    **BugWorkItems**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Optional. Container element that defines the state category mappings for work item types assigned to the Bug Category. In addition to how these mappings are used in the display of Agile tools, they also control how the **My Work** feature in Team Explorer updates the bug state as developers move bugs using **My Work**. To learn more, see [Get your code reviewed (TFVC)](../../repos/tfvc/get-code-reviewed-vs.md).
 
    ```
@@ -484,7 +484,7 @@ The following table describes the additional elements used to define the state c
    **FeedbackRequestWorkItems**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Required. Do not customize. Container element that defines the state category mappings for work item types assigned to the feedback request category.
 
    ```
@@ -503,7 +503,7 @@ The following table describes the additional elements used to define the state c
    **FeedbackResponseWorkItems**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Required. Do not customize. Container element that defines the state category mappings for work item types assigned to the feedback response category.
 
 
@@ -521,7 +521,7 @@ The following table describes the additional elements used to define the state c
    **TestPlanWorkItems**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Only required when you customize the workflow state for Test Plan and you support connections to the project from versions of Test Manager installed with Visual Studio 2013.2 or earlier versions.
 
    Container element that defines the state category mappings for work item types assigned to the Test Plan Category. For example:
@@ -544,7 +544,7 @@ The following table describes the additional elements used to define the state c
    **TestSuiteWorkItems**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Only required when you customize the workflow state for Test Suite and you support connections to the project from versions of Test Manager installed with Visual Studio 2013.2 or earlier versions.
 
    Container element that defines the state category mappings for work item types assigned to the Test Suite Category. For example:
@@ -601,7 +601,7 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -611,7 +611,7 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
    **TypeFields**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required. Specifies a collection of **TypeField** elements.
 
    :::column-end:::
@@ -622,7 +622,7 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
    **TypeField**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required. Specifies the reference name of a field whose value supports a type of activity for a feature area. The fields you specify should correspond to the fields that you use within the WITs used to capture the feature information.
 
    ```
@@ -683,7 +683,7 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
    **TypeFieldValues**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required for the **TypeFieldValue** when `type="ApplicationType"`.
 
    Specifies a collection of **TypeFieldValue** elements which are used in the feedback request form.
@@ -696,7 +696,7 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
    **TypeFieldValue**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required. Do not customize.
 
    Specifies the name of an application type to appear on the feedback request form.
@@ -742,7 +742,7 @@ Non-working days are removed from calculations made by the [capacity planning to
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -752,7 +752,7 @@ Non-working days are removed from calculations made by the [capacity planning to
    **DayOfWeek**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child of the **Weekends** element.
 
    Specifies a day of the week that corresponds to a non-working day.
@@ -772,7 +772,7 @@ Non-working days are removed from calculations made by the [capacity planning to
    **Weekends**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Container element used to specify non-working days.
 
    Specify non-working days when you want to account for non-working days in the calculation of capacity and burndown charts.
@@ -818,7 +818,7 @@ The Scrum process template defines the following color assignments. Similar ones
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -828,7 +828,7 @@ The Scrum process template defines the following color assignments. Similar ones
    **WorkItemColors**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Container element for specifying colors for work item types.
 
    :::column-end:::
@@ -839,7 +839,7 @@ The Scrum process template defines the following color assignments. Similar ones
    **WorkItemColor**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the colors used to display a WIT within the web portal. The primary color is used in list displays. The secondary color is no longer referenced, however you must specify it for the syntax to validate.  
 
    When specifying the color, always prefix the six-digit Hex color code with **FF** which denotes that the color should be fully visible. 
@@ -884,7 +884,7 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -894,7 +894,7 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
    **Properties**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Container element for specifying default properties and behaviors.
 
    :::column-end:::
@@ -905,7 +905,7 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
    **Property**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the default assignment made to new teams or existing teams when updating a project with new features. Teams can choose the behavior they want through their team settings.
 
    Valid property names are:

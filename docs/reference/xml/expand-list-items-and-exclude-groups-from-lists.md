@@ -38,7 +38,7 @@ To better understand how these attributes are used to populate a field's drop-do
    :::column span="1":::
    **Group name and list**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -52,7 +52,7 @@ To better understand how these attributes are used to populate a field's drop-do
    - ReshmaPatel
     
    :::column-end:::
-   :::column span="1":::    
+   :::column span="2":::    
    A project group that contains the names of three business analyst team members.  
 
    > [!NOTE]  
@@ -75,7 +75,7 @@ To better understand how these attributes are used to populate a field's drop-do
    - juser
     
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
     
    A project group that contains one team member, juser, and three subgroups, where each subgroup contains the name of one team member.
 
@@ -95,7 +95,7 @@ To better understand how these attributes are used to populate a field's drop-do
    - UserFive
     
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    A project group that contains the names of three team members and one subgroup which contains the names of two team members.
 
@@ -111,7 +111,7 @@ To better understand how these attributes are used to populate a field's drop-do
    - false
     
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    A global list with two entries.
 

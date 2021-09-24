@@ -115,7 +115,7 @@ To modify the pick list for most string or integer fields within a work item for
    Custom field and pick list   
    ![Custom pick list](media/custom-pick-list.png)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    ```
    <FIELD name="Resolution" refname="MyCompany.Resolution" type="String">    
    <ALLOWEDVALUES>

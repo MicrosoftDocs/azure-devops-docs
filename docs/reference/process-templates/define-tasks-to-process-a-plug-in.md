@@ -50,7 +50,7 @@ You use the **tasks** element and its child elements to define the artifacts to 
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description and syntax**
    :::column-end:::
 :::row-end:::
@@ -58,7 +58,7 @@ You use the **tasks** element and its child elements to define the artifacts to 
    :::column span="1":::
    **dependencies**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional child element of **task**. Specifies other groups on which a group depends.  
    ```
    <dependencies> 
@@ -72,7 +72,7 @@ You use the **tasks** element and its child elements to define the artifacts to 
    :::column span="1":::
    **dependency**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional child element of **dependencies**. Specifies the ID of another task on which this task depends. The other task must complete before this task can start.  
    
    ```
@@ -85,7 +85,7 @@ You use the **tasks** element and its child elements to define the artifacts to 
    :::column span="1":::
    **ProcessTemplate**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional child element of **taskXml** element for the Build and Lab plug-ins. Specifies the name, location, and destination of a file to upload to support build processes for a project.  
    
    ```
@@ -106,7 +106,7 @@ You use the **tasks** element and its child elements to define the artifacts to 
    :::column span="1":::
    **task**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child element of **tasks**. Specifies work that must occur to configure something specific to the process in a new project.
 
    ```
@@ -133,7 +133,7 @@ You use the **tasks** element and its child elements to define the artifacts to 
    :::column span="1":::
    **tasks**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child element of **taskXml**. Contains a collection of **task** elements that each specify work that must occur to configure something specific to the process in a new project.   
    ```
    <tasks>
@@ -147,7 +147,7 @@ You use the **tasks** element and its child elements to define the artifacts to 
    :::column span="1":::
    **taskXml**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required root element for a plug-in file. Describes the work that is required to complete this task. The XML inside this element block varies and is specific to each plug-in.   
    <blockquote>**Note:** The XML processor does not try to validate the content within the element.
    </blockquote>   

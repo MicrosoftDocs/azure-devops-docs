@@ -78,7 +78,7 @@ The topology types described in the following table determine the restrictions p
 
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    **Topology type**
    :::column-end:::
    :::column span="1":::
@@ -87,7 +87,7 @@ The topology types described in the following table determine the restrictions p
 :::row-end:::
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    **Dependency**: You can use dependency links to create relationships between work items that have directionality and to restrict circular relationships. The link name is different at the end points.  
    **Example usage**: Use a dependency link to record the features that must be completed to deliver a user requirement. You can't create a dependent link between two work items that are linked to the same work items via dependent links. 
 
@@ -98,7 +98,7 @@ The topology types described in the following table determine the restrictions p
 :::row-end:::
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    **Directed Network**: You can use directed network links to create relationships between work items that indicate directionality. The link name is different at the end points. Circular relationships are allowed.  
 
    **Example usage**: Use a directed network link to record a relationship between two features that might share dependencies and which you want to distinguish from each other in some way.  
@@ -110,7 +110,7 @@ The topology types described in the following table determine the restrictions p
 :::row-end:::
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    **Network**: You can use network links to create basic relationships between work items that are non-restrictive. The link is the same at both end points. Circular relationships are allowed.
 
    **Example usage**: Use a network link, such as Related, to record a relationship between two features that might share dependencies.
@@ -122,7 +122,7 @@ The topology types described in the following table determine the restrictions p
 :::row-end:::
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    **Tree**: You can use tree links to create hierarchical relationships among work items. Tree links support multi-level hierarchical views, have directionality, and restrict circular relationships. The link name is different at the end points. Tree links are the only type of link that is supported by the **Tree of Work Items** query. With Parent/Child links, you can't assign two parents to a child.
 
    **Example usage**: Use a tree link to record tasks and subtasks from your team that must be completed to deliver a user story or backlog item. Or, [map backlog items to features, and features to epics](../../boards/backlogs/organize-backlog.md). 

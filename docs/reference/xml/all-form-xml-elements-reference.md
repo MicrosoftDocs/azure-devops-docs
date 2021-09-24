@@ -14,7 +14,7 @@ ms.date: 03/02/2017
 
 # All FORM XML elements reference (TFS 2015)
 
-<p><b>TFS 2017 | TFS 2015 | TFS 2013</b></p>
+**TFS 2017 | TFS 2015 | TFS 2013**
 
 > [!IMPORTANT]  
 >This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md).
@@ -80,7 +80,7 @@ You can specify how information and work item fields are grouped and appear in a
    **Element**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
 
    :::column-end:::
@@ -95,7 +95,7 @@ You can specify how information and work item fields are grouped and appear in a
    **Column**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Divides a form&#39;s regions into columns.
 
    ```
@@ -119,7 +119,7 @@ You can specify how information and work item fields are grouped and appear in a
    **Control**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines a field, text, hyperlink, or other control element to appear on the work item form.
 
    ```
@@ -147,7 +147,7 @@ You can specify how information and work item fields are grouped and appear in a
    **FORM**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines the top-level form element.
 
    ```
@@ -167,7 +167,7 @@ You can specify how information and work item fields are grouped and appear in a
    **Group**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Provides a visual grouping of elements, similar to the Windows GroupBox.
 
    ```
@@ -188,7 +188,7 @@ You can specify how information and work item fields are grouped and appear in a
    **Layout**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines the layout of the work item form.
 
    ```
@@ -214,7 +214,7 @@ You can specify how information and work item fields are grouped and appear in a
    **Splitter**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Divides a form into two areas to support the layout of two sibling form elements.
 
    ```
@@ -232,7 +232,7 @@ You can specify how information and work item fields are grouped and appear in a
    **Tab**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines the layout of a single tab in a tab group.
 
    ```
@@ -256,7 +256,7 @@ You can specify how information and work item fields are grouped and appear in a
    **TabGroup**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines one or more tabs for the form.
 
    ```

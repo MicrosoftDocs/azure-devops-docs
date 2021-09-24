@@ -47,7 +47,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    :::column span="1":::
    **Area**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Customization support**
    :::column-end:::
 :::row-end:::
@@ -56,7 +56,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    :::column span="1":::
    Fields
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    - [Add or modify a field](add-modify-field.md)  
    - [Add a checkbox (Boolean) field (TFS 2017.2)](add-modify-field.md)  
    - [Add rules to a field](add-modify-field.md#add-rules)  
@@ -73,7 +73,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    :::column span="1":::
    Pick lists
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    - [Area paths](../organizations/settings/set-area-paths.md) 
    - [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
    - [Add a custom pick list](add-modify-field.md#picklist)  
@@ -89,7 +89,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    :::column span="1":::
    Work item types
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    - [Add or modify a work item type](add-modify-wit.md)  
    - [Change the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
    - [Customize the form](xml/change-work-item-form-layout.md)  
@@ -103,7 +103,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    :::column span="1":::
    Backlogs and process configuration
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    - [Add WITs to backlogs or boards](add-wits-to-backlogs-and-boards.md)  
    - [Add portfolio backlogs](add-portfolio-backlogs.md)  
    - [Configure the quick add panel](xml/process-configuration-xml-element.md#add)  
@@ -121,7 +121,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    :::column span="1":::
    Process template
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    - [Customize](process-templates/customize-process.md)  
    - [Manage (upload/download)](../boards/work-items/guidance/manage-process-templates.md)  
    - [Maintenance and upgrade implications](#before-you-customize)  
@@ -132,7 +132,7 @@ You can perform the following tasks when you work with the On-premises XML proce
    :::column span="1":::
    Link types
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    - [Add a custom link type](xml/link-type-element-reference.md)  
    - [Delete a custom link type](witadmin/manage-link-types.md)  
    - [Deactivate/activate a custom link type](witadmin/manage-link-types.md)  
@@ -165,13 +165,11 @@ To minimize the amount of manual work you'll need to do after an upgrade, unders
 
 With the following customizations, you can use the Configure Features Wizard to automatically apply any changes to your project required for new features.
 
-<ul>
-<li>Fields: Add custom fields, customize a pick list, add or modify area and iteration paths, add rules to a field  </li>
-<li>WITs: Add custom WITs, change the form layout</li>
-<li>Categories: Add custom categories  </li>
-<li>Agile tools: Customize the columns on the Kanban board, customize the quick add panel  </li>
-<li>Office integration: Add or change how Project fields map to TFS fields   </li>
-</ul>
+- Fields: Add custom fields, customize a pick list, add or modify area and iteration paths, add rules to a field   	
+- WITs: Add custom WITs, change the form layout 
+- Categories: Add custom categories   
+- Agile tools: Customize the columns on the Kanban board, customize the quick add panel   
+- Office integration: Add or change how Project fields map to TFS fields    
 
 To learn more about the Configure Features Wizard, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).
 
@@ -180,13 +178,11 @@ To learn more about the Configure Features Wizard, see [Configure features after
 
 The Configure Features Wizard requires that specific work item types, workflow states, and fields exist in the project. When you make the following customizations, you might need to modify your custom process for the wizard to run, or you might have to update your project manually. 
 
-<ul>
-<li>Fields: Change attributes of an existing field, remove fields that are referenced in the process configuration </li>
-<li>WITs: Change the workflow </li>
-<li>Agile tools: Change the WITs defined for the Requirement Category, Task Category, or Feature Category.</li>
-<li>Agile tools: Change the metastate mapping defined in the process configuration.  </li>
-<li>Agile tools: Change a field specified for a <code>TypeField</code> in the process configuration.   </li>
-</ul>
+- Fields: Change attributes of an existing field, remove fields that are referenced in the process configuration  
+- WITs: Change the workflow  
+- Agile tools: Change the WITs defined for the Requirement Category, Task Category, or Feature Category. 
+- Agile tools: Change the metastate mapping defined in the process configuration.   
+- Agile tools: Change a field specified for a `TypeField` in the process configuration.    
 
 In addition, changes you make to WITs or the workflow could require updates to other artifacts provided with your process, such as Excel or SQL Server Reporting Services reports.
  

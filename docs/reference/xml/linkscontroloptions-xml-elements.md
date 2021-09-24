@@ -51,7 +51,7 @@ The following table summarizes the differences between the **LinksControlOptions
    :::column span="1":::
    **Control option**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Web portal elements (WebLayout)**
    :::column-end:::
    :::column span="1":::
@@ -63,7 +63,7 @@ The following table summarizes the differences between the **LinksControlOptions
    :::column span="1":::
    Restrict link relationships to other objects (non work items) 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specify to include an external link type using the **ExternalLinkFilter** element within the **LinkFilters** container element  
    When `ListViewOptions GroupLinks="true"`, links are grouped within the web form by type in the order they are listed within the **LinkFilters** container element
    :::column-end:::
@@ -76,7 +76,7 @@ The following table summarizes the differences between the **LinksControlOptions
    :::column span="1":::
    Restrict link relationships to other work items 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specify to include a work link type using the **WorkItemLinkFilter** element within the **LinkFilters** container element, specifying a link type reference name  
    When `ListViewOptions GroupLinks="true"`, links are grouped within the web form by type in the order they are listed within the **LinkFilters** container element
    :::column-end:::
@@ -89,7 +89,7 @@ The following table summarizes the differences between the **LinksControlOptions
    :::column span="1":::
    Restrict links allowed based on work item type 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specify to include a work item type using the **Filter** element within the **WorkItemTypeFilters** container element
    :::column-end:::
    :::column span="1":::
@@ -101,7 +101,7 @@ The following table summarizes the differences between the **LinksControlOptions
    :::column span="1":::
    Link order and grouping
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    When `ListViewOptions GroupLinks="true"`, linked items are grouped by their link type and work items are arranged by work item type, owner, and title   (a user can change this order by clicking a column field in the control's grid display)  
    :::column-end:::
    :::column span="1":::
@@ -113,7 +113,7 @@ The following table summarizes the differences between the **LinksControlOptions
    :::column span="1":::
    Composite display of link information
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    For each listed item, the links control displays the Work Item Type, ID, Title, and Assigned To as a composite field called *Link* as shown:  
    ![Composite field](media/linkscontrol-composite-field.png)    
    
@@ -128,7 +128,7 @@ The following table summarizes the differences between the **LinksControlOptions
    :::column span="1":::
    Field and attribute display 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specify the fields to display within the link control's grid using a **Column** element within the **Columns** container element 
    :::column-end:::
    :::column span="1":::
@@ -144,8 +144,7 @@ From the scoped links control, you can perform the same actions provided from th
 - To delete a link, highlight it and click the ![delete icon](../../boards/media/icons/delete_icon.png) delete icon   
 - To link to an existing item, or create and link a new work item, select one of the menu options.  
 
-<img src="media/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" />  
-
+![Links control menu of options](media/linkscontrol-related-work-menu-options.png)
 
 <a id="dynamic-sizing"></a>
 
@@ -161,8 +160,7 @@ You can specify whether the links display as a list, grid, or dynamically by set
 
 Core system processes&mdash;[Agile, Scrum, CMMI](../../boards/work-items/guidance/choose-process.md)&mdash;have been updated to include the Development and Related Work scoped links control. 
 
-
-<img src="media/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" />  
+![Bug work item form, Agile process, Development and Related links controls](media/linkscontrol-bug-form-dev-related-links.png)
 
 These controls appear on all default work item types, except the following:
 - Code Review Request/Code Review Response
@@ -293,7 +291,7 @@ The following table describes the **LinksControlOptions** element and its child 
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -303,7 +301,7 @@ The following table describes the **LinksControlOptions** element and its child 
     **Column** 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required **Columns** element used to specify the work item and link-related fields to display within the links control. 
 
    The order in which the **Column** elements are listed defines the order in which the column fields display in the control's grid.
@@ -323,7 +321,7 @@ The following table describes the **LinksControlOptions** element and its child 
     **Columns** 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional child element of the **LinksControlOptions** element.
 
    Container element for one or more **Column** elements you use to specify the fields that display in the control's grid. 
@@ -341,7 +339,7 @@ The following table describes the **LinksControlOptions** element and its child 
     **ExternalLinkFilter** 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional **LinkFilters** element used to specify an external link type. With an external link type, users can create a link relationship to objects that are not work items, such as changesets, hyperlinks, and files under version control. 
 
    ```
@@ -365,7 +363,7 @@ The following table describes the **LinksControlOptions** element and its child 
     **Filter** 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child element of the **WorkItemTypeFilters** container element. Specifies the name of a work item type to include as an allowed type that users can link to from the links control. 
 
    ```
@@ -416,7 +414,7 @@ The following table describes the **LinksControlOptions** element and its child 
    **LinksControlOptions** 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required container child element of **Control** element when **type="LinksControl"** and when used within the **WebLayout** element.
 
    Use to scope the link types and work item types that users can add to a work item and the columns to appear for the list of link relationships in the work item form.
@@ -447,7 +445,7 @@ The following table describes the **LinksControlOptions** element and its child 
    **LinkFilters** 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional **LinksControlOptions**  child element.
 
    Use this container element to specify which link types are used to scope the control. List one or more **ExternalLinkFilter** or **WorkItemLinkFilter** elements to specify the link types to use to filter the links control.
@@ -466,7 +464,7 @@ The following table describes the **LinksControlOptions** element and its child 
     **ListViewOptions** 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional **LinksControlOptions** child element.
 
    Specifies whether or not to group links according to their type. If `GroupLinks="false"` (default), links are not grouped by their link type.
@@ -482,7 +480,7 @@ The following table describes the **LinksControlOptions** element and its child 
    **WorkItemLinkFilter** 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional **LinkFilters** child element.
 
    Specifies a work-specific link type which is included within the links control. Users can create relationships to other work items only for those link types included in the links control.
@@ -506,7 +504,7 @@ The following table describes the **LinksControlOptions** element and its child 
     **WorkItemTypeFilters** 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional container child element of the **LinkFilters** element. Use this element to specify the set of work item types to include in the links control. This element restricts the work item types that users can create links to and those that will appear in the linked list. Specification of this element depends on specifying at least one **WorkItemLinkFilter** element.  
 
    ```

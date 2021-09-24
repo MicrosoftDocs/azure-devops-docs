@@ -77,7 +77,7 @@ The following table describes each plug-in file and whether or not it is support
    :::column span="1":::
    **Web portal**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -93,11 +93,11 @@ The following table describes each plug-in file and whether or not it is support
    :::column span="1":::
    ❌
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Defines the initial security permissions used by Team Foundation Build and uploads build template files.  
-   <blockquote>
-   For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only default permissions are defined. 
-   </blockquote>
+   
+   > For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only default permissions are defined. 
+   
    :::column-end:::
 :::row-end:::
 
@@ -112,7 +112,7 @@ The following table describes each plug-in file and whether or not it is support
    :::column span="1":::
    ✔️
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Configures the initial area and iteration or sprint paths. Also uploads the [Microsoft Project Mapping (FileMapping.xml) file](/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields) that defines how work tracking fields map to Office Project fields.
    :::column-end:::
 :::row-end:::
@@ -128,7 +128,7 @@ The following table describes each plug-in file and whether or not it is support
    :::column span="1":::
    ✔️
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Defines the initial security groups, teams, team members, and their permissions.
    :::column-end:::
 :::row-end:::
@@ -144,11 +144,11 @@ The following table describes each plug-in file and whether or not it is support
    :::column span="1":::
    ❌
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Defines the initial security permissions that are assigned to identities for Visual Studio Lab Management.   
-   <blockquote>
-   For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only default permissions are defined. Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
-   </blockquote>
+   
+   > For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only default permissions are defined. Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
+   
    :::column-end:::
 :::row-end:::
 
@@ -163,11 +163,11 @@ The following table describes each plug-in file and whether or not it is support
    :::column span="1":::
    ❌
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Creates the Report Manager site for the project and uploads the Reporting Services reports. Only supported for on-premises TFS.   
-   <blockquote>
-   For TFS 2017.3 and later versions, you can only create projects through the web portal which ignores this plug-in. To add reports after creating a project, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).
-   </blockquote>
+   
+   > For TFS 2017.3 and later versions, you can only create projects through the web portal which ignores this plug-in. To add reports after creating a project, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).
+   
    :::column-end:::
 :::row-end:::
 
@@ -182,7 +182,7 @@ The following table describes each plug-in file and whether or not it is support
    :::column span="1":::
    ✔️
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Defines the initial test variables, configurations, settings, and resolution states of a project. This plug-in also uploads the information contained in the following files:  
    
    - **localrun.testsettings**: Defines the default test settings for a local test run.
@@ -205,11 +205,11 @@ The following table describes each plug-in file and whether or not it is support
    :::column span="1":::
    ❌
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Defines the initial security permissions for Git and Team Foundation version control (TFVC), and for TFVC, check-in notes and whether exclusive check-out is required.  
-   <blockquote>
-   For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a project, you can manage [TFVC check-in policies](../../repos/tfvc/add-check-policies.md) or [permissions](../../repos/tfvc/set-tfvc-repository-permissions.md) from the web portal.
-   </blockquote>
+   
+   > For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a project, you can manage [TFVC check-in policies](../../repos/tfvc/add-check-policies.md) or [permissions](../../repos/tfvc/set-tfvc-repository-permissions.md) from the web portal.
+   
    :::column-end:::
 :::row-end:::
 
@@ -224,21 +224,21 @@ The following table describes each plug-in file and whether or not it is support
    :::column span="1":::
    ❌
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    Defines the project portal based on a template for a SharePoint site. Only supported for on-premises TFS.  
-   <blockquote>
-   TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. Or, to add a project portal site after creating a project, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md). Creating a project from the web portal will ignore the WssTasks.xml plug-in. 
-   </blockquote>  
+   
+   > TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. Or, to add a project portal site after creating a project, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md). Creating a project from the web portal will ignore the WssTasks.xml plug-in.  
+    
    This plug-in also uploads the information contained in the following files and folders:
  
    
    - **Process Guidance**: Uploads a set of .htm files which contain a URL that opens process guidance topics when a user clicks the ![ProcessGuidance WI Icon](media/processguidance_wi_icon.png) help icon from the client version of a work item form. These files can be customized to point to other resources for process guidance.  
    - **Samples and Templates**: Uploads one or more Excel workbooks (.xlsx files) to support bug triage and track issues.  
    - **Shared Documents**: Uploads one or more sample document and template files as a starting point for creating work products.  
-   <blockquote>
-   Process template files do not include dashboards or Microsoft Excel reports. These files are added to the project, depending on selections that are made when a project is created. If no SharePoint site is provisioned for the project, no dashboards or Office Excel reports are available. For more information about these artifacts, see the following topics: [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards), [Excel reports (Agile)](/previous-versions/azure/devops/report/excel/excel-reports), and [Excel reports (CMMI)](/previous-versions/azure/devops/report/excel/excel-reports-cmmi).  
-   </blockquote>
+   
+   > Process template files do not include dashboards or Microsoft Excel reports. These files are added to the project, depending on selections that are made when a project is created. If no SharePoint site is provisioned for the project, no dashboards or Office Excel reports are available. For more information about these artifacts, see the following topics: [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards), [Excel reports (Agile)](/previous-versions/azure/devops/report/excel/excel-reports), and [Excel reports (CMMI)](/previous-versions/azure/devops/report/excel/excel-reports-cmmi).  
+   
    :::column-end:::
 :::row-end:::
 
@@ -253,7 +253,7 @@ The following table describes each plug-in file and whether or not it is support
    :::column span="1":::
    ✔️
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Defines the initial work item types, queries, and work item instances of a project. Team members use work items to track work. A *work item type* defines the fields, workflow, and form used to track work. To customize any of these objects after you create a project, see [Customize your work tracking experience](../customize-work.md).  
    
    This plug-in also uploads the information contained in the following files and folders: 
@@ -271,9 +271,9 @@ The following table describes each plug-in file and whether or not it is support
    - **[Queries](add-work-item-queries-process-template.md)**: Defines several work item queries (defined as .wiq files) within the Queries folder. 
    - **[TypeDefinitions](add-wit-definitions-process-template.md)**: Defines the 15 or more work item type XML definition files contained within the TypeDefinition folder. The definitions differ depending on the process template selected. 
    - **[Work items](add-work-item-instance-process-template.md)**: Defines one or more work items. No definitions are defined within the default process templates.  
-   <blockquote>
-   For Azure DevOps Services and TFS 2017.3 and later versions, definitions for work item instances will be ignored when creating projects.  
-   </blockquote>
+   
+   > For Azure DevOps Services and TFS 2017.3 and later versions, definitions for work item instances will be ignored when creating projects.  
+   
     
    :::column-end:::
 :::row-end:::

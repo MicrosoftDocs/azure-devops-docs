@@ -35,8 +35,8 @@ After a project is created from the process template, you can add, remove, renam
 The following table summarizes the names of the file, the folder, and the plug-in for the Agile and CMMI process templates.  
 
 
-**File name**: ReportsTasks.xml <br>
-**Folder name**: Reports  <br>
+**File name**: ReportsTasks.xml   
+**Folder name**: Reports    
 **Plug-in name**: Microsoft.ProjectCreationWizard.Reporting 
 
 > [!NOTE]  
@@ -183,7 +183,7 @@ The following table describes the elements that you use to specify a report to u
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description and syntax**
    :::column-end:::
 :::row-end:::
@@ -192,7 +192,7 @@ The following table describes the elements that you use to specify a report to u
    :::column span="1":::
    **datasources**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child element of **report**. Contains a collection of **reference** elements that each specify a data source that the report uses.   
    ```
    <datasources>
@@ -206,7 +206,7 @@ The following table describes the elements that you use to specify a report to u
    :::column span="1":::
    **folder**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child element of **folders**. Defines the name of a folder to create under the Reports node for a project.   
    ```
    <folder path="FolderName" />
@@ -218,7 +218,7 @@ The following table describes the elements that you use to specify a report to u
    :::column span="1":::
    **folders**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional child element of **ReportingServices**. Contains a collection of **folder** elements that each specify the name of a folder to create.   
    ```
    <folders>
@@ -232,7 +232,7 @@ The following table describes the elements that you use to specify a report to u
    :::column span="1":::
    **parameter**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child element of **parameters**. Specifies the name of a report parameter and the value to assign to it.    
    ```
    <parameter name="ParameterName" value="ParameterValue" />
@@ -249,7 +249,7 @@ The following table describes the elements that you use to specify a report to u
    :::column span="1":::
    **parameters**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child element of **report**. Defines a collection of **parameter** elements for a report.      
    ```
    <parameters>
@@ -263,7 +263,7 @@ The following table describes the elements that you use to specify a report to u
    :::column span="1":::
    **properties**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional child element of **report**. Provides the container element for **property**.     
    ```
    <properties>
@@ -277,7 +277,7 @@ The following table describes the elements that you use to specify a report to u
    :::column span="1":::
    **property**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child element of **properties**.     
    ```
    <property name="PropertyName" value="PropertyValue" />
@@ -293,7 +293,7 @@ The following table describes the elements that you use to specify a report to u
    :::column span="1":::
    **reference**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child element of **datasources**. Specifies the names that are assigned in Team Foundation Server for the data warehouse relational database and the Analysis Services cube.       
    ```
    <reference name="RelationalDBName" dsname="OLAPDBName"  />
@@ -311,7 +311,7 @@ The following table describes the elements that you use to specify a report to u
    :::column span="1":::
    **report**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child element of **reports**. Specifies the name of the report, the file that contains the .rdl definition, and folder to which the report is uploaded.       
    ```
    <report name="ReportName" filename="ReportFilePathName"  folder="FolderName" 
@@ -333,7 +333,7 @@ The following table describes the elements that you use to specify a report to u
    :::column span="1":::
    **reports**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child element of **ReportingServices**. Contains a collection of **report** elements that each specify the name of a report file to upload.       
    ```
    <reports>
@@ -347,7 +347,7 @@ The following table describes the elements that you use to specify a report to u
    :::column span="1":::
    **ReportingServices**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child element of the **taskXml** element for the Reporting plug-in. Describes the tasks that are required to define the reports and folders for SQL Server Reporting Services.     
    ```
    <ReportingServices>
@@ -363,7 +363,7 @@ The following table describes the elements that you use to specify a report to u
    :::column span="1":::
    **site**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required element for the Reporting plug-in. Specifies that a reporting site for the project will be created.      
    ```
    <site>
