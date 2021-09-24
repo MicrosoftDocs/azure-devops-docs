@@ -149,15 +149,15 @@ You use the **tasks** element and its child elements to define the artifacts to 
    :::column-end:::
    :::column span="3":::
    Required root element for a plug-in file. Describes the work that is required to complete this task. The XML inside this element block varies and is specific to each plug-in.   
-   <blockquote>**Note:** The XML processor does not try to validate the content within the element.
-   </blockquote>   
    
+   > [!NOTE]  
+   > The XML processor does not try to validate the content within the element.  
+    
    ```
    <taskXml> . . . </taskXml>
    ```
    :::column-end:::
 :::row-end:::
-
 
 <a name="index"></a> 
 ##  Index to taskXML Elements by Function  
