@@ -117,17 +117,17 @@ To modify the pick list for most string or integer fields within a work item for
    :::column-end:::
    :::column span="2":::
    ```
-   <FIELD name="Resolution" refname="MyCompany.Resolution" type="String">    
-   <ALLOWEDVALUES>
-      <LISTITEM value="By Design" />
-      <LISTITEM value="Duplicate" />
-      <LISTITEM value="External" />
-      <LISTITEM value="Fixed" />
-      <LISTITEM value="Not Repro" />
-      <LISTITEM value="Postponed" />
-      <LISTITEM value="Won't Fix" />
-   </ALLOWEDVALUES>
-   </FIELD>
+&nbsp;&nbsp;&nbsp;<FIELD&nbsp;name="Resolution"&nbsp;refname="MyCompany.Resolution"&nbsp;type="String">&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<ALLOWEDVALUES>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="By&nbsp;Design"&nbsp;/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="Duplicate"&nbsp;/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="External"&nbsp;/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="Fixed"&nbsp;/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="Not&nbsp;Repro"&nbsp;/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="Postponed"&nbsp;/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="Won't&nbsp;Fix"&nbsp;/>
+&nbsp;&nbsp;&nbsp;</ALLOWEDVALUES>
+&nbsp;&nbsp;&nbsp;</FIELD>
    ```
    :::column-end:::
 :::row-end:::
@@ -274,8 +274,6 @@ To add a custom control to the new web form, see [WebLayout and Control elements
 
 ::: moniker-end 
 
-
-
 <a id="change-attribute">  </a>
 
 ## Change an attribute of an existing field 
@@ -418,5 +416,3 @@ When you remove a field from a specific type of work item, that field is not rem
 4.  If the deleted field was reportable, [rebuild the data warehouse to purge the old field and its values](../Report/admin/rebuild-data-warehouse-and-cube.md).
 
 For more information, see [Manage work item fields](witadmin/manage-work-item-fields.md).  
-
-::: moniker-end
