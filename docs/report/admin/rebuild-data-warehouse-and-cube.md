@@ -59,7 +59,7 @@ With the rebuild operation, you re-create both the relational database and the c
 
 <a id="verify-services">  </a>
 
-## 1. Verify that services and application pools are running 
+## Verify that services and application pools are running 
 
 To complete the steps in this procedure, the services that SQL Server requires must be running. You stop Reporting Services so that users don't access reports while you're rebuilding the data warehouse. Also, for a dual-server deployment, the TCP/IP protocol must be enabled for each instance of a SQL Server database. 
 
@@ -115,7 +115,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 <a id="create-datawarehouse">  </a> 
 
-## 2. Rebuild the data warehouse and restart services
+## Rebuild the data warehouse and restart services
 
 1. [Open the Azure DevOps Server Administration Console](/azure/devops/server/admin/admin-quick-ref).
 
@@ -149,7 +149,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 <a id="verify-reports">  </a>
 
-## 3. Verify that reports can be accessed
+## Verify that reports can be accessed
 
 1. Sign in to the server that hosts Reporting Services, open Internet Explorer, type the following string in the Address bar, and then press ENTER:
 

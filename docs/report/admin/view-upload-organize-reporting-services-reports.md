@@ -56,16 +56,16 @@ You can use the default reports, or you can customize each report to fit your sp
   
 1.  From the ![Home icon](media/alm_te_home_icon.png "ALM_TE_Home_Icon") home page in Team Explorer, choose ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**.  
   
-> [!NOTE]
->  If a red X icon appears next to ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**, you might not have permissions to access the reports, or Team Explorer might have lost communication with the server that hosts Reporting Services. In these instances, check with your project administrator to make sure that you have permissions to access the reports and that the server that hosts Reporting Services is running.  
+    > [!NOTE]
+    >  If a red X icon appears next to ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**, you might not have permissions to access the reports, or Team Explorer might have lost communication with the server that hosts Reporting Services. In these instances, check with your project administrator to make sure that you have permissions to access the reports and that the server that hosts Reporting Services is running.  
   
- Also, a red X icon might appear next to **Reports** if both of the following conditions are true:  
+    Also, a red X icon might appear next to **Reports** if both of the following conditions are true:  
   
-- Team Explorer is running on the same computer as Reporting Services.  
+    - Team Explorer is running on the same computer as Reporting Services.  
   
-- You aren't signed in as an administrator, or enhanced security is enabled for Internet Explorer.  
+    - You aren't signed in as an administrator, or enhanced security is enabled for Internet Explorer.  
   
-  To correct this issue, sign in to your computer as an administrator, or open Internet Explorer, open Internet Options, choose the **Security** tab, and clear the **Enabled Protected Mode** check box.  
+    To correct this issue, sign in to your computer as an administrator, or open Internet Explorer, open Internet Options, choose the **Security** tab, and clear the **Enabled Protected Mode** check box.  
   
 1.  Choose the report and then press Enter.  
   

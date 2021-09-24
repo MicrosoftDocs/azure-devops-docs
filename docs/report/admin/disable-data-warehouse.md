@@ -26,6 +26,8 @@ To disable the data warehouse and cube, you must have an Azure DevOps Server ins
 > [!NOTE]  
 > Your Azure DevOps Server instance does not need to be provisioned with [SQL Server Reporting Services (SSRS)](/azure/devops/report/sql-reports) to disable the data warehouse and cube.
 
+## Disable reporting
+
 1. Open the **Azure DevOps Server Administration Console** on your Azure DevOps Server instance.  
 
 2. Navigate to **Reporting**.  
