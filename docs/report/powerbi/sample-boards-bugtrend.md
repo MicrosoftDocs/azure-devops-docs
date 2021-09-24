@@ -86,7 +86,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Query part**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -94,7 +94,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `$apply=filter(`
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Start of filter statement
    :::column-end:::
 :::row-end:::
@@ -102,7 +102,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `WorkItemType eq 'Bug'`
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Return Bugs.
    :::column-end:::
 :::row-end:::
@@ -110,7 +110,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and State ne 'Closed'`
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Omit Closed bugs.
    :::column-end:::
 :::row-end:::
@@ -118,25 +118,23 @@ The following table describes each part of the query.
    :::column span="1":::
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
-   :::column span="1":::
-   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
-   
-   To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
+   :::column span="3":::
+   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    `and DateValue ge {startdate}`
    :::column-end:::
-   :::column span="1":::
-   Start trend on or after the specified date. Example: **2019-04-01Z** represents 2019-April-01.
+   :::column span="3":::
+   Start trend on or after the specified date. Example: **2021-04-01Z** represents 2021-April-01.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    `)`
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Close filter()
    :::column-end:::
 :::row-end:::
@@ -144,7 +142,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/groupby(`
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Start groupby()
    :::column-end:::
 :::row-end:::
@@ -152,7 +150,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `(DateValue, State, WorkItemType, Priority, Severity, Area/AreaPath, Iteration/IterationPath), `
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Group by DateValue (used for trending), and any fields you want to report on.
    :::column-end:::
 :::row-end:::
@@ -160,7 +158,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `aggregate($count as Count)`
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Aggregate by counting bugs that match the criteria on each date
    :::column-end:::
 :::row-end:::
@@ -168,11 +166,10 @@ The following table describes each part of the query.
    :::column span="1":::
    `)`
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Close groupby().
    :::column-end:::
 :::row-end:::
-
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
 
@@ -265,6 +262,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Bug trend with a snapshot every Friday
 
 Using a weekly snapshot reduces the amount of data pulled into Power BI, and increases query performance. 
+
 #### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
