@@ -108,7 +108,7 @@ The following table describes each part of the query.
    :::column span="3":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -116,7 +116,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `Pipeline/PipelineName eq '{pipelineName}'`
@@ -124,7 +124,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return test runs for the specified pipeline
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and CompletedOn/Date ge {startdate}`
@@ -132,7 +132,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return test runs on or after the specified date
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and Workflow eq 'Build'`
@@ -140,7 +140,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return test runs for 'Build' workflow
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -148,7 +148,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `aggregate(`
@@ -156,7 +156,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start aggregate. For all the test runs matching the above filter criteria:
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `ResultCount with sum as ResultCount,`
@@ -164,7 +164,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of test runs as ResultCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `ResultPassCount with sum as ResultPassCount,`
@@ -172,7 +172,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of passed test runs as ResultPassCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `ResultFailCount with sum as ResultFailCount`
@@ -180,7 +180,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of failed test runs as ResultFailCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `ResultNotExecutedCount with sum as ResultNotExecutedCount,`
@@ -188,7 +188,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of not executed test runs as ResultNotExecutedCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `ResultNotImpactedCount with sum as ResultNotImpactedCount`
@@ -196,7 +196,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of not impacted test runs as ResultNotImpactedCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -204,7 +204,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close aggregate()
    :::column-end:::
-:::row:::
+:::row-end:::
 
 [!INCLUDE [temp](includes/query-filters-test.md)]
 

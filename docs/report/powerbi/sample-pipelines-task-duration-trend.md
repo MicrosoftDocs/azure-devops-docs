@@ -93,7 +93,7 @@ The following table describes each part of the query.
    :::column span="3":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -101,7 +101,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `Pipeline/PipelineName eq '{pipelinename}'`
@@ -109,7 +109,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return task results for a specific pipeline
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and TaskDisplayName eq '{taskname}'`
@@ -117,7 +117,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return task results for a specific task
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and PipelineRunCompletedOn/Date ge {startdate}`
@@ -125,7 +125,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return task results for pipeline runs on or after the specified date
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')`
@@ -140,7 +140,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Omit the pipeline runs that were canceled, skipper or abandoned
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -148,7 +148,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/compute(`
@@ -156,7 +156,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start compute()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `percentile_cont(ActivityDurationSeconds, 0.8, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds)`
@@ -164,7 +164,7 @@ The following table describes each part of the query.
    :::column span="3":::
    For each day, compute the 80th percentile of task durations of all tasks that match the filter criteria
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/groupby(`
@@ -172,7 +172,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `(TaskDuration80thPercentileInSeconds, PipelineRunCompletedOn/Date))`
@@ -180,7 +180,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Group by date of completion of pipeline run and calculated day wise 80th percentile task duration
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `&$orderby=PipelineRunCompletedOn/Date asc`
@@ -188,7 +188,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Order the response by completed date
    :::column-end:::
-:::row:::
+:::row-end:::
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
 

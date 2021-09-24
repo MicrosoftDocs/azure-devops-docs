@@ -102,7 +102,7 @@ The following table describes each part of the query.
    :::column span="3":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -110,7 +110,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `CompletedDate ge {startdate}`
@@ -118,7 +118,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return pipeline runs for date greater than specified date
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -126,7 +126,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/groupby(`
@@ -134,7 +134,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `(Pipeline/PipelineName),`
@@ -142,7 +142,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Group the below result by Pipeline Name
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `aggregate(`
@@ -150,7 +150,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start aggregate. For each Pipeline:
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$count as TotalCount,`
@@ -158,7 +158,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of runs as TotalCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `SucceededCount with sum as SucceededCount ,`
@@ -166,7 +166,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the number of successful runs as SucceededCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `FailedCount with sum as FailedCount,`
@@ -174,7 +174,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the number of failed runs as FailedCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `PartiallySucceededCount with sum as PartiallySucceededCount,`
@@ -182,7 +182,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the number of partially successful runs as PartiallySucceededCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `CanceledCount with sum as CanceledCount`
@@ -190,7 +190,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the number of canceled runs as CanceledCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `))`
@@ -198,7 +198,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close aggregate() and groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]

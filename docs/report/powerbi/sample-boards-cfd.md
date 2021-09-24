@@ -83,7 +83,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -91,7 +91,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Start filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `Team/TeamName eq '{teamname}'`
@@ -99,7 +99,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Return items for a specific team
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and BoardName eq 'Stories'`
@@ -107,7 +107,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Return items on the 'Stories' backlog. You can specify other backlog names, such as 'Epics', and 'Features'
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and DateValue ge {startdate}`
@@ -115,7 +115,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Start CFD on or after the specified date. Example: **2019-04-01Z** represents 2019-April-01 2019-July-01
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -123,7 +123,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Close filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/groupby(`
@@ -131,7 +131,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Start groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `(DateValue, ColumnName, LaneName, State, WorkItemType,AssignedTo/UserName,Area/AreaPath), `
@@ -139,7 +139,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Group by DateValue (used for trending), ColumnName, and any other fields you want to report on. Here we include LaneName to enabling filtering by LaneName
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `aggregate($count as Count)`
@@ -147,7 +147,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Aggregate as count of work items.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -155,7 +155,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Close groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]

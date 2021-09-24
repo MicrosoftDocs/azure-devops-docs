@@ -111,7 +111,7 @@ The following table describes each part of the query.
    :::column span="3":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -119,7 +119,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `Pipeline/PipelineName eq '{pipelineName}'`
@@ -127,7 +127,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return test runs for the specified pipeline
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `And Date/Date ge {startdate}`
@@ -135,7 +135,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return test runs on or after the specified date
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and Workflow eq 'Build'`
@@ -143,7 +143,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return test runs for 'Build' workflow
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -151,7 +151,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/groupby(`
@@ -159,7 +159,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `(TestSK, Test/TestName),`
@@ -167,7 +167,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Group by the test Name
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `aggregate(`
@@ -175,7 +175,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start aggregate. For all the test runs matching the above filter criteria:
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `ResultCount with sum as TotalCount,`
@@ -183,7 +183,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of test runs as TotalCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `ResultDurationSeconds with sum as TotalDuration`
@@ -191,7 +191,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Sum the total duration of all the runs as TotalDuration
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `))`
@@ -199,7 +199,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close aggregate() and groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/compute(`
@@ -207,7 +207,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start compute()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `TotalDuration div TotalCount as AvgDuration`
@@ -215,7 +215,7 @@ The following table describes each part of the query.
    :::column span="3":::
    For all the tests, we already have total number of runs and total duration. Calculate average duration by diving total duration by total number of runs
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -223,7 +223,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close compute()
    :::column-end:::
-:::row:::
+:::row-end:::
 
 
 

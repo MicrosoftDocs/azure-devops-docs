@@ -91,7 +91,7 @@ The following table describes each part of the query.
    :::column span="3":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -99,7 +99,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `Pipeline/PipelineName eq '{pipelinename}'`
@@ -107,7 +107,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return pipeline runs for the specified pipeline
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and CompletedDate ge {startdate}`
@@ -115,7 +115,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return pipeline runs on or after the specified date
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and (SucceededCount eq 1 or PartiallySucceededCount eq 1)`
@@ -123,7 +123,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return only the successful or partially successful runs
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -131,7 +131,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/compute(`
@@ -139,14 +139,14 @@ The following table describes each part of the query.
    :::column span="3":::
    Start compute()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `percentile_cont(TotalDurationSeconds, 0.5) as Duration50thPercentileInSeconds,`
    :::column-end:::
    :::column span="3":::
    Compute 50th percentile of Pipeline durations of all pipeline runs that match the filter criteria/td>
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `percentile_cont(TotalDurationSeconds, 0.8) as Duration80thPercentileInSeconds,`
@@ -154,7 +154,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Compute 80th percentile of Pipeline durations of all pipeline runs that match the filter criteria
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `percentile_cont(TotalDurationSeconds, 0.95) as Duration95thPercentileInSeconds)`
@@ -162,7 +162,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Compute 95th percentile of Pipeline durations of all pipeline runs that match the filter criteria
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/groupby(`
@@ -170,7 +170,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds))`
@@ -178,7 +178,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Group the response by - Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds
    :::column-end:::
-:::row:::
+:::row-end:::
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
 

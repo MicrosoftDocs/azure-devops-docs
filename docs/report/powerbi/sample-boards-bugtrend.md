@@ -89,7 +89,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -97,7 +97,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Start of filter statement
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `WorkItemType eq 'Bug'`
@@ -105,7 +105,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Return Bugs.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and State ne 'Closed'`
@@ -113,7 +113,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Omit Closed bugs.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and startswith(Area/AreaPath,'{areapath}')`
@@ -123,7 +123,7 @@ The following table describes each part of the query.
    
    To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and DateValue ge {startdate}`
@@ -131,7 +131,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Start trend on or after the specified date. Example: **2019-04-01Z** represents 2019-April-01.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -139,7 +139,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Close filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/groupby(`
@@ -147,7 +147,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Start groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `(DateValue, State, WorkItemType, Priority, Severity, Area/AreaPath, Iteration/IterationPath), `
@@ -155,7 +155,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Group by DateValue (used for trending), and any fields you want to report on.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `aggregate($count as Count)`
@@ -163,7 +163,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Aggregate by counting bugs that match the criteria on each date
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -171,7 +171,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Close groupby().
    :::column-end:::
-:::row:::
+:::row-end:::
 
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
