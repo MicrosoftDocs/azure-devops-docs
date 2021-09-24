@@ -70,7 +70,7 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -80,7 +80,7 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
    **GLOBALLIST**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines a set of **LISTITEM** elements that are stored for a collection and that all projects in a collection can use.
 
 
@@ -100,7 +100,7 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
    **LISTITEM**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines a valid list value. Global lists must not include project-scoped groups because they are not scoped to a project.
 
    ```

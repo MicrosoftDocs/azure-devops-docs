@@ -52,7 +52,7 @@ The structural elements used in the previous example are described in the follow
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -62,7 +62,7 @@ The structural elements used in the previous example are described in the follow
    **WITD**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    The complete WIT definition is wrapped by the tag **WITD**. You can use any name for the application name. The version identifies the WIT schema that may change from one release to the next. Use "1.0".
 
    ```
@@ -80,7 +80,7 @@ The structural elements used in the previous example are described in the follow
    **WORKITEMTYPE**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Names of WITs must be unique in a specific project. At run time, you use the name specified by this element. For example, the name can appear as a menu option. In this case, a user could choose **Bug** on the **New Work Item** menu. 
 
    ```
@@ -106,7 +106,7 @@ The structural elements used in the previous example are described in the follow
    **DESCRIPTION**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a string that describes the type of work item that you are defining. The description should help any user who is customizing the WIT.
 
    > [!NOTE]
@@ -124,7 +124,7 @@ The structural elements used in the previous example are described in the follow
    :::column span="1":::
    **GLOBALLISTS**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Contains the global list definitions that are used by the WIT. You use global lists to share pick lists among multiple WITs defined for a project collection. [Define global lists](define-global-lists.md) to support cross-group collaboration and ease of maintenance. 
 
    ```
@@ -140,7 +140,7 @@ The structural elements used in the previous example are described in the follow
    **FIELDS**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines the fields used to track data for the WIT. Within the **FIELDS** element, you [define all the fields](field-definition-element-reference.md) that you want to use to track data. This includes fields that you will use to run queries and generate reports. 
 
    ```
@@ -155,7 +155,7 @@ The structural elements used in the previous example are described in the follow
    :::column span="1":::
    **FORM**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the  [design of the work item form](design-work-item-form.md) by defining the fields and controls that appear on the form and in what order.
 
    **For TFS 2015 and earlier versions**, the **FORM** element contains **Layout**, **Control**, **Group**, **TAB**, **TabGroup**, **Splitter**, and other elements. 
@@ -190,7 +190,7 @@ The structural elements used in the previous example are described in the follow
    :::column span="1":::
    **WORKFLOW**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines the workflow elements that help track the work item status as it moves from a new state to closed or done. This element contains the set of **STATE** and **TRANSITION** elements that define the workflow. The workflow is a set of valid transitions from one state to another and the specific conditions associated with each transition.
 
    ```

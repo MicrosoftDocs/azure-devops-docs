@@ -51,7 +51,8 @@ By using the index of elements in this topic, you can look up the syntax structu
 :::row:::
    :::column span="1":::
    
-   <h3>WITD</h3>
+   ### WITD  
+
    - [DESCRIPTION](all-witd-xml-elements-reference.md)  
    - [FIELDS](field-definition-element-reference.md) (Definition)  
    - [FORM](all-form-xml-elements-reference.md)  
@@ -60,7 +61,8 @@ By using the index of elements in this topic, you can look up the syntax structu
    - [WORKFLOW](all-workflow-xml-elements-reference.md)  
    - [WORKITEMTYPE](all-witd-xml-elements-reference.md) 
 
-   <h3>WORKFLOW</h3>
+   ### WORKFLOW  
+
    - [ACTION](automate-field-assignments-state-transition-reason.md)  
    - [ACTIONS](automate-field-assignments-state-transition-reason.md)  
    - [DEFAULTREASON](all-workflow-xml-elements-reference.md)  
@@ -75,8 +77,11 @@ By using the index of elements in this topic, you can look up the syntax structu
    - [WORKFLOW](all-workflow-xml-elements-reference.md) 
    :::column-end:::
    :::column span="1":::
-   <p><a name="index_b"></a></p>
-   <h3>FIELD</h3>
+   
+   <a name="index_b"></a>
+
+   ### FIELD   
+
    - [ALLOWEDVALUES](define-pick-lists.md)  
    - [ALLOWEXISTINGVALUE](define-pick-lists.md)  
    - [CANNOTLOSEVALUE](../../organizations/settings/work/rule-reference.md)  
@@ -104,7 +109,8 @@ By using the index of elements in this topic, you can look up the syntax structu
    :::column-end:::
    :::column span="1":::
     
-   <h3>FORM-Layout</h3>
+   ### FORM-Layout   
+
    - [Column](all-form-xml-elements-reference.md)  
    - [Content](webpagecontroloptions-xml-elements-reference.md)  
    - [Control](control-xml-element-reference.md)  
@@ -131,7 +137,8 @@ By using the index of elements in this topic, you can look up the syntax structu
    :::column-end:::
    :::column span="1":::
    
-   <h3>FORM-WebLayout</h3>
+   ### FORM-WebLayout   
+
    - [Column](linkscontroloptions-xml-elements.md)  
    - [Columns](linkscontroloptions-xml-elements.md)  
    - [Content](webpagecontroloptions-xml-elements-reference.md)
@@ -180,24 +187,28 @@ The following table provides an index to the reference topics for the elements u
 :::row:::
    :::column span="1":::
    
-   <h3>[Categories](categories-xml-element-reference.md)</h3>
+   ### [Categories](categories-xml-element-reference.md)  
+
    - CATEGORIES  
    - CATEGORY  
    - DEFAULTWORKITEMTYPE  
    - WORKITEMTYPE  
    
-   <h3>[Global lists](define-global-lists.md)</h3>
+   ### [Global lists](define-global-lists.md)   
+
    - GLOBALLISTS  
    - GLOBALLIST  
    - LISTITEM  
    
-   <h3>[Link types](link-type-element-reference.md)</h3>
+   ### [Link types](link-type-element-reference.md)   
+
    - LinkTypes  
    - LinkType  
    :::column-end:::
    :::column span="1":::
    
-   <h3>[ProcessConfiguration](process-configuration-xml-element.md)</h3>
+   ### [ProcessConfiguration](process-configuration-xml-element.md)   
+   
    - AddPanel  
    - BugWorkItems  
    - Column  

@@ -66,7 +66,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description and syntax**
    :::column-end:::
 :::row-end:::
@@ -76,7 +76,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **ALLOWEDVALUES**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Defines a list of values that users can specify in a field list on work item forms and in the query editor. Users must specify one of the values that you list.
 
    ```
@@ -98,7 +98,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **ALLOWEXISTINGVALUE**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies that a field can retain an existing value, even if it is no longer in a pick list. All new field values must be in the list.
 
    ```
@@ -115,7 +115,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **CANNOTLOSEVALUE**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies that users cannot clear a field of all values after a value has been specified. After the field contains a value, that field must always contain a non-NULL value.
 
    ```
@@ -132,7 +132,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **COPY**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Copies a specified value to a field when a user creates or modifies a work item.
 
    ```
@@ -150,7 +150,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **DEFAULT**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the default rule is ignored.
 
    ```
@@ -168,7 +168,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **EMPTY**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Clears the field of any value that it contains. The **EMPTY** rule also makes a field read-only, and you should not be use it with the **READONLY** rule.  
    
    The field value is cleared when a user saves the work item, and you cannot specify any value. This rule is primarily used during state transition to clear fields that apply to the state to which the item is transitioning.
@@ -186,7 +186,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **FROZEN**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies that you cannot change the field to a non-empty value after changes are committed. As soon as a user saves the work item with a value in that field, the value can no longer be modified.
 
 
@@ -204,7 +204,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **HELPTEXT**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Defines the text to appear when a user points to the field in the work item form.   
    *tooltipText*: A string of text that contains between 1 and 255 characters.
 
@@ -221,7 +221,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **MATCH**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Defines a pattern that values of String type fields must match.
 
    ```
@@ -237,7 +237,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **NOTSAMEAS**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies that a field is not assigned the same value as that to which  another specified field is assigned. The value of the **field** attribute must be a valid reference name of a field.
 
    ```
@@ -253,7 +253,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **PROHIBITEDVALUES**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Defines a list of values that a field cannot contain. Users cannot save a work item if the field contains a prohibited value.
 
    ```
@@ -275,7 +275,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **READONLY**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies that you cannot modify the value to which the field is assigned.
 
    ```
@@ -293,7 +293,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **REQUIRED**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies that users must specify a value for the field. Required fields cannot be empty. Users cannot save a work item until they have assigned values to all required fields.
 
    ```
@@ -310,7 +310,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **SERVERDEFAULT**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Copies a specified server value to a field when a user saves a work item. These fields usually appear as read-only on the form.
 
    ```
@@ -327,7 +327,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **SUGGESTEDVALUES**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Defines a suggested list of values that users can specify in a field list on work item forms and in the query editor. Users can specify values other than those that you suggest.
 
    ```
@@ -349,7 +349,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **VALIDUSER**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Restricts work items from being modified by users who belong to the group that you specify. The default group is the Team Foundation Valid Users group.  
    
    All attributes are optional.  All attributes must consist of a string of text that contains between 1 and 255 characters. You can use tokens to specify groups. 
@@ -367,7 +367,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **WHEN**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies one or more rules to apply to the current field when another field has a specific value. The parent **FIELD** element defines the current field.
 
    ```
@@ -400,7 +400,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **WHENNOT**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies one or more rules to apply to the current field when another field does not have a specific value. The parent **FIELD** element defines the current field.
 
    ```
@@ -420,10 +420,10 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
        <SERVERDEFAULT> . . . </SERVERDEFAULT>
        <SUGGESTEDVALUES> . . . </SUGGESTEDVALUES>
        <VALIDUSER> . . . </VALIDUSER>
-    </WHENNOT>
-    ```
+   </WHENNOT>
+   ```
 
-    For more information, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
+   For more information, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
 
    :::column-end:::
 :::row-end:::
@@ -433,7 +433,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **WHENCHANGED**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies one or more rules to apply to the current field when another field is changed during the revision of the work item. The parent **FIELD** element defines the current field.
 
    ```
@@ -465,7 +465,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **WHENNOTCHANGED**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Specifies one or more rules to apply to the current field when another field is not changed during the revision of the work item. The parent element defines the current field.
 
    ```
@@ -504,7 +504,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **Element**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Description**
 
    :::column-end:::
@@ -514,7 +514,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **GLOBALIST**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Defines a set of **LISTITEM** elements that is stored for a project collection and that all projects in a collection can use.
 
    ```
@@ -534,7 +534,7 @@ To learn how to use these elements, see [Rules and rule evaluation](../../organi
    **LISTITEM**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Defines a valid list value.
 
    ```

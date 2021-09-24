@@ -155,7 +155,7 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description and syntax**
    :::column-end:::
 :::row-end:::
@@ -163,7 +163,7 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
    :::column span="1":::
    **Children**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional child element of **Node**. Contains the definitions for children areas or iterations.  
    ```
    <Children />
@@ -177,7 +177,7 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
    :::column span="1":::
    **Node**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional child element of **Nodes** and **Children**. Defines the structure of the tree. Use `ProjectLifecycle` for iterations and `ProjectModelHierarchy` for areas. Node names should not exceed 255 characters.  
    ```
    <Node StructureType="ProjectLifecycle | ProjectModelHierarchy" Name="NodeName">
@@ -192,7 +192,7 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
    :::column span="1":::
    **Nodes**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required child element of **taskXml** for the Classification plug-in. Contains the area and iteration definitions.  
    ```
    <Nodes>
@@ -206,7 +206,7 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
    :::column span="1":::
    **properties**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional child element of **taskXml** for the Classification plug-in.  
    ```
    <properties>
@@ -220,7 +220,7 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
    :::column span="1":::
    **property**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    
    Required child element of **properties**. Defines project-related data such as the XML mapping data for Microsoft Project.
    ```

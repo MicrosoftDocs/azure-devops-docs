@@ -481,7 +481,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    :::column span="1":::
    **Attribute**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -490,7 +490,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    :::column span="1":::
    **FieldName** 
    :::column-end:::
-   :::column span="1":::   
+   :::column span="3":::   
    Optional. Specifies the work item field with which the control is associated. Specify the reference name of the field which should be between 1 and 70 characters. 
 
    :::column-end:::
@@ -500,7 +500,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
     **Type** 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Required. Specifies the data type of the control. Specify a string from one of these built-in types: 
 
    
@@ -521,7 +521,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    **EmptyText** 
 
    :::column-end:::
-   :::column span="1":::   
+   :::column span="3":::   
    Optional. Specifies a text string between 1 and 255 characters in length that appears when a field is empty.
 
    :::column-end:::
@@ -531,7 +531,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    :::column span="1":::
    **Label**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Specifies the visible text on the form that identifies the control. Specify a string of no more than 80 characters. If unspecified, the friendly name of the `FieldName` is used. 
    :::column-end:::
 :::row-end:::
@@ -540,7 +540,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    :::column span="1":::
    **ReadOnly**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Specifies that the field is read-only:
    
    - **True**: Control field is read-only.
@@ -554,7 +554,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    **Name** 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Identifies a control uniquely. The **Name** is important if more than one control on the form is associated with the same work item field.  
 
    > [!NOTE]  
@@ -566,7 +566,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    :::column span="1":::
    **Visible**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Specify `Visible="false"` when you want to hide a field normally included within the header area. You can only specify this attribute in conjunction with the System.Reason, System.AreaPath, or System.IterationPath fields. If you specify this attribute, you can't specify the `Replaces` attribute. 
    :::column-end:::
 :::row-end:::
@@ -575,7 +575,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    :::column span="1":::
    **Replaces**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Optional. Specify `FieldName="ReplacementFieldRefName" Replaces="FieldRefName"` when you want to replace a field within the header area with another field. You can only specify this attribute in conjunction with the System.Reason, System.AreaPath, or System.IterationPath fields. If you specify this attribute, you can't specify the `Visible` attribute. Also, you need to remove the entry for the field you are replacing from within the section. 
    :::column-end:::
 :::row-end:::
@@ -588,7 +588,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    :::column span="1":::
    **Type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -597,7 +597,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    :::column span="1":::
    **DateTimeControl**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Use to display formatted date fields with a data type of `DateTime`. 
    Use `FieldControl` to provide a text field for the input or display of a DateTime field.
 
@@ -622,7 +622,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    :::column span="1":::
    **FieldControl**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Use to display fields with a data type of Boolean, String, Identity, Integer, Double, and PlainText. For example:  
    
    ```
@@ -641,7 +641,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    :::column span="1":::
    **HTMLFieldControl**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Use to display multi-line, rich-text formatted control. Specify this control type for fields of `Type=HTML`.  
    ![HTML field shown on work item form](media/html-field-control.png)  
    For example:  
@@ -657,7 +657,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    :::column span="1":::
    **LabelControl**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the **LabelText**, **Link** and **Text** elements. See [LabelText and Text XML elements reference](labeltext-and-text-xml-elements-reference.md) and [Link and Param XML elements reference](link-param-xml-elements-reference.md).
    :::column-end:::
 :::row-end:::
@@ -666,7 +666,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    :::column span="1":::
    **WebpageControlOptions**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Use to display HTML-based content defined by a URI or embedded within a CDATA tag. This control does not have an associated field or field type.  You specify the content and links to display using the **WebpageControlOptions** element.
 
    The **WebpageControlOptions** element and its child elements have the following syntax structure:

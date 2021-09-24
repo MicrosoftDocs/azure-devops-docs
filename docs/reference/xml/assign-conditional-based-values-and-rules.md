@@ -48,7 +48,7 @@ The following table describes conditional rules that you can specify as child el
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    **Syntax**
    :::column-end:::
    :::column span="1":::
@@ -61,7 +61,7 @@ The following table describes conditional rules that you can specify as child el
    **WHEN**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    ```
    <WHEN field="fieldReferenceName" value="value">
@@ -95,7 +95,7 @@ The following table describes conditional rules that you can specify as child el
    **WHENNOT**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    ```
    <WHENNOT field="fieldReferenceName" value="value">
@@ -128,7 +128,7 @@ The following table describes conditional rules that you can specify as child el
    **WHENCHANGED**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    ```
    <WHENCHANGED field="fieldReferenceName" >
@@ -160,7 +160,7 @@ The following table describes conditional rules that you can specify as child el
    **WHENNOTCHANGED**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    ```
    <WHENNOTCHANGED field="fieldReferenceName">

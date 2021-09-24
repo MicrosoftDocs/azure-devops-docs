@@ -78,7 +78,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    :::column span="1":::
    **Element**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    **Description and syntax**
    :::column-end:::
    :::column span="1":::
@@ -91,7 +91,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    **ACTION**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines a text string that corresponds to an action to be performed when the system for tracking work items calls the **WorkItem.GetNextState** method to get the post-action state of the work item.
 
 
@@ -112,7 +112,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    **ACTIONS**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines a collection of **ACTION** elements.
 
    ```
@@ -132,7 +132,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    **DEFAULTREASON**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines the most common cause of a team member changing a work item from one particular state to another particular state.
 
    ```
@@ -152,7 +152,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    **FIELD**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a field for a type of work item and the rules and conditions that will be applied to that field when a team member changes the state of a work item of that type and specifies a reason for the change.
 
    ```
@@ -191,7 +191,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    **FIELDS**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a collection of **FIELD** elements.
 
    ```
@@ -211,7 +211,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    **REASON**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines an additional explanation  for why a team member changed the state of a work item. 
 
    ```
@@ -231,7 +231,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    **REASONS**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    A collection of one **DEFAULTREASON** and optional **REASON** elements that explain why a team member changed the state of a work item.
 
    ```
@@ -251,7 +251,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    **STATE**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Defines a valid state for the work item type. This element can contain a **FIELDS** element, which references rules and conditions that will be applied to a specific field when a team member changes the state of a work item of that type.
 
    ```
@@ -271,7 +271,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    **STATES**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a collection of **STATE** elements that define the valid states to which a user can assign a work item of that type.
 
    ```
@@ -291,7 +291,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    **TRANSITION**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a valid progression or regression from one state to another for work items of a particular type.
 
    ```
@@ -318,7 +318,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    **TRANSITIONS**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies a collection of **TRANSITION** elements.
 
    ```
@@ -338,7 +338,7 @@ For each transition, you specify a set of reasons for changing the state of the 
    **WORKFLOW**
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    Specifies the collection of **STATES** and **TRANSITIONS** container elements that together define the workflow for the type of work item. 
 
    ```
