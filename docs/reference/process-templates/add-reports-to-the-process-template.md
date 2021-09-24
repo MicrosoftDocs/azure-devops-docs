@@ -287,7 +287,7 @@ The following table describes the elements that you use to specify a report to u
    - **name**: The name of a property that you want to specify. For more information, see [View, organize, and configure reports using Report Manager](../../report/admin/view-upload-organize-reporting-services-reports.md).  
    - **value**: The value to assign to the property..
    :::column-end:::
-:::row-end
+:::row-end:::
 
 :::row:::
    :::column span="1":::
