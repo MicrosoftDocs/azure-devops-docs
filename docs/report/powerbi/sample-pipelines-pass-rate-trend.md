@@ -96,65 +96,150 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
-<td>Return pipeline runs for the specified pipeline</td>
-<tr>
-<tr>
-<td><code>and CompletedDate ge {startdate}</code></td>
-<td>Return pipeline runs on or after the specified date</td>
-<tr>
-<tr>
-<td><code>and CanceledCount ne 1</code></td>
-<td>Omit the canceled pipeline runs</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close filter()</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(CompletedOn/Date),</code></td>
-<td>Group by date of completion of pipeline run</td>
-<tr>
-<tr><td><code>aggregate</code></td>
-<td>Start aggregate. For all the pipeline runs matching the above filter criteria:</td>
-<tr>
-<tr><td><code>($count as TotalCount,</code></td>
-<td>Count the total number of runs as TotalCount</td>
-<tr>
-<tr><td><code>SucceededCount with sum as SucceededCount ,</code></td>
-<td>Count the number of successful runs as SucceededCount</td>
-<tr>
-<tr><td><code>FailedCount with sum as FailedCount,</code></td>
-<td>Count the number of failed runs as FailedCount</td>
-<tr>
-<tr><td><code>PartiallySucceededCount with sum as PartiallySucceededCount))</code></td>
-<td>Count the number of partially successful runs as PartiallySucceededCount. Close aggregate() and groupby()</td>
-<tr>
-<tr><td><code>/compute(</code></td>
-<td>Start of compute()</td>
-<tr>
-<tr><td><code>SucceededCount mul 100.0 div TotalCount as PassRate,</code></td>
-<td>Calculate PassRate for each day by dividing number of successful runs by number of total runs</td>
-<tr>
-<tr><td><code>FailedCount mul 100.0 div TotalCount as FailRate,</code></td>
-<td>Calculate FailRate for each day by dividing number of failed runs by number of total runs</td>
-<tr>
-<tr><td><code>PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)</code></td>
-<td>Calculate PartiallySuccessfulRate for each day by dividing number of partially successful runs by number of total runs</td>
-<tr>
-<tr><td><code>&$orderby=CompletedOn/Date asc</code></td>
-<td>Order the result in ascending order based on date of pipeline run</td>
-<tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="3":::
+   Start filter()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelinename}'`
+   :::column-end:::
+   :::column span="3":::
+   Return pipeline runs for the specified pipeline
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and CompletedDate ge {startdate}`
+   :::column-end:::
+   :::column span="3":::
+   Return pipeline runs on or after the specified date
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and CanceledCount ne 1`
+   :::column-end:::
+   :::column span="3":::
+   Omit the canceled pipeline runs
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="3":::
+   Close filter()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="3":::
+   Start groupby()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `(CompletedOn/Date),`
+   :::column-end:::
+   :::column span="3":::
+   Group by date of completion of pipeline run
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `aggregate`
+   :::column-end:::
+   :::column span="3":::
+   Start aggregate. For all the pipeline runs matching the above filter criteria:
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `($count as TotalCount,`
+   :::column-end:::
+   :::column span="3":::
+   Count the total number of runs as TotalCount
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `SucceededCount with sum as SucceededCount ,`
+   :::column-end:::
+   :::column span="3":::
+   Count the number of successful runs as SucceededCount
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `FailedCount with sum as FailedCount,`
+   :::column-end:::
+   :::column span="3":::
+   Count the number of failed runs as FailedCount
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `PartiallySucceededCount with sum as PartiallySucceededCount))`
+   :::column-end:::
+   :::column span="3":::
+   Count the number of partially successful runs as PartiallySucceededCount. Close aggregate() and groupby()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `/compute(`
+   :::column-end:::
+   :::column span="3":::
+   Start of compute()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `SucceededCount mul 100.0 div TotalCount as PassRate,`
+   :::column-end:::
+   :::column span="3":::
+   Calculate PassRate for each day by dividing number of successful runs by number of total runs
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `FailedCount mul 100.0 div TotalCount as FailRate,`
+   :::column-end:::
+   :::column span="3":::
+   Calculate FailRate for each day by dividing number of failed runs by number of total runs
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)`
+   :::column-end:::
+   :::column span="3":::
+   Calculate PartiallySuccessfulRate for each day by dividing number of partially successful runs by number of total runs
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `&$orderby=CompletedOn/Date asc`
+   :::column-end:::
+   :::column span="3":::
+   Order the result in ascending order based on date of pipeline run
+   :::column-end:::
+:::row:::
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
 

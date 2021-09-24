@@ -81,14 +81,39 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Tes
 The following table describes each part of the query.
 
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle}')) </code></td><td>Return data for only selected test plan. You can add multiple plans with a clause like <code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}'))</code>. You can also apply any other filters related to test suites, test configurations here.</td><tr>
-<tr><td><code>/groupby((TestConfiguration/Name, LastResultOutcome),</code></td><td>Grouping the points by the test configuration names and their outcome.</td><tr>
-<tr><td><code>/aggregate($count as Count)</code></td><td>Aggregate data across the filtered test points with having count as <code>Count</code>.</td><tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `filter((TestSuite/TestPlanTitle eq '{testPlanTitle}')) `
+   :::column-end:::
+   :::column span="3":::
+   Return data for only selected test plan. You can add multiple plans with a clause like `filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}'))`. You can also apply any other filters related to test suites, test configurations here.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `/groupby((TestConfiguration/Name, LastResultOutcome),`
+   :::column-end:::
+   :::column span="3":::
+   Grouping the points by the test configuration names and their outcome.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `/aggregate($count as Count)`
+   :::column-end:::
+   :::column span="3":::
+   Aggregate data across the filtered test points with having count as `Count`.
+   :::column-end:::
+:::row:::
+
 
 [!INCLUDE [temp](includes/query-filters-test.md)]
 
@@ -98,7 +123,7 @@ In Power BI, do the following steps.
 
 When finished, you may choose to rename columns. 
 
-1. Expand <code>TestConfiguration</code>
+1. Expand `TestConfiguration`
     - Choose the expand button.
 
         > [!div class="mx-imgBorder"] 
@@ -109,7 +134,7 @@ When finished, you may choose to rename columns.
         > [!div class="mx-imgBorder"] 
 	    > ![Power BI select fields to flatten](media/powerbi-testconfiguration-flatten.png)
 
-    - The table now contains entity field of <code>TestConfiguration.Name</code>.
+    - The table now contains entity field of `TestConfiguration.Name`.
 
         > [!div class="mx-imgBorder"] 
 	    > ![Power BI expanded test configuration](media/powerbi-expanded-testconfiguration.png)

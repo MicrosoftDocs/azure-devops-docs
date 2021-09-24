@@ -86,51 +86,109 @@ $apply=filter(
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
-<td>Return task results for a specific pipeline</td>
-<tr>
-<tr>
-<td><code>and TaskDisplayName eq '{taskname}'</code></td>
-<td>Return task results for a specific task</td>
-<tr>
-<tr>
-<td><code>and PipelineRunCompletedOn/Date ge {startdate}</code></td>
-<td>Return task results for pipeline runs on or after the specified date</td>
-<tr>
-<tr>
-<td><code>and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')</code></td>
-<td>Return task results from only the successful or partially successful pipeline runs</td>
-<tr>
-<td><code>and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)</code></td>
-<td>Omit the pipeline runs that were canceled, skipper or abandoned</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close filter()</td>
-<tr>
-<tr><td><code>/compute(</code></td>
-<td>Start compute()</td>
-<tr>
-<tr><td><code>percentile_cont(ActivityDurationSeconds, 0.8, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds)</code></td>
-<td>For each day, compute the 80th percentile of task durations of all tasks that match the filter criteria</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(TaskDuration80thPercentileInSeconds, PipelineRunCompletedOn/Date))</code></td>
-<td>Group by date of completion of pipeline run and calculated day wise 80th percentile task duration</td>
-<tr>
-<tr><td><code>&$orderby=PipelineRunCompletedOn/Date asc</code></td>
-<td>Order the response by completed date</td>
-<tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="3":::
+   Start filter()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelinename}'`
+   :::column-end:::
+   :::column span="3":::
+   Return task results for a specific pipeline
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and TaskDisplayName eq '{taskname}'`
+   :::column-end:::
+   :::column span="3":::
+   Return task results for a specific task
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and PipelineRunCompletedOn/Date ge {startdate}`
+   :::column-end:::
+   :::column span="3":::
+   Return task results for pipeline runs on or after the specified date
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')`
+   :::column-end:::
+   :::column span="3":::
+   Return task results from only the successful or partially successful pipeline runs
+   :::column-end:::
+:::row:::
+   :::column span="1":::
+   `and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)`
+   :::column-end:::
+   :::column span="3":::
+   Omit the pipeline runs that were canceled, skipper or abandoned
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="3":::
+   Close filter()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `/compute(`
+   :::column-end:::
+   :::column span="3":::
+   Start compute()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `percentile_cont(ActivityDurationSeconds, 0.8, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds)`
+   :::column-end:::
+   :::column span="3":::
+   For each day, compute the 80th percentile of task durations of all tasks that match the filter criteria
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="3":::
+   Start groupby()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `(TaskDuration80thPercentileInSeconds, PipelineRunCompletedOn/Date))`
+   :::column-end:::
+   :::column span="3":::
+   Group by date of completion of pipeline run and calculated day wise 80th percentile task duration
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `&$orderby=PipelineRunCompletedOn/Date asc`
+   :::column-end:::
+   :::column span="3":::
+   Order the response by completed date
+   :::column-end:::
+:::row:::
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
