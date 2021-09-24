@@ -116,18 +116,18 @@ To modify the pick list for most string or integer fields within a work item for
    ![Custom pick list](media/custom-pick-list.png)
    :::column-end:::
    :::column span="2":::
-   >```
-   ><FIELD name="Resolution" refname="MyCompany.Resolution" type="String">    
-   ><ALLOWEDVALUES>
-   >   <LISTITEM value="By Design" />
-   >   <LISTITEM value="Duplicate" />
-   >   <LISTITEM value="External" />
-   >   <LISTITEM value="Fixed" />
-   >   <LISTITEM value="Not Repro" />
-   >   <LISTITEM value="Postponed" />
-   >   <LISTITEM value="Won't Fix" />
-   ></ALLOWEDVALUES>
-   ></FIELD>
+   ```
+   <FIELD name="Resolution" refname="MyCompany.Resolution" type="String">    
+   <ALLOWEDVALUES>
+      <LISTITEM value="By Design" />
+      <LISTITEM value="Duplicate" />
+      <LISTITEM value="External" />
+      <LISTITEM value="Fixed" />
+      <LISTITEM value="Not Repro" />
+      <LISTITEM value="Postponed" />
+      <LISTITEM value="Won't Fix" />
+   </ALLOWEDVALUES>
+   </FIELD>
    ```
    :::column-end:::
 :::row-end:::
