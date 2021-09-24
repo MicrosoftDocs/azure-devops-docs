@@ -116,18 +116,18 @@ To modify the pick list for most string or integer fields within a work item for
    ![Custom pick list](media/custom-pick-list.png)
    :::column-end:::
    :::column span="2":::
-   ```
-&nbsp;&nbsp;&nbsp;<FIELD&nbsp;name="Resolution"&nbsp;refname="MyCompany.Resolution"&nbsp;type="String">&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;<ALLOWEDVALUES>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="By&nbsp;Design"&nbsp;/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="Duplicate"&nbsp;/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="External"&nbsp;/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="Fixed"&nbsp;/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="Not&nbsp;Repro"&nbsp;/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="Postponed"&nbsp;/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<LISTITEM&nbsp;value="Won't&nbsp;Fix"&nbsp;/>
-&nbsp;&nbsp;&nbsp;</ALLOWEDVALUES>
-&nbsp;&nbsp;&nbsp;</FIELD>
+   >```
+   ><FIELD name="Resolution" refname="MyCompany.Resolution" type="String">    
+   ><ALLOWEDVALUES>
+   >   <LISTITEM value="By Design" />
+   >   <LISTITEM value="Duplicate" />
+   >   <LISTITEM value="External" />
+   >   <LISTITEM value="Fixed" />
+   >   <LISTITEM value="Not Repro" />
+   >   <LISTITEM value="Postponed" />
+   >   <LISTITEM value="Won't Fix" />
+   ></ALLOWEDVALUES>
+   ></FIELD>
    ```
    :::column-end:::
 :::row-end:::
