@@ -137,21 +137,21 @@ Repeat for all the rollup columns.
 Power BI shows you the fields you can report on. 
 
 > [!NOTE]   
-> The example below assumes that no one renamed any columns. 
+> The example below assumes that columns are renamed as indicated in the corresponding images. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards - Rollup - Fields](media/odatapowerbi-featurerollup-fields.png)
+> ![Rollup Fields.](media/odatapowerbi-featurerollup-fields.png)
 
 For a simple report, do the following steps:
 
 1. Choose the Power BI Visualization **Table**. 
 1. Add the following fields to **Values**
-    - WorkItemId
-    - WorkItemType
-    - Title
-    - State
-    - Descendants.CountOfUserStories
-    - Descendants.TotalStoryPoints
+    - **WorkItemId**, choose **Don't summarize** to show ID
+    - **WorkItemType**
+    - **Title**
+    - **State**
+    - **Count of User Stories**
+    - **Total Story Points**
 
 The example report displays:
 

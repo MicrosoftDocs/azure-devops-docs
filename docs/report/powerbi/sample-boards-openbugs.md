@@ -18,7 +18,7 @@ ms.date: 09/21/2021
 This article shows you how to display, for a given set of open Bugs, a breakdown by State and Assigned To fields. An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Open Bugs - Report](media/odatapowerbi-openbugs-report.png)
+> ![Open Bugs sample matrix report](media/odatapowerbi-openbugs-report.png)
 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
