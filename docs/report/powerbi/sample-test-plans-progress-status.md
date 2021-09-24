@@ -121,15 +121,47 @@ $apply=filter(
 The following table describes each part of the query.
 
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle}')) </code></td><td>Return data for only selected test plan. You can add multiple plans with a clause like <code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}'))</code>. You can also apply any other filters related to test suites, test configurations here.</td><tr>
-<tr><td><code>/aggregate($count as TotalCount,</code></td><td>Aggregate data across the filtered test points with having count as <code>TotalCount</code>.</td><tr>
-<tr><td><code>cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed</code></td><td>While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as '<code>Passed</code>' metric.</td><tr>
-<tr><td><code>/compute(Executed mul 100 div TotalCount as ExecPct</code>.</td><td>Provide a computed metric <code>ExecPct</code> which is equal to (Executed test points / Total count * 100).</td><tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `filter((TestSuite/TestPlanTitle eq '{testPlanTitle}')) `
+   :::column-end:::
+   :::column span="3":::
+   Return data for only selected test plan. You can add multiple plans with a clause like `filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}'))`. You can also apply any other filters related to test suites, test configurations here.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `/aggregate($count as TotalCount,`
+   :::column-end:::
+   :::column span="3":::
+   Aggregate data across the filtered test points with having count as `TotalCount`.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed`
+   :::column-end:::
+   :::column span="3":::
+   While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as '`Passed`' metric.
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `/compute(Executed mul 100 div TotalCount as ExecPct`.
+   :::column-end:::
+   :::column span="3":::
+   Provide a computed metric `ExecPct` which is equal to (Executed test points / Total count * 100).
+   :::column-end:::
+:::row:::
+
 
 [!INCLUDE [temp](includes/query-filters-test.md)]
 

@@ -97,54 +97,127 @@ Each query contains the following strings that you must substitute with your val
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>Pipeline/PipelineName eq '{pipelineName}'</code></td>
-<td>Return test runs for the specified pipeline</td>
-<tr>
-<tr><td><code>And Date/Date ge {startdate}</code></td>
-<td>Return test runs on or after the specified date</td>
-<tr>
-<tr><td><code>and Workflow eq 'Build'</code></td>
-<td>Return test runs for 'Build' workflow</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close filter()</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(TestSK, Test/TestName, Date/Date),</code></td>
-<td>Group by the test Name and date of execution of test</td>
-<tr>
-<tr><td><code>aggregate(</code></td>
-<td>Start aggregate. For all the test runs matching the above filter criteria:</td>
-<tr>
-<tr><td><code>ResultCount with sum as TotalCount,</code></td>
-<td>Count the total number of test runs as TotalCount</td>
-<tr>
-<tr><td><code>ResultDurationSeconds with sum as TotalDuration</code></td>
-<td>Sum the total duration of all the runs as TotalDuration</td>
-<tr>
-<tr><td><code>))</code></td>
-<td>Close aggregate() and groupby()</td>
-<tr>
-<tr><td><code>/compute(</code></td>
-<td>Start compute()</td>
-<tr>
-<tr><td><code>TotalDuration div TotalCount as AvgDuration</code></td>
-<td>For all the tests, we already have total number of runs and total duration. Calculate average duration by diving total duration by total number of runs</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close compute()</td>
-<tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="3":::
+   Start filter()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelineName}'`
+   :::column-end:::
+   :::column span="3":::
+   Return test runs for the specified pipeline
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `And Date/Date ge {startdate}`
+   :::column-end:::
+   :::column span="3":::
+   Return test runs on or after the specified date
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `and Workflow eq 'Build'`
+   :::column-end:::
+   :::column span="3":::
+   Return test runs for 'Build' workflow
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="3":::
+   Close filter()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="3":::
+   Start groupby()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `(TestSK, Test/TestName, Date/Date),`
+   :::column-end:::
+   :::column span="3":::
+   Group by the test Name and date of execution of test
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `aggregate(`
+   :::column-end:::
+   :::column span="3":::
+   Start aggregate. For all the test runs matching the above filter criteria:
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `ResultCount with sum as TotalCount,`
+   :::column-end:::
+   :::column span="3":::
+   Count the total number of test runs as TotalCount
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `ResultDurationSeconds with sum as TotalDuration`
+   :::column-end:::
+   :::column span="3":::
+   Sum the total duration of all the runs as TotalDuration
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `))`
+   :::column-end:::
+   :::column span="3":::
+   Close aggregate() and groupby()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `/compute(`
+   :::column-end:::
+   :::column span="3":::
+   Start compute()
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `TotalDuration div TotalCount as AvgDuration`
+   :::column-end:::
+   :::column span="3":::
+   For all the tests, we already have total number of runs and total duration. Calculate average duration by diving total duration by total number of runs
+   :::column-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="3":::
+   Close compute()
+   :::column-end:::
+:::row:::
+
 
 [!INCLUDE [temp](includes/query-filters-test.md)]
 
