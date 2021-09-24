@@ -97,7 +97,8 @@ The following table describes each part of the query.
    :::column-end:::
    :::column span="1":::
    Return User Stories.
-   :::column-end:::/:::row:::
+   :::column-end:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and State ne 'Closed'`
@@ -129,7 +130,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Expand Assigned To, Iteration, Area entities and select entity fields.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `Links(`
@@ -137,7 +138,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Expand the Links entity
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$filter=LinkTypeName eq 'Related'`
@@ -145,7 +146,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Filter to only links of type 'Related'. <br>Other examples are Parent, Child, Duplicate, Duplicate Of, Affects, Affected By.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and TargetWorkItem/WorkItemType eq 'User Story';`
@@ -153,7 +154,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Only include links to User Stories.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$select=LinkTypeName;`
