@@ -49,7 +49,7 @@ sections:
       - question: Can I create a dashboard with information that spans two or more projects? 
         answer: | 
           ::: moniker range=">= azure-devops-2020"
-          **Yes**. Project dashboards allow you to add widgets for any project and any team. To learn more, see [Add, rename, and delete dashboards, Add a dashboard](../report/dashboards/dashboards.md#add-a-dashboard). 
+          **Sometimes**.  Dashboards allow you to add widgets. Certain widgets are able to gather information from multiple projects. To learn more, see [Add, rename, and delete dashboards, Add a dashboard](../report/dashboards/dashboards.md#add-a-dashboard).  There is also an [open issue](https://developercommunity.visualstudio.com/t/single-dashboard-for-multiple-projects/365500) with additional information regarding this functionality.
           ::: moniker-end
 
           ::: moniker range="< azure-devops-2020"
