@@ -181,9 +181,9 @@ You can combine attributes across several dimensions to filter the set of work i
   For example, work item fields appear under the Work Item dimension, as the following illustration shows. The Linked Work Item and Test Case dimensions have similar structures.  
   
 :::row:::
-   :::column span="3":::
+   :::column span="1":::
    
-   For information about each field, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). Only fields that have `reportable=&quot;Dimension&quot;` appear under the associated dimensions. Additional attributes appear when custom fields in the definitions of types of work items specify `Dimension` as the reportable attribute. For more information about how to use the `reportable` attribute, which is optional, and its values, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).<br /><br /> For information about how to work with date hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).
+   For information about each field, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). Only fields that have `reportable"Dimension"` appear under the associated dimensions. Additional attributes appear when custom fields in the definitions of types of work items specify `Dimension` as the reportable attribute. For more information about how to use the `reportable` attribute, which is optional, and its values, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).<br /><br /> For information about how to work with date hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).
    :::column-end:::
    :::column span="1":::
    
@@ -196,8 +196,7 @@ You can combine attributes across several dimensions to filter the set of work i
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|Area|Contains a 14-level hierarchy, as the following illustration shows, which correlates the measures in the cube according to the area classifications with which they are associated. You can use this parent-child hierarchy to summarize or filter measures according to their level within the area hierarchy.
-![Area Hierarchy Dimension](media/alm_rpt_area_hierarchy.png "ALM_RPT_Area_Hierarchy")<br /><br /> For more information, see [Create and Modify Areas and Iterations](../../organizations/settings/set-area-paths.md).|  
+|Area|Contains a 14-level hierarchy, as the following illustration shows, which correlates the measures in the cube according to the area classifications with which they are associated. You can use this parent-child hierarchy to summarize or filter measures according to their level within the area hierarchy.<br/>![Area Hierarchy Dimension](media/alm_rpt_area_hierarchy.png "ALM_RPT_Area_Hierarchy")<br /><br /> For more information, see [Create and Modify Areas and Iterations](../../organizations/settings/set-area-paths.md).|  
 |Area Path|Flat list of the area paths for all team projects.|  
 |Changed Date|Flat list of dates that you can use to filter the set of work items based on the dates on which the team modified the items.|  
 |Changed Date Hierarchy by Month|Hierarchical tree that supports filtering and reporting on the set of work items based on the months in which the team modified the items. For example, you can use the Changed Date Hierarchy by Month or by Week, as the following illustration shows, to filter or create a trend report based on the changed date. For more information about how to work with date hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).<br /><br /> ![Changed Date Hierarchy](media/alm_rpt_changeddate_hierarchy.png "ALM_RPT_ChangedDate_Hierarchy")|  

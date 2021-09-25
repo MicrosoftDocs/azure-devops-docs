@@ -125,7 +125,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Query part**
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -133,7 +133,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `filter((TestSuite/TestPlanTitle eq '{testPlanTitle}')) `
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Return data for only selected test plan. You can add multiple plans with a clause like `filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}'))`. You can also apply any other filters related to test suites, test configurations here.
    :::column-end:::
 :::row-end:::
@@ -141,7 +141,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/aggregate($count as TotalCount,`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Aggregate data across the filtered test points with having count as `TotalCount`.
    :::column-end:::
 :::row-end:::
@@ -149,7 +149,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as '`Passed`' metric.
    :::column-end:::
 :::row-end:::
@@ -157,7 +157,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/compute(Executed mul 100 div TotalCount as ExecPct`.
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Provide a computed metric `ExecPct` which is equal to (Executed test points / Total count * 100).
    :::column-end:::
 :::row-end:::

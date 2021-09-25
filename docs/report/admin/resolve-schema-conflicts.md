@@ -68,16 +68,16 @@ The following table provides examples of attribute assignments that will cause s
 
 :::row:::
    :::column span="1":::
-   Attribute
+   **Attribute**
    :::column-end:::
    :::column span="1":::
-   Project Collection 1
+   **Project Collection 1**
    :::column-end:::
    :::column span="1":::
-   Project Collection 2
+   **Project Collection 2**
    :::column-end:::
    :::column span="2":::
-   Schema conflict
+   **Schema conflict**
    :::column-end:::
 :::row-end:::
 :::row:::

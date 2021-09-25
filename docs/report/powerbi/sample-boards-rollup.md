@@ -83,7 +83,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Query part**
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -91,7 +91,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `$filter=WorkItemType eq 'Feature'`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Return Features.
    :::column-end:::
 :::row-end:::
@@ -99,7 +99,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and State ne 'Cut'`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Omit Closed bugs.
    :::column-end:::
 :::row-end:::
@@ -107,7 +107,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
    
    To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
@@ -117,7 +117,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and Descendants/any()`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Include all Features, even those with no User Stories. Replace with "any(d:d/WorkItemType eq 'User Story')" to omit Features that don't have child User Stories.
    :::column-end:::
 :::row-end:::
@@ -125,7 +125,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `&$select=WorkItemId, Title, WorkItemType, State`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Select fields to return.
    :::column-end:::
 :::row-end:::
@@ -133,7 +133,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `&$expand=AssignedTo($select=UserName), Iteration($select=IterationPath), Area($select=AreaPath),`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Expand Assigned To, Iteration, Area entities and select entity fields.
    :::column-end:::
 :::row-end:::
@@ -141,7 +141,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `Descendants(`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Expand Descendants.
    :::column-end:::
 :::row-end:::
@@ -149,7 +149,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `$apply=filter(WorkItemType eq 'User Story')`</code>
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Filters the descendants. Only include User Stories (omits Tasks and Bugs).
    :::column-end:::
 :::row-end:::
@@ -157,7 +157,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/aggregate($count as CountOfUserStories, StoryPoints with sum as TotalStoryPoints)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    For all Descendants matching the filter clause above, count them, and sum the StoryPoints field.
    :::column-end:::
 :::row-end:::
@@ -165,7 +165,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Close Descendants().
    :::column-end:::
 :::row-end:::

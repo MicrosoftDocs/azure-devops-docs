@@ -116,7 +116,7 @@ The following table describes each part of the query.
    :::column span="3":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `$apply=filter(`
@@ -124,7 +124,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `Pipeline/PipelineName eq '{pipelineName}'`
@@ -132,7 +132,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return test runs for the specified pipeline
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and CompletedOn/Date ge {startdate}`
@@ -140,7 +140,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return test runs on or after the specified date
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and Workflow eq 'Build'`
@@ -148,7 +148,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Return test runs for 'Build' workflow
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -156,7 +156,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close filter()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/groupby(`
@@ -164,7 +164,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `(TestSK, Test/TestName),`
@@ -172,7 +172,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Group by the test Name
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `aggregate(`
@@ -180,7 +180,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start aggregate. For all the test runs matching the above filter criteria:
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `ResultCount with sum as TotalCount,`
@@ -188,7 +188,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of test runs as TotalCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `ResultPassCount with sum as PassedCount,`
@@ -196,7 +196,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of passed test runs as PassedCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `ResultFailCount with sum as FailedCount,`
@@ -204,7 +204,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of failed test runs as FailedCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `ResultNotExecutedCount with sum as NotExecutedCount`
@@ -212,7 +212,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of not executed test runs as NotExecutedCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `ResultNotImpactedCount with sum as NotImpactedCount,`
@@ -220,7 +220,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of not impacted test runs as NotImpactedCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `ResultFlakyCount with sum as FlakyCount`
@@ -228,7 +228,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Count the total number of flaky test runs as FlakyCount
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `))`
@@ -236,7 +236,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close aggregate() and groupby()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `/compute(`
@@ -244,7 +244,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Start compute()
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast(TotalCount sub NotExecutedCount, Edm.Decimal)) mul 100, 0) as PassRate`
@@ -252,7 +252,7 @@ The following table describes each part of the query.
    :::column span="3":::
    For all the tests, calculate Pass rate
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `)`
@@ -260,7 +260,7 @@ The following table describes each part of the query.
    :::column span="3":::
    Close compute()
    :::column-end:::
-:::row:::
+:::row-end:::
 
 ## Power BI transforms
 
