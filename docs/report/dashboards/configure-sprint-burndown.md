@@ -129,7 +129,7 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
    The actual graph, the blue area, represents the total amount of planned sprint work and how it changes throughout the course of the sprint. The blue area corresponds to the sum of all Remaining Work set for all sprint tasks, and possibly bugs, that have the current sprint as their iteration path.  
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    ![Healthy sprint burndown chart](media/burndown/ALM_SB_IntroHealthyChart.png)
    :::column-end:::

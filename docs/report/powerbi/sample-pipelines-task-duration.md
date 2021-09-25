@@ -92,7 +92,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Query part**
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -100,7 +100,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `$apply=filter(`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Start filter()
    :::column-end:::
 :::row-end:::
@@ -108,7 +108,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `Pipeline/PipelineName eq '{pipelinename}'`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Return pipeline runs for the specified pipeline
    :::column-end:::
 :::row-end:::
@@ -116,7 +116,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and PipelineRunCompletedOn/Date ge {startdate}`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Return task results for pipeline runs on or after the specified date
    :::column-end:::
 :::row-end:::
@@ -124,14 +124,15 @@ The following table describes each part of the query.
    :::column span="1":::
    `and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Return task results from only the successful or partially successful pipeline runs
    :::column-end:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Omit the pipeline runs that were canceled, skipper or abandoned
    :::column-end:::
 :::row-end:::
@@ -139,7 +140,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Close filter()
    :::column-end:::
 :::row-end:::
@@ -147,7 +148,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/compute(`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Start compute()
    :::column-end:::
 :::row-end:::
@@ -155,7 +156,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `percentile_cont(ActivityDurationSeconds, 0.5, TaskDisplayName) as TaskDuration50thPercentileInSeconds,`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    For each task, compute the 50th percentile of task durations of all tasks that match the filter criteria
    :::column-end:::
 :::row-end:::
@@ -163,7 +164,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `percentile_cont(ActivityDurationSeconds, 0.8, TaskDisplayName) as TaskDuration80thPercentileInSeconds,`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    For each task, compute the 80th percentile of task durations of all tasks that match the filter criteria
    :::column-end:::
 :::row-end:::
@@ -171,7 +172,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `percentile_cont(ActivityDurationSeconds, 0.95, TaskDisplayName) as TaskDuration95thPercentileInSeconds)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    For each task, compute the 95th percentile of task durations of all tasks that match the filter criteria
    :::column-end:::
 :::row-end:::
@@ -179,7 +180,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/groupby(`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Start groupby()
    :::column-end:::
 :::row-end:::
@@ -187,7 +188,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `(TaskDuration50thPercentileInSeconds, TaskDuration80thPercentileInSeconds,TaskDuration95thPercentileInSeconds, TaskDisplayName))`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Group by task of pipeline run and calculated day wise 50th percentile task duration, 80th percentile task duration and 95th percentile task duration
    :::column-end:::
 :::row-end:::
@@ -195,7 +196,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `&$orderby=TaskDuration50thPercentileInSeconds desc`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Order the response by task having highest 50th percentile duration
    :::column-end:::
 :::row-end:::
