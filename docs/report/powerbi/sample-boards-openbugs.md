@@ -18,7 +18,7 @@ ms.date: 09/21/2021
 This article shows you how to display, for a given set of open Bugs, a breakdown by State and Assigned To fields. An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Open Bugs - Report](media/odatapowerbi-openbugs-report.png)
+> ![Open Bugs sample matrix report](media/reports-boards/open-bugs-report.png)
 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
@@ -139,7 +139,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Open Bugs - Fields](media/odatapowerbi-openbugs-fields.png)
+> ![Sample - Boards Open Bugs - Fields](media/reports-boards/open-bugs-fields.png)
 
 For a simple report, do the following steps:
 
@@ -152,7 +152,7 @@ For a simple report, do the following steps:
 The example report displays. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Open Bugs - Report](media/odatapowerbi-openbugs-report.png)
+> ![Sample - Boards Open Bugs - Report](media/reports-boards/open-bugs-report.png)
 
 [!INCLUDE [temp](includes/sample-multipleteams.md)]
 
