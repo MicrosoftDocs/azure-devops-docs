@@ -83,6 +83,7 @@ Project management reports provide insight into how much work the team is tackli
    1. [Update Remaining Work for tasks](../../boards/sprints/task-board.md). For Agile and CMMI team projects, update **Completed Work** as well.
       > [!Tip]  
       > The only report that references **Original Estimate** is [Status on All Iterations](../sql-reports/status-on-all-iterations-report.md).
+
    1. Create test cases and bugs, link them to their parent backlog item, and update their **State**.
    1. (Optional) Assign work items to areas to filter reports.
 
@@ -123,9 +124,9 @@ Test planning reports support monitoring the test progress and coverage of backl
    **Test planning and bug tracking activities**
 
    1. Define test plans and test cases, and update their **State** as work progresses.
-   2. [Mark the results of each validation step in manual tests](../../test/run-manual-tests.md) as either passed or failed.
-   3. **Create bugs**, specify the **Priority** and **Severity**, assign to a team member, and update the **State**.
-   4. (Optional) Assign test cases and bugs to areas and iterations to filter reports.
+   1. [Mark the results of each validation step in manual tests](../../test/run-manual-tests.md) as either passed or failed.
+   1. **Create bugs**, specify the **Priority** and **Severity**, assign to a team member, and update the **State**.
+   1. (Optional) Assign test cases and bugs to areas and iterations to filter reports.
 
    :::column-end:::
    :::column span="1":::
