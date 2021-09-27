@@ -71,47 +71,63 @@ You use the query editor to add the **History** field to a [query clause](using-
 
 You can filter for work items by the date on which they were changed or for a specific time period. If you limit the scope of your query, it can help with performance by only returning those results that fit the date range that you want to include. 
 
-<table width="100%">
-<tbody valign="top">
-<tr>
-<th width="50%">Filter for</th>
-<th width="50%">Include these query clauses</th>
-</tr>
-<tr>
-<td>Items whose History field contains the word &quot;reproducible&quot;<br/></td>
-<td>
-<code>History <em> Contains Words </em> reproducible</code><br/></td>
-</tr>
-<tr>
-<td>Items whose History field doesn&#39;t contain the word &quot;beta&quot;
-</td>
-<td>
-<code>History <em> Does Not Contain Words </em> beta</code>
-</td>
-</tr>
-<tr>
-<td>
-Items that contain the phrase &quot;stack traces&quot; and were closed but reactivated
-</td>
-<td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>History <em> Contains Words </em> stack traces</code><br/><code>And <em> State </em> Was Ever <em> Closed</code><br/><code>And </em> State <em> &lt;&gt; </em>  Closed</code><br/></td>
-</tr>
-<tr>
-<td>
-Items closed within a specified time period
-</td>
-<td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>State <em> = </em> Done</code><br/><code>And <em> Closed Date </em> &gt; <em> 7/1/2015</code><br/><code>And </em> Closed Date <em> &lt;= </em> 7/21/2015</code><br/></td>
-</tr>
-<tr>
-<td>
-Items I&#39;ve been associated with 
-</td>
-<td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>History <em> Contains Words </em> MyName</code><br/><code>Or <em> Assigned To </em> Was Ever _ <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code><br/></td>
-</tr>
-</tbody>
-</table>  
+:::row:::
+   :::column span="1":::
+   Filter for
+   :::column-end:::
+   :::column span="3":::
+   Include these query clauses
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Items whose History field contains the word &quot;reproducible&quot;  
+   :::column-end:::
+   :::column span="3":::
+   
+   `History * Contains Words * reproducible`  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Items whose History field doesn&#39;t contain the word &quot;beta&quot;
+   :::column-end:::
+   :::column span="3":::
+   
+   `History * Does Not Contain Words * beta`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   Items that contain the phrase &quot;stack traces&quot; and were closed but reactivated
+   :::column-end:::
+   :::column span="3":::
+   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`History * Contains Words * stack traces`  `And * State * Was Ever * Closed`  `And * State * <> *  Closed`  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   Items closed within a specified time period
+   :::column-end:::
+   :::column span="3":::
+   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`State * = * Done`  `And * Closed Date * > * 7/1/2015`  `And * Closed Date * <= * 7/21/2015`  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   Items I&#39;ve been associated with 
+   :::column-end:::
+   :::column span="3":::
+   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`History * Contains Words * MyName`  `Or * Assigned To * Was Ever _ <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`  
+   :::column-end:::
+:::row-end:::
+  
 
 ### Tips for using the query editor
 
@@ -177,132 +193,219 @@ To view only the comments that were added to the log, choose the **Discussion On
 You can use the following fields to filter queries and create reports. Several of these fields are populated with information as a work item progresses from one state to another. Other fields update when the work item is modified. Some fields don't appear on the work item form, but they are tracked for the WITs listed.  
 
 
-<table width="100%">
-<tbody valign="top">
-<tr>
-  <th width="25%">Field name</th>
-  <th width="50%">Description</th>
-  <th width="25%">Work item type</th>
-</tr>
+:::row:::
+     :::column span="1":::
+   Field name
+   :::column-end:::
+     :::column span="1":::
+   Description
+   :::column-end:::
+     :::column span="1":::
+   Work item type
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td>
-<p>Changed By</p>
-</td>
-<td>
-The name of the team member who modified the work item most recently.
-    <p>Reference name=System.ChangedBy, Data type=String</p>
-</td>
-<td>All</td>
-</tr>
-<tr>
-  <td>
-    <p>Change Date</p>
-  </td>
-  <td>
-    <p>The date and time when a work item was modified.</p>
-    <p>Reference name=System.ChangedDate, Data type=DateTime</p>
-  </td>
-<td>All</td>
-</tr>
-<tr>
-  <td>
-    <p>Closed Date <sup>1</sup> </p>
-  </td>
-  <td>
-    <p>The date and time when a work item was closed.</p>
-    <p>Reference name=Microsoft.VSTS.Common.ClosedDate, Data type=DateTime</p>
-  </td>
-<td>All</td>
-</tr>
-<tr>
-  <td>
-    <p>Created Date</p>
-  </td>
-  <td>
-    <p>The date and time when a work item was created.</p> 
-    <p>Reference name=System.CreatedDate, Data type=DateTime</p>
-  </td>
-<td>All</td>
-</tr>
-<tr>
-<td>History</td>
-<td>
-The record of changes that were made to the work item after it was created. Every time that the work item is updated, information is appended to the history, which specifies the date of the change, who made the changes, and which fields were changed. 
-<blockquote>History field queries return work items whose Discussion comments or Description fields contain words that match the keywords entered. You can't use the History field to query on changes made to other fields. </blockquote> 
-<p>You can't add formatted text to the history field. Once you&#39;ve saved the work item, you can't alter the history. </p>
-<p>The <code>History</code> field, along with the <code>Description</code>, <code>Steps to Repro</code> and <code>Title</code> fields are automatically indexed for full-text search as described in <a href="query-operators-variables.md" data-raw-source="[Query fields, operators, and macros](query-operators-variables.md)">Query fields, operators, and macros</a>. </p>
-<p>Reference name=System.History, Data type=History</p>
-</td>
-<td>
-All
-</td>
-</tr>
-<tr>
-  <td>
-    <p>Resolved Date <sup>1</sup> </p>
-  </td>
-  <td>
-    <p>The date and time when the work item was moved into a Resolved state. </p>
-    <p>Reference name=Microsoft.VSTS.Common.ResolvedDate, Data type=DateTime</p>
-  </td>
-  <td>Bug (Agile, CMMI) 
-  </td>
-</tr>
+:::row:::
+   :::column span="1":::
+   
+   Changed By
 
-<tr>
-<td>
-<p>Rev</p>
-</td>
-<td>
-<p>A number that is assigned to the historical revision of a work item. </p>
-    <p>Reference name=System.Rev, Data type=Integer</p>
-</td>
-<td>All</td>
-</tr>
+   :::column-end:::
+   :::column span="3":::
+   
+   The name of the team member who modified the work item most recently.
+
+   Reference name=System.ChangedBy, Data type=String
+
+   :::column-end:::
+   :::column span="3":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Change Date
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   The date and time when a work item was modified.
+
+   Reference name=System.ChangedDate, Data type=DateTime
+
+  
+   :::column-end:::
+   :::column span="3":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Closed Date <sup>1</sup> 
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   The date and time when a work item was closed.
+
+   Reference name=Microsoft.VSTS.Common.ClosedDate, Data type=DateTime
+
+  
+   :::column-end:::
+   :::column span="3":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Created Date
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   The date and time when a work item was created.
+ 
+   Reference name=System.CreatedDate, Data type=DateTime
+
+  
+   :::column-end:::
+   :::column span="3":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   History
+   :::column-end:::
+   :::column span="3":::
+   
+   The record of changes that were made to the work item after it was created. Every time that the work item is updated, information is appended to the history, which specifies the date of the change, who made the changes, and which fields were changed. 
+   
+   > History field queries return work items whose Discussion comments or Description fields contain words that match the keywords entered. You can't use the History field to query on changes made to other fields. 
+ 
+   You can't add formatted text to the history field. Once you&#39;ve saved the work item, you can't alter the history. 
+
+   The `History` field, along with the `Description`, `Steps to Repro` and `Title` fields are automatically indexed for full-text search as described in [Query fields, operators, and macros](query-operators-variables.md). 
+
+   Reference name=System.History, Data type=History
+
+   :::column-end:::
+   :::column span="3":::
+   
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Resolved Date <sup>1</sup> 
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   The date and time when the work item was moved into a Resolved state. 
+
+   Reference name=Microsoft.VSTS.Common.ResolvedDate, Data type=DateTime
+
+  
+   :::column-end:::
+     :::column span="1":::
+   Bug (Agile, CMMI) 
+  
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   
+   Rev
+
+   :::column-end:::
+   :::column span="3":::
+   
+   A number that is assigned to the historical revision of a work item. 
+
+   Reference name=System.Rev, Data type=Integer
+
+   :::column-end:::
+   :::column span="3":::
+   All
+   :::column-end:::
+:::row-end:::
 
 
-<tr>
-  <td>
-    <p>State Change Date</p>
-  </td>
-  <td>
-    <p>The date and time when the value of the State field changed.</p>
-    <p>Reference name=Microsoft.VSTS.Common.StateChangeDate, Data type=DateTime</p>
-  </td>
-<td>All</td>
-</tr>
+:::row:::
+     :::column span="1":::
+   
+   State Change Date
 
-<tr>
-  <td>
-<a id="test-suite-audit"/>Test Suite Audit
-  </td>
-  <td>
-    <p>Tracks additional operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.</p>
-    <p>Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText</p>
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   The date and time when the value of the State field changed.
 
-  </td>
-  <td>
-Test Suite
-  </td>
-</tr>
+   Reference name=Microsoft.VSTS.Common.StateChangeDate, Data type=DateTime
 
-<tr>
-  <td>
-<a id="watermark"/>Watermark
-  </td>
-  <td>
-    <p>A system managed field (not editable) that increments with changes made to a work item.</p>
-    <p>Reference name=System.Watermark, Data type=Integer</p>
+  
+   :::column-end:::
+   :::column span="3":::
+   All
+   :::column-end:::
+:::row-end:::
 
-  </td>
-  <td>
-All
-  </td>
-</tr>
+:::row:::
+     :::column span="1":::
+   
+   <a id="test-suite-audit"/>Test Suite Audit
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   Tracks additional operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.
 
-</tbody>
-</table>
+   Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText
+
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   Test Suite
+  
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+     :::column span="1":::
+   
+   <a id="watermark"/>Watermark
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   A system managed field (not editable) that increments with changes made to a work item.
+
+   Reference name=System.Watermark, Data type=Integer
+
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   All
+  
+   :::column-end:::
+:::row-end:::
+
+
 
 #### Notes: 
 1. For these fields to be defined for a WIT, they must be included in the ```WORKFLOW``` section of the WIT definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a Resolved state:  

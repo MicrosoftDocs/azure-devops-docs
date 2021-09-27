@@ -138,48 +138,63 @@ You can upload, download, and delete process templates for a project collection.
  
 3. Select the process template that you want to work with and then choose from the following actions.  
 
-   <table>
-   <tbody valign="top">
-   <tr>
-   <td width="15%">
-   <strong>Upload</strong>
-   </td>
-   <td>To upload a process template.<br/>
-   <p>In the <strong>Upload Process Template</strong> dialog box, choose the folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also <a href="#restrictions" data-raw-source="[Process template restrictions and validation checks](#restrictions)">Process template restrictions and validation checks</a>.</p>
-   </td>
-   </tr>
+         :::row:::
+      :::column span="1":::
+   
+   **Upload**
+   
+   :::column-end:::
+      :::column span="1":::
+   To upload a process template.<br/>
+   In the **Upload Process Template** dialog box, choose the folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions).
+
+   
+   :::column-end:::
+   :::row-end:::
 	
-   <tr>
-   <td>
-   <strong>Download</strong>
-   </td>
-   <td>To download the process template to a local computer.<br/>
-   <p>In the <strong>Download Process Template</strong> dialog box, select a folder where the process template will be downloaded.</p>
-   <p>If you&#39;re downloading a process template to use to <a href="/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade" data-raw-source="[configure new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)">configure new features</a>, <a href="/previous-versions/azure/devops/reference/upgrade/add-features-manually" data-raw-source="[manually add new features](/previous-versions/azure/devops/reference/upgrade/add-features-manually)">manually add new features</a> or <a href="/previous-versions/azure/devops/reference/upgrade/additional-configuration-options" data-raw-source="[update a custom process template to enable new features](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options)">update a custom process template to enable new features</a>--choose the process that corresponds to the one you used previously to create your project. For example, if you&#39;re updating a project based on the Scrum process template, then select <strong>Scrum</strong>. Note that all version numbers have been removed from the process templates. If you don&#39;t see Agile, CMMI, or Scrum, then you need to <a href="https://visualstudio.microsoft.com/downloads/download-visual-studio-vs" data-raw-source="[update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs)">update TFS</a>. </p>
-   <p>You can determine which process template to select based on the <a href="#wit_correlation" data-raw-source="[work item types defined for your existing project](#wit_correlation)">work item types defined for your existing project</a>.</p>
-   </td>
-   </tr>
+   :::row:::
+      :::column span="1":::
+   
+   **Download**
+   
+   :::column-end:::
+      :::column span="1":::
+   To download the process template to a local computer.<br/>
+   In the **Download Process Template** dialog box, select a folder where the process template will be downloaded.
+
+   If you&#39;re downloading a process template to use to [configure new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade), [manually add new features](/previous-versions/azure/devops/reference/upgrade/add-features-manually) or [update a custom process template to enable new features](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options)--choose the process that corresponds to the one you used previously to create your project. For example, if you&#39;re updating a project based on the Scrum process template, then select **Scrum**. Note that all version numbers have been removed from the process templates. If you don&#39;t see Agile, CMMI, or Scrum, then you need to [update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). 
+
+   You can determine which process template to select based on the [work item types defined for your existing project](#wit_correlation).
+
+   
+   :::column-end:::
+   :::row-end:::
 	
-   <tr>
-   <td>
-   <strong>Make Default</strong>
-   </td>
-   <td>
-   To cause the selected process template to appear as the default selection in the <strong>New Team Project Wizard</strong>.
-   </td>
-   </tr>
+   :::row:::
+      :::column span="1":::
+   
+   **Make Default**
+   
+   :::column-end:::
+      :::column span="1":::
+   
+   To cause the selected process template to appear as the default selection in the **New Team Project Wizard**.
+   
+   :::column-end:::
+   :::row-end:::
 	
-   <tr>
-   <td>
-   <strong>Delete</strong>
-   </td>
-   <td>
+   :::row:::
+      :::column span="1":::
+   
+   **Delete**
+   
+   :::column-end:::
+      :::column span="1":::
+   
    To permanently remove the selected process template from the collection.
-   </td>
-   </tr>
-	
-   </tbody>
-   </table>
+   
+   :::column-end:::
+   :::row-end:::
 
 
 ::: moniker-end
@@ -192,56 +207,70 @@ To determine the type of process template that was used to create your project, 
 
 ::: moniker range=">= azure-devops-2019"
 
-<table>
-<tbody valign="top">
-<tr>
-<th>Agile</th>
-<th>Basic</th>
-<th>CMMI</th>
-<th>Scrum</th>
-</tr>
-<tr>
-<td>
-<img src="media/ALM_MPT_WIT_Agile.png" alt="Agile work item types"/> 
-</td>
-<td>
-<img src="media/process-template/basic-work-items.png" alt="Basic work item types"/> 
-</td>
-<td>
-<img src="media/ALM_MPT_WIT_CMMI.png" alt="CMMI work item types"/> 
-</td>
-<td>
-<img src="media/ALM_MPT_WIT_Scrum.png" alt="Scrum work item types"/> 
-</td>
-<td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   Agile
+   :::column-end:::
+   :::column span="3":::
+   Basic
+   :::column-end:::
+   :::column span="3":::
+   CMMI
+   :::column-end:::
+   :::column span="3":::
+   Scrum
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   ![Agile work item types](media/ALM_MPT_WIT_Agile.png) 
+   :::column-end:::
+   :::column span="3":::
+   
+   ![Basic work item types](media/process-template/basic-work-items.png) 
+   :::column-end:::
+   :::column span="3":::
+   
+   ![CMMI work item types](media/ALM_MPT_WIT_CMMI.png) 
+   :::column-end:::
+   :::column span="3":::
+   
+   ![Scrum work item types](media/ALM_MPT_WIT_Scrum.png) 
+   :::column-end:::
+   :::column span="3":::
+   
+:::row-end:::
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-<table>
-<tbody valign="top">
-<tr>
-<th>Scrum</th>
-<th>Agile</th>
-<th>CMMI</th>
-</tr>
-<tr>
-<td>
-<img src="media/ALM_MPT_WIT_Scrum.png" alt="Scrum work item types"/> 
-</td>
-<td>
-<img src="media/ALM_MPT_WIT_Agile.png" alt="Agile work item types"/> 
-</td>
-<td>
-<img src="media/ALM_MPT_WIT_CMMI.png" alt="CMMI work item types"/> 
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   Scrum
+   :::column-end:::
+   :::column span="3":::
+   Agile
+   :::column-end:::
+   :::column span="3":::
+   CMMI
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   ![Scrum work item types](media/ALM_MPT_WIT_Scrum.png) 
+   :::column-end:::
+   :::column span="3":::
+   
+   ![Agile work item types](media/ALM_MPT_WIT_Agile.png) 
+   :::column-end:::
+   :::column span="3":::
+   
+   ![CMMI work item types](media/ALM_MPT_WIT_CMMI.png) 
+   :::column-end:::
+:::row-end:::
 
 ::: moniker-end
 

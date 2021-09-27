@@ -53,42 +53,60 @@ The WIQL syntax is not case-sensitive.
 
 The WIQL length of queries made against Azure Boards must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
 
-<table>
-<tr>
-<th width="15%">Clause</th>
-<th width="85%">Example</th>
-</tr>
-<tbody valign="top">
-<tr>
-<td><code>SELECT</code></td>
-<td>Identifies the fields to return for each work item returned by the query. You can specify either the friendly name or reference name. You must use square brackets ([]) if the name contains blanks or periods.</td>
-</tr>
-<tr>
-<td><code>FROM</code></td>
-<td>Indicates whether you want the query to find work items or links between work items.
-<ul>
-<li>Use <code>FROM WorkItems</code> to return work items.</li>  
-<li>Use <code>FROM workItemLinks</code> to return links between work items. For more information, see <a href="#linked-work-items">Queries for links between work items</a> later in this article. </li> 
-</ul>
-</td>
-</tr>
-<tr>
-<td><code>WHERE</code></td>
-<td>Specifies the filter criteria for the query. For more information, see <a href="#where-clause">Filter conditions (WHERE)</a> in the next section. </td>
-</tr>
-<tr>
-<td><code>ORDER BY</code></td>
-<td>Specifies the sort order of the work items returned. You can specify Ascending (Asc) or Descending (Desc) for one or more fields. For example: <br/>
-<code>ORDER BY [State] Asc, [Changed Date] Desc</code>
-</td>
-</tr>
-<tr>
-<td><code>ASOF</code></td>
-<td>Specifies a historical query by indicating a date or point in time at which the filter is to be applied. For example, this query returns all user stories that existed on June 15, 2019.<br/>
-<code>ASOF '6/15/2019'</code></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   Clause
+   :::column-end:::
+   :::column span="3":::
+   Example
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `SELECT`
+   :::column-end:::
+   :::column span="3":::
+   Identifies the fields to return for each work item returned by the query. You can specify either the friendly name or reference name. You must use square brackets ([]) if the name contains blanks or periods.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `FROM`
+   :::column-end:::
+   :::column span="3":::
+   Indicates whether you want the query to find work items or links between work items.
+   
+   - Use `FROM WorkItems` to return work items.  
+   - Use `FROM workItemLinks` to return links between work items. For more information, see [Queries for links between work items](#linked-work-items) later in this article.  
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `WHERE`
+   :::column-end:::
+   :::column span="3":::
+   Specifies the filter criteria for the query. For more information, see [Filter conditions (WHERE)](#where-clause) in the next section. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ORDER BY`
+   :::column-end:::
+   :::column span="3":::
+   Specifies the sort order of the work items returned. You can specify Ascending (Asc) or Descending (Desc) for one or more fields. For example:   
+   `ORDER BY [State] Asc, [Changed Date] Desc`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ASOF`
+   :::column-end:::
+   :::column span="3":::
+   Specifies a historical query by indicating a date or point in time at which the filter is to be applied. For example, this query returns all user stories that existed on June 15, 2019.  
+   `ASOF '6/15/2019'`
+   :::column-end:::
+:::row-end:::
 
 
 <!---
@@ -165,57 +183,78 @@ Beyond these basic operators, there are some behaviors and operators specific to
 > The operators available to you depend on your platform and version. For more information, see [Query quick reference](query-index-quick-ref.md).
 
 
-<table>
-<tr>
-<th width="20%">Field type</th>
-<th width="80%">Supported operators</th>
-</tr>
-<tbody valign="top">
+:::row:::
+   :::column span="1":::
+   Field type
+   :::column-end:::
+   :::column span="3":::
+   Supported operators
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td>Boolean</td>
-<td>
-<code>= , <> , =[Field] , <>[Field]</code>
-</td>
-</tr>
-<tr>
-<td>DateTime</td>
-<td>
-<code>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever</code>
-</td>
-</tr>
-<tr>
-<td>Double, GUID, Integer</td>
-<td>
-<code>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever</code>
-</td>
-</tr>
-<tr>
-<td>Identity</td>
-<td>
-<code>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever</code>
-</td>
-</tr>
-<tr>
-<td>PlainText</td>
-<td>
-<code>Contains Words, Does Not Contain Words, Is Empty, Is Not Empty</code>
-</td>
-</tr>
-<tr>
-<td>String</td>
-<td>
-<code>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever</code>
-</td>
-</tr>
-<tr>
-<td>TreePath</td>
-<td>
-<code>=, &lt;&gt;, In, Not In, Under, Not Under</code>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   Boolean
+   :::column-end:::
+   :::column span="3":::
+   
+   `= , <> , =[Field] , <>[Field]`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   DateTime
+   :::column-end:::
+   :::column span="3":::
+   
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Double, GUID, Integer
+   :::column-end:::
+   :::column span="3":::
+   
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Identity
+   :::column-end:::
+   :::column span="3":::
+   
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   PlainText
+   :::column-end:::
+   :::column span="3":::
+   
+   `Contains Words, Does Not Contain Words, Is Empty, Is Not Empty`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   String
+   :::column-end:::
+   :::column span="3":::
+   
+   `= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   TreePath
+   :::column-end:::
+   :::column span="3":::
+   
+   `=, <>, In, Not In, Under, Not Under`
+   :::column-end:::
+:::row-end:::
 
 
 ### Logical groupings 
@@ -472,49 +511,70 @@ MODE (MustContain)
 
 The following table summarizes the differences between work item queries and queries for links between work items. 
 
-
-<table>
-<tr>
-<th width="10%">Clause</th>
-<th width="28%">Work items</th>
-<th width="62%">Links between work items</th>
-</tr>
-<tbody valign="top">
-<tr>
-<td><code>FROM</code></td>
-<td><code>FROM WorkItems</code></td>
-<td><code>FROM WorkItemLinks</code></td>
-</tr>
-<tr>
-<td><code>WHERE</code></td>
-<td><code>[FieldName] = Value</code></td>
-<td><code>Specify one or more of the following:<br/>
-<code>[Source].[FieldName] = Value</code><br/>
-<code>[Target].[FieldName] = Value</code><br/>
-<code>[System.Links.LinkType] = 'LinkName'</code> 
-</td>
-</tr>
-<tr>
-<td><code>MODE</code></td>
-<td>not applicable</td>
-<td>Specify one of the following:<br/>
-<ul>
-<li><code>MODE (MustContain)</code>: (Default) Returns only WorkItemLinkInfo records where the source, target, and link criteria are all satisfied. </li>
-<li><code>MODE (MayContain)</code>: Returns WorkItemLinkInfo records for all work items that satisfy the source and link criteria, even if no linked work item satisfies the target criteria.</li>
-<li><code>MODE (DoesNotContain)</code>: Returns WorkItemLinkInfo records for all work items that satisfy the source, only if no linked work item satisfies the link and target criteria.
-<li><code>MODE (Recursive)</code>: Use for Tree queries(`[System.Links.LinkType] = 'System.LinkTypes.Hierarchy-Forward'`). Link type must be Tree topology and forward direction. Returns WorkItemLinkInfo records for all work items that satisfy the source, recursively for target.  `ORDER BY` and `ASOF` aren't compatible with tree queries.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><code>RETURNS</code></td>
-<td><a href="/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemqueryresult"><code>WorkItemQueryResult</code></a> </td>
-<td> <a href="/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemlink"><code>WorkItemLink</code></a> 
-</td>
-</tr>
-</tbody>
-</table>
-
+:::row:::
+   :::column span="1":::
+   Clause
+   :::column-end:::
+   :::column span="3":::
+   Work items
+   :::column-end:::
+   :::column span="3":::
+   Links between work items
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `FROM`
+   :::column-end:::
+   :::column span="3":::
+   `FROM WorkItems`
+   :::column-end:::
+   :::column span="3":::
+   `FROM WorkItemLinks`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `WHERE`
+   :::column-end:::
+   :::column span="3":::
+   `[FieldName] = Value`
+   :::column-end:::
+   :::column span="3":::
+   <code>Specify one or more of the following:  
+   `[Source].[FieldName] = Value`  
+   `[Target].[FieldName] = Value`  
+   `[System.Links.LinkType] = 'LinkName'` 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `MODE`
+   :::column-end:::
+   :::column span="3":::
+   not applicable
+   :::column-end:::
+   :::column span="3":::
+   Specify one of the following:  
+   
+   - `MODE (MustContain)`: (Default) Returns only WorkItemLinkInfo records where the source, target, and link criteria are all satisfied. 
+   - `MODE (MayContain)`: Returns WorkItemLinkInfo records for all work items that satisfy the source and link criteria, even if no linked work item satisfies the target criteria.
+   - `MODE (DoesNotContain)`: Returns WorkItemLinkInfo records for all work items that satisfy the source, only if no linked work item satisfies the link and target criteria.
+   - `MODE (Recursive)`: Use for Tree queries(`[System.Links.LinkType] = 'System.LinkTypes.Hierarchy-Forward'`). Link type must be Tree topology and forward direction. Returns WorkItemLinkInfo records for all work items that satisfy the source, recursively for target.  `ORDER BY` and `ASOF` aren't compatible with tree queries.
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `RETURNS`
+   :::column-end:::
+   :::column span="3":::
+   [`WorkItemQueryResult`](/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemqueryresult) 
+   :::column-end:::
+   :::column span="3":::
+    [`WorkItemLink`](/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemlink) 
+   :::column-end:::
+:::row-end:::
 
 ::: moniker range="azure-devops"
 You can specify one of the following system link type names.  
@@ -633,93 +693,117 @@ You specify the date-time pattern according to one of two patterns:
 
 The following example statements show specific qualifying clauses.
 
-<table width="80%">
-<tbody valign="top">
-<tr>
-<th width="10%">Clause</th>
-<th width="90%">Example</th>
-</tr>
-<tr>
-<td><code>AND</code></td>
-<td>
-<pre><code>SELECT [System.Id], [System.Title]
+:::row:::
+   :::column span="1":::
+   Clause
+   :::column-end:::
+   :::column span="3":::
+   Example
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `AND`
+   :::column-end:::
+   :::column span="3":::
+   
+   ```
+   SELECT [System.Id], [System.Title]
    FROM WorkItems
    WHERE [System.TeamProject] = @project
    AND [System.AssignedTo] = 'Judy Lew'
-</code></pre>
-</td>
-</tr>
-<tr>
-<td><code>OR</code></td>
-<td>
-<pre><code>SELECT [System.Id], [System.Title] 
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `OR`
+   :::column-end:::
+   :::column span="3":::
+   
+   ```
+   SELECT [System.Id], [System.Title] 
    FROM WorkItems 
    WHERE [System.TeamProject] = @project 
    AND ( [System.AssignedTo] = 'Mark Steele'
    OR [System.AssignedTo] = 'Merav Sror' )
-</code></pre>
-</td>
-</tr>
-<tr>
-<td><code>NOT</code></td>
-<td>
-<pre><code>SELECT [System.Id], [System.Title] 
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `NOT`
+   :::column-end:::
+   :::column span="3":::
+   
+   ```
+   SELECT [System.Id], [System.Title] 
    FROM WorkItems 
    WHERE [System.TeamProject] = @project 
    AND [System.AssignedTo] EVER 'Anne Wallace'
    AND [System.AssignedTo] NOT CONTAINS 'Danny Levin'
-</code></pre>
-</td>
-</tr>
-<tr>
-<td><code>EVER</code></td>
-<td>
-<pre><code>SELECT [System.Id], [System.Title] 
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `EVER`
+   :::column-end:::
+   :::column span="3":::
+   
+   ```
+   SELECT [System.Id], [System.Title] 
    FROM WorkItems 
    WHERE [System.TeamProject] = @project 
    AND [System.AssignedTo] EVER 'Anne Wallace'
-</code></pre>
-</td>
-</tr>
-<tr>
-<td><code>UNDER</code></td>
-<td>
-<pre><code>SELECT [System.Id], [System.Title] 
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `UNDER`
+   :::column-end:::
+   :::column span="3":::
+   
+   ```
+   SELECT [System.Id], [System.Title] 
    FROM WorkItems 
    WHERE [System.TeamProject] = @project 
    AND [System.AssignedTo] EVER 'David Galvin'
    AND [System.AreaPath] UNDER 'Agile1\Area 0'
-</code></pre>
-</td>
-</tr>
-<tr>
-<td><code>ORDER BY</code></td>
-<td>
-<pre><code>SELECT [System.Id], [System.Title] 
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ORDER BY`
+   :::column-end:::
+   :::column span="3":::
+   
+   ```
+   SELECT [System.Id], [System.Title] 
    FROM WorkItems 
    WHERE [System.TeamProject] = @project 
    AND [System.AssignedTo] = 'Jon Ganio'
    ORDER BY [System.Id] [asc | desc]
-</code></pre>
-</td>
-</tr>
-<tr>
-<td><code>ASOF</code> (Time filter) </td>
-<td>
-<pre><code>SELECT [System.Title] 
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ASOF` (Time filter) 
+   :::column-end:::
+   :::column span="3":::
+   
+   ```
+   SELECT [System.Title] 
    FROM workitems 
    WHERE [System.IterationPath] = 'MyProject\Beta' 
    AND [System.AssignedTo] = 'Jim Daly' 
    ASOF '3/16/19 12:30'
-</code></pre>
-</td>
-</tr>
-
-
-</tbody>
-</table>
-
-
+   ```
+   :::column-end:::
+:::row-end:::
 
 
 ### DateTime

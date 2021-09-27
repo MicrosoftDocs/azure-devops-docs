@@ -42,53 +42,92 @@ By defining the **Story Points**, teams can use the forecast feature and velocit
 
 Use the following guidance and that provided for [fields used in common across work item types](#definitions-in-common) when filling out the form.  
 
-<table>
-<thead>
-<tr><th><p>Field/tab</p></th><th><p>Usage</p></th></tr>
-</thead>
-<tbody valign="top">
-<tr>
-    <td><p><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Description](../../queries/titles-ids-descriptions.md)">Description</a>  </p></td>
-    <td><p>For user stories, provide enough detail for estimating how much work will be required to implement the story. Focus on who the feature is for, what users want to accomplish, and why. Don&#39;t describe how the feature should be developed. Do provide sufficient details so that your team can write tasks and test cases to implement the item.</p>
-	</td>
-</tr>
-<tr>
-    <td><p><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Acceptance Criteria](../../queries/titles-ids-descriptions.md)">Acceptance Criteria</a> </p></td>
-    <td><p>Provide the criteria to be met before the bug or user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p>
-</td>
-</tr>
-<tr>
-    <td><p><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Value Area](../../queries/planning-ranking-priorities.md)">Value Area</a></p></td>
-	<td><p>The area of customer value addressed by the epic, feature, requirement, or backlog item. Values include:</p>
-        <ul>
-        <li>
-          <p>
-            <strong>Architectural </strong>: Technical services to implement business features that deliver solution 
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Business</strong>: Services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
-          </p>
-        </li>
-      </ul>
-</td></tr>
-<tr>
-    <td width="20%"><p><a href="../../queries/query-numeric.md" data-raw-source="[Story Points](../../queries/query-numeric.md)">Story Points</a></p></td>
-    <td><p>Estimate the amount of work required to complete a user story using any numeric unit of measurement your team prefers.</p><p>Agile <a href="../../../report/dashboards/team-velocity.md" data-raw-source="[velocity charts](../../../report/dashboards/team-velocity.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools reference the values in this field. For additional guidance, see the <a href="/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)" data-raw-source="[Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120))">Estimating</a> white paper.</p></td></tr>
-<tr>
-    <td><p><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Priority](../../queries/planning-ranking-priorities.md)">Priority</a></p>
-</td>
-    <td><p>A subjective rating of the user story, feature, or requirement as it relates to the business. Allowed values are:</p><ul><li><p><strong>1</strong>: Product cannot ship without the feature.</p></li><li><p><strong>2</strong>: Product cannot ship without the feature, but it doesn&#39;t have to be addressed immediately.</p></li><li><p><strong>3</strong>: Implementation of the feature is optional based on resources, time, and risk.</p></li>
-</ul>
-</td>
-</tr>
-<tr>
-    <td><p><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Risk](../../queries/planning-ranking-priorities.md)">Risk</a></p></td>
-	<td><p>A subjective rating of the relative uncertainty around the successful completion of a user story. Allowed values are:</p><ul><li><p><strong>1 - High</strong></p></li><li><p><strong>2 - Medium</strong></p></li><li><p><strong>3 - Low</strong></p></li></ul></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Field/tab
+   :::column-end:::
+   :::column span="3":::
+   Usage**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   [Description](../../queries/titles-ids-descriptions.md)  
+
+   :::column-end:::
+   :::column span="3":::
+   For user stories, provide enough detail for estimating how much work will be required to implement the story. Focus on who the feature is for, what users want to accomplish, and why. Don&#39;t describe how the feature should be developed. Do provide sufficient details so that your team can write tasks and test cases to implement the item.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Acceptance Criteria](../../queries/titles-ids-descriptions.md) 
+
+   :::column-end:::
+   :::column span="3":::
+   Provide the criteria to be met before the bug or user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Value Area](../../queries/planning-ranking-priorities.md)
+
+   :::column-end:::
+   :::column span="3":::
+   The area of customer value addressed by the epic, feature, requirement, or backlog item. Values include:
+
+   
+   - **Architectural**: Technical services to implement business features that deliver solution 
+   
+   
+   - **Business**: Services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
+   
+   
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Story Points](../../queries/query-numeric.md)
+
+   :::column-end:::
+   :::column span="3":::
+   Estimate the amount of work required to complete a user story using any numeric unit of measurement your team prefers.
+
+   Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools reference the values in this field. For additional guidance, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Priority](../../queries/planning-ranking-priorities.md)
+
+   :::column-end:::
+   :::column span="3":::
+   A subjective rating of the user story, feature, or requirement as it relates to the business. Allowed values are:
+   - **1**: Product cannot ship without the feature.
+   - **2**: Product cannot ship without the feature, but it doesn&#39;t have to be addressed immediately.
+   - **3**: Implementation of the feature is optional based on resources, time, and risk.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Risk](../../queries/planning-ranking-priorities.md)
+
+   :::column-end:::
+   :::column span="3":::
+   A subjective rating of the relative uncertainty around the successful completion of a user story. Allowed values are:
+   - **1 - High**
+   - **2 - Medium**
+   - **3 - Low**
+
+   :::column-end:::
+:::row-end:::
 
 
 [!INCLUDE [temp](../../includes/discussion-tip.md)] 
@@ -147,29 +186,69 @@ Using Agile processes, teams forecast work and define tasks at the start of each
 
 When teams estimate work using hours or days, they define tasks and the **Remaining Work** and **Activity** (optional) fields.
 
-<table><thead>
-<tr><th><p>Field/tab</p></th><th><p>Usage</p></th></tr></thead>
-<tbody valign="top">
-<tr>
-    <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Original Estimate](../../queries/query-numeric.md)">Original Estimate</a></p></td>
-    <td><p>The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.</p>
-<p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
-</td>
-</tr>
-<tr>
-    <td width="18%"><p><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a></p></td>
-    <td><p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../../sprints/set-capacity.md" data-raw-source="[capacity charts](../../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md)">sprint burndown chart</a>, and the following (TFS only) reports: <a href="/azure/devops/report/sql-reports/burndown-and-burn-rate-report" data-raw-source="[Burndown and Burn Rate](../../../report/sql-reports/burndown-and-burn-rate-report.md)">Burndown and Burn Rate</a>, <a href="/azure/devops/report/sql-reports/remaining-work-report" data-raw-source="[Remaining Work](../../../report/sql-reports/remaining-work-report.md)">Remaining Work</a>, and <a href="/azure/devops/report/sql-reports/status-on-all-iterations-report" data-raw-source="[Status on All Iterations](../../../report/sql-reports/status-on-all-iterations-report.md)">Status on All Iterations</a>.</p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p></td></tr>
-<tr>
-    <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Completed Work](../../queries/query-numeric.md)">Completed Work</a> </p></td>
-	<td><p>The amount of work spent implementing a task.</p></td></tr>
-<tr>
-    <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Activity](../../queries/query-numeric.md)">Activity</a> </p></td>
-	<td><p>Select the type of activity this task represents when your team estimates sprint capacity by activity.</p></td></tr>
-<tr>
-    <td><p><a href="../../queries/build-test-integration.md" data-raw-source="[Integrated in Build](../../queries/build-test-integration.md)">Integrated in Build</a></p></td>
-	<td><p>Product build number that incorporates the code or fixes a bug.</p></td>
-</tr></tbody>
-</table>  
+:::row:::
+   :::column span="1":::
+   **Field/tab**
+   :::column-end:::
+   :::column span="3":::
+   **Usage**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   [Original Estimate](../../queries/query-numeric.md)
+
+   :::column-end:::
+   :::column span="3":::
+   The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.
+
+   You can specify work in hours or in days. There are no inherent time units associated with this field.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Remaining Work](../../queries/query-numeric.md)
+
+   :::column-end:::
+   :::column span="3":::
+   The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate [capacity charts](../../sprints/set-capacity.md), the [sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md), and the following (TFS only) reports: [Burndown and Burn Rate](/azure/devops/report/sql-reports/burndown-and-burn-rate-report), [Remaining Work](/azure/devops/report/sql-reports/remaining-work-report), and [Status on All Iterations](/azure/devops/report/sql-reports/status-on-all-iterations-report).
+
+   If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Completed Work](../../queries/query-numeric.md) 
+
+   :::column-end:::
+   :::column span="3":::
+   The amount of work spent implementing a task.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Activity](../../queries/query-numeric.md) 
+
+   :::column-end:::
+   :::column span="3":::
+   Select the type of activity this task represents when your team estimates sprint capacity by activity.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Integrated in Build](../../queries/build-test-integration.md)
+
+   :::column-end:::
+   :::column span="3":::
+   Product build number that incorporates the code or fixes a bug.
+
+   :::column-end:::
+:::row-end:::  
 
 ::: moniker range="<= tfs-2018"
 If you use [Microsoft Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project) to assign resources and track a schedule.
@@ -230,90 +309,182 @@ The [Stack Rank](../../queries/planning-ranking-priorities.md) field is used to 
 
 Work item forms displayed in a client and the web portal for TFS 2015 and earlier versions display link tabs and link control restrictions as described in the following table. 
 
-<table>
-<thead>
-<tr>
-<th><p>Tab name</p></th>
-<th><p>Work item type</p></th>
-<th><p>Link restrictions</p></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-<td><p><strong>All Links</strong></p></td>
-<td><p>User story</p>
-<p>Bug</p>
-<p>Feedback Request</p>
-<p>Task</p>
-<p>Test Case</p></td>
-<td><ul>
-<li><p>No restrictions.</p></li>
-</ul>
-<p></p></td>
-</tr>
-<tr>
-<td><p><strong>Implementation</strong></p></td>
-<td><p>User story</p>
-<p>Task</p></td>
-<td><ul>
-<li><p>Allows only <strong>Parent</strong> and <strong>Child</strong> links between user stories and tasks.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul>
-<p></p></td>
-</tr>
-<tr>
-<td><p><strong>Links</strong></p></td>
-<td><p>Issue</p>
-<p>Shared steps</p>
-<p></p></td>
-<td><ul>
-<li><p>No restrictions.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Links</strong></p></td>
-<td><p>Code Review Request</p></td>
-<td><ul>
-<li><p>Allows only <strong>Parent</strong> and <strong>Child</strong> links to Code Review Response work items.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul>
-<p></p></td>
-</tr>
-<tr>
-<td><p><strong>Stories</strong></p></td>
-<td><p>Feedback Response</p></td>
-<td><ul>
-<li><p>Allows only <strong>Related</strong> links to user stories.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Storyboards</strong></p></td>
-<td><p>User Story</p></td>
-<td><ul>
-<li><p>Allows only <strong>Storyboard</strong> links.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Test Cases</strong></p></td>
-<td><p>User story</p>
-<p>Bug</p></td>
-<td><ul>
-<li><p>Allows only <strong>Tested By</strong> links.</p></li>
-<li><p>Allows links only to test cases.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Tested User Stories</strong></p></td>
-<td><p>Test case</p></td>
-<td><ul>
-<li><p>Allows only <strong>Tests</strong> links.</p></li>
-<li><p>Allows links only to user stories.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Tab name**
+   :::column-end:::
+   :::column span="3":::
+   **Work item type**
+   :::column-end:::
+   :::column span="3":::
+   **Link restrictions**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **All Links**
+
+   :::column-end:::
+   :::column span="3":::
+   User story
+
+   Bug
+
+   Feedback Request
+
+   Task
+
+   Test Case
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - No restrictions.
+
+   
+   
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Implementation**
+
+   :::column-end:::
+   :::column span="3":::
+   User story
+
+   Task
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Parent** and **Child** links between user stories and tasks.
+
+   - Excludes links to work items in other projects.
+
+   
+   
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Links**
+
+   :::column-end:::
+   :::column span="3":::
+   Issue
+
+   Shared steps
+
+   
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - No restrictions.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Links**
+
+   :::column-end:::
+   :::column span="3":::
+   Code Review Request
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Parent** and **Child** links to Code Review Response work items.
+
+   - Excludes links to work items in other projects.
+
+   
+   
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Stories**
+
+   :::column-end:::
+   :::column span="3":::
+   Feedback Response
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Related** links to user stories.
+
+   - Excludes links to work items in other projects.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Storyboards**
+
+   :::column-end:::
+   :::column span="3":::
+   User Story
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Storyboard** links.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Test Cases**
+
+   :::column-end:::
+   :::column span="3":::
+   User story
+
+   Bug
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Tested By** links.
+
+   - Allows links only to test cases.
+
+   - Excludes links to work items in other projects.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Tested User Stories**
+
+   :::column-end:::
+   :::column span="3":::
+   Test case
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Tests** links.
+
+   - Allows links only to user stories.
+
+   - Excludes links to work items in other projects.
+
+   
+   :::column-end:::
+:::row-end:::
+
 
 ::: moniker-end
