@@ -163,17 +163,17 @@ A: If you see the message "Access denied: {User} needs Create permissions to do 
 
 A: These are some of the possible reasons of the failure:
 
-    * When you author a YAML pipeline and refer to an environment that does not exist in the YAML file, Azure Pipelines automatically creates the environment in some cases.
+  * When you author a YAML pipeline and refer to an environment that does not exist in the YAML file, Azure Pipelines automatically creates the environment in some cases.
 
-      You use the YAML pipeline creation wizard in the Azure Pipelines web experience and refer to an environment that hasn't been created yet.
-      You update the YAML file using the Azure Pipelines web editor and save the pipeline after adding a reference to an environment that does not exist.
-      You update the YAML file using another external code editor and then start a new run manually using the Azure Pipelines web interface. In each of the above cases, Azure Pipelines has a clear understanding of the user performing the operation. Hence, it creates the environment and adds the user to the administrator role for the environment. This user has all the permissions to manage the environment and/or to include other users in various roles for managing the environment.
+    You use the YAML pipeline creation wizard in the Azure Pipelines web experience and refer to an environment that hasn't been created yet.
+    You update the YAML file using the Azure Pipelines web editor and save the pipeline after adding a reference to an environment that does not exist.
+    You update the YAML file using another external code editor and then start a new run manually using the Azure Pipelines web interface. In each of the above cases, Azure Pipelines has a clear understanding of the user performing the operation. Hence, it creates the environment and adds the user to the administrator role for the environment. This user has all the permissions to manage the environment and/or to include other users in various roles for managing the environment.
 
-      Azure Pipelines does not have information about the user creating the environment if you update the YAML file using another external code editor add a reference to an environment that does not exist and then cause a continuous integration pipeline to be triggered. In this case, Azure Pipelines does not know about the user and hence cannot auto-create the environment.
+    Azure Pipelines does not have information about the user creating the environment if you update the YAML file using another external code editor add a reference to an environment that does not exist and then cause a continuous integration pipeline to be triggered. In this case, Azure Pipelines does not know about the user and hence cannot auto-create the environment.
 
-    * If you are using [runtime parameters](runtime-parameters.md) for creating the environment, it will fail as these parameters are expanded at run time. Environment creation happens at compile time, so we have to use [variables](runtime-parameters.md) to create the environment.
+  * If you are using [runtime parameters](runtime-parameters.md) for creating the environment, it will fail as these parameters are expanded at run time. Environment creation happens at compile time, so we have to use [variables](runtime-parameters.md) to create the environment.
 
-    * A user with stakeholder access level cannot create the environment as stakeholders do not access to repository.
+  * A user with stakeholder access level cannot create the environment as stakeholders do not access to repository.
 
 
 ## Related articles
