@@ -80,11 +80,9 @@ Project management reports provide insight into how much work the team is tackli
        - Create user stories and specify the **Story Points** (Agile).
        - Create requirements and specify the **Size** (CMMI).  
    2. [Work in sprints](../../boards/sprints/assign-work-sprint.md). Assign backlog items to sprints, create tasks and link them to parent backlog items, and assign to a team member.
-   3. [Update Remaining Work for tasks](../../boards/sprints/task-board.md). For Agile and CMMI team projects, update **Completed Work** as well.
-    
+   3. [Update Remaining Work for tasks](../../boards/sprints/task-board.md). For Agile and CMMI team projects, update **Completed Work** as well.   
        > [!Tip]  
        > The only report that references **Original Estimate** is [Status on All Iterations](../sql-reports/status-on-all-iterations-report.md).
-
    4. Create test cases and bugs, link them to their parent backlog item, and update their **State**.
    5. (Optional) Assign work items to areas to filter reports.
 
