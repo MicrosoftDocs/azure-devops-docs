@@ -115,13 +115,13 @@ Several tools also reference the team's default and selected iteration paths or 
    :::column span="1":::
    **Agile tool**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    **Area path  (see note 1)**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    **Iteration path**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    **State**
    :::column-end:::
 :::row-end:::
@@ -130,13 +130,13 @@ Several tools also reference the team's default and selected iteration paths or 
    :::column span="1":::
    Portfolio or product backlogs
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Selected area path(s)
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Equal to or under team's [backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md)
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Active (corresponds to a Proposed or InProgress state category, see notes 2, 3)
    :::column-end:::
 :::row-end:::
@@ -145,13 +145,13 @@ Several tools also reference the team's default and selected iteration paths or 
    :::column span="1":::
    Kanban boards (see note 4)
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Selected area path(s)
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Equal to or under team's [backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md)
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Any state (see notes 3, 5)
    :::column-end:::
 :::row-end:::
@@ -160,13 +160,13 @@ Several tools also reference the team's default and selected iteration paths or 
    :::column span="1":::
    Sprint backlogs (see note 4)
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Selected area path(s)
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Team's selected iteration paths
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Any state (see notes 3, 5)
    :::column-end:::
 :::row-end:::
@@ -175,13 +175,13 @@ Several tools also reference the team's default and selected iteration paths or 
    :::column span="1":::
    Task boards (see note 4)
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Selected area path(s)
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Team's selected iteration paths
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Any state (see notes 3, 5)
    :::column-end:::
 :::row-end:::
@@ -190,13 +190,13 @@ Several tools also reference the team's default and selected iteration paths or 
    :::column span="1":::
    New work item widget
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Default area path
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Default iteration path
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    n/a
    :::column-end:::
 :::row-end:::
