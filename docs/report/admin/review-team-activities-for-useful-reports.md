@@ -83,6 +83,7 @@ Project management reports provide insight into how much work the team is tackli
    3. [Update Remaining Work for tasks](../../boards/sprints/task-board.md). For Agile and CMMI team projects, update **Completed Work** as well.   
        > [!Tip]  
        > The only report that references **Original Estimate** is [Status on All Iterations](../sql-reports/status-on-all-iterations-report.md).
+       
    4. Create test cases and bugs, link them to their parent backlog item, and update their **State**.
    5. (Optional) Assign work items to areas to filter reports.
 
