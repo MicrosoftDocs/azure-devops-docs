@@ -1,11 +1,11 @@
 - name: Reporting
-  expanded: false
   href: index.yml
+- name: Dashboards, charts, reports, & widgets
+  displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
+  href: dashboards/overview.md
 - name: Get started
+  expanded: false
   items:
-  - name: Dashboards, charts, reports, & widgets
-    displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
-    href: dashboards/overview.md
   - name: Quick reference
     href: dashboards/quick-ref.md
   - name: Widget catalog
@@ -36,13 +36,10 @@
     href: dashboards/copy-dashboard.md
   - name: Set dashboard permissions (Security)
     href: dashboards/dashboard-permissions.md
-- name: Work tracking charts
+- name: Work tracking 
   items:
   - name: Create work tracking charts
     href: dashboards/charts.md
-    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
-  - name: Create test tracking charts
-    href: ../test/track-test-status.md?bc=%2fazure%2fdevops%2freport%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2ftoc.json
     displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
   - name: View/configure CFD
     href: dashboards/cumulative-flow.md
@@ -58,10 +55,17 @@
     displayname: release burndown, burndown widget, burndown metrics, burnup metrics, scope, date range, main metric, % completed, average burndown, items not estimated, total scope increase, projected completion, orginal scope, total scope, calculate burndown, time period, plotting interval 
   - name: Configure Lead/Cycle time widget
     href: dashboards/cycle-time-and-lead-time.md
-    displayname: lead time, cycle time, rolling period, scatter-plot, control chart, moving average, standard deviation, 
-- name: Pipelines & test charts
+    displayname: lead time, cycle time, rolling period, scatter-plot, control chart, moving average, standard deviation
+- name: Test tracking  
+  items:
+  - name: Create test tracking charts
+    href: ../test/track-test-status.md?bc=%2fazure%2fdevops%2freport%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2ftoc.json
+    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
+  - name: Test progress report 
+    href: ../../test/progress-report.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+- name: Pipelines & test results 
   href: dashboards/toc.yml 
-- name: Guidance
+- name: Work tracking guidance
   items:
   - name: Burndown guidance
     href: dashboards/burndown-guidance.md
