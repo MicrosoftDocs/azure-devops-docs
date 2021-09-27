@@ -40,46 +40,62 @@ For additional details on creating queries and chart-based-queries, see [Use the
 
 ### Useful filters 
 
-<table width="100%">
-<tbody valign="top">
-<tr>
-<th width="36%">Filter for</th>
-<th width="64%">Include these query clauses</th>
-</tr>
-<tr>
-<td>User stories or bugs<br/></td>
-<td>
-<code>Work Item Type <em> In </em> User Story,Bug</code><br/></td>
-</tr>
-<tr>
-<td>Tasks or bugs
-</td>
-<td>
-<code>Work Item Type <em> In </em> Task,Bug</code><br/></td>
-</tr>
-<tr>
-<td>
-Items that are Active or Closed
-</td>
-<td>
-<code>State <em> In </em> Active,Closed</code><br/></td>
-</tr>
-<tr>
-<td>
-Items in the Requirements category 
-</td>
-<td>
-<code>Work Item Type <em> In Group </em> Microsoft.RequirementCategory</code><br/></td>
-</tr>
-<tr>
-<td>
-Unestimated user stories 
-</td>
-<td>
-<code>Story Points <em> &lt;&gt; </em> (leave Value field blank)</code><br/></td>
-</tr>
-</tbody>
-</table>  
+:::row:::
+   :::column span="1":::
+   Filter for
+   :::column-end:::
+   :::column span="3":::
+   Include these query clauses
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   User stories or bugs  
+   :::column-end:::
+   :::column span="3":::
+   
+   `Work Item Type * In * User Story,Bug`  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Tasks or bugs
+   :::column-end:::
+   :::column span="3":::
+   
+   `Work Item Type * In * Task,Bug`  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   Items that are Active or Closed
+   :::column-end:::
+   :::column span="3":::
+   
+   `State * In * Active,Closed`  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   Items in the Requirements category 
+   :::column-end:::
+   :::column span="3":::
+   
+   `Work Item Type * In Group * Microsoft.RequirementCategory`  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   Unestimated user stories 
+   :::column-end:::
+   :::column span="3":::
+   
+   `Story Points * <> * (leave Value field blank)`  
+   :::column-end:::
+:::row-end:::  
 
 
 <a id="counts"/>
@@ -224,105 +240,228 @@ For information on system-defined sprint burndown charts, see [Sprint burndown](
 The following table describes the activity-based and numeric fields that you can use to track work. For information on date-related fields, such as Start Date, Finish Date, and Target Date, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
 
 
-<table width="100%">
-<thead>
-<tr>
-  <th width="20%">Field name</th>
-  <th width="55%">Description</th>
-  <th width="25%">Work item type</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-    <td><p>Activity <sup>1, 2</sup></p></td>
-    <td><p>The type of activity that is required to perform a task.To learn more about how this field is used, see <a href="../sprints/set-capacity.md" data-raw-source="[Capacity planning](../sprints/set-capacity.md)">Capacity planning</a>. Allowed values are:</p><ul><li><p>Deployment</p></li><li><p>Design</p></li><li><p>Development</p></li><li><p>Documentation</p></li><li><p>Requirements</p></li><li><p>Testing</p></li></ul>
+:::row:::
+     :::column span="1":::
+   Field name
+   :::column-end:::
+     :::column span="1":::
+   Description
+   :::column-end:::
+     :::column span="1":::
+   Work item type
+   :::column-end:::
+:::row-end:::
 
-<p>The Activity field is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.<sup>3</sup></p>
-<p>Reference name=Microsoft.VSTS.Common.Activity, Data type=String</p>
-</td>
-    <td>Task, Bug<sup>4</sup> (Agile and Scrum)</td>
-</tr>
-<tr>
-    <td><p>Business Value</p></td>
-    <td><p>A subjective unit of measure that captures the relative business value of a product backlog item or feature compared to other items of the same type. An item that is assigned a higher number should be considered as having more business value than an item that is assigned a lower number.</p><p>Reference name=Microsoft.VSTS.Common.BusinessValue, Data type=Integer</p>  </td>
-    <td>Epic, Feature</td>
-</tr>
-<tr>
-    <td><a id="completed-work" /><p>Completed Work</p></td>
-    <td><p>The amount of work that has been spent implementing a task. You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
-<p>Reference name=Microsoft.VSTS.Scheduling.CompletedWork, Data type=Double</p>
-</td>
-<td>Task, Bug<sup>4</sup></td>
-</tr>
-<tr>
-    <td><p>Discipline <sup>1, 2</sup></p></td>
-    <td><p>The type of activity or discipline that is assigned to a task. To learn more about how this field is used, see <a href="../sprints/set-capacity.md" data-raw-source="[Capacity planning](../sprints/set-capacity.md)">Capacity planning</a>. Allowed values are:</p><ul><li><p>Analysis</p></li><li><p>Development</p></li><li><p>Test</p></li><li><p>User Education</p></li><li><p>User Experience</p></li></ul>
-<p>The Discipline field is assigned to <code>type=&quot;Activity&quot;</code> in the ProcessConfiguration file.<sup>3</sup></p>
+:::row:::
+   :::column span="1":::
+   Activity <sup>1, 2</sup>
 
-<p>Reference name=Microsoft.VSTS.Common.Discipline, Data type=String</p>
-</td>
-<td>Task, Bug <sup>4</sup> (CMMI)</td>
-</tr>
-<tr>
-    <td><p>Effort</p></td>
-    <td><p>A subjective unit of measure that captures the size of a bug or product backlog item. If you assign more effort to an item, you indicate that more work is required to implement it. </p><p>This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to <code>type=&quot;Effort&quot;</code> in the ProcessConfiguration file.</p>
-<p>Reference name=Microsoft.VSTS.Scheduling.Effort, Data type=Double</p>
-</td>
-<td>Product Backlog Item, Bug <sup>4</sup> (Scrum)<p>Feature, Epic</p></td>
-</tr>
-<tr>
-    <td><p>Story Points</p></td>
-    <td><p>A subjective unit of measure that captures the size of a user story. If you assign more points to a user story, you indicate that more work is required to implement it.</p><p>This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to <code>type=&quot;Effort&quot;</code> in the ProcessConfiguration file. </p>
-<p>Reference name=Microsoft.VSTS. Scheduling.StoryPoints, Data type=Double</p>
-</td>
-<td>User Story, Bug <sup>4</sup> (Agile)</td>
-</tr>
-<tr>
-    <td><p>Size </p></td>
-    <td><p>A subjective unit of measure that captures the size of a requirement. The larger the size, the more work is required to implement it. </p><p>This field<sup>3</sup>  is also used to calculate team velocity and forecasting. It is assigned to <code>type=&quot;Effort&quot;</code> in the ProcessConfiguration file. </p>
-<p>Reference name=Microsoft.VSTS. Scheduling.Size, Data type=Double</p>
-</td>
-    <td>Requirement, Bug <sup>4</sup> (CMMI)</td>
-</tr>
-<tr>
-    <td><p>Original Estimate</p></td>
-    <td><p>The amount of work required to complete a task. You can specify work in hours or in days. There are no inherent time units associated with this field. </p>
-<p>Reference name=Microsoft.VSTS.Scheduling.OriginalEstimate, Data type=Double</p>
-</td>
-    <td>Task, Bug <sup>4</sup> (Agile and CMMI)</td>
-<tr>
-    <td><a id="remaining-work" /><p>Remaining Work</p></td>
-    <td><p>The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
-<p>This field <sup>3</sup> is also used to calculate burn down. It is assigned to <code>type=&quot;RemainingWork&quot;</code> in the ProcessConfiguration file.</p>
-<blockquote>
-<b>Note:</b> For Azure Boards, the taskboard always shows &quot;h&quot; for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration file for the Remaining Work type field to specify &quot;d&quot; for days, or other preferred label.<br/></blockquote>
-<p>Reference name=Microsoft.VSTS.Scheduling.RemainingWork, Data type=Double</p>
-</td>
-    <td>Task, Bug<sup>4</sup></td>
-</tr>
-<tr>
-    <td><p>Requires Review</p></td>
-    <td><p>Indicates the task requires review. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
-<p>Reference name=Microsoft.VSTS.CMMI.RequiresReview, Data type=String</p>
-</td>
-    <td>Task (CMMI)</td>
-</tr>
-<tr>
-    <td><p>Requires Test</p></td>
-    <td><p>Indicates the task requires a test. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
-<p>Reference name=Microsoft.VSTS.CMMI.RequiresTest, Data type=String</p>
-</td>
-    <td>Task (CMMI)</td>
-</tr>
-<tr>
-    <td><p>Task Type<sup>1</sup></p></td>
-    <td><p>Specifies the kind of task to implement. Allowed values are:</p><ul><li><p>Corrective Action</p></li><li><p>Mitigation Action</p></li><li><p>Planned</p></li></ul>
-<p>Reference name=Microsoft.VSTS.CMMI.TaskType, Data type=String</p>
-</td>
-    <td>Task, Bug<sup>4</sup> (CMMI process)</td>
-</tr>
-</tbody>
-</table>
+   :::column-end:::
+   :::column span="3":::
+   The type of activity that is required to perform a task.To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:
+   - Deployment
+   - Design
+   - Development
+   - Documentation
+   - Requirements
+   - Testing
+
+
+   The Activity field is assigned to `type=&quot;Activity&quot;` in the ProcessConfiguration file.<sup>3</sup>
+
+   Reference name=Microsoft.VSTS.Common.Activity, Data type=String
+
+   :::column-end:::
+   :::column span="3":::
+   Task, Bug<sup>4</sup> (Agile and Scrum)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Business Value
+
+   :::column-end:::
+   :::column span="3":::
+   A subjective unit of measure that captures the relative business value of a product backlog item or feature compared to other items of the same type. An item that is assigned a higher number should be considered as having more business value than an item that is assigned a lower number.
+
+   Reference name=Microsoft.VSTS.Common.BusinessValue, Data type=Integer
+  
+   :::column-end:::
+   :::column span="3":::
+   Epic, Feature
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   <a id="completed-work" />Completed Work
+
+   :::column-end:::
+   :::column span="3":::
+   The amount of work that has been spent implementing a task. You can specify work in hours or in days. There are no inherent time units associated with this field.
+
+   Reference name=Microsoft.VSTS.Scheduling.CompletedWork, Data type=Double
+
+   :::column-end:::
+   :::column span="3":::
+   Task, Bug<sup>4</sup>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Discipline <sup>1, 2</sup>
+
+   :::column-end:::
+   :::column span="3":::
+   The type of activity or discipline that is assigned to a task. To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:
+   - Analysis
+   - Development
+   - Test
+   - User Education
+   - User Experience
+
+   The Discipline field is assigned to `type=&quot;Activity&quot;` in the ProcessConfiguration file.<sup>3</sup>
+
+
+   Reference name=Microsoft.VSTS.Common.Discipline, Data type=String
+
+   :::column-end:::
+   :::column span="3":::
+   Task, Bug <sup>4</sup> (CMMI)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Effort
+
+   :::column-end:::
+   :::column span="3":::
+   A subjective unit of measure that captures the size of a bug or product backlog item. If you assign more effort to an item, you indicate that more work is required to implement it. 
+   This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to `type=&quot;Effort&quot;` in the ProcessConfiguration file.
+
+   Reference name=Microsoft.VSTS.Scheduling.Effort, Data type=Double
+
+   :::column-end:::
+   :::column span="3":::
+   Product Backlog Item, Bug <sup>4</sup> (Scrum)Feature, Epic
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Story Points
+
+   :::column-end:::
+   :::column span="3":::
+   A subjective unit of measure that captures the size of a user story. If you assign more points to a user story, you indicate that more work is required to implement it.
+
+   This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to `type=&quot;Effort&quot;` in the ProcessConfiguration file. 
+
+   Reference name=Microsoft.VSTS. Scheduling.StoryPoints, Data type=Double
+
+   :::column-end:::
+   :::column span="3":::
+   User Story, Bug <sup>4</sup> (Agile)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Size 
+
+   :::column-end:::
+   :::column span="3":::
+   A subjective unit of measure that captures the size of a requirement. The larger the size, the more work is required to implement it. 
+   This field<sup>3</sup>  is also used to calculate team velocity and forecasting. It is assigned to `type=&quot;Effort&quot;` in the ProcessConfiguration file. 
+
+   Reference name=Microsoft.VSTS. Scheduling.Size, Data type=Double
+
+   :::column-end:::
+   :::column span="3":::
+   Requirement, Bug <sup>4</sup> (CMMI)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Original Estimate
+
+   :::column-end:::
+   :::column span="3":::
+   The amount of work required to complete a task. You can specify work in hours or in days. There are no inherent time units associated with this field. 
+
+   Reference name=Microsoft.VSTS.Scheduling.OriginalEstimate, Data type=Double
+
+   :::column-end:::
+   :::column span="3":::
+   Task, Bug <sup>4</sup> (Agile and CMMI)
+   :::column-end:::
+:::row:::
+   :::column span="1":::
+   <a id="remaining-work" />Remaining Work
+
+   :::column-end:::
+   :::column span="3":::
+   The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.
+
+   This field <sup>3</sup> is also used to calculate burn down. It is assigned to `type=&quot;RemainingWork&quot;` in the ProcessConfiguration file.
+
+   
+   > [!NOTE]
+   > For Azure Boards, the taskboard always shows &quot;h&quot; for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration file for the Remaining Work type field to specify &quot;d&quot; for days, or other preferred label. 
+
+   Reference name=Microsoft.VSTS.Scheduling.RemainingWork, Data type=Double
+
+   :::column-end:::
+   :::column span="3":::
+   Task, Bug<sup>4</sup>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Requires Review
+
+   :::column-end:::
+   :::column span="3":::
+   Indicates the task requires review. You can specify **Yes** or **No** (default).
+
+   Reference name=Microsoft.VSTS.CMMI.RequiresReview, Data type=String
+
+   :::column-end:::
+   :::column span="3":::
+   Task (CMMI)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Requires Test
+
+   :::column-end:::
+   :::column span="3":::
+   Indicates the task requires a test. You can specify **Yes** or **No** (default).
+
+   Reference name=Microsoft.VSTS.CMMI.RequiresTest, Data type=String
+
+   :::column-end:::
+   :::column span="3":::
+   Task (CMMI)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Task Type<sup>1</sup>
+
+   :::column-end:::
+   :::column span="3":::
+   Specifies the kind of task to implement. Allowed values are:
+   - Corrective Action
+   - Mitigation Action
+   - Planned
+
+   Reference name=Microsoft.VSTS.CMMI.TaskType, Data type=String
+
+   :::column-end:::
+   :::column span="3":::
+   Task, Bug<sup>4</sup> (CMMI process)
+   :::column-end:::
+:::row-end:::
 
 #### Notes:
 

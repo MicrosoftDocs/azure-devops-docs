@@ -52,20 +52,19 @@ Kanban literally means signboard or billboard. As a first step, you customize yo
 When you first open your Kanban board, you'll see one column for each [workflow state](../work-items/guidance/choose-process.md#workflow-states). Your actual columns vary based on the [process](../work-items/guidance/choose-process.md) used to create your project.
 
 For user stories, the New, Active, Resolved, and Closed states track progress from idea to completion.
-<table>
-<tbody>
-<tr valign="top">
-<td>
-<img src="media/ALM_KB_Workflow.png" alt="User story workflow states"/>
+:::row:::
+   :::column span="1":::
+   
+   ![User story workflow states](media/ALM_KB_Workflow.png)
 
-</td>
-<td>
-<img src="media/ALM_KB_Empty.png" alt="Default kanban board, Agile template"/>
+   :::column-end:::
+   :::column span="2":::
+   
+   ![Default kanban board, Agile template](media/ALM_KB_Empty.png)
 
-</td>
-</tr>
-</tbody>
-</table>
+   :::column-end:::
+:::row-end:::
+
 
 However, your team's workflow stages most likely don't map to these default states. For your team to have a functional board they must identify the stages of their workflow process and then configure the board to match.
 

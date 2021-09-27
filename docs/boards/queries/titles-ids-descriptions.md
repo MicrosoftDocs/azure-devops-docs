@@ -230,98 +230,172 @@ The following table describes common fields used to filter queries. The **ID** f
 > [!NOTE]   
 > The system automatically indexes all long-text fields with a data type of **PlainText** and **HTML** fields for full-text search. This includes the **Title**, **Description**, and **Steps to Repro** fields. For more information and  server and collation requirements applicable to on-premises Azure DevOps, see [Query fields, operators, values, and variables - Full-text and partial word searches](query-operators-variables.md#full-text).
 
+:::row:::
+     :::column span="1":::
+   Field name
+   :::column-end:::
+     :::column span="1":::
+   Description
+   :::column-end:::
+     :::column span="1":::
+   Work item type
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Acceptance Criteria  <sup>1</sup>
 
-<table width="100%">
-<tbody valign="top">
-<tr>
-  <th width="22%">Field name</th>
-  <th width="56%">Description</th>
-  <th width="22%">Work item type</th>
-</tr>
-<tr>
-    <td><p>Acceptance Criteria  <sup>1</sup></p></td>
-    <td><p>A description of the criteria to be met before the bug or product backlog item can be closed.</p><p>Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p> 
-<p>Reference name=Microsoft.VSTS.Common.AcceptanceCriteria, Data type=HTML</p>  </td><br/>    <td><p>Bug, Epic, Feature, Product backlog item (Scrum)</p></td>
-</tr>
-<tr>
-  <td>
-Description <sup>1, 2</sup>
-  </td>
-  <td>
-    <p>Use this field to provide in-depth information about a work item.</p>
-    <p>Reference name=System.Description, Data type=HTML</p>
-  </td>
-<td>All</td>
-</tr>
-<tr>
-<td>
-ID
-</td>
-<td>
-The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within a project collection.<br/>    <p>Reference name=System.Id, Data type=Integer</p>
-</td>
-<td>All</td>
-</tr>
-<tr>
-  <td>
-Repro Steps (or Steps to reproduce) <sup>1</sup> 
-  </td>
-  <td>
-    <p>The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior. 
-</p> 
-    <p>Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML</p>
-  </td>
-<td>Bug</td>
-</tr>
-<tr>
-    <td><p>Resolution</p></td>
-    <td><p>Describes how an impediment was resolved.</p>
-<p>Reference name=Microsoft.VSTS.Common.Resolution, Data type=HTML</p>  </td><br/>    <td><p>Impediment (Scrum)</p></td>
-</tr>
-<tr>
-  <td>
-System Info<sup>1</sup> 
-  </td>
-  <td>
-    <p>Information about the software and system configuration that is relevant to the bug, code review, or feedback. </p>
-    <p>Reference name=Microsoft.VSTS.TCM.SystemInfo, Data type=HTML</p>
-  </td>
-  <td>Bug, Code Review Request, Feedback Request<br/>  </td>
-</tr>
-<tr>
-<td>
-Team Project
-</td>
-<td>
-<p>The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. </p>
-<blockquote><strong>Note:</strong>&#160;&#160;For Azure Boards or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see <a href="using-queries.md#across-projects" data-raw-source="[Example queries, query across projects](using-queries.md#across-projects)">Example queries, query across projects</a>. </blockquote>
-<p>Reference name=System.TeamProject, Data type=String</p>
-</td>
-<td>All</td>
-</tr>
-<tr>
-  <td>
-Title
-  </td>
-  <td>
-<p>A short description that summarizes what the work item is and helps team members distinguish it from other work items in a list.</p>
-    <p>Reference name=System.Title, Data type=String</p>
-  </td>
-<td>All</td>
-</tr>
-<tr>
-  <td>
-Work Item Type
-  </td>
-  <td>
-    <p>The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see <a href="../work-items/guidance/choose-process.md" data-raw-source="[Choose process](../work-items/guidance/choose-process.md)">Choose process</a>. To learn how to add a custom work item type, see <a href="../../reference/add-modify-wit.md" data-raw-source="[Add or modify a work item type](../../reference/add-modify-wit.md)">Add or modify a work item type</a>. </p>
-<p>To filter work items based on their <a href="#category" data-raw-source="[category assignment](#category)">category assignment</a>, you can use the <strong>In Group</strong> and <strong>Not In Group</strong> operators and select a category from the drop-down list.<br/>    <p>Reference name=System.WorkItemType, Data type=String</p>
-  </td>
-<td>All</td>
-</tr>
-</tbody>
-</table>
+   :::column-end:::
+   :::column span="3":::
+   A description of the criteria to be met before the bug or product backlog item can be closed.
 
+   Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.
+ 
+   Reference name=Microsoft.VSTS.Common.AcceptanceCriteria, Data type=HTML
+  
+   :::column-end:::     :::column span="1":::
+   Bug, Epic, Feature, Product backlog item (Scrum)
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Description <sup>1, 2</sup>
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   Use this field to provide in-depth information about a work item.
+
+   Reference name=System.Description, Data type=HTML
+
+  
+   :::column-end:::
+   :::column span="3":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   ID
+   :::column-end:::
+   :::column span="3":::
+   
+   The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within a project collection.  Reference name=System.Id, Data type=Integer
+
+   :::column-end:::
+   :::column span="3":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Repro Steps (or Steps to reproduce) <sup>1</sup> 
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior. 
+    
+   Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML
+
+  
+   :::column-end:::
+   :::column span="3":::
+   Bug
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Resolution
+
+   :::column-end:::
+   :::column span="3":::
+   Describes how an impediment was resolved.
+
+   Reference name=Microsoft.VSTS.Common.Resolution, Data type=HTML
+  
+   :::column-end:::     :::column span="1":::
+   Impediment (Scrum)
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   System Info<sup>1</sup> 
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   Information about the software and system configuration that is relevant to the bug, code review, or feedback. 
+
+   Reference name=Microsoft.VSTS.TCM.SystemInfo, Data type=HTML
+
+  
+   :::column-end:::
+     :::column span="1":::
+   Bug, Code Review Request, Feedback Request    
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   Team Project
+   :::column-end:::
+   :::column span="3":::
+   
+   The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. 
+
+   > [!NOTE]
+   > &#160;&#160;For Azure Boards or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across projects](using-queries.md#across-projects). 
+
+   Reference name=System.TeamProject, Data type=String
+
+   :::column-end:::
+   :::column span="3":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Title
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   A short description that summarizes what the work item is and helps team members distinguish it from other work items in a list.
+
+   Reference name=System.Title, Data type=String
+
+  
+   :::column-end:::
+   :::column span="3":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Work Item Type
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see [Choose process](../work-items/guidance/choose-process.md). To learn how to add a custom work item type, see [Add or modify a work item type](../../reference/add-modify-wit.md). 
+
+   To filter work items based on their [category assignment](#category), you can use the **In Group** and **Not In Group** operators and select a category from the drop-down list.  <p>Reference name=System.WorkItemType, Data type=String
+
+  
+   :::column-end:::
+   :::column span="3":::
+   All
+   :::column-end:::
+:::row-end:::
 
 #### Notes:   
 

@@ -173,269 +173,636 @@ The following table indicates those elements or tasks associated with each type 
 
 ::: moniker range=">= azure-devops-2019"
 
-<table width="100%"> 
-<tbody valign="top">
-<tr>
-<th width="25%">Associated element or task</th>
-<th width="15%">Backlog type:<br/>Portfolio</th>
-<th width="15%">Backlog type:<br/>Product</th>
-<th width="15%">Board type:<br/>Kanban</th>
-<th width="15%">Backlog type:<br/>Sprint</th>
-<th width="15%">Board type:<br/>Task</th>
-</tr>
-<tr>
-<td>Corresponding backlog or board type</td>
-<td>Kanban</td>
-<td>Kanban</td>
-<td>Portfolio or product</td>
-<td>Task</td>
-<td>Sprint</td>
-</tr>
-<tr>
-<td>Add items and child items<br/>(see notes 1, 2)</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Reorder items</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Map items</td>
-<td>Yes (except the top-level portfolio backlog)</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<tr>
-<td>Filter by keyword and select fields</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Show/hide parents</td>
-<td>Yes (except the top-level portfolio backlog)</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Show/hide in progress items<br/>(see note 3)</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Forecast</td>
-<td>No</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Customize: show bugs (see note 1)</td>
-<td>No </td>
-<td>Yes </td>
-<td>Yes </td>
-<td>Yes </td>
-<td>Yes </td>
-</tr>
-<tr>
-<td>Configure: Columns</td>
-<td>Yes, see <a href="set-column-options.md">Column options</a></td>
-<td>Yes, see <a href="set-column-options.md">Column options</a></td>
-<td>Yes, see <a href="../boards/add-columns.md">Add columns</a></td>
-<td>Yes, see <a href="set-column-options.md">Column options</a></td>
-<td>Yes, see <a href="../sprints/customize-taskboard.md">Customize Taskboard</a></td>
-</tr>
-<tr>
-<td>Display rollup progress, counts, or totals</td>
-<td>Yes, see [Display rollup](display-rollup.md) </td>
-<td>Yes, see [Display rollup](display-rollup.md)</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Customize: Add more backlog or board views </td>
-<td>Yes, see <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)">Select backlog navigation levels</a></td>
-<td>Yes, when you add another team (see note 4)</td>
-<td>Yes, see <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)">Select backlog navigation levels</a></td>
-<td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
-<td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
-</tr>
-<tr>
-<td>Customize cards</td>
-<td>n/a</td>
-<td>n/a</td>
-<td><a href="../../boards/boards/customize-cards.md">Customize: cards</a></td></td>
-<td>n/a</td>
-<td><a href="../sprints/customize-taskboard.md">Customize Taskboard</a></td>
-</tr>
-<tr>
-<td>In-context reports </td>
-<td><a href="../../report/dashboards/cumulative-flow.md">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md">Velocity</a></td>
-<td><a href="../../report/dashboards/cumulative-flow.md">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md">Velocity</a></td>
-<td><a href="../../report/dashboards/cumulative-flow.md">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md">Velocity</a></td>
-<td><a href="../../report/dashboards/configure-sprint-burndown.md">Sprint burndown</a> </td>
-<td><a href="../../report/dashboards/configure-sprint-burndown.md">Sprint burndown</a> </td>
-</tr>
-<tr>
-<td>Duration (see note 5) </td>
-<td>Project or release</td>
-<td>Project</td>
-<td>Project</td>
-<td>Sprint</td>
-<td>Sprint</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Associated element or task**
+   :::column-end:::
+   :::column span="1":::
+   **Backlog type:**  **Portfolio**
+   :::column-end:::
+   :::column span="1":::
+   **Backlog type:**  **Product**
+   :::column-end:::
+   :::column span="1":::
+   **Board type:**  **Kanban**
+   :::column-end:::
+   :::column span="1":::
+   **Backlog type:**  **Sprint**
+   :::column-end:::
+   :::column span="1":::
+   **Board type:**  **Task**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Corresponding backlog or board type
+   :::column-end:::
+   :::column span="1":::
+   Kanban
+   :::column-end:::
+   :::column span="1":::
+   Kanban
+   :::column-end:::
+   :::column span="1":::
+   Portfolio or product
+   :::column-end:::
+   :::column span="1":::
+   Task
+   :::column-end:::
+   :::column span="1":::
+   Sprint
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Add items and child items  (see notes 1, 2)
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Reorder items
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Map items
+   :::column-end:::
+   :::column span="1":::
+   Yes (except the top-level portfolio backlog)
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+:::row:::
+   :::column span="1":::
+   Filter by keyword and select fields
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Show/hide parents
+   :::column-end:::
+   :::column span="1":::
+   Yes (except the top-level portfolio backlog)
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Show/hide in progress items  (see note 3)
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Forecast
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Customize: show bugs (see note 1)
+   :::column-end:::
+   :::column span="1":::
+   No 
+   :::column-end:::
+   :::column span="1":::
+   Yes 
+   :::column-end:::
+   :::column span="1":::
+   Yes 
+   :::column-end:::
+   :::column span="1":::
+   Yes 
+   :::column-end:::
+   :::column span="1":::
+   Yes 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Configure: Columns
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Column options](set-column-options.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Column options](set-column-options.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Add columns](../boards/add-columns.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Column options](set-column-options.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Customize Taskboard](../sprints/customize-taskboard.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Display rollup progress, counts, or totals
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Display rollup](display-rollup.md) 
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Display rollup](display-rollup.md)
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Customize: Add more backlog or board views 
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, when you add another team (see note 4)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Schedule sprints](../sprints/define-sprints.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Schedule sprints](../sprints/define-sprints.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Customize cards
+   :::column-end:::
+   :::column span="1":::
+   n/a
+   :::column-end:::
+   :::column span="1":::
+   n/a
+   :::column-end:::
+   :::column span="1":::
+   [Customize: cards](../../boards/boards/customize-cards.md)
+   :::column-end:::
+   :::column-end:::
+   :::column span="1":::
+   n/a
+   :::column-end:::
+   :::column span="1":::
+   [Customize Taskboard](../sprints/customize-taskboard.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   In-context reports 
+   :::column-end:::
+   :::column span="1":::
+   [Cumulative flow](../../report/dashboards/cumulative-flow.md)  [Velocity](../../report/dashboards/team-velocity.md)
+   :::column-end:::
+   :::column span="1":::
+   [Cumulative flow](../../report/dashboards/cumulative-flow.md)  [Velocity](../../report/dashboards/team-velocity.md)
+   :::column-end:::
+   :::column span="1":::
+   [Cumulative flow](../../report/dashboards/cumulative-flow.md)  [Velocity](../../report/dashboards/team-velocity.md)
+   :::column-end:::
+   :::column span="1":::
+   [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md) 
+   :::column-end:::
+   :::column span="1":::
+   [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md) 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Duration (see note 5) 
+   :::column-end:::
+   :::column span="1":::
+   Project or release
+   :::column-end:::
+   :::column span="1":::
+   Project
+   :::column-end:::
+   :::column span="1":::
+   Project
+   :::column-end:::
+   :::column span="1":::
+   Sprint
+   :::column-end:::
+   :::column span="1":::
+   Sprint
+   :::column-end:::
+:::row-end:::
+
 
 ::: moniker-end
 
 
 ::: moniker range="<= tfs-2018"
 
-<table width="100%"> 
-<tbody valign="top">
-<tr>
-<th width="25%">Associated element or task</th>
-<th width="15%">Backlog type:<br/>Portfolio</th>
-<th width="15%">Backlog type:<br/>Product</th>
-<th width="15%">Board type:<br/>Kanban</th>
-<th width="15%">Backlog type:<br/>Sprint</th>
-<th width="15%">Board type:<br/>Task</th>
-</tr>
-<tr>
-<td>Corresponding backlog or board type</td>
-<td>Kanban</td>
-<td>Kanban</td>
-<td>Portfolio or product</td>
-<td>Task</td>
-<td>Sprint</td>
-</tr>
-<tr>
-<td>Add items and child items<br/>(see notes 1, 2)</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Reorder items</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Map items</td>
-<td>Yes (except the top-level portfolio backlog)</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Filter</td>
-<td>Text or tags</td>
-<td>Text or tags</td>
-<td>Text or select fields</td>
-<td>Text</td>
-<td>Backlog items or people</td>
-</tr>
-<tr>
-<td>Show/hide parents</td>
-<td>Yes (except the top-level portfolio backlog)</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Show/hide in progress items<br/>(see note 3)</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Forecast</td>
-<td>No</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Customize: show bugs (see note 1)</td>
-<td>No </td>
-<td>Yes </td>
-<td>Yes </td>
-<td>Yes </td>
-<td>Yes </td>
-</tr>
-<tr>
-<td>Customize: Columns</td>
-<td>Yes, see <a href="set-column-options.md" data-raw-source="[Column options](set-column-options.md)">Column options</a></td>
-<td>Yes, see <a href="set-column-options.md" data-raw-source="[Column options](set-column-options.md)">Column options</a></td>
-<td>Yes, see <a href="../boards/add-columns.md" data-raw-source="[Add columns](../boards/add-columns.md)">Add columns</a></td>
-<td>Yes, see <a href="set-column-options.md" data-raw-source="[Column options](set-column-options.md)">Column options</a></td>
-<td>Yes, see <a href="../sprints/customize-taskboard.md" data-raw-source="[Customize Taskboard](../sprints/customize-taskboard.md)">Customize Taskboard</a></td>
-</tr>
-<tr>
-<td>Customize: Add more backlog or board views </td>
-<td>Yes, see <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)">Select backlog navigation levels</a></td>
-<td>Yes, when you add another team (see note 4)</td>
-<td>Yes, see <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)">Select backlog navigation levels</a></td>
-<td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
-<td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
-</tr>
-<tr>
-<td><a href="../../boards/boards/customize-cards.md" data-raw-source="[Customize: cards](../../boards/boards/customize-cards.md)">Customize: cards</a></td>
-<td>n/a</td>
-<td>n/a</td>
-<td>Yes</td>
-<td>n/a</td>
-<td><a href="../sprints/customize-taskboard.md" data-raw-source="[Customize Taskboard](../sprints/customize-taskboard.md)">Customize Taskboard</a></td>
-</tr>
-<tr>
-<td>Charts </td>
-<td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></td>
-<td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></td>
-<td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></td>
-<td><a href="../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[Sprint burndown](../../report/dashboards/configure-sprint-burndown.md)">Sprint burndown</a> </td>
-<td><a href="../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[Sprint burndown](../../report/dashboards/configure-sprint-burndown.md)">Sprint burndown</a> </td>
-</tr>
-<tr>
-<td>Duration (see note 5) </td>
-<td>Project or release</td>
-<td>Project</td>
-<td>Project</td>
-<td>Sprint</td>
-<td>Sprint</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Associated element or task**
+   :::column-end:::
+   :::column span="1":::
+   **Backlog type:**  **Portfolio**
+   :::column-end:::
+   :::column span="1":::
+   **Backlog type:**  **Product**
+   :::column-end:::
+   :::column span="1":::
+   **Board type:**  **Kanban**
+   :::column-end:::
+   :::column span="1":::
+   **Backlog type:**  **Sprint**
+   :::column-end:::
+   :::column span="1":::
+   **Board type:**  **Task**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Corresponding backlog or board type
+   :::column-end:::
+   :::column span="1":::
+   Kanban
+   :::column-end:::
+   :::column span="1":::
+   Kanban
+   :::column-end:::
+   :::column span="1":::
+   Portfolio or product
+   :::column-end:::
+   :::column span="1":::
+   Task
+   :::column-end:::
+   :::column span="1":::
+   Sprint
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Add items and child items  (see notes 1, 2)
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Reorder items
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Map items
+   :::column-end:::
+   :::column span="1":::
+   Yes (except the top-level portfolio backlog)
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Filter
+   :::column-end:::
+   :::column span="1":::
+   Text or tags
+   :::column-end:::
+   :::column span="1":::
+   Text or tags
+   :::column-end:::
+   :::column span="1":::
+   Text or select fields
+   :::column-end:::
+   :::column span="1":::
+   Text
+   :::column-end:::
+   :::column span="1":::
+   Backlog items or people
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Show/hide parents
+   :::column-end:::
+   :::column span="1":::
+   Yes (except the top-level portfolio backlog)
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Show/hide in progress items  (see note 3)
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Forecast
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Customize: show bugs (see note 1)
+   :::column-end:::
+   :::column span="1":::
+   No 
+   :::column-end:::
+   :::column span="1":::
+   Yes 
+   :::column-end:::
+   :::column span="1":::
+   Yes 
+   :::column-end:::
+   :::column span="1":::
+   Yes 
+   :::column-end:::
+   :::column span="1":::
+   Yes 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Customize: Columns
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Column options](set-column-options.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Column options](set-column-options.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Add columns](../boards/add-columns.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Column options](set-column-options.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Customize Taskboard](../sprints/customize-taskboard.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Customize: Add more backlog or board views 
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, when you add another team (see note 4)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Schedule sprints](../sprints/define-sprints.md)
+   :::column-end:::
+   :::column span="1":::
+   Yes, see [Schedule sprints](../sprints/define-sprints.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Customize: cards](../../boards/boards/customize-cards.md)
+   :::column-end:::
+   :::column span="1":::
+   n/a
+   :::column-end:::
+   :::column span="1":::
+   n/a
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+   :::column span="1":::
+   n/a
+   :::column-end:::
+   :::column span="1":::
+   [Customize Taskboard](../sprints/customize-taskboard.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Charts 
+   :::column-end:::
+   :::column span="1":::
+   [Cumulative flow](../../report/dashboards/cumulative-flow.md)  [Velocity](../../report/dashboards/team-velocity.md)
+   :::column-end:::
+   :::column span="1":::
+   [Cumulative flow](../../report/dashboards/cumulative-flow.md)  [Velocity](../../report/dashboards/team-velocity.md)
+   :::column-end:::
+   :::column span="1":::
+   [Cumulative flow](../../report/dashboards/cumulative-flow.md)  [Velocity](../../report/dashboards/team-velocity.md)
+   :::column-end:::
+   :::column span="1":::
+   [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md) 
+   :::column-end:::
+   :::column span="1":::
+   [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md) 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Duration (see note 5) 
+   :::column-end:::
+   :::column span="1":::
+   Project or release
+   :::column-end:::
+   :::column span="1":::
+   Project
+   :::column-end:::
+   :::column span="1":::
+   Project
+   :::column-end:::
+   :::column span="1":::
+   Sprint
+   :::column-end:::
+   :::column span="1":::
+   Sprint
+   :::column-end:::
+:::row-end:::
+
 
 ::: moniker-end
 

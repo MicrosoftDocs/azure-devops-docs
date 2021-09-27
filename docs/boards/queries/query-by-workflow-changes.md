@@ -103,71 +103,96 @@ Use the search box or query editor to quickly find work items based on an assign
 
 Use **=** to find current assignments, **Was Ever** to list items based on past assignments, and <strong>@Me</strong> to scope to your user identity. 
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-  <th>
-    <p>Filter for</p>
-  </th>
-  <th>
-    <p>Include these query clauses</p>
-  </th>
-</tr>
-<tr>
-  <td>
-    <p>Active items assigned to me</p>
-  </td>
-  <td>
-    <p>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Assigned To <em> = </em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-<p><code>And <em> State </em> = <em> Active</code></p>
-</td>
-</tr>
-<tr>
-<tr>
-  <td>
-    <p>Closed items that at some point was assigned to me</p>
-  </td>
-  <td>
-    <p>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Assigned To </em> Was Ever <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-<p><code>And </em> State <em> = </em> Closed</code></p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Active user stories assigned to my (Web) team</p>
-  </td>
-  <td>
-    <p>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type = User Story</code></p>
-<p><code>And <em> State </em> = <em> Active</code></p>
-<p><code>And </em> Assigned To <em> In Group </em> [FabrikamFiber]\Web</code></p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Items I&#39;ve modified in the last 30 days</p>
-  </td>
-  <td>
-    <p>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Changed By <em> = </em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-<p><code>And <em> Changed Date </em> &gt;= <em>   <xref href="Today-30" data-throw-if-not-resolved="False" data-raw-source="@Today-30"></xref></code></p>
-  </td>
-</tr>
+:::row:::
+     :::column span="1":::
+   
+   Filter for
 
-<tr>
-  <td>
-    <p>Unassigned items (leave the Value blank)</p>
-  </td>
-  <td>
-    <p>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Assigned To </em> = _</code></p>
-  </td>
-</tr>
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   Include these query clauses
 
-</tbody>
-</table>
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Active items assigned to me
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To * = * <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`
+   `And * State * = <em> Active`
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+:::row:::
+     :::column span="1":::
+   
+   Closed items that at some point was assigned to me
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To </em> Was Ever <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`
+   `And </em> State * = * Closed`
+
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Active user stories assigned to my (Web) team
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = User Story`
+   `And * State * = <em> Active`
+
+   `And </em> Assigned To * In Group * [FabrikamFiber]\Web`
+
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Items I&#39;ve modified in the last 30 days
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Changed By * = * <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`
+   `And * Changed Date * >= <em>   <xref href="Today-30" data-throw-if-not-resolved="False" data-raw-source="@Today-30"></xref>`
+
+  
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+     :::column span="1":::
+   
+   Unassigned items (leave the Value blank)
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To </em> = _`
+  
+   :::column-end:::
+:::row-end:::
 
 <!---
 ![Was Ever operator to query for past assignment](media/example-work-item-queries/IC697729.png)
@@ -193,67 +218,88 @@ You can use the **In Group** or **Not In Group** operators to filter a query bas
 
 You use the State, Reason, and Resolved Reason fields to query for items based on workflow changes. 
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-  <th>Filter for</th>
-  <th>Include these query clauses</th>
-</tr>
-<tr>
-  <td>
-    <p>Resolved stories
-    </p>
-</td>
-  <td>
-    <p>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> User Story</code></p>
-<p><code>And <em> State </em> = <em> Resolved</code></p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Stories, bugs, and tasks that are new or active
-    </p>
-</td>
-  <td>
-    <p>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type </em> In <em> User Story,Bug,Task</code></p>
-<p><code>And </em> State <em> In </em> New,Active</code></p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Items removed as they&#39;re duplicate  </p>
-  </td>
-  <td>
-    <p>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>State <em> = </em> Removed</code></p>
-<p><code>And <em> Reason </em> = <em> Duplicate</code></p>
-  </td>
-</tr>
+:::row:::
+     :::column span="1":::
+   Filter for
+   :::column-end:::
+     :::column span="1":::
+   Include these query clauses
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Resolved stories
+   
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * = * User Story`
+   `And * State * = <em> Resolved`
 
-<tr>
-  <td>
-    <p>Items failing acceptance tests  </p>
-  </td>
-  <td>
-    <p>
-      <code>Resolved Reason = Acceptance tests fail</code>
-    </p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Items closed within the last 15 days</p>
-  </td>
-  <td>
-    <p>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>State </em> = <em> Closed</code></p>
-<p><code>And </em> Closed Date  <em> &gt;  </em> <xref href="Today-15" data-throw-if-not-resolved="False" data-raw-source="@Today-15"></xref></code></p>
-  </td>
-</tr>
-</tbody>
-</table>
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Stories, bugs, and tasks that are new or active
+   
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type </em> In <em> User Story,Bug,Task`
+   `And </em> State * In * New,Active`
+
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Items removed as they&#39;re duplicate  
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State * = * Removed`
+   `And * Reason * = <em> Duplicate`
+
+  
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+     :::column span="1":::
+   
+   Items failing acceptance tests  
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   `Resolved Reason = Acceptance tests fail`
+   
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Items closed within the last 15 days
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State </em> = <em> Closed`
+   `And </em> Closed Date  * >  * <xref href="Today-15" data-throw-if-not-resolved="False" data-raw-source="@Today-15"></xref>`
+
+  
+   :::column-end:::
+:::row-end:::
+
 
 <a id="workflow-change-who"/> 
 
@@ -261,34 +307,43 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
 
 You can quickly find items that you changed, resolved, or closed. You can also find items that were changed by other team members. Several fields&mdash;such as the Created By, Changed By, Resolved By, and Closed By&mdash;are populated based on changes to the workflow.  
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-  <th>Filter for</th>
-  <th>Include these query clauses</th>
-</tr>
-<tr>
-  <td>
-    <p>User Stories that I closed </p>
-</td>
-  <td>
-    <p>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> User Story</code></p>
-<p><code>And <em> Closed By </em> = <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Items I resolved in the last week</p>
-  </td>
-  <td>
-    <p>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Resolved By </em> = <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-<p><code>And </em> Resolved Date <em> &gt;= </em> <xref href="Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"></xref></code></p>
-  </td>
-</tr>
-</tbody>
-</table>
+:::row:::
+     :::column span="1":::
+   Filter for
+   :::column-end:::
+     :::column span="1":::
+   Include these query clauses
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   User Stories that I closed 
+
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * = * User Story`
+   `And * Closed By * = <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`
+
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Items I resolved in the last week
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Resolved By </em> = <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`
+   `And </em> Resolved Date * >= * <xref href="Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"></xref>`
+
+  
+   :::column-end:::
+:::row-end:::
 
 
 ## Query changes in work item state 

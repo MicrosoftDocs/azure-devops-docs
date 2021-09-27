@@ -79,32 +79,33 @@ As work progresses, team members can update the state and reassign it as needed.
 
 While the workflow states differ for different work item types, they usually follow a progression from New or Active to Closed or Done. The following image shows the work flow states for the Agile process user story. If you want to discard a work item, change the state to Removed.  
 
-<table>
-<tbody valign="top">
-<tr>
-<td>
-<p><b>Typical workflow progression:</b> </p> 
-<ul>
-<li>Create a user story in the default state, New.</li>
-<li>Change the state from New to Active.</li>
-<li>Change the state from Active to Resolved.</li>
-<li>Change the state from Resolved to Closed.</li>
-</ul>
-<br/>
-<p><b>Atypical transitions:</b> </p> 
-<ul>
-<li>Change the state from New to Removed.</li>
-<li>Change the state from Removed to New.</li>
-<li>Change the state from Active to Removed.</li>
-<li>Change the state from Resolved to Active.</li>
-<li>Change the state from Closed to Resolved.</li>
-</ul>
-</td>
-<td>
-<img src="./guidance/media/ALM_PT_Agile_WF_UserStory.png" alt="Work flow states for the Agile process user story."/><br/></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   
+   **Typical workflow progression:** 
+ 
+   
+   - Create a user story in the default state, New.
+   - Change the state from New to Active.
+   - Change the state from Active to Resolved.
+   - Change the state from Resolved to Closed.
+   
+     
+   **Atypical transitions:** 
+ 
+   
+   - Change the state from New to Removed.
+   - Change the state from Removed to New.
+   - Change the state from Active to Removed.
+   - Change the state from Resolved to Active.
+   - Change the state from Closed to Resolved.
+   
+   :::column-end:::
+   :::column span="3":::
+   
+   ![Work flow states for the Agile process user story.](./guidance/media/ALM_PT_Agile_WF_UserStory.png)  
+   :::column-end:::
+:::row-end:::
 
 Removed work items remain in the data store and can be reactivated by changing the State. If you want to permanently remove a work item, you can [delete it](../backlogs/remove-delete-work-items.md). 
 
