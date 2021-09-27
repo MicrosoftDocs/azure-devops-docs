@@ -260,10 +260,10 @@ The following table describes each plug-in file and whether or not it is support
  
    
    - **[Categories.xml](add-type-wit-category-definitions-process-template.md)**: Defines the XML definition file for the categories used to group work item types.   
-   - **[LinkTypes](add-link-type-definitions-to-a-process-template.md)**:     
-     - **SharedParameterLink.xml**: Defines the link type that supports linking shared parameters to test cases. 
-     - **SharedSteps**: Defines the link type that supports linking shared steps to test cases.
-      **TestedBy**: Defines the link type that supports linking test cases to work items such as product backlog items, user stories, requirements, and bugs.
+   - **[LinkTypes](add-link-type-definitions-to-a-process-template.md)**:  
+      - **SharedParameterLink.xml**: Defines the link type that supports linking shared parameters to test cases. 
+      - **SharedSteps**: Defines the link type that supports linking shared steps to test cases.
+      - **TestedBy**: Defines the link type that supports linking test cases to work items such as product backlog items, user stories, requirements, and bugs.
    
    Additional link types may be defined based on the process template. For a description of all link types, see [Link work items to support traceability and manage dependencies](../../boards/queries/link-work-items-support-traceability.md). 
     
