@@ -118,7 +118,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
    :::column span="1":::
    **Boolean field with checkbox**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Boolean field with toggle control**
    :::column-end:::
 :::row-end::: 
@@ -126,7 +126,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
    :::column span="1":::
    ![Boolean field with checkbox](media/process/boolean-checkbox.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    ![Boolean field with toggle control](media/process/boolean-toggle.png)
    :::column-end:::
 :::row-end::: 
