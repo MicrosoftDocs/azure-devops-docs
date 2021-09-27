@@ -977,8 +977,8 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 
-<p><b>Bootstrap the developer environment</b></p>
-<p>Increase your team&#39;s velocity and decrease the amount of code duplication across your organization. Access a set of tools and conventions for integrating Azure DevOps Services NuGet into your workflow by <a href="../artifacts/nuget/bootstrap-nuget.md" data-raw-source="[getting the NuGet VSS.PackageManagement.Bootstrap package](../artifacts/nuget/bootstrap-nuget.md)">getting the NuGet VSS.PackageManagement.Bootstrap package</a>.</p>
+<p><b>Upstream sources</b></p>
+<p>use a single feed to manage packages from different sources. Publish and install packages from your feed and public registries with  <a href="../artifacts/concepts/upstream-sources.md" data-raw-source="[Upstream Sources](../artifacts/concepts/upstream-sources.md)">Upstream Sources</a>.</p>
 
 
 <p><b>Remove a NuGet package from a feed </b></p>
