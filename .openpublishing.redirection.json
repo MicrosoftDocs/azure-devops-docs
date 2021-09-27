@@ -12110,7 +12110,7 @@
       "source_path": "docs/migrate/security-validation-cicd-pipeline.md",
       "redirect_url": "/azure/devops/pipelines/security/overview",
       "redirect_document_id": false
-    }
+    },
     {
       "source_path": "docs/articles/phase-rollout-with-rings.md",
       "redirect_url": "/azure/devops/migrate/phase-rollout-with-rings",
