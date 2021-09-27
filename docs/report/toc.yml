@@ -4,7 +4,7 @@
   displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
   href: dashboards/overview.md
 - name: Get started
-  expanded: false
+  expanded: true
   items:
   - name: Quick reference
     href: dashboards/quick-ref.md
@@ -12,10 +12,6 @@
     href: dashboards/widget-catalog.md
   - name: Analytics-based widgets
     href: dashboards/analytics-widgets.md
-  - name: What is the Analytics service?
-    href: powerbi/what-is-analytics.md
-  - name: Reporting roadmap 
-    href: powerbi/reporting-roadmap.md
 - name: Dashboards
   items:
   - name: "Add, rename, & delete dashboards"
@@ -62,7 +58,7 @@
     href: ../test/track-test-status.md?bc=%2fazure%2fdevops%2freport%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2ftoc.json
     displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
   - name: Test progress report 
-    href: ../../test/progress-report.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+    href: ../test/progress-report.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
 - name: Pipelines & test results 
   href: dashboards/toc.yml 
 - name: Work tracking guidance
