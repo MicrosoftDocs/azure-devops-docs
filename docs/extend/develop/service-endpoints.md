@@ -100,7 +100,6 @@ Add the following `contributions` array underneath the `targets` array of the ba
 > [!IMPORTANT]
 >
 > - Service connection parameters must be fetched by service connection ID.
-> - You can add inputDescriptors without authenticationSchemes. The following json example contains both.
 
 ```json
   "contributions": [
@@ -168,6 +167,9 @@ Create a service endpoint using the Fabrikam endpoint.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of service endpoint set up.](media/service-endpoint-setup.png)
+
+> [!TIP]
+> You can add inputDescriptors without authenticationSchemes. For more information, see [InputDescriptor interface](/javascript/api/azure-devops-extension-api/inputdescriptor).
 
 <a name="buildtask" />
 
