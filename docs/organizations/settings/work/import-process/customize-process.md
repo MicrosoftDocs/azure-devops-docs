@@ -35,7 +35,7 @@ A process is a zip file that contains a set of interdependent files. These files
    :::column-end:::
    :::column span="3":::
    **Ignored** 
-   :::column-end:::<br/>
+   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
