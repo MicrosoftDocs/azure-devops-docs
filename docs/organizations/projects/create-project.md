@@ -357,7 +357,7 @@ You can create a project from Visual Studio/Team Explorer after you've connected
    :::column span="1":::
    ![Team Explorer Home page w/ TFVC as source control](media/IC827209.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    ![Team Explorer Home page with Git as source control](media/IC827210.png)
    :::column-end:::
 :::row-end:::
