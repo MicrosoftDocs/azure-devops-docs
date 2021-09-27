@@ -27,13 +27,13 @@ A process is a zip file that contains a set of interdependent files. These files
    :::column span="1":::
    **Used when importing/updating a process**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Used when creating a new project**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Replaced by system defaults**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Ignored** 
    :::column-end:::
 :::row-end:::
@@ -49,7 +49,7 @@ A process is a zip file that contains a set of interdependent files. These files
    Process Configuration  
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    Areas and Iterations  
 
@@ -60,7 +60,7 @@ A process is a zip file that contains a set of interdependent files. These files
    Work Item Queries  
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    Build  
 
@@ -69,7 +69,7 @@ A process is a zip file that contains a set of interdependent files. These files
    Version Control  
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    Microsoft Project Mappings  
 

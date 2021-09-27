@@ -167,7 +167,7 @@ You can then pay for more users with Basic access, buy more services, and purcha
    - [Add a group rule to assign access levels and extensions](assign-access-levels-by-group-membership.md)
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    
    #### Organization settings
    

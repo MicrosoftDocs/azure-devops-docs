@@ -134,7 +134,7 @@ This syntax has been been added to the following work item type definitions of t
 > [!div class="mx-tdBreakAll"]  
 > |Agile|Basic|Scrum|CMMI |  
 > |-----|-----|-----|-----|  
-> |- Bug  - Epic  - Feature  - Issue  - Task  - Test Case  - User Story|- Issue  - Task  - Test Case|- Bug  - Epic  - Feature   - Impediment   - Product Backlog Item  - Task  - Test Case|- Bug  - Change Request  - Epic  - Feature  - Issue  - Requirement  - Review  - Risk  - Task|
+> |- Bug<br/>- Epic<br/>- Feature<br/>- Issue<br/>- Task<br/>- Test Case<br/>- User Story|- Issue<br/>- Task<br/>- Test Case|- Bug<br/>- Epic<br/>- Feature<br/> - Impediment<br/> - Product Backlog Item<br/>- Task<br/>- Test Case|- Bug<br/>- Change Request<br/>- Epic<br/>- Feature<br/>- Issue<br/>- Requirement<br/>- Review<br/>- Risk<br/>- Task|
 
 
 <a id="hosted-xml-sequence"></a>
