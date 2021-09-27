@@ -131,7 +131,7 @@ The Velocity widget will help you learn how much work your team can complete dur
 
 To learn more, see [Configure and view Velocity widgets](team-velocity.md).  
 
-## Test Results Trend (Advanced) widget
+## Test Results Trend (Advanced)
 
 With the Test Results Trend (Advanced) widget, you can track the test quality of your pipelines over time. Tracking test quality and improving test collateral are essential tasks to maintaining a healthy DevOps pipeline.  
 
