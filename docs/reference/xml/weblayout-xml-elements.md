@@ -505,10 +505,8 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 
    
    - **DateTimeControl**: Use to display formatted date fields with a field type of **DateTime**.
-   - **FieldControl**: Use to display Boolean, plain text, numeric fields, person-name fields, and pick lists. Supports fields with a data type of **Boolean**, **Double**, **Identity**, **Integer**,**PlainText**m and **String**.  
-   
-   > **Feature availability:** The Boolean data type field is supported for TFS 2017 and later versions.  
-   
+   - **FieldControl**: Use to display Boolean, plain text, numeric fields, person-name fields, and pick lists. Supports fields with a data type of **Boolean**, **Double**, **Identity**, **Integer**,**PlainText**m and **String**.<br/><br/>
+   > **Feature availability:** The Boolean data type field is supported for TFS 2017 and later versions.     
    - **HtmlFieldControl**: Use to display multi-line, rich-text format of fields with a field type of **HTML**.
    - **LabelControl**: Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the **LabelText**, **Link** and **Text** elements.
    - **WebpageControl**: Use to display HTML-based content defined by a URI or embedded within a CDATA tag. This control does not have an associated field or field type. You specify the content and links to display using the **WebpageControlOptions** element.
