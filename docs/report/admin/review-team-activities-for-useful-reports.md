@@ -1,6 +1,6 @@
 ---
 title: Review team activities to support useful reports
-titleSuffix: TFS
+titleSuffix: Azure DevOps Server
 description: Ensure basic operations are performed by team members to generate useful SQL Server reports when working in Team Foundation Server    
 ms.assetid: 46456FBF-EECC-4096-9A98-3A9457F97EB2  
 ms.technology: devops-analytics
