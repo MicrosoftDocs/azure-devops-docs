@@ -304,7 +304,7 @@ The following table describes the **LinksControlOptions** element and its child 
    :::column span="3":::
    Required **Columns** element used to specify the work item and link-related fields to display within the links control. 
 
-   The order in which the **Column** elements are listed defines the order in which the column fields display in the control's grid.
+   The order in which the **Column** elements are listed defines the order in which the column fields display in the control's grid.  
 
    ```
    <Column Name="FieldName" />
@@ -340,7 +340,7 @@ The following table describes the **LinksControlOptions** element and its child 
 
    :::column-end:::
    :::column span="3":::
-   Optional **LinkFilters** element used to specify an external link type. With an external link type, users can create a link relationship to objects that are not work items, such as changesets, hyperlinks, and files under version control. 
+   Optional **LinkFilters** element used to specify an external link type. With an external link type, users can create a link relationship to objects that are not work items, such as changesets, hyperlinks, and files under version control.  
 
    ```
    <ExternalLinkFilter Type="ExternalLinkName" />
@@ -364,7 +364,7 @@ The following table describes the **LinksControlOptions** element and its child 
 
    :::column-end:::
    :::column span="3":::
-   Required child element of the **WorkItemTypeFilters** container element. Specifies the name of a work item type to include as an allowed type that users can link to from the links control. 
+   Required child element of the **WorkItemTypeFilters** container element. Specifies the name of a work item type to include as an allowed type that users can link to from the links control.  
 
    ```
    <Filter WorkItemType="WorkItemTypeName"  />
@@ -417,7 +417,7 @@ The following table describes the **LinksControlOptions** element and its child 
    :::column span="3":::
    Required container child element of **Control** element when **type="LinksControl"** and when used within the **WebLayout** element.
 
-   Use to scope the link types and work item types that users can add to a work item and the columns to appear for the list of link relationships in the work item form.
+   Use to scope the link types and work item types that users can add to a work item and the columns to appear for the list of link relationships in the work item form.  
 
    ```
    <LinksControlOptions ViewMode="Dynamic | Grid | List" 
@@ -448,7 +448,7 @@ The following table describes the **LinksControlOptions** element and its child 
    :::column span="3":::
    Optional **LinksControlOptions**  child element.
 
-   Use this container element to specify which link types are used to scope the control. List one or more **ExternalLinkFilter** or **WorkItemLinkFilter** elements to specify the link types to use to filter the links control.
+   Use this container element to specify which link types are used to scope the control. List one or more **ExternalLinkFilter** or **WorkItemLinkFilter** elements to specify the link types to use to filter the links control.  
 
    ```
    <LinkFilters> 
@@ -467,7 +467,7 @@ The following table describes the **LinksControlOptions** element and its child 
    :::column span="3":::
    Optional **LinksControlOptions** child element.
 
-   Specifies whether or not to group links according to their type. If `GroupLinks="false"` (default), links are not grouped by their link type.
+   Specifies whether or not to group links according to their type. If `GroupLinks="false"` (default), links are not grouped by their link type.  
 
    ```
    <ListViewOptions GroupLinks="true | false" />
@@ -483,7 +483,7 @@ The following table describes the **LinksControlOptions** element and its child 
    :::column span="3":::
    Optional **LinkFilters** child element.
 
-   Specifies a work-specific link type which is included within the links control. Users can create relationships to other work items only for those link types included in the links control.
+   Specifies a work-specific link type which is included within the links control. Users can create relationships to other work items only for those link types included in the links control.  
 
    ```
    <WorkItemLinkFilter Type="WorkLinkTypeName" />
@@ -494,8 +494,7 @@ The following table describes the **LinksControlOptions** element and its child 
 
    Specify `System.Links.IncludeAll` to include all work link types.
 
-   > When you specify  `System.Links.IncludeAll`, the system displays all links in alphabetical order by link type. 
-   
+   > When you specify  `System.Links.IncludeAll`, the system displays all links in alphabetical order by link type.
    :::column-end:::
 :::row-end:::
 
@@ -506,7 +505,7 @@ The following table describes the **LinksControlOptions** element and its child 
    :::column-end:::
    :::column span="3":::
    Optional container child element of the **LinkFilters** element. Use this element to specify the set of work item types to include in the links control. This element restricts the work item types that users can create links to and those that will appear in the linked list. Specification of this element depends on specifying at least one **WorkItemLinkFilter** element.  
-
+   
    ```
    <WorkItemTypeFilters >
       <Filter WorkItemType="WorkItemTypeName" />
