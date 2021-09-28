@@ -12,7 +12,7 @@ hide_comments: true
 
 ---
 
-\| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a>
+\| <a href="/azure/devops/release-notes/2021/sprint-191-update" target="blank">What's New</a>
 \| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a>
 \| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a>
 \| <a href="/azure/devops/?view=azure-devops&preserve-view=true" target="blank">Documentation</a> \|
@@ -83,7 +83,7 @@ This list includes features that are currently in preview. The "Released" column
     <tbody>
 <tr><td rowspan="2"><strong>2021 Q1</strong></td>
     <td><a href="https://devblogs.microsoft.com/devops/limit-user-visibility-and-collaboration-to-specific-projects/" data-raw-source="[Limit user visibility and collaboration for projects](https://devblogs.microsoft.com/devops/limit-user-visibility-and-collaboration-to-specific-projects/)">Limit user visibility and collaboration for projects</a></td><td>General</td><td>Future</td>
-     <tr><td><a href=https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview data-raw-source="[Analytics for consumption of parallel jobs](https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview)">Analytics for consumption of parallel jobs</a></td><td>Pipelines</td><td>Future</td>
+     <tr><td><a href=https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview data-raw-source="[Analytics for consumption of parallel jobs](./2020/sprint-179-update.md#historical-graph-for-agent-pools-preview)">Analytics for consumption of parallel jobs</a></td><td>Pipelines</td><td>Future</td>
 </tr>
 <tr><td rowspan="3"><strong>2021 Q2</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202" data-raw-source="[IPv6 conditional access policy support](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202)">IPv6 conditional access policy support</a></td><td>General</td><td>Future</td>
