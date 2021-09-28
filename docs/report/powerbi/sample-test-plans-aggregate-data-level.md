@@ -116,7 +116,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Query part**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -124,7 +124,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `filter((TestSuite/TestPlanTitle eq '{testPlanTitle}' and TestSuite/IdLevel3 ne null))`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Return data for only selected test plan. Also return the data for level 3 test suites onwards. You can add multiple plans with a clause like `filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}' and TestSuite/IdLevel3 ne null))`. You can also apply any other filters related to test suites, test configurations here.
    :::column-end:::
 :::row-end:::
@@ -132,7 +132,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/groupby((TestSuite/TitleLevel3),`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    The test suites to group by. If you are interested in getting report for all distinct test suites lying at level 3 of test suite hierarchy, you can specify this. You can change the level number from 1-14. If you wish to separate test suites with same name, you can use  `/groupby((TestSuite/TitleLevel3, TestSuite/IdLevel3),` to sure that even if you have two test suites with same name, they will be shown as two different entries as they would have two different IDs.
    :::column-end:::
 :::row-end:::
@@ -140,7 +140,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/aggregate($count as TotalCount,`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Aggregate data across the filtered test points with having count as `TotalCount`.
    :::column-end:::
 :::row-end:::
@@ -148,7 +148,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed,`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    While aggregating, type-cast test points having latest execution outcome 'Passed' to 1 and sum them up as '`Passed`' metric.
    :::column-end:::
 :::row-end:::
@@ -156,7 +156,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/compute(Executed mul 100 div TotalCount as ExecPct`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Provide a computed metric ExecPct which is equal to (Executed test points / Total count * 100).
    :::column-end:::
 :::row-end:::

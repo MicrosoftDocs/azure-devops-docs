@@ -108,7 +108,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Query part**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -116,7 +116,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `$apply=filter(`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Start filter()
    :::column-end:::
 :::row-end:::
@@ -124,7 +124,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `Pipeline/PipelineName eq '{pipelineName}'`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Return test runs for the specified pipeline
    :::column-end:::
 :::row-end:::
@@ -132,7 +132,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `And Date/Date ge {startdate}`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Return test runs on or after the specified date
    :::column-end:::
 :::row-end:::
@@ -140,7 +140,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and Workflow eq 'Build'`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Return test runs for 'Build' workflow
    :::column-end:::
 :::row-end:::
@@ -148,7 +148,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Close filter()
    :::column-end:::
 :::row-end:::
@@ -156,7 +156,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/groupby(`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Start groupby()
    :::column-end:::
 :::row-end:::
@@ -164,7 +164,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `(TestSK, Test/TestName),`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Group by the test Name
    :::column-end:::
 :::row-end:::
@@ -172,7 +172,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `aggregate(`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Start aggregate. For all the test runs matching the above filter criteria:
    :::column-end:::
 :::row-end:::
@@ -180,7 +180,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `ResultCount with sum as TotalCount,`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Count the total number of test runs as TotalCount
    :::column-end:::
 :::row-end:::
@@ -188,7 +188,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `ResultDurationSeconds with sum as TotalDuration`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Sum the total duration of all the runs as TotalDuration
    :::column-end:::
 :::row-end:::
@@ -196,7 +196,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `))`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Close aggregate() and groupby()
    :::column-end:::
 :::row-end:::
@@ -204,7 +204,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/compute(`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Start compute()
    :::column-end:::
 :::row-end:::
@@ -212,7 +212,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `TotalDuration div TotalCount as AvgDuration`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    For all the tests, we already have total number of runs and total duration. Calculate average duration by diving total duration by total number of runs
    :::column-end:::
 :::row-end:::
@@ -220,7 +220,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Close compute()
    :::column-end:::
 :::row-end:::
