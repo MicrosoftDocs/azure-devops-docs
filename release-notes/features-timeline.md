@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 09/16/2021
+ms.date: 09/28/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -110,6 +110,15 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="7"><a href="2021/sprint-193-update.md" data-raw-source="[28 September 2021](2021/sprint-193-update.md)">28 September 2021</a></td> 
+    <td>Improved tenant switch requests reliability</td><td>General</td><td>Future</td></tr>
+    <td>Emphasize tags in Delivery Plans using colors</td><td>Boards</td><td>Future</td></tr>
+    <td>Filter cards based on boolean field types in Delivery Plans</td><td>Boards</td><td>Future</td></tr>
+    <td>Work item title are always visible in Delivery Plan cards</td><td>Boards</td><td>Future</td></tr>
+    <td>Show light green colored dependency icon for work items that have dependencies with no issues</td><td>Boards</td><td>Future</td></tr>
+    <td>macOS-latest label will soon point to macOS-11 image</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Updated schedule for removal of Ubuntu 16.04 image on Microsoft-hosted agents</td><td>Pipelines</td><td>N/A</td></tr>
+    </tr> 
     <td rowspan="10"><a href="2021/sprint-192-update.md" data-raw-source="[8 September 2021](2021/sprint-192-update.md)">8 September 2021</a></td>
     <td>New YAML conditional expressions</td><td>Pipelines</td><td>Future</td></tr>
     <td>Support for wild cards in path filters</td><td>Pipelines</td><td>Future</td></tr>
