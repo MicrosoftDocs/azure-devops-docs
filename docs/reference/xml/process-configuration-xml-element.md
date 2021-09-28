@@ -619,7 +619,7 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
 
    :::column-end:::
    :::column span="3":::
-   Required. Specifies the reference name of a field whose value supports a type of activity for a feature area. The fields you specify should correspond to the fields that you use within the WITs used to capture the feature information.
+   Required. Specifies the reference name of a field whose value supports a type of activity for a feature area. The fields you specify should correspond to the fields that you use within the WITs used to capture the feature information.<br/><br/>
 
    ```
    <TypeField refname="FieldReferenceName"  
@@ -650,10 +650,10 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
    `format="{0} hours"`<br/><br/>
    `format="hours {0}"`<br/><br/>
    `format="time {0}"`<br/><br/>
-   - **Team**: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in [Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths).<br/><br/>   
-   **For the feedback request form:**<br/><br/>
-   > [!NOTE]  
-   > You should not have to change the default assignments made for the following **TypeField** elements. These assignments correspond to the fields used to capture the corresponding information in the WIT assigned to the Feedback Request Category.  
+   - **Team**: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in [Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths).<br/><br/>
+   **For the feedback request form:**<br/>
+     > [!NOTE]  
+     > You should not have to change the default assignments made for the following **TypeField** elements. These assignments correspond to the fields used to capture the corresponding information in the WIT assigned to the Feedback Request Category.  
    
    - **ApplicationStartInformation**: Used to capture the path to execute the application.
 
