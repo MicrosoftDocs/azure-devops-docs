@@ -90,7 +90,7 @@ You can also use the Azure portal web UI to create your Azure Container Registry
 
 ## How we build your pipeline
 
-The pipeline that we just created in the previous section was generated from the _Docker container template_ YAML. The build stage uses the [Docker task](/azure/devops/pipelines/tasks/build/docker?view=azure-devops) `Docker@2` to build and push your Docker image to the container registry.
+The pipeline that we just created in the previous section was generated from the _Docker container template_ YAML. The build stage uses the [Docker task](../../tasks/build/docker.md?view=azure-devops) `Docker@2` to build and push your Docker image to the container registry.
 
 ```YAML
 - stage: Build
@@ -124,4 +124,4 @@ az group delete --name myapp-rg
 
 - [Deploy containerized ASP.NET Core apps](../../apps/cd/azure/aspnet-core-to-acr.md)
 - [Deploy to Azure Web App for Containers (Classic)](../../apps/cd/deploy-docker-webapp.md)
-- [Docker Content Trust](/azure/devops/pipelines/ecosystems/containers/content-trust)
+- [Docker Content Trust](./content-trust.md)
