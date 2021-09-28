@@ -9,8 +9,6 @@ ms.date: 08/10/2016
 
 # Set up a multi-developer NuGet environment
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
-
 Using a package management system helps increase your team's velocity and decreases the amount of code duplication across your organization.
 Multiple developers on a team need to coordinate where and how they access packages.
 For example, developers will need a compatible NuGet client and credentials to authenticate to any Azure DevOps Services hosted feeds before they can restore or push packages.
