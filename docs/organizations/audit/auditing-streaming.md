@@ -8,7 +8,7 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 11/03/2020
+ms.date: 09/27/2021
 ---
 
 # Create audit streaming
@@ -16,15 +16,17 @@ ms.date: 11/03/2020
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 > [!Note]
-> Audit streaming is currently in a Public Preview.
+> Audit streaming is currently in Public Preview.
 
-Learn how to create an [audit](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Sending auditing data to other Security Incident and Event Management (SIEM) tools opens possibilities, such as alerting on specific auditing events, creating views on auditing data, and performing anomaly detection. It also allows you to store more than the 90-days worth of auditing data, which Azure DevOps keeps.
+Learn how to create an [audit](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Send auditing data to other Security Incident and Event Management (SIEM) tools to open possibilities, such as alerts on specific auditing events, create views on auditing data, and perform anomaly detection. It also allows you to store more than the 90-days worth of auditing data, which Azure DevOps keeps.
 
-Audit streams represent a pipeline that flows audit events from your Azure DevOps organization to a stream target. Every half hour or less, new audit events are bundled and streamed to your targets. Currently, the following stream targets are available for configuration:
+Audit streams represent a pipeline that flows audit events from your Azure DevOps organization to a stream target. Every half hour or less, new audit events are bundled and streamed to your targets. The following stream targets are available for configuration.
 
 - [Splunk](#set-up-a-splunk-stream) – Connect to on-premises or cloud-based Splunk.
 - [Azure Monitor Log](#set-up-an-azure-monitor-log-stream) - Send auditing logs to [Azure Monitor Logs](/azure/azure-monitor/platform/data-platform-logs). Logs stored in Azure Monitor Logs can be queried and have alerts configured. Look for the table named AzureDevOpsAuditing. You can also connect [Azure Sentinel](https://aka.ms/adostreamingazuresentinel) to your workspace. 
-- [Azure Event Grid](#set-up-an-event-grid-stream) – For scenarios where you want your auditing logs to be sent somewhere else, whether inside or outside of Azure, you can set up an [Azure Event Grid]() connection. 
+- [Azure Event Grid](#set-up-an-event-grid-stream) – For scenarios where you want your auditing logs to be sent somewhere else, whether inside or outside of Azure, you can set up an [Azure Event Grid]() connection.
+
+Private linked workspaces aren't supported.
 
 ## Prerequisites
 
@@ -69,9 +71,9 @@ These permissions can be given to any other users or groups you wish to have man
 
 ### Set up a Splunk stream
 
-Streams send data to Splunk via the HTTP Event Collector endpoint. 
+Streams send data to Splunk via the HTTP Event Collector endpoint.
 
-1. Enable this feature in Splunk. For more information, see this [Splunk documentation](https://aka.ms/adostreamingsplunkdocumentation). 
+1. Enable this feature in Splunk. For more information, see this [Splunk documentation](https://aka.ms/adostreamingsplunkdocumentation).
    
    Once it's enabled, you should have an HTTP Event Collector token and the URL to your Splunk instance. You need both the token and URL to create a Splunk stream.
 
@@ -109,7 +111,7 @@ Once you have your Event Grid stream configured, you can set up subscriptions on
    :::image type="content" source="media/auditing-streaming/azure-monitor-log-keys.png" alt-text="Make note of workspace ID and primary key":::
 
 5. Set up your Azure Monitor log stream by proceeding through the same initial steps to create a stream.
-6. For target options, select **Azure Monitor Logs**. 
+6. For target options, select **Azure Monitor Logs**.
 
 7. Enter the workspace ID and primary key, and then select **Set up**. The primary key is stored securely within Azure DevOps and never displayed again in the UI. Rotate the key regularly, which you can do by getting a new key from Azure Monitor Log and editing the stream.
 
@@ -148,7 +150,7 @@ You can re-enable a disabled stream. It catches up on any audit events that were
 
 ## Delete a stream
 
-To delete a stream, make sure you have the Delete Audit Streams permission. 
+To delete a stream, make sure you have the Delete Audit Streams permission.
 
 > [!IMPORTANT]
 > Once you delete a stream you can’t get it back.
@@ -164,4 +166,7 @@ Your stream gets removed. Any events that haven’t been sent before the deletio
 
 ## Related articles
 
-- [Azure DevOps Auditing](azure-devops-auditing.md)
+- [Review audit log](azure-devops-auditing.md#review-audit-log)
+- [Export audit events](azure-devops-auditing.md#export-auditing-events)
+- [Audit categories](azure-devops-auditing.md#categories)
+- [Audit areas](azure-devops-auditing.md#areas)

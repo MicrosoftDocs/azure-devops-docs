@@ -204,6 +204,9 @@ A subscription lets you control what your team is notified of and how the team r
 
 ::: moniker range=">= tfs-2017"
 
+> [!TIP]
+> If you don't want to receive a notification for an event that you initiated, you can turn on the option, *Skip initiator*. For more information, see [Exclude yourself from notification emails for events that you initiate](exclude-self-from-email.md).
+
 ## Manage global delivery settings
 
 Global notifications apply to all **projects** defined for an organization or collection. 
