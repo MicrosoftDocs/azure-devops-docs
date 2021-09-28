@@ -138,14 +138,9 @@ git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azur
 
 > [!TIP]
 > For existing repositories, if you've already added the origin using the username, run the following command first.
-> <br>
 > ``git remote remove origin``
-> </br>
-> Otherwise run the following command:
-> <br>
-> ``git remote add origin https://<PAT>@<company_machineName>.visualstudio.com:/<path-to-git-repo>`` path to git repo = <project name>/_git/<repo_name>
-  </br>
-> ``git push -u origin --all``
+> Otherwise, run the following command:
+> ``git remote add origin https://<PAT>@<company_machineName>.visualstudio.com:/<path-to-git-repo> path to git repo = <project name>/_git/<repo_name> git push -u origin --all``
 
 On Windows, you can do something similar in PowerShell:
 
