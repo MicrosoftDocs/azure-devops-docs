@@ -33,10 +33,10 @@ Areas that you can customize through ProcessConfiguration:
 > |-------------|----------|---------| 
 > |- [Configure the quick add panel](#add) <br/>- [Define default columns](#columns) <br/>- [Map state categories for a WIT category](#map)<br/>- [Set number of task board items](#number_items)<br/>- [Set weekend days (Scrum)](#weekend_days) <sup>1</sup><br/>- [Set default Show bugs on backlogs](#behaviors)  <sup>1</sup><br/>- [Set default hidden backlogs](#behaviors) <sup>1</sup>  |- [Specify the WIT color](#wit-colors)<br/>- [Specify the workflow state color](#state-colors)  <sup>2</sup><br/>- [Specify the WIT icon](#wit-icons)  <sup>3</sup> |- [Assign Agile tool fields](#fields)<br/>- [Map tool-specific state categories](#tool_wits) <br/>- [Specify properties](#behaviors) |
 
-**Notes:**
-1. Items noted with an asterisk set a default for the project. These items can be changed for each team through [team settings](../../organizations/settings/manage-teams.md).
-2. Supported for Hosted XML, and for On-premises XML for TFS 2015.2 or later version.  
-3. Supported for Hosted XML, and for On-premises XML for TFS 2017.2 or later version.  
+> [!NOTE]  
+> 1. Items noted with an asterisk set a default for the project. These items can be changed for each team through [team settings](../../organizations/settings/manage-teams.md).
+> 2. Supported for Hosted XML, and for On-premises XML for TFS 2015.2 or later version.  
+> 3. Supported for Hosted XML, and for On-premises XML for TFS 2017.2 or later version.  
 
 > [!IMPORTANT]  
 >If you want to customize your project to add custom work item types to appear on your backlogs or boards or add custom portfolio backlogs, see [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md) and [Add portfolio backlogs](../add-portfolio-backlogs.md).  

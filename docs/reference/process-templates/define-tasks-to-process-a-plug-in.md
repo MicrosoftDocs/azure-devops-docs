@@ -151,8 +151,10 @@ You use the **tasks** element and its child elements to define the artifacts to 
    Required root element for a plug-in file. Describes the work that is required to complete this task. The XML inside this element block varies and is specific to each plug-in.   
    
    > [!NOTE]  
-   > The XML processor does not try to validate the content within the element.  
-    
+   > The XML processor does not try to validate the content within the element.     
+
+<br/>
+
    ```
    <taskXml> . . . </taskXml>
    ```
