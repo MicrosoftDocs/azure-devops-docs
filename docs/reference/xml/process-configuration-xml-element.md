@@ -642,27 +642,16 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
    > [!NOTE]  
    > You can move items by dragging them up or down the list on a backlog or board. As you move items, a background process updates the field assigned to the `type="Order"`.
    
-   - **RemainingWork**: Used to calculate remaining work and burndown charts. Specify the same field used in the WIT assigned to the Task Category which you use to capture the hours, days, or other unit of measurement that remain to finish a task.
-
-   The value that you specify for **format** is used on the sprint backlogs and task boards wherever remaining work is reported. For example, when reporting capacity-by-activity or capacity per team member, or next to the column heading for the task states on the task board.
-
-   For *TimeUnitString*, specify any text string that you want to use to reflect the time value, such as hours or days.
-
-   For example, the following values are all valid:
-
-   `format="{0} h"`
-
-   `format="{0} hours"`
-
-   `format="hours {0}"`
-
-   `format="time {0}"`
-
-   - **Team**: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in [Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths).
-
-   
-   **For the feedback request form:**
-
+   - **RemainingWork**: Used to calculate remaining work and burndown charts. Specify the same field used in the WIT assigned to the Task Category which you use to capture the hours, days, or other unit of measurement that remain to finish a task.<br/><br/>
+   The value that you specify for **format** is used on the sprint backlogs and task boards wherever remaining work is reported. For example, when reporting capacity-by-activity or capacity per team member, or next to the column heading for the task states on the task board.<br/><br/>
+   For *TimeUnitString*, specify any text string that you want to use to reflect the time value, such as hours or days.<br/><br/>
+   For example, the following values are all valid:<br/><br/>
+   `format="{0} h"`<br/><br/>
+   `format="{0} hours"`<br/><br/>
+   `format="hours {0}"`<br/><br/>
+   `format="time {0}"`<br/><br/>
+   - **Team**: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in [Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths).<br/><br/>   
+   **For the feedback request form:**<br/><br/>
    > [!NOTE]  
    > You should not have to change the default assignments made for the following **TypeField** elements. These assignments correspond to the fields used to capture the corresponding information in the WIT assigned to the Feedback Request Category.  
    
