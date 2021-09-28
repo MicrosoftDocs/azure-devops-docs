@@ -93,7 +93,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Query part**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -101,7 +101,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `$apply=filter(`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Start filter()
    :::column-end:::
 :::row-end:::
@@ -109,7 +109,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `Pipeline/PipelineName eq '{pipelinename}'`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Return task results for a specific pipeline
    :::column-end:::
 :::row-end:::
@@ -117,7 +117,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and PipelineRunCompletedOn/Date ge {startdate}`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Return task results for pipeline runs on or after the specified date
    :::column-end:::
 :::row-end:::
@@ -125,7 +125,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and PipelineRunOutcome eq 'Failed'`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Return task results where build outcome is failed
    :::column-end:::
 :::row-end:::
@@ -133,7 +133,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and TaskOutcome eq 'Failed'`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Return task results where task outcome is failed
    :::column-end:::
 :::row-end:::
@@ -141,7 +141,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `)`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Close of filter statement
    :::column-end:::
 :::row-end:::
@@ -149,7 +149,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/groupby(`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Start groupby()
    :::column-end:::
 :::row-end:::
@@ -157,7 +157,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `(PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/StageName ),`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Group by date of completion of pipeline run, Build Id and stage name.
    :::column-end:::
 :::row-end:::
@@ -165,7 +165,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `aggregate (FailedCount with sum as FailedCount))`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    For each day, build Id and Stage, count the total number of failures. This will be the total number of task failures & not stage failures
    :::column-end:::
 :::row-end:::
@@ -173,7 +173,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/groupby(`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Start groupby()
    :::column-end:::
 :::row-end:::
@@ -181,7 +181,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `(PipelineRunCompletedOn/Date, PipelineJob/StageName ),`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Group by day and stage name.
    :::column-end:::
 :::row-end:::
@@ -189,7 +189,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `aggregate`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    Start of aggregate
    :::column-end:::
 :::row-end:::
@@ -197,7 +197,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `(cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount))`
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    For each day, sum the number of times a stage failed
    :::column-end:::
 :::row-end:::

@@ -88,7 +88,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Query part**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Description**
    :::column-end:::
 :::row-end:::
@@ -96,7 +96,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `$apply=filter(WorkItemType eq 'User Story'`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Include User Stories in burndown.
    :::column-end:::
 :::row-end:::
@@ -104,7 +104,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and StateCategory ne 'Completed'`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Filters out items that are completed. For more information on State Categories, see [How workflow states and state categories are used in Backlogs and Boards.](../../boards/work-items/workflow-and-state-categories.md)
    :::column-end:::
 :::row-end:::
@@ -112,7 +112,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
    
    To filter by Team Name, use the filter statement "Teams/any(x:x/TeamName eq '{teamname})'"
@@ -122,7 +122,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and Tags/any(x:x/TagName eq '{tagname}')`.
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Specifies the Tag that represents the Release to burndown, and to include all work items tagged with {tagname} in the report.
    :::column-end:::
 :::row-end:::
@@ -130,7 +130,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and DateValue ge {startdate}`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Start burndown on or after the specified date. Example: **2019-04-01Z**represents 2019-April-01.
    :::column-end:::
 :::row-end:::
@@ -138,7 +138,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `and DateValue le {enddate}`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Start burndown on or before the specified date. Same format as {startdate}.
    :::column-end:::
 :::row-end:::
@@ -146,7 +146,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Close  filter().
    :::column-end:::
 :::row-end:::
@@ -154,7 +154,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `/groupby (`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Start groupby().
    :::column-end:::
 :::row-end:::
@@ -162,7 +162,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `(DateValue, State, Area/AreaPath), `
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Group by DateValue (used for trending), and any fields you want to report on.
    :::column-end:::
 :::row-end:::
@@ -170,7 +170,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `aggregate ($count as Count, StoryPoints with sum as TotalStoryPoints)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Aggregate by count of user stories, and sum of Story Points.
    :::column-end:::
 :::row-end:::
@@ -178,7 +178,7 @@ The following table describes each part of the query.
    :::column span="1":::
    `)`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Close groupby().
    :::column-end:::
 :::row-end:::
