@@ -119,13 +119,6 @@ For larger teams, you should consider marking each share as read-only before doi
 Now, return to each of the nuget.config files you found in the [Inventory your existing package sources](#inventory-your-existing-package-sources) section. For 
 each share, find the corresponding `<add key="SMBNuGetServer" value="\\server\share\NuGet" />` and replace the `value` with the new feed's source URL. 
 
-<a name="add-the-vsts-nuget-tools-to-your-repo"></a>
-
-#### Add the bootstrapper package
-
-The [bootstrap package](bootstrap-nuget.md) can automate the process of acquiring the right NuGet tools and credentials to use feeds.
-This is especially helpful for users of Visual Studio 2013 (or earlier) or NuGet 2.x, which don't have built-in support for Azure DevOps Services auth.
-
 <a name="integrate-with-your-builds"></a>
 
 #### Integrate with your builds

@@ -18,7 +18,7 @@ ms.date: 09/21/2021
 This article shows you how to generate the rollup count of User Stories and total Story Points for a given set of Features. An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards - Rollup - Report](media/odatapowerbi-featurerollup-report.png)
+> ![Sample - Boards - Rollup - Report](media/reports-boards/feature-rollup-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -137,26 +137,26 @@ Repeat for all the rollup columns.
 Power BI shows you the fields you can report on. 
 
 > [!NOTE]   
-> The example below assumes that no one renamed any columns. 
+> The example below assumes that columns are renamed as indicated in the corresponding images. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards - Rollup - Fields](media/odatapowerbi-featurerollup-fields.png)
+> ![Feature rollup fields.](media/reports-boards/feature-rollup-fields.png)
 
 For a simple report, do the following steps:
 
 1. Choose the Power BI Visualization **Table**. 
 1. Add the following fields to **Values**
-    - WorkItemId
-    - WorkItemType
-    - Title
-    - State
-    - Descendants.CountOfUserStories
-    - Descendants.TotalStoryPoints
+    - **WorkItemId**, choose **Don't summarize** to show ID
+    - **WorkItemType**
+    - **Title**
+    - **State**
+    - **Count of User Stories**
+    - **Total Story Points**
 
 The example report displays:
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards - Rollup - Report](media/odatapowerbi-featurerollup-report.png)
+> ![Feature rollup sample report.](media/reports-boards/feature-rollup-report.png)
 
 [!INCLUDE [temp](includes/sample-multipleteams.md)]
 
