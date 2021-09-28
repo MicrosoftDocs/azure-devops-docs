@@ -1,6 +1,6 @@
 ---
 title: Locate Reporting Services reports after upgrade
-titleSuffix: TFS 2013
+titleSuffix: Azure DevOps Server 2013
 description: Locate reports in SQL Server Reporting Services after upgrading earlier versions of Team Foundation Server to TFS 2010. 
 ms.technology: devops-analytics
 ms.topic: conceptual

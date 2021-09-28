@@ -57,9 +57,6 @@
     - name: NuGet.org upstream source
       href: nuget/upstream-sources.md
       displayName: upstream sources, upstreams, artifact feeds 
-    - name: Set up a multi-developer environment
-      href: nuget/bootstrap-nuget.md
-      displayName: developer environment, nuget bootstrap 
   - name: Npm 
     items:
     - name: npm quickstart

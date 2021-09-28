@@ -249,9 +249,6 @@
   - name: Other security considerations
     href: ../../pipelines/security/misc.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: miscellaneous, secure, details, information
-  - name: Add continuous security validation
-    href: ../../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    displayName: build, release, pipeline, continued, validate
 - name: Secure Azure Test Plans
   items:
   - name: Set permissions & access for testing

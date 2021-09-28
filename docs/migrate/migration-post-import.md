@@ -8,7 +8,7 @@ ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/21/2019
+ms.date: 09/22/2021
 ---
 
 # Post import
@@ -52,15 +52,15 @@ If you plan on using your existing on-premises private build agents, there is on
 
 ## Release management
 
-If you used Release Management in Azure DevOps Server then your release pipelines and history data will be included with your import. However, like builds, [agents](../pipelines/agents/agents.md) and pools need to be reconfigured against the new organization. 
+If you used Release Management in Azure DevOps Server then your release pipelines and history data will be included with your import. However, like builds, you'll need to reonfigure your [agents](../pipelines/agents/agents.md) and pools against the new organization. 
 
 ## Azure Artifacts
 
-If you used Azure Artifacts in your collection, then you will need to install the Azure Artifacts [extension](https://marketplace.visualstudio.com/items?itemName=ms.feed#) in your organization post import to view your Azure Artifacts data. 
+Azure Artifacts is included with Azure DevOps Services for all users granted a **Basic** license. There is no need to install an extension. Your Azure Artifacts data should be available post import.  
 
 ## Azure Boards
 
-If you have an existing GitHub Enterprise Server connection associated with your Azure DevOps Server, it will not work as expected. Work item mentions within GitHub may be delayed or never show up in Azure DevOps Services. This problem occurs because the callback url associated with GitHub is no longer valid. 
+If you have an existing GitHub Enterprise Server connection associated with your Azure DevOps Server, it will not work as expected. Work item mentions within GitHub may be delayed or never show up in Azure DevOps Services. This problem occurs because the callback URL associated with GitHub is no longer valid. 
 
 To resolve the problem, consider the following:
 

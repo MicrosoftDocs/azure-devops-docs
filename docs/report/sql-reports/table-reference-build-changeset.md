@@ -1,6 +1,6 @@
 ---
 title: Build Changeset tables 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Uses FactBuildChangeset to query for data about the changesets.
@@ -31,7 +31,7 @@ For information about the measures and dimensions that are associated with these
 -   DimPerson   
 -   DimTeamProject  
   
-## Related notes
+## Related articles
 - [Builds](perspective-build-analyze-report-build-details-coverage.md)   
 - [Find and view changesets](../../repos/tfvc/find-view-changesets.md)   
 - [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
