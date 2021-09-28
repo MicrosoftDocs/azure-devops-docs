@@ -52,7 +52,7 @@ Each kind of artifact has a different way of being published and consumed. Some 
 - [Maven quickstart](../../artifacts/get-started-maven.md)
 - [Install Maven Artifacts](../../artifacts/maven/install.md)
 - [Publish a Maven artifact using Gradle](../../artifacts/gradle/publish-package-gradle.md)
-- [Install a Maven artifact using Gradle](../../artifacts/gradle/pull-package-gradle.md)
+- [Install a Maven artifact using Gradle](./pull-package-gradle.md)
 
 * * * 
 
