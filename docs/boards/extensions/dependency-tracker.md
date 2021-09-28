@@ -1,7 +1,7 @@
 ---
-title: Plan and track dependencies across teams and organizations using the Dependency Tracker extension
+title: Use the Dependency Tracker extension
 titleSuffix: Azure DevOps
-description: Learn how to track dependencies your team has on other teams with the dependency tracker  
+description: Learn how to plan and manage dependencies across teams, projects, and organizations with the Dependency Tracker.  
 ms.custom: extensions
 ms.technology: devops-agile
 ms.topic: how-to
@@ -9,7 +9,7 @@ ms.reviewer: mopatel
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 01/21/2021
+ms.date: 09/29/2021
 ---
 
 # Plan and track dependencies using the Dependency Tracker
@@ -24,8 +24,8 @@ The Dependency Tracker extension provides you with the ability to plan and manag
 > 
 > Another tool that supports dependency views is [Delivery Plans](../plans/track-dependencies.md).
 
-You use the Dependency Tracker to plan dependencies at the beginning of an iteration or release, as well as to track the status during development. For any given dependency, there are two parties involved: 
-- **Consumer**: Feature team who has a need and initiates a request for work
+You use the Dependency Tracker to plan dependencies at the beginning of an iteration or release, and to track the status during development. For any given dependency, there are two parties involved: 
+- **Consumer**: Feature team who has a need and starts a request for work
 - **Producer**: Feature team who makes a commitment to deliver work 
 
 Each work request and work deliverable is defined as a work item. The work items are linked by the Successor-Predecessor link type or other directional link type. For details about link types, see [Link type reference](../queries/link-type-reference.md) 
@@ -34,7 +34,7 @@ Producing for/Consuming from link.
 > [!TIP]   
 > While any work item type can participate in dependency tracking, you may want to decide if you want to limit dependencies to specific types, such as Features, Epics, User Stories, or Bugs. You can create that restriction through [Configuration of Dependency Tracker](#configuration).
 
-From the Dependency Tracker, you can choose different views and filters, as well as drill down to obtain specific details. These views and options are described in the following sections: 
+From the Dependency Tracker, you can choose different views and filters, and drill down to obtain specific details. These views and options are described in the following sections: 
 - [Filter options](#filter)
 - [Drill-down](#drill-down)
 - [Consuming Dependencies](#consume)
@@ -63,16 +63,14 @@ All teams across organizations can participate in tracking dependencies.
 
 ### Recommended practices 
 
-- The consumer is the team that asks for the work – they initiate all discussions on the work they require
-- The consumer owns the engagement and tracking of that work – since it is the work their scenario requires, the burden is on the consumer to file, monitor, and track the status of the work
+- The consumer is the team that asks for the work – they start all discussions on the work they require
+- The consumer owns the engagement and tracking of that work – since it's the work their scenario requires, the burden is on the consumer to file, monitor, and track the status of the work
 - The consumer owns entering the work into Azure Boards and submitting that work request to the producer
 - Once the work has been submitted to the producer, the producer owns the work item,
     - The producer is responsible for maintaining the work item in Azure Boards
     - The producer owns the state of the work item (is it going to be done) and iteration (when it will be done).  
-    - The consumer should not touch these values, once the work item has been handed off
-- The consumer is in charge of managing the work they requested  so that they are aware of any material changes and adjustments.
-
-
+    - The consumer shouldn't touch these values, once the work item has been handed off
+- The consumer is in charge of managing the work they requested  so that they're aware of any material changes and adjustments.
 
 ## Prerequisites
 
@@ -80,16 +78,16 @@ All teams across organizations can participate in tracking dependencies.
 - To view dependencies, you must be a member of the Project Valid Users group for the project.  
 - To create a dependency, you must be a member of the Contributors group for both projects that participate in the dependency linking.
 - To support cross-organization participation, all organizations must authenticate users through the same [Azure Active Directory](../../organizations/accounts/connect-organization-to-azure-ad.md). 
-- Azure Boards must be enabled as a service. If it is disabled, then you'll need to have it reenabled. For details, see [Turn a service on or off](../../organizations/settings/set-services.md). 
-- In order to modify the configuration, you must be a member of the  Project Collection Administrator Group. 
+- Azure Boards must be enabled as a service. If it's disabled, then you'll need to have it reenabled. For details, see [Turn a service on or off](../../organizations/settings/set-services.md). 
+- To modify the configuration, you must be a member of the  Project Collection Administrator Group. 
 
 > [!IMPORTANT]  
 > The default configuration for Dependency Tracker supports the Agile process. If your project(s) are based on a different process or you have customized your process, you may need to modify the configuration. See [Configure the Dependency Tracker](#configuration) later in this article. 
 
-In addition, the following configuration or customization tasks should be performed: 
+Also, the following configuration or customization tasks should be performed: 
 - Set up the area paths and teams that will participate in dependency tracking. 
 - Configure iteration paths/sprints for the project and assign them to work items participating in dependency tracking. This task is essential for the Timeline view to yield meaningful data.
-- Customize your process as needed to support any additional work items or fields. 
+- Customize your process as needed to support any other work items or fields. 
 - [Configure the Dependency Tracker](#configuration) to support your business needs and address any customizations you've made.
 
 
@@ -113,7 +111,7 @@ In addition, the following configuration or customization tasks should be perfor
 
 ## Filter options 
 
-You can filter each supported view by typing a keyword or using one or more of the fields. Provided field include State, Work item type, and Iteration Path. Based on the keyword that you enter, the filter function lists work items based on any displayed column field.  
+You can filter each supported view by typing a keyword or using one or more of the fields. Provided fields include State, Work item type, and Iteration Path. Based on the keyword that you enter, the filter function lists work items based on any displayed column field.  
 
 To show the filter toolbar, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon. 
 
@@ -133,18 +131,17 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 > [!NOTE]   
 > Filter options are dependent on the [configuration](#configuration) defined for the Dependency Tracker. Also, only those options that correspond to work items shown in the selected view that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path. 
 
-Ability to drop dependencies within the selected area (usually used for excluding dependencies inside my team)
+Ability to drop dependencies within the selected area (used for excluding dependencies inside my team)
 
 
 <a id="drill-down" /> 
 
-## Drill-down options 
+## View drill-down options 
 
-Several views provide interactive visualizations through drill-downs. These features are addressed in the description of each of the tabbed views later in this article. 
+Several views provide interactive visualizations through drill-downs. These features are addressed in the tabbed views descriptions later in this article. 
 
 > [!div class="mx-imgBorder"]  
 > ![Consuming dependencies, drill-down into completed work in an area](media/tracker/drill-down-completed-consuming.png) 
-
 
 
 <a id="create" /> 
@@ -186,7 +183,7 @@ A dependency represents work where one team is dependent on another team. Both t
     > [!div class="mx-imgBorder"]  
     > ![Success confirmation](media/tracker/success-confirmation.png)
 
-1.  The work items that you just linked are highlighted.    
+1.  The work items that you linked are highlighted.    
     
     As shown in this example, the Fabrikam Fiber/Service Delivery/Voice team is dependent on the MyFirstProject team to deliver their `User Story 706: Cancel order form` to complete `Bug 390: Cancel order form`. 
 
@@ -229,9 +226,9 @@ Choose **Copy to HTML** to copy the selected work items to the clipboard as a fo
 
 <a id="consume" />
 
-## Consuming Dependencies
+## Consuming Dependencies view
 
-The **Consuming Dependencies** view shows work that a team is dependent upon other teams/area paths. It is useful for answering the following questions: 
+The **Consuming Dependencies** view shows work that a team is dependent upon other teams/area paths. It's useful for answering the following questions: 
 
 - *Which dependencies am I consuming as the owner of the selected areas and sub areas?* 
 - *How many dependencies per producer team (by area level 3)?*
@@ -240,9 +237,9 @@ The **Consuming Dependencies** view shows work that a team is dependent upon oth
 > [!div class="mx-imgBorder"]  
 > ![Consuming-View](media/tracker/consuming-dependencies-view.png)
 
-Each column on the bar chart represents another area path that is producing dependencies by workflow state for the selected **Area View**. The table shows the number of unique dependencies and lists all work items participating in the filtered view of tracked dependencies. 
+Each column on the bar chart represents another area path that is producing dependencies by workflow state for the selected **Area View**. The table shows the number of unique dependencies. It also lists all work items participating in the filtered view of tracked dependencies. 
 
-Within the table, you can perform the following actions. 
+Within the table, you can complete the following actions. 
 
 - Filter the list of work items by choosing one of the area path bars and progress states in the bar chart graph 
 - Expand or collapse the list of work items to show the full list of dependent work items using the :::image type="icon" source="../media/icons/expand_icon.png" border="false"::: expand and :::image type="icon" source="../media/icons/collapse_icon.png" border="false"::: collapse icons 
@@ -252,9 +249,9 @@ Within the table, you can perform the following actions.
 
 <a id="produce" />
 
-## Producing Dependencies 
+## Producing Dependencies view
 
-The **Producing Dependencies** view shows work that other teams/area paths are dependent on per the selected area. It is useful for answering the following questions: 
+The **Producing Dependencies** view shows work that other teams/area paths are dependent on per the selected area. It's useful for answering the following questions: 
 
 - *Which dependencies is my team responsible for delivering as the owner of the selected area(s)?* 
 - *How many dependencies exist per consumer team (by area level 3)?*
@@ -263,14 +260,14 @@ The **Producing Dependencies** view shows work that other teams/area paths are d
 > [!div class="mx-imgBorder"]  
 > ![Dependency Tracker](media/tracker/producing-dependencies-view.png)
 
-Each column on the bar chart represents another area path that is consuming dependencies by workflow state for the selected **Area View**. The table shows the number of unique dependencies and lists all work items participating in the filtered view of tracked dependencies. 
+Each column on the bar chart represents another area path that is consuming dependencies by workflow state for the selected **Area View**. The table shows the number of unique dependencies and lists all work items included in the filtered view of tracked dependencies. 
 
-Within the table, you can perform the same actions as in the Consuming Dependencies view. 
+Within the table, you can complete the same actions as in the Consuming Dependencies view. 
  
  
 <a id="timeline" />
 
-## Timeline 
+## Timeline tab
 
 The **Timeline** tab provides a calendar view of dependencies. The Timeline view is in Beta. The Timeline view helps answering the following questions: 
 
@@ -282,16 +279,16 @@ The **Timeline** tab provides a calendar view of dependencies. The Timeline view
 
 There are two versions of the Timeline view: **Correct Flow** and **Incorrect Flow**. Each version shows the color-coded workflow state. Color codes can be customized within the [Dependency Tracker configuration](#configuration).
 
-#### Correct Flow
+#### Correct Flow view
 
 The Correct Flow view shows those dependencies that are in the correct sequence. Successor work items are scheduled to be completed after their predecessor work item.
 
 > [!div class="mx-imgBorder"]  
 > ![Timeline view, correct flow](media/tracker/timeline-oc-word-2019-correct-flow.png)
 
-#### Incorrect Flow
+#### Incorrect Flow view
 
-The Incorrect Flow  view shows those dependencies that are out of order. At least one predecessor work item is scheduled to be completed after it's successor work item.
+The Incorrect Flow  view shows those dependencies that are out of order. At least one predecessor work item is scheduled to be completed after its successor work item.
 
 > [!div class="mx-imgBorder"]  
 > ![Timeline view, incorrect flow](media/tracker/timeline-oc-word-2019-incorrect-flow.png)
@@ -301,12 +298,12 @@ The Incorrect Flow  view shows those dependencies that are out of order. At leas
 
 ## Risk Graph
 
-The Risk Graph provides a visualization of how dependencies flow from Consumer team to Producer team, or from Producer to Consumers. The graph allows a team to, at a glance, understand the magnitude of dependencies and level of risks associated. In addition, the risk graph view demonstrates the value of linking dependencies and laddering them up to Stories. 
+The Risk Graph provides a visualization of how dependencies flow from Consumer team to Producer team, or from Producer to Consumers. The graph allows a team to, at a glance, understand the number of dependencies and level of risks associated. Also, the risk graph view demonstrates the value of linking dependencies and laddering them up to Stories. 
 
 > [!div class="mx-imgBorder"]  
 > ![Dependency Tracker Risk Graph](media/tracker/risk-graph-1.png)
 
-There are two views: **Consuming From** and **Producing For**. The workflow state color coding is configurable. The width of the lines indicate how many dependencies exist in that area, the thicker the link the more dependencies as indicated in the legend.
+There are two views: **Consuming From** and **Producing For**. The workflow state color coding is configurable. The width of the lines indicates how many dependencies exist in that area, the thicker the link the more dependencies as indicated in the legend.
 
 #### Consuming From
 
@@ -331,7 +328,7 @@ You can drill down into specifics by choosing one of the dependencies.
 
 ## Configure the Dependency Tracker
 
-You must be a member of the  Project Collection Administrator Group in order to modify the configuration. All changes to the configuration apply to all projects defined in the organization. 
+You must be a member of the  Project Collection Administrator Group to modify the configuration. All changes to the configuration apply to all projects defined in the organization. 
 
 To change the configuration, choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon  and modify the syntax listed. Choose **Save** when done. 
 
