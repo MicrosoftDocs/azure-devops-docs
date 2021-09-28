@@ -496,9 +496,9 @@
     - name: Release artifacts and artifact sources
       href: release/artifacts.md
       displayName: artifacts, source, release artifacts
-    - name: Maven
-      href: artifacts/maven.md
-      displayName: maven, package
+    - name: Install Maven
+      href: artifacts/pull-package-gradle.md
+      displayName: Install maven, maven, package
     - name: npm
       href: artifacts/npm.md
       displayName: npm, package
