@@ -51,7 +51,7 @@ witadmin importprocessconfig /collection:CollectionURL [/p:ProjectName] /f:FileN
 |-------------------|---------------------|  
 |**/collection**:`CollectionURLx`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
 |**/p**:`ProjectName`|Required. Specifies the project for which you want to export or import the process configuration. This project must be defined in the collection that you specified by using the /collection parameter. You do not need to specify a project when you specify the `/v` switch.|  
-|**/f**:`FileName`|The path and the name of the XML definition file for the process configuration to export or import.<br /><br /> **Note:** If the client computer is running Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the [Registry Virtualization](/windows/win32/sysinfo/registry-virtualization) page on the Microsoft website. To avoid this redirection, you can export the file to a location where you have permissions.|  
+|**/f**:`FileName`|The path and the name of the XML definition file for the process configuration to export or import.<br /><br /> > [!NOTE]  <br/>> If the client computer is running Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the [Registry Virtualization](/windows/win32/sysinfo/registry-virtualization) page on the Microsoft website. To avoid this redirection, you can export the file to a location where you have permissions.|  
 |**/e**:`Encoding`|Optional. The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding and uses UTF-8 if detection fails.|  
 |**/v**|Optional. Validates the XML that defines the process configuration but does not import the definition file.|  
 |**/?** or **help**|Displays help about the command in the Command Prompt window.|  
@@ -240,7 +240,6 @@ Other changes might require you to perform some manual operations when updating 
    **Update or verify the process configuration definition**
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    Add a WIT to the Requirements Category  
@@ -249,13 +248,11 @@ Other changes might require you to perform some manual operations when updating 
    :::column-end:::
    :::column span="1":::
    To include the following fields:  
-   - Backlog Priority (Scrum) or Stack Rank (Agile or CMMI)  
-   
+   - Backlog Priority (Scrum) or Stack Rank (Agile or CMMI)<br/><br/>
      (must match the field value assigned to type=Order in the process configuration file)
-   - Effort (Scrum), Story Points (Agile), or Size (CMMI)  
-   
+   - Effort (Scrum), Story Points (Agile), or Size (CMMI)<br/><br/>
      (must match the field value assigned to `type=Effort` in the process configuration file)
-   - Area path or the field value assigned to `type=Team` in the process configuration file 
+   - Area path or the field value assigned to `type=Team` in the process configuration file<br/><br/>
    - All fields that are included in the `AddPanel` section of the process configuration file (fields must be defined within the `FIELDS` section but don't have to be included within the `FORM` section.   
    :::column-end:::
    :::column span="1":::
@@ -263,28 +260,22 @@ Other changes might require you to perform some manual operations when updating 
    - Map the start of each workflow state to `type="Proposed"` 
    - Map each intermediate workflow state you want to have show up on the Kanban board to `type="InProgress"` 
    - Map the end of each workflow state to `type="Complete"`  
-   
-     You can have only one State mapped to  `type="Complete"`  
-	 
-   To contain an entry to define the color codes associated with the WIT. For example: 
-
-   `<WorkItemColor primary="FF009CCC" secondary="FFD6ECF2"  
-   name="Product Backlog Item" />`
+     You can have only one State mapped to  `type="Complete"`<br/><br/>
+     To contain an entry to define the color codes associated with the WIT. For example:  
+     `<WorkItemColor primary="FF009CCC" secondary="FFD6ECF2"  
+     name="Product Backlog Item" />`
    :::column-end:::
 :::row-end:::
 
 :::row:::
    :::column span="1":::
    Change the workflow of a WIT in the Requirements Category
-   
    :::column-end:::
    :::column span="1":::
    N/A
-
    :::column-end:::
    :::column span="1":::
    To contain the necessary metastate mappings as described above for adding a WIT to the Requirements Category. 
-
    :::column-end:::
 :::row-end:::
 
@@ -297,22 +288,19 @@ Other changes might require you to perform some manual operations when updating 
    To include the following fields:  
    - Backlog Priority (Scrum) or Stack Rank (Agile or CMMI)  
    - Activity (Scrum or Agile) or Discipline (CMMI)  
-   
-   (must match the field value assigned to `type=Activity` in the process configuration file)  
+     (must match the field value assigned to `type=Activity` in the process configuration file)  
    - Remaining Work  
-   
-   (must match the field value assigned to `type=RemainingWork` in the process configuration file)
+     (must match the field value assigned to `type=RemainingWork` in the process configuration file)
    - Area path or the field value assigned to `type=Team` in the process configuration file 
-   - (Optional) Original Work and Completed Work (Agile and CMMI only) 
-
+   - (Optional) Original Work and Completed Work (Agile and CMMI only)
    :::column-end:::
    :::column span="1":::
    To contain the necessary metastate mappings:  
    - Map the start of each workflow state to type="Proposed" 
    - Map each intermediate workflow state that you want to have show up on the task board to `type="InProgress"` 
-   - Map the end of each workflow state to `type="Complete`"   
-   
-   You can have only one State mapped to `type="Complete"`
+   - Map the end of each workflow state to `type="Complete`"<br/><br/>
+     You can have only one State mapped to `type="Complete"`
+     
    To contain an entry to define the color codes associated with the WIT. For example: 
 
    `<WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2"  
