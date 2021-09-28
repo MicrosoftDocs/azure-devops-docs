@@ -112,6 +112,8 @@ The structural elements used in the previous example are described in the follow
    > [!NOTE]
    > You can view the description only in the XML definition. You cannot view the description anywhere in the user interface, and it has no relationship to the field **System.Definition**.
    
+   <br/>
+   
    ```
    <DESCRIPTION> DescriptionOfWorkItemType</DESCRIPTION>
    ```

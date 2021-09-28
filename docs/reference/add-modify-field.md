@@ -342,9 +342,8 @@ To list or review fields, you can use one of the following tools, depending on t
 | [Work item field explorer](#wi-explorer) | ✔️  | ✔️  | ✔️  |
 | [witadmin listfields command line tool](witadmin/manage-work-item-fields.md) | ✔️  | ✔️  | ✔️  |
  
-**Notes:** 
-1. Only supported for default processes (Agile, CMMI, Scrum). 
-
+> [!NOTE]  
+> 1. Only supported for default processes (Agile, CMMI, Scrum). 
 
 <a id="wi-explorer">  </a>
 
