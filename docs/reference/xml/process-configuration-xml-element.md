@@ -246,19 +246,15 @@ There are three groups of state categories: Agile, Bug, and Feedback. The follow
    Valid values for *TypeName* correspond to one of the following enumerated values:
    
    - Agile: Use for all work item types.   
-    - **Proposed**: Indicates work items that are new, not yet committed, or not yet being worked on. 
-    - **InProgress**: Indicates work items that have been committed or are actively being worked on.
-    - **Complete**: Indicates work items that have been implemented. For the [Kanban board](../../boards/boards/kanban-basics.md) to be valid, exactly one workflow state must be mapped to the **Complete** state category. If additional workflow states need to be represented, they can be mapped to the **Resolved** state category.  
-    Once a workflow state transitions to a state that is associated with the **Complete** metastate, the associated work item will fall off the product backlog. However, it will continue to be listed in the last column on the Kanban board.
-   
+     - **Proposed**: Indicates work items that are new, not yet committed, or not yet being worked on. 
+     - **InProgress**: Indicates work items that have been committed or are actively being worked on.
+     - **Complete**: Indicates work items that have been implemented. For the [Kanban board](../../boards/boards/kanban-basics.md) to be valid, exactly one workflow state must be mapped to the **Complete** state category. If additional workflow states need to be represented, they can be mapped to the **Resolved** state category.  
+     Once a workflow state transitions to a state that is associated with the **Complete** metastate, the associated work item will fall off the product backlog. However, it will continue to be listed in the last column on the Kanban board.<br/><br/>
    Work items in a workflow state that aren&#39;t mapped to one of the state categories don&#39;t appear on the backlog or board.
-
-   - Bug: Use only for work item types grouped within the Bug Category. In addition to the Agile state categories, includes the **Resolved** state category which indicates bugs that have been resolved.
-
+   - Bug: Use only for work item types grouped within the Bug Category. In addition to the Agile state categories, includes the **Resolved** state category which indicates bugs that have been resolved.<br/><br/>
    > [!NOTE]  
-   > You can only assign the **Resolved** state category to a workflow state specified under the **BugWorkItems** element. 
-   
-   - Feedback: Use only for work item types grouped within the Feedback Request or Feedback Response categories. **Requested**, **Received**, **Reviewed**, and **Declined**.   
+   > You can only assign the **Resolved** state category to a workflow state specified under the **BugWorkItems** element.   
+   - Feedback: Use only for work item types grouped within the Feedback Request or Feedback Response categories. **Requested**, **Received**, **Reviewed**, and **Declined**. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -911,32 +907,20 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
    Valid property names are:
 
    
-   - **BugsBehavior** sets the default for the [Show bugs on backlogs and  board](../../organizations/settings/show-bugs-on-backlog.md). Allowed values correspond to:  
-   
-     - **AsRequirements** &mdash; Bugs appear on backlogs and boards similar to requirements (default for Scrum process)  
-     - **AsTasks** &mdash; Bugs appear on backlogs and boards similar to tasks (default for Agile and CMMI processes)  
-     - **Off** &mdash; Bugs don't appear on backlogs or boards    
-   
+   - **BugsBehavior** sets the default for the [Show bugs on backlogs and  board](../../organizations/settings/show-bugs-on-backlog.md). Allowed values correspond to:<br/>   
+      - **AsRequirements** &mdash; Bugs appear on backlogs and boards similar to requirements (default for Scrum process)  
+      - **AsTasks** &mdash; Bugs appear on backlogs and boards similar to tasks (default for Agile and CMMI processes)  
+      - **Off** &mdash; Bugs don't appear on backlogs or boards  <br/>
    - **HiddenBacklogs** specifies the [backlog that's inactive by  default](../../organizations/settings/select-backlog-navigation-levels.md).
-
-   - **StateColors** sets the color values for workflow states. (Requires TFS 2017 or later version) 
-
-   <a id="state-colors">  </a>
-
-   The value for the property is a comma-separated list of state names and hex colors. Prefix the six-digit Hex color code with FF which denotes that the color should be fully visible.
-
+   - **StateColors** sets the color values for workflow states. (Requires TFS 2017 or later version)  
+    <a id="state-colors">  </a>The value for the property is a comma-separated list of state names and hex colors. Prefix the six-digit Hex color code with FF which denotes that the color should be fully visible.  
    `<Property name="StateColors" value="stateName1=color1,  
-   stateName2=color2,..." />`
-   
+   stateName2=color2,..." />`<br/><br/>   
    > [!NOTE]   
-   > **Feature availability:** You can specify workflow state colors if you use Hosted XML or, for On-premises XML, you have upgraded to TFS 2015.2 or later version.  
-   
+   > **Feature availability:** You can specify workflow state colors if you use Hosted XML or, for On-premises XML, you have upgraded to TFS 2015.2 or later version.     
    For additional details, see the next section, [Specify workflow state colors](#workflow-colors). 
-
-   <a id="wit-icons">  </a> 
-    
-   - **WorkItemTypeIcons** defines the icon to display for each work item type. The icon displays in lists of work items and in work item forms. The default entry for the Agile process is as shown. You can only specify an icon from the [supported list of icons](#supported-icons). 
-
+   <a id="wit-icons">  </a>     
+   - **WorkItemTypeIcons** defines the icon to display for each work item type. The icon displays in lists of work items and in work item forms. The default entry for the Agile process is as shown. You can only specify an icon from the [supported list of icons](#supported-icons).<br/><br/>
    ```
    <Property name="WorkItemTypeIcons" 
       value="Epic=Icon_Crown,Feature=Icon_Trophy,  
@@ -944,7 +928,6 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
       Issue=icon_traffic_cone,Test Plan=icon_test_plan,Test Suite=icon_test_suite,  
       Test Case=icon_test_beaker,Shared Steps=icon_test_step,Shared Parameter=icon_test_parameter" />
    ```
-   
    > [!NOTE]    
    > **Feature availability:** You can customize the icons used for work item types if you use Hosted XML or, for On-premises XML, you have upgraded to TFS 2017.2 or later version.  
    :::column-end:::
