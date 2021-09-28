@@ -48,7 +48,7 @@ The sample project is a simple shared library written in C#.
 
 ## Add the Azure Artifacts NuGet tools to your repo
 
-The easiest way to use the Azure Artifacts NuGet service is by adding the [Microsoft.VisualStudio.Services.NuGet.Bootstrap package](../../artifacts/nuget/bootstrap-nuget.md) to your project.
+The easiest way to use the Azure Artifacts NuGet service is by adding the [Microsoft.VisualStudio.Services.NuGet.Bootstrap package](https://www.nuget.org/packages?q=Microsoft.VisualStudio.Services.NuGet.Bootstrap) to your project.
 
 ## Create a package from your project
 
