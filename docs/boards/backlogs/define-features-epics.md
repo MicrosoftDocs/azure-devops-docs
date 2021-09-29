@@ -233,7 +233,6 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 :::row:::
    :::column span="1":::
    
-   [](../queries/query-numeric.md)
    [Business Value](../queries/query-numeric.md)
    :::column-end:::
    :::column span="3":::
