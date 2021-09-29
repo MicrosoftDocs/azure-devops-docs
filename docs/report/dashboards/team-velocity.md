@@ -127,12 +127,12 @@ Use this article to learn:
     To select another backlog, open the selector and then select a different team or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false":::  **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
-    > ![Select another team](/azure/devops/boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
+    > ![Screenshot of the My Team Backlogs drop-down list.](/azure/devops/boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 1. To view the in-context reports for the product backlog, check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Select product backlog level, Backlog items, Stories, or Requirements](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
+    > ![Screenshot of the Backlog items drop-down optio.](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
 ::: moniker-end
 

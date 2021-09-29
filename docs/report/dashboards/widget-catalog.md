@@ -536,7 +536,7 @@ Add code tracking widgets to track changes made within a repository or get quick
    :::column span="1":::
       <br/>
       <a id="code-tile-widget"></a> 
-      Adds a configurable tile to display the summary of a code folder or Git repository. To configure, choose the added tile, select a repository, select a branch (Git only) and select a path. The code tile supports both TFVC and Git repositories. 
+      Adds a configurable tile to display the summary of a code folder or Git repository. To configure, select the added tile, select a repository, select a branch (Git only) and select a path. The code tile supports both TFVC and Git repositories. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -584,7 +584,7 @@ Add the Build History pipeline widget to track the health of your builds.
       <a id="build-history-widget"></a> 
       Adds a tile to display a histogram of all builds run for the configured build pipeline.
       From the configuration dialog, select the build you want to monitor. 
-      Hover over a bar to learn how long the build took to complete. Choose the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
+      Hover over a bar to learn how long the build took to complete. Select the bar to open the summary for that specific build. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
    :::column-end:::
 :::row-end:::
 ::: moniker range=">= tfs-2017"
