@@ -1070,7 +1070,7 @@
    Can modify permissions for build pipelines at the organization or project collection-level. This includes: 
    
    - [Set retention policies](../../pipelines/policies/retention.md)
-   - [Set resource limits for pipelines](/azure/devops/pipelines/licensing/concurrent-jobs)
+   - [Set resource limits for pipelines](../../pipelines/licensing/concurrent-jobs.md)
    - [Add and manage agent pools](../../pipelines/agents/pools-queues.md)
    - [Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)
    
