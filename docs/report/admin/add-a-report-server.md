@@ -126,7 +126,7 @@ If you had to choose **Install Only** when you added reporting, you'll need to o
 
  	![TFS needs this database for reporting](media/change-database.png)  
 
-4.	When you specify the database server connection, include the instance name and the server name, separated by a slash (\).  
+4.	When you specify the database server connection, include the instance name and the server name, separated by a backslash (`\`).  
 
 	![Include the instance name, if any](media/report-database-server.png)  
 	If you aren't using a named instance, you can just provide the server name.  
