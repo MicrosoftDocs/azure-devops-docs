@@ -410,11 +410,11 @@ You can use the following fields to filter queries and create reports. Several o
 > [!NOTE]  
 > 1. For these fields to be defined for a WIT, they must be included in the ```WORKFLOW``` section of the WIT definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a Resolved state:  
 
-    ```xml
+```xml
     <FIELD refname="Microsoft.VSTS.Common.ResolvedDate">  
        <SERVERDEFAULT from="clock" />  
     </FIELD>  
-    ```
+```
 
 ## Related articles
 
