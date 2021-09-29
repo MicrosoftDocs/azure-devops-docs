@@ -88,13 +88,13 @@ The following table describes the work item link types you can specify to scope 
 
 :::row:::
    :::column span="1":::
-   Name
+   **Name**
    :::column-end:::
    :::column span="3":::
-   Reference name
+   **Reference name**
    :::column-end:::
    :::column span="3":::
-   Usage
+   **Usage**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -190,7 +190,7 @@ The following table describes the work item link types you can specify to scope 
    Use to link test cases to shared parameters. Use to link Test Cases to Shared Parameters to support the ability to [repeat a test with different data](../../test/repeat-test-with-different-data.md). In general, you wouldn&#39;t add this link type to a scoped links control.  To learn more, see [Repeat a test with different data](../../test/repeat-test-with-different-data.md). 
 
    :::column-end:::
-:::row-end:::
+   :::row-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
@@ -288,8 +288,7 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
 > [!div class="mx-imgBorder"]  
 > ![Hyperlink, conceptual image](media/link-type-reference/hyperlink.png) 
 
-   <table width="100%"> 
-:::row:::
+   :::row:::
    :::column span="1":::
    Link name
    :::column-end:::

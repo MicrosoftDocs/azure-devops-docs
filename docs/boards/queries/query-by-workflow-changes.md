@@ -106,13 +106,13 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
 :::row:::
      :::column span="1":::
    
-   Filter for
+   **Filter for**
 
   
    :::column-end:::
      :::column span="1":::
    
-   Include these query clauses
+   **Include these query clauses**
 
   
    :::column-end:::
@@ -220,10 +220,10 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
 
 :::row:::
      :::column span="1":::
-   Filter for
+   **Filter for**
    :::column-end:::
      :::column span="1":::
-   Include these query clauses
+   **Include these query clauses**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -309,10 +309,10 @@ You can quickly find items that you changed, resolved, or closed. You can also f
 
 :::row:::
      :::column span="1":::
-   Filter for
+   **Filter for**
    :::column-end:::
      :::column span="1":::
-   Include these query clauses
+   **Include these query clauses**
    :::column-end:::
 :::row-end:::
 :::row:::

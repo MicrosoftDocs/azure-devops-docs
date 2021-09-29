@@ -185,15 +185,15 @@ The following table indicates the operators and macros available for the differe
 
 :::row:::
    :::column span="1":::
-   Data type
+   **Data type**
 
    :::column-end:::
    :::column span="3":::
-   Description
+   **Description**
 
    :::column-end:::
    :::column span="3":::
-   Supported operators and macros
+   **Supported operators and macros**
 
    :::column-end:::
 :::row-end:::
@@ -218,7 +218,7 @@ The following table indicates the operators and macros available for the differe
 
    :::column-end:::
    :::column span="3":::
-   A date field in which you can specify a variable, such as **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.)<p> For query examples, see [Query by date or@CurrentIteration](query-by-date-or-current-iteration.md). 
+   A date field in which you can specify a variable, such as **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.) For query examples, see [Query by date or@CurrentIteration](query-by-date-or-current-iteration.md). 
    :::column-end:::
    :::column span="3":::
    = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever  **Macros**: **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>**, valid with any **DateTime** field
@@ -240,7 +240,7 @@ The following table indicates the operators and macros available for the differe
 :::row-end:::
 :::row:::
    :::column span="1":::
-   **GUID** </p>
+   **GUID** 
    :::column-end:::
    :::column span="3":::
    A character string that represents a unique ID.
@@ -268,7 +268,7 @@ The following table indicates the operators and macros available for the differe
 
    :::column-end:::
    :::column span="3":::
-   <p>Text strings that support formatted descriptions, such as the **Description** or **Repro Steps** fields. These fields are automatically indexed for full-text search when full-text search is available. Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). 
+   Text strings that support formatted descriptions, such as the **Description** or **Repro Steps** fields. These fields are automatically indexed for full-text search when full-text search is available. Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md). 
    :::column-end:::
    :::column span="3":::
    Contains Words, Does Not Contain Words, Is Empty<sup>3</sup>, Is Not Empty<sup>3</sup>
@@ -324,8 +324,8 @@ The following table indicates the operators and macros available for the differe
    :::column-end:::
    :::column span="3":::
    = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
-   <p>**Macros**: **[Any]**, valid with the **Work Item Type** field  
-   **<xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref>**<sup>6</sup>, valid with the **Team Project** field </p>
+   **Macros**: **[Any]**, valid with the **Work Item Type** field  
+   **<xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref>**<sup>6</sup>, valid with the **Team Project** field 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -341,8 +341,8 @@ The following table indicates the operators and macros available for the differe
    :::column-end:::
    :::column span="3":::
    Under, Not Under
-   <p>**Macros**: **<xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref>**<sup>7</sup>, valid with **Area Path** field  
-   **<xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref>**<sup>8</sup> and**<xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n**<sup>9</sup> valid with the **Iteration Path** field</p>
+   **Macros**: **<xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref>**<sup>7</sup>, valid with **Area Path** field  
+   **<xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref>**<sup>8</sup> and**<xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n**<sup>9</sup> valid with the **Iteration Path** field
    :::column-end:::
 :::row-end:::
 
@@ -405,7 +405,7 @@ The following table lists common query fields and their data type for which samp
    - [Created Date](query-by-workflow-changes.md) (DateTime)
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ### D-E-F
    
@@ -443,7 +443,7 @@ The following table lists common query fields and their data type for which samp
    - [Revised Date](history-and-auditing.md) (DateTime)
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ### S
    

@@ -32,11 +32,11 @@ The value you specify for a field must conform to the data type for that field. 
 
 :::row:::
    :::column span="1":::
-   Data type
+   **Data type**
 
    :::column-end:::
    :::column span="3":::
-   Description
+   **Description**
 
    :::column-end:::
 :::row-end:::
@@ -184,9 +184,9 @@ The value you specify for a field must conform to the data type for that field. 
    :::column-end:::
 :::row-end:::
 
-#### Notes:
-1. The **Boolean** data type field is supported for TFS 2017 and later versions. 
-2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
+> [!NOTE]
+> 1. The **Boolean** data type field is supported for TFS 2017 and later versions. 
+> 2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
 
 [!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
@@ -200,13 +200,13 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
 :::row:::
    :::column span="1":::
-   Query operator
+   **Query operator**
    :::column-end:::
    :::column span="3":::
-   Returns work items if the value in the work item matches the criteria listed
+   **Returns work items if the value in the work item matches the criteria listed**
    :::column-end:::
    :::column span="3":::
-   Applicable data types
+   **Applicable data types**
    :::column-end:::
 :::row-end:::
 

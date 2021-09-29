@@ -58,10 +58,10 @@ Use the following guidance and that provided for [fields used in common across w
 
   :::row:::
    :::column span="1":::
-   Field
+   **Field**
    :::column-end:::
    :::column span="3":::
-   Usage
+   **    Usage**
    :::column-end:::
   :::row-end:::
   :::row:::
@@ -106,50 +106,16 @@ Use the following guidance and that provided for [fields used in common across w
   The kind of requirement to implement. You can specify one of the following values: 
 
   
-   - 
-   
-   **Business Objective **
-   
-   
-   - 
-   
-   **Feature** (default)
-   
-   - 
-   
-   **Functional**
-   
-   
-   - 
-   
-   **Interface **
-   
-   
-   - 
-   
-   **Operational **
-   
-   
-   - 
-   
-   **Quality of Service **
-   
-   
-   - 
-   
-   **Safety **
-   
-   
-   - 
-   
-   **Scenario **
-   
-   
-   - 
-   
-   **Security**
-   
-   
+   - **Business Objective**
+   - **Feature** (default)
+   - **Functional**
+   - **Interface**
+   - **Operational**
+   - **Quality of Service**
+   - **Safety**
+   - **Scenario**
+   - **Security**
+     
   
    :::column-end:::
   :::row-end:::
@@ -162,14 +128,8 @@ Use the following guidance and that provided for [fields used in common across w
    The area of customer value addressed by the epic, feature, requirement, or backlog item. Values include:
 
    
-   - 
-   
-   **Architectural **: Technical services to implement business features that deliver solution 
-   
-   
-   - 
-   
-   **Business**: Services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
+   - **Architectural**: Technical services to implement business features that deliver solution 
+   - **Business**: Services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
    
    
   
@@ -221,17 +181,9 @@ Use the following guidance and that provided for [fields used in common across w
   A subjective rating of the requirement as it relates to the business. Allowed values are:
 
   
-   - 
-   
-   **1**: Product cannot ship without the item.
-   
-   - 
-   
-   **2**: (default) Product cannot ship without the item, but it doesn&#39;t have to be addressed immediately. 
-   
-   - 
-   
-   **3**: Implementation of the item is optional based on resources, time, and risk.  
+   - **1**: Product cannot ship without the item.
+   - **2**: (default) Product cannot ship without the item, but it doesn&#39;t have to be addressed immediately. 
+   - **3**: Implementation of the item is optional based on resources, time, and risk.  
    
   
    
@@ -297,35 +249,13 @@ Use the following guidance and that provided for [fields used in common across w
   The status of the user acceptance test for a requirement. You can specify one of the following values:   
 
   
-   - 
-   
-  **Pass**
-   
-   
-   - 
-   
-  **Fail**
-   
-   
-   - 
-   
-  **Not Ready**  (default)
-   
-   - 
-   
-  **Ready**
-   
-   
-   - 
-   
-  **Skipped**
-   
-   
-   - 
-   
-  **Info Received**
-   
-   
+   - **Pass**
+   - **Fail**
+   - **Not Ready**  (default)
+   - **Ready**
+   - **Skipped**
+   - **Info Received**
+     
   
    You specify Not Ready when the requirement is in the Active state, and you specify Ready when the requirement is in the Resolved state.
 

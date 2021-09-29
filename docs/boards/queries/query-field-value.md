@@ -36,17 +36,17 @@ You can use the comparison field operators&mdash;`=[Field], <>[Field], >[Field],
 
 :::row:::
    :::column span="1":::
-   Filter for
+   **Filter for**
    :::column-end:::
-   :::column span="3":::
-   Include these query clauses
+   :::column span="1":::
+   **Include these query clauses**
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    Work items closed by someone other than the person who created the work item  
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    `Created By ** <>[Field] ** Closed By`  State** = ** Closed</code>  
    :::column-end:::
@@ -55,7 +55,7 @@ You can use the comparison field operators&mdash;`=[Field], <>[Field], >[Field],
    :::column span="1":::
    Tasks whose Original Estimate is less than Completed Work
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    `Original Estimate ** <=[Field] ** Completed Work`  
    :::column-end:::
@@ -65,7 +65,7 @@ You can use the comparison field operators&mdash;`=[Field], <>[Field], >[Field],
    
    Closed tasks completed prior to their target date 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    `Target Date ** <=[Field] ** Closed Date`  State** = ** Closed</code>  
    :::column-end:::
@@ -142,7 +142,7 @@ The following table provides an index to those fields that support field compari
    - [Created Date](query-by-workflow-changes.md) (System)
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ### D-E-F
    
@@ -197,7 +197,7 @@ The following table provides an index to those fields that support field compari
    - [Query Text](build-test-integration.md) (TCM)
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    ### R
    
    - [Rating](../work-items/guidance/guidance-code-review-feedback-field-reference.md)

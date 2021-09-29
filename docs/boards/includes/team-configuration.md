@@ -12,13 +12,13 @@ ms.date: 01/09/2020
 
 :::row:::
    :::column span="1":::
-   Area
+   **Area**
    :::column-end:::
    :::column span="3":::
-   Tool
+   **Tool**
    :::column-end:::
    :::column span="3":::
-   Team configuration tasks
+   **Team configuration tasks**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -140,13 +140,13 @@ ms.date: 01/09/2020
 
 :::row:::
    :::column span="1":::
-   Area
+   **Area**
    :::column-end:::
    :::column span="3":::
-   Tool
+   **Tool**
    :::column-end:::
    :::column span="3":::
-   Team configuration tasks
+   **Team configuration tasks**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -270,13 +270,13 @@ ms.date: 01/09/2020
 
 :::row:::
    :::column span="1":::
-   Area
+   **Area**
    :::column-end:::
    :::column span="3":::
-   Tool
+   **Tool**
    :::column-end:::
    :::column span="3":::
-   Team configuration tasks
+   **Team configuration tasks**
    :::column-end:::
 :::row-end:::
 :::row:::

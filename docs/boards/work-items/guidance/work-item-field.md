@@ -115,7 +115,7 @@ Values in parenthesis indicate the following:
    - [Created Date](../../queries/query-by-workflow-changes.md) (System)
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ### D-E-F
    
@@ -174,7 +174,7 @@ Values in parenthesis indicate the following:
    - [Query Text](../../queries/build-test-integration.md) (TCM)
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    ### R
    
    - [Rating](guidance-code-review-feedback-field-reference.md)

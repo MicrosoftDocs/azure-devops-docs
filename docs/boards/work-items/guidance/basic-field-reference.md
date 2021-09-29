@@ -60,7 +60,7 @@ To support additional tracking needs, you can [define your own custom work item 
    - [External Link Count](../../queries/linking-attachments.md#external-link-count) 
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ### H-I
    
@@ -89,7 +89,7 @@ To support additional tracking needs, you can [define your own custom work item 
    - [Resolved Reason](../../queries/query-by-workflow-changes.md)
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
 
    ### S

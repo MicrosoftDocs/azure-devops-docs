@@ -55,10 +55,10 @@ The WIQL length of queries made against Azure Boards must not exceed 32K charact
 
 :::row:::
    :::column span="1":::
-   Clause
+   **Clause**
    :::column-end:::
    :::column span="3":::
-   Example
+   **Example**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -185,10 +185,10 @@ Beyond these basic operators, there are some behaviors and operators specific to
 
 :::row:::
    :::column span="1":::
-   Field type
+   **Field type**
    :::column-end:::
    :::column span="3":::
-   Supported operators
+   **Supported operators**
    :::column-end:::
 :::row-end:::
 
@@ -513,13 +513,13 @@ The following table summarizes the differences between work item queries and que
 
 :::row:::
    :::column span="1":::
-   Clause
+   **Clause**
    :::column-end:::
    :::column span="3":::
-   Work items
+   **Work items**
    :::column-end:::
    :::column span="3":::
-   Links between work items
+   **Links between work items**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -695,10 +695,10 @@ The following example statements show specific qualifying clauses.
 
 :::row:::
    :::column span="1":::
-   Clause
+   **Clause**
    :::column-end:::
    :::column span="3":::
-   Example
+   **Example**
    :::column-end:::
 :::row-end:::
 :::row:::

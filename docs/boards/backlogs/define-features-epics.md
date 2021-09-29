@@ -200,10 +200,10 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 
 :::row:::
    :::column span="1":::
-   Field
+   **Field**
    :::column-end:::
    :::column span="3":::
-   Usage
+   **Usage**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -213,8 +213,8 @@ Open each item (double-click, or press Enter to open the selected item) and add 
    :::column-end:::
    :::column span="3":::
    The area of customer value addressed by the epic, feature, or backlog item. Values include:  
-   - <b>Architectural</b> &mdash;technical services to implement business features that deliver solution  
-   - <b>Business</b> (Default) &mdash;services that fulfill customers or stakeholder needs that directly deliver customer value to support the business 
+   - **Architectural** &mdash;technical services to implement business features that deliver solution  
+   - **Business** (Default) &mdash;services that fulfill customers or stakeholder needs that directly deliver customer value to support the business 
    
    :::column-end:::
 :::row-end:::

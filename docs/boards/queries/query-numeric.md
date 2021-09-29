@@ -42,17 +42,17 @@ For additional details on creating queries and chart-based-queries, see [Use the
 
 :::row:::
    :::column span="1":::
-   Filter for
+   **Filter for**
    :::column-end:::
-   :::column span="3":::
-   Include these query clauses
+   :::column span="1":::
+   **Include these query clauses**
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    User stories or bugs  
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    `Work Item Type * In * User Story,Bug`  
    :::column-end:::
@@ -61,7 +61,7 @@ For additional details on creating queries and chart-based-queries, see [Use the
    :::column span="1":::
    Tasks or bugs
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    `Work Item Type * In * Task,Bug`  
    :::column-end:::
@@ -71,7 +71,7 @@ For additional details on creating queries and chart-based-queries, see [Use the
    
    Items that are Active or Closed
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    `State * In * Active,Closed`  
    :::column-end:::
@@ -81,7 +81,7 @@ For additional details on creating queries and chart-based-queries, see [Use the
    
    Items in the Requirements category 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    `Work Item Type * In Group * Microsoft.RequirementCategory`  
    :::column-end:::
@@ -91,7 +91,7 @@ For additional details on creating queries and chart-based-queries, see [Use the
    
    Unestimated user stories 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    `Story Points * <> * (leave Value field blank)`  
    :::column-end:::
@@ -235,7 +235,7 @@ For information on system-defined sprint burndown charts, see [Sprint burndown](
 
 <a id="fields" />
 
-## Fields used to estimate and track work
+## 
 
 The following table describes the activity-based and numeric fields that you can use to track work. For information on date-related fields, such as Start Date, Finish Date, and Target Date, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
 
@@ -244,7 +244,7 @@ The following table describes the activity-based and numeric fields that you can
      :::column span="1":::
    Field name
    :::column-end:::
-     :::column span="1":::
+     :::column span="2":::
    Description
    :::column-end:::
      :::column span="1":::
@@ -257,7 +257,7 @@ The following table describes the activity-based and numeric fields that you can
    Activity <sup>1, 2</sup>
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    The type of activity that is required to perform a task.To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:
    - Deployment
    - Design
@@ -272,7 +272,7 @@ The following table describes the activity-based and numeric fields that you can
    Reference name=Microsoft.VSTS.Common.Activity, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Task, Bug<sup>4</sup> (Agile and Scrum)
    :::column-end:::
 :::row-end:::
@@ -281,13 +281,13 @@ The following table describes the activity-based and numeric fields that you can
    Business Value
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    A subjective unit of measure that captures the relative business value of a product backlog item or feature compared to other items of the same type. An item that is assigned a higher number should be considered as having more business value than an item that is assigned a lower number.
 
    Reference name=Microsoft.VSTS.Common.BusinessValue, Data type=Integer
   
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Epic, Feature
    :::column-end:::
 :::row-end:::
@@ -296,13 +296,13 @@ The following table describes the activity-based and numeric fields that you can
    <a id="completed-work" />Completed Work
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    The amount of work that has been spent implementing a task. You can specify work in hours or in days. There are no inherent time units associated with this field.
 
    Reference name=Microsoft.VSTS.Scheduling.CompletedWork, Data type=Double
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Task, Bug<sup>4</sup>
    :::column-end:::
 :::row-end:::
@@ -311,7 +311,7 @@ The following table describes the activity-based and numeric fields that you can
    Discipline <sup>1, 2</sup>
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    The type of activity or discipline that is assigned to a task. To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:
    - Analysis
    - Development
@@ -325,7 +325,7 @@ The following table describes the activity-based and numeric fields that you can
    Reference name=Microsoft.VSTS.Common.Discipline, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Task, Bug <sup>4</sup> (CMMI)
    :::column-end:::
 :::row-end:::
@@ -334,14 +334,14 @@ The following table describes the activity-based and numeric fields that you can
    Effort
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    A subjective unit of measure that captures the size of a bug or product backlog item. If you assign more effort to an item, you indicate that more work is required to implement it. 
    This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to `type=&quot;Effort&quot;` in the ProcessConfiguration file.
 
    Reference name=Microsoft.VSTS.Scheduling.Effort, Data type=Double
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Product Backlog Item, Bug <sup>4</sup> (Scrum)Feature, Epic
 
    :::column-end:::
@@ -351,7 +351,7 @@ The following table describes the activity-based and numeric fields that you can
    Story Points
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    A subjective unit of measure that captures the size of a user story. If you assign more points to a user story, you indicate that more work is required to implement it.
 
    This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to `type=&quot;Effort&quot;` in the ProcessConfiguration file. 
@@ -359,7 +359,7 @@ The following table describes the activity-based and numeric fields that you can
    Reference name=Microsoft.VSTS. Scheduling.StoryPoints, Data type=Double
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    User Story, Bug <sup>4</sup> (Agile)
    :::column-end:::
 :::row-end:::
@@ -368,14 +368,14 @@ The following table describes the activity-based and numeric fields that you can
    Size 
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    A subjective unit of measure that captures the size of a requirement. The larger the size, the more work is required to implement it. 
    This field<sup>3</sup>  is also used to calculate team velocity and forecasting. It is assigned to `type=&quot;Effort&quot;` in the ProcessConfiguration file. 
 
    Reference name=Microsoft.VSTS. Scheduling.Size, Data type=Double
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Requirement, Bug <sup>4</sup> (CMMI)
    :::column-end:::
 :::row-end:::
@@ -384,13 +384,13 @@ The following table describes the activity-based and numeric fields that you can
    Original Estimate
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    The amount of work required to complete a task. You can specify work in hours or in days. There are no inherent time units associated with this field. 
 
    Reference name=Microsoft.VSTS.Scheduling.OriginalEstimate, Data type=Double
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Task, Bug <sup>4</sup> (Agile and CMMI)
    :::column-end:::
 :::row:::
@@ -398,7 +398,7 @@ The following table describes the activity-based and numeric fields that you can
    <a id="remaining-work" />Remaining Work
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.
 
    This field <sup>3</sup> is also used to calculate burn down. It is assigned to `type=&quot;RemainingWork&quot;` in the ProcessConfiguration file.
@@ -410,7 +410,7 @@ The following table describes the activity-based and numeric fields that you can
    Reference name=Microsoft.VSTS.Scheduling.RemainingWork, Data type=Double
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Task, Bug<sup>4</sup>
    :::column-end:::
 :::row-end:::
@@ -419,13 +419,13 @@ The following table describes the activity-based and numeric fields that you can
    Requires Review
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Indicates the task requires review. You can specify **Yes** or **No** (default).
 
    Reference name=Microsoft.VSTS.CMMI.RequiresReview, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Task (CMMI)
    :::column-end:::
 :::row-end:::
@@ -434,13 +434,13 @@ The following table describes the activity-based and numeric fields that you can
    Requires Test
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Indicates the task requires a test. You can specify **Yes** or **No** (default).
 
    Reference name=Microsoft.VSTS.CMMI.RequiresTest, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Task (CMMI)
    :::column-end:::
 :::row-end:::
@@ -449,7 +449,7 @@ The following table describes the activity-based and numeric fields that you can
    Task Type<sup>1</sup>
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Specifies the kind of task to implement. Allowed values are:
    - Corrective Action
    - Mitigation Action
@@ -458,17 +458,16 @@ The following table describes the activity-based and numeric fields that you can
    Reference name=Microsoft.VSTS.CMMI.TaskType, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Task, Bug<sup>4</sup> (CMMI process)
    :::column-end:::
 :::row-end:::
 
-#### Notes:
-
-1.  To change the menu selection: for cloud services or an Inherited process, see [Add and manage fields](../../organizations/settings/work/customize-process-field.md); and for On-premises XML process, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
-2.  The values displayed in the [Capacity page](../sprints/set-capacity.md) for **Activity** (Agile or Scrum) or **Discipline** (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.  
-3.  To change the ProcessConfiguration field assignment (on-premises only), see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
-4. Each team can configure their Agile tools to determine if [bugs are treated similar to requirements or tasks](#show-bugs). Since bugs can appear either with requirements or tasks, fields used to estimate effort at the requirement-level and the task-level are included in the work item form. 
+> [!NOTE]
+> 1. To change the menu selection: for cloud services or an Inherited process, see [Add and manage fields](../../organizations/settings/work/customize-process-field.md); and for On-premises XML process, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
+> 2. The values displayed in the [Capacity page](../sprints/set-capacity.md) for **Activity** (Agile or Scrum) or **Discipline** (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.  
+> 3. To change the ProcessConfiguration field assignment (on-premises only), see [Process configuration XML   element reference](../../reference/xml/process-configuration-xml-element.md).
+> 4. Each team can configure their Agile tools to determine if [bugs are treated similar to requirements or tasks](#show-bugs). Since bugs can appear either with requirements or tasks, fields used to estimate effort at the requirement-level and the task-level are included in the work item form. 
 
 ## Related articles 
 
