@@ -1,7 +1,7 @@
 ---
 title: Add, rename, delete, and manage team dashboards
 titleSuffix: Azure DevOps  
-description: View progress and trends by adding widgets and creating dashboards in Azure DevOps.  
+description: Learn how to create dashboards and add widgets to view progress and trends in Azure DevOps.
 ms.custom: "dashboards" 
 ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
-ms.date: 09/21/2021
+ms.date: 09/28/2021
 ---
 
 # Add, rename, and delete dashboards in Azure DevOps
