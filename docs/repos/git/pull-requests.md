@@ -121,11 +121,12 @@ You can view all of your PRs in your organization, across all projects, by choos
 
 ::: moniker-end 
 
+<a name="create-a-new-pull-request"></a>
 ## Create a pull request
 
 You can create a new PR from:
 
-- [A feature branch pushed to your repo](#after-pushing-a-branch).
+- [A feature branch pushed to your repo](#from-a-pushed-branch).
 - [The Development section in a linked Azure Boards work item](#from-a-linked-work-item).
 - [The Pull requests page on the Azure DevOps website](#from-the-pull-requests-page-on-the-web).
 - [Team Explorer in Visual Studio](#from-visual-studio).
@@ -209,7 +210,7 @@ Starting with Visual Studio 2017 Update 6, you can check out the source branch f
 
 ::: moniker range=">=azure-devops-2020"
 
-### From the Azure CLI
+### From the Azure DevOps Services CLI
 
 You can manage your PRs and other resources from the command line with [Azure CLI](/cli/azure/?view=azure-cli-latest&preserve-view=true). For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
@@ -217,7 +218,7 @@ You can manage your PRs and other resources from the command line with [Azure CL
 
 ::: moniker range=">=azure-devops-2019"
 
-## Draft PRs
+## Draft pull requests
 
 ::: moniker-end
 
@@ -433,7 +434,8 @@ Edit the PR description by selecting the **Edit** icon in the **Description** se
 Keep these fields up to date so reviewers can understand the changes in the PR.
 
 ::: moniker range=">=azure-devops-2019"
-## Change the target branch of a PR
+<a name="change-the-target-branch-of-a-pull-request"></a>
+### Change the target branch of a PR
 
 For most teams, nearly all PRs target a default branch, such as `main` or `develop`. If you need to target a different branch, it's easy to forget to change the target branch from the default. To change the target branch of an active PR, see [Change the target branch of a PR](/azure/devops/release-notes/2018/sprint-141-update#azure-repos).
 
@@ -545,6 +547,7 @@ You can create queries on the PR page with additional filters, such as draft sta
   ![PR commits](media/pull-requests/pull-request-commits.png)
 ::: moniker-end
 
+<a name="leave-comments"></a>
 ### Make comments
 
 Add comments to a PR to make suggestions, reply to previous comments, and point out problems with proposed changes.
@@ -577,6 +580,7 @@ To keep track of files that have already been reviewed, select the **More option
 
 :::moniker-end
 
+<a name="vote-on-the-changes"></a>
 ### Vote on changes
 
 Use the button at upper right to vote on the changes in a PR. The default option is **Approve**, but you can select other options from the dropdown list:
@@ -673,6 +677,8 @@ After the PR gets all required approvals and meets all required policies, you ca
 
 5. Select **Complete merge**.
 
+::: moniker-end
+
 ::: moniker range=">= azure-devops-2019"
 When you complete the merge, any linked work items automatically update to show the PR completion.
 
@@ -723,7 +729,7 @@ Linked work items are also updated showing the PR completion.
 
 When you complete a PR, Git adds a new *merge commit* to the end of the main branch. This merge commit links the earlier histories of the main branch and the PR source branch. You must resolve any [merge conflicts](merging.md) between the PR branch and the target branch before you can merge the PR.
 
-::: moniker range=">= tfs-2017" 
+::: moniker range=">= tfs-2017"
 
 ### Complete automatically
 
@@ -740,7 +746,7 @@ Once you set auto-complete, the PR displays a banner. Select **Cancel auto-compl
 ![Screenshot of a P R in auto-complete state.](./media/pull-requests/autocomplete.png)
 ::: moniker-end 
 
-::: moniker range=">= azure-devops-2017 <= azure-devops-2020"
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
 ![Screenshot of a P R in auto-complete state.](./media/pull-requests/pr_banner_autocomplete.png)
 ::: moniker-end 
 
