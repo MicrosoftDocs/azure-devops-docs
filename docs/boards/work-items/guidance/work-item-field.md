@@ -237,13 +237,11 @@ Values in parenthesis indicate the following:
    :::column-end:::
 :::row-end:::
 
-
-#### Notes: 
-
-1. These fields are available from Azure DevOps Services and TFS 2015.1 or later versions. 
-2. The Comment Count field is available from Azure DevOps Services and TFS 2017 or later versions. 
-3. These fields are available from Azure DevOps Services and Azure DevOps Server 2020.
-4. These fields are available from Azure DevOps Services only.
+> [!NOTE]  
+> 1. These fields are available from Azure DevOps Services and TFS 2015.1 or later versions. 
+> 2. The Comment Count field is available from Azure DevOps Services and TFS 2017 or later versions. 
+> 3. These fields are available from Azure DevOps Services and Azure DevOps Server 2020.
+> 4. These fields are available from Azure DevOps Services only.
 
 By using the system fields or other fields you have added to your project collection, you can enable meaningful cross-project reports and queries. In addition, any non-system field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any non-system field that you might want to use to generate a query or report in the **FIELDS** section.  
 

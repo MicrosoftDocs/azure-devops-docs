@@ -88,9 +88,9 @@ Query clauses that specify an Identity or workflow-associated field can use the 
 ---
  
 
-#### Notes:
-1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
-2. The **Was Ever** operator is only valid for Kanban board columns for Azure DevOps Services at this time.  
+> [!NOTE]  
+> 1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
+> 2. The **Was Ever** operator is only valid for Kanban board columns for Azure DevOps Services at this time.  
 
 
 Use the **In** and **Not In** operators to filter for or exclude two or more picklist entries or a delimited set of items. Use the **In Group** or **Not In Group** operators to filter for items that belong or don't belong within a category group or  security group. For more information, see [Query fields, operators, and macros](query-operators-variables.md). 
@@ -796,16 +796,16 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row-end:::
 
 
-#### Notes:  
-
+> [!NOTE]  
+> 
 <a id="sync">  </a>
 
 ::: moniker range="azure-devops"
 
-1. See [Date and Identity fields](#date-identity).  
-2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Azure Active Directory](../../organizations/security/about-permissions.md#aad). 
-3. See [Activated By/Date and Resolved By/Date fields](#activated-resolved-fields).   
-3. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
+> 1. See [Date and Identity fields](#date-identity).  
+> 2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Azure Active Directory](../../organizations/security/about-permissions.md#aad). 
+> 3. See [Activated By/Date and Resolved By/Date fields](#activated-resolved-fields).   
+> 4. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
 	> [!NOTE]  
 	> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
 

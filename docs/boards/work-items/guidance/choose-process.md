@@ -63,7 +63,9 @@ Choose the process that provides the best fit for your team.
    
    **Basic**
 
-   Choose [Basic](../../get-started/plan-track-work.md) when your team wants the simplest model that uses Issues, Tasks, and Epics to track work. Note: Basic is currently in a selective Preview for new users of Azure Boards only.
+   Choose [Basic](../../get-started/plan-track-work.md) when your team wants the simplest model that uses Issues, Tasks, and Epics to track work. 
+   > [!NOTE]  
+   > Basic is currently in a selective Preview for new users of Azure Boards only.
 
  Tasks support tracking Remaining Work.
 
@@ -375,18 +377,17 @@ The following table summarizes the main distinctions between the WITs and states
    :::column-end:::
 :::row-end:::
 
-**Notes:**
-
-1.  You can add these WITs from the [product backlog](../../backlogs/create-your-backlog.md) or [Kanban board](../../boards/kanban-basics.md). 
+> [!NOTE]  
+> 1.  You can add these WITs from the [product backlog](../../backlogs/create-your-backlog.md) or [Kanban board](../../boards/kanban-basics.md). 
     The product backlog shows a single view of the current backlog of work that can be dynamically re-ordered and grouped. 
     Product owners can quickly prioritize work and outline dependencies and relationships.
 
     Also, each team can configure how they want [bugs to show up on their backlogs and boards](../../../organizations/settings/show-bugs-on-backlog.md).
 
-2.  With portfolio backlogs you can define a hierarchy of backlogs to understand the scope of work across several teams and see how that work rolls up into broader initiatives.
+> 2.  With portfolio backlogs you can define a hierarchy of backlogs to understand the scope of work across several teams and see how that work rolls up into broader initiatives.
     Each team can configure which [portfolio backlogs appear for their use](../../../organizations/settings/select-backlog-navigation-levels.md).
 
-3.  You can define tasks from the [sprint backlog and taskboard](../../sprints/assign-work-sprint.md). 
+> 3.  You can define tasks from the [sprint backlog and taskboard](../../sprints/assign-work-sprint.md). 
     With capacity planning, teams can quickly determine if they are over or under capacity for a sprint.  
  
 
