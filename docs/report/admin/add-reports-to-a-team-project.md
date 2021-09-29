@@ -1,21 +1,27 @@
 ---
 title: Add reports to a team project 
-titleSuffix: Azure DevOps Server & TFS    
-description: Add a report server and upload reports to a team project hosted on an on-premises Team Foundation Server (TFS)  
+titleSuffix: Azure DevOps Server
+description: Add a report server and upload reports to a team project hosted on an on-premises Azure DevOps Server so you can access data about your team's projects.
 ms.assetid: 17C16BE3-6F7D-466F-A3D9-402C79D53768  
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< azure-devops' 
-ms.date: 11/19/2018
+ms.date: 09/23/2021
 ---
 
 # Add reports to a team project
 
 [!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
-By adding a report server to your TFS (on-premises) deployment, you can access a wealth of data about your team's projects, such as build quality, bug trends, burndown, and test progress. SQL Server Reporting Services (SSRS) reports provide insight to help teams manage work and improve processes.
+By adding a report server to your on-premises Azure DevOps Server deployment, you can access a wealth of data about your team's projects, like:
+- Build quality
+- Bug trends
+- Burndown
+- Test progress
+
+SQL Server Reporting Services (SSRS) reports provide insight to help teams manage their work and improve processes.
 
 The sequence of tasks is as follows:
 
