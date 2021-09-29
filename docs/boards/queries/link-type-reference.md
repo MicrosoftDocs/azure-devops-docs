@@ -275,8 +275,8 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
 :::row-end:::
 
-**Notes:**
-1. Available from TFS 2017 and later versions. 
+> [!NOTE]  
+> 1. Available from TFS 2017 and later versions. 
 
 
 <a id="hyperlink">  </a>

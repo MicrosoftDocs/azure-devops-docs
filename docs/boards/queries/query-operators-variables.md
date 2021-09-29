@@ -751,10 +751,9 @@ You can use the macros described in the following table to filter your queries b
 ---
  
 
-#### Notes:
-
-1. The **@MyRecentActivity**, **@RecentMentions**, and **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
-1. The **@StartOfDay**, **@StartOfWeek**, **@StartOfMonth**, and **@StartOfYear** macros are supported for Azure DevOps Server 2019 Update 1 and later versions.
+> [!NOTE]  
+> 1. The **@MyRecentActivity**, **@RecentMentions**, and **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
+> 2. The **@StartOfDay**, **@StartOfWeek**, **@StartOfMonth**, and **@StartOfYear** macros are supported for Azure DevOps Server 2019 Update 1 and later versions.
 
 
 

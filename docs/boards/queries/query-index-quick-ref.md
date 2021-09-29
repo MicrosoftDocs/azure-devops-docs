@@ -347,17 +347,16 @@ The following table indicates the operators and macros available for the differe
 :::row-end:::
 
 
-#### Notes:  
-
-1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
-2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
-3. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions.
-4. The **@Follows** macro is supported for TFS 2017 and later versions.
-5. The **@MyRecentActivity**, **@RecentMentions,** and **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
-6. The **@Project** macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
-7. The **@TeamAreas** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
-8. The **@CurrentIteration** macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
-9. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal.   
+> [!NOTE]  
+> 1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
+> 2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
+> 3. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions.
+> 4. The **@Follows** macro is supported for TFS 2017 and later versions.
+> 5. The **@MyRecentActivity**, **@RecentMentions,** and **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
+> 6. The **@Project** macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+> 7. The **@TeamAreas** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
+> 8. The **@CurrentIteration** macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
+> 9. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal.   
 
 
 [!INCLUDE [temp](../includes/note-macro-web-portal.md)]
@@ -477,9 +476,8 @@ The following table lists common query fields and their data type for which samp
 :::row-end:::
 
 
-**Notes:**
-
-1. The <strong>Comment Count</strong> field is supported for TFS 2017 and later versions. 
+> [!NOTE]  
+> 1. The <strong>Comment Count</strong> field is supported for TFS 2017 and later versions. 
 
 
 ## Related articles

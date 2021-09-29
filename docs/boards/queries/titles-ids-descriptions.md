@@ -87,10 +87,9 @@ Query clauses that specify a text or rich-text field can use the operators and m
 ---
  
 
-#### Notes:  
-
-1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
-2. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+> [!NOTE]  
+> 1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
+> 2. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 
 
 ## Use `Contains words` for string matches
@@ -399,10 +398,9 @@ The following table describes common fields used to filter queries. The **ID** f
    :::column-end:::
 :::row-end:::
 
-#### Notes:   
-
-1. To learn more about working with rich-text fields, see [Share information within work items](share-plans.md#rich-text).   
-1. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
+> [!NOTE]  
+> 1. To learn more about working with rich-text fields, see [Share information within work items](share-plans.md#rich-text).   
+> 2. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
 
 ## Related articles
 

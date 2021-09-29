@@ -69,9 +69,9 @@ Most build and test integration fields have a data type of String, PlainText, or
 :::row-end:::
 
 
-#### Notes:
-1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
-2. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+> [!NOTE]  
+> 1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
+> 2. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 
 
 ## Useful filters 
@@ -320,11 +320,11 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row-end:::
 
 
-**Notes**  
-1.  Do not customize the picklist for these fields. The system accepts only those values listed.  
-2.  By adding a `GLOBALLIST` element to the `FIELD` definition, you can provide a drop-down menu of builds that users can choose from. To learn how, see [Builds and global list auto-population](#global-list) later in this article.
-3.  Requires TFS 2013.2 or later version to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
-4.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade). 
+> [!NOTE]  
+> 1.  Do not customize the picklist for these fields. The system accepts only those values listed.  
+> 2.  By adding a `GLOBALLIST` element to the `FIELD` definition, you can provide a drop-down menu of builds that users can choose from. To learn how, see [Builds and global list auto-population](#global-list) later in this article.
+> 3.  Requires TFS 2013.2 or later version to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
+> 4.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade). 
 
 ## Additional fields
 
@@ -481,9 +481,9 @@ The following fields do not appear on work item forms, but these fields are trac
 :::row-end:::
 
 
-**Notes**  
-1.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.  
-2.  Do not customize the picklist for these fields. The system accepts only those values listed.
+> [!NOTE]  
+> 1.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.  
+> 2.  Do not customize the picklist for these fields. The system accepts only those values listed.
 
 
 
