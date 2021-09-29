@@ -33,6 +33,8 @@ tf workspaces /remove:(*|workspace1[,workspace2,...])
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -99,6 +101,7 @@ tf workspaces /remove:(*|workspace1[,workspace2,...])
    :::column-end:::
 :::row-end:::
 
+### Option
 
 :::row:::
    :::column span="1":::
