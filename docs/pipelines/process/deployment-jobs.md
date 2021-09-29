@@ -3,7 +3,7 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 07/28/2021
+ms.date: 09/29/2021
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -35,7 +35,7 @@ Here is the full syntax to specify a deployment job:
 jobs:
 - deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
   displayName: string  # friendly name to display in the UI
-  pool:                # see pool schema
+  pool:                # not required for virtual machine resources
     name: string       # Use only global level variables for defining a pool name. Stage/job level variables are not supported to define pool name.
     demands: string | [ string ]
   workspace:
@@ -55,6 +55,7 @@ jobs:
         steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
 
+For virtual machines, you do not need to define a pool. Any steps that you define in a deployment job with a virtual machine resource will run against that virtual machine and not against the agent in the pool. For other resource types such as Kubernetes, you do need to define a pool so that tasks can run on that machine.
 ## Deployment strategies
 
 When you're deploying application updates, it's important that the technique you use to deliver the update will: 
