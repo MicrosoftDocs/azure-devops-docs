@@ -623,7 +623,7 @@ The following table describes each of the property items specified in the config
    ```
 
    :::column-end:::
-:::row-end:::
+   :::row-end:::
 :::row:::
    :::column span="1":::
    partnerAccounts
@@ -802,7 +802,7 @@ False
    Default: 8A depth of 3 would correspond to: Fabrikam/Release 1/Sprint 20. 
 
    :::column-end:::
-:::row-end:::
+   :::row-end:::
 
 
 ### Default configuration syntax

@@ -118,10 +118,10 @@ Here's how the default, inherited states map to the state categories for all thr
    :::column span="2":::
    **Categories**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Work tracking WITs**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Test tracking WITs**
    :::column-end:::
 :::row-end:::
