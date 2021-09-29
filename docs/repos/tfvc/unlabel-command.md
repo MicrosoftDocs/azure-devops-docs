@@ -26,6 +26,8 @@ tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -71,6 +73,7 @@ tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,
    :::column-end:::
 :::row-end:::
 
+### Option
 
 | **Option** | **Description** |
 |---|---|

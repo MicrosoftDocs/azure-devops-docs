@@ -29,6 +29,8 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
 
 ## Parameters
 
+### Argument
+
 |     **Argument**      |                                                                                                                                                                                      **Description**                                                                                                                                                                                       |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |       *olditem*       |                                                                                                                      Specifies the name of the source file or folder being branched. The *olditem* may also contain version information in the format *item;version*.                                                                                                                      |
@@ -38,6 +40,9 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
 | **@commentfile** |                                                                                                                                                    Specifies the path of a file that contains the comment that is used for the branch.                                                                                                                                                     |
 |     *authorname*      |                                                                                                                                                                    The user-provided value for the **/author** option.                                                                                                                                                                     |
 |      *username*       |                                                                                                                                 Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                                                                                                                  |
+
+
+### Option
 
 :::row:::
    :::column span="1":::

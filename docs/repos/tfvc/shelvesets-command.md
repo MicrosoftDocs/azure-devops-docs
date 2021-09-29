@@ -26,12 +26,16 @@ tf shelvesets [/owner:ownername] [/format:(brief|detailed)] [/collection:TeamPro
 
 ## Parameters
 
+### Argument
+
 |**Argument**|**Description**|
 |---|---|
 |*ownername*|Provides a value such as * or DOMAIN\john to the **/owner** option.|
 |*shelvesetname*|The name of the shelveset.|
 |*TeamProjectCollectionUrl*|The URL of the project collection that contains a set of shelved changes about which you want to display information (for example, http://myserver:8080/tfs/DefaultCollection).|
 |*username*|Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName* or *UserName*.|
+
+### Option
 
 |**Option**|**Description**|
 |---|---|

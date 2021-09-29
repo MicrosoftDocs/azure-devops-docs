@@ -29,6 +29,8 @@ tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem n
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -63,6 +65,7 @@ tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem n
    :::column-end:::
 :::row-end:::
 
+### Option
 
 :::row:::
    :::column span="1":::

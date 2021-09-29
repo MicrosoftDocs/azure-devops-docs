@@ -30,6 +30,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
 
 ## Parameters
 
+### Argument
 
 :::row:::
    :::column span="1":::
@@ -92,7 +93,8 @@ tf permission [/allow:(* |perm1[,perm2,...]]
    :::column-end:::
 :::row-end:::
 
-   
+### Option
+
 :::row:::
    :::column span="1":::
    **Option**

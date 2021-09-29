@@ -55,12 +55,14 @@ tf workfold /decloak serverfolder
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
-   ****Argument****
+   **Argument**
    :::column-end:::
    :::column span="3":::
-   ****Description****
+   **Description**
    :::column-end:::
 :::row-end:::
 
@@ -105,13 +107,14 @@ tf workfold /decloak serverfolder
    :::column-end:::
 :::row-end:::
 
+### Option
 
 :::row:::
    :::column span="1":::
-   ****Option****
+   **Option**
    :::column-end:::
    :::column span="3":::
-   ****Description****
+   **Description**
    :::column-end:::
 :::row-end:::
 

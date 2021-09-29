@@ -47,6 +47,9 @@ tf proxy /enabled:(true|false)
 
 ## Parameters
 
+
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -91,6 +94,9 @@ tf proxy /enabled:(true|false)
    Provides a password for the user name.
    :::column-end:::
 :::row-end:::
+
+
+### Option
 
 :::row:::
    :::column span="1":::

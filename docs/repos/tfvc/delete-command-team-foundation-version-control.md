@@ -29,6 +29,8 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -56,6 +58,8 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*&lt;em&gt;UserName or *UserName.*
    :::column-end:::
 :::row-end:::
+
+### Option
 
 :::row:::
    :::column span="1":::

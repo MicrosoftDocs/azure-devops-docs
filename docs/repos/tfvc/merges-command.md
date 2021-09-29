@@ -25,6 +25,8 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -70,6 +72,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
    :::column-end:::
 :::row-end:::
 
+### Option
 
 :::row:::
    :::column span="1":::
