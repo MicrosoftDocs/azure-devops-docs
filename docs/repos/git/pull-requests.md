@@ -184,25 +184,28 @@ On the **Repos** > **Pull requests** page, select **New pull request** at upper 
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
-Initiate PRs directly from Visual Studio.
+You can initiate PRs directly from Visual Studio.
 
-1. [Connect to your Project from Visual Studio](../../organizations/projects/connect-to-projects.md).
+1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
 
-2. Select **View** > **Team Explorer** to open Team Explorer. You can also press **Ctrl**+**\\**, **Ctrl**+**M**.
+1. Select **View** > **Team Explorer** to open Team Explorer. You can also press **Ctrl**+**\\**, **Ctrl**+**M**.
 
-3. Select **Home**, then choose **Pull Requests**.
+1. Select **Home**, then choose **Pull Requests**.
 
    ![Pull Requests](media/pull-requests/pull-requests.png)
 
-4. Select **New Pull Request** to open up a web browser where you can create the new PR in the Azure DevOps Services web portal.
+1. Select **New Pull Request** to open up a web browser where you can create the new PR in the Azure DevOps Services web portal.
 
    ![Select New Pull Request.](media/pull-requests/new-pull-request.png)
 
-   In **Pull Requests**, you can also view PRs opened by you or assigned to you.
-
-   You can also initiate PRs from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your project.
+   You can also initiate PRs from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request**.
 
    ![Initiate PR from the Branches view.](media/pull-requests/new-pr-from-branch.png)
+
+Under **Pull Requests** in Team Explorer, you can also view PRs opened by you or assigned to you.
+
+Starting with Visual Studio 2017 Update 6, you can check out the source branch from a PR directly from **Pull Requests** in **Team Explorer**. Right-click the PR and choose **Checkout Source Branch**.
+![Check out source branch](./media/pull-requests/checkout-pr-source-branch.png)
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -441,9 +444,6 @@ For most teams, nearly all PRs target a default branch, such as `main` or `devel
 The PR **Overview** tab shows the current state of the PR at a glance. Review the title, description, and discussion to understand proposed changes and see issues raised by other reviewers.
 
 :::image type="content" source="media/pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR overview tab.":::
-
-Starting with Visual Studio 2017 Update 6, you can check out the source branch from a PR directly from **Pull Requests** in **Team Explorer**. Right-click the PR and choose **Checkout Source Branch**.
-![Check out source branch](./media/pull-requests/checkout-pr-source-branch.png)
 
 ### Filter PRs
 
