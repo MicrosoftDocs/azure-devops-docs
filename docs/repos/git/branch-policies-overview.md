@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 # About branches and branch policies
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+[!INCLUDE [temp](../includes/version-tfs-2017-cloud.md)]
 
 Branch policies are an important part of the Git workflow and enable you to:
 
