@@ -67,7 +67,7 @@ We don't transfer customer data outside of your selected geography. However, we 
 If needed, you can transfer your data using preview, beta, or other pre-release services. These services typically store your data in the United States, but may store it globally.
 
 > [!NOTE]
-> For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to a GitHub data center in the US. This data center location is owned and managed by a third party with information security certification assurances, such as ISO 27001 and SOC 2 Type II report.
+> For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to a GitHub data center in the US. This data center location is owned and managed by GitHub with compliance certifications, such as SOC 1 & 2 Type II reports available [here](https://github.com/security).
 
 Microsoft doesn't control or limit the geographies from which you or your users may access your data.
 
