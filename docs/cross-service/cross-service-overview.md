@@ -677,7 +677,7 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
       [Widgets](../report/dashboards/analytics-widgets.md)  
       [In-context reports](../report/dashboards/overview.md#in-context-reports-work-tracking)  
       [OData](../report/extend-analytics/quick-ref.md)
-      [Power BI](../report/dashboards/overview.md)
+      [Power BI](../report/powerbi/overview.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
