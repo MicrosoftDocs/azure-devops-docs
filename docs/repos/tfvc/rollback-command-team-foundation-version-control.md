@@ -31,6 +31,9 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
 
 ## Parameters
 
+
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -106,6 +109,9 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    For more information about how Team Foundation parses versionspecs, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
    :::column-end:::
 :::row-end:::
+
+
+### Option
 
 :::row:::
    :::column span="1":::

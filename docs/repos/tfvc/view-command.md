@@ -28,6 +28,9 @@ tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:
 
 ## Parameters
 
+
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -89,6 +92,8 @@ tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:
    :::column-end:::
 :::row-end:::
 
+
+### Option
 
 :::row:::
    :::column span="1":::

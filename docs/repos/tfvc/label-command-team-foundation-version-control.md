@@ -35,6 +35,8 @@ itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -120,6 +122,7 @@ itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
    :::column-end:::
 :::row-end:::
 
+### Option
 
 | **Option** | **Description** |
 |---|---|

@@ -28,6 +28,9 @@ tf resolve [itemspec]
 
 ## Parameters
 
+
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -81,6 +84,7 @@ tf resolve [itemspec]
    :::column-end:::
 :::row-end:::
 
+### Option
 
 :::row:::
    :::column span="1":::

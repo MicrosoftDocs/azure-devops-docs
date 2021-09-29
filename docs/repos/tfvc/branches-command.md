@@ -26,6 +26,8 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -67,6 +69,7 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
    :::column-end:::
 :::row-end:::
 
+### Option
 
 :::row:::
    :::column span="1":::

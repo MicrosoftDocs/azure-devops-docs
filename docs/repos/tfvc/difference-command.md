@@ -44,6 +44,8 @@ tf diff[erence] /configure
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -143,25 +145,117 @@ tf diff[erence] /configure
    :::column-end:::
 :::row-end:::
 
+### Option
 
-|**Option**|**Description**|
-|---|---|
-|**/type**|Overrides any detected encodings and uses the specified encoding to present the files to the differencing engine.|
-|**/version**|Specifies the version of the file or folder to compare. By default, Team Foundation uses the workspace version if you do not provide a *versionspec*.
+:::row:::
+   :::column span="1":::
+   **Option**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/type**
+   :::column-end:::
+   :::column span="1":::
+   Overrides any detected encodings and uses the specified encoding to present the files to the differencing engine.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/version**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the version of the file or folder to compare. By default, Team Foundation uses the workspace version if you do not provide a *versionspec*.
 
-Instead of using the **/version** flag, you can specify versions by appending a semicolon and version specifier to the end of each file name.|
-|**/format**|Specifies an output format specified by the *format* argument.|
-|**/ignorespace**|Does not highlight white-space differences between the compared files.|
-|**/ignoreeol**|Ignores differences between the new line characters in two files or file versions. **/ignoreeol** works differently from **/ignoreSpace**. **/ignorespace** treats eight spaces identically to one. However, if you use the **/ignoreeol** option and File A has two new line characters between unchanged areas of text, and File B has one, the result displays as a difference. If both files have only one new line, but File A uses `\r\n` as a new line and File B uses `\n`, **/ignoreEOL** option would ignore that as a difference.|
-|**/ignorecase**|Does not highlight differences in letter casing between the compared files.|
-|**/recursive**|Compares the differences between the current folder and all its subfolders.|
-|**/options**|Specifies an option string for the tool to be invoked by diff. For more information, see [Associate a File Type with a Difference Tool](associate-file-type-file-comparison-tool.md) and [Associate a File Type with a Merge Tool](associate-file-type-merge-tool.md).|
-|**/shelveset**|Specifies a shelveset to compare to the Team Foundation version control server version upon which the shelveset is based.
+   Instead of using the **/version** flag, you can specify versions by appending a semicolon and version specifier to the end of each file name.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/format**
+   :::column-end:::
+   :::column span="1":::
+   Specifies an output format specified by the *format* argument.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/ignorespace**
+   :::column-end:::
+   :::column span="1":::
+   Does not highlight white-space differences between the compared files.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/ignoreeol**
+   :::column-end:::
+   :::column span="1":::
+   Ignores differences between the new line characters in two files or file versions. **/ignoreeol** works differently from **/ignoreSpace**. **/ignorespace** treats eight spaces identically to one. However, if you use the **/ignoreeol** option and File A has two new line characters between unchanged areas of text, and File B has one, the result displays as a difference. If both files have only one new line, but File A uses `\r\n` as a new line and File B uses `\n`, **/ignoreEOL** option would ignore that as a difference.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/ignorecase**
+   :::column-end:::
+   :::column span="1":::
+   Does not highlight differences in letter casing between the compared files.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/recursive**
+   :::column-end:::
+   :::column span="1":::
+   Compares the differences between the current folder and all its subfolders.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/options**
+   :::column-end:::
+   :::column span="1":::
+   Specifies an option string for the tool to be invoked by diff. For more information, see [Associate a File Type with a Difference Tool](associate-file-type-file-comparison-tool.md) and [Associate a File Type with a Merge Tool](associate-file-type-merge-tool.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/shelveset**
+   :::column-end:::
+   :::column span="1":::
+   Specifies a shelveset to compare to the Team Foundation version control server version upon which the shelveset is based.
 
-This option cannot be combined with an *itemspec* argument. To compare individual shelveset items, you can provide a *shelveset_itemspec*.|
-|**/noprompt**|Suppresses any dialog boxes that would otherwise be displayed during the completion of this operation.|
-|**/configure**|Invokes the **Configure User Tools** dialog box. This tool is available from the Visual Studio user interface. For more information, see [Associate a File Type with a Difference Tool](associate-file-type-file-comparison-tool.md).|
-|**/login**|Specifies the user name and password to authenticate the user with Team Foundation Server.|
+   This option cannot be combined with an *itemspec* argument. To compare individual shelveset items, you can provide a *shelveset_itemspec*.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/noprompt**
+   :::column-end:::
+   :::column span="1":::
+   Suppresses any dialog boxes that would otherwise be displayed during the completion of this operation.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/configure**
+   :::column-end:::
+   :::column span="1":::
+   Invokes the **Configure User Tools** dialog box. This tool is available from the Visual Studio user interface. For more information, see [Associate a File Type with a Difference Tool](associate-file-type-file-comparison-tool.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **/login**
+   :::column-end:::
+   :::column span="1":::
+   Specifies the user name and password to authenticate the user with Team Foundation Server.
+   :::column-end:::
+   :::column span="1":::
+   
 
 ## Remarks
 > [!NOTE]

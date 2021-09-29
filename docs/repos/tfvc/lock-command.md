@@ -27,6 +27,8 @@ tf lock itemspec /lock:(none|checkout|checkin)
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -71,6 +73,7 @@ tf lock itemspec /lock:(none|checkout|checkin)
    :::column-end:::
 :::row-end:::
 
+### Option
 
 :::row:::
    :::column span="1":::

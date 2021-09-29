@@ -26,6 +26,8 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -76,6 +78,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
    :::column-end:::
 :::row-end:::
 
+### Option
 
 :::row:::
    :::column span="1":::

@@ -30,6 +30,8 @@ tf reconcile [itemspec]
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -51,6 +53,7 @@ tf reconcile [itemspec]
    :::column-end:::
 :::row-end:::
 
+### Option
 
 :::row:::
    :::column span="1":::

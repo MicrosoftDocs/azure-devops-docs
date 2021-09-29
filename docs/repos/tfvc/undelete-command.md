@@ -30,11 +30,15 @@ tf undelete [/noget] [/lock:(none|checkin|checkout)]
 
 ## Parameters
 
+### Argument
+
 | **Argument** |                                                                                                                 **Description**                                                                                                                 |
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  *itemspec*  | Identifies the file or folder to undelete. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)). |
 | *deletionID* |                                                                           Specifies a unique identifier that disambiguates multiple deleted items with the same name.                                                                           |
 |  *username*  |                                                            Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                                            |
+
+### Option
 
 :::row:::
    :::column span="1":::

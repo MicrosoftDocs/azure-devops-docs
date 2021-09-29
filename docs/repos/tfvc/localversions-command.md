@@ -27,6 +27,8 @@ tf localversions ItemSpec
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -73,6 +75,9 @@ tf localversions ItemSpec
    The URL of the project collection that contains one or more items for which you want to display the version (for example, http://myserver:8080/tfs/DefaultCollection).
    :::column-end:::
 :::row-end:::
+
+
+### Option
 
 :::row:::
    :::column span="1":::

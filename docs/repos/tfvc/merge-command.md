@@ -31,12 +31,16 @@ tf merge [/recursive] [/force] [/candidate] [/discard]
 
 ## Parameters
 
+### Argument
+
 |**Argument**|**Description**|
 |---|---|
 |*versionspec*|Provides a value such as C2 for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).|
 |*source*|Specifies the file or folder to act as the source of the merge.|
 |*destination*|Specifies the file or folder to act as the destination of the merge.|
 |*username*|Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName* or *UserName*.|
+
+### Option
 
 :::row:::
    :::column span="1":::

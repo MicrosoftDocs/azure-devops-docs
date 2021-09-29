@@ -27,6 +27,8 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -74,6 +76,7 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
    :::column-end:::
 :::row-end:::
 
+### Option
 
 :::row:::
    :::column span="1":::

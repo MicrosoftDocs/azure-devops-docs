@@ -33,6 +33,8 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
 
 ## Parameters
 
+### Argument
+
 :::row:::
    :::column span="1":::
    **Argument**
@@ -75,6 +77,9 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
    The URL of the project collection that contains files that you want to destroy (for example, http://myserver:8080/tfs/DefaultCollection).
    :::column-end:::
 :::row-end:::
+
+
+### Option
 
 :::row:::
    :::column span="1":::
