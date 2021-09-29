@@ -138,27 +138,26 @@ You can upload, download, and delete process templates for a project collection.
  
 3. Select the process template that you want to work with and then choose from the following actions.  
 
-         :::row:::
-      :::column span="1":::
+:::row:::
+   :::column span="1":::
    
    **Upload**
    
    :::column-end:::
-      :::column span="1":::
+   :::column span="1":::
    To upload a process template.<br/>
    In the **Upload Process Template** dialog box, choose the folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions).
 
    
    :::column-end:::
-   :::row-end:::
-	
-   :::row:::
-      :::column span="1":::
+:::row-end:::	
+:::row:::
+   :::column span="1":::
    
    **Download**
    
    :::column-end:::
-      :::column span="1":::
+   :::column span="1":::
    To download the process template to a local computer.<br/>
    In the **Download Process Template** dialog box, select a folder where the process template will be downloaded.
 
@@ -166,35 +165,33 @@ You can upload, download, and delete process templates for a project collection.
 
    You can determine which process template to select based on the [work item types defined for your existing project](#wit_correlation).
 
-   
    :::column-end:::
-   :::row-end:::
-	
-   :::row:::
-      :::column span="1":::
+:::row-end:::
+:::row:::
+   :::column span="1":::
    
    **Make Default**
    
    :::column-end:::
-      :::column span="1":::
+   :::column span="1":::
    
    To cause the selected process template to appear as the default selection in the **New Team Project Wizard**.
    
    :::column-end:::
-   :::row-end:::
+:::row-end:::
 	
-   :::row:::
-      :::column span="1":::
+:::row:::
+   :::column span="1":::
    
    **Delete**
    
    :::column-end:::
-      :::column span="1":::
+   :::column span="1":::
    
    To permanently remove the selected process template from the collection.
    
    :::column-end:::
-   :::row-end:::
+:::row-end:::
 
 
 ::: moniker-end
