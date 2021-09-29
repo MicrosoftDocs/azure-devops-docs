@@ -34,10 +34,10 @@ Most of the planning fields described in the next section are either an integer 
 
 :::row:::
    :::column span="1":::
-   Filter for
+   **Filter for**
    :::column-end:::
-   :::column span="3":::
-   Include these query clauses
+   :::column span="1":::
+   **Include these query clauses**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -45,7 +45,7 @@ Most of the planning fields described in the next section are either an integer 
    List blocked tasks (Scrum)  
 (Blocked field is type String) 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * In * Task`  `And * Blocked * = <em> Yes`  
    :::column-end:::
@@ -56,7 +56,7 @@ Most of the planning fields described in the next section are either an integer 
      
 (Priority field is type Integer) 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type </em> In * Bug`  `And * Priority * = * 1`  
    :::column-end:::
@@ -67,7 +67,7 @@ Most of the planning fields described in the next section are either an integer 
    Features and stories that address Architectural areas  
 (Value Area field is type String) 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * In * Feature,User Story`  `And * Value Area * = _ Architectural`  
    :::column-end:::
@@ -83,13 +83,13 @@ The following table describes the fields that you can use to plan and prioritize
 
 :::row:::
      :::column span="1":::
-   Field name
+   **Field name**
+   :::column-end:::
+     :::column span="2":::
+   **Description**
    :::column-end:::
      :::column span="1":::
-   Description
-   :::column-end:::
-     :::column span="1":::
-   Work item type
+   **Work item type**
    :::column-end:::
 :::row-end:::
 
@@ -98,7 +98,7 @@ The following table describes the fields that you can use to plan and prioritize
    Backlog Priority <sup>1</sup>
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    A number usually assigned by a background process used to track the sequence of items on a backlog or board.
 
    Reference name=Microsoft.VSTS.Common.BacklogPriority, Data type=Double
@@ -115,14 +115,15 @@ The following table describes the fields that you can use to plan and prioritize
    Blocked
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Indicates that no further work can be performed on the work item. If an issue has been opened to track a blocking problem, a link should be made to the issue.
 
    You can specify **Yes** or **No**.
 
    Reference name=Microsoft.VSTS.CMMI.Blocked, Data type=String
   
-   :::column-end:::     :::column span="1":::
+   :::column-end:::     
+   :::column span="1":::
    Bug, Change Request, Requirement, Risk, Task (CMMI, Scrum)
 
    :::column-end:::
@@ -132,13 +133,13 @@ The following table describes the fields that you can use to plan and prioritize
    Committed
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Indicates whether or not the requirement is committed in the project. You can specify **Yes** or **No**.
 
    Reference name=Microsoft.VSTS.CMMI.Committed, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Requirement (CMMI)
 
    :::column-end:::
@@ -148,13 +149,13 @@ The following table describes the fields that you can use to plan and prioritize
    Escalate
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Indicates whether or not the issue is affecting the critical path of the project plan. You can specify **Yes** or **No**.
  
    Reference name=Microsoft.VSTS.CMMI.Escalate, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Issue (CMMI)
 
    :::column-end:::
@@ -164,7 +165,7 @@ The following table describes the fields that you can use to plan and prioritize
    <a id="priority" />Priority <sup>1</sup>
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    A subjective rating of the bug, issue, task, or test case as it relates to the business. You can specify the following values:
 
    
@@ -177,7 +178,7 @@ The following table describes the fields that you can use to plan and prioritize
    Reference name=Microsoft.VSTS.Common.Priority, Data type=Integer
   
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Bug, Change Request, Epic, Feature, Impediment, Issue, Product backlog item, Requirement, Risk, Shared Step, Task, Test Case, User Story
 
    :::column-end:::
@@ -187,7 +188,7 @@ The following table describes the fields that you can use to plan and prioritize
    <a id="risk" />Risk
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    A subjective rating of the relative uncertainty around the successful completion of a user story.
 
    Defined allowed values are:
@@ -198,7 +199,7 @@ The following table describes the fields that you can use to plan and prioritize
    Reference name=Microsoft.VSTS.Common.Risk, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Epic, Feature, User Story (Agile) 
 
    :::column-end:::
@@ -208,7 +209,7 @@ The following table describes the fields that you can use to plan and prioritize
    Severity  <sup>1</sup>
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    A subjective rating of the impact of a bug on the project. You can specify the following values:
    - **1 - Critical**
    - **2 - High**
@@ -218,7 +219,7 @@ The following table describes the fields that you can use to plan and prioritize
    Reference name=Microsoft.VSTS.Common.Severity, Data type=String
   
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Bug, Issue (CMMI), Risk (CMMI)
    :::column-end:::
 :::row-end:::
@@ -227,13 +228,13 @@ The following table describes the fields that you can use to plan and prioritize
    Stack Rank <sup>2</sup>
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    A number, usually assigned by a background process, used to track the list order of items on a backlog or board in the web portal.
  
    Reference name=Microsoft.VSTS.Common.StackRank, Data type=Double
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Bug, Epic, Feature, Requirement (CMMI), Risk (CMMI), Task, User Story (Agile) 
 
    :::column-end:::
@@ -243,13 +244,13 @@ The following table describes the fields that you can use to plan and prioritize
    Time Criticality
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    A subjective unit of measure that captures the how the business value decreases over time. Higher values indicate that the epic or feature is inherently more time critical than those items with lower values.
 
    Reference name=Microsoft.VSTS.Common.TimeCriticality, Data type=Double
   
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Epic, Feature
    :::column-end:::
 :::row-end:::
@@ -259,7 +260,7 @@ The following table describes the fields that you can use to plan and prioritize
    Triage
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Indicates the type of triage decision that is pending for the work item. You use this field when the work item is in the **Proposed** state.
 
    You can specify one of the following values:
@@ -271,7 +272,7 @@ The following table describes the fields that you can use to plan and prioritize
    Reference name=Microsoft.VSTS.Common.Triage, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    CMMI only: Bug, Change Request, Epic, Feature, Issue, Requirement, Task 
 
    :::column-end:::
@@ -281,7 +282,7 @@ The following table describes the fields that you can use to plan and prioritize
    Value Area  <sup>1</sup>
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    The area of customer value addressed by the epic, feature, or backlog item. Values include:
    - **Architectural** &mdash; technical services to implement business features that deliver solution
    - **Business** &mdash; services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
@@ -289,7 +290,7 @@ The following table describes the fields that you can use to plan and prioritize
    Reference name=Microsoft.VSTS.Common.ValueArea, Data type=String
   
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Bug, Epic, Feature, Product Backlog Item (Scrum) Requirement (CMMI), User Story (Agile)
    :::column-end:::
 :::row-end:::

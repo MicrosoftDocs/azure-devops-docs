@@ -389,10 +389,10 @@ The following table describes each of the property items specified in the config
 
 :::row:::
    :::column span="1":::
-   Property/Description
+   **Property/Description**
    :::column-end:::
-   :::column span="3":::
-   Default/Example
+   :::column span="1":::
+   **Default/Example**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -402,7 +402,7 @@ The following table describes each of the property items specified in the config
    > Specifies the link type used to create the link from producer to consumer.  
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    System.LinkTypes.Dependency-Reverse
    :::column-end:::
 :::row-end:::
@@ -413,7 +413,7 @@ The following table describes each of the property items specified in the config
    > Specifies the link type used to create the link from consumer to producer. 
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    System.LinkTypes.Dependency-Forward
    :::column-end:::
 :::row-end:::
@@ -436,14 +436,15 @@ The following table describes each of the property items specified in the config
    >    - workItemType - Work Item Type
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    If a custom field is used in place of one of the system fields, you specify the substitution by entering: 
    
-   ```{
-   title: "Custom.Title",
-   assignedTo: "Custom.AssignedTo" 
-}
+   ```
+    {
+       title: "Custom.Title",
+       assignedTo: "Custom.AssignedTo" 
+    }
    ```
    :::column-end:::
 :::row-end:::
@@ -454,7 +455,7 @@ The following table describes each of the property items specified in the config
    > Specifies the work item types that participate in dependency tracking. From the Create a dependency dialog, only those work item types listed can be created.  
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
    ```
 [  
@@ -484,9 +485,10 @@ The following table describes each of the property items specified in the config
    > Restricts the  initial focus to just those work item types that the dependency tracker displays or lists. Based on the default "Any", any work item type that contains a dependency link type is displayed or listed. Users can change the focus through filtering. 
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
-   ```Any
+   ```
+    Any
    ```  
    To restrict the work item types to just Epics and Features, specify:
  
@@ -506,17 +508,19 @@ The following table describes each of the property items specified in the config
    > Restricts the initial focus to just those work items that are assigned to those Iteration Paths equal to or under the specified releases. Based on the blank default, no restrictions are applied. Users can change the focus through filtering. 
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
-   ```[]
+   ```
+    []
    ```  
    To restrict the work item types to just Release 1 and Release 2 for the Fabrikam project, specify:
  
    
-   ```[  
-  "Fabrikam/Release 1",  
-  "Fabrikam/Release 2",  
-]
+   ```
+    [  
+      "Fabrikam/Release 1",  
+      "Fabrikam/Release 2",  
+    ]
    ```  
    :::column-end:::
 :::row-end:::
@@ -527,7 +531,7 @@ The following table describes each of the property items specified in the config
    > Specifies the colors used to represent work items based on their category and workflow state. For more information, see [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md).
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
    ```
 {
@@ -563,7 +567,7 @@ The following table describes each of the property items specified in the config
    >    
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
    ```
 {  
@@ -612,10 +616,12 @@ The following table describes each of the property items specified in the config
    > Specifies the [Risk](../queries/planning-ranking-priorities.md#risk) field values. The Risk field specifies a subjective rating of the relative uncertainty around the successful completion of a user story. It is defined for the Agile process, but can be added to work item types used in other processes. 
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
-   ```["1-High", "2-Medium", "3-Low"]
    ```
+      ["1-High", "2-Medium", "3-Low"]
+   ```
+
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -626,12 +632,14 @@ The following table describes each of the property items specified in the config
    >    
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
-   ```[]
+   ```
+    []
    ```
    Example: 
-   ```["account-1", "account-2"]
+   ```
+      ["account-1", "account-2"]
    ```
    :::column-end:::
 :::row-end:::
@@ -642,9 +650,10 @@ The following table describes each of the property items specified in the config
    > Enables or disables the Timeline view.
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
-   ```true
+   ```
+     true
    ```
    :::column-end:::
 :::row-end:::
@@ -655,9 +664,10 @@ The following table describes each of the property items specified in the config
    > Enables or disables the **New Dependency** link to create a new linked dependency.
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
-   ```true
+   ```
+      true
    ```
    :::column-end:::
 :::row-end:::
@@ -668,7 +678,7 @@ The following table describes each of the property items specified in the config
    > (1) Enables or disables the support of creating new dependencies to work items in other partner accounts, and (2) specifies the default state of the Partner account options in the Create a dependency dialog.  
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
    ```
 {
@@ -679,10 +689,11 @@ The following table describes each of the property items specified in the config
    If you don't want any dependencies created that belong to other organizations, then change this configuration to: 
 
    
-   ```{  
-"crossAccountDependencyEnabled": false,  
-"crossAccountDependencyToggleDefaultState": false
-}
+   ```
+    {  
+    "crossAccountDependencyEnabled": false,  
+    "crossAccountDependencyToggleDefaultState": false
+    }
    ```
    :::column-end:::
 :::row-end:::
@@ -693,9 +704,10 @@ The following table describes each of the property items specified in the config
    > Specifies the [Priority](../queries/planning-ranking-priorities.md#priority) field values. The Priority field specifies a subjective rating of a bug, issue, task, or user story as it relates to the business. It is defined for most backlog work item types and processes, but can be added to work item types used in other processes.   
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
-   ```["0","1","2","3","4","(blank)"]
+   ```
+["0","1","2","3","4","(blank)"]
    ```
    :::column-end:::
 :::row-end:::
@@ -706,7 +718,7 @@ The following table describes each of the property items specified in the config
    > Specifies the field columns and order used to display dependency lists. 
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
    ```
 [
@@ -727,9 +739,10 @@ The following table describes each of the property items specified in the config
    > Specifies whether or not Risk functionality is enabled. If set to true, then the riskAssessmentValues property must be defined.
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
-   ```False
+   ```
+False
    ```
    :::column-end:::
 :::row-end:::
@@ -740,9 +753,10 @@ The following table describes each of the property items specified in the config
    >  
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 
-   ```[]
+   ```
+[]
    ```
    :::column-end:::
 :::row-end:::
@@ -753,7 +767,7 @@ The following table describes each of the property items specified in the config
    > Maps the workflow States to one of the three Risk areas displayed on the Graph: `atRisk` is Red, `nuetral` is Gray, and `onTrack` is Green.  
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 8
    
    ```
@@ -784,7 +798,7 @@ The following table describes each of the property items specified in the config
    > Specifies the hierarchical depth of Iteration Paths that the Dependency Tracker queries to build the Timeline view. 
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Default: 8A depth of 3 would correspond to: Fabrikam/Release 1/Sprint 20. 
 
    :::column-end:::

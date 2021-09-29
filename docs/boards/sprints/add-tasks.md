@@ -214,10 +214,10 @@ During the sprint, team members update remaining work to continually reflect the
 
 :::row:::
    :::column span="1":::
-   Field
+   **Field**
    :::column-end:::
    :::column span="3":::
-   Usage
+   **Usage**
    :::column-end:::
 :::row-end:::
 

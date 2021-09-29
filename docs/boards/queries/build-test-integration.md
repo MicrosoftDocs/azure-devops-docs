@@ -31,11 +31,11 @@ Most build and test integration fields have a data type of String, PlainText, or
 
 :::row:::
    :::column span="1":::
-   Data type
+   **Data type**
 
    :::column-end:::
    :::column span="3":::
-   Supported operators and macros
+   **Supported operators and macros**
 
    :::column-end:::
 :::row-end:::
@@ -63,8 +63,8 @@ Most build and test integration fields have a data type of String, PlainText, or
    :::column-end:::
    :::column span="3":::
    = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
-   <p>**Macros**: **[Any]**, valid with the **Work Item Type** field  
-   **<xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref>**<sup>2</sup>, valid with the **Team Project** field </p>
+   **Macros**: **[Any]**, valid with the **Work Item Type** field  
+   **<xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref>**<sup>2</sup>, valid with the **Team Project** field
    :::column-end:::
 :::row-end:::
 
@@ -78,17 +78,17 @@ Most build and test integration fields have a data type of String, PlainText, or
 
 :::row:::
    :::column span="1":::
-   Filter for
+   **Filter for**
    :::column-end:::
-   :::column span="3":::
-   Include these query clauses
+   :::column span="1":::
+   **Include these query clauses**
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
    Automated test cases
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * = * Test Case`  `And Automation Status * = * Automated`  
    :::column-end:::
@@ -97,7 +97,7 @@ Most build and test integration fields have a data type of String, PlainText, or
    :::column span="1":::
    Query-based test suites
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * = * Test Suite`  `And Test Suite Type * = * Query Based`  
    :::column-end:::
@@ -106,7 +106,7 @@ Most build and test integration fields have a data type of String, PlainText, or
    :::column span="1":::
    Requirement-based test suites
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * = * Test Suite`  `And Test Suite Type * = * Requirement Based`  
    :::column-end:::
@@ -132,13 +132,13 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 
 :::row:::
      :::column span="1":::
-   Field name
+   **Field name**
+   :::column-end:::
+     :::column span="2":::
+   **Description**
    :::column-end:::
      :::column span="1":::
-   Description
-   :::column-end:::
-     :::column span="1":::
-   Work item type
+   **Work item type**
    :::column-end:::
 :::row-end:::
 
@@ -147,7 +147,7 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    Automation Status<sup> 1</sup>
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    The status of a test case. You can specify the following values:
 
    
@@ -172,13 +172,14 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    Found In<sup> 2</sup>
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Product build number, also known as a revision, in which a bug was found.
 
    Reference name=Microsoft.VSTS.Build.FoundIn, Data type=String
 
    
-   > [!Note] You can also use the **Found in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
+   > [!NOTE]  
+   > You can also use the **Found in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
 
    :::column-end:::
    :::column span="1":::
@@ -190,19 +191,23 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    Integration Build<sup> 2</sup>
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Product build number that incorporates the code or fixes a bug.
 
    Reference name=Microsoft.VSTS.Build.IntegrationBuild, Data type=String
 
     
-   > [!Note] You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
+   > [!NOTE]  
+   > You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
 
-   > [!Note] You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
+   > [!NOTE]  
+   > You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
 
-   > [!Note] You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
+   > [!NOTE]  
+   > You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
 
-   > [!Note] You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
+   > [!NOTE]  
+   > You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
 
    :::column-end:::
    :::column span="1":::
@@ -214,7 +219,7 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    Issue
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Indicates that the Shared Steps is associated with an expected result. Allowed values are **Yes** and **No**. 
 
    Reference name=Microsoft.VSTS.Common.Issue, Data type=String
@@ -229,7 +234,7 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    Parameters<sup> 3</sup>
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Contains the parameters to use when running a manual test. 
 
    Microsoft.VSTS.TCM.Parameters, Data type=HTML
@@ -244,7 +249,7 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    Steps
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    The action and validation steps that are required to perform the test.
 
    Microsoft.VSTS.TCM.Steps, Data type=HTML
@@ -259,7 +264,7 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    System Info
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    Information about the software and system configuration that is relevant to the test.
 
    Microsoft.VSTS.TCM.SystemInfo, Data type=HTML
@@ -275,10 +280,10 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    Repro Steps (or Steps to reproduce) 
   
    :::column-end:::
-     :::column span="1":::
+     :::column span="2":::
    
-   <p>The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior.
-   </p> 
+   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior.
+    
    Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML
 
   
@@ -292,7 +297,7 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    Test Suite Type<sup> 1,4</sup>
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    The test suite category. Allowed values are:
 
    
@@ -327,13 +332,13 @@ The following fields do not appear on work item forms, but these fields are trac
 
 :::row:::
      :::column span="1":::
-   Field name
+   **Field name**
+   :::column-end:::
+     :::column span="2":::
+   **Description**
    :::column-end:::
      :::column span="1":::
-   Description
-   :::column-end:::
-     :::column span="1":::
-   Work item type
+   **Work item type**
    :::column-end:::
 :::row-end:::
 
@@ -342,13 +347,13 @@ The following fields do not appear on work item forms, but these fields are trac
    Automated Test Storage
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    The assembly that contains the test that automates the test case.
 
    Reference name=Microsoft.VSTS.TCM.AutomatedTestStorage, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Test Case
 
    :::column-end:::
@@ -358,13 +363,13 @@ The following fields do not appear on work item forms, but these fields are trac
    Automated Test Type
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    The type of test that automates the test case.
 
    Reference name=Microsoft.VSTS.TCM.AutomatedTestType, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Test Case
    :::column-end:::
 :::row-end:::
@@ -374,13 +379,13 @@ The following fields do not appear on work item forms, but these fields are trac
    AutomatedTestId
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    The ID of the test that automates the test case. 
 
    Reference name=Microsoft.VSTS.TCM.AutomatedTestId, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Test Case
    :::column-end:::
 
@@ -390,13 +395,13 @@ The following fields do not appear on work item forms, but these fields are trac
    AutomatedTestName
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    The name of the test that is used to automate the test case.
 
    Reference name=Microsoft.VSTS.TCM.AutomatedTestName, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Test Case
 
    :::column-end:::
@@ -407,13 +412,13 @@ The following fields do not appear on work item forms, but these fields are trac
    LocalDataSource
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    The local data source that supports the test. 
 
    Reference name=Microsoft.VSTS.TCM.LocalDataSource, Data type=HTML
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Test Case
 
    :::column-end:::
@@ -424,13 +429,13 @@ The following fields do not appear on work item forms, but these fields are trac
    Query Text
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Field used to capture the query defined for a Query-based suite type.
 
    Reference name=Microsoft.VSTS.TCM.QueryText, Data type=PlainText
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Test Suite
 
    :::column-end:::
@@ -440,13 +445,13 @@ The following fields do not appear on work item forms, but these fields are trac
    Test Suite Audit <sup> 1</sup>
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Tracks additional operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.
 
    Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Test Suite
    :::column-end:::
 :::row-end:::
@@ -456,7 +461,7 @@ The following fields do not appear on work item forms, but these fields are trac
    Test Suite Type ID <sup>1, 2</sup>
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    A system assigned value that corresponds to the test suite category and only applicable to test suites. Assigned values are:
 
    
@@ -470,7 +475,7 @@ The following fields do not appear on work item forms, but these fields are trac
    Reference name=Microsoft.VSTS.TCM.TestSuiteTypeId, Data type=Integer
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Test Suite
    :::column-end:::
 :::row-end:::

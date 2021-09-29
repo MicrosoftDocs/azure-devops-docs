@@ -44,10 +44,10 @@ Use the following guidance and that provided for [fields used in common across w
 
 :::row:::
    :::column span="1":::
-   **Field/tab
+   **Field/tab**
    :::column-end:::
    :::column span="3":::
-   Usage**
+   **Usage**
    :::column-end:::
 :::row-end:::
 

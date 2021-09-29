@@ -152,19 +152,19 @@ The following table summarizes the main distinctions between the WITs and states
    
    **Tracking area**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    **Basic**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    **Agile**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    **Scrum**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    **CMMI**
    :::column-end:::
@@ -173,9 +173,9 @@ The following table summarizes the main distinctions between the WITs and states
    :::column span="1":::
    
    Workflow states
+:::column-end:::
    :::column-end:::
-   :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - To Do
@@ -183,7 +183,7 @@ The following table summarizes the main distinctions between the WITs and states
    - Done
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - New
@@ -217,27 +217,27 @@ The following table summarizes the main distinctions between the WITs and states
    
    Product planning (see note 1)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - Issue
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - User story
    - Bug (optional)
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - Product backlog item
    - Bug (optional)
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - Requirement
@@ -250,27 +250,27 @@ The following table summarizes the main distinctions between the WITs and states
    
    Portfolio backlogs (2)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - Epic
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - Epic
    - Feature
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
  
    - Epic
    - Feature
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - Epic
@@ -283,13 +283,13 @@ The following table summarizes the main distinctions between the WITs and states
    
    Task and sprint planning (3)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - Task
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - Task
@@ -304,7 +304,7 @@ The following table summarizes the main distinctions between the WITs and states
    
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
   
    - Task
@@ -317,25 +317,25 @@ The following table summarizes the main distinctions between the WITs and states
    
    Bug backlog management (1)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
   
    - Issue
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
   
    - Bug
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - Bug
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - Bug
@@ -347,25 +347,25 @@ The following table summarizes the main distinctions between the WITs and states
    
    Issue and risk management 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
   
    - Issue
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
   
    - Issue
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - Impediment
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    
    - Issue

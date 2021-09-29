@@ -210,7 +210,8 @@ Use [**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) to perfo
 - Add or change hierarchical links between work items. 
 
 
-   <!--- 
+<!---
+ 
 :::row:::
    :::column span="1":::
    Office application
@@ -267,10 +268,10 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 
 :::row:::
    :::column span="1":::
-   Test tool
+   **Test tool**
    :::column-end:::
    :::column span="3":::
-   Best tool for:
+   **Best tool for:**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -335,10 +336,10 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 
 :::row:::
    :::column span="1":::
-   Tool
+   **Tool**
    :::column-end:::
    :::column span="3":::
-   Best tool for:
+   **Best tool for:**
    :::column-end:::
 
 

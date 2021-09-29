@@ -21,10 +21,10 @@ Each view supports the following tasks:
 
 :::row:::
    :::column span="1":::
-   Default experience
+   **Default experience**
    :::column-end:::
-   :::column span="3":::
-   Legacy experience
+   :::column span="1":::
+   **Legacy experience**
    :::column-end:::
 :::row-end:::
 
@@ -35,7 +35,7 @@ Each view supports the following tasks:
    - [View and add work items](/azure/devops/boards/work-items/view-add-work-items)
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    - [Add work items](/azure/devops/boards/backlogs/add-work-items)
    - [Use the query editor to list and manage queries](/azure/devops/boards/queries/using-queries)

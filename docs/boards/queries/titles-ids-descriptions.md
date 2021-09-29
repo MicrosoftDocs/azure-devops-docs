@@ -232,13 +232,13 @@ The following table describes common fields used to filter queries. The **ID** f
 
 :::row:::
      :::column span="1":::
-   Field name
+   **Field name**
+   :::column-end:::
+     :::column span="2":::
+   **Description**
    :::column-end:::
      :::column span="1":::
-   Description
-   :::column-end:::
-     :::column span="1":::
-   Work item type
+   **Work item type**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -246,14 +246,15 @@ The following table describes common fields used to filter queries. The **ID** f
    Acceptance Criteria  <sup>1</sup>
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    A description of the criteria to be met before the bug or product backlog item can be closed.
 
    Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.
  
    Reference name=Microsoft.VSTS.Common.AcceptanceCriteria, Data type=HTML
   
-   :::column-end:::     :::column span="1":::
+   :::column-end:::     
+   :::column span="1":::
    Bug, Epic, Feature, Product backlog item (Scrum)
 
    :::column-end:::
@@ -264,7 +265,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Description <sup>1, 2</sup>
   
    :::column-end:::
-     :::column span="1":::
+     :::column span="2":::
    
    Use this field to provide in-depth information about a work item.
 
@@ -272,7 +273,7 @@ The following table describes common fields used to filter queries. The **ID** f
 
   
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
@@ -281,12 +282,12 @@ The following table describes common fields used to filter queries. The **ID** f
    
    ID
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    
    The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within a project collection.  Reference name=System.Id, Data type=Integer
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
@@ -296,7 +297,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Repro Steps (or Steps to reproduce) <sup>1</sup> 
   
    :::column-end:::
-     :::column span="1":::
+     :::column span="2":::
    
    The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior. 
     
@@ -304,7 +305,7 @@ The following table describes common fields used to filter queries. The **ID** f
 
   
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Bug
    :::column-end:::
 :::row-end:::
@@ -313,12 +314,13 @@ The following table describes common fields used to filter queries. The **ID** f
    Resolution
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Describes how an impediment was resolved.
 
    Reference name=Microsoft.VSTS.Common.Resolution, Data type=HTML
   
-   :::column-end:::     :::column span="1":::
+   :::column-end:::     
+   :::column span="1":::
    Impediment (Scrum)
 
    :::column-end:::
@@ -329,7 +331,7 @@ The following table describes common fields used to filter queries. The **ID** f
    System Info<sup>1</sup> 
   
    :::column-end:::
-     :::column span="1":::
+     :::column span="2":::
    
    Information about the software and system configuration that is relevant to the bug, code review, or feedback. 
 
@@ -346,7 +348,7 @@ The following table describes common fields used to filter queries. The **ID** f
    
    Team Project
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    
    The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. 
 
@@ -356,7 +358,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Reference name=System.TeamProject, Data type=String
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
@@ -366,7 +368,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Title
   
    :::column-end:::
-     :::column span="1":::
+     :::column span="2":::
    
    A short description that summarizes what the work item is and helps team members distinguish it from other work items in a list.
 
@@ -374,7 +376,7 @@ The following table describes common fields used to filter queries. The **ID** f
 
   
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
@@ -384,7 +386,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Work Item Type
   
    :::column-end:::
-     :::column span="1":::
+     :::column span="2":::
    
    The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see [Choose process](../work-items/guidance/choose-process.md). To learn how to add a custom work item type, see [Add or modify a work item type](../../reference/add-modify-wit.md). 
 
@@ -392,7 +394,7 @@ The following table describes common fields used to filter queries. The **ID** f
 
   
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
