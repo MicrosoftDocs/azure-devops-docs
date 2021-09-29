@@ -66,7 +66,6 @@ Schema conflicts occur when a project administrator carries out one of the follo
 
 The following table provides examples of attribute assignments that will cause schema conflicts. In these examples, the reporting reference name and the reporting name aren't assigned.
 
-<<<<<<< HEAD
 :::row:::
    :::column span="1":::
    **Attribute**
@@ -77,7 +76,7 @@ The following table provides examples of attribute assignments that will cause s
    :::column span="1":::
    **Project Collection 2**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
    **Schema conflict**
    :::column-end:::
 :::row-end:::
@@ -91,8 +90,8 @@ The following table provides examples of attribute assignments that will cause s
    :::column span="1":::
    Integer
    :::column-end:::
-   :::column span="2":::
-   Data types do not match.
+   :::column span="1":::
+   Data types don't match.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -105,8 +104,8 @@ The following table provides examples of attribute assignments that will cause s
    :::column span="1":::
    Common Activity
    :::column-end:::
-   :::column span="2":::
-   Reporting names do not match.
+   :::column span="1":::
+   Reporting names don't match.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -119,39 +118,10 @@ The following table provides examples of attribute assignments that will cause s
    :::column span="1":::
    Dimension
    :::column-end:::
-   :::column span="2":::
-   Reporting types do not match.
+   :::column span="1":::
+   Reporting types don't match.
    :::column-end:::
 :::row-end:::
-
-=======
-<table width="100%">
-<tr valign="top">
-<th width="20%">Attribute</th>
-<th width="20%">Project Collection 1</th>
-<th width="20%">Project Collection 2</th>
-<th width="40%">Schema conflict</th>
-</tr>
-<tr>
-<td>Type</td>
-<td>String</td>
-<td>Integer</td>
-<td>Data types don't match.</td>
-</tr>
-<tr>
-<td>ReportingName</td>
-<td>Activity</td>
-<td>Common Activity</td>
-<td>Reporting names don't match.</td>
-</tr>
-<tr>
-<td>Reportable</td>
-<td>Detail</td>
-<td>Dimension</td>
-<td>Reporting types don't match.</td>
-</tr>
-</table>
->>>>>>> 13eda4badc9c6b346142f7dd7ca69c6de8d28fc7
 
 ## Resolve schema conflicts
 

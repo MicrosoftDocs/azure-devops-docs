@@ -116,13 +116,12 @@ The blue area indicates the number of work items active or in progress each day 
 
 The in-context sprint burndown report is based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](../../boards/sprints/assign-work-sprint.md) and [taskboard](../../boards/sprints/task-board.md). To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
 
-<<<<<<< HEAD
 :::row:::
    :::column span="1":::
    
-   A healthy sprint burndown chart will look something like this. The *Ideal Trend* line connects the two points: 
+   A healthy sprint burndown chart will look something like this. The <em>Ideal Trend</em> line connects the two points: 
 
-   - **(1)** Team&#39;s total capacity at the start of the sprint  
+   - **(1)** Team&#39;s total capacity at the start of the sprint.  
    - **(2)** 0 Remaining Work at the end of the sprint.
    
    The slope represents the rate at which the team needs to burn down work to finish the sprint on time. 
@@ -136,27 +135,7 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
    :::column-end:::
 :::row-end:::
 
-=======
-<table>
-<tr valign="top">
-<td width="35%">
-<p>A healthy sprint burndown chart will look something like this. The <em>Ideal Trend</em> line connects the two points: </p>
--   <strong>(1)</strong> Team&#39;s total capacity at the start of the sprint<br/>-   <strong>(2)</strong> 0 Remaining Work at the end of the sprint.<br/>
-<p>The slope represents the rate at which the team needs to burn down work to finish the sprint on time. </p>
-<p>The actual graph, the blue area, represents the total amount of planned sprint work and how it changes throughout the course of the sprint. The blue area corresponds to the sum of all remaining work set for all sprint tasks, and possibly bugs, that have the current sprint as their iteration path.  </p>
-</td>
-<td>
-<img src="media/burndown/ALM_SB_IntroHealthyChart.png" alt="Healthy sprint burndown chart"/>
-</td>
-</tr>
-</table>
->>>>>>> 13eda4badc9c6b346142f7dd7ca69c6de8d28fc7
-
 ::: moniker-end
-
-
-
-
 
 ::: moniker range=">= tfs-2015"
 

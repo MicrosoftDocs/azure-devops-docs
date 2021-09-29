@@ -131,11 +131,10 @@ Teams should meet immediately to course correct and either reassign work, recrui
 
 Your burn-down chart shows you if your project is on schedule. A daily check can mitigate risks and provide early warning of potential schedule or cost overruns, two metrics associated with traditional project management. 
 
-<<<<<<< HEAD
 :::row:::
    :::column span="1":::
    
-   For example, when the actual remaining work (blue area) goes flat for a period of time, or remains high above the ideal trend line, the team is at risk of not meeting their sprint commitments.
+   For example, when the actual remaining work (blue area) goes flat over time, or remains high above the ideal trend line, the team is at risk of not meeting their sprint commitments.
 
    Teams should meet immediately to course correct and either reassign work, recruit more resources, or reset expectations.
 
@@ -145,20 +144,6 @@ Your burn-down chart shows you if your project is on schedule. A daily check can
    ![Sprint burndown chart: Actual remaining work high above ideal trend line](media/burndown/ALM_SB_RiskMitigation.png)
    :::column-end:::
 :::row-end:::
-
-=======
-<table>
-<tr valign="top">
-<td width="35%">
-<p>For example, when the actual remaining work (blue area) goes flat over time, or remains high above the ideal trend line, the team is at risk of not meeting their sprint commitments.</p>
-<p>Teams should meet immediately to course correct and either reassign work, recruit more resources, or reset expectations.</p>
-</td>
-<td>
-<img src="media/burndown/ALM_SB_RiskMitigation.png" alt="Sprint burndown chart: Actual remaining work high above ideal trend line"/>
-</td>
-</tr>
-</table>
->>>>>>> 13eda4badc9c6b346142f7dd7ca69c6de8d28fc7
   
 ::: moniker-end
 
