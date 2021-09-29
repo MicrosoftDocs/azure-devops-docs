@@ -1,27 +1,27 @@
 ---
 title: Rebuild the data warehouse and cube
 titleSuffix: Azure DevOps Server
-description: Rebuild the data warehouse and cube after performing maintenance operations on a Team Foundation Server 
+description: Learn how to rebuild the data warehouse and cube after carrying out maintenance operations on Azure DevOps Server.
 ms.assetid: 23CD5F6B-468D-47B5-8A03-96547B526C2D  
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< azure-devops' 
-ms.date: 11/19/2018
+ms.date: 09/23/2021
 ---
 
 # Rebuild the data warehouse and cube
 
 [!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
-Whenever you move, restore, rename, or fail over the data-tier server for Team Foundation Server (TFS), you should rebuild the data warehouse and cube to access high-level reports. Also, if you move, attach, detach, or delete a team project collection, you should rebuild the warehouse and cube.  
+Whenever you move, restore, rename, or fail over the data-tier server for Team Foundation Server (TFS), rebuild the data warehouse and cube to access high-level reports. It's also a good idea to rebuild the warehouse and cube when you move, attach, detach, or delete a team project collection.  
 
 The data warehouse aggregates all operational data, such as version control, work item tracking, build, and test. The warehouse corresponds to the relational database, Tfs_Warehouse, and the cube corresponds to Tfs_Analysis, the SQL Server Analysis Services database. 
 
-You should not have to rebuild the data warehouse during normal operations. If you want to refresh the data warehouse data, you can manually process the warehouse and cube on demand. See [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md). Depending on the amount of data in the data warehouse, the rebuild operation can take several hours to finish, during which time reports are not available. 
+You shouldn't have to rebuild the data warehouse during normal operations. If you want to refresh the data warehouse data, you can manually process the warehouse and cube on demand. See [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md). Depending on the amount of data in the data warehouse, the rebuild operation can take several hours to finish. Reports aren't available during the rebuild operation.
 
-To rebuild the Azure DevOps data warehouse, perform this sequence of steps:
+To rebuild the Azure DevOps data warehouse, do this sequence of steps:
 
 1. [Verify that services and application pools are running and that TCP/IP is enabled for SQL Server](#verify-services)  
 2. [Rebuild the data warehouse](#create-datawarehouse)  
@@ -45,13 +45,13 @@ You must be a member of these security groups or have the corresponding permissi
 
 For more information, see [Add accounts to administer TFS](/azure/devops/server/admin/add-administrator).
 
-In addition to these permissions, you might need to address these requirements on a computer that is running Windows Server 2008 or Windows Vista:
+You might also need to address these requirements on a computer that is running Windows Server 2008 or Windows Vista:
 
 * To follow a command-line procedure, you might need to open an elevated Command Prompt by choosing **Start**, opening the context menu for **Command Prompt**, and choosing **Run as Administrator**.  
 
 * To follow a procedure that requires Internet Explorer, you might need to start it as an administrator by choosing **Start**, **All Programs**, opening the context menu for **Internet Explorer**, and then choosing **Run as administrator**.  
 
-* To access Report Manager, reports, or websites for Reporting Services, you might need to add these sites to the list of trusted sites in Internet Explorer or start Internet Explorer as an administrator.  
+* To access Report Manager, reports, or websites for Reporting Services, add these sites to the list of trusted sites in Internet Explorer or start Internet Explorer as an administrator.  
 
 For more information, see [User Account Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).
 
@@ -59,14 +59,13 @@ With the rebuild operation, you re-create both the relational database and the c
 
 <a id="verify-services">  </a>
 
-## 1. Verify that services and application pools are running 
+## Verify that services and application pools are running 
 
-Also, and that TCP/IP is enabled for SQL Server. 
-To complete the steps in this procedure, the services that SQL Server requires must be running. You stop Reporting Services so that users do not access reports while you are rebuilding the data warehouse. Also, for a dual-server deployment, the TCP/IP protocol must be enabled for each instance of a SQL Server database. 
+To complete the steps in this procedure, the services that SQL Server requires must be running. You stop Reporting Services so that users don't access reports while you're rebuilding the data warehouse. Also, for a dual-server deployment, the TCP/IP protocol must be enabled for each instance of a SQL Server database. 
 
 By default, TCP/IP is disabled when you install SQL Server.
 
-1. Log on to the appropriate server, open Computer Manager, and then verify that the services and application pools in the following table are running: 
+1. Sign in to the appropriate server, open Computer Manager, and then verify that the services and application pools in the following table are running: 
 
 	---
 	:::row:::
@@ -109,14 +108,14 @@ By default, TCP/IP is disabled when you install SQL Server.
 
     For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-services-pools).
 
-2. Log on to the server that hosts Reporting Services, and stop the SQL Server Reporting Services (*TFSINSTANCE*) service.  Use the [report reader account](/azure/devops/server/requirements). 
+2. Sign in to the server that hosts Reporting Services, and stop the SQL Server Reporting Services (*TFSINSTANCE*) service.  Use the [report reader account](/azure/devops/server/requirements). 
 
 3. Make sure that TCP/IP has been enabled for SQL Server on the data-tier server. For more information, see [Enable the TCP/IP Protocol for a Database Instance](/previous-versions/bb909712(v=vs.120)).  
 
 
 <a id="create-datawarehouse">  </a> 
 
-## 2. Rebuild the data warehouse and restart services
+## Rebuild the data warehouse and restart services
 
 1. [Open the Azure DevOps Server Administration Console](/azure/devops/server/admin/admin-quick-ref).
 
@@ -128,9 +127,9 @@ By default, TCP/IP is disabled when you install SQL Server.
 
     The **Rebuild the Warehouse and Analysis Services Databases** dialog box opens.  
 
-4. Choose **OK** to initiate the rebuild process.  
+4. Choose **OK** to start the rebuild process.  
 
-    When you rebuild the warehouse or cube, TFS performs this sequence of actions:
+    When you rebuild the warehouse or cube, TFS carries out this sequence of actions:
 
    * Takes the databases offline.  
    * Drops the schema for both databases.   
@@ -146,27 +145,31 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 5. (Optional) To check the status of the rebuild process, you can use the Warehouse Control Web service. For more information, see [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md).  
 
-6. Log on to the server that hosts Reporting Services, open Computer Manager, and then start the SQL Server Reporting Services (*TFSINSTANCE*) service.  
+6. Sign in to the server that hosts Reporting Services, open Computer Manager, and then start the SQL Server Reporting Services (*TFSINSTANCE*) service.  
 
 <a id="verify-reports">  </a>
 
-## 3. Verify that reports can be accessed
+## Verify that reports can be accessed
 
-1. Log on to the server that hosts Reporting Services, open Internet Explorer, type the following string in the Address bar, and then press ENTER:
+1. Sign in to the server that hosts Reporting Services, open Internet Explorer, type the following string in the Address bar, and then press ENTER:
 
     ```http://localhost/Reports```
 
     > [!TIP]  
     > You may need to start Internet Explorer as an administrator by choosing **Start**, **All Programs**, open the context menu of Internet Explorer, and then choosing **Run as administrator**.   
 
-    If you have deployed a named instance on the data-tier server, type this string instead:
+    If you've deployed a named instance on the data-tier server, type this string instead:
     ```http://localhost/Reports_***TFSInstance*```
 
-2. In Contents, choose TFSReports, choose the folder of the team project collection that stores your team project, choose the folder that corresponds to your team project, and then choose the folder that contains a report that you want to view.
+2. In Contents:
+   1. Select TFSReports.
+   1. Select the folder of the team project collection that stores your team project.
+   1. Select the folder that corresponds to your team project.
+   1. Select the folder that contains a report that you want to view.
 
-3. Choose the folder that contains a report that you want to view. 
+3. Select the folder that contains a report that you want to view. 
 
-4. Choose a report, and verify that the report appears correctly. 
+4. Select a report, and verify that the report appears correctly. 
 
 5. Check the date when the report was last updated. This information appears in the lower-left corner of the report. 
 
@@ -176,17 +179,21 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 #### Q: How do I resolve schema conflicts?
 
-**A:** If you encounter schema conflicts, you cannot resolve this by rebuilding the data warehouse. Instead, you must resolve the conflicts first and then rebuild the data warehouse. See [Resolve schema conflicts that are occurring in the data warehouse](resolve-schema-conflicts.md).
+**A:** If you come across schema conflicts, you can't resolve the conflicts by rebuilding the data warehouse. Instead, you must resolve the conflicts first and then rebuild the data warehouse. See [Resolve schema conflicts that are occurring in the data warehouse](resolve-schema-conflicts.md).
 
 #### Q: How can I resolve failure errors that occur when rebuilding or processing the data warehouse?
 
 **A:** The following actions can cause failure errors to occur.  
 
-* You manually modified a TFS database or edited a SQL table. You should not manually modify any of the TFS databases unless you're either instructed to do so by Microsoft Support or when you're following the procedures described for manually backing up the databases ([Manually back up Team Foundation Server](/azure/devops/server/admin/backup/manually-backup-tfs)). Any other modifications can invalidate your service agreement, block upgrades and patches, and result in data loss or corruption.  
+* You manually modified a TFS database or edited a SQL table. Don't manually modify any of the TFS databases unless:
+   * Instructed to do so by Microsoft Support.
+   * You're following the procedures described for [manually backing up the databases](/azure/devops/server/admin/backup/manually-backup-tfs).
+
+   Any other modifications can invalidate your service agreement, block upgrades and patches, and result in data loss or corruption.  
 
 * A detach/attach operation resulted in a misconfiguration of a team project collection. For example, a collection has become attached to two different data-tier servers, which is an unsupported scenario. Correcting the configuration and then rebuilding the data warehouse should resolve the errors.  
 
-* You've performed an unsupported backup or restore operation as described in [Back up and restore TFS](/azure/devops/server/admin/backup/back-up-restore).   
+* You've carried out an unsupported backup or restore operation as described in [Back up and restore TFS](/azure/devops/server/admin/backup/back-up-restore).   
 
 #### Q: How do I modify the reporting configuration?
 
@@ -198,7 +205,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 **A:** Data associated with builds or work items that have been permanently deleted from the database will be permanently removed from the data warehouse when you rebuild it. 
 
-Also, data in the warehouse or cube that originates from third-party sources might also be lost. Even though most third-party tools are capable of republishing data, that capability depends on the individual vendor. Contact your vendor to determine what (if any) data might be lost.
+Also, data in the warehouse or cube that originates from third-party sources might also be lost. Even though most third-party tools can republish data, that capability depends on the individual vendor. Contact your vendor to determine what (if any) data might be lost.
 
 For details of what data doesn't get deleted from the database when you delete builds, see [this blog post](/archive/blogs/adamroot/working-with-deleted-build-data-in-team-foundation-server-2010-2).
 
