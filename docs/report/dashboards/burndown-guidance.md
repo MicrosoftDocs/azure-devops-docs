@@ -58,19 +58,20 @@ Solutions may include reassigning tasks or recruiting more resources. The team s
 ::: moniker range="<= azure-devops-2019"
 
 As the team makes progress, divergences from the ideal trend line help the team monitor divergences from scope. 
-<<<<<<< HEAD
+
 :::row:::
    :::column span="1":::
    
    Increases instead of decreases within the blue graph may indicate:
-   
+    
    - Poor estimates made to tasks
    - Discovery of new work not accounted for in sprint planning
-   - Scope creep, additional work not agreed to by the team.
+   - Scope creep, other work not agreed to by the team.
    
    Whatever the cause, teams should come together quickly to determine how to remedy the increased workload.
 
-   Solutions may include reassigning tasks or recruiting additional resources. The team should move all non-essential sprint work to the backlog and consider it during the next sprint planning meeting.
+
+   Solutions may include reassigning tasks or recruiting more resources. The team should move all non-essential sprint work to the backlog and consider it during the next sprint planning meeting.
 
    :::column-end:::
    :::column span="3":::
@@ -80,27 +81,7 @@ As the team makes progress, divergences from the ideal trend line help the team 
    :::column-end:::
 :::row-end:::
 
-=======
-<table>
-<tr valign="top">
-<td width="35%">
-<p>Increases instead of decreases within the blue graph may indicate:</p> 
-<ul>
-<li>Poor estimates made to tasks</li>
-<li>Discovery of new work not accounted for in sprint planning</li>
-<li>Scope creep, other work not agreed to by the team.</li>
-</ul>
-<p>Whatever the cause, teams should come together quickly to determine how to remedy the increased workload.</p>
 
-<p>Solutions may include reassigning tasks or recruiting more resources. The team should move all non-essential sprint work to the backlog and consider it during the next sprint planning meeting.</p>
-</td>
-<td>
-<img src="media/burndown/ALM_SB_ScopeCreep_75.png" alt="Sprint burndown chart: Increasing remaining work can indicate scope creep"/>
-
-</td>
-</tr>
-</table>
->>>>>>> 13eda4badc9c6b346142f7dd7ca69c6de8d28fc7
 
 ::: moniker-end
 
