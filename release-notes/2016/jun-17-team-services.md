@@ -83,7 +83,7 @@ It’s a common scenario for an individual test to run on multiple branches, env
 
 ## Test – Automated testing for SCVMM and VMWare
 
-Users can dynamically set up test machines in the cloud with Azure, or on premises using SCVMM or VMWare, and use these machines to run their tests in a distributed manner. Users can use one of the machine provisioning tasks— [Azure, SCVMM or VMWare](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.vmwareapp)—followed by the [Run Functional Tests task](https://visualstudio.microsoft.com/docs/build/steps/test/run-functional-tests) to run tests. For more information, please see the [Visual Studio docs](/visualstudio/test/lab-management/install-configure-test-agents).
+Users can dynamically set up test machines in the cloud with Azure, or on premises using SCVMM or VMWare, and use these machines to run their tests in a distributed manner. Users can use one of the machine provisioning tasks— [Azure, SCVMM or VMWare](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.vmwareapp)—followed by the [Run Functional Tests task](/azure/devops/pipelines/tasks/test/run-functional-tests) to run tests. For more information, please see the [Visual Studio docs](/visualstudio/test/lab-management/install-configure-test-agents).
 
 ## Release – Test status visibility
 
@@ -131,7 +131,7 @@ We’ve updated the software available in our hosted build pool to include:
 -.NET Core RC2 Tooling
 -Service Fabric runtime, SDK, and tools for Visual Studio 2015
 
-For a full list of software, see [https://visualstudio.microsoft.com/docs/build/agents/hosted-pool](https://visualstudio.microsoft.com/docs/build/agents/hosted-pool).
+For a full list of software, see [https://docs.microsoft.com/azure/devops/pipelines/agents/hosted](/azure/devops/pipelines/agents/hosted).
 
 ## Dashboards – Resizable query results widget
 
@@ -139,7 +139,7 @@ Teams can now configure the size of the dashboard's Query Results widget, allowi
 
 ## Third-party plugins – Jenkins plug-in to RM
 
-Users of Jenkins CI can now create releases more easily using the [Team Services Continuous Deployment](https://wiki.jenkins-ci.org/display/JENKINS/VS+Team+Services+Continuous+Deployment+Plugin) plugin. Add post-build steps right into your Jenkins CI project to create a new release. This, along with the ability for Release Management to understand and download Jenkins artifacts, provides a great end-to-end integration between these two tools.
+Users of Jenkins CI can now create releases more easily using the [Team Services Continuous Deployment](https://www.jenkins.io/security/advisory/2019-04-03/#SECURITY-962) plugin. Add post-build steps right into your Jenkins CI project to create a new release. This, along with the ability for Release Management to understand and download Jenkins artifacts, provides a great end-to-end integration between these two tools.
 
 ## Marketplace – Publisher review responses
 
