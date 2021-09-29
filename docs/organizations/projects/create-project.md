@@ -121,7 +121,7 @@ If you don't want to create a project in Azure DevOps, you can create [Azure Dev
    - **Repos**: clone or import a repository, or initialize a *README* file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
    - **Pipelines**: define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
    - **Test Plans**: define test plans and test suites. See [Create test plans and test suites](../../test/create-a-test-plan.md).
-   - **Artifacts**: discover, install, and publish NuGet, npm, and Maven packages. See the [Azure Artifacts overview](../../artifacts/overview.md).
+   - **Artifacts**: discover, install, and publish NuGet, npm, and Maven packages. See the [Azure Artifacts overview](../../artifacts/start-using-azure-artifacts.md).
    - **manage your services**: disable the visibility of services. See [Turn a service on or off](../settings/set-services.md).
 
 ::: moniker-end
