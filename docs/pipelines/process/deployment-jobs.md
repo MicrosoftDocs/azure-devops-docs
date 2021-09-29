@@ -55,6 +55,17 @@ jobs:
         steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
 
+There is a more detailed syntax you can also use for the `environment` property.
+
+```yaml
+environment:
+    name: string # Name of environment.
+    resourceName: string # Name of resource.
+    resourceId: string # Id of resource.
+    resourceType: string # Type of environment resource.
+    tags: string # List of tag filters.
+```
+
 For virtual machines, you do not need to define a pool. Any steps that you define in a deployment job with a virtual machine resource will run against that virtual machine and not against the agent in the pool. For other resource types such as Kubernetes, you do need to define a pool so that tasks can run on that machine.
 ## Deployment strategies
 
