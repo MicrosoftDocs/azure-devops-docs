@@ -1,7 +1,7 @@
 ---
 title: Understand dashboards, charts, reports & widgets
 titleSuffix: Azure DevOps  
-description: Review of OOB charts, widgets, dashboards, & reports available to monitor status and trends in Azure DevOps & Team Foundation Server (TFS)  
+description: Learn about OOB charts, widgets, dashboards, & reports available to monitor status and trends in Azure DevOps.
 ms.custom: dashboards
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.technology: devops-analytics
@@ -9,16 +9,16 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 09/07/2021
+ms.date: 09/28/2021
 ---
 
-# About dashboards, charts, reports, & widgets   
+# About dashboards, charts, reports, & widgets
 
 [!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
-Gain visibility into your team's progress by adding one or more widgets or charts to your dashboard. Customizable, highly-configurable dashboards provide you and your teams with the flexibility to share information, monitor progress and trends, and improve your workflow processes.  Each team can tailor their dashboards to share information and monitor their progress.  
+Gain visibility into your team's progress by adding one or more widgets or charts to your dashboard. Customizable, highly configurable dashboards provide you and your teams with the flexibility to share information, monitor progress and trends, and improve your workflow processes.  Each team can tailor their dashboards to share information and monitor their progress.  
 
-If you're just starting out, read [Add, rename, and delete dashboards](dashboards.md). If you're looking for instructions on a specific task, in context chart, widget, or report&mdash;review [Dashboards and widgets quick reference](quick-ref.md). To learn about our reporting solutions, read [Reporting Roadmap](../powerbi/reporting-roadmap.md).
+If you're just starting out, read [Add, rename, and delete dashboards](dashboards.md). Looking for instructions on a specific task, in context chart, widget, or report? See [Dashboards and widgets quick reference](quick-ref.md). To learn about our reporting solutions, read [Reporting Roadmap](../powerbi/reporting-roadmap.md).
 
 [!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
@@ -27,23 +27,23 @@ If you're just starting out, read [Add, rename, and delete dashboards](dashboard
 
 ::: moniker range="azure-devops"
 
-- <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team or a project and display configurable charts and widgets.
-- <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results.
-- <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). 
-- <strong>In-context reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics.  
-- <strong>Power BI reports</strong> allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
+- **Dashboards** are customizable interactive signboards that provide real-time information. Dashboards are associated with a team or a project and display configurable charts and widgets.
+- **Charts** are query-based status or trend charts derived from a work item query or test results.
+- **Widgets** display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. Also, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). 
+- **In-context reports** are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics.  
+- **Power BI reports** allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
 
 ::: moniker-end  
 
 ::: moniker range="azure-devops-2020"
 
-- <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
-- <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results. 
-- <strong>In-context reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics. 
-- <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
-- <strong>Reports</strong>
-	- <strong>Power BI reports</strong>: For project collections that support the Inherited process, allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
-	- <strong>SQL Server reports</strong>: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports as well as support to create customized SQL Reports or Excel reports. This requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
+- **Dashboards** are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
+- **Charts** are query-based status or trend charts derived from a work item query or test results. 
+- **In-context reports** are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics. 
+- **Widgets** display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. Also, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
+- **Reports**
+	- **Power BI reports**: For project collections that support the Inherited process, allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
+	- **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
 
 > [!NOTE]  
 > OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. To learn more, see [OData documentation](/odata/).
@@ -52,31 +52,31 @@ If you're just starting out, read [Add, rename, and delete dashboards](dashboard
 
 ::: moniker range="azure-devops-2019"
 
-- <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
-- <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results. 
-- <strong>In-context reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. 
-- <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
-- <strong>Reports</strong>
-	- <strong>Power BI reports</strong>: For project collections that support the Inherited process, allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
-	- <strong>SQL Server reports</strong>: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports as well as support to create customized SQL Reports or Excel reports. This requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
+- **Dashboards** are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
+- **Charts** are query-based status or trend charts derived from a work item query or test results. 
+- **In-context reports** are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. 
+- **Widgets** display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. Also, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
+- **Reports**
+	- **Power BI reports**: For project collections that support the Inherited process, allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
+	- **SQL Server reports**: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
 
 ::: moniker-end  
 
 ::: moniker range=">=tfs-2015 <= tfs-2018"
 
-- <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
-- <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results. 
-- <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
-- <strong>In-context reports** are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD). 
-- <strong>Reports</strong> correspond to out-of-the-box SQL Server reports as well as support to create customized SQL Reports or Excel reports. This requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
+- **Dashboards** are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
+- **Charts** are query-based status or trend charts derived from a work item query or test results. 
+- **Widgets** display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. Also, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
+- **In-context reports** are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD). 
+- **Reports** correspond to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2013"
-- <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts that you pin to the dashboard.
-- <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results. 
-- <strong>In-context reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD). 
-- <strong>Reports</strong> correspond to out-of-the-box SQL Server reports as well as support to create customized SQL Reports or Excel reports. This requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
+- **Dashboards** are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts that you pin to the dashboard.
+- **Charts** are query-based status or trend charts derived from a work item query or test results. 
+- **In-context reports** are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD). 
+- **Reports** correspond to out-of-the-box SQL Server reports and support to create customized SQL Reports or Excel reports. Doing so requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
 
 ::: moniker-end  
 
@@ -88,13 +88,18 @@ If you're just starting out, read [Add, rename, and delete dashboards](dashboard
 
 With dashboards, you can configure an array of charts and widgets. 
 
-Each team can [add and configure multiple dashboards](dashboards.md) to share information, view status, progress, and trends, and access quick links and other functions. Easily add and rearrange widgets on the dashboard to show recent changes made to view build status, bug trends, and more. 
+Each team can [add and configure multiple dashboards](dashboards.md) to:
+- Share information.
+- View status, progress, and trends
+- Access quick links and other functions.
+
+Easily add and rearrange widgets on the dashboard to show recent changes made to view build status, bug trends, and more. 
 
 ![Example dashboard](media/dashboard-view-with-widgets.png)
 
 #### Sequence for adding and customizing a dashboard
 
-<em>Click a box below to open the corresponding article.</em> 
+<em>Select a box below to open the corresponding article.</em> 
 
 [![Add dashboard](media/gs-add-dashboard.png)](dashboards.md)[![Add widget](media/gs-add-widget.png)](add-widget-to-dashboard.md) 
 
@@ -105,9 +110,9 @@ Each team can [add and configure multiple dashboards](dashboards.md) to share in
 
 ## Charts: Work tracking status and trends 
 
-With flat-list queries, you can create various charts to monitor status, progress, and trends. Prior to monitoring work progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../../boards/backlogs/create-your-backlog.md). 
+With flat-list queries, you can create various charts to monitor status, progress, and trends. Before you monitor work progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../../boards/backlogs/create-your-backlog.md). 
 
-You can open a shared query, create a chart and add it to the dashboard. Once it's been added to the dashboard, you can change the **Chart for work items** widget configuration to resize or change the chart parameters. Or, from the dashboard, you can add a **Chart for work items** widget and choose a shared query and set the chart parameters. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts. 
+You can open a shared query, create a chart, and add it to the dashboard. Once it's been added to the dashboard, you can change the **Chart for work items** widget configuration to resize or change the chart parameters. Or, from the dashboard, you can add a **Chart for work items** widget and choose a shared query and set the chart parameters. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts. 
 
 For details, see: 
 - [Define a query](../../boards/queries/using-queries.md)
@@ -131,7 +136,7 @@ For details, see:
 
 **Sequence for adding query-based charts to a dashboard**  
 
-<em>Click a box below to open the corresponding article.</em> 
+<em>Select a box below to open the corresponding article.</em> 
 
 [![Edit query](media/gs-chart-query.png)](../../boards/queries/using-queries.md)[![Create chart](media/gs-chart-create.png)](charts.md)[![Add chart to dashboard](media/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)   
 
@@ -139,7 +144,7 @@ For details, see:
 
 ## Charts: Manual testing progress, results, and trends  
 
-The steps to creating charts that track manual testing progress and results are similar to those for tracking work. The starting point, however, begins with the test plan rather than a query. For example, you can find out how many test cases are ready to run, or how many tests are passing and failing in each test suite. And, just like work item query-based charts, you can add these charts to a dashboard. 
+The steps to creating charts that track manual testing progress and results are similar to the ones for tracking work. The starting point, however, begins with the test plan rather than a query. For example, you can find out how many test cases are ready to run, or how many tests are passing and failing in each test suite. And, just like work item query-based charts, you can add these charts to a dashboard. 
  
 For details, see: 
 - [Create test plans and test suites](../../test/create-a-test-plan.md)
@@ -210,7 +215,7 @@ You add widgets to a dashboard to display a chart, information, or set of links.
 
 ### Sprint scope change
 
-There is no chart or widget that tracks changes to sprint scope. However, you can determine work items added to a sprint or moved out of a sprint using the Query Editor. To learn how, see [About Sprints, Scrum and project management, Sprint scope change](../../boards/sprints/scrum-overview.md#sprint-scope-change). 
+There's no chart or widget that tracks changes to sprint scope. However, you can determine work items added to a sprint or moved out of a sprint using the Query Editor. To learn how, see [About Sprints, Scrum and project management, Sprint scope change](../../boards/sprints/scrum-overview.md#sprint-scope-change). 
 
 ::: moniker-end
 
@@ -324,7 +329,7 @@ Velocity is based on the values entered for Effort, Story Points, or Size fields
 
 ### Sprint burndown  
 
-Each sprint provides access to two charts. The first [tracks capacity](../../boards/sprints/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](configure-sprint-burndown.md) in terms of remaining work. 
+Each sprint provides access to two charts. The first [tracks capacity](../../boards/sprints/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](configure-sprint-burndown.md) for remaining work. 
 
 | Capacity bars | Burndown  |
 |-------| ----- |
@@ -359,13 +364,13 @@ To learn more about these reports, see one of the following articles:
 
 ## In-context reports: Pipelines and Test 
 
-Several in-context reports are provided for Azure Pipelines. These reports derive from Analytics data. Open a pipeline (or release summary for Test failure) to view the reports and select the **Analytics** tab. Choose **View full report** on a summary card for a detailed report.
+Several in-context reports are provided for Azure Pipelines. These reports derive from Analytics data. Open a pipeline (or release summary for Test failure) to view the reports and select the **Analytics** tab. Select **View full report** on a summary card for a detailed report.
 
 > [!div class="mx-imgBorder"]
 > ![Analytics Tab](../../pipelines/reports/media/pipelines-reports/analyticstab.png)
 
 
-For more information on each in-context Analytics report for pipeline runs, see the following: 
+For more information on each in-context Analytics report for pipeline runs, see the following articles: 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -388,14 +393,14 @@ For more information on each in-context Analytics report for pipeline runs, see 
 
 
 ::: moniker range=">= azure-devops-2020"
-In addition, you can use Power BI and OData to create reports based on pipeline and test data. For details, see [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md)
+You can also use Power BI and OData to create reports based on pipeline and test data. See [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md)
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
 ### Pipeline pass rate report
 
-The **Pipeline pass rate** report provides a trend of pipeline failure and task failure of the pipeline. You can view the pass rate of the pipeline over a configurable period of time (7/14/30 days). You can view additional details in **Task failure details**, which not only highlights the trend, but also list the top failing tasks.
+The **Pipeline pass rate** report provides a trend of pipeline failure and task failure of the pipeline. You can view the pass rate of the pipeline over a configurable period of time (7/14/30 days). You can view more details in **Task failure details**, which not only highlights the trend, but also list the top failing tasks.
 
 > [!div class="mx-imgBorder"]
 > ![Pipeline failures report](../../pipelines/reports/media/pipelines-reports/pipelinefailurereport.png)
@@ -414,7 +419,7 @@ Learn more about the [Test failures report](../../pipelines/test/test-analytics.
 
 ### Pipeline duration report
 
-The **Pipeline duration** report provides the duration trend of a pipeline. It also highlights the average run time of the total successful runs over a period of time (7/14/30 days) and provides insights on the tasks which have impacted the duration of the pipeline. 
+The **Pipeline duration** report provides the duration trend of a pipeline. It also highlights the average run time of the total successful runs over a period of time (7/14/30 days) and provides insights on the tasks that have affected the duration of the pipeline. 
 
 > [!div class="mx-imgBorder"]
 > ![Pipeline duration report](../../pipelines/reports/media/pipelines-reports/pipelinedurationreport.png)
@@ -456,7 +461,7 @@ You can add data to support reporting requirements by [adding a custom field](..
 
 ## Marketplace widgets and extensibility
 
-In addition to the widgets available to your from the widget catalog, you may find additional widgets of interest from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
+In addition to the widgets available in the widget catalog, you may find interesting widgets in the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
 
 Or, you can [create your own widget using the REST API](../../extend/develop/add-dashboard-widget.md). 
 
@@ -464,7 +469,7 @@ Or, you can [create your own widget using the REST API](../../extend/develop/add
 
 ::: moniker range=">= tfs-2015"
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Add a widget to a dashboard](add-widget-to-dashboard.md) 
