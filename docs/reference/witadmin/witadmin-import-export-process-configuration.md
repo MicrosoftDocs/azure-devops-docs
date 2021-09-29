@@ -47,16 +47,74 @@ witadmin importprocessconfig /collection:CollectionURL [/p:ProjectName] /f:FileN
 
 #### Parameters  
 
-|**Parameter**|**Description**|  
-|-------------------|---------------------|  
-|**/collection**:`CollectionURLx`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
-|**/p**:`ProjectName`|Required. Specifies the project for which you want to export or import the process configuration. This project must be defined in the collection that you specified by using the /collection parameter. You do not need to specify a project when you specify the `/v` switch.|  
-|**/f**:`FileName`|The path and the name of the XML definition file for the process configuration to export or import.<br /><br />
-> [!NOTE]  
-> If the client computer is running Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the [Registry Virtualization](/windows/win32/sysinfo/registry-virtualization) page on the Microsoft website. To avoid this redirection, you can export the file to a location where you have permissions.|  
-|**/e**:`Encoding`|Optional. The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding and uses UTF-8 if detection fails.|  
-|**/v**|Optional. Validates the XML that defines the process configuration but does not import the definition file.|  
-|**/?** or **help**|Displays help about the command in the Command Prompt window.|  
+:::row:::
+   :::column span="1":::
+   **Parameter**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::   
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/collection**:`CollectionURLx`
+   :::column-end:::
+   :::column span="3":::
+   Specifies the URI of the project collection. For example:     
+   
+   **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*     
+   
+   If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.
+   :::column-end:::   
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/p**:`ProjectName`
+   :::column-end:::
+   :::column span="3":::
+   Required. Specifies the project for which you want to export or import the process configuration. This project must be defined in the collection that you specified by using the /collection parameter. You do not need to specify a project when you specify the `/v` switch.
+   :::column-end:::   
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/f**:`FileName`
+   :::column-end:::
+   :::column span="3":::
+   The path and the name of the XML definition file for the process configuration to export or import.<br /><br />
+   > [!NOTE]  
+   >If the client computer is running Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the [Registry Virtualization](/windows/win32/sysinfo/registry-virtualization) page on the Microsoft website. To avoid this redirection, you can export the file to a location where you have permissions.
+   :::column-end:::   
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/e**:`Encoding`
+   :::column-end:::
+   :::column span="3":::
+   Optional. The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding and uses UTF-8 if detection fails.
+   :::column-end:::   
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/v**
+   :::column-end:::
+   :::column span="3":::
+   Optional. Validates the XML that defines the process configuration but does not import the definition file.
+   :::column-end:::   
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **/?** or **help**
+   :::column-end:::
+   :::column span="3":::
+   Displays help about the command in the Command Prompt window.
+   :::column-end:::   
+:::row-end:::
 
 ## Remarks  
  Installing the latest version of TFS upgrades existing projects. If you are updating an upgraded project, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
