@@ -742,7 +742,7 @@ Once you set auto-complete, the PR displays a banner. Select **Cancel auto-compl
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2020"
+::: moniker range="azure-devops"
 ![Screenshot of a P R in auto-complete state.](./media/pull-requests/autocomplete.png)
 ::: moniker-end 
 
