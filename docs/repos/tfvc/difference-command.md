@@ -254,8 +254,7 @@ tf diff[erence] /configure
    :::column span="1":::
    Specifies the user name and password to authenticate the user with Team Foundation Server.
    :::column-end:::
-   :::column span="1":::
-   
+:::row-end:::   
 
 ## Remarks
 > [!NOTE]
