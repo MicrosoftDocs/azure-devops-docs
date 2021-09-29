@@ -28,7 +28,7 @@ a good DevOps practice.
 
 Before you begin, you need a CI build that creates your Azure RM template. To set up CI, see:
 
-* [Build an Azure virtual machine using an Azure RM template](build-azure-vm-template.md)
+* [Build an Azure virtual machine using an Azure RM template](./deploy-arm-template.md)
 
 ## Define and test your CD release pipeline
 

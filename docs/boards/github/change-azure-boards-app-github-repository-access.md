@@ -80,6 +80,6 @@ If you uninstall the Azure Boards app for GitHub, you'll see the following messa
 
 ## Related articles
  
-- [Connect Azure Boards to GitHub](/azure/devops/boards/github/connect-to-github?view=azure-devops&preserve-view=true)
-- [Connect Azure DevOps Server to GitHub Enterprise Server](/azure/devops/boards/github/connect-on-premises-to-github?view=azure-devops-2020&preserve-view=true)
+- [Connect Azure Boards to GitHub](./connect-to-github.md?preserve-view=true&view=azure-devops)
+- [Connect Azure DevOps Server to GitHub Enterprise Server](./connect-on-premises-to-github.md?preserve-view=true&view=azure-devops-2020)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)

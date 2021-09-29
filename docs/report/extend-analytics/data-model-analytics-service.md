@@ -79,7 +79,7 @@ The following **EntitySets** are supported with the indicated API versions. For 
 
 - [Analytics views dataset design](../powerbi/data-connector-dataset.md)
 - [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md)
-- [About teams and Agile tools](../../settings/about-teams-and-settings.md)
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
 - [Project and team quick reference](../../organizations/projects/project-team-quick-reference.md)
 - [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md)
 - [Add teams](../../organizations/settings/add-teams.md)
@@ -171,6 +171,4 @@ The following table provides _*a partial list*_ of the **WorkItemRevision** enti
 - [Query guidelines for Analytics with OData](odata-query-guidelines.md)
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)
-- [Exploring Analytics OData metadata](analytics-metadata.md) 
-
-
+- [Exploring Analytics OData metadata](analytics-metadata.md)
