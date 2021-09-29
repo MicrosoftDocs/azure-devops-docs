@@ -210,14 +210,14 @@ Use [**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) to perfo
 - Add or change hierarchical links between work items. 
 
 
-<!---
- 
+<!--
+
 :::row:::
    :::column span="1":::
-   Office application
+   **Office application**
    :::column-end:::
    :::column span="3":::
-   Best tool for:
+   **Best tool for:**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -234,7 +234,7 @@ Use [**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) to perfo
 :::row-end:::
 :::row:::
    :::column span="1":::
-   [**Project**](../backlogs/office/create-your-backlog-tasks-using-project.md) 
+   [**Project**](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project) 
    :::column-end:::
    :::column span="3":::
    
@@ -247,14 +247,14 @@ Use [**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) to perfo
 :::row-end:::
 :::row:::
    :::column span="1":::
-   [**Storyboarding with PowerPoint**](../backlogs/office/storyboard-your-ideas-using-powerpoint.md)   
+   [**Storyboarding with PowerPoint**](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint)   
    :::column-end:::
    :::column span="3":::
     
    
    - Storyboarding features and user interface changes 
-   - [Linking your storyboard to a work item](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-your-storyboard-to-a-backlog-item)
-   - [Adding and sharing storyboard shapes](../backlogs/office/add-share-storyboard-shapes.md)
+   - [Linking your storyboard to a work item](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint#link-your-storyboard-to-a-backlog-item)
+   - [Adding and sharing storyboard shapes](/previous-versions/azure/devops/boards/backlogs/office/add-share-storyboard-shapes)
    
    :::column-end:::
 :::row-end:::
