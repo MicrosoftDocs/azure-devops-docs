@@ -235,20 +235,20 @@ For information on system-defined sprint burndown charts, see [Sprint burndown](
 
 <a id="fields" />
 
-## 
+## Fields used to estimate and track work
 
 The following table describes the activity-based and numeric fields that you can use to track work. For information on date-related fields, such as Start Date, Finish Date, and Target Date, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
 
 
 :::row:::
      :::column span="1":::
-   Field name
+   **Field name**
    :::column-end:::
      :::column span="2":::
-   Description
+   **Description**
    :::column-end:::
      :::column span="1":::
-   Work item type
+   **Work item type**
    :::column-end:::
 :::row-end:::
 

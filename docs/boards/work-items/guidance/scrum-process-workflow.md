@@ -47,10 +47,10 @@ Use the following guidance and that provided for [fields used in common across w
 
 :::row:::
    :::column span="1":::
-   **Field/tab</p>
+   **Field/tab**
    :::column-end:::
    :::column span="3":::
-   <p>Usage**
+   **Usage**
    :::column-end:::
 :::row-end:::
 
@@ -157,10 +157,10 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 
 :::row:::
    :::column span="1":::
-   **Field/tab</p>
+   **Field/tab**
    :::column-end:::
    :::column span="3":::
-   <p>Usage**
+   **Usage**
    :::column-end:::
 :::row-end:::
 
@@ -172,7 +172,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
    Indicate how many hours or days of work remain to complete a task. As work progresses, update this field. It&#39;s used to calculate capacity charts, the sprint burndown chart, and the [Sprint Burndown (Scrum)](../../../report/sql-reports/sprint-burndown-scrum.md) report.<br />If you divide a task into subtasks, specify Remaining Work for the subtasks only. You can specify work in any unit of measurement your team chooses.
 
    :::column-end:::
-:::row-end:::
+   :::row-end:::
 :::row:::
    :::column span="1":::
    [Activity](../../queries/query-numeric.md) 
