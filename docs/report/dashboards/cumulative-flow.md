@@ -273,16 +273,15 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 ::: moniker range="<= tfs-2018"
 
-1. Open the backlog level for which you want to configure and then open the common configuration dialog. Select the :::image type="icon" source="../../boards/media/icons/team-settings-gear-icon.png" border="false"::: gear icon.  
+1. Open the backlog level for which you want to configure and then open the common configuration dialog. Select the :::image type="icon" source="../../boards/media/icons/team-settings-gear-icon.png" border="false"::: gear icon.
 
-	<img src="../../boards/boards/media/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" />  
+    :::image type="content" source="../../boards/boards/media/kanban-card-customize-open-settings.png" alt-text="Kanban board, open common configuration settings":::   
 
 	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the team Kanban boards and CFD charts.  
 
 2. Select **Cumulative flow** and specify the team's preferences.  
 
-	<img src="media/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" />  
-
+    :::image type="content" source="media/cfd-configure-common-settings.png" alt-text="Kanban board, Common configuration dialog, Cumulative flow":::
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 
@@ -307,8 +306,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
    - Swimlanes
    - Time period
 
-	<img src="media/cfd-configure.png" alt="Configure CFD chart" />   
-
+    :::image type="content" source="media/cfd-configure.png" alt-text="Configure CFD chart":::
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -325,8 +323,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
    - Swimlanes
    - Time period
 
-	<img src="media/cfd-configure.png" alt="Configure CFD chart" />   
-
+    :::image type="content" source="media/cfd-configure.png" alt-text="Configure CFD chart":::
 ::: moniker-end
 
 <a id="configure-widget" /> 
@@ -346,8 +343,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 2. Select **Save** when done. The following image shows an example CFD chart showing 30 days of data. 
    
-	<img src="media/cfd-exampe-rolling-30-days.png" alt="Example CFD chart, rolling 30 days" />    
-
+    :::image type="content" source="media/cfd-exampe-rolling-30-days.png" alt-text="Example CFD chart, rolling 30 days":::
 ::: moniker-end
 
 
