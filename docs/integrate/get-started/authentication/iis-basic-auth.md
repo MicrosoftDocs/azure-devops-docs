@@ -22,6 +22,7 @@ For example, if you use a PAT to allow a third-party app to retrieve bug informa
 
 > [!WARNING]
 > If you use Git with IIS Basic Authentication, Git breaks because it requires PATs for user authentication. Although we don't recommend you use IIS Basic Authentication, by adding an extra header to Git requests, you can use Git with IIS Basic Authentication.
+>
 > The extra header must be used for all Azure DevOps Server installations, as Windows Auth also prevents using PATs.
 
 The extra header must include a base 64 encoding of "user:PAT". See the following format and example.
