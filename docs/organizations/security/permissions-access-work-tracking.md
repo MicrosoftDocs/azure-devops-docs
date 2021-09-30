@@ -330,7 +330,7 @@ The following table summarizes a subset of the default permissions assigned to t
 :::row-end:::
 :::row:::
    :::column span="1":::
-   [Add and edit dashboards](/azure/devops/report/dashboards/dashboards)
+   [Add and edit dashboards](../../report/dashboards/dashboards.md)
    :::column-end:::
    :::column span="1":::
    &nbsp;&nbsp;
@@ -390,4 +390,4 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 - [Get started as a Stakeholder](get-started-stakeholder.md)  
 - [Add another team](../../organizations/settings/add-teams.md)  
 - [Manage teams and configure team tools](../settings/manage-teams.md)
-- [Work item form IndexDB caching issues](../settings/work/troubleshoot-work-item-form-caching-issues.md)  
+- [Work item form IndexDB caching issues](../settings/work/troubleshoot-work-item-form-caching-issues.md)

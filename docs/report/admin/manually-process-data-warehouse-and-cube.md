@@ -1,25 +1,28 @@
 ---
-title: Process data warehouse and analysis services cube
+title: Manually process data warehouse and analysis services cube
 titleSuffix: Azure DevOps Server
-description: Manually process the data warehouse and analysis services cube when connecting to an on-premises Team Foundation Server 
+description: Learn how to manually process the data warehouse and analysis services cube when connecting to Azure DevOps Server. 
 ms.assetid: 81EDA53E-88A5-46E2-952B-2D6E1FBA33E2  
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< azure-devops' 
-ms.date: 11/19/2020
+ms.date: 09/23/2021
 ---
 
 # Manually process the data warehouse and analysis services cube for Azure DevOps
 
 [!INCLUDE [temp](../includes/tfs-report-platform-version.md)] 
 
-When you need the freshest data in your reports, when errors have occurred, or after you've resolved schema conflicts, you can manually process the Team Foundation Server (TFS) relational database (Tfs\_Warehouse) or SQL Server Analysis Services cube (Tfs\_Analysis).
+ You can manually process the Team Foundation Server (TFS) relational database (Tfs\_Warehouse) or SQL Server Analysis Services cube (Tfs\_Analysis):
+- When you need the freshest data in your reports.
+- When errors have occurred.
+- After you've resolved schema conflicts.
 
-During typical operations, the warehouse is processed within two minutes of changes made to an operational store, and the cube is processed every two hours. By manually processing the warehouse, you help ensure that queries and reports are up-to-date with data that depends on the warehouse.
+During typical operations, the warehouse is processed within two minutes of changes made to an operational store, and the cube is processed every two hours. By manually processing the warehouse, you help ensure queries and reports are up to date with data that depends on the warehouse.
 
-You use the Warehouse Control Web Service to process the warehouse or cube or perform other maintenance operations. If you know that you want to perform a full rebuild of both databases, then use the [Administration console](rebuild-data-warehouse-and-cube.md) or the [TFSConfig RebuildWarehouse command](/previous-versions/visualstudio/visual-studio-2013/ee349264(v=vs.120)). 
+You use the Warehouse Control Web Service to process the warehouse or cube or carry out other maintenance operations. If you know that you want to do a full rebuild of both databases, then use the [Administration console](rebuild-data-warehouse-and-cube.md) or the [TFSConfig RebuildWarehouse command](/previous-versions/visualstudio/visual-studio-2013/ee349264(v=vs.120)). 
 
  ![Warehouse Control Web Services page](media/web-services.png)
 
@@ -37,7 +40,7 @@ Processing the warehouse or cube depends on how much data is involved; it can ta
 
 	Also, make sure that your server-level **Administer warehouse** permission must be set to **Allow**.
 
-2. Log on to the application-tier server and open the Warehouse Control Web Service by entering the following URL in a supported web browser:  
+2. Sign in to the application-tier server and open the Warehouse Control Web Service by entering the following URL in a supported web browser:  
 
 	::: moniker range=">= azure-devops-2019"
 	`http://localhost:8080/DefaultCollection/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx`  
@@ -48,7 +51,7 @@ Processing the warehouse or cube depends on how much data is involved; it can ta
     ```
 	For VirtualDirectory, type the IIS Virtual Directory that was specified when TFS was installed. By default, the virtual directory is **tfs**. 
 	::: moniker-end
-	If the project resides on a different project collection, specify the name of the collection in place of *DefaultCollection*.  
+	If the project is on a different project collection, specify the name of the collection in place of *DefaultCollection*.  
 
 3. The **WarehouseControlWebService** page opens.
 
@@ -66,7 +69,7 @@ A new browser window opens. It indicates the following job's processing status:
 * **Full Analysis Database Sync**  
 * **Incremental Analysis Database Sync**  
 
-And, the status for the following jobs for each team project collection are provided:
+And, the status for the following jobs for each team project collection is provided:
 
 * **Build Warehouse Sync**  
 * **Common Structures Warehouse Sync**  
@@ -80,7 +83,7 @@ A value of **Idle** indicates that the synchronization job is currently not runn
 
 1. Choose **ProcessWarehouse**, and optionally specify the team project collection to process. If you leave **collectionName** blank, all collections are processed. 
 
-	The service returns **True** when it successfully starts the processing of the warehouse and **False** if it is not successful. A value of **False** indicates that the warehouse is currently being processed.
+	The service returns **True** when it successfully starts the processing of the warehouse and **False** if it isn't successful. A value of **False** indicates that the warehouse is currently being processed.
 
 2. To determine the processing status of the warehouse choose **GetProcessingStatus** as described earlier in to [check the process status](#to-check-the-process-status).
 
@@ -94,9 +97,9 @@ A value of **Idle** indicates that the synchronization job is currently not runn
 
 	If you specify **Incremental**, data is processed only if it has been added since the most recent processing. 
 
-	If you specify **Full**, all data is processed as if the warehouse were being rebuilt. Full processes take longer to perform and should be performed only when required (for example, when a team project or project collection has been removed or deleted).
+	If you specify **Full**, all data is processed as if the warehouse were being rebuilt. Full processes take longer to carry out. Only do them when they're required. For example, when a team project or project collection has been removed or deleted, do a full process.
 
-	The service returns **True** when it successfully starts the processing of the cube and **False** if it is not successful. A value of **False** indicates that the cube is currently being processed.
+	The service returns **True** when it successfully starts the processing of the cube and **False** if it isn't successful. A value of **False** indicates that the cube is currently being processed.
 
 3. To determine the processing status of the warehouse choose **GetProcessingStatus** as described earlier in [to check the process status](#to-check-the-process-status).
 
@@ -123,7 +126,7 @@ Microsoft.TeamFoundation.Warehouse.WarehouseException: File system error: A stri
 Physical file: \?\I:\OLAP\Data\Tfs_Analysis.0.db\vDimWorkItemOverlay.5.dim\7.WorkItemSK.asstore.
 ``` 
 
-This service changes the StringStoresCompatibilityLevel to 1100 for the **Work Item** dimension and performs a full cube reprocess.
+This service changes the StringStoresCompatibilityLevel to 1100 for the **Work Item** dimension and carries out a full cube reprocess.
 
 1. From the Warehouse Control Web Service, choose **ProcessDimensionsForExpandedCapacity**.  
 
@@ -148,7 +151,7 @@ Physical file: \\?\E:\OLAP\Data\TFS_Analysis.0.db\File.0.dim\232.FileSK.asstore.
 ```
 
 
-This service changes the StringStoresCompatibilityLevel to 1100 for the **Version Control**  dimension and performs a full cube reprocess.
+This service changes the StringStoresCompatibilityLevel to 1100 for the **Version Control**  dimension and carries out a full cube reprocess.
 
 1. From the Warehouse Control Web Service, choose **ProcessDimensionsForExpandedCapacity**.  
 
@@ -163,10 +166,10 @@ This service changes the StringStoresCompatibilityLevel to 1100 for the **Versio
 ## Related notes  
 You should process a database manually for one of the following reasons:
 
-* Incrementally process the cube when reports don't show the latest data and you need them up-to-date for an upcoming meeting.  
+* Incrementally process the cube when reports don't show the latest data and you need them up to date for an upcoming meeting.  
 * Process each team project collection within the data warehouse to verify resolution of all [schema conflicts](resolve-schema-conflicts.md).  
 * Process each team project collection within the data warehouse to collect information to diagnose issues appearing in the event viewer related to warehouse jobs.  
 
-Perform a [full rebuild of the warehouse and cube](rebuild-data-warehouse-and-cube.md) when you move, restore, rename, or fail over the TFS data-tier server.
+Do a [full rebuild of the warehouse and cube](rebuild-data-warehouse-and-cube.md) when you move, restore, rename, or fail over the TFS data-tier server.
 
 As needed, [change the refresh processing interval or other processing parameters](change-a-process-control-setting.md).
