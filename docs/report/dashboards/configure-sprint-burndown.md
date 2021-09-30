@@ -153,7 +153,7 @@ The Analytics-based Sprint Burndown widget provides an easy way to monitor progr
 > [!div class="mx-imgBorder"] 
 > ![Sprint Burndown Widget - Sprint Burndown Example](media/sprint-burndown/sprint-burndown-widget.png)
 
-The charts provide useful metrics to help you answer the question: *Are we on track to complete this set of work by the end a sprint?*:
+The charts provide useful metrics to help you answer the question: *Are we on track to complete this set of work by the end a sprint?*
 * Percentage work complete
 * Number of work items not estimated (if using a field other than Remaining Work)
 * Average burndown
@@ -426,7 +426,7 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 	> [!div class="mx-imgBorder"]  
 	> ![Add widget dialog, filter by sprint burndown](media/burndown/add-sprint-burndown-widget-devops.png)  
  
-	1. To configure the widget, select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option. 
+1. To configure the widget, select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Configure dialog](media/add-widgets/configure-widget.png) 

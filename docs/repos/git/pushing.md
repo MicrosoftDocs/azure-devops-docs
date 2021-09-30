@@ -11,7 +11,8 @@ monikerRange: '<= azure-devops'
 
 # Share code with push
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
+[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
 Share changes made in [commits](commits.md) and [branches](./create-branch.md) using the `push` command.
 Push your branches to the remote repository. Git adds your commits to an existing branch on the remote or creates a new branch with the same commits as your local branch.
@@ -55,10 +56,12 @@ In this tutorial you learn how to:
    > Go to **Team Explorer** > **Settings** > **Repository Settings**. Make sure that you've entered the correct **User**, **Email**, **Remotes**, and other settings.
 
 #### [Command Line](#tab/command-line/)
+
 The `push` command updates the remote branch on `origin` with the commits from your local branch.
 
-```cmd
-git push
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git push
 ```
 
 When you run `git push`, you'll see output similar to the following example:
@@ -76,8 +79,9 @@ remote: Storing index... done (53 ms)
 
 If the remote branch doesn't exist, run the following command to create a remote branch on `origin`.
 
-```cmd
-git push -u origin users/frank/bugfix
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git push -u origin users/frank/bugfix
 ```
 
 The command adds your commits from your local branch to the branch on `origin`. This command sets up an upstream tracking relationship in
