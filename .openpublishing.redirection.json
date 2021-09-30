@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/artifacts/nuget/bootstrap-nuget.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/nuget/bootstrap-nuget",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/pipelines/apps/windows/universal.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/apps/windows/universal",
       "redirect_document_id": false
@@ -12107,6 +12112,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/migrate/security-validation-cicd-pipeline.md",
+      "redirect_url": "/azure/devops/pipelines/security/overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/articles/phase-rollout-with-rings.md",
       "redirect_url": "/azure/devops/migrate/phase-rollout-with-rings",
       "redirect_document_id": false
@@ -18244,7 +18254,22 @@
       "source_path": "docs/test/preview/new-test-plan-page.md",
       "redirect_url": "/azure/devops/test/navigate-test-plans",
       "redirect_document_id": false
-    } 
+    },
+    {
+      "source_path": "docs/repos/git/overview-2013.md",
+      "redirect_url": "/azure/devops/repos//get-started/what-is-repos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/get-started-vs2013.md",
+      "redirect_url": "/azure/devops/repos/git/gitquickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/gitquickstart-vs2015.md",
+      "redirect_url": "/azure/devops/repos/git/gitquickstart",
+      "redirect_document_id": false
+    }
   ]
 }
 

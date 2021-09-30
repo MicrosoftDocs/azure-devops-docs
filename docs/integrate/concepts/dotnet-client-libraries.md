@@ -154,7 +154,7 @@ Further authentication samples can be found on our [.NET Samples Page](../get-st
 
 ## Reference
 
-For more information and for up-to-date reference documentation, see the [.NET API browser](https://docs.microsoft.com/dotnet/api/).
+For more information and for up-to-date reference documentation, see the [.NET API browser](/dotnet/api/).
 
 ## Samples
 

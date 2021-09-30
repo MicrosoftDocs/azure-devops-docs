@@ -36,7 +36,7 @@ You access Azure DevOps services through the left pane, as shown in the followin
       - [Repos](..//repos/get-started/what-is-repos.md)
       - [Pipelines](../pipelines/get-started/pipelines-get-started.md)
       - [Test Plans](../test/overview.md)
-      - [Artifacts](../artifacts/overview.md)
+      - [Artifacts](../artifacts/start-using-azure-artifacts.md)
    :::column-end:::
 :::row-end:::
 ---
@@ -354,4 +354,3 @@ There are features and tasks associated with administering a collaborative softw
 - [Software development roles](roles.md)  
 - [Azure DevOps pricing](https://visualstudio.microsoft.com/team-services/pricing/)
 - [Azure DevOps data protection overview](../organizations/security/data-protection.md)
- 

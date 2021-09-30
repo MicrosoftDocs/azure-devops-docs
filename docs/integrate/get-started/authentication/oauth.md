@@ -273,7 +273,7 @@ A: No. OAuth is only supported in the REST APIs at this point.
 
 ### Q: How can I get attachments detail for my work item using Azure DevOps REST APIs?
 
-A: First, get the work item details with [Work items - Get work item](https://docs.microsoft.com/rest/api/azure/devops/wit/work-items?view=azure-devops-rest-6.1&preserve-view=true) REST API:
+A: First, get the work item details with [Work items - Get work item](/rest/api/azure/devops/wit/work-items?preserve-view=true&view=azure-devops-rest-6.1) REST API:
 
 ```REST
 GET https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/{id}

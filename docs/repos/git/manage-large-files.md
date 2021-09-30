@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Manage and store large files in Git
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 
 Git is great at keeping the footprint of your source code small because the differences between versions are easily picked out and code is easily compressed. 
 Large files that don't compress well and change entirely between versions (such as binaries) present problems when stored in your Git repos. 
@@ -27,7 +27,7 @@ If many versions of these files exist in your repo, they will dramatically incre
 
 As your team works with editors and tools to create and update files, you should put these files into Git so your team can enjoy the benefits of Git's workflow.
 Don't commit other types of files, such as DLLs, library files, and other dependencies that aren't created by your team but your code depends on into your repo. Deliver these files 
-through [package management](../../artifacts/overview.md) to your systems. 
+through [package management](../../artifacts/start-using-azure-artifacts.md) to your systems. 
 
 Package management bundles your dependencies and installs the files on your system when you deploy the package. 
 Packages are versioned to ensure that code tested in one environment runs the same in another environment as long as they have the same installed packages. 

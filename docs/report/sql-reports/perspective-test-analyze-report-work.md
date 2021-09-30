@@ -1,6 +1,6 @@
 ---
 title: Analyze work items and test case data
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Analyze current or historical data for work items and test cases by using Work Item perspective   
@@ -15,7 +15,7 @@ ms.date: 10/17/2017
 
 [!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
-You can analyze current or historical data for work items and test cases by using the measures, dimensions, and attributes that are defined for the Work Item perspective in the SQL Server Analysis Services cube for Visual Studio Team Foundation Server. A test case is a type of work item that is associated within its own dimension and used specifically to support Microsoft Test Manager. For more information, see [Create your tests](../../test/create-test-cases.md).  
+You can analyze current or historical data for work items and test cases by using the measures, dimensions, and attributes that are defined for the Work Item perspective in the SQL Server Analysis Services cube for Azure DevOps Server. A test case is a type of work item that is associated within its own dimension and used specifically to support Azure Test Plans. For more information, see [Create your tests](../../test/create-test-cases.md).  
   
  The Work Item perspective is based on the relational tables that enable reporting on work items as either a property of the work item or a linked work item. For more information, see [Work Item History tables](work-item-history-tables.md).  
   
@@ -30,14 +30,15 @@ By using the Work Item perspective, you can create reports that answer the follo
 - How many scenarios were active each month during the last year?  
 - How many bugs of each priority have been active each day in the last month?  
 - How much outstanding and remaining work has a set of work items had over the last month?  
--  How much work did a particular group of developers finish?  
--  How much additional work was created after a particular date?   
+- How much work did a particular group of developers finish?  
+- How much additional work was created after a particular date?   
 
 > [!NOTE]  
 > If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups in the whole Team System cube.
   
 <a name="example_trend"></a> 
-##  Example: Bug Reactivations Report  
+
+## Example: Bug Reactivations Report  
 
 By using PivotChart reports in Excel, you can display the number of bugs that were closed and then reactivated over time, similar to the data in the following illustration.  
   
@@ -46,11 +47,12 @@ By using PivotChart reports in Excel, you can display the number of bugs that we
  The process templates for [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) include the Bug Reactivations report in Excel. For more information, see [Bug Reactivations](/previous-versions/azure/devops/report/excel/bug-reactivations-excel-report).  
   
 ### Select and filter pivot fields  
- ![Pivot Fields for Bug Reactivations Report](media/alm_rpt_pivot_bugreactivations.png "ALM_RPT_Pivot_BugReactivations")  
+
+![Pivot Fields for Bug Reactivations Report](media/alm_rpt_pivot_bugreactivations.png "ALM_RPT_Pivot_BugReactivations")  
   
- You can create a bug reactivations report by performing the following steps:  
+You can create a bug reactivations report by performing the following steps:  
   
-1.  In Excel, connect to the Analysis Services cube for Team Foundation Server, and insert a PivotChart report.  
+1.  In Excel, connect to the Analysis Services cube for Azure DevOps Server, and insert a PivotChart report.  
   
      For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
   
@@ -83,8 +85,10 @@ By using PivotChart reports in Excel, you can display the number of bugs that we
 10. (Optional) Right-click any filter that appears on the chart, and then choose **Hide All Field Buttons on Chart**.  
   
 <a name="measures"></a> 
+
 ##  Work item measures  
- The following table describes the measures that you can use to filter or report on the status or progress of work. With the Work Item Count measure, you can report on the total number of work items in a particular state at a particular point in time. To report activity that occurred on a particular day, you can use the State Change Count or Revision Count measures. The Work Item measure group contains additional measures when custom fields in the definitions of work item types specify `Measure` as the reportable attribute. For more information about how to use the `reportable` attribute, which is optional, and its values, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).  
+
+The following table describes the measures that you can use to filter or report on the status or progress of work. With the Work Item Count measure, you can report on the total number of work items in a particular state at a particular point in time. To report activity that occurred on a particular day, you can use the State Change Count or Revision Count measures. The Work Item measure group contains additional measures when custom fields in the definitions of work item types specify `Measure` as the reportable attribute. For more information about how to use the `reportable` attribute, which is optional, and its values, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).  
   
 > [!NOTE]  
 > The Agile and CMMI process templates include calculated measures that are associated with the scheduling work fields. When a measure in the cube is based on a field in a process template, the label for the measure is based on the reference name of the originating field. However, a localized translation appears for the measure labels when you browse the cube with Excel or other reporting tools.  
@@ -102,8 +106,9 @@ By using PivotChart reports in Excel, you can display the number of bugs that we
 |Story Points|A subjective unit of measure that captures the size of a user story. If you assign more points to a user story, you indicate that it requires more work to implement. This field is defined only in the MSF process templates for Agile software development. The reference name of this measure is Microsoft.VSTS.Scheduling.StoryPoints.|  
 |Work Item Count|The count of work items that is based on the dimensions or filters that you specify. If your filter includes a date dimension, the measure returns historical information. Otherwise, the measure returns current information.|  
   
-### Hidden measures  
- To build the calculations that provide point-in-time totals, several hidden measures are used. These measures are not exposed to client tools such as Microsoft Excel, Report Builder, or Report Designer, but the measures are present in definitions in the deployed cube. Hidden measures perform a calculation by using the Multidimensional Expressions (MDX) LastChild function, which aggregates the total for the measure as of a particular date.  
+### Hidden measures 
+ 
+To build the calculations that provide point-in-time totals, several hidden measures are used. These measures are not exposed to client tools such as Microsoft Excel, Report Builder, or Report Designer, but the measures are present in definitions in the deployed cube. Hidden measures perform a calculation by using the Multidimensional Expressions (MDX) LastChild function, which aggregates the total for the measure as of a particular date.  
   
 |**Measure**|**Description**|  
 |-----------------|---------------------|  
@@ -113,7 +118,8 @@ By using PivotChart reports in Excel, you can display the number of bugs that we
 |LastChild Microsoft_VSTS_Scheduling_BaselineWork|A hidden measure that is used to calculate the Baseline Work measure.|  
   
 <a name="filters"></a> 
-##  Date and numeric filters  
+
+## Date and numeric filters  
 
 You can use **Date Filters** and **Numeric Filters** to filter a report based on one or more values in this set. These filters appear under the measure group that is labeled **Values**. You can use the selections within each group to filter the set of work items. You should not add them to the PivotTable report directly. Instead, you filter the rows or columns within the PivotTable report by performing the following steps:  
   
@@ -146,9 +152,12 @@ You can use **Date Filters** and **Numeric Filters** to filter a report based on
 |Priority|A subjective rating of the bug, issue, task, or test case as it relates to the business, usually between the values of 1 and 3. This filter corresponds to the Microsoft.VSTS.Common.Priority field.|  
 |Rev|A number that is assigned to a revision of a work item. This filter corresponds to the System.Rev field.|  
 |Stack Rank|A subjective rating of the user story, task, issue, or bug compared to other work items of the same type. An item that is assigned a lower number should be fixed before an item that is assigned a higher number. This filter corresponds to the Microsoft.VSTS.Common.StackRank field.|  
-  
-##  <a name="dimensions"></a> Dimensions, Attributes, Filters, and Categories in the Work Item Perspective  
- You can combine attributes across several dimensions to filter the set of work items that appear in a report or to highlight specific details about a group of work items. These attributes correspond to all the fields for any type of work item that have the reportable attribute set to `Dimension`. You can filter based on field attributes by work item, test case, linked work item, or linked test case. You can also filter the set of work items based on the type or types of links between them.  
+
+<a name="dimensions"></a> 
+
+## Dimensions, Attributes, Filters, and Categories in the Work Item Perspective  
+
+You can combine attributes across several dimensions to filter the set of work items that appear in a report or to highlight specific details about a group of work items. These attributes correspond to all the fields for any type of work item that have the reportable attribute set to `Dimension`. You can filter based on field attributes by work item, test case, linked work item, or linked test case. You can also filter the set of work items based on the type or types of links between them.  
   
  When you choose **Work Item** in the **Show fields related to** combo box in Excel, you have access not only to the Test Case, Work Item, and Work Item Category dimensions but also the Date and Team Project shared dimensions. Choose **Work Item** when you want to analyze work items or test cases and filter by date, project collection, project, or work item category. For information about the Date and Team Project dimensions, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).  
   
@@ -158,7 +167,8 @@ You can use **Date Filters** and **Numeric Filters** to filter a report based on
  To create reports about the status of current work items, you choose **Current Work Item** in the combo box. This combination of dimensions does not contain the Date dimension. To analyze the historical data of work items in a trend report, choose **Work Item** in the combo box.  
   
 <a name="work_Item_field"></a> 
-###  Filter by Work Item Fields Under the Work Item Dimension  
+
+### Filter by Work Item Fields Under the Work Item Dimension  
 
  The Work Item and Test Case dimensions contain all attributes that are specific to work items, such as State, Work Item Type, and Work Item ID. Additionally, work item fields in process templates that have the reportable attribute set to "`Dimension`" are reflected as attributes in the Work Item dimension.  
   
@@ -200,11 +210,15 @@ For information about each field, see <a href="../../boards/work-items/guidance/
 |Previous State|The only field under **More fields** is **Previous State**, which you can use to filter a report based on the State to which a work item was assigned before it was assigned to its current state. State is an attribute of the workflow for a type of work item. For more information, see [Change the workflow](../../reference/xml/change-workflow-wit.md).|  
   
 <a name="linked_work_item"></a> 
+
 ###  Filter by Link Type or Fields That Are Defined for a Linked Work Item  
- When you choose the **Linked Current Work Item** entry in the **Show fields related to** combo box, you gain access to the Work Item, Work Item Link Type, and Work Item Linked dimensions. Choose this entry when you want to filter the set of work items in a report based on the link type or values of fields in work items that are linked to other work items.  
+
+When you choose the **Linked Current Work Item** entry in the **Show fields related to** combo box, you gain access to the Work Item, Work Item Link Type, and Work Item Linked dimensions. Choose this entry when you want to filter the set of work items in a report based on the link type or values of fields in work items that are linked to other work items.  
   
-<a name="linktype_attribute"></a> 
-####  Filter Based on an Attribute of a Link Type  
+<a name="linktype_attribute"></a>
+ 
+####  Filter based on an attribute of a link type 
+ 
  By specifying one or more of the attributes in the following table, you can filter work items that have at least one link relationship whose link type meets the criteria that you specify. For more information, see [LinkTypes](../../reference/xml/link-type-element-reference.md) and [Manage link types](../../reference/witadmin/manage-link-types.md).  
   
 > [!NOTE]  
@@ -225,7 +239,9 @@ For information about each field, see <a href="../../boards/work-items/guidance/
 |Reference Name|The name that is assigned to the link type. For example, System.LinkTypes.Related is the reference name of the Related link type.|  
 |Rules|The system assigns values to the rules that the link type uses. Do not use this attribute.|  
   
-####  <a name="work_item_linked"></a> Filter Based on an Attribute of the Linked Work Item  
+<a name="work_item_linked"></a> 
+
+#### Filter Based on an Attribute of the Linked Work Item  
  The Work Item Linked dimension contains the same set of attributes as the Test Case and Work Item dimensions. You can use these attributes to find work items or filter measures based on attributes of work items that are linked to the work items that you are analyzing. By running this type of query, you can answer questions such as "How many active bugs are linked to priority 1 user stories?"  
   
 > [!NOTE]
@@ -235,8 +251,10 @@ For information about each field, see <a href="../../boards/work-items/guidance/
   
  If a dimension corresponds to the attributes of links between work items, the name of the dimension is prefixed with the phrase "Work Item Linked." For example, the "Assigned To" attribute corresponds to the "Work Item Linked.Assigned To" attribute and so on for all other work item fields in the OLAP cube. For more information, see [Filter by Work Item Fields Under the Work Item Dimension](#work_Item_field) earlier in this article.  
   
-<a name="changeset"></a> 
-###  Filter By Changesets  
+<a name="changeset"></a>
+ 
+### Filter By Changesets  
+
 You choose the **Work Item Changeset** entry in the combo box to access the Version Control Changeset and Work Item dimensions. Choose this entry when you want to filter the set of work items by information in the changesets that are linked to the work items. When you make and check in changes to the code by using TFVC, you can associate the changeset with the work item that the changes address. A changeset lists the source files that you checked in for the changeset and a list of all work items that you linked to the changeset. For more information, see [Check in your work to the team's codebase](../../repos/tfvc/check-your-work-team-codebase.md).  
   
  The Version Control Changeset dimension is a parent-child dimension type and linked to the Current Work Item fact table through an intermediate, many-to-many fact table. Team members can link any work item to more than one changeset. The following table describes the attributes in the Version Control Changeset dimension.  
@@ -249,8 +267,10 @@ You choose the **Work Item Changeset** entry in the combo box to access the Vers
 |Policy Override Comment|The comment that is provided when a policy is overridden. If a policy was not overridden with a changeset, the field is null.|  
   
 <a name="category"></a> 
+
 ###  Filter By category  
- The **Work Item to Category** entry in the combo box contains the Work Item and Work Item Category dimensions. Choose this entry when you want to filter the set of work items by their associated categories. You use categories when your team projects contain types of work item that are similar but named differently. For more information, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md).  
+
+The **Work Item to Category** entry in the combo box contains the Work Item and Work Item Category dimensions. Choose this entry when you want to filter the set of work items by their associated categories. You use categories when your team projects contain types of work item that are similar but named differently. For more information, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md).  
   
  The following table describes the attributes in the Work Item Category dimension.  
   
@@ -259,8 +279,12 @@ You choose the **Work Item Changeset** entry in the combo box to access the Vers
 |Name|The friendly name that is assigned to the category of a work item.|  
 |Reference Name|The reference name that is assigned to the category of a work item.|  
   
-###  <a name="tree"></a> Filter By Hierarchical Relationships  
- The **Work Item to Tree** entry in the combo box contains the Work Item and Work Item Tree dimensions. Choose this entry when you want to filter by hierarchical nesting of work items that are linked by using the Parent and Child types of links or other custom-defined types of tree-topology links.  
+
+<a name="tree"></a> 
+
+### Filter By Hierarchical Relationships  
+
+The **Work Item to Tree** entry in the combo box contains the Work Item and Work Item Tree dimensions. Choose this entry when you want to filter by hierarchical nesting of work items that are linked by using the Parent and Child types of links or other custom-defined types of tree-topology links.  
   
 > [!NOTE]   
 >  You can use the Work Item Tree dimension to filter reports about current work items only. You cannot use this dimension to analyze historical data about work items.  
@@ -277,13 +301,19 @@ You choose the **Work Item Changeset** entry in the combo box to access the Vers
 |---------------|-----------------|  
 |Work Item Tree Hierarchy|Work items that are linked through hierarchical link types.|  
 |Tree Type Name|The reference name of the hierarchical link type (for example System.LinkTypes.Hierarchy). You can filter the report based on a hierarchical type of link that is used within a team project collection. To filter the report based on the forward or reverse name of a type of link, use the Link Name attribute that the Work Item Link Type dimension provides.|  
-  
-###  <a name="test_result"></a> Filter By Test Result  
- The **Work Item with Result** entry in the combo box contains the Test Result, Version Control Changeset, Work Item, Work Item Category, and Work Item Tree dimensions. You can use the attributes in the Test Result dimension to filter reports based on the test results that are associated with test cases and their linked work items.  
+
+
+<a name="test_result"></a> 
+
+###  Filter By Test Result  
+
+The **Work Item with Result** entry in the combo box contains the Test Result, Version Control Changeset, Work Item, Work Item Category, and Work Item Tree dimensions. You can use the attributes in the Test Result dimension to filter reports based on the test results that are associated with test cases and their linked work items.  
   
  You can use the Work Item Count measure not only to determine how many work items are linked to a test result but also to report on work items and their associated test results. For a description of each Test Result attribute, see [Test results](perspective-test-analyze-report-test-results.md).  
-  
-##  <a name="tracking"></a> Required Activities to Monitor and Track Work  
+
+<a name="tracking"></a> 
+
+## Required Activities to Monitor and Track Work  
  To create reports that contain useful data about the status, progress, and trends about work items, team members must perform the following activities:  
   
 -   **Create work items**. Team members must create work items to manage the backlog of user stories or bugs, to track work by using tasks, and to manage test cases. Update the state of work items based on the process guidance for each type of work item.  
@@ -299,7 +329,9 @@ You choose the **Work Item Changeset** entry in the combo box to access the Vers
 -   **Assign work to owners and update the work item State**. As work progresses, team members must change the State of the work items that are assigned to them as the work items move from a new or proposed state, to active or in progress, to closed or done  
   
 -   **Update the work effort**. To monitor progress that a team has made in completing work for an iteration or other interval of time, team members must update the amount of completed and remaining work for the work items that are assigned to them.  
-  
-## Related notes 
+
+ 
+## Related articles
+
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)   
 -  [Perspectives and measure groups in the Analysis Services cube](perspective-measure-groups-cube.md)
