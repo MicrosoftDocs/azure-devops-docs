@@ -90,7 +90,7 @@ When you want to access secrets:
 
 | Parameter | Description |
 | --------- | ----------- |
-|`ConnectedServiceName`<r/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
+|`ConnectedServiceName`<br/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
 |`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
 |`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded or `*` to download all secrets from the selected key vault. <br/>Default value: `*`|
 
