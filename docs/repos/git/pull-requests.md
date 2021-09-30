@@ -214,6 +214,7 @@ Starting with Visual Studio 2017 Update 6, you can check out the source branch f
 
 ::: moniker range=">=azure-devops-2019"
 
+<a name="draft-pull-requests"></a>
 ## Create draft PRs
 
 ::: moniker-end
