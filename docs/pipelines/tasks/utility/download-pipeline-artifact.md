@@ -41,11 +41,13 @@ Use this task to download pipeline artifacts from earlier stages in this pipelin
 | `runBranch`<br/>Branch Name | Specify to filter on branch/ref name. For example: `refs/heads/develop`. <br/>Default value: `refs/heads/master` <br/>Argument aliases: `branchName` |
 | `runId`<br/>Build | (Required) The build from which to download the artifacts. For example: `1764` <br/>Argument aliases: `pipelineId`, `buildId` |
 | `tags`<br/>Build Tags | (Optional) A comma-delimited list of tags. Only builds with these tags will be returned. |
-| `allowPartiallySucceededBuilds`<br/>Download artifacts from partially succeeded builds | (Optional) If checked, this build task will try to download artifacts whether the build is succeeded or partially succeeded <br/>Default value: false |
-| `allowFailedBuilds`<br/>Download artifacts from failed builds | (Optional) If checked, this build task will try to download artifacts whether the build is succeeded or failed <br/>Default value: false |
+| `allowPartiallySucceededBuilds`<br/>Download artifacts from partially succeeded builds | (Optional) If checked, this build task will try to download artifacts whether the build is succeeded or partially succeeded <br/>Default value: `false` |
+| `allowFailedBuilds`<br/>Download artifacts from failed builds | (Optional) If checked, this build task will try to download artifacts whether the build is succeeded or failed <br/>Default value: `false` |
 | `artifact`<br/>Artifact Name | (Optional) The name of the artifact to download. If left empty, all artifacts associated to the pipeline run will be downloaded. <br/>Argument aliases: `artifactName` |
 | `patterns`<br/>Matching Patterns | (Optional) One or more file matching patterns (new line delimited) that limit which files get downloaded. [More Information on file matching patterns](../file-matching-patterns.md) <br/>Default value: *\*<br/>Argument aliases: `itemPattern` |
 | `path`<br/>Destination Directory | (Required) Directory to download the artifact files. Can be relative to the pipeline workspace directory or absolute. If multi-download option is applied (by leaving an empty artifact name), a sub-directory will be created for each. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). <br/>Default value: $(Pipeline.Workspace) <br/>Argument aliases: `targetPath`, `downloadPath` |
+| `checkDownloadedFiles`<br/>Check downloaded files | (Optional) If checked, this build task will check that all files are fully downloaded. <br/>Default value: `false` |
+| `retryDownloadCount`<br/>Retry count | (Optional) Number of times to retry downloading a build artifact if the download fails. <br/>Default value: `4` |
 
 > [!NOTE]
 > If you want to consume artifacts as part of CI/CD flow, refer to the download shortcut [here](../../yaml-schema.md#download).

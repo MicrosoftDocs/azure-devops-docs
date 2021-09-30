@@ -280,12 +280,10 @@ Since repositories and build and release pipelines pose unique security challeng
 - [Security through templates](../../pipelines/security/templates.md)
 - [How to securely use variables and parameters in your pipeline](../../pipelines/security/inputs.md)
 - [Recommendations to secure shared infrastructure in Azure Pipelines](../../pipelines/security/infrastructure.md)
-- [Other security considerations](../../pipelines/security/misc.md)
-- [Add continuous security validation](../../migrate/security-validation-cicd-pipeline.md)  
+- [Other security considerations](../../pipelines/security/misc.md) 
 
+## Next steps
 
- 
-## Next steps 
 > [!div class="nextstepaction"]
 > [Permissions and groups reference](permissions.md)
 

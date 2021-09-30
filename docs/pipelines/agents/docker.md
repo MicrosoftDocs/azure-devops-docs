@@ -443,7 +443,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
        spec:
          containers:
          - name: kubepodcreation
-           image: AKRTestcase.azurecr.io/kubepodcreation:5306
+           image: <acr-server>/dockeragent:latest
            env:
              - name: AZP_URL
                valueFrom:

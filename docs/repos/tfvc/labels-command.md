@@ -25,7 +25,9 @@ tf labels [/owner:ownername] [/format:(brief|detailed)]
 [/collection:TeamProjectCollectionUrl] [labelname] [/login:username,[password]]
 ```
 
-## Parameters<table>
+## Parameters
+
+### Argument
 
 |**Argument**|**Description**|
 |---|---|
@@ -33,6 +35,9 @@ tf labels [/owner:ownername] [/format:(brief|detailed)]
 |*labelname*|Specifies a string that should be used to filter the list of labels. If this parameter is omitted, the label name field will not be filtered.|
 |*TeamProjectCollectionUrl*|The URL of the project collection for which you want to display the list of labels (for example, http://myserver:8080/tfs/DefaultCollection).|
 |*username*|Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName* or *UserName.*|
+
+
+### Option
 
 |   **Option**    |                                                                                                                                      **Description**                                                                                                                                       |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

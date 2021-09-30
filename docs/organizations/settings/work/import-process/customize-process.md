@@ -23,38 +23,62 @@ Azure DevOps Services supports adding and updating processes through an administ
 
 A process is a zip file that contains a set of interdependent files. These files define the building blocks of the work-item tracking system and other subsystems in Azure DevOps Services. Some building blocks update existing projects, while others apply only to new projects. See the following table for the full list of building blocks.
 
-<table>
-<tbody>
-<tr>
-<th>Used when importing/updating a process</th>
-<th>Used when creating a new project</th>
-<th>Replaced by system defaults</th>
-<th>Ignored </th><br/></tr>
-<tr valign="top">
-<td>
-<p>Work Item Tracking</p>
-<p>WITs</p>
-<p>Categories</p>
-<p>Process Configuration</p>
-</td>
-<td>
-<p>Areas and Iterations</p>
-<p>Test Management</p>
-<p>Work Items</p>
-<p>Work Item Queries</p>
-</td>
-<td>
-<p>Build</p>
-<p>Lab Management</p>
-<p>Version Control</p>
-</td>
-<td>
-<p>Microsoft Project Mappings</p>
-<p>Reports</p> 
-<p>Portal (SharePoint Products) </p>
-</td><br/></tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Used when importing/updating a process**
+   :::column-end:::
+   :::column span="1":::
+   **Used when creating a new project**
+   :::column-end:::
+   :::column span="1":::
+   **Replaced by system defaults**
+   :::column-end:::
+   :::column span="1":::
+   **Ignored** 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   Work Item Tracking  
+
+   WITs  
+
+   Categories  
+
+   Process Configuration  
+
+   :::column-end:::
+   :::column span="1":::
+   
+   Areas and Iterations  
+
+   Test Management  
+
+   Work Items  
+
+   Work Item Queries  
+
+   :::column-end:::
+   :::column span="1":::
+   
+   Build  
+
+   Lab Management  
+
+   Version Control  
+
+   :::column-end:::
+   :::column span="1":::
+   
+   Microsoft Project Mappings  
+
+   Reports  
+ 
+   Portal (SharePoint Products)   
+
+   :::column-end:::
+:::row-end:::
 
 ![Supported process plug-ins and objects for process import](media/ALM_IP_SupportedPlugins.png)
 
