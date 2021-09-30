@@ -26,22 +26,18 @@ The task is Node-based, and works with agents on Linux, macOS, and Windows.
 The task has the following Prerequisites:
 
 * An Azure subscription linked to Azure Pipelines or Team Foundation Server using the [Azure Resource Manager service connection](../../library/connect-to-azure.md).
-
 * An [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) containing the secrets.
 
 You can create a key vault:
 
 * In the [Azure portal](https://ms.portal.azure.com/#create/Microsoft.KeyVault)
-
 * By using [Azure PowerShell](/azure/key-vault/key-vault-get-started)
-
 * By using the [Azure CLI](/azure/key-vault/key-vault-manage-with-cli2)
 
 Add secrets to a key vault:
 
 * By using the PowerShell cmdlet [Set-AzureKeyVaultSecret](/powershell/module/azurerm.keyvault/set-azurekeyvaultsecret).
   If the secret does not exist, this cmdlet creates it. If the secret already exists, this cmdlet creates a new version of that secret.
-
 * By using the Azure CLI. To add a secret to a key vault, for example a secret named **SQLPassword** with the value **Pa$$w0rd**, type:
 
   ```azurecli
@@ -54,11 +50,8 @@ When you want to access secrets:
   on the vault. You can set these permissions in the [Azure portal](https://portal.azure.com):
 
   - Open the **Settings** blade for the vault, choose **Access policies**, then **Add new**.
-
   - In the **Add access policy** blade, choose **Select principal** and select the service principal for your client account.
-
   - In the **Add access policy** blade, choose **Secret permissions** and ensure that **Get** and **List** are checked (ticked).
-
   - Choose **OK** to save the changes.<p />
   
 > [!NOTE]
