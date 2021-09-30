@@ -1,6 +1,6 @@
 ---
 title: Azure Key Vault task
-description: Azure Key Vault task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
+description: Use the Azure Key Vault task in Azure Pipelines to use key vault secrets in your pipelines
 ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.topic: reference
 ms.custom: seodec18
@@ -123,12 +123,7 @@ $pfxPath = [Environment]::GetFolderPath("Desktop") + "\MyCert.pfx"
 [System.IO.File]::WriteAllBytes($pfxPath, $protectedCertificateBytes)
 ```
 
-For more details, see [Get started with Azure Key Vault certificates](/archive/blogs/kv/get-started-with-azure-key-vault-certificates).
-
-## Contact Information
-
-Contact [RM\_Customer\_Queries@microsoft.com](mailto:RM_Customer_Queries@microsoft.com) if you discover issues using the task, to share feedback about the task,
-or to suggest new features that you would like to see.
+For more information, see [Get started with Azure Key Vault certificates](/archive/blogs/kv/get-started-with-azure-key-vault-certificates).
 
 ## Open source
 
@@ -145,6 +140,6 @@ This occurs if the required permissions are missing in the Azure key vault. To r
 
 ### I can't connect with Key Vault from Azure DevOps.
 
-This happens when the Key Vault firewall isn't properly configured. Make sure that the agent pool and the Datacenter (TFS) can access the key vault. Ensure that the [agent IP ranges for Microsoft-hosted agents](../../agents/hosted.md#agent-ip-ranges) are allow listed.
+This happens when the Key Vault firewall isn't properly configured. Make sure that the agent pool and the Datacenter (TFS) can access the key vault. Ensure that the [agent IP ranges for Microsoft-hosted agents](../../agents/hosted.md#agent-ip-ranges) are allowed.
 
 <!-- ENDSECTION -->
