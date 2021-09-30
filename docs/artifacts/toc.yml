@@ -57,6 +57,8 @@
     - name: NuGet.org upstream source
       href: nuget/upstream-sources.md
       displayName: upstream sources, upstreams, artifact feeds 
+    - name: Publish from GitHub Actions
+      href: quickstarts/github-actions.md
   - name: Npm 
     items:
     - name: npm quickstart
