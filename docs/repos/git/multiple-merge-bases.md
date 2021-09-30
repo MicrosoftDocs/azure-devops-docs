@@ -1,29 +1,31 @@
 ---
-title: Multiple merge bases issue
+title: Multiple merge bases issue on PR file tab
 description: Getting warning about multiple merge bases in your pr
 ms.topic: article
 ms.technology: devops-code-git
 ms.date: 09/22/2021
 ---
 
-# Multiple merge bases issue
+# Multiple merge bases issue on PR file tab
 
-Pull request "Files" tab detecting diffs by three-side comparison. Algorithm takes into account last commit in target branch, last commit in source branch and their common merge base. It's fast, cost-efficient and reliable method of detecting changes. Unfortunately, is some cases there are more than one of true bases exist. Situation itself rare, but in large repositories with many active users it may be common.
-Most of the times multiple bases will be created in following cases:
+The **Files** tab in the **Pull Request** view detects diffs by three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their common merge base. It's a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there is more than one true base. In most repositories this situation is rare, but in large repositories with many active users it may be common.
+
+Multiple bases can be created in the following scenarios.
+
 - Process of cross-merges between different branches.
 - Active reuse of feature branches.
 - Handling aftermaths of main branch reverts.
 - Other non-intuitive and convoluted manipulations with reverts/cherry picks/merges.
 
-## What can go wrong?
+## Multiple merge base detection
 
-Multiple merge bases detection was added as a part of security awareness. If there are multiple merge bases, file-diff algorithm for UI may not properly detect file changes depending on which merge base was chosen. It will only happen if files affected in PR have different versions between those merge bases. 
+Multiple merge bases detection was added as a part of security awareness. If there are multiple merge bases, the file-diff algorithm for the UI may not properly detect file changes, depending on which merge base was chosen. The multiple merge base warning only happens if the files affected in PR have different versions between those merge bases. 
 
-## Possible problems
+## Security concerns when merging from multiple bases
 
-- Ill-intended user may abuse UI algorithm to commit malicious changes that wouldn't be present in pr.
-- If changes, presented in pr is already in target branch, they would be present in "files" tab. But they will not trigger some branch policies mapped to folder changes. Which may lead to some frustration?
-- If two developers done changes to same files it may not be present in the pr. That case may create treacherous logic gaps.
+- A malicious user could abuse the UI algorithm to commit malicious changes that wouldn't be present in the PR.
+- If changes proposed in the PR are already in the target branch, they would be displayed in the **Files** tab, but they may not trigger the branch policies mapped to folder changes.
+- If two developers make changes to the same files from multiple merge bases it may not be present in the pr. That case may create treacherous logic gaps.
 
 ## What to do?
 
