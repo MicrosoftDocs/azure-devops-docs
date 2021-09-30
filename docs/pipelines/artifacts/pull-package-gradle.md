@@ -50,7 +50,7 @@ Give your token a name, duration, and select the **Packaging (read and write)** 
 
 > You may have to choose "Show all scopes" at the bottom to see the Packaging area.
 
-![Create packaging personal access token](../media/create-packaging-pat.png)
+![Create packaging personal access token](media/create-packaging-pat.png)
 
 Click **Create**.
 
