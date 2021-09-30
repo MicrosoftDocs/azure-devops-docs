@@ -996,11 +996,9 @@
       href: /cli/azure/pipelines
 - name: Case studies & best practices
   items:
-    - name: Add continuous security validation
-      href: ../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
-    - name: Progressively expose releases using deployment rings
+    - name: Use deployment rings
       href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
-    - name: Progressively expose features in production
+    - name: Use feature flags
       href: https://docs.microsoft.com/devops/operate/progressive-experimentation-feature-flags?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
       displayName: feature-flags
 - name: Developer resources
