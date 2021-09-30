@@ -24,7 +24,9 @@ To use the **shelvesets** command, you must the have **Read** permission and the
 tf shelvesets [/owner:ownername] [/format:(brief|detailed)] [/collection:TeamProjectCollectionUrl]] [/login:username,[password]] shelvesetname
 ```
 
-## Parameters<table>
+## Parameters
+
+### Argument
 
 |**Argument**|**Description**|
 |---|---|
@@ -32,6 +34,8 @@ tf shelvesets [/owner:ownername] [/format:(brief|detailed)] [/collection:TeamPro
 |*shelvesetname*|The name of the shelveset.|
 |*TeamProjectCollectionUrl*|The URL of the project collection that contains a set of shelved changes about which you want to display information (for example, http://myserver:8080/tfs/DefaultCollection).|
 |*username*|Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName* or *UserName*.|
+
+### Option
 
 |**Option**|**Description**|
 |---|---|

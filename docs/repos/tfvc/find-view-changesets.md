@@ -45,21 +45,21 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
     The **Changeset Details** page appears in Team Explorer.   
     ![Changeset Details page](media/find-view-changesets/IC592883.png)
     
-<table>
-<thead>
-<tr>
-<th> <strong>Tip</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><ul>
-<li><p>You can <img src="media/find-view-changesets/IC667296.png" title="Undock" alt="Undock" /> undock the <strong>Pending Changes</strong> page from Team Explorer and open it in a new window.</p></li>
-<li><p>You can toggle between tree and list view from the <strong>Actions</strong> menu (Visual Studio 2013) or <strong>View Options</strong> menu (Visual Studio 2015).</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+    **Tip**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   
+   - You can ![Undock](media/find-view-changesets/IC667296.png) undock the **Pending Changes** page from Team Explorer and open it in a new window.
+
+   - You can toggle between tree and list view from the **Actions** menu (Visual Studio 2013) or **View Options** menu (Visual Studio 2015).  
+   :::column-end:::
+:::row-end:::
+
 
 <a name="find"></a>
 
