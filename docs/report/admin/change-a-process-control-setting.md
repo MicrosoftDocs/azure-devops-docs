@@ -1,13 +1,14 @@
 ---
-title: Change a process control setting | Team Foundation Server 
-description: Change a process control setting for the data warehouse or analysis services cube when connecting to an on-premises Team Foundation Server (TFS)  
+title: Change a process control setting
+titleSuffix: Azure DevOps Server
+description: Learn how to change a process control setting for the data warehouse or analysis services cube when you connect to Azure DevOps Server.
 ms.assetid: 48F5B9C9-66B4-4211-8622-5F93CDA9A19A  
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< azure-devops' 
-ms.date: 11/19/2020
+ms.date: 09/23/2021
 ---
 
 # Change a process control setting for the data warehouse or Analysis Services cube
@@ -16,9 +17,14 @@ ms.date: 11/19/2020
 
 You can change the refresh frequency and time-out values that control the processing of the data warehouse. You change a process control setting only if you want to tune it for your specific deployment.
 
-During processing, the warehouse adapters pull data from the operational store, transform it as necessary, and write it to the warehouse through the warehouse object model. During typical operations, the relational database (Tfs_Warehouse) is processed within two minutes of changes made to an operational store, and the SQL Server Analysis Services cube (Tfs_Analysis) is processed every two hours. 
+During processing, the warehouse adapters follow these steps:
+- Pull data from the operational store
+- Transform it as necessary
+- Write it to the warehouse through the warehouse object model.
 
-You might want to decrease or increase the length of time between refreshes to reduce the processing time or reduce the resource demands on the server. You can view the current settings or change a process control setting by using the Warehouse Control Web service. 
+The relational database (Tfs_Warehouse) is processed within two minutes of changes made to an operational store, and the SQL Server Analysis Services cube (Tfs_Analysis) is processed every two hours. 
+
+You might want to change the length of time between refreshes to reduce the processing time or reduce the resource demands on the server. You can view the current settings or change a process control setting by using the Warehouse Control Web service. 
 
 You can determine the current settings and change a setting by using the Warehouse Control Web service. 
 
@@ -32,7 +38,7 @@ You can determine the current settings and change a setting by using the Warehou
 
 ## Access the Warehouse Control Web Service
 
-1. Log on to the application-tier server.
+1. Sign in to the application-tier server.
 
 2. Open a web browser, type the following string in the Address bar, and then press ENTER:
 	::: moniker range=">= azure-devops-2019"
@@ -44,7 +50,7 @@ You can determine the current settings and change a setting by using the Warehou
     ```
 	For VirtualDirectory, type the IIS Virtual Directory that was specified when TFS was installed. By default, the virtual directory is **tfs**. 
 	::: moniker-end
-	If the project resides on a different project collection, specify the name of the collection in place of *DefaultCollection*.  
+	If the project is on a different project collection, specify the name of the collection in place of *DefaultCollection*.  
 
 	The **WarehouseControlWebService** page opens.
 
@@ -58,7 +64,7 @@ You can change the refresh frequency of the data warehouse or other process cont
 
 2. In the **settingID** box, type: **RunIntervalSeconds**.  
 
-3. In the **newValue** box, type the new number in seconds, and then click **Invoke**.  
+3. In the **newValue** box, type the new number in seconds, and then select **Invoke**.  
 
 	A confirmation Web page appears and indicates that the **RunIntervalSeconds** setting has been changed.  
 
@@ -70,7 +76,7 @@ You can change the refresh frequency of the data warehouse or other process cont
 
 	**IncrementalProcessIntervalSeconds**  
 
-3. In the **newValue** box, type the new number in seconds, and then click **Invoke**.  
+3. In the **newValue** box, type the new number in seconds, and then select **Invoke**.  
 
 	> [!IMPORTANT]  
 	> If you reduce the interval to less than the default of two hours (7200 seconds), processing of the data warehouse will consume server resources more frequently. Depending on the volume of data that your deployment has to process, you may want to reduce the interval to one hour (3600 seconds) or increase it to more than two hours.  
@@ -81,7 +87,7 @@ You can change the refresh frequency of the data warehouse or other process cont
 
 1. From the **WarehouseControlWebService** page, choose **ChangeSetting**. 
 
-2. On the **ChangeSetting** page, type an entry for the **settingID** and **newValue**, and then click **Invoke**. 
+2. On the **ChangeSetting** page, type an entry for the **settingID** and **newValue**, and then select **Invoke**. 
 
    For a description of each setting and the default values and measures that are assigned to each setting, see the table under [Process control settings](#process_control_settings). 
 
@@ -93,7 +99,7 @@ You can change the refresh frequency of the data warehouse or other process cont
 
 All reportable data from all team projects that are defined in all team project collections for an on-premises TFS deployment is written to a single relational database (Tfs\_Warehouse). Data from that warehouse is then processed and written to the SQL Server Analysis Services cube (Tfs\_Analysis). 
 
-You should leave most of these settings at their default assignments. However, on occasion, you may have to modify a setting to meet your specific deployment requirements. 
+Leave most of these settings at their default assignments. However, on occasion, you may have to modify a setting to meet your specific deployment requirements. 
 
 The following table describes each process control setting and provides the SettingID, default value, and unit of measure.
 
@@ -133,7 +139,7 @@ The following table describes each process control setting and provides the Sett
       DailyFullProcessingTime
    :::column-end:::
    :::column span="3":::
-      Specifies the time of day when the full processing of the Analysis Services cube is started. By default, it is set to 2 AM.<br/><br/>
+      Specifies the time of day when the full processing of the Analysis Services cube is started. By default, it's set to 2 AM.<br/><br/>
       **Default value**=02:00:00.0000000-08:00
    :::column-end:::
 :::row-end:::
