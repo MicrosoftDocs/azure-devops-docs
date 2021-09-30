@@ -1,7 +1,7 @@
 ---
 title: Status and trend work item, query-based charts
 titleSuffix: Azure DevOps  
-description: Create status, progress, and trend charts from flat-based queries in Azure DevOps  
+description: Learn how to create status, progress, and trend charts from flat-based queries in Azure DevOps.
 ms.custom: dashboards, contperf-fy20q4 
 ms.technology: devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/07/2021
+ms.date: 09/27/2021
 ---
 
 # Track progress with status and trend query-based charts 
@@ -18,7 +18,7 @@ ms.date: 09/07/2021
 
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). Different chart views such as pie, column, pivot, or trend are supported. Charts support viewing a count of work items or a sum of values for select numeric fields, such as Story Points, Effort, or Remaining Work. Group work by State, Assigned To, or other system defined or custom field.    
 
-In this article you'll learn how to perform the following tasks:  
+In this article you'll learn how to carry out the following tasks:  
 
 ::: moniker range="azure-devops"
 > [!div class="checklist"]    
@@ -68,7 +68,7 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
+* Connect to a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
 * To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
 * You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard. 
@@ -80,7 +80,7 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2020"
 
-* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 * To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
 * You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard. 
@@ -90,7 +90,7 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 ::: moniker range="tfs-2015"
 
-* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 * To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
 * You can pin charts to a team homepage, and with TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md)  
@@ -99,12 +99,12 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 ::: moniker range="tfs-2013"
 
-* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* Connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
 * To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 
 ::: moniker-end
 
-To learn more about default groups, see [Get started with permissions, Permission inheritance and security groups](../../organizations/security/about-permissions.md#inheritance).
+To learn more about default groups, see [Get started with permissions, permission inheritance, and security groups](../../organizations/security/about-permissions.md#inheritance).
 
 [!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]
 
@@ -112,14 +112,14 @@ To learn more about default groups, see [Get started with permissions, Permissio
 
 When creating a query to support your chart, follow these guidelines. 
 
-- Always choose the **Flat list of work items** query type. Other query types aren't supported for charting. For more information, see [Define a query, Define a flat-list query](../../boards/queries/using-queries.md#flat-list). 
+- Always select the **Flat list of work items** query type. Other query types aren't supported for charting. For more information, see [Define a query, Define a flat-list query](../../boards/queries/using-queries.md#flat-list). 
 - Add those fields to either a query clause or the column options that you want to use within your chart. You can group charts by any field except date-time, free-form text, and tag fields. For example: 
 	- To group by Status, include the **State** field 
 	- To group by work assignments, include the **Assigned To** field
 	- To group by sprints or iterations, include the **Iteration Path**    
-	- To group by team, include the **Node Name** field which displays the leaf node of the Area Path 
+	- To group by team, include the **Node Name** field that displays the leaf node of the Area Path 
 	- To group by a custom field, include it.  
-- To sum a numeric column, include the corresponding field in your query clause or column options. For additional examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md). 
+- To sum a numeric column, include the corresponding field in your query clause or column options. For more examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md). 
 - If you plan to add your query to a dashboard, [save your query as a **Shared query**](../../boards/queries/organize-queries.md).
 
 ::: moniker range="azure-devops"
@@ -158,9 +158,9 @@ When creating a query to support your chart, follow these guidelines.
 
 When you select **Area Path** or **Iteration Path**, only the leaf node appears in the chart. The leaf node is the last node of the full path. For example, ```Phone``` is the leaf node of ```FabrikamFiber/Fabrikam Website/Phone```. If your query contains a mixed level of leaf nodes, your chart might not reflect expected results.  
 
-Choose the **Node Name** field, the area path leaf node, to see if that improves your results. 
+Select the **Node Name** field, the area path leaf node, to see if that improves your results. 
 
-Charts display in browsers that support Scalable Vector Graphics (SVG). This includes Edge, Internet Explorer 9 and later versions, Chrome, Firefox and Safari on Mac. Charts aren't optimized for mobile or touch displays.  
+Charts display in browsers that support Scalable Vector Graphics (SVG). Supported browsers include Microsoft Edge, Internet Explorer 9 and later versions, Chrome, Firefox and Safari on Mac. Charts aren't optimized for mobile or touch displays.  
 
 
 ::: moniker range=">= azure-devops-2020"
@@ -172,7 +172,7 @@ Charts display in browsers that support Scalable Vector Graphics (SVG). This inc
 
 ### Sort by Value or Label 
 
-Most charts allow you to choose how you want to sort the data. You can sort by **Value** or **Label** and choose **Ascending** or **Descending**. 
+Most charts allow you to choose how you want to sort the data. You can sort by **Value** or **Label** and select **Ascending** or **Descending**. 
 
 - **Value**: Sorts data by the numeric value 
 - **Label**: Sorts by the label selected for grouping the data.
@@ -226,16 +226,16 @@ When a chart contains more than seven items within the data series, values in th
 
    If you receive an error message when you close the chart editor, you need to request [Basic access](../../organizations/security/change-access-levels.md).
 
-3. To sort the results, choose **Value** or **Label** as the sort option and then **Ascending** or **Descending**.  
+3. To sort the results, select **Value** or **Label** as the sort option and then **Ascending** or **Descending**.  
 
    ::: moniker range=">= azure-devops-2019"  
-   To change a color, simply choose a color from the Series set of color pickers.   
+   To change a color, select a color from the Series set of color pickers.   
    > [!div class="mx-imgBorder"]  
    > ![Charts, color series picker](media/charts/color-series-picker.png)  
    ::: moniker-end  
 
    ::: moniker range="<= tfs-2018"  
-   To change a color, simply choose a color on the chart and pick a new color from the color picker.  
+   To change a color, select a color on the chart and pick a new color from the color picker.  
    ::: moniker-end  
 
 Charts automatically update when you edit the query or refresh the query results.  
@@ -306,7 +306,7 @@ Trend data is extracted from the work tracking data store. Like most data stores
 
 Burndown charts are useful for determining how quickly work is progressing based on a numeric field value, such as Story Points, Effort, or Remaining Work, or on a count of work items. 
 
-To create a burndown chart, make sure to add the numeric field you want to your query. To view a burndown chart of tasks, choose the **Sum** operator for **Remaining Work**.  
+To create a burndown chart, make sure to add the numeric field you want to your query. To view a burndown chart of tasks, select the **Sum** operator for **Remaining Work**.  
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
@@ -327,7 +327,7 @@ In addition to query-based burndown charts, you can [Configure a Burndown or Bur
 
 To add a chart to a dashboard, you must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have permissions to edit a dashboard (default settings). You can only add charts defined for shared queries.
 
-Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the chart you want to add, and select **Add to dashboard**.  
+Select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the chart you want to add, and select **Add to dashboard**.  
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
@@ -364,15 +364,15 @@ If you've already defined your [flat list query](../../boards/queries/using-quer
 
 1. From the web portal, open the [dashboard](dashboards.md) you want to add the chart to.  
 
-2. To add widgets to the dashboard, choose :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**.  The widget catalog will automatically open. Add all the widgets that you want and drag their tiles into the sequence you want. 
+2. To add widgets to the dashboard, select :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**.  The widget catalog will automatically open. Add all the widgets that you want and drag their tiles into the sequence you want. 
 
 	If you don't see these icons, then you need to be added as a [team administrator](../../organizations/settings/add-team-administrator.md) or get permissions to edit dashboards. 
 
-3. Choose the **Chart for work items** widget and then choose **Add**.  
+3. Select the **Chart for work items** widget and then select **Add**.  
 
 	![Web portal, Dashboards page, Widget catalog, Chart for work items widget](media/widget-chart-work-query.png) 
 
-4. Choose the widget's :::image type="icon" source="../../media/icons/dashboard-configure.png" border="false"::: gear icon to open the Configuration dialog. 
+4. Select the widget's :::image type="icon" source="../../media/icons/dashboard-configure.png" border="false"::: gear icon to open the Configuration dialog. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Configuration dialog for chart work items widget](media/charts/configure-chart-widget.png)   
@@ -390,7 +390,7 @@ If you've already defined your [flat list query](../../boards/queries/using-quer
 
 7. Drag the tile anywhere on the dashboard to put it where you want it. 
 
-8. When you're finished with your changes, choose **Done Editing** to exit dashboard edit mode.
+8. When you're finished with your changes, select **Done Editing** to exit dashboard edit mode.
 
 ::: moniker-end
 
@@ -402,15 +402,15 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 1. From the web portal, open the [team dashboard](dashboards.md) you want to add the chart to.   
 
-2. To add widgets to the dashboard, choose :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**. The widget catalog will automatically open.  Add all the widgets that you want and drag their tiles into the sequence you want. 
+2. To add widgets to the dashboard, select :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**. The widget catalog will automatically open.  Add all the widgets that you want and drag their tiles into the sequence you want. 
 
 	If you don't see these icons, then you need to be added as a [team administrator](../../organizations/settings/add-team-administrator.md) or a member of the Project Administrators group. 
 
-3. Choose the **Chart for work items** widget and then choose **Add**. 
+3. Select the **Chart for work items** widget and then select **Add**. 
 
 	<img src="media/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" /> 
 
-4. Choose the widget's :::image type="icon" source="media/icons/gear-icon.png" border="false"::: gear icon to open the configuration dialog. 
+4. Select the widget's :::image type="icon" source="media/icons/gear-icon.png" border="false"::: gear icon to open the configuration dialog. 
 
 	<img src="media/charts-chart-wit-widget-configure-dialog.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget, Configuration dialog" /> 
 
@@ -427,7 +427,7 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 7. Drag the tile anywhere on the dashboard to put it where you want it. 
 
-8. When you're finished with your changes, choose ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.  
+8. When you're finished with your changes, select ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.  
 
 ::: moniker-end
 
@@ -440,7 +440,7 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 > [!NOTE]   
 > You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard. This feature is in public preview. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **Enable group by tags for work item chart widget on dashboard**. 
 
-To group a chart by tags, perform the same steps provided in the previous section. Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, choose **Tags** for the **Group by** selection. To filter the chart to show only some tags, choose the **Selected tags** radio button and then choose the tags you want the chart to display.  
+To group a chart by tags, perform the same steps provided in the previous section. Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, select **Tags** for the **Group by** selection. To filter the chart to show only some tags, select the **Selected tags** radio button and then choose the tags you want the chart to display.  
 
 :::image type="content" source="media/charts/configure-chart-widget-tags.png" alt-text="Screenshot of Chart by Work Items, Configure, Group by Tags.":::
 

@@ -5,10 +5,13 @@ description: What do you get with Azure Repos
 ms.technology: devops-new-user
 ms.date: 06/01/2020
 ms.topic: overview
-monikerRange: '>=tfs-2018'
+monikerRange: '<= azure-devops'
 ---
 
 # What is Azure Repos?
+
+[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)] 
+[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)] 
 
 Azure Repos is a set of version control tools that you can use to manage your code. Whether your software project is large or small, using version control as soon as possible is a good idea. 
 
