@@ -6,6 +6,8 @@
     - name: 2021
       expanded: true
       items:
+        - name: September 28
+          href: 2021/sprint-193-update.md
         - name: September 8
           href: 2021/sprint-192-update.md
         - name: August 19
@@ -423,6 +425,8 @@
     - name: 2021
       expanded: false
       items:
+        - name: September 28
+          href: 2021/boards/sprint-193-update.md
         - name: August 19
           href: 2021/boards/sprint-191-update.md
         - name: August 4
@@ -553,6 +557,8 @@
     - name: 2021
       expanded: false
       items:
+        - name: September 28
+          href: 2021/pipelines/sprint-193-update.md
         - name: September 8
           href: 2021/pipelines/sprint-192-update.md
         - name: August 19
@@ -722,6 +728,8 @@
     - name: 2021
       expanded: false
       items:
+        - name: September 28
+          href: 2021/general/sprint-193-update.md
         - name: August 19
           href: 2021/general/sprint-191-update.md
         - name: June 17

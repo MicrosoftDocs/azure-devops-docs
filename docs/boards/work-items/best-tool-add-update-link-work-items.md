@@ -227,7 +227,7 @@ Use [**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) to perfo
 </td>
 </tr>
 <tr>
-<td><a href="../backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[**Project**](../backlogs/office/create-your-backlog-tasks-using-project.md)"><strong>Project</strong></a> </td>
+<td><a href="/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project" data-raw-source="[**Project**](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)"><strong>Project</strong></a> </td>
 <td>
 <ul> 
 <li>Importing a project plan to a project</li>
@@ -237,12 +237,12 @@ Use [**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md) to perfo
 </td>
 </tr>
 <tr>
-<td><a href="../backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[**Storyboarding with PowerPoint**](../backlogs/office/storyboard-your-ideas-using-powerpoint.md)"><strong>Storyboarding with PowerPoint</strong></a>   </td>
+<td><a href="/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint" data-raw-source="[**Storyboarding with PowerPoint**](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint)"><strong>Storyboarding with PowerPoint</strong></a>   </td>
 <td> 
 <ul>
 <li>Storyboarding features and user interface changes </li>
-<li><a href="../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-your-storyboard-to-a-backlog-item" data-raw-source="[Linking your storyboard to a work item](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-your-storyboard-to-a-backlog-item)">Linking your storyboard to a work item</a></li>
-<li><a href="../backlogs/office/add-share-storyboard-shapes.md" data-raw-source="[Adding and sharing storyboard shapes](../backlogs/office/add-share-storyboard-shapes.md)">Adding and sharing storyboard shapes</a></li>
+<li><a href="/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint#link-your-storyboard-to-a-backlog-item" data-raw-source="[Linking your storyboard to a work item](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint#link-your-storyboard-to-a-backlog-item)">Linking your storyboard to a work item</a></li>
+<li><a href="/previous-versions/azure/devops/boards/backlogs/office/add-share-storyboard-shapes" data-raw-source="[Adding and sharing storyboard shapes](/previous-versions/azure/devops/boards/backlogs/office/add-share-storyboard-shapes)">Adding and sharing storyboard shapes</a></li>
 </ul>
 </td>
 </tr>

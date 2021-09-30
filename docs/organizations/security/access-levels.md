@@ -290,7 +290,7 @@ The following table indicates those features available for each supported access
 ::: moniker range="> tfs-2018"
 :::row:::
    :::column span="3":::
-      [**Artifacts**](../../artifacts/overview.md)  
+      [**Artifacts**](../../artifacts/start-using-azure-artifacts.md)  
       Includes full access to all Azure Artifacts features, up to 2 GiB free storage.
    :::column-end:::
    :::column span="1":::
@@ -308,7 +308,7 @@ The following table indicates those features available for each supported access
 ::: moniker range="tfs-2017 || tfs-2018"
 :::row:::
    :::column span="3":::
-      [**Artifacts**](../../artifacts/overview.md)  
+      [**Artifacts**](../../artifacts/start-using-azure-artifacts.md)  
       Includes full access to all Azure Artifacts features, up to 2 GiB free storage.
    :::column-end:::
    :::column span="1":::

@@ -12,14 +12,14 @@ ms.date: 07/06/2021
 
 # Connect Azure DevOps Server to GitHub Enterprise Server (On-premises)
 
-[**Azure Boards**](/azure/devops/boards/github/connect-to-github?view=azure-devops&preserve-view=true) | **Azure DevOps Server 2020 | Azure DevOps Server 2019**
+[**Azure Boards**](./connect-to-github.md?preserve-view=true&view=azure-devops) | **Azure DevOps Server 2020 | Azure DevOps Server 2019**
 
 <!--- Supports https://go.microsoft.com/fwlink/?linkid=2095009 --> 
 
 By connecting your Azure DevOps Server project with your GitHub Enterprise Server repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub Enterprise for software development while using Azure Boards to plan and track your work. 
 
 > [!NOTE]   
-> On-premises Azure DevOps Servers support integration with GitHub Enterprise Server repositories. If you want to connect from Azure DevOps Services, see [Connect Azure Boards to GitHub](/azure/devops/boards/github/connect-to-github?view=azure-devops&preserve-view=true).
+> On-premises Azure DevOps Servers support integration with GitHub Enterprise Server repositories. If you want to connect from Azure DevOps Services, see [Connect Azure Boards to GitHub](./connect-to-github.md?preserve-view=true&view=azure-devops).
 
 
 ## Prerequisites 
