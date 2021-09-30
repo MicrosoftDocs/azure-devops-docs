@@ -69,7 +69,7 @@ When you want to access secrets:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../includes/yaml/AzureKeyVaultV2.md)]
+[!INCLUDE [temp](../includes/yaml/azure-key-vault-v2.md)]
 
 ::: moniker-end
 
