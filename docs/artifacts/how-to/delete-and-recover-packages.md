@@ -255,7 +255,7 @@ To configure retention policies:
 
 Old or existing packages will be soft-deleted and moved to the Recycle Bin. The deletion job runs once a day, but there might be an initial delay after the policy is turned on for the first time because of an influx of packages. 
 
-Packages remain in the Recycle Bin for 30 days before they're permanently deleted. To remove the packages from your billable storage, you can chose to delete them manually by using the UI or the REST API before the 30 days are up. 
+Packages remain in the Recycle Bin for 30 days before they're permanently deleted. To remove the packages from your billable storage, you can choose to delete them manually by using the UI or the REST API before the 30 days are up. 
 
 ## Recover deleted packages
 
