@@ -35,6 +35,6 @@ To get rid of multiple merge bases, you should tie branches to a single common a
 - When preparing pr - create feature branches from latest versions of main/release branch. 
 - Avoid to creating branches that not originated directly from stable branches of your repository, unless you're needed to.
 
-### I've fixed the issue but message is reappeared.
+### I've fixed the issue but message is reappeared
 
 In large repos, with large numbers of active contributors this issue can be especially inconvenient. The main problem is even if you get rid of multiple bases via merge it may reappear. If somebody will close long-lasting pr - that would create this situation again. Even while build policies and test are running when you have no meanings to complete the PR. Resetting and starting branch as mentioned before may help. Although you mask somebody to verify your results on clear state, if nothing is changed - your changes are probably clear even if situation will repeat itself.
