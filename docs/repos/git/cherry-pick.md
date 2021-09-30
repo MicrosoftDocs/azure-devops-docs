@@ -5,14 +5,15 @@ description: Copy and port changes from one branch to another in Git with cherry
 ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
 ms.technology: devops-code-git 
 ms.topic: tutorial
-ms.date: 03/14/2018
+ms.date: 09/28/2021
 monikerRange: '<= azure-devops'
 ---
 
 
 # Copy changes with cherry-pick
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2**
+[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
 Copy commits from one branch to another using cherry-pick. Unlike a merge or rebase, cherry-pick only brings the changes from the commits you select, instead of all the changes in a branch.
 
@@ -43,40 +44,45 @@ In this tutorial you learn how to:
 Repeat this process for each commit you need to bring over to your current branch.
 
 #### [Command Line](#tab/command-line/)
+
 Use `git log` to find the commit ID of the commit whose changes you want to copy.
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git log app.ts
-<font color="#b5bd68">commit d34bcef232f6cf033e1252b7300465d3e561b2ee
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git log app.ts
+commit d34bcef232f6cf033e1252b7300465d3e561b2ee
 Date:   Wed May 18 21:10:39 2016 +0000
 
-add complex query parsing logic</font>
-</pre>
+add complex query parsing logic
+```
 
 Once you have the commit ID, you pass it to `git cherry-pick` to copy the changed into your current branch.
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git cherry-pick <font color="#b5bd68">d34bcef232f6c</font>   
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git cherry-pick d34bcef232f6c  
 
-<font color="#b5bd68">[featurebranch a343e2c] add complex query parsing logic
+[featurebranch a343e2c] add complex query parsing logic
  Date: Thu May 19 19:07:26 2016 -0400
- 1 file changed, 67 insertions(+), 6 deletions(-)</font>
-</pre>
+ 1 file changed, 67 insertions(+), 6 deletions(-)
+```
 
 If you need to cherry-pick a range of commits, you can use two commit IDs separated by `...` to specify a range in your history.
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git cherry-pick <font color="#b5bd68">d34bcef...86d2aec</font>   
+> [!div class="tabbedCodeSnippets"]
+```Git CLI
+> git cherry-pick 34bcef...86d2aec
 
-<font color="#b5bd68">[featurebranch a343e2c] add complex query parsing logic
+[featurebranch a343e2c] add complex query parsing logic
  Date: Thu May 19 19:07:26 2016 -0400
  1 file changed, 67 insertions(+), 6 deletions(-)
  [featurebranch 3065fc7] fix regression in error handling
  Date: Mon May 23 09:23:45 2016 -0400
- 1 file changed, 32 insertions(+), 15 deletions(-)</font>
-</pre>
+ 1 file changed, 32 insertions(+), 15 deletions(-)
+```
 
 * * *
+
 ## Next steps
 
 > [!div class="nextstepaction"]

@@ -721,7 +721,7 @@ Other service connection types and tasks can be installed as extensions. See the
     |------------------------------------|--------------|
     |    Connection Name                 | Required. The name you will use to refer to this service connection in task properties. |
     |    Server URL                      | Required. The URL of the Power Platform instance. Example: `https://contoso.crm4.dynamics.com` |
-    |    Tenant ID                       | Required. Tenant ID (also called directory ID in Azure portal) to authenticate to. Refer to [https://aka.ms/buildtools-spn](https://aka.ms/buildtools-spn) for a script that shows Tenant ID and configures Application ID and associated Client Secret. The application user must also be [created in CDS](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) |
+    |    Tenant ID                       | Required. Tenant ID (also called directory ID in Azure portal) to authenticate to. Refer to [https://aka.ms/buildtools-spn](/power-platform/alm/devops-build-tools#configure-service-connections-using-a-service-principal) for a script that shows Tenant ID and configures Application ID and associated Client Secret. The application user must also be [created in CDS](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) |
     |    Application ID                  | Required. Azure Application ID to authenticate with. |
     |    Client secret of Application ID | Required. Client secret of the Service Principal associated to above Application ID used to prove identity. |
 

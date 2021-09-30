@@ -29,7 +29,7 @@ Learn how to navigate Test Plans to support your test goals and operations. Use 
 To learn about specific test artifacts, see the following articles: 
 - [Create test plans and test suites](create-a-test-plan.md)
 - [Create manual test cases](create-test-cases.md)
-- [Test settings](/azure/devops/test/test-different-configurations)
+- [Test settings](./test-different-configurations.md)
 
 
 [!INCLUDE [prerequisites](includes/prerequisites.md)] 

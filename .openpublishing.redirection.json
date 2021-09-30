@@ -18254,7 +18254,22 @@
       "source_path": "docs/test/preview/new-test-plan-page.md",
       "redirect_url": "/azure/devops/test/navigate-test-plans",
       "redirect_document_id": false
-    } 
+    },
+    {
+      "source_path": "docs/repos/git/overview-2013.md",
+      "redirect_url": "/azure/devops/repos//get-started/what-is-repos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/get-started-vs2013.md",
+      "redirect_url": "/azure/devops/repos/git/gitquickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/gitquickstart-vs2015.md",
+      "redirect_url": "/azure/devops/repos/git/gitquickstart",
+      "redirect_document_id": false
+    }
   ]
 }
 

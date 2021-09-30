@@ -951,7 +951,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>What is Azure Artifacts?</b></p>
-<p>Azure Artifacts is the new name for what was previously Package Management. Azure Artifacts helps you <a href="../artifacts/overview.md" data-raw-source="[manage code sharing by automating common tasks for discovering, consuming, and sharing components](../artifacts/overview.md)">manage code sharing by automating common tasks for discovering, consuming, and sharing components</a>.</p>
+<p>Azure Artifacts is the new name for what was previously Package Management. Azure Artifacts helps you <a href="/azure/devops/artifacts/start-using-azure-artifacts" data-raw-source="[manage code sharing by automating common tasks for discovering, consuming, and sharing components](../artifacts/start-using-azure-artifacts.md)">manage code sharing by automating common tasks for discovering, consuming, and sharing components</a>.</p>
 
 <p><b>Create feeds </b></p>
 <p><a href="/azure/devops/artifacts/" data-raw-source="[Create feeds](../artifacts/index.yml)">Create feeds</a> to share code through packages.</p>
@@ -2009,7 +2009,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><a href="../test/create-a-test-plan.md" data-raw-source="[Create and run manual tests](../test/create-a-test-plan.md)">Create and run manual tests</a> for your app.</p>
 
 <p><b>Package (Azure DevOps Services, Preview)</b></p>
-<p>Share code as binary assets and control dependencies by <a href="../artifacts/overview.md" data-raw-source="[subscribing to and working with Azure Artifacts feeds](../artifacts/overview.md)">subscribing to and working with Azure Artifacts feeds</a>.</p>
+<p>Share code as binary assets and control dependencies by <a href="/azure/devops/artifacts/start-using-azure-artifacts" data-raw-source="[subscribing to and working with Azure Artifacts feeds](../artifacts/start-using-azure-artifacts.md)">subscribing to and working with Azure Artifacts feeds</a>.</p>
 
 <p><b>Release (Azure DevOps Services, Preview)</b></p>
 <p>Manage the release of your app by <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[deploying it to a specific environment for each separate release step](../pipelines/get-started/what-is-azure-pipelines.md)">deploying it to a specific environment for each separate release step</a>, and by controlling the process through approvals for each step.</p>
