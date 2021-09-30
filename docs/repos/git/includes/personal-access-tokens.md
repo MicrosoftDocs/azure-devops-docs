@@ -125,7 +125,7 @@ If you believe that a PAT exists in error, we suggest that you [revoke the PAT](
 
 Your token is your identity and represents you when it's used. Treat and use a PAT like your password.
 
-1. Git interactions require a username, which can be anything except the empty string.
+Git interactions require a username, which can be anything except the empty string.
 The PAT is used as the password.
 Additionally, you have to Base64-encode the username and PAT to use it with HTTP basic authentication.
 On Linux or macOS, in Bash, you can enter:
