@@ -861,7 +861,7 @@ Multiple merge bases detection was added as a part of security awareness. If the
 - If changes proposed in the PR are already in the target branch, they would be displayed in the **Files** tab, but they may not trigger the branch policies mapped to folder changes.
 - If two developers make changes to the same files from multiple merge bases it may not be present in the pr. That case may create treacherous logic gaps.
 
-## How to resolve the multiple merge bases issue
+### How to resolve the multiple merge bases issue
 
 First of all, having multiple merge bases isn't necessary bad thing, but it would be better to double check if everything is fine.
 To get rid of multiple merge bases, you should tie branches to a single common ancestor. In other words, rebase your branch on target, or merge target into the main. That would get rid of warning message and help you check if everything is fine with the actual changes. Before rebasing or merging, one approach is to soft reset your progress and stash it. From there you can create new branch or rebase an empty one, and apply your changes from a clear point, which may require a force push to remote, if your changes are already there. 
