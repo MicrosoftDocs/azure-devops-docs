@@ -6,7 +6,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 06/17/2020
+ms.date: 09/30/2021
 monikerRange: '> tfs-2018'
 ---
 
@@ -69,7 +69,7 @@ When you want to access secrets:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../includes/yaml/AzureKeyVaultV1.md)]
+[!INCLUDE [temp](../includes/yaml/AzureKeyVaultV2.md)]
 
 ::: moniker-end
 
@@ -79,9 +79,9 @@ When you want to access secrets:
 
 | Parameter | Description |
 | --------- | ----------- |
-|`ConnectedServiceName`<r/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
+|`ConnectedServiceName`<br/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
 |`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
-|`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded. <br/>Default value: `*`|
+|`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded or `*` to download all secrets from the selected key vault. <br/>Default value: `*`|
 |`RunAsPreJob`<br/>Make secrets available to whole job| (Required) Run the task before job execution begins. Exposes secrets to all tasks in the job, not just tasks that follow this one. <br/>Default value: `false`|
 
 :::moniker-end
@@ -92,7 +92,7 @@ When you want to access secrets:
 | --------- | ----------- |
 |`ConnectedServiceName`<r/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
 |`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
-|`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded. <br/>Default value: `*`|
+|`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded or `*` to download all secrets from the selected key vault. <br/>Default value: `*`|
 
 :::moniker-end
 
