@@ -26,7 +26,7 @@ If you change the description or the picklist values of a shared field, it will 
 ## Work item type icons
 We have made a global commitment to make our products fully accessible to our customers. As part of that commitment, we have been working to find and address many accessibility issues&mdash;anywhere from keyboard patterns to visual design and layout. 
 
-Work item tracking has relied solely on color in many experiences to convey work item type. However, this is problematic for our color-blind or low-vision users who may not be able to distinguish between items due to similarities in color. To increase the scanability of work item types for all our customers, we have introduced icons to our visual language of work item types. You can [customize your work item types](/azure/devops/work/process/customize-process-wit#change-description-icon-or-color-of-a-custom-wit) by choosing from our icon library.
+Work item tracking has relied solely on color in many experiences to convey work item type. However, this is problematic for our color-blind or low-vision users who may not be able to distinguish between items due to similarities in color. To increase the scanability of work item types for all our customers, we have introduced icons to our visual language of work item types. You can [customize your work item types](/azure/devops/work/process/customize-process-wit#change-description-icon-or-color) by choosing from our icon library.
 
 Color bars conveying type on the backlog and queries grids have been replaced with colored icons.
 
@@ -249,7 +249,7 @@ Unlike __NuGet__ and __npm__, the __Maven__ and __dotnet__ build tasks did not p
 Now any Project Collect Administrator, not just the account owner, can make the first Marketplace purchase. This makes it easier for accounts with multiple Project Collection Administrators to pay for VSTS.
 
 ## Deep link to remove your spending limit easily during a Marketplace purchase
-If you want to use the Azure subscription that came with your Visual Studio or MSDN subscription to pay for Marketplace purchases, you need to remove your spending limit and add a credit card. With this release, we’ve added a deep link to make it easy to remove the spending limit for your subscription. We also check to make sure you remove the limit indefinitely, so your Marketplace purchases won’t be interrupted. For more information, see [How to set up billing Q&A](/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs#q-which-azure-subscriptions-can-i-link-to-my-team-services-account-and-use-for-billing).
+If you want to use the Azure subscription that came with your Visual Studio or MSDN subscription to pay for Marketplace purchases, you need to remove your spending limit and add a credit card. With this release, we’ve added a deep link to make it easy to remove the spending limit for your subscription. We also check to make sure you remove the limit indefinitely, so your Marketplace purchases won’t be interrupted. For more information, see [How to set up billing Q&A](/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs).
 
 ![deep link to remove spending limit](media/06_22_19.png)
 
