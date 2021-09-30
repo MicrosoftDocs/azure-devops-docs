@@ -69,7 +69,7 @@ The contents of secure files are encrypted and can only be used during build or 
 
 We’ve also added some Apple tasks that leverage this new feature:
 
-* [Utility: Install Apple Certificate](/azure/devops/pipelines/tasks/utility/install-apple-certificate?view=azure-devops)
+* [Utility: Install Apple Certificate](/azure/devops/pipelines/tasks/utility/install-apple-certificate)
 
 * [Utility: Install Apple Provisioning Profile](/azure/devops/pipelines/tasks/utility/install-apple-provisioning-profile)
 
