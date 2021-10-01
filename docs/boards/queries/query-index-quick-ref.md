@@ -225,7 +225,8 @@ The following table indicates the operators and macros available for the differe
    :::column span="3":::
    = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever  **Macros**: **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>**, valid with any **DateTime** field  
 
-   **Additional macros supported on Azure DevOps 2019 Update 1 and later versions:**:  **<xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref>**, **<xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref>**, **<xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref>**, and **<xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref>**, valid with any **DateTime** field
+   **Additional macros supported on Azure DevOps 2019 Update 1 and later versions:**:  
+   **<xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref>**, **<xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref>**, **<xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref>**, and **<xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref>**, valid with any **DateTime** field
 
    :::column-end::: 
 :::row-end:::
@@ -290,7 +291,7 @@ The following table indicates the operators and macros available for the differe
    :::column-end:::
    :::column span="3":::
    = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
-   **Macros**: **<xref href="me" data-throw-if-not-resolved="False" data-raw-source="@me"></xref>** valid for all Identity fields
+   **Macros**: **@me** valid for all Identity fields
 
    :::column-end:::
 :::row-end:::
@@ -307,7 +308,10 @@ The following table indicates the operators and macros available for the differe
    :::column span="3":::
    = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever  
 
-   **Macros**: **<xref href="Follows" data-throw-if-not-resolved="False" data-raw-source="@Follows"></xref>**<sup>4</sup>, **<xref href="MyRecentActivity" data-throw-if-not-resolved="False" data-raw-source="@MyRecentActivity"></xref>**<sup>5</sup>, **<xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref>**<sup>5</sup>, **<xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref>**, valid when used with the **ID** field 
+   **Macros**: **@Follows**<sup>4</sup>,  
+   **@MyRecentActivity**<sup>5</sup>,  
+   **@RecentMentions**<sup>5</sup>,  
+   **@RecentProjectActivity**, valid when used with the **ID** field 
 
    :::column-end:::
 :::row-end:::
@@ -338,7 +342,7 @@ The following table indicates the operators and macros available for the differe
    = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever  
 
    **Macros**: **[Any]**, valid with the **Work Item Type** field  
-   **<xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref>**<sup>6</sup>, valid with the **Team Project** field 
+   **@Project**<sup>6</sup>, valid with the **Team Project** field 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -355,8 +359,8 @@ The following table indicates the operators and macros available for the differe
    :::column span="3":::
    Under, Not Under  
 
-   **Macros**: **<xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref>**<sup>7</sup>, valid with **Area Path** field  
-   **<xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref>**<sup>8</sup> and**<xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n**<sup>9</sup> valid with the **Iteration Path** field
+   **Macros**: **@TeamAreas**<sup>7</sup>, valid with **Area Path** field  
+   **@CurrentIteration**<sup>8</sup> and **@CurrentIteration+/- n**<sup>9</sup> valid with the **Iteration Path** field
    :::column-end:::
 :::row-end:::
 
@@ -491,7 +495,7 @@ The following table lists common query fields and their data type for which samp
 
 
 > [!NOTE]  
-> 1. The <strong>Comment Count</strong> field is supported for TFS 2017 and later versions. 
+> 1. The **Comment Count** field is supported for TFS 2017 and later versions. 
 
 
 ## Related articles

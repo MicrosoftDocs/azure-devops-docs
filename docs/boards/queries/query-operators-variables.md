@@ -58,7 +58,7 @@ The value you specify for a field must conform to the data type for that field. 
    :::column-end:::
    :::column span="3":::
    A date field in which you can specify a variable, such as **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.) For query examples, see [Query by date or@CurrentIteration](query-by-date-or-current-iteration.md). 
- <p>For WIQL queries, you can also specify the date in the Coordinated Universal Time (UTC) pattern. For details, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md). 
+   For WIQL queries, you can also specify the date in the Coordinated Universal Time (UTC) pattern. For details, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md). 
    :::column-end:::
 :::row-end:::
 :::row:::

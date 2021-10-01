@@ -64,7 +64,7 @@ Most build and test integration fields have a data type of String, PlainText, or
    :::column span="3":::
    = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever  
    **Macros**: **[Any]**, valid with the **Work Item Type** field  
-   **<xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref>**<sup>2</sup>, valid with the **Team Project** field
+   **Project**<sup>2</sup>, valid with the **Team Project** field
    :::column-end:::
 :::row-end:::
 
@@ -90,7 +90,7 @@ Most build and test integration fields have a data type of String, PlainText, or
    :::column-end:::
    :::column span="1":::
    
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * = * Test Case`  `And Automation Status * = * Automated`  
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = Test Case`  `And Automation Status = Automated`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -99,7 +99,7 @@ Most build and test integration fields have a data type of String, PlainText, or
    :::column-end:::
    :::column span="1":::
    
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * = * Test Suite`  `And Test Suite Type * = * Query Based`  
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = Test Suite`  `And Test Suite Type = Query Based`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -108,7 +108,7 @@ Most build and test integration fields have a data type of String, PlainText, or
    :::column-end:::
    :::column span="1":::
    
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * = * Test Suite`  `And Test Suite Type * = * Requirement Based`  
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = Test Suite`  `And Test Suite Type = Requirement Based`  
    :::column-end:::
 :::row-end:::
   
@@ -119,7 +119,7 @@ Most build and test integration fields have a data type of String, PlainText, or
 
 Open a new query, set the query type to Work items and direct links. Filter for bugs in the top-level and add the filter for Test Cases in the linked work items filter. 
 
-<img src="media/query-build-integration-bugs-linked-test-cases.png" alt="List bugs and the test cases that test them" />
+![List bugs and the test cases that test them](media/query-build-integration-bugs-linked-test-cases.png)
 
 > [!NOTE]    
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the **Test>Test Plans** page](../../test/create-a-test-plan.md). 
@@ -482,7 +482,7 @@ The following fields do not appear on work item forms, but these fields are trac
 
 ### Fields that integrate with Team Foundation Build
 
-Team Foundation Build is the on-premise build system you can use with Azure DevOps Server and TFS. You can configure your build process by using Team Foundation Build, and Team Foundation Build can generate work items when a build fails. It can also add build information to work items that were resolved in a particular build. For this to work, Team Foundation Build requires that the following two fields be added to the work item type definition: <strong>Found In</strong> and <strong>Integration Build</strong>.
+Team Foundation Build is the on-premise build system you can use with Azure DevOps Server and TFS. You can configure your build process by using Team Foundation Build, and Team Foundation Build can generate work items when a build fails. It can also add build information to work items that were resolved in a particular build. For this to work, Team Foundation Build requires that the following two fields be added to the work item type definition: **Found In** and **Integration Build**.
 
 **Found In** and **Integrated in Build** fields are defined for Bugs in the default processes. These fields associate bugs with the builds where they were found or fixed. 
 

@@ -101,7 +101,7 @@ Use the **In** and **Not In** operators to filter for or exclude two or more pic
 
 Use the search box or query editor to quickly find work items based on an assignment made to an **Identity** field. Also, you can filter for work items based on who changed, resolved, or closed a work item. By specifying a time period, you can scope your query even further, which can help with performance. 
 
-Use **=** to find current assignments, **Was Ever** to list items based on past assignments, and <strong>@Me</strong> to scope to your user identity. 
+Use **=** to find current assignments, **Was Ever** to list items based on past assignments, and **@Me** to scope to your user identity. 
 
 :::row:::
      :::column span="1":::
@@ -234,8 +234,8 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type  = User Story`
-   `And * State * = <em> Resolved`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type  = User Story`  
+   `And State = Resolved`
 
   
    :::column-end:::
@@ -248,7 +248,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In User Story,Bug,Task`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In User Story,Bug,Task`  
    `And State In New,Active`
 
   
@@ -263,7 +263,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State= Removed`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State= Removed`  
    `And Reason = Duplicate`
 
   
@@ -293,7 +293,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State = Closed`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State = Closed`  
    `And Closed Date  > @Today-15`
 
   
@@ -323,8 +323,8 @@ You can quickly find items that you changed, resolved, or closed. You can also f
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = User Story`
-   `And Closed By =  data-raw-source="@Me"`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = User Story`  
+   `And Closed By = @Me`
 
   
    :::column-end:::
@@ -338,8 +338,8 @@ You can quickly find items that you changed, resolved, or closed. You can also f
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Resolved By ="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"`
-   `And Resolved Date >= "Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Resolved By = @Me`  
+   `And Resolved Date >= Today-7`
 
   
    :::column-end:::
@@ -374,7 +374,7 @@ Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board L
 
 For example, you can list items based on the team area path, and if they are in a specific custom Kanban column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring Kanban goodness to queries, and more](https://blogs.msdn.microsoft.com/devops/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)  
 
-<img src="media/query-kanban-fields.png" alt="Query filter on Kanban board fields" />  
+![Query filter on Kanban board fields](media/query-kanban-fields.png)  
 
 > [!NOTE]    
 > Queries are now scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.  

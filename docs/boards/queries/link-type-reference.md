@@ -32,7 +32,7 @@ You can link work items to other work items or artifacts using the following lin
 - [**GitHub link types**](#github-link-types): connects a work item to a GitHub repository commit, issue, or pull request.
 
 
-A specific field maintains a count of links for the first four link types, such as <em>Related Link Count</em>, <em>Hyperlink Count</em>, <em>External Link Count</em>, and <em>Remote Link Count</em>.  
+A specific field maintains a count of links for the first four link types, such as *Related Link Count*, *Hyperlink Count*, *External Link Count*, and *Remote Link Count*.  
 
 ::: moniker-end 
 
@@ -44,7 +44,7 @@ A specific field maintains a count of links for the first four link types, such 
 - [**GitHub link types**](#github-link-types): connects a work item to a GitHub repository commit or pull request.     
 
 
-A specific field maintains a count of links for the first three link types, such as <em>Related Link Count</em>, <em>Hyperlink Count</em>, and <em>External Link Count</em>.  
+A specific field maintains a count of links for the first three link types, such as *Related Link Count*, *Hyperlink Count*, and *External Link Count*.  
 
 ::: moniker-end 
 
@@ -55,7 +55,7 @@ A specific field maintains a count of links for the first three link types, such
 - [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
 - [**External link types**](#external-link-types): connects a work item to an external object, such as a code object, build, or storyboard.   
 
-A specific field maintains a count of links for each of these link types, such as <em>Related Link Count</em>, <em>Hyperlink Count</em>, and <em>External Link Count</em>.  
+A specific field maintains a count of links for each of these link types, such as *Related Link Count*, *Hyperlink Count*, and *External Link Count*.  
 
 ::: moniker-end 
 
@@ -144,7 +144,7 @@ The following table describes the work item link types you can specify to scope 
    - Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.
    - Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.
 
-   Restrictions and recommendations:- Use Excel to bulk edit both work items and parent-child links. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+   - Restrictions and recommendations:- Use Excel to bulk edit both work items and parent-child links. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
    - A work item can have only one Parent. A parent work item can have many children.
    - Only use parent-child links to link work items in the same project. This action is recommended if you plan to use Excel to modify or update work item data.
  
@@ -219,6 +219,7 @@ The following table describes the work item link types you can specify to scope 
    :::column-end:::
    :::column span="3":::
    System.LinkTypes.Dependency  
+
    Topology type: Dependency  
    Link category: System-defined  
    Choose **Predecessor** link type when linking to a work item that should be completed *prior* to the work item you are linking from. Choose **Successor** link type when linking to a work item that should be completed *after* to the work item you are linking from.
@@ -231,8 +232,11 @@ The following table describes the work item link types you can specify to scope 
    - Supports one-to-many relationships.
    - Find and view predecessor work items and their successor work items in a two-tiered, direct links query view.
 
-   Restrictions and recommendations:- An error appears when you attempt to create links that define circular relationships.
-   - Create predecessor-successor links only to work items that are within the same project.<br />
+   Restrictions and recommendations:-  
+
+   - An error appears when you attempt to create links that define circular relationships.
+   - Create predecessor-successor links only to work items that are within the same project.  
+   
    You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the project for which the query is defined are imported.   
    :::column-end:::
 :::row-end:::
@@ -290,13 +294,13 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
    :::column span="1":::
    **Link name**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Tool supported**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Artifact type**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Usage**
    :::column-end:::
 :::row-end:::
@@ -304,13 +308,13 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
    :::column span="1":::
    Hyperlink
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Work item tracking
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Hyperlink
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Used to link a work item to a URL. Note that **Workitem Hyperlink** is the name of this link type in the [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list). 
    :::column-end:::
 :::row-end:::
@@ -446,7 +450,7 @@ The following table describes the external link types you can choose when adding
       Release pipeline
    :::column-end:::
    :::column span="":::
-      Used to link a release to a work item. The system creates a link of this type when a user enables the <strong>Report deployment status to Work</strong> option for a release definition. To learn how to set this option, see [Release pipelines, How do I integrate and report release status?](../../pipelines/release/index.md#how-do-i-integrate-and-report-release-status) 
+      Used to link a release to a work item. The system creates a link of this type when a user enables the **Report deployment status to Work** option for a release definition. To learn how to set this option, see [Release pipelines, How do I integrate and report release status?](../../pipelines/release/index.md#how-do-i-integrate-and-report-release-status) 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -488,7 +492,7 @@ The following table describes the external link types you can choose when adding
       TcmResultAttachment
    :::column-end:::
    :::column span="":::
-      Used to link a work item to an attachment associated with a test result. These links appear when you associate a work item with a test result from <strong>Test</strong> or Microsoft Test Manager. 
+      Used to link a work item to an attachment associated with a test result. These links appear when you associate a work item with a test result from **Test** or Microsoft Test Manager. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -530,7 +534,7 @@ The following table describes the external link types you can choose when adding
       Tag
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a tag that&#39;s been defined for a git commit or git repository. See <a href="../../repos/git/command-prompt.md" data-raw-source="[Work from the Git command prompt](../../repos/git/command-prompt.md)">Work from the Git command prompt</a> for more information.
+      Used to link a work item to a tag that&#39;s been defined for a git commit or git repository. See [Work from the Git command prompt](../../repos/git/command-prompt.md) for more information.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -544,7 +548,7 @@ The following table describes the external link types you can choose when adding
       TcmResult
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a test result. These links appear when you associate a work item with a test result from <strong>Test</strong> or Microsoft Test Manager.  
+      Used to link a work item to a test result. These links appear when you associate a work item with a test result from **Test** or Microsoft Test Manager.  
    :::column-end:::
 :::row-end:::
 :::row:::
