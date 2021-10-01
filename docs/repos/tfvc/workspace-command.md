@@ -39,6 +39,9 @@ tf workspace [/collection:TeamProjectCollectionUrl] [/comment: ("comment"|@comme
 
 ## Parameters
 
+
+### Argument
+
 |        **Argument**        |                                                                                         **Description**                                                                                         |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      *workspacename*       |                                                 Specifies a name for the workspace which to create, edit, delete, or display information about.                                                 |
@@ -49,6 +52,8 @@ tf workspace [/collection:TeamProjectCollectionUrl] [/comment: ("comment"|@comme
 |         *username*         |                                    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                    |
 | *TeamProjectCollectionUrl* | The URL of the project collection that contains the workspace about which you want to create, edit, delete, or display information (for example, http://myserver:8080/tfs/DefaultCollection). |
 |        *ownername*         |                                                                          Provides a value to the **/newowner** option.                                                                          |
+
+### Option
 
 |**Option**|**Description**|
 |---|---|
