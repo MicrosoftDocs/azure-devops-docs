@@ -28,7 +28,7 @@ With SQL Server Reporting Services, you gain access to many default Excel and SQ
 Without these services, you can [create status and trend charts from work item queries](../dashboards/charts.md) directly from the operational data stores.
 
 ## View, add, update, or customize reports or report functionality
-You use work item fields to;
+You use work item fields to:
 - Track data for a work item type.
 - Define the filter criteria for queries.
 - Design reports.
@@ -52,9 +52,6 @@ A user who has permission to view the data in the warehouse can view data for al
 ### Resolving schema conflicts and managing the data warehouse
 
 Schema conflicts occur when a set of attributes for reportable fields differs across team project collections. Schema conflicts might block processing of the data warehouse and the Analysis Services cube. Correct conflicts to unblock processing of the warehouse and for reports to work correctly. See [Resolve schema conflicts that are occurring in the data warehouse](resolve-schema-conflicts.md).
-
-. 
-
 
 ## Manage and troubleshoot the data warehouse and analysis services cube
 You can manage the warehouse and analysis services cube to address the following scenarios:
