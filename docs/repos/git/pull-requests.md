@@ -874,3 +874,39 @@ To copy changes made in a PR to another branch in your repo, follow these steps:
 
 There are other aspects you should consider before making this change. For more information, see [Change the default branch](change-default-branch.md).
 
+## Multiple merge bases issue
+
+The **Files** tab in a PR detects diffs by three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their common merge base. The algorithm is a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there is more than one true base. In most repositories this situation is rare, but in large repositories with many active users, it can be common.
+
+The following scenarios can cause multiple bases:
+
+- Cross-merges between different branches
+- Active reuse of feature branches
+- Handling aftermaths of main branch reverts
+- Other non-intuitive and convoluted manipulations with reverts, cherry picks, and merges
+
+Multiple merge base detection is part of security awareness. If there are multiple merge bases, the file-diff algorithm for the user interface (UI) might not properly detect file changes, depending on which merge base was chosen. The multiple merge base warning only happens if the files affected in the PR have different versions between the merge bases.
+
+### Potential security risks of merging from multiple bases
+
+- A malicious user could abuse the UI algorithm to commit malicious changes that aren't present in the PR.
+- If changes proposed in the PR are already in the target branch, they're displayed in the **Files** tab, but they might not trigger branch policies that are mapped to folder changes.
+- Two sets of changes to the same files from multiple merge bases might not be present in the PR. That case might create treacherous logic gaps.
+
+### How to resolve the multiple merge bases issue
+
+Having multiple merge bases isn't necessarily bad, but you should double-check that everything is fine. To get rid of multiple merge bases, tie branches to a single common ancestor. Either rebase your branch on target, or merge target into main. Those actions get rid of the warning message and help you check if the actual changes are fine.
+
+One approach is to soft reset and stash your progress before rebasing or merging. You can then create a new branch or rebase an empty one, and apply your changes from a clear point. This process might require a force push to remote if your changes are already there.
+
+### How to avoid the multiple merge bases issue
+
+Here are general tips for avoiding the multiple merge base issue:
+
+- When preparing a PR, create feature branches from the latest versions of the main or release branch.
+- Avoid creating branches that don't originate directly from stable branches of your repository, unless required.
+
+### What to do if the multiple merge bases issue reappears
+
+In large repos with many active contributors, this issue can be especially inconvenient. Even if you get rid of multiple bases via merge, the situation might reappear. If someone closes a longstanding PR, that can recreate the situation. Even though build policies and tests are running, you have no means to complete the PR. Resetting and starting a new branch might help. If nothing is changed, your changes are probably clear, even if the situation repeats itself.
+
