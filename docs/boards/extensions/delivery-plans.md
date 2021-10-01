@@ -198,7 +198,7 @@ You can interact with the plan in the following ways:
 - To view details for a team, expand the team row by choosing **Expand team row**.  
 - To expand and collapse all team rows, choose **Expand all team rows** or **Collapse all team rows** next to **Teams**. (Enter **u** to collapse, **o** to expand all rows). 
 - Enter **t** to quickly toggle fields shown on cards to just the Title or all other card field settings 
-- To edit the plan and [change the fields displayed on the cards](#card-settings), choose **Configure plan settings**:::image type="icon" source="media/plans/gear-icon.png" border="false":::. 
+- To edit the plan and [change the fields displayed on the cards](#card-settings), choose **Configure plan settings** :::image type="icon" source="media/plans/gear-icon.png" border="false":::. 
 
 
 In the following example, Team 1 features expanded, two items are scheduled for delivery in Sprint 50. 
@@ -244,7 +244,7 @@ To quickly change the cards to only show their Title, enter the keyboard shortcu
 > ![Cards showing the Title only](media/plans/plans-view-5.png)   
 
 
-## Learn eyboard shortcuts
+## Learn keyboard shortcuts
 
 You can use the following keyboard shortcuts when [interacting with a delivery plan](../../boards/plans/review-team-plans.md). To view the valid shortcuts, enter **?** when viewing a plan from the **Boards>Plans** or **Work>Plans** page.
 
