@@ -1,14 +1,14 @@
 ---
 title: Data model for Analytics
 titleSuffix: Azure DevOps 
-description: Describes the EntityTypes and relationships provided by Analytics for Azure DevOps  
+description: Learn about the EntityTypes and relationships provided by Analytics for Azure DevOps.  
 ms.technology: devops-analytics
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177   
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/21/2021
+ms.date: 09/30/2020
 ---
 
 # Data model for Analytics  
@@ -16,7 +16,7 @@ ms.date: 09/21/2021
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-Analytics data model for Azure DevOps consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](https://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
+Analytics data model for Azure DevOps consists of entity sets, whose members (entities) contain properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](https://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to other properties for selecting, filtering, and grouping.
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
@@ -124,11 +124,11 @@ The following **EntityTypes** and **EntitySets** are supported with the **v3.0-p
 
 ## Composite entities
 
-Composite entities support specific scenarios. They are composed from simpler entities, often require more computing resources to generate, and may return larger result sets. To achieve the best performance and avoid unnecessary throttling, ensure that you query the correct entity for your scenario.
+Composite entities support specific scenarios. They're composed from simpler entities, often require more computing resources to generate, and may return larger result sets. To achieve the best performance and avoid unnecessary throttling, ensure that you query the correct entity for your scenario.
 
-For example, **WorkItemSnapshot** combines **WorkItemRevisions** and **Dates** such that each date has one revision for each work item. This representation supports OData queries that focus on trend data for a filtered set of work items. However, you should not use this composite entity to query the current state of work items. Instead, you should use the **WorkItems** entity set to generate a more quick-running query.
+For example, **WorkItemSnapshot** combines **WorkItemRevisions** and **Dates** such that each date has one revision for each work item. This representation supports OData queries that focus on-trend data for a filtered set of work items. However, you shouldn't use this composite entity to query the current state of work items. Instead, you should use the **WorkItems** entity set to generate a more quick-running query.
 
-Similarly, some entities may contain all historic values, while others may only contain current values. **WorkItemRevision** contains all work item history, which you should not use in scenarios where the current values are of interest.
+Similarly, some entities may contain all historic values, while others may only contain current values. **WorkItemRevision** contains all work item history, which you shouldn't use in scenarios where the current values are of interest.
 
 ## Relationships
 
