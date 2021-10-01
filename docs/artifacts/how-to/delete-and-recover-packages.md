@@ -217,7 +217,7 @@ To configure retention policies:
 1. Select the **Feed details** tab, and then select the **Enable package retention** checkbox. Then enter values for:
 
     - **Maximum number of versions per package**: How many versions of a package you want to keep.
-    - **Days to keep recently downloaded packages**. Packages will be deleted only if they haven't been downloaded for the number of days set in here.
+    - **Days to keep recently downloaded packages**: Packages will be deleted only if they haven't been downloaded for the number of days set in here.
 
     :::image type="content" source="../media/retention-policy-settings.png" alt-text="Screenshot that shows how to enable retention policies for your feed.":::
     
@@ -237,7 +237,7 @@ To configure retention policies:
 1. From the **Retention** tab, enter values for:
 
     - **Maximum number of versions per package**: How many versions of a package you want to keep.
-    - **Days to keep recently downloaded packages**. Packages will be deleted only if they haven't been downloaded for the number of days set in here.
+    - **Days to keep recently downloaded packages**: Packages will be deleted only if they haven't been downloaded for the number of days set in here.
     
     :::image type="content" source="../media/retention-policy-settings-tfs.png" alt-text="Screenshot that shows retention policies in Team Foundation Server.":::
    
