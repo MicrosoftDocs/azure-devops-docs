@@ -103,7 +103,7 @@ One of the main choices teams have is choosing the work item types they use to t
    :::column span="2":::
      **Supports Scrum methods**  
      Recommended for teams that follow Scrum methods and want to track time associated with work.  
-     - Quickly define and prioritize backlog items: [Product backlog](backlogs/create-your-backlog.md)</li>
+     - Quickly define and prioritize backlog items: [Product backlog](backlogs/create-your-backlog.md)
      - Forecast sprints using team velocity: [Forecast](sprints/forecast.md)  
      - Plan sprints: [Backlog Planning tool](sprints/assign-work-sprint.md)  
      - Plan and track capacity: [Sprint capacity tool](sprints/set-capacity.md)

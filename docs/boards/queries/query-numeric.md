@@ -167,7 +167,7 @@ Then, add a stacked bar chart that sums the Story Points.
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-<img src="media/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart." />
+![Configure chart, sum of story points per iteration, stacked bar chart.](media/query-effort-config-chart-sum-story-points-iteration.png)
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
@@ -191,7 +191,7 @@ Then, add a stacked area trend chart that sums the Story Points.
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-<img src="media/query-effort-config-chart-sum-story-points-burnup.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" />
+![Configure chart, sum of story points per iteration, stacked bar chart](media/query-effort-config-chart-sum-story-points-burnup.png)
 ::: moniker-end
 
 
@@ -222,7 +222,7 @@ Add Remaining Work as a column option to the query and save. To view a sum of th
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-<img src="media/example-query-config-chart-sum-remaining-work-pivot-chart.png" alt="Configure chart, sum of remaining work by developer, area, pivot chart" /> 
+![Configure chart, sum of remaining work by developer, area, pivot chart](media/example-query-config-chart-sum-remaining-work-pivot-chart.png)
 ::: moniker-end
 
 ::: moniker range="tfs-2013"

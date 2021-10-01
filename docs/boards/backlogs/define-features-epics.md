@@ -71,7 +71,7 @@ A feature typically represents a shippable component of software. An epic repres
 
 To focus on one level of a backlog at a time, choose the name of the backlog you want to view. If you don&#39;t see all three backlog levels&mdash;
 Epics, Features, and Backlog items&mdash;
-you can <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[enable them for your team](../../organizations/settings/select-backlog-navigation-levels.md)">enable them for your team</a>. 
+you can [enable them for your team](../../organizations/settings/select-backlog-navigation-levels.md). 
 
 For example, when you choose **Epics**, you'll see a list of all Epics in your team's active area paths. From there, you can drill down to see child features and backlog items.  
 

@@ -255,12 +255,14 @@ In your organization if you are using a different email or tenant for Microsoft 
    :::column-end:::
    :::column span="2":::
 
-<u>email1@abc.com</u> (tenant 1)
+ - email1@abc.com  
+   (tenant 1)
 
    :::column-end:::
    :::column span="2":::
 
-<u>email1@abc.com</u> (tenant 1)
+ - email1@abc.com  
+   (tenant 1)
 
    :::column-end:::
    :::column span="3":::
@@ -277,12 +279,14 @@ Sign in using **Sign in** button.
    :::column-end:::
    :::column span="2":::
 
-<u>email1@abc.com</u> (tenant 1)
+ - email1@abc.com  
+   (tenant 1)
 
    :::column-end:::
    :::column span="2":::
 
-<u>email1@abc.com</u> (tenant 2)
+ - email1@abc.com  
+   (tenant 2)
 
    :::column-end:::
    :::column span="3":::
@@ -303,12 +307,14 @@ Sign in using **Sign in** button.
    :::column-end:::
    :::column span="2":::
 
-<u>email1@abc.com</u> (tenant 1) 
+ - email1@abc.com  
+   (tenant 1) 
 
    :::column-end:::
    :::column span="2":::
 
-<u>email2@pqr.com</u> (tenant 2) 
+ - email2@pqr.com  
+   (tenant 2) 
 
    :::column-end:::
    :::column span="3":::
@@ -325,12 +331,14 @@ Sign in using **Sign in with different email address**, in the email ID picker u
    :::column-end:::
    :::column span="2":::
 
-<u>email1@abc.com</u> (tenant 1) 
+ - email1@abc.com  
+   (tenant 1) 
 
    :::column-end:::
    :::column span="2":::
 
-<u>email2@pqr.com</u> (non default tenant 3)
+ - email2@pqr.com  
+   (non default tenant 3)
 
    :::column-end:::
    :::column span="3":::

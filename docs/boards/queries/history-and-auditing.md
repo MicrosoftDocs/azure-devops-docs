@@ -22,7 +22,7 @@ The history of a work item tells you who opened the item, what changed, and why.
 
 ## Supported operators and macros 
 
-Query clauses that specify the **History** field can use the **Contains Words** and **Does Not Contain Words** operators. Search against an exact phrase or to use the wildcard character, <b>*</b>. You can only use the wildcard character at the end of a partial word or phrase.
+Query clauses that specify the **History** field can use the **Contains Words** and **Does Not Contain Words** operators. Search against an exact phrase or to use the wildcard character, *. You can only use the wildcard character at the end of a partial word or phrase.
 
 The **History** field is automatically indexed for full-text search when full-text search is available. See Full-Text and partial word searches 
 
@@ -36,11 +36,11 @@ You can use either the web portal or Team Explorer to view the history of a work
 <a id="team-services" /> 
 
 ::: moniker range=">= tfs-2017"
-<img src="media/hist-audit-query-ts-bt.png" alt="Screenshot of Query Editor to Search for items based on words contained in the History field." /> 
+![Screenshot of Query Editor to Search for items based on words contained in the History field.](media/hist-audit-query-ts-bt.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-<img src="media/ALM_HA_HistoryQuery.png" alt="Screenshot of Query Editor to Search for items based on words contained in the History field, earlier versions." /> 
+![Screenshot of Query Editor to Search for items based on words contained in the History field, earlier versions.](media/ALM_HA_HistoryQuery.png) 
 ::: moniker-end
 
 
@@ -104,7 +104,8 @@ You can filter for work items by the date on which they were changed or for a sp
    :::column-end:::
    :::column span="1":::
    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`History Contains Words stack traces`  `And State Was Ever Closed`  `And State <>  Closed`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`History Contains Words stack traces`  `And State Was Ever Closed`  
+`And State <>  Closed`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -114,7 +115,9 @@ You can filter for work items by the date on which they were changed or for a sp
    :::column-end:::
    :::column span="1":::
    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`State = Done`  `And Closed Date > 7/1/2015`  `And Closed Date <= 7/21/2015`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`State = Done`  
+`And Closed Date > 7/1/2015`  
+`And Closed Date <= 7/21/2015`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -124,7 +127,8 @@ You can filter for work items by the date on which they were changed or for a sp
    :::column-end:::
    :::column span="1":::
    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`History Contains Words MyName`  `Or Assigned To Was Ever _ <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`History Contains Words MyName`  
+`Or Assigned To Was Ever _ @Me`  
    :::column-end:::
 :::row-end:::
   
@@ -134,7 +138,7 @@ You can filter for work items by the date on which they were changed or for a sp
 - Type the complete word or phrase that is specified in the **History** field of those work items that you want to find.
 - Enter the full text for the word that you want to search. The **History** field is indexed for full-text search. If you enter only a partial word, the query will not return work items that contain the full word. For example, if the **History** field contains the phrase *reproducible behavior* and you search for *repro*, the work item will not be found. However, if you search for the complete word *reproducible*, the work item will be found. You can also search for the string with a wild card, such as `repro*`. 
 - The query editor ignores common words or stop words as defined in  [Configure and Manage Stopwords and Stoplists for Full-Text Search](/sql/relational-databases/search/configure-and-manage-stopwords-and-stoplists-for-full-text-search).
-- On the query editor toolbar, choose <img src="../media/icons/run_query.png" alt="Run query"/> or <img src="../media/icons/run_query_te.png" alt="Run query, earlier version"/> icon and confirm that your query returns expected results. 
+- On the query editor toolbar, choose ![Run query](../media/icons/run_query.png) or ![Run query, earlier version](../media/icons/run_query_te.png) icon and confirm that your query returns expected results. 
 - If you don&#39;t receive the results you expect, adjust the word or phrase that you entered, and run the query again. 
  
 
