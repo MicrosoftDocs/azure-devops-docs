@@ -9,7 +9,7 @@ ms.reviewer: mopatel
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 09/29/2021
+ms.date: 10/01/2021
 ---
 
 # Plan and track dependencies using the Dependency Tracker

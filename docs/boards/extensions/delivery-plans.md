@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 09/29/2021
+ms.date: 10/01/2021
 ---
 
 # Delivery Plans 1.0 Marketplace extension
