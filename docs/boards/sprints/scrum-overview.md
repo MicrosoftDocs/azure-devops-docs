@@ -103,7 +103,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 For example, by selecting Sprints 1 through 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
 
-<img src="media/define-sprints/selected-team-iterations-vsts.png" alt="Azure Boards and TFS 2017, Selected iterations generate sprint backlogs" />
+![Azure Boards and TFS 2017, Selected iterations generate sprint backlogs](media/define-sprints/selected-team-iterations-vsts.png)
 
 ::: moniker-end  
 
@@ -113,7 +113,7 @@ For example, by selecting Sprints 1 through 6, the Fabrikam Fiber team gets acce
 
 For example, by selecting Sprints 1 through 4, the Fabrikam Fiber team gets access to four sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
 
-<img src="media/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" />
+![TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs](media/selected-iterations-generate-sprint-backlogs.png)
 
 ::: moniker-end  
 
@@ -124,7 +124,6 @@ Once you've [defined iteration (sprint) paths and configured team iterations](..
 
 At the start of each sprint, you'll want to plan the work that your team can commit to. The three Agile tools that support this work include the sprint backlog, capacity planning, and capacity bars. The sprint backlog contains a filtered subset of backlog items whose iteration path corresponds to the current sprint. 
 
-   <table valign="top" > 
 :::row::: 
    :::column span="1":::
    
@@ -231,7 +230,7 @@ After several sprints, use the [Velocity chart](../../report/dashboards/team-vel
       By minimizing the variability of backlog item size&mdash;effort or story points&mdash;you gain more reliable velocity metrics.
    :::column-end::: 
    :::column span="1":::
-      <img src="media/velocity-chart.png" alt="Velocity chart"/>
+      ![Velocity chart](media/velocity-chart.png)
    :::column-end:::
 :::row-end:::
 ---
@@ -242,7 +241,7 @@ After several sprints, use the [Velocity chart](../../report/dashboards/team-vel
       By plugging in a velocity, you can see which items are within scope for the set of sprints the team has selected. As shown here, a velocity of 15 indicates that it will take three sprints to complete the work shown.*
    :::column-end::: 
    :::column span="1":::
-      <img src="media/forecast-tool.png" alt="Forecast tool"/>
+      ![Forecast tool](media/forecast-tool.png)
    :::column-end:::
 :::row-end:::
 ---
