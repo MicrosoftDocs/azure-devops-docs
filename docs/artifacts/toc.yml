@@ -57,6 +57,8 @@
     - name: NuGet.org upstream source
       href: nuget/upstream-sources.md
       displayName: upstream sources, upstreams, artifact feeds 
+    - name: Publish from GitHub Actions
+      href: quickstarts/github-actions.md
   - name: Npm 
     items:
     - name: npm quickstart
@@ -97,9 +99,6 @@
     - name: Use packages from Maven Central
       href: maven/upstream-sources.md
       displayName: maven packages, maven artifacts, maven central
-    - name: Install a Maven artifact using Gradle
-      href: gradle/pull-package-gradle.md
-      displayName: maven gradle, maven artifacts, gradle
     - name: Publish a Maven artifact using Gradle
       href: gradle/publish-package-gradle.md
       displayName: gradle, maven artifacts, maven feed
