@@ -11,7 +11,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops'  
-ms.date: 01/30/2020
+ms.date: 09/21/2021
 ---
 
 # Test duration trend sample report
@@ -40,9 +40,8 @@ An example is shown in the following image.
 
 ```
 let
-   Source = OData.Feed (""
-in
-    Source
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v4.0-preview/TestResultsDaily?
+$apply=filter("
                 &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"And Date/Date ge {startdate} "
         &"And Workflow eq 'Build' "
@@ -92,7 +91,7 @@ Each query contains the following strings that you must substitute with your val
 - {organization} - Your organization name
 - {project} - Your team project name
 - {pipelinename} - Your pipeline name. Example: **Fabrikam hourly build pipeline**.
-- {startdate} - The date to start your report. Format: YYYY-MM-DDZ. Example: **2019-09-04Z** represents September 4, 2019. Don't enclose in quotes or brackets and use two digits for both, month and date.
+- {startdate} - The date to start your report. Format: YYYY-MM-DDZ. Example: **2021-09-01Z** represents September 1, 2021. Don't enclose in quotes or brackets and use two digits for both, month and date.
 
 ### Query breakdown
 
@@ -147,6 +146,7 @@ The following table describes each part of the query.
 </tbody>
 </table>
 
+[!INCLUDE [temp](includes/query-filters-test.md)]
 
 ## Power BI transforms
 

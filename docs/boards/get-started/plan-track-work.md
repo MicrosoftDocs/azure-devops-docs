@@ -1,22 +1,22 @@
 ---
-title: Plan & track work, Agile, Basic, Scrum, or CMMI process
+title: Plan and track work in Azure Boards with Basic or Agile processes
 titleSuffix: Azure Boards 
-description: Plan and track work in your new team project on Azure Boards using the Agile, Basic, Scrum, or CMMI process
+description: Learn how to plan and track work in your new team project in Azure Boards.
 ms.custom: boards-get-started
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 09/21/2020
+ms.date: 09/15/2021
 ---
 
 
-# Plan and track work  
+# Plan and track work in Azure Boards
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board for the Basic process, or creating user stories and tasks using for the Agile process. 
+You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board. You can learn the Basic process or the Agile process for creating these items. 
 
 Choose one of the following four system processes&mdash;**Agile**, **Basic**, **Scrum**, or **Capability Maturity Model Integration (CMMI)**&mdash;for guidance depending on what process was selected for your project. For an overview of each of these processes, see [Choose a process](../work-items/guidance/choose-process.md).
 
@@ -38,7 +38,7 @@ Here we show how to add user stories and child tasks from the web portal and add
 
 #### [Basic process](#tab/basic-process) 
 
-The Basic process provides three work item types&mdash;epics, issues, and tasks&mdash;to plan and track work. We recommend you start by adding issues to track your user stories, bugs, or feature items. If you need to group them into a hierarchy, you can define epics. If you want to track additional details of work, you can add tasks to an issue. 
+The Basic process provides three work item types&mdash;epics, issues, and tasks&mdash;to plan and track work. We recommend you start by adding issues to track your user stories, bugs, or feature items. If you need to group them into a hierarchy, you can define epics. To track other work details, you can add tasks to an issue. 
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
@@ -47,7 +47,7 @@ The Basic process provides three work item types&mdash;epics, issues, and tasks&
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
-Here we show how to add issues and child tasks from the web portal and add details to those work items . 
+Here we show how to add issues and child tasks from the web portal and add details to those work items. 
 
 
 #### [Scrum process](#tab/scrum-process) 
@@ -75,7 +75,7 @@ The CMMI process provides several work item types&mdash;for example, requirement
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
-Here we show how to add user stories and child tasks from the web portal and add details to those work items . 
+Here we show how to add user stories and child tasks from the web portal and add details to those work items. 
 
 
 * * * 
@@ -127,7 +127,7 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 
 <a id="define-new-work">  </a>
 
-## Open the Kanban board 
+## Open your Kanban board 
 
 A Kanban board is provisioned with the addition of each project and each team. You can only create or add Kanban boards to a project by adding another team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
@@ -313,7 +313,7 @@ Choose **Save & Close** when done.
 [!INCLUDE [temp](../includes/section-basic-field-descriptions.md)] 
 
 
-## Update status
+## Update work status
 
 The State field tracks the status of a work item. With the Kanban board, you can quickly update the status of backlog items by dragging and dropping them to a different column. This feature requires that you have Basic access or higher.  
 
@@ -388,7 +388,7 @@ Tasks that you create from the Kanban board show up on your sprint taskboard. Al
 	> [!div class="mx-imgBorder"]  
 	> ![Add first task, Agile process. ](media/plan-track-work/prep-images-task.png) 
 
-1. If you have a number of tasks to add, simply keep typing your task titles and type Enter.   
+1. If you have many tasks to add, keep typing your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Several tasks added, Agile process.](media/plan-track-work/add-several-tasks.png)  
@@ -437,7 +437,7 @@ Tasks that you create from the Kanban board show up on your sprint taskboard. Al
 	> [!div class="mx-imgBorder"]  
 	> ![Add first task, Scrum process.](media/plan-track-work/prep-images-task.png) 
 
-1. If you have a number of tasks to add, simply keep typing your task titles and type Enter.   
+1. If you have many tasks to add, keep typing your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Several tasks added, Scrum process.](media/plan-track-work/add-several-tasks.png)  
@@ -597,7 +597,7 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 
 
 
-## Try this next  
+## Next step  
  
 > [!div class="nextstepaction"]
 > [Customize your board](customize-boards.md)

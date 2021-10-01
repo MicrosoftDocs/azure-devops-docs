@@ -1,14 +1,14 @@
 ---
 title: Open bugs sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to guide to generate an open bugs Power BI report  
+description: How-to generate an open bugs Power BI report  
 ms.technology: devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/07/2019
+ms.date: 09/21/2021
 ---
 
 # Open bugs sample report 
@@ -18,7 +18,7 @@ ms.date: 08/07/2019
 This article shows you how to display, for a given set of open Bugs, a breakdown by State and Assigned To fields. An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Open Bugs - Report](media/odatapowerbi-openbugs-report.png)
+> ![Open Bugs sample matrix report](media/reports-boards/open-bugs-report.png)
 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
@@ -93,6 +93,8 @@ The following table describes each part of the query.
 </table>
 
 
+[!INCLUDE [temp](includes/query-filters-work-items.md)]
+
 ## Power BI transforms
 
 [!INCLUDE [temp](includes/sample-expandcolumns.md)]
@@ -108,7 +110,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Open Bugs - Fields](media/odatapowerbi-openbugs-fields.png)
+> ![Sample - Boards Open Bugs - Fields](media/reports-boards/open-bugs-fields.png)
 
 For a simple report, do the following steps:
 
@@ -121,7 +123,7 @@ For a simple report, do the following steps:
 The example report displays. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Open Bugs - Report](media/odatapowerbi-openbugs-report.png)
+> ![Sample - Boards Open Bugs - Report](media/reports-boards/open-bugs-report.png)
 
 [!INCLUDE [temp](includes/sample-multipleteams.md)]
 

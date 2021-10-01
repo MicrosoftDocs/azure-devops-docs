@@ -22,4 +22,5 @@ ms.technology: devops-cicd-tasks
     #jobParameters: # Optional
     #retryCount: #Optional
     #delayBetweenRetries: #Optional
+    #failOnUnstableResult: # Optional
 ```

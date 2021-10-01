@@ -2,19 +2,19 @@
 title: Work tracking, process, and project limits
 titleSuffix: Azure DevOps Services
 description: Limits placed on the number of objects that can be specified for work tracking objects, queries and more  
-ms.custom: "inherited-process, linked-from-support"
+ms.custom: "inherited-process, linked-from-support, cross-project"
 ms.technology: devops-agile
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: ">= tfs-2013"
+monikerRange: "<= azure-devops"
 ms.date: 06/09/2021
 ---
 
 # Work tracking, process, and project limits
 
-[!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 This article defines operational and object limits placed on work tracking operations and work tracking customization. In addition to the specified hard limits on select objects, certain practical limits apply. When you customize work item types (WITs), consider the limits placed on objects. 
 
@@ -69,11 +69,11 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | Backlogs | 1,000 work items | 
 | Boards | 1,000 cards (excluding those cards in the [*Proposed* and *Completed* workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) | 
 | Taskboard | 1,000 tasks  | 
-| Teams | 5,000 per project | 
+| Teams | 5,000 per organization | 
 | Work item tags | 150,000 tag definitions per organization or collection | 
-| Area Paths | 10,000 per project
+| Area Paths | 10,000 per organization
 | Area Path Depth | 14
-| Iteration Paths | 10,000 per project
+| Iteration Paths | 10,000 per organization
 | Iteration Path Depth | 14
 
 Each backlog can display up to 10,000 work items. This is a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.

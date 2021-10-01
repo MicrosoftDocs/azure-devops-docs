@@ -12,7 +12,7 @@ ms.date: 07/06/2021
 
 # Connect Azure Boards to GitHub (Cloud) 
 
-**Azure Boards** | [**Azure DevOps Server 2020 | Azure DevOps Server 2019**](/azure/devops/boards/github/connect-on-premises-to-github?view=azure-devops-2020&preserve-view=true)
+**Azure Boards** | [**Azure DevOps Server 2020 | Azure DevOps Server 2019**](./connect-on-premises-to-github.md?preserve-view=true&view=azure-devops-2020)
 
 To support linking of GitHub commits and pull requests to Azure Boards work items, you connect your Azure Boards project to GitHub.com repositories. You can then use GitHub for software development while using Azure Boards to plan and track your work. For an overview of the Azure Boards app for GitHub, see [Azure Boards-GitHub integration](index.md).  
 
@@ -314,5 +314,4 @@ See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.m
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 - [Build GitHub repositories](../../pipelines/repos/github.md) 
 - [Build GitHub Enterprise Server repositories](../../pipelines/repos/github-enterprise.md)
-- [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md) 
-
+- [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md)

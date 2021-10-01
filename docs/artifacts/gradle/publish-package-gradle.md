@@ -50,12 +50,12 @@ First, you need a **gradle.properties** file that contains an Azure DevOps Servi
 
 1. Click **New Token**.
 
-Give your token a name, duration, and select the **Packaging (read and write)** scope. 
+1. Give your token a name, duration, and select the **Packaging (read and write)** scope. 
 
-> [!NOTE]
-> You may have to choose "Show all scopes" at the bottom to see the Packaging area.
-
-![Create packaging personal access token](../media/create-packaging-pat.png)
+    > [!NOTE]
+    > You may have to choose "Show all scopes" at the bottom to see the Packaging area.
+    
+    ![Create packaging personal access token](media/create-packaging-pat.png)
 
 1. Click **Create**.
 
@@ -83,9 +83,9 @@ Give your token a name, duration, and select the **Packaging (read and write)** 
 
 1. Open the **gradle.properties** file with a UTF-8-capable text editor and add the following:
 
-```ini
-vstsMavenAccessToken=<PASTE_YOUR_TOKEN_HERE>
-```
+    ```ini
+    vstsMavenAccessToken=<PASTE_YOUR_TOKEN_HERE>
+    ```
 
 1. Replace _<PASTE_YOUR_TOKEN_HERE>_ with the token you created earlier. Save the file when you're done.
 
@@ -99,58 +99,53 @@ vstsMavenAccessToken=<PASTE_YOUR_TOKEN_HERE>
 
 1. Open it with a text editor and add the following snippet:
 
-```groovy
-apply plugin: 'java' 
-apply plugin: 'maven-publish' 
- 
-publishing { 
-    publications { 
-        myPublication(MavenPublication) { 
-            groupId '{your-group-ID-here}' 
-            artifactId '{your-artifact-id-here}' 
-            version '{your-version-number-here}' 
-            artifact '{path-to-your-JAR-file-here}' 
+    ```groovy
+    apply plugin: 'java' 
+    apply plugin: 'maven-publish' 
+     
+    publishing { 
+        publications { 
+            myPublication(MavenPublication) { 
+                groupId '{your-group-ID-here}' 
+                artifactId '{your-artifact-id-here}' 
+                version '{your-version-number-here}' 
+                artifact '{path-to-your-JAR-file-here}' 
+            } 
+        } 
+    
+        // Repositories *to* which Gradle can publish artifacts 
+        repositories { 
+            maven { 
+                url 'https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_packaging/{FeedName}/maven/v1' 
+                credentials { 
+                    username "{FeedName}" 
+                    password System.getenv("SYSTEM_ACCESSTOKEN") != null ? System.getenv("SYSTEM_ACCESSTOKEN") : vstsMavenAccessToken 
+                } 
+            } 
         } 
     } 
-
-    // Repositories *to* which Gradle can publish artifacts 
+     
+    // Repositories *from* which Gradle can download dependencies; it's the same as above in this example
     repositories { 
         maven { 
             url 'https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_packaging/{FeedName}/maven/v1' 
             credentials { 
-                username "{FeedName}"
-                //The Azure DevOps Services build system will use the "SYSTEM_ACCESSTOKEN" to authenticate to Azure DevOps Services feeds 
-                password System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") != null ? System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
+                username "{FeedName}" 
+                password System.getenv("SYSTEM_ACCESSTOKEN") != null ? System.getenv("SYSTEM_ACCESSTOKEN") : vstsMavenAccessToken 
             } 
         } 
     } 
-} 
- 
-// Repositories *from* which Gradle can download dependencies; it's the same as above in this example
-repositories { 
-    maven { 
-        url 'https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_packaging/{FeedName}/maven/v1' 
-        credentials { 
-            username "{FeedName}" 
-            //The Azure DevOps Services build system will use the "SYSTEM_ACCESSTOKEN" to authenticate to Azure DevOps Services feeds 
-            password System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") != null ? System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
-        } 
-    } 
-} 
-```
-
-In the above example, you are publishing artifacts and downloading dependent artifacts from the same organization. You can configure publishing and downloading to use separate organizations, if you prefer. You can use the _project setup_ section, under **Connect to feed** > **Gradle**, as a guide to set up connection to your feed. 
-
-> [!NOTE]
-> You can use the Azure Artifacts connect to feed dialog box to copy the `maven` repository section to use in your build.gradle file.
+    ```
+    
+    In the above example, you are publishing and downloading dependent artifacts from the same organization. You can also configure publishing and downloading to use separate organizations. See [Use predefined variables](../../pipelines/build/variables.md#systemaccesstoken) to lean more about the `System.AccessToken` security token.
 
 1. Replace the following fields with your own values:
 
-- `groupId`: A group ID you associate with your package. Give it a team or organization name so consumers can identify the origin easier.
-- `artifactId`: Your artifact ID number that will be used when publishing your package. Again, give it a meaningful name that specifies the package type and version for example.
-- `version`: Your package version. This number should be incremented for future iterations.
-- `artifact`: Your `.jar` file path. Example: *./target/myJavaClasses.jar*.
-- `feedName`: The name of your feed. If not specified, the default value will be `{OrganizationName}`.
+    - `groupId`: A group ID you associate with your package. Give it a team or organization name so consumers can identify the origin easier.
+    - `artifactId`: Your artifact ID number that will be used when publishing your package. Again, give it a meaningful name that specifies the package type and version for example.
+    - `version`: Your package version. This number should be incremented for future iterations.
+    - `artifact`: Your `.jar` file path. Example: *./target/myJavaClasses.jar*.
+    - `feedName`: The name of your feed. If not specified, the default value will be `{OrganizationName}`.
 
 
 ## Publish your Maven package with Gradle

@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how to define YAML resources that can be consumed anywhere in your pipelines.
 ms.topic: how-to
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 08/12/2021
+ms.date: 08/28/2021
 monikerRange: azure-devops
 ---
 
@@ -148,21 +148,10 @@ These examples are tags set on the continuous integration (CI) pipeline. These t
 ---
 
 > [!IMPORTANT]
-> When you define a resource trigger, if its pipeline resource is from the same repository as the current pipeline, triggering follows the same branch and commit on which the event is raised.
-> But, if the pipeline resource is from a different repository, the current pipeline triggers on the default branch.
+> When you define a resource trigger, if its pipeline resource is from the same repository (say self) as the current pipeline, triggering follows the same branch and commit on which the event is raised.
+> But, if the pipeline resource is from a different repository, the current pipeline triggers on the default branch of the self repository.
 
-### Change default branch for triggers (optional)
 
-Triggers for resources get created based on the default branch configuration of your YAML, which is `main`. However, if you want to configure resource triggers from a different branch, you need to change the default branch for the pipeline. Do the following steps to change the default branch for a pipeline.
-
-1. Go to the pipeline and select **Edit**.
-2. Select  :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **more actions** and choose **Triggers**.
-
-   ![Triggers view in a pipeline](media/triggers-view.png)
-
-3. Select **YAML** > **Get sources**, and then select a source, which is the default branch for your pipeline.
-
-   ![Triggers default branch for a pipeline](media/triggers-default-branch.png)
 
 ### Evaluation of artifact version
 
@@ -197,7 +186,7 @@ If your pipeline gets triggered automatically, the CI pipeline version gets pick
 |Branches     | A new pipeline gets triggered whenever a CI run successfully completes that matches to the branches that are included.        |
 |Tags     | A new pipeline gets triggered whenever a CI run successfully completes that matches all the tags mentioned.        |
 |Stages     | A new pipeline gets triggered whenever a CI run has all the stages mentioned are completed successfully.        |
-|Branches, tags, and stages    | aA new pipeline run gets triggered whenever a CI run matches all the conditions.        |
+|Branches, tags, and stages    | A new pipeline run gets triggered whenever a CI run matches all the conditions.        |
 |Only `trigger: true`    | A new pipeline run gets triggered whenever a CI run successfully completes.        |
 |Nothing    | No pipeline run gets triggered. Triggers are disabled by default unless you specifically enable them.        |
 
@@ -233,7 +222,7 @@ All artifacts from the current pipeline and from all `pipeline` resources are au
 steps:
 - download: [ current | pipeline resource identifier | none ] # disable automatic download if "none"
   artifact: string ## artifact name, optional; downloads all the available artifacts if not specified
-  terns: string # terns representing files to include; optional
+  patterns: string # patterns representing files to include; optional
 ```
 
 ## [Example](#tab/example)
@@ -468,7 +457,7 @@ resources:
       work: boolean # the work directory
 ```
 
-You can use a generic container resource as an image consumed as part of your job, or it can also be used for [Container jobs](../process/container-phases.md).
+You can use a generic container resource as an image consumed as part of your job, or it can also be used for [Container jobs](../process/container-phases.md). If your pipeline requires the support of one or more services, you'll want to create and connect to [service containers](service-containers.md). You can use volumes to share data between services.
 
 ## [Example](#tab/example)
 

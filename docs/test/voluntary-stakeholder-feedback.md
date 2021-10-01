@@ -75,7 +75,7 @@ voluntarily, even if you haven't received a specific
      
    ![Ending your feedback session](media/shared/provide-stakeholder-feedback-12.png)
 
-## See also
+## Related articles
 
 * [Request stakeholder feedback using the Test &amp; Feedback extension](request-stakeholder-feedback.md#request)
 * [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md#provide)
@@ -83,4 +83,4 @@ voluntarily, even if you haven't received a specific
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 
