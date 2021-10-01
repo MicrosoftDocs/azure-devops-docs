@@ -141,7 +141,7 @@ You can create a new PR from:
 
 - [A feature branch pushed to your repo](#from-a-pushed-branch).
 - [The Development section in a linked Azure Boards work item](#from-a-linked-work-item).
-- [The Pull requests page on the project's website](#from-the-pull-requests-page-on-the-web).
+- [The Pull requests page on the project's Azure DevOps website](#from-the-pull-requests-web-page).
 - [Team Explorer in Visual Studio](#from-visual-studio).
 
 ### From a pushed branch
@@ -633,6 +633,7 @@ To keep track of files that have already been reviewed, select **More options** 
 
 :::moniker-end
 
+<a name="complete-the-pull-request"></a>
 ## Complete a pull request
 
 After the PR gets all required approvals and meets all required policies, you can complete the PR.
