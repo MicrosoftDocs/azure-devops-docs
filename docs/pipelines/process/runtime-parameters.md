@@ -3,7 +3,7 @@ title: Use runtime and type-safe parameters
 ms.custom: seodec18
 description: You can use runtime parameters in pipelines or as part of a template 
 ms.topic: conceptual
-ms.date: 06/09/2021
+ms.date: 09/08/2021
 monikerRange: 'azure-devops || >= azure-devops-2020'
 ---
 
@@ -36,10 +36,7 @@ parameters:
   default: ubuntu-latest
   values:
   - windows-latest
-  - windows-latest
   - ubuntu-latest
-  - ubuntu-latest
-  - macOS-latest
   - macOS-latest
 
 trigger: none
@@ -72,10 +69,7 @@ parameters:
   displayName: Pool Image
   values:
   - windows-latest
-  - windows-latest
   - ubuntu-latest
-  - ubuntu-latest
-  - macOS-latest
   - macOS-latest
 - name: test
   displayName: Run Tests?

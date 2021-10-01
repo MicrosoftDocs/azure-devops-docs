@@ -1,7 +1,7 @@
 ---
 title: Understand what you get with Azure Boards  
 titleSuffix: Azure Boards
-description: Main features and functions supported by Azure Boards available from Azure DevOps Services and Team Foundation Server (TFS) 
+description: Learn about the main features and functions supported by Azure Boards that are available from Azure DevOps Services. 
 ms.custom: boards-get-started
 ms.technology: devops-new-user
 ms.assetid:  
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 09/15/2021
 ---
 
 # What is Azure Boards?
@@ -70,7 +70,7 @@ Add and update the status  from **To Do**, **Doing**, and **Done**. Add tasks as
 
 **Prioritize your backlog of issues**
 
-Prioritize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
+Organize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
 
 > [!div class="mx-imgBorder"]  
 > ![Reorder work items](media/about-boards/reorder-backlog.png)  
@@ -104,7 +104,7 @@ Add and update the status from **Proposed**, **Active**, and **Resolved**. Add t
 
 **Prioritize your backlog of requirements**
 
-Prioritize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
+Organize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
 
 > [!div class="mx-imgBorder"]  
 > ![Reorder work items](media/about-boards/cmmi-reprioritize.png)  
@@ -113,9 +113,9 @@ Prioritize work through drag-and-drop on your team backlog. To learn more, see [
 * * * 
 
 
-## Collaborate
+## Collaborate with your team
 
-Collaborate with others through the **Discussion** section of the work item form. Use <strong>@mention</strong>s and **#ID** controls to quickly include others in the conversation or link to other work items. Choose to follow specific issues to get alerted when they are updated. 
+Collaborate with others through the **Discussion** section of the work item form. Use <strong>@mention</strong>s and **#ID** controls to quickly include others in the conversation or link to other work items. Choose to follow specific issues to get alerted when they're updated. 
 
 Create dashboards that track status and trends of work being accomplished.  Set notifications to get alerted when an issue is created or changed. 
 
@@ -157,9 +157,9 @@ To learn more, see one of the following articles:
 - [Add and manage dashboards](../../report/dashboards/dashboards.md)  
 - [Set personal notifications](../../notifications/manage-your-personal-notifications.md).  
 
-## Work in sprints, implement Scrum
+## Plan effectively by working in sprints
 
-Plan sprints by assigning work to current or future sprints. Forecast work that can get completed based on effort estimates. Determine how much work can be done within a sprint. Bulk assign issues and tasks to team members and sprints. 
+Plan sprints by assigning work to current or future sprints. Forecast work that can get completed based on effort estimates. Determine how much work can be done within a sprint. Assign tasks and issues to team members and sprints in bulk. 
 
 
  
@@ -305,7 +305,7 @@ To learn more, see one of the following articles:
 
 ::: moniker range=">= azure-devops-2019"
 
-## Connect with GitHub
+## Connect Azure Boards to GitHub
 
 If you use Azure Boards connected with GitHub, you can also do the following tasks:
 
@@ -322,13 +322,13 @@ Azure Boards provides the following interactive lists and signboards. Each tool 
 
 ::: moniker range=">= azure-devops-2019"
 
-- [**Work items**](../work-items/view-add-work-items.md): Use to quickly find work items that are assigned to you. Pivot or filter work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.
+- [**Work items**](../work-items/view-add-work-items.md): Use to quickly find work items that are assigned to you. Pivot or filter work items based on other criteria. Other criteria includes work items that you follow, that you're mentioned in, or that you viewed or updated.
 - [**Boards**](../boards/kanban-quickstart.md): Boards present work items as cards and support quick status updates through drag-and-drop. The feature is similar to sticky notes on a physical whiteboard. Use to implement Kanban practices and visualize the flow of work for a team.
-- [**Backlogs**](../backlogs/create-your-backlog.md): Backlogs present work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. Use to plan, prioritize, and organize work.  
+- [**Backlogs**](../backlogs/create-your-backlog.md): Backlogs present work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. Use to plan and organize work.  
 - [**Sprints**](../sprints/assign-work-sprint.md): Sprint backlogs and taskboards provide a filtered view of work items a team assigned to a specific iteration path, or sprint. From your backlog, you can assign work to an iteration path by using drag-and-drop. You can then view that work in a separate *sprint backlog*. Use to implement Scrum practices.
 - [**Queries**](../queries/view-run-query.md): Queries are filtered lists of work items based on criteria that you define by using a query editor. You use queries to support the following tasks:
 	- Find groups of work items with something in common.
-	- List work items for the purposes of sharing with others or doing bulk updates. Triage a set of items to prioritize or assign.
+	- List work items for the purposes of sharing with others or doing bulk updates. Triage a set of items to organize or assign.
 	- Create status and trend charts that you then can add to dashboards.  
 
 ::: moniker-end
@@ -338,11 +338,11 @@ Azure Boards provides the following interactive lists and signboards. Each tool 
 ::: moniker range="<= tfs-2018"
 
 - [**Boards**](../boards/kanban-quickstart.md): Boards present work items as cards and support quick status updates through drag-and-drop. The feature is similar to sticky notes on a physical whiteboard. Use to implement Kanban practices and visualize the flow of work for a team.
-- [**Backlogs**](../backlogs/create-your-backlog.md): Backlogs present work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. Use to plan, prioritize, and organize work.  
+- [**Backlogs**](../backlogs/create-your-backlog.md): Backlogs present work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. Use to plan and organize work.  
 - [**Sprints**](../sprints/assign-work-sprint.md): Sprint backlogs and taskboards provide a filtered view of work items a team assigned to a specific iteration path, or sprint. From your backlog, you can assign work to an iteration path by using drag-and-drop. You can then view that work in a separate *sprint backlog*. Use to implement Scrum practices.
 - [**Queries**](../queries/view-run-query.md): Queries are filtered lists of work items based on criteria that you define by using a query editor. You use queries to support the following tasks:
 	- Find groups of work items with something in common.
-	- List work items for the purposes of sharing with others or doing bulk updates. Triage a set of items to prioritize or assign.
+	- List work items for the purposes of sharing with others or doing bulk updates. Triage a set of items to organize or assign.
 	- Create status and trend charts that you then can add to dashboards.  
 
 ::: moniker-end
@@ -368,7 +368,7 @@ To track work across several projects, you can:
 
 ## Get access to more tools 
 
-Extensions provide support for additional tools. An extension is an installable software unit that adds new capabilities to your projects. Find extensions in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). Extensions can support planning and tracking of work items, sprints, scrums, and more and collaboration among team members.  
+Extensions provide support for other tools. An extension is an installable software unit that adds new capabilities to your projects. Find extensions in the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). Extensions can support planning and tracking of work items, sprints, scrums, and more and collaboration among team members.  
 
 ## Related articles
 

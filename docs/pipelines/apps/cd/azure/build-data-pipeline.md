@@ -48,7 +48,7 @@ To make commands easier to run, start by selecting a default region. After you s
       --output table
     ```
 
-1. From the `Name` column in the output, choose a region that's close to you. For example, choose `eastasia` or `westus2`.
+1. From the `Name` column in the output, choose a region that's close to you. For example, choose `asiapacific` or `westus2`.
 
 1. Run `az config` to set your default region. In the following example, replace `<REGION>` with the name of the region you chose.
 

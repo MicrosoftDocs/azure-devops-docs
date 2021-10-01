@@ -9,7 +9,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 07/14/2020
+ms.date: 09/21/2021
 ---
 
 # Progress status sample report 
@@ -131,6 +131,7 @@ The following table describes each part of the query.
 </tbody>
 </table>
 
+[!INCLUDE [temp](includes/query-filters-test.md)]
 
 ## Power BI transforms
 

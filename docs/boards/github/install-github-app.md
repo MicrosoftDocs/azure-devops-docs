@@ -22,7 +22,7 @@ For an overview of the integration that the Azure Boards app for GitHub supports
 ## Prerequisites 
 
 * To install the Azure Boards app, you must be an administrator or owner of the GitHub organization.
-* To connect to the Azure Boards project, you must have read permission to the GitHub repository.
+* To connect to the Azure Boards project, you must have read permission to the GitHub repository. Also, you must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md). If you created the project, then you have permissions. 
 
 > [!IMPORTANT]  
 > If your repository is already connected via another authentication type such as OAuth, you'll need to remove that repository from your existing connection before re-connecting it via the GitHub App. Follow the steps provided in [Add or remove GitHub repositories](add-remove-repositories.md) before starting the GitHub App configuration.

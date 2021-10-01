@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Share your code with Visual Studio 2015 and Azure Repos
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](share-your-code-in-git-vs-2017.md)

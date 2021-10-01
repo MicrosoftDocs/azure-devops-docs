@@ -58,7 +58,7 @@ You will:
 * Access to a Jenkins server with Maven and the VSTS plugin configured. If you have not yet created a Jenkins server,
   see [Create a Jenkins main on an Azure Virtual Machine](/azure/developer/jenkins/configure-on-linux-vm).  Also, the following Jenkins plugins must be installed:
     * **VS Team Services Continuous Deployment** plugin.  You can find additional information about the **TFS plugin** [here](https://github.com/jenkinsci/tfs-plugin).
-    * **Config File Provider** plugin.  You can find additional information about the **Config File plugin** [here](https://wiki.jenkins.io/display/JENKINS/Config+File+Provider+Plugin).
+    * **Config File Provider** plugin.  You can find additional information about the **Config File plugin** [here](https://plugins.jenkins.io/config-file-provider/).
     * **Maven Integration** plugin.  You can find additional information about the **Maven Integration plugin** [here](https://plugins.jenkins.io/maven-plugin).
 
 ## Get the sample app
@@ -372,7 +372,7 @@ The second task deploys to the AKS cluster:
 
 ## Test the CI/CD pipeline with a pull request
 
-You can initiate the CI build and the subsequent CD deployment to Azure by completing a pull request into your main branch.  The Jenkins build will initiate due to the service hook you set up earlier, and the Jenkins post build action will initiate an Azure Pipelines release which will deploy your app to the Azure App Service.
+You can initiate the CI build and the subsequent CD deployment to Azure by completing a pull request into your main branch.  The Jenkins build will initiate due to the service hook you set up earlier, and the Jenkins post build action will initiate an Azure Pipelines release which will deploy your app to Azure App Service.
 
 1. Navigate to **Code** in Azure Repos, then select your **repository**.
 

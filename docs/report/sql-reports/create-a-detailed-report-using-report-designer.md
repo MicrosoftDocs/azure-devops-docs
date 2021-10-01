@@ -1,9 +1,9 @@
 ---
 title: Create a Detailed Report using Report Designer
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: conceptual
-description: Understand how to track team's progress by creating reports that contain detailed information - Team Foundation Server 
+description: Understand how to track team's progress by creating reports that contain detailed information. 
 ms.assetid: 073c4d96-8525-40fc-8fd6-944d161acc2d
 ms.author: kaelli
 author: KathrynEE
@@ -131,5 +131,5 @@ You can track your team's progress more easily by creating reports that contain 
   
      To successfully deploy the report, your project settings must be set to appropriate values. For more information, see [Create a Report Server Project](create-a-report-server-project.md).  
   
-## Related notes
+## Related articles
  [Table reference for the relational warehouse database](./table-reference-relational-warehouse-database.md)

@@ -60,8 +60,11 @@ We strongly recommend installing the latest version of Git.
 If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
 (The Oracle JRE and OpenJDK are not sufficient for this purpose.)
 
-The agent installer knows how to check for other dependencies.
+> [!NOTE]
+> The agent installer knows how to check for other dependencies.
 You can install those dependencies on supported Linux platforms by running `./bin/installdependencies.sh` in the agent directory.
+>
+> Be aware that some of these dependencies required by .NET Core are fetched from third party sites, like `packages.efficios.com`. Review the `installdependencies.sh` script and ensure any referenced third party sites are accessible from your Linux machine before running the script.
 
 ::: moniker-end
 
