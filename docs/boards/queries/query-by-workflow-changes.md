@@ -126,8 +126,8 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To * = * <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`
-   `And * State * = <em> Active`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To @Me`
+   `And State = Active`
 
    :::column-end:::
 :::row-end:::
@@ -141,8 +141,8 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To </em> Was Ever <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`
-   `And </em> State * = * Closed`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To Was Ever @Me`
+   `And State = Closed`
 
   
    :::column-end:::
@@ -157,9 +157,9 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
      :::column span="1":::
    
    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = User Story`
-   `And * State * = <em> Active`
+   `And State = Active`
 
-   `And </em> Assigned To * In Group * [FabrikamFiber]\Web`
+   `And Assigned To In Group [FabrikamFiber]\Web`
 
   
    :::column-end:::
@@ -173,8 +173,8 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Changed By * = * <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`
-   `And * Changed Date * >= <em>   <xref href="Today-30" data-throw-if-not-resolved="False" data-raw-source="@Today-30"></xref>`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Changed By = @Me`
+   `And Changed Date >= @Today-30`
 
   
    :::column-end:::
@@ -189,7 +189,7 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To </em> = _`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To = _`
   
    :::column-end:::
 :::row-end:::
@@ -234,7 +234,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * = * User Story`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type  = User Story`
    `And * State * = <em> Resolved`
 
   
@@ -248,8 +248,8 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type </em> In <em> User Story,Bug,Task`
-   `And </em> State * In * New,Active`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In User Story,Bug,Task`
+   `And State In New,Active`
 
   
    :::column-end:::
@@ -263,8 +263,8 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State * = * Removed`
-   `And * Reason * = <em> Duplicate`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State= Removed`
+   `And Reason = Duplicate`
 
   
    :::column-end:::
@@ -293,8 +293,8 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State </em> = <em> Closed`
-   `And </em> Closed Date  * >  * <xref href="Today-15" data-throw-if-not-resolved="False" data-raw-source="@Today-15"></xref>`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State = Closed`
+   `And Closed Date  > @Today-15`
 
   
    :::column-end:::
@@ -323,8 +323,8 @@ You can quickly find items that you changed, resolved, or closed. You can also f
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * = * User Story`
-   `And * Closed By * = <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = User Story`
+   `And Closed By =  data-raw-source="@Me"`
 
   
    :::column-end:::
@@ -338,8 +338,8 @@ You can quickly find items that you changed, resolved, or closed. You can also f
    :::column-end:::
      :::column span="1":::
    
-   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Resolved By </em> = <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`
-   `And </em> Resolved Date * >= * <xref href="Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"></xref>`
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Resolved By ="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"`
+   `And Resolved Date >= "Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"`
 
   
    :::column-end:::

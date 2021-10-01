@@ -101,22 +101,45 @@ Use these shortcuts when working in Team Explorer.
    
    **Navigate**
  
-   **Ctrl+0,a**&nbsp;&nbsp;&nbsp;Open web portal  **Ctrl+0,b**&nbsp;&nbsp;&nbsp;Open [Build](/azure/devops/pipelines/get-started/what-is-azure-pipelines)  **Ctrl+0,c**&nbsp;&nbsp;&nbsp;Open [Connect](../../organizations/projects/connect-to-projects.md)  **Ctrl+0,d**&nbsp;&nbsp;&nbsp;Open [Documents](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal)  **Ctrl+0,e**&nbsp;&nbsp;&nbsp;Open [Branches (Git)](../../repos/git/gitquickstart.md)  **Ctrl+0,g**&nbsp;&nbsp;&nbsp;Open [Changes (Git)](../../repos/git/gitquickstart.md)  **Ctrl+0,h**&nbsp;&nbsp;&nbsp;Open Home  **Ctrl+0,m**&nbsp;&nbsp;&nbsp;Open [My Work (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)  **Ctrl+0,p**&nbsp;&nbsp;&nbsp;Open [Pending changes (TFVC)](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)  **Ctrl+0,r**&nbsp;&nbsp;&nbsp;Open [Reports](../../report/sql-reports/reporting-services-reports.md)  **Ctrl+0,s**&nbsp;&nbsp;&nbsp;Open Settings  **Ctrl+0,w**&nbsp;&nbsp;&nbsp;Open Work items  **Ctrl+0,y**&nbsp;&nbsp;&nbsp;Open [Synchronization (Git)](../../repos/git/gitquickstart.md)  
+   **Ctrl+0,a**&nbsp;&nbsp;&nbsp;Open web portal  
+   **Ctrl+0,b**&nbsp;&nbsp;&nbsp;Open [Build](/azure/devops/pipelines/get-started/what-is-azure-pipelines)  **Ctrl+0,c**&nbsp;&nbsp;&nbsp;Open [Connect](../../organizations/projects/connect-to-projects.md)  
+   **Ctrl+0,d**&nbsp;&nbsp;&nbsp;Open [Documents](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal)  
+   **Ctrl+0,e**&nbsp;&nbsp;&nbsp;Open [Branches (Git)](../../repos/git/gitquickstart.md)  
+   **Ctrl+0,g**&nbsp;&nbsp;&nbsp;Open [Changes (Git)](../../repos/git/gitquickstart.md)  
+   **Ctrl+0,h**&nbsp;&nbsp;&nbsp;Open Home  
+   **Ctrl+0,m**&nbsp;&nbsp;&nbsp;Open [My Work (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)  
+   **Ctrl+0,p**&nbsp;&nbsp;&nbsp;Open [Pending changes (TFVC)](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)  
+   **Ctrl+0,r**&nbsp;&nbsp;&nbsp;Open [Reports](../../report/sql-reports/reporting-services-reports.md)  
+   **Ctrl+0,s**&nbsp;&nbsp;&nbsp;Open Settings  
+   **Ctrl+0,w**&nbsp;&nbsp;&nbsp;Open Work items  
+   **Ctrl+0,y**&nbsp;&nbsp;&nbsp;Open [Synchronization (Git)](../../repos/git/gitquickstart.md)  
      
-   **Ctrl+&#39;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box  **Alt+0**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of page  **Alt+1**&#8230;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to visible section [1 through 9]  **Alt+↑↓**&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next/previous section 
+   **Ctrl+&#39;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box  
+   **Alt+0**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of page  
+   **Alt+1**&#8230;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to visible section [1 through 9]  
+   **Alt+↑↓**&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next/previous section 
 
    :::column-end:::
-
-
    :::column span="1":::
    
    **Context menu**
  
-   <↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open a context menu  **Esc**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dismiss a context menu  ← →&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right  ↑↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down  **Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose Context menu    
+   <↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open a context menu  
+   **Esc**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dismiss a context menu  
+   ← →&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right  
+   ↑↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down  
+   **Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose Context menu  
+
+
    **Work item commands**
  
 
-   **Alt+m,g**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open work item  **Alt+m,i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Add a work item](../../boards/backlogs/add-work-items.md)  **Alt+m,q**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Add a query](../../boards/queries/using-queries.md)  **Shift+Alt,c**&nbsp;&nbsp;Copy selected work item  **Shift+Alt,l**&nbsp;&nbsp;Link to new work item  **Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open selected work item  
+   **Alt+m,g**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open work item  
+   **Alt+m,i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Add a work item](../../boards/backlogs/add-work-items.md)  
+   **Alt+m,q**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Add a query](../../boards/queries/using-queries.md)  
+   **Shift+Alt,c**&nbsp;&nbsp;Copy selected work item  
+   **Shift+Alt,l**&nbsp;&nbsp;Link to new work item  
+   **Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open selected work item  
 
    :::column-end:::
 :::row-end:::

@@ -544,7 +544,7 @@ The following table summarizes the differences between work item queries and que
    <code>Specify one or more of the following:  
    `[Source].[FieldName] = Value`  
    `[Target].[FieldName] = Value`  
-   `[System.Links.LinkType] = 'LinkName'` 
+   `[System.Links.LinkType] = 'LinkName'`
    :::column-end:::
 :::row-end:::
 :::row:::

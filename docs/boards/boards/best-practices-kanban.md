@@ -76,76 +76,76 @@ Each stage indicates a handoff to someone else who will do work. What informatio
 
 As a starting point, consider some of the following criteria as you work with your team to decide what done means throughout the development process.
 
-  :::row:::
-   :::column span="1":::
-   **Stage**
-   :::column-end:::
-   :::column span="1":::
-   **Done criteria**
-   :::column-end:::
-  :::row-end:::
-  :::row:::
-   :::column span="1":::
-   Before work starts on a feature, user story, or requirement
-   :::column-end:::
-   :::column span="1":::
+:::row:::
+  :::column span="1":::
+  **Stage**
+  :::column-end:::
+  :::column span="1":::
+  **Done criteria**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+  Before work starts on a feature, user story, or requirement
+  :::column-end:::
+  :::column span="1":::
+  
+  
+  - User story is properly scoped and estimated.
+  - Acceptance criteria is well defined.
+  - Customer needs are understood by the team.
+  - Dependencies have been identified and are tracked.
    
-   
-   - User story is properly scoped and estimated.
-   - Acceptance criteria is well defined.
-   - Customer needs are understood by the team.
-   - Dependencies have been identified and are tracked.
-   
-   :::column-end:::
-  :::row-end:::
-  :::row:::
-   :::column span="1":::
-   Bug filing
-   :::column-end:::
-   :::column span="1":::
-   
-   
-   - Bug title identifies the issue clearly.
-   - Repro steps are clear and minimal.
-   - Bug specifies a single issue.
-   - Related issues are linked to as related.
-   - Terms used are clearly understood within the team.
-   
-   :::column-end:::
-  :::row-end:::
-  :::row:::
-   :::column span="1":::
-   Code complete, ready for testing
-   :::column-end:::
-   :::column span="1":::
-   
-   
-   - Code complete, commented, and run against current version.
-   - Code peer reviewed and meets team standards.
-   - Builds without error.
-   - Passes unit and system tests.
-   - Remaining hours for tasks set to zero and task closed.
-   
-   :::column-end:::
-  :::row-end:::
-  :::row:::
-   :::column span="1":::
-   Test complete, ready for release
-   :::column-end:::
-   :::column span="1":::
-   
-   
-   - Unit tests implemented for all new features or functions.
-   - Unit tests are all passing.
-   - Acceptance/story tests are written and passing. 
-   - Regression tests are green with known failures. 
-   - Sufficient exploratory testing has been done.
-   - Feature/function works correctly as expected. 
-   - Unsolved defects have been logged as bugs. 
-   - Code coverage is stable or improving.
-   
-   :::column-end:::
-  :::row-end:::
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+  Bug filing
+  :::column-end:::
+  :::column span="1":::
+  
+  
+  - Bug title identifies the issue clearly.
+  - Repro steps are clear and minimal.
+  - Bug specifies a single issue.
+  - Related issues are linked to as related.
+  - Terms used are clearly understood within the team.
+  
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+  Code complete, ready for testing
+  :::column-end:::
+  :::column span="1":::
+  
+  
+  - Code complete, commented, and run against current version.
+  - Code peer reviewed and meets team standards.
+  - Builds without error.
+  - Passes unit and system tests.
+  - Remaining hours for tasks set to zero and task closed.
+  
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+  Test complete, ready for release
+  :::column-end:::
+  :::column span="1":::
+  
+  
+  - Unit tests implemented for all new features or functions.
+  - Unit tests are all passing.
+  - Acceptance/story tests are written and passing. 
+  - Regression tests are green with known failures. 
+  - Sufficient exploratory testing has been done.
+  - Feature/function works correctly as expected. 
+  - Unsolved defects have been logged as bugs. 
+  - Code coverage is stable or improving.
+  
+  :::column-end:::
+:::row-end:::
 
 As your team makes progress, revisit your Definition of Done criteria. 
 

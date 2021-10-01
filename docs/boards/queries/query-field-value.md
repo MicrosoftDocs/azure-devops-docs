@@ -48,7 +48,7 @@ You can use the comparison field operators&mdash;`=[Field], <>[Field], >[Field],
    :::column-end:::
    :::column span="1":::
    
-   `Created By ** <>[Field] ** Closed By`  State** = ** Closed</code>  
+   `Created By <>[Field] Closed By`  State = Closed</code>  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -57,7 +57,7 @@ You can use the comparison field operators&mdash;`=[Field], <>[Field], >[Field],
    :::column-end:::
    :::column span="1":::
    
-   `Original Estimate ** <=[Field] ** Completed Work`  
+   `Original Estimate <=[Field] Completed Work`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -67,7 +67,7 @@ You can use the comparison field operators&mdash;`=[Field], <>[Field], >[Field],
    :::column-end:::
    :::column span="1":::
    
-   `Target Date ** <=[Field] ** Closed Date`  State** = ** Closed</code>  
+   `Target Date <=[Field] Closed Date`  State = Closed</code>  
    :::column-end:::
 :::row-end:::
   

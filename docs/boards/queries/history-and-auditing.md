@@ -85,7 +85,7 @@ You can filter for work items by the date on which they were changed or for a sp
    :::column-end:::
    :::column span="1":::
    
-   `History * Contains Words * reproducible`  
+   `History Contains Words reproducible`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -94,7 +94,7 @@ You can filter for work items by the date on which they were changed or for a sp
    :::column-end:::
    :::column span="1":::
    
-   `History * Does Not Contain Words * beta`
+   `History Does Not Contain Words beta`
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -104,7 +104,7 @@ You can filter for work items by the date on which they were changed or for a sp
    :::column-end:::
    :::column span="1":::
    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`History * Contains Words * stack traces`  `And * State * Was Ever * Closed`  `And * State * <> *  Closed`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`History Contains Words stack traces`  `And State Was Ever Closed`  `And State <>  Closed`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -114,7 +114,7 @@ You can filter for work items by the date on which they were changed or for a sp
    :::column-end:::
    :::column span="1":::
    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`State * = * Done`  `And * Closed Date * > * 7/1/2015`  `And * Closed Date * <= * 7/21/2015`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`State = Done`  `And Closed Date > 7/1/2015`  `And Closed Date <= 7/21/2015`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -124,7 +124,7 @@ You can filter for work items by the date on which they were changed or for a sp
    :::column-end:::
    :::column span="1":::
    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`History * Contains Words * MyName`  `Or * Assigned To * Was Ever _ <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`History Contains Words MyName`  `Or Assigned To Was Ever _ <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref>`  
    :::column-end:::
 :::row-end:::
   
@@ -194,13 +194,13 @@ You can use the following fields to filter queries and create reports. Several o
 
 
 :::row:::
-     :::column span="1":::
+   :::column span="1":::
    **Field name**
    :::column-end:::
-     :::column span="2":::
+   :::column span="2":::
    **Description**
    :::column-end:::
-     :::column span="1":::
+   :::column span="1":::
    **Work item type**
    :::column-end:::
 :::row-end:::
@@ -223,13 +223,13 @@ You can use the following fields to filter queries and create reports. Several o
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
+   :::column span="1":::
    
    Change Date
 
   
    :::column-end:::
-     :::column span="2":::
+   :::column span="2":::
    
    The date and time when a work item was modified.
 
@@ -242,13 +242,13 @@ You can use the following fields to filter queries and create reports. Several o
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
+   :::column span="1":::
    
    Closed Date <sup>1</sup> 
 
   
    :::column-end:::
-     :::column span="2":::
+   :::column span="2":::
    
    The date and time when a work item was closed.
 
@@ -261,13 +261,13 @@ You can use the following fields to filter queries and create reports. Several o
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
+   :::column span="1":::
    
    Created Date
 
   
    :::column-end:::
-     :::column span="2":::
+   :::column span="2":::
    
    The date and time when a work item was created.
  
@@ -302,13 +302,13 @@ You can use the following fields to filter queries and create reports. Several o
    :::column-end:::
 :::row-end:::
 :::row:::
-     :::column span="1":::
+   :::column span="1":::
    
    Resolved Date <sup>1</sup> 
 
   
    :::column-end:::
-     :::column span="2":::
+   :::column span="2":::
    
    The date and time when the work item was moved into a Resolved state. 
 
@@ -316,7 +316,7 @@ You can use the following fields to filter queries and create reports. Several o
 
   
    :::column-end:::
-     :::column span="1":::
+   :::column span="1":::
    Bug (Agile, CMMI) 
   
    :::column-end:::
@@ -342,13 +342,13 @@ You can use the following fields to filter queries and create reports. Several o
 
 
 :::row:::
-     :::column span="1":::
+   :::column span="1":::
    
    State Change Date
 
   
    :::column-end:::
-     :::column span="2":::
+   :::column span="2":::
    
    The date and time when the value of the State field changed.
 
@@ -362,12 +362,12 @@ You can use the following fields to filter queries and create reports. Several o
 :::row-end:::
 
 :::row:::
-     :::column span="1":::
+   :::column span="1":::
    
    <a id="test-suite-audit"/>Test Suite Audit
   
    :::column-end:::
-     :::column span="2":::
+   :::column span="2":::
    
    Tracks additional operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.
 
@@ -376,7 +376,7 @@ You can use the following fields to filter queries and create reports. Several o
 
   
    :::column-end:::
-     :::column span="1":::
+   :::column span="1":::
    
    Test Suite
   
@@ -384,12 +384,12 @@ You can use the following fields to filter queries and create reports. Several o
 :::row-end:::
 
 :::row:::
-     :::column span="1":::
+   :::column span="1":::
    
    <a id="watermark"/>Watermark
   
    :::column-end:::
-     :::column span="2":::
+   :::column span="2":::
    
    A system managed field (not editable) that increments with changes made to a work item.
 
@@ -398,7 +398,7 @@ You can use the following fields to filter queries and create reports. Several o
 
   
    :::column-end:::
-     :::column span="1":::
+   :::column span="1":::
    
    All
   

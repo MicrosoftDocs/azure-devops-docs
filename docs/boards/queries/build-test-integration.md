@@ -62,7 +62,7 @@ Most build and test integration fields have a data type of String, PlainText, or
    **Single text (String)** 
    :::column-end:::
    :::column span="3":::
-   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
+   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever  
    **Macros**: **[Any]**, valid with the **Work Item Type** field  
    **<xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref>**<sup>2</sup>, valid with the **Team Project** field
    :::column-end:::
@@ -197,15 +197,6 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    Reference name=Microsoft.VSTS.Build.IntegrationBuild, Data type=String
 
     
-   > [!NOTE]  
-   > You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
-
-   > [!NOTE]  
-   > You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
-
-   > [!NOTE]  
-   > You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
-
    > [!NOTE]  
    > You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
 
