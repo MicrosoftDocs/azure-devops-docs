@@ -17,7 +17,7 @@ monikerRange: '<= azure-devops'
 
 Create a pull request (PR) to change, review, and merge code in a [Git project](../../organizations/projects/create-project.md). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams can use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
-THe following video shows the pull request process. Some terminology and user interface elements might be outdated.
+The following video shows the pull request process. Some terminology and user interface elements in the video might be out-of-date.
 
 > [!VIDEO https://www.youtube.com/embed/J_DHkUKxI0E?start=0]
 
@@ -60,9 +60,9 @@ Your team might rely on critical branches in your repo, such as the `main` branc
 
 You can add more policies to PRs to enforce better code quality in key branches. Extra requirements like a clean build of the proposed code or approval from multiple reviewers can help protect key branches.
 
-The number of required approvals for a PR is set in the [branch policy](branch-policies.md). A PR can be set to auto-complete with the required number of approvals, even if other reviewers reject the changes. It's best practice for at least two reviewers to review and approve changes in a significant PR.
+The number of required approvals for a PR is set in a branch policy. A PR can be set to auto-complete with the required number of approvals, even if other reviewers reject the changes. It's best practice for at least two reviewers to review and approve changes in a significant PR.
 
-To reset votes when a PR author pushes new changes, select **Reset code reviewer votes when there are new changes** when you configure the [Require a minimum number of reviewers](branch-policies.md#require-a-minimum-number-of-reviewers) branch policy.
+To reset votes when a PR author pushes new changes, select **Reset code reviewer votes when there are new changes** in the [Require a minimum number of reviewers](branch-policies.md#require-a-minimum-number-of-reviewers) branch policy.
 
 For more information, see:
 
@@ -127,13 +127,6 @@ You can view all of your PRs in your organization, across all projects, by choos
 
 ::: moniker-end 
 
-::: moniker range=">= azure-devops-2020"
-### Use the Azure DevOps CLI
-
-You can also manage your PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true). For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
-
-::: moniker-end
-
 <a name="create-a-new-pull-request"></a>
 ## Create a pull request
 
@@ -143,6 +136,12 @@ You can create a new PR from:
 - [The Development section in a linked Azure Boards work item](#from-a-linked-work-item).
 - [The Pull requests page on the project's Azure DevOps website](#from-the-pull-requests-web-page).
 - [Team Explorer in Visual Studio](#from-visual-studio).
+
+::: moniker range=">= azure-devops-2020"
+
+You can also create and manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true). For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+::: moniker-end
 
 ### From a pushed branch
 
@@ -509,11 +508,11 @@ You can create queries on the PR page with additional filters, such as draft sta
 ::: moniker range="azure-devops"
 - You can review previous versions of the code from the **All Changes** drop-down list.
   
-  :::image type="content" source="media/pull-requests/pull-request-all-changes-dropdown.png" alt-text="Screenshot that shows the All changes drop-down.":::
-  
   Every update to the branch adds a new version to the list and on the **Updates** tab of the PR. As you select different updates, the diff view updates to show the differences between the files in each version of the PR.
 
   You can catch up with PR updates after being away from the PR by stepping through changes made since your last review. You can view multiple updates at once by pressing shift and selecting the updates you want to see. 
+  
+  :::image type="content" source="media/pull-requests/pull-request-all-changes-dropdown.png" alt-text="Screenshot that shows the All changes drop-down.":::
 
 ::: moniker-end
 
@@ -561,7 +560,7 @@ You can create queries on the PR page with additional filters, such as draft sta
 Add comments to a PR to make suggestions, reply to previous comments, and point out problems with proposed changes.
 
 ::: moniker range="azure-devops"
-- Comment inline in the **Files** tab of a PR by hovering over the line you want to comment on and selecting the comment button. :::image type="icon" source="./media/pull-requests/new-comment-icon.png":::.
+- Comment inline in the **Files** tab of a PR by selecting the comment button :::image type="icon" source="./media/pull-requests/new-comment-icon.png"::: next to the line you want to comment on.
 
   ![Screenshot of comments in Azure Repos P Rs.](./media/pull-requests/pr_comments_summary.png)
 ::: moniker-end
@@ -572,7 +571,7 @@ Add comments to a PR to make suggestions, reply to previous comments, and point 
   ![Screenshot of comments in Azure Repos P Rs.](./media/pull-requests/pr_comments_summary.png)
 ::: moniker-end
 
-- To make suggested changes directly, select the lightbulb icon in the comment interface, make your suggested changes in the code, and then select **Comment**.
+- To suggest changes directly, select the lightbulb icon in the comment interface, make your suggested changes in the code, and then select **Comment**.
 
   ![Screenshot showing how to make a suggested change.](./media/pull-requests/add-suggestion.png)
 
@@ -756,14 +755,14 @@ When you complete a PR, Git adds a new *merge commit* to the end of the main bra
 
 Select **Set auto-complete** from the **Complete** dropdown list to complete and merge the PR changes as soon as conditions satisfy all [branch policies](branch-policies.md). When the PR is completed, you receive an email notification. If a conflict or error prevents PR completion, email notifies you of the issue.
 
-When you set auto-complete, the PR displays an **Auto-complete** badge.
-
-Starting with TFS 2018 Update 2, the PR **Overview** page [displays the outstanding list of policy criteria](/azure/devops/release-notes/2018/jan-24-vsts#view-remaining-policy-criteria-for-pull-request-auto-complete).
-
-Select **Cancel auto-complete** to turn off auto-complete. 
-
 >[!NOTE]
 >The **Set auto-complete** option is available in Azure Repos and TFS 2017 and higher when you have branch policies. If you don't see **Set auto-complete**, you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
+
+When you set auto-complete, the PR displays an **Auto-complete** badge.
+
+![Screenshot showing an auto-complete P R in the P R list.](media/pull-requests/auto-complete-badge.png)
+
+Starting with TFS 2018 Update 2, the PR **Overview** page [displays the list of outstanding policy criteria](/azure/devops/release-notes/2018/jan-24-vsts#view-remaining-policy-criteria-for-pull-request-auto-complete).
 
 ::: moniker-end 
 
@@ -774,6 +773,8 @@ Select **Cancel auto-complete** to turn off auto-complete.
 ::: moniker range=">= tfs-2017 <= azure-devops-2020"
 ![Screenshot of a P R in auto-complete state.](./media/pull-requests/pr_banner_autocomplete.png)
 ::: moniker-end 
+
+Select **Cancel auto-complete** to turn off auto-complete. 
 
 ### Abandon your changes
 
