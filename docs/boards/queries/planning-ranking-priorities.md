@@ -47,7 +47,7 @@ Most of the planning fields described in the next section are either an integer 
    :::column-end:::
    :::column span="1":::
    
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * In * Task`  `And * Blocked * = <em> Yes`  
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In Task`  `And Blocked = <em> Yes`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -58,7 +58,7 @@ Most of the planning fields described in the next section are either an integer 
    :::column-end:::
    :::column span="1":::
    
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type </em> In * Bug`  `And * Priority * = * 1`  
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In Bug`  `And Priority = 1`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -69,7 +69,7 @@ Most of the planning fields described in the next section are either an integer 
    :::column-end:::
    :::column span="1":::
    
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type * In * Feature,User Story`  `And * Value Area * = _ Architectural`  
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In Feature,User Story`  `And * Value Area * = _ Architectural`  
    :::column-end:::
 :::row-end:::  
 

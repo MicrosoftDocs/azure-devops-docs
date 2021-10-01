@@ -413,7 +413,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    :::column-end:::
    :::column span="3":::
-   Contains the exact text string or words within the field you selected for filtering. You can also enter partial words or phrases that contain the wildcard character, *****. Text string is limited to 100 characters. For restrictions, see [Full-text searches](#full-text) for server and collation requirements.
+   Contains the exact text string or words within the field you selected for filtering. You can also enter partial words or phrases that contain the wildcard character, *. Text string is limited to 100 characters. For restrictions, see [Full-text searches](#full-text) for server and collation requirements.
 
    :::column-end:::
    :::column span="3":::
@@ -533,12 +533,6 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
    > [!NOTE]
    > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in AAD when your Azure Boards account is backed by AAD, or AD when your on-premises server instance is backed by AD.     
-
-   > [!NOTE]
-   > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in AAD when your Azure Boards account is backed by AAD, or AD when your on-premises server instance is backed by AD. 
-
-   > [!NOTE]
-   > You can use the **Not In Group** operator only with fields that use the **String** data type or the **Work Item Type** field. You can also use groups defined in AAD when your Azure Boards account is backed by AAD, or AD when your on-premises server instance is backed by AD. 
 
    :::column-end:::
 :::row-end:::

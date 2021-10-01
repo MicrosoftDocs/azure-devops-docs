@@ -54,7 +54,7 @@ For additional details on creating queries and chart-based-queries, see [Use the
    :::column-end:::
    :::column span="1":::
    
-   `Work Item Type * In * User Story,Bug`  
+   `Work Item Type In User Story,Bug`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -63,7 +63,7 @@ For additional details on creating queries and chart-based-queries, see [Use the
    :::column-end:::
    :::column span="1":::
    
-   `Work Item Type * In * Task,Bug`  
+   `Work Item Type In Task,Bug`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -73,7 +73,7 @@ For additional details on creating queries and chart-based-queries, see [Use the
    :::column-end:::
    :::column span="1":::
    
-   `State * In * Active,Closed`  
+   `State In Active,Closed`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -83,7 +83,7 @@ For additional details on creating queries and chart-based-queries, see [Use the
    :::column-end:::
    :::column span="1":::
    
-   `Work Item Type * In Group * Microsoft.RequirementCategory`  
+   `Work Item Type In Group Microsoft.RequirementCategory`  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -93,7 +93,7 @@ For additional details on creating queries and chart-based-queries, see [Use the
    :::column-end:::
    :::column span="1":::
    
-   `Story Points * <> * (leave Value field blank)`  
+   `Story Points <> (leave Value field blank)`  
    :::column-end:::
 :::row-end:::  
 
@@ -267,7 +267,7 @@ The following table describes the activity-based and numeric fields that you can
    - Testing
 
 
-   The Activity field is assigned to `type=&quot;Activity&quot;` in the ProcessConfiguration file.<sup>3</sup>
+   The Activity field is assigned to `Activity` in the ProcessConfiguration file.<sup>3</sup>
 
    Reference name=Microsoft.VSTS.Common.Activity, Data type=String
 
@@ -319,7 +319,7 @@ The following table describes the activity-based and numeric fields that you can
    - User Education
    - User Experience
 
-   The Discipline field is assigned to `type=&quot;Activity&quot;` in the ProcessConfiguration file.<sup>3</sup>
+   The Discipline field is assigned to `Activity` in the ProcessConfiguration file.<sup>3</sup>
 
 
    Reference name=Microsoft.VSTS.Common.Discipline, Data type=String
@@ -336,7 +336,7 @@ The following table describes the activity-based and numeric fields that you can
    :::column-end:::
    :::column span="2":::
    A subjective unit of measure that captures the size of a bug or product backlog item. If you assign more effort to an item, you indicate that more work is required to implement it. 
-   This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to `type=&quot;Effort&quot;` in the ProcessConfiguration file.
+   This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to `Effort` in the ProcessConfiguration file.
 
    Reference name=Microsoft.VSTS.Scheduling.Effort, Data type=Double
 
@@ -354,7 +354,7 @@ The following table describes the activity-based and numeric fields that you can
    :::column span="2":::
    A subjective unit of measure that captures the size of a user story. If you assign more points to a user story, you indicate that more work is required to implement it.
 
-   This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to `type=&quot;Effort&quot;` in the ProcessConfiguration file. 
+   This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to `Effort` in the ProcessConfiguration file. 
 
    Reference name=Microsoft.VSTS. Scheduling.StoryPoints, Data type=Double
 
@@ -370,7 +370,7 @@ The following table describes the activity-based and numeric fields that you can
    :::column-end:::
    :::column span="2":::
    A subjective unit of measure that captures the size of a requirement. The larger the size, the more work is required to implement it. 
-   This field<sup>3</sup>  is also used to calculate team velocity and forecasting. It is assigned to `type=&quot;Effort&quot;` in the ProcessConfiguration file. 
+   This field<sup>3</sup>  is also used to calculate team velocity and forecasting. It is assigned to `Effort` in the ProcessConfiguration file. 
 
    Reference name=Microsoft.VSTS. Scheduling.Size, Data type=Double
 
@@ -393,6 +393,7 @@ The following table describes the activity-based and numeric fields that you can
    :::column span="1":::
    Task, Bug <sup>4</sup> (Agile and CMMI)
    :::column-end:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    <a id="remaining-work" />Remaining Work
@@ -401,7 +402,7 @@ The following table describes the activity-based and numeric fields that you can
    :::column span="2":::
    The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.
 
-   This field <sup>3</sup> is also used to calculate burn down. It is assigned to `type=&quot;RemainingWork&quot;` in the ProcessConfiguration file.
+   This field <sup>3</sup> is also used to calculate burn down. It is assigned to `RemainingWork` in the ProcessConfiguration file.
 
    
    > [!NOTE]

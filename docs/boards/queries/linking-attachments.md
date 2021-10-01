@@ -265,10 +265,10 @@ The following table describes fields associated with links and attachments. Most
    :::column span="3":::
    **Description**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Work item type**
    :::column-end:::
-
+:::row-end:::
 :::row:::
    :::column span="1":::
    Attachment File Count
@@ -279,16 +279,13 @@ The following table describes fields associated with links and attachments. Most
    Reference Name=System.AttachedFileCount, Data type=Integer
 
 
-   
-
    > For Azure Boards (cloud service), you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.  
  
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    Comment Count
@@ -299,11 +296,10 @@ The following table describes fields associated with links and attachments. Most
    Reference Name=System.CommentCount, Data type=Integer
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
    <a id="external-link-count"/>
@@ -314,7 +310,7 @@ The following table describes fields associated with links and attachments. Most
 
    Reference Name=System.ExternalLinkCount, Data type=Integer
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
@@ -328,7 +324,7 @@ The following table describes fields associated with links and attachments. Most
 
    Reference Name=System.HyperLinkCount, Data type=Integer
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
@@ -340,7 +336,7 @@ The following table describes fields associated with links and attachments. Most
    Contains comments from the team member who created the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in query editor.)  
    Reference Name=System.Links.Comment, Data type=PlainText
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
@@ -353,7 +349,7 @@ The following table describes fields associated with links and attachments. Most
 
    Reference Name=System.Links.Description, Data type=PlainText
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
@@ -376,7 +372,7 @@ The following table describes fields associated with links and attachments. Most
  
    Reference Name=System.Parent, Data type=Integer
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
@@ -390,7 +386,7 @@ The following table describes fields associated with links and attachments. Most
 
    Reference Name=System.RelatedLinkCount, Data type=Integer
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
@@ -404,7 +400,7 @@ The following table describes fields associated with links and attachments. Most
 
    Reference Name=System.RemoteLinkCount, Data type=Integer
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    All
    :::column-end:::
 :::row-end:::

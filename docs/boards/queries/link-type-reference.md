@@ -103,10 +103,10 @@ The following table describes the work item link types you can specify to scope 
    ![Affected by link type image](media/link-work-items-support-traceability/affected-by-cmmi.png) 
    :::column-end:::
    :::column span="3":::
-   <p>Microsoft.VSTS.Common.Affects-Forward  
-   Microsoft.VSTS.Common.Affects-Reverse</p>
-   <p>Topology type: Dependency  
-   Link category: Process-defined</p>
+   Microsoft.VSTS.Common.Affects-Forward  
+   Microsoft.VSTS.Common.Affects-Reverse  
+   Topology type: Dependency  
+   Link category: Process-defined  
    :::column-end:::
    :::column span="3":::
    
@@ -129,10 +129,10 @@ The following table describes the work item link types you can specify to scope 
    ![Parent link type image](media/link-work-items-support-traceability/parent-tree-reverse.png) 
    :::column-end:::
    :::column span="3":::
-   <p>System.LinkTypes.Hierarchy-Forward  
-   System.LinkTypes.Hierarchy-Reverse</p>
-   <p>Topology type: Tree  
-   Link category: System-defined</p>
+   System.LinkTypes.Hierarchy-Forward  
+   System.LinkTypes.Hierarchy-Reverse  
+   Topology type: Tree  
+   Link category: System-defined  
    :::column-end:::
    :::column span="3":::
    
@@ -157,10 +157,10 @@ The following table describes the work item link types you can specify to scope 
    ![Duplicate of tree reverse.](media/link-work-items-support-traceability/duplicate-of-tree-reverse.png) 
    :::column-end:::
    :::column span="3":::
-   <p>System.LinkTypes.Duplicate-Forward  
-   System.LinkTypes.Duplicate-Reverse</p>
-   <p>Topology type: Tree  
-   Link category: System-defined</p>
+   System.LinkTypes.Duplicate-Forward  
+   System.LinkTypes.Duplicate-Reverse  
+   Topology type: Tree  
+   Link category: System-defined  
    :::column-end:::
    :::column span="3":::
    
@@ -180,17 +180,17 @@ The following table describes the work item link types you can specify to scope 
    ![Tests link type image](media/link-work-items-support-traceability/tests-dependency-reverse.png) 
    :::column-end:::
    :::column span="3":::
-   Microsoft.VSTS.TestCase.  SharedParameterReferencedBy
-
-   <p>Topology type: Dependency  
-   Link category: Process-defined</p>
+   Microsoft.VSTS.TestCase.  
+   SharedParameterReferencedBy  
+   Topology type: Dependency  
+   Link category: Process-defined  
    :::column-end:::
    :::column span="3":::
    
    Use to link test cases to shared parameters. Use to link Test Cases to Shared Parameters to support the ability to [repeat a test with different data](../../test/repeat-test-with-different-data.md). In general, you wouldn&#39;t add this link type to a scoped links control.  To learn more, see [Repeat a test with different data](../../test/repeat-test-with-different-data.md). 
 
    :::column-end:::
-   :::row-end:::
+
 :::row-end:::
 :::row:::
    :::column span="1":::
@@ -198,10 +198,9 @@ The following table describes the work item link types you can specify to scope 
    ![Related link type image](media/link-work-items-support-traceability/related-network.png) 
    :::column-end:::
    :::column span="3":::
-   System.LinkTypes.Related
-
-   <p>Topology type: Network  
-   Link category: System-defined</p>
+   System.LinkTypes.Related  
+   Topology type: Network  
+   Link category: System-defined  
    :::column-end:::
    :::column span="3":::
    Use this non-directional link to create links between any set of work items. Use to link work items that are at the same level, such as two user stories that define features that overlap one another. The Related link type creates simple relationships with few restrictions. 
@@ -219,10 +218,9 @@ The following table describes the work item link types you can specify to scope 
    ![Predecessor dependency, reverse.](media/link-work-items-support-traceability/predecessor-dependency-reverse.png) 
    :::column-end:::
    :::column span="3":::
-   System.LinkTypes.Dependency
-
-   <p>Topology type: Dependency  
-   Link category: System-defined</p>
+   System.LinkTypes.Dependency  
+   Topology type: Dependency  
+   Link category: System-defined  
    Choose **Predecessor** link type when linking to a work item that should be completed *prior* to the work item you are linking from. Choose **Successor** link type when linking to a work item that should be completed *after* to the work item you are linking from.
 
    :::column-end:::
@@ -234,8 +232,8 @@ The following table describes the work item link types you can specify to scope 
    - Find and view predecessor work items and their successor work items in a two-tiered, direct links query view.
 
    Restrictions and recommendations:- An error appears when you attempt to create links that define circular relationships.
-   - <p>Create predecessor-successor links only to work items that are within the same project.<br />
-   You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the project for which the query is defined are imported.</p> 
+   - Create predecessor-successor links only to work items that are within the same project.<br />
+   You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the project for which the query is defined are imported.   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -245,10 +243,10 @@ The following table describes the work item link types you can specify to scope 
    ![Tests link type image](media/link-work-items-support-traceability/tests-dependency-reverse.png) 
    :::column-end:::
    :::column span="3":::
-   <p>Microsoft.VSTS.Common.TestedBy-Forward  
-   Microsoft.VSTS.Common.TestedBy-Reverse</p>
-   <p>Topology type: Dependency  
-   Link category: Process-defined</p>
+   Microsoft.VSTS.Common.TestedBy-Forward  
+   Microsoft.VSTS.Common.TestedBy-Reverse  
+   Topology type: Dependency  
+   Link category: Process-defined  
    :::column-end:::
    :::column span="3":::
    
@@ -263,10 +261,10 @@ The following table describes the work item link types you can specify to scope 
    ![Tests link type image](media/link-work-items-support-traceability/tests-dependency-reverse.png) 
    :::column-end:::
    :::column span="3":::
-   Microsoft.VSTS.TestCase.  SharedStepReferencedBy
-
-   <p>Topology type: Dependency  
-   Link category: Process-defined</p>
+   Microsoft.VSTS.TestCase.  
+   SharedStepReferencedBy  
+   Topology type: Dependency  
+   Link category: Process-defined  
    :::column-end:::
    :::column span="3":::
    
@@ -288,18 +286,18 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
 > [!div class="mx-imgBorder"]  
 > ![Hyperlink, conceptual image](media/link-type-reference/hyperlink.png) 
 
-   :::row:::
+:::row:::
    :::column span="1":::
-   Link name
+   **Link name**
    :::column-end:::
    :::column span="3":::
-   Tool supported
+   **Tool supported**
    :::column-end:::
    :::column span="3":::
-   Artifact type
+   **Artifact type**
    :::column-end:::
    :::column span="3":::
-   Usage
+   **Usage**
    :::column-end:::
 :::row-end:::
 :::row:::

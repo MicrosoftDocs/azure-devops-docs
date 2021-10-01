@@ -218,10 +218,13 @@ The following table indicates the operators and macros available for the differe
 
    :::column-end:::
    :::column span="3":::
-   A date field in which you can specify a variable, such as **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.) For query examples, see [Query by date or@CurrentIteration](query-by-date-or-current-iteration.md). 
+   A date field in which you can specify a variable, such as **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>** or **<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref>**, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.)  
+
+   For query examples, see [Query by date or@CurrentIteration](query-by-date-or-current-iteration.md). 
    :::column-end:::
    :::column span="3":::
-   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever  **Macros**: **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>**, valid with any **DateTime** field
+   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever  **Macros**: **<xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref>**, valid with any **DateTime** field  
+
    **Additional macros supported on Azure DevOps 2019 Update 1 and later versions:**:  **<xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref>**, **<xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref>**, **<xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref>**, and **<xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref>**, valid with any **DateTime** field
 
    :::column-end::: 
@@ -231,7 +234,8 @@ The following table indicates the operators and macros available for the differe
    **Double** 
    :::column-end:::
    :::column span="3":::
-   Also referred to as **Decimal** and includes **picklistDouble**<sup>2</sup>. A real number, such as 0.2 or 3.5.Query samples: [Query by numeric fields](query-numeric.md). 
+   Also referred to as **Decimal** and includes **picklistDouble**<sup>2</sup>. A real number, such as 0.2 or 3.5.  
+   Query samples: [Query by numeric fields](query-numeric.md). 
 
    :::column-end:::
    :::column span="3":::
@@ -255,7 +259,9 @@ The following table indicates the operators and macros available for the differe
 
    :::column-end:::
    :::column span="3":::
-   Custom formatted field used to track historical information and only assigned to the **History** field.Query samples: [History and auditing](history-and-auditing.md). 
+   Custom formatted field used to track historical information and only assigned to the **History** field.  
+
+   Query samples: [History and auditing](history-and-auditing.md). 
 
    :::column-end:::
    :::column span="3":::
@@ -293,11 +299,14 @@ The following table indicates the operators and macros available for the differe
    **Integer**
    :::column-end:::
    :::column span="3":::
-   Also includes **picklistInteger**<sup>2</sup>. A 32-bit integer that is signed, such as 0, 1, 2, 34.Query samples: [Query by numeric fields](query-numeric.md)
+   Also includes **picklistInteger**<sup>2</sup>. A 32-bit integer that is signed, such as 0, 1, 2, 34.  
+
+   Query samples: [Query by numeric fields](query-numeric.md)
 
    :::column-end:::
    :::column span="3":::
-   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
+   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever  
+
    **Macros**: **<xref href="Follows" data-throw-if-not-resolved="False" data-raw-source="@Follows"></xref>**<sup>4</sup>, **<xref href="MyRecentActivity" data-throw-if-not-resolved="False" data-raw-source="@MyRecentActivity"></xref>**<sup>5</sup>, **<xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref>**<sup>5</sup>, **<xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref>**, valid when used with the **ID** field 
 
    :::column-end:::
@@ -307,7 +316,8 @@ The following table indicates the operators and macros available for the differe
    **PlainText** 
    :::column-end:::
    :::column span="3":::
-   Multi-line text strings that support long descriptions and are automatically indexed for full-text search, when full-text search is available.Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).
+   Multi-line text strings that support long descriptions and are automatically indexed for full-text search, when full-text search is available.  
+   Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).
 
    :::column-end:::
    :::column span="3":::
@@ -319,11 +329,14 @@ The following table indicates the operators and macros available for the differe
    **String** 
    :::column-end:::
    :::column span="3":::
-   Also includes **picklistString**<sup>2</sup>. Short single-line text that can contain up to 255 Unicode characters. String fields support the **Title** field, picklists (drop-down menus), user accounts, **Tags**, and other fields. Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md) and [Query by picklist value](planning-ranking-priorities.md).
+   Also includes **picklistString**<sup>2</sup>. Short single-line text that can contain up to 255 Unicode characters. String fields support the **Title** field, picklists (drop-down menus), user accounts, **Tags**, and other fields.  
+   
+   Query samples: [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md) and [Query by picklist value](planning-ranking-priorities.md).
 
    :::column-end:::
    :::column span="3":::
-   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
+   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever  
+
    **Macros**: **[Any]**, valid with the **Work Item Type** field  
    **<xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref>**<sup>6</sup>, valid with the **Team Project** field 
    :::column-end:::
@@ -340,7 +353,8 @@ The following table indicates the operators and macros available for the differe
 
    :::column-end:::
    :::column span="3":::
-   Under, Not Under
+   Under, Not Under  
+
    **Macros**: **<xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref>**<sup>7</sup>, valid with **Area Path** field  
    **<xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref>**<sup>8</sup> and**<xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n**<sup>9</sup> valid with the **Iteration Path** field
    :::column-end:::
