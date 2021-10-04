@@ -325,6 +325,7 @@ To add a label when creating a PR, choose **Add label**. After you create a PR, 
 
 ::: moniker-end
 
+<a name="add-and-remove-reviewers"></a>
 ### Add reviewers
 
 ::: moniker range="azure-devops"
@@ -343,7 +344,7 @@ To add reviewers to your PR:
 
    :::image type="content" source="media/pull-requests/pull-request-add-reviewer.png" alt-text="Add PR reviewer.":::
 
-To change a reviewer between required and optional, or remove a reviewer, select **More options** to the right of the reviewer name. To see the members of a team or group designated as a reviewer, select the group icon.
+To change a reviewer between required and optional, or remove a reviewer, select **More options** to the right of the reviewer name. To see the members of a team or group designated as reviewers, select the group's icon.
 
 ::: moniker-end
 
