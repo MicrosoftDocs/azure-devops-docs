@@ -41,10 +41,10 @@ Build reports track the quality of software under development. Define tests to r
    
    **Build and test activities** 
 
-   1. [Configure a build system](../../pipelines/agents/agents.md)
-   2. [Get started with CI/CD](/azure/devops/pipelines/create-first-pipeline)
-   3. [Run tests in your build process](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)
-   4. (Optional) [Rate completed builds](/previous-versions/ms181734(v=vs.140)) to populate the Build Quality dimension.
+   - [Configure a build system](../../pipelines/agents/agents.md)
+   - [Get started with CI/CD](/azure/devops/pipelines/create-first-pipeline)
+   - [Run tests in your build process](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)
+   - (Optional) [Rate completed builds](/previous-versions/ms181734(v=vs.140)) to populate the Build Quality dimension.
 
    :::column-end:::
    :::column span="1":::
@@ -71,24 +71,24 @@ Build reports track the quality of software under development. Define tests to r
 Project management reports provide insight into how much work the team is tackling within a sprint or release, and the rate of their progress. By linking work items and updating specific fields as work is done, you can track the progress of individual stories and more accurately estimate future activities. 
 
 :::row:::
-   :::column span="1":::
+:::column span="1":::
    
-   **Work item tracking activities**
+**Work item tracking activities**
 
-   1. [Create the backlog](../../boards/backlogs/create-your-backlog.md).   
+1. [Create the backlog](../../boards/backlogs/create-your-backlog.md).   
        - Create product backlog items and specify the **Effort** (Scrum).
        - Create user stories and specify the **Story Points** (Agile).
        - Create requirements and specify the **Size** (CMMI).  
-   2. [Work in sprints](../../boards/sprints/assign-work-sprint.md). Assign backlog items to sprints, create tasks and link them to parent backlog items, and assign to a team member.
-   3. [Update Remaining Work for tasks](../../boards/sprints/task-board.md). For Agile and CMMI team projects, update **Completed Work** as well.   
+2. [Work in sprints](../../boards/sprints/assign-work-sprint.md). Assign backlog items to sprints, create tasks and link them to parent backlog items, and assign to a team member.
+3. [Update Remaining Work for tasks](../../boards/sprints/task-board.md). For Agile and CMMI team projects, update **Completed Work** as well.   
        > [!Tip]  
        > The only report that references **Original Estimate** is [Status on All Iterations](../sql-reports/status-on-all-iterations-report.md).
        
-   4. Create test cases and bugs, link them to their parent backlog item, and update their **State**.
-   5. (Optional) Assign work items to areas to filter reports.
+4. Create test cases and bugs, link them to their parent backlog item, and update their **State**.
+5. (Optional) Assign work items to areas to filter reports.
 
-   :::column-end:::
-   :::column span="1":::
+:::column-end:::
+:::column span="1":::
    
    **Project management (Scrum) reports**
    
