@@ -14,8 +14,6 @@ In addition, it displays build and release information from Azure Pipelines and 
 > [!div class="mx-imgBorder"]
 > ![Build and release information tracked in Jira.](../../media/154_13.png)
 
-To learn more about the Azure Pipelines integration with Jira software cloud, see the documentation [here](https://github.com/microsoft/azure-pipelines-jira/blob/master/tutorial.md).
-
 ### Improvements to the Azure Pipelines app for Slack
 
 In February, we released the Azure Pipelines app for Slack to help you monitor your pipelines. With this update, we enhanced the app.

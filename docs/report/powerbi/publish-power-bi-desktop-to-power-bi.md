@@ -1,7 +1,7 @@
 ---
-title: Publish a Power BI Desktop file to PowerBI.com  
+title: Publish a Power BI Desktop file to Power BI  
 titleSuffix: Azure DevOps 
-description: How to publish and enable refresh of a Power BI Desktop file to PowerBI.com that uses Analytics for Azure DevOps 
+description: How to publish and enable refresh of a Power BI Desktop file to Power BI that uses Analytics for Azure DevOps 
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
@@ -11,11 +11,11 @@ author: KathrynEE
 ms.date: 11/01/2018
 ---
 
-# Publish a Power BI Desktop file to PowerBI.com 
+# Publish a Power BI Desktop file to Power BI 
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures and charts, you can share those with others by creating a dashboard on PowerBI.com. This article shows you how.   
+Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures and charts, you can share those with others by creating a dashboard on Power BI. This article shows you how.   
 
 1. If using an [Analytics View](what-are-analytics-views.md), verify that the view is Shared and not Private.
 
@@ -63,7 +63,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 At this point, the data will update on your scheduled basis using the credentials entered.
 
 > [!IMPORTANT]   
-> Any data included in the Analytics view and published Power BI.com will be accessible to all users with access to the report, regardless of the project permissions configured in Azure DevOps.    
+> Any data included in the Analytics view and published Power BI will be accessible to all users with access to the report, regardless of the project permissions configured in Azure DevOps.    
 
 
 ## Related articles
