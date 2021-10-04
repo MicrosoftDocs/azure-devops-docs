@@ -18,7 +18,7 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2020 through Se
 
 ### New articles
 
-- [Manage requirements](/azure/devops/cross-platform/manage-requirements)
+- [Manage requirements](/azure/devops/cross-service/manage-requirements)
 
 ### Updated articles
 
@@ -165,7 +165,7 @@ The following people contributed to the Azure DevOps docs during this period. Th
 - [Styxxy](https://github.com/Styxxy) - Hans De Mulder (3)
 - [radujipa](https://github.com/radujipa) - Radu Jipa (2)
 - [wesleycamargo](https://github.com/wesleycamargo) - Wesley Camargo (2)
-- [AkshayaKulasekaran](https://github.com/AkshayaKulasekaran) - Akshaya (1)
+- [Akshu-on-github](https://github.com/Akshu-on-github) - Akshaya (1)
 - [aleccaputo](https://github.com/aleccaputo) - Alec Caputo (1)
 - [AlexandraRamirezMS](https://github.com/AlexandraRamirezMS) (1)
 - [ashokm](https://github.com/ashokm) - Ashok Manji (1)
