@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 09/27/2021
+ms.date: 10/04/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
-Create a pull request (PR) to change, review, and merge code in a [Git project](../../organizations/projects/create-project.md). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams can use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
+Create pull requests (PRs) to change, review, and merge code in a [Git project](../../organizations/projects/create-project.md). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams can use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
 The following video shows the pull request process. Some terminology and user interface elements in the video might be out-of-date.
 
@@ -79,7 +79,7 @@ Pull requests and branch policies let teams enforce best practices for reviewing
 - [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)
 - [Configure a branch policy for an external service](pr-status-policy.md)
 
-## View pull requests
+## View pull request list
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -92,6 +92,8 @@ Pull requests and branch policies let teams enforce best practices for reviewing
    ![Screenshot of choosing your repo.](media/pull-requests/pull-requests-breadcrumb.png)
 
 1. The default view shows your PRs under the **Mine** tab. Select **Active** to show all active PRs for the current repository. Select **Completed** or **Abandoned** to bring up lists of closed PRs.
+
+   Select any PR in the list to go to that PR's **Overview** page.
 
    ![Screenshot of the view tabs for PRs in Azure Repos.](media/pull-requests/pr_status_widget.png)
 
@@ -267,7 +269,7 @@ Draft PRs have the following differences from published PRs:
 
   ![Screenshot showing Publish for a P R.](media/pull-requests/publish-pr.png)
 
-- To mark an existing active PR as a draft, choose **Mark as draft**. Marking a PR as draft resets all votes.
+- To change an existing published PR to a draft, choose **Mark as draft**. Marking a PR as draft removes all votes.
 
   ![Screenshot showing Mark as draft.](media/pull-requests/mark-pr-as-draft.png)
 
@@ -277,7 +279,7 @@ Draft PRs have the following differences from published PRs:
 
 ## Add details to PRs
 
-On the **New pull request** page, describe your changes so others can see what problems the changes solve. You can change the PR title, add reviewers, link work items, and add tags and a detailed description to explain your changes.
+On the **New pull request** page, describe your changes so others can see what problems the changes solve. Just as in an existing PR, you can see the **Files** and **Commits** in your PR on separate tabs. You can change the PR title, add reviewers, link work items, and add tags and a detailed description to explain your changes.
 
 When you're ready to have your changes reviewed, select **Create** to create the PR.
 
@@ -323,11 +325,11 @@ To add a label when creating a PR, choose **Add label**. After you create a PR, 
 
 ::: moniker-end
 
-### Add and remove reviewers
+### Add reviewers
 
 ::: moniker range="azure-devops"
 
-You can add reviewers when you create a PR, or in the **Reviewers** section of an existing PR. You can also make existing optional reviewers required, or can change required reviewers to optional, unless they're required by policy.
+You can add reviewers when you create a PR, or in the **Reviewers** section of an existing PR. You can also make existing optional reviewers required, or can change required reviewers to optional or remove them, unless they're required by policy.
 
 To add reviewers to your PR:
 
@@ -335,11 +337,13 @@ To add reviewers to your PR:
 
    :::image type="content" source="media/pull-requests/pull-request-add-reviewer-v2.png" alt-text="Pull request overview":::
 
-1. Enter the name of a user or group to add to the reviewer list for the PR. If a user isn't a member of your project, you'll need to [add them](../../organizations/security/add-users-team-project.md).
+1. Enter the name of a user or group to add to the reviewer list for the PR. If a reviewer isn't a member of your project, you'll need to [add them to the project](../../organizations/security/add-users-team-project.md) first.
 
 1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 
    :::image type="content" source="media/pull-requests/pull-request-add-reviewer.png" alt-text="Add PR reviewer.":::
+
+To change a reviewer between required and optional, or remove a reviewer, select **More options** to the right of the reviewer name. To see the members of a team or group designated as a reviewer, select the group icon.
 
 ::: moniker-end
 
@@ -454,7 +458,7 @@ For most teams, nearly all PRs target a default branch, such as `main` or `devel
 
 The PR **Overview** tab shows the current state of the PR at a glance. You can review the title, description, and comments to understand proposed changes and see issues raised by other reviewers.
 
-To help get a quick picture of PR status, the **Overview** tab summarizes branch policies that are passing or failing. If available, the summary shows a snippet of the failure message from the check's log. The overview only lists failed build policies, but you can see all the policy checks by selecting **View checks**.
+To help get a quick picture of PR status, the **Overview** tab summarizes branch policies that are passing or failing. If available, the summary shows a snippet of the failure message from the check's log. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View checks**.
 
 :::image type="content" source="media/pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR overview tab.":::
 
@@ -597,7 +601,7 @@ Use the button at upper right in the PR to vote on the PR changes. The default o
 ::: moniker range="azure-devops"
 After updating your code in response to comments or to fix issues, [commit](commits.md) the changes and [push](pushing.md) the updates to the branch in your Git repo.
 
-You can make quick updates to your branch directly from the **Files** page in your branch on the web.
+To make quick updates to your branch, select **Edit** on the **Files** page in your branch on the web.
 
 ![Screenshot that shows the Edit button to update code directly in Azure Repos.](./media/pull-requests/edit-file.png)
 ::: moniker-end
@@ -704,7 +708,7 @@ When you complete the merge, any linked work items automatically update to show 
 
 ![Screenshot of linked work items showing completed P Rs.](./media/pull-requests/pr_workitem_complete.png)
 
-### Rebasing during PR completion
+### Rebase during PR completion
 
 There are a few situations when rebasing during PR completion isn't possible:
 
@@ -758,7 +762,15 @@ Select **Set auto-complete** from the **Complete** dropdown list to complete and
 >[!NOTE]
 >The **Set auto-complete** option is available in Azure Repos and TFS 2017 and higher when you have branch policies. If you don't see **Set auto-complete**, you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
 
-When you set auto-complete, the PR displays an **Auto-complete** badge.
+By default, a PR that's set to auto-complete only waits on required policies. In the **Enable automatic completion** panel, you can choose to wait on optional policies as well.
+
+![Screenshot that shows changing an optional policy to required in the Enable automatic completion panel.](media/pull-requests/enable-completion.png)
+
+Once you set auto-complete, you can see the policies the PR is waiting for on the PR **Overview** screen. If you set a policy to required in the **Enable automatic completion** panel, you can set it back to optional here.
+
+![Screenshot that shows changing a policy back to optional on the Overview screen.](media/pull-requests/make-optional.png)
+
+A PR set to auto-complete displays an **Auto-complete** badge on the **Pull requests** page.
 
 ![Screenshot showing an auto-complete P R in the P R list.](media/pull-requests/auto-complete-badge.png)
 
