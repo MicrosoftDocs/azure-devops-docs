@@ -8,7 +8,7 @@ ms.date: 10/04/2021
 
 Welcome to what's new in the Azure DevOps docs from September 1, 2021 through September 30, 2021. This article lists some of the major changes to docs during this period.
 
-## Artifactsa
+## Artifacts
 
 ### New articles
 
