@@ -320,7 +320,7 @@ We want to make sure each of your administrators has the tools they need to easi
 
 ### Graph REST APIs in Public Preview
 
-The **Graph REST API** resources allow developers to write applications that manage users, groups and group memberships in VSTS. The API set covers key user management scenarios including adding an MSA or AAD user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. Learn more about the API in our [documentation and samples](https://visualstudio.microsoft.com/docs/integrate/api/graph/overview).
+The **Graph REST API** resources allow developers to write applications that manage users, groups and group memberships in VSTS. The API set covers key user management scenarios including adding an MSA or AAD user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. Learn more about the API in our [documentation and samples](/azure/devops/integrate/).
 
 ### Profile Card
 
