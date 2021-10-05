@@ -409,7 +409,7 @@ Each image shows only the default reason associated with the transition.
    #### Epic, Issue, Task hierarchy
    ![Basic process work item hierarchy](../../get-started/media/track-issues/basic-process-epics-issues-tasks.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    #### Epic, Issue, Task workflow 
    ![Basic process workflow](../../get-started/media/track-issues/basic-process-workflow.png)
@@ -431,12 +431,12 @@ Each image shows only the default reason associated with the transition.
    #### User story
    ![User story workflow states, Agile process](media/ALM_PT_Agile_WF_UserStory.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    #### Feature
    ![Feature workflow states, Agile process](media/ALM_PT_Agile_WF_Feature.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    #### Epic
    ![Epic workflow states, Agile process](media/ALM_PT_Agile_WF_Epic.png)
@@ -448,12 +448,12 @@ Each image shows only the default reason associated with the transition.
    #### Bug
    ![Bug workflow states, Agile process](media/ALM_PT_Agile_WF_Bug.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    #### Task
    ![Task workflow states, Agile process](media/ALM_PT_Agile_WF_Task.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
       
    :::column-end:::
 :::row-end:::
@@ -467,12 +467,12 @@ Each image shows only the default reason associated with the transition.
    #### Product backlog item
    ![Product backlog item workflow states, Scrum process](media/ALM_PT_Scrum_WF_PBI.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    #### Feature
    ![Feature workflow states, Scrum process](media/ALM_PT_Scrum_WF_Feature.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    #### Epic
    ![Epic workflow states, Scrum process](media/ALM_PT_Scrum_WF_Epic.png)
@@ -484,12 +484,12 @@ Each image shows only the default reason associated with the transition.
    #### Bug
    ![Bug workflow states, Scrum process](media/ALM_PT_Scrum_WF_Bug.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    #### Task
    ![Task workflow states, Scrum process](media/ALM_PT_Scrum_WF_Task.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
      
    :::column-end:::
 :::row-end:::
@@ -503,12 +503,12 @@ Each image shows only the default reason associated with the transition.
    #### Requirement
    ![Requirement workflow states, CMMI process](media/ALM_PT_CMMI_WF_Requirement.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    #### Feature
    ![Feature workflow states, CMMI process](media/ALM_PT_CMMI_WF_Feature.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    #### Epic
    ![Epic workflow states, CMMI process](media/ALM_PT_CMMI_WF_Epic.png)
@@ -520,12 +520,12 @@ Each image shows only the default reason associated with the transition.
    #### Bug
    ![Bug workflow states, CMMI process](media/ALM_PT_CMMI_WF_Bug.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    #### Task
    ![Task workflow states, CMMI process](media/ALM_PT_CMMI_WF_Task.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
      
    :::column-end:::
 :::row-end:::
