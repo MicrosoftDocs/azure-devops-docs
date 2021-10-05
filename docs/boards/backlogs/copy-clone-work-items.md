@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 04/09/2021 
+ms.date: 10/04/2021 
 ---
 
 # Copy or clone work items  
