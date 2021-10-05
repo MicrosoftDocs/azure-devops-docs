@@ -161,7 +161,7 @@ You can create a new PR from:
 
 - [A feature branch pushed to your repo](#from-a-pushed-branch).
 - [The Development section in a linked Azure Boards work item](#from-a-linked-work-item).
-- [The Pull requests page on the project's Azure DevOps website](#from-the-pull-requests-web-page).
+- [The Pull requests page on the project's Azure DevOps website](#from-the-pull-requests-page-on-the-project-website).
 - [Team Explorer in Visual Studio](#from-visual-studio).
 
 ::: moniker range=">= azure-devops-2020"
