@@ -42,7 +42,7 @@ This article provides a series of recipes using DAX calculations to evaluate tim
 
 [!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
-## Add the *Work Items Count* measure 
+## Add the Work Items Count measure 
 
 To simplify quickly generating reports, we designed Analytics views to work with default aggregations in Power BI. To illustrate the difference between a default aggregation and a measure, we start with a simple work item count measure.
 
@@ -85,7 +85,7 @@ To get the correct count using a default aggregation, you apply the filter *Is C
 > [!div class="mx-imgBorder"]  
 > ![Current count of Work Items](media/WorkItemCountCurrent.png) 
 
-## Add *State Sort Order*  
+## Add State Sort Order
 
 By default, Power BI will show states sorted alphabetically in a visualization. It can be misleading when you want to visualize time in state and *Proposed* shows up after *In Progress*.  
 
@@ -121,7 +121,7 @@ The following steps will help you resolve this issue.
 
 <a id="date-previous" />
 
-## Add *Date Previous*  
+## Add Date Previous
 
 The next step for calculating time-in-state requires mapping the previous interval (day, week, month) for each row of data in the dataset. It's a simple calculation using a calculated column. Typically, you would define this column as shown. 
 
@@ -227,7 +227,7 @@ To demonstrate the *State Time in Days* column, the report below includes a char
 > [!div class="mx-imgBorder"]  
 > ![Trend of the Average Time in State](media/time-in-state-average-state-time-bar-chart.png)
 
-### Create a trend chart based on *State Time in Days*  
+### Create a trend chart based on State Time in Days
 
 You can create a trend chart of an average time in state across all work items that were in that state on a given day using the *State Time in Days* calculated column and *Date*.   
 
