@@ -17,7 +17,7 @@ monikerRange: '<= azure-devops'
 
 Create pull requests (PRs) to change, review, and merge code in a [Git project](../../organizations/projects/create-project.md). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams can use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
-The following video shows the pull request process. Some terminology and user interface elements in the video might be out-of-date.
+The following video shows the pull request process. In the video, some terminology and user interface elements might be out-of-date.
 
 > [!VIDEO https://www.youtube.com/embed/J_DHkUKxI0E?start=0]
 
@@ -79,7 +79,7 @@ Pull requests and branch policies let teams enforce best practices for reviewing
 - [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)
 - [Configure a branch policy for an external service](pr-status-policy.md)
 
-## View pull request list
+## View pull requests
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -129,6 +129,31 @@ You can view all of your PRs in your organization, across all projects, by choos
 
 ::: moniker-end 
 
+### Filter PRs
+
+Filtering helps you find and organize PRs to prioritize the most important files in your workflow.
+
+::: moniker range=">= azure-devops-2019"
+
+- To filter PRs by target branch, on the **Pull requests** page, select the **Filter** icon at upper right, and then select **Target branch**. Select the branch you want from the dropdown list.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+
+On the PR **Files** page, you can select **Filter** to use several filters for faster reviews:
+
+- Keyword
+- Reviewed/Unreviewed: **All** (default), **Pending**, **Reviewed**
+- Commented files: **All files** (default), **Files with comments**
+- Comments: **Show** (default), **What's new**, **Hide**
+- Comment status: **Active** (default), **Pending**, **Resolved**, **As designed**, **Won't fix**, **Closed**.
+- Commented by: **All comments** (default), or filter for comments by a specific person.
+
+You can create queries on the PR page with additional filters, such as draft state. These queries create separate and collapsible sections to enable better PR actionability. The queries work across repositories on the **My pull requests** tab of the organization home page.
+
+::: moniker-end
+
 <a name="create-a-new-pull-request"></a>
 ## Create a pull request
 
@@ -149,11 +174,15 @@ You can also create and manage PRs and other resources from the [Azure command-l
 
 ::: moniker range=">= azure-devops-2019"
 
-After you push or update a feature branch, Azure Repos displays a prompt to create a PR on the **Pull Requests** and **Files** pages.
+After you push or update a feature branch, Azure Repos displays a prompt to create a PR.
 
-![Screenshot that shows the prompt to create a P R on the Pull Requests tab in Azure Repos.](media/pull-requests/create-pr-from-push-new-nav.png)
+- On the **Pull Requests** page:
 
-![Screenshot that shows the prompt to create a P R on the Files tab in Azure Repos.](media/pull-requests/create-pr-from-push-files-tab-new-nav.png)
+  ![Screenshot that shows the prompt to create a P R on the Pull Requests tab in Azure Repos.](media/pull-requests/create-pr-from-push-new-nav.png)
+
+- On the **Files** page:
+
+  ![Screenshot that shows the prompt to create a P R on the Files tab in Azure Repos.](media/pull-requests/create-pr-from-push-files-tab-new-nav.png)
 
 Select **Create a pull request** to go to a page where you can [enter your PR details](pull-requests.md#finish) and create the PR.
 
@@ -182,7 +211,7 @@ You can create a PR directly from an Azure Boards work item linked to the branch
 
 The link takes you to a page where you can [enter your PR details](pull-requests.md#finish) and create the PR.
 
-### From the Pull requests web page
+### From the Pull requests page on the project website
 
 You can create PRs for any branch from your project's **Pull requests** page on the web.
 
@@ -249,9 +278,9 @@ Draft PRs have the following differences from published PRs:
 
   ![Screenshot showing a draft P R in the P R list.](media/pull-requests/draft-pull-request-badge.png)
 
-- To create a draft PR, select the arrow next to **Create** and select **Create as draft** when creating the PR. You don't have to use title prefixes such as WIP or DO NOT MERGE.
+To create a draft PR, select the arrow next to **Create** and select **Create as draft** when creating the PR. You don't have to use title prefixes such as WIP or DO NOT MERGE.
 
-  ![Screenshot showing Create as draft P R.](media/pull-requests/create-draft-pr.png)
+![Screenshot showing Create as draft P R.](media/pull-requests/create-draft-pr.png)
 
 ::: moniker-end
 
@@ -265,13 +294,13 @@ Draft PRs have the following differences from published PRs:
 
 ::: moniker range=">=azure-devops-2019"
 
-- When you're ready to have the PR reviewed and completed, select **Publish** at upper right in the PR. Publishing a PR assigns required reviewers, evaluates policies, and kicks off voting.
+When you're ready to have the PR reviewed and completed, select **Publish** at upper right in the PR. Publishing a PR assigns required reviewers, evaluates policies, and kicks off voting.
 
-  ![Screenshot showing Publish for a P R.](media/pull-requests/publish-pr.png)
+![Screenshot showing Publish for a P R.](media/pull-requests/publish-pr.png)
 
-- To change an existing published PR to a draft, choose **Mark as draft**. Marking a PR as draft removes all votes.
+To change an existing published PR to a draft, choose **Mark as draft**. Marking a PR as draft removes all votes.
 
-  ![Screenshot showing Mark as draft.](media/pull-requests/mark-pr-as-draft.png)
+![Screenshot showing Mark as draft.](media/pull-requests/mark-pr-as-draft.png)
 
 ::: moniker-end
 
@@ -330,7 +359,7 @@ To add a label when creating a PR, choose **Add label**. After you create a PR, 
 
 ::: moniker range="azure-devops"
 
-You can add reviewers when you create a PR, or in the **Reviewers** section of an existing PR. You can also make existing optional reviewers required, or can change required reviewers to optional or remove them, unless they're required by policy.
+You can add reviewers when you create a PR, or in the **Reviewers** section of an existing PR. You can also make existing optional reviewers required, or change required reviewers to optional or remove them, unless they're required by policy.
 
 To add reviewers to your PR:
 
@@ -462,31 +491,6 @@ The PR **Overview** tab shows the current state of the PR at a glance. You can r
 To help get a quick picture of PR status, the **Overview** tab summarizes branch policies that are passing or failing. If available, the summary shows a snippet of the failure message from the check's log. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View checks**.
 
 :::image type="content" source="media/pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR overview tab.":::
-
-### Filter PRs
-
-Filtering helps you find and organize PRs to prioritize the most important files in your workflow.
-
-::: moniker range=">= azure-devops-2019"
-
-- To filter PRs by target branch, on the **Pull requests** page, select the **Filter** icon at upper right, and then select **Target branch**. Select the branch you want from the dropdown list.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
-
-On the PR **Files** page, you can select **Filter** to use several filters for faster reviews:
-
-- Keyword
-- Reviewed/Unreviewed: **All** (default), **Pending**, **Reviewed**
-- Commented files: **All files** (default), **Files with comments**
-- Comments: **Show** (default), **What's new**, **Hide**
-- Comment status: **Active** (default), **Pending**, **Resolved**, **As designed**, **Won't fix**, **Closed**.
-- Commented by: **All comments** (default), or filter for comments by a specific person.
-
-You can create queries on the PR page with additional filters, such as draft state. These queries create separate and collapsible sections to enable better PR actionability. The queries work across repositories on the **My pull requests** tab of the organization home page.
-
-::: moniker-end
 
 ### Browse changes
 
@@ -763,19 +767,13 @@ Select **Set auto-complete** from the **Complete** dropdown list to complete and
 >[!NOTE]
 >The **Set auto-complete** option is available in Azure Repos and TFS 2017 and higher when you have branch policies. If you don't see **Set auto-complete**, you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
 
-By default, a PR that's set to auto-complete only waits on required policies. In the **Enable automatic completion** panel, you can choose to wait on optional policies as well.
+By default, a PR that's set to auto-complete waits only on required policies. In the **Enable automatic completion** panel, you can choose to wait on optional policies as well.
 
 ![Screenshot that shows changing an optional policy to required in the Enable automatic completion panel.](media/pull-requests/enable-completion.png)
 
-Once you set auto-complete, you can see the policies the PR is waiting for on the PR **Overview** screen. If you set a policy to required in the **Enable automatic completion** panel, you can set it back to optional here.
+Starting with TFS 2018 Update 2, the PR **Overview** page [displays the list of outstanding policy criteria](/azure/devops/release-notes/2018/jan-24-vsts#view-remaining-policy-criteria-for-pull-request-auto-complete) the PR is waiting for. If you set a policy to required in the **Enable automatic completion** panel, you can set it back to optional here.
 
-![Screenshot that shows changing a policy back to optional on the Overview screen.](media/pull-requests/make-optional.png)
-
-A PR set to auto-complete displays an **Auto-complete** badge on the **Pull requests** page.
-
-![Screenshot showing an auto-complete P R in the P R list.](media/pull-requests/auto-complete-badge.png)
-
-Starting with TFS 2018 Update 2, the PR **Overview** page [displays the list of outstanding policy criteria](/azure/devops/release-notes/2018/jan-24-vsts#view-remaining-policy-criteria-for-pull-request-auto-complete).
+Select **Cancel auto-complete** to turn off auto-complete. 
 
 ::: moniker-end 
 
@@ -787,7 +785,9 @@ Starting with TFS 2018 Update 2, the PR **Overview** page [displays the list of 
 ![Screenshot of a P R in auto-complete state.](./media/pull-requests/pr_banner_autocomplete.png)
 ::: moniker-end 
 
-Select **Cancel auto-complete** to turn off auto-complete. 
+A PR set to auto-complete displays an **Auto-complete** badge on the **Pull requests** page.
+
+![Screenshot showing an auto-complete P R in the P R list.](media/pull-requests/auto-complete-badge.png)
 
 ### Abandon your changes
 
