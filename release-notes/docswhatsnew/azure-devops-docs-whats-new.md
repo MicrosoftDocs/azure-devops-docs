@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps docs: What's new for September 1, 2021 - September 30, 2021"
 description: "What's new in the Azure DevOps docs for September 1, 2021 - September 30, 2021."
-ms.date: 10/04/2021
+ms.date: 10/05/2021
 ---
 
 # Azure DevOps docs: What's new for September 1, 2021 - September 30, 2021
@@ -16,7 +16,6 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2021 through Se
 
 ### Updated articles
 
-- [Publish a Maven artifact using Gradle](/azure/devops/artifacts/gradle/publish-package-gradle)
 - [Azure Artifacts documentation](/azure/devops/artifacts/index)
 - [Install NuGet packages with Visual Studio](/azure/devops/artifacts/nuget/consume)
 - [Use dotnet CLI with Azure Artifacts](/azure/devops/artifacts/nuget/dotnet-exe)
