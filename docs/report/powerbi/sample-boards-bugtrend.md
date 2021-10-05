@@ -82,21 +82,94 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 The following table describes each part of the query.  
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td><td>Start of filter statement</td><tr>
-<tr><td><code>WorkItemType eq 'Bug'</code></td><td>Return Bugs.</td><tr>
-<tr><td><code>and State ne 'Closed'</code></td><td>Omit Closed bugs.</td><tr>
-<tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with <code>Area/AreaPath eq '{areapath}'</code> returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement <code>Teams/any(x:x/TeamName eq '{teamname})'</code>.</td><tr>
-<tr><td><code>and DateValue ge {startdate}</code></td><td>Start trend on or after the specified date. Example: <strong>2021-04-01Z</strong> represents 2021-April-01.</td><tr>
-<tr><td><code>)</code></td><td>Close filter()</td><tr>
-<tr><td><code>/groupby(</code></td><td>Start groupby()</td><tr>
-<tr><td><code>(DateValue, State, WorkItemType, Priority, Severity, Area/AreaPath, Iteration/IterationPath), </code></td><td>Group by DateValue (used for trending), and any fields you want to report on.</td><tr>
-<tr><td><code>aggregate($count as Count)</code></td><td>Aggregate by counting bugs that match the criteria on each date</td><tr>
-<tr><td><code>)</code></td><td>Close groupby().</td><tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="3":::
+   Start of filter statement
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `WorkItemType eq 'Bug'`
+   :::column-end:::
+   :::column span="3":::
+   Return Bugs.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and State ne 'Closed'`
+   :::column-end:::
+   :::column span="3":::
+   Omit Closed bugs.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and startswith(Area/AreaPath,'{areapath}')`
+   :::column-end:::
+   :::column span="3":::
+   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and DateValue ge {startdate}`
+   :::column-end:::
+   :::column span="3":::
+   Start trend on or after the specified date. Example: **2021-04-01Z** represents 2021-April-01.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="3":::
+   Close filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="3":::
+   Start groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(DateValue, State, WorkItemType, Priority, Severity, Area/AreaPath, Iteration/IterationPath), `
+   :::column-end:::
+   :::column span="3":::
+   Group by DateValue (used for trending), and any fields you want to report on.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate($count as Count)`
+   :::column-end:::
+   :::column span="3":::
+   Aggregate by counting bugs that match the criteria on each date
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="3":::
+   Close groupby().
+   :::column-end:::
+:::row-end:::
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
 
