@@ -493,7 +493,6 @@ Each image shows only the default reason associated with the transition.
      
    :::column-end:::
 :::row-end:::
-:::row:::
 
 
 #### [CMMI process](#tab/cmmi-process) 
