@@ -72,14 +72,39 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v1.0/Areas?
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$filter=startswith(AreaPath, '{areapath}')</code></td><td>Return all teams mapped to an Area Path at or under the specified {areapath}. To include all teams in a project, omit this statement.</td><tr>
-<tr><td><code>&$select=AreaSK, AreaPath</code></td><td>Returning Area Path fields, to use for mapping</td><tr>
-<tr><td><code>&$expand=Teams($select=TeamName)</code></td><td>Returning the Team associated with the Area Path</td><tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$filter=startswith(AreaPath, '{areapath}')`
+   :::column-end:::
+   :::column span="1":::
+   Return all teams mapped to an Area Path at or under the specified {areapath}. To include all teams in a project, omit this statement.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `&$select=AreaSK, AreaPath`
+   :::column-end:::
+   :::column span="1":::
+   Returning Area Path fields, to use for mapping
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `&$expand=Teams($select=TeamName)`
+   :::column-end:::
+   :::column span="1":::
+   Returning the Team associated with the Area Path
+   :::column-end:::
+:::row-end:::
+
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
 
