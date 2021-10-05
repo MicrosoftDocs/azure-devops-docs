@@ -93,7 +93,7 @@ Welcome to what's new in the Azure DevOps docs from March 1, 2021 through March 
 
 - [Access and permissions FAQs](/azure/devops/organizations/security/faq-permissions)
 - [Troubleshoot access and permission issues](/azure/devops/organizations/security/troubleshoot-permissions)
-- [Time zone settings and usage](/azure/devops/organizations/settings/timezone-settings-and-usage)
+- [Time zone settings and usage](/azure/devops/organizations/settings/timezone-settings-usage)
 
 ### Updated articles
 

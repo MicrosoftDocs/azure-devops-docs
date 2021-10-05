@@ -85,7 +85,7 @@ Third-party tools and services can now access Git repositories hosted in Visual 
 
 You can now filter Git Push and Git Pull Request service hook events by group membership. For example, you can now trigger a notification to HipChat or Slack only when someone on your team creates a pull request or pushes a code change. For push events, you can choose a group to which the person that pushed must belong. For pull requests, you can choose a group to which the pull request originator belongs and/or choose a group that must be included in the set of reviewers.
 
-To learn more about all the services, see [Integrate with service hooks](https://visualstudio.microsoft.com/get-started/integrate/integrating-with-service-hooks-vs).
+To learn more about all the services, see [Integrate with service hooks](/azure/devops/service-hooks/overview).
 
 ## Power BI & Visual Studio Online
 

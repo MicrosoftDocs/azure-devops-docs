@@ -109,67 +109,158 @@ Each query contains the following strings that you must substitute with your val
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>Pipeline/PipelineName eq '{pipelineName}'</code></td>
-<td>Return test runs for the specified pipeline</td>
-<tr>
-<tr><td><code>and CompletedOn/Date ge {startdate}</code></td>
-<td>Return test runs on or after the specified date</td>
-<tr>
-<tr><td><code>and Workflow eq 'Build'</code></td>
-<td>Return test runs for 'Build' workflow</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close filter()</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(TestSK, Test/TestName),</code></td>
-<td>Group by the test Name</td>
-<tr>
-<tr><td><code>aggregate(</code></td>
-<td>Start aggregate. For all the test runs matching the above filter criteria:</td>
-<tr>
-<tr><td><code>ResultCount with sum as TotalCount,</code></td>
-<td>Count the total number of test runs as TotalCount</td>
-<tr>
-<tr><td><code>ResultPassCount with sum as PassedCount,</code></td>
-<td>Count the total number of passed test runs as PassedCount</td>
-<tr>
-<tr><td><code>ResultFailCount with sum as FailedCount,</code></td>
-<td>Count the total number of failed test runs as FailedCount</td>
-<tr>
-<tr><td><code>ResultNotExecutedCount with sum as NotExecutedCount</code></td>
-<td>Count the total number of not executed test runs as NotExecutedCount</td>
-<tr>
-<tr><td><code>ResultNotImpactedCount with sum as NotImpactedCount,</code></td>
-<td>Count the total number of not impacted test runs as NotImpactedCount</td>
-<tr>
-<tr><td><code>ResultFlakyCount with sum as FlakyCount</code></td>
-<td>Count the total number of flaky test runs as FlakyCount</td>
-<tr>
-<tr><td><code>))</code></td>
-<td>Close aggregate() and groupby()</td>
-<tr>
-<tr><td><code>/compute(</code></td>
-<td>Start compute()</td>
-<tr>
-<tr><td><code>iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast(TotalCount sub NotExecutedCount, Edm.Decimal)) mul 100, 0) as PassRate</code></td>
-<td>For all the tests, calculate Pass rate</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close compute()</td>
-<tr>
-</tbody>
-</table>
-
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelineName}'`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs for the specified pipeline
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and CompletedOn/Date ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs on or after the specified date
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and Workflow eq 'Build'`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs for 'Build' workflow
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(TestSK, Test/TestName),`
+   :::column-end:::
+   :::column span="1":::
+   Group by the test Name
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate(`
+   :::column-end:::
+   :::column span="1":::
+   Start aggregate. For all the test runs matching the above filter criteria:
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultCount with sum as TotalCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of test runs as TotalCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultPassCount with sum as PassedCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of passed test runs as PassedCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultFailCount with sum as FailedCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of failed test runs as FailedCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultNotExecutedCount with sum as NotExecutedCount`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of not executed test runs as NotExecutedCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultNotImpactedCount with sum as NotImpactedCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of not impacted test runs as NotImpactedCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultFlakyCount with sum as FlakyCount`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of flaky test runs as FlakyCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `))`
+   :::column-end:::
+   :::column span="1":::
+   Close aggregate() and groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/compute(`
+   :::column-end:::
+   :::column span="1":::
+   Start compute()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `iif(TotalCount gt NotExecutedCount, ((PassedCount add NotImpactedCount) div cast(TotalCount sub NotExecutedCount, Edm.Decimal)) mul 100, 0) as PassRate`
+   :::column-end:::
+   :::column span="1":::
+   For all the tests, calculate Pass rate
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close compute()
+   :::column-end:::
+:::row-end:::
 
 ## Power BI transforms
 
