@@ -35,7 +35,7 @@ To track the progress of more than one test plan or test suite, use the Progress
 ::: moniker range="azure-devops"
 - You must be a member of a project with Basic access or higher. If you don't have a project yet, create one. For more information, see [Sign up for free](../user-guide/sign-up-invite-teammates.md). 
 - If you haven't been added as a project member, [get added now](../organizations/accounts/add-organization-users.md). Anyone with access to the project, except stakeholders, can view Analytics views.
-- **Test Plans** must be enabled. If it is disabled, the **Test Plans>Pogress Report** page won't display. To re-enable **Test Plans**, see [Turn an Azure DevOps service on or off](../organizations/settings/set-services.md)
+- **Test Plans** must be enabled. If it is disabled, the **Test Plans>Progress Report** page won't display. To re-enable **Test Plans**, see [Turn an Azure DevOps service on or off](../organizations/settings/set-services.md)
 - Have the **View Analytics**  permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../report/powerbi/analytics-security.md).
 ::: moniker-end
 
@@ -43,7 +43,7 @@ To track the progress of more than one test plan or test suite, use the Progress
 
 - You must be a member of a project with Basic access or higher. If you haven't been added as a project member, [get added now](../organizations/security/add-users-team-project.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
 - [Verify that Analytics](../report/dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service. 
-- **Test Plans** must be enabled. If it is disabled, the **Test Plans>Pogress Report** page won't display. To re-enable **Test Plans**, see [Turn an Azure DevOps service on or off](../organizations/settings/set-services.md)
+- **Test Plans** must be enabled. If it is disabled, the **Test Plans>Progress Report** page won't display. To re-enable **Test Plans**, see [Turn an Azure DevOps service on or off](../organizations/settings/set-services.md)
 - Have the **View Analytics**  permission set to *Allow*. For more information, see [Grant permissions to access the Analytics service](../report/powerbi/analytics-security.md).
 
 ::: moniker-end
