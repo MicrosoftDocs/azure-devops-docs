@@ -1,14 +1,14 @@
 ---
 title: Sprint Burndown sample Power BI report 
 titleSuffix: Azure DevOps
-description: Learn how to generate a sprint burndown Power BI report.
+description: How to generate a sprint burndown Power BI report
 ms.technology: devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/05/2021
+ms.date: 09/21/2021
 ---
 
 # Sprint burndown sample reports
@@ -81,7 +81,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-* `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
+* {areapath} - Your Area Path. Example format: Project\Level1\Level2 
 
 
 ### Query breakdown
@@ -118,7 +118,7 @@ The following table describes each part of the query.
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
    :::column span="1":::
-   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
+   Work items under a specific Area Path. Replacing with "Area/AreaPath eq '{areapath}'" returns items at a specific Area Path.
    
    To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`
    :::column-end:::
@@ -144,7 +144,7 @@ The following table describes each part of the query.
    `and DateValue le Iteration/EndDate`
    :::column-end:::
    :::column span="1":::
-   End trend at Iteration end.
+   End trend at Interation end.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -241,7 +241,7 @@ The example report, which displays burndown on both Story Points and Count of St
 
 ## Additional queries
 
-You can use the following additional queries to create different but similar reports. You can use these queries with the steps defined above.
+You can use the following additional queries to create different but similar reports.You can use these queries with the steps defined above.
 
 ### Filter by Teams, rather than Area Path
 
@@ -293,9 +293,11 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
         )
 ```
 
+* * *
+
 ### All Sprints since the beginning of the year
 
-You may want to view a burndown of all sprints in a single report. These queries pull in sprint burndowns by story points, for all the sprints, since the beginning of the year 2019.
+You may want to view a burndown of all the sprints in a single report. These queries pulls in sprint burndowns (by story points) for all the sprints since the beginning of the year 2019.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -341,7 +343,10 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
         )
 ```
 
+* * *
+
 <a id="remaining-work" />
+
 
 ### Burndown by Tasks' Remaining Work
 
