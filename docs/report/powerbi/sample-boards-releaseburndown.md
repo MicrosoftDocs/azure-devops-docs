@@ -84,22 +84,104 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 The following table describes each part of the query.
 
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(WorkItemType eq 'User Story'</code></td><td>Include User Stories in burndown.</td><tr>
-<tr><td><code>and StateCategory ne 'Completed'</code></td><td>Filters out items that are completed. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</a></td><tr>
-<tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with <code>Area/AreaPath eq '{areapath}'</code> returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement "Teams/any(x:x/TeamName eq '{teamname})'"</td><tr>
-<tr><td><code>and Tags/any(x:x/TagName eq '{tagname}')</code>.</td><td>Specifies the Tag that represents the Release to burndown, and to include all work items tagged with {tagname} in the report.</td><tr>
-<tr><td><code>and DateValue ge {startdate}</code></td><td>Start burndown on or after the specified date. Example: <strong>2019-04-01Z</strong>represents 2019-April-01.</td><tr>
-<tr><td><code>and DateValue le {enddate}</code></td><td>Start burndown on or before the specified date. Same format as {startdate}.</td><tr>
-<tr><td><code>)</code></td><td>Close  filter().</td><tr>
-<tr><td><code>/groupby (</code></td><td>Start groupby().</td><tr>
-<tr><td><code>(DateValue, State, Area/AreaPath), </code></td><td>Group by DateValue (used for trending), and any fields you want to report on.</td><tr>
-<tr><td><code>aggregate ($count as Count, StoryPoints with sum as TotalStoryPoints)</code></td><td>Aggregate by count of user stories, and sum of Story Points.</td><tr>
-<tr><td><code>)</code></td><td>Close groupby().</td><tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(WorkItemType eq 'User Story'`
+   :::column-end:::
+   :::column span="1":::
+   Include User Stories in burndown.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and StateCategory ne 'Completed'`
+   :::column-end:::
+   :::column span="1":::
+   Filters out items that are completed. For more information on State Categories, see [How workflow states and state categories are used in Backlogs and Boards.](../../boards/work-items/workflow-and-state-categories.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and startswith(Area/AreaPath,'{areapath}')`
+   :::column-end:::
+   :::column span="1":::
+   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
+   
+   To filter by Team Name, use the filter statement "Teams/any(x:x/TeamName eq '{teamname})'"
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and Tags/any(x:x/TagName eq '{tagname}')`.
+   :::column-end:::
+   :::column span="1":::
+   Specifies the Tag that represents the Release to burndown, and to include all work items tagged with {tagname} in the report.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and DateValue ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Start burndown on or after the specified date. Example: **2019-04-01Z**represents 2019-April-01.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and DateValue le {enddate}`
+   :::column-end:::
+   :::column span="1":::
+   Start burndown on or before the specified date. Same format as {startdate}.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close  filter().
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby (`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby().
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(DateValue, State, Area/AreaPath), `
+   :::column-end:::
+   :::column span="1":::
+   Group by DateValue (used for trending), and any fields you want to report on.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate ($count as Count, StoryPoints with sum as TotalStoryPoints)`
+   :::column-end:::
+   :::column span="1":::
+   Aggregate by count of user stories, and sum of Story Points.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close groupby().
+   :::column-end:::
+:::row-end:::
 
 
 [!INCLUDE [temp](includes/query-filters-work-items.md)]
