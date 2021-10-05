@@ -127,7 +127,8 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
      :::column span="1":::
    
    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To @Me`
-   `And State = Active`
+   
+`And State = Active`
 
    :::column-end:::
 :::row-end:::
@@ -142,7 +143,8 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
      :::column span="1":::
    
    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To Was Ever @Me`
-   `And State = Closed`
+
+`And State = Closed`
 
   
    :::column-end:::
@@ -157,9 +159,10 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
      :::column span="1":::
    
    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = User Story`
-   `And State = Active`
 
-   `And Assigned To In Group [FabrikamFiber]\Web`
+`And State = Active`
+
+`And Assigned To In Group [FabrikamFiber]\Web`
 
   
    :::column-end:::
@@ -174,7 +177,8 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
      :::column span="1":::
    
    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Changed By = @Me`
-   `And Changed Date >= @Today-30`
+
+`And Changed Date >= @Today-30`
 
   
    :::column-end:::
@@ -805,9 +809,10 @@ You can use the following fields to filter your queries or build reports. Some o
 > 1. See [Date and Identity fields](#date-identity).  
 > 2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Azure Active Directory](../../organizations/security/about-permissions.md#aad). 
 > 3. See [Activated By/Date and Resolved By/Date fields](#activated-resolved-fields).   
-> 4. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
-	> [!NOTE]  
-	> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
+> 4. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md).  
+
+> [!NOTE]  
+> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
 
 ::: moniker-end
 
