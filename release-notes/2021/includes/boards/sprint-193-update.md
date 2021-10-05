@@ -28,7 +28,7 @@ A pain point for customers using Delivery Plans was that the title of the work i
 
 ### Show light green colored dependency icon for work items that have dependencies with no issues
 
-With Delivery Plans, you can [track dependencies that have been added to work items](https://docs.microsoft.com/en-us/azure/devops/boards/plans/track-dependencies?view=azure-devops). Work items that have dependencies will have a link icon in the card. With this update, we included colors to the link icon. Dependencies that have an issue will have a red link icon, and ones that do not have an issue will have a light green link icon.
+With Delivery Plans, you can [track dependencies that have been added to work items](https://docs.microsoft.com/azure/devops/boards/plans/track-dependencies?view=azure-devops). Work items that have dependencies will have a link icon in the card. With this update, we included colors to the link icon. Dependencies that have an issue will have a red link icon, and ones that do not have an issue will have a light green link icon.
 
 > [!div class="mx-imgBorder"]
 > ![Delivery Plans work item dependencies](../../media/193-boards-02.png)
