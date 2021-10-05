@@ -414,7 +414,7 @@ Each image shows only the default reason associated with the transition.
    #### Epic, Issue, Task workflow 
    ![Basic process workflow](../../get-started/media/track-issues/basic-process-workflow.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
       
    :::column-end:::
 :::row-end:::
