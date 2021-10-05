@@ -235,9 +235,8 @@ The following table describes the work item link types you can specify to scope 
    Restrictions and recommendations:-  
 
    - An error appears when you attempt to create links that define circular relationships.
-   - Create predecessor-successor links only to work items that are within the same project.  
-   
-   You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the project for which the query is defined are imported.   
+   - Create predecessor-successor links only to work items that are within the same project. 
+     You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the project for which the query is defined are imported.   
    :::column-end:::
 :::row-end:::
 :::row:::
