@@ -140,7 +140,7 @@ Control options are available as keys on the `task` section.
 > [!NOTE]
 > A given task or job can't unilaterally decide whether the job/stage continues. What it can do is offer a `continueOnError` status of **succeeded** or **failed**, and downstream tasks/jobs each have a condition computation that lets them decide whether to run or not. The default condition which is effectively "run if we're in a successful state".
 > 
-> **Continue on error** alters this in a subtle way. It effectively ""tricks" all downstream steps/jobs into treating any result as "success" for the purposes of making that decision. Or to put it another way, it says "don't consider the failure of this task when you're making a decision about the condition of the containing structure".
+> **Continue on error** alters this in a subtle way. It effectively "tricks" all downstream steps/jobs into treating any result as "success" for the purposes of making that decision. Or to put it another way, it says "don't consider the failure of this task when you're making a decision about the condition of the containing structure".
 
 The timeout period begins when the task starts running. It does not include the
 time the task is queued or is waiting for an agent.
