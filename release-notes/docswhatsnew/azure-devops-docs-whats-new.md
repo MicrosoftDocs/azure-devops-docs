@@ -16,6 +16,7 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2021 through Se
 
 ### Updated articles
 
+- [Publish a Maven artifact using Gradle](/azure/devops/pipelines/artifacts/publish-package-gradle)
 - [Azure Artifacts documentation](/azure/devops/artifacts/index)
 - [Install NuGet packages with Visual Studio](/azure/devops/artifacts/nuget/consume)
 - [Use dotnet CLI with Azure Artifacts](/azure/devops/artifacts/nuget/dotnet-exe)
