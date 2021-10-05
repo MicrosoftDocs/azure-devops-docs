@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 10/04/2021
+ms.date: 10/05/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -29,7 +29,7 @@ Use the following guidelines to create, review, and merge PRs.
 
 ### Get great feedback
 
-High quality reviews start with high quality feedback. Here are some keys to great PR feedback:
+High-quality reviews start with high-quality feedback. Here are some keys to great PR feedback:
 
 - The PR owner should have the right people review the PR, and make sure that reviewers know what the code does.
 - Reviewers should give actionable, constructive feedback.
@@ -60,7 +60,7 @@ Your team might rely on critical branches in your repo, such as the `main` branc
 
 You can add more policies to PRs to enforce better code quality in key branches. Extra requirements like a clean build of the proposed code or approval from multiple reviewers can help protect key branches.
 
-The number of required approvals for a PR is set in a branch policy. A PR can be set to auto-complete with the required number of approvals, even if other reviewers reject the changes. It's best practice for at least two reviewers to review and approve changes in a significant PR.
+The number of required approvals for a PR is set in a branch policy. A PR can be set to autocomplete with the required number of approvals, even if other reviewers reject the changes. It's best practice for at least two reviewers to review and approve changes in a significant PR.
 
 To reset votes when a PR author pushes new changes, select **Reset code reviewer votes when there are new changes** in the [Require a minimum number of reviewers](branch-policies.md#require-a-minimum-number-of-reviewers) branch policy.
 
@@ -74,7 +74,9 @@ For more information, see:
 
 Pull requests and branch policies let teams enforce best practices for reviewing code and running automated builds. Many teams have further requirements and validations to perform on code. To cover these needs, you can integrate PR status checks into the PR workflow. With PR status checks, external services can programmatically sign off on code changes by associating success or failure information with the PR.
 
-- [Pull request status overview](pull-request-status.md)
+For more information, see the following articles:
+
+- [Customize and extend pull request workflows with pull request status](pull-request-status.md)
 - [Create a PR status server with Node.js](create-pr-status-server.md)
 - [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)
 - [Configure a branch policy for an external service](pr-status-policy.md)
@@ -150,7 +152,7 @@ On the PR **Files** page, you can select **Filter** to use several filters for f
 - Comment status: **Active** (default), **Pending**, **Resolved**, **As designed**, **Won't fix**, **Closed**.
 - Commented by: **All comments** (default), or filter for comments by a specific person.
 
-You can create queries on the PR page with additional filters, such as draft state. These queries create separate and collapsible sections to enable better PR actionability. The queries work across repositories on the **My pull requests** tab of the organization home page.
+You can create queries on the PR page with more filters, such as draft state. These queries create separate and collapsible sections to enable better PR actionability. The queries work across repositories on the **My pull requests** tab of the organization home page.
 
 ::: moniker-end
 
@@ -227,7 +229,7 @@ You can create PRs for any branch from your project's **Pull requests** page on 
 
 ### From Visual Studio
 
-You can initiate PRs directly from Visual Studio.
+You can create PRs directly from Visual Studio.
 
 1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
 
@@ -245,7 +247,7 @@ You can initiate PRs directly from Visual Studio.
 
    ![Check out source branch](./media/pull-requests/checkout-pr-source-branch.png)
 
-You can also initiate PRs from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request**.
+You can also create PRs from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request**.
 
 ![Screenshot of initiating a P R from the Branches view.](media/pull-requests/new-pr-from-branch.png)
 
@@ -271,7 +273,7 @@ If your PR isn't ready for review, you can create a draft PR to indicate work in
 
 Draft PRs have the following differences from published PRs:
 
-- Build validation policies don't run automatically. You can queue build validations manually by selecting the more options menu next to the the build in the PR.
+- Build validation policies don't run automatically. You can queue build validations manually by selecting the more options menu next to the build in the PR.
 - Voting is disabled while in draft mode.
 - Required reviewers aren't automatically added. Notifications are sent only to reviewers that you explicitly add to the draft PR.
 - Draft PRs display in the PR list with a **Draft** badge.
@@ -308,7 +310,7 @@ To change an existing published PR to a draft, choose **Mark as draft**. Marking
 
 ## Add details to PRs
 
-On the **New pull request** page, describe your changes so others can see what problems the changes solve. Just as in an existing PR, you can see the **Files** and **Commits** in your PR on separate tabs. You can change the PR title, add reviewers, link work items, and add tags and a detailed description to explain your changes.
+On the **New pull request** page, describe your changes so others can see what problems the changes solve. As in an existing PR, you can see the **Files** and **Commits** in your PR on separate tabs. You can change the PR title, add reviewers, link work items, and add tags and a detailed description to explain your changes.
 
 When you're ready to have your changes reviewed, select **Create** to create the PR.
 
@@ -373,7 +375,7 @@ To add reviewers to your PR:
 
    :::image type="content" source="media/pull-requests/pull-request-add-reviewer.png" alt-text="Add PR reviewer.":::
 
-To change a reviewer between required and optional, or remove a reviewer, select **More options** to the right of the reviewer name. To see the members of a team or group designated as reviewers, select the group's icon.
+To change a reviewer between required and optional, or remove a reviewer, select **More options** to the right of the reviewer name. To see the membership of a group or team designated as a reviewer, select the group's icon.
 
 ::: moniker-end
 
@@ -767,27 +769,27 @@ Select **Set auto-complete** from the **Complete** dropdown list to complete and
 >[!NOTE]
 >The **Set auto-complete** option is available in Azure Repos and TFS 2017 and higher when you have branch policies. If you don't see **Set auto-complete**, you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
 
-By default, a PR that's set to auto-complete waits only on required policies. In the **Enable automatic completion** panel, you can choose to wait on optional policies as well.
+By default, a PR that's set to autocomplete waits only on required policies. In the **Enable automatic completion** panel, you can choose to wait on optional policies as well.
 
 ![Screenshot that shows changing an optional policy to required in the Enable automatic completion panel.](media/pull-requests/enable-completion.png)
 
-Starting with TFS 2018 Update 2, the PR **Overview** page [displays the list of outstanding policy criteria](/azure/devops/release-notes/2018/jan-24-vsts#view-remaining-policy-criteria-for-pull-request-auto-complete) the PR is waiting for. If you set a policy to required in the **Enable automatic completion** panel, you can set it back to optional here.
+Starting with TFS 2018 Update 2, the PR **Overview** page [displays the list of outstanding policy criteria](/azure/devops/release-notes/2018/jan-24-vsts#view-remaining-policy-criteria-for-pull-request-auto-complete) the PR is waiting for. If you set a policy to be required in the **Enable automatic completion** panel, you can set it back to optional here.
 
-Select **Cancel auto-complete** to turn off auto-complete. 
+Select **Cancel auto-complete** to turn off autocomplete. 
 
 ::: moniker-end 
 
 ::: moniker range="azure-devops"
-![Screenshot of a P R in auto-complete state.](./media/pull-requests/autocomplete.png)
+![Screenshot of a P R in autocomplete state.](./media/pull-requests/autocomplete.png)
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2020"
-![Screenshot of a P R in auto-complete state.](./media/pull-requests/pr_banner_autocomplete.png)
+![Screenshot of a P R in autocomplete state.](./media/pull-requests/pr_banner_autocomplete.png)
 ::: moniker-end 
 
-A PR set to auto-complete displays an **Auto-complete** badge on the **Pull requests** page.
+A PR set to autocomplete displays an **Auto-complete** badge on the **Pull requests** page.
 
-![Screenshot showing an auto-complete P R in the P R list.](media/pull-requests/auto-complete-badge.png)
+![Screenshot showing an autocomplete P R in the P R list.](media/pull-requests/auto-complete-badge.png)
 
 ### Abandon your changes
 
@@ -829,7 +831,7 @@ Select the settings button while you have your project open to bring up the proj
 
 ![Open up the administrative area of the web portal for your project](media/pull-requests/gear_icon_settings.png) 
 
-- Select the **Notifications** tab to view your notification settings, and choose **New subscription** to subscribe to additional notifications.
+- Select the **Notifications** tab to view your notification settings, and choose **New subscription** to subscribe to more notifications.
 
   ![Subscribe to emails](./media/pull-requests/pr-notifications.png)
 
