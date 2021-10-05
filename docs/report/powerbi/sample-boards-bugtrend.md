@@ -1,14 +1,14 @@
 ---
 title: Bug trends sample Power BI report 
 titleSuffix: Azure DevOps
-description: How to generate a bug trend Power BI report 
+description: Learn how to generate a bug trend Power BI report. 
 ms.technology: devops-analytics
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/21/2021
+ms.date: 10/05/2021
 ---
 
 # Bug trends sample report 
@@ -72,8 +72,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-- {areapath} - Your Area Path. Example format: Project\Level1\Level2
-- {startdate} - The date to start your trend report. Format: YYYY-MM-DDZ. Example: 2019-04-01Z represents 2019-April-01. Do not enclose in quotes.
+- `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
+- `{startdate}` - The date to start your trend report. Format: YYYY-MM-DDZ. Example: `2019-04-01Z` represents 2019-April-01. Don't enclose in quotes.
 
 <!--- How specify the end date? --> 
 

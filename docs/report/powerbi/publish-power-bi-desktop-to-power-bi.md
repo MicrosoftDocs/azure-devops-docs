@@ -1,21 +1,21 @@
 ---
 title: Publish a Power BI Desktop file to Power BI  
 titleSuffix: Azure DevOps 
-description: How to publish and enable refresh of a Power BI Desktop file to Power BI that uses Analytics for Azure DevOps 
+description: Learn how to publish and enable refresh of a Power BI Desktop file to Power BI that uses Analytics for Azure DevOps. 
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
 ms.author: kaelli
 monikerRange: '>=azure-devops-2019'
 author: KathrynEE
-ms.date: 11/01/2018
+ms.date: 10/05/2021
 ---
 
 # Publish a Power BI Desktop file to Power BI 
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures and charts, you can share those with others by creating a dashboard on Power BI. This article shows you how.   
+Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures, and charts, you can share them with others by creating a dashboard on Power BI. This article shows you how.   
 
 1. If using an [Analytics View](what-are-analytics-views.md), verify that the view is Shared and not Private.
 
@@ -25,7 +25,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
     <img src="media/publish-1.png" alt="Publish Power BI Desktop file" /> 
 
-4. Respond to the prompts to sign in. If you don't already have a Power BI account you will need to create one. Choose **Sign in**.
+4. Respond to the prompts to sign in. If you don't already have a Power BI account, you'll need to create one. Choose **Sign in**.
   
      <img src="media/publish-2.png" alt="Publishing successful" />
 
@@ -35,7 +35,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 7. Choose **Datasets** in the upper right corner.
 
-8. Choose the ellipsis next to the dataset that represents the report you just loaded (this is typically the file name.   
+8. Choose the ellipsis next to the dataset that represents the report you just loaded. It's typically the file name.
 
      <img src="media/publish-3.png" alt="Select the dataset" />
 
