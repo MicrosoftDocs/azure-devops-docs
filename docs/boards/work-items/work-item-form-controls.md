@@ -80,7 +80,7 @@ As work progresses, team members can update the state and reassign it as needed.
 While the workflow states differ for different work item types, they usually follow a progression from New or Active to Closed or Done. The following image shows the work flow states for the Agile process user story. If you want to discard a work item, change the state to Removed.  
 
 :::row:::
-   :::column span="3":::
+   :::column span="2":::
    
    **Typical workflow progression:** 
  
