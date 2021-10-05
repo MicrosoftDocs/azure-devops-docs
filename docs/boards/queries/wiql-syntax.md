@@ -541,7 +541,7 @@ The following table summarizes the differences between work item queries and que
    `[FieldName] = Value`
    :::column-end:::
    :::column span="3":::
-   <code>Specify one or more of the following:  
+   `Specify one or more of the following:`  
    `[Source].[FieldName] = Value`  
    `[Target].[FieldName] = Value`  
    `[System.Links.LinkType] = 'LinkName'`

@@ -206,16 +206,16 @@ To determine the type of process template that was used to create your project, 
 
 :::row:::
    :::column span="1":::
-   Agile
+   **Agile**
    :::column-end:::
-   :::column span="3":::
-   Basic
+   :::column span="1":::
+   **Basic**
    :::column-end:::
-   :::column span="3":::
-   CMMI
+   :::column span="1":::
+   **CMMI**
    :::column-end:::
-   :::column span="3":::
-   Scrum
+   :::column span="1":::
+   **Scrum**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -223,19 +223,19 @@ To determine the type of process template that was used to create your project, 
    
    ![Agile work item types](media/ALM_MPT_WIT_Agile.png) 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ![Basic work item types](media/process-template/basic-work-items.png) 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ![CMMI work item types](media/ALM_MPT_WIT_CMMI.png) 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ![Scrum work item types](media/ALM_MPT_WIT_Scrum.png) 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
 :::row-end:::
 
@@ -247,10 +247,10 @@ To determine the type of process template that was used to create your project, 
    :::column span="1":::
    Scrum
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    Agile
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    CMMI
    :::column-end:::
 :::row-end:::
@@ -259,11 +259,11 @@ To determine the type of process template that was used to create your project, 
    
    ![Scrum work item types](media/ALM_MPT_WIT_Scrum.png) 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ![Agile work item types](media/ALM_MPT_WIT_Agile.png) 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ![CMMI work item types](media/ALM_MPT_WIT_CMMI.png) 
    :::column-end:::

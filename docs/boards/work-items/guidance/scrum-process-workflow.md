@@ -60,7 +60,8 @@ Use the following guidance and that provided for [fields used in common across w
 
    :::column-end:::
    :::column span="3":::
-   Estimate the amount of work required to complete a PBI using any unit of measurement your team prefers, such as story points or time. A numeric value is required. 
+   Estimate the amount of work required to complete a PBI using any unit of measurement your team prefers, such as story points or time. A numeric value is required.  
+
    Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools reference the values in this field. For additional guidance, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
 
    :::column-end:::
@@ -163,7 +164,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
    **Usage**
    :::column-end:::
 :::row-end:::
-
+:::row:::
    :::column span="1":::
    [Remaining Work](../../queries/query-numeric.md) 
 
@@ -172,7 +173,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
    Indicate how many hours or days of work remain to complete a task. As work progresses, update this field. It&#39;s used to calculate capacity charts, the sprint burndown chart, and the [Sprint Burndown (Scrum)](../../../report/sql-reports/sprint-burndown-scrum.md) report.<br />If you divide a task into subtasks, specify Remaining Work for the subtasks only. You can specify work in any unit of measurement your team chooses.
 
    :::column-end:::
-   :::row-end:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    [Activity](../../queries/query-numeric.md) 

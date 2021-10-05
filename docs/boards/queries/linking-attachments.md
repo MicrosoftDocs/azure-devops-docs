@@ -334,6 +334,7 @@ The following table describes fields associated with links and attachments. Most
    :::column-end:::
    :::column span="3":::
    Contains comments from the team member who created the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in query editor.)  
+
    Reference Name=System.Links.Comment, Data type=PlainText
    :::column-end:::
    :::column span="1":::

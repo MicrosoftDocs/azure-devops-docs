@@ -75,7 +75,7 @@ As the following image shows, each work item form comes with a number of control
 
 As work progresses, team members can update the state and reassign it as needed. 
 
-[Product backlog item workflow, Scrum process](../backlogs/media/add-work-item-vsts-update-state.png)  
+![Product backlog item workflow, Scrum process](../backlogs/media/add-work-item-vsts-update-state.png)  
 
 While the workflow states differ for different work item types, they usually follow a progression from New or Active to Closed or Done. The following image shows the work flow states for the Agile process user story. If you want to discard a work item, change the state to Removed.  
 
@@ -111,7 +111,7 @@ Removed work items remain in the data store and can be reactivated by changing t
 
 With each update, the Reason field also updates and changes are recorded in the History field which you can view through the ![history tab icon](../media/icons/icon-history-tab-wi.png) **History** tab. To find work items based on their history, see [History & auditing](../queries/history-and-auditing.md).   
 
-[View change history](../backlogs/media/add-work-item-history.png)  
+![View change history](../backlogs/media/add-work-item-history.png)  
 
 
 
@@ -123,7 +123,7 @@ By linking work items using Related or Dependent link types, you can track work 
 
 There are three links controls provided on most forms. The Development and Related Work scoped links controls appear on the Details tab. The ![Links page icon](../media/icons/icon-links-tab-wi.png) Links tab provides access to all links made to the work item.  
 
-[Bug work item form, Agile process, Development and Related links controls](../../reference/xml/media/linkscontrol-bug-form-dev-related-links.png)  
+![Bug work item form, Agile process, Development and Related links controls](../../reference/xml/media/linkscontrol-bug-form-dev-related-links.png)  
 
 
 ## Add links  
@@ -134,7 +134,7 @@ From each links control, you can perform these actions:
 - To delete a link, highlight it and click the ![delete icon](../media/icons/delete_icon.png) delete icon   
 - To link to an existing item, or create and link a new work item, select one of the menu options.  
 
-[Links control menu of options](../../reference/xml/media/linkscontrol-related-work-menu-options.png)  
+![Links control menu of options](../../reference/xml/media/linkscontrol-related-work-menu-options.png)  
 
 To learn more, see [Add links to work items](../backlogs/add-link.md).
 
@@ -156,7 +156,7 @@ The Related Work links control displays links to other work items in a set order
 
 In addition, the Links control tab provides access to all links made to the work item&mdash;both work items and external objects. 
 
-[Agile process, User Story work item form, Links control tab](../backlogs/media/add-work-item-links.png)
+![Agile process, User Story work item form, Links control tab](../backlogs/media/add-work-item-links.png)
 
 <a id="discussion">  </a>
 

@@ -82,7 +82,8 @@ Choose the process that provides the best fit for your team.
 
    Choose [Agile](agile-process.md) when your team uses Agile planning methods, including Scrum,
    and tracks development and test activities separately. This process works great if you want to track user stories and
-(optionally) bugs on the Kanban board, or track bugs and tasks on the taskboard.
+(optionally) bugs on the Kanban board, or track bugs and tasks on the taskboard.  
+
    You can learn more about Agile methodologies at the
    [Agile Alliance](https://www.agilealliance.org/).
    
@@ -124,7 +125,6 @@ Choose the process that provides the best fit for your team.
    
    
    This process supports [formal change management activities](/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi?viewFallbackFrom=vsts).
-
    Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
    
    :::column-end:::
@@ -175,7 +175,6 @@ The following table summarizes the main distinctions between the WITs and states
    :::column span="1":::
    
    Workflow states
-:::column-end:::
    :::column-end:::
    :::column span="1":::
    
@@ -380,7 +379,7 @@ The following table summarizes the main distinctions between the WITs and states
 > [!NOTE]  
 > 1. You can add these WITs from the [product backlog](../../backlogs/create-your-backlog.md) or [Kanban board](../../boards/kanban-basics.md). The product backlog shows a single view of the current backlog of work that can be dynamically re-ordered and grouped. Product owners can quickly prioritize work and outline dependencies and relationships.  
 
-Also, each team can configure how they want [bugs to show up on their backlogs and boards](../../../organizations/settings/show-bugs-on-backlog.md).
+> Also, each team can configure how they want [bugs to show up on their backlogs and boards](../../../organizations/settings/show-bugs-on-backlog.md).
 
 > 2. With portfolio backlogs you can define a hierarchy of backlogs to understand the scope of work across several teams and see how that work rolls up into broader initiatives. Each team can configure which [portfolio backlogs appear for their use](../../../organizations/settings/select-backlog-navigation-levels.md).
 

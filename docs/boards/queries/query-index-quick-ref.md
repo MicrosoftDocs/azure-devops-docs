@@ -236,6 +236,7 @@ The following table indicates the operators and macros available for the differe
    :::column-end:::
    :::column span="3":::
    Also referred to as **Decimal** and includes **picklistDouble**<sup>2</sup>. A real number, such as 0.2 or 3.5.  
+   
    Query samples: [Query by numeric fields](query-numeric.md). 
 
    :::column-end:::

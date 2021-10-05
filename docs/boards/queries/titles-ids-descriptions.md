@@ -283,7 +283,9 @@ The following table describes common fields used to filter queries. The **ID** f
    :::column-end:::
    :::column span="2":::
    
-   The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within a project collection.  Reference name=System.Id, Data type=Integer
+   The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within a project collection.  
+
+   Reference name=System.Id, Data type=Integer
 
    :::column-end:::
    :::column span="1":::
@@ -390,6 +392,7 @@ The following table describes common fields used to filter queries. The **ID** f
    The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see [Choose process](../work-items/guidance/choose-process.md). To learn how to add a custom work item type, see [Add or modify a work item type](../../reference/add-modify-wit.md). 
 
    To filter work items based on their [category assignment](#category), you can use the **In Group** and **Not In Group** operators and select a category from the drop-down list.  
+
    Reference name=System.WorkItemType, Data type=String
 
   
