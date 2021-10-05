@@ -335,14 +335,17 @@ The following table describes the activity-based and numeric fields that you can
 
    :::column-end:::
    :::column span="2":::
-   A subjective unit of measure that captures the size of a bug or product backlog item. If you assign more effort to an item, you indicate that more work is required to implement it. 
+   A subjective unit of measure that captures the size of a bug or product backlog item. If you assign more effort to an item, you indicate that more work is required to implement it.  
+
    This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to `Effort` in the ProcessConfiguration file.
 
    Reference name=Microsoft.VSTS.Scheduling.Effort, Data type=Double
 
    :::column-end:::
    :::column span="1":::
-   Product Backlog Item, Bug <sup>4</sup> (Scrum)Feature, Epic
+   Product Backlog Item, Bug <sup>4</sup> (Scrum)  
+   
+   Feature, Epic
 
    :::column-end:::
 :::row-end:::
@@ -369,7 +372,8 @@ The following table describes the activity-based and numeric fields that you can
 
    :::column-end:::
    :::column span="2":::
-   A subjective unit of measure that captures the size of a requirement. The larger the size, the more work is required to implement it. 
+   A subjective unit of measure that captures the size of a requirement. The larger the size, the more work is required to implement it.  
+
    This field<sup>3</sup>  is also used to calculate team velocity and forecasting. It is assigned to `Effort` in the ProcessConfiguration file. 
 
    Reference name=Microsoft.VSTS. Scheduling.Size, Data type=Double
@@ -402,7 +406,7 @@ The following table describes the activity-based and numeric fields that you can
    :::column span="2":::
    The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.
 
-   This field <sup>3</sup> is also used to calculate burn down. It is assigned to `RemainingWork` in the ProcessConfiguration file.
+   This field <sup>3</sup> is also used to calculate burn down. It is assigned to `type="RemainingWork"` in the ProcessConfiguration file.
 
    
    > [!NOTE]

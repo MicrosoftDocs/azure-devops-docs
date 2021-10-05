@@ -212,7 +212,7 @@ The following table provides an index to those fields that support field compari
    - [Requirement Type](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI)
    - [Requires Review](query-numeric.md) (CMMI)
    - [Requires Test](query-numeric.md) (CMMI)
-   - [Resolution]](titles-ids-descriptions.md) (Scrum)
+   - [Resolution](titles-ids-descriptions.md) (Scrum)
    - [Resolved By](query-by-workflow-changes.md)
    - [Resolved Date](query-by-workflow-changes.md)
    - [Resolved Reason](query-by-workflow-changes.md)

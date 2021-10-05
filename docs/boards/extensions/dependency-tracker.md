@@ -794,8 +794,6 @@ False
    
    > Specifies the hierarchical depth of Iteration Paths that the Dependency Tracker queries to build the Timeline view. 
 
-   > Specifies the hierarchical depth of Iteration Paths that the Dependency Tracker queries to build the Timeline view. 
-
    :::column-end:::
    :::column span="1":::
    Default: 8A depth of 3 would correspond to: Fabrikam/Release 1/Sprint 20. 

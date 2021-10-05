@@ -375,7 +375,7 @@ When teams estimate work they define tasks and estimate the hours or days to com
    - **User Experience**
 
    
-   This field is also used to calculate capacity by discipline. It is assigned to `type=&amp;quot;Activity&amp;quot;` in the ProcessConfiguration file. (2)
+   This field is also used to calculate capacity by discipline. It is assigned to `type=&quot;Activity&quot;` in the ProcessConfiguration file. (2)
 
    For additional guidance, see [Implement development tasks](cmmi/guidance-implement-development-tasks.md).
 

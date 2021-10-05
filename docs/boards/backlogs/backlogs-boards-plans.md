@@ -447,7 +447,6 @@ The following table indicates those elements or tasks associated with each type 
    :::column span="1":::
    [Customize: cards](../../boards/boards/customize-cards.md)
    :::column-end:::
-   :::column-end:::
    :::column span="1":::
    n/a
    :::column-end:::
