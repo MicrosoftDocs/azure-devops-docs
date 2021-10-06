@@ -236,7 +236,6 @@ These test results are reported as a summarized test result in the **Tests** tab
 
 * **Data driven tests**: Similar to the rerun of failed tests, all iterations of data driven tests are reported under that test.
   The summarized result view for data driven tests depends on the behavior of the test framework.
-  If the framework produces a hierarchy of results (for example, MSTest v1 and v2) they will be reported in a summarized view.
   If the framework produces individual results for each iteration (for example, xUnit) they will not be grouped together.
   The summarized view is also available for ordered tests (**.orderedtest** in Visual Studio).
 
