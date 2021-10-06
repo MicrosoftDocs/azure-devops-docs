@@ -390,9 +390,9 @@ To link work items to your PR:
 
   1. On the PR **Overview** tab, in the **Work items** area, select **+**.
 
-   :::image type="content" source="media/pull-requests/pull-request-link-work-items-2020.png" alt-text="Screenshot that shows selecting the Overview tab and the work items section.":::
+     :::image type="content" source="media/pull-requests/pull-request-link-work-items-2020.png" alt-text="Screenshot that shows selecting the Overview tab and the work items section.":::
 
-1. Enter the ID of the work item or search for the work item title. Select the work item from the list that appears.
+  1. Enter the ID of the work item or search for the work item title. Select the work item from the list that appears.
 
 Remove a work item link by selecting the **x** icon next to the work item. Removing a link only removes the link between the work item and the PR. Links created in the branch or from commits remain in the work item.
 
