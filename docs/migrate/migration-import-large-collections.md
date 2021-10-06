@@ -323,7 +323,7 @@ Following the Fabrikam example, after you apply the changes, the import specific
 
 ![Screenshot of the import specification referencing a SQL Azure VM.](media/migration-import/importSpecIaaS.png)
 
-Your import specification is now configured to use a SQL Azure VM for import. Proceed with the rest of preparation steps to import to Azure DevOps Services. After the import has finished, be sure to delete the SQL login or rotate the password. Microsoft does not retain the login information after the import has finished. 
+Your import specification is now configured to use a SQL Azure VM for import. Proceed with the [rest of preparation steps](migration-import.md#determine-the-import-type) to import to Azure DevOps Services. After the import has finished, be sure to delete the SQL login or rotate the password. Microsoft does not retain the login information after the import has finished. 
  
 
 ## Related articles
