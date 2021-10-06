@@ -15,9 +15,9 @@ Prior to setting tag colors, first add tags to backlog items that you want to hi
 > [!div class="mx-imgBorder"]
 > ![Color tags in Delivery Plans](../../media/193-boards-01.png)
 
-### Filter cards based on boolean field types in Delivery Plans 
+### Filter cards based on Boolean field types in Delivery Plans 
 
-You can now filter the cards displayed based on a boolean field type, Delivery Plans now supports the boolean field type in the Styles and Field criteria sections of Plan settings.
+You can now filter the cards displayed based on a Boolean field type, Delivery Plans now supports the Boolean field type in the Styles and Field criteria sections of Plan settings.
 
 > [!div class="mx-imgBorder"]
 > ![Filter cards based on boolean fields](../../media/193-boards-04.png)
@@ -28,7 +28,7 @@ A pain point for customers using Delivery Plans was that the title of the work i
 
 ### Show light green colored dependency icon for work items that have dependencies with no issues
 
-With Delivery Plans, you can [track dependencies that have been added to work items](https://docs.microsoft.com/en-us/azure/devops/boards/plans/track-dependencies?view=azure-devops). Work items that have dependencies will have a link icon in the card. With this update, we included colors to the link icon. Dependencies that have an issue will have a red link icon, and ones that do not have an issue will have a light green link icon.
+With Delivery Plans, you can [track dependencies that have been added to work items](/azure/devops/boards/plans/track-dependencies?view=azure-devops&preserve-view=true). Work items that have dependencies will have a link icon in the card. With this update, we included colors to the link icon. Dependencies that have an issue will have a red link icon, and ones that do not have an issue will have a light green link icon.
 
 > [!div class="mx-imgBorder"]
 > ![Delivery Plans work item dependencies](../../media/193-boards-02.png)
