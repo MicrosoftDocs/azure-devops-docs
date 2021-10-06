@@ -144,7 +144,8 @@ The following table describes the work item link types you can specify to scope 
    - Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.
    - Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.
 
-   - Restrictions and recommendations:- Use Excel to bulk edit both work items and parent-child links. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+   Restrictions and recommendations:
+   - Use Excel to bulk edit both work items and parent-child links. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
    - A work item can have only one Parent. A parent work item can have many children.
    - Only use parent-child links to link work items in the same project. This action is recommended if you plan to use Excel to modify or update work item data.
  
