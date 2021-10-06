@@ -253,8 +253,6 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
-::: moniker range=">=azure-devops-2019"
-
 <a name="finish"></a>
 
 ## Add details to PRs
@@ -451,6 +449,8 @@ Keep these fields up to date so reviewers can understand the changes in the PR.
 For most teams, nearly all PRs target a default branch, such as `main` or `develop`. If you need to target a different branch, it's easy to forget to change the target branch when creating the PR. To change the target branch of an active PR, see [Change the target branch of a PR](/azure/devops/release-notes/2018/sprint-141-update#azure-repos).
 
 ::: moniker-end
+
+::: moniker range=">=azure-devops-2019"
 
 <a name="draft-pull-requests"></a>
 ## Create draft PRs
