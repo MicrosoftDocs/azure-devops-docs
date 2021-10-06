@@ -53,7 +53,7 @@ Test results can be surfaced in the **Tests** tab using one of the following opt
   This is done by parsing the error logs generated during the build operation and then checking for signatures of test failures.
   <a name="inferred_runners_list"></a>Currently, Azure DevOps supports the following languages and test runners for automatically inferring the test results: 
 
-  - Javascript - Mocha,  Jest  and  Jasmine
+  - JavaScript - Mocha,  Jest  and  Jasmine
   - Python- Unittest
  
     > [!NOTE]
@@ -158,7 +158,7 @@ you can organize the **Results** view exactly as you require.
 
 ### Test debt management with bugs
 
-To manage your test debt for failing or long running tests you can create a bug or add data to exisiting bug and all view all associated work items in the work item tab. 
+To manage your test debt for failing or long running tests you can create a bug or add data to existing bug and all view all associated work items in the work item tab. 
 
 ### Immersive troubleshooting experience
 
