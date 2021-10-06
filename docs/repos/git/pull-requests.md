@@ -149,10 +149,10 @@ On the PR **Files** page, you can select **Filter** to use several filters for f
 - Reviewed/Unreviewed: **All** (default), **Pending**, **Reviewed**
 - Commented files: **All files** (default), **Files with comments**
 - Comments: **Show** (default), **What's new**, **Hide**
-- Comment status: **Active** (default), **Pending**, **Resolved**, **As designed**, **Won't fix**, **Closed**.
-- Commented by: **All comments** (default), or filter for comments by a specific person.
+- Comment status: **Active** (default), **Pending**, **Resolved**, **As designed**, **Won't fix**, **Closed**
+- Commented by: **All comments** (default), or a specific person
 
-You can create queries on the PR page with more filters, such as draft state. These queries create separate and collapsible sections to enable better PR actionability. The queries work across repositories on the **My pull requests** tab of the organization home page.
+You can create queries on the **Pull requests** page with more filters, such as draft state. These queries create separate and collapsible sections to enable better PR actionability. The queries work across repositories on the **My pull requests** tab of the organization home page.
 
 ::: moniker-end
 
@@ -178,7 +178,7 @@ You can also create and manage PRs and other resources from the [Azure command-l
 
 After you push or update a feature branch, Azure Repos displays a prompt to create a PR.
 
-- On the **Pull Requests** page:
+- On the **Pull requests** page:
 
   ![Screenshot that shows the prompt to create a P R on the Pull Requests tab in Azure Repos.](media/pull-requests/create-pr-from-push-new-nav.png)
 
@@ -206,7 +206,7 @@ Select **Create a pull request** to go to a page where you can [enter your PR de
 
 You can create a PR directly from an Azure Boards work item linked to the branch.
 
-1. From **Backlogs** or **Queries** in the **Work** view, open a work item that's linked to the branch.
+1. In Azure Boards, from **Backlogs** or **Queries** in the **Work** view, open a work item that's linked to the branch.
 2. In the **Development** area of the work item, select **Create a pull request**.
 
    ![Screenshot of creating a P R from the Development area of a work item with a linked branch.](media/pull-requests/create-pr-from-work-item.png)
@@ -247,7 +247,7 @@ You can create PRs directly from Visual Studio.
 
    ![Check out source branch](./media/pull-requests/checkout-pr-source-branch.png)
 
-You can also create PRs from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request**.
+You can also create PRs from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create Pull Request**.
 
 ![Screenshot of initiating a P R from the Branches view.](media/pull-requests/new-pr-from-branch.png)
 
@@ -255,62 +255,11 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 
 ::: moniker range=">=azure-devops-2019"
 
-<a name="draft-pull-requests"></a>
-## Create draft PRs
-
-::: moniker-end
-
-:::moniker range="azure-devops-2019"
-
-> [!NOTE]
-> Draft PRs were added in the Azure DevOps Server 2019.1 update.
-
-:::moniker-end
-
-::: moniker range=">=azure-devops-2019"
-
-If your PR isn't ready for review, you can create a draft PR to indicate work in progress. When the PR is ready for review, you can publish it, and begin or resume the full review process.
-
-Draft PRs have the following differences from published PRs:
-
-- Build validation policies don't run automatically. You can queue build validations manually by selecting the more options menu next to the build in the PR.
-- Voting is disabled while in draft mode.
-- Required reviewers aren't automatically added. Notifications are sent only to reviewers that you explicitly add to the draft PR.
-- Draft PRs display in the PR list with a **Draft** badge.
-
-  ![Screenshot showing a draft P R in the P R list.](media/pull-requests/draft-pull-request-badge.png)
-
-To create a draft PR, select the arrow next to **Create** and select **Create as draft** when creating the PR. You don't have to use title prefixes such as WIP or DO NOT MERGE.
-
-![Screenshot showing Create as draft P R.](media/pull-requests/create-draft-pr.png)
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-- If you start your PR title with WIP, **Create as draft** is selected as the default.
-
-  ![Start your PR title with WIP to Create as draft.](media/pull-requests/create-draft-pr-wip.png)
-
-::: moniker-end
-
-::: moniker range=">=azure-devops-2019"
-
-When you're ready to have the PR reviewed and completed, select **Publish** at upper right in the PR. Publishing a PR assigns required reviewers, evaluates policies, and kicks off voting.
-
-![Screenshot showing Publish for a P R.](media/pull-requests/publish-pr.png)
-
-To change an existing published PR to a draft, choose **Mark as draft**. Marking a PR as draft removes all votes.
-
-![Screenshot showing Mark as draft.](media/pull-requests/mark-pr-as-draft.png)
-
-::: moniker-end
-
 <a name="finish"></a>
 
 ## Add details to PRs
 
-On the **New pull request** page, describe your changes so others can see what problems the changes solve. As in an existing PR, you can see the **Files** and **Commits** in your PR on separate tabs. You can change the PR title, add reviewers, link work items, and add tags and a detailed description to explain your changes.
+On the **New pull request** page, describe your changes so others can see what problems the changes solve. As in an existing PR, you can see the **Files** and **Commits** in your PR on separate tabs. You can change the PR title, add reviewers, link work items, and add tags and a detailed description of your changes.
 
 When you're ready to have your changes reviewed, select **Create** to create the PR.
 
@@ -361,21 +310,31 @@ To add a label when creating a PR, choose **Add label**. After you create a PR, 
 
 ::: moniker range="azure-devops"
 
-You can add reviewers when you create a PR, or in the **Reviewers** section of an existing PR. You can also make existing optional reviewers required, or change required reviewers to optional or remove them, unless they're required by policy.
+You can add reviewers in the **Reviewers** section of a new or existing PR. You can also make existing optional reviewers required, or change required reviewers to optional or remove them, unless they're required by policy.
+
+If the user or group you want to review the PR isn't a member of your project, you'll need to [add them to the project](../../organizations/security/add-users-team-project.md) before you can add them as reviewers.
 
 To add reviewers to your PR:
 
-1. On the PR **Overview** tab, in the **Reviewers** area, select **Add** and then select **Required reviewer** or **Optional reviewer**.
+- In a new PR:
 
-   :::image type="content" source="media/pull-requests/pull-request-add-reviewer-v2.png" alt-text="Pull request overview":::
+  1. On the **New pull request** page, under **Reviewers**, select **Search users and groups to add as reviewers**.
+  1. As you enter a name or email address, a dropdown list shows a list of matching users and groups. Select names from the list to add as optional reviewers.
+  1. To add required reviewers, select **Add required reviewers**, and then select **Search to add required reviewers** to search for and select the names.
+  
+  ![Screenshot of adding a reviewer to a new PR.](media/pull-requests/add-reviewer.png)
 
-1. Enter the name of a user or group to add to the reviewer list for the PR. If a reviewer isn't a member of your project, you'll need to [add them to the project](../../organizations/security/add-users-team-project.md) first.
+- In an existing PR:
 
-1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
+  1. In the **Reviewers** section of the **Overview** page, select **Add**, and then select **Required reviewer** or **Optional reviewer**.
 
-   :::image type="content" source="media/pull-requests/pull-request-add-reviewer.png" alt-text="Add PR reviewer.":::
+     :::image type="content" source="media/pull-requests/pull-request-add-reviewer-v2.png" alt-text="Pull request overview":::
 
-To change a reviewer between required and optional, or remove a reviewer, select **More options** to the right of the reviewer name. To see the membership of a group or team designated as a reviewer, select the group's icon.
+  1. As you enter a name or email address, a list of matching users or groups appears. Select the names to add as reviewers.
+
+     :::image type="content" source="media/pull-requests/pull-request-add-reviewer.png" alt-text="Add PR reviewer.":::
+
+  To change a reviewer between required and optional, or remove a reviewer, select **More options** to the right of the reviewer name. To see the membership of a group or team designated as a reviewer, select the group's icon.
 
 ::: moniker-end
 
@@ -424,11 +383,18 @@ To add reviewers to your PR:
 
 To link work items to your PR:
 
-1. On the PR **Overview** tab, in the **Work items** area, select **+**.
+- In a new PR:
+
+  1. On the **New pull request** page, under **Work items to link**, select **Search work items by ID or title**.
+  1. Start to enter a work item ID or title, and select the work item to link from the dropdown list that appears.
+
+- In an existing PR:
+
+  1. On the PR **Overview** tab, in the **Work items** area, select **+**.
 
    :::image type="content" source="media/pull-requests/pull-request-link-work-items-2020.png" alt-text="Screenshot that shows selecting the Overview tab and the work items section.":::
 
-1. Enter the ID of the work item or search for work item titles. Select the work item from the list that appears.
+1. Enter the ID of the work item or search for the work item title. Select the work item from the list that appears.
 
 Remove a work item link by selecting the **x** icon next to the work item. Removing a link only removes the link between the work item and the PR. Links created in the branch or from commits remain in the work item.
 
@@ -470,7 +436,7 @@ Removing a link only removes the link between a work item to a PR. Links created
 
 ### Edit PR title and description
 
-Update a PR title by selecting the current title and updating the text. Select the **Save** icon to save changes, or select the **Undo** icon to discard the changes.
+You can update the title of an existing PR by selecting the current title and updating the text. Select the **Save** icon to save changes, or select the **Undo** icon to discard the changes.
 
 Edit the PR description by selecting the **Edit** icon in the **Description** section.
 
@@ -486,6 +452,57 @@ For most teams, nearly all PRs target a default branch, such as `main` or `devel
 
 ::: moniker-end
 
+<a name="draft-pull-requests"></a>
+## Create draft PRs
+
+::: moniker-end
+
+:::moniker range="azure-devops-2019"
+
+> [!NOTE]
+> Draft PRs were added in the Azure DevOps Server 2019.1 update.
+
+:::moniker-end
+
+::: moniker range=">=azure-devops-2019"
+
+If your PR isn't ready for review, you can create a draft PR to indicate work in progress. When the PR is ready for review, you can publish it, and begin or resume the full review process.
+
+Draft PRs have the following differences from published PRs:
+
+- Build validation policies don't run automatically. You can queue build validations manually by selecting the more options menu in the PR.
+- Voting is disabled while in draft mode.
+- Required reviewers aren't automatically added. Notifications are sent only to reviewers that you explicitly add to the draft PR.
+- Draft PRs display in the PR list with a **Draft** badge.
+
+  ![Screenshot showing a draft P R in the P R list.](media/pull-requests/draft-pull-request-badge.png)
+
+To create a draft PR, select the arrow next to **Create** and select **Create as draft** when creating the PR. You don't have to use title prefixes such as WIP or DO NOT MERGE.
+
+![Screenshot showing Create as draft P R.](media/pull-requests/create-draft-pr.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+- If you start your PR title with WIP, **Create as draft** is selected as the default.
+
+  ![Start your PR title with WIP to Create as draft.](media/pull-requests/create-draft-pr-wip.png)
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2019"
+
+When you're ready to have the PR reviewed and completed, select **Publish** at upper right in the PR. Publishing a PR assigns required reviewers, evaluates policies, and kicks off voting.
+
+![Screenshot showing Publish for a P R.](media/pull-requests/publish-pr.png)
+
+To change an existing published PR to a draft, choose **Mark as draft**. Marking a PR as draft removes all existing votes.
+
+![Screenshot showing Mark as draft.](media/pull-requests/mark-pr-as-draft.png)
+
+::: moniker-end
+
 ## Review pull requests
 
 The PR **Overview** tab shows the current state of the PR at a glance. You can review the title, description, and comments to understand proposed changes and see issues raised by other reviewers.
@@ -497,7 +514,7 @@ To help get a quick picture of PR status, the **Overview** tab summarizes branch
 ### Browse changes
 
 ::: moniker range="azure-devops"
-- Select the **Files** tab of a PR to view the changes made in the source branch inline or side-by-side with the target branch.
+- Select the **Files** tab of a PR to view the changes made in the source branch **Inline** or **Side-by-side** with the target branch.
   
   You can see how a file will look published by selecting the **View** button on a file, and then selecting **Preview**.
   
@@ -654,7 +671,7 @@ After the PR gets all required approvals and meets all required policies, you ca
 
    - **Complete**: Complete the PR now, and merge the changes to the target branch.
    - **Set auto-complete**: Configure the PR to complete and merge once it meets all required branch policies.
-   - **Mark as draft**: Return the PR to draft status and reset all votes.
+   - **Mark as draft**: Return the PR to draft status and remove all votes.
    - **Abandon**: Close the PR without merging the changes.
 
    ![Screenshot that shows the Complete button options for the PR.](./media/pull-requests/complete-pr-options.png)
@@ -662,8 +679,8 @@ After the PR gets all required approvals and meets all required policies, you ca
 1. On the **Complete pull request** screen:
 
    1. Under **Merge type**, select one of the following options:
-      - **Merge (no fast forward)**: Non-linear history that preserves all commits.
-      - **Squash commit**: Linear history that combines all commits into a single commit on the target, or [squash merges](merging-with-squash.md) the PR.
+      - **Merge (no fast forward)**: Merge with a non-linear history that preserves all commits.
+      - **Squash commit**: Merge with a linear history that combines all source commits into a single commit on the target, or [squash merges](merging-with-squash.md) the PR.
       - **Rebase and fast-forward**: Rebase the source commits onto the target and fast-forward.
       - **Semi-linear merge**: Rebase source commits onto the target and create a two-parent merge.
    
