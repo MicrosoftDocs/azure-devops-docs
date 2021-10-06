@@ -234,9 +234,7 @@ These test results are reported as a summarized test result in the **Tests** tab
 
   ![Rerun failed tests](media/review-continuous-test-results-after-build/rerun-failed-test.png)
 
-* **Data driven tests**: Similar to the rerun of failed tests, all iterations of data driven tests are reported under that test.
-  The summarized result view for data driven tests depends on the behavior of the test framework.
-  If the framework produces individual results for each iteration (for example, xUnit) they will not be grouped together.
+* **Data driven tests**: Similar to the rerun of failed tests, all iterations of data driven tests are reported under that test in a summarized view.
   The summarized view is also available for ordered tests (**.orderedtest** in Visual Studio).
 
   ![Data driven test](media/review-continuous-test-results-after-build/data-driven-test.png)
