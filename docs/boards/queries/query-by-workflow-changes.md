@@ -802,10 +802,10 @@ You can use the following fields to filter your queries or build reports. Some o
 
 > [!NOTE]  
 > 
-<a id="sync">  </a>
-
-::: moniker range="azure-devops"
-
+> <a id="sync">  </a>
+>
+> ::: moniker range="azure-devops"
+>
 > 1. See [Date and Identity fields](#date-identity).  
 > 2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Azure Active Directory](../../organizations/security/about-permissions.md#aad). 
 > 3. See [Activated By/Date and Resolved By/Date fields](#activated-resolved-fields).   
