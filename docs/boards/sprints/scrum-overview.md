@@ -137,7 +137,7 @@ At the start of each sprint, you'll want to plan the work that your team can com
    You [set recurring days off](../../organizations/settings/set-working-days.md), such as weekends, through team settings.
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ![Team capacity planning tool](media/team-capacity-planning-tool.png) 
    :::column-end:::
@@ -165,7 +165,7 @@ At the start of each sprint, you'll want to plan the work that your team can com
 
    ![These colors help you distinguish capacity](media/capacity-planning-tool-color-chart.png)
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ![Capacity bars](media/ALM_DS_CapacityBars_S.png)
    :::column-end:::
@@ -187,7 +187,7 @@ During a sprint, use the taskboard and sprint burndown chart to track their prog
    Updating tasks daily or several times a week yields a smoother burndown chart. 
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ![taskboard](media/ALM_DS_Task_board_S.png)
    :::column-end:::
@@ -203,7 +203,7 @@ During a sprint, use the taskboard and sprint burndown chart to track their prog
    The ideal trend line always indicates a steady burndown. The blue area, however, represents what&#39;s actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks.
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ![Sprint burndown chart](media/ALM_DS_SprntBD_Chrt_S.png)
    :::column-end:::
