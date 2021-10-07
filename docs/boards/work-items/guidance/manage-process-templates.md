@@ -144,7 +144,7 @@ You can upload, download, and delete process templates for a project collection.
    **Upload**
    
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    To upload a process template.<br/>
    In the **Upload Process Template** dialog box, choose the folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions).
 
@@ -157,7 +157,7 @@ You can upload, download, and delete process templates for a project collection.
    **Download**
    
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    To download the process template to a local computer.<br/>
    In the **Download Process Template** dialog box, select a folder where the process template will be downloaded.
 
@@ -173,7 +173,7 @@ You can upload, download, and delete process templates for a project collection.
    **Make Default**
    
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    
    To cause the selected process template to appear as the default selection in the **New Team Project Wizard**.
    
@@ -186,7 +186,7 @@ You can upload, download, and delete process templates for a project collection.
    **Delete**
    
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
    
    To permanently remove the selected process template from the collection.
    
