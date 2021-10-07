@@ -48,9 +48,9 @@ To manage licenses and group rules, you must be a Project Collection Administrat
 
    ![Complete add a group rule dialog](media/assign-access-levels/add-group-rule-dialog-new.png)
 
-A notification displays, showing the status and outcome of the rule. If the assignment couldn't be completed (for example, because your organization didn't have enough purchased licenses), select **View status** to see the details.
+   A notification displays, showing the status and outcome of the rule. If the assignment couldn't be completed (for example, because your organization didn't have enough purchased licenses), select **View status** to see the details.
 
-![Group rule completed](media/assign-access-levels/group-rule-completed-successfully.png)
+   ![Group rule completed](media/assign-access-levels/group-rule-completed-successfully.png)
 
 > [!IMPORTANT]
 > Group rules only apply to users without direct assignments and to users added to the group going forward. [Remove direct assignments](#remove-direct-assignments) so the group rules apply to those users.
@@ -71,11 +71,12 @@ When you assign the same access level to a user, the user consumes only one acce
 
 > [!NOTE]
 > You can assign Group rules to support both access levels and project memberships. Users are granted the highest access level when assigned to more than one rule or Azure AD group which specify different levels of access.  For example, if John is assigned to two Azure AD groups and two different Group rules that specify Stakeholder access and the other Basic access, then John's access level is Basic. 
+
 ## Verify group rule
 
-- Verify that the resources are applied to each group and individual user. On the **All users** tab, highlight a user, and then select **Summary**.
+Verify that the resources are applied to each group and individual user. On the **All users** tab, highlight a user, and then select **Summary**.
 
-   :::image type="content" source="media/assign-access-levels/verify-user-summary.png" alt-text="Verify user summary for group rule":::
+:::image type="content" source="media/assign-access-levels/verify-user-summary.png" alt-text="Verify user summary for group rule":::
 
 ## Remove direct assignments
 
