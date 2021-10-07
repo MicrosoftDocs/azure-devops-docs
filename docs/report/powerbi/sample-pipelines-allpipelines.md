@@ -95,48 +95,111 @@ Each query contains the following strings that you must substitute with your val
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>CompletedDate ge {startdate}</code></td>
-<td>Return pipeline runs for date greater than specified date</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close filter()</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(Pipeline/PipelineName),</code></td>
-<td>Group the below result by Pipeline Name</td>
-<tr>
-<tr><td><code>aggregate(</code></td>
-<td>Start aggregate. For each Pipeline:</td>
-<tr>
-<tr><td><code>$count as TotalCount,</code></td>
-<td>Count the total number of runs as TotalCount</td>
-<tr>
-<tr><td><code>SucceededCount with sum as SucceededCount ,</code></td>
-<td>Count the number of successful runs as SucceededCount</td>
-<tr>
-<tr><td><code>FailedCount with sum as FailedCount,</code></td>
-<td>Count the number of failed runs as FailedCount</td>
-<tr>
-<tr><td><code>PartiallySucceededCount with sum as PartiallySucceededCount,</code></td>
-<td>Count the number of partially successful runs as PartiallySucceededCount</td>
-<tr>
-<tr><td><code>CanceledCount with sum as CanceledCount</code></td>
-<td>Count the number of canceled runs as CanceledCount</td>
-<tr>
-<tr><td><code>))</code></td>
-<td>Close aggregate() and groupby()</td>
-<tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `CompletedDate ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return pipeline runs for date greater than specified date
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(Pipeline/PipelineName),`
+   :::column-end:::
+   :::column span="1":::
+   Group the below result by Pipeline Name
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate(`
+   :::column-end:::
+   :::column span="1":::
+   Start aggregate. For each Pipeline:
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$count as TotalCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of runs as TotalCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `SucceededCount with sum as SucceededCount ,`
+   :::column-end:::
+   :::column span="1":::
+   Count the number of successful runs as SucceededCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `FailedCount with sum as FailedCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the number of failed runs as FailedCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `PartiallySucceededCount with sum as PartiallySucceededCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the number of partially successful runs as PartiallySucceededCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `CanceledCount with sum as CanceledCount`
+   :::column-end:::
+   :::column span="1":::
+   Count the number of canceled runs as CanceledCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `))`
+   :::column-end:::
+   :::column span="1":::
+   Close aggregate() and groupby()
+   :::column-end:::
+:::row-end:::
+
 
 [!INCLUDE [temp](includes/query-filters-pipelines.md)]
 

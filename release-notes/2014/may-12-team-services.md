@@ -49,7 +49,7 @@ Services hooks can be found as a new hub in project administration.
 
 ![Selecting a target service](media/5_12_01.png)
 
-[Learn more](https://visualstudio.microsoft.com/get-started/integrate/integrating-with-service-hooks-vs)
+[Learn more](/azure/devops/service-hooks/overview)
 
 [Creating subscriptions programmatically](/azure/devops/integrate/)
 

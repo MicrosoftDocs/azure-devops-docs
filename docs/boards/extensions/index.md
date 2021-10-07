@@ -1,6 +1,6 @@
 ---
 title: Extensions for Azure Boards 
-description: Learn about Azure Boards extensions
+description: Learn about Azure Boards extensions that can help you customize or enhance your default experience.
 titleSuffix: Azure Boards 
 ms.custom: extensions
 ms.technology: devops-agile
@@ -8,17 +8,17 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 11/06/2020
+ms.date: 10/01/2021
 ---
 
-# Azure Boards extensions developed by Microsoft
+# Overview of extensions for Azure Boards
 
 The Azure DevOps Marketplace offers a wide variety of extensions to customize or enhance the default experience. You can learn more about those extensions developed by Microsoft from the following articles and links. For information on developing your own extension, see [Develop a web extension](../../extend/get-started/node.md).
  
 
 ::: moniker range="azure-devops"
 
-## Integration 
+## Integrate with Azure Boards extensions 
 
 - [Azure Boards Slack](../integrations/boards-slack.md)
 - [Azure Boards Microsoft Teams app](../integrations/boards-teams.md)
@@ -148,7 +148,7 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 ## DevOps integration
 - [Creates a new work item from a build or release](https://marketplace.visualstudio.com/items?itemName=mspremier.CreateWorkItem#adding-the-task-to-a-yaml-definition)
  
-## Command line interface
+## Command-line interface
 
 ::: moniker range=">= azure-devops-2020"
 
