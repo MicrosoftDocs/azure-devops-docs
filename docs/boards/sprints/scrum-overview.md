@@ -187,7 +187,7 @@ During a sprint, use the taskboard and sprint burndown chart to track their prog
    Updating tasks daily or several times a week yields a smoother burndown chart. 
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    ![taskboard](media/ALM_DS_Task_board_S.png)
    :::column-end:::
@@ -203,7 +203,7 @@ During a sprint, use the taskboard and sprint burndown chart to track their prog
    The ideal trend line always indicates a steady burndown. The blue area, however, represents what&#39;s actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks.
 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
    
    ![Sprint burndown chart](media/ALM_DS_SprntBD_Chrt_S.png)
    :::column-end:::
