@@ -202,7 +202,7 @@ The following table summarizes the main distinctions between the WITs and states
    - Committed
    - Done
    - Removed
-   
+   :::column-end:::   
    :::column span="1":::
    
    
