@@ -239,7 +239,7 @@ During the sprint, team members update remaining work to continually reflect the
 
    :::column-end:::
    :::column span="3":::
-   The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate [capacity charts](set-capacity.md) and the [sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md)You can specify work in any unit of measurement your team chooses.
+   The amount of work remaining to complete a task. As work progresses, update this field. It's used to calculate [capacity charts](set-capacity.md) and the [sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md). You can specify work in any unit of measurement your team chooses.
 
    :::column-end:::
 :::row-end:::
