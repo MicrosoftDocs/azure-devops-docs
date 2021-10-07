@@ -515,10 +515,10 @@ The following table summarizes the differences between work item queries and que
    :::column span="1":::
    **Clause**
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    **Work items**
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    **Links between work items**
    :::column-end:::
 :::row-end:::
@@ -526,10 +526,10 @@ The following table summarizes the differences between work item queries and que
    :::column span="1":::
    `FROM`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    `FROM WorkItems`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    `FROM WorkItemLinks`
    :::column-end:::
 :::row-end:::
@@ -537,10 +537,10 @@ The following table summarizes the differences between work item queries and que
    :::column span="1":::
    `WHERE`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    `[FieldName] = Value`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    `Specify one or more of the following:`  
    `[Source].[FieldName] = Value`  
    `[Target].[FieldName] = Value`  
@@ -551,10 +551,10 @@ The following table summarizes the differences between work item queries and que
    :::column span="1":::
    `MODE`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    not applicable
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    Specify one of the following:  
    
    - `MODE (MustContain)`: (Default) Returns only WorkItemLinkInfo records where the source, target, and link criteria are all satisfied. 
@@ -568,10 +568,10 @@ The following table summarizes the differences between work item queries and que
    :::column span="1":::
    `RETURNS`
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    [`WorkItemQueryResult`](/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemqueryresult) 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
     [`WorkItemLink`](/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemlink) 
    :::column-end:::
 :::row-end:::
