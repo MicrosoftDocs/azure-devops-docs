@@ -13,7 +13,7 @@ Welcome to what's new in the Azure DevOps docs from January 1, 2021 through Janu
 ### Updated articles
 
 - [Get started with npm packages in Azure Artifacts](/azure/devops/artifacts/get-started-npm)
-- [Publish a Maven artifact using Gradle](/azure/devops/artifacts/gradle/publish-package-gradle)
+- [Publish a Maven artifact using Gradle](/azure/devops/pipelines/artifacts/publish-package-gradle)
 - [Delete and recover packages](/azure/devops/artifacts/how-to/delete-and-recover-packages)
 - [Publish and then download a Universal Package](/azure/devops/artifacts/quickstarts/universal-packages)
 
