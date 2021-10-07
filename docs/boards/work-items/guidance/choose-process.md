@@ -70,7 +70,7 @@ Choose the process that provides the best fit for your team.
  Tasks support tracking Remaining Work.
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ![Basic work item types](../../get-started/media/about-boards/basic-process-epics-issues-tasks-2.png)
    :::column-end:::
@@ -90,7 +90,7 @@ Choose the process that provides the best fit for your team.
  Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ![Agile work item types](media/ALM_PT_Agile_WIT_Artifacts.png)
    :::column-end:::
@@ -109,7 +109,7 @@ Choose the process that provides the best fit for your team.
    Tasks support tracking remaining work only.
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ![Scrum work item types](media/ALM_PT_Scrum_WIT_Artifacts.png)
    :::column-end:::
@@ -128,7 +128,7 @@ Choose the process that provides the best fit for your team.
    Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="1":::
    
    ![CMMI work item types](media/ALM_PT_CMMI_WIT_Artifacts.png)
    :::column-end:::
