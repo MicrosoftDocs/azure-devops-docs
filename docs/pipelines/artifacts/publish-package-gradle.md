@@ -91,7 +91,7 @@ First, you need a **gradle.properties** file that contains an Azure DevOps Servi
 
 ## Create a feed
 
-[!INCLUDE [](../includes/create-feed.md)]
+[!INCLUDE [](../../artifacts/includes/create-feed.md)]
 
 ## Configure build.gradle 
 

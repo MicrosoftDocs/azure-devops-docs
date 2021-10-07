@@ -375,7 +375,7 @@ ORDER BY [System.Id]
 The Query Editor view of the syntax appears as shown. 
 
 > [!NOTE]   
-> The Query Editor displays a :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: information icon next to the **Was Ever** operator, indicating an issue with the clause. However, the query will still run and you can create query charts. However, to modify the query, you need to use the [WIQL editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor. 
+> The Query Editor displays a :::image type="icon" source="../../media/icons/required-icon.png" border="false"::: information icon next to the **Was Ever** operator, indicating an issue with the clause. However, the query will still run and you can create query charts. However, to modify the query, you need to use the [WIQL editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). 
 
 :::image type="content" source="media/example-work-item-queries/query-work-items-moved-out-of-sprint.png" alt-text="Screenshot of Query Editor, Work Items moved out of a sprint.":::
 
