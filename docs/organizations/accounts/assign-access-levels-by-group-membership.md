@@ -7,7 +7,7 @@ ms.technology: devops-accounts
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/08/2021
+ms.date: 10/07/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -17,10 +17,10 @@ monikerRange: 'azure-devops'
 
 Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. Learn how to add a group rule to assign an access level to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are also used to add users to team projects and other specific groups, like Contributors, Readers, and Administrators.
 
-When users leave the group, the licenses are freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
+When users leave the group, the licenses get freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
 
 > [!NOTE]
-> We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization. Automated reevaluation occurs every six hours and any time the group rule changes.
+> We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization. Azure AD can take up to 24 hours to update dynamic group membership. Automated reevaluation occurs every 24 hours and any time the group rule changes.
 
 ## Prerequisites
 
