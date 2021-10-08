@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 07/09/2020
+ms.date: 10/07/2021
 ---
 
 
@@ -97,6 +97,7 @@ The following table describes the work item link types you can specify to scope 
    **Usage**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    **Affects-Affected by**  (CMMI only)    ![Affects link type image](media/link-work-items-support-traceability/affects-cmmi.png) 
@@ -283,7 +284,7 @@ The following table describes the work item link types you can specify to scope 
 
 <a id="hyperlink">  </a>
 
-## Hyperlink type
+## Hyperlink link type
 
 There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Count*](linking-attachments.md#hyper-link-count)&mdash; added to a work item. A hyperlink can link a work item to any URL. 
 
@@ -304,6 +305,7 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
    **Usage**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    Hyperlink
@@ -324,10 +326,13 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
 
 ## External link types
 
-External link types are system-defined link types. They support linking work items to other objects as shown in the following image. A work item's [*External Link Count*](linking-attachments.md#external-link-count) corresponds to the sum of all links defined with a external link type. 
+External link types are system-defined link types that support linking work items to other objects stored within Azure DevOps as shown in the following image. A work item's [*External Link Count*](linking-attachments.md#external-link-count) corresponds to the sum of all links defined with a external link type. 
 
 > [!div class="mx-imgBorder"]  
 > ![External link types, conceptual image](media/link-type-reference/linkscontrol-external-link-types.png) 
+
+> [!NOTE]   
+> You can only use an external link type to link to an Azure DevOps object. To link work items to other objects outside of Azure DevOps, you can use the [Hyperlink](#hyperlink) link type. 
 
 ::: moniker range="azure-devops"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. 
@@ -355,6 +360,7 @@ The following table describes the external link types you can choose when adding
       **Usage**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="":::
       Branch
@@ -453,20 +459,22 @@ The following table describes the external link types you can choose when adding
       Used to link a release to a work item. The system creates a link of this type when a user enables the **Report deployment status to Work** option for a release definition. To learn how to set this option, see [Release pipelines, How do I integrate and report release status?](../../pipelines/release/index.md#how-do-i-integrate-and-report-release-status) 
    :::column-end:::
 :::row-end:::
+::: moniker range="tfs-2013"
 :::row:::
    :::column span="":::
       Model Link
    :::column-end:::
    :::column span="":::
-      >ArchitectureTools
+      Architecture Tools
    :::column-end:::
    :::column span="":::
       ModelLink
    :::column-end:::
    :::column span="":::
-      (Not supported within the web portal) Used to link a work item to a diagram&mdash;such as an Activity, Component, Layer, Use Case, or other diagram&mdash;stored within the system. You can link diagrams to work items only from the Visual Studio client. 
+      (Not supported within the web portal) Used to link a work item to a diagram&mdash;such as an Activity, Component, Layer, Use Case, or other diagram&mdash;stored within the system. You can link diagrams to work items only from Visual Studio Ultimate. Visual Studio Ultimate was last released in 2013. 
    :::column-end:::
 :::row-end:::
+::: moniker-end
 :::row:::
    :::column span="":::
       Pull Request
@@ -614,50 +622,51 @@ GitHub link types are system-defined link types. They support linking work items
 The following table describes the GitHub link types you can choose when adding a link type from a work item. 
 
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       **Link name**
    :::column-end:::
-   :::column span="":::
+   :::column span="1":::
       **Artifact type**
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       **Usage**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       GitHub Commit
    :::column-end:::
-   :::column span="":::
+   :::column span="1":::
       GitHub repository commit
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       Used to link a work item to a GitHub commit.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
 ::: moniker range=">= azure-devops-2020"
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       GitHub Issue
    :::column-end:::
-   :::column span="":::
+   :::column span="1":::
       GitHub repository issue
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       Used to link a work item to a GitHub issue.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
 ::: moniker range=">= azure-devops-2019"
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       GitHub Pull Request
    :::column-end:::
-   :::column span="":::
+   :::column span="1":::
       GitHub repository pull request
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       Used to link a work item to a GitHub pull request.
    :::column-end:::
 :::row-end:::
@@ -670,7 +679,7 @@ The following table describes the GitHub link types you can choose when adding a
 
 ## Remote work link types
 
-Remote work link types are system-defined link types that support linking work items defined in different organizations. Organizations must be managed by the same Azure Active Directory.  
+Remote work link types are system-defined link types that support linking work items defined in different organizations. Organizations must be managed by the same Azure Active Directory as described in [Connect your organization to Azure Active Directory](../../organizations/accounts/connect-organization-to-azure-ad.md). 
 
 A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) corresponds to the sum of all links defined with a remote work link type. 
 
@@ -686,6 +695,7 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
       **Usage**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="":::
       **Consumes From-Produced For**  
