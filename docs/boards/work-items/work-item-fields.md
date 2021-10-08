@@ -123,8 +123,8 @@ The following table describes each attribute.
 ---
 :::row:::
    :::column span="1":::
-   REST: 
-   WIFE: **AllowedValues**
+   REST:  
+   WIFE: **AllowedValues**  
    :::column-end:::
    :::column span="1":::
    collection
@@ -136,8 +136,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: **canSortBy**
-   WIFE: **CanSortBy**
+   REST: **canSortBy**  
+   WIFE: **CanSortBy**  
    :::column-end:::
    :::column span="1":::
    boolean
@@ -149,8 +149,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: **description**
-   WIFE: **HelpText**
+   REST: **description**  
+   WIFE: **HelpText**  
    :::column-end:::
    :::column span="1":::
    string
@@ -163,7 +163,7 @@ The following table describes each attribute.
 :::row:::
    :::column span="1":::
    REST:  
-   WIFE: **ID**
+   WIFE: **ID**  
    :::column-end:::
    :::column span="1":::
    Integer
@@ -175,8 +175,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: 
-   WIFE: **IsCloneable**
+   REST:   
+   WIFE: **IsCloneable**  
    :::column-end:::
    :::column span="1":::
    boolean
@@ -188,8 +188,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST:  
-   WIFE: **IsComputed **
+   REST:    
+   WIFE: **IsComputed**  
    :::column-end:::
    :::column span="1":::
    boolean
@@ -201,7 +201,7 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: 
+   REST:   
    WIFE: **IsCoreField**
    :::column-end:::
    :::column span="1":::
@@ -214,7 +214,7 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: 
+   REST:   
    WIFE: **IsEditable**
    :::column-end:::
    :::column span="1":::
@@ -228,7 +228,7 @@ The following table describes each attribute.
 :::row:::
    :::column span="1":::
    REST: **isIdentity**
-   WIFE: **IsIdentity **
+   WIFE: **IsIdentity**
    :::column-end:::
    :::column span="1":::
    boolean
@@ -240,7 +240,7 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: 
+   REST:   
    WIFE: **IsIndexed<sup>1</sup>**
    :::column-end:::
    :::column span="1":::
@@ -253,7 +253,7 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: 
+   REST:   
    WIFE: **IsLongText**
    :::column-end:::
    :::column span="1":::
@@ -266,8 +266,8 @@ The following table describes each attribute.
 :::row-end::: 
 :::row:::
    :::column span="1":::
-   REST:  isPicklist<sup>2</sup>
-   WIFE: 
+   REST:  **isPicklist<sup>2</sup>**
+   WIFE:   
    :::column-end:::
    :::column span="1":::
    boolean
@@ -279,8 +279,11 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: isPicklistSuggested<sup>2</sup>
-   WIFE: 
+   REST: **isPicklistSuggested<sup>2</sup>**
+   WIFE:   
+   :::column-end:::
+   :::column span="1":::
+   boolean
    :::column-end:::
    :::column span="3":::
    Indicates whether the field allows users to enter their own values for a picklist. The value is set to *True* when a custom field is defined for Azure DevOps, Picklist (String) or Picklist (Integer) type is selected, and the checkbox for **Allow users to set their own values** is checked.  
@@ -289,8 +292,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: **isQueryable**
-   WIFE: **IsQueryable**
+   REST: **isQueryable**  
+   WIFE: **IsQueryable**  
    :::column-end:::
    :::column span="1":::
    boolean
@@ -302,8 +305,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: 
-   WIFE: **IsReportable <sup>3</sup>**
+   REST:   
+   WIFE: **IsReportable <sup>3</sup>**  
    :::column-end:::
    :::column span="1":::
    boolean
@@ -315,8 +318,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: 
-   WIFE: **IsUsedInGlobalWorkflow**
+   REST:   
+   WIFE: **IsUsedInGlobalWorkflow**  
    :::column-end:::
    :::column span="1":::
    boolean
@@ -328,8 +331,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: 
-   WIFE: **IsUserNameField**
+   REST:   
+   WIFE: **IsUserNameField**  
    :::column-end:::
    :::column span="1":::
    boolean
@@ -341,8 +344,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: **name**
-   WIFE: **Name**
+   REST: **name**  
+   WIFE: **Name**  
    :::column-end:::
    :::column span="1":::
    string
@@ -354,8 +357,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: **picklistId**
-   WIFE: **HelpText**
+   REST: **picklistId**  
+   WIFE: **HelpText**  
    :::column-end:::
    :::column span="1":::
    GUID
@@ -367,8 +370,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: 
-   WIFE: **ProhibitedValues**
+   REST:   
+   WIFE: **ProhibitedValues**  
    :::column-end:::
    :::column span="1":::
    collection
@@ -380,8 +383,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: **readOnly**
-   WIFE: 
+   REST: **readOnly**  
+   WIFE:   
    :::column-end:::
    :::column span="1":::
    boolean
@@ -393,8 +396,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: **referenceName**
-   WIFE: **ReferenceName**
+   REST: **referenceName**  
+   WIFE: **ReferenceName**  
    :::column-end:::
    :::column span="1":::
    string
@@ -406,7 +409,7 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST:  
+   REST:    
    WIFE: **ReportingAttributes<sup>3</sup>**
    :::column-end:::
    :::column span="1":::
@@ -419,7 +422,7 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: 
+   REST:   
    WIFE: **ReportingName<sup>3</sup>**
    :::column-end:::
    :::column span="1":::
@@ -432,7 +435,7 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: 
+   REST:   
    WIFE: **ReportingReferenceName<sup>3</sup>**
    :::column-end:::
    :::column span="1":::
@@ -445,8 +448,8 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: **supportedOperations**
-   WIFE: 
+   REST: **supportedOperations**  
+   WIFE:   
    :::column-end:::
    :::column span="1":::
    *set*
@@ -458,7 +461,7 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST:  
+   REST:    
    WIFE: **SupportsTextQuery**
    :::column-end:::
    :::column span="1":::
@@ -471,34 +474,34 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: 
-   WIFE: **SystemType**
+   REST:   
+   WIFE: **SystemType**  
    :::column-end:::
    :::column span="1":::
    string
    :::column-end:::
    :::column span="3":::
-   Specifies the data type of the field, referencing the system name such as System.DateTime, System.String, and so on.  
+   Specifies the data type of the field, referencing the system name such as System.DateTime or System.String.  
    Can change?=No 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: **type**
-   WIFE: **FieldType**
+   REST: **type**  
+   WIFE: **FieldType**  
    :::column-end:::
    :::column span="1":::
    string
    :::column-end:::
    :::column span="3":::
-   Specifies the data type of the field, such as *Boolean*, *DateTime*, *Integer*, *String*, and so on. For a complete list and descriptions, see [Query fields, operators, and macros](../queries/query-operators-variables.md)  
+   Specifies the data type of the field, such as *Boolean*, *DateTime*, *Integer*, *String*, and so on. For a complete list and descriptions, see [Query fields, operators, and macros](../queries/query-operators-variables.md).  
    Can change?=No 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: **usage**
-   WIFE: **Usage**
+   REST: **usage**  
+   WIFE: **Usage**  
    :::column-end:::
    :::column span="1":::
    string
