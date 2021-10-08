@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.topic: quickstart
-ms.date: 10/04/2021
+ms.date: 10/08/2021
 ---
 
 # Add and update a work item

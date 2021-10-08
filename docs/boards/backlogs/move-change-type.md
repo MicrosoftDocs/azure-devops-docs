@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/04/2021
+ms.date: 10/08/2021
 ---
 
 # Move work items and change the work item type 

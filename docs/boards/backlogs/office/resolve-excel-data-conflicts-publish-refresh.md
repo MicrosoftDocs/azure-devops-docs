@@ -7,7 +7,7 @@ ms.assetid: d43d6f68-bcef-42af-857c-50c2ff6ea79b
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
-ms.date: 10/04/2021  
+ms.date: 10/08/2021
 ---
 
 # Resolve data conflicts when you publish or refresh Excel data

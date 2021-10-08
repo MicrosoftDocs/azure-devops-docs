@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/04/2021
+ms.date: 10/08/2021
 ---
 
 # Interactively filter backlogs, boards, queries, and plans in Azure Boards

@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart 
 monikerRange: '<= azure-devops'
-ms.date: 10/04/2021
+ms.date: 10/08/2021
 ---
 
 # Link user stories, issues, bugs, and other work items in Azure Boards  

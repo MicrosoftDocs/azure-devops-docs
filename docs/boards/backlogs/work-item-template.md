@@ -9,7 +9,7 @@ author: KathrynEE
 ms.topic: how-to
 ms.custom: "work-items, contperf-fy21q3"  
 monikerRange: '<= azure-devops'
-ms.date: 10/07/2021
+ms.date: 10/08/2021
 ---
 
 # Use templates to add and update work items in Azure Boards and Visual Studio

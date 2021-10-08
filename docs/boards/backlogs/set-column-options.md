@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2013'
-ms.date: 10/04/2021
+ms.date: 10/08/2021
 ---
 
 # Manage columns in a work item list in Azure Boards 

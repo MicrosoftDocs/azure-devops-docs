@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 10/04/2021
+ms.date: 10/08/2021
 ---
 
 # Define features and epics in your backlog
