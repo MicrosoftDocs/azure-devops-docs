@@ -32,7 +32,7 @@ You can link work items to other work items or artifacts using the following lin
 - [**GitHub link types**](#github-link-types): connects a work item to a GitHub repository commit, issue, or pull request.
 
 
-A specific field maintains a count of links for the first four link types, such as <em>Related Link Count</em>, <em>Hyperlink Count</em>, <em>External Link Count</em>, and <em>Remote Link Count</em>.  
+A specific field maintains a count of links for the first four link types, such as *Related Link Count*, *Hyperlink Count*, *External Link Count*, and *Remote Link Count*.  
 
 ::: moniker-end 
 
@@ -44,7 +44,7 @@ A specific field maintains a count of links for the first four link types, such 
 - [**GitHub link types**](#github-link-types): connects a work item to a GitHub repository commit or pull request.     
 
 
-A specific field maintains a count of links for the first three link types, such as <em>Related Link Count</em>, <em>Hyperlink Count</em>, and <em>External Link Count</em>.  
+A specific field maintains a count of links for the first three link types, such as *Related Link Count*, *Hyperlink Count*, and *External Link Count*.  
 
 ::: moniker-end 
 
@@ -55,7 +55,7 @@ A specific field maintains a count of links for the first three link types, such
 - [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
 - [**External link types**](#external-link-types): connects a work item to an external object, such as a code object, build, or storyboard.   
 
-A specific field maintains a count of links for each of these link types, such as <em>Related Link Count</em>, <em>Hyperlink Count</em>, and <em>External Link Count</em>.  
+A specific field maintains a count of links for each of these link types, such as *Related Link Count*, *Hyperlink Count*, and *External Link Count*.  
 
 ::: moniker-end 
 
@@ -86,128 +86,199 @@ The following table describes the work item link types you can specify to scope 
 
 ::: moniker-end  
 
-<table>
-<tbody valign="top">
-<tr>
-<th width="20%">Name</th>
-<th width="17%">Reference name</th>
-<th width="63%">Usage</th>
-</tr>
-<tr>
-<td><strong>Affects-Affected by</strong><br/>(CMMI only)<br/><br/><img src="media/link-work-items-support-traceability/affects-cmmi.png" alt="Affects link type image"/> 
-<img src="media/link-work-items-support-traceability/affected-by-cmmi.png" alt="Affected by link type image"/> 
-</td>
-<td><p>Microsoft.VSTS.Common.Affects-Forward<br/>
-Microsoft.VSTS.Common.Affects-Reverse</p>
-<p>Topology type: Dependency<br/>
-Link category: Process-defined</p>
-</td>
-<td>
-<p>Use this directional link to create links between any set of work items, but not ones that would create closed loops. Typically used to track change requests made to requirements.</p>
-Restrictions and recommendations:
-<ul>
-<li><p>You can link a change request to only one requirement using Affects. You can link requirements to as many child change requests as needed using Affected by.</p>
-</li>
-<li><p>Only use Affects-Affected by links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li>
-</ul> </td>
-</tr>
-<tr>
-<td><strong>Child-Parent</strong><br/>
-<img src="media/link-work-items-support-traceability/child-tree-forward.png" alt="Child link type image"/><br/>
-<img src="media/link-work-items-support-traceability/parent-tree-reverse.png" alt="Parent link type image"/> 
-</td>
-<td><p>System.LinkTypes.Hierarchy-Forward<br/>
-System.LinkTypes.Hierarchy-Reverse</p>
-<p>Topology type: Tree<br/>
-Link category: System-defined</p></td>
-<td>
-Use this directional link to create one-to-many relationships between a single parent to one or more child items. Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the <a href="../backlogs/organize-backlog.md" data-raw-source="[mapping function](../backlogs/organize-backlog.md)">mapping function</a> or among backlog items and tasks using the <a href="../sprints/assign-work-sprint.md" data-raw-source="[sprint backlog](../sprints/assign-work-sprint.md)">sprint backlog</a> or <a href="../sprints/task-board.md" data-raw-source="[Taskboard](../sprints/task-board.md)">Taskboard</a>.
-<p>Typical uses include:</p> 
-<ul>
-<li><p>Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.</p></li><li><p>Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.</p></li></ul>Restrictions and recommendations:<ul><li><p>Use Excel to bulk edit both work items and parent-child links. See <a href="../backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)">Bulk add or modify work items with Excel</a>.</p></li><li><p>A work item can have only one Parent. A parent work item can have many children.</p></li><li><p>Only use parent-child links to link work items in the same project. This action is recommended if you plan to use Excel to modify or update work item data.</p></li></ul> </td>
-</tr>
-<tr>
-<td><strong>Duplicate-Duplicate of</strong> <sup>1</sup><br/> 
-<img src="media/link-work-items-support-traceability/duplicate-tree-forward.png" alt="Duplicate of tree forward."/> 
-<img src="media/link-work-items-support-traceability/duplicate-of-tree-reverse.png" alt="Duplicate of tree reverse."/> 
-</td>
-<td><p>System.LinkTypes.Duplicate-Forward<br/>
-System.LinkTypes.Duplicate-Reverse</p>
-<p>Topology type: Tree<br/>
-Link category: System-defined</p>
-</td>
-<td>
-<p>Use this directional link to create one-to-many relationships between a single parent to one or more child items. Use to track tasks, bugs, or other work items which are duplicates of one another.  </p>
-<p>Restrictions and recommendations:</p>
-<ul><li><p>A work item can have only one Duplicate. </p></li><li><p>Only use Duplicate/Duplicate Of links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li></ul> </td>
-</tr>
-<tr>
-<td><strong>Referenced By-References</strong><br/>
-<img src="media/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
-<img src="media/link-work-items-support-traceability/tests-dependency-reverse.png" alt="Tests link type image"/> 
-</td>
-<td><p>Microsoft.VSTS.TestCase.<br/>SharedParameterReferencedBy</p>
-<p>Topology type: Dependency<br/>
-Link category: Process-defined</p></td>
-<td>
-<p>Use to link test cases to shared parameters. Use to link Test Cases to Shared Parameters to support the ability to <a href="../../test/repeat-test-with-different-data.md" data-raw-source="[repeat a test with different data](../../test/repeat-test-with-different-data.md)">repeat a test with different data</a>. In general, you wouldn&#39;t add this link type to a scoped links control.  To learn more, see <a href="../../test/repeat-test-with-different-data.md" data-raw-source="[Repeat a test with different data](../../test/repeat-test-with-different-data.md)">Repeat a test with different data</a>. </p>
-</td>
-</tr>
-</tr>
-<tr>
-<td><strong>Related</strong><br/>
-<img src="media/link-work-items-support-traceability/related-network.png" alt="Related link type image"/> 
-</td>
-<td><p>System.LinkTypes.Related</p>
-<p>Topology type: Network<br/>
-Link category: System-defined</p></td>
-<td>Use this non-directional link to create links between any set of work items. Use to link work items that are at the same level, such as two user stories that define features that overlap one another. The Related link type creates simple relationships with few restrictions. 
-<ul><li><p>Relate work items that are at the same level, such as two user stories that define features that overlap one another.</p></li><li><p>Link work items that are defined in different projects and managed by different teams.</p></li><li><p>Find and view work items and their related work items in a two-tiered view.</p></li><li><p>Create simple relationships with few restrictions.</p></li></ul></td>
-</tr>
-<tr>
-<td><strong>Successor-Predecessor</strong><br/>
-<img src="media/link-work-items-support-traceability/successor-dependency-forward.png" alt="Successor dependency, forward."/> 
-<img src="media/link-work-items-support-traceability/predecessor-dependency-reverse.png" alt="Predecessor dependency, reverse."/> 
-</td>
-<td><p>System.LinkTypes.Dependency</p>
-<p>Topology type: Dependency<br/>
-Link category: System-defined</p>
-<p>Choose <strong>Predecessor</strong> link type when linking to a work item that should be completed <em>prior</em> to the work item you are linking from. Choose <strong>Successor</strong> link type when linking to a work item that should be completed <em>after</em> to the work item you are linking from.</p>
-</td>
-<td><p>Use this directional link to create links between any set of work items, but not ones that would create closed loops. Use to track tasks that must be completed before others can be started. When you plan work using Microsoft Project, linked tasks are represented as predecessor-successor links in Azure Boards. Typically used to track work that must be completed prior to beginning work on predecessor items. </p>
-<ul><li><p>Track tasks that must be completed before others can be started. When you plan work using Project, linked tasks are represented as predecessor-successor links in TFS.</p></li><li><p>Supports one-to-many relationships.</p></li><li><p>Find and view predecessor work items and their successor work items in a two-tiered, direct links query view.</p></li></ul>Restrictions and recommendations:<ul><li><p>An error appears when you attempt to create links that define circular relationships.</p></li><li><p>Create predecessor-successor links only to work items that are within the same project.<br />
-You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the project for which the query is defined are imported.</p></li></ul> </td>
-</tr>
-<tr>
-<td><strong>Tested by-Tests</strong><br/> 
-<img src="media/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
-<img src="media/link-work-items-support-traceability/tests-dependency-reverse.png" alt="Tests link type image"/> 
-</td>
-<td><p>Microsoft.VSTS.Common.TestedBy-Forward<br/>
-Microsoft.VSTS.Common.TestedBy-Reverse</p>
-<p>Topology type: Dependency<br/>
-Link category: Process-defined</p></td>
-<td>
-<p>Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises Azure DevOps, there are several SQL reports that depend on these links. See <a href="../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress" data-raw-source="[Review team activities to support useful reports](../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress)">Review team activities to support useful reports</a>.</p>
-</td>
-</tr>
-<tr>
-<td><strong>Test Case-Shared Steps</strong><br/>
-<img src="media/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
-<img src="media/link-work-items-support-traceability/tests-dependency-reverse.png" alt="Tests link type image"/> 
-</td>
-<td><p>Microsoft.VSTS.TestCase.<br/>SharedStepReferencedBy</p>
-<p>Topology type: Dependency<br/>
-Link category: Process-defined</p></td>
-<td>
-<p>Use to link test cases with shared steps. You <a href="/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases" data-raw-source="[share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases)">share steps between test cases</a> to avoid having to create multiple entries of the same sequence of steps. To learn more, see <a href="/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases" data-raw-source="[Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases)">Share steps between test cases</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Name**
+   :::column-end:::
+   :::column span="3":::
+   **Reference name**
+   :::column-end:::
+   :::column span="3":::
+   **Usage**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Affects-Affected by**  (CMMI only)    ![Affects link type image](media/link-work-items-support-traceability/affects-cmmi.png) 
+   ![Affected by link type image](media/link-work-items-support-traceability/affected-by-cmmi.png) 
+   :::column-end:::
+   :::column span="3":::
+   Microsoft.VSTS.Common.Affects-Forward  
+   Microsoft.VSTS.Common.Affects-Reverse  
+   Topology type: Dependency  
+   Link category: Process-defined  
+   :::column-end:::
+   :::column span="3":::
+   
+   Use this directional link to create links between any set of work items, but not ones that would create closed loops. Typically used to track change requests made to requirements.
 
-**Notes:**
-1. Available from TFS 2017 and later versions. 
+   Restrictions and recommendations:
+   
+   - You can link a change request to only one requirement using Affects. You can link requirements to as many child change requests as needed using Affected by.
+
+   
+   - Only use Affects-Affected by links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.
+
+    
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Child-Parent**  
+   ![Child link type image](media/link-work-items-support-traceability/child-tree-forward.png)  
+   ![Parent link type image](media/link-work-items-support-traceability/parent-tree-reverse.png) 
+   :::column-end:::
+   :::column span="3":::
+   System.LinkTypes.Hierarchy-Forward  
+   System.LinkTypes.Hierarchy-Reverse  
+   Topology type: Tree  
+   Link category: System-defined  
+   :::column-end:::
+   :::column span="3":::
+   
+   Use this directional link to create one-to-many relationships between a single parent to one or more child items. Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the [mapping function](../backlogs/organize-backlog.md) or among backlog items and tasks using the [sprint backlog](../sprints/assign-work-sprint.md) or [Taskboard](../sprints/task-board.md).
+
+   Typical uses include:
+ 
+   
+   - Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.
+   - Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.
+
+   Restrictions and recommendations:
+   - Use Excel to bulk edit both work items and parent-child links. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+   - A work item can have only one Parent. A parent work item can have many children.
+   - Only use parent-child links to link work items in the same project. This action is recommended if you plan to use Excel to modify or update work item data.
+ 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Duplicate-Duplicate of** <sup>1</sup>   
+   ![Duplicate of tree forward.](media/link-work-items-support-traceability/duplicate-tree-forward.png) 
+   ![Duplicate of tree reverse.](media/link-work-items-support-traceability/duplicate-of-tree-reverse.png) 
+   :::column-end:::
+   :::column span="3":::
+   System.LinkTypes.Duplicate-Forward  
+   System.LinkTypes.Duplicate-Reverse  
+   Topology type: Tree  
+   Link category: System-defined  
+   :::column-end:::
+   :::column span="3":::
+   
+   Use this directional link to create one-to-many relationships between a single parent to one or more child items. Use to track tasks, bugs, or other work items which are duplicates of one another.  
+
+   Restrictions and recommendations:
+
+   - A work item can have only one Duplicate. 
+   - Only use Duplicate/Duplicate Of links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.
+ 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Referenced By-References**  
+   ![Tested by link type image](media/link-work-items-support-traceability/tested-by-dependency-forward.png) 
+   ![Tests link type image](media/link-work-items-support-traceability/tests-dependency-reverse.png) 
+   :::column-end:::
+   :::column span="3":::
+   Microsoft.VSTS.TestCase.  
+   SharedParameterReferencedBy  
+   Topology type: Dependency  
+   Link category: Process-defined  
+   :::column-end:::
+   :::column span="3":::
+   
+   Use to link test cases to shared parameters. Use to link Test Cases to Shared Parameters to support the ability to [repeat a test with different data](../../test/repeat-test-with-different-data.md). In general, you wouldn&#39;t add this link type to a scoped links control.  To learn more, see [Repeat a test with different data](../../test/repeat-test-with-different-data.md). 
+
+   :::column-end:::
+
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Related**  
+   ![Related link type image](media/link-work-items-support-traceability/related-network.png) 
+   :::column-end:::
+   :::column span="3":::
+   System.LinkTypes.Related  
+   Topology type: Network  
+   Link category: System-defined  
+   :::column-end:::
+   :::column span="3":::
+   Use this non-directional link to create links between any set of work items. Use to link work items that are at the same level, such as two user stories that define features that overlap one another. The Related link type creates simple relationships with few restrictions. 
+   - Relate work items that are at the same level, such as two user stories that define features that overlap one another.
+   - Link work items that are defined in different projects and managed by different teams.
+   - Find and view work items and their related work items in a two-tiered view.
+   - Create simple relationships with few restrictions.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Successor-Predecessor**  
+   ![Successor dependency, forward.](media/link-work-items-support-traceability/successor-dependency-forward.png) 
+   ![Predecessor dependency, reverse.](media/link-work-items-support-traceability/predecessor-dependency-reverse.png) 
+   :::column-end:::
+   :::column span="3":::
+   System.LinkTypes.Dependency  
+
+   Topology type: Dependency  
+   Link category: System-defined  
+   Choose **Predecessor** link type when linking to a work item that should be completed *prior* to the work item you are linking from. Choose **Successor** link type when linking to a work item that should be completed *after* to the work item you are linking from.
+
+   :::column-end:::
+   :::column span="3":::
+   Use this directional link to create links between any set of work items, but not ones that would create closed loops. Use to track tasks that must be completed before others can be started. When you plan work using Microsoft Project, linked tasks are represented as predecessor-successor links in Azure Boards. Typically used to track work that must be completed prior to beginning work on predecessor items. 
+
+   - Track tasks that must be completed before others can be started. When you plan work using Project, linked tasks are represented as predecessor-successor links in TFS.
+   - Supports one-to-many relationships.
+   - Find and view predecessor work items and their successor work items in a two-tiered, direct links query view.
+
+   Restrictions and recommendations:-  
+
+   - An error appears when you attempt to create links that define circular relationships.
+   - Create predecessor-successor links only to work items that are within the same project. 
+     You can create predecessor-successor links between work items that are defined in different projects. However, if you export a query to Excel or Project, only those work items that are defined for the project for which the query is defined are imported.   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Tested by-Tests**   
+   ![Tested by link type image](media/link-work-items-support-traceability/tested-by-dependency-forward.png) 
+   ![Tests link type image](media/link-work-items-support-traceability/tests-dependency-reverse.png) 
+   :::column-end:::
+   :::column span="3":::
+   Microsoft.VSTS.Common.TestedBy-Forward  
+   Microsoft.VSTS.Common.TestedBy-Reverse  
+   Topology type: Dependency  
+   Link category: Process-defined  
+   :::column-end:::
+   :::column span="3":::
+   
+   Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises Azure DevOps, there are several SQL reports that depend on these links. See [Review team activities to support useful reports](../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress).
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Test Case-Shared Steps**  
+   ![Tested by link type image](media/link-work-items-support-traceability/tested-by-dependency-forward.png) 
+   ![Tests link type image](media/link-work-items-support-traceability/tests-dependency-reverse.png) 
+   :::column-end:::
+   :::column span="3":::
+   Microsoft.VSTS.TestCase.  
+   SharedStepReferencedBy  
+   Topology type: Dependency  
+   Link category: Process-defined  
+   :::column-end:::
+   :::column span="3":::
+   
+   Use to link test cases with shared steps. You [share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases) to avoid having to create multiple entries of the same sequence of steps. To learn more, see [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases).
+
+   :::column-end:::
+:::row-end:::
+
+> [!NOTE]  
+> 1. Available from TFS 2017 and later versions. 
 
 
 <a id="hyperlink">  </a>
@@ -219,24 +290,34 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
 > [!div class="mx-imgBorder"]  
 > ![Hyperlink, conceptual image](media/link-type-reference/hyperlink.png) 
 
-<table width="100%"> 
-<tbody valign="top">
-<tr>
-<th width="15%">Link name</th>
-<th width="12%">Tool supported</th>
-<th width="12%">Artifact type</th>
-<th width="60%">Usage</th>
-</tr>
-<tr>
-<td>Hyperlink</td>
-<td>Work item tracking</td>
-<td>Hyperlink</td>
-<td>Used to link a work item to a URL. Note that <strong>Workitem Hyperlink</strong> is the name of this link type in the <a href="/rest/api/azure/devops/wit/artifact-link-types/list" data-raw-source="[Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list)">Artifact Link Types API</a>. </td>
-</tr>
-</tbody>
-</table>
-
-
+:::row:::
+   :::column span="1":::
+   **Link name**
+   :::column-end:::
+   :::column span="1":::
+   **Tool supported**
+   :::column-end:::
+   :::column span="1":::
+   **Artifact type**
+   :::column-end:::
+   :::column span="1":::
+   **Usage**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Hyperlink
+   :::column-end:::
+   :::column span="1":::
+   Work item tracking
+   :::column-end:::
+   :::column span="1":::
+   Hyperlink
+   :::column-end:::
+   :::column span="1":::
+   Used to link a work item to a URL. Note that **Workitem Hyperlink** is the name of this link type in the [Artifact Link Types API](/rest/api/azure/devops/wit/artifact-link-types/list). 
+   :::column-end:::
+:::row-end:::
 
 
 <a id="external-link-types">  </a>
@@ -416,7 +497,7 @@ The following table describes the external link types you can choose when adding
       TcmResultAttachment
    :::column-end:::
    :::column span="":::
-      Used to link a work item to an attachment associated with a test result. These links appear when you associate a work item with a test result from <strong>Test</strong> or Microsoft Test Manager. 
+      Used to link a work item to an attachment associated with a test result. These links appear when you associate a work item with a test result from **Test** or Microsoft Test Manager. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -458,7 +539,7 @@ The following table describes the external link types you can choose when adding
       Tag
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a tag that&#39;s been defined for a git commit or git repository. See <a href="../../repos/git/command-prompt.md" data-raw-source="[Work from the Git command prompt](../../repos/git/command-prompt.md)">Work from the Git command prompt</a> for more information.
+      Used to link a work item to a tag that&#39;s been defined for a git commit or git repository. See [Work from the Git command prompt](../../repos/git/command-prompt.md) for more information.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -472,7 +553,7 @@ The following table describes the external link types you can choose when adding
       TcmResult
    :::column-end:::
    :::column span="":::
-      Used to link a work item to a test result. These links appear when you associate a work item with a test result from <strong>Test</strong> or Microsoft Test Manager.  
+      Used to link a work item to a test result. These links appear when you associate a work item with a test result from **Test** or Microsoft Test Manager.  
    :::column-end:::
 :::row-end:::
 :::row:::

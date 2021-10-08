@@ -7,7 +7,7 @@ ms.technology: devops-migrate
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2021
+ms.date: 10/07/2021
 ---
 
 # Import large collections 
