@@ -6,8 +6,8 @@ ms.technology: devops-test
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 12/07/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '>= tfs-2017'
+ms.date: 09/14/2021
 ---
 
 # Collect diagnostic data while testing
@@ -20,9 +20,10 @@ during the test. You can collect diagnostic data from
 web apps and from desktop apps,
 and view it in Azure Test Plans or Team Foundation Server.
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
 
 <a name="collect-web"></a>
+
 ## Collect diagnostic data from web and desktop apps
 
 For web apps under test, you can use web-based Microsoft Test Runner. 
@@ -124,6 +125,7 @@ Capture screen recordings from your apps:
    ![Viewing the screen recording](media/collect-diagnostic-data/collect-diagnostic-data-14.png) 
 
 <a name="view-data"></a>
+
 ### View the diagnostic data
  
 When you create a bug while capturing diagnostic data, all the data captured 
@@ -148,9 +150,9 @@ tests using Microsoft Test Manager. For more details, see
 > You must [configure the data collectors](/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) and other run settings in Microsoft Test Manager and specify these as the default settings for the test plan.
 > For more details, see [Run manual tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager).
 
-## See also
+## Related articles
 
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 

@@ -125,7 +125,7 @@ If you believe that a PAT exists in error, we suggest that you [revoke the PAT](
 
 Your token is your identity and represents you when it's used. Treat and use a PAT like your password.
 
-1. Git interactions require a username, which can be anything except the empty string.
+Git interactions require a username, which can be anything except the empty string.
 The PAT is used as the password.
 Additionally, you have to Base64-encode the username and PAT to use it with HTTP basic authentication.
 On Linux or macOS, in Bash, you can enter:
@@ -138,20 +138,15 @@ git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azur
 
 > [!TIP]
 > For existing repositories, if you've already added the origin using the username, run the following command first.
-> <br>
 > ``git remote remove origin``
-> </br>
-> Otherwise run the following command:
-> <br>
-> ``git remote add origin https://<PAT>@<company_machineName>.visualstudio.com:/<path-to-git-repo>`` path to git repo = <project name>/_git/<repo_name>
-  </br>
-> ``git push -u origin --all``
+> Otherwise, run the following command:
+> ``git remote add origin https://<PAT>@<company_machineName>.visualstudio.com:/<path-to-git-repo> path to git repo = <project name>/_git/<repo_name> git push -u origin --all``
 
 On Windows, you can do something similar in PowerShell:
 
 ```powershell
 $MyPat = 'yourPAT'
-$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(":$MyPat"))
+$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("$MyPat"))
 git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 

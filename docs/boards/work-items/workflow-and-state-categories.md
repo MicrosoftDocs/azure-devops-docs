@@ -43,150 +43,283 @@ Here's how the default, inherited states map to the state categories for all thr
 
 [!INCLUDE [temp](../includes/basic-process-note.md)] 
 
-<table valign="top" width="100%">
-<tr>
-<th width="30%">Categories</th>
-<th width="14%">Work tracking WITs</th>
-<th width="16%">Test tracking WITs </th>
-</tr>
-<tr valign="top" >
-<td><strong>Proposed:</strong> Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. </td>
-<td>To Do</td> 
-<td>Design (Test Case)<br/></td> 
-</tr>
-<tr valign="top" >
-<td><strong>In Progress:</strong> Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on Kanban boards. </td> 
-<td>Doing</td> 
-<td>Active (Test Plan)<br/>In Planning (Test Suite)<br/>In Progress (Test Suite)<br/>Ready (Test Case)</td> 
-</tr>
-<tr valign="top" >
-<td><strong>Resolved:</strong> Assigned to states that represent a solution has been implemented, but are not yet verified. Generally these states apply to bug WITs. Work items in a Resolved state appear on the backlog by default. The Agile tools treat the Resolved state category exactly the same as the In Progress state category. </td> 
-<td>n/a</td> 
-<td>n/a </td> 
-</tr>
-<tr valign="top" >
-<td><strong>Completed:</strong> Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the Kanban board. Note that you can't modify states in this category nor can you add states to this category.</td> 
-<td>Done<br/></td> 
-<td>Closed (Test Case)<br/>Completed (Test Suite)<br/>Inactive (Test Plan)</td> 
-</tr>
-<tr valign="top" >
-<td><strong>Removed:</strong> Assigned to the Removed state. Work items in a state mapped to the Removed category are hidden from the backlog and board experiences.
-</td> 
-<td>n/a</td> 
-<td>n/a</td> 
-</tr>
-</table>  
+:::row:::
+   :::column span="2":::
+   **Categories**
+   :::column-end:::
+   :::column span="1":::
+   **Work tracking WITs**
+   :::column-end:::
+   :::column span="1":::
+   **Test tracking WITs** 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
+   :::column-end:::
+   :::column span="1":::
+   To Do
+   :::column-end::: 
+   :::column span="1":::
+   Design (Test Case)  
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **In Progress:** Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on Kanban boards. 
+   :::column-end::: 
+   :::column span="1":::
+   Doing
+   :::column-end::: 
+   :::column span="1":::
+   Active (Test Plan)  In Planning (Test Suite)  In Progress (Test Suite)  Ready (Test Case)
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Resolved:** Assigned to states that represent a solution has been implemented, but are not yet verified. Generally these states apply to bug WITs. Work items in a Resolved state appear on the backlog by default. The Agile tools treat the Resolved state category exactly the same as the In Progress state category. 
+   :::column-end::: 
+   :::column span="1":::
+   n/a
+   :::column-end::: 
+   :::column span="1":::
+   n/a 
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Completed:** Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the Kanban board. Note that you can't modify states in this category nor can you add states to this category.
+   :::column-end::: 
+   :::column span="1":::
+   Done  
+   :::column-end::: 
+   :::column span="1":::
+   Closed (Test Case)  Completed (Test Suite)  Inactive (Test Plan)
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Removed:** Assigned to the Removed state. Work items in a state mapped to the Removed category are hidden from the backlog and board experiences.
+   :::column-end::: 
+   :::column span="1":::
+   n/a
+   :::column-end::: 
+   :::column span="1":::
+   n/a
+   :::column-end::: 
+:::row-end:::
+  
 
 #### [Agile process](#tab/agile-process) 
 
 
-<table valign="top" width="100%">
-<tr>
-<th width="30%">Categories</th>
-<th width="14%">Work tracking WITs</th>
-<th width="16%">Test tracking WITs </th>
-</tr>
-<tr valign="top" >
-<td><strong>Proposed:</strong> Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. </td>
-<td>New</td> 
-<td>Design (Test Case)<br/></td> 
-</tr>
-<tr valign="top" >
-<td><strong>In Progress:</strong> Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on Kanban boards. </td> 
-<td>Active (Bug, Epic, Feature, User Story)</td> 
-<td>Active (Test Plan)<br/>In Planning (Test Suite)<br/>In Progress (Test Suite)<br/>Ready (Test Case)</td> 
-</tr>
-<tr valign="top" >
-<td><strong>Resolved:</strong> Assigned to states that represent a solution has been implemented, but are not yet verified. Generally these states apply to bug WITs. Work items in a Resolved state appear on the backlog by default. The Agile tools treat the Resolved state category exactly the same as the In Progress state category. </td> 
-<td>Resolved (Bug)</td> 
-<td>n/a </td> 
-</tr>
-<tr valign="top" >
-<td><strong>Completed:</strong> Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the Kanban board. Note that you can't modify states in this category nor can you add states to this category.</td> 
-<td>Closed (Bug, Epic, Feature, User Story)<br/></td> 
-<td>Closed (Test Case)<br/>Completed (Test Suite)<br/>Inactive (Test Plan)</td> 
-</tr>
-<tr valign="top" >
-<td><strong>Removed:</strong> Assigned to the Removed state. Work items in a state mapped to the Removed category are hidden from the backlog and board experiences.
-</td> 
-<td>Removed (Epic, Feature, User Story)</td> 
-<td>n/a</td> 
-</tr>
-</table>  
+:::row:::
+   :::column span="2":::
+   **Categories**
+   :::column-end:::
+   :::column span="1":::
+   **Work tracking WITs**
+   :::column-end:::
+   :::column span="1":::
+   **Test tracking WITs**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
+   :::column-end:::
+   :::column span="1":::
+   New
+   :::column-end::: 
+   :::column span="1":::
+   Design (Test Case)  
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **In Progress:** Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on Kanban boards. 
+   :::column-end::: 
+   :::column span="1":::
+   Active (Bug, Epic, Feature, User Story)
+   :::column-end::: 
+   :::column span="1":::
+   Active (Test Plan)  In Planning (Test Suite)  In Progress (Test Suite)  Ready (Test Case)
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Resolved:** Assigned to states that represent a solution has been implemented, but are not yet verified. Generally these states apply to bug WITs. Work items in a Resolved state appear on the backlog by default. The Agile tools treat the Resolved state category exactly the same as the In Progress state category. 
+   :::column-end::: 
+   :::column span="1":::
+   Resolved (Bug)
+   :::column-end::: 
+   :::column span="1":::
+   n/a 
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Completed:** Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the Kanban board. Note that you can't modify states in this category nor can you add states to this category.
+   :::column-end::: 
+   :::column span="1":::
+   Closed (Bug, Epic, Feature, User Story)  
+   :::column-end::: 
+   :::column span="1":::
+   Closed (Test Case)  Completed (Test Suite)  Inactive (Test Plan)
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Removed:** Assigned to the Removed state. Work items in a state mapped to the Removed category are hidden from the backlog and board experiences.
+   :::column-end::: 
+   :::column span="1":::
+   Removed (Epic, Feature, User Story)
+   :::column-end::: 
+   :::column span="1":::
+   n/a
+   :::column-end::: 
+:::row-end:::
+  
 
 #### [Scrum process](#tab/scrum-process) 
 
-
-<table valign="top" width="100%">
-<tr>
-<th width="30%">Categories</th>
-<th width="14%">Work tracking WITs</th>
-<th width="16%">Test tracking WITs </th>
-</tr>
-<tr valign="top" >
-<td><strong>Proposed:</strong> Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. </td>
-<td>New (Bug, Epic, Feature, Product backlog item)<br/>Approved<br/>To Do (Task) </td> 
-<td>Design (Test Case)<br/></td> 
-</tr>
-<tr valign="top" >
-<td><strong>In Progress:</strong> Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on Kanban boards. </td> 
-<td>Committed (Bug, Epic, Feature, Product backlog item)<br/>Open (Impediment)</td> 
-<td>Active (Test Plan)<br/>In Planning (Test Suite)<br/>In Progress (Test Suite)<br/>Ready (Test Case)</td> 
-</tr>
-<tr valign="top" >
-<td><strong>Resolved:</strong> Assigned to states that represent a solution has been implemented, but are not yet verified. Generally these states apply to bug WITs. Work items in a Resolved state appear on the backlog by default. The Agile tools treat the Resolved state category exactly the same as the In Progress state category. </td> 
-<td>n/a</td>  
-<td>n/a </td> 
-</tr>
-<tr valign="top" >
-<td><strong>Completed:</strong> Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the Kanban board. Note that you can't modify states in this category nor can you add states to this category.</td> 
-<td>Done<br/></td> 
-<td>Closed (Test Case)<br/>Completed (Test Suite)<br/>Inactive (Test Plan)</td> 
-</tr>
-<tr valign="top" >
-<td><strong>Removed:</strong> Assigned to the Removed state. Work items in a state mapped to the Removed category are hidden from the backlog and board experiences.
-</td> 
-<td>Removed</td> 
-<td>n/a</td> 
-</tr>
-</table> 
+:::row:::
+   :::column span="2":::
+   **Categories**
+   :::column-end:::
+   :::column span="1":::
+   **Work tracking WITs**
+   :::column-end:::
+   :::column span="1":::
+   **Test tracking WITs**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
+   :::column-end:::
+   :::column span="1":::
+   New (Bug, Epic, Feature, Product backlog item)  Approved  To Do (Task) 
+   :::column-end::: 
+   :::column span="1":::
+   Design (Test Case)  
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **In Progress:** Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on Kanban boards. 
+   :::column-end::: 
+   :::column span="1":::
+   Committed (Bug, Epic, Feature, Product backlog item)  Open (Impediment)
+   :::column-end::: 
+   :::column span="1":::
+   Active (Test Plan)  In Planning (Test Suite)  In Progress (Test Suite)  Ready (Test Case)
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Resolved:** Assigned to states that represent a solution has been implemented, but are not yet verified. Generally these states apply to bug WITs. Work items in a Resolved state appear on the backlog by default. The Agile tools treat the Resolved state category exactly the same as the In Progress state category. 
+   :::column-end::: 
+   :::column span="1":::
+   n/a
+   :::column-end:::  
+   :::column span="1":::
+   n/a 
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Completed:** Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the Kanban board. Note that you can't modify states in this category nor can you add states to this category.
+   :::column-end::: 
+   :::column span="1":::
+   Done  
+   :::column-end::: 
+   :::column span="1":::
+   Closed (Test Case)  Completed (Test Suite)  Inactive (Test Plan)
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Removed:** Assigned to the Removed state. Work items in a state mapped to the Removed category are hidden from the backlog and board experiences.
+   :::column-end::: 
+   :::column span="1":::
+   Removed
+   :::column-end::: 
+   :::column span="1":::
+   n/a
+   :::column-end::: 
+:::row-end:::
+ 
 
 #### [CMMI process](#tab/cmmi-process) 
 
-
-<table valign="top" width="100%">
-<tr>
-<th width="30%">Categories</th>
-<th width="14%">Work tracking WITs</th>
-<th width="16%">Test tracking WITs </th>
-</tr>
-<tr valign="top" >
-<td><strong>Proposed:</strong> Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. </td>
-<td>Proposed<br/></td> 
-<td>Design (Test Case)<br/></td> 
-</tr>
-<tr valign="top" >
-<td><strong>In Progress:</strong> Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on Kanban boards. </td> 
-<td>Active<br/>Resolved (Epic, Feature, Requirement, Task)</td> 
-<td>Active (Test Plan)<br/>In Planning (Test Suite)<br/>In Progress (Test Suite)<br/>Ready (Test Case)</td> 
-</tr>
-<tr valign="top" >
-<td><strong>Resolved:</strong> Assigned to states that represent a solution  has been implemented but not yet verified. Generally these states apply to bug WITs. Work items in a Resolved state appear on the backlog by default. The Agile tools treat the Resolved state category exactly the same as the In Progress state category. </td> 
-<td>Resolved (Bug, Issue, Review, Risk)</td>   
-<td>n/a </td> 
-</tr>
-<tr valign="top" >
-<td><strong>Completed:</strong> Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the Kanban board. Note that you can't modify states in this category nor can you add states to this category.</td> 
-<td>Closed<br/></td> 
-<td>Closed (Test Case)<br/>Completed (Test Suite)<br/>Inactive (Test Plan)</td> 
-</tr>
-<tr valign="top" >
-<td><strong>Removed:</strong> Assigned to the Removed state. Work items in a state mapped to the Removed category are hidden from the backlog and board experiences.
-</td> 
-<td>Removed</td> 
-<td>n/a</td> 
-</tr>
-</table> 
+:::row:::
+   :::column span="2":::
+   **Categories**
+   :::column-end:::
+   :::column span="1":::
+   **Work tracking WITs**
+   :::column-end:::
+   :::column span="1":::
+   **Test tracking WITs** 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Proposed:** Assigned to states associated with newly added work items so that they appear on the backlog. The first column on the Kanban boards and Taskboards map to a Proposed state category. 
+   :::column-end:::
+   :::column span="1":::
+   Proposed  
+   :::column-end::: 
+   :::column span="1":::
+   Design (Test Case)  
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **In Progress:** Assigned to states that represent active work. Work items assigned to states mapped to this category appear in the backlog (unless you choose to hide them) and make up the middle columns on Kanban boards. 
+   :::column-end::: 
+   :::column span="1":::
+   Active  Resolved (Epic, Feature, Requirement, Task)
+   :::column-end::: 
+   :::column span="1":::
+   Active (Test Plan)  In Planning (Test Suite)  In Progress (Test Suite)  Ready (Test Case)
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Resolved:** Assigned to states that represent a solution  has been implemented but not yet verified. Generally these states apply to bug WITs. Work items in a Resolved state appear on the backlog by default. The Agile tools treat the Resolved state category exactly the same as the In Progress state category. 
+   :::column-end::: 
+   :::column span="1":::
+   Resolved (Bug, Issue, Review, Risk)
+   :::column-end:::   
+   :::column span="1":::
+   n/a 
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Completed:** Assigned to states that represent work that has finished. Work items whose state is in this category don't appear on the backlog and do appear in the last column of the Kanban board. Note that you can't modify states in this category nor can you add states to this category.
+   :::column-end::: 
+   :::column span="1":::
+   Closed  
+   :::column-end::: 
+   :::column span="1":::
+   Closed (Test Case)  Completed (Test Suite)  Inactive (Test Plan)
+   :::column-end::: 
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   **Removed:** Assigned to the Removed state. Work items in a state mapped to the Removed category are hidden from the backlog and board experiences.
+   :::column-end::: 
+   :::column span="1":::
+   Removed
+   :::column-end::: 
+   :::column span="1":::
+   n/a
+   :::column-end::: 
+:::row-end:::
 
 * * *
 
@@ -240,5 +373,3 @@ When you link a work item to a pull request (PR), you have the option to automat
 **Dashboard widgets**
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
 ::: moniker-end
-
- 

@@ -1,7 +1,7 @@
 ---
 title: Default permissions and access for Azure Boards
 titleSuffix: Azure Boards & TFS 
-description: Default permissions and access levels to support work-tracking tasks in Azure DevOps Services and Team Foundation Server
+description: Learn about default permissions and access levels in Azure Boards. The permissions and access levels help you support work-tracking tasks in Azure DevOps Services.
 ms.custom: boards-get-started
 ms.technology: devops-agile
 ms.assetid: 
@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 09/15/2021
 ---
 
-# Quick guide to default permissions and access for Azure Boards 
+# Default permissions and access levels for Azure Boards 
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-As a member of an Azure Boards project, you can use the majority of features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
+As a member of an Azure Boards project, you can use most features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash;and team administrator role grant permissions to specific features. 
 
 In the tables provided in this article, a ✔️ indicates that the corresponding access level or security group has access to a feature by default. 
 
@@ -25,7 +25,7 @@ In the tables provided in this article, a ✔️ indicates that the correspondin
 
 For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../../organizations/accounts/add-organization-users.md). If you need to [grant specific users select permissions](../../organizations/security/change-individual-permissions.md), you can do so.
 
-## General work item feature access
+## Work item feature access
 
 You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../work-items/about-work-items.md).
 
@@ -62,9 +62,9 @@ You can use work items to track anything you need to track. To learn more, see [
 
 <a id="stakeholder-access"></a>
 
-## More on Stakeholder access
+## Stakeholder access
 
-Stakeholder access supports business owners, analysts, and other team members who don't manage the work of a project, but need to be able to view and add ideas to the backlog, add context and information to work items, and review status and progress. All members of an organization who don't use Visual Studio but want to contribute to work item tracking and monitor progress can be assigned as a stakeholder. Note, even if you change the permission level for a user assigned **Stakeholder** access, the user won't be able to access the feature. 
+Stakeholder access supports business owners. It also supports analysts and other team members who don't manage the work of a project, but need to view and add ideas to the backlog, add context and information to work items, and review status and progress. All members of an organization who don't use Visual Studio but want to contribute to work item tracking and monitor progress can be assigned as a stakeholder. Note, even if you change the permission level for a user assigned **Stakeholder** access, the user will be blocked from accessing the feature. 
 
 ::: moniker range="azure-devops"
 > [!NOTE]   

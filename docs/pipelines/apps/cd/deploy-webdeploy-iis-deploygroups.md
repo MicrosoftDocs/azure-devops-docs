@@ -1,12 +1,12 @@
 ---
-title: Deploy to IIS on a Windows VM
+title: Deploy to IIS on a Windows VM (Classic)
 description: Deploy an ASP.NET or Node.js web deployment package to an IIS web server on a Windows virtual machine using Deployment Groups
 ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 ms.topic: quickstart
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 09/07/2021
 monikerRange: '>= tfs-2018'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2018'
 
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
-We'll show you how to set up continuous deployment of your ASP.NET or Node.js app to an IIS web server running on Windows using
+Learn how to set up continuous deployment of your ASP.NET or Node.js app to an IIS web server running on Windows using
 Azure Pipelines. You can use the steps in this quickstart as long as your continuous integration pipeline publishes a web deployment package.
 
 ![A typical release pipeline for web applications](azure/media/vscode-git-ci-cd-to-azure.png)

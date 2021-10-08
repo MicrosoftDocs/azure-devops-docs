@@ -1,12 +1,12 @@
 ---
-title: Deploy nginx to a Linux VM
+title: Deploy nginx to a Linux VM (Classic)
 description: Deploy a web application to an nginx web server on a Linux virtual machine using Deployment Groups in Azure Pipelines
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 ms.topic: quickstart
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 02/23/2020
+ms.date: 09/07/2021
 monikerRange: '>= tfs-2018'
 ---
 
@@ -17,8 +17,8 @@ monikerRange: '>= tfs-2018'
 > [!NOTE]
 > If you want to deploy your application to a Linux virtual machine using YAML, see [Deploy to a Linux virtual machine](../../ecosystems/deploy-linux-vm.md).
 
-We'll show you how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
-Azure Pipelines or Team Foundation Server (TFS) 2018 and higher. You can use the steps in this
+Learn how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
+Azure Pipelines. You can use the steps in this
 quickstart for any app as long as your continuous integration pipeline publishes a web deployment package.
 
 ![A typical release pipeline for web applications](azure/media/vscode-git-ci-cd-to-azure.png)
@@ -28,7 +28,7 @@ automatically show up on your site.
 
 ## Define your CI build pipeline
 
-You'll need a continuous integration (CI) build pipeline that publishes your web application, as well as
+You'll need a continuous integration (CI) build pipeline that publishes your web application, and
 a deployment script that can be run locally on the Ubuntu server. Set up a CI build pipeline based on the runtime you want to use. 
 
 #### [Java](#tab/java)
@@ -38,7 +38,7 @@ a deployment script that can be run locally on the Ubuntu server. Set up a CI bu
 ```
 https://github.com/spring-guides/gs-spring-boot-docker.git
 ```
-Follow additional steps mentioned in [Build your Java app with Maven](../../ecosystems/java.md) for creating a build to deploy to Linux.
+Follow more steps mentioned in [Build your Java app with Maven](../../ecosystems/java.md) for creating a build to deploy to Linux.
 
 #### [JavaScript](#tab/java-script)
 
@@ -47,20 +47,20 @@ Follow additional steps mentioned in [Build your Java app with Maven](../../ecos
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
-Follow additional steps mentioned in [Build your Node.js app with gulp](../../ecosystems/javascript.md) for creating a build to deploy to Linux.
+Follow more steps mentioned in [Build your Node.js app with gulp](../../ecosystems/javascript.md) for creating a build to deploy to Linux.
 
 * * * 
 
 ## Prerequisites for the Linux VM
 
 The deployment scripts used in the above sample repositories have been tested on Ubuntu 16.04, and we recommend you use the same version of Linux VM for this quickstart.
-Follow the additional steps described below based on the runtime stack used for the app.
+Follow the extra steps described below based on the runtime stack used for the app.
 
 #### [Java](#tab/java)
 
 - For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) template, which provides a fully supported OpenJDK-based runtime.
 - For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) Azure template and [configure Tomcat 9.x as a service](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file).
-- For deploying Java EE based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) + WildFly/JBoss 14 
+- For deploying Java EE-based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) + WildFly/JBoss 14 
 
 #### [JavaScript](#tab/java-script)
 
@@ -78,12 +78,12 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
 1. Do one of the following to start creating a release pipeline:
 
-   * If you've just completed a CI build, in the build's **Summary** tab under **Deployments**,
+   * If you've completed a CI build, in the build's **Summary** tab under **Deployments**,
      choose **Create release** followed by **Yes**. This starts a new release pipeline that's automatically linked to the build pipeline.
 
      ![Creating a new release pipeline from the build summary](../media/release-from-build-summary.png)
 
-   * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
+   * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop down
      in the list of release pipelines, and choose **Create release pipeline**.
 
      ![Creating a new release pipeline in the Releases page](../media/release-from-release-page.png)

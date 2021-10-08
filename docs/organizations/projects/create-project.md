@@ -121,7 +121,7 @@ If you don't want to create a project in Azure DevOps, you can create [Azure Dev
    - **Repos**: clone or import a repository, or initialize a *README* file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
    - **Pipelines**: define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
    - **Test Plans**: define test plans and test suites. See [Create test plans and test suites](../../test/create-a-test-plan.md).
-   - **Artifacts**: discover, install, and publish NuGet, npm, and Maven packages. See the [Azure Artifacts overview](../../artifacts/overview.md).
+   - **Artifacts**: discover, install, and publish NuGet, npm, and Maven packages. See the [Azure Artifacts overview](../../artifacts/start-using-azure-artifacts.md).
    - **manage your services**: disable the visibility of services. See [Turn a service on or off](../settings/set-services.md).
 
 ::: moniker-end
@@ -352,17 +352,16 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 
     When you're finished, you can see your project in Team Explorer. You can also choose the **Web Access** link to connect to your project from the web portal.
 
-	<tbody valign="top">
-	</tbody>
-	
-	<table>
-	<tbody valign="top">
-	<tr>
-    <td><img src="media/IC827209.png" alt="Team Explorer Home page w/ TFVC as source control"/></td>
-    <td><img src="media/IC827210.png" alt="Team Explorer Home page with Git as source control"/></td>
-	</tr>
-	</tbody>
-	</table>
+		
+:::row:::
+   :::column span="1":::
+   ![Team Explorer Home page w/ TFVC as source control](media/IC827209.png)
+   :::column-end:::
+   :::column span="1":::
+   ![Team Explorer Home page with Git as source control](media/IC827210.png)
+   :::column-end:::
+:::row-end:::
+
 
 ::: moniker-end
 
