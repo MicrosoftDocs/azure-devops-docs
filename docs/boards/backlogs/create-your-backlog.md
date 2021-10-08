@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 09/07/2021
+ms.date: 10/08/2021
 ---
 
 # Create your product backlog 
@@ -36,6 +36,44 @@ and more. Because the most important work appears at the top of the list, your t
 > Your product backlog is one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). If you're not seeing the work items you expect on your backlog, review [Setup your backlogs and boards](set-up-your-backlog.md).   
 
 
+## Add a backlog
+
+If you have a project, you have a backlog. Each project defines a default team and set of backlogs for that team. You only need to add a backlog when you want to support a new team. When you add a team, you add a number of team assets. A team admin can configure the assets to support the way the team works. To add a set of backlogsto support a new team, see [Add a team](../../organizations/settings/add-teams.md). 
+
+Each team's set of backlogs are associated with one or more work item types depending on the process selected when the project was created, team configurations, and process customizations. The backlogs defined for each default process are:
+
+::: moniker range=">= azure-devops-2019" 
+- [**Agile**](../work-items/guidance/agile-process.md): **Stories**, **Features**, and **Epics**
+- [**Basic**](../get-started/plan-track-work.md): **Issues** and **Epics** 
+- [**Scrum**](../work-items/guidance/scrum-process.md): **Backlog items**, **Features**, and **Epics** 
+- [**CMMI**](../work-items/guidance/cmmi-process.md): **Requirements**, **Features**, and **Epics**
+::: moniker-end 
+
+::: moniker range="< azure-devops-2019" 
+- [**Agile**](../work-items/guidance/agile-process.md): **Stories**, **Features**, and **Epics**
+- [**Scrum**](../work-items/guidance/scrum-process.md): **Backlog items**, **Features**, and **Epics** 
+- [**CMMI**](../work-items/guidance/cmmi-process.md): **Requirements**, **Features**, and **Epics**
+::: moniker-end 
+
+::: moniker range=">= azure-devops-2019" 
+You choose the backlog level from the backlog selector as shown in the following image.  
+
+:::image type="content" source="media/create-backlog/backlog-selector.png" alt-text="Choose backlog level, Backlog items, Stories, or Requirements.":::  
+::: moniker-end 
+
+::: moniker range=">= azure-devops-2019" 
+
+To customize your backlogs to add custom work item types, add portfolio backlogs, or other supported options, see the following articles, depending on the process your project uses: 
+- [Inherited process model](../../organizations/settings/work/inheritance-process-model.md)
+- [On-premises XML process model](../../reference/on-premises-xml-process-model.md) 
+::: moniker-end 
+
+::: moniker range="< azure-devops-2019"
+
+To customize your backlogs to add custom work item types, add portfolio backlogs, or other supported options, see [On-premises XML process model](../../reference/on-premises-xml-process-model.md).
+
+::: moniker-end   
+
 [!INCLUDE [temp](../includes/prerequisites.md)]
 
 ## Open your backlog  
@@ -59,8 +97,7 @@ From your web browser, open your product backlog.
 
 1. Check that you have selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
+	(:::image type="content" source="media/create-backlog/backlog-selector.png" alt-text="Choose backlog level."::: 
 
 2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
