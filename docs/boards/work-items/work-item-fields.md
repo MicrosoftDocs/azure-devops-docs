@@ -8,8 +8,8 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 10/08/2021
 ---
 
 # Work item fields and attributes
@@ -102,12 +102,9 @@ You can look up the data type through the [Work item field index](guidance/work-
 
 ## Field attributes
 
-There are a number of non-changeable and virtually hidden attributes for each work item field. 
-The following table describes each attribute.  
+There are a number of non-changeable and virtually hidden attributes for each work item field. The following table describes each attribute. Attributes have different names based on if you get them through the [**Fields - Get** **REST** API](/rest/api/azure/devops/wit/fields/get) or view through the [Work Item Field Explorer (**WIFE**) tool](#wi-explorer), and the [FieldDefinition Properties](/previous-versions/visualstudio/visual-studio-2013/bb172008(v%3dvs.120)). 
 
-> [!NOTE]   
-> The attribute listed in the first column of the table is supported through the [**Fields - Get** REST API](/rest/api/azure/devops/wit/fields/get) and [**Work Item Types Field** - Get](/rest/api/azure/devops/wit/work-item-types-field/get) commands. The attribute listed in the second column is supported through the Work Item Field Explorer (WIFE) tool, and the [FieldDefinition Properties](/previous-versions/visualstudio/visual-studio-2013/bb172008(v%3dvs.120)). The attributes assigned to a field depend on the platform and version you use. 
-
+Also, attributes assigned to a field depend on the platform and version you use. For example, some attributes aren't support with the Inheritance process. To look up the reference name for a field, see  [Work item field index](guidance/work-item-field.md).
 
 :::row:::
    :::column span="1":::
@@ -227,7 +224,7 @@ The following table describes each attribute.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   REST: **isIdentity**
+   REST: **isIdentity**  
    WIFE: **IsIdentity**
    :::column-end:::
    :::column span="1":::
