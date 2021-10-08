@@ -38,7 +38,7 @@ and more. Because the most important work appears at the top of the list, your t
 
 ## Add a backlog
 
-If you have a project, you have a backlog. Each project defines a default team and set of backlogs for that team. You only need to add a backlog when you want to support a new team. When you add a team, you add a number of team assets. A team admin can configure the assets to support the way the team works. To add a set of backlogsto support a new team, see [Add a team](../../organizations/settings/add-teams.md). 
+If you have a project, you have a backlog. Each project defines a default team and set of backlogs for that team. You only need to add a backlog when you want to support a new team. When you add a team, you add a number of team assets. A team admin can configure the assets to support the way the team works. To add a set of backlogs to support a new team, see [Add a team](../../organizations/settings/add-teams.md). 
 
 Each team's set of backlogs are associated with one or more work item types depending on the process selected when the project was created, team configurations, and process customizations. The backlogs defined for each default process are:
 
@@ -97,7 +97,7 @@ From your web browser, open your product backlog.
 
 1. Check that you have selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
 
-	(:::image type="content" source="media/create-backlog/backlog-selector.png" alt-text="Choose backlog level."::: 
+	:::image type="content" source="media/create-backlog/backlog-selector.png" alt-text="Choose backlog level."::: 
 
 2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
