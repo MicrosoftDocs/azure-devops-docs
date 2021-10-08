@@ -34,7 +34,7 @@ For PR guidelines and management considerations, see [About pull requests](about
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-- You must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../organizations/security/add-users-team-project.md).
+- You must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 - To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
 - To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
@@ -42,7 +42,7 @@ For PR guidelines and management considerations, see [About pull requests](about
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-- You must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../organizations/security/add-users-team-project.md).
+- You must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 - To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
 - To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 ::: moniker-end
@@ -255,7 +255,7 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 
 #### [Azure CLI](#tab/azure-command-line)
 
-### From Azure CLI
+#### From Azure CLI
 
 az repos pr create
 

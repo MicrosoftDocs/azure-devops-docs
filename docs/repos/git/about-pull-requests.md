@@ -10,9 +10,10 @@ author: vijayma
 ms.date: 10/07/2021
 monikerRange: '<= azure-devops'
 ---
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 # About pull requests
+
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 Pull requests (PRs) are a way to change, review, and merge code in a [Git project](../../organizations/projects/create-project.md). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams can use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
@@ -46,8 +47,8 @@ Reviewers should:
 - Provide feedback on changes they don't agree with.
 - Identify issues and give specific suggestions on what to do differently.
 - Make sure the feedback has clear intent and is easy to understand.
-- [Leave comments](#leave-comments).
-- [Vote on the changes](#vote-on-the-changes).
+- [Leave comments](pull-requests.md#leave-comments).
+- [Vote on the changes](pull-requests.md#vote-on-the-changes).
 
 Learn more about how to [get feedback with Git pull requests](/devops/develop/git/git-pull-requests).
 
