@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/04/2021 
+ms.date: 10/08/2021
 ---
 
 # Remove, delete, or restore work items in Azure Boards

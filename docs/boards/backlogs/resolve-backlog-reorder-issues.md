@@ -9,7 +9,7 @@ ms.topic: troubleshooting
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/04/2021
+ms.date: 10/08/2021
 ---
 
 # Fix issues related to displaying, reordering, and nesting work items in Azure Boards 

@@ -1,7 +1,7 @@
 ---
-title: Backlog controls to switch views or enable options
+title: Change or filter the view for your backlogs in Azure Boards
 titleSuffix: Azure Boards 
-description: Switch views and turn controls on or off from your product or portfolio backlogs for Azure Boards or TFS 
+description: Learn how to switch views and enable from your product or portfolio backlogs in Azure Boards.
 ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
 ms.assetid:  
@@ -9,13 +9,11 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 7/09/2020
+ms.date: 10/08/2021
 ---
 
 
-
-
-# Product backlog controls  
+# Use product backlog controls in Azure Boards  
 
 [!INCLUDE [temp](../includes/version-all.md)]
 

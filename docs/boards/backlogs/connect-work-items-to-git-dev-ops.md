@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
-ms.date: 10/04/2021
+ms.date: 10/08/2021
 ---
 
 # Drive Git development from a work item in Azure Boards   

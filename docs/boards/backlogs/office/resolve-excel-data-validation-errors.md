@@ -7,7 +7,7 @@ ms.assetid: 4c72c12f-bd10-48a5-b71c-7c296feec71e
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
-ms.date: 02/22/2017  
+ms.date: 10/08/2021
 ---
 
 # Resolve data validation errors that occur when you publish from Excel

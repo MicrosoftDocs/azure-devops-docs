@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 12/04/2018
+ms.date: 10/08/2021
 ---
 
 # Delete test artifacts in Azure Boards

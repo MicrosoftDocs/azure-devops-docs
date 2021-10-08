@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 10/08/2021
 ---
 
 # Copy a list of stories, issues, or other work items
