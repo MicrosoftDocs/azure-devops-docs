@@ -7,10 +7,10 @@ ms.assetid: f2250e37-5150-4546-81b8-4ec8023046c2
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
-ms.date: 10/04/2021  
+ms.date: 10/08/2021
 ---
 
-# Resolve invalid links in an Excel tree list 
+# Resolve invalid links in an Excel tree list in Azure Boards
 
 [!INCLUDE [temp](../../includes/version-all.md)]
 
