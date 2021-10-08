@@ -2,7 +2,7 @@
 author: gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes
-ms.date: 06/17/2021
+ms.date: 10/8/2021
 ms.topic: include
 ---
 
@@ -17,7 +17,7 @@ Now you can create a multi-stage YAML pipeline to represent your release, and [c
 When you author a YAML pipeline and refer to an environment that does not exist, Azure Pipelines automatically creates the environment. This automatic creation can occur in either the user context or the system context. In the following flows, Azure Pipelines knows about the user performing the operation:
  * You use the YAML pipeline creation wizard in the Azure Pipelines web experience and refer to an environment that hasn't been created yet.
  * You update the YAML file using the Azure Pipelines web editor and save the pipeline after adding a reference to an environment that does not exist.
- * You update the YAML file using another external code editor and then start a new run manually using the Azure Pipelines web interface.
+ 
 In each of the above cases, Azure Pipelines has a clear understanding of the user performing the operation. Hence, it creates the environment and adds the user to the administrator role for the environment. This user has all the permissions to manage the environment and/or to include other users in various roles for managing the environment.
 
 In the following flows, Azure Pipelines does not have information about the user creating the environment: you update the YAML file using another external code editor, add a reference to an environment that does not exist, and then cause a continuous integration pipeline to be triggered. In this case, Azure Pipelines does not know about the user. Previously, we handled this case by adding all the project contributors to the administrator role of the environment. Any member of the project could then change these permissions and prevent others from accessing the environment.

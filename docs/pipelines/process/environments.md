@@ -3,7 +3,7 @@ title: Create target environment
 description: Collection of deployment targets useful for traceability and recording deployment history.
 ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.date: 09/12/2021
+ms.date: 10/08/2021
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -165,15 +165,14 @@ A: These are some of the possible reasons of the failure:
 
    a) When you author a YAML pipeline and refer to an environment that does not exist in the YAML file, Azure Pipelines automatically creates the environment in some cases.
 
-      You use the YAML pipeline creation wizard in the Azure Pipelines web experience and refer to an environment that hasn't been created yet.
-      You update the YAML file using the Azure Pipelines web editor and save the pipeline after adding a reference to an environment that does not exist.
-      You update the YAML file using another external code editor and then start a new run manually using the Azure Pipelines web interface. In each of the above cases, Azure Pipelines has a clear understanding of the user performing the operation. Hence, it creates the environment and adds the user to the administrator role for the environment. This user has all the permissions to manage the environment and/or to include other users in various roles for managing the environment.
+      * You use the YAML pipeline creation wizard in the Azure Pipelines web experience and refer to an environment that hasn't been created yet.
+      * You update the YAML file using the Azure Pipelines web editor and save the pipeline after adding a reference to an environment that does not exist.
 
-      Azure Pipelines does not have information about the user creating the environment if you update the YAML file using another external code editor add a reference to an environment that does not exist and then cause a continuous integration pipeline to be triggered. In this case, Azure Pipelines does not know about the user and hence cannot auto-create the environment.
+   b) In the following flows, Azure Pipelines does not have information about the user creating the environment: you update the YAML file using another external code editor, add a reference to an environment that does not exist, and then cause a manual or continuous integration pipeline to be triggered. In this case, Azure Pipelines does not know about the user. Previously, we handled this case by adding all the project contributors to the administrator role of the environment. Any member of the project could then change these permissions and prevent others from accessing the environment.
+    
+   c) If you are using [runtime parameters](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/runtime-parameters?view=azure-devops&tabs=script) for creating the environment, it will fail as these parameters are expanded at run time. Environment creation happens at compile time, so we have to use [variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/runtime-parameters?view=azure-devops&tabs=script) to create the environment.
 
-   b) If you are using [runtime parameters](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/runtime-parameters?view=azure-devops&tabs=script) for creating the environment, it will fail as these parameters are expanded at run time. Environment creation happens at compile time, so we have to use [variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/runtime-parameters?view=azure-devops&tabs=script) to create the environment.
-
-   c) A user with stakeholder access level cannot create the environment as stakeholders do not access to repository.
+   d) A user with stakeholder access level cannot create the environment as stakeholders do not access to repository.
 
 
 ## Related articles
