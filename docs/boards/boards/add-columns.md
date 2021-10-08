@@ -1,7 +1,7 @@
 ---
 title: Add columns to your Kanban board
 titleSuffix: Azure Boards
-description: Map your Kanban board, support your team's work flow in Azure Boards, Azure DevOps 
+description: Learn how to add columns to your Kanban board. Columns will help support your team's work flow in Azure Boards and Azure DevOps. 
 ms.custom: "boards-kanban, contperf-fy21q3" 
 ms.technology: devops-agile
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
