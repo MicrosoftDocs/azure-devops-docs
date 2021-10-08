@@ -109,235 +109,545 @@ The following table describes each attribute.
 > The attribute listed in the first column of the table is supported through the [**Fields - Get** REST API](/rest/api/azure/devops/wit/fields/get) and [**Work Item Types Field** - Get](/rest/api/azure/devops/wit/work-item-types-field/get) commands. The attribute listed in the second column is supported through the Work Item Field Explorer (WIFE) tool, and the [FieldDefinition Properties](/previous-versions/visualstudio/visual-studio-2013/bb172008(v%3dvs.120)). The attributes assigned to a field depend on the platform and version you use. 
 
 
-<table valign="top">
-<thead>
-<tr>
-<th width="10%"><p>Attribute (REST)</p></th>
-<th width="10%"><p>Attribute (WIFE)</p></th>
-<th width="7%"><p>Attribute type</p></th>
-<th width="60%"><p>Description</p></th>
-<th width="13%"><p>Can change?</p></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-	<td></td>
-	<td>AllowedValues</td>
-	<td>collection</td>
-	<td>Gets the collection of valid values for a field that contains picklist values. You can change this by specifying a picklist or global list (on-premises). </td>
-	<td>Yes</td>
-</tr>
-<tr>
-	<td>canSortBy</td>
-	<td>CanSortBy</td>
-	<td>boolean</td>
-	<td>Indicates whether you can sort query results with this field. </td>
-	<td>No</td>
-</tr>
-<tr>
-	<td>description</td>
-	<td>HelpText</td>
-	<td>string</td>
-	<td>Specifies a description for the field, which also defines the help text that appears when you hover over the field within the work item form.  </td>
-	<td>Yes</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>ID</td>
-	<td>Integer</td>
-	<td>Specifies the internal ID of the field. </td>
-	<td>No</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>IsCloneable </td>
-	<td>boolean</td>
-    <td>Indicates whether the value defined for the field is copied when a user chooses to copy a work item. For example, the work item Title, Tags, and Description are copied, but the ID and History fields aren&#39;t copied. </td>
-	<td>No</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>IsComputed </td>
-	<td>boolean</td>
-	<td>Indicates if the value set by this field is computed by the system (True) or not (False). Examples of computed fields are ones that are set by the system, such as the ID, Revised Date, Changed Date, and External Link Count. </td>
-	<td>No</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>IsCoreField</td>
-	<td>boolean</td>
-	<td>Indicates whether this field is specified for all work item types. </td>
-	<td>No</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>IsEditable</td>
-	<td>boolean</td>
-	<td>Indicates if users can modify this field (True) or not (False). Examples of non-editable fields are ones that are set by the system, such as the ID, Revision, Created By, and Changed By fields</td>
-	<td>No</td>
-</tr>
-<tr>
-	<td>isIdentity</td>
-	<td>IsIdentity </td>
-	<td>boolean</td>
-	<td>Indicates whether this field is an Identity field. Identity fields are string fields used to store user identities. </td>
-	<td>No</td>
-</tr>
-<tr>
-	<td>  </td>
-	<td>IsIndexed<sup>1</sup> </td>
-	<td>boolean</td>
-	<td>Indicates whether this field is indexed to support search.</td>
-	<td>No</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>IsLongText </td>
-	<td>boolean</td>
-	<td>Indicates that the field can contain more than 255 characters, such as fields assigned a data type of PlainText, HTML, or History.</td>
-	<td>No</td>
-</tr> 
-<tr>
-	<td>isPicklist<sup>2</sup></td>
-	<td> </td>
-	<td>boolean</td>
-	<td>Indicates whether the field is associated with a picklist. The value is set to True when a custom field is defined for Azure DevOps Services and Picklist (String) or Picklist (Integer) type is selected. The value is set to False for inherited fields that define picklists.  </td>
-	<td>No</td>
-</tr>
-<tr>
-	<td>isPicklistSuggested<sup>2</sup></td>
-	<td> </td>
-	<td> </td>
-    <td>Indicates whether the field allows users to enter their own values for a picklist. The value is set to True when a custom field is defined for Azure DevOps Services, Picklist (String) or Picklist (Integer) type is selected, and the checkbox for <strong>Allow users to set their own values</strong> is checked.</td>
-	<td>Yes</td>
-</tr>
-<tr>
-	<td>isQueryable</td>
-	<td>IsQueryable</td>
-	<td>boolean</td>
-	<td>Indicates if the field shows up within the set of fields you can add to filter a query (True) or not (False). Most fields are queryable. </td>
-	<td>No</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>IsReportable <sup>3</sup></td>
-	<td>boolean</td>
-    <td>Indicates if the reportable attribute is defined or set to anything other than <strong>None</strong>. </td>
-	<td>Yes</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>IsUsedInGlobalWorkflow</td>
-	<td>boolean</td>
-    <td>Indicates if the field is defined within a <a href="../../reference/xml/global-workflow-xml-element-reference.md" data-raw-source="[global workflow](../../reference/xml/global-workflow-xml-element-reference.md)">global workflow</a>. </td>
-	<td>No</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>IsUserNameField</td>
-	<td>boolean</td>
-	<td>Indicates if the field is used to display an Identity field. </td>
-	<td>No</td>
-</tr>
-<tr>
-	<td>name</td>
-	<td>Name</td>
-	<td>string</td>
-    <td>Friendly name assigned to the field. The friendly name can&#39;t be changed for Azure DevOps Services, but can be changed for on-premises using the <strong>witadmin changefield</strong> command. </td>
-	<td>On-prem only</td>
-</tr>
-<tr>
-	<td>picklistId</td>
-	<td></td>
-	<td> </td>
-	<td>If the field is a picklist, the identifier of the associated picklist, otherwise null. A unique GUID value is assigned when a custom field is defined for Azure DevOps Services and Picklist (String) or Picklist (Integer) type is selected.</td>
-	<td>No</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>ProhibitedValues</td>
-	<td>collection</td>
-	<td>Gets the collection of prohibited values for a field that specifies such values. You can only define prohibited values for on-premises deployments.</td>
-	<td>On-prem only</td>
-</tr>
-<tr>
-	<td>readOnly</td>
-	<td> </td>
-	<td>boolean</td>
-	<td>Indicates whether the field is set to read only. For Azure Cloud Services, only custom fields can be changed to be read only. System fields cannot be modified. </td>
-	<td>Yes</td>
-</tr>
-<tr>
-	<td>referenceName</td>
-	<td>ReferenceName</td>
-	<td>string</td>
-	<td>Specifies the reference name of the field definition.</td>
-	<td>No</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>ReportingAttributes<sup>3</sup></td>
-	<td> </td>
-    <td>Specifies <strong>Detail</strong>, <strong>Dimension</strong>, or <strong>Measure</strong>, depending on whether and how you want the field to be included in reports. Data from fields that have a value other than <strong>None</strong> for this attribute are exported to the data warehouse and can be included in reports.</td>
-	<td>On-prem only</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>ReportingName<sup>3</sup></td>
-	<td>string</td>
-    <td>Specifies the label for a field when data appears in reports. If you do not specify a value, the field&#39;s friendly name is used.</td>
-	<td>On-prem only</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>ReportingReferenceName<sup>3</sup></td>
-	<td>string</td>
-	<td>Specifies a different reference name to a field that is used when data is exported to the relational data warehouse. If you do not specify a value, the fields reference name is used.  </td>
-	<td>On-prem only</td>
-</tr>
-<tr>
-	<td>supportedOperations</td>
-	<td> </td>
-    <td><em>set</em></td>
-    <td>The set of query operators that are valid for use when referencing this field. For a quick reference of supported operations based on data type, see <a href="../queries/query-index-quick-ref.md#fields-operators-macros" data-raw-source="[Query quick reference, Operators and macros supported for each data type](../queries/query-index-quick-ref.md#fields-operators-macros)">Query quick reference, Operators and macros supported for each data type</a>.</td>
-	<td>No</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>SupportsTextQuery</td>
-	<td>boolean</td>
-    <td>Indicates whether the field supports text queries such as <strong>Contains Words</strong>, <strong>Does Not Contains Words</strong>. </td>
-	<td>No</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>SystemType</td>
-	<td>string</td>
-	<td>Specifies the data type of the field, referencing the system name such as System.DateTime, System.String, and so on.</td>
-	<td>No</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>FieldType</td>
-	<td>string</td>
-    <td>Specifies the data type of the field, such as Boolean, DateTime, Integer, String, and so on. For a complete list and descriptions, see <a href="../queries/query-operators-variables.md" data-raw-source="[Query fields, operators, and macros](../queries/query-operators-variables.md)">Query fields, operators, and macros</a></td>
-	<td>No</td>
-</tr>
-<tr>
-	<td>usage</td>
-	<td>Usage</td>
-	<td>string</td>
-    <td>Specifies whether the field is intended for use with work items (WorkItem) or work item link (WorkItemLink) objects. The usage for most fields is WorkItem. For a complete list of usage values, see <a href="/rest/api/azure/devops/wit/fields/get#fieldusage" data-raw-source="[Get Fields, FieldUsage](/rest/api/azure/devops/wit/fields/get#fieldusage)">Get Fields, FieldUsage</a></td>
-	<td>No</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Attribute (REST)**
 
-**Notes:**
+   :::column-end:::
+   :::column span="1":::
+   **Attribute (WIFE)**
 
-1. For on-premises deployments, you can enable indexing for a field to improve query response times when filtering on the field. For more information, see [Indexed fields](#index-fields) later in this article. 
-2. The **isPicklist** and **isPicklistSuggested** attributes are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
-3. All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. 
+   :::column-end:::
+   :::column span="1":::
+   **Attribute type**
+
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+
+   :::column-end:::
+   :::column span="1":::
+   **Can change?**
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   
+   :::column-end:::
+   :::column span="1":::
+   AllowedValues
+   :::column-end:::
+   :::column span="1":::
+   collection
+   :::column-end:::
+   :::column span="1":::
+   Gets the collection of valid values for a field that contains picklist values. You can change this by specifying a picklist or global list (on-premises). 
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   canSortBy
+   :::column-end:::
+   :::column span="1":::
+   CanSortBy
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates whether you can sort query results with this field. 
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   description
+   :::column-end:::
+   :::column span="1":::
+   HelpText
+   :::column-end:::
+   :::column span="1":::
+   string
+   :::column-end:::
+   :::column span="1":::
+   Specifies a description for the field, which also defines the help text that appears when you hover over the field within the work item form.  
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ID
+   :::column-end:::
+   :::column span="1":::
+   Integer
+   :::column-end:::
+   :::column span="1":::
+   Specifies the internal ID of the field. 
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   IsCloneable 
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates whether the value defined for the field is copied when a user chooses to copy a work item. For example, the work item Title, Tags, and Description are copied, but the ID and History fields aren&#39;t copied. 
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   IsComputed 
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates if the value set by this field is computed by the system (True) or not (False). Examples of computed fields are ones that are set by the system, such as the ID, Revised Date, Changed Date, and External Link Count. 
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   IsCoreField
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates whether this field is specified for all work item types. 
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   IsEditable
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates if users can modify this field (True) or not (False). Examples of non-editable fields are ones that are set by the system, such as the ID, Revision, Created By, and Changed By fields
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   isIdentity
+   :::column-end:::
+   :::column span="1":::
+   IsIdentity 
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates whether this field is an Identity field. Identity fields are string fields used to store user identities. 
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="1":::
+   IsIndexed<sup>1</sup> 
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates whether this field is indexed to support search.
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   IsLongText 
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates that the field can contain more than 255 characters, such as fields assigned a data type of PlainText, HTML, or History.
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end::: 
+:::row:::
+   :::column span="1":::
+   isPicklist<sup>2</sup>
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates whether the field is associated with a picklist. The value is set to True when a custom field is defined for Azure DevOps Services and Picklist (String) or Picklist (Integer) type is selected. The value is set to False for inherited fields that define picklists.  
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   isPicklistSuggested<sup>2</sup>
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   Indicates whether the field allows users to enter their own values for a picklist. The value is set to True when a custom field is defined for Azure DevOps Services, Picklist (String) or Picklist (Integer) type is selected, and the checkbox for **Allow users to set their own values** is checked.
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   isQueryable
+   :::column-end:::
+   :::column span="1":::
+   IsQueryable
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates if the field shows up within the set of fields you can add to filter a query (True) or not (False). Most fields are queryable. 
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   IsReportable <sup>3</sup>
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates if the reportable attribute is defined or set to anything other than **None**. 
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   IsUsedInGlobalWorkflow
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates if the field is defined within a [global workflow](../../reference/xml/global-workflow-xml-element-reference.md). 
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   IsUserNameField
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates if the field is used to display an Identity field. 
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   name
+   :::column-end:::
+   :::column span="1":::
+   Name
+   :::column-end:::
+   :::column span="1":::
+   string
+   :::column-end:::
+   :::column span="1":::
+   Friendly name assigned to the field. The friendly name can&#39;t be changed for Azure DevOps Services, but can be changed for on-premises using the **witadmin changefield** command. 
+   :::column-end:::
+   :::column span="1":::
+   On-prem only
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   picklistId
+   :::column-end:::
+   :::column span="1":::
+   
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   If the field is a picklist, the identifier of the associated picklist, otherwise null. A unique GUID value is assigned when a custom field is defined for Azure DevOps Services and Picklist (String) or Picklist (Integer) type is selected.
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ProhibitedValues
+   :::column-end:::
+   :::column span="1":::
+   collection
+   :::column-end:::
+   :::column span="1":::
+   Gets the collection of prohibited values for a field that specifies such values. You can only define prohibited values for on-premises deployments.
+   :::column-end:::
+   :::column span="1":::
+   On-prem only
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   readOnly
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates whether the field is set to read only. For Azure Cloud Services, only custom fields can be changed to be read only. System fields cannot be modified. 
+   :::column-end:::
+   :::column span="1":::
+   Yes
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   referenceName
+   :::column-end:::
+   :::column span="1":::
+   ReferenceName
+   :::column-end:::
+   :::column span="1":::
+   string
+   :::column-end:::
+   :::column span="1":::
+   Specifies the reference name of the field definition.
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ReportingAttributes<sup>3</sup>
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   Specifies **Detail**, **Dimension**, or **Measure**, depending on whether and how you want the field to be included in reports. Data from fields that have a value other than **None** for this attribute are exported to the data warehouse and can be included in reports.
+   :::column-end:::
+   :::column span="1":::
+   On-prem only
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ReportingName<sup>3</sup>
+   :::column-end:::
+   :::column span="1":::
+   string
+   :::column-end:::
+   :::column span="1":::
+   Specifies the label for a field when data appears in reports. If you do not specify a value, the field&#39;s friendly name is used.
+   :::column-end:::
+   :::column span="1":::
+   On-prem only
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   ReportingReferenceName<sup>3</sup>
+   :::column-end:::
+   :::column span="1":::
+   string
+   :::column-end:::
+   :::column span="1":::
+   Specifies a different reference name to a field that is used when data is exported to the relational data warehouse. If you do not specify a value, the fields reference name is used.  
+   :::column-end:::
+   :::column span="1":::
+   On-prem only
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   supportedOperations
+   :::column-end:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   *set*
+   :::column-end:::
+   :::column span="1":::
+   The set of query operators that are valid for use when referencing this field. For a quick reference of supported operations based on data type, see [Query quick reference, Operators and macros supported for each data type](../queries/query-index-quick-ref.md#fields-operators-macros).
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   SupportsTextQuery
+   :::column-end:::
+   :::column span="1":::
+   boolean
+   :::column-end:::
+   :::column span="1":::
+   Indicates whether the field supports text queries such as **Contains Words**, **Does Not Contains Words**. 
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="1":::
+   SystemType
+   :::column-end:::
+   :::column span="1":::
+   string
+   :::column-end:::
+   :::column span="1":::
+   Specifies the data type of the field, referencing the system name such as System.DateTime, System.String, and so on.
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   type
+   :::column-end:::
+   :::column span="1":::
+   FieldType
+   :::column-end:::
+   :::column span="1":::
+   string
+   :::column-end:::
+   :::column span="1":::
+   Specifies the data type of the field, such as Boolean, DateTime, Integer, String, and so on. For a complete list and descriptions, see [Query fields, operators, and macros](../queries/query-operators-variables.md)
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   usage
+   :::column-end:::
+   :::column span="1":::
+   Usage
+   :::column-end:::
+   :::column span="1":::
+   string
+   :::column-end:::
+   :::column span="1":::
+   Specifies whether the field is intended for use with work items (WorkItem) or work item link (WorkItemLink) objects. The usage for most fields is WorkItem. For a complete list of usage values, see [Get Fields, FieldUsage](/rest/api/azure/devops/wit/fields/get#fieldusage)
+   :::column-end:::
+   :::column span="1":::
+   No
+   :::column-end:::
+:::row-end:::
+
+
+> [!NOTE]  
+> 1. For on-premises deployments, you can enable indexing for a field to improve query response times when filtering on the field. For more information, see [Indexed fields](#index-fields) later in this article. 
+> 2. The **isPicklist** and **isPicklistSuggested** attributes are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
+> 3. All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. 
 
 ::: moniker range="< azure-devops"
 
@@ -610,43 +920,93 @@ You can change the field name, the index, and the report attributes for any fiel
 
 <!--- 
 
-<tr>
-	<td>  </td>
-	<td>IsInternal </td>
-	<td>boolean</td>
-	<td>It appears that all fields are set to False.</td>
-	<td>No</td>
-</tr>
+:::row:::
+   :::column span="1":::
+     
+   :::column-end:::
+   :::column span="3":::
+   IsInternal 
+   :::column-end:::
+   :::column span="3":::
+   boolean
+   :::column-end:::
+   :::column span="3":::
+   It appears that all fields are set to False.
+   :::column-end:::
+   :::column span="3":::
+   No
+   :::column-end:::
+:::row-end:::
 
-<tr>
-	<td> </td>
-	<td>IsUsedInWorkItemType</td>
-	<td>boolean</td>
-	<td>TBD. </td>
-	<td>No</td>
-</tr>
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="3":::
+   IsUsedInWorkItemType
+   :::column-end:::
+   :::column span="3":::
+   boolean
+   :::column-end:::
+   :::column span="3":::
+   TBD. 
+   :::column-end:::
+   :::column span="3":::
+   No
+   :::column-end:::
+:::row-end:::
 
-<tr>
-	<td> </td>
-	<td>PsFieldType</td>
-	<td> </td>
-	<td>Specifies the  </td>
-	<td>No</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>PsReportingFormula</td>
-	<td> </td>
-	<td>Specifies the  </td>
-	<td>No</td>
-</tr>
-<tr>
-	<td> </td>
-	<td>PsReportingType</td>
-	<td> </td>
-	<td>Specifies the  </td>
-	<td>No</td>
-</tr>
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="3":::
+   PsFieldType
+   :::column-end:::
+   :::column span="3":::
+    
+   :::column-end:::
+   :::column span="3":::
+   Specifies the  
+   :::column-end:::
+   :::column span="3":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="3":::
+   PsReportingFormula
+   :::column-end:::
+   :::column span="3":::
+    
+   :::column-end:::
+   :::column span="3":::
+   Specifies the  
+   :::column-end:::
+   :::column span="3":::
+   No
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    
+   :::column-end:::
+   :::column span="3":::
+   PsReportingType
+   :::column-end:::
+   :::column span="3":::
+    
+   :::column-end:::
+   :::column span="3":::
+   Specifies the  
+   :::column-end:::
+   :::column span="3":::
+   No
+   :::column-end:::
+:::row-end:::
 
 
 -->

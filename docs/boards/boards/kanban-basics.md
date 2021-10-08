@@ -52,20 +52,19 @@ Kanban literally means signboard or billboard. As a first step, you customize yo
 When you first open your Kanban board, you'll see one column for each [workflow state](../work-items/guidance/choose-process.md#workflow-states). Your actual columns vary based on the [process](../work-items/guidance/choose-process.md) used to create your project.
 
 For user stories, the New, Active, Resolved, and Closed states track progress from idea to completion.
-<table>
-<tbody>
-<tr valign="top">
-<td>
-<img src="media/ALM_KB_Workflow.png" alt="User story workflow states"/>
+:::row:::
+   :::column span="1":::
+   
+   ![User story workflow states](media/ALM_KB_Workflow.png)
 
-</td>
-<td>
-<img src="media/ALM_KB_Empty.png" alt="Default kanban board, Agile template"/>
+   :::column-end:::
+   :::column span="2":::
+   
+   ![Default kanban board, Agile template](media/ALM_KB_Empty.png)
 
-</td>
-</tr>
-</tbody>
-</table>
+   :::column-end:::
+:::row-end:::
+
 
 However, your team's workflow stages most likely don't map to these default states. For your team to have a functional board they must identify the stages of their workflow process and then configure the board to match.
 
@@ -95,7 +94,7 @@ Once you&#39;ve configured your Kanban board to match how your team works, you&#
 
 Here are a few things you can do. See at a glance the estimated size of work for each item which displays at the bottom right of each card. Add items to your backlog in the first column. When priorities change, move items up and down within a column. And, as work completes in one stage, update the status of an item by moving it to a downstream stage.
 
-<img src="media/ALM_CC_MoveCard.png" alt="Kanban board, move a card to update status" />   
+![Kanban board, move a card to update status](media/ALM_CC_MoveCard.png)
 
 ::: moniker range="tfs-2015"
 
@@ -108,7 +107,7 @@ Here are a few things you can do. See at a glance the estimated size of work for
 
 Also, you can quickly update a field or reassign ownership directly from the board.
 
-<img src="media/ALM_CC_UpdateFieldOnCard.png" alt="Kanban, assign items" />   
+![Kanban, assign items](media/ALM_CC_UpdateFieldOnCard.png)
 
 ::: moniker-end
 
@@ -146,11 +145,11 @@ The selections you make are only set for you, and persist across sessions until 
 
 Choose the chart as shown in the following image. 
 
-<img src="media/kanban-basics-open-cfd.png" alt="Open the cumulative flow diagram" />   
+![Open the cumulative flow diagram](media/kanban-basics-open-cfd.png)
 
 The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement from the time it was first proposed.  
 
-<img src="media/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" />   
+![Kanban board, cumulative flow diagram](media/ALM_KB_CumulativeFlow.png)
 
 ::: moniker-end
 
