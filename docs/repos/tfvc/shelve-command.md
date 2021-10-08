@@ -35,6 +35,8 @@ tf shelve /delete shelvesetname[;owner] [/login:username,[password]] [/collectio
 
 ## Parameters
 
+### Argument
+
 |        **Argument**        |                                                                                                                                                             **Description**                                                                                                                                                             |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |       *commentfile*        |                                                                                                                      Specifies a file system path of a file from which comments for the shelveset should be read.                                                                                                                       |
@@ -44,6 +46,9 @@ tf shelve /delete shelvesetname[;owner] [/login:username,[password]] [/collectio
 |          *owner*           |                                                                                  Identifies the current or intended owner of the shelveset by user name. By default, the current user is assigned ownership of the shelveset if one is not specified.                                                                                   |
 |         *username*         |                                                                                                        Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                                                                                        |
 | *TeamProjectCollectionUrl* |                                                                                       The URL of the project collection that contains the files or folders that you want to shelve (for example, `http://myserver:8080/tfs/DefaultCollection/`).                                                                                        |
+
+
+### Option
 
 | **Option** | **Description** |
 |---|---|

@@ -89,7 +89,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/logo_uwp.png":::
-        [UWP](../apps/windows/universal.md)
+        [UWP](/previous-versions/azure/devops/pipelines/apps/windows/universal)
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/logo_xamarin.png":::
@@ -165,7 +165,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
 :::row:::
     :::column:::
         :::image type="icon" source="./media/index/logo_uwp.png":::
-        [UWP](../apps/windows/universal.md)
+        [UWP](/previous-versions/azure/devops/pipelines/apps/windows/universal)
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/logo_xamarin.png":::
@@ -300,4 +300,3 @@ Build and deploy your apps. Find guidance based on your language and platform.
 :::row-end:::
 
 ::: moniker-end
-

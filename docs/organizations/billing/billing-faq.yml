@@ -70,7 +70,13 @@ sections:
           What's the difference between daily pro-rated charges instead of monthly committed purchases?
         answer: |
           As part of the change to user assignment-based billing, we've also switched from monthly to daily billing. When you give a user paid access for a few weeks, or even a few days, you pay only for the time they got assigned to the paid access, rather than for a full month. As we switch your organization from monthly to daily billing, your next Azure bill is likely lower than it was previously. The next month is back to normal once a full month of daily charges has accumulated.
-          
+
+      - question: |
+          Does daily pro-rated charges apply to other purchases also?
+        answer: |
+          Pro-rated charges apply to all purchases including pipelines (self-hosted and MS hosted) and artifacts storage. For example, if you purchased 5 MS hosted pipelines on the 20th of the month, then the charges for that month for pipelines will be pro-rated. In this case you will be charged approximately 1/3rd of the monthly cost of 5 hosted pipelines.
+
+
       - question: |
           How did paid extensions change in the Azure DevOps Marketplace in July 2019?
         answer: |
@@ -203,8 +209,12 @@ sections:
       - question: |
           Can tags be applied to organizations from the Azure portal?
         answer: |
-          No, but this feature is in our backlog to add in the future.
-
+          Yes. You can do that by selecting the Azure subscription that is linked to the desired Azure DevOps organization, locate the organization under Settings > Resources.
+          :::image type="content" source="media/billing-faq/organization-under-subscription.png" alt-text="Screenshot of locating your organization":::
+          
+          Select the desired organization from list and apply tags by selecting the action **Assign tags**. The tags you assign will appear in your Azure bill for the charges associated with the selected Azure DevOps organization.
+          :::image type="content" source="media/billing-faq/apply-billing-tag-on-organization.png" alt-text="Screenshot of applying tags":::
+          
           ## Understanding your bill
           
           Azure DevOps charges appear with other Azure charges on your [Azure bill](/azure/cost-management-billing/understand/review-individual-bill). This section helps you with understanding how to drill into your Azure DevOps specific charges.

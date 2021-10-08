@@ -1,7 +1,7 @@
 ---
 title: Pipeline duration sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to guide to generate a pipeline duration Power BI report  
+description: How-to generate a pipeline duration Power BI report  
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: kaghai
@@ -9,7 +9,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'     
-ms.date: 12/18/2020
+ms.date: 09/21/2021
 ---
 
 # Pipeline duration sample report 
@@ -84,48 +84,103 @@ $apply=filter(
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
-<td>Return pipeline runs for the specified pipeline</td>
-<tr>
-<tr>
-<td><code>and CompletedDate ge {startdate}</code></td>
-<td>Return pipeline runs on or after the specified date</td>
-<tr>
-<tr>
-<td><code>and (SucceededCount eq 1 or PartiallySucceededCount eq 1)</code></td>
-<td>Return only the successful or partially successful runs</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close filter()</td>
-<tr>
-<tr><td><code>/compute(</code></td>
-<td>Start compute()</td>
-<tr>
-<tr><td><code>percentile_cont(TotalDurationSeconds, 0.5) as Duration50thPercentileInSeconds,</code></td>
-<td>Compute 50th percentile of Pipeline durations of all pipeline runs that match the filter criteria/td>
-<tr>
-<tr><td><code>percentile_cont(TotalDurationSeconds, 0.8) as Duration80thPercentileInSeconds,</code></td>
-<td>Compute 80th percentile of Pipeline durations of all pipeline runs that match the filter criteria</td>
-<tr>
-<tr><td><code>percentile_cont(TotalDurationSeconds, 0.95) as Duration95thPercentileInSeconds)</code></td>
-<td>Compute 95th percentile of Pipeline durations of all pipeline runs that match the filter criteria</td>
-<tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds))</code></td>
-<td>Group the response by - Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds</td>
-<tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelinename}'`
+   :::column-end:::
+   :::column span="1":::
+   Return pipeline runs for the specified pipeline
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and CompletedDate ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return pipeline runs on or after the specified date
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and (SucceededCount eq 1 or PartiallySucceededCount eq 1)`
+   :::column-end:::
+   :::column span="1":::
+   Return only the successful or partially successful runs
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/compute(`
+   :::column-end:::
+   :::column span="1":::
+   Start compute()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `percentile_cont(TotalDurationSeconds, 0.5) as Duration50thPercentileInSeconds,`
+   :::column-end:::
+   :::column span="1":::
+   Compute 50th percentile of Pipeline durations of all pipeline runs that match the filter criteria/td>
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `percentile_cont(TotalDurationSeconds, 0.8) as Duration80thPercentileInSeconds,`
+   :::column-end:::
+   :::column span="1":::
+   Compute 80th percentile of Pipeline durations of all pipeline runs that match the filter criteria
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `percentile_cont(TotalDurationSeconds, 0.95) as Duration95thPercentileInSeconds)`
+   :::column-end:::
+   :::column span="1":::
+   Compute 95th percentile of Pipeline durations of all pipeline runs that match the filter criteria
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `/groupby(`
+   :::column-end:::
+   :::column span="1":::
+   Start groupby()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds))`
+   :::column-end:::
+   :::column span="1":::
+   Group the response by - Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds
+   :::column-end:::
+:::row-end:::
 
+[!INCLUDE [temp](includes/query-filters-pipelines.md)]
 
 ## Power BI transforms
 

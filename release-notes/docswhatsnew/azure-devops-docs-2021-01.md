@@ -192,7 +192,6 @@ The following people contributed to the Azure DevOps docs during this period. Th
 - [qsharker](https://github.com/qsharker) - Adam (1)
 - [rackley096794](https://github.com/rackley096794) - Ray Ackley (1)
 - [SeanKilleen](https://github.com/SeanKilleen) - Sean Killeen (1)
-- [TeeVenDick](https://github.com/TeeVenDick) (1)
 - [tevoinea](https://github.com/tevoinea) - Teo Voinea (1)
 - [theClueless](https://github.com/theClueless) (1)
 - [v-nealva](https://github.com/v-nealva) (1)

@@ -116,7 +116,7 @@ Complete the following steps to recreate your SSH keys.
 
    ![Add info to create SSH key](media/shared/add-ssh-public-key-info.png)
 
-4. Cope your token, as it can't be viewed again.
+4. Copy your token, as it can't be viewed again.
 
 ### Rename your MSA
 

@@ -1,5 +1,5 @@
 ---
-title: Manage how long to keep test results
+title: Set test retention policies
 description: Manage how long Azure DevOps keeps your manual test results by clearing test results that you do not need anymore or when you delete your builds
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.technology: devops-test
@@ -10,7 +10,7 @@ ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
 
-# Control how long to keep test results
+# Set test retention policies
 
 [!INCLUDE [version-header](includes/version-header.md)]
 
@@ -21,10 +21,14 @@ Delete automated test results when you delete your builds.
 You can keep manual test results while you're still reviewing them, 
 for example, up to a year. 
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
-
+## Prerequisites
+  
+- To manage project-level test-related policies, you must be a member of the [**Project Administrators** security group](../organizations/security/set-project-collection-level-permissions.md). 
+- To manage build pipeline object-level test retention policies, you must have the **Edit build pipeline** permissions set to **Allow**. 
+  
 <a name="manual-test-results-limits"></a> 
-## Manual test results 
+
+## Set retention period for test results
 
 To delete manual test results after a specific number of days, 
 set the retention limit at the project level. 
@@ -36,13 +40,11 @@ your test results before you can analyze the data.
 
 1. Go to your project and then open the [project settings page](../project/navigation/go-to-service-page.md#open-project-settings).
   
-1. In the **Test | Retention** page, select a limit for how long you want to keep manual test data. 
+1. In the **Test>Retention** page, select a limit for how long you want to keep manual test data. 
 
    ![Select test data retention limits](media/how-long-to-keep-test-results/team-project-test-data-retention-limits.png)
 
-## Automated test results 
-
-### Automated test results associated with builds
+## Set retention policy for automated test results associated with builds
 
 By default, Azure DevOps keeps automated test results related to builds 
 only as long as you keep those builds. To keep test results after you delete your builds, 
@@ -63,16 +65,16 @@ you can specify how long to keep automated test results based on the branch.
    set the branch filter to delete test results and builds
    in specific branches as required. You can keep test results in other branches, 
    even though you delete the builds in these branches.  
-
-### Automated test results not associated with builds or orphaned from deleted builds
-
+ 
+## Set retention policy for automated test results not associated with builds
 To clean up automated test results that are left over from deleted 
 builds or test results that aren't related to builds, 
 for example, results published from external test systems, 
-set the retention limits at the project level as shown [here](#manual-test-results-limits).
+set the retention limits at the project level as described in [Set retention period for test results](#manual-test-results-limits) earlier in this article.
 
-## See also
+## Related articles
 
-*  [FAQs for manual testing](reference-qa.md#manageresults)
+- [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
+- [FAQs for manual testing](reference-qa.md#manageresults)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 

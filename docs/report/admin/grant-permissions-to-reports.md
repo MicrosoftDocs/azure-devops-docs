@@ -1,21 +1,21 @@
 ---
 title: Grant permissions to view or create reports 
-titleSuffix: TFS
-description: Grant permissions to view or create SQL Server reports configured to support Team Foundation Server
+titleSuffix: Azure DevOps Server
+description: Learn how to grant permissions to view or create SQL Server reports configured to support Azure DevOps Server.
 ms.assetid: FBE3ECC1-51A0-43EC-9923-B7C4FC78E333  
 ms.technology: devops-analytics
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< azure-devops' 
-ms.date: 11/19/2018
+ms.date: 09/23/2021
 ---
 
-# Grant permissions to view or create SQL Server reports in TFS
+# Grant permissions to view or create SQL Server reports in Azure DevOps Server
 
 [!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
-This is the third task in the four-task sequence to add reports to your team project. You can use the procedures in this article to set permissions to view or author reports.  
+Here's the third task in the four-task sequence to add reports to your team project. You can use the procedures in this article to set permissions to view or author reports.  
 
 [![Add a report server](media/step-1-add-a-report-server.png)](add-a-report-server.md)
 [![Upload reports](media/step-2-upload-reports.png)](upload-reports.md)
@@ -54,7 +54,8 @@ Add report viewers to the **Browser** role. Add TFS report authors to the **Team
  ![Assign user to a role in Report Manager](media/IC665040.png)
 
 ## Add report authors to database roles
-If members need to create or customize reports, add their accounts to the **TfsWarehouseDataReader** role. Report authors need read access to both the relational data warehouse and Analysis Services cube. Team members who create Excel reports from work item queries or by connecting to the cube need only read access to the cube. 
+
+If members need to create or customize reports, add their accounts to the **TfsWarehouseDataReader** role. Report authors need read access to both the relational data warehouse and Analysis Services cube. Team members who create Excel reports from work item queries or by connecting to the cube only need read access to the cube. 
 
 1. If you aren't an administrator for the TFS database, [get added as one](/azure/devops/server/admin/add-administrator). 
 
@@ -86,7 +87,7 @@ If members need to create or customize reports, add their accounts to the **TfsW
 > Accounts that you add to the **TfsWarehouseDataReader** roles can view data for all team projects that are hosted in all team project collections in the TFS deployment. There is no way to limit access to a team project or collection.  
 
 
-## Try this next
+## Next step
  
 - [Review team activities to support useful reports](review-team-activities-for-useful-reports.md).
 

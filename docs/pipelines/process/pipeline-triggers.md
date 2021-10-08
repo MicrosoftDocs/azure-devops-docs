@@ -34,8 +34,9 @@ The following example has two pipelines - `app-ci` (the pipeline defined by the 
 # this is being defined in app-ci pipeline
 resources:
   pipelines:
-  - pipeline: securitylib   # Name of the pipeline resource
-    source: security-lib-ci # Name of the pipeline referenced by the pipeline resource
+  - pipeline: securitylib   # Internal name of the source pipeline, used elsewhere within app-ci YAML 
+                            # e.g. to reference published artifacts
+    source: security-lib-ci # Azure Pipelines name of the source pipeline referenced
     project: FabrikamProject # Required only if the source pipeline is in another project
     trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
 ```
@@ -112,7 +113,7 @@ resources:
     source: Farbrikam-CI  
     trigger:    
       stages:         # This stage filter is used when evaluating conditions for 
-      - PreProduction # triggering your pipeine. On successful completion of all the stages
+      - PreProduction # triggering your pipeline. On successful completion of all the stages
       - Production    # provided, your pipeline will be triggered. 
 ```
 

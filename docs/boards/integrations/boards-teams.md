@@ -45,8 +45,8 @@ Read this article to learn how to:
 ## Prerequisites
 
 - To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md). 
-- To create subscriptions in a Teams channel for work item events, you must be a member of the Azure Boards Project Administrators group or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
-- To receive notifications, you must enable the **Third-party application access via OAuth** setting for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
+- To create subscriptions in a Teams channel for work item events, you must be a member of the Azure Boards Project Administrators group or or added to the team administrator role for the team. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add team administrator](../../organizations/settings/add-team-administrator.md). 
+- To receive notifications, you must enable the **Third-party application access via OAuth** setting for the Azure DevOps organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 
 > [!NOTE]
 > * You can link the Azure Boards app for Microsoft Teams only to a project hosted on Azure DevOps Services at this time.  
@@ -157,7 +157,7 @@ This command lists all the current subscriptions for the channel and allows you 
 
 ## Search and share work items using compose extension
 
-To help users search and share work items, the Azure Boards app for Microsoft Teams supports compose extension. You can search for work items by work item ID or by title. For compose extension to work, users must sign in to Azure Boards app either by running `@azure boards signin` command or by signing into the compose extension directly.
+To help users search and share work items, the Azure Boards app for Microsoft Teams supports compose extension. You can search for work items by work item ID, title, or supported functional command. For a list of commands, see [Functional work item search](../../project/search/functional-work-item-search.md). To use the compose extension, users must sign in to Azure Boards app either by running `@azure boards signin` command or by signing into the compose extension directly.
 
 ![Signing into the compose extension.](./media/integrations-teams/teams-boards-compose-extension.png)
 
@@ -225,82 +225,128 @@ The following table lists all the `@azure boards` commands you can use in your M
 
 In your organization if you are using a different email or tenant for Microsoft Teams and Azure DevOps, perform the following steps to sign in and connect based on your use case. 
  
- <table>
-  <tr>
-   <td>
-       <strong>Case</strong>
-   </td>
-   <td>
-        <strong>Email ID and tenant in Microsoft Teams</strong>
-   </td>
-   <td>
-        <strong>Email ID and tenant in Azure DevOps</strong>
-   </td>
-   <td>
-        <strong>Steps to take </strong>
-   </td>
-  </tr>
-  <tr>
-   <td>
-        1
-   </td>
-   <td>
-        <u>email1@abc.com</u> (tenant 1)
-   </td>
-   <td>
-        <u>email1@abc.com</u> (tenant 1)
-   </td>
-   <td>
-        Sign in using <strong>Sign in</strong> button.
-   </td>
-  </tr>
-  <tr>
-   <td>
-        2
-   </td>
-   <td>
-        <u>email1@abc.com</u> (tenant 1)
-   </td>
-   <td>
-        <u>email1@abc.com</u> (tenant 2)
-   </td>
-   <td>
-    <ul>
-	<li>Sign in the Azure DevOps account</li> 
-	<li>In the same browser, start a new tab, navigate to https://teams.microsoft.com</li> 
-	<li>Run the <code>signin</code> command and choose the <strong>Sign in</strong> button. </li>
-    </ul>
-   </td>
-  </tr>
-  <tr>
-   <td>
-        3
-   </td>
-   <td>
-        <u>email1@abc.com</u> (tenant 1) 
-   </td>
-   <td>
-        <u>email2@pqr.com</u> (tenant 2) 
-   </td>
-   <td>
-        Sign in using <strong>Sign in with different email address</strong>, in the email id picker use the email2 to sign in to Azure DevOps.
-   </td>
-  </tr>
-  <tr>
-   <td>
-        4
-   </td>
-   <td>
-        <u>email1@abc.com</u> (tenant 1) 
-   </td>
-   <td>
-        <u>email2@pqr.com</u> (non default tenant 3)
-   </td>
-   <td>
-    This scenario is not supported today
-   </td>
-  </tr>
-</table>
+:::row:::
+   :::column span="1":::
+
+**Case**
+
+   :::column-end:::
+   :::column span="2":::
+
+**Email ID and tenant in Microsoft Teams**
+
+   :::column-end:::
+   :::column span="2":::
+
+**Email ID and tenant in Azure DevOps**
+
+   :::column-end:::
+   :::column span="3":::
+
+**Steps to take**
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+
+1
+
+   :::column-end:::
+   :::column span="2":::
+
+   email1@abc.com  
+   (tenant 1)
+
+   :::column-end:::
+   :::column span="2":::
+
+   email1@abc.com  
+   (tenant 1)
+
+   :::column-end:::
+   :::column span="3":::
+
+Sign in using **Sign in** button.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+
+2
+
+   :::column-end:::
+   :::column span="2":::
+
+   email1@abc.com  
+   (tenant 1)
+
+   :::column-end:::
+   :::column span="2":::
+
+   email1@abc.com  
+   (tenant 2)
+
+   :::column-end:::
+   :::column span="3":::
+
+
+- Sign in the Azure DevOps account 
+- In the same browser, start a new tab, navigate to https://teams.microsoft.com 
+- Run the `signin` command and choose the **Sign in** button. 
+
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+
+3
+
+   :::column-end:::
+   :::column span="2":::
+
+   email1@abc.com  
+   (tenant 1) 
+
+   :::column-end:::
+   :::column span="2":::
+
+   email2@pqr.com  
+   (tenant 2) 
+
+   :::column-end:::
+   :::column span="3":::
+
+Sign in using **Sign in with different email address**, in the email ID picker use the email2 to sign in to Azure DevOps.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+
+4
+
+   :::column-end:::
+   :::column span="2":::
+
+   email1@abc.com  
+   (tenant 1) 
+
+   :::column-end:::
+   :::column span="2":::
+
+   email2@pqr.com  
+   (non default tenant 3)
+
+   :::column-end:::
+   :::column span="3":::
+
+This scenario is not supported today
+
+   :::column-end:::
+:::row-end:::
 
   
  ## Troubleshoot 

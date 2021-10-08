@@ -1,6 +1,6 @@
 ---
 title: Stories Overview Report (Agile)
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Lists all user stories, filtered by area and iteration and in order of importance.
@@ -156,5 +156,5 @@ The Stories Overview report lists all user stories, filtered by area and iterati
   
 2.  Click **View Report** to refresh the report based on the new filter criteria.  
   
-## Related notes
+## Related articles
 - [Reporting Services Reports](reporting-services-reports.md)  
