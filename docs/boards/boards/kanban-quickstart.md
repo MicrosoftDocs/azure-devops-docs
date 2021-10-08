@@ -8,7 +8,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 02/11/2021
+ms.date: 10/08/2021
 ---
 
 # Start using your Kanban board
@@ -26,19 +26,39 @@ User stories and bugs correspond to types of work items. You use [work items](..
 
 ## Add a Kanban board
 
-Each Kanban board is associated with a team and a work item type. For the Agile process, the three boards are Stories, Features, and Epics.
+If you have a project, you have a Kanban board. Each project defines a default team and set of boards for that team. You only need to add a Kanban board when you want to support a new team. When you add a team, you add a number of team assets. A team admin can configure the assets to support the way the team works. To add a set of Kanban boards to support a new team, see [Add a team](../../organizations/settings/add-teams.md). 
 
-When you add a team, you add a number of team assets. A team admin can configure the assets to support the way the team works. To add a set of Kanban boards to support a new team, [add a team](../../organizations/settings/add-teams.md). 
+Each team's Kanban boards are associated with one or more work item types depending on the process selected when the project was created, team configurations, and process customizations. The boards defined for each process are:
+
+::: moniker range=">= azure-devops-2019" 
+- [**Agile**](../work-items/guidance/agile-process.md): **Stories**, **Features**, and **Epics**
+- [**Basic**](../get-started/plan-track-work.md): **Issues** and **Epics** 
+- [**Scrum**](../work-items/guidance/scrum-process.md): **Backlog items**, **Features**, and **Epics** 
+- [**CMMI**](../work-items/guidance/cmmi-process.md): **Requirements**, **Features**, and **Epics**
+::: moniker-end 
+
+::: moniker range="< azure-devops-2019" 
+- [**Agile**](../work-items/guidance/agile-process.md): **Stories**, **Features**, and **Epics**
+- [**Scrum**](../work-items/guidance/scrum-process.md): **Backlog items**, **Features**, and **Epics** 
+- [**CMMI**](../work-items/guidance/cmmi-process.md): **Requirements**, **Features**, and **Epics**
+::: moniker-end 
+
+::: moniker range=">= azure-devops-2019" 
+You choose the board from the backlog selector as shown in the following image.  
+
+:::image type="content" source="media/quickstart/board-selector.png" alt-text="Choose board level, Backlog items, Stories, or Requirements.":::  
+::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019" 
 
-To add a board to support an additional portfolio backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
-
+To customize your Kanban boards to add custom work item types, add portfolio backlogs, or other supported options, see the following articles, depending on the process your project uses: 
+- [Inherited process model](../../organizations/settings/work/inheritance-process-model.md)
+- [On-premises XML process model](../../reference/on-premises-xml-process-model.md) 
 ::: moniker-end 
 
 ::: moniker range="< azure-devops-2019"
 
-To add a board to support an additional portfolio backlog level, see [Add a portfolio backlog level](../../reference/add-portfolio-backlogs.md).
+To customize your Kanban boards to add custom work item types, add portfolio backlogs, or other supported options, see [On-premises XML process model](../../reference/on-premises-xml-process-model.md).
 
 ::: moniker-end   
 
