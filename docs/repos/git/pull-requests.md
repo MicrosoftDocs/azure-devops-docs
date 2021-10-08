@@ -129,6 +129,7 @@ You can create queries on the **Pull requests** page with more filters, such as 
 
 ::: moniker-end
 
+
 # [Visual Studio](#tab/visual-studio)
 
 In Visual Studio 2015, 2017, and 2019, you can view PRs from Visual Studio Team Explorer.
@@ -157,6 +158,7 @@ Starting with Visual Studio 2017 Update 6, you can check out a PR's source branc
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
+
 # [Azure Command Line](#tab/azure-command-line)
 
 In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true). For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
@@ -170,6 +172,7 @@ az repos pr checkout
 
 ***
 
+
 <a name="create-a-new-pull-request"></a>
 ## Create a pull request
 
@@ -180,6 +183,7 @@ You can create a new PR from:
 - [The Pull requests page on the project's Azure DevOps website](#from-the-pull-requests-page-on-the-project-website).
 - [Team Explorer in Visual Studio](#from-visual-studio).
 - [The Azure DevOps CLI](#from-azure-cli).
+
 
 # [Browser](#tab/browser)
 
@@ -218,7 +222,7 @@ Select **Create a pull request** to go to a page where you can [enter your PR de
 You can create a PR directly from an Azure Boards work item linked to the branch.
 
 1. In Azure Boards, from **Backlogs** or **Queries** in the **Work** view, open a work item that's linked to the branch.
-2. In the **Development** area of the work item, select **Create a pull request**.
+1. In the **Development** area of the work item, select **Create a pull request**.
 
    ![Screenshot of creating a P R from the Development area of a work item with a linked branch.](media/pull-requests/create-pr-from-work-item.png)
 
@@ -238,6 +242,7 @@ You can create PRs for any branch from your project's **Pull requests** page on 
 
 1. [Enter your PR details](pull-requests.md#finish) and create the PR.
 
+
 # [Visual Studio](#tab/visual-studio)
 
 ### From Visual Studio
@@ -256,6 +261,7 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 
 ![Screenshot of initiating a P R from the Branches view.](media/pull-requests/new-pr-from-branch.png)
 
+
 # [Azure Command Line](#tab/azure-command-line)
 
 ### From Azure CLI
@@ -263,6 +269,7 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 az repos pr create
 
 ***
+
 
 <a name="finish"></a>
 ## Add details to PRs
@@ -315,18 +322,22 @@ To add a label when creating a PR, choose **Add label**. After you create a PR, 
 
 ::: moniker-end
 
+
 # [Visual Studio](#tab/visual-studio)
 
-To add details to a PR, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. Add the details on the PR's **Overview** webpage.
+To add details to a PR, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. Add the details on the PR's **Overview** page.
+
 
 # [Azure Command Line](#tab/azure-command-line)
 
 az repos pr update
-                   [--description]
-                   [--org]
-                   [--subscription]
-                   [--title]
+[--description]
+[--org]
+[--subscription]
+[--title]
+
 ***
+
 
 <a name="add-and-remove-reviewers"></a>
 ### Add reviewers
@@ -398,15 +409,18 @@ To add reviewers to your PR:
 
 ::: moniker-end
 
+
 # [Visual Studio](#tab/visual-studio)
 
 To add reviewers to a PR, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. Add the reviewers on the PR's **Overview** webpage.
+
 
 # [Azure Command Line](#tab/azure-command-line)
 
 az repos pr reviewer add
 
 ***
+
 
 <a name="prlinkeditems"></a>
 <a name="addworkitemstopr"></a>
@@ -468,9 +482,11 @@ Removing a link only removes the link between a work item to a PR. Links created
 
 ::: moniker-end
 
+
 # [Visual Studio](#tab/visual-studio)
 
-To link work items to a PR, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. Add the work items on the PR's **Overview** webpage.
+To link work items to a PR, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. Add the work items on the PR's **Overview** page.
+
 
 # [Azure Command Line](#tab/azure-command-line)
 
@@ -479,7 +495,10 @@ az repos pr work-item list
 
 ***
 
+
 ### Edit PR title and description
+
+Keep these fields up to date so reviewers can understand the changes in the PR.
 
 # [Browser](#tab/browser)
 You can update the title of an existing PR by selecting the current title and updating the text. Select the **Save** icon to save changes, or select the **Undo** icon to discard the changes.
@@ -488,9 +507,11 @@ Edit the PR description by selecting the **Edit** icon in the **Description** se
 
 :::image type="content" source="media/pull-requests/pull-request-edit-title-description-2020.png" alt-text="Screenshot that shows editing the PR title and selecting the description Edit button.":::
 
+
 # [Visual Studio](#tab/visual-studio)
 
-To update the title or description of a PR, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. Edit the title and description on the PR's **Overview** webpage.
+To update the title or description of a PR, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. Edit the title and description on the PR's **Overview** page.
+
 
 # [Azure Command Line](#tab/azure-command-line)
 
@@ -499,7 +520,6 @@ az repos pr update description
 
 ***
 
-Keep these fields up to date so reviewers can understand the changes in the PR.
 
 ::: moniker range=">=azure-devops-2019"
 <a name="change-the-target-branch-of-a-pull-request"></a>
@@ -509,19 +529,11 @@ For most teams, nearly all PRs target a default branch, such as `main` or `devel
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2019"
-
 <a name="draft-pull-requests"></a>
 ## Create draft PRs
 
-::: moniker-end
-
-:::moniker range="azure-devops-2019"
-
 > [!NOTE]
 > Draft PRs were added in the Azure DevOps Server 2019.1 update.
-
-:::moniker-end
 
 # [Browser](#tab/browser)
 ::: moniker range=">=azure-devops-2019"
@@ -563,9 +575,11 @@ To change an existing published PR to a draft, choose **Mark as draft**. Marking
 
 ::: moniker-end
 
+
 # [Visual Studio](#tab/visual-studio)
 
-To set a PR to draft, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** webpage, select **Mark as draft**.
+To set a PR to draft, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** page, select **Mark as draft**.
+
 
 # [Azure Command Line](#tab/azure-command-line)
 
@@ -573,6 +587,7 @@ To create a PR as a draft: az repos pr create --draft
 To set an existing PR to draft: az repos pr update --draft {false, true}
 
 ***
+
 
 ## Review pull requests
 
@@ -692,9 +707,11 @@ Use the button at upper right in the PR to vote on the PR changes. The default o
 
 ![Screenshot that shows P R voting options.](./media/pull-requests/pr-voting-options.png)
 
+
 # [Visual Studio](#tab/visual-studio)
 
-To vote on a PR, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** webpage, use the button at upper right to vote on the changes.
+To vote on a PR, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** page, use the button at upper right to vote on the changes.
+
 
 # [Azure Command Line](#tab/azure-command-line)
 
@@ -702,10 +719,11 @@ az repos pr set-vote
 
 ***
 
+
 ## Respond to reviews
 
 ::: moniker range="azure-devops"
-After updating your code in response to comments or to fix issues, [commit](commits.md) the changes and [push](pushing.md) the updates to the branch in your Git repo.
+After updating your code in response to comments or to fix issues, [commit](commits.md) changes and [push](pushing.md) the updates to the branch in your Git repo.
 
 To make quick updates to your branch, select **Edit** on the **Files** page in your branch on the web.
 
@@ -748,6 +766,7 @@ To keep track of files that have already been reviewed, select **More options** 
 After the PR gets all required approvals and meets all required policies, you can complete the PR.
 
 # [Browser](#tab/browser)
+
 ::: moniker range="azure-devops"
 
 1. Select **Complete** at upper right to complete the PR. Or select the dropdown arrow next to the **Complete** button, and select one of the following options:
@@ -897,28 +916,30 @@ To abandon your changes, select **Abandon** from the dropdown list on the **Comp
 
 To reactivate an abandoned PR at any time, open the PR from the **Abandoned** tab in the **Pull Request** view, and select **Reactivate** at upper right.
 
-::: moniker range=">= tfs-2017" 
 
 # [Visual Studio](#tab/visual-studio)
 
-To complete a PR, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** webpage, select **Complete** or set other options.
+To complete a PR, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** page, select **Complete** or set other options.
+
 
 # [Azure Command Line](#tab/azure-command-line)
 
 az repos pr update 
-                   [--auto-complete {false, true}]
-                   [--bypass-policy {false, true}]
-                   [--bypass-policy-reason]
-                   [--delete-source-branch {false, true}]
-                   [--merge-commit-message]
-                   [--squash {false, true}]
-                   [--status {abandoned, active, completed}]
-                   [--transition-work-items {false, true}]
+[--auto-complete {false, true}]
+[--bypass-policy {false, true}]
+[--bypass-policy-reason]
+[--delete-source-branch {false, true}]
+[--merge-commit-message]
+[--squash {false, true}]
+[--status {abandoned, active, completed}]
+[--transition-work-items {false, true}]
 az repos pr update –-status abandoned
 
-                   [--detect {false, true}]
+[--detect {false, true}]
 ***
 
+
+::: moniker range=">= tfs-2017" 
 ## Revert a PR
 
 To undo the changes from a PR, follow these steps:
