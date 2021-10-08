@@ -21,6 +21,8 @@ Finally, we'll look at a tool for easing the transition.
 
 [!INCLUDE [](includes/change-default-branch-instructions.md)]
 
+There are other aspects you should consider before making this change. 
+
 ## Choosing a name
 
 [Git 2.28](https://github.blog/2020-07-27-highlights-from-git-2-28/) added the ability to choose an initial branch name.

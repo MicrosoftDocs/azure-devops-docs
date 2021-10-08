@@ -30,6 +30,21 @@ In this tutorial you learn how to:
 
 ## Cherry-pick a commit
 
+#### [Browser](#tab/browser/)
+
+1. In a completed PR in your Azure DevOps project, select **Cherry-pick**. In an active PR, select **Cherry-pick** from the **...** menu. This action creates a new branch with the copied changes.
+
+1. In the **Cherry-pick pull request** pane:
+
+   1. Under **Target branch**, select the branch where you want to copy the PR changes.
+   1. Under **Topic branch name required**, change the cherry-pick PR branch name if you want.
+   1. Choose whether to **Cherry-pick as a single commit**.
+   1. Select **Cherry-pick**.
+
+1. On the **New pull request** screen, select **Create**.
+
+1. Merge the new PR to complete the cherry-pick.
+
 #### [Visual Studio](#tab/visual-studio/)
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
