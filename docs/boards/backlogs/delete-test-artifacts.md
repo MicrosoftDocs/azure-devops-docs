@@ -1,7 +1,7 @@
 ---
-title: Delete test plans, cases, & other test artifacts
+title: Delete test plans, test cases, and other test artifacts in Azure Boards
 titleSuffix: Azure Boards  
-description: How to delete test plans, test cases, test results, & other test artifacts in Azure DevOps Services & TFS 
+description: Learn how to delete test plans, test cases, test results, & other test artifacts in Azure Boards. 
 ms.custom: seodec18
 ms.technology: devops-agile
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
@@ -12,13 +12,13 @@ monikerRange: '>= tfs-2017'
 ms.date: 12/04/2018
 ---
 
-# Delete test artifacts  
+# Delete test artifacts in Azure Boards
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 <a id="delete-test"> </a> 
 
-While test artifacts such as test plans, test suites, test cases, and so on are types of work items, the method for deleting them differs from deleting non-test work items. 
+While test artifacts such as test plans, test suites, test cases, and so on, are all types of work items, the method for deleting them differs from deleting non-test work items. 
 
 > [!IMPORTANT]  
 > We only support permanent deletion of test artifacts such as test plans, test suites, test cases, shared steps and shared parameters. Deleted test artifacts won't appear in the recycle bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
@@ -77,7 +77,7 @@ However, these objects aren't connected to each other through link types. For de
 
 ## Delete a test case
 
-1. To delete a test case, open it from the web portal and choose the **Permanently delete** option from the actions menu. (Bulk deletion is not supported from a query results page.)     
+1. To delete a test case, open it from the web portal and choose the **Permanently delete** option from the actions menu. (Bulk deletion isn't supported from a query results page.)     
  
 	![Delete a test case and associated test artifacts from the web form](media/move-change-delete/delete-test-artifacts-form.png)  
 
@@ -92,7 +92,7 @@ However, these objects aren't connected to each other through link types. For de
 
 	![Delete test plans and artifacts from Test pages](media/move-change-delete/delete-test-plans.png)  
 
-4.	To delete shared steps and shared parameters you need to first manually remove all references to them before you can delete them. 
+4.	To delete shared steps and shared parameters, you need to first manually remove all references to them before you can delete them. 
 	
 	![Delete shared steps from form](media/delete-test-shared-steps-remove-link.png)  
 
