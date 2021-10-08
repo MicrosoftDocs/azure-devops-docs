@@ -125,7 +125,7 @@ None
    </tr>
 </table>
 
-## Team Foundation Server Plug-in
+## Team Foundation Server Plug-in 
 
 You can use Team Foundation Server Plug-in (version 5.2.0 or newer) to automatically collect files from the Jenkins workspace and download them into the build.
 
