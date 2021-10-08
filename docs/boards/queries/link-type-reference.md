@@ -97,6 +97,7 @@ The following table describes the work item link types you can specify to scope 
    **Usage**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    **Affects-Affected by**  (CMMI only)    ![Affects link type image](media/link-work-items-support-traceability/affects-cmmi.png) 
@@ -304,6 +305,7 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
    **Usage**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    Hyperlink
@@ -358,6 +360,7 @@ The following table describes the external link types you can choose when adding
       **Usage**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="":::
       Branch
