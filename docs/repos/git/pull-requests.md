@@ -32,7 +32,7 @@ For PR guidelines and management considerations, see [About pull requests](about
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
  
 > [!NOTE]
-> For public projects, users granted **Stakeholder** access have full access to Azure Repos. 
+> For public projects, users granted **Stakeholder** access have full access to Azure Repos.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
@@ -47,6 +47,7 @@ For PR guidelines and management considerations, see [About pull requests](about
 - You must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 - To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
 - To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
+
 ::: moniker-end
 
 To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
@@ -167,7 +168,7 @@ az repos pr show
 
 az repos pr checkout
 
----
+***
 
 <a name="create-a-new-pull-request"></a>
 ## Create a pull request
@@ -261,7 +262,7 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 
 az repos pr create
 
----
+***
 
 <a name="finish"></a>
 ## Add details to PRs
@@ -325,7 +326,7 @@ az repos pr update
                    [--org]
                    [--subscription]
                    [--title]
----
+***
 
 <a name="add-and-remove-reviewers"></a>
 ### Add reviewers
@@ -405,7 +406,7 @@ To add reviewers to a PR, from the **Pull Requests** view in Team Explorer, righ
 
 az repos pr reviewer add
 
----
+***
 
 <a name="prlinkeditems"></a>
 <a name="addworkitemstopr"></a>
@@ -476,7 +477,7 @@ To link work items to a PR, from the **Pull Requests** view in Team Explorer, ri
 az repos pr work-item add
 az repos pr work-item list
 
----
+***
 
 ### Edit PR title and description
 
@@ -496,7 +497,7 @@ To update the title or description of a PR, from the **Pull Requests** view in T
 az repos pr update title
 az repos pr update description
 
----
+***
 
 Keep these fields up to date so reviewers can understand the changes in the PR.
 
@@ -571,7 +572,7 @@ To set a PR to draft, from the **Pull Requests** view in Team Explorer, right-cl
 To create a PR as a draft: az repos pr create --draft
 To set an existing PR to draft: az repos pr update --draft {false, true}
 
----
+***
 
 ## Review pull requests
 
@@ -699,7 +700,7 @@ To vote on a PR, from the **Pull Requests** view in Team Explorer, right-click t
 
 az repos pr set-vote
 
----
+***
 
 ## Respond to reviews
 
@@ -916,7 +917,7 @@ az repos pr update
 az repos pr update –-status abandoned
 
                    [--detect {false, true}]
----
+***
 
 ## Revert a PR
 
