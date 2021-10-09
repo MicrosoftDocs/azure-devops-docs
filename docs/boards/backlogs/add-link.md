@@ -63,17 +63,23 @@ Use this article to learn how to:
 
 For a list of all link types and supported link relationships, see [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md). 
 
-> [!NOTE]
-> The following link relationships are restricted: 
-> - You can't assign a work item more than one parent using a parent/child or other tree topology link type. 
-> - You can't add links in such a way as to create a circular relationship. 
-> - You can't link more than 1,000 work items to a single work item. 
+## Link guidance 
+
+For an overview of which link types to use and link-related capabilities, see [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md). In general, we recommend you follow these guidelines:
+
+- For work items that appear on your backlogs, both product and portfolio, use the **Parent** and **Child** link types to create a hierarchy and group work. To quickly link many backlog work items within a hierarchy, see [Organize your backlog, map child work items to parents](organize-backlog.md).
+- When linking work items with **Parent** and **Child** link types, avoid nesting work items of the same type. While the system allows you to nest work items of the same type, such as linking bugs to bugs or bugs to user stories when tracking both types on your product backlog, it can cause problems with drag-and-drop of work items on a backlog or display of items on a Kanban board. To learn more, see [Fix display, reordering, and nesting issues](resolve-backlog-reorder-issues.md). 
+- To track dependencies of work items, use the **Predecessor** and **Successor** link types.  
+- For all other general tracking purposes, use the **Related** link type. 
+
+The following link relationships are restricted: 
+- You can't assign a work item more than one parent using a **Parent/Child** or other tree-topology link type. To learn more about link types, see [Link type reference](../queries/link-type-reference.md).
+- You can't add links in such a way as to create a circular relationship. 
+- You can't link more than 1,000 work items to a single work item. 
 
 [!INCLUDE [temp](../includes/prerequisites.md)] 
 
 <a id="link"> </a>
-
- 
 
 ## Link several work items 
 
