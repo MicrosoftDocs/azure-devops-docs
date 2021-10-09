@@ -555,7 +555,6 @@ For example, to update the title and description for PR #16, use:
 az repos pr update --id 16 --description "These updates are *no longer new*." --title "Old updates"
 ```
 
-<a name="add-and-remove-reviewers"></a>
 ### Add reviewers
 
 You can add optional reviewers to a PR at creation with `az repos pr create --reviewer "<Reviewer Name>" "<Another Reviewer>"`.
@@ -574,8 +573,6 @@ To manage reviewers for an existing PR, use [az repos pr reviewer](/cli/azure/re
 - To list the reviewers for a PR, use `az repos pr reviewer list --id <PR Id>`.
 - To remove reviewers from a PR, use `az repos pr reviewer remove --id <PR Id> --reviewer "<Reviewer Name>"`.
 
-<a name="prlinkeditems"></a>
-<a name="addworkitemstopr"></a>
 ### Link work items
 
 You can link Azure Boards work items to PRs at PR creation with `az repos pr create --work-items <Id1> <Id2>`.
@@ -627,7 +624,11 @@ Draft PRs have the following differences from published PRs:
 
   ![Screenshot showing a draft P R in the P R list.](media/pull-requests/draft-pull-request-badge.png)
 
+::: moniker-end
+
 # [Browser](#tab/browser)
+
+::: moniker range=">=azure-devops-2019"
 To create a draft PR, select the arrow next to **Create** and select **Create as draft** when creating the PR. You don't have to use title prefixes such as WIP or DO NOT MERGE.
 
 ![Screenshot showing Create as draft P R.](media/pull-requests/create-draft-pr.png)
