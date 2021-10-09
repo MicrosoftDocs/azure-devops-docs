@@ -1,7 +1,7 @@
 ---
 title: Create your product backlog in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to add backlog items or user stories to plan your project, organize, and estimate deliverables in Azure Boards and Azure DevOps.   
+description: Learn how to add backlog items or user stories to plan your project, prioritize, and estimate deliverables in Azure Boards and Azure DevOps.   
 ms.custom: "boards-backlogs, seodec18, contperf-fy20q4" 
 ms.technology: devops-agile
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
@@ -24,7 +24,7 @@ Your product backlog corresponds to your project plan, the roadmap for what your
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of a Backlog of Scrum process product backlog items.](media/create-backlog/intro-image.png)
 
-After you define it, you have an organized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team. And, you can [interactively filter the backlog](filter-backlogs-boards-plans.md) to focus on a subset of work items.  
+After you define it, you have an prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team. And, you can [interactively filter the backlog](filter-backlogs-boards-plans.md) to focus on a subset of work items.  
 
 [!INCLUDE [temp](../includes/note-configure-customize.md)]
 
@@ -179,7 +179,7 @@ Repeat this step until you capture all your main ideas.
 
 ## Reorder your backlog
 
-After you have some items in your backlog, you can reorder them to create an organized list of work. Review and organize your backlog frequently to help your team know what's most important to deliver next. 
+After you have some items in your backlog, you can reorder them to create an prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next. 
 
 > [!TIP]  
 > You can't sort your backlog on a column. To view a sorted listed, select **Create query**. Save and open the query, and then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
@@ -201,7 +201,7 @@ Backlogs that participate in portfolio management or that contain nested same-ty
 
 ## Add details and estimates to backlog items
 
-Building and organizing your backlog provides you with a high-level roadmap. Before your team can start work on any item, however, they need more details. You capture these details within the work item form.
+Building and prioritizing your backlog provides you with a high-level roadmap. Before your team can start work on any item, however, they need more details. You capture these details within the work item form.
 
 To open each item, double-click or press Enter. Then add all the information you want to track.  Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the :::image type="icon" source="../media/icons/icon-attachments-tab-wi.png" border="false"::: **Attachments** tab and drag-and-drop a file to share the file with others.  
 
