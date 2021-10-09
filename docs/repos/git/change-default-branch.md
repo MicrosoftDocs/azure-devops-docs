@@ -14,7 +14,7 @@ The default branch is the first branch that Git will check out on a fresh clone.
 Also, [pull requests](pull-requests.md) target this branch by default.
 
 We'll walk through the process of changing the default branch.
-We'll also cover additional things you must consider and update when making this change.
+We'll also cover other things you must consider and update when making this change.
 Finally, we'll look at a tool for easing the transition.
 
 ## Set a new default branch
@@ -51,17 +51,17 @@ After the switch, everyone with an existing clone should run `git remote set-hea
 Future new branches should be based on the new default.
 
 ### Incoming links
-Some bookmarks, documents, and other non-code files which point to files in Azure Repos will need to be updated.
+Some bookmarks, documents, and other non-code files that point to files in Azure Repos will need to be updated.
 The branch name for a file or directory can appear in the URL.
 
-If a URL contains a querystring for `version` (e.g. `&version=GBmybranchname`), then that URL should be updated.
-Fortunately, most links to the default branch will not have a `version` segment and can be left as-is.
-Also, once you delete the old default branch, attempts to navigate to it will be taken to the new default anyways.
+If a URL contains a querystring for `version`, for example `&version=GBmybranchname`, then that URL should be updated.
+Fortunately, most links to the default branch won't have a `version` segment and can be left as-is.
+Also, once you delete the old default branch, attempts to navigate to it will be taken to the new default anyway.
 
 ## Temporary mirroring
 A Git repository can only have one default branch.
-However, for a period of time, you can set up ad-hoc mirroring between your old default and your new default.
-This way, if your end users continue pushing to the old default, they won't need to re-do the work on their end.
+However, for a while, you can set up ad-hoc mirroring between your old default and your new default.
+This way, if your end users continue pushing to the old default, they won't need to redo the work on their end.
 We'll use [Azure Pipelines](../../pipelines/get-started/what-is-azure-pipelines.md) to set up this temporary mirroring.
 
 > [!NOTE]
@@ -87,7 +87,7 @@ We'll use [Azure Pipelines](../../pipelines/get-started/what-is-azure-pipelines.
 <!-- TFS didn't have separate bypass policy permissions -->
 
 3. If the new default branch has branch policies, also grant the build identity the **Bypass policies when pushing** permission.
-This is a security risk since a malicious user could craft a pipeline to sneak code into a repository in your project.
+This permission is a security risk since a malicious user could craft a pipeline to sneak code into a repository in your project.
 When mirroring isn't needed anymore, **be sure** to remove this permission.
 
 4. Add a new file, `mirror.yml` to your repository in the new default branch.
@@ -122,7 +122,7 @@ It will keep them in sync as long as new commits don't arrive on both branches s
 If the pipeline begins failing with an error message like "Updates were rejected because a pushed branch tip is behind its remote", someone will have to merge the old branch into the new branch by hand.
 
 1. Clone the repository and `cd` into its directory.
-2. Checkout the new default branch with `git checkout main` (if `main` is your new default branch).
+2. Check out the new default branch with `git checkout main` (if `main` is your new default branch).
 3. Create a new branch for integrating the two branches with `git checkout -b integrate`.
 4. Merge the old default branch with `git merge master` (if `master` is your old default branch).
 5. Push the new branch, then open and complete a pull request into the new default branch.
