@@ -24,27 +24,29 @@ For PR guidelines and management considerations, see [About pull requests](about
 ## Prerequisites
 
 ::: moniker range="azure-devops"
-- You must be a member of an Azure DevOps project with **Basic** access or higher.
-  - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
-  - If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
-- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
-- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
  
+- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher.
+  - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
+  - If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
+
+- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
+
+- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
+
 > [!NOTE]
 > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-- You must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
+- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 - To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
 - To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
-- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
-
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-- You must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 - To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
 - To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 
@@ -169,23 +171,23 @@ Many `az devops` commands require `--org` and `--project` parameters. To avoid h
 
 For example, to set the Fabrikam Fiber project and FabrikamPrime organization as defaults, use:
 
-```azcli
+```azurecli
 az devops configure --defaults organization=https://fabrikamprime.visualstudio.com project="Fabrikam Fiber"
 ```
 
-Once you set the defaults, `az devops` commands use the default organization and project, unless you use the `org` and `project` parameters to specify other organizations and projects you have access to.
+Once you set the defaults, `az devops` commands use the default organization and project. You can use the `org` and `project` parameters to specify other organizations and projects you have access to.
 
 Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
 ### List and show PRs
 
-To list active PRs in your project with their details, use [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list). To list all PRs regardless of status, use `az repos pr list --status all`.
+To list active PRs in your project with their details, use [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list). To list all PRs regardless of status, use <br>`az repos pr list --status all`.
 
-To show all the details for a single PR, use [az repos pr show](/cli/azure/repos/pr#az_repos_pr_show) with the required `id` parameter. The `id` is the `pullRequestId` from the PR list details. To open the PR in your browser, use `open`.
+To show all the details for a single PR, use [az repos pr show](/cli/azure/repos/pr#az_repos_pr_show) with the required `id` parameter. The PR `id` is the `pullRequestId` from the PR list details. To open the PR in your browser, use `open`.
 
 For example, to see the details for PR #21 and open it in your browser, use:
 
-```azcli
+```azurecli
 az repos pr show --id 21 --open
 ```
 
@@ -195,7 +197,7 @@ Filtering helps you find and organize PRs to prioritize the most important files
 
 You can use several parameters with [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list) to filter the list of PRs, such as:
 
-```azcli
+```azurecli
 az repos pr list [--creator]
                  [--project]
                  [--repository]
@@ -209,17 +211,17 @@ The `creator` and `reviewer` values can be display names or email addresses. The
 
 For example, to list details about the last PR you created, regardless of its status, use:
 
-```azcli
+```azurecli
 az repos pr list --creator "My Name" --status all --top 1
 ```
 
 ### Check out a branch
 
-Use [az repos pr checkout](/cli/azure/repos/pr#az_repos_pr_checkout) with the required `--id` parameter to check out a PR branch locally, as long as there are no local changes.
+Use [az repos pr checkout](/cli/azure/repos/pr#az_repos_pr_checkout) with the required `id` parameter to check out a PR branch locally, as long as there are no local changes.
 
 For example, to check out the branch for PR #21 locally, use:
 
-```azcli
+```azurecli
 az repos pr checkout --id 21
 ```
 
@@ -326,7 +328,7 @@ To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr
 
 For example, the following command creates a PR from the `new` branch to the default `main` branch of the Fabrikam repository, and then opens the PR in your browser:
 
-```azcli
+```azurecli
 az repos pr create --repository Fabrikam --source-branch new --open
 ```
 
@@ -543,7 +545,7 @@ When you create a PR with `az repos pr create`, add a `title` and a detailed `de
 
 For example:
 
-```azcli
+```azurecli
 az repos pr create --repository Fabrikam --source-branch new --title "Update the readme" --description "This PR updates the readme." "These are *new* changes."
 ```
 
@@ -551,7 +553,7 @@ Keep these fields up to date so reviewers can understand the changes in the PR. 
 
 For example, to update the title and description for PR #16, use:
 
-```azcli
+```azurecli
 az repos pr update --id 16 --description "These updates are *no longer new*." --title "Old updates"
 ```
 
@@ -561,7 +563,7 @@ You can add optional reviewers to a PR at creation with `az repos pr create --re
 
 For example:
 
-```azcli
+```azurecli
 az repos pr create --repository Fabrikam --source-branch new --reviewer "[Fabrikam]\Fabrikam Team" "[Fabrikam Fiber]\Web"
 ```
 
@@ -579,7 +581,7 @@ You can link Azure Boards work items to PRs at PR creation with `az repos pr cre
 
 For example:
 
-```azcli
+```azurecli
 az repos pr create --repository Fabrikam --source-branch new --work-items 63 64
 ```
 
@@ -667,7 +669,7 @@ To create a PR as a draft, set the `draft` parameter to `true` when you create t
 
 For example:
 
-```azcli
+```azurecli
 az repos pr create --repository Fabrikam --source-branch new --draft true
 ```
 
@@ -809,7 +811,7 @@ To vote whether to approve a PR, use [az repos pr set-vote](/cli/azure/repos/pr#
 
 For example, to vote to approve PR #16, use:
 
-```azcli
+```azurecli
 az repos pr set-vote --id 16 --vote approve
 ```
 
@@ -975,7 +977,7 @@ By default, a PR that's set to autocomplete waits only on required policies. In 
 
 ![Screenshot that shows changing an optional policy to required in the Enable automatic completion panel.](media/pull-requests/enable-completion.png)
 
-Starting with TFS 2018 Update 2, the PR **Overview** page displays the list of outstanding policy criteria the PR is waiting for. If you set a policy to be required in the **Enable automatic completion** panel, you can set it back to optional here.
+Starting with TFS 2018 Update 2, the PR **Overview** page displays the list of outstanding policy criteria the PR is waiting for. If you set a policy to be required in the **Enable automatic completion** panel, you can set it back to optional on the **Overview** page.
 
 Select **Cancel auto-complete** to turn off autocomplete. 
 
@@ -1011,7 +1013,7 @@ If all required approvals and policies pass, you can complete a PR and merge the
 
 For example, to complete PR #16, use:
 
-```azcli
+```azurecli
 az repos pr update --id 16 --status completed
 ```
 
@@ -1030,7 +1032,7 @@ PR completion options include:
 
 The following example completes PR #16, deletes its source branch, resolves its linked work items, and adds a merge commit message:
 
-```azcli
+```azurecli
 az repos pr update --id 16 --status completed --delete-source-branch true --transition-work-items true --merge-commit-message "This update is complete."
 ```
 
