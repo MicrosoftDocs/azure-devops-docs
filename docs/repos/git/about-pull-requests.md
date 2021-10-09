@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
-Pull requests (PRs) are a way to change, review, and merge code in a [Git project](../../organizations/projects/create-project.md). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams can use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
+Pull requests (PRs) are a way to change, review, and merge code in a [Git project](../../organizations/projects/create-project.md). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
 The following video shows the general pull request process. Some terminology and user interface elements might not apply to your Azure DevOps version.
 
@@ -29,7 +29,7 @@ High-quality reviews start with high-quality feedback. Here are some keys to gre
 
 - The PR owner should have the right people review the PR, and make sure that reviewers know what the code does.
 - Reviewers should give actionable, constructive feedback.
-- Owners and reviewers should comment and reply in a timely manner.
+- Owners and reviewers should comment and reply quickly.
 
 PR owners should:
 
@@ -74,7 +74,7 @@ For more information, see:
 
 ## PR status checks
 
-Pull requests and branch policies let teams enforce best practices for reviewing code and running automated builds. Many teams have further requirements and validations to perform on code. To cover these needs, you can integrate PR status checks into the PR workflow. With PR status checks, external services can programmatically sign off on code changes by associating success or failure information with the PR.
+Pull requests and branch policies let teams enforce best practices for reviewing code and running automated builds. Many teams have further requirements and validations to do on code. To cover these needs, you can integrate PR status checks into the PR workflow. With PR status checks, external services can programmatically sign off on code changes by associating success or failure information with the PR.
 
 For more information, see the following articles:
 
@@ -85,7 +85,7 @@ For more information, see the following articles:
 
 ## Multiple merge bases
 
-The **Files** tab in a PR detects diffs by three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their common merge base. The algorithm is a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there is more than one true base. In most repositories this situation is rare, but in large repositories with many active users, it can be common.
+The **Files** tab in a PR detects diffs by three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their common merge base. The algorithm is a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there's more than one true base. In most repositories this situation is rare, but in large repositories with many active users, it can be common.
 
 The following scenarios can cause multiple bases:
 
@@ -94,7 +94,7 @@ The following scenarios can cause multiple bases:
 - Handling aftermaths of main branch reverts
 - Other non-intuitive and convoluted manipulations with reverts, cherry picks, and merges
 
-Multiple merge base detection is part of security awareness. If there are multiple merge bases, the file-diff algorithm for the user interface (UI) might not properly detect file changes, depending on which merge base was chosen. The multiple merge base warning only happens if the files affected in the PR have different versions between the merge bases.
+Multiple merge base detection is part of security awareness. If there are multiple merge bases, the file-diff algorithm for the user interface might not properly detect file changes, depending on which merge base it chooses. A multiple merge base warning happens if the files affected in the PR have different versions between the merge bases.
 
 ### Potential security risks of merging from multiple bases
 
