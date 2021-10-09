@@ -35,7 +35,7 @@ Which view should you use to work with Agile methods?
 **In a nutshell...**
 ::: moniker range=">= tfs-2017"
 -  Backlogs display work items as a list and boards display them as cards  
--  You use your product backlog to quickly plan and organize your work  
+-  You use your product backlog to quickly plan and prioritize your work  
 -  You use your sprint backlogs and taskboards when you work in Scrum   
 -  You use your Kanban board to update work status and when you employ Kanban methods   
 -  Each backlog is associated with a board, changes to priority order you make in one are reflected in its corresponding board  
@@ -46,7 +46,7 @@ Which view should you use to work with Agile methods?
 
 ::: moniker range="<= tfs-2015"
 -  Backlogs display work items as a list and boards display them as cards  
--  You use your product backlog to quickly plan and organize your work  
+-  You use your product backlog to quickly plan and prioritize your work  
 -  You use your sprint backlogs and taskboards when you work in Scrum   
 -  You use your Kanban board to update work status and when you employ Kanban methods   
 -  Each backlog is associated with a board, changes to priority order you make in one are reflected in its corresponding board  
@@ -54,7 +54,7 @@ Which view should you use to work with Agile methods?
 ::: moniker-end
 
 
-With list backlogs, you can quickly develop your project plan, group and organize work, and make bulk updates on selected work items. With boards, you can quickly update status and fields displayed for each work item. 
+With list backlogs, you can quickly develop your project plan, group and prioritize work, and make bulk updates on selected work items. With boards, you can quickly update status and fields displayed for each work item. 
 ::: moniker range=">= tfs-2017"
 And with plans, you can monitor progress, deliverables, and dependencies across several teams.  
 ::: moniker-end
@@ -152,7 +152,7 @@ You use work items to share information, assign work to team members, track depe
 
 ### Portfolio, product, and sprint backlogs 
 
-Portfolio backlogs typically track high-level features, scenarios, or epics. Your product backlog contains an organized list of user stories, deliverables, or works you plan to build or fix. Portfolio backlogs help you organize your product backlog into a hierarchy of elements. Sprint backlogs contain just those items that each team is working on during a scheduled sprint or iteration period. 
+Portfolio backlogs typically track high-level features, scenarios, or epics. Your product backlog contains a prioritized list of user stories, deliverables, or works you plan to build or fix. Portfolio backlogs help you organize your product backlog into a hierarchy of elements. Sprint backlogs contain just those items that each team is working on during a scheduled sprint or iteration period. 
 
 For details about working in each type of backlog, see [Create your backlog](create-your-backlog.md), [Define features and epics](define-features-epics.md), and [Sprint planning (sprint backlogs)](../sprints/assign-work-sprint.md). 
 
