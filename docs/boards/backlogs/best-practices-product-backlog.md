@@ -29,7 +29,7 @@ To get started, see [Create your backlog](create-your-backlog.md).
 Product owners play an important role in Scrum, primarily as the interface between customers and the team. To enable product owners to fulfill the following responsibilities, they need to be added to the Contributors group. 
 
 * Analyzing customer requirements and express them as user stories, features, or requirements  
-* Building, organizing, and refining the product backlog  
+* Building, prioritizing, and refining the product backlog  
 * Representing customer and stakeholder requirements to the team and responding to questions your team has about them  
 * Meeting regularly with stakeholders to address their needs and keep them informed  
 * Helping stakeholders understand the decisions underlying the priority order of your backlog  
