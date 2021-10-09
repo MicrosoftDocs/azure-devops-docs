@@ -222,7 +222,8 @@ You can only change column options for queries in Visual Studio. To open, choose
 
 :::image type="content" source="media/columns/open-column-options-visual-studio.png" alt-text="Screenshot of Query Results, Visual Studio, open Column Options.":::
 
-### Add or remove fields in a column
+### Add or remove fields to add or remove columns
+
 In the Column Options dialog, to add a field, choose the field from Available columns and choose the **> Add selected columns**. To add multiple fields, use SHIFT+click to select the fields. Fields are added to the bottom of the Selected columns area. 
 
 To change the field order, choose the field and choose the up or down arrows.  
