@@ -127,7 +127,7 @@ Refrain from using the bulk modify function to change the value of the backlog p
 
 The preferred method for bulk edit is to use multi-select to move items to the top, bottom, or specific position within the page. If you must edit one of the backlog order fields in bulk to get a large number of work items in the priority order you want, use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). You can export a query containing the backlog items, update either the Backlog Priority or Stack Rank fields, and then publish your changes. 
 
-## Work status of backlog items 
+## View options control and work items listed 
 
 ::: moniker range=">= tfs-2018" 
 
