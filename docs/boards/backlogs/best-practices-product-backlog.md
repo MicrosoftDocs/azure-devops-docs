@@ -17,7 +17,7 @@ ms.date: 10/08/2021
 [!INCLUDE [temp](../includes/version-all.md)]
  
 A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
-information to each backlog item, break them down into smaller items, organize, and estimate them, and finally, 
+information to each backlog item, break them down into smaller items, prioritize, and estimate them, and finally, 
 implement them and deliver the results to your customers. 
 
 To get started, see [Create your backlog](create-your-backlog.md). 
