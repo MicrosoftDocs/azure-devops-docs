@@ -81,7 +81,7 @@ You can only select Iteration Paths that have been [preselected by your team](..
 Your sprint backlog displays only those work items assigned to the selected sprint. Child tasks assigned to other sprints aren't displayed.  
 
 
-## Create a checklist for work items, backlogs, and boards 
+## Review checklist for work items, backlogs, and boards
 
 If you don't see the work items you expect on your [product Backlog](create-your-backlog.md) or [Kanban board](../boards/kanban-quickstart.md), complete the following checks: 
 
@@ -269,7 +269,7 @@ To add custom work item types to appear on your sprint Taskboard, follow the ste
 
 ::: moniker range=">= azure-devops-2019"
 
-### Track custom work items 
+### Track custom work items with the Inherited process model 
 
 For example, if you want to track a custom work item type, Tickets, along with Tasks and Bugs, you do the following tasks: 
 
