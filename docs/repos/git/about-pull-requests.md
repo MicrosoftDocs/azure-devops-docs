@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 10/07/2021
+ms.date: 10/11/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -83,7 +83,7 @@ For more information, see the following articles:
 - [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)
 - [Configure a branch policy for an external service](pr-status-policy.md)
 
-## Multiple merge bases
+## Multiple merge base issue
 
 The **Files** tab in a PR detects diffs by three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their common merge base. The algorithm is a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there's more than one true base. In most repositories this situation is rare, but in large repositories with many active users, it can be common.
 
