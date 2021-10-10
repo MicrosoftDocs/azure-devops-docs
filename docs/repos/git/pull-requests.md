@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 10/05/2021
+ms.date: 10/11/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -112,37 +112,37 @@ Filtering helps you find and organize PRs to prioritize the most important files
 
 ::: moniker range=">= azure-devops-2019"
 
-- To filter PRs by target branch, on the **Pull requests** page, select the **Filter** icon at upper right, and then select **Target branch**. Select the branch you want from the dropdown list.
+- To filter PRs by target branch, on the select the **Filter** icon at upper right, and then select **Target branch**. Select the branch you want from the dropdown list.
+
+- To create queries with more filters, select **Customize view** on the **Pull requests** page, and then select **Add section**. In the **Customize section** pane, you can create queries with more filters, such as draft state. These queries create separate and collapsible sections to enable better PR actionability. The queries work across repositories on the **My pull requests** tab of the organization home page.
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
-On the PR **Files** page, you can select **Filter** to use several filters for faster reviews:
+On a PR **Files** page, you can use several filters to select files and comments for faster reviews. Select **Filter**, and then select among the following options:
 
-- Keyword
-- Reviewed/Unreviewed: **All** (default), **Pending**, **Reviewed**
-- Commented files: **All files** (default), **Files with comments**
-- Comments: **Show** (default), **What's new**, **Hide**
-- Comment status: **Active** (default), **Pending**, **Resolved**, **As designed**, **Won't fix**, **Closed**
-- Commented by: **All comments** (default), or a specific person
-
-You can create queries on the **Pull requests** page with more filters, such as draft state. These queries create separate and collapsible sections to enable better PR actionability. The queries work across repositories on the **My pull requests** tab of the organization home page.
+- Keyword: Enter a keyword.
+- Reviewed/Unreviewed: **All** (default), **Pending**, **Reviewed**.
+- Commented files: **All files** (default), **Files with comments**.
+- Comments: **Show** (default), **What's new**, **Hide**.
+- Comment status: **Active** (default), **Pending**, **Resolved**, **As designed**, **Won't fix**, **Closed**.
+- Commented by: **All comments** (default), or a specific person.
 
 ::: moniker-end
 
 
 # [Visual Studio](#tab/visual-studio)
 
-In Visual Studio 2015, 2017, and 2019, you can view PRs from Visual Studio Team Explorer.
+In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Team Explorer.
 
 1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
 
 1. Select **View** > **Team Explorer** to open Team Explorer. You can also press **Ctrl**+**\\**, **Ctrl**+**M**.
 
 1. From **Home**, select **Pull Requests** to view lists of PRs opened by you or assigned to you.
-   - To view the PR list in the Azure DevOps web portal, select **Actions** and then select **Open in browser** .
-   - Right-click a listed PR and select **Open in browser** to open that PR in the web portal.
+   - To view the PR list in the Azure DevOps web portal, select **Actions** and then select **Open in browser**.
+   - To open a PR in the web portal, right-click the PR and select **Open in browser**.
 
    ![Screenshot of the P R list in Visual Studio Team Explorer.](./media/pull-requests/list-prs.png)
 
@@ -151,7 +151,7 @@ In Visual Studio 2015, 2017, and 2019, you can view PRs from Visual Studio Team 
 Filtering helps you find and organize PRs to prioritize the most important files in your workflow.
 
 From the Team Explorer **Pull Requests** view:
-- Select **Active** or **Assigned to me or my team** to filter the PR lists by PR status or assignment.
+- Select **Active**, or **Assigned to me or my team**, to filter the PR lists by PR status or assignment.
 - Type in the **Type here to filter the list** fields to filter the PR lists by date, author, branch, or other attributes.
 
 ### Check out a branch
@@ -232,16 +232,15 @@ az repos pr checkout --id 21
 <a name="create-a-new-pull-request"></a>
 ## Create a pull request
 
-You can create a new PR from:
+You can create a new PR from the Azure DevOps project website, from Visual Studio, or from the Azure DevOps CLI.
+
+# [Browser](#tab/browser)
+
+From the Azure DevOps project website, you can create a new PR from:
 
 - [A feature branch pushed to your repo](#from-a-pushed-branch).
 - [The Development section in a linked Azure Boards work item](#from-a-linked-work-item).
-- [The Pull requests page on the project's Azure DevOps website](#from-the-pull-requests-page-on-the-project-website).
-- [Team Explorer in Visual Studio](#from-visual-studio).
-- [The Azure DevOps CLI](#from-azure-cli).
-
-
-# [Browser](#tab/browser)
+- [The Pull requests page](#from-the-pull-requests-page).
 
 ### From a pushed branch
 
@@ -284,7 +283,7 @@ You can create a PR directly from an Azure Boards work item linked to the branch
 
 The link takes you to a page where you can [enter your PR details](pull-requests.md#finish) and create the PR.
 
-### From the Pull requests page on the project website
+### From the Pull requests page
 
 You can create PRs for any branch from your project's **Pull requests** page on the web.
 
@@ -301,9 +300,7 @@ You can create PRs for any branch from your project's **Pull requests** page on 
 
 # [Visual Studio](#tab/visual-studio)
 
-### From Visual Studio
-
-You can create PRs directly from Visual Studio.
+To create PRs directly from Visual Studio:
 
 1. From the **Pull Requests** view in Team Explorer, select **New Pull Request**.
 
@@ -322,11 +319,9 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 
 # [Azure Command Line](#tab/azure-command-line)
 
-### From Azure CLI
+To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create). The only parameters you need to add are `repository` and `source-branch`. If you don't specify `target-branch`, the PR targets the default branch of the target repository. To open the PR in your browser after creation, use `open`.
 
-To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create). The only parameters you need to add are `repository` and `source-branch`. If you don't specify a `target-branch`, the PR targets the default branch of the target repository. To open the PR in your browser after creation, use `open`.
-
-For example, the following command creates a PR from the `new` branch to the default `main` branch of the Fabrikam repository, and then opens the PR in your browser:
+For example, the following command creates a PR from the `new` branch to the default `main` branch of the Fabrikam repository, and then opens the PR in the browser:
 
 ```azurecli
 az repos pr create --repository Fabrikam --source-branch new --open
@@ -530,7 +525,7 @@ Removing a link only removes the link between the work item and the PR. Links cr
 
 # [Visual Studio](#tab/visual-studio)
 
-When you create a PR in Visual Studio, enter a **Title** and detailed **Description** of your changes so others can see what problems the changes solve. Keep these fields up to date so reviewers can understand the changes in the PR.
+When you create a PR in Visual Studio, enter a title and detailed description of your changes so others can see what problems the changes solve. Keep these fields up to date so reviewers can understand the changes in the PR.
 
 To add reviewers, add tags, link work items, or change any details in an existing PR, open the PR in your browser. Right-click the PR from the **Pull Requests** view in Team Explorer, select **Open in browser**, and then make your updates on the PR's **Overview** page.
 
@@ -551,15 +546,15 @@ az repos pr create --repository Fabrikam --source-branch new --title "Update the
 
 Keep these fields up to date so reviewers can understand the changes in the PR. To update details of a PR, use `az repos pr update` with the required PR `id` parameter.
 
-For example, to update the title and description for PR #16, use:
+For example, to update the title and description for PR #21, use:
 
 ```azurecli
-az repos pr update --id 16 --description "These updates are *no longer new*." --title "Old updates"
+az repos pr update --id 21 --description "These updates are *no longer new*." --title "Old updates"
 ```
 
 ### Add reviewers
 
-You can add optional reviewers to a PR at creation with `az repos pr create --reviewer "<Reviewer Name>" "<Another Reviewer>"`.
+You can add optional reviewers to a PR at creation with<br>`az repos pr create --reviewer "<Reviewer Name>" "<Another Reviewer>"`.
 
 For example:
 
@@ -571,13 +566,13 @@ To add required reviewers, or change reviewers between optional and required, op
 
 To manage reviewers for an existing PR, use [az repos pr reviewer](/cli/azure/repos/pr/reviewer).
 
-- To add reviewers to an existing PR, use `az repos pr reviewer add --id <PR Id> --reviewer "<Reviewer Name>" "<Another Reviewer>"`.
+- To add reviewers to an existing PR, use<br>`az repos pr reviewer add --id <PR Id> --reviewer "<Reviewer Name>" "<Another Reviewer>"`.
 - To list the reviewers for a PR, use `az repos pr reviewer list --id <PR Id>`.
 - To remove reviewers from a PR, use `az repos pr reviewer remove --id <PR Id> --reviewer "<Reviewer Name>"`.
 
 ### Link work items
 
-You can link Azure Boards work items to PRs at PR creation with `az repos pr create --work-items <Id1> <Id2>`.
+You can link Azure Boards work items to PRs at PR creation with `az repos pr create --work-items <Id1> <Id2>`, where \<Id> is the work item's ID.
 
 For example:
 
@@ -598,9 +593,9 @@ To manage work items for an existing PR, use [az repos pr work-item](/cli/azure/
 
 ::: moniker range=">=azure-devops-2019"
 <a name="change-the-target-branch-of-a-pull-request"></a>
-### Change the target branch of a PR
+### Change the target branch of an active PR
 
-For most teams, nearly all PRs target a default branch, such as `main` or `develop`. If you sometimes need to target a different branch, it's easy to forget to change the target branch when creating the PR. To change the target branch of an active PR:
+For most teams, nearly all PRs target a default branch, such as `main` or `develop`. If you sometimes need to target a different branch, it's easy to forget to change the target branch when you create the PR. If that happens, you can change the target branch of an active PR:
 
 1. Select **More actions** at upper-right on the PR **Overview** page, and then select **Change target branch** from the dropdown menu.
 1. In the **Change target branch** pane, select **Choose a target branch**, select the new branch, and then select **Change**.
@@ -685,7 +680,7 @@ To remove draft status from a PR, set `draft` to `false`.
 
 The PR **Overview** tab shows the current state of the PR at a glance. You can review the title, description, and comments to understand proposed changes and see issues raised by other reviewers.
 
-Teams can set [branch policies](branch-policies.md) to require PRs for any changes on protected branches, and require those PRs to meet certain criteria. To help get a quick picture of PR status, the PR **Overview** tab summarizes branch policies that are passing or failing. If available, the summary shows a snippet of the failure message from the check's log. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View \<n> checks**.
+Teams can require PRs for any changes on protected branches, and set [branch policies](branch-policies.md) to require those PRs to meet certain criteria. To help get a quick picture of PR status, the PR **Overview** tab summarizes branch policies that are passing or failing. In some cases, the summary shows a snippet of the failure message from the check's log. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View \<n> checks**.
 
 :::image type="content" source="media/pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR overview tab.":::
 
@@ -734,12 +729,6 @@ Teams can set [branch policies](branch-policies.md) to require PRs for any chang
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
-
-- View code coverage metrics for changes to ensure that you've adequately tested your changes through automated tests. Coverage status appears as a comment in the PR overview. You can view details of coverage information for every code line changed in the file diff view.
-
-:::moniker-end
-
 ::: moniker range="azure-devops"
 - Browse a list of changes from the author on the **Updates** tab.
   
@@ -759,6 +748,12 @@ Teams can set [branch policies](branch-policies.md) to require PRs for any chang
   
   ![PR commits](media/pull-requests/pull-request-commits.png)
 ::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+- View code coverage metrics for changes to ensure that you've adequately tested your changes through automated tests. Coverage status appears as a comment in the PR overview. You can view details of coverage information for every code line changed in the file diff view.
+
+:::moniker-end
 
 <a name="leave-comments"></a>
 ### Make comments
@@ -781,7 +776,7 @@ Add comments to a PR to make suggestions, reply to previous comments, and point 
 
   ![Screenshot showing how to make a suggested change.](./media/pull-requests/add-suggestion.png)
 
-- Leave feedback not tied to a specific code line by commenting on the **Overview** tab.
+- Give feedback not tied to a specific code line by commenting on the **Overview** tab.
 
 - Address the author or other reviewers directly in your comments by using `@username`, and reference work items by using `#workitemID`. You can also reference other PRs by using `!pullrequestID`.
 
@@ -809,10 +804,10 @@ To vote on a PR, from the **Pull Requests** view in Team Explorer, right-click t
 
 To vote whether to approve a PR, use [az repos pr set-vote](/cli/azure/repos/pr#az_repos_pr_set_vote). The vote options are `approve`, `approve-with-suggestions`, `reject`, `reset`, or `wait-for-author`.
 
-For example, to vote to approve PR #16, use:
+For example, to vote to approve PR #21, use:
 
 ```azurecli
-az repos pr set-vote --id 16 --vote approve
+az repos pr set-vote --id 21 --vote approve
 ```
 
 
@@ -822,11 +817,12 @@ az repos pr set-vote --id 16 --vote approve
 ## Respond to reviews
 
 ::: moniker range="azure-devops"
-After updating your code in response to comments or to fix issues, [commit](commits.md) changes and [push](pushing.md) the updates to the branch in your Git repo.
-
-To make quick updates to your branch, select **Edit** on the **Files** page in your branch on the web.
+To make quick updates in response to comments or to fix issues, select **Edit** on the **Files** page in your branch on the web.
 
 ![Screenshot that shows the Edit button to update code directly in Azure Repos.](./media/pull-requests/edit-file.png)
+
+After updating your code, [commit](commits.md) changes and [push](pushing.md) the updates to the branch in your repo.
+
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
@@ -837,9 +833,9 @@ You can make quick updates to your branch directly from the **Files** tab in **C
 
 ### Address comments
 
-Reply directly to reviewers by using `@username` in the reply, and reference work items by using `#workitemID`. You can also reference other PRs by using `!pullrequestID`.
+Reply to comments and update comment status to let reviewers know how you're addressing their comments and suggestions. To resolve a comment without replying, select **Resolve** under the comment. To reply to the comment, type your response in the **Write a reply** field, and select **Reply**. Select **Reply & resolve** to reply to and resolve the comment. Reply to specific reviewers by using `@username` in the reply, and reference work items by using `#workitemID`. You can also reference other PRs by using `!pullrequestID`.
 
-Update the comment status to let reviewers know how you're addressing their review comments and suggestions. New comments start in **Active** status. Select **Resolve** or **Reply & resolve** to update comment status.
+New comments start in **Active** status. Select **Resolve** or **Reply & resolve** to update comment status to **Resolved**.
 
 ![Update comments in Azure Repos PRs.](./media/pull-requests/pr-comments-reply-and-resolve.png)
 
@@ -877,7 +873,7 @@ After the PR gets all required approvals and meets all branch policy requirement
 
    ![Screenshot that shows the Complete button options for the PR.](./media/pull-requests/complete-pr-options.png)
 
-1. On the **Complete pull request** screen:
+1. In the **Complete pull request** pane:
 
    1. Under **Merge type**, select one of the following options:
       - **Merge (no fast forward)**: Merge with a non-linear history that preserves all commits.
@@ -1009,17 +1005,17 @@ To complete a PR, from the **Pull Requests** view in Team Explorer, right-click 
 
 # [Azure Command Line](#tab/azure-command-line)
 
-If all required approvals and policies pass, you can complete a PR and merge the changes by updating the PR `status` to `completed` with [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update).
+To complete a PR and merge the changes, update the PR `status` to `completed` with [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update).
 
-For example, to complete PR #16, use:
+For example, to complete PR #21, use:
 
 ```azurecli
-az repos pr update --id 16 --status completed
+az repos pr update --id 21 --status completed
 ```
 
 ### Set completion options
 
-You can set PR completion options at PR creation with `az repos pr create`, or to update existing PRs with `az repos pr update`. 
+You can set PR completion options at PR creation with `az repos pr create`, or update existing PRs with `az repos pr update`. 
 
 PR completion options include:
 
@@ -1030,22 +1026,22 @@ PR completion options include:
 - `squash {false, true}`: Whether to squash the source commits into a single target commit for merge.
 - `transition-work-items {false, true}`: Whether to resolve linked work items when the PR merges.
 
-The following example completes PR #16, deletes its source branch, resolves its linked work items, and adds a merge commit message:
+The following example completes PR #21, deletes its source branch, resolves its linked work items, and adds a merge commit message:
 
 ```azurecli
-az repos pr update --id 16 --status completed --delete-source-branch true --transition-work-items true --merge-commit-message "This update is complete."
+az repos pr update --id 21 --status completed --delete-source-branch true --transition-work-items true --merge-commit-message "This update is complete."
 ```
 
 ### Complete automatically
 
-Set autocomplete to complete a PR automatically when it passes all required approvals and branch policies. You can set autocomplete at PR creation or to update an existing PR.
+Set autocomplete to complete a PR automatically when it passes all required approvals and branch policies. You can set autocomplete at PR creation, or update an existing PR.
 
 - To set autocomplete at PR creation, use `az repos pr create --auto-complete true`.
 - To update an existing PR to autocomplete, use `az repos pr update --id <PR Id> --auto-complete true`.
 
 ### Abandon your changes
 
-To abandon a PR without merging it, use `az repos pr update –-status abandoned`. You can reactivate the PR by setting the status to `active`.
+To abandon a PR without merging it, use `az repos pr update --id <PR Id> –-status abandoned`. You can reactivate the PR by setting the status to `active`.
 
 
 ***
@@ -1068,6 +1064,11 @@ There are a few situations when rebasing during PR completion isn't possible:
 In all these cases, you can still rebase your branch locally and then push upstream, or squash-merge your changes when you complete the PR.
 
 ::: moniker-end
+
+### Multiple merge base issue
+
+In some cases, a PR has more than one true merge base, and this can cause security issues. If the files in the PR have different versions between the merge bases, a multiple merge base warning happens. For more information and remediation, see [Multiple merge base issue](about-pull-requests.md#multiple-merge-base-issue). 
+
 
 ::: moniker range=">= tfs-2017" 
 ## Revert a PR
