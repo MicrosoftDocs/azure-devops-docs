@@ -18,12 +18,12 @@ ms.date: 10/11/2021
 
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 
-Perhaps you like to start with a significant picture and break it down into smaller deliverables. Or, you've got an existing backlog and now need to organize it.   
+Perhaps you like to start with several major features or scenarios and break them down into smaller deliverables. Or, you've got an existing backlog and now need to organize it.   
 
 The following image shows a Features portfolio backlog that consists of a flat list of Feature work items. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot ofthe Features portfolio Backlog.](media/features-epics/intro-image.png)
+> ![Screenshot of the Features portfolio Backlog.](media/features-epics/intro-image.png)
 
 
 No matter your starting point, you can use portfolio backlogs to bring more order to your backlog. 
@@ -263,8 +263,8 @@ Open each item by double-clicking, or press Enter to open a selected item. Then,
 
 ## Add child items
 
-With your features defined, you can add child items to them. Add child items from any backlog. 
-Also, add features to epics and backlog items to features. 
+With your features defined, add child items to them. You can add child items from any backlog. 
+And you can add features to epics and backlog items to features. 
 
 > [!TIP]  
 > You can also add child user stories (Agile), or product backlog items (Scrum) or requirements (CMMI) from the Kanban board for Features. And, you can add child features from the Epic board. For details, see [Kanban board features and epics](../boards/kanban-epics-features-stories.md). Also, you can quickly parent or reparent children from a backlog using the mapping pane as described in [Organize your backlog, map child work items to parents](organize-backlog.md).
