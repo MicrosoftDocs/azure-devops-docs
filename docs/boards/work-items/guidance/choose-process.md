@@ -1,5 +1,5 @@
 ---
-title: Choose an Azure DevOps Server process like Basic, Agile, Scrum, or CMMI
+title: Choose a process from your Azure DevOps project
 titleSuffix: Azure Boards
 description: Choose an Azure DevOps Server Basic, Agile, Scrum, or CMMI process flow or process template, work with project artifacts and work items in Azure Boards, Azure DevOps 
 ms.custom: work-items 
@@ -18,7 +18,7 @@ ms.date: 10/11/2021
 
 Anytime you create a project, you must choose a process or process template based on the process model you use. 
 - A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for Azure Boards. This model supports customization of projects through a WYSIWYG user interface. 
-- A **process template** defines the building blocks of the work item tracking system and other subsystems you access through Azure Boards or an on-premises Azure DevOps Server or Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models, which support customization of projects through the modification and import of XML definition files. 
+- A **process template** defines the building blocks of the work item tracking system and other subsystems you access through Azure DevOps. It supports Hosted XML and On-premises XML process models, which support customization of projects through the modification and import of XML definition files. 
 
 [!INCLUDE [temp](../../includes/note-configure-customize.md)]
 
@@ -54,7 +54,7 @@ Choose the process that provides the best fit for your team.
 ::: moniker range="<= tfs-2015"
 
 > [!NOTE]    
-> Epics are supported on Azure Boards and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../../organizations/settings/select-backlog-navigation-levels.md).  
+> Epics are supported on Azure Boards and Azure DevOps. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../../organizations/settings/select-backlog-navigation-levels.md).  
 
 ::: moniker-end
 
@@ -577,11 +577,11 @@ Work item types added to the Hidden Types category don't appear in the menus tha
 ::: moniker range="tfs-2013"
 
 > [!NOTE]    
-> If you upgraded your project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
+> If you upgraded your project from Azure DevOps 2013 or an earlier version to a later version, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
 >
-> The following WITs were added with the indicated TFS version:   
-> - Shared Parameters added with TFS 2013.2   
-> - Test Plan and Test Suite added with TFS 2013.3  
+> The following WITs were added with the indicated software version:   
+> - Shared Parameters added with Azure Dev Ops 2013.2   
+> - Test Plan and Test Suite added with Azure DevOps 2013.3  
 
 ::: moniker-end
 
