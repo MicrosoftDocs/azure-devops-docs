@@ -70,28 +70,27 @@ To learn more about the future of reporting for TFS, read [Reporting roadmap](..
 
 Build reports track the quality of software under development. By defining tests to run automatically as part of each build pipeline and instrumenting tests to gather code coverage data, you can gain insight about the quality of the builds, tests, and code. 
 
-<table>
-<tr valign="top">
-<td>
-<b>Build and test activities</b> 
-<ol>
-<li><a href="../../pipelines/agents/agents.md">Configure a build system</a></li>
-<li><a href="/azure/devops/pipelines/create-first-pipeline">Get started with CI/CD</a></li>
-<li><a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests">Run tests in your build process</a></li>
-<li>(Optional) <a href="/previous-versions/ms181734(v=vs.140)" data-raw-source="[Rate completed builds](/previous-versions/ms181734(v=vs.140))">Rate completed builds</a> to populate the Build Quality dimension.</li>
-</ol>
-</td>
-<td>
-<b>Build reports</b>
-<ul>
-    <li><a href="build-quality-indicators-report.md" data-raw-source="[Build Quality Indicators](build-quality-indicators-report.md)">Build Quality Indicators</a> (Agile and CMMI only)</li>
-    <li><a href="build-success-over-time-report.md" data-raw-source="[Build Success Over Time](build-success-over-time-report.md)">Build Success Over Time</a> (pictured)</li>
-    <li><a href="build-summary-report.md" data-raw-source="[Build Summary](build-summary-report.md)">Build Summary</a></li>
-</ul>
-    </td>
-</tr>
-</table>
+:::row:::
+   :::column span="1":::
+   
+   **Build and test activities** 
 
+   1. [Configure a build system](../../pipelines/agents/agents.md)
+   2. [Get started with CI/CD](/azure/devops/pipelines/create-first-pipeline)
+   3. [Run tests in your build process](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)
+   4. (Optional) [Rate completed builds](/previous-versions/ms181734(v=vs.140)) to populate the Build Quality dimension.
+
+   :::column-end:::
+   :::column span="1":::
+   
+   **Build reports**
+   
+   - [Build Quality Indicators](build-quality-indicators-report.md) (Agile and CMMI only)
+   - [Build Success Over Time](build-success-over-time-report.md) (pictured)
+   - [Build Summary](build-summary-report.md)
+   
+   :::column-end:::
+:::row-end:::
 
 ### Sample build success over time report
 
@@ -101,51 +100,43 @@ Build reports track the quality of software under development. By defining tests
 
 Project management reports provide insight into how much work the team is tackling within a sprint or release, and the rate of their progress. By linking work items and updating specific fields as work is performed, you can track the progress of individual stories and be able to more accurately estimate future activities. 
 
-<table width="100%">
-<tr valign="top">
-<td width="60%">
-<b>Work item tracking activities</b>
-    <ol>
-        <li><a href="../../boards/backlogs/create-your-backlog.md" data-raw-source="[Create the backlog](../../boards/backlogs/create-your-backlog.md)">Create the backlog</a>.
-            <ul>
-                <li>Create product backlog items and specify the <b>Effort</b> (Scrum).</li>
-                <li>Create user stories and specify the <b>Story Points</b> (Agile).</li>
-                <li>Create requirements and specify the <b>Size</b> (CMMI).</li>
-            </ul>
-        </li>
-        <li><a href="../../boards/sprints/assign-work-sprint.md" data-raw-source="[Work in sprints](../../boards/sprints/assign-work-sprint.md)">Work in sprints</a>. Assign backlog items to sprints, create tasks and link them to parent backlog items, and assign to a team member.</li>
-        <li>
-            <a href="../../boards/sprints/task-board.md" data-raw-source="[Update Remaining Work for tasks](../../boards/sprints/task-board.md)">Update Remaining Work for tasks</a>. For Agile and CMMI team projects, update <b>Completed Work</b> as well.
-            <br />
-            <b>Tip</b>
-            <br />
-            The only report that references <b>Original Estimate</b> is <a href="status-on-all-iterations-report.md" data-raw-source="[Status on All Iterations](status-on-all-iterations-report.md)">Status on All Iterations</a>.
-        </li>
-        <li>Create test cases and bugs, link them to their parent backlog item, and update their <b>State</b>.</li>
-        <li>(Optional) Assign work items to areas for filtering in reports.</li>
-    </ol>
-</td>
-    <td width="40%">
-        <b>Project management (Scrum) reports</b>
-        <ul>
-    <li><a href="backlog-overview-scrum.md" data-raw-source="[Backlog Overview (Scrum)](backlog-overview-scrum.md)">Backlog Overview (Scrum)</a></li>
-    <li><a href="release-burndown.md" data-raw-source="[Release Burndown](release-burndown.md)">Release Burndown</a></li>
-    <li><a href="sprint-burndown-scrum.md" data-raw-source="[Sprint Burndown (Scrum)](sprint-burndown-scrum.md)">Sprint Burndown (Scrum)</a></li>
-        </ul>
-        <b>Project management (Agile and CMMI) reports</b>
-        <ul>
-    <li><a href="burndown-and-burn-rate-report.md" data-raw-source="[Burndown and Burn Rate](burndown-and-burn-rate-report.md)">Burndown and Burn Rate</a></li>
-    <li><a href="remaining-work-report.md" data-raw-source="[Remaining Work](remaining-work-report.md)">Remaining Work</a></li>
-    <li><a href="requirements-overview-report-cmmi.md" data-raw-source="[Requirements Overview (CMMI)](requirements-overview-report-cmmi.md)">Requirements Overview (CMMI)</a></li>
-    <li><a href="requirements-progress-report-cmmi.md" data-raw-source="[Requirements Progress (CMMI)](requirements-progress-report-cmmi.md)">Requirements Progress (CMMI)</a></li>
-    <li><a href="status-on-all-iterations-report.md" data-raw-source="[Status on All Iterations](status-on-all-iterations-report.md)">Status on All Iterations</a></li>
-    <li><a href="stories-overview-report-agile.md" data-raw-source="[Stories Overview (Agile)](stories-overview-report-agile.md)">Stories Overview (Agile)</a></li>
-    <li><a href="stories-progress-report-agile.md" data-raw-source="[Stories Progress (Agile)](stories-progress-report-agile.md)">Stories Progress (Agile)</a></li>
-    <li><a href="unplanned-work.md" data-raw-source="[Unplanned Work](unplanned-work.md)">Unplanned Work</a></li>
-</ul>
-    </td>
-</tr>
-</table>
+:::row:::
+   :::column span="1":::
+   
+   **Work item tracking activities**
+
+   1. [Create the backlog](../../boards/backlogs/create-your-backlog.md).
+      - Create product backlog items and specify the **Effort** (Scrum).      
+	   - Create user stories and specify the **Story Points** (Agile).
+      - Create requirements and specify the **Size** (CMMI).
+   2. [Work in sprints](../../boards/sprints/assign-work-sprint.md). Assign backlog items to sprints, create tasks and link them to parent backlog items, and assign to a team member.
+   3. [Update Remaining Work for tasks](../../boards/sprints/task-board.md). For Agile and CMMI team projects, update **Completed Work** as well.
+      > [!Tip]  
+      > The only report that references **Original Estimate** is [Status on All Iterations](status-on-all-iterations-report.md).   
+   4. Create test cases and bugs, link them to their parent backlog item, and update their **State**.
+   5. (Optional) Assign work items to areas for filtering in reports.
+   :::column-end:::
+   :::column span="1":::
+   
+   **Project management (Scrum) reports**
+   
+   - [Backlog Overview (Scrum)](backlog-overview-scrum.md)
+   - [Release Burndown](release-burndown.md)
+   - [Sprint Burndown (Scrum)](sprint-burndown-scrum.md)
+   
+   **Project management (Agile and CMMI) reports**
+   
+   - [Burndown and Burn Rate](burndown-and-burn-rate-report.md)
+   - [Remaining Work](remaining-work-report.md)
+   - [Requirements Overview (CMMI)](requirements-overview-report-cmmi.md)
+   - [Requirements Progress (CMMI)](requirements-progress-report-cmmi.md)
+   - [Status on All Iterations](status-on-all-iterations-report.md)
+   - [Stories Overview (Agile)](stories-overview-report-agile.md)
+   - [Stories Progress (Agile)](stories-progress-report-agile.md)
+   - [Unplanned Work](unplanned-work.md)
+   
+   :::column-end:::
+:::row-end:::
 
 **Sample stories overview report**  
 
@@ -156,29 +147,30 @@ Project management reports provide insight into how much work the team is tackli
 
 Test planning reports support monitoring the test progress and coverage of backlog items or user stories. Bug tracking reports illustrate the team's capacity to find and resolve bugs.
 
-<table width="100%">
-<tr valign="top">
-<td width="60%">
-<b>Test planning and bug tracking activities</b>
-<ol>
-<li>Define test plans and test cases, and update their <b>State</b> as work progresses.</li>
-<li><a href="../../test/run-manual-tests.md" data-raw-source="[Mark the results of each validation step in manual tests](../../test/run-manual-tests.md)">Mark the results of each validation step in manual tests</a> as either passed or failed.</li>
-<li><b>Create bugs</b>, specify the <b>Priority</b> and <b>Severity</b>, assign to a team member, and update the <b>State</b>.</li>
-<li>(Optional) Assign test cases and bugs to areas and iterations to filter reports.</li>
-</ol>
-</td>
-<td width="40%">
-<b>Bug and test reports</b>
-<ul>
-    <li><a href="bug-status-report.md" data-raw-source="[Bug Status](bug-status-report.md)">Bug Status</a></li>
-    <li><a href="bug-trends-report.md" data-raw-source="[Bug Trends](bug-trends-report.md)">Bug Trends</a></li>
-    <li><a href="reactivations-report.md" data-raw-source="[Reactivations](reactivations-report.md)">Reactivations</a></li>
-    <li><a href="test-case-readiness-report.md" data-raw-source="[Test Case Readiness](test-case-readiness-report.md)">Test Case Readiness</a></li>
-    <li><a href="test-plan-progress-report.md" data-raw-source="[Test Plan Progress](test-plan-progress-report.md)">Test Plan Progress</a></li>
-</ul>
-</td>
-</tr>
-</table>
+:::row:::
+   :::column span="1":::
+   
+   **Test planning and bug tracking activities**
+
+   1. Define test plans and test cases, and update their **State** as work progresses.
+   2. [Mark the results of each validation step in manual tests](../../test/run-manual-tests.md) as either passed or failed.
+   3. **Create bugs**, specify the **Priority** and **Severity**, assign to a team member, and update the **State**.
+   4. (Optional) Assign test cases and bugs to areas and iterations to filter reports.
+
+   :::column-end:::
+   :::column span="1":::
+   
+   **Bug and test reports**
+   
+   - [Bug Status](bug-status-report.md)
+   - [Bug Trends](bug-trends-report.md)
+   - [Reactivations](reactivations-report.md)
+   - [Test Case Readiness](test-case-readiness-report.md)
+   - [Test Plan Progress](test-plan-progress-report.md)
+   
+   :::column-end:::
+:::row-end:::
+
 
 **Sample test plan progress report**   
 

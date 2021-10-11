@@ -212,31 +212,57 @@ A good rule of thumb is to size tasks to take no more than a day to complete. If
 
 During the sprint, team members update remaining work to continually reflect the time required to complete the task. This value can actually increase after work begins. For example, after working 4 hours on a task that was estimated to take 8 hours, you realize you need 16 hours over what you estimated. You would update the *Remaining Work* field with 20 (8-4+16).  As you complete a task, you might find that more time is required. Always update the task with your best estimate of remaining work. That way, you help accurately reflect the total amount of work remaining in the sprint.  
 
-<table>
-<thead>
-<tr>
-<th width="20%">Field</th>
-<th width="80%">Usage</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-    <td><p><a href="../queries/query-numeric.md" data-raw-source="[Original Estimate](../queries/query-numeric.md)">Original Estimate</a></p></td>
-    <td><p>The amount of approximate work required to complete a task. Typically, this field doesn&#39;t change after it's assigned.</p>
-<p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
-</td>
-</tr>
-<tr>
-    <td width="18%"><p><a href="../queries/query-numeric.md" data-raw-source="[Remaining Work](../queries/query-numeric.md)">Remaining Work</a></p></td>
-    <td><p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="set-capacity.md" data-raw-source="[capacity charts](set-capacity.md)">capacity charts</a> and the <a href="../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md)">sprint burndown chart</a>You can specify work in any unit of measurement your team chooses.</p></td></tr>
-<tr>
-    <td><p><a href="../queries/query-numeric.md" data-raw-source="[Completed Work](../queries/query-numeric.md)">Completed Work</a> </p></td>
-	<td><p>The amount of work spent implementing a task.</p></td></tr>
-<tr>
-    <td><p><a href="../queries/query-numeric.md" data-raw-source="[Activity](../queries/query-numeric.md)">Activity</a> </p></td>
-	<td><p>Select the type of activity this task represents when your team plans sprint capacity by activity.</p></td></tr>
-</tbody>
-</table>  
+:::row:::
+   :::column span="1":::
+   **Field**
+   :::column-end:::
+   :::column span="3":::
+   **Usage**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   [Original Estimate](../queries/query-numeric.md)
+
+   :::column-end:::
+   :::column span="3":::
+   The amount of approximate work required to complete a task. Typically, this field doesn&#39;t change after it's assigned.
+
+   You can specify work in hours or in days. There are no inherent time units associated with this field.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Remaining Work](../queries/query-numeric.md)
+
+   :::column-end:::
+   :::column span="3":::
+   The amount of work remaining to complete a task. As work progresses, update this field. It's used to calculate [capacity charts](set-capacity.md) and the [sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md). You can specify work in any unit of measurement your team chooses.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Completed Work](../queries/query-numeric.md) 
+
+   :::column-end:::
+   :::column span="3":::
+   The amount of work spent implementing a task.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Activity](../queries/query-numeric.md) 
+
+   :::column-end:::
+   :::column span="3":::
+   Select the type of activity this task represents when your team plans sprint capacity by activity.
+
+   :::column-end:::
+:::row-end:::
 
 
 <a id="unparented-tasks">  </a>
@@ -270,5 +296,3 @@ Tasks without links to parent backlog items or user stories appear at the top of
 - [Setup your Backlogs & Boards](../backlogs/set-up-your-backlog.md)  
 - [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)   
 - [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
-
-

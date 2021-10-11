@@ -5,7 +5,7 @@ ms.custom: pipelinesresourcesrefresh
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: atulmal
-ms.date: 07/13/2021
+ms.date: 10/11/2021
 monikerRange: azure-devops
 ---
 
@@ -43,7 +43,7 @@ A [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/conf
 2. Select **Azure Kubernetes Service** in the Provider dropdown.
 3. Choose the Azure subscription, cluster, and namespace (new/existing).
 4. Select **Validate and create** to create the Kubernetes resource.
-5. Verify that you see a cluster for your environment.
+5. Verify that you see a cluster for your environment. You'll see the text "Never deployed" if you have not yet deployed code to your cluster. 
 
     :::image type="content" source="media/kubernetes-environment-cluster.png" alt-text="Add a Kubernetes cluster.":::
 
