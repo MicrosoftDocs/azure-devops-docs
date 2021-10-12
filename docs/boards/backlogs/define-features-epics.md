@@ -113,7 +113,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
     > [!div class="mx-imgBorder"]  
     > ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
-1. Choose the portfolio backlog that you want, **Features** or **Epics**. 
+1. Choose the portfolio backlog that you want, **Features**. or **Epics**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Choose product backlog level, Backlog items, Stories, or Requirements](media/features-epics/choose-features-epics-agile.png) 
@@ -151,13 +151,13 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 <a name="add-features-epics"></a>
 <a name="add-features"></a>
 
-## Add features and epics 
+## Add features and epics to  your backlog
 
 Just as you can [add items to your product backlog](create-your-backlog.md), you can add items to your features and epics backlogs. 
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To add a feature, choose the ![plus-icon](../../media/icons/blue-add-icon.png)**New Work Item**, enter a title, and then press Enter or choose **Add to top**. 
+1. To add a feature, choose the ![plus-icon](../../media/icons/blue-add-icon.png)**New Work Item**, enter a title, and then press **Enter** or choose **Add to top**. 
 
     > [!div class="mx-imgBorder"]
     > ![Add a product backlog item](media/features-epics/add-new-items-agile.png) 
