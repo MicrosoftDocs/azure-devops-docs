@@ -1,7 +1,7 @@
 ---
-title: Edit multiple user stories, & other work items
+title: Edit user stories and other work items in bulk in Azure Boards
 titleSuffix: Azure Boards
-description: Bulk edit/modify/update several/multiple backlog items, tasks, or bugs or linked parent-child items for Azure Boards or TFS 
+description: Learn how to quickly make the same change to many work items in Azure Boards using the bulk modify feature. 
 ms.technology: devops-agile
 ms.custom: "boards-backlogs, seodec18, linked-from-support" 
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
@@ -9,19 +9,19 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 04/22/2021
+ms.date: 10/08/2021
 ---
 
-# Bulk modify work items  
+# Modify work items in bulk in Azure Boards 
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-Use bulk modify when you need to quickly make the same change to a number of work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value.  
+Use bulk modify when you need to quickly make the same change to many work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value.  
 
 > [!TIP]    
-> To add work items in bulk or update multiple fields with different values, use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). You can't perform a bulk add of work items through the web portal.   
+> To add work items in bulk or update multiple fields with different values, use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). You can't complete a bulk add of work items through the web portal.   
 
-With bulk modify, you can edit fields, add or remove tags, reassign work, or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions you've been granted.
+With bulk modify, you may edit fields and add or remove tags. You can also reassign work or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions you've been granted.
 
 In this article you'll learn:  
 
@@ -46,7 +46,7 @@ In this article you'll learn:
 
 ## Supported tasks
 
-All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
+All of the following actions can be completed by team members that belong to the Contributors group. Members provided with Stakeholder access can run multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -288,7 +288,7 @@ All of the following actions can be performed by team members that belong to the
 <a id="multi-select"> </a>  
 <a id="edit"> </a>  
 
-## Bulk edit multi-selected work items   
+## Edit multiple work items in bulk   
 
 To start a bulk edit, begin by multi-selecting the work items you want to modify, either from the query results or the backlog. You can craft your query using the [query editor or search box](../queries/using-queries.md). 
 
@@ -304,7 +304,7 @@ Requires TFS 2015.1 or later versions.
 
 ::: moniker-end
 
-You can use bulk modify by selecting work items from the backlog page or query results list. From the backlog page context menu, you can change the backlog priority of several items (Change position or Move to position), assign them to a team member, move them to a different sprint, or [map them to a feature](organize-backlog.md#mapping).
+You can use bulk modify by selecting work items from the backlog page or query results list. From the backlog page context menu, change the backlog priority of several items (Change position or Move to position). Then,  assign them to a team member, move them to a different sprint, or [map them to a feature](organize-backlog.md#mapping).
 
 The menu options available to you change depending on the platform you work from and whether you work from a backlog page or query results list.  
 
@@ -372,11 +372,11 @@ The menu options available to you change depending on the platform you work from
 
 ::: moniker-end
 
-### To multi-select and open the context menu 
+### Select multiple items and open the context menu 
 
 To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint. 
 
-To open the context menu, click (  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: ) or (![context icon](../media/icons/context_menu.png)), and then choose the option from the menu. 
+To open the context menu, select (  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: ) or (![context icon](../media/icons/context_menu.png)), and then choose the option from the menu. 
 
 Here, we use the context menu to move several non-sequential items to the current sprint.
 
@@ -408,7 +408,7 @@ Here, we use the context menu to move several non-sequential items to the curren
 
 ## Reassign work items 
 
-With work items selected, open the context menu for any selected item, and reassign all of them. By doing this, you can quickly assign them to a member of your team or to another sprint or iteration. 
+With work items selected, open the context menu for any selected item, and reassign all of them. By doing reassigning them, you can quickly assign them to a member of your team or to another sprint or iteration. 
 
 ::: moniker range=">= tfs-2017"
 
@@ -422,7 +422,7 @@ With work items selected, open the context menu for any selected item, and reass
 ![Assign to link from work item context menu](media/IC700157.png)  
  ::: moniker-end
 
-To learn more about the *Assign To* and *Iteration Path* fields, see [Query by assignment, workflow or Kanban board changes](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
+To learn more about the *Assign To* and *Iteration Path* fields, see [Query by assignment, workflow, or Kanban board changes](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
 
 <a id="edit-fields"> </a>  
 
@@ -437,7 +437,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 	> [!div class="mx-imgBorder"]  
 	> ![Edit work items dialog](media/bulk-modify/edit-work-items-new-text-editor.png)  
 
-2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  The **Save items** button may be in a different place in the UI than shown in the picture below, depending on the layout of your browser and the specific version in use.
+2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes haven't yet been saved to the data store.  The **Save items** button may be in a different place in the UI than shown in the picture below, depending on the layout of your browser and the specific version in use.
 
     > [!div class="mx-imgBorder"]  
     > ![Query results page, save bulk modified items](media/bulk-modify/query-results-bulk-save-items.png) 
@@ -450,7 +450,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
     ![TFS 2017, Query results page, bulk edit fields](media/bulk-modify-edit-fields-ts.png)  
 
-2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
+2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes haven't yet been saved to the data store.  
 
     ![Azure Boards and TFS 2017, Query results page, save bulk modified items](media/bulk-modify-save-ts.png)
 
@@ -464,7 +464,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
     ![TFS 2015, web portal, Query results page, Edit work items dialog, bulk modify fields](media/IC666563.png)
 
-2. Save all work items that you bulk-modified. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
+2. Save all work items that you bulk-modified. Work items shown in bold text indicate that local changes haven't yet been saved to the data store.  
 
     ![TFS 2015, web portal, query results page, Bulk modify save results](media/IC677240.png)  
 
@@ -478,11 +478,11 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 <a id="rich-text"> </a> 
 
-## Bulk modify rich-text fields
+## Modify rich-text fields in bulk
 
 Rich-text fields support entry of HTML syntax tags to support formatting. Rich-text fields correspond to the **Description**, **Acceptance Criteria**, **Repos Steps**, and others listed in [Query samples for select fields](../queries/query-index-quick-ref.md#query-samples-for-select-fields). 
 
-You can bulk update a rich-text field by using the bulk modify tool, selecting the field, and entering the text with syntax in the **Value** field. Or, you can create a work item template with the text you want to use and perform a bulk update by applying the template to the selected work items. For details on using work item templates, see [Use templates to add and update work items](work-item-template.md) 
+You can bulk update a rich-text field by using the bulk modify tool, selecting the field, and entering the text with syntax in the **Value** field. Or, you can create a work item template with the text you want to use and complete a bulk update by applying the template to the selected work items. For details on using work item templates, see [Use templates to add and update work items](work-item-template.md) 
 
 For a worked example using templates showing entry of HTML formatted syntax, see [Sample work item templates, Add guidance in a rich-text field](../work-items/work-item-template-examples.md#rich-text). 
 
@@ -490,7 +490,7 @@ For a worked example using templates showing entry of HTML formatted syntax, see
 
 ::: moniker range=">= tfs-2015"
 
-## Bulk modify tags 
+## Modify tags in bulk 
 
 From the Edit work items dialog, select **Tags (Add)** or **Tags (Remove)**.  
 ::: moniker-end

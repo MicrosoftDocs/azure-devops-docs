@@ -1,17 +1,17 @@
 ---
-title: Move work items, change work item type  
+title: Move work items and change the work item type in Azure Boards
 titleSuffix: Azure Boards
-description: How to change type or move work items to another project in Azure Boards
+description: Learn how to change the work item type or move work items to another project in Azure Boards.
 ms.custom: "boards-backlogs, seodec18, cross-project" 
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/07/2021
+ms.date: 10/08/2021
 ---
 
-# Move work items, change work item type 
+# Move work items and change the work item type 
 
 [!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
@@ -116,7 +116,7 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 	> [!NOTE]     
 	> The system automatically resets the State and Reason fields to the default initial values of the specified type. However, in some cases you may need to open the work item to change the State or Reason field to a value supported by the changed-to work item type.
 
-	From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store. The system automatically saves each work item. Refresh the page to reflect your changes.   
+	From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they're automatically saved. Work items shown in bold text indicate that local changes haven't yet been saved to the data store. The system automatically saves each work item. Refresh the page to reflect your changes.   
 
 <a id="move"> </a>  
 
@@ -124,7 +124,7 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 
 When you discover that a work item belongs to a different project within your organization or collection, you can move it where it belongs. You can move a single work item or several [multi-selected work items](bulk-modify-work-items.md).  
 
-Note the following: 
+Note the following information: 
 - You can only move work items from one project to another project within the organization or collection. 
 - You can only move work items whose type exists in the project you're moving it to. For example, you can't move User Stories to a project that is based on the Scrum process that doesn't contain User Story as a work item type. 
 - You can't move work items associated with test management. 
