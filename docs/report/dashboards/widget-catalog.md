@@ -261,7 +261,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="assigned-to-me-widget"></a>
-      Displays the list of active work items assigned to the currently logged in user. The list ignores closed, removed, cut, or deleted work items.
+      Displays the list of active work items assigned to the currently logged in user. The list ignores closed, removed, cut, or deleted work items and other work item types which are not aligned to any backlogs.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
