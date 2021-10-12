@@ -1,7 +1,7 @@
 ---
-title: Create your product backlog  
+title: Create your product backlog in Azure Boards
 titleSuffix: Azure Boards
-description: Add backlog items or user stories to plan your project, prioritize, and estimate deliverables in Azure Boards and Azure DevOps   
+description: Learn how to add backlog items or user stories to plan your project, prioritize, and estimate deliverables in Azure Boards and Azure DevOps.   
 ms.custom: "boards-backlogs, seodec18, contperf-fy20q4" 
 ms.technology: devops-agile
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
@@ -24,7 +24,7 @@ Your product backlog corresponds to your project plan, the roadmap for what your
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of a Backlog of Scrum process product backlog items.](media/create-backlog/intro-image.png)
 
-After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team. And, you're able to [interactively filter the backlog](filter-backlogs-boards-plans.md) to focus on a subset of work items.  
+After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team. And, you can [interactively filter the backlog](filter-backlogs-boards-plans.md) to focus on a subset of work items.  
 
 [!INCLUDE [temp](../includes/note-configure-customize.md)]
 
@@ -82,7 +82,7 @@ From your web browser, open your product backlog.
 
 ::: moniker range=">= azure-devops-2020"
 
-1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
+1. (1) Check that you've selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-backlogs-backlog-s155-co.png)
@@ -158,7 +158,7 @@ On your web browser, open your team's product backlog. Select **Boards** > **Bac
 
 ## Track bugs on your backlog 
 
-You can choose how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](../sprints/task-board.md).
+You can choose how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks completed in support of a requirement. The bugs then appear on their [taskboard](../sprints/task-board.md).
 
 Before deciding, review [Configure and customize, Treat bugs as requirements or tasks](../configure-customize.md#show-bugs) for guidance. Or, go directly to [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
@@ -231,12 +231,12 @@ To reorder your backlog, drag the work items. Or, if you prefer to use the keybo
 
 Backlogs that participate in portfolio management or that contain nested same-type child items might not allow you to reorder the items. For more information, see these articles:  
 - [Backlogs, portfolios, and Agile project management, Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
-- [Fix re-ordering and nesting issues](resolve-backlog-reorder-issues.md)
+- [Fix reordering and nesting issues](resolve-backlog-reorder-issues.md)
 
 
 <a id="estimates">  </a>
 
-## Add details and estimates
+## Add details and estimates to backlog items
 
 Building and prioritizing your backlog provides you with a high-level roadmap. Before your team can start work on any item, however, they need more details. You capture these details within the work item form.
 
@@ -252,7 +252,7 @@ Enter as much detail as the team needs to:
 [!INCLUDE [temp](../includes/note-user-assigned.md)]
 
 
-#### [Agile process](#tab/agile-process) 
+### [Agile process](#tab/agile-process) 
 
 For example, here we assign the story to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. 
 
@@ -262,7 +262,7 @@ For example, here we assign the story to Raisa Pokrovskaya and we add a discussi
  Choose **Save & Close** when done. 
 
 
-#### [Basic process](#tab/basic-process) 
+### [Basic process](#tab/basic-process) 
 
 For example, here we assign the issue to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. 
 
@@ -271,7 +271,7 @@ For example, here we assign the issue to Raisa Pokrovskaya and we add a discussi
 
 Choose **Save & Close** when done. 
 
-#### [Scrum process](#tab/scrum-process) 
+### [Scrum process](#tab/scrum-process) 
 
 For example, here we assign the product backlog item to Christie Church and set an Effort level of 8. 
 
@@ -281,7 +281,7 @@ For example, here we assign the product backlog item to Christie Church and set 
 Choose **Save & Close** when done. 
 
 
-#### [CMMI process](#tab/cmmi-process) 
+### [CMMI process](#tab/cmmi-process) 
 
 For example, here we assign the product backlog item to Jamal Hartnett and set Size to 8. 
 
@@ -310,7 +310,7 @@ Choose **Save & Close** when done.
       [Effort](../queries/query-numeric.md), [Story Points](../queries/query-numeric.md), [Size](../queries/query-numeric.md)
    :::column-end:::
    :::column span="3":::
-      Provide a relative estimate of the amount of work required to complete a PBI. For user stories and requirements, you capture estimates in <strong>Story Points</strong> and <strong>Size</strong>.<br/><p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers.  
+      Provide a relative estimate of the amount of work required to complete a PBI. For user stories and requirements, you capture estimates in <strong>Story Points</strong> and <strong>Size</strong>.<br/><p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, and so on). Use any numeric unit of measurement your team prefers.  
       The estimates you set for **Effort**, **Size**, or **Story Points** are used to calculate [velocity](../../report/dashboards/team-velocity.md) and [forecast sprints](../sprints/forecast.md).
    :::column-end:::
 :::row-end:::
@@ -352,7 +352,7 @@ Choose **Save & Close** when done.
 <a id="show-hide-in-progress" />  
 
 
-## Show/hide In progress items
+## Show/hide items that are in progress
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -379,7 +379,7 @@ You usually choose to hide **In Progress items** when you want to forecast work.
 
 ::: moniker range=">= azure-devops-2020"
 
-## Show/hide Completed child items
+## Show/hide child items that are complete
 
 From the **View options** selector, you can choose to show or hide **Completed Child items**.   
 
@@ -400,7 +400,7 @@ Now that you have a working backlog in place, your team can begin work on the to
 > [!div class="nextstepaction"]
 > [Scrum: Schedule sprints](../sprints/define-sprints.md) or [Kanban](../boards/kanban-quickstart.md) 
 
-Teams that want the least overhead in terms of tracking and estimating might prefer Kanban. Teams that like to work at a steady cadence and plot the details of their sprint plan might prefer Scrum and sprint planning.
+Teams that want the least overhead for tracking and estimating might prefer Kanban. Teams that like to work at a steady cadence and plot the details of their sprint plan might prefer Scrum and sprint planning.
 
 
 ## Related articles
