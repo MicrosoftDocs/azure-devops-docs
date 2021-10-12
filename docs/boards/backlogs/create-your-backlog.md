@@ -24,7 +24,7 @@ Your product backlog corresponds to your project plan, the roadmap for what your
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of a Backlog of Scrum process product backlog items.](media/create-backlog/intro-image.png)
 
-After you define it, you have an prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team. And, you can [interactively filter the backlog](filter-backlogs-boards-plans.md) to focus on a subset of work items.  
+After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team. And, you can [interactively filter the backlog](filter-backlogs-boards-plans.md) to focus on a subset of work items.  
 
 [!INCLUDE [temp](../includes/note-configure-customize.md)]
 
@@ -216,7 +216,7 @@ Repeat this step until you capture all your main ideas.
 
 ## Reorder your backlog
 
-After you have some items in your backlog, you can reorder them to create an prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next. 
+After you have some items in your backlog, you can reorder them to create a prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next. 
 
 > [!TIP]  
 > You can't sort your backlog on a column. To view a sorted listed, select **Create query**. Save and open the query, and then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
