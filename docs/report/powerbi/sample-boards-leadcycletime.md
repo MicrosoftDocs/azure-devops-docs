@@ -1,17 +1,17 @@
 ---
-title: Lead/Cycle time sample Power BI report 
+title: Lead time and Cycle time sample Power BI report 
 titleSuffix: Azure DevOps
-description: How to generate Lead/Cycle time Power BI reports
+description: Learn how to generate Lead time and Cycle time Power BI reports.
 ms.technology: devops-analytics
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/21/2021
+ms.date: 10/05/2021
 ---
 
-# Lead/cycle time sample report
+# Lead time and Cycle time sample report
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
@@ -65,8 +65,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-- {areapath} - Your Area Path. Example format: Project\Level1\Level2
-- {startdate} - Start your report for items completed on/after a given date. Format: YYYY-MM-DDZ. Example: 2019-04-01Z represents 2019-April-01. Do not enclose in quotes.
+- `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
+- `{startdate}` - Start your report for items completed on/after a given date. Format: YYYY-MM-DDZ. Example: `2019-04-01Z` represents 2019-April-01. Don't enclose in quotes.
 
 
 ### Query breakdown
@@ -110,7 +110,7 @@ The following table describes each part of the query.
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
    :::column span="1":::
-   Work items under a specific Area Path. Replacing with "Area/AreaPath eq '{areapath}'" returns items at a specific Area Path.
+   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
    
    To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`
    :::column-end:::
@@ -128,7 +128,7 @@ The following table describes each part of the query.
    `, CycleTimeDays, LeadTimeDays, CompletedDateSK`
    :::column-end:::
    :::column span="1":::
-   Also return the Cycle/Lead Time fields, as well as CompletedDateSK. CompletedDateSK is the CompletedDate as an integer
+   Return the Cycle/Lead Time fields and CompletedDateSK. CompletedDateSK is the CompletedDate as an integer
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -149,7 +149,7 @@ The following table describes each part of the query.
 
 ### Change LeadTimeDays and CycleTimeDays to data type: Whole Number
 
-The LeadTimeDays and CycleTimeDays are decimal fields. For example if Lead Time is 10 and 1/2 days, the value is 10.5. Since most Lead/Cycle Time reports assume that this is rounded to the nearest day, we need to convert these fields to an Integer. Making this conversion converts all values less than 1 to 0. 
+The LeadTimeDays and CycleTimeDays are decimal fields. For example if Lead Time is 10 and 1/2 days, the value is 10.5. Since most Lead/Cycle Time reports assume that it's rounded to the nearest day, we need to convert these fields to an Integer. Making this conversion converts all values less than 1 to 0. 
 
 1. Select the LeadTimeDays column by clicking the column header.
 1. Select the **Transform** menu.
@@ -158,13 +158,13 @@ The LeadTimeDays and CycleTimeDays are decimal fields. For example if Lead Time 
 
 ### Change CompletedDateSK to a Date field
 
-The CompletedDateSK field is the integer version of the Completed Date field in the format YYYYMMDD. For example the integer value of 2019-July-01 is 20190701. For easier reporting, we change this to a Date field.
+The CompletedDateSK field is the integer version of the Completed Date field in the format YYYYMMDD. For example, the integer value of 2019-July-01 is 20190701. For easier reporting, we change it to a Date field.
 
 1. Select the CompletedDateSK column by choosing the column header.
 1. Select the **Transform** menu.
 1. Select **Data Type** and change to **Text**.
 1. Select **Date Type** (again) and change to **Date**.
-1. When the **Change Column Type** dialog appears, select **Add new step** (rather than **Replace current step**). This 2-step process is the easiest way to change it to a proper Date field in Power BI.
+1. When the **Change Column Type** dialog appears, select **Add new step** (rather than **Replace current step**). This two-step process is the easiest way to change it to a proper Date field in Power BI.
 
 
 [!INCLUDE [temp](includes/sample-finish-query.md)]
@@ -203,7 +203,7 @@ To pivot the report by Area Path (representing teams), add the field "Area.AreaP
 
 ## Additional queries
 
-You can use the following additional queries to create different but similar reports.You can use these queries with the steps defined above.
+You can use the following additional queries to create different but similar reports. You can use these queries with the steps defined above.
 
 ### Filter by Teams, rather than Area Path
 
