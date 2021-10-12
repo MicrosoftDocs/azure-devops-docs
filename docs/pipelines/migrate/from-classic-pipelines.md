@@ -27,27 +27,27 @@ Do the following steps to create a sample YAML pipeline, which you'll update lat
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select your project.
 
-1. Select **Pipelines**, and then **New pipeline**.
+2. Select **Pipelines**, and then **New pipeline**.
 
-:::image type="content" source="media/pipelines-new-pipeline.png" alt-text="Two buttons to select for new pipeline creation.":::
+   :::image type="content" source="media/pipelines-new-pipeline.png" alt-text="Two buttons to select for new pipeline creation.":::
 
-1. Select the location for your source code as either **GitHub** or **Azure Repos Git**.
+3. Select the location for your source code as either **GitHub** or **Azure Repos Git**.
 
    :::image type="content" source="media/source-code-location.png" alt-text="List of possible selections for your source code.":::
 
-1. Select a repository.
+4. Select a repository.
 
    :::image type="content" source="media/select-repository.png" alt-text="Page where you select a repository for your source code pipeline.":::
 
-1. On the Configure your pipeline page, select **Starter pipeline**.
+5. On the Configure your pipeline page, select **Starter pipeline**.
 
    :::image type="content" source="media/select-pipeline-template.png" alt-text="List of templates to choose from for configuring your new pipeline.":::
 
-1. Select **Save and run**.
+6. Select **Save and run**.
 
    :::image type="content" source="media/save-run-new-yaml-pipeline.png" alt-text="Review page where you select Save and run.":::
 
-1. Enter your commit message, select **Commit directly to the main branch**, and then choose **Save and run** again. A new run starts and it's committed to the repository. Wait for the run to finish.
+7. Enter your commit message, select **Commit directly to the main branch**, and then choose **Save and run** again. A new run starts and it's committed to the repository. Wait for the run to finish.
 
    :::image type="content" source="media/commit-save-run.png" alt-text="Commit message to commit to the main branch, and then select Save and run button.":::
 
@@ -57,21 +57,21 @@ Do the following steps to export your Classic pipeline to a YAML file that you c
 
 1. Open your Classic pipeline.
 
-1. Select the ellipses (...), and then select **Export to YAML**.
+2. Select the ellipses (...), and then select **Export to YAML**.
 
     :::image type="content" source="media/export-yaml.png" alt-text="Screenshot of context menu, to export your pipeline to YAML.":::
 
-1. Open the downloaded YAML file in your code editor.
+3. Open the downloaded YAML file in your code editor.
 
-1. If your YAML pipeline includes variables defined in the Classic UI, define the variables again in your pipeline settings UI or in your YAML file. For more information, see [Define variables](../process/variables.md).
+4. If your YAML pipeline includes variables defined in the Classic UI, define the variables again in your pipeline settings UI or in your YAML file. For more information, see [Define variables](../process/variables.md).
 
-1. Review any `cron` schedules in your YAML file. By default, `cron` schedules in YAML are in UTC. In Classic pipelines, they are in the organization's timezone. For more information, see [Configure schedules for pipelines](../process/scheduled-triggers.md).
+5. Review any `cron` schedules in your YAML file. By default, `cron` schedules in YAML are in UTC. In Classic pipelines, they are in the organization's timezone. For more information, see [Configure schedules for pipelines](../process/scheduled-triggers.md).
 
-1. Use the Task Assistant to make any other changes to the YAML file. The Task Assistant is a pane on the right side of the screen, which helps you correctly create and modify YAML steps.
+6. Use the Task Assistant to make any other changes to the YAML file. The Task Assistant is a pane on the right side of the screen, which helps you correctly create and modify YAML steps.
 
     :::image type="content" source="media/task-assistant-yaml.png" alt-text="Configure your pipeline task with Task Assistant.":::
 
-1. **Save and run** your pipeline.
+7. **Save and run** your pipeline.
 
 ## Clean up resources
 
