@@ -1,14 +1,14 @@
 ---
 title: Work Items with Direct Links sample report
 titleSuffix: Azure DevOps
-description: How to generate Power BI reports based on Work Items with Direct Links
+description: Learn how to generate Power BI reports based on Work Items with Direct Links.
 ms.technology: devops-analytics
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/21/2021
+ms.date: 10/05/2021
 ---
 
 # Work items with direct links sample reports
@@ -20,7 +20,7 @@ This article shows you how to list a given set of User Stories and their linked 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Direct Links - Report](media/odatapowerbi-directlinks-report.png)
 
-Other sample queries include listing bugs with a Duplicate link to another bug, and listing bugs which don't contain a Duplicate link to another bug.
+Other sample queries include listing bugs with a Duplicate link to another bug, and listing bugs that don't contain a Duplicate link to another bug.
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -75,7 +75,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-* {areapath} - Your Area Path. Example format: Project\Level1\Level2
+* `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
 
 
 ### Query breakdown
@@ -190,7 +190,7 @@ The following table describes each part of the query.
 
 ### Expand the Links column
 
-1. Click the expand button on the Links column.
+1. Select the expand button on the Links column.
 
     > [!div class="mx-imgBorder"] 
     > ![Power BI + OData - expanding a Links column](media/odatapowerbi-expandlinks.png)
@@ -200,10 +200,10 @@ The following table describes each part of the query.
     > [!div class="mx-imgBorder"] 
     > ![Select all the fields to flatten.](media/odatapowerbi-expandlinks2.png)
 
-1. Click the expand button on the Links.TargetWorkItem column.
+1. Select the expand button on the Links.TargetWorkItem column.
 
     > [!div class="mx-imgBorder"] 
-    > ![Click the expand button on the Links.TargetWorkItem column.](media/odatapowerbi-expandlinks3.png)
+    > ![Select the expand button on the Links.TargetWorkItem column.](media/odatapowerbi-expandlinks3.png)
 
 1. Select the fields of the Target Work Item to flatten.
 
@@ -246,7 +246,7 @@ For a simple report, do the following steps:
 1. Add column "Link.TargetWorkItem.WorkItemID" to **Values**.
     - Right-click "Link.TargetWorkItem.WorkItemID" and select **Don't summarize**.
 1. Add column "Link.TargetWorkItem.Title" to **Values**.
-1. In **Filters**, for the column "Link.TargetWorkItem.WorkItemID", select **Show items when value** and select the option **is not blank**. Then click **Apply Filter**.
+1. In **Filters**, for the column "Link.TargetWorkItem.WorkItemID", select **Show items when value** and select the option **is not blank**. Then select **Apply Filter**.
     - This action filters out any work items that don't have a link.
 
 The resulting example report is shown in the following image.

@@ -1,21 +1,21 @@
 ---
 title: Publish a Power BI Desktop file to Power BI  
 titleSuffix: Azure DevOps 
-description: How to publish and enable refresh of a Power BI Desktop file to Power BI that uses Analytics for Azure DevOps 
+description: Learn how to publish and enable refresh of a Power BI Desktop file to Power BI that uses Analytics for Azure DevOps. 
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
 ms.author: kaelli
 monikerRange: '>=azure-devops-2019'
 author: KathrynEE
-ms.date: 11/01/2018
+ms.date: 10/05/2021
 ---
 
 # Publish a Power BI Desktop file to Power BI 
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures and charts, you can share those with others by creating a dashboard on Power BI. This article shows you how.   
+Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures, and charts, you can share them with others by creating a dashboard on Power BI. This article shows you how.   
 
 ## Publish to Power BI
 
@@ -27,7 +27,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
     :::image type="content" source="media/publish-1.png" alt-text="Publish Power BI Desktop file":::
 
-1. Respond to the prompts to sign in. If you don't already have a Power BI account you will need to create one. Select **Sign in**.
+4. Respond to the prompts to sign in. If you don't already have a Power BI account, you'll need to create one. Select **Sign in**.
   
     :::image type="content" source="media/publish-2.png" alt-text="Publishing successful":::
 
@@ -39,7 +39,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 1. Select **Datasets** in the upper right corner.
 
-1. Select the ellipsis next to the dataset that represents the report you just loaded (this is typically the file name).   
+8. Select the ellipsis next to the dataset that represents the report you just loaded. It's typically the file name.
 
     :::image type="content" source="media/publish-3.png" alt-text="Select the dataset":::
 
