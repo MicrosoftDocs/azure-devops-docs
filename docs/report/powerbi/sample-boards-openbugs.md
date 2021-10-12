@@ -1,14 +1,14 @@
 ---
 title: Open bugs sample Power BI report 
 titleSuffix: Azure DevOps
-description: How-to generate an open bugs Power BI report  
+description: Learn how to generate an open bugs Power BI report.
 ms.technology: devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/21/2021
+ms.date: 10/05/2021
 ---
 
 # Open bugs sample report 
@@ -63,7 +63,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-- {areapath} - Your Area Path. Example format: Project\Level1\Level2
+- `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`
 
 
 ### Query breakdown
@@ -99,7 +99,7 @@ The following table describes each part of the query.
    `and startswith(Area/AreaPath,'{areapath}')`
    :::column-end:::
    :::column span="3":::
-   Work items under a specific Area Path. Replacing with "Area/AreaPath eq '{areapath}'" returns items at a specific Area Path.
+   Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
    
    To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
