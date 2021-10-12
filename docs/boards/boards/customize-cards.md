@@ -1,7 +1,7 @@
 ---
-title: Customize cards on a board
+title: Customize cards on a Kanban board
 titleSuffix: Azure Boards
-description: Customize cards on the Kanban or Sprint/Scrum/taskboards in Azure Boards and Azure DevOps 
+description: Learn how to customize cards to provide at-a-glance information of interest to your team in Azure Boards and Azure DevOps. 
 ms.custom: boards-kanban, contperf-fy21q3
 ms.technology: devops-agile
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
@@ -9,10 +9,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2015'
-ms.date: 03/12/2021 
+ms.date: 10/04/2021 
 ---
  
-# Customize cards  
+# Customize cards on a Kanban board  
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
 
@@ -229,7 +229,7 @@ You can customize cards that appear on the Kanban board for your product backlog
 
 <a id="fields"></a>
 
-## Choose fields to appear on cards 
+## Choose which fields appear on cards 
  
 By showing a field on a card, you can edit that field directly on the board without having to open the card, unless it's a read-only field, such as the Change By and Changed Date fields. This quick update feature is useful when you need to update many work items at once. For example, you can add estimates for backlog items on the Kanban board. 
 
@@ -329,7 +329,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 <a id="style-rule" > </a>  
 
-## Define style rules to highlight cards  
+## Define style rules to highlight cards 
  
 With styling rules, you can cause cards to change color when their corresponding work items meet criteria that you set. Here, we highlight severity 1 bugs by having the cards display as yellow. 
 
@@ -345,7 +345,7 @@ This feature requires TFS 2015.1 or later versions.
 ::: moniker-end
 
 
-### Example styling rules 
+### Examples of styling rules 
 
 What rules should you apply to highlight work items? Here are a few examples and their associated criteria.
 
