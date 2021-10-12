@@ -19,7 +19,7 @@ ms.date: 04/11/2019
 
 The Agile process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as features, user stories, and tasks. These artifacts are created when you create a project using the Agile  process. They are based on Agile principles and values.  
  
-<img src="media/agile-process-work-tracking-wits.png" alt="Agile process work item types" />
+![Agile process work item types](media/agile-process-work-tracking-wits.png)
 
 In addition to the WITs, teams have access to a set of work item queries to track information, analyze progress, and make decisions.  
 
@@ -131,28 +131,39 @@ For a summary of updates made to process templates, see [Changes made to process
 
 Product owners can use the shared queries that are defined in the following table to plan and track user stories that compose the product backlog.
 
-<table>
-<thead>
-<tr>
-<th>Shared query</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Product Backlog</td>
-<td>Provides a tree list of all user stories that are in a New, Active or Resolved state and sorts them by rank.</td>
-</tr>
-<tr>
-<td>Product Planning</td>
-<td>Provides a flat list of all user stories that are not in a Removed state, and have not been closed in the last 90 days.</td>
-</tr>
-<tr>
-<td>Feedback</td>
-<td>Lists all feedback responses that are in an Active state.</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   Shared query
+   :::column-end:::
+   :::column span="3":::
+   Description
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Product Backlog
+   :::column-end:::
+   :::column span="3":::
+   Provides a tree list of all user stories that are in a New, Active or Resolved state and sorts them by rank.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Product Planning
+   :::column-end:::
+   :::column span="3":::
+   Provides a flat list of all user stories that are not in a Removed state, and have not been closed in the last 90 days.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Feedback
+   :::column-end:::
+   :::column span="3":::
+   Lists all feedback responses that are in an Active state.
+   :::column-end:::
+:::row-end:::
 
 #### Iteration planning queries
 
@@ -160,66 +171,133 @@ The following table describes the shared queries that are listed under the **Cur
 
 The project administrator for each project [defines area and iteration paths](../../../organizations/settings/set-area-paths.md) for that project so that the team can track progress by those designations.
 
-<table>
-<thead>
-<tr>
-<th><p>Shared query</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>Active Bugs</p></td>
-<td><p>Lists all active bugs and sorts them by rank, priority, and severity.</p></td>
-</tr>
-<tr>
-<td><p>Active Tasks</p></td>
-<td><p>Lists all active tasks and sorts them by rank, priority, and severity.</p></td>
-</tr>
-<tr>
-<td><p>Bug Triage</p></td>
-<td><p>Lists all active bugs that are not assigned to a team member.</p>
-<p>The <a href="/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts" data-raw-source="[Triage Workbook references](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts)">Triage Workbook references</a> this query. </p></td>
-</tr>
-<tr>
-<td><p>Completed Tasks</p></td>
-<td><p>Lists all tasks that have been closed and sorts them by rank, priority, and severity.</p></td>
-</tr>
-<tr>
-<td><p>Iteration Backlog</p></td>
-<td><p>Lists all user stories and their linked tasks and sorts the stories by rank and priority.</p></td>
-</tr>
-<tr>
-<td><p>Open Issues</p></td>
-<td><p>Lists all issues under the specified iteration path that are not closed and any tasks that are linked to the issues and then sorts the issues by rank and priority.</p>
-<p>The <a href="/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts" data-raw-source="[Issues Workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts)">Issues Workbook</a> references this query. </p></td>
-</tr>
-<tr>
-<td><p>Open Test Cases</p></td>
-<td><p>Lists all test cases that are not closed and sorts them by priority.</p></td>
-</tr>
-<tr>
-<td><p>Open User Stories</p></td>
-<td><p>Lists all active user stories and sorts them by their stack rank.</p></td>
-</tr>
-<tr>
-<td><p>Resolved Bugs</p></td>
-<td><p>Lists all resolved bugs and sorts them by rank, priority, and severity.</p></td>
-</tr>
-<tr>
-<td><p>User Stories</p></td>
-<td><p>Lists all user stories that are not closed and sorts them by priority and then ID,</p></td>
-</tr>
-<tr>
-<td><p>User Stories without Test Cases</p></td>
-<td><p>Lists all user stories that do not have a link to a test case. Stories are sorted by ID.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Shared query**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Active Bugs
+
+   :::column-end:::
+   :::column span="3":::
+   Lists all active bugs and sorts them by rank, priority, and severity.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Active Tasks
+
+   :::column-end:::
+   :::column span="3":::
+   Lists all active tasks and sorts them by rank, priority, and severity.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Bug Triage
+
+   :::column-end:::
+   :::column span="3":::
+   Lists all active bugs that are not assigned to a team member.
+
+   The [Triage Workbook references](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts) this query. 
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Completed Tasks
+
+   :::column-end:::
+   :::column span="3":::
+   Lists all tasks that have been closed and sorts them by rank, priority, and severity.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Iteration Backlog
+
+   :::column-end:::
+   :::column span="3":::
+   Lists all user stories and their linked tasks and sorts the stories by rank and priority.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Open Issues
+
+   :::column-end:::
+   :::column span="3":::
+   Lists all issues under the specified iteration path that are not closed and any tasks that are linked to the issues and then sorts the issues by rank and priority.
+
+   The [Issues Workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts) references this query. 
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Open Test Cases
+
+   :::column-end:::
+   :::column span="3":::
+   Lists all test cases that are not closed and sorts them by priority.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Open User Stories
+
+   :::column-end:::
+   :::column span="3":::
+   Lists all active user stories and sorts them by their stack rank.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Resolved Bugs
+
+   :::column-end:::
+   :::column span="3":::
+   Lists all resolved bugs and sorts them by rank, priority, and severity.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   User Stories
+
+   :::column-end:::
+   :::column span="3":::
+   Lists all user stories that are not closed and sorts them by priority and then ID,
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   User Stories without Test Cases
+
+   :::column-end:::
+   :::column span="3":::
+   Lists all user stories that do not have a link to a test case. Stories are sorted by ID.
+
+   :::column-end:::
+:::row-end:::
 
   
 > [!TIP]
-> Queries listed under the **Current Iteration** folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../sprints/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the <strong>@CurrentIteration</strong> macro](../../queries/query-by-date-or-current-iteration.md).  
+> Queries listed under the **Current Iteration** folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../../sprints/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../../queries/query-by-date-or-current-iteration.md).  
 
 
 
