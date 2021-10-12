@@ -76,62 +76,76 @@ Each stage indicates a handoff to someone else who will do work. What informatio
 
 As a starting point, consider some of the following criteria as you work with your team to decide what done means throughout the development process.
 
-<table valign="top" width="100%">
-  <tr>
-    <th width="35%">Stage</th>
-    <th width="65%">Done criteria</th>
-  </tr>
-  <tr valign="top">
-    <td>Before work starts on a feature, user story, or requirement</td>
-    <td>
-<ol>
-<li>User story is properly scoped and estimated.</li>
-<li>Acceptance criteria is well defined.</li>
-<li>Customer needs are understood by the team.</li>
-<li>Dependencies have been identified and are tracked.</li>
-</ol>
-	</td>
-  </tr>
-  <tr valign="top">
-    <td>Bug filing</td>
-    <td>
-<ol>
-<li>Bug title identifies the issue clearly.</li>
-<li>Repro steps are clear and minimal.</li>
-<li>Bug specifies a single issue.</li>
-<li>Related issues are linked to as related.</li>
-<li>Terms used are clearly understood within the team.</li>
-</ol>
-	</td>
-  </tr>
-  <tr valign="top">
-    <td>Code complete, ready for testing</td>
-    <td>
-<ol>
-<li>Code complete, commented, and run against current version.</li>
-<li>Code peer reviewed and meets team standards.</li>
-<li>Builds without error.</li>
-<li>Passes unit and system tests.</li>
-<li>Remaining hours for tasks set to zero and task closed.</li>
-</ol>
-	</td>
-  </tr>
-  <tr valign="top">
-    <td>Test complete, ready for release</td>
-    <td>
-<ol>
-<li>Unit tests implemented for all new features or functions.</li>
-<li>Unit tests are all passing.</li>
-<li>Acceptance/story tests are written and passing. </li>
-<li>Regression tests are green with known failures. </li>
-<li>Sufficient exploratory testing has been done.</li>
-<li>Feature/function works correctly as expected. </li>
-<li>Unsolved defects have been logged as bugs. </li>
-<li>Code coverage is stable or improving.</li>
-</ol>
-	</td>
-  </tr>
-</table>
+:::row:::
+  :::column span="1":::
+  **Stage**
+  :::column-end:::
+  :::column span="1":::
+  **Done criteria**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+  Before work starts on a feature, user story, or requirement
+  :::column-end:::
+  :::column span="1":::
+  
+  
+  1. User story is properly scoped and estimated.
+  2. Acceptance criteria is well defined.
+  3. Customer needs are understood by the team.
+  4. Dependencies have been identified and are tracked.
+   
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+  Bug filing
+  :::column-end:::
+  :::column span="1":::
+  
+  
+  1. Bug title identifies the issue clearly.
+  2. Repro steps are clear and minimal.
+  3. Bug specifies a single issue.
+  4. Related issues are linked to as related.
+  5. Terms used are clearly understood within the team.
+  
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+  Code complete, ready for testing
+  :::column-end:::
+  :::column span="1":::
+  
+  
+  1. Code complete, commented, and run against current version.
+  2. Code peer reviewed and meets team standards.
+  3. Builds without error.
+  4. Passes unit and system tests.
+  5. Remaining hours for tasks set to zero and task closed.
+  
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+  Test complete, ready for release
+  :::column-end:::
+  :::column span="1":::
+  
+  
+  1. Unit tests implemented for all new features or functions.
+  2. Unit tests are all passing.
+  3. Acceptance/story tests are written and passing. 
+  4. Regression tests are green with known failures. 
+  5. Sufficient exploratory testing has been done.
+  6. Feature/function works correctly as expected. 
+  7. Unsolved defects have been logged as bugs. 
+  8. Code coverage is stable or improving.
+  
+  :::column-end:::
+:::row-end:::
 
 As your team makes progress, revisit your Definition of Done criteria. 
 
@@ -143,7 +157,7 @@ Acceptance criteria corresponds to what a customer should expect when a user sto
 
 Acceptance criteria defines when a feature is shippable. Capture the criteria for each backlog item in the Acceptance Criteria field (for Scrum product backlog items) or the Description field (for Agile user stories and CMMI requirements).
 
-<img src="media/vso-product-backlog-work-item-form-acceptance-criteria.png" alt="Acceptance criteria field on work item form]" />  
+![Acceptance criteria field on work item form](media/vso-product-backlog-work-item-form-acceptance-criteria.png)  
 
 The Definition of Done, on the other hand, is about delivering an incremental piece of a feature as it moves from not started to complete. Agile teams meet with greater success when each handoff made is in a ready state for the recipient to begin their work. 
 

@@ -152,7 +152,7 @@ The build agent must have the following capability:
     </tr>
     <tr>
        <td><code>checkstyleAnalysisEnabled</code><br/>Run Checkstyle</td>
-       <td>(Optional) Run the Checkstyle tool with the default Sun checks. Results are uploaded as build artifacts. <br/>Default value: false <br/>Argument aliases: <code>checkStyleRunAnalysis</code></td>
+       <td>(Optional) Run the Checkstyle tool. If no checkstyle configuration is specified in the pom.xml file, default Sun checks will be used. Results are uploaded as build artifacts. <br/>Default value: false <br/>Argument aliases: <code>checkStyleRunAnalysis</code></td>
     </tr>
     <tr>
        <td><code>pmdAnalysisEnabled</code><br/>Run PMD</td>
