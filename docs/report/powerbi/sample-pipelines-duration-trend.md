@@ -31,7 +31,7 @@ The following image shows an example of such a chart.
 
 ## Sample queries
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -53,7 +53,7 @@ in
     Source
 ```
 
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -78,7 +78,7 @@ $apply=filter(
 [!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
 
 
-### Query breakdown
+#### Query breakdown
 
 The following table describes each part of the query.
 
@@ -269,7 +269,7 @@ You can use the following other queries to create different but similar reports 
 You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
 https:\//dev.azure.com/{organization}/{project}/_build?definitionId= `{pipelineid}`
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -290,7 +290,7 @@ let
 in
     Source
 ```
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -314,7 +314,7 @@ $apply=filter(
 
 You may want to view the duration trend calculated using other percentile value. Below query gives 50th and 90th percentile pipeline duration along with 80th percentile.
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -337,7 +337,7 @@ let
 in
     Source
 ```
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -367,7 +367,7 @@ You may want to view the duration trend of a pipeline for a particular **branch*
 - Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the pipeline duration trend
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -388,7 +388,7 @@ let
 in
     Source
 ```
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -418,7 +418,7 @@ You may want to view the duration trend for all the pipelines of the project in 
 
 Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report that has detailed similar steps as required here.
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -438,7 +438,7 @@ let
 in
     Source
 ```
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 

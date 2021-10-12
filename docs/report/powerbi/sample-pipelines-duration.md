@@ -31,7 +31,7 @@ An example of the pipeline duration report is shown in the following image.
 
 ## Sample queries
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -54,7 +54,7 @@ in
     Source
 ```
 
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -251,7 +251,7 @@ You can change your Pipeline name. To ensure that the Power BI reports don't bre
 
 `https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**`
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -274,7 +274,7 @@ in
     Source
 ```
 
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -302,7 +302,7 @@ You may want to view the duration of a pipeline for a particular **branch** only
 - Expand Branch into Branch.BranchName.  
 - Add the field **Branch.BranchName** to **Axis**.  
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -325,7 +325,7 @@ in
     Source
 ```
 
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -355,7 +355,7 @@ You may want to view the duration for all the pipelines of the project in a sing
 
 Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report that has detailed similar steps as required here.
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -378,7 +378,7 @@ in
 ```
 
 
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 

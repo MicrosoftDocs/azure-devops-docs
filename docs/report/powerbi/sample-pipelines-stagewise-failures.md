@@ -298,7 +298,7 @@ You can use the following extra queries to create different but similar reports 
 
 You may want to view the task wise failure trend, rather than stage wise failure trend.
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 ```
 let
@@ -317,7 +317,7 @@ let
 in
     Source
 ```
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
@@ -339,7 +339,7 @@ $apply=filter(
 
 You may want to view the job wise failure trend, rather than stage wise failure trend.
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -363,7 +363,7 @@ let
 in
     Source
 ```
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
