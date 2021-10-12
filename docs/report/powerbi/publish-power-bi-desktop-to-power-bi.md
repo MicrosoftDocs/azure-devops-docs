@@ -17,35 +17,39 @@ ms.date: 11/01/2018
 
 Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures and charts, you can share those with others by creating a dashboard on Power BI. This article shows you how.   
 
+## Publish to Power BI
+
 1. If using an [Analytics View](what-are-analytics-views.md), verify that the view is Shared and not Private.
 
-2. Open the **Power BI Desktop** file with your data.  
+1. Open the **Power BI Desktop** file with your data.  
 
-3. Choose **Publish** on the **Home** tab. 
+1. Select **Publish** on the **Home** tab. 
 
-    <img src="media/publish-1.png" alt="Publish Power BI Desktop file" /> 
+    :::image type="content" source="media/publish-1.png" alt-text="Publish Power BI Desktop file":::
 
-4. Respond to the prompts to sign in. If you don't already have a Power BI account you will need to create one. Choose **Sign in**.
+1. Respond to the prompts to sign in. If you don't already have a Power BI account you will need to create one. Select **Sign in**.
   
-     <img src="media/publish-2.png" alt="Publishing successful" />
+    :::image type="content" source="media/publish-2.png" alt-text="Publishing successful":::
 
-5. Choose the **Open 'file name' in Power BI** link.
+1. Select the **Open \<file name\> in Power BI** link.
 
-6. Expand the navigation pane in Power BI and select the work space that you selected when you published the report.  
+## Configure refresh schedule
 
-7. Choose **Datasets** in the upper right corner.
+1. Expand the navigation pane in Power BI and select the work space that you selected when you published the report.  
 
-8. Choose the ellipsis next to the dataset that represents the report you just loaded (this is typically the file name.   
+1. Select **Datasets** in the upper right corner.
 
-     <img src="media/publish-3.png" alt="Select the dataset" />
+1. Select the ellipsis next to the dataset that represents the report you just loaded (this is typically the file name).   
 
-9. Choose **Schedule Refresh**.  
+    :::image type="content" source="media/publish-3.png" alt-text="Select the dataset":::
 
-11. Choose the **Edit credentials** link next to ODATA under Data source credentials as shown here:
+1. Select **Schedule Refresh**.  
 
-      <img src="media/publish-4.png" alt="Update odata credentials" />
+1. Select the **Edit credentials** link next to ODATA under Data source credentials as shown here:
 
-11. Select the appropriate authentication option. 
+    :::image type="content" source="media/publish-4.png" alt-text="Update odata credentials":::
+
+1. Select the appropriate authentication option. 
 
 	* Use **oAuth2**  for Azure Active Directory (Azure AD) or Windows credentials.
 
@@ -58,7 +62,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
       > [!IMPORTANT]  
       > If you are using a Personal Access Token, remember that the token expires on a set interval. When it expires you'll need to [update the credentials](client-authentication-options.md#update-credentials). Otherwise the report, while still displaying data, won't update with the latest data.
 
-12. Choose **Sign in**.  
+1. Select **Sign in**.  
 
 At this point, the data will update on your scheduled basis using the credentials entered.
 
