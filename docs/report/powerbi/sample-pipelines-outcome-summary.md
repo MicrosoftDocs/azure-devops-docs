@@ -32,7 +32,7 @@ An example is shown in the following image.
 
 ## Sample queries
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -55,7 +55,7 @@ in
     Source
 ```
 
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -254,7 +254,7 @@ You can change your Pipeline name. To ensure that the Power BI reports don't bre
 
 `https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**`
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -277,7 +277,7 @@ in
     Source
 ```
 
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -307,7 +307,7 @@ You may want to view the outcome summary of a pipeline for a particular **branch
 - Select the pipeline from the slicer for which you need to see the outcome summary
 
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -332,7 +332,7 @@ in
     Source
 ```
 
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -363,7 +363,7 @@ You may want to view the outcome summary of a pipeline for a particular **Build 
 - Select the pipeline from the slicer for which you need to see the outcome summary
 
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -388,7 +388,7 @@ in
     Source
 ```
 
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
@@ -422,7 +422,7 @@ You may want to view the pipeline outcome summary for all project pipelines in a
 Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report for detailed steps. 
 
 
-### [Power BI query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
@@ -446,7 +446,7 @@ in
     Source
 ```
 
-### [OData query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
 
