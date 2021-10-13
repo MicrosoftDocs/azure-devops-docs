@@ -1,7 +1,7 @@
 ---
 title: About pull requests
 titleSuffix: Azure Repos
-description: Learn about pull request guidelines, management, and considerations in Azure Repos or Azure DevOps Server.
+description: Learn about pull request guidelines, management, and considerations when working in an Azure Repos Git repository.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.technology: devops-code-git 
 ms.topic: conceptual
@@ -13,9 +13,10 @@ monikerRange: '<= azure-devops'
 
 # About pull requests
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
+[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
-Pull requests (PRs) are a way to change, review, and merge code in a [Git project](../../organizations/projects/create-project.md). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
+Pull requests (PRs) are a way to change, review, and merge code in a [Git repository on Azure Repos](../../organizations/projects/create-project.md). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
 The following video shows the general pull request process. Some terminology and user interface elements might not apply to your Azure DevOps version.
 
@@ -52,10 +53,6 @@ Reviewers should:
 
 Learn more about how to [get feedback with Git pull requests](/devops/develop/git/git-pull-requests).
 
-## Default branch
-
-[!INCLUDE [](includes/change-default-branch-instructions.md)]
-
 ## Branch policies
 
 Your team might rely on critical branches in your repo, such as the `main` branch, to always be in good shape. You can set [branch policies](branch-policies.md) to require PRs for any changes on these protected branches, and reject any changes pushed directly to the branches.
@@ -71,6 +68,10 @@ For more information, see:
 - [Branch policies overview](branch-policies-overview.md)
 - [How to configure branch policies](branch-policies.md)
 - [Branch permissions](branch-permissions.md)
+
+## Change the default branch
+
+You can use a branch other than `main` for new changes, or change the main line of development in your repo. To change the default branch name for new repositories, see [Change the default branch](change-default-branch.md).
 
 ## PR status checks
 

@@ -1,7 +1,7 @@
 ---
 title: Review and merge code with pull requests
 titleSuffix: Azure Repos
-description: Learn about pull request guidelines, and how to view, create, review, update, and complete pull requests in Git with Azure Repos or Azure DevOps Server.
+description: Learn how to view, create, review, update, and complete pull requests in Git with Azure Repos.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.technology: devops-code-git 
 ms.topic: conceptual
@@ -13,7 +13,8 @@ monikerRange: '<= azure-devops'
 
 # Create, review, and manage pull requests
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
+[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
 Create pull requests (PRs) to change, review, and merge code in a [Git project](../../organizations/projects/create-project.md). You can create PRs from branches in the same repository or from branches in your [fork](forks.md) of the repository.
 
@@ -327,11 +328,84 @@ For example, the following command creates a PR from the `new` branch to the def
 az repos pr create --repository Fabrikam --source-branch new --open
 ```
 
-You can specify several other details about PRs at creation. To add details, reviewers, work items, and completion options to the PR at creation, see the following sections.
+You can specify several other details about PRs at creation. To add details, reviewers, work items, and completion options to the PR at creation, see [Add details to PRs](#add-details-to-prs).
 
 
 ***
 
+
+<a name="draft-pull-requests"></a>
+## Create draft PRs
+
+> [!NOTE]
+> Draft PRs were added in the Azure DevOps Server 2019.1 update.
+
+::: moniker range=">=azure-devops-2019"
+
+If your PR isn't ready for review, you can create a draft PR to indicate work in progress. When the PR is ready for review, you can publish it, and begin or resume the full review process.
+
+Draft PRs have the following differences from published PRs:
+
+- Build validation policies don't run automatically. You can queue build validations manually by selecting the more options menu in the PR.
+- Voting is disabled while in draft mode.
+- Required reviewers aren't automatically added. Notifications are sent only to reviewers that you explicitly add to the draft PR.
+- Draft PRs display in the PR list with a **Draft** badge.
+
+  ![Screenshot showing a draft P R in the P R list.](media/pull-requests/draft-pull-request-badge.png)
+
+::: moniker-end
+
+# [Browser](#tab/browser)
+
+::: moniker range=">=azure-devops-2019"
+To create a draft PR, select the arrow next to **Create** and select **Create as draft** when creating the PR. You don't have to use title prefixes such as WIP or DO NOT MERGE.
+
+![Screenshot showing Create as draft P R.](media/pull-requests/create-draft-pr.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+- If you start your PR title with WIP, **Create as draft** is selected as the default.
+
+  ![Start your PR title with WIP to Create as draft.](media/pull-requests/create-draft-pr-wip.png)
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2019"
+
+When you're ready to have the PR reviewed and completed, select **Publish** at upper right in the PR. Publishing a PR assigns required reviewers, evaluates policies, and kicks off voting.
+
+![Screenshot showing Publish for a P R.](media/pull-requests/publish-pr.png)
+
+To change an existing published PR to a draft, choose **Mark as draft**. Marking a PR as draft removes all existing votes.
+
+![Screenshot showing Mark as draft.](media/pull-requests/mark-pr-as-draft.png)
+
+::: moniker-end
+
+
+# [Visual Studio](#tab/visual-studio)
+
+To set a PR to draft, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** page, select **Mark as draft**.
+
+
+# [Azure Command Line](#tab/azure-command-line)
+
+To create a PR as a draft, set the `draft` parameter to `true` when you create the PR.
+
+For example:
+
+```azurecli
+az repos pr create --repository Fabrikam --source-branch new --draft true
+```
+
+To set an existing PR to draft, use `az repos pr update --id <PR Id> --draft true`
+
+To remove draft status from a PR, set `draft` to `false`.
+
+
+***
 
 <a name="finish"></a>
 ## Add details to PRs
@@ -601,79 +675,6 @@ For most teams, nearly all PRs target a default branch, such as `main` or `devel
 1. In the **Change target branch** pane, select **Choose a target branch**, select the new branch, and then select **Change**.
 
 ::: moniker-end
-
-<a name="draft-pull-requests"></a>
-## Create draft PRs
-
-> [!NOTE]
-> Draft PRs were added in the Azure DevOps Server 2019.1 update.
-
-::: moniker range=">=azure-devops-2019"
-
-If your PR isn't ready for review, you can create a draft PR to indicate work in progress. When the PR is ready for review, you can publish it, and begin or resume the full review process.
-
-Draft PRs have the following differences from published PRs:
-
-- Build validation policies don't run automatically. You can queue build validations manually by selecting the more options menu in the PR.
-- Voting is disabled while in draft mode.
-- Required reviewers aren't automatically added. Notifications are sent only to reviewers that you explicitly add to the draft PR.
-- Draft PRs display in the PR list with a **Draft** badge.
-
-  ![Screenshot showing a draft P R in the P R list.](media/pull-requests/draft-pull-request-badge.png)
-
-::: moniker-end
-
-# [Browser](#tab/browser)
-
-::: moniker range=">=azure-devops-2019"
-To create a draft PR, select the arrow next to **Create** and select **Create as draft** when creating the PR. You don't have to use title prefixes such as WIP or DO NOT MERGE.
-
-![Screenshot showing Create as draft P R.](media/pull-requests/create-draft-pr.png)
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-- If you start your PR title with WIP, **Create as draft** is selected as the default.
-
-  ![Start your PR title with WIP to Create as draft.](media/pull-requests/create-draft-pr-wip.png)
-
-::: moniker-end
-
-::: moniker range=">=azure-devops-2019"
-
-When you're ready to have the PR reviewed and completed, select **Publish** at upper right in the PR. Publishing a PR assigns required reviewers, evaluates policies, and kicks off voting.
-
-![Screenshot showing Publish for a P R.](media/pull-requests/publish-pr.png)
-
-To change an existing published PR to a draft, choose **Mark as draft**. Marking a PR as draft removes all existing votes.
-
-![Screenshot showing Mark as draft.](media/pull-requests/mark-pr-as-draft.png)
-
-::: moniker-end
-
-
-# [Visual Studio](#tab/visual-studio)
-
-To set a PR to draft, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** page, select **Mark as draft**.
-
-
-# [Azure Command Line](#tab/azure-command-line)
-
-To create a PR as a draft, set the `draft` parameter to `true` when you create the PR.
-
-For example:
-
-```azurecli
-az repos pr create --repository Fabrikam --source-branch new --draft true
-```
-
-To set an existing PR to draft, use `az repos pr update --id <PR Id> --draft true`
-
-To remove draft status from a PR, set `draft` to `false`.
-
-
-***
 
 
 ## Review pull requests
