@@ -515,7 +515,7 @@ Use the following parameters to define a connection to the Jenkins service.
 |             User name             |                                                                                                               Required. The username to connect to the service.                                                                                                                |
 |             Password              |                                                                                                               Required. The password for the specified username.                                                                                                               |
 
-For more information, see [Azure Pipelines Integration with Jenkins](https://devblogs.microsoft.com/devops/vsts-visual-studio-team-services-integration-with-jenkins/) and [Artifact sources](../release/artifacts.md#jenkinssource).
+For more information, see [Azure Pipelines Integration with Jenkins](https://azuredevopslabs.com/labs/vstsextend/jenkins/) and [Artifact sources](../release/artifacts.md#jenkinssource).
 
 ### Kubernetes service connection
 
