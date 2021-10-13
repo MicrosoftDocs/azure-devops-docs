@@ -49,7 +49,7 @@ In this tutorial you learn how to:
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
-1. Open up Team Explorer and checkout to the branch you want to cherry-pick changes into using the **Branches** view.
+1. Open up Team Explorer and check out the branch you want to cherry-pick changes into using the **Branches** view.
 2. Right-click the branch containing the changes you want and select **View History...**. 
 3. Right-click the commit you want to cherry-pick and select **Cherry-pick**.    
 
@@ -58,7 +58,7 @@ In this tutorial you learn how to:
 
 Repeat this process for each commit you need to bring over to your current branch.
 
-#### [Command Line](#tab/command-line/)
+#### [Git Command Line](#tab/git-command-line/)
 
 Use `git log` to find the commit ID of the commit whose changes you want to copy.
 
