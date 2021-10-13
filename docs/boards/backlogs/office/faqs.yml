@@ -1,14 +1,14 @@
 ### YamlMime:FAQ
 metadata:
   title: Work in Excel connected to Azure Boards FAQs
-  description: Answers to frequently asked questions about Excel and Azure Boards 
+  description: Learn answers to frequently asked questions about Excel and Azure Boards.
   titleSuffix: Azure Boards
   ms.technology: devops-agile
   ms.author: kaelli
   author: KathrynEE
   ms.topic: troubleshooting
   monikerRange: '<= azure-devops'
-  ms.date: 03/03/2021
+  ms.date: 10/08/2021
 
 
 title: Work in Excel connected to Azure Boards FAQs   
@@ -19,7 +19,7 @@ summary: |
 
   Find answers to frequently asked questions when using Microsoft Excel to add or modify work items defined in Azure DevOps. 
 
-  If you are having connection issues, make sure you meet the prerequisites as listed in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md) and have reviewed the information in [Azure Boards and Office integration](track-work.md). 
+  If you're having connection issues, make sure you meet the prerequisites as listed in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md). Also be sure you've reviewed the information in [Azure Boards and Office integration](track-work.md). 
 
 sections:
 
@@ -33,10 +33,10 @@ sections:
 
       - question: What do I need to use Excel to add or modify work items?
         answer: |
-          You must get the Azure DevOps Office Integration add-in available from the [Downloads page, Other Tools and Frameworks](https://visualstudio.microsoft.com/downloads/#other-family). This add-in typically installs when you install any version of Visual Studio or Team Explorer. Also, you need to use Microsoft Excel 2010 or later version, including Microsoft Office Excel 365. 
+          You must get the Azure DevOps Office Integration add-in available from the [Downloads page, Other Tools, and Frameworks](https://visualstudio.microsoft.com/downloads/#other-family). This add-in typically installs when you install any version of Visual Studio or Team Explorer. Also, you need to use Microsoft Excel 2010 or later version, including Microsoft Office Excel 365. 
 
           > [!IMPORTANT]  
-          > Microsoft Project Integration and the **TFSFieldMapping** command are not supported for:  
+          > Microsoft Project Integration and the **TFSFieldMapping** command aren't supported for:  
           > - Visual Studio 2019 and Azure DevOps Office® Integration 2019  
           > - Azure DevOps Server 2019 and later versions, including Azure DevOps Services. 
           > 
@@ -70,7 +70,7 @@ sections:
           ::: moniker-end  
 
           ::: moniker range="<= tfs-2018"  
-          **Yes**. For TFS 2018 and earlier versions, you can use Microsoft Project to perform bulk import and updates of work items. See [Create your backlog and tasks using Microsoft Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project).  
+          **Yes**. For TFS 2018 and earlier versions, you can use Microsoft Project to import and update work items in bulk. See [Create your backlog and tasks using Microsoft Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project).  
           ::: moniker-end  
 
       - question: How do I connect an existing Excel workbook to Azure DevOps?  
@@ -137,7 +137,7 @@ sections:
      
     questions: 
 
-      - question: How can I show additional fields?
+      - question: How can I show other fields?
         answer: |
           If you start your worksheet with a **New List**, you'll see only a set of default field columns. You can add columns using the **Choose Columns** on the Team menu. 
 
@@ -148,7 +148,7 @@ sections:
 
       - question: How do I resolve publishing issues?  
         answer: |
-          To resolve publishing errors that arise when working in Excel, see one of the following topics: 
+          To resolve publishing errors that arise when working in Excel, see one of the following articles: 
           - [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md): 
             A data conflict occurs when one team member changes a field value in Excel at the same time another team member changes the same field in Azure Boards.
 

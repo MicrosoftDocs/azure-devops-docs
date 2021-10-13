@@ -1,17 +1,17 @@
 ---
-title: Define, capture, triage, and manage bugs or code defects
+title: Manage code defects to maintain software quality in Azure Boards
 titleSuffix: Azure Boards 
-description: Define, capture, and triage bugs, code defects, and software issues to manage technical debt and maintain software quality 
+description: Define, capture, and triage software defects to manage technical debt and maintain software quality in Azure Boards. 
 ms.custom: "boards-backlogs, contperf-fy21q4-portal"
 ms.technology: devops-agile
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-ms.date: 04/30/2021 
+ms.date: 10/08/2021
 ---
 
-# Define, capture, triage, and manage bugs
+# Manage software defects
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -21,7 +21,7 @@ At a minimum, you need a way to capture your software issues, stack rank them, a
 
 To support these scenarios, Azure Boards provides a Bug work item type. The Bug work item type shares all the standard features of other work item types with a few more. For an overview of standard features, see [Track work with user stories, issues, bugs, features, and epics](../work-items/about-work-items.md).
 
-Extra features for managing bugs include the following:
+Extra features for managing bugs include the following benefits:
 
 - Option for each team to choose how they want to track bugs 
 - Test tools to capture bugs 
@@ -33,7 +33,7 @@ Extra features for managing bugs include the following:
 
 ## Bug work item type 
 
-The following image shows the Bug work item type for the Scrum process. The Bug work item type for Agile and CMMI processes tracks similar information. It is designed to appear on the product backlog along with requirements or on the Taskboard along with tasks.  
+The following image shows the Bug work item type for the Scrum process. The Bug work item type for Agile and CMMI processes tracks similar information. It's designed to appear on the product backlog along with requirements or on the Taskboard along with tasks.  
 
 [!INCLUDE [temp](../includes/image-differences-with-wits.md)] 
 
@@ -55,7 +55,7 @@ The following image shows the Bug work item type for the Scrum process. The Bug 
 > Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug.  
 ::: moniker-end
 
-## Fields specific to Bugs  
+## Fields specific to bugs  
 
 The Bug work item type uses some bug-specific fields. Use the fields described in the following table to capture both the initial issue and ongoing discoveries. For information about fields specific to the CMMI process Bug, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
@@ -115,8 +115,8 @@ The Bug work item type uses some bug-specific fields. Use the fields described i
       [Priority](../queries/planning-ranking-priorities.md)<sup>1</sup>
    :::column-end:::
    :::column span="3":::
-      - **1**: Product should not ship without the successful resolution of the work item. The bug should be addressed as soon as possible.
-      - **2**: Product should not ship without the successful resolution of the work item, but it does not need to be addressed immediately.
+      - **1**: Product shouldn't ship without the successful resolution of the work item. The bug should be addressed soon.
+      - **2**: Product shouldn't ship without the successful resolution of the work item, but it doesn't need to be addressed immediately.
       - **3**: Resolution of the work item is optional based on resources, time, and risk.
    :::column-end:::
 :::row-end:::
@@ -158,7 +158,7 @@ The Bug work item type uses some bug-specific fields. Use the fields described i
 ::: moniker-end
 
 
-#### Notes: 
+### Notes: 
 
 <sup>1</sup> To change the menu selection or picklist, see [Customize the work tracking experience](../../reference/customize-work.md). The customization method depends on the process model used by your project. 
 
@@ -169,8 +169,8 @@ When determining how your team will track bug, consider the following factors.
 
 - Size of your team. Smaller teams will want to maintain a lightweight footprint and tracking bugs as requirements may be the most lightweight.
 - Organization requirements to track work. If your team is required to track hours, then tracking bugs as tasks aligns with this requirement.
-- How your team prioritizes work. If your team relies on the product backlog to order work, tracking bugs as requirements supports this activity. 
-- Tools your team wants to use such as the Planning pane, velocity chart, forecast, rollup, and delivery plans. Tracking bugs as tasks precludes use of several of these tools.  
+- How your team organizes work. If your team relies on the product backlog to order work, tracking bugs as requirements supports this activity. 
+- Tools your team wants to use such as the Planning pane, velocity chart, forecast, rollup, and delivery plans. Tracking bugs as tasks prevents use of several of these tools.  
 
 The following table summarizes the three options teams have to track bugs. To learn more and to set the option for your team, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
@@ -227,7 +227,7 @@ If your team chose to *manage bugs with requirements*, you can define bugs from 
 > When you add a bug from your product backlog or Kanban board, the bug is automatically assigned the default Area Path and Iteration Path defined for the team. To learn more, see [Team defaults referenced by backlogs and boards](../../organizations/settings/about-teams-and-settings.md#team-defaults-referenced-by-backlogs-and-boards).
 
 
-### Add a bug from your Sprint backlog or Taskboard 
+### Add a bug from your sprint backlog or Taskboard 
 
 If your team chose to *manage bugs with tasks*, you can define bugs from your Kanban board, product backlog, Sprint backlog, or Sprint Taskboard. You add a bug as a child to a product backlog work item.  
 
@@ -265,7 +265,7 @@ As with all other work item types, the Bug work item type has a well-defined wor
 |------------|------------|-----------| 
 | ![Bug workflow states, Agile process template](../work-items/guidance/media/ALM_PT_Agile_WF_Bug.png) | ![Bug workflow states, Scrum process template](../work-items/guidance/media/ALM_PT_Scrum_WF_Bug.png) |  ![Bug workflow states, CMMI process template](../work-items/guidance/media/ALM_PT_CMMI_WF_Bug.png) |  
 
-For Scrum bugs, you simply change the **State** from *Committed* (similar to *Active*) to *Done*. For Agile and CMMI, you first resolve the bug, indicating that the bug has been fixed. Typically, the person who created the bug then verifies the fix and updates the State from *Resolved* to *Closed*. If more work has been found after a bug has been resolved or closed, it can be reactivated by setting the State to Committed or Active.
+For Scrum bugs, you change the **State** from *Committed* (similar to *Active*) to *Done*. For Agile and CMMI, you first resolve the bug, indicating that the bug has been fixed. Typically, the person who created the bug then verifies the fix and updates the State from *Resolved* to *Closed*. If more work has been found after a bug has been resolved or closed, it can be reactivated by setting the State to Committed or Active.
 
 ::: moniker range=">= azure-devops-2020"  
 > [!NOTE]  
@@ -277,7 +277,7 @@ For Scrum bugs, you simply change the **State** from *Committed* (similar to *Ac
 
 To verify a fix, a developer or tester should attempt to reproduce the bug and look for more unexpected behavior. If necessary, they should reactivate the bug.
 
-When verifying a bug resolution, you may find that the bug was not completely fixed or you may disagree with the resolution. In this case, discuss the bug with the person who resolved it, come to an agreement, and possibly reactivate the bug. If you reactivate a bug, include the reasons for reactivating the bug in the bug description.
+When verifying a bug resolution, you may find that the bug wasn't fixed or you may disagree with the resolution. In this case, discuss the bug with the person who resolved it, come to an agreement, and possibly reactivate the bug. If you reactivate a bug, include the reasons for reactivating the bug in the bug description.
 
 
 <a id="close">  </a>
@@ -309,11 +309,11 @@ If your team uses a Git repository, you can set the State in linked bugs and oth
 
 ## List and triage bugs  
 
-Most teams, regardless of the option they chose to track bugs, define one or more bug queries. With queries, you can list active bugs, unassigned bugs, stale bugs, bug trends, and more. You can then add queries and query charts to your team dashboards to monitor bug status and progress. 
+Most teams, whatever option they chose to track bugs, define one or more bug queries. With queries, you can list active bugs, unassigned bugs, stale bugs, bug trends, and more. You can then add queries and query charts to your team dashboards to monitor bug status and progress. 
 
 ### Bug queries
 
-Open a shared query or [use the query editor](../queries/using-queries.md) to create useful bug queries, such as the following:
+Open a shared query or [use the query editor](../queries/using-queries.md) to create useful bug queries, such as the following options:
 - Active bugs by priority (```State <> Done``` or ```State <> Closed```)
 - In Progress bugs (```State = Committed``` or ```State = Active```)
 - Bugs to fix for a target release (```Tags Contains RTM```)
@@ -323,7 +323,7 @@ Once you have the queries of interest to your team, you can [create status or tr
 
 ### Triage mode in query results
 
-Once you've started coding and testing, you'll want to hold periodic triage meetings to review and prioritize your bugs. Typically, the project owner runs the bug triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them.
+Once you've started coding and testing, you'll want to hold periodic triage meetings to review and organize your bugs. Typically, the project owner runs the bug triage meetings, and team leads, business analysts, and other stakeholders who can speak about specific project risks attend them.
 
 The project owner can define a shared query for new and reopened bugs to list bugs to be triaged. 
 
@@ -334,27 +334,27 @@ From the query results page, you can quickly move up and down within the list of
 > ![Screenshot of Query Results, Active Bugs, and Triage mode Right pane.](media/manage-bugs/bug-triage-mode.png)  
 
 
-### Prioritize and assign bugs to a sprint 
+### Organize and assign bugs to a sprint 
 
-If your team *tracks bugs as requirements*, you can view the list of active bugs from your backlog. With the [filter function](filter-backlogs-boards-plans.md), you can focus solely on bugs. From the product backlog, you can also perform the following tasks:  
+If your team *tracks bugs as requirements*, you can view the list of active bugs from your backlog. With the [filter function](filter-backlogs-boards-plans.md), you can focus solely on bugs. From the product backlog, you can also complete the following tasks:  
 
-- [Prioritize bugs on your backlog](create-your-backlog.md#reorder-your-backlog), stack rank against other items (stack ranking is disabled when filtering is enabled)  
+- [Organize bugs on your backlog](create-your-backlog.md#reorder-your-backlog), stack rank against other items (stack ranking is disabled when filtering is enabled)  
 - [Assign bugs to a sprint](../sprints/assign-work-sprint.md) from your backlog using the **Planning** pane  
 - [Parent bugs to Features](organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) or other portfolio backlog items using the **Mapping** pane 
 - [View rollup of work to portfolio backlog items](display-rollup.md).
 
-If your team *tracks bugs as tasks*, you'll use managed queries to list and triage bugs. Then, within each sprint, you'll see those bugs that are assign to the sprint from the Sprint backlog or [Taskboard](../sprints/task-board.md).  
+If your team *tracks bugs as tasks*, you'll use managed queries to list and triage bugs. Then, within each sprint, you'll see those bugs that are assigned to the sprint from the Sprint backlog or [Taskboard](../sprints/task-board.md).  
 
 <a id="task-board-items"/> 
 
 ### Taskboard items versus query list items
 
-You may notice and wonder why the items shown on a sprint Taskboard may differ from those listed in a query created from its corresponding sprint backlog. 
+You may notice and wonder why the items that are shown on a sprint Taskboard may differ from those items listed in a query created from its corresponding sprint backlog. 
 
 It's possible to assign tasks or bugs to an iteration but not have them linked to a parent backlog item. These items will show up in the created query, but might not show up on the Taskboard itself. The system runs the query and then applies a few background processes before displaying Taskboard items.
 
 These reasons can cause work items that belong to the Task Category to not appear on a sprint backlog or Taskboard:  
-- The task or bug hasn't been linked to a parent backlog item. Only those bugs and tasks that you have linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page.  
+- The task or bug hasn't been linked to a parent backlog item. Only those bugs and tasks that you've linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page.  
 - The task or bug is a parent of another task or bug, or the user story is a parent of another user story. If you've created a hierarchy of tasks, bugs, or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](resolve-backlog-reorder-issues.md#leaf-nodes).  
 - The task's or bug's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's or bug's parent backlog item differs from the task's or bug's area path.  
 
@@ -402,7 +402,7 @@ You can add intermediate columns to track your bug status on the board. You can 
 
 ### Automate bug reassignment based on workflow state 
 
-To automate select actions, add custom rules to your Bug work item type. For example, you can add a rule as shown in the following image. This rule specifies to reassign a bug to the person who opened the bug once it is resolved. Typically, that person verifies that the bug is fixed and closes the bug. To learn more, see [Apply rules to workflow states (Inheritance process)](../../organizations/settings/work/apply-rules-to-workflow-states.md).
+To automate select actions, add custom rules to your Bug work item type. For example, you can add a rule as shown in the following image. This rule specifies to reassign a bug to the person who opened the bug once it's resolved. Typically, that person verifies that the bug is fixed and closes the bug. To learn more, see [Apply rules to workflow states (Inheritance process)](../../organizations/settings/work/apply-rules-to-workflow-states.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of rule defined to reassign bug based on resolved state.](media/manage-bugs/rule-reassigned-resolved-bug.png) 
@@ -418,7 +418,7 @@ To automate select actions, add custom rules to your Bug work item type. For exa
 
 ## Integration across Azure DevOps 
 
-One of the methods used by Azure DevOps to support integration is to link objects to other objects.  In addition to linking work items to work items, you can also link work items to other objects such as builds, releases, branches, commits, and pull requests as illustrated in the following image. 
+One of the methods used by Azure DevOps to support integration is to link objects to other objects.  Along with linking work items to work items, you can also link work items to other objects. Link to objects such as builds, releases, branches, commits, and pull requests as illustrated in the following image. 
 
 > [!div class="mx-imgBorder"]  
 > ![Conceptual image that shows link types used to link work items to build and release objects.]( ../../notifications/media/types-of-work-item-links.png) 
@@ -488,7 +488,7 @@ To learn more about queries, charts, and dashboards; see [About managed queries]
 
 The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services.  
 
-Analytics views provide pre-built filters to view work items. Four Analytic views are supported for bug reporting. You can use these as defined or further edit them to create a custom, filtered view. 
+Analytics views provide pre-built filters to view work items. Four Analytic views are supported for bug reporting. You can use these views as defined or further edit them to create a custom, filtered view. 
 
 - Bugs - All history by month
 - Bugs - Last 26 weeks
@@ -511,16 +511,16 @@ The following reports are supported for Agile and CMMI processes.
 - [Bug Trends](../../report/sql-reports/bug-trends-report.md)  
 - [Reactivations](../../report/sql-reports/reactivations-report.md)  
 
-These report require you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project. To learn how to add SQL Server reports for a project, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).  
+These reports require you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project. To learn how to add SQL Server reports for a project, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).  
 
 ::: moniker-end  
 
 
 ### Marketplace extensions 
 
-There are a number of bug-related Marketplace extensions. See [Marketplace for Azure DevOps](https://marketplace.visualstudio.com/search?term=bug&target=AzureDevOps&category=All%20categories&sortBy=Installs). 
+There are many bug-related Marketplace extensions. See [Marketplace for Azure DevOps](https://marketplace.visualstudio.com/search?term=bug&target=AzureDevOps&category=All%20categories&sortBy=Installs). 
 
-For additional information on extensions, see [Azure Boards extensions developed by Microsoft](../extensions/index.md).
+For more information on extensions, see [Azure Boards extensions developed by Microsoft](../extensions/index.md).
 
 
 ## Try this next

@@ -1,17 +1,17 @@
 ---
 title: Cumulative Flow Diagram (CFD) sample Power BI report 
 titleSuffix: Azure DevOps
-description: How generate a Cumulative Flow Diagram (CFD) Power BI report
+description: Learn how to generate a Cumulative Flow Diagram (CFD) Power BI report.
 ms.technology: devops-analytics
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/21/2021
+ms.date: 10/05/2021
 ---
 
-# Cumulative Flow Diagram (CFD)  sample report
+# Cumulative Flow Diagram (CFD) sample report
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
@@ -68,8 +68,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-* {teamname} - The name of the team to display the CFD for
-* {startdate} - The date to start the CFD chart from. Format: YYYY-MM-DDZ. Example: 2019-04-01Z represents 2019-April-01. Do not enclose in quotes.
+* `{teamname}` - The name of the team to display the CFD for.
+* `{startdate}` - The date to start the CFD chart from. Format: YYYY-MM-DDZ. Example: `2019-04-01Z` represents 2019-April-01. Don't enclose in quotes.
 
 
 ### Query breakdown
@@ -236,8 +236,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Boa
 1. Once back in Power BI, expand ColumnOrder query and select ColumnName.
 1. Select **Modeling** menu.
 1. Select **Sort by Column** and choose "ColumnOrder".
-1. Select **Manage Relationships** and ensure there is a relationship between "CFD.ColumnName" and "ColumnOrder.ColumnName".
-    - It is likely that the relationship was auto-detected.
+1. Select **Manage Relationships** and ensure there's a relationship between "CFD.ColumnName" and "ColumnOrder.ColumnName".
+    - It's likely that the relationship was autodetected.
 1. In the report created above, add "ColumnOrder.ColumnName" to **Legend**, replacing "CFD.ColumnName".
 
 The report will now be sorted by correct column order:
@@ -250,7 +250,7 @@ The report will now be sorted by correct column order:
 
 ### Pull in data from multiple teams
 
-If you are pulling data in from multiple teams to aggregate across teams, you must ensure every team in the report has exactly the same set of columns on their boards. Otherwise, you are pulling in varying columns from every team. It is also a good idea to add a **Slicer** Visualization to your report, with Team.TeamName as a field. This step allows quick filter of the report by team.
+If you're pulling data in from multiple teams to aggregate across teams, you must ensure every team in the report has exactly the same set of columns on their boards. Otherwise, you're pulling in varying columns from every team. It's also a good idea to add a **Slicer** Visualization to your report, with Team.TeamName as a field. This step allows quick filter of the report by team.
 
 
 ## Full list of sample reports
