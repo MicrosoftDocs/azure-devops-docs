@@ -1,5 +1,5 @@
 ---
-title: Resolve display and reordering issues for items in Azure Boards 
+title: Resolve Azure Boards nesting, displaying, and reordering issues for work items 
 titleSuffix: Azure Boards
 description: Learn how to resolve error messages caused by nesting and reordering issues that occur in Azure Boards.  
 ms.custom: "boards-backlogs, seodec18"  
@@ -9,10 +9,10 @@ ms.topic: troubleshooting
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 10/13/2021
 ---
 
-# Fix issues related to displaying, reordering, and nesting work items in Azure Boards 
+# Fix issues in Azure Boards with displaying, reordering, and nesting work items 
 
 <a id="display-hierarchy">  </a>
 
@@ -148,12 +148,12 @@ If you choose to track bugs as tasks, bugs should only be nested under the requi
 
 ## How backlogs and boards display nested items
 
-For TFS 2018 and earlier versions, the Kanban board only shows the last node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
+For Azure DevOps 2018 and earlier versions, the Kanban board only shows the last node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
 ::: moniker range="tfs-2018"
 
 > [!NOTE]
-> For TFS 2018.2 and later versions, Kanban boards display all work items of nested same-category work items.  
+> For Azure DevOps 2018.2 and later versions, Kanban boards display all work items of nested same-category work items.  
 
 ::: moniker-end
 
@@ -180,7 +180,7 @@ As shown in the following images, the third user story, *Interim save on long fo
 ### Sprint backlogs and taskboards
 
 When bugs appear in the backlog with tasks, linking tasks and bugs to their parent requirements groups them correctly on the sprint backlog and taskboard.  
-However, if you create parent-child links between a requirement and a bug, and the bug and a task, as shown here, the task will appear on the sprint backlog and taskboard, but not the bug. 
+But, if you create parent-child links between a requirement and a bug, and the bug and a task, as shown here, the task appears on the sprint backlog and taskboard, but not the bug. 
 
 **Hierarchy of items assigned to a sprint backlog**  
 
