@@ -7,17 +7,17 @@ ms.technology: devops-agile
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops'
-ms.date: 03/05/2021
+monikerRange: '>= tfs-2015'
+ms.date: 10/13/2021
 ---
 
 
 
 # Cross-service and enhanced query operations  
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+[!INCLUDE [temp](../version-vsts-tfs-2015-on.md)] 
 
-Managed queries are primarily focused on listing and working with work items. However, the query capabilities also support many cross-service operations, some of which require installation of a Marketplace extension. 
+Managed queries are primarily focused on listing and working with work items. However, the query capabilities also support several cross-service operations, some of which require installation of a Marketplace extension. 
 
 ::: moniker range=">= tfs-2015"
 
