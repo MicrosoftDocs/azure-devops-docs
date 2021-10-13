@@ -59,7 +59,7 @@ Your team might rely on critical branches in your repo, such as the `main` branc
 
 You can add more policies to PRs to enforce better code quality in key branches. Extra requirements like a clean build of the proposed code or approval from multiple reviewers can help protect key branches.
 
-The number of required approvals for a PR is set in a branch policy. A PR can be set to autocomplete with the required number of approvals, even if other reviewers reject the changes. It's best practice for at least two reviewers to review and approve changes in a significant PR.
+You can set the number of required approvals for a PR in a branch policy. You can also set certain reviewers to be required or optional on all or certain PRs. A PR can be set to autocomplete with the required number of approvals, even if other reviewers reject the changes. However, required reviewers must approve PRs before they can merge. It's best practice for at least two reviewers to review and approve changes in a significant PR.
 
 To reset votes when a PR author pushes new changes, select **Reset code reviewer votes when there are new changes** in the [Require a minimum number of reviewers](branch-policies.md#require-a-minimum-number-of-reviewers) branch policy.
 

@@ -499,6 +499,12 @@ To add reviewers to your PR:
 
   To change a reviewer between required and optional, or remove a reviewer, select **More options** to the right of the reviewer name. To see the membership of a group or team designated as a reviewer, select the group's icon.
 
+Branch policies can automatically include optional or required reviewers in all or certain PRs. You can change optional included reviewers to be required or remove them, but you can't remove reviewers that are required by branch policy.
+
+In the **Reviewers** section of the PR **Overview** page, right-click **More options** next to an automatically included reviewer to see the branch policy that included them.
+
+![Screenshot that shows View policy on a reviewer that's automatically included by branch policy.](media/pull-requests/view-policy.png)
+
 ::: moniker-end
 
 :::moniker range="<= azure-devops-2020"
@@ -824,6 +830,10 @@ To make quick updates in response to comments or to fix issues, select **Edit** 
 
 After updating your code, [commit](commits.md) changes and [push](pushing.md) the updates to the branch in your repo.
 
+You can also immediately apply changes that reviewers have suggested by selecting **Apply change** in the comment on the PR **Overview** page. Once you've applied all the changes you want, select **Commit all changes**.
+
+![Screenshot that shows the Apply change button in a PR comment.](./media/pull-requests/apply-change.png)
+
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
@@ -834,7 +844,9 @@ You can make quick updates to your branch directly from the **Files** tab in **C
 
 ### Address comments
 
-Reply to comments and update comment status to let reviewers know how you're addressing their comments and suggestions. To resolve a comment without replying, select **Resolve** under the comment. To reply to the comment, type your response in the **Write a reply** field, and select **Reply**. Select **Reply & resolve** to reply to and resolve the comment. Reply to specific reviewers by using `@username` in the reply, and reference work items by using `#workitemID`. You can also reference other PRs by using `!pullrequestID`.
+Reply to comments and update comment status to let reviewers know how you're addressing their comments and suggestions. 
+
+To resolve a comment without replying, select **Resolve** under the comment. To reply to the comment, type your response in the **Write a reply** field, and select **Reply**. Select **Reply & resolve** to reply to and resolve the comment. Reply to specific reviewers by using `@username` in the reply, and reference work items by using `#workitemID`. You can also reference other PRs by using `!pullrequestID`.
 
 New comments start in **Active** status. Select **Resolve** or **Reply & resolve** to update comment status to **Resolved**.
 
