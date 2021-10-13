@@ -1,14 +1,14 @@
 ---
 title: Release Burndown sample Power BI report 
 titleSuffix: Azure DevOps
-description: How to generate a release burndown Power BI report
+description: Learn how to generate a release burndown Power BI report.
 ms.technology: devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/21/2021
+ms.date: 10/05/2021
 ---
 
 # Release burndown sample report
@@ -73,10 +73,10 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-- {areapath} - Your Area Path. Example format: Project\Level1\Level2
-- {tag} - A tag that represents your release. All work items tagged with {tagname} are included in the report
-- {startdate} - The date to start the burndown report
-- {enddate} - The date to end the burndown report.
+- `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
+- `{tag}` - A tag that represents your release. All work items tagged with `{tagname}` are included in the report.
+- `{startdate}` - The date to start the burndown report.
+- `{enddate}` - The date to end the burndown report.
 
 
 ### Query breakdown
@@ -115,7 +115,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.
    
-   To filter by Team Name, use the filter statement "Teams/any(x:x/TeamName eq '{teamname})'"
+   To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -131,7 +131,7 @@ The following table describes each part of the query.
    `and DateValue ge {startdate}`
    :::column-end:::
    :::column span="1":::
-   Start burndown on or after the specified date. Example: **2019-04-01Z**represents 2019-April-01.
+   Start burndown on or after the specified date. Example: **2019-04-01Z** represents 2019-April-01.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -219,10 +219,10 @@ The example report displays burndown on both Story Points and Count of Stories.
 
 To pivot burndown by Area Path, do the following steps:
 
-1. Select Power BI Visualization **Stacked barchart**. 
+1. Select Power BI Visualization **Stacked bar chart**. 
 1. Add the field "DateValue" to **Axis**.
     - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy.
-1. Add the field "TotalStoryPoints" or "Count" to **Values**. You cannot have two fields in Values.
+1. Add the field "TotalStoryPoints" or "Count" to **Values**. You can't have two fields in Values.
 1. Add the field "Area.AreaPath" to **Legend**.
 
 The example report displays burndown pivoted by Area Path.
@@ -391,8 +391,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Burndown based off a custom field
 
 Some organizations use a custom field to mark Stories for a Release. For example, they may have a field called "Milestone". This query shows you how to select Stories by a custom field.
-You'll need to replace both {customfield} and {releasevalue} in the query.
-To determine the name of your custom field, [explore the Analytics metadata](../extend-analytics/analytics-metadata.md). You'll use the Property Name as {customfield}.
+You'll need to replace both `{customfield}` and `{releasevalue}` in the query.
+To determine the name of your custom field, [explore the Analytics metadata](../extend-analytics/analytics-metadata.md). You'll use the Property Name as `{customfield}`.
 
 #### [Power BI query](#tab/powerbi/)
 
