@@ -121,7 +121,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Set up authentication
-            url: .maven/pom-and-settings.md
+            url: ./maven/pom-and-settings.md
           - text: Use packages from Maven Central
             url: ./maven/upstream-sources.md 
   - title: Python packages
