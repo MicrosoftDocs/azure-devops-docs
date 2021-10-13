@@ -120,8 +120,8 @@ landingContent:
             url: get-started-maven.md
       - linkListType: how-to-guide
         links:
-          - text: Publish and restore Maven packages
-            url: ../pipelines/artifacts/maven.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+          - text: Set up authentication
+            url: ./maven/pom-and-settings.md
           - text: Use packages from Maven Central
             url: ./maven/upstream-sources.md 
   - title: Python packages
