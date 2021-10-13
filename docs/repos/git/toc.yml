@@ -125,10 +125,14 @@
     href: commit-details.md
 - name: Pull requests
   items:
+  - name: About pull requests
+    href: about-pull-requests.md
   - name: View and manage pull requests
     href: pull-requests.md
   - name: Squash merge pull requests 
     href: merging-with-squash.md
+  - name: Pull request notifications
+    href: notifications.md
   - name: Pull request templates
     href: pull-request-templates.md
   - name: Extend pull request workflows with pull request status
