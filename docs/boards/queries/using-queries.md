@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 07/27/2021
+ms.date: 10/21/2021
 ---
 
 # Define a query

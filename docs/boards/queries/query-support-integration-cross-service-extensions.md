@@ -19,6 +19,8 @@ ms.date: 03/05/2021
 
 Managed queries are primarily focused on listing and working with work items. However, the query capabilities also support many cross-service operations, some of which require installation of a Marketplace extension. 
 
+::: moniker range=">= tfs-2015"
+
 ## Query-based dashboard widgets 
 
 In addition to defining flat-list query charts that you can add to a dashboard, you can configure one of the following query-based widgets.
@@ -30,6 +32,8 @@ In addition to defining flat-list query charts that you can add to a dashboard, 
   ![Query tile widget.](../../report/dashboards/media/widget-query-tile.png)  
 
 Additional query-based widgets are available from the Azure DevOps Marketplace.  
+
+::: moniker-end
 
 ## Query filters used in notifications
 
