@@ -234,6 +234,12 @@ az repos pr checkout --id 21
 ***
 
 
+### Mobile experience
+
+All Azure Repos PR screens and actions are available on mobile devices.
+
+![Screenshot of Azure Repos P R screens on a mobile device.](media/pull-requests/phone-screen.png)
+
 <a name="create-a-new-pull-request"></a>
 ## Create a pull request
 
