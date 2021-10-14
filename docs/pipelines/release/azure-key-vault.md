@@ -2,7 +2,7 @@
 title: Use Azure Key Vault secrets in Azure Pipelines
 description: How to create Azure Key vaults, store secrets, and use those secrets in your Azure Pipelines
 ms.topic: tutorial
-ms.date: 02/16/2021
+ms.date: 10/14/2021
 ms.custom: contperf-fy21q3, devx-track-azurecli
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
@@ -220,8 +220,9 @@ If you encounter an error indicating that the user or group does not have secret
 
 ```Command
 $ErrorActionPreference="Stop";
-Login-AzureRmAccount -SubscriptionId your-subscription-ID;
-$spn=(Get-AzureRmADServicePrincipal -SPN service-principal-ID);
+$Credential = Get-Credential;
+Connect-AzAccount -SubscriptionId <YOUR_SUBSCRIPTION_ID> -Credential $Credential;
+$spn=(Get-AzureRmADServicePrincipal -SPN <YOUR_SERVICE_PRINCIPAL_ID>);
 $spnObjectId=$spn.Id;
 Set-AzureRmKeyVaultAccessPolicy -VaultName key-vault-tutorial -ObjectId $spnObjectId -PermissionsToSecrets get,list;
 ```
