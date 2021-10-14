@@ -15,7 +15,7 @@ ms.date: 10/13/2021
 
 # Cross-service and enhanced query operations  
 
-[!INCLUDE [temp](../version-vsts-tfs-2015-on.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)] 
 
 Managed queries are primarily focused on listing and working with work items. However, the query capabilities also support several cross-service operations, some of which require installation of a Marketplace extension. 
 
