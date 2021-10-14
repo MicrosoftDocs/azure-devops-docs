@@ -22,19 +22,19 @@ To view or set your personal notifications, see [Manage your personal notificati
 
 - To view project notification settings, [go to the project](../../project/navigation/go-to-project-repo.md) and select **Project settings** > **Notifications**.
 
-  ![Settings for PR emails](./media/pull-requests/pr-notifications-new-nav.png)
+  ![Screenshot that shows Settings for PR emails.](media/pull-request-notifications/pr-notifications-new-nav.png)
 
 - To subscribe to more notifications, select **New subscription**.
 
-  ![Subscribe to emails](./media/pull-requests/new-subscription-new-nav.png)
+  ![Screenshot that shows Subscribe to emails.](media/pull-request-notifications/new-subscription-new-nav.png)
 
 - To edit a notification, select **...** next to the notification and select **View**, then edit the subscription.
 
-  ![Change subscription](./media/pull-requests/view-pr-notifications.png)
+  ![Screenshot that shows Change subscription.](media/pull-request-notifications/view-pr-notifications.png)
 
 - To opt out of a notification, set the **State** to **Off**.
 
-  ![Opt out of emails](./media/pull-requests/opt-out-notifications.png)
+  ![Screenshot that shows Opt out of emails.](media/pull-request-notifications/opt-out-notifications.png)
 
 ::: moniker-end
 
@@ -42,19 +42,19 @@ To view or set your personal notifications, see [Manage your personal notificati
 
 Select the settings button while you have your project open to bring up the project administration page.
 
-![Open up the administrative area of the web portal for your project](media/pull-requests/gear_icon_settings.png) 
+![Screenshot that shows Open up the administrative area of the web portal for your project.](media/pull-requests/gear_icon_settings.png) 
 
 - Select the **Notifications** tab to view your notification settings, and choose **New subscription** to subscribe to more notifications.
 
-  ![Subscribe to emails](./media/pull-requests/pr-notifications.png)
+  ![Screenshot that shows Subscribe to emails.](media/pull-request-notifications/pr-notifications.png)
 
 - To edit a notification, select **...** for the notification and choose **View** to edit the subscription. 
 
-  ![Change subscription](./media/pull-requests/view-pr-notifications.png)
+  ![Screenshot that shows Change subscription.](media/pull-request-notifications/view-pr-notifications.png)
 
 - To opt-out of a notification, set the **State** to **Off**.
 
-   ![Opt out of emails](./media/pull-requests/opt-out-notifications.png)
+   ![Screenshot that shows Opt out of emails.](media/pull-request-notifications/opt-out-notifications.png)
 
 ::: moniker-end
 
