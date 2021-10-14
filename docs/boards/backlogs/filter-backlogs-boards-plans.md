@@ -50,7 +50,7 @@ With the filter function, you can interactively apply a keyword filters to an Az
 Use filters to complete these tasks:  
 - In daily scrum meetings, filter the Kanban board to focus on assigned work for a specific sprint. 
 - Or, if your team uses the Sprints Taskboard, filter for a team member's completed assigned work. 
-- To focus on a group of work items, filter based on the Parent Work Item, by Area Path, or Tags.  
+- To focus on a group of work items, filter based on the **Parent Work Item**, by **Area Path**, or **Tags**.  
 - To triage work items, create a query and filter to focus on similar work grouped by Area Path or Tags. 
 
  
@@ -256,7 +256,6 @@ Supported options are indicated with a ✔️ or listed.
       - Area Path
       - Iteration Path
       - Tags
-      - Parent Work Item
    :::column-end:::
    :::column span="1.5":::
       ✔️   
