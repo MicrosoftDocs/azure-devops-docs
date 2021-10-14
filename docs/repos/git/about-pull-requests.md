@@ -122,5 +122,5 @@ In large repos with many active contributors, this issue can be especially incon
 
 ## Next steps
 - [Create, review, and manage pull requests](pull-requests.md)
-- [Pull request update notifications](notifications.md)
+- [Pull request update notifications](pull-request-notifications.md)
 - [Change the default branch](change-default-branch.md)

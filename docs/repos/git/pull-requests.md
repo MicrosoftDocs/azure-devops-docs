@@ -1138,5 +1138,5 @@ To undo the changes from a PR, follow these steps:
 - [About pull requests](about-pull-requests.md)
 - [Change the default branch](change-default-branch.md)
 - [Copy changes with cherry-pick](cherry-pick.md)
-- [Pull request update notifications](notifications.md)
+- [Pull request update notifications](pull-request-notifications.md)
 
