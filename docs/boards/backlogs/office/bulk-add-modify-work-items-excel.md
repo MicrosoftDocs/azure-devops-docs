@@ -384,7 +384,7 @@ You can add a hierarchy of work items linked using parent-child links or other t
 
 <a id="update-work-items "></a>
 
-## Update pdate work items in bulk with a query list
+## Update work items in bulk with a query list
 
 The easiest way to bulk update many work items is to create a query with the work items you want to update, and then open that query in Excel. 
 
