@@ -132,7 +132,7 @@
   - name: Squash merge pull requests 
     href: merging-with-squash.md
   - name: Pull request notifications
-    href: notifications.md
+    href: pull-request-notifications.md
   - name: Pull request templates
     href: pull-request-templates.md
   - name: Extend pull request workflows with pull request status
