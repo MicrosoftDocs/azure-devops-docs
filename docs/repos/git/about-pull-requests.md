@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 [!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
-Pull requests (PRs) are a way to change, review, and merge code in a [Git repository on Azure Repos](../../organizations/projects/create-project.md). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
+Pull requests (PRs) are a way to change, review, and merge code in a [Git repository on Azure Repos](../../organizations/projects/create-project.md#add-a-repository-to-your-project). PRs can come from branches within the same repository or from branches in [forks](forks.md) of the repository. Teams use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
 The following video shows the general pull request process. Some terminology and user interface elements might not apply to your Azure DevOps version.
 
@@ -59,9 +59,9 @@ Your team might rely on critical branches in your repo, such as the `main` branc
 
 You can add more policies to PRs to enforce better code quality in key branches. Extra requirements like a clean build of the proposed code or approval from multiple reviewers can help protect key branches.
 
-You can set the number of required approvals for a PR in a branch policy. You can also set certain reviewers to be required or optional on all or certain PRs. A PR can be set to autocomplete with the required number of approvals, even if other reviewers reject the changes. However, required reviewers must approve PRs before they can merge. It's best practice for at least two reviewers to review and approve changes in a significant PR.
+You can set the number of required approvals for a PR in a branch policy. You can also set certain reviewers to be required or optional on all or certain PRs. A PR can be set to autocomplete with the required number of approvals, even if other reviewers reject the changes. However, required reviewers must approve PRs before the PRs can merge. It's best practice for at least two reviewers to review and approve changes in a significant PR.
 
-To reset votes when a PR author pushes new changes, select **Reset code reviewer votes when there are new changes** in the [Require a minimum number of reviewers](branch-policies.md#require-a-minimum-number-of-reviewers) branch policy.
+To reset votes whenever a PR author pushes new changes, select **Reset code reviewer votes when there are new changes** in the [Require a minimum number of reviewers](branch-policies.md#require-a-minimum-number-of-reviewers) branch policy.
 
 For more information, see:
 

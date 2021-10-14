@@ -166,6 +166,8 @@ Starting with Visual Studio 2017 Update 6, you can check out a PR's source branc
 
 # [Azure Command Line](#tab/azure-command-line)
 
+::: moniker range=">= azure-devops-2020"
+
 In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 Many `az devops` commands require `--org` and `--project` parameters. To avoid having to enter these parameters, you can set a default Azure DevOps organization and project with `az devops configure --defaults`.
@@ -225,6 +227,8 @@ For example, to check out the branch for PR #21 locally, use:
 ```azurecli
 az repos pr checkout --id 21
 ```
+
+::: moniker-end
 
 
 ***
@@ -320,6 +324,8 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 
 # [Azure Command Line](#tab/azure-command-line)
 
+::: moniker range=">= azure-devops-2020"
+
 To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create). The only parameters you need to add are `repository` and `source-branch`. If you don't specify `target-branch`, the PR targets the default branch of the target repository. To open the PR in your browser after creation, use `open`.
 
 For example, the following command creates a PR from the `new` branch to the default `main` branch of the Fabrikam repository, and then opens the PR in the browser:
@@ -329,6 +335,8 @@ az repos pr create --repository Fabrikam --source-branch new --open
 ```
 
 You can specify several other details about PRs at creation. To add details, reviewers, work items, and completion options to the PR at creation, see [Add details to PRs](#add-details-to-prs).
+
+::: moniker-end
 
 
 ***
@@ -392,6 +400,8 @@ To set a PR to draft, from the **Pull Requests** view in Team Explorer, right-cl
 
 # [Azure Command Line](#tab/azure-command-line)
 
+::: moniker range=">= azure-devops-2020"
+
 To create a PR as a draft, set the `draft` parameter to `true` when you create the PR.
 
 For example:
@@ -403,6 +413,8 @@ az repos pr create --repository Fabrikam --source-branch new --draft true
 To set an existing PR to draft, use `az repos pr update --id <PR Id> --draft true`
 
 To remove draft status from a PR, set `draft` to `false`.
+
+::: moniker-end
 
 
 ***
@@ -612,6 +624,8 @@ To add reviewers, add tags, link work items, or change any details in an existin
 
 # [Azure Command Line](#tab/azure-command-line)
 
+::: moniker range=">= azure-devops-2020"
+
 You can add details during PR creation with [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create), or update details in existing PRs with [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update).
 
 ### Add or edit title and description
@@ -666,6 +680,8 @@ To manage work items for an existing PR, use [az repos pr work-item](/cli/azure/
 - To list the work items linked to a PR, use `az repos pr work-item list --id <PR Id>`.
 - To unlink a work item from a PR, use `az repos pr work-item remove --id <PR Id> --work-items <Id1>`.
   Removing a link only removes the link between the work item and the PR. Links created in the branch or from commits stay in the work item.
+
+::: moniker-end
 
 
 ***
@@ -809,6 +825,8 @@ To vote on a PR, from the **Pull Requests** view in Team Explorer, right-click t
 
 # [Azure Command Line](#tab/azure-command-line)
 
+::: moniker range=">= azure-devops-2020"
+
 To vote whether to approve a PR, use [az repos pr set-vote](/cli/azure/repos/pr#az_repos_pr_set_vote). The vote options are `approve`, `approve-with-suggestions`, `reject`, `reset`, or `wait-for-author`.
 
 For example, to vote to approve PR #21, use:
@@ -816,6 +834,8 @@ For example, to vote to approve PR #21, use:
 ```azurecli
 az repos pr set-vote --id 21 --vote approve
 ```
+
+::: moniker-end
 
 
 ***
@@ -1018,6 +1038,8 @@ To complete a PR, from the **Pull Requests** view in Team Explorer, right-click 
 
 # [Azure Command Line](#tab/azure-command-line)
 
+::: moniker range=">= azure-devops-2020"
+
 To complete a PR and merge the changes, update the PR `status` to `completed` with [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update).
 
 For example, to complete PR #21, use:
@@ -1055,6 +1077,8 @@ Set autocomplete to complete a PR automatically when it passes all required appr
 ### Abandon your changes
 
 To abandon a PR without merging it, use `az repos pr update --id <PR Id> –-status abandoned`. You can reactivate the PR by setting the status to `active`.
+
+::: moniker-end
 
 
 ***
