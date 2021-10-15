@@ -492,21 +492,21 @@ steps:
 ### Conditionally run a step
 
 ```yaml
-    variables:
-      - name: foo
-        value: fabrikam # triggers else condition
-    
-    pool:
-      vmImage: 'ubuntu-latest'
-    
-    steps:
-    - script: echo "start"
-    - ${{ if eq(variables.foo, 'adaptum') }}:
-      - script: echo "this is adaptum"
-    - ${{ elseif eq(variables.foo, 'contoso') }}:
-      - script: echo "this is contoso"
-    - ${{ else }}:
-      - script: echo "the value is not adaptum or contoso"
+variables:
+  - name: foo
+    value: fabrikam # triggers else condition
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "start"
+- ${{ if eq(variables.foo, 'adaptum') }}:
+  - script: echo "this is adaptum"
+- ${{ elseif eq(variables.foo, 'contoso') }}:
+  - script: echo "this is contoso"
+- ${{ else }}:
+  - script: echo "the value is not adaptum or contoso"
 ```
 
 ## Each keyword
