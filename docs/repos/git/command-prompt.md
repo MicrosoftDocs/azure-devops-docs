@@ -201,8 +201,7 @@ For additional information, see the following resources:
 - [Create a new repo](creatingrepo.md)  
 - [Clone an existing repo](clone.md)   
 - [Share your code in Git with the command line](share-your-code-in-git-cmdline.md)   
-- [Share your code in Git with Visual Studio 2015](share-your-code-in-git-vs.md)   
-- [Share your code in Git with Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
+- [Share your code in Git with Visual Studio](share-your-code-in-git-vs.md)      
 - [Create a new repo in your Project](create-new-repo.md)   
 - [Delete a repo in your Project](delete-existing-repo.md)
 

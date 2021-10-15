@@ -7,7 +7,7 @@
   - name: Create repo - Web
     href: create-new-repo.md
   - name: Create repo - Visual Studio
-    href: share-your-code-in-git-vs-2017.md
+    href: share-your-code-in-git-vs.md
   - name: Git preferences and settings
     href: git-config.md
   - name: Clone an existing repo

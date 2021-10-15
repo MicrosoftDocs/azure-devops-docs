@@ -18279,6 +18279,16 @@
       "source_path": "docs/repos/git/repo-rename-tfs2015.md",
       "redirect_url": "/azure/devops/repos/git/repo-rename",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/share-your-code-in-git-vs-2013.md",
+      "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/share-your-code-in-git-vs-2017.md",
+      "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs",
+      "redirect_document_id": false
     }
   ]
 }

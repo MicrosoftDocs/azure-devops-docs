@@ -11,7 +11,7 @@ monikerRange: '<= azure-devops'
 
 # Save work with commits
 
-[!INCLUDE [version-azure-devops-2020](../includes/version-azure-devops-2020.md)]
+[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
 [!INCLUDE [version-vs-2015-vs-2019](../includes/version-vs-2015-vs-2019.md)]
 
 
