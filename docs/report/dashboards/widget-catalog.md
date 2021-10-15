@@ -146,7 +146,7 @@ Widgets listed in the following table are provided out-of-box. They're organized
       - [Test results trend](#test-trend-results) (Build or Release pipeline)  
       ---
       **Information and links**
-      - [Embedded web page](#embedded-webpage-widget)  
+      - [Embedded Webpage](#embedded-webpage-widget)  
       - [Markdown](#markdown-widget)  
       - [Other links](#other-links-widget)  
       - [Team members](#team-members-widget) (Team) 
@@ -167,7 +167,7 @@ Widgets listed in the following table are provided out-of-box. They're organized
       ---
       ::: moniker range="tfs-2018"
       **Information and links**
-      - [Embedded web page](#embedded-webpage-widget)  
+      - [Embedded Webpage](#embedded-webpage-widget) 
       - [Markdown](#markdown-widget)  
       - [Other links](#other-links-widget-2018)  
       - [Team members](#team-members-widget) (Team) 
@@ -176,7 +176,7 @@ Widgets listed in the following table are provided out-of-box. They're organized
       ::: moniker-end
       ::: moniker range="tfs-2017"
       **Information and links**
-      - [Embedded web page](#embedded-webpage-widget)  
+      - [Embedded Webpage](#embedded-webpage-widget)   
       - [Markdown](#markdown-widget)  
       - [Other links](#other-links-widget-2018)  
       - [Team members](#team-members-widget) (Team) 
@@ -261,7 +261,7 @@ In addition to the widgets listed here, you can add a work item query chart to y
    :::column span="1":::
       <br/>
       <a id="assigned-to-me-widget"></a>
-      Displays the list of active work items assigned to the currently logged in user. The list ignores closed, removed, cut, or deleted work items.
+      Displays the list of active work items assigned to the currently logged in user. The list ignores closed, removed, cut, or deleted work items and other work item types which are not aligned to any backlogs.
    :::column-end:::
 :::row-end:::
 ::: moniker-end

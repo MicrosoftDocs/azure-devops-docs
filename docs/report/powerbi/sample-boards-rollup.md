@@ -1,14 +1,14 @@
 ---
 title: Rollup child work item values to sample report
 titleSuffix: Azure DevOps
-description:  How to generate a rollup of child work item values to the parent Power BI report
+description:  Learn how to generate a rollup of child work item values to the parent Power BI report.
 ms.technology: devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/21/2021
+ms.date: 10/05/2021
 ---
 
 # Rollup child work item values to parent sample report
@@ -71,7 +71,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-- {areapath} - Your Area Path. Example format: Project\Level1\Level2
+- `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
 
 
 ### Query breakdown
@@ -118,7 +118,7 @@ The following table describes each part of the query.
    `and Descendants/any()`
    :::column-end:::
    :::column span="2":::
-   Include all Features, even those with no User Stories. Replace with "any(d:d/WorkItemType eq 'User Story')" to omit Features that don't have child User Stories.
+   Include all Features, even the ones with no User Stories. Replace with "any(d:d/WorkItemType eq 'User Story')" to omit Features that don't have child User Stories.
    :::column-end:::
 :::row-end:::
 :::row:::

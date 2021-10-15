@@ -110,7 +110,7 @@ One of the main choices teams have is choosing the work item types they use to t
      - Track estimated and remaining work: [Taskboard](sprints/adjust-work.md)
      - Monitor sprint burndown based on remaining work such as hours or days: [Sprint burndown](../report/dashboards/configure-sprint-burndown.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json)
      - Conduct daily scrums, update and monitor task status: [Sprint Taskboard](sprints/task-board.md)  
-     - Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates)
+     - Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates-to-backlog-items)
      - View progress bars, counts, or sums of rollup on tasks: [Rollup](backlogs/display-rollup.md)  
      - Track dependencies across teams and projects: [Dependency Tracker](extensions/dependency-tracker.md)  
 
@@ -126,7 +126,7 @@ One of the main choices teams have is choosing the work item types they use to t
       Recommended for teams that follow Kanban or Scrumban methods, estimate work using Story Points, Effort, or Size, and don't track time associated with work.  
       - Quickly define and prioritize backlog items: [Product backlog](backlogs/create-your-backlog.md)  
       - Plan sprints: [Backlog Planning tool](sprints/assign-work-sprint.md)  
-      - Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates)  
+      - Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates-to-backlog-items)  
       - Forecast sprints using team velocity: [Forecast](sprints/forecast.md)  
       - Monitor sprint burndown based on requirement estimates: [Sprint burndown](../report/dashboards/configure-sprint-burndown.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json)  
       - Update requirement status: [Kanban board](boards/kanban-quickstart.md)  

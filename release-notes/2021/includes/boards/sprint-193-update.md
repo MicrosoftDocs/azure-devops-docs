@@ -10,7 +10,7 @@ ms.topic: include
 
 In Delivery Plans you can use styling rules to change cards when their corresponding work items meet rules that you set. With this update, we included **Tag colors** so you can now emphasize selected tags using colors. 
 
-Prior to setting tag colors, first add tags to backlog items that you want to highlight with color. From the Settings dialog, choose Tag colors and then choose the :::image type="icon" source="../../media/green_plus_icon.png" border="false"::: plus icon. Then, select the tag and the color you want to appear on the cards. Save the settings when you are done with your chanegs. Please note that only one color applies to a tag at a time.
+Prior to setting tag colors, first add tags to backlog items that you want to highlight with color. From the Settings dialog, choose Tag colors and then choose the :::image type="icon" source="../../media/green_plus_icon.png" border="false"::: plus icon. Then, select the tag and the color you want to appear on the cards. Save the settings when you are done with your changes. Please note that only one color applies to a tag at a time.
 
 > [!div class="mx-imgBorder"]
 > ![Color tags in Delivery Plans](../../media/193-boards-01.png)
@@ -22,7 +22,7 @@ You can now filter the cards displayed based on a Boolean field type, Delivery P
 > [!div class="mx-imgBorder"]
 > ![Filter cards based on boolean fields](../../media/193-boards-04.png)
 
-### Work item title are always visible in Delivery Plan cards 
+### Work item title is always visible in Delivery Plan cards 
 
 A pain point for customers using Delivery Plans was that the title of the work item wasn't always visible in the cards. We heard your feedback that this made it challenging to identify the work. Based on your feedback, we've made changes so that the title of a work item is always visible in the card.
 
