@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 10/01/2021
 ---
 
