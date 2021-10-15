@@ -16,14 +16,20 @@ Follow this quick tutorial to learn how to connect your npm client to your feed 
 
     :::image type="content" source="../../npm/media/project-setup-npm.png" alt-text="Screenshot showing how to set up your project":::
 
-1. Open a shell and navigate to the directory that contains your package's **package.json** file.
-   If you don't have a **package.json** file, run the following command:
+## Publish npm packages
 
-   ```
-   npm init
-   ```
-    See the [npm CLI docs](https://docs.npmjs.com/cli-documentation/cli) for a list of npm commands.
-   
+1. Open a command prompt window and navigate to the directory that contains your *package.json*. If you don't have a *package.json* file, run the following command:
+
+   ```Command
+   npm init 
+  ```
+
+1. Run the following command in your project directory to publish your npm packages:
+
+    ```Command
+    npm publish
+    ```
+
 1. Push your package to your feed 
    ```
    npm publish
