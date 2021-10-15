@@ -30,10 +30,16 @@ Follow this quick tutorial to learn how to connect your npm client to your feed 
     npm publish
     ```
 
-1. Push your package to your feed 
-   ```
-   npm publish
-   ```
+## Restore npm packages
 
-    See the [npm publish docs](https://docs.npmjs.com/cli/publish) for more information on the `publish` command.
+1. Run the following command in your project directory to restore your npm packages: 
+   
+    ```Command
+    npm install
+    ```
 
+## Related articles
+
+- [Publish npm packages (YAML/Classic)](../../../pipelines/artifacts/npm.md)
+- [Use packages from npmjs.com](../../npm/upstream-source.md)
+- [Use npm audit](../../npm/npm-audit.md)
