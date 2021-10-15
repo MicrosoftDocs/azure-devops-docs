@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 07/22/2021
+ms.date: 10/15/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -454,7 +454,9 @@ You can use the following status check functions as expressions in conditions, b
 
 ## Conditional insertion
 
-You can use an `if` clause to conditionally assign the value or a variable or set inputs for tasks. Conditionals only work when using template syntax. Learn more about [variable syntax](variables.md#understand-variable-syntax). 
+You can use `if`, `elseif`, and `else` clauses to conditionally assign variable values or set inputs for tasks. You can also conditionally run a step when a condition is met. 
+
+Conditionals only work when using template syntax. Learn more about [variable syntax](variables.md#understand-variable-syntax). 
 
 For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md).
 
@@ -482,11 +484,30 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
       artifact: 'prod'
-    ${{ if ne(variables['Build.SourceBranchName'], 'main') }}:
+    ${{ else }}:
       artifact: 'dev'
     publishLocation: 'pipeline'
 ```
 
+### Conditionally run a step
+
+```yaml
+variables:
+  - name: foo
+    value: fabrikam # triggers else condition
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "start"
+- ${{ if eq(variables.foo, 'adaptum') }}:
+  - script: echo "this is adaptum"
+- ${{ elseif eq(variables.foo, 'contoso') }}:
+  - script: echo "this is contoso"
+- ${{ else }}:
+  - script: echo "the value is not adaptum or contoso"
+```
 
 ## Each keyword
 
