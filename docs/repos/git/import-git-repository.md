@@ -10,7 +10,8 @@ monikerRange: '<= azure-devops'
 ---
 
 # Import a Git repo
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
+
+[!INCLUDE [version-tfs-2013-cloud](../includes/version-tfs-2013-cloud.md)]
 
 This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your project in Azure DevOps.
 
@@ -216,7 +217,7 @@ git push origin --all
 > [!div class="nextstepaction"]
 > [New to Git repos? Learn more](/devops/develop/git/set-up-a-git-repository)
 
-> [!div class="nextstepaction"]
-> [Learn more about Git in the Git tutorial](gitworkflow.md)
+## Related articles
+- [Learn more about Git in the Git tutorial](gitworkflow.md)
 
 

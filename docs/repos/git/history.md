@@ -12,6 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Understand Git history
 
+[!INCLUDE [version-tfs-2013-cloud](../includes/version-tfs-2013-cloud.md)]
+
 Git stores history as a graph of snapshots &mdash; called commits &mdash; of the entire repository.
 Each commit also contains a pointer to one or more previous commits.
 Commits can have multiple parents, creating a history that looks like a graph instead of a straight line.
