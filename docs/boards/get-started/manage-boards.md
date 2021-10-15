@@ -7,7 +7,7 @@ ms.custom: boards-get-started
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 09/15/2021
 ---
 
