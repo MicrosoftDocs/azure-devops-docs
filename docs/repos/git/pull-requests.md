@@ -378,14 +378,6 @@ To create a draft PR, select the arrow next to **Create** and select **Create as
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
-
-- If you start your PR title with WIP, **Create as draft** is selected as the default.
-
-  ![Start your PR title with WIP to Create as draft.](media/pull-requests/create-draft-pr-wip.png)
-
-::: moniker-end
-
 ::: moniker range=">=azure-devops-2019"
 
 When you're ready to have the PR reviewed and completed, select **Publish** at upper right in the PR. Publishing a PR assigns required reviewers, evaluates policies, and kicks off voting.

@@ -127,7 +127,7 @@
   items:
   - name: About pull requests
     href: about-pull-requests.md
-  - name: Create, review and manage pull requests
+  - name: Create, review, and manage pull requests
     href: pull-requests.md
   - name: Squash merge pull requests 
     href: merging-with-squash.md
