@@ -1,14 +1,14 @@
 ---
 title: Feature Progress rollup sample Power BI report 
 titleSuffix: Azure DevOps
-description: How to generate feature progress rollup by Story Points Power BI report
+description: Learn how to generate feature progress rollup by Story Points Power BI report.
 ms.technology: devops-analytics
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/24/2021
+ms.date: 10/05/2021
 ---
 
 # Feature progress rollup sample report
@@ -73,7 +73,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-- {areapath} - Your Area Path. Example format: Project/Level1/Level2
+- `{areapath}` - Your Area Path. Example format: `Project/Level1/Level2`
 
 
 ### Query breakdown
@@ -119,7 +119,7 @@ The following table describes each part of the query.
       `and startswith(Area/AreaPath,'{areapath}')`  
    :::column-end:::
    :::column span="2":::
-      Work items under a specific Area Path. Replacing with Area/AreaPath eq '{areapath}' returns items at a specific Area Path.  
+      Work items under a specific Area Path. Replacing with `Area/AreaPath eq '{areapath}'` returns items at a specific Area Path.  
       To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
    :::column-end:::
 :::row-end:::
@@ -134,7 +134,7 @@ The following table describes each part of the query.
       &$select=WorkItemId,Title,WorkItemType,State,Area, Descendants
       &$expand=Descendants($select=WorkItemId)`  
       <br/>
-      For all workitems with **at least one descendant**:
+      For all work items with **at least one descendant**:
       `$filter=endswith(Area/AreaPath, 'suffix')and Descendants/any()
       &$select=WorkItemId,Title,WorkItemType,State,Area, Descendants
       &$expand=Descendants($select=WorkItemId)`
@@ -194,9 +194,9 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-The query returns several columns that you need to expand before you can use them in Power BI. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. You need to expand the record to flatten the entity into its fields.  
+The query returns several columns that you need to expand before you can use them in Power BI. Any entity pulled in using an OData **$expand** statement returns a record with potentially several fields. Expand the record to flatten the entity into its fields.  
 
-For the Feature Progress report, you'll need to perform the following transforms: 
+For the Feature Progress report, you'll need to carry out the following transforms: 
 
 - Expand the **Descendants** column into two columns: **Descendants.StateCategory** and **Descendants.TotalStoryPoints**
 - Apply **Pivot Column** transform on **Descendants.StateCategory** column to separate out individual State categories  
@@ -210,7 +210,7 @@ For the Feature Progress report, you'll need to perform the following transforms
 
 ### Expand Descendants column
 
-The **Descendants** column contains a table with two fields: **State** and **TotalStoryPoints**. You need to expand it. 
+The **Descendants** column contains a table with two fields: **State** and **TotalStoryPoints**. Expand it. 
 
 
 1. Select the expand button on the **Descendants** column.
@@ -230,7 +230,7 @@ The **Descendants** column contains a table with two fields: **State** and **Tot
 
 ### Pivot Descendants.StateCategory column
 
-1. Click the Descendants.StateCategory column header to select it.
+1. Select the Descendants.StateCategory column header to select it.
 1. Select **Transform** menu and then **Pivot Column**. 
 	:::image type="content" source="media/reports-boards/transform-menu-pivot-column.png" alt-text="Transform menu, Pivot Column option.":::
 1. For **Values** select "Descendants.TotalStoryPoints".  
