@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.custom: "contperf-fy20q4, linked-from-support"
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 10/08/2021
 ---
 
