@@ -8,7 +8,7 @@ ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 10/08/2021
 ---
 
