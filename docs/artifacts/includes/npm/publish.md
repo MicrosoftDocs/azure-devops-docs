@@ -41,5 +41,5 @@ Follow this quick tutorial to learn how to connect your npm client to your feed 
 ## Related articles
 
 - [Publish npm packages (YAML/Classic)](../../../pipelines/artifacts/npm.md)
-- [Use packages from npmjs.com](../../npm/upstream-source.md)
+- [Use packages from npmjs.com](../../npm/upstream-sources.md)
 - [Use npm audit](../../npm/npm-audit.md)
