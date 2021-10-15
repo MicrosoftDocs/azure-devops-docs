@@ -32,8 +32,7 @@ Do the following task:
 
 - Request that SSH keys be manually cleared by [Support](https://azure.microsoft.com/support/devops/). You can find the steps for how to recreate SSH keys [further in this article](#inform-users-of-the-completed-change).
 
-> [!IMPORTANT]
-> Users and groups that inherit membership and permissions from an Azure AD group, will no longer inherit those permissions after the transfer. Azure AD groups that were added to your Azure DevOps organization don't get transferred and will cease to exist in your organization when the Azure AD connection is changed. All permissions and membership relationships made with these Azure AD groups will also cease to exist after the transfer.
+[!INCLUDE [azure-ad-tenant-switch-note](includes/azure-ad-tenant-switch-note.md)]
 
 ## Change the Azure AD connection
 
