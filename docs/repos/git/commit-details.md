@@ -13,7 +13,8 @@ monikerRange: '>= tfs-2017'
 
 # Commit details
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1**
+
+[!INCLUDE [version-tfs-2017-cloud](../includes/version-tfs-2017-cloud.md)]
 
 ## Commit details view
 
@@ -22,6 +23,8 @@ The commit details view provides information regarding all the changes made as p
 ![Commit details page](media/commit-details/1Commitdetails.png)
 
 
+> [!NOTE]
+> The feature documented in this article requires TFS 2017 Update 1 or later version.  
 ## What information do you see on the commit details page?
 
 * Commit ID and commit message - You can view the commit Id and commit message of the commit. You also have the option to copy the commit Id or commit message by clicking on the **Copy** buttons.

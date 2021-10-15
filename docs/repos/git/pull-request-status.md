@@ -12,11 +12,13 @@ monikerRange: '>= tfs-2018'
 
 # Customize and extend pull request workflows with pull request status
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 Update 2**
+[!INCLUDE [version-tfs-2018-cloud](../includes/version-tfs-2018-cloud.md)]
 
 [Pull requests](pull-requests.md) are a great tool for facilitating code reviews and managing code movement within a repository. 
 [Branch policies](branch-policies.md) enforce code quality during the pull request process by establishing requirements that must be performed for every code change. 
 These policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, Azure Repos offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. Optionally, pull requests can be blocked until the external service approves the change.
+
+[!INCLUDE [note-tfs-2018.2-update](includes/note-tfs-2018.2-update.md)]  
 
 Integrating into the PR workflow involves a few different concepts:
 

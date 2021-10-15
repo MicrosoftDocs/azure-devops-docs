@@ -18274,6 +18274,11 @@
       "source_path": "docs/repos/git/gitquickstart-vs2015.md",
       "redirect_url": "/azure/devops/repos/git/gitquickstart",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/repo-rename-tfs2015.md",
+      "redirect_url": "/azure/devops/repos/git/repo-rename",
+      "redirect_document_id": false
     }
   ]
 }

@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Share your code with Visual Studio 2015 and Azure Repos
+# Share your code with Azure Repos and Visual Studio
 
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 
