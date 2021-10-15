@@ -6,8 +6,8 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2017'
-ms.date: 09/07/2021
+monikerRange: 'azure-devops'
+ms.date: 10/14/2021
 ---
 
  
