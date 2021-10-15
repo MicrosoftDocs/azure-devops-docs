@@ -105,7 +105,7 @@ Once you open the Plan settings dialog, choose one of the following tabs to set 
       **[Fields](#fields)** 
    :::column-end:::
    :::column span="3":::
-      Add or remove fields from cards to display on the plan. 
+      Add or remove fields from cards to display on the plan.
    :::column-end:::
 :::row-end:::
 ---
@@ -118,8 +118,20 @@ Once you open the Plan settings dialog, choose one of the following tabs to set 
    :::column-end:::
 :::row-end:::
 ---
+:::row:::
+   :::column span="1":::
+      **[Tag colors](#tag-colors)** 
+   :::column-end:::
+   :::column span="3":::
+      Add tags and specify a tag color. Optionally enable or disable a tag color. . 
+   :::column-end:::
+:::row-end:::
+---
 
 <a id="teams" />
+
+
+
 ## Add a plan  
 
 1. Open **Boards>Delivery Plans**. 
@@ -179,7 +191,7 @@ Show those fields that are useful for your review purposes or if they contain ke
  
 1. From the Plan settings dialog, choose the **Fields** tab. Place a check mark in the check box for those fields you want to have appear on the board. 
 
-1. To add a field, choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of a field  you want to add. 
+1. To add a field, choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of a field  you want to add. You can add both default and custom fields, including Boolean fields. The only fields you can't add are rich-text or HTML fields. 
 
 	Here we select all standard fields and add the **Story Points** and **Priority** fields to display on cards. 
 
@@ -228,6 +240,25 @@ With styling rules, you can cause cards to change color when their corresponding
 
 	> [!NOTE]   
 	> Some fields aren't supported for selection, such as the **Title** field, **Description** and other rich-text fields, **Assigned To** and other identity fields. Also, you may be able to select a field but not be able to specify a value or the value you want. For example, you can't specify **Tags** that are *Empty* or *Not Empty*. 
+
+
+<a id="tag-colors" />
+
+## Set tag colors
+
+Prior to setting tag colors, first [add tags to backlog items](../queries/add-tags-to-work-items.md) that you want to highlight with color.
+
+1. From the Plan settings dialog, choose **Tag colors** and then choose :::image type="icon" source="../../media/icons/add-dark-icon.png" border="false"::: **Add tag color**. Then, select the tag and the color you want to appear on the cards.  
+
+	:::image type="content" source="media/plans/edit-tags-settings.png" border="true" alt-text="Plans settings, Tags tab, add tags and set color.":::   
+   
+2. To enable or disable a tag color, select the **Enabled** checkbox.  
+
+3. When done with your changes, choose **Save**.
+
+   > [!TIP]
+   > If tags don't display on the cards, choose **Fields** and make sure that you've checked **Show Tags**. 
+
 
 
 <a id="plans-rest-api">  </a>
