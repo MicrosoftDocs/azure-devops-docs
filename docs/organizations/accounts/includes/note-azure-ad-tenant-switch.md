@@ -1,8 +1,8 @@
 ---
+ms.topic: include
 ms.technology: devops-accounts
 ms.author: chcomley
 author: chcomley
-ms.topic: include
 ---
 
 > [!IMPORTANT]
