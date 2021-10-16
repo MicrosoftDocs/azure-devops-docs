@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 09/28/2021
 ---
 
