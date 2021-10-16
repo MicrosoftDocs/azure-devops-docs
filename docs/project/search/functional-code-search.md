@@ -2,41 +2,47 @@
 title: Functional code search options
 titleSuffix: Azure Repos
 description: Options for code searching across all your projects in Azure DevOps.
-ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.technology: devops-collab
+ms.custom: cross-service, cross-project
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2017'
-ms.date: 04/15/2021
+ms.date: 09/08/2021
 ---
 
 # Functional code search  
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
-Functional code search command filters extend your ability to refine your search across repositories beyond what is documented in [Get started with search](get-started-search.md). To perform code searches, the [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) Marketplace extension must be installed for your organization or collection.
+Functional code search extends your ability to refine your search across repositories beyond what's documented in [Get started with search](get-started-search.md). To do code searches, the [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) Marketplace extension must be installed for your organization or collection.
 
 ## Prerequisites
 
-- You must install [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
+- Install [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
 ::: moniker range="< azure-devops"
   For more information, see [Install and configure search](install-configure-search.md).
 ::: moniker-end
-- To use Code Search, you must have at least a Basic access. 
-- Users granted Stakeholder access don't have access to code, and so don't have access to Code Search.
+- To use Code Search, you must have at least Basic access.
+- Users with Stakeholder access don't have access to code, so they can't search for code.
 ::: moniker range="azure-devops"
-- Users granted Stakeholder access for a private project can perform code searches, as they have [Full Access to the code](../../organizations/security/access-levels.md).
+- Users with Stakeholder access for a public project have [full access to code](../../organizations/security/access-levels.md), so they can search for code. To access code in a private project, you must have at least Basic access.
 ::: moniker-end
 - When you're searching across the organization or collection, only results for which a project member has access are listed.
 
 ## Code search best practices
 
 - Get the results you want even faster by starting with a higher-level search. You can narrow your search by using project, repository, path, file name, and other filter operators.
-- Ensure that you get to the results you want even when you're not sure of the exact term you're looking for. [Use wildcards to widen your search](get-started-search.md#search-features-usage-and-examples) and [Boolean operators to fine-tune it](get-started-search.md#search-features-usage-and-examples).
+- When you're not sure of the exact term you're looking for, [Use wildcards to widen your search](get-started-search.md#search-features-usage-and-examples) and [Boolean operators to fine-tune it](get-started-search.md#search-features-usage-and-examples).
 - Find more information about an item of interest faster and with minimal efforts. When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files.
 - Easily trace how your code works by using the shortcut menu to search for related items such as definitions and references – directly from inside a file or from the search results.
-- Go quickly to the implementation of, for example, an API your code might be taking dependency on by narrowing down your results to exact code type matches. Use code type filters to search for specific kinds of code such as definitions, references, functions, comments, strings, namespaces, and more.
+- Go quickly to the implementation of, for example, an API your code might be taking dependency on by narrowing down your results to exact code type matches. Use code type filters to search for specific kinds of code such as:
+- definitions
+- references
+- functions
+- comments
+- strings
+- namespaces, and more.
 
 > [!NOTE]
 > You can't search code in forked repositories.
@@ -47,7 +53,7 @@ As you enter your search, select functions and keywords from the drop-down list 
 
 You can also select one or a combination of filters from the list in the left column. Again, the **Show more** link displays all the available functions and keywords.
 
-Instead, you can enter the functions and parameters directly into the search. The following table shows the full list of functions for selecting specific types or members in your C#, C, C++, Java, and Visual Basic.NET code.
+Instead, you can enter the functions and parameters directly into the search. The following table shows a list of functions for selecting specific types or members in your C#, C, C++, Java, and Visual Basic.NET code.
 
 | To find code where _findThis_ appears as a ... | ... search for argument **arg:**_findThis_ |
 | --- | --- |
@@ -125,7 +131,7 @@ For more information about the following search functions, see [Get started with
 - Boolean operators
 - Proximity
 
-## Additional code search operations
+## More code search operations
 
 See the following examples of even more code search functions. You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. Open the search results in a new browser tab from the main search box, and select **Ctrl** + **Enter**. In Google Chrome, select **Ctrl** + **Shift** + **Enter** to switch the focus to the new browser tab.
 
@@ -155,7 +161,7 @@ In a TFVC project, you see a list of folder paths in that project for which you 
 
 ## Search code with REST API
 
-You can use APIs to extend or supplement the capabilities listed in this article. For information about Code Search with REST API, see [Fetch Code Search Results](/rest/api/azure/devops/search/code%20search%20results/fetch%20code%20search%20results).
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Code Search with REST API, see [Fetch Code Search Results](/rest/api/azure/devops/search/code-search-results/fetch-code-search-results).
 
 ## Next steps
 

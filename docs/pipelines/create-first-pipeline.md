@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 08/20/2021
+ms.date: 09/02/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker range="azure-devops"
 
-This is a step-by-step guide to using Azure Pipelines to build a GitHub repository.
+This is a step-by-step guide to using Azure Pipelines to build a sample application. This guide uses YAML pipelines configured with the [YAML pipeline editor](get-started/yaml-pipeline-editor.md). If you'd like to use Classic pipelines instead, see [Define your Classic pipeline](release/define-multistage-release-process.md).
 
 ## Prerequisites - Azure DevOps
 
@@ -330,6 +330,12 @@ az pipelines update [--branch]
 - **queue-id**: Queue ID of the agent pool where the pipeline needs to run.
 - **yaml-path**: Path of the pipeline's yaml file in the repo.
 
+ Global parameters include `debug`, `help`, `only-show-errors`, `query`, `output` and `verbose`.
+
+> [!TIP]
+> There are also global parameters you can use such as `--output`.
+> The `--output` parameter is available for all commands. The **table** value presents output in a friendly format. For more information, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
+
 #### Example 
 
 The following command updates the pipeline with the **ID** of 12 with a new name and description and shows the result in table format.
@@ -353,6 +359,8 @@ az pipelines show [--folder-path]
                   [--open]
                   [--org]
                   [--project]
+                  [--query-examples]
+                  [--subscription]
 ``` 
 
 #### Parameters
@@ -363,6 +371,8 @@ az pipelines show [--folder-path]
 - **open**: Open the pipeline summary page in your web browser.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **query examples**: Recommend a JMESPath string for you.
+- **subscription**: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
 
 #### Example 
 
@@ -1464,8 +1474,8 @@ To learn more about build pipeline settings, see:
 
 ::: moniker range="azure-devops"
 
-### Can I use a single command at the command line to run multiple pipelines in Azure DevOps Services?
+### Can I run multiple pipelines in Azure DevOps Services using a single command?
 
-Currently, the Azure CLI and Azure APIs don't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](./build/triggers.md).
+Currently, the Azure CLI and Azure APIs doesn't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](./build/triggers.md).
 
 ::: moniker-end

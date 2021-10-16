@@ -25,7 +25,7 @@ See [Add or modify a field](add-modify-field.md) if you want to add a custom fie
 Most WIT customizations are made to the WIT definition, however, other customization are made through the Process Configuration definition or via the **witadmin** command line tool.  
 
 > [!NOTE]    
-><b>Feature availability: </b>You can exercise some features only from an on-premises deployment and are noted as such. 
+>**Feature availability:** You can exercise some features only from an on-premises deployment and are noted as such. 
 
 #### WIT definition  
 - [Add or modify a field to an existing WIT](#modify-field)

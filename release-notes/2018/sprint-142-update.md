@@ -107,7 +107,7 @@ One of the challenges for an author of a version control extension is to get the
 * If a Git repository is selected, a GitRepository object is returned with basic data about the repository (name, ID, and URL)
 * If a TFVC repository is selected or the service is accessed outside the Azure Repos pages, null will be returned.
 
-Here is a [sample extension](https://github.com/eldarerathis/vsts-extension-samples/commit/e9935324046846c23973fca284661d2b767985a3) that uses this service.
+Here is a [sample extension](https://github.com/cadewey/vsts-extension-samples/commit/) that uses this service.
 
 ## Azure Pipelines
 
@@ -240,7 +240,7 @@ Earlier, only users having **Create Repository** permission on a git repository 
 
 ### PATs enforce CAP
 
-In February 2017, we announced [support for Azure Active Directory Conditional Access Policy (CAP)](/vsts/release-notes/2017/feb-15-team-services#support-for-aad-conditional-access), but there was a limitation that alternate authentication mechanisms, such as personal access tokens, would not enforce CAP. We are happy to announce that we have filled this gap and Azure DevOps will now honor CAP IP fencing policies when using PATs, SSH keys, alternate authentication credentials and OAuth. Administrators don't need to do anything to take advantage of this feature. It will automatically be applied for all existing policies.
+In February 2017, we announced [support for Azure Active Directory Conditional Access Policy (CAP)](/azure/devops/release-notes/2017/feb-15-team-services#support-for-aad-conditional-access), but there was a limitation that alternate authentication mechanisms, such as personal access tokens, would not enforce CAP. We are happy to announce that we have filled this gap and Azure DevOps will now honor CAP IP fencing policies when using PATs, SSH keys, alternate authentication credentials and OAuth. Administrators don't need to do anything to take advantage of this feature. It will automatically be applied for all existing policies.
 
 ## Next steps
 

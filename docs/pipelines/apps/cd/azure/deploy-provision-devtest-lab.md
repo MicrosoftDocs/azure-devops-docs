@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 09/07/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -23,7 +23,7 @@ service lets you quickly provision development and test stages using reusable
 templates. You can use pre-created images, minimize waste with quotas and policies,
 and minimize costs by using automated shutdown.
 
-By using an extension installed in Azure Pipelines or Team Foundation Server (TFS) you
+By using an extension installed in Azure Pipelines, you
 can easily integrate your build and release pipeline with  Azure DevTest Labs.
 The extension installs three tasks to create a VM, create a custom image from
 a VM, and delete a VM. This makes it easy to, for example, quickly deploy a 
@@ -54,9 +54,7 @@ use to create an Azure Virtual Machine on demand.
    on the Azure website to save the ARM template as a file
    on your computer. Name the file **CreateVMTemplate.json**.
 
-1. Edit the **CreateVMTemplate.json** file as described in 
-   [this post](https://www.visualstudiogeeks.com/blog/DevOps/Configure-winrm-with-ARM-template-in-AzureDevTestLab-VM-deployment-using-PowerShell-artifact)
-   on Tarun Arora's blog to configure it for Windows Remote
+1. Edit the **CreateVMTemplate.json** file to configure it for Windows Remote
    Management (WinRM).
 
    >WinRM access is required to use deploy tasks such as 
@@ -147,7 +145,7 @@ release pipeline in Azure Pipelines.
    ![Azure DevTest Labs Tasks](media/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Create the VM to use for subsequent deployments.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more information, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Lab Name**: Select the name of the instance you created earlier.
    
@@ -155,7 +153,7 @@ release pipeline in Azure Pipelines.
    
    - **Template Parameters**: Enter the parameters for the variables defined in the template. Use the names of the variables you defined in the stage, for example: `-newVMName '$(vmName)' -userName '$(userName)' -password (ConvertTo-SecureString -String '$(password)' -AsPlainText -Force)`.
    
-   - **Output Variables - Lab VM ID**: You will need the ID of the newly created VM in subsequent tasks. The default name of the stage variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if required, but remember to use the correct name in subsequent tasks. The Lab VM ID is in the form: `/subscriptions/{subId}/resourceGroups/{rgName}/providers/Microsoft.DevTestLab/labs/{labName}/virtualMachines/{vmName}`.<p />
+   - **Output Variables - Lab VM ID**: You will need the ID of the newly created VM in subsequent tasks. The default name of the stage variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if necessary, but remember to use the correct name in subsequent tasks. The Lab VM ID is in the form: `/subscriptions/{subId}/resourceGroups/{rgName}/providers/Microsoft.DevTestLab/labs/{labName}/virtualMachines/{vmName}`.<p />
 
 1. The next stage is to execute the script you created earlier
    to collect the details of the DevTest Labs VM.
@@ -168,7 +166,7 @@ release pipeline in Azure Pipelines.
    - **Azure Connection Type**: `Azure Resource Manager`.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more information, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Script Type**: `Script File`.
    
@@ -201,7 +199,7 @@ release pipeline in Azure Pipelines.
    ![Azure DevTest Labs Tasks](media/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Create an image of the VM.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more information, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Lab Name**: Select the name of the instance you created earlier.
    
@@ -211,10 +209,10 @@ release pipeline in Azure Pipelines.
    
    - **Source Lab VM - Source Lab VM ID**: If you changed the default name of the stage variable that was automatically populated with the ID of the lab VM by an earlier task, edit it here. The default is `$(labVMId)`.
    
-   - **Output Variables - Lab VM ID**: You will need the ID of the newly created image when you want to manage or delete it. The default name of the stage variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if required.<p />
+   - **Output Variables - Lab VM ID**: You will need the ID of the newly created image when you want to manage or delete it. The default name of the stage variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if necessary.<p />
     
 1. The final stage in this example is to delete the VM you deployed
-   in your Azure DevTest Labs instance. In reality you will, of course,
+   in your Azure DevTest Labs instance. In reality you will
    do this _after_ you execute the dev tasks or run the tests you need
    on the deployed VM. In the release pipeline, select 
    **+ Add tasks** and add an **Azure DevTest Labs Delete VM** task
@@ -223,7 +221,7 @@ release pipeline in Azure Pipelines.
    ![Azure DevTest Labs Tasks](media/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Delete the VM.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more information, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Lab VM ID**: If you changed the default name of the stage variable that was automatically populated with the ID of the lab VM by an earlier task, edit it here. The default is `$(labVMId)`.<p />
 

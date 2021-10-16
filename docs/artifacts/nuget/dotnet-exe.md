@@ -1,39 +1,63 @@
 ---
-title: Use dotnet with Azure Artifacts feeds
-description: Authenticating to feeds with NuGet in Azure Artifacts
+title: How to connect to a feed and use the dotnet CLI
+description: How to connect to an Azure Artifacts feed and use the dotnet CLI to publish and restore NuGet packages.
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 11/14/2019
-monikerRange: 'azure-devops'
+ms.date: 9/10/2021
+monikerRange: '>= azure-devops-2019'
+"recommendations": "true"
 ---
 
-# Use dotnet with Azure Artifacts feeds
+# Use dotnet CLI with Azure Artifacts
 
-## On developer machines
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-1. Navigate to your feed ([or create a feed if you haven't](../index.yml)). 
+With Azure Artifacts you can connect to a feed, publish your .NET packages, and control who can access them. You can use the dotnet command-line interface to publish and restore your packages to and from your Azure Artifacts feed.
 
-2. Select **Connect to feed**:
+## Project setup
 
-   > [!div class="mx-imgBorder"] 
-   >![Connect to feed button in the upper-right of the page](../media/connect-to-feed-azure-devops-newnav.png)
-   > 
+1. Select **Artifacts**, and then select your feed from the dropdown menu. [Create a feed](../get-started-nuget.md#create-a-feed), if you don't have one already. 
 
-3. Select **dotnet** under the **NuGet** header
+1. Select **Connect to feed**.
 
-4. Select **Get the tools** in the top right corner
+    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing the connect to feed button":::
 
-5. Follow steps **1**, **2**, and **3** to download and install the latest .NET Core SDK and credential provider.
+1. Select **dotnet** from the **NuGet** section.
 
-6. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections to publish.
+1. If this is your first time using Azure Artifacts with dotnet, select **Get the tools** to download and install the latest .NET Core SDK and credential provider.
 
-   > [!div class="mx-imgBorder"] 
-   >![NuGet publish instructions in the Connect to feed](../media/dotnet-azure-devops-newnav.png)
-   > 
+1. Add a *nuget.config* file to your project, in the same folder as your .csproj or .sln file. Paste the XML snippet into your new file. Your *nuget.config* file should look similar to the following:
 
-   > [!NOTE]
-   > You can also paste the **Project setup** XML snippet in your default nuget.config file to use outside of a project.
-## On build machines and in non-interactive scenarios
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <configuration>
+      <packageSources>
+        <clear />
+        <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+      </packageSources>
+    </configuration>
+    ```
 
-In Azure Pipelines, use the [.NET Core step's restore command](../../pipelines/tasks/build/dotnet-core-cli.md), which automatically handles authentication to Azure Artifacts feeds. Otherwise, use the [Azure Artifacts Credential Provider](https://github.com/Microsoft/artifacts-credprovider) and pass in credentials using the `VSS_NUGET_EXTERNAL_FEED_ENDPOINTS` [environment variable](https://github.com/Microsoft/artifacts-credprovider/blob/master/README.md#environment-variables).
+## Restore and publish packages
+
+To restore your packages using the dotnet CLI, run the following command in an elevated command prompt. The `--interactive` flag allows dotnet to prompt the user for credentials.
+
+```Command
+dotnet restore --interactive
+```
+
+To publish a package to your feed, run the following command in an elevated command prompt. Replace the placeholders with the applicable information:
+
+```Command
+dotnet nuget push --source <FEED_NAME> --api-key <ANY_STRING> <PACKAGE_PATH>
+``` 
+
+> [!TIP]
+> If you want to authenticate with Azure Artifacts from your pipeline, use the [NuGet Authenticate task](../../pipelines/tasks/package/nuget-authenticate.md) to connect to Azure Artifacts and other NuGet repositories. Another way to authenticate programmatically is to use the [Azure Artifacts Credential Provider](https://github.com/Microsoft/artifacts-credprovider) and pass in credentials using the `VSS_NUGET_EXTERNAL_FEED_ENDPOINTS` [environment variable](https://github.com/Microsoft/artifacts-credprovider/blob/master/README.md#environment-variables).
+
+## Related articles
+
+- [Use NuGet.exe with Azure Artifacts](./nuget-exe.md)
+- [Publish packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
+- [Publish packages to NuGet.org](./publish-to-nuget-org.md)

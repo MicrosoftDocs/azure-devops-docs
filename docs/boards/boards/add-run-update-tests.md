@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 02/14/2019
+ms.date: 09/14/2021
 ---
 
 # Add, run, and update inline tests
 
 [!INCLUDE [temp](../../includes/dev15-and-ts-version-header.md)]  
 
-Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md). 
+Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests cases, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md). If you're new to testing, see [Exploratory and manual testing scenarios and capabilities](../../test/overview.md).
 
 In this article, you'll learn: 
 > [!div class="checklist"]    
@@ -29,7 +29,25 @@ In this article, you'll learn:
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
 
-[!INCLUDE [temp](../includes/prerequisites-kanban.md)]
+## Prerequisites
+
+::: moniker range="azure-devops"
+
+- You must connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
+- You must be added to a [team or project](../../organizations/security/add-users-team-project.md). 
+- To add work items and exercise all board features, you must be granted [**Basic** access or higher](../../organizations/security/access-levels.md).
+- To view or modify work items, your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+- To view or run tests, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or run tests.  
+::: moniker-end
+
+::: moniker range="< azure-devops"
+- You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+- You must be added to a [team or project](../../organizations/security/add-users-team-project.md). 
+- To add work items and exercise all board features, you must be granted [**Basic** access or higher](../../organizations/security/access-levels.md).
+- To view or modify work items, your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
+- To view or run tests, you must have **Basic** access or higher. Users with **Stakeholder** access can't view or run tests.  
+
+::: moniker-end
 
 
 ## Open your Kanban board from the web portal

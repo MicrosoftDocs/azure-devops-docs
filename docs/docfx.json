@@ -21,6 +21,7 @@
           "boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md",
           "boards/backlogs/office/add-share-storyboard-shapes.md",
           "boards/backlogs/office/rollup-estimated-and-actual-work-using-project.md",
+          "artifacts/nuget/bootstrap-nuget.md",
           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
@@ -41,7 +42,8 @@
           "pipelines/archive/apps/java/**",
           "pipelines/archive/apps/nodejs/**",
           "pipelines/archive/release/**",
-          "pipelines/apps/windows/universal.md"
+          "pipelines/apps/windows/universal.md",
+          "artifacts/nuget/bootstrap-nuget.md"
         ],
         "exclude": [
           "**/obj/**",

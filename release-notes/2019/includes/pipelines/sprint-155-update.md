@@ -92,16 +92,16 @@ We've made updates to several of the Azure Pipelines hosted VM images. You can f
 
 * For VS2017 and VS2019:
     * Added Azul Java 7
-    * [Pinned cached Docker images](https://github.com/microsoft/azure-pipelines-image-generation/pull/1036) to match host kernel version
+    * [Pinned cached Docker images](https://github.com/microsoft/azure-pipelines-image-generation/) to match host kernel version
     * Added Az Powershell Module v2.3.2
     * Pinned Mercurial to v5.0.0
     * Updated Python to versions 2.7.16, 3.4.4, 3.5.4, 3.6.8, 3.7.4
     * Added Portable Class Library (VS 2019 only)
-    * Changed [Rust default paths and environment variables](https://github.com/microsoft/azure-pipelines-image-generation/pull/1056)
+    * Changed [Rust default paths and environment variables](https://github.com/microsoft/azure-pipelines-image-generation/)
 
 * For Ubuntu 16.04:
     * Updated helm to always pull latest (no longer pinned at v2.14.0)
-    * Added several [popular Docker containers](https://github.com/microsoft/azure-pipelines-image-generation/pull/1060)
+    * Added several [popular Docker containers](https://github.com/microsoft/azure-pipelines-image-generation/)
     * Updated Python to versions 2.7.16, 3.4.10, 3.5.7, 3.6.9, 3.7.4
     * Changed Rust default paths and environment variables
 

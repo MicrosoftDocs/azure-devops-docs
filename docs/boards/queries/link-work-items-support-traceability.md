@@ -3,6 +3,7 @@ title: Link work items to support traceability
 titleSuffix: Azure Boards 
 description: Manage dependencies, link work items to other work items, code and build objects, add hyperlinks, and more
 ms.technology: devops-agile
+ms.custom: "boards-queries, cross-project, cross-org"
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
 ms.author: kaelli
 author: KathrynEE

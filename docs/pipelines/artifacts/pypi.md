@@ -58,8 +58,8 @@ To authenticate with `twine`, add the following snippet to your *azure-pipelines
 ```yaml
 - task: TwineAuthenticate@1
   inputs:
-    artifactFeed: <ProjectName/FeedName>
-    pythonUploadServiceConnection: <Name_Of_Your_Service_Connection>
+    artifactFeed: <PROJECT_NAME/FEED_NAME>                            #Provide the FeedName only if you are using an organization-scoped feed.
+    pythonUploadServiceConnection: <NAME_OF_YOUR_SERVICE_CONNECTION>
 ```
 
 * **artifactFeed**: The name of your Azure Artifacts feed.
@@ -97,13 +97,13 @@ After you've set up authentication with the *TwineAuthenticate@1* task, you can 
      python setup.py bdist_wheel
    
 - task: TwineAuthenticate@1
-  displayName: 'Twine Authenticate'
+  displayName: Twine Authenticate
   inputs:
-    artifactFeed: projectName/feedName
+    artifactFeed: projectName/feedName        #Provide the FeedName only if you are using an organization-scoped feed.
   
 - script: |
      python -m twine upload -r feedName --config-file $(PYPIRC_PATH) dist/*.whl
 ```
 
 > [!WARNING]
-> We strongly recommend **NOT** checking any credentials or tokens into source control.
+> We strongly recommend **NOT** checking any credentials into source control.

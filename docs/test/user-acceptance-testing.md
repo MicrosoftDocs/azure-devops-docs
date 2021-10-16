@@ -19,21 +19,17 @@ enable test teams to more easily verify value based
 on business requirements, and the high quality 
 software demanded by customers.
 This type of testing is often referred to as 
-_user acceptance testing_ and is available as a 
-feature in Azure DevOps and Team 
-Foundation Server (TFS).
+_user acceptance testing_.
 
 Typically you create a Test Suite using a formal 
 requirement work item type. However, today's 
 agile teams often prefer to work from User Stories 
 or Product Backlog items as their requirements.
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
 
-## Before you start
-
-You must have already created work items and 
-a test plan. If not, follow the steps in:
+In addition, you must have already created work items and 
+a test plan. If not, follow the steps provided in the following articles: 
 
 * [Create your backlog](../boards/backlogs/create-your-backlog.md)
 * [Create a test plan](create-a-test-plan.md)
@@ -48,8 +44,7 @@ to not just assign one tester to a test case (see
 multiple testers an entire set of tests. 
 
 This can also be accomplished by selecting the 
-suite and choosing **Assign testers to run all 
-tests**. This option also enables the sending of
+suite and choosing **Assign testers to run all tests**. This option also enables the sending of
 emails to the testers assigned to the tests.
 
 ![User acceptance testing email notification](media/user-acceptance-testing/uat10.png)
@@ -60,6 +55,7 @@ owners who created the original business
 requirements.
 
 <a name="search-assign"></a>
+
 ## Search for and assign testers
 
 In scenarios where you have large development teams
@@ -93,4 +89,4 @@ the dashboard charts, verify that the columns in your
 data have been added to the Tests view.
 For details see [this blog post](https://devblogs.microsoft.com/devops/visual-studio-team-services-manual-testing-tips-charts-iterations-and-runs/).
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 
