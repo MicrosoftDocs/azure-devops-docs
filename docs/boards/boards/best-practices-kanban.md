@@ -8,7 +8,7 @@ ms.assetid: F7E22503-8E8F-4AD0-9E0E-AFE9F24D72B5
 ms.author: kaelli
 author: KathrynEE
 ms.topic: best-practice
-ms.date: 10/04/2021
+ms.date: 10/15/2021
 ---
 
 # Use best practices when implementing Kanban in Azure Boards

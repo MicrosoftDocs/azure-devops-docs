@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/11/2021
+ms.date: 10/15/2021
 ---
 
 # Add columns to your Kanban board
