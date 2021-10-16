@@ -8,7 +8,6 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/152/2021
 ---
 
 # Implement Kanban practices

@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 10/11/2021
+ms.date: 10/15/2021
 ---
 
 # Add, run, and update inline tests in Azure Boards and Azure DevOps

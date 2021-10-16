@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2015'
-ms.date: 10/04/2021 
+ms.date: 10/15/2021
 ---
  
 # Customize cards on a Kanban board  
