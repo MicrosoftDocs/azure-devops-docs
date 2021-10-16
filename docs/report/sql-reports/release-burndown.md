@@ -1,6 +1,6 @@
 ---
 title: Release Burndown
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Shows how quickly your team has delivered backlog items and track how much work the team must still perform to complete a product release.
@@ -48,6 +48,6 @@ By reviewing the release burndown report, you can understand how quickly your te
   
 -   How quickly is your team working through the product backlog?  
   
-## Related notes 
+## Related articles 
  [Scrum process](../../boards/work-items/guidance/scrum-process.md)   
 [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)

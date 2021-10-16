@@ -3,8 +3,8 @@ metadata:
   title: FAQs search
   description: Get answers to common questions about searching in Azure DevOps. 
   titleSuffix: Azure Boards
-  ms.custom: boards-queries
-  ms.technology: devops-agile
+  ms.custom: cross-service, cross-project
+  ms.technology: devops-collab
   ms.author: chcomley
   author: chcomley
   ms.topic: troubleshooting

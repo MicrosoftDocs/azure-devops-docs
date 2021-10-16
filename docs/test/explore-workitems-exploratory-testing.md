@@ -5,16 +5,16 @@ ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.technology: devops-test
 ms.topic: conceptual
 ms.author: sdanie
-author: steved0x
-ms.date: 12/07/2018
+author: steved0x 
 monikerRange: '>= tfs-2015'
+ms.date: 09/14/2021
 ---
 
-# Explore work items with the Test &amp; Feedback extension
+# Explore work items with the Test & Feedback extension
 
 [!INCLUDE [version-header](includes/version-header.md)]
 
-Use the Test &amp; Feedback extension to explore existing work items and 
+Use the Test & Feedback extension to explore existing work items and 
 associate them with a new or an in-progress exploratory session. 
 After a work item is associated with a session, all new bugs, tasks and test cases created 
 in the current session are automatically linked to that work item.
@@ -29,9 +29,10 @@ You can explore:
 You can explore a work item from the [Kanban board](#kanban) or from the [extension](#extension).
 You can also explore [multiple work items in the same session](#multipleitems).
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
 
 <a name="kanban"></a>
+
 ## Explore work items from the Kanban board
 
 1. In the Kanban board, open the shortcut menu of the work item
@@ -107,4 +108,4 @@ After you file bugs, create tasks, or create test cases, all these show up in th
 * [Exploratory testing with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 

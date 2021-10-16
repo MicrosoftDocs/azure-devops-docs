@@ -3,12 +3,11 @@ title: What is the Analytics service
 titleSuffix: Azure DevOps
 description: Understand how you can use Analytics data to answer quantitative questions about your projects in Azure DevOps
 ms.technology: devops-analytics
-ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/14/2020
+ms.date: 09/21/2021
 ---
 
 # What is the Analytics service?
@@ -46,8 +45,8 @@ Specifically, Analytics provides you with insights about your Azure DevOps proje
 > - Support to develop and add your custom Analytics widgets you can add to dashboards  
 
 ::: moniker-end
-
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+ 
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 ## Data available in Analytics
 
@@ -56,7 +55,7 @@ Analytics is generally available for Azure DevOps Service and Azure DevOps Serve
 Data available via the Analytics service depends on your version and platform.   For specifics, read [Data available in Analytics](./data-available-in-analytics.md) and [Data model for Analytics](../extend-analytics/data-model-analytics-service.md).
 
 
-[!INCLUDE [temp](../includes/analytics-preview.md)]
+
 
 ::: moniker range="azure-devops"
 

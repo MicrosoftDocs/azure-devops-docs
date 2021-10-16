@@ -324,10 +324,10 @@ The following table summarizes the differences between the three supported proce
 	- Security groups and permissions   
 	- Permissions and access to functional areas such as version control and build 
 	::: moniker range=">= tfs-2017 < azure-devops-2020"
-	Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification%20nodes/create%20or%20update). 
+	Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification-nodes/create-or-update). 
 	::: moniker-end
 	::: moniker range=">= azure-devops-2020"
-	Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification%20nodes/create%20or%20update) or the [Azure DevOps CLI command tool](../cli/quick-reference.md). 
+	Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification-nodes/create-or-update) or the [Azure DevOps CLI command tool](../cli/quick-reference.md). 
 	::: moniker-end
 4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. Starting with Visual Studio 2019, the Azure DevOps plug-in for Office no longer supports Office Project.
 5. You can use the REST API to [import and export process templates](/rest/api/azure/devops/processadmin/processes/import%20process%20template).

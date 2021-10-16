@@ -19,31 +19,35 @@ Visual Studio 2019 supports switching between the default view of the Work Items
 
 Each view supports the following tasks: 
 
-<table width="100%">
-<tbody valign="top">
-<tr>
-<th width="50%">Default experience</th>
-<th width="50%">Legacy experience</th>
-</tr>
+:::row:::
+   :::column span="1":::
+   **Default experience**
+   :::column-end:::
+   :::column span="1":::
+   **Legacy experience**
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td> 
-<ul>
-<li><a href="/azure/devops/boards/work-items/view-add-work-items" data-raw-source="[View and add work items](./view-add-work-items.md)">View and add work items</a></li>
-</ul>
-</td>
-<td>
-<li><a href="/azure/devops/boards/backlogs/add-work-items" data-raw-source="[Add work items](../backlogs/add-work-items.md)">Add work items</a></li>
-<li><a href="/azure/devops/boards/queries/using-queries" data-raw-source="[Use the query editor to list and manage queries](../queries/using-queries.md)">Use the query editor to list and manage queries</a></li>
-<li><a href="/azure/devops/boards/queries/set-query-permissions" data-raw-source="[Organize query folders and set query permissions](../queries/set-query-permissions.md)">Organize query folders and set query permissions</a></li>
-<li><a href="/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel" data-raw-source="[Open query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)">Open query in Excel</a></li>
-<li><a href="/azure/devops/boards/queries/share-plans" data-raw-source="[Email query results list using Outlook](../queries/share-plans.md)">Email query results list using Outlook</a></li>
-<li><a href="/azure/devops/report/create-status-and-trend-excel-reports" data-raw-source="[Create reports from query in Excel](../../report/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (on-premises Azure DevOps Server only)</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+    
+   
+   - [View and add work items](/azure/devops/boards/work-items/view-add-work-items)
+   
+   :::column-end:::
+   :::column span="1":::
+   
+   - [Add work items](/azure/devops/boards/backlogs/add-work-items)
+   - [Use the query editor to list and manage queries](/azure/devops/boards/queries/using-queries)
+   - [Organize query folders and set query permissions](/azure/devops/boards/queries/set-query-permissions)
+   - [Open query in Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel)
+   - [Email query results list using Outlook](/azure/devops/boards/queries/share-plans)
+   - [Create reports from query in Excel](/azure/devops/report/create-status-and-trend-excel-reports) (on-premises Azure DevOps Server only)
+   
+   :::column-end:::
+:::row-end:::
+
+
 
 ## Change your Work Items view
 

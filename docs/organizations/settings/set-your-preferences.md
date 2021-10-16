@@ -1,31 +1,58 @@
 ---
-title: View, change user preferences 
+title: Set your preferences 
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Change picture, set preferred email, or other user preferences from your profile defined for Azure DevOps. 
+description: Change picture, set preferred email, or other user preferences from your Azure DevOps profile. 
 ms.technology: devops-settings
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 08/17/2020 
+ms.date: 09/02/2021
 ---
 
-# Set user preferences
+# Set your preferences
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-From your profile page, you can change your information and  account preferences. Learn how to complete the following tasks:
+::: moniker range="azure-devops"
 
-- Change your picture
-- Change your display name
-- Change your preferred email
-- Change your directory
-- Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme
+From your Azure DevOps user profile page, you can change your picture, display name, and preferred email. 
 
-> [!IMPORTANT]
-> You can't change your user interface (UI) theme in Azure DevOps if you're using Internet Explorer (IE).
+Other tools for setting your Azure DevOps preferences include:
+
+- **[Time and Locale](../accounts/change-time-zone.md#change-your-user-profile-time-zone)**: Change your preferred language, date and time patterns, and time zone. 
+- **[Notifications](../../notifications/manage-your-personal-notifications.md)**: Add or review subscriptions to event changes. 
+- **Permissions**: Use to refresh your permissions to cause any recent changes to take effect.
+- **[Preview features](../../project/navigation/preview-features.md)**: Enable or disable a preview feature for your user account.
+- **Theme**: Choose the user interface theme to use with your Azure DevOps web portal. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+From your Azure DevOps user profile, you can change your picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences. 
+
+Other tools for setting your Azure DevOps preferences include: 
+
+- [Use personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
+- [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
+- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)  
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+From your user profile, you can change your picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences. 
+
+Other tools for setting your Azure DevOps preferences include **[Notifications](../../notifications/manage-your-personal-notifications.md)** to add or review subscriptions to event changes. 
+
+::: moniker-end
+
+> [!NOTE]
+> You can't change your Azure DevOps  user interface (UI) theme if you're using Internet Explorer (IE).
+
 
 ## Change profile settings  
 
@@ -82,11 +109,6 @@ From your profile page, you can change your information and  account preferences
 
 4. To change your UI theme, go back to your profile menu and select **Theme**. Choose between **Dark** and **Light**.
 
-For **Security**, **Notification settings**, and **Manage features** profile menu options, see the following articles. 
-- [Use personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
-- [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
-- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)  
-- [Manage or enable features](../../project/navigation/preview-features.md). 
 
 ::: moniker-end
 
@@ -125,6 +147,5 @@ Your profile settings are updated.
 - [Time zone settings and usage](../settings/timezone-settings-usage.md)
 - [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)  
 - [Usage](../../integrate/concepts/rate-limits.md)  
-- [Manage or enable features](../../project/navigation/preview-features.md)  
 - [Set favorites](../../notifications/manage-your-personal-notifications.md)  
 - [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)

@@ -6,54 +6,44 @@ ms.technology: devops-test
 ms.topic: conceptual 
 ms.author: sdanie
 author: steved0x
-ms.date: 06/17/2021
 monikerRange: '>= tfs-2017'
+ms.date: 09/14/2021
 ---
 
 # Run automated tests from test plans
 
 [!INCLUDE [version-header-tfs17](includes/version-header-tfs17.md)] 
 
-Automate test cases in your test plans and run them directly from [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)]:
+Automate test cases in your test plans and run them directly from **Azure Test Plans** . Automated tests provide you with the following benefits:
 
-* Provides a user-friendly process for testers who may not be well
+* A user-friendly process for testers who may not be well
   versed with running tests in Build or Release workflows.
-
-* Gives you the flexibility to run selected tests on demand,
+* The flexibility to run selected tests on demand,
   rather than scheduled testing in Build or Release workflows
   where all tests meeting the filter criteria are run.
-
-* Useful when you want to rerun a few tests that failed due
+* The ability to rerun a few tests that failed due
   to test infrastructure issues, or you have a new build that
   includes fixes for failed tests.
 
 <a name="prerequisites"></a>
-You will need:
 
-* A [test plan](create-a-test-plan.md)
+[!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
+
+In addition, you'll need:
+
+- A [test plan](create-a-test-plan.md)
   containing your automated tests, which you have associated with automated test methods using 
   [Visual Studio 2017](associate-automated-test-with-test-case.md), 
   or [Visual Studio 2015 or earlier](/previous-versions/visualstudio/visual-studio-2013/dd380741(v=vs.120)).
-
-* A [Team Build pipeline](../pipelines/apps/aspnet/build-aspnet-4.md)
+- A [build pipeline](../pipelines/apps/aspnet/build-aspnet-4.md)
   that generates builds containing the test binaries.
-
-* The app to test. You can deploy the app as part of the 
+- An app to test. You can deploy the app as part of the 
   [build and release workflow](../pipelines/get-started/what-is-azure-pipelines.md) and also use it for on-demand testing.
-
-You must also be a Project Contributor, or have the following permissions:
-
-* Create releases
-* Manage releases
-* Edit release environment
-* Manage deployment
-
-For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
-[Release permissions](../pipelines/policies/permissions.md#set-release-permissions).
+- Permissions to create and manage releases, edit a release environment, and manage deployment.  For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and [Release permissions](../pipelines/policies/permissions.md#set-release-permissions).
 
 ## Set up your environment
 
-1. In the **Test plans** page of [!INCLUDE [test-hub-include](includes/test-hub-include.md)], choose your test plan,
+1. In the **Test Plans** page, choose your test plan,
    open the shortcut menu, and choose **Test plan settings**.
 
    ![Choosing Test plan settings](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-101.png)
@@ -66,7 +56,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
 3. You will need a release pipeline that was created from the 
    **Run automated tests from Test Manager** template to run tests from test plans
-   in [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)]. If you have an existing release pipeline that was created
+   in **Azure Test Plans** . If you have an existing release pipeline that was created
    using this template, select it and then select the existing stage in the
    release pipeline where the tests will be executed.
    Otherwise, choose the **Create new** link in the
@@ -162,7 +152,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
 ## Run the automated tests
 
-1. In [!INCLUDE [test-hub-include](includes/test-hub-include.md)], open the test plan and select a test suite that contains the
+1. In the **Test Plans** web portal, open the test plan and select a test suite that contains the
    automated tests.
 
 2. Select the test(s) you want to run, open the **Run** menu,
@@ -189,7 +179,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    console logs, and attachments. 
  
 5. After test execution is complete, the **Runs** page of the
-   [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)] shows the test results. The **Run summary** page
+   **Azure Test Plans**  shows the test results. The **Run summary** page
    shows an overview of the run.
 
    ![Viewing the test run summary](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-110.png)
@@ -406,4 +396,3 @@ must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstes
 * [Associate automated test results with requirements](../pipelines/test/requirements-traceability.md)
 * [Continuous testing scenarios and capabilities](index.yml)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

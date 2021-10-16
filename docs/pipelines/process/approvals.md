@@ -18,7 +18,7 @@ A pipeline is made up of stages. A pipeline author can control whether a stage s
 
  Pipelines rely on resources such as environments, service connections, agent pools, variable groups, and secure files. Checks enable the _resource owner_ to control if and when a stage in any pipeline can consume a resource. As an owner of a resource, you can define checks that must be satisfied before a stage consuming that resource can start. For example, a _manual approval check_ on an [environment](environments.md) would ensure that deployment to that environment only happens after the designated user(s) has reviewed the changes being deployed. 
 
-A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. Checks are re-evaluation based on the retry interval specified in each check. If all checks are not successful till the **timeout** specified, then that stage is not executed.
+A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. Checks are re-evaluation based on the retry interval specified in each check. If all checks are not successful until the **timeout** specified, then that stage is not executed.
 If any of the checks terminally fails (for example, if you reject an approval on one of the resources), then that stage is not executed. 
 
 Approvals and other checks are not defined in the yaml file. Users modifying the pipeline yaml file cannot modify the checks performed before start of a stage. Administrators of resources manage checks using the web interface of Azure Pipelines.
@@ -58,11 +58,11 @@ To define the branch control check:
 
 2. Navigate to **Approvals and Checks** for the resource.
 
-3. Choose the **Branch control** check and provide a comma separated list of allowed branches. You can mandate that the branch should have protection enabled and the behavior of the check in case protection status for one of the branches is not known.
+3. Choose the **Branch control** check and provide a comma-separated list of allowed branches. You can mandate that the branch should have protection enabled and the behavior of the check-in case protection status for one of the branches is not known.
 
 :::image type="content" source="media/checks/branch-control-check.png" alt-text="Configuring branch control check.":::
 
-At run time, the check would validate branches for all linked resources in the run against the allowed list. If any one of the branches do not match the criteria, the check fails and the stage is marked failed. 
+At run time, the check would validate branches for all linked resources in the run against the allowed list. If any of the branches does not match the criteria, the check fails and the stage is marked failed. 
 
 > [!NOTE]
 > The check requires the branch names to be fully qualified. Make sure the format for branch name is `refs/heads/<branch name>`
@@ -79,11 +79,11 @@ The check fails if execution of the stage does not start within the **Timeout** 
 ## Invoke Azure function
 
 Azure functions are the serverless computation platform offered by Azure. With Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
-Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](../tasks/utility/azure-function.md)
+Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check-in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](../tasks/utility/azure-function.md)
 
 :::image type="content" source="media/checks/azure-function-check.png" alt-text="Configuring Azure function check.":::
 
-The checks fails if the stage has not started execution within the specified **Timeout** period.  
+The checks fail if the stage has not started execution within the specified **Timeout** period. See [Azure Function App task](../tasks/deploy/azure-function-app.md) for more details.
 
 > [!NOTE]
 > User defined pipeline variables are not accessbile to the check. You can only access the pre-defined variables and variables from the linked variable group in the request body.
@@ -93,18 +93,18 @@ The checks fails if the stage has not started execution within the specified **T
 
 Invoke REST API check enables you to integrate with any of your existing services. Periodically, make a call to a REST API and continue if it returns a successful response. [Learn More](../tasks/utility/http-rest-api.md)
 
-The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. The checks fails if the stage has not started execution within the specified **Timeout** period.  
+The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. The checks fail if the stage has not started execution within the specified **Timeout** period. See [Invoke REST API task](../tasks/utility/http-rest-api.md) for more details.
 
 > [!NOTE]
 > User defined pipeline variables are not accessbile to the check. You can only access the pre-defined variables and variables from the linked variable group in the request body.
 
 ## Query Azure Monitor Alerts
-Azure Monitor offers visualization, query, routing, alerting, autoscale, and automation on data from the Azure infrastructure and each individual Azure resources. Alerts are a standard means to detect issues with the health of infrastructure or application, and take corrective actions. 
+Azure Monitor offers visualization, query, routing, alerting, autoscale, and automation on data from the Azure infrastructure and each individual Azure resource. Alerts are a standard means to detect issues with the health of infrastructure or application, and take corrective actions. 
 Canary deployments and staged rollouts are common deployment strategies used to lower risk of regressions to critical applications. After deploying to a stage (set of customers), the application is observed for a period of time. Health of the application after deployment is used to decide whether the update should be made to the next stage or not.
 
 Query Azure Monitor Alerts helps you observe Azure Monitor and ensure no alerts are raised for the application after a deployment. The check succeeds if no alert rules are activated at the time of evaluation. [Learn More](../tasks/utility/azure-monitor.md)
 
-The evaluation is repeated after **Time between evaluations** setting in control options. The checks fails if the stage has not started execution within the specified **Timeout** period.  
+The evaluation is repeated after **Time between evaluations** setting in control options. The checks fail if the stage has not started execution within the specified **Timeout** period.  
 
 ## Required template
 
@@ -178,10 +178,10 @@ You can also see the complete logs of the policy checks from the pipeline view.
 ## Exclusive lock
 
 The **exclusive lock** check allows only a single run from the pipeline to proceed.
-All stages in all runs of that pipeline which use the resource are paused.
+All stages in all runs of that pipeline that use the resource are paused.
 When the stage using the lock completes, then another stage can proceed to use the resource.
 Also, only one stage will be allowed to continue.
-Any other stages which tried to take the lock will be cancelled.
+Any other stages that tried to take the lock will be canceled.
 
 ## ServiceNow Change Management
 

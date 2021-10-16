@@ -199,13 +199,16 @@ Initiate pull requests directly from Visual Studio.
 
    ![Initiate pull request from the Branches view.](media/pull-requests/new-pr-from-branch.png)
 
+::: moniker range=">=azure-devops-2020"
+
 ### From the Azure DevOps Services CLI
 
-You can now manage your pull requests and other resources from the command line with [azure-devops](/cli/azure/?view=azure-cli-latest&preserve-view=true). Azure Repos and Azure DevOps Server, formerly Team Foundation Server 2017 Update 2 or later, support pull requests by using the command line.
+You can manage your pull requests and other resources from the command line with [azure-devops](/cli/azure/?view=azure-cli-latest&preserve-view=true). Azure Repos and Azure DevOps Server.
 
-For a list of commands to create and manage pull requests, see [Manage pull requests](/cli/vsts/code/pr).
+For more information about working with the Azure DevOps Services CLI, see [Get started with CLI](../../cli/index.md).
 
-For more information about working with the Azure DevOps Services CLI, see [Get started with CLI](/cli/vsts/get-started).
+::: moniker-end
+
 
 <a name="finish"></a>
 
@@ -838,3 +841,36 @@ To copy changes made in a pull request to another branch in your repo, follow th
 
 There are other aspects you should consider before making this change.
 Learn about them in the topic on [changing your default branch](change-default-branch.md).
+
+## Multiple merge bases issue
+
+The **Files** tab in the **Pull Request** view detects diffs by three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their common merge base. It's a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there is more than one true base. In most repositories this situation is rare, but in large repositories with many active users it may be common.
+
+Multiple bases can be created in the following scenarios.
+
+- Process of cross-merges between different branches.
+- Active reuse of feature branches.
+- Handling aftermaths of main branch reverts.
+- Other non-intuitive and convoluted manipulations with reverts/cherry picks/merges.
+
+Multiple merge bases detection was added as a part of security awareness. If there are multiple merge bases, the file-diff algorithm for the UI may not properly detect file changes, depending on which merge base was chosen. The multiple merge base warning only happens if the files affected in PR have different versions between those merge bases. 
+
+### Potential security concerns when merging from multiple bases
+
+- A malicious user could abuse the UI algorithm to commit malicious changes that wouldn't be present in the PR.
+- If changes proposed in the PR are already in the target branch, they would be displayed in the **Files** tab, but they may not trigger the branch policies mapped to folder changes.
+- If two developers make changes to the same files from multiple merge bases it may not be present in the pr. That case may create treacherous logic gaps.
+
+### How to resolve the multiple merge bases issue
+
+First of all, having multiple merge bases isn't necessary bad thing, but it would be better to double check if everything is fine.
+To get rid of multiple merge bases, you should tie branches to a single common ancestor. In other words, rebase your branch on target, or merge target into the main. That would get rid of warning message and help you check if everything is fine with the actual changes. Before rebasing or merging, one approach is to soft reset your progress and stash it. From there you can create new branch or rebase an empty one, and apply your changes from a clear point, which may require a force push to remote, if your changes are already there. 
+
+### General tips
+
+- When preparing a PR - create feature branches from the latest versions of the main/release branch. 
+- Avoid creating branches that don't originate directly from stable branches of your repository, unless required.
+
+### I've fixed the issue but the multiple merge bases issue reappears
+
+In large repos, with large numbers of active contributors, this issue can be especially inconvenient. The main problem is even if you get rid of multiple bases via merge, the situation may reappear. If somebody will close long-lasting pr - that would create this situation again. Even while build policies and test are running when you have no meanings to complete the PR. Resetting and starting branch as mentioned before may help. Although you mask somebody to verify your results on clear state, if nothing is changed - your changes are probably clear even if situation will repeat itself.
