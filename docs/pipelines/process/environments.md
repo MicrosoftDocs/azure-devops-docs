@@ -3,7 +3,7 @@ title: Create target environment
 description: Collection of deployment targets useful for traceability and recording deployment history.
 ms.topic: how-to
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.date: 10/08/2021
+ms.date: 10/16/2021
 monikerRange: '>= azure-devops-2020'
 ---
 
