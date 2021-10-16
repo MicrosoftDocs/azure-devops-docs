@@ -2,7 +2,7 @@
 author: gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes
-ms.date: 10/8/2021
+ms.date: 10/16/2021
 ms.topic: include
 ---
 
@@ -20,7 +20,7 @@ When you author a YAML pipeline and refer to an environment that does not exist,
  
 In each of the above cases, Azure Pipelines has a clear understanding of the user performing the operation. Hence, it creates the environment and adds the user to the administrator role for the environment. This user has all the permissions to manage the environment and/or to include other users in various roles for managing the environment.
 
-In the following flows, Azure Pipelines does not have information about the user creating the environment: you update the YAML file using another external code editor, add a reference to an environment that does not exist, and then cause a continuous integration pipeline to be triggered. In this case, Azure Pipelines does not know about the user. Previously, we handled this case by adding all the project contributors to the administrator role of the environment. Any member of the project could then change these permissions and prevent others from accessing the environment.
+In the following flows, Azure Pipelines does not have information about the user creating the environment: you update the YAML file using another external code editor, add a reference to an environment that does not exist, and then cause a manual or continuous integration pipeline to be triggered. In this case, Azure Pipelines does not know about the user. Previously, we handled this case by adding all the project contributors to the administrator role of the environment. Any member of the project could then change these permissions and prevent others from accessing the environment.
 
 We received your feedback about granting administrator permissions on an environment to all members of a project. As we listened to your feedback, we heard that we should not be auto-creating an environment if it is not clear as to who the user performing the operation is. With this release, we made changes to how environments will be automatically created:
  * Going forward, pipeline runs will not automatically create an environment if it does not exist and if the user context is not known. In such cases, the pipeline will fail with an *Environment not found error*. You need to pre-create the environments with the right security and checks configuration before using it in a pipeline.
