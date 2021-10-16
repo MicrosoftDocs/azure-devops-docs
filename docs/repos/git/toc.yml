@@ -179,6 +179,8 @@
   items:
   - name: "Default Git permissions (Security)"
     href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+  - name: Download permissions report
+    href: ../../organizations/security/download-permissions-report.md
   - name: Frequently asked questions
     href: howto.yml
   - name: Git limits
@@ -187,9 +189,9 @@
     href: mapping-my-tfvc-actions-to-git.md
   - name: RPC failures & http.postBuffer
     href: rpc-failures-http-postbuffer.md 
-  - name: Download permissions report
-    href: ../../organizations/security/download-permissions-report.md
     displayName: json
+  - name: SSH passphrases
+    href: gcm-ssh-passphrase.md
 - name: Resources
   items:
   - name: Pro Git
