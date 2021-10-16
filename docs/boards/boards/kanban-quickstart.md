@@ -1,14 +1,14 @@
 ---
-title: Kanban quickstart 
+title: Get started with a Kanban board 
 titleSuffix: Azure Boards
-description: Use the Kanban board to plan and track work in Azure Boards and Team Foundation Server 
+description: Learn how to use the Kanban board to plan and track work in Azure Boards. 
 ms.custom: boards-kanban 
 ms.topic: quickstart
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 10/15/2021
 ---
 
 # Start using your Kanban board
@@ -26,9 +26,9 @@ User stories and bugs correspond to types of work items. You use [work items](..
 
 ## Add a Kanban board
 
-If you have a project, you have a Kanban board. Each project defines a default team and set of boards for that team. You only need to add a Kanban board when you want to support a new team. When you add a team, you add a number of team assets. A team admin can configure the assets to support the way the team works. To add a set of Kanban boards to support a new team, see [Add a team](../../organizations/settings/add-teams.md). 
+If you have a project, you have a Kanban board. Each project defines a default team and set of boards for that team. You only need to add a Kanban board when you want to support a new team. When you add a team, you add many team assets. A team admin can configure the assets to support the way the team works. To add a set of Kanban boards to support a new team, see [Add a team](../../organizations/settings/add-teams.md). 
 
-Each team's Kanban boards are associated with one or more work item types depending on the process selected when the project was created, team configurations, and process customizations. The boards defined for each process are:
+Each team's Kanban boards are associated with one or more work item types. The association depends on the process selected when the project was created, team configurations, and process customizations. The boards defined for each process are:
 
 ::: moniker range=">= azure-devops-2019" 
 - [**Agile**](../work-items/guidance/agile-process.md): **Stories**, **Features**, and **Epics**
@@ -116,7 +116,7 @@ To customize the set of fields displayed on the card, see [Customize cards](../.
 
 <a id="update-status">  </a>
 
-## Update status 
+## Update the status of a work item 
 
 As work completes in one stage, update the status of an item by dragging it to a downstream stage. 
 
@@ -144,7 +144,7 @@ You can quickly update a field or reassign ownership directly from the board. If
 
 ### Filter your board using keywords, field values, or tags
 
-You can apply filters interactively to focus on a subset of work. For example, you can filter the board to focus on work assigned to at team member for a specific sprint. To start filtering, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. . To learn more about applying filters, see [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
+You can apply filters interactively to focus on a subset of work. For example, you can filter the board to focus on work assigned to at team member for a specific sprint. To start filtering, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. To learn more about applying filters, see [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
 ::: moniker-end
 
