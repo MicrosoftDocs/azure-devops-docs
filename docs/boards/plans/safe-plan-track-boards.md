@@ -7,7 +7,7 @@ ms.prod: devops
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 05/28/2020
 ---
 

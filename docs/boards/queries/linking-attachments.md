@@ -7,7 +7,7 @@ ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 03/29/2021
 ---
 

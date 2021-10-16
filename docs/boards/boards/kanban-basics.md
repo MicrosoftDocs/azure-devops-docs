@@ -7,8 +7,8 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2013'
-ms.date: 10/15/2021
+monikerRange: '<= azure-devops'
+ms.date: 10/152/2021
 ---
 
 # Implement Kanban practices
