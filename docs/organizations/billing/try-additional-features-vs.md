@@ -43,7 +43,7 @@ You must have [Project Collection Administrator or organization Owner permission
 
     ![Start 30-day Test Plans trial, select Start free trial](media/try-additional-features/start-thirty-day-test-plans-trial.png)
 
-6. (Optional) Assign users **Basic + Test Plans**. Charges for users don't start until the trial expires.
+6. (Optional) Assign users **Basic + Test Plans**, so they can access Test Plans during the trial. Charges for users don't start until the trial expires.
 
 ## Next steps
 
