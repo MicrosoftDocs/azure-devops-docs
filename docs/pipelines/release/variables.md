@@ -6,7 +6,7 @@ ms.author: shashban
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.topic: conceptual
 ms.custom: seodec18, contperf-fy20q4
-ms.date: 07/15/2020
+ms.date: 10/18/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -25,7 +25,7 @@ Classic release and artifacts variables are a convenient way to exchange and tra
 Variables are different from [Runtime parameters](../process/runtime-parameters.md) which are only available at template parsing time.
 
 > [!NOTE] 
-> This is a reference article that covers the classic release and artifacts variables. To understand variables in YAML pipelines, see [user-defined variables](../process/variables.md).
+> This is a reference article that covers the classic release and artifacts variables. To understand variables in YAML pipelines, see [user-defined variables](../process/variables.md). When you migrate from a release pipeline to a YAML pipeline, the `Release.*` variables will not be populated.
 ::: moniker-end
 
 As you compose the tasks for deploying your application into each stage in your DevOps CI/CD processes, variables will help you to:
