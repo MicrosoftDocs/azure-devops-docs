@@ -66,7 +66,6 @@ The following articles cover publishing packages to feeds from builds within Azu
 
 * [Publish NuGet packages from Azure Pipelines](../../pipelines/artifacts/nuget.md)
 * [Publish npm packages from Azure Pipelines](../../pipelines/artifacts/npm.md)
-* [Setting up Maven and Azure Pipelines](../../pipelines/artifacts/maven.md)
 * [Publish Python packages from Azure Pipelines](../../pipelines/artifacts/pypi.md)
 
 

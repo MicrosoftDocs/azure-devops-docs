@@ -5,7 +5,7 @@ description: Copy and port changes from one branch to another in Git with cherry
 ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
 ms.technology: devops-code-git 
 ms.topic: tutorial
-ms.date: 09/28/2021
+ms.date: 10/07/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -30,11 +30,26 @@ In this tutorial you learn how to:
 
 ## Cherry-pick a commit
 
+#### [Browser](#tab/browser/)
+
+1. In a completed PR in your Azure DevOps project, select **Cherry-pick**. In an active PR, select **Cherry-pick** from the **...** menu. This action creates a new branch with the copied changes.
+
+1. In the **Cherry-pick pull request** pane:
+
+   1. Under **Target branch**, select the branch where you want to copy the PR changes.
+   1. Under **Topic branch name required**, change the cherry-pick PR branch name if you want.
+   1. Choose whether to **Cherry-pick as a single commit**.
+   1. Select **Cherry-pick**.
+
+1. On the **New pull request** screen, select **Create**.
+
+1. Merge the new PR to complete the cherry-pick.
+
 #### [Visual Studio](#tab/visual-studio/)
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
-1. Open up Team Explorer and checkout to the branch you want to cherry-pick changes into using the **Branches** view.
+1. Open up Team Explorer and check out the branch you want to cherry-pick changes into using the **Branches** view.
 2. Right-click the branch containing the changes you want and select **View History...**. 
 3. Right-click the commit you want to cherry-pick and select **Cherry-pick**.    
 
@@ -43,7 +58,7 @@ In this tutorial you learn how to:
 
 Repeat this process for each commit you need to bring over to your current branch.
 
-#### [Command Line](#tab/command-line/)
+#### [Git Command Line](#tab/git-command-line/)
 
 Use `git log` to find the commit ID of the commit whose changes you want to copy.
 

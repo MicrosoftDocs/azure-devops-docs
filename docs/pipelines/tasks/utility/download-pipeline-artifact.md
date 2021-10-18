@@ -7,7 +7,7 @@ ms.manager: hdixon
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 12/15/2020
+ms.date: 10/18/2021
 monikerRange: azure-devops
 ---
 
@@ -109,7 +109,7 @@ Use this task to download pipeline artifacts from earlier stages in this pipelin
 
 ### How can I find the ID of the Pipeline I want to download an artifact from? 
 
-You can find the ID of the pipeline in the 'Pipeline variables'. The pipeline ID is the [system.definitionId](../../build/variables.md?tabs=yaml#system-variables) variable. 
+You can find the ID of the pipeline in the 'Pipeline variables'. The pipeline ID is the [system.definitionId](../../build/variables.md?tabs=yaml#system-variables) variable. You can also find it in the URL path. 
 
 ## Open source
 

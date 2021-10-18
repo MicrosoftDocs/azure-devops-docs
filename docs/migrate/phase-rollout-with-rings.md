@@ -7,7 +7,7 @@ ms.technology: devops-migrate
 ms.date: 09/23/2021
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Use deployment rings with extension releases
