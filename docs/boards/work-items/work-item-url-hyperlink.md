@@ -6,7 +6,7 @@ ms.custom: work-items, seodec18
 ms.technology: devops-agile   
 ms.author: kaelli
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'   
+monikerRange: '<= azure-devops'   
 ms.date: 07/09/2020
 ---
 
