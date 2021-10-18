@@ -5,7 +5,7 @@ description: Choosing which version control to use in Azure Repos
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 05/12/2017
+ms.date: 10/18/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -310,7 +310,7 @@ Need more help to make a choice? These charts might help.
    Visual Studio, Eclipse (with [Team Explorer Everywhere](/previous-versions/visualstudio/visual-studio-2013/gg413285(v=vs.120)))
    :::column-end:::
    :::column span="2":::
-   Visual Studio, Eclipse, and other third-party tools
+   Visual Studio, Visual Studio Code, Eclipse, and other third-party tools
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -348,28 +348,13 @@ Need more help to make a choice? These charts might help.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   User interface
-   :::column-end:::
-   :::column span="2":::
- - **Visual Studio:** Offers all commonly used features and many advanced features.
- - **TFS web portal:** Can browse, comment, annotate, and see history of the codebase.
- - **TF Command prompt:** Installed with Visual Studio. Used for advanced, administrative, and other less common tasks. 
-   :::column-end:::
-   :::column span="2":::
- - **Visual Studio:** Offers many commonly used features. Features for some common tasks are not yet available.
- - **TFS web portal:** Can browse, comment, annotate, and see history of the codebase.
- - **Third-party command prompt:** You can install it from Visual Studio. Used for some common and many less common tasks.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
    Visual Studio compatibility
    :::column-end:::
    :::column span="2":::
    You can use all supported [previous versions of Visual Studio](/azure/devops/server/requirements).
    :::column-end:::
    :::column span="2":::
-   Git is built in with Visual Studio 2017, 2015, and 2013.
+   Visual Studio 2013+
 
    You can also use Visual Studio 2012 Update 4 (you must also install [Visual Studio Tools for Git](https://go.microsoft.com/fwlink/?LinkID=275845)).
    :::column-end:::
