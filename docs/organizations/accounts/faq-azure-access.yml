@@ -387,8 +387,10 @@ sections:
       - question: |
           Q: Can I switch to a different directory?
         answer: |
-          A: Yes. For more information, see [Switch to another Azure AD](change-azure-ad-connection.md). 
-          
+          A: Yes. For more information, see [Switch to another Azure AD](change-azure-ad-connection.md).
+
+          [!INCLUDE [note-azure-ad-tenant-switch](includes/note-azure-ad-tenant-switch.md)]  
+                    
           <a name="AlternateCredentials"></a>
           
       - question: |
