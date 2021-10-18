@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/18/2021
+ms.date: 10/21/2021
 ---
 
 # Define an Azure DevOps query in Azure Boards
@@ -18,9 +18,12 @@ ms.date: 10/18/2021
 [!INCLUDE [temp](../includes/version-visual-studio.md)]
 
 Work item queries generate lists of work items based on the filter criteria you provide. You can then save and share these managed queries with others. In contrast, semantic searches list work items, but can't be saved or shared. 
-
-Create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to do bulk additions and modifications.  
-
+::: moniker range=">= azure-devops-2020"
+Create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. You can also define and import a work item query using [WIQL syntax and a .wiq file](query-support-integration-cross-service-extensions.md#wiql). To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [.csv files](import-work-items-from-csv.md).  
+::: moniker-end
+::: moniker range="< azure-devops-2019"
+Create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. You can also define and import a work item query using [WIQL syntax and a .wiq file](query-support-integration-cross-service-extensions.md#wiql). To support bulk updates or additions, import or export queries using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
+::: moniker-end
 #### [Browser](#tab/browser/) 
 
 > [!div class="mx-imgBorder"]  
