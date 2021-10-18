@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/13/2021
+ms.date: 10/18/2021
 ---
 
 # Track your work items in Azure Boards user stories, issues, bugs, features, and epics 
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-Track the features and requirements you're developing, code defects or bugs, and other details using work items. Work items are similar to GitHub issues, but offer a variety of types to track different types of information.
+Track the features and requirements you're developing, code defects or bugs, and other details using work items. Work items are similar to GitHub issues, but offer different types to track various types of information.
 
 If you're just getting started, read the information provided in this article. To jump right in and start tracking work on a Kanban board, see [Plan and track work](../get-started/plan-track-work.md). For a quick reference to various work item tasks and key concepts, see [Work item quick reference](quick-ref.md).
 
@@ -24,7 +24,7 @@ If you're just getting started, read the information provided in this article. T
 
 ::: moniker range=">= azure-devops-2019"
 
-Use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type. And work item types have a unique identifier within an organization or project collection. The available work item types depend on the [process you used when your project was created](guidance/choose-process.md) (Agile, Basic, Scrum, or CMMI).  
+Use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type. And work item types have a unique identifier within an organization or project collection. The available work item types depend on the [process you used when creating your project](guidance/choose-process.md) (Agile, Basic, Scrum, or CMMI).  
 
 ::: moniker-end
 
@@ -77,7 +77,7 @@ Use work items to track anything you need to track. Each work item represents an
 
 ## Work item types (WITs)
 
-To track different types of work, different WITs are defined. The work item types available to you are based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)&mdash;Agile, Basic, Scrum, or CMMI&mdash;as illustrated in the following images. The items in your backlog might be called user stories (agile) issues (Basic), product backlog items (Scrum), or requirements (CMMI). All four types are similar: they describe the customer value of the work and the work to do.    
+To track different types of work, different WITs are defined. The work item types available are based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)&mdash;Agile, Basic, Scrum, or CMMI&mdash;as illustrated in the following images. The items in your backlog might be called user stories (agile) issues (Basic), product backlog items (Scrum), or requirements (CMMI). All four types are similar: they describe the customer value of the work and the work to do.    
 
 [!INCLUDE [temp](../includes/work-item-types.md)]
 
@@ -93,7 +93,7 @@ Each work item type belongs to a category. Categories are used to group work ite
 > |Bug | Bug | Dependent on [how bugs are tracked](#track)  |
 
  
-In addition to the work items types that appear on backlogs and boards, there are additional work item types that track testing, reviews, and feedback. These types, listed in the following table by category, are available for all processes. 
+Along with the work items types that appear on backlogs and boards, there are work item types that track testing, reviews, and feedback. These types, listed in the following table by category, are available for all processes. 
 
 
 :::row:::
@@ -126,7 +126,7 @@ In addition to the work items types that appear on backlogs and boards, there ar
       Code Review Response
    :::column-end:::
    :::column span="2":::
-       A code review response is created for each person who's been requested to provide review comments.
+       A code review response is created for each person who's requested to provide review comments.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -358,7 +358,7 @@ For a complete list of link types and supported features, see [Linking, traceabi
 
 ## Find or list work items 
 
-You can use the search box to do an impromptu search for finding specific work items based on select field criteria. Or, you can create a query to do a managed search, which lists work items based on your query criteria. With managed searches, you can perform other tasks, such as a work items triage, creating a trend or status chart, adding to the dashboard, and more. 
+You can use the search box to do an impromptu search for finding specific work items based on select field criteria. Or, you can create a query to do a managed search, which lists work items based on your query criteria. With managed searches, you can do other tasks, such as a work items triage, creating a trend or status chart, adding to the dashboard, and more. 
 
 To learn more, see these articles: 
 - [About managed queries](../queries/about-managed-queries.md) 
