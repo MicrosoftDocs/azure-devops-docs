@@ -5,7 +5,7 @@ description: Merge Command
 ms.assetid: 4075b4a8-1d11-49d5-8dbe-4fd00cdb0fca
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
+ms.date: 10/18/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -71,7 +71,7 @@ tf merge [/recursive] [/force] [/candidate] [/discard]
    **/candidate**
    :::column-end:::
    :::column span="3":::
-   Prints a list of all changesets in the source that have not yet been merged into the destination. The list should include the changeset ID that has not been merged and other basic information about that changeset.
+   Prints a list of all changesets in the source that have not yet been merged into the destination. The list should include the changeset ID that has not been merged and other basic information about that changeset. An asterisk for a given result indicates that it was partially merged, meaning some of the changes in the changeset have been merged and other changes have not.
    :::column-end:::
 :::row-end:::
 :::row:::
