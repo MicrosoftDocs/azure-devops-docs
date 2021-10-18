@@ -384,207 +384,341 @@ Cross account linking requires the use of a special link type and should only be
 
 The following table describes each of the property items specified in the configuration file. 
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-<th>Property/Description</th>
-<th>Default/Example</th>
-</tr>
-<tr>
-<td>consumesLinkName
-<blockquote>Specifies the link type used to create the link from producer to consumer.  </blockquote></td>
-<td>System.LinkTypes.Dependency-Reverse</td>
-</tr>
-<tr>
-<td>producesLinkName
-<blockquote>Specifies the link type used to create the link from consumer to producer. </blockquote></td>
-<td>System.LinkTypes.Dependency-Forward</td>
-</tr>
-<tr>
-<td>queryFields
-<blockquote>Specifies the custom fields to use in place of the system fields used by the dependency tracker to return linked work item results. By default. system reference names are used to return values for the following fields:
-<ul>
-<li>areaPath - Area Path</li>
-<li>assignedTo - Assigned To</li>
-<li>id - ID</li>
-<li>areapath - IterationID</li>
-<li>areapath - Iteration Path</li>
-<li>areapath - Priority</li>
-<li>areapath - State</li>
-<li>areapath - Tags</li>
-<li>teamProject - Team Project</li>
-<li>title - Title</li>
-<li>workItemType - Work Item Type</li>
-</ul>
-</blockquote>
-</td>
-<td>
-If a custom field is used in place of one of the system fields, you specify the substitution by entering: 
-<pre>{
-    title: "Custom.Title",
-    assignedTo: "Custom.AssignedTo" 
-}</pre>
-</td>
-</tr>
-<tr>
-<td>dependencyWorkItemTypes
-<blockquote>Specifies the work item types that participate in dependency tracking. From the Create a dependency dialog, only those work item types listed can be created.  </blockquote></td>
-<td>Default: <pre>
+:::row:::
+   :::column span="1":::
+   **Property/Description**
+   :::column-end:::
+   :::column span="1":::
+   **Default/Example**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   consumesLinkName
+   
+   > Specifies the link type used to create the link from producer to consumer.  
+
+   :::column-end:::
+   :::column span="1":::
+   System.LinkTypes.Dependency-Reverse
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   producesLinkName
+   
+   > Specifies the link type used to create the link from consumer to producer. 
+
+   :::column-end:::
+   :::column span="1":::
+   System.LinkTypes.Dependency-Forward
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   queryFields
+   
+   > Specifies the custom fields to use in place of the system fields used by the dependency tracker to return linked work item results. By default. system reference names are used to return values for the following fields:
+   >    
+   >    - areaPath - Area Path
+   >    - assignedTo - Assigned To
+   >    - id - ID
+   >    - areapath - IterationID
+   >    - areapath - Iteration Path
+   >    - areapath - Priority
+   >    - areapath - State
+   >    - areapath - Tags
+   >    - teamProject - Team Project
+   >    - title - Title
+   >    - workItemType - Work Item Type
+
+   :::column-end:::
+   :::column span="1":::
+   
+   If a custom field is used in place of one of the system fields, you specify the substitution by entering: 
+   
+   ```
+    {
+       title: "Custom.Title",
+       assignedTo: "Custom.AssignedTo" 
+    }
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   dependencyWorkItemTypes
+   
+   > Specifies the work item types that participate in dependency tracking. From the Create a dependency dialog, only those work item types listed can be created.  
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
 [  
   "Epic",  
   "Feature",  
   "User Story",  
   "Bug"  
-]</pre>
-<p>If using the Scrum process, you would change the entry to:</p>
-<pre>
+]
+   ```
+   If using the Scrum process, you would change the entry to:
+
+   
+   ```
 [  
   "Epic",  
   "Feature",  
   "Product Backlog Item",  
   "Bug"  
-]</pre>
-</td>
-</tr>
-<tr>
-<td>selectedDependencyWorkItemTypes
-<blockquote>Restricts the  initial focus to just those work item types that the dependency tracker displays or lists. Based on the default "Any", any work item type that contains a dependency link type is displayed or listed. Users can change the focus through filtering. </blockquote></td>
-<td>Default: <pre>Any</pre><br/>
-<p>To restrict the work item types to just Epics and Features, specify:</p> 
-<pre>
+]
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   selectedDependencyWorkItemTypes
+   
+   > Restricts the  initial focus to just those work item types that the dependency tracker displays or lists. Based on the default "Any", any work item type that contains a dependency link type is displayed or listed. Users can change the focus through filtering. 
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
+    Any
+   ```  
+   To restrict the work item types to just Epics and Features, specify:
+ 
+   
+   ```
 [  
   "Epic",  
   "Feature"  
-]</pre> 
-</td>
-</tr>
-<tr>
-<td>selectedReleases
-<blockquote>Restricts the initial focus to just those work items that are assigned to those Iteration Paths equal to or under the specified releases. Based on the blank default, no restrictions are applied. Users can change the focus through filtering. </blockquote></td>
-<td>Default: <pre>[]</pre><br/>
-<p>To restrict the work item types to just Release 1 and Release 2 for the Fabrikam project, specify:</p> 
-<pre>[  
-  "Fabrikam/Release 1",  
-  "Fabrikam/Release 2",  
-]</pre>  
-</td>
-</tr>
-<tr>
-<td>workItemCategoriesAndColors
-<blockquote>Specifies the colors used to represent work items based on their category and workflow state. For more information, see <a href="../work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards</a>.</blockquote></td>
-<td>Default: <pre>
+]
+   ``` 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   selectedReleases
+   
+   > Restricts the initial focus to just those work items that are assigned to those Iteration Paths equal to or under the specified releases. Based on the blank default, no restrictions are applied. Users can change the focus through filtering. 
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
+    []
+   ```  
+   To restrict the work item types to just Release 1 and Release 2 for the Fabrikam project, specify:
+ 
+   
+   ```
+    [  
+      "Fabrikam/Release 1",  
+      "Fabrikam/Release 2",  
+    ]
+   ```  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   workItemCategoriesAndColors
+   
+   > Specifies the colors used to represent work items based on their category and workflow state. For more information, see [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md).
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
 {
   "Proposed": {
-     "displayName": "Proposed",
-     "color": "#a6a6a6"
-        },
+ "displayName": "Proposed",
+ "color": "#a6a6a6"
+},
   "InProgress": {
-      "displayName": "In Progress",
-      "color": "#00bcf2"
-         },
+  "displayName": "In Progress",
+  "color": "#00bcf2"
+ },
    "Completed": {
-       "displayName": "Completed",
-       "color": "#9ac70b"
-          },
+   "displayName": "Completed",
+   "color": "#9ac70b"
+  },
   "Removed": {
-      "displayName": "Removed",
-      "color": "#d9242c"
-         },
+  "displayName": "Removed",
+  "color": "#d9242c"
+ },
   "Resolved": {
-       "displayName": "Resolved",
-        "color": "#ff9d00"
-         }
-}</pre></td>
-</tr>
-<tr>
-<td>workItemDislayStatesAndDisplayColors
-<blockquote>Maps the workflow states to colors used to display them. <p>If you customize the workflow states, or use a process that uses different workflow states, you must update this property. </p></blockquote></td>
-<td>Default: <pre>
+   "displayName": "Resolved",
+"color": "#ff9d00"
+ }
+}
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   workItemDislayStatesAndDisplayColors
+   
+   > Maps the workflow states to colors used to display them. If you customize the workflow states, or use a process that uses different workflow states, you must update this property. 
+   >    
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
 {  
   "New": {  
-     "textColor": "rgb(112, 112, 112)",  
-     "chartColor": "rgb(112, 112, 112)",  
-     "states": [  
-     "New"  
-        ]  
-      },  
+ "textColor": "rgb(112, 112, 112)",  
+ "chartColor": "rgb(112, 112, 112)",  
+ "states": [  
+ "New"  
+]  
+  },  
   "Active": {  
-      "textColor": "rgb(0, 122, 204)",  
-      "chartColor": "rgb(0, 122, 204)",  
-      "states": [  
-      "Active",  
-      "Resolved"  
-       ]  
-     },  
+  "textColor": "rgb(0, 122, 204)",  
+  "chartColor": "rgb(0, 122, 204)",  
+  "states": [  
+  "Active",  
+  "Resolved"  
+   ]  
+ },  
   "Closed": {  
-     "textColor": "rgb(16, 124, 16)",  
-     "chartColor": "rgb(16, 124, 16)",  
-     "states": [  
-     "Closed"  
-      ]  
-     },  
+ "textColor": "rgb(16, 124, 16)",  
+ "chartColor": "rgb(16, 124, 16)",  
+ "states": [  
+ "Closed"  
+  ]  
+ },  
   "Removed": {  
-     "textColor": "rgb(204, 41, 61)",  
-     "chartColor": "rgb(204, 41, 61)",  
-     "states": [  
-     "Removed"  
-      ]  
-     },  
+ "textColor": "rgb(204, 41, 61)",  
+ "chartColor": "rgb(204, 41, 61)",  
+ "states": [  
+ "Removed"  
+  ]  
+ },  
   "Other": {  
-     "textColor": "rgb(178, 178, 178)",  
-     "chartColor": "rgb(178, 178, 178)",  
-     "states": []  
+ "textColor": "rgb(178, 178, 178)",  
+ "chartColor": "rgb(178, 178, 178)",  
+ "states": []  
    }  
 }  
-</pre>
-</td>
-</tr>
-<td>riskAssessementValues
-<blockquote>Specifies the <a href="../queries/planning-ranking-priorities.md#risk">Risk</a> field values. The Risk field specifies a subjective rating of the relative uncertainty around the successful completion of a user story. It is defined for the Agile process, but can be added to work item types used in other processes. </blockquote></td>
-<td>Default: <pre>["1-High", "2-Medium", "3-Low"]</pre></td>
-</tr>
-<tr>
-<td>partnerAccounts
-<blockquote>Optional configuration that specifies which Azure DevOps organizations are selectable from the Dependency dialog when creating a Cross account dependency. If not specified it will generate a list based on previous organizations that the user has visited. 
-</blockquote></td>
-<td>Default: <pre>[]</pre>
-Example: <pre>["account-1", "account-2"]</pre>
-</td>
-</tr>
-<tr>
-<td>timelineEnabled
-<blockquote>Enables or disables the Timeline view.</blockquote></td>
-<td>Default: <pre>true</pre></td>
-</tr>
-<tr>
-<td>newDependencyButtonEnabled
-<blockquote>Enables or disables the <strong>New Dependency</strong> link to create a new linked dependency.</blockquote></td>
-<td>Default: <pre>true</pre></td>
-</tr>
-<tr>
-<td>crossAccountConfigs
-<blockquote>(1) Enables or disables the support of creating new dependencies to work items in other partner accounts, and (2) specifies the default state of the Partner account options in the Create a dependency dialog.  </blockquote></td>
-<td>Default: <pre>
+   
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   riskAssessementValues
+   
+   > Specifies the [Risk](../queries/planning-ranking-priorities.md#risk) field values. The Risk field specifies a subjective rating of the relative uncertainty around the successful completion of a user story. It is defined for the Agile process, but can be added to work item types used in other processes. 
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
+      ["1-High", "2-Medium", "3-Low"]
+   ```
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   partnerAccounts
+   
+   > Optional configuration that specifies which Azure DevOps organizations are selectable from the Dependency dialog when creating a Cross account dependency. If not specified it will generate a list based on previous organizations that the user has visited. 
+   >    
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
+    []
+   ```
+   Example: 
+   ```
+      ["account-1", "account-2"]
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   timelineEnabled
+   
+   > Enables or disables the Timeline view.
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
+     true
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   newDependencyButtonEnabled
+   
+   > Enables or disables the **New Dependency** link to create a new linked dependency.
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
+      true
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   crossAccountConfigs
+   
+   > (1) Enables or disables the support of creating new dependencies to work items in other partner accounts, and (2) specifies the default state of the Partner account options in the Create a dependency dialog.  
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
 {
 "crossAccountDependencyEnabled": true,  
 "crossAccountDependencyToggleDefaultState": false
-}</pre> 
-<p>If you don't want any dependencies created that belong to other organizations, then change this configuration to: </p>
-<pre>{  
-"crossAccountDependencyEnabled": false,  
-"crossAccountDependencyToggleDefaultState": false
-}</pre>
-</td>
-</tr>
-<tr>
-<td>priorityValues
-<blockquote>Specifies the <a href="../queries/planning-ranking-priorities.md#priority">Priority</a> field values. The Priority field specifies a subjective rating of a bug, issue, task, or user story as it relates to the business. It is defined for most backlog work item types and processes, but can be added to work item types used in other processes.   </blockquote></td>
-<td>Default: <pre>["0","1","2","3","4","(blank)"]</pre></td>
-</tr>
-<tr>
-<td>defaultColumns
-<blockquote>Specifies the field columns and order used to display dependency lists. </blockquote></td>
-<td>Default: <pre>
+}
+   ``` 
+   If you don't want any dependencies created that belong to other organizations, then change this configuration to: 
+
+   
+   ```
+    {  
+    "crossAccountDependencyEnabled": false,  
+    "crossAccountDependencyToggleDefaultState": false
+    }
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   priorityValues
+   
+   > Specifies the [Priority](../queries/planning-ranking-priorities.md#priority) field values. The Priority field specifies a subjective rating of a bug, issue, task, or user story as it relates to the business. It is defined for most backlog work item types and processes, but can be added to work item types used in other processes.   
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
+["0","1","2","3","4","(blank)"]
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   defaultColumns
+   
+   > Specifies the field columns and order used to display dependency lists. 
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
 [
   "Id",
   "Area Path",
@@ -592,45 +726,80 @@ Example: <pre>["account-1", "account-2"]</pre>
   "State",
   "Consumers",
   "Producers"
-]</pre></td>
-</tr>
-<tr>
-<td>riskAnalysisEnabled
-<blockquote>Specifies whether or not Risk functionality is enabled. If set to true, then the riskAssessmentValues property must be defined.</blockquote></td>
-<td>Default: <pre>False</pre></td>
-</tr>
-<tr>
-<td>riskAssessmentValues
-<blockquote> </blockquote></td>
-<td>Default: <pre>[]</pre></td>
-</tr>
-<tr>
-<td>riskGraphConfig
-<blockquote>Maps the workflow States to one of the three Risk areas displayed on the Graph: <code>atRisk</code> is Red, <code>nuetral</code> is Gray, and <code>onTrack</code> is Green.  </blockquote></td>
-<td>Default: 8
-<pre>
+]
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   riskAnalysisEnabled
+   
+   > Specifies whether or not Risk functionality is enabled. If set to true, then the riskAssessmentValues property must be defined.
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
+False
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   riskAssessmentValues
+   
+   >  
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 
+   ```
+[]
+   ```
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   riskGraphConfig
+   
+   > Maps the workflow States to one of the three Risk areas displayed on the Graph: `atRisk` is Red, `nuetral` is Gray, and `onTrack` is Green.  
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 8
+   
+   ```
 {  
-    "atRisk": [  
-        "Removed"  
-    ],  
-    "neutral": [  
-        "New"  
-    ],  
-    "onTrack": [  
-        "Active",  
-        "Resolved",  
-        "Closed",  
-         "Other"  
-        ]
-}</pre>
-<p>Add or remove workflow states used in work item types participating in dependency tracking.</p></td>
-</tr>
-<td>iterationDepth
-<blockquote>Specifies the hierarchical depth of Iteration Paths that the Dependency Tracker queries to build the Timeline view. </blockquote></td>
-<td>Default: 8<p>A depth of 3 would correspond to: Fabrikam/Release 1/Sprint 20. </p></td>
-</tr>
-</tbody>
-</table>
+"atRisk": [  
+"Removed"  
+],  
+"neutral": [  
+"New"  
+],  
+"onTrack": [  
+"Active",  
+"Resolved",  
+"Closed",  
+ "Other"  
+]
+}
+   ```
+   Add or remove workflow states used in work item types participating in dependency tracking.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   iterationDepth
+   
+   > Specifies the hierarchical depth of Iteration Paths that the Dependency Tracker queries to build the Timeline view. 
+
+   :::column-end:::
+   :::column span="1":::
+   Default: 8A depth of 3 would correspond to: Fabrikam/Release 1/Sprint 20. 
+
+   :::column-end:::
+:::row-end:::
 
 
 ### Default configuration syntax

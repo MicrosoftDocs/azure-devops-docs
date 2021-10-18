@@ -101,48 +101,110 @@ Each query contains the following strings that you must substitute with your val
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$apply=filter(</code></td>
-<td>Start filter()</td>
-<tr>
-<tr>
-<td><code>Pipeline/PipelineName eq '{pipelineName}'</code></td>
-<td>Return test runs for the specified pipeline</td>
-<tr>
-<tr><td><code>and CompletedOn/Date ge {startdate}</code></td>
-<td>Return test runs on or after the specified date</td>
-<tr>
-<tr><td><code>and Workflow eq 'Build'</code></td>
-<td>Return test runs for 'Build' workflow</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close filter()</td>
-<tr>
-<tr><td><code>aggregate(</code></td>
-<td>Start aggregate. For all the test runs matching the above filter criteria:</td>
-<tr>
-<tr><td><code>ResultCount with sum as ResultCount,</code></td>
-<td>Count the total number of test runs as ResultCount</td>
-<tr>
-<tr><td><code>ResultPassCount with sum as ResultPassCount,</code></td>
-<td>Count the total number of passed test runs as ResultPassCount</td>
-<tr>
-<tr><td><code>ResultFailCount with sum as ResultFailCount</code></td>
-<td>Count the total number of failed test runs as ResultFailCount</td>
-<tr>
-<tr><td><code>ResultNotExecutedCount with sum as ResultNotExecutedCount,</code></td>
-<td>Count the total number of not executed test runs as ResultNotExecutedCount</td>
-<tr>
-<tr><td><code>ResultNotImpactedCount with sum as ResultNotImpactedCount</code></td>
-<td>Count the total number of not impacted test runs as ResultNotImpactedCount</td>
-<tr>
-<tr><td><code>)</code></td>
-<td>Close aggregate()</td>
-<tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Query part**
+   :::column-end:::
+   :::column span="1":::
+   **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `$apply=filter(`
+   :::column-end:::
+   :::column span="1":::
+   Start filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `Pipeline/PipelineName eq '{pipelineName}'`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs for the specified pipeline
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and CompletedOn/Date ge {startdate}`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs on or after the specified date
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `and Workflow eq 'Build'`
+   :::column-end:::
+   :::column span="1":::
+   Return test runs for 'Build' workflow
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close filter()
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `aggregate(`
+   :::column-end:::
+   :::column span="1":::
+   Start aggregate. For all the test runs matching the above filter criteria:
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultCount with sum as ResultCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of test runs as ResultCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultPassCount with sum as ResultPassCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of passed test runs as ResultPassCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultFailCount with sum as ResultFailCount`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of failed test runs as ResultFailCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultNotExecutedCount with sum as ResultNotExecutedCount,`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of not executed test runs as ResultNotExecutedCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `ResultNotImpactedCount with sum as ResultNotImpactedCount`
+   :::column-end:::
+   :::column span="1":::
+   Count the total number of not impacted test runs as ResultNotImpactedCount
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   `)`
+   :::column-end:::
+   :::column span="1":::
+   Close aggregate()
+   :::column-end:::
+:::row-end:::
 
 [!INCLUDE [temp](includes/query-filters-test.md)]
 
