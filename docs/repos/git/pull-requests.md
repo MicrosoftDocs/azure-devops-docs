@@ -73,7 +73,7 @@ To learn more about permissions and access, see [Default Git repository and bran
 
    Select any PR in the list to go to that PR's **Overview** page.
 
-   ![Screenshot of the view tabs for PRs in Azure Repos.](media/pull-requests/pr_status_widget.png)
+   ![Screenshot of the view tabs for PRs in Azure Repos.](media/pull-requests/pr-status-widget.png)
 
 1. You can view all of your PRs across different projects in your organization by choosing **Pull requests** in the **My Work** view.
 
@@ -95,7 +95,7 @@ Select **Active** to show all active PRs for the current repo.
 
 Select **Completed** or **Abandoned** to bring up a history of closed PRs.
 
-![Viewing completed and abandoned PRs in Azure Repos.](media/pull-requests/pr_status_widget.png)
+![Viewing completed and abandoned PRs in Azure Repos.](media/pull-requests/pr-status-widget.png)
 
 ::: moniker-end 
 
@@ -784,13 +784,13 @@ Add comments to a PR to make suggestions, reply to previous comments, and point 
 ::: moniker range="azure-devops"
 - Comment inline in the **Files** tab of a PR by selecting the comment button :::image type="icon" source="./media/pull-requests/new-comment-icon.png"::: next to the line you want to comment on.
 
-  ![Screenshot of comments in Azure Repos P Rs.](./media/pull-requests/pr_comments_summary.png)
+  ![Screenshot of comments in Azure Repos P Rs.](./media/pull-requests/pr-comments-summary.png)
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 - Comment inline in the **Files** tab of a PR by hovering over the line you want to comment on and selecting the comment button. ![Comment button in a PR](./media/pull-requests/pr_comment_icon.png).
 
-  ![Screenshot of comments in Azure Repos P Rs.](./media/pull-requests/pr_comments_summary.png)
+  ![Screenshot of comments in Azure Repos P Rs.](./media/pull-requests/pr-comments-summary.png)
 ::: moniker-end
 
 - To suggest changes directly, select the lightbulb icon in the comment interface, make your suggested changes in the code, and then select **Comment**.
@@ -958,7 +958,7 @@ After the PR gets all required approvals and meets all branch policy requirement
 ::: moniker range=">= azure-devops-2019"
 When you complete the merge, any linked work items automatically update to show the PR completion.
 
-![Screenshot of linked work items showing completed P Rs.](./media/pull-requests/pr_workitem_complete.png)
+![Screenshot of linked work items showing completed P Rs.](./media/pull-requests/pr-workitem-complete.png)
 
 ::: moniker-end
 
@@ -987,7 +987,7 @@ When you complete the merge, any linked work items automatically update to show 
 
 Linked work items are also updated showing the PR completion.
 
-![Linked Work Items showing completed PRs](./media/pull-requests/pr_workitem_complete.png)
+![Linked Work Items showing completed PRs](./media/pull-requests/pr-workitem-complete.png)
 
 ::: moniker-end
 
