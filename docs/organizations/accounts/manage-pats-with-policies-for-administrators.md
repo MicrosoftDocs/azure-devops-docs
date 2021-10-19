@@ -14,13 +14,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
-Learn how to turn on the Azure Active Directory (Azure AD) policies that restrict the creation, scope, and lifespan of new or renewed personal access tokens (PATs) for users in Azure DevOps.
-
-The following policies can be turned on or off. By default, these policies are set to *off*.
-
-  - [Restrict creation of global PATs](#restrict-creation-of-global-pats)
-  - [Restrict creation of full-scoped PATs](#restrict-creation-of-full-scoped-pats)
-  - [Set maximum lifespan for new PATs](#set-maximum-lifespan-for-new-pats)
+Learn how to turn on the Azure Active Directory (Azure AD) policies that restrict the creation, scope, and lifespan of new or renewed personal access tokens (PATs) for users in Azure DevOps. These policies can be turned on or off. By default, they're set to *off*.
 
 > [!IMPORTANT]
 > Existing PATs, created via both the UI and APIs, apply per the remainder of their lifespan. Before these existing PATs can be successfully renewed, they must be updated to comply with the new restriction.
