@@ -172,7 +172,7 @@ The following people contributed to the Azure DevOps docs during this period. Th
 - [davidsmatlak](https://github.com/davidsmatlak) - David Smatlak (1)
 - [electrominium](https://github.com/electrominium) - Mohammed Mehdi (1)
 - [esecules](https://github.com/esecules) - Eric Secules (1)
-- [focusonmx](https://github.com/focusonmx) - Yujin Lee (1)
+- [focusonmx](https://github.com/yujinnee/focusonmx.github.io) - Yujin Lee (1)
 - [Gupta-Amrit](https://github.com/Gupta-Amrit) (1)
 - [LucyParry](https://github.com/LucyParry) - Lucy (1)
 - [Mac-Chiato](https://github.com/Mac-Chiato) (1)
