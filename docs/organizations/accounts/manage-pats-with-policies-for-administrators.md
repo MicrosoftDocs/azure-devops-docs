@@ -18,14 +18,9 @@ Learn how to turn on the Azure Active Directory (Azure AD) policies that restric
 
 The following policies can be turned on or off. By default, these policies are set to *off*.
 
-- [Use policies to manage personal access tokens for users](#use-policies-to-manage-personal-access-tokens-for-users)
-  - [Prerequisites](#prerequisites)
   - [Restrict creation of global PATs](#restrict-creation-of-global-pats)
   - [Restrict creation of full-scoped PATs](#restrict-creation-of-full-scoped-pats)
   - [Set maximum lifespan for new PATs](#set-maximum-lifespan-for-new-pats)
-  - [Add Azure AD users or groups to the allowlist](#add-azure-ad-users-or-groups-to-the-allowlist)
-  - [Next steps](#next-steps)
-  - [Related articles](#related-articles)
 
 > [!IMPORTANT]
 > Existing PATs, created via both the UI and APIs, apply per the remainder of their lifespan. Before these existing PATs can be successfully renewed, they must be updated to comply with the new restriction.
