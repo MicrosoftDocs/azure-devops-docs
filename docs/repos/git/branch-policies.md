@@ -114,7 +114,7 @@ Configure a comment resolution policy for your branch by selecting **Check for c
 
 :::image type="content" source="media/branch-policies/check-comment-resolution-2020.png" alt-text="Check for comment resolution":::
 
-For more information on working with pull request comments, see [Pull requests - leave comments](pull-requests.md#leave-comments).
+For more information on working with pull request comments, see [Pull requests - leave comments](review-pull-requests.md#make-comments).
 
 ::: moniker-end
 
@@ -124,7 +124,7 @@ Configure a comment resolution policy for your branch by selecting **Check for c
 
 ![Check for comment resolution](media/branch-policies/comment-resolution-2018.png)
 
-For more information on working with pull request comments, see [Pull requests - leave comments](pull-requests.md#leave-comments).
+For more information on working with pull request comments, see [Pull requests - leave comments](review-pull-requests.md#make-comments).
 
 ::: moniker-end
 
@@ -394,7 +394,7 @@ No. After you set up a required branch policy, you can't directly push changes t
 
 #### What is auto-complete?
 
-When you  make a pull request into a branch with branch policies configured, it enables the **Set auto-complete** button for the pull request. Use this option to [automatically complete](pull-requests.md#complete-the-pull-request) if you don't expect any problems with your changes. Your pull request finished once it meets all policies.
+When you  make a pull request into a branch with branch policies configured, it enables the **Set auto-complete** button for the pull request. Use this option to [automatically complete](complete-pull-requests.md#complete-automatically) if you don't expect any problems with your changes. Your pull request finished once it fulfills all policies.
 
 <a name="how_works"></a>
 
