@@ -1012,7 +1012,7 @@
     - name: REST API reference
       href: /rest/api/azure/devops/
     - name: Azure DevOps CLI
-      href: ../cli/index.md
+      href: ../cli/index.md 
     - name: DevOps Starter to deploy to Azure
       href: /azure/devops-project/
     - name: Azure Lab Services
