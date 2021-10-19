@@ -1,13 +1,13 @@
 ---
 title: Stories Progress Report (Agile) 
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps Server
+description: Lists all user stories, filtered by product area and iteration in order of importance.
 ms.technology: devops-analytics
 ms.topic: reference
-description: Lists all user stories, filtered by product area and iteration in order of importance.
 ms.assetid: 1478227b-50b9-4ef1-be5b-838cd5a5467b
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/2017
+ms.date: 10/19/2021
 ---
 
 
@@ -22,9 +22,12 @@ The Stories Progress report lists all user stories, filtered by product area and
 >  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
  
-**You can use this report to answer the following questions**:<br /><br /> -   How much progress has the team made toward completing the work for each story?<br />-   How much work must the team still perform to implement each user story?<br />-   How much work did the team perform in the last calendar period?
+You can use this report to answer the following questions:
+- How much progress has the team made toward completing the work for each story?
+- How much work must the team still perform to implement each user story?
+- How much work did the team perform in the last calendar period?
   
- **Required Permissions**  
+## Required Permissions  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
