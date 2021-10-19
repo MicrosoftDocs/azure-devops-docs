@@ -6,6 +6,8 @@
     - name: 2021
       expanded: true
       items:
+        - name: October 19
+          href: 2021/sprint-194-update.md
         - name: September 28
           href: 2021/sprint-193-update.md
         - name: September 8
@@ -559,6 +561,8 @@
     - name: 2021
       expanded: false
       items:
+        - name: October 19
+          href: 2021/pipelines/sprint-194-update.md
         - name: September 28
           href: 2021/pipelines/sprint-193-update.md
         - name: September 8

@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 10/5/2021
+ms.date: 10/19/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -47,8 +47,9 @@ Each feature is linked to the public roadmap project where you can learn more ab
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887 data-raw-source="[Show Link with Parent Name in Query Results Widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887)">Show Link with Parent Name in Query Results Widget</a></td><td>Reporting</td><td>Future</td>
 </tr>
-<tr><td rowspan="15"><strong>Future</strong></td>
+<tr><td rowspan="16"><strong>Future</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547" data-raw-source="[Support Azure Managed Identities](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840547)">Support Azure Managed Identities</a></td><td>General</td><td>N/A</td>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954 data-raw-source="[Associate all public APIs with PAT scopes](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1882954)">Associate all public APIs with PAT scopes</a></td><td>General</td><td>TBD</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840548" data-raw-source="[Support Azure Service Principals](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1840548)">Support Azure Service Principals</a></td><td>General</td><td>N/A</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700" data-raw-source="[Conditional Access Policy support for device state](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700)">Conditional Access Policy support for device state</a></td><td>General</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678 data-raw-source="[Access events for PAT, SSH will be available in the Auditing Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678)">Access events for PAT, SSH will be available in the Auditing Log</a></td><td>General</td><td>Future</td>
@@ -110,6 +111,13 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="5"><a href="2021/sprint-194-update.md" data-raw-source="[19 October 2021](2021/sprint-194-update.md)">19 October 2021</a></td> 
+    <td>Post neutral status to GitHub when a build is skipped</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Access to all pipelines is turned off by default in protected resources</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Inject task before or after specified target tasks using a decorator</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Announcing a deprecation schedule for Windows 2016 hosted images</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Announcing deprecation of macOS 10.14 hosted images</td><td>Pipelines</td><td>N/A</td></tr>
+</tr> 
     <td rowspan="7"><a href="2021/sprint-193-update.md" data-raw-source="[28 September 2021](2021/sprint-193-update.md)">28 September 2021</a></td> 
     <td>Improved tenant switch requests reliability</td><td>General</td><td>Future</td></tr>
     <td>Emphasize tags in Delivery Plans using colors</td><td>Boards</td><td>Future</td></tr>
