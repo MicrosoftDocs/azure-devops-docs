@@ -275,7 +275,7 @@ In all these cases, you can still rebase your branch locally and then push upstr
 
 ### Multiple merge base issue
 
-In some cases, a PR has more than one true merge base, and this can cause security issues. If the files in the PR have different versions between the merge bases, a multiple merge base warning happens. For more information and remediation, see [Multiple merge base issue](about-pull-requests.md#multiple-merge-base-issue). 
+In some cases, a PR has more than one true merge base, and this can cause security issues. If the files in the PR have different versions between the merge bases, a multiple merge base warning happens. For more information and remediation, see [Multiple merge bases](about-pull-requests.md#multiple-merge-bases). 
 
 
 ::: moniker range=">= tfs-2017" 
