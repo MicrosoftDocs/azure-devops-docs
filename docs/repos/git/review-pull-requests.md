@@ -117,7 +117,6 @@ To learn more about permissions and access, see [Default Git repository and bran
 
 :::moniker-end
 
-<a name="leave-comments"></a>
 ## Make comments
 
 Add comments to a PR to make suggestions, reply to previous comments, and point out problems with proposed changes.
@@ -142,7 +141,6 @@ Add comments to a PR to make suggestions, reply to previous comments, and point 
 
 - Address the author or other reviewers directly in your comments by using `@username`, and reference work items by using `#workitemID`. You can also reference other PRs by using `!pullrequestID`.
 
-<a name="vote-on-the-changes"></a>
 ## Vote on changes
 
 # [Browser](#tab/browser)
