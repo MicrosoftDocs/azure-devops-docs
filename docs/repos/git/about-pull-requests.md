@@ -1,5 +1,5 @@
 ---
-title: About pull requests
+title: About pull requests and permissions
 titleSuffix: Azure Repos
 description: Learn about pull request guidelines, management, and considerations when working in an Azure Repos Git repository.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
@@ -23,6 +23,39 @@ The following video shows the general pull request process. Some terminology and
 > [!VIDEO https://www.youtube.com/embed/J_DHkUKxI0E?start=0]
 
 This article describes pull request guidelines and management considerations. For instructions on how to create, view, review, and complete pull requests, see [Create, review, and manage pull requests](pull-requests.md).
+
+## Permissions and prerequisites
+
+::: moniker range="azure-devops"
+- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
+ 
+- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher.
+  - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
+  - If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
+
+- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
+
+- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
+
+> [!NOTE]
+> For public projects, users granted **Stakeholder** access have full access to Azure Repos.
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
+- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
+- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
+- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
+
+::: moniker-end
+
+To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
 ## PR feedback
 
@@ -48,8 +81,8 @@ Reviewers should:
 - Provide feedback on changes they don't agree with.
 - Identify issues and give specific suggestions on what to do differently.
 - Make sure the feedback has clear intent and is easy to understand.
-- [Leave comments](pull-requests.md#leave-comments).
-- [Vote on the changes](pull-requests.md#vote-on-the-changes).
+- [Leave comments](review-pull-requests.md#make-comments).
+- [Vote on the changes](review-pull-requests.md#vote-on-changes).
 
 Learn more about how to [get feedback with Git pull requests](/devops/develop/git/git-pull-requests).
 
@@ -84,7 +117,7 @@ For more information, see the following articles:
 - [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)
 - [Configure a branch policy for an external service](pr-status-policy.md)
 
-## Multiple merge base issue
+## Multiple merge bases
 
 The **Files** tab in a PR detects diffs by three-side comparison. The algorithm takes into account the last commit in the target branch, the last commit in the source branch, and their common merge base. The algorithm is a fast, cost-efficient, and reliable method of detecting changes. Unfortunately, in some cases, there's more than one true base. In most repositories this situation is rare, but in large repositories with many active users, it can be common.
 
@@ -121,6 +154,11 @@ Here are general tips for avoiding the multiple merge base issue:
 In large repos with many active contributors, this issue can be especially inconvenient. Even if you get rid of multiple bases via merge, the situation might reappear. If someone closes a longstanding PR, that can recreate the situation. Even though build policies and tests are running, you have no means to complete the PR. Resetting and starting a new branch might help. If nothing is changed, your changes are probably clear, even if the situation repeats itself.
 
 ## Next steps
-- [Create, review, and manage pull requests](pull-requests.md)
+- [Improve code quality with branch policies](branch-policies.md)
+- [Create a pull request](pull-requests.md)
+- [View and open pull requests](view-pull-requests.md)
+- [Review pull requests](review-pull-requests.md)
 - [Pull request update notifications](pull-request-notifications.md)
+- [Complete a pull request](complete-pull-requests.md)
 - [Change the default branch](change-default-branch.md)
+- [Copy changes with cherry-pick](cherry-pick.md)
