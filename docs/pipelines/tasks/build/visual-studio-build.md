@@ -6,7 +6,7 @@ ms.topic: reference
 ms.assetid: 11E76804-BA67-4086-9CF1-8CB2887169BA
 ms.author: vijayma
 author: vijayma
-ms.date: 12/23/2019
+ms.date: 10/18/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-Use this task to build with MSBuild and set the Visual Studio version property.
+Use this task to build with MSBuild and set the Visual Studio version property. Learn more about installing [Visual Studio images on Azure](/visualstudio/install/using-visual-studio-vm).  
 
 ## Demands
 
