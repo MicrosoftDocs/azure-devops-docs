@@ -45,22 +45,23 @@ You can view the packages you saved in your feed by selecting a source from the 
 
 ::: moniker range=">= azure-devops-2019"  
 
-![On Fabrikam, the Source drop-down list is highlighted, and npmjs is selected. The packages for npmjs are listed.](media/view-cached-packages-newnav.png)
+:::image type="content" source="media/view-cached-packages-newnav.png" alt-text="Screenshot of the filtered npm packages":::
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-![Viewing your cached packages](media/view-cached-packages.png)
 
-::: moniker-end
-
-::: moniker range=">=tfs-2017 < azure-devops"
-
-![Filtering is on the npmjs source.](media/view-cached-packages.png)
+:::image type="content" source="media/view-cached-packages.png" alt-text="Screenshot of the filtered npm packages in TFS":::
 
 ::: moniker-end
 
 ## Scopes
 
-If you prefer to use scopes, which limit your private packages to those with the `@<scope>` prefix e.g. `@fabrikam/core` but enable you to consume public packages **directly** from npmjs.com, see [Scopes](scopes.md).
+Using scopes instead of upstream sources limit your private package consumption to those with the `@scope` prefix e.g. `@fabrikam/core` but enable you to consume public packages **directly** from npmjs.com, see [Npm scopes](scopes.md) for more details.
+
+## Related articles
+
+- [Publish npm packages (CLI)](./publish.md)
+- [Publish npm packages (YAML/Classic)](../../pipelines/artifacts/npm.md)
+-  [Use npm audit](./npm-audit.md)
