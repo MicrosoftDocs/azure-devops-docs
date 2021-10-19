@@ -4,26 +4,27 @@ description: Use packages from npmjs.com using scopes or upstream sources
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 11/13/2017
+ms.date: 10/19/2021
 monikerRange: '>= tfs-2017'
 ---
 
 # Use packages from npmjs.com
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
 The npm client is designed to work with a single primary *registry* (what Azure Artifacts calls a *feed*). It also supports secondary *scoped* registries. Scoped registries can only be used to install packages whose names begin with the scope prefix, so their usage is more restrictive. If you want to use both private packages you've created **and** public packages from npmjs.com, we recommend using upstream sources. 
 
 The npmjs.com upstream source allows you to merge the contents of npmjs.com into your feed such that the npm client can install packages from both locations.  Enabling upstream sources also automatically enables saving of packages you use from the upstream source. **This is the recommended way to use Azure Artifacts with npm.** Upstreams give you the most flexibility to use a combination of scoped- and non-scoped packages in your feed, as well as scoped- and non-scoped packages from npmjs.com.
 
-To learn more about the concept of upstream sources, please see the [concepts page](../concepts/upstream-sources.md).
-
 ## Enable npmjs.com as an upstream
-To use npmjs.com as an upstream source, either create a new feed or edit an existing feed.
+
+You can use npmjs.com as an upstream source with new and existing feeds.
 
 ### On a new feed
 
-1. [Create a new feed](../index.yml). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
+1. [Create a new feed](../get-started-npm.md#create-a-feed). Make sure you check the **Include packages from common public sources** checkbox.
+
+    :::image type="content" source="media/include-upstream-sources.png" alt-text="Screenshot showing how to enable upstream sources":::
 
 ### On an existing feed
 
