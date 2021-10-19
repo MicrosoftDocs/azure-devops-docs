@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 08/18/2021
-monikerRange: '>= tfs-2017'
+monikerRange: 'azure-devops'
 ---
 
 # Use policies to manage users' personal access tokens
