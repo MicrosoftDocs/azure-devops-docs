@@ -28,18 +28,20 @@ You can use npmjs.com as an upstream source with new and existing feeds.
 
 ### On an existing feed
 
-1. Edit your feed. Select the **gear icon** in the top right of the page to open feed settings.
-2. Select the **Upstream sources** pivot.
-3. Select **Add upstream source** in the CommandBar.
-4. Select **Select a feed URL** and select **npmjs.com (https://registry.npmjs.org)**. If you like, customize the upstream name.
-5. Select **Add**.
+1. Navigate to your feed and then select the **gear icon** in the top right of the page to open the feed settings.
+1. Select the **Upstream sources** tab, and then select **Add upstream source**.
+
+    :::image type="content" source="media/add-upstream-source.png" alt-text="Screenshot showing how the add upstream source button":::
+
+1. Select **Public source** and then select the **npmjs** public source from the dropdown menu.
+
+    :::image type="content" source="media/npmjs-upstream.png" alt-text="Screenshot showing how the add the npmjs upstream":::
+
+1. Select **Add** when you are done.
 
 ## Filter to saved packages
 
-You can see the packages you have saved in your feed by selecting the appropriate Source filter.
-
-> [!NOTE]
-> Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](/previous-versions/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=azure-devops&preserve-view=true) and consider upgrading it, if needed.
+You can view the packages you saved in your feed by selecting a source from the dropdown menu.
 
 ::: moniker range=">= azure-devops-2019"  
 
