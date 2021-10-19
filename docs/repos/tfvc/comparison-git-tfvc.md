@@ -21,7 +21,7 @@ and [Team Foundation Version Control](./what-is-tfvc.md) (TFVC).
 <a name="tfvc_or_git_summary"></a>
 ## Which version control system should I use?
  
-Git is the default version control provider for new projects. You should use Git for version control in your projects unless you have a specific need for centralized version control features in TFVC.  
+Git is the default version control provider for new projects. You should use Git for version control in your projects and begin to move your existing TFVC Projects to GIT.  TFVC is considered Feature Complete, Azure DevOps will maintain compatability with TFVC but GIT will receive all future investment.
 
 You can use TFVC repos with Git in the same Project so it's easy to add TFVC later if you need centralized version control. To setup a new repo type for an existing project [use these instructions](../../repos/git/team-projects.md).
 
