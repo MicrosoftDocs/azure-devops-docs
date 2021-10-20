@@ -82,7 +82,7 @@ For the Test Plan Progress report to be useful and correct, the team must carry 
 
 <a name="Interpreting"></a> 
  
-## Interpret the Report
+## Interpret the report
 
 You can track how many test plans have been run and how many are failing. The Test Plan Progress report displays the cumulative value of all test plans, grouped by result status.  
   
