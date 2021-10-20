@@ -18,7 +18,7 @@ ms.date: 09/02/2021
 
 ::: moniker range="azure-devops"
 
-From your Azure DevOps user profile page, you can change your picture, display name, and preferred email. 
+On your Azure DevOps user profile page, you can change your picture, display name, and preferred email. 
 
 Other tools for setting your Azure DevOps preferences include:
 
@@ -32,7 +32,7 @@ Other tools for setting your Azure DevOps preferences include:
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-From your Azure DevOps user profile, you can change your picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences. 
+On your Azure DevOps user profile page, you can change your picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences. 
 
 Other tools for setting your Azure DevOps preferences include: 
 
@@ -44,14 +44,14 @@ Other tools for setting your Azure DevOps preferences include:
 
 ::: moniker range="< azure-devops-2019"
 
-From your user profile, you can change your picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences. 
+On your user profile page, you can change your picture, display name, preferred email, language, date and time pattern, time zone, and other user interface preferences. 
 
 Other tools for setting your Azure DevOps preferences include **[Notifications](../../notifications/manage-your-personal-notifications.md)** to add or review subscriptions to event changes. 
 
 ::: moniker-end
 
 > [!NOTE]
-> You can't change your Azure DevOps  user interface (UI) theme if you're using Internet Explorer (IE).
+> You can't change your Azure DevOps user interface (UI) theme if you're using Internet Explorer.
 
 
 ## Change profile settings  
