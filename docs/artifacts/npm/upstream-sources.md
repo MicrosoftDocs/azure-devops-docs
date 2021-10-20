@@ -22,7 +22,7 @@ You can use npmjs.com as an upstream source with new and existing feeds.
 
 ### On a new feed
 
-1. [Create a new feed](../get-started-npm.md#create-a-feed). Make sure you check the **Include packages from common public sources** checkbox.
+- [Create a new feed](../get-started-npm.md#create-a-feed). Make sure you check the **Include packages from common public sources** checkbox.
 
     :::image type="content" source="media/include-upstream-sources.png" alt-text="Screenshot showing how to enable upstream sources":::
 
