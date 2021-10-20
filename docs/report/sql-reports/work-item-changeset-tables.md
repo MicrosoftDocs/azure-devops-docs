@@ -1,15 +1,14 @@
 ---
 title: Work Item Changeset tables 
-description: Query for data about work items that are linked to changesets 
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps
+description: Learn how to query for data about work items that are linked to changesets.
 ms.technology: devops-analytics
 ms.topic: reference 
 ms.assetid: 0c017c1e-b19b-40b6-9927-b88b48700976
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/2017
+ms.date: 10/20/2021
 ---
-
 
 # Work Item Changeset tables  
 
@@ -21,13 +20,13 @@ You can query for data about work items that are linked to changesets by using F
   
  FactWorkItemChangeset is associated with the following dimension tables:  
   
--   DimChangeset  
+- DimChangeset  
   
--   DimPerson  
+- DimPerson  
   
--   DimWorkItem  
+- DimWorkItem  
   
-## Related articles 
--  [Test cases and work items](perspective-test-analyze-report-work.md)   
--  [Find and view changesets](../../repos/tfvc/find-view-changesets.md)   
--  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
+For more information, see these articles:
+- [Test cases and work items](perspective-test-analyze-report-work.md)   
+- [Find and view changesets](../../repos/tfvc/find-view-changesets.md)   
+- [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
