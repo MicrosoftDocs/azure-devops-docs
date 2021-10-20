@@ -27,7 +27,7 @@ You can use this report to answer the following questions:
 - How much work was added after the iteration started?
 - Is too much work being added during the iteration?
   
-## Required Permissions
+## Required permissions
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
   
