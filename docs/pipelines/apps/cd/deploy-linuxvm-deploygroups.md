@@ -40,7 +40,7 @@ https://github.com/spring-guides/gs-spring-boot-docker.git
 ```
 Follow more steps mentioned in [Build your Java app with Maven](../../ecosystems/java.md) for creating a build to deploy to Linux.
 
-#### [JavaScript](#tab/java-script)
+#### [JavaScript](#tab/javascript)
 
 [!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)] 
 
@@ -62,7 +62,7 @@ Follow the extra steps described below based on the runtime stack used for the a
 - For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) Azure template and [configure Tomcat 9.x as a service](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file).
 - For deploying Java EE-based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) + WildFly/JBoss 14 
 
-#### [JavaScript](#tab/java-script)
+#### [JavaScript](#tab/javascript)
 
 To install a JavaScript app or a Node.js app, you'll need a Linux VM with Nginx web server to deploy the app.
 If you don't already have a Linux VM with Nginx, create one now in Azure using the steps in
