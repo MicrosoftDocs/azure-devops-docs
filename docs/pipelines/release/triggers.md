@@ -122,6 +122,6 @@ Allow you to configure actions when multiple releases are queued for deployment.
 ::: moniker-end
 
 > [!NOTE]
-> Release triggers set a number of variables based on your pipeline configuration. You can find information about your release pipelines and/or stages by accessing the values of your [release](./variables.md#default-variables---release) or [release stage](./variables#default-variables---release-stage) variables. 
+> Release triggers set a number of variables based on your pipeline configuration. You can find information about your release pipelines and/or stages by accessing the values of your [release](./variables.md#release) or [release stage](./variables#release-stage) variables. 
 
 
