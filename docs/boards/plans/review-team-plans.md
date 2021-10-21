@@ -1,20 +1,20 @@
 ---
-title: Review team delivery plans 
+title: Add, edit, and review team delivery plans in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to add, edit, and use Delivery Plans to review multi-team deliverables, rollup, and dependencies  
+description: Learn how to add, edit, and use Delivery Plans to review multi-team deliverables, rollup, and dependencies in Azure Boards. 
 ms.technology: devops-agile
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: 'azure-devops'
-ms.date: 07/29/2021
+ms.date: 10/20/2021
 ---
 
 
 
 
-# Review team Delivery Plans 
+# Manage team Delivery Plans in Azure Boards 
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
@@ -41,7 +41,7 @@ Any plan you created with the original Delivery Plans extension will work with D
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of delivery plans, preview](media/plans/intro-image.png)
 
-In this article you'll learn how to perform the following tasks:
+In this article you'll learn how to do the following tasks:
 
 > [!div class="checklist"]   
 > - Open a plan from the list of defined plans 
@@ -59,7 +59,7 @@ For information on working with dependencies, see [Track dependencies](track-dep
  
 ## Review a plan with your teams
 
-It takes several teams to develop large software projects. Very large projects require multiple autonomous teams. Autonomous teams manage their own backlog and priority which contributes to a unified direction for that project. Review [Agile culture](agile-culture.md) for a discussion of autonomous teams and organizational alignment. 
+It takes several teams to develop large software projects. Large projects require multiple autonomous teams. Autonomous teams manage their own backlog and priority that contributes to a unified direction for that project. Review [Agile culture](agile-culture.md) for a discussion of autonomous teams and organizational alignment. 
 
 Regular reviews of the project schedule with these teams help ensure that the teams are working toward common goals. Delivery Plans provide the needed multi-team view of your project schedule. 
 
@@ -68,34 +68,34 @@ Some questions you might address during the review:
 - *Are dependencies across teams adequately addressed via the planned deliverables?* 
 - *Are there gaps in the schedule, where no deliverables are scheduled? What's the cause? Can this be mitigated?*  
 
-For example, we use Delivery Plans internally to share the schedule of Features. By seeing the work many teams have planned for the next 3 sprints, we can easily discuss whether these are the right priorities and if dependencies exist. 
+For example, we use Delivery Plans internally to share the schedule of Features. By seeing the work many teams have planned for the next three sprints, we can easily discuss whether these priorities are right and if dependencies exist. 
 
-In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
+In this way, a Delivery Plan is a driver of alignment while allowing each team to keep a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
-## Best practices 
+## Best practices for using a Delivery Plan
 
 - Determine how you want to use the Delivery Plan. Some ideas are: 
 	- Review quarterly plans for features to be delivered
-	- Monthly sync-up with several teams which have dependencies 
+	- Monthly sync-up with several teams that have dependencies 
 	- Review cross-project deliverables and identify dependencies. 
 - Use a consistent sprint schedule across your project teams and organization when possible. While the plan can accommodate different sprint schedules, it adds to visual clutter. Use the same sprints for backlogs, features, and epics. Don't create specific sprints for epics or other portfolio backlogs. 
 - Use **Start Date** and **Iteration** to specify the time frame for a work item. Or, use **Start Date** and **Target Date**. However, don't specify both **Iteration** and **Target Date** for a work item. The **Target Date** will always override the **Iteration** end date on the plan.
 - Minimize the number of fields you choose to display on your cards.  
 - Eliminate cross-team ownership of area paths. Cross-team area path ownership isn't recommended and can lead to undesirable edge cases.  
-- Keep your work items up-to-date. When changes occur, update the Target Dates or Iteration Paths. 
+- Keep your work items up to date. When changes occur, update the Target Dates or Iteration Paths. 
 
-Note the following: 
+Note the following items: 
 - Plan views display the set of months that correspond to the Iteration Paths selected by the teams whose backlogs appear in the plan. 
 - Plan views are limited to a maximum of 15 teams/backlogs.
 - Zooming out can cause fields and tags to disappear from the cards. The further you zoom out, the harder it is to fit items on a card. By design, we hide select items depending on the zoom level.  
--  Rollup isn't supported for child work items that belong to a different project than that of the originating parent work item.  
+-  Rollup isn't supported for child work items that belong to a different project than the originating parent work item.  
 - If the **Start Date** or **Target Date** are missing from a work item, you can add them to the custom process defined for the project as discussed in [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md#add-an-existing-field-to-another-wit).
  
 
 
 ## Open a plan  
 
-Once you've defined a few plans, you'll see them listed from the **Plans** page under **All**, or the ones you've favorited (**Add to favorites** :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false":::) under **Favorites**. You can see their title, description and their most recent creator/editor. 
+Once you've defined a few plans, you'll see them listed from the **Plans** page under **All**, or the ones you've favorited (**Add to favorites** :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false":::) under **Favorites**. You can see their title, description, and their most recent creator/editor. 
 
 Use the favorite's star to favorite a plan so that you can quickly return to that plan. You can also search for other plans in the project. 
 
@@ -116,14 +116,14 @@ Each team's backlog specified in a Delivery Plan appears as a row within the pla
 
 You can interact with the plan in the following ways:  
 
-- Filter the plan by choosing Choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. You can filter on any field you include in the plan Settings based on the keyword or text filter. For additional details, see [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
+- Filter the plan by choosing Choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. You can filter on any field you include in the plan Settings based on the keyword or text filter. For more information, see [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
 - Scale the size of the cards and calendar by choosing **Zoom out** :::image type="icon" source="media/plans/collapse-calendar-icon.png" border="false"::: or **Zoom in** :::image type="icon" source="media/plans/expand-calendar-icon.png" border="false":::.
-- To view previous or future months, choose **Scroll calendar left** :::image type="icon" source="media/plans/scroll-calendar-left-icon.png" border="false"::: or **Scroll calendar right** :::image type="icon" source="media/plans/scroll-calendar-right-icon.png" border="false"::: .You can also scroll the plan by clicking the plan and dragging your mouse horizontally.
+- To view previous or future months, choose **Scroll calendar left** :::image type="icon" source="media/plans/scroll-calendar-left-icon.png" border="false"::: or **Scroll calendar right** :::image type="icon" source="media/plans/scroll-calendar-right-icon.png" border="false":::. You can also scroll the plan by clicking the plan and dragging your mouse horizontally.
 - To view details for a team, expand the team row by choosing **Expand team row** or clicking once on a sprint within a team row.  
 - To expand and collapse all team rows, choose **Expand all team rows** or **Collapse all team rows** next to **Teams**.  
 - Scroll the view vertically to view teams that appear lower within the plan view. 
 - To view titles only, choose **Collapsed card fields** :::image type="icon" source="media/plans/collapsed-card-fields-icon.png" border="false":::. To view all fields, choose **Expand card fields** :::image type="icon" source="media/plans/expand-card-fields-icon.png" border="false":::.  
-- Click a card title to open the backlog item and view details. Close the work item to return to the plan.   
+- Select a card title to open the backlog item and view details. Close the work item to return to the plan.   
 - To add a work item to a sprint, choose **Add item** :::image type="icon" source="media/plans/add-item-icon.png" border="false":::  within the sprint and team you want to add it to. 
 - To [change the fields displayed on the cards](add-edit-delivery-plan.md#fields), choose **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false":::. 
 
@@ -141,19 +141,19 @@ Collapse and expand each team row by choosing **Expand team row** or **Collapse 
 
 ## Show work that spans one or more iterations
 
-For work items that span one or more iterations, you can define the **Start Date** and **Target Date**. The plan displays cards that start and end according to the dates you set as shown in the following image. In addition, you can grab the left or right border of a work item and drag it to a new **Start Date** or **Target Date**. 
+For work items that span one or more iterations, you can define the **Start Date** and **Target Date**. The plan displays cards that start and end according to the dates you set as shown in the following image. Also, you can grab the left or right border of a work item and drag it to a new **Start Date** or **Target Date**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing features that span iterations](media/plans/features-span-iterations-preview.png)  
 
-## View titles only, collapsed card view 
+## View titles only in the collapsed card view 
 
 The collapsed card view allows you to quickly switch back and forth between cards showing titles only and cards showing all fields configured for the plan. To view titles only, choose **Collapsed card fields** :::image type="icon" source="media/plans/collapsed-card-fields-icon.png" border="false":::. To view all fields, choose **Expand card fields** :::image type="icon" source="media/plans/expand-card-fields-icon.png" border="false":::.  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing location of collapse/expand card fields feature icons. ](media/plans/collapse-card-fields.png)  
 
-## View rollup of features and epics 
+## View the rollup of features and epics 
 
 Rollup displays a fuller picture of the underlying work directly on the cards in your delivery plan. Rollup views are available for features, epics, or any portfolio backlog you've added to your project. To enable rollup, open your plan settings, choose **Fields**, and select **Show child rollup data**.
 
@@ -168,7 +168,7 @@ You can also view rollup from a backlog view as described in [Display rollup pro
 
 ## Update the iteration for a backlog item 
 
-As changes occur to the schedule, you can update the iteration for a backlog item by moving a card to a different iteration. This will help to drive alignment across your organization.
+As changes occur to the schedule, you can update the iteration for a backlog item by moving a card to a different iteration. This update will help to drive alignment across your organization.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing moving a card to a different iteration](media/plans/move-card-iteration.png)
