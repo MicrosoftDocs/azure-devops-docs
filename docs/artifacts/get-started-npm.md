@@ -72,28 +72,84 @@ We recommend having two .npmrc files. The first one should be placed in the same
         
 ### Set up authentication on your development machine
 
-At this point, you should have a project-specific .npmrc file. This file contains only your feed's registry information that you discovered from the **Connect to feed** dialog box. There should be no credentials in this file. The file is usually stored in the same location as your project's package.json file.
-
 > [!IMPORTANT]
-> There can be only a single `registry=` line in your .npmrc file. Multiple registries are possible with [scopes](npm/scopes.md) and [upstream sources](npm/upstream-sources.md).
+> npm supports a single `registry` in your .npmrc file. Multiple registries are possible with [scopes](npm/scopes.md) and [upstream sources](npm/upstream-sources.md).
 
-#### Windows
+#### [Windows](#tab/Windows/)
 
-If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your ~/.npmrc file on a periodic basis. The easiest way to set this up is to install `vsts-npm-auth` globally (that is, `npm install -g vsts-npm-auth`), and then add a run script in your project's package.json file.
+If you're developing on Windows, we recommend using `vsts-npm-auth` to authenticate with Azure Artifacts. Run `npm install -g vsts-npm-auth` to install the package globally and then add a run script to your package.json.
 
-```json
+```JSON
 "scripts": {
     "refreshVSToken": "vsts-npm-auth -config .npmrc"
 }
 ```
 
-#### Linux/Mac
+#### [Linux/MacOS](#tab/Linux/)
 
-If you're developing on Linux or Mac, `vsts-npm-auth` isn't supported. Instead, generate a token in the following manner for your $HOME/.npmrc file.
+`vsts-npm-auth` is not supported in Linux/MacOS. In order to authenticate with Azure Artifacts, we have to create a personal access token and add it to our .npmrc file.
 
-[!INCLUDE [](./includes/npm/npmrc.md)]
+1. Copy the following code snippet to your .npmrc file.
+
+    - **Organization-scoped feed**:
+
+        ```Command
+        ; begin auth token
+        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
+        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/:username=[ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
+        ; end auth token
+        ```
+    
+    - **Project-scoped feed**:
+
+        ```Command
+        ; begin auth token
+        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/registry/:email=npm requires email to be set but doesn't use the value
+        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:username=[ENTER_ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/npm/:email=npm requires email to be set but doesn't use the value
+        ; end auth token
+        ```
+
+1. Generate a [personal access token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **packaging read and write** scopes.
+
+1. Encode your newly generated personal access token as follows:
+
+    1. Run the following command in an elevated command prompt window.
+        
+        ```Command
+        node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
+        ```
+
+    1. Paste your personal access token, and then press **Enter**.
+ 
+    1. Copy the Base64 encoded value.
+
+1. Replace the `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` placeholder in your .npmrc file with your Base64 personal access token. 
 
 ::: moniker-end
+
+::: moniker range=">=tfs-2017 <= tfs-2018"
+
+1. Select **Packages**, and then select **Connect to feed**.
+
+2. Select **npm**.
+
+3. Select **Generate npm credentials**. Copy the credentials and add them to your .npmrc file.
+
+    :::image type="content" source="../../media/tfs2018-connect-to-npm-feed.png" alt-text="Screenshot showing how generate credentials":::
+
+::: moniker-end
+
+::: moniker-end
+
+* * * 
 
 ## Build your project
 
