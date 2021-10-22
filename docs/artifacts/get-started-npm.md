@@ -1,28 +1,28 @@
 ---
-title: Use npm to store JavaScript packages
-description: Use npm to store your JavaScript packages. Create a feed, set up .npmrc files, build your project, and publish your npm package to your feed.
+title: publish and download npm packages
+description: How to set up your .npmrc config file to publish and download npm packages from your feed.
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.custom: contperf-fy20q4, conterperfq3, contperf-fy21q3
-ms.date: 06/19/2020
+ms.date: 10/22/2021
 monikerRange: '>= tfs-2017'
 "recommendations": "true"
 ---
 
 # Get started with npm packages in Azure Artifacts
 
-Azure Artifacts supports publishing and consuming npm packages to and from Azure Artifacts feeds and public registries. Use this quickstart to create your feed, set up your .npmrc file, build your project, and publish your npm packages to your feed.
+With Azure Artifacts, you can publish and download npm packages from feeds and public registries such as npmjs.com. This quickstart will guide you through creating your own feed, setting up your project, and publishing and downloading npm packages to and from your Azure Artifacts feed.
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
 ## License the Azure Artifacts extension
 
-To use Azure Artifacts, you must upgrade to Visual Studio Team Foundation Server 2017. If the Azure Artifacts extension has been removed, you can install it from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+To use Azure Artifacts in TFS, you must upgrade to Visual Studio Team Foundation Server 2017. If the Azure Artifacts extension has been removed, you can install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ### Assign licenses in Team Foundation Server
 
-Each organization gets five free licenses. If you need more than five licenses, go to [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed), and select **Get it free**.
+Each organization gets five free licenses. If you need more than five licenses, go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed), and select **Get it free**.
 
 If you aren't sure, you can select **Start 30-day free trial**. Every user in your organization is then granted access to Azure Artifacts for 30 days. After the 30-day trial period, your organization reverts back to five entitled users, and you must assign licenses to individual users. If you need additional licenses at this point, you can purchase them from Visual Studio Marketplace. If you have a license for Visual Studio Enterprise, you already have access to Azure Artifacts and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
@@ -44,29 +44,17 @@ If you aren't sure, you can select **Start 30-day free trial**. Every user in yo
 
 ## Create a feed
 
-A feed is an organizational construct that allows users to store packages and control who can access them by modifying the feed permissions.
-
-Feeds aren't dependent on the type of package. Azure Artifacts currently supports storing NuGet, npm, Maven, Python, and Universal packages in a single feed.
-
-To create a new feed, select **Create feed** from within your feed, and fill out the form.
-
-* **Name**: The feed name.
-* **Visibility**: Choose who can upload or download packages to or from your feed.
-* **Upstream sources**: If you want to add upstream sources to your feed such as *npmjs.org* or *NuGet.org*, select **Include packages from common public sources**. When upstream sources are enabled, your client can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you want to create your feed without connectivity to public registries, clear the **Upstream sources** check box. You can add them later if you choose to.
-
-When you're done, select **Create**.
+A feed is an organizational construct that allows users to store their packages and control who can access them. Azure Artifacts support storing several package types in a single feed such as NuGet, npm, Maven, Python, and Universal packages.
 
 ::: moniker range=">= azure-devops-2019"
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of the new feed dialog box in Azure DevOps 2019.](media/new-feed-dialog.png)
+:::image type="content" source="media/new-feed-dialog.png" alt-text="Screenshot showing how to create a new feed.":::
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the new feed dialog box in Team Foundation Server.](media/new-feed-dialog-azure-tfs.png)
+:::image type="content" source="media/new-feed-dialog-azure-tfs.png" alt-text="Screenshot showing how to create a new feed in TFS.":::
 
 ::: moniker-end
 
