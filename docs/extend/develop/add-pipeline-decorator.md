@@ -77,6 +77,8 @@ Let's take a look at the properties and what they're used for:
 | `ms.azure-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic build or YAML pipeline. |
 | `ms.azure-pipelines-agent-job.pre-task-tasks` | Run before specified task in a classic build or YAML pipeline. |
 | `ms.azure-pipelines-agent-job.post-task-tasks` | Run after specified task in a classic build or YAML pipeline. |
+| `ms.azure-release-pipelines-agent-job.pre-task-tasks` | Run before specified task in a in a classic RM pipeline. |
+| `ms.azure-release-pipelines-agent-job.post-task-tasks` | Run after specified task in a in a classic RM pipeline. |
 | `ms.azure-release-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic RM pipeline. |
 | `ms.azure-release-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic RM pipeline. |
 
