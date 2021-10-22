@@ -31,8 +31,7 @@ If you aren't sure, you can select **Start 30-day free trial**. Every user in yo
 
 1. From any collection in Team Foundation Server, hover over the settings menu and select **Users**. Then select **Package Management**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of the Users page in Team Foundation Server.](media/users-hub-tfs.png)
+    :::image type="content" source="media/users-hub-tfs.png" alt-text="Screenshot showing the user page in TFS":::
 
 1. Select **Assign**, enter the users you want to assign licenses, and then select **OK**.
 
@@ -56,37 +55,21 @@ You can change these settings later by editing your feed's settings.
 
 ## Set up your .npmrc files
 
-All Azure Artifacts feeds require authentication. You store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
-
 > [!NOTE]
-> `vsts-npm-auth` isn't supported on on-premises Team Foundation Server and Azure DevOps Server.
+> `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
 
-### Find your .npmrc files
+We recommend having two .npmrc files. The first one should be placed in the same directory as your package.json file. The second one should be placed in the **$home** directory (Linux/MacOS) or **$env.HOME** (Windows) to store your credentials. The npm client then will be able to look up this file and fetch your credentials for authentication. This enables you to share your config file while keeping your credentials secure.
 
-We recommend that you use two .npmrc files:
+1. Select **Artifacts**, and then select **Connect to feed**.
 
-1. One .npmrc should live at the root of your Git repo where your project's package.json file is located.
+    :::image type="content" source="media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed":::
 
-   1. From **Artifacts**, select **Connect to feed**.
+1. Select **npm**. If this is your first time using Azure Artifacts, select **Get the tools** and then follow the steps to download Node.js and setup the credential provider. 
 
-      > [!div class="mx-imgBorder"] 
-      > ![Screenshot that shows how to connect to your feed.](media/connect-to-feed-azure-devops-newnav.png)
+1. Follow the instructions in the **Project setup** to set up your project.
 
-   1. Select **npm** > **Get the tools**.
-
-   1. Follow steps 1 and 2 to download the Node.js file, npm, and the artifacts credential provider.
-
-   1. Select **Windows** if you're on a Windows Machine, or **Other** if you're on macOS or Linux.
-   
-   1. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections.
-
-      > [!div class="mx-imgBorder"] 
-      > ![Screenshot that shows the setup, restore, and publish sections to connect your feed.](media/npm-azure-devops-newnav.png)
+    :::image type="content" source="media/npm-azure-devops-newnav.png" alt-text="Screenshot showing how to set up your project":::
         
-2. On your development machine, you also have a .npmrc file in the **$home** folder for Linux or Mac systems, or in **$env.HOME** for Windows. This .npmrc file should contain credentials for all of the registries that you need to connect to. The NPM client looks at your project's .npmrc file, discovers the registry, and fetches matching credentials from **$home/.npmrc** or **$env.HOME/.npmrc**.
-
-This enables you to share the project's .npmrc file with the whole team, while keeping your credentials secure.
-
 ### Set up authentication on your development machine
 
 At this point, you should have a project-specific .npmrc file. This file contains only your feed's registry information that you discovered from the **Connect to feed** dialog box. There should be no credentials in this file. The file is usually stored in the same location as your project's package.json file.
