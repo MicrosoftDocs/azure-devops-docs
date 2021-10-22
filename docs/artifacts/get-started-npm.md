@@ -48,7 +48,7 @@ A feed is an organizational construct that allows users to store their packages 
 
 [!INCLUDE [](includes/create-feed.md)]
 
-You can change these settings later by editing the feed.
+You can change these settings later by editing your feed's settings.
 
 [!INCLUDE [edit-feed](includes/edit-feed.md)]
 
