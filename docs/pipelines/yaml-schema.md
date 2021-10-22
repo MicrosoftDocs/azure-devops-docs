@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: vijayma
-ms.date: 10/22/2021
+ms.date: 07/15/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -1842,26 +1842,6 @@ The task runs a script using cmd.exe on Windows and Bash on other platforms.
 
 # [Schema](#tab/schema)
 
-:::moniker range="azure-devops-2019"
-
-```yaml
-steps:
-- script: string  # contents of the script to run
-  displayName: string  # friendly name displayed in the UI
-  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
-  workingDirectory: string  # initial working directory for the step
-  failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
-  condition: string
-  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
-  enabled: boolean  # whether to run this step; defaults to 'true'
-  timeoutInMinutes: number
-  env: { string: string }  # list of environment variables to add
-```
-
-:::moniker-end
-
-:::moniker range=">azure-devops-2019"
-
 ```yaml
 steps:
 - script: string  # contents of the script to run
@@ -1886,10 +1866,6 @@ If you don't specify a command mode, you can shorten the `target` structure to:
   target: string  # container name or the word 'host'
 ```
 
-:::moniker-end
-
-
-
 # [Example](#tab/example)
 
 ```yaml
@@ -1900,21 +1876,8 @@ steps:
 
 ---
 
-:::moniker range="azure-devops-2019"
-
-Learn more about [conditions](process/conditions.md?tabs=yaml) and
-[timeouts](process/phases.md?tabs=yaml#timeouts).
-
-:::moniker-end
-
-:::moniker range=">azure-devops-2019"
-
 Learn more about [conditions](process/conditions.md?tabs=yaml),
 [timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
-
-:::moniker-end
-
-
 
 ## Bash
 
@@ -1922,26 +1885,6 @@ The `bash` keyword is a shortcut for the [shell script task](tasks/utility/shell
 The task runs a script in Bash on Windows, macOS, and Linux.
 
 # [Schema](#tab/schema)
-
-:::moniker range="azure-devops-2019"
-
-```yaml
-steps:
-- bash: string  # contents of the script to run
-  displayName: string  # friendly name displayed in the UI
-  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
-  workingDirectory: string  # initial working directory for the step
-  failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
-  condition: string
-  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
-  enabled: boolean  # whether to run this step; defaults to 'true'
-  timeoutInMinutes: number
-  env: { string: string }  # list of environment variables to add
-```
-
-:::moniker-end
-
-:::moniker range=">azure-devops-2019"
 
 ```yaml
 steps:
@@ -1967,10 +1910,6 @@ If you don't specify a command mode, you can shorten the `target` structure to:
   target: string  # container name or the word 'host'
 ```
 
-:::moniker-end
-
-
-
 # [Example](#tab/example)
 
 ```yaml
@@ -1985,19 +1924,8 @@ steps:
 
 ---
 
-:::moniker range="azure-devops-2019"
-
-Learn more about [conditions](process/conditions.md?tabs=yaml) and
-[timeouts](process/phases.md?tabs=yaml#timeouts).
-
-:::moniker-end
-
-:::moniker range=">azure-devops-2019"
-
 Learn more about [conditions](process/conditions.md?tabs=yaml),
 [timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
-
-:::moniker-end
 
 ## pwsh
 
@@ -2332,26 +2260,6 @@ There's a [catalog of tasks](tasks/index.md) available to choose from.
 
 # [Schema](#tab/schema)
 
-:::moniker range="azure-devops-2019"
-
-```yaml
-steps:
-- task: string  # reference to a task and version, e.g. "VSBuild@1"
-  displayName: string  # friendly name displayed in the UI
-  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
-  condition: string
-  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
-  enabled: boolean  # whether to run this step; defaults to 'true'
-  timeoutInMinutes: number
-  inputs: { string: string }  # task-specific inputs
-  env: { string: string }  # list of environment variables to add
-```
-
-
-:::moniker-end
-
-:::moniker range=">azure-devops-2019"
-
 ```yaml
 steps:
 - task: string  # reference to a task and version, e.g. "VSBuild@1"
@@ -2376,10 +2284,6 @@ If you don't specify a command mode, you can shorten the `target` structure to:
   target: string  # container name or the word 'host'
 ```
 
-:::moniker-end
-
-
-
 # [Example](#tab/example)
 
 ```yaml
@@ -2393,19 +2297,8 @@ steps:
 
 ---
 
-:::moniker range="azure-devops-2019"
-
-Learn more about [conditions](process/conditions.md?tabs=yaml) and
-[timeouts](process/phases.md?tabs=yaml#timeouts).
-
-:::moniker-end
-
-:::moniker range=">azure-devops-2019"
-
 Learn more about [conditions](process/conditions.md?tabs=yaml),
 [timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
-
-:::moniker-end
 
 ## Syntax highlighting
 
