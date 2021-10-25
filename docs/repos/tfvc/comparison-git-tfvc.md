@@ -113,7 +113,7 @@ Need more help to make a choice? These charts might help.
    You can compare branches to see which commits exist on which branches.
 
 
-   See [Use Git branches to switch contexts, suspend work, and isolate risk](../git/create-branch.md#use-branches-to-manage-development).
+   See [Use Git branches to switch contexts, suspend work, and isolate risk](../git/create-branch.md).
    :::column-end:::
 :::row-end:::
 :::row:::
