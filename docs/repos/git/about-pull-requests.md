@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 10/18/2021
+ms.date: 10/11/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -161,11 +161,11 @@ In large repos with many active contributors, this issue can be especially incon
 ## Next steps
 - [Improve code quality with branch policies](branch-policies.md)
 - [Customize and extend pull request workflows with pull request status](pull-request-status.md)
-- [Change the default branch](change-default-branch.md)
 - [Create a pull request](pull-requests.md)
-- [Copy changes with cherry-pick](cherry-pick.md)
 - [Provide reviewer guidance with pull request templates](pull-request-templates.md).
 - [View and open pull requests](view-pull-requests.md)
 - [Review pull requests](review-pull-requests.md)
 - [Pull request update notifications](pull-request-notifications.md)
 - [Complete a pull request](complete-pull-requests.md)
+- [Change the default branch](change-default-branch.md)
+- [Copy changes with cherry-pick](cherry-pick.md)
