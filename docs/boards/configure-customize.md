@@ -233,7 +233,7 @@ The following table indicates the areas you can configure and customize and the 
 :::row-end:::
 :::row:::
    :::column span="1":::
-   [Show bugs on backlogs &amp; boards (Team)](/azure/devops/organizations/settings/show-bugs-on-backlog)  
+   [Show bugs on backlogs &amp; boards (Team)](../organizations/settings/show-bugs-on-backlog.md)  
    Custom work item types, Product backlog (Process)  
    Custom work item types, Taskboard (Process)
    :::column-end:::

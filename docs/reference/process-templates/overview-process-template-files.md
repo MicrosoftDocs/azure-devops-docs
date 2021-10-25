@@ -228,7 +228,7 @@ The following table describes each plug-in file and whether or not it is support
    
    Defines the project portal based on a template for a SharePoint site. Only supported for on-premises TFS.  
    
-   > TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. Or, to add a project portal site after creating a project, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md). Creating a project from the web portal will ignore the WssTasks.xml plug-in.  
+   > TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. Or, to add a project portal site after creating a project, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md). Creating a project from the web portal will ignore the WssTasks.xml plug-in.  
     
    This plug-in also uploads the information contained in the following files and folders:
  

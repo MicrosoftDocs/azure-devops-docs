@@ -102,7 +102,7 @@ Use these shortcuts when working in Team Explorer.
    **Navigate**
  
    **Ctrl+0,a**&nbsp;&nbsp;&nbsp;Open web portal  
-   **Ctrl+0,b**&nbsp;&nbsp;&nbsp;Open [Build](/azure/devops/pipelines/get-started/what-is-azure-pipelines)  
+   **Ctrl+0,b**&nbsp;&nbsp;&nbsp;Open [Build](../../pipelines/get-started/what-is-azure-pipelines.md)  
    **Ctrl+0,c**&nbsp;&nbsp;&nbsp;Open [Connect](../../organizations/projects/connect-to-projects.md)  
    **Ctrl+0,d**&nbsp;&nbsp;&nbsp;Open [Documents](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal)  
    **Ctrl+0,e**&nbsp;&nbsp;&nbsp;Open [Branches (Git)](../../repos/git/gitquickstart.md)  

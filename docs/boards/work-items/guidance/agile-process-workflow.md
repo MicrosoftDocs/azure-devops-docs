@@ -213,7 +213,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 
    :::column-end:::
    :::column span="3":::
-   The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate [capacity charts](../../sprints/set-capacity.md), the [sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md), and the following (TFS only) reports: [Burndown and Burn Rate](/azure/devops/report/sql-reports/burndown-and-burn-rate-report), [Remaining Work](/azure/devops/report/sql-reports/remaining-work-report), and [Status on All Iterations](/azure/devops/report/sql-reports/status-on-all-iterations-report).
+   The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate [capacity charts](../../sprints/set-capacity.md), the [sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md), and the following (TFS only) reports: [Burndown and Burn Rate](../../../report/sql-reports/burndown-and-burn-rate-report.md), [Remaining Work](../../../report/sql-reports/remaining-work-report.md), and [Status on All Iterations](../../../report/sql-reports/status-on-all-iterations-report.md).
 
    If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.
 
