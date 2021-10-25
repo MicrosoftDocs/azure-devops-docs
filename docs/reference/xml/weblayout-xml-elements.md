@@ -612,7 +612,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
    Label="Submitted Date:" LabelPosition="Left"  Format="Short" />
    ```
    > [!NOTE]
-   > The date-time format displayed matches the [user profile user profile](/azure/devops/organizations/settings/set-your-preferences). The WebLayout section doesn&#39;t not accept the **Layout** element `CustomFormat` property.  
+   > The date-time format displayed matches the [user profile user profile](../../organizations/settings/set-your-preferences.md). The WebLayout section doesn&#39;t not accept the **Layout** element `CustomFormat` property.  
    :::column-end:::
 :::row-end:::
 

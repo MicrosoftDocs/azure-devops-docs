@@ -803,7 +803,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 
 <p><b>Get notified about pull requests</b></p>
-<p>Subscribe to email alerts to get notified about <a href="../repos/git/pull-requests.md#notifications" data-raw-source="[new pull requests, changes, approvals, and rejections](../repos/git/pull-requests.md#notifications)">new pull requests, changes, approvals, and rejections</a>.</p>
+<p>Subscribe to email alerts to get notified about <a href="../repos/git/pull-request-notifications.md" data-raw-source="[new pull requests, changes, approvals, and rejections](../repos/git/pull-request-notifications.md)">new pull requests, changes, approvals, and rejections</a>.</p>
 
 <p><b>Set branch policies </b></p>
 <p>To improve code quality, <a href="../repos/git/branch-policies.md" data-raw-source="[set branch policies to require code reviews or  automatically add reviewers](../repos/git/branch-policies.md)">set branch policies to require code reviews or  automatically add reviewers</a>. </p>

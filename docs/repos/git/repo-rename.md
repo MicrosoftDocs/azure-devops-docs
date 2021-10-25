@@ -5,29 +5,29 @@ description: You can rename a Git repository in a few steps. Your team will have
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 11/02/2018
-monikerRange: '>= tfs-2017'
+ms.date: 10/15/2021
+monikerRange: '>= tfs-2015'
 ---
 
 
 #  Rename a Git repository in your project
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | VS 2017 | VS 2015**
+
+[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-vs-2015-vs-2019](../includes/version-vs-2015-vs-2019.md)]
 
 You can rename a Git repository in a project from your web browser. After you rename the repo, each member of your team should take a few steps to re-enable their dev machines to connect to the repo on the server.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4sVSK]
 
->[!NOTE]
->The steps in this article refer to Azure Repos and TFS 2017 and higher. For TFS 2015, see [Rename a Git repository in TFS 2015](repo-rename-tfs2015.md).
+## Prerequisites
 
-## Rename the repo in the web
+- To rename a repository, you must have [Rename Repository permissions](set-git-repository-permissions.md#git-repository) on your Git repo.
 
-> [!IMPORTANT]
-> This step requires [Rename Repository permissions](set-git-repository-permissions.md#git-repository) on your Git repo.
+## Rename the repository
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Select **Repos**, **Files**.
+1. From the web portal, select **Repos**, **Files**.
 
    ![View your files](media/repos-navigation/repos-files.png)
 
@@ -45,9 +45,9 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. Open the project administration page while working in your project on the web and select **Version Control**.
+1. 1. From the web portal, open the project administration page for your project and select **Version Control**.
 
    ![Version control settings](media/repo-mgmt/version-control-settings.png)
 
@@ -55,14 +55,29 @@ You can rename a Git repository in a project from your web browser. After you re
 
    ![Rename a repository](media/repo-mgmt/rename-repo-2107.png)
 
-   >[!NOTE]
-   >If the **Repositories** pane is not expanded, select **>** to expand it and display the list of repositories.
+   > [!NOTE]
+   > If the **Repositories** pane is not expanded, select **>** to expand it and display the list of repositories.
    >
    >![Repositories pane](media/repo-mgmt/expand-repositories-pane.png)
 
 3. Enter a new repo name in the **Repository name** field in the dialog, then select **Rename**.
 
    ![Rename repository confirm](media/repo-mgmt/rename-repository-confirm.png)
+
+::: moniker-end
+
+::: moniker range="tfs-2015"
+
+1. Open a project (on-premises ```http://{your_server}:8080/tfs/DefaultCollection/{your_project}``` or Azure DevOps Services ```https://dev.azure.com/{your_account}/{your_project}```) in your web browser.
+
+2. Go to the control panel.
+
+   ![Administer account](media/control-panel-launch-icon.png)
+
+
+1. Rename the repo from the Version Control tab.
+
+   ![Rename a repository](media/repo-rename/AdminVC.png)
 
 ::: moniker-end
 
@@ -73,6 +88,7 @@ Git uses remote references to fetch and push changes between your local copy of 
 Each member of your team must update their local Git repos to continue connecting from their dev machines to the repo in the project. The instructions below show how to update the remotes for the **Fabrikam Mobile** repo that was renamed to **Fabrikam**.
 
 <a name="copy_remote_repo_url"></a>
+
 ### Get the new URL for the repo
 
 ::: moniker range=">= azure-devops-2019"
@@ -87,15 +103,24 @@ Each member of your team must update their local Git repos to continue connectin
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. Select **Clone** in the upper-right corner of the **Code** window and copy the **Clone URL**.
+- Select **Clone** in the upper-right corner of the **Code** window and copy the **Clone URL**.
 
    ![Retrieve the clone URL](media/repo-mgmt/clone-git-repo.png)
 
 ::: moniker-end
 
-### Update your remote in Visual Studio 2015 or 2017
+::: moniker range="tfs-2015"
+
+- Copy the repository URL to your clipboard.
+
+	![Remote URL for the repository](media/share-your-code-in-git-xcode/newrepocopycloneurl.png)
+
+::: moniker-end
+
+
+### Update your remote in Visual Studio 
 
 1. Connect to the repo.
 

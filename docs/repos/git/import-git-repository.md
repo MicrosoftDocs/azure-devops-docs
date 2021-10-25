@@ -10,7 +10,8 @@ monikerRange: '<= azure-devops'
 ---
 
 # Import a Git repo
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
+
+[!INCLUDE [version-tfs-2013-cloud](../includes/version-tfs-2013-cloud.md)]
 
 This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your project in Azure DevOps.
 
@@ -85,7 +86,7 @@ On the **Files** page of the empty Git repository, select **Import** and [enter 
 ![Import Repository into an existing repository](media/Import-Repo/ImportRepofromEmptyRepo.png)
 
 >[!NOTE]
->The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [How do I associate my commits with work items?](share-your-code-in-git-vs-2017.md#how-do-i-associate-my-commits-with-work-items)
+>The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [Link work items to commits](share-your-code-in-git-vs.md#link-work-items)
 
 ::: moniker range=">= tfs-2013"
 
@@ -216,7 +217,7 @@ git push origin --all
 > [!div class="nextstepaction"]
 > [New to Git repos? Learn more](/devops/develop/git/set-up-a-git-repository)
 
-> [!div class="nextstepaction"]
-> [Learn more about Git in the Git tutorial](gitworkflow.md)
+## Related articles
+- [Learn more about Git in the Git tutorial](gitworkflow.md)
 
 
