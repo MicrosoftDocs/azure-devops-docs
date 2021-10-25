@@ -101,7 +101,7 @@ Need more help to make a choice? These charts might help.
    
    You can get visualizations of your branch structures and where your changesets have been merged.
 
-   See [Use branches to isolate risk in Team Foundation Version Control](/azure/devops/repos/tfvc/branching-strategies-with-tfvc).
+   See [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
    :::column-end:::
    :::column span="2":::
    Branching is lightweight and path independent. Many developers create a branch for each new feature they are coding, sometimes on a daily basis. You can quickly switch from one branch to another to pivot among different variations of your codebase. You can create branches that exist only on your dev machine and share them if and when you&#39;re ready. 
@@ -113,7 +113,7 @@ Need more help to make a choice? These charts might help.
    You can compare branches to see which commits exist on which branches.
 
 
-   See [Use Git branches to switch contexts, suspend work, and isolate risk](/azure/devops/repos/git/branches?view=azure-devops&amp;tabs=visual-studio&preserve-view=true#use-branches-to-manage-development).
+   See [Use Git branches to switch contexts, suspend work, and isolate risk](../git/create-branch.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -236,7 +236,7 @@ Need more help to make a choice? These charts might help.
    Builds (automated by TFBuild)
    :::column-end:::
    :::column span="2":::
-   You can use all [TFBuild](/azure/devops/pipelines/get-started/what-is-azure-pipelines) capabilities to build any combination of content you want within the project collection.
+   You can use all [TFBuild](../../pipelines/get-started/what-is-azure-pipelines.md) capabilities to build any combination of content you want within the project collection.
    :::column-end:::
    :::column span="2":::
    You can use most TFBuild capabilities to build one project at a time, and one or more repositories at a time.
