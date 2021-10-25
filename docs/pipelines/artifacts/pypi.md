@@ -19,30 +19,29 @@ With Azure Pipelines, you can publish your Python packages to Artifacts feeds, p
 
 ## Install twine 
 
-First, you'll need to run `pip install twine` to ensure the build agent has `twine` installed.
-
 #### [YAML](#tab/yaml/)
 ```yaml
 - script: 'pip install twine'
 ```
 
-Check out the [script YAML task reference](../yaml-schema.md#script) for the schema for this command.
+See [script shortcut](../yaml-schema.md#script) for more details.
 
 #### [Classic](#tab/classic/)
-![PowerShell icon](../tasks/utility/media/powershell.png) **Utility: PowerShell**
 
-* Type
+1. From your pipeline definition, select `+` to add a new task. Search for the **PowerShell** task ![PowerShell icon](../tasks/utility/media/powershell.png).
 
-  ```
-  inline
-  ```
-* Script
+1. Select **Add** to add the task to your pipeline.
 
-  ```
-  pip install twine
-  ```
+1. Select **Inline** for your script **Type**
+
+1. Enter the following command in the script text area
+
+    ```Command
+    pip install twine
+    ```
 
 * * *
+
 ## Authenticate Azure Artifacts with twine
 
 To use `twine` to publish Python packages, you first need to set up authentication. The [Python Twine Authenticate](../tasks/package/twine-authenticate.md) task stores your authentication credentials in an environment variable (`PYPIRC_PATH`). `twine` will reference this variable later.
