@@ -124,7 +124,7 @@ Choose the process that provides the best fit for your team.
    you can track requirements, change requests, risks, and reviews.
    
    
-   This process supports [formal change management activities](/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi?viewFallbackFrom=vsts).
+   This process supports [formal change management activities](./cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts).
    Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
    
    :::column-end:::
