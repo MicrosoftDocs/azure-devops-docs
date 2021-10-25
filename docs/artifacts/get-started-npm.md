@@ -143,9 +143,7 @@ If you're developing on Windows, we recommend using `vsts-npm-auth` to authentic
 
 3. Select **Generate npm credentials**. Copy the credentials and add them to your .npmrc file.
 
-    :::image type="content" source="../../media/tfs2018-connect-to-npm-feed.png" alt-text="Screenshot showing how generate credentials":::
-
-::: moniker-end
+    :::image type="content" source="./media/tfs2018-connect-to-npm-feed.png" alt-text="Screenshot showing how generate credentials":::
 
 ::: moniker-end
 
