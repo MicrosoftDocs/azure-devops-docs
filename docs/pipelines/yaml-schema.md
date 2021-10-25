@@ -2024,13 +2024,13 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](pr
 
 ### Output stream action preferences
 
-PowerShell provides [multiple output streams](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams) that can be used to log different types of messages. The Error, Warning, Information, Verbose, and Debug streams all convey information that is useful in an automated environment such as an agent job. PowerShell allows users to assign an action to each stream whenever a message is written to it. For example, if the `Error` stream were assigned the `Stop` action, PowerShell would halt execution anytime the `Write-Error` cmdlet was called.
+PowerShell provides [multiple output streams](/powershell/module/microsoft.powershell.core/about/about_output_streams) that can be used to log different types of messages. The Error, Warning, Information, Verbose, and Debug streams all convey information that is useful in an automated environment, such as an agent job. PowerShell allows users to assign an action to each stream whenever a message is written to it. For example, if the `Error` stream were assigned the `Stop` action, PowerShell would halt execution anytime the `Write-Error` cmdlet was called.
 
-The [PowerShell task](tasks/utility/powershell.md) allows you to override the default PowerShell action for each of these output streams when your script is run. This is done by prepending a line to the top of your script that sets the stream's corresponding [preference variable](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables) to the action of choice. The following table lists the actions supported by the PowerShell task and what happens when a message is written to the stream:
+The [PowerShell task](tasks/utility/powershell.md) allows you to override the default PowerShell action for each of these output streams when your script is run. This is done by prepending a line to the top of your script that sets the stream's corresponding [preference variable](/powershell/module/microsoft.powershell.core/about/about_preference_variables) to the action of choice. The following table lists the actions supported by the PowerShell task and what happens when a message is written to the stream:
 
 | Action | Description |
 | ------ | ----------- |
-| Default | Use PowerShell's [default action](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables). |
+| Default | Use PowerShell's [default action](/powershell/module/microsoft.powershell.core/about/about_preference_variables). |
 | Stop | Prints the message to the task logs, terminates the task, and marks it as failed. |
 | Continue | Prints the message to the task logs. |
 | SilentlyContinue | Ignores the message. |
