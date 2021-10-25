@@ -142,7 +142,7 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
    **/lock**
    :::column-end:::
    :::column span="3":::
-   Specify this option to prevent other users from checking in or checking out items until you finish rolling back all associated changes. For more information, see [Understanding Lock Types](/azure/devops/repos/tfvc/understand-lock-types?viewFallbackFrom=vsts).
+   Specify this option to prevent other users from checking in or checking out items until you finish rolling back all associated changes. For more information, see [Understanding Lock Types](./understand-lock-types.md?viewFallbackFrom=vsts).
 
    Lock Options
    - **None**
