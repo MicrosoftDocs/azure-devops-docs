@@ -74,8 +74,6 @@ To use `twine` to publish your Python packages, you must first set up authentica
 
 ## Publish Python packages to Azure Artifacts feeds
 
-After you've set up authentication with the *TwineAuthenticate@1* task, you can now use *twine* to publish your Python packages to an Azure Artifacts feed.
-
 ```YAML
 - script: |
      pip install wheel
@@ -94,4 +92,10 @@ After you've set up authentication with the *TwineAuthenticate@1* task, you can 
 ```
 
 > [!WARNING]
-> We strongly recommend **NOT** checking any credentials into source control.
+> Make sure you are not checking your credentials into source control.
+
+## Related articles
+
+- [Publish and download pipeline Artifacts](./pipeline-artifacts.md)
+- [Artifacts in Azure Pipelines](./build-artifacts.md)
+- [Release artifacts and artifact sources](../release/artifacts.md)
