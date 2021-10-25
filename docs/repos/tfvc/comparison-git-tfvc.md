@@ -5,7 +5,7 @@ description: Choosing which version control to use in Azure Repos
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
 ms.technology: devops-code-tfvc
 ms.topic: conceptual
-ms.date: 05/12/2017
+ms.date: 10/18/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -21,9 +21,9 @@ and [Team Foundation Version Control](./what-is-tfvc.md) (TFVC).
 <a name="tfvc_or_git_summary"></a>
 ## Which version control system should I use?
  
-Git is the default version control provider for new projects. You should use Git for version control in your projects unless you have a specific need for centralized version control features in TFVC.  
+Git is the default version control provider for new projects. You should use Git for version control in your projects and begin to move your existing TFVC projects to Git. TFVC is considered feature complete. Azure DevOps will maintain compatability with TFVC, but Git will receive all future investment.
 
-You can use TFVC repos with Git in the same Project so it's easy to add TFVC later if you need centralized version control. To setup a new repo type for an existing project [use these instructions](../../repos/git/team-projects.md).
+You can use TFVC repos with Git in the same project, so it's easy to add TFVC later if you need centralized version control. To set up a new repo type for an existing project [use these instructions](../../repos/git/team-projects.md).
 
 ### Git (distributed)
 
@@ -101,7 +101,7 @@ Need more help to make a choice? These charts might help.
    
    You can get visualizations of your branch structures and where your changesets have been merged.
 
-   See [Use branches to isolate risk in Team Foundation Version Control](/azure/devops/repos/tfvc/branching-strategies-with-tfvc).
+   See [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
    :::column-end:::
    :::column span="2":::
    Branching is lightweight and path independent. Many developers create a branch for each new feature they are coding, sometimes on a daily basis. You can quickly switch from one branch to another to pivot among different variations of your codebase. You can create branches that exist only on your dev machine and share them if and when you&#39;re ready. 
@@ -113,7 +113,7 @@ Need more help to make a choice? These charts might help.
    You can compare branches to see which commits exist on which branches.
 
 
-   See [Use Git branches to switch contexts, suspend work, and isolate risk](/azure/devops/repos/git/branches?view=azure-devops&amp;tabs=visual-studio&preserve-view=true#use-branches-to-manage-development).
+   See [Use Git branches to switch contexts, suspend work, and isolate risk](../git/create-branch.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -236,7 +236,7 @@ Need more help to make a choice? These charts might help.
    Builds (automated by TFBuild)
    :::column-end:::
    :::column span="2":::
-   You can use all [TFBuild](/azure/devops/pipelines/get-started/what-is-azure-pipelines) capabilities to build any combination of content you want within the project collection.
+   You can use all [TFBuild](../../pipelines/get-started/what-is-azure-pipelines.md) capabilities to build any combination of content you want within the project collection.
    :::column-end:::
    :::column span="2":::
    You can use most TFBuild capabilities to build one project at a time, and one or more repositories at a time.
@@ -310,7 +310,7 @@ Need more help to make a choice? These charts might help.
    Visual Studio, Eclipse (with [Team Explorer Everywhere](/previous-versions/visualstudio/visual-studio-2013/gg413285(v=vs.120)))
    :::column-end:::
    :::column span="2":::
-   Visual Studio, Eclipse, and other third-party tools
+   Visual Studio, Visual Studio Code, Eclipse, and other third-party tools
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -348,28 +348,13 @@ Need more help to make a choice? These charts might help.
 :::row-end:::
 :::row:::
    :::column span="1":::
-   User interface
-   :::column-end:::
-   :::column span="2":::
- - **Visual Studio:** Offers all commonly used features and many advanced features.
- - **TFS web portal:** Can browse, comment, annotate, and see history of the codebase.
- - **TF Command prompt:** Installed with Visual Studio. Used for advanced, administrative, and other less common tasks. 
-   :::column-end:::
-   :::column span="2":::
- - **Visual Studio:** Offers many commonly used features. Features for some common tasks are not yet available.
- - **TFS web portal:** Can browse, comment, annotate, and see history of the codebase.
- - **Third-party command prompt:** You can install it from Visual Studio. Used for some common and many less common tasks.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
    Visual Studio compatibility
    :::column-end:::
    :::column span="2":::
    You can use all supported [previous versions of Visual Studio](/azure/devops/server/requirements).
    :::column-end:::
    :::column span="2":::
-   Git is built in with Visual Studio 2017, 2015, and 2013.
+   Visual Studio 2013+
 
    You can also use Visual Studio 2012 Update 4 (you must also install [Visual Studio Tools for Git](https://go.microsoft.com/fwlink/?LinkID=275845)).
    :::column-end:::

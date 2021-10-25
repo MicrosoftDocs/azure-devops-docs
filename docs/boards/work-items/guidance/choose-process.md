@@ -124,7 +124,7 @@ Choose the process that provides the best fit for your team.
    you can track requirements, change requests, risks, and reviews.
    
    
-   This process supports [formal change management activities](/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi?viewFallbackFrom=vsts).
+   This process supports [formal change management activities](./cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts).
    Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
    
    :::column-end:::
@@ -609,6 +609,5 @@ You can customize a process before or after you create a project that uses the p
 - [Upload/download process templates](manage-process-templates.md)  
 - [Changes made to process templates](changes-to-process-templates.md)  
 - [Configure features after an Azure DevOps Server upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)  
-
 
 If you have more questions, see [Azure DevOps support page](https://azure.microsoft.com/support/devops/).

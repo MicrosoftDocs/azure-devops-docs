@@ -5,10 +5,10 @@ ms.custom: seodec18
 description: Get a free 30-day trial for Azure Test Plans (formerly Test Manager).
 ms.technology: devops-billing
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
-ms.topic: quickstart
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 10/14/2021
+ms.date: 10/18/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -24,7 +24,7 @@ Learn how to try Azure Test Plans for free for 30 days.
 
 You must have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md).
 
-## Try Azure Test Plans 
+## Try Azure Test Plans
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
@@ -43,7 +43,7 @@ You must have [Project Collection Administrator or organization Owner permission
 
     ![Start 30-day Test Plans trial, select Start free trial](media/try-additional-features/start-thirty-day-test-plans-trial.png)
 
-6. (Optional) Assign users **Basic** or **Basic + Test Plans**, and they can access Test Plans during the trial. Charges for users don't start until the trial expires.
+6. Assign users **Basic + Test Plans**, so they can access Test Plans during the trial. Charges for users don't start until the trial expires.
 
 ## Next steps
 

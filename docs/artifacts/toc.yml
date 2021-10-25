@@ -36,7 +36,7 @@
     - name: Publish to a NuGet feed (YAML/Classic)
       href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
       displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline 
-    - name: Connect to a feed and publish packages (CLI)
+    - name: Publish NuGet packages (CLI)
       href: nuget/publish.md
       displayName: publish package, nuget feed, cli
     - name: Publish to NuGet.org
@@ -45,7 +45,7 @@
     - name: Install NuGet packages with Visual Studio
       href: nuget/consume.md
       displayName: install package, nuget, visual studio
-    - name: Use NuGet with Artifacts feeds
+    - name: Project setup (NuGet.exe)
       href: nuget/nuget-exe.md
       displayName: nuget package, artifacts feeds, publish packages, download packages 
     - name: Use dotnet with Artifacts feeds
@@ -213,5 +213,5 @@
     href: /rest/api/azure/devops/index
     displayName: api, reference 
   - name: Azure DevOps CLI
-    href: /azure/devops/cli # Don't use .md link here because it binds to the artifacts TOC
+    href: ../cli/index.md
     displayName: cli, reference
