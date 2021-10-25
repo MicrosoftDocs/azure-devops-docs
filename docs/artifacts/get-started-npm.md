@@ -1,6 +1,6 @@
 ---
 title: publish and download npm packages
-description: How to set up your .npmrc config file to publish and download npm packages from your feed.
+description: How to set up your .npmrc config file to publish and download npm packages
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
@@ -64,7 +64,7 @@ We recommend having two .npmrc files. The first one should be placed in the same
 
     :::image type="content" source="media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed":::
 
-1. Select **npm**. If this is your first time using Azure Artifacts, select **Get the tools** and then follow the steps to download Node.js and setup the credential provider. 
+1. Select **npm**. If this is your first time using Azure Artifacts, select **Get the tools** and then follow the steps to download Node.js and set up the credential provider. 
 
 1. Follow the instructions in the **Project setup** to set up your project.
 
@@ -149,34 +149,24 @@ If you're developing on Windows, we recommend using `vsts-npm-auth` to authentic
 
 * * * 
 
-## Build your project
+## Publish packages
 
-At this point, your project should have a package.json file and a .npmrc file in the same folder. Run `npm install` from the directory that contains both of these files. npm discovers your feed in the .npmrc file in the current working directory. It then fetches the credentials from your home directory's .npmrc file that you configured in the "Create a feed" section.
+To publish your npm package, run the following command in your project directory
 
-> [!NOTE]
-> If you are using Yarn, run the following command to set the yarn registry: 
->
-> `yarn config set registry "https://pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/"`
-
-
-## Publish npm packages
-
-You can now publish the npm package:
-
-1. Browse to the directory that contains your package's package.json file.
-
-1. Run `npm publish`.
-
-This command authenticates to the feed by using the .npmrc configuration files that you had to set up earlier. For more information, see the [npm CLI docs](https://docs.npmjs.com/cli/publish).
-
-Your npm package should now be available in your feed.
+```Command
+npm publish
+```
 
 > [!IMPORTANT]
-> Ensure that your working folder has an `.npmrc` file with a `registry=` line, as described in the **Connect to feed** screen in your feed. The build doesn't support using the `publishConfig` property to specify the registry to which you're publishing. If you include the `publishConfig` property in your package.json file, the build might fail with an unrelated authentication error.
+> Using the `publishConfig` property to override the registry config param at publish-time is not supported. 
 
-## Download npm packages
+## Restore packages
 
-[!INCLUDE [](includes/npm/install.md)]
+To restore an npm package, run the following command in your project directory
+
+```Command
+npm install --save <package>
+```
 
 ## Next steps
 
