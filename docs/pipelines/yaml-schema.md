@@ -2037,13 +2037,13 @@ The [PowerShell task](tasks/utility/powershell.md) allows you to override the de
 
 The following table lists the output streams supported by the PowerShell task and their default actions:
 
-| Stream | Default Action |
+| Stream | Default action |
 | ------ | -------------- |
-| [Error](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#error-stream) | Stop |
-| [Warning](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#warning-stream) | [Default](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables#warningpreference) |
-| [Information](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#information-stream)* | [Default](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables#informationpreference) |
-| [Verbose](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#verbose-stream) | [Default](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables#verbosepreference) |
-| [Debug](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_output_streams#debug-stream) | [Default](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables#debugpreference) |
+| [Error](/powershell/module/microsoft.powershell.core/about/about_output_streams#error-stream) | Stop |
+| [Warning](/powershell/module/microsoft.powershell.core/about/about_output_streams#warning-stream) | [Default](/powershell/module/microsoft.powershell.core/about/about_preference_variables#warningpreference) |
+| [Information](/powershell/module/microsoft.powershell.core/about/about_output_streams#information-stream)* | [Default](/powershell/module/microsoft.powershell.core/about/about_preference_variables#informationpreference) |
+| [Verbose](/powershell/module/microsoft.powershell.core/about/about_output_streams#verbose-stream) | [Default](/powershell/module/microsoft.powershell.core/about/about_preference_variables#verbosepreference) |
+| [Debug](/powershell/module/microsoft.powershell.core/about/about_output_streams#debug-stream) | [Default](/powershell/module/microsoft.powershell.core/about/about_preference_variables#debugpreference) |
 
 \* Not supported in PowerShell 3.0.
 
