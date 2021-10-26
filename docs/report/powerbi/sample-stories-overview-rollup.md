@@ -1,7 +1,7 @@
 ---
 title: Requirements tracking, Stories overview rollup report 
 titleSuffix: Azure DevOps
-description: Use sample Power BI and OData queries to generate a one level roll-up report of aggregated metrics for work progress and status of tests and bugs.
+description: Learn how to use sample Power BI and OData queries to generate a one level roll-up report of aggregated metrics for work progress and status of tests and bugs.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
 ms.author: shdalv
@@ -9,7 +9,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'
-ms.date: 06/22/2020
+ms.date: 10/12/2021
 ---
 
 # Requirements tracking rollup sample report
