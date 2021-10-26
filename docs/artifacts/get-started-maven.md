@@ -49,6 +49,9 @@ _Already have a feed?_ [Skip to the next step](#setup-your-POM-and-settings-.xml
 
 [!INCLUDE [](includes/maven/publish.md)]
 
+> [IMPORTANT]
+> In order to automatically authenticate with your Maven feed, you must set the `mavenAuthenticateFeed` argument to true in the [Maven task](../pipelines/tasks/build/maven.md).
+
 <a name="consume-in-visual-studio"></a>
 
 ## Install an artifact from your feed
@@ -56,11 +59,6 @@ _Already have a feed?_ [Skip to the next step](#setup-your-POM-and-settings-.xml
 [!INCLUDE [](includes/maven/install.md)]
 
 <a name="automate-with-continuous-integration"></a>
-
-## Automate the process with continuous integration
-
-You can use continuous integration systems such as Team Build to automate the installation and publishing of your Maven artifacts. 
-To get started with continuous integration, see the [Maven in Team Build guidance](../pipelines/artifacts/maven.md).
 
 ## What's next?
 

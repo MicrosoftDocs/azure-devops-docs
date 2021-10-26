@@ -1,12 +1,12 @@
 ---
 title: Address inaccuracies published for summary values 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps
+description: Learn how to correct reports with hours that are counted twice.
 ms.technology: devops-analytics
 ms.topic: troubleshooting
-description: Corrects the reports with hours that are counted twice with this procedure - Team Foundation Server 
 ms.assetid: 09e8e02d-9ecb-4012-9ee0-cebb89372096
 ms.author: kaelli
-ms.date: 10/31/2017
+ms.date: 10/14/2021
 ---
 
 
@@ -19,13 +19,13 @@ If you see that hours are counted twice in reports that contain task hours, you 
 > [!NOTE]  
 >  When you use Office Project to create parent and child tasks, it assigns parent tasks the rollup of hours that are defined for all its child tasks. Rollup hours are not published to Team Foundation so that the hours are not double-counted in certain reports. The Microsoft Project mapping file attribute, **IfSummaryRefreshOnly**, suppresses the publication to Team Foundation of the hours that are assigned to summary tasks. You can view the rollup of hours for summary tasks in Office Project but not in Team Foundation. For more information, see [Customize the Microsoft Project field mapping file](/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields).  
   
- When both summary tasks and their child tasks contain hours in the effort fields, you essentially have double-counting of the level of task effort. To address these inaccuracies, you must clear the **Original Estimate** (or **Baseline Work** for team projects that have been upgraded), **Remaining Work**, and **Completed Work** fields for the summary or parent tasks.  
+ When both summary tasks and their child tasks contain hours in the effort fields, you essentially have a double-counting of the level of effort a task requires. To address these inaccuracies, you must clear the **Original Estimate** (or **Baseline Work** for team projects that have been upgraded), **Remaining Work**, and **Completed Work** fields for the summary or parent tasks.  
   
  **Required Permissions**  
   
- To perform this procedure, you must be a member of the **Contributors** group or your **View work items in this node** and **Edit work items in this node** permissions must be set to **Allow**. For more information, see [Permission reference](../../organizations/security/set-project-collection-level-permissions.md).  
+ To carry out this procedure, you must be a member of the **Contributors** group or your **View work items in this node** and **Edit work items in this node** permissions must be set to **Allow**. For more information, see [Permission reference](../../organizations/security/set-project-collection-level-permissions.md).  
   
-### To clear the hour fields of parent or summary tasks  
+## Clear the hour fields of parent or summary tasks
   
 1.  In Team Explorer, expand the **Work Items** node for your team project, and locate the **Work Items with Summary Values** team query.  
   
@@ -42,7 +42,7 @@ If you see that hours are counted twice in reports that contain task hours, you 
     > [!IMPORTANT]  
     >  Export the query results to Office Excel with the rows collapsed. This condition exports only the parent or summary tasks.  
   
-6.  In the Excel document, for the area and iteration paths that you are managing, clear the values in the following three columns:  
+6.  In the Excel document, for the area and iteration paths that you're managing, clear the values in the following three columns:  
   
     -   **Original Estimate**  
     -   **Remaining Work**  
@@ -61,6 +61,7 @@ If you see that hours are counted twice in reports that contain task hours, you 
   
 10. Verify that the changes have been picked up by viewing the Progress dashboard or other work report.  
   
-## Related notes 
+## Related articles 
+
  [Add or change Project-to-TFS field mapping](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file)   
- [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
+ [Create your backlog and tasks using Project](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint)

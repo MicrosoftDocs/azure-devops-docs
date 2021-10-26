@@ -96,10 +96,8 @@ Yes. You can provide access to Stakeholders who have no client access license fo
 
 Yes. You can connect to a project from one of the following clients:
 
-- [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) (requires Team Foundation add-in)  
-- [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)  (requires Team Foundation add-in)  
+- [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) (requires Azure DevOps Office Integration add-in)  
 - [Project Professional](/previous-versions/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server)
-- [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md) (requires Team Foundation add-in)  
 - [Azure Test Plans](/previous-versions/jj635157(v=vs.140))  
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)
 - [Microsoft Feedback Client](../project/feedback/give-feedback.md)  
@@ -108,8 +106,8 @@ Yes. You can connect to a project from one of the following clients:
 
 ::: moniker range="tfs-2017"
 
->[!NOTE]  
->Native support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See [Synchronize TFS with Project Server](/previous-versions/azure/devops/reference/tfs-ps-sync/sync-ps-tfs) for details.  
+> [!NOTE]  
+> Native support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See [Synchronize TFS with Project Server](/previous-versions/azure/devops/reference/tfs-ps-sync/sync-ps-tfs) for details.  
 >Test Manager is deprecated for TFS 2017.
 
 You can also find several open-source clients that have been added to [Marketplace extensions](https://marketplace.visualstudio.com). For example, you can install extensions to Visual Studio that support additional features:

@@ -54,7 +54,7 @@ Flaky test management supports system and custom detection.
    > [!Note]
    > Once a test is marked as flaky, the data is available for all pipelines for that branch to assist with troubleshooting in every pipeline. 
 
-- **Custom detection**: You can integrate your own flaky detection mechanism with Azure Pipelines and use the reporting capability. With custom detection, you need to update the test results metadata for flaky tests. For details, see [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result%20meta%20data/update). 
+- **Custom detection**: You can integrate your own flaky detection mechanism with Azure Pipelines and use the reporting capability. With custom detection, you need to update the test results metadata for flaky tests. For details, see [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result-meta-data/update). 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Test Management, Flaky test detection enabled, Custom detection.](media/flaky-test-management/custom-detection.png) 
@@ -99,4 +99,4 @@ You can create bugs to manage flaky test debt. If you create or add to bug for a
 - [Review test results](review-continuous-test-results-after-build.md)
 - [Visual Studio Test task](../tasks/test/vstest.md)
 - [Publish Test Results task](../tasks/test/publish-test-results.md?tabs=yaml)
-- [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result%20meta%20data/update)
+- [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result-meta-data/update)

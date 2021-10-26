@@ -255,7 +255,7 @@ Work item rules do not exist as a single collection. The rules are actually dyna
 
 In general, all work items are validated by the rule engine when users modify the work item. However, to support certain scenarios, users assigned the **Bypass rules on work item updates** project-level permission can save work items without rules being evaluated. 
 
-Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).
+Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work-items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).
 
 
 <a name="system"></a>

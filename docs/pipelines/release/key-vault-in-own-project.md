@@ -2,7 +2,7 @@
 title: Query and use Azure Key Vault secrets in your Pipeline
 description: How to set up Azure Key vaults in your project and use it in your Azure Pipelines
 ms.topic: tutorial
-ms.date: 06/30/2021
+ms.date: 08/26/2021
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
@@ -113,8 +113,8 @@ steps:
   inputs:
     azureSubscription: 'repo-kv-demo'                    ## YOUR_SERVICE_CONNECTION_NAME
     KeyVaultName: 'kv-demo-repo'                         ## YOUR_KEY_VAULT_NAME
-    SecretsFilter: 'secretDemo'                          ## YOUR_SECRET_NAME
-    RunAsPreJob: false
+    SecretsFilter: 'secretDemo'                          ## YOUR_SECRET_NAME. Default value: *
+    RunAsPreJob: false                                   ## Make the secret(s) available to the whole job
 
 - task: DotNetCoreCLI@2
   inputs:
@@ -139,6 +139,9 @@ The output from the last bash command should look like this:
 ```
 Secret Found! ***
 ```
+
+> [!NOTE]
+> If you want to query for multiple secrets from your Azure Key Vault, use the `SecretsFilter` argument to pass a comma-separated list of secret names: *'secret1, secret2'*.
 
 ## Related articles
 

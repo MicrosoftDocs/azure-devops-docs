@@ -1,6 +1,6 @@
 ---
 title: Publish and consume build artifacts
-description: How to use Artifacts in Azure pipelines
+description: How to use Artifacts in Azure Pipelines
 ms.custom: seodec18
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 # Artifacts in Azure Pipelines
 
 > [!NOTE]
-> We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster output storage speeds. 
+> We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster performance. 
 
 Azure Artifacts is a service that enables teams to use feeds and upstream sources to manage their dependencies. You can use Azure Pipelines to publish and consume different types of artifacts as part of your CI/CD workflow.
 
@@ -315,4 +315,4 @@ If you're using TFS 2015 RTM, the steps in the preceding examples are not availa
 
 - [Publish and download artifacts in Azure Pipelines](./pipeline-artifacts.md)
 - [Define your multi-stage classic pipeline](../release/define-multistage-release-process.md)
-- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/en-us/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)
+- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)

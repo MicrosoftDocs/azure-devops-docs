@@ -129,7 +129,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 1. Type the name of the user account into the text box. You can enter several identities into the text box, separated by commas. Specify individual emails, groups defined in an existing Azure Active Directory  or existing Azure DevOps groups. The system automatically searches for matches. Choose the matches that meet your requirements.
 
-    <img src="media/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" />
+    <img src="media/project-level-permissions-add-a-user.png" alt="Add users and group dialog" />
 
 2. Choose **Save changes**.
 

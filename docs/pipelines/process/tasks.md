@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 09/25/2020
+ms.date: 10/22/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -124,7 +124,21 @@ Each task offers you some **Control Options**.
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops-2019"
+
+Control options are available as keys on the `task` section.
+
+```yaml
+- task: string  # reference to a task and version, e.g. "VSBuild@1"
+  condition: expression     # see below
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean          # whether or not to run this step; defaults to 'true'
+  timeoutInMinutes: number  # how long to wait before timing out the task
+```
+
+::: moniker-end
+
+::: moniker range=">azure-devops-2019"
 
 Control options are available as keys on the `task` section.
 
@@ -136,6 +150,15 @@ Control options are available as keys on the `task` section.
   timeoutInMinutes: number  # how long to wait before timing out the task
   target: string            # 'host' or the name of a container resource to target
 ```
+
+::: moniker-end
+
+:::moniker range=">= azure-devops-2019"
+
+> [!NOTE]
+> A given task or job can't unilaterally decide whether the job/stage continues. What it can do is offer a status of **succeeded** or **failed**, and downstream tasks/jobs each have a condition computation that lets them decide whether to run or not. The default condition which is effectively "run if we're in a successful state".
+> 
+> **Continue on error** alters this in a subtle way. It effectively "tricks" all downstream steps/jobs into treating any result as "success" for the purposes of making that decision. Or to put it another way, it says "don't consider the failure of this task when you're making a decision about the condition of the containing structure".
 
 The timeout period begins when the task starts running. It does not include the
 time the task is queued or is waiting for an agent.
@@ -162,6 +185,10 @@ steps:
 
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
+
+::: moniker-end
+
+:::moniker range="> azure-devops-2019"
 
 ### Step target
 
@@ -237,6 +264,65 @@ Select this option if you want subsequent tasks in the same job to run even if t
 Select this check box if you want the task to run even if the build or deployment is failing.
 
 * * *
+
+
+
+## Environment variables
+
+#### [YAML](#tab/yaml/)
+
+:::moniker range="< azure-devops-2019"
+
+YAML pipelines are supported in Azure DevOps Server 2019 and higher.
+
+:::moniker-end
+
+:::moniker range=">= azure-devops-2019"
+
+Each task has an `env` property that is a list of string pairs that represent environment variables mapped into the task process.
+
+```yml
+task: AzureCLI@2
+displayName: Azure CLI
+inputs: # Specific to each task
+env:
+  ENV_VARIABLE_NAME: value
+  ENV_VARIABLE_NAME2: value
+  ...
+```
+
+The following example runs the `script` step which is a shortcut for the [Command line task](../tasks/utility/command-line.md), followed by the equivalent task syntax. This example assigns a value to the `AZURE_DEVOPS_EXT_PAT` environment variable, which is used to authenticating with Azure DevOps CLI.
+
+```yml
+# Using the script shortcut syntax
+- script: az pipelines variable-group list --output table
+  env:
+    AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
+  displayName: 'List variable groups using the script step'
+
+# Using the task syntax
+- task: CmdLine@2
+  inputs:
+    script: az pipelines variable-group list --output table
+  env:
+    AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
+  displayName: 'List variable groups using the command line task'
+
+```
+
+:::moniker-end
+
+
+#### [Classic](#tab/classic/)
+
+You can work with environment variables using the **Environment Variables** section of the task editor.
+
+:::image type="content" source="media/tasks/task-environment-variables.png" alt-text="Task environment variables.":::
+
+
+* * *
+
+
 <h2 id="tool-installers">Build tool installers (Azure Pipelines)</h2>
 
 Tool installers enable your build pipeline to install and control your dependencies. Specifically, you can:

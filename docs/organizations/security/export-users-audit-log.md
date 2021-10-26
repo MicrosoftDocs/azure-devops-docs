@@ -145,11 +145,11 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 1. From the web portal home page for a project, choose the :::image type="icon" source="/azure/devops/media/icons/gear_icon.png" border="false"::: gear icon and select **Server settings**. 
 
-	<img src="media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" />  
 
 2. Choose **Access levels**, and then **Export audit log**. 
 
-	<img src="media/export-users-audit/export-audit-log-tfs.png" alt="Control panel, admin context, Export audit log" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/export-users-audit/export-audit-log-tfs.png" alt="Control panel, admin context, Export audit log" />  
 
 	> [!NOTE]
 	> If you're not a member of the Team Foundation Server Administrators group, the link to the **Access levels** page won't appear. 

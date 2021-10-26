@@ -23,7 +23,7 @@ sections:
     questions: 
       - question: Why can't users access some features?
         answer: |
-           They may need a different [access level](access-levels.md#supported-access-levels) assigned. This is in addition to permissions granted through security groups. For example, [Stakeholder](access-levels.md#stakeholder-access) access level provides partial support to select features, allowing users to view and modify work items, but not to use all features.
+           They may need a different [access level](access-levels.md#supported-access-levels) assigned. This is in addition to permissions granted through security groups. For example, [Stakeholder access](stakeholder-access.md) access level provides partial support to select features, allowing users to view and modify work items, but not to use all features.
 
       - question: How do I find my administrator? 
         answer: |

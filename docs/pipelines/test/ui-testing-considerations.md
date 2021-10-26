@@ -39,7 +39,7 @@ When running Selenium tests for a web app, you can launch the browser in two way
    components being visible. While this mode is obviously not useful for browsing the web,
    it is useful for running automated tests in an unattended manner in a CI/CD pipeline.
    [Chrome](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md)
-   and [Firefox](https://developer.mozilla.org/docs/Mozilla/Firefox/Headless_mode) browsers can be run in headless mode.
+   and [Firefox](https://developer.mozilla.org/docs/Mozilla/Firefox) browsers can be run in headless mode.
 	
    This mode generally consumes less resources on the machine because the UI is not
    rendered and tests run faster. As a result, potentially more tests can be run in

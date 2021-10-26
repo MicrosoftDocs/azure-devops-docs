@@ -33,14 +33,14 @@ can uninstall or disable extensions.
 
    **TFS 2015 Update 3**
 
-   <img alt="Manage extensions in TFS 2015 Update 3." src="../media/manage-extensions.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Manage extensions in TFS 2015 Update 3." src="../media/manage-extensions.png" />
 
    **TFS 2017**
 
-   <img alt="Manage extensions" src="../media/manage-extensions2-new.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Manage extensions" src="../media/manage-extensions2-new.png" />
 
 3. On the extensions tab, select the extension, and then uninstall or disable it.
 
-   <img alt="Uninstall or disable an extension" src="../media/uninstall-disable.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Uninstall or disable an extension" src="../media/uninstall-disable.png" />
 
    [[Need help?](../faq-extensions.yml)]

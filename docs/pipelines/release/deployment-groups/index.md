@@ -52,6 +52,9 @@ After setting up your target servers, the script should return the following mes
 The tags you assign to your target servers allow you to limit deployment to specific servers in a [Deployment group job](../../process/deployment-group-phases.md).
 A tag is limited to 256 characters, but there is no limit to the number of tags you can use.
 
+> [!NOTE]
+> A deployment pool is a set of target servers available to the organization (org-scoped). When you create a new deployment pool for projects in your organization, a corresponding deployment group is automatically provisioned for each project. The deployment groups will have the same target servers as the deployment pool.
+
 ## Set up agents on deployment groups
 
 Every target server in the deployment group requires a deployment agent. You can install an agent on your target servers in three different ways:

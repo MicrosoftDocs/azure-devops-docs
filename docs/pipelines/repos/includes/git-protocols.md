@@ -11,4 +11,4 @@ ms.date: 02/13/2020
 
 The agent supports HTTPS.
 
-The agent does not yet support SSH. See [Allow build to use SSH authentication while checking out Git submodules](https://social.msdn.microsoft.com/Forums/en-US/cdaf0fda-259c-4efe-8381-50309b2973fd/visual-studio-team-service-build-repositories-with-sub-modules-using-ssh?forum=TFService).
+The agent does not yet support SSH. See [Allow build to use SSH authentication while checking out Git submodules](https://social.msdn.microsoft.com/Forums/cdaf0fda-259c-4efe-8381-50309b2973fd/visual-studio-team-service-build-repositories-with-sub-modules-using-ssh?forum=TFService).

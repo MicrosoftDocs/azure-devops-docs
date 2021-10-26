@@ -5,8 +5,9 @@ ms.technology: devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.reviewer: amullans
-ms.date: 07/08/2020
+ms.date: 08/31/2021
 monikerRange: 'azure-devops'
+"recommendations": "true"
 ---
 
 # Use Azure Artifacts as a private PowerShell repository
@@ -233,7 +234,10 @@ Our PowerShell module is now available in our feed.
 
 We now have a private repository within Azure Artifacts that we can push our PowerShell modules to and we have a module that we can install. In the next step, we will connect to our new Azure Artifacts feed so we can publish our own modules as well as install other modules published by members on our team.
 
-1. Open an elevated PowerShell prompt
+> [!IMPORTANT]
+> PowerShell does not support version 3 of NuGet.
+
+1. Open an elevated PowerShell prompt window.
 
 2. Set up authentication to access Azure Artifacts feeds. Replace the placeholders with your personal access token and email:
 
@@ -247,24 +251,34 @@ We now have a private repository within Azure Artifacts that we can push our Pow
 
 3. Register your PowerShell repository. The `SourceLocation` link can also be found by selecting **Connect to Feed** then **NuGet.exe** from the feed's page in Azure Artifacts.
 
-    > [!NOTE]
-    > For organization-scoped feeds, omit `<project_name>` from the PublishLocation and SourceLocation URLs.
+    - Project-scoped feed:
 
     ```powershell
         Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
     
-    > [!IMPORTANT]
-    > PowerShell does not support version 3 of NuGet.
+    - Org-scoped feed:
+
+    ```powershell
+    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+    ```
     
     If you're still using the older `visualstudio.com` URLs, use the following command instead:
+
+    - Project-scoped feed:
 
     ```powershell
         Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<org_name>.pkgs.visualstudio.com/<project_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://<org_name>.pkgs.visualstudio.com/<project_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
    
+    - Org-scoped feed:
+    
+    ```powershell
+        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+    ```
+
     > [!NOTE]
-    > In some versions of PowerShell, you must restart with a new session after you run the `Register-PSRepository` cmdlet to avoid the `Unable to resolve package source` warning. 
+    > In some versions of PowerShell, you must start a new session after you run the `Register-PSRepository` cmdlet to avoid the `Unable to resolve package source` warning. 
 
 4. To confirm that the repository was registered successfully run the `Get-PSRepository` cmdlet. This command gets all module repositories registered for the current user:
 
@@ -295,3 +309,9 @@ We now have our private PowerShell repository to publish and download our packag
 ## Credit
 
 Credit to this [article on Medium](https://medium.com/@jsrice7391/using-vsts-for-your-companys-private-powershell-library-e333b15d58c8) that was used as a source for this tutorial.
+
+## Related articles
+
+- [Project-scoped vs org-coped feeds](../feeds/project-scoped-feeds.md)
+- [Feed permissions](../feeds/feed-permissions.md)
+- [Delete and recover packages](../how-to/delete-and-recover-packages.md)

@@ -55,7 +55,7 @@ Create a Jenkins service connection from the **Service connections** section of 
 In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 ::: moniker-end
 
-For more information, see [Jenkins service connection](../library/service-endpoints.md#sep-jenkins).
+For more information, see [Jenkins service connection](../library/service-endpoints.md#jenkins-service-connection).
 If you are not familiar with the general concepts in this section, see
 [Accessing your project settings](../../project/navigation/go-to-service-page.md#open-project-settings)
 and [Creating and using a service connection](../library/service-endpoints.md).

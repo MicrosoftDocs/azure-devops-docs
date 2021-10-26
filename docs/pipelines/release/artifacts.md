@@ -176,7 +176,7 @@ By default, the releases execute in with a collection level Job authorization sc
 
 ## Artifact sources - Jenkins
 
-To consume Jenkins artifacts, you must create a service connection with credentials to connect to your Jenkins server. For more information, see [service connections](../library/service-endpoints.md) and [Jenkins service connection](../library/service-endpoints.md#sep-jenkins). You can then link a Jenkins project to a release pipeline. The Jenkins project must be configured with a post build action to publish the artifacts.
+To consume Jenkins artifacts, you must create a service connection with credentials to connect to your Jenkins server. For more information, see [service connections](../library/service-endpoints.md) and [Jenkins service connection](../library/service-endpoints.md#jenkins-service-connection). You can then link a Jenkins project to a release pipeline. The Jenkins project must be configured with a post build action to publish the artifacts.
 
 The following features are available when using Jenkins sources:
 
@@ -239,16 +239,16 @@ The following features are available when using Azure Artifacts sources:
 
 <a id="mavensnapshots"></a>
 
-### Handling Maven Snapshots
+### Handling Maven snapshots
 
-When obtaining Maven artifacts and the artifact is a snapshot build, multiple versions of that snapshot may be downloaded at once (e.g. `myApplication-2.1.0.BUILD-20190920.220048-3.jar`, `myApplication-2.1.0.BUILD-20190820.221046-2.jar`, `myApplication-2.1.0.BUILD-20190820.220331-1.jar`). You will likely need to add additional automation to keep only the latest artifact prior to subsequent deployment steps. This can be accomplished with the following PowerShell snippet:
+For Maven snapshots, multiple versions can be downloaded at once (example `myApplication-2.1.0.BUILD-20190920.220048-3.jar`, `myApplication-2.1.0.BUILD-20190820.221046-2.jar`, `myApplication-2.1.0.BUILD-20190820.220331-1.jar`). You might need to remove the old copies and only keep the latest Artifact before deployment. Run the following PowerShell command in an elevated command prompt to remove all copies except the one with the highest lexicographical value:
 
 ```PowerShell
-# Remove all copies of the artifact except the one with the lexicographically highest value.
 Get-Item "myApplication*.jar" | Sort-Object -Descending Name | Select-Object -SkipIndex 0 | Remove-Item
 ```
 
-For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
+> [!NOTE]
+> You can store up to 30 Maven snapshots in your feed. Once you reach the maximum limit, Azure Artifacts will automatically delete snapshots down to 25. This process will be triggered automatically every time 30+ snapshots are published to your feed.
 
 <a name="externaltfs" id="onpremtfssource"></a>
 

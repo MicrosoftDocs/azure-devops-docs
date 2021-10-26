@@ -122,14 +122,14 @@ You must use a [repository resource](../yaml-schema.md#repository-resource) if y
 
 | Repository type | Service connection |
 |-----------------|--------------------|
-| Bitbucket Cloud | [Bitbucket Cloud](../library/service-endpoints.md#sep-bbucket) | 
-| GitHub          | [GitHub](../library/service-endpoints.md#sep-github) |
-| GitHub Enterprise Server | [GitHub Enterprise Server](../library/service-endpoints.md#sep-githubent) |
-| Azure Repos Git repositories in a different organization than your pipeline | [Azure Repos/Team Foundation Server](../library/service-endpoints.md#sep-tfsts) |
+| Bitbucket Cloud | [Bitbucket Cloud](../library/service-endpoints.md#bitbucket-cloud-service-connection) | 
+| GitHub          | [GitHub](../library/service-endpoints.md#github-service-connection) |
+| GitHub Enterprise Server | [GitHub Enterprise Server](../library/service-endpoints.md#github-enterprise-server-service-connection) |
+| Azure Repos Git repositories in a different organization than your pipeline | [Azure Repos/Team Foundation Server](../library/service-endpoints.md#azure-repos) |
 
 You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
 
-In the following example, three repositories are declared as repository resources. The [Azure Repos Git repository in another organization](../library/service-endpoints.md#sep-tfsts), [GitHub](../library/service-endpoints.md#sep-github), and [Bitbucket Cloud](../library/service-endpoints.md#sep-bbucket) repository resources require [service connections](../library/service-endpoints.md), which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which checks out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
+In the following example, three repositories are declared as repository resources. The [Azure Repos Git repository in another organization](../library/service-endpoints.md#azure-repos), [GitHub](../library/service-endpoints.md#github-service-connection), and [Bitbucket Cloud](../library/service-endpoints.md#bitbucket-cloud-service-connection) repository resources require [service connections](../library/service-endpoints.md), which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which checks out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
 
 ```yaml
 resources:
@@ -367,4 +367,4 @@ Choose **View** or **Authorize resources**, and follow the prompts to authorize 
 
 :::image type="content" source="media/multi-repo-checkout/permit-access.png" alt-text="Permit access":::
 
-For more information, see [Troubleshooting authorization for a YAML pipeline](../process/resources.md#troubleshooting-authorization-for-a-yaml-pipeline).
+For more information, see [Troubleshooting authorization for a YAML pipeline](../process/resources.md#authorize-a-yaml-pipeline).

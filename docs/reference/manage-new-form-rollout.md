@@ -34,17 +34,17 @@ You enable the new form from the project collection admin page.
 
 1. To start, choose the :::image type="icon" source="../media/icons/gear_icon.png" border="false"::: gear Settings icon to open the admin context for the project collection.  
 
-	<img src="media/manage-new-form-open-tcp-admin-context.png" alt="TFS 2017, Web portal, Open project collection admin context" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/manage-new-form-open-tcp-admin-context.png" alt="TFS 2017, Web portal, Open project collection admin context" /> 
 
 2. From the collection admin page, click **Enable the new work item form**. 
 
-	<img src="media/manage-new-form-enable-new-form.png" alt="TFS 2017, Web portal, Project collection admin context, Enable new form" style="border: 2px solid #C3C3C3;" />
+	<img src="media/manage-new-form-enable-new-form.png" alt="TFS 2017, Web portal, Project collection admin context, Enable new form" />
 
 	If you don't see the option to enable, you aren't a member of the Project Collection Administrators group. To get added as one, see [Add an administrator](../organizations/security/set-project-collection-level-permissions.md).  
 
 4. Click **Create new layout** to initiate the process of transforming the WIT definitions.  
 
-	<img src="media/manage-new-form-enable-new-form-dialog.png" alt="Enable the new work item form layout dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/manage-new-form-enable-new-form-dialog.png" alt="Enable the new work item form layout dialog" />
 
 <!---
 You enable the new form from the project collection admin page.    
@@ -89,7 +89,7 @@ Choose the opt-in model that supports your needs.
 - Choose **Enable opt-in for all users** when you want to enable the opt-in feature and allow users to switch back to the old form
 - Choose the **New form only** option when you want all users to begin using the new form immediately.  
 
-<img src="media/manage-new-form-choose-opt-in-dialog.png" alt="Choose the opt-in mode for the new form dialog" style="border: 2px solid #C3C3C3;" />
+<img src="media/manage-new-form-choose-opt-in-dialog.png" alt="Choose the opt-in mode for the new form dialog" />
 
 If you choose **Enable opt-in for all users**, users will be able to choose when they convert to the new form view. 
 
@@ -108,7 +108,7 @@ Share the [New work item experience](process/new-work-item-experience.md) topic 
 
 If you find that you need to revert to the old WIT forms, you can do so.  
 
-<img src="media/manage-new-form-disable-dialog.png" alt="Disable new form dialog" style="border: 2px solid #C3C3C3;" />
+<img src="media/manage-new-form-disable-dialog.png" alt="Disable new form dialog" />
 
 Disabling the new form will remove the **WebLayout** section from the XML definition files for all WITs defined within all projects in the collection.  
 

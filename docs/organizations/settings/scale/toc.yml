@@ -2,9 +2,10 @@
   href: ../about-teams-and-settings.md
 - name: Add a team
   href: ../add-teams.md
-- name: Add a team administrator
+- name: Add or remove a team administrator
   href: ../add-team-administrator.md
-- name: Add users to a project or team
+  displayName: team settings
+- name: Add users to a team
   href: ../../security/add-users-team-project.md
 - name: Set team favorites
   href: ../../../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json

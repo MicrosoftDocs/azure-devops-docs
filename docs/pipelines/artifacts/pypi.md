@@ -53,19 +53,17 @@ To use `twine` to publish Python packages, you first need to set up authenticati
 
 # [YAML](#tab/yaml)
 
-To authenticate with `twine`, add the following snippet to your _azure-pipelines.yml_ file.
-
-The example below will enable you to authenticate to a list of Azure Artifacts feeds as well as a list of service connections from external organizations. If you need to authenticate to a single feed, you must replace the following arguments: `artifactFeeds` and `externalFeeds` with `artifactFeed` and `externalFeed` and specify your feed name accordingly.
+To authenticate with `twine`, add the following snippet to your *azure-pipelines.yml* file.
 
 ```yaml
 - task: TwineAuthenticate@1
   inputs:
-    artifactFeeds: 'feed_name1, feed_name2'
-    externalFeeds: 'feed_name1, feed_name2'
+    artifactFeed: <PROJECT_NAME/FEED_NAME>                            #Provide the FeedName only if you are using an organization-scoped feed.
+    pythonUploadServiceConnection: <NAME_OF_YOUR_SERVICE_CONNECTION>
 ```
 
-* **artifactFeeds**: a list of Azure Artifacts feeds within your organization. If you only have one Azure Artifacts feed, use **artifactFeed** (singular) instead.
-* **externalFeeds**: a list of [service connections](../library/service-endpoints.md) from external organizations including PyPI or feeds in other organizations in Azure DevOps.
+* **artifactFeed**: The name of your Azure Artifacts feed.
+* **pythonUploadServiceConnection**: a [service connection](../library/service-endpoints.md#python-package-upload-service-connection) to authenticate with twine.
 
 # [Classic](#tab/classic)
 
@@ -99,13 +97,13 @@ After you've set up authentication with the *TwineAuthenticate@1* task, you can 
      python setup.py bdist_wheel
    
 - task: TwineAuthenticate@1
-  displayName: 'Twine Authenticate'
+  displayName: Twine Authenticate
   inputs:
-    artifactFeed: projectName/feedName
+    artifactFeed: projectName/feedName        #Provide the FeedName only if you are using an organization-scoped feed.
   
 - script: |
      python -m twine upload -r feedName --config-file $(PYPIRC_PATH) dist/*.whl
 ```
 
 > [!WARNING]
-> We strongly recommend **NOT** checking any credentials or tokens into source control.
+> We strongly recommend **NOT** checking any credentials into source control.

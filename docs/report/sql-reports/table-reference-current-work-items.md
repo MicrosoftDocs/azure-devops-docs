@@ -1,6 +1,6 @@
 ---
 title: Current Work Item tables 
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about the current state of bugs, task, and other type of work items 
@@ -33,7 +33,7 @@ You can query for data about the current state of bugs, tasks, and other types o
   
 -   DimWorkItem  
   
-## Related notes 
+## Related articles 
 -  [Test cases and work items](perspective-test-analyze-report-work.md)   
 -  [Work Item History tables](work-item-history-tables.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

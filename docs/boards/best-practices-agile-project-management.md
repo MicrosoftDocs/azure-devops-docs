@@ -7,7 +7,7 @@ ms.topic: best-practice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops' 
-ms.date: 07/09/2021
+ms.date: 07/09/2021  
 ---
 
 
@@ -358,8 +358,8 @@ To review features delivered across several teams, configure a delivery plan. De
 ::: moniker-end 
 
 ::: moniker range="< azure-devops"  
-<img src="./extensions/media/plans/plans-view-2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
-::: moniker-end 
+<img src="./extensions/media/plans/plans-view-2.png" alt="Interactive plan elements" />
+::: moniker-end  
   
 ### Best practice tips  
 

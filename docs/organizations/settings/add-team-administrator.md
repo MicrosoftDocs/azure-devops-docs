@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/03/2021
+ms.date: 07/22/2021
 ---
 
 # Add or remove a team administrator 
@@ -20,7 +20,7 @@ ms.date: 05/03/2021
 
 Learn how to add or remove an administrator for your team. It's always a good idea to have more than one user with administration permissions for a team. Team administrators can [manage teams and configure team tools](manage-teams.md) and manage projects. You may want to remove a user's administration permissions, for instance if the user is no longer active. 
 
-To add a team, see [Add teams](add-teams.md).
+To add a team, see [Add teams](add-teams.md). To add or remove a project administrator, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
 
 <a name="permissions"></a>
 
@@ -146,18 +146,15 @@ To get added as a team administrator, ask another team administrator or a member
 
 Each team must have at least one administrator. To remove an administrator, you must first add at least a second administrator. 
 
-Open the **Teams** settings page as described in the previous section.
+Open the **Teams** page as described in the previous section.
 
 ::: moniker range="azure-devops" 
 
 #### [New Teams Page](#tab/preview-page) 
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select a project.
-2. Choose **Project settings**.
-3. On the **Overview** page, choose ![remove icon](../../media/icons/remove-icon.png) for the user that you want to remove as a team administrator. 
+ 
+Choose **Settings** and scroll down to the Administrators section. Choose ![remove icon](../../media/icons/remove-icon.png) for the user that you want to remove as a team administrator. 
 
 ![Screenshot of X selected to remove team administrator.](media/add-team-admin/remove-admin-new-ui-page.png)
-
 
 
 #### [Current page](#tab/current-page) 

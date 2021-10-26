@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 03/09/2021
+ms.date: 10/18/2021
 ---
 
 
@@ -52,7 +52,6 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 You can integrate the following Microsoft Office tools with Azure DevOps.
 
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
-- [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to more features, such as a project calendar, Gantt charts, and resource views.
 
 > [!IMPORTANT]
 > Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Microsoft Project. Project integration and the TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. However, you can continue to use Microsoft Excel.
@@ -62,8 +61,7 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 ::: moniker range="= azure-devops-2019"
 
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
-- [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to more features, such as a project calendar, Gantt charts, and resource views.
-- [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md): Illustrate user stories and requirements by using PowerPoint.
+
 
 > [!TIP]
 > Check to make sure the Azure DevOps Office Integration component is selected in the Visual Studio Installer, per the following example.
@@ -76,8 +74,8 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 When you install any edition of Visual Studio or [Team Foundation Server Standalone Office Integration 2015 (free)](https://go.microsoft.com/fwlink/?LinkId=691127), the Team Foundation plug-in integrates work item tracking with select Office clients. The Team Foundation plug-in installs to your existing Office client. The plug-in supports Office 2007, Office 2010, or Office 2013 versions.
 
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
-- [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to features that TFS doesn't support, such as a project calendar, Gantt charts, and resource views.
-- [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md): Illustrate user stories and requirements by using PowerPoint. The Team Foundation plug-in installs to your existing PowerPoint client.
+- [Project](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to features that TFS doesn't support, such as a project calendar, Gantt charts, and resource views.
+- [PowerPoint Storyboarding](/previous-versions/azure/devops/boards/backlogs/office/storyboard-your-ideas-using-powerpoint): Illustrate user stories and requirements by using PowerPoint. The Team Foundation plug-in installs to your existing PowerPoint client.
 
 ::: moniker-end
 
@@ -120,13 +118,14 @@ You can use the following browsers to access the web portal:
 > [!div class="mx-tdCol2BreakAll"]
 > |Version                 | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome|
 > |--------------------------|-------------|-------------------|----------------|-------------|-------------|
-> |Azure DevOps Services<br/>Azure DevOps Server 2020<br/>Azure DevOps Server 2019<br/>TFS 2018<br/>TFS 2017  | Most recent | 11 and later | 9.1 and later  | Most recent | Most recent|
+> |Azure DevOps Services<br/>Azure DevOps Server 2020.1 | Most recent | Not supported |14.1 and later | Most recent | Most recent |
+> |Azure DevOps Server 2020<br/>Azure DevOps Server 2019<br/>TFS 2018<br/>TFS 2017  | Most recent | 11 and later | 14.1 and later  | Most recent | Most recent|
 > |TFS 2015                  | Most recent | 9 and later       | 5 and later    | Most recent | Most recent|
 > |TFS 2013                  |             | 9 and later       | 5 and later    | Most recent | Most recent|
 
 Microsoft Edge, Firefox, and Chrome automatically update themselves, so Azure DevOps supports the most recent version.
 
-To learn more, see [Web portal navigation](../project/navigation/index.md).
+For more information, see [Web portal navigation](../project/navigation/index.md).
 
 ### Browser-based extensions
 

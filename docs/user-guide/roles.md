@@ -64,7 +64,7 @@ Product owners typically plan the feature set to deliver, set priorities, and tr
   
 For more information about getting started, see [About Azure Boards and Agile tools](../boards/get-started/what-is-azure-boards.md).  
 
-You can integrate Microsoft Excel and Microsoft Project with Azure DevOps to plan and track your work. For more information, see [Bulk modify by using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks by using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md).
+You can integrate Microsoft Excel with Azure DevOps to plan and track your work. For more information, see [Bulk modify by using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md).
 
 ### Scrum masters
 

@@ -62,7 +62,9 @@ steps:
   - bash: echo This script could use $SYSTEM_ACCESSTOKEN
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-  - powershell: Write-Host "This is a script that could use $env:SYSTEM_ACCESSTOKEN"
+  - powershell: | 
+      Write-Host "This is a script that could use $env:SYSTEM_ACCESSTOKEN"
+      Write-Host "$env:SYSTEM_ACCESSTOKEN = $(System.AccessToken)"
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
@@ -135,7 +137,7 @@ For more detailed logs to debug pipeline problems, define `System.Debug` and set
 <a name="identity_values"></a>
 ### How are the identity variables set?
 
-The value depends on what caused the build.
+The value depends on what caused the build and are specific to Azure Repos repositories. 
 
 | If the build is triggered... | Then the Build.QueuedBy and Build.QueuedById values are based on... | Then the Build.RequestedFor and Build.RequestedForId values are based on... |
 | --- | --- | ---|

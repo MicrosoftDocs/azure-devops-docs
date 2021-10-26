@@ -5,9 +5,12 @@
   - name: About permissions, access, & security groups  
     href: about-permissions.md
     displayName: security, group, membership, inheritance, roles
-  - name: Default permissions & access 
+  - name: Default permissions
     href: permissions-access.md
     displayName: security, group, role, Basic, administrator
+  - name: Stakeholder access
+    href: stakeholder-access.md
+    displayName: public, private
   - name: View permissions 
     href: view-permissions.md
     displayName: default, project, object, valid, user, group
@@ -154,7 +157,7 @@
     displayName: access, update, user, remove
   - name: Set project-level permissions
     href: set-project-collection-level-permissions.md
-    displayName: access, security
+    displayName: access, security, add, remove, project, administrators, collection
   - name: Grant or restrict permissions to select tasks
     href: restrict-access.md
     displayName: give, revoke, access, users
@@ -171,7 +174,7 @@
   items:
   - name: Set organization/collection-level permissions
     href: set-project-collection-level-permissions.md
-    displayName: user, group, access, security
+    displayName: Project Collection Administrators, project collection build service, add, remove
   - name: Set permissions to manage extensions
     href: ../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: Marketplace, access, settings, users
@@ -246,9 +249,6 @@
   - name: Other security considerations
     href: ../../pipelines/security/misc.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: miscellaneous, secure, details, information
-  - name: Add continuous security validation
-    href: ../../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    displayName: build, release, pipeline, continued, validate
 - name: Secure Azure Test Plans
   items:
   - name: Set permissions & access for testing
