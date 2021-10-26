@@ -7,7 +7,7 @@ ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 06/14/2021
+ms.date: 10/22/2021
 ---
 
 # Authorize access to REST APIs with OAuth 2.0
@@ -61,7 +61,7 @@ If your user hasn't yet authorized your app to access their organization, call t
 ```no-highlight
 https://app.vssps.visualstudio.com/oauth2/authorize
         ?client_id={app ID}
-        &response_type=Assertion
+        &response_type={Assertion}
         &state={state}
         &scope={scope}
         &redirect_uri={callback URL}
@@ -69,9 +69,9 @@ https://app.vssps.visualstudio.com/oauth2/authorize
 
 Parameter     | Type   | Notes
 --------------|--------|----------------------------
-client_id     | GUID   | The ID assigned to your app when it was registered
+client_id     | GUID   | The ID assigned to your app when it was registered.
 response_type | string | `Assertion`
-state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization request.
+state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization. request.
 scope         | string | Scopes registered with the app. Space separated. See [available scopes](#scopes).
 redirect_uri  | URL    | Callback URL for your app. **Must exactly match the URL registered with the app**.
 
@@ -279,13 +279,13 @@ A: First, get the work item details with [Work items - Get work item](/rest/api/
 GET https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/{id}
 ```
 
-To get the attachments details you need to add the following parameter to the URL:
+To get the attachments details, you need to add the following parameter to the URL:
 
 ```REST
 $expand=all
 ```
 
-With the results you get the relations property. There you can find the attachments URL, and within the URL you can find the ID. For example:
+With the results, you get the relations property. There you can find the attachments URL, and within the URL you can find the ID. For example:
 
 ```REST API
 $url = https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/434?$expand=all&api-version=5.0

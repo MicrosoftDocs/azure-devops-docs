@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2018'
-ms.date: 09/20/2021 
+ms.date: 10/22/2021 
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -161,6 +161,8 @@ To @mention users or groups in wiki, key in "@" in the wiki editor. This @mentio
 You can also select "@mention" from the edit toolbar.
 
 > ![Mention from edit toolbar](media/mention-toolbar.png)
+
+When you're editing pages directly in code, use the following pattern, `@<{identity-guid}>`.
 
 ::: moniker-end
 
