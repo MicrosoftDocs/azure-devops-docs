@@ -230,7 +230,7 @@ az repos pr checkout --id 21
 
 ## Open a PR
 
-When you select a PR in the browser, the PR opens to its **Overview** tab. The **Overview** tab shows the PR title, description, reviewers, linked worked items, history, and status. You can see a summary of branch policies that are passing or failing, and see comments reviewers have made.
+When you open a PR from the browser, from Visual Studio, or from Azure CLI, the PR opens to its **Overview** tab. The **Overview** tab shows the PR title, description, reviewers, linked worked items, history, and status. You can see a summary of branch policies that are passing or failing, and see comments reviewers have made.
 
 :::image type="content" source="media/view-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR Overview tab.":::
 
