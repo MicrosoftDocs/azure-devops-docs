@@ -1,6 +1,6 @@
 ---
 title: Test Result tables
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps Server Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about test results 

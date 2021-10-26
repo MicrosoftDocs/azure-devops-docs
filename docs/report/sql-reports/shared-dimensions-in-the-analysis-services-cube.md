@@ -1,6 +1,6 @@
 ---
 title: Shared dimensions in the Analysis Services Cube 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to use shared dimensions to show the data for only those team projects that you specify.
 ms.technology: devops-analytics
 ms.topic: reference
@@ -17,7 +17,9 @@ You can report data from across team project collections because all reportable 
   
 You can use dimension attributes to summarize the measures in the cube according to various categories. For example, you can use the Priority, Work Item Type, State, Closed By, and Closed Date attributes to determine how many priority one bugs were closed by a specific team member in November.  
   
-##  <a name="team_project"></a> Filter Reports or Mine Data Based on Project Collections and Team Projects  
+<a name="team_project"></a>
+
+## Filter Reports or mine data based on project collections and team projects  
 
 You can use the Team Project dimension to filter a report or highlight specific details of a project collection or team project. All measures and dimensions in the Team System cube record data that is specific to a team project and project collection. The following illustration shows the attributes within the Team Project dimension as it appears in the Report Builder Query Designer. The Team Project Hierarchy node contains two hierarchical attributes, the first at the collection level and the second at the team-project level.  
   
@@ -32,8 +34,10 @@ You can filter the report to the team projects of interest by specifying one or 
 |Name|The name of a team project or project collection.|  
 |Project Node Type Name|The name of the node. Valid values are **Team Project** and **Team Project Collection**.|  
 |Project Path|A flat list of team project paths that start with the project collection.|  
-  
-##  <a name="date_dimension"></a> Create and Filter Trend Reports  
+
+<a name="date_dimension"></a>
+
+## Create and Filter Trend Reports  
 
 By using the Date dimension, you can create trend reports that summarize changes that occur over time to these items in version control:
 - Work items

@@ -1,6 +1,6 @@
 ---
 title: Build Quality Indicators report
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 ms.technology: devops-analytics
 ms.topic: reference
 description: Learn about test coverage, code churn, and bug counts for a specified build definition.
@@ -34,8 +34,10 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
  **Required Permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+
+<a name="Data"></a>
+
+## Data in the report  
  The data that appears in the Build Quality Indicators report is derived from the data warehouse. The X-axis lists the specific builds that the report includes, based on the filters that you have set for the:
 - Platform
 - Configuration
@@ -94,8 +96,10 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
   
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](/previous-versions/ms181734(v=vs.140)) and [Build Summary](build-summary-report.md).  
-  
-##  <a name="Duration"></a> Change the number of builds in the report  
+
+<a name="Duration"></a>
+
+## Change the number of builds in the report  
  The display of the Build Quality Indicators report will vary based on the number of builds that the report includes and other filters that you apply to the report. You can focus the report on a specific range of builds by changing the number of builds that appear in the report.  
   
 ### To set the number of builds that are represented in the report  
@@ -105,8 +109,10 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
 2.  Next to **End (Date)**, select the calendar icon, and then select the date that corresponds to the last day that builds were run that you want to include in the report.  
   
 3.  Select **View Report**.  
-  
-##  <a name="Interpreting"></a> Interpret the report  
+
+<a name="Interpreting"></a>
+
+## Interpret the report  
  You can review the report to find answers to these questions for any specific build definition:  
   
 -   What is the quality of the software?  
@@ -169,8 +175,10 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
 -   **Active bug count is decreasing, but test passes aren't increasing**. If the active bug count is going down and test pass rates aren't increasing, you might be at risk for an increasing reactivation rate.  
   
 -   **Large areas of gray**. Gray segments signify code that wasn't built or tested within the given build. This data appears only in a periodic report where one or more of the specified builds didn't occur within the period.  
-  
-##  <a name="Changing"></a> Filter the report  
+
+<a name="Changing"></a>
+
+## Filter the report  
  You can filter the Build Quality Indicators report in the following ways:  
   
 - Change the time interval by specifying the number of builds and specifying the end date for the report.  

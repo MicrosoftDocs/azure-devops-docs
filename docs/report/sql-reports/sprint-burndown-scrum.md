@@ -1,6 +1,6 @@
 ---
 title: Sprint Burndown (Scrum)
-titleSuffix: Azure DevOps Server
+titleSuffix: Azure DevOps Server Server
 description: Learn about the Sprint Burndown (Scrum) report and how it tracks how much work remains in a sprint backlog.
 ms.technology: devops-analytics
 ms.topic: reference
@@ -21,7 +21,7 @@ By reviewing a sprint burndown report, you can:
 
 This report is similar to the report available from your team backlog page. The sprint burndown report is built from data in the Analysis Services cube, and the team burndown chart references the WIT data store in real time.  
   
-## Requirements 
+## Prerequisites 
   
 - The on-premises Azure DevOps Server deployment and the team project collection that contains your team project are configured with SQL Server Reporting Services. This report isn't available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** doesn't appear when you open Team Explorer and expand your team project node.  
   
@@ -66,8 +66,10 @@ For the burndown report to be useful and correct, your team must carry out the f
     >  If you divide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
   
 -   Update the **State** of each task as it progresses from **To Do** to **Done**.  
-  
-##  <a name="Interpreting"></a> Interpret the report  
+
+<a name="Interpreting"></a>
+
+## Interpret the report  
 
 You can review the report to determine the progress that your team has made in a release and answer the following questions:  
   

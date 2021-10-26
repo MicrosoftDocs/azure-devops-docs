@@ -1,6 +1,6 @@
 ---
 title: Test Plan Progress Report 
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps Server Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Use the Test Plan Progress report to track the team's progress in testing the product 

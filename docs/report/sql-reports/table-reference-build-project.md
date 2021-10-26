@@ -1,6 +1,6 @@
 ---
 title: Build Project tables
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to query for data about the files and projects that were built and information about those files.
 ms.technology: devops-analytics
 ms.topic: reference

@@ -1,6 +1,6 @@
 ---
 title: Current Work Item tables 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to query for data about the current state of bugs, task, and other type of work items.
 ms.technology: devops-analytics
 ms.topic: reference

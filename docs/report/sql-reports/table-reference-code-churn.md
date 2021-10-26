@@ -1,6 +1,6 @@
 ---
 title: Code Churn tables 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to query for data about the changes in the code that is under version control.
 ms.technology: devops-analytics
 ms.topic: reference

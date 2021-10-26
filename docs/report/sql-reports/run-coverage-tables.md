@@ -1,6 +1,6 @@
 ---
 title: Run Coverage tables 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to use FactRunCoverage to query for data in Azure DevOps Server.
 ms.technology: devops-analytics
 ms.topic: reference

@@ -1,6 +1,6 @@
 ---
 title: Address inaccuracies published for summary values 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to correct reports with hours that are counted twice.
 ms.technology: devops-analytics
 ms.topic: troubleshooting
