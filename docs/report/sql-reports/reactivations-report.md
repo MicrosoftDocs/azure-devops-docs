@@ -26,7 +26,7 @@ For information about how to access, refresh, or manage reports, see [Reporting 
 
 **You can use this report to answer the following questions**:<br /><br /> -   How many bugs are being reactivated?<br />-   How many user stories are being reactivated?<br />-   Is the team resolving and closing reactivated bugs at an acceptable rate?
   
-**Required Permissions**  
+## Prerequisites  
   
 To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
 
