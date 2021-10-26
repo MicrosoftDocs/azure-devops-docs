@@ -37,7 +37,7 @@ If you haven't yet signed up for Azure Boards, you can do that now. See [Sign up
 > [!div class="mx-imgBorder"]  
 > ![GitHub signin](media/sign-in.png)   
 
-IAlong with accessing developer services such as Azure DevOps and Azure, you can use your GitHub account to access all Microsoft online services, from Excel Online to XBox.
+Along with accessing developer services such as Azure DevOps and Azure, you can use your GitHub account to access all Microsoft online services, from Excel Online to XBox.
 
 ::: moniker-end
 
