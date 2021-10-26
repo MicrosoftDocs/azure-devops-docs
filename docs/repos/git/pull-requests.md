@@ -28,13 +28,13 @@ For PR guidelines and management considerations, see [About pull requests](about
 ::: moniker range="azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
  
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher.
+- To create and complete a PR, you must be a member of the **Contributors** security group, or have the corresponding permissions, in the project you want to change.
   - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
-  - If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
+  - If you aren't a member of the project you want to contribute to, [get added](../../organizations/accounts/add-organization-users.md).
+
+- To view or review PRs, you must have **Basic** or higher access to the Azure DevOps project for that PR.
 
 - To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
-
-- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 
 > [!NOTE]
 > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
@@ -42,15 +42,15 @@ For PR guidelines and management considerations, see [About pull requests](about
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- To create and complete a PR, you must be a member of the **Contributors** security group, or have the corresponding permissions, in the project you want to change.
+- To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 - To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
-- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
+- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 - To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 - To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
-- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 
 ::: moniker-end
 
