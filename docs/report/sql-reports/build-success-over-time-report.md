@@ -1,6 +1,6 @@
 ---
 title: Build Success Over Time report
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Displays the status of the last build for each build category run for each day.  
@@ -30,8 +30,10 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
  **Required Permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+
+<a name="Data"></a>
+
+## Data in the Report  
  The data that appears in the Build Success Over Time report is derived from the data warehouse. The report summarizes build and test results for a set of build definitions in one or more projects over time.  
   
  The chart shows a separate row for each combination of build definition, platform, and configuration. The report shows only those combinations that fall within the filters that you've specified for the report. At a glance, you can determine the success or failure of builds for the time period under review, as the following illustration shows.  
@@ -72,8 +74,10 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Success Over Time report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](/previous-versions/ms181734(v=vs.140)) and [Build Summary](build-summary-report.md).  
-  
-##  <a name="Duration"></a> Set the duration of the report  
+
+<a name="Duration"></a>
+
+## Set the duration of the report  
  To understand the progress that your team is making in your current iteration, the start and end dates for the report must match the dates of your current iteration cycle.  
   
 ### To change the duration of the iteration  
@@ -81,8 +85,10 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
 1.  Next to **Iteration Start (Date)** or **Iteration End (Date)**, select the calendar icon, and then select a date.  
   
 2.  Select **View Report**.  
-  
-##  <a name="Interpreting"></a> Interpreting the report
+
+<a name="Interpreting"></a>
+
+## Interpreting the report
  You should expect the Build Success Over Time report to vary based on where you are in your product development cycle. Early iterations often show some builds and tests failing. By reviewing the report together with the team early and often, you might be better able to focus efforts toward creating stable builds with high rates of tests passing.  
   
 ### Questions the report answers  
@@ -104,8 +110,10 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
  A healthy Build Success Over Time report will show successive days of green, which indicates builds are passing. An unhealthy version of the report will show long blocks of orange or red. These blocks indicates builds aren't passing or that tests are failing. The following illustration shows some builds are in good shape and some need investigation:  
   
  ![Healthy and Unhealthy version of Build Success](media/procguid_buildsuccess_unhealthy.png "ProcGuid_BuildSuccess_Unhealthy")  
-  
-##  <a name="Changing"></a> Filter the report  
+
+<a name="Changing"></a>
+
+## Filter the report  
  You can filter the Build Success Over Time report in the following ways:  
   
 - Change the start and end dates for the report.  
