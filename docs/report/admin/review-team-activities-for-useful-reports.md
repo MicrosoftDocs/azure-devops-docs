@@ -42,7 +42,7 @@ Build reports track the quality of software under development. Define tests to r
    **Build and test activities** 
 
    - [Configure a build system](../../pipelines/agents/agents.md)
-   - [Get started with CI/CD](/azure/devops/pipelines/create-first-pipeline)
+   - [Get started with CI/CD](../../pipelines/create-first-pipeline.md)
    - [Run tests in your build process](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)
    - (Optional) [Rate completed builds](/previous-versions/ms181734(v=vs.140)) to populate the Build Quality dimension.
 

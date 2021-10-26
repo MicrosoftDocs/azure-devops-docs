@@ -132,7 +132,7 @@ After the PR gets all required approvals and meets all branch policy requirement
 ::: moniker range=">= azure-devops-2019"
 When you complete the merge, any linked work items automatically update to show the PR completion.
 
-![Screenshot of linked work items showing completed PRs.](./media/complete-pull-requests/pr-workitem-complete.png)
+![Screenshot of linked work items showing completed P Rs.](./media/complete-pull-requests/pr-workitem-complete.png)
 
 ::: moniker-end
 
