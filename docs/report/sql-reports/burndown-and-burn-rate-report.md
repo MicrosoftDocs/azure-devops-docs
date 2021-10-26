@@ -1,12 +1,12 @@
 ---
 title: Burndown and Burn Rate Report
-titleSuffix: Azure DevOps Server Server 
+titleSuffix: Azure DevOps Server
 description: Learn how to determine the rate of team progress by reviewing the Burndown and Burn Rate report.
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 68941ffa-eb19-4d52-9418-7de1b6aca335
 ms.author: kaelli
-ms.date: 10/17/2017
+ms.date: 10/19/2021
 ---
 
 # Burndown and Burn Rate Report
@@ -22,7 +22,7 @@ After a team has worked on one or more iterations, also known as sprints, you ca
   
 **You can use this report to answer the following questions**:<br /><br /> -   Is the team likely to finish the iteration on time?<br />-   Will the team complete the required work, based on the current burn rate?<br />-   How much work does each team member have?  
   
- **Required Permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
 

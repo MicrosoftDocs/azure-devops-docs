@@ -31,7 +31,7 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
   
 **You can use this report to answer the following questions**:<br /><br /> -   What is the quality of the software?<br />-   How often are tests passing, and how much of the code is being tested?<br />-   Based on the code and test metrics, is the team likely to meet target goals? 
   
- **Required Permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
 

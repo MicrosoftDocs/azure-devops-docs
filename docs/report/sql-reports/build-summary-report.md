@@ -28,7 +28,7 @@ The Build Summary report builds and provides information about test results, tes
   
 **You can use this report to answer the following questions**:<br /><br /> -   What is the status of all builds over time?<br />-   Which builds succeeded?<br />-   Which builds have a significant number of changes to the code?<br />-   How much of the code was executed by the tests?<br />-   Which builds are ready to install?  
   
- **Required Permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
 

@@ -1,6 +1,6 @@
 ---
 title: Status on All Iterations Report
-titleSuffix: Azure DevOps Server Server 
+titleSuffix: Azure DevOps Server
 description: Learn how the Status on All Iterations report helps you track the team's performance over successive iterations.
 ms.technology: devops-analytics
 ms.topic: reference
