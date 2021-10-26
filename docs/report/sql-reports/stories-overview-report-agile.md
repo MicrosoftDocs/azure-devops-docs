@@ -25,7 +25,7 @@ You can use this report to answer the following questions:
 - Are the tests for each story passing?
 - How many active bugs does each story have? 
 
-## Required Permissions
+## Prerequisites
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Grant permissions to view or create reports in Azure DevOps Server](../admin/grant-permissions-to-reports.md).
   
