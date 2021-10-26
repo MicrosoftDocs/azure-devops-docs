@@ -224,6 +224,12 @@ az repos pr checkout --id 21
 
 ::: moniker-end
 
+::: moniker range="<= azure-devops-2019"
+
+The Azure CLI isn't supported in this version. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+::: moniker-end
+
 
 ***
 
