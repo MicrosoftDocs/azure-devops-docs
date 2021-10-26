@@ -13,14 +13,50 @@ monikerRange: '<= azure-devops'
 
 # Complete, abandon, or revert pull requests
 
-Update the changes in your pull request in response to comments or to fix issues.
+[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+
+Update your pull request in response to comments or to fix issues.
+
+## Prerequisites
 
 ::: moniker range="azure-devops"
-To make quick updates, select **Edit** on the **Files** page in your branch on the web.
+- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
+ 
+- To complete a PR, you must be a member of the **Contributors** security group, or have the corresponding permissions, in the project the PR is in.
+
+- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
+
+- To view or review PRs, you must have **Basic** or higher access to the Azure DevOps project.
+
+- If you aren't a member of the project you want to contribute to, [get added](../../organizations/accounts/add-organization-users.md).
+
+> [!NOTE]
+> For public projects, users granted **Stakeholder** access have full access to Azure Repos.
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+- **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
+- To complete a PR, you must be a member of the **Contributors** security group, or have the corresponding permissions, in the project you want to change.
+- To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
+- To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+- To complete a PR, you must be a member of the **Contributors** security group for the Azure DevOps project, or have the corresponding permissions.
+- To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- To contribute to a PR, you must be a member of the **Readers** security group for the Azure DevOps project or have the corresponding permissions.
+
+::: moniker-end
+
+To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
+
+::: moniker range="azure-devops"
+To make quick updates to your PR, select **Edit** on the **Files** page in your branch on the web.
 
 ![Screenshot that shows the Edit button to update code directly in Azure Repos.](./media/complete-pull-requests/edit-file.png)
 
-After updating your files, [commit](commits.md) changes and [push](pushing.md) the updates to the branch in your repo.
+After updating your files, [commit](commits.md) changes and [push](pushing.md) the updates to your PR.
 
 You can also immediately apply reviewers' suggested changes by selecting **Apply change** in the comment on the PR **Overview** page. Once you've applied all the changes you want, select **Commit all changes**.
 
@@ -38,7 +74,10 @@ You can make quick updates to your branch directly from the **Files** tab in **C
 
 Reply to comments and update comment status to let reviewers know how you're addressing their comments and suggestions. 
 
-To resolve a comment without replying, select **Resolve** under the comment. To reply to the comment, type your response in the **Write a reply** field, and select **Reply**. Select **Reply & resolve** to reply to and resolve the comment. Reply to specific reviewers by using `@username` in the reply, and reference work items by using `#workitemID`. You can also reference other PRs by using `!pullrequestID`.
+- To resolve a comment without replying, select **Resolve** under the comment.
+- To reply to the comment, type your response in the **Write a reply** field, and select **Reply**.
+- To reply to and resolve the comment, type your response in the **Write a reply** field, and select **Reply & resolve**.
+- Reply to specific reviewers by using `@username` in the reply, and reference work items by using `#workitemID`. You can also reference other PRs by using `!pullrequestID`.
 
 New comments start in **Active** status. Select **Resolve** or **Reply & resolve** to update comment status to **Resolved**.
 
@@ -205,11 +244,35 @@ To reactivate an abandoned PR at any time, open the PR from the **Abandoned** ta
 
 # [Visual Studio](#tab/visual-studio)
 
-To complete a PR, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** page, select **Complete** or set other options.
+In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Team Explorer:
+
+1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
+
+1. Select **View** > **Team Explorer** to open Team Explorer. You can also press **Ctrl**+**\\**, **Ctrl**+**M**.
+
+1. From **Home**, select **Pull Requests** to view lists of PRs opened by you or assigned to you.
+
+1. To open a PR in the web portal, right-click the PR and select **Open in browser**.
+
+To complete a PR, open the PR in the browser, and on the **Overview** page, select **Complete** or set other options.
 
 # [Azure Command Line](#tab/azure-command-line)
 
 ::: moniker range=">= azure-devops-2020"
+
+In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+Many `az devops` commands require `--org` and `--project` parameters. To avoid having to enter these parameters, you can set a default Azure DevOps organization and project with `az devops configure --defaults`.
+
+For example, to set the Fabrikam Fiber project and FabrikamPrime organization as defaults, use:
+
+```azurecli
+az devops configure --defaults organization=https://fabrikamprime.visualstudio.com project="Fabrikam Fiber"
+```
+
+Once you set the defaults, `az devops` commands use the default organization and project. You can use the `org` and `project` parameters to specify other organizations and projects you have access to.
+
+Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
 To complete a PR and merge the changes, update the PR `status` to `completed` with [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update).
 
@@ -248,6 +311,12 @@ Set autocomplete to complete a PR automatically when it passes all required appr
 ### Abandon your changes
 
 To abandon a PR without merging it, use `az repos pr update --id <PR Id> –-status abandoned`. You can reactivate the PR by setting the status to `active`.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+Azure CLI isn't supported in this version. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ::: moniker-end
 

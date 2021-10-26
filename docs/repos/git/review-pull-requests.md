@@ -13,22 +13,17 @@ monikerRange: '<= azure-devops'
 
 # Review pull requests
 
+[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
+
 Teams can set [branch policies](branch-policies.md) to require pull requests (PRs) on protected branches to meet certain criteria. These criteria can include a minimum number of reviewers, and specific required and optional reviewers.
-
-To help reviewers get a quick picture of PR status, the PR **Overview** tab summarizes branch policies that are passing or failing. In some cases, the summary shows a snippet of the failure message from the check's log. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View \<n> checks**.
-
-:::image type="content" source="media/review-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR overview tab.":::
-
-On the PR **Overview** tab, you can review the PR title, description, and comments to understand proposed changes and see issues other reviewers raised. On the **Files** tab, you can review the actual changes.
 
 ## Prerequisites
 
 ::: moniker range="azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
  
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher.
-  - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
-  - If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
+- To review PRs, you must be a member of the Azure DevOps project the PR is in, with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
 
 > [!NOTE]
 > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
@@ -36,11 +31,12 @@ On the PR **Overview** tab, you can review the PR title, description, and commen
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+
+- To review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 
 ::: moniker-end
 
@@ -48,8 +44,14 @@ To learn more about permissions and access, see [Default Git repository and bran
 
 ## Browse changes
 
+- To give reviewers quick picture of PR status, the PR **Overview** tab summarizes branch policies that are passing or failing. In some cases, the summary shows a snippet of the failure message from the check's log. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View \<n> checks**.
+
+  :::image type="content" source="media/review-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR overview tab.":::
+
+  On the PR **Overview** tab, you can review the PR title, description, and comments to understand proposed changes and see issues other reviewers raised.
+
 ::: moniker range="azure-devops"
-- Select the **Files** tab of a PR to view the changes made in the source branch **Inline** or **Side-by-side** with the target branch.
+- Select the PR **Files** tab to review the actual changes made in the source branch, **Inline** or **Side-by-side** with the target branch.
   
   You can see how a file will look published by selecting the **View** button on a file, and then selecting **Preview**.
   
@@ -60,7 +62,7 @@ To learn more about permissions and access, see [Default Git repository and bran
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
-- Select **Files** to view the changes made to the source branch next to the target branch of the pull request.
+- Select the PR **Files** tab to view the actual changes made to the source branch next to the target branch of the pull request.
   
   ![PR files](media/review-pull-requests/pull-request-files.png)
   
@@ -111,15 +113,9 @@ To learn more about permissions and access, see [Default Git repository and bran
   ![PR commits](media/review-pull-requests/pull-request-commits.png)
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
-
-- View code coverage metrics for changes to ensure that you've adequately tested your changes through automated tests. Coverage status appears as a comment in the PR overview. You can view details of coverage information for every code line changed in the file diff view.
-
-:::moniker-end
-
 ## Make comments
 
-Add comments to a PR to make suggestions, reply to previous comments, and point out problems with proposed changes.
+Add comments to a PR to make suggestions, reply to previous comments, and point out problems with the proposed changes.
 
 ::: moniker range="azure-devops"
 - Comment inline in the **Files** tab of a PR by hovering over the line you want to comment on and selecting the comment button :::image type="icon" source="./media/review-pull-requests/new-comment-icon.png":::.
@@ -157,12 +153,36 @@ Use the button at upper right in the PR to vote on the PR changes. The default o
 
 # [Visual Studio](#tab/visual-studio)
 
-To vote on a PR, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** page, use the button at upper right to vote on the changes.
+In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Team Explorer:
+
+1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
+
+1. Select **View** > **Team Explorer** to open Team Explorer. You can also press **Ctrl**+**\\**, **Ctrl**+**M**.
+
+1. From **Home**, select **Pull Requests** to view lists of PRs opened by you or assigned to you.
+
+1. To open a PR in the web portal, right-click the PR and select **Open in browser**.
+
+To vote on a PR, open the PR in the browser, and on the **Overview** page, use the button at upper right to vote on the changes.
 
 
 # [Azure Command Line](#tab/azure-command-line)
 
 ::: moniker range=">= azure-devops-2020"
+
+In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+Many `az devops` commands require `--org` and `--project` parameters. To avoid having to enter these parameters, you can set a default Azure DevOps organization and project with `az devops configure --defaults`.
+
+For example, to set the Fabrikam Fiber project and FabrikamPrime organization as defaults, use:
+
+```azurecli
+az devops configure --defaults organization=https://fabrikamprime.visualstudio.com project="Fabrikam Fiber"
+```
+
+Once you set the defaults, `az devops` commands use the default organization and project. You can use the `org` and `project` parameters to specify other organizations and projects you have access to.
+
+Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
 To vote whether to approve a PR, use [az repos pr set-vote](/cli/azure/repos/pr#az_repos_pr_set_vote). The vote options are `approve`, `approve-with-suggestions`, `reject`, `reset`, or `wait-for-author`.
 
@@ -174,6 +194,12 @@ az repos pr set-vote --id 21 --vote approve
 
 ::: moniker-end
 
+::: moniker range="<= azure-devops-2019"
+
+The Azure CLI isn't supported in this version. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+::: moniker-end
+
 
 ***
 
@@ -181,7 +207,5 @@ az repos pr set-vote --id 21 --vote approve
 ## Next steps
 
 - [Pull request update notifications](pull-request-notifications.md)
-- [Complete a pull request](complete-pull-requests.md)
-- [Change the default branch](change-default-branch.md)
-- [Copy changes with cherry-pick](cherry-pick.md)
+- [Respond to comments and complete a pull request](complete-pull-requests.md)
 - [About pull requests and permissions](about-pull-requests.md)
