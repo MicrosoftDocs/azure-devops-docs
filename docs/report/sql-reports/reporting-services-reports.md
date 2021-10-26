@@ -1,13 +1,13 @@
 ---
 title: Reporting Services Reports
 titleSuffix: Azure DevOps
-description: Overview of the reports provided through SQL Server Reports
+description: Overview of the reports provided through SQL Server Reports.
 ms.technology: devops-analytics
 ms.topic: overview
 ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/22/2020
+ms.date: 10/15/2021
 ---
 
 # Reporting Services reports
@@ -18,7 +18,7 @@ ms.date: 10/22/2020
 The SQL Server reporting solution is based on a [data warehouse and OLAP cube](components-data-warehouse.md) coupled with a SQL Server Reporting server to host reports.
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-Azure DevOps Server 2019 and 2020 versions supports both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). Azure DevOps Server 2020 is the last version to support both. To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
+Azure DevOps Server 2019 and 2020 versions support both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). Azure DevOps Server 2020 is the last version to support both. To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
 
 ::: moniker-end
 
@@ -36,20 +36,7 @@ To learn more about the future of reporting for TFS, read [Reporting roadmap](..
 
 You can analyze the progress and quality of your project by using the reports in SQL Server Reporting Services. These reports aggregate metrics from work items, version control, test results, and builds. These reports answer questions about the actual state of your project.  
   
- Most of these reports provide filters that you can use to specify contents to include in the report. Filters include time period, iteration and area paths, work item types, and work item states. The questions that they answer relate to all types of work items such as user stories, test cases, tasks, and bugs.  
-The SQL Server reporting solution is based on a [data warehouse and OLAP cube](components-data-warehouse.md) coupled with a SQL Server Reporting server to host reports.
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-Azure DevOps Server 2019 and later versions support both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
-
-::: moniker-end
-
-> [!IMPORTANT]  
-> Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises Azure DevOps Server 2019 and Team Foundation Server (TFS). If you don't have a reporting site and want to add it, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).  
-> 
-> For information on what is supported for Azure DevOps Services, see [Dashboards and reports overview](../dashboards/overview.md). 
-
+Most of these reports provide filters that you can use to specify contents to include in the report. Filters include time period, iteration and area paths, work item types, and work item states. The questions that they answer relate to all types of work items such as user stories, test cases, tasks, and bugs.  
 
 ::: moniker range="<= tfs-2018"
 
@@ -60,7 +47,7 @@ To learn more about the future of reporting for TFS, read [Reporting roadmap](..
   
  ## Prerequisites
   
-- Your Azure DevOps on-premises deployment must be provisioned with SQL Server Reporting Services. These reports are not available if your Team Explorer home page does not contain a link to **Reports**.  
+- Your Azure DevOps on-premises deployment must be provisioned with SQL Server Reporting Services. These reports aren't available if your Team Explorer home page doesn't contain a link to **Reports**.  
 - Your team project must be provisioned with reports.  
 - To provision your deployment with Reporting Services or add reports to an existing team project, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).  
 - To view these reports, you must be assigned or belong to a group that has been assigned the **Browser** or **Team Foundation Content Manager** role in Reporting Services. For more information, see [Grant permissions to view or create reports](../admin/grant-permissions-to-reports.md).  
@@ -76,7 +63,7 @@ Build reports track the quality of software under development. By defining tests
    **Build and test activities** 
 
    1. [Configure a build system](../../pipelines/agents/agents.md)
-   2. [Get started with CI/CD](/azure/devops/pipelines/create-first-pipeline)
+   2. [Get started with CI/CD](../../pipelines/create-first-pipeline.md)
    3. [Run tests in your build process](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)
    4. (Optional) [Rate completed builds](/previous-versions/ms181734(v=vs.140)) to populate the Build Quality dimension.
 
@@ -98,7 +85,7 @@ Build reports track the quality of software under development. By defining tests
 
 ## Monitor progress
 
-Project management reports provide insight into how much work the team is tackling within a sprint or release, and the rate of their progress. By linking work items and updating specific fields as work is performed, you can track the progress of individual stories and be able to more accurately estimate future activities. 
+Project management reports provide insight into how much work the team is tackling within a sprint or release, and the rate of their progress. By linking work items and updating specific fields as work is carried out, you can track the progress of individual stories and can more accurately estimate future activities. 
 
 :::row:::
    :::column span="1":::
@@ -204,7 +191,7 @@ Test planning reports support monitoring the test progress and coverage of backl
 
 ##  Refreshing a report  
 
-All data captured for work items is written to the WIT data store, but only select data is written to the Analysis Services data warehouse. The WIT data store is updated in real-time as team members create and modify work items. Incremental updates are then written to the relational warehouse database every two minutes and the OLAP cube every two hours. To change these settings, see [Change the Data Warehouse Refresh Frequency](../admin/change-a-process-control-setting.md).  
+All data captured for work items is written to the WIT data store, but only select data is written to the Analysis Services data warehouse. The WIT data store is updated in real time as team members create and modify work items. Incremental updates are then written to the relational warehouse database every two minutes and the OLAP cube every two hours. To change these settings, see [Change the Data Warehouse Refresh Frequency](../admin/change-a-process-control-setting.md).  
   
  The following table describes how you can refresh the report.  
   
@@ -218,7 +205,7 @@ All data captured for work items is written to the WIT data store, but only sele
 
 ## Manage and work with published reports  
 
-You can also perform the following tasks when you view a report in Reporting Services:  
+You can also carry out the following tasks when you view a report in Reporting Services:  
 - Zoom in or out of the report.  
 - Search for text that the report contains.  
 - Open a related report.  
@@ -231,21 +218,21 @@ You can also perform the following tasks when you view a report in Reporting Ser
   
 ### Q: Do reports handle stories and substories or tasks and subtasks?  
 
-**A:**  Yes, you can subdivide stories or backlog items as well as tasks, creating a nested hierarchy of both backlog items and tasks. You can nest items several levels deep. If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and their parent backlog item. To correct reports you believe are in error, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
+**A:**  Yes, you can subdivide stories or backlog items and tasks, creating a nested hierarchy of both backlog items and tasks. You can nest items several levels deep. If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and their parent backlog item. To correct reports you believe are in error, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
   
 ### Q: Which reports depend on linking work items?  
 
-**A:**  The overview and progress reports depend on linking tasks, test cases, and bugs to backlog items. You must link these items using the parent-child link for tasks and bugs and the Tested By link for test cases.  
+**A:**  The overview and progress reports depend on linking tasks, test cases, and bugs to backlog items. Link these items using the parent-child link for tasks and bugs and the Tested By link for test cases.  
    
 ### Q: Why isn't code churn and code coverage data appearing in my reports?  
 
-**A:** If you use Git for version control, code churn and code coverage report data are not available.  
+**A:** If you use Git for version control, code churn and code coverage report data aren't available.  
   
-### Q:  Are these reports the same as the charts that appear in the web portal?  
+### Q:  Are the reports the same as the charts that appear in the web portal?  
 
-**A:**  While some reports do display similar information, such as sprint burndown and velocity or status on all iterations, these reports are formatted differently and support additional filters.  
+**A:**  While some reports do display similar information, such as sprint burndown and velocity or status on all iterations, these reports are formatted differently and support other filters.  
   
-### Q: How do I create additional product areas or release milestones?  
+### Q: How do I create other product areas or release milestones?  
 
 **A:** See [Create areas or iterations](../../organizations/settings/set-area-paths.md).  
   
@@ -253,7 +240,7 @@ You can also perform the following tasks when you view a report in Reporting Ser
 
 **A:**  See [Bulk modify work items](../../boards/backlogs/bulk-modify-work-items.md).  
   
-### Q: How do I add a field to track additional data?  
+### Q: How do I add a field to track more data?  
 
 **A:**  See [Add or modify a work item field to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).   
 

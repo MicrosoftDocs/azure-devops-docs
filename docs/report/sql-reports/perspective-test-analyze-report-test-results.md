@@ -1,20 +1,20 @@
 ---
 title: Analyze and report on test results
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps
+description: Learn how to view the measures, dimensions, and attributes that pertain to reporting on tests results and test runs.
 ms.technology: devops-analytics
 ms.topic: reference
-description: View the measures, dimensions, and attributes that pertain to reporting on tests results and test runs 
 ms.assetid: 85cbf27b-d908-4fa1-8f72-d9a584922a45
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/2017
+ms.date: 10/15/2021
 ---
 
-# Analyze and report on test results using the test perspective 
+# Analyze and report on test results using the test perspective
 
 [!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
-<a name="top"></a> By using the Test perspective in the SQL Server Analysis Services cube, you can view just the measures, dimensions, and attributes that pertain to reporting on tests results and test runs. For example, you can use these measures to determine the overall quality of each build, the tests that a particular build affected, and the number of test cases that were run. You can also answer questions about changes to the result outcomes.  
+<a name="top"></a> By using the Test perspective in the SQL Server Analysis Services cube, view just the measures, dimensions, and attributes that pertain to reporting on tests results and test runs. For example, use these measures to determine the overall quality of each build, the tests that a particular build affected, and the number of test cases that were run. You can also answer questions about changes to the result outcomes.  
   
 The Test measure group is based on the Test Results relational table, which enables reporting on test results as either a property of the tests or an independent outcome. For more information, see [Test Result tables](test-result-tables.md).  
   
@@ -37,7 +37,7 @@ By using the Test perspective, you can create reports that answer the following 
 > [!NOTE]
 > If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups in the whole Team System cube.
   
- To use many Test measures and dimension attributes, the test team must publish the test results to the data store for Team Foundation Server. For more information, see [Required activities](#tracking) later in this article.  
+ To use many Test measures and dimension attributes, the test team must publish the test results to the data store for Azure DevOps Server. For more information, see [Required activities](#tracking) later in this article.  
   
  
 <a name="example_report"></a>  
@@ -56,7 +56,7 @@ The [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../
 
 ![Pivot Fields for User Stories Test Progress](media/pivotfieldsforuserstoriestestprogress.png "PivotFieldsforUserStoriesTestProgress")  
   
-By performing the following steps, you can create a progress report for testing user stories:  
+By carrying out the following steps, you can create a progress report for testing user stories:  
   
 1.  In Excel, connect to the Analysis Services cube for Azure DevOps Server, and then insert a PivotChart report.  
   
@@ -89,7 +89,7 @@ By performing the following steps, you can create a progress report for testing 
 |**Measure**|**Description**|  
 |-----------------|---------------------|  
 |Build Result Count Trend|Counts the most recent version of each result in a particular build.<br /><br /> For an example of a report that uses this measure, see [Build Quality](/previous-versions/azure/devops/report/excel/build-quality-excel-report).|  
-|Point Count Trend|Count of the most recent version of each test result in a particular build. If a test is run multiple times against a build, the Point Count Trend counts the most recent result for that test using that build. If a test case is not included in the build, the test case is counted as "Never Run."<br /><br /> Use this measure to determine which tests or how many tests are failing in the current build.|  
+|Point Count Trend|Count of the most recent version of each test result in a particular build. If a test is run multiple times against a build, the Point Count Trend counts the most recent result for that test using that build. If a test case isn't included in the build, the test case is counted as "Never Run."<br /><br /> Use this measure to determine which tests or how many tests are failing in the current build.|  
 |Result Count|Counts the most recent version of each test result. Use this measure when you want to determine the overall volume of testing.<br /><br /> For an example of a report that uses this measure, see [Build Quality Indicators](build-quality-indicators-report.md).|  
 |Result Transition Count|Counts all the results whose outcome changed in a particular build. Use this measure when you want to determine which tests were affected by a particular build.|  
 |Test Case Count|Number of test cases. Use this measure when you want to determine how many test cases were run for a particular test run or build.|  
@@ -112,7 +112,7 @@ By using the attributes that this section describes, you can aggregate a measure
 ||Build ID|The number that is assigned to the build. Each time that a particular build pipeline is run, the **Build ID** is incremented by 1.|  
 ||Build Name|The name or expression that uniquely identifies a build. For more information, see [build pipeline options](../../pipelines/build/options.md).|  
 ||Build Start Time|The date and time when the build started.|  
-||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of build: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build pipeline triggers](../../pipelines/build/triggers.md).|  
+||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Azure DevOps Server supports the following types of build: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build pipeline triggers](../../pipelines/build/triggers.md).|  
 ||Drop Location|The drop folder that is defined for the build and that is specified as a Uniform Resource Locator (URL). A URL specifies the protocol with which web browsers will locate Internet resources. The URL also includes the name of the server on which the resource resides. You can also include the path to a resource.<br /><br /> For more information, see [Utility: Publish Build Artifacts](../../pipelines/tasks/utility/publish-build-artifacts.md).|  
 |Build Flavor|Build Flavor|(Published test results only) A name that designates the category of builds that are assigned to a set of completed builds that were published as part of a test run. For example, a build flavor can be used to designate a beta release or a final release.|  
 |Build Platform|Build Platform|The name of the machine platform for which an end-to-end (not desktop) build was made (for example, **x86** or **Any CPU**). |  
@@ -129,7 +129,7 @@ The test case corresponds to a type of work item that the test team uses to defi
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Test Case|Area Hierarchy and more|The Work Item and Test Case dimensions contain all attributes that relate to work items, such as State, Work Item Type, and Work Item ID. For information about the structure of the Test Case dimension, see [Test cases and work items](perspective-test-analyze-report-work.md).<br /><br /> For a description of each attribute, see [Work item field index](../../boards/work-items/guidance/work-item-field.md).<br /><br /> For information about how to work with date, area, and iteration hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).<br /><br /> This measure group contains additional attributes when custom fields in the definition for a type of work item specify `Dimension` as the reportable attribute. For more information about how to use the optional `reportable` attribute and its values, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).|  
+|Test Case|Area Hierarchy and more|The Work Item and Test Case dimensions contain all attributes that relate to work items, such as State, Work Item Type, and Work Item ID. For information about the structure of the Test Case dimension, see [Test cases and work items](perspective-test-analyze-report-work.md).<br /><br /> For a description of each attribute, see [Work item field index](../../boards/work-items/guidance/work-item-field.md).<br /><br /> For information about how to work with date, area, and iteration hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).<br /><br /> This measure group contains other attributes when custom fields in the definition for a type of work item specify `Dimension` as the reportable attribute. For more information about how to use the optional `reportable` attribute and its values, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).|  
 |Test Configuration|Configuration ID and Configuration Name|The number that the system assigns and the name of a test configuration.|  
 |Test Plan|Area Hierarchy, Area Path, Iteration Hierarchy, and Iteration Path|The product area and milestone that is assigned to the test plan.<br /><br /> For more information, see [Test cases and work items](perspective-test-analyze-report-work.md).|  
 ||End Date Hierarchy By Month or By Week<br /><br /> Start Date Hierarchy By Month or By Week|Optional values that a test plan owner can assign to the test plan. They represent the date on which the test plan should start and the date on which the test plan should finish.<br /><br /> For more information about how to work with date hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).|  
@@ -147,10 +147,10 @@ The test case corresponds to a type of work item that the test team uses to defi
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|Failure Type and Failure Type ID|Corresponds to one of the following reasons why a test failed: **None**, **Known Issue**, **New Issue**, or **Regression**.<br /><br /> Azure Test Plans automatically assigns a number or an ID to each reason. The test team can, but is not required to, assign a failure type to each failed test. **Note:**  You cannot add to or change the set of failure types. <br /><br /> For an example of a trend report that shows the outcome of test results based on failure type, see [Failure Analysis](/previous-versions/azure/devops/report/excel/failure-analysis-excel-report).|  
+|Failure Type and Failure Type ID|Corresponds to one of the following reasons why a test failed: **None**, **Known Issue**, **New Issue**, or **Regression**.<br /><br /> Azure Test Plans automatically assigns a number or an ID to each reason. The test team can, but isn't required to, assign a failure type to each failed test. **Note:**  You can't add to or change the set of failure types. <br /><br /> For an example of a trend report that shows the outcome of test results based on failure type, see [Failure Analysis](/previous-versions/azure/devops/report/excel/failure-analysis-excel-report).|  
 |Outcome and Outcome ID|The outcome of the test (for example, **Passed**, **Failed**, or **Inconclusive**).<br /><br /> For an example of a trend report that shows the outcome of test plans and test configurations, see [Test Plan Progress](test-plan-progress-report.md).|  
 |Readiness State and Readiness State ID|The state of a particular test within a test run. Valid values are **Completed**, **InProgress**, **None**, **NotReady**, and **Ready**.|  
-|Resolution State|(Optional) The name of the **Resolution** with which a tester identified the cause of a failed test. By default, all MSF process templates have the following resolution states: **Needs investigation**, **Test issue**, **Product issue**, and **Configuration issue**. The test team can, but is not required to, assign a resolution state to each failed test. **Note:**  You can change these states or add states using the `tcm` command-line tool. See [tcm: Customize and manage the test experience](../../reference/witadmin/tcm-customize-manage-test-experience.md).|  
+|Resolution State|(Optional) The name of the **Resolution** with which a tester identified the cause of a failed test. By default, all MSF process templates have the following resolution states: **Needs investigation**, **Test issue**, **Product issue**, and **Configuration issue**. The test team can, but isn't required to, assign a resolution state to each failed test. **Note:**  You can change these states or add states using the `tcm` command-line tool. See [Customize and manage the test experience](../../reference/witadmin/tcm-customize-manage-test-experience.md).|  
 |Test Result Executed By|The name of the user or other account under which the test was run.<br /><br /> For an example of a report that uses this attribute, see [Test Team Productivity](/previous-versions/azure/devops/report/excel/test-team-productivity-excel-report).|  
 |Test Result Owner|The name of the user or other account that is assigned as the owner of the test result. The assignment corresponds to the value that is set by using the `tcm /resultowner` switch.|  
 |Test Result Priority|The priority of a particular test within a test run.|  
@@ -183,7 +183,7 @@ For a description of each attribute, see [Index of work item fields](../../board
 
 ## Required activities  
 
-To create reports that contain useful data about test efforts and test results, team members should review the information in the following topics:  
+To create reports that contain useful data about test efforts and test results, team members should review the information in the following articles:  
 
 - [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)    
 - [Using Code Coverage to Determine How Much Code is being Tested](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)    
