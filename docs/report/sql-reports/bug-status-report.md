@@ -1,6 +1,6 @@
 ---
 title: Bug Status report 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to track the team's progress toward resolving and closing bugs by viewing the Bug Status report.
 ms.technology: devops-analytics
 ms.topic: reference
@@ -25,8 +25,10 @@ After the team has started to find and fix bugs, you can track the team's progre
  **Required Permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+
+<a name="Data"></a>
+
+## Data in the Report  
  The data that appears in the Bug Status report is derived from the data warehouse. This report displays several sets of information as the following illustrations and table show and describe.  
   
  ![Bug status chart](media/procguid_bugstatusdata.png "ProcGuid_BugStatusData")  
@@ -64,8 +66,10 @@ After the team has started to find and fix bugs, you can track the team's progre
 -   Assign each bug to the team member who is working to resolve or close it.  
   
 -   Update the state of each bug as it is fixed, verified, and closed.  
-  
-##  <a name="Duration"></a> Set the Duration of the Iteration  
+
+<a name="Duration"></a>
+
+## Set the Duration of the Iteration  
  To understand the progress that the team is making for your current iteration, the start and end dates for the report must match the dates of your current iteration cycle.  
   
 ### To change the duration of the iteration  
@@ -73,8 +77,10 @@ After the team has started to find and fix bugs, you can track the team's progre
 1.  Next to **Iteration Start (Date)** or **Iteration End (Date)**, select the calendar icon, and then select a date.  
   
 2.  Select **View Report**.  
-  
-##  <a name="Interpreting"></a> Interpret the Report  
+
+<a name="Interpreting"></a>
+
+## Interpret the Report  
 You can expect the Bug Status report to vary based on where you are in your product development cycle. Early iterations should show a gradual increase in the number of active bugs. Iterations that are near the end of a development cycle should show a wide band of resolved bugs.  
   
 ### Questions the report answers  
@@ -112,8 +118,10 @@ A healthy Bug Status report shows an increase in active bugs over time followed 
 |**The number of resolved or closed bugs is not changing**. When the number of bugs that are being resolved or closed remains flat for long periods of time, team members might not able to resolve or close bugs.|-   Are team priorities correctly set?<br />-   Are team members overallocated on other tasks?<br />-   Are team members correctly tracking their bug status?|  
 |**Bug assignments are not evenly distributed**. The team might need to reassign work when a large number of bugs are assigned to one or two team members and only a few to other team members.|-   Does the team need to balance the workload by reassigning bugs?|  
 |**The number of active higher priority bugs is larger than the number of active lower priority bugs**. When the number of high priority bugs is much larger than the number of lower priority bugs, work might be progressing on lower priority items first.|-   Is the team fixing bugs in the order of priority set by the team?<br />-   Are issues blocking the team's ability to fix the higher priority bugs?|  
-  
-##  <a name="Changing"></a> Filter the report and change the display  
+
+<a name="Changing"></a>
+
+## Filter the report and change the display  
  You can filter the Bug Status report or change its display in the following ways:  
   
 - Change the start and end dates for the report.  

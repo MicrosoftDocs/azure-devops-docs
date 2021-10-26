@@ -1,6 +1,6 @@
 ---
 title: Work Item Link History tables
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps Server Server 
 ms.technology: devops-analytics
 ms.topic: reference
 description: Use Work Item Link History tables to query for links between bugs, tasks, and other types of work items.

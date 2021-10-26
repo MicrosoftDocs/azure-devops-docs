@@ -1,6 +1,6 @@
 ---
 title: Create a Report Server Project
-titleSuffix: Azure DevOps Server
+titleSuffix: Azure DevOps Server Server
 description: Learn how to use SQL Server Report Designer to create a report to track the team's progress.
 ms.technology: devops-analytics
 ms.topic: conceptual

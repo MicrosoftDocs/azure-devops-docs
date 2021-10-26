@@ -1,6 +1,6 @@
 ---
 title: Analyze and report on code churn and code coverage 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to view measures, dimensions, and attributes that are associated with the changes in lines of codes.
 ms.technology: devops-analytics
 ms.topic: reference
@@ -150,8 +150,10 @@ The following table describes the dimensions and attributes in the Run Coverage 
 |Build Flavor|Build Flavor|(Published test results only) A name that designates the category that is assigned to a set of completed builds that were published as part of a test run. For example, you can use a build flavor to designate a beta release or final release.|  
 |Build Platform|Build Platform|(Published test results only) The name of the machine platform for which an end-to-end (not desktop) build was made and that was published as part of a test run (for example, **x86** or **Any CPU**). For an example of a report that uses this attribute, see [Build Summary](build-summary-report.md).|  
 |Test Run|Complete Date Hierarchy by Month or by Week<br /><br /> Creation Date Hierarchy by Month or by Week|Date dimensions that are based on the date when the test run was created and finished. For more information, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).|  
-  
-##  <a name="tracking"></a> Required activities  
+
+<a name="tracking"></a>
+
+## Required activities  
 
 To create reports that contain code churn and code coverage data, team members should review the information in the following articles:  
   

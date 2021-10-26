@@ -1,6 +1,6 @@
 ---
 title: Bug Trends report 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to track the rate at which your team is discovering and resolving bugs.
 ms.technology: devops-analytics
 ms.topic: reference
@@ -25,8 +25,10 @@ You can use the Bug Trends report to help track the rate at which your team is d
  **Required Permissions**  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+
+<a name="Data"></a>
+
+## Data in the report  
  The Bug Trends report calculates a rolling average of the number of bugs that the team has opened, resolved, and closed based on the filters that you specify. The rolling average is based on the seven days before the date for which it's calculated. That is, the report averages the number of bugs in each state for each of the seven days before the date, and then the result is divided by seven. The data is derived from the data warehouse.  
   
  The following illustration displays an example of the Bug Trends report.  
@@ -53,8 +55,10 @@ You can use the Bug Trends report to help track the rate at which your team is d
 - Specify the **Priority** and **Severity** of each bug during triage.  
   
   You can use the Triage workbook to quickly update the iteration, area, state, priority, and severity of bugs. For more information, see [Workbooks](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks).  
-  
-##  <a name="Duration"></a> Set the duration of the sprint or iteration  
+
+<a name="Duration"></a>
+
+## Set the duration of the sprint or iteration  
  To understand the bug trends for your current iteration, the start and end dates for the report must match the dates of your current iteration cycle.  
   
 ### To change the duration of the iteration  
@@ -62,8 +66,10 @@ You can use the Bug Trends report to help track the rate at which your team is d
 1. Next to **Iteration Start (Date)** or **Iteration End (Date)**, select the calendar icon, and then select a date.  
   
 2. Select **View Report**.  
-  
-##  <a name="Interpreting"></a> Interpret the report  
+
+<a name="Interpreting"></a>
+
+## Interpret the report  
  You can expect bug rates to vary based on where you are in your product development cycle. The team should find fewer bugs in early iterations than in later iterations. The team should close the most bugs in iterations that are near the end of a product cycle.  
   
  You interpret bug rates best by reviewing them as they relate to:
@@ -99,8 +105,10 @@ On the other hand, bugs are more difficult to find in a high-quality product and
  An unhealthy Bug Trends report might show that the team is finding bugs more quickly as the ship date approaches and resolving bugs more slowly. In this situation, the team's bug backlog is growing because bugs aren't getting fixed, and you might want to investigate the causes. The following illustration shows a report for a team that is finding many bugs, resolving fewer bugs than it finds, and closing fewer bugs than it resolves.  
   
  ![Unhealthy version of Bug Trends Report](media/procguid_bugtrends_dataunhealthy.png "ProcGuid_BugTrends_DataUnhealthy")  
-  
-##  <a name="Changing"></a> Filter the report and change the display  
+
+<a name="Changing"></a>
+
+## Filter the report and change the display  
  You can filter the Bug Trends report or change its display in the following ways:  
   
 - Change the start and end dates for the report.  

@@ -1,6 +1,6 @@
 ---
 title: Build Changeset tables 
-titleSuffix: Azure DevOps Server
+titleSuffix: Azure DevOps Server Server
 description: Learn how to use FactBuildChangeset to query for data about the changesets.
 ms.technology: devops-analytics
 ms.topic: reference

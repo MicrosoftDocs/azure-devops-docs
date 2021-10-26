@@ -1,6 +1,6 @@
 ---
 title: Status on All Iterations Report
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps Server Server 
 description: Learn how the Status on All Iterations report helps you track the team's performance over successive iterations.
 ms.technology: devops-analytics
 ms.topic: reference
@@ -27,11 +27,13 @@ You can use this report to answer the following questions:
 - How many hours did the team work for each iteration?
 - For each iteration, how many bugs did the team find, resolve, or close?
 
-## Requirements
+## Prerequisites
   
 To view this report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+
+<a name="Data"></a>
+
+## Data in the report  
 
 The Status on All Iterations report presents a snapshot of work that the team accomplished across several iterations, as the following illustration shows. The data is derived from the data warehouse.  
   
@@ -62,8 +64,10 @@ For the Status on All Iterations report to be useful and correct, the team must 
     >  If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and the user story. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
   
 - Update the **State** of each story, task, and bug as it progresses from active to closed.
-  
-##  <a name="Interpreting"></a> Interpret the report  
+
+<a name="Interpreting"></a>
+
+## Interpret the report  
 
 The Status on All Iterations report shows work progress across iterations that are defined for the product areas that you specify. For information about how to filter the report, see [Filtering the Report](#Changing) later in this article.  
   
@@ -105,8 +109,10 @@ An unhealthy Status on All Iterations report might show one or more of the follo
   
   ![Unhealthy version of Status on All Iterations](media/procguid_unhealthy.png "ProcGuid_Unhealthy")  
   Unhealthy Version of a Status on All Iterations Report  
-  
-##  <a name="Changing"></a> Filter the report  
+
+<a name="Changing"></a>
+
+## Filter the report  
 
 You can filter the Status on All Iterations report to show progress only for product areas that you specify.  
   

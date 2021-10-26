@@ -1,6 +1,6 @@
 ---
 title: Build Details tables
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to query for data about builds like the status and quality.
 ms.technology: devops-analytics
 ms.topic: reference
