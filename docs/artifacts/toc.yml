@@ -64,10 +64,10 @@
     - name: npm quickstart
       href: get-started-npm.md
       displayName: npm, npm introduction
-    - name: Publish to an npm feed (YAML/Classic)
+    - name: Publish npm packages (YAML/Classic)
       href: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
       displayName: publish npm, npm packages, npm feed 
-    - name: Publish an npm package from the command line
+    - name: Publish npm packages (CLI)
       href: npm/publish.md
       displayName: npm package, cli, publish packages 
     - name: Set up your project's npmrc
@@ -87,9 +87,6 @@
     - name: Maven quickstart
       href: get-started-maven.md
       displayName: maven, maven introduction 
-    - name: Set up a project to work with Maven feed
-      href: ../pipelines/artifacts/maven.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-      displayName: maven packages, maven artifacts, maven feeds
     - name: Set up authentication
       href: maven/pom-and-settings.md
       displayName: maven pom, maven artifacts, maven packages, maven authentication

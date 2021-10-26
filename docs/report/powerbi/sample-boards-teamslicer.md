@@ -1,14 +1,14 @@
 ---
 title: Add a Team slicer to a Power BI report
 titleSuffix: Azure DevOps
-description: How to add a team slicer to a Power BI report
+description: Learn how to add a team slicer to a Power BI report.
 ms.technology: devops-analytics
 ms.custom: powerbisample
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/21/2021
+ms.date: 10/05/2021
 ---
 
 
@@ -30,7 +30,7 @@ Often Power BI reports include data from multiple teams for aggregation and comp
 
 ## Sample queries
 
-You'll need to add an additional query to your Power BI report. The query below returns the mapping between Teams and Area Paths.
+You'll need to add another query to your Power BI report. The query below returns the mapping between Teams and Area Paths.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -63,7 +63,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v1.0/Areas?
 ### Substitution strings
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
-* {areapath} - Your Area Path. Example format: Project\Level1\Level2
+* `{areapath}` - Your Area Path. Example format: `Project\Level1\Level2`.
 
 
 
@@ -85,7 +85,7 @@ The following table describes each part of the query.
    `$filter=startswith(AreaPath, '{areapath}')`
    :::column-end:::
    :::column span="1":::
-   Return all teams mapped to an Area Path at or under the specified {areapath}. To include all teams in a project, omit this statement.
+   Return all teams mapped to an Area Path at or under the specified `{areapath}`. To include all teams in a project, omit this statement.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -135,7 +135,7 @@ After selecting Close & Apply, and returning to Power BI, follow these steps:
 
 1. Select **Modeling** menu
 1. Select **Manage Relationships**
-1. Create a relationship between your Report query and the Teams query. It is likely that Power BI will auto-detect and create the relationship for you. Here is an example of a relationship between the query in the [Open Bugs](sample-boards-openbugs.md) report and the Teams query:
+1. Create a relationship between your Report query and the Teams query. It's likely that Power BI will autodetect and create the relationship for you. Here's an example of a relationship between the query in the [Open Bugs](sample-boards-openbugs.md) report and the Teams query:
 
     > [!div class="mx-imgBorder"] 
     > ![Example of relationship between queries.](media/odatapowerbi-timeslicer-relationships.png)
@@ -155,12 +155,14 @@ To add a team filter to the Power BI report, follow these steps:
 1. Select Visualization **Slicer**
 1. Add the "Team.TeamName" field to **Field**
 
-The example below shows the [Open Bugs](sample-boards-openbugs.md) report with a Team filter added. Selecting a team in the slicer filters the results of the Open Bugs report. This will work for any report, as long as its query returns AreaSK.
+The example below shows the [Open Bugs](sample-boards-openbugs.md) report with a Team filter added. Selecting a team in the slicer filters the results of the Open Bugs report. It will work for any report, as long as its query returns AreaSK.
 
 > [!div class="mx-imgBorder"] 
 > ![Team Slicer report](media/odatapowerbi-timeslicer-report.png)
 
 ## Additional queries
+
+You can use the following additional queries to create different but similar reports. You can use these queries with the steps defined above.
 
 ### Filter by Teams, rather than Area Path
 

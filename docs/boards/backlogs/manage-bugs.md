@@ -1,7 +1,7 @@
 ---
 title: Manage code defects to maintain software quality in Azure Boards
 titleSuffix: Azure Boards 
-description: Define, capture, and triage software defects to manage technical debt and maintain software quality in Azure Boards. 
+description: Define, capture, and triage software defects and bugs to manage technical debt and maintain software quality in Azure Boards. 
 ms.custom: "boards-backlogs, contperf-fy21q4-portal"
 ms.technology: devops-agile
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
@@ -31,10 +31,15 @@ Extra features for managing bugs include the following benefits:
 [!INCLUDE [temp](../includes/basic-process-bug-note.md)]  
 
 
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)]  
+
+> [!TIP]
+> To report a bug, a user must have at a minimum, **Stakeholder** access and **Edit work items in this node** permission set to **Allow** for the **Area Path** where they will add the bug. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)
+
 ## Bug work item type 
 
 The following image shows the Bug work item type for the Scrum process. The Bug work item type for Agile and CMMI processes tracks similar information. It's designed to appear on the product backlog along with requirements or on the Taskboard along with tasks.  
-
+ 
 [!INCLUDE [temp](../includes/image-differences-with-wits.md)] 
 
 ::: moniker range=">= azure-devops-2020"
@@ -50,15 +55,17 @@ The following image shows the Bug work item type for the Scrum process. The Bug 
 ![Bug work item type, form for Scrum process, TFS 2013 and TFS 2015 versions.](media/scrum-bug-wi-form.png) 
 ::: moniker-end
 
+
+
 ::: moniker range=">= tfs-2017"
 > [!TIP]
 > Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug.  
 ::: moniker-end
 
+
 ## Fields specific to bugs  
 
 The Bug work item type uses some bug-specific fields. Use the fields described in the following table to capture both the initial issue and ongoing discoveries. For information about fields specific to the CMMI process Bug, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
-
 
 ---
 :::row:::

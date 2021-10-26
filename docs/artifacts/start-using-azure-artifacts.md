@@ -49,7 +49,7 @@ Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension has b
 
 ## Get started with Azure Artifacts
 
-With Azure Artifacts you can publish, consume, and share different types of packages depending on your team's need. Select your package type to lean more: 
+With Azure Artifacts you can publish, consume, and share different types of packages depending on your team's need. Select your package type to learn more: 
 
 - [NuGet](./get-started-nuget.md)
 - [Npm](./get-started-npm.md)

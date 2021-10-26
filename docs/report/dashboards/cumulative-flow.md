@@ -9,7 +9,7 @@ ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013' 
+monikerRange: '<= azure-devops' 
 ms.date: 09/28/2021
 ---
 
