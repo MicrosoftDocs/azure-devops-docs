@@ -23,9 +23,7 @@ Teams can require PRs for any changes on protected branches, and set [branch pol
 ::: moniker range="azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
  
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher.
-  - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
-  - If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
+- To view PRs, you must be a member of the Azure DevOps project the PR is in, with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
 
 > [!NOTE]
 > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
@@ -33,11 +31,11 @@ Teams can require PRs for any changes on protected branches, and set [branch pol
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- To view PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 
 ::: moniker-end
 
