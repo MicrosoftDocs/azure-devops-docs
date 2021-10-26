@@ -60,7 +60,7 @@ You add the app to your Teams channel in Microsoft Teams.
 
 	![Pic: Welcome message](./media/integrations-teams/welcome-message.png)
 
-2. Use the `@azure boards` handle to interact with the app. For a list of commands, see [Command reference](#command-reference) provided later in this article.
+2. Use the `@azure boards` handle to interact with the app. For a list of commands, see [Command reference](#azure-boards-command-reference) provided later in this article.
 
 ## Link your Azure Boards project to the Azure Boards app
 
