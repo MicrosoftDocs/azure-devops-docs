@@ -1,7 +1,7 @@
 ---
-title: Understand what you get with Azure Boards to manage your Azure DevOps projects  
+title: Understand what you get with Azure Boards to manage your software development projects  
 titleSuffix: Azure Boards
-description: Learn about the main Azure DevOps Services workflow features and functions supported by Azure Boards. 
+description: Learn about the main features and functions supported by Azure Boards. 
 ms.custom: boards-get-started
 ms.technology: devops-new-user
 ms.assetid:  
@@ -9,10 +9,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 10/12/2021
+ms.date: 10/26/2021
 ---
 
-# What is Azure Boards in Azure DevOps Services?
+# What is Azure Boards?
 
 [!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 

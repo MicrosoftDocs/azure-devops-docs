@@ -1,5 +1,5 @@
 ---
-title: Resolve Azure Boards nesting, displaying, and reordering issues for work items 
+title: Resolve Azure Boards nest, display, and reorder issues for work items 
 titleSuffix: Azure Boards
 description: Learn how to resolve error messages caused by nesting and reordering issues that occur in Azure Boards.  
 ms.custom: "boards-backlogs, seodec18"  
@@ -9,7 +9,7 @@ ms.topic: troubleshooting
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/13/2021
+ms.date: 10/26/2021
 ---
 
 # Fix issues in Azure Boards with displaying, reordering, and nesting work items 
@@ -148,12 +148,12 @@ If you choose to track bugs as tasks, bugs should only be nested under the requi
 
 ## How backlogs and boards display nested items
 
-For Azure DevOps 2018 and earlier versions, the Kanban board only shows the last node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
+For TFS 2018 and earlier versions, the Kanban board only shows the last node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
 ::: moniker range="tfs-2018"
 
 > [!NOTE]
-> For Azure DevOps 2018.2 and later versions, Kanban boards display all work items of nested same-category work items.  
+> For TFS 2018.2 and later versions, Kanban boards display all work items of nested same-category work items.  
 
 ::: moniker-end
 
