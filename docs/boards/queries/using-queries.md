@@ -9,10 +9,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/18/2021
+ms.date: 10/26/2021
 ---
 
-# Define an Azure DevOps query in Azure Boards
+# Define a query in Azure Boards
 
 [!INCLUDE [temp](../includes/version-all.md)]
 [!INCLUDE [temp](../includes/version-visual-studio.md)]
