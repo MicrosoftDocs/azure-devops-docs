@@ -38,7 +38,7 @@ As I mentioned, this is the first of a series of improvements to this area that 
 While the changes to the version control experience are the biggest UI change we’ve made this sprint, we’ve been busy elsewhere. In our ongoing attempt to keep the hosted build machine updated with the latest & greatest, we added the following to the hosted build machines this sprint:
 
 - [Azure SDK 1.8](https://www.windowsazure.com/develop/net/)
-- [TypeScript 0.8.1](https://typescript.codeplex.com/)
+- [TypeScript 0.8.1](https://devblogs.microsoft.com/typescript/announcing-typescript-0-8-1/)
 - VS 2012 Update 1 - VS is installed on the build image to ensure you can build everything on the build machine that you can on your dev box using VS. We updated the VS image to the recently released Update 1.
 
 Besides a bunch of bug fixes, that’s it for sprint 40. As always, let us know how we’re doing on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
