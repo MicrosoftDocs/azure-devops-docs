@@ -260,8 +260,6 @@ To complete a PR, open the PR in the browser, and on the **Overview** page, sele
 
 ::: moniker range=">= azure-devops-2020"
 
-::: moniker range=">= azure-devops-2020"
-
 In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 Many `az devops` commands require `--org` and `--project` parameters. To avoid having to enter these parameters, you can set a default Azure DevOps organization and project with `az devops configure --defaults`.
@@ -318,7 +316,7 @@ To abandon a PR without merging it, use `az repos pr update --id <PR Id> –-sta
 
 ::: moniker range="<= azure-devops-2019"
 
-The Azure CLI isn't supported in this version. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
+Azure CLI isn't supported in this version. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ::: moniker-end
 
