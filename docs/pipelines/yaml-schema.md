@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: vijayma
-ms.date: 07/15/2021
+ms.date: 10/22/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -543,7 +543,7 @@ jobs:
 - deployment: DeployWeb
   displayName: deploy Web App
   pool:
-    vmImage: 'Ubuntu-16.04'
+    vmImage: 'Ubuntu-latest'
   # creates an environment if it doesn't exist
   environment: 'smarthotel-dev'
   strategy:
@@ -774,13 +774,13 @@ stages:
   jobs:
   - job: ${{ parameters.name }}_Windows
     pool:
-      vmImage: vs2017-win2016
+      vmImage: windows-latest
     steps:
     - script: npm install
     - script: npm test -- --file=${{ parameters.testFile }}
   - job: ${{ parameters.name }}_Mac
     pool:
-      vmImage: macos-10.14
+      vmImage: macOS-latest
     steps:
     - script: npm install
     - script: npm test -- --file=${{ parameters.testFile }}
@@ -855,19 +855,19 @@ jobs:
   parameters:
     name: macOS
     pool:
-      vmImage: 'macOS-10.14'
+      vmImage: 'macOS-latest'
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Linux
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Windows
     pool:
-      vmImage: 'vs2017-win2016'
+      vmImage: 'windows-latest'
     sign: true  # Extra step on Windows only
 ```
 
@@ -912,19 +912,19 @@ steps:
 jobs:
 - job: macOS
   pool:
-    vmImage: 'macOS-10.14'
+    vmImage: 'macOS-latest'
   steps:
   - template: steps/build.yml # Template reference
 
 - job: Linux
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - template: steps/build.yml # Template reference
 
 - job: Windows
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
   steps:
   - template: steps/build.yml # Template reference
   - script: sign              # Extra step on Windows only
@@ -972,7 +972,7 @@ The variables are specified only once.
 # File: variables/build.yml
 variables:
 - name: vmImage
-  value: vs2017-win2016
+  value: windows-latest
 - name: arch
   value: x64
 - name: config
@@ -1035,11 +1035,8 @@ parameters:
   default: ubuntu-latest
   values:
   - windows-latest
-  - vs2017-win2016
   - ubuntu-latest
-  - ubuntu-16.04
   - macOS-latest
-  - macOS-10.14
 
 trigger: none
 
@@ -1333,7 +1330,7 @@ The `git` type refers to Azure Repos Git repos.
 
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
   An example is `name: MyBitbucket/vscode`.
-  Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket) for authorization.
+  Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#bitbucket-cloud-service-connection) for authorization.
 
 ### Packages resource
 
@@ -1714,7 +1711,7 @@ To use a Microsoft-hosted pool, omit the name and specify one of the available [
 
 ```yaml
 pool:
-  vmImage: ubuntu-16.04
+  vmImage: ubuntu-latest
 ```
 
 To use a private pool with no demands:
@@ -1750,6 +1747,8 @@ pool:
 ```
 
 ---
+
+Learn more about [demands](./process/demands.md).
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -1843,6 +1842,26 @@ The task runs a script using cmd.exe on Windows and Bash on other platforms.
 
 # [Schema](#tab/schema)
 
+:::moniker range="azure-devops-2019"
+
+```yaml
+steps:
+- script: string  # contents of the script to run
+  displayName: string  # friendly name displayed in the UI
+  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
+  workingDirectory: string  # initial working directory for the step
+  failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
+  condition: string
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean  # whether to run this step; defaults to 'true'
+  timeoutInMinutes: number
+  env: { string: string }  # list of environment variables to add
+```
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2019"
+
 ```yaml
 steps:
 - script: string  # contents of the script to run
@@ -1867,6 +1886,10 @@ If you don't specify a command mode, you can shorten the `target` structure to:
   target: string  # container name or the word 'host'
 ```
 
+:::moniker-end
+
+
+
 # [Example](#tab/example)
 
 ```yaml
@@ -1877,8 +1900,21 @@ steps:
 
 ---
 
+:::moniker range="azure-devops-2019"
+
+Learn more about [conditions](process/conditions.md?tabs=yaml) and
+[timeouts](process/phases.md?tabs=yaml#timeouts).
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2019"
+
 Learn more about [conditions](process/conditions.md?tabs=yaml),
 [timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
+
+:::moniker-end
+
+
 
 ## Bash
 
@@ -1886,6 +1922,26 @@ The `bash` keyword is a shortcut for the [shell script task](tasks/utility/shell
 The task runs a script in Bash on Windows, macOS, and Linux.
 
 # [Schema](#tab/schema)
+
+:::moniker range="azure-devops-2019"
+
+```yaml
+steps:
+- bash: string  # contents of the script to run
+  displayName: string  # friendly name displayed in the UI
+  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
+  workingDirectory: string  # initial working directory for the step
+  failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
+  condition: string
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean  # whether to run this step; defaults to 'true'
+  timeoutInMinutes: number
+  env: { string: string }  # list of environment variables to add
+```
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2019"
 
 ```yaml
 steps:
@@ -1911,6 +1967,10 @@ If you don't specify a command mode, you can shorten the `target` structure to:
   target: string  # container name or the word 'host'
 ```
 
+:::moniker-end
+
+
+
 # [Example](#tab/example)
 
 ```yaml
@@ -1925,8 +1985,19 @@ steps:
 
 ---
 
+:::moniker range="azure-devops-2019"
+
+Learn more about [conditions](process/conditions.md?tabs=yaml) and
+[timeouts](process/phases.md?tabs=yaml#timeouts).
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2019"
+
 Learn more about [conditions](process/conditions.md?tabs=yaml),
 [timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
+
+:::moniker-end
 
 ## pwsh
 
@@ -2113,9 +2184,9 @@ steps:
 ```
 ### Artifact download location
 
-Artifacts from the current pipeline are downloaded to $(**Pipeline.Workspace**)/<artifact name>.
+Artifacts from the current pipeline are downloaded to `$(**Pipeline.Workspace**)/<artifact name>`.
 
-Artifacts from the associated pipeline resource are downloaded to $(**Pipeline.Workspace**)/\<pipeline resource identifier\>/<artifact name>.
+Artifacts from the associated pipeline resource are downloaded to `$(**Pipeline.Workspace**)/\<pipeline resource identifier\>/<artifact name>`.
 
 ### Automatic download in deployment jobs
 
@@ -2177,7 +2248,7 @@ steps:
 ::: moniker-end
 
 > [!NOTE]
-> In addition to the cleaning option available using `checkout`, you can also configuring cleaning in a workspace. For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
+> In addition to the cleaning option available using `checkout`, you can also configure cleaning in a workspace. For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
 
 To avoid syncing sources at all:
 
@@ -2261,6 +2332,26 @@ There's a [catalog of tasks](tasks/index.md) available to choose from.
 
 # [Schema](#tab/schema)
 
+:::moniker range="azure-devops-2019"
+
+```yaml
+steps:
+- task: string  # reference to a task and version, e.g. "VSBuild@1"
+  displayName: string  # friendly name displayed in the UI
+  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
+  condition: string
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean  # whether to run this step; defaults to 'true'
+  timeoutInMinutes: number
+  inputs: { string: string }  # task-specific inputs
+  env: { string: string }  # list of environment variables to add
+```
+
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2019"
+
 ```yaml
 steps:
 - task: string  # reference to a task and version, e.g. "VSBuild@1"
@@ -2285,6 +2376,10 @@ If you don't specify a command mode, you can shorten the `target` structure to:
   target: string  # container name or the word 'host'
 ```
 
+:::moniker-end
+
+
+
 # [Example](#tab/example)
 
 ```yaml
@@ -2298,8 +2393,19 @@ steps:
 
 ---
 
+:::moniker range="azure-devops-2019"
+
+Learn more about [conditions](process/conditions.md?tabs=yaml) and
+[timeouts](process/phases.md?tabs=yaml#timeouts).
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2019"
+
 Learn more about [conditions](process/conditions.md?tabs=yaml),
 [timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
+
+:::moniker-end
 
 ## Syntax highlighting
 

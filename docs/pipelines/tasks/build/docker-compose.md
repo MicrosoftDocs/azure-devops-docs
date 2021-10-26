@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 6975E2D1-96D3-4AFC-8A41-498B5D34EA19
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 04/09/2021
+ms.date: 07/30/2021
 monikerRange: '> tfs-2018'
 ---
 
@@ -75,7 +75,7 @@ is the name of the Docker registry service connection for the container registry
 | `projectName` <br/>(Project Name) |(Optional) Project name used for default naming of images and containers. <br/>Default value: $(Build.Repository.Name)|
 |`qualifyImageNames` <br/>(Qualify Image Names) | (Optional) Qualify image names for built services with the Docker registry service connection's hostname if not otherwise specified. <br/>Default value: true|
 |`action` <br/>(Action)|(Required) Select a Docker Compose action. <br/>Default value: Run a Docker Compose command|
-|`additionalImageTags` <br/>(Additional Image Tags)|(Optional) Additional tags for the Docker images being built or pushed.|
+|`additionalImageTags` <br/>(Additional Image Tags)|(Optional) Additional tags for the Docker images being built or pushed. Specify multiple tags with a line feed `\n`.|
 |`includeSourceTags` <br/>(Include Source Tags)|(Optional) Include Git tags when building or pushing Docker images. <br/>Default value: false|
 |`includeLatestTag` <br/>(Include Latest Tag)|(Optional) Include the latest tag when building or pushing Docker images. <br/>Default value: false|
 

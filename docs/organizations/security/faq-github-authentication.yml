@@ -1,43 +1,38 @@
 ### YamlMime:FAQ
 metadata:
-  title: Authenticate & invite GitHub user FAQs
-  description: Learn about frequently asked questions (FAQs) on authenticating with a GitHub identity and inviting other GitHub users to Azure DevOps.
+  title: Authenticate & invite GitHub user FAQ
+  description: Learn about frequently asked questions (FAQ) on authenticating with a GitHub identity and inviting other GitHub users to Azure DevOps.
   ms.technology: devops-security
   ms.assetid: 
   ms.topic: faq
   ms.author: chcomley
   author: chcomley
-  ms.date: 06/04/2020
+  ms.date: 08/19/2020
   monikerRange: 'azure-devops'
     
-title: Authenticate & invite GitHub user FAQs
+title: Authenticate & invite GitHub user FAQ
 summary: |
   [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
   
-  If you're having issues either connecting to Azure DevOps using your GitHub identity, or inviting other GitHub users, see the following frequently asked questions (FAQs) and answers.
+  If you're having issues either connecting to Azure DevOps using your GitHub identity, or inviting other GitHub users, see the following frequently asked questions (FAQ) and answers.
   
 
 sections:
   - name: Ignored
     questions:
       - question: |
-          Some of my users in Azure DevOps have GitHub identities. Do I need to add them as new GitHub users into my organization?
+         Q: Some of my users in Azure DevOps have GitHub identities. Do I need to add them as new GitHub users into my organization?
         answer: |
-          No. Ask your users to sign out, and then from a fresh browser session, sign back in to the organization with their GitHub credentials. This action will help establish the users as having valid GitHub identities.
-          
-          <a id="github-users" />
-          
+          A: No. Ask your users to sign out, and then from a fresh browser session, sign back in to the organization with their GitHub credentials. This action will help establish the users as having valid GitHub identities.
+          <a id="github-users" />    
       - question: |
-          I'm an organization administrator and I turned on the policy that enables inviting GitHub users. Why can't I invite new GitHub users?
+         Q: I'm an organization Administrator and I turned on the policy that enables inviting GitHub users. Why can't I invite new GitHub users?
         answer: |
-          Once the setting is changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials. You're now recognized as a GitHub user and the GitHub invitation experience is available to you.
-          
-          ![Invite GitHub users policy](../../media/invite-github-users-policy.png)
-          
+          A: Once the setting is changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials.    
       - question: |
-          I signed in with my GitHub credentials, but why can't I invite GitHub users?
+         Q: I signed in with my GitHub credentials, but why can't I invite GitHub users?
         answer: |
-          Only organization or project administrators can invite new users to join the organization. You might not have the permission required to add new users. Work with your administrator to get you the right permissions or ask your administrator to add the user for you.
+          A: Only organization or project Administrators can invite new users to join the organization. You might not have the permission required to add new users. Work with your administrator to get you the right permissions or ask them to add the user for you.
           
 additionalContent: |
 
@@ -45,4 +40,4 @@ additionalContent: |
 
   * [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md)
   * [Add organization users to Azure DevOps](../accounts/add-organization-users.md)
-  * [Permission and access FAQs](faq-permissions.yml)        
+  * [Permission and access FAQ](faq-permissions.yml)        

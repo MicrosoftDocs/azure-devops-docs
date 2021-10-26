@@ -43,7 +43,7 @@ If you're new to Azure DevOps, see our overview articles that are designed to gi
 Track work and integrate with your code, build, and test environments from the following clients:<br/>- <a href="/previous-versions/azure/devops/java/download-eclipse-plug-in" data-raw-source="[Eclipse (Team Explorer Everywhere)](/previous-versions/azure/devops/java/download-eclipse-plug-in)">Eclipse (Team Explorer Everywhere)</a><br/>- <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[Visual Studio](https://visualstudio.microsoft.com/downloads/)">Visual Studio</a><br/>- <a href="/previous-versions/azure/devops/java/download-android-studio-plug-in" data-raw-source="[Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)">Android Studio</a><br/>- <a href="/previous-versions/azure/devops/java/download-intellij-plug-in" data-raw-source="[IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)">IntelliJ</a><br/>- <a href="/previous-versions/azure/devops/java/vscode-extension" data-raw-source="[Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)">Visual Studio Code</a><br/>
 To learn how to connect, see <a href="../organizations/projects/connect-to-projects.md" data-raw-source="[Connect to a project](../organizations/projects/connect-to-projects.md)">Connect to a project</a>.<br/><br/>
 <p><b>Office integration clients</b></p>
-Use features supported by these familiar clients to manage your project and illustrate your requirements.<br/>- <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Excel</a><br/>- <a href="../boards/backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)">Project</a><br/>- <a href="../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[PowerPoint - Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)">PowerPoint - Storyboarding</a><br/>
+Use features supported by these familiar clients to manage your project and illustrate your requirements.<br/>- <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Excel</a>
 
 </td>
 <td width="30%">
@@ -103,12 +103,6 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p>Use the <a href="../boards/sprints/forecast.md" data-raw-source="[forecast](../boards/sprints/forecast.md)">forecast</a> tool to estimate work to be completed in future sprints. </p>
  <br/>
-
-<p><b>Storyboard</b></p>
-<p>Visualize your ideas and user stories and support greater understanding of them by <a href="../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[storyboarding them with PowerPoint](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)">storyboarding them with PowerPoint</a>, also link your storyboards to your backlog work items.  </p>
-
-
-
 
 
 </td>
@@ -809,7 +803,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 
 <p><b>Get notified about pull requests</b></p>
-<p>Subscribe to email alerts to get notified about <a href="../repos/git/pull-requests.md#notifications" data-raw-source="[new pull requests, changes, approvals, and rejections](../repos/git/pull-requests.md#notifications)">new pull requests, changes, approvals, and rejections</a>.</p>
+<p>Subscribe to email alerts to get notified about <a href="../repos/git/pull-request-notifications.md" data-raw-source="[new pull requests, changes, approvals, and rejections](../repos/git/pull-request-notifications.md)">new pull requests, changes, approvals, and rejections</a>.</p>
 
 <p><b>Set branch policies </b></p>
 <p>To improve code quality, <a href="../repos/git/branch-policies.md" data-raw-source="[set branch policies to require code reviews or  automatically add reviewers](../repos/git/branch-policies.md)">set branch policies to require code reviews or  automatically add reviewers</a>. </p>
@@ -957,7 +951,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>What is Azure Artifacts?</b></p>
-<p>Azure Artifacts is the new name for what was previously Package Management. Azure Artifacts helps you <a href="../artifacts/overview.md" data-raw-source="[manage code sharing by automating common tasks for discovering, consuming, and sharing components](../artifacts/overview.md)">manage code sharing by automating common tasks for discovering, consuming, and sharing components</a>.</p>
+<p>Azure Artifacts is the new name for what was previously Package Management. Azure Artifacts helps you <a href="/azure/devops/artifacts/start-using-azure-artifacts" data-raw-source="[manage code sharing by automating common tasks for discovering, consuming, and sharing components](../artifacts/start-using-azure-artifacts.md)">manage code sharing by automating common tasks for discovering, consuming, and sharing components</a>.</p>
 
 <p><b>Create feeds </b></p>
 <p><a href="/azure/devops/artifacts/" data-raw-source="[Create feeds](../artifacts/index.yml)">Create feeds</a> to share code through packages.</p>
@@ -983,8 +977,8 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 
-<p><b>Bootstrap the developer environment</b></p>
-<p>Increase your team&#39;s velocity and decrease the amount of code duplication across your organization. Access a set of tools and conventions for integrating Azure DevOps Services NuGet into your workflow by <a href="../artifacts/nuget/bootstrap-nuget.md" data-raw-source="[getting the NuGet VSS.PackageManagement.Bootstrap package](../artifacts/nuget/bootstrap-nuget.md)">getting the NuGet VSS.PackageManagement.Bootstrap package</a>.</p>
+<p><b>Upstream sources</b></p>
+<p>use a single feed to manage packages from different sources. Publish and install packages from your feed and public registries with  <a href="../artifacts/concepts/upstream-sources.md" data-raw-source="[Upstream Sources](../artifacts/concepts/upstream-sources.md)">Upstream Sources</a>.</p>
 
 
 <p><b>Remove a NuGet package from a feed </b></p>
@@ -1618,8 +1612,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 ### Marketplace
 
-<blockquote style="font-size: 13px"><b>Feature availability: </b>You can add Marketplace extensions from the web portal for Azure DevOps or for Visual Studio or Visual Studio Code.
-</blockquote> 
+**Feature availability:** You can add Marketplace extensions from the web portal for Azure DevOps or for Visual Studio or Visual Studio Code.
 
 <table>
 <tbody>
@@ -1764,7 +1757,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Language Interface Packs (LIPs)</b></p>
-<p>By using a <a href="/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio" data-raw-source="[Windows Language Interface Pack (LIP)](/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio)">Windows Language Interface Pack (LIP)</a>, you can install a language version of Windows, and then install various User Interface Language Packs. Language packs switch your English Visual Studio Professional user interface into any of these languages and have a majority of the user interface localized. </p>
+<p>By using a <a href="https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5" data-raw-source="[Windows Language Interface Pack (LIP)](https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5)">Windows Language Interface Pack (LIP)</a>, you can install a language version of Windows, and then install various User Interface Language Packs. Language packs switch your English Visual Studio Professional user interface into any of these languages and have a majority of the user interface localized. </p>
 
 </td>
 <td width="33%">
@@ -1797,22 +1790,22 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Visual Studio language pack</b></p>
-<p>Install the <a href="https://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](https://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio" data-raw-source="[switch the UI display to different languages](/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
+<p>Install the <a href="https://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](https://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5" data-raw-source="[switch the UI display to different languages](https://support.microsoft.com/topic/download-office-language-interface-packs-lip-5ca3dbbe-9294-0757-1c65-b7f9f99b4da5)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
 <ul>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">English</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Chinese Simplified</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Chinese Traditional</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Czech</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">German</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">French</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Italian</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Japanese</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Korean</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Polish</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Portuguese (Brazil)</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Russian</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Spanish</a></li>
-<li><a href="/visualstudio/welcome-to-visual-studio-2015">Turkish</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">English</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Chinese Simplified</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Chinese Traditional</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Czech</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">German</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">French</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Italian</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Japanese</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Korean</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Polish</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Portuguese (Brazil)</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Russian</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Spanish</a></li>
+<li><a href="/previous-versions/visualstudio/visual-studio-2015/welcome-to-visual-studio-2015">Turkish</a></li>
 </ul>
 <br/>
 
@@ -2016,7 +2009,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><a href="../test/create-a-test-plan.md" data-raw-source="[Create and run manual tests](../test/create-a-test-plan.md)">Create and run manual tests</a> for your app.</p>
 
 <p><b>Package (Azure DevOps Services, Preview)</b></p>
-<p>Share code as binary assets and control dependencies by <a href="../artifacts/overview.md" data-raw-source="[subscribing to and working with Azure Artifacts feeds](../artifacts/overview.md)">subscribing to and working with Azure Artifacts feeds</a>.</p>
+<p>Share code as binary assets and control dependencies by <a href="/azure/devops/artifacts/start-using-azure-artifacts" data-raw-source="[subscribing to and working with Azure Artifacts feeds](../artifacts/start-using-azure-artifacts.md)">subscribing to and working with Azure Artifacts feeds</a>.</p>
 
 <p><b>Release (Azure DevOps Services, Preview)</b></p>
 <p>Manage the release of your app by <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[deploying it to a specific environment for each separate release step](../pipelines/get-started/what-is-azure-pipelines.md)">deploying it to a specific environment for each separate release step</a>, and by controlling the process through approvals for each step.</p>
@@ -2081,7 +2074,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Code search</b></p>
-<p><a href="../project/search/get-started-search.md" data-raw-source="[Find code based on keywords and semantic search filters](../project/search/get-started-search.md)">Find code based on keywords and semantic search filters</a> across your Git repositories.</p>
+<p><a href="../project/search/get-started-search.md" data-raw-source="[Find code based on keywords and semantic search filters](../project/search/get-started-search.md)">Find code based on keywords and search filters</a> across your Git repositories.</p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 <p><b>CodeLens search</b></p>
 <p><a href="/visualstudio/ide/find-code-changes-and-other-history-with-codelens" data-raw-source="[Find references and changes to your code, linked bugs, work items, code reviews, and unit tests](/visualstudio/ide/find-code-changes-and-other-history-with-codelens)">Find references and changes to your code, linked bugs, work items, code reviews, and unit tests</a>.</p>
@@ -2116,20 +2109,19 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 
-<p><b>Bulk modify</b></p>
+**Bulk modify**
+
 <p><a href="../boards/backlogs/bulk-modify-work-items.md" data-raw-source="[Edit or update multiple work items](../boards/backlogs/bulk-modify-work-items.md)">Edit or update multiple work items</a> from any backlog or query result. Supported tasks include:  </p>
-<ul>
-<li style="margin-bottom:0px">Modify field values </li>
-<li style="margin-bottom:0px">Add or remove tags  </li>
-<li style="margin-bottom:0px">Reassign </li>
-<li style="margin-bottom:0px">Move to an iteration</li>
-<li style="margin-bottom:0px">Delete</li>
-<li style="margin-bottom:0px">Link to a new or existing work item </li>
-<li style="margin-bottom:0px">Change work item type </li>
-<li style="margin-bottom:0px">Move to another project</li>
-<li style="margin-bottom:0px">Create a new Git branch</li>
-</ul>
-<br/>
+
+- Modify field values
+- Add or remove tags
+- Reassign
+- Move to an iteration
+- Delete
+- Link to a new or existing work item
+- Change work item type
+- Move to another project
+- Create a new Git branch
 
 <p><b>Query by date or current iteration</b></p>
 <p>List work items based on <a href="../boards/queries/query-by-date-or-current-iteration.md" data-raw-source="[when changes occurred or if they belong to the team&#39;s current sprint](../boards/queries/query-by-date-or-current-iteration.md)">when changes occurred or if they belong to the team&#39;s current sprint</a>. </p>
@@ -2615,10 +2607,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Discussion (Azure DevOps Services) </b></p>
 <p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/>.  </p>
 <img src="media/features/alm-feature-add-work-items-discussion.png" alt="Discussion section"/><br/><br/>
-
-
-<p><b>Storyboard</b></p>
-<p><a href="../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[Link your storyboards to you backlog work items](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)">Link your storyboards to you backlog work items</a>.  </p>
 
 </td>
 

@@ -7,18 +7,18 @@ ms.topic: include
 
 2. From your home page, open your profile. Go to your security details.
 
-   <img alt="Go to Azure DevOps Services home, open your profile, go to Security" src="./media/my-profile.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Go to Azure DevOps Services home, open your profile, go to Security" src="./media/my-profile.png" />
 
 3. Create a new personal access token.
 
-   <img alt="Add a personal access token" src="./media/add-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Add a personal access token" src="./media/add-personal-access-token.png" />
 
 4. Name your token. Select a lifespan for your token.
 
    If you're using Azure DevOps Services, and you have more than one organization, 
    you can also select the organization where you want to use the token.
 
-   <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="./media/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="./media/setup-personal-access-token.png" />
 
 5. Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes) 
    that this token will authorize for **your specific tasks**.

@@ -1,14 +1,14 @@
 ---
 title: How are area and iteration paths used?
 titleSuffix: Azure DevOps
-description: Understand how areas and iterations are used in Azure DevOps.
+description: Understand how area paths and iteration paths are used in Azure DevOps.
 ms.technology: devops-agile
 ms.custom: linked-from-support
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 08/17/2020
+ms.date: 10/11/2021
 ---
 
 # About area and iteration (sprint) paths 
@@ -39,7 +39,7 @@ The areas and iterations you see depend on the process you used to create your p
 > [!div class="mx-tdBreakAll"] 
 > |Iterations| Areas |
 > |-------------|----------| 
-> |<img src="media/iterations/project-configuration-iterations.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="media/areas/project-configuration-areas.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
+> |<img src="media/iterations/project-configuration-iterations.png" alt="Default iterations, Scrum process" /> | <img src="media/areas/project-configuration-areas.png" alt="A set of sample area paths" /> | 
 
 
 
@@ -98,8 +98,8 @@ Use the following guidance to configure iteration paths for your project and tea
 1. Determine the length of the iteration you want to support. Recommended practice is to have all teams use the same sprint cadence.  
 2. Determine if you want a flat structure or hierarchy of sprints and releases.
 3. Open **Project settings > Project configuration** and define the iteration paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](set-iteration-paths-sprints.md#open-project-settings) and [Add iterations and set iteration dates](set-iteration-paths-sprints.md#iterations). 
-4. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](set-iteration-paths-sprints.md#open-team-settings) and [Set team default iteration path(s)](set-iteration-paths-sprints.md#activate).
-5. Each team should assign the default iteration path they selected to their work items. Those work items show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
+4. Open the team configuration and assign the default, backlog, and additional iteration path(s) to each team. Follow the steps provided later in this article: [Open team settings](set-iteration-paths-sprints.md#open-team-settings) and [Set team default iteration path(s)](set-iteration-paths-sprints.md#activate).
+5. Each team should assign an iteration path to their work items that falls under the **Backlog iteration** path. Those work items will then show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
 
 As needed, you can do the following actions at any time: 
 - Add additional child iteration nodes
@@ -120,14 +120,14 @@ Add iterations to support these requirements:
 
 In the following example, Beta 1, Beta 2, Release 1.0, and Release 2.0 are defined for the MyApplication project.  
 
-<img src="media/areas/ALM_CW_IterationHierarchy-Before.png" alt="Flat iteration hierarchy" style="border: 1px solid #C3C3C3;" />  
+<img src="media/areas/ALM_CW_IterationHierarchy-Before.png" alt="Flat iteration hierarchy" />  
 
 As you create the backlog of product features and tasks, assign them to milestones. Assign the features and task by which you expect the team to finish.
 As your needs change, you can add events under each major milestone that reflect how your team schedules and manages its work.  
 
 As the following example shows, the Beta 1 iteration now contains three child nodes, one for each sprint in the Beta 1 time period.  
 
-<img src="media/areas/ALM_CW_IterationHierarchy-After.png" alt="Hierarchical Iteration Hierarchy" style="border: 1px solid #C3C3C3;" />  
+<img src="media/areas/ALM_CW_IterationHierarchy-After.png" alt="Hierarchical Iteration Hierarchy" />  
 
 Iterations don't enforce any rules. For example, you can assign a task to an iteration but not close or complete it during that iteration. At the end of an iteration, you should find all work items that remain active or open for that iteration and take appropriate action. You can, for example, move them to a different iteration or return them to the backlog.
 
@@ -153,7 +153,7 @@ As you can see, areas and iterations play a major role in supporting Agile tools
 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 <a name="field-rules"></a>
 

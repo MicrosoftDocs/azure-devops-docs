@@ -28,7 +28,7 @@ Provides authentication for the `pip` client that can be used to install Python 
 | Argument| Description|
 | --------| -----------|
 | `artifactFeeds`<br/>My feeds| (Optional) Comma-separated list of Azure Artifacts feeds to authenticate with pip. |
-| `pythonDownloadServiceConnections`<br/>Feeds from external organizations| (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-python-download" data-raw-source="[pip service connection](~/pipelines/library/service-endpoints.md#sep-python-download)">pip service connection</a> names from external organizations to authenticate with pip. |
+| `pythonDownloadServiceConnections`<br/>Feeds from external organizations| (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#python-package-download-service-connection" data-raw-source="[pip service connection](~/pipelines/library/service-endpoints.md#python-package-download-service-connection)">pip service connection</a> names from external organizations to authenticate with pip. |
 | `onlyAddExtraIndex`<br/>Don't set primary index URL | (Optional) Boolean value, if set to `true` will force pip to get distributions from official python registry first. By default, it's `false` |
 | [!INCLUDE [temp](../includes/control-options-arguments.md)] |
 
@@ -76,7 +76,7 @@ For project scoped feeds that are in a different project than where the pipeline
 
 ### Download python distributions from other private python servers
 
-In this example, we are setting authentication for downloading from a external python distribution server. Create a <a href="~/pipelines/library/service-endpoints.md#sep-python-download" data-raw-source="[pip service connection](~/pipelines/library/service-endpoints.md#sep-python-download)">pip service connection</a> entry for the external service. The authenticate task uses the service connection to create an environment variable `PIP_INDEX_URL` which contain auth credentials required to download the distributions. 'HelloTestPackage' has to be present in 'pypitest' service connection, otherwise install will fail. If you want [pypi](https://pypi.org) to be consulted first, set `onlyAddExtraIndex` to `true`.
+In this example, we are setting authentication for downloading from a external python distribution server. Create a <a href="~/pipelines/library/service-endpoints.md#python-package-download-service-connection" data-raw-source="[pip service connection](~/pipelines/library/service-endpoints.md#python-package-download-service-connection)">pip service connection</a> entry for the external service. The authenticate task uses the service connection to create an environment variable `PIP_INDEX_URL` which contain auth credentials required to download the distributions. 'HelloTestPackage' has to be present in 'pypitest' service connection, otherwise install will fail. If you want [pypi](https://pypi.org) to be consulted first, set `onlyAddExtraIndex` to `true`.
 
 ```YAML
 - task: PipAuthenticate@1
@@ -126,4 +126,4 @@ To do so, you can either:
 
 ### My Pipeline needs to access a feed in a different project
 
-If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#pipelines-permissions) for more details.

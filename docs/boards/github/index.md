@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/06/2021
+ms.date: 08/26/2021
 ---
 
 
@@ -73,7 +73,19 @@ The following tasks aren't supported at this time:
 
 ## Connect Azure Boards to GitHub repositories 
 
-You can start from Azure Boards or from GitHub to make the connection.  
+::: moniker range=">= azure-devops-2020"
+You can start from Azure Boards or from GitHub to make the connection. You can connect up to 250 GitHub repositories to an Azure Boards project. 
+::: moniker-end 
+
+::: moniker range="azure-devops-2020"
+> [!NOTE]   
+> Connection to more than 100 GitHub repositories requires Azure DevOps Server 2020.1 update or later version.
+::: moniker-end 
+
+::: moniker range="< azure-devops-2020"
+You can start from Azure Boards or from GitHub to make the connection. You can connect up to 100 GitHub repositories to an Azure Boards project. 
+::: moniker-end 
+
  
 > [!NOTE]   
 > We recommend that you use the [Azure Boards app for GitHub](install-github-app.md) to configure and manage your connections to GitHub.com. The app provides a more streamlined configuration experience and has the advantage of authenticating and operating as the app rather than an individual. Once you have configured your connection, you can manage the connected repositories either from Azure Boards or GitHub.com. 

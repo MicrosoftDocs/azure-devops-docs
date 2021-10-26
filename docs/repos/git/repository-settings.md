@@ -11,13 +11,15 @@ monikerRange: '>= tfs-2017'
 
 # Git repository settings and policies
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 Update 2**
+[!INCLUDE [version-tfs-2018-cloud](../includes/version-tfs-2018-cloud.md)]
 
 You can customize your Azure DevOps Git repositories using policy settings. Global options for entire repositories are configured by repository settings.
 There are also user-specific and branch-specific controls, covered by [permissions](set-git-repository-permissions.md#git-repository) and [branch policies](branch-policies.md) respectively.  
 
-This topic covers server-side repository settings.
+This article covers server-side repository settings.
 You may also want to learn about client-side [Git preferences](git-config.md).
+
+[!INCLUDE [note-tfs-2018.2-update](includes/note-tfs-2018.2-update.md)]  
 
 ## View and edit repository settings
 

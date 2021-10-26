@@ -2,6 +2,14 @@
   href: index.yml
 - name: Start using Azure DevOps
   href: ../user-guide/toc.yml
+- name: Integration overview
+  items:
+  - name: Cross-service integration overview
+    href: ../cross-service/cross-service-overview.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: GitHub integration 
+    href: ../cross-service/github-integration.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Deploy to Azure
+    href: ../pipelines/overview-azure.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
 - name: Web portal navigation
   items:
   - name: Navigation 

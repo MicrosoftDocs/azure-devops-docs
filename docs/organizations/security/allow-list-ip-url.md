@@ -46,6 +46,7 @@ https://amcdn.msftauth.net
 https://amp.azure.net
 https://app.vssps.dev.azure.com
 https://app.vssps.visualstudio.com
+https://*.vssps.visualstudio.com
 https://azure.microsoft.com
 https://azurecomcdn.azureedge.net
 https://cdn.vsassets.io
@@ -134,7 +135,7 @@ Also allow IP addresses in the "name": "AzureDevOps" section of [this downloadab
 
 ### Azure Pipelines Agents
 
-If you use Microsoft-hosted agent to run your jobs and you need the information about what IP addresses are used, see [Microsoft-hosted agents Agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges). See all [Azure virtual machine scale set agents](/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops).
+If you use Microsoft-hosted agent to run your jobs and you need the information about what IP addresses are used, see [Microsoft-hosted agents Agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges). See all [Azure virtual machine scale set agents](../../pipelines/agents/scale-set-agents.md?preserve-view=true&view=azure-devops).
 
 If you're running a firewall and your code is in Azure Repos, see [Self-hosted Windows agents FAQs](../../pipelines/agents/v2-windows.md). This article has information about which domain URLs and IP addresses your private agent needs to communicate with.
 
@@ -201,7 +202,7 @@ Ensure the following IP addresses are allowed for inbound connection, so your or
 > | Australia South East | 20.42.226.0/24 |  
 > | Brazil South | 191.235.226.0/24 |  
 > | Central Canada | 52.228.82.0/24 |
-> | Asia Pacific (Hong Kong) | 20.189.107.0/24 |  
+> | Asia Pacific (Singapore) | 20.195.68.0/24 |
 > | South India | 20.41.194.0/24 |  
 > | Central United States | 20.37.158.0/23 |  
 > | West Central United States | 52.150.138.0/24 |  
@@ -214,13 +215,11 @@ Ensure the following IP addresses are allowed for inbound connection, so your or
 > | Western Europe | 40.74.28.0/23 |  
 > | United Kingdom South | 51.104.26.0/24 |  
 
-> [!NOTE]
-> Southeast Asia (SEA) isn't a supported geography yet. When we begin support for SEA, we'll publish the associated IP addresses.
-
 Azure Service Tags are supported for *inbound* connection. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall via a JSON file download.  
 
 > [!NOTE]
-> The Service Tag or previously mentioned inbound IP addresses don't apply to Microsoft Hosted Agents. Customers are still required to allow the [entire geography for the Microsoft Hosted Agents](../../pipelines/agents/hosted.md#agent-ip-ranges).  If allowing the entire geography is a concern, we recommend using the [Azure Virtual Machine Scale Set Agents](../../pipelines/agents/scale-set-agents.md). The Scale Set Agents are a form of self-hosted agents that can be auto-scaled to meet your demands.
+> The Service Tag or previously mentioned inbound IP addresses don't apply to Microsoft Hosted Agents. Customers are still required to allow the [entire geography for the Microsoft Hosted Agents](../../pipelines/agents/hosted.md#agent-ip-ranges).  If allowing the entire geography is a concern, we recommend using the [Azure Virtual Machine Scale Set Agents](../../pipelines/agents/scale-set-agents.md). The Scale Set Agents are a form of self-hosted agents that can be auto-scaled to meet your demands.  
+Hosted macOS agents are hosted in GitHub's macOS cloud. IP ranges can be retrieved using the [GitHub metadata API](https://docs.github.com/en/rest/reference/meta#get-github-meta-information) using the instructions provided [here](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#ip-addresses).
 
 ### Other IP addresses
 

@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
 ms.reviewer: azooinmyluggage
 ms.custom: seodec18
-ms.date: 07/15/2021
+ms.date: 07/30/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -19,7 +19,7 @@ Use a pipeline to automatically build and test your Go projects.
 
 > Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
 
-Import this repo into your Git repo:
+[!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-go

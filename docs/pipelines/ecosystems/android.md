@@ -53,7 +53,7 @@ Gradle is a common build tool used for building Android projects. See the [Gradl
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/ecosystems/android
 pool:
-  vmImage: 'macOS-10.14'
+  vmImage: 'macOS-latest'
 
 steps:
 - task: Gradle@2

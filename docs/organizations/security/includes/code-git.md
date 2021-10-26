@@ -243,5 +243,3 @@ By default, the project-level Readers groups have read-only permissions.
 ::: moniker-end
 
 <a name="pcbs-has-read-by-default"></a>
-
-By default, the Project Collection Build Service can read from all repositories. Any pipeline which runs within the project collection scope can potentially read any repository in the organization or collection. To remove this permission for a repository, change the **Read** permission to **Deny** for the Project Collection Build Service.

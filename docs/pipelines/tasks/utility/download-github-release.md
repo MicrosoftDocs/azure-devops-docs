@@ -18,7 +18,7 @@ Use this task in your pipeline to download assets from your [GitHub release](htt
 ## Prerequisites
 
 ### GitHub service connection
-This task requires a [GitHub service connection](../../library/service-endpoints.md#sep-github) with **Read** permission to the GitHub repository. You can create a GitHub service connection in your Azure Pipelines project. Once created, use the name of the service connection in this task's settings.
+This task requires a [GitHub service connection](../../library/service-endpoints.md#github-service-connection) with **Read** permission to the GitHub repository. You can create a GitHub service connection in your Azure Pipelines project. Once created, use the name of the service connection in this task's settings.
 
 ::: moniker range="> tfs-2018"
 

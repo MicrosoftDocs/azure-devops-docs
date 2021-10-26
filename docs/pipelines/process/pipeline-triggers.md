@@ -25,7 +25,7 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 ## Configure pipeline resource triggers
 
-To trigger a pipeline upon the completion of another pipeline, specify the triggering pipeline as a [pipeline resource](resources.md#resources-pipelines).
+To trigger a pipeline upon the completion of another pipeline, specify the triggering pipeline as a [pipeline resource](resources.md#define-a-pipelines-resource).
 
 The following example has two pipelines - `app-ci` (the pipeline defined by the YAML snippet), and `security-lib-ci` (the triggering pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of `security-lib-ci` is built.
 
@@ -34,8 +34,9 @@ The following example has two pipelines - `app-ci` (the pipeline defined by the 
 # this is being defined in app-ci pipeline
 resources:
   pipelines:
-  - pipeline: securitylib   # Name of the pipeline resource
-    source: security-lib-ci # Name of the pipeline referenced by the pipeline resource
+  - pipeline: securitylib   # Internal name of the source pipeline, used elsewhere within app-ci YAML 
+                            # e.g. to reference published artifacts
+    source: security-lib-ci # Azure Pipelines name of the source pipeline referenced
     project: FabrikamProject # Required only if the source pipeline is in another project
     trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
 ```
@@ -92,7 +93,7 @@ resources:
 ```
 
 > [!NOTE]
-> The pipeline resource also has a `tags` property. The `tags` property of the pipeline resource is used to determine which pipeline run to retrieve artifacts from, when the pipeline is triggered manually or by a scheduled trigger. For more information, see [Resources: pipelines](resources.md#resources-pipelines) and [Evaluation of artifact version](resources.md#evaluation-of-artifact-version).
+> The pipeline resource also has a `tags` property. The `tags` property of the pipeline resource is used to determine which pipeline run to retrieve artifacts from, when the pipeline is triggered manually or by a scheduled trigger. For more information, see [Resources: pipelines](resources.md#define-a-pipelines-resource) and [Evaluation of artifact version](resources.md#evaluation-of-artifact-version).
 
 ## Stage filters
 
@@ -112,7 +113,7 @@ resources:
     source: Farbrikam-CI  
     trigger:    
       stages:         # This stage filter is used when evaluating conditions for 
-      - PreProduction # triggering your pipeine. On successful completion of all the stages
+      - PreProduction # triggering your pipeline. On successful completion of all the stages
       - Production    # provided, your pipeline will be triggered. 
 ```
 

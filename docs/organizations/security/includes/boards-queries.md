@@ -1,132 +1,66 @@
 ---
-ms.topic: include
-ms.technology: devops-security
+ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
-ms.date: 03/25/2020
+ms.topic: include
+ms.date: 08/18/2021
 ---
 
-::: moniker range=">= tfs-2017"
-
-<table>
-<tr valign="bottom">
-<th width="41%">Task</th>
-<th width="15%">Stakeholders</th>
-<th width="12%">Readers</th>
-<th width="15%">Contributors</th>
-<th width="17%">Project admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">View and run managed queries 
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Create and save managed My queries
-</td>
-<td>✔️</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Contribute, delete, and manage permissions of Shared queries and folders<br/><em>(Stakeholders can't save Shared queries even if granted permissions)</em>
-</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">View query charts
-</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Create query charts
-</td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Powerful semantic work-tracking search
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
-  
-::: moniker-end    
-
-
-
-::: moniker range="<= tfs-2015"
-
-<table>
-<tr valign="bottom">
-<th width="41%">Task</th>
-<th width="15%">Stakeholders</th>
-<th width="12%">Readers</th>
-<th width="15%">Contributors</th>
-<th width="17%">Team admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">View and run managed queries 
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Create and save managed My queries
-</td>
-<td>✔️</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Contribute, delete, and manage permissions of Shared queries and folders<br/><em>(Stakeholders can't save Shared queries even if granted permissions)</em>
-</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-<tr>
-<tr>
-<td align="left">View query charts
-</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Create query charts
-</td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
-  
-::: moniker-end    
-
-
+:::row:::
+   :::column span="2":::
+      **Task** 
+   :::column-end:::
+   :::column span="1":::
+     **Readers**
+   :::column-end:::
+   :::column span="1":::
+     **Contributors**
+   :::column-end:::
+   :::column span="1":::
+     **Project admins**
+   :::column-end:::
+:::row-end:::
+::: moniker range="azure-devops"  
+:::row:::
+   :::column span="2":::
+      View and run managed queries, view query charts
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker-end  
+:::row:::
+   :::column span="2":::
+      Create and save managed My queries, query charts
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Create, delete, and save Shared queries, charts, folders 
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::

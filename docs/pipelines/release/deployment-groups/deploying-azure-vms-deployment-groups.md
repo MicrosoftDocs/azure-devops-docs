@@ -82,7 +82,7 @@ Since there is no configuration change required for the build pipeline, the buil
 
 1. Select the **Tasks** tab to view the deployment tasks in pipeline. The tasks are organized as three stages called **Agent phase**, **Deployment group phase**, and **IIS Deployment phase**.
 
-1. Select the **Agent phase**. In this stage, the target servers are associated with the deployment group using the Azure Resource Group Deployment task. To run, an agent pool and specification must be defined. Select the **Azure Pipelines** pool and **vs2017-win2016** specification.
+1. Select the **Agent phase**. In this stage, the target servers are associated with the deployment group using the Azure Resource Group Deployment task. To run, an agent pool and specification must be defined. Select the **Azure Pipelines** pool and **windows-latest** specification.
 
     ![Configuring the agent phase](media/deploying-azure-vms-deployment-groups/agent-phase.png)
 

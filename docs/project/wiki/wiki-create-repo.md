@@ -100,7 +100,7 @@ However, you can get to it from the following URL:
 
 Choose **Clone Wiki** from the ellipsis near the wiki picker to access the Wiki URL.
 
-<img align="top" src="media/wiki/clone-wiki.png" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />    
+<img align="top" src="media/wiki/clone-wiki.png" alt="Clone wiki" />    
 
 The URL of the wiki Git repository is exposed. Copy and paste it into your web browser to access the underlying Git repo.
 

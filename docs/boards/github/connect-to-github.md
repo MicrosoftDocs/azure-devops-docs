@@ -12,7 +12,7 @@ ms.date: 07/06/2021
 
 # Connect Azure Boards to GitHub (Cloud) 
 
-**Azure Boards** | [**Azure DevOps Server 2020 | Azure DevOps Server 2019**](/azure/devops/boards/github/connect-on-premises-to-github?view=azure-devops-2020&preserve-view=true)
+**Azure Boards** | [**Azure DevOps Server 2020 | Azure DevOps Server 2019**](./connect-on-premises-to-github.md?preserve-view=true&view=azure-devops-2020)
 
 To support linking of GitHub commits and pull requests to Azure Boards work items, you connect your Azure Boards project to GitHub.com repositories. You can then use GitHub for software development while using Azure Boards to plan and track your work. For an overview of the Azure Boards app for GitHub, see [Azure Boards-GitHub integration](index.md).  
 
@@ -72,6 +72,8 @@ The following authentication options are supported based on the GitHub platform 
 	When you connect using your GitHub account, you use your GitHub account credentials to authenticate. If connecting using PAT, see [Add a GitHub connection using PAT](#github-pat). If connecting to a GitHub Enterprise Server, see [Register Azure DevOps in GitHub as an OAuth App](#server-github-ent-oauth-register).
 
 ## Add a GitHub connection with GitHub credentials 
+
+You can connect up to 250 GitHub repositories to an Azure Boards project. 
 
 1. 	If this is your first time connecting to GitHub from Azure Boards, you will be asked to sign in using your GitHub credentials. Choose an account for which you are an administrator for the repositories you want to connect to. 
 
@@ -312,5 +314,4 @@ See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.m
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 - [Build GitHub repositories](../../pipelines/repos/github.md) 
 - [Build GitHub Enterprise Server repositories](../../pipelines/repos/github-enterprise.md)
-- [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md) 
-
+- [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md)

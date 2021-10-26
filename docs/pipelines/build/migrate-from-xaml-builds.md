@@ -263,7 +263,7 @@ Here are a few examples of the kinds of apps you can build:
 
 * Build your ASP.NET Core app
 
-* [Build your Universal Windows Platform app](../apps/windows/universal.md)
+* [Build your Universal Windows Platform app](/previous-versions/azure/devops/pipelines/apps/windows/universal)
 
 * [Build your Xamarin app](../ecosystems/xamarin.md)
 

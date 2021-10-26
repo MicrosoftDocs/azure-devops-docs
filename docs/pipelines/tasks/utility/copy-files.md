@@ -43,7 +43,8 @@ None
 |`OverWrite`<br/>Overwrite|(Optional) Replace existing files in target folder <br/>Default value: `false`|
 |`flattenFolders`<br/>Flatten Folders|(Optional) Flatten the folder structure and copy all files into the specified target folder <br/>Default value: `false`|
 |`preserveTimestamp`<br/>Preserve Target Timestamp|(Optional) Using the original source file, preserve the target file timestamp. <br/>Default value: `false`|
-
+|`retryCount`<br/>Retry count to copy the file|(Optional) Specify the retry count to copy the file. It might help to resolve intermittent issues e.g. with UNC target paths on a remote host. <br/>Default value: `0`|
+|`ignoreMakeDirErrors`<br/>Ignore errors during creation of target folder|(Optional) This could be useful to avoid issues with parallel execution of task by several agents with one target folder. <br/>Default value: `false`|
 ## Notes
 
 If no files are matched, the task will still report success.

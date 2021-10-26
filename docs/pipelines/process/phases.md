@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
-ms.date: 03/24/2021
+ms.date: 09/23/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -56,7 +56,7 @@ This YAML file has a job that runs on a [Microsoft-hosted agent](../agents/hoste
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-latest'
 steps:
 - bash: echo "Hello world"
 ```
@@ -68,7 +68,7 @@ jobs:
 - job: myJob
   timeoutInMinutes: 10
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - bash: echo "Hello world"
 ```
@@ -322,6 +322,7 @@ Currently, only the following tasks are supported out of the box for agentless j
 * [Delay task](../tasks/utility/delay.md)
 * [Invoke Azure Function task](../tasks/utility/azure-function.md)
 * [Invoke REST API task](../tasks/utility/http-rest-api.md)
+* [Manual Validation task](../tasks/utility/manual-validation.md)
 * [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
 * [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
 * [Query Work Items task](../tasks/utility/work-item-query.md)
@@ -407,17 +408,17 @@ Example jobs that build in parallel (no dependencies):
 jobs:
 - job: Windows
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
   steps:
   - script: echo hello from Windows
 - job: macOS
   pool:
-    vmImage: 'macOS-10.14'
+    vmImage: 'macOS-latest'
   steps:
   - script: echo hello from macOS
 - job: Linux
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - script: echo hello from Linux
 ```
@@ -614,7 +615,7 @@ time the job is queued or is waiting for an agent.
 
 The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. When `0` is specified, the maximum limit is used (described above).
 
-The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time when the deployment task is set to keep running if a previous task has failed. When not specified, the default is 5 minutes.
+The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time when the deployment task is set to keep running if a previous task has failed. When not specified, the default is 5 minutes. The value should be in range from **1** to **35790** minutes.
 
 ```yaml
 jobs:
@@ -655,6 +656,8 @@ From a single job you author, you can run multiple jobs on multiple agents in pa
    in parallel, for example, to different geographic regions.
 
 * **Multi-configuration testing:** You can run test multiple configurations in parallel.
+
+* Multi-configuration will always generate at least one job, even if a multi-configuration variable is empty. 
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -844,7 +847,9 @@ When you run an agent pool job, it creates a workspace on the agent. The workspa
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-When you run a pipeline on a **self-hosted agent**, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
+The `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build.
+
+When you run a pipeline on a **self-hosted agent**, by default, none of the subdirectories other than `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
 
 > [!IMPORTANT]
 > The workspace clean options are applicable only for self-hosted agents. When using Microsoft-hosted agents, job are always run on a new agent. 
@@ -861,13 +866,11 @@ When you specify one of the `clean` options, they are interpreted as follows:
 - `resources`: Delete `Build.SourcesDirectory` before running a new job.
 - `all`: Delete the entire `Pipeline.Workspace` directory before running a new job.
 
-`$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
-
 ```yaml
   jobs:
   - deployment: deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
     workspace:
       clean: all
     environment: staging
@@ -913,7 +916,7 @@ This example YAML file publishes the artifact `WebSite` and then downloads the a
 jobs:
 - job: Build
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - script: npm test
   - task: PublishBuildArtifacts@1
@@ -924,7 +927,7 @@ jobs:
 # download the artifact and deploy it only if the build job succeeded
 - job: Deploy
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
   - checkout: none #skip checking out the default repository resource
   - task: DownloadBuildArtifacts@0

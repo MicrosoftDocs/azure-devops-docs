@@ -20,7 +20,7 @@ Provides credentials for Azure Artifacts feeds and external Maven repositories i
 | Argument | Description |
 | ---------| ----------- |
 | `artifactsFeeds`<br/>My feeds (select below) | (Optional) Comma-separated list of Azure Artifacts feed names to authenticate with Maven. If you only need authentication for external maven repositories, leave this field blank. |
-| `mavenServiceConnections`<br/>Feeds from external organizations | (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-maven" data-raw-source="[Maven service connection](~/pipelines/library/service-endpoints.md#sep-maven)">Maven service connection</a> names from external organizations to authenticate with Maven. If you only needs authentication for Azure Artifacts feeds, leave this field blank.|
+| `mavenServiceConnections`<br/>Feeds from external organizations | (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#maven-service-connection" data-raw-source="[Maven service connection](~/pipelines/library/service-endpoints.md#maven-service-connection)">Maven service connection</a> names from external organizations to authenticate with Maven. If you only needs authentication for Azure Artifacts feeds, leave this field blank.|
 
 ## Examples
 
@@ -167,6 +167,6 @@ The access token variable can be set in your pipelines using these [instructions
 
 ### My Pipeline needs to access a feed in a different project
 
-If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#pipelines-permissions) for more details.
 
 <!-- ENDSECTION -->

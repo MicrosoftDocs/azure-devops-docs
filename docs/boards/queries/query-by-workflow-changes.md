@@ -8,7 +8,7 @@ ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 03/10/2021
 ---
 
@@ -88,9 +88,9 @@ Query clauses that specify an Identity or workflow-associated field can use the 
 ---
  
 
-#### Notes:
-1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
-2. The **Was Ever** operator is only valid for Kanban board columns for Azure DevOps Services at this time.  
+> [!NOTE]  
+> 1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
+> 2. The **Was Ever** operator is only valid for Kanban board columns for Azure DevOps Services at this time.  
 
 
 Use the **In** and **Not In** operators to filter for or exclude two or more picklist entries or a delimited set of items. Use the **In Group** or **Not In Group** operators to filter for items that belong or don't belong within a category group or  security group. For more information, see [Query fields, operators, and macros](query-operators-variables.md). 
@@ -101,73 +101,102 @@ Use the **In** and **Not In** operators to filter for or exclude two or more pic
 
 Use the search box or query editor to quickly find work items based on an assignment made to an **Identity** field. Also, you can filter for work items based on who changed, resolved, or closed a work item. By specifying a time period, you can scope your query even further, which can help with performance. 
 
-Use **=** to find current assignments, **Was Ever** to list items based on past assignments, and <strong>@Me</strong> to scope to your user identity. 
+Use **=** to find current assignments, **Was Ever** to list items based on past assignments, and **@Me** to scope to your user identity. 
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-  <th>
-    <p>Filter for</p>
-  </th>
-  <th>
-    <p>Include these query clauses</p>
-  </th>
-</tr>
-<tr>
-  <td>
-    <p>Active items assigned to me</p>
-  </td>
-  <td>
-    <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Assigned To <em> = </em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-<p style="margin-bottom:0px"><code>And <em> State </em> = <em> Active</code></p>
-</td>
-</tr>
-<tr>
-<tr>
-  <td>
-    <p>Closed items that at some point was assigned to me</p>
-  </td>
-  <td>
-    <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Assigned To </em> Was Ever <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-<p style="margin-bottom:0px"><code>And </em> State <em> = </em> Closed</code></p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Active user stories assigned to my (Web) team</p>
-  </td>
-  <td>
-    <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type = User Story</code></p>
-<p style="margin-bottom:0px"><code>And <em> State </em> = <em> Active</code></p>
-<p style="margin-bottom:0px"><code>And </em> Assigned To <em> In Group </em> [FabrikamFiber]\Web</code></p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Items I&#39;ve modified in the last 30 days</p>
-  </td>
-  <td>
-    <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Changed By <em> = </em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-<p style="margin-bottom:0px"><code>And <em> Changed Date </em> &gt;= <em>   <xref href="Today-30" data-throw-if-not-resolved="False" data-raw-source="@Today-30"></xref></code></p>
-  </td>
-</tr>
+:::row:::
+     :::column span="1":::
+   
+   **Filter for**
 
-<tr>
-  <td>
-    <p>Unassigned items (leave the Value blank)</p>
-  </td>
-  <td>
-    <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Assigned To </em> = _</code></p>
-  </td>
-</tr>
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   **Include these query clauses**
 
-</tbody>
-</table>
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Active items assigned to me
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To @Me`
+   
+`And State = Active`
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+:::row:::
+     :::column span="1":::
+   
+   Closed items that at some point was assigned to me
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To Was Ever @Me`
+
+`And State = Closed`
+
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Active user stories assigned to my (Web) team
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = User Story`
+
+`And State = Active`
+
+`And Assigned To In Group [FabrikamFiber]\Web`
+
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Items I&#39;ve modified in the last 30 days
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Changed By = @Me`
+
+`And Changed Date >= @Today-30`
+
+  
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+     :::column span="1":::
+   
+   Unassigned items (leave the Value blank)
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Assigned To = _`
+  
+   :::column-end:::
+:::row-end:::
 
 <!---
 ![Was Ever operator to query for past assignment](media/example-work-item-queries/IC697729.png)
@@ -193,67 +222,88 @@ You can use the **In Group** or **Not In Group** operators to filter a query bas
 
 You use the State, Reason, and Resolved Reason fields to query for items based on workflow changes. 
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-  <th>Filter for</th>
-  <th>Include these query clauses</th>
-</tr>
-<tr>
-  <td>
-    <p>Resolved stories
-    </p>
-</td>
-  <td>
-    <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> User Story</code></p>
-<p style="margin-bottom:0px"><code>And <em> State </em> = <em> Resolved</code></p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Stories, bugs, and tasks that are new or active
-    </p>
-</td>
-  <td>
-    <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type </em> In <em> User Story,Bug,Task</code></p>
-<p style="margin-bottom:0px"><code>And </em> State <em> In </em> New,Active</code></p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Items removed as they&#39;re duplicate  </p>
-  </td>
-  <td>
-    <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>State <em> = </em> Removed</code></p>
-<p style="margin-bottom:0px"><code>And <em> Reason </em> = <em> Duplicate</code></p>
-  </td>
-</tr>
+:::row:::
+     :::column span="1":::
+   **Filter for**
+   :::column-end:::
+     :::column span="1":::
+   **Include these query clauses**
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Resolved stories
+   
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type  = User Story`  
+   `And State = Resolved`
 
-<tr>
-  <td>
-    <p>Items failing acceptance tests  </p>
-  </td>
-  <td>
-    <p style="margin-bottom:0px">
-      <code>Resolved Reason = Acceptance tests fail</code>
-    </p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Items closed within the last 15 days</p>
-  </td>
-  <td>
-    <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>State </em> = <em> Closed</code></p>
-<p style="margin-bottom:0px"><code>And </em> Closed Date  <em> &gt;  </em> <xref href="Today-15" data-throw-if-not-resolved="False" data-raw-source="@Today-15"></xref></code></p>
-  </td>
-</tr>
-</tbody>
-</table>
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Stories, bugs, and tasks that are new or active
+   
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type In User Story,Bug,Task`  
+   `And State In New,Active`
+
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Items removed as they&#39;re duplicate  
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State= Removed`  
+   `And Reason = Duplicate`
+
+  
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+     :::column span="1":::
+   
+   Items failing acceptance tests  
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   `Resolved Reason = Acceptance tests fail`
+   
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Items closed within the last 15 days
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`State = Closed`  
+   `And Closed Date  > @Today-15`
+
+  
+   :::column-end:::
+:::row-end:::
+
 
 <a id="workflow-change-who"/> 
 
@@ -261,34 +311,43 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
 
 You can quickly find items that you changed, resolved, or closed. You can also find items that were changed by other team members. Several fields&mdash;such as the Created By, Changed By, Resolved By, and Closed By&mdash;are populated based on changes to the workflow.  
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-  <th>Filter for</th>
-  <th>Include these query clauses</th>
-</tr>
-<tr>
-  <td>
-    <p>User Stories that I closed </p>
-</td>
-  <td>
-    <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> User Story</code></p>
-<p style="margin-bottom:0px"><code>And <em> Closed By </em> = <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Items I resolved in the last week</p>
-  </td>
-  <td>
-    <p style="margin-bottom:0px">
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Resolved By </em> = <em> <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code></p>
-<p style="margin-bottom:0px"><code>And </em> Resolved Date <em> &gt;= </em> <xref href="Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"></xref></code></p>
-  </td>
-</tr>
-</tbody>
-</table>
+:::row:::
+     :::column span="1":::
+   **Filter for**
+   :::column-end:::
+     :::column span="1":::
+   **Include these query clauses**
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   User Stories that I closed 
+
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = User Story`  
+   `And Closed By = @Me`
+
+  
+   :::column-end:::
+:::row-end:::
+:::row:::
+     :::column span="1":::
+   
+   Items I resolved in the last week
+
+  
+   :::column-end:::
+     :::column span="1":::
+   
+   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Resolved By = @Me`  
+   `And Resolved Date >= Today-7`
+
+  
+   :::column-end:::
+:::row-end:::
 
 
 ## Query changes in work item state 
@@ -319,7 +378,7 @@ Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board L
 
 For example, you can list items based on the team area path, and if they are in a specific custom Kanban column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring Kanban goodness to queries, and more](https://blogs.msdn.microsoft.com/devops/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)  
 
-<img src="media/query-kanban-fields.png" alt="Query filter on Kanban board fields" style="border: 1px solid #C3C3C3;" />  
+![Query filter on Kanban board fields](media/query-kanban-fields.png)  
 
 > [!NOTE]    
 > Queries are now scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.  
@@ -740,19 +799,18 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
 :::row-end:::
 
-
-#### Notes:  
-
-<a id="sync">  </a>
-
 ::: moniker range="azure-devops"
+> [!NOTE]  
+> 
+> <a id="sync">  </a>
+>
+> 1. See [Date and Identity fields](#date-identity).  
+> 2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Azure Active Directory](../../organizations/security/about-permissions.md#aad). 
+> 3. See [Activated By/Date and Resolved By/Date fields](#activated-resolved-fields).   
+> 4. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md).  
 
-1. See [Date and Identity fields](#date-identity).  
-2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Azure Active Directory](../../organizations/security/about-permissions.md#aad). 
-3. See [Activated By/Date and Resolved By/Date fields](#activated-resolved-fields).   
-3. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
-	> [!NOTE]  
-	> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
+> [!NOTE]  
+> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
 
 ::: moniker-end
 
@@ -767,8 +825,9 @@ You can use the following fields to filter your queries or build reports. Some o
 3.  Reportable field with attribute set to Dimension. Only valid when the collection is configured to support the On-premises XML model. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises Azure DevOps, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
 4.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises Azure DevOps, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
 5. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
-	> [!NOTE]  
-	> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
+
+> [!NOTE]  
+> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.
 
 ::: moniker-end
 

@@ -9,10 +9,12 @@
   items:
   - name: View, open, run a query 
     href: view-run-query.md
+    displayname: favorites, email, run, directory, folders, breadcrumbs, command line 
   - name: Define a query
     href: using-queries.md
   - name: Manage queries & query folders
     href: organize-queries.md
+    displayname: delete, rename, dashboard, share, save 
   - name: Chart a query
     href: ../../report/dashboards/charts.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Triage work items  

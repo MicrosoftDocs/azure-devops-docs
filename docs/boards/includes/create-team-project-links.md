@@ -1,5 +1,9 @@
 ---
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/22/2021
 ---
 
 
@@ -11,7 +15,7 @@ If you have a project, start tracking work:
 - [Create a backlog](../backlogs/create-your-backlog.md) - to develop your product backlog  
 - [Kanban](../boards/kanban-basics.md)  - to start working in Kanban   
 - [Plan a sprint](../sprints/assign-work-sprint.md) - to start working in Scrum    
-- [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) - to create a work breakdown structure   
+- [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).     
 
 For more information on Agile tools:
 
