@@ -65,6 +65,11 @@ If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://ww
 You can install those dependencies on supported Linux platforms by running `./bin/installdependencies.sh` in the agent directory.
 >
 > Be aware that some of these dependencies required by .NET Core are fetched from third party sites, like `packages.efficios.com`. Review the `installdependencies.sh` script and ensure any referenced third party sites are accessible from your Linux machine before running the script.
+>
+> Please also make sure that all required repositories are connected to the relevant package manager used in `installdependencies.sh` (like `apt` or `zypper`).
+> 
+> For issues with dependencies installation (like 'dependency was not found in repository' or 'problem retrieving the repository index file') - you can reach out to distribution owner for futher support.
+
 
 ::: moniker-end
 
