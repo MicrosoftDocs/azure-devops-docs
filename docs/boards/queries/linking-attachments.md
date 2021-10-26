@@ -1,18 +1,18 @@
 ---
-title: Query by link or attachment count   
+title: Query work items by link or attachment count in Azure Boards  
 titleSuffix: Azure Boards
-description: Query work items based on link type, link count, link restrictions, and attachment file count
+description: Learn how to query work items based on link type, link count, link restrictions, and attachment file count in Azure Boards.
 ms.technology: devops-agile
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 03/29/2021
+ms.date: 10/24/2021
 ---
 
 
-# Query by link or attachment count  
+# Query work items by link or attachment count  
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -127,7 +127,7 @@ You can filter for work items by the link type, link count, or attachment count.
 
 ## List hierarchical items in a tree view  
 
-Add a query and select **Tree of work items** to begin your query. You should see something similar to the following: 
+Add a query and select **Tree of work items** to begin your query. You should see something similar to the following examples: 
 
 #### [Browser](#tab/browser/)
 
@@ -203,7 +203,7 @@ The following example shows a dependent linked query that returns items with dep
 
 The following query finds work items in all projects that are linked to work items under the **Fabrikam** area path and project using Predecessor and Successor link types.
 
-:::image type="content" source="media/link-attachments/direct-links-query-web-portal.png" alt-text="Screenshot of Query Editor, Work items and direct links, Web portal.":::
+:::image type="content" source="media/link-attachments/direct-links-query-web-portal.png" alt-text="Screenshot of Query Editor, Work items, and direct links, Web portal.":::
 
 **Why this works:**
 
@@ -230,7 +230,7 @@ Use this type of query to list all dependent work items that link to active Prod
 
 - Choosing the **Only return items that have the specified links** returns only top-level work items that have dependencies.
 
-- Choosing **Return links of any type** returns all linked work items that match the filter criteria for linked work items, in this case, returning all work items that are not under the **Phone Saver\\Phone Customers** area path, and aren't completed or removed.
+- Choosing **Return links of any type** returns all linked work items that match the filter criteria for linked work items, in this case, returning all work items that aren't under the **Phone Saver\\Phone Customers** area path, and aren't completed or removed.
 
 The following image shows the query results that are returned.
 
@@ -250,11 +250,11 @@ If you typically organize your user stories under features, you can quickly find
 
 Or, you can find unparented backlog items using a **Work items and direct links** query. For example, the following query lists active user stories for the Azure DevOps team that don't have a Parent link. 
 
-:::image type="content" source="media/link-attachments/unparented-work-items.png" alt-text="Screenshot of Query Editor, Work items and direct links, Web portal, unparented user stories.":::
+:::image type="content" source="media/link-attachments/unparented-work-items.png" alt-text="Screenshot of Query Editor, Work items, and direct links, Web portal, unparented user stories.":::
   
 <a id="table-field"/>
 
-## Link and attachment count and comment fields 
+## Link, attachment count, and comment fields 
 
 The following table describes fields associated with links and attachments. Most of these fields don't appear within the work item form, but are tracked for all work item types. 
 
@@ -274,7 +274,7 @@ The following table describes fields associated with links and attachments. Most
    Attachment File Count
    :::column-end:::
    :::column span="3":::
-   The number of files attached to the work item and stored in the work item tracking database..
+   The number of files attached to the work item and stored in the work item tracking database.
 
    Reference Name=System.AttachedFileCount, Data type=Integer
 
@@ -291,7 +291,7 @@ The following table describes fields associated with links and attachments. Most
    Comment Count
    :::column-end:::
    :::column span="3":::
-   Available for TFS 2017 with the new work item form which supports the Discussion section and later versions. The number of comments added to the **Discussion** section of the work item.
+   Available for TFS 2017 with the new work item form that supports the Discussion section and later versions. The number of comments added to the **Discussion** section of the work item.
 
    Reference Name=System.CommentCount, Data type=Integer
 
@@ -306,7 +306,7 @@ The following table describes fields associated with links and attachments. Most
    External Link Count
    :::column-end:::
    :::column span="3":::
-   The number of links from the work item to artifacts that are not work items. such as pull requests, commits, changesets, or other link types.
+   The number of links from the work item to artifacts that aren't work items. This count includes items such as pull requests, commits, changesets, or other link types.
 
    Reference Name=System.ExternalLinkCount, Data type=Integer
    :::column-end:::
@@ -383,7 +383,7 @@ The following table describes fields associated with links and attachments. Most
    Related Link Count
    :::column-end:::
    :::column span="3":::
-   The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types)
+   The number of links defined for a work item that use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types)
 
    Reference Name=System.RelatedLinkCount, Data type=Integer
    :::column-end:::

@@ -1,7 +1,7 @@
 ---
-title: Pick list queries
+title: Create queries based on rank and priority fields
 titleSuffix: Azure Boards
-description: Create queries based on planning, ranking, priority, and picklist fields in Azure DevOps
+description: Learn how to create queries based on planning, ranking, priority, and picklist fields in Azure DevOps and Azure Boards.
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
@@ -9,10 +9,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 07/09/2020
+ms.date: 10/24/2021
 ---
 
-# Query by picklist value
+# Query by rank and picklist value in Azure DevOps and Azure Boards
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -28,7 +28,7 @@ Query clauses that specify a string or integer field can use the operators liste
 - In, Not In  
 - Was Ever  
 
-## Pick list queries 
+## Picklist query examples 
 
 Most of the planning fields described in the next section are either an integer or string field. For example queries of numeric or rich-text fields, see [Query by numeric fields](query-numeric.md) and [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).    
 
@@ -102,7 +102,7 @@ The following table describes the fields that you can use to plan and prioritize
 
    :::column-end:::
    :::column span="2":::
-   A number usually assigned by a background process used to track the sequence of items on a backlog or board.
+   A number assigned by a background process used to track the sequence of items on a backlog or board.
 
    Reference name=Microsoft.VSTS.Common.BacklogPriority, Data type=Double
 
@@ -137,7 +137,7 @@ The following table describes the fields that you can use to plan and prioritize
 
    :::column-end:::
    :::column span="2":::
-   Indicates whether or not the requirement is committed in the project. You can specify **Yes** or **No**.
+   Indicates if the requirement is committed in the project. You can specify **Yes** or **No**.
 
    Reference name=Microsoft.VSTS.CMMI.Committed, Data type=String
 
@@ -153,7 +153,7 @@ The following table describes the fields that you can use to plan and prioritize
 
    :::column-end:::
    :::column span="2":::
-   Indicates whether or not the issue is affecting the critical path of the project plan. You can specify **Yes** or **No**.
+   Indicates if the issue is affecting the critical path of the project plan. You can specify **Yes** or **No**.
  
    Reference name=Microsoft.VSTS.CMMI.Escalate, Data type=String
 
@@ -172,9 +172,9 @@ The following table describes the fields that you can use to plan and prioritize
    A subjective rating of the bug, issue, task, or test case as it relates to the business. You can specify the following values:
 
    
-   - **1**: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.
+   - **1**: Product can't ship without the successful resolution of the work item, and it should be addressed.
 
-   - **2**: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.
+   - **2**: Product can't ship without the successful resolution of the work item, but it doesn't need to be addressed immediately.
 
    - **3**: Resolution of the work item is optional based on resources, time, and risk.
  
@@ -232,7 +232,7 @@ The following table describes the fields that you can use to plan and prioritize
 
    :::column-end:::
    :::column span="2":::
-   A number, usually assigned by a background process, used to track the list order of items on a backlog or board in the web portal.
+   A number, assigned by a background process, used to track the list order of items on a backlog or board in the web portal.
  
    Reference name=Microsoft.VSTS.Common.StackRank, Data type=Double
 
@@ -248,7 +248,7 @@ The following table describes the fields that you can use to plan and prioritize
 
    :::column-end:::
    :::column span="2":::
-   A subjective unit of measure that captures the how the business value decreases over time. Higher values indicate that the epic or feature is inherently more time critical than those items with lower values.
+   A subjective unit of measure that captures how the business value lessens over time. Higher values indicate that the epic or feature is inherently more time critical than those items with lower values.
 
    Reference name=Microsoft.VSTS.Common.TimeCriticality, Data type=Double
   
@@ -287,8 +287,8 @@ The following table describes the fields that you can use to plan and prioritize
    :::column-end:::
    :::column span="2":::
    The area of customer value addressed by the epic, feature, or backlog item. Values include:
-   - **Architectural** &mdash; technical services to implement business features that deliver solution
-   - **Business** &mdash; services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
+   - **Architectural—technical services to implement business features that deliver solution
+   - **Business—services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
 
    Reference name=Microsoft.VSTS.Common.ValueArea, Data type=String
   
@@ -305,7 +305,7 @@ The following table describes the fields that you can use to plan and prioritize
 > 2. The sequence of items on a product backlog page is determined according to where you have added or dragged the items. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, Basic, CMMI) field. These fields determine the order in which backlog items appear on a backlog page. They are assigned to `type="Order"` in the ProcessConfiguration file.  
 
 
-## More on Backlog Priority or Stack Rank fields
+## More about Backlog Priority or Stack Rank fields
 
 The Backlog Priority and Stack Rank fields don't appear on the work item forms. (To learn why, see [Where is the field on the work item form to order the backlog?](https://devblogs.microsoft.com/devops/where-is-the-field-on-the-work-item-form-to-order-the-backlog).
 
