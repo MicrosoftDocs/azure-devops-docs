@@ -27,7 +27,7 @@ You can use this report to answer the following questions:
 - How much work must the team still perform to implement each user story?
 - How much work did the team perform in the last calendar period?
   
-## Required Permissions  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
 
