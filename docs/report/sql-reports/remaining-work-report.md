@@ -1,6 +1,6 @@
 ---
 title: Remaining Work Report 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to build a report that tracks the team's progress and identify any problems in the flow of work.
 ms.technology: devops-analytics
 ms.topic: reference
@@ -28,8 +28,10 @@ After the team has estimated its tasks and begun work, you can use the Remaining
 **Required Permissions**  
   
 To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report
+
+<a name="Data"></a>
+
+## Data in the report
 
 The Remaining Work report summarizes the data that was captured during the specified time interval for each task, user story, or bug based on the filter criteria that were specified for the report. The data is derived from the data warehouse.  
   
@@ -76,8 +78,10 @@ For the Remaining Work report to be useful and correct, the team must carry out 
     >  If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and user story. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
   
 -   Update the **State** of each task, story, and bug as it progresses from active to closed.  
-  
-##  <a name="Duration"></a> Setting the Duration of the Iteration  
+
+<a name="Duration"></a>
+
+## Setting the Duration of the Iteration  
 
 To understand the progress made for your current iteration, the start and end dates for the report must match the dates of your current iteration cycle.  
   
@@ -86,8 +90,10 @@ To understand the progress made for your current iteration, the start and end da
 1.  Next to **Iteration Start (Date)** or **Iteration End (Date)**, select the calendar icon, and then select a date.  
   
 2.  Select **View Report**.  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
+
+<a name="Interpreting"></a>
+
+## Interpreting the Report  
 
 The Remaining Work report displays information that you can use to understand how well the team is progressing and whether the team will finish the tasks within the given time.  
   
@@ -130,8 +136,10 @@ An unhealthy Remaining Work report might show one or more of the following indic
 -   **Number of remaining hours or active work items increases**.  
   
      This situation indicates that either the team didn't accurately estimate the work at the start of the iteration or that the team added features after the iteration started. When required effort is larger than estimated effort, team members might be underestimating the difficulty, time, or other factors. This area is worth asking about to determine root causes. For example, you might want to determine how granular the tasks are.  
-  
-##  <a name="Changing"></a> Filtering the Report and Changing the Display  
+
+<a name="Changing"></a>
+
+## Filtering the Report and Changing the Display  
 
 You can filter the Remaining Work report or change its display in the following ways:  
   

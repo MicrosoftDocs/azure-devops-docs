@@ -1,6 +1,6 @@
 ---
 title: Reactivations Report
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to build a report that determines how effectively the team is fixing bugs.
 ms.technology: devops-analytics
 ms.topic: reference
@@ -29,8 +29,10 @@ For information about how to access, refresh, or manage reports, see [Reporting 
 **Required Permissions**  
   
 To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+
+<a name="Data"></a>
+
+## Data in the Report  
 
 The Reactivations report shows an area graph of the number of bugs or stories that are in a resolved state or that have been reactivated from the closed state. The data is derived from the data warehouse. The graph shows the number of items based on the time duration and filters that you specify, as the following illustration shows.  
   
@@ -51,8 +53,10 @@ For the Reactivations report to be useful and correct, the team must carry out t
 -   Define user stories and bugs, and specify their **Iteration** and **Area** paths.  
   
 -   Update the **State** of stories and bugs as they progress from active to closed.  
-  
-##  <a name="Duration"></a> Setting the Duration of the Iteration  
+
+<a name="Duration"></a>
+
+## Setting the Duration of the Iteration  
 
 To understand the reactivation rate of your current iteration, the start and end dates for the report must match the dates of your current iteration cycle.  
   
@@ -61,8 +65,10 @@ To understand the reactivation rate of your current iteration, the start and end
 1.  Next to **Iteration Start (Date)** or **Iteration End (Date)**, select the calendar icon, and then select a date.  
   
 2.  Select **View Report**.  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
+
+<a name="Interpreting"></a>
+
+## Interpreting the Report  
 
 You should expect the Reactivations report to vary based on where you are in your product development cycle. Early iterations should show few reactivations. As bugs and stories are closed, you'll want to review the rate of reactivations.
   
@@ -97,8 +103,10 @@ The following illustration shows an unhealthy version of the Reactivations repor
 |**The team is reactivating a high number of bugs**. You should consider the reactivation rate as a percentage of the overall number of bugs that the team is finding.<br /><br /> A high rate of bug reactivation might indicate that the team is closing bugs prematurely. It's a warning sign of project dysfunction. Reactivations introduce extra work into the product cycle, which often doubles the total effort that is required to complete the corresponding work.|-   Is the team carrying out sufficient unit testing when it resolves bugs?<br />-   Do the bug descriptions support efficient bug resolution?<br />-   Are bugs being resolved even though the underlying problems haven't been fixed?<br />-   Should some bugs be set to lower priority, effectively reducing the number of high priority bugs that the team is working on?<br />-   Is the test lab being managed effectively?|  
 |**The team is reactivating a high number of user stories**. You should consider the reactivation rate of user stories as a percentage of the overall number of user stories that the team is closing. A high rate of story reactivation might indicate that other issues warrant investigation.|-   Is the test coverage adequate for user scenarios?|  
 |**The number of reactivations is growing**. When the number of reactivations grows, reactivated bugs or stories aren't being fixed. You might want to reassess team priorities for fixing reactivated bugs or stories.|-   Are priorities for the team set correctly?<br />-   Are other issues at the root of the reactivations?|  
-  
-##  <a name="Changing"></a> Filtering the Report  
+
+<a name="Changing"></a>
+
+## Filtering the Report  
 
 You can filter the Reactivations report in the following ways:  
   
