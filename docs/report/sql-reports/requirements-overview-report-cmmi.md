@@ -23,7 +23,7 @@ The Requirements Overview report lists all requirements, filtered by area and it
 
 **You can use this report to answer the following questions**:<br /><br /> -   How much work does each Requirement require?<br />-   How much work has the team completed for each Requirement?<br />-   Are the tests for each Requirement passing?<br />-   How many active bugs does each Requirement have?
   
-**Required Permissions**  
+## Prerequisites  
   
 To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
 

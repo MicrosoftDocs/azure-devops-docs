@@ -25,7 +25,7 @@ After the team has estimated its tasks and begun work, you can use the Remaining
 
 **You can use this report to answer the following questions**:<br /><br /> -   What is the cumulative flow of work?<br />-   Is the team likely to finish the iteration on time?<br />-   Is the amount of work or number of work items in the iteration growing?<br />-   Does the team have too much work in progress?<br />-   How is the team doing in estimating work for the iteration?
   
-**Required Permissions**  
+## Prerequisites  
   
 To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
 
