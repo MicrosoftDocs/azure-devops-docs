@@ -6,7 +6,7 @@ ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair
 ms.custom: seodec18, contperf-fy21q1
-ms.date: 08/31/2021
+ms.date: 10/20/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -121,4 +121,8 @@ Allow you to configure actions when multiple releases are queued for deployment.
 
 ::: moniker-end
 
-[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
+> [!NOTE]
+> Release triggers set a number of variables based on your pipeline configuration. You can find information about your release pipelines and/or stages by accessing the values of your [release and artifacts variables](variables.md).
+
+
+
