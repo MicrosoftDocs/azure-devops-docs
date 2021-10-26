@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.custom: "contperf-fy20q4, linked-from-support"
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 10/26/2021
 ---
 
@@ -384,7 +384,7 @@ You can add a hierarchy of work items linked using parent-child links or other t
 
 <a id="update-work-items "></a>
 
-## Update plate work items in bulk with a query list
+## Update work items in bulk with a query list
 
 The easiest way to bulk update many work items is to create a query with the work items you want to update, and then open that query in Excel. 
 

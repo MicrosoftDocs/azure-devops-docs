@@ -104,8 +104,8 @@ Azure Boards supports three query types. The icon next to each query indicates t
       - Triage a list of linked work items  
       - List test-related linked work items 
       - Find orphaned backlog items, work items that have no parent 
-      > [!NOTE]
-      > **Work items and direct links** queries export to Excel as a flat list. Direct links queries are imported as a flat list as modifying multiple types of links isn't a supported feature in Excel.  
+        > [!NOTE]
+        > **Work items and direct links** queries export to Excel as a flat list. Direct links queries are imported as a flat list as modifying multiple types of links isn't a supported feature in Excel.  
    :::column-end:::
 :::row-end:::
 ---
