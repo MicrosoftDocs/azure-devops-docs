@@ -179,6 +179,11 @@ You can specify several other details about PRs at creation. To add details, rev
 
 ::: moniker-end
 
+::: moniker range="<= azure-devops-2019"
+
+The Azure CLI isn't supported in this version. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+::: moniker-end
 
 ***
 
