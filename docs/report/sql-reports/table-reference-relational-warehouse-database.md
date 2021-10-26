@@ -1,6 +1,6 @@
 ---
 title: Relational warehouse database tables
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to create reports and query for Azure DevOps data.
 ms.technology: devops-analytics 
 ms.topic: reference

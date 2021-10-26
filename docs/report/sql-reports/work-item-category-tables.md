@@ -1,6 +1,6 @@
 ---
 title: Work Item Category tables
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to query for categories of work items defined in Azure DevOps Server.
 ms.technology: devops-analytics
 ms.topic: reference

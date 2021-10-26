@@ -1,6 +1,6 @@
 ---
 title: Work Item Changeset tables 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to query for data about work items that are linked to changesets.
 ms.technology: devops-analytics
 ms.topic: reference 
