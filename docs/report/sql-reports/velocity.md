@@ -26,11 +26,12 @@ If your team has completed multiple sprints, you can forecast release and produc
   
 ## Required permissions
   
-To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Grant permissions to view or create reports in Azure DevOps Server](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
 
-As the following illustration shows, a velocity graph shows the amount of effort that your team has reported as complete for each sprint. The source of the raw data is your product backlog. Each sprint that has been assigned to the team project or to the team appears along the horizontal axis. The vertical axis indicates the sum of all effort for all backlog items assigned to the indicated sprint that have been closed (State=Done).  The vertical axis shows effort in whatever unit your team uses (for example, story points, size, or hours).  
+<a name="Data"></a>
+
+## Data in the report  
+ As the following illustration shows, a velocity graph shows the amount of effort that your team has reported as complete for each sprint. The source of the raw data is your product backlog. Each sprint that has been assigned to the team project or to the team appears along the horizontal axis. The vertical axis indicates the sum of all effort for all backlog items assigned to the indicated sprint that have been closed (State=Done).  The vertical axis shows effort in whatever unit your team uses (for example, story points, size, or hours).  
   
 The graph also displays a horizontal line that represents the average velocity across all the sprints.  
   

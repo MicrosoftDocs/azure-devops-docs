@@ -30,10 +30,11 @@ You can use this report to answer the following questions:
 ## Required permissions
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report
 
-The Unplanned Work report is useful when the team plans an iteration by identifying all work items that they intend to resolve or close during the iteration. The work items that are assigned to the iteration by the plan completion date of the report are considered planned work. All work items that are added to the iteration after that date are identified as unplanned work.  
+<a name="Data"></a>
+
+## Data in the Report  
+ The Unplanned Work report is useful when the team plans an iteration by identifying all work items that they intend to resolve or close during the course of the iteration. The work items that are assigned to the iteration by the plan completion date of the report are considered planned work. All work items that are added to the iteration after that date are identified as unplanned work.  
   
 > [!IMPORTANT]
 >  The plan completion date refers to the date when your team finishes planning for the iteration.  
@@ -63,20 +64,22 @@ For the Unplanned Work report to be useful and correct, the team must carry out 
   
     > [!NOTE]
     >  For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
-  
-##  <a name="Duration"></a> Set the duration of the iteration
 
-To review the amount of unplanned work for a current iteration, you must set the planned end date and the start dates for the report to match the dates of your current iteration cycle.  
+<a name="Duration"></a>
+
+## Setting the Duration of the Iteration  
+ To review the amount of unplanned work for a current iteration, you must set the planned end date and the start dates for the report to match those of your current iteration cycle.  
   
 ### To change the duration of the iteration  
   
 1. Next to **Plan Completion Date** or **From Date**, select the calendar icon, and then select a date.  
   
-2. Select **View Report**.  
-  
-## <a name="Interpreting"></a> Interpret the report  
+2.  Click **View Report**.  
 
-The Unplanned Work report displays information that you can use to understand how well the team plans its work and whether the team is coming across scope creep during an iteration.  
+<a name="Interpreting"></a>
+
+## Interpreting the Report  
+ The Unplanned Work report displays information that you can use to understand how well the team plans its work and whether the team is encountering scope creep during an iteration.  
   
 Use the Unplanned Work report to understand how well the team is estimating the work that they can complete during an iteration. As a scrum master or project manager, use this report to derive historical data about your team. You may want to discuss with your team the idea of having a goal that limits the amount of work added to an iteration to no more than 10% of the planned work.  
   
@@ -86,11 +89,12 @@ You can review the report to determine the amount of scope creep that has occurr
   
 - What is the delta between planned work at the start of the iteration and work carry out?  
   
-- Is too much work being added during the iteration? Is the team expanding the scope of the work?  
-  
-## <a name="Changing"></a> Filter the report and change the display  
+-   Is too much work being added during the iteration? Is the team expanding the scope of the work?  
 
-You can filter the Unplanned Work report or change its display in the following ways:  
+<a name="Changing"></a>
+
+## Filtering the Report and Changing the Display  
+ You can filter the Unplanned Work report or change its display in the following ways:  
   
 - Change the plan completion date and start dates for the report.  
 

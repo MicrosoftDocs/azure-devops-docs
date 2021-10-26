@@ -1,16 +1,14 @@
 ---
 title: Create an aggregate report with Report Designer 
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps Server Server 
 ms.technology: devops-analytics
 ms.topic: conceptual
-description: How to create a report that shows how many active work items are assigned to each person on the team.  
+description: Learn how to create a report that shows how many active work items are assigned to each person on the team.  
 ms.assetid: b02997f4-2c4b-4814-868e-37e0c2414254
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
 ---
-
-
 
 # Create an aggregate report using Report Designer and the Analysis Services Cube
 
@@ -20,7 +18,7 @@ You can track your team's progress more easily by creating reports that aggregat
 
  After you create your first report, you might change it by experimenting with different measures, dimensions, and layouts. For example, you can change the chart from a simple column chart to a stacked-bar chart.  
 
- If you have not created reports for TFS before, see [Dashboards and reports](../admin/review-team-activities-for-useful-reports.md). If you have not used Report Designer before, see the following page on the Microsoft Web site: [Designing and Implementing Reports Using Report Designer](/previous-versions/sql/sql-server-2008-r2/ms159253(v=sql.105)). For information about how to create reports that include line-item details (such as titles of work items), see [Create a Detailed Report using Report Designer](create-a-detailed-report-using-report-designer.md).  
+ If you haven't created reports for TFS before, see [Dashboards and reports](../admin/review-team-activities-for-useful-reports.md). If you haven't used Report Designer before, see the following page on the Microsoft Web site: [Designing and Implementing Reports Using Report Designer](/previous-versions/sql/sql-server-2008-r2/ms159253(v=sql.105)). For information about how to create reports that include line-item details (such as titles of work items), see [Create a Detailed Report using Report Designer](create-a-detailed-report-using-report-designer.md).  
 
  **Requirements**  
 
@@ -32,19 +30,19 @@ You can track your team's progress more easily by creating reports that aggregat
 
 -   You must be a member of  the **Team Foundation Content Manager** role in SQL Server Reporting Services. For more information, see [Add accounts to administer TFS](/azure/devops/server/admin/add-administrator).  
 
-### To create a report  
+## Create a report  
 
 1.  In Visual Studio, create or open a Report Server project. For more information, see [Create a Report Server Project](create-a-report-server-project.md).  
 
-2.  On the **Project** menu, choose **Add New Item**.  
+2.  On the **Project** menu, select **Add New Item**.  
 
      The **Add New Item** dialog box appears.  
 
-3.  Choose **Report Wizard**, and then choose **Add**.  
+3.  Select **Report Wizard**, and then select **Add**.  
 
      The **Report Wizard** opens to the **Select Data Source** page.  
 
-4.  Choose the **Tfs2010OlapReportDS** shared data source, and then choose **Next**.  
+4.  Select the **Tfs2010OlapReportDS** shared data source, and then select **Next**.  
 
      Even though you might have installed or upgraded to TFS 2013, these names, which were assigned to the data sources for TFS 2010 are in use.  
 
@@ -53,15 +51,15 @@ You can track your team's progress more easily by creating reports that aggregat
     > [!NOTE]
     >  The data source that you specified connects to the analysis services database for TFS. For more information, see [Choose the source of data and authoring tool](./components-data-warehouse.md). If your project does not have this data source, create it. For more information, see [Create a Report Server Project](create-a-report-server-project.md).  
 
-5.  Choose **Query Builder**.  
+5.  Select **Query Builder**.  
 
      The **Query Build** dialog box appears.  
 
-### To create the query that will retrieve the data for the report  
+### Create the query to retrieve the data for the report  
 
-1.  Choose the **Team System** cube, as the following illustration shows.  
+1.  Select the **Team System** cube, as the following illustration shows.  
 
-     ![Query Builder &#45; click the Team System cube](media/reportdesignercube.png "ReportDesignerCube")  
+     ![Query Builder &#45; select the Team System cube](media/reportdesignercube.png "ReportDesignerCube")  
 
     > [!NOTE]
     >  If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through the dimensions and measures in the whole Team System cube. For this procedure, you can use the Work Item History perspective if it is available. For more information, see [Perspectives and measure groups provided in the Analysis Services cube](./perspective-measure-groups-cube.md).  
@@ -82,39 +80,39 @@ You can track your team's progress more easily by creating reports that aggregat
     > [!NOTE]
     >  The **Assigned To** field generally contains Windows accounts. For each Windows account, the **Person** property contains the display name of that account, and the **Alias** property contains the alias.  
 
-4.  Expand the **Work Item** dimension, drag the **State** property into the data area, and then click **OK**.  
+4.  Expand the **Work Item** dimension, drag the **State** property into the data area, and then select **OK**.  
 
      The **Query Builder** is closed, and the **Design the Query** page of the **Report Wizard** reappears.  
 
-### To design the initial report layout  
+## Design the initial report layout  
 
-1.  Choose **Next**.  
+1.  Select **Next**.  
 
      The wizard advances to the **Report Type** page.  
 
-2.  Choose **Matrix**, and then choose **Next**.  
+2.  Select **Matrix**, and then select **Next**.  
 
      The wizard advances to the **Design the Matrix** page.  
 
-3.  Choose **Cumulative_Count**, and then choose **Details**.  
+3.  Select **Cumulative_Count**, and then select **Details**.  
 
-4.  Choose **State**, and then choose **Columns**.  
+4.  Select **State**, and then select **Columns**.  
 
-5.  Choose **Person**, choose **Rows**, and then click **Next**.  
+5.  Select **Person**, select **Rows**, and then select **Next**.  
 
      The wizard advances to the **Choose the Matrix Style** page.  
 
-6.  Choose any style, and then choose **Next**.  
+6.  Select any style, and then select **Next**.  
 
      The wizard advances to the **Completing the Report** page.  
 
-7.  Type a name for the report, choose **Preview Report**, and then choose **Finish** to create the report.  
+7.  Type a name for the report, select **Preview Report**, and then select **Finish** to create the report.  
 
      The wizard closes, and the report document window appears with the **Preview** tab active.  
 
-### To replace the table with a chart  
+## Replace the table with a chart  
 
-1. In the report document window, choose the **Layout** tab.  
+1. In the report document window, select the **Layout** tab.  
 
    > [!NOTE]
    >  Report Designer uses three tabs, as the following table describes briefly.  
@@ -129,47 +127,47 @@ You can track your team's progress more easily by creating reports that aggregat
 2. Highlight the table, and then press **Delete**.  
 
    > [!NOTE]
-   >  To highlight the whole table, choose anywhere in the table, and then choose the upper-left corner of the table.  
+   >  To highlight the whole table, select anywhere in the table, and then select the upper-left corner of the table.  
 
 3. From the **Toolbox** pane, drag a **Chart** element to the report's layout area, and then size the chart to meet your needs.  
 
    > [!NOTE]
    >  By default, the **Toolbox** and **Datasets** panes are tabs on the left of the Visual Studio surface.  
 
-4. Right-click the chart, and then choose **Properties**.  
+4. Right-click the chart, and then select **Properties**.  
 
     The **Chart Properties** dialog box appears.  
 
-5. Choose the **Data** tab, and then click the **TfsOlapReportDS** dataset name.  
+5. Select the **Data** tab, and then select the **TfsOlapReportDS** dataset name.  
 
-6. Under **Values**, choose the **Add** button.  
+6. Under **Values**, select the **Add** button.  
 
     The **Edit Chart Value** dialog box appears.  
 
-7. On the **Value** tab, in the **Value** list, choose<strong>=Sum(Fields!Cumulative_Count.Value)</strong>, and then choose **OK**.  
+7. On the **Value** tab, in the **Value** list, select <strong>=Sum(Fields!Cumulative_Count.Value)</strong>, and then select **OK**.  
 
-8. Under **Category groups**, choose the **Add** button.  
+8. Under **Category groups**, select the **Add** button.  
 
     The **Grouping and Sorting Properties** dialog box appears.  
 
    > [!NOTE]
    >  The category groups appear on the x-axis of the chart.  
 
-9. In the first row of the **Expression** table, choose<strong>=Fields!Person.Value</strong>, and then choose **OK**.  
+9. In the first row of the **Expression** table, select <strong>=Fields!Person.Value</strong>, and then select **OK**.  
 
-10. Under **Series groups**, choose the **Add** button.  
+10. Under **Series groups**, select the **Add** button.  
 
      The **Grouping and Sorting Properties** dialog box appears.  
 
-11. In the first row of the **Expression** table, choose<strong>=Fields!State.Value</strong>, choose **OK**, and then choose **OK**.  
+11. In the first row of the **Expression** table, select <strong>=Fields!State.Value</strong>, select **OK**, and then select **OK**.  
 
-12. Choose the **Preview** tab to display a chart that shows how many work items are assigned to each team member, organized by the work item state.  
+12. Select the **Preview** tab to display a chart that shows how many work items are assigned to each team member, organized by the work item state.  
 
-### To deploy the report  
+## Deploy the report  
 
-1.  In **Solution Explorer**, choose the report.  
+1.  In **Solution Explorer**, select the report.  
 
-2.  On the **Build** menu, click **Deploy** *ReportName*.  
+2.  On the **Build** menu, select **Deploy** *ReportName*.  
 
     > [!IMPORTANT]
     >  To successfully deploy the report, your project settings must be set to appropriate values. For more information, see [Create a Report Server Project](create-a-report-server-project.md).  
