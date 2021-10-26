@@ -25,7 +25,7 @@ The Requirements Progress report lists all requirements, filtered by product are
 
 **You can use this report to answer the following questions**:<br /><br /> -   How much progress has the team made toward completing the work for each requirement?<br />-   How much work must the team still carry out to implement each requirement?<br />-   How much work did the team carry out in the last calendar period?
   
- **Required Permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
 
