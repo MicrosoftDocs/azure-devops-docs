@@ -22,7 +22,7 @@ You can use the Bug Trends report to help track the rate at which your team is d
   
 **You can use this report to answer the following questions**:<br /><br /> -   How many bugs are the team reporting, resolving, and closing per day?<br />-   What is the overall trend at which the team is processing bugs?<br />-   Are bug activation and resolution rates declining toward the end of the iteration as expected? 
   
- **Required Permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
 

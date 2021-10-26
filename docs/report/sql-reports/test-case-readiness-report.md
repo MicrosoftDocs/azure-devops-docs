@@ -1,6 +1,6 @@
 ---
 title: Test Case Readiness report 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn to determine how many test cases have been defined and are ready to run.
 ms.technology: devops-analytics
 ms.topic: reference
@@ -30,7 +30,7 @@ You can use this report to answer the following questions:
 - How many test cases must the team still write and review?
 - How many test cases are ready to be run?
   
-## Required permissions
+## Prerequisites
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Grant permissions to view or create reports](../admin/grant-permissions-to-reports.md).  
 

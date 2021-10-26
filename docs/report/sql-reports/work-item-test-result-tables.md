@@ -1,6 +1,6 @@
 ---
 title: Work Item Test Result tables
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to use Work Item Test Result tables to query for data about work items that are linked to test results.
 ms.technology: devops-analytics
 ms.topic: reference

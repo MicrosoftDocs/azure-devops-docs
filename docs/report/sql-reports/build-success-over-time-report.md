@@ -27,7 +27,7 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
 **You can use this report to answer the following questions**:<br /><br /> -   What parts of the project have produced software that is ready to be tested?<br />-   What parts of the project are having trouble with regressions or bad checkins?<br />-   How well is the team testing the code? 
   
- **Required Permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
 

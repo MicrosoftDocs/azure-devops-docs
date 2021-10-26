@@ -1,6 +1,6 @@
 ---
 title: Work Item History tables
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to query for historical data about bugs, tasks, and other types of work items defined in an on-premises Azure DevOps Server.
 ms.technology: devops-analytics
 ms.topic: reference

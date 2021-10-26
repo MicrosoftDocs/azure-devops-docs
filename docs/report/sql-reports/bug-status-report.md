@@ -22,7 +22,7 @@ After the team has started to find and fix bugs, you can track the team's progre
   
 **You can use this report to answer the following questions**:<br /><br /> -   Is the team fixing bugs quickly enough to finish on time?<br />-   Is the team fixing high priority bugs first?<br />-   What is the distribution of bugs by priority and severity?<br />-   How many bugs are assigned to each team member?  
   
- **Required Permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
 
