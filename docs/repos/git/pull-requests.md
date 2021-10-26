@@ -126,9 +126,15 @@ You can create PRs for any branch from your project's **Pull requests** page on 
 
 # [Visual Studio](#tab/visual-studio)
 
-To create PRs directly from Visual Studio:
+In Visual Studio 2015, 2017, and 2019, you can create PRs from Visual Studio Team Explorer:
 
-1. From the **Pull Requests** view in Team Explorer, select **New Pull Request**.
+1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
+
+1. Select **View** > **Team Explorer** to open Team Explorer. You can also press **Ctrl**+**\\**, **Ctrl**+**M**.
+
+1. From **Home**, select **Pull Requests** to view lists of PRs opened by you or assigned to you.
+
+1. From the **Pull Requests** view, select **New Pull Request**.
 
    ![Screenshot of selecting New Pull Request.](media/pull-requests/new-pull-request.png)
 
@@ -146,6 +152,20 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 # [Azure Command Line](#tab/azure-command-line)
 
 ::: moniker range=">= azure-devops-2020"
+
+In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+Many `az devops` commands require `--org` and `--project` parameters. To avoid having to enter these parameters, you can set a default Azure DevOps organization and project with `az devops configure --defaults`.
+
+For example, to set the Fabrikam Fiber project and FabrikamPrime organization as defaults, use:
+
+```azurecli
+az devops configure --defaults organization=https://fabrikamprime.visualstudio.com project="Fabrikam Fiber"
+```
+
+Once you set the defaults, `az devops` commands use the default organization and project. You can use the `org` and `project` parameters to specify other organizations and projects you have access to.
+
+Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
 To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create). The only parameters you need to add are `repository` and `source-branch`. If you don't specify `target-branch`, the PR targets the default branch of the target repository. To open the PR in your browser after creation, use `open`.
 
