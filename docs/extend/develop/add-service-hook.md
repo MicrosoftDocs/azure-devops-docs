@@ -44,7 +44,7 @@ This article walks through developing an extension that implements a **sample co
 ## Create the extension
 
 1. (Optional) Add an icon - a square image in the ```images``` folder that identifies your extension.
-It's displayed in the Marketplace, and when someone installs your extension. You don't need to add an icon for your extension to work, but you can use it alongside your extension name, like in the following image.
+It's displayed in the Marketplace and when someone installs your extension. You don't need to add an icon for your extension to work, but you can use it alongside your extension name, like in the following image.
 
 > [!NOTE]
 > Name the image ```logo.png```, or remove the "icons" sections from the manifest file if you wish to skip this step.
