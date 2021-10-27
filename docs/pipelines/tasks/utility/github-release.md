@@ -6,7 +6,7 @@ ms.assetid: 7B5A6198-ADF8-4B16-9939-7ADDF85708B2
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 10/27/221
+ms.date: 10/27/2021
 monikerRange: azure-devops
 ---
 
@@ -50,7 +50,7 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 
 
 <tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+<a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a>
 </tr>
 
 </table>
