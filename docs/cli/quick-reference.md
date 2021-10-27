@@ -54,7 +54,7 @@ Use this index to quickly access examples that showcase use of command line tool
       - [Set team area paths](../organizations/settings/set-area-paths.md#set-team-area-paths) 
       - [Set team iteration paths](../organizations/settings/set-iteration-paths-sprints.md#set-team-iteration-paths) 
       #### Queries 
-      - [Run work item query](../boards/queries/view-run-query.md#run-a-query)
+      - [Run work item query](../boards/queries/view-run-query.md#run-a-query-in-azure-boards)
       - [Permanently delete work items](../boards/backlogs/remove-delete-work-items.md#az-boards-cli)  
    :::column-end:::
    :::column span="1":::

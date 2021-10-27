@@ -102,21 +102,21 @@ sections:
              :::column span="1":::
                ::: moniker range=">= azure-devops-2019"
                 - [Blank or empty fields](./titles-ids-descriptions.md#empty-or-not-empty-html-field-queries)
-                - [Boolean searches](./query-by-workflow-changes.md#kanban-board-change-queries) 
+                - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
                 - [History and Discussion](./history-and-auditing.md) 
-                - [Kanban board fields](./query-by-workflow-changes.md#kanban-board-change-queries)
+                - [Kanban board fields](./query-by-workflow-changes.md#query-changes-to-a-kanban-board)
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
                 - [Search across projects](./using-queries.md#across-projects)
                 ::: moniker-end
                 ::: moniker range="tfs-2018"
-                - [Boolean searches](./query-by-workflow-changes.md#kanban-board-change-queries) 
+                - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
                 - [History and Discussion](./history-and-auditing.md) 
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
                 - [Search across projects](./using-queries.md#across-projects)
                 - [In and Not In Group searches](./planning-ranking-priorities.md) 
                 ::: moniker-end
                 ::: moniker range="tfs-2017"
-                - [Boolean searches](./query-by-workflow-changes.md#kanban-board-change-queries) 
+                - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
                 - [History and Discussion](./history-and-auditing.md) 
                 - [Search across projects](./using-queries.md#across-projects)
                 ::: moniker-end
