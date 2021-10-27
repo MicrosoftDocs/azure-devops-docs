@@ -1,6 +1,6 @@
 ---
 title: Create a detailed report with Report Designer
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 ms.technology: devops-analytics
 ms.topic: conceptual
 description: Learn how to track a team's progress by creating reports that contain detailed information.

@@ -1,6 +1,6 @@
 ---
 title: Components of the SQL Server data warehouse 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn about the components of the Azure DevOps data warehouse.
 ms.technology: devops-analytics
 ms.topic: conceptual

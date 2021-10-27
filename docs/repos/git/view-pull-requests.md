@@ -23,9 +23,7 @@ Teams can require PRs for any changes on protected branches, and set [branch pol
 ::: moniker range="azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
  
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher.
-  - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
-  - If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
+- To view PRs, you must be a member of the Azure DevOps project the PR is in, with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
 
 > [!NOTE]
 > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
@@ -33,11 +31,11 @@ Teams can require PRs for any changes on protected branches, and set [branch pol
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- To view PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 
 ::: moniker-end
 
@@ -49,15 +47,15 @@ You can use mobile devices to view all Azure Repos PR screens and actions.
 
 ![Screenshot of Azure Repos P R screens on a mobile device.](media/view-pull-requests/phone-screen.png)
 
-## List and open PRs
+## List PRs
 
-You can list and open PRs by using the Azure DevOps project website, Visual Studio, or the Azure DevOps command line.
+You can list PRs by using the Azure DevOps project website, Visual Studio, or the Azure DevOps command line.
 
 # [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To view PRs in a specific repository in a project, [go to that project](../../project/navigation/go-to-project-repo.md) in the web portal and select **Repos** > **Pull requests**.
+1. To list PRs in a specific repository in a project, [go to that project](../../project/navigation/go-to-project-repo.md) in the web portal and select **Repos** > **Pull requests**.
 
    ![Screenshot of viewing your pull requests.](media/view-pull-requests/repos-pull-requests.png)
 
@@ -71,7 +69,7 @@ You can list and open PRs by using the Azure DevOps project website, Visual Stud
 
    ![Screenshot of the view tabs for PRs in Azure Repos.](media/view-pull-requests/pr-status-widget.png)
 
-1. You can view all of your PRs across different projects in your organization by choosing **Pull requests** in the **My Work** view.
+1. You can list all of your PRs across different projects in your organization by choosing **Pull requests** in the **My Work** view.
 
    ![Screenshot of viewing all your pull requests.](media/view-pull-requests/view-all-my-pull-requests.png)
 
@@ -226,9 +224,25 @@ az repos pr checkout --id 21
 
 ::: moniker-end
 
+::: moniker range="<= azure-devops-2019"
+
+The Azure CLI isn't supported in this version. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+::: moniker-end
+
 
 ***
 
+
+## Open a PR
+
+When you open a PR from the browser, from Visual Studio, or from Azure CLI, the PR opens to its **Overview** tab. The **Overview** tab shows the PR title, description, reviewers, linked worked items, history, and status. You can see a summary of branch policies that are passing or failing, and see comments reviewers have made.
+
+:::image type="content" source="media/view-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR Overview tab.":::
+
+On the PR **Files** tab, you can review the actual changes in the PR files. On the **Updates** and **Commits** tabs, you can see changes the author has made to update the PR branch.
+
+To review the changes, make comments or suggestions, or approve or vote on the PR, see [Review pull requests](review-pull-requests.md).
 
 ## Next steps
 

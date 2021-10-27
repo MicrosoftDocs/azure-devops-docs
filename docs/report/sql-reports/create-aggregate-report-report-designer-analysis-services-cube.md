@@ -1,13 +1,13 @@
 ---
 title: Create an aggregate report with Report Designer 
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps Server
 ms.technology: devops-analytics
 ms.topic: conceptual
 description: Learn how to create a report that shows how many active work items are assigned to each person on the team.  
 ms.assetid: b02997f4-2c4b-4814-868e-37e0c2414254
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/2017
+ms.date: 10/19/2021
 ---
 
 # Create an aggregate report using Report Designer and the Analysis Services Cube
