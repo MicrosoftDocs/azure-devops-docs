@@ -1,7 +1,7 @@
 ---
-title: Define a work item query with the Query Editor
+title: Define a work item query with the Query Editor in Azure Boards
 titleSuffix: Azure Boards
-description: Create flat-list, tree, or direct links queries to list, triage, update, and chart work items  
+description: Learn how to create a flat-list, tree, or direct links queries to list, triage, update, and chart work items. 
 ms.custom: "boards-queries, contperf-fy21q3, linked-from-support, cross-project" 
 ms.technology: devops-agile
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
@@ -9,10 +9,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/21/2021
+ms.date: 10/26/2021
 ---
 
-# Define a query
+# Define a work item query in Azure Boards
 
 [!INCLUDE [temp](../includes/version-all.md)]
 [!INCLUDE [temp](../includes/version-visual-studio.md)]
@@ -52,7 +52,7 @@ In this article you'll learn:
  
 For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).  
  
-## Query filters
+## Choose a query filter 
 
 From the Query Editor, you can exercise the following filter functions. Choose the filter to jump to an article with sample queries. 
 In addition to the query filters, you can [interactively apply filters to query results](../backlogs/filter-backlogs-boards-plans.md).
@@ -189,7 +189,7 @@ In addition to the query filters, you can [interactively apply filters to query 
 :::row-end:::
 ---
 
-In addition to the filters you use from the Query Editor, you can interactively filter a query result using the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter** function. To learn how, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
+Along with the filters you use from the Query Editor, you can interactively filter a query result using the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter** function. To learn how, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
@@ -252,7 +252,7 @@ You can modify the **Values** and [add or remove clauses](#define-clause). Or, c
 
 ## Query across or within projects 
 
-By default, new queries are scoped to the current project. However, you can create queries to find work items defined within the organization or project collection. All queries that you save, however, are saved under a specific project. 
+New queries are scoped to the current project by default. However, you can create queries to find work items defined within the organization or project collection. All queries that you save, however, are saved under a specific project. 
 
 #### [Browser](#tab/browser/) 
 
@@ -280,7 +280,7 @@ With the **Query across projects** checked, you can add the **Team Project** fie
 > [!NOTE]
 > Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
 
-The **Team Project** field becomes available only after you check  **Query across projects**.  Moreover, when **Query across projects** is unchecked, only those fields from those work item types defined in the current project appear in the **Field** drop-down menu. When **Query across projects** is checked, all fields from all work item types defined in all projects in the collection appear in the **Field** drop-down menu.  
+The **Team Project** field becomes available only after you check  **Query across projects**.  When **Query across projects** is unchecked, only those fields from those work item types defined in the current project appear in the **Field** drop-down menu. When **Query across projects** is checked, all fields from all work item types defined in all projects in the collection appear in the **Field** drop-down menu.  
 
 ::: moniker-end  
 
@@ -327,17 +327,17 @@ All clauses you add are added as an **And** statement. Choose **Or** to change t
 
 #### [Browser](#tab/browser/) 
 
-Choose **Add new clause** to add another clause at then end of the query, and then choose the **Field**, **Operator**, and **Value** for that clause.  
+Choose **Add new clause** to add another clause at the end of the query, and then choose the **Field**, **Operator**, and **Value** for that clause.  
 
 > [!div class="mx-imgBorder"]  
 > ![Define a clause.](media/using-queries/define-clause.png)  
 
-For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (**=**) operator, and the **@Me** macro which represents your user identity.
+For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (**=**) operator, and the **@Me** macro, which represents your user identity.
 
 
 #### [Visual Studio](#tab/visual-studio/)
 
-Choose **Click here to add a clause** to add another clause at then end of the query, and then choose the **Field**, **Operator**, and **Value** for that clause.  
+Choose **Click here to add a clause** to add another clause at the end of the query, and then choose the **Field**, **Operator**, and **Value** for that clause.  
 
 :::image type="content" source="media/using-queries/visual-studio-add-new-clause.png" alt-text="Screenshot of Visual Studio Query Editor, add new clause.":::  
 
@@ -381,7 +381,7 @@ When finished, choose :::image type="icon" source="../media/icons/run_query.png"
 
 <a id="tree-query" />
 
-## Use a tree of work items to view hierarchies  
+## Use a work item tree to view hierarchies  
 
 
 Use the :::image type="icon" source="media/11.png" border="false"::: **Tree of Work Items** query to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](media/13.png)) or collapse (![Collapse node, web portal](media/14.png)) nodes to focus on different parts of the tree.  
@@ -465,7 +465,7 @@ Filter your first-tier list of work items by choosing one of these options:
 
 - **Return all top level items**: All first-tier work items are returned regardless of the linked work items filter criteria. Second-tier work items that are linked to the first tier are returned if they match the linked work items filter criteria.
 
-- **Only return items that do not have matching links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
+- **Only return items that do not have matching links**: First-tier work items are returned, but only if they don't have links to work items specified by the linked work items filter criteria.
  
 
 #### [Visual Studio](#tab/visual-studio/)
@@ -480,7 +480,7 @@ Filter your first-tier list of work items by choosing one of these options:
 
 - **Only return items that have the specified links**: First-tier work items are returned, but only if they have links to work items specified by the linked work items filter criteria. 
 
-- **Only return items that do not have the specified links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
+- **Only return items that do not have the specified links**: First-tier work items are returned, but only if they don't have links to work items specified by the linked work items filter criteria.
  
 * * * 
 
@@ -496,7 +496,7 @@ To learn more about each link type, see [Linking, traceability, and managing dep
 
 You specify **And** or **Or** to create logical expressions of your query clauses. Specify **And** to find work items that meet the criteria in both the current clause and the previous clause. Specify **Or** to find work items that meet the criterion in either the current clause or the previous clause.
 
-You can add one new clause for each work item field in order to refine your search criteria, so that it returns only the set of work items that you want. If you do not receive the results that you expect from your query, you can add, remove, group, or ungroup query clauses to refine your query results.
+You can add one new clause for each work item field to refine your search criteria, so that it returns only the set of work items that you want. If you don't receive the results that you expect from your query, you can add, remove, group, or ungroup query clauses to refine your query results.
 
 You can group query clauses to operate as a single unit separate from the rest of the query, similar to putting parentheses around an expression in a mathematical equation or logic statement. When you group clauses, the **AND** or **OR** for the first clause in the group applies to the whole group.
 

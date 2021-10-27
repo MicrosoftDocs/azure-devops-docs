@@ -1,22 +1,22 @@
 ---
-title: Query by field values
+title: Query by field values in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards
-description: Create a query by filtering on field values compared to other field values in Azure Boards, Azure DevOps, & TFS
+description: Learn how to create a query by filtering on field values that are compared to other field values in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 08/16/2019  
+ms.date: 10/25/2021  
 ---
 
-# Query by field value comparisons   
+# Query by field value comparisons in Azure Boards and Azure DevOps  
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-You can create queries based on how one field's value compares to another using the comparison field operators. This is useful to filter work items based on: 
-- Is the person who created the work item the same as or different than the person assigned to it, or who closed it
+You can create queries based on how one field's value compares to another using the comparison field operators. This query is useful to filter work items based on: 
+- Is the person who created the work item the same as or different than the person assigned to it? Or, who closed it
 - Which Tasks were closed before or after their Target Date.
 
 ## Supported data types 
@@ -64,7 +64,7 @@ You can use the comparison field operators&mdash;`=[Field], <>[Field], >[Field],
 :::row:::
    :::column span="1":::
    
-   Closed tasks completed prior to their target date 
+   Closed tasks completed before their target date 
    :::column-end:::
    :::column span="1":::
    
