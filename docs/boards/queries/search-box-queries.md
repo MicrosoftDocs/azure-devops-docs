@@ -30,7 +30,7 @@ You can find work items by using shortcut filters or by specifying keywords or p
 
 You can run a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or TFS 2017.2 or later versions when the [server instance has been configured with the work item search extension](../../project/search/get-started-search.md).
 
-For TFS 2017.1 and earlier versions, or where the work item search extension hasn't been configured, you can run [semantic searches](#initiate-an-ad-hoc-search-use-shortcut-filters). With semantic search, you search against a fully indexed set of fields.  
+For TFS 2017.1 and earlier versions, or where the work item search extension hasn't been configured, you can run [semantic searches](#start-an-improvised-search-and-use-shortcut-filters). With semantic search, you search against a fully indexed set of fields.  
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 > [!TIP]   
@@ -104,7 +104,7 @@ Free text search easily searches across all work item fields, including custom f
 
 ::: moniker range=">= tfs-2013  <= tfs-2015" 
 
-Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still run searches using an [improvised search](#initiate-an-ad-hoc-search-use-shortcut-filters).
+Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still run searches using an [improvised search](#start-an-improvised-search-and-use-shortcut-filters).
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -180,7 +180,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 
 ::: moniker range="<= tfs-2015" 
 
-Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still run searches using an [improvised search](#initiate-an-ad-hoc-search-use-shortcut-filters).
+Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still run searches using an [improvised search](#start-an-improvised-search-and-use-shortcut-filters).
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017" 
