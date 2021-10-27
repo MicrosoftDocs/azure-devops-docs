@@ -51,7 +51,7 @@ However, a better option may be to [copy or clone the test cases](reference-qa.m
 ## Create a test plan
 
 ::: moniker range=">=azure-devops-2020"
-In general, you create test plans to test requirements. Prior to creating a test plan, therefore, you may want to [define your backlog of requirements](../boards/backlogs/create-your-backlog.md). 
+In general, you create test plans to test requirements. Prior to creating a test plan, therefore, you may want to [define your backlog of requirements](../boards/backlogs/create-your-backlog.md).
 
 1. From the web portal, open your project and go to **Test Plans**.
    If you already have a test plan, choose **Test Plans** to go to the page that lists all test plans.
@@ -59,7 +59,7 @@ In general, you create test plans to test requirements. Prior to creating a test
    ![Opening the list of test plans page for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/open-test-plans.png)
 
 1. In the **Test Plans** page, choose **New Test Plan** to create a test plan for your current sprint.
- 
+
    ![Creating a new test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/new-test-plan.png)
 
 1. In **New Test Plan**, enter a name for the test plan.
@@ -94,10 +94,10 @@ In general, you create test plans to test requirements. Prior to creating a test
 ::: moniker range=">=azure-devops-2020"
 Now add test suites for the backlog items that need manual tests. These tests could be user stories, requirements, or other work items based your project.
 
-> [!NOTE] 
-> Requirement tracking is supported only for test cases linked through a **Requirement-based test suite**. The association between a requirement work item&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md)) and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
+> [!NOTE]
+> Requirement tracking is supported only for test cases linked through a **Requirement-based test suite**. The association between a requirement work item&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md)) and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**.
 
-1. To add a suite to a test plan, select the **+** new drop-down list and choose a type of test suite.
+1. To add a suite to a test plan, select **More options** for the test suite, and then select **New Suite** > **Requirement based suite**.
 
    ![Creating a requirement-based test suite for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/add-requirement-based-suite.png)
 
@@ -148,8 +148,7 @@ Now add test suites for the backlog items that need manual tests. These tests co
 ## Find a test case in a test plan
 
 ::: moniker range=">=azure-devops-2020"
-In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon (**1**) to show the search and filter lists (**2**) that help you find the tests you want to work with.
-Or filter the list of tests using **Outcome**, **Tester**, and **Configuration** (**3**).
+In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon to show the search and filter list that help you find the tests you want to work with.
 
   ![Finding a test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/filter-select-test-plan.png)
 ::: moniker-end
