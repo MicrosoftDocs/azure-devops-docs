@@ -7,7 +7,7 @@ ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
 monikerRange: '>= tfs-2015'
-ms.date: 09/14/2021
+ms.date: 11/02/2021
 ---
 
 # Create test plans and test suites
@@ -50,6 +50,25 @@ However, a better option may be to [copy or clone the test cases](reference-qa.m
 
 ## Create a test plan
 
+::: moniker range">=azure-devops-2020"
+In general, you create test plans to test requirements. Prior to creating a test plan, therefore, you may want to [define your backlog of requirements](../boards/backlogs/create-your-backlog.md). 
+
+1. From the web portal, open your project and go to **Test Plans**.
+   If you already have a test plan, choose **Test Plans** to go to the page that lists all test plans.
+
+   ![Opening the list of test plans page for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/open-test-plans.png)
+
+1. In the **Test Plans** page, choose **New Test Plan** to create a test plan for your current sprint.
+ 
+   ![Creating a new test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/new-test-plan.png)
+
+1. In **New Test Plan**, enter a name for the test plan.
+   Verify that the area path and iteration are set correctly, then choose **Create**.
+
+   ![Adding test plan details for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/test-plan-name-path-iteration.png)
+::: moniker-end
+
+::: moniker range"<=azure-devops-2019"
 In general, you create test plans to test requirements. Prior to creating a test plan, therefore, you may want to [define your backlog of requirements](../boards/backlogs/create-your-backlog.md). 
 
 1. From the web portal, open your project and go to **Test Plans**.
@@ -66,11 +85,39 @@ In general, you create test plans to test requirements. Prior to creating a test
 
    ![Adding test plan details](media/create-a-test-plan/CreateATestPlan2.png) 
 
+::: moniker-end
 
 <a name="backlog"></a>
 
 ## Add a requirement-based test suite and select backlog items to test
 
+::: moniker range">=azure-devops-2020"
+Now add test suites for the backlog items that need manual tests. These tests could be user stories, requirements, or other work items based your project.
+
+> [!NOTE] 
+> Requirement tracking is supported only for test cases linked through a **Requirement-based test suite**. The association between a requirement work item&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md)) and manual test execution is only formed when the test case is linked via a **Requirement-based test suite**. 
+
+1. To add a suite to a test plan, select the **+** new drop-down list and choose a type of test suite.
+
+   ![Creating a requirement-based test suite for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/add-requirement-based-suite.png)
+
+   You use requirement-based suites to group your test cases together.
+   That way, you can track the testing status of a backlog item.
+   Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.
+
+1. In **Create requirement-based suites**, add one or more clauses to filter your work items by the iteration path for the sprint.
+   Run the query to view the matching backlog items.
+
+   ![Adding clauses to filter by iteration and running the query to view results for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/add-clauses-run-query.png)
+
+1. In the list of work items returned by the query, select the backlog items you want to test in this sprint.
+   Choose **Create suites** to create a requirement-based suite for each one.
+
+   ![Adding requirement-based suites for your backlog items for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/select-requirement-create-suite.png)
+
+::: moniker-end
+
+::: moniker range"<=azure-devops-2019"
 Now add test suites for the backlog items that need manual tests. These tests could be user stories, requirements, or other work items based your project.
 
 > [!NOTE] 
@@ -94,16 +141,27 @@ Now add test suites for the backlog items that need manual tests. These tests co
 
    ![Adding requirement-based suites for your backlog items](media/create-a-test-plan/AddRequirementSuitesToTestPlan3.png)
 
+::: moniker-end
+
 <a name="findplan"></a>
 
 ## Find a test case in a test plan
+
+::: moniker range">=azure-devops-2020"
+In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon (**1**) to show the search and filter lists (**2**) that help you find the tests you want to work with.
+Or filter the list of tests using **Outcome**, **Tester**, and **Configuration** (**3**).
+
+  ![Finding a test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/filter-select-test-plan.png)
+::: moniker-end
+
+::: moniker range"<=azure-devops-2019"
 
 In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon (**1**) to show the search and filter lists (**2**) that help you find the tests you want to work with.
 Or filter the list of tests using **Outcome**, **Tester**, and **Configuration** (**3**).
 
   ![Finding a test plan](media/create-a-test-plan/select-test-plan.png)
   
-
+::: moniker-end
 
 ##  Next steps
 
