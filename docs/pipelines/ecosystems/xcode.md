@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-Learn how to build and deploy Xcode projects with Azure pipelines. 
+Learn how to build and deploy Xcode projects with Azure Pipelines. 
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ Learn how to build and deploy Xcode projects with Azure pipelines.
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-    > When the **Configure** tab appears, select **Xcode**. 
+> When the **Configure** tab appears, select **Xcode**. 
 
 7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
@@ -152,7 +152,7 @@ task to automate the release of updates to existing iOS TestFlight beta apps or 
 
 See [limitations](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.app-store)
 of using this task with Apple two-factor authentication,
-since Apple authentication is region specific and
+since Apple authentication is region-specific and
 fastlane session tokens expire quickly and must be recreated and reconfigured.
 
 ```yaml
