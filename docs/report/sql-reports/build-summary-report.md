@@ -1,6 +1,6 @@
 ---
 title: Build Summary report
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to build a report that provides information about test results, test coverage, code churn, and quality notes for each build. 
 ms.technology: devops-analytics
 ms.topic: reference
@@ -28,11 +28,13 @@ The Build Summary report builds and provides information about test results, tes
   
 **You can use this report to answer the following questions**:<br /><br /> -   What is the status of all builds over time?<br />-   Which builds succeeded?<br />-   Which builds have a significant number of changes to the code?<br />-   How much of the code was executed by the tests?<br />-   Which builds are ready to install?  
   
- **Required Permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report  
+
+<a name="Data"></a>
+
+## Data in the report  
  The data that appears in the Build Summary report is derived from the data warehouse. The report presents a visual display of the percentage of tests that are passing, code that is being tested, and changes in code across several builds.  
   
  You can review the results for both manual and automatic builds. Also, review the most recent builds, continuous builds, or frequent builds. The report lists the most recent builds first and contains build results that were captured during the specified time interval for all builds that were run, subject to the filters that you specified for the report.  
@@ -84,8 +86,10 @@ The Build Summary report builds and provides information about test results, tes
 -   (Optional) **Rate completed builds**. A team member can manually rate a build by using Build Explorer.  
   
      For more information, see [Rate the quality of a completed build](/previous-versions/ms181734(v=vs.140)).  
-  
-##  <a name="Duration"></a> Set the duration of the iteration  
+
+<a name="Duration"></a>
+
+## Set the duration of the iteration  
  To understand the progress that the team is making in your current iteration, you must set the start and end dates for the report to match the dates of your current iteration cycle.  
   
 ### To change the duration of the iteration  
@@ -93,8 +97,10 @@ The Build Summary report builds and provides information about test results, tes
 1.  Next to **Iteration Start (Date)** or **Iteration End (Date)**, select the calendar icon, and then select a date.  
   
 2.  Select **View Report**.  
-  
-##  <a name="Interpreting"></a> Interpret the report  
+
+<a name="Interpreting"></a>
+
+## Interpret the report  
  You can review the Build Summary report to answer questions about the most recent builds. It contains more information than the Build Success Over Time report.  
   
 ### Questions the report answers  
@@ -133,8 +139,10 @@ The Build Summary report builds and provides information about test results, tes
 -   **Code coverage is mostly blue**. You might want to write more automatic tests.  
   
 -   **Code churn shows spikes**. You might want to verify that unusual peaks are accounted for.  
-  
-##  <a name="Changing"></a> Filter the report  
+
+<a name="Changing"></a>
+
+## Filter the report  
  You can filter the Build Summary report in the following ways:  
   
 - Change the start and end dates for the report.  

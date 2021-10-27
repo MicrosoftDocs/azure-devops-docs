@@ -28,13 +28,13 @@ For PR guidelines and management considerations, see [About pull requests](about
 ::: moniker range="azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
  
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher.
+- To create and complete a PR, you must be a member of the **Contributors** security group, or have the corresponding permissions, in the project you want to change.
   - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
-  - If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
+  - If you aren't a member of the project you want to contribute to, [get added](../../organizations/accounts/add-organization-users.md).
+
+- To view or review PRs, you must have **Basic** or higher access to the Azure DevOps project for that PR.
 
 - To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
-
-- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 
 > [!NOTE]
 > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
@@ -42,15 +42,15 @@ For PR guidelines and management considerations, see [About pull requests](about
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 - **Repos** must be enabled on your project. If the **Repos** hub and associated pages don't display, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md) to reenable Repos.
-- To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
+- To create and complete a PR, you must be a member of the **Contributors** security group, or have the corresponding permissions, in the project you want to change.
+- To view or review PRs, you must be a member of the Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 - To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
-- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
+- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 - To view or review PRs, you must be a member of an Azure DevOps project with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/security/add-users-team-project.md).
 - To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
-- To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 
 ::: moniker-end
 
@@ -126,9 +126,15 @@ You can create PRs for any branch from your project's **Pull requests** page on 
 
 # [Visual Studio](#tab/visual-studio)
 
-To create PRs directly from Visual Studio:
+In Visual Studio 2015, 2017, and 2019, you can create PRs from Visual Studio Team Explorer:
 
-1. From the **Pull Requests** view in Team Explorer, select **New Pull Request**.
+1. [Connect to your project from Visual Studio](../../organizations/projects/connect-to-projects.md).
+
+1. Select **View** > **Team Explorer** to open Team Explorer. You can also press **Ctrl**+**\\**, **Ctrl**+**M**.
+
+1. From **Home**, select **Pull Requests** to view lists of PRs opened by you or assigned to you.
+
+1. From the **Pull Requests** view, select **New Pull Request**.
 
    ![Screenshot of selecting New Pull Request.](media/pull-requests/new-pull-request.png)
 
@@ -147,6 +153,20 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 
 ::: moniker range=">= azure-devops-2020"
 
+In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+Many `az devops` commands require `--org` and `--project` parameters. To avoid having to enter these parameters, you can set a default Azure DevOps organization and project with `az devops configure --defaults`.
+
+For example, to set the Fabrikam Fiber project and FabrikamPrime organization as defaults, use:
+
+```azurecli
+az devops configure --defaults organization=https://fabrikamprime.visualstudio.com project="Fabrikam Fiber"
+```
+
+Once you set the defaults, `az devops` commands use the default organization and project. You can use the `org` and `project` parameters to specify other organizations and projects you have access to.
+
+Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
+
 To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create). The only parameters you need to add are `repository` and `source-branch`. If you don't specify `target-branch`, the PR targets the default branch of the target repository. To open the PR in your browser after creation, use `open`.
 
 For example, the following command creates a PR from the `new` branch to the default `main` branch of the Fabrikam repository, and then opens the PR in the browser:
@@ -159,6 +179,11 @@ You can specify several other details about PRs at creation. To add details, rev
 
 ::: moniker-end
 
+::: moniker range="<= azure-devops-2019"
+
+The Azure CLI isn't supported in this version. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+::: moniker-end
 
 ***
 

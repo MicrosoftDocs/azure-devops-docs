@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 10/05/2021
+ms.date: 10/22/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -124,7 +124,21 @@ Each task offers you some **Control Options**.
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops-2019"
+
+Control options are available as keys on the `task` section.
+
+```yaml
+- task: string  # reference to a task and version, e.g. "VSBuild@1"
+  condition: expression     # see below
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean          # whether or not to run this step; defaults to 'true'
+  timeoutInMinutes: number  # how long to wait before timing out the task
+```
+
+::: moniker-end
+
+::: moniker range=">azure-devops-2019"
 
 Control options are available as keys on the `task` section.
 
@@ -136,6 +150,10 @@ Control options are available as keys on the `task` section.
   timeoutInMinutes: number  # how long to wait before timing out the task
   target: string            # 'host' or the name of a container resource to target
 ```
+
+::: moniker-end
+
+:::moniker range=">= azure-devops-2019"
 
 > [!NOTE]
 > A given task or job can't unilaterally decide whether the job/stage continues. What it can do is offer a status of **succeeded** or **failed**, and downstream tasks/jobs each have a condition computation that lets them decide whether to run or not. The default condition which is effectively "run if we're in a successful state".
@@ -167,6 +185,10 @@ steps:
 
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
+
+::: moniker-end
+
+:::moniker range="> azure-devops-2019"
 
 ### Step target
 

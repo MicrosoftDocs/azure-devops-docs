@@ -1,6 +1,6 @@
 ---
 title: Reporting Services Reports
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Overview of the reports provided through SQL Server Reports.
 ms.technology: devops-analytics
 ms.topic: overview
