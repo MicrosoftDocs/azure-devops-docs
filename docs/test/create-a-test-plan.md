@@ -50,7 +50,7 @@ However, a better option may be to [copy or clone the test cases](reference-qa.m
 
 ## Create a test plan
 
-::: moniker range">=azure-devops-2020"
+::: moniker range=">=azure-devops-2020"
 In general, you create test plans to test requirements. Prior to creating a test plan, therefore, you may want to [define your backlog of requirements](../boards/backlogs/create-your-backlog.md). 
 
 1. From the web portal, open your project and go to **Test Plans**.
@@ -68,7 +68,7 @@ In general, you create test plans to test requirements. Prior to creating a test
    ![Adding test plan details for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/test-plan-name-path-iteration.png)
 ::: moniker-end
 
-::: moniker range"<=azure-devops-2019"
+::: moniker range="<=azure-devops-2019"
 In general, you create test plans to test requirements. Prior to creating a test plan, therefore, you may want to [define your backlog of requirements](../boards/backlogs/create-your-backlog.md). 
 
 1. From the web portal, open your project and go to **Test Plans**.
@@ -91,7 +91,7 @@ In general, you create test plans to test requirements. Prior to creating a test
 
 ## Add a requirement-based test suite and select backlog items to test
 
-::: moniker range">=azure-devops-2020"
+::: moniker range=">=azure-devops-2020"
 Now add test suites for the backlog items that need manual tests. These tests could be user stories, requirements, or other work items based your project.
 
 > [!NOTE] 
@@ -117,7 +117,7 @@ Now add test suites for the backlog items that need manual tests. These tests co
 
 ::: moniker-end
 
-::: moniker range"<=azure-devops-2019"
+::: moniker range="<=azure-devops-2019"
 Now add test suites for the backlog items that need manual tests. These tests could be user stories, requirements, or other work items based your project.
 
 > [!NOTE] 
@@ -147,14 +147,14 @@ Now add test suites for the backlog items that need manual tests. These tests co
 
 ## Find a test case in a test plan
 
-::: moniker range">=azure-devops-2020"
+::: moniker range=">=azure-devops-2020"
 In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon (**1**) to show the search and filter lists (**2**) that help you find the tests you want to work with.
 Or filter the list of tests using **Outcome**, **Tester**, and **Configuration** (**3**).
 
   ![Finding a test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/filter-select-test-plan.png)
 ::: moniker-end
 
-::: moniker range"<=azure-devops-2019"
+::: moniker range="<=azure-devops-2019"
 
 In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon (**1**) to show the search and filter lists (**2**) that help you find the tests you want to work with.
 Or filter the list of tests using **Outcome**, **Tester**, and **Configuration** (**3**).
