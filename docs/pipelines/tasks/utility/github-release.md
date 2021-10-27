@@ -6,7 +6,7 @@ ms.assetid: 7B5A6198-ADF8-4B16-9939-7ADDF85708B2
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 12/07/2018
+ms.date: 10/27/221
 monikerRange: azure-devops
 ---
 
@@ -124,6 +124,24 @@ The following YAML deletes a GitHub release. The release to be deleted is determ
     repositoryName: zenithworks/javaAppWithMaven
     action: delete
     tag: $(myDraftReleaseVersion)
+```
+
+### Inline release notes
+
+The following YAML create a GitHub release and add inline release notes.
+
+```YAML
+- task: GitHubRelease@1
+  inputs:
+    gitHubConnection: <GITHUB_SERVICE_CONNECTION>
+    repositoryName: '$(Build.Repository.Name)'
+    action: 'create'
+    target: '$(Build.SourceVersion)'
+    tagSource: 'userSpecifiedTag'
+    tag: <YOUR_TAG>
+    title: <YOUR_TITLE>
+    releaseNotesSource: 'inline'
+    releaseNotesInline: <YOUR_RELEASE_NOTES>
 ```
 
 ## Open source
