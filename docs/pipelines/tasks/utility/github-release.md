@@ -32,7 +32,7 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>GitHub Connection</td><td>(Required) Enter the service connection name for your GitHub connection. Learn more about service connections <a href="/azure/devops/pipelines/library/service-endpoints" data-raw-source="[here.](../../library/service-endpoints.md)">here.</a></td></tr>
+<tr><td>`gitHubConnection` <br/>GitHub Connection</td><td>(Required) Enter the service connection name for your GitHub connection. Learn more about service connections <a href="/azure/devops/pipelines/library/service-endpoints" data-raw-source="[here.](../../library/service-endpoints.md)">here.</a></td></tr>
 <tr><td>Repository</td><td>(Required) Select the name of GitHub repository in which GitHub releases will be created.</td></tr>
 <tr><td>Action</td><td>(Required) Select the type of release operation you want perform. This task can create, edit, or discard a GitHub release.</td></tr>
 <tr><td>Target</td><td>(Required) This is the commit SHA for which the GitHub release will be created. E.g. <code>48b11d8d6e92a22e3e9563a3f643699c16fd6e27</code>. You can also use variables here.</td></tr>
@@ -41,7 +41,7 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 <tr><td>Release title</td><td>(Optional) Specify the title of the GitHub release. If left empty, the tag will be used as the release title.</td></tr>
 <tr><td>Release notes source</td><td>(Optional) Specify the description of the GitHub release. Use the &#39;Release notes file&#39; option to use the contents of a file as release notes. Use the &#39;Inline release notes&#39; option to manually enter the release notes.</td></tr>
 <tr><td>Release notes file path</td><td>(Optional) Select the file which contains the release notes.</td></tr>
-<tr><td>Release notes</td><td>(Optional) Type your release notes here. Markdown is supported.</td></tr>
+<tr><td>Release notes inline</td><td>(Optional) Type your release notes here. Markdown is supported.</td></tr>
 <tr><td>Assets</td><td>(Optional) Specify the files to be uploaded as assets for the release. You can use wildcard characters to specify a set of files. E.g. <code>$(Build.ArtifactStagingDirectory)/*.zip</code>. You can also specify multiple patterns - one per line. By default, all files in the <code>$(Build.ArtifactStagingDirectory)</code> directory will be uploaded.</td></tr>
 <tr><td>Asset upload mode</td><td>(Optional) Use the &#39;Delete existing assets&#39; option to first delete any existing assets in the release and then upload all assets. Use the &#39;Replace existing assets&#39; option to replace any assets that have the same name.</td></tr>
 <tr><td>Draft release</td><td>(Optional) Indicate whether the release should be saved as a draft (unpublished). If <code>false</code>, the release will be published.</td></tr>
