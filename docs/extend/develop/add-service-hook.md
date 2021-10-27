@@ -70,25 +70,16 @@ It's displayed in the Marketplace, and when someone installs your extension. You
         }
     ],
     "categories": [
-        "Developer samples"
+        "Azure xxx"
     ],
 }
 ```
 
 > [!NOTE]
 > Make sure to update the `publisher` property.
+> Valid values for categories are: `Azure Repos`, `Azure Boards`, `Azure Pipelines`, `Azure Test Plans`, and `Azure Artifacts`.
 
-The `icons` stanza specifies the path to your extension's icon in your manifest.
-
-The `contributions` stanza adds your contribution - the consumer service - to your extension manifest.
-
-For each contribution in your extension, the manifest defines the following items:
-
-- type of contribution - consumer service (for example, ms.vss-servicehooks.consumer)
-- contribution target - consumer services (for example, ms.vss-servicehooks.consumers)
-- properties that are specific to each type of contribution
-
-For a consumer service, we have the following properties:
+For a consumer service, the following properties are required:
 
 | Property           | Description
 |--------------------|-----------------------|
@@ -97,7 +88,7 @@ For a consumer service, we have the following properties:
 | version            | String specifying the version of the consumer service.
 | name               | Name of the consumer service.    |
 | publisher          | Identifier of the publisher.  |
-| categories         | Array of strings representing the categories your consumer service belongs to.        |
+| categories         | Array of strings representing the categories your consumer service belongs to. For more information, see [Required attributes](manifest.md#required-attributes).     |
 | targets            | Products and services supported by your integration of extension. For more information, see [Installation targets](manifest.md).
 
 ## Next steps
