@@ -1,6 +1,6 @@
 ---
 title: Create test plans and suites
-description: Test tools - Create test plans in Azure Test Plans and Azure DevOps Server to make sure each of the deliverables meets your users needs
+description: Learn about Test tools. Create test plans in Azure Test Plans and Azure DevOps Server to make sure each of the deliverables meets your needs.
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.technology: devops-test
 ms.topic: quickstart
@@ -12,15 +12,14 @@ ms.date: 11/02/2021
 
 # Create test plans and test suites
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)]
 
 Create test plans and test suites to track manual testing for sprints or milestones.
 That way, you can see when the testing for a specific sprint or milestone is complete.
 For more information about manual testing, see [Planned manual testing](overview.md#planned-manual-testing) and [Automated and Manual Testing with Azure Test Plans](https://www.youtube.com/watch?v=LF0hmSysWCg).
 
+## Share work items across your test experience
 
-## Share work items across your test experience 
- 
 For example, you're building version 1.* of your product and you might create several test cases for that version.
 Each of these test cases can be updated, and more added, at any time.
 For each development cycle and release of your product, you create a test plan and import the existing test cases into that plan.
@@ -213,7 +212,7 @@ For test suites, other actions are tracked in the Test Suite Audit field. For ex
 ## Find a test case in a test plan
 
 ::: moniker range=">=azure-devops-2020"
-In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon to show the search and filter list. It can help find the tests you want.
+In **Test Plans** for your test plan, use the ::: image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon to show the search and filter list. It can help find the tests you want.
 
   ![Screenshot shows finding a test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/filter-select-test-plan.png)
 ::: moniker-end
