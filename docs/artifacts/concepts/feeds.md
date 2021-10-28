@@ -48,7 +48,7 @@ There some important things to note regarding public feeds:
 
 1. Select your feed from the dropdown menu.
 
-1. Select the gear icon ![gear icon](../media/icons/gear-icon.png) to access the feed's settings.
+1. Select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access the feed's settings.
 
     :::image type="content" source="media/feed-settings.png" alt-text="Screenshot showing how to access the feed's settings":::
 
