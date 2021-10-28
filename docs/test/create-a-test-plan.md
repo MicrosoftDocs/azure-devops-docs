@@ -51,7 +51,7 @@ However, a better option may be to [copy or clone the test cases](reference-qa.m
 ## Create a test plan
 
 ::: moniker range=">=azure-devops-2020"
-In general, you create test plans to test requirements. Prior to creating a test plan, therefore, you may want to [define your backlog of requirements](../boards/backlogs/create-your-backlog.md).
+In general, you create test plans to test requirements. Before creating a test plan, you may want to [define your backlog of requirements](../boards/backlogs/create-your-backlog.md).
 
 1. From the web portal, open your project and go to **Test Plans**.
    If you already have a test plan, choose **Test Plans** to go to the page that lists all test plans.
@@ -143,12 +143,26 @@ Now add test suites for the backlog items that need manual tests. These tests co
 
 ::: moniker-end
 
+## Rename a test plan
+
+To rename a test plan, open it from the shortcut menu and rename it.
+
+![Rename a test plan](media/create-a-test-plan/rename-test-plan.png)
+
+## Delete a test plan
+
+To delete a test plan, use the shortcut menu for the test plan.
+
+![Delete a test plan](media/create-a-test-plan/delete-test-plan.png)
+
+See also [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
+
 <a name="findplan"></a>
 
 ## Find a test case in a test plan
 
 ::: moniker range=">=azure-devops-2020"
-In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon to show the search and filter list that help you find the tests you want to work with.
+In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon to show the search and filter list. It can help find the tests you want.
 
   ![Finding a test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/filter-select-test-plan.png)
 ::: moniker-end
@@ -162,7 +176,18 @@ Or filter the list of tests using **Outcome**, **Tester**, and **Configuration**
   
 ::: moniker-end
 
-##  Next steps
+## Group and reorder test suites
+You can create a static test suite that can contain any type of test suites - just like folders. Drag test suites to group them in a static test plan. Drag and drop tests to reorder them.
+
+![Use static test suites like folders](media/create-a-test-plan/AddRequirementSuitesToTestPlan4.png)
+
+## Track changes to test plans and test suites
+
+Yes, you can track changes to test plans and test suites. Open the work item for the test plan or test suite, then view the work item history.
+
+For test suites, other actions are tracked in the Test Suite Audit field. For example, adding and removing test cases from a test suite are tracked in this field.
+
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Create manual test cases](create-test-cases.md#test-cases) 
