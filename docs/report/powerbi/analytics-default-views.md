@@ -1,14 +1,14 @@
 ---
 title: Default Analytics views
 titleSuffix: Azure DevOps
-description: Filtered set of data based on Analytics for Azure DevOps which supports creating Power BI reports  
+description: Learned about a filtered set of data based on Analytics for Azure DevOps that supports creating Power BI reports.  
 ms.technology: devops-analytics
 ms.reviewer: angurusw
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/14/2020
+ms.date: 10/01/2021
 ---
 
 # Default Analytics views
@@ -19,7 +19,7 @@ An Analytics view filters Azure DevOps data derived from Analytics. You use view
 
 [!INCLUDE [temp](includes/analytics-views-warning.md)]
 
-A default set of Analytics views are provided, as shown below. 
+A default set of Analytics views is provided, as shown below. 
 
 ::: moniker range="azure-devops"
 

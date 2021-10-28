@@ -122,7 +122,7 @@ productDirectory:
     - title: Azure Artifacts
       imageSrc: ./media/index/DevOpsIconArtifacts96.svg
       links:
-        - url: ./artifacts/overview.md
+        - url: ./artifacts/start-using-azure-artifacts.md
           text: What is Azure Artifacts?
         - url: ./artifacts/start-using-azure-artifacts.md
           text: Start using Azure Artifacts 

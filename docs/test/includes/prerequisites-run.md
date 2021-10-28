@@ -13,6 +13,6 @@ ms.date: 07/13/2021
 - You must be added to a project. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 - To view or run manual or automated tests, you must have **Basic** access or higher.
 
-To learn more, see [Set permissions and access for testing](../../organizations/security/set-permissions-access-test.md). 
+To learn more, see [Manual test access and permissions](../manual-test-permissions.md). 
 
 

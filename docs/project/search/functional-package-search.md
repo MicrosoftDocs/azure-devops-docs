@@ -46,7 +46,7 @@ Add more criteria to either narrow or broaden your search by using the operators
 
 ## Search packages with REST API
 
-You can use APIs to extend or supplement the capabilities listed in this article. For information about Package Search with REST API, see [Fetch Package Search Results](/rest/api/azure/devops/search/package%20search%20results/fetch%20package%20search%20results).
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Package Search with REST API, see [Fetch Package Search Results](/rest/api/azure/devops/search/package-search-results/fetch-package-search-results).
 ## Next steps
 
 > [!div class="nextstepaction"]

@@ -131,6 +131,9 @@
         - name: Use predefined variables
           href: build/variables.md
           displayName: build variables, agent variables, pipeline variables, system variables
+        - name: Set variables in scripts
+          href: process/set-variables-scripts.md
+          displayName: variables, task, setname, scripts
         - name: Use runtime parameters
           href: process/runtime-parameters.md
           displayName: parameters in pipelines, conditionals, loop, data types
@@ -373,9 +376,9 @@
       displayName: resource manager, service connection, service principal
     - name: Azure App Service (Web Apps)
       items:
-        - name: Azure Web App
+        - name: App Service on Linux
           href: targets/webapp.md
-        - name: Azure Web App on Linux Container
+        - name: Custom containers with Azure App Service
           href: targets/webapp-on-container-linux.md
         - name: Visual Studio Code Deploy to Azure extension
           href: targets/deploy-to-azure-vscode.md
@@ -496,9 +499,12 @@
     - name: Release artifacts and artifact sources
       href: release/artifacts.md
       displayName: artifacts, source, release artifacts
-    - name: Maven
-      href: artifacts/maven.md
-      displayName: maven, package
+    - name: Install Maven Artifacts
+      href: artifacts/pull-package-gradle.md
+      displayName: Install maven, maven, package
+    - name: Publish Maven Artifacts
+      href: artifacts/publish-package-gradle.md
+      displayName: gradle, maven artifacts, maven feed
     - name: npm
       href: artifacts/npm.md
       displayName: npm, package
@@ -996,19 +1002,17 @@
       href: /cli/azure/pipelines
 - name: Case studies & best practices
   items:
-    - name: Add continuous security validation
-      href: ../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
-    - name: Progressively expose releases using deployment rings
+    - name: Use deployment rings
       href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
-    - name: Progressively expose features in production
-      href: https://docs.microsoft.com/devops/operate/progressive-experimentation-feature-flags?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+    - name: Use feature flags
+      href: /devops/operate/progressive-experimentation-feature-flags?bc=%2fazure%2fdevops%2fpipelines%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2fpipelines%2ftoc.json
       displayName: feature-flags
 - name: Developer resources
   items:
     - name: REST API reference
       href: /rest/api/azure/devops/
     - name: Azure DevOps CLI
-      href: /azure/devops/cli # Don't use .md link here because it binds to the artifacts TOC
+      href: ../cli/index.md 
     - name: DevOps Starter to deploy to Azure
       href: /azure/devops-project/
     - name: Azure Lab Services

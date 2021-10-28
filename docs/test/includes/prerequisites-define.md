@@ -22,14 +22,7 @@ ms.date: 07/13/2021
 	-  To add or modify test plans, test suites, test cases, or other test-based work item types, you must have **Edit work items in this node** permission set to **Allow** under the corresponding **Area Path**. 
 	- To modify test plan properties such as build and test settings, you must have **Manage test plans** permission set to **Allow** under the corresponding **Area Path**.  
 	- To create and delete test suites, add, and remove test cases from test suites, change test configurations associated with test suites, and modify a test suite hierarchy (move a test suite), you must have **Manage test suites** permission set to **Allow** under the corresponding **Area Path**. 
-- Project-level permissions that you may need include:
-	- To view, create, or delete test runs, you must be granted the corresponding permissions: **View test runs**, **Create test runs**, and **Delete test runs**.
-	- To manage test configurations or test environments, you must be granted the corresponding permissions: **Manage test configurations** and **Manage test environments**.
-	- To add new tags to test-based work items, you must have the **Create tag definition** permission set to **Allow**. 
-	- To move test-based work items out of a project, you must have the **Move work items out of this project** permission set to **Allow**. 
-	- To delete or restore test-based work items, you must have the **Delete and restore work items** permission set to **Allow**.  
-	- To permanently delete test-based work items, you must have the **Permanently delete work items** permission set to **Allow**.  
 
-To learn more, see [Set permissions and access for testing](../../organizations/security/set-permissions-access-test.md). 
+To learn more, see [Manual test access and permissions](../manual-test-permissions.md). 
 
 

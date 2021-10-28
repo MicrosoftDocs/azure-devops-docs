@@ -20,5 +20,7 @@ ms.technology: devops-cicd-tasks
     #capturePipeline: true # Required when captureConsole == True
     isParameterizedJob: 
     #jobParameters: # Optional
+    #retryCount: #Optional
+    #delayBetweenRetries: #Optional
     #failOnUnstableResult: # Optional
 ```

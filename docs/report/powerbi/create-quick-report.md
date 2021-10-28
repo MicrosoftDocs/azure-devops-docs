@@ -1,14 +1,14 @@
 ---
 title: Create a Power BI report with an Analytics view
 titleSuffix: Azure DevOps
-description: Quickstart helping users to create a trend report using an Analytics view
+description: Learn how to create a trend report using an Analytics view.
 ms.technology: devops-analytics
 ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: quickstart
-ms.date: 07/14/2020
+ms date: 10/04/2021
 ---
 
 # Create a Power BI report with a default Analytics view
@@ -38,7 +38,7 @@ Follow these steps to create two reports in Power BI desktop that shows a **dail
 
 ## Prerequisites  
 
-In order to create a Power BI report that references an Analytics view, you must meet the following criteria:  
+To create a Power BI report that references an Analytics view, you must meet the following criteria:  
 
 ::: moniker range="azure-devops"
 
@@ -72,7 +72,7 @@ In order to create a Power BI report that references an Analytics view, you must
 
 By verifying the view you'll use in Power BI, your view is more likely to load correctly in Power BI. If verification takes too long, you can quickly adjust the view. Add filters or narrow your history and verify your view again.
 
-1. From the **Analytics view>All** page, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon next to the default view and select the **Edit** option. For a project that uses the Agile process, this will be the **Stories -Last 30 days** view.  
+1. From the **Analytics view>All** page, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon next to the default view and select the **Edit** option. For a project that uses the Agile process, use the **Stories -Last 30 days** view.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Analytics>All, Edit the Stories -Last 30 days view](media/create-report/edit-default-view-last-30-days.png)  
@@ -87,7 +87,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
  	> [!div class="mx-imgBorder"]  
 	> ![Wait until the verification process completes.](media/create-report/verified-view.png)  
 
-2. If your view successfully verifies, then proceed to the next step. If it is unsuccessful, click the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
+2. If your view successfully verifies, then go to the next step. If it's unsuccessful, select the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
 
 	To learn more about defining views, see [Create an Analytics view](analytics-views-create.md).  
 
@@ -100,14 +100,14 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
     > [!div class="mx-imgBorder"]  
     > ![Select work item field](media/create-report/select-line-chart-work-id.png)  
 
-	This will change your chart to a single dot.  
+	It will change your chart to a single dot.  
 
 	> [!TIP]    
 	> To change the chart size, choose the **View** tab, **Page View**, and then select the **Adjust Size** option as shown. You can then resize the chart to your desired dimensions.  
 	> 
 	> ![Adjust chart size](media/active-bugs-report/adjust-view-size.png)  
 	
-1. Next, (1) select the **Date** field in the fields list as your axis. By default, Power BI creates a date hierarchy from any date field. To see a daily trend, (2) click the context menu icon next to the field and change it from **Date Hierarchy** to **Date**.
+1. Next, (1) select the **Date** field in the fields list as your axis. By default, Power BI creates a date hierarchy from any date field. To see a daily trend, (2) select the context menu icon next to the field and change it from **Date Hierarchy** to **Date**.
 
    > [!div class="mx-imgBorder"]
    > ![Select Date, and change date hierarchy to date](media/create-report/select-date.png)
@@ -159,7 +159,7 @@ The reports shown in this quickstart illustrate how easy it is to generate repor
 
 <a id="q-a">  </a>
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Create an Active bugs report](active-bugs-sample-report.md)

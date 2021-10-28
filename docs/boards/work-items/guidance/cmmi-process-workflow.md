@@ -8,7 +8,7 @@ ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 03/24/2021
 ---
 
@@ -55,240 +55,225 @@ Requirements specify the functions and product elements that teams need to creat
 
 Use the following guidance and that provided for [fields used in common across work item types](#definitions-in-common) when filling out the form. For additional guidance, see [Plan a project](cmmi/guidance-plan-a-project-cmmi.md).
 
-<table>
-<tbody valign="top">
-  <tr>
-    <th width="22%">Field</th>
-    <th>Usage</th>
-  </tr>
-  <tr>
-    <td>
-      <p>
-        <a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Description](../../queries/titles-ids-descriptions.md)">Description</a>
-      </p>
-    </td>
-    <td>
-      <p>Provide enough detail for estimating how much work will be required to implement the requirement. Focus on who the requirement is for, what users want to accomplish, and why. Don&#39;t describe how the requirement should be developed. Do provide sufficient details so that your team can write tasks and test cases to implement the item.</p>
-      <p>In HTML fields, you can add rich text and images. </p>
-      <p>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Impact Assessment](cmmi/guidance-requirements-field-reference-cmmi.md)">Impact Assessment</a></p>
-    </td>
-    <td>
-      <p>The customer impact of not implementing this requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories. You capture this information in the rich-text HTML field which corresponds to Impact Assessment.</p>
-      <p>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md)">Requirement Type</a> (Required) </p>
-    </td>
-    <td>
-      <p>The kind of requirement to implement. You can specify one of the following values: </p>
-      <ul>
-        <li>
-          <p>
-            <strong>Business Objective </strong>
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Feature</strong> (default)</p>
-        </li>
-        <li>
-          <p>
-            <strong>Functional</strong>
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Interface </strong>
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Operational </strong>
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Quality of Service </strong>
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Safety </strong>
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Scenario </strong>
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Security</strong>
-          </p>
-        </li>
-      </ul>
-    </td>
-  </tr>
-<tr>
-    <td><p><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Value area](../../queries/planning-ranking-priorities.md)">Value area</a></p></td>
-	<td><p>The area of customer value addressed by the epic, feature, requirement, or backlog item. Values include:</p>
-        <ul>
-        <li>
-          <p>
-            <strong>Architectural </strong>: Technical services to implement business features that deliver solution 
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Business</strong>: Services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
-          </p>
-        </li>
-      </ul>
-</td></tr>
-  <tr>
-    <td>
-      <p>
-        <a href="../../queries/query-numeric.md" data-raw-source="[Size](../../queries/query-numeric.md)">Size</a> </p>
-    </td>
-    <td>
-      <p>Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. </p><p> By defining the <strong>Size</strong> for requirements, teams can use the Agile <a href="../../../report/dashboards/team-velocity.md" data-raw-source="[velocity charts](../../../report/dashboards/team-velocity.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools to estimate future iterations or work efforts. The Kanban <a href="../../boards/kanban-basics.md" data-raw-source="[Cumulative Flow Diagram](../../boards/kanban-basics.md)">Cumulative Flow Diagram</a> references the values in this field. For additional guidance, see the <a href="/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)" data-raw-source="[Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120))">Estimating</a> white paper.</p>
-    </td>
-  </tr>
-<tr>
-    <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Original Estimate](../../queries/query-numeric.md)">Original Estimate</a> </p></td>
-    <td><p>The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.</p>
-<p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
-</td>
-</tr>
-<tr>
-    <td><p><a href="../../queries/query-by-date-or-current-iteration.md" data-raw-source="[Start Date/Finish Date](../../queries/query-by-date-or-current-iteration.md)">Start Date/Finish Date</a> </p></td>
-    <td><p>The target dates for when the work will start or finish. </p>
-</td>
-</tr>
-  <tr>
-    <td>
-      <p>
-        <a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Priority](../../queries/planning-ranking-priorities.md)">Priority</a> (Required)</p>
-    </td>
-    <td>
-      <p>A subjective rating of the requirement as it relates to the business. Allowed values are:</p>
-      <ul>
-        <li>
-          <p>
-            <strong>1</strong>: Product cannot ship without the item.</p>
-        </li>
-        <li>
-          <p>
-            <strong>2</strong>: (default) Product cannot ship without the item, but it doesn&#39;t have to be addressed immediately. </p>
-        </li>
-        <li>
-          <p>
-            <strong>3</strong>: Implementation of the item is optional based on resources, time, and risk.  </p>
-        </li>
-      </ul>
-      <p>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p>
-       <a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Triage](../../queries/planning-ranking-priorities.md)">Triage</a> (Required) </p>
-    </td>
-    <td>
-      <p>Indicates the type of triage decision that is pending for the work item. Use this field when the work item is in the Proposed state and specify one of the following values: <strong>Pending</strong> (default), <strong>More Info</strong>, <strong>Info Received</strong>, and <strong>Triaged</strong>.</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p>
-        <a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Blocked](../../queries/planning-ranking-priorities.md)">Blocked</a></p>
-    </td>
-    <td>
-      <p>Indicates whether a team member is prevented from making progress toward implementing a requirement or task or resolving a bug, change request, or risk. If an issue has been opened to track a blocking problem, you can create a link to the issue. You can specify <strong>Yes</strong> of <strong>No</strong>.</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p>
-        <a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Committed](../../queries/planning-ranking-priorities.md)">Committed</a> (Required)  </p>
-    </td>
-    <td>
-      <p>Indicates whether the requirement is committed in the project or not. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p>
-        <a href="../../queries/build-test-integration.md" data-raw-source="[Integrated In](../../queries/build-test-integration.md)">Integrated In</a>  </p>
-    </td>
-    <td>
-      <p>Product build number that incorporates the requirement, change request, or fixes a bug.</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p>
-        <a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[User Acceptance Test](cmmi/guidance-requirements-field-reference-cmmi.md)">User Acceptance Test</a> (Required) </p>
-    </td>
-    <td>
-      <p>The status of the user acceptance test for a requirement. You can specify one of the following values:   </p>
-          <ul>
-            <li>
-<p>
-  <strong>Pass</strong>
-</p>
-            </li>
-            <li>
-<p>
-  <strong>Fail</strong>
-</p>
-            </li>
-            <li>
-<p>
-  <strong>Not Ready</strong>  (default)</p>
-            </li>
-            <li>
-<p>
-  <strong>Ready</strong>
-</p>
-            </li>
-            <li>
-<p>
-  <strong>Skipped</strong>
-</p>
-            </li>
-            <li>
-<p>
-  <strong>Info Received</strong>
-</p>
-            </li>
-          </ul>
-	<p>You specify Not Ready when the requirement is in the Active state, and you specify Ready when the requirement is in the Resolved state.</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p>
-        <a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Subject Matter Experts](cmmi/guidance-requirements-field-reference-cmmi.md)">Subject Matter Experts</a> 
-      </p>
-    </td>
-    <td>
-          <p>The names of team members who are familiar with the customer area that this requirement represents.</p>
-    </td>
-  </tr>
-</tbody>
-</table>
 
+  :::row:::
+   :::column span="1":::
+   **Field**
+   :::column-end:::
+   :::column span="3":::
+   **Usage**
+   :::column-end:::
+  :::row-end:::
+  :::row:::
+   :::column span="1":::
+   
+   
+   [Description](../../queries/titles-ids-descriptions.md)
+   
+   :::column-end:::
+   :::column span="3":::
+   
+  Provide enough detail for estimating how much work will be required to implement the requirement. Focus on who the requirement is for, what users want to accomplish, and why. Don&#39;t describe how the requirement should be developed. Do provide sufficient details so that your team can write tasks and test cases to implement the item.
+
+  In HTML fields, you can add rich text and images. 
+
+   
+   
+   :::column-end:::
+  :::row-end:::
+  :::row:::
+   :::column span="1":::
+   
+  [Impact Assessment](cmmi/guidance-requirements-field-reference-cmmi.md)
+
+   :::column-end:::
+   :::column span="3":::
+   
+  The customer impact of not implementing this requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories. You capture this information in the rich-text HTML field which corresponds to Impact Assessment.
+
+   
+   
+   :::column-end:::
+  :::row-end:::
+  :::row:::
+   :::column span="1":::
+   
+  [Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md) (Required) 
+
+   :::column-end:::
+   :::column span="3":::
+   
+  The kind of requirement to implement. You can specify one of the following values: 
+
+  
+   - **Business Objective**
+   - **Feature** (default)
+   - **Functional**
+   - **Interface**
+   - **Operational**
+   - **Quality of Service**
+   - **Safety**
+   - **Scenario**
+   - **Security**
+     
+  
+   :::column-end:::
+  :::row-end:::
+:::row:::
+   :::column span="1":::
+   [Value area](../../queries/planning-ranking-priorities.md)
+
+   :::column-end:::
+   :::column span="3":::
+   The area of customer value addressed by the epic, feature, requirement, or backlog item. Values include:
+
+   
+   - **Architectural**: Technical services to implement business features that deliver solution 
+   - **Business**: Services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
+   
+   
+  
+   :::column-end:::
+:::row-end:::
+  :::row:::
+   :::column span="1":::
+   
+   
+   [Size](../../queries/query-numeric.md) 
+   :::column-end:::
+   :::column span="3":::
+   
+  Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. 
+ By defining the **Size** for requirements, teams can use the Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools to estimate future iterations or work efforts. The Kanban [Cumulative Flow Diagram](../../boards/kanban-basics.md) references the values in this field. For additional guidance, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
+
+   :::column-end:::
+  :::row-end:::
+:::row:::
+   :::column span="1":::
+   [Original Estimate](../../queries/query-numeric.md) 
+
+   :::column-end:::
+   :::column span="3":::
+   The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.
+
+   You can specify work in hours or in days. There are no inherent time units associated with this field.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Start Date/Finish Date](../../queries/query-by-date-or-current-iteration.md) 
+
+   :::column-end:::
+   :::column span="3":::
+   The target dates for when the work will start or finish. 
+
+   :::column-end:::
+:::row-end:::
+  :::row:::
+   :::column span="1":::
+   
+   
+   [Priority](../../queries/planning-ranking-priorities.md) (Required)
+   :::column-end:::
+   :::column span="3":::
+   
+  A subjective rating of the requirement as it relates to the business. Allowed values are:
+
+  
+   - **1**: Product cannot ship without the item.
+   - **2**: (default) Product cannot ship without the item, but it doesn&#39;t have to be addressed immediately. 
+   - **3**: Implementation of the item is optional based on resources, time, and risk.  
+   
+  
+   
+   
+   :::column-end:::
+  :::row-end:::
+  :::row:::
+   :::column span="1":::
+   
+   
+   [Triage](../../queries/planning-ranking-priorities.md) (Required) 
+   :::column-end:::
+   :::column span="3":::
+   
+  Indicates the type of triage decision that is pending for the work item. Use this field when the work item is in the Proposed state and specify one of the following values: **Pending** (default), **More Info**, **Info Received**, and **Triaged**.
+
+   :::column-end:::
+  :::row-end:::
+  :::row:::
+   :::column span="1":::
+   
+   
+   [Blocked](../../queries/planning-ranking-priorities.md)
+   :::column-end:::
+   :::column span="3":::
+   
+  Indicates whether a team member is prevented from making progress toward implementing a requirement or task or resolving a bug, change request, or risk. If an issue has been opened to track a blocking problem, you can create a link to the issue. You can specify **Yes** of **No**.
+
+   :::column-end:::
+  :::row-end:::
+  :::row:::
+   :::column span="1":::
+   
+   
+   [Committed](../../queries/planning-ranking-priorities.md) (Required)  
+   :::column-end:::
+   :::column span="3":::
+   
+  Indicates whether the requirement is committed in the project or not. You can specify **Yes** or **No** (default).
+
+   :::column-end:::
+  :::row-end:::
+  :::row:::
+   :::column span="1":::
+   
+   
+   [Integrated In](../../queries/build-test-integration.md)  
+   :::column-end:::
+   :::column span="3":::
+   
+  Product build number that incorporates the requirement, change request, or fixes a bug.
+
+   :::column-end:::
+  :::row-end:::
+  :::row:::
+   :::column span="1":::
+   
+   
+   [User Acceptance Test](cmmi/guidance-requirements-field-reference-cmmi.md) (Required) 
+   :::column-end:::
+   :::column span="3":::
+   
+  The status of the user acceptance test for a requirement. You can specify one of the following values:   
+
+  
+   - **Pass**
+   - **Fail**
+   - **Not Ready**  (default)
+   - **Ready**
+   - **Skipped**
+   - **Info Received**
+     
+  
+   You specify Not Ready when the requirement is in the Active state, and you specify Ready when the requirement is in the Resolved state.
+
+   :::column-end:::
+  :::row-end:::
+  :::row:::
+   :::column span="1":::
+   
+   
+   [Subject Matter Experts](cmmi/guidance-requirements-field-reference-cmmi.md) 
+   
+   :::column-end:::
+   :::column span="3":::
+   
+  The names of team members who are familiar with the customer area that this requirement represents.
+
+   :::column-end:::
+  :::row-end:::
 
 [!INCLUDE [temp](../../includes/discussion-tip.md)] 
 
@@ -343,52 +328,91 @@ Name the task and estimate the work it will take.
 
 When teams estimate work they define tasks and estimate the hours or days to complete tasks. Teams forecast work and define tasks at the start of an iteration, and each team member performs a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement requirements, and a tester can define tasks to write and run test cases. By linking tasks to requirements and bugs, they see the progress made on these items. For additional guidance, see [Iteration activities](cmmi/guidance-iteration-activities.md).
 
-<table>
-<thead>
-<tr>
-<th><p>Field</p></th>
-<th><p>Usage</p></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-<td><p><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Task Type](cmmi/guidance-requirements-field-reference-cmmi.md)">Task Type</a> </p></td>
-<td><p>Select the kind of task to implement from the allowed values:</p>
-<ul>
-<li><p><strong>Corrective Action</strong></p></li>
-<li><p><strong>Mitigation Action</strong></p></li>
-<li><p><strong>Planned</strong></p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><a href="../../queries/query-numeric.md" data-raw-source="[Discipline](../../queries/query-numeric.md)">Discipline</a></p></td>
-<td><p>Select the discipline this task represents when your team estimates sprint capacity by activity.</p>
-<ul>
-<li><p><strong>Analysis</strong></p></li>
-<li><p><strong>Development</strong></p></li>
-<li><p><strong>Test</strong></p></li>
-<li><p><strong>User Education</strong></p></li>
-<li><p><strong>User Experience</strong></p></li>
-</ul>
-<p>This field is also used to calculate capacity by discipline. It is assigned to <code>type=&amp;quot;Activity&amp;quot;</code> in the ProcessConfiguration file. (2)</p>
-<p>For additional guidance, see <a href="cmmi/guidance-implement-development-tasks.md" data-raw-source="[Implement development tasks](cmmi/guidance-implement-development-tasks.md)">Implement development tasks</a>.</p></td>
-</tr>
-<tr>
-<td><p><a href="../../queries/query-numeric.md" data-raw-source="[Original Estimate](../../queries/query-numeric.md)">Original Estimate</a> </p></td>
-<td><p>The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.</p></td>
-</tr>
-<tr>
-<td><p><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a></p></td>
-<td>
-<p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../../sprints/set-capacity.md" data-raw-source="[capacity charts](../../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md)">sprint burndown chart</a>, and the <a href="/azure/devops/report/sql-reports/sprint-burndown-scrum" data-raw-source="[Sprint Burndown](../../../report/sql-reports/sprint-burndown-scrum.md)">Sprint Burndown</a> report. </p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p>
-</td>
-</tr>
-<tr>
-<td><p><a href="../../queries/query-numeric.md" data-raw-source="[Completed Work](../../queries/query-numeric.md)">Completed Work</a></p></td>
-<td><p>The amount of work that has been spent implementing a task.</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Field**
+   :::column-end:::
+   :::column span="3":::
+   **Usage**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   [Task Type](cmmi/guidance-requirements-field-reference-cmmi.md) 
+
+   :::column-end:::
+   :::column span="3":::
+   Select the kind of task to implement from the allowed values:
+
+   
+   - **Corrective Action**
+
+   - **Mitigation Action**
+
+   - **Planned**
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Discipline](../../queries/query-numeric.md)
+
+   :::column-end:::
+   :::column span="3":::
+   Select the discipline this task represents when your team estimates sprint capacity by activity.
+
+   
+   - **Analysis**
+
+   - **Development**
+
+   - **Test**
+
+   - **User Education**
+
+   - **User Experience**
+
+   
+   This field is also used to calculate capacity by discipline. It is assigned to `type=&quot;Activity&quot;` in the ProcessConfiguration file. (2)
+
+   For additional guidance, see [Implement development tasks](cmmi/guidance-implement-development-tasks.md).
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Original Estimate](../../queries/query-numeric.md) 
+
+   :::column-end:::
+   :::column span="3":::
+   The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Remaining Work](../../queries/query-numeric.md)
+
+   :::column-end:::
+   :::column span="3":::
+   
+   The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate [capacity charts](../../sprints/set-capacity.md), the [sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md), and the [Sprint Burndown](../../../report/sql-reports/sprint-burndown-scrum.md) report. 
+   If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   [Completed Work](../../queries/query-numeric.md)
+
+   :::column-end:::
+   :::column span="3":::
+   The amount of work that has been spent implementing a task.
+
+   :::column-end:::
+:::row-end:::
 
 
 ## Track test progress 
@@ -449,90 +473,181 @@ This field doesn't appear on the work item form.
 
 Work item forms displayed in a client and the web portal for TFS 2015 and earlier versions display link tabs and link control restrictions as described in the following table. 
 
-<table>
-<thead>
-<tr>
-<th><p>Tab name</p></th>
-<th><p>Work item type</p></th>
-<th><p>Link restrictions</p></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-<td><p><strong>All Links</strong></p></td>
-<td><p>Requirement</p>
-<p>Bug</p>
-<p>Change Request</p>
-<p>Feedback Request</p>
-<p>Issue</p>
-<p>Review</p>
-<p>Risk</p>
-<p>Shared Steps</p>
-<p>Task</p>
-<p>Test Case</p></td>
-<td><ul>
-<li><p>No restrictions.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Implementation</strong></p></td>
-<td><p>Task</p></td>
-<td><ul>
-<li><p>Allows only <strong>Parent</strong> and <strong>Child</strong> links between requirements and tasks.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Links</strong></p></td>
-<td><p>Code Review Request</p></td>
-<td><ul>
-<li><p>Allows only <strong>Parent</strong> and <strong>Child</strong> links to Code Review Response work items.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Requirements</strong></p></td>
-<td><p>Change Request</p></td>
-<td><ul>
-<li><p>Allows only <strong>Affects</strong> link type to link change requests to requirements.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Stories</strong></p></td>
-<td><p>Feedback Response</p></td>
-<td><ul>
-<li><p>Allows only <strong>Related</strong> links to requirements.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Storyboards</strong></p></td>
-<td><p>Requirement</p></td>
-<td><ul>
-<li><p>Allows only <strong>Storyboard</strong> links.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Test Cases</strong></p></td>
-<td><p>Requirement</p>
-<p>Bug</p></td>
-<td><ul>
-<li><p>Allows only <strong>Tested By</strong> links.</p></li>
-<li><p>Allows links only to test cases.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><strong>Tested Requirements</strong></p></td>
-<td><p>Test case</p></td>
-<td><ul>
-<li><p>Allows only <strong>Tests</strong> links.</p></li>
-<li><p>Allows links only to requirements.</p></li>
-<li><p>Excludes links to work items in other projects.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Tab name**
+   :::column-end:::
+   :::column span="3":::
+   **Work item type**
+   :::column-end:::
+   :::column span="3":::
+   **Link restrictions**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   **All Links**
+
+   :::column-end:::
+   :::column span="3":::
+   Requirement
+
+   Bug
+
+   Change Request
+
+   Feedback Request
+
+   Issue
+
+   Review
+
+   Risk
+
+   Shared Steps
+
+   Task
+
+   Test Case
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - No restrictions.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Implementation**
+
+   :::column-end:::
+   :::column span="3":::
+   Task
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Parent** and **Child** links between requirements and tasks.
+
+   - Excludes links to work items in other projects.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Links**
+
+   :::column-end:::
+   :::column span="3":::
+   Code Review Request
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Parent** and **Child** links to Code Review Response work items.
+
+   - Excludes links to work items in other projects.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Requirements**
+
+   :::column-end:::
+   :::column span="3":::
+   Change Request
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Affects** link type to link change requests to requirements.
+
+   - Excludes links to work items in other projects.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Stories**
+
+   :::column-end:::
+   :::column span="3":::
+   Feedback Response
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Related** links to requirements.
+
+   - Excludes links to work items in other projects.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Storyboards**
+
+   :::column-end:::
+   :::column span="3":::
+   Requirement
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Storyboard** links.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Test Cases**
+
+   :::column-end:::
+   :::column span="3":::
+   Requirement
+
+   Bug
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Tested By** links.
+
+   - Allows links only to test cases.
+
+   - Excludes links to work items in other projects.
+
+   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Tested Requirements**
+
+   :::column-end:::
+   :::column span="3":::
+   Test case
+
+   :::column-end:::
+   :::column span="3":::
+   
+   - Allows only **Tests** links.
+
+   - Allows links only to requirements.
+
+   - Excludes links to work items in other projects.
+
+   
+   :::column-end:::
+:::row-end:::
 
 ::: moniker-end

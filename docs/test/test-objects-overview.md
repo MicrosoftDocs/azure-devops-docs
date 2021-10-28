@@ -65,7 +65,7 @@ The following table describes the work item types used to support the Azure DevO
    :::column span="3":::
       Define the steps used to test code or an app for deployment. Define test cases to ensure your code works correctly, has no errors, and meets business and customer requirements. You can add individual test cases to a test plan without creating a test suite. More than one test suite or test plan can refer to a test case. You can effectively reuse test cases without needing to copy or clone them for each suite or plan. There are two types of test cases: 
       - [**Manual**](create-test-cases.md): Test cases that define different steps that you run using Test Runner or other supported client. 
-      - [**Automated**](run-automated-tests-from-test-hub.md): Test cases that are designed to run within an Azure Pipeline or 
+      - [**Automated**](run-automated-tests-from-test-hub.md): Test cases that are designed to run within an Azure Pipeline.
       > [!TIP]
       > You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the Kanban board. To learn more, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md). 
    :::column-end:::
@@ -371,6 +371,37 @@ The following table describes several terms used in manual and exploratory testi
 ---
 :::row:::
    :::column span="1":::
+     **Configuration**
+   :::column-end:::
+   :::column span="3":::
+      Specifies the unique environment used to test an application or code. To define a test configuration, you first define the configuration variables, and then define the test configuration. For details, see [Test different configurations](test-different-configurations.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+     **Configuration variable**
+   :::column-end:::
+   :::column span="3":::
+      Specifies a single aspect of a test environment such as an operating system, processing power, web browser, or other variation. For details, see [Test different configurations](test-different-configurations.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+     **Outcome** 
+   :::column-end:::
+   :::column span="3":::
+      Outcome of a test point as marked by the tester upon executing the test. Valid options are: 
+      - **Active** (Unspecified)
+      - **Pass Test**
+      - **Fail Test**
+      - **Block Test**
+      - **Not Applicable**  
+      ---
+      To learn more, see [Repeat a test with different data](repeat-test-with-different-data.md). Note that pipeline test outcomes differ as described in [About pipeline tests](../pipelines/test/test-glossary.md). 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
      **Test points**
    :::column-end:::
    :::column span="3":::
@@ -391,21 +422,6 @@ The following table describes several terms used in manual and exploratory testi
    :::column-end:::
    :::column span="3":::
       Dialog used to choose how test outcomes in multiple suites under the same test plans should be configured.  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-     **Outcome** 
-   :::column-end:::
-   :::column span="3":::
-      Outcome of a test point as marked by the tester upon executing the test. Valid options are: 
-      - **Active** (Unspecified)
-      - **Pass Test**
-      - **Fail Test**
-      - **Block Test**
-      - **Not Applicable**  
-      ---
-      To learn more, see [Repeat a test with different data](repeat-test-with-different-data.md). Note that pipeline test outcomes differ as described in [About pipeline tests](../pipelines/test/test-glossary.md). 
    :::column-end:::
 :::row-end:::
 :::row:::

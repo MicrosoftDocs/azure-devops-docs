@@ -15,7 +15,7 @@ monikerRange: '> tfs-2018'
 This article walks you through setting up a CI/CD pipeline for deploying an application to app services in an Azure Stack Hub instance using Azure Pipelines.
 
 In this article you can learn to create or validate:
-- Azure Stack Hub service principle (SPN) credentials for the pipeline.
+- Azure Stack Hub service principal (SPN) credentials for the pipeline.
 - A web app in your Azure Stack Hub instance.
 - A service connection to your Azure Stack Hub instance.
 - A repo with your app code to deploy to your app
@@ -28,7 +28,7 @@ In this article you can learn to create or validate:
 
 An SPN provides role-based credentials so that processes outside of Azure can connect to and interact with resources. You will need an SPN with contributor access and the attributes specified in these instructions to use with your Azure DevOps pipeline.
 
-As a user of Azure Stack Hub you do not have the permission to create the SPN. You will need to request this principle from your cloud operator. The instructions are being provided here so you can create the SPN if you are a cloud operator, or you can validate the SPN if you are a developer using an SPN in your workflow provided by a cloud operator.
+As a user of Azure Stack Hub you do not have the permission to create the SPN. You will need to request this principal from your cloud operator. The instructions are being provided here so you can create the SPN if you are a cloud operator, or you can validate the SPN if you are a developer using an SPN in your workflow provided by a cloud operator.
 
 The cloud operator will need to create the SPN using Azure CLI.
 
