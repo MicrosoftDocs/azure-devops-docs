@@ -4,7 +4,7 @@ description: Learn about Artifacts feeds and the difference between project-scop
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 11/23/2020
+ms.date: 10/28/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -41,6 +41,24 @@ There some important things to note regarding public feeds:
 [!INCLUDE [](../includes/create-feed.md)]
 
 ::: moniker range=">= azure-devops-2019"
+
+## Delete a feed
+
+1. Select **Artifacts**.
+
+1. Select your feed from the dropdown menu.
+
+1. Select the gear icon ![gear icon](../media/icons/gear-icon.png) to access the feed's settings.
+
+    :::image type="content" source="media/feed-settings.png" alt-text="Screenshot showing how to access the feed's settings":::
+
+1. Select **Delete feed**
+
+    :::image type="content" source="media/delete-a-feed.png" alt-text="Screenshot showing how to delete a feed":::
+
+1. Select **Delete** when you are ready.
+
+    :::image type="content" source="media/delete-warning.png" alt-text="Screenshot showing a warning message prior to deleting a feed":::
 
 ## Restoring a deleted feed
 
