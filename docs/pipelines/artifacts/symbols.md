@@ -121,9 +121,9 @@ Source link is a set of tools that allow developers to debug their source code b
 
 The next step is to modify the build task in your pipeline to invoke Source Link during the build process.
 
-1. From your pipeline definition, select the **Build solution** task or search and add the **Visual Studio build** task to your pipeline if you don't have it yet.
+1. From your pipeline definition, select the **Build solution** task. You can search for and add the **Visual Studio build** task to your pipeline if you don't have it already.
  
-1. Add the following argument to the **MSBuild arguments** field.
+1. Add the following snippet to the **MSBuild arguments**.
 
     ```Argument
     /p:SourceLinkCreate=true
@@ -136,7 +136,7 @@ The next step is to modify the build task in your pipeline to invoke Source Link
 
 ### Set up the publish task
 
-The Index Sources & Publish Symbols task is used to index your source code and publish your symbols to Azure Artifacts symbols server. Because we are using the *Visual Studio build* task to index our source, we will disable indexing in the publish task.
+The Index Sources & Publish Symbols task is used to index your source code and publish your symbols to Azure Artifacts symbols server. Because we are using the **Visual Studio build** task to index our source, we will disable indexing in the publish task.
 
 1. From your pipeline definition, select `+` to add a new task.
 
@@ -149,25 +149,17 @@ The Index Sources & Publish Symbols task is used to index your source code and p
     :::image type="content" source="media/publish-to-symbol-server-indexing-disabled.png" alt-text="Screenshot showing how to configure the publish task to publish symbols to Azure Artifacts symbol server":::
 
 ::: moniker range=">= tfs-2018"
-- **Task version**: select **2.\\***.
+- **Task version**: **2.\\***.
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
-- **Task version**: select **1.\\***.
+- **Task version**: **1.\\***.
 ::: moniker-end
-
-- **Display name**: task display name.
-
-- **Path to symbols folder**: path to the folder hosting the symbol files.
-
-- **Search pattern**: the pattern used to find the pdb files in the folder that you specified in **Path to symbols folder**. 
 
 - **Index sources**: Uncheck to disable indexing. Indexing is done during build. See the [previous step](#set-up-the-publish-task) for more details.
 
 - **Publish symbols**: indicates whether to publish the symbol files. 
     - **Symbol server type**: select **Symbol Server in this organization/collection (requires Azure Artifacts)** to publish your symbols to Azure Artifacts symbol server.
-
-- **Verbose logging**: check to include more information in your logs.
 
 ## Set up Visual Studio
 
@@ -188,52 +180,7 @@ Before starting to consume our symbols from Azure Artifacts symbol server, let's
     :::image type="content" source="../../artifacts/symbols/media/enable-source-link-support.png" alt-text="Enable source link support":::
 
 > [!NOTE]
-> Checking the **Enable source server support** option enables you to use [Source Server](/windows/win32/debug/source-server-and-source-indexing) when there is no source code on the local machine or the symbol file does not match the source code.
->
-> If you want to enable third-party source code debugging, uncheck the **Enable Just My Code** checkbox.
-
-<!-- 
-
-### Advanced usage: overriding at debug time
-
-The mapping information injected into the .pdb files contains variables that can be overridden at debugging time. Overriding the variables might be required if the collection URL has changed. When you're overriding the mapping information, the goals are to construct:
-
-* A command (SRCSRVCMD) that the debugger can use to retrieve the source file from the server.
-
-* A location (SRCSRVTRG) where the debugger can find the retrieved source file.
-
-  The mapping information might look something like the following:
-
-```
-SRCSRV: variables ------------------------------------------
-TFS_EXTRACT_TARGET=%targ%\%var5%\%fnvar%(%var6%)%fnbksl%(%var7%)
-TFS_EXTRACT_CMD=tf.exe git view /collection:%fnvar%(%var2%) /teamproject:"%fnvar%(%var3%)" /repository:"%fnvar%(%var4%)" /commitId:%fnvar%(%var5%) /path:"%var7%" /output:%SRCSRVTRG% %fnvar%(%var8%)
-TFS_COLLECTION=http://SERVER:8080/tfs/DefaultCollection
-TFS_TEAM_PROJECT=93fc2e4d-0f0f-4e40-9825-01326191395d
-TFS_REPO=647ed0e6-43d2-4e3d-b8bf-2885476e9c44
-TFS_COMMIT=3a9910862e22f442cd56ff280b43dd544d1ee8c9
-TFS_SHORT_COMMIT=3a991086
-TFS_APPLY_FILTERS=/applyfilters
-SRCSRVVERCTRL=git
-SRCSRVERRDESC=access
-SRCSRVERRVAR=var2
-SRCSRVTRG=%TFS_EXTRACT_TARGET%
-SRCSRVCMD=%TFS_EXTRACT_CMD%
-SRCSRV: source files ---------------------------------------
-C:\BuildAgent\_work\1\src\MyApp\Program.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TFS_REPO*TFS_COMMIT*TFS_SHORT_COMMIT*/MyApp/Program.cs*TFS_APPLY_FILTERS
-C:\BuildAgent\_work\1\src\MyApp\SomeHelper.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TFS_REPO*TFS_COMMIT*TFS_SHORT_COMMIT*/MyApp/SomeHelper.cs*TFS_APPLY_FILTERS
-```
-
- The preceding example contains two sections: the variables section and the source files section. The information in the variables section can be overridden. The variables can use other variables, and can use information from the source files section.
-
- To override one or more of the variables while debugging with Visual Studio, create an .ini file ```%LOCALAPPDATA%\SourceServer\srcsrv.ini```. Set the content of the .ini file to override the variables. For example:
-
-```ini
-[variables]
-TFS_COLLECTION=http://DIFFERENT_SERVER:8080/tfs/DifferentCollection
-``` 
-
--->
+> Checking the **Enable source server support** option enables you to use [Source Server](/visualstudio/debugger/general-debugging-options-dialog-box) when there is no source code on the local machine or the symbol file does not match the source code. If you want to enable third-party source code debugging, uncheck the **Enable Just My Code** checkbox.
 
 > [!IMPORTANT]
 > To delete symbols that were published using the *Index Sources & Publish Symbols* task, you must first delete the build that generated those symbols. This can be accomplished by using [retention policies](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by manually [deleting the run](../policies/retention.md#delete-a-run).
@@ -256,3 +203,4 @@ A: This is not possible at the moment. Source indexing is not currently supporte
 - [Debug with WinDbg](../../artifacts/symbols/debug-with-symbols-windbg.md).
 - [Index Sources & Publish Symbols task](../tasks/build/index-sources-publish-symbols.md).
 - [Configure retention policies](../policies/retention.md).
+
