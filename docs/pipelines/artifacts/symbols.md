@@ -204,3 +204,45 @@ A: This is not possible at the moment. Source indexing is not currently supporte
 - [Index Sources & Publish Symbols task](../tasks/build/index-sources-publish-symbols.md).
 - [Configure retention policies](../policies/retention.md).
 
+<!-- 
+
+### Advanced usage: overriding at debug time
+
+The mapping information injected into the .pdb files contains variables that can be overridden at debugging time. Overriding the variables might be required if the collection URL has changed. When you're overriding the mapping information, the goals are to construct:
+
+* A command (SRCSRVCMD) that the debugger can use to retrieve the source file from the server.
+
+* A location (SRCSRVTRG) where the debugger can find the retrieved source file.
+
+  The mapping information might look something like the following:
+
+```
+SRCSRV: variables ------------------------------------------
+TFS_EXTRACT_TARGET=%targ%\%var5%\%fnvar%(%var6%)%fnbksl%(%var7%)
+TFS_EXTRACT_CMD=tf.exe git view /collection:%fnvar%(%var2%) /teamproject:"%fnvar%(%var3%)" /repository:"%fnvar%(%var4%)" /commitId:%fnvar%(%var5%) /path:"%var7%" /output:%SRCSRVTRG% %fnvar%(%var8%)
+TFS_COLLECTION=http://SERVER:8080/tfs/DefaultCollection
+TFS_TEAM_PROJECT=93fc2e4d-0f0f-4e40-9825-01326191395d
+TFS_REPO=647ed0e6-43d2-4e3d-b8bf-2885476e9c44
+TFS_COMMIT=3a9910862e22f442cd56ff280b43dd544d1ee8c9
+TFS_SHORT_COMMIT=3a991086
+TFS_APPLY_FILTERS=/applyfilters
+SRCSRVVERCTRL=git
+SRCSRVERRDESC=access
+SRCSRVERRVAR=var2
+SRCSRVTRG=%TFS_EXTRACT_TARGET%
+SRCSRVCMD=%TFS_EXTRACT_CMD%
+SRCSRV: source files ---------------------------------------
+C:\BuildAgent\_work\1\src\MyApp\Program.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TFS_REPO*TFS_COMMIT*TFS_SHORT_COMMIT*/MyApp/Program.cs*TFS_APPLY_FILTERS
+C:\BuildAgent\_work\1\src\MyApp\SomeHelper.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TFS_REPO*TFS_COMMIT*TFS_SHORT_COMMIT*/MyApp/SomeHelper.cs*TFS_APPLY_FILTERS
+```
+
+ The preceding example contains two sections: the variables section and the source files section. The information in the variables section can be overridden. The variables can use other variables, and can use information from the source files section.
+
+ To override one or more of the variables while debugging with Visual Studio, create an .ini file ```%LOCALAPPDATA%\SourceServer\srcsrv.ini```. Set the content of the .ini file to override the variables. For example:
+
+```ini
+[variables]
+TFS_COLLECTION=http://DIFFERENT_SERVER:8080/tfs/DifferentCollection
+``` 
+
+-->
