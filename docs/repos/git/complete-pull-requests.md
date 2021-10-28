@@ -18,6 +18,27 @@ monikerRange: '<= azure-devops'
 
 Update your pull request in response to comments or to fix issues.
 
+
+::: moniker range="azure-devops"
+To make quick updates, select **Edit** on the **Files** page in your branch on the web.
+
+![Screenshot that shows the Edit button to update code directly in Azure Repos.](./media/complete-pull-requests/edit-file.png)
+
+After updating your files, [commit](commits.md) changes and [push](pushing.md) the updates to the branch in your repo.
+
+You can also immediately apply reviewers' suggested changes by selecting **Apply change** in the comment on the PR **Overview** page. Once you've applied all the changes you want, select **Commit all changes**.
+
+![Screenshot that shows the Apply change button in a PR comment.](./media/complete-pull-requests/apply-change.png)
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2020"
+You can make quick updates to your branch directly from the **Files** tab in **Code** on the web.
+
+![Screenshot that shows the Edit button to update code directly in Azure Repos.](./media/complete-pull-requests/pr-editing-changes.png)
+::: moniker-end
+
+
 ## Prerequisites
 
 ::: moniker range="azure-devops"
@@ -100,6 +121,7 @@ To keep track of files that have already been reviewed, select **More options** 
 :::moniker-end
 
 <a name="complete-the-pull-request"></a>
+
 ## Complete a pull request
 
 After the PR gets all required approvals and meets all branch policy requirements, you can complete the PR.
@@ -136,7 +158,7 @@ After the PR gets all required approvals and meets all branch policy requirement
    
    1. Select **Complete merge**.
      
-   :::image type="content" source="media/complete-pull-requests/pull-request-complete-merge-2020.png" alt-text="Screenshot that shows the complete PR dialog.":::
+   :::image type="content" source="media/complete-pull-requests/pull-request-complete-merge-2020.png" alt-text="Screenshot that shows the complete P R dialog.":::
 
 ::: moniker-end
 
@@ -224,16 +246,16 @@ Select **Cancel auto-complete** to turn off autocomplete.
 ::: moniker-end 
 
 ::: moniker range="azure-devops"
-![Screenshot of a P R in autocomplete state.](./media/complete-pull-requests/autocomplete.png)
+![Screenshot of a PR in autocomplete state.](./media/complete-pull-requests/autocomplete.png)
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2020"
-![Screenshot of a P R in autocomplete state.](./media/complete-pull-requests/pr-banner-autocomplete.png)
+![Screenshot of a PR in autocomplete state.](./media/complete-pull-requests/pr-banner-autocomplete.png)
 ::: moniker-end 
 
 A PR set to autocomplete displays an **Auto-complete** badge on the **Pull requests** page.
 
-![Screenshot showing an autocomplete P R in the P R list.](media/complete-pull-requests/auto-complete-badge.png)
+![Screenshot showing an autocomplete PR in the PR list.](media/complete-pull-requests/auto-complete-badge.png)
 
 ### Abandon your changes
 
@@ -308,18 +330,15 @@ Set autocomplete to complete a PR automatically when it passes all required appr
 - To set autocomplete at PR creation, use `az repos pr create --auto-complete true`.
 - To update an existing PR to autocomplete, use `az repos pr update --id <PR Id> --auto-complete true`.
 
+<a id="abandon-pr" />
+
 ### Abandon your changes
 
 To abandon a PR without merging it, use `az repos pr update --id <PR Id> –-status abandoned`. You can reactivate the PR by setting the status to `active`.
 
 ::: moniker-end
-
-::: moniker range="<= azure-devops-2019"
-
-Azure CLI isn't supported in this version. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
-
-::: moniker-end
-
+ 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 ***
 
@@ -330,6 +349,7 @@ When you complete a PR, Git adds a new *merge commit* to the end of the main bra
 
 
 ::: moniker range=">= azure-devops-2019"
+
 ### Rebase during PR completion
 
 There are a few situations when rebasing during PR completion isn't possible:
@@ -348,6 +368,7 @@ In some cases, a PR has more than one true merge base, and this can cause securi
 
 
 ::: moniker range=">= tfs-2017" 
+
 ## Revert a PR
 
 To undo the changes from a PR, follow these steps:
@@ -368,7 +389,7 @@ To undo the changes from a PR, follow these steps:
 > The branch created during this revert has a single commit that reverts all the file changes from the original PR. The branch doesn't contain a reverted commit for each of the commits in the original PR.
 ::: moniker-end
 
-## Next steps
+## Related articles
 
 - [Pull request update notifications](pull-request-notifications.md)
 - [Change the default branch](change-default-branch.md)
