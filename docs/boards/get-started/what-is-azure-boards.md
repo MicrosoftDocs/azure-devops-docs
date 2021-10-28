@@ -1,7 +1,7 @@
 ---
-title: Understand what you get with Azure Boards  
+title: Understand what you get with Azure Boards to manage your software development projects  
 titleSuffix: Azure Boards
-description: Learn about the main features and functions supported by Azure Boards that are available from Azure DevOps Services. 
+description: Learn about the main features and functions supported by Azure Boards. 
 ms.custom: boards-get-started
 ms.technology: devops-new-user
 ms.assetid:  
@@ -9,16 +9,16 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 09/15/2021
+ms.date: 10/26/2021
 ---
 
 # What is Azure Boards?
 
 [!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
-With the Azure Boards web service, teams can manage their software projects. It provides a rich set of capabilities including native support for Scrum and Kanban, customizable dashboards, and integrated reporting. These tools can scale as your business grows. 
+With the Azure Boards web service, teams can manage their software projects. It provides a rich set of capabilities including native support for Scrum and Kanban, customizable dashboards, and integrated reporting. These tools scale as your business grows. 
   
-You can quickly and easily start tracking user stories, backlog items, task, features, and bugs associated with your project. You track work by adding work items based on the process and work item types available to your project. 
+Quickly and easily track user stories, backlog items, task, features, and bugs associated with your project. Track work by adding work items based on the process and work item types available to your project. 
 
 ### Video: Plan your work with Azure Boards
 
@@ -159,7 +159,7 @@ To learn more, see one of the following articles:
 
 ## Plan effectively by working in sprints
 
-Plan sprints by assigning work to current or future sprints. Forecast work that can get completed based on effort estimates. Determine how much work can be done within a sprint. Assign tasks and issues to team members and sprints in bulk. 
+Plan sprints by assigning work to current or future sprints. Forecast work to complete based on effort estimates. Determine how much work can be done within a sprint. Assign tasks and issues to team members and sprints in bulk. 
 
 
  
