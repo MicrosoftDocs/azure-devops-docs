@@ -1,17 +1,18 @@
 ---
-title: Requirements Overview Report (CMMI) 
-titleSuffix: TFS 
+title: Requirements Overview report (CMMI) 
+titleSuffix: Azure DevOps Server
+description: Learn how to build a report that lists all requirements filtered by area and iteration and in order of importance.
 ms.technology: devops-analytics
 ms.topic: reference
-description: Lists all requirements, filtered by area and iteration and in order of importance.
 ms.assetid: 18214bb0-6ff1-4e91-b354-a9b46823f69d
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/2017
+ms.date: 10/15/2021
 ---
 
 
-# Requirements Overview Report (CMMI)
+# Requirements Overview report (CMMI)
+
 [!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 The Requirements Overview report lists all requirements, filtered by area and iteration and in order of importance. For information about how to open this report, refresh the data, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
@@ -22,23 +23,26 @@ The Requirements Overview report lists all requirements, filtered by area and it
 
 **You can use this report to answer the following questions**:<br /><br /> -   How much work does each Requirement require?<br />-   How much work has the team completed for each Requirement?<br />-   Are the tests for each Requirement passing?<br />-   How many active bugs does each Requirement have?
   
- **Required Permissions**  
+## Prerequisites  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
+To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
+
+<a name="Data"></a>
+
+## Data in the report  
+
+The Requirements Overview report presents a snapshot of the work that has been performed for the filtered set of requirements to the current date, as the following illustration shows:  
   
-##  <a name="Data"></a> Data in the Report  
- The Requirements Overview report presents a snapshot of the work that has been performed for the filtered set of requirements to the current date, as the following illustration shows:  
+![Requirements Overview report](media/procg_reqoverview.png "ProcG_ReqOverview")  
   
- ![Requirements Overview report](media/procg_reqoverview.png "ProcG_ReqOverview")  
+This report displays the following information for each user story that it lists:  
   
- This report displays the following information for each user story that it lists:  
-  
- **Work Progress**  
+**Work Progress**  
   
 - **% Hours Completed**: A numeric value and visual representation that shows the percentage of completed work based on the rollup of baseline and completed hours for all tasks that are linked to the requirement or its child requirements.  
   
 - **Hours Remaining**: A numeric value for the rollup of all remaining hours for all tasks that are linked to the requirement or its child requirements.  
-  
+
   **Test Status**  
   
 - **Tests**: A numeric value that represents the number of test cases that are linked to the requirement or its child requirements.  
@@ -47,8 +51,9 @@ The Requirements Overview report lists all requirements, filtered by area and it
   
 - **Bugs**: A numeric value and visual representation that shows the number of bugs that are linked to the test case or requirement, where the options are **Active** (blue) and **Resolved** (gold). If a requirement is linked to one or more child requirements, the values represent a rollup of all bugs for the requirement and its child requirements.  
   
-### Requirements that Appear in the Report  
- The Requirements Overview report lists and highlights requirements according to the following criteria:  
+### Requirements that appear in the report  
+
+The Requirements Overview report lists and highlights requirements according to the following criteria:  
   
 -   Requirements appear in order of their importance, based on their assigned ranking.  
   
@@ -61,8 +66,9 @@ The Requirements Overview report lists all requirements, filtered by area and it
     > [!NOTE]
     >  For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
   
-### Required Activities for Tracking Work Items  
- For the Requirements Overview report to be useful and accurate, the team must perform the following activities to track work items:  
+### Required activities to track work items  
+
+For the Requirements Overview report to be useful and correct, the team must carry out the following activities to track work items:  
   
 -   Define requirements and tasks, create a **Child** link from each task to a requirement, and create a **Child** link from any subtasks to its parent task.  
   
@@ -75,15 +81,18 @@ The Requirements Overview report lists all requirements, filtered by area and it
   
 -   For each bug, create either a **Tested By** link to the test case that identified the code defect or a **Related** link to the requirement to which the bug relates.  
   
--   Set the **State** of each bug to **Resolved** when it is fixed.  
+-   Set the **State** of each bug to **Resolved** when it's fixed.  
   
 -   Specify the **Iteration** and **Area** paths for each requirement, task, test case, and bug.  
   
     > [!NOTE]
     >  For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
- The Requirements Overview report shows overall work progress in the three areas that are important to completing and closing a Requirement:  
+
+<a name="Interpreting"></a>
+
+## Interpret the report  
+
+The Requirements Overview report shows overall work progress in the three areas that are important to completing and closing a Requirement:  
   
 - Tasks implemented to complete each requirement.  
   
@@ -97,12 +106,13 @@ The Requirements Overview report lists all requirements, filtered by area and it
   
    For more information, see [Filtering the Report](#Changing) later in this article.  
   
-- Click ![Expand](media/icon_expand.gif "Icon_Expand") or ![Collapse](media/icon_collapse.gif "Icon_Collapse") to expand or collapse a requirement and display child requirements. Parent requirements display a rollup of all task hours that are assigned to it and its child requirements.  
+- Select ![Expand](media/icon_expand.gif "Icon_Expand") or ![Collapse](media/icon_collapse.gif "Icon_Collapse") to expand or collapse a requirement and display child requirements. Parent requirements display a rollup of all task hours that are assigned to it and its child requirements.  
   
-### Questions That the Report Answers  
- You can review the report to determine the overall progress for each requirement of interest. For example, you can find answers to the following questions:  
+### Questions the report answers  
+
+You can review the report to determine the overall progress for each requirement of interest. For example, you can find answers to the following questions:  
   
-#### Work Progress  
+#### Work progress  
   
 -   Does the amount of work that remains for each requirement correspond to your expectations?  
   
@@ -112,7 +122,7 @@ The Requirements Overview report lists all requirements, filtered by area and it
   
 -   What requirements are being implemented that have no test cases defined for them?  
   
-#### Quality Progress  
+#### Quality progress  
   
 -   How many tests have run for each requirement, and how many have passed?  
   
@@ -122,36 +132,42 @@ The Requirements Overview report lists all requirements, filtered by area and it
   
 -   Are bugs being resolved or are they remaining active?  
   
-#### Risk Assessment  
+#### Risk assessment  
   
 -   Which requirements are at risk?  
   
--   Which requirements are not stable enough for release?  
+-   Which requirements aren't stable enough for release?  
   
 -   Which requirements can the team ship today?  
   
-### Healthy Version of the Report  
- A healthy Requirements Overview report shows more progress on requirements that appear near the top of the report. As the following illustration shows, the team has accomplished more work for those requirements that appear first in the report. Requirements are always listed according to their ranking.  
+### Healthy version of the report  
+
+A healthy Requirements Overview report shows more progress on requirements that appear near the top of the report. As the following illustration shows, the team has accomplished more work for those requirements that appear first in the report. Requirements are always listed according to their ranking.  
   
- ![Example of Healthy Stories Progress](media/procguid_healthy.png "ProcGuid_Healthy")  
+![Example of Healthy Stories Progress](media/procguid_healthy.png "ProcGuid_Healthy")  
   
-### Unhealthy Version of the Report  
- An unhealthy Requirements Overview report shows one or more of the following indications:  
+### Unhealthy version of the report  
+
+An unhealthy Requirements Overview report shows one or more of the following indications:  
   
 -   The team is making more progress on requirements that have a lower rank than on requirements that have a higher rank.  
   
 -   More tests are failing than are passing.  
   
 -   Tests are failing for a requirement, but no bug work items are being created.  
+
+<a name="Changing"></a>
+
+## Filter the report
+
+You can filter the Requirements Overview report to show only those requirements that are defined for the iterations or product areas that you specify.  
   
-##  <a name="Changing"></a> Filtering the Report  
- You can filter the Requirements Overview report to show only those requirements that are defined for the iterations or product areas that you specify.  
-  
-#### To specify which Requirements appear in the report  
+### Specify which requirements appear in the report  
   
 1.  In the **Iteration** or **Area** list, select the check box of each iteration or product area to include.  
   
-2.  Click **View Report** to refresh the report based on the new filter criteria.  
+2.  Select **View Report** to refresh the report based on the new filter criteria.  
   
-## Related notes 
- [Reporting Services Reports](reporting-services-reports.md)
+## Related articles 
+
+[Reporting Services Reports](reporting-services-reports.md)

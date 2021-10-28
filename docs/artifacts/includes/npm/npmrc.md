@@ -3,7 +3,7 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 09/01/2020
+ms.date: 10/22/2021
 ---
 
 #### Project setup

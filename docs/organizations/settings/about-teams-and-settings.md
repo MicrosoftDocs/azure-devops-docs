@@ -111,60 +111,103 @@ All Agile tools reference the area path(s) defined for a team. The set of work i
 Several tools also reference the team's default and selected iteration paths or sprints. When you add a new work item, the system assigns the team's default area and iteration paths to it. Work items can be added from a backlog, board view, or team dashboard. 
 
 
-<table valign="top" width="100%" > 
-<tr valign="bottom" > 
-<th width="20%">Agile tool</th>
-<th width="18%">Area path<br/>(see note 1)</th>
-<th width="32%">Iteration path</th>
-<th width="30%">State</th>
-</tr>
-<tr valign="top" > 
-<td>Portfolio or product backlogs</td>
-<td>Selected area path(s)</td>
-<td>Equal to or under team's <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md)">backlog iteration path</a></td>
-<td>Active (corresponds to a Proposed or InProgress state category, see notes 2, 3)</td>
-</tr>
+:::row::: 
+   :::column span="1":::
+   **Agile tool**
+   :::column-end:::
+   :::column span="1":::
+   **Area path  (see note 1)**
+   :::column-end:::
+   :::column span="1":::
+   **Iteration path**
+   :::column-end:::
+   :::column span="1":::
+   **State**
+   :::column-end:::
+:::row-end:::
+
+:::row::: 
+   :::column span="1":::
+   Portfolio or product backlogs
+   :::column-end:::
+   :::column span="1":::
+   Selected area path(s)
+   :::column-end:::
+   :::column span="1":::
+   Equal to or under team's [backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md)
+   :::column-end:::
+   :::column span="1":::
+   Active (corresponds to a Proposed or InProgress state category, see notes 2, 3)
+   :::column-end:::
+:::row-end:::
+
+:::row::: 
+   :::column span="1":::
+   Kanban boards (see note 4)
+   :::column-end:::
+   :::column span="1":::
+   Selected area path(s)
+   :::column-end:::
+   :::column span="1":::
+   Equal to or under team's [backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md)
+   :::column-end:::
+   :::column span="1":::
+   Any state (see notes 3, 5)
+   :::column-end:::
+:::row-end:::
+
+:::row::: 
+   :::column span="1":::
+   Sprint backlogs (see note 4)
+   :::column-end:::
+   :::column span="1":::
+   Selected area path(s)
+   :::column-end:::
+   :::column span="1":::
+   Team's selected iteration paths
+   :::column-end:::
+   :::column span="1":::
+   Any state (see notes 3, 5)
+   :::column-end:::
+:::row-end:::
+
+:::row::: 
+   :::column span="1":::
+   Task boards (see note 4)
+   :::column-end:::
+   :::column span="1":::
+   Selected area path(s)
+   :::column-end:::
+   :::column span="1":::
+   Team's selected iteration paths
+   :::column-end:::
+   :::column span="1":::
+   Any state (see notes 3, 5)
+   :::column-end:::
+:::row-end:::
+
+:::row::: 
+   :::column span="1":::
+   New work item widget
+   :::column-end:::
+   :::column span="1":::
+   Default area path
+   :::column-end:::
+   :::column span="1":::
+   Default iteration path
+   :::column-end:::
+   :::column span="1":::
+   n/a
+   :::column-end:::
+:::row-end:::
 
 
-<tr valign="top" > 
-<td>Kanban boards (see note 4)</td>
-<td>Selected area path(s)</td>
-<td>Equal to or under team's <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md)">backlog iteration path</a></td>
-<td>Any state (see notes 3, 5)</td>
-</tr>
-
-<tr valign="top" > 
-<td>Sprint backlogs (see note 4)</td>
-<td>Selected area path(s)</td>
-<td>Team&#39;s selected iteration paths</td>
-<td>Any state (see notes 3, 5)</td>
-</tr>
-
-
-<tr valign="top" > 
-<td>Task boards (see note 4)</td>
-<td>Selected area path(s)</td>
-<td>Team&#39;s selected iteration paths</td>
-<td>Any state (see notes 3, 5)</td>
-</tr>
-
-<tr valign="top" > 
-<td>New work item widget</td>
-<td>Default area path</td>
-<td>Default iteration path</td>
-<td>n/a</td>
-</tr>
-
-</table>
-
-<p><b>Notes:</b><p>
-<ol>
-<li>Agile tools filter items based on the team&#39;s selected area path(s). Teams can choose <a href="../../organizations/settings/set-area-paths.md#team-area-paths" data-raw-source="[whether to include or exclude items assigned to subarea paths](../../organizations/settings/set-area-paths.md#team-area-paths)">whether to include or exclude items assigned to subarea paths</a>.</li>
-<li>Work items whose State equals Closed, Done, or Removed (corresponding to a Completed category state) don&#39;t appear on portfolio and product backlogs.</li>
-<li>You can add custom workflow states and assign them to one of three state categories. The <a href="../../boards/work-items/workflow-and-state-categories.md" data-raw-source="[state categories](../../boards/work-items/workflow-and-state-categories.md)">state categories</a> determine which work items appear on backlog and board views. </li>
-<li>Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see <a href="../../boards/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes" data-raw-source="[parent-child links between items](../../boards/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes)">parent-child links between items</a>.</li>
-<li>Work items whose State equals Removed don&#39;t appear on boards.</li> 
-</ol>
+> [!NOTE]  
+> 1. Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](../../organizations/settings/set-area-paths.md#team-area-paths).  
+> 2. Work items whose State equals Closed, Done, or Removed (corresponding to a Completed category state) don't appear on portfolio and product backlogs.  
+> 3. You can add custom workflow states and assign them to one of three state categories. The [state categories](../../boards/work-items/workflow-and-state-categories.md)"> determine which work items appear on backlog and board views.   
+> 4. Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](../../boards/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).  
+> 5. Work items whose State equals Removed don't appear on boards.   
 
 
 ## Structure hierarchical teams or scale agility within an enterprise 
@@ -181,7 +224,7 @@ Also, the following articles walk you through the steps for configuring teams, a
 
 When you add a team, a security group is automatically created with the team name. You can use this group to filter queries. The name of team groups follows the pattern **[Project Name]\Team Name**. For example, the following query finds work assigned to members of the **[Fabrikam Fiber]\Email** team group.
 
-<img src="../../boards/plans/media/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" /> 
+![Web portal, Queries page, Query that uses In Group operator and team group name](../../boards/plans/media/query-in-group-email-team-work-in-progress.png)
 
 ::: moniker range=">= tfs-2017"
 

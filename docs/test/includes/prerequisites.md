@@ -28,6 +28,6 @@ ms.date: 07/13/2021
 	- To delete or restore test-based work items, you must have the **Delete and restore work items** permission set to **Allow**.  
 	- To permanently delete test-based work items, you must have the **Permanently delete work items** permission set to **Allow**.  
 
-To learn more, see [Set permissions and access for testing](../../organizations/security/set-permissions-access-test.md). 
+To learn more, see [Manual test access and permissions](../manual-test-permissions.md). 
 
 

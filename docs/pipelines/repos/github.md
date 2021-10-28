@@ -307,7 +307,7 @@ pr:
 ```
 
 >[!IMPORTANT]
->When you specify a `pr` trigger, it replaces the default implicit `pr` trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline.
+>When you specify a `pr` trigger with a subset of branches, a pipeline is triggered only when updates are pushed to those branches.
 
 For more complex triggers that need to exclude certain branches, you must use the full syntax as shown in the following example.
 

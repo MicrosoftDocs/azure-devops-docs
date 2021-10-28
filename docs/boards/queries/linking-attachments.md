@@ -7,7 +7,7 @@ ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 03/29/2021
 ---
 
@@ -222,7 +222,7 @@ Use this type of query to list all dependent work items that link to active Prod
 
 **Why this works:**
 
-- Removing the <strong>Team Project = @Project</strong> clause enables all dependent linked work items that match the filter criteria to be listed, no matter which project they belong to in the collection.
+- Removing the **Team Project = @Project** clause enables all dependent linked work items that match the filter criteria to be listed, no matter which project they belong to in the collection.
 
 - Grouping each of two clauses returns all **Product Backlog Item**s on the backlog or in progress, and the second grouped clause returns all **Bug**s on the backlog or in progress.
 
@@ -258,85 +258,153 @@ Or, you can find unparented backlog items using a **Work items and direct links*
 
 The following table describes fields associated with links and attachments. Most of these fields don't appear within the work item form, but are tracked for all work item types. 
 
-<table><thead>
-<tr>
-<th width="20%"><p><strong>Field name</strong></p></th>
-<th width="62%"><p><strong>Description</strong></p></th>
-<th width="18%"><p><strong>Work item type</strong></p></th>
-</thead>
-<tbody valign="top">
-<tr>
-<td><p>Attachment File Count</p></td>
-<td><p>The number of files attached to the work item and stored in the work item tracking database..</p>
-<p>Reference Name=System.AttachedFileCount, Data type=Integer</p>
+:::row:::
+   :::column span="1":::
+   **Field name**
+   :::column-end:::
+   :::column span="3":::
+   **Description**
+   :::column-end:::
+   :::column span="1":::
+   **Work item type**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Attachment File Count
+   :::column-end:::
+   :::column span="3":::
+   The number of files attached to the work item and stored in the work item tracking database..
 
-<blockquote>
-For Azure Boards (cloud service), you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.<br/></blockquote> 
-</td>
-<td><p>All</p></td>
-</tr>
+   Reference Name=System.AttachedFileCount, Data type=Integer
 
-<tr>
-<td><p>Comment Count</p></td>
-<td><p>Available for TFS 2017 with the new work item form which supports the Discussion section and later versions. The number of comments added to the <strong>Discussion</strong> section of the work item.</p>
-<p>Reference Name=System.CommentCount, Data type=Integer</p>
 
-</td>
-<td><p>All</p></td>
-</tr>
+   > For Azure Boards (cloud service), you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.  
+ 
+   :::column-end:::
+   :::column span="1":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Comment Count
+   :::column-end:::
+   :::column span="3":::
+   Available for TFS 2017 with the new work item form which supports the Discussion section and later versions. The number of comments added to the **Discussion** section of the work item.
 
-<tr>
-<td><a id="external-link-count"/>
-<p>External Link Count</p></td>
-<td><p>The number of links from the work item to artifacts that are not work items. such as pull requests, commits, changesets, or other link types.</p>
-<p>Reference Name=System.ExternalLinkCount, Data type=Integer</p></td>
-<td><p>All</p></td>
-</tr>
-<tr>
-<td><a id="hyper-link-count"/>
-<p>Hyperlink Count</p></td>
-<td><p>The number of hyperlinks that are defined for the work item.</p><p>Reference Name=System.HyperLinkCount, Data type=Integer</p></td>
-<td>All</td>
-</tr>
-<tr>
-<td><p>Link Comment</p></td>
-<td><p>Contains comments from the team member who created the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in query editor.)  </p><p>Reference Name=System.Links.Comment, Data type=PlainText</p>
-</td>
-<td>All</td>
-</tr>
-<tr>
-<td><p>Link Description</p></td>
-<td><p>Contains the work item type, ID, and title of the work item that is the target of the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in query editor.) </p>
-<p>Reference Name=System.Links.Description, Data type=PlainText</p></td>
-<td>All</td>
-</tr>
-<tr>
-<td><a id="parent"/>
-<p>Parent</p></td>
-<td><p>When included as a column option in a backlog or query results list, the Title of the parent work item is displayed. Internally, the system stores the ID of the work item within an Integer field. </p>
-<blockquote>The Parent field is available from Azure DevOps Services and Azure DevOps Server 2020. You can't specify this field within a query clause. </blockquote> 
-<p>Reference Name=System.Parent, Data type=Integer</p>
-</td>
-<td>All</td>
-</tr>
-<tr>
-<td><a id="related-link-count"/>
-<p>Related Link Count</p></td>
-<td><p>The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  <a href="link-type-reference.md#work-link-types" data-raw-source="[Link type reference](link-type-reference.md#work-link-types)">Link type reference</a></p>
-<p>Reference Name=System.RelatedLinkCount, Data type=Integer</p>
-</td>
-<td>All</td>
-</tr>
-<tr>
-<td><a id="remote-link-count"/>
-<p>Remote Link Count</p></td>
-<td><p>Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Azure Active Directory. Supported link types include Consumes From, Produced For, and Remote Related. To learn more, see <a href="../backlogs/add-link.md" data-raw-source="[Add link to work items, Link to a remote work item](../backlogs/add-link.md)">Add link to work items, Link to a remote work item</a>.</p>
-<p>Reference Name=System.RemoteLinkCount, Data type=Integer</p></td>
-<td><p>All</p></td>
-</tr>
-</tbody>
-</table>
+   Reference Name=System.CommentCount, Data type=Integer
 
+   :::column-end:::
+   :::column span="1":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   <a id="external-link-count"/>
+   External Link Count
+   :::column-end:::
+   :::column span="3":::
+   The number of links from the work item to artifacts that are not work items. such as pull requests, commits, changesets, or other link types.
+
+   Reference Name=System.ExternalLinkCount, Data type=Integer
+   :::column-end:::
+   :::column span="1":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   <a id="hyper-link-count"/>
+   Hyperlink Count
+   :::column-end:::
+   :::column span="3":::
+   The number of hyperlinks that are defined for the work item.
+
+   Reference Name=System.HyperLinkCount, Data type=Integer
+   :::column-end:::
+   :::column span="1":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Link Comment
+   :::column-end:::
+   :::column span="3":::
+   Contains comments from the team member who created the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in query editor.)  
+
+   Reference Name=System.Links.Comment, Data type=PlainText
+   :::column-end:::
+   :::column span="1":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Link Description
+   :::column-end:::
+   :::column span="3":::
+   Contains the work item type, ID, and title of the work item that is the target of the link. You can configure this field to appear as a column in a list of links on a work item form. (Not supported in query editor.) 
+
+   Reference Name=System.Links.Description, Data type=PlainText
+   :::column-end:::
+   :::column span="1":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   <a id="parent"/>
+   Parent
+   :::column-end:::
+   :::column span="3":::
+   When included as a column option in a backlog or query results list, the Title of the parent work item is displayed. Internally, the system stores the ID of the work item within an Integer field. 
+
+   
+   > The Parent field is available from Azure DevOps Services and Azure DevOps Server 2020. You can't specify this field within a query clause. 
+
+   > The Parent field is available from Azure DevOps Services and Azure DevOps Server 2020. You can't specify this field within a query clause. 
+
+   > The Parent field is available from Azure DevOps Services and Azure DevOps Server 2020. You can't specify this field within a query clause. 
+
+   > The Parent field is available from Azure DevOps Services and Azure DevOps Server 2020. You can't specify this field within a query clause. 
+ 
+   Reference Name=System.Parent, Data type=Integer
+   :::column-end:::
+   :::column span="1":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   <a id="related-link-count"/>
+   Related Link Count
+   :::column-end:::
+   :::column span="3":::
+   The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types)
+
+   Reference Name=System.RelatedLinkCount, Data type=Integer
+   :::column-end:::
+   :::column span="1":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   <a id="remote-link-count"/>
+   Remote Link Count
+   :::column-end:::
+   :::column span="3":::
+   Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Azure Active Directory. Supported link types include Consumes From, Produced For, and Remote Related. To learn more, see [Add link to work items, Link to a remote work item](../backlogs/add-link.md).
+
+   Reference Name=System.RemoteLinkCount, Data type=Integer
+   :::column-end:::
+   :::column span="1":::
+   All
+   :::column-end:::
+:::row-end:::
 
 ## Related articles
 

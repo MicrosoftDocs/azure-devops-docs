@@ -7,7 +7,7 @@ ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 02/06/2019
 ---
 
@@ -29,65 +29,89 @@ Work item fields that support build and test integration support the following a
 
 Most build and test integration fields have a data type of String, PlainText, or HTML. Query clauses that specify a text or rich-text field can use the operators and macros listed in the following table.
 
-<table valign="top">
-<thead>
-<tr>
-<th width="22%"><p>Data type</p></th>
-<th width="78%"><p>Supported operators and macros</p></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-    <td><p> <strong>Rich-text (HTML)</strong> </p></td>
-    <td>Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup></td>
-</tr>
-<tr>
-    <td><strong>Multi-line text strings (PlainText)</strong> </td>
-    <td>Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup></td>
-</tr>
-<tr>
-    <td><strong>Single text (String)</strong> </td>
-    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
-    <p><strong>Macros</strong>: <strong>[Any]</strong>, valid with the <strong>Work Item Type</strong> field<br/>
-    <strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong><sup>2</sup>, valid with the <strong>Team Project</strong> field </p>
-    </td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   **Data type**
 
-#### Notes:
-1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
-2. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+   :::column-end:::
+   :::column span="3":::
+   **Supported operators and macros**
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+    **Rich-text (HTML)** 
+
+   :::column-end:::
+   :::column span="3":::
+   Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Multi-line text strings (PlainText)** 
+   :::column-end:::
+   :::column span="3":::
+   Contains Words, Does Not Contain Words, Is Empty<sup>1</sup>, Is Not Empty<sup>1</sup>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   **Single text (String)** 
+   :::column-end:::
+   :::column span="3":::
+   = , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever  
+   **Macros**: **[Any]**, valid with the **Work Item Type** field  
+   **Project**<sup>2</sup>, valid with the **Team Project** field
+   :::column-end:::
+:::row-end:::
+
+
+> [!NOTE]  
+> 1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
+> 2. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 
 
 ## Useful filters 
 
-<table width="100%">
-<tbody valign="top">
-<tr>
-<th width="50%">Filter for</th>
-<th width="50%">Include these query clauses</th>
-</tr>
-<tr>
-<td>Automated test cases
-</td>
-<td>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> Test Case</code><br/><code>And Automation Status <em> = </em> Automated</code><br/></td>
-</tr>
-<tr>
-<td>Query-based test suites
-</td>
-<td>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> Test Suite</code><br/><code>And Test Suite Type <em> = </em> Query Based</code><br/></td>
-</tr>
-<tr>
-<td>Requirement-based test suites
-</td>
-<td>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> Test Suite</code><br/><code>And Test Suite Type <em> = </em> Requirement Based</code><br/></td>
-</tr>
-</tbody>
-</table>  
+:::row:::
+   :::column span="1":::
+   **Filter for**
+   :::column-end:::
+   :::column span="1":::
+   **Include these query clauses**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Automated test cases
+   :::column-end:::
+   :::column span="1":::
+   
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = Test Case`  `And Automation Status = Automated`  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Query-based test suites
+   :::column-end:::
+   :::column span="1":::
+   
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = Test Suite`  `And Test Suite Type = Query Based`  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Requirement-based test suites
+   :::column-end:::
+   :::column span="1":::
+   
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Work Item Type = Test Suite`  `And Test Suite Type = Requirement Based`  
+   :::column-end:::
+:::row-end:::
+  
 
 <a id="linked-bugs" />
 
@@ -95,7 +119,7 @@ Most build and test integration fields have a data type of String, PlainText, or
 
 Open a new query, set the query type to Work items and direct links. Filter for bugs in the top-level and add the filter for Test Cases in the linked work items filter. 
 
-<img src="media/query-build-integration-bugs-linked-test-cases.png" alt="List bugs and the test cases that test them" />
+![List bugs and the test cases that test them](media/query-build-integration-bugs-linked-test-cases.png)
 
 > [!NOTE]    
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the **Test>Test Plans** page](../../test/create-a-test-plan.md). 
@@ -106,181 +130,351 @@ The following table describes the fields that are defined in one or more of the 
 
 To customize a field or picklist, see [Add or modify a field to support queries, reports, and workflow](../../reference/add-modify-field.md).
 
-<table width="100%">
-<thead>
-<tr>
-  <th width="20%">Field name</th>
-  <th width="55%">Description</th>
-  <th width="25%">Work item type</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-<td><p>Automation Status<sup> 1</sup></p></td>
-<td><p>The status of a test case. You can specify the following values:</p>
-<ul>
-<li><p><strong>Automated</strong></p></li>
-<li><p><strong>Not Automated</strong></p></li>
-<li><p><strong>Planned</strong></p></li>
-</ul>
-<p>To run automated tests, see <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[Run automated tests from test plans](../../test/run-automated-tests-from-test-hub.md)">Run automated tests from test plans</a>.</p>
-<p>Reference name=Microsoft.VSTS.TCM.AutomationStatus, Data type=String</p>
-</td>
-<td>Test Case</td>
-</tr>
-<tr>
-<td><p>Found In<sup> 2</sup></p></td>
-<td><p>Product build number, also known as a revision, in which a bug was found.</p>
-<p>Reference name=Microsoft.VSTS.Build.FoundIn, Data type=String</p>
-<blockquote>
-<strong>Note:</strong> You can also use the <strong>Found in build</strong> link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).<br/></blockquote>
-</td>
-<td>Bug</td>
-</tr>
-<tr>
-<td><p>Integration Build<sup> 2</sup></p></td>
-<td><p>Product build number that incorporates the code or fixes a bug.</p>
-<p>Reference name=Microsoft.VSTS.Build.IntegrationBuild, Data type=String</p>
-<blockquote>
-<strong>Note:</strong> You can also use the <strong>Integrated in build</strong> link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).<br/></blockquote>
-</td>
-<td>All</td>
-</tr>
-<tr>
-<td><p>Issue</p></td>
-<td><p>Indicates that the Shared Steps is associated with an expected result. Allowed values are <strong>Yes</strong> and <strong>No</strong>. </p>
-<p>Reference name=Microsoft.VSTS.Common.Issue, Data type=String</p></td>
-<td>Shared Steps</td>
-</tr>
-<tr>
-<td><p>Parameters<sup> 3</sup></p></td>
-<td><p>Contains the parameters to use when running a manual test. </p>
-<p>Microsoft.VSTS.TCM.Parameters, Data type=HTML</p></td>
-<td>Shared Parameters, Shared Steps, Test Case</td>
-</tr>
-<tr>
-<td><p>Steps</p></td>
-<td><p>The action and validation steps that are required to perform the test.</p>
-<p>Microsoft.VSTS.TCM.Steps, Data type=HTML</p></td>
-<td>Shared Steps, Test Case</td>
-</tr>
-<tr>
-<td><p>System Info</p></td>
-<td><p>Information about the software and system configuration that is relevant to the test.</p>
-<p>Microsoft.VSTS.TCM.SystemInfo, Data type=HTML</p></td>
-<td>Bug, Feedback Response</td>
-</tr>
-<tr>
-<td>
-Repro Steps (or Steps to reproduce) 
-  </td>
-  <td>
-    <p>The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior.
-</p> 
-    <p>Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML</p>
-  </td>
-<td>Bug</td>
-</tr>
-<tr>
-<td><p>Test Suite Type<sup> 1,4</sup></p></td>
-<td><p>The test suite category. Allowed values are:</p>
-<ul>
-<li><p><strong>Query Based</strong>: Use to group together test cases that have a particular characteristic - for example, all the tests that have Priority=1. The suite will automatically include every test case that is returned by the query that you define.</p></li>
-<li><p><strong>Static</strong>: Use to group together test cases designed to track the test status of backlog items. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.</p></li>
-<li><p><strong>Requirement Based</strong>: Use to group together test cases with any characteristics or test suites.</p></li>
-</ul>
-<p>For more information, see <a href="../../test/create-a-test-plan.md" data-raw-source="[Create a test plan](../../test/create-a-test-plan.md)">Create a test plan</a>.</p> 
-<p>Reference name=Microsoft.VSTS.TCM.TestSuiteType, Data type=String</p>
-</td>
-<td><p>Test Suite</p></td>
-</tr>
-</tbody>
-</table>
+:::row:::
+     :::column span="1":::
+   **Field name**
+   :::column-end:::
+     :::column span="2":::
+   **Description**
+   :::column-end:::
+     :::column span="1":::
+   **Work item type**
+   :::column-end:::
+:::row-end:::
 
-**Notes**  
-1.  Do not customize the picklist for these fields. The system accepts only those values listed.  
-2.  By adding a `GLOBALLIST` element to the `FIELD` definition, you can provide a drop-down menu of builds that users can choose from. To learn how, see [Builds and global list auto-population](#global-list) later in this article.
-3.  Requires TFS 2013.2 or later version to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
-4.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade). 
+:::row:::
+   :::column span="1":::
+   Automation Status<sup> 1</sup>
+
+   :::column-end:::
+   :::column span="2":::
+   The status of a test case. You can specify the following values:
+
+   
+   - **Automated**
+
+   - **Not Automated**
+
+   - **Planned**
+
+   
+   To run automated tests, see [Run automated tests from test plans](../../test/run-automated-tests-from-test-hub.md).
+
+   Reference name=Microsoft.VSTS.TCM.AutomationStatus, Data type=String
+
+   :::column-end:::
+   :::column span="1":::
+   Test Case
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Found In<sup> 2</sup>
+
+   :::column-end:::
+   :::column span="2":::
+   Product build number, also known as a revision, in which a bug was found.
+
+   Reference name=Microsoft.VSTS.Build.FoundIn, Data type=String
+
+   
+   > [!NOTE]  
+   > You can also use the **Found in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
+
+   :::column-end:::
+   :::column span="1":::
+   Bug
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Integration Build<sup> 2</sup>
+
+   :::column-end:::
+   :::column span="2":::
+   Product build number that incorporates the code or fixes a bug.
+
+   Reference name=Microsoft.VSTS.Build.IntegrationBuild, Data type=String
+
+    
+   > [!NOTE]  
+   > You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
+
+   :::column-end:::
+   :::column span="1":::
+   All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Issue
+
+   :::column-end:::
+   :::column span="2":::
+   Indicates that the Shared Steps is associated with an expected result. Allowed values are **Yes** and **No**. 
+
+   Reference name=Microsoft.VSTS.Common.Issue, Data type=String
+
+   :::column-end:::
+   :::column span="1":::
+   Shared Steps
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Parameters<sup> 3</sup>
+
+   :::column-end:::
+   :::column span="2":::
+   Contains the parameters to use when running a manual test. 
+
+   Microsoft.VSTS.TCM.Parameters, Data type=HTML
+
+   :::column-end:::
+   :::column span="1":::
+   Shared Parameters, Shared Steps, Test Case
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Steps
+
+   :::column-end:::
+   :::column span="2":::
+   The action and validation steps that are required to perform the test.
+
+   Microsoft.VSTS.TCM.Steps, Data type=HTML
+
+   :::column-end:::
+   :::column span="1":::
+   Shared Steps, Test Case
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   System Info
+
+   :::column-end:::
+   :::column span="2":::
+   Information about the software and system configuration that is relevant to the test.
+
+   Microsoft.VSTS.TCM.SystemInfo, Data type=HTML
+
+   :::column-end:::
+   :::column span="1":::
+   Bug, Feedback Response
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   
+   Repro Steps (or Steps to reproduce) 
+  
+   :::column-end:::
+     :::column span="2":::
+   
+   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior.
+    
+   Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML
+
+  
+   :::column-end:::
+   :::column span="1":::
+   Bug
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Test Suite Type<sup> 1,4</sup>
+
+   :::column-end:::
+   :::column span="2":::
+   The test suite category. Allowed values are:
+
+   
+   - **Query Based**: Use to group together test cases that have a particular characteristic - for example, all the tests that have Priority=1. The suite will automatically include every test case that is returned by the query that you define.
+
+   - **Static**: Use to group together test cases designed to track the test status of backlog items. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.
+
+   - **Requirement Based**: Use to group together test cases with any characteristics or test suites.
+
+   
+   For more information, see [Create a test plan](../../test/create-a-test-plan.md).
+ 
+   Reference name=Microsoft.VSTS.TCM.TestSuiteType, Data type=String
+
+   :::column-end:::
+   :::column span="1":::
+   Test Suite
+
+   :::column-end:::
+:::row-end:::
+
+
+> [!NOTE]  
+> 1.  Do not customize the picklist for these fields. The system accepts only those values listed.  
+> 2.  By adding a `GLOBALLIST` element to the `FIELD` definition, you can provide a drop-down menu of builds that users can choose from. To learn how, see [Builds and global list auto-population](#global-list) later in this article.
+> 3.  Requires TFS 2013.2 or later version to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
+> 4.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite. To learn more, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade). 
 
 ## Additional fields
 
 The following fields do not appear on work item forms, but these fields are tracked for test cases or test suites. You can use some of these fields to filter queries and create reports. (None of these fields are added to the data warehouse nor indexed.) 
 
-<table width="100%">
-<thead>
-<tr>
-  <th width="20%">Field name</th>
-  <th width="55%">Description</th>
-  <th width="25%">Work item type</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-<td><p>Automated Test Storage</p></td>
-<td><p>The assembly that contains the test that automates the test case.</p>
-    <p>Reference name=Microsoft.VSTS.TCM.AutomatedTestStorage, Data type=String</p></td>
-<td><p>Test Case</p></td>
-</tr>
-<tr>
-<td><p>Automated Test Type</p></td>
-<td><p>The type of test that automates the test case.</p>
-<p>Reference name=Microsoft.VSTS.TCM.AutomatedTestType, Data type=String</p>
-</td>
-<td>Test Case</td>
-</tr>
+:::row:::
+     :::column span="1":::
+   **Field name**
+   :::column-end:::
+     :::column span="2":::
+   **Description**
+   :::column-end:::
+     :::column span="1":::
+   **Work item type**
+   :::column-end:::
+:::row-end:::
 
-<tr>
-<td><p>AutomatedTestId</p></td>
-<td><p>The ID of the test that automates the test case. </p>
-<p>Reference name=Microsoft.VSTS.TCM.AutomatedTestId, Data type=String</p></td>
-<td>Test Case</td>
+:::row:::
+   :::column span="1":::
+   Automated Test Storage
 
-</tr>
-<tr>
-<td><p>AutomatedTestName</p></td>
-<td><p>The name of the test that is used to automate the test case.</p>
-<p>Reference name=Microsoft.VSTS.TCM.AutomatedTestName, Data type=String</p></td>
-<td><p>Test Case</p></td>
+   :::column-end:::
+   :::column span="2":::
+   The assembly that contains the test that automates the test case.
 
-</tr>
-<tr>
-<td><p>LocalDataSource</p></td>
-<td><p>The local data source that supports the test. </p>
-<p>Reference name=Microsoft.VSTS.TCM.LocalDataSource, Data type=HTML</p></td>
-<td><p>Test Case</p></td>
+   Reference name=Microsoft.VSTS.TCM.AutomatedTestStorage, Data type=String
 
-</tr>
-<tr>
-<td><p>Query Text</p></td>
-<td><p>Field used to capture the query defined for a Query-based suite type.</p>
-<p>Reference name=Microsoft.VSTS.TCM.QueryText, Data type=PlainText</p></td>
-<td><p>Test Suite</p></td>
-</tr>
-<tr>
-<td><p>Test Suite Audit <sup> 1</sup></p></td>
-<td><p>Tracks additional operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.</p>
-<p>Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText</p></td>
-<td>Test Suite</td>
-</tr>
+   :::column-end:::
+   :::column span="1":::
+   Test Case
 
-<tr>
-<td><p>Test Suite Type ID <sup>1, 2</sup></p></td>
-<td><p>A system assigned value that corresponds to the test suite category and only applicable to test suites. Assigned values are:</p>
-<ul>
-<li><p><strong>1</strong> (Static)</p></li>
-<li><p><strong>2</strong> (Query-based)</p></li>
-<li><p><strong>3</strong> (Requirement- based)</p></li>
-</ul>
-<p>Reference name=Microsoft.VSTS.TCM.TestSuiteTypeId, Data type=Integer</p></td>
-<td>Test Suite</td>
-</tr>
-</tbody>
-</table>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Automated Test Type
 
-**Notes**  
-1.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.  
-2.  Do not customize the picklist for these fields. The system accepts only those values listed.
+   :::column-end:::
+   :::column span="2":::
+   The type of test that automates the test case.
+
+   Reference name=Microsoft.VSTS.TCM.AutomatedTestType, Data type=String
+
+   :::column-end:::
+   :::column span="1":::
+   Test Case
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   AutomatedTestId
+
+   :::column-end:::
+   :::column span="2":::
+   The ID of the test that automates the test case. 
+
+   Reference name=Microsoft.VSTS.TCM.AutomatedTestId, Data type=String
+
+   :::column-end:::
+   :::column span="1":::
+   Test Case
+   :::column-end:::
+
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   AutomatedTestName
+
+   :::column-end:::
+   :::column span="2":::
+   The name of the test that is used to automate the test case.
+
+   Reference name=Microsoft.VSTS.TCM.AutomatedTestName, Data type=String
+
+   :::column-end:::
+   :::column span="1":::
+   Test Case
+
+   :::column-end:::
+
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   LocalDataSource
+
+   :::column-end:::
+   :::column span="2":::
+   The local data source that supports the test. 
+
+   Reference name=Microsoft.VSTS.TCM.LocalDataSource, Data type=HTML
+
+   :::column-end:::
+   :::column span="1":::
+   Test Case
+
+   :::column-end:::
+
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Query Text
+
+   :::column-end:::
+   :::column span="2":::
+   Field used to capture the query defined for a Query-based suite type.
+
+   Reference name=Microsoft.VSTS.TCM.QueryText, Data type=PlainText
+
+   :::column-end:::
+   :::column span="1":::
+   Test Suite
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+   Test Suite Audit <sup> 1</sup>
+
+   :::column-end:::
+   :::column span="2":::
+   Tracks additional operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.
+
+   Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText
+
+   :::column-end:::
+   :::column span="1":::
+   Test Suite
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="1":::
+   Test Suite Type ID <sup>1, 2</sup>
+
+   :::column-end:::
+   :::column span="2":::
+   A system assigned value that corresponds to the test suite category and only applicable to test suites. Assigned values are:
+
+   
+   - **1** (Static)
+
+   - **2** (Query-based)
+
+   - **3** (Requirement- based)
+
+   
+   Reference name=Microsoft.VSTS.TCM.TestSuiteTypeId, Data type=Integer
+
+   :::column-end:::
+   :::column span="1":::
+   Test Suite
+   :::column-end:::
+:::row-end:::
+
+
+> [!NOTE]  
+> 1.  Requires TFS 2013.3 or later version to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.  
+> 2.  Do not customize the picklist for these fields. The system accepts only those values listed.
 
 
 
@@ -288,7 +482,7 @@ The following fields do not appear on work item forms, but these fields are trac
 
 ### Fields that integrate with Team Foundation Build
 
-Team Foundation Build is the on-premise build system you can use with Azure DevOps Server and TFS. You can configure your build process by using Team Foundation Build, and Team Foundation Build can generate work items when a build fails. It can also add build information to work items that were resolved in a particular build. For this to work, Team Foundation Build requires that the following two fields be added to the work item type definition: <strong>Found In</strong> and <strong>Integration Build</strong>.
+Team Foundation Build is the on-premise build system you can use with Azure DevOps Server and TFS. You can configure your build process by using Team Foundation Build, and Team Foundation Build can generate work items when a build fails. It can also add build information to work items that were resolved in a particular build. For this to work, Team Foundation Build requires that the following two fields be added to the work item type definition: **Found In** and **Integration Build**.
 
 **Found In** and **Integrated in Build** fields are defined for Bugs in the default processes. These fields associate bugs with the builds where they were found or fixed. 
 

@@ -29,7 +29,7 @@ Learn how to navigate Test Plans to support your test goals and operations. Use 
 To learn about specific test artifacts, see the following articles: 
 - [Create test plans and test suites](create-a-test-plan.md)
 - [Create manual test cases](create-test-cases.md)
-- [Test settings](/azure/devops/test/test-different-configurations)
+- [Test settings](./test-different-configurations.md)
 
 
 [!INCLUDE [prerequisites](includes/prerequisites.md)] 
@@ -275,7 +275,7 @@ To learn more about executing tests, see [Run manual tests](run-manual-tests.md)
 
 ## Chart test cases and test results 
 
-From the chart tab you can create various test case or test result charts. To learn how, see [Track test status, Charts](track-test-status.md#charts). 
+From the chart tab you can create various test case or test result charts. To learn how, see [Track test status, Charts](track-test-status.md). 
 
 ## Next steps
 

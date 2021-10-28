@@ -197,7 +197,7 @@ Content-Type: application/json
 
 Some web proxies may only support the HTTP verbs GET and POST, but not more modern HTTP verbs like PATCH and DELETE.
 If your calls may pass through one of these proxies, you can send the actual verb using a POST method, with a header to override the method.
-For example, you may want to [update a work item](/rest/api/azure/devops/wit/work%20items/update) (`PATCH _apis/wit/workitems/3`), but you may have to go through a proxy that only allows GET or POST.
+For example, you may want to [update a work item](/rest/api/azure/devops/wit/work-items/update) (`PATCH _apis/wit/workitems/3`), but you may have to go through a proxy that only allows GET or POST.
 You can pass the proper verb (PATCH in this case) as an HTTP request header parameter and use POST as the actual HTTP method.
 
 ```no-highlight

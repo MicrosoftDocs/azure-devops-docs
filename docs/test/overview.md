@@ -1,6 +1,6 @@
 ---
 title: Exploratory and manual testing overview
-description: Test tools - Drive quality and collaboration throughout the development process with manual and exploratory testing capabilities
+description: Drive quality and collaboration throughout the development process with manual and exploratory testing capabilities
 ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.technology: devops-test
 ms.topic: overview
@@ -232,16 +232,18 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 
 * **End to End Traceability**. Azure DevOps and TFS provide [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
 
-* **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Azure DevOps and TFS](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
+* **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Azure DevOps](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
+
+## Related articles
+
+- [Get started with manual testing](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json)
+- [Get started with exploratory testing](perform-exploratory-tests.md)
+- [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)
+- [Get stakeholder feedback with exploratory testing](request-stakeholder-feedback.md)
+* [Continuous testing](../pipelines/index.yml)
+
 
 ## Additional resources
 
-* [Get started with manual testing](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json)
-* [Advanced manual testing techniques](user-acceptance-testing.md)
-* [Get started with exploratory testing](perform-exploratory-tests.md)
-* [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)
-* [Get stakeholder feedback with exploratory testing](request-stakeholder-feedback.md)
-
-> See also [Continuous testing](../pipelines/index.yml), [Unit testing](/visualstudio/test/developer-testing-scenarios).
-
-
+- [Test Planning and Management Guide](https://vsardata.blob.core.windows.net/projects/Test%20Planning%20and%20Management%20Guide.pdf) 
+- [Unit testing](/visualstudio/test/developer-testing-scenarios) 

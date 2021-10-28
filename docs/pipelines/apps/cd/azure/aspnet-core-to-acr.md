@@ -5,7 +5,7 @@ ms.author: mlearned
 author: mlearned
 ms.assetid: EF5F37B7-774B-410C-8A82-83F722EF9692
 ms.custom: "mvc, seodec18"
-ms.date: 09/07/2021
+ms.date: 09/17/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Azure Pipelines provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to Linux App Service using Docker and [Azure Container Registry](/azure/container-registry/).
+Azure Pipelines provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to Azure App Service Custom Containers using Docker and [Azure Container Registry](/azure/container-registry/).
 
 ![A typical release pipeline for web applications](media/aspnet-core-to-acr/cicddockerflow.png)
 
