@@ -231,6 +231,8 @@ The Azure CLI isn't supported in this version. For more information, see [Get st
 ::: moniker-end
 
 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+
 ***
 
 
@@ -238,7 +240,7 @@ The Azure CLI isn't supported in this version. For more information, see [Get st
 
 When you open a PR from the browser, from Visual Studio, or from Azure CLI, the PR opens to its **Overview** tab. The **Overview** tab shows the PR title, description, reviewers, linked worked items, history, and status. You can see a summary of branch policies that are passing or failing, and see comments reviewers have made.
 
-:::image type="content" source="media/view-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR Overview tab.":::
+:::image type="content" source="media/view-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the P R Overview tab.":::
 
 On the PR **Files** tab, you can review the actual changes in the PR files. On the **Updates** and **Commits** tabs, you can see changes the author has made to update the PR branch.
 
