@@ -56,16 +56,43 @@ In general, you create test plans to test requirements. Before creating a test p
 1. From the web portal, open your project and go to **Test Plans**.
    If you already have a test plan, choose **Test Plans** to go to the page that lists all test plans.
 
-   ![Opening the list of test plans page for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/open-test-plans.png)
+   ![Screenshot of opening the list of test plans page for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/open-test-plans.png)
 
 1. In the **Test Plans** page, choose **New Test Plan** to create a test plan for your current sprint.
 
-   ![Creating a new test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/new-test-plan.png)
+   ![Screenshot of creating a new test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/new-test-plan.png)
 
 1. In **New Test Plan**, enter a name for the test plan.
    Verify that the area path and iteration are set correctly, then choose **Create**.
 
-   ![Adding test plan details for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/test-plan-name-path-iteration.png)
+   ![Screenshot of adding test plan details for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/test-plan-name-path-iteration.png)
+
+### Rename a test plan
+
+To rename a test plan, use this procedure:
+
+1. Select **Test Plans** to view test plans.
+
+1. Next to the test plan name, select **More Actions** > **Edit**.
+
+   ![Screenshot shows option to edit a test plan.](media/create-a-test-plan/rename-edit-test-plan.png)
+
+1. Change the name and then select **Save & Close**.
+
+You can make other changes to the test plan here.
+
+### Delete a test plan
+
+To delete a test plan, use this procedure:
+
+1. Select **Test Plans** to view test plans.
+
+1. Next to the test plan name, select **More Actions** > **Delete**.
+
+1. The **Permanently delete test artifacts** dialog box explains exactly what will be deleted. Type the test plan ID to confirm that you want to delete, and then select **Permanently delete**.
+
+   ![Screenshot shows Permanently delete test artifacts dialog box.](media/create-a-test-plan/permanently-delete-test-artifacts.png)
+
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
@@ -85,6 +112,18 @@ In general, you create test plans to test requirements. Prior to creating a test
 
    ![Adding test plan details](media/create-a-test-plan/CreateATestPlan2.png) 
 
+### Rename a test plan
+
+To rename a test plan, open it from the shortcut menu and rename it.
+
+![Rename a test plan](media/create-a-test-plan/rename-test-plan.png)
+
+### Delete a test plan
+
+To delete a test plan, use the shortcut menu for the test plan.
+
+![Delete a test plan](media/create-a-test-plan/delete-test-plan.png)
+
 ::: moniker-end
 
 <a name="backlog"></a>
@@ -99,7 +138,7 @@ Now add test suites for the backlog items that need manual tests. These tests co
 
 1. To add a suite to a test plan, select **More options** for the test suite, and then select **New Suite** > **Requirement based suite**.
 
-   ![Creating a requirement-based test suite for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/add-requirement-based-suite.png)
+   ![Screenshot shows creating a requirement-based test suite for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/add-requirement-based-suite.png)
 
    You use requirement-based suites to group your test cases together.
    That way, you can track the testing status of a backlog item.
@@ -108,12 +147,12 @@ Now add test suites for the backlog items that need manual tests. These tests co
 1. In **Create requirement-based suites**, add one or more clauses to filter your work items by the iteration path for the sprint.
    Run the query to view the matching backlog items.
 
-   ![Adding clauses to filter by iteration and running the query to view results for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/add-clauses-run-query.png)
+   ![Screenshot shows adding clauses to filter by iteration and running the query to view results for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/add-clauses-run-query.png)
 
 1. In the list of work items returned by the query, select the backlog items you want to test in this sprint.
    Choose **Create suites** to create a requirement-based suite for each one.
 
-   ![Adding requirement-based suites for your backlog items for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/select-requirement-create-suite.png)
+   ![Screenshot shows adding requirement-based suites for your backlog items for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/select-requirement-create-suite.png)
 
 ::: moniker-end
 
@@ -143,19 +182,31 @@ Now add test suites for the backlog items that need manual tests. These tests co
 
 ::: moniker-end
 
-## Rename a test plan
+## Work with test suites
 
-To rename a test plan, open it from the shortcut menu and rename it.
+::: moniker range=">=azure-devops-2020"
+You can create a static test suite that can contain any type of test suites. Use these suites just like folders. Drag test suites to group them in a static test plan. Drag and drop tests to reorder them.
 
-![Rename a test plan](media/create-a-test-plan/rename-test-plan.png)
+![Screenshot shows using drag and drop to move a test.](media/create-a-test-plan/drag-drop-test.png)
 
-## Delete a test plan
+You can track changes to test plans and test suites.
 
-To delete a test plan, use the shortcut menu for the test plan.
+Yes, you can track changes to test plans and test suites. Open the work item for the test plan or test suite, then view the work item history.
 
-![Delete a test plan](media/create-a-test-plan/delete-test-plan.png)
+For test suites, other actions are tracked in the Test Suite Audit field. For example, adding and removing test cases from a test suite are tracked in this field.
+::: moniker-end
 
-See also [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
+::: moniker range="<=azure-devops-2019"
+You can create a static test suite that can contain any type of test suites. Use these suites just like folders. Drag test suites to group them in a static test plan. Drag and drop tests to reorder them.
+
+![Screenshot shows using drag and drop to reorder tests.](media/create-a-test-plan/AddRequirementSuitesToTestPlan4.png)
+
+You can track changes to test plans and test suites. 
+
+Yes, you can track changes to test plans and test suites. Open the work item for the test plan or test suite, then view the work item history.
+
+For test suites, other actions are tracked in the Test Suite Audit field. For example, adding and removing test cases from a test suite are tracked in this field.
+::: moniker-end
 
 <a name="findplan"></a>
 
@@ -164,7 +215,7 @@ See also [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
 ::: moniker range=">=azure-devops-2020"
 In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon to show the search and filter list. It can help find the tests you want.
 
-  ![Finding a test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/filter-select-test-plan.png)
+  ![Screenshot shows finding a test plan for Azure DevOps Server 2020 and Azure DevOps Services.](media/create-a-test-plan/filter-select-test-plan.png)
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
@@ -176,16 +227,7 @@ Or filter the list of tests using **Outcome**, **Tester**, and **Configuration**
   
 ::: moniker-end
 
-## Group and reorder test suites
-You can create a static test suite that can contain any type of test suites - just like folders. Drag test suites to group them in a static test plan. Drag and drop tests to reorder them.
 
-![Use static test suites like folders](media/create-a-test-plan/AddRequirementSuitesToTestPlan4.png)
-
-## Track changes to test plans and test suites
-
-Yes, you can track changes to test plans and test suites. Open the work item for the test plan or test suite, then view the work item history.
-
-For test suites, other actions are tracked in the Test Suite Audit field. For example, adding and removing test cases from a test suite are tracked in this field.
 
 ## Next steps
 
