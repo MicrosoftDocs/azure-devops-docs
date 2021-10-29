@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-With NuGet package restore you can install all your project's dependency without having to store them in source control. This allows for a cleaner development environment and a smaller repository size. You can restore your NuGet packages using the NuGet restore task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both the YAML and the classic Azure Pipelines. 
+With NuGet package, restore you can install all your project's dependency without having to store them in source control. This allows for a cleaner development environment and a smaller repository size. You can restore your NuGet packages using the NuGet restore task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both the YAML and the classic Azure Pipelines. 
 
 ### Prerequisites
 
@@ -54,7 +54,7 @@ Place your `nuget.config` in the same folder as your `.csproj` or `.sln`file. Yo
 </configuration>
 ```
 
-To restore your NuGet packages run the following command in your project directory:
+To restore your NuGet packages, run the following command in your project directory:
 
 ```Command
 nuget.exe restore
@@ -74,7 +74,7 @@ nuget.exe restore
 ```
 
 - `command`: The dotnet command to run. Options: `build`, `push`, `pack`, `restore`, `run`, `test`, and `custom`.
-- `projects`: The path to the csproj file(s) to use. You can use wildcards (e.g. **/*.csproj for all .csproj files in all subfolders).
+- `projects`: The path to the csproj file(s) to use. You can use wildcards (example: **/*.csproj for all .csproj files in all subfolders).
 - `feedsToUse`: You can either choose to select a feed or commit a NuGet.config file to your source code repository and set its path using `nugetConfigPath`. Options: `select`, `config`.
 - `vstsFeed`: This argument is required when `feedsToUse` == `Select`. Value format: `<projectName>/<feedName>`.
 - `includeNuGetOrg`: Use packages from NuGet.org.
