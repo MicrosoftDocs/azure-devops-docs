@@ -23,7 +23,7 @@ With NuGet package restore you can install all your project's dependency without
 - [Create your first pipeline](../create-first-pipeline.md).
 - [Set up permissions for your pipelines](../../artifacts/feeds/feed-permissions.md#pipelines-permissions).
 
-## Restore packages with NuGet restore build task
+## Restore packages with NuGet restore
 
 1. Navigate to your pipeline definition, and then select **Edit**.
 1. Select **+** to add a new task. Search for **NuGet**, and then select **Add** to add the task to your pipeline.
@@ -35,20 +35,19 @@ With NuGet package restore you can install all your project's dependency without
 1. Check the **Use packages from NuGet.org** checkbox if you want to include packages from NuGet.org.
 1. Select **Save & queue** when you are done.
 
-## Restore your NuGet packages with the NuGet CLI
+## Restore packages with NuGet CLI
 
-In order for your project to be set up properly, your `nuget.config` must be in the same folder as your `.csproj` or `.sln`file.
-The `nuGet.config` file you check-in also should list all the package sources you want to consume. The example below demonstrates how that might look.
+Place your `nuget.config` in the same folder as your `.csproj` or `.sln`file. Your config file should look similar to the following example:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <packageSources>
-    <!-- remove any machine-wide sources with <clear/> -->
+    <!-- remove inherited connection strings -->
     <clear />
     <!-- add an Azure Artifacts feed -->
     <add key="FabrikamFiber" value="https://pkgs.dev.azure.com/microsoftLearnModule/_packaging/FabrikamFiber/nuget/v3/index.json" />
-    <!-- also get packages from the NuGet Gallery -->
+    <!-- Get packages from NuGet.org -->
     <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
   </packageSources>
 </configuration>
@@ -56,13 +55,11 @@ The `nuGet.config` file you check-in also should list all the package sources yo
 
 To restore your NuGet packages run the following command in your project directory:
 
-```cmd
+```Command
 nuget.exe restore
 ```
 
-## Restore NuGet packages with the .NET Core CLI task
-
-To restore your package using YAML and the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md), use the following example:
+## Restore packages with the .NET Core CLI task
 
 ```YAML
 - task: DotNetCoreCLI@2
@@ -75,11 +72,11 @@ To restore your package using YAML and the [.NET Core CLI task](../tasks/build/d
     includeNuGetOrg: true
 ```
 
-* `command`: The dotnet command to run. Options: `build`, `push`, `pack`, `restore`, `run`, `test`, and `custom`.
-* `projects`: The path to the csproj file(s) to use. You can use wildcards (e.g. **/*.csproj for all .csproj files in all subfolders).
-* `feedsToUse`: You can either choose to select a feed or commit a NuGet.config file to your source code repository and set its path using `nugetConfigPath`. Options: `select`, `config`.
-* `vstsFeed`: This argument is required when `feedsToUse` == `Select`. Value format: `<projectName>/<feedName>`.
-* `includeNuGetOrg`: Use packages from NuGet.org.
+- `command`: The dotnet command to run. Options: `build`, `push`, `pack`, `restore`, `run`, `test`, and `custom`.
+- `projects`: The path to the csproj file(s) to use. You can use wildcards (e.g. **/*.csproj for all .csproj files in all subfolders).
+- `feedsToUse`: You can either choose to select a feed or commit a NuGet.config file to your source code repository and set its path using `nugetConfigPath`. Options: `select`, `config`.
+- `vstsFeed`: This argument is required when `feedsToUse` == `Select`. Value format: `<projectName>/<feedName>`.
+- `includeNuGetOrg`: Use packages from NuGet.org.
 
 ## Restore NuGet packages from feeds in a different organization
 
