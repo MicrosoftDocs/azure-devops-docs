@@ -125,7 +125,7 @@ For existing pipelines, add the **NuGet Tool Installer** to your pipeline and se
 
 ::: moniker range="<=tfs-2017" 
 
-#### ### How do I use the latest version of NuGet?
+### How do I use the latest version of NuGet?
 
 The NuGet Tool Installer is not available in only available in TFS 2018. We recommended the following workaround to use NuGet version 4.0.0 or higher in your pipeline.
 
