@@ -52,7 +52,7 @@ There some important things to note regarding public feeds:
 
     :::image type="content" source="media/feed-settings.png" alt-text="Screenshot showing how to access the feed's settings":::
 
-1. Select **Delete feed**
+1. Select **Delete feed**.
 
     :::image type="content" source="media/delete-a-feed.png" alt-text="Screenshot showing how to delete a feed":::
 
