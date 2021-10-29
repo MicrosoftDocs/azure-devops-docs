@@ -78,35 +78,31 @@ nuget.exe restore
 - `vstsFeed`: This argument is required when `feedsToUse` == `Select`. Value format: `<projectName>/<feedName>`.
 - `includeNuGetOrg`: Use packages from NuGet.org.
 
-## Restore NuGet packages from feeds in a different organization
+## Restore packages from feeds in a different organization
 
-If your NuGet.config contains feeds in a different Azure DevOps organization than the one running the build, you'll need to set up credentials for those feeds manually.
+To restore NuGet packages from feeds in a different Azure DevOps organization, you must set up authentication to those feeds manually.
  
 1. Select an account (either a service account (recommended) or a user account) that has access to the remote feed.
-2. In your browser, open a Private mode, Incognito mode, or a similar mode window and navigate to the Azure DevOps organization that hosts the feed. Sign in with the credentials mentioned in step 1, select **User settings** then **Personal Access Tokens**.
+1. In your browser, open a Private mode, Incognito mode, or a similar mode window and navigate to the Azure DevOps organization hosting the remote feed. Sign in, and then select **User settings** -> **Personal Access Tokens**.
 
-    > [!div class="mx-imgBorder"]
-    > ![personal access token](media/pat.png)
+    :::image type="content" source="media/pat.png" alt-text="Screenshot showing how to create a personal access token":::
 
-3. Create your PAT with the **Packaging (read)** scope and keep it handy.
-4. In the Azure DevOps organization that contains the build, edit the build's NuGet step and ensure you're using version 2 or greater of the task, using the version selector.
+1. Create a personal access token with **Packaging (read)** scope and copy your pat to the clipboard.
+1. Navigate to your pipeline definition and select the **NuGet restore** task. Make sure you're using version 2 or greater.
 
-    > [!div class="mx-imgBorder"]
-    > ![NuGet v2](media/nuget-v-2.png)
+    :::image type="content" source="media/nuget-v-2.png" alt-text="Screenshot showing the NuGet restore task version":::
 
-5. In the **Feeds and authentication** section, Ensure you've selected the **Feeds in my NuGet.config** radio button.
-6. Set the path to your NuGet.config in the **Path to NuGet.config**.
-7. In **Credentials for feeds outside this organization/collection**, select the **+ New**.
+1. Select the **Feeds and authentication** section, and then select **Feeds in my NuGet.config** option.
+1. Enter the path to your NuGet.config file.
+1. Select **New** to add **Credentials for feeds outside this organization/collection**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Feeds and authentication](media/feeds-and-authentication.png)
+    :::image type="content" source="media/feeds-and-authentication.png" alt-text="Screenshot showing how to configure the NuGet restore task":::
 
-8. In the service connection dialog that appears, select the **External Azure DevOps Server** option and enter a connection name, the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3.
+1. Select **External Azure DevOps Server**, and then enter a connection name, the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3.
 
-    > [!div class="mx-imgBorder"]
-    > ![NuGet service connection](media/service-connection.png)
+    :::image type="content" source="media/service-connection.png" alt-text="Screenshot showing how to add a NuGet service connection":::
 
-9. Save & queue a new build.
+1. Select **Save & queue** when you are done.
 
 ## FAQ
 
