@@ -164,7 +164,7 @@ As you look through the audit events, you may find the *Category* and *Area* col
 | Token          | Create, modify, revoke, and delete Personal Access Tokens (PATs) or SSH Keys. Track public repository discovery and system revocations of PATs. Token access events are not currently logged. |
 
 > [!Note]
-> Want to find out what event areas your organization logs? Be sure to check out the [Audit Log Query API](https://docs.microsoft.com/en-us/rest/api/azure/devops/audit/audit-log/query?view=azure-devops-rest-6.0): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization. This API returns a list of all audit events your organization could emit. 
+> Want to find out what event areas your organization logs? Be sure to check out the [Audit Log Query API](https://docs.microsoft.com/rest/api/azure/devops/audit/audit-log/query): `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`, replacing {YOUR_ORGANIZATION} with the name of your organization. This API returns a list of all audit events your organization could emit. 
 
 ## Filter audit log by date and time
 
