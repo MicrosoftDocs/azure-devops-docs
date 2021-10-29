@@ -139,7 +139,7 @@ steps:
 ```
 
 > [!NOTE]
-> You public key should be added to the repository\organization otherwise you'll get issue with the access. For GitHub please follow [the guide above](#example-setup-using-github). For Azure DevOps Services please use the following guide: [Add the public key to Azure DevOps Services/TFS](https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops#step-2--add-the-public-key-to-azure-devops-servicestfs).
+> You public key should be added to the repository\organization otherwise you'll get issue with the access. For GitHub please follow [the guide above](#example-setup-using-github). For Azure DevOps Services please use the following guide: [Add the public key to Azure DevOps Services/TFS](../../../repos/git/use-ssh-keys-to-authenticate.md).
 
 ## Open source
 
