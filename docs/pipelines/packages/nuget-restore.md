@@ -9,6 +9,7 @@ ms.custom: "seodec18, contperf-fy21q1"
 ms.topic: conceptual
 ms.date: 10/29/2021
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
 # Restore NuGet packages in Azure Pipelines
@@ -106,36 +107,53 @@ To restore NuGet packages from feeds in a different Azure DevOps organization, y
 
 ## FAQ
 
-### Why can't my build restore NuGet packages?
+### My pipeline is failing to restore my NuGet packages?
 
-NuGet restore can fail due to a variety of issues. One of the most common issues is the introduction of a new project in your solution that requires a [target framework](/nuget/schema/target-frameworks) that isn't understood by the version of NuGet your build is using. This issue generally doesn't present itself on a developer machine because Visual Studio updates the NuGet restore mechanism at the same time it adds new project types. We're looking into similar features for Azure Artifacts. In the meantime though, the first thing to try when you can't restore packages is to update to the latest version of NuGet.
+The NuGet restore task can fail for several reasons. The most common scenario is when you add a new project that requires a [target framework](/nuget/schema/target-frameworks) that is not supported by the NuGet version your pipeline is using. This failure doesn't occur generally in the local development environment because Visual Studio takes care of updating your solution accordingly. Make sure you upgrade your NuGet task to the latest version.
+
+::: moniker range="= tfs-2018" 
 
 ### How do I use the latest version of NuGet?
 
-::: moniker range=">= tfs-2018" 
+For new pipelines, the **NuGet Tool Installer** will be added automatically to any pipeline that uses a NuGet task. We periodically update the NuGet default version around the same time we install Visual Studio updates on the Hosted build agents.
 
-If you're using Azure Pipelines or TFS 2018, new template-based builds will work automatically thanks to a new "NuGet Tool Installer" task that's been added to the beginning of all build templates that use the NuGet task. We periodically update the default version that's selected for new builds around the same time we install Visual Studio updates on the Hosted build agents.
+For existing pipelines, add the **NuGet Tool Installer** to your pipeline and select the NuGet version for all the subsequent tasks. Check out the [dist.nuget](https://dist.nuget.org/tools.json) to see all the available versions.
 
-For existing builds, just add or update a NuGet Tool Installer task to select the version of NuGet for all the subsequent tasks. You can see all available versions of NuGet [on nuget.org](https://dist.nuget.org/tools.json).
-
-> [!div class="mx-imgBorder"]
-> ![Build with NuGet Tool Installer task](media/nuget-tool-installer.png)
+:::image type="content" source="media/nuget-tool-installer.png" alt-text="Screenshot showing the NuGet tool installer task":::
 
 ::: moniker-end 
 
 ::: moniker range="<=tfs-2017" 
 
-#### TFS 2017 and earlier
+#### ### How do I use the latest version of NuGet?
 
-Because the NuGet Tool Installer is not available in TFS versions prior to TFS 2018, there is a recommended workaround to use versions of NuGet > 4.0.0 in Azure Pipelines.
+The NuGet Tool Installer is not available in only available in TFS 2018. We recommended the following workaround to use NuGet version 4.0.0 or higher in your pipeline.
 
-1. Add the task, if you haven't already. If you have a "NuGet Restore" task in the catalog (it may be in the Deprecated tasks section), insert it into your build. Otherwise, insert a "NuGet" task.
-1. For your NuGet/NuGet Installer task, use the version selector under the task name to select version "0.*".
-1. In the Advanced section, set the NuGet Version to "Custom" and the Path to NuGet.exe as
-$(Build.BinariesDirectory)\nuget.exe
-1. Before your NuGet task, add a "PowerShell" task, select "Inline Script" as the Type, enter this PowerShell script as the Inline Script, and enter "4.3.0" (or any version of NuGet from this list) as the Arguments.
+1. Add the **NuGet** task to your pipeline definition..
+1. Select version `0.*` for your NuGet/NuGet Installer tasks.
+1. Set the **NuGet Version** to "Custom" and the **Path to NuGet.exe** to `$(Build.BinariesDirectory)\nuget.exe` in the **Advanced** section. 
+1. Add a **PowerShell** task BEFORE your NuGet task, and then select **Inline Script** and paste the following script in the script text area. The script will check if the version is 4.0.0 or higher and update the task version if needed.
 
-Our thanks to [GitHub user leftler](https://github.com/Microsoft/azure-pipelines-tasks/issues/3756#issuecomment-288185011) for creating the original version of the PowerShell script linked above.
+    ```PowerShell
+    if (-not (Test-Path $(Build.BinariesDirectory)\nuget.exe))
+    {
+        $doDownload = $true
+    }
+    else
+    {
+        $nuGetVersion = Get-ChildItem $(Build.BinariesDirectory)\nuget.exe | %{$_.VersionInfo} | %{$_.ProductVersion}
+        if ([System.Version]$nuGetVersion -lt [System.Version]"4.0.0")
+        {
+            $doDownload = $true
+        }
+    }
+    if($doDownload)
+    {
+        Invoke-WebRequest https://dist.nuget.org/win-x86-commandline/v4.0.0/nuget.exe -OutFile $(Build.BinariesDirectory)\nuget.exe
+    }
+    ```
+
+We appreciate the contribution of our community for creating the original version of the [PowerShell script](https://github.com/Microsoft/azure-pipelines-tasks/issues/3756#issuecomment-288185011) mentioned above.
 
 ::: moniker-end 
 
