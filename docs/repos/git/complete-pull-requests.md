@@ -65,7 +65,7 @@ Teams can set [branch policies](branch-policies.md) that require PRs in protecte
 
 # [Browser](#tab/browser)
 
-The PR **Overview** tab summarizes branch policies that are passing or failing for the PR. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View <n> checks**.
+The PR **Overview** tab summarizes branch policies that are passing or failing for the PR. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View \<n> checks**.
 
 To see all policies that are in effect for a branch, go to **Repos** > **Branches**. Branches that have policies in effect show an icon :::image type="icon" source="./media/complete-pull-requests/policies-icon.png"::: in the branch list. Select the icon to go to the branch's **Branch Policies** page in **Project Settings**.
 
@@ -139,6 +139,7 @@ a6e4380e-9f38-4aa5-863c-0fc496027362  Work item linking                         
 ***
 
 
+<a name="complete-the-pull-request"></a>
 ## Complete a pull request
 
 After you resolve any merge conflicts, and the PR meets all branch policies and has all required approvals, you can complete the PR.
@@ -245,6 +246,7 @@ Linked work items are also updated showing the PR completion.
 
 ::: moniker range=">= tfs-2017"
 
+<a name="complete-automatically"></a>
 ## Set autocomplete
 
 Select **Set auto-complete** from the **Complete** dropdown list to complete and merge the PR changes as soon as conditions satisfy all [branch policies](branch-policies.md). When the PR is completed, you receive an email notification. If a conflict or error prevents PR completion, email notifies you of the issue.
@@ -309,7 +311,7 @@ az repos pr update --id 21 --status completed
 
 ## Set completion options
 
-You can set PR completion options when you [create a PR](pull-requests#create-a-pull-request) with `az repos pr create`, or update creation options in existing PRs with `az repos pr update`. 
+You can set PR completion options when you [create a PR](pull-requests.md#create-a-pull-request) with `az repos pr create`, or update creation options in existing PRs with `az repos pr update`. 
 
 PR completion options include:
 
@@ -342,6 +344,8 @@ az repos pr update --id
 
 ### Parameters
 
+|Parameter|Description|
+|---------|-----------|
 |`--id`|ID of the pull request. **Required**.
 |`--auto-complete`|Set the pull request to complete automatically when all policies have passed and the source branch can be merged into the target branch. Accepted values: `false`, `true`.|
 |`--bypass-policy`|Bypass any required policies and complete the pull request once it can be merged. Accepted values: `false`, `true`.|
@@ -366,6 +370,7 @@ The following example completes PR #21, deletes its source branch, resolves its 
 az repos pr update --id 21 --status completed --delete-source-branch true --transition-work-items true --merge-commit-message "This update is complete."
 ```
 
+<a name="complete-automatically"></a>
 ## Set autocomplete
 
 Set autocomplete to complete a PR automatically when it passes all required approvals and branch policies. You can set autocomplete at PR creation, or update an existing PR.
