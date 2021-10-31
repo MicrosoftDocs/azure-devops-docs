@@ -190,7 +190,7 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 
 You can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
-To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create). To open the PR in your browser after creation, use `--open`.
+To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create). To open the PR in your browser after creation, use the `--open` parameter.
 
 ```azurecli
 az repos pr create [--auto-complete {false, true}]
@@ -223,7 +223,7 @@ az repos pr create [--auto-complete {false, true}]
 |`--bypass-policy`|Bypass any required policies and complete the pull request once it's mergeable. Accepted values: `false`, `true`.|
 |`--bypass-policy-reason`|Reason for bypassing required policies.|
 |`--delete-source-branch`|Delete the source branch after the pull request is completed and merged into the target branch. Accepted values: `false`, `true`.|
-|`--description -d`|Description for the new pull request, which can include Markdown. Each value is a new line. For example: `--description "First Line" "Second Line"`.|
+|`--description` <br>`-d`|Description for the new pull request, which can include Markdown. Each value is a new line. For example: `--description "First Line" "Second Line"`.|
 |`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`--draft`|Create the pull request in draft mode as work in progress. Accepted values: `false`, `true`.|
 |`--merge-commit-message`|Message that shows when you merge commits.|
