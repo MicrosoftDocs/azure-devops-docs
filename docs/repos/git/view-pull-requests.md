@@ -242,6 +242,8 @@ az repos pr show --id
 
 #### Parameters
 
+|Parameter|Description|
+|---------|-----------|
 |`--id`|ID of the pull request. **Required**.|
 |`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`--open`|Open the pull request in your web browser.|
