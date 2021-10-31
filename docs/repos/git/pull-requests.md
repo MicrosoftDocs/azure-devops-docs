@@ -302,7 +302,7 @@ To change an existing published PR to a draft, choose **Mark as draft**. Marking
 
 To set a PR to draft, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** page, select **Mark as draft**.
 
-# [Azure Devops CLI](#tab/azure-devops-cli)
+# [Azure DevOps CLI](#tab/azure-devops-cli)
 
 To create a PR as a draft, set the `draft` parameter to `true` when you create the PR. (Requires Azure DevOps Server 2020 or later version.)
 
@@ -629,8 +629,7 @@ For most teams, nearly all PRs target a default branch, such as `main` or `devel
 ::: moniker-end
 
 
-::: moniker range=">=azure-devops-2017"
-
+::: moniker range=">= tfs-2018"
 ## Share a pull request
 
 You can share a pull request by email to notify reviewers and communicate with team members. To share a PR:
