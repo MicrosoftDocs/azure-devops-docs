@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 10/18/2021
+ms.date: 10/30/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,9 +16,11 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 [!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
-Create pull requests (PRs) to change, review, and merge code in a [Git project](../../organizations/projects/create-project.md). You can create PRs from branches in the same repository or from branches in your [fork](forks.md) of the repository.
+Create pull requests (PRs) to change, review, and merge code in a [Git project](../../organizations/projects/create-project.md). You can create PRs from branches in the upstream repository or from branches in your [fork](forks.md) of the repository.
 
-Your team can review the PRs and give feedback on changes before they merge into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the PRs.
+Your team can [review the PRs](review-pull-requests.md) and give feedback on changes. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the PRs.
+
+Depending on branch policies, your PR might need to meet various criteria before you can [complete the PR](complete-pull-requests.md) and merge the changes into the target branch.
 
 For PR guidelines and management considerations, see [About pull requests](about-pull-requests.md).
 
@@ -69,8 +71,10 @@ From the Azure DevOps project website, you can create a new PR from:
 - [A feature branch pushed to your repo](#from-a-pushed-branch).
 - [The Development section in a linked Azure Boards work item](#from-a-linked-work-item).
 - [The Pull requests page](#from-the-pull-requests-page).
+- [An existing PR by using cherry-pick](#add-updates-with-cherry-pick).
 
-### From a pushed branch
+<a name="from-a-pushed-branch"></a>
+### Create a PR from a pushed branch
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -78,11 +82,11 @@ After you push or update a feature branch, Azure Repos displays a prompt to crea
 
 - On the **Pull requests** page:
 
-  ![Screenshot that shows the prompt to create a PR on the Pull Requests tab in Azure Repos.](media/pull-requests/create-pr-from-push-new-nav.png)
+  ![Screenshot that shows the prompt to create a P R on the Pull Requests tab in Azure Repos.](media/pull-requests/create-pr-from-push-new-nav.png)
 
 - On the **Files** page:
 
-  ![Screenshot that shows the prompt to create a PR on the Files tab in Azure Repos.](media/pull-requests/create-pr-from-push-files-tab-new-nav.png)
+  ![Screenshot that shows the prompt to create a P R on the Files tab in Azure Repos.](media/pull-requests/create-pr-from-push-files-tab-new-nav.png)
 
 Select **Create a pull request** to go to a page where you can [enter your PR details](pull-requests.md#finish) and create the PR.
 
@@ -92,15 +96,16 @@ Select **Create a pull request** to go to a page where you can [enter your PR de
 
 After you push or update a feature branch, Azure Repos prompts you to create a PR in the **Code** view on the web. This prompt is displayed on **Pull Requests** and **Files**.
 
-![Screenshot that shows the prompt to create a PR on the Pull Requests tab in Azure Repos.](media/pull-requests/create-pr-from-push.png)
+![Screenshot that shows the prompt to create a P R on the Pull Requests tab in Azure Repos.](media/pull-requests/create-pr-from-push.png)
 
-![Screenshot that shows the prompt to create a PR on the Files tab in Azure Repos.](media/pull-requests/create-pr-from-push-files-tab.png)
+![Screenshot that shows the prompt to create a P R on the Files tab in Azure Repos.](media/pull-requests/create-pr-from-push-files-tab.png)
 
 Select **Create a pull request** to go to a page where you can [enter your PR details](pull-requests.md#finish) and create the PR.
 
 ::: moniker-end
 
-### From a linked work item
+<a name="from-a-linked-work-item"></a>
+### Create a PR from a linked work item
 
 You can create a PR directly from an Azure Boards work item linked to the branch.
 
@@ -111,7 +116,8 @@ You can create a PR directly from an Azure Boards work item linked to the branch
 
 The link takes you to a page where you can [enter your PR details](pull-requests.md#finish) and create the PR.
 
-### From the Pull requests page
+<a name="from-the-pull-requests-page"></a>
+### Create a PR from the Pull requests page
 
 You can create PRs for any branch from your project's **Pull requests** page on the web.
 
@@ -121,10 +127,35 @@ You can create PRs for any branch from your project's **Pull requests** page on 
 
 1. Select the branch with the changes and the branch you want to merge the changes into, such as the main branch.
 
-   ![Screenshot of source and target branches for a PR in Azure Repos.](media/pull-requests/pr-branch-targets.png)
+   ![Screenshot of source and target branches for a P R in Azure Repos.](media/pull-requests/pr-branch-targets.png)
 
 1. [Enter your PR details](pull-requests.md#finish) and create the PR.
 
+## Add updates with cherry-pick
+
+You can copy commits from one branch to another by using cherry-pick. Unlike a merge or rebase, cherry-pick only brings the changes from the commits you select, instead of all the changes in a branch.
+
+To cherry-pick changes from a completed PR, select **Cherry-pick** on the PR's **Overview** page. To copy changes from an active PR, select **Cherry-pick** from the PR's **More options** menu. This action creates a new branch with the copied changes. For detailed instructions, see [Copy changes with cherry-pick](cherry-pick.md).
+
+## Switch PR source and target branches
+
+Before the first time you save a PR, you can switch the source and target branches of the PR by selecting the **Switch source and target branches** icon next to the branch names. Once the PR is active, this icon goes away, but you can still [change the target branch](#change-the-target-branch-of-a-pull-request) of the PR.
+
+![Screenshot of the switch source and target branches icon.](media/pull-requests/switch-branches.png)
+
+::: moniker range=">= azure-devops-2019"
+
+## Use PR templates
+
+A pull request template is a file containing Markdown text that populates the PR description when you create a PR. Good PR descriptions tell PR reviewers what to expect, and can help track tasks like adding unit tests and updating documentation. Your team can create a default PR template that adds text to all new PR descriptions in the repo. There can also be branch-specific templates, and you can add other, optional templates to your PRs.
+
+If your repo has a default template, all PRs in the repo have the default template's description text at creation. To add other templates, select **Add a template** and then choose a template from the dropdown list. You can edit the template text in your description, and add other text.
+
+![Screenshot showing Add a template when creating a P R.](media/pull-requests/use-template.png)
+
+For more information about creating and using PR templates, see [Improve pull request descriptions using templates](pull-request-templates.md).
+
+::: moniker-end
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -142,44 +173,82 @@ In Visual Studio 2015, 2017, and 2019, you can create PRs from Visual Studio Tea
 
 1. Select the source and target branches, enter a title and optional description, and select **Create**. 
 
-   ![Screenshot of creating a new PR in Visual Studio Team Explorer.](media/pull-requests/new-pr.png)
+   ![Screenshot of creating a new P R in Visual Studio Team Explorer.](media/pull-requests/new-pr.png)
 
 1. After the PR is created, select **Open in browser** to open the new PR in the Azure DevOps web portal.
 
 You can also create PRs from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create Pull Request**.
 
-![Screenshot of initiating a PR from the Branches view.](media/pull-requests/new-pr-from-branch.png)
+![Screenshot of initiating a P R from the Branches view.](media/pull-requests/new-pr-from-branch.png)
 
 
-# [Azure Command Line](#tab/azure-command-line)
+# [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="create-pr" />
 
 ::: moniker range=">= azure-devops-2020"
 
-In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
-Many `az devops` commands require `--org` and `--project` parameters. To avoid having to enter these parameters, you can set a default Azure DevOps organization and project with `az devops configure --defaults`.
-
-For example, to set the Fabrikam Fiber project and FabrikamPrime organization as defaults, use:
+To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create). To open the PR in your browser after creation, use `--open`.
 
 ```azurecli
-az devops configure --defaults organization=https://fabrikamprime.visualstudio.com project="Fabrikam Fiber"
+az repos pr create [--auto-complete {false, true}]
+                   [--bypass-policy {false, true}]
+                   [--bypass-policy-reason]
+                   [--delete-source-branch {false, true}]
+                   [--description]
+                   [--detect {false, true}]
+                   [--draft {false, true}]
+                   [--merge-commit-message]
+                   [--open]
+                   [--org]
+                   [--project]
+                   [--repository]
+                   [--reviewers]
+                   [--source-branch]
+                   [--squash {false, true}]
+                   [--subscription]
+                   [--target-branch]
+                   [--title]
+                   [--transition-work-items {false, true}]
+                   [--work-items]
 ```
 
-Once you set the defaults, `az devops` commands use the default organization and project. You can use the `org` and `project` parameters to specify other organizations and projects you have access to.
+### Parameters
 
-Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
+|Parameter|Description|
+|---------|-----------|
+|`--auto-complete`|Set the pull request to complete automatically and merge into the target branch when all policies pass. Accepted values: `false`, `true`.|
+|`--bypass-policy`|Bypass any required policies and complete the pull request once it's mergeable. Accepted values: `false`, `true`.|
+|`--bypass-policy-reason`|Reason for bypassing required policies.|
+|`--delete-source-branch`|Delete the source branch after the pull request is completed and merged into the target branch. Accepted values: `false`, `true`.|
+|`--description -d`|Description for the new pull request, which can include Markdown. Each value is a new line. For example: `--description "First Line" "Second Line"`.|
+|`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
+|`--draft`|Create the pull request in draft mode as work in progress. Accepted values: `false`, `true`.|
+|`--merge-commit-message`|Message that shows when you merge commits.|
+|`--open`|Open the pull request in your web browser.|
+|`--org --organization`|Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`--project -p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.|
+|`--repository -r`|Name or ID of the repository to create the pull request in. Required parameter.|
+|`--reviewers`|Additional users or groups to include as reviewers on the new pull request. Space separated.|
+|`--source-branch -s`|Name of the source branch. Example: `"dev"`.|
+|`--squash`|Squash the commits in the source branch when merging into the target branch. Accepted values: `false`, `true`.|
+|`--subscription`|Name or ID of the Azure subscription. You can configure the default subscription by using `az account set -s NAME_OR_ID`.|
+|`--target-branch -t`|Name of the target branch. If not specified, defaults to the default branch of the target repository.|
+|`--title`|Title for the new pull request.|
+|`--transition-work-items`|Transition any work items linked to the PR into the next logical state when the PR changes status. For example change, Active work items to Resolved. Accepted values: `false`, `true`.|
+|`--work-items`|IDs of work items to link to the new pull request. Space separated.|
 
-To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create). The only parameters you need to add are `repository` and `source-branch`. If you don't specify `target-branch`, the PR targets the default branch of the target repository. To open the PR in your browser after creation, use `open`.
+### Create a PR example
 
-For example, the following command creates a PR from the `new` branch to the default `main` branch of the Fabrikam repository, and then opens the PR in the browser:
+The following command creates a PR from the `new` branch to the default `main` branch of the Fabrikam repository, and then opens the PR in the browser. The example uses the default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
 az repos pr create --repository Fabrikam --source-branch new --open
 ```
 
-You can specify several other details about PRs at creation. To add details, reviewers, work items, and completion options to the PR at creation, see [Add details to PRs](#add-details-to-prs).
+You can add many other details about PRs at creation. To add details, reviewers, work items, and completion options to the PR at creation, see [Add details or edit PRs](#add-details-to-prs).
 
 ::: moniker-end
 
@@ -203,7 +272,7 @@ Draft PRs have the following differences from published PRs:
 - Required reviewers aren't automatically added. Notifications are sent only to reviewers that you explicitly add to the draft PR.
 - Draft PRs display in the PR list with a **Draft** badge.
 
-  ![Screenshot showing a draft PR in the PR list.](media/pull-requests/draft-pull-request-badge.png)
+  ![Screenshot showing a draft P R in the P R list.](media/pull-requests/draft-pull-request-badge.png)
 
 ::: moniker-end
 
@@ -233,7 +302,7 @@ To change an existing published PR to a draft, choose **Mark as draft**. Marking
 
 To set a PR to draft, from the **Pull Requests** view in Team Explorer, right-click the PR and select **Open in browser**. On the PR's **Overview** page, select **Mark as draft**.
 
-# [Azure Command Line](#tab/azure-command-line)
+# [Azure Devops CLI](#tab/azure-devops-cli)
 
 To create a PR as a draft, set the `draft` parameter to `true` when you create the PR. (Requires Azure DevOps Server 2020 or later version.)
 
@@ -253,8 +322,9 @@ To remove draft status from a PR, set `draft` to `false`.
 
 
 <a name="finish"></a>
+<a name="add-details-to-prs"></a>
 
-## Add details to PRs
+## Add details or edit PRs
 
 # [Browser](#tab/browser)
 
@@ -327,35 +397,35 @@ To add a label when creating a PR, choose **Add label**. After you create a PR, 
 
 You can add reviewers in the **Reviewers** section of a new or existing PR. You can also make existing optional reviewers required, or change required reviewers to optional or remove them, unless they're required by policy.
 
-If the user or group you want to review the PR isn't a member of your project, you'll need to [add them to the project](../../organizations/security/add-users-team-project.md) before you can add them as reviewers.
+Branch policies can automatically include optional or required reviewers in all or certain PRs. You can't remove reviewers that are required by branch policy. You can change branch policy optional reviewers to be required, or remove them.
+
+To see the branch policy that automatically added a reviewer, in the **Reviewers** section of the PR **Overview** page, right-click **More options** next to the reviewer.
+
+![Screenshot that shows View policy on a reviewer that's automatically included by branch policy.](media/pull-requests/view-policy.png)
+
+If the user or group you want to review your PR isn't a member of your project, you need to [add them to the project](../../organizations/security/add-users-team-project.md) before you can add them as reviewers.
 
 To add reviewers to your PR:
 
-- **In a new PR**:
+**In a new PR**
 
-  1. On the **New pull request** page, under **Reviewers**, select **Search users and groups to add as reviewers**.
-  1. As you enter a name or email address, a dropdown list shows a list of matching users and groups. Select names from the list to add as optional reviewers.
-  1. To add required reviewers, select **Add required reviewers**, and then select **Search to add required reviewers** to search for and select the names.
-  
-  ![Screenshot of adding a reviewer to a new PR.](media/pull-requests/add-reviewer.png)
+1. On the **New pull request** page, under **Reviewers**, select **Search users and groups to add as reviewers**.
+1. As you enter a name or email address, a dropdown list shows a list of matching users and groups. Select names from the list to add as optional reviewers.
+1. To add required reviewers, select **Add required reviewers**, and then select **Search to add required reviewers** to search for and select the names.
 
-- **In an existing PR**:
+![Screenshot of adding a reviewer to a new P R.](media/pull-requests/add-reviewer.png)
 
-  1. In the **Reviewers** section of the **Overview** page, select **Add**, and then select **Required reviewer** or **Optional reviewer**.
+**In an existing PR**
 
-     :::image type="content" source="media/pull-requests/pull-request-add-reviewer-v2.png" alt-text="Pull request overview":::
+1. In the **Reviewers** section of the **Overview** page, select **Add**, and then select **Required reviewer** or **Optional reviewer**.
 
-  1. As you enter a name or email address, a list of matching users or groups appears. Select the names to add as reviewers.
+   :::image type="content" source="media/pull-requests/pull-request-add-reviewer-v2.png" alt-text="Pull request overview":::
 
-     :::image type="content" source="media/pull-requests/pull-request-add-reviewer.png" alt-text="Add P R reviewer.":::
+1. As you enter a name or email address, a list of matching users or groups appears. Select the names to add as reviewers.
 
-  To change a reviewer between required and optional, or remove a reviewer, select **More options** to the right of the reviewer name. To see the membership of a group or team designated as a reviewer, select the group's icon.
+   :::image type="content" source="media/pull-requests/pull-request-add-reviewer.png" alt-text="Add P R reviewer.":::
 
-Branch policies can automatically include optional or required reviewers in all or certain PRs. You can change optional included reviewers to be required or remove them, but you can't remove reviewers that are required by branch policy.
-
-In the **Reviewers** section of the PR **Overview** page, right-click **More options** next to an automatically included reviewer to see the branch policy that included them.
-
-![Screenshot that shows View policy on a reviewer that's automatically included by branch policy.](media/pull-requests/view-policy.png)
+To change a reviewer between required and optional, or remove a reviewer, select **More options** to the right of the reviewer name. To see the membership of a group or team designated as a reviewer, select the group's icon.
 
 ::: moniker-end
 
@@ -456,6 +526,16 @@ Removing a link only removes the link between the work item and the PR. Links cr
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2020"
+
+## Add attachments to PRs
+
+You can attach files, including images, to your PR during or after creation. Select the paper clip icon below the **Description** field, or drag and drop files directly into the **Description** field of the PR.
+
+![Screenshot that shows attaching files to the P R description during creation.](media/pull-requests/attachment.png)
+
+::: moniker-end
+
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -464,7 +544,7 @@ When you create a PR in Visual Studio, enter a title and detailed description of
 To add reviewers, add tags, link work items, or change any details in an existing PR, open the PR in your browser. Right-click the PR from the **Pull Requests** view in Team Explorer, select **Open in browser**, and then make your updates on the PR's **Overview** page.
 
 
-# [Azure Command Line](#tab/azure-command-line)
+# [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="add-details-pr" /> 
 
@@ -548,6 +628,22 @@ For most teams, nearly all PRs target a default branch, such as `main` or `devel
 
 ::: moniker-end
 
+
+::: moniker range=">=azure-devops-2017"
+
+## Share a pull request
+
+You can share a pull request by email to notify reviewers and communicate with team members. To share a PR:
+
+1. Select **More options** on the PR **Overview** page, and then select **Share pull request**.
+
+   ![Screenshot that shows selecting Share pull request on a P R's Overview page.](media/pull-requests/share.png)
+
+1. On the **Share pull request** screen, add recipients by typing their names in the **To:** field and selecting from the user and group names that appear. You can also remove recipients.
+
+1. Add an optional message in the **Note (Optional)** field, and then select **Send**. Recipients receive an email requesting their attention and linking to the PR.
+
+::: moniker-end
 
 ## Next steps
 
