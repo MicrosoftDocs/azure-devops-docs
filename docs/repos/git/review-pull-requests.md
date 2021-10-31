@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 10/18/2021
+ms.date: 10/31/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,7 +16,9 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 [!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
-Teams can set [branch policies](branch-policies.md) to require pull requests (PRs) on protected branches to meet certain criteria. These criteria can include a minimum number of reviewers, and specific required and optional reviewers.
+After you [create a pull request (PR)](pull-requests.md), send it for review by stakeholders. You can add required or optional reviewers to your PR. Required reviewers must approve the PR before it can merge. Teams can set [branch policies](branch-policies.md) that require a minimum number of reviewers, or specific required or optional reviewers, before PRs in protected branches can merge.
+
+High-quality reviews start with high-quality feedback. For guidelines on getting and giving good review feedback, see [Pull request feedback](about-pull-requests.md#pr-feedback).
 
 ## Prerequisites
 
@@ -44,73 +46,75 @@ To learn more about permissions and access, see [Default Git repository and bran
 
 ## Browse changes
 
-- To give reviewers quick picture of PR status, the PR **Overview** tab summarizes branch policies that are passing or failing. In some cases, the summary shows a snippet of the failure message from the check's log. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View \<n> checks**.
+To give reviewers quick picture of PR status, the PR **Overview** tab summarizes branch policies that are passing or failing. In some cases, the summary shows a snippet of the failure message from a status check's log. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View \<n> checks**.
 
-  :::image type="content" source="media/review-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR overview tab.":::
+On the PR **Overview** tab, you can review the PR title, description, and comments to understand proposed changes and see issues other reviewers raised.
 
-  On the PR **Overview** tab, you can review the PR title, description, and comments to understand proposed changes and see issues other reviewers raised.
+:::image type="content" source="media/review-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR overview tab.":::
+
+### Review files
 
 ::: moniker range="azure-devops"
-- Select the PR **Files** tab to review the actual changes made in the source branch, **Inline** or **Side-by-side** with the target branch.
+Select the PR **Files** tab to review the actual changes made in the source branch, **Inline** or **Side-by-side** with the target branch.
+
+You can see how Markdown files will look published by selecting the **View** button on a file, and then selecting **Preview**.
   
-  You can see how a file will look published by selecting the **View** button on a file, and then selecting **Preview**.
-  
-  :::image type="content" source="media/review-pull-requests/pull-request-browse-changes-2020.png" alt-text="Screenshot that shows a side-by-side diff view of file changes in a P R.":::
-  
-  >[!NOTE]
-  >When viewing the difference for a *single selected file*, there's a file size limit of 5 MB. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool. When viewing the difference for a *collection of files*, the size limit for each file is 0.5 MB, for performance reasons.
+:::image type="content" source="media/review-pull-requests/pull-request-browse-changes-2020.png" alt-text="Screenshot that shows a side-by-side diff view of file changes in a P R.":::
+
+>[!NOTE]
+>When viewing the difference for a *single selected file*, there's a file size limit of 5 MB. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool. When viewing the difference for a *collection of files*, the size limit for each file is 0.5 MB, for performance reasons.
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
-- Select the PR **Files** tab to view the actual changes made to the source branch next to the target branch of the pull request.
-  
-  ![PR files](media/review-pull-requests/pull-request-files.png)
-  
-  >[!NOTE]
-  >When viewing the difference for a *single selected file*, there's a file size limit of 5 MB. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool. When viewing the difference for a *collection of files*, the size limit for each file is 0.5 MB, for performance reasons.
+Select the PR **Files** tab to view the actual changes made to the source branch next to the target branch of the pull request.
+
+![PR files](media/review-pull-requests/pull-request-files.png)
+
+>[!NOTE]
+>When viewing the difference for a *single selected file*, there's a file size limit of 5 MB. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool. When viewing the difference for a *collection of files*, the size limit for each file is 0.5 MB, for performance reasons.
 ::: moniker-end
 
-::: moniker range="azure-devops"
-- You can review previous versions of the code from the **All Changes** drop-down list.
-  
-  Every update to the branch adds a new version to the list and on the **Updates** tab of the PR. As you select different updates, the diff view updates to show the differences between the files in each version of the PR.
+### Review updates
 
-  You can catch up with PR updates after being away from the PR by stepping through changes made since your last review. You can view multiple updates at once by pressing **Shift** while selecting the updates you want to see. 
+::: moniker range="azure-devops"
+You can review previous versions of the code from the **All Changes** drop-down list. Every update to the branch adds a new version to the list and on the **Updates** tab of the PR. As you select different updates, the diff view updates to show the differences between the files in each version of the PR.
+
+You can catch up with PR updates after being away from the PR by stepping through changes made since your last review. You can view multiple updates at once by pressing **Shift** while selecting the updates you want to see. 
   
-  :::image type="content" source="media/review-pull-requests/pull-request-all-changes-dropdown.png" alt-text="Screenshot that shows the All changes drop-down.":::
+:::image type="content" source="media/review-pull-requests/pull-request-all-changes-dropdown.png" alt-text="Screenshot that shows the All changes drop-down.":::
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 
-- Review previous versions of the code from the **All updates** drop-down list.
-  
-  ![PR updates](media/review-pull-requests/pull-request-file-updates.png)
+Review previous versions of the code from the **All updates** drop-down list.
 
-  Every update to the branch adds a new version to the list and on the **Updates** tab of the PR. As you select different updates, the diff view updates to show the differences between the files in each version of the PR.
+![PR updates](media/review-pull-requests/pull-request-file-updates.png)
 
-  Catch up with PR updates after being away from the PR by stepping through changes made since your last review.
+Every update to the branch adds a new version to the list and on the **Updates** tab of the PR. As you select different updates, the diff view updates to show the differences between the files in each version of the PR.
+
+You can catch up with PR updates after being away from the PR by stepping through changes made since your last review.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-- Browse a list of changes from the author on the **Updates** tab.
-  
-  ![Browse a list of changes from the author.](media/review-pull-requests/new-pull-request-updates.png)
+Browse a list of changes from the author on the **Updates** tab.
 
-- View and select changes made in commits to the branch on the **Commits** tab.
-  
-  ![PR commits](media/review-pull-requests/new-pull-request-commits.png)
+![Browse a list of changes from the author.](media/review-pull-requests/new-pull-request-updates.png)
+
+View and select changes made in commits to the branch on the **Commits** tab.
+
+![PR commits](media/review-pull-requests/new-pull-request-commits.png)
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
-- Browse a list of changes from the author on the **Updates** tab.
-  
-  ![Browse a list of changes from the author.](media/review-pull-requests/pull-request-updates.png)
+Browse a list of changes from the author on the **Updates** tab.
 
-- View and select changes made in commits to the branch on the **Commits** tab.
-  
-  ![PR commits](media/review-pull-requests/pull-request-commits.png)
+![Browse a list of changes from the author.](media/review-pull-requests/pull-request-updates.png)
+
+View and select changes made in commits to the branch on the **Commits** tab.
+
+![PR commits](media/review-pull-requests/pull-request-commits.png)
 ::: moniker-end
 
 ## Make comments
@@ -129,18 +133,54 @@ Add comments to a PR to make suggestions, reply to previous comments, and point 
   ![Screenshot of comments in Azure Repos P Rs.](./media/review-pull-requests/pr-comments-summary.png)
 ::: moniker-end
 
-- To suggest changes directly, select the lightbulb icon in the comment interface, make your suggested changes in the code, and then select **Comment**.
-
-  ![Screenshot showing how to make a suggested change.](./media/review-pull-requests/add-suggestion.png)
-
 - Give feedback not tied to a specific code line by commenting on the **Overview** tab.
 
 - Address the author or other reviewers directly in your comments by using `@username`, and reference work items by using `#workitemID`. You can also reference other PRs by using `!pullrequestID`.
+
+::: moniker range="azure-devops"
+### Suggest changes
+
+To suggest changes directly, select the lightbulb icon in the comment interface, make your suggested changes in the code, and then select **Comment**.
+
+![Screenshot showing how to make a suggested change.](./media/review-pull-requests/add-suggestion.png)
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
+## Edit, delete, or like a comment
+
+To edit or delete a comment you made, hover over the comment and select the pencil icon to edit the comment, or the garbage can icon to delete it.
+
+To like a comment that you or someone else made, select the thumbs-up icon. Comments that have likes show up in the comment list with a filled in thumbs-up icon and the number of likes. Hover over the icon to see the list of people who liked the comment.
+
+![Screenshot showing the edit, delete, and like buttons in a P R comment.](./media/review-pull-requests/edit-comment.png)
+
+::: moniker-end
+
+::: moniker range=">=tfs-2018 <=azure-devops-2019"
+## Like a comment
+
+To like a comment that you or someone else made, select the heart icon. Hover over the icon in comments to see the list of people who liked the comment.
+
+::: moniker-end
+
+::: moniker range=">=tfs-2018"
+## Filter comments
+
+You can select which comments and updates to show on the **Overview** page. Hiding some comments and updates gets them out of the way when reviewing code for the first time. You can also show only what's new since the last time you visited the PR.
+
+To filter comments and updates, select the **Show everything (n)** button above the comment list, and select one of the filtering options. The view changes to show only the selected comments and updates. The button label changes to show the filtering criteria and the number of items shown.
+
+![Screenshot showing the options to filter the comment list in a P R.](./media/review-pull-requests/filter-comments.png)
+
+::: moniker-end
 
 ## Vote on changes
 
 # [Browser](#tab/browser)
 Use the button at upper right in the PR to vote on the PR changes. The default option is **Approve**, but you can select other options from the dropdown list:
+
+![Screenshot that shows P R voting options.](./media/review-pull-requests/pr-voting-options.png)
 
 - **Approve**: Approve the proposed changes in the PR.
 - **Approve with suggestions**: Approve the PR, but provide optional suggestions for improvement.
@@ -148,7 +188,11 @@ Use the button at upper right in the PR to vote on the PR changes. The default o
 - **Reject**: The changes aren't acceptable. Leave a comment in the PR to explain why.
 - **Reset feedback**: Remove your vote.
 
-![Screenshot that shows P R voting options.](./media/review-pull-requests/pr-voting-options.png)
+## Reset feedback
+
+To remove your vote from a PR, select **Reset feedback** from the **Approve** dropdown list at upper right in the PR. 
+
+![Screenshot that shows selecting Reset feedback from the Approve dropdown list.](./media/review-pull-requests/pr-voting-options.png)
 
 
 # [Visual Studio](#tab/visual-studio)
@@ -165,49 +209,128 @@ In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Tea
 
 To vote on a PR, open the PR in the browser, and on the **Overview** page, use the button at upper right to vote on the changes.
 
-
-# [Azure Command Line](#tab/azure-command-line)
+# [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range=">= azure-devops-2020"
 
 In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-Many `az devops` commands require `--org` and `--project` parameters. To avoid having to enter these parameters, you can set a default Azure DevOps organization and project with `az devops configure --defaults`.
-
-For example, to set the Fabrikam Fiber project and FabrikamPrime organization as defaults, use:
-
-```azurecli
-az devops configure --defaults organization=https://fabrikamprime.visualstudio.com project="Fabrikam Fiber"
-```
-
-Once you set the defaults, `az devops` commands use the default organization and project. You can use the `org` and `project` parameters to specify other organizations and projects you have access to.
-
 Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
-To vote whether to approve a PR, use [az repos pr set-vote](/cli/azure/repos/pr#az_repos_pr_set_vote). The vote options are `approve`, `approve-with-suggestions`, `reject`, `reset`, or `wait-for-author`.
+To vote on whether to approve a PR, use [az repos pr set-vote](/cli/azure/repos/pr#az_repos_pr_set_vote).
+
+```azurecli
+az repos pr set-vote --id
+                     --vote {approve, approve-with-suggestions, reject, reset, wait-for-author}
+                     [--detect {false, true}]
+                     [--org]
+                     [--subscription]
+```
+
+### Parameters
+
+|Parameter|Description|
+|---------|-----------|
+|`--id`|ID of the pull request. **Required**.|
+|`--vote`|New vote value for the pull request. Accepted values: `approve`, `approve-with-suggestions`, `reject`, `reset`, `wait-for-author`. **Required**.|
+|`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
+|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
+
+### Example
 
 For example, to vote to approve PR #21, use:
 
 ```azurecli
-az repos pr set-vote --id 21 --vote approve
+az repos pr set-vote --id 21 --vote approve  --output table
+
+Name            Email                ID                                    Vote      Required
+--------------  ------------------- -------------------------------------  --------  ----------
+Jamal Hartnett  jamalh@fabrikam.com  00000000-0000-0000-0000-000000000000  Approved  False
+```
+
+## Reset feedback
+
+To remove your vote from a PR, use `az repos pr set-vote reset`.
+
+### Example
+
+For example, to remove your vote from PR #21, use:
+
+```azurecli
+az repos pr set-vote --id 21 --vote reset  --output table
+
+Name            Email                ID                                    Vote      Required
+--------------  ------------------- -------------------------------------  --------  ----------
+Jamal Hartnett  jamalh@fabrikam.com  00000000-0000-0000-0000-000000000000            False
 ```
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
-
-The Azure CLI isn't supported in this version. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
-
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 ::: moniker-end
 
-
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
 
 
+<a name="complete-the-pull-request"></a>
+## Address comments
+
+::: moniker range="azure-devops"
+To make quick updates to your PR in response to comments, select **Edit** on the **Files** page in your branch on the web.
+
+![Screenshot that shows the Edit button to update code directly in Azure Repos.](./media/complete-pull-requests/edit-file.png)
+
+After updating your files, [commit](commits.md) changes and [push](pushing.md) the updates to your PR.
+
+You can also immediately apply reviewers' suggested changes by selecting **Apply change** in the comment on the PR **Overview** page. Once you've applied all the changes you want, select **Commit all changes**.
+
+![Screenshot that shows the Apply change button in a PR comment.](./media/complete-pull-requests/apply-change.png)
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2020"
+You can make quick updates to your branch directly from the **Files** tab in **Code** on the web.
+
+![Screenshot that shows the Edit button to update code directly in Azure Repos.](./media/complete-pull-requests/pr-editing-changes.png)
+::: moniker-end
+
+### Reply and resolve comments
+
+Reply to comments and update comment status to let reviewers know how you're addressing their comments and suggestions. 
+
+- To resolve a comment without replying, select **Resolve** under the comment.
+- To reply to the comment, type your response in the **Write a reply** field, and select **Reply**.
+- To reply to and resolve the comment, type your response in the **Write a reply** field, and select **Reply & resolve**.
+- Reply to specific reviewers by using `@username` in the reply, and reference work items by using `#workitemID`. You can also reference other PRs by using `!pullrequestID`.
+
+New comments start in **Active** status. Select **Resolve** or **Reply & resolve** to update comment status to **Resolved**.
+
+![Update comments in Azure Repos P Rs.](./media/complete-pull-requests/pr-comments-reply-and-resolve.png)
+
+More options are available in the comment resolution dropdown list:
+
+![Screenshot of more options in the comment resolution dropdown list.](./media/complete-pull-requests/pr-comment-resolution.png)
+
+- **Active**: The comment is still under review.
+- **Pending**: The issue in this comment will be addressed, but isn't fixed yet.
+- **Resolved**: The issue brought up in this comment is fixed.
+- **Won't fix**: The suggestion in the comment is noted, but this PR won't address it.
+- **Closed**: Discussion for this comment is closed.
+
+:::moniker range=">= azure-devops-2019"
+
+To keep track of files that have already been reviewed, select **More options** next to a file in your PR, and then select **Mark as reviewed**.
+
+:::moniker-end
+
 ## Next steps
 
+> [!div class="nextstepaction"]
+> [Complete the pull request](complete-pull-requests.md)
+ 
+## Related articles
 - [Pull request update notifications](pull-request-notifications.md)
-- [Respond to comments and complete a pull request](complete-pull-requests.md)
 - [About pull requests and permissions](about-pull-requests.md)
