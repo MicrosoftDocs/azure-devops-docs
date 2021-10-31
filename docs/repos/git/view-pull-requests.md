@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 10/18/2021
+ms.date: 10/30/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -101,21 +101,40 @@ You can view all of your PRs in your organization, across all projects, by choos
 
 ::: moniker-end 
 
-### Filter PRs
+## Customize PR views
 
-Filtering helps you find and organize PRs to prioritize the most important files in your workflow.
+Filtering the PR list helps you find and organize PRs to prioritize the most important files in your workflow.
 
 ::: moniker range=">= azure-devops-2019"
 
-- To filter PRs by target branch, on the select the **Filter** icon at upper right, and then select **Target branch**. Select the branch you want from the dropdown list.
+To filter the PR list, on the **Pull requests** page, select the **Filter** icon at upper right. Then select **Target branch** or other column header, and select the branch or other value you want to filter on.
 
-- To create queries with more filters, select **Customize view** on the **Pull requests** page, and then select **Add section**. In the **Customize section** pane, you can create queries with more filters, such as draft state. These queries create separate and collapsible sections to enable better PR actionability. The queries work across repositories on the **My pull requests** tab of the organization home page.
+To further customize your view of the PR list, select **Customize view** at upper right on the **Pull requests** page.
+
+![Screenshot showing the Customize view button on the Pull requests page.](media/view-pull-requests/customize-view.png)
+
+On the **Customize view** page, you can rearrange the current view sections, edit them, or remove them. To create a new section, select **Add section**.
+
+![Screenshot showing the Customize view page with the Add section button.](media/view-pull-requests/add-section.png)
+
+On the **Customize section** page, enter and select values to filter the section by parameters like draft state or updated date. You can choose whether to **Show pull requests I've approved or rejected on a separate tab**, or **Exclude pull requests (duplicates) included in previous sections**. When you finish customizing the view, select **Save**.
+
+![Screenshot showing the Customize section page.](media/view-pull-requests/customize-section.png)
+
+These customized views create separate, collapsible sections on the pull request page. These custom queries also work across repositories on the **My pull requests** tab of the organization home page.
+![Screenshot of the Pull Requests page showing collapsible sections.](media/view-pull-requests/views.png)
+
+To change the parameters of the customized views, select the **Customize** button next to the view. Or select **Customize view**, and on the **Customize view** screen, select the view you want to change. Some views, like **Assigned to me**, can't be customized, but they can be rearranged or removed.
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
-On a PR **Files** page, you can use several filters to select files and comments for faster reviews. Select **Filter**, and then select among the following options:
+On a PR **Files** tab, you can use several filters to select files and comments for faster reviews.
+
+![Screenshot of the Files tab with filter options.](./media/view-pull-requests/filter.png)
+
+Select **Filter**, and then select among the following options:
 
 - Keyword: Enter a keyword.
 - Reviewed/Unreviewed: **All** (default), **Pending**, **Reviewed**.
@@ -123,6 +142,8 @@ On a PR **Files** page, you can use several filters to select files and comments
 - Comments: **Show** (default), **What's new**, **Hide**.
 - Comment status: **Active** (default), **Pending**, **Resolved**, **As designed**, **Won't fix**, **Closed**.
 - Commented by: **All comments** (default), or a specific person.
+
+You can also type a string into the Search field to show matching results from the preceding options.
 
 ::: moniker-end
 
@@ -141,7 +162,13 @@ In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Tea
 
    ![Screenshot of the P R list in Visual Studio Team Explorer.](./media/view-pull-requests/list-prs.png)
 
-### Filter PRs
+### Check out a branch
+
+Starting with Visual Studio 2017 Update 6, you can check out a PR's source branch directly from the **Pull Requests** view. Right-click a PR, and choose **Checkout Source Branch**.
+
+![Screenshot that shows Checkout source branch.](./media/view-pull-requests/checkout-pr-source-branch.png)
+
+## Customize PR views
 
 Filtering helps you find and organize PRs to prioritize the most important files in your workflow.
 
@@ -149,38 +176,80 @@ From the Team Explorer **Pull Requests** view:
 - Select **Active**, or **Assigned to me or my team**, to filter the PR lists by PR status or assignment.
 - Type in the **Type here to filter the list** fields to filter the PR lists by date, author, branch, or other attributes.
 
-### Check out a branch
-
-Starting with Visual Studio 2017 Update 6, you can check out a PR's source branch directly from the **Pull Requests** view. Right-click a PR, and choose **Checkout Source Branch**.
-
-![Screenshot that shows Checkout source branch.](./media/view-pull-requests/checkout-pr-source-branch.png)
-
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 
-# [Azure Command Line](#tab/azure-command-line)
+# [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range=">= azure-devops-2020"
 
 In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-Many `az devops` commands require `--org` and `--project` parameters. To avoid having to enter these parameters, you can set a default Azure DevOps organization and project with `az devops configure --defaults`.
-
-For example, to set the Fabrikam Fiber project and FabrikamPrime organization as defaults, use:
-
-```azurecli
-az devops configure --defaults organization=https://fabrikamprime.visualstudio.com project="Fabrikam Fiber"
-```
-
-Once you set the defaults, `az devops` commands use the default organization and project. You can use the `org` and `project` parameters to specify other organizations and projects you have access to.
-
 Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
-### List and show PRs
+### List PRs
 
 To list active PRs in your project with their details, use [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list). To list all PRs regardless of status, use <br>`az repos pr list --status all`.
 
+```azurecli
+az repos pr list [--creator]
+                 [--detect {false, true}]
+                 [--include-links]
+                 [--org]
+                 [--project]
+                 [--query-examples]
+                 [--repository]
+                 [--reviewer]
+                 [--skip]
+                 [--source-branch]
+                 [--status {abandoned, active, all, completed}]
+                 [--subscription]
+                 [--target-branch]
+                 [--top]
+```
+
+#### Parameters
+
+|Parameter|Description|
+|---------|-----------|
+|`--creator`|Limit results to pull requests created by this user.|
+|`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
+|`--include-links`|Include _links for each pull request.|
+|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`--project` `-p`|Name or ID of the project. You can configure the default project by using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
+|`--query-examples`|Recommended JMESPath string. You can copy one of the queries and paste it after the `--query` parameter in double quotation marks to see the results. You can add one or more positional keywords so suggestions are based on these keywords.|
+|`--repository` `-r`|Name or ID of the repository.|
+|`--reviewer`|Limit results to pull requests where this user is a reviewer.|
+|`--skip`|Number of pull requests to skip.|
+|`--source-branch` `-s`|Limit results to pull requests that originate from this source branch.|
+|`--status`|Limit results to pull requests with this status. Accepted values: `abandoned`, `active`, `all`, `completed`.|
+|`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
+|`--target-branch` `-t`|Limit results to pull requests that target this branch.|
+|`--top`|Maximum number of pull requests to list.|
+
+### Show PRs
+
 To show all the details for a single PR, use [az repos pr show](/cli/azure/repos/pr#az_repos_pr_show) with the required `id` parameter. The PR `id` is the `pullRequestId` from the PR list details. To open the PR in your browser, use `open`.
+
+```azurecli
+az repos pr show --id
+                 [--detect {false, true}]
+                 [--open]
+                 [--org]
+                 [--query-examples]
+                 [--subscription]
+```
+
+#### Parameters
+
+|`--id`|ID of the pull request. **Required**.|
+|`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
+|`--open`|Open the pull request in your web browser.|
+|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`--query-examples`|Recommended JMESPath string. You can copy one of the queries and paste it after the `--query` parameter in double quotation marks to see the results. You can add one or more positional keywords so suggestions are based on these keywords.|
+|`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
+
+#### Example
 
 For example, to see the details for PR #21 and open it in your browser, use:
 
@@ -188,7 +257,31 @@ For example, to see the details for PR #21 and open it in your browser, use:
 az repos pr show --id 21 --open
 ```
 
-### Filter PRs
+### Check out a branch
+
+Use [az repos pr checkout](/cli/azure/repos/pr#az_repos_pr_checkout) with the required `id` parameter to check out a PR branch locally, as long as there are no local changes.
+
+```azurecli
+az repos pr checkout --id
+                     [--remote-name]
+                     [--subscription]
+```
+
+#### Parameters
+
+|Parameter|Description|
+|---------|-----------|
+|`--id`|ID of the pull request.|
+|`--remote-name`|Name of git remote against which PR is raised. Default value: `origin`.|
+|`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
+
+For example, to check out the branch for PR #21 locally, use:
+
+```azurecli
+az repos pr checkout --id 21
+```
+
+## Customize PR views
 
 Filtering helps you find and organize PRs to prioritize the most important files in your workflow.
 
@@ -212,26 +305,15 @@ For example, to list details about the last PR you created, regardless of its st
 az repos pr list --creator "My Name" --status all --top 1
 ```
 
-### Check out a branch
-
-Use [az repos pr checkout](/cli/azure/repos/pr#az_repos_pr_checkout) with the required `id` parameter to check out a PR branch locally, as long as there are no local changes.
-
-For example, to check out the branch for PR #21 locally, use:
-
-```azurecli
-az repos pr checkout --id 21
-```
-
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-The Azure CLI isn't supported in this version. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ::: moniker-end
 
 
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
 
@@ -248,8 +330,12 @@ To review the changes, make comments or suggestions, or approve or vote on the P
 
 ## Next steps
 
+> [!div class="nextstepaction"]
+> [Review pull requests](review-pull-requests.md)
+ 
+## Related articles 
+
 - [Create a pull request](pull-requests.md)
-- [Review pull requests](review-pull-requests.md)
 - [Pull request update notifications](pull-request-notifications.md)
 - [Complete a pull request](complete-pull-requests.md)
 - [Change the default branch](change-default-branch.md)
