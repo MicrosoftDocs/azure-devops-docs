@@ -55,13 +55,15 @@ To learn more about permissions and access, see [Default Git repository and bran
 
 ## Check merge changes
 
-When you complete a PR, Git adds a new *merge commit* to the end of the main branch. This merge commit links the earlier histories of the main branch and the PR source branch. To see the preview merge commit and check for [merge conflicts](merging.md), select the **More options** menu at upper right on a PR **Overview** page, and then select **View merge changes**. If you changed the target branch after creating the PR, select **Restart merge** to create a new preview merge commit and update the merge change diff view.
+When you complete a PR, Git adds a new *merge commit* to the end of the main branch. This merge commit links the earlier histories of the main branch and the PR source branch. To see the preview merge commit and check for [merge conflicts](merging.md), select the **More options** menu at upper right on a PR **Overview** page, and then select **View merge changes**.
+
+If you changed the target branch after creating the PR, select **Restart merge** to create a new preview merge commit and update the merge change diff view.
 
 ![Screenshot that shows the View merge and Restart merge options in the More options menu of the P R.](./media/complete-pull-requests/view-merge.png)
 
 ## Review branch policies
 
-Teams can set [branch policies](branch-policies.md) that require PRs in protected branches to meet specific criteria before the PRs can merge. You can review the branch policies in effect for your PR, whether they're required for merge, and whether the PR is passing or failing.
+Teams can set [branch policies](branch-policies.md) that require PRs in protected branches to meet specific criteria before the PRs can merge. You can see the branch policies in effect for your PR, whether they're required for merge, and whether the PR is passing or failing.
 
 # [Browser](#tab/browser)
 
@@ -109,7 +111,7 @@ az repos pr policy list --id
 |---------|-----------|
 |`--id`|ID of the pull request. **Required.**|
 |`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
-|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`--org`<br>`--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`--query-examples`|Recommended JMESPath string. You can copy one of the queries and paste it after the `--query` parameter in double quotation marks to see the results. You can add one or more positional keywords so suggestions are based on these keywords.|
 |`--skip`|Number of policies to skip.|
 |`--subscription`|Name or ID of subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
@@ -168,8 +170,8 @@ After you resolve any merge conflicts, and the PR meets all branch policies and 
    - **Rebase and fast-forward**: Rebase the source commits onto the target and fast-forward.
    - **Semi-linear merge**: Rebase source commits onto the target and create a two-parent merge.
    
-      > [!NOTE]
-      > Existing policies are enforced. For example, if your branch currently has a "squash merge only" policy, you have to change that policy if you want to use another merge type.
+   > [!NOTE]
+   > Existing policies are enforced. For example, if your branch currently has a "squash merge only" policy, you have to change that policy if you want to use another merge type.
    
 1. Select any of the following post-completion options. Some options aren't available for some merge types.
 
@@ -358,7 +360,7 @@ az repos pr update --id
 |`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`--draft`|Convert the PR to draft mode or publish it. Accepted values: `false`, `true`.|
 |`--merge-commit-message`|Message to display when commits are merged.|
-|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`--org`<br>`--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`--squash`|Squash the commits in the source branch when merging into the target branch. Accepted values: `false`, `true`.|
 |`--status`|Set the new state of pull request. Accepted values: `abandoned`, `active`, `completed`.|
 |`--subscription`|Name or ID of subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
