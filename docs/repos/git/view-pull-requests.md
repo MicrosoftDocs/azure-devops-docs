@@ -1,7 +1,7 @@
 ---
 title: View, filter, and open pull requests
 titleSuffix: Azure Repos
-description: Learn different ways to list, filter, and open Git pull requests in Azure Repos.
+description: Learn about different ways to list, filter, and open Git pull requests in Azure Repos.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.technology: devops-code-git 
 ms.topic: conceptual
@@ -16,7 +16,9 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 [!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
-Teams can require PRs for any changes on protected branches, and set [branch policies](branch-policies.md) to require those PRs to meet certain criteria. There are several ways to list and filter PRs for a project, and open active PRs for review.
+Pull requests (PRs) are a way to [change](pull-requests.md), [review](review-pull-requests.md), and [merge](complete-pull-requests.md) code in a [Git repository on Azure Repos](../../organizations/projects/create-project.md#add-a-repository-to-your-project). Teams use PRs to review code and give feedback on changes before merging the code into the main branch. Teams can require PRs for any changes on protected branches, and set [branch policies](branch-policies.md) to require those PRs to meet certain criteria. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
+
+There are several ways to list, filter, view, and open PRs for a project.
 
 ## Prerequisites
 
@@ -43,7 +45,7 @@ To learn more about permissions and access, see [Default Git repository and bran
 
 ## Mobile experience
 
-You can use mobile devices to view all Azure Repos PR screens and actions.
+You can use mobile devices to view all Azure Repos PR screens and take actions.
 
 ![Screenshot of Azure Repos P R screens on a mobile device.](media/view-pull-requests/phone-screen.png)
 
@@ -130,11 +132,9 @@ To change the parameters of the customized views, select the **Customize** butto
 
 ::: moniker range=">= azure-devops-2020"
 
-On a PR **Files** tab, you can use several filters to select files and comments for faster reviews.
+On a PR **Files** tab, you can use several filters to select files and comments for faster reviews. Select **Filter**, and then select among the options.
 
 ![Screenshot of the Files tab with filter options.](./media/view-pull-requests/filter.png)
-
-Select **Filter**, and then select among the following options:
 
 - Keyword: Enter a keyword.
 - Reviewed/Unreviewed: **All** (default), **Pending**, **Reviewed**.
@@ -183,13 +183,9 @@ From the Team Explorer **Pull Requests** view:
 
 ::: moniker range=">= azure-devops-2020"
 
-In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
+In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
-Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
-
-### List PRs
-
-To list active PRs in your project with their details, use [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list). To list all PRs regardless of status, use <br>`az repos pr list --status all`.
+To list active PRs in your project with their details, use [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list).
 
 ```azurecli
 az repos pr list [--creator]
@@ -208,7 +204,7 @@ az repos pr list [--creator]
                  [--top]
 ```
 
-#### Parameters
+### Parameters
 
 |Parameter|Description|
 |---------|-----------|
@@ -227,9 +223,32 @@ az repos pr list [--creator]
 |`--target-branch` `-t`|Limit results to pull requests that target this branch.|
 |`--top`|Maximum number of pull requests to list.|
 
-### Show PRs
+### Example
 
-To show all the details for a single PR, use [az repos pr show](/cli/azure/repos/pr#az_repos_pr_show) with the required `id` parameter. The PR `id` is the `pullRequestId` from the PR list details. To open the PR in your browser, use `open`.
+The following command lists all PRs in the repository, regardless of status, and shows the output in a table. The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+
+
+```azurecli
+az repos pr list --status all --output table
+
+ID    Created     Creator              Title                                           Status     IsDraft    Repository
+----  ----------  -------------------  ----------------------------------------------  ---------  ---------  ------------
+11    2021-10-04  jamalh@fabrikam.com  Revert 'Updated parameterized-functions.md'     Completed  False      Fabrikam
+10    2021-10-04  jamalh@fabrikam.com  Updated parameterized-functions.md              Completed  False      Fabrikam
+9     2021-10-04  ke@fabrikam.com      New pull request                                Completed  False      Fabrikam
+8     2021-10-04  jamalh@fabrikam.com  Updated parameterized-functions.md              Abandoned  False      Fabrikam
+7     2021-09-30  jamalh@fabrikam.com  Added note-new-git-tool.md to /                 Completed  False      Fabrikam
+6     2021-09-29  jamalh@fabrikam.com  Revert 'Added parameterized-functions.md to /'  Abandoned  False      Fabrikam
+5     2021-09-29  jamalh@fabrikam.com  Updated README.md                               Completed  False      Fabrikam
+4     2021-09-29  jamalh@fabrikam.com  Added parameterized-functions.md to /           Completed  False      Fabrikam
+3     2021-09-28  jamalh@fabrikam.com  WIP New file                                    Abandoned  False      Fabrikam
+2     2021-09-28  jamalh@fabrikam.com  Update README.md                                Abandoned  False      Fabrikam
+1     2021-09-28  jamalh@fabrikam.com  Edit README.md                                  Completed  False      Fabrikam
+```
+
+## Show or open a PR
+
+To show the details for a single PR, use [az repos pr show](/cli/azure/repos/pr#az_repos_pr_show) with the required `id` parameter. To open the PR in your browser, use `open`.
 
 ```azurecli
 az repos pr show --id
@@ -240,7 +259,7 @@ az repos pr show --id
                  [--subscription]
 ```
 
-#### Parameters
+### Parameters
 
 |Parameter|Description|
 |---------|-----------|
@@ -251,12 +270,16 @@ az repos pr show --id
 |`--query-examples`|Recommended JMESPath string. You can copy one of the queries and paste it after the `--query` parameter in double quotation marks to see the results. You can add one or more positional keywords so suggestions are based on these keywords.|
 |`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
 
-#### Example
+### Example
 
-For example, to see the details for PR #21 and open it in your browser, use:
+The following example shows the details for PR #21, shows the command output as a table, and opens the PR in the browser:
 
 ```azurecli
-az repos pr show --id 21 --open
+az repos pr show --id 21 --open --output table
+
+ID    Created     Creator              Title                         Status    IsDraft    Repository
+----  ----------  -------------------  ----------------------------  --------  ---------  ------------
+21    2021-10-31  jamalh@fabrikam.com  Updated note-new-git-tool.md  Active    False      Fabrikam
 ```
 
 ### Check out a branch
@@ -285,20 +308,8 @@ az repos pr checkout --id 21
 
 ## Customize PR views
 
-Filtering helps you find and organize PRs to prioritize the most important files in your workflow.
+Filtering helps you find and organize PRs to prioritize the most important files in your workflow. You can use several [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list) parameters to filter the list of PRs, such as `--creator`, `--project`, `--repository`, `--reviewer`, `--source-branch`, `--status`, `--target-branch`, and `--top`.
 
-You can use several parameters with [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list) to filter the list of PRs, such as:
-
-```azurecli
-az repos pr list [--creator]
-                 [--project]
-                 [--repository]
-                 [--reviewer]
-                 [--source-branch]
-                 [--status {abandoned, active, all, completed}]
-                 [--target-branch]
-                 [--top]
-```
 The `creator` and `reviewer` values can be display names or email addresses. The `top` parameter defines the maximum number of PRs to list.
 
 For example, to list details about the last PR you created, regardless of its status, use:
@@ -314,7 +325,6 @@ az repos pr list --creator "My Name" --status all --top 1
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ::: moniker-end
-
 
 
 ***
