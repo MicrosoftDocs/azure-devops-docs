@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 [!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
-After you [create a pull request (PR)](pull-requests.md), send it for review by stakeholders. You can add required or optional reviewers to your PR. Required reviewers must approve the PR before it can merge. Teams can set [branch policies](branch-policies.md) that require a minimum number of reviewers, or specific required or optional reviewers, before PRs in protected branches can merge.
+After you [create a pull request](pull-requests.md) (PR), send the PR for review by stakeholders. You can add required or optional reviewers to your PR. Required reviewers must approve the PR before it can merge. Teams can also set [branch policies](branch-policies.md) that require a minimum number of reviewers, or certain required or optional reviewers, before PRs in protected branches can merge.
 
 High-quality reviews start with high-quality feedback. For guidelines on getting and giving good review feedback, see [Pull request feedback](about-pull-requests.md#pr-feedback).
 
@@ -46,9 +46,9 @@ To learn more about permissions and access, see [Default Git repository and bran
 
 ## Browse changes
 
-To give reviewers quick picture of PR status, the PR **Overview** tab summarizes branch policies that are passing or failing. In some cases, the summary shows a snippet of the failure message from a status check's log. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View \<n> checks**.
+To give a quick picture of PR status, the PR **Overview** tab summarizes checks, requirements, and branch policies that the PR is passing or failing. In some cases, the summary shows a snippet of the failure message from a status check's log. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View \<n> checks**.
 
-On the PR **Overview** tab, you can review the PR title, description, and comments to understand proposed changes and see issues other reviewers raised.
+On the PR **Overview** tab, you can review the PR description and comments to understand proposed changes and see issues other reviewers raised.
 
 :::image type="content" source="media/review-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the PR overview tab.":::
 
@@ -149,9 +149,9 @@ To suggest changes directly, select the lightbulb icon in the comment interface,
 ::: moniker range=">=azure-devops-2020"
 ## Edit, delete, or like a comment
 
-To edit or delete a comment you made, hover over the comment and select the pencil icon to edit the comment, or the garbage can icon to delete it.
+To edit or delete a comment you made, hover over the comment and select the pencil icon to edit the comment, or the garbage can icon to delete the comment.
 
-To like a comment that you or someone else made, select the thumbs-up icon. Comments that have likes show up in the comment list with a filled in thumbs-up icon and the number of likes. Hover over the icon to see the list of people who liked the comment.
+To like your own or someone else's comment, hover over the comment and select the thumbs-up icon. Comments with likes show a filled in icon and the number of likes in the comment list. Hover over the icon to see the list of people who liked the comment.
 
 ![Screenshot showing the edit, delete, and like buttons in a P R comment.](./media/review-pull-requests/edit-comment.png)
 
@@ -192,7 +192,7 @@ Use the button at upper right in the PR to vote on the PR changes. The default o
 
 To remove your vote from a PR, select **Reset feedback** from the **Approve** dropdown list at upper right in the PR. 
 
-![Screenshot that shows selecting Reset feedback from the Approve dropdown list.](./media/review-pull-requests/pr-voting-options.png)
+![Screenshot that shows selecting Reset feedback from the Approve dropdown list.](./media/review-pull-requests/reset.png)
 
 
 # [Visual Studio](#tab/visual-studio)
@@ -234,12 +234,12 @@ az repos pr set-vote --id
 |`--id`|ID of the pull request. **Required**.|
 |`--vote`|New vote value for the pull request. Accepted values: `approve`, `approve-with-suggestions`, `reject`, `reset`, `wait-for-author`. **Required**.|
 |`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
-|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`--org`<br>`--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
 
 ### Example
 
-For example, to vote to approve PR #21, use:
+For example, to vote to approve PR #21 and see the output in a table, use:
 
 ```azurecli
 az repos pr set-vote --id 21 --vote approve  --output table

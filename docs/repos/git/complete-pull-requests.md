@@ -16,9 +16,9 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 [!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
-Once all required reviewers approve your pull request (PR) and the PR meets all [branch policy](branch-policies.md) requirements, you can merge your changes into the target branch and complete the PR. Or if you decide not to proceed with the changes in the PR, you can abandon the PR.
+Once all required reviewers approve your pull request (PR) and the PR meets all [branch policy](branch-policies.md) requirements, you can merge your changes into the target branch and [complete the PR](#complete-a-pr). Or if you decide not to proceed with the changes in the PR, you can [abandon the PR](#abandon-the-pr).
 
-To make requested or suggested review changes, and respond to and resolve comments, see [Address comments](review-pull-requests.md#address-comments).
+To address reviewers' changes, and respond to and resolve review comments, see [Address comments](review-pull-requests.md#address-comments).
 
 ## Prerequisites
 
@@ -53,21 +53,23 @@ To make requested or suggested review changes, and respond to and resolve commen
 
 To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
-## Check merge changes and restart merge
+## Check merge changes
 
-When you complete a PR, Git adds a new *merge commit* to the end of the main branch. This merge commit links the earlier histories of the main branch and the PR source branch. File changes from one branch can conflict with the changes in the other. To understand the merge commit and check for merge conflicts, select the **More options** menu at upper right in a PR, and then select **View merge changes**. If you changed the target branch after creating the PR, select **Restart merge** to create a new preview merge commit and update the merge change diff view.
+When you complete a PR, Git adds a new *merge commit* to the end of the main branch. This merge commit links the earlier histories of the main branch and the PR source branch. To see the preview merge commit and check for [merge conflicts](merging.md), select the **More options** menu at upper right on a PR **Overview** page, and then select **View merge changes**. If you changed the target branch after creating the PR, select **Restart merge** to create a new preview merge commit and update the merge change diff view.
 
 ![Screenshot that shows the View merge and Restart merge options in the More options menu of the P R.](./media/complete-pull-requests/view-merge.png)
 
 ## Review branch policies
 
-Teams can set [branch policies](branch-policies.md) that require PRs in protected branches to meet specific criteria before they can merge. You can see the branch policies that are in effect for your PR.
+Teams can set [branch policies](branch-policies.md) that require PRs in protected branches to meet specific criteria before the PRs can merge. You can review the branch policies in effect for your PR, whether they're required for merge, and whether the PR is passing or failing.
 
 # [Browser](#tab/browser)
 
-The PR **Overview** tab summarizes branch policies that are passing or failing for the PR. The overview lists only failed policies, but you can see all the passed and failed policy checks by selecting **View \<n> checks**.
+The PR **Overview** tab summarizes branch policies that are passing or failing for the PR. The overview lists only failed policies, but you can see all the policy checks by selecting **View \<n> checks**.
 
-To see all policies that are in effect for a branch, go to **Repos** > **Branches**. Branches that have policies in effect show an icon :::image type="icon" source="./media/complete-pull-requests/policies-icon.png"::: in the branch list. Select the icon to go to the branch's **Branch Policies** page in **Project Settings**.
+On the PR Overview page, branch policy requirements have an :::image type="icon" source="./media/complete-pull-requests/policies-icon.png"::: icon. Select **More options** next to the requirement and then select **View policy** to go to the branch's **Branch Policies** page in **Project Settings**.
+
+![Screenshot that shows View policy next to a branch policy requirement in a P R.](./media/complete-pull-requests/view-policy.png)
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -157,26 +159,26 @@ After you resolve any merge conflicts, and the PR meets all branch policies and 
    - **Mark as draft**: Return the PR to draft status and remove all votes.
    - **Abandon**: Close the PR without merging the changes.
 
-1. In the **Complete pull request** pane:
+1. In the **Complete pull request** pane, under **Merge type**, select one of the merge options.
 
-   1. Under **Merge type**, select one of the following options:
-      - **Merge (no fast forward)**: Merge with a non-linear history that preserves all commits.
-      - **Squash commit**: Merge with a linear history that combines all source commits into a single commit on the target, or [squash merges](merging-with-squash.md) the PR.
-      - **Rebase and fast-forward**: Rebase the source commits onto the target and fast-forward.
-      - **Semi-linear merge**: Rebase source commits onto the target and create a two-parent merge.
+   :::image type="content" source="media/complete-pull-requests/pull-request-complete-merge-2020.png" alt-text="Screenshot that shows the complete P R dialog.":::
+
+   - **Merge (no fast forward)**: Merge with a non-linear history that preserves all commits.
+   - **Squash commit**: Merge with a linear history that combines all source commits into a single commit on the target, or [squash merges](merging-with-squash.md) the PR.
+   - **Rebase and fast-forward**: Rebase the source commits onto the target and fast-forward.
+   - **Semi-linear merge**: Rebase source commits onto the target and create a two-parent merge.
    
       > [!NOTE]
-      > Existing policies are still enforced. For example, if your branch currently has a "squash merge only" policy, you have to change that policy if you want to use the other merge types.
+      > Existing policies are enforced. For example, if your branch currently has a "squash merge only" policy, you have to change that policy if you want to use another merge type.
    
-   1. Select any of the following post-completion options. Some options aren't available for some merge types.
-      - **Complete associated work items after merging**: Complete any linked work items.
-      - **Delete \<branch name> after merging**: Delete the PR's source branch after merging.
-      - **Customize merge commit message**: Add a custom merge commit message. If you select this option, update the [merge commit](merging.md) message.
-      - **Override branch policies and enable merge**. Force the merge even if the PR doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permission.
-   
-   1. Select **Complete merge**.
-     
-   :::image type="content" source="media/complete-pull-requests/pull-request-complete-merge-2020.png" alt-text="Screenshot that shows the complete P R dialog.":::
+1. Select any of the following post-completion options. Some options aren't available for some merge types.
+
+   - **Complete associated work items after merging**: Complete any linked work items.
+   - **Delete \<branch name> after merging**: Delete the PR's source branch after merging.
+   - **Customize merge commit message**: Add a custom merge commit message. If you select this option, update the [merge commit](merging.md) message.
+   - **Override branch policies and enable merge**. Force the merge even if the PR doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permission.
+
+1. Select **Complete merge**.
 
 ::: moniker-end
 
@@ -276,9 +278,10 @@ A PR set to autocomplete displays an **Auto-complete** badge on the **Pull reque
 
 ![Screenshot showing an autocomplete PR in the PR list.](media/complete-pull-requests/auto-complete-badge.png)
 
-## Abandon the PR
+<a name="abandon-the-pr"></a>
+## Abandon a PR
 
-To abandon your changes and PR, select **Abandon** from the dropdown list on the **Complete** button. You can still view the abandoned PR, and it stays linked to work items.
+To abandon your changes and your PR without merging, select **Abandon** from the dropdown list on the **Complete** button. You can still view the abandoned PR, and it stays linked to work items.
 
 To reactivate an abandoned PR at any time, open the PR from the **Abandoned** tab in the **Pull Request** view, and select **Reactivate** at upper right.
 
@@ -379,8 +382,8 @@ Set autocomplete to complete a PR automatically when it passes all required appr
 - To update an existing PR to autocomplete, use `az repos pr update --id <PR Id> --auto-complete true`.
 
 <a id="abandon-pr" />
-
-### Abandon the PR
+<a name="abandon-the-pr"></a>
+### Abandon a PR
 
 To abandon a PR without merging the changes, use `az repos pr update --id <PR Id> –-status abandoned`. You can reactivate the PR by setting the status to `active`.
 
@@ -411,14 +414,14 @@ In all these cases, you can still rebase your branch locally and then push upstr
 
 ### Multiple merge base issue
 
-In some cases, a PR has more than one true merge base, and this can cause security issues. If the files in the PR have different versions between the merge bases, a multiple merge base warning happens. For more information and remediation, see [Multiple merge bases](about-pull-requests.md#multiple-merge-bases). 
+In some cases, a PR has more than one true merge base, and this situation can cause security issues. If the files in the PR have different versions between the merge bases, a multiple merge base warning happens. For more information and remediation, see [Multiple merge bases](about-pull-requests.md#multiple-merge-bases). 
 
 
 ::: moniker range=">= tfs-2017" 
 
 ## Resolve merge conflicts
 
-When you complete a PR, Git adds a new *merge commit* to the end of the main branch. This merge commit links the earlier histories of the main branch and the PR source branch. File changes from one branch can conflict with the changes in the other. When it isn't clear how to merge changes, Git shows which files conflict on the PR's **Overview** page. You must resolve any [merge conflicts](merging.md) between the PR branch and the target branch before you can merge a PR or set it to autocomplete.
+File changes in your branch can conflict with changes in another branch. When it isn't clear how to merge changes, Git shows the files that conflict on the PR's **Overview** page. You must resolve any *merge conflicts* between the PR branch and the target branch before you can merge a PR or set the PR to autocomplete. For instructions on resolving merge conflicts, see [Resolve merge conflicts](merging.md).
 
 ![Screenshot that shows merge conflicts on the Overview tab of a P R.](./media/complete-pull-requests/merge-conflict.png)
 
