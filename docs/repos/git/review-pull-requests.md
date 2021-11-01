@@ -167,7 +167,7 @@ To like a comment that you or someone else made, select the heart icon. Hover ov
 ::: moniker range=">=tfs-2018"
 ## Filter comments
 
-You can select which comments and updates to show on the **Overview** page. Hiding some comments and updates gets them out of the way when reviewing code for the first time. You can also show only what's new since the last time you visited the PR.
+You can select which comments and updates show on the **Overview** page. Hiding some comments and updates gets them out of the way when reviewing code for the first time. You can also show only what's new since the last time you visited the PR.
 
 To filter comments and updates, select the **Show everything (n)** button above the comment list, and select one of the filtering options. The view changes to show only the selected comments and updates. The button label changes to show the filtering criteria and the number of items shown.
 
@@ -239,7 +239,7 @@ az repos pr set-vote --id
 
 ### Example
 
-For example, to vote to approve PR #21 and see the output in a table, use:
+For example, to vote to approve PR #21, and see the command output in a table, use:
 
 ```azurecli
 az repos pr set-vote --id 21 --vote approve  --output table
