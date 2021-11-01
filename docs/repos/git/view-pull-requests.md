@@ -16,7 +16,9 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 [!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
-Pull requests (PRs) are a way to [change](pull-requests.md), [review](review-pull-requests.md), and [merge](complete-pull-requests.md) code in a [Git repository on Azure Repos](../../organizations/projects/create-project.md#add-a-repository-to-your-project). Teams use PRs to review code and give feedback on changes before merging the code into the main branch. Teams can require PRs for any changes on protected branches, and set [branch policies](branch-policies.md) to require those PRs to meet certain criteria. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
+Pull requests (PRs) are a way to [change](pull-requests.md), [review](review-pull-requests.md), and [merge](complete-pull-requests.md) code in a [Git repository on Azure Repos](../../organizations/projects/create-project.md#add-a-repository-to-your-project). Teams use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
+
+Teams can require PRs for any changes on protected branches, and set [branch policies](branch-policies.md) to require certain PRs to meet specific criteria. 
 
 There are several ways to list, filter, view, and open PRs for a project.
 
@@ -332,7 +334,7 @@ az repos pr list --creator "My Name" --status all --top 1
 
 ## Open a PR
 
-When you open a PR from the browser, from Visual Studio, or from Azure CLI, the PR opens to its **Overview** tab. The **Overview** tab shows the PR title, description, reviewers, linked worked items, history, and status. You can see a summary of branch policies that are passing or failing, and see comments reviewers have made.
+When you open a PR from the browser, from Visual Studio, or from Azure CLI, the PR opens in the browser to its **Overview** tab. The **Overview** tab shows the PR title, description, reviewers, linked worked items, history, and status. You can see a summary of branch policies that are passing or failing, and see comments reviewers have made.
 
 :::image type="content" source="media/view-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the P R Overview tab.":::
 
