@@ -601,7 +601,7 @@ az repos pr reviewer add --id
 |`--id`|ID of the pull request. **Required**.|
 |`--reviewers`|Users or groups to include as reviewers on a pull request. Space separated. **Required**.|
 |`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
-|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`|.
+|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
 
 <a id="link-work-items-pr" /> 
@@ -638,7 +638,7 @@ az repos pr work-item add --id
 |`--id`|ID of the pull request. **Required**.|
 |`--work-items`|IDs of the work items to link. Space separated. **Required**.|
 |`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
-|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`|.
+|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
 
 ::: moniker-end
