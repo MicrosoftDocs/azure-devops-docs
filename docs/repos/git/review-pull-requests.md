@@ -16,7 +16,9 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 [!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
-After you [create a pull request](pull-requests.md) (PR), send the PR for review by stakeholders. You can add required or optional reviewers to your PR. Required reviewers must approve the PR before it can merge. Teams can also set [branch policies](branch-policies.md) that require a minimum number of reviewers, or certain required or optional reviewers, before PRs in protected branches can merge.
+After you [create a pull request](pull-requests.md) (PR), send the PR for review by stakeholders. You can add required or optional reviewers to your PR. Required reviewers must approve the PR before it can merge.
+
+Teams can also set [branch policies](branch-policies.md) that require a minimum number of reviewers, or certain required or optional reviewers, before certain PRs in protected branches can merge. You can change optional included reviewers to be required or remove them, but you can't remove reviewers that are required by branch policy. To learn more about setting branch policies and reviewers, see [Automatically include code reviewers](branch-policies.md#include-code-reviewers).
 
 High-quality reviews start with high-quality feedback. For guidelines on getting and giving good review feedback, see [Pull request feedback](about-pull-requests.md#pr-feedback).
 
