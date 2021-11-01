@@ -20,7 +20,7 @@ Create pull requests (PRs) to change, review, and merge code in a [Git project](
 
 Your team can [review the PRs](review-pull-requests.md) and give feedback on changes. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the PRs.
 
-Depending on branch policies, your PR might need to meet various criteria before you can [complete the PR](complete-pull-requests.md) and merge the changes into the target branch.
+Depending on [branch policies](branch-policies.md) and other requirements, your PR might need to meet various criteria before you can [complete the PR](complete-pull-requests.md) and merge the changes into the target branch.
 
 For PR guidelines and management considerations, see [About pull requests](about-pull-requests.md).
 
@@ -53,8 +53,6 @@ For PR guidelines and management considerations, see [About pull requests](about
 ::: moniker-end
 
 
-Branch policies can automatically include optional or required reviewers in all or certain PRs. You can change optional included reviewers to be required or remove them, but you can't remove reviewers that are required by branch policy. To learn more about setting branch policies and reviewers, see [Improve code quality with branch policies, Automatically include code reviewers](branch-policies.md#include-code-reviewers).
-
 To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
 
@@ -71,7 +69,7 @@ From the Azure DevOps project website, you can create a new PR from:
 - [A feature branch pushed to your repo](#from-a-pushed-branch).
 - [The Development section in a linked Azure Boards work item](#from-a-linked-work-item).
 - [The Pull requests page](#from-the-pull-requests-page).
-- [An existing PR by using cherry-pick](#add-updates-with-cherry-pick).
+- [An existing PR, by using cherry-pick](#add-updates-with-cherry-pick).
 
 <a name="from-a-pushed-branch"></a>
 ### Create a PR from a pushed branch
@@ -149,7 +147,7 @@ Before the first time you save a PR, you can switch the source and target branch
 
 A pull request template is a file containing Markdown text that populates the PR description when you create a PR. Good PR descriptions tell PR reviewers what to expect, and can help track tasks like adding unit tests and updating documentation. Your team can create a default PR template that adds text to all new PR descriptions in the repo. There can also be branch-specific templates, and you can add other, optional templates to your PRs.
 
-If your repo has a default template, all PRs in the repo have the default template's description text at creation. To add other templates, select **Add a template** and then choose a template from the dropdown list. You can edit the template text in your description, and add other text.
+If your repo has a default template, all PRs in the repo have the default template's description text at creation. To add other templates, select **Add a template** and then choose a template from the dropdown list. You can edit the template text in your description, remove it, or add other text.
 
 ![Screenshot showing Add a template when creating a P R.](media/pull-requests/use-template.png)
 
@@ -240,15 +238,19 @@ az repos pr create [--auto-complete {false, true}]
 |`--transition-work-items`|Transition any work items linked to the PR into the next logical state when the PR changes status. For example change, Active work items to Resolved. Accepted values: `false`, `true`.|
 |`--work-items`|IDs of work items to link to the new pull request. Space separated.|
 
-### Create a PR example
+### Example
 
-The following command creates a PR from the `new` branch to the default `main` branch of the Fabrikam repository, and then opens the PR in the browser. The example uses the default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+The following command creates a PR from the `new` branch to the default `main` branch of the Fabrikam repository, opens the PR in the browser, and shows the command output in a table. The example uses the default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
-az repos pr create --repository Fabrikam --source-branch new --open
+az repos pr create --repository Fabrikam --source-branch new --open --output table
+
+ID    Created     Creator              Title                         Status    IsDraft    Repository
+----  ----------  -------------------  ----------------------------  --------  ---------  ------------
+30    2021-10-31  jamalh@fabrikam.com  Updated note-new-git-tool.md  Active    False      Fabrikam
 ```
 
-You can add many other details about PRs at creation. To add details, reviewers, work items, and completion options to the PR at creation, see [Add details or edit PRs](#add-details-to-prs).
+You can add many other PR details at or after PR creation. To add details, reviewers, work items, and completion options to the PR, see [Add details or edit PRs](#add-details-to-prs).
 
 ::: moniker-end
 
@@ -405,9 +407,7 @@ To see the branch policy that automatically added a reviewer, in the **Reviewers
 
 If the user or group you want to review your PR isn't a member of your project, you need to [add them to the project](../../organizations/security/add-users-team-project.md) before you can add them as reviewers.
 
-To add reviewers to your PR:
-
-**In a new PR**
+To add reviewers to a new PR:
 
 1. On the **New pull request** page, under **Reviewers**, select **Search users and groups to add as reviewers**.
 1. As you enter a name or email address, a dropdown list shows a list of matching users and groups. Select names from the list to add as optional reviewers.
@@ -415,7 +415,7 @@ To add reviewers to your PR:
 
 ![Screenshot of adding a reviewer to a new P R.](media/pull-requests/add-reviewer.png)
 
-**In an existing PR**
+To add reviewers to an existing PR:
 
 1. In the **Reviewers** section of the **Overview** page, select **Add**, and then select **Required reviewer** or **Optional reviewer**.
 
@@ -473,14 +473,12 @@ To add reviewers to your PR:
 
 ::: moniker range=">= azure-devops-2020"
 
-To link work items to your PR:
-
-- **In a new PR**:
+To link work items to a new PR:
 
   1. On the **New pull request** page, under **Work items to link**, select **Search work items by ID or title**.
   1. Start to enter a work item ID or title, and select the work item to link from the dropdown list that appears.
 
-- I**n an existing PR**:
+To link work items to an existing PR:
 
   1. On the PR **Overview** tab, in the **Work items** area, select **+**.
 
@@ -588,13 +586,31 @@ To manage reviewers for an existing PR, use [az repos pr reviewer](/cli/azure/re
 - To list the reviewers for a PR, use `az repos pr reviewer list --id <PR Id>`.
 - To remove reviewers from a PR, use `az repos pr reviewer remove --id <PR Id> --reviewer "<Reviewer Name>"`.
 
+```azurecli
+az repos pr reviewer add --id
+                         --reviewers
+                         [--detect {false, true}]
+                         [--org]
+                         [--subscription]
+```
+
+### Parameters
+
+|Parameter|Description|
+|---------|-----------|
+|`--id`|ID of the pull request. **Required**.|
+|`--reviewers`|Users or groups to include as reviewers on a pull request. Space separated. **Required**.|
+|`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
+|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`|.
+|`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
+
 <a id="link-work-items-pr" /> 
 
 ### Link work items
 
 You can link Azure Boards work items to PRs at PR creation with `az repos pr create --work-items <Id1> <Id2>`, where \<Id> is the work item's ID.
 
-For example:
+For example, the following command links work items #63 and #64 to a new PR in the `new` branch:
 
 ```azurecli
 az repos pr create --repository Fabrikam --source-branch new --work-items 63 64
@@ -605,12 +621,33 @@ To manage work items for an existing PR, use [az repos pr work-item](/cli/azure/
 - To link work items to an existing PR, use `az repos pr work-item add --id <PR Id> --work-items <Id1> <Id2>`.
 - To list the work items linked to a PR, use `az repos pr work-item list --id <PR Id>`.
 - To unlink a work item from a PR, use `az repos pr work-item remove --id <PR Id> --work-items <Id1>`.
-  Removing a link only removes the link between the work item and the PR. Links created in the branch or from commits stay in the work item.
+  Unlinking only removes the link between the work item and the PR. Links created in the branch or from commits stay in the work item.
+
+```azurecli
+az repos pr work-item add --id
+                          --work-items
+                          [--detect {false, true}]
+                          [--org]
+                          [--subscription]
+```
+
+### Parameters
+
+|Parameter|Description|
+|---------|-----------|
+|`--id`|ID of the pull request. **Required**.|
+|`--work-items`|IDs of the work items to link. Space separated. **Required**.|
+|`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
+|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`|.
+|`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
 
 ::: moniker-end
 
 
+::: moniker range="<=azure-devops-2019"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+::: moniker-end
+
 
 ***
 
