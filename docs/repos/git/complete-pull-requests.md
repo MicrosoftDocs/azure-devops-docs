@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 [!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
-Once all required reviewers approve your pull request (PR) and the PR meets all [branch policy](branch-policies.md) requirements, you can merge your changes into the target branch and [complete the PR](#complete-a-pr). Or if you decide not to proceed with the changes in the PR, you can [abandon the PR](#abandon-the-pr).
+Once all required reviewers approve your pull request (PR) and the PR meets all [branch policy](branch-policies.md) requirements, you can merge your changes into the target branch and [complete the PR](#complete-the-pr). Or if you decide not to proceed with the changes in the PR, you can [abandon the PR](#abandon-the-pr).
 
 To address reviewers' changes, and respond to and resolve review comments, see [Address comments](review-pull-requests.md#address-comments).
 
