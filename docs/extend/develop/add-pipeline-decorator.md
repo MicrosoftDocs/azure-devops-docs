@@ -163,7 +163,7 @@ steps:
 ```
 
 ## Specifying a target task
-You can specify target [task id](add-build-task?view=azure-devops#taskjson), and inject tasks before or after this target task.
+You can specify target [task id](add-build-task.md#taskjson), and inject tasks before or after this target task.
 To specify target task you can modify vss-extension.json manifest file like below:
 
 #### vss-extension.json
