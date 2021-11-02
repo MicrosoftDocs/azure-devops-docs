@@ -55,7 +55,7 @@ To learn more about permissions and access, see [Default Git repository and bran
   
   You can see how a file will look published by selecting the **View** button on a file, and then selecting **Preview**.
   
-  :::image type="content" source="media/review-pull-requests/pull-request-browse-changes-2020.png" alt-text="Screenshot that shows a side-by-side diff view of file changes in a PR.":::
+  :::image type="content" source="media/review-pull-requests/pull-request-browse-changes-2020.png" alt-text="Screenshot that shows a side-by-side diff view of file changes in a P R.":::
   
   >[!NOTE]
   >When viewing the difference for a *single selected file*, there's a file size limit of 5 MB. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool. When viewing the difference for a *collection of files*, the size limit for each file is 0.5 MB, for performance reasons.
@@ -200,6 +200,8 @@ The Azure CLI isn't supported in this version. For more information, see [Get st
 
 ::: moniker-end
 
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
 
