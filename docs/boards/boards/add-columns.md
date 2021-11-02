@@ -1,7 +1,7 @@
 ---
-title: Add columns to your Kanban board
+title: Add columns to your Kanban board in Azure Boards or Azure DevOps
 titleSuffix: Azure Boards
-description: Map your Kanban board, support your team's work flow in Azure Boards, Azure DevOps 
+description: Map and add columns to your team’s Kanban board to manage your workflow in Azure Boards, Azure DevOps 
 ms.custom: "boards-kanban, contperf-fy21q3" 
 ms.technology: devops-agile
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
@@ -9,16 +9,16 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/03/2021
+ms.date: 11/02/2021
 ---
 
-# Add columns to your Kanban board
+# Add columns to your Kanban board to manage your worklow
 
 [!INCLUDE [temp](../includes/version-all.md)] 
 
-Kanban's number one practice is to visualize the flow of work. Accordingly, your number one task is to visualize your team's workflow. You perform this task by identifying the types of work and hand-offs that occur regularly as your team moves items off the backlog and into a shippable state.
+Kanban's number one practice is to visualize the flow of work. So, your number one task is to visualize your team's workflow. You do this task by identifying the types of work and hand-offs that occur regularly as your team moves items off the backlog and into a shippable state.
 
-For example, the main workflow stages performed by our example dev team are captured here as Analyze, Develop, and Test. Each column corresponds to a work stage the team performs on each item before it can be considered done.
+For example, the main workflow stages done by our example dev team are captured here as Analyze, Develop, and Test. Each column corresponds to a work stage the team does on each item before it can be considered done.
 
 ![Kanban board, columns customized ](media/ALM_AC_KanbanIntro.png)
 
@@ -44,9 +44,9 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 ## Why configure your Kanban board columns?  
 
-The main reason to configure your team's Kanban board columns is to support your team's workflow and Kanban processes. These processes may include triaging work prior to committing to the work, managing handoff from one team member to another&mdash;such as development to test&mdash;managing Work in Progress (WIP), and more. 
+The main reason to configure your team's Kanban board columns is to support your team's workflow and Kanban processes. These processes may include triaging work before committing to it, managing handoff from one team member to another&mdash;such as development to test&mdash;managing Work in Progress (WIP), and more. 
 
-In addition, you can use your Kanban board to perform the following tasks: 
+You can also use your Kanban board to do the following tasks: 
 
 - Visualize work that is in progress and work nearing completion or completed  
 - Filter your board to focus on select work based on assignment to a team member or sprint, tags, or parent feature. For details, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
@@ -59,7 +59,7 @@ In addition, you can use your Kanban board to perform the following tasks:
 
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
-In addition, we recommend that you review the following articles: 
+Also, we recommend that you review the following articles: 
 
 - [Configure and customize Azure Boards](../configure-customize.md)
 - [Set up your Backlogs and Boards](../backlogs/set-up-your-backlog.md)  
@@ -72,14 +72,14 @@ Before you configure your team's Kanban board columns, you'll want to make sure 
 
 **Process Administrator**: 
 1. Add custom work item types that you want to appear on your backlog or board. For details, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
-2. Customize your product and portfolio backlogs to ensure all work item types you want to have will appear on the backlogs and boards. For details see [Customize backlogs & boards](../../organizations/settings/work/customize-process-backlogs-boards.md). 
+2. Customize your product and portfolio backlogs. Customization ensures that the work item types you want appear on the backlogs and boards. For more information, see [Customize backlogs & boards](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 3. Customize workflow states. Each workflow state appears as a column on the Kanban board. For details, see [Customize a workflow](../../organizations/settings/work/customize-process-workflow.md)
 
 **Team Administrator**:
 1. Set the backlogs you want active for your team. You only need to configure the Kanban boards of those backlogs that your team will use. For details, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
-1. Determine how bugs will be tracked. Bugs may have different workflow states from other requirement work item types and therefore must be mapped separate from other work item types. For details, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
-1. Identify the columns your team will use to support their workflow and Kanban processes. For details, see [Map the flow of work](#map-the-flow-of-work) later in this article. 
-1. Add, remove, or rename columns and map workflow states to columns. For details, see [Add, edit, rename, or remove columns, split columns](#add-or-rename-columns) later in this article.  
+1. Determine how bugs will be tracked. Bugs might have different workflow states from other requirement work item types. As a result, bugs must be mapped separate from other work item types. For details, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
+1. Identify the columns your team will use to support their workflow and Kanban processes. For more information, see [Map the flow of work](#map-the-flow-of-work) later in this article. 
+1. Add, remove, or rename columns and map workflow states to columns. For for more information, see [Add, edit, rename, or remove columns, split columns](#add-or-rename-columns) later in this article.  
 
 For example, if you add bugs or other work item types to appear on a Kanban board, you potentially introduce other workflow states. New workflow states request you to adjust the Kanban column **State mappings** when one of the following customizations is made:
 
