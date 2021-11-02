@@ -1,7 +1,7 @@
 ---
-title: Agile process work item types & workflow
+title: Agile process work item types to manage your workflow
 titleSuffix: Azure Boards
-description: How to guide for using the Agile process to track work using its work item types working in Azure Boards 
+description: Learn how to use the Agile process work item types in Azure Boards to track your work 
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/20/2018
+ms.date: 11/02/2021
 ---
 
-# Agile process work item types and workflow  
+# Agile process work item types for workflow management in Azure Boards  
 
 [!INCLUDE [temp](../../includes/version-all.md)]
 
