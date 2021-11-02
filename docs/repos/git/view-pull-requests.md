@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 10/30/2021
+ms.date: 11/02/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 [!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
-Pull requests (PRs) are a way to [change](pull-requests.md), [review](review-pull-requests.md), and [merge](complete-pull-requests.md) code in a [Git repository on Azure Repos](../../organizations/projects/create-project.md#add-a-repository-to-your-project). Teams use PRs to review code and give feedback on changes before merging the code into the main branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
+You create pull requests (PRs) to [review](review-pull-requests.md), and [merge](complete-pull-requests.md) code changes in a [Git repository on Azure Repos](../../organizations/projects/create-project.md#add-a-repository-to-your-project). Team members and stakeholders can review changes and give feedback before merging the code into the target branch. Reviewers can also comment on changes and vote to approve or reject the code.
 
 Teams can require PRs for any changes on protected branches, and set [branch policies](branch-policies.md) to require certain PRs to meet specific criteria. 
 
@@ -43,15 +43,15 @@ There are several ways to list, filter, view, and open PRs for a project.
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2020"
+
+- In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
+
+::: moniker-end
+
 To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
-## Mobile experience
-
-You can use mobile devices to view all Azure Repos PR screens and take actions.
-
-![Screenshot of Azure Repos P R screens on a mobile device.](media/view-pull-requests/phone-screen.png)
-
-## List PRs
+## List pull requests
 
 You can list PRs by using the Azure DevOps project website, Visual Studio, or the Azure DevOps command line.
 
@@ -105,7 +105,7 @@ You can view all of your PRs in your organization, across all projects, by choos
 
 ::: moniker-end 
 
-## Customize PR views
+## Define a custom pull request view
 
 Filtering the PR list helps you find and organize PRs to prioritize the most important files in your workflow.
 
@@ -149,6 +149,15 @@ You can also type a string into the Search field to show matching results from t
 
 ::: moniker-end
 
+## Open a pull request
+
+When you open a PR in the browser, the PR opens to its **Overview** tab. The **Overview** tab shows the PR title, description, reviewers, linked worked items, history, and status. You can see a summary of branch policies that are passing or failing, and see comments reviewers have made.
+
+:::image type="content" source="media/view-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the P R Overview tab.":::
+
+On the PR **Files** tab, you can review the actual changes in the PR files. On the **Updates** and **Commits** tabs, you can see changes the author has made to update the PR branch.
+
+To review the changes, make comments or suggestions, or approve or vote on the PR, see [Review pull requests](review-pull-requests.md).
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -170,7 +179,7 @@ Starting with Visual Studio 2017 Update 6, you can check out a PR's source branc
 
 ![Screenshot that shows Checkout source branch.](./media/view-pull-requests/checkout-pr-source-branch.png)
 
-## Customize PR views
+## Define a custom pull request view
 
 Filtering helps you find and organize PRs to prioritize the most important files in your workflow.
 
@@ -184,8 +193,6 @@ From the Team Explorer **Pull Requests** view:
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range=">= azure-devops-2020"
-
-In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
 To list active PRs in your project with their details, use [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list).
 
@@ -248,7 +255,27 @@ ID    Created     Creator              Title                                    
 1     2021-09-28  jamalh@fabrikam.com  Edit README.md                                  Completed  False      Fabrikam
 ```
 
-## Show or open a PR
+## Define a custom pull request view
+
+Filtering helps you find and organize PRs to prioritize the most important files in your workflow. You can use several [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list) parameters to filter the list of PRs, such as `--creator`, `--project`, `--repository`, `--reviewer`, `--source-branch`, `--status`, `--target-branch`, and `--top`.
+
+The `creator` and `reviewer` values can be display names or email addresses. The `top` parameter defines the maximum number of PRs to list.
+
+For example, to list details about the last PR you created, regardless of its status, use:
+
+```azurecli
+az repos pr list --creator "My Name" --status all --top 1
+```
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+
+::: moniker-end
+
+## Show or open a pull request
 
 To show the details for a single PR, use [az repos pr show](/cli/azure/repos/pr#az_repos_pr_show) with the required `id` parameter. To open the PR in your browser, use `open`.
 
@@ -284,7 +311,7 @@ ID    Created     Creator              Title                         Status    I
 21    2021-10-31  jamalh@fabrikam.com  Updated note-new-git-tool.md  Active    False      Fabrikam
 ```
 
-### Check out a branch
+## Check out a branch
 
 Use [az repos pr checkout](/cli/azure/repos/pr#az_repos_pr_checkout) with the required `id` parameter to check out a PR branch locally, as long as there are no local changes.
 
@@ -294,7 +321,7 @@ az repos pr checkout --id
                      [--subscription]
 ```
 
-#### Parameters
+### Parameters
 
 |Parameter|Description|
 |---------|-----------|
@@ -302,45 +329,24 @@ az repos pr checkout --id
 |`--remote-name`|Name of git remote against which PR is raised. Default value: `origin`.|
 |`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
 
+### Example
+
 For example, to check out the branch for PR #21 locally, use:
 
 ```azurecli
 az repos pr checkout --id 21
 ```
 
-## Customize PR views
-
-Filtering helps you find and organize PRs to prioritize the most important files in your workflow. You can use several [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list) parameters to filter the list of PRs, such as `--creator`, `--project`, `--repository`, `--reviewer`, `--source-branch`, `--status`, `--target-branch`, and `--top`.
-
-The `creator` and `reviewer` values can be display names or email addresses. The `top` parameter defines the maximum number of PRs to list.
-
-For example, to list details about the last PR you created, regardless of its status, use:
-
-```azurecli
-az repos pr list --creator "My Name" --status all --top 1
-```
-
-::: moniker-end
-
-::: moniker range="<= azure-devops-2019"
-
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-
-::: moniker-end
 
 
 ***
 
 
-## Open a PR
+## View and update pull requests from a mobile device
 
-When you open a PR from the browser, from Visual Studio, or from Azure CLI, the PR opens in the browser to its **Overview** tab. The **Overview** tab shows the PR title, description, reviewers, linked worked items, history, and status. You can see a summary of branch policies that are passing or failing, and see comments reviewers have made.
+You can use mobile devices to view all Azure Repos PR screens and take actions.
 
-:::image type="content" source="media/view-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the P R Overview tab.":::
-
-On the PR **Files** tab, you can review the actual changes in the PR files. On the **Updates** and **Commits** tabs, you can see changes the author has made to update the PR branch.
-
-To review the changes, make comments or suggestions, or approve or vote on the PR, see [Review pull requests](review-pull-requests.md).
+![Screenshot of Azure Repos P R screens on a mobile device.](media/view-pull-requests/phone-screen.png)
 
 ## Next steps
 
