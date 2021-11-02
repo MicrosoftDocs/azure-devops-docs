@@ -26,7 +26,7 @@ Audit streams represent a pipeline that flows audit events from your Azure DevOp
 - [Azure Monitor Logs](#set-up-an-azure-monitor-log-stream) - Send auditing logs to [Azure Monitor Logs](/azure/azure-monitor/platform/data-platform-logs). Logs stored in Azure Monitor Logs can be queried and have alerts configured. Look for the table named AzureDevOpsAuditing. You can also connect [Azure Sentinel](https://aka.ms/adostreamingazuresentinel) to your workspace. 
 - [Azure Event Grid](#set-up-an-event-grid-stream) – For scenarios where you want your auditing logs to be sent somewhere else, whether inside or outside of Azure, you can set up an [Azure Event Grid](#set-up-an-event-grid-stream) connection.
 
-Private linked workspaces are not supported today.
+Private linked workspaces aren't supported today.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ By default, Project Collection Administrators (PCAs) are the only group that hav
   
   :::image type="content" source="media/auditing-streaming/auditing-permissions.png" alt-text="Set audit permissions to Allow":::
 
-These permissions can be given to any users or groups you wish to have manage your organization's streams. Additionally, there is also a *Delete audit streams* permission that you can add on for users or groups.
+These permissions can be given to any users or groups you wish to have manage your organization's streams. Additionally, there's also a *Delete audit streams* permission that you can add on for users or groups.
 
 ## Create a stream
 
@@ -51,7 +51,7 @@ These permissions can be given to any users or groups you wish to have manage yo
    ![Select Auditing in Organization settings](media/auditing-streaming/select-auditing-organization-settings.png)
 
 > [!NOTE]
-> If you do not see *Auditing* in Organization settings, then you do not have access to view audit events. Outside of the Project Collection Administrators (PCAs) group, you can give permissions to other users and groups, so they can view the auditing pages.
+> If you don't see *Auditing* in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators (PCAs) group, you can give permissions to other users and groups, so they can view the auditing pages.
 
 4. Go to the **Streams** tab, and then select **New stream**. 
 
@@ -74,17 +74,17 @@ Streams send data to Splunk via the HTTP Event Collector endpoint.
 
 1. Enable this feature in Splunk. For more information, see this [Splunk documentation](https://aka.ms/adostreamingsplunkdocumentation).
    
-   Once it is enabled, you should have an HTTP Event Collector token and the URL to your Splunk instance. You need both the token and URL to create a Splunk stream.
+   Once it's enabled, you should have an HTTP Event Collector token and the URL to your Splunk instance. You need both the token and URL to create a Splunk stream.
 
    > [!NOTE]
-   > When you are creating a new Event Collector token in Splunk, do not check “Enable indexer acknowledgement”. If it is checked, then no events flow into Splunk. You can edit the token in Splunk to remove that setting. 
+   > When you are creating a new Event Collector token in Splunk, do not check “Enable indexer acknowledgement”. If it's checked, then no events flow into Splunk. You can edit the token in Splunk to remove that setting. 
 
 2. Enter your Splunk URL, which is the pointer to your Splunk instance. Ensure that you include “input-” at the start of your Splunk URL. For example, if your Splunk URL was `https://prd-p-2k3mp2xhznbs.cloud.splunk.come:8088`, enter `https://input-prd-p-2v3mp2xhznbs.cloud.splunk.com:8088`.  
 3. Enter the event collector token you created into the token field. The token is stored securely within Azure DevOps and never displayed again in the UI. We recommend rotating the token regularly, which you can do by getting a new token from Splunk and editing the stream.
 
    :::image type="content" source="media/auditing-streaming/create-stream-splunk.png" alt-text="Enter topic endpoint and access key that you noted earlier":::
 
-4. Select **Set up** and your stream is configured. 
+4. Select **Set up** and your stream's configured. 
    
 Events begin to arrive on Splunk within half an hour or less. 
 
@@ -142,26 +142,26 @@ Parameters available for editing differ per stream type.
 
 2. Select **Save**.
 
-You can re-enable a disabled stream. It catches up on any audit events that were missed for up to the previous seven days. That way you do not miss any events from the duration that the stream was disabled. 
+You can re-enable a disabled stream. It catches up on any audit events that were missed for up to the previous seven days. That way you don't miss any events from the duration that the stream was disabled. 
 
 > [!NOTE]
-> If a stream is disabled for more than 7 days, events older than 7 days are not included in the catch up. 
+> If a stream is disabled for more than 7 days, events older than 7 days aren't included in the catch up. 
 
 ## Delete a stream
 
 To delete a stream, make sure you have the Delete Audit Streams permission.
 
 > [!IMPORTANT]
-> Once you delete a stream you cannot get it back.
+> Once you delete a stream you can't get it back.
 
 1. Hover over the stream you want to delete and select the vertical three dots on the far right. 
 2. Select **Delete stream**.
 
-   :::image type="content" source="media/auditing-streaming/delete-audit-stream.png" alt-text="Select Delete stream and it is removed":::  
+   :::image type="content" source="media/auditing-streaming/delete-audit-stream.png" alt-text="Select Delete stream and it's removed":::  
 
 3. Select **Confirm**.
 
-Your stream gets removed. Any events that have not been sent before the deletion are not sent.
+Your stream gets removed. Any events that haven't been sent before the deletion aren't sent.
 
 ## Related articles
 
