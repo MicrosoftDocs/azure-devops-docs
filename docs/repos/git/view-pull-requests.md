@@ -29,8 +29,8 @@ There are several ways to list, filter, view, and open PRs for a project.
  
 - To view PRs, you must be a member of the Azure DevOps project the PR is in, with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
 
-> [!NOTE]
-> For public projects, users granted **Stakeholder** access have full access to Azure Repos.
+  > [!NOTE]
+  > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
@@ -105,60 +105,6 @@ You can view all of your PRs in your organization, across all projects, by choos
 
 ::: moniker-end 
 
-## Define a custom pull request view
-
-Filtering the PR list helps you find and organize PRs to prioritize the most important files in your workflow.
-
-::: moniker range=">= azure-devops-2019"
-
-To filter the PR list, on the **Pull requests** page, select the **Filter** icon at upper right. Then select **Target branch** or other column header, and select the branch or other value you want to filter on.
-
-To further customize your view of the PR list, select **Customize view** at upper right on the **Pull requests** page.
-
-![Screenshot showing the Customize view button on the Pull requests page.](media/view-pull-requests/customize-view.png)
-
-On the **Customize view** page, you can rearrange the current view sections, edit them, or remove them. To create a new section, select **Add section**.
-
-![Screenshot showing the Customize view page with the Add section button.](media/view-pull-requests/add-section.png)
-
-On the **Customize section** page, enter and select values to filter the section by parameters like draft state or updated date. You can choose whether to **Show pull requests I've approved or rejected on a separate tab**, or **Exclude pull requests (duplicates) included in previous sections**. When you finish customizing the view, select **Save**.
-
-![Screenshot showing the Customize section page.](media/view-pull-requests/customize-section.png)
-
-These customized views create separate, collapsible sections on the pull request page. These custom queries also work across repositories on the **My pull requests** tab of the organization home page.
-![Screenshot of the Pull Requests page showing collapsible sections.](media/view-pull-requests/views.png)
-
-To change the parameters of the customized views, select the **Customize** button next to the view. Or select **Customize view**, and on the **Customize view** screen, select the view you want to change. Some views, like **Assigned to me**, can't be customized, but they can be rearranged or removed.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
-
-On a PR **Files** tab, you can use several filters to select files and comments for faster reviews. Select **Filter**, and then select among the options.
-
-![Screenshot of the Files tab with filter options.](./media/view-pull-requests/filter.png)
-
-- Keyword: Enter a keyword.
-- Reviewed/Unreviewed: **All** (default), **Pending**, **Reviewed**.
-- Commented files: **All files** (default), **Files with comments**.
-- Comments: **Show** (default), **What's new**, **Hide**.
-- Comment status: **Active** (default), **Pending**, **Resolved**, **As designed**, **Won't fix**, **Closed**.
-- Commented by: **All comments** (default), or a specific person.
-
-You can also type a string into the Search field to show matching results from the preceding options.
-
-::: moniker-end
-
-## Open a pull request
-
-When you open a PR in the browser, the PR opens to its **Overview** tab. The **Overview** tab shows the PR title, description, reviewers, linked worked items, history, and status. You can see a summary of branch policies that are passing or failing, and see comments reviewers have made.
-
-:::image type="content" source="media/view-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the P R Overview tab.":::
-
-On the PR **Files** tab, you can review the actual changes in the PR files. On the **Updates** and **Commits** tabs, you can see changes the author has made to update the PR branch.
-
-To review the changes, make comments or suggestions, or approve or vote on the PR, see [Review pull requests](review-pull-requests.md).
-
 # [Visual Studio](#tab/visual-studio)
 
 In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Team Explorer.
@@ -168,26 +114,10 @@ In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Tea
 1. Select **View** > **Team Explorer** to open Team Explorer. You can also press **Ctrl**+**\\**, **Ctrl**+**M**.
 
 1. From **Home**, select **Pull Requests** to view lists of PRs opened by you or assigned to you.
-   - To view the PR list in the Azure DevOps web portal, select **Actions** and then select **Open in browser**.
-   - To open a PR in the web portal, right-click the PR and select **Open in browser**.
+
+1. To view the PR list in the Azure DevOps web portal, select **Actions** and then select **Open in browser**.
 
    ![Screenshot of the P R list in Visual Studio Team Explorer.](./media/view-pull-requests/list-prs.png)
-
-### Check out a branch
-
-Starting with Visual Studio 2017 Update 6, you can check out a PR's source branch directly from the **Pull Requests** view. Right-click a PR, and choose **Checkout Source Branch**.
-
-![Screenshot that shows Checkout source branch.](./media/view-pull-requests/checkout-pr-source-branch.png)
-
-## Define a custom pull request view
-
-Filtering helps you find and organize PRs to prioritize the most important files in your workflow.
-
-From the Team Explorer **Pull Requests** view:
-- Select **Active**, or **Assigned to me or my team**, to filter the PR lists by PR status or assignment.
-- Type in the **Type here to filter the list** fields to filter the PR lists by date, author, branch, or other attributes.
-
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
@@ -255,9 +185,77 @@ ID    Created     Creator              Title                                    
 1     2021-09-28  jamalh@fabrikam.com  Edit README.md                                  Completed  False      Fabrikam
 ```
 
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+
+::: moniker-end
+
+
+
+***
+
+
+
 ## Define a custom pull request view
 
-Filtering helps you find and organize PRs to prioritize the most important files in your workflow. You can use several [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list) parameters to filter the list of PRs, such as `--creator`, `--project`, `--repository`, `--reviewer`, `--source-branch`, `--status`, `--target-branch`, and `--top`.
+Filtering the PR list helps you find and organize PRs to prioritize the most important files in your workflow.
+
+# [Browser](#tab/browser)
+
+::: moniker range=">= azure-devops-2019"
+
+To filter the PR list, on the **Pull requests** page, select the **Filter** icon at upper right. Then select **Target branch** or other column header, and select the branch or other value you want to filter on.
+
+To further customize your view of the PR list, select **Customize view** at upper right on the **Pull requests** page.
+
+![Screenshot showing the Customize view button on the Pull requests page.](media/view-pull-requests/customize-view.png)
+
+On the **Customize view** page, you can rearrange the current view sections, edit them, or remove them. To create a new section, select **Add section**.
+
+![Screenshot showing the Customize view page with the Add section button.](media/view-pull-requests/add-section.png)
+
+On the **Customize section** page, enter and select values to filter the section by parameters like draft state or updated date. You can choose whether to **Show pull requests I've approved or rejected on a separate tab**, or **Exclude pull requests (duplicates) included in previous sections**. When you finish customizing the view, select **Save**.
+
+![Screenshot showing the Customize section page.](media/view-pull-requests/customize-section.png)
+
+These customized views create separate, collapsible sections on the pull request page. These custom queries also work across repositories on the **My pull requests** tab of the organization home page.
+![Screenshot of the Pull Requests page showing collapsible sections.](media/view-pull-requests/views.png)
+
+To change the parameters of the customized views, select the **Customize** button next to the view. Or select **Customize view**, and on the **Customize view** screen, select the view you want to change. Some views, like **Assigned to me**, can't be customized, but they can be rearranged or removed.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+
+On a PR **Files** tab, you can use several filters to select files and comments for faster reviews. Select **Filter**, and then select among the options.
+
+![Screenshot of the Files tab with filter options.](./media/view-pull-requests/filter.png)
+
+- Keyword: Enter a keyword.
+- Reviewed/Unreviewed: **All** (default), **Pending**, **Reviewed**.
+- Commented files: **All files** (default), **Files with comments**.
+- Comments: **Show** (default), **What's new**, **Hide**.
+- Comment status: **Active** (default), **Pending**, **Resolved**, **As designed**, **Won't fix**, **Closed**.
+- Commented by: **All comments** (default), or a specific person.
+
+You can also type a string into the Search field to show matching results from the preceding options.
+
+::: moniker-end
+
+# [Visual Studio](#tab/visual-studio)
+
+From the Team Explorer **Pull Requests** view:
+- Select **Active**, or **Assigned to me or my team**, to filter the PR lists by PR status or assignment.
+- Type in the **Type here to filter the list** fields to filter the PR lists by date, author, branch, or other attributes.
+
+# [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range=">= azure-devops-2020"
+
+You can use several [az repos pr list](/cli/azure/repos/pr#az_repos_pr_list) parameters to filter the list of PRs, such as `--creator`, `--project`, `--repository`, `--reviewer`, `--source-branch`, `--status`, `--target-branch`, and `--top`.
 
 The `creator` and `reviewer` values can be display names or email addresses. The `top` parameter defines the maximum number of PRs to list.
 
@@ -275,7 +273,41 @@ az repos pr list --creator "My Name" --status all --top 1
 
 ::: moniker-end
 
-## Show or open a pull request
+
+
+***
+
+
+
+## Open a pull request
+
+# [Browser](#tab/browser)
+
+When you open a PR in the browser, the PR opens to its **Overview** tab. The **Overview** tab shows the PR title, description, reviewers, linked worked items, history, and status. You can see a summary of branch policies that are passing or failing, and see comments reviewers have made.
+
+:::image type="content" source="media/view-pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the P R Overview tab.":::
+
+On the PR **Files** tab, you can review the actual changes in the PR files. On the **Updates** and **Commits** tabs, you can see changes the author has made to update the PR branch.
+
+To review the changes, make comments or suggestions, or approve or vote on the PR, see [Review pull requests](review-pull-requests.md).
+
+# [Visual Studio](#tab/visual-studio)
+
+From the Team Explorer **Pull Requests** view, right-click the PR and select **Open in browser** to open the PR in the web portal.
+
+### Check out a branch
+
+Starting with Visual Studio 2017 Update 6, you can check out a PR's source branch directly from the **Pull Requests** view. Right-click a PR, and choose **Checkout Source Branch**.
+
+![Screenshot that shows Checkout source branch.](./media/view-pull-requests/checkout-pr-source-branch.png)
+
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
+
+# [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range=">= azure-devops-2020"
 
 To show the details for a single PR, use [az repos pr show](/cli/azure/repos/pr#az_repos_pr_show) with the required `id` parameter. To open the PR in your browser, use `open`.
 
@@ -311,7 +343,7 @@ ID    Created     Creator              Title                         Status    I
 21    2021-10-31  jamalh@fabrikam.com  Updated note-new-git-tool.md  Active    False      Fabrikam
 ```
 
-## Check out a branch
+### Check out a branch
 
 Use [az repos pr checkout](/cli/azure/repos/pr#az_repos_pr_checkout) with the required `id` parameter to check out a PR branch locally, as long as there are no local changes.
 
@@ -321,7 +353,7 @@ az repos pr checkout --id
                      [--subscription]
 ```
 
-### Parameters
+#### Parameters
 
 |Parameter|Description|
 |---------|-----------|
@@ -329,7 +361,7 @@ az repos pr checkout --id
 |`--remote-name`|Name of git remote against which PR is raised. Default value: `origin`.|
 |`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
 
-### Example
+#### Example
 
 For example, to check out the branch for PR #21 locally, use:
 
@@ -337,9 +369,18 @@ For example, to check out the branch for PR #21 locally, use:
 az repos pr checkout --id 21
 ```
 
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+
+::: moniker-end
+
 
 
 ***
+
 
 
 ## View and update pull requests from a mobile device
