@@ -26,9 +26,9 @@ Audit changes occur whenever a user or service identity within the organization 
 - and much more...
 
 > [!NOTE]
-> Auditing is currently in a Public Preview for Azure DevOps Services. Auditing is not available for on-premises deployments. To connect auditing to an on-premises or cloud-based Splunk, make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
+> Auditing is currently in a Public Preview for Azure DevOps Services. Auditing isn't available for on-premises deployments. To connect auditing to an on-premises or cloud-based Splunk, make sure you allow IP ranges for inbound connections. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
 
-During the Public Preview, Auditing will be turned on by default for all Azure DevOps Services organizations. You can not turn auditing off, which also ensures that you never miss an actionable event. After Public Preview, Auditing can be toggled on and off by Project Collection Administrators.
+During the Public Preview, Auditing will be turned on by default for all Azure DevOps Services organizations. You can't turn auditing off, which also ensures that you never miss an actionable event. After Public Preview, Auditing can be toggled on and off by Project Collection Administrators.
 
 Events are stored for 90 days, after which they are deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
 
@@ -42,7 +42,7 @@ By default, Project Collection Administrators are the only group that have full 
 - Members of the **Project Collection Valid Users** group can view the Auditing page and export audit logs.
 
 > [!NOTE]  
-> If the **Limit user visibility for projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group can not view **Auditing** and have limited visibility to **Organization settings** pages.  To learn more, see [About projects and scaling your organization, Project-scoped Users group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+> If the **Limit user visibility for projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group can't view **Auditing** and have limited visibility to **Organization settings** pages.  To learn more, see [About projects and scaling your organization, Project-scoped Users group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
 
 ## Access auditing
 
@@ -60,7 +60,7 @@ By default, Project Collection Administrators are the only group that have full 
 
    ![Auditing preview page](media/azure-devops-auditing/access-audit-log-red-box-preview.png)
    
-4. If you do not see Auditing in Organization settings, then you do not have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so that they can view the auditing pages. Select **Permissions**, and then find the group or users to provide auditing access to.
+4. If you don't see Auditing in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so that they can view the auditing pages. Select **Permissions**, and then find the group or users to provide auditing access to.
 
    ![Screenshot of highlighted Permissions tab.](media/azure-devops-auditing/select-permissions-preview.png)  
 
@@ -108,13 +108,13 @@ The Auditing page provides a simple view into the audit events recorded for your
 |Category     | Description of the type of action that occurred (e.g. modify, rename, create, delete, remove, execute, and access event).   |
 |Details    | Brief description of what happened during the event.        |
 
-Each audit event also records additional information to what is viewable on the auditing page. This information includes the authentication mechanism, a correlation ID to link similar events together, user agent, and additional data depending on the audit event type. This information can only be viewed by exporting the auditing events via CSV or JSON.
+Each audit event also records additional information to what's viewable on the auditing page. This information includes the authentication mechanism, a correlation ID to link similar events together, user agent, and additional data depending on the audit event type. This information can only be viewed by exporting the auditing events via CSV or JSON.
 
 ### ID & correlation ID
 
 Each audit event has unique identifiers called the “ID” and “CorrelationID”. The correlation ID is helpful for finding related audit events. For example, a created project can generate several dozen audit events. You can link these events together because they all have the same correlation ID. 
 
-When an audit event ID matches its correlation ID, it indicates that the audit event is the parent or original event. So, the initial event, showing that a user created a project, has the same ID as the correlation ID. To see only originating events, look for the events where “ID” equals the “Correlation ID”. Then, if you find an event that you want to investigate, you can look up only the events with that correlation ID. Not all events have other related events. 
+When an audit event ID matches its correlation ID, it indicates that the audit event is the parent or original event. To see only originating events, look for the events where “ID” equals the “Correlation ID” in question. Then, if you want to investigate an event and its related events, you can look up all events with a correlation ID that matches the originating event's ID. Not all events have related events. 
 
 ### Bulk events
 
@@ -140,7 +140,7 @@ As you look through the audit events, you may find the *Category* and *Area* col
 ### Areas
 
 > [!Note]
-> While auditing is in a public preview, we are working hard to get more areas audited. We try our best to add new auditing events monthly. If you would like to see an event that is not currently tracked, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
+> While auditing is in a public preview, we're working hard to get more areas audited. We try our best to add new auditing events monthly. If you would like to see an event that is not currently tracked, consider sharing that with us in the [Developer Community](https://developercommunity.visualstudio.com/search?space=21). 
 
 |Area            |Description |
 |----------------|------------|
@@ -172,15 +172,15 @@ In the current Auditing UI, you can only filter events by a date or time range. 
 
 ![Auditing entry filter by date & time](media/azure-devops-auditing/audit-log-date-time-picker.png)
 
-Use the filters to select any time range over the last 90 days and scope it down to the minute. Once you have selected a time range, select Apply on the time range selector to start the search. By default, the top 200 results are returned for that time selection. If there are more results, then you can scroll down to load them onto the page.
+Use the filters to select any time range over the last 90 days and scope it down to the minute. Once you've selected a time range, select Apply on the time range selector to start the search. By default, the top 200 results are returned for that time selection. If there are more results, then you can scroll down to load them onto the page.
 
 ## Export auditing events
 
-To do a more detailed search on the auditing data or store data for more than 90 days of data, you will need to export existing audit events. The exported data can then be stored in another location or service. 
+To do a more detailed search on the auditing data or store data for more than 90 days of data, you'll need to export existing audit events. The exported data can then be stored in another location or service. 
 
 Select the **Download** button in the top-right-hand side of the auditing page to export auditing events. You can select to download as a CSV or JSON file. 
 
-Selecting either option starts the download. Events get downloaded based on the time range you have selected in the filter. If you had one day selected, then you get that one day’s worth of data. Transversely, if you wanted all 90 days, select 90 days from the time range filter and then start the download. 
+Selecting either option starts the download. Events get downloaded based on the time range you have selected in the filter. If you have one day selected, then you get one day’s worth of data returned. Transversely, if you wanted all 90 days, select 90 days from the time range filter and then start the download. 
 
 > [!NOTE]
 > For long-term storage and analysis of your auditing events, consider sending your events downstream to a Security Information and Event Management (SIEM) tool using the [Audit Streaming feature](auditing-streaming.md). Exporting the auditing logs is recommended for cursory data analysis.
@@ -192,7 +192,7 @@ To filter data by more than the date/time range, we recommend downloading logs a
 The following limitations exist for what can be audited.
 
 * Azure Active Directory (Azure AD) group membership changes – Auditing Logs include updates to Azure DevOps groups and group membership (when an event Area is "Groups"). However, if you manage membership via Azure AD groups, such additions and removals of users from those Azure AD groups are not audited by Azure DevOps in these logs. Review the Azure AD audit logs to see when a user or group was added or removed from an Azure AD group. 
-* Sign in events – We do not track sign in events for Azure DevOps. View the Azure AD audit logs to review sign in events to your Azure AD. 
+* Sign in events – We don't track sign in events for Azure DevOps. View the Azure AD audit logs to review sign in events to your Azure AD. 
 
 ## Related articles
 - [Auditing streaming](auditing-streaming.md)
