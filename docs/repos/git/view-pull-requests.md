@@ -291,8 +291,6 @@ To open a PR in the browser, select the PR from the list on the **Pull requests*
 
 On the PR **Files** tab, you can review the actual changes in the PR files. On the **Updates** and **Commits** tabs, you can see changes the author has made to update the PR branch.
 
-To review the changes, make comments or suggestions, or approve or vote on the PR, see [Review pull requests](review-pull-requests.md).
-
 # [Visual Studio](#tab/visual-studio)
 
 From the Team Explorer **Pull Requests** view, right-click the PR and select **Open in browser** to open the PR in the web portal.
@@ -384,6 +382,9 @@ az repos pr checkout --id 21
 ***
 
 
+
+
+To review changes, make comments or suggestions, or approve or vote on the PR, see [Review pull requests](review-pull-requests.md).
 
 ## View and update pull requests from a mobile device
 
