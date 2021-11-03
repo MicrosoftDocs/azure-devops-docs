@@ -128,30 +128,6 @@ You can create a PR directly from an Azure Boards work item linked to the branch
 
 The link takes you to a page where you can [enter your PR details](pull-requests.md#finish) and create the PR.
 
-## Add updates with cherry-pick
-
-You can copy commits from one branch to another by using cherry-pick. Unlike a merge or rebase, cherry-pick only brings the changes from the commits you select, instead of all the changes in a branch.
-
-To cherry-pick changes from a completed PR, select **Cherry-pick** on the PR's **Overview** page. To copy changes from an active PR, select **Cherry-pick** from the PR's **More options** menu. This action creates a new branch with the copied changes. You can then create a new PR from the new branch. For detailed instructions, see [Copy changes with cherry-pick](cherry-pick.md).
-
-## Switch source and target branches of your pull request
-
-Before the first time you save a PR, you can switch the source and target branches of the PR by selecting the **Switch source and target branches** icon next to the branch names. Once the PR is active, this icon goes away, but you can still [change the target branch](#change-the-target-branch-of-a-pull-request) of the PR.
-
-![Screenshot of the switch source and target branches icon.](media/pull-requests/switch-branches.png)
-
-::: moniker range=">= azure-devops-2019"
-
-## Use pull request templates
-
-A pull request template is a file containing Markdown text that populates the PR description when you create a PR. Good PR descriptions tell PR reviewers what to expect, and can help track tasks like adding unit tests and updating documentation. Your team can create a default PR template that adds text to all new PR descriptions in the repo. Also, you can select from branch-specific templates or other templates your team defines. For more information about creating and using PR templates, see [Improve pull request descriptions using templates](pull-request-templates.md).
-
-If your repo has a default template, all PRs in the repo have the default template's description text at creation. To add other templates, select **Add a template** and then choose a template from the dropdown list. You can edit the template text in your description, remove it, or add other text.
-
-![Screenshot showing Add a template when creating a P R.](media/pull-requests/use-template.png)
-
-::: moniker-end
-
 # [Visual Studio](#tab/visual-studio)
 
 In Visual Studio 2015, 2017, and 2019, you can create PRs from Visual Studio Team Explorer:
@@ -255,6 +231,30 @@ You can add many other PR details at or after PR creation. To add details, revie
 ***
 
 
+## Add updates with cherry-pick
+
+You can copy commits from one branch to another by using cherry-pick. Unlike a merge or rebase, cherry-pick only brings the changes from the commits you select, instead of all the changes in a branch.
+
+To cherry-pick changes from a completed PR, select **Cherry-pick** on the PR's **Overview** page. To copy changes from an active PR, select **Cherry-pick** from the PR's **More options** menu. This action creates a new branch with the copied changes. You can then create a new PR from the new branch. For detailed instructions, see [Copy changes with cherry-pick](cherry-pick.md).
+
+## Switch source and target branches of your pull request
+
+Before the first time you save a PR, you can switch the source and target branches of the PR by selecting the **Switch source and target branches** icon next to the branch names. Once the PR is active, this icon goes away, but you can still [change the target branch](#change-the-target-branch-of-a-pull-request) of the PR.
+
+![Screenshot of the switch source and target branches icon.](media/pull-requests/switch-branches.png)
+
+::: moniker range=">= azure-devops-2019"
+
+## Use pull request templates
+
+A pull request template is a file containing Markdown text that populates the PR description when you create a PR. Good PR descriptions tell PR reviewers what to expect, and can help track tasks like adding unit tests and updating documentation. Your team can create a default PR template that adds text to all new PR descriptions in the repo. Also, you can select from branch-specific templates or other templates your team defines. For more information about creating and using PR templates, see [Improve pull request descriptions using templates](pull-request-templates.md).
+
+If your repo has a default template, all PRs in the repo have the default template's description text at creation. To add other templates, select **Add a template** and then choose a template from the dropdown list. You can edit the template text in your description, remove it, or add other text.
+
+![Screenshot showing Add a template when creating a P R.](media/pull-requests/use-template.png)
+
+::: moniker-end
+
 <a name="draft-pull-requests"></a>
 
 ::: moniker range=">=azure-devops-2019"
@@ -302,7 +302,7 @@ To set a PR to draft, from the **Pull Requests** view in Team Explorer, right-cl
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-To create a PR as a draft, set the `draft` parameter to `true` when you create the PR. (Requires Azure DevOps Server 2020 or later version.)
+To create a PR as a draft, set the `--draft` parameter to `true` when you create the PR. (Requires Azure DevOps Server 2020 or later version.)
 
 For example:
 
@@ -310,9 +310,9 @@ For example:
 az repos pr create --repository Fabrikam --source-branch new --draft true
 ```
 
-To set an existing PR to draft, use `az repos pr update --id <PR Id> --draft true`
+To set an existing PR to draft, use `az repos pr update --id <PR Id> --draft true`.
 
-To remove draft status from a PR, set `draft` to `false`.
+To remove draft status from a PR, set `--draft` to `false`.
 
 ***
 
@@ -363,9 +363,9 @@ To add reviewers, add tags, link work items, or change any details in an existin
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
+::: moniker range=">= azure-devops-2020"
 <a id="add-details-pr" /> 
 
-::: moniker range=">= azure-devops-2020"
 
 You can add details during PR creation with [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create), or update details in existing PRs with [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update).
 
@@ -518,6 +518,7 @@ az repos pr reviewer add --id
 
 <a name="prlinkeditems"></a>
 <a name="addworkitemstopr"></a>
+<a name="link-work-items"></a>
 
 ## Link work items to a pull request
 
