@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 10/30/2021
+ms.date: 11/03/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -16,11 +16,7 @@ monikerRange: '<= azure-devops'
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 [!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
-Create pull requests (PRs) to change, review, and merge code in a [Git project](../../organizations/projects/create-project.md). You can create PRs from branches in the upstream repository or from branches in your [fork](forks.md) of the repository.
-
-Your team can [review the PRs](review-pull-requests.md) and give feedback on changes. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the PRs.
-
-Depending on [branch policies](branch-policies.md) and other requirements, your PR might need to meet various criteria before you can [complete the PR](complete-pull-requests.md) and merge the changes into the target branch.
+Create pull requests (PRs) to change, review, and merge code in a [Git repository](creatingrepo.md). You can create PRs from branches in the upstream repository or from branches in your [fork](forks.md) of the repository. Your team can [review the PRs](review-pull-requests.md) and give feedback on changes. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the PRs. Depending on [branch policies](branch-policies.md) and other requirements, your PR might need to meet various criteria before you can [complete the PR](complete-pull-requests.md) and merge the changes into the target branch.
 
 For PR guidelines and management considerations, see [About pull requests](about-pull-requests.md).
 
@@ -34,8 +30,8 @@ For PR guidelines and management considerations, see [About pull requests](about
 - To contribute to a PR, you must be a member of the **Readers** security group or have the corresponding permissions.
 - To create and complete a PR, you must be a member of the **Contributors** security group or have the corresponding permissions.
 
-> [!NOTE]
-> For public projects, users granted **Stakeholder** access have full access to Azure Repos.
+  > [!NOTE]
+  > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
@@ -52,9 +48,12 @@ For PR guidelines and management considerations, see [About pull requests](about
 
 ::: moniker-end
 
+- To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
-To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
+::: moniker range=">= azure-devops-2020"
+- You can create and manage PRs from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
+::: moniker-end
 
 <a name="create-a-new-pull-request"></a>
 
@@ -66,10 +65,25 @@ You can create a new PR from the Azure DevOps project website, from Visual Studi
 
 From the Azure DevOps project website, you can create a new PR from:
 
-- [A feature branch pushed to your repo](#from-a-pushed-branch).
-- [The Development section in a linked Azure Boards work item](#from-a-linked-work-item).
 - [The Pull requests page](#from-the-pull-requests-page).
+- [A feature branch pushed to your repo](#from-a-pushed-branch).
 - [An existing PR, by using cherry-pick](#add-updates-with-cherry-pick).
+- [The Development control in a linked Azure Boards work item](#from-a-linked-work-item).
+
+<a name="from-the-pull-requests-page"></a>
+### Create a PR from the Pull requests page
+
+You can create PRs for any branch from your project's **Pull requests** page on the web.
+
+1. On the **Repos** > **Pull requests** page, select **New pull request** at upper right.
+
+   ![Screenshot of the New pull request button.](media/pull-requests/new-pr-button.png)
+
+1. Select the branch with the changes and the branch you want to merge the changes into, such as the main branch.
+
+   ![Screenshot of source and target branches for a P R in Azure Repos.](media/pull-requests/pr-branch-targets.png)
+
+1. [Enter your PR details](pull-requests.md#finish) and create the PR.
 
 <a name="from-a-pushed-branch"></a>
 ### Create a PR from a pushed branch
@@ -114,28 +128,13 @@ You can create a PR directly from an Azure Boards work item linked to the branch
 
 The link takes you to a page where you can [enter your PR details](pull-requests.md#finish) and create the PR.
 
-<a name="from-the-pull-requests-page"></a>
-### Create a PR from the Pull requests page
-
-You can create PRs for any branch from your project's **Pull requests** page on the web.
-
-1. On the **Repos** > **Pull requests** page, select **New pull request** at upper right.
-
-   ![Screenshot of the New pull request button.](media/pull-requests/new-pr-button.png)
-
-1. Select the branch with the changes and the branch you want to merge the changes into, such as the main branch.
-
-   ![Screenshot of source and target branches for a P R in Azure Repos.](media/pull-requests/pr-branch-targets.png)
-
-1. [Enter your PR details](pull-requests.md#finish) and create the PR.
-
 ## Add updates with cherry-pick
 
 You can copy commits from one branch to another by using cherry-pick. Unlike a merge or rebase, cherry-pick only brings the changes from the commits you select, instead of all the changes in a branch.
 
 To cherry-pick changes from a completed PR, select **Cherry-pick** on the PR's **Overview** page. To copy changes from an active PR, select **Cherry-pick** from the PR's **More options** menu. This action creates a new branch with the copied changes. You can then create a new PR from the new branch. For detailed instructions, see [Copy changes with cherry-pick](cherry-pick.md).
 
-## Switch PR source and target branches
+## Switch source and target branches of your pull request
 
 Before the first time you save a PR, you can switch the source and target branches of the PR by selecting the **Switch source and target branches** icon next to the branch names. Once the PR is active, this icon goes away, but you can still [change the target branch](#change-the-target-branch-of-a-pull-request) of the PR.
 
@@ -143,15 +142,13 @@ Before the first time you save a PR, you can switch the source and target branch
 
 ::: moniker range=">= azure-devops-2019"
 
-## Use PR templates
+## Use pull request templates
 
-A pull request template is a file containing Markdown text that populates the PR description when you create a PR. Good PR descriptions tell PR reviewers what to expect, and can help track tasks like adding unit tests and updating documentation. Your team can create a default PR template that adds text to all new PR descriptions in the repo. There can also be branch-specific templates, and you can add other, optional templates to your PRs.
+A pull request template is a file containing Markdown text that populates the PR description when you create a PR. Good PR descriptions tell PR reviewers what to expect, and can help track tasks like adding unit tests and updating documentation. Your team can create a default PR template that adds text to all new PR descriptions in the repo. Also, you can select from branch-specific templates or other templates your team defines. For more information about creating and using PR templates, see [Improve pull request descriptions using templates](pull-request-templates.md).
 
 If your repo has a default template, all PRs in the repo have the default template's description text at creation. To add other templates, select **Add a template** and then choose a template from the dropdown list. You can edit the template text in your description, remove it, or add other text.
 
 ![Screenshot showing Add a template when creating a P R.](media/pull-requests/use-template.png)
-
-For more information about creating and using PR templates, see [Improve pull request descriptions using templates](pull-request-templates.md).
 
 ::: moniker-end
 
@@ -183,10 +180,6 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="create-pr" />
-
-::: moniker range=">= azure-devops-2020"
-
-You can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
 To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create). To open the PR in your browser after creation, use the `--open` parameter.
 
@@ -254,7 +247,10 @@ You can add many other PR details at or after PR creation. To add details, revie
 
 ::: moniker-end
 
+::: moniker range=">=azure-devops-2019"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+::: moniker-end
+
 
 ***
 
@@ -326,11 +322,11 @@ To remove draft status from a PR, set `draft` to `false`.
 <a name="finish"></a>
 <a name="add-details-to-prs"></a>
 
-## Add details or edit PRs
+## Add or edit pull request title and description
 
 # [Browser](#tab/browser)
 
-On the **New pull request** page, enter a **Title** and detailed **Description** of your changes, so others can see what problems the changes solve. As in an existing PR, you can see the **Files** and **Commits** in your PR on separate tabs. You can add reviewers, link work items, and add tags to the PR.
+On the **New pull request** page, enter a **Title** and detailed **Description** of your changes, so others can see what problems the changes solve. On a new PR as in existing PRs, you can see the **Files** and **Commits** in your PR on separate tabs. You can add reviewers, link work items, and add tags to the PR.
 
 When you're ready to have your changes reviewed, select **Create** to create the PR.
 
@@ -357,49 +353,53 @@ You can update the title of an existing PR by selecting the current title and up
 Edit the PR description by selecting the **Edit** icon in the **Description** section.
 
 :::image type="content" source="media/pull-requests/pull-request-edit-title-description-2020.png" alt-text="Screenshot that shows editing the P R title and selecting the description Edit button.":::
- 
-
-### Add tags to a PR
-
-Use tags to show important details and help organize PRs. Tags can communicate extra information to reviewers, such as that the PR is still a work in progress, or is a hotfix for an upcoming release. 
-
-![Screenshot showing P Rs with tags.](media/pull-requests/pull-request-labels.png)
-
-To add a tag when creating a PR, type a tag name in the **Tags** section. After you create the PR, you can manage tags in the **Tags** section.
-
-:::image type="content" source="media/pull-requests/pull-request-tags-section.png" alt-text="Screenshot that shows the P R Tags section highlighted.":::
 
 
-::: moniker range=">= tfs-2018"
+# [Visual Studio](#tab/visual-studio)
 
-### Apply PR labels
+When you create a PR in Visual Studio, enter a title and detailed description of your changes so others can see what problems the changes solve. Keep these fields up to date so reviewers can understand the changes in the PR.
 
-You can communicate extra information about a PR to the reviewers by using labels. Maybe the PR is still a work in progress, or it's a hotfix for an upcoming release. Use labels to communicate important details and help organize PRs.
-::: moniker-end
-::: moniker range="tfs-2018"
+To add reviewers, add tags, link work items, or change any details in an existing PR, open the PR in your browser. Right-click the PR from the **Pull Requests** view in Team Explorer, select **Open in browser**, and then make your updates on the PR's **Overview** page.
 
-> [!NOTE]
-> Using PR labels requires TFS 2018.2 or later version.  
-::: moniker-end
+# [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= tfs-2018"
-![Screenshot showing P Rs with labels.](media/pull-requests/pull-request-labels.png)
+<a id="add-details-pr" /> 
 
-To add a label when creating a PR, choose **Add label**. After you create a PR, you can manage its labels in the **Labels** section.
+::: moniker range=">= azure-devops-2020"
 
-![Add P R label](media/pull-requests/add-pull-request-label.png)
+You can add details during PR creation with [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create), or update details in existing PRs with [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update).
 
-::: moniker-end
+When you create a PR with `az repos pr create`, add a `title` and a detailed `description` of your changes so others can see what problems the changes solve. The `description` parameter accepts Markdown entry, and each value in the argument is a new line of the PR description.
+
+For example:
+
+```azurecli
+az repos pr create --repository Fabrikam --source-branch new --title "Update the readme" --description "This PR updates the readme." "These are *new* changes."
+```
+
+Keep these fields up to date so reviewers can understand the changes in the PR. To update details of a PR, use `az repos pr update` with the required PR `id` parameter.
+
+For example, to update the title and description for PR #21, use:
+
+```azurecli
+az repos pr update --id 21 --description "These updates are *no longer new*." --title "Old updates"
+```
+
+
+***
+
 
 <a name="add-and-remove-reviewers"></a>
 
-### Add reviewers
+## Add reviewers to a pull request
+
+# [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
 
 You can add reviewers in the **Reviewers** section of a new or existing PR. You can also make existing optional reviewers required, or change required reviewers to optional or remove them, unless they're required by policy.
 
-Branch policies can automatically include optional or required reviewers in all or certain PRs. You can't remove reviewers that are required by branch policy. You can change branch policy optional reviewers to be required, or remove them.
+Branch policies can [require a minimum number of reviewers](branch-policies.md#require-a-minimum-number-of-reviewers), or automatically include certain optional or required reviewers in PRs. You can't remove reviewers that are required by branch policy. You can change branch policy optional reviewers to be required, or remove them.
 
 To see the branch policy that automatically added a reviewer, in the **Reviewers** section of the PR **Overview** page, right-click **More options** next to the reviewer.
 
@@ -464,12 +464,64 @@ To add reviewers to your PR:
    ![Add PR reviewer](media/pull-requests/add-pr-reviewer.png)
 
 ::: moniker-end
+# [Visual Studio](#tab/visual-studio)
+
+To add reviewers, open the PR in your browser. Right-click the PR from the **Pull Requests** view in Team Explorer, select **Open in browser**, and then make your updates on the PR's **Overview** page.
+
+# [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range=">= azure-devops-2020"
+You can add optional reviewers to a PR at creation with<br>`az repos pr create --reviewer "<Reviewer Name>" "<Another Reviewer>"`.
+
+For example:
+
+```azurecli
+az repos pr create --repository Fabrikam --source-branch new --reviewer "[Fabrikam]\Fabrikam Team" "[Fabrikam Fiber]\Web"
+```
+
+To add required reviewers, or change reviewers between optional and required, open and update the PR in the browser.
+
+To manage reviewers for an existing PR, use [az repos pr reviewer](/cli/azure/repos/pr/reviewer).
+
+- To add reviewers to an existing PR, use<br>`az repos pr reviewer add --id <PR Id> --reviewer "<Reviewer Name>" "<Another Reviewer>"`.
+- To list the reviewers for a PR, use `az repos pr reviewer list --id <PR Id>`.
+- To remove reviewers from a PR, use `az repos pr reviewer remove --id <PR Id> --reviewer "<Reviewer Name>"`.
+
+```azurecli
+az repos pr reviewer add --id
+                         --reviewers
+                         [--detect {false, true}]
+                         [--org]
+                         [--subscription]
+```
+
+### Parameters
+
+|Parameter|Description|
+|---------|-----------|
+|`--id`|ID of the pull request. **Required**.|
+|`--reviewers`|Users or groups to include as reviewers on a pull request. Space separated. **Required**.|
+|`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
+|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
+|`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2019"
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+::: moniker-end
+
+
+***
+
+
 
 <a name="prlinkeditems"></a>
 <a name="addworkitemstopr"></a>
 
+## Link work items to a pull request
 
-### Link work items
+# [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -524,89 +576,14 @@ Removing a link only removes the link between the work item and the PR. Links cr
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
-
-## Add attachments to PRs
-
-You can attach files, including images, to your PR during or after creation. Select the paper clip icon below the **Description** field, or drag and drop files directly into the **Description** field of the PR.
-
-![Screenshot that shows attaching files to the P R description during creation.](media/pull-requests/attachment.png)
-
-::: moniker-end
-
-
 # [Visual Studio](#tab/visual-studio)
 
-When you create a PR in Visual Studio, enter a title and detailed description of your changes so others can see what problems the changes solve. Keep these fields up to date so reviewers can understand the changes in the PR.
-
-To add reviewers, add tags, link work items, or change any details in an existing PR, open the PR in your browser. Right-click the PR from the **Pull Requests** view in Team Explorer, select **Open in browser**, and then make your updates on the PR's **Overview** page.
-
+To link work items, open the PR in your browser. Right-click the PR from the **Pull Requests** view in Team Explorer, select **Open in browser**, and then make your updates on the PR's **Overview** page.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-<a id="add-details-pr" /> 
-
 ::: moniker range=">= azure-devops-2020"
-
-You can add details during PR creation with [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create), or update details in existing PRs with [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update).
-
-### Add or edit title and description
-
-When you create a PR with `az repos pr create`, add a `title` and a detailed `description` of your changes so others can see what problems the changes solve. The `description` parameter accepts Markdown entry, and each value in the argument is a new line of the PR description.
-
-For example:
-
-```azurecli
-az repos pr create --repository Fabrikam --source-branch new --title "Update the readme" --description "This PR updates the readme." "These are *new* changes."
-```
-
-Keep these fields up to date so reviewers can understand the changes in the PR. To update details of a PR, use `az repos pr update` with the required PR `id` parameter.
-
-For example, to update the title and description for PR #21, use:
-
-```azurecli
-az repos pr update --id 21 --description "These updates are *no longer new*." --title "Old updates"
-```
-
-### Add reviewers
-
-You can add optional reviewers to a PR at creation with<br>`az repos pr create --reviewer "<Reviewer Name>" "<Another Reviewer>"`.
-
-For example:
-
-```azurecli
-az repos pr create --repository Fabrikam --source-branch new --reviewer "[Fabrikam]\Fabrikam Team" "[Fabrikam Fiber]\Web"
-```
-
-To add required reviewers, or change reviewers between optional and required, open and update the PR in the browser.
-
-To manage reviewers for an existing PR, use [az repos pr reviewer](/cli/azure/repos/pr/reviewer).
-
-- To add reviewers to an existing PR, use<br>`az repos pr reviewer add --id <PR Id> --reviewer "<Reviewer Name>" "<Another Reviewer>"`.
-- To list the reviewers for a PR, use `az repos pr reviewer list --id <PR Id>`.
-- To remove reviewers from a PR, use `az repos pr reviewer remove --id <PR Id> --reviewer "<Reviewer Name>"`.
-
-```azurecli
-az repos pr reviewer add --id
-                         --reviewers
-                         [--detect {false, true}]
-                         [--org]
-                         [--subscription]
-```
-
-### Parameters
-
-|Parameter|Description|
-|---------|-----------|
-|`--id`|ID of the pull request. **Required**.|
-|`--reviewers`|Users or groups to include as reviewers on a pull request. Space separated. **Required**.|
-|`--detect`|Automatically detect organization. Accepted values: `false`, `true`.|
-|`--org` `--organization`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
-|`--subscription`|Name or ID of Azure subscription. You can configure the default subscription by using `az account set -s <NAME_OR_ID>`.|
-
 <a id="link-work-items-pr" /> 
-
-### Link work items
 
 You can link Azure Boards work items to PRs at PR creation with `az repos pr create --work-items <Id1> <Id2>`, where \<Id> is the work item's ID.
 
@@ -643,7 +620,6 @@ az repos pr work-item add --id
 
 ::: moniker-end
 
-
 ::: moniker range="<=azure-devops-2019"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 ::: moniker-end
@@ -652,11 +628,54 @@ az repos pr work-item add --id
 ***
 
 
+::: moniker range="> tfs-2018"
+## Add tags to a pull request
+
+Use tags to show important details and help organize PRs. Tags can communicate extra information to reviewers, such as that the PR is still a work in progress, or is a hotfix for an upcoming release. 
+
+![Screenshot showing P Rs with tags.](media/pull-requests/pull-request-labels.png)
+
+To add a tag when creating a PR, type a tag name in the **Tags** section. After you create the PR, you can manage tags in the **Tags** section.
+
+:::image type="content" source="media/pull-requests/pull-request-tags-section.png" alt-text="Screenshot that shows the P R Tags section highlighted.":::
+
+
+::: moniker range="<= tfs-2018"
+
+## Add labels to a pull request
+
+You can communicate extra information about a PR to the reviewers by using labels. Maybe the PR is still a work in progress, or it's a hotfix for an upcoming release. Use labels to communicate important details and help organize PRs.
+::: moniker-end
+::: moniker range="tfs-2018"
+
+> [!NOTE]
+> Using PR labels requires TFS 2018.2 or later version.  
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+![Screenshot showing P Rs with labels.](media/pull-requests/pull-request-labels.png)
+
+To add a label when creating a PR, choose **Add label**. After you create a PR, you can manage its labels in the **Labels** section.
+
+![Add P R label](media/pull-requests/add-pull-request-label.png)
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+
+## Add attachments to pull requests
+
+You can attach files, including images, to your PR during or after creation. Select the paper clip icon below the **Description** field, or drag and drop files directly into the **Description** field of the PR.
+
+![Screenshot that shows attaching files to the P R description during creation.](media/pull-requests/attachment.png)
+
+::: moniker-end
+
 ::: moniker range=">=azure-devops-2019"
 
 <a name="change-the-target-branch-of-a-pull-request"></a>
 
-### Change the target branch of an active PR
+## Change the target branch of an active pull request
 
 For most teams, nearly all PRs target a default branch, such as `main` or `develop`. If you sometimes need to target a different branch, it's easy to forget to change the target branch when you create the PR. If that happens, you can change the target branch of an active PR:
 
@@ -667,7 +686,7 @@ For most teams, nearly all PRs target a default branch, such as `main` or `devel
 
 
 ::: moniker range=">= tfs-2018"
-## Share a pull request
+## Email pull request notifications to stakeholders
 
 You can share a pull request by email to notify reviewers and communicate with team members. To share a PR:
 
@@ -675,9 +694,16 @@ You can share a pull request by email to notify reviewers and communicate with t
 
    ![Screenshot that shows selecting Share pull request on a P R's Overview page.](media/pull-requests/share.png)
 
-1. On the **Share pull request** screen, add recipients by typing their names in the **To:** field and selecting from the user and group names that appear. You can also remove recipients.
+1. On the **Share pull request** screen, add recipients by typing their names in the **To:** field and selecting from the user names that appear. You can also remove recipients.
 
 1. Add an optional message in the **Note (Optional)** field, and then select **Send**. Recipients receive an email requesting their attention and linking to the PR.
+
+>[!NOTE]
+>If you use the built-in email feature, you can only send the email to project members' individual addresses. Adding a team group or security group to the **To:** line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed pull request.
+
+::: moniker-end
+::: moniker range="< azure-devops"
+For the email feature to work, your administrator for Azure DevOps Server must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts?view=azure-devops-2020&preserve-view=true).
 
 ::: moniker-end
 
