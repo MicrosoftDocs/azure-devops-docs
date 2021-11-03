@@ -224,7 +224,7 @@ You can add many other PR details at or after PR creation. To add details, revie
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops-2019"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 ::: moniker-end
 
@@ -387,7 +387,7 @@ az repos pr update --id 21 --description "These updates are *no longer new*." --
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops-2019"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 ::: moniker-end
 
@@ -514,7 +514,7 @@ az repos pr reviewer add --id
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2019"
+::: moniker range="<=azure-devops-2019"
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 ::: moniker-end
 
