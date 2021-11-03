@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 10/31/2021
+ms.date: 11/02/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -29,8 +29,8 @@ High-quality reviews start with high-quality feedback. For guidelines on getting
  
 - To review PRs, you must be a member of the Azure DevOps project the PR is in, with **Basic** access or higher. If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
 
-> [!NOTE]
-> For public projects, users granted **Stakeholder** access have full access to Azure Repos.
+  > [!NOTE]
+  > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
@@ -44,7 +44,12 @@ High-quality reviews start with high-quality feedback. For guidelines on getting
 
 ::: moniker-end
 
-To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
+- To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
+
+::: moniker range=">= azure-devops-2020
+- In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
+
+::: moniker-end
 
 ## Browse changes
 
@@ -190,12 +195,6 @@ Use the button at upper right in the PR to vote on the PR changes. The default o
 - **Reject**: The changes aren't acceptable. Leave a comment in the PR to explain why.
 - **Reset feedback**: Remove your vote.
 
-## Reset feedback
-
-To remove your vote from a PR, select **Reset feedback** from the **Approve** dropdown list at upper right in the PR. 
-
-![Screenshot that shows selecting Reset feedback from the Approve dropdown list.](./media/review-pull-requests/reset.png)
-
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -214,10 +213,6 @@ To vote on a PR, open the PR in the browser, and on the **Overview** page, use t
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range=">= azure-devops-2020"
-
-In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
-
-Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
 To vote on whether to approve a PR, use [az repos pr set-vote](/cli/azure/repos/pr#az_repos_pr_set_vote).
 
@@ -251,7 +246,35 @@ Name            Email                ID                                    Vote 
 Jamal Hartnett  jamalh@fabrikam.com  00000000-0000-0000-0000-000000000000  Approved  False
 ```
 
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+::: moniker-end
+
+
+***
+
+
 ## Reset feedback
+
+# [Browser](#tab/browser)
+
+To remove your vote from a PR, select **Reset feedback** from the **Approve** dropdown list at upper right in the PR. 
+
+![Screenshot that shows selecting Reset feedback from the Approve dropdown list.](./media/review-pull-requests/reset.png)
+
+
+# [Visual Studio](#tab/visual-studio)
+
+In the 
+
+To remove your vote from a PR, in the **Pull Requests** view in **Team Explorer**, right-click the PR and select **Open in browser**. On the **Overview** page, use the **Approve** button at upper right to select **Reset feedback**.
+
+
+# [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range=">= azure-devops-2020"
 
 To remove your vote from a PR, use `az repos pr set-vote reset`.
 
