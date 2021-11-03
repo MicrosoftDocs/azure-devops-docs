@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 10/31/2021
+ms.date: 11/02/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -33,8 +33,8 @@ To address reviewers' changes, and respond to and resolve review comments, see [
 
 - If you aren't a member of the project you want to contribute to, [get added](../../organizations/accounts/add-organization-users.md).
 
-> [!NOTE]
-> For public projects, users granted **Stakeholder** access have full access to Azure Repos.
+  > [!NOTE]
+  > For public projects, users granted **Stakeholder** access have full access to Azure Repos.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
@@ -51,7 +51,11 @@ To address reviewers' changes, and respond to and resolve review comments, see [
 
 ::: moniker-end
 
-To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
+- To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
+
+::: moniker range=">= azure-devops-2020"
+- In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. To learn how to work with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md). Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
+::: moniker-end
 
 ## Check merge changes
 
@@ -88,10 +92,6 @@ In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Tea
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range=">= azure-devops-2020"
-
-In Azure DevOps Server 2020 and Azure DevOps Services, you can manage PRs and other resources from the [Azure command-line interface (CLI)](/cli/azure/?view=azure-cli-latest&preserve-view=true) with the `azure-devops` extension. For more information about working with the Azure DevOps Services CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).
-
-Azure Repos CLI commands for PRs use [az repos pr](/cli/azure/repos/pr).
 
 To see all branch policies that are in effect for a PR, use [az repos pr policy list](/cli/azure/repos/pr/policy?view=azure-cli-latest&preserve-view=true) with the required `id` parameter.
 
@@ -248,46 +248,6 @@ Linked work items are also updated showing the PR completion.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
-
-<a name="complete-automatically"></a>
-## Set autocomplete
-
-Select **Set auto-complete** from the **Complete** dropdown list to complete and merge the PR changes as soon as conditions satisfy all [branch policies](branch-policies.md). When the PR is completed, you receive an email notification. If a conflict or error prevents PR completion, email notifies you of the issue.
-
->[!NOTE]
->The **Set auto-complete** option is available in Azure Repos and TFS 2017 and higher when you have branch policies. If you don't see **Set auto-complete**, you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
-
-By default, a PR that's set to autocomplete waits only on required policies. In the **Enable automatic completion** panel, you can choose to wait on optional policies as well.
-
-![Screenshot that shows changing an optional policy to required in the Enable automatic completion panel.](media/complete-pull-requests/enable-completion.png)
-
-Starting with TFS 2018 Update 2, the PR **Overview** page displays the list of outstanding policy criteria the PR is waiting for. If you set a policy to be required in the **Enable automatic completion** panel, you can set it back to optional on the **Overview** page.
-
-Select **Cancel auto-complete** to turn off autocomplete. 
-
-::: moniker-end 
-
-::: moniker range="azure-devops"
-![Screenshot of a PR in autocomplete state.](./media/complete-pull-requests/autocomplete.png)
-::: moniker-end 
-
-::: moniker range=">= tfs-2017 <= azure-devops-2020"
-![Screenshot of a PR in autocomplete state.](./media/complete-pull-requests/pr-banner-autocomplete.png)
-::: moniker-end 
-
-A PR set to autocomplete displays an **Auto-complete** badge on the **Pull requests** page.
-
-![Screenshot showing an autocomplete PR in the PR list.](media/complete-pull-requests/auto-complete-badge.png)
-
-<a name="abandon-the-pr"></a>
-## Abandon a PR
-
-To abandon your changes and your PR without merging, select **Abandon** from the dropdown list on the **Complete** button. You can still view the abandoned PR, and it stays linked to work items.
-
-To reactivate an abandoned PR at any time, open the PR from the **Abandoned** tab in the **Pull Request** view, and select **Reactivate** at upper right.
-
-
 # [Visual Studio](#tab/visual-studio)
 
 In Visual Studio 2015, 2017, and 2019, you can access PRs from Visual Studio Team Explorer:
@@ -314,7 +274,7 @@ For example, to complete PR #21, use:
 az repos pr update --id 21 --status completed
 ```
 
-## Set completion options
+### Set completion options
 
 You can set PR completion options when you [create a PR](pull-requests.md#create-a-pull-request) with `az repos pr create`, or update creation options in existing PRs with `az repos pr update`. 
 
@@ -375,17 +335,90 @@ The following example completes PR #21, deletes its source branch, resolves its 
 az repos pr update --id 21 --status completed --delete-source-branch true --transition-work-items true --merge-commit-message "This update is complete."
 ```
 
+::: moniker-end
+ 
+::: moniker range="<= azure-devops-2019"
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
+
+::: moniker-end
+
+
+***
+
+
 <a name="complete-automatically"></a>
-## Set autocomplete
+## Set a pull request to autocomplete
+
+# [Browser](#tab/browser)
+::: moniker range=">= tfs-2017"
+Select **Set auto-complete** from the **Complete** dropdown list to complete and merge the PR changes as soon as conditions satisfy all [branch policies](branch-policies.md). When the PR is completed, you receive an email notification. If a conflict or error prevents PR completion, email notifies you of the issue.
+
+>[!NOTE]
+>The **Set auto-complete** option is available in Azure Repos and TFS 2017 and higher when you have branch policies. If you don't see **Set auto-complete**, you don't have any branch policies. For more information, see [Branch policies](branch-policies.md).
+
+By default, a PR that's set to autocomplete waits only on required policies. In the **Enable automatic completion** panel, you can choose to wait on optional policies as well.
+
+![Screenshot that shows changing an optional policy to required in the Enable automatic completion panel.](media/complete-pull-requests/enable-completion.png)
+
+Starting with TFS 2018 Update 2, the PR **Overview** page displays the list of outstanding policy criteria the PR is waiting for. If you set a policy to be required in the **Enable automatic completion** panel, you can set it back to optional on the **Overview** page.
+
+Select **Cancel auto-complete** to turn off autocomplete. 
+
+::: moniker-end 
+
+::: moniker range="azure-devops"
+![Screenshot of a PR in autocomplete state.](./media/complete-pull-requests/autocomplete.png)
+::: moniker-end 
+
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
+![Screenshot of a PR in autocomplete state.](./media/complete-pull-requests/pr-banner-autocomplete.png)
+::: moniker-end 
+
+A PR set to autocomplete displays an **Auto-complete** badge on the **Pull requests** page.
+
+![Screenshot showing an autocomplete PR in the PR list.](media/complete-pull-requests/auto-complete-badge.png)
+
+# [Visual Studio](#tab/visual-studio)
+
+In the **Pull Requests** view in Visual Studio **Team Explorer**, right-click the PR and select **Open in browser** to open a PR in the web portal. On the **Overview** page, select **Set auto-complete**.
+
+# [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range=">= azure-devops-2020"
 
 Set autocomplete to complete a PR automatically when it passes all required approvals and branch policies. You can set autocomplete at PR creation, or update an existing PR.
 
 - To set autocomplete at PR creation, use `az repos pr create --auto-complete true`.
 - To update an existing PR to autocomplete, use `az repos pr update --id <PR Id> --auto-complete true`.
 
+::: moniker-end
+ 
+::: moniker range="<= azure-devops-2019"
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
+
+::: moniker-end
+
+
+***
+
+
+
 <a id="abandon-pr" />
 <a name="abandon-the-pr"></a>
-### Abandon a PR
+## Abandon a PR
+
+# [Browser](#tab/browser)
+To abandon your changes and your PR without merging, select **Abandon** from the dropdown list on the **Complete** button. You can still view the abandoned PR, and it stays linked to work items.
+
+To reactivate an abandoned PR at any time, open the PR from the **Abandoned** tab in the **Pull Request** view, and select **Reactivate** at upper right.
+
+# [Visual Studio](#tab/visual-studio)
+
+In the **Pull Requests** view in Visual Studio **Team Explorer**, right-click the PR and select **Open in browser** to open a PR in the web portal. On the **Overview** page, select **Abandon*.
+
+# [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range=">= azure-devops-2020"
 
 To abandon a PR without merging the changes, use `az repos pr update --id <PR Id> –-status abandoned`. You can reactivate the PR by setting the status to `active`.
 
