@@ -403,8 +403,10 @@ Set autocomplete to complete a PR automatically when it passes all required appr
 
 
 
-<a id="abandon-pr" />
+<a id="abandon-pr"></a>
+
 <a name="abandon-the-pr"></a>
+
 ## Abandon a PR
 
 # [Browser](#tab/browser)
@@ -414,7 +416,7 @@ To reactivate an abandoned PR at any time, open the PR from the **Abandoned** ta
 
 # [Visual Studio](#tab/visual-studio)
 
-In the **Pull Requests** view in Visual Studio **Team Explorer**, right-click the PR and select **Open in browser** to open a PR in the web portal. On the **Overview** page, select **Abandon*.
+In the **Pull Requests** view in Visual Studio **Team Explorer**, right-click the PR and select **Open in browser** to open a PR in the web portal. On the **Overview** page, select **Abandon**.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
