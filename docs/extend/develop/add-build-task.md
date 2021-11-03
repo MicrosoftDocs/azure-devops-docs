@@ -796,6 +796,10 @@ The pipeline agent sends SIGINT and SIGTERM signals to the relevant child proces
 
 We don't support the automatic deletion of tasks. Automatic deletion isn't safe and breaks existing pipelines that already use such tasks. But, you can mark tasks as deprecated. To do so, bump the task version as described [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/taskversionbumping.md) and follow steps described in [docs](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/deprecatedtasks.md).
 
+### How can I migrate task to Node 10?
+
+You can find guideline [here](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/migrateNode10.md).
+
 ## Related articles
 
 - [Extension manifest reference](./manifest.md)
