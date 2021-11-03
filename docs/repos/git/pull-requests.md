@@ -157,6 +157,7 @@ You can also create PRs from the **Branches** view in Team Explorer by right-cli
 
 <a id="create-pr" />
 
+::: moniker range=">= azure-devops-2020"
 To create a new PR in your project, use [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create). To open the PR in your browser after creation, use the `--open` parameter.
 
 ```azurecli
@@ -358,7 +359,7 @@ Edit the PR description by selecting the **Edit** icon in the **Description** se
 
 When you create a PR in Visual Studio, enter a title and detailed description of your changes so others can see what problems the changes solve. Keep these fields up to date so reviewers can understand the changes in the PR.
 
-To add reviewers, add tags, link work items, or change any details in an existing PR, open the PR in your browser. Right-click the PR from the **Pull Requests** view in Team Explorer, select **Open in browser**, and then make your updates on the PR's **Overview** page.
+To edit the title, description, or any other details in an existing PR, open the PR in your browser. Right-click the PR from the **Pull Requests** view in Team Explorer, select **Open in browser**, and then make your updates on the PR's **Overview** page.
 
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
@@ -368,7 +369,7 @@ To add reviewers, add tags, link work items, or change any details in an existin
 
 You can add details during PR creation with [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create), or update details in existing PRs with [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update).
 
-When you create a PR with `az repos pr create`, add a `title` and a detailed `description` of your changes so others can see what problems the changes solve. The `description` parameter accepts Markdown entry, and each value in the argument is a new line of the PR description.
+When you create a PR with `az repos pr create`, add a `--title` and a detailed `--description` of your changes so others can see what problems the changes solve. The `--description` parameter accepts Markdown entry, and each value in the argument is a new line of the PR description.
 
 For example:
 
@@ -376,7 +377,7 @@ For example:
 az repos pr create --repository Fabrikam --source-branch new --title "Update the readme" --description "This PR updates the readme." "These are *new* changes."
 ```
 
-Keep these fields up to date so reviewers can understand the changes in the PR. To update details of a PR, use `az repos pr update` with the required PR `id` parameter.
+Keep these fields up to date so reviewers can understand the changes in the PR. To update details of a PR, use `az repos pr update` with the required PR `--id` parameter.
 
 For example, to update the title and description for PR #21, use:
 
@@ -472,7 +473,7 @@ To add reviewers to your PR:
 ::: moniker-end
 # [Visual Studio](#tab/visual-studio)
 
-To add reviewers, open the PR in your browser. Right-click the PR from the **Pull Requests** view in Team Explorer, select **Open in browser**, and then make your updates on the PR's **Overview** page.
+To add reviewers, open the PR in your browser, and then make your updates on the PR's **Overview** page.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -585,7 +586,7 @@ Removing a link only removes the link between the work item and the PR. Links cr
 
 # [Visual Studio](#tab/visual-studio)
 
-To link work items, open the PR in your browser. Right-click the PR from the **Pull Requests** view in Team Explorer, select **Open in browser**, and then make your updates on the PR's **Overview** page.
+To link work items, open the PR in your browser, and then make your updates on the PR's **Overview** page.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
