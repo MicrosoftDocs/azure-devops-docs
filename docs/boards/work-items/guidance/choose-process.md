@@ -8,7 +8,7 @@ ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 06/04/2020
 ---
 
@@ -124,7 +124,7 @@ Choose the process that provides the best fit for your team.
    you can track requirements, change requests, risks, and reviews.
    
    
-   This process supports [formal change management activities](/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi?viewFallbackFrom=vsts).
+   This process supports [formal change management activities](./cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts).
    Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
    
    :::column-end:::

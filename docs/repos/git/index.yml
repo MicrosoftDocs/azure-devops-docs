@@ -46,7 +46,7 @@ landingContent:
           - text: Commit, share, and sync your code
             url: ./gitquickstart.md
           - text: Share your code with Visual Studio
-            url: ./share-your-code-in-git-vs-2017.md
+            url: ./share-your-code-in-git-vs.md
           - text: Update code with fetch and pull
             url: ./pulling.md
   - title: Work from different IDEs
@@ -55,8 +55,8 @@ landingContent:
         links:
           - text: New Git experience in Visual Studio 2019
             url: /visualstudio/version-control/git-with-visual-studio/
-          - text: Create repo - Visual Studio 2017
-            url: ./share-your-code-in-git-vs-2017.md
+          - text: Create repo - Visual Studio
+            url: ./share-your-code-in-git-vs.md
           - text: Create repo - IntelliJ
             url: ./create-repo-intellij.md
           - text: Create repo - Eclipse

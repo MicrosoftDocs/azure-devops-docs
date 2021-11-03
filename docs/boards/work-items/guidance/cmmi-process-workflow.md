@@ -8,7 +8,7 @@ ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 03/24/2021
 ---
 
@@ -398,7 +398,7 @@ When teams estimate work they define tasks and estimate the hours or days to com
    :::column-end:::
    :::column span="3":::
    
-   The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate [capacity charts](../../sprints/set-capacity.md), the [sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md), and the [Sprint Burndown](/azure/devops/report/sql-reports/sprint-burndown-scrum) report. 
+   The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate [capacity charts](../../sprints/set-capacity.md), the [sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md), and the [Sprint Burndown](../../../report/sql-reports/sprint-burndown-scrum.md) report. 
    If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.
 
    :::column-end:::

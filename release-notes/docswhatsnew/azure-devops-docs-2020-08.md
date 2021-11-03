@@ -154,7 +154,7 @@ The following people contributed to the Azure DevOps docs during this period. Th
 - [devlead](https://github.com/devlead) - Mattias Karlsson (1)
 - [erichmusick](https://github.com/erichmusick) - Erich Musick (1)
 - [FlorisDevreese](https://github.com/FlorisDevreese) - Floris Devreese (1)
-- [focusonmx](https://github.com/focusonmx) - Yujin Lee (1)
+- [focusonmx](https://github.com/yujinnee/focusonmx.github.io) - Yujin Lee (1)
 - [gamcmaho](https://github.com/gamcmaho) - Gary McMahon (1)
 - [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka (1)
 - [kim3278](https://github.com/kim3278) (1)

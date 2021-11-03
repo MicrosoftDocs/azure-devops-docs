@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 03/09/2021
+ms.date: 10/18/2021
 ---
 
 
@@ -118,13 +118,14 @@ You can use the following browsers to access the web portal:
 > [!div class="mx-tdCol2BreakAll"]
 > |Version                 | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome|
 > |--------------------------|-------------|-------------------|----------------|-------------|-------------|
-> |Azure DevOps Services<br/>Azure DevOps Server 2020<br/>Azure DevOps Server 2019<br/>TFS 2018<br/>TFS 2017  | Most recent | 11 and later | 9.1 and later  | Most recent | Most recent|
+> |Azure DevOps Services<br/>Azure DevOps Server 2020.1 | Most recent | Not supported |14.1 and later | Most recent | Most recent |
+> |Azure DevOps Server 2020<br/>Azure DevOps Server 2019<br/>TFS 2018<br/>TFS 2017  | Most recent | 11 and later | 14.1 and later  | Most recent | Most recent|
 > |TFS 2015                  | Most recent | 9 and later       | 5 and later    | Most recent | Most recent|
 > |TFS 2013                  |             | 9 and later       | 5 and later    | Most recent | Most recent|
 
 Microsoft Edge, Firefox, and Chrome automatically update themselves, so Azure DevOps supports the most recent version.
 
-To learn more, see [Web portal navigation](../project/navigation/index.md).
+For more information, see [Web portal navigation](../project/navigation/index.md).
 
 ### Browser-based extensions
 

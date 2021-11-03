@@ -425,39 +425,50 @@ By using jobs, you can control the order of deployment to multiple web apps.
 
 ```yaml
 jobs:
-
 - job: buildandtest
   pool:
-    vmImage: 'ubuntu-latest'
+    vmImage: ubuntu-latest
+ 
   steps:
   # publish an artifact called drop
-  - task: PublishBuildArtifacts@1
+  - task: PublishPipelineArtifact@1
     inputs:
+      targetPath: '$(Build.ArtifactStagingDirectory)' 
       artifactName: drop
-
+  
   # deploy to Azure Web App staging
   - task: AzureWebApp@1
     inputs:
-      azureSubscription: '<test stage Azure service connection>'
+      azureSubscription: '<Azure service connection>'
+      appType: <app type>
       appName: '<name of test stage web app>'
+      deployToSlotOrASE: true
+      resourceGroupName: <resource group name>
+      slotName: 'staging'
+      package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
 
 - job: deploy
-  pool:
-    vmImage: 'ubuntu-latest'
   dependsOn: buildandtest
   condition: succeeded()
-  steps:
 
-  # download the artifact drop from the previous job
-  - task: DownloadBuildArtifacts@0
-    inputs:
-      artifactName: drop
+  pool: 
+    vmImage: ubuntu-latest  
   
-  # deploy to Azure Web App production
+  steps:
+    # download the artifact drop from the previous job
+  - task: DownloadPipelineArtifact@2
+    inputs:
+      buildType: 'current'
+      artifactName: 'drop'
+      targetPath: '$(Pipeline.Workspace)'
+
   - task: AzureWebApp@1
     inputs:
-      azureSubscription: '<prod Azure service connection>'
-      appName: '<name of prod web app>'
+      azureSubscription: '<Azure service connection>'
+      appType: <app type>
+      appName: '<name of test stage web app>'
+      resourceGroupName: <resource group name>
+      package: '$(Pipeline.Workspace)/**/*.zip'
 ```
 
 ::: moniker-end

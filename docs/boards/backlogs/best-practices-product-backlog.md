@@ -8,7 +8,7 @@ ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
 ms.author: kaelli
 author: KathrynEE
 ms.topic: best-practice
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 10/08/2021
 ---
 
