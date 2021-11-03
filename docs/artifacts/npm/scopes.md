@@ -44,4 +44,4 @@ Scopes add another restriction when naming your packages: each package name must
 
 - [Use npm audit](./npm-audit.md)
 - [Publish npm packages (YAML/Classic)](../../pipelines/artifacts/npm.md)
-- [Use packages from npmjs.com](./upstream-source.md)
+- [Use packages from npmjs.com](./upstream-sources.md)
