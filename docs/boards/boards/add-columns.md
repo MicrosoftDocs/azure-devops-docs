@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 11/02/2021
+ms.date: 11/03/2021
 ---
 
 # Add columns to your Kanban board to manage your worklow
@@ -123,7 +123,7 @@ Choose **Correct this now** to open the **Settings** dialog.
 
 ::: moniker range=">= tfs-2017"
 
-In this example two new states have been added, **Triaged** for bug, and **Investigate** for user story. Each state needs to be mapped to an existing or new column in order for the Kanban board to display work items assigned to these states.  
+In this example, two new states are added, **Triaged** for bug, and **Investigate** for user story. Each state is then mapped to an existing or new column. Once mapped to a column, the Kanban board displays the work items assigned to these states.  
 
 <img src="media/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" />  
 ::: moniker-end
@@ -131,19 +131,19 @@ In this example two new states have been added, **Triaged** for bug, and **Inves
 ::: moniker range="tfs-2015"
 
 **TFS 2015.1**
-In this example two new states have been added, **Triaged** for bug, and **Investigate** for user story. Each state needs to be mapped to an existing or new column in order for the Kanban board to display work items assigned to these states.  
+In this example two new states are added, **Triaged** for bug, and **Investigate** for user story. Each state is mapped to an existing or new column. Once mapped, the Kanban board displays the work items assigned to these states.  
 
 <img src="media/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" />  
 
 **TFS 2015**
-In this example, bugs have been added to show on the Kanban board. You need to map the bug state for each column on the Kanban board.  
+In this example, bugs have been added to show on the Kanban board. Map the bug state for each column on the Kanban board.  
  
 ![Kanban column to State mappings with bugs ](media/ALM_AC_Update.png)
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
 
-In this example, bugs have been added to show on the Kanban board. You need to map the bug state for each column on the Kanban board.  
+In this example, bugs have been added to show on the Kanban board. Map the bug state for each column on the Kanban board.  
  
 ![Kanban column to State mappings with bugs ](media/ALM_AC_Update.png)
 
@@ -172,7 +172,7 @@ Our example development team came up with these stages as essential to their pro
 * **Backlog**: Prioritized list of work items that aren't yet ready to work on  
 * **Analyze**: Well understood and shared acceptance criteria identified and overall work required to develop and test item  
 * **Develop**: Code and run unit tests for the item  
-* **Test**: Perform exploratory, automated, integration, and other tests
+* **Test**: Do exploratory, automated, integration, and other tests
 * **Done**: Item ready to handoff to production.  
 
 You can always revisit these initial stages later and adjust. 
@@ -182,7 +182,7 @@ Another idea, capture the list of items your team identifies as critical-to-comp
 
 <a id="add-or-rename-columns"> </a>
 
-## Add, edit, rename, or remove columns,
+## Add, edit, rename, or remove columns
 
 Now that you've got the essentials of how to work with your Kanban board, here's how you get it to look like what you need it to.
 
@@ -306,7 +306,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
-1. the :::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false"::: gear icon, to open the common configuration settings dialog for the Kanban board. 
+1. Select The :::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false"::: gear icon, to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](../../boards/boards/media/kanban-card-customize-open-settings.png)  
 
@@ -350,11 +350,11 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	![Customize columns, add column](media/ALM_AC_CustomizeColumnsDetailed.png)  
 
-	Rename column titles to best reflect each stage of work. Keep the column titles as simple as possible. 
+	You can rename column titles to best reflect each stage of work. Keep the column titles as simple as possible. 
 
 9. To change the column order, use the left ← or right → arrow icons. 
 
-1. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, click X at the top of the column.</p>
+1. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select X at the top of the column.</p>
 
 11. [Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs).
 
@@ -380,7 +380,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	![Customize columns, add column](media/ALM_AC_CustomizeColumnsDetailed.png)  
 
-	Rename column titles to best reflect each stage of work. Keep the column titles as simple as possible. 
+	You can rename column titles to best reflect each stage of work. Keep the column titles as simple as possible. 
 
 3. To change the column order, use the left ← or right → arrow icons. 
 
@@ -422,7 +422,7 @@ And, team members receiving the handoff can [set alerts](../../notifications/man
 
 ### Change priorities
 
-To keep teams working on the highest priority items, you'll want to react quickly when a change in priority occurs even after work starts. With your Kanban board it's a snap. Simply drag an item up or down within a column.
+To keep teams working on the highest priority items, you'll want to react quickly when a change in priority occurs even after work starts. With your Kanban board, it's a snap. Simply drag an item up or down within a column.
 
 ![Kanban column, reorder within column ](media/ALM_AC_ChangePriorities.png)
 
@@ -452,7 +452,7 @@ As an item's card moves from one Kanban column to the next, the item's workflow 
 
 ![Kanban column to State mappings ](media/ALM_AC_State.png)
 
-Kanban columns may correspond to an actual workflow state or a pseudo state. For example, Develop, Test, and Verify columns may all map to the Active state. In this case, when you move an item from Develop to Test or from Test to Verify, the item's State doesn't change. 
+Kanban columns might correspond to an actual workflow state or a pseudo state. For example, Develop, Test, and Verify columns might all map to the Active state. So, when you move an item from Develop to Test or from Test to Verify, the item's State doesn't change. 
 
 ::: moniker-end
  
@@ -473,7 +473,7 @@ Kanban columns may correspond to an actual workflow state or a pseudo state. For
 
 ## Related articles
 
-That's about all you need to know about working with Kanban columns. Here are a few more options you have for customizing the look and feel of the board. 
+That's about all you need to know about working with Kanban columns. Here are a few more options for customizing the look and feel of the board. 
 
 - [Customize cards](customize-cards.md)  
 - [Expedite work with swimlanes](expedite-work.md)
