@@ -63,8 +63,10 @@ Let's take a look at the properties and what they're used for:
 | ------------- |:-------------|
 | `id` | Contribution identifier. Must be unique among contributions in this extension. |
 | `type` | Specifies that this contribution is a pipeline decorator. Must be the string `ms.azure-pipelines.pipeline-decorator`. |
-| `targets` | Decorators can run before your job, after, or both. See the table below for available options. |
-| `properties` | The only property required is a `template`. The template is a YAML file included in your extension, which defines the steps for your pipeline decorator. It's a relative path from the root of your extension folder. |
+| `targets` | Decorators can run before your job/specified task, after, or both. See the table below for available options. |
+| `properties.template` | (Required) The template is a YAML file included in your extension, which defines the steps for your pipeline decorator. It's a relative path from the root of your extension folder. |
+| `properties.targettask` | The target task id used for `ms.azure-pipelines-agent-job.pre-task-tasks` or `ms.azure-pipelines-agent-job.post-task-tasks` targets. Must be GUID string like `89b8ac58-8cb7-4479-a362-1baaacc6c7ad` |
+
 
 ### Targets
 
@@ -73,6 +75,10 @@ Let's take a look at the properties and what they're used for:
 | `ms.azure-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic build or YAML pipeline. Due to differences in how source code checkout happens, this target runs before checkout in a YAML pipeline but after checkout in a classic build pipeline. |
 | `ms.azure-pipelines-agent-job.post-checkout-tasks` | Run after the last `checkout` task in a classic build or YAML pipeline. |
 | `ms.azure-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic build or YAML pipeline. |
+| `ms.azure-pipelines-agent-job.pre-task-tasks` | Run before specified task in a classic build or YAML pipeline. |
+| `ms.azure-pipelines-agent-job.post-task-tasks` | Run after specified task in a classic build or YAML pipeline. |
+| `ms.azure-release-pipelines-agent-job.pre-task-tasks` | Run before specified task in a in a classic RM pipeline. |
+| `ms.azure-release-pipelines-agent-job.post-task-tasks` | Run after specified task in a in a classic RM pipeline. |
 | `ms.azure-release-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic RM pipeline. |
 | `ms.azure-release-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic RM pipeline. |
 
@@ -155,6 +161,34 @@ steps:
   - script: dir
     displayName: 'Run my script (injected from decorator)'
 ```
+
+## Specifying a target task
+You can specify target [task id](add-build-task.md#taskjson), and inject tasks before or after this target task.
+To specify target task you can modify vss-extension.json manifest file like below:
+
+#### vss-extension.json
+```json
+{
+    "contributions": [
+        {
+            "id": "my-required-task",
+            "type": "ms.azure-pipelines.pipeline-decorator",
+            "targets": [
+                "ms.azure-pipelines-agent-job.pre-task-tasks",
+                "ms.azure-pipelines-agent-job.post-task-tasks"
+            ],
+            "properties": {
+                "template": "my-decorator.yml",
+                "targettask": "target-task-id"
+            }
+        }
+    ],
+    ...
+}
+```
+
+By setting up of 'targettask' property you can specify id of a target task.
+Tasks will be injected before/after all instances of specified target task. 
 
 <!--## Limitations
 
