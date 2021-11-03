@@ -403,8 +403,6 @@ Set autocomplete to complete a PR automatically when it passes all required appr
 
 
 
-<a id="abandon-pr"></a>
-
 <a name="abandon-the-pr"></a>
 
 ## Abandon a PR
@@ -413,6 +411,8 @@ Set autocomplete to complete a PR automatically when it passes all required appr
 To abandon your changes and your PR without merging, select **Abandon** from the dropdown list on the **Complete** button. You can still view the abandoned PR, and it stays linked to work items.
 
 To reactivate an abandoned PR at any time, open the PR from the **Abandoned** tab in the **Pull Request** view, and select **Reactivate** at upper right.
+<a id="abandon-pr"></a>
+
 
 # [Visual Studio](#tab/visual-studio)
 
