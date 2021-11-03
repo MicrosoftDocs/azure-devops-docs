@@ -274,7 +274,6 @@ Draft PRs have the following differences from published PRs:
 
 ::: moniker-end
 
- 
 ::: moniker range="azure-devops-2019"
 > [!NOTE]
 > Creating draft PRs requires Azure DevOps Server 2019.1 update or later version.
@@ -361,11 +360,11 @@ When you create a PR in Visual Studio, enter a title and detailed description of
 
 To add reviewers, add tags, link work items, or change any details in an existing PR, open the PR in your browser. Right-click the PR from the **Pull Requests** view in Team Explorer, select **Open in browser**, and then make your updates on the PR's **Overview** page.
 
+
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range=">= azure-devops-2020"
 <a id="add-details-pr" /> 
-
 
 You can add details during PR creation with [az repos pr create](/cli/azure/repos/pr#az_repos_pr_create), or update details in existing PRs with [az repos pr update](/cli/azure/repos/pr#az_repos_pr_update).
 
@@ -385,8 +384,15 @@ For example, to update the title and description for PR #21, use:
 az repos pr update --id 21 --description "These updates are *no longer new*." --title "Old updates"
 ```
 
+::: moniker-end
+
+::: moniker range=">=azure-devops-2019"
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+::: moniker-end
+
 
 ***
+
 
 
 <a name="add-and-remove-reviewers"></a>
