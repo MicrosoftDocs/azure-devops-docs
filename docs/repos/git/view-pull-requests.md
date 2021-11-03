@@ -248,8 +248,8 @@ You can also type a string into the Search field to show matching results from t
 # [Visual Studio](#tab/visual-studio)
 
 From the Team Explorer **Pull Requests** view:
-- Select **Active**, or **Assigned to me or my team**, to filter the PR lists by PR status or assignment.
-- Type in the **Type here to filter the list** fields to filter the PR lists by date, author, branch, or other attributes.
+1. Select **Active**, or **Assigned to me or my team**, to filter the PR lists by PR status or assignment.
+1. Type in the **Type here to filter the list** fields to filter the PR lists by date, author, branch, or other attributes.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
