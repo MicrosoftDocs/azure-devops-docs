@@ -646,6 +646,7 @@ To add a tag when creating a PR, type a tag name in the **Tags** section. After 
 
 :::image type="content" source="media/pull-requests/pull-request-tags-section.png" alt-text="Screenshot that shows the P R Tags section highlighted.":::
 
+::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
