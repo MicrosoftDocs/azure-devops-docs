@@ -118,7 +118,7 @@ To view pre-upgrade reports
     > [!NOTE]
     >  If you are running Windows Server 2008 or Windows Vista, you might have trouble opening Web pages or sites from Team Explorer. For example, you might not be able to open the project portal by right-clicking a team project in Team Explorer and then clicking **Show Project Portal**. For more information about access issues that may occur with Windows Server 2008 or Windows Vista, see the following page on the Microsoft Web site: [User Account Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
   
-##  <a name="Viewing"></a>  
+<a name="Viewing"></a>
   
 ### To view a report from Team Explorer  
   

@@ -5,7 +5,7 @@ description: Builds, releases, and tests retention policies in Azure Pipelines
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
-ms.date: 06/28/2021
+ms.date: 11/02/2021
 ms.custom: contperf-fy21q1, contperf-fy21q2
 monikerRange: '>= tfs-2015'
 ---
@@ -94,9 +94,9 @@ Along with defining how many days to retain runs, you can also decide the minimu
 
 The setting for number of recent runs to keep for each pipeline requires a little more explanation. The interpretation of this setting varies based on the type of repository you build in your pipeline.
 
-- **Azure Repos:** Azure Pipelines always retains the configured number of latest runs for the default branch and for each protected branch of the repository. A branch that has any branch policies configured is considered to be a protected branch. As an example, consider a repository with the default branch called **main**. Also, let us assume that the **release** branch in this repository has a branch policy. In this case, if you configured the policy to retain 3 runs, then the latest 3 runs of main as well as the latest 3 runs of release branch are retained. In addition, the latest 3 runs of this pipeline (irrespective of the branch) are also retained. 
+- **Azure Repos:** Azure Pipelines always retains the configured number of latest runs for the default branch and for each protected branch of the repository. A branch that has any branch policies configured is considered to be a protected branch. As an example, consider a repository with the default branch called **main**. Also, let us assume that the **release** branch in this repository has a branch policy. In this case, if you configured the policy to retain three runs, then the latest three runs of main as well as the latest three runs of release branch are retained. In addition, the latest three runs of this pipeline (irrespective of the branch) are also retained. 
 
-    To clarify this logic further, let us say that the list of runs for this pipeline is as follows with the most recent run at the top. The table shows which runs will be retained if you have configured to retain the latest 3 runs (ignoring the effect of the number of days setting):
+    To clarify this logic further, let us say that the list of runs for this pipeline is as follows with the most recent run at the top. The table shows which runs will be retained if you have configured to retain the latest three runs (ignoring the effect of the number of days setting):
 
     | Run # | Branch | Retained / Not retained | Why? |
     |-------|--------|-------------------------|------|
@@ -496,6 +496,15 @@ If you believe that you have lost runs due to a bug in the service, create a sup
 ### How do I use the `Build.Cleanup` capability of agents?
 
 Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup jobs to be directed to just those agents, leaving the rest free to do regular work. When a pipeline run is deleted, artifacts stored outside of Azure DevOps are cleaned up through a job run on the agents. When the agent pool gets saturated with cleanup jobs, this can cause a problem. The solution to that is to designate a subset of agents in the pool that are the cleanup agents. If any agents have `Build.Cleanup` set, only those agents will run the cleanup jobs, leaving the rest of the agents free to continue running pipeline jobs.
+
+### What happens to file share Artifacts when the build is deleted 
+
+When a build with file share Artifacts is deleted, a new build task is queued on a build agent to clean up those files. An agent is picked to perform this task based on the following criteria:
+Is there an agent with `Build.Cleanup` capability available?
+Is the agent that ran the build available?
+Is an agent from the same pool available?
+Is an agent from a similar pool available?
+Is any agent available?
 
 ### Are automated test results that are published as part of a release retained until the release is deleted?
 

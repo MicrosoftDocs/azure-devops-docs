@@ -41,7 +41,6 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 ::: moniker-end
 
-
 ## Why configure your Kanban board columns?  
 
 The main reason to configure your team's Kanban board columns is to support your team's workflow and Kanban processes. These processes may include triaging work before committing to it, managing handoff from one team member to another&mdash;such as development to test&mdash;managing Work in Progress (WIP), and more. 
@@ -87,11 +86,10 @@ For example, if you add bugs or other work item types to appear on a Kanban boar
 * Your project admin [adds WITs to backlogs and boards](../../reference/add-wits-to-backlogs-and-boards.md)
 * Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [Inherited process](../../organizations/settings/work/customize-process-workflow.md) or [On-premises XML process](../../reference/xml/change-workflow-wit.md)  
 
-
 <a id="state-mappings" >   </a>
 <a id="when-to-update-the-kanban-column-to-state-mappings"></a>
 
-## What is State mapping?  
+## What is workflow state mapping?  
 
 One of the main configuration details you need to understand to correctly add columns to your Kanban board is how workflow states map to Kanban board column states. The Kanban board and other Azure Boards tools use categories to group WITs that they want to treat the same. Two types of categories are used.  
 
@@ -112,7 +110,7 @@ One of the main configuration details you need to understand to correctly add co
 > [!TIP]   
 > If a workflow state isn't mapped to a Kanban column, then that state doesn't show up on the Kanban board. This is allowed but not recommended.  
 
-### Correct your Kanban Board configuration
+### Correct your Kanban board configuration
 
 If you see the following error when you open your Kanban board, you need to correct the configuration. The main reason for this error is that the workflow states of work item types that have been added to the Requirements category aren't mapped to the column. 
 
@@ -136,14 +134,14 @@ In this example two new states are added, **Triaged** for bug, and **Investigate
 <img src="media/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" />  
 
 **TFS 2015**
-In this example, bugs have been added to show on the Kanban board. Map the bug state for each column on the Kanban board.  
+In this example, bugs have been added to show on the Kanban board. To manage the bugs, map the bug state for each column on the Kanban board.  
  
 ![Kanban column to State mappings with bugs ](media/ALM_AC_Update.png)
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
 
-In this example, bugs have been added to show on the Kanban board. Map the bug state for each column on the Kanban board.  
+In this example, bugs have been added to show on the Kanban board. To manage the bugs, map the bug state for each column on the Kanban board.  
  
 ![Kanban column to State mappings with bugs ](media/ALM_AC_Update.png)
 
@@ -152,13 +150,13 @@ In this example, bugs have been added to show on the Kanban board. Map the bug s
 
 <a id="map-the-flow-of-work">  </a>
 
-## Map the flow of work
+## Map your workflow stages
 
 It's best if you involve the entire team to identify an initial set of workflow stages. Each team member provides useful perspectives to capture and further deepen team understanding of the end-to-end processes.
 
 To get started, ask your team these questions: 
 
-- *What types of activities do we regularly perform?* 
+- *What types of activities do we regularly complete?* 
 - *What natural hand offs occur within our team? Or, from our team to other teams?* 
 - *What activities will help reinforce our team policies, such as analysis, code review, or design acceptance?*
 - *What work needs to occur at each stage?*  
@@ -172,7 +170,7 @@ Our example development team came up with these stages as essential to their pro
 * **Backlog**: Prioritized list of work items that aren't yet ready to work on  
 * **Analyze**: Well understood and shared acceptance criteria identified and overall work required to develop and test item  
 * **Develop**: Code and run unit tests for the item  
-* **Test**: Do exploratory, automated, integration, and other tests
+* **Test**: Run exploratory, automated, integration, and other tests
 * **Done**: Item ready to handoff to production.  
 
 You can always revisit these initial stages later and adjust. 
@@ -182,7 +180,7 @@ Another idea, capture the list of items your team identifies as critical-to-comp
 
 <a id="add-or-rename-columns"> </a>
 
-## Add, edit, rename, or remove columns
+## Manage columns on your Kanban board
 
 Now that you've got the essentials of how to work with your Kanban board, here's how you get it to look like what you need it to.
 
@@ -204,7 +202,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 3. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
-	Here, we rename the first, second, and third columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
+	Here, we rename the first three columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
 
 	You can rename a column directly from the Kanban board. 
 
@@ -284,7 +282,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 3. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
-	Here, we rename the first, second, and third columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
+	Here, we rename the first three columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
 
 	You can rename a column directly from the Kanban board. 
 
@@ -310,7 +308,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	![Kanban board, open common configuration settings](../../boards/boards/media/kanban-card-customize-open-settings.png)  
 
-	#### TFS 2015.1  
+	### TFS 2015.1  
 
 2. Choose **Columns** and then a column tab to see all the settings you can modify. Your initial column settings will look something like this. 
 
@@ -318,7 +316,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 3. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
-	Here, we rename the first, second, and third columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
+	Here, we rename the first three columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
 
 	You can rename a column directly from the Kanban board. 
 
@@ -340,13 +338,13 @@ You'll see different column titles and choices based on the [Process](../work-it
  
 7. When done with your changes, choose **Save**.  
 
-	#### TFS 2015  
+	### TFS 2015  
 
 8. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
 	![Kanban board, Customize columns, default columns, Agile process](media/ALM_AC_CustomizeColumns.png)  
 
-	Here, we rename the first, second, and third columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
+	Here, we rename the first three columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
 
 	![Customize columns, add column](media/ALM_AC_CustomizeColumnsDetailed.png)  
 
@@ -376,7 +374,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 2. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
-	Here, we rename the first, second, and third columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
+	Here, we rename the first three columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
 
 	![Customize columns, add column](media/ALM_AC_CustomizeColumnsDetailed.png)  
 
@@ -420,7 +418,7 @@ And, team members receiving the handoff can [set alerts](../../notifications/man
 
 <a id="change-priorities"> </a>
 
-### Change priorities
+### Change your team's priorities
 
 To keep teams working on the highest priority items, you'll want to react quickly when a change in priority occurs even after work starts. With your Kanban board, it's a snap. Simply drag an item up or down within a column.
 
@@ -444,11 +442,11 @@ But what if you want to list items based on their Kanban column assignment? Can 
 **For TFS 2013, TFS 2015:**
 What you can do is view the history of changes made to a work item. The [History field](../queries/history-and-auditing.md) captures all updates made to an item, including column moves. You can view history by opening the card (double-click to open). 
 
-For example, the following History shows two updates made by dragging the item into a different Kanban column. The first (revision 8) involved a column move, from Analyze to Develop; and a State change, New to Active. However, the second (revision 9) only involved a column move, from Develop to Test; the State remains at Active.
+The following History is an example that shows two updates made by dragging the item into a different Kanban column. The first (revision 8) involved a column move, from Analyze to Develop; and a State change, New to Active. However, the second (revision 9) only involved a column move, from Develop to Test; the State remains at Active.
  
 ![History field updates with Kanban column moves ](media/ALM_AC_History.png)
 
-As an item's card moves from one Kanban column to the next, the item's workflow state updates based on the Kanban column-to-State mapping. You can see and set these mappings from the Customize Columns dialog. For example, here's the default mapping for the Agile user story.
+As an item's card moves from one Kanban column to the next, the item's workflow state updates based on the Kanban column-to-State mapping. You can see and set these mappings from the Customize Columns dialog. Here's the default mapping for the Agile user story.
 
 ![Kanban column to State mappings ](media/ALM_AC_State.png)
 
@@ -476,7 +474,7 @@ Kanban columns might correspond to an actual workflow state or a pseudo state. F
 That's about all you need to know about working with Kanban columns. Here are a few more options for customizing the look and feel of the board. 
 
 - [Customize cards](customize-cards.md)  
-- [Expedite work with swimlanes](expedite-work.md)
+- [Accelerate work with swimlanes](expedite-work.md)
 - [Show bug on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 - [Enable live updates ](live-updates.md)
 

@@ -37,7 +37,7 @@ With Azure Pipelines, you can implement a CI/CD workflow to automatically genera
 ```
 https://github.com/spring-guides/gs-spring-boot-docker.git
 ```
-#### [JavaScript](#tab/java-script)
+#### [JavaScript](#tab/javascript)
 
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
