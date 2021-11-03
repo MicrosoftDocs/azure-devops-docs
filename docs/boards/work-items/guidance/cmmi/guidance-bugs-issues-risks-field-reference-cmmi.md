@@ -1,7 +1,7 @@
 ---
-title: Bugs, issues, & risks field reference (CMMI)
+title: Track bugs, issues, & risks in Azure Boards
 titleSuffix: Azure Boards
-description: Tracks the information with regards to bugs, issues, and risks  
+description: Learn how to track information about to bugs, issues, and risks in Azure Boards.
 ms.technology: devops-agile
 ms.assetid: 66d150ac-736f-4dde-8a2b-382c50d9e4f4
 ms.topic: conceptual
@@ -10,14 +10,14 @@ monikerRange: '<= azure-devops'
 ms.date: 01/20/2017
 ---
 
-# Bugs, issues, and risks field reference (CMMI)
+# Bugs, issues, and risks in Azure Boards
 
 [!INCLUDE [temp](../../../includes/version-all.md)]
 
 The following fields track information about bugs, issues, and risks. These work item types are defined within the process template for the [CMMI process](../cmmi-process.md).  
   
 ##  <a name="bugs"></a> Bug tracking fields  
- These fields are neither reported nor indexed.  
+ These fields are not reported or indexed.  
   
 > [!div class="mx-tdCol2BreakAll"]
 > |**Field name**|**Description**|**Data type**|  
@@ -29,7 +29,7 @@ The following fields track information about bugs, issues, and risks. These work
 > |**How Found**|How the bug was found. For example, a bug might have been found during a customer review or through ad hoc testing.<br/>Reference name=Microsoft.VSTS.CMMI.HowFound|String|  
   
 ##  <a name="issues"></a> Issue tracking fields  
- These fields are neither reported nor indexed.  
+ These fields are not reported or indexed.  
   
 |**Field name**|**Description**|**Data type**| 
 |--------------------|---------------------|-------------------------|  
@@ -39,7 +39,7 @@ The following fields track information about bugs, issues, and risks. These work
 |**Target Resolve Date**|The date when the issue becomes critical and starts to affect the critical path of the project plan.<br/>Reference name=Microsoft.VSTS.CMMI.TargetResolveDate|DateTime|  
   
 ##  <a name="risks"></a> Risk tracking fields  
- These fields are neither reported nor indexed.  
+ These fields are not reported or indexed.  
   
 |**Field name**|**Description**|**Data type**|  
 |--------------------|---------------------|-------------------|  
