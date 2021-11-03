@@ -24,11 +24,11 @@ With Azure Artifacts, you can publish and download both scoped and non-scoped pa
 
 ## Project setup
 
-To use an Azure Artifacts feed with a specific scope, we will need to setup our .npmrc file and then set up credentials to authenticate with our feed.
+To use an Azure Artifacts feed with a specific scope, we will need to set up our .npmrc file and then set up credentials to authenticate with our feed.
 
 [!INCLUDE [](../includes/npm/npmrc.md)]
 
-In your .npmrc file replace `registry=<YOUR_SOURCE_URL>` with `@SCOPE_NAME:registry=<YOUR_SOURCE_URL>`.
+In your .npmrc file, replace `registry=<YOUR_SOURCE_URL>` with `@SCOPE_NAME:registry=<YOUR_SOURCE_URL>`.
 
 > [!NOTE]
 > Make sure you add the scope and package names to your `package.json` file: `{ "name": "@SCOPE_NAME/PACKAGE_NAME" }`.
