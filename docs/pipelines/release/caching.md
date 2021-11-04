@@ -4,7 +4,7 @@ description: Improve pipeline performance by caching files, like dependencies, b
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
 ms.manager: adandree
-ms.date: 09/16/2021
+ms.date: 11/01/2021
 monikerRange: azure-devops
 ---
 
@@ -79,6 +79,7 @@ steps:
     key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -118,6 +119,7 @@ steps:
     key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -428,6 +430,7 @@ steps:
     key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 

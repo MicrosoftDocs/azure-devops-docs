@@ -17,7 +17,7 @@ Learn how to build and deploy Xcode projects with Azure Pipelines.
 
 ## Prerequisites
 
-* An Xcode 9+ project in a GitHub repository. If you do not have a project, see [Creating an Xcode Project for an App](https://developer.apple.com/documentation/xcode/creating-an-xcode-project-for-an-app.)
+* An Xcode 9+ project in a GitHub repository. If you do not have a project, see [Creating an Xcode Project for an App](https://developer.apple.com/documentation/xcode/creating-an-xcode-project-for-an-app)
 
 ## Create the pipeline
 
