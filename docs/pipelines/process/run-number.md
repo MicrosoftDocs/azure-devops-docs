@@ -143,13 +143,6 @@ steps:
 - script: echo $(Build.BuildNumber) #display Run Number
 ```
 
-::: moniker-end
-
-<!-- ENDSECTION -->
-::: moniker range=">=azure-devops-2020"
-
-## FAQ
-
 ### How can I set the build number dynamically with conditions?
 
 You can use variables as part of your run number. In this example, the variable `why` changes depending on the `Build.Reason` and is used as part of the run number. 
@@ -173,4 +166,9 @@ pool:
 steps:
 - script: echo '$(Build.BuildNumber)' ## output run number
 ```
+
 ::: moniker-end
+
+<!-- ENDSECTION -->
+
+
