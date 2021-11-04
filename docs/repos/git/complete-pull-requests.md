@@ -404,8 +404,9 @@ Set autocomplete to complete a PR automatically when it passes all required appr
 
 
 <a name="abandon-the-pr"></a>
+<a name="abandon-a-pr"></a>
 
-## Abandon a PR
+## Abandon a pull request
 
 # [Browser](#tab/browser)
 To abandon your changes and your PR without merging, select **Abandon** from the dropdown list on the **Complete** button. You can still view the abandoned PR, and it stays linked to work items.
@@ -462,7 +463,8 @@ File changes in your branch can conflict with changes in another branch. When it
 
 ![Screenshot that shows merge conflicts on the Overview tab of a P R.](./media/complete-pull-requests/merge-conflict.png)
 
-## Revert a completed PR
+<a name="revert-a-completed-pr"></a>
+## Revert a completed pull request
 
 To undo the changes from a PR, follow these steps. For more information, see [Undo changes](undo.md).
 
