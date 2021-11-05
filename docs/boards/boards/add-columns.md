@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 11/03/2021
 ---
 
-# Add columns to your Kanban board to manage your worklow
+# Add columns to your Kanban board to manage your workflow
 
 [!INCLUDE [temp](../includes/version-all.md)] 
 
