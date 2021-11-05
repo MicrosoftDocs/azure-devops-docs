@@ -16,7 +16,7 @@ ms.date: 11/04/2021
 
 [!INCLUDE [temp](../../includes/version-all.md)]
 
-[!INCLUDE [temp](../../includes/choose-process-introduction.md)]
+[!INCLUDE [temp](../../../includes/choose-process-introduction.md)]
 
 [!INCLUDE [temp](../../includes/note-configure-customize.md)]
 
