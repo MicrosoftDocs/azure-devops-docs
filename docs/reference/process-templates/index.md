@@ -15,9 +15,9 @@ ms.date: 11/04/2021
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
-[!INCLUDE [temp](../includes/choose-process-introduction.md)]
+[!INCLUDE [temp](../../includes/choose-process-introduction.md)]
 
-[!INCLUDE [temp](../includes/note-configure-customize.md)]
+[!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
  
 
 Process template customization is only supported for the [Hosted XML](../../organizations/settings/work/hosted-xml-process-model.md) and [On-premises XML](../on-premises-xml-process-model.md) process models.  

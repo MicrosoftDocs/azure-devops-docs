@@ -41,7 +41,7 @@ The second copy function is to copy a multi-selected list of work items to the c
 Use this article to learn how to:  
 
 >[!div class="checklist"]      
-> * Copy or clone a work item, essentially making a duplicate of a work item     
+> * Copy or clone a work item, essentially make a duplicate of a work item     
 > * Change the work item type, for example from a bug to a user story 
 > * Copy a list of work items to email or share with others  
 > * Copy the URL of a work item  
@@ -54,7 +54,7 @@ Use this article to learn how to:
 
 ## Copy or clone a work item   
 
-Clone a work item when you want to create another instance of it. This action opens a form with all fields filled out. Copy a work item when you want to create another instance of it and optionally change its work item type. This action opens a form with all fields filled out except for the Title. A related link to the original work item is created. Also any parent link is copied over. No history or attachments are copied over from the original work item.  
+Clone a work item when you want to create another instance of it. This action opens a form with all fields filled out. Copy a work item when you want to create another instance of it and optionally change its work item type. This action opens a form with all fields filled out except for the **Title**. A related link to the original work item is created. Also any parent link is copied over. No history or attachments are copied over from the original work item.  
 
 > [!NOTE]
 > It is possible that some fields are copied over depending on the on-premise version you are working with and how you have customized your work item types. If the work item type of the work item that you are cloning has no state transition rule that says to clear the *Closed By* field when the *State* is **New** or **Active**, then that field gets copied over. The current system out-of-box templates have this rule defined. It was added to TFS 2018 and later versions. 
@@ -152,11 +152,16 @@ Clone a work item when you want to create another instance of it. This action op
 2. Choose the project (if copying to another project) and work item type if different from the copied work item. Optionally change the Title and provide more details. The copied work item is automatically linked to the original work item through a Related link type.  
 ::: moniker-end
 
+> [!TIP]    
+> Copied or cloned work items always have an ID that is greater than the work items from which they were copied or cloned.   
+
+
 ::: moniker range=">= azure-devops-2019"
 
 ## Change the work item type  
 
-If you have a large number of work items whose type you want to change, use [Change work item type](../../reference/add-modify-wit.md). If Change work item type isn't available to you, you can export a set of work items using Excel, copy them to a new Excel list, and reimport them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
+If you have a large number of work items whose type you want to change, use [Change work item type](move-change-typemd). If Change work item type isn't available to you, you can export a set of work items using Excel, copy them to a new Excel list, and re-import them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
+
 ::: moniker-end
 
 <a id="html"></a>
@@ -244,8 +249,8 @@ In Visual Studio, right-click the work item tab to copy the URL. The URL opens t
 
 ## Related articles
 
--  [Azure Boards FAQs](../faqs.yml) 
 - [Bulk modify work items](bulk-modify-work-items.md)   
-- [Move, change, or delete work items](remove-delete-work-items.md)  
+- [Move work items and change the work item type](move-change-type.md)
+- [Remove, delete, or restore work items](remove-delete-work-items.md)  
 - [Pre-populate fields using work item templates](work-item-template.md)
-
+- [Azure Boards FAQs](../faqs.yml) 
