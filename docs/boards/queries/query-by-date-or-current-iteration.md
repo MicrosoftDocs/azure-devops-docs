@@ -391,6 +391,7 @@ To list newly created work items added to a sprint after it's start date, you ca
 For other options for querying changes to sprint scope, see [About Sprints, Scrum and project management, Sprint scope change](../sprints/scrum-overview.md#sprint-scope-change).
 
 <a id="date_fields">  </a>
+<a id="fields" />
 
 ## Date and Iteration Path fields
 
@@ -408,6 +409,7 @@ You can use date fields to filter your queries. Some of these fields are populat
       **Work item types**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Activated Date (Notes 1, and 2)
