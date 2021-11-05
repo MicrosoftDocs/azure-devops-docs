@@ -11,4 +11,4 @@ To configure a CI build pipeline for your app, the source code needs to be in a 
 
 For a simple way to follow this quickstart, set up a dotnet sample app and put it into your own version control repository:
 
-[!INCLUDE [include](../includes/dotnet-setup.md)]
+[!INCLUDE [include](../../../includes/dotnet-setup.md)]

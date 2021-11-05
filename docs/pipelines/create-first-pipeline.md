@@ -54,8 +54,7 @@ Learn more about [working with Java](ecosystems/java.md) in your pipeline.
 
 #### [.NET](#tab/net)
 
-[!INCLUDE [include](../includes/dotnet-setup.md)]
-
+[!INCLUDE [include](includes/dotnet-setup.md)]
 
 ### Create your first .NET Core pipeline
 
