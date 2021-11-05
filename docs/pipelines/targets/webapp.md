@@ -84,11 +84,7 @@ az webapp create -g myapppipeline-rg -p myapp-service-plan -n my-app-dotnet-win 
 
 ::: moniker range="azure-devops"
 
-To get started, fork the following repository into your GitHub account.
-
-```
-https://github.com/MicrosoftDocs/pipelines-dotnet-core
-```
+[!INCLUDE [include](../includes/dotnet-setup.md)]
 
 ### Create your pipeline
 
