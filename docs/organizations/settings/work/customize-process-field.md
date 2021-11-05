@@ -20,7 +20,7 @@ You can add a custom field to support tracking additional data requirements or m
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
-For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [View all fields defined for an organization or collection](view-fields.md). 
+For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [View work item fields and attributes](../../../boards/work-items/work-item-fields.md#review-fields). 
 
 Once you've added a custom field, you can create [queries](../../../boards/queries/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track data related to it.  
 

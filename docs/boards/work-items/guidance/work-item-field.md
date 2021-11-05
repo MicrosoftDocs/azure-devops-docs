@@ -255,7 +255,7 @@ The following articles describe fields that are used in common by several WITs, 
 
 - [Titles, IDs, and descriptive fields](../../queries/titles-ids-descriptions.md)
 - [History and revision changes](../../queries/history-and-auditing.md#fields)
-- [Areas and iterations](../../../organizations/settings/set-area-paths.md#fields)
+- [Areas and iterations](../../queries/query-by-area-iteration-path.md#fields)
 - [Assignments and account-specific fields](../../queries/query-by-workflow-changes.md#fields)
 - [Planning, ranking, and priorities](../../queries/planning-ranking-priorities.md#fields)
 - [Work estimates, activity, and other numeric fields](../../queries/query-numeric.md#fields)
