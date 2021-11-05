@@ -253,7 +253,7 @@ The following articles describe fields that are used in common by several WITs, 
 
 ### Fields common to many work types
 
-- [Titles, IDs, and descriptive fields](../../queries/titles-ids-descriptions.md#fields)
+- [Titles, IDs, and descriptive fields](../../queries/titles-ids-descriptions.md)
 - [History and revision changes](../../queries/history-and-auditing.md#fields)
 - [Areas and iterations](../../../organizations/settings/set-area-paths.md#fields)
 - [Assignments and account-specific fields](../../queries/query-by-workflow-changes.md#fields)
