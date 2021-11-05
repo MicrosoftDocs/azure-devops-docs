@@ -334,7 +334,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Review fields</b></p>
-<p>You can <a href="../organizations/settings/work/review-fields.md#review-fields" data-raw-source="[review the list of fields](../organizations/settings/work/review-fields.md#review-fields)">review the list of fields</a> defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see <a href="../boards/work-items/guidance/work-item-field.md" data-raw-source="[Work item field index](../boards/work-items/guidance/work-item-field.md)">Work item field index</a>. </p>
+<p>You can <a href="../boards/work-items/work-item-fields.md#review-fields" data-raw-source="[review the list of fields](../boards/work-items/work-item-fields.md#review-fields)">review the list of fields</a> defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see <a href="../boards/work-items/guidance/work-item-field.md" data-raw-source="[Work item field index](../boards/work-items/guidance/work-item-field.md)">Work item field index</a>. </p>
 
 <p><b>Delete a field from the collection</b></p>
 <p>You can <a href="../organizations/settings/work/customize-process-field.md#delete-field" data-raw-source="[delete a custom field](../organizations/settings/work/customize-process-field.md#delete-field)">delete a custom field</a> if you find it&#39;s no longer required. </p>

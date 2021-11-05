@@ -20,20 +20,20 @@ ms.date: 11/04/2021
 ::: moniker range="azure-devops"
 Work item fields are used to track information. Fields are defined for an organization and shared across all projects defined for that organization. You can use one of two tools to review the fields defined for the organization. These tools are available for both Inherited and Hosted XML process models.  
 
-- [Process>Fields web page](review-fields) 
-- [Work Item Field Explorer](wi-explorer)  
+- [Process>Fields web page](#review-fields) 
+- [Work Item Field Explorer](#wi-explorer)  
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 Work item fields are used to track information. Fields are defined for a collection and shared across all projects defined for that collection. You can use one of two tools to review the fields defined for the Collection. 
 
-- [Process>Fields web page](review-fields): Available for Inherited process model 
-- [Work Item Field Explorer](wi-explorer): Available for Inherited and On-premises XML process models.  
+- [Process>Fields web page](#review-fields): Available for Inherited process model 
+- [Work Item Field Explorer](#wi-explorer): Available for Inherited and On-premises XML process models.  
 ::: moniker-end
 
 
 ::: moniker range="< azure-devops-2019"
-Work item fields are used to track information. Fields are defined for a collection and shared across all projects defined for that collection. To view all fields defined for a collection, you can use the [Work Item Field Explorer](wi-explorer) tool, a plug-in to Visual Studio.   
+Work item fields are used to track information. Fields are defined for a collection and shared across all projects defined for that collection. To view all fields defined for a collection, you can use the [Work Item Field Explorer](#wi-explorer) tool, a plug-in to Visual Studio.   
 ::: moniker-end
 
 
@@ -50,7 +50,7 @@ Work item fields are used to track information. Fields are defined for a collect
 
 ### List or review fields  
 
-To list or review fields, you can use one of the following tools, depending on the process model&mdash;Inheritance, Hosted XML, or On-premises XML&mdash;you use. For an index of fields defined within the default processes, see [Work item field index](../boards/work-items/guidance/work-item-field.md).  
+To list or review fields, you can use one of the following tools, depending on the process model&mdash;Inheritance, Hosted XML, or On-premises XML&mdash;you use. For an index of fields defined within the default processes, see [Work item field index](guidance/work-item-field.md).  
 
 | Tool | Inheritance | Hosted XML | On-premises XML |
 | --- | --- | --- | --- |
@@ -147,7 +147,7 @@ You can look up the data type through the [Work item field index](guidance/work-
 
 ::: moniker-end
 
-<a id="review-fields"></a>
+<a id="review-fields" />
 
 [!INCLUDE [temp](../../organizations/settings/includes/open-process-admin-context-ts.md)]
 
@@ -159,7 +159,7 @@ To review the list of fields defined for all processes and the WITs that referen
 
 Fields listed correspond to all fields defined for the organization. This includes all custom fields and those defined for system processes. 
 
-For descriptions and usage of each field, as well as the Reference name for each field, you can look it up from the [Work item field index](../../../boards/work-items/guidance/work-item-field.md). You can also get the Reference name of fields from the [Work Item Types Field - List REST API](/rest/api/azure/devops/wit/work-item-types-field/list).
+For descriptions and usage of each field, as well as the Reference name for each field, you can look it up from the [Work item field index](guidance/work-item-field.md). You can also get the Reference name of fields from the [Work Item Types Field - List REST API](/rest/api/azure/devops/wit/work-item-types-field/list).
 
 > [!div class="mx-imgBorder"]  
 > ![Make a copy of a selected inherited process](media/process/list-fields.png) 
@@ -167,7 +167,7 @@ For descriptions and usage of each field, as well as the Reference name for each
 ::: moniker-end
 
 
-<a id="wi-explorer">  </a>
+<a id="wi-explorer" />
 
 ## Work Item Field Explorer 
 
@@ -180,9 +180,7 @@ To access the Work Item Field Explorer, you must install the Process Editor Tool
 
 [!INCLUDE [temp](../../includes/process-editor-tool.md)]
 
-
-
-
+ 
 <a id="field-attributes" />
 
 ## Field attributes
@@ -782,21 +780,6 @@ The **Use** parameter indicates the name of each project and the work item type 
 
 ::: moniker-end
 
-
-<a id="wi-explorer">  </a>
-
-## Work Item Field Explorer 
-
-You can look up the assignments of field attributes using the Work Item Field Explorer tool.  
-
-![Work item field explorer](media/fields/work-item-field-explorer.png)
-
-
-To access the Work Item Field Explorer, you must install the Process Editor Tool. Based on the version of Visual Studio you have installed, get the Process Editor Tool from one of the following extensions. 
-
-[!INCLUDE [temp](../../includes/process-editor-tool.md)]
-
- 
 
 ::: moniker range="<= tfs-2018"  
 
