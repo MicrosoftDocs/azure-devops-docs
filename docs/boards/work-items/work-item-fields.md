@@ -123,7 +123,7 @@ When you add a custom field to an inherited process, Azure DevOps assigns a refe
 
 ::: moniker range="azure-devops"
 
-You can view the data type of fields defined for your organization by [opening the Process>Fields page](../../organizations/settings/work/review-fields.md#review-fields).
+You can view the data type of fields defined for your organization by [opening the Process>Fields page](../work-items/work-item-fields.md#review-fields).
 
 > [!div class="mx-imgBorder"]  
 > ![Process>Fields page](../../organizations/settings/work/media/process/list-fields.png)  
@@ -132,7 +132,7 @@ You can view the data type of fields defined for your organization by [opening t
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-When your project collection uses the Inheritance process model to customize work tracking, you can view the data type of fields by [opening the Process>Fields page](../../organizations/settings/work/review-fields.md#review-fields). 
+When your project collection uses the Inheritance process model to customize work tracking, you can view the data type of fields by [opening the Process>Fields page](../work-items/work-item-fields.md#review-fields). 
 
 > [!div class="mx-imgBorder"]  
 > ![Process>Fields page](../../organizations/settings/work/media/process/list-fields.png)  
