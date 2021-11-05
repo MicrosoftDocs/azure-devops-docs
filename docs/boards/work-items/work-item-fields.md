@@ -149,7 +149,7 @@ You can look up the data type through the [Work item field index](guidance/work-
 
 <a id="review-fields"></a>
 
-[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../../organizations/settings/includes/open-process-admin-context-ts.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
