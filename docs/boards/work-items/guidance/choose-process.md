@@ -9,16 +9,14 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 06/04/2020
+ms.date: 11/04/2021
 ---
 
 # Choose a process 
 
 [!INCLUDE [temp](../../includes/version-all.md)]
 
-Anytime you create a project, you must choose a process or process template based on the process model you use. 
-- A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for Azure Boards. This model supports customization of projects through a WYSIWYG user interface. 
-- A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through Azure Boards or an on-premises Azure DevOps Server or Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models which support customization of projects through the modification and import of XML definition files. 
+[!INCLUDE [temp](../../includes/choose-process-introduction.md)]
 
 [!INCLUDE [temp](../../includes/note-configure-customize.md)]
 
