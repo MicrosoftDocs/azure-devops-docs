@@ -26,6 +26,7 @@ You can use the code review and feedback fields to create queries and reports th
 ::: moniker-end
 
 <a name="codereviews"></a> 
+<a id="fields" />
 
 ## Fields used to track code reviews  
 
@@ -53,7 +54,8 @@ You can use the code review and feedback fields to create queries and reports th
 
 <a name="feedback"></a> 
 
-## Fields used to track feedback  
+## Fields used to track feedback 
+ 
  The following fields track feedback requests and responses. You complete the first three fields in the feedback request form. A feedback response is created for each person and for each item for which feedback is provided. See [Get feedback](../../../project/feedback/get-feedback.md).  
   
 |**Field name**|**Description**|**Data type**|  

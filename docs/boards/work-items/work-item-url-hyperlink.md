@@ -5,6 +5,7 @@ description: Construct a URL for a work item for Azure Boards, Azure DevOps & TF
 ms.custom: work-items, seodec18
 ms.technology: devops-agile   
 ms.author: kaelli
+author: KathrynEE 
 ms.topic: conceptual
 monikerRange: '<= azure-devops'   
 ms.date: 07/09/2020
