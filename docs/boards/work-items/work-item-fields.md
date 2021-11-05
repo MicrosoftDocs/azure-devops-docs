@@ -73,11 +73,11 @@ For a description of each field attribute and how you can list them, see [Field 
 
 ### What is a field? How are field names used?  
 
-Each [work item type](../boards/backlogs/add-work-items.md) is associated with 31 system fields and several more type-specific fields. You use work items to plan and track your project.  
+Each [work item type](../backlogs/add-work-items.md) is associated with 31 system fields and several more type-specific fields. You use work items to plan and track your project.  
 
 Each field supports tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store which you can create queries to determine status and trends.    
 
-For descriptions and usage of each field defined for the core system processes&mdash;[Scrum, Agile, and CMMI system processes](../boards/work-items/guidance/choose-process.md)&mdash;see [Work item field index](../boards/work-items/guidance/work-item-field.md).  
+For descriptions and usage of each field defined for the core system processes&mdash;[Agile, Basic, Scrum, and CMMI processes](guidance/choose-process.md)&mdash;see [Work item field index](guidance/work-item-field.md).  
 
 ### Field names  
 
@@ -139,7 +139,7 @@ You can view the data type of fields defined for your organization by [opening t
 When your project collection uses the Inheritance process model to customize work tracking, you can view the data type of fields by [opening the Process>Fields page](../work-items/work-item-fields.md#review-fields). 
 
 > [!div class="mx-imgBorder"]  
-> ![Process>Fields page](../../organizations/settings/work/media/process/list-fields.png)  
+> ![Process>Fields page](media/fields/list-fields.png)  
 
 If the On-premises XML process model is used, you can look up the data type through the [Work item field index](guidance/work-item-field.md). Or, you can open the Work Item Field Explorer to review the fields defined and their attribute assignments, or use the **witadmin listfields** command to list the field attributes. For details, see [Work Item Field Explorer](#wi-explorer) and [List field attributes](#list-attributes) later in this article.
 
@@ -177,7 +177,7 @@ To review the list of fields defined for an organization or collection, open **O
 	Fields listed correspond to all fields defined for the organization or collection. This includes all custom fields and those defined for system processes. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Make a copy of a selected inherited process](media/process/list-fields.png) 
+	> ![Make a copy of a selected inherited process](media/fields/list-fields.png) 
 
 	> [!NOTE]  
 	> If you don't see **Fields**, then you're collection uses the On-premises XML process. The Fields page isn't supported for that process.  
