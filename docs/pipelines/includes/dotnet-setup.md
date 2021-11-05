@@ -11,13 +11,13 @@ ms.date: 11/05/2021
 
 If you don't have a .NET project to work with, create a new one, and upload your code to your GitHub repository or Azure Repos. 
 
-### [.NET 5.0](#tab/net50)
+# [.NET 5.0](#tab/net50)
 
 <a href="https://dotnet.microsoft.com/download/dotnet/5.0" target="_blank">
     Install the latest .NET 5.0 SDK.
 </a>
 
-### [.NET Framework 4.8](#tab/netframework48)
+# [.NET Framework 4.8](#tab/netframework48)
 
 <a href="https://dotnet.microsoft.com/download/dotnet-framework/net48" target="_blank">
     Install the .NET Framework 4.8 Developer Pack.
@@ -27,7 +27,7 @@ If you don't have a .NET project to work with, create a new one, and upload your
 > Visual Studio Code is cross-platform, however; .NET Framework is not. If you're developing .NET Framework apps with Visual Studio Code, consider using a Windows machine to satisfy the build dependencies.
 
 
-### [.NET 5.0](#tab/net50)
+# [.NET 5.0](#tab/net50)
 
 ```dotnetcli
 dotnet new webapp -f net5.0
@@ -39,7 +39,7 @@ From the same terminal session, run the application locally using the [`dotnet r
 dotnet run
 ```
 
-### [.NET Framework 4.8](#tab/netframework48)
+# [.NET Framework 4.8](#tab/netframework48)
 
 ```dotnetcli
 dotnet new webapp --target-framework-override net48
