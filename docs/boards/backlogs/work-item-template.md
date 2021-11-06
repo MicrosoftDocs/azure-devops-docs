@@ -1,7 +1,7 @@
 ---
-title: Use work item templates to update work items in Azure Boards
+title: Use Azure DevOps work item templates to update work items in Azure Boards
 titleSuffix: Azure Boards   
-description: Learn how to add and manage work item templates. Learn how to pre-populate fields in work item forms in Azure DevOps and Visual Studio. 
+description: Learn how to add and manage Azure DevOps work item templates to update work items in Azure Boards. Learn to pre-populate work item form fields in Azure DevOps and Visual Studio. 
 ms.technology: devops-agile
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.author: kaelli
@@ -9,7 +9,7 @@ author: KathrynEE
 ms.topic: how-to
 ms.custom: "work-items, contperf-fy21q3"  
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 10/29/2021
 ---
 
 # Use templates to add and update work items in Azure Boards and Visual Studio
@@ -18,7 +18,7 @@ ms.date: 10/08/2021
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?LinkId=824070 -->
 
-With work item templates, you can quickly create work items that have pre-populated values for your team's commonly used fields. For example, you can create a template that defines the area path, iteration path, and activity to use when creating a task. 
+With work item templates, you can quickly create work items that have pre-populated values for your team's commonly used fields. For example, create a template that defines the area path, iteration path, and activity to use when creating a task. 
 
 You can use work item templates to create work items or bulk update several work items. For examples that show usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md). 
 
@@ -27,7 +27,7 @@ You can use work item templates to create work items or bulk update several work
 
 ## Supported template tasks   
 
-The availability of template task options depends on the client and platform version available to you. You can add and manage work item templates from the web portal or from Visual Studio 2015 or earlier versions. Visual Studio 2015 and earlier versions support working with templates by installing the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer.  
+The availability of template task options depends on the client and platform version available to you. Add and manage work item templates from the web portal or from Visual Studio 2015 or earlier versions. Visual Studio 2015 and earlier versions support working with templates by installing the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer.  
 
 As shown in the following table, a ✔️ indicates the task is available from the web portal or from Visual Studio 2015 or earlier versions. *(Make sure that you've selected the content version based on your platform version)*. 
 
@@ -165,7 +165,7 @@ As shown in the following table, a ✔️ indicates the task is available from t
 - To apply a team template, you must be a Contributor of the project and a member of the team under which the work item template is defined.   
 ::: moniker-end
 
-- To add, capture, or edit work item templates through Visual Studio Team Explorer, you must install the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer. 
+- To add, capture, or edit work item templates through Visual Studio Team Explorer, install the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer. 
 
 
 
@@ -267,9 +267,9 @@ If you connect to an on-premises TFS and primarily create work items working in 
 
 <a id="team-explorer-capture" />
 
-If you primarily work in Visual Studio or Team Explorer, and want to create work items from templates that you can access from the Work Items page, you can create work item template files (extension .wt).
+If you primarily work in Visual Studio or Team Explorer, and want to create work items from templates that you access from the Work Items page, you can create work item template files (extension .wt).
  
-1. If you haven't yet installed [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power), do that now. You need this installed to access the Work Item Templates power tool for Visual Studio.  
+1. If you haven't yet installed [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power), do that now. You need this software installed to access the Work Item Templates power tool for Visual Studio.  
 
 1.  Open or run a query that lists the work item whose fields you want to capture.
 

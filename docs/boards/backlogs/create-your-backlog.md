@@ -9,10 +9,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 10/28/2021
 ---
 
-# Create your product backlog 
+# Create your Azure Boards product backlog 
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -24,7 +24,7 @@ Your product backlog corresponds to your project plan, the roadmap for what your
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of a Backlog of Scrum process product backlog items.](media/create-backlog/intro-image.png)
 
-After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team. And, you can [interactively filter the backlog](filter-backlogs-boards-plans.md) to focus on a subset of work items.  
+After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of the information you need to track and share with your team. And, you can [interactively filter the backlog](filter-backlogs-boards-plans.md) to focus on a subset of work items.  
 
 [!INCLUDE [temp](../includes/note-configure-customize.md)]
 
@@ -38,9 +38,15 @@ and more. Because the most important work appears at the top of the list, your t
 
 ## Add a backlog
 
-If you have a project, you have a backlog. Each project defines a default team and set of backlogs for that team. You only need to add a backlog when you want to support a new team. When you add a team, you add a number of team assets. A team admin can configure the assets to support the way the team works. To add a set of backlogs to support a new team, see [Add a team](../../organizations/settings/add-teams.md). 
+If you have a project, you have a backlog. Each project defines a default team and set of backlogs for that team. You only need to add a backlog when you want to support a new team. When you add a team, you add various team assets. A team admin can configure the assets to support the way the team works. To add a set of backlogs to support a new team, see [Add a team](../../organizations/settings/add-teams.md). 
 
-Each team's set of backlogs are associated with one or more work item types depending on the process selected when the project was created, team configurations, and process customizations. The backlogs defined for each default process are:
+Each team's set of backlogs are associated with one or more work item types. The work item type associated with a backlog depends on the:
+
+* Process selected at project creation
+* Team configurations
+* Process customizations 
+
+The backlogs defined for each default process are:
 
 ::: moniker range=">= azure-devops-2019" 
 - [**Agile**](../work-items/guidance/agile-process.md): **Stories**, **Features**, and **Epics**
@@ -63,7 +69,7 @@ You choose the backlog level from the backlog selector as shown in the following
 
 ::: moniker range=">= azure-devops-2019" 
 
-To customize your backlogs to add custom work item types, add portfolio backlogs, or other supported options, see the following articles, depending on the process your project uses: 
+To customize your backlogs with custom work item types, add portfolio backlogs or other supported options. See the following articles, depending on the process your project uses: 
 - [Inherited process model](../../organizations/settings/work/inheritance-process-model.md)
 - [On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end 
@@ -216,7 +222,7 @@ Repeat this step until you capture all your main ideas.
 
 ## Reorder your backlog
 
-After you have some items in your backlog, you can reorder them to create a prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next. 
+After you have some items in your backlog, reorder them to create a prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next. 
 
 > [!TIP]  
 > You can't sort your backlog on a column. To view a sorted listed, select **Create query**. Save and open the query, and then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
@@ -238,7 +244,7 @@ Backlogs that participate in portfolio management or that contain nested same-ty
 
 ## Add details and estimates to backlog items
 
-Building and prioritizing your backlog provides you with a high-level roadmap. Before your team can start work on any item, however, they need more details. You capture these details within the work item form.
+Building and prioritizing your backlog provides a high-level roadmap. Before your team can start work on any item, however, they need more details. Capture the details within the work item form.
 
 To open each item, double-click or press Enter. Then add all the information you want to track.  Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the :::image type="icon" source="../media/icons/icon-attachments-tab-wi.png" border="false"::: **Attachments** tab and drag-and-drop a file to share the file with others.  
 
