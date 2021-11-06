@@ -18286,6 +18286,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/repos/git/multiple-merge-bases.md",
+      "redirect_url": "/azure/devops/repos/git/merging-with-squash#multiple-merge-bases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/pull-requests.md#multiple-merge-bases-issue",
+      "redirect_url": "/azure/devops/repos/git/merging-with-squash#multiple-merge-bases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/about-pull-requests.md#multiple-merge-bases",
+      "redirect_url": "/azure/devops/repos/git/merging-with-squash#multiple-merge-bases",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/repos/git/share-your-code-in-git-vs-2017.md",
       "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs",
       "redirect_document_id": false
