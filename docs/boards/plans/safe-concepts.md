@@ -16,8 +16,6 @@ ms.date: 10/20/2021
 
 [!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
-<!--- Intro To be provided --> 
-
 If you're interested in using Scaled Agile Framework (SAFe®), you can configure your Azure Boards project to track SAFe® deliverables. Just as Azure Boards supports Scrum and Agile practices, it can support SAFe® and large numbers of teams to work together on Epics that span releases. 
 
 This tutorial illustrates how the following SAFe® artifacts map to specific Azure Boards artifacts. 
