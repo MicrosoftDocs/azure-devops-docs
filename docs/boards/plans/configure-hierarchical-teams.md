@@ -10,7 +10,7 @@ monikerRange: '<= azure-devops'
 ms.date: 10/20/2021
 ---
 
-# Configure a hierarchical team
+# Configure a hierarchy of teams
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
