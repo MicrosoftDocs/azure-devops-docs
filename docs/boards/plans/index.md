@@ -49,7 +49,7 @@ To learn more, see [Review delivery plans](review-team-plans.md).
 
 ## Team dashboards
 
-Each team can construct many dashboards to track and monitor their progress. Also, portfolio managers can create dashboards to monitor progress across several teams. 
+Each team can construct several dashboards to track and monitor their progress. Also, portfolio managers can create dashboards to monitor progress across several teams. 
 
 To learn more, see [Add and manage dashboards](../../report/dashboards/dashboards.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json). 
 
