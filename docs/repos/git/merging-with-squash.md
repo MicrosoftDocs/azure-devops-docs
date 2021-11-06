@@ -9,13 +9,13 @@ ms.date: 11/05/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Merge strategies and squash merge
+# Squash merge and multiple merge bases
 
 [!INCLUDE [temp](../includes/version-tfs-2017-cloud.md)]
 
 When you complete a [pull request](pull-requests.md), you merge the topic branch into your default branch, usually `main`. This merge adds the commits of the topic branch to your main branch and creates a merge commit to reconcile any conflicts between the default and topic branch. The comments and discussion in the pull request give additional context for the changes made in the topic branch.
 
-![Example of a regular merge from a pull request.](media/regular_branch_merge.png)
+![Example of a regular merge from a pull request.](media/merging-with-squash/regular-branch-merge.png)
 
 The [commit](commits.md) history on your `main` branch (or other default branch) doesn't follow a straight line, because of the related topic branch history. As a project grows larger, the number of topic branches worked on at the same time increases, making the default branch history increasingly harder to follow.
 
@@ -25,7 +25,7 @@ The default branch is an accurate representation of the history of each topic br
 
 Squash merging is a merge option that allows you to condense the Git history of topic branches when you complete a pull request. Instead of each commit on the topic branch being added to the history of the default branch, a squash merge adds all the file changes to a single new commit on the default branch. 
 
-![Diagram of squash merging in pull requests in Azure Repos.](media/squash_merge.png)
+![Diagram of squash merging in pull requests in Azure Repos.](media/merging-with-squash/squash-branch-merge.png)
 
 A simple way to think about this is that squash merge gives you just the file changes, and a regular merge gives you the file changes and the commit history. 
 
@@ -39,10 +39,21 @@ Squash merging condenses the history of changes in your default branch, so it's 
 
 ### Complete pull requests with squash merge
 
-You can choose to squash merge when completing a pull request in Azure Repos. 
+You can choose to squash merge when completing a pull request in Azure Repos.
+
+::: moniker range=">= azure-devops-2020"
+Choose **Squash commit** under **Merge type** in the **Complete pull request** dialog to squash merge the topic branch.
+
+![Screenshot of closing a pull request with a squash merge in Azure Repos.](media/merging-with-squash/squash-merge.png)
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 Choose **Squash changes when merging** on the **Complete pull request** dialog to squash merge the topic branch.
 
-![Screeshot of closing a pull request with a squash merge in Azure Repos.](media/squash_merge_in_pr.png)
+![Screenshot of closing a pull request with a squash merge in Azure Repos.](media/merging-with-squash/squash-merge-pr.png)
+
+::: moniker-end
 
 ## Multiple merge bases
 
@@ -85,4 +96,4 @@ In large repos with many active contributors, this issue can be especially incon
 - [Resolve merge conflicts](merging.md)
 - [Complete a pull request](complete-pull-requests.md)
 - [About pull requests](about-pull-requests.md)
--
+
