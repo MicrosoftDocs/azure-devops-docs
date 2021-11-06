@@ -132,7 +132,7 @@ Need more help to make a choice? These charts might help.
    File storage
    :::column-end:::
    :::column span="2":::
-   You can check in large binary files. You might also want to use [NuGet](https://go.microsoft.com/fwlink/?LinkId=246165) in combination or as an alternative.
+   You can check in large binary files. You might also want to use [NuGet](https://www.nuget.org/) in combination or as an alternative.
    :::column-end:::
    :::column span="2":::
    You can check in small binary files as you would regular files. When working with large binary files, use [Git-LFS](https://devblogs.microsoft.com/devops/announcing-git-lfs-on-all-vso-git-repos/) to store your large binary files in Azure Repos.

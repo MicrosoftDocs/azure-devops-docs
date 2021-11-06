@@ -192,6 +192,9 @@ To view only the comments that were added to the log, choose the **Discussion On
 ![Screenshot of Work item form, Team Explorer, History tab.](media/ALM_HA_AllChanges.png) 
 
 * * *
+
+<a id="fields" />
+
 ## Fields that support history, auditing, and revision tracking 
 
 You can use the following fields to filter queries and create reports. Several of these fields are populated with information as a work item progresses from one state to another. Other fields update when the work item is modified. Some fields don't appear on the work item form, but they're tracked for the WITs listed.  
@@ -208,19 +211,15 @@ You can use the following fields to filter queries and create reports. Several o
    **Work item type**
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
-   
    Changed By
-
    :::column-end:::
    :::column span="2":::
-   
    The name of the team member who modified the work item most recently.
 
    Reference name=System.ChangedBy, Data type=String
-
    :::column-end:::
    :::column span="1":::
    All
@@ -228,18 +227,12 @@ You can use the following fields to filter queries and create reports. Several o
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Change Date
-
-  
    :::column-end:::
    :::column span="2":::
-   
    The date and time when a work item was modified.
 
    Reference name=System.ChangedDate, Data type=DateTime
-
-  
    :::column-end:::
    :::column span="1":::
    All
@@ -247,18 +240,11 @@ You can use the following fields to filter queries and create reports. Several o
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Closed Date <sup>1</sup> 
-
-  
    :::column-end:::
    :::column span="2":::
-   
-   The date and time when a work item was closed.
-
+   The date and time when a work item was closed.  
    Reference name=Microsoft.VSTS.Common.ClosedDate, Data type=DateTime
-
-  
    :::column-end:::
    :::column span="1":::
    All
@@ -266,18 +252,12 @@ You can use the following fields to filter queries and create reports. Several o
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Created Date
-
-  
    :::column-end:::
    :::column span="2":::
-   
    The date and time when a work item was created.
  
    Reference name=System.CreatedDate, Data type=DateTime
-
-  
    :::column-end:::
    :::column span="1":::
    All
@@ -288,127 +268,80 @@ You can use the following fields to filter queries and create reports. Several o
    History
    :::column-end:::
    :::column span="2":::
-   
    The record of changes that were made to the work item after it was created. Every time that the work item is updated, information is appended to the history, which specifies the date of the change, who made the changes, and which fields were changed. 
-   
-   > History field queries return work items whose Discussion comments or Description fields contain words that match the keywords entered. You can't use the History field to query on changes made to other fields. 
- 
-   You can't add formatted text to the history field. Once you&#39;ve saved the work item, you can't alter the history. 
-
-   The `History` field, along with the `Description`, `Steps to Repro`, and `Title` fields are automatically indexed for full-text search as described in [Query fields, operators, and macros](query-operators-variables.md). 
-
+   > [!NOTE]
+   > History field queries return work items whose **Discussion** comments or **Description** fields contain words that match the keywords entered. You can't use the History field to query on changes made to other fields.  
+   You can't add formatted text to the history field. Once you've saved the work item, you can't alter the history.  
+   The `History` field, along with the `Description`, `Steps to Repro` and `Title` fields are automatically indexed for full-text search as described in [Query fields, operators, and macros](query-operators-variables.md).  
    Reference name=System.History, Data type=History
-
    :::column-end:::
    :::column span="1":::
-   
    All
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Resolved Date <sup>1</sup> 
-
-  
    :::column-end:::
    :::column span="2":::
-   
    The date and time when the work item was moved into a Resolved state. 
 
    Reference name=Microsoft.VSTS.Common.ResolvedDate, Data type=DateTime
-
-  
    :::column-end:::
    :::column span="1":::
    Bug (Agile, CMMI) 
-  
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
-   
    Rev
-
    :::column-end:::
    :::column span="2":::
-   
    A number that is assigned to the historical revision of a work item. 
 
    Reference name=System.Rev, Data type=Integer
-
    :::column-end:::
    :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
-
-
 :::row:::
    :::column span="1":::
-   
    State Change Date
-
-  
    :::column-end:::
    :::column span="2":::
-   
    The date and time when the value of the State field changed.
 
    Reference name=Microsoft.VSTS.Common.StateChangeDate, Data type=DateTime
-
-  
    :::column-end:::
    :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
-   
    <a id="test-suite-audit"/>Test Suite Audit
-  
    :::column-end:::
    :::column span="2":::
-   
    Tracks other operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.
-
    Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText
-
-
-  
    :::column-end:::
    :::column span="1":::
-   
    Test Suite
-  
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
-   
    <a id="watermark"/>Watermark
-  
    :::column-end:::
    :::column span="2":::
-   
    A system-managed field (not editable) that increments with changes made to a work item.
-
    Reference name=System.Watermark, Data type=Integer
-
-
-  
    :::column-end:::
    :::column span="1":::
-   
    All
-  
    :::column-end:::
 :::row-end:::
-
 
 
 > [!NOTE]  

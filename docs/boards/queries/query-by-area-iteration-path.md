@@ -95,6 +95,7 @@ Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the 
 ::: moniker-end
 
 <a name="field-reference"></a>
+<a id="fields" />
 
 ## Classification field reference 
 

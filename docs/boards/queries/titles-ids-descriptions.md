@@ -221,6 +221,7 @@ For example, the following query shows how to query for work items that you've r
 
 ::: moniker-end 
 
+<a id="fields" />
 
 ## Common fields for most work item types 
 
@@ -240,10 +241,10 @@ The following table describes common fields used to filter queries. The **ID** f
    **Work item type**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    Acceptance Criteria  <sup>1</sup>
-
    :::column-end:::
    :::column span="2":::
    A description of the criteria to be met before the bug or product backlog item can be closed.
@@ -251,7 +252,6 @@ The following table describes common fields used to filter queries. The **ID** f
    Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.
  
    Reference name=Microsoft.VSTS.Common.AcceptanceCriteria, Data type=HTML
-  
    :::column-end:::     
    :::column span="1":::
    Bug, Epic, Feature, Product backlog item (Scrum)
@@ -260,17 +260,13 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row-end:::
 :::row:::
      :::column span="1":::
-   
    Description <sup>1, 2</sup>
-  
    :::column-end:::
      :::column span="2":::
    
    Use this field to provide in-depth information about a work item.
 
    Reference name=System.Description, Data type=HTML
-
-  
    :::column-end:::
    :::column span="1":::
    All
@@ -278,7 +274,6 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    ID
    :::column-end:::
    :::column span="2":::
@@ -286,7 +281,6 @@ The following table describes common fields used to filter queries. The **ID** f
    The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and within a project collection.  
 
    Reference name=System.Id, Data type=Integer
-
    :::column-end:::
    :::column span="1":::
    All
@@ -294,17 +288,11 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row-end:::
 :::row:::
      :::column span="1":::
-   
    Repro Steps (or Steps to reproduce) <sup>1</sup> 
-  
    :::column-end:::
      :::column span="2":::
-   
-   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem and whether they've fixed the bug. This information includes actions taken to find or reproduce the bug and expected behavior. 
-    
+   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior.   
    Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML
-
-  
    :::column-end:::
    :::column span="1":::
    Bug
@@ -313,32 +301,24 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row:::
    :::column span="1":::
    Resolution
-
    :::column-end:::
    :::column span="2":::
    Describes how an impediment was resolved.
 
    Reference name=Microsoft.VSTS.Common.Resolution, Data type=HTML
-  
    :::column-end:::     
    :::column span="1":::
    Impediment (Scrum)
-
    :::column-end:::
 :::row-end:::
 :::row:::
      :::column span="1":::
-   
    System Info<sup>1</sup> 
-  
    :::column-end:::
      :::column span="2":::
-   
    Information about the software and system configuration that is relevant to the bug, code review, or feedback. 
 
    Reference name=Microsoft.VSTS.TCM.SystemInfo, Data type=HTML
-
-  
    :::column-end:::
      :::column span="1":::
    Bug, Code Review Request, Feedback Request    
@@ -346,18 +326,15 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Team Project
    :::column-end:::
    :::column span="2":::
-   
    The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. 
 
    > [!NOTE]
    > &#160;&#160;For Azure Boards or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across projects](using-queries.md#across-projects). 
 
    Reference name=System.TeamProject, Data type=String
-
    :::column-end:::
    :::column span="1":::
    All
@@ -365,17 +342,12 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row-end:::
 :::row:::
      :::column span="1":::
-   
    Title
-  
    :::column-end:::
      :::column span="2":::
-   
    A short description that summarizes what the work item is and helps team members distinguish it from other work items in a list.
 
    Reference name=System.Title, Data type=String
-
-  
    :::column-end:::
    :::column span="1":::
    All
@@ -383,19 +355,14 @@ The following table describes common fields used to filter queries. The **ID** f
 :::row-end:::
 :::row:::
      :::column span="1":::
-   
    Work Item Type
-  
    :::column-end:::
      :::column span="2":::
-   
    The name of the work item type. Work item types are defined based on the process used when you created your project. For an overview, see [Choose process](../work-items/guidance/choose-process.md). To learn how to add a custom work item type, see [Add or modify a work item type](../../reference/add-modify-wit.md). 
 
    To filter work items based on their [category assignment](#category), you can use the **In Group** and **Not In Group** operators and select a category from the drop-down list.  
 
    Reference name=System.WorkItemType, Data type=String
-
-  
    :::column-end:::
    :::column span="1":::
    All
