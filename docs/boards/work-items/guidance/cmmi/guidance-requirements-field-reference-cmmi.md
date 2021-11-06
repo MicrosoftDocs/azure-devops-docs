@@ -17,7 +17,9 @@ ms.date: 11/07/2021
 
 When you create a project using the [CMMI process](../cmmi-process.md), you can define fields to track requirements to be developed and their importance to the overall product.  
   
-None of these fields are indexed. For more information about data types and field attributes, see [Work item fields and attributes](../../work-item-fields.md).  
+None of these fields are indexed. For more information about data types and field attributes, see [Work item fields and attributes](../../work-item-fields.md). 
+
+<a id="fields" /> 
   
 > [!div class="mx-tdCol2BreakAll"]
 > |**Field name**|**Description**|**Data type**|**Reportable type**|  

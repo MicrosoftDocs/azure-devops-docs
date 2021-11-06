@@ -17,8 +17,10 @@ ms.date: 10/27/2021
 You can track change requests for CMMI work items by using these six fields: Justification, Impact on Architecture, Impact on User Experience, Impact on Test, Impact on Development, and Impact on Technical Publications. A description and a reference name for each of the change request fields are provided in the following table. When you open a work item form for a change request, the **Justification** field appears on the **Justification** tab, and all other fields appear on the **Analysis** tab.  
   
  The Change Request work item type is provided only with the [CMMI process](../cmmi-process.md).  
-  
- None of these fields are reportable or indexed. They all have a data type of HTML.  
+
+<a id="fields" />
+
+None of these fields are reportable or indexed. They all have a data type of HTML.  
   
 > [!div class="mx-tdCol2BreakAll"]
 > |**Field name**|**Description**|**Reference name**|  
@@ -31,4 +33,5 @@ You can track change requests for CMMI work items by using these six fields: Jus
 > |**Impact on Technical Publications**|The impact that the change would have on product documentation. You can use this field to describe in detail which sections of documentation would be affected and how much the change would cost to implement.|Microsoft.VSTS.CMMI.ImpactOnTechnicalPublications|  
   
 ## Related articles 
- [Index of work item fields](../work-item-field.md)
+
+- [Index of work item fields](../work-item-field.md)
