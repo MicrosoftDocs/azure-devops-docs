@@ -62,7 +62,8 @@ This article describes pull request guidelines and management considerations. Fo
 
 To learn more about permissions and access, see [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) and [About access levels](../../organizations/security/access-levels.md).
 
-## Quality feedback in pull requests
+<a name="pr-feedback"></a>
+## Quality feedback for pull requests
 
 High-quality reviews start with high-quality feedback. Here are some keys to great PR feedback:
 
@@ -223,3 +224,5 @@ For more information, see the following articles:
 - [Change the default branch](change-default-branch.md)
 - [Copy changes with cherry-pick](cherry-pick.md)
 - [Merge strategies and squash merge](merging-with-squash.md)
+<a name-"multiple-merge-bases"></a>
+- [Multiple merge bases](merging-with-squash.md#multiple-merge-bases)
