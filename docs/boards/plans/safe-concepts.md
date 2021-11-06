@@ -144,7 +144,7 @@ To add custom fields, see [Customize Azure Boards, Add a custom field](safe-cust
 
 <a id="wiki" />
 
-## Project wiki
+## Use the project wiki to support your portfolio vision and strategic themes
 
 Information can be widely shared with an organization using the Azure DevOps project wiki. The wiki is a similar to a git repository that supports adding and editing pages using markdown and a WYSIWYG editor. It versions each page so that it's easy to track who made changes and recover past versions.   
 
