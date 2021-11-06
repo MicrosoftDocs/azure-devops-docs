@@ -18,7 +18,7 @@ ms.date: 11/04/2021
 [!INCLUDE [temp](../includes/version-all.md)]
 
 ::: moniker range="azure-devops"
-Work item fields are used to track information. Fields are defined for an organization and shared across all projects defined for that organization. You can use one of two tools to review the fields defined for the organization. These tools are available for both Inherited and Hosted XML process models.  
+Work item fields are used to track information. Fields are defined for an organization and shared across all projects defined for that organization. You can use one of two tools to review the fields defined for the organization. These tools are available for both Inherited and Hosted XML process models. 
 
 - [Process>Fields web page](#review-fields) 
 - [Work Item Field Explorer](#wi-explorer)  
@@ -36,6 +36,7 @@ Work item fields are used to track information. Fields are defined for a collect
 Work item fields are used to track information. Fields are defined for a collection and shared across all projects defined for that collection. To view all fields defined for a collection, you can use the [Work Item Field Explorer](#wi-explorer) tool, a plug-in to Visual Studio.   
 ::: moniker-end
 
+For a description of each field defined with a system process, see [Work item field index](../../../boards/work-items/guidance/work-item-field.md).  
 
 ## Prerequisites 
 
