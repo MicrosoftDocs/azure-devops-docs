@@ -82,7 +82,7 @@ You can pull data from Analytics into Power BI in one of three ways. It's import
    [Connect using the Azure DevOps Data Connector](data-connector-connect.md)
    :::column-end:::
    :::column span="1":::
-   The Azure DevOps Data connector works with [Analytics views](what-are-analytics-views.md)</a>. To access **Analytics views**, you must enable the feature as described in [Enable preview features](/azure/devops/project/navigation/preview-features)</a>
+   The Azure DevOps Data connector works with [Analytics views](what-are-analytics-views.md)</a>. To access **Analytics views**, you must enable the feature as described in [Enable preview features](../../project/navigation/preview-features.md)</a>
    :::column-end:::
    :::column span="2":::
    **This connector only works with Boards data (work items)** and doesn't support other data types, such as Pipelines. It provides a flat-list of work items, and doesn't support work item hierarchies. At this point, we have no plans to update the connector to support other types of data. We recommend using OData queries unless you have a simpler report on Boards data.
@@ -130,4 +130,4 @@ For specific examples, see one of the following articles:
 - [Dashboards, charts, reports & widgets](../dashboards/overview.md)  
 - [Power BI Desktop](/power-bi/fundamentals/desktop-get-the-desktop) 
 - [Power BI documentation](/power-bi)
-- [OData documentation](/odata/) 
+- [OData documentation](/odata/)

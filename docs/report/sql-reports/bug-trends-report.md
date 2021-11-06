@@ -1,16 +1,15 @@
 ---
-title: Bug Trends Report 
-titleSuffix: Azure DevOps Server 
+title: Bug Trends report 
+titleSuffix: Azure DevOps Server
+description: Learn how to track the rate at which your team is discovering and resolving bugs.
 ms.technology: devops-analytics
 ms.topic: reference
-description: Track the rate at which your team is discovering and resolving bugs.  
 ms.assetid: 631ec793-644f-4eff-8403-e48e746e369e
 ms.author: kaelli
-ms.date: 10/17/2017
+ms.date: 10/14/2021
 ---
 
-
-# Bug Trends Report
+# Bug Trends report
 
 [!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
@@ -21,14 +20,16 @@ You can use the Bug Trends report to help track the rate at which your team is d
 > [!NOTE]
 >  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
-**You can use this report to answer the following questions**:<br /><br /> -   How many bugs is the team reporting, resolving, and closing per day?<br />-   What is the overall trend at which the team is processing bugs?<br />-   Are bug activation and resolution rates declining toward the end of the iteration as expected? 
+**You can use this report to answer the following questions**:<br /><br /> -   How many bugs are the team reporting, resolving, and closing per day?<br />-   What is the overall trend at which the team is processing bugs?<br />-   Are bug activation and resolution rates declining toward the end of the iteration as expected? 
   
- **Required Permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
- The Bug Trends report calculates a rolling average of the number of bugs that the team has opened, resolved, and closed based on the filters that you specify. The rolling average is based on the seven days before the date for which it is calculated. That is, the report averages the number of bugs in each state for each of the seven days before the date, and then the result is divided by seven. The data is derived from the data warehouse.  
+
+<a name="Data"></a>
+
+## Data in the report  
+ The Bug Trends report calculates a rolling average of the number of bugs that the team has opened, resolved, and closed based on the filters that you specify. The rolling average is based on the seven days before the date for which it's calculated. That is, the report averages the number of bugs in each state for each of the seven days before the date, and then the result is divided by seven. The data is derived from the data warehouse.  
   
  The following illustration displays an example of the Bug Trends report.  
   
@@ -40,12 +41,12 @@ You can use the Bug Trends report to help track the rate at which your team is d
   
 - Change the start and end dates for the report.  
   
-- Filter the bugs that are counted in the report by specifying iteration and area paths or bug state, priority, or severity.  
+- Filter the bugs that the report counts by specifying iteration and area paths or bug state, priority, or severity.  
   
   For more information, see [Filtering the Report](#Changing) later in this article.  
   
-### Required Activities for Tracking Bugs  
- For the Bug Trends report to be useful and accurate, the team must perform the following activities:  
+### Required activities for tracking bugs  
+ For the Bug Trends report to be useful and correct, the team must carry out the following activities:  
   
 - Define bugs, and specify their **Iteration** and **Area** paths.  
   
@@ -54,20 +55,34 @@ You can use the Bug Trends report to help track the rate at which your team is d
 - Specify the **Priority** and **Severity** of each bug during triage.  
   
   You can use the Triage workbook to quickly update the iteration, area, state, priority, and severity of bugs. For more information, see [Workbooks](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks).  
+
+<a name="Duration"></a>
+
+## Set the duration of the sprint or iteration  
+ To understand the bug trends for your current iteration, the start and end dates for the report must match the dates of your current iteration cycle.  
   
-##  <a name="Duration"></a> Setting the Duration of the Sprint or Iteration  
- To understand the bug trends for your current iteration, the start and end dates for the report must match those of your current iteration cycle.  
+### To change the duration of the iteration  
   
-#### To change the duration of the iteration  
+1. Next to **Iteration Start (Date)** or **Iteration End (Date)**, select the calendar icon, and then select a date.  
   
-1.  Next to **Iteration Start (Date)** or **Iteration End (Date)**, click the calendar icon, and then click a date.  
+2. Select **View Report**.  
+
+<a name="Interpreting"></a>
+
+## Interpret the report  
+ You can expect bug rates to vary based on where you are in your product development cycle. The team should find fewer bugs in early iterations than in later iterations. The team should close the most bugs in iterations that are near the end of a product cycle.  
   
-2.  Click **View Report**.  
-  
-##  <a name="Interpreting"></a> Interpreting the Report  
- You should expect bug rates to vary based on where you are in your product development cycle. The team should find fewer bugs in early iterations than in later iterations. The team should close the most bugs in iterations that are near the end of a product cycle.  
-  
- You interpret bug rates best by reviewing them relative to all of the current team project activities and the other metrics that the Bug Status and Reactivations reports provide. For example, the team might find bugs especially quickly in poorly written code, in newly integrated code, with improved testing, or during an exceptional event such as a bug bash. On the other hand, bugs are more difficult to find in a high quality product and with ineffective testing. You can use the metrics for code coverage, code churn, and test rates to help further assess the meaning of the bug trends.  
+ You interpret bug rates best by reviewing them as they relate to:
+- All of the current team project activities
+- The other metrics that the Bug Status and Reactivations reports provide.
+
+For example, the team might find bugs especially quickly:
+- In poorly written code.
+- In newly integrated code.
+- With improved testing.
+- During an exceptional event such as a bug bash.
+
+On the other hand, bugs are more difficult to find in a high-quality product and with ineffective testing. You can use the metrics for code coverage, code churn, and test rates to help further assess the meaning of the bug trends.  
   
  As the product stabilizes toward the end of a product cycle, the team should find bugs less frequently.  
   
@@ -81,17 +96,19 @@ You can use the Bug Trends report to help track the rate at which your team is d
 |**The team is resolving many bugs in each time period**. A high resolve rate usually indicates that the team is making good progress.|-   Are resolved bugs getting promptly closed? The closed rate should resemble the resolved rate.<br />-   Are bug reactivations remaining within expected boundaries?|  
 |**The team is resolving bugs quickly but not closing them**. Team members who are assigned to verify bug fixes might be spread too thin, or different priorities might keep those team members from closing resolved bugs.|-   Are test resources overallocated?<br />-   Should the team revisit test priorities?|  
   
-### Healthy Version of Report  
+### Healthy version of report  
  A healthy Bug Trends report shows that the team finds more bugs at the start of a development cycle and fewer bugs toward the end of a release. The team should resolve and close more bugs toward the end of the project.  
   
- When the team resolves bugs faster than it finds them, the number of active bugs will start to decrease. When the team starts to find fewer bugs, the product is stabilizing.  
+ When the team resolves bugs faster than it finds them, the number of active bugs will start to go down. As the team starts to find fewer bugs, the product is stabilizing.  
   
-### Unhealthy Version of Report  
- An unhealthy Bug Trends report might show that the team is finding bugs more quickly as the ship date approaches and resolving bugs more slowly. In this situation, the team's bug backlog is growing because bugs are not getting fixed, and you might want to investigate the causes. The following illustration shows a report for a team that is finding many bugs, resolving fewer bugs than it finds, and closing fewer bugs than it resolves.  
+### Unhealthy version of report  
+ An unhealthy Bug Trends report might show that the team is finding bugs more quickly as the ship date approaches and resolving bugs more slowly. In this situation, the team's bug backlog is growing because bugs aren't getting fixed, and you might want to investigate the causes. The following illustration shows a report for a team that is finding many bugs, resolving fewer bugs than it finds, and closing fewer bugs than it resolves.  
   
  ![Unhealthy version of Bug Trends Report](media/procguid_bugtrends_dataunhealthy.png "ProcGuid_BugTrends_DataUnhealthy")  
-  
-##  <a name="Changing"></a> Filtering the Report and Changing the Display  
+
+<a name="Changing"></a>
+
+## Filter the report and change the display  
  You can filter the Bug Trends report or change its display in the following ways:  
   
 - Change the start and end dates for the report.  
@@ -102,15 +119,15 @@ You can use the Bug Trends report to help track the rate at which your team is d
   
   ![Filters for Bug Trends report](media/procguid_bugtrendsfilters.png "ProcGuid_BugTrendsFilters")  
   
-#### To filter the bugs that are counted in the report  
+### To filter the bugs that are counted in the report  
   
-1.  Perform one or both of the following actions:  
+1. Carry out one or both of the following actions:  
   
     -   In the **Iteration** and **Area** lists, select the check box of each iteration or product area to include.  
   
     -   In the **State**, **Priority**, or **Severity** lists, select the check box of each state, priority, and severity to include.  
   
-2.  Click **View Report**.  
+2. Select **View Report**.  
   
 ## Related articles  
  [Bugs](/previous-versions/azure/devops/report/sharepoint-dashboards/bugs-dashboard-agile-cmmi)   

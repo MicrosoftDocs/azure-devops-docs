@@ -398,7 +398,7 @@ When teams estimate work they define tasks and estimate the hours or days to com
    :::column-end:::
    :::column span="3":::
    
-   The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate [capacity charts](../../sprints/set-capacity.md), the [sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md), and the [Sprint Burndown](/azure/devops/report/sql-reports/sprint-burndown-scrum) report. 
+   The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate [capacity charts](../../sprints/set-capacity.md), the [sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md), and the [Sprint Burndown](../../../report/sql-reports/sprint-burndown-scrum.md) report. 
    If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.
 
    :::column-end:::

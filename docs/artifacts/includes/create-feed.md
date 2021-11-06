@@ -7,8 +7,6 @@ author: ramiMSFT
 ms.date: 03/10/2021
 ---
 
-With Azure Artifacts, you can create two types of feeds: project-scoped and organization-scoped feeds. All public feeds are project-scoped and they inherit the hosting project's visibility settings. By default, any feed that's created by using the web UI is a project-scoped feed, as follows.
-
 ::: moniker range=">= azure-devops-2019"
 
 1. From within your project, navigate to **Azure Artifacts**.

@@ -386,7 +386,7 @@ For example, you can list items based on the team area path, and if they are in 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
----
+ 
 :::row:::
    :::column span="2":::
       **Filter for**
@@ -435,7 +435,6 @@ For example, you can list items based on the team area path, and if they are in 
       `Board Column Was Ever In Review`  
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end
 
 
@@ -446,7 +445,7 @@ For example, you can list items based on the team area path, and if they are in 
  
 
 <a id="workflow-fields">  </a>
-
+<a id="fields" />
 
 ::: moniker range=">= tfs-2015"
 
@@ -457,8 +456,7 @@ The following fields are useful to filter queries. Some of these fields get upda
 For more information about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
 ::: moniker-end 
-
-
+ 
 
 ::: moniker range="tfs-2013"
 
@@ -479,6 +477,7 @@ You can use the following fields to filter your queries or build reports. Some o
       **Work item type**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Activated By <sup> 1,&nbsp;2, 3</sup> 
