@@ -28,7 +28,7 @@ For on-premises deployments and Azure DevOps Services, you can [upload/download 
 
 If you use the Hosted XML process model, you can [import/export a process](../../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json).
 
-For details on creating a project using the process of your choice, see [Create a project](../organizations/projects/create-project.md). 
+For details on creating a project using the process of your choice, see [Create a project](../../organizations/projects/create-project.md). 
 
 ## Related resources
 

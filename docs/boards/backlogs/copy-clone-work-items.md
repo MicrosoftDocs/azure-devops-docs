@@ -160,7 +160,7 @@ Clone a work item when you want to create another instance of it. This action op
 
 ## Change the work item type  
 
-If you have a large number of work items whose type you want to change, use [Change work item type](move-change-typemd). If Change work item type isn't available to you, you can export a set of work items using Excel, copy them to a new Excel list, and re-import them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
+If you have a large number of work items whose type you want to change, use [Change work item type](move-change-type.md). If Change work item type isn't available to you, you can export a set of work items using Excel, copy them to a new Excel list, and re-import them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 
 ::: moniker-end
 
