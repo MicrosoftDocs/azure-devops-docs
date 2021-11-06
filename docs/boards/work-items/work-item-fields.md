@@ -36,7 +36,7 @@ Work item fields are used to track information. Fields are defined for a collect
 Work item fields are used to track information. Fields are defined for a collection and shared across all projects defined for that collection. To view all fields defined for a collection, you can use the [Work Item Field Explorer](#wi-explorer) tool, a plug-in to Visual Studio.   
 ::: moniker-end
 
-For a description of each field defined with a system process, see [Work item field index](../../../boards/work-items/guidance/work-item-field.md).  
+For a description of each field defined with a system process, see [Work item field index](guidance/work-item-field.md).  
 
 ## Prerequisites 
 
