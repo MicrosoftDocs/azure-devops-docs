@@ -124,6 +124,8 @@ Open a new query, set the query type to Work items and direct links. Filter for 
 > [!NOTE]    
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the **Test>Test Plans** page](../../test/create-a-test-plan.md). 
 
+<a id="fields" />
+
 ## Build and test data fields  
 
 The following table describes the fields that are defined in one or more of the test WITs. For information about data types and field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
@@ -141,27 +143,18 @@ To customize a field or picklist, see [Add or modify a field to support queries,
    **Work item type**
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
    Automation Status<sup> 1</sup>
-
    :::column-end:::
    :::column span="2":::
    The status of a test case. You can specify the following values:
-
-   
    - **Automated**
-
    - **Not Automated**
-
-   - **Planned**
-
-   
-   To run automated tests, see [Run automated tests from test plans](../../test/run-automated-tests-from-test-hub.md).
-
+   - **Planned**  
+   To run automated tests, see [Run automated tests from test plans](../../test/run-automated-tests-from-test-hub.md).  
    Reference name=Microsoft.VSTS.TCM.AutomationStatus, Data type=String
-
    :::column-end:::
    :::column span="1":::
    Test Case
@@ -170,17 +163,12 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row:::
    :::column span="1":::
    Found In<sup> 2</sup>
-
    :::column-end:::
    :::column span="2":::
-   Product build number, also known as a revision, in which a bug was found.
-
-   Reference name=Microsoft.VSTS.Build.FoundIn, Data type=String
-
-   
+   Product build number, also known as a revision, in which a bug was found.  
+   Reference name=Microsoft.VSTS.Build.FoundIn, Data type=String  
    > [!NOTE]  
    > You can also use the **Found in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
-
    :::column-end:::
    :::column span="1":::
    Bug
@@ -189,17 +177,12 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row:::
    :::column span="1":::
    Integration Build<sup> 2</sup>
-
    :::column-end:::
    :::column span="2":::
-   Product build number that incorporates the code or fixes a bug.
-
-   Reference name=Microsoft.VSTS.Build.IntegrationBuild, Data type=String
-
-    
+   Product build number that incorporates the code or fixes a bug.  
+   Reference name=Microsoft.VSTS.Build.IntegrationBuild, Data type=String  
    > [!NOTE]  
    > You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Azure DevOps and only works with the current build processes (not XAML builds).  
-
    :::column-end:::
    :::column span="1":::
    All
@@ -208,13 +191,10 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row:::
    :::column span="1":::
    Issue
-
    :::column-end:::
    :::column span="2":::
    Indicates that the Shared Steps are associated with an expected result. Allowed values are **Yes** and **No**. 
-
    Reference name=Microsoft.VSTS.Common.Issue, Data type=String
-
    :::column-end:::
    :::column span="1":::
    Shared Steps
@@ -222,14 +202,11 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Parameters<sup> 3</sup>
-
+   Parameters<sup> 3</sup>  
    :::column-end:::
    :::column span="2":::
-   Contains the parameters to use when running a manual test. 
-
+   Contains the parameters to use when running a manual test.  
    Microsoft.VSTS.TCM.Parameters, Data type=HTML
-
    :::column-end:::
    :::column span="1":::
    Shared Parameters, Shared Steps, Test Case
@@ -238,13 +215,10 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row:::
    :::column span="1":::
    Steps
-
    :::column-end:::
    :::column span="2":::
    The action and validation steps that are required to run the test.
-
    Microsoft.VSTS.TCM.Steps, Data type=HTML
-
    :::column-end:::
    :::column span="1":::
    Shared Steps, Test Case
@@ -253,13 +227,10 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row:::
    :::column span="1":::
    System Info
-
    :::column-end:::
    :::column span="2":::
-   Information about the software and system configuration that is relevant to the test.
-
+   Information about the software and system configuration that is relevant to the test.  
    Microsoft.VSTS.TCM.SystemInfo, Data type=HTML
-
    :::column-end:::
    :::column span="1":::
    Bug, Feedback Response
@@ -267,17 +238,11 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Repro Steps (or Steps to reproduce) 
-  
    :::column-end:::
      :::column span="2":::
-   
    The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem and whether they've fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior.
-    
    Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML
-
-  
    :::column-end:::
    :::column span="1":::
    Bug
@@ -286,27 +251,17 @@ To customize a field or picklist, see [Add or modify a field to support queries,
 :::row:::
    :::column span="1":::
    Test Suite Type<sup> 1,4</sup>
-
    :::column-end:::
    :::column span="2":::
-   The test suite category. Allowed values are:
-
-   
-   - **Query Based**: Use to group together test cases that have a particular characteristic - for example, all the tests that have Priority=1. The suite will automatically include every test case that is returned by the query that you define.
-
-   - **Static**: Use to group together test cases designed to track the test status of backlog items. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.
-
-   - **Requirement Based**: Use to group together test cases with any characteristics or test suites.
-
-   
-   For more information, see [Create a test plan](../../test/create-a-test-plan.md).
- 
+   The test suite category. Allowed values are:  
+   - **Query Based**: Use to group together test cases that have a particular characteristic - for example, all the tests that have Priority=1. The suite will automatically include every test case that is returned by the query that you define.  
+   - **Static**: Use to group together test cases designed to track the test status of backlog items. Each test case that you add to a requirement-based test suite is automatically linked to the backlog item.  
+   - **Requirement Based**: Use to group together test cases with any characteristics or test suites.  
+   For more information, see [Create a test plan](../../test/create-a-test-plan.md).  
    Reference name=Microsoft.VSTS.TCM.TestSuiteType, Data type=String
-
    :::column-end:::
    :::column span="1":::
    Test Suite
-
    :::column-end:::
 :::row-end:::
 

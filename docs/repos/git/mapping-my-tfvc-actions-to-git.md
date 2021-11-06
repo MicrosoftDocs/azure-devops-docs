@@ -94,8 +94,6 @@ In Visual Studio, choose **Team Explorer > Branches > right-click on branch > Ne
 
 Similar to the TFVC experience, new files in the working folder are not automatically part of the repository. You stage your new files with the `git add` command, which is synonymous to performing an `add Items to Folder` operation in TFVC.
 
-Here's a [sample](https://vsarguidance.codeplex.com/downloads/get/739947) project to try adding files to your repo.
-
 # [Command Line](#tab/command-line)
 
 ```

@@ -253,6 +253,7 @@ Or, you can find unparented backlog items using a **Work items and direct links*
 :::image type="content" source="media/link-attachments/unparented-work-items.png" alt-text="Screenshot of Query Editor, Work items, and direct links, Web portal, unparented user stories.":::
   
 <a id="table-field"/>
+<a id="fields" />
 
 ## Link, attachment count, and comment fields 
 
@@ -269,18 +270,16 @@ The following table describes fields associated with links and attachments. Most
    **Work item type**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
    Attachment File Count
    :::column-end:::
    :::column span="3":::
-   The number of files attached to the work item and stored in the work item tracking database.
-
-   Reference Name=System.AttachedFileCount, Data type=Integer
-
-
+   The number of files attached to the work item and stored in the work item tracking database.  
+   Reference Name=System.AttachedFileCount, Data type=Integer  
+   > [!NOTE]
    > For Azure Boards (cloud service), you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.  
- 
    :::column-end:::
    :::column span="1":::
    All
@@ -291,10 +290,10 @@ The following table describes fields associated with links and attachments. Most
    Comment Count
    :::column-end:::
    :::column span="3":::
-   Available for TFS 2017 with the new work item form that supports the Discussion section and later versions. The number of comments added to the **Discussion** section of the work item.
-
-   Reference Name=System.CommentCount, Data type=Integer
-
+   The number of comments added to the **Discussion** section of the work item.  
+   Reference Name=System.CommentCount, Data type=Integer  
+   > [!NOTE]
+   > Available for TFS 2017 with the new work item form which supports the **Discussion** section and later versions. 
    :::column-end:::
    :::column span="1":::
    All
@@ -306,8 +305,7 @@ The following table describes fields associated with links and attachments. Most
    External Link Count
    :::column-end:::
    :::column span="3":::
-   The number of links from the work item to artifacts that aren't work items. This count includes items such as pull requests, commits, changesets, or other link types.
-
+   The number of links from the work item to artifacts that are not work items. such as pull requests, commits, changesets, or other link types.  
    Reference Name=System.ExternalLinkCount, Data type=Integer
    :::column-end:::
    :::column span="1":::
@@ -360,17 +358,9 @@ The following table describes fields associated with links and attachments. Most
    Parent
    :::column-end:::
    :::column span="3":::
-   When included as a column option in a backlog or query results list, the Title of the parent work item is displayed. Internally, the system stores the ID of the work item within an Integer field. 
-
-   
-   > The Parent field is available from Azure DevOps Services and Azure DevOps Server 2020. You can't specify this field within a query clause. 
-
-   > The Parent field is available from Azure DevOps Services and Azure DevOps Server 2020. You can't specify this field within a query clause. 
-
-   > The Parent field is available from Azure DevOps Services and Azure DevOps Server 2020. You can't specify this field within a query clause. 
-
-   > The Parent field is available from Azure DevOps Services and Azure DevOps Server 2020. You can't specify this field within a query clause. 
- 
+   When included as a column option in a backlog or query results list, the **Title** of the parent work item is displayed. Internally, the system stores the ID of the work item within an Integer field. 
+   > [!NOTE]
+   > The **Parent** field is available from Azure DevOps Server 2020 and later versions. You can't specify this field within a query clause. 
    Reference Name=System.Parent, Data type=Integer
    :::column-end:::
    :::column span="1":::
@@ -383,8 +373,7 @@ The following table describes fields associated with links and attachments. Most
    Related Link Count
    :::column-end:::
    :::column span="3":::
-   The number of links defined for a work item that use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types)
-
+   The number of links defined for a work item which use a work link type, such as Parent-Child, Predecessor-Successor, and Related. For a full list, see  [Link type reference](link-type-reference.md#work-link-types).  
    Reference Name=System.RelatedLinkCount, Data type=Integer
    :::column-end:::
    :::column span="1":::
@@ -397,8 +386,7 @@ The following table describes fields associated with links and attachments. Most
    Remote Link Count
    :::column-end:::
    :::column span="3":::
-   Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Azure Active Directory. Supported link types include Consumes From, Produced For, and Remote Related. To learn more, see [Add link to work items, Link to a remote work item](../backlogs/add-link.md).
-
+   Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Azure Active Directory. Supported link types include Consumes From, Produced For, and Remote Related. To learn more, see [Add link to work items, Link to a remote work item](../backlogs/add-link.md).  
    Reference Name=System.RemoteLinkCount, Data type=Integer
    :::column-end:::
    :::column span="1":::

@@ -68,7 +68,7 @@ All work items you import are created in a new state. This rule means that you c
 	> ![Save imported work items](media/import-csv/imported-file.png)
 
 	> [!NOTE]  
-	> Make sure you don't assign IDs to new work items that you are adding. You'll receive an error message similar to the following if you do so. 
+	> Make sure you don't assign IDs to new work items that you're adding. You'll receive an error message similar to the following if you do so. 
 	> [!div class="mx-imgBorder"]  
 	> ![Error message of work item ID.](media/import-csv/import-work-item-ids-assigned.png)  
 
@@ -160,7 +160,6 @@ From any query, you can export a list of work items as a comma-delimited list. [
 
 You can use this feature to export work items from one project and import them to another project. However, before importing them to another project, you must remove the work item ID. You come across an error if you attempt to import new work items to a project with an ID specified. 
 
-
 ## Import or update rich-text fields 
 
 You can update or import rich-text fields such as the **Description** or **Acceptance Criteria** fields. Rich-text fields are HTML formatted fields. Replace lines ending in CRLF by surrounding sentences with `<p>... </p>`. 
@@ -223,7 +222,6 @@ Any problems with the formatting of your CSV file appear in the Results page of 
 > ![CSV Error image](media/import-csv/import-error.png)
 
 The work items' results always lists the data errors found for individual work items. Fix each error either from the web portal, or in the CSV file and import again.
-
 
 ::: moniker-end 
 
