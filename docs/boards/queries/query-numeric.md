@@ -251,7 +251,7 @@ The following table describes the activity-based and numeric fields that you can
    **Work item type**
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
    Activity <sup>1, 2</sup>
@@ -321,7 +321,6 @@ The following table describes the activity-based and numeric fields that you can
 
    The Discipline field is assigned to `Activity` in the ProcessConfiguration file.<sup>3</sup>
 
-
    Reference name=Microsoft.VSTS.Common.Discipline, Data type=String
 
    :::column-end:::
@@ -332,7 +331,6 @@ The following table describes the activity-based and numeric fields that you can
 :::row:::
    :::column span="1":::
    Effort
-
    :::column-end:::
    :::column span="2":::
    A subjective unit of measure that captures the size of a bug or product backlog item. If you assign more effort to an item, you indicate that more work is required to implement it.  
@@ -346,7 +344,6 @@ The following table describes the activity-based and numeric fields that you can
    Product Backlog Item, Bug <sup>4</sup> (Scrum)  
    
    Feature, Epic
-
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -369,7 +366,6 @@ The following table describes the activity-based and numeric fields that you can
 :::row:::
    :::column span="1":::
    Size 
-
    :::column-end:::
    :::column span="2":::
    A subjective unit of measure that captures the size of a requirement. The larger the size, the more work is required to implement it.  
@@ -386,7 +382,6 @@ The following table describes the activity-based and numeric fields that you can
 :::row:::
    :::column span="1":::
    Original Estimate
-
    :::column-end:::
    :::column span="2":::
    The amount of work required to complete a task. You can specify work in hours or in days. There are no inherent time units associated with this field. 
@@ -401,19 +396,15 @@ The following table describes the activity-based and numeric fields that you can
 :::row:::
    :::column span="1":::
    <a id="remaining-work" />Remaining Work
-
    :::column-end:::
    :::column span="2":::
    The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.
 
    This field <sup>3</sup> is also used to calculate burn down. It is assigned to `type="RemainingWork"` in the ProcessConfiguration file.
-
-   
    > [!NOTE]
    > For Azure Boards, the taskboard always shows &quot;h&quot; for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration file for the Remaining Work type field to specify &quot;d&quot; for days, or other preferred label. 
 
    Reference name=Microsoft.VSTS.Scheduling.RemainingWork, Data type=Double
-
    :::column-end:::
    :::column span="1":::
    Task, Bug<sup>4</sup>
@@ -422,13 +413,11 @@ The following table describes the activity-based and numeric fields that you can
 :::row:::
    :::column span="1":::
    Requires Review
-
    :::column-end:::
    :::column span="2":::
    Indicates the task requires review. You can specify **Yes** or **No** (default).
 
    Reference name=Microsoft.VSTS.CMMI.RequiresReview, Data type=String
-
    :::column-end:::
    :::column span="1":::
    Task (CMMI)
@@ -437,13 +426,11 @@ The following table describes the activity-based and numeric fields that you can
 :::row:::
    :::column span="1":::
    Requires Test
-
    :::column-end:::
    :::column span="2":::
    Indicates the task requires a test. You can specify **Yes** or **No** (default).
 
    Reference name=Microsoft.VSTS.CMMI.RequiresTest, Data type=String
-
    :::column-end:::
    :::column span="1":::
    Task (CMMI)
@@ -452,7 +439,6 @@ The following table describes the activity-based and numeric fields that you can
 :::row:::
    :::column span="1":::
    Task Type<sup>1</sup>
-
    :::column-end:::
    :::column span="2":::
    Specifies the kind of task to implement. Allowed values are:
@@ -461,7 +447,6 @@ The following table describes the activity-based and numeric fields that you can
    - Planned
 
    Reference name=Microsoft.VSTS.CMMI.TaskType, Data type=String
-
    :::column-end:::
    :::column span="1":::
    Task, Bug<sup>4</sup> (CMMI process)

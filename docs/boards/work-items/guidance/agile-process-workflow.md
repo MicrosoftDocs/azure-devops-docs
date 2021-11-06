@@ -1,26 +1,26 @@
 ---
-title: Agile process work item types & workflow
+title: Use agile process work item types in Azure Boards to manage your workflow
 titleSuffix: Azure Boards
-description: How to guide for using the Agile process to track work using its work item types working in Azure Boards 
+description: Learn how to use the Agile process work item types in Azure Boards to track your work 
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops'
-ms.date: 12/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 11/03/2021
 ---
 
-# Agile process work item types and workflow  
+# Agile process work item types for workflow management in Azure Boards  
 
 [!INCLUDE [temp](../../includes/version-all.md)]
 
-Teams use the work item types (WITs) provided with the Agile process to plan and track progress of software projects. Teams define user stories to manage the backlog of work and then, using the Kanban board, track progress by updating the status of those stories.
+Teams use the work item types (WITs) provided with the Agile process. Work item types help your team to plan and track progress of software projects. You define user stories to manage the backlog of work. Then, using the Kanban board, you track progress by updating the status of those stories.
 
 ![Agile process, WITs used to plan and track](media/agile-process-plan-wits.png)
 
-To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers can map user stories to features. When teams work in sprints, they define tasks which automatically link to user stories. If you are new to the Agile process, review the section [Plan and track work with Agile](agile-process.md#start-using) to get started. 
+To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers map user stories to features. When a team works in sprints, they define tasks that automatically link to user stories. If you are new to the Agile process, review the section [Plan and track work with Agile](agile-process.md#start-using) to get started. 
 
 Using the web portal or Microsoft Test Manager, testers can create and run test cases. Bugs and issues are used to track code defects and blocking issues.  
 
@@ -38,7 +38,7 @@ Later, you can open each user story to provide more details and estimate the sto
 
 ![User story work item form ](../../backlogs/media/add-work-item-vsts-user-story-form.png) 
 
-By defining the **Story Points**, teams can use the forecast feature and velocity charts to estimate future sprints or work efforts. By prioritizing the user stories on the backlog page (which is captured in the Stack Rank field), product owners can indicate which items should be given higher priority.
+By defining the **Story Points**, your team can use the forecast feature and velocity charts to estimate future sprints or work efforts. By prioritizing the user stories on the backlog page (that's captured in the Stack Rank field), product owners can indicate which items should be given higher priority.
 
 Use the following guidance and that provided for [fields used in common across work item types](#definitions-in-common) when filling out the form.  
 
@@ -67,7 +67,7 @@ Use the following guidance and that provided for [fields used in common across w
 
    :::column-end:::
    :::column span="3":::
-   Provide the criteria to be met before the bug or user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.
+   Provide the criteria to be met before the bug or user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. You can use the acceptance criteria as the basis for acceptance tests to more effectively evaluate whether an item is satisfactorily completed.
 
    :::column-end:::
 :::row-end:::
@@ -97,7 +97,7 @@ Use the following guidance and that provided for [fields used in common across w
    :::column span="3":::
    Estimate the amount of work required to complete a user story using any numeric unit of measurement your team prefers.
 
-   Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools reference the values in this field. For additional guidance, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
+   Agile [velocity charts](../../../report/dashboards/team-velocity.md) and [forecast](../../sprints/forecast.md) tools reference the values in this field. For more information, see the [Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)) white paper.
 
    :::column-end:::
 :::row-end:::
@@ -163,14 +163,14 @@ Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the st
 
 ![Track progress on the Kanban board](../../boards/media/ALM_CC_MoveCard.png)
 
-You can customize the Kanban board to support additional [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For additional customization options, see [Customize your work tracking experience](#customize-work-tracking).
+You can customize the Kanban board to support more [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For more customization options, see [Customize your work tracking experience](#customize-work-tracking).
 
 
 ## Map user stories to features
 
-When you manage a suite of products or user experiences, you might want to view the scope and progress of work across the product portfolio. You can do this by [defining features](../../backlogs/define-features-epics.md) and [mapping user stories to features](../../backlogs/organize-backlog.md).
+When you manage a suite of products or user experiences, you might want to view the scope and progress of work across the product portfolio. You can view the scope and progress of work by [defining features](../../backlogs/define-features-epics.md) and [mapping user stories to features](../../backlogs/organize-backlog.md).
 
-Using portfolio backlogs, you can [drill down from one backlog to another](../../plans/portfolio-management.md) to view the level of detail you want. Also, you can use portfolio backlogs to view a rollup of work in progress across several teams when you [setup a hierarchy of teams](../../../organizations/settings/add-teams.md).
+Using portfolio backlogs, you can [drill down from one backlog to another](../../plans/portfolio-management.md) to view the level of detail you want. Also, use portfolio backlogs to view a rollup of work in progress across several teams when you [setup a hierarchy of teams](../../../organizations/settings/add-teams.md).
 
 ## Define tasks 
 
@@ -182,7 +182,7 @@ Name the task and estimate the work it will take.
 
 ![Agile task work item form](media/agile-task-form.png)
 
-Using Agile processes, teams forecast work and define tasks at the start of each sprint, and each team member performs a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement user stories, and a tester can define tasks to write and run test cases.
+Using Agile processes, teams forecast work and define tasks at the start of each sprint. Each team member then performs a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer defines tasks to implement user stories, and a tester defines tasks to write and run test cases.
 
 When teams estimate work using hours or days, they define tasks and the **Remaining Work** and **Activity** (optional) fields.
 
@@ -201,7 +201,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 
    :::column-end:::
    :::column span="3":::
-   The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.
+   The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it's assigned.
 
    You can specify work in hours or in days. There are no inherent time units associated with this field.
 
@@ -213,7 +213,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 
    :::column-end:::
    :::column span="3":::
-   The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate [capacity charts](../../sprints/set-capacity.md), the [sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md), and the following (TFS only) reports: [Burndown and Burn Rate](/azure/devops/report/sql-reports/burndown-and-burn-rate-report), [Remaining Work](/azure/devops/report/sql-reports/remaining-work-report), and [Status on All Iterations](/azure/devops/report/sql-reports/status-on-all-iterations-report).
+   The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate [capacity charts](../../sprints/set-capacity.md), the [sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md), and the following (TFS only) reports: [Burndown and Burn Rate](../../../report/sql-reports/burndown-and-burn-rate-report.md), [Remaining Work](../../../report/sql-reports/remaining-work-report.md), and [Status on All Iterations](../../../report/sql-reports/status-on-all-iterations-report.md).
 
    If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.
 
@@ -263,7 +263,7 @@ From the web portal or Test Manager, you can [create test cases that automatical
 
 ![Test plan web portal](media/IC793453.png)
 
-The test case contains a number of fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).
+The test case contains multiple fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).
 
 ![Test case form](media/agile-test-case-form.png)
 

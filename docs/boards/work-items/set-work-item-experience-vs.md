@@ -32,17 +32,17 @@ Each view supports the following tasks:
    :::column span="1":::
     
    
-   - [View and add work items](/azure/devops/boards/work-items/view-add-work-items)
+   - [View and add work items](./view-add-work-items.md)
    
    :::column-end:::
    :::column span="1":::
    
-   - [Add work items](/azure/devops/boards/backlogs/add-work-items)
-   - [Use the query editor to list and manage queries](/azure/devops/boards/queries/using-queries)
-   - [Organize query folders and set query permissions](/azure/devops/boards/queries/set-query-permissions)
-   - [Open query in Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel)
-   - [Email query results list using Outlook](/azure/devops/boards/queries/share-plans)
-   - [Create reports from query in Excel](/azure/devops/report/create-status-and-trend-excel-reports) (on-premises Azure DevOps Server only)
+   - [Add work items](../backlogs/add-work-items.md)
+   - [Use the query editor to list and manage queries](../queries/using-queries.md)
+   - [Organize query folders and set query permissions](../queries/set-query-permissions.md)
+   - [Open query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
+   - [Email query results list using Outlook](../queries/share-plans.md)
+   - [Create reports from query in Excel](../../report/create-status-and-trend-excel-reports.md) (on-premises Azure DevOps Server only)
    
    :::column-end:::
 :::row-end:::

@@ -1,20 +1,18 @@
 ---
-title: Add, edit, and review team delivery plans in Azure Boards
+title: Review team delivery plans in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to add, edit, and use Delivery Plans to review multi-team deliverables, rollup, and dependencies in Azure Boards. 
+description: Learn how to add, edit, and use Delivery Plans in Azure Boards to review multi-team deliverables, rollup, and dependencies  
 ms.technology: devops-agile
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'azure-devops'
-ms.date: 10/20/2021
+monikerRange: '>= tfs-2017'
+ms.date: 10/30/2021
 ---
 
 
-
-
-# Manage team Delivery Plans in Azure Boards 
+# Review team Delivery Plans in Azure Boards
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
@@ -24,7 +22,7 @@ Use the visualization options provided by Delivery Plans to review the schedule 
 > [!NOTE]   
 > This article describes using Delivery Plans 2.0 which is available for Azure DevOps Services. The next update of Azure DevOps Server, update 2, will support Delivery Plans 2.0.  For information on the Delivery Plans Marketplace extension which supports TFS 2017 and later Azure DevOps Server versions, see [Delivery Plans 1.0](../extensions/delivery-plans.md). 
 
-Use Delivery Plans to ensure your teams are aligned with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule, opening cards, expanding and collapsing teams, and more. 
+Use Delivery Plans to ensure your teams are aligned with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. Interact with the plan with simple drag-and-drop operations to update or modify the schedule, open cards, expand and collapse teams, and more. 
 
 Delivery Plans supports these tasks: 
 > - View up to 15 team backlogs, include a mix of backlogs and teams from different projects
@@ -59,18 +57,18 @@ For information on working with dependencies, see [Track dependencies](track-dep
  
 ## Review a plan with your teams
 
-It takes several teams to develop large software projects. Large projects require multiple autonomous teams. Autonomous teams manage their own backlog and priority that contributes to a unified direction for that project. Review [Agile culture](agile-culture.md) for a discussion of autonomous teams and organizational alignment. 
+It takes multiple, autonomous teams to develop large software projects. Autonomous teams manage their own backlog and priority, which contributes to a unified direction for that project. Review [Agile culture](agile-culture.md) for a discussion of autonomous teams and organizational alignment. 
 
 Regular reviews of the project schedule with these teams help ensure that the teams are working toward common goals. Delivery Plans provide the needed multi-team view of your project schedule. 
 
 Some questions you might address during the review: 
 - *How confident are the teams in meeting the deliverables scheduled for each sprint?* 
 - *Are dependencies across teams adequately addressed via the planned deliverables?* 
-- *Are there gaps in the schedule, where no deliverables are scheduled? What's the cause? Can this be mitigated?*  
+- *Are there gaps in the schedule, where no deliverables are scheduled? What's the cause? Can the issue be mitigated?*  
 
-For example, we use Delivery Plans internally to share the schedule of Features. By seeing the work many teams have planned for the next three sprints, we can easily discuss whether these priorities are right and if dependencies exist. 
+For example, we use Delivery Plans internally to share the schedule of Features. By seeing the work many teams have planned for the next three sprints, we can easily see if the plan has the right priorities and spot dependencies. 
 
-In this way, a Delivery Plan is a driver of alignment while allowing each team to keep a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
+In this way, a Delivery Plan is a driver of alignment while letting each team remain autonomous. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different projects if they use different processes. Customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
 ## Best practices for using a Delivery Plan
 
@@ -88,7 +86,7 @@ Note the following items:
 - Plan views display the set of months that correspond to the Iteration Paths selected by the teams whose backlogs appear in the plan. 
 - Plan views are limited to a maximum of 15 teams/backlogs.
 - Zooming out can cause fields and tags to disappear from the cards. The further you zoom out, the harder it is to fit items on a card. By design, we hide select items depending on the zoom level.  
--  Rollup isn't supported for child work items that belong to a different project than the originating parent work item.  
+-  Rollup isn't supported for child work items belonging to a different project than that of the originating parent work item.  
 - If the **Start Date** or **Target Date** are missing from a work item, you can add them to the custom process defined for the project as discussed in [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md#add-an-existing-field-to-another-wit).
  
 
@@ -118,7 +116,7 @@ You can interact with the plan in the following ways:
 
 - Filter the plan by choosing Choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. You can filter on any field you include in the plan Settings based on the keyword or text filter. For more information, see [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
 - Scale the size of the cards and calendar by choosing **Zoom out** :::image type="icon" source="media/plans/collapse-calendar-icon.png" border="false"::: or **Zoom in** :::image type="icon" source="media/plans/expand-calendar-icon.png" border="false":::.
-- To view previous or future months, choose **Scroll calendar left** :::image type="icon" source="media/plans/scroll-calendar-left-icon.png" border="false"::: or **Scroll calendar right** :::image type="icon" source="media/plans/scroll-calendar-right-icon.png" border="false":::. You can also scroll the plan by clicking the plan and dragging your mouse horizontally.
+- To view previous or future months, choose **Scroll calendar left** :::image type="icon" source="media/plans/scroll-calendar-left-icon.png" border="false"::: or **Scroll calendar right** :::image type="icon" source="media/plans/scroll-calendar-right-icon.png" border="false"::: . You can also scroll the plan by clicking the plan and dragging your mouse horizontally.
 - To view details for a team, expand the team row by choosing **Expand team row** or clicking once on a sprint within a team row.  
 - To expand and collapse all team rows, choose **Expand all team rows** or **Collapse all team rows** next to **Teams**.  
 - Scroll the view vertically to view teams that appear lower within the plan view. 
@@ -130,7 +128,9 @@ You can interact with the plan in the following ways:
 
 ## Collapse teams for summary information
 
-A benefit of Delivery Plans is to view multiple teams across your projects that you care about. Two main ways to view more teams within the plan view is to collapse all teams to focus on summary data and to minimize the number of fields displayed on cards. 
+A benefit of Delivery Plans is to view multiple teams across the projects that you care about. Two main ways to view more teams within the plan view:
+* Collapse all teams to focus on summary data 
+* Minimize the number of fields displayed on cards
 
 To gain a summary view of work that is schedule, collapse all teams. You can then more easily look for gaps in the forward forecast.
 
@@ -141,7 +141,7 @@ Collapse and expand each team row by choosing **Expand team row** or **Collapse 
 
 ## Show work that spans one or more iterations
 
-For work items that span one or more iterations, you can define the **Start Date** and **Target Date**. The plan displays cards that start and end according to the dates you set as shown in the following image. Also, you can grab the left or right border of a work item and drag it to a new **Start Date** or **Target Date**. 
+For work items that span one or more iterations, define the **Start Date** and **Target Date**. The plan displays cards that start and end according to the dates you set as shown in the following image. You can also grab the left or right border of a work item and drag it to a new **Start Date** or **Target Date**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing features that span iterations](media/plans/features-span-iterations-preview.png)  
@@ -168,7 +168,7 @@ You can also view rollup from a backlog view as described in [Display rollup pro
 
 ## Update the iteration for a backlog item 
 
-As changes occur to the schedule, you can update the iteration for a backlog item by moving a card to a different iteration. This update will help to drive alignment across your organization.
+As changes occur to the schedule, you can update the iteration for a backlog item. Move a card to a different iteration. This change helps drive alignment across your organization.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing moving a card to a different iteration](media/plans/move-card-iteration.png)

@@ -22,7 +22,12 @@ The following video shows the general pull request process. Some terminology and
 
 > [!VIDEO https://www.youtube.com/embed/J_DHkUKxI0E?start=0]
 
-This article describes pull request guidelines and management considerations. For instructions on how to create, view, review, and complete pull requests, see [Create, review, and manage pull requests](pull-requests.md).
+This article describes pull request guidelines and management considerations. For instructions on how to create, view, review, and complete pull requests, see the following articles:
+
+- [Create pull requests](pull-requests.md)
+- [View and open pull requests](view-pull-requests.md)
+- [Review pull requests](review-pull-requests.md)
+- [Complete pull requests](complete-pull-requests.md)
 
 ## Permissions and prerequisites
 
@@ -101,6 +106,7 @@ For more information, see:
 - [Branch policies overview](branch-policies-overview.md)
 - [How to configure branch policies](branch-policies.md)
 - [Branch permissions](branch-permissions.md)
+- [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)
 
 ## Change the default branch
 
@@ -114,7 +120,6 @@ For more information, see the following articles:
 
 - [Customize and extend pull request workflows with pull request status](pull-request-status.md)
 - [Create a PR status server with Node.js](create-pr-status-server.md)
-- [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)
 - [Configure a branch policy for an external service](pr-status-policy.md)
 
 ## Multiple merge bases
@@ -155,7 +160,9 @@ In large repos with many active contributors, this issue can be especially incon
 
 ## Next steps
 - [Improve code quality with branch policies](branch-policies.md)
+- [Customize and extend pull request workflows with pull request status](pull-request-status.md)
 - [Create a pull request](pull-requests.md)
+- [Provide reviewer guidance with pull request templates](pull-request-templates.md).
 - [View and open pull requests](view-pull-requests.md)
 - [Review pull requests](review-pull-requests.md)
 - [Pull request update notifications](pull-request-notifications.md)

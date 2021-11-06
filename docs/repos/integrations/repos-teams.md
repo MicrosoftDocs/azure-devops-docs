@@ -3,12 +3,11 @@ title: Azure Repos with Microsoft Teams
 titleSuffix: Azure Repos
 description: Monitor Azure Repos from Microsoft Teams
 ms.technology: devops-code-git
-ms.topic: conceptual
-ms.manager: gopinach
-ms.author: divais
-author: Divya
+ms.topic: conceptual 
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 10/21/2019
+ms.date: 10/28/2021
 ---
 
 # Azure Repos with Microsoft Teams
@@ -97,9 +96,7 @@ displays as shown in the following image. Use the `@azure repos` handle to start
    ```
    @azure repos subscribe https://dev.azure.com/myorg/myproject/_versionControl
    ```
-   
-   > [!NOTE]
-   > You can subscribe only to public repositories. 
+ 
 
 3. The `subscribe` command gets you started with a default subscription. For Git repositories, the channel gets subscribed to the **Pull request created** event (with target branch = master). For TFVC repositories, the channel is subscribed to the **Code checked in** event.
 

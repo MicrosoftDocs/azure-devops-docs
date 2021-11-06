@@ -182,7 +182,7 @@ You can then pay for more users with Basic access, buy more services, and purcha
    #### Manage extensions
    
    - [Install extensions](../../marketplace/install-extension.md)
-   - [Approve requests for extensions](/azure/devops/marketplace/request-extensions)
+   - [Approve requests for extensions](../../marketplace/request-extensions.md)
    - [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)
    :::column-end:::
    :::column span="1":::
