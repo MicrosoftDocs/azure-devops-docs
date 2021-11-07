@@ -1,29 +1,29 @@
 ---
-title: Bulk import or update Azure Boards work items using CSV files
+title: Import or update work items in bulk by using CSV files
 titleSuffix: Azure Boards
-description: Learn how to bulk import or update Azure Boards work items from a CSV formatted file 
+description: Learn how to import or update work items in bulk from a CSV formatted file. 
 ms.custom: "boards-queries, linked-from-support"
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: ">= azure-devops-2019"
-ms.date: 10/28/2021
+ms.date: 10/21/2021
 ---
 
-# Bulk import or update Azure Boards work items using CSV files
+# Import or update work items in bulk by using CSV files in Azure Boards
 
 [!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
 ::: moniker range="> azure-devops-2019"
 
-Do bulk import and export of work items using a CSV formatted file. While you can continue to use Excel for bulk import and updates, you can also use the native import/export feature that doesn't require Excel. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+You can import and export work items in bulk using a CSV formatted file. While you can continue to use Excel for bulk import and updates, you can use the native import/export feature that doesn't require Excel. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
 ::: moniker-end 
 
 ::: moniker range="azure-devops-2019"
 
-Do bulk export of work items using a CSV formatted file. While you can continue to use Excel for bulk import and updates, you can also use the native export feature from Queries that doesn't require Excel. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+You can export of work items in bulk using a CSV formatted file. While you continue to use Excel for bulk import and updates, you can use the native export feature from Queries that doesn't require Excel. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
 ::: moniker-end 
 
@@ -72,7 +72,7 @@ All work items you import are created in a new state. This rule means that you c
 	> [!div class="mx-imgBorder"]  
 	> ![Error message of work item ID.](media/import-csv/import-work-item-ids-assigned.png)  
 
-6. The system highlights those work items with data issues. You must resolve the data issues before you can save the work items. In this example, an invalid value has been entered into the Priority field. Fix the data by opening the work item directly. Or, use [bulk edit](../backlogs/bulk-modify-work-items.md) to fix several work items with the same issue.
+6. The system highlights those work items with data issues. Resolve the data issues before you save the work items. In this example, an invalid value has been entered into the Priority field. Fix the data by opening the work item directly. Instead, use [bulk edit](../backlogs/bulk-modify-work-items.md) to fix several work items with the same issue.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Fix work items with data issues.](media/import-csv/imported-file-error.png)
@@ -123,7 +123,7 @@ All work items you import are created in a new state. This rule means that you c
 	> [!div class="mx-imgBorder"]  
 	> ![Import Work Items Save Items.](media/import-csv/bulk-update-import.png)
 
-5. Work items with data issues are highlighted in red and must be resolved before you can save them. In this example, an invalid value appears in the Assigned To field. Fix the data by opening the work item directly. Or, you can use bulk edit if you have many work items with the same issue.
+5. Work items with data issues are highlighted in red and need to be resolved before you can save them. In this example, an invalid value appears in the Assigned To field. Fix the data by opening the work item directly. Instead, you can use bulk edit if you have many work items with the same issue.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Invalid value appears in the Assigned To field.](media/import-csv/import-update-error-1.png)
@@ -133,9 +133,9 @@ All work items you import are created in a new state. This rule means that you c
 
 ::: moniker range=">= azure-devops-2019"
 
-## Export list as CSV 
+## Export list as a CSV file
 
-From any query, you can export a list of work items as a comma-delimited list. You [open the query](view-run-query.md), choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose **Export to CSV**.
+From any query, you can export a list of work items as a comma-delimited list. [Open the query](view-run-query.md), choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose **Export to CSV**.
 
 ::: moniker-end
 
@@ -158,8 +158,7 @@ From any query, you can export a list of work items as a comma-delimited list. Y
 
 ## Export and import work items to a different project
 
-You can use this feature to export work items from one project and import them to another project. However, before importing them to another project, you must remove the work item ID. You see an error if you attempt to import new work items to a project with an ID specified. 
-
+You can use this feature to export work items from one project and import them to another project. However, before importing them to another project, you must remove the work item ID. You come across an error if you attempt to import new work items to a project with an ID specified. 
 
 ## Import or update rich-text fields 
 
@@ -222,8 +221,7 @@ Any problems with the formatting of your CSV file appear in the Results page of 
 > [!div class="mx-imgBorder"]  
 > ![CSV Error image](media/import-csv/import-error.png)
 
-The work items results always list the data errors found for individual work items. You fix each error, either from the web portal or in the CSV file, and import again.
-
+The work items' results always lists the data errors found for individual work items. Fix each error either from the web portal, or in the CSV file and import again.
 
 ::: moniker-end 
 

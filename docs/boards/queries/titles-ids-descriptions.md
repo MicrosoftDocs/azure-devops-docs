@@ -1,7 +1,7 @@
 ---
-title: Query by title, ID, or rich-text fields 
+title: Query by title, ID, or rich-text fields in Azure Boards and Azure DevOps 
 titleSuffix: Azure Boards
-description: Example work queries based on titles, IDs, rich-text fields in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Learn about work queries based on titles, IDs, and rich-text fields in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
@@ -9,10 +9,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 04/13/2021
+ms.date: 10/26/2021
 ---
 
-# Query by titles, IDs, and rich-text fields
+# Query by titles, IDs, and rich-text fields in Azure Boards and Azure DevOps
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -94,9 +94,9 @@ Query clauses that specify a text or rich-text field can use the operators and m
 
 ## Use `Contains words` for string matches
  
-When you want to filter on a string match, try using the `Contains Words` operator instead of `Contains`. The `Contains Words` operator performs a full-text search on the specified field, which is faster in most cases. Text string is limited to 100 characters. 
+When you want to filter on a string match, try using the `Contains Words` operator instead of `Contains`. The `Contains Words` operator runs a full-text search on the specified field, which is faster in most cases. Text string is limited to 100 characters. 
 
-While the `Contains` operator performs a table scan, which is not only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
+While the `Contains` operator runs a table scan, which isn't only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
 
 
 <a id="keyword"/>
@@ -124,7 +124,7 @@ For example, specify **Contains Words** and **inform&#42;** to filter on a text 
 
 Use **Contains Words** and **Does Not Contain Words** operators to list items that exactly match the words or phrase that you enter, and exclude other words or phrases. You can use these operators in combination and with the wildcard character (*).
 
-In the following example, these operators filter work items for those that contain the work *Phase* but not the word *Phasor*. 
+In the following example, these operators filter work items for those items that contain the work *Phase* but not the word *Phasor*. 
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of Query Editor to include and exclude exact words.](media/text-queries/contains-words-exact-query.png)
@@ -162,7 +162,7 @@ For example, the following query filters will list all work items where some ent
 
 <a id="category"/>
 
-## Category based queries
+## Category-based queries
 
 To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria will return all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category.
 
@@ -181,7 +181,7 @@ The default assignments of work item types to each category are listed below for
 | Scrum | Product Backlog Item, Bug | Task |
 | CMMI | Requirement | Task |
 
-However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
+Each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). You can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
 
 
 ::: moniker range=">= tfs-2017"
@@ -191,7 +191,7 @@ However, each team can determine if the Bug work item type appears in either the
 
 ## Query for work items that you're following
 
-You can use the **@Follows** macro to filter a list based on work items you're following in addition to other query filters. 
+You can use the **@Follows** macro to filter a list based on work items you're following along with other query filters. 
 
 For example, the following query shows how to query across all projects for active work items that you're following. You use the ID field and the In operator with the **@Follows** macro.  
 
@@ -291,8 +291,7 @@ The following table describes common fields used to filter queries. The **ID** f
    Repro Steps (or Steps to reproduce) <sup>1</sup> 
    :::column-end:::
      :::column span="2":::
-   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior. 
-    
+   The steps that are required to reproduce unexpected behavior. Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior.   
    Reference name=Microsoft.VSTS.TCM.ReproSteps, Data type=HTML
    :::column-end:::
    :::column span="1":::

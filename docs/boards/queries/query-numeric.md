@@ -1,7 +1,7 @@
 ---
-title: Query by numeric fields
+title: Query by numeric fields based on effort, schedules, and story points
 titleSuffix: Azure Boards
-description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards, Azure DevOps, & Team Foundation Server
+description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards and Azure DevOps.
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
@@ -9,10 +9,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 10/03/2019
+ms.date: 10/25/2021
 ---
 
-# Query by numeric fields    
+# Query by numeric fields in Azure Boards and Azure DevOps   
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -29,14 +29,14 @@ Query clauses that specify a numeric field can use the operators listed below.
 - In, Not In 
 - Was Ever
 
-## Tips for developing chart-based-queries: 
+## Tips for developing chart-based queries
 
 - You can only add charts for flat-list queries  
 - Chart options reference either query filters or fields displayed through column options
 - Save changes you make to your query prior to adding or modifying a chart. 
-- To group one or more clauses, select them and then choose the ![Group Query Clause icon](../media/icons/group-clauses-icon.png) group clauses icon. To ungroup, click on the grouped clause. 
+- To group one or more clauses, select them and then choose the ![Group Query Clause icon](../media/icons/group-clauses-icon.png) group clauses icon. To ungroup, select on the grouped clause. 
 
-For additional details on creating queries and chart-based-queries, see [Use the query editor to list and manage queries](using-queries.md) and [Charts](../../report/dashboards/charts.md).  If you want to add a custom field to track and generate sums of other numeric values, see [Add or modify a field](../../reference/add-modify-field.md).
+For more details on creating queries and chart-based queries, see [Use the query editor to list and manage queries](using-queries.md) and [Charts](../../report/dashboards/charts.md).  If you want to add a custom field to track and generate sums of other numeric values, see [Add or modify a field](../../reference/add-modify-field.md).
 
 ### Useful filters 
 
@@ -106,7 +106,7 @@ All queries show a count of items when you run the query. Here we define a flat-
 
 ![Query bugs any state, count of work items summary](media/query-effort-active-bugs-count-summary.png)  
 
-In addition, all charts contain a Values selection designed to display a count of work items within the chart. 
+Also, all charts contain a Values selection designed to display a count of work items within the chart. 
 
 ### Count of bugs per developer
 
@@ -151,7 +151,7 @@ To list work items based on a field that isn't blank, use the not operator (<>) 
 
 ## Effort or story point queries and charts  
 
-You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
+You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow articles.  
 
 ### Sum of story points and their status   
 
@@ -177,7 +177,7 @@ Then, add a stacked bar chart that sums the Story Points.
 
 For information on system-defined cumulative flow diagrams, see [Cumulative flow](../../report/dashboards/cumulative-flow.md).
 
-### Burnup chart of user stories for an iteration 
+### Burn up chart of user stories for an iteration 
 
 Create a query that filters for User Story as the work item type and in the Active or Closed state. Modify the column options to show Story Points. 
 
@@ -210,7 +210,7 @@ Based on the process your project references, you can assign the following field
 
 ### Sum of remaining work per developer 
 
-If you follow Scrum practices and estimate Remaining Work for your tasks and bugs, you can get a roll up of the amount of work remaining for each developer with the following query and chart. By using the In operator and including both Task and Bug, you include any bugs that are being tracked as tasks. 
+If you follow Scrum practices and estimate Remaining Work for your tasks and bugs, you can get a rollup of the amount of work remaining for each developer with the following query and chart. By using the In operator and including both Task and Bug, you include any bugs that are being tracked as tasks. 
 
 <img src="media/query-effort-tasks-bugs-list.png" alt="Query of tasks and bugs for sprint" />  
 
@@ -258,7 +258,7 @@ The following table describes the activity-based and numeric fields that you can
 
    :::column-end:::
    :::column span="2":::
-   The type of activity that is required to perform a task.To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:
+   The type of activity that is required to complete a task.To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:
    - Deployment
    - Design
    - Development
@@ -335,7 +335,7 @@ The following table describes the activity-based and numeric fields that you can
    :::column span="2":::
    A subjective unit of measure that captures the size of a bug or product backlog item. If you assign more effort to an item, you indicate that more work is required to implement it.  
 
-   This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to `Effort` in the ProcessConfiguration file.
+   This field <sup>3</sup> is also used to calculate team velocity and forecasting. It's assigned to `Effort` in the ProcessConfiguration file.
 
    Reference name=Microsoft.VSTS.Scheduling.Effort, Data type=Double
 
@@ -354,7 +354,7 @@ The following table describes the activity-based and numeric fields that you can
    :::column span="2":::
    A subjective unit of measure that captures the size of a user story. If you assign more points to a user story, you indicate that more work is required to implement it.
 
-   This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to `Effort` in the ProcessConfiguration file. 
+   This field <sup>3</sup> is also used to calculate team velocity and forecasting. It's assigned to `Effort` in the ProcessConfiguration file. 
 
    Reference name=Microsoft.VSTS. Scheduling.StoryPoints, Data type=Double
 
@@ -370,7 +370,7 @@ The following table describes the activity-based and numeric fields that you can
    :::column span="2":::
    A subjective unit of measure that captures the size of a requirement. The larger the size, the more work is required to implement it.  
 
-   This field<sup>3</sup>  is also used to calculate team velocity and forecasting. It is assigned to `Effort` in the ProcessConfiguration file. 
+   This field<sup>3</sup>  is also used to calculate team velocity and forecasting. It's assigned to `Effort` in the ProcessConfiguration file. 
 
    Reference name=Microsoft.VSTS. Scheduling.Size, Data type=Double
 
@@ -399,7 +399,6 @@ The following table describes the activity-based and numeric fields that you can
    :::column-end:::
    :::column span="2":::
    The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.
-
    This field <sup>3</sup> is also used to calculate burn down. It is assigned to `type="RemainingWork"` in the ProcessConfiguration file.
    > [!NOTE]
    > For Azure Boards, the taskboard always shows &quot;h&quot; for hours in relationship to Remaining Work. For TFS, you can modify the ProcessConfiguration file for the Remaining Work type field to specify &quot;d&quot; for days, or other preferred label. 
@@ -483,7 +482,7 @@ For more information on using work items and queries, see:
 
 ### Rollup numeric values across work item types  
 
-Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard. For other rollup requirements, see the following topics: 
+Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard. For other rollup requirements, see the following articles: 
 - [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md)  
 - [Create rollup charts with Power BI](../../report/powerbi/data-connector-connect.md)  
 
@@ -501,6 +500,6 @@ The default assignments of work item types to each category are listed below for
 
 However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
-Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
+You can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
