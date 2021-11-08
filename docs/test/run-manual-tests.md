@@ -149,7 +149,7 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 1. Launch the test runner client from Azure Test Plans by choosing **Run for desktop application** from the **Run** menu. 
 
-   ![Screenshot shows launching the Test Runner client.](media/shared/run-test-desktop-application.png)
+   ![Screenshot shows launching the Test Runner client.](media/run-manual-tests/run-test-desktop-application.png)
 
 1. **Download** and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload) if you haven't already set it up:
 
@@ -203,7 +203,7 @@ You can reset the state of a test to active if you want to rerun it.
 
 You can choose a build to run tests against. Select **Run** and then select **Run with options**.
 
-![Screenshot shows running a test for web application with options.](media/shared/run-web-application-test-options.png) 
+![Screenshot shows running a test for web application with options.](media/run-manual-tests/run-web-application-test-options.png) 
 
 Select the build you want from the drop-down list.
 
@@ -234,7 +234,7 @@ You can add a screenshot to the test results while running a test.
 If you use Google Chrome or Firefox, use the web runner to take screenshots of the web app while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Screenshot shows the button for capturing a screenshot during a test.](media/shared/test-capture-screen.png)
+![Screenshot shows the button for capturing a screenshot during a test.](media/run-manual-tests/test-capture-screen.png)
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-screenshot).
 
@@ -245,7 +245,7 @@ You can capture your actions on the app as a log.
 If you use Google Chrome or Firefox, use the web runner capture your actions on the web app as image logs while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Screenshot show the button for capturing an image action log from the app.](media/shared/test-capture-action.png)
+![Screenshot show the button for capturing an image action log from the app.](media/run-manual-tests/test-capture-action.png)
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-log).
 
@@ -256,7 +256,7 @@ You can capture screen recordings of my app during testing.
 If you use Google Chrome or Firefox, use the web runner to capture screen recordings of your web and desktop apps while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Screenshot show the button for capturing a screen recording from the app.](media/shared/test-capture-screen-recording.png)
+![Screenshot show the button for capturing a screen recording from the app.](media/run-manual-tests/test-capture-screen-recording.png)
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
 
