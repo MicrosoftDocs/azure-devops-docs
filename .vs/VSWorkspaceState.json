@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\docs",
+    "\\docs\\pipelines",
+    "\\docs\\pipelines\\tasks",
+    "\\docs\\pipelines\\tasks\\build"
+  ],
+  "SelectedNode": "\\docs\\pipelines\\tasks\\build\\msbuild.md",
+  "PreviewInSolutionExplorer": false
+}

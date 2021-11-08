@@ -6,7 +6,7 @@ ms.topic: reference
 ms.custom: seodec18, devx-track-azurecli
 ms.author: ushan
 author: N-Usha
-ms.date: 10/12/2021
+ms.date: 11/08/2021
 monikerRange: '> tfs-2018'
 ---
 
@@ -121,20 +121,29 @@ Following is an example of a YAML snippet that lists the version of Azure CLI an
 
 The following example illustrates how to pass arguments to your script.
 
-```yaml
-- task: AzureCLI@2
-  displayName: Azure CLI
-  inputs:
-    azureSubscription: <Name of the Azure Resource Manager service connection>
-    scriptType: ps
-    scriptLocation: inlineScript
-    arguments:
-      -Arg1 val1 `
-      -Arg2 val2 `
-      -Arg3 val3
-    inlineScript: |
-      az login --allow-no-subscription
-```
+- Passing arguments to inline scripts: 
+
+    ```yaml
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: <Azure_Resource_Manager_Service_Connection>
+        scriptType: 'ps'
+        scriptLocation: 'inlineScript'
+        arguments: '$(AZURE_STORAGE_ACCOUNT) $(AZURE_STORAGE_KEY)'
+        inlineScript: './scripts/publish.ps1 $1 $2'
+    ```
+
+- Passing arguments with script path:
+
+    ```yaml
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: <Azure_Resource_Manager_Service_Connection>
+        scriptType: 'ps'
+        scriptLocation: 'scriptPath'
+        arguments: '$(AZURE_STORAGE_ACCOUNT) $(AZURE_STORAGE_KEY)'
+        scriptPath: './scripts/publish.ps1'
+    ```
 
 ::: moniker-end
 
