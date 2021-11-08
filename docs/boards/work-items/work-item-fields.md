@@ -1,22 +1,68 @@
 ---
-title: Work item fields, attributes and how to list them
+title: View or list work item fields and attributes 
 titleSuffix: Azure Boards
-description: Understand how fields are defined and modified 
+description: Understand how to view and list fields and the attributes that define them. 
 ms.custom: work-items
 ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.topic: how-to
+ms.date: 11/04/2021 
 ---
 
-# Work item fields and attributes
+
+# View work item fields and attributes
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-Work item fields are used to track information. Each work item type (WIT) definition specifies the fields defined for that WIT. Each field is associated with a number of attributes, many of which are set by the system and cannot be changed. 
+::: moniker range="azure-devops"
+Work item fields are used to track information. Fields are defined for an organization and shared across all projects defined for that organization. You can use one of two tools to review the fields defined for the organization. These tools are available for both Inherited and Hosted XML process models. 
+
+- [Process>Fields web page](#review-fields) 
+- [Work Item Field Explorer](#wi-explorer)  
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+Work item fields are used to track information. Fields are defined for a collection and shared across all projects defined for that collection. You can use one of two tools to review the fields defined for the Collection. 
+
+- [Process>Fields web page](#review-fields): Available for Inherited process model 
+- [Work Item Field Explorer](#wi-explorer): Available for Inherited and On-premises XML process models.  
+::: moniker-end
+
+
+::: moniker range="< azure-devops-2019"
+Work item fields are used to track information. Fields are defined for a collection and shared across all projects defined for that collection. To view all fields defined for a collection, you can use the [Work Item Field Explorer](#wi-explorer) tool, a plug-in to Visual Studio.   
+::: moniker-end
+
+For a description of each field defined with a system process, see [Work item field index](guidance/work-item-field.md).  
+
+## Prerequisites 
+
+- To view the fields defined for an organization or collection, you must be a member of the **Project Collection Valid Users** application group or have the **View instance-level information** permission set to **Allow** for the organization or collection.
+
+
+<a id="list-fields"></a> 
+
+### List or review fields  
+
+To list or review fields, you can use one of the following tools, depending on the process model&mdash;Inheritance, Hosted XML, or On-premises XML&mdash;you use. For an index of fields defined within the default processes, see [Work item field index](guidance/work-item-field.md).  
+
+| Tool | Inheritance | Hosted XML | On-premises XML |
+| --- | --- | --- | --- |
+| [Web portal: List inherited and custom-defined fields](#review-fields) | ✔️  | ✔️1 |     |
+| [Work item field explorer](#wi-explorer) | ✔️  | ✔️  | ✔️  |
+| [witadmin listfields command line tool](../../reference/witadmin/manage-work-item-fields.md) | ✔️  | ✔️  | ✔️  |
+ 
+> [!NOTE]  
+> 1. Only supported for default processes (Agile, CMMI, Scrum). 
+ 
+
+
+## Field data types and names 
+
+Each work item type specifies the fields defined for the work items that reference that type. Each field is associated with a number of attributes, many of which are set by the system and cannot be changed. 
 
 Each field is defined by the following three attributes. 
 - **Data type**: Specifies the type of data that can be entered into the field, such as Boolean, Double, Integer, HTML, and String. For descriptions of each data type, see [Query fields, operators, and macros](../queries/query-operators-variables.md#field-values). 
@@ -25,15 +71,26 @@ Each field is defined by the following three attributes.
  
 For a description of each field attribute and how you can list them, see [Field attributes](#field-attributes) and [List field attributes](#list-attributes) later in this article. For an overview of WITs and work items, see [Track work with user stories, issues, bugs, features, and epics](about-work-items.md). 
 
-## Field names
 
-The field friendly name identifies each work item field. When adding a custom field, make sure the friendly name falls within these guidelines:  
+### What is a field? How are field names used?  
 
-- Must be unique within the organization or project collection  
-- Must be 128 or fewer Unicode characters  
-- Can't contain any leading or trailing spaces, nor two or more consecutive spaces  
-- Must contain at least one alphabetic character  
-- Can't contain the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>```.   
+Each [work item type](../backlogs/add-work-items.md) is associated with 31 system fields and several more type-specific fields. You use work items to plan and track your project.  
+
+Each field supports tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store which you can create queries to determine status and trends.    
+
+For descriptions and usage of each field defined for the core system processes&mdash;[Agile, Basic, Scrum, and CMMI processes](guidance/choose-process.md)&mdash;see [Work item field index](guidance/work-item-field.md).  
+
+### Field names  
+
+A work item field name uniquely identifies each work item field. Make sure your field names fall within these guidelines:  
+
+- Field names must be unique within the account/project collection  
+- Field names must be 128 or fewer Unicode characters  
+- Field names can't contain any leading or trailing spaces, nor two or more consecutive spaces  
+- Field names must contain at least one alphabetic character  
+- Field names can't contain the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>```.   
+
+Because custom fields are defined for an organization or collection, you can't add a custom field to a process with the same field name that you add to another process.  
 
 For additional information, see [Naming restrictions and conventions](../../organizations/settings/naming-restrictions.md#work-items-work-item-types-and-customizations).
 
@@ -61,31 +118,29 @@ When adding custom fields, note the following limits:
 
 The field data type determines the kind and size of data that you can store in the field. A field can have only one type defined within a project collection. This restriction encourages organizations to use common fields across projects and work item types.
 
-
 ::: moniker range=">= azure-devops-2019"
 
 When you add a custom field to an inherited process, Azure DevOps assigns a reference name prefixed with *Custom* and then the name of the field with spaces removed. For example, you add a field named *DevOps Triage*, the reference name is **Custom.DevOpsTriage**. No spaces are allowed within the reference name.  
 
 ::: moniker-end
 
-
 ## How can I determine the field data type? 
 
 ::: moniker range="azure-devops"
 
-You can view the data type of fields defined for your organization by [opening the Process>Fields page](../../organizations/settings/work/customize-process-field.md#review-fields).
+You can view the data type of fields defined for your organization by [opening the Process>Fields page](#review-fields).
 
 > [!div class="mx-imgBorder"]  
-> ![Process>Fields page](../../organizations/settings/work/media/process/list-fields.png)  
+> ![Process>Fields page](media/fields/list-fields.png)  
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-When your project collection uses the Inheritance process model to customize work tracking, you can view the data type of fields by [opening the Process>Fields page](../../organizations/settings/work/customize-process-field.md#review-fields). 
+When your project collection uses the Inheritance process model to customize work tracking, you can view the data type of fields by [opening the Process>Fields page](../work-items/work-item-fields.md#review-fields). 
 
 > [!div class="mx-imgBorder"]  
-> ![Process>Fields page](../../organizations/settings/work/media/process/list-fields.png)  
+> ![Process>Fields page](media/fields/list-fields.png)  
 
 If the On-premises XML process model is used, you can look up the data type through the [Work item field index](guidance/work-item-field.md). Or, you can open the Work Item Field Explorer to review the fields defined and their attribute assignments, or use the **witadmin listfields** command to list the field attributes. For details, see [Work Item Field Explorer](#wi-explorer) and [List field attributes](#list-attributes) later in this article.
 
@@ -97,7 +152,57 @@ You can look up the data type through the [Work item field index](guidance/work-
 
 ::: moniker-end
 
+<a id="review-fields" />
 
+::: moniker range=">= azure-devops-2019"
+
+## Process>Fields web page 
+
+To review the list of fields defined for an organization or collection, open **Organization settings>Process>Fields**.   
+
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose Organization settings.](/azure/devops/media/settings/open-admin-settings-vert.png)  
+
+1. Then, choose **Process**. 
+   
+	> [!div class="mx-imgBorder"]  
+	> ![Choose Process.](/azure/devops/organizations/settings/work/media/process/open-process-page-s150.png) 
+
+	> [!NOTE]  
+	> If you don't see **Process**, then you're working from TFS-2018 or earlier version. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../reference/customize-work.md).
+
+1. Then, choose **Fields**. 
+
+	Fields listed correspond to all fields defined for the organization or collection. This includes all custom fields and those defined for system processes. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Make a copy of a selected inherited process](media/fields/list-fields.png) 
+
+	> [!NOTE]  
+	> If you don't see **Fields**, then you're collection uses the On-premises XML process. The Fields page isn't supported for that process.  
+
+	For descriptions and usage of each field, as well as the Reference name for each field, you can look it up from the [Work item field index](guidance/work-item-field.md). You can also get the Reference name of fields from the [Work Item Types Field - List REST API](/rest/api/azure/devops/wit/work-item-types-field/list).
+
+
+::: moniker-end
+
+
+<a id="wi-explorer" />
+
+## Work Item Field Explorer 
+
+You can look up the assignments of field attributes using the Work Item Field Explorer tool.  
+
+![Work item field explorer](media/fields/work-item-field-explorer.png)
+
+
+To access the Work Item Field Explorer, you must install the Process Editor Tool. Based on the version of Visual Studio you have installed, get the Process Editor Tool from one of the following extensions. 
+
+[!INCLUDE [temp](../../includes/process-editor-tool.md)]
+
+ 
 <a id="field-attributes" />
 
 ## Field attributes
@@ -697,21 +802,6 @@ The **Use** parameter indicates the name of each project and the work item type 
 
 ::: moniker-end
 
-
-<a id="wi-explorer">  </a>
-
-## Work Item Field Explorer 
-
-You can look up the assignments of field attributes using the Work Item Field Explorer tool.  
-
-![Work item field explorer](media/fields/work-item-field-explorer.png)
-
-
-To access the Work Item Field Explorer, you must install the Process Editor Tool. Based on the version of Visual Studio you have installed, get the Process Editor Tool from one of the following extensions. 
-
-[!INCLUDE [temp](../../includes/process-editor-tool.md)]
-
- 
 
 ::: moniker range="<= tfs-2018"  
 
