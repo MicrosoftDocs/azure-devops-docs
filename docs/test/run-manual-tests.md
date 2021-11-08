@@ -31,7 +31,7 @@ You can use the web runner for web apps, or the desktop runner for desktop app d
 
 1. Select a test from a test suite and run it.
       
-   ![Select and run a specific test](media/run-manual-tests/RunTest_2.png)
+   ![Screenshot shows how to select and run a specific test.](media/run-manual-tests/run-test-web-application.png)
 
    Microsoft Test Runner opens and runs in a new browser.
 
@@ -41,19 +41,19 @@ You can use the web runner for web apps, or the desktop runner for desktop app d
    might run Test Runner on a desktop computer and run your Windows 8 store 
    app that you test on a Windows 8 tablet.
 
-   ![Use Microsoft Test Runner to record your test results](media/run-manual-tests/RunTestsStartApp.png)
+   ![Screenshot shows Test Runner recording your test results.](media/run-manual-tests/test-runner-results.png)
 
 1. Mark each test step as either passed or failed based on the expected results. If a test step fails, you can enter a comment on why it failed  or
    [collect diagnostic data for the test](collect-diagnostic-data.md).
 
-   ![Mark test steps](media/run-manual-tests/RunTest_3.png)
+   ![Screenshot shows Test Runner open to a failed test where you can enter a comment.](media/run-manual-tests/test-result-enter-comment.png)
 
    > [!IMPORTANT]
    >  Any test step that has expected result is called a validation test step. Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.
  
 1. Create a bug to describe what failed.
 
-   ![Submit a bug](media/run-manual-tests/RunTest_4.png)
+   ![Screenshot shows Test Runner with Create bug selected and the new bug dialog box open.](media/run-manual-tests/create-bug-test-fail.png)
 
    The steps and your comments are automatically added to the bug. Also, 
    the test case is linked to the bug.
@@ -63,7 +63,7 @@ You can use the web runner for web apps, or the desktop runner for desktop app d
 
 1. You can see any bugs reported during your test session.
 
-   ![Bugs logged](media/run-manual-tests/RunTest_5.png)
+   ![Screenshot shows the number of bugs created during the test.](media/run-manual-tests/see-reported-bugs.png)
 
 1. When you've run all your tests, save the results and close Test Runner. 
    All the test results are stored in Azure Test Plans.
@@ -72,13 +72,13 @@ You can use the web runner for web apps, or the desktop runner for desktop app d
 1. View the testing status for your test suite.
    You see the most recent results for each test.
 
-   ![View test results](media/run-manual-tests/RunTest_8.png)
+   ![Screenshot shows the result of running test cases, with outcomes of Active, Failed, and Passed displayed.](media/run-manual-tests/test-case-outcome.png)
 
 1. Open a test and choose the test case in the **Related Work** section.
    Then use the **Child** links in the **Related Work** section of that 
    work item to view the bugs filed by the tester.
    
-   ![View bugs filed](media/run-manual-tests/view-bugs.png)  
+   ![View bugs filed](media/run-manual-tests/related-work-shows-bugs.png)  
 
 [Can I run tests offline and then import the results?](reference-qa.md#runoffline)
 ::: moniker-end
@@ -149,11 +149,11 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 1. Launch the test runner client from Azure Test Plans by choosing **Run for desktop application** from the **Run** menu. 
 
-   ![Launching the test runner client](media/shared/collect-diagnostic-data-16.png)
+   ![Screenshot shows launching the Test Runner client.](media/shared/run-test-desktop-application.png)
 
 1. **Download** and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload) if you haven't already set it up:
 
-   ![Download and launch Test runner](media/run-manual-tests/tr-atp-launch.png)
+   ![Screenshot shows the Run for desktop application dialog box with options to download and launch Test Runner.](media/run-manual-tests/tr-atp-launch.png)
 
    > [!NOTE]
    > Check that the Test Runner client is available for your platform. Currently, the Test Runner client is available only for x64.
@@ -194,7 +194,7 @@ Select a test suite and choose **Run** to run all the active tests.
 If you haven't run a test yet, its state is active.
 You can reset the state of a test to active if you want to rerun it.  
 
-![Select and run all active tests in a test suite](media/run-manual-tests/RunTestsRunSuite.png)
+![Screenshot shows how to select and run all active tests in a test suite.](media/run-manual-tests/run-test-test-suite.png)
 
 If you haven't run a test yet, its state is active.
 You can reset the state of a test to active if you want to rerun it.  
@@ -203,11 +203,11 @@ You can reset the state of a test to active if you want to rerun it.
 
 You can choose a build to run tests against. Select **Run** and then select **Run with options**.
 
-![Starting a test with options](media/shared/collect-diagnostic-data-16.png) 
+![Screenshot shows running a test for web application with options.](media/shared/run-web-application-test-options.png) 
 
 Select the build you want from the drop-down list.
 
-![Selecting the build to include a link to in the results](media/run-manual-tests/select-build-for-webrunner.png) 
+![Screenshot shows the Run with options dialog box with a build selected.](media/run-manual-tests/run-test-select-build.png)
 
 Any bug filed during the run will automatically be associated with the selected build.
 The test outcome will be published against that build.
@@ -221,11 +221,11 @@ You can fix problems with your test steps while the test is still running.
 
 Use the edit icon next to the test step number to insert, reorder, or delete steps. You can also edit the text itself.
 
-![Select the edit icon to edit test steps](media/run-manual-tests/RunTest_11.png) 
+![Screenshot shows how to select the edit icon to edit test steps.](media/run-manual-tests/edit-icon-test-run.png)
 
 The tool to edit the test steps is shown.
 
-![Fix test steps when you run a test](media/run-manual-tests/RunTest_9.png) 
+![Screenshot shows the tool to edit test steps when you run a test.](media/run-manual-tests/edit-test-step.png)
 
 ### Add a screenshot
 
@@ -234,7 +234,7 @@ You can add a screenshot to the test results while running a test.
 If you use Google Chrome or Firefox, use the web runner to take screenshots of the web app while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Capturing a screenshot from the app](media/shared/collect-diagnostic-data-01.png) 
+![Screenshot shows the button for capturing a screenshot during a test.](media/shared/test-capture-screen.png)
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-screenshot).
 
@@ -245,7 +245,7 @@ You can capture your actions on the app as a log.
 If you use Google Chrome or Firefox, use the web runner capture your actions on the web app as image logs while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Capturing an image action log from the app](media/shared/collect-diagnostic-data-06.png) 
+![Screenshot show the button for capturing an image action log from the app.](media/shared/test-capture-action.png)
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-log).
 
@@ -256,7 +256,7 @@ You can capture screen recordings of my app during testing.
 If you use Google Chrome or Firefox, use the web runner to capture screen recordings of your web and desktop apps while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Capturing a screen recording from the app](media/shared/collect-diagnostic-data-11.png) 
+![Screenshot show the button for capturing a screen recording from the app.](media/shared/test-capture-screen-recording.png)
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
 
@@ -270,4 +270,3 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 ## Related articles
 
 - [FAQs for manual testing](reference-qa.md#runtests)
-
