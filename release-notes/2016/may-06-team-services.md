@@ -96,21 +96,23 @@ Additionally, you’ll find these new features:
  
 ![Simplified release definition wizard](media/5_06_11.png)
 
--**New Job Execution Variables.** Below are a set of variables now available that let you access information about artifact sources when executing deployment jobs. These variables are available in the format: RELEASE_ARTIFACTS_\<Alias\>_\<VariableName\>.\<Alias\> represents the artifact source that is included in the release definition. You can find the name of the alias in the Artifacts tab of a release definition. \<VariableName\> will be one of the following: 
- 
-DEFINITIONID
-BUILDNUMBER
-BUILDID
-REPOSITORY_NAME
-SOURCEBRANCH
-SOURCEBRANCHNAME
-SOURCEVERSION
-BUILDURI
-REQUESTEDFORID
-REPOSITORY_PROVIDER
-REQUESTEDFOR
-TYPE
-Note: For scripts, replace the underscore with a period.
+-**New Job Execution Variables.** Below are a set of variables now available that let you access information about artifact sources when executing deployment jobs. These variables are available in the format: RELEASE_ARTIFACTS_\<Alias\>_\<VariableName\>.\<Alias\> represents the artifact source that is included in the release definition. You can find the name of the alias in the Artifacts tab of a release definition. \<VariableName\> will be one of the following:
+
+- DEFINITIONID
+- BUILDNUMBER
+- BUILDID
+- REPOSITORY_NAME
+- SOURCEBRANCH
+- SOURCEBRANCHNAME
+- SOURCEVERSION
+- BUILDURI
+- REQUESTEDFORID
+- REPOSITORY_PROVIDER
+- REQUESTEDFOR
+- TYPE
+
+> [!NOTE]
+> For scripts, replace the underscore with a period.
 
 ## Improved build and pull request traceability
 
