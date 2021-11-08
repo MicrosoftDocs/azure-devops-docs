@@ -144,7 +144,6 @@ As you look through the audit events, you may find the *Category* and *Area* col
 
 |Area            |Description |
 |----------------|------------|
-| Artifacts      | (Audit Streaming only) |
 | Auditing       | View and download audit logs. Access, create, modify, enable, disable, and delete audit streams. |
 | Billing        | Add, change, or remove Azure Subscriptions. Modify billing quantities for Pipelines, Artifacts, and Cloud Load Test usage.  |
 | Checks         | Create, modify, delete, and track usage of checks including approvals on protected resources in Azure Pipelines (YAML only). |
@@ -193,6 +192,11 @@ The following limitations exist for what can be audited.
 
 * Azure Active Directory (Azure AD) group membership changes – Auditing Logs include updates to Azure DevOps groups and group membership (when an event Area is "Groups"). However, if you manage membership via Azure AD groups, such additions and removals of users from those Azure AD groups are not audited by Azure DevOps in these logs. Review the Azure AD audit logs to see when a user or group was added or removed from an Azure AD group. 
 * Sign in events – We don't track sign in events for Azure DevOps. View the Azure AD audit logs to review sign in events to your Azure AD. 
+
+## Frequently Asked Questions
+
+### Q: What is the DirectoryServiceAddMember group and why is it appearing on the audit log?
+A: The DirectoryServiceAddMember group is a system group used to help manage membership to your Azure DevOps organization. Membership to this system group can be affected by a number of system, user, and administrative actions. As this group is a system group used only for internal processes, customers can disregard audit log entries which capture membership changes to this group. 
 
 ## Related articles
 - [Auditing streaming](auditing-streaming.md)
