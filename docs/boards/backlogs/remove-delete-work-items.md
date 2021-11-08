@@ -1,7 +1,7 @@
 ---
 title: Remove, delete, and restore work items in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to remove, delete, or restore work items in Azure Board3s to manage backlogs and boards more efficiently.
+description: Learn how to remove, delete, or restore work items in Azure Boards to manage backlogs and boards more efficiently.
 ms.custom: "boards-backlogs, seodec18, contperf-fy21q2, linked-from-support"  
 ms.technology: devops-agile
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 10/28/2021
 ---
 
 # Remove, delete, or restore work items in Azure Boards
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-Work items can live forever in your work tracking data store. You never have to delete them. However, you may want to implement a work item management process for one of the following actions: 
+Work items can live forever in your work tracking data store. You never have to delete them. However, you might want to set up a work item management process for one of the following actions: 
 
 ::: moniker range=">= tfs-2017"
 - **Change state**: Remove work items from appearing on backlogs and boards by changing the work item **State** to *Remove* or *Cut*.  
@@ -138,7 +138,8 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 	To delete a single work item, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: **Actions**, and select **Delete**. 
 
 	> [!div class="mx-imgBorder"]
-	> ![work item form, actions menu, Delete](media/move-change-delete/delete-work-item.png)  
+	> ![work item form, actions menu, Delete](media/move-change-delete/delete-work-item.png) 
+ 
 	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md) and then choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
 
 	> [!div class="mx-imgBorder"]
@@ -215,7 +216,7 @@ You restore deleted work items or permanently delete them from the web portal Re
 	If you don't see the **Recycle Bin** option, choose **More commands &hellip;** and choose it from the menu of options.
 
 	> [!NOTE]   
-	> Deleted test artifacts won't appear in the **Recycle Bin** and can't be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
+	> Deleted test artifacts won't appear in the **Recycle Bin** and can't be restored. Deletion of test artifacts deletes the selected test artifact and all of its associated child items, such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
 
 1.  A new browser tab opens with the query that lists work items added to the Recycle Bin. 
 1.	Select the items you want to restore and then choose **Restore**.  
