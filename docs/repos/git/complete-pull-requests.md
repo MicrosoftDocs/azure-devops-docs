@@ -405,8 +405,9 @@ Set autocomplete to complete a PR automatically when it passes all required appr
 
 <a name="abandon-the-pr"></a>
 <a name="abandon-a-pr"></a>
+<a name="abandon-a-pull-request"></a>
 
-## Abandon a pull request
+## Abandon or reactivate a pull request
 
 # [Browser](#tab/browser)
 To abandon your changes and your PR without merging, select **Abandon** from the dropdown list on the **Complete** button. You can still view the abandoned PR, and it stays linked to work items.
