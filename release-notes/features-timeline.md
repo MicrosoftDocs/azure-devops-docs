@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 11/02/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -35,18 +35,17 @@ Each feature is linked to the public roadmap project where you can learn more ab
         </tr>
     </thead>
     <tbody>
-<tr><td rowspan="6"><strong>2021 Q4</strong></td>
+<tr><td rowspan="5"><strong>2021 Q4</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924" data-raw-source="[Accessibility and UX Modernization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924)">Accessibility and UX Modernization</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640 data-raw-source="[Azure DevOps Server Integration with GitHub.com](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844640)">Azure DevOps Server Integration with GitHub.com</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641 data-raw-source="[Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844641)">Delivery Plans - Toggle Dependency Lines (aka Spaghetti Chart)</a></td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330 data-raw-source="[Automatically retry a task](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859330)">Automatically retry a task</a></td><td>Pipelines</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348 data-raw-source="[Support Pipelines App with GitHub Enterprise](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1859348)">Support Pipelines App with GitHub Enterprise</a></td><td>Pipelines</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887 data-raw-source="[Show Link with Parent Name in Query Results Widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887)">Show Link with Parent Name in Query Results Widget</a></td><td>Reporting</td><td>Future</td>
 </tr>
 <tr><td rowspan="3"><strong>2022 Q1</strong></td>
-    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887)">Show Link with Parent Name in Query Results Widget</a></td><td>Pipleines</td><td>N/A</td>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421" data-raw-source="[Deprecate windows-2016 and macOS-10.14 images](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421)">Deprecate windows-2016 and macOS-10.14 images</a></td><td>Pipleines</td><td>N/A</td>
+    <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421" data-raw-source="[Deprecate windows-2016 and macOS-10.14 images](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888421)">Deprecate windows-2016 and macOS-10.14 images</a></td><td>Pipelines</td><td>N/A</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423" data-raw-source="[Deprecate Node 10 from agent and tasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1888423)">Deprecate Node 10 from agent and tasks</a></td><td>Pipelines</td><td>N/A</td>
+    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887" data-raw-source="[Show Link with Parent Name in Query Results Widget](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1875887)">Show Link with Parent Name in Query Results Widget</a></td><td>Reporting</td><td>Future</td>
 </tr>
 <tr><td rowspan="2"><strong>2022 Q2</strong></td>
     <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638 data-raw-source="[Delivery Plans - Progress Roll-ups by Effort](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1844638)">Delivery Plans - Progress Roll-ups by Effort</a></td><td>Boards</td><td>Future</td>
