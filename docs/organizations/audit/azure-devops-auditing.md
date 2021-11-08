@@ -144,7 +144,6 @@ As you look through the audit events, you may find the *Category* and *Area* col
 
 |Area            |Description |
 |----------------|------------|
-| Artifacts      | (Audit Streaming only) |
 | Auditing       | View and download audit logs. Access, create, modify, enable, disable, and delete audit streams. |
 | Billing        | Add, change, or remove Azure Subscriptions. Modify billing quantities for Pipelines, Artifacts, and Cloud Load Test usage.  |
 | Checks         | Create, modify, delete, and track usage of checks including approvals on protected resources in Azure Pipelines (YAML only). |
