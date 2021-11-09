@@ -9,7 +9,7 @@ ms.date: 11/05/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Squash merge and multiple merge bases
+# Merge strategies and squash merge
 
 [!INCLUDE [temp](../includes/version-tfs-2017-cloud.md)]
 
