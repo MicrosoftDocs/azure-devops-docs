@@ -1,5 +1,5 @@
 ---
-title: publish and restore packages with dotnet CLI
+title: Publish and restore packages with dotnet CLI
 description: How to connect to a feed and use the dotnet CLI to publish and restore NuGet packages
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.technology: devops-artifacts
@@ -9,11 +9,11 @@ monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
-# publish and restore NuGet packages using dotnet CLI
+# Publish and restore NuGet packages using dotnet CLI
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-With Azure Artifacts you can publish and restore your NuGet packages to/from your feed and control who can access them. This article will guide you through setting up your project to publish and restore your packages using the dotnet command line interface.
+With Azure Artifacts, you can publish and restore your NuGet packages to/from your feed and control who can access them. This article will guide you through setting up your project to publish and restore your packages using the dotnet command-line interface.
 
 ## Project setup
 
