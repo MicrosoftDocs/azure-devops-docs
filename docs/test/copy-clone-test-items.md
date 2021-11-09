@@ -65,7 +65,7 @@ We recommend creating a new Test Plan per sprint/release. When doing so, general
 
 ::: moniker range=">= azure-devops-2020"
 
-1. Open **Test Plans>Test plans**, and choose the test plan you want to copy from the **Mine** or **All** page.  Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and choose the **Copy test plan** menu option. This option lets you copy or clone test plans within a project. 
+1. Open **Test Plans>Test plans**, and choose the test plan you want to copy from the **Mine** or **All** page.  Select :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More actions**, and choose the **Copy test plan** menu option. This option lets you copy or clone test plans within a project. 
 
 	:::image type="content" source="media/copy-clone/copy-test-plan-menu-selection.png" alt-text="Test Plan More Actions menu, copy test plan option.":::
 
@@ -273,9 +273,9 @@ tcm suites /clone
 You can copy test cases from within a project or another project in the organization or collection to a designated test plan and test suite. You have the option to copy all links and attachments at the same time. 
 
 1. Open **Test Plans>Test plans**, choose the Test Plan that contains the test case(s) you want to copy from the **Mine** or **All** page.  Next, choose the Test Suite that contains the test case(s) you want to copy. From the **Define** page, select the check box for all test cases you want to copy. 
-2.  Choose  :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and choose the **Copy test case** menu option.   
-
-	:::image type="content" source="media/copy-clone/copy-test-cases-menu-selection.png.png" alt-text="Test Cases More Actions menu, copy test cases option.":::
+2.  Choose  :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More actions**, and choose the **Copy test case** menu option.   
+3.  
+	:::image type="content" source="media/copy-clone/copy-test-cases-menu-selection.png" alt-text="Test Cases More Actions menu, copy test cases option.":::
 
 2. From the **Copy test case(s)** dialog, choose the Project if copying test cases from a different project. Next, select the test plan and test suite to copy the test cases to.  
 
@@ -309,16 +309,16 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
              [/login:username,[password]]
 ```
 
+
 | Parameter | Description |  
-|----------|------------| 
-|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
+|----------|------------|  
+|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`| 
 |**/teamproject**:`project`|Required. The name of the team project that contains the test plan that you want to import your automated tests into.|
-|**/storage**:`path|Specifies the path and name of the test assembly that contains your automated tests that you want to import.|
-|**/maxpriority**:`priority`|Optional. Specifies which tests to import based on the maximum priority of the test method. For example, if the parameter is `/maxpriority:1`, only tests with a priority attribute for the test method less than or equal to 1 are imported as test cases from the assembly.|
-|**/minpriority**:`priority`|Optional. Specifies which tests to import based on the minimum priority of the test method. For example, if the parameter is `/minpriority:2`, only tests with a priority attribute for the test method equal or greater than 2 are imported as test cases from the assembly.|
-|**/category**:`filter`|Optional. Specifies which tests to import based on the category of each test method in the test assembly. You can use this parameter together with `/syncsuite` to import tests with a certain category into a specific test suite.<br/>
-For more information about test categories see Defining Test Categories to Group Your Tests.|
-|**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite cannot be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update tests that have already been added, the tests that are not imported are removed from the test suite but not from the test plan itself.<br/><br/>To determine the suite id for the test suite that you want to use, you can use the following command to list the test suites in your team project:`tcm suites /list`. |
+|**/storage**:`path|Specifies the path and name of the test assembly that contains your automated tests that you want to import.| 
+|**/maxpriority**:`priority`|Optional. Specifies which tests to import based on the maximum priority of the test method. For example, if the parameter is `/maxpriority:1`, only tests with a priority attribute for the test method less than or equal to 1 are imported as test cases from the assembly.| 
+|**/minpriority**:`priority`|Optional. Specifies which tests to import based on the minimum priority of the test method. For example, if the parameter is `/minpriority:2`, only tests with a priority attribute for the test method equal or greater than 2 are imported as test cases from the assembly.| 
+|**/category**:`filter`|Optional. Specifies which tests to import based on the category of each test method in the test assembly. You can use this parameter together with `/syncsuite` to import tests with a certain category into a specific test suite.<br/> For more information about test categories see Defining Test Categories to Group Your Tests.| 
+|**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite cannot be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update tests that have already been added, the tests that are not imported are removed from the test suite but not from the test plan itself.<br/><br/>To determine the suite id for the test suite that you want to use, you can use the `tcm suites /list` command to list the test suites in your team project. |
 |**/login**:`username,[password]`|Optional. Specifies the name and password of a valid Azure DevOps user and who has permissions to run the command. Use this option if your Windows credentials don't have the appropriate permissions, or you're using basic authentication, or you're not connected to a domain.|
 
 
