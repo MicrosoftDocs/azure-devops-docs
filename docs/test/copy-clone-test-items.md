@@ -51,19 +51,38 @@ Export (Test Suite)
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
+[!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)] 
+
 [!INCLUDE [note-new-ui](includes/note-new-ui.md)] 
 
 
-## Copy/clone test plans 
+## Copy/clone test plans  
 
-
+We recommend creating a new Test Plan per sprint/release. When doing so, generally you can copy the Test Plan for the prior cycle and with few changes the copied test plan is ready for the new cycle. 
 
 # [Browser](#tab/browser)
 
+1. Open **Test Plans>Test** plans, and choose the test plan you want to copy from the **Mine** or **All** page.  Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and choose the **Copy test plan** menu option. This option lets you copy or clone test plans within a project. 
 
+	:::image type="content" source="media/copy-clone/copy-test-plan-menu-selection.png" alt-text="Test Plan More Actions menu, copy test plan option.":::
+
+2. Specify the name of the new test plan, and select an **Area Path** and **Iteration Path** for the plan.  
+
+	:::image type="content" source="media/copy-clone/copy-test-plan-dialog.png" alt-text="Copy test plan dialog":::
+
+	Choose the radio-button to either **Reference** existing test cases or to **Duplicate** referenced test cases by cloning them. If you duplicate existing test cases, the copied test cases will be assigned the **Area Path** and **Iteration Path** specified for the copy test plan. 
+
+	To learn more about area and iteration paths, see [About area and iteration (sprint) paths](..//organizations/settings/about-areas-iterations.md).
+
+3. The page refreshes to display the newly copied test plan. 
+
+	:::image type="content" source="media/copy-clone/copied-test-plan.png" alt-text="Copied test plan, browser view":::
+
+<!-- Document labeling that occurs, pick up of work item IDs --> 
 
 # [TCM CLI](#tab/tcm-cli)
 
+You can use the TCM command-line tool to clone a test plan to the same or different project, and to track the status of the clone operation.
 
 ### Clone a test plan 
 
@@ -90,16 +109,13 @@ The `/clone /sourceplanid /destinationplanname` creates a new plan. If you speci
 | Parameter | Description |  
 |----------|------------| 
 |**/sourceplanid**:`id` | Required. Specifies the ID of the plan to be copied, and the ID of the suite into which the new copy will be added. If you want to copy a whole test plan, use the ID of the suite at the root of the test plan.The ID of a suite is displayed in the details pane when you select it in the test plan. You can also get a list of suites by using `tcm suites /list`. |
-
 |**/destinationplanname**:`name`|Specifies the name of the plan into which the cloned test plan will be copied.  |
 |**/overridefield**:`name=value`<br/>**/overridefield**:`name=value`| Optional. Specify to change the value of a field in each cloned work item. Specify multiple occurrences of this parameter to change as many fields as you want. This option is required when you clone a test suite to a different project. |
 |**/sourcesuiteids**:`suiteid1,[suiteid2,...`|Optional. Specifies|
 **|/clonerequirements |Optional. Specifies|**
 |**/clonechildren** |Optional. Specify to clone all child suites of the suites provided.|
 |**/clonerequirements** | Optional. Specify this switch to clone a requirement-based suite to a destination requirement-based suite. By default, a requirement-based test suite is cloned to a destination static test suite.  |
-|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>
-- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>
-- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
+|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
 |**/teamproject**:`project`|Required. The name of the team project that contains the test plan that you want to import your automated tests into.|  
 |**/storage**: path|Specifies the path and name of the test assembly that contains your automated tests that you want to import.|
 
@@ -132,9 +148,7 @@ tcm plans /clone
 | Parameter | Description |  
 |----------|------------| 
 |**/status**:`cloneoperationid`|Required. Specifies the ID of the clone operation returned when `tcm plans /clone` executes.  |
-|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>
-- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>
-- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
+|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
 |**/teamproject**:`project`|Required. The name of the team project where you executed the clone operation. | 
 |**/login**:`username,[password]`|Optional. Specifies the name and password of a valid Azure DevOps user and who has permissions to run the command. Use this option if your Windows credentials don't have the appropriate permissions, or you're using basic authentication, or you're not connected to a domain.|
 
@@ -193,9 +207,7 @@ tcm suites /clone
 |**/destinationteamproject**:`projectname`|Optional. Specify when you want to clone the test suite to a different project but in the same organization or project collection. You must specify override field values for the **Area Path** and **Iteration Path** fields.|
 |**/destinationworkitemtype**:`workitemtype`|Optional.|
 |**/clonerequirements** | Optional. Specify this switch to clone a requirement-based suite to a destination requirement-based suite. By default, a requirement-based test suite is cloned to a destination static test suite.  |
-|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>
-- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>
-- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
+|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
 |**/teamproject**:`project`|Required. The name of the team project that contains the test plan that you want to import your automated tests into.| 
 |**/login**:`username,[password]`|Optional. Specifies the name and password of a valid Azure DevOps user and who has permissions to run the command. Use this option if your Windows credentials don't have the appropriate permissions, or you're using basic authentication, or you're not connected to a domain.|
 
@@ -221,9 +233,7 @@ tcm suites /clone
 | Parameter | Description |  
 |----------|------------| 
 |**/status**:`cloneoperationid`|Required. Specifies the ID of the clone operation returned when `tcm suites /clone` executes.  |
-|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>
-- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>
-- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
+|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
 |**/teamproject**:`project`|Required. The name of the team project that contains the test plan that you want to import your automated tests into.| 
 |**/login**:`username,[password]`|Optional. Specifies the name and password of a valid Azure DevOps user and who has permissions to run the command. Use this option if your Windows credentials don't have the appropriate permissions, or you're using basic authentication, or you're not connected to a domain.|
 
@@ -253,22 +263,14 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
 
 | Parameter | Description |  
 |----------|------------| 
-|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>
-- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>
-- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
+|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
 |**/teamproject**:`project`|Required. The name of the team project that contains the test plan that you want to import your automated tests into.|
 |**/storage**:`path|Specifies the path and name of the test assembly that contains your automated tests that you want to import.|
-|**/maxpriority**:`priority`|Optional. Specifies which tests to import based on the maximum priority of the test method. For example, if the parameter is /maxpriority:1, only tests with a priority attribute for the test method less than or equal to 1 are imported as test cases from the assembly.|
-|**/minpriority**:`priority`|Optional. Specifies which tests to import based on the minimum priority of the test method. For example, if the parameter is /minpriority:2, only tests with a priority attribute for the test method equal or greater than 2 are imported as test cases from the assembly.|
-|**/category**:`filter`|Optional. Specifies which tests to import based on the category of each test method in the test assembly. You can use this parameter together with /syncsuite to import tests with a certain category into a specific test suite.<br/>
+|**/maxpriority**:`priority`|Optional. Specifies which tests to import based on the maximum priority of the test method. For example, if the parameter is `/maxpriority:1`, only tests with a priority attribute for the test method less than or equal to 1 are imported as test cases from the assembly.|
+|**/minpriority**:`priority`|Optional. Specifies which tests to import based on the minimum priority of the test method. For example, if the parameter is `/minpriority:2`, only tests with a priority attribute for the test method equal or greater than 2 are imported as test cases from the assembly.|
+|**/category**:`filter`|Optional. Specifies which tests to import based on the category of each test method in the test assembly. You can use this parameter together with `/syncsuite` to import tests with a certain category into a specific test suite.<br/>
 For more information about test categories see Defining Test Categories to Group Your Tests.|
-|**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite cannot be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update tests that have already been added, the tests that are not imported are removed from the test suite but not from the test plan itself.<br/>
-<br/>
-To determine the suite id for the test suite that you want to use, you can use the following command to list the test suites in your team project:<br/>
-<br/>
-`tcm suites /list`<br/>
-<br/>
-For more information about this command, see tcm: Listing test plans, test suites, test configurations, and environments.|
+|**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite cannot be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update tests that have already been added, the tests that are not imported are removed from the test suite but not from the test plan itself.<br/><br/>To determine the suite id for the test suite that you want to use, you can use the following command to list the test suites in your team project:`tcm suites /list`. |
 |**/login**:`username,[password]`|Optional. Specifies the name and password of a valid Azure DevOps user and who has permissions to run the command. Use this option if your Windows credentials don't have the appropriate permissions, or you're using basic authentication, or you're not connected to a domain.|
 
 
