@@ -1,19 +1,19 @@
 ---
-title: How to connect to a feed and use the dotnet CLI
-description: How to connect to an Azure Artifacts feed and use the dotnet CLI to publish and restore NuGet packages.
+title: publish and restore packages with dotnet CLI
+description: How to connect to a feed and use the dotnet CLI to publish and restore NuGet packages
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 9/10/2021
+ms.date: 11/09/2021
 monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
-# Use dotnet CLI with Azure Artifacts
+# publish and restore NuGet packages using dotnet CLI
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-With Azure Artifacts you can connect to a feed, publish your .NET packages, and control who can access them. You can use the dotnet command-line interface to publish and restore your packages to and from your Azure Artifacts feed.
+With Azure Artifacts you can publish and restore your NuGet packages to/from your feed and control who can access them. This article will guide you through setting up your project to publish and restore your packages using the dotnet command line interface.
 
 ## Project setup
 
@@ -27,7 +27,9 @@ With Azure Artifacts you can connect to a feed, publish your .NET packages, and 
 
 1. If this is your first time using Azure Artifacts with dotnet, select **Get the tools** to download and install the latest .NET Core SDK and credential provider.
 
-1. Add a *nuget.config* file to your project, in the same folder as your .csproj or .sln file. Paste the XML snippet into your new file. Your *nuget.config* file should look similar to the following:
+1. Add a *nuget.config* file to your project, in the same folder as your .csproj or .sln file. Paste the following XML snippet into your new file. Your *nuget.config* file should look similar to the following:
+
+- Organization-scoped feed:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -35,6 +37,18 @@ With Azure Artifacts you can connect to a feed, publish your .NET packages, and 
       <packageSources>
         <clear />
         <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
+      </packageSources>
+    </configuration>
+    ```
+
+- Project-scoped feed:
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <configuration>
+      <packageSources>
+        <clear />
+        <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
       </packageSources>
     </configuration>
     ```
