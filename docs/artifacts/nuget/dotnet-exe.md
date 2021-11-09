@@ -53,25 +53,29 @@ With Azure Artifacts you can publish and restore your NuGet packages to/from you
     </configuration>
     ```
 
-## Restore and publish packages
+## Publish NuGet packages
 
-To restore your packages using the dotnet CLI, run the following command in an elevated command prompt. The `--interactive` flag allows dotnet to prompt the user for credentials.
-
-```Command
-dotnet restore --interactive
-```
-
-To publish a package to your feed, run the following command in an elevated command prompt. Replace the placeholders with the applicable information:
+To publish a package to your feed, run the following command in an elevated command prompt. Replace the placeholders with the relevant information:
 
 ```Command
 dotnet nuget push --source <FEED_NAME> --api-key <ANY_STRING> <PACKAGE_PATH>
 ``` 
 
+## Restore NuGet packages
+
+To restore your packages, run the following command in an elevated command prompt. The `--interactive` flag is used to prompt the user for credentials.
+
+```Command
+dotnet restore --interactive
+```
+
 > [!TIP]
-> If you want to authenticate with Azure Artifacts from your pipeline, use the [NuGet Authenticate task](../../pipelines/tasks/package/nuget-authenticate.md) to connect to Azure Artifacts and other NuGet repositories. Another way to authenticate programmatically is to use the [Azure Artifacts Credential Provider](https://github.com/Microsoft/artifacts-credprovider) and pass in credentials using the `VSS_NUGET_EXTERNAL_FEED_ENDPOINTS` [environment variable](https://github.com/Microsoft/artifacts-credprovider/blob/master/README.md#environment-variables).
+> If you want to authenticate with Azure Artifacts from your pipeline, use the [NuGet Authenticate task](../../pipelines/tasks/package/nuget-authenticate.md) to connect  to Azure Artifacts and other NuGet repositories. 
+>
+> Another way to authenticate programmatically is to use the [Azure Artifacts Credential Provider](https://github.com/Microsoft/artifacts-credprovider) and pass in your credentials using the `VSS_NUGET_EXTERNAL_FEED_ENDPOINTS` [environment variable](https://github.com/Microsoft/artifacts-credprovider/blob/master/README.md#environment-variables).
 
 ## Related articles
 
-- [Use NuGet.exe with Azure Artifacts](./nuget-exe.md)
-- [Publish packages with Azure Pipelines](../../pipelines/artifacts/nuget.md)
+- [Connect to Azure Artifacts feeds (NuGet.exe)](./nuget-exe.md)
+- [Publish packages with Azure Pipelines (YAML/Classic)](../../pipelines/artifacts/nuget.md)
 - [Publish packages to NuGet.org](./publish-to-nuget-org.md)
