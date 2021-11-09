@@ -62,7 +62,10 @@ We recommend creating a new Test Plan per sprint/release. When doing so, general
 
 # [Browser](#tab/browser)
 
-1. Open **Test Plans>Test** plans, and choose the test plan you want to copy from the **Mine** or **All** page.  Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and choose the **Copy test plan** menu option. This option lets you copy or clone test plans within a project. 
+
+::: moniker range=">= azure-devops-2020"
+
+1. Open **Test Plans>Test plans**, and choose the test plan you want to copy from the **Mine** or **All** page.  Select :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and choose the **Copy test plan** menu option. This option lets you copy or clone test plans within a project. 
 
 	:::image type="content" source="media/copy-clone/copy-test-plan-menu-selection.png" alt-text="Test Plan More Actions menu, copy test plan option.":::
 
@@ -79,6 +82,15 @@ We recommend creating a new Test Plan per sprint/release. When doing so, general
 	:::image type="content" source="media/copy-clone/copied-test-plan.png" alt-text="Copied test plan, browser view":::
 
 <!-- Document labeling that occurs, pick up of work item IDs --> 
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
+> [!NOTE] 
+> This feature isn't supported through the web portal for Azure DevOps Server 2019 and earlier versions. The feature to copy test plans requires Azure DevOps Server 2020 or later version. 
+
+::: moniker-end
 
 # [TCM CLI](#tab/tcm-cli)
 
@@ -172,7 +184,16 @@ In order to use the same test cases in different suites and plans, copy and past
 
 # [Browser](#tab/browser)
 
+::: moniker range=">= azure-devops-2020"
 
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
+> [!NOTE] 
+> This feature isn't supported through the web portal for Azure DevOps Server 2019 and earlier versions. The feature to copy test plans requires Azure DevOps Server 2020 or later version. 
+
+::: moniker-end
 
 # [TCM CLI](#tab/tcm-cli)
 
@@ -243,9 +264,36 @@ tcm suites /clone
 
 ## Copy/clone test cases 
 
+
 # [Browser](#tab/browser)
 
 
+::: moniker range=">= azure-devops-2020"
+
+You can copy test cases from within a project or another project in the organization or collection to a designated test plan and test suite. You have the option to copy all links and attachments at the same time. 
+
+1. Open **Test Plans>Test plans**, choose the Test Plan that contains the test case(s) you want to copy from the **Mine** or **All** page.  Next, choose the Test Suite that contains the test case(s) you want to copy. From the **Define** page, select the check box for all test cases you want to copy. 
+2.  Choose  :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions**, and choose the **Copy test case** menu option.   
+
+	:::image type="content" source="media/copy-clone/copy-test-cases-menu-selection.png.png" alt-text="Test Cases More Actions menu, copy test cases option.":::
+
+2. From the **Copy test case(s)** dialog, choose the Project if copying test cases from a different project. Next, select the test plan and test suite to copy the test cases to.  
+
+	:::image type="content" source="media/copy-clone/copy-test-cases-dialog.png" alt-text="Copy test cases dialog":::
+
+	Optionally select the check boxes for **Include existing links** and **Include existing attachments**. When done, choose **Create**.
+
+	Depending on the number and complexity of the test cases selected, the copy operation will be performed in the backgroun. Once completed, you'll receive a message that the operation has completed and a link to the test suite where the test cases have been copied to.   
+
+<!-- Document labeling that occurs, pick up of work item IDs --> 
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
+From the Internet Explorer, Edge, or Chrome browsers, you can copy test cases from the Grid view for one test plan and test suite to another test plan and test suite. 
+
+::: moniker-end
 
 # [TCM CLI](#tab/tcm-cli)
 
@@ -280,6 +328,11 @@ To be completed.
 
 *** 
 
+## REST APIs
+
+You can copy and clone test plans and test suites using the following REST APIs. 
+- [Test Plan Clone - Clone Test Plan](/rest/api/azure/devops/testplan/test-plan-clone/clone-test-plan)
+- [Test Suite Clone - Clone Test Suite](/rest/api/azure/devops/testplan/test-suite-clone/clone-test-suite)
 
 ##  Next step
 
