@@ -1,15 +1,15 @@
 ---
-title: Use agile process work item types in Azure Boards to manage your workflow
+title: Agile process work item types & workflow in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to use the Agile process work item types in Azure Boards to track your work 
+description: Learn how to use the Agile process to track work using its work item types working in Azure Boards.
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 11/03/2021
+monikerRange: '<= azure-devops'
+ms.date: 11/07/2021
 ---
 
 # Agile process work item types for workflow management in Azure Boards  
@@ -108,8 +108,8 @@ Use the following guidance and that provided for [fields used in common across w
    :::column-end:::
    :::column span="3":::
    A subjective rating of the user story, feature, or requirement as it relates to the business. Allowed values are:
-   - **1**: Product cannot ship without the feature.
-   - **2**: Product cannot ship without the feature, but it doesn&#39;t have to be addressed immediately.
+   - **1**: Product can't ship without the feature.
+   - **2**: Product can't ship without the feature, but it doesn&#39;t have to be addressed immediately.
    - **3**: Implementation of the feature is optional based on resources, time, and risk.
 
    
@@ -301,7 +301,7 @@ You can use the Priority field to differentiate the value of various stories. Or
 
 ### Backlog list order
 
-The [Stack Rank](../../queries/planning-ranking-priorities.md) field is used to track the relative ranking of user stories, however by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you have [added the items or moved the items on the page](../../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.
+The [Stack Rank](../../queries/planning-ranking-priorities.md) field is used to track the relative ranking of user stories, however by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you've [added the items or moved the items on the page](../../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.
 
 ::: moniker range="<= tfs-2015"
 
