@@ -1,7 +1,7 @@
 ---
-title: View or list work item fields and attributes 
+title: List work item fields and attributes in Azure Boards
 titleSuffix: Azure Boards
-description: Understand how to view and list fields and the attributes that define them. 
+description: Learn about work item fields, their attributes, and how to modify them in Azure Boards. 
 ms.custom: work-items
 ms.technology: devops-agile
 ms.assetid:  
@@ -9,16 +9,15 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.topic: how-to
-ms.date: 11/04/2021 
+ms.date: 11/07/2021 
 ---
 
-
-# View work item fields and attributes
+# Work item fields and attributes in Azure Boards
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
 ::: moniker range="azure-devops"
-Work item fields are used to track information. Fields are defined for an organization and shared across all projects defined for that organization. You can use one of two tools to review the fields defined for the organization. These tools are available for both Inherited and Hosted XML process models.  
+Work item fields are used to track information. Fields are defined for an organization and shared across all projects defined for that organization. You can use one of two tools to review the fields defined for the organization. These tools are available for both Inherited and Hosted XML process models. 
 
 - [Process>Fields web page](#review-fields) 
 - [Work Item Field Explorer](#wi-explorer)  
@@ -36,6 +35,7 @@ Work item fields are used to track information. Fields are defined for a collect
 Work item fields are used to track information. Fields are defined for a collection and shared across all projects defined for that collection. To view all fields defined for a collection, you can use the [Work Item Field Explorer](#wi-explorer) tool, a plug-in to Visual Studio.   
 ::: moniker-end
 
+For a description of each field defined with a system process, see [Work item field index](guidance/work-item-field.md).  
 
 ## Prerequisites 
 
@@ -65,8 +65,8 @@ Each work item type specifies the fields defined for the work items that referen
 
 Each field is defined by the following three attributes. 
 - **Data type**: Specifies the type of data that can be entered into the field, such as Boolean, Double, Integer, HTML, and String. For descriptions of each data type, see [Query fields, operators, and macros](../queries/query-operators-variables.md#field-values). 
-- **Friendly name**: Specifies the name assigned to the field and that you select for a **Field** in a query clause. This name may differ from that displayed on the work item form. 
-- **Reference name**: Specifies the name that you use when creating [WIQL query](../queries/wiql-syntax.md) or an [ad hoc work item template](../backlogs/work-item-template.md), using [REST API commands](/rest/api/azure/devops/wit/), or defining [XML work item type definitions](../../reference/xml/field-definition-element-reference.md). Once defined, the reference name cannot be changed.  
+- **Friendly name**: Specifies the name assigned to the field and that you select for a **Field** in a query clause. This name may differ from the name displayed on the work item form. 
+- **Reference name**: Specifies the name that you use when creating [WIQL query](../queries/wiql-syntax.md) or an [improvised work item template](../backlogs/work-item-template.md), using [REST API commands](/rest/api/azure/devops/wit/), or defining [XML work item type definitions](../../reference/xml/field-definition-element-reference.md). Once defined, the reference name cannot be changed.  
  
 For a description of each field attribute and how you can list them, see [Field attributes](#field-attributes) and [List field attributes](#list-attributes) later in this article. For an overview of WITs and work items, see [Track work with user stories, issues, bugs, features, and epics](about-work-items.md). 
 
@@ -91,7 +91,7 @@ A work item field name uniquely identifies each work item field. Make sure your 
 
 Because custom fields are defined for an organization or collection, you can't add a custom field to a process with the same field name that you add to another process.  
 
-For additional information, see [Naming restrictions and conventions](../../organizations/settings/naming-restrictions.md#work-items-work-item-types-and-customizations).
+For more information, see [Naming restrictions and conventions](../../organizations/settings/naming-restrictions.md#work-items-work-item-types-and-customizations).
 
 
 ### System and predefined fields
@@ -206,9 +206,9 @@ To access the Work Item Field Explorer, you must install the Process Editor Tool
 
 ## Field attributes
 
-There are a number of non-changeable and virtually hidden attributes for each work item field. The following table describes each attribute. Attributes have different names based on if you get them through the [**Fields - Get** **REST** API](/rest/api/azure/devops/wit/fields/get) or view through the [Work Item Field Explorer (**WIFE**) tool](#wi-explorer), and the [FieldDefinition Properties](/previous-versions/visualstudio/visual-studio-2013/bb172008(v%3dvs.120)). 
+There are many non-changeable and hidden attributes for each work item field. The following table describes each attribute. Attributes have different names based on if you get them through the [**Fields - Get** **REST** API](/rest/api/azure/devops/wit/fields/get) or view through the [Work Item Field Explorer (**WIFE**) tool](#wi-explorer), and the [FieldDefinition Properties](/previous-versions/visualstudio/visual-studio-2013/bb172008(v%3dvs.120)). 
 
-Also, attributes assigned to a field depend on the platform and version you use. For example, some attributes aren't support with the Inheritance process. To look up the reference name for a field, see  [Work item field index](guidance/work-item-field.md).
+Attributes assigned to a field depend on the platform and version you use. For example, some attributes aren't support with the Inheritance process. To look up the reference name for a field, see  [Work item field index](guidance/work-item-field.md).
 
 :::row:::
    :::column span="1":::
@@ -387,7 +387,7 @@ Also, attributes assigned to a field depend on the platform and version you use.
    boolean
    :::column-end:::
    :::column span="3":::
-   Indicates whether the field allows users to enter their own values for a picklist. The value is set to *True* when a custom field is defined for Azure DevOps, Picklist (String) or Picklist (Integer) type is selected, and the checkbox for **Allow users to set their own values** is checked.  
+   Indicates whether the field allows users to enter their own values for a picklist. The value is set to *True* when a custom field is defined for Azure DevOps, Picklist (String), or Picklist (Integer) type is selected, and the checkbox for **Allow users to set their own values** is checked.  
    Can change?=Yes 
    :::column-end:::
 :::row-end:::
@@ -530,8 +530,8 @@ Also, attributes assigned to a field depend on the platform and version you use.
    string
    :::column-end:::
    :::column span="3":::
-   Specifies the label for a field when data appears in SQL reports. If you do not specify a value, the field's friendly name is used.  
-   Can change?=On-prem only
+   Specifies the label for a field when data appears in SQL reports. If you don't specify a value, the field's friendly name is used.  
+   Can change?=On-premises only
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -543,8 +543,8 @@ Also, attributes assigned to a field depend on the platform and version you use.
    string
    :::column-end:::
    :::column span="3":::
-   Specifies a different reference name to a field that is used when data is exported to the relational data warehouse. If you do not specify a value, the fields reference name is used.   
-   Can change?=On-prem only
+   Specifies a different reference name to a field that is used when data is exported to the relational data warehouse. If you don't specify a value, the fields reference name is used.   
+   Can change?=On-premises only
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -556,7 +556,7 @@ Also, attributes assigned to a field depend on the platform and version you use.
    *set*
    :::column-end:::
    :::column span="3":::
-   The set of query operators that are valid for use when referencing this field. For a quick reference of supported operations based on data type, see [Query quick reference, Operators and macros supported for each data type](../queries/query-index-quick-ref.md#fields-operators-macros).  
+   The set of query operators that are valid for use when referencing this field. For a quick reference of supported operations based on data type, see [Query quick reference, Operators, and macros supported for each data type](../queries/query-index-quick-ref.md#fields-operators-macros).  
    Can change?=No 
    :::column-end:::
 :::row-end:::
@@ -774,7 +774,7 @@ https://fabrikam:8080/tfs/DefaultCollection/_apis/wit/fields/System.IterationPat
 
 ::: moniker range="< azure-devops"  
 
-### List attributes using witadmin command line tool
+### List attributes using `witadmin` command-line tool
 
 You can list select field attributes&mdash;such as the data type, reportable attributes, and indexing&mdash;using the [**witadmin listfields** command](../../reference/witadmin/manage-work-item-fields.md). 
 

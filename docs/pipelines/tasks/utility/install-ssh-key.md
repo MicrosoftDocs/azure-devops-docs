@@ -138,6 +138,9 @@ steps:
     sshKeySecureFile: 'id_rsa'
 ```
 
+> [!NOTE]
+> Your public key should be added to the repository\organization otherwise you'll get issue with the access. For GitHub please follow [the guide above](#example-setup-using-github). For Azure DevOps Services please use the following guide: [Add the public key to Azure DevOps Services/TFS](../../../repos/git/use-ssh-keys-to-authenticate.md).
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

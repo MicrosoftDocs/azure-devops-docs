@@ -1,17 +1,17 @@
 ---
-title: Quick index to work item tasks and key concepts
+title: Quick reference for concepts related to work item tasks
 titleSuffix: Azure Boards
-description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps, & Team Foundation Server
+description: Learn about query operators, macros, and sample queries used to list work items for Azure Boards and Azure DevOps.
 ms.custom: boards-work-items  
 ms.technology: devops-agile
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/29/2021
+ms.date: 11/07/2021
 ---
 
-# Work items quick reference
+# Key concepts and work item tasks in Azure Boards and Azure DevOps
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -29,7 +29,7 @@ Use this index to quickly access concepts related to work items and information 
       - [Agile glossary](agile-glossary.md)  
       - [Agile process](guidance/agile-process.md)  
       - [Area Paths](../../organizations/settings/about-areas-iterations.md)  
-      - [Auto-complete work items](workflow-and-state-categories.md#auto-complete-work-items-with-pr)  
+      - [Autocomplete work items](workflow-and-state-categories.md#auto-complete-work-items-with-pr)  
       - [Assigned to](about-work-items.md#assign)  
       - [Basic process](../get-started/plan-track-work.md)  
       <br/>
@@ -101,7 +101,7 @@ Use this index to quickly access concepts related to work items and information 
 ---
  
 
-## Work item  user tasks
+## Work item user tasks
 
 Tasks listed below are available to users with Contributor permissions and Basic access.  
 
@@ -320,7 +320,7 @@ You customize work item types using either the Inheritance process model or On-p
 
 ::: moniker range="< azure-devops"
 
-You customize work item types using the On-premises XML process model. For additional customization options, see [On-premises XML process customization](../../reference/on-premises-xml-process-model.md).
+You customize work item types using the On-premises XML process model. For more customization options, see [On-premises XML process customization](../../reference/on-premises-xml-process-model.md).
 
 ---
 :::row:::

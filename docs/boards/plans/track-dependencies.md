@@ -1,18 +1,18 @@
 ---
-title: Track dependencies using Delivery Plans 
+title: Track dependencies by using Delivery Plans in Azure Boards 
 titleSuffix: Azure Boards
-description: Learn how to track dependencies within teams, across teams, and across projects using Delivery Plans 
+description: Learn how to track dependencies within teams, across teams, and across projects by using Delivery Plans in Azure Boards.
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: 'azure-devops'
-ms.date: 05/06/2021
+ms.date: 10/20/2021
 ---
 
 
 
-# Track dependencies using Delivery Plans 
+# Track dependencies by using Delivery Plans 
 
 [!INCLUDE [temp](../includes/version-all.md)] 
 
@@ -39,7 +39,7 @@ To view dependencies, you must first define the Delivery Plan and dependencies b
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot to Open Boards>Plans.](media/plans/open-plans.png) 
 
-1. To view dependency lines for a work item, click the bottom of its card. To dismiss the lines, click the bottom of the card again, or anywhere else within the plan. 
+1. To view dependency lines for a work item, select the bottom of its card. To dismiss the lines, select the bottom of the card again, or anywhere else within the plan. 
 
 	Dependency lines that have no issues show up as black lines. 
 
@@ -66,11 +66,11 @@ The Dependencies dialog indicates that the work item has four predecessors and n
 
 ## Identify dependency issues 
 
-When issues exist, they are highlighted in red. The issue always has to do with an end date for a successor work item occurring before the end date of the predecessor work item. The end date is determined by either the Target Date for the work item or the End Date of the work item's assigned Iteration Path. 
+When issues exist, they're highlighted in red. The issue always has to do with an end date for a successor work item occurring before the end date of the predecessor work item. Determine the end date by using either the Target Date for the work item or the End Date of the work item's assigned Iteration Path. 
 
-For example, the following Dependencies dialog indicates that two predecessor work items are scheduled to complete before the successor work item is scheduled to complete. A red exclamation mark and red colored arrows indicate there is an issue with the dependency.   
+For example, the following Dependencies dialog indicates that two predecessor work items are scheduled to complete before the successor work item is scheduled to complete. A red exclamation mark and red colored arrows indicate there's an issue with the dependency.   
 
-When the dependency is to a work item in another project, the project information is shown as well as other link relationships. 
+When the dependency is to a work item in another project, the project information is shown as are other link relationships. 
 
 :::image type="content" source="media/dependencies/dependencies-cross-project.png" alt-text="Dependencies dialog for a work item with dependencies-cross-project.":::
 
