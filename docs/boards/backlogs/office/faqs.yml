@@ -8,7 +8,7 @@ metadata:
   author: KathrynEE
   ms.topic: troubleshooting
   monikerRange: '<= azure-devops'
-  ms.date: 10/08/2021
+  ms.date: 11/04/2021
 
 
 title: Work in Excel connected to Azure Boards FAQs   
@@ -55,9 +55,6 @@ sections:
           > [!div class="mx-imgBorder"]  
           > ![Azure DevOps Open in Excel extension](media/excel/open-in-excel.png)
 
-      - question: What query macros aren't supported in Excel?
-        answer: |
-          The following macros are only supported from the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
 
       - question: Can I import or update work items without using Excel?  
         answer: | 
@@ -88,6 +85,19 @@ sections:
       - question: How do I disable the Team menu?   
         answer: |
           If you want to disable the add-in, see [Add or remove an add-in](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460).  
+
+  - name: Unsupported queries 
+
+    questions: 
+
+      - question: What query macros aren't supported in Excel?
+        answer: |
+          The following macros are only supported from the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
+
+      - question: Can I view queries that list work items from different team projects? 
+        answer: |
+          **No**. You will receive an error message with error code TF208015. You can only view work items defined in the team project that you connect to from Excel. To view work items from other team projects, create a query and open it in a separate Excel workbook. Each Excel workbook can only connect to one team project at a time.   
+
 
   - name: Work with linked work items
      
