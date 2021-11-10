@@ -45,9 +45,9 @@ Use a pipeline to automatically build and test your .NET Core projects. Learn ho
 
 ::: moniker-end
 
-```
+
 [!INCLUDE [include](../includes/dotnet-setup.md)]
-```
+
 
 ::: moniker range=">=azure-devops-2020"
 
