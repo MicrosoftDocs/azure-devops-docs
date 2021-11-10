@@ -51,7 +51,7 @@ For an overview of test artifacts, see [Test objects and terms](test-objects-ove
    > When you add a test case to this kind of suite, the test case is automatically linked to the backlog item.
    > To create test cases this way, open the shortcut menu for the work item and choose **Add test**.
 
-1. Select the **Click or type here to add a step** option.
+1. In the new work item, enter a title. Select the **Click or type here to add a step** option.
 
    ![Screenshot shows the steps entered for a test case.](media/create-test-cases/test-case-steps.png)
 
@@ -70,6 +70,20 @@ Open a test case, then use the up and down arrows to change the order.
 ![Screenshot showing the arrows used to move test steps up or down.](media/create-test-cases/change-step-order.png)
 
 There are also options to change order in the step context menu.
+
+### Add existing test cases to a test suite
+
+Your can add existing test cases to a test suite.
+
+1. Select a test suite. From the **New Test Case** dropdown menu, select **Add existing test case**.
+
+   ![Screenshot shows the Add existing test cases option to select.](media/create-test-cases/add-existing-test-cases.png)
+
+1. In the Add test cases to suite dialog box, add search clauses, as needed, and then select **Run query**.
+
+   ![Screenshot shows the Add test cases to suite dialog box with the Run query button highlighted.](media/create-test-cases/add-test-case-suite.png)
+
+1. After you find the test cases you want, select **Add test cases**.
 
 ::: moniker-end
 
@@ -112,17 +126,20 @@ After reordering the tests, you can sort them by the **Order** field and then ru
 
 ### Use the Grid view to edit test cases
 ::: moniker range=">=azure-devops-2020"
-To open the **Grid** view, select the **Grid View** icon at the right.
 
-![Screenshot shows the Grid View button used to open the Grid view.](media/create-test-cases/grid-view-button.png)
+You can copy and paste test cases into the **Grid** view.
 
-On the **Grid** context menu, you can add, delete, or clear rows.
+1. To open the **Grid** view, select the **Grid View** icon at the right.
 
-![Screenshot shows the Grid context menu to insert, delete, or clear rows.](media/create-test-cases/grid-context-menu.png)
+   ![Screenshot shows the Grid View button used to open the Grid view.](media/create-test-cases/grid-view-button.png)
 
-You can use the **Grid** view when you add multiple test cases to the test suite:
+1. On the **Grid** context menu, you can add, delete, or clear rows.
 
-![Screenshot shows option to add test cases using the Grid view.](media/create-test-cases/add-test-cases-grid.png)
+   ![Screenshot shows the Grid context menu to insert, delete, or clear rows.](media/create-test-cases/grid-context-menu.png)
+
+   You can use the **Grid** view when you add multiple test cases to the test suite:
+
+   ![Screenshot shows option to add test cases using the Grid view.](media/create-test-cases/add-test-cases-grid.png)
 
 You can edit other fields in the **Grid** view.
 In the **List** view, use the column options to select the fields in the test case work item.
@@ -211,6 +228,14 @@ Testers need [Basic access](../organizations/security/access-levels.md) to run t
    ![Screenshot shows Assigning testers to run all tests dialog box with Search users and Send email called out.](media/create-test-cases/select-testers-dialog-box.png)
 
    The email contains a link that testers can open to see the list of assigned tests.
+
+You can assign an individual test case to a tester.
+
+1. In the **Execute** tab for a test suite, select a test, and then open the context menu.
+
+   ![Screenshot shows the context menu for a test case with the Assign tester option selected.](media/create-test-cases/assign-tester-test-case.png)
+
+1. Select **Assign tester**. Search for and select a tester.
 
 ::: moniker-end
 
