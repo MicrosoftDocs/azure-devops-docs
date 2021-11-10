@@ -1,20 +1,19 @@
 ---
 title: Code review and feedback field reference
 titleSuffix: Azure Boards
-description: Definition of fields used to track code review and feedback requests and responses for Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Learn how to use the code review and feedback fields to track code review and feedback requests and responses for Azure Boards and Azure DevOps.
 ms.technology: devops-agile
 ms.assetid: 4182c1c5-a768-4f4d-b6cb-862fc57e6ab4
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/28/2021
+ms.date: 11/07/2021
 ---
 
-# Code review and feedback field reference
+# Code review and feedback field reference in Azure Boards and Azure DevOps
 
 [!INCLUDE [temp](../../includes/version-all.md)]
-
 
 You can use the code review and feedback fields to create queries and reports that track the status of these processes. The fields appear in the following work item types, which are included with the default processes for Azure Boards and TFS: Code Review Request, Code Review Response, Feedback Request, and Feedback Response.  
 
