@@ -152,11 +152,16 @@ Clone a work item when you want to create another instance of it. This action op
 2. Choose the project (if copying to another project) and work item type if different from the copied work item. Optionally change the Title and provide more details. The copied work item is automatically linked to the original work item through a Related link type.  
 ::: moniker-end
 
+> [!TIP]    
+> Copied or cloned work items always have an ID that is greater than the work items from which they were copied or cloned.   
+
+
 ::: moniker range=">= azure-devops-2019"
 
 ## Change the work item type  
 
-If you have a large number of work items whose type you want to change, use [Change work item type](../../reference/add-modify-wit.md). If Change work item type isn't available to you, you can export a set of work items using Excel, copy them to a new Excel list, and reimport them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
+If you have a large number of work items whose type you want to change, use [Change work item type](move-change-type.md). If the **Change work item type** option isn't available to you, you can export a set of work items using Excel or CSV, copy them to a new list, and re-import them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Import or update work items in bulk by using CSV files](../queries/import-work-items-from-csv.md). 
+
 ::: moniker-end
 
 <a id="html"></a>
@@ -244,9 +249,13 @@ In Visual Studio, right-click the work item tab to copy the URL. The URL opens t
 
 ## Related articles
 
-- [Copy or clone test plans, test suites, test cases, and other test items](../../test/copy-clone-test-items.md)
-- [Azure Boards FAQs](../faqs.yml) 
+- [Copy or clone test plans, test suites, test cases, and other test items](../../test/copy-clone-test-items.md) 
 - [Bulk modify work items](bulk-modify-work-items.md)   
-- [Move, change, or delete work items](remove-delete-work-items.md)  
+- [Move work items and change the work item type](move-change-type.md)
+- [Remove, delete, or restore work items](remove-delete-work-items.md)  
 - [Pre-populate fields using work item templates](work-item-template.md)
+- [Azure Boards FAQs](../faqs.yml) 
+
+
+
 
