@@ -1,7 +1,7 @@
 ---
-title: Define an Azure Boards work item query with the Query Editor
+title: Define a work item query with the Query Editor in Azure Boards
 titleSuffix: Azure Boards
-description: Create flat-list, tree, or direct links queries in Azure Boards to list, triage, update, and chart work items  
+description: Learn how to create a flat-list, tree, or direct links queries to list, triage, update, and chart work items. 
 ms.custom: "boards-queries, contperf-fy21q3, linked-from-support, cross-project" 
 ms.technology: devops-agile
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 10/26/2021
 ---
 
-# Define a query in Azure Boards
+# Define a work item query in Azure Boards
 
 [!INCLUDE [temp](../includes/version-all.md)]
 [!INCLUDE [temp](../includes/version-visual-studio.md)]
@@ -52,7 +52,7 @@ In this article you'll learn:
  
 For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).  
  
-## Query filters
+## Choose a query filter 
 
 From the Query Editor, exercise the following filter functions. Choose the filter to jump to an article with sample queries. 
 Along with the query filters, you can [interactively apply filters to query results](../backlogs/filter-backlogs-boards-plans.md).
@@ -123,21 +123,21 @@ Along with the query filters, you can [interactively apply filters to query resu
    :::column span="1":::
       ::: moniker range=">= azure-devops-2019"
       - [Blank or empty fields](./titles-ids-descriptions.md#empty-or-not-empty-html-field-queries)
-      - [Boolean searches](./query-by-workflow-changes.md#kanban-board-change-queries) 
+      - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
       - [History and Discussion](./history-and-auditing.md) 
-      - [Kanban board fields](./query-by-workflow-changes.md#kanban-board-change-queries)
+      - [Kanban board fields](./query-by-workflow-changes.md#query-changes-to-a-kanban-board)
       - [In and Not In Group searches](./planning-ranking-priorities.md) 
       - [Search across projects](#across-projects)
       ::: moniker-end
       ::: moniker range="tfs-2018"
-      - [Boolean searches](./query-by-workflow-changes.md#kanban-board-change-queries) 
+      - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
       - [History and Discussion](./history-and-auditing.md) 
       - [In and Not In Group searches](./planning-ranking-priorities.md) 
       - [Search across projects](#across-projects)
       - [In and Not In Group searches](./planning-ranking-priorities.md) 
       ::: moniker-end
       ::: moniker range="tfs-2017"
-      - [Boolean searches](./query-by-workflow-changes.md#kanban-board-change-queries) 
+      - [Boolean searches](./query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
       - [History and Discussion](./history-and-auditing.md) 
       - [Search across projects](#across-projects)
       ::: moniker-end
@@ -381,7 +381,7 @@ When finished, choose :::image type="icon" source="../media/icons/run_query.png"
 
 <a id="tree-query" />
 
-## Use a tree of work items to view hierarchies  
+## Use a work item tree to view hierarchies  
 
 
 Use the :::image type="icon" source="media/11.png" border="false"::: **Tree of Work Items** query to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](media/13.png)) or collapse (![Collapse node, web portal](media/14.png)) nodes to focus on different parts of the tree.  

@@ -1,14 +1,14 @@
 ---
-title: Changes made to process templates
+title: Understand the process for changing process templates
 titleSuffix: Azure Boards  
-description: Summary of changes made to Agile, Scrum, and CMMI process templates to support updating existing projects after a TFS upgrade  
+description: Learn how changes are made to the core system processes with updates made to Azure DevOps Services and on-premises Azure DevOps Server.  
 ms.technology: devops-agile
 ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688 
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/08/2021
+ms.date: 11/07/2021
 ---
 
 # Changes made to process templates  
@@ -82,10 +82,10 @@ If you've customized your project and haven't upgraded your on-premises deployme
       - Process template names have been changed to Agile, CMMI, and Scrum and have been repurposed as locked, system templates. You can export these templates for customization, but you can no longer overwrite these templates with your changes. 
       - Second-level portfolio backlog, Epic, plus configurable option for teams to activate portfolio backlogs.  
       - Team configurable option to choose which backlogs and portfolio backlogs are active. 
-      - Tracking **Time Criticality** of portfolio backlog items. The **Time Criticality** field captures how the business value decreases over time for a Feature or Epic. Higher values indicate that the item is inherently more time critical than those items with lower values.  
-      - Tracking the **Value Area** for portfolio backlog and backlog items. The **Value Area** field differentiates items based on work performed to support *Architectural* requirements or *Business* needs.  
+      - Tracking **Time Criticality** of portfolio backlog items. The **Time Criticality** field captures how the business value reduces over time for a Feature or Epic. Higher values indicate that the item is inherently more time critical than those items with lower values.  
+      - Tracking the **Value Area** for portfolio backlog and backlog items. The **Value Area** field differentiates items based on work done to support *Architectural* requirements or *Business* needs.  
       - Support [any-to-any workflow transitions](choose-process.md#workflow-states) on Agile boards.  
-      - Team configurable option to choose to track bugs on backlogs and boards either as requirements or as tasks. This necessitated adding fields to the bug WIT definition as well as adding a process configuration behavior.   
+      - Team configurable option to choose to track bugs on backlogs and boards either as requirements or as tasks. This required adding fields to the bug WIT definition and adding a process configuration behavior.   
       #### The following changes were made to the default process templates:   
       **WITs added**: Epic<br/>  
       **Miscellaneous WIT changes:**
@@ -158,7 +158,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
       ## TFS 2013.2  
    :::column-end:::
    :::column span="3":::
-      Added support for the Shared Parameters feature which allows you to [run tests with different data](../../../test/repeat-test-with-different-data.md).   
+      Added support for the Shared Parameters feature, which allows you to [run tests with different data](../../../test/repeat-test-with-different-data.md).   
       #### The following changes were made to the default process templates:   
       - WITs added: Shared Parameter 
       - Categories added: Shared Parameter Category  
@@ -174,7 +174,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
       #### The following changes were made to the default process templates:   
       - WITs added: Feature 
       - Categories added: Feature Category  
-      - Process configuration changes: Replaced `AgileConfiguration` and `CommonConfiguration` with a single file, [ProcessConfiguration](../../../reference/xml/process-configuration-xml-element.md), which supports these additional features: portfolio backlogs, color assignment to WITs, tags added to the default columns on all backlog pages.  
+      - Process configuration changes: Replaced `AgileConfiguration` and `CommonConfiguration` with a single file, [ProcessConfiguration](../../../reference/xml/process-configuration-xml-element.md), which supports these other features: portfolio backlogs, color assignment to WITs, tags added to the default columns on all backlog pages.  
       - Build changes: Removed the build templates from the build plug-in. You now access build templates through the user interface [Use the Default Template for your build process](/previous-versions/visualstudio/visual-studio-2013/dd647547(v=vs.120). 
       - Reporting Services updates: To update your project with the latest reports, see [Upload reports to a project](../../../Report/admin/upload-reports.md).  
    :::column-end:::
@@ -186,7 +186,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
    :::column span="3":::
       Added the Portfolio Backlog feature and introduced changes to support Planning Tools.  
       #### Changes to WIT definitions to support status updates via Kanban and taskboards  
-      Each of the default process templates that TFS provides was updated to support additional regressive transitions. These transitions, shown in red in the following illustration, support moving items back to the backlog when they were incorrectly set to done or resolved. Now when you inadvertently drag a work item on the Kanban board or the taskboard to a resolved or closed state, you can drag it back to an earlier workflow state.  
+      Each of the default process templates that TFS provides was updated to support other regressive transitions. These transitions, shown in red in the following illustration, support moving items back to the backlog when they were incorrectly set to done or resolved. Now when you inadvertently drag a work item on the Kanban board or the taskboard to a resolved or closed state, you can drag it back to an earlier workflow state.  
       The following work item types now support any-to-any workflow transitions:  
 
       - Visual Studio Scrum 2.1: Bug, Product Backlog Item, Task 
@@ -206,7 +206,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
       #### The following changes were added to all default process templates:   
       **WITs added:** Code Review Request, Code Review Response, Feedback Request, and Feedback Response 
       **WIT form changes:** 
-             - Many work item forms have been updated to display the larger font for the **Title** field and a two column layout of tab groups  
+             - Many work item forms have been updated to display the larger font for the **Title** field and a two-column layout of tab groups  
              - Maintained mnemonic support only for the following fields: **Area Path**, **Assigned To**, **History**, **Iteration Path**, **State**, and **Title**. Mnemonics have been removed from all other fields within the type definitions. 
       - Categories added: Code Review Request Category, Code Review Response Category, Feedback Request Category, Feedback Response Category, and Hidden Types Category 
       **Process configuration:** Added `CommonConfiguration` and `AgileConfiguration` definition files to support Agile planning tools, code review, feedback, and My Work. 
@@ -237,12 +237,12 @@ If you've customized your project and haven't upgraded your on-premises deployme
 
 ## Related upgrade notes
 
-To update your existing projects hosted on an on-premises Azure DevOps to access new features, [run the Configure Features wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
+To update your existing projects hosted on an on-premises Azure DevOps to access new features, [run the Configure Features wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade). When you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
 
 See the following resources as they relate to updating your project:  
 
 - [Update a customized process template to access new features](/previous-versions/azure/devops/reference/upgrade/update-customized-process-template)
 - [Add features using a manual update process](/previous-versions/azure/devops/reference/upgrade/add-features-manually)
 - [Before you upgrade TFS](/previous-versions/azure/devops/reference/upgrade/upgrade-tfs-2008-or-2010)
-- [Additional configuration options](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options)
+- [More configuration options](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options)
 - [Upload reports to a project](../../../Report/admin/upload-reports.md)

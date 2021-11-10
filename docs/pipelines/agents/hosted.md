@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 08/30/2021
+ms.date: 11/09/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -42,6 +42,8 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
 
 > [!NOTE]
+> [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/virtual-environments/issues/3287).
+>
 > In March 2020, we removed the following Azure Pipelines hosted images:
 >
 > - [Windows Server 2012R2 with Visual Studio 2015](https://github.com/actions/virtual-environments/tree/main/images/win) (`vs2015-win2012r2`)
