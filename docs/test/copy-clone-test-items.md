@@ -34,7 +34,7 @@ For an overview of test objects and terminology, see [Test objects and terms](te
 Depending on the Azure DevOps version you use, you can use the clients or tools listed in the following table to copy/clone or import test plans, test suites, or test cases.  
 
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
       **Client/tool**  
    :::column-end:::
    :::column span="1":::
@@ -50,23 +50,23 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
 ---
 ::: moniker range=">= azure-devops-2020"
 :::row:::
-   :::column span="2":::
-      **Web portal**  
+   :::column span="1":::
+      **Web portal** <sup>1</sup>  
    :::column-end:::
    :::column span="1":::
-      ✔️ (Copy)
+      ✔️ ([Copy](#copy-test-plans-portal))
    :::column-end:::
    :::column span="1":::
-      ✔️ (Import)
+      ✔️ ([Import](#import-test-suites-portal))
    :::column-end:::
    :::column span="1":::
-       ✔️ (Bulk export/import)
+       ✔️ ([Bulk export/import](#bulk-import-export))
    :::column-end:::
 :::row-end:::
 ::: moniker-end
 ::: moniker range=">= azure-devops-2020"
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
       **Web portal (Grid)**  
    :::column-end:::
    :::column span="1":::
@@ -82,7 +82,7 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
 ::: moniker-end
 ::: moniker range="< azure-devops-2020"
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
       **Web portal (Grid)**  
    :::column-end:::
    :::column span="1":::
@@ -98,7 +98,7 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
 ::: moniker-end
 ::: moniker range="< azure-devops-2020"
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
       **Work item form**  
       [**Create copy of work item...**](../../boards/backlogs/copy-clone-work-items.md)
    :::column-end:::
@@ -115,8 +115,9 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
 ::: moniker-end
 ::: moniker range="<= azure-devops-2019"
 :::row:::
-   :::column span="2":::
-      **Microsoft Test Manager** (deprecated)<sup>1</sup> 
+   :::column span="1":::
+      **Microsoft Test Manager**<sup>1</sup>  
+      (deprecated) 
    :::column-end:::
    :::column span="1":::
       ✔️ (Clone plan)
@@ -130,8 +131,8 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
 :::row-end:::
 ::: moniker-end
 :::row:::
-   :::column span="2":::
-      **TCM command-line tool**  
+   :::column span="1":::
+      **TCM CLI** <sup>2</sup>   
    :::column-end:::
    :::column span="1":::
       ✔️ (Clone)
@@ -145,14 +146,14 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
 :::row-end:::
 ::: moniker range=">= azure-devops-2019"
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
       **REST API** 
    :::column-end:::
    :::column span="1":::
-      ✔️ (Clone) 
+      ✔️ ([Clone](/rest/api/azure/devops/testplan/test-plan-clone/clone-test-plan)) 
    :::column-end:::
    :::column span="1":::
-      ✔️ (Clone)
+      ✔️ ([Clone](/rest/api/azure/devops/testplan/test-suite-clone/clone-test-suite))
    :::column-end:::
    :::column span="1":::
        
@@ -161,12 +162,19 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
 ::: moniker-end
 
 > [!NOTE]   
+> ::: moniker range=">= azure-devops-2020"
+> 1. The web portal for Azure Test Plans with significantly updated with the release of Azure DevOps Server 2020. Many new features were added to support copy, clone, import, and export. For an overview, see [Navigate Test Plans](navigate-test-plans.md).
+> 1. The Test Case Management (TCM) command-line tool is installed when you install Visual Studio 2017 or earlier versions. Examples provided in this article reflect the options available with the Visual Studio 2017 version. Earlier versions may support fewer options. For details, see [Work with the TCM command-line tool](#work-tcm-cli). 
+> ::: moniker-end
+> ::: moniker range="< azure-devops-2020"
 > 1. [Microsoft Test Manager (MTM)](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage) was deprecated for use with Azure DevOps Services in January 2020, and isn't supported for Azure DevOps Server 2020 and later versions. The current version of Azure Test Plans supports all features that MTM supported and more. 
-  
-  
+> 1. The Test Case Management (TCM) command-line tool is installed when you install Visual Studio 2017 or earlier versions. Examples provided in this article reflect the options available with the Visual Studio 2017 version. Earlier versions may support fewer options. For details, see [Work with the TCM command-line tool](#work-tcm-cli). 
+> ::: moniker-end 
+ 
+ 
 <a name="what-gets-cloned" />
 
-## What Gets Cloned?
+## Understand what gets cloned  
   
 When you clone a test suite, the following objects are copied from the source test plan to the destination test plan:  
   
@@ -555,15 +563,10 @@ tcm suites /clone
 *** 
 
 
-## Copy or import test cases 
-
+## Copy test cases 
 
 > [!TIP] 
 > Don't copy test cases when what you really want to do is test with [different configurations](test-different-configurations.md) or [different data](repeat-test-with-different-data.md). 
-
-
-
-# [Browser](#tab/browser)
 
 
 ::: moniker range=">= azure-devops-2020"
@@ -604,12 +607,62 @@ From the Internet Explorer, Edge, or Chrome browsers, you can copy test cases fr
 1. If you delete a test case from a suite, you're only deleting it from that suite. If you delete it from every suite, the test case is still in Team Foundation, and you can find it with a work item query.
 
 
+::: moniker-end
+
+
+
+
+::: moniker range=">= azure-devops-2020"
+
+## Bulk import or export test cases 
+
+You can perform a bulk export of test cases from a test suite or bulk import of test cases to a test suite.  
+
+# [Browser](#tab/browser)
+
+::: moniker range=">= azure-devops-2020"
+
+### Export test cases 
+
+1. From **Test Plans>Test plans** choose the test plan with the test suite containing the test cases you want to export. 
+ 
+1. Optional. Choose :::image type="icon" source="media/icons/column-options.png" border="false"::: **Column options** to add fields to include in the download file. 
+
+1. To export all test cases for the test suite, choose **Export test cases to CSV**. 
+
+	:::image type="content" source="media/copy-clone/export-test-cases-test-suite.png" alt-text="Screenshot of Export test cases from the selected test suite.":::
+
+	To export a subset of test cases for the test suite, select the test cases to export, choose :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More options**, and select **Export test case(s) to CSV**. 
+
+	:::image type="content" source="media/copy-clone/export-select-test-cases-test-suite.png" alt-text="Screenshot of selected test cases, Export test cases to CSV.":::
+
+1. The exported CSV file appears in your **Downloads** folder. 
+
+### Import test cases 
+
+1. From **Test Plans>Test plans** choose the test plan with the test suite into which you want to import test cases. 
+
+	:::image type="content" source="media/copy-clone/choose-import-test-cases.png" alt-text="Screenshot of Import test cases to the selected test suite.":::
+
+1. Choose the file to import from the dialog that opens and choose **Import**.
+
+	:::image type="content" source="media/copy-clone/import-test-cases-dialog.png" alt-text="Import Test Cases dialog.":::
+
+1. Choose **Confirm** in the Confirm import dialog that displays. If you specify test cases that are already defined in the test suite, some elements may get over written during import. 
+
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
+> [!NOTE] 
+> This feature isn't supported through the web portal for Azure DevOps Server 2019 and earlier versions. The feature to import test suites requires Azure DevOps Server 2020 or later version. 
 
 ::: moniker-end
 
 # [TCM CLI](#tab/tcm-cli)
 
-To  
+To import test cases to a test suite, use `tcm testcase /import`.  
 
 ```tcm 
 tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
@@ -637,17 +690,6 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
 To be completed. 
 
 *** 
-
-
-
-::: moniker range=">= azure-devops-2020"
-
-## Bulk import or export test cases 
-
-You can perform a bulk export of test cases from a test suite or bulk import of test cases to a test suite. 
-
-
-
 
 
 ::: moniker-end
