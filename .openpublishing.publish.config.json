@@ -34,7 +34,7 @@
       },
       "redirection_files": [
         ".openpublishing.redirection.json",
-        ".openpublishing.redirection.pipelines.json"
+        "pipelines/.openpublishing.redirection.pipelines.json"
     ],
       "template_folder": "_themes"
     }
