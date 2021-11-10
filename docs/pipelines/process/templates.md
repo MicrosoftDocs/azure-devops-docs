@@ -468,6 +468,38 @@ variables:
 steps:
 - script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
 ```
+### Variable templates with parameter
+```yaml
+# File: templates/package-release-with-params.yml
+
+parameters:
+- name: DIRECTORY 
+  type: string
+  default: "." # defaults for any parameters that specifield with "." (current directory)
+
+variables:
+- name: RELEASE_COMMAND
+  value: grep version ${{ parameters.DIRECTORY }}/package.json | awk -F \" '{print $4}'  
+```
+
+When you consume the template in your pipeline, specify values for
+the template parameters.
+
+```yaml
+# File: azure-pipelines.yml
+
+variables: # Global variables
+  - template: templates/version-release.yml  # Template reference
+    parameters:
+      DIRECTORY: "azure/checker"
+
+stage: Release_Stage 
+  displayName: Release Version
+  variables: # Stage variables
+    - template: templates/version-release.yml  # Template reference
+      parameters:
+        DIRECTORY: "azure/todo-list"
+```
 
 ## Reference template paths
 
