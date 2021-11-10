@@ -244,7 +244,8 @@ In Visual Studio, right-click the work item tab to copy the URL. The URL opens t
 
 ## Related articles
 
--  [Azure Boards FAQs](../faqs.yml) 
+- [Copy or clone test plans, test suites, test cases, and other test items](../../test/copy-clone-test-items.md)
+- [Azure Boards FAQs](../faqs.yml) 
 - [Bulk modify work items](bulk-modify-work-items.md)   
 - [Move, change, or delete work items](remove-delete-work-items.md)  
 - [Pre-populate fields using work item templates](work-item-template.md)

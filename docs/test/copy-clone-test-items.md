@@ -15,7 +15,7 @@ ms.date: 11/04/2021
 
 [!INCLUDE [version-header](includes/version-header.md)] 
 
-*You can copy various test items&mdash;such as, test plans, test suites, and test cases&mdash; using features supported for all work items or using specific features supported by Azure Test Plans. *
+*You can copy various test items&mdash;such as, test plans, test suites, and test cases&mdash; using features supported for all work items or using specific features supported by Azure Test Plans.*
 
 In general, you should create a test plan for every major project milestone. Each test plan is comprised of one or more test suites, which are collections of test cases and, optionally, other test suites. Test cases are designed to validate a work item, such as a feature implementation or bug fix. Each test case is designed to confirm a specific behavior. Test cases may belong to one or more test suites, however test suites can belong to one and only one test plan.  
 
@@ -24,45 +24,30 @@ Copying, cloning, or importing existing test objects supports the following scen
 - Copy a test plan from one project to another project  
 - Share test objects across projects
 - Move test objects from one project to another, possibly to support consolidating projects into a single project
+- Copy test cases 
 
-<!--- Information I learned or tips I should provide: 
-
-- The Export function is primarily an email/print summary feature; not used to export test objects and import them elsewhere. 
-- While Test plans, test suites, and test cases are related to each other - you can view the relationship through a Query. Link types aren't used to link test plans, test suites, and test cases. Only shared steps and shared parameters are linked to the test cases. Also, test cases are linked to the user stories/work items that they test. 
-- Advantages of using the supported tools for copy/cloning versus the work item form Create a copy tool 
-
--->
+For an overview of test objects and terminology, see [Test objects and terms](test-objects-overview.md).  
 
 
+## Clients/tools that support copy, clone, or import operations
 
-
-> [!TIP] 
-> Don't copy test cases when what you really want to do is test with [different configurations](test-different-configurations.md) or [different data](repeat-test-with-different-data.md). 
-
-
-You can use the following clients or tool to copy or clone test objects: 
-
-**Client/tool**  
-Web portal 
-Web portal (Grid view)
-TCM tool 
-MTM tool (deprecated) 
-REST API 
+Depending on the Azure DevOps version you use, you can use the clients or tools listed in the following table to copy/clone or import test plans, test suites, or test cases.  
 
 :::row:::
    :::column span="2":::
       **Client/tool**  
    :::column-end:::
    :::column span="1":::
-      Test Plans
+      **Test Plans**
    :::column-end:::
    :::column span="1":::
-      Test Suites
+      **Test Suites**
    :::column-end:::
    :::column span="1":::
-      Test Cases
+      **Test Cases**
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="2":::
@@ -73,6 +58,22 @@ REST API
    :::column-end:::
    :::column span="1":::
       ✔️
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range=">= azure-devops-2020"
+:::row:::
+   :::column span="2":::
+      **Web portal (Grid)**  
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+       
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -95,7 +96,39 @@ REST API
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= tfs-2017"
+::: moniker range="< azure-devops-2020"
+:::row:::
+   :::column span="2":::
+      **Work item form**  
+      [**Create copy of work item...**](../../boards/backlogs/copy-clone-work-items.md)
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range="<= azure-devops-2019"
+:::row:::
+   :::column span="2":::
+      **Microsoft Test Manager** (deprecated)<sup>1</sup> 
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+:::row-end:::
+::: moniker-end
 :::row:::
    :::column span="2":::
       **TCM command-line tool**  
@@ -110,8 +143,7 @@ REST API
       ✔️
    :::column-end:::
 :::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2017"
+::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="2":::
       **REST API** 
@@ -123,11 +155,50 @@ REST API
       ✔️
    :::column-end:::
    :::column span="1":::
-      ✔️
+       
    :::column-end:::
 :::row-end:::
 ::: moniker-end
 
+> [!NOTE]   
+> 1. [Microsoft Test Manager (MTM)](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage) was deprecated for use with Azure DevOps Services in January 2020, and isn't supported for Azure DevOps Server 2020 and later versions. The current version of Azure Test Plans supports all features that MTM supported and more. 
+ 
+
+[!INCLUDE [note-new-ui](includes/note-new-ui.md)] 
+
+
+  
+<a name="what-gets-cloned" />
+
+## What Gets Cloned?
+  
+When you clone a test suite, the following objects are copied from the source test plan to the destination test plan:  
+  
+|Test plan object|Copied|Notes|  
+|----------------------|------------|-----------|  
+|Test case|✔️|Each new test case retains its shared steps.<br /><br /> A link is made between the source and new test cases.<br /><br /> The new test cases do not have test runs, bugs, test results, and build information.|  
+|Shared steps referenced by cloned test cases|![Topic applies](media/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)||  
+|Test suite|✔️|The following data is retained:<br /><br /> -   Names and hierarchical structure of the test suites<br />-   Order of the test cases<br />-   Assigned testers<br />-   Configurations|  
+|Action Recordings linked from a cloned test case|✔️|  
+|Links and Attachments|✔️||  
+|Test configuration|✔️|The test configuration is reapplied in the destination test plan.|  
+|Test settings|❌ |The test setting for the destination test plan is applied.|  
+|Test results|❌||  
+|Test runs and exploratory test sessions|❌|Because test runs are applicable only to the source test plan, they are not copied.|  
+|Requirements-based suites|❌<br /><br /> Without `/clonerequirements`|Requirements-based test suites are converted to static test suites in the destination test plan. Cloned test cases will be referenced under this static test suite.<br /><br /> Cloned test cases do not include links to their original requirements work items.|  
+|Requirements-based suites|❌<br /><br /> with `/clonerequirements`|Copied and linked to a new copy of the requirement work item.|  
+|Requirements work items (product backlog items or user stories)|with `/clonerequirements`|Requirements work items that are associated with a cloned requirements-based suite are cloned.|  
+|Bug work items<br /><br /> with `/clonerequirements`|with `/clonerequirements`|Cloned in a project that uses the Scrum process template, or any project in which the Bug work item type is in the Requirements work item category.<br /><br /> In other projects, bugs are not cloned.| 
+
+
+<!--- Information I learned or tips I should provide: 
+
+- The Export function is primarily an email/print summary feature; not used to export test objects and import them elsewhere. 
+- While Test plans, test suites, and test cases are related to each other - you can view the relationship through a Query. Link types aren't used to link test plans, test suites, and test cases. Only shared steps and shared parameters are linked to the test cases. Also, test cases are linked to the user stories/work items that they test. 
+- Advantages of using the supported tools for copy/cloning versus the work item form Create a copy tool 
+
+-->
+ 
 
 Copy test plans
 Export test cases to CSV 
@@ -139,26 +210,29 @@ Export (Test Suite)
 
 - **Import/Export test plans from/to CSV files**: Export existing test cases to an Excel CSV file, make changes to the CSV file, and then import the file. There are many other use cases of this functionality. New test plans page – Azure Test Plans
 
-[test objects](test-objects-overview.md) 
+
  
-
-|Test object | Copy/Clone work item | 
-
 - **View linked items**: View the bugs, test suites, or requirements linked to a test case
+
+copy-clone-test-items
+
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)] 
 
-[!INCLUDE [note-new-ui](includes/note-new-ui.md)] 
 
 
 ## Copy/clone test plans  
 
-We recommend creating a new test plan per sprint or release. When doing so, generally you can copy the Test Plan for the prior cycle and with few changes the copied test plan is ready for the new cycle. 
+We recommend creating a new test plan per sprint or release. When doing so, generally you can clone the Test Plan for the prior cycle and with few changes the copied test plan is ready for the new cycle. 
+
+Cloning is useful when you want to branch your application into two versions. After cloning, tests for the two versions can be changed without affecting each other.
+
+:::image type="content" source="media/copy-clone/clone-test-plan-conceptual.png" alt-text="Conceptual image, clone test plan.":::
+
 
 # [Browser](#tab/browser)
-
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -170,13 +244,23 @@ We recommend creating a new test plan per sprint or release. When doing so, gene
 
 	:::image type="content" source="media/copy-clone/copy-test-plan-dialog.png" alt-text="Copy test plan dialog":::
 
-	Choose the radio-button to either **Reference** existing test cases or to **Duplicate** referenced test cases by cloning them. If you duplicate existing test cases, the copied test cases will be assigned the **Area Path** and **Iteration Path** specified for the copy test plan. 
+	Choose one or the other radio-buttons based on the following guidance:  
+	- **Reference existing test cases**: Choose this option when you plan to merge the two branches eventually. In this case, you'll want to keep the same requirements for functionality that has already been implemented and tested.  
+	- **Duplicate existing test cases**: Choose this option when you want to make new user stories or requirements that you will maintain separately. If you plan to diverge into two similar but separate applications, you might want to change the user stories of one without changing the stories of the other. Choosing this option creates an independent set of requirements for the new test cases.  
+
+	If you duplicate existing test cases, the copied test cases will be assigned the **Area Path** and **Iteration Path** specified for the cloned test plan. 
 
 	To learn more about area and iteration paths, see [About area and iteration (sprint) paths](..//organizations/settings/about-areas-iterations.md).
 
 3. The page refreshes to display the newly copied test plan. 
 
 	:::image type="content" source="media/copy-clone/copied-test-plan.png" alt-text="Copied test plan, browser view":::
+
+4. Update any [query-based suites](create-a-test-plan.md) that you copied to use the new area and iteration paths.  
+
+5. Specify a build in the destination test plan if you have cloned automated test cases.
+
+
 
 <!-- Document labeling that occurs, pick up of work item IDs --> 
 
@@ -257,9 +341,7 @@ The `/clone /sourceplanid /destinationplanname` creates a new plan. If you speci
 **|/clonerequirements |Optional. Specifies|**
 |**/clonechildren** |Optional. Specify to clone all child suites of the suites provided.|
 |**/clonerequirements** | Optional. Specify this switch to clone a requirement-based suite to a destination requirement-based suite. By default, a requirement-based test suite is cloned to a destination static test suite.  |
-|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
-|**/teamproject**:`project`|Required. The name of the team project that contains the test plan that you want to import your automated tests into.|  
-|**/storage**: path|Specifies the path and name of the test assembly that contains your automated tests that you want to import.|
+|**/storage**:`path`|Specifies the path and name of the test assembly that contains your automated tests that you want to import.|
 
 
 **Example**
@@ -292,7 +374,6 @@ tcm plans /clone
 
 ### Track the status of the test plan clone operation  
 
-
 Use `tcm plans /clone /status` to retrieve the status of the clone operation made with `tcm suites /clone`. Test suites that contain a large number of test cases can take a considerable time to clone. 
 
 
@@ -305,12 +386,7 @@ tcm plans /clone
 
 | Parameter | Description |  
 |----------|------------| 
-|**/status**:`cloneoperationid`|Required. Specifies the ID of the clone operation returned when `tcm plans /clone` executes.  |
-|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
-|**/teamproject**:`project`|Required. The name of the team project where you executed the clone operation. | 
-|**/login**:`username,[password]`|Optional. Specifies the name and password of a valid Azure DevOps user and who has permissions to run the command. Use this option if your Windows credentials don't have the appropriate permissions, or you're using basic authentication, or you're not connected to a domain.|
-
-
+|**/status**:`cloneoperationid`|Required. Specifies the ID of the clone operation returned when `tcm plans /clone` executes.  
 
 **Example**
 
@@ -318,7 +394,18 @@ To be completed.
 
 *** 
 
-## Copy/clone or import test suites 
+## Import or copy/clone test suites 
+
+When you're creating the test plan for a new sprint, you often want to repeat some of the tests from the previous sprints, to make sure that the functionality you already implemented is still working.
+
+:::image type="content" source="media/copy-clone/copy-test-suite-conceptual.png" alt-text="Conceptual image, copy test suites.":::
+ 
+Note the following: 
+
+- When you import (Web) or clone (TCM) a test suite to a new project, the new suite will contain copies of all test cases in the source suite. However, it will not retain any historical data like the previous test runs, related bugs, old results.
+- Shared steps referenced by the test cases are also cloned and created in the destination project.
+- You can't clone  test cases from and to the same test plan, even into a different suite. To accomplish this scenario, you must first move the test cases to a different, temporary test plan. Then, use the temporary test plan as the source plan and clone the test cases back to the source test plan by putting the ID into the destination test plan place. Shared steps present in the test cases will also be duplicated in this process. 
+
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -330,11 +417,6 @@ You can use TCM to copy/clone a test suite, specifying the target test plan whic
  
 ::: moniker-end
 
-Note the following: 
-
-- When you clone or import a test suite, the new suite will contain the copies of all test cases in the source suite. However, it will not retain any historical data like the previous test runs, related bugs, old results.
-- Shared steps are also cloned and created in the destination project.
-- You can't clone the test cases from and to the same test plan, even into a different suite. To accomplish this scenario, you must first move the test cases to a different, temporary test plan. Then, use the temporary test plan as the source plan and clone the test cases back to the source test plan by putting the ID into the destination test plan place. Shared steps present in the test cases will also be duplicated in this process. 
 
 
 You can use [`tcm suites /list`](#list-test-suites) to list all test suites defined for a project. 
@@ -426,10 +508,6 @@ tcm suites /clone
 |**/destinationteamproject**:`projectname`|Optional. Specify when you want to clone the test suite to a different project but in the same organization or project collection. You must specify override field values for the **Area Path** and **Iteration Path** fields.|
 |**/destinationworkitemtype**:`workitemtype`|Optional.|
 |**/clonerequirements** | Optional. Specify this switch to clone a requirement-based suite to a destination requirement-based suite. By default, a requirement-based test suite is cloned to a destination static test suite.  |
-|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
-|**/teamproject**:`project`|Required. The name of the team project that contains the test plan that you want to import your automated tests into.| 
-|**/login**:`username,[password]`|Optional. Specifies the name and password of a valid Azure DevOps user and who has permissions to run the command. Use this option if your Windows credentials don't have the appropriate permissions, or you're using basic authentication, or you're not connected to a domain.|
-
 
 
 **Example**
@@ -459,16 +537,17 @@ tcm suites /clone
 
 | Parameter | Description |  
 |----------|------------| 
-|**/status**:`cloneoperationid`|Required. Specifies the ID of the clone operation returned when `tcm suites /clone` executes.  |
-|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
-|**/teamproject**:`project`|Required. The name of the team project that contains the test plan that you want to import your automated tests into.| 
-|**/login**:`username,[password]`|Optional. Specifies the name and password of a valid Azure DevOps user and who has permissions to run the command. Use this option if your Windows credentials don't have the appropriate permissions, or you're using basic authentication, or you're not connected to a domain.|
-
+|**/status**:`cloneoperationid`|Required. Specifies the ID of the clone operation returned when `tcm suites /clone` executes.  
 
 *** 
 
 
 ## Copy/clone test cases 
+
+
+> [!TIP] 
+> Don't copy test cases when what you really want to do is test with [different configurations](test-different-configurations.md) or [different data](repeat-test-with-different-data.md). 
+
 
 
 # [Browser](#tab/browser)
@@ -518,14 +597,12 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
 
 | Parameter | Description |  
 |----------|------------|  
-|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
-|**/teamproject**:`project`|Required. The name of the team project that contains the test plan that you want to import your automated tests into.|
 |**/storage**:`path`|Specifies the path and name of the test assembly that contains your automated tests that you want to import.| 
 |**/maxpriority**:`priority`|Optional. Specifies which tests to import based on the maximum priority of the test method. For example, if the parameter is `/maxpriority:1`, only tests with a priority attribute for the test method less than or equal to 1 are imported as test cases from the assembly.| 
 |**/minpriority**:`priority`|Optional. Specifies which tests to import based on the minimum priority of the test method. For example, if the parameter is `/minpriority:2`, only tests with a priority attribute for the test method equal or greater than 2 are imported as test cases from the assembly.| 
 |**/category**:`filter`|Optional. Specifies which tests to import based on the category of each test method in the test assembly. You can use this parameter together with `/syncsuite` to import tests with a certain category into a specific test suite.<br/> For more information about test categories see Defining Test Categories to Group Your Tests.| 
 |**/syncsuite**:`id`|Optional. Specifies the suite ID for the test suite in your test plan to which you want to add the test cases that you import. This suite cannot be a dynamic suite or a query-based suite. If you specify a test suite to synchronize to update tests that have already been added, the tests that are not imported are removed from the test suite but not from the test plan itself.<br/><br/>To determine the suite id for the test suite that you want to use, you can use the `tcm suites /list` command to list the test suites in your team project. |
-|**/login**:`username,[password]`|Optional. Specifies the name and password of a valid Azure DevOps user and who has permissions to run the command. Use this option if your Windows credentials don't have the appropriate permissions, or you're using basic authentication, or you're not connected to a domain.|
+
 
 
 **Example**
