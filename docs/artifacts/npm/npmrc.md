@@ -8,7 +8,7 @@ ms.date: 11/10/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Connect to Azure Artifacts feeds
+# Set up your project and connect to Azure Artifacts
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
@@ -18,60 +18,49 @@ To authenticate with Azure Artifacts, we must first set up our config file. npm 
 
 ## Project setup
 
-We recommend using two **.npmrc_** files, the first one we will use to authenticate to Azure Artifacts, and the second one should be kept in your local development machine to store your credentials.
+We recommend using two **.npmrc_** files, the first one we will use to authenticate to Azure Artifacts, and the second one should be kept locally to store our credentials.
 
-1. One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.
+1. Select **Artifacts**, and then select **Connect to feed**.
 
-   1. From your **Packages** page, click _Connect to Feed_
-
-      ::: moniker range=">= azure-devops-2019"
-    
-         > [!div class="mx-imgBorder"] 
-         > ![Connect to feed button in Azure Artifacts Azure Devops](../media/connect-to-feed-azure-devops-newnav.png)
-
-      ::: moniker-end
-
-      ::: moniker range=">= tfs-2017 < azure-devops-2019"
-
-         > [!div class="mx-imgBorder"]
-         > ![Connect to feed TFS](../media/connect-to-feed.png)
-
-      ::: moniker-end
-
-   2. Select **npm**.
-
-   3. Select **Get the tools** in the top-right corner.
- 
-   ::: moniker range=">= azure-devops"   
+   ::: moniker range=">= azure-devops-2019"
    
-      4. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
-   
-      5. Follow the instructions under the **Project setup** section to set up your project. See the **Restore packages** and **Publish packages** sections if you want to publish or restore your packages.
-   
-         > [!div class="mx-imgBorder"] 
-         > ![Connect to feed DevOps services](../media/npm-azure-devops-newnav.png)
-   
-   ::: moniker-end
-
-   ::: moniker range="> tfs-2018 < azure-devops"
-
-      4. Follow the instructions in the **Project setup** and **Restore packages** sections.
-
-         > [!div class="mx-imgBorder"] 
-         > ![Connect to feed server 2019 and 2020](../media/connect-to-feed-devops-server.png)
+       :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
 
    ::: moniker-end
 
    ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-      4. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
-
-      5. Follow the instructions under the **Project setup** section to set up your project. See the **Restore packages** and **Publish packages** sections if you want to publish or restore your packages.
-
-         > [!div class="mx-imgBorder"] 
-         > ![Connect to feed TFS project setup](../media/connect-to-feed-npm-registry.png)
+      :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed in TFS.":::
 
    ::: moniker-end
+
+2. Select **npm** from the list of package types.
+
+3. If this is the first time using Azure Artifacts with npm, select **Get the tools** button and follow the instructions to install the prerequisites. 
+
+::: moniker range=">= azure-devops"   
+
+4. Follow the instructions under the **Project setup** section to set up your project. See the **Restore packages** and **Publish packages** sections if you want to publish or restore your packages.
+
+    :::image type="content" source="../media/npm-azure-devops-newnav.png" alt-text="Screenshot showing the steps to set up the project and publish and restore packages.":::
+
+::: moniker-end
+
+::: moniker range="> tfs-2018 < azure-devops"
+
+4. Follow the instructions in the **Project setup** and **Restore packages** sections.
+
+   :::image type="content" source="../media/connect-to-feed-devops-server.png" alt-text="Screenshot showing the steps to set up the project and restore packages.":::
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops-2019"
+
+4. Follow the instructions under the **Project setup** section to set up your project. See the **Restore packages** and **Publish packages** sections if you want to publish or restore your packages.
+
+    :::image type="content" source="../media/connect-to-feed-npm-registry.png" alt-text="Screenshot showing the steps to set up the project in TFS.":::
+
+::: moniker-end
         
 2. On your development machine, you will also have a **_.npmrc_** in $HOME for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $HOME/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
 
