@@ -1,24 +1,24 @@
 ---
 title: Set up your client's npmrc
-description: Authenticating to feeds with npm in Azure DevOps Services
+description: How to set up your project and authenticate to Azure Artifacts feeds
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 09/01/2020
+ms.date: 11/10/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Set up your client's npmrc
+# Connect to Azure Artifacts feeds
 
-**Azure DevOps Services | TFS 2018 | TFS 2017**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server that makes it easy to discover, install, and publish different types of packages. Check out [Start using Azure Artifacts](../start-using-azure-artifacts.md) for more details.
+With Azure Artifacts, you can publish different types of packages to your feeds such as npm, NuGet, Python, Maven, and Universal packages. You can also install packages from feeds and public registries such as npmjs.com.
 
-All Azure Artifacts feeds require authentication, so you'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
+To authenticate with Azure Artifacts, we must first set up our config file. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
-## Where are my **_.npmrc_** files?
+## Project setup
 
-Azure DevOps Services recommends using two **_.npmrc_** files:
+We recommend using two **.npmrc_** files, the first one we will use to authenticate to Azure Artifacts, and the second one should be kept in your local development machine to store your credentials.
 
 1. One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.
 
