@@ -84,11 +84,7 @@ az webapp create -g myapppipeline-rg -p myapp-service-plan -n my-app-dotnet-win 
 
 ::: moniker range="azure-devops"
 
-To get started, fork the following repository into your GitHub account.
-
-```
-https://github.com/MicrosoftDocs/pipelines-dotnet-core
-```
+[!INCLUDE [include](../includes/dotnet-setup.md)]
 
 ### Create your pipeline
 
@@ -167,20 +163,14 @@ YAML pipelines aren't available on TFS.
 
 To get started: 
 
-1. Fork this repo in GitHub, or import it into Azure Repos:
+1. Create a pipeline and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
 
-   ```
-   https://github.com/MicrosoftDocs/pipelines-dotnet-core
-   ```
+2. Save the pipeline and queue a build to see it in action.
 
-2. Create a pipeline and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
-
-3. Save the pipeline and queue a build to see it in action.
-
-4. Create a release pipeline and select the **Azure App Service Deployment** template for your stage.
+3. Create a release pipeline and select the **Azure App Service Deployment** template for your stage.
    This automatically adds the necessary tasks. 
 
-5. Link the build pipeline as an artifact for this release pipeline. Save the release pipeline and create a release to see it in action.
+4. Link the build pipeline as an artifact for this release pipeline. Save the release pipeline and create a release to see it in action.
 
 ---
 Now you're ready to read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
