@@ -18,7 +18,7 @@ To authenticate with Azure Artifacts, we must first set up our config file. npm 
 
 ## Project setup
 
-We recommend using two **.npmrc_** files, the first one we will use to authenticate to Azure Artifacts, and the second one should be kept locally to store our credentials.
+We recommend using two **.npmrc_** files, the first one we will use to authenticate to Azure Artifacts, and the second one should be kept locally to store our credentials. This enables you to share your project's **.npmrc** while keeping your credentials secure.
 
 1. Select **Artifacts**, and then select **Connect to feed**.
 
@@ -40,7 +40,7 @@ We recommend using two **.npmrc_** files, the first one we will use to authentic
 
 ::: moniker range=">= azure-devops"   
 
-4. Follow the instructions under the **Project setup** section to set up your project. See the **Restore packages** and **Publish packages** sections if you want to publish or restore your packages.
+4. Follow the instructions under the **Project setup** section to set up your project.
 
     :::image type="content" source="../media/npm-azure-devops-newnav.png" alt-text="Screenshot showing the steps to set up the project and publish and restore packages.":::
 
@@ -48,7 +48,7 @@ We recommend using two **.npmrc_** files, the first one we will use to authentic
 
 ::: moniker range="> tfs-2018 < azure-devops"
 
-4. Follow the instructions in the **Project setup** and **Restore packages** sections.
+4. Follow the instructions in the **Project setup** section to set up your project.
 
    :::image type="content" source="../media/connect-to-feed-devops-server.png" alt-text="Screenshot showing the steps to set up the project and restore packages.":::
 
@@ -56,36 +56,40 @@ We recommend using two **.npmrc_** files, the first one we will use to authentic
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-4. Follow the instructions under the **Project setup** section to set up your project. See the **Restore packages** and **Publish packages** sections if you want to publish or restore your packages.
+4. Follow the instructions under the **Project setup** section to set up your project.
 
     :::image type="content" source="../media/connect-to-feed-npm-registry.png" alt-text="Screenshot showing the steps to set up the project in TFS.":::
 
 ::: moniker-end
         
-2. On your development machine, you will also have a **_.npmrc_** in $HOME for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $HOME/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
+2. On your development machine, place the second *.npmrc* file in your *$HOME* for Linux/Mac or *$env.HOME* for Windows. This *.npmrc* file should contain all your registries' credentials. 
 
-This enables you to share project's **_.npmrc_** with the whole team while keeping your credentials secure.
+## Credentials setup
 
-## Set up authentication on your dev box
-
-You should have a project specific **_.npmrc_** containing only your feed's registry information that you discovered from the "Connects to Feed" dialog.  There should be no credentials in this file and the file itself is adjacent to your project's **_package.json_**.
-
-> [!IMPORTANT]
-> There can only be a single "registry=" line in your **_.npmrc_**.  Multiple registries are possible with [upstream sources](../concepts/upstream-sources.md), or by using [scopes](..//npm/scopes.md) (not recommended).
+> [!TIP]
+> Multiple registries in .npmrc files are supported with [upstream sources](../concepts/upstream-sources.md) and [scopes](..//npm/scopes.md).
 
 ::: moniker range=">= azure-devops"
 
-### Windows
+### [Windows](#tab/windows/)
 
-If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch credentials and inject them into your **_%USERPROFILE%\\.npmrc_** on a periodic basis.  The easiest way to set this up is to install `vsts-npm-auth` globally (i.e. `npm install -g vsts-npm-auth`) and then add a run script in your project's **_package.json_**.
+If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch the credentials and inject them into your *%USERPROFILE%\\.npmrc*.  The easiest way to set this up is to install `vsts-npm-auth` globally and then add a run script to your *package.json*.
 
-```json
-"scripts": {
-    "refreshVSToken" : "vsts-npm-auth -config .npmrc"
-}
-```
+- Install vsts-npm-auth globally:
 
-### Linux or Mac
+    ```Command
+    npm install -g vsts-npm-auth
+    ```
+
+- Add script to package.json:
+
+    ```json
+    "scripts": {
+        "refreshVSToken" : "vsts-npm-auth -config .npmrc"
+    }
+    ```
+
+### [Linux/Mac](#tab/linux/)
 
 `vsts-npm-auth` is not supported for Linux/Mac. We recommend generating a token and saving it in your **_$HOME/.npmrc_** as follows.
 
@@ -111,6 +115,8 @@ npm install
 ```
 
 ::: moniker-end
+
+* * *
 
 ## Set up authentication in a build task
 
