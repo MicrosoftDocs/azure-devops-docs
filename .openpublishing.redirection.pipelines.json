@@ -1,17 +1,17 @@
 {
   "redirections": [
     {
-      "source_path": "docs/pipelines/targets/cosmos-db.md",
+      "source_path_from_root": "/docs/pipelines/targets/cosmos-db.md",
       "redirect_url": "/azure/cosmos-db/tutorial-setup-ci-cd",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/pipelines/library/government-cloud.md",
+      "source_path_from_root": "/docs/pipelines/library/government-cloud.md",
       "redirect_url": "/azure/azure-government/connect-with-azure-pipelines",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/pipelines/release/deploy-iot-using-azure-pipelines.md",
+      "source_path_from_root": "/docs/pipelines/release/deploy-iot-using-azure-pipelines.md",
       "redirect_url": "/azure/iot-edge/how-to-continuous-integration-continuous-deployment",
       "redirect_document_id": false
     }
