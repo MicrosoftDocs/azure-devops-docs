@@ -23,4 +23,11 @@ To exercise the TCM command-line tool, you must have the following in place:
 
 - You must be a valid member of the project(s) you want to access and have the required permissions based on the commands you run. To learn more, see [Manual test access and permissions](../manual-test-permissions.md). 
 
+- Define the following parameters when you run a TCM command: 
+
+	| Parameter | Description |  
+	|----------|------------|  
+	|**/collection**`:CollectionURL`|Required. Specifies the URI of the team project collection.The format for the URI is as follows:<br/>- For Azure DevOps Services: `http://dev.azure.com/OrganizationName`<br/>- For Azure DevOps Server: `http://ServerName:Port/VirtualDirectoryName/CollectionName`. If no virtual directory is used, then the format for the URI is as follows:`http://ServerName:Port/CollectionName`|
+	|**/teamproject**:`project`|Required. The name of the team project that contains the test plan that you want to import your automated tests into.|
+	|**/login**:`username,[password]`|Optional. Specifies the name and password of a valid Azure DevOps user and who has permissions to run the command. Use this option if your Windows credentials don't have the appropriate permissions, or you're using basic authentication, or you're not connected to a domain.|
 
