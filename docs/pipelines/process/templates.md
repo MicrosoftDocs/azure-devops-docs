@@ -110,7 +110,8 @@ parameters:
   default: [] # default value of buildSteps
 stages:
 - stage: secure_buildstage
-  pool: Hosted VS2017
+  pool:
+    vmImage: vs2017-win2016
   jobs:
   - job: secure_buildjob
     steps:

@@ -394,7 +394,7 @@ Consider the following questions when setting goals:
 - *What are you learning about your customers? What do you need to know?* 
 - *What data is being measured? Is it actionable? What data needs to be measured?*
 - *How is the flow of deliverables? Is it as expected? Where can improvements be made?* 
-- *Is your team empowered to do there best? What tools or information would help them improve?*
+- *Are your team members empowered to do their best? What tools or information would help them improve?*
 - *How well is information being shared? How well are teams collaborating?* 
 - *How well is your team managing technical debt and closing bugs?*
 
