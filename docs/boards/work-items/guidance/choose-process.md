@@ -1,7 +1,7 @@
 ---
 title: Choose a process from your Azure DevOps project
 titleSuffix: Azure Boards
-description: Choose an Azure DevOps Server Basic, Agile, Scrum, or CMMI process flow or process template, work with project artifacts and work items in Azure Boards, Azure DevOps 
+description: Learn how to choose a process or process template based on the process model you use in Azure Boards and Azure DevOps. 
 ms.custom: work-items 
 ms.technology: devops-agile
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
@@ -9,16 +9,14 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/11/2021
+ms.date: 11/07/2021
 ---
 
 # Choose an Azure DevOps Server process flow or process template to work in Azure Boards or Azure DevOps 
 
 [!INCLUDE [temp](../../includes/version-all.md)]
 
-Anytime you create a project, you must choose a process or process template based on the process model you use. 
-- A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for Azure Boards. This model supports customization of projects through a WYSIWYG user interface. 
-- A **process template** defines the building blocks of the work item tracking system and other subsystems you access through Azure DevOps. It supports Hosted XML and On-premises XML process models, which support customization of projects through the modification and import of XML definition files. 
+[!INCLUDE [temp](../../../includes/choose-process-introduction.md)]
 
 [!INCLUDE [temp](../../includes/note-configure-customize.md)]
 
@@ -40,7 +38,7 @@ The work tracking objects contained within the default processes and process tem
 
 
 
-## Basic, Agile, Scrum, and CMMI
+## Choose a Basic, Agile, Scrum, and CMMI process
 
 The default processes differ mainly in the work item types (WITs) they provide for planning and tracking work. 
 
@@ -102,7 +100,7 @@ Choose the process that provides the best fit for your team.
 
    
    Choose [Scrum](scrum-process.md) when your team practices Scrum. This process works great if you want to track product backlog items (PBIs) and
-   bugs on the Kanban board, or break PBIs and bugs down into tasks on the taskboard.
+   bugs on the Kanban board, or break down PBIs and bugs into tasks on the taskboard.
    
    This process supports the Scrum methodology as defined by the [Scrum organization](https://www.scrum.org/).
 
@@ -536,7 +534,7 @@ Each image shows only the default reason associated with the transition.
 
 Most WITs used by Agile tools, ones that appear on backlogs and boards, support any-to-any transitions. You can update the status of a work item using the Kanban board or the taskboard by dragging it to its corresponding state column.
 
-You can change the workflow to support additional states, transitions, and reasons. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).
+You can change the workflow to support other states, transitions, and reasons. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
 
 <a id="removed-closed-done"></a>

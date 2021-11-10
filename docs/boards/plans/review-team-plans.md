@@ -70,7 +70,7 @@ For example, we use Delivery Plans internally to share the schedule of Features.
 
 In this way, a Delivery Plan is a driver of alignment while letting each team remain autonomous. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different projects if they use different processes. Customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
-## Best practices 
+## Best practices for using a Delivery Plan
 
 - Determine how you want to use the Delivery Plan. Some ideas are: 
 	- Review quarterly plans for features to be delivered
@@ -146,14 +146,14 @@ For work items that span one or more iterations, define the **Start Date** and *
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing features that span iterations](media/plans/features-span-iterations-preview.png)  
 
-## View titles only, collapsed card view 
+## View titles only in the collapsed card view 
 
 The collapsed card view allows you to quickly switch back and forth between cards showing titles only and cards showing all fields configured for the plan. To view titles only, choose **Collapsed card fields** :::image type="icon" source="media/plans/collapsed-card-fields-icon.png" border="false":::. To view all fields, choose **Expand card fields** :::image type="icon" source="media/plans/expand-card-fields-icon.png" border="false":::.  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing location of collapse/expand card fields feature icons. ](media/plans/collapse-card-fields.png)  
 
-## View rollup of features and epics 
+## View the rollup of features and epics 
 
 Rollup displays a fuller picture of the underlying work directly on the cards in your delivery plan. Rollup views are available for features, epics, or any portfolio backlog you've added to your project. To enable rollup, open your plan settings, choose **Fields**, and select **Show child rollup data**.
 
