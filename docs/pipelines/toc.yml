@@ -418,9 +418,6 @@
          href: targets/azure-sqldb.md
        - name: Azure MySQL database
          href: targets/azure-mysql.md
-       - name: Azure Cosmos DB CI/CD (Classic)
-         href: targets/cosmos-db.md
-         displayName: cosmos, db, database
     - name: Azure Virtual Machine Scale Set
       items:
       - name: Deploy a virtual machine scale set
@@ -428,8 +425,6 @@
         displayName: vmss, custom image
       - name: Deploy apps to a virtual machine scale set (Classic)
         href: apps/cd/azure/deploy-azure-scaleset.md
-    - name: Azure Government Cloud
-      href: library/government-cloud.md
     - name: Azure Stack
       href: targets/azure-stack.md
     - name: Azure Container Registry
@@ -448,9 +443,6 @@
       - name: Deploy to AKS with Jenkins
         href: release/integrate-jenkins-pipelines-aks.md
         displayName: cluster, Jenkins, Maven, Docker
-    - name: Azure IoT Edge (Classic)
-      href: release/deploy-iot-using-azure-pipelines.md
-      displayName: iot, edge
     - name: Azure Policy Compliance (Classic)
       href: policies/azure-policy.md
       displayName: policy, compliance

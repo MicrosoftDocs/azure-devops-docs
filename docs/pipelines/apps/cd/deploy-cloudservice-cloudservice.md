@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 09/07/2021
+ms.date: 11/05/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure Cloud Service using Azure Pipelines.
 Continuous deployment means starting an automated deployment pipeline whenever a new successful build is available.
 
-You can also use these steps to deploy your app to an [Azure Government Cloud](../../library/government-cloud.md)
+You can also use these steps to deploy your app to an [Azure Government Cloud](/azure/azure-government/connect-with-azure-pipelines)
 or to [Azure Stack](../../targets/azure-stack.md).
 
 ## Get set up
@@ -93,7 +93,9 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    
    * **Service name**: Select the name of an existing cloud service, or enter the name of a new cloud service.<p />
 
-   > If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment pipeline meets the relevant compliance requirements. For more information, see [Azure Government Cloud deployments](../../library/government-cloud.md).
+
+    > [!NOTE]
+    > If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment pipeline meets the relevant compliance requirements. For more information, see [Azure Government Cloud deployments](/azure/azure-government/connect-with-azure-pipelines).
 
    [!INCLUDE [edit-template-vars-in-environment](../includes/edit-template-vars-in-environment.md)]
    
