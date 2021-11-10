@@ -37,18 +37,21 @@ Squash merging keeps your default branch histories clean and easy to follow with
 
 Squash merging condenses the history of changes in your default branch, so it's important to work with your team to decide when you should squash merge or when you want to keep the full commit history of a topic branch. When squash merging, it's a good practice to delete the source branch. Deleting the source branch prevents confusion as the topic branch itself doesn't have a commit merging it into the default branch.
 
+::: moniker range=">=tfs-2017"
 ### Complete pull requests with squash merge
 
 You can choose to squash merge when completing a pull request in Azure Repos.
 
-::: moniker range=">= azure-devops-2020"
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 Choose **Squash commit** under **Merge type** in the **Complete pull request** dialog to squash merge the topic branch.
 
 ![Screenshot of closing a pull request with a squash merge in Azure Repos.](media/merging-with-squash/squash-merge.png)
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 Choose **Squash changes when merging** on the **Complete pull request** dialog to squash merge the topic branch.
 
 ![Screenshot of closing a pull request with a squash merge in Azure Repos.](media/merging-with-squash/squash-merge-pr.png)
