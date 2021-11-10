@@ -500,7 +500,7 @@ You can use [MTM](/previous-versions/azure/devops/test/mtm/copying-and-cloning-t
 
 You can use [`tcm suites /list`](#list-test-suites) to list all test suites defined for a project. 
   
-In order to use the same test cases in different suites and plans, copy and paste test cases using the Grid view. (XLink to be provided) 
+In order to use the same test cases in different suites and plans, copy and paste test cases using the **Grid** view. To learn more, see  (XLink to be provided) 
 
 # [Browser](#tab/browser)
 
@@ -525,8 +525,7 @@ In order to use the same test cases in different suites and plans, copy and past
 	The newly added test suite then displays. 
 
 	:::image type="content" source="media/copy-clone/imported-test-suite-displayed.png" alt-text="Imported test suite displayed.":::
-
-
+ 
 
 ::: moniker-end
 
