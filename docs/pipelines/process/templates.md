@@ -489,14 +489,14 @@ the template parameters.
 # File: azure-pipelines.yml
 
 variables: # Global variables
-  - template: templates/version-release.yml  # Template reference
+  - template: templates/package-release-with-params.yml # Template reference
     parameters:
       DIRECTORY: "azure/checker"
 
 stage: Release_Stage 
   displayName: Release Version
   variables: # Stage variables
-    - template: templates/version-release.yml  # Template reference
+    - template: templates/package-release-with-params.yml  # Template reference
       parameters:
         DIRECTORY: "azure/todo-list"
 ```
