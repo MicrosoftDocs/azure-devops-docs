@@ -29,7 +29,7 @@ Use this task to deploy, start, stop, and delete Azure Resource Groups.
 
 |Argument|Description|
 |--- |--- |
-|`ConnectedServiceName` <br/>Azure subscription|(Required) Select the Service Connection which contains the Azure subscription for the deployment.<br/>Argument aliases: `azureSubscription`|
+|`ConnectedServiceName` <br/>Azure subscription|(Required) Select the service connection that contains the Azure subscription for the deployment.<br/>Argument aliases: `azureSubscription`|
 |`action` <br/> Action|(Required) Action to be performed on the Azure resources or resource group.<br/>Default value: `Create Or Update Resource Group`|
 |`resourceGroupName`<br/>Resource group|(Required) Provide the name of a resource group.|
 |`location` <br/> Location|(Required) Location for deploying the resource group. If the resource group already exists in the subscription, then this value will be ignored.|
