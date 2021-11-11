@@ -229,5 +229,4 @@ In some cases, a PR has more than one true merge base, and this situation can ca
 - [Change the default branch](change-default-branch.md)
 - [Copy changes with cherry-pick](cherry-pick.md)
 - [Merge strategies and squash merge](merging-with-squash.md)
-<a name="multiple-merge-bases"></a>
 - [Multiple merge bases](merging-with-squash.md#multiple-merge-bases)
