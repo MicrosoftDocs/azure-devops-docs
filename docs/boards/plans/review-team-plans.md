@@ -21,11 +21,11 @@ Use the visualization options provided by the Delivery Plans feature of Azure Bo
 > [!NOTE]   
 > This article describes using Delivery Plans 2.0, which is available for Azure DevOps Services. For information on the Delivery Plans Marketplace extension that supports Team Foundation Server 2017 and later Azure DevOps Server versions, see [Delivery Plans 1.0](../extensions/delivery-plans.md). 
 
-Use the Delivery Plans feature to ensure that your teams are aligned with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. Interact with the plan with simple drag-and-drop operations to update or modify the schedule, open cards, expand and collapse teams, and more. 
+Use the Delivery Plans feature to ensure that your teams are aligned with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. Interact with the plan by using simple drag-and-drop operations to update or modify the schedule, open cards, expand and collapse teams, and more. 
 
 Delivery Plans supports these tasks: 
 
-- View up to 15 team backlogs, include a mix of backlogs and teams from different projects.
+- View up to 15 team backlogs, including a mix of backlogs and teams from different projects.
 - Add custom portfolio backlogs and epics. 
 - View work items that span several iterations.
 - Reset start date and target date through drag-and-drop borders. 
@@ -36,8 +36,8 @@ Delivery Plans supports these tasks:
  
 Any plan that you created with the original Delivery Plans extension will work with the Delivery Plans feature. You don't have to migrate any data or reconfigure plan settings. To learn how to add or edit a plan, see [Add or edit a delivery plan](add-edit-delivery-plan.md). 
 
-[!div class="mx-imgBorder"]  
-![Screenshot of a feature roadmap in Delivery Plans.](media/plans/intro-image.png)
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of a feature roadmap in Delivery Plans.](media/plans/intro-image.png)
 
 In this article, you'll learn how to:
 
