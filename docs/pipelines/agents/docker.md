@@ -226,7 +226,7 @@ Next, create the Dockerfile.
       && rm -rf /var/lib/apt/lists/*
 
     ARG TARGETARCH=amd64
-    ARG AGENT_VERSION=2.185.1
+    ARG AGENT_VERSION=2.194.0
 
     WORKDIR /azp
     RUN if [ "$TARGETARCH" = "amd64" ]; then \
@@ -322,7 +322,9 @@ Next, create the Dockerfile.
 
     # To be aware of TERM and INT signals call run.sh
     # Running it with the --once flag at the end will shut down the agent after the build is executed
-    ./run.sh "$@"
+    ./run.sh "$@" &
+
+    wait $!
     ```
     > [!NOTE]
     >You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
