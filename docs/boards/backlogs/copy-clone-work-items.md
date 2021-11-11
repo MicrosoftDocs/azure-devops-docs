@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 11/10/2021
 ---
 
 # Copy or clone stories, issues and other work items
