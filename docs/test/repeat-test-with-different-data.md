@@ -71,7 +71,7 @@ You can convert existing parameters to shared parameters so that you can use the
 
 1. If the test case has different parameter names for these shared parameters, map the shared parameters to the local parameters to use the shared parameter data.
 
-   ![Screenshot shows mapping a shared parameter to a local parameter.](media/repeat-test-with-different-data/convert-shared-local-parameter.png)
+   ![Screenshot shows mapping a shared parameter to a local parameter.](media/repeat-test-with-different-data/map-shared-local-parameter.png)
 
    When they are correctly mapped, the data associated with the shared parameter is displayed. 
 
