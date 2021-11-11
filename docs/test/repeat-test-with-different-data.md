@@ -35,7 +35,7 @@ same data.
 
 1. Create a parameter by typing a name preceded by "**@**" in the actions and expected results of your test steps.
 
-   ![Creating a parameter](media/repeat-test-with-different-data/repeat-test-with-different-data-01.png)
+   ![Screenshot shows how to enter parameter names and values.](media/repeat-test-with-different-data/parameter-steps-values.png)
 
 1. Underneath the list of steps, add combinations of parameter values.
    You might need to scroll down to see them.
@@ -55,28 +55,30 @@ same data.
 ## Share parameters between test cases
 ::: moniker range=">=azure-devops-2020"
 
-1. Convert existing parameters to shared parameters so that you can use them and the associated data in other test cases.
+You can convert existing parameters to shared parameters so that you can use them and the associated data in other test cases.
 
-   ![Converting existing parameters to shared parameters](media/repeat-test-with-different-data/repeat-test-with-different-data-02.png)
+1. In an open test case, select **Convert to shared parameters**.
+
+   ![Screenshot shows converting existing parameters to shared parameters.](media/repeat-test-with-different-data/convert-shared-parameters.png)
 
 1. After you've created a shared parameter set, open another test case and add the shared parameter set to that test case.
-   You can search for the shared parameter set by name.
 
-   ![Adding the shared parameter set to a test case](media/repeat-test-with-different-data/repeat-test-with-different-data-03.png)
+   ![Screenshot shows adding the shared parameter set to a test case.](media/repeat-test-with-different-data/add-shared-parameter-set.png)
+   You can search for the shared parameter set by name.
 
    The shared parameter set is displayed in the **Parameter values** section after you add it.
    You can now use these parameters in your test case steps.
 
 1. If the test case has different parameter names for these shared parameters, map the shared parameters to the local parameters to use the shared parameter data.
 
-   ![Mapping a shared parameter to a local parameter](media/repeat-test-with-different-data/repeat-test-with-different-data-04.png)
+   ![Screenshot shows mapping a shared parameter to a local parameter.](media/repeat-test-with-different-data/map-shared-local-parameter.png)
 
    When they are correctly mapped, the data associated with the shared parameter is displayed. 
 
 1. Add, edit, and rename your shared parameter sets in the **Parameters** page.
    View the test cases that reference them in the **Test cases** pane.
 
-   ![Adding, editing, viewing, and renaming a shared parameter](media/repeat-test-with-different-data/repeat-test-with-different-data-05.png)
+   ![Screenshot shows options to add, edit, view, and rename a shared parameter](media/repeat-test-with-different-data/shared-parameter-sets.png)
 
 1. Each shared parameter set is a work item. Open the **Properties** page to view or make changes to this work item. 
    For example, you can assign owners and track changes.
@@ -142,16 +144,16 @@ You can also copy the data from your grid back into Excel.
 1. Select a test case with parameters and start running it.
    The Test Runner shows the first row of parameter values.
 
-   ![Test Runner showing the first row of parameter values](media/repeat-test-with-different-data/repeat-test-with-different-data-06.png)
+   ![Screenshot shows Test Runner displaying the first row of parameter values.](media/repeat-test-with-different-data/run-test-case-parameters.png)
 
 1. When you've completed the steps, mark the test passed or failed.
    Then go on to the next iteration of the test, which uses the next row of parameter values.  
 
-   ![Going on to the next iteration of the test](media/repeat-test-with-different-data/repeat-test-with-different-data-07.png)
+   ![Screenshot shows going on to the next iteration of the test.](media/repeat-test-with-different-data/next-iteration.png)
 
 1. Use the drop-down menu to navigate to other iterations.
 
-   ![Navigating to other iterations](media/repeat-test-with-different-data/repeat-test-with-different-data-08.png)
+   ![Screenshot shows navigating to other iterations.](media/repeat-test-with-different-data/navigate-iterations.png)
 
 1. If any of the parameter values are incorrect, fix them without canceling the test by choosing **Edit** from step's shortcut menu.
 ::: moniker-end
@@ -183,13 +185,9 @@ You can also copy the data from your grid back into Excel.
 
 The outcome of the test is based on a precedence hierarchy of all the iteration outcomes. The hierarchy order is Paused, Failed, Blocked, Passed, Not Applicable, and Unspecified (Active). For example, if you marked any iteration as failed and all the rest as passed, the outcome of the entire test is shown as failed. This result is different from test cases that do not have parameters, where the outcome displays the status of the last run.
 
-1. Check the test result by opening the details pane.
+Double-click a test result to view the test run details, and the test results for each iteration.
 
-   ![Checking the test result in the details pane](media/repeat-test-with-different-data/repeat-test-with-different-data-09.png)
-
-1. Double-click a test result to view the test run details, and the test results for each iteration.
-
-   ![Viewing the test run details](media/repeat-test-with-different-data/repeat-test-with-different-data-10.png)
+![Viewing the test run details](media/repeat-test-with-different-data/test-run-details.png)
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
@@ -207,30 +205,6 @@ The outcome of the test is based on a precedence hierarchy of all the iteration 
 ::: moniker-end
 
 ## Speed up test iterations by using record and playback
-::: moniker range=">=azure-devops-2020"
-
-It can be error-prone and tedious to work through a long table of 
-parameter combinations. To speed up things, create an action 
-recording when you run the test with the first set of parameter 
-values, and then play it back for the other sets.
-
-1. Use Azure Test Plans to [run the test](run-manual-tests.md).
-
-1. Select **Create action recording** before you choose **Start**.
-
-1. Complete the first test iteration and then move on to the next one.
-
-1. Mark each step as passed or failed as you work. 
-   Enter parameter values in the application exactly as displayed in the test script.
-
-1. Choose **Play** to run the test with the next set of parameter values.
-   Your actions will be played back automatically, but you must still verify the results.
-
-Record and playback doesn't work with all applications.
-For details, see [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
-::: moniker-end
-
-::: moniker range="<=azure-devops-2019"
 
 It can be error-prone and tedious to work through a long table of 
 parameter combinations. To speed up things, create an action 
@@ -252,7 +226,6 @@ values, and then play it back for the other sets.
 
 Record and playback doesn't work with all applications. For details, see 
 [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
-::: moniker-end
 
 ## Related articles
 
