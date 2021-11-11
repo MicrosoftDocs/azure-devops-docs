@@ -265,8 +265,31 @@ You can assign an individual test case to a tester.
 ::: moniker-end
 
 ## Manage test cases
-
 ::: moniker range=">=azure-devops-2020"
+
+You can open a test case to view it or edit it.
+To open a test case in a test suite, in the **Define** tab, double-select the name of the test case to open.
+In the **Execute** tab, select a test case, open its context menu, and select **Edit test case**.
+
+![Screenshot show the Edit test case option for a test case in the context menu](media/create-test-cases/open-test-case.png)
+
+A test case can be linked to test suites, requirements, and bugs.
+To see linked items, in the **Define** tab, open the context menu for a test case, and select **View Linked Items**.
+
+![Screenshot shows the Linked Items dialog box for a test case with options to view Test Suites, Requirements, and Bugs.](media/create-test-cases/view-linked-items.png)
+
+In the **Linked Items** dialog box, you can view **Test Suites**, **Requirements**, and **Bugs**.
+
+### Bulk edit test cases
+
+You can edit more than one test case at a time. Select several test cases in a test suite and select **Edit test case(s)**.
+
+![Screenshot shows the Edit work items dialog box where you can select fields and values for several test cases.](media/create-test-cases/bulk-edit-work-items.png)
+
+Select a **Field** and enter a **Value**. Select **Add new field** to add another field-value pair.
+
+### Use tags for test cases
+
 You can tag test cases and view only the ones with specific tags.
 For example, tag all the tests related to signing in so that you can rerun these tests if a bug is fixed for that page.
 You can filter on that tag from the **Test Plans** web portal.
@@ -278,7 +301,9 @@ You can also create suites based on queries when you use tags.
 
 ![Screenshot shows tags for a test case.](media/create-test-cases/test-case-tags.png)
 
-You can rename or delete test cases. Open the test case from its shortcut menu.
+### Rename or remove test cases
+
+You can rename or remove test cases. Open the test case from its shortcut menu.
 
 ![Screenshot shows a test case with its context menu with Open test case selected.](media/create-test-cases/open-test-case-option.png)
 
@@ -286,11 +311,11 @@ Here you can rename the test case.
 
 ![Screenshot shows a test case with its name selected to edit.](media/create-test-cases/change-test-case-name.png)
 
-Or you can remove the test case. From the context menu for the test case, select **Remove**.
+Or you can remove the test case from the test suite. From the context menu for the test case, select **Remove**.
 
-![Delete a test case](media/create-test-cases/remove-test-case.png)
+![Remove a test case.](media/create-test-cases/remove-test-case.png)
 
-To delete test plans and test suites, you must be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. To manage or delete test artifacts, you must also have your [access level](../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. For more information, see [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md).
+To permanently delete test plans and test suites, you must be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. To manage or delete test artifacts, you must also have your [access level](../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. For more information, see [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md).
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
