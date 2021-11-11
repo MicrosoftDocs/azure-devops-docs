@@ -298,7 +298,7 @@ Cloning is useful when you want to branch your application into two versions. Af
 ::: moniker range=">= azure-devops-2020"
 
 > [!NOTE]  
-> If you're new to using Azure Test Plans, review [Navigate Test Plans](../navigate-test-plans.md) to understand how to use the user interface to access select functions.  
+> If you're new to using Azure Test Plans, review [Navigate Test Plans](navigate-test-plans.md) to understand how to use the user interface to access select functions.  
 
 1. Open **Test Plans>Test plans**, and choose the test plan you want to copy from the **Mine** or **All** page.  Select :::image type="icon" source="../media/icons/more-actions.png" border="false"::: **More actions**, and choose the **Copy test plan** menu option. This option lets you copy or clone test plans within a project. 
 
