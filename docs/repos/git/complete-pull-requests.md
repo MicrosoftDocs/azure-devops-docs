@@ -346,6 +346,33 @@ az repos pr update --id 21 --status completed --delete-source-branch true --tran
 ***
 
 
+::: moniker range=">= azure-devops-2019"
+
+### Rebase during PR completion
+
+There are a few situations when rebasing during PR completion isn't possible:
+
+- If a policy on the target branch prohibits using rebase strategies, you need **Override branch policies** permission to rebase.
+- If the PR source branch has policies, you can't rebase it. Rebasing would modify the source branch without going through the policy approval process.
+- If you used the Merge Conflict Extension to resolve merge conflicts, you can't rebase. Conflict resolutions applied to a three-way merge are seldom successful or valid when rebasing all the PR commits individually.
+
+In all these cases, you can still rebase your branch locally and then push upstream, or squash-merge your changes when you complete the PR.
+
+::: moniker-end
+
+### Multiple merge base issue
+
+In some cases, a PR has more than one true merge base, and this situation can cause security issues. If the files in the PR have different versions between the merge bases, a multiple merge base warning happens. For more information and remediation, see [Multiple merge bases](about-pull-requests.md#multiple-merge-bases). 
+
+
+::: moniker range=">= tfs-2017" 
+
+## Resolve merge conflicts
+
+File changes in your branch can conflict with changes in another branch. When it isn't clear how to merge changes, Git shows the files that conflict on the PR's **Overview** page. You must resolve any *merge conflicts* between the PR branch and the target branch before you can merge a PR or set the PR to autocomplete. For instructions on resolving merge conflicts, see [Resolve merge conflicts](merging.md).
+
+![Screenshot that shows merge conflicts on the Overview tab of a P R.](./media/complete-pull-requests/merge-conflict.png)
+
 <a name="complete-automatically"></a>
 ## Set a pull request to autocomplete
 
@@ -436,33 +463,6 @@ To abandon a PR without merging the changes, use `az repos pr update --id <PR Id
 
 ***
 
-
-::: moniker range=">= azure-devops-2019"
-
-### Rebase during PR completion
-
-There are a few situations when rebasing during PR completion isn't possible:
-
-- If a policy on the target branch prohibits using rebase strategies, you need **Override branch policies** permission to rebase.
-- If the PR source branch has policies, you can't rebase it. Rebasing would modify the source branch without going through the policy approval process.
-- If you used the Merge Conflict Extension to resolve merge conflicts, you can't rebase. Conflict resolutions applied to a three-way merge are seldom successful or valid when rebasing all the PR commits individually.
-
-In all these cases, you can still rebase your branch locally and then push upstream, or squash-merge your changes when you complete the PR.
-
-::: moniker-end
-
-### Multiple merge base issue
-
-In some cases, a PR has more than one true merge base, and this situation can cause security issues. If the files in the PR have different versions between the merge bases, a multiple merge base warning happens. For more information and remediation, see [Multiple merge bases](about-pull-requests.md#multiple-merge-bases). 
-
-
-::: moniker range=">= tfs-2017" 
-
-## Resolve merge conflicts
-
-File changes in your branch can conflict with changes in another branch. When it isn't clear how to merge changes, Git shows the files that conflict on the PR's **Overview** page. You must resolve any *merge conflicts* between the PR branch and the target branch before you can merge a PR or set the PR to autocomplete. For instructions on resolving merge conflicts, see [Resolve merge conflicts](merging.md).
-
-![Screenshot that shows merge conflicts on the Overview tab of a P R.](./media/complete-pull-requests/merge-conflict.png)
 
 <a name="revert-a-completed-pr"></a>
 ## Revert a completed pull request
