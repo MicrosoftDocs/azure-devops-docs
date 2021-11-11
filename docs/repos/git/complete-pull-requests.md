@@ -373,6 +373,8 @@ File changes in your branch can conflict with changes in another branch. When it
 
 ![Screenshot that shows merge conflicts on the Overview tab of a P R.](./media/complete-pull-requests/merge-conflict.png)
 
+::: moniker-end
+
 <a name="complete-automatically"></a>
 ## Set a pull request to autocomplete
 
@@ -464,6 +466,7 @@ To abandon a PR without merging the changes, use `az repos pr update --id <PR Id
 ***
 
 
+::: moniker range=">= tfs-2017"
 <a name="revert-a-completed-pr"></a>
 ## Revert a completed pull request
 
