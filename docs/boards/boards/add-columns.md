@@ -80,7 +80,7 @@ Before you configure your team's Kanban board columns, make sure that the follow
 1. Identify the columns that your team will use to support their workflow and Kanban processes. For more information, see [Map the flow of work](#map-the-flow-of-work) later in this article. 
 1. Add, remove, or rename columns and map workflow states to columns. For more information, see [Manage columns on your Kanban board](#add-or-rename-columns) later in this article.  
 
-For example, if you add bugs or other work item types to appear on a Kanban board, you potentially introduce other workflow states. New workflow states request you to adjust the Kanban column **State mappings** when one of the following customizations is made:
+For example, if you add bugs or other work item types to appear on a Kanban board, you potentially introduce other workflow states. New workflow states request you to adjust the Kanban column-to-state mappings when one of the following customizations is made:
 
 * Your team admin chooses to [show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).  
 * Your project admin [adds work item types (WITs) to backlogs and boards](../../reference/add-wits-to-backlogs-and-boards.md).
@@ -102,9 +102,9 @@ One of the main configuration details that you need to understand to correctly a
 - **State categories**: 
 	- There are only four state categories: **Proposed**, **In Progress**, **Completed**, and **Removed**. 
 	- Workflow states defined for a work item type belong to one of the four state categories. 
-	- For each work item type and each Kanban board column, the workflow state must be specified (except those workflow states in the **Removed** category).
+	- For each work item type and each Kanban board column, the workflow state must be specified (except workflow states in the **Removed** category).
 	- The first Kanban board column is automatically mapped to the default state for each work item type's **Proposed** state category. 
-	- For middle Kanban board columns, you can map the column to any of the states that belong to the **Proposed** or **In Progress** state categories. Also, you can only specify [WIP limits](wip-limits.md), [split columns](split-columns.md), and [definition of done](definition-of-done.md) for these columns. 
+	- For middle Kanban board columns, you can map the column to any of the states that belong to the **Proposed** or **In Progress** state category. Also, you can only specify [WIP limits](wip-limits.md), [split columns](split-columns.md), and [definition of done](definition-of-done.md) for these columns. 
 	- The **Completed** state category can only map to the last Kanban board column.  
 
 > [!TIP]   
@@ -190,7 +190,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Select **Configure team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
+1. Select **Configure team settings** (:::image type="icon" source="../../media/icons/blue-gear.png" border="false":::) to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot that shows open board settings for a team in a vertical navigation.](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -217,7 +217,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then:
 
-   1. Open **Settings**, select **Columns**, and select the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon from the column tab.
+   1. Open **Settings**, select **Columns**, and select the **Actions** (:::image type="icon" source="../../media/icons/actions-icon.png" border="false":::) icon from the column tab.
    1. Select **Remove** from the menu.  
 
 	> [!div class="mx-imgBorder"]
@@ -235,7 +235,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Select ![settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+1. Select ![Settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
 	![Screenshot that shows the Settings icon on the Kanban board.](media/add-columns-open-settings-ts.png)  
 
@@ -258,7 +258,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 4. To change the column order, drag the column tab to the position that you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select the column tab  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Remove** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **Actions** icon (:::image type="icon" source="../../media/icons/actions-icon.png" border="false":::) on the column tab and select **Remove** from the menu. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot that shows the selections for deleting a column in the Settings dialog.](media/columns/remove-column.png)  
@@ -275,7 +275,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Select ![settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+1. Select ![Settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
 	![Screenshot that shows the Settings icon on the Kanban board.](media/add-columns-open-settings-ts.png)  
 
@@ -297,7 +297,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 4. To change the column order, drag the column tab to the position that you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select the column tab :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Delete** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **Actions** icon (:::image type="icon" source="../../media/icons/actions-icon.png" border="false":::) on the column tab and select **Delete** from the menu. 
 
 	![Screenshot that shows the selections for deleting a column in the Settings dialog.](media/kanban-delete-column.png)  
 
@@ -307,7 +307,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
-1. Select the :::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board. 
+1. Select the **Settings** icon (:::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false":::) to open the common configuration settings dialog for the Kanban board. 
 
 	![Screenshot that shows the Settings icon on the Kanban board.](../../boards/boards/media/kanban-card-customize-open-settings.png)  
 
@@ -331,7 +331,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 4. To change the column order, drag the column tab to the position that you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select the column tab :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Delete** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **Actions** icon (:::image type="icon" source="../../media/icons/actions-icon.png" border="false":::) on the column tab and select **Delete** from the menu. 
 
 	![Screenshot that shows the selections for deleting a column in the Settings dialog.](media/kanban-delete-column.png)  
 
@@ -367,13 +367,13 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
-1. Select the :::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open **Customize Columns**.  
+1. Select the **Settings** icon (:::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false":::) to open **Customize Columns**.  
 
 	![Screenshot that shows the Settings icon on the Kanban board.](media/columns/open-settings-2013.png)  
 
 	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns.   
 
-	![Screenshot that shows area for customizing columns on a Kanban board.](media/ALM_AC_CustomizeColumns.png)  
+	![Screenshot that shows the area for customizing columns on a Kanban board.](media/ALM_AC_CustomizeColumns.png)  
 
 2. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
@@ -406,7 +406,7 @@ After you have a well-configured Kanban board, you can start using it. To learn 
 
 Using your Kanban board couldn't be simpler. You update the status or change priorities by using drag-and-drop operations. 
 
-For example, to signal when work can start in a downstream stage, drag items into the next column. 
+For example, to signal when work can start in a downstream stage, drag items to the next column. 
 
 ![Screenshot that shows dragging an item from the Analyze column to the Develop column.](media/ALM_AC_DragItem.png)
 
@@ -445,7 +445,7 @@ But what if you want to list items based on their Kanban column assignment? Can 
 **For Team Foundation Server 2013, Team Foundation Server 2015:**
 What you can do is view the history of changes made to a work item. The [History field](../queries/history-and-auditing.md) captures all updates made to an item, including column moves. You can view the history by double-clicking the card to open it. 
 
-The following history is an example that shows two updates made by dragging the item into a different Kanban column. The first (revision 8) involved a column move from **Analyze** to **Develop**, and a state change from **New** to **Active**. The second (revision 9) only involved a column move, from **Develop** to **Test**; the state remains at **Active**.
+The following history is an example that shows two updates made by dragging the item to a different Kanban column. The first (revision 8) involved a column move from **Analyze** to **Develop**, and a state change from **New** to **Active**. The second (revision 9) only involved a column move, from **Develop** to **Test**; the state remains at **Active**.
  
 ![Screenshot that sows history field updates with Kanban column moves.](media/ALM_AC_History.png)
 
