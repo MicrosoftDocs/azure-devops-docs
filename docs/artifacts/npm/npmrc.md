@@ -69,8 +69,6 @@ We recommend using two **.npmrc_** files, the first one we will use to authentic
 > [!TIP]
 > Multiple registries in .npmrc files are supported with [upstream sources](../concepts/upstream-sources.md) and [scopes](..//npm/scopes.md).
 
-::: moniker range=">= azure-devops"
-
 ### [Windows](#tab/windows/)
 
 If you are developing on Windows, we recommend that you use `vsts-npm-auth` to fetch the credentials and inject them into your *%USERPROFILE%\\.npmrc*.  The easiest way to set this up is to install `vsts-npm-auth` globally and then add a run script to your *package.json*.
@@ -141,82 +139,49 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 
 1. Open your .npmrc file and replace the placeholder *[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]* with your encoded personal access token that you created in the previous step.
 
+* * *
+
 > [!NOTE]
 > `vsts-npm-auth` is not supported in TFS and Azure DevOps Server.
 
-::: moniker-end
+## Set up authentication in your pipeline
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+There are two options for setting up authentication in your pipeline:
 
-To work with packages from Azure Artifacts, set up your project to reference this feed. Create a new text file `.npmrc` in the same directory as your `package.json` and copy the snippet below:
-
-```
-@[YOUR_SCOPE]/registry=FabrikamBasic/_packaging/FabrikamFeed/npm/registry/
-```
-
-To restore your packages, run the following command in your project directory:
-
-```cmd
-npm install
-```
-
-::: moniker-end
-
-* * *
-
-## Set up authentication in a build task
-
-There are two options for setting up authentication in a build task:
-* [Without a task runner](#without-a-task-runner)
-* [With a task runner (e.g. gulp)](#with-a-task-runner-eg-make-gulp-work)
+- [Without a task runner](#without-a-task-runner).
+- [With a task runner](#with-a-task-runner-eg-make-gulp-work) (e.g. gulp).
 
 ### Without a Task Runner
-To set up **npm** authentication in a build task _without_ a task runner, follow the directions below.
+
+To authenticate with Azure Artifacts from your pipeline without a task runner, follow the steps below: 
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Select **Azure Pipelines**, it should automatically take you to the **Builds** page.
+1. Select **Azure Pipelines**, and then select your pipeline definition.
+
+1. Select **Edit** to modify your pipeline.
+
+1. Select `+` to add a task to your pipeline.
 
    > [!div class="mx-imgBorder"] 
-   > ![navigate to builds tab TFS](../../pipelines/media/get-started-designer/navigate-to-builds-tab-newnav-tfs-2018-2.png)
+   > ![Screenshot showing how to add the npm task to your pipeline](../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
 
-1. Create a new pipeline.
+1. Search for the **npm** task, and then select **Add** to add it to your pipeline.
 
-   > [!div class="mx-imgBorder"] 
-   > ![create new build pipeline](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
-
-1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
-
-1. Start with an **Empty job**.
-
-1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Package** category, select the **npm** task from the list, and then choose **Add**.
+1. Select the folder that contains your package.json.
 
    > [!div class="mx-imgBorder"] 
-   > ![build tab add task to job](../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
+   > ![Screenshot showing where to add the path to your package.json](../media/build-definition/build-definition-npm-install-newnav.png)
 
-1. Select the **npm install** task, then browse to and select your **Working folder with package.json**:
+1. Expand the **Custom registries and authentication** section, and then select **Registry I select here**. Select your feed from the dropdown menu.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Add npm install task to build pipeline](../media/build-definition/build-definition-npm-install-newnav.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Registries to use](../media/build-definition/registry-i-select-here.png)
 
-1. Expand **Custom registries and authentication**, here you have a few options: 
-
-   * Registries in my **_.npmrc_**
-    
-      > [!div class="mx-imgBorder"] 
-      > ![registries in the npmrc file](../media/build-definition/registries-in-my-npmrc.png)
-
-      > [!TIP]
-      > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#npm-service-connection)
-
-   * Registry I select here
-
-      > [!div class="mx-imgBorder"] 
-      > ![Registries to use](../media/build-definition/registry-i-select-here.png)
-
-      When you choose this option, the task will create a temporary **_.npmrc_** with credentials for the registry you've selected and it will override the project's **_.npmrc_**. This is useful when you want to publish to a specific feed. 
+      > [!NOTE]
+      > When you select this option, the task will create a temporary *.npmrc* for the feed you selected here and override the project's *.npmrc*.
    
-1. Select **Save & queue**, and then select **Save**.
+1. Select **Save & queue** when you are done.
 
 > [!TIP]
 > If your NPM Install build task is failing with Error 403, then make sure you set your build service as a contributor. To do so, go to Azure Artifacts -> Select your feed -> Settings -> Permissions -> set your build service role to contributor.
