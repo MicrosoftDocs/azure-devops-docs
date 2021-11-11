@@ -35,8 +35,7 @@ For an overview of test objects and terminology, see [Test objects and terms](te
 
 Depending on the Azure DevOps version you use, you can use the clients or tools listed in the following table to copy, clone, or import test plans, test suites, or test cases.  
 
-> [!NOTE]
-> Shared steps and shared parameters, which are referenced and linked to test cases, aren't copied or cloned. Instead, 
+
 
 :::row:::
    :::column span="1":::
