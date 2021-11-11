@@ -217,6 +217,11 @@ For more information, see the following articles:
 - [Create a PR status server with Node.js](create-pr-status-server.md)
 - [Configure a branch policy for an external service](pr-status-policy.md)
 
+<a name="multiple-merge-bases"></a>
+## Multiple merge base issue
+
+In some cases, a PR has more than one true merge base, and this situation can cause security issues. If the files in the PR have different versions between the merge bases, a multiple merge base warning happens. For more information and remediation, see [Multiple merge bases](merging-with-squash.md#multiple-merge-bases).
+
 ## Next steps
 - [Improve code quality with branch policies](branch-policies.md)
 - [Customize and extend pull request workflows with pull request status](pull-request-status.md)
