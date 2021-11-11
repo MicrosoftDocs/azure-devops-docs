@@ -239,7 +239,7 @@ We now have a private repository within Azure Artifacts that we can push our Pow
 
 1. Open an elevated PowerShell prompt window.
 
-2. Set up authentication to access Azure Artifacts feeds. Replace the placeholders with your personal access token and email:
+1. Set up authentication to access Azure Artifacts feeds. Replace the placeholders with your personal access token and email:
 
     ```powershell
         $patToken = "YOUR PERSONAL ACCESS TOKEN" | ConvertTo-SecureString -AsPlainText -Force
@@ -249,7 +249,7 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     $credsAzureDevopsServices = New-Object System.Management.Automation.PSCredential("YOUR EMAIL", $patToken)
     ```
 
-3. Register your PowerShell repository. The `SourceLocation` link can also be found by selecting **Connect to Feed** then **NuGet.exe** from the feed's page in Azure Artifacts.
+1. Register your PowerShell repository. The `SourceLocation` link can also be found by selecting **Connect to Feed** then **NuGet.exe** from the feed's page in Azure Artifacts.
 
     - Project-scoped feed:
 
@@ -280,13 +280,27 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     > [!NOTE]
     > In some versions of PowerShell, you must start a new session after you run the `Register-PSRepository` cmdlet to avoid the `Unable to resolve package source` warning. 
 
-4. To confirm that the repository was registered successfully run the `Get-PSRepository` cmdlet. This command gets all module repositories registered for the current user:
+1. Register your package source:
+
+    - Project-scoped feed:
+
+    ```powershell
+    Register-PackageSource -Name "PackageSource" -Location "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet
+    ```
+    
+    - Org-scoped feed:
+
+    ```powershell
+    Register-PackageSource -Name "PackageSource" -Location "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet 
+    ```
+
+1. To confirm that the repository was registered successfully run the `Get-PSRepository` cmdlet. This command gets all module repositories registered for the current user:
 
     ```powershell
         Get-PSRepository
     ```
 
-5. Find modules in our repository:
+1. Find modules in our repository:
 
     ```powershell
         Find-Module -Repository PowershellAzureDevopsServices
