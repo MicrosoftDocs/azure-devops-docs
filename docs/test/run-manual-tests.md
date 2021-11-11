@@ -75,7 +75,10 @@ You can use the web runner for web apps, or the desktop runner for desktop app d
 
    ![Screenshot shows the result of running test cases, with outcomes of Active, Failed, and Passed displayed.](media/run-manual-tests/test-case-outcome.png)
 
-1. Open a test and choose the test case in the **Related Work** section.
+   If you haven't run a test yet, its state is active.
+   You can reset the state of a test to active if you want to rerun it.  
+
+1. Open a test suite and choose the test case in the **Related Work** section.
    Then use the child links in the **Related Work** section of that work item to view the bugs filed by the tester.
    
    ![Screenshot shows the Related Work section of a work item to view bugs filed for that test.](media/run-manual-tests/related-work-shows-bugs.png)  
@@ -132,13 +135,15 @@ You can run tests offline and then import the results. For more information, see
 
    ![View test results](media/run-manual-tests/RunTest_8.png)
 
+   If you haven't run a test yet, its state is active.
+   You can reset the state of a test to active if you want to rerun it.
+
 1. Open a test and choose the test case in the **Related Work** section.
    Then use the **Child** links in the **Related Work** section of that 
    work item to view the bugs filed by the tester.
    
    ![View bugs filed](media/run-manual-tests/view-bugs.png)  
 
-[Can I run tests offline and then import the results?](reference-qa.md#runoffline)
 ::: moniker-end
 
 <a name="run-desktop"></a>
@@ -152,7 +157,7 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
    ![Screenshot shows launching the Test Runner client.](media/run-manual-tests/run-test-desktop-application.png)
 
-1. Download and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload) if you haven't already set it up:
+1. If necessary, download and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
    ![Screenshot shows the Run for desktop application dialog box with options to download and launch Test Runner.](media/run-manual-tests/tr-atp-launch.png)
 
@@ -180,11 +185,12 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 1. Choose **Launch** and start testing the same way as [described above](#run-web) for web apps. For more information about data collection, see [Collect diagnostic data while testing](collect-diagnostic-data.md).
 
-[Can I run tests offline and then import the results?](reference-qa.md#runoffline)
 ::: moniker-end
 
 ## Use test options
 ::: moniker range=">=azure-devops-2020"
+
+You can run all the tests in a test suite, modify a step while running, specify which build to test, and add screenshots or other information during testing.
 
 ### Run all tests
 
@@ -194,9 +200,6 @@ Select a test suite and select **Run for web application** or **Run for desktop 
 
 ![Screenshot shows how to select and run all active tests in a test suite.](media/run-manual-tests/run-test-test-suite.png)
 
-If you haven't run a test yet, its state is active.
-You can reset the state of a test to active if you want to rerun it.  
-
 ### Run tests for a build
 
 You can choose a build to run tests against.
@@ -205,15 +208,15 @@ You can choose a build to run tests against.
 
    ![Screenshot shows running a test for web application with options.](media/run-manual-tests/run-web-application-test-options.png)
 
-1. Select the build you want.
+1. In the **Run with options** dialog box, sSelect the build you want.
 
    ![Screenshot shows the Run with options dialog box with a build selected.](media/run-manual-tests/run-test-select-build.png)
 
-   Any bug filed during the run will automatically be associated with the selected build.
-   The test outcome will be published against that build.
-
    > [!NOTE]
    > The selected build must be from the project in which the tests are defined.
+
+   Any bug filed during the run is associated with the selected build.
+   The test outcome will be published against that build.
 
 ### Modify a test step during a test run
 
@@ -262,16 +265,16 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
+
+You can run all the tests in a test suite, modify a step while running, specify which build to test, and add screenshots or other information during testing.
+
 ### Run all tests
 
 You can run all the tests in a test suite at once.
 
 Select a test suite and select **Run** to run all the active tests.
 
-![Screenshot shows how to run all active tests in a test suite.](media/run-manual-tests/RunTestsRunSuite.png)
-
-If you haven't run a test yet, its state is active.
-You can reset the state of a test to active if you want to rerun it.  
+![Screenshot shows how to run all active tests in a test suite.](media/run-manual-tests/RunTestsRunSuite.png) 
 
 ### Run tests for a build
 
