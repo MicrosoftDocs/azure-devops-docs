@@ -183,61 +183,46 @@ To authenticate with Azure Artifacts from your pipeline without a task runner, f
    
 1. Select **Save & queue** when you are done.
 
-> [!TIP]
-> If your NPM Install build task is failing with Error 403, then make sure you set your build service as a contributor. To do so, go to Azure Artifacts -> Select your feed -> Settings -> Permissions -> set your build service role to contributor.
-
-> [!div class="mx-imgBorder"]
-> ![tip screenshot](../media/fix-error-tip.png)
-
-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-1. Select **Build and Release**, and then choose **Builds**.
+1. Select **Build and Release**, and then select **Builds**.
 
    > [!div class="mx-imgBorder"]
-   > ![navigate to builds tab TFS 2018](../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
+   > ![Screenshot showing how to access builds in TFS](../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
-1. Create a new pipeline.
+1. Select your pipeline, and then select **Edit**.
 
-   > [!div class="mx-imgBorder"]
-   > ![create new pipeline](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+1. Select `+` to add a task to your pipeline.
 
-1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot showing how to add a task to your pipeline](../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
 
-1. Start with an **Empty job**.
-
-1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Package** category, select the **npm** task from the list, and then choose **Add**.
+1. Search for the **npm** task, and then select **Add** to add it to your pipeline.
 
    > [!div class="mx-imgBorder"]
-   > ![builds tab add npm task to job](../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
+   > ![Screenshot showing the npm task added to the pipeline](../media/build-definition/build-definition-npm-install.png)
 
-1. Select the **npm install** task, then browse to and select your **Working folder with package.json**:
+1. Select the folder that contains your package.json.
 
-   > [!div class="mx-imgBorder"]
-   > ![Add npm install task](../media/build-definition/build-definition-npm-install.png)
+1. Expand the **Custom registries and authentication** section, and then select **Registry I select here**. Select your feed from the dropdown menu. 
 
-1. Expand **Custom registries and authentication**, here you have a few options: 
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot showing how to use packages from a specific feed](../media/build-definition/registry-i-select-here.png)
 
-   * Registries in my **_.npmrc_**
-
-      > [!div class="mx-imgBorder"]
-      > ![registries in the npmrc](../media/build-definition/registries-in-my-npmrc.png)
-
-      > [!TIP]
-      > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#npm-service-connection)
-
-   * Registry I select here
-
-      > [!div class="mx-imgBorder"]
-      > ![registry I select here option](../media/build-definition/registry-i-select-here.png)
-
-      When you choose this option, the task will create a temporary **_.npmrc_** with credentials for the registry you've selected and it will override the project's **_.npmrc_**. This is useful when you want to publish to a specific feed. 
+   > [!NOTE]
+   > When you select this option, the task will create a temporary *.npmrc* for the feed you selected here and override the project's *.npmrc*.
    
-1. Select **Save & queue**, and then select **Save**.
+1. Select **Save & queue** when you are done.
 
 ::: moniker-end
+
+> [!TIP]
+> To allow your pipeline to access your feed, make sure you set the build service to a contributor in your feed's settings. Azure Artifacts -> Select your feed -> Settings -> Permissions -> set the build service role to **Contributor**.
+
+> [!div class="mx-imgBorder"]
+> ![tip screenshot](../media/project-collection-contributor.png)
 
 ### With a Task Runner (e.g. make gulp work)
 
