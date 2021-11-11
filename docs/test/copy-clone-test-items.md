@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 11/10/2021
+ms.date: 11/11/2021
 ---
 
 
@@ -31,11 +31,9 @@ Copy and paste test cases in order to use the same tests in different suites and
 
 For an overview of test objects and terminology, see [Test objects and terms](test-objects-overview.md).  
 
-## Clients/tools that support copy, clone, or import  
+## Supported copy, clone, and import tools  
 
 Depending on the Azure DevOps version you use, you can use the clients or tools listed in the following table to copy, clone, or import test plans, test suites, or test cases.  
-
-
 
 :::row:::
    :::column span="1":::
@@ -64,8 +62,8 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
       ✔️ ([Import](#import-test-suites-portal))
    :::column-end:::
    :::column span="1":::
-       ✔️ ([Copy](#copy-test-case))
-       ✔️ ([Bulk export/import](#bulk-import-export))
+       ✔️ ([Copy](#copy-test-case))  
+       ✔️ ([Bulk export/import](#bulk-import-export))  
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -101,7 +99,6 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="< azure-devops-2020"
 :::row:::
    :::column span="1":::
       **Work item form**  
@@ -113,10 +110,9 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
        
    :::column-end:::
    :::column span="1":::
-      ✔️ ([**Copy*](../boards/backlogs/copy-clone-work-items.md))
+      ✔️ ([Copy](../boards/backlogs/copy-clone-work-items.md))
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ::: moniker range="<= azure-devops-2019"
 :::row:::
    :::column span="1":::
@@ -176,7 +172,7 @@ Depending on the Azure DevOps version you use, you can use the clients or tools 
 > 1. The Test Case Management (TCM) command-line tool is installed when you install Visual Studio 2017 or earlier versions. Examples provided in this article reflect the options available with the Visual Studio 2017 version. Earlier versions may support fewer options. For details, see [Work with the TCM command-line tool](#work-tcm-cli). 
 > ::: moniker-end 
 
-
+ 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)] 
@@ -205,7 +201,7 @@ You can generate a list of test plans, test suites, or other test objects from t
 TCM supports listing of test plans and test suites. Lists specify the work ID for each test plan or test suite. This ID is the same as a plan ID or suite ID. 
  
 
-[List test plans](#list-test-plans) |[List test suites](#list-test-suites) 
+[List test plans](#list-test-plans) | [List test suites](#list-test-suites) 
 
 
 <a id="list-test-plans" /> 
@@ -346,7 +342,7 @@ Cloning is useful when you want to branch your application into two versions. Af
 
 You can use the TCM command-line tool to clone a test plan to the same or different project, and to track the status of the clone operation.
 
-[List test plans](#list-test-plans) |[Clone a test plan](#clone-test-plan) | [Track test plan clone status](#track-test-plan-clone-status) 
+[List test plans](#list-test-plans) | [Clone a test plan](#clone-test-plan) | [Track test plan clone status](#track-test-plan-clone-status) 
 
 
 <a id="clone-test-plan" /> 
@@ -520,6 +516,37 @@ tcm suites /clone
 |**/clonerequirements** | Optional. Specify this switch to clone a requirement-based suite to a destination requirement-based suite. By default, a requirement-based test suite is cloned to a destination static test suite.  |
 
 [!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)] 
+
+
+**Understand what gets cloned**  
+  
+When you clone a test suite, the following objects are copied from the source test plan to the destination test plan.
+  
+|Test plan object| Notes|  
+|----------------------|------------|-----------|  
+|Test case| Each new test case retains its shared steps. A link is defined between the source and new test cases. The new test cases do not have test runs, bugs, test results, or build information.|  
+|Shared steps  Shared steps referenced by cloned test cases are copied. |  
+|Test suite| Test suites that are copied retain the following data: <br /><br />- Names and hierarchical structure of the test suites<br />- Order of the test cases<br />- Assigned testers<br />- Configurations|  
+|Recordings | Action recordings linked from a cloned test case are copied. 
+|Links and Attachments|All links and attachments are copied for all copied test items.  
+|Test configuration||The test configuration defined for the source test plan is copied over and applied to the destination test plan.|  
+
+The following test information is not copied: 
+
+- **Test settings**: The test setting for the source test plan isn't copied. Instead, the test settings for the destination test plan is applied.   
+- **Test results and test runs**: No test results are copied. Because test runs are applicable only to the source test plan, they are not copied.  
+
+When `/clonerequirements` is specified and Requirements-based test suites are copied: 
+- The Requirements-based test suites are copied and linked to a new copy of the requirement work item. 
+- Requirements work items (product backlog items or user stories) that are associated with a cloned requirements-based suite are cloned. 
+- Bug work items are cloned in a project that uses the Scrum process template, or any project in which the Bug work item type is in the Requirements work item category. Otherwise, bugs aren't cloned. 
+
+When `/clonerequirements` in't specified and Requirements-based test suites are copied: 
+- Requirements-based test suites are converted to static test suites in the destination test plan. 
+- Cloned test cases are referenced under the static test suite. 
+- Cloned test cases don't include links to their original requirements work items.
+ 
+
 
 **Example**
 
@@ -715,6 +742,8 @@ tcm testcase /import /collection:teamprojectcollectionurl /teamproject:project
 - [Test objects and terms](test-objects-overview.md) 
 - [Create a query based on build and test integration fields](../boards/queries/build-test-integration.md)
 - [FAQs for manual testing](reference-qa.md#testcases)
+- [Customize and manage the test experience](../reference/witadmin/tcm-customize-manage-test-experience.md)
+
 
 ::: moniker range="<= azure-devops-2019"
 
