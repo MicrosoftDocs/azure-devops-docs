@@ -71,14 +71,14 @@ You can convert existing parameters to shared parameters so that you can use the
 
 1. If the test case has different parameter names for these shared parameters, map the shared parameters to the local parameters to use the shared parameter data.
 
-   ![Screenshot shows mapping a shared parameter to a local parameter.](media/repeat-test-with-different-data/map-shared-local-parameter.png)
+   ![Screenshot shows mapping a shared parameter to a local parameter.](media/repeat-test-with-different-data/convert-shared-local-parameter.png)
 
    When they are correctly mapped, the data associated with the shared parameter is displayed. 
 
 1. Add, edit, and rename your shared parameter sets in the **Parameters** page.
    View the test cases that reference them in the **Test cases** pane.
 
-   ![Screenshot shows options to add, edit, view, and rename a shared parameter](media/repeat-test-with-different-data/shared-parameter-sets.png)
+   ![Screenshot shows options to add, edit, view, and rename a shared parameter](media/repeat-test-with-different-data/shared-parameter-set.png)
 
 1. Each shared parameter set is a work item. Open the **Properties** page to view or make changes to this work item. 
    For example, you can assign owners and track changes.
