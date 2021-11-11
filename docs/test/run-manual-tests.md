@@ -207,7 +207,7 @@ You can choose a build to run tests against.
 
 1. Select the build you want.
 
-1. ![Screenshot shows the Run with options dialog box with a build selected.](media/run-manual-tests/run-test-select-build.png)
+   ![Screenshot shows the Run with options dialog box with a build selected.](media/run-manual-tests/run-test-select-build.png)
 
    Any bug filed during the run will automatically be associated with the selected build.
    The test outcome will be published against that build.
@@ -283,7 +283,7 @@ You can choose a build to run tests against.
 
 1. Select the build you want.
 
-1. ![Screenshot shows the Run with options dialog box with a build.](media/run-manual-tests/select-build-for-webrunner.png)
+   ![Screenshot shows the Run with options dialog box with a build.](media/run-manual-tests/select-build-for-webrunner.png)
 
    Any bug filed during the run will automatically be associated with the selected build.
    The test outcome will be published against that build.
