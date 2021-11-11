@@ -2,7 +2,7 @@
   "build_entry_point": "docs",
   "redirection_files": [
     ".openpublishing.redirection.json",
-    "pipelines/.openpublishing.redirection.pipelines.json"
+    "docs/pipelines/.openpublishing.redirection.pipelines.json"
   ],
   "docsets_to_publish": [
     {
