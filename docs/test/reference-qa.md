@@ -67,6 +67,7 @@ the list view of the test suite.
 
 > [!IMPORTANT]
 > You cannot export more than 75 Test Suites in a single operation. The email supports up to 1MB of data.
+> You cannot export test plan attachments.
 
 ### Q: When I export a test plan, can I just view the data or copy it to a Word document?
 
