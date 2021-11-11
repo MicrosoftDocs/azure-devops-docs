@@ -63,8 +63,8 @@ Billing is set up for your Azure DevOps organization.
 
 ## Related articles
 
+* [Change your subscription for billing](change-azure-subscription.md)
+* [Add a user who can set up or change billing for Azure DevOps](add-backup-billing-managers.md)
 * [Buy Azure Test Plans](buy-basic-access-add-users.md)
-* [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
-* [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
 * [Azure cost management and billing](/azure/cost-management-billing/cost-management-billing-overview)
 * [Azure DevOps billing overview](overview.md)
