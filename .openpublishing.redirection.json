@@ -4953,7 +4953,7 @@
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/copying-and-cloning-test-suites-and-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
+      "redirect_url": "/azure/devops/test/copy-clone-test-items",
       "redirect_document_id": false
     },
     {
@@ -5238,7 +5238,7 @@
     },
     {
       "source_path": "docs/manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
+      "redirect_url": "/azure/devops/test/copy-clone-test-items",
       "redirect_document_id": false
     },
     {
@@ -16983,7 +16983,7 @@
     },
     {
       "source_path": "docs/test/mtm/copying-and-cloning-test-suites-and-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
+      "redirect_url": "/azure/devops/test/copy-clone-test-items",
       "redirect_document_id": false
     },
     {
