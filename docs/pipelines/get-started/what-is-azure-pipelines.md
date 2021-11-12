@@ -11,26 +11,10 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-<<<<<<< HEAD
-## Introduction
-Azure Pipelines automatically builds and tests code projects to make them available to others. Azure Pipelines supports the following scenarios:  
-
-* Works with any language or platform 
-* Deploys to different types of targets at the same time 
-* Integrates with Azure deployments 
-* Builds on Windows, Linux, or Mac machines 
-* Integrates with GitHub 
-* Works with open-source projects
-
-Azure Pipelines combines Continuous Integration (CI), Continuous Delivery (CD), and Continuous Testing (CT) to test and build your code and ship it to any target.
-
-Continuous Integration (CI) is the practice used by development teams of automating merging and testing code.  Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix.  Automated tests execute as part of the CI process to ensure quality.  Artifacts are produced from CI systems and fed to release processes to drive frequent deployments, using Continuous Delivery. The Build service in Azure DevOps Server helps you set up and manage CI for your applications.
-=======
 Azure Pipelines automatically builds and tests code projects to make them available to others. 
 It works with just about any language or project type. Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. 
 
 Continuous Integration (CI) is the practice used by development teams of automating merging and testing code.  Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix.  Automated tests execute as part of the CI process to ensure quality.  Artifacts are produced from CI systems and fed to release processes to drive frequent deployments. The Build service in Azure DevOps Server helps you set up and manage CI for your applications.
->>>>>>> parent of aa2d63cac8 (Updated what is azure pipelines)
 
 Continuous Delivery (CD) is a process by which code is built, tested, and deployed to one or more test and production environments.  Deploying and testing in multiple environments increases quality.  CI systems produce deployable artifacts, including infrastructure and apps.  Automated release processes consume these artifacts to release new versions and fixes to existing systems.  Monitoring and alerting systems run continually to drive visibility into the entire CD process. 
 
