@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ## Introduction
-Azure Pipelines automatically builds and tests code projects to make them available to others. Azure Pipelines combines Continuous Integration (CI) and Continuous Delivery (CD) to test and build your code and ship it to any target. Azure Pipelines supports the following scenarios:  
+Azure Pipelines automatically builds and tests code projects to make them available to others. Azure Pipelines supports the following scenarios:  
 
 * Works with any language or platform 
 * Deploys to different types of targets at the same time 
@@ -20,6 +20,8 @@ Azure Pipelines automatically builds and tests code projects to make them availa
 * Builds on Windows, Linux, or Mac machines 
 * Integrates with GitHub 
 * Works with open-source projects
+
+Azure Pipelines combines Continuous Integration (CI), Continuous Delivery (CD), and Continuous Testing (CT) to test and build your code and ship it to any target.
 
 Continuous Integration (CI) is the practice used by development teams of automating merging and testing code.  Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix.  Automated tests execute as part of the CI process to ensure quality.  Artifacts are produced from CI systems and fed to release processes to drive frequent deployments, using Continuous Delivery. The Build service in Azure DevOps Server helps you set up and manage CI for your applications.
 
