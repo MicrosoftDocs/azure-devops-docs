@@ -367,7 +367,7 @@ The `/clone /sourceplanid /destinationplanname` creates a new plan. If you speci
 |**/destinationplanname**:`name`|Specifies the name of the plan into which the cloned test plan will be copied.  |
 |**/overridefield**:`name=value`<br/>**/overridefield**:`name=value`| Optional. Specify to change the value of a field in each cloned work item. Specify multiple occurrences of this parameter to change as many fields as you want. This option is required when you clone a test suite to a different project. |  
 |**/sourcesuiteids**:`suiteid1,[suiteid2,...`|Optional. Specifies source test suites within the test plan to copy. |
-**|/clonerequirements** |Optional. Specifies to clone requirements category work items that are attached to requirements-based test suites. If you omit this parameter, requirements-based test suites are converted to static suites. |
+|**/clonerequirements** |Optional. Specifies to clone requirements category work items that are attached to requirements-based test suites. If you omit this parameter, requirements-based test suites are converted to static suites. |
 |**/clonechildren** |Optional. Specify to clone all child suites of the suites provided.|
 |**/clonerequirements** | Optional. Specify this switch to clone a requirement-based suite to a destination requirement-based suite. By default, a requirement-based test suite is cloned to a destination static test suite. Can only specify this option when `/sourcesuiteids` is provided.  |
 
@@ -524,7 +524,7 @@ When you clone a test suite, the following objects are copied from the source te
 |Test plan object| Notes|  
 |----------------------|------------|
 |Test case| Each new test case retains its shared steps. A link is defined between the source and new test cases. The new test cases do not have test runs, bugs, test results, or build information.|  
-|Shared steps  Shared steps referenced by cloned test cases are copied. |  
+|Shared steps | Shared steps referenced by cloned test cases are copied. |  
 |Test suite| Test suites that are copied retain the following data: <br /><br />- Names and hierarchical structure of the test suites<br />- Order of the test cases<br />- Assigned testers<br />- Configurations|  
 |Recordings | Action recordings linked from a cloned test case are copied. 
 |Links and Attachments|All links and attachments are copied for all copied test items.  
