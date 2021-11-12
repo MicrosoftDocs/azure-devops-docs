@@ -33,7 +33,7 @@ A pipeline is defined using a YAML file in your repo. Usually, this file is name
     - main
 
     pool:
-      vmImage: 'Ubuntu-latest'
+      vmImage: 'ubuntu-latest'
 
     steps:
     - task: Maven@3
@@ -51,7 +51,8 @@ A pipeline is defined using a YAML file in your repo. Usually, this file is name
    > [!Note]
    > The contents of your YAML file may be different depending on the sample repo you started with, or upgrades made in Azure Pipelines.
     
-This pipeline runs whenever your team pushes a change to the main branch of your repo. It runs on a Microsoft-hosted Linux machine. The pipeline process has a single step, which is to run the Maven task.
+
+This pipeline runs whenever your team pushes a change to the main branch of your repo or creates a pull request. It runs on a Microsoft-hosted Linux machine. The pipeline process has a single step, which is to run the Maven task.
 
 ## Change the platform to build on
 
@@ -82,7 +83,7 @@ You can build your project on [Microsoft-hosted agents](../pipelines/agents/host
 
 ## Add steps
 
-You can add additional **scripts** or **tasks** as steps to your pipeline. A task is a pre-packaged script. You can use tasks for building, testing, publishing, or deploying your app. For Java, the Maven task we used handles testing and publishing results, however, you can use a task to publish code coverage results too.
+You can add more **scripts** or **tasks** as steps to your pipeline. A task is a pre-packaged script. You can use tasks for building, testing, publishing, or deploying your app. For Java, the Maven task we used handles testing and publishing results, however, you can use a task to publish code coverage results too.
 
 * Open the YAML editor for your pipeline.
 
@@ -135,17 +136,19 @@ You can build and test your project on multiple platforms. One way to do it is w
 
 ## Build using multiple versions
 
-To build a project using different versions of that language, you can use a `matrix` of versions and a variable. In this step you can either build the Java project with two different versions of Java on a single platform or run different versions of Java on different platforms.
+To build a project using different versions of that language, you can use a `matrix` of versions and a variable. In this step, you can either build the Java project with two different versions of Java on a single platform or run different versions of Java on different platforms.
 
-* If you want to build on a single platform and multiple versions, add the following matrix to your `azure-pipelines.yml` file before the Maven task and after the vmImage.
+>[NOTE] You cannot use `strategy` multiples times in a context.
+
+* If you want to build on a single platform and multiple versions, add the following matrix to your `azure-pipelines.yml` file before the Maven task and after the `vmImage`.
 
     ```yaml
     strategy:
       matrix:
         jdk10:
-          jdk_version: "1.10"
+          jdkVersion: "1.10"
         jdk11:
-          jdk_version: "1.11"
+          jdkVersion: "1.11"
       maxParallel: 2
     ```
 
@@ -158,7 +161,7 @@ To build a project using different versions of that language, you can use a `mat
     with this line:
 
     ```yaml
-    jdkVersionOption: $(jdk_version)
+    jdkVersionOption: $(jdkVersion)
     ```
 
 * Make sure to change the `$(imageName)` variable back to the platform of your choice.
@@ -173,10 +176,10 @@ To build a project using different versions of that language, you can use a `mat
       matrix:
         jdk10_linux:
           imageName: "ubuntu-latest"
-          jdk_version: "1.10"
+          jdkVersion: "1.10"
         jdk11_windows:
           imageName: "windows-latest"
-          jdk_version: "1.11"
+          jdkVersion: "1.11"
       maxParallel: 2
 
     pool:
@@ -188,7 +191,7 @@ To build a project using different versions of that language, you can use a `mat
         mavenPomFile: "pom.xml"
         mavenOptions: "-Xmx3072m"
         javaHomeOption: "JDKVersion"
-        jdkVersionOption: $(jdk_version)
+        jdkVersionOption: $(jdkVersion)
         jdkArchitectureOption: "x64"
         publishJUnitResults: true
         testResultsFiles: "**/TEST-*.xml"
@@ -199,7 +202,7 @@ To build a project using different versions of that language, you can use a `mat
 
 ## Customize CI triggers
 
-You can use a `trigger:` to specify the events when you want to run the pipeline. YAML pipelines are configured by default with a CI trigger on your default branch (which is usually main). You can set up triggers for specific branches or for pull request validation. For a pull request validation trigger just replace the `trigger:` step with `pr:` as shown in the two examples below.
+You can use a `trigger:` to specify the events when you want to run the pipeline. YAML pipelines are configured by default with a CI trigger on your default branch (which is usually `main`). You can set up triggers for specific branches or for pull request validation. For a pull request validation trigger, just replace the `trigger:` step with `pr:` as shown in the two examples below. By default, the pipeline runs for each new pull request and its later changes.
 
 * If you'd like to set up triggers, add either of the following snippets at the beginning of your `azure-pipelines.yml` file.
 
@@ -219,7 +222,7 @@ You can use a `trigger:` to specify the events when you want to run the pipeline
 
 ## Pipeline settings
 
-There are some pipeline settings that you don't manage in your YAML file, such as the YAML file path and enabled status of your pipeline. To configure these settings, navigate to the [pipeline details page](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) and choose **More actions**, **settings**. For more information on navigating and browsing your pipelines, see [Navigating pipelines](get-started/multi-stage-pipelines-experience.md).
+There are some pipeline settings that you don't manage in your YAML file, such as the YAML file path and enabled status of your pipeline. To configure these settings, navigate to the [pipeline details page](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) and choose **More actions**, **Settings**. For more information on navigating and browsing your pipelines, see [Navigating pipelines](get-started/multi-stage-pipelines-experience.md).
 
 :::image type="content" source="media/customize-pipeline/pipeline-settings.png" alt-text="Pipeline settings.":::
 
@@ -230,7 +233,7 @@ From the **Pipeline settings** pane you can configure the following settings.
   * **Paused** pipelines allow run requests to be processed, but those requests are queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
   * **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied. 
 * **YAML file path** - If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
-* **Automatically link work items included in this run** - The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When **Automatically link work items included in this run** is selected, you must specify a either a specific branch, or `*` for all branches, which is the default. If you specify a branch, work items are only associated with runs of that branch. If you specify `*`, work items are associated for all runs. 
+* **Automatically link work items included in this run** - The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When **Automatically link work items included in this run** is selected, you must specify either a specific branch, or `*` for all branches, which is the default. If you specify a branch, work items are only associated with runs of that branch. If you specify `*`, work items are associated for all runs. 
 
   :::image type="content" source="media/customize-pipeline/link-work-items.png" alt-text="Automatically link work items included in this run.":::
 
@@ -287,7 +290,7 @@ jobs:
 > [!NOTE] 
 > Azure Boards allows you to configure your work item tracking using several different processes, such as Agile or Basic. Each process has different work item types, and not every work item type is available in each process. For a list of work item types supported by each process, see [Work item types (WITs)](../boards/work-items/about-work-items.md#work-item-types-wits).
 
-The previous example uses [Runtime parameters](process/runtime-parameters.md) to configure whether the pipeline succeeds or fails. When manually running the pipeline, you can set the value of the `succeed` parameter. The `script` step in the first job of the pipeline evaluates the `succeed` parameter and only runs when `succeed` is set to false.
+The previous example uses [Runtime parameters](process/runtime-parameters.md) to configure whether the pipeline succeeds or fails. When manually running the pipeline, you can set the value of the `succeed` parameter. The second `script` step in the first job of the pipeline evaluates the `succeed` parameter and only runs when `succeed` is set to false.
 
 The second job in the pipeline has a dependency on the first pipeline, and only runs if the first job fails. The second job uses the Azure DevOps CLI [az boards work-item create](/cli/azure/boards/work-item#az_boards_work_item_create) command to create a bug. For more information on running Azure DevOps CLI commands from a pipeline, see [Run commands in a YAML pipeline](../cli/azure-devops-cli-in-yaml.md).
 
@@ -295,7 +298,7 @@ This example uses two jobs, but this same approach could be used across [multipl
 
 ## Next steps
 
-You've just learned the basics of customizing your pipeline. Next we recommend that you learn more about customizing a pipeline for the language you use:
+You've learned the basics of customizing your pipeline. Next we recommend that you learn more about customizing a pipeline for the language you use:
 
 * [.NET Core](ecosystems/dotnet-core.md)
 * [Containers](ecosystems/containers/build-image.md)
