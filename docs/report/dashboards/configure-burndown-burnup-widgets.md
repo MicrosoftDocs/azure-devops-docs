@@ -1,7 +1,7 @@
 ---
 title: Configure Burndown & Burnup widgets
 titleSuffix: Azure DevOps   
-description: Learn how to configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams in Azure DevOps.
+description: Learn how to configure a Burndown or Burnup widget to create charts that you add to a dashboard to track progress across one or more teams in Azure DevOps.
 ms.custom: dashboards
 ms.technology: devops-analytics
 ms.topic: tutorial
