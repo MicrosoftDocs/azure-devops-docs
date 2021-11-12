@@ -153,7 +153,7 @@ TFS 2015 through TFS 2018 supports the Classic interface only. The following tab
 
 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Create your first pipeline](../create-first-pipeline.md)
