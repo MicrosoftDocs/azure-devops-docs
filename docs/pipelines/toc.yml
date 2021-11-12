@@ -1,9 +1,9 @@
 - name: Azure Pipelines
   href: index.yml
-- name: Use Azure Pipelines
-  href: get-started/pipelines-get-started.md
 - name: What is Azure Pipelines?
   href: get-started/what-is-azure-pipelines.md
+- name: Use Azure Pipelines
+  href: get-started/pipelines-get-started.md
 - name: Get started
   items:
     - name: Sign up for Azure Pipelines
@@ -418,9 +418,6 @@
          href: targets/azure-sqldb.md
        - name: Azure MySQL database
          href: targets/azure-mysql.md
-       - name: Azure Cosmos DB CI/CD (Classic)
-         href: targets/cosmos-db.md
-         displayName: cosmos, db, database
     - name: Azure Virtual Machine Scale Set
       items:
       - name: Deploy a virtual machine scale set
@@ -428,8 +425,6 @@
         displayName: vmss, custom image
       - name: Deploy apps to a virtual machine scale set (Classic)
         href: apps/cd/azure/deploy-azure-scaleset.md
-    - name: Azure Government Cloud
-      href: library/government-cloud.md
     - name: Azure Stack
       href: targets/azure-stack.md
     - name: Azure Container Registry
@@ -448,9 +443,6 @@
       - name: Deploy to AKS with Jenkins
         href: release/integrate-jenkins-pipelines-aks.md
         displayName: cluster, Jenkins, Maven, Docker
-    - name: Azure IoT Edge (Classic)
-      href: release/deploy-iot-using-azure-pipelines.md
-      displayName: iot, edge
     - name: Azure Policy Compliance (Classic)
       href: policies/azure-policy.md
       displayName: policy, compliance
@@ -1005,14 +997,14 @@
     - name: Use deployment rings
       href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Use feature flags
-      href: https://docs.microsoft.com/devops/operate/progressive-experimentation-feature-flags?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+      href: /devops/operate/progressive-experimentation-feature-flags?bc=%2fazure%2fdevops%2fpipelines%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2fpipelines%2ftoc.json
       displayName: feature-flags
 - name: Developer resources
   items:
     - name: REST API reference
       href: /rest/api/azure/devops/
     - name: Azure DevOps CLI
-      href: /azure/devops/cli # Don't use .md link here because it binds to the artifacts TOC
+      href: ../cli/index.md 
     - name: DevOps Starter to deploy to Azure
       href: /azure/devops-project/
     - name: Azure Lab Services

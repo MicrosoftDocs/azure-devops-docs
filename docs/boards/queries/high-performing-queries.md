@@ -1,7 +1,7 @@
 ---
 title: Learn how to create high-performing work item queries
 titleSuffix: Azure Boards
-description: Guidelines for creating high-performing work item queries in Azure Boards, Azure DevOps, & Team Foundation Server
+description: Learn about guidelines for creating high-performing work item queries in Azure Boards and Azure DevOps. 
 ms.custom: "boards-queries, linked-from-support"  
 ms.technology: devops-agile
 ms.assetid: 
@@ -9,20 +9,20 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: best-practice
 monikerRange: '<= azure-devops'
-ms.date: 09/26/2019  
+ms.date: 10/21/2021  
 ---
 
 
-# Guidance to create high-performing queries  
+# Guidance to create high-performing queries in Azure Boards and Azure DevOps
  
 [!INCLUDE [temp](../includes/version-all.md)]
 
-While you can easily create a work item query, creating a high performing query requires a deeper understanding. Query performance can not only impact your individual productivity, but also dashboard performance and resource rate limits.  
+While you can easily create a work item query, creating a high-performing query requires a deeper understanding. Query performance won't only improve your individual productivity, but also dashboard performance and resource rate limits.  
 
 > [!NOTE]   
 > Reference to service or resource rate limits only applies to queries run against Azure DevOps Services. To learn more, see [Service limits and rate limits](../../user-guide/service-limits.md). 
 
-This article provides some general guidelines on how to write a high performing query. These guidelines apply to both queries you create through the web portal as well as [REST API queries](/rest/api/azure/devops/wit/queries) and [az boards query](/cli/azure/boards#az_boards_query) command.
+This article provides some general guidelines on how to write a high-performing query. These guidelines apply to both queries you create through the web portal along with the [REST API queries](/rest/api/azure/devops/wit/queries) and [az boards query](/cli/azure/boards#az_boards_query) command.
 
 
 
@@ -30,11 +30,11 @@ This article provides some general guidelines on how to write a high performing 
 
 Apply all filters that are necessary for your query. The more selective the query is, the smaller the result set will be. The smaller the result set, the more targeted and selective your query is. 
 
-Making your query more selective is always your first choice to create a high performing query. 
+Making your query more selective is always your first choice to create a high-performing query. 
  
-## Use tags
+## Use tags to categorize work items
 
-Use [work item tags](add-tags-to-work-items.md) to categorize your work items instead of a custom field. Queries that filter on tags usually perform faster over those that filter on string matches. 
+Use [work item tags](add-tags-to-work-items.md) to categorize your work items instead of a custom field. Queries that filter on tags usually perform faster over those queries that filter on string matches. 
 
 Unlike matching or partial matching on a custom field, query with a `Tags Contains` predicate won't scan the entire work items tables. 
 
@@ -44,9 +44,9 @@ Unlike matching or partial matching on a custom field, query with a `Tags Contai
 
 ## Use `Contains words` for string matches
  
-When you want to filter on a string match, try using the `Contains Words` operator instead of `Contains`. The `Contains Words` operator performs a full-text search on the specified field, which is faster in most cases. 
+When you want to filter on a string match, try using the `Contains Words` operator instead of `Contains`. The `Contains Words` operator runs a full-text search on the specified field, which is faster in most cases. 
 
-While the `Contains` operator performs a table scan, which is not only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
+While the `Contains` operator runs a table scan, which isn't only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
  
 ## Specify small groups when using the `In Group` operator 
 
@@ -58,21 +58,21 @@ If you filter on a group that contains a large number of members, your result se
 
 Negated operators&mdash;such as `<>, Not In, Not Under, Not In Group`&mdash;are likely to make your query non-selective, which can result in a large result set. 
 
-Only use negated operators when it is absolutely necessary. Always try to find alternatives first. For example, if Field1 has values A, B, C, D; specifying `Field1 In A, B, C` provides a better alternative to the clause `Field1 <> D`.
+Only use negated operators when it's necessary. Always try to find alternatives first. For example, if Field1 has values A, B, C, D; specifying `Field1 In A, B, C` provides a better alternative to the clause `Field1 <> D`.
 
 
 ## Avoid string comparisons  
 
-Comparing one string field with another string always performs a work item table scan, which is inefficient. Recommended guidance is to use tags or a specific custom field as alternatives, particularly when a query performs poorly. 
+Comparing one string field with another string always runs a work item table scan, which is inefficient. Recommended guidance is to use tags or a specific custom field as alternatives, particularly when a query performs poorly. 
  
-## Limit "Or" operators
+## Limit `Or` operators
 
-Queries perform better when fewer `Or` operators are used. Too many `Or` operators can make your query non-selective. If your query runs slowly, try moving the `Or` operator clause towards the top of the query clauses.  
+Queries run better when fewer `Or` operators are used. Too many `Or` operators can make your query non-selective. If your query runs slowly, try moving the `Or` operator clause towards the top of the query clauses.  
  
 
 ## Save your query 
 
-Saved queries have a higher chance of performing better due to internal optimizations. Always save your query when you plan to reuse it.  Even when you execute the query by WIQL through a REST API, saving the WIQL through the web portal will make your REST API calls less prone to performance regressions in the future. 
+Saved queries have a higher chance of performing better because of internal optimizations. Always save your query when you plan to reuse it.  Even when you execute the query by WIQL through a REST API, saving the WIQL through the web portal will make your REST API calls less prone to performance regressions in the future. 
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 

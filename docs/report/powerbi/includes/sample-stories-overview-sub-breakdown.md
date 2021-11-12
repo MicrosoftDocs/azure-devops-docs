@@ -17,7 +17,7 @@ The following table describes each part of the query.
    :::column span="1":::
    **Description**
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `Processes/any(p:p/BacklogType eq 'RequirementBacklog')`
@@ -25,7 +25,7 @@ The following table describes each part of the query.
    :::column span="1":::
    Filter the work items in such a way that they should fall in 'requirements' category for at least one process associated with them.
    :::column-end:::
-:::row:::
+:::row-end:::
 :::row:::
    :::column span="1":::
    `Processes/all(p:p/IsBugType eq false)`
@@ -33,4 +33,4 @@ The following table describes each part of the query.
    :::column span="1":::
    Omit the bug type work items while getting requirements. In Basic process template, Issue work items are also of bug type, so for Basic process remove this clause from your query.
    :::column-end:::
-:::row:::
+:::row-end:::
