@@ -21,9 +21,9 @@ and [Team Foundation Version Control](./what-is-tfvc.md) (TFVC).
 <a name="tfvc_or_git_summary"></a>
 ## Which version control system should I use?
  
-Git is the default version control provider for new projects. You should use Git for version control in your projects unless you have a specific need for centralized version control features in TFVC.  
+Git is the default version control provider for new projects. You should use Git for version control in your projects and begin to move your existing TFVC projects to Git. TFVC is considered feature complete. Azure DevOps will maintain compatability with TFVC, but Git will receive all future investment.
 
-You can use TFVC repos with Git in the same Project so it's easy to add TFVC later if you need centralized version control. To setup a new repo type for an existing project [use these instructions](../../repos/git/team-projects.md).
+You can use TFVC repos with Git in the same project, so it's easy to add TFVC later if you need centralized version control. To set up a new repo type for an existing project [use these instructions](../../repos/git/team-projects.md).
 
 ### Git (distributed)
 
@@ -101,7 +101,7 @@ Need more help to make a choice? These charts might help.
    
    You can get visualizations of your branch structures and where your changesets have been merged.
 
-   See [Use branches to isolate risk in Team Foundation Version Control](/azure/devops/repos/tfvc/branching-strategies-with-tfvc).
+   See [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
    :::column-end:::
    :::column span="2":::
    Branching is lightweight and path independent. Many developers create a branch for each new feature they are coding, sometimes on a daily basis. You can quickly switch from one branch to another to pivot among different variations of your codebase. You can create branches that exist only on your dev machine and share them if and when you&#39;re ready. 
@@ -113,7 +113,7 @@ Need more help to make a choice? These charts might help.
    You can compare branches to see which commits exist on which branches.
 
 
-   See [Use Git branches to switch contexts, suspend work, and isolate risk](/azure/devops/repos/git/branches?view=azure-devops&amp;tabs=visual-studio&preserve-view=true#use-branches-to-manage-development).
+   See [Use Git branches to switch contexts, suspend work, and isolate risk](../git/create-branch.md).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -132,7 +132,7 @@ Need more help to make a choice? These charts might help.
    File storage
    :::column-end:::
    :::column span="2":::
-   You can check in large binary files. You might also want to use [NuGet](https://go.microsoft.com/fwlink/?LinkId=246165) in combination or as an alternative.
+   You can check in large binary files. You might also want to use [NuGet](https://www.nuget.org/) in combination or as an alternative.
    :::column-end:::
    :::column span="2":::
    You can check in small binary files as you would regular files. When working with large binary files, use [Git-LFS](https://devblogs.microsoft.com/devops/announcing-git-lfs-on-all-vso-git-repos/) to store your large binary files in Azure Repos.
@@ -236,7 +236,7 @@ Need more help to make a choice? These charts might help.
    Builds (automated by TFBuild)
    :::column-end:::
    :::column span="2":::
-   You can use all [TFBuild](/azure/devops/pipelines/get-started/what-is-azure-pipelines) capabilities to build any combination of content you want within the project collection.
+   You can use all [TFBuild](../../pipelines/get-started/what-is-azure-pipelines.md) capabilities to build any combination of content you want within the project collection.
    :::column-end:::
    :::column span="2":::
    You can use most TFBuild capabilities to build one project at a time, and one or more repositories at a time.

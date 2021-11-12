@@ -24,6 +24,9 @@ Selecting this option will allow your feed to use packages from public packages 
 
 ## Add public upstream sources to an existing feed
 
+> [!NOTE]
+> Upstream sources are not supported in public feeds.
+
 1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**.
 2. Select **Upstream sources**. If you don't have any upstream sources, you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
 3. In the **Add a new upstream source** dialog, Select **Public source**. Note that public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
