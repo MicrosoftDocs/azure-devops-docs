@@ -1,9 +1,9 @@
 - name: Azure Pipelines
   href: index.yml
-- name: Use Azure Pipelines
-  href: get-started/pipelines-get-started.md
 - name: What is Azure Pipelines?
   href: get-started/what-is-azure-pipelines.md
+- name: Use Azure Pipelines
+  href: get-started/pipelines-get-started.md
 - name: Get started
   items:
     - name: Sign up for Azure Pipelines
