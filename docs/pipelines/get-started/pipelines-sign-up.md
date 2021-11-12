@@ -131,7 +131,7 @@ You don't need to invite team members to sign up for Azure Pipelines. Add and in
    - **Access level:** Assign one of the following access levels:
       - **Basic:** Assign to users who must have access to all Azure Pipelines features. You can grant up to five users Basic access for free.
       - **Stakeholder:** Assign to users for limited access to features to view, add, and modify work items. You can assign an unlimited amount of users Stakeholder access for free.
-      - **Visual Studio Subscriber:** _add description_
+      - **Visual Studio Subscriber:** Assign to users who already have a Visual Studio subscription.
    - **Add to project:** Select the project you named in the preceding procedure.
    - **Azure DevOps groups:** Select one of the following security groups, which will determine the permissions the users have to do select tasks. To learn more, see [Azure Pipelines resources](../security/resources.md).
       - **Project Readers:** Assign to users who only require read-only access.
