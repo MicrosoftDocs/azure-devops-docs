@@ -231,7 +231,7 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
     Please enter a choice [Default choice(1)]:2
     ```
     
-1. Select *1* to commit the the YAML file to the main branch.
+1. Select *1* to commit the YAML file to the main branch.
 
     ```azurecli-interactive
     How do you want to commit the files to the repository?
@@ -1199,7 +1199,7 @@ You can edit and test your draft as needed.
 
 ::: moniker range="<= azure-devops-2020"
 
-When you're ready you can publish the draft to merge the changes into your build pipeline.
+When you're ready, you can publish the draft to merge the changes into your build pipeline.
 
 ::: moniker-end
 
