@@ -226,89 +226,60 @@ To authenticate with Azure Artifacts from your pipeline without a task runner, f
 
 ### With a Task Runner (e.g. make gulp work)
 
-When using a task runner, you'll need to add the **npm Authenticate** build task at the beginning of your build pipeline. This will inject credentials into your project's **_.npmrc_** and persist them for the lifespan of the build. This allows subsequent build steps to use the credentials in the **_.npmrc_**.
+When using a task runner, you'll need to add the **npm Authenticate** task at the beginning of your pipeline. This will inject your credentials into your project's *.npmrc* and persist them for the lifespan of the pipeline run. This allows subsequent steps to use the credentials in the *.npmrc*.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Select **Azure Pipelines**, it should automatically take you to the **Builds** page.
+1. Select **Azure Pipelines**, and then select your pipeline definition.
+
+1. Select **Edit** to modify your pipeline.
+
+1. Select `+` to add a task to your pipeline.
 
    > [!div class="mx-imgBorder"] 
-   > ![navigate to builds tab TFS 2018 second](../../pipelines/media/get-started-designer/navigate-to-builds-tab-newnav-tfs-2018-2.png)
+   > ![Screenshot showing how to add the npm authenticate task to your pipeline](../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
 
-1. Create a new pipeline.
-
-   > [!div class="mx-imgBorder"] 
-   > ![new build pipeline](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
-
-1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
-
-1. Start with an **Empty job**.
-
-1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Package** category, select the **npm Authenticate** task from the list, and then choose **Add**.
+1. Search for the **npm Authenticate** task, and then select **Add** to add it to your pipeline.
 
    > [!div class="mx-imgBorder"] 
-   > ![builds tab add npm task](../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
+   > ![Screenshot showing the npm authenticate task added to the pipeline](../media/build-definition/build-definition-npm-auth-task-phase-newnav.png)
 
-1. Select the **npm Authenticate** task underneath **Phase 1**:
-
-   > [!div class="mx-imgBorder"] 
-   > ![npm auth task phase](../media/build-definition/build-definition-npm-auth-task-phase-newnav.png)
-
-1. Browse to and select your **.npmrc file to authenticate**:
+1. Select your .npmrc file.
 
    > [!div class="mx-imgBorder"]
-   > ![npm auth task](../media/build-definition/build-definition-npm-auth-task-file.png)
+   > ![Screenshot showing how to add your .npmrc file](../media/build-definition/build-definition-npm-auth-task-file.png)
 
-   > [!TIP]
-   > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#npm-service-connection)
-
-1. After setting up your **npm Authenticate** task, you can add other build task(s) for your task runner like **Gulp**.
+1. Select **Save & queue** when you are done.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-1. Select **Build and Release**, and then choose **Builds**.
+1. Select **Build and Release**, and then select **Builds**.
 
    > [!div class="mx-imgBorder"]
-   > ![navigate to builds tab team foundation services](../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
+   > ![Screenshot showing how to access your builds in TFS](../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
-1. Create a new pipeline.
+1. Select your pipeline, and then select **Edit**.
 
-   > [!div class="mx-imgBorder"]
-   > ![new build pipeline button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+1. Select `+` to add a task to your pipeline.
 
-1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot showing how to add a new task to your pipeline](../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
 
-1. Start with an **Empty job**.
-
-1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Package** category, select the **npm Authenticate** task from the list, and then choose **Add**.
+1. Search for the **npm Authenticate** task, and then select **Add** to add it to your pipeline.
 
    > [!div class="mx-imgBorder"]
-   > ![builds-tab-add-task-to-job](../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
+   > ![Screenshot showing the npm authenticate task](../media/build-definition/build-definition-npm-auth-task-phase.png)
 
-1. Select the **npm Authenticate** task underneath **Phase 1**:
-
-   > [!div class="mx-imgBorder"]
-   > ![phase one npm auth](../media/build-definition/build-definition-npm-auth-task-phase.png)
-
-1. Browse to and select your **npmrc file to authenticate**:
+1. Select your .npmrc file.
 
    > [!div class="mx-imgBorder"]
-   > ![npmrc file to authenticate](../media/build-definition/build-definition-npm-auth-task-file.png)
+   > ![Screenshot showing how to add your .npmrc file to the npm authenticate task](../media/build-definition/build-definition-npm-auth-task-file.png)
 
-   > [!TIP]
-   > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#npm-service-connection)
-
-1. After setting up your **npm Authenticate** task, you can add other build task(s) for your task runner like **Gulp**.
+1. Select **Save & queue** when you are done.
 
 ::: moniker-end
-
-::: moniker range="= tfs-2017 || = tfs-2018 || = azure-devops"
-
-> [!NOTE]
-> If you are using Yarn, run the following command to set the yarn registry:
-> `yarn config set registry "https://pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/"`
 
 ## Troubleshooting `vsts-npm-auth`
 
