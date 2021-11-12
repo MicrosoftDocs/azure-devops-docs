@@ -43,8 +43,7 @@ Pull request validation (PR) triggers also vary based on the type of repository.
 
 [Pipeline triggers](../process/pipeline-triggers.md) in YAML pipelines and [build completion triggers](../process/pipeline-triggers-classic.md) in classic build pipelines allow you to trigger one pipeline upon the completion of another.
 
-<a id="branch-considerations">
-
+<a id="branch-considerations"></a>
 ## Branch consideration for triggers in YAML pipelines
 
 YAML pipelines can have different versions of the pipeline in different branches, which can affect which version of the pipeline's triggers are evaluated and which version of the pipeline should run.
