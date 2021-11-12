@@ -93,7 +93,7 @@ az pipelines update [--branch]
 - **queue-id**: Queue ID of the agent pool where the pipeline needs to run.
 - **yaml-path**: Path of the pipeline's yaml file in the repo.
 
- Global parameters include `debug`, `help`, `only-show-errors`, `query`, `output` and `verbose`.
+ Global parameters include `debug`, `help`, `only-show-errors`, `query`, `output`, and `verbose`.
 
 > [!TIP]
 > There are also global parameters you can use such as `--output`.
@@ -162,4 +162,4 @@ ID    Name                        Status    Default Queue
 
 ### Can I run multiple pipelines in Azure DevOps Services using a single command?
 
-Currently, the Azure CLI and Azure APIs doesn't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](../build/triggers.md).
+Currently, the Azure CLI and Azure APIs don't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](../build/triggers.md).
