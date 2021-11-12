@@ -127,6 +127,8 @@
   items:
   - name: About pull requests
     href: about-pull-requests.md
+  - name: Merge strategies and squash merge
+    href: merging-with-squash.md
   - name: View and open pull requests
     href: view-pull-requests.md
   - name: Create pull requests
@@ -135,8 +137,6 @@
     href: review-pull-requests.md
   - name: Complete pull requests
     href: complete-pull-requests.md
-  - name: Squash merge pull requests 
-    href: merging-with-squash.md
   - name: Pull request notifications
     href: pull-request-notifications.md
   - name: Pull request templates
