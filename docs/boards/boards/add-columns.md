@@ -190,7 +190,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Select **Configure team settings** (:::image type="icon" source="../../media/icons/blue-gear.png" border="false":::) to configure the board and set general team settings.  
+1. Select **Configure team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot that shows open board settings for a team in a vertical navigation.](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -217,7 +217,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then:
 
-   1. Open **Settings**, select **Columns**, and select the **Actions** (:::image type="icon" source="../../media/icons/actions-icon.png" border="false":::) icon from the column tab.
+   1. Open **Settings**, select **Columns**, and select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: from the column tab.
    1. Select **Remove** from the menu.  
 
 	> [!div class="mx-imgBorder"]
@@ -235,7 +235,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Select ![Settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+1. Select **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: to open the common configuration settings dialog for the Kanban board. 
 
 	![Screenshot that shows the Settings icon on the Kanban board.](media/add-columns-open-settings-ts.png)  
 
@@ -258,7 +258,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 4. To change the column order, drag the column tab to the position that you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **Actions** icon (:::image type="icon" source="../../media/icons/actions-icon.png" border="false":::) on the column tab and select **Remove** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: on the column tab and select **Remove** from the menu. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot that shows the selections for deleting a column in the Settings dialog.](media/columns/remove-column.png)  
@@ -275,7 +275,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Select ![Settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+1. Select **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: to open the common configuration settings dialog for the Kanban board. 
 
 	![Screenshot that shows the Settings icon on the Kanban board.](media/add-columns-open-settings-ts.png)  
 
@@ -297,7 +297,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 4. To change the column order, drag the column tab to the position that you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **Actions** icon (:::image type="icon" source="../../media/icons/actions-icon.png" border="false":::) on the column tab and select **Delete** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: on the column tab and select **Delete** from the menu. 
 
 	![Screenshot that shows the selections for deleting a column in the Settings dialog.](media/kanban-delete-column.png)  
 
@@ -307,7 +307,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
-1. Select the **Settings** icon (:::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false":::) to open the common configuration settings dialog for the Kanban board. 
+1. Select **Settings** :::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false"::: to open the common configuration settings dialog for the Kanban board. 
 
 	![Screenshot that shows the Settings icon on the Kanban board.](../../boards/boards/media/kanban-card-customize-open-settings.png)  
 
@@ -331,7 +331,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 4. To change the column order, drag the column tab to the position that you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **Actions** icon (:::image type="icon" source="../../media/icons/actions-icon.png" border="false":::) on the column tab and select **Delete** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: on the column tab and select **Delete** from the menu. 
 
 	![Screenshot that shows the selections for deleting a column in the Settings dialog.](media/kanban-delete-column.png)  
 
@@ -353,7 +353,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 	You can rename column titles to best reflect each stage of work. Keep the column titles as simple as possible. 
 
-9. To change the column order, use the left (←) or right (→) arrow icon. 
+9. To change the column order, use the left arrow ← or right arrow →. 
 
 1. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **X** at the top of the column.</p>
 
@@ -367,7 +367,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
-1. Select the **Settings** icon (:::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false":::) to open **Customize Columns**.  
+1. Select **Settings** :::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false"::: to open **Customize Columns**.  
 
 	![Screenshot that shows the Settings icon on the Kanban board.](media/columns/open-settings-2013.png)  
 
@@ -383,7 +383,7 @@ Column titles and choices depend on the [process](../work-items/guidance/choose-
 
 	You can rename column titles to best reflect each stage of work. Keep the column titles as simple as possible. 
 
-3. To change the column order, use the left (←) or right (→) arrow icon. 
+3. To change the column order, use the left arrow ← or right arrow →. 
 
 4. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, select **X** at the top of the column. 
 
