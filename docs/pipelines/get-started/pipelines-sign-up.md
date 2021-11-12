@@ -31,9 +31,9 @@ The sign up process consists of two steps:
 
 If you have a personal Microsoft account, complete the following steps.
 
-1. Check that your account is up to date by logging into your [personal Microsoft account](https://account.microsoft.com/account){:target="\_blank"}. 
+1. Check that your account is up to date by logging into your <a href="https://account.microsoft.com/account" target="_blank">personal Microsoft account</a>. 
 
-2. Open [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines){:target="\_blank"} and select **Start free**.
+2. Open <a href="https://azure.microsoft.com/services/devops/pipelines" target="_blank">Azure Pipelines</a> and select **Start free**.
 
    ![Screenshot of Start free with Azure Pipelines page.](media/start-free-azure-pipelines.png)
 
@@ -50,9 +50,9 @@ If you have a GitHub account, complete the following steps to sign up for Azure 
 > [!IMPORTANT]
 > If your GitHub email address is associated with an Azure AD-backed organization in Azure DevOps, you can't sign in with your GitHub account, rather you must sign in with your Azure AD account.
 
-1. Log into your [GitHub account](){:target="\_blank"}
+1. Log into your <a href="https://github.com/login" target="_blank">GitHub account</a>.
 
-2. Open [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines){:target="\_blank"} and select **Start free with GitHub**. If you're already part of an Azure DevOps organization, choose **Start free**.
+2. Open <a href="https://azure.microsoft.com/services/devops/pipelines" target="_blank">Azure Pipelines</a> and select **Start free with GitHub**. If you're already part of an Azure DevOps organization, choose **Start free**.
 
    ![Start Azure Pipelines with GitHub](media/start-free-github-pipelines.png)
 
