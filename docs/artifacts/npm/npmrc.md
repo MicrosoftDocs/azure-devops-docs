@@ -20,19 +20,21 @@ To authenticate with Azure Artifacts, we must first set up our config file. npm 
 
 We recommend using two **.npmrc_** files, the first one we will use to authenticate to Azure Artifacts, and the second one should be kept locally to store our credentials. This enables you to share your project's **.npmrc** while keeping your credentials secure.
 
+::: moniker range=">= azure-devops-2019"
+
 1. Select **Artifacts**, and then select **Connect to feed**.
+ 
+    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
 
-   ::: moniker range=">= azure-devops-2019"
-   
-       :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to a feed.":::
+::: moniker-end
 
-   ::: moniker-end
+::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-   ::: moniker range=">= tfs-2017 < azure-devops-2019"
+1. Select **Packages**, and then select **Connect to feed**.
 
-      :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed in TFS.":::
+    :::image type="content" source="../media/connect-to-feed.png" alt-text="Screenshot showing how to connect to a feed in TFS.":::
 
-   ::: moniker-end
+::: moniker-end
 
 2. Select **npm** from the list of package types.
 
@@ -56,7 +58,7 @@ We recommend using two **.npmrc_** files, the first one we will use to authentic
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-4. Follow the instructions under the **Project setup** section to set up your project.
+4. Follow the instructions to set up your project.
 
     :::image type="content" source="../media/connect-to-feed-npm-registry.png" alt-text="Screenshot showing the steps to set up the project in TFS.":::
 
@@ -149,7 +151,7 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 There are two options for setting up authentication in your pipeline:
 
 - [Without a task runner](#without-a-task-runner).
-- [With a task runner](#with-a-task-runner-eg-make-gulp-work) (e.g. gulp).
+- [With a task runner](#with-a-task-runner) (e.g. gulp).
 
 ### Without a Task Runner
 
