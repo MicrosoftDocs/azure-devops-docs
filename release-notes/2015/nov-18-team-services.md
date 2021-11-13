@@ -15,7 +15,7 @@ Today is our [Connect(); developer event](https://channel9.msdn.com/Events/Conne
 
 ## Visual Studio Team Services
 
-Let's start the news with our new name! Visual Studio Online has been renamed to Visual Studio Team Services. Only the official name has changed; everything else, like your url—<account>.visualstudio.com—remains the same. We've seen a ton of confusion with people thinking VS Online is a browser-based IDE. Of course, it is not. The name change is part of our effort to dispel some of that confusion. It will undoubtedly take a while for all occurrences of Visual Studio Online to be changed, but expect it will gradually happen.
+Let's start the news with our new name! Visual Studio Online has been renamed to Visual Studio Team Services. Only the official name has changed; everything else, like your url—\<account\>.visualstudio.com—remains the same. We've seen a ton of confusion with people thinking VS Online is a browser-based IDE. Of course, it is not. The name change is part of our effort to dispel some of that confusion. It will undoubtedly take a while for all occurrences of Visual Studio Online to be changed, but expect it will gradually happen.
 
 ## Extensions and the new Marketplace
 
