@@ -303,28 +303,33 @@ Build policies reduce breaks and keep your test results passing. Build policies 
 A build validation policy queues a new build when a new PR is created or changes are pushed to an existing PR that targets the branch. The build policy evaluates the build results to determine whether the PR can be completed.
 
 > [!IMPORTANT]
-> Before specifying a build validation policy, you must have a build pipeline. If you don't have a pipeline, see [Create a build pipeline](../../pipelines/create-first-pipeline.md) and choose the type of build that matches your project type.
+> Before specifying a build validation policy, you must have a build pipeline. If you don't have a pipeline, see [Create a build pipeline](../../pipelines/create-first-pipeline.md). Choose the type of build that matches your project type.
 
-:::image type="content" source="media/branch-policies/build-validation-2020.png" alt-text="Add build policy":::
+To add a build validation policy
 
-Choose the **+** button next to **Build validation**.
+1. Select the **+** button next to **Build validation**.
 
-:::image type="content" source="media/branch-policies/add-build-policy-menu-2020.png" alt-text="Build policy settings":::
+   :::image type="content" source="media/branch-policies/build-validation-2020.png" alt-text="Screenshot that shows the Add button next to Build validation.":::
 
-1. Select the **Build pipeline**.
-1. Optionally set a **Path filter**. Learn more about [path filters](#path-filters) in branch policies.
-1. Choose the type of **Trigger**. Select **Automatic (whenever the source branch is updated)** or **Manual**.
-1. Select the **Policy requirement**. If you choose **Required**, builds must complete successfully to complete pull requests. Choose **Optional** to provide a notification of the build failure but still allow pull requests to complete.
-1. Set a build expiration to make sure that updates to your protected branch don't break changes for open pull requests.
+1. On the **Set build policy** screen:
 
-   - **Immediately when `branch name` is updated**: This option sets the build policy status in a pull request to *failed* when the protected branch is updated. Requeue a build to refresh the build status. This setting ensures that the changes in pull requests build successfully even as the protected branch changes. This option is best for teams that have important branches with a lower volume of changes. Teams working in busy development branches may find it disruptive to wait for a build to complete every time the protected branch is updated.
-   - **After `n` hours if `branch name` has been updated**: This option expires the current policy status when the protected branch updates if the passing build is older than the threshold entered. This option is a compromise between always requiring a build when the protected branch updates and never requiring one. This choice is excellent for reducing the number of builds when your protected branch has frequent updates.
-   - **Never**: Updates to the protected branch don't change the policy status. This value reduces the number of builds for your branch. It can cause problems when closing pull requests that haven't updated recently.
-  
-1. Enter an optional **Display name** for this build policy. This name identifies the policy on the **Branch policies** page. If you don't specify a display name, the policy uses the build pipeline name.
+   :::image type="content" source="media/branch-policies/add-build-policy-menu-2020.png" alt-text="Build policy settings":::
+
+   - Select the **Build pipeline**.
+   - Optionally set a **Path filter**. Learn more about [path filters](#path-filters) in branch policies.
+   - Under **Trigger**, select **Automatic (whenever the source branch is updated)** or **Manual**.
+   - Under **Policy requirement**, select **Required** or **Optional**. If you choose **Required**, builds must complete successfully to complete PRs. Choose **Optional** to provide a notification of the build failure but still allow PRs to complete.
+   - Set a build expiration to make sure updates to your protected branch don't break changes for open PRs.
+
+     - **Immediately when \<branch name> is updated**: This option sets PR build policy status to *failed* whenever the branch is updated, and requeues a build. This setting ensures that the PR changes build successfully even if the protected branch changes. This option is best for teams whose important branches have few changes. Teams working in busy development branches may find it disruptive to wait for a builds every time the branch updates.
+     - **After \<n> hours if \<branch name> has been updated**: This option expires the current policy status when the protected branch updates if the passing build is older than the threshold you enter. This option is a compromise between always or never requiring a build when the protected branch updates. This choice reduces the number of builds when your protected branch has frequent updates.
+     - **Never**: Updates to the protected branch don't change the policy status. This value reduces the number of builds, but can cause problems when completing PRs that haven't updated recently.
+
+   - Enter an optional **Display name** for this build policy. This name identifies the policy on the **Branch policies** page. If you don't specify a display name, the policy uses the build pipeline name.
+
 1. Select **Save**.
 
-When the owner pushes changes that build successfully, the policy status is updated. If you have an **Immediately when `branch name` is updated** or **After `n` hours if `branch name` has been updated** build policy chosen, the policy status updates when the protected branch is updated if the most recent build is no longer valid.
+When the PR owner pushes changes that build successfully, the policy status updates. If you have an **Immediately when \<branch name> is updated** or **After \<n> hours if \<branch name> has been updated** build policy, the policy status updates when the protected branch updates, if the most recent build is no longer valid.
 
 ::: moniker-end
 
