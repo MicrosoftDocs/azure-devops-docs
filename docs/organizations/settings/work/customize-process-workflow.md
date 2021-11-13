@@ -162,7 +162,7 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 
 1. From the Remove State dialog, click <strong>Remove</strong>.   
 
-	<img src="media/process/workflow-remove-state-warning.png" alt="Remove state warning dialog box" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/process/workflow-remove-state-warning.png" alt="Remove state warning dialog box" />  
 
 
 ## View the State workflow model 

@@ -89,7 +89,7 @@ Requires TFS 2013.4 or later version.
 
 3. From the **Overview** tab, choose the team whose settings you want to configure, and then choose **Settings**. Select the option you want. Your changes are automatically saved.   
 
-	<img src="media/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />  
+	<img src="media/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" />  
 
 4. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
 

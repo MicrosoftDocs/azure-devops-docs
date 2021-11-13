@@ -22,7 +22,7 @@ Welcome to what's new in the Azure DevOps docs from June 1, 2020 through June 30
 
 ### Updated articles
 
-- [Filter your Kanban board](/azure/devops/boards/boards/filter-kanban-board) - Updates to reflect Parent filter
+- Filter your Kanban board - Updates to reflect Parent filter
 - [Azure Boards documentation](/azure/devops/boards/index) - Azure Boards index refresh
 - [Azure Boards with Microsoft Teams](/azure/devops/boards/integrations/boards-teams) - Multi tenant support
 

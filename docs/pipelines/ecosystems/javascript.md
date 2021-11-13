@@ -215,7 +215,7 @@ Update the following snippet in your `azure-pipelines.yml` file to select the ap
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-latest' # examples of other options: 'macOS-10.15', 'vs2017-win2016'
+  vmImage: 'ubuntu-latest' # examples of other options: 'macOS-10.15', 'windows-latest'
 ```
 
 Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - are pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. For the exact version of Node.js and npm that is preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process. 
@@ -485,14 +485,21 @@ To publish the results, use the [Publish Test Results](../tasks/test/publish-tes
   condition: succeededOrFailed()
   inputs:
     testRunner: JUnit
-    testResultsFiles: '**/TEST-RESULTS.xml'
+    testResultsFiles: '**/test-results.xml'
 ```
 
 ### Publish code coverage results
 
 If your test scripts run a code coverage tool such as [Istanbul](https://github.com/istanbuljs), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results along with your test results. When you do this, you can find coverage metrics in the build summary and download HTML reports for further analysis. The task expects Cobertura or JaCoCo reporting output, so ensure that your code coverage tool runs with the necessary options to generate the right output. (For example, `--report cobertura`.)
 
+The example below uses [nyc](https://github.com/istanbuljs/nyc), the Istanbul command line interface, along with [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter) and invokes `npm test` command.
+
 ```yaml
+- script: |
+    nyc --reporter=cobertura --reporter=html \
+    npm test -- --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results.xml
+  displayName: 'Build code coverage report'
+
 - task: PublishCodeCoverageResults@1
   inputs: 
     codeCoverageTool: Cobertura # or JaCoCo

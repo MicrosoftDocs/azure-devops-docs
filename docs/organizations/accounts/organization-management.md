@@ -143,61 +143,60 @@ You can then pay for more users with Basic access, buy more services, and purcha
 
 ## Additional administrative tasks
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%">
-<h4>Manage access</h4>
-<ul>
-<li><a href="add-external-user.md">Add external users</a></li>
-<li><a href="/visualstudio/subscriptions/vs-alternate-identity?toc=%2Fazure%2Fdevops%2Forganizations%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fbreadcrumb%2Ftoc.json" >Link work accounts to Visual Studio subscriptions</a></li>
-<li><a href="delete-organization-users.md">Remove users</a></li>
-<li><a href="change-application-access-policies.md">Change app access policies</a></li>
-<li><a href="use-personal-access-tokens-to-authenticate.md">Authenticate with PATs</a></li>
-<li><a href="admin-revoke-user-pats.md">Revoke user PATs</a>
-</ul>
-<h4>Manage Azure AD access</h4>
-<ul>
-<li><a href="add-external-user.md">Remove Azure DevOps users</a></li>
-<li><a href="disconnect-organization-from-azure-ad.md" >Disconnect from Azure AD</a></li>
-<li><a href="change-azure-ad-connection.md">Change your Azure AD tenant connection</a></li>
-<li><a href="azure-ad-tenant-policy-restrict-org-creation.md">Restrict organization creation with tenant policy</a></li>
-</ul>
-<h4>Manage group-based licensing</h4>
-<ul>
-<li><a href="assign-access-levels-by-group-membership.md">Add a group rule to assign access levels and extensions</a></li>
-</ul>
-</td>
-<td width="33%">
-<h4>Organization settings</h4>
-<ul>
-<li><a href="change-organization-ownership.md" >Change organization Owner</a></li>
-<li><a href="rename-organization.md">Rename organization</a></li>
-<li><a href="delete-your-organization.md">Delete an organization</a></li>
-<li><a href="recover-your-organization.md">Recover a deleted organization</a></li>
-<li><a href="change-organization-location.md">Change location (region)</a></li>
-<li><a href="add-privacy-policy-url.md">Add privacy policy URL</a>
-<li><a href="change-time-zone.md">Change time zone</a></li>
-</ul>
-<h4>Manage extensions</h4>
-<ul>
-<li><a href="../../marketplace/install-extension.md" >Install extensions</a></li>
-<li><a href="/azure/devops/marketplace/request-extensions">Approve requests for extensions</a></li>
-<li><a href="../../marketplace/uninstall-disable-extensions.md">Uninstall or disable extensions</a></li>
-</td>
-<td width="33%">
-<h4>Manage permissions</h4>
-<ul>
-<li><a href="../security/set-project-collection-level-permissions.md" >Add project or organization-level administrators </a></li>
-<li><a href="../settings/add-team-administrator.md">Add a team admin</a></li>
-<li><a href="../security/change-individual-permissions.md">Change individual permissions</a></li>
-<li><a href="../security/restrict-access.md">Grant or restrict permissions</a></li>
-<li><a href="../projects/resources-granted-to-project-members.md">Resources granted to project members</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="1":::
+   
+   #### Manage access
+   
+   - [Add external users](add-external-user.md)
+   - [Link work accounts to Visual Studio subscriptions](/visualstudio/subscriptions/vs-alternate-identity?toc=%2Fazure%2Fdevops%2Forganizations%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fbreadcrumb%2Ftoc.json)
+   - [Remove users](delete-organization-users.md)
+   - [Change app access policies](change-application-access-policies.md)
+   - [Authenticate with PATs](use-personal-access-tokens-to-authenticate.md)
+   - [Revoke user PATs](admin-revoke-user-pats.md)
+   
+   #### Manage Azure AD access
+   
+   - [Remove Azure DevOps users](add-external-user.md)
+   - [Disconnect from Azure AD](disconnect-organization-from-azure-ad.md)
+   - [Change your Azure AD tenant connection](change-azure-ad-connection.md)
+   - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
+   
+   #### Manage group-based licensing
+   
+   - [Add a group rule to assign access levels and extensions](assign-access-levels-by-group-membership.md)
+   
+   :::column-end:::
+   :::column span="1":::
+   
+   #### Organization settings
+   
+   - [Change organization Owner](change-organization-ownership.md)
+   - [Rename organization](rename-organization.md)
+   - [Delete an organization](delete-your-organization.md)
+   - [Recover a deleted organization](recover-your-organization.md)
+   - [Change location (region)](change-organization-location.md)
+   - [Add privacy policy URL](add-privacy-policy-url.md)
+   - [Change time zone](change-time-zone.md)
+   
+   #### Manage extensions
+   
+   - [Install extensions](../../marketplace/install-extension.md)
+   - [Approve requests for extensions](../../marketplace/request-extensions.md)
+   - [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)
+   :::column-end:::
+   :::column span="1":::
+   
+   #### Manage permissions
+   
+   - [Add project or organization-level administrators ](../security/set-project-collection-level-permissions.md)
+   - [Add a team admin](../settings/add-team-administrator.md)
+   - [Change individual permissions](../security/change-individual-permissions.md)
+   - [Grant or restrict permissions](../security/restrict-access.md)
+   - [Resources granted to project members](../projects/resources-granted-to-project-members.md)
+   
+   :::column-end:::
+:::row-end:::
 
 ## Related articles
 

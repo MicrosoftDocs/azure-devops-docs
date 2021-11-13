@@ -3,7 +3,7 @@ title: Deploy to Azure MySQL
 description: Deploy to an Azure MySQL database from Azure Pipelines
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.topic: quickstart
-ms.date: 07/09/2021
+ms.date: 09/03/2021
 ms.author: jukullam
 author: JuliaKM
 monikerRange: '=azure-devops'
@@ -13,7 +13,7 @@ monikerRange: '=azure-devops'
 
 Get started with [Azure Database for MySQL](/azure/mysql/) by deploying a database update with Azure Pipelines. Azure Database for MySQL is a relational database service in the Microsoft cloud. This quickstart walks through updating a single-server database. 
 
-You'll use the [Azure Database for MySQL Deployment task](../tasks/deploy/azure-mysql-deployment.md). 
+You'll use the [Azure Database for MySQL Deployment task](../tasks/deploy/azure-mysql-deployment.md). The Azure Database for MySQL Deployment task only works with [Azure Database for MySQL Single Server](/azure/mysql/single-server-overview).
 
 ## Prerequisites
 

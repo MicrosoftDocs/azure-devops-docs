@@ -770,7 +770,9 @@ Update GroupsandPermissions.xml to use sprints.
 <a id="link-types"></a>
 
 ## Link types
-<span style="color:red; font-size:1.1em;">*Custom link types aren't supported in the current import process feature.*</span>
+
+> [!NOTE]
+> Custom link types aren't supported in the current import process. 
 
 <a id="TF402561"></a>
 
@@ -805,7 +807,8 @@ The following `LINKTYPE` element statements within the WorkItems.xml plug-in fil
 
 ## Global lists
 
-<span style="color:red; font-size:1.1em;">*Global lists aren't supported in the current import process feature.*</span>
+> [!NOTE]   
+> Global lists aren't supported in the current import process feature. 
 
 <a id="TF402564"></a>
 

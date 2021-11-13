@@ -1,6 +1,6 @@
 ---
 title: Rebuild the client cache
-titleSuffix: TFS  
+titleSuffix: Azure DevOps Server 
 description: Update the data cache on client computers after certain maintenance operations.
 ms.technology: devops-agile
 ms.custom: witadmin

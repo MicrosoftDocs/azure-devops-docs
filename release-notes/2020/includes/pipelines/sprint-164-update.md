@@ -27,7 +27,7 @@ While executing deployment strategies, you can access output variables across jo
 // Set an output variable in a lifecycle hook of a deployment job executing canary strategy
 - deployment: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   environment: staging
   strategy:                  
     canary:      
@@ -43,7 +43,7 @@ While executing deployment strategies, you can access output variables across jo
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   variables:
     myVarFromDeploymentJob: $[ dependencies.A.outputs['deploy_10.setvarStep.myOutputVar'] ]
   steps:

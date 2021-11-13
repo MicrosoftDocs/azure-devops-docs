@@ -2,13 +2,13 @@
 title: Add a user who can set up billing for Azure DevOps
 titleSuffix: Azure DevOps Services
 description: Add a user who can set up and manage billing for Azure DevOps.
-ms.custom: seodec18
+ms.custom: seodec18, freshness-fy22
 ms.technology: devops-billing
 ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 12/10/2019
+ms.date: 11/11/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -16,10 +16,20 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-Learn how to let a user [set up billing](set-up-billing-for-your-organization-vs.md) or [change billing](change-azure-subscription.md) for your organization. Go to the **Subscriptions** tab and
-add [**Owner**](/azure/role-based-access-control/built-in-roles#owner), [**Contributor**](/azure/role-based-access-control/built-in-roles#contributor), [**Service admin**](/azure/billing/billing-add-change-azure-subscription-administrator), or [**Co-admin**](/azure/billing/billing-add-change-azure-subscription-administrator) roles to users in the Azure subscription that your organization uses for Azure DevOps billing.
+Give another user access, so they can [set up billing](set-up-billing-for-your-organization-vs.md) or [change billing](change-azure-subscription.md) for your organization. You can add any of the following roles to a user within the Azure subscription your organization uses for billing.
+
+- [Owner](/azure/role-based-access-control/built-in-roles#owner)
+- [Contributor](/azure/role-based-access-control/built-in-roles#contributor)
+- [Service admin](/azure/billing/billing-add-change-azure-subscription-administrator)
+- [Co-admin](/azure/billing/billing-add-change-azure-subscription-administrator)
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
+
+## Prerequisites
+
+- You must be the subscription administrator to give another user access to change or set up billing.
+
+## Give a user access to set up or change billing
 
 1. [Sign in to the Azure portal](https://portal.azure.com/) as the Azure subscription administrator.
 
@@ -53,7 +63,7 @@ A user who can [set up](set-up-billing-for-your-organization-vs.md) or [change b
 ## Related articles
 
 * [Set up billing](set-up-billing-for-your-organization-vs.md)
-* [Change the Azure subscription for billing](change-azure-subscription.md)
+* [Change your Azure subscription for billing](change-azure-subscription.md)
 * [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
 

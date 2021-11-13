@@ -4,7 +4,7 @@ description: Find reference material and overviews of the basic patterns for usi
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.custom: has-adal-ref
+ms.custom: 
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley

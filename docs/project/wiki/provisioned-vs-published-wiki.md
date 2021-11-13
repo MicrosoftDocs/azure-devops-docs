@@ -58,7 +58,6 @@ For example, the **Edit in Repos** option for the publish code as wiki takes you
 - [Link to work items using #](wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
 - [Attach files](markdown-guidance.md#attach)
 - [Filter Wiki contents](filter-print-wiki.md)
-- [Wiki search](search-wiki.md)  
 - [Print a Wiki page](filter-print-wiki.md)
 - [Update content offline](wiki-update-offline.md)
 - [Add or edit pages from the Wiki](add-edit-wiki.md)

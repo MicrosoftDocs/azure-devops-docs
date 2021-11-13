@@ -24,7 +24,7 @@ To support your work tracking requirements, you can customize each WIT to add cu
 
 For example, the following form shows that two custom pages have been added, **Impact** and **Mitigation**. In addition, several new groups and fields have been added to the Details page.  
 
-<img src="media/process/cpform-customized-form-intro.png" alt="Customized user story form" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/process/cpform-customized-form-intro.png" alt="Customized user story form" /> 
 
 Once you've added a custom page or group, you can add [custom fields to those pages or groups](customize-process-field.md). To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
@@ -43,13 +43,13 @@ You can add your own custom groups to both inherited pages and custom pages.
 
 1. From the Layout page, choose **New group**.    
 
-	<img src="media/process/cpform-new-group.png" alt="Process>Work Item Types>Bug>Layout>Add new group" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/process/cpform-new-group.png" alt="Process>Work Item Types>Bug>Layout>Add new group" /> 
 
 	If the <strong>New field</strong> and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
 2. Name the group and choose the column it should appear in. For information about columns, see [About process customization and inherited processes, Layout and resizing](inheritance-process-model.md#resizing).   
 
-	<img src="media/process/cpform-add-group-dialog.png" alt="Add custom group dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/process/cpform-add-group-dialog.png" alt="Add custom group dialog" />
 
 	<a id="edit-group"></a>
 3. (Optional) Once you've added the group, you can drag and drop the group into any column or within the column, or select the Move Up or Move Down options from the group's &hellip; context menu.  
@@ -77,7 +77,7 @@ To move a field to another page, choose Edit from the field's &hellip; context m
 
 Here we move the Customer ticket field to the Details page and the Customer focus group.   
 
-<img src="media/process/cpform-move-field-to-custom-group.png" alt="Edit field dialog, Move field to custom group" style="border: 2px solid #C3C3C3;" />
+<img src="media/process/cpform-move-field-to-custom-group.png" alt="Edit field dialog, Move field to custom group" />
  
 
 <a id="show-hide-remove-field"></a>
@@ -92,7 +92,7 @@ For an inherited field, open the field's &hellip; context menu, and then choose 
 
 Here we remove the Severity inherited field from appearing on the Bug form.   
 
-<img src="media/process/cpform-hide-layout.png" alt="Layout, Inherited Field, Context Menu, Hide from layout" style="border: 2px solid #C3C3C3;" />
+<img src="media/process/cpform-hide-layout.png" alt="Layout, Inherited Field, Context Menu, Hide from layout" />
 
 Removing a custom field from a form removes tracking data for the WIT. You can re-add a custom field to a WIT by adding it to a form as an existing field. 
 
@@ -112,7 +112,7 @@ Add a custom page when you have several custom fields that you want to group wit
 
 1. Label the page.
 
-	<img src="media/process/cpform-add-page-dialog.png" alt="Process, Work Item Types, Bug: Layout, Add a page to bug dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/process/cpform-add-page-dialog.png" alt="Process, Work Item Types, Bug: Layout, Add a page to bug dialog" />
 
 	<a id="edit-page"></a>
 2. Edit the page to add [fields](customize-process-field.md) or [groups](#groups).  

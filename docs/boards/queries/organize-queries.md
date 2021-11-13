@@ -1,7 +1,7 @@
 ---
-title: Organize and view queries, create query folders 
+title: Manage and organize your queries in Azure Boards and Azure DevOps
 titleSuffix: Azure Boards  
-description: Manage your queries by using favorites and folders in Azure Boards, Azure DevOps, & Team Foundation Server
+description: Learn how to manage your queries by using favorites and folders in Azure Boards and Azure DevOps.
 ms.custom: boards-queries 
 ms.technology: devops-agile
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
@@ -9,11 +9,11 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/27/2021
+ms.date: 10/24/2021
 ---
 
 
-# Manage and organize queries   
+# Manage and organize queries in Azure Boards and Azure DevOps  
 
 [!INCLUDE [temp](../includes/version-all.md)]
 [!INCLUDE [temp](../includes/version-visual-studio.md)]
@@ -26,7 +26,7 @@ Organize your personal or shared queries by adding a query folder. You can then 
  
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
-## Open Queries 
+## Open a query 
 
 [!INCLUDE [temp](../includes/open-queries.md)] 
 
@@ -103,7 +103,7 @@ Specify the file name and folder location to use to save the query.
 :::image type="content" source="media/organize-queries/visual-studio-save-query-as-dialog.png" alt-text="Screenshot, Visual Studio, Save Query As dialog.":::
 
 
-To save the query as a .wiq file, choose the **File** radio button and specify the file location. 
+To save the query as a `.wiq` file, choose the **File** radio button and specify the file location. 
 
 :::image type="content" source="media/organize-queries/visual-studio-save-query-as-wiq-file.png" alt-text="Screenshot, Visual Studio, Save Query As a WIQ file dialog.":::
 
@@ -126,7 +126,7 @@ From either the **Favorites** or **All** page, choose the  :::image type="icon" 
 
 ![New query experience, Favorites page, query context menu](media/view-run-queries/query-context-menu-favorites-page.png)  
 
-For shared queries, you can also choose to perform one of these tasks: 
+For shared queries, you can also choose to do one of these tasks: 
 - **Add to team queries**: Select the team to add the query as a team favorite
 - **Security...**: to set permissions for the query. To learn more, see [Set query permissions](set-query-permissions.md).   
 - **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
@@ -152,7 +152,7 @@ From the **Work Items** page, open the context menu for the query you want to ru
 
 * * * 
  
-## Add a query folder, move items into a folder 
+## Add a query folder and move items into a folder 
 
 > [!TIP]   
 > You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to. To view or set permissions, see [Set permissions on queries and query folders](set-query-permissions.md).
@@ -174,13 +174,13 @@ You add query folders from the **Boards>Queries>All** page.
 
 2. Enter the name for the folder in the New folder dialog. If you want to change the location of the folder, select it from the Folder drop down menu.  
 
-	<img src="media/organize-queries/new-folder-dialog.png" alt="Enter the name and location of the folder." style="border: 2px solid #C3C3C3;" />
+	<img src="media/organize-queries/new-folder-dialog.png" alt="Enter the name and location of the folder." />
 
 3. To move items into a folder, drag-and-drop a query onto the folder. 
 
 	Optionally, you can choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, choose **Edit**, and then choose **Save As**. In the Save query as dialog, choose the folder you want to save the query in. 
 
-	<img src="media/organize-queries/save-query-as-dialog.png" alt="Save query as dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/organize-queries/save-query-as-dialog.png" alt="Save query as dialog" />
   
 ::: moniker-end
 

@@ -1,6 +1,6 @@
 ---
 title: Remove work items permanently
-titleSuffix: TFS  
+titleSuffix: Azure DevOps Server 
 description: Permanently delete work items added to Team Foundation Server
 ms.technology: devops-agile
 ms.custom: witadmin
@@ -19,7 +19,7 @@ ms.date: 07/12/2018
 You can permanently remove work items from the on-premises Azure DevOps work tracking data store by using the **witadmin destroywi** command. Work items whose state is set to Closed remain in the database and can be reactivated. Use this command to permanently delete work items, after which you can't restore or reactivate them.  
 
 > [!NOTE]
-> This command has been deprecated for TFS 2018.2 and later versions. Instead, you can use the [Recycle bin](../../boards/backlogs/remove-delete-work-items.md#restore) to permanently delete work items, or use [REST API `DELETE`](/rest/api/azure/devops/wit/work%20items/delete).
+> This command has been deprecated for TFS 2018.2 and later versions. Instead, you can use the [Recycle bin](../../boards/backlogs/remove-delete-work-items.md#restore) to permanently delete work items, or use [REST API `DELETE`](/rest/api/azure/devops/wit/work-items/delete).
 
 You can run **witadmin destroywi** against an on-premises Azure DevOps Server only. 
 
@@ -64,7 +64,7 @@ or, `TeamExplorer`, `Professional` or `Enterprise` in place of `Community`, depe
 
 On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**. You can [install Visual Studio Community (which provides access to Team Explorer) or Visual Studio Team Explorer 2017](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) for free. 
 
-## Prerequistes
+## Prerequisites
   
 -  You must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the project collection. See [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
   

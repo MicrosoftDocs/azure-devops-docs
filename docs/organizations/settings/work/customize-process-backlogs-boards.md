@@ -50,6 +50,14 @@ To learn more about what you can customize, see [About process customization and
 ## Add a system work item type to a backlog  
 
 If you want to track Issues or Impediments or other inherited work item types within a backlog or board, you can by editing the corresponding backlog. The following table lists the available work item types you can add to a backlog. 
+::: moniker-end 
+
+::: moniker range="azure-devops-2020"
+> [!NOTE]   
+> This feature requires Azure DevOps Server 2020.1 update or later version.
+::: moniker-end 
+
+::: moniker range=">= azure-devops-2020"
 
 ---
 :::row:::

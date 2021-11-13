@@ -1,7 +1,7 @@
 ---
 title: Import and export global workflow using witadmin
-titleSuffix: TFS  
-description: Manage the global workflow to minimize the work required by defining and updating the work item fields and global lists that multiple projects and types of work items share - Team Foundation Server (TFS)
+titleSuffix: Azure DevOps Server 
+description: Manage the global workflow to minimize the work required by defining and updating the work item fields and global lists that multiple projects and types of work items share 
 ms.technology: devops-agile
 ms.custom: witadmin
 ms.assetid: ac1a2973-6c8f-439d-bb7d-e141aaadc124

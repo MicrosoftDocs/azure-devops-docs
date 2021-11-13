@@ -6,8 +6,8 @@ ms.technology: devops-test
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
-ms.date: 06/02/2019
 monikerRange: '>= tfs-2015'
+ms.date: 09/14/2021
 ---
 
 # Install the Test &amp; Feedback extension
@@ -20,7 +20,7 @@ marketing teams, early adopters, and other stakeholders can use the
 extension to submit bugs or provide feedback and contribute to the 
 quality of your product. 
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+[!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
 
 <a name="installext"></a>
 
@@ -96,7 +96,7 @@ update it automatically.
 If you have problems connecting to Azure DevOps or TFS, you may find
 the topic [TF31002: Unable to connect](../organizations/projects/tf31002-unable-connect-tfs.md) useful.
 
-## See also
+## Related articles
 
 *  [FAQs for manual testing](reference-qa.md#tandfext)
 

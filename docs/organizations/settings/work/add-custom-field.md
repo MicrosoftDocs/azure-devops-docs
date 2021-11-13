@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/17/2020
+ms.date: 08/16/2021
 ---
 
 # Add a custom field to a work item type (Inheritance process)    
 
 [!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
-You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
+You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [View work item fields and attributes](../../../boards/work-items/work-item-fields.md). For a description of each field defined with a system process, see [Work item field index](../../../boards/work-items/guidance/work-item-field.md). 
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
@@ -58,14 +58,14 @@ You always add a field to an existing work item type.
 
 	Here we add an Integer field labeled Customer Ticket. 
 
-    <img src="media/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" style="border: 1px solid #C3C3C3;" /> 
+    <img src="media/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" /> 
 
 	Additional data types you can add include: [Picklist](customize-process-field.md#add-a-picklist), [Identity](customize-process-field.md#add-an-identity-field), [Rich-text, HTML](customize-process-field.md#add-a-rich-text-html-field), and [Checkbox](customize-process-field.md#add-a-checkbox-field).  
 
 	<a id="options">  </a>  
 1.	(Optional) On the **Options** tab, indicate if the field is required and specify a default value. Or leave these blank. 
 
-	<img src="media/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" />  
 
 	By making a field Required, users must specify a value for the field in order to save it. The default value you specify is set when you create a work item as well as every time a work item is opened and the field is empty.
 
@@ -74,7 +74,7 @@ You always add a field to an existing work item type.
 
 	Here, we add the Customer Ticket field to a new group labeled Customer focus. 
 
-	<img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" />  
 
 1.	Choose **Add field** to complete adding the field. If you haven't specified it's layout location, it is added to the first group of fields on the layout form.  
 
@@ -147,6 +147,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
+- [View work item fields and attributes](../../../boards/work-items/work-item-fields.md)
 - [Add and manage fields for an inherited process](customize-process-field.md#show-hide-field) 
 - [Customize a project using an inherited process](customize-process.md)
 - [Create and manage inherited processes](manage-process.md)

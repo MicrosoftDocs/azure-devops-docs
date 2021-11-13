@@ -13,17 +13,19 @@ ms.date: 10/20/2020
 # Use the Cross-platform CLI for Azure DevOps using personal access tokens (PATs)
 
 [!INCLUDE [version-all](../../../includes/version-all.md)]
- 
 
 - You can download the latest version of **Node.js source code**, from the [Node.js source code downloads page](https://nodejs.org/en/download/)
 - Install the **Cross-platform CLI for Azure DevOps**
   - Install **tfx-cli** using `npm`, a component of Node.js by running:
-    ```no-highlight
+
+   ```no-highlight
     npm i -g tfx-cli 
-    ```
-    To learn more about **tfx-cli**, see the [Node CLI for Azure DevOps on GitHub](https://github.com/Microsoft/tfs-cli).
+   ```
+
+    For more information about **tfx-cli**, see the [Node CLI for Azure DevOps on GitHub](https://github.com/Microsoft/tfs-cli).
 
 ## Personal access token
+
 Start by creating a personal access token and paste it into the sign in command.
 
 ```
@@ -35,33 +37,28 @@ Copyright Microsoft Corporation
 Logged in successfully
 ```
 
-
 Examples of valid URLs are:
 
 - `https://marketplace.visualstudio.com`
 - `https://youraccount.visualstudio.com/DefaultCollection`
 
-
- 
 ## Configure for Basic authentication
 
 > [!IMPORTANT]
 > Basic authentication is not recommended.  Turning on IIS basic authentication causes various issues, and you should 
 > use [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) instead.  For example, if you turn on IIS basic authentication, GIT command line stops working.
 
-
 Follow these steps to enable basic auth for your Azure DevOps instance:
-
 
 > [!WARNING]
 > Basic authentication sends usernames and passwords in plaintext. You should consider [configuring Azure DevOps Server to use SSL](/azure/devops/server/admin/setup-secure-sockets-layer) in order to enable secure communication when using basic auth.
- 
 
 1. Install the `Basic Authentication` feature for IIS in Server Manager
-   <div style="vertical-align:middle;display:block;width:60;margin-left:auto;margin-right:auto">
-   <img alt="Configure basic authentication feature" src="./media/configureBasicAuthFeature.png" style="display:block;padding-bottom:10px;padding-top:10px;margin-left:auto;margin-right:auto">
-   </div>
-2. Open IIS Manager and expand to the <code>Azure DevOps Server</code> website, double-click the <code>Authentication</code> tile in the Features view.
+
+   > [!div class="mx-imgBorder"]  
+   > ![Screenshot of configure basic authentication feature.](./media/configureBasicAuthFeature.png)
+
+2. Open IIS Manager and expand to the `Azure DevOps Server` website, double-click the `Authentication` tile in the Features view.
 
 3. Choose `Basic Authentication` in the list of authentication methods. Choose `Enable` in the right hand column. You should now see `Basic Authentication` enabled.
 
@@ -73,6 +70,7 @@ Follow these steps to enable basic auth for your Azure DevOps instance:
 Now you can start to use `tfx` against your server. You'll want to sign in before issuing commands.
 
 1. Enter the following command:
+
    ```no-highlight
    tfx login --auth-type basic
    ```

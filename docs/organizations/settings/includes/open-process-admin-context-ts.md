@@ -8,8 +8,10 @@ ms.date: 07/17/2020
 <a id="open-process-wit">  </a>
 
 
-## Open Settings>Process
 
+::: moniker range=">= azure-devops-2019"
+## Open Settings>Process
+::: moniker-end
 ::: moniker range="azure-devops"
 
 You create, manage, and make customizations to processes from **Organization settings>Process**. 

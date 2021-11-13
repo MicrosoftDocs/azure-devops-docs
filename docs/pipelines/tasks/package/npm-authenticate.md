@@ -79,12 +79,6 @@ The registry URL pointing to an Azure Artifacts feed may or may not contain the 
 ```
 `OtherOrganizationNpmConnection` and `ThirdPartyRepositoryNpmConnection` are the names of <a href="~/pipelines/library/service-endpoints.md#npm-service-connection">npm service connections</a> that have been configured and authorized for use in your pipeline, and have URLs that match those in the specified `.npmrc` file.
 
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions">Control options</a></th>
-</tr>
-
-</table>
-
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
@@ -139,6 +133,6 @@ If your proxy requires authentication, you may need to add an additional build s
 
 ### My Pipeline needs to access a feed in a different project
 
-If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#pipelines-permissions) for more details.
 
 <!-- ENDSECTION -->

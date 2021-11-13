@@ -12,7 +12,8 @@ monikerRange: '<= azure-devops'
 
 #  Create a new Git repo
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015 | VS 2017 | VS 2015 Update 2**
+[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-vs-2015-vs-2019](../includes/version-vs-2015-vs-2019.md)]
 
 A Git repository, or repo, is a folder that you've told Git to help you track file changes in. 
 You can have any number of repos on your computer, each stored in their own folder. 
@@ -111,6 +112,8 @@ git push origin users/frank/feature
 > You can also create and get repos from the command line or scripts using the [Azure DevOps Services CLI](/cli/azure/?view=azure-cli-latest&preserve-view=true).
 
 * * *
+
+
 ## Next steps
 
 > [!div class="nextstepaction"]

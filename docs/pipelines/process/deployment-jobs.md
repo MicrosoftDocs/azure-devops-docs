@@ -3,7 +3,7 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 07/28/2021
+ms.date: 09/29/2021
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -23,9 +23,9 @@ Deployment jobs provide the following benefits:
  - **Apply deployment strategy**: You define how your application is rolled out.
 
    > [!NOTE] 
-   > We currently support only the *runOnce*, *rolling*, and the *canary* strategies. 
+   > We currently support only the *runOnce*, *rolling*, and the *canary* strategies.  
 
-A deployment job doesn't automatically clone the source repo. You can checkout the source repo within your job with `checkout: self`. 
+A deployment job doesn't automatically clone the source repo. You can checkout the source repo within your job with `checkout: self`. Deployment jobs only support one checkout step. 
 
 ## Schema
 
@@ -35,7 +35,7 @@ Here is the full syntax to specify a deployment job:
 jobs:
 - deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
   displayName: string  # friendly name to display in the UI
-  pool:                # see pool schema
+  pool:                # not required for virtual machine resources
     name: string       # Use only global level variables for defining a pool name. Stage/job level variables are not supported to define pool name.
     demands: string | [ string ]
   workspace:
@@ -55,6 +55,18 @@ jobs:
         steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
 
+There is a more detailed, alternative syntax you can also use for the `environment` property.
+
+```yaml
+environment:
+    name: string # Name of environment.
+    resourceName: string # Name of resource.
+    resourceId: string # Id of resource.
+    resourceType: string # Type of environment resource.
+    tags: string # List of tag filters.
+```
+
+For virtual machines, you do not need to define a pool. Any steps that you define in a deployment job with a virtual machine resource will run against that virtual machine and not against the agent in the pool. For other resource types such as Kubernetes, you do need to define a pool so that tasks can run on that machine.
 ## Deployment strategies
 
 When you're deploying application updates, it's important that the technique you use to deliver the update will: 
@@ -121,7 +133,7 @@ If you are using self-hosted agents, you can use the workspace clean options to 
   jobs:
   - deployment: deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
       workspace:
         clean: all
     environment: staging
@@ -230,7 +242,7 @@ jobs:
 - deployment: DeployWeb
   displayName: deploy Web App
   pool:
-    vmImage: 'Ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   # Creates an environment if it doesn't exist.
   environment: 'smarthotel-dev'
   strategy:
@@ -254,7 +266,7 @@ jobs:
 - deployment: DeployWeb
   displayName: deploy Web App
   pool:
-    vmImage: 'Ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   # Records deployment against bookings resource - Kubernetes namespace.
   environment: 'smarthotel-dev.bookings'
   strategy: 
@@ -384,7 +396,7 @@ While executing deployment strategies, you can access output variables across jo
 # Set an output variable in a lifecycle hook of a deployment job executing canary strategy.
 - deployment: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   environment: staging
   strategy:                  
     canary:      
@@ -400,7 +412,7 @@ While executing deployment strategies, you can access output variables across jo
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   variables:
     myVarFromDeploymentJob: $[ dependencies.A.outputs['deploy_10.setvarStep.myOutputVar'] ]
   steps:
@@ -414,7 +426,7 @@ For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
 # Set an output variable in a lifecycle hook of a deployment job executing runOnce strategy.
 - deployment: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   environment: staging
   strategy:                  
     runOnce:
@@ -429,7 +441,7 @@ For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   variables:
     myVarFromDeploymentJob: $[ dependencies.A.outputs['A.setvarStep.myOutputVar'] ]
   steps:
@@ -445,7 +457,7 @@ stages:
   jobs:
   - deployment: A1
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
     environment: env1
     strategy:                  
       runOnce:
@@ -456,7 +468,7 @@ stages:
           - bash: echo $(System.JobName)
   - deployment: A2
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
     environment: 
       name: env2
       resourceType: virtualmachine
@@ -470,7 +482,7 @@ stages:
   - job: B1
     dependsOn: A1
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
     variables:
       myVarFromDeploymentJob: $[ dependencies.A1.outputs['A1.setvarStep.myOutputVar'] ]
       
@@ -481,7 +493,7 @@ stages:
   - job: B2
     dependsOn: A2
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
     variables:
       myVarFromDeploymentJob: $[ dependencies.A2.outputs['A2.setvarStepTwo.myOutputVar'] ]
       myOutputVarTwo: $[ dependencies.A2.outputs['Deploy_vmsfortesting.setvarStepTwo.myOutputVarTwo'] ]
@@ -516,7 +528,7 @@ stages:
   jobs:
   - deployment: B1
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
     environment: envB
     strategy:                  
       runOnce:
@@ -533,3 +545,6 @@ Learn more about how to [set a multi-job output variable](variables.md#set-a-mul
  
 This can happen when there is a name conflict between two jobs. Verify that any deployment jobs in the same stage have a unique name and that job and stage names do not contain keywords. If renaming does not fix the problem, review [troubleshooting pipeline runs](../troubleshooting/troubleshooting.md).
 
+### Are decorators supported in deployment groups?
+
+No. You can't use decorators in deployment groups.
