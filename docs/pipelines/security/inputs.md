@@ -3,14 +3,18 @@ title: Recommendations to secure variables and parameters in a pipeline
 description: Find out how to safely accept input from pipeline users.
 ms.assetid: ada3e166-c606-48b3-8e5e-7d83b1c1c962
 ms.reviewer: vijayma
-ms.date: 02/04/2020
+ms.date: 08/19/2021
 monikerRange: '> azure-devops-2019'
 ---
 
 # How to securely use variables and parameters in your pipeline
 
-This article discusses how to securely use variables and parameters to gather input from pipeline users.
+This article discusses how to securely use variables and parameters to gather input from pipeline users. If you'd like to learn more about using variables and parameters, see:
 
+* [Define variables](../process/variables.md)
+* [Use predefined variables](../build/variables.md)
+* [Use runtime parameters](../process/runtime-parameters.md)
+* [Template types & usage](../process/templates.md)
 ## Variables
 
 Variables can be a convenient way to collect information from the user up front. 

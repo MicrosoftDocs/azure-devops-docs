@@ -11,7 +11,8 @@ monikerRange: '>= tfs-2018'
 
 
 # Git case sensitivity
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
+
+[!INCLUDE [version-tfs-2018-cloud](../includes/version-tfs-2018-cloud.md)]
 
 The Windows and macOS file systems are case-insensitive (but case-preserving) by default.
 Most Linux filesystems are case-sensitive.

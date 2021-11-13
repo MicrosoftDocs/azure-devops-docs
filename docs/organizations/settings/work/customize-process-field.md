@@ -1,6 +1,6 @@
 ---
 title: Add and manage fields to an inherited process
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps 
 description: Add and manage fields in the web form of a work item type for an Inheritance process 
 ms.custom: inherited-process
 ms.technology: devops-agile
@@ -8,8 +8,8 @@ ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.topic: conceptual
-ms.date: 05/21/2021 
+ms.topic: how-to
+ms.date: 11/04/2021 
 ---
 
 # Add and manage fields (Inheritance process)   
@@ -20,7 +20,7 @@ You can add a custom field to support tracking additional data requirements or m
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
-For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](#review-fields). 
+For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [View work item fields and attributes](../../../boards/work-items/work-item-fields.md#review-fields). 
 
 Once you've added a custom field, you can create [queries](../../../boards/queries/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track data related to it.  
 
@@ -32,23 +32,14 @@ Once you've added a custom field, you can create [queries](../../../boards/queri
 [!INCLUDE [temp](../includes/automatic-update-project.md)] 
 
 
-<a id="review-fields"></a>
-
-## Review fields 
-
-To review the list of fields defined for all processes and the WITs that reference them, choose **Process** and then **Fields**.  
-
-Fields listed correspond to all fields defined for the organization. This includes all custom fields and those defined for system processes. 
-
-For descriptions and usage of each field, as well as the Reference name for each field, you can look it up from the [Work item field index](../../../boards/work-items/guidance/work-item-field.md). You can also get the Reference name of fields from the [Work Item Types Field - List REST API](/rest/api/azure/devops/wit/work%20item%20types%20field/list).
-
-> [!div class="mx-imgBorder"]  
-> ![Make a copy of a selected inherited process](media/process/list-fields.png) 
-
-
 <a id="open-process-wit">  </a>
 <a id="add-field">  </a>
 <a id="add-custom-field">  </a>
+
+
+## Custom field names
+
+When you add a custom field to an inherited process, Azure DevOps assigns a reference name prefixed with *Custom* and then then name of the field with spaces removed. For example, you add a field named DevOps Triage, the reference name is **Custom.DevOpsTriage**. No spaces are allowed within the reference name.  
 
 ## Add a custom field 
 
@@ -78,19 +69,19 @@ You can add fields and specify the group and page where they should appear. Also
 	
 	Here we add an Integer field labeled Customer Ticket. 
 
-    <img src="media/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" style="border: 1px solid #C3C3C3;" /> 
+    <img src="media/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" /> 
 
 	<a id="options">  </a>
 1.	(Optional) On the <strong>Options</strong> tab, indicate if the field is required and specify a default value. Or leave the values blank. By making a field **Required**, users must specify a value for the field to save the work item. When you create a work item as well as every time someone opens a work item  and the field is empty, the default value is set.  
 
-	<img src="media/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" />  
 
 	<a id="layout">  </a>
 1.	(Optional) On the <strong>Layout</strong> tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form.
 
 	Here, we add the Customer Ticket field to a new group labeled Customer focus. 
 
-	<img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" />  
 
 	> [!NOTE]    
 	> While you can change the form label, you must use the field name when you are adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [Taskboard](../../../boards/sprints/customize-taskboard.md)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
@@ -184,7 +175,7 @@ Use an Identity-based field to add a field similar to the Assigned To field. Ide
 
 2. Choose Boolean as the type, and give it a label. Here we label the field as Triaged to track the triage state of the bug.  
 
-	<img src="media/process/cpfield-add-boolean-field-to-bug.png" alt="Add a boolean field" style="border: 1px solid #C3C3C3;" />   
+	<img src="media/process/cpfield-add-boolean-field-to-bug.png" alt="Add a boolean field" />   
 
 3. (Optional) Open the <strong>Options</strong> tab and specify if the field should be required. 
 
@@ -315,7 +306,7 @@ You can choose to show or hide an inherited field or a custom control from appea
 
 2. Confirm that you want to remove the field.  
 
-	<img src="media/process/customize-process-remove-field-confirm.png" alt="Confirm to remove field from the bug work item form" style="border: 1px solid #C3C3C3;" />   
+	<img src="media/process/customize-process-remove-field-confirm.png" alt="Confirm to remove field from the bug work item form" />   
 
 1. To add a custom field that's been removed, choose **New field** and select **Use an existing field**.  
 
@@ -351,6 +342,7 @@ Deleting a field deletes all data associated with that field, including historic
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
+- [View work item fields and attributes](../../../boards/work-items/work-item-fields.md)
 - [Add or modify a custom work item type](customize-process-work-item-type.md)
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)    

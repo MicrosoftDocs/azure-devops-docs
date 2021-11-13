@@ -58,7 +58,7 @@ You can create an inherited process from any one of the four system processes:[B
 
 1. Enter a name for your process and optionally a description. (For naming restrictions, see [About process customization and inherited processes, Process name restrictions](inheritance-process-model.md#process-naming).
 
-   <img src="media/process/mprocess-create-inherited-process-dialog.png" alt="Create inherited process dialog" style="border: 1px solid #C3C3C3;" />  
+   <img src="media/process/mprocess-create-inherited-process-dialog.png" alt="Create inherited process dialog" />  
 
 Once you've defined the inherited process, you can perform these actions: 
 - [Customize a project using an inherited process](customize-process.md)   
@@ -148,9 +148,9 @@ It's a good practice to test the customizations you make before rolling out the 
 	
 1. Make your changes to the copied process. Since no project is using this process, these changes do not impact any project. 
 
-1. To verify your changes, create a test project based on the copied and updated process. If you have already created a test project, change the process of the test project using the [**Change project to use <process name>**](#migrate) option from the context menu. 
+1. To verify your changes, create a test project based on the copied and updated process. If you have already created a test project, change the process of the test project using the [**Change project to use <em>ProcessName</em>**](#migrate) option from the context menu. 
 
-1. Once you have fully tested your customizations, you're ready to roll out your changes to all projects. To do this, change the process of the projects which need the new changes. Select the [**Change project to use <process name>**](#migrate) option from the context menu.  
+1. Once you have fully tested your customizations, you're ready to roll out your changes to all projects. To do this, change the process of the projects which need the new changes. Select the [**Change project to use <em>ProcessName</em>**](#migrate) option from the context menu.  
 
 1.  Disable or delete the original process. 
  

@@ -90,7 +90,7 @@ This YAML example deploys to an Azure Web App container (Linux).
 
 ```YAML
 pool:
-  vmImage: Ubuntu-16.04
+  vmImage: ubuntu-latest
 
 variables:
   azureSubscriptionEndpoint: Contoso

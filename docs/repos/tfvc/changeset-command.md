@@ -28,6 +28,8 @@ tf changeset [/comment:("comment"|@commentfile)]
 
 ## Parameters
 
+### Argument
+
 |          **Argument**          |                                                                                               **Description**                                                                                               |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |           *comment*            |                                                                                   Provides a comment about the check-in.                                                                                    |
@@ -37,6 +39,9 @@ tf changeset [/comment:("comment"|@commentfile)]
 |   *TeamProjectCollectionUrl*   | The URL of the project collection that contains a changeset about which you want to display information or whose attributes you want to modify (for example, http://myserver:8080/tfs/DefaultCollection). |
 |           *username*           |                                            Provides a value to the **/user** option. You can specify this argument as either *Domain*\*UserName\* or *UserName*.                                            |
 |       *changesetnumber*        |                                                            Identifies the changeset to be reviewed or modified. Cannot be used with **/latest**.                                                            |
+
+
+### Option
 
 | **Option** | **Description** |
 |---|---|

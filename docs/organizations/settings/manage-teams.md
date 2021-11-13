@@ -205,14 +205,14 @@ For more information on each configuration option, see the following articles:
       ::: moniker range=">= tfs-2017"
       - [Add fields](../../boards/boards/customize-cards.md)
       - [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)
-      - [Add tag colors](../../boards/boards/customize-cards.md#color-code-tags)
+      - [Add tag colors](../../boards/boards/customize-cards.md#assign-a-color-to-a-tag)
       - [Enable annotations](../../boards/boards/customize-cards.md#enable-annotations)
       - [Configure inline tests](../../boards/boards/customize-cards.md#configure-inline-tests)
       ::: moniker-end
       ::: moniker range="< tfs-2017"
       - [Add fields](../../boards/boards/customize-cards.md)
       - [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)
-      - [Add tag colors](../../boards/boards/customize-cards.md#color-code-tags)
+      - [Add tag colors](../../boards/boards/customize-cards.md#assign-a-color-to-a-tag)
       ::: moniker-end
    :::column-end:::
    :::column span="1":::

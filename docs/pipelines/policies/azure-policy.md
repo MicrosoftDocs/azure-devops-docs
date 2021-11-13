@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 03/21/2019
+ms.date: 10/11/2021
 monikerRange: azure-devops
 ---
 
@@ -38,6 +38,9 @@ and [Create and manage policies to enforce compliance](/azure/governance/policy/
    ![Azure Policy Gate](media/azure-policy/azure-policy-gate.png)
 
 ## Validate for any violation(s) during a release
+
+> [!NOTE]
+> Use the [AzurePolicyCheckGate](../tasks/deploy/azure-policy.md) task to check for policy compliance in YAML. This task can only be used as a gate and not in a build or a release pipeline.
 
 1. Navigate to your team project in Azure DevOps.
 

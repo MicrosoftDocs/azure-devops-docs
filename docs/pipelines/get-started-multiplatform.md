@@ -45,11 +45,11 @@ You're going to add jobs that run on three platforms.
 strategy:
   matrix:
     linux:
-      imageName: 'ubuntu-16.04'
+      imageName: 'ubuntu-latest'
     mac:
-      imageName: 'macos-10.14'
+      imageName: 'macOS-latest'
     windows:
-      imageName: 'vs2017-win2016'
+      imageName: 'windows-latest'
 
 pool:
   vmImage: $(imageName)

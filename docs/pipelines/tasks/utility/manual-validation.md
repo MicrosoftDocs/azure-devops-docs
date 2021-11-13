@@ -6,7 +6,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: moala
 author: Raiyan
-ms.date: 11/30/2020
+ms.date: 08/25/2021
 ---
 
 # Manual Validation task
@@ -25,7 +25,7 @@ This task is supported only in YAML pipelines. Can be used only in an [agentless
 | --- | --- |
 | **instructions** | Optional. The instruction text to display to the user when the task is activated. |
 | **notifyUsers** | Optional. The list of users that will be notified that the task has been activated. |
-| **onTimeout** | Required. The action to take (reject or resume) if the task times out. Defaults to reject. |
+| **onTimeout** | Optional. The action to take (reject or resume) if the task times out. Defaults to reject. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 The **Manual Validation** task allows you to pause a pipeline run within a stage, typically to perform some

@@ -8,7 +8,7 @@ ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/01/2021
+ms.date: 10/07/2021
 ---
 
 # Validation and import processes
@@ -183,7 +183,7 @@ Azure DevOps Services is available in several [Azure regions](https://azure.micr
 | Australia | Australia East | EAU |
 | South America | Brazil South | SBR |
 | Asia Pacific | South India | MA |
-| Asia Pacific | Asia Pacific (Hong Kong) | EA |
+| Asia Pacific | Southeast Asia (Singapore) | SEA |
 | Canada | Central Canada | CC |
 
 <br> 
@@ -276,6 +276,10 @@ You don't need to repeat a dry-run import if users' Visual Studio subscriptions 
 By now, you have everything ready to execute on your import. You need to schedule downtime with your team to take the collection offline for the migration. When you've agreed upon a time to run the import, you need to upload to Azure both the required assets you've generated and a copy of the database. This process has five steps:
 
 Step 1: [Take the collection offline and detach it](#step-1-detach-your-collection).  
+
+> [!NOTE] 
+> If the data migration tool displays a warning that you can't use the DACPAC method, you have to perform the import by using the SQL Azure virtual machine (VM) method. Skip steps 2 to 5 in that case and follow instructions provided in [Import large collections](migration-import-large-collections.md) and then continue to section [determine the import type](#determine-the-import-type).
+
 Step 2: [Generate a DACPAC file from the collection you're going to import](#step-2-generate-a-dacpac-file).  
 Step 3: [Upload the DACPAC file and import files to an Azure storage account](#step-3-upload-the-dacpac-file).  
 Step 4: [Generate an SAS key to the storage account](#step-4-generate-an-sas-key).  
@@ -449,7 +453,7 @@ Azure DevOps Services is available in multiple [regions](https://azure.microsoft
 | Brazil South | Brazil South |
 | India South | India South |
 | Canada Central | Canada Central |
-| Asia Pacific (Hong Kong) | Asia Pacific (Hong Kong) |
+| Asia Pacific (Singapore) | Asia Pacific (Singapore) |
 
 <br> 
 
@@ -512,6 +516,20 @@ Using the Fabrikam example, the final import specification file should look like
 
 <a id="determine-the-type-of-import"></a> 
 <a id="import-type"></a> 
+
+### Restrict access to Azure DevOps Services IPs only
+
+We highly recommend that you restrict access to your Azure Storage account to only IPs from Azure DevOps Services. You do this by allowing connections only from the set of Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your storage account depend on the region you're importing into. Use the IpList option to get the list of IPs that need to be granted access.
+
+Included in the help documentation are instructions and examples for running Migrator from the Azure DevOps Server instance itself and a remote machine. If you're running the command from one of the Azure DevOps Server instance's application tiers, your command should have the following structure:
+
+```cmdline
+Migrator IpList /collection:{CollectionURI} /tenantDomainName:{name} /region:{region}
+```
+
+> [!NOTE] 
+> Alternatively, you can also use [Service Tags](/azure/virtual-network/service-tags-overview) in place of explicit IP ranges. Azure Service Tags are a convenient way for customers to manage their networking configuration to allow traffic from specific Azure services. Customers can easily allow access by adding the tag name azuredevops to their network security groups or firewalls either through the portal or programmatically. 
+
 ### Determine the import type
 
 Imports can be queued as either a dry run or a production run. The **ImportType** parameter determines the import type: 

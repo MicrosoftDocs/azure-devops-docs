@@ -322,7 +322,14 @@ The rule requirements translate to the following four rule definitions.
 
 ## Restrict state transitions 
 
-When specifying the condition, `A work item state moved from ...`, you can specify only that condition. You can specify up to 10 actions.    
+When specifying the condition, `A work item state moved from ...`, you can specify only that condition. You can specify up to 10 actions.  
+::: moniker-end
+::: moniker range="azure-devops-2020"
+> [!NOTE]   
+> This feature requires Azure DevOps Server 2020.1 update or later version.
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
 
 #### Example of restricting state transitions and Approved state
 

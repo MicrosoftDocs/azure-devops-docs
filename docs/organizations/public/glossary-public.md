@@ -97,7 +97,7 @@ An authenticated user of a project who is not a member of the project.
 
 ## Stakeholder	
 
-An authenticated user of a project who was granted Stakeholder access. An unlimited number of users can be granted membership as Stakeholders for free. Stakeholders can add and modify work items, approve releases, view dashboards and wikis. Learn more: [Access levels, Stakeholder access](../security/access-levels.md#stakeholder-access). 
+An authenticated user of a project who was granted Stakeholder access. An unlimited number of users can be granted membership as Stakeholders for free. Stakeholders can add and modify work items, approve releases, view dashboards and wikis. Learn more: [Stakeholder access quick reference](../security/stakeholder-access.md). 
 
 [!INCLUDE [temp](../../includes/glossary-terms/teams.md)] 
 

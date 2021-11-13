@@ -21,6 +21,8 @@ You can change your preferred email address for notifications from your organiza
 
 > [!NOTE]
 > Your preferred email address applies across all of your organizations and can't be changed on a per-organization basis.
+> 
+> It may take some time for the settings to take effect.
 
 #### [Preview page](#tab/preview-page) 
 

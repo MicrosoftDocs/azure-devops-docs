@@ -154,7 +154,7 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Typo in one of the samples, with a keyword "postRouteTaffic", instead of the expected "postRouteTraffic" #9871](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9871)
 - [azure-feed:// URI format #9852](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9852)
 - [Document that FileTransform may not do what one thinks... #9822](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9822)
-- [What are we supposed to write in <user> ? #9817](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9817)
+- [What are we supposed to write in \<user\> ? #9817](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9817)
 - [Instructions for private repos not working #9814](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9814)
 - [Use Variables in Content #9809](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9809)
 - [shortcuts #9801](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9801)

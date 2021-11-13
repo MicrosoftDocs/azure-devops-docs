@@ -84,23 +84,23 @@ Before you run the test, you must add details.
 
 1. To add tests, open the menu for the work item.
 
-	<img src="../boards/boards/media/i-test-add-test.png" alt="Open the context menu of a backlog item to add inline test case" style="border: 2px solid #C3C3C3;" />
+	<img src="../boards/boards/media/i-test-add-test.png" alt="Open the context menu of a backlog item to add inline test case" />
 
 	Inline tests are the same as test cases in a test suite. A default test plan and test suite automatically get created under which the manual test cases are grouped. 
 
 	For example, a test suite gets created for each user story, and all inline tests are added to that suite. The following user story 152 is highlighted. It has three manual tests defined with the IDs 153, 155, and 161.  
 
-	<img src="../boards/boards/media/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../boards/boards/media/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" /> 
 
 	To learn more about test plans and test suites, see [Plan your tests](../test/create-a-test-plan.md).  
 
 2. If you have a number of tests to add, enter each title and select **Enter**.
 
-	<img src="../boards/boards/media/i-test-story-with-3-inline-tests.png" alt="Work item with several test cases added" style="border: 2px solid #C3C3C3;" />   
+	<img src="../boards/boards/media/i-test-story-with-3-inline-tests.png" alt="Work item with several test cases added" />   
 
 	To add details to the test case, open it. You can select the title, double-select the inline item, or open the context menu and choose **Open**.
 
-	<img src="../boards/boards/media/i-test-case-form.png" alt="Open test case form from Kanban board" style="border: 2px solid #C3C3C3;" />
+	<img src="../boards/boards/media/i-test-case-form.png" alt="Open test case form from Kanban board" />
 
 To learn more about how to define tests, see [Create manual tests](../test/create-test-cases.md).
 
@@ -125,7 +125,7 @@ Microsoft Test Runner starts in a new browser instance. For information on how t
 
 Run the test by selecting ![Run icon](../boards/media/icons/run_query.png) **Run test** from the ![Actions icon](../boards/media/icons/actions-icon.png) actions menu for the inline test.  
 
-<img src="../boards/boards/media/i-test-run-test.png" alt="Run a test" style="border: 2px solid #C3C3C3;" />  
+<img src="../boards/boards/media/i-test-run-test.png" alt="Run a test" />  
 
 Microsoft Test Runner starts in a new browser instance. For information on how to run a test, see [Run manual tests](../test/run-manual-tests.md).
 ::: moniker-end

@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 06/25/2020
+ms.date: 09/20/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -42,7 +42,7 @@ We support the following subset of .NET Core supported distributions:
   - Oracle Linux 7
   - Red Hat Enterprise Linux 8, 7, 6 (see note 1)
   - SUSE Enterprise Linux 12 SP2 or later
-  - Ubuntu 18.04, 16.04
+  - Ubuntu 20.04, 18.04, 16.04
 - ARM32 (see note 2)
   - Debian 9
   - Ubuntu 18.04
@@ -60,8 +60,16 @@ We strongly recommend installing the latest version of Git.
 If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
 (The Oracle JRE and OpenJDK are not sufficient for this purpose.)
 
-The agent installer knows how to check for other dependencies.
+> [!NOTE]
+> The agent installer knows how to check for other dependencies.
 You can install those dependencies on supported Linux platforms by running `./bin/installdependencies.sh` in the agent directory.
+>
+> Be aware that some of these dependencies required by .NET Core are fetched from third party sites, like `packages.efficios.com`. Review the `installdependencies.sh` script and ensure any referenced third party sites are accessible from your Linux machine before running the script.
+>
+> Please also make sure that all required repositories are connected to the relevant package manager used in `installdependencies.sh` (like `apt` or `zypper`).
+> 
+> For issues with dependencies installation (like 'dependency was not found in repository' or 'problem retrieving the repository index file') - you can reach out to distribution owner for futher support.
+
 
 ::: moniker-end
 

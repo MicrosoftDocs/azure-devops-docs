@@ -6,7 +6,7 @@ ms.technology: devops-code-git
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ms.date: 04/14/2021
 ---
 
@@ -14,7 +14,7 @@ ms.date: 04/14/2021
 # Set Git repository permissions 
 
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
+[!INCLUDE [version-tfs-2013-cloud](../includes/version-tfs-2013-cloud.md)]
 
 You grant or restrict access to repositories to lock down who can contribute to your source code and manage other features.  You can set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from the top-level **Git Repositories** entry. 
 

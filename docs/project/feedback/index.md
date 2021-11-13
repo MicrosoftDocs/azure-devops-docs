@@ -6,7 +6,8 @@ ms.technology: devops-collab
 ms.topic: overview
 ms.assetid:  
 ms.author: kaelli
-monikerRange: '>= tfs-2013'
+author: KathrynEE 
+monikerRange: '<= azure-devops'
 ms.date: 09/19/2017
 ---
 

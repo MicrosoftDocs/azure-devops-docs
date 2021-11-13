@@ -63,7 +63,6 @@ The following features are supported for the team project wiki.
 
 - [Add and edit wiki pages](add-edit-wiki.md)  
 - [View wiki page history and revert](wiki-view-history.md)
-- [Search Wiki content](search-wiki.md)  
 - [Version, select, or unpublish a published wiki](wiki-select-unpublish-versions.md)
 - [Clone and update wiki content offline](wiki-update-offline.md)
 - [Use Wiki keyboard shortcuts](wiki-keyboard-shortcuts.md)
@@ -101,9 +100,6 @@ The following features are supported for the team project wiki you create in the
 > |[Preview a Wiki page while editing](add-edit-wiki.md) | TFS 2018.2 |
 > |[Print a Wiki page](filter-print-wiki.md) <sup>1</sup> | TFS 2018.2 |
 > |[Wiki keyboard shortcuts](wiki-keyboard-shortcuts.md) | TFS 2018.2 |
-> |[Wiki search](search-wiki.md) | TFS 2018.2 |  
-> [!NOTE]
-> This feature may not be available from the Firefox web browser.
 
 ::: moniker-end
 

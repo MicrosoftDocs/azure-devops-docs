@@ -3,7 +3,7 @@ title: Build your GCC C/C++ app
 ms.custom: seodec18
 description: Learn how you can use continuous integration in Azure Pipelines or Team Foundation Server (TFS) to automatically build your GCC C/C++ app.
 ms.assetid: 73a50551-0c2c-4d62-b582-6ba7ba51509e
-ms.date: 04/18/2018
+ms.date: 03/17/2021
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---

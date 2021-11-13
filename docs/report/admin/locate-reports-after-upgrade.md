@@ -1,33 +1,32 @@
 ---
 title: Locate Reporting Services reports after upgrade
-titleSuffix: TFS 2013
-description: Locate reports in SQL Server Reporting Services after upgrading earlier versions of Team Foundation Server to TFS 2010. 
+titleSuffix: Azure DevOps Server
+description: Learn how to locate reports in SQL Server Reporting Services after upgrading earlier versions of Azure DevOps Server. 
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< azure-devops' 
-ms.date: 11/19/2018
+ms.date: 09/23/2021
 ---
-
 
 # Locate reports after the upgrade to TFS 2010
 
 [!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
-Upgrading your Team Foundation deployment to Visual Studio Team Foundation Server 2010 introduces several changes that affect the location and operations of reports that are accessed through SQL Server Reporting Services. Specifically, you will have access to both pre-existing or pre-upgrade reports, and new or post-upgrade reports that are based on the data warehouse schema for Team Foundation Server 2010.
+Upgrading your Team Foundation deployment to Visual Studio Team Foundation Server 2010 introduces several changes. The changes affect the location and operations of reports that TFS accesses through SQL Server Reporting Services. Specifically, you'll have access to both pre-existing or pre-upgrade reports, and new or post-upgrade reports that are based on the data warehouse schema for Team Foundation Server 2010.
 
-The following are the immediate effects that you will notice: 
+The following are the immediate effects that you'll notice: 
 - If your upgraded team project was based on version 4.2 of a Microsoft Solutions Framework (MSF) process template, you have access to a set of post-upgrade reports. These reports can be accessed from the ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** node in Team Explorer or from the **Reports** link in the web portal.  
-- You cannot access pre-upgrade reports from the ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** node in Team Explorer or from the web portal. You can still access pre-existing reports from a Web browser.
-- Data that has been added since the upgrade does not appear in pre-existing reports. All new data flows into the new data warehouse that was created during the upgrade. All pre-existing data is maintained in a data warehouse that is based on the earlier schemas.
+- You can't access pre-upgrade reports from the ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** node in Team Explorer or from the web portal. You can still access pre-existing reports from a Web browser.
+- Data that has been added since the upgrade doesn't appear in pre-existing reports. All new data flows into the new data warehouse that was created during the upgrade. All pre-existing data is maintained in a data warehouse that is based on the earlier schemas.
 
-To view a pre-upgrade report, you may have to modify it to address changes that were introduced by SQL Server 2008. To use a pre-upgrade report to support reporting on your upgraded team project, you must modify each report to connect to the new data warehouse and address the schema changes that were introduced by Team Foundation Server 2010.
+To view a pre-upgrade report, you may have to modify it to address changes that were introduced by SQL Server 2008. To use a pre-upgrade report to support reporting on your upgraded team project, you must modify each report to connect to the new data warehouse and address the schema changes that Team Foundation Server 2010 introduced.
 
 Two sets of data warehouse resources
 
 
-<img src="media/locate-reports-db-names.png" alt="Two sets of reports and two locations" style="border: 2px solid #C3C3C3;" />
+<img src="media/locate-reports-db-names.png" alt="Two sets of reports and two locations" />
 
 
 
@@ -47,7 +46,7 @@ You can continue to view pre-upgrade reports. However, no new data will be added
 
 ## Team project collections and report hierarchy
 
-With the introduction of team project collections and report folders, reports are now organized on the server that hosts Reporting Services in a hierarchy that resembles the following:
+With the introduction of team project collections and report folders, reports are now organized on the server that hosts Reporting Services in a hierarchy like this:
 
 **TfsReports > Project Collection > Team Project > Report Folder > Report**
 
@@ -64,13 +63,13 @@ To view post-upgrade reports
 
 	`http://ReportServerName/TFSReports/ProjectCollectionName/ProjectName/`
 
-	If you have deployed a named instance on the data-tier server, type the following string instead:
+	If you've deployed a named instance on the data-tier server, type the following string instead:
 
 	`http://ReportServerName/TFSReports_TFSInstance/ProjectCollectionName/ProjectName/`
 
-1. Click the folder that contains the report that you want to view.
+1. Select the folder that contains the report that you want to view.
 
-1. Click the report that you want to view.
+1. Select the report that you want to view.
 
 ## View pre-upgrade reports
 
@@ -80,11 +79,11 @@ To view pre-upgrade reports
 
 	`http://ReportServerName/Reports/ProjectName/`
 
-	If you have deployed a named instance on the data-tier server, type the following string instead:
+	If you've deployed a named instance on the data-tier server, type the following string instead:
 
 	`http://ReportServerName/Reports_TFSInstance/ProjectName/`
 
-1. Click the report that you want to view.
+1. Select the report that you want to view.
 
 
 
@@ -100,7 +99,7 @@ To view pre-upgrade reports
 > [!NOTE]
 >  The ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** option appears only when the team project collection that contains your team project is provisioned with Reporting Services. For more information, see [Add a Report Server to a Team Project Collection](../admin/add-reports-to-a-team-project.md).  
   
- The ![Report](media/icon_reportte.png "Icon_reportTE")**Reports** page for your team project shows the reports and organizes them under a set of folders. The default set of reports are based on the process template that was used to create the team project. You can manage these reports using Report Manager. For more information, see [Report Server Content (Native Mode)](/previous-versions/azure/devops/reference/upgrade/new-features-added).  
+ The ![Report](media/icon_reportte.png "Icon_reportTE")**Reports** page for your team project shows the reports and organizes them under a set of folders. The default set of reports is based on the process template that was used to create the team project. You can manage these reports using Report Manager. For more information, see [Report Server Content (Native Mode)](/previous-versions/azure/devops/reference/upgrade/new-features-added).  
   
  The reports that TFS provides with the default process templates provide a view of the current state of your project by aggregating and summarizing the metrics from such things as work items, version control, test results, and builds. You can use the default reports, or you can customize each report to fit your specific needs.  
   
@@ -108,7 +107,7 @@ To view pre-upgrade reports
   
  Team project reports are stored in Reporting Services, and you can access them through Team Explorer or Report Manager. As the number of reports listed on the **Reports** page increases, you may want to create subfolders for grouping or organizing the reports.  
   
- You use Report Manager to manage reports and report folders. To access the team report site from Team Web Access, on the Home page, click ![Report](media/icon_reportte.png "Icon_reportTE") **Reports**.  
+ You use Report Manager to manage reports and report folders. To access the team report site from Team Web Access, on the Home page, select ![Report](media/icon_reportte.png "Icon_reportTE") **Reports**.  
   
  **Requirements**  
   
@@ -119,22 +118,22 @@ To view pre-upgrade reports
     > [!NOTE]
     >  If you are running Windows Server 2008 or Windows Vista, you might have trouble opening Web pages or sites from Team Explorer. For example, you might not be able to open the project portal by right-clicking a team project in Team Explorer and then clicking **Show Project Portal**. For more information about access issues that may occur with Windows Server 2008 or Windows Vista, see the following page on the Microsoft Web site: [User Account Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
   
-##  <a name="Viewing"></a>  
+<a name="Viewing"></a>
   
-#### To view a report from Team Explorer  
+### To view a report from Team Explorer  
   
 1.  From the ![Home icon](media/alm_te_home_icon.png "ALM_TE_Home_Icon") home page in Team Explorer, choose ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**.  
   
-> [!NOTE]
->  If a red X icon appears next to ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**, you might not have permissions to access the reports, or Team Explorer might have lost communication with the server that hosts Reporting Services. In these instances, check with your project administrator to make sure that you have permissions to access the reports and that the server that hosts Reporting Services is running.  
+    > [!NOTE]
+    >  If a red X icon appears next to ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**, you might not have permissions to access the reports, or Team Explorer might have lost communication with the server that hosts Reporting Services. In these instances, check with your project administrator to make sure that you have permissions to access the reports and that the server that hosts Reporting Services is running.  
   
- Also, a red X icon might appear next to **Reports** if both of the following conditions are true:  
+     Also, a red X icon might appear next to **Reports** if both of the following conditions are true:  
   
-- Team Explorer is running on the same computer as Reporting Services.  
+    - Team Explorer is running on the same computer as Reporting Services.  
   
-- You are not logged on as an administrator, or enhanced security is enabled for Internet Explorer.  
+    - You aren't logged on as an administrator, or enhanced security is enabled for Internet Explorer.  
   
-  To correct this issue, log onto your computer as an administrator, or open Internet Explorer, open Internet Options, choose the **Security** tab, and clear the **Enabled Protected Mode** check box.  
+    To correct this issue, sign in to your computer as an administrator, or open Internet Explorer, open Internet Options, choose the **Security** tab, and clear the **Enabled Protected Mode** check box.  
   
 1.  Choose the report and then press Enter.  
   
@@ -142,7 +141,7 @@ To view pre-upgrade reports
   
 2.  At the top of the report, specify your filter parameters, and then choose **View Report**.  
   
-#### To view a report from Report Manager  
+### To view a report from Report Manager  
   
 1.  From the ![Home icon](media/alm_te_home_icon.png "ALM_TE_Home_Icon") home page in Team Explorer, choose  ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**, and then choose the **Go to site** link.  
   

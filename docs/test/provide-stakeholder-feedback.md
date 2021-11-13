@@ -1,4 +1,4 @@
-﻿---
+---
 title: Give feedback with Test & Feedback extension
 description: Provide feedback in Azure DevOps or TFS using the Exploratory Testing browser extension
 ms.assetid: 41CCD562-C071-4C33-A178-71DDAE83912E
@@ -25,12 +25,14 @@ Before you start, ensure you have installed the
 [Test &amp; Feedback extension](perform-exploratory-tests.md). 
 This is required in order to respond to feedback requests.
 
->Any user with a Stakeholder access can use the
+> [!NOTE]   
+> Any user with a Stakeholder access can use the
 Test &amp; Feedback extension in **Stakeholder** mode. This
 mode is designed to allow the widest possible range of users
 to assist test teams by providing feedback.
 
 <a name="email"></a>
+
 ## Provide feedback directly from a feedback request email
 
 1. Open the feedback request email and choose the 
@@ -148,7 +150,7 @@ to assist test teams by providing feedback.
  
 1. Capture and submit your feedback as [shown above](#capture-feedback).
 
-## See also
+## Related articles
 
 * [Request stakeholder feedback using the Test &amp; Feedback extension](request-stakeholder-feedback.md#request)
 * [Voluntary stakeholder feedback using the Test &amp; Feedback extension](voluntary-stakeholder-feedback.md#voluntary)
@@ -156,4 +158,4 @@ to assist test teams by providing feedback.
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 

@@ -39,7 +39,7 @@ You can add custom work item types (WITs) or modify existing WITs to add fields,
 
 2. Name the WIT and optionally specify a description, icon and color. The icon and color you specify appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. Choose <strong>Create</strong> to save. 
 
-	<img src="media/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" /> 
 
 
 3. From the Layout page, you can add fields, groups, or pages to specify the form and fields you want to track. Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. For details, see [Add and manage fields](customize-process-field.md) or [Customize the web layout for a process](customize-process-form.md).    
@@ -77,7 +77,7 @@ To change the description, icon or color of a custom WIT, choose Edit from the W
 
 Here we change the description, icon and color for the Ticket custom WIT.  
 
-<img src="media/process/cpwit-edit-color-description.png" alt="Overview page, edit custom ticket description, icon and color" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/process/cpwit-edit-color-description.png" alt="Overview page, edit custom ticket description, icon and color" /> 
 
 <a id="enable-disable"></a>
 
@@ -109,7 +109,7 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
 
 2. To complete the delete operation, you must type the name of the WIT as shown. 
 
-	<img src="media/process/cpit-destroy-wit-confirm.png" alt="Delete field, confirmation dialog" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/process/cpit-destroy-wit-confirm.png" alt="Delete field, confirmation dialog" />  
  
 ## WIT extensibility
 
