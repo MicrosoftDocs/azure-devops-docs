@@ -13,16 +13,16 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 
-Branch policies help teams protect their important [branches](./create-branch.md) of development.
-Policies enforce your team's code quality and change management standards. For an overview of all repository and branch policies and settings, see [Git repository settings and policies](repository-settings.md). 
+Branch policies help teams protect their important [branches](./create-branch.md) of development. Policies enforce your team's code quality and change management standards. This article describes how to set and manage branch policies. For an overview of all repository and branch policies and settings, see [Git repository settings and policies](repository-settings.md).
 
+Any branch that has required policies set can't be deleted, and requires pull requests (PRs) for all changes.
 
 ## Prerequisites 
 
 ::: moniker range=">= azure-devops-2020"
 
 - To set branch policies, you must be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
-- If you want to use Azure DevOps CLI [az repos](/cli/azure/repos?view=azure-cli-latest&preserve-view=true) commands for the first time, see [Get started with Azure DevOps CLI](../../cli/index.md).
+- You can use Azure DevOps CLI [az repos](/cli/azure/repos?view=azure-cli-latest&preserve-view=true) commands to manage branch policies. To use Azure DevOps CLI for the first time, follow the instructions in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
@@ -31,21 +31,39 @@ Policies enforce your team's code quality and change management standards. For a
 
 ## Configure branch policies
 
-Select **Repos** > **Branches** to open the **Branches** page in the web portal.
+To manage branch policies, select **Repos** > **Branches** to open the **Branches** page in the web portal.
 
-![Open up the Branches page on the web](media/branches/branches_nav-new-nav.png)
-
-Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
-
-![Branches page](media/branches/branches-page.png)
-
-Select the **...** button. Select **Branch policies** from the context menu.
-
-   ![Open the branch policies from the context menu](media/branches/branches_context_menu_policy.png)
+![Screenshot that shows the Branches menu item.](media/branches/branches_nav-new-nav.png)
 
 ::: moniker range=">= azure-devops-2020"
 
-Configure policies on the **Settings** page. See the following sections for descriptions of each policy type.
+Branches that have policies set display a policy icon. You can select the icon to go directly to the branch's policy settings.
+
+To set policies, locate the branch you want to manage. You can browse the list or search for your branch in the **Search branch name** box at upper right.
+
+Select the **More options** icon next to the branch, and select **Branch policies** from the context menu.
+
+   ![Screenshot that shows Open the branch policies from the context menu.](media/branches/branches-page.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
+Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
+
+![Screenshot that shows the Branches page.](media/branches/branches-page.png)
+
+Select the **...** button. Select **Branch policies** from the context menu.
+
+![Screenshot that shows Open the branch policies from the context menu.](media/branches/branches_context_menu_policy.png)
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+
+Configure policies on the branch's settings page. See the following sections for descriptions and instructions for each policy type.
+
+![Screenshot that shows the policies for a branch.](media/branch-policies/branch-policies.png)
 
 ::: moniker-end
 
@@ -53,9 +71,11 @@ Configure policies on the **Settings** page. See the following sections for desc
 
 Configure your policies in the **Policies** page. See the following sections for descriptions of each policy type. Select **Save changes** to apply your new policy configuration.
 
-   ![Policies tab](media/branch-policies/save-policy-changes.png)  
+   ![Screenshot that shows the Policies tab.](media/branch-policies/save-policy-changes.png)  
 
 ::: moniker-end
+
+You can also get to branch policy settings with **Project Settings** > **Repository** > **Policies** > **Branch Policies** > **\<Branch Name>**.
 
 <a name="require_reviewers"></a>
 
@@ -63,21 +83,18 @@ Configure your policies in the **Policies** page. See the following sections for
 
 <!--- TBD: Azure CLI az repos policy required-reviewer create and az repos policy required-reviewer update --> 
 
-Code reviews are a best practice for most software development projects.
-To require teams to review their changes before completing a pull request, select **Require a minimum number of reviewers**.
+Code reviews are important for software development projects. To ensure that teams review and approve PRs, you can require a minimum number of reviewers to approve them. The basic policy requires that a specified number of reviewers approve the code, with no rejections.
 
-The basic policy requires that a certain number of reviewers approve the code with no rejections.
-
-From **Branch** > **Branch Policies**, enable **Require a minimum number of reviewers**.
+To set the policy, under **Branch Policies**, set **Require a minimum number of reviewers** to **On**. Enter the required number of reviewers, and select any of the following options:
 
 ::: moniker range=">= azure-devops-2020"
 
-:::image type="content" source="media/branch-policies/require-minimum-reviewers-2020.png" alt-text="Enable the Require Code Reviews policy":::
+:::image type="content" source="media/branch-policies/require-minimum-reviewers-2020.png" alt-text="Screenshot that shows the Enable the Require Code Reviews policy.":::
 
-- If **Allow requestors to approve their own changes** is selected, the pull request's creator can vote on its approval. If not, they can still vote **Approve** on their pull request, but their vote won't count toward the **Minimum number of reviewers**.
-- By default, anyone with push permissions on the source branch can both add commits and vote on the pull request's approval. By enabling **Prohibit the most recent pusher from approving their own changes**, you can enforce segregation of duties. Having the most recent push automatically makes the pusher's vote not count.
-- If any reviewer rejects the changes, the pull request can't complete unless you select **Allow completion even if some reviewers vote to wait or reject**.
-- You can reset code reviewer votes when new changes are pushed to the source branch. Select **Reset code reviewer votes when there are new changes**.
+- Select **Allow requestors to approve their own changes** to allow a PR's creator to vote on its approval. Otherwise, the creator can still vote **Approve** on the PR, but their vote won't count toward the minimum number of reviewers.
+- Select **Prohibit the most recent pusher from approving their own changes** to enforce segregation of duties. By default, anyone with push permission on the source branch can both add commits and vote on PR approval. Selecting this option means the most recent pusher's vote automatically doesn't count.
+- Select **Allow completion even if some reviewers vote to wait or reject** to allow PR completion even if some reviewers vote against approval. The minimum number of reviewers must still approve.
+- Select **Reset code reviewer votes when there are new changes** to remove all code reviewer votes every time the source branch changes.
 
 ::: moniker-end
 
@@ -91,31 +108,29 @@ From **Branch** > **Branch Policies**, enable **Require a minimum number of revi
 
 ::: moniker-end
 
-The creator can complete the pull request when the required number of reviewers approve it.
+If all other policies pass, the creator can complete the PR when the required number of reviewers approve it.
 
-> [!NOTE]
-> The **Requestors can approve their own changes** setting only applies to the **Require a minimum number of reviewers** policy. It doesn't affect other policies such as [Automatically include code reviewers](#automatically-include-code-reviewers). For example, Jamal Hartnett creates a pull request with the following policies configured:
->
-> - **Minimum number of reviewers** requires two reviewers.
-> - **Requestors can approve their own changes** isn't set.
-> - The **Fabrikam Team** group is a required reviewer, and Jamal is a member of that group.
->
-> In this example, since Jamal is part of the **Fabrikam Team** group, his **Approve** vote satisfies the required reviewer policy. The pull request still requires two additional **Approve** votes to satisfy the **Minimum number of reviewers** policy, since his vote doesn't count toward that policy.
+**Requestors can approve their own changes** applies only to the **Require a minimum number of reviewers** policy. This setting doesn't affect other policies, such as [Automatically include code reviewers](#automatically-include-code-reviewers). For example, Jamal Hartnett creates a PR with the following policies configured:
+
+- **Minimum number of reviewers** requires two reviewers.
+- **Requestors can approve their own changes** isn't selected.
+- The **Fabrikam Team** group is a required reviewer, and Jamal is a member of that group.
+
+Since Jamal is part of the **Fabrikam Team** group, his **Approve** vote satisfies the required reviewer policy. The PR still requires two more **Approve** votes to satisfy the **Minimum number of reviewers** policy, because Jamal's vote doesn't count toward that policy.
 
 <a id="check-linked-wi" />
 
 ## Check for linked work items
 
-Require associations between pull requests and a work item to ensure that changes to your branch have [work item management tracking](../../boards/backlogs/connect-work-items-to-git-dev-ops.md). Linking work items provides additional context for your changes and ensures that updates go through your work item tracking process.
-
+For [work item management tracking](../../boards/backlogs/connect-work-items-to-git-dev-ops.md), you can require associations between PRs and a work item. Linking work items provides more context for changes and ensures that updates go through your work item tracking process.
 
 #### [Browser](#tab/browser)
 
-From **Project Settings>Repository>Policies>Branch Policies>Branch**, enable the **Check for linked work items** and set to **Require** to require work items be linked to a pull request for the branch in order to be merged. Make the setting **Optional** to warn when there are no linked work items but to allow completion of the pull request. 
+To set the policy, under **Branch Policies**, set **Check for linked work items** to **On**. This setting requires work items be linked to a PR for the PR to be merged. Make the setting **Optional** to warn when there are no linked work items, but allow completion of the pull request.
 
 ::: moniker range=">= azure-devops-2020"
 
-:::image type="content" source="media/branch-policies/check-linked-work-items-2020.png" alt-text="Require linked work items in your pull requests":::
+:::image type="content" source="media/branch-policies/check-linked-work-items-2020.png" alt-text="Screenshot of requiring linked work items in pull requests.":::
 
 ::: moniker-end
 
@@ -130,16 +145,13 @@ From **Project Settings>Repository>Policies>Branch Policies>Branch**, enable the
 
 ::: moniker range=">= azure-devops-2020" 
 
-You can use Azure CLI to create and updated work item linking policies for a branch or repository.  
-
-[Create work item linking policy](#create-wi-policy) | [Update work item linking policy](#update-wi-policy)  
-
+You can use Azure CLI to create and update work item linking policies for a branch or repository.
 
 <a id="create-wi-policy" /> 
 
 ### Create work item linking policy
 
-Use [`az repos policy work-item-linking create`](/cli/azure/repos/policy/work-item-linking?view=azure-cli-latest&preserve-view=true#az_repos_policy_work_item_linking_create) to create a work item linking policy for a repository or one or more branches.
+Use [az repos policy work-item-linking create](/cli/azure/repos/policy/work-item-linking?view=azure-cli-latest&preserve-view=true#az_repos_policy_work_item_linking_create) to create a work item linking policy for a repository or one or more branches.
 
 ```azurecli
 az repos policy work-item-linking create --blocking {false, true}
@@ -153,18 +165,17 @@ az repos policy work-item-linking create --blocking {false, true}
 
 |Parameter|Description|
 |---------|-----------|
-|`blocking`|(Required) Whether the policy should be blocking or not. Accepted values: `false`, `true`.|
-|`branch`|(Required) Branch name to filter results by exact match of branch name. The --repository-id parameter is required to use the branch filter. For example: `--branch main`.|
+|`blocking`|(Required) Whether the policy should be blocking (required) or not. Accepted values: `false`, `true`.|
+|`branch`|(Required) Branch name. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`.|
 |`enabled`|(Required) Whether the policy is enabled or not. Accepted values: `false`, `true`.|
 |`repository-id`|(Optional) ID of the repository on which to apply the policy. For example `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.| 
-|`branch-match-type`|(Optional) Determines how the branch argument is used to apply a policy. If value is `exact`, the policy is applied on a branch which has an exact match on the `--branch argument`. If value is `prefix` the policy is applied across all branch folders that match the prefix provided by the `--branch argument`. Accepted values: `exact`, `prefix`. Default value: `exact`.| 
-
+|`branch-match-type`|(Optional) Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 
 <a id="update-wi-policy" /> 
 
 ### Update work item linking policy
 
-Use [`az repos policy work-item-linking update`](/cli/azure/repos/policy/work-item-linking?view=azure-cli-latest&preserve-view=true#az_repos_policy_work_item_linking_update) to update a work item linking policy for a repository or one or more branches.
+Use [az repos policy work-item-linking update](/cli/azure/repos/policy/work-item-linking?view=azure-cli-latest&preserve-view=true#az_repos_policy_work_item_linking_update) to update a work item linking policy for a repository or one or more branches.
 
 ```azurecli
 az repos policy work-item-linking update --id
@@ -180,31 +191,30 @@ az repos policy work-item-linking update --id
 |Parameter|Description|
 |---------|-----------|
 |`id`|(Required) The policy ID. |
-|`blocking`|(Optional) Whether the policy should be blocking or not. Accepted values: `false`, `true`.|
-|`branch`|(Optional) Branch name to filter results by exact match of branch name. The --repository-id parameter is required to use the branch filter. For example: `--branch main`.|
-|`branch-match-type`|(Optional) Determines how the branch argument is used to apply a policy. If value is `exact`, the policy is applied on a branch which has an exact match on the `--branch argument`. If value is `prefix` the policy is applied across all branch folders that match the prefix provided by the `--branch argument`. Accepted values: `exact`, `prefix`. Default value: `exact`.| 
+|`blocking`|(Required) Whether the policy should be blocking (required) or not. Accepted values: `false`, `true`.|
+|`branch`|(Required) Branch name. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`.|
+|`branch-match-type`|(Optional) Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`enabled`|(Required) Whether the policy is enabled or not. Accepted values: `false`, `true`.|
 |`repository-id`|(Optional) ID of the repository on which to apply the policy.  For example `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.| 
 
-
 **Example**
 
-The following example updates the policy ID **3** for the **main** branch of the repository for the default configured project. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`
+The following example updates the policy ID **3** for the **main** branch of the repository for the default configured project. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
 >az repos policy work-item-linking update --id 3 --blocking false --branch main --enabled true --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --output table
+
 ID    Name               Is Blocking    Is Enabled    Repository Id                         Branch
 ----  -----------------  -------------  ------------  ------------------------------------  ---------------
 3     Work item linking  False          True          d28cd374-e7f0-4b1f-ad60-f349f155d47c  refs/heads/main
 ```
-
 
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 ***
- 
+
 
 ::: moniker range=">= tfs-2017" 
 
@@ -214,15 +224,17 @@ ID    Name               Is Blocking    Is Enabled    Repository Id             
 
 <!--- TBD: Azure CLI az repos policy comment-required create and az repos policy comment-required update --> 
 
+The **Check for comment resolution** policy checks whether all PR comments are resolved.
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020" 
 
-Configure a comment resolution policy for your branch by selecting **Check for comment resolution**.
+Configure a comment resolution policy for your branch by setting **Check for comment resolution** to **On**. Then select whether to make the policy **Required** or **Optional**.
 
 :::image type="content" source="media/branch-policies/check-comment-resolution-2020.png" alt-text="Check for comment resolution":::
 
-For more information on working with pull request comments, see [Pull requests - leave comments](review-pull-requests.md#make-comments).
+For more information on working with pull request comments, see [Review pull requests](review-pull-requests.md#make-comments).
 
 ::: moniker-end
 
@@ -232,7 +244,7 @@ Configure a comment resolution policy for your branch by selecting **Check for c
 
 ![Check for comment resolution](media/branch-policies/comment-resolution-2018.png)
 
-For more information on working with pull request comments, see [Pull requests - leave comments](review-pull-requests.md#make-comments).
+For more information on working with pull request comments, see [Review pull requests](review-pull-requests.md#make-comments).
 
 ::: moniker-end
 
@@ -244,16 +256,16 @@ For more information on working with pull request comments, see [Pull requests -
 
 <!--- TBD: Azure CLI  az repos policy merge-strategy create and az repos policy merge-strategy update --> 
 
-Maintain a consistent branch history by enforcing a merge strategy when a pull request completes.
-Azure Repos has multiple merge strategies, and by default, all of them are allowed.
-Select **Limit merge types** to pick which ones you'll allow in your repo.
+Azure Repos has several merge strategies, and by default, all of them are allowed. You can maintain a consistent branch history by enforcing a merge strategy for PR completion.
+
+Set **Limit merge types** to **On** to limit which merge types to allow in your repo.
 
 :::image type="content" source="media/branch-policies/limit-merge-types-2020.png" alt-text="Limit merge types":::
 
-- **Basic merge (no fast-forward)** - creates a merge commit in the target whose parents are the target and source branches.
-- **Squash merge** - creates a linear history with a single commit in the target branch with the changes from the source branch. [Learn more about squash merging](merging-with-squash.md) and how it affects your branch history.
-- **Rebase and fast-forward** - creates a linear history by replaying source commits onto the target branch with no merge commit.
-- **Rebase with merge commit** - replays the source commits onto the target and still creates a merge commit.
+- **Basic merge (no fast-forward)** creates a merge commit in the target whose parents are the target and source branches.
+- **Squash merge** creates a linear history with a single commit in the target branch with the changes from the source branch. [Learn more about squash merging](merging-with-squash.md) and how it affects branch history.
+- **Rebase and fast-forward** creates a linear history by replaying source commits onto the target branch with no merge commit.
+- **Rebase with merge commit** replays the source commits onto the target and also creates a merge commit.
 
 <a name="build"></a>
 <a name="require-the-pull-request-to-build"></a>
@@ -285,13 +297,13 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
 
 ::: moniker range=">= azure-devops-2020" 
 
-Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
+You can set a policy requiring PR changes to build successfully before the PR can be completed.
 Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/devops/develop/what-is-continuous-integration) (CI) on your development branches to catch problems early.
 
-If a build validation policy is enabled, a new build is queued when either a new pull request is created, or if changes are pushed to an existing pull request targeting the branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
+A build validation policy queues a new build when a new PR is created or changes are pushed to an existing PR that targets the branch. The build policy evaluates the build results to determine whether the PR can be completed.
 
 > [!IMPORTANT]
-> Before specifying a build validation policy, you must have a build pipeline. If you don't have one, see [Create a build pipeline](../../pipelines/create-first-pipeline.md) and choose the type of build that matches your project type.
+> Before specifying a build validation policy, you must have a build pipeline. If you don't have a pipeline, see [Create a build pipeline](../../pipelines/create-first-pipeline.md) and choose the type of build that matches your project type.
 
 :::image type="content" source="media/branch-policies/build-validation-2020.png" alt-text="Add build policy":::
 
