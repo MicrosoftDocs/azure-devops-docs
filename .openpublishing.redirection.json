@@ -1,6 +1,3318 @@
 {
   "redirections": [
     {
+      "source_path": "docs/boards/backlogs/add-link.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/add-link",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/add-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/add-work-items",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/backlogs-boards-plans.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/backlogs-boards-plans",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/backlogs-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/backlogs-overview",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/best-practices-product-backlog.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/best-practices-product-backlog",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/bulk-modify-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/bulk-modify-work-items",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/copy-clone-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/copy-clone-work-items",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/copy-list.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/copy-list",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/create-your-backlog.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/create-your-backlog",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/manage-bugs.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/manage-bugs",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/manage-issues-impediments.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/manage-issues-impediments",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/organize-backlog.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/organize-backlog",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/product-backlog-controls.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/product-backlog-controls",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/remove-delete-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/remove-delete-work-items",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/resolve-backlog-reorder-issues.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/resolve-backlog-reorder-issues",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/set-column-options.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/set-column-options",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/set-up-your-backlog.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/set-up-your-backlog",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/work-item-template.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/work-item-template",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/bulk-add-modify-work-items-excel.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/resolve-excel-data-conflicts-publish-refresh.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/resolve-excel-data-conflicts-publish-refresh",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/resolve-excel-data-validation-errors.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/resolve-excel-data-validation-errors",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/resolve-excel-invalid-links-tree-list.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/resolve-excel-invalid-links-tree-list",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/resolve-problems-excel-workbooks-sharepoint.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/resolve-problems-excel-workbooks-sharepoint",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/tfs-office-integration-issues.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/tfs-office-integration-issues",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/backlogs/office/track-work.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/track-work",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/add-columns.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/add-columns",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/best-practices-kanban.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/best-practices-kanban",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-basics.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/kanban-basics",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-board-controls.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/kanban-board-controls",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-epics-features-stories.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/kanban-epics-features-stories",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-key-concepts.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/kanban-key-concepts",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/kanban-overview",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-quickstart.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/kanban-quickstart",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/boards/wip-limits.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/boards/wip-limits",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/extensions/migrate-integrate.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/extensions/migrate-integrate",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/get-started/customize-boards.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/get-started/customize-boards",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/get-started/manage-boards.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/get-started/manage-boards",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/get-started/permissions-access-boards.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/get-started/permissions-access-boards",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/get-started/plan-track-work.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/get-started/plan-track-work",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/get-started/what-is-azure-boards.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/get-started/what-is-azure-boards",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/get-started/why-use-azure-boards.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/get-started/why-use-azure-boards",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/agile-culture.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/agile-culture",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/configure-hierarchical-teams.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/configure-hierarchical-teams",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/index.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/index",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/portfolio-management.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/portfolio-management",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/practices-that-scale.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/practices-that-scale",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/safe-concepts.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/safe-concepts",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/safe-configure-boards.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/safe-configure-boards",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/safe-customize.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/safe-customize",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/safe-plan-track-boards.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/safe-plan-track-boards",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/safe-review-roadmaps-progress.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/safe-review-roadmaps-progress",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/scaled-agile-framework.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/scaled-agile-framework",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/plans/visibility-across-teams.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/plans/visibility-across-teams",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/about-managed-queries.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/about-managed-queries",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/add-tags-to-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/add-tags-to-work-items",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/build-test-integration.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/build-test-integration",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/define-query-hyperlink.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/define-query-hyperlink",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/high-performing-queries.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/high-performing-queries",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/history-and-auditing.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/history-and-auditing",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/link-type-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/link-type-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/link-work-items-support-traceability.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/link-work-items-support-traceability",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/linking-attachments.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/linking-attachments",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/organize-queries.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/organize-queries",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/planning-ranking-priorities.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/planning-ranking-priorities",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-by-area-iteration-path.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-by-area-iteration-path",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-by-date-or-current-iteration.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-by-date-or-current-iteration",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-by-workflow-changes.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-by-workflow-changes",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-field-value.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-field-value",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-index-quick-ref.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-index-quick-ref",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-numeric.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-numeric",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/query-operators-variables.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/query-operators-variables",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/search-box-queries.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/search-box-queries",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/set-query-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/set-query-permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/share-plans.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/share-plans",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/titles-ids-descriptions.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/titles-ids-descriptions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/triage-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/triage-work-items",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/using-queries.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/using-queries",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/view-run-query.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/view-run-query",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/queries/wiql-syntax.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/queries/wiql-syntax",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/add-tasks.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/add-tasks",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/adjust-work.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/adjust-work",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/assign-work-sprint.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/assign-work-sprint",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/best-practices-scrum.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/best-practices-scrum",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/define-sprints.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/define-sprints",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/forecast.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/forecast",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/scrum-key-concepts.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/scrum-key-concepts",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/scrum-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/scrum-overview",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/set-capacity.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/set-capacity",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/share-plan.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/share-plan",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/sprints/task-board.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/sprints/task-board",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/about-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/about-work-items",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/agile-glossary.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/agile-glossary",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/best-tool-add-update-link-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/best-tool-add-update-link-work-items",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/email-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/email-work-items",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/quick-ref.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/quick-ref",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/work-item-fields.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/work-item-fields",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/work-item-url-hyperlink.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/work-item-url-hyperlink",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/workflow-and-state-categories.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/workflow-and-state-categories",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/agile-process-workflow.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/agile-process-workflow",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/agile-process.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/agile-process",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/basic-field-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/basic-field-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/changes-to-process-templates.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/changes-to-process-templates",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/choose-process.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/choose-process",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi-process-workflow.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi-process-workflow",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi-process.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi-process",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/guidance-code-review-feedback-field-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/guidance-code-review-feedback-field-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/manage-process-templates.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/manage-process-templates",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/scrum-process-workflow.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/scrum-process-workflow",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/scrum-process.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/scrum-process",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/work-item-field.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/work-item-field",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-background-to-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-build-product.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-build-product",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-create-solution-architecture.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-create-solution-architecture",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-develop-requirements.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-develop-requirements",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-engineering.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-engineering",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-implement-development-tasks.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-implement-development-tasks",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-iteration-activities.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-iteration-activities",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-manage-change.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-manage-issues-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-issues-cmmi",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-manage-risks.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-risks",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-plan-a-project-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-a-project-cmmi",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-project-activities.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-activities",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-project-inception.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-inception",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-project-management.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-project-management",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/work-items/guidance/cmmi/track-bugs.md",
+      "redirect_url": "/previous-versions/azure/devops/boards/work-items/guidance/cmmi/track-bugs",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/faqs.yml",
+      "redirect_url": "/previous-versions/azure/devops/boards/faqs",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/boards/index.yml",
+      "redirect_url": "/previous-versions/azure/devops/boards/index",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/about-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/about-permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/about-security-identity.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/about-security-identity",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/access-levels.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/access-levels",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/add-ad-aad-built-in-security-groups.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/add-ad-aad-built-in-security-groups",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/add-users-team-project.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/add-users-team-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/change-access-levels.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/change-access-levels",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/change-individual-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/change-individual-permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/default-git-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/default-git-permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/default-tfvc-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/default-tfvc-permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/export-users-audit-log.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/export-users-audit-log",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/get-started-stakeholder.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/get-started-stakeholder",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/lookup-organization-owner-admin.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/lookup-organization-owner-admin",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/manage-tokens-namespaces.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/manage-tokens-namespaces",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/namespace-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/namespace-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/permissions-access-work-tracking.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/permissions-access-work-tracking",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/permissions-access.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/permissions-access",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/permissions-lookup-guide.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/permissions-lookup-guide",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/quick-reference-index-security.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/quick-reference-index-security",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/remove-users-prohibit-access.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/remove-users-prohibit-access",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/restrict-access.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/restrict-access",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/security-glossary.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/security-glossary",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/security-tools-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/security-tools-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/set-permissions-access-test.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/set-permissions-access-test",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/set-permissions-access-work-tracking.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/set-permissions-access-work-tracking",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/set-project-collection-level-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/set-project-collection-level-permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/set-sharepoint-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/set-sharepoint-permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/stakeholder-access.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/stakeholder-access",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/troubleshoot-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/troubleshoot-permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/security/view-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/security/view-permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/projects/about-projects.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/projects/about-projects",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/projects/connect-to-projects.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/projects/connect-to-projects",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/projects/create-project.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/projects/create-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/projects/delete-project.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/projects/delete-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/projects/faq-create-project.yml",
+      "redirect_url": "/previous-versions/azure/devops/organizations/projects/faq-create-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/projects/project-team-quick-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/projects/project-team-quick-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/projects/resources-granted-to-project-members.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/projects/resources-granted-to-project-members",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/projects/save-project-data.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/projects/save-project-data",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/projects/tf31002-unable-connect-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/projects/tf31002-unable-connect-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/about-areas-iterations.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/about-areas-iterations",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/about-settings.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/about-settings",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/about-teams-and-settings.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/about-teams-and-settings",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/add-team-administrator.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/add-team-administrator",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/add-teams.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/add-teams",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/manage-teams.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/manage-teams",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/naming-restrictions.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/naming-restrictions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/rename-remove-team.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/rename-remove-team",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/set-area-paths.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/set-area-paths",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/set-iteration-paths-sprints.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/set-iteration-paths-sprints",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/set-working-days.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/set-working-days",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/set-your-preferences.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/set-your-preferences",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/show-bugs-on-backlog.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/show-bugs-on-backlog",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/organizations/settings/timezone-settings-usage.md",
+      "redirect_url": "/previous-versions/azure/devops/organizations/settings/timezone-settings-usage",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/build/migrate-from-xaml-builds.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/build/migrate-from-xaml-builds",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/scripts/logging-commands.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/scripts/logging-commands",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/scripts/cli/pipeline-variable-group-secret-nonsecret-variables.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/scripts/cli/pipeline-variable-group-secret-nonsecret-variables",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/tasks/package/prev-versions/nuget-installer-0.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/tasks/package/prev-versions/nuget-packager-0.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-packager-0",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/tasks/package/prev-versions/nuget-publisher-0.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/tasks/package/prev-versions/nuget-publisher-0",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/tasks/utility/manual-validation.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/tasks/utility/manual-validation",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/add-modify-field.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/add-modify-field",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/add-modify-wit.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/add-modify-wit",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/add-portfolio-backlogs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/add-portfolio-backlogs",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/add-wits-to-backlogs-and-boards.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/add-wits-to-backlogs-and-boards",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/customize-wit-form.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/customize-wit-form",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/customize-work.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/customize-work",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/on-premises-xml-process-model.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/on-premises-xml-process-model",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/quick-reference-index-boards-settings.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/quick-reference-index-boards-settings",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/troubleshoot-process-configuration.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/troubleshoot-process-configuration",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/add-link-type-definitions-to-a-process-template.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-link-type-definitions-to-a-process-template",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/add-reports-to-the-process-template.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-reports-to-the-process-template",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/add-type-wit-category-definitions-process-template.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-type-wit-category-definitions-process-template",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/add-wit-definitions-process-template.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-wit-definitions-process-template",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/add-work-item-instance-process-template.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-work-item-instance-process-template",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/add-work-item-queries-process-template.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/add-work-item-queries-process-template",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/configure-initial-groups-teams-members-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/configure-initial-groups-teams-members-permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/control-access-to-functional-areas.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/control-access-to-functional-areas",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/customize-process.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/customize-process",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/define-classification-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-classification-plug-in",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/define-dependencies-plug-ins-groups-tasks.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-dependencies-plug-ins-groups-tasks",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/define-groups-teams-permissions-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-groups-teams-permissions-plug-in",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/define-initial-configuration-build.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-build",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/define-initial-configuration-lab-management.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-lab-management",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/define-initial-configuration-test-manager.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-test-manager",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/define-initial-configuration-version-control.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-initial-configuration-version-control",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/define-objects-track-work-items-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-objects-track-work-items-plug-in",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/define-project-portal-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-project-portal-plug-in",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/define-root-tasks-process-template-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-root-tasks-process-template-plug-in",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/define-tasks-to-process-a-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-tasks-to-process-a-plug-in",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/define-work-item-query-process-template.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/define-work-item-query-process-template",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/index.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/index",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/overview-process-template-files.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/overview-process-template-files",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/process-template-plug-ins-xml-elements-index.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/process-template-plug-ins-xml-elements-index",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/process-templates/process-template-xml-elements-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/process-templates/process-template-xml-elements-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/manage-global-lists-for-work-item-types.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/manage-global-lists-for-work-item-types",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/manage-link-types.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/manage-link-types",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/manage-work-item-fields.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/manage-work-item-fields",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/rebuild-client-cache.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/rebuild-client-cache",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/remove-work-items-permanently.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/remove-work-items-permanently",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/tcm-customize-manage-test-experience.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/tcm-customize-manage-test-experience",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/witadmin-import-export-categories.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-categories",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/witadmin-import-export-global-workflow.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-global-workflow",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/witadmin-import-export-manage-wits.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-manage-wits",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/witadmin/witadmin-import-export-process-configuration.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/witadmin/witadmin-import-export-process-configuration",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/add-or-modify-work-item-fields-to-support-reporting.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/add-the-attachments-control.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/add-the-attachments-control",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/all-field-xml-elements-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/all-field-xml-elements-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/all-form-xml-elements-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/all-form-xml-elements-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/all-witd-xml-elements-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/all-witd-xml-elements-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/all-workflow-xml-elements-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/all-workflow-xml-elements-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/apply-pattern-matching-to-string-field.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/apply-pattern-matching-to-string-field",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/assign-conditional-based-values-and-rules.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/assign-conditional-based-values-and-rules",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/automate-field-assignments-state-transition-reason.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/automate-field-assignments-state-transition-reason",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/categories-xml-element-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/categories-xml-element-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/change-maximum-attachment-size-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/change-maximum-attachment-size-work-items",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/change-work-item-form-layout.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/change-work-item-form-layout",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/change-workflow-wit.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/change-workflow-wit",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/combine-list-types.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/combine-list-types",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/configure-network-adapter-automatically-adjust-speed.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/configure-network-adapter-automatically-adjust-speed",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/control-xml-element-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/control-xml-element-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/define-custom-link-type.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-custom-link-type",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/define-default-copy-value-field.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-default-copy-value-field",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/define-global-lists.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-global-lists",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/define-link-controls.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-link-controls",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/define-pick-lists.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/define-pick-lists",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/design-work-item-form.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/design-work-item-form",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/edit-wit-definition-add-web-content-form.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/edit-wit-definition-add-web-content-form",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/expand-list-items-and-exclude-groups-from-lists.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/expand-list-items-and-exclude-groups-from-lists",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/field-definition-element-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/field-definition-element-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/field-workflow-element-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/field-workflow-element-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/global-workflow-xml-element-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/global-workflow-xml-element-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/labeltext-and-text-xml-elements-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/labeltext-and-text-xml-elements-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/layout-xml-element-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/layout-xml-element-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/link-param-xml-elements-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/link-param-xml-elements-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/link-type-element-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/link-type-element-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/linkscontroloptions-elements.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/linkscontroloptions-elements",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/localization-and-globalization-of-witd-child-elements.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/localization-and-globalization-of-witd-child-elements",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/process-configuration-xml-element.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/process-configuration-xml-element",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/provide-help-text-hyperlinks-web-content-form.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/provide-help-text-hyperlinks-web-content-form",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/reportable-fields-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/reportable-fields-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/resolve-errors-received-when-configuring-features.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/resolve-errors-received-when-configuring-features",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/specify-work-item-form-controls.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/specify-work-item-form-controls",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/support-bug-update-status-using-my-work.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/support-bug-update-status-using-my-work",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/support-rollup-of-work-and-other-fields.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/support-rollup-of-work-and-other-fields",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/tab-xml-element-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/tab-xml-element-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/transition-xml-element.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/transition-xml-element",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/update-the-workflow-for-agile-team-projects.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/update-the-workflow-for-agile-team-projects",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/use-categories-to-group-work-item-types.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/use-categories-to-group-work-item-types",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/webpagecontroloptions-xml-elements-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/webpagecontroloptions-xml-elements-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/work-item-save-is-slow-to-complete.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/work-item-save-is-slow-to-complete",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/reference/xml/xml-element-reference.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/xml-element-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/get-started/index.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/get-started/index",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/get-started/what-is-repos.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/get-started/what-is-repos",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/about-pull-requests.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/about-pull-requests",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/cherry-pick.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/cherry-pick",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/clone.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/clone",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/commits.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/commits",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/complete-pull-requests.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/complete-pull-requests",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/create-a-readme.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/create-a-readme",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/create-branch.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/create-branch",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/creatingrepo.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/creatingrepo",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/delete-git-branch.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/delete-git-branch",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/git-branching-guidance.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/git-branching-guidance",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/git-dates.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/git-dates",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/git-index-lock.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/git-index-lock",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/git-names.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/git-names",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/gitquickstart.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/gitquickstart",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/gitworkflow.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/gitworkflow",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/history.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/history",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/import-git-repository.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/import-git-repository",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/mapping-my-tfvc-actions-to-git.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/mapping-my-tfvc-actions-to-git",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/merging.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/merging",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/move-git-repos-between-team-projects.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/move-git-repos-between-team-projects",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/perform-migration-from-svn-to-git.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/perform-migration-from-svn-to-git",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/pull-request-notifications.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/pull-request-notifications",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/pull-requests.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/pull-requests",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/pulling.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/pulling",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/pushing.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/pushing",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/rebase.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/rebase",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/review-history.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/review-history",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/review-pull-requests.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/review-pull-requests",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/rpc-failures-http-postbuffer.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/rpc-failures-http-postbuffer",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/set-git-repository-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/set-git-repository-permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/undo.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/undo",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/git/view-pull-requests.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/git/view-pull-requests",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/repos/tfvc/set-tfvc-repository-permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/repos/tfvc/set-tfvc-repository-permissions",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/about-azure-devops-services-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/about-azure-devops-services-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/alm-devops-features.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/alm-devops-features",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/code-with-git.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/code-with-git",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/devops-alm-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/devops-alm-overview",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/faqs.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/faqs",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/plan-your-azure-devops-org-structure.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/plan-your-azure-devops-org-structure",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/project-admin-tutorial.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/project-admin-tutorial",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/provide-feedback.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/provide-feedback",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/roles.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/roles",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/services.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/services",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/source-control.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/source-control",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/tools.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/tools",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/troubleshoot-connection.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/troubleshoot-connection",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/what-is-azure-devops.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/what-is-azure-devops",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/user-guide/work-team-explorer.md",
+      "redirect_url": "/previous-versions/azure/devops/user-guide/work-team-explorer",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/project/feedback/change-audio-device-annotation-tool.md",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/change-audio-device-annotation-tool",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/project/feedback/enable-remote-audio-capture.md",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/enable-remote-audio-capture",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/project/feedback/get-feedback.md",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/get-feedback",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/project/feedback/give-feedback.md",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/give-feedback",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/project/feedback/give-permissions-feedback.md",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/give-permissions-feedback",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/project/feedback/index.md",
+      "redirect_url": "/previous-versions/azure/devops/project/feedback/index",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/add-a-report-server.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/add-a-report-server",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/add-reports-to-a-team-project.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/add-reports-to-a-team-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/change-a-process-control-setting.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/change-a-process-control-setting",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/disable-data-warehouse.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/disable-data-warehouse",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/grant-permissions-to-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/grant-permissions-to-reports",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/locate-reports-after-upgrade.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/locate-reports-after-upgrade",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/manage-reports-data-warehouse-cube.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/manage-reports-data-warehouse-cube",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/manually-process-data-warehouse-and-cube.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/manually-process-data-warehouse-and-cube",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/rebuild-data-warehouse-and-cube.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/rebuild-data-warehouse-and-cube",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/resolve-schema-conflicts.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/resolve-schema-conflicts",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/review-team-activities-for-useful-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/review-team-activities-for-useful-reports",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/upload-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/upload-reports",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/view-organize-configure-reports-using-report-manager.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/view-organize-configure-reports-using-report-manager",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/admin/view-upload-organize-reporting-services-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/admin/view-upload-organize-reporting-services-reports",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/add-charts-to-dashboard.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/add-charts-to-dashboard",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/burndown-guidance.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/burndown-guidance",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/charts-dashboard-permissions-access.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/charts-dashboard-permissions-access",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/charts.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/charts",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/choose-source-data-authoring-tool.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/choose-source-data-authoring-tool",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/configure-sprint-burndown.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/configure-sprint-burndown",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/cumulative-flow-cycle-lead-time-guidance.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/cumulative-flow-cycle-lead-time-guidance",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/cumulative-flow.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/cumulative-flow",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/overview",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/team-dashboard.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/team-dashboard",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/team-velocity.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/team-velocity",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/dashboards/velocity-guidance.md",
+      "redirect_url": "/previous-versions/azure/devops/report/dashboards/velocity-guidance",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/address-inaccuracies-published-for-summary-values.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/address-inaccuracies-published-for-summary-values",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/backlog-overview-scrum.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/backlog-overview-scrum",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/bug-status-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/bug-status-report",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/bug-trends-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/bug-trends-report",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/build-quality-indicators-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/build-quality-indicators-report",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/build-success-over-time-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/build-success-over-time-report",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/build-summary-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/build-summary-report",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/burndown-and-burn-rate-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/burndown-and-burn-rate-report",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/components-data-warehouse.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/components-data-warehouse",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/create-a-detailed-report-using-report-designer.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/create-a-detailed-report-using-report-designer",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/create-a-report-server-project.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/create-a-report-server-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/create-aggregate-report-report-designer-analysis-services-cube.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/create-aggregate-report-report-designer-analysis-services-cube",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/create-and-manage-reporting-services-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/create-and-manage-reporting-services-reports",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/perspective-build-analyze-report-build-details-coverage.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/perspective-build-analyze-report-build-details-coverage",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/perspective-code-analyze-report-code-churn-coverage.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/perspective-code-analyze-report-code-churn-coverage",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/perspective-measure-groups-cube.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/perspective-measure-groups-cube",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/perspective-test-analyze-report-test-results.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/perspective-test-analyze-report-test-results",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/perspective-test-analyze-report-work.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/perspective-test-analyze-report-work",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/reactivations-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/reactivations-report",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/release-burndown.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/release-burndown",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/remaining-work-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/remaining-work-report",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/reporting-services-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/reporting-services-reports",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/requirements-overview-report-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/requirements-overview-report-cmmi",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/requirements-progress-report-cmmi.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/requirements-progress-report-cmmi",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/run-coverage-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/run-coverage-tables",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/shared-dimensions-in-the-analysis-services-cube.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/shared-dimensions-in-the-analysis-services-cube",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/sprint-burndown-scrum.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/sprint-burndown-scrum",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/status-on-all-iterations-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/status-on-all-iterations-report",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/stories-overview-report-agile.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/stories-overview-report-agile",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/stories-progress-report-agile.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/stories-progress-report-agile",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/table-reference-build-changeset.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-build-changeset",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/table-reference-build-coverage.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-build-coverage",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/table-reference-build-details.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-build-details",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/table-reference-build-project.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-build-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/table-reference-code-churn.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-code-churn",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/table-reference-current-work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-current-work-items",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/table-reference-relational-warehouse-database.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/table-reference-relational-warehouse-database",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/test-case-readiness-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/test-case-readiness-report",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/test-plan-progress-report.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/test-plan-progress-report",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/test-result-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/test-result-tables",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/unplanned-work.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/unplanned-work",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/velocity.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/velocity",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/work-item-category-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/work-item-category-tables",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/work-item-changeset-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/work-item-changeset-tables",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/work-item-history-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/work-item-history-tables",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/work-item-link-history-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/work-item-link-history-tables",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
+      "source_path": "docs/report/sql-reports/work-item-test-result-tables.md",
+      "redirect_url": "/previous-versions/azure/devops/report/sql-reports/work-item-test-result-tables",
+      "redirect_document_id": false,
+      "monikers": [
+        "tfs-2013"
+      ]
+    },
+    {
       "source_path": "docs/artifacts/nuget/bootstrap-nuget.md",
       "redirect_url": "/previous-versions/azure/devops/artifacts/nuget/bootstrap-nuget",
       "redirect_document_id": false

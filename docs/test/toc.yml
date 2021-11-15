@@ -1,109 +1,109 @@
-- name: Azure Test Plans 
-  href: index.yml
+- name: Azure Test Plans
   displayName: test plans
+  href: index.yml
 - name: About exploratory and manual testing
-  href: overview.md
   displayName: manual testing
+  href: overview.md
 - name: Get started
-  expanded: true
   items:
   - name: Navigate Test Plans
+    displayName: test suites tree, define, execute, chart
     href: navigate-test-plans.md
-    displayName: test suites tree, define, execute, chart 
   - name: Test objects and terms
-    href: test-objects-overview.md
     displayName: test plan, test case, test suites, test runs, test results, test points
+    href: test-objects-overview.md
   - name: Create test plans and test suites
+    displayName: create, plan
     href: create-a-test-plan.md
-    displayName: create, plan 
   - name: Create test cases
-    href: create-test-cases.md
     displayName: create, case
+    href: create-test-cases.md
   - name: Share steps between test cases
     href: share-steps-between-test-cases.md
   - name: Copy/clone test plans, suites, cases
+    displayName: copy, clone, import, export, test plans, test suites, test cases
     href: copy-clone-test-items.md
-    displayName: copy, clone, import, export, test plans, test suites, test cases 
   - name: Run manual tests
-    href: run-manual-tests.md
     displayName: manual test, run, test runs
+    href: run-manual-tests.md
   - name: Default permissions (Security)
     href: manual-test-permissions.md
+  expanded: true
 - name: Manual tests
   items:
   - name: Test different configurations
-    href: test-different-configurations.md
     displayName: configuration, testing
+    href: test-different-configurations.md
   - name: Repeat a test with different data
-    href: repeat-test-with-different-data.md
     displayName: data, testing, shared steps, shared parameters
+    href: repeat-test-with-different-data.md
   - name: Test from the Kanban board
-    href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
     displayName: inline testing
+    href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
   - name: Perform user acceptance testing
-    href: user-acceptance-testing.md
     displayName: user acceptance, testing
+    href: user-acceptance-testing.md
   - name: Collect diagnostic data
-    href: collect-diagnostic-data.md
     displayName: diagnostic, data, testing
+    href: collect-diagnostic-data.md
   - name: Delete test artifacts
+    displayName: delete, artifacts
     href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md
-    displayName: delete, artifacts 
-  - name: Set permissions and access 
-    href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+  - name: Set permissions and access
     displayName: access, permissions
+    href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
 - name: Automated tests
   items:
   - name: Associate automated tests with test cases
-    href: associate-automated-test-with-test-case.md
     displayName: test cases, automated, associate
+    href: associate-automated-test-with-test-case.md
   - name: Run automated tests from test plans
-    href: run-automated-tests-from-test-hub.md
     displayName: automated, test plans, run
+    href: run-automated-tests-from-test-hub.md
 - name: Track progress and results
   items:
   - name: Track test status
-    href: track-test-status.md
     displayName: track, status
+    href: track-test-status.md
   - name: Progress report
-    href: progress-report.md 
+    href: progress-report.md
   - name: Requirements traceability
     href: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md
   - name: Set test retention policies
-    href: how-long-to-keep-test-results.md
     displayName: results, logs
-- name: "Test & Feedback extension"
+    href: how-long-to-keep-test-results.md
+- name: Test & Feedback extension
   items:
   - name: Install the extension
-    href: perform-exploratory-tests.md
     displayName: extension, install
+    href: perform-exploratory-tests.md
   - name: Test in Connected mode
-    href: connected-mode-exploratory-testing.md
     displayName: connected, mode
+    href: connected-mode-exploratory-testing.md
   - name: Test in Standalone mode
-    href: standalone-mode-exploratory-testing.md
     displayName: standalone, mode
+    href: standalone-mode-exploratory-testing.md
   - name: Explore work items
-    href: explore-workitems-exploratory-testing.md
     displayName: items, workitems
+    href: explore-workitems-exploratory-testing.md
   - name: Add to existing bugs
-    href: add-to-bugs-exploratory-testing.md
     displayName: bugs, exploratory
+    href: add-to-bugs-exploratory-testing.md
   - name: Get insights from tests
-    href: insights-exploratory-testing.md
     displayName: insights, exploratory
+    href: insights-exploratory-testing.md
   - name: Request stakeholder feedback
-    href: request-stakeholder-feedback.md
     displayName: stakeholder, feedback, request
+    href: request-stakeholder-feedback.md
   - name: Provide stakeholder feedback
-    href: provide-stakeholder-feedback.md
     displayName: stakeholder, feedback, provide
+    href: provide-stakeholder-feedback.md
   - name: Get voluntary stakeholder feedback
-    href: voluntary-stakeholder-feedback.md
     displayName: stakeholder, feedback, voluntary
+    href: voluntary-stakeholder-feedback.md
   - name: Track stakeholder feedback requests
-    href: track-stakeholder-feedback.md
     displayName: stakeholder, feedback, track
+    href: track-stakeholder-feedback.md
 - name: Troubleshooting & Reference
   items:
   - name: Work item field index
@@ -111,14 +111,14 @@
   - name: Build and test integration fields
     href: ../boards/queries/build-test-integration.md
   - name: Manual testing FAQs
-    href: reference-qa.md 
+    href: reference-qa.md
   - name: TCM Reporting FAQs
     href: reference-tcm.md
   - name: Unable to connect
     href: ../organizations/projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
 - name: REST API Reference
   items:
-  - name: Test  
+  - name: Test
     href: /rest/api/azure/devops/test
   - name: Test Plans
     href: /rest/api/azure/devops/testplan/test-plans
