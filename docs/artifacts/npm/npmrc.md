@@ -36,35 +36,35 @@ We recommend using two **.npmrc_** files, the first one we will use to authentic
 
 ::: moniker-end
 
-    2. Select **npm** from the list of package types.
-    
-    3. If this is the first time using Azure Artifacts with npm, select **Get the tools** button and follow the instructions to install the prerequisites. 
-    
-    ::: moniker range=">= azure-devops"   
-    
-    4. Follow the instructions under the **Project setup** section to set up your project.
-    
-        :::image type="content" source="../media/npm-azure-devops-newnav.png" alt-text="Screenshot showing the steps to set up the project and publish and restore packages.":::
-    
-    ::: moniker-end
-    
-    ::: moniker range="> tfs-2018 < azure-devops"
-    
-    4. Follow the instructions in the **Project setup** section to set up your project.
-    
-       :::image type="content" source="../media/connect-to-feed-devops-server.png" alt-text="Screenshot showing the steps to set up the project and restore packages.":::
-    
-    ::: moniker-end
-    
-    ::: moniker range=">= tfs-2017 < azure-devops-2019"
-    
-    4. Follow the instructions to set up your project.
-    
-        :::image type="content" source="../media/connect-to-feed-npm-registry.png" alt-text="Screenshot showing the steps to set up the project in TFS.":::
-    
-    ::: moniker-end
+2. Select **npm** from the list of package types.
+
+3. If this is the first time using Azure Artifacts with npm, select **Get the tools** button and follow the instructions to install the prerequisites. 
+
+::: moniker range=">= azure-devops"   
+
+4. Follow the instructions under the **Project setup** section to set up your project.
+
+    :::image type="content" source="../media/npm-azure-devops-newnav.png" alt-text="Screenshot showing the steps to set up the project and publish and restore packages.":::
+
+::: moniker-end
+
+::: moniker range="> tfs-2018 < azure-devops"
+
+4. Follow the instructions in the **Project setup** section to set up your project.
+
+   :::image type="content" source="../media/connect-to-feed-devops-server.png" alt-text="Screenshot showing the steps to set up the project and restore packages.":::
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops-2019"
+
+4. Follow the instructions to set up your project.
+
+    :::image type="content" source="../media/connect-to-feed-npm-registry.png" alt-text="Screenshot showing the steps to set up the project in TFS.":::
+
+::: moniker-end
         
-2. On your development machine, place the second *.npmrc* file in your *$HOME* for Linux/Mac or *$env.HOME* for Windows. This *.npmrc* file should contain all your registries' credentials. 
+On your development machine, place the second *.npmrc* file in your *$HOME* for Linux/Mac or *$env.HOME* for Windows. This *.npmrc* file should contain all your registries' credentials. 
 
 ## Credentials setup
 
@@ -301,7 +301,7 @@ When using a task runner, you'll need to add the **npm Authenticate** task at th
 
 - Unable to authenticate:
 
-    If you are running into a E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with the **-F** flag to re-authenticate.
+    If you are running into a E401 error: `code E401 npm ERR! Unable to authenticate`. Run the `vsts-npm-auth` command with the **-F** flag to reauthenticate.
 
     ```Command
     vsts-npm-auth -config .npmrc -F
