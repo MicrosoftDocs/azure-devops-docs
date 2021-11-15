@@ -183,7 +183,7 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Notifications or alerts](permissions.md#alerts)                                    |       |  ✔️ |     | 
 | [Releases](../../pipelines/policies/permissions.md#set-release-permissions)             |   ✔️  |  ✔️ |     | 
 
-In addition, Lab Management permissions can be managed through the [TFSLabConfig command-line tool](/azure/devops/server/command-line/tfslabconfig-cmd).
+In addition, Lab Management permissions can be managed through the [TFSLabConfig command-line tool](/azure/devops/server/command-line/tfsconfig-cmd).
    
 ::: moniker-end
 
