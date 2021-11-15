@@ -59,7 +59,7 @@ Also, machine-level caches and configuration persist from run to run, which can 
 You can install the agent on Linux, macOS, or Windows machines. You can also install an agent on a Docker container. For more information about installing a self-hosted agent, see:
 
 * [macOS agent](v2-osx.md)
-* [Linux agent](v2-linux.md) (x64, ARM, RHEL6)
+* [Linux agent](v2-linux.md) (x64, ARM, ARM64 RHEL6)
 * [Windows agent](v2-windows.md) (x64, x86)
 * [Docker agent](docker.md)
 

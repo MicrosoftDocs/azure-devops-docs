@@ -46,6 +46,7 @@ We support the following subset of .NET Core supported distributions:
 - ARM32 (see note 2)
   - Debian 9
   - Ubuntu 18.04
+- ARM64
 
 > [!NOTE]
 > Note 1: RHEL 6 and CentOS 6 require installing the specialized `rhel.6-x64` version of the agent.
