@@ -34,7 +34,7 @@ Delivery Plans supports these tasks:
 - View dependencies that exist between work items. 
 - Enable stakeholders to view plans.
  
-Any plan that you created with the original Delivery Plans extension will work with the Delivery Plans feature. You don't have to migrate any data or reconfigure plan settings. To learn how to add or edit a plan, see [Add or edit a delivery plan](add-edit-delivery-plan.md). 
+Any plan that you created with the original Delivery Plans extension works with the Delivery Plans feature. You don't have to migrate any data or reconfigure plan settings. To learn how to add or edit a plan, see [Add or edit a delivery plan](add-edit-delivery-plan.md). 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of a feature roadmap in Delivery Plans.](media/plans/intro-image.png)
