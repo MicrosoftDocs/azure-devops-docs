@@ -33,6 +33,8 @@ same data.
 ## Add parameters to a test case
 ::: moniker range=">=azure-devops-2020"
 
+You can add parameters to your tests.
+
 1. Create a parameter by typing a name preceded by "**@**" in the actions and expected results of your test steps.
 
    ![Screenshot shows how to enter parameter names and values.](media/repeat-test-with-different-data/parameter-steps-values.png)
@@ -64,6 +66,7 @@ You can convert existing parameters to shared parameters so that you can use the
 1. After you've created a shared parameter set, open another test case and add the shared parameter set to that test case.
 
    ![Screenshot shows adding the shared parameter set to a test case.](media/repeat-test-with-different-data/add-shared-parameter-set.png)
+
    You can search for the shared parameter set by name.
 
    The shared parameter set is displayed in the **Parameter values** section after you add it.
@@ -78,9 +81,9 @@ You can convert existing parameters to shared parameters so that you can use the
 1. Add, edit, and rename your shared parameter sets in the **Parameters** page.
    View the test cases that reference them in the **Test cases** pane.
 
-   ![Screenshot shows options to add, edit, view, and rename a shared parameter](media/repeat-test-with-different-data/add-shared-parameter-set.png)
+   ![Screenshot shows options to add, edit, view, and rename a shared parameter.](media/repeat-test-with-different-data/shared-parameter-sets.png)
 
-1. Each shared parameter set is a work item. Open the **Properties** page to view or make changes to this work item. 
+1. Each shared parameter set is a work item. Open the **Properties** page to view or make changes to this work item.
    For example, you can assign owners and track changes.
 
 You can't add more than one shared parameter set to a single test case.
@@ -140,6 +143,7 @@ You can also copy the data from your grid back into Excel.
 
 ## Run a test case with parameters
 ::: moniker range=">=azure-devops-2020"
+You can run a test case that uses parameters.
 
 1. Select a test case with parameters and start running it.
    The Test Runner shows the first row of parameter values.
@@ -151,7 +155,7 @@ You can also copy the data from your grid back into Excel.
 
    ![Screenshot shows going on to the next iteration of the test.](media/repeat-test-with-different-data/next-iteration.png)
 
-1. Use the drop-down menu to navigate to other iterations.
+1. Use the menu to navigate to other iterations.
 
    ![Screenshot shows navigating to other iterations.](media/repeat-test-with-different-data/navigate-iterations.png)
 
