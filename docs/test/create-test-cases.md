@@ -72,7 +72,7 @@ To assign test configurations to all test cases in a test suite, select the test
 
 In the **Assign configurations to test suite** dialog box, select the configurations you want.
 
-![Screenshot shows the Assign configurations to test suite dialog box with some options selected.](media/create-test-cases/assign-configurations-test-suite.md)
+![Screenshot shows the Assign configurations to test suite dialog box with some options selected.](media/create-test-cases/assign-configurations-test-suite.png)
 
 You can also assign configurations to individual test cases. Select one or more test cases, select **More options** or right-click to open the context menu, and then select **Assign configuration**.
 
@@ -153,7 +153,7 @@ To open the **Grid** view, select the **Grid View** icon at the right.
 
 Instead, you can select several test cases and open them for editing in the Grid view. In the context menu, select **Edit test case(s) in grid**.
 
-![Screenshot shows several test cases selected with the context menu open and Edit test case(s) in grid selected](media/create-test-cases/edit-multiple-test-cases-grid.md)
+![Screenshot shows several test cases selected with the context menu open and Edit test case(s) in grid selected](media/create-test-cases/edit-multiple-test-cases-grid.png)
 
 On the **Grid** context menu, you can add, delete, or clear rows.
 
