@@ -64,6 +64,24 @@ For an overview of test artifacts, see [Test objects and terms](test-objects-ove
 
    Now you've created a test case that you can run.
 
+### Assign configurations to test cases
+
+You can specify configurations, such as different operating systems, web browsers, and other variations for your tests.
+
+To assign test configurations to all test cases in a test suite, select the test suite, select **More options** or right-click to open the context menu, and then select **Assign configurations**.
+
+In the **Assign configurations to test suite** dialog box, select the configurations you want.
+
+![Screenshot shows the Assign configurations to test suite dialog box with some options selected.](media/create-test-cases/assign-configurations-test-suite.md)
+
+You can also assign configurations to individual test cases. Select one or more test cases, select **More options** or right-click to open the context menu, and then select **Assign configuration**.
+
+The **Assign configurations to selected test cases** dialog box opens. Make and save your changes.
+
+For more information about configurations, see [Test different configurations](test-different-configurations.md).
+
+### Reorder test cases
+
 You can reorder manual test cases in static suites, requirement-based suites, and query-based suites.
 Open a test case, then use the up and down arrows to change the order.
 
@@ -129,17 +147,21 @@ After reordering the tests, you can sort them by the **Order** field and then ru
 
 You can copy and paste test cases into the **Grid** view.
 
-1. To open the **Grid** view, select the **Grid View** icon at the right.
+To open the **Grid** view, select the **Grid View** icon at the right.
 
-   ![Screenshot shows the Grid View button used to open the Grid view.](media/create-test-cases/grid-view-button.png)
+![Screenshot shows the Grid View button used to open the Grid view.](media/create-test-cases/grid-view-button.png)
 
-1. On the **Grid** context menu, you can add, delete, or clear rows.
+Instead, you can select several test cases and open them for editing in the Grid view. In the context menu, select **Edit test case(s) in grid**.
 
-   ![Screenshot shows the Grid context menu to insert, delete, or clear rows.](media/create-test-cases/grid-context-menu.png)
+![Screenshot shows several test cases selected with the context menu open and Edit test case(s) in grid selected](media/create-test-cases/edit-multiple-test-cases-grid.md)
 
-   You can use the **Grid** view when you add multiple test cases to the test suite:
+On the **Grid** context menu, you can add, delete, or clear rows.
 
-   ![Screenshot shows option to add test cases using the Grid view.](media/create-test-cases/add-test-cases-grid.png)
+![Screenshot shows the Grid context menu to insert, delete, or clear rows.](media/create-test-cases/grid-context-menu.png)
+
+You can use the **Grid** view when you add multiple test cases to the test suite:
+
+![Screenshot shows option to add test cases using the Grid view.](media/create-test-cases/add-test-cases-grid.png)
 
 You can edit other fields in the **Grid** view.
 In the **List** view, use the column options to select the fields in the test case work item.
@@ -271,7 +293,7 @@ You can open a test case to view it or edit it.
 To open a test case in a test suite, in the **Define** tab, double-select the name of the test case to open.
 In the **Execute** tab, select a test case, open its context menu, and select **Edit test case**.
 
-![Screenshot show the Edit test case option for a test case in the context menu](media/create-test-cases/open-test-case.png)
+![Screenshot show the Edit test case option for a test case in the context menu](media/create-test-cases/open-test-case-edit.png)
 
 A test case can be linked to test suites, requirements, and bugs.
 To see linked items, in the **Define** tab, open the context menu for a test case, and select **View Linked Items**.
