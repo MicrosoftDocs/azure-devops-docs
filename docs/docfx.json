@@ -230,6 +230,183 @@
       "exclude_monikers": {
         "reference/error/**/*.md": [
           "azure-devops"
+        ],
+        "boards/backlogs/**/*.md": [
+          "tfs-2013"
+        ],
+        "boards/boards/**/*.md": [
+          "tfs-2013"
+        ],
+        "boards/breadcrumb/**/*.md": [
+          "tfs-2013"
+        ],
+        "boards/extensions/**/*.md": [
+          "tfs-2013"
+        ],
+        "boards/get-started/**/*.md": [
+          "tfs-2013"
+        ],
+        "boards/github/**/*.md": [
+          "tfs-2013"
+        ],
+        "boards/includes/**/*.md": [
+          "tfs-2013"
+        ],
+        "boards/integrations/**/*.md": [
+          "tfs-2013"
+        ],
+        "boards/media/**/*.md": [
+          "tfs-2013"
+        ],
+        "boards/plans/**/*.md": [
+          "tfs-2013"
+        ],
+        "boards/queries/**/*.md": [
+          "tfs-2013"
+        ],
+        "boards/sprints/**/*.md": [
+          "tfs-2013"
+        ],
+        "boards/work-items/**/*.md": [
+          "tfs-2013"
+        ],
+        "boards/faqs.yml": [
+          "tfs-2013"
+        ],
+        "boards/index.yml": [
+          "tfs-2013"
+        ],
+        "organizations/security/**/*.md": [
+          "tfs-2013"
+        ],
+        "organizations/projects/media/**/*.md": [
+          "tfs-2013"
+        ],
+        "organizations/projects/about-projects.md": [
+          "tfs-2013"
+        ],
+        "organizations/projects/connect-to-projects.md": [
+          "tfs-2013"
+        ],
+        "organizations/projects/create-project.md": [
+          "tfs-2013"
+        ],
+        "organizations/projects/delete-project.md": [
+          "tfs-2013"
+        ],
+        "organizations/projects/faq-create-project.yml": [
+          "tfs-2013"
+        ],
+        "organizations/projects/faq-rename-project.yml": [
+          "tfs-2013"
+        ],
+        "organizations/projects/project-team-quick-reference.md": [
+          "tfs-2013"
+        ],
+        "organizations/projects/project-vision-status.md": [
+          "tfs-2013"
+        ],
+        "organizations/projects/rename-project.md": [
+          "tfs-2013"
+        ],
+        "organizations/projects/resources-granted-to-project-members.md": [
+          "tfs-2013"
+        ],
+        "organizations/projects/restore-project.md": [
+          "tfs-2013"
+        ],
+        "organizations/projects/save-project-data.md": [
+          "tfs-2013"
+        ],
+        "organizations/projects/tf31002-unable-connect-tfs.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/about-areas-iterations.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/about-settings.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/about-teams-and-settings.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/add-team-administrator.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/add-teams.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/manage-authorizations.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/manage-banners.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/manage-teams.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/naming-restrictions.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/rename-remove-team.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/search-settings.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/select-backlog-navigation-levels.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/set-area-paths.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/set-iteration-paths-sprints.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/set-services.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/set-working-days.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/set-your-preferences.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/show-bugs-on-backlog.md": [
+          "tfs-2013"
+        ],
+        "organizations/settings/timezone-settings-usage.md": [
+          "tfs-2013"
+        ],
+        "pipelines/**/*.md": [
+          "tfs-2013"
+        ],
+        "reference/**/*.md": [
+          "tfs-2013"
+        ],
+        "repos/**/*.md": [
+          "tfs-2013"
+        ],
+        "user-guide/**/*.md": [
+          "tfs-2013"
+        ],
+        "project/feedback/**/*.md": [
+          "tfs-2013"
+        ],
+        "report/admin/**/*.md": [
+          "tfs-2013"
+        ],
+        "report/dashboards/**/*.md": [
+          "tfs-2013"
+        ],
+        "report/sql-reports/**/*.md": [
+          "tfs-2013"
+        ],
+        "repos/get-started/**/*.md": [
+          "tfs-2013"
+        ],
+        "repos/git/**/*.md": [
+          "tfs-2013"
         ]
       }
     },
