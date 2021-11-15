@@ -3,7 +3,7 @@ title: Run a self-hosted agent in Docker
 ms.topic: conceptual
 description: Instructions for running your Azure Pipelines agent in Docker
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
-ms.date: 02/12/2021
+ms.date: 11/15/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -539,3 +539,10 @@ Run this command:
    git push
    ```
 Try again. You no longer get the error.
+
+## Related articles
+
+- [Self-hosted Windows agents](v2-windows.md)
+- [Self-hosted Linux agents](v2-linux.md)
+- [Self-hosted macOS agents](v2-osx.md)
+- [Microsoft-hosted agents](hosted.md)
