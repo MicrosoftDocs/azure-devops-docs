@@ -1,46 +1,41 @@
 ---
 title: Publish a Maven artifact using Gradle
-description: Publish a Maven artifact using Gradle in an Azure DevOps Services build
+description: How to publish a Maven artifact to Azure Artifacts using Gradle 
 ms.technology: devops-artifacts
 ms.reviewer: dastahel
 ms.topic: conceptual
-ms.date: 06/09/2020
+ms.date: 11/16/2021
 monikerRange: '>= tfs-2018'
 ---
 
 
-# Publish a Maven artifact using Gradle
+# Publish Maven artifacts using Gradle
 
-**Azure DevOps Services** | **TFS 2018**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-This topic covers creating and publishing a Maven artifact with Gradle using Azure DevOps Services.
+This topic covers creating and publishing a Maven artifact to an Azure Artifacts feed with Gradle.
 
 ## Prerequisites
 
-Before you start, make sure you have the [Gradle build tool](https://gradle.org/install/) installed.
+- Install [Gradle build tool](https://gradle.org/install/).
 
-Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7 or later). If you don't have it already, you can get the Java JDK from this link: [Java SE Downloads](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
+- [Java SE Downloads](https://www.oracle.com/technetwork/java/javase/downloads/index.html) required for Gradle.
 
-To verify that you have the Java JDK or JRE version 7 or later installed, run the following command in an elevated command prompt:
+## Set up authentication
 
-```CLI
+To make sure you have all the prerequisites set up, run the following command in an elevated command prompt to check which Java version is installed on your machine.
+
+```Command
 java -version
 ```
 
-If the above command returns a java version then you can now install Gradle, otherwise go back and install Java JDK or JRE first. 
+If the above command doesn't return a java version, make sure you go back to the prerequisites and install the Java JDK or JRE first. 
 
-Once Gradle installation is complete, you can confirm the installation with the following command:
+To confirm the installation of Gradle, run the following command in an elevated command prompt:
 
-```CLI
+```Command
 gradle -v
 ```
-
-You're ready to start! This tutorial will guide you through the process of publishing a Maven artifact using Gradle.
-
-> [!NOTE]
-> This topic assumes you have cloned your Git repo to your local machine. If you aren't sure how to clone your repo, read [Clone an existing Git repo](../../repos/git/clone.md).
-
-## Set up authentication
 
 First, you need a **gradle.properties** file that contains an Azure DevOps Services credential token.
 
