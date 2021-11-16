@@ -64,6 +64,8 @@ For an overview of test artifacts, see [Test objects and terms](test-objects-ove
 
    Now you've created a test case that you can run.
 
+You can also copy test cases. For more information, see [Copy or clone stories, issues and other work items](../boards/backlogs/copy-clone-work-items.md).
+
 ### Assign configurations to test cases
 
 You can specify configurations, such as different operating systems, web browsers, and other variations for your tests.
@@ -379,9 +381,8 @@ To delete test plans and test suites, you must be a member of the Project Admini
 ## Related articles
 
 - [Share steps between test cases](share-steps-between-test-cases.md)
+- [Copy or clone stories, issues and other work items](../boards/backlogs/copy-clone-work-items.md)
 - [Test different configurations](test-different-configurations.md)
 - [Repeat a test with different data](repeat-test-with-different-data.md)
 - [Test objects and terms](test-objects-overview.md) 
 - [FAQs for manual testing](reference-qa.md#testcases)
-
-
