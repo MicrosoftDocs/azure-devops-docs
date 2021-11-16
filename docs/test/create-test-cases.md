@@ -49,7 +49,7 @@ For an overview of test artifacts, see [Test objects and terms](test-objects-ove
    > [!NOTE]
    > The [test suite](create-a-test-plan.md) shown here was created from a User Story work item in the team's backlog board.
    > When you add a test case to this kind of suite, the test case is automatically linked to the backlog item.
-   > To create test cases this way, open the shortcut menu for the work item and choose **Add test**.
+   > To create test cases this way, open the context menu for the work item and choose **Add test**.
 
 1. In the new work item, enter a title. Select the **Click or type here to add a step** option.
 
@@ -91,13 +91,13 @@ There are also options to change order in the step context menu.
 
 ### Add existing test cases to a test suite
 
-Your can add existing test cases to a test suite.
+You can add existing test cases to a test suite.
 
-1. Select a test suite. From the **New Test Case** dropdown menu, select **Add existing test case**.
+1. Select a test suite. From the **New Test Case** menu, select **Add existing test case**.
 
    ![Screenshot shows the Add existing test cases option to select.](media/create-test-cases/add-existing-test-cases.png)
 
-1. In the Add test cases to suite dialog box, add search clauses, as needed, and then select **Run query**.
+1. In the **Add test cases to suite** dialog box, add search clauses, as needed, and then select **Run query**.
 
    ![Screenshot shows the Add test cases to suite dialog box with the Run query button highlighted.](media/create-test-cases/add-test-case-suite.png)
 
@@ -151,9 +151,9 @@ To open the **Grid** view, select the **Grid View** icon at the right.
 
 ![Screenshot shows the Grid View button used to open the Grid view.](media/create-test-cases/grid-view-button.png)
 
-Instead, you can select several test cases and open them for editing in the Grid view. In the context menu, select **Edit test case(s) in grid**.
+Instead, you can select several test cases and open them for editing in the **Grid** view. In the context menu, select **Edit test case(s) in grid**.
 
-![Screenshot shows several test cases selected with the context menu open and Edit test case(s) in grid selected](media/create-test-cases/edit-multiple-test-cases-grid.png)
+![Screenshot shows several test cases selected with the context menu open and Edit test case(s) in grid selected.](media/create-test-cases/edit-multiple-test-cases-grid.png)
 
 On the **Grid** context menu, you can add, delete, or clear rows.
 
@@ -184,7 +184,7 @@ You can use the **Grid View** when you add multiple test cases to the test suite
 
 ![Create new test cases using the grid.](media/create-test-cases/NewTestCasesUsingGrid.png)
 > [!NOTE]
-> Do not use the Team plugin for Excel to add or update test case work items.
+> Do not use the Teams plugin for Excel to add or update test case work items.
 > Excel cannot parse the format used to store test steps, and in some cases 
 > this may affect the formatting of the test case work items. 
 
@@ -209,7 +209,7 @@ You can copy the data from the **Grid** view and paste it into your Excel worksh
 Copying does not copy test step formatting, other than multiline, into the worksheet.
 
 > [!NOTE]
-> Do not use the Team plugin for Excel to add or update test case work items.
+> Do not use the Teams plugin for Excel to add or update test case work items.
 > Excel cannot parse the format used to store test steps, and in some cases this may affect the formatting of the test case work items.
 
 ::: moniker-end
@@ -325,7 +325,7 @@ You can also create suites based on queries when you use tags.
 
 ### Rename or remove test cases
 
-You can rename or remove test cases. Open the test case from its shortcut menu.
+You can rename or remove test cases. Open the test case from its context menu.
 
 ![Screenshot shows a test case with its context menu with Open test case selected.](media/create-test-cases/open-test-case-option.png)
 
