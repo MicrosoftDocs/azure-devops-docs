@@ -138,7 +138,7 @@ You can build and test your project on multiple platforms. One way to do it is w
 
 To build a project using different versions of that language, you can use a `matrix` of versions and a variable. In this step, you can either build the Java project with two different versions of Java on a single platform or run different versions of Java on different platforms.
 
->[NOTE] You cannot use `strategy` multiples times in a context.
+>[!NOTE]  You cannot use `strategy` multiples times in a context.
 
 * If you want to build on a single platform and multiple versions, add the following matrix to your `azure-pipelines.yml` file before the Maven task and after the `vmImage`.
 
