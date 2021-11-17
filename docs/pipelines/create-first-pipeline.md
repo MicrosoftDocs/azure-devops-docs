@@ -113,7 +113,7 @@ Learn more about [working with Python](ecosystems/python.md) in your pipeline.
 To get started, fork the following repository into your GitHub account.
 
 ```
-https://github.com/MicrosoftDocs/pipelines-javascript
+https://github.com/Azure-Samples/js-e2e-express-server
 ```
 
 ### Create your first JavaScript pipeline
