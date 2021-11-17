@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 10/30/2021
+ms.date: 11/17/2021
 ---
 
 
@@ -54,7 +54,20 @@ For information on working with dependencies, see [Track dependencies](track-dep
 
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans.  
 - To open or modify a work item or add work items to a plan, you must have the **Edit work items in this node** set to **Allow** for the Area Paths assigned to the work item. For details, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path). 
- 
+
+
+**For work items and dependency lines to appear on the plan**
+- Work items must belong to a team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics). Only work items belonging to a category selected for viewing on a team's backlog appear on the plan. 
+- [Team product or portfolio backlog must be enabled](../../organizations/settings/select-backlog-navigation-levels.md). 
+- [Sprints must be selected for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.
+- [Start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) must be defined for each iteration.
+- [Iteration paths](../sprints/assign-work-sprint.md) must be assigned to each work item.  
+- For dependency icons and lines to show, [work items must be linked](../backlogs/add-link.md) using **Predecessor-Successor** link type or other custom dependency link type (remote link types not supported). You can only add custom link types for on-premises environments.
+
+> [!TIP]  
+> If you edit a plan and don't see the changes you made appear in the plan, refresh your browser. A browser refresh is needed some times to trigger the updates.  
+
+
 ## Review a plan with your teams
 
 It takes multiple, autonomous teams to develop large software projects. Autonomous teams manage their own backlog and priority, which contributes to a unified direction for that project. Review [Agile culture](agile-culture.md) for a discussion of autonomous teams and organizational alignment. 
