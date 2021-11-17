@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 11/17/2021
 ---
 
 
@@ -104,6 +104,20 @@ For details, see the following articles:
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md)
 - [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md)
+
+### Common backlog configurations for multiple teams 
+
+**Question**: *Can you define a backlog configuration that multiple teams can subscribe to?*
+**Answer**: *No. Each team controls their own team settings and backlog configurations.*
+
+::: moniker range="azure-devops"
+Because each user can configure their own **Column Options** and **View Options**, there is no way to configure a common backlog view for all teams. Also, there is no default column options that can be set for each team.  
+::: moniker-end
+
+::: moniker range="< azure-devops"
+Because each user can configure their own **Column Options** and **View Options**, there is no way to configure a common backlog view for all teams. You can, however, define the default column options for all team members by editing the process configuration. To learn how, see [Process configuration XML element reference, Set default columns](../../reference/xml/process-configuration-xml-element.md#columns). 
+::: moniker-end
+ 
 
 ## Define work items and create your backlog  
 
