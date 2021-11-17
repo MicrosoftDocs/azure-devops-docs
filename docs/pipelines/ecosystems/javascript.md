@@ -48,7 +48,8 @@ Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or
 Fork this repo in GitHub:
 
 ```
-https://github.com/MicrosoftDocs/pipelines-javascript
+https://github.com/Azure-Samples/js-e2e-express-server
+
 ```
 
 #### [See an example](#tab/example)
@@ -107,10 +108,10 @@ steps:
 
 ### Create the pipeline
 
-1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
+1. To get started, fork this repo in GitHub.
 
     ```
-    https://github.com/MicrosoftDocs/pipelines-javascript
+    https://github.com/Azure-Samples/js-e2e-express-server
     ```
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
@@ -138,10 +139,12 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 
 ::: moniker range="azure-devops-2019" 
 ### YAML
-1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
+
+1. To get started, fork this repo in GitHub.
 
     ```
-    https://github.com/MicrosoftDocs/pipelines-javascript
+   https://github.com/Azure-Samples/js-e2e-express-server
+   ```
 
 2. Add an `azure-pipelines.yml` file in your repository. This YAML assumes that you have Node.js with npm installed on your server. 
 
@@ -168,10 +171,11 @@ pool: Default
 ::: moniker-end
 ::: moniker range="< azure-devops" 
 ### Classic
-1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
+
+1. To get started, fork this repo in GitHub.
 
     ```
-    https://github.com/MicrosoftDocs/pipelines-javascript
+    https://github.com/Azure-Samples/js-e2e-express-server
     ```
 
 1. After you have the sample code in your own repository, create a pipeline by using the instructions in [Create your first pipeline](../create-first-pipeline.md) and select the **Empty process** template.
