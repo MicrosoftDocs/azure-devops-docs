@@ -21,17 +21,17 @@ For more information about Azure Pipelines, see [What is Azure Pipelines](what-i
 
 The sign up process consists of two steps:
 
-1. Sign in with a [personal Microsoft account](#signup-microsoft) or a [GitHub account](#signup-github)
+1. Sign in with a [Microsoft account](#signup-microsoft) or a [GitHub account](#signup-github)
 
 2. Sign up for Azure DevOps
 
 <a id="signup-microsoft"></a>
 
-## Sign in with a personal Microsoft account
+## Sign in with a Microsoft account
 
-If you have a personal Microsoft account, complete the following steps.
+If you have a Microsoft account, complete the following steps.
 
-1. Check that your account is up to date by logging into your <a href="https://account.microsoft.com/account" target="_blank">personal Microsoft account</a>. 
+1. Check that your account is up to date by logging into your <a href="https://account.microsoft.com/account" target="_blank">Microsoft account</a>. 
 
 2. Open <a href="https://azure.microsoft.com/services/devops/pipelines" target="_blank">Azure Pipelines</a> and select **Start free**.
 
@@ -50,7 +50,7 @@ If you have a GitHub account, complete the following steps to sign up for Azure 
 > [!IMPORTANT]
 > If your GitHub email address is associated with an Azure AD-backed organization in Azure DevOps, you can't sign in with your GitHub account, rather you must sign in with your Azure AD account.
 
-1. Log into your <a href="https://github.com/login" target="_blank">GitHub account</a>.
+1. Check that your account is up to date by logging into your <a href="https://github.com/login" target="_blank">GitHub account</a>.
 
 2. Open <a href="https://azure.microsoft.com/services/devops/pipelines" target="_blank">Azure Pipelines</a> and select **Start free with GitHub**. If you're already part of an Azure DevOps organization, choose **Start free**.
 
@@ -139,7 +139,7 @@ You don't need to invite team members to sign up for Azure Pipelines. Add and in
       - **Project Administrators:** Assign to users who will configure project resources.
 
    > [!NOTE]  
-   > Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
+   > Add email addresses for [Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
 
 4. When you're done, select **Add** to complete your invitation.
 
