@@ -6,7 +6,7 @@ ms.technology: devops-test
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 12/07/2018
+ms.date: 11/23/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -36,23 +36,21 @@ a test plan. If not, follow the steps provided in the following articles:
 
 ## Assign and invite testers
 
-Azure DevOps makes it easy to assign
-testers to individual test cases.  A typical 
-scenario for user acceptance testing is the ability
-to not just assign one tester to a test case (see 
-[Search for and assign testers](#search-assign)) but assign 
-multiple testers an entire set of tests. 
+For user acceptance testing, you can assign multiple testers to a set of tests. You can even assign the stakeholders who created the business requirements as testers.
 
-This can also be accomplished by selecting the 
-suite and choosing **Assign testers to run all tests**. This option also enables the sending of
-emails to the testers assigned to the tests.
+1. Select Test plans to see your test suites. You can select **Mine** to see your favorites or **All** to see all test plans. Select a test plan to open it.
 
-![User acceptance testing email notification](media/user-acceptance-testing/uat10.png)
+1. Select a test plan and then select **More options** or right-click to view the context menu. Select **Assign testers to run all tests**.
 
-An important feature of user acceptance testing 
-is that the testers may in fact be the business 
-owners who created the original business 
-requirements.
+1. In **Search users**, enter a name or partial name to find the testers you want. You can select multiple testers.
+
+   ![Screenshot shows the option to search for users with two users already selected.](media/user-acceptance-testing/search-select-testers.png)
+
+1. To notify testers, select **Send email**.
+
+   ![Screenshot shows the option to send email selected and text boxes for subject and notes.](media/user-acceptance-testing/send-messages-testers.png)
+
+   Enter a message subject and note, as needed, and select **Ok**.
 
 <a name="search-assign"></a>
 
