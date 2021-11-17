@@ -21,15 +21,13 @@ This topic covers creating and publishing a Maven artifact to an Azure Artifacts
 
 - [Java SE Downloads](https://www.oracle.com/technetwork/java/javase/downloads/index.html) required for Gradle.
 
-## Set up authentication
-
 To make sure you have all the prerequisites set up, run the following command in an elevated command prompt to check which Java version is installed on your machine.
 
 ```Command
 java -version
 ```
 
-If the above command doesn't return a java version, make sure you go back to the prerequisites and install the Java JDK or JRE first. 
+If the above command doesn't return a java version, make sure you go back and install the Java JDK or JRE first. 
 
 To confirm the installation of Gradle, run the following command in an elevated command prompt:
 
@@ -37,52 +35,47 @@ To confirm the installation of Gradle, run the following command in an elevated 
 gradle -v
 ```
 
-First, you need a **gradle.properties** file that contains an Azure DevOps Services credential token.
+## Set up authentication
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
+1. Select **User settings**, and then select **Personal access tokens**
 
-1. Click **New Token**.
+    :::image type="content" source="media/create-pat.png" alt-text="Screenshot showing how to create a personal access token":::
 
-1. Give your token a name, duration, and select the **Packaging (read and write)** scope. 
+1. Select **New Token**, and then fill out the required fields. Make sure you select the **Packaging** > **Read & write** scope. 
 
-    > [!NOTE]
-    > You may have to choose "Show all scopes" at the bottom to see the Packaging area.
-    
-    ![Create packaging personal access token](media/create-packaging-pat.png)
+:::image type="content" source="media/create-packaging-pat.png" alt-text="Screenshot showing how to create a new personal access token.":::  
 
-1. Click **Create**.
+1. Select **Create** when you are done.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
+1. Select your profile icon, and then select **Security**.
 
-1. Click **Add**.
+1. Select **New Token**.
 
-![Add a personal access token](media/add-pat.png)
+1. Name your token and set its expiration date. 
 
-1. Give your new token a name and a duration. 
+1. Select the **Packaging (Read & write)** scope.
 
-1. Select the **Packaging (read and write)** scope.
-
-![Select a token scope](media/select-scope.png)
+:::image type="content" source="media/select-scope.png" alt-text="Screenshot showing the available scopes for a pat.":::
 
 ::: moniker-end
 
-1. Copy your token and save it in a secure location. The token will be a long alphanumeric string, something like _"lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa"_.
+1. Copy your token and save it in a secure location.
 
-1. Create a text file and name it: **gradle.properties** in your `.gradle` folder under the Gradle installation root directory. Typically, the path to your gradle folder is: `%INSTALLPATH%/gradle/user/home/.gradle/`.
+1. Create a new file in your `.gradle` folder and name it **gradle.properties**. The path to your gradle folder is usually in `%INSTALLPATH%/gradle/user/home/.gradle/`.
 
-1. Open the **gradle.properties** file with a UTF-8-capable text editor and add the following:
+1. Open the **gradle.properties** file with a text editor and add the following snippet:
 
-    ```ini
-    vstsMavenAccessToken=<PASTE_YOUR_TOKEN_HERE>
+    ```
+    vstsMavenAccessToken=<PASTE_YOUR_PERSONAL_ACCESS_TOKEN_HERE>
     ```
 
-1. Replace _<PASTE_YOUR_TOKEN_HERE>_ with the token you created earlier. Save the file when you're done.
+1. Save your file when you are done.
 
 ## Create a feed
 
