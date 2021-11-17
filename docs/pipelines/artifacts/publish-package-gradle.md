@@ -45,7 +45,7 @@ gradle -v
 
 1. Select **New Token**, and then fill out the required fields. Make sure you select the **Packaging** > **Read & write** scope. 
 
-:::image type="content" source="media/create-packaging-pat.png" alt-text="Screenshot showing how to create a new personal access token.":::  
+    :::image type="content" source="media/create-packaging-pat.png" alt-text="Screenshot showing how to create a new personal access token.":::  
 
 1. Select **Create** when you are done.
 
@@ -77,15 +77,11 @@ gradle -v
 
 1. Save your file when you are done.
 
-## Create a feed
-
-[!INCLUDE [](../../artifacts/includes/create-feed.md)]
-
 ## Configure build.gradle 
 
-1. Create a text file and name it **build.gradle** in the root of your cloned repo. 
+1. Create a new file in the root of your project and name it *build.gradle*.
 
-1. Open it with a text editor and add the following snippet:
+1. Open the new file with a text editor, and paste in the following sample code. Replace the placeholders with the appropriate values.
 
     ```groovy
     apply plugin: 'java' 
@@ -94,47 +90,38 @@ gradle -v
     publishing { 
         publications { 
             myPublication(MavenPublication) { 
-                groupId '{your-group-ID-here}' 
-                artifactId '{your-artifact-id-here}' 
-                version '{your-version-number-here}' 
-                artifact '{path-to-your-JAR-file-here}' 
+                groupId '<GROUP_ID>' 
+                artifactId '<ARTIFACT_ID>' 
+                version '<VERSION_NUMBER>'             // Your package version
+                artifact '<PATH_TO_YOUR_JAR_FILE>'    //Example: *./target/myJavaClasses.jar*
             } 
         } 
     
         // Repositories *to* which Gradle can publish artifacts 
         repositories { 
             maven { 
-                url 'https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_packaging/{FeedName}/maven/v1' 
+                url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1' 
                 credentials { 
-                    username "{FeedName}" 
+                    username "<FEED_NAME>" 
                     password System.getenv("SYSTEM_ACCESSTOKEN") != null ? System.getenv("SYSTEM_ACCESSTOKEN") : vstsMavenAccessToken 
                 } 
             } 
         } 
     } 
      
-    // Repositories *from* which Gradle can download dependencies; it's the same as above in this example
+    // Repositories *from* which Gradle can download dependencies
     repositories { 
         maven { 
-            url 'https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_packaging/{FeedName}/maven/v1' 
+            url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1' 
             credentials { 
-                username "{FeedName}" 
+                username "<FEED_NAME>" 
                 password System.getenv("SYSTEM_ACCESSTOKEN") != null ? System.getenv("SYSTEM_ACCESSTOKEN") : vstsMavenAccessToken 
             } 
         } 
     } 
     ```
     
-    In the above example, you are publishing and downloading dependent artifacts from the same organization. You can also configure publishing and downloading to use separate organizations. See [Use predefined variables](../../pipelines/build/variables.md#systemaccesstoken) to lean more about the `System.AccessToken` security token.
-
-1. Replace the following fields with your own values:
-
-    - `groupId`: A group ID you associate with your package. Give it a team or organization name so consumers can identify the origin easier.
-    - `artifactId`: Your artifact ID number that will be used when publishing your package. Again, give it a meaningful name that specifies the package type and version for example.
-    - `version`: Your package version. This number should be incremented for future iterations.
-    - `artifact`: Your `.jar` file path. Example: *./target/myJavaClasses.jar*.
-    - `feedName`: The name of your feed. If not specified, the default value will be `{OrganizationName}`.
-
+In the above example, we are publishing and downloading artifacts from the same organization. You can also configure publishing and downloading to use separate organizations. See [Predefined variables](../../pipelines/build/variables.md#systemaccesstoken) to lean more about pipeline variables and the *System.AccessToken* security token.
 
 ## Publish your Maven package with Gradle
 
