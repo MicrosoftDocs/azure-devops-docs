@@ -6,6 +6,7 @@ ms.reviewer: dastahel
 ms.topic: conceptual
 ms.date: 11/16/2021
 monikerRange: '>= tfs-2018'
+"recommendations": "true"
 ---
 
 
@@ -123,12 +124,16 @@ gradle -v
     
 In the above example, we are publishing and downloading artifacts from the same organization. You can also configure publishing and downloading to use separate organizations. See [Predefined variables](../../pipelines/build/variables.md#systemaccesstoken) to lean more about pipeline variables and the *System.AccessToken* security token.
 
-## Publish your Maven package with Gradle
+## Publish Maven packages with Gradle
 
-Run the following command in an elevated command prompt:
+Run the following command in an elevated command prompt to publish your package to your feed. Your new package will be named: *groupId:artifactId*. 
 
-```CLI
+```Command
 gradle publish
 ```
 
-Your new package will be named: `groupId:artifactId` and should show up in your Artifacts feed.
+## Related articles
+
+- [Publish and download pipeline Artifacts](pipeline-artifacts.md)
+- [Releases in Azure Pipelines](../release/releases.md)
+- [Release artifacts and artifact sources](../release/artifacts.md)
