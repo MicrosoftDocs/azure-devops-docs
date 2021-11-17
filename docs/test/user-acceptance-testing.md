@@ -1,6 +1,6 @@
 ---
 title: Perform user acceptance testing
-description: Create and run user acceptance tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
+description: Create and run user acceptance tests in Azure Test Plans and Team Foundation Server. Test to verify that each of the deliverables meets your users' needs.
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.technology: devops-test
 ms.topic: conceptual
@@ -38,7 +38,7 @@ a test plan. If not, follow the steps provided in the following articles:
 
 For user acceptance testing, you can assign multiple testers to a set of tests. You can even assign the stakeholders who created the business requirements as testers.
 
-1. Select Test plans to see your test suites. You can select **Mine** to see your favorites or **All** to see all test plans. Select a test plan to open it.
+1. Select **Test plans** to see your test suites. You can select **Mine** to see your favorites or **All** to see all test plans. Select a test plan to open it.
 
 1. Select a test plan and then select **More options** or right-click to view the context menu. Select **Assign testers to run all tests**.
 
