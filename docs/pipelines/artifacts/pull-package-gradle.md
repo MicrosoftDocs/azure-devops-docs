@@ -1,40 +1,38 @@
 ---
 title: Install a Maven artifact using Gradle
-description: Install a Maven artifact using Gradle in an Azure DevOps Services build
+description: How to install Maven artifact with Azure Pipelines using Gradle
 ms.technology: devops-artifacts
 ms.reviewer: dastahel
 ms.topic: conceptual
-ms.date: 01/31/2018
-monikerRange: '>= tfs-2018'
+ms.date: 11/18/2021
+monikerRange: '>= tfs-2017'
 ---
 
 
-# Install a Maven artifact using Gradle in an Azure DevOps Services build
+# Install Maven artifacts using Gradle
 
-**Azure DevOps Services** | **TFS 2018**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-Gradle is a popular build tool for Java applications and the primary build tool for Android. Learn how to download a Maven artifact using Gradle during an Azure DevOps Services build of your application.
+Gradle is a popular build tool for Java applications and the primary build tool for Android. Using Azure Pipelines, we can add the gradle task to our build definition and install Maven artifacts.
 
 ## Prerequisites
 
-Before you start, [install the Gradle build tool](https://gradle.org/install/). Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7 or later). You can [get the Java JDK here](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
+- [Install Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
+- [Install Gradle](https://gradle.org/install/).
 
-From a command prompt, verify that you have the Java JDK or JRE version 7 or later:
+To make sure you have all the prerequisites set up, run the following command in an elevated command prompt to check which Java version is installed on your machine.
 
-```cli
+```Command
 java -version
 ```
 
-And then install Gradle. Once it completes, confirm the installation from a command prompt:
+If the above command doesn't return a java version, make sure you go back and install the Java JDK or JRE first. 
 
-```cli
+To confirm the installation of Gradle, run the following command in an elevated command prompt:
+
+```Command
 gradle -v
 ```
-
-You're ready to start! This tutorial will guide you through the process of installing a Maven artifact using Gradle.
-
-> [!NOTE]
-> This topic assumes you have cloned your Git repo to your local machine. If you aren't sure how to clone your repo, read [Clone a repo](../../repos/git/clone.md).
 
 ## Set up authentication
 
