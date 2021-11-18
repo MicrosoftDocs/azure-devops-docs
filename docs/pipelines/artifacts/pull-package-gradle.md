@@ -8,7 +8,6 @@ ms.date: 11/18/2021
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Install Maven artifacts using Gradle
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
@@ -36,50 +35,43 @@ gradle -v
 
 ## Set up authentication
 
-First, you need a **gradle.properties** file that contains an Azure DevOps Services credential token.
-
 ::: moniker range=">= azure-devops-2019"
 
-Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
+1. Select **User settings**, and then select **Personal access tokens**
 
-Click **+ New Token**.
+    :::image type="content" source="media/create-pat.png" alt-text="Screenshot showing how to create a personal access token":::
 
-Give your token a name, duration, and select the **Packaging (read and write)** scope. 
+2. Select **New Token**, and then fill out the required fields. Make sure you select the **Packaging** > **Read & write** scope. 
 
-> You may have to choose "Show all scopes" at the bottom to see the Packaging area.
+    :::image type="content" source="media/create-packaging-pat.png" alt-text="Screenshot showing how to create a new personal access token.":::  
 
-![Create packaging personal access token](media/create-packaging-pat.png)
-
-Click **Create**.
+3. Select **Create** when you are done.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
+1. Select your profile icon, and then select **Security**.
 
-Click **Add**.
+2. Select **New Token**, and then name your token and set its expiration date. 
 
-![Add a personal access token](media/add-pat.png)
+3. Select the **Packaging (Read & write)** scope.
 
-Give your new token a name and a duration. 
-
-Select the **Packaging (read and write)** scope.
-
-![Select a token scope](media/select-scope.png)
+    :::image type="content" source="media/select-scope.png" alt-text="Screenshot showing the available scopes for a pat.":::
 
 ::: moniker-end
 
-The token will be a long alphanumeric string, like "lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa". Copy this string and treat it securely.
+4. Copy your token and save it in a secure location.
 
-Now, go to the `.gradle` folder under the Gradle installation root directory. Typically, this is `%INSTALLPATH%/gradle/user/home/.gradle/`. In that folder, create a file named **gradle.properties**. 
+5. Create a new file in your `.gradle` folder and name it **gradle.properties**. The path to your gradle folder is usually in `%INSTALLPATH%/gradle/user/home/.gradle/`.
 
-Open the **gradle.properties** file with a UTF-8-capable text editor and add the following:
-```ini
-vstsMavenAccessToken=YOUR_TOKEN_HERE
-```
+6. Open the **gradle.properties** file with a text editor and add the following snippet:
 
-Where *YOUR_TOKEN_HERE* is the token string you created previously. Save the file when you're done.
+    ```
+    vstsMavenAccessToken=<PASTE_YOUR_PERSONAL_ACCESS_TOKEN_HERE>
+    ```
+
+7. Save your file when you are done.
 
 ## Install a Maven artifact using Gradle
 
