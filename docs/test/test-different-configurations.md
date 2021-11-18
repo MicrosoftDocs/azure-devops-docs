@@ -141,7 +141,7 @@ Configurations assigned to a test suite apply to all tests or suites within it.
    ![Screenshot shows multiple configuration assignment to a test suite.](media/testing-configurations/multiple-configuration-test-suite.png)
 
 1. If necessary, override the default configuration assigned to a test case and assign the configuration you need.
-   Select one or more test cases, open the context menu, and select **Assign configurations**.
+   Select one or more test cases, open the context menu, and select **Assign configuration**.
 
    ![Screenshot shows assigning a configuration assigned to a test case.](media/testing-configurations/assign-configuration-test-cases.png)
 
@@ -231,7 +231,7 @@ Set up a testing platform for a particular configuration, such as testing the ap
 
    ![Screenshot shows a bar chart with values for Not run, Passed, and Failed.](media/testing-configurations/configuration-result-chart.png)
 
-> If you have a test case that appears in several test suites, you can set the different configurations for each suite.
+If you have a test case that appears in several test suites, you can set the different configurations for each suite.
 The same test case can have different configuration settings in different test suites and test plans.
 ::: moniker-end
 
