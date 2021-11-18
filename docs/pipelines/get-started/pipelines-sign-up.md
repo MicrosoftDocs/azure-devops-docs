@@ -19,17 +19,11 @@ Sign up for an Azure DevOps organization and Azure Pipelines to begin managing C
 
 For more information about Azure Pipelines, see [What is Azure Pipelines](what-is-azure-pipelines.md).
 
-The sign up process consists of two steps:
+You can sign up either with a [Microsoft account](#tab/signup-microsoft) or with a [GitHub account](#tab/signup-github).
 
-1. Sign in with a [Microsoft account](#signup-microsoft) or a [GitHub account](#signup-github)
+## [Microsoft account](#tab/signup-microsoft)
 
-2. Sign up for Azure DevOps
-
-<a id="signup-microsoft"></a>
-
-## Sign in with a Microsoft account
-
-If you have a Microsoft account, complete the following steps.
+To sign up for Azure DevOps with a Microsoft account, complete the following steps.
 
 1. Check that your account is up to date by logging into your <a href="https://account.microsoft.com/account" target="_blank">Microsoft account</a>. 
 
@@ -39,13 +33,24 @@ If you have a Microsoft account, complete the following steps.
 
 3. Log into your Microsoft account.
 
-Your next step is to [sign up for Azure DevOps](#sign-up).
+4. To get started with Azure Pipelines, select **Continue**.
+
+    ![Choose Continue to sign up for Azure DevOps.](../../media/sign-up-azure-devops.png)
+
+5. Enter a name for your organization, select a host location from the drop-down menu, enter the characters you see, and then select **Continue**.
+
+   :::image type="content" source="../media/almost-done-name-organization.png" alt-text="Screenshot of Almost done pane, name your organization.":::
+
+
+Use the following URL to sign in to your organization at any time: `https://dev.azure.com/{yourorganization}`
+
+You are now prompted to [create a project](#create-project).
 
 <a id="signup-github"></a>
 
-## Sign in with a GitHub account
+## [GitHub account](#tab/signup-github)
 
-If you have a GitHub account, complete the following steps to sign up for Azure Pipelines.
+To sign up for Azure DevOps with a GitHub account, complete the following steps.
 
 > [!IMPORTANT]
 > If your GitHub email address is associated with an Azure AD-backed organization in Azure DevOps, you can't sign in with your GitHub account, rather you must sign in with your Azure AD account.
@@ -68,37 +73,30 @@ If you have a GitHub account, complete the following steps to sign up for Azure 
 
     ![Link GitHub account to Microsoft account](media/link-microsoft-account.png)
 
-For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.yml).
+    For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.yml).
 
-Your next step is to [sign up for Azure DevOps](#sign-up).
+6. Fill in your name, email address, and country.
+    
+    ![Fill in name, email address, and country](media/fill-in-details-devops-github.png)
 
-<a id="sign-up" /></a>
-
-## Sign up for Azure DevOps
-
-After signing in with a Microsoft account or a GitHub account, you need to sign up for Azure DevOps.
-
-   > [!NOTE]  
-   > If you're signing up with a GitHub account, you will be asked to fill in your name, email address, and country.
-
-1. To get started with Azure Pipelines, select **Continue**.
+7. To get started with Azure Pipelines, select **Continue**.
 
     ![Choose Continue to sign up for Azure DevOps.](../../media/sign-up-azure-devops.png)
 
-2. Enter a name for your organization, select a host location from the drop-down menu, enter the characters you see, and then select **Continue**.
+8. Enter a name for your organization, select a host location from the drop-down menu, enter the characters you see, and then select **Continue**.
 
    :::image type="content" source="../media/almost-done-name-organization.png" alt-text="Screenshot of Almost done pane, name your organization.":::
 
 
 Use the following URL to sign in to your organization at any time: `https://dev.azure.com/{yourorganization}`
 
-Next, create a project.
+You are now prompted to [create a project](#create-project).
 
 <a id="create-project" /></a>
 
 ## Create a project
 
-If you signed up for Azure DevOps with an existing Microsoft or GitHub identity, you're automatically prompted to create a project. Create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/public/about-public-projects.md).
+You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/public/about-public-projects.md).
 
 1. Enter a name for your project, select the visibility, and optionally provide a description. Then choose **Create project**.
 
