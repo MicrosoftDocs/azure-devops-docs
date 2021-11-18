@@ -20,7 +20,7 @@ There are three time zone settings that can be referenced by Azure DevOps:
 - Your organization or sever's time and date formats
 - Your personal profile **Time and Locale** setting. 
 
-Most times displayed in the web portal are based onyour browser settings for the time and date formats as well as non-pipleine timezones. 
+Most times displayed in the web portal are based on your browser settings for the time and date formats as well as non-pipleine timezones. 
 
 By default, all Azure DevOps organizations and user accounts are set to UTC (Coordinated Universal Time) irrespective of what zones they are hosted in. Even if your organization migrated from an on-premises server to Azure DevOps Services, your timezone is set to UTC time.
 
