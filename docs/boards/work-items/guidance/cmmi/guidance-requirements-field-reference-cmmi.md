@@ -1,17 +1,17 @@
 ---
-title: CMMI Requirements field reference 
+title: Capability Maturity Model Integration (CMMI) requirements reference 
 titleSuffix: Azure Boards
-description: Definition of fields used to track requirements in the CMMI process for Azure Boards, Azure DevOps, & Team Foundation Server  
+description: Learn about the fields used to track requirements in the CMMI process for Azure Boards and Azure DevOps.  
 ms.technology: devops-agile
 ms.assetid: c2c4f0c8-0d7f-4087-b115-2ca10cf3c998
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/24/2017
+ms.date: 11/07/2021
 ---
 
-# Requirements field reference (CMMI)
+# Requirements field reference for the CMMI process in Azure Boards
 
 [!INCLUDE [temp](../../../includes/version-all.md)]
 
