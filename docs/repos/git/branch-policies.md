@@ -1,21 +1,21 @@
 ---
-title: Protect your Git branches with policies
+title: Git branch policies and settings
 titleSuffix: Azure Repos
-description: Branch policies provide teams with the means to protect their important branches.
+description: Branch policies and settings provide teams with the means to protect their important branches.
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 11/11/2021
+ms.date: 11/15/2021
 monikerRange: '>= tfs-2015'
 ---
 
-# Improve code quality with branch policies
+# Branch policies and settings
 
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 
 Branch policies help teams protect their important [branches](./create-branch.md) of development. Policies enforce your team's code quality and change management standards. This article describes how to set and manage branch policies. For an overview of all repository and branch policies and settings, see [Git repository settings and policies](repository-settings.md).
 
-Any branch that has required policies set can't be deleted, and requires pull requests (PRs) for all changes.
+A branch that has required policies configured can't be deleted, and requires pull requests (PRs) for all changes.
 
 ## Prerequisites 
 
@@ -37,9 +37,9 @@ To manage branch policies, select **Repos** > **Branches** to open the **Branche
 
 ::: moniker range=">= azure-devops-2020"
 
-Branches that have policies set display a policy icon. You can select the icon to go directly to the branch's policy settings.
+Branches that have policies display a policy icon. You can select the icon to go directly to the branch's policy settings.
 
-To set policies, locate the branch you want to manage. You can browse the list or search for your branch in the **Search branch name** box at upper right.
+To set branch policies, locate the branch you want to manage. You can browse the list or search for your branch in the **Search branch name** box at upper right.
 
 Select the **More options** icon next to the branch, and select **Branch policies** from the context menu.
 
