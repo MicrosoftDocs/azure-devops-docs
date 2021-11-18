@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 11/09/2021
+ms.date: 11/16/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -32,7 +32,6 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | --- | --- | --- | --- |
 | Windows Server 2022 with Visual Studio 2022 | *windows-2022* |  `windows-2022` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2022-Readme.md) |
 | Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md) |
-| Windows Server 2016 with Visual Studio 2017 | *vs2017-win2016* | `vs2017-win2016` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2016-Readme.md) |
 | Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-latest` OR `ubuntu-20.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-README.md)
 | Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md) |
 | macOS 11 Big Sur | *macOS-11* |  `macOS-11` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11-Readme.md) |
@@ -43,6 +42,8 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 > [!NOTE]
 > [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/virtual-environments/issues/3287).
+>
+> [The Windows Server 2016 with Visual Studio 2017 image is being deprecated](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows).
 >
 > In March 2020, we removed the following Azure Pipelines hosted images:
 >

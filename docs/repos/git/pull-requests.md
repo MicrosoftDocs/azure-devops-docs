@@ -725,8 +725,9 @@ For the email feature to work, your administrator for Azure DevOps Server must [
 
 - [View pull requests](view-pull-requests.md)
 - [Review pull requests](review-pull-requests.md)
-- [Pull request update notifications](pull-request-notifications.md)
 - [Complete pull requests](complete-pull-requests.md)
 - [Change the default branch](change-default-branch.md)
 - [Copy changes with cherry-pick](cherry-pick.md)
 - [About pull requests and permissions](about-pull-requests.md)
+<a name="multiple-merge-bases"></a>
+- [Multiple merge bases](merging-with-squash.md#multiple-merge-bases)

@@ -108,9 +108,17 @@ None
             <p>(Required) Only available when <strong>File share</strong> is selected as the <strong>Symbol server type</strong>. Compresses your <code>pdbs</code> to save space. <br/>Default value: false
         </td>
     </tr>
-    <tr>
-        <th style="text-align: center" colspan="2">Advanced</th>
-    </tr>
+</table>
+
+### Advanced options
+
+<table>
+    <thead>
+        <tr>
+            <th>Argument</th>
+            <th>Description</th>
+        </tr>
+    </thead>
     <tr>
         <tr>
             <td><code>DetailedLog</code><br/>Verbose logging</td>
