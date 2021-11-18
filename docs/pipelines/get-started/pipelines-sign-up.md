@@ -44,7 +44,7 @@ To sign up for Azure DevOps with a Microsoft account, complete the following ste
 
 Use the following URL to sign in to your organization at any time: `https://dev.azure.com/{yourorganization}`
 
-You are now prompted to [create a project](#create-project).
+You're now prompted to [create a project](#create-project).
 
 <a id="signup-github"></a>
 
@@ -90,13 +90,13 @@ To sign up for Azure DevOps with a GitHub account, complete the following steps.
 
 Use the following URL to sign in to your organization at any time: `https://dev.azure.com/{yourorganization}`
 
-You are now prompted to [create a project](#create-project).
+You're now prompted to [create a project](#create-project).
 
 <a id="create-project" /></a>
 
 ## Create a project
 
-You can create either a public or private project. To learn more about public projects, see [What is a public project?](../../organizations/public/about-public-projects.md).
+You can create public or private projects. To learn more about public projects, see [What is a public project?](../../organizations/public/about-public-projects.md).
 
 1. Enter a name for your project, select the visibility, and optionally provide a description. Then choose **Create project**.
 
@@ -113,7 +113,7 @@ You're now set to [create your first pipeline](../create-first-pipeline.md), or 
 
 ## Invite team members - optional
 
-You don't need to invite team members to sign up for Azure Pipelines. Add and invite others to work on your project by adding their email address to your organization and project.
+Add and invite others to work on your project by adding their email address to your organization and project.
 
 1. From your project web portal, choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps > ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
