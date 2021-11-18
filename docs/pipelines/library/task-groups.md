@@ -178,7 +178,7 @@ Any task group update can be a minor or major version update.
 **Reason:** When you have a substantial change which might break the existing pipelines, you would like to test it out and roll out as a new version. Users can choose to upgrade to new version or choose to stay on the same version. This functionality is same as a normal task version update. 
 
 However, if your task group update is not a breaking change but you would like to validate first and then enforce pipelines to consume the latest changes, you can follow below steps.
-1.	Update the task group with your desired changes and save it as a draft. A new draft task group ‘<Taskgroupname>-Draft’ will be created which contains the changes you have done. And this draft task group is accessible for you to consume in your pipelines.
+1.	Update the task group with your desired changes and save it as a draft. A new draft task group ‘\<Taskgroupname\>-Draft’ will be created which contains the changes you have done. And this draft task group is accessible for you to consume in your pipelines.
 1.	Now, instead of publishing as preview, you can directly consume this draft task group in your test pipeline.
 1.	Validate this new draft task group in your test pipeline and once you are confident, go back to your main task group and do the same changes and save it directly. This will be taken as minor version update.
 1.	The new changes will now show up in all the pipelines where this task group is used.

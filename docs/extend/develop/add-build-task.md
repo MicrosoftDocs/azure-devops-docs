@@ -190,7 +190,7 @@ Following are descriptions of some of the components of the `task.json` file:
 | `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
 | `execution`          | Execution options for this task, including scripts.                                                                         
-| `restrictions`       | Restrictions being applied to the task regarding [vso commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. It is recommended to specify restiction mode for new tasks. See [How can I restrict vso commands usage for task](#how-can-i-restrict-vso-commands-usage-for-task) for more details.|
+| `restrictions`       | Restrictions being applied to the task regarding [vso commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. It is recommended to specify restriction mode for new tasks. See [How can I restrict vso commands usage for task](#how-can-i-restrict-vso-commands-usage-for-task) for more details.|
 |
 
 >[!NOTE]
@@ -488,7 +488,7 @@ After creating a publisher, you can upload your extension to the Marketplace.
 You can also upload your extension via the command line by using the `tfx extension publish` command instead of `tfx extension create`
 to package and publish your extension in one step.
 You can optionally use `--share-with` to share your extension with one or more accounts after publishing.
-You'll need a personal access token, too. For more information, see [Acquire a personal access token](../publish/command-line.md#acquire-a-pat).
+You'll need a personal access token, too. For more information, see [Acquire a personal access token](../publish/command-line.md#create-a-personal-access-token).
 
 ```no-highlight
 tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
@@ -782,7 +782,7 @@ If "restricted" value is specified for "mode" - only the following commands are 
 - `prependpath`
 - `publish`
 
-"settableVariables" restrictions allow you to pass in an allow list of variables which can be set by `setvariable` or `prependpath` commands. It allows basic regular expressions as well. So for example, if your allow list was: ['abc', 'test*'], setting abc, test, or test1 as variables with any value or prepending them to the path would succeed, but if you try to set a variable proxy it would warn. Empty list means that no variables are allowed to be changed by task.
+"settableVariables" restrictions allow you to pass in an allowlist of variables which can be set by `setvariable` or `prependpath` commands. It allows basic regular expressions as well. So for example, if your allowlist was: ['abc', 'test*'], setting abc, test, or test1 as variables with any value or prepending them to the path would succeed, but if you try to set a variable proxy it would warn. Empty list means that no variables are allowed to be changed by task.
 
 "commands" and "settableVariables" are orthogonal - if either the settableVariables or commands key are omitted - relevant restriction is not applied.
 

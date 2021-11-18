@@ -78,9 +78,17 @@ xcode
          (Optional) Enter a path to a specific Xcode developer directory (e.g. <code>/Applications/Xcode_10.0.0.app/Contents/Developer</code>). This is useful when multiple versions of Xcode are installed on the agent machine.
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">(Optional) Signing &amp; provisioning</th>
-   </tr>
+</table>
+
+### Signing and provisioning options
+
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
    <tr>
       <td><code>signingOption</code><br/>Signing style</td>
       <td>
@@ -111,9 +119,17 @@ xcode
          (Optional, unless you are a member of multiple development teams.) Specify the 10-character development team ID.
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">Package options</th>
-   </tr>
+</table>
+
+### Package options
+
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
    <tr>
       <td><code>packageApp</code><br/>Create app package</td>
       <td>
@@ -163,9 +179,17 @@ xcode
          (Optional) Enter additional command line arguments to be used during export.
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">Devices &amp; simulators</th>
-   </tr>
+</table>
+
+### Device and simulator options
+
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
    <tr>
       <td><code>destinationPlatformOption</code><br/>Destination platform</td>
       <td>
@@ -196,9 +220,17 @@ xcode
          (Optional) Enter the name of the device to be used for UI testing, such as <code>Raisa&#39;s iPad</code>. Only one device is currently supported. Note that Apple does not allow apostrophes (<code>&#39;</code>) in device names. Instead, right single quotation marks (<code>&#39;</code>) can be used.
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">Advanced</th>
-   </tr>
+   </table>
+
+### Advanced options
+
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
    <tr>
       <td><code>args</code><br/>Arguments</td>
       <td>
@@ -235,10 +267,9 @@ xcode
          (Optional) If xcpretty and publishJUnitResults are enabled above, you can specify test run title.
       </td>
    </tr>
-   <tr>
-      <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-   </tr>
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Example
 
