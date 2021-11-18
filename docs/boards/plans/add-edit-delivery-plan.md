@@ -38,12 +38,13 @@ Use this article to learn how to complete these tasks:
 ## Before you define a plan
 
 To add and configure a Delivery Plan, the following elements must be configured:
-- [Teams and team backlogs](../../organizations/settings/add-teams.md)
-- [Area paths and team area paths assignments](../../organizations/settings/set-area-paths.md)
-- [Iteration (sprint) paths and team iterations](../../organizations/settings/set-iteration-paths-sprints.md). Iteration Paths must be assigned Start and End Dates or they won't appear on the plan. Also, Iteration Paths must be selected for the team whose backlogs you select, or work items associated with those Iteration Paths won't appear on the plan.   
+- [Teams and team backlogs](../../organizations/settings/add-teams.md).
+- [Team product or portfolio backlog must be enabled](../../organizations/settings/select-backlog-navigation-levels.md). 
+- [Area paths and team area paths assignments](../../organizations/settings/set-area-paths.md).
+- [Iteration (sprint) paths and team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+	- **Iteration Paths** must be assigned **Start** and **End Dates** or they won't appear on the plan. 
+	- Also, **Iteration Paths** must be selected for the team whose backlogs you select, or work items associated with those **Iteration Paths** won't appear on the plan.   
 - Teams have defined [product backlog items](../backlogs/create-your-backlog.md), or [portfolio backlogs](../backlogs/define-features-epics.md) and assigned those items to either a **Start Date** and **End Date** or an **Iteration Path**.   
-- Team Backlog settings have enabled the backlogs to show in the delivery plans. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
-
  
 > [!TIP]  
 > If you edit a plan and don't see the changes you made appear in the plan, refresh your browser. A browser refresh is needed some times to trigger the updates.   
