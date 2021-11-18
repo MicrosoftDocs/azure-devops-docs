@@ -19,9 +19,11 @@ Sign up for an Azure DevOps organization and Azure Pipelines to begin managing C
 
 For more information about Azure Pipelines, see [What is Azure Pipelines](what-is-azure-pipelines.md).
 
-You can sign up either with a Microsoft account or with a GitHub account.
+You can sign up with either a [Microsoft account](#signup-microsoft) or a [GitHub account](#signup-github).
 
-## [Microsoft account](#tab/signup-microsoft)
+<a id="signup-microsoft"></a>
+
+## Sign up with a Microsoft account
 
 To sign up for Azure DevOps with a Microsoft account, complete the following steps.
 
@@ -44,11 +46,11 @@ To sign up for Azure DevOps with a Microsoft account, complete the following ste
 
 Use the following URL to sign in to your organization at any time: `https://dev.azure.com/{yourorganization}`
 
-You're now prompted to create a project.
+You're now prompted to [create a project](#create-project).
 
 <a id="signup-github"></a>
 
-## [GitHub account](#tab/signup-github)
+## Sign up with a GitHub account
 
 To sign up for Azure DevOps with a GitHub account, complete the following steps.
 
