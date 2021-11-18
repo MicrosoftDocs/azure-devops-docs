@@ -44,7 +44,7 @@ To sign up for Azure DevOps with a Microsoft account, complete the following ste
 
 Use the following URL to sign in to your organization at any time: `https://dev.azure.com/{yourorganization}`
 
-You're now prompted to [create a project](#create-project).
+You're now prompted to create a project.
 
 <a id="signup-github"></a>
 
@@ -90,7 +90,9 @@ To sign up for Azure DevOps with a GitHub account, complete the following steps.
 
 Use the following URL to sign in to your organization at any time: `https://dev.azure.com/{yourorganization}`
 
-You're now prompted to [create a project](#create-project).
+You're now prompted to create a project.
+
+--- 
 
 <a id="create-project" /></a>
 
