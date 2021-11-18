@@ -34,6 +34,8 @@ a test plan. If not, follow the steps provided in the following articles:
 * [Create your backlog](../boards/backlogs/create-your-backlog.md)
 * [Create a test plan](create-a-test-plan.md)
 
+<a name="search-assign"></a>
+
 ## Assign and invite testers
 
 For user acceptance testing, you can assign multiple testers to a set of tests. You can even assign the stakeholders who created the business requirements as testers.
@@ -52,19 +54,12 @@ For user acceptance testing, you can assign multiple testers to a set of tests. 
 
    Enter a message subject and note, as needed, and select **Ok**.
 
-<a name="search-assign"></a>
+If you have a large pool of potential testers, it's important to be able to search as described above.
 
-## Search for and assign testers
+If you are assigning a tester to an individual test case, the search option appears in the context menu.
+Select the **Execute** tab, then select a test case, and select More options or right-click to open the context menu.
 
-In scenarios where you have large development teams
-the ability search for an individual is also 
-important.
-
-Choose **Assign tester** from the drop-down
-menu. In the shortcut menu, choose **Assign testers
-to run all tests** and select the testers you want to
-include. Set the **Send email** option to send all
-of them a notification email.
+![Screenshot shows a test case selected with the Assign tester menu option selected and Search users highlighted.](media/user-acceptance-testing/test-case-search-testers.png)
 
 ## Easily track results
 
