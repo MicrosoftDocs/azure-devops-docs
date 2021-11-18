@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 12/07/2020
+ms.date: 11/17/2021
 ---
 
 # Increase permission levels, find an admin 
@@ -16,7 +16,7 @@ ms.date: 12/07/2020
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
  
-To get access to features you don't have, you need to request an increase to your permissions or be added to a security role. Typically you need to request permissions from a member of the Project Administrators group or Project Collection Administrators group. To find a member of one of these groups, follow the steps provided in this article. 
+To get access to features you don't have, you need to request an increase to your permissions or be added to a security role. Typically you need to request permissions from a member of the Project Administrators group or Project Collection Administrators group. To find a member of one of these groups, follow the steps provided in this article. You can then request that they add you to an administrators group or set one or more of your permissions at the project, organization, or collection level to **Allow**. To learn more, see [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md).
 
 To determine what level a permission is defined, see the [Permissions lookup guide](permissions-lookup-guide.md). For an overview of built-in security groups and default permission assignments, see [Default permissions and access](permissions-access.md).
 
@@ -57,7 +57,7 @@ The organization owner can provide permissions at any level within the organizat
 
 ## Show members of the Project Administrators group
 
-For permissions managed at the project-level, request them from a member of the [Project Administrators group](set-project-collection-level-permissions.md). Project collection administrators manage features and functions that impact all projects. 
+For permissions managed at the project-level, request them from a member of the [Project Administrators group](set-project-collection-level-permissions.md). 
 
 Choose the Project Administrators group from the **Project Settings > Permissions** page to see members. If you want to be a Project Administrator, have your current administrator add you. 
 
@@ -203,5 +203,8 @@ To find out who is a member, check the **Security** settings at the collection l
 > [!div class="nextstepaction"]
 > [Add users to a project or team](add-users-team-project.md) 
 
+## Related articles
 
-
+- [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md)
+- [Permissions lookup guide](permissions-lookup-guide.md)
+- [Default permissions and access](permissions-access.md).
