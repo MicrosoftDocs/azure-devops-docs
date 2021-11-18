@@ -54,12 +54,14 @@ For user acceptance testing, you can assign multiple testers to a set of tests. 
 
    Enter a message subject and note, as needed, and select **Ok**.
 
-If you have a large pool of potential testers, it's important to be able to search as described above.
+If you have a large pool of potential testers, you might need to search for testers, as described above.
 
-If you are assigning a tester to an individual test case, the search option appears in the context menu.
-Select the **Execute** tab, then select a test case, and select More options or right-click to open the context menu.
+If you're assigning a tester to an individual test case, the search option appears in the context menu.
+Select the **Execute** tab, then select a test case, and select **More options** or right-click to open the context menu.
 
 ![Screenshot shows a test case selected with the Assign tester menu option selected and Search users highlighted.](media/user-acceptance-testing/test-case-search-testers.png)
+
+When you select **Assign tester**, use the search option to find a tester.
 
 ## Easily track results
 
