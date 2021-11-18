@@ -3654,7 +3654,7 @@
 ## Lab Management 
 
    Visual Studio Lab Management permissions are specific to virtual machines, environments, and other resources. In addition, the creator of an object in Lab Management is automatically granted all permissions on that object.
-   You can set these permissions by using the [TFSLabConfig permissions command-line tool](/azure/devops/server/command-line/tfsconfig-cmd).
+   You can set these permissions by using the [TFSLabConfig permissions command-line tool](/previous-versions/azure/devops/server/lab-management/tfslabconfig-cmd).
 
    By default, the project Readers groups have only View lab resources (Read) permissions.
 
