@@ -71,7 +71,7 @@ The Continuous model has enjoyed success as a guide to process improvement. Some
   
 <a name="Elements"></a> 
 
-##  Elements of the CMMI model  
+## Elements of the CMMI model  
 
 The following table lists the 22 process areas that comprise the CMMI model (version 1.3):  
   
@@ -120,4 +120,4 @@ Only generic and specific goals are required. Everything else is provided as a g
 - [Software Engineering Institute Releases Version 1.3 of CMMI Product Suite](https://www.sei.cmu.edu/news-events/news/article.cfm?assetid=509086)
 - [CMMI for Development: Guidelines for Process Integration and Product Improvement, Third Edition](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=31054)
 - [CMMI for Development: Guidelines for Process Integration and Product Improvement (SEI Series in Software Engineering)](https://www.amazon.com/CMMI-Development-Integration-Improvement-Engineering/dp/0321711505)
-- [What is Agile Development?](/devops/plan/what-is-agile-development)]
+- [What is Agile Development?](/devops/plan/what-is-agile-development)
