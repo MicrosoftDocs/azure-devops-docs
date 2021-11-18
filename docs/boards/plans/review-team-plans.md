@@ -57,7 +57,7 @@ For information on working with dependencies, see [Track dependencies](track-dep
 
 
 **For work items and dependency lines to appear on the plan**
-- Work items must belong to a team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics). Only work items belonging to a category selected for viewing on a team's backlog appear on the plan. 
+- Work items must belong to a team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics.md). Only work items belonging to a category selected for viewing on a team's backlog appear on the plan. 
 - [Team product or portfolio backlog must be enabled](../../organizations/settings/select-backlog-navigation-levels.md). 
 - [Sprints must be selected for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.
 - [Start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) must be defined for each iteration.
