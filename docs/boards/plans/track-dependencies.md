@@ -33,7 +33,7 @@ To view dependencies, you must first define the Delivery Plan and dependencies b
 - To open or modify a work item or add work items, you must have the **Edit work items in this node** set to **Allow** for the Area Paths assigned to the work item.  
 
 **For work items and dependency lines to appear on the plan**
-- Work items must belong to a team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics). Only work items belonging to a category selected for viewing on a team's backlog appear on the plan. 
+- Work items must belong to a team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics.md). Only work items belonging to a category selected for viewing on a team's backlog appear on the plan. 
 - [Team product or portfolio backlog must be enabled](../../organizations/settings/select-backlog-navigation-levels.md). 
 - [Sprints must be selected for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.
 - [Start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) must be defined for each iteration.

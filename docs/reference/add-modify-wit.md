@@ -78,7 +78,7 @@ The following table summarizes the effect on existing work items when you modify
 |Rename a work item type|All data remains intact under the new name.| 
 |Delete a work item type|All data for work items created as the deleted work item type is permanently removed with no chance for recovery.| 
 
-If you want to completely remove the fields from the data store, use [**witadmin deletefield** command line tool](witadmin/manage-work-item-fields.md).
+If you want to completely remove the fields from the data store, use [`witadmin deletefield` command line tool](witadmin/manage-work-item-fields.md).
  
 
 <a id="witadmin">  </a>  
@@ -105,7 +105,7 @@ If you want to completely remove the fields from the data store, use [**witadmin
 
 5. Open the web portal or refresh the page to view the changes.  
 
-   For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
+   For more information about using `witadmin`, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
 
 <a id="add-wit">  </a>
 <a id="edit-wit">  </a>
@@ -265,7 +265,7 @@ If you want to restrict creation of a specific work item type to a group of user
 
 ## Delete a work item type 
 
-To prevent team members from using a specific work item type to create a work item, you can remove it from the project. When you use **witadmin destroywitd**, you permanently remove all work items that were created using that work item type as well as the work item type itself. For example, if your team doesn't use "Impediment", you can delete the work item type labeled "Impediment" from the Fabrikam Web Site project.
+To prevent team members from using a specific work item type to create a work item, you can remove it from the project. When you use `witadmin destroywitd*`, you permanently remove all work items that were created using that work item type as well as the work item type itself. For example, if your team doesn't use "Impediment", you can delete the work item type labeled "Impediment" from the Fabrikam Web Site project.
 
 ```
 witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment" 
@@ -277,7 +277,7 @@ When you delete a work item type that belongs to a category, you must update the
 
 ## Rename a work item type
 
-To rename an existing work item type use **witadmin renamewitd**. For example, you can rename a work item type labeled "QoS Item" to "Service Agreement."
+To rename an existing work item type use `witadmin renamewitd`. For example, you can rename a work item type labeled "QoS Item" to "Service Agreement."
 
 ```
 witadmin renamewitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"QoS Item" /new:"Service Agreement"
