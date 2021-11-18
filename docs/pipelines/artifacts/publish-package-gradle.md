@@ -5,7 +5,7 @@ ms.technology: devops-artifacts
 ms.reviewer: dastahel
 ms.topic: conceptual
 ms.date: 11/16/2021
-monikerRange: '>= tfs-2018'
+monikerRange: '>= tfs-2017'
 "recommendations": "true"
 ---
 
@@ -44,11 +44,11 @@ gradle -v
 
     :::image type="content" source="media/create-pat.png" alt-text="Screenshot showing how to create a personal access token":::
 
-1. Select **New Token**, and then fill out the required fields. Make sure you select the **Packaging** > **Read & write** scope. 
+2. Select **New Token**, and then fill out the required fields. Make sure you select the **Packaging** > **Read & write** scope. 
 
     :::image type="content" source="media/create-packaging-pat.png" alt-text="Screenshot showing how to create a new personal access token.":::  
 
-1. Select **Create** when you are done.
+3. Select **Create** when you are done.
 
 ::: moniker-end
 
@@ -56,27 +56,25 @@ gradle -v
 
 1. Select your profile icon, and then select **Security**.
 
-1. Select **New Token**.
+2. Select **New Token**, and then name your token and set its expiration date. 
 
-1. Name your token and set its expiration date. 
+3. Select the **Packaging (Read & write)** scope.
 
-1. Select the **Packaging (Read & write)** scope.
-
-:::image type="content" source="media/select-scope.png" alt-text="Screenshot showing the available scopes for a pat.":::
+    :::image type="content" source="media/select-scope.png" alt-text="Screenshot showing the available scopes for a pat.":::
 
 ::: moniker-end
 
-1. Copy your token and save it in a secure location.
+4. Copy your token and save it in a secure location.
 
-1. Create a new file in your `.gradle` folder and name it **gradle.properties**. The path to your gradle folder is usually in `%INSTALLPATH%/gradle/user/home/.gradle/`.
+5. Create a new file in your `.gradle` folder and name it **gradle.properties**. The path to your gradle folder is usually in `%INSTALLPATH%/gradle/user/home/.gradle/`.
 
-1. Open the **gradle.properties** file with a text editor and add the following snippet:
+6. Open the **gradle.properties** file with a text editor and add the following snippet:
 
     ```
     vstsMavenAccessToken=<PASTE_YOUR_PERSONAL_ACCESS_TOKEN_HERE>
     ```
 
-1. Save your file when you are done.
+7. Save your file when you are done.
 
 ## Configure build.gradle 
 
