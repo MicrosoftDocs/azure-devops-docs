@@ -100,7 +100,7 @@ The following table lists the 22 process areas that comprise the CMMI model (ver
 |VER|Verification|  
 |VAL|Validation|  
 
-<a id="staged-representation" /> 
+<a id="staged-representation"></a>
   
 In the Staged Representation, the process areas are mapped against each stage, as shown in the following illustration.  
   
