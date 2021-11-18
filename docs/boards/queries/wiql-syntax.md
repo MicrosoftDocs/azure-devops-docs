@@ -10,7 +10,7 @@ ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A
 ms.author: kaelli  
 author: KathrynEE  
 monikerRange: '<= azure-devops'
-ms.date: 10/26/2021
+ms.date: 11/17/2021
 ---
 
 
@@ -318,26 +318,23 @@ The following table lists the macros or variables you can use within a WIQL quer
 
 |  Macro       |       Usage        |
 |---------|-----|
-|  <strong>@Me</strong>   | Use this variable to automatically search for the current user's alias in a field that contains user aliases. For example, you can find work items that you opened if you set the **Field** column to **Activated By**, the **Operator** column to **=**, and the **Value** column to <strong>@Me</strong>.   |
-|                                                 <strong>@CurrentIteration</strong>                                                  |                                                                                                                    Use this variable to automatically filter for work items assigned to the current sprint for the selected team based on the selected team context.                                                                                                                    |
-|                                                      <strong>@Project</strong>                                                      |                                                  Use this variable to search for work items in the current project. For example, you can find all the work items in the current project if you set the **Field** column to **Team Project**, the **Operator** column to **=**, and the **Value** column to <strong>@Project</strong>.                                                   |
-| <strong>@StartOfDay</strong><br/><strong>@StartOfWeek</strong><br/><strong>@StartOfMonth</strong><br/><strong>@StartOfYear</strong> |                    Use these macros to filter DateTime fields based on the start of the current day, week, month, year, or an offset to one of these values. For example, you can find all items created in the last 3 months if you set the **Field** column to **Created Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@StartOfMonth - 3**.                     |
-|                                                       <strong>@Today</strong>                                                       | Use this variable to search for work items that relate to the current date or to an earlier date. You can also modify the <strong>@Today</strong> variable by subtracting days. For example, you can find all items activated in the last week if you set the **Field** column to **Activated Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@Today - 7**. |
-|                                                              **[Any]**                                                              |                                                                                                                                       Use this variable to search for work items that relate to any value that is defined for a particular field.                                                                                                                                       |
+|**@Me** | Use this variable to automatically search for the current user's alias in a field that contains user aliases. For example, you can find work items that you opened if you set the **Field** column to **Activated By**, the **Operator** column to **=**, and the **Value** column to <strong>@Me</strong>.   |
+|**@CurrentIteration** | Use this variable to automatically filter for work items assigned to the current sprint for the selected team based on the selected team context. |
+|**@Project** | Use this variable to search for work items in the current project. For example, you can find all the work items in the current project if you set the **Field** column to **Team Project**, the **Operator** column to **=**, and the **Value** column to **@Project**.  |
+|**@StartOfDay**<br/>**@StartOfWeek**<br/>**@StartOfMonth**<br/>**@StartOfYear** | Use these macros to filter DateTime fields based on the start of the current day, week, month, year, or an offset to one of these values. For example, you can find all items created in the last 3 months if you set the **Field** column to **Created Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@StartOfMonth - 3**. |
+|**@Today**| Use this variable to search for work items that relate to the current date or to an earlier date. You can also modify the **@Today** variable by subtracting days. For example, you can find all items activated in the last week if you set the **Field** column to **Activated Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@Today - 7**. |
+| **[Any]** |  Use this variable to search for work items that relate to any value that is defined for a particular field.|
 
 ::: moniker-end
 
-
 ::: moniker range="< azure-devops-2019"
-
-
 |      Macro     |                 Usage   |
 |-----------------|----------------|
-|        <strong>@Me</strong>        |                                       Use this variable to automatically search for the current user's alias in a field that contains user aliases. For example, you can find work items that you opened if you set the **Field** column to **Activated By**, the **Operator** column to **=**, and the **Value** column to <strong>@Me</strong>.                                       |
-| <strong>@CurrentIteration</strong> |                                                                                                                    Use this variable to automatically filter for work items assigned to the current sprint for the selected team based on the selected team context.                                                                                                                    |
-|     <strong>@Project</strong>      |                                                  Use this variable to search for work items in the current project. For example, you can find all the work items in the current project if you set the **Field** column to **Team Project**, the **Operator** column to **=**, and the **Value** column to <strong>@Project</strong>.                                                   |
-|      <strong>@Today</strong>       | Use this variable to search for work items that relate to the current date or to an earlier date. You can also modify the <strong>@Today</strong> variable by subtracting days. For example, you can find all items activated in the last week if you set the **Field** column to **Activated Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@Today - 7**. |
-|             **[Any]**              |                                                                                                                                       Use this variable to search for work items that relate to any value that is defined for a particular field.                                                                                                                                       |
+| **@Me**|  Use this variable to automatically search for the current user's alias in a field that contains user aliases. For example, you can find work items that you opened if you set the **Field** column to **Activated By**, the **Operator** column to **=**, and the **Value** column to **@Me**.  |
+|**@CurrentIteration** | Use this variable to automatically filter for work items assigned to the current sprint for the selected team based on the selected team context. |
+| **@Project**|Use this variable to search for work items in the current project. For example, you can find all the work items in the current project if you set the **Field** column to **Team Project**, the **Operator** column to **=**, and the **Value** column to **@Project**.  |
+|**@Today**| Use this variable to search for work items that relate to the current date or to an earlier date. You can also modify the <strong>@Today</strong> variable by subtracting days. For example, you can find all items activated in the last week if you set the **Field** column to **Activated Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@Today - 7**. |
+|**[Any]** |Use this variable to search for work items that relate to any value that is defined for a particular field. |
 
 ::: moniker-end
 
@@ -683,7 +680,7 @@ ORDER BY System.ID asc
 ### Date-time pattern
 
 You specify the date-time pattern according to one of two patterns: 
-- The Date Pattern and Time Pattern you set under your personal profile settings ([Set personal preferences](../../organizations/settings/set-your-preferences.md)).
+- The Date Pattern and Time Pattern format comes from your browser's language/region selection.
 - The pattern specified by UTC, which follows this pattern (with Z appended to the date-time):  
 
 `AND System.ChangedDate >= '1/1/2019 00:00:00Z'`
