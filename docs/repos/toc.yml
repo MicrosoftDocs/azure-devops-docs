@@ -1,217 +1,90 @@
-- name: TFVC repositories
+- name: Azure Repos Documentation
   href: index.yml
-- name: What is TFVC?
-  href: what-is-tfvc.md
-- name: Get started
+- name: "What is Azure Repos?"
+  href: get-started/what-is-repos.md
+- name: Compare Git and TFVC
+  href: tfvc/comparison-git-tfvc.md
+- name: Use Git and TFVC
+  href: git/team-projects.md 
+- name: Key concepts
+  href: get-started/key-concepts-repos.md
+- name: Search code repositories
+  href: ../project/search/functional-code-search.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+- name: Get started  
+  href: get-started/toc.yml
+- name: Cross-service integration
   items:
-  - name: Visual Studio
-    href: share-your-code-in-tfvc-vs.md
+  - name: Cross-service integration overview
+    href: ../cross-service/cross-service-overview.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+  - name: End-to-end traceability
+    href: ../cross-service/end-to-end-traceability.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    displayname: pull requests, commits, comments, build 
+  - name: "Use #ID to link to work items"
+    href: ../notifications/add-links-to-work-items.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    displayname: pull requests, commits, comments, build, wiki
+  - name: Configure Git repositories to integrate with work tracking 
+    href: git/configure-repos-work-tracking.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    displayname: auto link, transition, check for linked work items, auto complete, external links 
+  - name: Configure pipelines to support work tracking
+    href: ../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    displayname: auto link, create work item on build failure, report deployment status,  
+  - name: Drive Git development
+    displayName: create branch, new branch, build 
+    href: ../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+  - name: View deployment stages on work item form
+    href: ../boards/work-items/work-item-deployments-control.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    displayname: release
+  - name: Auto complete work items with pull requests
+    href: ../boards/work-items/auto-complete-work-items-pull-requests.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json  
+  - name: GitHub integration 
+    href: ../cross-service/github-integration.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+  - name: Deploy to Azure
+    href: ../pipelines/overview-azure.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+- name: Git
+  href: git/toc.yml 
+- name: Team Foundation version control
+  href: tfvc/toc.yml 
+- name: Integrations
+  items:
+  - name: Azure Repos with Slack
+    href: integrations/repos-slack.md
+  - name: Azure Repos with Microsoft Teams
+    href: integrations/repos-teams.md
+- name: REST API Reference
+  items:
+  - name: Git
+    href: /rest/api/vsts/git/?view=azure-devops-rest-5.0
+  - name: TFVC
+    href: /rest/api/vsts/tfvc/?view=azure-devops-rest-5.0
+- name: IDE Client Resources
+  items:
+  - name: Visual Studio IDE
+    href: ../organizations/accounts/set-up-vs.md
+  - name: Visual Studio Code 
+    href: https://code.visualstudio.com/docs
+  - name: Visual Studio for Mac
+    href: /visualstudio/mac
   - name: Eclipse
-    href: share-your-code-in-tfvc-eclipse.md
-  - name: Xcode
-    href: share-your-code-in-tfvc-xcode.md
-  - name: Suspend work using My Work
-    href: day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md
-  - name: Request a code review
-    href: get-code-reviewed-vs.md
-- name: Develop in branches
+    href: /previous-versions/azure/devops/java/download-eclipse-plug-in
+  - name: IntelliJ IDEA
+    href: /previous-versions/azure/devops/java/download-intellij-plug-in
+- name: DevOps Resource Center
   items:
-  - name: About branching strategies
-    href: branching-strategies-with-tfvc.md
-  - name: Choose an effective branching strategy
-    href: effective-tfvc-branching-strategies-for-devops.md
-  - name: Branch folders and files
-    href: branch-folders-files.md
-  - name: Additional branch strategies
-    href: branch-strategically.md
-  - name: Manage feature isolation
-    href: effective-feature-isolation-on-tfvc.md
-  - name: Merge folders and files
-    href: merge-folders-files.md
-  - name: View changeset merges
-    href: view-where-when-changesets-have-been-merged.md
-  - name: View branch hierarchies
-    href: view-branch-hierarchy-team-project.md
-  - name: Associate files with merge tools
-    href: associate-file-type-file-comparison-tool.md
-- name: Create workspaces
+  - name: Selecting a development environment
+    href: /devops/develop/selecting-development-environment
+  - name: How we use Git at Microsoft
+    href: /devops/develop/how-microsoft-develops-devops
+  - name: Plan your migration to Git
+    href: /devops/develop/git/centralized-to-git
+  - name: Migrate from TFVC to Git
+    href: /devops/develop/git/migrate-from-tfvc-to-git
+  - name: Migrate from Subversion (SVN) to Git
+    href: git/perform-migration-from-svn-to-git.md
+- name: Resources
   items:
-  - name: Set up TFVC
-    href: set-up-team-foundation-version-control-your-dev-machine.md
-  - name: Create and work with workspaces
-    href: create-work-workspaces.md
-  - name: Optimize your workspace
-    href: optimize-your-workspace.md
-  - name: Local and server workspaces
-    href: decide-between-using-local-server-workspace.md
-  - name: Add check-in policies
-    href: add-check-policies.md
-  - name: Test impact for partially mapped repositories
-    href: test-impact-for-partially-mapped-tfvc-repositories.md
-- name: Work with files
-  items:
-  - name: Create and manage pending changes
-    href: develop-code-manage-pending-changes.md
-  - name: Add files
-    href: add-files-server.md
-  - name: Download files
-    href: download-get-files-from-server.md
-  - name: Check out and edit
-    href: check-out-edit-files.md
-  - name: Check in your work
-    href: check-your-work-team-codebase.md
-  - name: Rename or move
-    href: rename-move-files-folders.md
-  - name: Delete or restore
-    href: delete-restore-files-folders.md
-  - name: Gated check-ins
-    href: check-folder-controlled-by-gated-check-build-process.md
-  - name: Compare files & folders
-    items:
-    - name: Compare files
-      href: compare-files.md
-    - name: Compare folders
-      href: compare-folders.md
-    - name: Folder comparison filters
-      href: folder-comparison-filters.md
-    - name: Reconcile differences
-      href: reconcile-differences-between-two-folders.md
-  - name: Resolve conflicts
-    href: resolve-team-foundation-version-control-conflicts.md
-  - name: Lock files & folders
-    items:
-    - name: Understand lock types
-      href: understand-lock-types.md
-    - name: Lock & unlock folders or files
-      href: lock-unlock-folders-files.md
-- name: Manage versions
-  items:
-  - name: Get the history of an item
-    href: get-history-item.md
-  - name: View changes using annotate
-    href: view-file-changes-using-annotate.md
-  - name: Label versions
-    href: use-labels-take-snapshot-your-files.md
-  - name: Find and view changesets
-    href: find-view-changesets.md
-  - name: Roll back changesets
-    href: roll-back-changesets.md
-  - name: Suspend work with shelvesets
-    href: suspend-your-work-manage-your-shelvesets.md
-- name: Manage TFVC
-  items:
-  - name: Default TFVC permissions (Security)
-    href: ../../organizations/security/default-tfvc-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
-  - name: Set TFVC permissions (Security)
-    href: set-tfvc-repository-permissions.md
-  - name: Configure check-out settings
-    href: configure-check-out-settings.md
-  - name: Manage file types
-    href: /azure/devops/server/admin/manage-file-types
-  - name: Set and enforce quality gates
-    href: set-enforce-quality-gates.md
-  - name: Control access to TFVC
-    href: control-access-team-foundation-version-control.md
-  - name: Remove access to TFVC
-    href: remove-access-version-control-files.md
-  - name: Undo changes in another user's workspace
-    href: undo-changes-another-user-workspace.md
-  - name: Clean up files when users leave
-    href: clean-up-files-when-users-leave.md
-  - name: Destroy version controlled files
-    href: configure-check-out-settings.md
-  - name: Migrate from Visual SourceSafe
-    href: /previous-versions/visualstudio/visual-studio-2013/ms253060(v=vs.120)
-  - name: Download permissions report
-    displayName: json
-    href: ../../organizations/security/download-permissions-report.md
-- name: TFVC command reference
-  items:
-  - name: Use Team Foundation version control commands
-    href: use-team-foundation-version-control-commands.md
-  - name: Git commands
-    items:
-    - name: Git permission
-      href: git-permission-command.md
-    - name: Git view
-      href: git-view-command.md
-  - name: Add
-    href: add-command.md
-  - name: Checkin
-    href: checkin-command.md
-  - name: Checkout (or Edit)
-    href: checkout-or-edit-command.md
-  - name: Get
-    href: get-command.md
-  - name: History
-    href: history-command.md
-  - name: Status
-    href: status-command.md
-  - name: Undo
-    href: undo-command.md
-  - name: Delete
-    href: delete-command-team-foundation-version-control.md
-  - name: Properties
-    href: properties-or-info-command.md
-  - name: Rename
-    href: rename-command-team-foundation-version-control.md
-  - name: Shelve
-    href: shelve-command.md
-  - name: Unshelve
-    href: unshelve-command.md
-  - name: Branch
-    href: branch-command.md
-  - name: Branches
-    href: branches-command.md
-  - name: Changeset
-    href: changeset-command.md
-  - name: Configure
-    href: configure-command.md
-  - name: Destroy
-    href: destroy-command-team-foundation-version-control.md
-  - name: Difference
-    href: difference-command.md
-  - name: Dir
-    href: dir-command.md
-  - name: Folderdiff
-    href: folderdiff-command.md
-  - name: Help
-    href: help-command-team-foundation-version-control.md
-  - name: Label
-    href: label-command-team-foundation-version-control.md
-  - name: Labels
-    href: labels-command.md
-  - name: LocalVersions
-    href: localversions-command.md
-  - name: Lock
-    href: lock-command.md
-  - name: Merge
-    href: merge-command.md
-  - name: Merges
-    href: merges-command.md
-  - name: Msdn
-    href: msdn-command.md
-  - name: Permission
-    href: permission-command.md
-  - name: Proxy
-    href: proxy-command.md
-  - name: Reconcile
-    href: reconcile-command.md
-  - name: Resolve
-    href: resolve-command.md
-  - name: Rollback
-    href: rollback-command-team-foundation-version-control.md
-  - name: Shelvesets
-    href: shelvesets-command.md
-  - name: Undelete
-    href: undelete-command.md
-  - name: Unlabel
-    href: unlabel-command.md
-  - name: View
-    href: view-command.md
-  - name: Workfold
-    href: workfold-command.md
-  - name: Workspace
-    href: workspace-command.md
-  - name: Workspaces
-    href: workspaces-command.md
+  - name: GitHub & Azure Boards 
+    href: ../boards/github/index.md
+  - name: Manage projects
+    href: ../organizations/projects/about-projects.md
+  - name: Marketplace extensions
+    href: https://marketplace.visualstudio.com/search?target=VSTS&category=Code&sortBy=Downloads
