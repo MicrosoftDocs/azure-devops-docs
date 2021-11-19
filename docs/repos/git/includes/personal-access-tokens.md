@@ -152,7 +152,7 @@ git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.c
 
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential manager:
 
-- [Git Credential Manager](https://github.com/microsoft/Git-Credential-Manager-Core) (Windows also requires [Git for Windows](https://www.git-scm.com/download/win))
+- [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager) (Windows also requires [Git for Windows](https://www.git-scm.com/download/win))
 
 ### Use a PAT in your code
 
