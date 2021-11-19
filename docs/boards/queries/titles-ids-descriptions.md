@@ -138,10 +138,9 @@ You can find work items that have an undefined field value by using the equals o
 
 To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
 
-
-::: moniker range=">= azure-devops-2019"
-
 <a id="empty"/>
+<a id="empty-or-not-empty-html-field-queries"/>
+::: moniker range=">= azure-devops-2019"
 
 ## Empty or not empty HTML field queries
 
@@ -183,11 +182,8 @@ The default assignments of work item types to each category are listed below for
 
 Each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). You can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
 
-
-::: moniker range=">= tfs-2017"
-
-
 <a id="following" />
+::: moniker range=">= tfs-2017"
 
 ## Query for work items that you're following
 
@@ -200,10 +196,8 @@ For example, the following query shows how to query across all projects for acti
 
 ::: moniker-end 
 
-
-::: moniker range=">= tfs-2018"
-
 <a id="recent-macros" />
+::: moniker range=">= tfs-2018"
 
 ## Query for recent work item activity
 

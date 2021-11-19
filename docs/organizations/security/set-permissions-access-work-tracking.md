@@ -223,10 +223,8 @@ To manage permissions for a query or query folder, you must be the creator of th
 
 For details, see [Set permissions on a shared query or query folder](../../organizations/security/set-permissions-access-work-tracking.md). To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/about-managed-queries.md).
 
-
-::: moniker range=">= tfs-2017"  
-
 <a id="tags" /> 
+::: moniker range=">= tfs-2017"  
 
 ## Set permissions on work item tags 
 

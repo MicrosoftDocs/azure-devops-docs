@@ -271,6 +271,8 @@ Similar to Kanban boards, each sprint Taskboard can be customized to support inf
 
 :::image type="content" source="media/configure-sprint-taskboard.png" alt-text="Screenshot of Taskboard selection.":::
 
+
+<a id="add-and-manage-team-dashboards" /> 
 ::: moniker range=">= tfs-2017" 
 
 ## Add and manage team dashboards   

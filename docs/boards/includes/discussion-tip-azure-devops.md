@@ -8,6 +8,8 @@ ms.date: 07/09/2020
 ---
 
 
+<a id="capture-comments-in-the-discussion-section" />
+
 ## Capture comments in the Discussion section 
 
 Use the **Discussion** section to add and review comments made about the work being performed. 
