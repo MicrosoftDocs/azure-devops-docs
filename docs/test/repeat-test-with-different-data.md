@@ -14,19 +14,17 @@ ms.date: 09/14/2021
 
 [!INCLUDE [version-header](includes/version-header.md)] 
 
-When you write a [manual test](create-test-cases.md), 
-you often want to specify that the test should be repeated several 
-times with different test data. For example, if your users can add 
-different quantities of a product to a shopping cart, then you want 
-to check that a quantity of 200 works just as well as a quantity of 1.
+You add parameters to your [manual test](create-test-cases.md) to repeat the test with different test data.
+For example, you can test adding different quantities to a shopping cart from quantities of 1, 5, 10, or 200.
 
-To do this, you insert parameters in your test steps. Along with 
-the test steps, you provide a table of parameter values. You can 
-also share parameters and their data between test cases when you 
-use the web portal with TFS 2015 and later or 
-Azure DevOps. That way you can run multiple test cases with the 
-same data.
+You insert parameters within your test steps for a manual test case. Then, you provide a table of parameter values.
+You can add shared parameters to test cases or convert parameters you've recently inserted into shared parameters.
+Shared steps and shared parameters are different work item types that can be shared across multiple test cases.
+They're linked to test cases through the **Test Cases-Shared Steps** and **Referenced By-References** link types as shown in the following illustration.
 
+![Diagram shows Shared Steps connected to Test Case, which is also connected to Shared Parameters.](media/repeat-test-with-different-data/shared-steps-shared-parameters.png)
+
+With shared steps and shared parameters, you can run multiple test cases with the same data.
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
 
@@ -76,7 +74,7 @@ You can convert existing parameters to shared parameters so that you can use the
 
    ![Screenshot shows mapping a shared parameter to a local parameter.](media/repeat-test-with-different-data/map-shared-local-parameter.png)
 
-   When they are correctly mapped, the data associated with the shared parameter is displayed. 
+   When they're correctly mapped, the data associated with the shared parameter is displayed.
 
 1. Add, edit, and rename your shared parameter sets in the **Parameters** page.
    View the test cases that reference them in the **Test cases** pane.
@@ -187,11 +185,15 @@ You can run a test case that uses parameters.
 ## Review the test results 
 ::: moniker range=">=azure-devops-2020"
 
-The outcome of the test is based on a precedence hierarchy of all the iteration outcomes. The hierarchy order is Paused, Failed, Blocked, Passed, Not Applicable, and Unspecified (Active). For example, if you marked any iteration as failed and all the rest as passed, the outcome of the entire test is shown as failed. This result is different from test cases that do not have parameters, where the outcome displays the status of the last run.
+The outcome of the test is based on a precedence hierarchy of all the iteration outcomes. The hierarchy order is Paused, Failed, Blocked, Passed, Not Applicable, and Unspecified (Active). For example, if you marked any iteration as failed and all the rest as passed, the outcome of the entire test is shown as failed. This result is different from test cases that don't have parameters, where the outcome displays the status of the last run.
 
-Double-click a test result to view the test run details, and the test results for each iteration.
+To review test results, from the **Execute** tab, select a test point. Select **More options** or right-click to open the context menu. Select **View test results**.
 
-![Viewing the test run details](media/repeat-test-with-different-data/test-run-details.png)
+![Screenshot shows selecting the View test results option from the context menu.](media/repeat-test-with-different-data/select-view-test-result.png)
+
+You can view the results in the **Test Case Results** dialog box.
+
+![Screenshot shows test results for a test point.](media/repeat-test-with-different-data/view-test-results.png)
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
@@ -228,8 +230,8 @@ values, and then play it back for the other sets.
    Your actions will be played back automatically, but you must still 
    verify the results. 
 
-Record and playback doesn't work with all applications. For details, see 
-[Supported Configurations and Platforms for Coded UI Tests and Action Recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
+Record and playback doesn't work with all applications.
+For details, see [Supported configurations and platforms for coded UI tests and action recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 
 ## Related articles
 
