@@ -251,9 +251,9 @@ See the following articles for more information:
 - [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
 
 <a id="git-code-development" /> 
+::: moniker range=">= tfs-2017"
 
 ## Work items linked to Git code development  
 

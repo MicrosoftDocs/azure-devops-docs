@@ -8,7 +8,7 @@ ms.date: 07/09/2020
 ---
 
 <a id="discussion" />
-
+<a id="capture-comments-in-the-discussion-section" />
 ::: moniker range=">= tfs-2017" 
 
 ## Capture comments in the Discussion section 
