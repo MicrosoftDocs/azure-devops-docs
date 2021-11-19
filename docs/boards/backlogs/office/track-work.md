@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 11/18/2021
 ---
 
 
@@ -19,13 +19,13 @@ ms.date: 07/09/2020
 
 ::: moniker range=">= azure-devops-2019"
 
-To support your work tracking efforts, you can use Microsoft Excel. You can decide to either work in an online mode where you are connected to either Azure Boards or Azure DevOps Server, or in an offline mode where you access the local computer and document. 
+To support your work tracking efforts, you can use Microsoft Excel. You can work in online mode, where you're connected to either Azure Boards or Azure DevOps Server, or in offline mode where you access the local computer and document. 
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-To support your work tracking efforts, you can use Microsoft Excel and Microsoft Project. You can decide to either work in an online mode where you are connected to either Azure Boards or Team Foundation Server (TFS), or in an offline mode where you access the local computer and document. 
+To support your work tracking efforts, use Microsoft Excel and Microsoft Project. You can either work in online mode, where you're connected to Azure Boards or Team Foundation Server (TFS), or in offline mode where you access the local computer and document. 
 
 ::: moniker-end
 
@@ -120,13 +120,13 @@ The following table indicates the Office clients that are supported for each Azu
 :::row-end:::
 
 #### Notes: 
-1.  Support for Project integration and the **TFSFieldMapping** command have been deprecated for Azure DevOps Server 2019 and later versions. You may find support using one of the [Marketplace extensions](#marketplace). 
+1.  Support for Project integration and the **TFSFieldMapping** command are deprecated for Azure DevOps Server 2019 and later versions. You might find support using one of the [Marketplace extensions](#marketplace). 
 2.  Support for linking PowerPoint files to work items from within PowerPoint has been deprecated starting with Visual Studio 2019 and  Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.  
  
 
 ## Prerequisites 
 
-Connection from an Office client to an Azure Boards project requires that you have installed the necessary software and have the necessary permissions. 
+Connection from an Office client to an Azure Boards project requires that you've installed the necessary software and have the necessary permissions. 
 
 ::: moniker range="azure-devops" 
 
@@ -220,17 +220,17 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
 
 ::: moniker range="> tfs-2018" 
 
-When you add or update work items from Excel, local copies of your work items are created. To keep data in sync, its important to refresh your local file when you open it and publish and refresh frequently during a long online session. 
+When you add or update work items from Excel, local copies of your work items are created. To keep data in sync, it's important to refresh your local file when you open it and publish and refresh frequently during a long online session. 
 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2018" 
 
-When you add or update work items from Excel or Project, local copies of your work items are created. To keep data in sync, its important to refresh your local file when you open it and publish and refresh frequently during a long online session. 
+When you add or update work items from Excel or Project, local copies of your work items are created. To keep data in sync, it's important to refresh your local file when you open it and publish and refresh frequently during a long online session. 
 
 ::: moniker-end  
 
-The data in the local document at first matches the data in the database, but you or other team members can change the data about work items and cause the two to differ. To view the most recent changes from the database, refresh the document. This downloads the latest values in the data store to your local document. To write changes from the document to the database, publish the changes. Publishing uploads the changes you made to the work item tracking data store.   
+At first, the data in the local document matches the data in the database. But you or other team members can change the data about work items and cause the two to differ. To view the most recent changes from the database, refresh the document. The refresh downloads the latest values in the data store to your local document. To write changes from the document to the database, publish the changes. Publishing uploads the changes you made to the work item tracking data store.   
 
 To keep work items in sync from your local data store and Azure Boards, publish and refresh often. 
 
@@ -265,7 +265,7 @@ You can start work from the web portal, Excel, or Visual Studio/Team Explorer. Y
 
 This connection method requires that you have installed [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). It also requires Visual Studio 2017 or later version. 
 
-1. From your web browser, (1) check that you have selected the right project, (2) choose **Boards>Queries**, and then (3) choose **All**. 
+1. From your web browser, (1) check that you've selected the right project, (2) choose **Boards>Queries**, and then (3) choose **All**. 
  
 	> [!div class="mx-imgBorder"]  
 	> ![Open Boards>Queries, vertical nav](/azure/devops/boards/queries/media/view-run-queries/open-queries-vert.png) 
@@ -280,7 +280,7 @@ This connection method requires that you have installed [Azure DevOps Open in Ex
 
 #### [Connect from client to Azure Boards](#tab/open-excel-cloud) 
 
-To connect from your Office client to an Azure DevOps Services project, perform the following steps.  
+To connect from your Office client to an Azure DevOps Services project, do the following steps.  
 
 1.  Start with a blank worksheet. 
 
@@ -300,9 +300,9 @@ To connect from your Office client to an Azure DevOps Services project, perform 
 	> [!div class="mx-imgBorder"]  
 	> ![Connect to Azure DevOps Server dialog.](media/connect/connect-to-azure-devops.png)
 
-	If you are signed-in to your Office client with your Azure DevOps user account, then the set of servers, both cloud and on-premises, you have access to is automatically populated in the drop-down menu. 
+	If you are signed-in to your Office client with your Azure DevOps user account, the set of servers, both cloud and on-premises, that you have access to automatically populates in the drop-down menu. 
 
-	If you're not signed-in or you're working from an older version of an Office client, and you haven't connected to any servers previously, you need to add them now. 
+	If you're not signed-in, you're working from an older version of an Office client, or you haven't connected to any servers previously, you need to add them now. 
 
 1. Add a server to connect to. 
 
