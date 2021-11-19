@@ -34,11 +34,11 @@ Download and run the latest [Git for Windows installer](https://git-scm.com/down
 
 ### macOS and Linux
 
-You may [use SSH keys](use-ssh-keys-to-authenticate.md) to authenticate to Azure Repos, or you may use [Git Credential Manager](https://github.com/microsoft/Git-Credential-Manager-Core).
+You may [use SSH keys](use-ssh-keys-to-authenticate.md) to authenticate to Azure Repos, or you may use [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager).
 
 Installation instructions are included in the GitHub repository for GCM.
-On Mac, we recommend using [Homebrew](https://github.com/microsoft/Git-Credential-Manager-Core#macos-homebrew).
-On Linux, you can install from a [.deb](https://github.com/microsoft/Git-Credential-Manager-Core#linux-debian-package-deb) or a [tarball](https://github.com/microsoft/Git-Credential-Manager-Core#linux-tarball-targz).
+On Mac, we recommend using [Homebrew](https://github.com/GitCredentialManager/git-credential-manager#macos-homebrew).
+On Linux, you can install from a [.deb](https://github.com/GitCredentialManager/git-credential-manager#linux-debian-package-deb) or a [tarball](https://github.com/GitCredentialManager/git-credential-manager#linux-tarball-targz).
 
 ## Using the Git Credential Manager
 
