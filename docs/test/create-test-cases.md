@@ -66,7 +66,7 @@ For an overview of test artifacts, see [Test objects and terms](test-objects-ove
 
 You can also copy test cases. For more information, see [Copy or clone stories, issues and other work items](../boards/backlogs/copy-clone-work-items.md).
 
-### Assign configurations to test cases
+## Assign configurations to test cases
 
 You can specify configurations, such as different operating systems, web browsers, and other variations for your tests.
 
@@ -82,7 +82,7 @@ The **Assign configurations to selected test cases** dialog box opens. Make and 
 
 For more information about configurations, see [Test different configurations](test-different-configurations.md).
 
-### Reorder test cases
+## Reorder test cases
 
 You can reorder manual test cases in static suites, requirement-based suites, and query-based suites.
 Open a test case, then use the up and down arrows to change the order.
@@ -91,7 +91,7 @@ Open a test case, then use the up and down arrows to change the order.
 
 There are also options to change order in the step context menu.
 
-### Add existing test cases to a test suite
+## Add existing test cases to a test suite
 
 You can add existing test cases to a test suite.
 
@@ -144,7 +144,7 @@ After reordering the tests, you can sort them by the **Order** field and then ru
 > You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the Kanban board. To learn more, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md). 
 > 
 
-### Use the Grid view to edit test cases
+## Use the Grid view to edit test cases
 ::: moniker range=">=azure-devops-2020"
 
 You can copy and paste test cases into the **Grid** view.
@@ -304,7 +304,7 @@ To see linked items, in the **Define** tab, open the context menu for a test cas
 
 In the **Linked Items** dialog box, you can view **Test Suites**, **Requirements**, and **Bugs**.
 
-### Bulk edit test cases
+## Bulk edit test cases
 
 You can edit more than one test case at a time. Select several test cases in a test suite and select **Edit test case(s)**.
 
@@ -325,7 +325,7 @@ You can also create suites based on queries when you use tags.
 
 ![Screenshot shows tags for a test case.](media/create-test-cases/test-case-tags.png)
 
-### Rename or remove test cases
+## Rename or remove test cases
 
 You can rename or remove test cases. Open the test case from its context menu.
 
@@ -372,17 +372,17 @@ To manage or delete test artifacts, you must also have your access level set to 
 To delete test plans and test suites, you must be a member of the Project Administrators group or have the Area Path node-level [**Manage test plans** or **Manage test suites**](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts) permission set to **Allow**. To manage or delete test artifacts, you must also have your [access level](../organizations/security/access-levels.md) set to **Basic + Test Plans** or **Visual Studio Enterprise**. For more information, see [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md).
 ::: moniker-end
 
-##  Next step
+## Next step
 
 > [!div class="nextstepaction"]
 > [Run manual tests](run-manual-tests.md)
 
-
 ## Related articles
 
-- [Share steps between test cases](share-steps-between-test-cases.md)
 - [Copy or clone stories, issues and other work items](../boards/backlogs/copy-clone-work-items.md)
-- [Test different configurations](test-different-configurations.md)
-- [Repeat a test with different data](repeat-test-with-different-data.md)
-- [Test objects and terms](test-objects-overview.md) 
+- [Delete test artifacts in Azure Boards](../boards/backlogs/delete-test-artifacts.md)
 - [FAQs for manual testing](reference-qa.md#testcases)
+- [Repeat a test with different data](repeat-test-with-different-data.md)
+- [Share steps between test cases](share-steps-between-test-cases.md)
+- [Test different configurations](test-different-configurations.md)
+- [Test objects and terms](test-objects-overview.md)
