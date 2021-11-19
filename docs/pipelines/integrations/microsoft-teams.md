@@ -22,25 +22,29 @@ The [Azure Pipelines app for Microsoft Teams](https://appsource.microsoft.com/pr
 ## Prerequisites
 
 - You must have an Azure DevOps project. For more information, see [Create a project](../../organizations/projects/create-project.md).
-- You must be an administrator of the project containing the pipeline to set up the subscriptions.
+- You must be an administrator of the project containing the pipeline to set up subscriptions.
 
-## Connect Azure Pipelines to Microsoft Teams
+## Set up the Azure Pipelines app
 
 1. In Microsoft Teams, go to the **Apps** store, search for **Azure Pipelines**, and then select **Azure Pipelines**.
    
    :::image type="content" source="media/integrations-teams/select-azure-pipelines-from-microsot-teams.png" alt-text="Screenshot of selecting the Apps button, then Azure Pipelines button.":::
 
-2. Select the **Open** dropdown, and then select **Add to a team**.
+2. Select the **Open** dropdown arrow, and then select **Add to a team**.
  
    :::image type="content" source="media/integrations-teams/open-and-add-to-a-team.png" alt-text="Screenshot of selecting Open button and then Add to a team button.":::
 
-3. Select your team, and then choose **Set up a bot**.
+3. Select or enter your team name, and then choose **Set up a bot**.
    
    :::image type="content" source="media/integrations-teams/set-up-a-bot.png" alt-text="Selecting the Set up a bot button.":::
 
-4. In Teams conversation pane, enter `@azurePipelines signin`.
+4. In the Teams conversation pane, enter `@azurePipelines signin`.
 5. Select **Sign in** and complete authentication to Azure Pipelines. 
-6. To start monitoring all pipelines in a project, use the following command inside a channel:
+
+
+## Use commands
+
+To start monitoring all pipelines in a project, use the following command inside a channel:
 
 ```
 @azure pipelines subscribe [project url]
@@ -53,7 +57,7 @@ For example:
 @azure pipelines subscribe https://dev.azure.com/myorg/myproject/
 ```
 
-You can also monitor a specific pipeline using the following command:
+Monitor a specific pipeline using the following command:
 
 ```
 @azure pipelines subscribe [pipeline url]
@@ -61,19 +65,17 @@ You can also monitor a specific pipeline using the following command:
 
 The pipeline URL can be to any page within your pipeline that has a `definitionId` or `buildId/releaseId` present in the URL. 
 
-For example:
+For example, the following build pipeline is subscribed to the *Build completed* notification:
 
 ```
 @azure pipelines subscribe https://dev.azure.com/myorg/myproject/_build?definitionId=123
 ```
 
-Or:
+Or the following release pipeline is subscribed to the *Release deployment started*, *Release deployment completed*, and *Release deployment approval pending* notifications:
 
 ```
 @azure pipelines subscribe https://dev.azure.com/myorg/myproject/_release?definitionId=123&view=mine&_a=releases
 ```
-
-For build pipelines, the channel is subscribed to the *Build completed* notification. For Release pipelines, the channel is subscribed to the *Release deployment started*, *Release deployment completed*, and *Release deployment approval pending* notifications. For YAML pipelines, subscriptions are created for the *Run stage state changed* and *Run stage waiting for approval* notifications.
 
 > [!div class="mx-imgBorder"]
 > ![Subscriptions added image](media/integrations-teams/subscriptions-added-confirmation-teams.png)
