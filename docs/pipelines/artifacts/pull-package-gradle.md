@@ -73,29 +73,25 @@ gradle -v
 
 7. Save your file when you are done.
 
-## Install a Maven artifact using Gradle
+## Install Maven artifacts using Gradle
 
-Open your **build.gradle** file and confirm that the following text is present at the top of it:
-```groovy
-apply plugin: 'java'
-```
+1. Open your *build.gradle* file and make sure it starts with the following:
 
-Now, add the following code to the end of your **build.gradle** file. Use the `groupId`, `artifactId`, and `version` you supplied in the previous step.
+    ```groovy
+    apply plugin: 'java'
+    ```
 
-```groovy
-dependencies { 
-    compile(group: '{your-group-ID-here}', name: '{your-artifact-ID-here}', version: '{your-version-number-here}')  
-} 
-```   
-For example: `compile(group: 'siteOps', name: 'odata-wrappers', version: '1.0.0.0')
+1. Add the following snippet to your *build.gradle* file to download your artifact during the build. Replace the placeholders with your groupID, artifactID, and versionNumber. For example: `compile(group: 'siteOps', name: 'odata-wrappers', version: '1.0.0.0')
 
-This tells `gradle build` to download the artifact you created prior, which is effectively named `orgId:artifactId`, and that it should be applied to the app named in the dependencies. 
+    ```groovy
+    dependencies { 
+        compile(group: '<YOUR_GROUP_ID>', name: '<ARTIFACT_ID>', version: '<VERSION_NUMBER>')  
+    } 
+    ```   
 
-To test this, create a simple Java code file and build it with Gradle. You can use this code to test:
+To test this, we can create a simple Java console app and build it with Gradle.
 
 ```java
-package
-
 public class HelloWorld { 
     public static void main(String[] args) { 
         System.out.println("Hello, world!"); 
@@ -103,13 +99,11 @@ public class HelloWorld {
 } 
 ```
 
-Build the code by running Gradle from a command prompt:
+Run the following command to build your project. Your build output should return: `BUILD SUCCESSFUL`
 
-```cli
+```Command
 gradle build
 ```
-
-If the build is successful, you will see `BUILD SUCCESSFUL` displayed when it completes.
 
 ## Configure your build to install Maven artifacts using Gradle
 
