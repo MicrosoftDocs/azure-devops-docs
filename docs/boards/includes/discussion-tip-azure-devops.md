@@ -26,9 +26,9 @@ The rich text editor tool bar displays below the text entry area. It appears whe
 > [!NOTE]  
 > There is no Discussion work item field. To query work items with comments entered in the Discussion area, you filter on the [**History** field](../queries/history-and-auditing.md). The full content of the text entered into the Discussion text box is added to the History field. 
 
-### Mention someone, a group, work item, or pull request (:::image type="icon" source="/azure/devops/media/icons/at-mention.png" border="false":::, :::image type="icon" source="/azure/devops/media/icons/work-id.png" border="false":::, or ![pull-request id icon](/azure/devops/media/icons/pr-id.png))
+### Mention someone, a group, work item, or pull request 
 
-Choose one of these icons &mdash;:::image type="icon" source="../../media/icons/at-mention.png" border="false":::, :::image type="icon" source="../../media/icons/work-id.png" border="false":::, or ![pull-request id icon](../../media/icons/pr-id.png)&mdash; to open a menu of recent entries you've made to mention someone, link to a work item, or link to a pull request. Or to open the same menu, you can type **@**, **#**, or **!**.
+Choose one of these icons &mdash;:::image type="icon" source="../../media/icons/at-mention.png" border="false" alt-text="at mention":::, :::image type="icon" source="../../media/icons/work-id.png" border="false" alt-text="pound sign ":::, or :::image type="icon" source="../../media/icons/pr-id.png" border="false" alt-text="P R":::&mdash; to open a menu of recent entries you've made to mention someone, link to a work item, or link to a pull request. Or to open the same menu, you can type **@**, **#**, or **!**.
 
 > [!div class="mx-imgBorder"]  
 > ![Discussion section, @mention drop-down menu](../media/discussion-at-mention.png)
