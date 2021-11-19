@@ -1,74 +1,90 @@
-- name: What is Azure DevOps?
-  href: what-is-azure-devops.md
-- name: Overview of services
-  href: services.md
-- name: Azure DevOps hosted vs. on-premises
-  href: about-azure-devops-services-tfs.md
-- name: Get started for end users
+- name: Get started 
+  href: index.yml
+- name: Start using Azure DevOps
+  href: ../user-guide/toc.yml
+- name: Integration overview
   items:
-  - name: Sign in to the web or a client
-    href: ../organizations/projects/connect-to-projects.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Code with Git
-    href: code-with-git.md
-  - name: Set up continuous integration and delivery
-    href: ../pipelines/create-first-pipeline.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Plan and track work
-    href: ../boards/get-started/plan-track-work.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Add and run manual tests
-    href: add-run-manual-tests.md
-  - name: View permissions
-    href: ../organizations/security/view-permissions.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Follow work and pull requests
-    href: ..//boards/work-items/follow-work-items.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Get started as a Stakeholder
-    href: ..//organizations/security/get-started-stakeholder.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-- name: Get started for administrators
+  - name: Cross-service integration overview
+    href: ../cross-service/cross-service-overview.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: GitHub integration 
+    href: ../cross-service/github-integration.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Deploy to Azure
+    href: ../pipelines/overview-azure.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+- name: Web portal navigation
   items:
-  - name: Sign up for Azure DevOps
-    href: sign-up-invite-teammates.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
-  - name: Create an organization or project collection
-    href: ../organizations/accounts/create-organization.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Manage your project
-    href: project-admin-tutorial.md
-  - name: Add users to a project or team
-    href: ../organizations/security/add-users-team-project.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Manage teams and configure team tools
-    href: ../organizations/settings/manage-teams.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Change individual permissions
-    href: ../organizations/security/change-individual-permissions.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Grant or restrict permissions to select tasks
-    href: ../organizations/security/restrict-access.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-- name: Key concepts
+  - name: Navigation 
+    href: ../project/navigation/index.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Open a service, page, or setting 
+    href: ../project/navigation/go-to-service-page.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
+  - name: Add an artifact or team artifacts
+    href: ../project/navigation/add-artifact-team.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Use breadcrumbs, selectors, and directories
+    href: ../project/navigation/use-breadcrumbs-selectors.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Open another project or repo  
+    href: ../project/navigation/go-to-project-repo.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json   
+  - name: Set favorites 
+    href: ../project/navigation/set-favorites.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
+  - name: Filter basics 
+    href: ../project/navigation/filter-basics.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Search your repo, work items, or wiki 
+    href: ../project/search/get-started-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
+  - name: Manage or enable features  
+    href: ../project/navigation/preview-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+- name: Search
   items:
-  - name: Plan your organizational structure
-    href: ./plan-your-azure-devops-org-structure.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Source control
-    href: source-control.md
-  - name: Clients and tools
-    href: tools.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Software development roles
-    href: roles.md
-- name: Troubleshooting
+  - name: Get started with search
+    href: ../project/search/get-started-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Search code
+    href: ../project/search/functional-code-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Search work items
+    href: ../project/search/functional-work-item-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+- name: Migrate & import
+  href: ../migrate/toc.yml 
+- name: Permissions & access
   items:
-  - name: Troubleshoot connection
-    href: ./troubleshoot-connection.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252fprojects%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252fprojects%252ftoc.json
-  - name: 'TF31002: Unable to connect'
-    href: ../organizations/projects/tf31002-unable-connect-tfs.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252fprojects%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252fprojects%252ftoc.json
-  - name: Troubleshoot access and permissions
-    href: ../organizations/security/troubleshoot-permissions.md
-  - name: Allowed address lists and network connections
-    href: ../organizations/security/allow-list-ip-url.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
-  - name: Get support or provide feedback
-    href: provide-feedback.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
-- name: Reference
+  - name: "Permissions and access (Security)"
+    href: ../organizations/security/permissions-access.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: About access levels
+    href: ../organizations/security/access-levels.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+- name: Status & security 
+  items: 
+  - name: Service status  
+    href: ../user-guide/service-status-info.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Data protection
+    href: ../organizations/security/data-protection.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Data location
+    href: ../organizations/security/data-location.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Credential storage
+    href: ../organizations/security/credential-storage.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+- name: IDE Client Resources
   items:
-  - name: Navigate in Team Explorer
-    href: work-team-explorer.md
-  - name: FAQs
-    href: faqs.md
-  - name: Service limits
-    href: service-limits.md
-  - name: Features index
-    href: alm-devops-features.md
-  - name: Azure CLI
-    href: /cli/azure/devops
+  - name: Visual Studio IDE
+    href: ../organizations/accounts/set-up-vs.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Visual Studio Code 
+    href: https://code.visualstudio.com/docs
+  - name: Visual Studio for Mac
+    href: /visualstudio/mac
+  - name: Eclipse
+    href: /previous-versions/azure/devops/java/download-eclipse-plug-in
+  - name: IntelliJ IDEA
+    href: /previous-versions/azure/devops/java/download-intellij-plug-in
+- name: Resources
+  items:
+  - name: Settings, security, & usage
+    href: ../organizations/index.yml
+  - name: Manage projects 
+    href: ../organizations/projects/about-projects.md
+  - name: Marketplace & extensibility
+    href: ../marketplace-extensibility/index.yml
+  - name: Search your Wiki
+    href: https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/
+  - name: Code search video
+    href: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
+- name: DevOps Resource Center
+  items:
+    - name: What is DevOps?
+      href: /devops/what-is-devops
+    - name: What is Agile?
+      href: /devops/plan/what-is-agile
+    - name: What is Git?
+      href: /devops/develop/git/what-is-git
