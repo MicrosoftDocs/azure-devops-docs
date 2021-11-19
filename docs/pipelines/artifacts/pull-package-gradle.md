@@ -105,28 +105,23 @@ Run the following command to build your project. Your build output should return
 gradle build
 ```
 
-## Configure your build to install Maven artifacts using Gradle
+## Use Gradle in Azure Pipeline
 
-Run the following from a command prompt:
+1. Run the following command to create the Gradle wrapper **gradlew**. 
 
-```cli
-gradle wrapper
-```
+    ```cli
+    gradle wrapper
+    ```
 
-The Gradle wrapper is created in the directory where you ran the above command. The wrapper's file name is **gradlew**. Do not rename this file.
+1. Push your changes to your remote branch. We will need this file later when we add the **Gradle** task.
 
-`git push` an update that contains the wrapper (gradlew) from your cloned (local) repo to `origin`. Team Build requires this file on the remote repo for Gradle to build your project.
+1. Navigate to your pipeline definition. If you don't have one, create a new pipeline, select **Use the classic editor** and then select the **Gradle** template. 
 
-Go to the **Build and Release** page for your project, and then select **Builds**.
+    :::image type="content" source="media/select-gradle-template.png" alt-text="Screenshot showing how to use the Gradle pipeline template":::
 
-Select the **+ New** button. Scroll down and select the **Gradle** template.
+1. You can use the default settings with the **gradlew build** task.
 
-![Select the Gradle template for a new Build task](media/select-gradle-template.png)
+:::image type="content" source="media/gradle-build-template.png" alt-text="Screenshot showing the Gradle task":::
 
-Select **Apply** to start configuring the build to use your Gradle wrapper.
-
-Now, select the **gradlew build** step. You can use the default settings to start.
-
-![Configure the Gradle template](media/gradle-build-template.png)
 
 Here, you can configure various Gradle tasks to run during the build.  Once you've configured the build pipeline, click **Save & queue** from the top menu and start building with your Gradle wrapper. You're done!
