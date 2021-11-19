@@ -1,18 +1,19 @@
 ---
-title: Install a Maven artifact using Gradle
-description: How to install Maven artifact with Azure Pipelines using Gradle
+title: Publish Maven Artifacts
+description: How to publish Maven artifact with Azure Pipelines
 ms.technology: devops-artifacts
 ms.reviewer: dastahel
 ms.topic: conceptual
 ms.date: 11/18/2021
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
-# Install Maven artifacts using Gradle
+# Publish Maven artifacts with Azure Pipelines
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-Gradle is a popular build tool for Java applications and the primary build tool for Android. Using Azure Pipelines, we can add the gradle task to our build definition and install Maven artifacts.
+Gradle is a popular build tool for Java applications and the primary build tool for Android. Using Azure Pipelines, we can add the gradle task to our build definition and build and publish our Maven artifacts.
 
 ## Prerequisites
 
@@ -73,7 +74,7 @@ gradle -v
 
 7. Save your file when you are done.
 
-## Install Maven artifacts using Gradle
+## Build projects with Gradle CLI
 
 1. Open your *build.gradle* file and make sure it starts with the following:
 
@@ -89,7 +90,7 @@ gradle -v
     } 
     ```   
 
-To test this, we can create a simple Java console app and build it with Gradle.
+To test this, we can create a sample Java console app and build it with Gradle.
 
 ```java
 public class HelloWorld { 
@@ -121,7 +122,20 @@ gradle build
 
 1. You can use the default settings with the **gradlew build** task.
 
-:::image type="content" source="media/gradle-build-template.png" alt-text="Screenshot showing the Gradle task":::
+    :::image type="content" source="media/gradle-build-template.png" alt-text="Screenshot showing the Gradle task":::
 
+1. The **Publish build artifacts** task will publish our artifact to Azure Pipelines.
 
-Here, you can configure various Gradle tasks to run during the build.  Once you've configured the build pipeline, click **Save & queue** from the top menu and start building with your Gradle wrapper. You're done!
+    :::image type="content" source="media\publish-gradle-pipeline.png" alt-text="Screenshot showing the publish artifacts task.":::
+
+1. Select **Save & queue** when you are done.
+
+1. You can view your published artifact in your pipeline **Summary** once the run is complete.
+
+    :::image type="content" source="media\published-artifact.png" alt-text="Screenshot showing the published artifact in pipeline summary.":::
+
+## Related articles
+
+- [Publish and download pipeline Artifacts](./pipeline-artifacts.md)
+- [Restore NuGet packages in Azure Pipelines](../packages/nuget-restore.md)
+- [Artifacts in Azure Pipelines](./build-artifacts.md)
