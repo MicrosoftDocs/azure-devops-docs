@@ -22,6 +22,7 @@ A branch that has required policies configured can't be deleted, and requires pu
 ::: moniker range=">= azure-devops-2020"
 
 - To set branch policies, you must be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
+
 - If you want to use Azure DevOps CLI [az repos policy](/cli/azure/repos/policy?view=azure-cli-latest&preserve-view=true) commands to manage branch policies, make sure to implement the instructions in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
@@ -43,7 +44,7 @@ Branches that have policies display a policy icon. You can select the icon to go
 
 To set branch policies, locate the branch you want to manage. You can browse the list or search for your branch in the **Search branch name** box at upper right.
 
-Select the **More options** icon next to the branch, and select **Branch policies** from the context menu.
+Select the **More options** icon next to the branch, and then select **Branch policies** from the context menu.
 
 ![Screenshot that shows Open the branch policies from the context menu.](media/branch-policies/new-branches-page.png)
 
@@ -425,7 +426,8 @@ ID    Name               Is Blocking    Is Enabled    Repository Id             
 
 ::: moniker range=">= tfs-2017" 
 
-<a id="check-comment-resolution" />
+<a id="check-comment-resolution"></a>
+
 ## Check for comment resolution
 
 The **Check for comment resolution** policy checks whether all PR comments are resolved.
@@ -548,7 +550,8 @@ ID    Name                  Is Blocking    Is Enabled    Repository Id          
 
 ::: moniker range=">= azure-devops-2020"
 
-<a id="limit-merge-types" />
+<a id="limit-merge-types"></a>
+
 ## Limit merge types
 
 Azure Repos has several merge strategies, and by default, all of them are allowed. You can maintain a consistent branch history by enforcing a merge strategy for PR completion.
@@ -681,15 +684,13 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
 - **No fast-forward merge** - This option merges the commit history of the source branch when the pull request closes and creates a merge commit in the target branch.
 - **Squash merge** - Complete all pull requests with a squash merge, creating a single commit in the target branch with the changes from the source branch. [Learn more about squash merging](merging-with-squash.md) and how it affects your branch history.
 
-<a name="build"></a>
-<a name="require-the-pull-request-to-build"></a>
-  
 ::: moniker-end 
 
 
 <a name="build"></a>
 <a name="require-the-pull-request-to-build"></a>
-<a id="build-validation" />
+<a id="build-validation"></a>
+
 ## Build validation
 
 ::: moniker range=">= azure-devops-2020" 
@@ -911,11 +912,11 @@ For instructions on configuring this policy, see [Configure a branch policy for 
 
 ::: moniker-end 
 
-<a id="include-code-reviewers" /> 
+<a id="include-code-reviewers"</a>
 
 ## Automatically include code reviewers
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">=azure-devops-2020"
 
 You can automatically add reviewers to pull requests that change files in specific directories and files, or to all pull requests in a repo.
 
@@ -1045,7 +1046,7 @@ az repos policy required-reviewer update --id
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+::: moniker range="<=azure-devops-2019"
 
 Select reviewers for specific directories and files in your repo.
 
@@ -1082,7 +1083,7 @@ In some cases, you might need to bypass policy requirements. Bypass permissions 
 ::: moniker range=">= azure-devops-2019"
 Two permissions allow users to bypass branch policy in different ways:
 
-- **Bypass policies when completing pull requests** applies only to pull request completion. Users with this permission can complete pull requests even if they don't satisfy policies.
+- **Bypass policies when completing pull requests** applies only to pull request completion. Users with this permission can complete pull requests even if the pull requests don't satisfy policies.
 
 - **Bypass policies when pushing** applies to pushes from local repositories and edits made on the web. Users with this permission can push changes directly to protected branches without meeting policy requirements.
 
@@ -1092,7 +1093,7 @@ For more information about managing these permissions, see [Git permissions](../
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="<=azure-devops-2019"
 
 In TFS 2015 through TFS 2018 Update 2, the **Exempt from policy enforcement** permission allows users with this permission to perform the following actions:
 
@@ -1138,8 +1139,8 @@ The order of filters is significant. Filters are applied left-to-right.
 - [What wildcard characters can I use for required code reviewers?](#what-wildcard-characters-can-i-use-for-required-code-reviewers)
 - [Are the required code reviewer paths case-sensitive?](#are-the-required-code-reviewer-paths-case-sensitive)
 - [How can I configure multiple users as required reviewers, but require only one of them to approve?](#how-can-i-configure-multiple-users-as-required-reviewers-but-require-only-one-of-them-to-approve)
-- [I have the exempt from policy permission. Why do I still see policy failures in the pull request status?](#i-have-the-exempt-from-policy-permission-why-do-i-still-see-policy-failures-in-the-pull-request-status)
-- [Why can't I complete my own pull requests when Allow requestors to approve their own changes is set?](#why-cant-i-complete-my-own-pull-requests-when-allow-requestors-to-approve-their-own-changes-is-set)
+- [I have bypass policy permissions. Why do I still see policy failures in the pull request status?](#i-have-bypass-policy-permissions-why-do-i-still-see-policy-failures-in-the-pull-request-status)
+- [Why can't I complete my own pull requests when "Allow requestors to approve their own changes" is set?](#why-cant-i-complete-my-own-pull-requests-when-allow-requestors-to-approve-their-own-changes-is-set)
 
 #### Can I push changes directly to branches that have branch policies?
 
@@ -1153,7 +1154,7 @@ Pull requests into branches with branch policies configured have the **Set auto-
 
 #### When are branch policy conditions checked?
 
-Branch policies reevaluate on the server when pull request owners push changes and reviewers vote. If a policy triggers a build, the build status sets to waiting until the build completes.
+Branch policies reevaluate on the server when pull request owners push changes and when reviewers vote. If a policy triggers a build, the build status sets to waiting until the build completes.
 
 #### Can I use XAML build definitions in branch policies?
 
@@ -1178,11 +1179,11 @@ No, branch policies aren't case-sensitive.
 
 You can [add the users to a group](../../organizations/security/add-users-team-project.md), and then add the group as a reviewer.  Any member of the group can then approve to meet the policy requirement.
 
-#### I have the exempt from policy permission. Why do I still see policy failures in the pull request status?
+#### I have bypass policy permissions. Why do I still see policy failures in the pull request status?
 
-Configured policies are always evaluated for pull request changes. For users that are exempt from policy enforcement, the reported policy status is advisory only. If the exempt user approves, the failure status doesn't block pull request completion.
+Configured policies are always evaluated for pull request changes. For users that have bypass policy permissions, the reported policy status is advisory only. If the user with bypass permissions approves, the failure status doesn't block pull request completion.
 
-#### Why can't I complete my own pull requests when Allow requestors to approve their own changes is set?
+#### Why can't I complete my own pull requests when "Allow requestors to approve their own changes is set"?
 
 Both the **Require a minimum number of reviewers** policy and the **Automatically included reviewers** policy have options to **Allow requestors to approve their own changes**. In each policy, the setting applies only to that policy. The setting doesn't affect the other policy.
 
@@ -1190,7 +1191,8 @@ For example, your pull request has the following policies set:
 
 - **Require a minimum number of reviewers** requires at least one reviewer.
 - **Automatically included reviewers** requires you or a team you're in as a reviewer.
-- Only **Automatically included reviewers** has **Allow requestors to approve their own changes** enabled.
+- **Automatically included reviewers** has **Allow requestors to approve their own changes** enabled.
+- **Require a minimum number of reviewers** doesn't have **Allow requestors to approve their own changes** enabled.
 
 In this case, your approval satisfies **Automatically included reviewers**, but not **Require a minimum number of reviewers**, so you can't complete the pull request.
 
