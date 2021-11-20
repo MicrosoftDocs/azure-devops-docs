@@ -112,10 +112,11 @@ az repos policy list [--branch]
 
 **Example**
 
-The following command returns all the branch policies in effect in the `main` branch of the Fabrikam repository, ID `d28cd374-e7f0-4b1f-ad60-f349f155d47c`. You can get the repository ID by running `az repos list`.  This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+The following command returns all the branch policies in effect in the `main` branch of the Fabrikam repository, ID `d28cd374-e7f0-4b1f-ad60-f349f155d47c`. You can get the repository ID by running `az repos list`.
+
+This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
-
 az repos policy list --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --branch main --output table
 
 ID    Name                         Is Blocking    Is Enabled    Repository Id                         Branch
@@ -242,9 +243,9 @@ az repos policy approver-count create --allow-downvotes {false, true}
 
 **Example**
 
-The following example sets the minimum number of required approvals to `2` for pull requests in the `main` branch of the Fabrikam repository. The policy allows downvotes, meaning that pull requests can complete even if some reviewers vote to reject, as long as the minimum number vote to approve. Pushes to the source branch don't reset votes.
+The following example sets the minimum number of required approvals to `2` for pull requests in the `main` branch of the Fabrikam repository. The policy allows downvotes, meaning that pull requests can complete even if some reviewers vote not to approve, as long as the minimum number vote to approve. Pushes to the source branch don't reset votes. The policy also allows pull request creators to approve their own pull requests.
 
-The policy also allows pull request creators to approve their own pull requests. This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
 
@@ -620,7 +621,8 @@ az repos policy merge-strategy create --allow-squash true --blocking true --bran
 
 ID    Name                      Is Blocking    Is Enabled    Repository Id                         Branch
 ----  ------------------------  -------------  ------------  ------------------------------------  ---------------
-29    Require a merge strategy  True           True          d28cd374-e7f0-4b1f-ad60-f349f155d47c  refs/heads/main```
+29    Require a merge strategy  True           True          d28cd374-e7f0-4b1f-ad60-f349f155d47c  refs/heads/main
+```
 
 ### Update a merge strategy policy
 
