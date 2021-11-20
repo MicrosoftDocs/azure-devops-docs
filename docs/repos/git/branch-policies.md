@@ -225,19 +225,34 @@ az repos policy approver-count create --allow-downvotes {false, true}
 
 |Parameter|Description|
 |---------|-----------|
-|`allow-downvotes`|Whether to allow downvotes. Accepted values: `false`, `true`. **Required**.|
-|`blocking`|Whether the policy should be blocking. Accepted values: `false`, `true`. **Required**.|
+|`allow-downvotes`|Allow downvotes. Accepted values: `false`, `true`. **Required**.|
+|`blocking`|Block if the policy isn't met. Accepted values: `false`, `true`. **Required**.|
 |`branch`|Branch name to filter results by exact match. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`. **Required**.|
-|`creator-vote-counts`|Whether the creator's vote counts. Accepted values: `false`, `true`. **Required**.|
-|`enabled`|Whether the policy is enabled. Accepted values: `false`, `true`. **Required**.|
+|`creator-vote-counts`|Count the creator's vote. Accepted values: `false`, `true`. **Required**.|
+|`enabled`|Enable the policy. Accepted values: `false`, `true`. **Required**.|
 |`minimum-approver-count`|Minimum number of approvers required. For example: `2`. **Required**.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`. **Required**.|
-|`reset-on-source-push`|Whether to reset votes when changes are pushed to the source. Accepted values: `false`, `true`. **Required**.|
-|`branch-match-type`|Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
+|`reset-on-source-push`|Reset votes when changes are pushed to the source. Accepted values: `false`, `true`. **Required**.|
+|`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+
+**Example**
+
+The following example sets the minimum number of required approvals to `2` for pull requests in the `main` branch of the Fabrikam repository. The policy allows downvotes, meaning that pull requests can complete even if some reviewers vote to reject, as long as the minimum number vote to approve. Pushes to the source branch don't reset votes.
+
+The policy also allows pull request creators to approve their own pull requests. This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+
+```azurecli
+
+az repos policy approver-count create --allow-downvotes true --blocking true --branch main --creator-vote-counts true --enabled true --minimum-approver-count 2 --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --reset-on-source-push false --output table
+
+ID    Name                         Is Blocking    Is Enabled    Repository Id                         Branch
+----  ---------------------------  -------------  ------------  ------------------------------------  ---------------
+27    Minimum number of reviewers  True           True          d28cd374-e7f0-4b1f-ad60-f349f155d47c  refs/heads/main
+```
 
 ### Update approver count policy
 
@@ -265,18 +280,18 @@ az repos policy approver-count update --id
 |Parameter|Description|
 |---------|-----------|
 |`id`, `policy-id`|ID of the policy. **Required**.|
-|`allow-downvotes`|Whether to allow downvotes. Accepted values: `false`, `true`.|
-|`blocking`|Whether the policy should be blocking. Accepted values: `false`, `true`.|
+|`allow-downvotes`|Allow downvotes. Accepted values: `false`, `true`.|
+|`blocking`|Block if the policy isn't met. Accepted values: `false`, `true`.|
 |`branch`|Branch name to filter results by exact match. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`.|
-|`branch-match-type`|Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
-|`creator-vote-counts`|Whether the creator's vote counts. Accepted values: `false`, `true`.|
+|`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
+|`creator-vote-counts`|Count the creator's vote. Accepted values: `false`, `true`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
-|`enabled`|Whether the policy is enabled. Accepted values: `false`, `true`.|
+|`enabled`|Enable the policy. Accepted values: `false`, `true`.|
 |`minimum-approver-count`|Minimum number of approvers required. For example: `2`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.|
-|`reset-on-source-push`|Whether to reset votes when changes are pushed to the source. Accepted values: `false`, `true`.|
+|`reset-on-source-push`|Reset votes when changes are pushed to the source. Accepted values: `false`, `true`.|
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
 
 ::: moniker-end
@@ -340,11 +355,11 @@ az repos policy work-item-linking create --blocking {false, true}
 
 |Parameter|Description|
 |---------|-----------|
-|`blocking`|Whether the policy should be blocking. Accepted values: `false`, `true`. **Required**.|
+|`blocking`|Block if the policy isn't met. Accepted values: `false`, `true`. **Required**.|
 |`branch`|Branch name to filter results by exact match. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`. **Required**.|
-|`enabled`|Whether the policy is enabled. Accepted values: `false`, `true`. **Required**.|
+|`enabled`|Enable the policy. Accepted values: `false`, `true`. **Required**.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.|
-|`branch-match-type`|Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
+|`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
@@ -374,11 +389,11 @@ az repos policy work-item-linking update --id
 |Parameter|Description|
 |---------|-----------|
 |`id`, `policy-id`|ID of the policy. **Required**.|
-|`blocking`|Whether the policy should be blocking. Accepted values: `false`, `true`.|
+|`blocking`|Block if the policy isn't met. Accepted values: `false`, `true`.|
 |`branch`|Branch name to filter results by exact match. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`.|
-|`branch-match-type`|Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
+|`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
-|`enabled`|Whether the policy is enabled. Accepted values: `false`, `true`.|
+|`enabled`|Enable the policy. Accepted values: `false`, `true`.|
 |`minimum-approver-count`|Minimum number of approvers required. For example: `2`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
@@ -387,7 +402,7 @@ az repos policy work-item-linking update --id
 
 **Example**
 
-The following example updates the policy ID **3** for the **main** branch of the repository for the default configured project to be enabled but optional. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+The following example updates the policy ID `3` for the `main` branch of the Fabrikam repository to be enabled but optional. The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
 
 ```azurecli
 >az repos policy work-item-linking update --id 3 --blocking false --branch main --enabled true --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --output table
@@ -465,11 +480,11 @@ az repos policy comment-required create --blocking {false, true}
 
 |Parameter|Description|
 |---------|-----------|
-|`blocking`|Whether the policy should be blocking. Accepted values: `false`, `true`. **Required**.|
+|`blocking`|Block if the policy isn't met. Accepted values: `false`, `true`. **Required**.|
 |`branch`|Branch name to filter results by exact match. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`. **Required**.|
-|`enabled`|Whether the policy is enabled. Accepted values: `false`, `true`. **Required**.|
+|`enabled`|Enable the policy. Accepted values: `false`, `true`. **Required**.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`. **Required**.|
-|`branch-match-type`|Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
+|`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
@@ -497,15 +512,29 @@ az repos policy comment-required update --id
 |Parameter|Description|
 |---------|-----------|
 |`id`, `policy-id`|ID of the policy. **Required**.|
-|`blocking`|Whether the policy should be blocking. Accepted values: `false`, `true`.|
+|`blocking`|Block if the policy isn't met. Accepted values: `false`, `true`.|
 |`branch`|Branch name to filter results by exact match. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`.|
-|`branch-match-type`|Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
+|`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
-|`enabled`|Whether the policy is enabled. Accepted values: `false`, `true`.|
+|`enabled`|Enable the policy. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.|
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+
+**Example**
+
+The following example updates comment resolution policy ID `6` in the `main` branch of the Fabrikam repository to be blocking. Comments must be resolved before pull requests can merge. This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+
+```azurecli
+
+az repos policy comment-required update --id 6 --blocking true --output table
+
+ID    Name                  Is Blocking    Is Enabled    Repository Id                         Branch
+----  --------------------  -------------  ------------  ------------------------------------  ---------------
+6     Comment requirements  True           True          d28cd374-e7f0-4b1f-ad60-f349f155d47c  refs/heads/main
+```
+
 
 ::: moniker-end
 
@@ -564,20 +593,31 @@ az repos policy merge-strategy create --blocking {false, true}
 
 |Parameter|Description|
 |---------|-----------|
-|`blocking`|Whether the policy should be blocking. Accepted values: `false`, `true`. **Required**.|
+|`blocking`|Block if the policy isn't met. Accepted values: `false`, `true`. **Required**.|
 |`branch`|Branch name to filter results by exact match. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`. **Required**.|
-|`enabled`|Whether the policy is enabled. Accepted values: `false`, `true`. **Required**.|
+|`enabled`|Enable the policy. Accepted values: `false`, `true`. **Required**.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`. **Required**.|
 |`allow-no-fast-forward`|Basic merge with no fast-forward. Preserves nonlinear history exactly as it happened during development. Accepted values: `false`, `true`.|
 |`allow-rebase`|Rebase and fast-forward. Creates a linear history by replaying the source branch commits onto the target without a merge commit. Accepted values: `false`, `true`.|
 |`allow-rebase-merge`|Rebase with merge commit. Creates a semi-linear history by replaying the source branch commits onto the target and then creating a merge commit. Accepted values: `false`, `true`.|
 |`allow-squash`|Squash merge. Creates a linear history by condensing the source branch commits into a single new commit on the target branch. Accepted values: `false`, `true`.|
-|`branch-match-type`|Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
+|`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
-|`use-squash-merge`|Whether to squash merge always. This option doesn't work for other merge types. Accepted values: `false`, `true`.|
+|`use-squash-merge`|Always squash merge. This option isn't available for other merge types. Accepted values: `false`, `true`. **Note**: `use-squash-merge` is deprecated and will be removed in a future release. Use `--allow-squash` instead.|
+
+**Example**
+
+The following example sets a required merge strategy for pull requests in the `main` branch of the Fabrikam repository to allow squash merge. This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+
+```azurecli
+az repos policy merge-strategy create --allow-squash true --blocking true --branch main --enabled true --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --output table
+
+ID    Name                      Is Blocking    Is Enabled    Repository Id                         Branch
+----  ------------------------  -------------  ------------  ------------------------------------  ---------------
+29    Require a merge strategy  True           True          d28cd374-e7f0-4b1f-ad60-f349f155d47c  refs/heads/main```
 
 ### Update a merge strategy policy
 
@@ -610,11 +650,11 @@ az repos policy merge-strategy update --id
 |`allow-rebase`|Rebase and fast-forward. Creates a linear history by replaying the source branch commits onto the target without a merge commit. Accepted values: `false`, `true`.|
 |`allow-rebase-merge`|Rebase with merge commit. Creates a semi-linear history by replaying the source branch commits onto the target and then creating a merge commit. Accepted values: `false`, `true`.|
 |`allow-squash`|Squash merge. Creates a linear history by condensing the source branch commits into a single new commit on the target branch. Accepted values: `false`, `true`.|
-|`blocking`|Whether the policy should be blocking. Accepted values: `false`, `true`.|
+|`blocking`|Block if the policy isn't met. Accepted values: `false`, `true`.|
 |`branch`|Branch name to filter results by exact match. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`. |
-|`branch-match-type`|Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
+|`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
-|`enabled`|Whether the policy is enabled. Accepted values: `false`, `true`.|
+|`enabled`|Enable the policy. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`.|
@@ -670,7 +710,7 @@ To add a build validation policy
 
    :::image type="content" source="media/branch-policies/build-validation-2020.png" alt-text="Screenshot that shows the Add button next to Build validation.":::
 
-1. Fill out the **Set build policy** screen:
+1. Fill out the **Set build policy** form:
 
    :::image type="content" source="media/branch-policies/add-build-policy-menu-2020.png" alt-text="Build policy settings":::
 
@@ -730,21 +770,34 @@ az repos policy build create --blocking {false, true}
 
 |Parameter|Description|
 |---------|-----------|
-|`blocking`|Whether the policy should be blocking. Accepted values: `false`, `true`. **Required**.|
+|`blocking`|Block if the policy isn't met. Accepted values: `false`, `true`. **Required**.|
 |`branch`|Branch name to filter results by exact match. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`. **Required**.|
 |`build-definition-id`|The build definition ID. **Required**.|
 |`display-name`|Display name for this build policy to identify the policy. For example: `Manual queue policy`. **Required**.|
-|`enabled`|Whether the policy is enabled. Accepted values: `false`, `true`. **Required**.|
+|`enabled`|Enable the policy. Accepted values: `false`, `true`. **Required**.|
 |`manual-queue-only`|Whether to allow only manual queue of builds. Accepted values: `false`, `true`. **Required**.|
 |`queue-on-source-update-only`|Whether to queue builds only when source updates. Accepted values: `false`, `true`. **Required**.|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`. **Required**.|
-|`valid-duration`|Policy validity duration, in minutes. **Required**.|
-|`branch-match-type`|Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
+|`valid-duration`|Policy validity duration, in minutes. **Note:** `valid-duration` must be between zero and one year, and must be zero when `--queue-on-source-update-only` is `false`. **Required**.|
+|`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`path-filter`|Path(s) on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+
+**Example**
+
+The following example sets a required build policy for pull requests in the `main` branch of the Fabrikam repository. The policy requires a successful build of build definition ID `1`, and allows only manual build queuing. This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+
+```azurecli
+az repos policy build create --blocking true --branch main --build-definition-id 1 --display-name build-policy --enabled true --manual-queue-only true --queue-on-source-update-only false --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --valid-duration 0 --output table
+
+ID    Name          Is Blocking    Is Enabled    Repository Id                         Branch
+----  ------------  -------------  ------------  ------------------------------------  ---------------
+31    build-policy  True           True          d28cd374-e7f0-4b1f-ad60-f349f155d47c  refs/heads/main
+```
+
 
 ### Update a build validation policy
 
@@ -774,13 +827,13 @@ az repos policy build update --id
 |Parameter|Description|
 |---------|-----------|
 |`id`, `policy-id`|ID of the policy. **Required**.|
-|`blocking`|Whether the policy should be blocking. Accepted values: `false`, `true`.|
+|`blocking`|Block if the policy isn't met. Accepted values: `false`, `true`.|
 |`branch`|Branch name to filter results by exact match. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`.|
-|`branch-match-type`|Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
+|`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`build-definition-id`|The build definition ID.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`display-name`|Display name for this build policy to identify the policy. For example: `Manual queue policy`. |
-|`enabled`|Whether the policy is enabled. Accepted values: `false`, `true`.|
+|`enabled`|Enable the policy. Accepted values: `false`, `true`.|
 |`manual-queue-only`|Whether to allow only manual queue of builds. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`path-filter`|Path(s) on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
@@ -920,18 +973,30 @@ az repos policy required-reviewer create --blocking {false, true}
 
 |Parameter|Description|
 |---------|-----------|
-|`blocking`|Whether the policy should be blocking. Accepted values: `false`, `true`. **Required**.|
+|`blocking`|Block if the policy isn't met. Accepted values: `false`, `true`. **Required**.|
 |`branch`|Branch name to filter results by exact match. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`. **Required**.|
-|`enabled`|Whether the policy is enabled. Accepted values: `false`, `true`. **Required**.|
+|`enabled`|Enable the policy. Accepted values: `false`, `true`. **Required**.|
 |`message`|Activity feed message that appears in the pull request. **Required.**|
 |`repository-id`|ID of the repository to filter results by exact match. For example, `--repository-ID e556f204-53c9-4153-9cd9-ef41a11e3345`. **Required**.|
 |`required-reviewer-ids`|Reviewer email addresses separated by `;`. For example: `john@contoso.com;alice@contoso.com`.|
-|`branch-match-type`|Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
+|`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`path-filter`|Path(s) on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
+
+**Example**
+
+The following example sets Jamal Hartnett as a required reviewer for pull requests in the `main` branch of the Fabrikam repository. This example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber"`.
+
+```azurecli
+az repos policy required-reviewer create --blocking true --branch main --enabled true --message "Please review." --repository-id d28cd374-e7f0-4b1f-ad60-f349f155d47c --required-reviewer-ids fabrikamfiber4@hotmail.com --output table
+
+ID    Name                Is Blocking    Is Enabled    Repository Id                         Branch
+----  ------------------  -------------  ------------  ------------------------------------  ---------------
+35    Required reviewers  True           True          d28cd374-e7f0-4b1f-ad60-f349f155d47c  refs/heads/main
+```
 
 ### Update a required reviewer policy
 
@@ -959,11 +1024,11 @@ az repos policy required-reviewer update --id
 |Parameter|Description|
 |---------|-----------|
 |`id`, `policy-id`|ID of the policy. **Required**.|
-|`blocking`|Whether the policy should be blocking. Accepted values: `false`, `true`.|
+|`blocking`|Block if the policy isn't met. Accepted values: `false`, `true`.|
 |`branch`|Branch name to filter results by exact match. The `--repository-id` parameter is required to use the branch filter. For example: `--branch main`.|
-|`branch-match-type`|Determines how to use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
+|`branch-match-type`|Use the `branch` argument to apply the policy. If the value is `exact`, the policy applies on a branch that exactly matches the `--branch` argument. If the value is `prefix`, the policy applies across all branch folders that match the prefix in the `--branch` argument. Accepted values: `exact`, `prefix`. Default value: `exact`.|
 |`detect`|Automatically detect organization. Accepted values: `false`, `true`.|
-|`enabled`|Whether the policy is enabled. Accepted values: `false`, `true`.|
+|`enabled`|Enable the policy. Accepted values: `false`, `true`.|
 |`message`|Activity feed message that appears in the pull request.|
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`path-filter`|Path(s) on which to apply the policy is applied. Supports absolute paths, wildcards, and multiple paths separated by `;`. Examples: `/WebApp/Models/Data.cs`, `/WebApp/*`, or `*.cs,` or `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`.|
