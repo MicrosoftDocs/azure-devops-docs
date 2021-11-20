@@ -221,7 +221,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 
 ::: moniker range="tfs-2017" 
 
-Backlog displays with work item icons is supported for TFS 2017.2 and later versions. For TFS 2017.1 and earlier versions, items that are owned by other teams appear with hollow-filled bars.  
+Backlog displays with work item icons is supported for TFS 2017.2 and later versions. For TFS 2017.1 and earlier versions, items owned by other teams appear with hollow-filled bars.  
 
 <img src="media/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership, TFS 2017 version." /> 
 ::: moniker-end
@@ -273,7 +273,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 ::: moniker-end 
 
-From these views, you can reparent items, both those that you own and those owned by other teams. 
+From these views, you can re-parent items, both those that you own and those owned by other teams. 
 However, you can't reorder items that another team owns.  
 
 This enables management teams to focus on high level features and epics, and development teams 
