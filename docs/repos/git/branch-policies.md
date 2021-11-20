@@ -914,7 +914,7 @@ For instructions on configuring this policy, see [Configure a branch policy for 
 
 ::: moniker-end 
 
-<a id="include-code-reviewers"</a>
+<a id="include-code-reviewers"></a>
 
 ## Automatically include code reviewers
 
