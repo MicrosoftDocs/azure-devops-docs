@@ -1,14 +1,14 @@
 ---
 title: Define, capture, triage, and manage bugs or code defects in Azure Boards
 titleSuffix: Azure Boards 
-description: Define, capture, and triage bugs, code defects, and software issues in Azure Boards to manage technical debt and maintain software quality 
+description: Learn how to define, capture, and triage bugs, code defects, and software issues in Azure Boards to manage technical debt and maintain software quality 
 ms.custom: "boards-backlogs, contperf-fy21q4-portal"
 ms.technology: devops-agile
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-ms.date: 11/18/2021 
+ms.date: 11/19/2021 
 ---
 
 # Define, capture, triage, and manage software bugs in Azure Boards
