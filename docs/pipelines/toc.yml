@@ -33,6 +33,8 @@
       href: get-started/key-pipelines-concepts.md
     - name: YAML pipeline editor
       href: get-started/yaml-pipeline-editor.md
+    - name: Manage pipelines with Azure CLI
+      href: get-started/manage-pipelines-with-azure-cli.md
     - name: Repositories
       items:
         - name: Supported repositories
