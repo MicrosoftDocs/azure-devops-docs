@@ -5,7 +5,7 @@ description: Branch policies and settings provide teams with the means to protec
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 11/15/2021
+ms.date: 11/22/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -23,7 +23,7 @@ A branch that has required policies configured can't be deleted, and requires pu
 
 - To set branch policies, you must be a member of the Project Administrators security group or have repository-level **Edit policies** permissions. For more information, see [Set Git repository permissions](set-git-repository-permissions.md).
 
-- If you want to use Azure DevOps CLI [az repos policy](/cli/azure/repos/policy?view=azure-cli-latest&preserve-view=true) commands to manage branch policies, make sure to implement the instructions in [Get started with Azure DevOps CLI](../../cli/index.md).
+- If you want to use Azure DevOps CLI [az repos policy](/cli/azure/repos/policy?view=azure-cli-latest&preserve-view=true) commands to manage branch policies, follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
@@ -37,6 +37,8 @@ A branch that has required policies configured can't be deleted, and requires pu
 To manage branch policies, select **Repos** > **Branches** to open the **Branches** page in the web portal.
 
 ![Screenshot that shows the Branches menu item.](media/branch-policies/branches-new-nav.png)
+
+You can also get to branch policy settings with **Project Settings** > **Repository** > **Policies** > **Branch Policies** > **\<Branch Name>**.
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -75,8 +77,6 @@ Configure your policies in the **Policies** page. See the following sections for
 ![Screenshot that shows the Policies tab.](media/branch-policies/save-policy-changes.png)  
 
 ::: moniker-end
-
-You can also get to branch policy settings with **Project Settings** > **Repository** > **Policies** > **Branch Policies** > **\<Branch Name>**.
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -177,11 +177,15 @@ To set the policy, under **Branch Policies**, set **Require a minimum number of 
 
 - Select **Allow requestors to approve their own changes** to allow a PR's creator to vote on its approval. Otherwise, the creator can still vote **Approve** on the PR, but their vote won't count toward the minimum number of reviewers.
 
-- Select **Prohibit the most recent pusher from approving their own changes** to enforce segregation of duties. By default, anyone with push permission on the source branch can both add commits and vote on PR approval. Selecting this option means the most recent pusher's vote automatically doesn't count.
+- Select **Prohibit the most recent pusher from approving their own changes** to enforce segregation of duties. By default, anyone with push permission on the source branch can both add commits and vote on PR approval. Selecting this option means the most recent pusher's vote doesn't count, even if they can ordinarily approve their own changes.
 
 - Select **Allow completion even if some reviewers vote to wait or reject** to allow PR completion even if some reviewers vote against approval. The minimum number of reviewers must still approve.
 
-- Select **Reset code reviewer votes when there are new changes** to remove all code reviewer votes every time the source branch changes.
+- Under **When new changes are pushed**:
+
+  - Select **Require at least one approval on the last iteration** to require at least one approval vote for the last source branch change.
+  - Select **Reset all approval votes (does not reset votes to reject or wait)** to remove all approval votes, but keep votes to reject or wait, whenever the source branch changes, 
+  - Select **Reset all code reviewer votes** to remove all reviewer votes whenever the source branch changes, including votes to approve, reject, or wait.
 
 ::: moniker-end
 
@@ -610,7 +614,7 @@ az repos policy merge-strategy create --blocking {false, true}
 |`org`|Azure DevOps organization URL. You can configure the default organization by using `az devops configure -d organization=<ORG_URL>`. **Required** if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.|
 |`project`, `p`|Name or ID of the project. You can configure the default project using `az devops configure -d project=<NAME_OR_ID>`. **Required** if not configured as default or picked up via git config.|
 |`subscription`|Name or ID of subscription. You can configure the default subscription using `az account set -s <NAME_OR_ID>`.|
-|`use-squash-merge`|Always squash merge. This option isn't available for other merge types. Accepted values: `false`, `true`. **Note**: `use-squash-merge` is deprecated and will be removed in a future release. Use `--allow-squash` instead.|
+|`use-squash-merge`|Always squash merge. This option isn't available for other merge types. Accepted values: `false`, `true`.<br /><br />**Note**: `use-squash-merge` is deprecated and will be removed in a future release. Use `--allow-squash` instead.|
 
 **Example**
 
@@ -697,7 +701,7 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
 
 ::: moniker range=">= azure-devops-2020" 
 
-You can set a policy requiring PR changes to build successfully before the PR can be completed.
+You can set a policy requiring PR changes to build successfully before the PR can complete.
 Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/devops/develop/what-is-continuous-integration) (CI) on your development branches to catch problems early.
 
 A build validation policy queues a new build when a new PR is created or changes are pushed to an existing PR that targets the branch. The build policy evaluates the build results to determine whether the PR can be completed.
@@ -719,7 +723,7 @@ To add a build validation policy
 
    - Select the **Build pipeline**.
 
-   - Optionally set a **Path filter**. Learn more about [path filters](#path-filters) in branch policies.
+   - Optionally set a **Path filter**. [Learn more about path filters](#path-filters) in branch policies.
 
    - Under **Trigger**, select **Automatic (whenever the source branch is updated)** or **Manual**.
 
@@ -926,7 +930,7 @@ You can automatically add reviewers to pull requests that change files in specif
 
 1. Select the **+** button next to **Automatically included reviewers**.
 
-   :::image type="content" source="media/branch-policies/automatically-included-reviewers-2020.png" alt-text="Screenshot that shows Add required reviewers.":::
+   :::image type="content" source="media/branch-policies/require-specific-reviewers.png" alt-text="Screenshot that shows Add required reviewers.":::
 
 1. Fill out the **Add new reviewer policy** screen.
 
@@ -1196,6 +1200,8 @@ For example, your pull request has the following policies set:
 - **Require a minimum number of reviewers** doesn't have **Allow requestors to approve their own changes** enabled.
 
 In this case, your approval satisfies **Automatically included reviewers**, but not **Require a minimum number of reviewers**, so you can't complete the pull request.
+
+There might also be other policies, such as **Prohibit the most recent pusher from approving their own changes**, that prevent you from approving your own changes even if **Allow requestors to approve their own changes** is set.
 
 ## Related articles
 
