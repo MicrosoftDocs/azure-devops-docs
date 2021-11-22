@@ -7,7 +7,7 @@ description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelin
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 07/01/2020
+ms.date: 11/22/2021
 monikerRange: 'azure-devops'
 ---
  
@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
-The [Azure Pipelines app for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000055?src=wnblogmar2018) lets you monitor events for your pipelines. You can set up and manage subscriptions for releases, pending approvals, completed builds, and so on, and get notifications in your Teams channel for these updates. You can also approve releases from within your Teams channel.
+The [Azure Pipelines app for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000055?src=wnblogmar2018) lets you monitor events for your pipelines. You can set up and get notifications in your Teams channel for releases, pending approvals, completed builds, and so on. You can also approve releases from within your Teams channel.
 
 [!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
@@ -51,7 +51,7 @@ To start monitoring all pipelines in a project, use the following command inside
 ```
 The project URL can be to any page within your project (except URLs to pipelines).
 
-For example:
+**Example 1:**
 
 ```
 @azure pipelines subscribe https://dev.azure.com/myorg/myproject/
@@ -65,13 +65,13 @@ Monitor a specific pipeline using the following command:
 
 The pipeline URL can be to any page within your pipeline that has a `definitionId` or `buildId/releaseId` present in the URL. 
 
-For example, the following build pipeline is subscribed to the *Build completed* notification:
+**Example 2:** The following build pipeline is subscribed to the *Build completed* notification.
 
 ```
 @azure pipelines subscribe https://dev.azure.com/myorg/myproject/_build?definitionId=123
 ```
 
-Or the following release pipeline is subscribed to the *Release deployment started*, *Release deployment completed*, and *Release deployment approval pending* notifications:
+Or, the following release pipeline is subscribed to the *Release deployment started*, *Release deployment completed*, and *Release deployment approval pending* notifications:
 
 ```
 @azure pipelines subscribe https://dev.azure.com/myorg/myproject/_release?definitionId=123&view=mine&_a=releases
@@ -94,13 +94,13 @@ When a user subscribes to any pipeline, a few subscriptions get created by defau
 4. Select the required pipeline and event.
 5. Select the appropriate filters, and then **Save**.
 
-   Get notifications only for failed builds:
+   **Example 1:** Get notifications for failed builds.
 
-   :::image type="content" source="media/integrations-teams/teams-build-filters.png" alt-text="Visual of build failures in Teams.":::
+   :::image type="content" source="media/integrations-teams/build-failure-notification.png" alt-text="Visual of build failures in Teams.":::
 
-   Get notifications only if the deployments get pushed to the production environment:
+   **Example 2:** Get notifications only if the deployments get pushed to the production environment.
 
-   :::image type="content" source="media/integrations-teams/teams-release-filters.png" alt-text="Visual of failure notification.":::
+   :::image type="content" source="media/integrations-teams/pushed-to-prod-notification.png" alt-text="Visual of failure notification.":::
 
    > [!NOTE]
    > * Team Administrators can't remove or modify subscriptions that are created by Project Administrators.
@@ -108,7 +108,7 @@ When a user subscribes to any pipeline, a few subscriptions get created by defau
 
 ## Approve deployments from your channel
 
-You can approve deployments from within your channel without going to the Azure Pipelines portal. To do so, subscribe to the *Release deployment approval pending* notification for classic Releases or the *Run stage waiting for approval* notification for YAML pipelines. Both of these subscriptions get created by default when you subscribe to the pipeline.
+You can approve deployments from within your channel without going to the Azure Pipelines portal. Subscribe to the *Release deployment approval pending* notification for classic Releases or the *Run stage waiting for approval* notification for YAML pipelines. Both of these subscriptions get created by default when you subscribe to the pipeline.
 
 :::image type="content" source="media/integrations-teams/approve-teams.png" alt-text="In Teams, notice ready for approval.":::
 
@@ -127,10 +127,14 @@ To help users search and share information about pipelines, Azure Pipelines app 
 
 ## Previews of pipeline URLs
 
-When you add a pipeline URL to Teams, you see a preview similar to the following image. This preview helps to keep pipeline-related conversations relevant and up-to-date. You can choose between compact and expanded cards.
+When you add a pipeline URL to Teams, you see a preview similar to the following images. The preview helps to keep pipeline-related conversations relevant and up-to-date. You can choose between compact and expanded cards.
+
+**Example 1:** Build URL preview
 
 > [!div class="mx-imgBorder"]
 > ![Build URL unfurling.](./media/integrations-teams/build-url-unfurling-teams.png)
+
+**Example 2:** Release URL preview
 
 > [!div class="mx-imgBorder"]
 > ![Release URL unfurling.](./media/integrations-teams/release-url-unfurling-teams.png)
@@ -145,7 +149,8 @@ Use the following command to unsubscribe from all pipelines within a project.
 @azure pipelines unsubscribe all [project url]
 ```
 
-For example:  
+**Example:** Unsubscribe all with URL
+
 ```
 @azure pipelines unsubscribe all https://dev.azure.com/myorg/myproject
 ```
@@ -159,12 +164,12 @@ This command deletes all the subscriptions related to any pipeline in the projec
 
 Link a set of related notifications to reduce the space occupied by notifications in a channel. All notifications linked to a particular run of a pipeline get linked together.
 
-The following example shows the compact view of linked notifications. 
+**Example 1:** Compact view of linked notifications. 
 
 > [!div class="mx-imgBorder"]
 > ![Compact thread](./media/integrations-teams/threads-pipelines-compact-view.png)
 
-When expanded, you can see all the linked notifications, as shown in the following example.
+**Example 2:** Expanded view of linked notifications.
 
 > [!div class="mx-imgBorder"]
 > ![Expanded thread](./media/integrations-teams/threads-pipelines-expanded-view.png)
