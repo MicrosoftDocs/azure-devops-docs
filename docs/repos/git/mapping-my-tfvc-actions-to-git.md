@@ -12,6 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Learn to map your familiar Team Foundation Version Control (TFVC) commands and workflows to Git 
 
+[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
+
 Do you plan to adopt Git, are familiar with [TFVC](../tfvc/index.yml) actions, and wondering how they map to [Git](index.yml)? Both are powerful and mature source control systems. However, mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
 
 This article will not delve deep into the [Git commands](https://git-scm.com/book/commands), as they are well documented in the product documentation, but show examples to help you make the right decisions, while moving through a typical create -> clone -> branch -> change -> commit -> push [workflow](https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).
@@ -91,8 +93,6 @@ In Visual Studio, choose **Team Explorer > Branches > right-click on branch > Ne
 ## Make a change by adding files
 
 Similar to the TFVC experience, new files in the working folder are not automatically part of the repository. You stage your new files with the `git add` command, which is synonymous to performing an `add Items to Folder` operation in TFVC.
-
-Here's a [sample](https://vsarguidance.codeplex.com/downloads/get/739947) project to try adding files to your repo.
 
 # [Command Line](#tab/command-line)
 

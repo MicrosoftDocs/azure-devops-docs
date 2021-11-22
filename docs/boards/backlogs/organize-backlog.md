@@ -1,7 +1,7 @@
 ---
-title: Organize a product backlog into a hierarchy of items in Azure Boards
+title: Organize your product backlog in Azure Boards
 titleSuffix: Azure Boards  
-description: Learn how to map or parent backlog items to features, and features to epics in Azure Boards or Azure DevOps
+description: Learn how to map or parent backlog items to features. Then learn how to map features to epics in Azure Boards.
 ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
 ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF  
@@ -147,7 +147,7 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 
 [!INCLUDE [temp](../includes/image-differences-with-wits.md)]
 
-## Show parents and expand the tree hierarchy  
+## Show parent tasks and expand the tree hierarchy  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -237,7 +237,7 @@ It's the same process to map features to epics. From the Features backlog, drag 
 ::: moniker range=">= tfs-2015"
 <a id="reparent">  </a>
 
-## Change parent (reparent) and reorder items
+## Change the parent task and reorder items
 
 When you need to change the order or grouping, drag the item to its new location. 
 
@@ -265,7 +265,7 @@ You can reparent items owned by other teams, but you can't reorder items owned b
 ::: moniker range=">= tfs-2018"
 <a id="change-parent-option">  </a>
 
-## Change parent of multiple backlog items 
+## Change a parent of multiple backlog items 
 
 From the product backlog, you can multi-select several work items and choose **Change parent&hellip;** to link the items to a parent work item. 
 

@@ -4,7 +4,7 @@ description: Learn how to use an Azure CI/CD data pipeline to ingest, process, a
 ms.author: jukullam
 author: JuliaKM
 ms.technology: devops-cicd-apps
-ms.date: 01/05/2021
+ms.date: 10/28/2021
 ms.topic: conceptual
 monikerRange: '=azure-devops'
 ---
@@ -89,7 +89,6 @@ To make commands easier to run, start by selecting a default region. After you s
     ```bash
     datafactorydev='data-factory-cicd-dev'
     datafactorytest='data-factory-cicd-test'
-
     databricksname='databricks-cicd-ws'
     ```
 
@@ -126,7 +125,7 @@ To make commands easier to run, start by selecting a default region. After you s
         --resource-group $rgName
     ```
 
-1. [Create a new data factory](https://ms.portal.azure.com/#create/hub) by using the portal UI or the Azure CLI:
+1. [Create a new data factory](https://ms.portal.azure.com/#create/hub) by using the portal UI or Azure CLI:
 
     * Name: `data-factory-cicd-dev`
     * Version: `V2`
@@ -139,10 +138,10 @@ To make commands easier to run, start by selecting a default region. After you s
         ```azurecli
        az extension add --name datafactory
         ```   
-   2. Run the following `az datafactory factory create` command to create a new data factory.  
+   2. Run the following `az datafactory create` command to create a new data factory.  
     
        ```azurecli
-        az datafactory factory create \
+        az datafactory create \
             --name data-factory-cicd-dev \
             --resource-group $rgName
        ```
@@ -160,7 +159,7 @@ To make commands easier to run, start by selecting a default region. After you s
    1. Run the following `az datafactory factory create` command to create a new data factory for testing.  
     
        ```azurecli
-        az datafactory factory create \
+        az datafactory create \
             --name data-factory-cicd-test \
             --resource-group $rgName
        ```

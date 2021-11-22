@@ -31,7 +31,7 @@ If you want some sample code that works with this guidance, [import](../../../re
 ```
 https://github.com/spring-guides/gs-spring-boot-docker.git
 ```
-#### [JavaScript](#tab/java-script)
+#### [JavaScript](#tab/javascript)
 
 [!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 

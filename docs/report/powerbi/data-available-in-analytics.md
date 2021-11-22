@@ -1,13 +1,13 @@
 ---
 title: Data available from Analytics
 titleSuffix: Azure DevOps
-description: Data available for reporting purposes using Analytics for Azure DevOps 
+description: Review the data available for reporting purposes using Analytics for Azure DevOps.
 ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/21/2021
+ms date: 10/04/2021
 ---
 
 # Data available from Analytics
@@ -131,7 +131,7 @@ Currently, you can access the following data from Analytics. This information wa
 > [!NOTE]   
 > Analytics doesn't support reporting on plain text and HTML fields.  
 
-## Try this next
+## Next step
 
 > [!div class="nextstepaction"]
 > [Dataset design for the Power BI Azure DevOps Connector](data-connector-dataset.md)

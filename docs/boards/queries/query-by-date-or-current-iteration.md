@@ -27,7 +27,7 @@ For example, you can find work items that were modified in the last three days w
 ![Editor query filter based on recent changes.](media/query-by-date-example.png)  
 ::: moniker-end
 ::: moniker range=">= azure-devops-2019"
-In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to create queries based on a sliding window of team iterations. 
+Also, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to create queries based on a sliding window of team iterations. 
 ::: moniker-end
 
 
@@ -106,7 +106,7 @@ Query clauses that specify a **DateTime** field or the **Iteration Path** can us
 <a id="team_view">  </a>
 <a id="current_sprint_restrict"> </a> 
 
-## Client restrictions on the use of the @CurrentIteration macros 
+## Client restrictions on the use of the `@CurrentIteration` macros 
 
 You can use the <strong>@CurrentIteration</strong> in a query from the following clients:
 
@@ -115,13 +115,13 @@ You can use the <strong>@CurrentIteration</strong> in a query from the following
 - Visual Studio 2015 or Team Explorer 2015 or later versions connected to Azure Boards or TFS 2015 or later versions. 
 - Using the REST API
 
-You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against Azure Boards, Azure DevOps Server 2019 and later versions, and with a REST API that includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
+You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against Azure Boards, Azure DevOps Server 2019, and later versions, and with a REST API that includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
   
 
 An error occurs if you open a query that contains the <strong>@CurrentIteration</strong> macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
 
 
-## Date based queries  
+## Date-based queries  
 
 You can filter for work items by the date on which they were changed or for a specific time period. Limiting the scope of your query can help with performance by only returning results that fit the date range that you include. If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md). 
 
@@ -208,7 +208,7 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 
 ::: moniker range=">= azure-devops-2019"
 
-## Start of Day, Week, Month, or Year date-based queries
+## Create start of day, week, month, or year date-based queries
 
 The following examples show how to use the <strong>StartOf...</strong> macros to filter for work items with various offsets. For more examples of using these macros, see [WIQL syntax](wiql-syntax.md#start-of). 
 ::: moniker-end
@@ -231,7 +231,7 @@ The following examples show how to use the <strong>StartOf...</strong> macros to
 ---
 :::row:::
    :::column span="1":::
-      Bugs closed in the last 2 weeks
+      Bugs closed in the last two weeks
    :::column-end::: 
    :::column span="2":::
       <img src="media/example-queries/close-date-last-2-weeks.png" alt="Clauses for finding bugs closed in the last two weeks"/>
@@ -249,7 +249,7 @@ The following examples show how to use the <strong>StartOf...</strong> macros to
 ---
 :::row:::
    :::column span="1":::
-      Features scheduled to be completed in the next 3 months
+      Features scheduled to be completed in the next three months
    :::column-end::: 
    :::column span="2":::
       <img src="media/example-queries/start-month-target-date-3.png" alt="Clauses for features scheduled to be completed in the next 3 months"/>
@@ -264,7 +264,7 @@ Not all fields are valid for all work item types. Jump to [date fields](#date_fi
 
 <a id="current-iteration">  </a>
 
-## Team's current iteration queries  
+## Create queries for your team's current iteration
  
 If your team follows Scrum processes, you [schedule work to be completed in sprints](../sprints/define-sprints.md). You can track the progress of requirements, bugs, and other work to be completed in the current sprint using the **@CurrentIteration** macro.  
 
@@ -306,7 +306,7 @@ Before creating or updating a query to use the **@CurrentIteration** macro, make
 
 <a id="current-iteration-plus-minus-n">  </a>
 
-## Sliding window of team iterations query 
+## Create a sliding window of your team's iterations query 
 
 Use the **@CurrentIteration +/- <i>n</i>** macro when you want to track the work a team has planned for upcoming sprints and for understanding work that wasn't completed in previous sprints. 
 
@@ -316,7 +316,7 @@ Use the **@CurrentIteration +/- <i>n</i>** macro when you want to track the work
 > 
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
-Here we show how to list all User Stories and Bugs assigned to the sliding window, The sliding window spans the last two, the current, and the next two sprints selected for the *Cloud Admin and Tools* team. 
+Here we show how to list all User Stories and Bugs that are assigned to the sliding window that spans the last two, the current, and the next two sprints selected for the *Cloud Admin and Tools* team. 
 
 > [!div class="mx-imgBorder"]
 > ![CurrentIteration plus and minus clauses](media//query-date-iteration/sliding-window-iterations.png)
@@ -391,6 +391,7 @@ To list newly created work items added to a sprint after its start date, use a q
 For other options for querying changes to sprint scope, see [About Sprints, Scrum and project management, Sprint scope change](../sprints/scrum-overview.md#sprint-scope-change).
 
 <a id="date_fields">  </a>
+<a id="fields" />
 
 ## Date and Iteration Path fields
 
@@ -408,6 +409,7 @@ You can use date fields to filter your queries. Some of these fields are populat
       **Work item types**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Activated Date (Notes 1, and 2)
@@ -533,7 +535,7 @@ You can use date fields to filter your queries. Some of these fields are populat
       Target Date
     :::column-end:::
     :::column span="2":::
-      The date by which a feature or work item is expected to be completed.  
+      The date by which a feature or work item is to be completed.  
       ::: moniker range="azure-devops"
       > [!NOTE]   
       > [Delivery Plans](../plans/review-team-plans.md) uses the Start Date and Target Date to show the span of Features, Epics, and other portfolio backlog items. 
@@ -549,7 +551,7 @@ You can use date fields to filter your queries. Some of these fields are populat
 
 #### Notes:
  
-1. See also [Query by assignment or workflow changes, Date and Identity fields](query-by-workflow-changes.md).
+1. See also [Query by assignment or workflow changes, Date, and Identity fields](query-by-workflow-changes.md).
 
 1. For these fields to be defined for a WIT, they must be included in the ```WORKFLOW``` section of the WIT definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a Resolved state:  
 	```xml

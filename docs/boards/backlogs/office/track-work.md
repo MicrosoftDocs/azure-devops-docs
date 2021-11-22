@@ -11,7 +11,6 @@ monikerRange: '>= tfs-2013'
 ms.date: 11/19/2021
 ---
 
-
 # Connect Azure Boards to an Office client 
 
 [!INCLUDE [temp](../../includes/version-all.md)]
@@ -244,7 +243,7 @@ To work in Excel, see [Bulk add work items with Excel](bulk-add-modify-work-item
 <a id="excel-project">  </a>
 <a id="excel">  </a>
 
-## Connect Azure DevOps project to Excel  
+## Connect an Azure DevOps project to Excel  
 
 ::: moniker range="<= tfs-2018" 
 
@@ -261,7 +260,7 @@ To add or modify work items by using Excel, you connect your worksheet to a proj
 You can start work from the web portal, Excel, or Visual Studio/Team Explorer. Your worksheet is associated with either a list of work items or a work item query.  
 
 
-#### [Open query in Excel (web portal)](#tab/open-excel) 
+### [Open query in Excel (web portal)](#tab/open-excel) 
 
 This connection method requires that you have installed [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). It also requires Visual Studio 2017 or later version. 
 
@@ -278,7 +277,7 @@ This connection method requires that you have installed [Azure DevOps Open in Ex
 	> ![QUery Results, context menu, Open in Excel Open Boards>Queries, vertical nav](media/connect/open-in-excel-from-portal.png) 
 
 
-#### [Connect from client to Azure Boards](#tab/open-excel-cloud) 
+### [Connect from client to Azure Boards](#tab/open-excel-cloud) 
 
 To connect from your Office client to an Azure DevOps Services project, do the following steps.  
 
@@ -322,7 +321,7 @@ To connect from your Office client to an Azure DevOps Services project, do the f
 
     ![New list dialog, Select input list.](media/excel/2019-input-list-dialog.png)
 
-#### [Connect client to Azure DevOps on-premises](#tab/open-excel-on-prem) 
+### [Connect client to Azure DevOps on-premises](#tab/open-excel-on-prem) 
 
 To connect from your Office client to an Azure DevOps Server project, do the following steps.  
 
@@ -369,7 +368,7 @@ To connect from your Office client to an Azure DevOps Server project, do the fol
     ![New list, Select input list, on-premises version.](media/excel/2019-input-list-dialog.png)
 
 
-#### [Open Excel from Visual Studio](#tab/open-excel-vs) 
+### [Open Excel from Visual Studio](#tab/open-excel-vs) 
 
 1. Open Visual Studio and then Team Explorer. 
 
