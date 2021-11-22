@@ -22,13 +22,6 @@
       href: get-started/key-pipelines-concepts.md
     - name: YAML pipeline editor
       href: get-started/yaml-pipeline-editor.md
-    - name: Clone or import a pipeline
-      href: ./get-started/clone-import-pipeline.md
-      displayName: export, copy
-    - name: Configure pipelines to support work tracking
-      href: integrations/configure-pipelines-work-tracking.md
-    - name: DevOps Starter
-      href: /azure/devops-project/overview
     - name: Repositories
       items:
         - name: Supported repositories
@@ -173,6 +166,13 @@
           href: ../report/dashboards/add-widget-to-dashboard.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
         - name: Test Results Trend (Advanced)
           href: ../report/dashboards/analytics-widgets.md?toc=%2Fazure%2Fdevops%2Fpipelines%2Ftoc.json&bc=%2Fazure%2Fdevops%2Fpipelines%2Fbreadcrumb%2Ftoc.json&view=azure-devops#test-results-trend-advanced
+    - name: Clone or import a pipeline
+      href: ./get-started/clone-import-pipeline.md
+      displayName: export, copy
+    - name: Configure pipelines to support work tracking
+      href: integrations/configure-pipelines-work-tracking.md
+    - name: DevOps Starter
+      href: /azure/devops-project/overview
 - name: Ecosystems & integration
   items:
     - name: Ecosystem support
