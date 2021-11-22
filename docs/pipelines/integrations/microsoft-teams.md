@@ -45,26 +45,26 @@ The [Azure Pipelines app for Microsoft Teams](https://appsource.microsoft.com/pr
 
 Use the following commands to monitor all pipelines in a project or only specific pipelines.
 
-- **Monitor all pipelines in a project.** The URL can be to any page within your project, except URLs to pipelines. For example, https://dev.azure.com/myorg/myproject/.
+- **Monitor all pipelines in a project.** The URL can be to any page within your project, except URLs to pipelines. For example, `@azure pipelines subscribe https://dev.azure.com/myorg/myproject/`.
 
    ```
    @azure pipelines subscribe [project url]
    ```
 
-- **Monitor a specific pipeline:** The pipeline URL can be to any page within your pipeline that has a `definitionId` or `buildId/releaseId` present in the URL. For example, @azure pipelines subscribe https://dev.azure.com/myorg/myproject/_build?definitionId=123.
+- **Monitor a specific pipeline:** The pipeline URL can be to any page within your pipeline that has a `definitionId` or `buildId/releaseId` present in the URL. For example, `@azure pipelines subscribe https://dev.azure.com/myorg/myproject/_build?definitionId=123`.
 
    ```
    @azure pipelines subscribe [pipeline url]
    ```
 
-   Another example of a release pipeline that's subscribed to the *Release deployment started*, *Release deployment completed*, and *Release deployment approval pending* notifications is `@azure pipelines subscribe https://dev.azure.com/myorg/myproject/_release?definitionId=123&view=mine&_a=releases`
+   Another example of a release pipeline that's subscribed to the *Release deployment started*, *Release deployment completed*, and *Release deployment approval pending* notifications is `@azure pipelines subscribe https://dev.azure.com/myorg/myproject/_release?definitionId=123&view=mine&_a=releases`.
 
 > [!NOTE]
 > * We don't support deployment approvals that have applied the **Revalidate identity of approver before completing the approval** policy.
 > * Enable 'Third party application access via OAuth' to receive notifications for the organization in Azure DevOps.
 ## Manage subscriptions
 
-When you subscribe to a pipeline, a few subscriptions get created by default without any filters applied. You might want to customize these subscriptions. For example, you may want to get notified only when builds fail or when deployments get pushed to a production environment. The Azure Pipelines app supports filters to customize what you see in your channel. To manage your subscriptions, complete the following steps.
+When you subscribe to a pipeline, a few subscriptions get created by default without any filters applied. You might want to customize these subscriptions. For example, you might want to get notified only when builds fail or when deployments get pushed to a production environment. The Azure Pipelines app supports filters to customize what you see in your channel. To manage your subscriptions, complete the following steps.
 
 1. Run the `@azure pipelines subscriptions` command.
 2. Select **View all subscriptions**. In the list of subscriptions, if there's a subscription you don't want, select **Remove**.
