@@ -1057,7 +1057,6 @@ Select reviewers for specific directories and files in your repo.
 These reviewers are automatically added to pull requests that change files along those paths. You can also specify an **Activity feed message**.
 
 ![Add automatic reviewers](media/branch-policies/automatically-include-reviewers-for-pull-requests-2018.png)
-::: moniker-end
 
 If you select **Required**, then the pull request can't be completed until:
 
