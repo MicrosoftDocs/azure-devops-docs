@@ -207,7 +207,7 @@ landingContent:
           - text: Publish and download Universal Packages
             url: ./artifacts/universal-packages.md
           - text: Publish Maven Packages
-            url: ./artifacts/maven.md
+            url: ../artifacts/get-started-maven.md
           - text: Publish symbols for debugging
             url: ./artifacts/symbols.md
   - title: Integrate with other apps

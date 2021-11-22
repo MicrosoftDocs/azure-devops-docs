@@ -40,7 +40,7 @@ Continuous delivery automatically deploys and tests code in multiple stages to h
 
 | Continuous integration (CI)                         |  Continuous delivery (CD)                       |
 | ----------------------------------------------------|-------------------------------------------------|
-|- Increase code coverage<br/>- Build faster by splitting test and build runs<br/>- Automatically ensure you don't ship broken code<br/>- Run tests continually. |- Automatically deploy code to production<br/>- Ensure deployment targets have latest code<br/>- Use tested code from CI process.|
+|- Increase code coverage<br/>- Build faster by splitting test and build runs<br/>- Automatically ensure you don't ship broken code<br/>- Run tests continually |- Automatically deploy code to production<br/>- Ensure deployment targets have latest code<br/>- Use tested code from CI process|
 
 
 ## Define pipelines using YAML syntax
@@ -52,7 +52,7 @@ You define your pipeline in a YAML file called `azure-pipelines.yml` with the re
 ![Pipelines YAML intro image](../media/pipelines-image-yaml.png)
 
 * The pipeline is versioned with your code. It follows the same branching structure. You get validation of your changes through code reviews in pull requests and branch build policies.
-* Every branch you use can modify the build policy by modifying the `azure-pipelines.yml` file.
+* Every branch you use can modify the pipeline by modifying the `azure-pipelines.yml` file. Learn more about [branch consideration for YAML pipelines](../build/triggers.md#branch-considerations).
 * A change to the build process might cause a break or result in an unexpected outcome. Because the change is in version control with the rest of your codebase, you can more easily identify the issue.
 
 Follow these basic steps:
@@ -153,7 +153,7 @@ TFS 2015 through TFS 2018 supports the Classic interface only. The following tab
 
 
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Create your first pipeline](../create-first-pipeline.md)

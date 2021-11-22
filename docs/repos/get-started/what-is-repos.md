@@ -42,7 +42,7 @@ Connect your favorite development environment to Azure Repos to access your repo
 
 - [Command-line](../git/share-your-code-in-git-cmdline.md)
 - [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)
-- [Visual Studio](../git/share-your-code-in-git-vs-2017.md)
+- [Visual Studio](../git/share-your-code-in-git-vs.md)
 - [Xcode](../git/share-your-code-in-git-xcode.md)
 - [Eclipse](/previous-versions/azure/devops/java/download-eclipse-plug-in)
 - [IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
@@ -56,8 +56,8 @@ Review code with your team and make sure that changes build and pass tests befor
 - [Set up branch policies](../git/branch-policies.md#build-validation)
 - [Squash merge pull requests](../git/merging-with-squash.md)
 - [Git branch and pull request workflows](../git/git-branching-guidance.md)
-- [Leave comments](../git/pull-requests.md#leave-comments)
-- [Vote on the changes](../git/pull-requests.md#vote-on-the-changes)
+- [Leave comments](../git/review-pull-requests.md#make-comments)
+- [Vote on the changes](../git/review-pull-requests.md#vote-on-changes)
 
 ### Protect branches with policies
 

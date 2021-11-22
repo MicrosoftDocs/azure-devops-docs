@@ -9,7 +9,7 @@ metadata:
   author: KathrynEE
   ms.topic: troubleshooting
   monikerRange: '<= azure-devops'
-  ms.date: 01/15/2021
+  ms.date: 10/13/2021
 
 title: Work across projects FAQs 
 
@@ -49,20 +49,23 @@ sections:
       - question: Can I create a dashboard with information that spans two or more projects? 
         answer: | 
           ::: moniker range=">= azure-devops-2020"
-          **Sometimes**.  Dashboards allow you to add widgets. Certain widgets are able to gather information from multiple projects. To learn more, see [Add, rename, and delete dashboards, Add a dashboard](../report/dashboards/dashboards.md#add-a-dashboard).  There is also an [open issue](https://developercommunity.visualstudio.com/t/single-dashboard-for-multiple-projects/365500) with additional information regarding this functionality.
+          There is limited support for widgets that you add to a dashboard from different projects. Specifically, you can add [Burndown and Burnup charts](../report/dashboards/configure-burndown-burnup-widgets.md) from different projects to a dashboard. Query-based widgets reference queries that you define, which can [reference projects](../boards/queries/using-queries.md#query-across-projects) other than the project where the query is defined. You can also use an [Embedded Webpage widget](../report/dashboards/widget-catalog.md#embedded-webpage-widget) to display data from a URL, such as a backlog, board, or an **Analytics** chart from for a team. However, the backlog, board, or chart displays using the display preferences set by the currently logged in user viewing the dashboard. 
           ::: moniker-end
-
-          ::: moniker range="< azure-devops-2020"
-          **Yes**. Most dashboard widgets support configuration for the currently connected project. However, you can add query-based dashboard widgets&mdash;such as [Query results](../report/dashboards/widget-catalog.md#query-results) and [Chart for work items](../report/dashboards/charts.md#add-chart-widget)&mdash;to support cross-project queries. To learn how, see [Define a query, Query across projects](../boards/queries/using-queries.md#across-projects).  
+          ::: moniker range=">= tfs-2017 < azure-devops-2020"
+          The only way to view data from different projects is to use [Query-based widgets](../report/dashboards/widget-catalog.md#work-widgets) or [Embedded Webpage widgets](../report/dashboards/widget-catalog.md#embedded-webpage-widget). Query-based widgets reference queries that you define, which can [reference projects](../boards/queries/using-queries.md#query-across-projects) other than the project where the query is defined. Embedded Webpage widgets display data from a URL, such as a backlog, board, or chart for a team in different projects. However, the backlog, board, or chart displays using the display preferences set by the currently logged in user viewing the dashboard. 
           ::: moniker-end
-
+          ::: moniker range="<= tfs-2015"
+          **No**. This isn't a supported feature for TFS-2015 and earlier versions.  
+          ::: moniker-end
+          > [!NOTE]  
+          > There is a [suggested feature, Single Dashboard for Multiple Projects](https://developercommunity.visualstudio.com/t/single-dashboard-for-multiple-projects/365500) that you can review and up vote.  
       - question: Can I create a report that spans two or more projects? 
         answer: | 
           ::: moniker range=">= azure-devops-2019"
           **Yes**. The Analytics service and Power BI reports support creation of reports that span two or more projects. To learn more, see [Create a Power BI report with an OData Query](../report/powerbi/create-quick-report-odataq.md). 
           ::: moniker-end
           ::: moniker range="< azure-devops-2019"
-          **Yes**. The Analytics service and Power BI reports support creation of reports that span two or more projects. To learn more, see [Create a Power BI report with an OData Query](../report/powerbi/create-quick-report-odataq.md). 
+          **Yes**. The SQL Server Reporting services support creation of reports that span two or more projects.  
           ::: moniker-end
 
   - name: Azure Boards and work tracking

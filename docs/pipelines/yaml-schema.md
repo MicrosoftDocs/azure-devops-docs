@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: vijayma
-ms.date: 07/15/2021
+ms.date: 10/22/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -1842,6 +1842,26 @@ The task runs a script using cmd.exe on Windows and Bash on other platforms.
 
 # [Schema](#tab/schema)
 
+:::moniker range="azure-devops-2019"
+
+```yaml
+steps:
+- script: string  # contents of the script to run
+  displayName: string  # friendly name displayed in the UI
+  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
+  workingDirectory: string  # initial working directory for the step
+  failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
+  condition: string
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean  # whether to run this step; defaults to 'true'
+  timeoutInMinutes: number
+  env: { string: string }  # list of environment variables to add
+```
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2019"
+
 ```yaml
 steps:
 - script: string  # contents of the script to run
@@ -1866,6 +1886,10 @@ If you don't specify a command mode, you can shorten the `target` structure to:
   target: string  # container name or the word 'host'
 ```
 
+:::moniker-end
+
+
+
 # [Example](#tab/example)
 
 ```yaml
@@ -1876,8 +1900,21 @@ steps:
 
 ---
 
+:::moniker range="azure-devops-2019"
+
+Learn more about [conditions](process/conditions.md?tabs=yaml) and
+[timeouts](process/phases.md?tabs=yaml#timeouts).
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2019"
+
 Learn more about [conditions](process/conditions.md?tabs=yaml),
 [timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
+
+:::moniker-end
+
+
 
 ## Bash
 
@@ -1885,6 +1922,26 @@ The `bash` keyword is a shortcut for the [shell script task](tasks/utility/shell
 The task runs a script in Bash on Windows, macOS, and Linux.
 
 # [Schema](#tab/schema)
+
+:::moniker range="azure-devops-2019"
+
+```yaml
+steps:
+- bash: string  # contents of the script to run
+  displayName: string  # friendly name displayed in the UI
+  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
+  workingDirectory: string  # initial working directory for the step
+  failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
+  condition: string
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean  # whether to run this step; defaults to 'true'
+  timeoutInMinutes: number
+  env: { string: string }  # list of environment variables to add
+```
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2019"
 
 ```yaml
 steps:
@@ -1910,6 +1967,10 @@ If you don't specify a command mode, you can shorten the `target` structure to:
   target: string  # container name or the word 'host'
 ```
 
+:::moniker-end
+
+
+
 # [Example](#tab/example)
 
 ```yaml
@@ -1924,8 +1985,19 @@ steps:
 
 ---
 
+:::moniker range="azure-devops-2019"
+
+Learn more about [conditions](process/conditions.md?tabs=yaml) and
+[timeouts](process/phases.md?tabs=yaml#timeouts).
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2019"
+
 Learn more about [conditions](process/conditions.md?tabs=yaml),
 [timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
+
+:::moniker-end
 
 ## pwsh
 
@@ -1939,7 +2011,11 @@ steps:
 - pwsh: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
-  errorActionPreference: enum  # see the following "Error action preference" topic
+  errorActionPreference: enum  # see the following "Output stream action preferences" topic
+  warningPreference: enum  # see the following "Output stream action preferences" topic
+  informationPreference: enum  # see the following "Output stream action preferences" topic
+  verbosePreference: enum  # see the following "Output stream action preferences" topic
+  debugPreference: enum  # see the following "Output stream action preferences" topic
   ignoreLASTEXITCODE: boolean  # see the following "Ignore last exit code" topic
   failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
   workingDirectory: string  # initial working directory for the step
@@ -1982,7 +2058,11 @@ steps:
 - powershell: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
-  errorActionPreference: enum  # see the following "Error action preference" topic
+  errorActionPreference: enum  # see the following "Output stream action preferences" topic
+  warningPreference: enum  # see the following "Output stream action preferences" topic
+  informationPreference: enum  # see the following "Output stream action preferences" topic
+  verbosePreference: enum  # see the following "Output stream action preferences" topic
+  debugPreference: enum  # see the following "Output stream action preferences" topic
   ignoreLASTEXITCODE: boolean  # see the following "Ignore last exit code" topic
   failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
   workingDirectory: string  # initial working directory for the step
@@ -2013,17 +2093,39 @@ steps:
 
 Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](process/phases.md?tabs=yaml#timeouts).
 
-### Error action preference
+### Output stream action preferences
 
-Unless otherwise specified, the error action preference defaults to the value `stop`, and the line `$ErrorActionPreference = 'stop'` is prepended to the top of your script.
+PowerShell provides [multiple output streams](/powershell/module/microsoft.powershell.core/about/about_output_streams) that can be used to log different types of messages. The Error, Warning, Information, Verbose, and Debug streams all convey information that is useful in an automated environment, such as an agent job. PowerShell allows users to assign an action to each stream whenever a message is written to it. For example, if the `Error` stream were assigned the `Stop` action, PowerShell would halt execution anytime the `Write-Error` cmdlet was called.
 
-When the error action preference is set to stop, errors cause PowerShell to terminate the task and return a nonzero exit code.
-The task is also marked as Failed.
+The [PowerShell task](tasks/utility/powershell.md) allows you to override the default PowerShell action for each of these output streams when your script is run. This is done by prepending a line to the top of your script that sets the stream's corresponding [preference variable](/powershell/module/microsoft.powershell.core/about/about_preference_variables) to the action of choice. The following table lists the actions supported by the PowerShell task and what happens when a message is written to the stream:
+
+| Action | Description |
+| ------ | ----------- |
+| Default | Use PowerShell's [default action](/powershell/module/microsoft.powershell.core/about/about_preference_variables). |
+| Stop | Prints the message to the task logs, terminates the task, and marks it as failed. |
+| Continue | Prints the message to the task logs. |
+| SilentlyContinue | Ignores the message. |
+
+The following table lists the output streams supported by the PowerShell task and their default actions:
+
+| Stream | Default action |
+| ------ | -------------- |
+| [Error](/powershell/module/microsoft.powershell.core/about/about_output_streams#error-stream) | Stop |
+| [Warning](/powershell/module/microsoft.powershell.core/about/about_output_streams#warning-stream) | [Default](/powershell/module/microsoft.powershell.core/about/about_preference_variables#warningpreference) |
+| [Information](/powershell/module/microsoft.powershell.core/about/about_output_streams#information-stream)* | [Default](/powershell/module/microsoft.powershell.core/about/about_preference_variables#informationpreference) |
+| [Verbose](/powershell/module/microsoft.powershell.core/about/about_output_streams#verbose-stream) | [Default](/powershell/module/microsoft.powershell.core/about/about_preference_variables#verbosepreference) |
+| [Debug](/powershell/module/microsoft.powershell.core/about/about_output_streams#debug-stream) | [Default](/powershell/module/microsoft.powershell.core/about/about_preference_variables#debugpreference) |
+
+\* Not supported in PowerShell 3.0.
 
 # [Schema](#tab/schema)
 
 ```yaml
-errorActionPreference: stop | continue | silentlyContinue
+errorActionPreference: default | stop | continue | silentlyContinue
+warningPreference: default | stop | continue | silentlyContinue
+informationPreference: default | stop | continue | silentlyContinue
+verbosePreference: default | stop | continue | silentlyContinue
+debugPreference: default | stop | continue | silentlyContinue
 ```
 
 # [Example](#tab/example)
@@ -2031,10 +2133,17 @@ errorActionPreference: stop | continue | silentlyContinue
 ```yaml
 steps:
 - powershell: |
-    Write-Error 'Uh oh, an error occurred'
-    Write-Host 'Trying again...'
-  displayName: Error action preference
-  errorActionPreference: continue
+    Write-Error 'This error will be ignored'
+    Write-Warning 'This warning will be ignored'
+    Write-Information 'This information message will print to the task logs'
+    Write-Verbose 'This verbose message will print to the task logs'
+    Write-Debug 'This debug message will fail the task'
+  displayName: Output stream action preferences
+  errorActionPreference: silentlyContinue
+  warningPreference: silentlyContinue
+  informationPreference: continue
+  verbosePreference: continue
+  debugPreference: stop
 ```
 
 ---
@@ -2260,6 +2369,26 @@ There's a [catalog of tasks](tasks/index.md) available to choose from.
 
 # [Schema](#tab/schema)
 
+:::moniker range="azure-devops-2019"
+
+```yaml
+steps:
+- task: string  # reference to a task and version, e.g. "VSBuild@1"
+  displayName: string  # friendly name displayed in the UI
+  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
+  condition: string
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean  # whether to run this step; defaults to 'true'
+  timeoutInMinutes: number
+  inputs: { string: string }  # task-specific inputs
+  env: { string: string }  # list of environment variables to add
+```
+
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2019"
+
 ```yaml
 steps:
 - task: string  # reference to a task and version, e.g. "VSBuild@1"
@@ -2284,6 +2413,10 @@ If you don't specify a command mode, you can shorten the `target` structure to:
   target: string  # container name or the word 'host'
 ```
 
+:::moniker-end
+
+
+
 # [Example](#tab/example)
 
 ```yaml
@@ -2297,8 +2430,19 @@ steps:
 
 ---
 
+:::moniker range="azure-devops-2019"
+
+Learn more about [conditions](process/conditions.md?tabs=yaml) and
+[timeouts](process/phases.md?tabs=yaml#timeouts).
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2019"
+
 Learn more about [conditions](process/conditions.md?tabs=yaml),
 [timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
+
+:::moniker-end
 
 ## Syntax highlighting
 

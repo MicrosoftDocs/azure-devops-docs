@@ -50,9 +50,21 @@ Equivalent to <a href="https://docs.nuget.org/consume/command-line-reference#use
 Additional arguments passed to <a href="https://docs.nuget.org/consume/command-line-reference#user-content-restore-command" data-raw-source="[nuget restore](https://docs.nuget.org/consume/command-line-reference#user-content-restore-command)">nuget restore</a>.
 </td>
 </tr>
-<tr><th style="text-align: center" colspan="2">Advanced</th></tr>
+</table>
+
+### Advanced options
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
 
 [!INCLUDE [temp](../../includes/nuget-step-arguments.md)]
+
+</table>
 
 [!INCLUDE [temp](../../includes/control-options-arguments.md)]
 

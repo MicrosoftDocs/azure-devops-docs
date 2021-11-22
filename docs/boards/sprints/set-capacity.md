@@ -1,7 +1,7 @@
 ---
-title: Set sprint capacity in Azure Boards
+title: Set the team sprint capacity in Azure Boards
 titleSuffix: Azure Boards 
-description: Learn how to determine team capacity and how to set the capacity for a sprint in Azure Boards.
+description: Learn how to determine team capacity, adjust work to fit team capacity, and set capacity for a sprint in Azure Boards.
 ms.technology: devops-agile
 ms.custom: boards-sprints
 ms.assetid: 
@@ -9,12 +9,11 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 09/20/2021
+ms.date: 10/30/2021
 ---
 
 
-
-# 3. Determine and set sprint capacity
+# 3. Determine and set sprint capacity in Azure Boards
 
 <a id="set-capacity">  </a>
 

@@ -160,7 +160,7 @@ See the following sample that gets a list of builds using curl.
 
 ```curl
 
-curl -u username[:{personalaccesstoken}] https://dev.azure.com/{organization}/_apis/build-release/builds
+curl -u :{PAT} https://dev.azure.com/{organization}/_apis/build-release/builds
 ```
 
 If you wish to provide the PAT through an HTTP header, first convert it to a Base64 string (the following example shows how to convert to Base64 using C#). The resulting string can then be provided as an HTTP header in the following format:

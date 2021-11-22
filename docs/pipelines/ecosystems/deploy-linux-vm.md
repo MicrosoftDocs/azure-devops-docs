@@ -33,7 +33,7 @@ https://github.com/spring-projects/spring-petclinic
 > [!NOTE]
 > Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://spring.io/guides/gs/maven/).
 
-#### [JavaScript](#tab/java-script)
+#### [JavaScript](#tab/javascript)
 
 [!INCLUDE [include](includes/get-code-before-sample-repo-option-to-use-own-code.md)] 
 
@@ -60,7 +60,7 @@ Use Ubuntu 16.04 for this quickstart. Follow additional steps for Java or JavaSc
 - For deploying Java EE-based Wildfly app, follow the [blog post](https://azure.github.io/AppService/2020/01/31/Wildfly-on-App-Service.html) here. To provision the VM, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) + WildFly/JBoss 14 
 
 
-#### [JavaScript](#tab/java-script)
+#### [JavaScript](#tab/javascript)
 
 - For installing a JavaScript or Node.js app, set up a Linux VM with Nginx in Azure using [this](/azure/virtual-machines/linux/quick-create-cli).
 
@@ -134,7 +134,7 @@ Select the **starter** template and copy this YAML snippet to build your Java pr
 ```
 For more guidance, follow the steps mentioned in [Build your Java app with Maven](java.md) for creating a build.
 
-#### [JavaScript](#tab/java-script)
+#### [JavaScript](#tab/javascript)
 
 Select the **starter** template and copy this YAML snippet to build a general Node.js project with npm.
 ```YAML
