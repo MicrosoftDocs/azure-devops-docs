@@ -40,3 +40,18 @@ With Microsoft hosted agents, each time you run your pipeline, a new agent is as
        
       Write-Host '##vso[task.setvariable variable=NUGET_PACKAGES]$cache'
 ```
+
+## Add the Cache task
+
+Add the following task to your YAML pipeline:
+
+```YAML
+- task: Cache@2
+  inputs:
+    key: 'nuget | "$(Agent.OS)" | **/packages.lock.json'
+    path: '$(NUGET_PACKAGES)'
+    restoreKeys: |
+      nuget | "$(Agent.OS)"
+      nuget
+  displayName: Cache NuGet packages
+```
