@@ -225,21 +225,10 @@ Next, create the Dockerfile.
     RUN curl -LsS https://aka.ms/InstallAzureCLIDeb | bash \
       && rm -rf /var/lib/apt/lists/*
 
-    ARG TARGETARCH=amd64
-    ARG AGENT_VERSION=2.194.0
-
-    WORKDIR /azp
-    RUN if [ "$TARGETARCH" = "amd64" ]; then \
-          AZP_AGENTPACKAGE_URL=https://vstsagentpackage.azureedge.net/agent/${AGENT_VERSION}/vsts-agent-linux-x64-${AGENT_VERSION}.tar.gz; \
-        else \
-          AZP_AGENTPACKAGE_URL=https://vstsagentpackage.azureedge.net/agent/${AGENT_VERSION}/vsts-agent-linux-${TARGETARCH}-${AGENT_VERSION}.tar.gz; \
-        fi; \
-        curl -LsS "$AZP_AGENTPACKAGE_URL" | tar -xz
-
     COPY ./start.sh .
     RUN chmod +x start.sh
 
-    ENTRYPOINT [ "./start.sh" ]
+    CMD [ "./start.sh", "--once" ]
     ```
 
    > [!NOTE]
@@ -300,9 +289,22 @@ Next, create the Dockerfile.
     # Let the agent ignore the token env variables
     export VSO_AGENT_IGNORE=AZP_TOKEN,AZP_TOKEN_FILE
 
+    print_header "1. Determining matching Azure Pipelines agent..."
+
+    AZP_AGENT_PACKAGES=$(curl -LsS \
+        -u user:$(cat "$AZP_TOKEN_FILE") \
+        -H 'Accept:application/json;api-version=3.0-preview' \
+        "$AZP_URL/_apis/distributedtask/packages/agent?platform=linux-x64&top=1")
+
+    AZP_AGENT_PACKAGE_LATEST_URL=$(echo "$AZP_AGENT_PACKAGES" | jq -r '.value[0].downloadUrl')
+
+    print_header "2. Downloading and extracting Azure Pipelines agent..."
+
+    curl -LsS $AZP_AGENT_PACKAGE_LATEST_URL | tar -xz & wait $!
+
     source ./env.sh
 
-    print_header "1. Configuring Azure Pipelines agent..."
+    print_header "3. Configuring Azure Pipelines agent..."
 
     ./config.sh --unattended \
       --agent "${AZP_AGENT_NAME:-$(hostname)}" \
@@ -314,7 +316,7 @@ Next, create the Dockerfile.
       --replace \
       --acceptTeeEula & wait $!
 
-    print_header "2. Running Azure Pipelines agent..."
+    print_header "4. Running Azure Pipelines agent..."
 
     trap 'cleanup; exit 0' EXIT
     trap 'cleanup; exit 130' INT
@@ -322,9 +324,7 @@ Next, create the Dockerfile.
 
     # To be aware of TERM and INT signals call run.sh
     # Running it with the --once flag at the end will shut down the agent after the build is executed
-    ./run.sh "$@" &
-
-    wait $!
+    ./run.sh "$@" & wait $!
     ```
     > [!NOTE]
     >You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
@@ -350,12 +350,6 @@ Now that you have created an image, you can run a container.
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
     ```
 
-   If you want a fresh agent container for every pipeline job, pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
-
-    ```shell
-    docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest --once
-    ```
-    
 Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
 
 
