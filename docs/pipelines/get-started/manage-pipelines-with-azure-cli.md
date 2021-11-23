@@ -151,7 +151,7 @@ ID    Name                        Status    Default Queue
 
 ## Next steps
 
-Learn more about configuring pipelines in the language of your choice:
+You can [customize your pipeline](../customize-pipeline.md) or learn more about configuring pipelines in the language of your choice:
 
 * [.NET Core](../ecosystems/dotnet-core.md)
 * [Go](../ecosystems/go.md)
@@ -159,10 +159,6 @@ Learn more about configuring pipelines in the language of your choice:
 * [Node.js](../ecosystems/javascript.md)
 * [Python](../ecosystems/python.md)
 * [Containers](../ecosystems/containers/build-image.md)
-
-Or, you can proceed to [customize the pipeline](../customize-pipeline.md) you just created.
-
-To find out what else you can do in YAML pipelines, see [YAML schema reference](../yaml-schema.md).
 
 ## FAQ
 
