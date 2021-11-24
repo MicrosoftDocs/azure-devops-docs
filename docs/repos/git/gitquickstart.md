@@ -28,9 +28,49 @@ If you don't have your code in an Azure Repos or Azure DevOps Server Git repo, v
 
 ## Get your code
 
-To get a copy of the source code, you [clone](clone.md) a Git repository. Cloning creates both a copy of the source code for you to work with and all the version control information so Git can manage the source code.
+You can [clone](clone.md) a remote Git repository to create a local copy of it. Cloning creates both a copy of the source code for you to work with and all the version control information so Git can manage the source code.
 
-If you don't have a Git repository yet, you can create one [using your own code](creatingrepo.md). Continue with the steps in this article to commit and share your work.
+If you prefer to create a local repository without cloning, see [Create a new Git repo](creatingrepo.md). After creating your local repository you can proceed to [commit](#commit), [share](#push), and [sync](#pull) your work.
+
+#### [Visual Studio 2019](#tab/visual-studio-2019)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
+:::row:::
+  :::column span="":::
+
+    **Visual Studio Git** <br><br>
+
+    1. From the **Git** menu on the menu bar, choose **Clone Repository...**.
+
+      :::image type="content" source="media/gitquickstart-vs2019/git/clone-repo.png" border="true" alt-text="Open the Clone a repository window from the Git menu bar in Visual Studio 2019." lightbox="media/gitquickstart-vs2019/git/clone-repo.png":::
+
+    2. In the **Clone a repository** window, enter the remote repo location and the folder path for the cloned repo. If you don't know the remote repo location, select **Azure DevOps** from the **Browse a repository** options.
+
+      :::image type="content" source="media/gitquickstart-vs2019/git/specify-repo.png" border="true" alt-text="Clone an Azure DevOps project from the Clone a repository window in Visual Studio 2019." lightbox="media/gitquickstart-vs2019/git/specify-repo.png":::
+
+    3. Select **Clone**.
+
+  :::column-end:::
+  :::column span="":::
+
+    **Visual Studio Team Explorer** <br><br>
+
+    1. In Team Explorer, select **Connect** to open the **Connect** page, and then choose **Manage Connections** > **Connect to Project**.
+
+      :::image type="content" source="media/gitquickstart-vs2019/team-explorer/manage-connections.png" border="true" alt-text="Connect to an Azure DevOps project using Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart-vs2019/team-explorer/manage-connections.png":::
+
+    2. In the **Connect to a Project** window, choose the repo you want to clone and select **Clone**. If you don't see your repo, select **Add Azure DevOps Server** to add a server that hosts a repo. You can filter the list to find your repo.
+
+      :::image type="content" source="media/gitquickstart-vs2019/team-explorer/connect-add-server.png" border="true" alt-text="Clone an Azure DevOps project using Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart-vs2019/team-explorer/connect-add-server.png":::
+
+    3. Verify the location for the cloned repo on your computer, and select **Clone**.
+
+   :::column-end:::
+:::row-end:::
+
+[!INCLUDE [project-urls](../../includes/project-urls.md)]
+
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
 
@@ -111,6 +151,9 @@ click **Connect**.
 Git [branches](./create-branch.md) isolate your changes from other work in the project.
 The recommended [Git workflow](gitworkflow.md) uses a new branch for every feature or fix you work on.
 You make [commits](commits.md) in your local Git repository to save your changes on that branch.
+
+
+#### [Visual Studio 2019](#tab/visual-studio-2019)
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
 
@@ -220,6 +263,9 @@ push changes after you add commits to a branch.
 
 Once you push the changes, you can create a [pull request](pull-requests.md). A pull request lets others know you'd like to have the changes reviewed. After approval, a pull request adds your changes to the main branch of the code.
 
+
+#### [Visual Studio 2019](#tab/visual-studio-2019)
+
 #### [Visual Studio 2017](#tab/visual-studio-2017)
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]
@@ -313,6 +359,9 @@ To keep your code up to date, [pull](pulling.md) commits made by others and merg
 Git is very good about merging multiple changes even in the same file, but sometimes you might have to [resolve a merge conflict](merging.md).
 It's a good idea to pull your branches regularly to keep them up to date with the changes from others.
 Pulling often makes sure that your feature branches from your main branch are using the latest version of the code.
+
+
+#### [Visual Studio 2019](#tab/visual-studio-2019)
 
 #### [Visual Studio 2017](#tab/visual-studio-2017)
 
