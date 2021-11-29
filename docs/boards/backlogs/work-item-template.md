@@ -352,7 +352,7 @@ You manage templates from  team settings. All templates are defined for a team. 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot, choose User Story templates](media/templates/templates-user-story-type-selected.png)   
 
-	::: moniker-end
+::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -364,6 +364,7 @@ You manage templates from  team settings. All templates are defined for a team. 
 ::: moniker-end
 
 <a id="define-template" />
+
 ::: moniker range=">= tfs-2017"
 
 ### Create a work item template 

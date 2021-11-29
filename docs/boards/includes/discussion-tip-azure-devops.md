@@ -33,15 +33,9 @@ Choose one of these icons &mdash;:::image type="icon" source="../../media/icons/
 > [!div class="mx-imgBorder"]  
 > ![Discussion section, @mention drop-down menu](../media/discussion-at-mention.png)
 
-
-::: moniker range="azure-devops-2019"  
-
-> [!NOTE]   
-> This latest version of the rich text editor requires Azure DevOps Server 2019 Update 1 or later version. 
-
-::: moniker-end
-
 Type a name, or enter a number and the menu list will filter to match your entry. Choose the entry you want to add. You can bring a group into the discussion by typing **@** and the group name, such as a team or security group. 
+
+::: moniker range=">= azure-devops-2019" 
 
 ### Edit or delete a comment 
 
@@ -49,19 +43,19 @@ If you need to edit or delete any of your discussion comments, choose :::image t
 
 > [!div class="mx-imgBorder"]  
 > ![Discussion section, Edit, Delete actions](/azure/devops/boards/media/discussion-edit-delete.png)  
-
-::: moniker range="azure-devops-2019"  
-
-> [!NOTE]   
-> The edit/delete feature requires Azure DevOps Server 2019 Update 1 or later version. 
-
 ::: moniker-end
 
-After updating the comment, choose **Update**. To delete the comment, you'll need to confirm that you want to delete it. 
+::: moniker range="azure-devops-2019"  
+> [!NOTE]   
+> Editing and deleting comments requires Azure DevOps Server 2019 Update 1 or later version. 
+::: moniker-end
 
+::: moniker range=">= azure-devops-2019" 
+After updating the comment, choose **Update**. To delete the comment, you'll need to confirm that you want to delete it.
 A full audit trail of all  edited and deleted comments is maintained in the <strong>History</strong> tab on the work item form. 
+::: moniker-end
 
-
+::: moniker range=">= azure-devops-2020"
 
 ### Add a reaction to a comment 
 

@@ -9,6 +9,7 @@ ms.date: 11/19/2021
 
 <a id="discussion" />
 <a id="capture-comments-in-the-discussion-section" />
+
 ::: moniker range=">= tfs-2017" 
 
 ## Capture comments in the Discussion section 
@@ -39,10 +40,7 @@ Choose one of these icons &mdash;:::image type="icon" source="../../media/icons/
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"  
-> [!NOTE]   
-> This latest version of the rich text editor requires Azure DevOps Server 2019 Update 1 or later version. 
-::: moniker-end
+
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -58,15 +56,13 @@ If you need to edit or delete any of your discussion comments, choose :::image t
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"  
-
 > [!NOTE]   
-> The edit/delete feature requires Azure DevOps Server 2019 Update 1 or later version. 
-
+> Editing and deleting comments requires Azure DevOps Server 2019 Update 1 or later version. 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"  
 
-After updating the comment, choose **Update**. To delete the comment, you'll need to confirm that you want to delete it. 
+After updating the comment, choose **Update**. To delete the comment, you'll need to confirm that you want to delete it.
 
 A full audit trail of all  edited and deleted comments is maintained in the **History** tab on the work item form. 
 
