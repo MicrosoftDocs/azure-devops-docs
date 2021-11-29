@@ -78,7 +78,6 @@ ___
       `windows-latest` OR `windows-2019`
    :::column-end:::
 :::row-end:::
-___
 :::row:::
    :::column span="2":::
       Content...
@@ -90,7 +89,6 @@ ___
       More content...
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="2":::
       Content...
@@ -102,7 +100,6 @@ ___
       More content...
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="2":::
       Content...
