@@ -224,6 +224,7 @@ To manage permissions for a query or query folder, you must be the creator of th
 For details, see [Set permissions on a shared query or query folder](../../organizations/security/set-permissions-access-work-tracking.md). To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/about-managed-queries.md).
 
 <a id="tags" /> 
+
 ::: moniker range=">= tfs-2017"  
 
 ## Set permissions on work item tags 
@@ -232,10 +233,11 @@ By default, all users of the Contributors group can create and add tags to work 
 
 ::: moniker-end
 
-
-::: moniker range=">= tfs-2017"  
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
+
+
+::: moniker range=">= tfs-2017"  
 
 ## Edit or manage permissions for Delivery Plans 
 
@@ -271,10 +273,11 @@ In this example, we grant members assigned to the team administrator role, who b
 
 ::: moniker-end    
 
-::: moniker range=">= tfs-2017"
 
 <a id="delete-test-permissions"></a>
 <a id="manage-test-artifacts"></a>
+
+::: moniker range=">= tfs-2017"
 
 ## Manage test plans and test suites
 
@@ -289,6 +292,7 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 ![Set Area path permissions for the project](../../boards/backlogs/media/delete-test-artifacts-area-path-permissions.png)  
 
 To have full access to the Test feature set, your [access level must be set to Basic + Test Plans](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases.  
+
 ::: moniker-end  
 
 
