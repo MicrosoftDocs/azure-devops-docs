@@ -71,7 +71,7 @@ organizations could be grouped within an organization.
 
 Additionally, we merge organizations and their single 
 project collections into a single entity. The organization is similar to the  Azure DevOps Server deployment and the project collection.
-
+**test change**
 See also https://github.com/MicrosoftDocs/vsts-docs/issues/1611
 -->
 
