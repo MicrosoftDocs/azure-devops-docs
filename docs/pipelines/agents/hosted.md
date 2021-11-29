@@ -50,7 +50,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
       **YAML VM Image Label**
    :::column-end:::
 :::row-end:::
-
+___
 :::row:::
    :::column span="2":::
       Windows Server 2022 with Visual Studio 2022
@@ -64,7 +64,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
       `windows-2022`
    :::column-end:::
 :::row-end:::
-
+___
 :::row:::
    :::column span="2":::
       Windows Server 2019 with Visual Studio 2019
@@ -78,7 +78,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
       `windows-latest` OR `windows-2019`
    :::column-end:::
 :::row-end:::
-
+___
 :::row:::
    :::column span="2":::
       Content...
