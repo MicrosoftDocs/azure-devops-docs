@@ -34,85 +34,16 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md) |
 | Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-latest` OR `ubuntu-20.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-README.md)
 | Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md) |
-| macOS 11 Big Sur | *macOS-11* |  `macOS-11` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11-Readme.md) |
-| macOS X Catalina 10.15 | *macOS-10.15* |  `macOS-latest` OR `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md) |
+| macOS 11 Big Sur | *macOS-11* | `macOS-latest` OR `macOS-11` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11-Readme.md) |
+| macOS X Catalina 10.15 | *macOS-10.15* | `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md) |
 | macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-10.14` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md) |
 
-
-:::row:::
-   :::column span="2":::
-      **Hosted image and included software**
-   :::column-end:::
-   :::column:::
-      **Classic Editor Agent Specification**
-   :::column-end:::
-   :::column:::
-      **YAML VM Image Label**
-   :::column-end:::
-:::row-end:::
-___
-:::row:::
-   :::column span="2":::
-      Windows Server 2022 with Visual Studio 2022
-
-      [Included software](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2022-Readme.md) 
-   :::column-end:::
-   :::column:::
-      *windows-2022*
-   :::column-end:::
-   :::column:::
-      `windows-2022`
-   :::column-end:::
-:::row-end:::
-___
-:::row:::
-   :::column span="2":::
-      Windows Server 2019 with Visual Studio 2019 - [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md) 
-   :::column-end:::
-   :::column:::
-      *windows-2019*
-   :::column-end:::
-   :::column:::
-      `windows-latest` OR `windows-2019`
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      Content...
-   :::column-end:::
-   :::column:::
-      More content...
-   :::column-end:::
-   :::column:::
-      More content...
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      Content...
-   :::column-end:::
-   :::column:::
-      More content...
-   :::column-end:::
-   :::column:::
-      More content...
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      Content...
-   :::column-end:::
-   :::column:::
-      More content...
-   :::column-end:::
-   :::column:::
-      More content...
-   :::column-end:::
-:::row-end:::
 
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
 
 > [!NOTE]
+> [`macOS-latest` is changing to `macOS-11`](https://github.com/actions/virtual-environments/issues/4060).
+>
 > [The Ubuntu 16.04 hosted image was removed September 2021](https://github.com/actions/virtual-environments/issues/3287).
 >
 > [The Windows Server 2016 with Visual Studio 2017 image is being deprecated](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows).
