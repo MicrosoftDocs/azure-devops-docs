@@ -55,7 +55,7 @@ ___
    :::column span="2":::
       Windows Server 2022 with Visual Studio 2022
 
-      [Included software](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2022-Readme.md)
+      [Included software](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2022-Readme.md) 
    :::column-end:::
    :::column:::
       *windows-2022*
@@ -69,7 +69,7 @@ ___
    :::column span="2":::
       Windows Server 2019 with Visual Studio 2019
 
-     [Included software](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md)
+     [Included software](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md) 
    :::column-end:::
    :::column:::
       *windows-2019*
