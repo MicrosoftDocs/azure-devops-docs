@@ -41,7 +41,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 
 :::row:::
    :::column span="2":::
-      **Hosted image**
+      **Hosted image and included software**
    :::column-end:::
    :::column:::
       **Classic Editor Agent Specification**
@@ -67,9 +67,7 @@ ___
 ___
 :::row:::
    :::column span="2":::
-      Windows Server 2019 with Visual Studio 2019
-
-     [Included software](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md) 
+      Windows Server 2019 with Visual Studio 2019 - [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md) 
    :::column-end:::
    :::column:::
       *windows-2019*
