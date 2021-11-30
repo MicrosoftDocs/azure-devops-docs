@@ -352,7 +352,7 @@ You manage templates from  team settings. All templates are defined for a team. 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot, choose User Story templates](media/templates/templates-user-story-type-selected.png)   
 
-	::: moniker-end
+::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -363,12 +363,11 @@ You manage templates from  team settings. All templates are defined for a team. 
 
 ::: moniker-end
 
+<a id="define-template" />
 
 ::: moniker range=">= tfs-2017"
 
 ### Create a work item template 
-
-<a id="define-template" />
 
 1. From the work item type page, choose the ![green plus icon](../media/icons/green_plus_icon.png) **New template** to create a template from scratch.  
     
@@ -720,10 +719,8 @@ For example, the following syntax specifies a work item task with title *TaskTit
 
 You can save the URL as a text file or add the URL to a dashboard or web page as a hyperlink. 
 
-
-::: moniker range=">= tfs-2015"
-
 <a id="markdown-widget"> </a>
+::: moniker range=">= tfs-2015"
 
 ## Add a template link to a team dashboard   
 
