@@ -26,3 +26,27 @@ To lock your project's dependencies, set the **RestorePackagesWithLockFile** pro
 ```
 
  Make sure to check in the **packages.lock.json** file to your source code repository.
+
+## Cache NuGet packages
+
+We will need to create a pipeline variable to point to the location of our packages on the agent running the pipeline. 
+
+In this example, the content of the **packages.lock.json** will be hashed to produce a dynamic cache key. This will ensure that every time the file is modified, a new cache key will be generated.
+
+:::image type="content" source="media/cache-key-hash.png" alt-text="Screenshot showing how the cache key is generated in Azure Pipelines.":::
+
+```YAML
+variables:
+  NUGET_PACKAGES: ''
+
+- task: Cache@2
+  displayName: Cache
+  inputs:
+    key: 'nuget | "$(Agent.OS)" | **/packages.lock.json'
+    path: '$(NUGET_PACKAGES)'
+    restoreKeys: |
+      nuget | "$(Agent.OS)"
+      nuget
+    cacheHitVar: 'CACHE_RESTORED'
+```
+
