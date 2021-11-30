@@ -187,6 +187,28 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 ::: moniker-end
 
+::: moniker range=">=azure-devops-2020"
+## Supported clients and run options
+
+In addition to running tests for a specific build, the run options support various test scenarios. To see the options, in the **Execute** tab, select a test, and then select **Run with options**.
+**Select test type and runner** offers these options:
+
+- Manual tests using Web Browser based runner
+  You can select a specific build to test. Select Find builds to open the Find builds dialog box and search for a build to test against.
+
+- Manual tests using Test Runner client
+  To run manual tests for desktop applications by using the Test Runner client, install that client, if necessary. [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload)
+
+- Automated tests using release stage
+  Select a build. Select a release pipeline and stage to consume the build’s artifacts.
+
+- Manual tests using Microsoft Test Manager 2017 client
+  Collects data from a local machine. Select a build. Select one or more data collectors: Action log, Event log, Screen and voice recorder, and system information
+
+- Manual tests using Microsoft Test Manager 2015 or earlier client
+
+::: moniker-end
+
 ## Use test options
 ::: moniker range=">=azure-devops-2020"
 
