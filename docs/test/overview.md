@@ -79,7 +79,7 @@ Learn how to create tests plans and test cases, and run them using the Azure Dev
 > [!VIDEO https://www.youtube.com/embed/u-fdqhxonPc/player]
 
 
-> [!VIDEO https://www.youtube.com/watch?v=sxsG3jqNWkc/player]
+> [!VIDEO https://www.youtube.com/embed/v=sxsG3jqNWkc/player]
 
  
 
