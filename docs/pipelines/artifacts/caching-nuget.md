@@ -61,3 +61,10 @@ This task will only run if the `CACHE_RESTORED` variable is false.
     command: 'restore'
     restoreSolution: '**/*.sln'
 ```
+
+## Performance comparison
+
+Pipeline caching is a great way to speed up your pipeline execution. Here is a side by side performance comparison for 2 different pipelines. Before adding the caching task (right), the restore task took approximately 41 seconds. We added the caching task to a second pipeline (left) and configured the restore task to run when a cache miss is encountered. The restore task in this case took 8 seconds to complete. 
+
+:::image type="content" source="media/caching-performance.png" alt-text="Screenshot showing pipeline performance with and without caching.":::
+
