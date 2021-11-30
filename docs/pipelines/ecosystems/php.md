@@ -29,7 +29,7 @@ For an end-to-end walkthrough of deploying to Azure App Service on Linux with a 
 [!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
 ```
-https://github.com/MicrosoftDocs/pipelines-php
+https://github.com/Azure-Samples/basic-php-composer
 ```
 
 ### Sign in to Azure Pipelines
