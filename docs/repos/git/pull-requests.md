@@ -679,10 +679,8 @@ You can attach files, including images, to your PR during or after creation. Sel
 ![Screenshot that shows attaching files to the P R description during creation.](media/pull-requests/attachment.png)
 
 ::: moniker-end
-
-::: moniker range=">=azure-devops-2019"
-
 <a name="change-the-target-branch-of-a-pull-request"></a>
+::: moniker range=">=azure-devops-2019"
 
 ## Change the target branch of an active pull request
 

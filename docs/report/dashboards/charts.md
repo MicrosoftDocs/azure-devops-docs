@@ -352,8 +352,8 @@ To add other types of charts, such as test results and build summary charts, see
 > For TFS 2013 and TFS 2015, you can pin charts to the team homepage. For TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
 <a id="add-chart-widget"></a> 
+::: moniker range=">= tfs-2015"
 
 ## Add a chart widget to a dashboard   
  

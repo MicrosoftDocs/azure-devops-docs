@@ -118,9 +118,10 @@ To create or list projects, see [Create a project](create-project.md)
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
 
 <a id="project-scoped-user-group" /> 
+
+::: moniker range="azure-devops"
 
 ## Limit user visibility for projects using the Project-Scoped Users group 
 
