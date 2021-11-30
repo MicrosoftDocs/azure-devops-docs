@@ -50,3 +50,14 @@ variables:
     cacheHitVar: 'CACHE_RESTORED'
 ```
 
+## Restore cache
+
+This task will only run if the `CACHE_RESTORED` variable is false.
+
+```YAML
+- task: NuGetCommand@2
+  condition: ne(variables.CACHE_RESTORED, true)
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/*.sln'
+```
