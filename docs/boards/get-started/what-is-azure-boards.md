@@ -22,7 +22,7 @@ Quickly and easily track user stories, backlog items, task, features, and bugs a
 
 ### Video: Plan your work with Azure Boards
 
-> [!VIDEO https://docs.microsoft.com/en-us/events/microsoft-azure-azure-devops-launch-2018/a105/player]
+> [!VIDEO https://docs.microsoft.com/events/microsoft-azure-azure-devops-launch-2018/a105/player]
 
 
 > [!NOTE]  
