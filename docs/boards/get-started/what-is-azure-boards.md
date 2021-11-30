@@ -24,7 +24,7 @@ Quickly and easily track user stories, backlog items, task, features, and bugs a
 
 <br/> 
 
-> [!VIDEO https://docs.microsoft.com/events/microsoft-azure-azure-devops-launch-2018/a105/player] 
+> [!VIDEO https://docs.microsoft.com/en-us/events/microsoft-azure-azure-devops-launch-2018/a105/player] 
 
 > [!NOTE]  
 > This article applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Most of the guidance is valid for earlier on-premises versions. However, images show only examples for the latest versions. Also, the Basic process is only available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions. 
