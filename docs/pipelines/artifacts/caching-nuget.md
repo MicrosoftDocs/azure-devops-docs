@@ -68,3 +68,44 @@ Pipeline caching is a great way to speed up your pipeline execution. Here is a s
 
 :::image type="content" source="media/caching-performance.png" alt-text="Screenshot showing pipeline performance with and without caching.":::
 
+Below is my YAML pipeline for reference:
+
+```YAML
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  NUGET_PACKAGES: ''
+
+steps:
+- task: NuGetToolInstaller@1
+  displayName: 'NuGet tool installer'
+
+- task: Cache@2
+  displayName: 'NuGet Cache'
+  inputs:
+    key: 'nuget | "$(Agent.OS)" | **/packages.lock.json'
+    path: '$(NUGET_PACKAGES)'
+    cacheHitVar: 'CACHE_RESTORED'
+
+- task: NuGetCommand@2
+  displayName: 'NuGet restore'
+  condition: ne(variables.CACHE_RESTORED, true)
+  inputs:
+    command: 'restore'
+    restoreSolution: '$(solution)'
+
+- task: VSBuild@1
+  inputs:
+    solution: '$(solution)'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+- task: VSTest@2
+  inputs:
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+```
