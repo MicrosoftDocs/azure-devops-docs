@@ -174,8 +174,8 @@ If you're using a different email or tenant for Microsoft Teams and Azure DevOps
 |Use case  |Email ID & tenant in Microsoft Teams |Email ID & tenant in Azure DevOps  |Sign in action |
 |---------|---------|---------|---------|
 |1     |email1@abc.com (tenant 1)        |  email1@abc.com (tenant 1)     | Select **Sign in**        |
-|2     |  email1@abc.com (tenant 1)      | email2@pqr.com (tenant 2)       | - Sign in to Azure DevOps. - In the same browser, start a new tab and go to https://teams.microsoft.com/. - Run the `sign in` command and select **Sign in**.        |
-|3     |email1@abc.com (tenant 1)         |  email2@pqr.com (tenant 2)       | - Select **Sign in with different email address**. - In the email ID picker, use the email2 to sign in.       |
+|2     |  email1@abc.com (tenant 1)      | email2@pqr.com (tenant 2)       | - Sign in to Azure DevOps. <br> - In the same browser, start a new tab and go to https://teams.microsoft.com/.<br> - Run the `sign in` command and select **Sign in**.        |
+|3     |email1@abc.com (tenant 1)         |  email2@pqr.com (tenant 2)       | - Select **Sign in with different email address**.<br> - In the email ID picker, use the email2 to sign in.       |
 |4     | email1@abc.com (tenant 1)        | email2@pqr.com (non-default tenant 3)        | Currently not supported.       |
 
 ## Troubleshoot 
