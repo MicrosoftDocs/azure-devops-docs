@@ -39,9 +39,9 @@ To create a feedback query, follow these steps:
 
    ![Screenshot shows editor with values entered.](media/track-stakeholder-feedback/editor-feedback-values.png)
 
-   - Team Project = @Project
-   - Work Item Type In Group Microsoft.FeedbackRequestCategory
-   - State = Active
+   - *Team Project = @Project*
+   - *Work Item Type In Group Microsoft.FeedbackRequestCategory*
+   - *State = Active*
 
 1. Select **Save query** and enter a name.
 
