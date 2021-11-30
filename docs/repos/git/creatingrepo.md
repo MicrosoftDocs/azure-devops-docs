@@ -27,15 +27,6 @@ In this tutorial you learn how to:
 > [!div class="checklist"]
 > * Create a new Git repo
 
-## Video tutorial
-
-The following video explains what Git repos are, and shows you how to create them on your computer using Visual Studio 2015 Update 2.
-
-<iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Create-a-Git-repo-in-Visual-Studio-2015/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe>
-
-> [!TIP]
-> Working from the command line? You can view our video overview using command line steps on [Channel9](https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Create-a-repo-from-the-command-line).
-
 ## Create a new repo
 
 Manage any folder with source code or Visual Studio solution in Git by creating a repo for them. 
@@ -75,6 +66,7 @@ another remote Git repository.
    ![Creating a new local Git repository in Visual Studio Team Explorer](media/CreateNewRepoVS.png)</ol>
 
 <a name="remotes"></a>
+
 ### Connect a local repo to a remote
 
 To connect a local repository to a hosted remote Git repository to share your work, go the **Settings** page in Team Explorer. Select **Repository Settings**.
