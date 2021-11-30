@@ -25,7 +25,7 @@ If you already have an app in GitHub that you want to deploy, you can try creati
 However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
 
 ```
-https://github.com/Azure-Samples/php-docs-hello-world
+https://github.com/Azure-Samples/basic-php-composer
 ```
 
 ## Create an Azure App Service
