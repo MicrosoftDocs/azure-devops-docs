@@ -74,18 +74,6 @@ Learn how to create tests plans and test cases, and run them using the Azure Dev
     :::column-end:::
 :::row-end:::
 
-## Videos 
-
-<br/>
-
-> [!VIDEO https://www.youtube.com/embed/u-fdqhxonPc/player]
-
-
-<br/>
-
-> [!VIDEO https://www.youtube.com/embed/sxsG3jqNWkc/player]  
- 
- 
 
 ## Manual testing from the Kanban board
 
