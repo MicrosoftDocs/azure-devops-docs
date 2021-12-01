@@ -1,7 +1,7 @@
 ---
-title: Understand what you get with Azure Boards to manage your software development projects  
+title: What is Azure Boards? Tools to manage software development projects.  
 titleSuffix: Azure Boards
-description: Learn about the main features and functions supported by Azure Boards. 
+description: Learn about the Agile tools Azure Boards provides. 
 ms.custom: boards-get-started
 ms.technology: devops-new-user
 ms.assetid:  
@@ -18,11 +18,11 @@ ms.date: 11/30/2021
 
 Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. It provides a rich set of capabilities including native support for Agile, Scrum, and Kanban processes, calendar views, configurable dashboards, and integrated reporting. These tools scale as your business grows. 
   
-Quickly and easily track user stories, backlog items, task, features, and bugs associated with your project. Track work by adding work items based on the process and work item types available to your project. An example of one of the Azure Boards tools is the Kanban board as shown in the following image. 
-
-
+Quickly and easily track user stories, backlog items, task, features, and bugs associated with your project. One of the mail Azure Boards tools is the Kanban board as shown in the following image. 
+ 
 :::image type="content" source="media/about-boards/intro-boards.png" alt-text="Screenshot of Azure Boards Hub Pages, Kanban Board":::
 
+If you're ready to start using Azure Boards, see [Sign up for free and invite others to collaborate in Azure Boards](sign-up-invite-teammates.md). Need more information? See [Reasons to use Azure Boards to plan and track your work](/why-use-azure-boards.md). 
 
 > [!NOTE]  
 > This article applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Most of the information is valid for earlier on-premises versions. However, images show only examples for the latest version.  
@@ -45,7 +45,6 @@ Use the [**Work items**](../work-items/view-add-work-items.md) hub to quickly fi
 :::image type="content" source="../work-items/media/view-add/work-items-hub-new.png" alt-text="Screenshot of Azure Boards, Work Items"::: 
 
 ### Kanban boards for adding and updating product and portfolio items
- 
 
 Use the [**Boards**](../boards/kanban-quickstart.md) hub to view work items as cards and perform quick status updates through drag-and-drop. The feature is similar to sticky notes on a physical whiteboard. Use to implement Kanban practices and visualize the flow of work for a team.
 

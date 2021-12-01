@@ -66,13 +66,6 @@
     href: ../backlogs/delete-test-artifacts.md
   - name: Use work item templates
     href: ../backlogs/work-item-template.md
-- name: Configure & customize
-  items:
-  - name: Change column options
-    href: ../backlogs/set-column-options.md
-    displayName: sort, persistence
-  - name: Set the Work Items experience (Visual Studio)
-    href: set-work-item-experience-vs.md
 - name: Samples
   items:
   - name: Sample work item templates
