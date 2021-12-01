@@ -16,6 +16,12 @@
   href: get-started/toc.yml
 - name: Basic concepts 
   items:
+  - name: "Backlogs, boards, & plans"
+    href: backlogs/backlogs-boards-plans.md
+    displayname: In Progress, Rollup, Taskboard
+  - name: Best tool for the job
+    href: work-items/best-tool-add-update-link-work-items.md
+    displayName: backlogs, boards, office integration, marketplace extensions, work items
   - name: Agile glossary
     href: ./work-items/agile-glossary.md
     displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
@@ -24,28 +30,10 @@
     displayname: agile, basic, scrum, cmmi, test
   - name: About work items
     href: work-items/about-work-items.md
-    displayname: user stories, issues, bugs, features, epics, backlog items, requirements, assign, web portal, cients
-  - name: Manage requirements
-    href: ../cross-service/manage-requirements.md 
-    displayName: track status, requirements, analyze and prioritize, monitor, report, work item fields, work item types, burndown, team velocity
-  - name: Manage process templates
-    href: work-items/guidance/manage-process-templates.md
-    displayName: templates
-  - name: "Backlogs, boards, & plans"
-    href: backlogs/backlogs-boards-plans.md
-    displayname: In Progress, Rollup, Taskboard
-  - name: "About teams & Agile tools"
-    href: ../organizations/settings/about-teams-and-settings.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
-    displayName: default team, default area path, iteration path, sprint backlogs, working days, product backlog, task boards, team groups
+    displayname: user stories, issues, bugs, features, epics, backlog items, requirements, assign, web portal, cient
   - name: "Area & iteration paths"
     href: ../organizations/settings/about-areas-iterations.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
     displayName: classification nodes, iteration paths, reserved names, special characters
-  - name: Best tool for the job
-    href: work-items/best-tool-add-update-link-work-items.md
-    displayName: backlogs, boards, office integration, marketplace extensions, work items
-  - name: Quick guide to default permissions & access
-    href: ./get-started/permissions-access-boards.md
-    displayname: security, features, stakeholder access
   - name: Workflow states & categories
     href: ./work-items/workflow-and-state-categories.md
     displayName: auto complete, pull requests
@@ -60,6 +48,9 @@
     displayName: customize, migrate, import
   - name: Permissions & access
     items:
+    - name: Quick guide to default permissions & access
+      href: ./get-started/permissions-access-boards.md
+      displayname: security, features, stakeholder access
     - name: Default permissions & access (Security)
       href: ../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
       displayName: team administrator, administrator, access
@@ -69,9 +60,9 @@
     - name: Grant or restrict permissions to select tasks
       href: ../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
       displayName: restrict access, visibility, closed work
-- name: Configure and customize 
+- name: Configure & customize 
   items:
-  - name: Configure and customize  
+  - name: Configure & customize  
     href: configure-customize.md
     displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy, rollup, calendar, time
   - name: Define area paths & assign to a team 
@@ -88,10 +79,11 @@
     displayName: sort, persistence
   - name: Filter backlogs, boards, queries, and plans
     href: backlogs/filter-backlogs-boards-plans.md  
-  - name: Set the Work Items experience (Visual Studio)
-    href: work-items/set-work-item-experience-vs.md
   - name: Add & manage teams
     items:
+    - name: "About teams & Agile tools"
+      href: ../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+      displayName: default team, default area path, iteration path, sprint backlogs, working days, product backlog, task boards, team groups
     - name: Add a team
       href: ../organizations/settings/add-teams.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
     - name: Add a team administrator
@@ -103,6 +95,11 @@
     - name: Configure team tools
       href: ../organizations/settings/manage-teams.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
       displayName: team dashboard, backlog, team name, notifications
+  - name: Set the Work Items experience (Visual Studio)
+    href: work-items/set-work-item-experience-vs.md
+  - name: Manage process templates
+    href: work-items/guidance/manage-process-templates.md
+    displayName: templates
   - name: Configure a project portal
     href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
     displayName: SharePoint
