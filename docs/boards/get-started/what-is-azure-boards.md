@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 11/30/2021
+ms.date: 12/01/2021
 ---
 
 # What is Azure Boards?
@@ -29,18 +29,18 @@ If you're ready to start using Azure Boards, see [Sign up for free and invite ot
  
 ## Track user stories, bugs, features, and epics  
 
-Track various types of work using the default work item types&mdash;such as user stories, bugs, features, and epics. Or, customize these types or create your own. Each work item form provides a standard set of system fields and controls, including **Discussion** for adding and tracking comments, **History**, **Links**, and **Attachments**. The **Deployment**, **Development**, and **Related Work** controls facilitate tracking when code is released or changed, and relationships between work items. 
+Track various types of work using the default work item types&mdash;such as user stories, bugs, features, and epics. Or, customize these types or create your own. Each work item form provides a standard set of system fields and controls, including **Discussion** for adding and tracking comments, **History**, **Links**, and **Attachments**. The **Deployment**, **Development**, and **Related Work** controls support tracking when code is released or changed, and relationships between work items. 
 
 :::image type="content" source="media/about-boards/work-item-form.png" alt-text="Screenshot of Azure Boards Work Item Form, User Story":::
 
 
 ## Use interactive backlogs, boards, lists, and calendar views  
 
-Azure Boards provides several hubs, each providing a set of interactive tools. Each tool provides a filtered set of work items, filtered based on a team, logged in user, or custom filters. Most tools support adding and updating work items. To learn more about effective use of these tools, see [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md).   
+Azure Boards provides several hubs, each providing a set of interactive tools. Each tool provides a filtered set of work items. Most tools support adding and updating work items. To learn more about effective use of these tools, see [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md).   
 
 ### Open Work Items for personalized filtered lists
 
-Use the [**Work items**](../work-items/view-add-work-items.md) hub to quickly find work items that are assigned to you. Pivot or filter work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.
+Use the [**Work items**](../work-items/view-add-work-items.md) hub to quickly find work items that are assigned to you. Access various lists based on select criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.
 
 :::image type="content" source="../work-items/media/view-add/work-items-hub-new.png" alt-text="Screenshot of Azure Boards, Work Items"::: 
 
@@ -52,7 +52,7 @@ Use the [**Boards**](../boards/kanban-quickstart.md) hub to view work items as c
 
 ### Use Backlogs to add, prioritize, organize, and assign work 
 
-Use the [**Backlogs**](../backlogs/create-your-backlog.md) hub to view, plan, prioritize, and organize work items.  A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. 
+Use the [**Backlogs**](../backlogs/create-your-backlog.md) hub to view, plan, order, and organize work items.  A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group work under features and epics.  
 
 :::image type="content" source="media/about-boards/product-backlog.png" alt-text="Screenshot of Azure Boards, Product Backlog":::   
 
@@ -66,7 +66,7 @@ Open the [**Sprints**](../sprints/assign-work-sprint.md) hub to access a team's 
 
 Access the [**Queries**](../queries/view-run-query.md) hub to generate custom lists of work items. Queries support the following tasks:
 - Find groups of work items with something in common.  
-- Triage work to organize, prioritize, or assign to a team member or sprint.  
+- Triage work to assign to a team member or sprint and set priorities.  
 - Perform bulk updates.
 - View dependencies or relationships between work items.
 - Create status and trend charts that you can optionally add to dashboards.  
@@ -157,14 +157,14 @@ With dashboards, teams can create customized views to gain visibility into their
 
 :::image type="content" source="media/about-boards/dashboard.png" alt-text="Screenshot of Azure Boards, Dashboards":::   
 
-In addition, you can use Power BI to create custom, complex reports based on custom queries of the Analytics service. The Analytics service is the reporting platform for Azure DevOps. It is optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects.
+Also, you can use Power BI to create custom, complex reports based on custom queries of the Analytics service. The Analytics service is the reporting platform for Azure DevOps. It is optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects.
 
 To learn more, see [About dashboards, charts, reports, & widgets](../../report/dashboards/overview.md) and [What is the Analytics service?](../../report/powerbi/what-is-analytics.md).
 
 
-## Gain visility through end-to-end traceability
+## Gain visibility through end-to-end traceability
 
-With Azure Boards you gain the advantage of full integration with the Azure DevOps platform. Azure DevOps is designed to provide end-to-end traceability, tracking work from requirements to deployment. You gain insight at each step of decisions made and the software deployed. Some of the traceability tasks supported include: 
+With Azure Boards, you gain the advantage of full integration with the Azure DevOps platform. Azure DevOps is designed to provide end-to-end traceability, tracking work from requirements to deployment. You gain insight at each step of decisions made and software deployed. Some of the traceability tasks supported include: 
  
 - Create a branch from a requirement
 - Create a pull request of updated branch
@@ -185,19 +185,7 @@ A team refers to a group of project members who work in a particular product are
 Boards, Backlogs, Sprints, and Delivery Plans rely on team configurations. For example, if you want to add a Kanban board or product backlog, you define a team. For more information on teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
 
 :::image type="content" source="../../organizations/settings/media/agile-tools/agile-tools-team-assets.png" alt-text="Conceptual image of team tools":::   
- 
 
-## Manage work across projects
-
-Most work is tracked within a project. However, many enterprises create several projects to support their business needs as described in [Plan your organizational structure](../..//user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json). 
-
-
-To track work across several projects, you can: 
-- [Create work item queries that list work items across projects](../queries/using-queries.md#across-projects)
-- [Gain visibility across teams](../plans/visibility-across-teams.md)
-
-
-## Access even more tools    
 
 Azure Boards works with your favorite tools. Integrate with [Microsoft Teams](../integrations/boards-teams.md) and [Slack](../integrations/boards-slack.md) to enable efficient ChatOps.
 
