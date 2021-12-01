@@ -23,11 +23,11 @@ When you [plan manual tests](create-a-test-plan.md) there are some sequences of 
 ## Create shared steps
 ::: moniker range=">=azure-devops-2020"
 
-1. Select **Test Plans** to view your test plans. Select **Mine** or **All** or **Filter** by title to find a particular test plan. Select the plan to see test cases.
+1. Select **Test Plans** to view your test plans. Select **Mine** or **All** or **Filter by title** to find a particular test plan. Select the plan to see test cases.
 
-1. Double click test case to edit it. Under **Steps**, select several steps and then select **Create Shared Steps**.
+1. Double click a test case to edit it. Under **Steps**, select several steps and then select the **Create shared steps** icon.
 
-1. In the **Create Shared Steps** dialog box, type a name for these shared step, and then select **Create**.
+1. In the **Create shared steps** dialog box, type a name for these shared step, and then select **Create**.
 
    ![Screenshot shows the Create Shared Steps dialog box with a name entered.](media/shared-steps/create-shared-steps-name.png)  
   
