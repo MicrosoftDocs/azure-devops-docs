@@ -21,35 +21,30 @@ View the status of your planned testing using an out-of-the-box Progress Report 
 ## Track testing progress
 ::: moniker range=">=azure-devops-2020"
 
-Use test results charts to track how your testing is going. 
+Use test results charts to track how your testing is going.
 Choose from a fixed set of pre-populated fields related to results.
-By default, a pie chart is created for each test plan. 
-This chart is grouped by the outcome field to show the latest results
-for all the tests in the test plan.
 
-View this default chart from the Charts page.
+Add your own charts for test results to visualize what's important for your team.
+If you already know how to add a chart, jump to the [examples](#TestResultsExamples) below of charts that you can create.
 
-![Select test plan. Go to Charts page to view default chart](media/track-test-status/DefaultChart.png)
+1. Select **Test Plans** to open the **Test Plans** page. Select a test plan to open it, then select the **Charts** tab.
 
-Add your own charts for test results to visualize what's important 
-for your team. If you already know how to add a chart, jump to the 
-[examples](#TestResultsExamples) below of charts that you can create.
+1. Under **Charts**, select **New** > **New test result chart**.
 
-1. Select the test plan or test suite for your chart in the 
-   Test Plans page. Then create a new chart.
+   ![Screenshot show the Charts page with New, then New test result chart selected.](media/track-test-status/new-test-result-chart.png)
 
-   ![On the Charts page; click New. Select New Test Result Chart](media/track-test-status/NewTestResultChart.png)
+1. Select the chart type, in this example, a pie chart.
+   Based on the chart, configure the fields that you want to use to group by, or for the rows and columns.
 
-1. Select the chart type. Based on the chart, configure the 
-   fields that you want to use to group by, or for the rows and columns.
+   ![Screenshot of the Configure Chart dialog box where you can enter chart type, name, and other settings.](media/track-test-status/configure-pie-chart.png)
 
-   ![Name your chart. Select the field values. To save, click OK](media/track-test-status/ConfigureChart.png)
+   All charts roll up the information for any child test suites of the test plan or test suite that you selected.
 
-   All charts roll up the information for any child test suites 
-   of the test plan or test suite that you selected.
+1. Select **OK** to save the chart.
+   The chart is displayed in the **Charts** page for your test plan or test suite.
 
-1. Save the chart. Now it will be displayed in the Charts page 
-   for the test plan or test suite that you selected.
+   ![Screenshot shows the Charts page with the new chart displayed.](media/track-test-status/display-pie-chart.png)
+
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
@@ -89,55 +84,61 @@ for your team. If you already know how to add a chart, jump to the
 ## Test results examples
 ::: moniker range=">=azure-devops-2020"
 
-**What's the test status for a specific test suite?**
+### Check test status for a test suite
 
-Select the test suite from the Test Plans page and add 
-a test results pie chart. Group by **Outcome**.
+You can check the test status for a specific test suite.
 
-![On the chart page, choose New test result chart; choose Pie chart. In Group By, select Outcome](media/track-test-status/ExampleOutcome.png)
+Select **Test Plans** to open the **Test Plans** page, and then select a plan to view a test suite.
+Select **New** > **New test result chart** to create a test results pie chart.
+Group by **Outcome**.
 
-**What's the test status for user stories that my team's testing this sprint?**
+![Screenshot shows the Configure chart dialog box with Pie and Outcome selected.](media/track-test-status/configure-pie-chart.png)
 
-If you have created requirement-based test suites in your test
-plan for your user stories, you can create a chart for this.
+### Check status for user stories per sprint
 
-1. Group these requirement-based test suites together 
-   in a static test suite.
+If you created requirement-based test suites in your test plan for your user stories, you can create a chart to review status for user stories that your team is testing in the current sprint.
 
-1. Select this static test suite in the Test Plans page.
+Create a static test suite that groups your requirement-based test suites together.
+Select that static test suite in the **Test Plans** page.
+Add a test results stacked bar chart.
 
-1. Add a test results stacked bar chart. Choose **Suite** 
-   as the Y-axis (rows) pivot and **Outcome** as the Group by (columns) pivot.
+Specify **Suite** as the **Y-axis** and **Outcome** as **Group by**.
 
-   ![For Rows, select Suite. For Columns, select Outcome. To save, click OK](media/track-test-status/ExampleUserStories.png)
+![Screenshot shows a stacked bar chart for a user story with Suite and Outcome selected.](media/track-test-status/user-story-stacked-bar-chart.png)
 
-**How many tests has each tester left to run?**
+### Check tests for each tester
 
-Select your test plan from the Test Plans page and add a test 
-results pivot table chart. Choose **Tester** as the rows pivot and
-**Outcome** as the columns pivot.
+You can check how many tests has each tester left to run.
 
-![For Rows, select Tester. For Columns, select Outcome. To save, click OK](media/track-test-status/ExampleTesterTestsLeft.png)
+Select your test plan in the **Test Plans** page and add a test results pivot table chart.
+Choose **Tester** as **Rows** and **Outcome** as **Columns** pivot.
 
-**How can I check quality based on the configuration?**
+![Screenshot shows a pivot table with Tester and Outcome selected.](media/track-test-status/tester-tests-left.png)
 
-Use either a stacked bar chart or a pivot table chart. 
-Choose **Configuration** as the rows pivot and **Outcome** as 
-the columns pivot.
+### Check quality based on the configuration
 
-**How can I track why tests are failing for my team?**
+Use either a stacked bar chart or a pivot table chart.
+Specify **Configuration** and **Outcome** as pivots.
 
-For failure analysis, use either a stacked bar chart 
-or a pivot table chart. Choose **Tester** for the rows 
-and **Failure type** for the columns. (Failure type for 
-test results can only be set using Microsoft Test Manager.)
+### Track why tests are failing
 
-**How can I track the resolution for failing tests for my team?**
+You can track why tests are failing for your team.
 
-For resolution analysis, use either a stacked bar chart 
-or a pivot table chart. Choose **Tester** for the rows and 
-**Resolution** for the columns. (Resolution type for test 
-results can only be set using Microsoft Test Manager.)
+For failure analysis, use either a stacked bar chart or a pivot table chart.
+Select **Tester** and **Failure type**.
+
+> [!NOTE]
+> Failure type for test results can only be set using Microsoft Test Manager.
+
+### Track resolutions for failing tests
+
+You can track the resolution for failing tests for your team.
+
+For resolution analysis, use either a stacked bar chart or a pivot table chart.
+Choose **Tester** and **Resolution**.
+
+> [!NOTE]
+> Resolution type for test results can only be set using Microsoft Test Manager.
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
@@ -196,39 +197,33 @@ results can only be set using Microsoft Test Manager.)
 ## Track test case status
 ::: moniker range=">=azure-devops-2020"
 
-Use test case charts to find out the progress of your 
-test case authoring. The charts for test cases give 
-you the flexibility to report on columns that you add 
-to the tests page. By default, test case fields are not 
-added to the view in the tests page.
+Use test case charts to find out the progress of your test case authoring.
+The charts for test cases give you the flexibility to report on columns that you add to the tests page.
+By default, test case fields are not added to the view in the tests page.
 
-If you already know how to add a chart, jump to the
-[examples](#ExamplesTestCase) below of charts that you can 
-create for test cases.
+If you already know how to add a chart, jump to the [examples](#ExamplesTestCase) below of charts that you can create for test cases.
 
-1. Add any fields you want to use for your test case chart 
-   from the tests page with Column options. Then the fields will 
-   appear as choices in the drop-down lists for grouping for 
-   your test case charts.
+1. From the **Define** or **Execute** tabs, add any fields you want to use for your test case chart by using  **Column Options**.
+   Those fields appear as choices in the lists for grouping for your test case charts.
 
-1. Select the test plan or test suite for your chart in 
-   the Test Plans page. Then add a test case chart.
+1. Select the test plan or test suite for your chart in the **Test Plans** page.
+   Select **New** > **New test case chart**.
 
-   ![Select test suite; Charts page; New test case chart](media/track-test-status/NewTestCaseChart.png)
+   ![Screenshot show the Charts page with New, then New test result chart selected.](media/track-test-status/new-test-case-chart.png)
 
    All charts roll up the information for any child test suites 
    of the test plan or test suite that you selected.
 
-1. Select the chart type. Based on the chart, configure the 
-   fields that you want to use to group by, for rows and columns,
-   or the range (trend charts only).
+1. Select the chart type. 
+   Based on the chart, configure the fields that you want to use to group by, for rows and columns,
+   or the range for trend charts.
 
-   ![Choose the chart type; choose the fields for the chart](media/track-test-status/ConfigureChart2.png)
+   ![Screenshot shows the Configure chart dialog box where you can select a chart type and other values.](media/track-test-status/configure-chart-values.png)
 
    You can't group by test suite for the test case charts.
 
-1. Save the chart. Now it will be displayed in the charts 
-   page for the test plan or test suite that you selected.
+1. Select **OK** to save the chart.
+   The chart is displayed in the **Charts** page for your test plan or test suite.
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
@@ -273,45 +268,51 @@ create for test cases.
 ## Test case examples
 ::: moniker range=">=azure-devops-2020"
 
-**How can I view the recent test results for an individual test case?**
+These examples show common ways to interact with test case results.
 
-Select the test case within a test suite and then choose to view the test details pane.
+### View recent test results
 
-![From test suite, select test case. On toolbar, click test details icon to view the test details pane](media/track-test-status/ShowDetailsPane.png)
+You can view the recent test results for an individual test case.
+
+Select the **Execute** tab in a test suite and then select a test case. Select **More options** or right-click to open the context menu. Select **View test result**.
+
+![Screenshot shows the context menu for a test case, with the View test result option selected.](media/track-test-status/view-test-result-option.png)
 
 View the recent test results for this test case.
 
-![In test details pane, open the Pane list, choose Test Results](media/track-test-status/TestResultsPane.png)
+![Screenshot shows the Test Runs pane with information about individual test run.](media/track-test-status/test-case-results.png)
 
-**How can I track burn down for test case creation?**
+### Track burn down by using a stacked area chart
 
-Use a stacked area trend chart to view the burn down for 
-how many test cases are ready to be run. Choose **State** 
-for the stack by field and **Ascending** for the sort field.
+You can track burn down for test case creation.
 
-![Create a stacked area chart: For Stack By, choose State, then sort by ascending value](media/track-test-status/ExampleBurndownReadiness.png)
+Create a stacked area trend chart to view the burn down for how many test cases are ready to be run.
+Select **State** for the stack by field and **Ascending** for the sort field.
 
-**How can I track burn down for automation status?**
+![Screenshot shows a stacked area chart with State and ascending value selected.](media/track-test-status/burn-down-stacked-area-chart.png)
 
-Use a stacked area trend chart to view the burn down 
-for how many test cases have been automated. Choose 
-**Automation status** for the stack by field and **Ascending** 
-for the sort field.
+You can track burn down for automation status.
 
-**If multiple teams own test cases in my test plan, can I see how many each team owns and the priorities of the tests?**
+Use a stacked area trend chart to view the burn down for how many test cases have been automated.
+Select **Automation status** for the **Stack by** field and **Ascending** for the **Sort** field.
 
-If your teams are organized by area path, then you can use a 
-test case pie chart. Choose **Area path** for the group by field.
+### See test ownership and priorities
 
-If you want to know the priorities of these tests, then create 
-a stacked bar chart. Choose **Area path** for rows and **Priority**
-for the columns.
+If multiple teams own test cases in your test plan, you can see how many test cases each team owns and the priorities of the tests.
 
-**How can I track test creation status by team members?**
+If your teams are organized by area path, use a test case pie chart.
+Select **Area path** for **Group by**.
 
-Test case owners are tracked by the **Assigned to** field. 
-Use a stacked bar chart or a pivot table chart. Choose 
-**Assigned to** for rows and status for the columns.
+If you want to know the priorities of these tests, create a stacked bar chart.
+Select **Area path** for the **Y-axis** and **Priority** for **Group by**.
+
+### Track test creation status
+
+You can track test creation status for team members by creating a chart that includes the **Assigned to** value.
+Use a stacked bar chart or a pivot table chart.
+Select **Assigned to** for Y-axis or Rows.
+Select State for **Group by** or **Columns**.
+
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
