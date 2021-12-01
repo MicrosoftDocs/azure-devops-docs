@@ -38,7 +38,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | macOS X Catalina 10.15 | *macOS-10.15* | `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md) |
 | macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-10.14` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md) |
 
-The default **Agent Specification** for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Choosing a pool and agent in your pipeline](pools-queues.md#choosing-a-pool-and-agent-in-your-pipeline).
+The default agent image for classic build pipelines is *windows-2019*, and the default agent image for YAML build pipelines is `ubuntu-latest`. For more information, see [Choosing a pool and agent in your pipeline](pools-queues.md#choosing-a-pool-and-agent-in-your-pipeline).
 
 
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
