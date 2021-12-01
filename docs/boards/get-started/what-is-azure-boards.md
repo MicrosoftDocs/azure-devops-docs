@@ -20,11 +20,6 @@ With the Azure Boards web service, teams can manage their software projects. It 
   
 Quickly and easily track user stories, backlog items, task, features, and bugs associated with your project. Track work by adding work items based on the process and work item types available to your project. 
 
-### Video: Plan your work with Azure Boards
-
-> [!VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A105/player]
-
-
 > [!NOTE]  
 > This article applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Most of the guidance is valid for earlier on-premises versions. However, images show only examples for the latest versions. Also, the Basic process is only available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions. 
 

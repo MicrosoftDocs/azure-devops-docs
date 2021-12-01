@@ -161,9 +161,6 @@ The rest of the Git workflow, such as [sharing code](pushing.md) and [reviewing 
 
 Isolating work in branches makes it simple to change what you are working on by changing your current branch.
 
-## Video Overview
-
-<iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Branches/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
 
 ## How are Git branches created?
 

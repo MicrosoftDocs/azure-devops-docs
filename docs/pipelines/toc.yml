@@ -261,6 +261,9 @@
     - name: Reduce build time using caching
       href: release/caching.md
       displayName: caching, pipelines caching, cache
+    - name: Cache NuGet packages
+      href: artifacts/caching-nuget.md 
+      displayName: caching, cache
     - name: Configure build run numbers
       href: process/run-number.md
       displayName: build number, run number, tokens, variables,
