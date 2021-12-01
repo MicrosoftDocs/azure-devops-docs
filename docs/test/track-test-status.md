@@ -209,7 +209,7 @@ If you already know how to add a chart, jump to the [examples](#ExamplesTestCase
 1. Select the test plan or test suite for your chart in the **Test Plans** page.
    Select **New** > **New test case chart**.
 
-   ![Screenshot show the Charts page with New, then New test result chart selected.](media/track-test-status/new-test-case-chart.png)
+   ![Screenshot show the Charts page with New, then New test case chart selected.](media/track-test-status/new-test-case-chart.png)
 
    All charts roll up the information for any child test suites 
    of the test plan or test suite that you selected.
