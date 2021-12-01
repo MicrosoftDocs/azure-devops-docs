@@ -4953,7 +4953,7 @@
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/copying-and-cloning-test-suites-and-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
+      "redirect_url": "/azure/devops/test/copy-clone-test-items",
       "redirect_document_id": false
     },
     {
@@ -5238,7 +5238,7 @@
     },
     {
       "source_path": "docs/manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
+      "redirect_url": "/azure/devops/test/copy-clone-test-items",
       "redirect_document_id": false
     },
     {
@@ -10623,6 +10623,11 @@
     },
     {
       "source_path": "docs/work/customize/reference/apply-rule-work-item-field.md",
+      "redirect_url": "/azure/devops/organizations/settings/work/rule-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/xml/apply-rule-work-item-field.md",
       "redirect_url": "/azure/devops/organizations/settings/work/rule-reference",
       "redirect_document_id": false
     },
@@ -16983,7 +16988,7 @@
     },
     {
       "source_path": "docs/test/mtm/copying-and-cloning-test-suites-and-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
+      "redirect_url": "/azure/devops/test/copy-clone-test-items",
       "redirect_document_id": false
     },
     {
@@ -18283,6 +18288,11 @@
     {
       "source_path": "docs/repos/git/share-your-code-in-git-vs-2013.md",
       "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/multiple-merge-bases.md",
+      "redirect_url": "/azure/devops/repos/git/merging-with-squash#multiple-merge-bases",
       "redirect_document_id": false
     },
     {

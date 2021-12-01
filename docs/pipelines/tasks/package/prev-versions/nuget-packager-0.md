@@ -79,7 +79,17 @@ Select if you want to use the build number to version your package. If you selec
 <p>If you leave it empty, the package will be created in the same directory that contains the .csproj or .nuspec file.</p>
 </td>
 </tr>
-<tr><th style="text-align: center" colspan="2">Advanced</th></tr>
+</table>
+
+### Advanced options
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
 <tr>
 <td>Configuration to Package</td>
 <td>
@@ -102,9 +112,9 @@ Semicolon delimited list of properties used to build the package. For example, y
 
 [!INCLUDE [temp](../../includes/nuget-step-arguments.md)]
 
-[!INCLUDE [temp](../../includes/control-options-arguments.md)]
-
 </table>
+
+[!INCLUDE [temp](../../includes/control-options-arguments.md)]
 
 ## Examples
 

@@ -1,5 +1,5 @@
 ---
-title: Using Azure Boards work items to track user stories & more
+title: Use Azure Boards work items to track user stories & more
 titleSuffix: Azure Boards
 description: How to use Azure Boards work items to plan, track, & collaborate with others when developing software apps in Azure DevOps. 
 ms.custom: work-items, seodec18, contperf-fy20q4
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/18/2021
+ms.date: 11/07/2021
 ---
 
 # Track your work items in Azure Boards user stories, issues, bugs, features, and epics 
@@ -49,7 +49,7 @@ Use work items to track anything you need to track. Each work item represents an
 - [Assign a work item](#assign) to one and only one project member 
 - [Assign work items to a sprint](#assign-to-sprint) via the iteration path
 - [Link work items to other work items or Azure DevOps objects](#link) 
-- Perform [impromptu search or queries to find or list work items](#queries)  
+- Run [impromptu search or queries to find or list work items](#queries)  
 - [Capture and apply work item templates](#templates) to quickly fill in work item field
 - [Add and customize work item types](#customize)
 - [Modify work items](#permissions-access) 
@@ -65,7 +65,7 @@ Use work items to track anything you need to track. Each work item represents an
 - [Assign a work item](#assign) to one and only one project member 
 - [Assign work items to a sprint](#assign-to-sprint) via the iteration path
 - [Link work items to other work items or Azure DevOps objects](#link) 
-- Perform [impromptu search or queries to find or list work items](#queries)  
+- Run [impromptu search or queries to find or list work items](#queries)  
 - [Capture and apply work item templates](#templates) to quickly fill in work item field
 - [Add and customize work item types](#customize)
 - [Modify work items](#permissions-access) 
@@ -358,7 +358,7 @@ For a complete list of link types and supported features, see [Linking, traceabi
 
 ## Find or list work items 
 
-You can use the search box to do an impromptu search for finding specific work items based on select field criteria. Or, you can create a query to do a managed search, which lists work items based on your query criteria. With managed searches, you can do other tasks, such as a work items triage, creating a trend or status chart, adding to the dashboard, and more. 
+Use the search box to do an impromptu search for finding specific work items based on select field criteria. Or, create a query to do a managed search, which lists work items based on your query criteria. With managed searches, you can do other tasks, such as a work items triage, creating a trend or status chart, adding to the dashboard, and more. 
 
 To learn more, see these articles: 
 - [About managed queries](../queries/about-managed-queries.md) 

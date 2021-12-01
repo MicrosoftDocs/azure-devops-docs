@@ -455,7 +455,6 @@ The "All" branches policy is automatically added as the last policy in the evalu
 
 ## FAQ
 
-
 ### If I mark a run or a release to be retained indefinitely, does the retention policy still apply?
 
 No. Neither the pipeline's retention policy nor the maximum limits set by the administrator are applied when you mark an individual run or release to be retained indefinitely. It will remain until you stop retaining it indefinitely.
@@ -476,12 +475,15 @@ This could be for one of the following reasons:
 If you believe that the runs are no longer needed or if the releases have already been deleted, then you can manually delete the runs.
 
 ### How does 'minimum releases to keep' setting work?
+
 Minimum releases to keep are defined at stage level. It denotes that Azure DevOps will always retain the given number of last deployed releases for a stage even if the releases are out of retention period. A release will be considered under minimum releases to keep for a stage only when the deployment started on that stage. Both successful and failed deployments are considered. Releases pending approval are not considered.
 
 ### How is retention period decided when release is deployed to multiple stages having different retention period?
+
 Final retention period is decided by considering days to retain settings of all the stages on which release is deployed and taking max days to keep among them. Minimum releases to keep is governed at stage level and do not change based on release deployed to multiple stages or not. Retain associated artifacts will be applicable when release is deployed to a stage for which it is set true.
 
 ### I deleted a stage for which I have some old releases. What retention will be considered for this case?
+
 As the stage is deleted, so the stage level retention settings are not applicable now. Azure DevOps will fall back to project level default retention for such case.
 
 ### My organization requires us to retain builds and releases longer than what is allowed in the settings. How can I request a longer retention?
@@ -490,7 +492,7 @@ The only way to retain a run or a release longer than what is allowed through re
 
 ### I lost some runs. Is there a way to get them back?
 
-If you believe that you have lost runs due to a bug in the service, create a support ticket immediately to recover the lost information. If the runs were manually deleted more than a week earlier, it isn't possible to recover the lost runs. If the runs were deleted as expected due to a retention policy, it isn't possible to recover the lost runs. 
+If you believe that you have lost runs due to a bug in the service, create a support ticket immediately to recover the lost information. If a build definition was manually deleted more than a week earlier, it will not be possible to recover it. If the runs were deleted as expected due to a retention policy, it will not be possible to recover the lost runs. 
 
 
 ### How do I use the `Build.Cleanup` capability of agents?

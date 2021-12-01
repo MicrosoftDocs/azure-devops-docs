@@ -17,6 +17,7 @@ monikerRange: '>= tfs-2015'
 Use this task to build an Android app using Gradle and optionally start the emulator for unit tests.
 
 ## Deprecated
+
 **The Android Build task has been deprecated. Use the [Gradle](gradle.md) task instead.**
 
 ## Demands
@@ -26,7 +27,7 @@ The build agent must have the following capabilities:
 * Android SDK (with the version number you will build against)
 * Android Support Repository (if referenced by Gradle file)
 
-  ## Arguments
+## Arguments
 
 <table>
 <thead>
@@ -53,9 +54,18 @@ The build agent must have the following capabilities:
 <p>See <a href="https://docs.gradle.org/current/userguide/gradle_command_line.html" data-raw-source="[Gradle command line](https://docs.gradle.org/current/userguide/gradle_command_line.html)">Gradle command line</a>.</p>
 </td>
 </tr>
+</table>
+
+### Android Virtual Device (AVD) options
+
+<table>
+<table>
+<thead>
 <tr>
-<th style="text-align: center" colspan="2">Android Virtual Device (AVD) Options</th>
+<th>Argument</th>
+<th>Description</th>
 </tr>
+</thead>
 <tr>
 <td>Name
 </td>
@@ -97,8 +107,17 @@ Name of the AVD to be started or created.
 </td>
 </tr>
 <tr>
-<th style="text-align: center" colspan="2">Emulator Options</th>
+</table>
+
+### Emulator options
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
 </tr>
+</thead>
 <tr>
 <td>Start and Stop Android Emulator</td>
 <td>
@@ -131,14 +150,10 @@ Check if you want to start the emulator with no GUI (headless mode).
 Check if you want the AVD to be deleted upon completion.
 </td>
 </tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## Related tasks
 
-[Android Signing](android-signing.md)
+[Android signing](android-signing.md)
