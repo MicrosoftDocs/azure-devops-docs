@@ -54,7 +54,7 @@ Use the [**Boards**](../boards/kanban-quickstart.md) hub to view work items as c
 
 :::image type="content" source="media/about-boards/kanban-board.png" alt-text="Screenshot of Azure Boards, Kanban Board"::: 
 
-### Product and porfolio backlogs facilitate organizing and assigning work 
+### Product and portfolio backlogs facilitate organizing and assigning work 
 
 Use the [**Backlogs**](../backlogs/create-your-backlog.md) hub to view, prioritize, and organize work items.  A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. Use to plan and organize work.
 
@@ -85,7 +85,7 @@ With the [**Delivery Plans**](../plans/review-team-plans.md) hub, management tea
 :::image type="content" source="../plans/media/plans/intro-image.png" alt-text="Screenshot of Azure Boards, Delivery Plans":::   
  
 
-## Support for Agile, Scrum, and Kanban processes (sprints) 
+## Support for Agile, Scrum, and Kanban processes  
 
 
 ## Configurable dashboards and Power BI reports 
