@@ -26,10 +26,7 @@ Quickly and easily track user stories, backlog items, task, features, and bugs a
 
 > [!NOTE]  
 > This article applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Most of the information is valid for earlier on-premises versions. However, images show only examples for the latest version.  
-
-
-
-
+ 
 ## Track user stories, bugs, features, and epics  
 
 Track various types of work using the default work item types&mdash;such as user stories, bugs, features, and epics. Or, customize these types or create your own. Each work item form provides a standard set of system fields and controls, including **Discussion** for adding and tracking comments, **History**, **Links**, and **Attachments**. The **Deployment**, **Development**, and **Related Work** controls facilitate tracking when code is released or changed, and relationships between work items. 
@@ -37,7 +34,7 @@ Track various types of work using the default work item types&mdash;such as user
 :::image type="content" source="media/about-boards/work-item-form.png" alt-text="Screenshot of Azure Boards Work Item Form, User Story":::
 
 
-## Interactive backlogs, boards, calendar views, and lists  
+## Interactive backlogs, boards, lists, and calendar views  
 
 Azure Boards provides several hubs, each providing a set of interactive tools. Each tool provides a filtered set of work items, filtered based on a team, logged in user, or custom filters. Most tools support adding and updating work items. To learn more about effective use of these tools, see [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md).   
 
@@ -56,7 +53,7 @@ Use the [**Boards**](../boards/kanban-quickstart.md) hub to view work items as c
 
 ### Product and portfolio backlogs facilitate organizing and assigning work 
 
-Use the [**Backlogs**](../backlogs/create-your-backlog.md) hub to view, prioritize, and organize work items.  A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. Use to plan and organize work.
+Use the [**Backlogs**](../backlogs/create-your-backlog.md) hub to view, plan, prioritize, and organize work items.  A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. 
 
 :::image type="content" source="media/about-boards/product-backlog.png" alt-text="Screenshot of Azure Boards, Product Backlog":::   
 
@@ -70,14 +67,19 @@ Open the [**Sprints**](../sprints/assign-work-sprint.md) hub to access a team's 
 ### Queries provide custom filtered work item lists and charts 
 
 Access the [**Queries**](../queries/view-run-query.md) hub to define filter critera using a query editor. Queries support the following tasks:
-	- Find groups of work items with something in common.
-	- List work items for the purposes of sharing with others or doing bulk updates. 
-	- Triage a set of items to organize or assign.
-	- Create status and trend charts that you then can add to dashboards.
+- Find groups of work items with something in common.  
+- List work items for the purposes of sharing with others or doing bulk updates.  
+- Triage a set of items to organize or assign.  
+- Create status and trend charts that you then can add to dashboards.  
+
+#### Backlog hierarchy 
 
 :::image type="content" source="media/about-boards/queries.png" alt-text="Screenshot of Azure Boards, Queries":::   
  
+#### Query charts
 
+:::image type="content" source="../../report/dashboards/media/charts/config-pie-chart-priority-qe.png" alt-text="Screenshot of Configure Chart, Flat list query":::    
+ 
 ### Delivery plans show calendar views and dependencies
 
 With the [**Delivery Plans**](../plans/review-team-plans.md) hub, management teams can view deliverables across several teams in a calendar view. Several teams can review and discuss their dependencies and deliverables.  
@@ -87,6 +89,49 @@ With the [**Delivery Plans**](../plans/review-team-plans.md) hub, management tea
 
 ## Support for Agile, Scrum, and Kanban processes  
 
+Azure Boards is designed to support the following software development processes through the default process models selected for a project:  
+ 
+
+:::row:::
+   :::column span="2":::
+   [**Basic**](../get-started/plan-track-work.md) provides the simplest model that tracks work through Issues, Tasks, and Epics. 
+   :::column-end:::
+   :::column span="2":::
+   ![Basic work item types](../get-started/media/about-boards/basic-process-epics-issues-tasks-2.png)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   [**Agile**](../work-items/guidance/agile-process.md) supports Agile planning methods (learn more about Agile methodologies at the
+   [Agile Alliance](https://www.agilealliance.org/)), including Scrum,
+   and tracks development and test activities separately. This process works great if you want to track user stories and
+   (optionally) bugs on the Kanban board, or track bugs and tasks on the taskboard.  
+   :::column-end:::
+   :::column span="2":::
+   ![Agile work item types](../work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+   [**Scrum**](../work-items/guidance/scrum-process.md) tracks work using product backlog items (PBIs) and
+   bugs on the Kanban board, or break down PBIs and bugs into tasks on the taskboard.
+   
+   This process supports the Scrum methodology as defined by the [Scrum organization](https://www.scrum.org/)
+   :::column-end:::
+   :::column span="2":::
+   ![Scrum work item types](../work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)
+   :::column-end:::
+:::row-end:::
+:::row::: 
+   :::column span="2":::
+   [**Capability Maturity Model Integration** (CMMI)](../work-items/guidance/cmmi-process.md) supports a framework for process improvement and an auditable record of decisions. With this process, you can track requirements, change requests, risks, and reviews.
+   This process supports [formal change management activities](../work-items/guidance/cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts). 
+   :::column-end:::
+   :::column span="2":::
+   ![CMMI work item types](../work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png)
+   :::column-end:::
+  :::row-end:::
+ 
 
 ## Configurable dashboards and Power BI reports 
 
