@@ -1,7 +1,7 @@
 ---
-title: Index of default and system work item fields 
+title: Learn default and system work item field descriptions
 titleSuffix: Azure Boards
-description: Index to all fields used in the Agile, Scrum, and CMMI processes/process templates for Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Learn about all fields used in the Agile and Scrum processes and process templates for Azure Boards and Azure DevOps.
 ms.custom: work-items
 ms.technology: devops-agile
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 07/09/2020
+ms.date: 11/07/2020
 ---
 
-# Work item field index  
+# Field descriptions for default and work item fields used in process templates
 
 [!INCLUDE [temp](../../includes/version-all.md)]
 
@@ -20,19 +20,19 @@ Use this index to look up a description of each field used to track work items. 
 
 ::: moniker range="azure-devops"  
 
-To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md). 
+To support other tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md). 
 
 ::: moniker-end  
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"  
 
-To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md) using the Inheritance process model, or if your project collection is configured to use the On-premises XML process model, then see [Modify or add a custom field](../../../reference/add-modify-field.md).  
+To support other tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md) using the Inheritance process model, or if your project collection is configured to use the On-premises XML process model, then see [Modify or add a custom field](../../../reference/add-modify-field.md).  
 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2018"  
 
-To support additional tracking needs, you can [modify or add a custom field](../../../reference/add-modify-field.md). 
+To support other tracking needs, you can [modify or add a custom field](../../../reference/add-modify-field.md). 
 
 ::: moniker-end  
 
@@ -46,7 +46,7 @@ To support additional tracking needs, you can [modify or add a custom field](../
 
 ## Alphabetical index 
 
-Values in parenthesis indicate the following:
+Values in parenthesis indicate the following criteria:
 
 - **System**: Core system field assigned to all work item types for all processes  
 - **Agile**: Used only by the [Agile process](agile-process.md)  
@@ -244,12 +244,12 @@ Values in parenthesis indicate the following:
 > 3. These fields are available from Azure DevOps Services and Azure DevOps Server 2020.
 > 4. These fields are available from Azure DevOps Services only.
 
-By using the system fields or other fields you have added to your project collection, you can enable meaningful cross-project reports and queries. In addition, any non-system field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any non-system field that you might want to use to generate a query or report in the **FIELDS** section.  
+By using the system fields or other fields you've added to your project collection, you can enable meaningful cross-project reports and queries. Also, any non-system field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any non-system field that you might want to use to generate a query or report in the **FIELDS** section.  
 
 
-## Field reference topics 
+## Field reference articles 
 
-The following articles describe fields that are used in common by several WITs, or those that are functionally specific to just one or a few WITs.  
+The following articles describe fields that are used in common by several WITs, or those fields that are functionally specific to just one or a few WITs.  
 
 ### Fields common to many work types
 

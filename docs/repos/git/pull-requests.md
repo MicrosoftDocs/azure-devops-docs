@@ -679,10 +679,8 @@ You can attach files, including images, to your PR during or after creation. Sel
 ![Screenshot that shows attaching files to the P R description during creation.](media/pull-requests/attachment.png)
 
 ::: moniker-end
-
-::: moniker range=">=azure-devops-2019"
-
 <a name="change-the-target-branch-of-a-pull-request"></a>
+::: moniker range=">=azure-devops-2019"
 
 ## Change the target branch of an active pull request
 
@@ -725,8 +723,9 @@ For the email feature to work, your administrator for Azure DevOps Server must [
 
 - [View pull requests](view-pull-requests.md)
 - [Review pull requests](review-pull-requests.md)
-- [Pull request update notifications](pull-request-notifications.md)
 - [Complete pull requests](complete-pull-requests.md)
 - [Change the default branch](change-default-branch.md)
 - [Copy changes with cherry-pick](cherry-pick.md)
 - [About pull requests and permissions](about-pull-requests.md)
+<a name="multiple-merge-bases"></a>
+- [Multiple merge bases](merging-with-squash.md#multiple-merge-bases)
