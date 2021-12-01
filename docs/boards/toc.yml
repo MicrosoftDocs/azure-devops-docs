@@ -46,6 +46,8 @@
   - name: Work tracking limits
     href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
     displayName: customize, migrate, import
+  - name: Process guidance
+    href: work-items/guidance/toc.yml
   - name: Permissions & access
     items:
     - name: Quick guide to default permissions & access
@@ -100,11 +102,12 @@
   - name: Manage process templates
     href: work-items/guidance/manage-process-templates.md
     displayName: templates
-  - name: Configure a project portal
-    href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
-    displayName: SharePoint
-  - name: Configure process guidance
-    href: ../project/configure-or-redirect-process-guidance.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  - name: Project portal & process guidance
+    items:
+    - name: Configure or add a project portal
+      href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
+    - name: Configure or redirect process guidance
+      href: ../project/configure-or-redirect-process-guidance.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
 - name: Azure Boards & GitHub
   href: github/toc.yml
 - name: Work items
@@ -131,6 +134,8 @@
     displayname: release
   - name: Auto complete work items with pull requests
     href: work-items/auto-complete-work-items-pull-requests.md  
+  - name: Request and track feedback
+    href: ../project/feedback/toc.yml 
 - name: Boards & Kanban
   href: boards/toc.yml 
 - name: Backlogs
@@ -177,14 +182,6 @@
     - name: Resolve invalid links in an Excel tree list
       href: backlogs/office/resolve-excel-invalid-links-tree-list.md
       displayName: duplicate titles, disconnected, sorted tree, locked
-- name: Request and track feedback
-  href: ../project/feedback/toc.yml 
-- name: Project portal & process guidance
-  items:
-  - name: Configure or add a project portal
-    href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
-  - name: Configure or redirect process guidance
-    href: ../project/configure-or-redirect-process-guidance.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
 - name: Integrations & extensions
   href: extensions/toc.yml
 - name: Troubleshooting
@@ -199,86 +196,6 @@
   - name: Work item form caching
     href: ../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md  
     displayname: IndexDB, rule
-- name: Process guidance
-  items:
-  - name: Agile culture
-    href: ./plans/agile-culture.md
-    displayName: agile transformation, ship, DevOps
-  - name: Agile process guidance
-    href: work-items/guidance/agile-process.md
-    displayname: MSF
-  - name: Agile workflow
-    href: work-items/guidance/agile-process-workflow.md
-    displayName: discussion, map stories, track progress, kanban, taskboards
-  - name: Scrum process guidance
-    href: work-items/guidance/scrum-process.md
-    displayName: work item, azure boards, user stories, item types, links
-  - name: Scrum workflow
-    href: work-items/guidance/scrum-process-workflow.md
-    displayName: PBI, WITs, capture comments, map PBIs
-  - name: CMMI process  
-    items:
-    - name: CMMI process guidance
-      href: work-items/guidance/cmmi-process.md
-      displayname: Capability Maturity Model Integration 
-    - name: CMMI workflow
-      href: work-items/guidance/cmmi-process-workflow.md
-      displayname: requirements
-    - name: CMMI background
-      href: work-items/guidance/cmmi/guidance-background-to-cmmi.md
-      displayName: Capability Maturity Model Integration, Capability Maturity Model, CMM
-    - name: Project management
-      items:
-      - name: Project management
-        href: work-items/guidance/cmmi/guidance-project-management.md
-        displayName: Iterative development, agile software, waterfall, extreme programming, stakeholder
-      - name: Project activities
-        href: work-items/guidance/cmmi/guidance-project-activities.md
-        displayName: requirements models, storyboards, agile software
-      - name: Project inception
-        href: work-items/guidance/cmmi/guidance-project-inception.md
-        displayName: methodology, prioritize, development costs, scope-driven, date-driven
-      - name: Plan a project
-        href: work-items/guidance/cmmi/guidance-plan-a-project-cmmi.md
-        displayName: scope, schedule, budget, modeling requirements, requirements
-      - name: Manage change
-        href: work-items/guidance/cmmi/guidance-manage-change.md
-        displayName: change request, CMMI
-      - name: Manage risk
-        href: work-items/guidance/cmmi/guidance-manage-risks.md
-        displayName: SCAMPI, CMMI, risk work item, risk
-      - name: Iteration activities
-        href: work-items/guidance/cmmi/guidance-iteration-activities.md?
-        displayName: task execution, tests, builds
-      - name: Plan an iteration
-        href: work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi.md
-        displayName: requirements, work load, burndown
-      - name: Manage issues
-        href: work-items/guidance/cmmi/guidance-manage-issues-cmmi.md
-        displayName: SCAMPI, issues, action plan
-    - name: Engineering
-      items:
-      - name: Engineering
-        href: work-items/guidance/cmmi/guidance-engineering.md
-        displayName: MSF, engineering section
-      - name: Develop requirements 
-        href: work-items/guidance/cmmi/guidance-develop-requirements.md
-        displayName: vision statement, scenarios
-      - name: Arrange requirements into a product plan
-        href: work-items/guidance/cmmi/arrange-requirements-into-a-product-plan.md
-        displayName: customer requirements, features, decomposition
-      - name: Create a solution architecture
-        href: work-items/guidance/cmmi/guidance-create-solution-architecture.md
-        displayName: domain model, candidate group
-      - name: Implement development tasks
-        href: work-items/guidance/cmmi/guidance-implement-development-tasks.md
-        displayName: estimate, design review, complexity
-      - name: Build a product
-        href: work-items/guidance/cmmi/guidance-build-product.md
-        displayName: CMMI, SCAMPI
-      - name: Track bugs
-        href: work-items/guidance/cmmi/track-bugs.md
-        displayName: bugs, triage, unit tests
 - name: Field reference
   items:
   - name: Work item field index
