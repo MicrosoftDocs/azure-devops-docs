@@ -57,24 +57,22 @@ Choose the process that provides the best fit for your team.
 ::: moniker-end
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    
    **Basic**
 
    Choose [Basic](../../get-started/plan-track-work.md) when your team wants the simplest model that uses Issues, Tasks, and Epics to track work. 
-   > [!NOTE]  
-   > Basic is currently in a selective Preview for new users of Azure Boards only.
 
  Tasks support tracking Remaining Work.
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    
    ![Basic work item types](../../get-started/media/about-boards/basic-process-epics-issues-tasks-2.png)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    
    **Agile**
 
@@ -88,13 +86,13 @@ Choose the process that provides the best fit for your team.
  Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    
    ![Agile work item types](media/ALM_PT_Agile_WIT_Artifacts.png)
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
    
    **Scrum**
 
@@ -107,13 +105,13 @@ Choose the process that provides the best fit for your team.
    Tasks support tracking remaining work only.
 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    
    ![Scrum work item types](media/ALM_PT_Scrum_WIT_Artifacts.png)
    :::column-end:::
 :::row-end:::
 :::row::: 
-   :::column span="1":::
+   :::column span="2":::
    
    **CMMI**
 
@@ -126,7 +124,7 @@ Choose the process that provides the best fit for your team.
    Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
    
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
    
    ![CMMI work item types](media/ALM_PT_CMMI_WIT_Artifacts.png)
    :::column-end:::
