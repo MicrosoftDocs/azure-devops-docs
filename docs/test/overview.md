@@ -1,16 +1,16 @@
 ---
-title: Exploratory and manual testing overview
-description: Drive quality and collaboration throughout the development process with manual and exploratory testing capabilities
+title: What is Azure Test Plans? Manual, exploratory, and automated test tools. 
+description: Learn about the test tools and capabilities that Azure Test Plans provides to drive quality and collaboration throughout the development process. 
 ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.technology: devops-test
 ms.topic: overview
-ms.author: sdanie
-author: steved0x
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2015'
 ms.date: 09/14/2021
 ---
 
-# Exploratory and manual testing scenarios and capabilities
+# What is Azure Test Plans?  
 
 [!INCLUDE [version-header](includes/version-header.md)]
 
@@ -26,6 +26,48 @@ throughout the development process. The easy-to-use, browser-based
 test management solution provides all the capabilities required for 
 planned manual testing, user acceptance testing, exploratory testing,
 and gathering feedback from stakeholders.
+
+:::image type="content" source="media/overview/intro-test-pans.png" alt-text="Screenshot of Azure Test Plans, Test Plans, All":::
+
+> [!NOTE]  
+> This article applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Most of the information is valid for earlier on-premises versions, however, images show only examples for the latest version.  
+
+Azure Test Plans + Test & Feedback extensions 
+
+## Test tasks and access level overview 
+
+| Task                                           | Stakeholder | Basic | Basic +Test Plans |  
+|------------------------------------------------|-------------|--------|------------------|  
+|Provide feedback using the Test & Feedback extension |    ✔️       |  ✔️   |        ✔️       |  
+|Perform exploratory testing       |    ✔️       |  ✔️   |        ✔️       |  
+|Run tests                         |             |  ✔️   |        ✔️       |  
+|Create test plans and test suites |             |        |        ✔️       |  
+|Author test cases                 |             |        |        ✔️       |  
+ 
+What's included? 
+
+
+
+## Define, execute, chart progress of manual test plans and test suites 
+
+:::image type="content" source="media/overview/test-plan-define-execute-chart.png" alt-text="Screenshot of Azure Test Plans, Selected test plans":::
+
+
+## View progress reports
+
+:::image type="content" source="media/overview/progress-report.png" alt-text="Screenshot of Azure Test Plans, Progress Report hub":::
+
+## Manage shared parameters and the test cases they reference
+
+
+:::image type="content" source="media/overview/parameters.png" alt-text="Screenshot of Azure Test Plans, Parameters hub":::
+
+
+## Add and manage test configurations and variables
+
+
+:::image type="content" source="media/overview/configurations.png" alt-text="Screenshot of Azure Test Plans, Configurations hub":::
+
 
 * **[Planned manual testing](#manual-testing)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
 
