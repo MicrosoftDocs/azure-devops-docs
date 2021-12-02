@@ -82,6 +82,9 @@ for your team. If you already know how to add a chart, jump to the
 <a name="TestResultsExamples"></a>
 
 ## Test results examples
+
+This section includes examples of useful charts.
+
 ::: moniker range=">=azure-devops-2020"
 
 ### Check test status for a test suite
@@ -102,13 +105,13 @@ Create a static test suite that groups your requirement-based test suites togeth
 Select that static test suite in the **Test Plans** page.
 Add a test results stacked bar chart.
 
-Specify **Suite** as the **Y-axis** and **Outcome** as **Group by**.
+Select **Suite** as the **Y-axis** and **Outcome** as **Group by**.
 
 ![Screenshot shows a stacked bar chart for a user story with Suite and Outcome selected.](media/track-test-status/user-story-stacked-bar-chart.png)
 
 ### Check tests for each tester
 
-You can check how many tests has each tester left to run.
+You can check how many tests that each tester left to run.
 
 Select your test plan in the **Test Plans** page and add a test results pivot table chart.
 Choose **Tester** as **Rows** and **Outcome** as **Columns** pivot.
@@ -199,7 +202,7 @@ results can only be set using Microsoft Test Manager.)
 
 Use test case charts to find out the progress of your test case authoring.
 The charts for test cases give you the flexibility to report on columns that you add to the tests page.
-By default, test case fields are not added to the view in the tests page.
+By default, test case fields aren't added to the view in the tests page.
 
 If you already know how to add a chart, jump to the [examples](#ExamplesTestCase) below of charts that you can create for test cases.
 
@@ -207,7 +210,7 @@ If you already know how to add a chart, jump to the [examples](#ExamplesTestCase
    Those fields appear as choices in the lists for grouping for your test case charts.
 
 1. Select the test plan or test suite for your chart in the **Test Plans** page.
-   Select **New** > **New test case chart**.
+   Under **Charts**, Select **New** > **New test case chart**.
 
    ![Screenshot show the Charts page with New, then New test case chart selected.](media/track-test-status/new-test-case-chart.png)
 
@@ -310,8 +313,8 @@ Select **Area path** for the **Y-axis** and **Priority** for **Group by**.
 
 You can track test creation status for team members by creating a chart that includes the **Assigned to** value.
 Use a stacked bar chart or a pivot table chart.
-Select **Assigned to** for Y-axis or Rows.
-Select State for **Group by** or **Columns**.
+Select **Assigned to** for **Y-axis** or **Rows**.
+Select **State** for **Group by** or **Columns**.
 
 ::: moniker-end
 
@@ -363,15 +366,15 @@ Use a stacked bar chart or a pivot table chart. Choose
 ## Share charts on your team's dashboard
 ::: moniker range=">=azure-devops-2020"
 
-Pin a chart to your team's dashboard for all the team to view. 
+Pin a chart to your team's dashboard for all the team to view.
 Use the chart's context menu.
 
-![Open the chart](media/track-test-status/EditDeletePinChart.png)
+![Screenshot shows the chart context menu with Add to dashboard selected.](media/track-test-status/add-dashboard-chart.png)
 
-You can [configure the dashboard widget](../report/dashboards/widget-catalog.md)
-to show a range of chart types.
-You must be a team administrator to configure the dashboard widget, but team members with 
-Stakeholder access can view the charts on the dashboard. 
+You can [configure the dashboard widget](../report/dashboards/widget-catalog.md) to show a range of chart types.
+
+> [!NOTE]
+> You must be a team administrator to configure the dashboard widget, but team members with Stakeholder access can view the charts on the dashboard.
 ::: moniker-end
  
 ::: moniker range="<=azure-devops-2019"
