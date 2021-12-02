@@ -1,26 +1,30 @@
 ---
 title: Migrate your packages to Azure Artifacts
-description: Use a PowerShell Module to easily migrate your packages to an Azure Artifacts Feed
+description: Use a PowerShell to easily migrate your packages to an Azure Artifacts Feed
 ms.technology: devops-artifacts
 ms.reviewer: elbatk 
-ms.date: 07/18/2019
+ms.date: 12/02/2021
 monikerRange: 'azure-devops'
 ---
 
-# Migrate your packages to Azure Artifacts
+# Migrate NuGet packages to Azure Artifacts
 
-Using the AzureArtifactsPackageMigration PowerShell module, you can easily migrate your NuGet packages from MyGet. Future development will support migration from other packaging solutions and package types.
+Using the `AzureArtifactsPackageMigration` PowerShell module, you can easily migrate your NuGet packages to Azure Artifacts. In this article, you'll learn how to:
 
-> [!NOTE]
-> This does **not** remove the packages from your current package feed. It **copies** them to your Azure Artifacts feed and will not interfere with use of the source feed.
+> [!div class="checklist"]  
+> * Install PowerShell module.
+> * Connect to Azure Artifacts.
+> * Migrate NuGet packages.
 
 ## Prerequisites
 
-- [The NuGet CLI](/nuget/tools/nuget-exe-cli-reference)
-- [An Azure DevOps Services account](https://azure.microsoft.com/services/devops/)
-- [An Azure Artifacts feed](../get-started-nuget.md)
-- [A PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). A Personal Access Token to authenticate your feed.
-- [PowerShell](/powershell/scripting/install/installing-powershell). The AzureArtifactsPackageMigration module works with latest versions of PowerShell. With Windows, you need at least version 5.1. For Linux or Mac, you will need at least version 6.
+- [Install NuGet CLI](/nuget/tools/nuget-exe-cli-reference).
+- [Install PowerShell](/powershell/scripting/install/installing-powershell) version 5.1 or later for Windows and version 6 or later for Linux/Mac.
+- [A personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate your feed.
+- [Azure DevOps services account](https://azure.microsoft.com/services/devops/).
+- [Azure Artifacts feed](../get-started-nuget.md).
+
+
 
 ## Install and import the module
 
