@@ -9,7 +9,9 @@ monikerRange: 'azure-devops'
 
 # Migrate NuGet packages to Azure Artifacts
 
-Using the `AzureArtifactsPackageMigration` PowerShell module, you can easily migrate your NuGet packages to Azure Artifacts. In this article, you'll learn how to:
+Using the `AzureArtifactsPackageMigration` PowerShell module, you can easily migrate your NuGet packages to Azure Artifacts. This article will walk you through an example of migrating NuGet packages from MyGet to Azure Artifacts.
+
+In this article, you'll learn how to:
 
 > [!div class="checklist"]  
 > * Install PowerShell module.
@@ -55,7 +57,7 @@ Alternatively, you can also download the migration scripts from the [GitHub](htt
 
 To migrate your packages, you will need to get the package source URL for both the source and destination feeds. 
 
-### Connect to feed
+### Azure Artifacts set up
 
 1. Select **Artifacts** and then select your feed.
 
@@ -67,13 +69,19 @@ To migrate your packages, you will need to get the package source URL for both t
 
     :::image type="content" source="../media/nuget-project-setup.png" alt-text="Screenshot showing the instructions to set up a project.":::
 
-### Get NuGet URL
+### MyGet set up
 
-1. Log into your MyGet Account and navigate to the feed you want to migrate.
+1. Log in to your [MyGet](https://myget.org/) Account.
 
-2. Select **Feed Details**
+1. Navigate to the feed you want to migrate.
 
-3. Copy the **NuGet V3 feed URL**
+1. Select **Feed Details**.
+
+1. Select **Packages** and then copy the **NuGet V3 feed URL**. 
+
+```
+https://www.myget.org/F/<your-feed-name>/api/v3/index.json 
+```
 
 ## Run the migration
 
