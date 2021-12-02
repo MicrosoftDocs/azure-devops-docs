@@ -23,7 +23,7 @@ In this article, you'll learn how to:
 - [Install NuGet CLI](/nuget/tools/nuget-exe-cli-reference).
 - [Install PowerShell](/powershell/scripting/install/installing-powershell) version 5.1 or later for Windows and version 6 or later for Linux/Mac.
 - [A personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate your feed.
-- [Azure DevOps services account](https://azure.microsoft.com/services/devops/).
+- [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
 - [Azure Artifacts feed](../get-started-nuget.md).
 
 ## Install the PowerShell module
@@ -57,7 +57,7 @@ Alternatively, you can also download the migration scripts from the [GitHub](htt
 
 To migrate your packages, you will need to get the package source URL for both the source and destination feeds. 
 
-### Azure Artifacts set up
+### Azure Artifacts
 
 1. Select **Artifacts** and then select your feed.
 
@@ -69,7 +69,7 @@ To migrate your packages, you will need to get the package source URL for both t
 
     :::image type="content" source="../media/nuget-project-setup.png" alt-text="Screenshot showing the instructions to set up a project.":::
 
-### MyGet set up
+### MyGet
 
 1. Log in to your [MyGet](https://myget.org/) Account.
 
@@ -107,13 +107,8 @@ If your myget feed is private, you will need to create a password to authenticat
       Move-MyGetNuGetPackages -SourceIndexUrl '<MYGET_SOURCE_URL>' -DestinationIndexUrl '<ARTIFACTS_FEED_SOURCE_URL>' -DestinationPAT '<AZURE_DEVOPS_PAT>' -DestinationFeedName '<ARTIFACTS_FEED_NAME>' -Verbose
     ```
 
-> [!NOTE]
-> This module uses NuGet and your local environment to migrate packages. Depending on the size and amount of packages you are moving, this could take up to an hour or more.
+## Related articles
 
-## Next Steps
-
-For more information about NuGet packages in Azure Artifacts, see the [Get Started guide](../get-started-nuget.md)
-
-## Open source
-
-This module is open source [on GitHub](https://github.com/microsoft/azure-artifacts-migration). Feedback and contributions are welcome.
+- [Publish NuGet packages (CLI)](../nuget/publish.md)
+- [Publish packages to NuGet.org](../nuget/publish-to-nuget-org.md)
+- [NuGet.org upstream source](../nuget/upstream-sources.md)
