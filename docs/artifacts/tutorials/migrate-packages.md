@@ -24,20 +24,32 @@ Using the `AzureArtifactsPackageMigration` PowerShell module, you can easily mig
 - [Azure DevOps services account](https://azure.microsoft.com/services/devops/).
 - [Azure Artifacts feed](../get-started-nuget.md).
 
+## Install the PowerShell module
 
+### [Windows](#tab/Windows/)
 
-## Install and import the module
-
-1. In Windows, open a PowerShell Window, form Mac or Linux, open a terminal and run the `pwsh` command to start PowerShell. 
+1. Open an elevated PowerShell prompt window.
  
-2. Run the following commands to install the module and import it into your current session.
+1. Run the following commands to install the `AzureArtifactsPackageMigration` PowerShell module and import it into your current session.
+
+```PowerShell
+Install-Module -Name AzureArtifactsPackageMigration -Scope CurrentUser -Force
+Import-Module -Name AzureArtifactsPackageMigration
+```
+### [Linux/MacOS](#tab/Linux/)
+
+1. Open a terminal and run the `pwsh` command to start PowerShell. 
+ 
+1. Run the following commands to install the `AzureArtifactsPackageMigration` module and import it into your current session.
 
 ```PowerShell
 Install-Module -Name AzureArtifactsPackageMigration -Scope CurrentUser -Force
 Import-Module -Name AzureArtifactsPackageMigration
 ```
 
-Alternatively, you can download it from the [GitHub page](https://github.com/microsoft/azure-artifacts-migration).
+* * *
+
+Alternatively, you can also download the migration scripts from the [GitHub](https://github.com/microsoft/azure-artifacts-migration) repository.
 
 ## Collect URLs to transfer packages
 
