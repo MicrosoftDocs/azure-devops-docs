@@ -51,19 +51,23 @@ Import-Module -Name AzureArtifactsPackageMigration
 
 Alternatively, you can also download the migration scripts from the [GitHub](https://github.com/microsoft/azure-artifacts-migration) repository.
 
-## Collect URLs to transfer packages
+## Migration setup
 
-To migrate your packages, you will need the index URL to your source, and destination feeds. 
+To migrate your packages, you will need to get the package source URL for both the source and destination feeds. 
 
-### Get Azure Artifacts Index URL
+### Connect to feed
 
-You can easily copy the destination URL from the **Connect to feed** dialog box.
+1. Select **Artifacts** and then select your feed.
 
-<img alt="Go to Artifacts Home, Select Connect to Feed" src="../media/connect-to-feed-azure-devops-newnav.png" />
+1. Select **Connect to feed**.
 
-<img alt="Copy the index URL" src="../media/nuget-index-url.png" />
+    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to feed.":::
 
-### Get Index URL from MyGet
+1. Select **NuGet.exe** and then follow the instructions in the **Project setup** to set up your config file.
+
+    :::image type="content" source="../media/nuget-project-setup.png" alt-text="Screenshot showing the instructions to set up a project.":::
+
+### Get NuGet URL
 
 1. Log into your MyGet Account and navigate to the feed you want to migrate.
 
