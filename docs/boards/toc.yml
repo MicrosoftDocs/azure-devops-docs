@@ -64,7 +64,7 @@
       displayName: restrict access, visibility, closed work
 - name: Configure & customize 
   items:
-  - name: Configure & customize  
+  - name: Configure & customize guidance 
     href: configure-customize.md
     displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy, rollup, calendar, time
   - name: Define area paths & assign to a team 

@@ -126,7 +126,7 @@ Azure Boards is designed to support software development processes through the d
    (optionally) bugs on the Kanban board, or track bugs and tasks on the taskboard.  
    :::column-end:::
    :::column span="2":::
-   ![Agile work item types](../work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png)
+   :::image type="content" source="../work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png" alt-text="Agile work item types":::  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -137,7 +137,7 @@ Azure Boards is designed to support software development processes through the d
    This process supports the Scrum methodology as defined by the [Scrum organization](https://www.scrum.org/)
    :::column-end:::
    :::column span="2":::
-   ![Scrum work item types](../work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)
+   :::image type="content" source="../work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png" alt-text="Scrum work item types":::  
    :::column-end:::
 :::row-end:::
 :::row::: 
@@ -146,7 +146,7 @@ Azure Boards is designed to support software development processes through the d
    This process supports [formal change management activities](../work-items/guidance/cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts). 
    :::column-end:::
    :::column span="2":::
-   ![CMMI work item types](../work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png)
+   :::image type="content" source="../work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png" alt-text="CMMI work item types":::  
    :::column-end:::
   :::row-end:::
  
