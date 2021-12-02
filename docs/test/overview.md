@@ -7,7 +7,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'
-ms.date: 09/14/2021
+ms.date: 12/02/2021
 ---
 
 # What is Azure Test Plans?  
@@ -27,7 +27,7 @@ test management solution provides all the capabilities required for
 planned manual testing, user acceptance testing, exploratory testing,
 and gathering feedback from stakeholders.
 
-:::image type="content" source="media/overview/intro-test-pans.png" alt-text="Screenshot of Azure Test Plans, Test Plans, All":::
+:::image type="content" source="media/overview/intro-test-plans.png" alt-text="Screenshot of Azure Test Plans, Test Plans, All":::
 
 > [!NOTE]  
 > This article applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Most of the information is valid for earlier on-premises versions, however, images show only examples for the latest version.  
