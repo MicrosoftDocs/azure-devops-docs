@@ -12,7 +12,7 @@ ms.date: 12/02/2021
 
 # What is Azure Test Plans?  
 
-[!INCLUDE [version-header](includes/version-header.md)]
+**Azure Test Plans | Azure DevOps Server 2020**
 
 Quality is a vital aspect of software systems, and manual testing 
 and exploratory testing continue to be important techniques for maximizing this.
@@ -20,7 +20,7 @@ In today's software development processes,
 everybody in the team owns quality - including developers, managers, 
 product owners, user experience advocates, and more.
 
-Azure DevOps and TFS provide rich and powerful
+Azure Test Plans provides rich and powerful
 tools everyone in the team can use to drive quality and collaboration
 throughout the development process. The easy-to-use, browser-based 
 test management solution provides all the capabilities required for 
@@ -29,8 +29,19 @@ and gathering feedback from stakeholders.
 
 :::image type="content" source="media/overview/intro-test-plans.png" alt-text="Screenshot of Azure Test Plans, Test Plans, All":::
 
+<!--- Elements to discuss: 
+
+Dev Inner Loop – Unit Testing in Visual Studio IDE
+Testing in Continuous Integration (CI) and Release Management (RM) or Continuous Delivery
+Manual and exploratory Testing
+Load and Performance Testing
+Integration with 3rd party test services
+
+--> 
+
+
 > [!NOTE]  
-> This article applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Most of the information is valid for earlier on-premises versions, however, images show only examples for the latest version.  
+> This article applies to Azure DevOps Services and Azure DevOps Server 2020 and later versions. Most of the information is valid for earlier on-premises versions, however, images show only examples for the latest version. Also, the user interface changed significantly with the release of Azure DevOps Server 2020. For an overview of the new interface and supported capabilities, see [Navigate Test Plans](navigate-test-plans.md). 
 
 Azure Test Plans + Test & Feedback extensions 
 
@@ -38,47 +49,75 @@ Azure Test Plans + Test & Feedback extensions
 
 | Task                                           | Stakeholder | Basic | Basic +Test Plans |  
 |------------------------------------------------|-------------|--------|------------------|  
-|Provide feedback using the Test & Feedback extension |    ✔️       |  ✔️   |        ✔️       |  
+|Provide feedback using the<br/>Test & Feedback extension |    ✔️       |  ✔️   |        ✔️       |  
 |Perform exploratory testing       |    ✔️       |  ✔️   |        ✔️       |  
-|Run tests                         |             |  ✔️   |        ✔️       |  
+|Run manual and automated tests                         |             |  ✔️   |        ✔️       |  
 |Create test plans and test suites |             |        |        ✔️       |  
 |Author test cases                 |             |        |        ✔️       |  
  
-What's included? 
+ 
+## Test objects and artifacts 
+
+To support manual and automated testing, you add and group three main types of test-specific work item types: **Test Plans**, **Test Suites**, and **Test Cases**. To support sharing of various test steps and test parameters, you define **Shared Steps** and **Shared Parameters**. These objects are stored in the work tracking data store as specific types of work items. For a description of each of these test objects, see [Test objects and terms](test-objects-overview.md).
+
+:::image type="content" source="../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png" alt-text="Conceptual image of test management work item types":::
+
+## Manual and automated testing 
+
+
+- **[Planned manual testing](#manual-testing)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
+- **[User acceptance testing](#user-acceptance)**. Testing carried out by designated user acceptance testers to verify the value delivered meets customer requirements, while reusing the test artifacts created by engineering teams. 
+- **[Exploratory testing](#exploratory-testing)**. Testing carried out by development teams, including developers, testers, UX teams, product owners and more, by exploring the software systems without using test plans or test suites. 
+- **[Stakeholder feedback](#stakeholder-feedback)**. Testing carried out by stakeholders outside the development team, such as users from marketing and sales divisions.  
+
+![Holistic approach to manual testing, types of manual testing and personas involved](media/manual-testing/schematic-01.png)  
+&nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
 
 
 
-## Define, execute, chart progress of manual test plans and test suites 
+## Define, execute, chart progress of test plans and test suites 
+
+The **Test plans** hub of Azure Test Plans provides the tools you need to define, manage, and run your tests. Test cases, both manual and automated, are organized within test suites which are grouped under test plans.  
 
 :::image type="content" source="media/overview/test-plan-define-execute-chart.png" alt-text="Screenshot of Azure Test Plans, Selected test plans":::
 
+### Test cases
 
-## View progress reports
+
+
+## View progress reports 
+
+With the [Progress Report](progress-report.md) hub, teams can track progress of more than one test plan or test suite. It helps answer the following questions:
+
+- *How much testing is complete?*
+- *How many tests have passed, failed or are blocked?*
+- *Is testing likely to complete in time?*
+- *What is the daily rate of execution?*
+- *Which test areas need attention?*
 
 :::image type="content" source="media/overview/progress-report.png" alt-text="Screenshot of Azure Test Plans, Progress Report hub":::
 
 ## Manage shared parameters and the test cases they reference
 
-
+Teams use the [Parameters](repeat-test-with-different-data.md) hub, to define and manage parameters shared across test cases. Shared parameters provide support for repeating manual tests several times with different test data. For example, if your users can add different quantities of a product to a shopping cart, then you want to check that a quantity of 200 works just as well as a quantity of 1.  
+ 
 :::image type="content" source="media/overview/parameters.png" alt-text="Screenshot of Azure Test Plans, Parameters hub":::
 
 
 ## Add and manage test configurations and variables
 
+With the [Configurations](test-different-configurations.md) hub, teams can define, review, and manage test configurations and variables referenced by test plans. Test configurations provide support for testing your applications on different operating systems, web browsers, and versions. As with shared parameters, test configurations can be shared across multiple test plans. 
 
 :::image type="content" source="media/overview/configurations.png" alt-text="Screenshot of Azure Test Plans, Configurations hub":::
 
+## 
 
-* **[Planned manual testing](#manual-testing)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
+The [Runs](test-different-configurations.md) hub displays the results of test runs. 
 
-* **[User acceptance testing](#user-acceptance)**. Testing carried out by designated user acceptance testers to verify the value delivered meets customer requirements, while reusing the test artifacts created by engineering teams. 
 
-* **[Exploratory testing](#exploratory-testing)**. Testing carried out by development teams, including developers, testers, UX teams, product owners and more, by exploring the software systems without using test plans or test suites. 
+:::image type="content" source="media/overview/recent-test-runs.png" alt-text="Screenshot of Recent test runs":::
 
-* **[Stakeholder feedback](#stakeholder-feedback)**. Testing carried out by stakeholders outside the development team, such as users from marketing and sales divisions.  
-
-![Holistic approach to manual testing, types of manual testing and personas involved](media/manual-testing/schematic-01.png)  
-&nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
+:::image type="content" source="media/overview/example-run-summary.png" alt-text="Screenshot of selected Test Runs summary":::
 
 <a name="manual-testing"></a>
 

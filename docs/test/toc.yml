@@ -1,7 +1,7 @@
 - name: Azure Test Plans 
   href: index.yml
   displayName: test plans
-- name: About exploratory and manual testing
+- name: What is Azure Test Plans?
   href: overview.md
   displayName: manual testing
 - name: Get started
