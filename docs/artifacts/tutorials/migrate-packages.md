@@ -79,33 +79,33 @@ To migrate your packages, you will need to get the package source URL for both t
 
 1. Select **Packages** and then copy the **NuGet V3 feed URL**. 
 
-```
-https://www.myget.org/F/<your-feed-name>/api/v3/index.json 
-```
+    ```
+    https://www.myget.org/F/<YOUR_FEED_NAME>/api/v3/index.json 
+    ```
 
-## Run the migration
+## Migrate NuGet packages
 
-If your source feed is not public, you will need to create a `SecureString` to use as your password to access it.
+If your myget feed is private, you will need to create a password to authenticate. You can skip the first step if your myget feed is public.
 
-1. You can skip this step if your **source feed** is public. 
+1. Run the following command to convert your password to a secure string.
 
-```PowerShell
-$password = ConvertTo-SecureString -String '<your password here>' -AsPlainText -Force
-```
+    ```PowerShell
+    $password = ConvertTo-SecureString -String '<YOUR_PASSWORD>' -AsPlainText -Force
+    ```
 
-2. Using the _source_ and _destination_ index URLs you collected earlier, run the following command based on your need. To have less output, simply remove the `-Verbose` switch from the command.
+1. Run the following command to migrate your packages to Azure Artifacts;
 
-```PowerShell
-# Migrate packages from a private source feed.
-  Move-MyGetNuGetPackages -SourceIndexUrl '<your source index url here>' -DestinationIndexUrl '<your destination index url here>' -DestinationPAT '<your destination PAT string here>' -DestinationFeedName '<your destination feed name>' -SourceUsername '<username for source feed>' -SourcePassword $password -Verbose
-```
+    - **Migrate from a private source feed**:
 
-```PowerShell
-# Migrate packages from a public source feed.
-  Move-MyGetNuGetPackages -SourceIndexUrl '<your source index url here>' -DestinationIndexUrl '<your destination index url here>' -DestinationPAT '<your destination PAT string here>' -DestinationFeedName '<your destination feed name>' -Verbose
-```
- 
-3. After a successful migration, you should see output with the number of packages copied.
+    ```PowerShell
+      Move-MyGetNuGetPackages -SourceIndexUrl '<MYGET_SOURCE_URL>' -DestinationIndexUrl '<ARTIFACTS_FEED_SOURCE_URL>' -DestinationPAT '<AZURE_DEVOPS_PAT>' -DestinationFeedName '<ARTIFACTS_FEED_NAME>' -SourceUsername '<MYGET_USERNAME>' -SourcePassword $password -Verbose
+    ```
+
+    - **Migrate from a public source feed**:
+
+    ```PowerShell
+      Move-MyGetNuGetPackages -SourceIndexUrl '<MYGET_SOURCE_URL>' -DestinationIndexUrl '<ARTIFACTS_FEED_SOURCE_URL>' -DestinationPAT '<AZURE_DEVOPS_PAT>' -DestinationFeedName '<ARTIFACTS_FEED_NAME>' -Verbose
+    ```
 
 > [!NOTE]
 > This module uses NuGet and your local environment to migrate packages. Depending on the size and amount of packages you are moving, this could take up to an hour or more.
