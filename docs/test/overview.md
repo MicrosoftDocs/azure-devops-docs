@@ -55,8 +55,9 @@ Azure Test Plans + Test & Feedback extensions
 |Create test plans and test suites |             |        |        ✔️       |  
 |Author test cases                 |             |        |        ✔️       |  
  
-## Supported scenarios
+## Supported scenarios and tasks
 
+### Supported testing scenarios 
 
 |Scenario         | Task                                  | Web portal  |  TCM | Test Runner |
 |---------------------------------------------------------|-------------|------|--------------|  
@@ -76,7 +77,10 @@ Azure Test Plans + Test & Feedback extensions
 |                 | User Acceptance Testing – Assign tests and invite by email|    ✔️       |     |           | 
 
 
-|Test item        | Task                                         | Web portal  | TCM |  
+### Supported tasks for test objects 
+
+
+|Test object        | Task                                         | Web portal  | TCM |  
 |----------------------------------------------------------------|-------------|-----|  
 |Test plans       | Create                                       |    ✔️       |     |  
 |                 | Copy                                         |    ✔️       |     |  
