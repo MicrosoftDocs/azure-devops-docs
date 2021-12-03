@@ -4,7 +4,7 @@ description: Improve pipeline performance by caching files, like dependencies, b
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
 ms.manager: adandree
-ms.date: 09/16/2021
+ms.date: 11/01/2021
 monikerRange: azure-devops
 ---
 
@@ -79,6 +79,7 @@ steps:
     key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -118,6 +119,7 @@ steps:
     key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -242,7 +244,7 @@ Caching Docker images dramatically reduces the time it takes to run your pipelin
 
 ```yaml
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'Ubuntu-18.04'
 steps:
   - task: Cache@2
     displayName: Cache task
@@ -428,56 +430,11 @@ steps:
     key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
 - script: yarn --frozen-lockfile
-```
-
-## Python/pip
-
-For Python projects that use pip or Poetry, override the `PIP_CACHE_DIR` environment variable. If you use Poetry, in the `key` field, replace `requirements.txt` with `poetry.lock`.
-
-### Example
-
-```yaml
-variables:
-  PIP_CACHE_DIR: $(Pipeline.Workspace)/.pip
-
-steps:
-- task: Cache@2
-  inputs:
-    key: 'python | "$(Agent.OS)" | requirements.txt'
-    restoreKeys: | 
-      python | "$(Agent.OS)"
-      python
-    path: $(PIP_CACHE_DIR)
-  displayName: Cache pip packages
-
-- script: pip install -r requirements.txt
-```
-
-## Python/Pipenv
-
-For Python projects that use Pipenv, override the `PIPENV_CACHE_DIR` environment variable.
-
-### Example
-
-```yaml
-variables:
-  PIPENV_CACHE_DIR: $(Pipeline.Workspace)/.pipenv
-
-steps:
-- task: Cache@2
-  inputs:
-    key: 'python | "$(Agent.OS)" | Pipfile.lock'
-    restoreKeys: | 
-      python | "$(Agent.OS)"
-      python
-    path: $(PIPENV_CACHE_DIR)
-  displayName: Cache pipenv packages
-
-- script: pipenv install
 ```
 
 ## Python/Anaconda

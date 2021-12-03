@@ -25,9 +25,13 @@ In this tutorial you learn how to:
 > [!div class="checklist"]
 > * Share your code with push
 
+<!--- 
 ## Video overview
 
 <iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Push/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
+
+-->
+
 
 <a name="share-your-code-with-push"></a>
 

@@ -29,8 +29,16 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 > [!div class="mx-tdCol2BreakAll"]  
 > |WIT definition  |Command line change (On-premises XML) |
 > |-------------|----------|  
-> |- [Customize a pick list](#picklist)<br/>- [Add rules to a field](#add-rules)<br/>- [Add a custom field](#add-custom-field)<br/>- [Change the field label on the form](#change-label)<br/>- [Add a custom control](#custom-control) |- [List fields](#list-fields)<br/>- [Change a field attribute](#change-attribute) <br/>- [Delete a field](#delete-field)<br/>- [Index a field](#index-field)  | 
+> |- [Customize a pick list](#picklist)<br/>- [Add rules to a field](#add-rules)<br/>- [Add a custom field](#add-custom-field)<br/>- [Change the field label on the form](#change-label)<br/>- [Add a custom control](#custom-control) |- [List fields](../boards/work-items/work-item-fields.md#list-fields)<br/>- [Change a field attribute](#change-attribute) <br/>- [Delete a field](#delete-field)<br/>- [Index a field](#index-field)  | 
 
+
+## Required permissions
+ 
+- To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.  
+- (TFS) To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.  
+- (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
+  
+To get added as an administrator, [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
 
 
 ## Methods by which work item fields get added 
@@ -71,8 +79,10 @@ To add rules or add a custom field, export, edit, and then import the WIT defini
 
 Any field that you want to use to track data must be added to the WIT definition file. This is true for all but system fields (fields whose reference name start with **System.**). All System fields are defined for all WITs, whether or not you include them in WIT definition. To learn more about each field, see [Work item field index](../boards/work-items/guidance/work-item-field.md).
 
-::: moniker range=">= tfs-2017"
 <a id="boolean-field">  </a>
+
+::: moniker range=">= tfs-2017"
+
 ## Add a checkbox or Boolean field 
 ::: moniker-end
 
@@ -304,90 +314,9 @@ You can enable indexing for a field to improve query response times when filteri
 To enable or disable indexing for a field, use the [**witadmin indexfield** command](witadmin/manage-work-item-fields.md). 
 
 
-## Related articles
-
-This topic addressed how to add and customize fields for Hosted XML and On-premises XML process models. For information on adding and customizing WITs for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model, see [Customize a process](../organizations/settings/work/customize-process.md). 
-
-Other related topics or resources: 
-
-- [Work tracking object limits](../organizations/settings/work/object-limits.md) 
-- [Customize the work tracking experience](customize-work.md)  
-- [About work item fields and attributes](../boards/work-items/work-item-fields.md)    
-- [WebLayout and Control elements](xml/weblayout-xml-elements.md)
-- [Guide to administrative tasks](../organizations/accounts/organization-management.md)  
-- [Import, export, and manage work item fields (witadmin)](witadmin/manage-work-item-fields.md).
-
-
-### Required permissions
- 
-- To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.  
-- (TFS) To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.  
-- (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
-  
-To get added as an administrator, [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
-
-<a id="field-reference"></a>
-
-[!INCLUDE [temp](../includes/field-reference.md)]
-
-<a id="list-fields"></a> 
-
-### List or review fields  
-
-To list or review fields, you can use one of the following tools, depending on the process model&mdash;Inheritance, Hosted XML, or On-premises XML&mdash;you use. For an index of fields defined within the default processes, see [Work item field index](../boards/work-items/guidance/work-item-field.md).  
-
-| Tool | Inheritance | Hosted XML | On-premises XML |
-| --- | --- | --- | --- |
-| [Web portal: List inherited and custom-defined fields](../organizations/settings/work/customize-process-field.md#review-fields) | ✔️  | ✔️1 |     |
-| [Work item field explorer](#wi-explorer) | ✔️  | ✔️  | ✔️  |
-| [witadmin listfields command line tool](witadmin/manage-work-item-fields.md) | ✔️  | ✔️  | ✔️  |
- 
-> [!NOTE]  
-> 1. Only supported for default processes (Agile, CMMI, Scrum). 
-
-<a id="wi-explorer">  </a>
-
-**Work Item Field Explorer**
-
-In addition to the attributes that you can change for a work item field, there are several non-changeable and virtually hidden attributes for each field. You can look up the assignments of these fields using the Work Item Field Explorer tool.  
-
-![Work Item Field Explorer](media/IC633020.png)
-
-For a description of each attribute, see [Work item fields and attributes](../boards/work-items/work-item-fields.md).
-
-To access the Work Item Field Explorer, you must install the Process Editor Tool. Based on the version of Visual Studio you have installed, get the Process Editor Tool from one of the following extensions. 
-
-[!INCLUDE [temp](../includes/process-editor-tool.md)]
-
-
-<a id="integration-fields">  </a>
-
-
-### Test, build, and version control fields
-
-Several WITs contain fields that provide information that is generated by automated processes that integrate with Team Foundation Build, Microsoft Test Manager, and Team Foundation version control. To add one of these fields to your custom WITs, you [edit the WIT definition](#edit) according to the steps outlined previously in this topic.
-
-For example, you can add the **Found In** and **Integrated in Build** fields that appear in the type definitions for bugs. These fields associate bugs with the builds where they were found or fixed. You can use the following code snippet to add these fields to a work item type definition.
-
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <FIELD name="Found In" refname="Microsoft.VSTS.Build.FoundIn" type="String" reportable="dimension">
->     <HELPTEXT>Product build number (revision) in which this item was found</HELPTEXT>
-> </FIELD>
-> <FIELD name="Integration Build" refname="Microsoft.VSTS.Build.IntegrationBuild" type="String" reportable="dimension">
->     <HELPTEXT>Product build number this bug was fixed in</HELPTEXT>
-> </FIELD>
-> ```
-
-For more information, see [Query based on build and test integration fields](../boards/queries/build-test-integration.md).
-
-### Field names and reporting
-
-You can add fields or change the attributes of existing fields to support reporting. When you add or change fields, you should name them systematically so that you can find the field in the Analysis Services cube because the fields are logically grouped into folders. To learn more, see [Add or modify work item fields to support reporting](xml/add-or-modify-work-item-fields-to-support-reporting.md).
-
 <a id="delete-field">  </a>
 
-### Delete a field
+## Delete a field
 
 When you remove a field from a specific type of work item, that field is not removed from the collection or the database server, even if it is no longer referenced by any WIT. To remove a field, follow these steps.
 
@@ -415,3 +344,43 @@ When you remove a field from a specific type of work item, that field is not rem
 4.  If the deleted field was reportable, [rebuild the data warehouse to purge the old field and its values](../Report/admin/rebuild-data-warehouse-and-cube.md).
 
 For more information, see [Manage work item fields](witadmin/manage-work-item-fields.md).  
+
+## Related articles
+
+This topic addressed how to add and customize fields for Hosted XML and On-premises XML process models. For information on adding and customizing WITs for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model, see [Customize a process](../organizations/settings/work/customize-process.md). 
+
+Other related topics or resources: 
+
+- [Work tracking object limits](../organizations/settings/work/object-limits.md) 
+- [Customize the work tracking experience](customize-work.md)  
+- [About work item fields and attributes](../boards/work-items/work-item-fields.md)    
+- [WebLayout and Control elements](xml/weblayout-xml-elements.md)
+- [Guide to administrative tasks](../organizations/accounts/organization-management.md)  
+- [Import, export, and manage work item fields (witadmin)](witadmin/manage-work-item-fields.md).
+
+
+
+<a id="integration-fields">  </a>
+
+
+### Test, build, and version control fields
+
+Several WITs contain fields that provide information that is generated by automated processes that integrate with Team Foundation Build, Microsoft Test Manager, and Team Foundation version control. To add one of these fields to your custom WITs, you [edit the WIT definition](#edit) according to the steps outlined previously in this topic.
+
+For example, you can add the **Found In** and **Integrated in Build** fields that appear in the type definitions for bugs. These fields associate bugs with the builds where they were found or fixed. You can use the following code snippet to add these fields to a work item type definition.
+
+> [!div class="tabbedCodeSnippets"]
+> ```XML
+> <FIELD name="Found In" refname="Microsoft.VSTS.Build.FoundIn" type="String" reportable="dimension">
+>     <HELPTEXT>Product build number (revision) in which this item was found</HELPTEXT>
+> </FIELD>
+> <FIELD name="Integration Build" refname="Microsoft.VSTS.Build.IntegrationBuild" type="String" reportable="dimension">
+>     <HELPTEXT>Product build number this bug was fixed in</HELPTEXT>
+> </FIELD>
+> ```
+
+For more information, see [Query based on build and test integration fields](../boards/queries/build-test-integration.md).
+
+### Field names and reporting
+
+You can add fields or change the attributes of existing fields to support reporting. When you add or change fields, you should name them systematically so that you can find the field in the Analysis Services cube because the fields are logically grouped into folders. To learn more, see [Add or modify work item fields to support reporting](xml/add-or-modify-work-item-fields-to-support-reporting.md).

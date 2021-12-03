@@ -6,9 +6,10 @@ ms.custom: seodec18
 ms.technology: devops-agile
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: kaelli
+author: KathrynEE 
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 12/01/2021
+monikerRange: '<= azure-devops'
+ms.date: 12/02/2021
 ---
 
 # How to use workflow states and state categories in Azure Boards backlogs and boards
@@ -212,7 +213,7 @@ Adding custom states to support workflow states that multiple teams want to trac
 
 ## Auto completion of work items with pull requests 
 
-When you link a work item to a pull request (PR), you can automatically complete those work items when you successfully complete the PR. To learn how, see [Auto complete work items with pull requests](auto-complete-work-items-pull-requests.md).
+When you link a work item to a pull request (PR), you can automatically complete those work items when you complete the PR. To learn how, see [Auto complete work items with pull requests](auto-complete-work-items-pull-requests.md).
 
 ::: moniker-end
 
@@ -240,5 +241,3 @@ When you link a work item to a pull request (PR), you can automatically complete
 **Dashboard widgets**
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
 ::: moniker-end
-
- 

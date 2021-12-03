@@ -21,6 +21,9 @@
     displayName: create, case
   - name: Share steps between test cases
     href: share-steps-between-test-cases.md
+  - name: Copy/clone test plans, suites, cases
+    href: copy-clone-test-items.md
+    displayName: copy, clone, import, export, test plans, test suites, test cases 
   - name: Run manual tests
     href: run-manual-tests.md
     displayName: manual test, run, test runs

@@ -5,7 +5,7 @@ description: Quickstart with Azure Repos, Visual Studio, and Git Command Line.
 ms.assetid: d7dcb364-056f-421b-8896-0304cddf12fe
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 11/15/2019
+ms.date: 09/28/2021
 monikerRange: '<= azure-devops'
 ---
 
