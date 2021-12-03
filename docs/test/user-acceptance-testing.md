@@ -1,12 +1,12 @@
 ---
 title: Perform user acceptance testing
-description: Create and run user acceptance tests in Azure Test Plans and Team Foundation Server. Test to verify that each of the deliverables meets your users' needs.
+description: Create and run user acceptance tests in Azure Test Plans. Test to verify that each of the deliverables meets your users' needs.
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.technology: devops-test
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 11/23/2021
+ms.date: 12/06/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -42,17 +42,27 @@ For user acceptance testing, you can assign multiple testers to a set of tests. 
 
 1. Select **Test plans** to see your test suites. You can select **Mine** to see your favorites or **All** to see all test plans. Select a test plan to open it.
 
-1. Select a test plan and then select **More options** or right-click to view the context menu. Select **Assign testers to run all tests**.
+1. Select a test suite and then select **More options** or right-click to view the context menu. Select **Assign testers to run all tests**.
 
 1. In **Search users**, enter a name or partial name to find the testers you want. You can select multiple testers.
 
    ![Screenshot shows the option to search for users with two users already selected.](media/user-acceptance-testing/search-select-testers.png)
 
+   > [!TIP]
+   > You can select individual users who are a members of the Project Valid Users group.
+   > You can't select user groups.
+
 1. To notify testers, select **Send email**.
 
    ![Screenshot shows the option to send email selected and text boxes for subject and notes.](media/user-acceptance-testing/send-messages-testers.png)
 
-   Enter a message subject and note, as needed, and select **Ok**.
+1. Enter a message subject and note, as needed, and select **Ok**.
+::: moniker range="<azure-devops-2020"
+
+   > [!NOTE]
+   > For on-premises Azure DevOps, you must have an SMTP server configured for your deployment.
+   > For more information, see [Configure an SMTP server](../server/admin/setup-customize-alerts.md)
+::: moniker-end
 
 If you have a large pool of potential testers, you might need to search for testers, as described above.
 
