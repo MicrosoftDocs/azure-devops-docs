@@ -50,7 +50,7 @@ resources:
 If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the version of the code in the branch specified by the **Default branch for manual and scheduled builds** setting, as described in the following [Branch considerations for pipeline completion triggers](#branch-considerations) section.
 
 > [!NOTE]
-> In some cases, the default branch for manual and scheduled builds does not include a `refs/head` prefix (e.g. it is set to `main` instead of `refs/heads/main`). **Triggers from other projects will not work when this is the case**. If you encounter issues when setting `project` to a value other than the target pipeline's, you can update the default branch to include `refs/head` by changing its value to a different branch and then back to the desired default branch.
+> In some cases, the default branch for manual and scheduled builds does not include a `refs/heads` prefix (e.g. it is set to `main` instead of `refs/heads/main`). **Triggers from other projects will not work when this is the case**. If you encounter issues when setting `project` to a value other than the target pipeline's, you can update the default branch to include `refs/heads` by changing its value to a different branch and then back to the desired default branch.
 
 ## Branch filters
 
