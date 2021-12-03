@@ -12,16 +12,22 @@ ms.date: 12/06/2021
 
 # Share steps between test cases
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)]
 
-When you [plan manual tests](create-a-test-plan.md) there are some sequences of steps, such as logging in, that occur in many test cases. To avoid having to enter these sequences again and again, create *shared steps*.  
+Many manual tests require performing an identical sequence of steps and test data. For example, logging in to a web app or saving form data are common steps performed in several test sequences. With the use of **Shared Steps** and **Shared Parameters** work items, you can minimize the creation of test steps and data that you need to enter and manage. **Shared Steps** define a sequence of steps that can be referenced by many different test cases. Similarly, **Shared Parameters** define a set of test data that can be referenced by many different test cases. These work item types are explicitly linked with the **Test Cases/Shared Steps** and **Reference By/References** link types as shown in the following image.
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
+![Diagram shows Shared Steps connected to Test Case, which is also connected to Shared Parameters.](media/shared-steps/shared-steps-shared-parameters.md)
 
-[!INCLUDE [note-new-ui](includes/note-new-ui.md)] 
+This article describes how to define and use **Shared Steps**. To learn how to define and reference **Shared Parameters**, see [Repeat a test with different data](repeat-test-with-different-data.md).
+
+[!INCLUDE [prerequisites-define](includes/prerequisites-define.md)]
+
+[!INCLUDE [note-new-ui](includes/note-new-ui.md)]
   
 ## Create shared steps
 ::: moniker range=">=azure-devops-2020"
+
+To create shared steps, follow these steps:
 
 1. Select **Test Plans** to view your test plans. Select **Mine** or **All** or **Filter by title** to find a particular test plan. Select the plan to see test cases.
 
@@ -53,12 +59,23 @@ The steps you selected are replaced with a link to the new shared steps work ite
 ![Resulting test case with a shared step.](media/shared-steps/create-shared-result.png)  
 ::: moniker-end
 
-## Use shared steps
+You can edit shared steps at any time.
+Any changes you make appear in every test case where you use the shared steps.
+
+You can use parameters in shared steps.
+For more information about parameters, see [parameters](repeat-test-with-different-data.md).
+
+You provide values for the parameters in the test cases that use the shared steps.
+You don't have to provide values in the shared steps definition.
+However, you can provide one default row of values.
+These values are used when you create an action recording of a standalone shared step.
+
+## Insert shared steps into other test cases
 ::: moniker range=">=azure-devops-2020"
 
-You can use the shared steps in another test case.
+You can add shared steps to other test cases.
 
-1. Double click test case to edit it. Under **Steps**, select the **Insert shared steps** icon.
+1. Double-click test case to edit it. Under **Steps**, select the **Insert shared steps** icon.
 
    ![Screenshot shows the Insert shared steps icon in a test case.](media/shared-steps/insert-shared-steps-icon.png)  
 
@@ -81,7 +98,7 @@ A query opens. Run it to find the steps you want to insert:
 ![Run the query to find shared steps](media/shared-steps/shared-step-query.png)  
 ::: moniker-end
 
-## When you run a test with shared steps  
+## Mark shared steps when running a test
 ::: moniker range=">=azure-devops-2020"
 
 When you [run a test](run-manual-tests.md), you can either mark the whole shared sequence as passed or failed, or mark each step separately:  
@@ -100,5 +117,8 @@ When you [run a test](run-manual-tests.md), you can either mark the whole shared
 
 ## Related articles
 
-- [Test objects and terms](test-objects-overview.md) 
+- [Test objects and terms](test-objects-overview.md)
+- [Create a test case](create-test-cases.md)
+- [Repeat a test with different data](repeat-test-with-different-data.md)
+- [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md)
 - [FAQs for manual testing](reference-qa.md#sharesteps)
