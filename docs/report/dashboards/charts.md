@@ -1,7 +1,7 @@
 ---
 title: Status and trend work item, query-based charts
 titleSuffix: Azure DevOps  
-description: Learn how to create status, progress, and trend charts from flat-based queries in Azure DevOps.
+description: Learn how to add status, progress, and trend charts to dashboards from flat-based queries in Azure DevOps.
 ms.custom: dashboards, contperf-fy20q4 
 ms.technology: devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
@@ -352,8 +352,8 @@ To add other types of charts, such as test results and build summary charts, see
 > For TFS 2013 and TFS 2015, you can pin charts to the team homepage. For TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md). 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
 <a id="add-chart-widget"></a> 
+::: moniker range=">= tfs-2015"
 
 ## Add a chart widget to a dashboard   
  

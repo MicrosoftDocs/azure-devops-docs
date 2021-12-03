@@ -25,7 +25,6 @@ The data migration tool for Azure DevOps supports the two latest releases of Azu
 
 * Azure DevOps Server 2020.1.1
 * Azure DevOps Server 2020.1
-* Azure DevOps Server 2020.0.1 (Support for importing new 2020.0.1 collections will be removed on Monday October 4th)
 
 > [!NOTE]
 > The data migration tool doesn't support imports from Azure DevOps Server release candidates (RC). If you're planning on importing your collection database to Azure DevOps Services using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous Azure DevOps Server version to import. 
@@ -79,10 +78,6 @@ A: **No**. Your tokens will not migrate and you will need to [regenerate your Pe
 ### Q: If I have feedback or additional questions is there somewhere I can reach out?
 
 A: **Yes**. You can contact [AzureDevOpsImport@microsoft.com](mailto:AzureDevOpsImport@microsoft.com). Please note that this alias is for general questions. If you need assistance with a failed import please contact Azure DevOps [customer support](https://aka.ms/AzureDevOpsImportSupport). 
-
-## Videos 
-
-> [!VIDEO https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3199/player]
 
 <!-- ENDSECTION --> 
 

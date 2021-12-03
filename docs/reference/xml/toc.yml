@@ -2,10 +2,12 @@
   href: ../on-premises-xml-process-model.md 
 - name: Fields
   items:
+  - name: View fields
+    href: ../../boards/work-items/work-item-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Add or modify a field
     href: ../add-modify-field.md
   - name: Apply a field rule
-    href: ../../organizations/settings/work/rule-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    href: ../../organizations/settings/work/rule-reference.md 
   - name: Define pick lists
     href: define-pick-lists.md
   - name: Expand list and exclude groups

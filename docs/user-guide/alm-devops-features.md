@@ -334,7 +334,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Review fields</b></p>
-<p>You can <a href="../organizations/settings/work/customize-process-field.md#review-fields" data-raw-source="[review the list of fields](../organizations/settings/work/customize-process-field.md#review-fields)">review the list of fields</a> defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see <a href="../boards/work-items/guidance/work-item-field.md" data-raw-source="[Work item field index](../boards/work-items/guidance/work-item-field.md)">Work item field index</a>. </p>
+<p>You can <a href="../boards/work-items/work-item-fields.md#review-fields" data-raw-source="[review the list of fields](../boards/work-items/work-item-fields.md#review-fields)">review the list of fields</a> defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see <a href="../boards/work-items/guidance/work-item-field.md" data-raw-source="[Work item field index](../boards/work-items/guidance/work-item-field.md)">Work item field index</a>. </p>
 
 <p><b>Delete a field from the collection</b></p>
 <p>You can <a href="../organizations/settings/work/customize-process-field.md#delete-field" data-raw-source="[delete a custom field](../organizations/settings/work/customize-process-field.md#delete-field)">delete a custom field</a> if you find it&#39;s no longer required. </p>
@@ -803,7 +803,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 
 <p><b>Get notified about pull requests</b></p>
-<p>Subscribe to email alerts to get notified about <a href="../repos/git/pull-requests.md#notifications" data-raw-source="[new pull requests, changes, approvals, and rejections](../repos/git/pull-requests.md#notifications)">new pull requests, changes, approvals, and rejections</a>.</p>
+<p>Subscribe to email alerts to get notified about <a href="../repos/git/pull-request-notifications.md" data-raw-source="[new pull requests, changes, approvals, and rejections](../repos/git/pull-request-notifications.md)">new pull requests, changes, approvals, and rejections</a>.</p>
 
 <p><b>Set branch policies </b></p>
 <p>To improve code quality, <a href="../repos/git/branch-policies.md" data-raw-source="[set branch policies to require code reviews or  automatically add reviewers](../repos/git/branch-policies.md)">set branch policies to require code reviews or  automatically add reviewers</a>. </p>

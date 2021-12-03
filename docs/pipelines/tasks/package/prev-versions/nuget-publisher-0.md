@@ -58,7 +58,17 @@ None
 </ul>
 </td>
 </tr>
-<tr><th style="text-align: center" colspan="2">Advanced</th></tr>
+</table>
+
+### Advanced options
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
 <tr>
 <td>NuGet Arguments</td>
 <td>
@@ -67,6 +77,8 @@ None
 </tr>
 
 [!INCLUDE [temp](../../includes/nuget-step-arguments.md)]
+
+</table>
 
 [!INCLUDE [temp](../../includes/control-options-arguments.md)]
 

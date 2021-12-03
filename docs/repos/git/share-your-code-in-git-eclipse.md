@@ -11,6 +11,7 @@ monikerRange: '>= tfs-2015'
 
 
 # Share your code in Git using Eclipse
+
 [!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
 
 Share your Eclipse project with your team in an Azure DevOps Services/TFS Git repo.

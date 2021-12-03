@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: kaelli  
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 03/17/2021
+ms.date: 10/26/2021
 ---
 
 # Index to az devops examples 
@@ -54,7 +54,7 @@ Use this index to quickly access examples that showcase use of command line tool
       - [Set team area paths](../organizations/settings/set-area-paths.md#set-team-area-paths) 
       - [Set team iteration paths](../organizations/settings/set-iteration-paths-sprints.md#set-team-iteration-paths) 
       #### Queries 
-      - [Run work item query](../boards/queries/view-run-query.md#run-a-query)
+      - [Run work item query](../boards/queries/view-run-query.md#run-a-query-in-azure-boards)
       - [Permanently delete work items](../boards/backlogs/remove-delete-work-items.md#az-boards-cli)  
    :::column-end:::
    :::column span="1":::
@@ -104,10 +104,10 @@ Use this index to quickly access examples that showcase use of command line tool
 :::row:::
    :::column span="1":::
       #### Add and run a pipeline 
-      - [Create a pipeline](../pipelines/create-first-pipeline.md) 
-      - [Run a pipeline](../pipelines/create-first-pipeline.md#run-a-pipeline)
-      - [Show the details of a pipeline](../pipelines/create-first-pipeline.md#show-pipeline)
-      - [Update a pipeline](../pipelines/create-first-pipeline.md#update-a-pipeline)
+      - [Create a pipeline](../pipelines/get-started/manage-pipelines-with-azure-cli.md) 
+      - [Run a pipeline](../pipelines/get-started/manage-pipelines-with-azure-cli.md#run-a-pipeline)
+      - [Show the details of a pipeline](../pipelines/get-started/manage-pipelines-with-azure-cli.md#show-pipeline)
+      - [Update a pipeline](../pipelines/get-started/manage-pipelines-with-azure-cli.md#update-a-pipeline)
 
       #### Agents, agent pools, agent queues 
       - [List agents](../pipelines/agents/agents.md#list-agents)
@@ -150,10 +150,45 @@ Use this index to quickly access examples that showcase use of command line tool
 
 ## Azure Repos 
 
-- [Create case enforcement policy](../repos/git/repository-settings.md#create-case-enforcement-policy)
-- [Create file size policy](../repos/git/repository-settings.md#create-file-size-policy)
-- [Update case enforcement policy](../repos/git/repository-settings.md#update-case-enforcement-policy)
-- [Update file size policy](../repos/git/repository-settings.md#update-file-size-policy)
+:::row:::
+   :::column span="1":::
+      #### Create and manage repositories  
+      - [Create a Git repository](../repos/git/share-your-code-in-git-cmdline.md)
+      - [Import Git repositories](/cli/azure/repos/import)
+      - [List repositories](../repos/git/repository-settings.md)
+      #### Manage policies
+      - [List policies](../repos/git/repository-settings.md#repos-policy-list)
+      - [Show policy](../repos/git/repository-settings.md#show-policy)
+      - [Manage branch policies](/cli/azure/repos/policy)
+      - [Manage approver count policy](/cli/azure/repos/policy/approver-count)
+      - [Manage build policies](/cli/azure/repos/policy/build)
+      - [Manage case enforcement policy](../repos/git/repository-settings.md#create-case-enforcement-policy)
+      - [Manage file size policy](../repos/git/repository-settings.md#create-file-size-policy)
+      - [Manage comment-required policy](/cli/azure/repos/policy/comment-required) 
+      - [Manage merge strategy policy](/cli/azure/repos/policy/merge-strategy)
+      - [Manage required reviewer policy](/cli/azure/repos/policy/required-reviewer)
+      - [Create work item linking policy](../repos/git/branch-policies.md#create-wi-policy)
+      - [Update work item linking policy](../repos/git/branch-policies.md#update-wi-policy)
+
+   :::column-end:::
+   :::column span="1":::
+      #### Pull requests
+      - [Complete or update a pull request](../repos/git/complete-pull-requests.md#complete-the-pull-request)
+      - [Abandon a pull request](../repos/git/complete-pull-requests.md#abandon-pr)
+      - [Create a pull request](../repos/git/pull-requests.md#create-pr)
+      - [Create a draft pull request](../repos/git/pull-requests.md#draft-pull-requests)
+      - [Edit a pull request, add details](../repos/git/pull-requests.md#add-details-pr)
+      - [Manage work items associated with a pull request](../repos/git/pull-requests.md#link-work-items-pr)
+      - [Manage pull request policies](/cli/azure/repos//pr/policy)
+      - [Manage pull request reviewers](/cli/azure/repos/pr/reviewer)
+      #### Import and manage references
+      - [Create a reference](/cli/azure/repos/ref#az_repos_ref_create)
+      - [Delete a reference](/cli/azure/repos/ref#az_repos_ref_delete)
+      - [List references](/cli/azure/repos/ref#az_repos_ref_list)
+      - [Lock a reference](/cli/azure/repos/ref#az_repos_ref_lock)
+      - [Unlock a reference](/cli/azure/repos/ref#az_repos_ref_unlock)
+   :::column-end:::
+:::row-end:::
 
 
 ## Projects, extensions, and wikis 

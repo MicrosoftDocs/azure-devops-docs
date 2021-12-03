@@ -310,6 +310,52 @@ stages:
     steps:
      - script: echo hello from Job B2
 ```
+### Example
+
+In the following example, we will copy and publish a script folder from our repo to the `$(Build.ArtifactStagingDirectory)`. In the second stage, we will download and run our script.
+
+:::image type="content" source="media/artifacts-across-stages.png " alt-text="Screenshot showing the PowerShell task output":::
+
+```YAML
+trigger:
+- main
+stages:
+- stage: build
+  jobs:
+  - job: run_build
+    pool:
+      vmImage: 'windows-latest'
+    steps:
+    - task: VSBuild@1
+      inputs:
+        solution: '**/*.sln'
+        msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
+        platform: 'Any CPU'
+        configuration: 'Release'
+
+    - task: CopyFiles@2
+      displayName: 'Copy scripts'
+      inputs:
+        contents: 'scripts/**'
+        targetFolder: '$(Build.ArtifactStagingDirectory)'
+
+    - publish: '$(Build.ArtifactStagingDirectory)/scripts'
+      displayName: 'Publish script'
+      artifact: drop
+
+- stage: test
+  dependsOn: build
+  jobs:
+  - job: run_test
+    pool:
+      vmImage: 'windows-latest'
+    steps:
+    - download: current
+      artifact: drop
+    - task: PowerShell@2
+      inputs:
+        filePath: '$(Pipeline.Workspace)\drop\test.ps1'
+```
 
 ## Migrate from build artifacts
 
