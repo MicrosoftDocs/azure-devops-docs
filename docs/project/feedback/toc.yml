@@ -32,6 +32,7 @@
   - name: Track stakeholder feedback requests
     href: track-stakeholder-feedback.md
 - name: Microsoft Feedback client
+  items:
   - name: Request feedback
     href: get-feedback.md  
   - name: Provide feedback  
