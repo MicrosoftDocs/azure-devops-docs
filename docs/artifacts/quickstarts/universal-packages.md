@@ -8,7 +8,7 @@ ms.date: 12/03/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Publish and download universal packages
+# Publish and download universal packages with Azure CLI
 
 With universal packages, you can store different types of packages other than the widely used ones such as NuGet, npm, Maven, or Python packages. Using Azure CLI, you can publish and download universal packages from the command line. Uploaded packages can vary in size (up to 4 TB), but should always have a name and a version number. This article will walk you through the steps to publish and download your universal packages to Azure Artifacts feeds.
 
@@ -19,44 +19,40 @@ With universal packages, you can store different types of packages other than th
 1. [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
 1. [Azure Artifacts feed](../get-started-nuget.md).
 
-To check the version of Azure CLI modules and extensions that you currently have, run the following command: 
+## Connection setup
+
+1. To check the version of Azure CLI modules and extensions that you currently have, run the following command: 
+
    ```Command
    az --version
    ```
 
-You can install the Azure DevOps extension using the following command:
+2. install the Azure DevOps extension.
+
    ```Command
    az extension add --name azure-devops
    ```
 
-If you already have the Azure DevOps extension but you want to update to the latest version, run the following command:
+3. If you already have the Azure DevOps extension but you want to update to the latest version, run the following command:
 
    ```Command
    az extension update --name azure-devops
    ```
 
-## Create a feed
+4. Log in to Azure.
 
-A feed is an organizational construct that allows you to store and manage your packages and control who can access them.
-
-[!INCLUDE [](../includes/create-feed.md)]
-
-## Log in to Azure DevOps
-
-After you've installed the Azure CLI, run the following command in an elevated command prompt window to log in to Azure. Replace the text in the square brackets [] with the appropriate names.
-
-```Command
-az login
-```
+    ```Command
+    az login
+    ```
 
 > [!TIP]
 > To access tenants without subscriptions, run `az login --allow-no-subscription`.
 
-Next, set your project and organization as the CLI's default.
+5. Set your project and organization as the CLI's default.
 
-```Command
-az devops configure --defaults organization=https://dev.azure.com/[your-organization] project=[your-project-name]
-```
+    ```Command
+    az devops configure --defaults project=<YOUR_PROJECT_NAME> organization=https://dev.azure.com/<YOUR_ORGANIZATION_NAME> 
+    ```
 
 <a name="publish-a-package"></a>
 
