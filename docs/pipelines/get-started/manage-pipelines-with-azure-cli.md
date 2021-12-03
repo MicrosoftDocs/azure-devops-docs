@@ -149,6 +149,17 @@ ID    Name                        Status    Default Queue
 12    updatedname.pipelines-java  enabled   Hosted Ubuntu 1604
 ```
 
+## Next steps
+
+You can [customize your pipeline](../customize-pipeline.md) or learn more about configuring pipelines in the language of your choice:
+
+* [.NET Core](../ecosystems/dotnet-core.md)
+* [Go](../ecosystems/go.md)
+* [Java](../ecosystems/java.md)
+* [Node.js](../ecosystems/javascript.md)
+* [Python](../ecosystems/python.md)
+* [Containers](../ecosystems/containers/build-image.md)
+
 ## FAQ
 
 ### How do I programmatically create a build pipeline?

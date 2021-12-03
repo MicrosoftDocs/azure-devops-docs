@@ -396,14 +396,14 @@ You can add intermediate columns to track your bug status on the board. You can 
 
 - [Add columns to your Kanban board](../boards/add-columns.md)
 - [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
-- [Kanban board change queries](../queries/query-by-workflow-changes.md#query-changes-to-a-kanban-board)
+- [Kanban board change queries](../queries/query-by-workflow-changes.md#kanban-query-fields)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
 
 - [Add columns to your Kanban board](../boards/add-columns.md)
-- [Kanban board change queries](../queries/query-by-workflow-changes.md#query-changes-to-a-kanban-board)
+- [Kanban board change queries](../queries/query-by-workflow-changes.md#kanban-query-fields)
 
 ::: moniker-end
 
