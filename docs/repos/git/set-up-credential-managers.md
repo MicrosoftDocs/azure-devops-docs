@@ -38,7 +38,7 @@ You may [use SSH keys](use-ssh-keys-to-authenticate.md) to authenticate to Azure
 
 Installation instructions are included in the GitHub repository for GCM.
 On Mac, we recommend using [Homebrew](https://github.com/GitCredentialManager/git-credential-manager#macos-homebrew).
-On Linux, you can install from a [.deb](https://github.com/GitCredentialManager/git-credential-manager#linux-debian-package-deb) or a [tarball](https://github.com/GitCredentialManager/git-credential-manager#linux-tarball-targz).
+On Linux, you can install from a [.deb](https://github.com/GitCredentialManager/git-credential-manager#ubuntudebian-distributions) or a [tarball](https://github.com/GitCredentialManager/git-credential-manager#other-distributions).
 
 ## Using the Git Credential Manager
 
