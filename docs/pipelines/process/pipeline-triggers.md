@@ -44,10 +44,13 @@ resources:
 * `pipeline: securitylib` specifies the name of the pipeline resource, and is used when referring to the pipeline resource from other parts of the pipeline, such as pipeline resource variables.
 * `source: security-lib-ci` specifies the name of the pipeline referenced by this pipeline resource. You can retrieve a pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). By default, pipelines are named after the repository that contains the pipeline. To update a pipeline's name, see [Pipeline settings](../get-started/multi-stage-pipelines-experience.md#pipeline-settings).
 
-* `project: FabrikamProject` - If the triggering pipeline is in another Azure DevOps project, you must specify the project name. This property is optional if both the source pipeline and the triggered pipeline are in the same project.
+* `project: FabrikamProject` - If the triggering pipeline is in another Azure DevOps project, you must specify the project name. This property is optional if both the source pipeline and the triggered pipeline are in the same project. If you specify this value and your pipeline is not triggering, see the below note.
 * `trigger: true` - Use this syntax to trigger the pipeline when any version of the source pipeline completes. See the following sections in this article to learn how to filter which versions of the source pipeline completing will trigger a run. When filters are specified, the source pipeline run must match all of the filters to trigger a run.
 
 If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the version of the code in the branch specified by the **Default branch for manual and scheduled builds** setting, as described in the following [Branch considerations for pipeline completion triggers](#branch-considerations) section.
+
+> [!NOTE]
+> In some cases, the default branch for manual and scheduled builds does not include a `refs/head` prefix (e.g. it is set to `main` instead of `refs/heads/main`). **Triggers from other projects will not work when this is the case**. If you encounter issues when setting `project` to a value other than the target pipeline's, you can update the default branch to include `refs/head` by changing its value to a different branch and then back to the desired default branch.
 
 ## Branch filters
 
