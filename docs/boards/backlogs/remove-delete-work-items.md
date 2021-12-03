@@ -196,6 +196,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 
 <a id="restore" />
+<a id="restore-or-destroy-work-items" />
 <a id="restore-or-permanently-delete-work-items" />
 
 ::: moniker range=">= tfs-2015"  

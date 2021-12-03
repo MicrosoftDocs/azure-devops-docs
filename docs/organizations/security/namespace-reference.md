@@ -398,7 +398,7 @@ The following table describes the namespaces that manage project-level permissio
       Token to secure permissions for each project in your organization.  
       `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.  
       Assume you have a project named `Test Project 1`.  
-      You can get the project ID for this project by using the [`az devops project show` command](../projects/create-project.md#show-project).  
+      You can get the project ID for this project by using the [`az devops project show` command](../projects/create-project.md).  
       `az devops project show --project "Test Project 1"`  
       The command returns a project-id, for example, `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`.  
       Therefore, the token to secure project-related permissions for `Test Project 1` is:  
