@@ -1,23 +1,23 @@
 ---
-title: Publish and download universal packages
-description: How to publish and download universal packages to and from Azure Artifacts.
+title: Publish and download universal packages with Azure Artifacts
+description: How to publish and download universal packages to and from Artifacts feeds.
 ms.assetid: f47b858c-138d-426d-894c-a5fe1d5aa08e
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 02/12/2021
+ms.date: 12/03/2021
 monikerRange: '>= tfs-2017'
 ---
 
 # Publish and download universal packages
 
-With universal packages, users are able to store different types of packages other than the widely used ones like NuGet, npm, Maven, or Python packages. Uploaded packages can vary in size (tested up to 4 TB) but should always have a name and a version number. You can publish and download universal packages from the command line using the Azure CLI. 
-
-This quickstart will walk you through the steps to publish and download your first universal package to/from your feed using the command line.
+With universal packages, you can store different types of packages other than the widely used ones such as NuGet, npm, Maven, or Python packages. Using Azure CLI, you can publish and download universal packages from the command line. Uploaded packages can vary in size (up to 4 TB), but should always have a name and a version number. This article will walk you through the steps to publish and download your universal packages to Azure Artifacts feeds.
 
 ## Prerequisites
 
-1. Download and install the latest [Azure CLI](/cli/azure/install-azure-cli) version.
-2. If you're using Linux, make sure you have the appropriate [.NET on Linux](/dotnet/core/linux-prerequisites) version. 
+1. [Install Azure CLI](/cli/azure/install-azure-cli).
+1. If you're using Linux, make sure you install the [.NET on Linux](/dotnet/core/linux-prerequisites) version.
+1. [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
+1. [Azure Artifacts feed](../get-started-nuget.md).
 
 To check the version of Azure CLI modules and extensions that you currently have, run the following command: 
    ```Command
