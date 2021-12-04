@@ -46,7 +46,7 @@ Integration with 3rd party test services
 
 ## How does Azure Load Testing work?
 
-Azure Test Plans provides several browser-based hubs to support planning, authoring, execution, and analysis of manual and automated tests. In addition, it provides the following tools to link tests to requirements, run tests, create bugs, and capture feedback.  
+Azure Test Plans provides several browser-based hubs&mdash;[**Test plans**](#test-plans), [**Progress report**](#progress-report), [**Parameters**](#parameters), [**Configurations**](#configurations), and [**Runs**](#runs)&mdash;to support planning, authoring, execution, and analysis of manual and automated tests. In addition, it provides the following tools to link tests to requirements, run tests, create bugs, and capture feedback.  
 
 - **Kanban board inline test tools**: An Azure Boards feature that supports defining test cases from the user stories, features, or bugs from the Kanban board. Also, you can launch the Test Runner or the Test & Feedback extension to run tests or perform exploratory testing. 
 - **Test Runner**: A browser-based tool that you launch from the **Test plans** hub to run manual tests. Test Runner supports rich data collection while performing tests, such as: image action log, video recording, code coverage, etc. It also allows users to create bugs and mark the status of tests.  
@@ -56,29 +56,101 @@ All test planning and authoring is captured in one of the following test-specifi
 
 ![Test management work item types](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
  
- 
+## Key benefits
+
+* **Test on any platform**. With the **Test Plans** web portal, you can use your browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, web-based interface that can be accessed from all major browsers on any platform.
+
+* **Rich Diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
+
+* **End to End Traceability**. Azure DevOps and TFS provide [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
+
+* **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Azure DevOps](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
+
+
 ## Supported scenarios and access level requirements 
 
-Access to Azure DevOps web portal features are managed through access levels assigned to users. The three main access levels are **Stakeholder**, **Basic**, and **Basic+Test** plans as described in [About access levels](../organizations/security/access-levels.md). The following table indicates the access-level required to exercise the associated tasks with Azure Test Plans.    
+Access to Azure DevOps web portal features are managed through access levels assigned to users. The three main access levels are **Stakeholder**, **Basic**, and **Basic+Test** plans as described in [About access levels](../organizations/security/access-levels.md). The following table indicates the access-level required to exercise the associated tasks with Azure Test Plans. In addition to access levels, select features require permissions to execute. To learn more, see [Manual test access and permissions](manual-test-permissions.md).   
+  
  
+:::row:::
+   :::column span="3":::
+      **Scenario and tasks**
+   :::column-end:::
+   :::column span="1":::
+      **Stakeholder**
+   :::column-end:::
+   :::column span="1":::
+      **Basic**
+   :::column-end:::
+   :::column span="1":::
+      **Basic +Test Plans**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+      **Test planning**
+      - Create test plans and test suites
+      - Manage test plan run settings
+      - Manage configurations 
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+      **Test execution**
+      - Run tests on any platform (Windows, Linux, Mac) with Test Runner 
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+      **Perform exploratory testing with the Test & Feedback extension**
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+      **Analyze and review tests**
+      - Create charts with various pivots like priority, configuration, etc., to track test progress
+      - Browse test results
+      - Export test plans and test suites for review
+      - User Acceptance Testing – Assign tests and invite by email
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+       ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
 
-|Scenario         | Task                                  | Stakeholder | Basic | Basic +Test Plans |  
-|---------------------------------------------------------|-------------|------|--------------|  
-|Test Planning    | Create test plans and test suites     |             |      |      ✔️      |   
-|                 | Manage test plan run settings         |             |      |      ✔️      |   
-|                 | Manage configurations                 |             |      |      ✔️      |   
-|Test Authoring   | Author individual tests (test cases)  |             |      |      ✔️      |   
-|                 | Author tests with Excel like grid     |              |      |      ✔️      |   
-|                 | Copy paste tests to/from Excel        |            |      |      ✔️      |    
-|                 | Create and manage shared parameters<br/>for data driven testing |            |      |      ✔️      |   
-|                 | Set up user acceptance testing for multiple users|             |      |      ✔️      |   
-|Test Execution   | Run tests on any platform (Windows, Linux, Mac)<br/>with Test Runner|           |    ✔️   |     ✔️         | 
-|                 | Perform exploratory testing |    ✔️  |  ✔️ |  ✔️ | 
-|Analyze and Review Tests | Browse test results |           |   ✔️    |      ✔️        |   
-|                 | Create charts with various pivots like priority,<br/>configuration, etc., to track test progress|     |  ✔️   |   ✔️   |  
-|                 | Export test plans and test suites for review |    ✔️       |     |           | 
-|                 | User Acceptance Testing – Assign tests and invite by email|    ✔️       |   ✔️   |     ✔️       | 
- 
 
 ## Manual and exploratory testing 
 
@@ -92,6 +164,7 @@ Access to Azure DevOps web portal features are managed through access levels ass
 &nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
 
 
+<a id="test-plans" />
 
 ## Define, execute, chart progress of test plans and test suites 
 
@@ -99,8 +172,28 @@ The **Test plans** hub of Azure Test Plans provides the tools you need to define
 
 :::image type="content" source="media/overview/test-plan-define-execute-chart.png" alt-text="Screenshot of Azure Test Plans, Selected test plans":::
 
+### Test planning
+
+Create and manage test plans and test suites for your teams with ease.
+Create static suites, requirement-based suites, or query-based suites.
+Export and share the test plans and test suites with your team.
+See more at [Create test plans](create-a-test-plan.md).  
+
+![Creating manual test plans](media/manual-testing/create-test-plans-01.png)
+
+### Test authoring
+
+Create multiple test cases in one operation, or easily add existing
+test cases to a test suite. Assign single or multiple testers to 
+execute the tests. View test results and references to a test case
+across test suites. See more at [Create test cases](create-test-cases.md).
+
+![Creating manual test cases](media/manual-testing/create-test-cases-01.png)
+
 ### Test cases
 
+
+<a id="progress-reports" />
 
 
 ## View progress reports 
@@ -115,12 +208,15 @@ With the [Progress Report](progress-report.md) hub, teams can track progress of 
 
 :::image type="content" source="media/overview/progress-report.png" alt-text="Screenshot of Azure Test Plans, Progress Report hub":::
 
+<a id="parameters" />
+
 ## Manage shared parameters and the test cases they reference
 
 Teams use the [Parameters](repeat-test-with-different-data.md) hub, to define and manage parameters shared across test cases. Shared parameters provide support for repeating manual tests several times with different test data. For example, if your users can add different quantities of a product to a shopping cart, then you want to check that a quantity of 200 works just as well as a quantity of 1.  
  
 :::image type="content" source="media/overview/parameters.png" alt-text="Screenshot of Azure Test Plans, Parameters hub":::
 
+<a id="configurations" />
 
 ## Add and manage test configurations and variables
 
@@ -128,10 +224,11 @@ With the [Configurations](test-different-configurations.md) hub, teams can defin
 
 :::image type="content" source="media/overview/configurations.png" alt-text="Screenshot of Azure Test Plans, Configurations hub":::
 
-## 
+<a id="runs" />
+
+## Review test runs 
 
 The [Runs](test-different-configurations.md) hub displays the results of test runs. 
-
 
 :::image type="content" source="media/overview/recent-test-runs.png" alt-text="Screenshot of Recent test runs":::
 
@@ -186,33 +283,7 @@ to use these features. See more at [Add, run, and update inline tests](../boards
 
 ![Managing manual tests from the Kanban board](media/manual-testing/kanban-board-01.png)
 
-## Manual testing in Test Manager
-
-the **Test Plans** web portal. provides
-a rich test management solution for teams that need advanced manual
-testing capabilities. It includes all the capabilities
-required for the testing lifecycle - including test planning, authoring,
-execution, and tracking. Get started using the advanced manual 
-testing features with the
-[Test Manager extension for Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
-
-### Test planning
-
-Create and manage test plans and test suites for your teams with ease.
-Create static suites, requirement-based suites, or query-based suites.
-Export and share the test plans and test suites with your team.
-See more at [Create test plans](create-a-test-plan.md)
-
-![Creating manual test plans](media/manual-testing/create-test-plans-01.png)
-
-### Test authoring
-
-Create multiple test cases in one operation, or easily add existing
-test cases to a test suite. Assign single or multiple testers to 
-execute the tests. View test results and references to a test case
-across test suites. See more at [Create test cases](create-test-cases.md).
-
-![Creating manual test cases](media/manual-testing/create-test-cases-01.png)
+ 
 
 ### Testing applications
 
@@ -312,15 +383,7 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 
 ![Requesting and providing stakeholder feedback](media/manual-testing/stakeholder-feedback-01.png)
 
-## Key benefits
 
-* **Test on any platform**. With the **Test Plans** web portal, you can use your browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, web-based interface that can be accessed from all major browsers on any platform.
-
-* **Rich Diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
-
-* **End to End Traceability**. Azure DevOps and TFS provide [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
-
-* **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Azure DevOps](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
 
 ## Load testing
 

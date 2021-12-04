@@ -30,7 +30,8 @@
     href: ../../test/voluntary-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
     displayName: stakeholder, feedback, voluntary
   - name: Track stakeholder feedback requests
-    href: track-stakeholder-feedback.md
+    href: ../../test/track-stakeholder-feedback.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+    displayName: stakeholder, feedback, response, query 
 - name: Microsoft Feedback client
   items:
   - name: Request feedback
