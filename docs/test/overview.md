@@ -43,188 +43,44 @@ Integration with 3rd party test services
 > [!NOTE]  
 > This article applies to Azure DevOps Services and Azure DevOps Server 2020 and later versions. Most of the information is valid for earlier on-premises versions, however, images show only examples for the latest version. Also, the user interface changed significantly with the release of Azure DevOps Server 2020. For an overview of the new interface and supported capabilities, see [Navigate Test Plans](navigate-test-plans.md). 
 
-Azure Test Plans + Test & Feedback extensions 
 
-## Test tasks and access level overview 
+## How does Azure Load Testing work?
 
-| Task                                           | Stakeholder | Basic | Basic +Test Plans |  
-|------------------------------------------------|-------------|--------|------------------|  
-|Provide feedback using the<br/>Test & Feedback extension |    ✔️       |  ✔️   |        ✔️       |  
-|Perform exploratory testing       |    ✔️       |  ✔️   |        ✔️       |  
-|Run manual and automated tests                         |             |  ✔️   |        ✔️       |  
-|Create test plans and test suites |             |        |        ✔️       |  
-|Author test cases                 |             |        |        ✔️       |  
+Azure Test Plans provides several browser-based hubs to support planning, authoring, execution, and analysis of manual and automated tests. In addition, it provides the following tools to link tests to requirements, run tests, create bugs, and capture feedback.  
+
+- **Kanban board inline test tools**: An Azure Boards feature that supports defining test cases from the user stories, features, or bugs from the Kanban board. Also, you can launch the Test Runner or the Test & Feedback extension to run tests or perform exploratory testing. 
+- **Test Runner**: A browser-based tool that you launch from the **Test plans** hub to run manual tests. Test Runner supports rich data collection while performing tests, such as: image action log, video recording, code coverage, etc. It also allows users to create bugs and mark the status of tests.  
+- **Test & Feedback extension**: A free extension to support exploratory testing that you access from Chrome, Edge, or Firefox browsers. The extension captures interactions with the application being explored through images or video and entering verbal or type-written comments. Information is captured in the Feedback Response work item type to help track response data.
  
-## Supported scenarios and tasks
+All test planning and authoring is captured in one of the following test-specific work item types: **Test Plans**, **Test Suites**, **Test Cases**, **Shared Steps**, and **Shared Parameters**. These objects are stored in the work tracking data store as specific types of work items. Various links exist among these items to track testing of user stories or requirements. For a description of each of these test objects, see [Test objects and terms](test-objects-overview.md).
 
-### Supported testing scenarios 
+![Test management work item types](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
+ 
+ 
+## Supported scenarios and access level requirements 
 
-|Scenario         | Task                                  | Web portal  |  TCM | Test Runner |
+Access to Azure DevOps web portal features are managed through access levels assigned to users. The three main access levels are **Stakeholder**, **Basic**, and **Basic+Test** plans as described in [About access levels](../organizations/security/access-levels.md). The following table indicates the access-level required to exercise the associated tasks with Azure Test Plans.    
+ 
+
+|Scenario         | Task                                  | Stakeholder | Basic | Basic +Test Plans |  
 |---------------------------------------------------------|-------------|------|--------------|  
-|Test Planning    | Create test plans and test suites     |    ✔️       |  ✔️ |              |   
-|                 | Manage test plan run settings         |    ✔️       |  ✔️ |              |   
-|                 | Manage configurations                 |    ✔️       |  ✔️ |              |   
-|Test Authoring   | Author individual tests (test cases)  |    ✔️       |  ✔️ |              |   
-|                 | Author tests with Excel like grid     |    ✔️       |     |              |   
-|                 | Copy paste tests to/from Excel        |    ✔️       |     |              |   
-|                 | Create and manage shared parameters<br/>for data driven testing |    ✔️       |       |        |   
-|                 | Set up user acceptance testing for multiple users|    ✔️       |       |        |   
-|Test Execution   | Run tests on any platform (Windows, Linux, Mac)<br/>with Web based Test Runner|    ✔️       |       |     ✔️         | 
-|                 | Do rich data collection while performing tests,<br/>such as: image action log, video recording, code coverage, etc.|    ✔️  |  |  ✔️ | 
-|Analyze and Review Tests | Browse test results |    ✔️       |       |              |   
-|                 | Create charts with various pivots like priority,<br/>configuration, etc., to track test progress|    ✔️       |     |           |  
-|                 | Export test plans and test suites for reviewing|    ✔️       |     |           | 
-|                 | User Acceptance Testing – Assign tests and invite by email|    ✔️       |     |           | 
+|Test Planning    | Create test plans and test suites     |             |      |      ✔️      |   
+|                 | Manage test plan run settings         |             |      |      ✔️      |   
+|                 | Manage configurations                 |             |      |      ✔️      |   
+|Test Authoring   | Author individual tests (test cases)  |             |      |      ✔️      |   
+|                 | Author tests with Excel like grid     |              |      |      ✔️      |   
+|                 | Copy paste tests to/from Excel        |            |      |      ✔️      |    
+|                 | Create and manage shared parameters<br/>for data driven testing |            |      |      ✔️      |   
+|                 | Set up user acceptance testing for multiple users|             |      |      ✔️      |   
+|Test Execution   | Run tests on any platform (Windows, Linux, Mac)<br/>with Test Runner|           |    ✔️   |     ✔️         | 
+|                 | Perform exploratory testing |    ✔️  |  ✔️ |  ✔️ | 
+|Analyze and Review Tests | Browse test results |           |   ✔️    |      ✔️        |   
+|                 | Create charts with various pivots like priority,<br/>configuration, etc., to track test progress|     |  ✔️   |   ✔️   |  
+|                 | Export test plans and test suites for review |    ✔️       |     |           | 
+|                 | User Acceptance Testing – Assign tests and invite by email|    ✔️       |   ✔️   |     ✔️       | 
+ 
 
-
-### Supported tasks for test objects 
-
-
-|Test object        | Task                                         | Web portal  | TCM |  
-|----------------------------------------------------------------|-------------|-----|  
-|Test plans       | Create                                       |    ✔️       |     |  
-|                 | Copy                                         |    ✔️       |     |  
-|                 | Clone                                        |             |  ✔️ |  
-|                 | Add requirements                             |    ✔️       |    |  
-|                 | New suites                                   |    ✔️       |    |  
-|                 | Export                                       |    ✔️       |    |  
-|                 | Import test suites                           |    ✔️       |    |  
-|                 | Charts                                       |    ✔️       |    |  
-|                 | Configurations                               |    ✔️       |    |  
-|                 | Properties                                   |    ✔️       |    |  
-|                 | Run settings                                 |    ✔️       |    |
-|                 | View/list                                    |    ✔️       |  ✔️ |                  
-|Test suite       | Create                                       |    ✔️       |    |  
-|                 | Clone                                        |             |  ✔️ |  
-|                 | Export                                       |    ✔️       |    |  
-|                 | Add and view requirement(s)                  |    ✔️       |    |  
-|                 | Assign configurations                        |    ✔️       |    |  
-|                 | Assign testers                               |    ✔️       |    |  
-|                 | Run                                          |    ✔️       |    |  
-|                 | Run with options                             |    ✔️       |    |  
-|                 | Run in client                                |    ✔️       |    | 
-|                 | View/list                                    |    ✔️       | ✔️ |  
-|Test case        | Create                                       |    ✔️       |    |  
-|                 | Author test cases using Excel like Grid      |    ✔️       |    |   
-|                 | Add existing                                 |    ✔️       |    |  
-|                 | View results                                 |    ✔️       |    |  
-|                 | Set state: Active, Passed, Fail, Blocked, N/A|    ✔️       |    |  
-|Shared steps     | Create                                       |    ✔️       |    |  
-|                 | Add to test cases                            |    ✔️       |    |   
-|Shared parameters| Create                                       |    ✔️       |     |  
-|                 | Add to test cases                            |    ✔️       |     |   
-|                 | Manage global view                           |    ✔️       |     |   
-|Test runs        | Create                                       |             |  ✔️  |   
-|                 | Execute                                      |    ✔️       |  ✔️  |   
-|                 | Export                                       |             |  ✔️  |   
-|                 | Abort                                        |             |  ✔️  |  
-|                 | Delete                                       |    ✔️       |  ✔️  |   
-|                 | Publish                                      |              |  ✔️  |  
-|                 | View/list                                    |    ✔️       |  ✔️ |  
-|Test environments| Create                                       |    ✔️       |     |  
-|                 | View/list                                    |    ✔️       |  ✔️ |  
-
-<!--- TCM commands: 
-
-Commands:
-
-tcm configs          Lists test configurations
-
-tcm fieldmapping     Imports or exports the XML file that maps to the type
-                     provided.
-
-tcm plans            Provides operations to list and clone test plans
-
-tcm run              Creates, deletes, lists, aborts, publishes,
-                     exports, or runs a group of tests.
-
-tcm suites           Provides operations to list and clone test suites
-
-tcm testenvironments Lists test environments
-
-tcm testcase         Imports testcases from a specified assembly or a test file (NOT DOCUMENTED) 
-
-The run command provides the ability to create, delete, list,
-abort, execute, export, and publish runs.  The options
-available for each of these actions are listed below.
-
-tcm run /delete /id:id [/noprompt] /collection:teamprojectcollectionurl
-        /teamproject:project [/login:username,[password]]
-
-tcm run /abort /id:id /collection:teamprojectcollectionurl /teamproject:project
-        [/login:username,[password]]
-
-tcm run /export
-        /id:id
-        /resultsfile:path
-        /collection:teamprojectcollectionurl
-        /teamproject:project
-        [/login:username,[password]]
-        [/attachment:attachmentname]
-
-tcm run /list
-        /collection:teamprojectcollectionurl
-        /teamproject:project
-        [/planid:id  |  /querytext:query]
-        [/login:username,[password]]
-
-tcm run /create
-        /title:title
-        /planid:id
-        /collection:teamprojectcollectionurl
-        /teamproject:project
-        (/suiteid:id /configid:configid  |  /querytext:query)
-        [/settingsname:name]
-        [/owner:owner]
-        [/build:buildnumber /builddefinition:builddefinition]
-        [/flavor:flavor]
-        [/platform:platform]
-        [/builddir:directory]
-        [/testenvironment:name]
-        [/login:username,[password]]
-        [/include]
-
-tcm run /publish
-        /suiteid:id
-        /configid:id
-        /resultowner:owner
-        /resultsfile:path
-        /collection:teamprojectcollectionurl
-        /teamproject:project
-        [/title:runtitle]
-        [/runowner:owner]
-        [/build:buildnumber /builddefinition:builddefinition]
-        [/flavor:flavor]
-        [/platform:platform]
-        [/assignfailurestouser:user]
-        [/login:username,[password]]
-        [/buildverification]
-
-tcm run /execute
-        /id:id
-        /collection:teamprojectcollectionurl
-        /teamproject:project
-        [/login:username,[password]]
-
--->
-
-
-
-
-
-
-
-
-
-
-
-## Test objects and artifacts 
-
-To support manual and automated testing, you add and group three main types of test-specific work item types: **Test Plans**, **Test Suites**, and **Test Cases**. To support sharing of various test steps and test parameters, you define **Shared Steps** and **Shared Parameters**. These objects are stored in the work tracking data store as specific types of work items. For a description of each of these test objects, see [Test objects and terms](test-objects-overview.md).
-
-:::image type="content" source="../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png" alt-text="Conceptual image of test management work item types":::
-
-## Manual and automated testing 
+## Manual and exploratory testing 
 
 
 - **[Planned manual testing](#manual-testing)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
@@ -471,6 +327,141 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 Azure DevOps cloud-based load testing service is deprecated. However, Azure Load Testing Preview is available. Azure Load Testing Preview is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. To learn more, see [What is Azure Load Testing Preview?](/azure/load-testing/overview-what-is-azure-load-testing). 
 
 To learn more about the deprecation of Azure DevOps load testing and other, alternative services see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/test/load-test/overview).
+
+
+
+### Supported tasks for test objects 
+
+
+|Test object        | Task                                         | Web portal  | TCM |  
+|----------------------------------------------------------------|-------------|-----|  
+|Test plans       | Create                                       |    ✔️       |     |  
+|                 | Copy                                         |    ✔️       |     |  
+|                 | Clone                                        |             |  ✔️ |  
+|                 | Add requirements                             |    ✔️       |    |  
+|                 | New suites                                   |    ✔️       |    |  
+|                 | Export                                       |    ✔️       |    |  
+|                 | Import test suites                           |    ✔️       |    |  
+|                 | Charts                                       |    ✔️       |    |  
+|                 | Configurations                               |    ✔️       |    |  
+|                 | Properties                                   |    ✔️       |    |  
+|                 | Run settings                                 |    ✔️       |    |
+|                 | View/list                                    |    ✔️       |  ✔️ |                  
+|Test suite       | Create                                       |    ✔️       |    |  
+|                 | Clone                                        |             |  ✔️ |  
+|                 | Export                                       |    ✔️       |    |  
+|                 | Add and view requirement(s)                  |    ✔️       |    |  
+|                 | Assign configurations                        |    ✔️       |    |  
+|                 | Assign testers                               |    ✔️       |    |  
+|                 | Run                                          |    ✔️       |    |  
+|                 | Run with options                             |    ✔️       |    |  
+|                 | Run in client                                |    ✔️       |    | 
+|                 | View/list                                    |    ✔️       | ✔️ |  
+|Test case        | Create                                       |    ✔️       |    |  
+|                 | Author test cases using Excel like Grid      |    ✔️       |    |   
+|                 | Add existing                                 |    ✔️       |    |  
+|                 | View results                                 |    ✔️       |    |  
+|                 | Set state: Active, Passed, Fail, Blocked, N/A|    ✔️       |    |  
+|Shared steps     | Create                                       |    ✔️       |    |  
+|                 | Add to test cases                            |    ✔️       |    |   
+|Shared parameters| Create                                       |    ✔️       |     |  
+|                 | Add to test cases                            |    ✔️       |     |   
+|                 | Manage global view                           |    ✔️       |     |   
+|Test runs        | Create                                       |             |  ✔️  |   
+|                 | Execute                                      |    ✔️       |  ✔️  |   
+|                 | Export                                       |             |  ✔️  |   
+|                 | Abort                                        |             |  ✔️  |  
+|                 | Delete                                       |    ✔️       |  ✔️  |   
+|                 | Publish                                      |              |  ✔️  |  
+|                 | View/list                                    |    ✔️       |  ✔️ |  
+|Test environments| Create                                       |    ✔️       |     |  
+|                 | View/list                                    |    ✔️       |  ✔️ |  
+
+<!--- TCM commands: 
+
+Commands:
+
+tcm configs          Lists test configurations
+
+tcm fieldmapping     Imports or exports the XML file that maps to the type
+                     provided.
+
+tcm plans            Provides operations to list and clone test plans
+
+tcm run              Creates, deletes, lists, aborts, publishes,
+                     exports, or runs a group of tests.
+
+tcm suites           Provides operations to list and clone test suites
+
+tcm testenvironments Lists test environments
+
+tcm testcase         Imports testcases from a specified assembly or a test file (NOT DOCUMENTED) 
+
+The run command provides the ability to create, delete, list,
+abort, execute, export, and publish runs.  The options
+available for each of these actions are listed below.
+
+tcm run /delete /id:id [/noprompt] /collection:teamprojectcollectionurl
+        /teamproject:project [/login:username,[password]]
+
+tcm run /abort /id:id /collection:teamprojectcollectionurl /teamproject:project
+        [/login:username,[password]]
+
+tcm run /export
+        /id:id
+        /resultsfile:path
+        /collection:teamprojectcollectionurl
+        /teamproject:project
+        [/login:username,[password]]
+        [/attachment:attachmentname]
+
+tcm run /list
+        /collection:teamprojectcollectionurl
+        /teamproject:project
+        [/planid:id  |  /querytext:query]
+        [/login:username,[password]]
+
+tcm run /create
+        /title:title
+        /planid:id
+        /collection:teamprojectcollectionurl
+        /teamproject:project
+        (/suiteid:id /configid:configid  |  /querytext:query)
+        [/settingsname:name]
+        [/owner:owner]
+        [/build:buildnumber /builddefinition:builddefinition]
+        [/flavor:flavor]
+        [/platform:platform]
+        [/builddir:directory]
+        [/testenvironment:name]
+        [/login:username,[password]]
+        [/include]
+
+tcm run /publish
+        /suiteid:id
+        /configid:id
+        /resultowner:owner
+        /resultsfile:path
+        /collection:teamprojectcollectionurl
+        /teamproject:project
+        [/title:runtitle]
+        [/runowner:owner]
+        [/build:buildnumber /builddefinition:builddefinition]
+        [/flavor:flavor]
+        [/platform:platform]
+        [/assignfailurestouser:user]
+        [/login:username,[password]]
+        [/buildverification]
+
+tcm run /execute
+        /id:id
+        /collection:teamprojectcollectionurl
+        /teamproject:project
+        [/login:username,[password]]
+
+-->
+
+
 
 ## Next steps
 > [!div class="nextstepaction"]
