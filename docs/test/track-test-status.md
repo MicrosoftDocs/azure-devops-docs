@@ -210,7 +210,6 @@ If you already know how to add a chart, jump to the [examples](#ExamplesTestCase
 <a name="ExamplesTestCase"></a>
 
 ## Test case examples
-::: moniker range=">=azure-devops-2020"
 
 These examples show common ways to interact with test case results.
 
@@ -277,7 +276,6 @@ Select **State** for **Group by** or **Columns**.
 <a name="configure-test-widget"></a>
 
 ## Share charts on your team's dashboard
-::: moniker range=">=azure-devops-2020"
 
 Pin a chart to your team's dashboard for all the team to view.
 Use the chart's context menu.
