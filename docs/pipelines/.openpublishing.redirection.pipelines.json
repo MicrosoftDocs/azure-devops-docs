@@ -14,6 +14,11 @@
       "source_path_from_root": "/docs/pipelines/release/deploy-iot-using-azure-pipelines.md",
       "redirect_url": "/azure/iot-edge/how-to-continuous-integration-continuous-deployment",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"/docs/pipelines/targets/azure-functions-windows.md",
+      "redirect_url":"/docs/pipelines/targets/azure-functions.md",
+      "redirect_document_id": false
     }
   ]
 }
