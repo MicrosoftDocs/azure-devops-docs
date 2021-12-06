@@ -17,7 +17,7 @@
     },
     {
       "source_path_from_root":"/docs/pipelines/targets/azure-functions-windows.md",
-      "redirect_url":"/docs/pipelines/targets/azure-functions.md",
+      "redirect_url":"/azure/devops/pipelines/targets/azure-functions",
       "redirect_document_id": false
     }
   ]
