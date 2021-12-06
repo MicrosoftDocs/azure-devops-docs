@@ -35,7 +35,7 @@ To use sample code instead, fork this GitHub repo:
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Follow the [Build, test, and push Docker container apps](../ecosystems/containers/build-image.md) to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and push the image to container registry.
 
@@ -44,7 +44,6 @@ Follow the [Build, test, and push Docker container apps](../ecosystems/container
 ::: moniker range="azure-devops-2019"
 
 We aren't yet advising new users to use YAML pipelines to deploy from Azure DevOps Server 2019.
-If you're an experienced pipeline user and already have a YAML pipeline to build your .NET Core app, then you might find the examples below useful.
 
 ::: moniker-end
 
@@ -132,7 +131,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 ## Configure registry credentials in Function App
 
-App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to your **Function App --> Platform features --> All settings**. Select **Container settings** from the app service and update the **Image source, Registry** and save.
+App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to your **Function App** > **Platform features** > **All settings**. Select **Container settings** from App Service. Update the **Image source** and **Registry** and save.
 
 ![Screenshot showing Update image source and Registry in container settings.](media/functionapp-container/container-settings.png)
 
@@ -142,7 +141,7 @@ App Service needs information about your registry and image to pull the private 
 
 ::: moniker range=">= azure-devops-2019"
 
-The simplest way to deploy to an Azure Function App Container is to use the **[Azure Function App on Container Deploy](https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureFunctionAppContainerV1/README.md)** task.
+The simplest way to deploy to an Azure Function App Container is to use the [Azure Function App on Container Deploy task](../tasks/deploy/azure-rm-functionapp-containers.md).
 
 To deploy to an Azure Function App container, add the following snippet at the end of your **azure-pipelines.yml** file:
 
@@ -168,7 +167,7 @@ variables:
     imageName: $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
-The snippet assumes that the build steps in your YAML file build and push the docker image to your Azure container registry. The **Azure Function App on Container Deploy** task will pull the appropriate docker image corresponding to the BuildId from the repository specified, and then deploys the image to the Azure Function App Container.
+The snippet pushes the Docker image to your Azure Container Registry. The **Azure Function App on Container Deploy** task will pull the appropriate Docker image corresponding to the `BuildId` from the repository specified, and then deploy the image to the Azure Function App Container.
 
 ::: moniker-end
 
@@ -180,7 +179,7 @@ YAML pipelines aren't available on TFS.
 
 #### [Classic](#tab/classic/)
 
-The simplest way to deploy to an Azure Function App Container is to use the **Azure Function App on Container Deploy** task.
+The best way to deploy to an Azure Function App Container is to use the **Azure Function App on Container Deploy** task.
 This task is added to the release pipeline when you select the deployment task for Azure Function App on Container deployment.
 Templates exist for apps developed in various programming languages. If you can't find a template for your language, select the generic **Azure App Service Deployment** template.
 
