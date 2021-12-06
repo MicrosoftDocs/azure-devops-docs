@@ -61,7 +61,7 @@ For user acceptance testing, you can assign multiple testers to a set of tests. 
 
    > [!NOTE]
    > For on-premises Azure DevOps, you must have an SMTP server configured for your deployment.
-   > For more information, see [Configure an SMTP server](../server/admin/setup-customize-alerts.md)
+   > For more information, see [Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts)
 ::: moniker-end
 
 If you have a large pool of potential testers, you might need to search for testers, as described above.
