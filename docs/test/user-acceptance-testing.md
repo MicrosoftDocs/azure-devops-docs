@@ -31,8 +31,8 @@ or Product Backlog items as their requirements.
 In addition, you must have already created work items and 
 a test plan. If not, follow the steps provided in the following articles: 
 
-* [Create your backlog](../boards/backlogs/create-your-backlog.md)
-* [Create a test plan](create-a-test-plan.md)
+- [Create your backlog](../boards/backlogs/create-your-backlog.md)
+- [Create a test plan](create-a-test-plan.md)
 
 <a name="search-assign"></a>
 
@@ -94,7 +94,7 @@ the dashboard charts, verify that the columns in your
 data have been added to the Tests view.
 For details see [this blog post](https://devblogs.microsoft.com/devops/visual-studio-team-services-manual-testing-tips-charts-iterations-and-runs/).
 
-## Next steps
+## Related articles
 
 - [Test objects and terms](test-objects-overview.md)
 - [Collect diagnostic data while testing](collect-diagnostic-data.md)
