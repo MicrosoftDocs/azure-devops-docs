@@ -1,14 +1,14 @@
 ---
-title: Connect Azure Boards to a Microsoft Office client
+title: Connect Azure Boards to an Office client to track your work
 titleSuffix: Azure Boards
-description: Learn how to connect to an Office client to track work in Azure Boards or Azure DevOps.
+description: Learn how to connect Excel to integrate and track your work in Azure Boards or Azure DevOps 
 ms.technology: devops-agile
 ms.assetid: fbd7b5e1-e4c4-4976-9596-236e980fdb3b
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '<= azure-devops'
-ms.date: 10/04/2021
+monikerRange: '>= tfs-2013'
+ms.date: 11/19/2021
 ---
 
 # Connect Azure Boards to an Office client 
@@ -18,13 +18,13 @@ ms.date: 10/04/2021
 
 ::: moniker range=">= azure-devops-2019"
 
-To support your work tracking efforts, you can use Microsoft Excel. You can decide to either work in an online mode where you're connected to either Azure Boards or Azure DevOps Server, or in an offline mode where you access the local computer and document. 
+To support your work tracking efforts, you can use Microsoft Excel. You can either work in online mode, where you're connected to either Azure Boards or Azure DevOps Server. Or, work in offline mode, where you access the local computer and document. 
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-To support your work tracking efforts, you can use Microsoft Excel and Microsoft Project. You can decide to either work in an online mode where you're connected to either Azure Boards or Team Foundation Server (TFS), or in an offline mode where you access the local computer and document. 
+To support your work tracking efforts, use Microsoft Excel and Microsoft Project. You can either work in online mode, where you're connected to Azure Boards or Team Foundation Server (TFS). Or, work in offline mode, where you access the local computer and document. 
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ In this article you'll learn about the following items:
 
 ## Supported Office clients and Azure DevOps versions 
 
-The following table indicates the Office clients that are supported for each Azure DevOps version starting with Team Foundation Server 2013 (TFS 2013). 
+The following table indicates the Office clients supported for each Azure DevOps version starting with Team Foundation Server 2013 (TFS 2013). 
 
 > [!NOTE]  
 > macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel or any other Office client isn't supported.  
@@ -119,7 +119,7 @@ The following table indicates the Office clients that are supported for each Azu
 :::row-end:::
 
 #### Notes: 
-1.  Support for Project integration and the **TFSFieldMapping** command have been deprecated for Azure DevOps Server 2019 and later versions. You may find support using one of the [Marketplace extensions](#marketplace). 
+1.  Support for Project integration and the TFSFieldMapping command is deprecated for Azure DevOps Server 2019 and later versions. You might find support using one of the [Marketplace extensions](#marketplace). 
 2.  Support for linking PowerPoint files to work items from within PowerPoint has been deprecated starting with Visual Studio 2019 and  Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.  
  
 
@@ -229,7 +229,7 @@ When you add or update work items from Excel or Project, local copies of your wo
 
 ::: moniker-end  
 
-The data in the local document at first matches the data in the database, but you or other team members can change the data about work items and cause the two to differ. To view the most recent changes from the database, refresh the document. This downloads the latest values in the data store to your local document. To write changes from the document to the database, publish the changes. Publishing uploads the changes you made to the work item tracking data store.   
+At first, the data in the local document matches the data in the database. But you or other team members can change the data about work items and cause the two to differ. To view the most recent changes from the database, refresh the document. The refresh downloads the latest values in the data store to your local document. To write changes from the document to the database, publish the changes. Publishing uploads the changes you made to the work item tracking data store.   
 
 To keep work items in sync from your local data store and Azure Boards, publish and refresh often. 
 
@@ -279,11 +279,11 @@ This connection method requires that you have installed [Azure DevOps Open in Ex
 
 ### [Connect from client to Azure Boards](#tab/open-excel-cloud) 
 
-To connect from your Office client to an Azure DevOps Services project, complete the following steps.  
+To connect from your Office client to an Azure DevOps Services project, do the following steps.  
 
 1.  Start with a blank worksheet. 
 
-1.  If your client is signed into a user account, make sure that it is your Azure DevOps user account. If not, choose your account name and sign in as another user.  
+1.  If your client is signed into a user account, make sure that it's your Azure DevOps user account. If not, choose your account name and sign in as another user.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Excel Team Ribbon, Choose New List. ](media/connect/sign-in-as-other-user.png)
@@ -299,9 +299,9 @@ To connect from your Office client to an Azure DevOps Services project, complete
 	> [!div class="mx-imgBorder"]  
 	> ![Connect to Azure DevOps Server dialog.](media/connect/connect-to-azure-devops.png)
 
-	If you're signed-in to your Office client with your Azure DevOps user account, then the set of servers, both cloud and on-premises, you have access to is automatically populated in the drop-down menu. 
+	If you're signed into your Office client with your Azure DevOps user account, the set of servers, both cloud and on-premises that you have access to, automatically populate in the drop-down menu. 
 
-	If you're not signed-in or you're working from an older version of an Office client, and you haven't connected to any servers previously, you need to add them now. 
+	If you're not signed-in, you're working from an older version of an Office client, or you haven't connected to any servers previously, you need to add them now. 
 
 1. Add a server to connect to. 
 
@@ -323,11 +323,11 @@ To connect from your Office client to an Azure DevOps Services project, complete
 
 ### [Connect client to Azure DevOps on-premises](#tab/open-excel-on-prem) 
 
-To connect from your Office client to an Azure DevOps Server project, complete the following steps.  
+To connect from your Office client to an Azure DevOps Server project, do the following steps.  
 
 1.  Start with a blank worksheet. 
 
-1.  If your client is signed into a user account, make sure that it is your Azure DevOps account. If not, choose your account name and sign in as another user.  
+1.  If your client is signed into a user account, make sure that it's your Azure DevOps account. If not, choose your account name and sign in as another user.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot to select sign-in on Excel ribbon.](media/connect/sign-in-as-other-user.png)
@@ -343,9 +343,9 @@ To connect from your Office client to an Azure DevOps Server project, complete t
 	> [!div class="mx-imgBorder"]  
 	> ![Connect to Azure DevOps Server dialog, on-premises version](media/connect/connect-to-azure-devops.png)
 
-	If you're signed-in to your Office client with your Azure DevOps user account, then the set of servers, both cloud and on-premises, you have access to is automatically populated in the drop-down menu. 
+	If you're signed into your Office client with your Azure DevOps user account, the set of servers, both cloud and on-premises that you have access to, automatically populate in the drop-down menu. 
 
-	If you're not signed-in or you're working from an older version of an Office client, and you haven't connected to any servers previously, you need to add them now. 
+	If you're not signed-in, you're working from an older version of an Office client, or you haven't connected to any servers previously, you need to add them now. 
 
 1. Add a server to connect to. 
 
@@ -396,7 +396,7 @@ To learn more, see [Bulk add work items with Excel](bulk-add-modify-work-items-e
 
 ::: moniker range="< azure-devops" 
 
-If your Azure DevOps project is moved to a different project collection in the same instance of Azure DevOps, your documents will automatically be reconnected. However, if the project is moved to a different instance of Azure DevOps, you must manually reconnect your documents to the new server.
+If you move your Azure DevOps project to a different project collection in the same instance of Azure DevOps, your documents automatically reconnect. However, if the project moves to a different instance of Azure DevOps, you must manually reconnect your documents to the new server.
 
 ::: moniker-end  
 
@@ -406,7 +406,7 @@ If your Azure DevOps project is moved to a different project collection in the s
 
 ## Work offline and reconnect to Azure Boards 
 
-One advantage of working in Excel or Project is that you can work offline and add or modify work items. The following procedures show you how to disconnect an Excel work item list or a Project plan from Azure Boards and later reconnect to synchronize the document with the work item database.  
+One advantage of working in Excel or Project is that you can work offline and add or modify work items. The following procedures show you how to disconnect an Excel work item list or a Project plan from Azure Boards. You can then reconnect later to synchronize the document with the work item database.  
   
 > [!NOTE]
 >  If the project that contains work items for your Excel or Project document is moved to a different organization or Azure DevOps Server instance, you must reconfigure the server to which the document connects. For more information, see [Connect Azure DevOps project to Excel](#excel-project) provided earlier in this article.  
@@ -430,7 +430,7 @@ To disconnect an Excel or Project document file from the network:
   
 4.  Disconnect your computer from the network, or save the work item list file and copy it to another computer.  
   
-     An error message might appear that tells you that the Office program couldn't establish a connection with an Azure DevOps Server.  
+     An error message might appear that tells you the Office program couldn't establish a connection with an Azure DevOps Server.  
   
 5.  Modify or update the work item list as needed.  
   

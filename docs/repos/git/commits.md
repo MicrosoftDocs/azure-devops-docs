@@ -43,10 +43,6 @@ Changes to unstaged but modified files are kept, but the commit uses the unmodif
 Commits are created in your local Git repository, so you don't have to worry about your changes being perfect. 
 Continue to create commits as you work, [pushing](pushing.md) your changes to the team when they are ready to share.
 
-### Video overview
-
-<iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Commits/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
-
 ## What's in a commit
 
 Commits include the following information:

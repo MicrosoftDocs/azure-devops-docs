@@ -32,10 +32,8 @@ To determine what level a permission is defined, see the [Permissions lookup gui
 
 ::: moniker-end  
 
-
-::: moniker range="azure-devops"
-
 <a name="find-owner"></a>
+::: moniker range="azure-devops"
 
 ## Look up the organization owner 
 

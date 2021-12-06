@@ -28,11 +28,21 @@ In this tutorial you learn how to:
 > * Fetch and merge with pull
 > * Update your local branch with the latest changes from main
 
+
+> [!TIP]   
+> If there's a merge conflict between a commit you haven't [pushed](pushing.md) yet and a commit you're merging or pulling, [resolve those conflicts](merging.md) before you finish updating your code.
+
+
+<!--- 
 ## Video Overview
 
 <iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Pull/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
 
-If there's a merge conflict between a commit you haven't [pushed](pushing.md) yet and a commit you're merging or pulling, [resolve those conflicts](merging.md) before you finish updating your code.
+
+
+-->
+
+
 
 ## Download changes with fetch
 
@@ -40,8 +50,8 @@ You download changes to your local branch from the remote through `fetch`. `Fetc
 
 `Fetch` doesn't merge any changes into your local branches. It only downloads the new commits for your review.
 
->[!TIP]
->To help keep your branches list clean and up to date, configure Git to prune remote branches during fetch. You can configure this setting from the [command line](git-config.md?tabs=command-line#prune-remote-branches-during-fetch) or from within [Visual Studio](git-config.md?tabs=visual-studio#prune-remote-branches-during-fetch).
+> [!TIP]
+> To help keep your branches list clean and up to date, configure Git to prune remote branches during fetch. You can configure this setting from the [command line](git-config.md?tabs=command-line#prune-remote-branches-during-fetch) or from within [Visual Studio](git-config.md?tabs=visual-studio#prune-remote-branches-during-fetch).
 
 #### [Visual Studio](#tab/visual-studio/)
 
