@@ -94,4 +94,9 @@ the dashboard charts, verify that the columns in your
 data have been added to the Tests view.
 For details see [this blog post](https://devblogs.microsoft.com/devops/visual-studio-team-services-manual-testing-tips-charts-iterations-and-runs/).
 
- 
+## Next steps
+
+- [Test objects and terms](test-objects-overview.md)
+- [Collect diagnostic data while testing](collect-diagnostic-data.md)
+- [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md)
+- [FAQs for manual testing](reference-qa.md#sharesteps)
