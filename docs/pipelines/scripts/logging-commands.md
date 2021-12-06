@@ -106,6 +106,7 @@ steps:
           Write-Host "##[command]Command-line being run"
           Write-Host "##[endgroup]"
 ```
+---
 
 Those commands will render in the logs like this:
 
