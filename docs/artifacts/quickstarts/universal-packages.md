@@ -61,26 +61,26 @@ To publish a universal package, run the following command in an elevated command
 The following command will publish a universal package to an organization-scoped feed:
 
 ```Command
-az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name ><PACKAGE_NAME> --version <PACKAGE_VERSION> --description <PACKAGE_DESCRIPTION> --path <PACKAGE_DIRECTORY>
+az artifacts universal publish --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --description <PACKAGE_DESCRIPTION> --path <PACKAGE_DIRECTORY>
 ```
 
-## View the package in your feed
+## View published packages
 
-To view the package that you just published, go to your organization, select your project, select **Artifacts**, then select your feed from the drop-down menu. 
+1. Navigate to your Azure DevOps organization.
 
-> [!div class="mx-imgBorder"] 
-> ![View published universal package](media/universal-in-feed.png)
+1. Select your project, and then select **Artifacts**.
 
-## Download a universal package
+1. Select your feed from the drop-down menu. 
 
-Now that you've published your first universal package, let's try to download it using Azure CLI. The following example will download the package that we published earlier.
+    :::image type="content" source="media/universal-in-feed.png" alt-text="Screenshot showing the newly published package.":::
+
+## Download universal packages
+
+To download a universal package using Azure CLI, run the following command in an elevated command prompt.
 
 ```Command
-az artifacts universal download --organization https://dev.azure.com/Fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .
+az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME>  --name <PACKAGE_NAME> --version <PACKAGE_VERSION> --path <DOWNLOAD_PATH>
 ```
-
-> [!NOTE]
-> Azure DevOps doesn't support direct HTTP/HTTPS download links. 
 
 ## Download specific files
 
