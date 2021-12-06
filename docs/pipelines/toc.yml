@@ -393,10 +393,8 @@
       items:
         - name: Function App on Container
           href: targets/function-app-container.md
-        - name: Function App on Linux
+        - name: Function App
           href: targets/azure-functions.md
-        - name: Function App on Windows
-          href: targets/azure-functions-windows.md
     - name: Azure Resource Manager (ARM) templates
       items:
         - name: Use a Resource Manager template to deploy
