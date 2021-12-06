@@ -23,7 +23,7 @@ Azure Functions is a serverless solution that allows you to write less code, mai
 
 ## Create your Function App for Containers
 
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
+If you already have an app at GitHub that you want to deploy, you can try creating a pipeline for that code.
 
 To use sample code instead, fork this GitHub repo:
 
@@ -64,7 +64,7 @@ YAML pipelines aren't available on TFS.
 
 To get started: 
 
-1. Fork this repo in GitHub, or import it into Azure Repos:
+1. Fork this repo at GitHub, or import it into Azure Repos:
 
    ```
    https://github.com/azooinmyluggage/GHFunctionAppContainer
@@ -80,8 +80,6 @@ To get started:
 
 * * *
 
-Now that the build pipeline is in place, you will learn a few more common configurations to customize the deployment of the Azure Function App Container.
-
 <a name="endpoint"></a>
 
 ## Add a service connection
@@ -93,7 +91,7 @@ input. The Azure service connection stores the credentials to connect from Azure
 
 ::: moniker range=">= azure-devops-2019"
 
-You must supply an Azure service connection to the `AzureFunctionAppContainer` task. Add the following YAML snippet to your existing **azure-pipelines.yaml** file. Make sure you add the service connection details in the variables section as shown below.
+The `AzureFunctionAppContainer` task requires an Azure service connection. Add the following YAML snippet to your existing **azure-pipelines.yaml** file. Make sure you add the service connection details in the variables section as shown below.
 
 ```yaml
 variables: 

@@ -26,7 +26,7 @@ Azure Functions is a serverless solution that allows you to write less code, mai
 This is a step-by-step guide to using Azure Pipelines with Azure Functions.
 #### [.NET Core](#tab/dotnet-core/)
 
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
+If you already have an app at GitHub that you want to deploy, you can try creating a pipeline for that code.
 
 To use sample code instead, fork this GitHub repo:
 
@@ -36,7 +36,7 @@ To use sample code instead, fork this GitHub repo:
 
 #### [Java](#tab/java)
 
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
+If you already have an app at GitHub that you want to deploy, you can try creating a pipeline for that code.
 
 To use sample code instead, fork this GitHub repo:
 ```
@@ -45,7 +45,7 @@ To use sample code instead, fork this GitHub repo:
 
 #### [Nodejs](#tab/nodejs)
 
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
+If you already have an app at GitHub that you want to deploy, you can try creating a pipeline for that code.
 
 To use sample code instead, fork this GitHub repo:
 ```
@@ -64,7 +64,7 @@ To use sample code instead, fork this GitHub repo:
 2. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
 3. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 4. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
-5. When the list of repositories appears, select your desired sample app repository.
+5. When the list of repositories appears, select your sample app repository.
 6. Azure Pipelines will analyze your repository and recommend a template. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
 7. A new run is started. Wait for the run to finish.
 
@@ -94,7 +94,7 @@ YAML pipelines aren't available on TFS.
 
 To get started: 
 
-1. Fork this repo in GitHub, or import it into Azure Repos:
+1. Fork this repo at GitHub, or import it into Azure Repos:
 
    ```
    https://github.com/MicrosoftDocs/pipelines-java-function
@@ -124,7 +124,7 @@ input. The Azure service connection stores the credentials to connect from Azure
 
 ::: moniker range=">= azure-devops-2019"
 
-You must supply an Azure service connection to the AzureFunctionApp task. Add the following YAML snippet to your existing **azure-pipelines.yaml** file. Make sure you add the service connection details in the variables section as shown below-
+The AzureFunctionApp task requires an Azure service connection. Add the following YAML snippet to your existing **azure-pipelines.yaml** file. Make sure you add the service connection details in the variables section as shown below-
 
 ```yaml
 variables: 
