@@ -16,7 +16,7 @@ ms.date: 12/06/2021
 
 Many manual tests require performing an identical sequence of steps and test data. For example, logging in to a web app or saving form data are common steps performed in several test sequences. With the use of **Shared Steps** and **Shared Parameters** work items, you can minimize the creation of test steps and data that you need to enter and manage. **Shared Steps** define a sequence of steps that can be referenced by many different test cases. Similarly, **Shared Parameters** define a set of test data that can be referenced by many different test cases. These work item types are explicitly linked with the **Test Cases/Shared Steps** and **Reference By/References** link types as shown in the following image.
 
-![Diagram shows Shared Steps connected to Test Case, which is also connected to Shared Parameters.](media/shared-steps/shared-steps-shared-parameters.md)
+![Diagram shows Shared Steps connected to Test Case, which is also connected to Shared Parameters.](media/shared-steps/shared-steps-shared-parameters.png)
 
 This article describes how to define and use **Shared Steps**. To learn how to define and reference **Shared Parameters**, see [Repeat a test with different data](repeat-test-with-different-data.md).
 
