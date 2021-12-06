@@ -27,7 +27,7 @@ With universal packages, you can store different types of packages other than th
    az --version
    ```
 
-2. install the Azure DevOps extension.
+2. Install the Azure DevOps extension.
 
    ```Command
    az extension add --name azure-devops
@@ -84,23 +84,17 @@ az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGAN
 
 ## Download specific files
 
-If you don't need the entire Universal Package and only need specific files, you can use the `--file-filter` parameter to download a subset of files.
+If you only want to download specific files, you can use the `--file-filter` parameter to download a subset of files.
 
-The following example `*logs/*.log` would match any file ending with *logs* and with the extension *.log*. Example: build123_logs.log
+Example: `--file-filter *logs/*.log` would match any file ending with *logs* and with the extension *.log* (Example: build123_logs.log). See [File matching patterns reference](../../pipelines/tasks/file-matching-patterns.md) for more details.
 
-See [File matching patterns reference](../../pipelines/tasks/file-matching-patterns.md) for more details.
-
-```azurecli
-az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter *logs/*.log
+```Command
+az artifacts universal download --organization https://dev.azure.com/<YOUR_ORGANIZATION> --feed <FEED_NAME> --name <PACKAGE_NAME> --version <PACKAGE_VERSION>  --path <DOWNLOAD_PATH>  --file-filter <MATCH_PATTERN>
 ```
 
-### Downloading the latest version
+## Download the latest version
 
 You can use wildcards to download the latest version of your Universal Packages.
-
-**Syntax**:
-
---version -v: Package version, e.g. '2.1.0'.
 
 **Examples**:
 
@@ -111,9 +105,11 @@ You can use wildcards to download the latest version of your Universal Packages.
 - `--version 1.2.*`: the latest patch release with major 1 and minor 2.  
   
 > [!NOTE]
-> Wildcards are not supported in pre-release.
+> Wildcards are not supported in pre-release pipelines.
 
 ## Related articles
 
 - [Publish and download universal packages in Azure Pipelines](../../pipelines/artifacts/universal-packages.md).
 - [universal package task](../../pipelines/tasks/package/universal-packages.md).
+- [Delete and recover packages](../how-to/delete-and-recover-packages.md).
+- [Configure permissions](../feeds/feed-permissions.md)
