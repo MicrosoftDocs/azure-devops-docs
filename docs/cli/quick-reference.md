@@ -33,7 +33,7 @@ Use this index to quickly access examples that showcase use of command line tool
 
 - [Universal Packages - download specific files](../artifacts/quickstarts/universal-packages.md#download-specific-files)
 - [Create a feed](../artifacts/quickstarts/universal-packages.md) 
-- [Download a universal package](../artifacts/quickstarts/universal-packages.md#download-a-universal-package) 
+- [Download a universal package](../artifacts/quickstarts/universal-packages.md#download-universal-packages) 
 - [Publish a universal package](../artifacts/quickstarts/universal-packages.md#publish-universal-packages) 
  
 ## Azure Boards
