@@ -37,34 +37,28 @@ To promote a package to a view
 > [!NOTE]
 > Package demotion is not supported. If you want this feature to be added to future releases, please feel free to *Suggest a feature* on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-### Promote a package using the REST API
+## Promote packages using the REST API
 
-In addition to using the user interface in Azure Artifacts, you can also promote a package to a view using the REST API. Azure Artifacts currently supports the following package types: NuGet, Python, npm, Maven, and Universal packages.
+In addition to using the Azure Artifacts user interface, you can also promote packages using the REST API. Note that you cannot publish a package directly to a view. Instead, you should publish the package to your feed then promote it to a view. 
 
-* **Promote a NuGet package**:
+- **NuGet**:
 
-    Example:
-    
     ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
     Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [NuGet - update package version](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true) for more details.
 
-* **Promote an npm package**:
-
-    Example:
-    
+- **Npm**:
+  
     ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
     Use [JsonPatchOperation](/javascript/api/azure-devops-extension-api/jsonpatchoperation#jsonpatchoperation) to construct the body of your request. See [Npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1&preserve-view=true) for more details.
 
-* **Promote a Python package**:
-
-    Example:
-    
+- **Python**:
+   
     ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/pypi/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
@@ -72,17 +66,13 @@ In addition to using the user interface in Azure Artifacts, you can also promote
     Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Python - update package version](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true) for more details.
 
 
-* **Promote a Universal package**:
-
-    Example:
+- **Universal packages**:
     
     ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/upack/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
     Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Universal packages - update package version](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true) for more details.
-    
-    Keep in mind that you cannot publish a package directly to a view. Instead, you should publish the package to your feed then promote it to a view. 
 
 > [!TIP]
 > Check out the [Get started with the REST API](../../integrate/how-to/call-rest-api.md) and the [REST API samples](../../integrate/get-started/rest/samples.md) to learn how to interact with Azure DevOps REST API.
