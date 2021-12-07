@@ -91,7 +91,7 @@ You can create your own views or rename and delete existing ones from your feed'
 
 1. Select **Views**.
 
-    :::image type="content" source="media/feed-settings-views.png" alt-text="Screenshot showing views settings.":::
+    :::image type="content" source="./media/feed-settings-views.png" alt-text="Screenshot showing views settings.":::
 
 1. Select a view, and then select **Edit** to edit your view or select **Add view** if you want to add a new view.
 
