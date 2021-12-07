@@ -318,7 +318,7 @@ To enable this setting:
 
 :::image type="content" source="media/repository-settings/users-manage-permissions.png" alt-text="Screenshot that shows the project-level Allow users to manage permissions for their created branches setting.":::
 
-You can also enable or disable this setting for individual repositories. For details, see [Permissions management](#permissions-management).
+You can also enable or disable this setting for individual repositories. For details, see [Permissions management](#permissions-management-setting).
 
 1. On your Azure DevOps project page, select **Project settings** at lower left.
 1. Select **Repositories** in the left navigation.
@@ -635,7 +635,7 @@ To configure **Maximum file size** policy:
 1. On the **Policies** tab of the **All Repositories** or **\<Repository name>** page, under **Repository Policies**, set **Maximum file size** to **On** or **Off**.
 1. If you turned on the setting, select a maximum file size.
 
-:::image type="content" source="media/repository-settings/maximum-file-size.png" alt-text=":::image type="content" source="media/repository-settings/reserved-names.png" alt-text="Screenshot that shows the Maximum file size policy setting.":::
+:::image type="content" source="media/repository-settings/maximum-file-size.png" alt-text="Screenshot that shows the Maximum file size policy setting.":::
 
 ":::
 
@@ -809,7 +809,7 @@ The following table summarizes the settings you can enable and configure for eac
 ---
 :::row:::
    :::column span="2":::
-      [Forks](#forks)
+      [Forks](#forks-setting)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -820,7 +820,7 @@ The following table summarizes the settings you can enable and configure for eac
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Commit mention linking](#work-item-linking)
+      [Commit mention linking](#work-item-linking-settings)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -831,7 +831,7 @@ The following table summarizes the settings you can enable and configure for eac
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Commit mention work item resolution](#work-item-linking)
+      [Commit mention work item resolution](#work-item-linking-settings)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -842,7 +842,7 @@ The following table summarizes the settings you can enable and configure for eac
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Work item transition preferences](#work-item-linking)
+      [Work item transition preferences](#work-item-linking-settings)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -853,7 +853,7 @@ The following table summarizes the settings you can enable and configure for eac
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Permissions management](#permissions-management)
+      [Permissions management](#permissions-management-setting)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -864,7 +864,7 @@ The following table summarizes the settings you can enable and configure for eac
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Strict Vote Mode](#strict-vote-mode)
+      [Strict Vote Mode](#strict-vote-mode-setting)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -875,7 +875,7 @@ The following table summarizes the settings you can enable and configure for eac
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Disable Repository](#disable-repository)
+      [Disable Repository](#disable-repository-setting)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -886,7 +886,7 @@ The following table summarizes the settings you can enable and configure for eac
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Searchable branches](#searchable-branches)
+      [Searchable branches](#searchable-branches-setting)
    :::column-end:::
    :::column span="1"::: 
        On  
