@@ -75,7 +75,7 @@ To support planning, authoring, execution, and analysis of manual and automated 
 * **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Azure DevOps](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
 
 
-## Supported scenarios and access level requirements 
+## Supported scenarios and access requirements 
 
 Access to Azure DevOps web portal features are managed through access levels assigned to users. The three main access levels are **Stakeholder**, **Basic**, and **Basic+Test** plans as described in [About access levels](../organizations/security/access-levels.md). The following table indicates the access-level required to exercise the associated tasks with Azure Test Plans. In addition to access levels, select features require permissions to execute. To learn more, see [Manual test access and permissions](manual-test-permissions.md).   
   
@@ -94,6 +94,7 @@ Access to Azure DevOps web portal features are managed through access levels ass
       **Basic +Test Plans**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="3":::
       **Test planning**
@@ -163,13 +164,13 @@ Access to Azure DevOps web portal features are managed through access levels ass
 
 <a id="test-plans" />
 
-## Define, execute, chart progress of test plans and test suites 
+## Define, execute, and chart tests and test progress
 
 The **Test plans** hub of Azure Test Plans provides the tools you need to define, manage, and run your tests. Test cases, both manual and automated, are organized within test suites which are grouped under test plans.  
 
 :::image type="content" source="media/overview/test-plan-define-execute-chart.png" alt-text="Screenshot of Azure Test Plans, Selected test plans":::
 
-### Plan tests by defining test plans and test suites
+### Define test plans and test suites
 
 Create and manage test plans and test suites from the **Test plans** hub. 
 Add one or more test suites&mdash;static, requirement-based, or query-based&mdash;to the test plans. Export and share test plans and test suites with your teams.
@@ -213,26 +214,15 @@ See more at [Track test status](track-test-status.md).
 
 ### User acceptance testing
 
-User acceptance testing (UAT) is a key factor in software development
-that ensures the value requested by customers is being delivered
-by the engineering team. Azure DevOps and TFS
-include capabilities and tools to manage user acceptance testing.
-Quickly create UAT plans and suites, and invite multiple testers to
-execute these tests using test artifacts provided by the engineering team.
-Easily monitor UAT progress and results using lightweight charts.
-See more at [User acceptance testing](user-acceptance-testing.md).
+User acceptance testing (UAT) helps ensure the value requested by customers is being delivered. You can create UAT test plans and suites using Azure Test Plans. Invite multiple testers to execute these tests and monitor UAT progress and results using lightweight charts.
+To learn how, see [User acceptance testing](user-acceptance-testing.md).
 
 ![Assigning testers to run all tests](media/manual-testing/assign-testers-01.png)
 
 <a name="exploratory-testing"></a>
 
 ### Exploratory testing for everyone
-
-Maximizing quality in modern software development processes is a
-shared responsibility between developers, managers, product owners,
-user experience teams, and more. Collaborative testing processes and
-tools are the key factors in driving quality in these scenarios.
-
+ 
 The [Test &amp; Feedback extension](perform-exploratory-tests.md)
 is a simple browser-based extension you can use to test web apps 
 anytime and anywhere, and is simple enough for everyone in the team to use.
@@ -321,11 +311,18 @@ With the [Configurations](test-different-configurations.md) hub, teams can defin
 
 ## Review test runs 
 
-The [Runs](test-different-configurations.md) hub displays the results of test runs. This includes all test runs, both manual and automated. 
+The [Runs](insights-exploratory-testing.md) hub displays the results of test runs. This includes all test runs, both manual and automated. 
 
 :::image type="content" source="media/overview/recent-test-runs.png" alt-text="Screenshot of Recent test runs":::
 
 :::image type="content" source="media/overview/example-run-summary.png" alt-text="Screenshot of selected Test Runs summary":::
+
+## Load testing
+
+Azure DevOps cloud-based load testing service is deprecated. However, Azure Load Testing Preview is available. Azure Load Testing Preview is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. To learn more, see [What is Azure Load Testing Preview?](/azure/load-testing/overview-what-is-azure-load-testing). 
+
+To learn more about the deprecation of Azure DevOps load testing and other, alternative services see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/test/load-test/overview).
+
 
 ## And and run tests from the Kanban board
 
@@ -334,11 +331,6 @@ From the Azure Boards Kanban boards, you can add tests from a user story or feat
 :::image type="content" source="media/overview/kanban-board-inline-testing.png" alt-text="Screenshot of Kanban board showing inline tests added to work items.":::
  
 
-## Load testing
-
-Azure DevOps cloud-based load testing service is deprecated. However, Azure Load Testing Preview is available. Azure Load Testing Preview is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. To learn more, see [What is Azure Load Testing Preview?](/azure/load-testing/overview-what-is-azure-load-testing). 
-
-To learn more about the deprecation of Azure DevOps load testing and other, alternative services see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/test/load-test/overview).
 
 <!--- TCM commands: 
 
