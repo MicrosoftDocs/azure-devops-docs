@@ -376,7 +376,7 @@ In certain situations, depending on policies, users who aren't contributors to a
 
 ## Disable Repository
 
-Enabling this setting disables access to to the repository, including builds and pull requests, but keeps the repository discoverable with a warning.
+Enabling this setting disables access to the repository, including builds and pull requests, but keeps the repository discoverable with a warning.
 
 1. Select **Project Settings** > **Repositories**, and then select a repository from the list.
 1. On the **Settings** tab of the **\<Repository name>** page, under **Disable Repository**, set **Disable Repository** to **On** or **Off**.
@@ -568,7 +568,7 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 
 Not all filenames are allowed on the three major OS file systems, Windows, macOS, and Linux. Commits to a shared repository might contain file or folder names that are invalid on one or more platforms. If invalid files or folders are fetched and checked out on these platforms, working directories can become corrupted. For more information, see [Git Cross-Platform Compatibility](os-compatibility.md).
 
-You can enable or disable policies to place restrictions on file and folder names. The **Reserved names** setting blocks pushes to a repository that contain file or folder names that are invalid on all platforma. To see what names are invalid, see [Git Cross-Platform Compatibility](os-compatibility.md).
+You can enable or disable policies to place restrictions on file and folder names. The **Reserved names** setting blocks pushes to a repository that contain file or folder names that are invalid on all platforms. To see what names are invalid, see [Git Cross-Platform Compatibility](os-compatibility.md).
 
 :::image type="content" source="media/repository-settings/reserved-names.png" alt-text="Repository, Policies, Reserved names and Maximum path length settings. ":::
 
@@ -612,6 +612,7 @@ To configure **Maximum file size** policy:
 ::: moniker range=">= azure-devops-2020"
 Use [az repos policy file-size create](/cli/azure/repos/policy/file-size?view=azure-cli-latest&preserve-view=true#az_repos_policy_file_size_create) and [az repos policy file-size update](/cli/azure/repos/policy/file-size#az_repos_policy_file_size_update) to manage maximum file size policy.
 
+<a name="create-file-size-policy"></a>
 ### Create maximum file size policy
 
 ```azurecli
