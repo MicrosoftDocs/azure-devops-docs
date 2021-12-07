@@ -14,11 +14,6 @@ ms.date: 12/02/2021
 
 **Azure Test Plans | Azure DevOps Server 2020**
 
-Quality is a vital aspect of software systems, and manual testing 
-and exploratory testing continue to be important techniques for maximizing this.
-In today's software development processes,
-everybody in the team owns quality - including developers, managers, 
-product owners, user experience advocates, and more.
 
 Azure Test Plans provides rich and powerful
 tools everyone in the team can use to drive quality and collaboration
@@ -44,25 +39,26 @@ Integration with 3rd party test services
 > This article applies to Azure DevOps Services and Azure DevOps Server 2020 and later versions. Most of the information is valid for earlier on-premises versions, however, images show only examples for the latest version. Also, the user interface changed significantly with the release of Azure DevOps Server 2020. For an overview of the new interface and supported capabilities, see [Navigate Test Plans](navigate-test-plans.md). 
 
 
-## How does Azure Load Testing work?
+## How does Azure Test Plans work?
 
-Azure Test Plans provides several browser-based hubs&mdash;[**Test plans**](#test-plans), [**Progress report**](#progress-report), [**Parameters**](#parameters), [**Configurations**](#configurations), and [**Runs**](#runs)&mdash;to support planning, authoring, execution, and analysis of manual and automated tests. In addition, it provides the following tools to link tests to requirements, run tests, create bugs, and capture feedback.  
+Azure Test Plans uses test-specific work item types to plan and manage tests. These work item types&mdash;**Test Plans**, **Test Suites**, **Test Cases**, **Shared Steps**, and **Shared Parameters**&mdash;support several explicit links to support requirements tracking and sharing test steps and data across many test cases. Test cases can be assigned as manual or automated. For a description of each of these test items, see [Test objects and terms](test-objects-overview.md).
+
+![Test management work item types](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
+
+To support planning, authoring, execution, and analysis of manual and automated tests, Azure Test Plans provides several browser-based hubs&mdash;[**Test plans**](#test-plans), [**Progress report**](#progress-report), [**Parameters**](#parameters), [**Configurations**](#configurations), and [**Runs**](#runs). In addition, it provides the following tools to link tests to requirements, run tests, create bugs, and capture feedback.  
 
 - **Kanban board inline test tools**: An Azure Boards feature that supports defining test cases from the user stories, features, or bugs from the Kanban board. Also, you can launch the Test Runner or the Test & Feedback extension to run tests or perform exploratory testing. 
 - **Test Runner**: A browser-based tool that you launch from the **Test plans** hub to run manual tests. Test Runner supports rich data collection while performing tests, such as: image action log, video recording, code coverage, etc. It also allows users to create bugs and mark the status of tests.  
 - **Test & Feedback extension**: A free extension to support exploratory testing that you access from Chrome, Edge, or Firefox browsers. The extension captures interactions with the application being explored through images or video and entering verbal or type-written comments. Information is captured in the Feedback Response work item type to help track response data.
  
-All test planning and authoring is captured in one of the following test-specific work item types: **Test Plans**, **Test Suites**, **Test Cases**, **Shared Steps**, and **Shared Parameters**. These objects are stored in the work tracking data store as specific types of work items. Various links exist among these items to track testing of user stories or requirements. For a description of each of these test objects, see [Test objects and terms](test-objects-overview.md).
 
-![Test management work item types](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
- 
-## Key benefits
+### Key benefits
 
 * **Test on any platform**. With the **Test Plans** web portal, you can use your browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, web-based interface that can be accessed from all major browsers on any platform.
 
-* **Rich Diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
+* **Rich Diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your manual tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
 
-* **End to End Traceability**. Azure DevOps and TFS provide [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
+* **End to End Traceability**. Azure DevOps provides [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
 
 * **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Azure DevOps](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
 
@@ -172,25 +168,24 @@ The **Test plans** hub of Azure Test Plans provides the tools you need to define
 
 :::image type="content" source="media/overview/test-plan-define-execute-chart.png" alt-text="Screenshot of Azure Test Plans, Selected test plans":::
 
-### Test planning
+### Plan tests by defining test plans and test suites
 
-Create and manage test plans and test suites for your teams with ease.
-Create static suites, requirement-based suites, or query-based suites.
-Export and share the test plans and test suites with your team.
-See more at [Create test plans](create-a-test-plan.md).  
+Create and manage test plans and test suites from the **Test plans** hub. 
+Add one or more test suites&mdash;static, requirement-based, or query-based&mdash;to the test plans. Export and share test plans and test suites with your teams.
+To learn how, see [Create test plans and test suites](create-a-test-plan.md) and [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md).
 
-![Creating manual test plans](media/manual-testing/create-test-plans-01.png)
+:::image type="content" source="media/overview/test-planning.png" alt-text="Screenshot of Azure Test Plans, Test plans, test suites, Execute tab":::
 
-### Test authoring
+### Author tests using test cases  
 
-Create multiple test cases in one operation, or easily add existing
-test cases to a test suite. Assign single or multiple testers to 
-execute the tests. View test results and references to a test case
-across test suites. See more at [Create test cases](create-test-cases.md).
+You define manual test cases by defining the test steps and optionally the test data to reference. Test suites consist of one or more test cases. You can share test cases within test suites. The Grid view for defining test cases supports copy, paste, insert, and delete operations. Quickly assign single or multiple testers to execute tests. View test results and references to a test case across test suites. To learn how, see [Create test cases](create-test-cases.md).
 
-![Creating manual test cases](media/manual-testing/create-test-cases-01.png)
+:::image type="content" source="media/overview/test-authoring.png" alt-text="Screenshot of Azure Test Plans, Test plans, test suites, Define tab":::
 
-### Test cases
+
+Within each test case, you specify a set of test steps with their expected outcomes. Optionally, you can add [shared steps](share-steps-between-test-cases.md) or [shared parameters](repeat-test-with-different-data.md). For traceability, link test cases to the user stories, features, or bugs that they test. 
+
+:::image type="content" source="media/overview/test-authoring.png" alt-text="Screenshot of test case work item form.":::
 
 
 <a id="progress-reports" />
@@ -228,73 +223,29 @@ With the [Configurations](test-different-configurations.md) hub, teams can defin
 
 ## Review test runs 
 
-The [Runs](test-different-configurations.md) hub displays the results of test runs. 
+The [Runs](test-different-configurations.md) hub displays the results of test runs. This includes all test runs, both manual and automated. 
 
 :::image type="content" source="media/overview/recent-test-runs.png" alt-text="Screenshot of Recent test runs":::
 
 :::image type="content" source="media/overview/example-run-summary.png" alt-text="Screenshot of selected Test Runs summary":::
 
-<a name="manual-testing"></a>
+## And and run tests from the Kanban board
 
-## Planned manual testing
+From the Azure Boards Kanban boards, you can add tests from a user story or feature, automatically linking the test case to the user story or feature. You can  view, run, and interact with test cases directly from the Kanban board, and progressively monitor status directly from the card. Learn more at [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json).
 
-Manual testing has evolved with the software development process
-into a more agile-based approach. Azure DevOps and TFS integrate manual testing into your agile processes; the team
-can begin manual testing right from their Kanban boards in the Work
-hub. Teams that need more advanced capabilities can use the Test
-hub for all their test management needs.
-
-Learn how to create tests plans and test cases, and run them using the Azure DevOps web portal. Use the Test &amp; Feedback extension to explore and find bugs in your apps. 
-
-:::row:::
-    :::column:::
-        :::image type="icon" source="media/testplan-icon.png" border="false":::  
-        [Create a test plan](create-a-test-plan.md)  
-
-        :::image type="icon" source="media/marketplace-icon.png" border="false":::  
-        [Install the extension](perform-exploratory-tests.md)  
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="media/testcases-icon.png" border="false":::  
-        [Create test cases](create-test-cases.md)  
-
-        :::image type="icon" source="media/connectedmode-icon.png" border="false":::  
-        [Test in Connected mode](connected-mode-exploratory-testing.md)  
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="media/runtests2-icon.png" border="false":::  
-        [Run manual tests](run-manual-tests.md)  
-
-        :::image type="icon" source="media/standalonemode-icon.png" border="false":::  
-        [Test in Standalone mode](standalone-mode-exploratory-testing.md)  
-    :::column-end:::
-:::row-end:::
-
-
-## Manual testing from the Kanban board
-
-Get started with manual testing easily using the Kanban board in 
-the Work hub. Add, view, and interact with test cases directly
-from the cards on the Kanban board, and then progressively monitor
-status directly from the card. Developers and testers can use these
-rich capabilities to simplify maximizing quality within their teams.
-In Azure DevOps, you need just [Basic access](../organizations/billing/buy-basic-access-add-users.md)
-to use these features. See more at [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json).
-
-![Managing manual tests from the Kanban board](media/manual-testing/kanban-board-01.png)
-
+:::image type="content" source="media/overview/kanban-board-inline-testing.png" alt-text="Screenshot of Kanban board showing inline tests added to work items.":::
  
 
-### Testing applications
+### Test web and desktop applications
 
 the **Test Plans** web portal. provides
 test runners to run tests for your web and desktop applications. Mark test steps and test outcomes as pass or fail, and collect
 diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all the captured diagnostic data
-to help your developers reproduce the issues. See more at [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
+to help your developers reproduce the issues. To learn more, see [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
 
 ![Testing web applications](media/manual-testing/test-web-app-01.png)
 
-## Test tracking
+## Track testing status and results  
 
 Quickly configure lightweight charts to track your manual test results
 using the chart types of your choice, and pin the charts to your dashboard to
@@ -391,6 +342,9 @@ Azure DevOps cloud-based load testing service is deprecated. However, Azure Load
 
 To learn more about the deprecation of Azure DevOps load testing and other, alternative services see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/test/load-test/overview).
 
+<!--- TCM commands: 
+
+
 
 
 ### Supported tasks for test objects 
@@ -440,7 +394,6 @@ To learn more about the deprecation of Azure DevOps load testing and other, alte
 |Test environments| Create                                       |    ✔️       |     |  
 |                 | View/list                                    |    ✔️       |  ✔️ |  
 
-<!--- TCM commands: 
 
 Commands:
 
@@ -543,3 +496,54 @@ tcm run /execute
 
 - [Test Planning and Management Guide](https://vsardata.blob.core.windows.net/projects/Test%20Planning%20and%20Management%20Guide.pdf) 
 - [Unit testing](/visualstudio/test/developer-testing-scenarios) 
+
+
+<!--- Removed content
+
+
+Quality is a vital aspect of software systems, and manual testing 
+and exploratory testing continue to be important techniques for maximizing this.
+In today's software development processes,
+everybody in the team owns quality - including developers, managers, 
+product owners, user experience advocates, and more.
+
+
+<a name="manual-testing"></a>
+
+## Planned manual testing
+
+Manual testing has evolved with the software development process
+into a more agile-based approach. Azure DevOps and TFS integrate manual testing into your agile processes; the team
+can begin manual testing right from their Kanban boards in the Work
+hub. Teams that need more advanced capabilities can use the Test
+hub for all their test management needs.
+
+Learn how to create tests plans and test cases, and run them using the Azure DevOps web portal. Use the Test &amp; Feedback extension to explore and find bugs in your apps. 
+
+:::row:::
+    :::column:::
+        :::image type="icon" source="media/testplan-icon.png" border="false":::  
+        [Create a test plan](create-a-test-plan.md)  
+
+        :::image type="icon" source="media/marketplace-icon.png" border="false":::  
+        [Install the extension](perform-exploratory-tests.md)  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="media/testcases-icon.png" border="false":::  
+        [Create test cases](create-test-cases.md)  
+
+        :::image type="icon" source="media/connectedmode-icon.png" border="false":::  
+        [Test in Connected mode](connected-mode-exploratory-testing.md)  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="media/runtests2-icon.png" border="false":::  
+        [Run manual tests](run-manual-tests.md)  
+
+        :::image type="icon" source="media/standalonemode-icon.png" border="false":::  
+        [Test in Standalone mode](standalone-mode-exploratory-testing.md)  
+    :::column-end:::
+:::row-end:::
+
+
+
+-->
