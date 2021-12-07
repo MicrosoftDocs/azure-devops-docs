@@ -52,6 +52,18 @@ To support planning, authoring, execution, and analysis of manual and automated 
 - **Test & Feedback extension**: A free extension to support exploratory testing that you access from Chrome, Edge, or Firefox browsers. The extension captures interactions with the application being explored through images or video and entering verbal or type-written comments. Information is captured in the Feedback Response work item type to help track response data.
  
 
+### Manual and exploratory testing 
+
+
+- **[Planned manual testing](#test-plans)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
+- **[User acceptance testing](#user-acceptance)**. Testing carried out by designated user acceptance testers to verify the value delivered meets customer requirements, while reusing the test artifacts created by engineering teams. 
+- **[Exploratory testing](#exploratory-testing)**. Testing carried out by development teams, including developers, testers, UX teams, product owners and more, by exploring the software systems without using test plans or test suites. 
+- **[Stakeholder feedback](#stakeholder-feedback)**. Testing carried out by stakeholders outside the development team, such as users from marketing and sales divisions.  
+
+![Holistic approach to manual testing, types of manual testing and personas involved](media/manual-testing/schematic-01.png)  
+&nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
+
+
 ### Key benefits
 
 * **Test on any platform**. With the **Test Plans** web portal, you can use your browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, web-based interface that can be accessed from all major browsers on any platform.
@@ -148,17 +160,6 @@ Access to Azure DevOps web portal features are managed through access levels ass
 :::row-end:::
 
 
-## Manual and exploratory testing 
-
-
-- **[Planned manual testing](#manual-testing)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
-- **[User acceptance testing](#user-acceptance)**. Testing carried out by designated user acceptance testers to verify the value delivered meets customer requirements, while reusing the test artifacts created by engineering teams. 
-- **[Exploratory testing](#exploratory-testing)**. Testing carried out by development teams, including developers, testers, UX teams, product owners and more, by exploring the software systems without using test plans or test suites. 
-- **[Stakeholder feedback](#stakeholder-feedback)**. Testing carried out by stakeholders outside the development team, such as users from marketing and sales divisions.  
-
-![Holistic approach to manual testing, types of manual testing and personas involved](media/manual-testing/schematic-01.png)  
-&nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
-
 
 <a id="test-plans" />
 
@@ -185,15 +186,112 @@ You define manual test cases by defining the test steps and optionally the test 
 
 Within each test case, you specify a set of test steps with their expected outcomes. Optionally, you can add [shared steps](share-steps-between-test-cases.md) or [shared parameters](repeat-test-with-different-data.md). For traceability, link test cases to the user stories, features, or bugs that they test. 
 
-:::image type="content" source="media/overview/test-authoring.png" alt-text="Screenshot of test case work item form.":::
+:::image type="content" source="media/overview/test-case-form.png" alt-text="Screenshot of test case work item form.":::
 
 
-<a id="progress-reports" />
 
+### Test web and desktop applications
+
+the **Test Plans** web portal. provides
+test runners to run tests for your web and desktop applications. Mark test steps and test outcomes as pass or fail, and collect
+diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all the captured diagnostic data
+to help your developers reproduce the issues. To learn more, see [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
+
+![Testing web applications](media/manual-testing/test-web-app-01.png)
+
+### Track testing status and results  
+
+Quickly configure lightweight charts to track your manual test results
+using the chart types of your choice, and pin the charts to your dashboard to
+easily analyze these results. Choose a retention policy to control how
+long your manual testing results are retained.
+See more at [Track test status](track-test-status.md).
+
+![Test status tracking](media/manual-testing/track-test-status-01.png)
+
+<a name="user-acceptance"></a>
+
+### User acceptance testing
+
+User acceptance testing (UAT) is a key factor in software development
+that ensures the value requested by customers is being delivered
+by the engineering team. Azure DevOps and TFS
+include capabilities and tools to manage user acceptance testing.
+Quickly create UAT plans and suites, and invite multiple testers to
+execute these tests using test artifacts provided by the engineering team.
+Easily monitor UAT progress and results using lightweight charts.
+See more at [User acceptance testing](user-acceptance-testing.md).
+
+![Assigning testers to run all tests](media/manual-testing/assign-testers-01.png)
+
+<a name="exploratory-testing"></a>
+
+### Exploratory testing for everyone
+
+Maximizing quality in modern software development processes is a
+shared responsibility between developers, managers, product owners,
+user experience teams, and more. Collaborative testing processes and
+tools are the key factors in driving quality in these scenarios.
+
+The [Test &amp; Feedback extension](perform-exploratory-tests.md)
+is a simple browser-based extension you can use to test web apps 
+anytime and anywhere, and is simple enough for everyone in the team to use.
+It helps to improve productivity by allowing you to spend more time
+finding issues, and less time filing them.
+
+![Exploratory testing your web apps](media/manual-testing/exploratory-testing-01.png)
+
+Using the extension is a simple, three step process:
+
+![Schematic showing process steps Capture, Create, Collaborate](media/perform-exploratory-tests/getstarted-05.png)
+ 
+* **Capture your findings** quickly and easily using the tools in the extension. 
+  Capture notes, screenshots with annotations, and screen recordings 
+  to describe your findings and highlight issues. Additionally, in 
+  the background the extension automatically captures rich data such
+  as user actions as an image action log, page load data,
+  and system information about the browser, operating system, memory,
+  and more that can serve as a starting point for debugging. 
+
+* **Create work items** such as bugs, tasks, and test cases directly from 
+  the extension. The captured findings automatically become a part of the work item. 
+  Users can file a bug to report an issue with the product, or create a task that
+  indicates a new work requirement. The extension can also be used to 
+  create test cases for scenarios discovered during exploration. 
+
+* **Collaborate with your team** by sharing your findings. 
+  Export your session report in Standalone mode, or connect to Azure DevOps or
+  Team Foundation Server (2015 or later) for a fully integrated experience
+  including exploring user stories and backlog items, simplified tracking and triaging of 
+  bugs and tasks, and managing feedback requests in one place.
+
+As users perform exploratory testing, you can
+[get insights from the sessions](insights-exploratory-testing.md). View completed exploratory sessions and derive meaningful
+insights across all sessions. Get end-to-end traceability such as a breakdown 
+of the work items created, the work items explored and not explored, session owners,
+and more.
+
+<a name="stakeholder-feedback"></a>
+
+### Stakeholder feedback
+
+Seeking feedback from stakeholders outside the development team, such
+as marketing and sales teams, is vital to develop good quality software.
+Developers can request feedback on their user stories and features. Stakeholders can respond
+to feedback requests using the browser-based Test &amp; Feedback extension -
+not just to rate and send comments, but also by capturing rich diagnostic
+data and filing bugs and tasks directly.
+See more at [Request stakeholder feedback](request-stakeholder-feedback.md) 
+and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
+
+![Requesting and providing stakeholder feedback](media/manual-testing/stakeholder-feedback-01.png)
+
+
+<a id="progress-report" />
 
 ## View progress reports 
 
-With the [Progress Report](progress-report.md) hub, teams can track progress of more than one test plan or test suite. It helps answer the following questions:
+With the [Progress report](progress-report.md) hub, teams can track progress of more than one test plan or test suite. It helps answer the following questions:
 
 - *How much testing is complete?*
 - *How many tests have passed, failed or are blocked?*
@@ -235,106 +333,6 @@ From the Azure Boards Kanban boards, you can add tests from a user story or feat
 
 :::image type="content" source="media/overview/kanban-board-inline-testing.png" alt-text="Screenshot of Kanban board showing inline tests added to work items.":::
  
-
-### Test web and desktop applications
-
-the **Test Plans** web portal. provides
-test runners to run tests for your web and desktop applications. Mark test steps and test outcomes as pass or fail, and collect
-diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all the captured diagnostic data
-to help your developers reproduce the issues. To learn more, see [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
-
-![Testing web applications](media/manual-testing/test-web-app-01.png)
-
-## Track testing status and results  
-
-Quickly configure lightweight charts to track your manual test results
-using the chart types of your choice, and pin the charts to your dashboard to
-easily analyze these results. Choose a retention policy to control how
-long your manual testing results are retained.
-See more at [Track test status](track-test-status.md).
-
-![Test status tracking](media/manual-testing/track-test-status-01.png)
-
-<a name="user-acceptance"></a>
-
-## User acceptance testing
-
-User acceptance testing (UAT) is a key factor in software development
-that ensures the value requested by customers is being delivered
-by the engineering team. Azure DevOps and TFS
-include capabilities and tools to manage user acceptance testing.
-Quickly create UAT plans and suites, and invite multiple testers to
-execute these tests using test artifacts provided by the engineering team.
-Easily monitor UAT progress and results using lightweight charts.
-See more at [User acceptance testing](user-acceptance-testing.md).
-
-![Assigning testers to run all tests](media/manual-testing/assign-testers-01.png)
-
-<a name="exploratory-testing"></a>
-
-## Exploratory testing for everyone
-
-Maximizing quality in modern software development processes is a
-shared responsibility between developers, managers, product owners,
-user experience teams, and more. Collaborative testing processes and
-tools are the key factors in driving quality in these scenarios.
-
-The [Test &amp; Feedback extension](perform-exploratory-tests.md)
-is a simple browser-based extension you can use to test web apps 
-anytime and anywhere, and is simple enough for everyone in the team to use.
-It helps to improve productivity by allowing you to spend more time
-finding issues, and less time filing them.
-
-![Exploratory testing your web apps](media/manual-testing/exploratory-testing-01.png)
-
-Using the extension is a simple, three step process:
-
-![Schematic showing process steps Capture, Create, Collaborate](media/perform-exploratory-tests/getstarted-05.png)
- 
-* **Capture your findings** quickly and easily using the tools in the extension. 
-  Capture notes, screenshots with annotations, and screen recordings 
-  to describe your findings and highlight issues. Additionally, in 
-  the background the extension automatically captures rich data such
-  as user actions as an image action log, page load data,
-  and system information about the browser, operating system, memory,
-  and more that can serve as a starting point for debugging. 
-
-* **Create work items** such as bugs, tasks, and test cases directly from 
-  the extension. The captured findings automatically become a part of the work item. 
-  Users can file a bug to report an issue with the product, or create a task that
-  indicates a new work requirement. The extension can also be used to 
-  create test cases for scenarios discovered during exploration. 
-
-* **Collaborate with your team** by sharing your findings. 
-  Export your session report in Standalone mode, or connect to Azure DevOps or
-  Team Foundation Server (2015 or later) for a fully integrated experience
-  including exploring user stories and backlog items, simplified tracking and triaging of 
-  bugs and tasks, and managing feedback requests in one place.
-
-As users perform exploratory testing, you can
-[get insights from the sessions](insights-exploratory-testing.md) in **Azure Test Plans**  of 
-Azure DevOps or TFS. View completed exploratory sessions and derive meaningful
-insights across all the sessions. Get end-to-end traceability such as a breakdown 
-of the work items created, the work items explored and not explored, session owners,
-and more.
-
-<a name="stakeholder-feedback"></a>
-
-## Stakeholder feedback
-
-Seeking feedback from stakeholders outside the development team, such
-as marketing and sales teams, is vital to develop good quality software.
-Using Azure DevOps and TFS, developers can request
-feedback on their user stories and features. Stakeholders can respond
-to feedback requests using the browser-based Test &amp; Feedback extension -
-not just to rate and send comments, but also by capturing rich diagnostic
-data and filing bugs and tasks directly.
-See more at [Request stakeholder feedback](request-stakeholder-feedback.md) 
-and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
-
-![Requesting and providing stakeholder feedback](media/manual-testing/stakeholder-feedback-01.png)
-
-
 
 ## Load testing
 
@@ -489,7 +487,7 @@ tcm run /execute
 - [Get started with exploratory testing](perform-exploratory-tests.md)
 - [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)
 - [Get stakeholder feedback with exploratory testing](request-stakeholder-feedback.md)
-* [Continuous testing](../pipelines/index.yml)
+- [Continuous testing](../pipelines/index.yml)
 
 
 ## Additional resources
