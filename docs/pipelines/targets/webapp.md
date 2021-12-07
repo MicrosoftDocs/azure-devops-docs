@@ -448,9 +448,9 @@ jobs:
     # download the artifact drop from the previous job
   - task: DownloadPipelineArtifact@2
     inputs:
-      buildType: 'current'
-      artifactName: 'drop'
-      targetPath: '$(Pipeline.Workspace)'
+      source: 'current'
+      artifact: 'drop'
+      path: '$(Pipeline.Workspace)'
 
   - task: AzureWebApp@1
     inputs:

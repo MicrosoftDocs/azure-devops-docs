@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 07/28/2021
+ms.date: 12/06/2021
 ms.custom: contperf-fy21q3
 ---
 
@@ -76,8 +76,37 @@ The formatting commands are:
 ##[debug]Debug text
 ##[command]Command-line being run
 ##[endgroup]
-
 ```
+
+You can use the formatting commands in a bash or PowerShell task. 
+
+# [Bash](#tab/bash)
+
+```yaml
+steps:
+  - bash: |
+      echo "##[group]Beginning of a group"
+      echo "##[warning]Warning message"
+      echo "##[error]Error message"
+      echo "##[section]Start of a section"
+      echo "##[debug]Debug text"
+      echo "##[command]Command-line being run"
+      echo "##[endgroup]"
+```
+# [PowerShell](#tab/powershell)
+
+```yaml
+steps:
+  - powershell: |
+      Write-Host "##[group]Beginning of a group"
+      Write-Host "##[warning]Warning message"
+      Write-Host "##[error]Error message"
+      Write-Host "##[section]Start of a section"
+      Write-Host "##[debug]Debug text"
+      Write-Host "##[command]Command-line being run"
+      Write-Host "##[endgroup]"
+```
+---
 
 Those commands will render in the logs like this:
 
