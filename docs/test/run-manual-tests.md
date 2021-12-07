@@ -476,5 +476,5 @@ For more information, see [Microsoft Privacy policy](https://privacy.microsoft.c
 - [FAQs for manual testing](reference-qa.md#runtests)
 - [Collect diagnostic data while testing](collect-diagnostic-data.md)
 - [Exploratory testing with the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
-- [Run automated tests from test plans](run-automated-tests-from-test-hub)
+- [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
 - [Run manual tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager)
