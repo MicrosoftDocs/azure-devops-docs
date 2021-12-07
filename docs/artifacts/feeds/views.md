@@ -77,22 +77,30 @@ In addition to using the Azure Artifacts user interface, you can also promote pa
 > [!TIP]
 > Check out the [Get started with the REST API](../../integrate/how-to/call-rest-api.md) and the [REST API samples](../../integrate/get-started/rest/samples.md) to learn how to interact with Azure DevOps REST API.
 
-## Managing views
+## Manage views
 
-You can create your own views or rename and delete existing ones in the feed settings dialog.
+You can create your own views or rename and delete existing ones from your feed's settings.
 
-[!INCLUDE [edit-feed](../includes/edit-feed.md)]
+1. Select **Artifacts**.
 
-In the feed settings view:
-- Select **Views**
-- Make your changes (Add view, Edit, or Delete)
-- Select **Ok**
+1. Select your feed from the dropdown menu.
 
-> [!div class="mx-imgBorder"]
-> ![Managing views](media/feed-settings-views.png)
+1. Select the gear icon :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to access your feed's settings.
+
+    :::image type="content" source="../includes/edit-feed.md" alt-text="Screenshot showing how to access the feed's settings.":::
+
+1. Select **Views**.
+
+    :::image type="content" source="media/feed-settings-views.png" alt-text="Screenshot showing views settings.":::
+
+1. Select a view, and then select **Edit** to edit your view or select **Add view** if you want to add a new view.
+
+1. Select **Save** when you are done.
+
 
 ## Related articles
 
-- [Understand upstream sources](../concepts/upstream-sources.md)
+- [Upstream sources overview](../concepts/upstream-sources.md)
+- [Configure permissions](./feed-permissions.md)
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md)
-- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md).
+- [Delete and recover packages](../how-to/delete-and-recover-packages.md)
