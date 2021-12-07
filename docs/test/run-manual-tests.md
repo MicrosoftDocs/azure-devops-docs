@@ -12,15 +12,20 @@ ms.date: 11/10/2021
 
 # Run manual tests
 
-[!INCLUDE [version-header](includes/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)]
 
-Run your manual tests and record the test results for each test step 
-using Microsoft Test Runner. If you find an issue when testing, 
-use Test Runner to create a bug. Test steps, screenshots, and comments 
-are automatically included in the bug. 
-You can use the web runner for web apps, or the desktop runner for desktop app data collection.  
+Run your manual tests and record the test results for each test step using Microsoft Test Runner.
+You can run tests for both web applications and desktop apps.
 
- 
+Test Runner lets you run all active tests as a batch or specific test cases.
+Modify tests while running them.
+You can run tests for a specific build.
+
+While testing, gather information like a screenshot or your testing actions.
+If you find an issue when testing, use Test Runner to create a bug.
+Include test steps, screenshots, and comments in the bug.
+
+
 [!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
 
 <a name="run-web"></a>
@@ -30,20 +35,19 @@ You can use the web runner for web apps, or the desktop runner for desktop app d
 1. If you haven't already, [create your manual tests](create-test-cases.md#test-cases).
 
 1. Select a test from a test suite and select **Run for web application**.
-      
+
    ![Screenshot shows how to select and run a specific test.](media/run-manual-tests/run-test-web-application.png)
 
    Microsoft Test Runner opens and runs in a new browser.
 
 1. Start the app that you want to test.
 
-
    ![Screenshot shows Test Runner recording your test results.](media/run-manual-tests/test-runner-results.png)
 
    Your app doesn't have to run on the same computer as Test Runner.
    You just use Test Runner to record which test steps pass or fail while you manually run a test.
 
-   For example, you might run Test Runner on a desktop computer and run your Windows 8 store app that you test on a Windows 8 tablet.
+   For example, you might run Test Runner on a desktop computer and run your store app for Windows 8 that you test on a Windows 8 tablet.
 
 1. Mark each test step as either passed or failed based on the expected results.
 
@@ -76,7 +80,7 @@ You can use the web runner for web apps, or the desktop runner for desktop app d
    ![Screenshot shows the result of running test cases, with outcomes of Active, Failed, and Passed displayed.](media/run-manual-tests/test-case-outcome.png)
 
    If you haven't run a test yet, its state is active.
-   You can reset the state of a test to active if you want to rerun it.  
+   Reset the state of a test to active if you want to rerun it.  
 
 1. Open a test suite and choose the test case in the **Related Work** section.
    Then use the child links in the **Related Work** section of that work item to view the bugs filed by the tester.
@@ -122,7 +126,7 @@ You can run tests offline and then import the results. For more information, see
    If Test Runner is running in a web browser window, 
    you can copy a screenshot from the clipboard directly into the bug.
 
-1. You can see any bugs that you have reported during your test session.
+1. You can see any bugs that you reported during your test session.
 
    ![Bugs logged](media/run-manual-tests/RunTest_5.png)
 
@@ -187,33 +191,11 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
-## Supported clients and run options
-
-In addition to running tests for a specific build, the run options support various test scenarios. To see the options, in the **Execute** tab, select a test, and then select **Run with options**.
-**Select test type and runner** offers these options:
-
-- Manual tests using Web Browser based runner
-  You can select a specific build to test. Select Find builds to open the Find builds dialog box and search for a build to test against.
-
-- Manual tests using Test Runner client
-  To run manual tests for desktop applications by using the Test Runner client, install that client, if necessary. [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload)
-
-- Automated tests using release stage
-  Select a build. Select a release pipeline and stage to consume the build’s artifacts.
-
-- Manual tests using Microsoft Test Manager 2017 client
-  Collects data from a local machine. Select a build. Select one or more data collectors: Action log, Event log, Screen and voice recorder, and system information
-
-- Manual tests using Microsoft Test Manager 2015 or earlier client
-
-::: moniker-end
-
 ## Use test options
-::: moniker range=">=azure-devops-2020"
 
 You can run all the tests in a test suite, modify a step while running, specify which build to test, and add screenshots or other information during testing.
 
+::: moniker range=">=azure-devops-2020"
 ### Run all tests
 
 You can run all the tests in a test suite at once.
@@ -224,7 +206,7 @@ Select a test suite and select **Run for web application** or **Run for desktop 
 
 ### Run tests for a build
 
-You can choose a build to run tests against.
+Choose a build to run tests against.
 
 1. From the dropdown, select **Run with options**.
 
@@ -242,7 +224,8 @@ You can choose a build to run tests against.
 
 ### Modify a test step during a test run
 
-You can fix problems with your test steps while the test is still running. Select the **Edit test step** icon.
+Fix problems with your test steps while the test is still running.
+Select the **Edit test step** icon.
 
 ![Screenshot shows how to select the edit icon to edit test steps.](media/run-manual-tests/edit-icon-test-run.png)
 
@@ -253,7 +236,7 @@ You can also edit the text itself.
 
 ### Add a screenshot
 
-You can add a screenshot to the test results while running a test.
+Add a screenshot to the test results while running a test.
 
 If you use Google Chrome or Firefox, use the web runner to take screenshots of the web app while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
@@ -264,7 +247,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Capture actions from a test
 
-You can capture your actions on the application as a log.
+Capture your actions on the application as a log.
 
 If you use Google Chrome or Firefox, use the web runner capture your actions on the web app as image logs while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
@@ -275,7 +258,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Capture screen recordings of your app being tested
 
-You can capture screen recordings of my app during testing.
+Capture screen recordings of my app during testing.
 
 If you use Google Chrome or Firefox, use the web runner to capture screen recordings of your web and desktop apps while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
@@ -287,9 +270,6 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
-
-You can run all the tests in a test suite, modify a step while running, specify which build to test, and add screenshots or other information during testing.
-
 ### Run all tests
 
 You can run all the tests in a test suite at once.
@@ -300,7 +280,7 @@ Select a test suite and select **Run** to run all the active tests.
 
 ### Run tests for a build
 
-You can choose a build to run tests against.
+Choose a build to run tests against.
 
 1. Choose **Run** and then select **Run with options**.
 
@@ -318,7 +298,7 @@ You can choose a build to run tests against.
 
 ### Modify a test step during a test run
 
-You can fix problems with your test steps while the test is still running. Select the **Edit test step** icon.
+Fix problems with your test steps while the test is still running. Select the **Edit test step** icon.
 
 ![Screenshot shows how to select the edit icon to modify test steps.](media/run-manual-tests/RunTest_11.png)
 
@@ -329,7 +309,7 @@ You can also edit the text itself.
 
 ### Add a screenshot
 
-You can add a screenshot to the test results while running a test.
+Add a screenshot to the test results while running a test.
 
 If you use Google Chrome or Firefox, use the web runner to take screenshots of the web app while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
@@ -340,7 +320,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Capture actions from a test
 
-You can capture your actions on the application as a log.
+Capture your actions on the application as a log.
 
 If you use Google Chrome or Firefox, use the web runner capture your actions on the web app as image logs while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
@@ -351,7 +331,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Capture screen recordings of your app being tested
 
-You can capture screen recordings of my app during testing.
+Capture screen recordings of my app during testing.
 
 If you use Google Chrome or Firefox, use the web runner to capture screen recordings of your web and desktop apps while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
@@ -362,6 +342,130 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ::: moniker-end
 
+## Supported clients and run options
+
+In addition to running tests for a specific build, run options support various test scenarios.
+To see the options, in the **Execute** tab, select a test, and then select **Run with options**.
+
+**Select test type and runner** offers these options:
+
+- **Manual tests using Web Browser based runner**
+  You can select a specific build to test, as described in [Run tests for a build](#run-tests-for-a-build).
+  Select **Find builds** to open the **Find builds** dialog box and search for a build to test against.
+
+- **Manual tests using Test Runner client**
+  You can run manual tests for desktop applications by using the Test Runner client. If necessary, install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
+
+- **Automated tests using release stage**
+  To run tests using a release stage, select a build.
+  Select a release pipeline and stage to consume the build's artifacts.
+  For more information, see [Run automated tests from test plans](run-automated-tests-from-test-hub.md).
+
+- **Manual tests using Microsoft Test Manager 2017 client**
+  Collects data from a local machine. Select a build. Select one or more data collectors: **Action log**, **Event log**, **Screen and voice recorder**, and **System information**.
+
+- **Manual tests using Microsoft Test Manager 2015 or earlier client**
+
+ The Test Center in the Microsoft Test Manager client is a desktop-based manual testing solution.
+Testers can use it for manual testing needs. For more information, see [Guidance on Microsoft Test Manager usage](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage).
+To get Microsoft Test Manager, install [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/).
+
+## Frequently asked questions
+
+Here are some common questions.
+
+### Q: How do I rerun a test?
+
+**A:** Just select any test and choose **Run**.
+
+### Q: Can I run all the tests in a test suite together?
+
+**A:** Yes, select a test suite and choose **Run**.
+This option runs all the active tests in the test suite.
+If you haven't run a test yet, its state is active.
+You can reset the state of a test to active if you want to rerun it.  
+
+![Select and run all active tests in a test suite](media/run-manual-tests/RunTestsRunSuite.png)
+
+### Q: Can I choose a build to run tests against?
+
+**A:** Yes, Choose **Run** and then select **Run with options**.
+
+![Starting a test with options](media/shared/collect-diagnostic-data-16.png)
+
+Select the build you want from the drop-down list.
+
+![Selecting the build to include a link to in the results](media/run-manual-tests/select-build-for-webrunner.png) 
+
+Any bug filed during the run will automatically be associated with the selected build.
+The test outcome will be published against that build.
+
+> [!NOTE]
+> The selected build must be from the project in which the tests are defined.
+
+### Q: Can I fix my test steps while I'm running a test?
+
+**A:** Yes, if you have Azure Test Plans for Azure DevOps.
+You can insert, move, or delete steps.
+Or you can edit the text itself.
+Use the edit icon next to the test step number.
+
+![Select the edit icon to edit test steps](media/run-manual-tests/RunTest_11.png) 
+
+The tool to edit the test steps is shown.
+
+![Fix test steps when you run a test](media/run-manual-tests/RunTest_9.png)
+
+### Q: Can I add a screenshot to the test results when I run a test?
+
+**A:** If you're using Google Chrome or Firefox, use the web runner to take screenshots of the web app while testing.
+For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
+
+![Capturing a screenshot from the app](media/shared/collect-diagnostic-data-01.png)
+
+For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-screenshot).
+
+### Q: Can I capture my actions on the app as a log?
+
+**A:** If you're using Google Chrome or Firefox, use the web runner capture your actions on the web app as image logs while testing.
+For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
+
+![Capturing an image action log from the app](media/shared/collect-diagnostic-data-06.png)
+
+For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-log).
+
+### Q: Can I capture screen recordings of my app?
+
+**A:** If you're using Google Chrome or Firefox, use the web runner to capture screen recordings of your web and desktop apps while testing.
+For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
+
+![Capturing a screen recording from the app](media/shared/collect-diagnostic-data-11.png)
+
+For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
+
+### Q: How do I control how long I keep my test data?
+
+**A:** For more information, see [Set test retention policies](how-long-to-keep-test-results.md).
+
+### Q: Where can I download the Test Runner client?
+
+**A:** Download the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
+
+### Q: What are the supported operating systems for the Test Runner client?
+
+**A:** The Test Runner desktop client is currently supported only on Windows.
+
+### Q: Can I opt out of telemetry for the Test Runner client?
+
+**A:** No.
+The Test Runner desktop client doesn't collect any user-identifiable data.
+No opt-out mechanism is provided.
+For more information, see [Microsoft Privacy policy](https://privacy.microsoft.com/PrivacyStatement).
+
+### Q: Can I run tests offline and then import the results?
+
+**A:** Yes, see the [Offline Test Execution extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.OfflineTestExecution).
+
 ## Next step
 
 > [!div class="nextstepaction"]
@@ -370,3 +474,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 ## Related articles
 
 - [FAQs for manual testing](reference-qa.md#runtests)
+- [Collect diagnostic data while testing](collect-diagnostic-data.md)
+- [Exploratory testing with the Test & Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
+- [Run automated tests from test plans](run-automated-tests-from-test-hub)
+- [Run manual tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager)
