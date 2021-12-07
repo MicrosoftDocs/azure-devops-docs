@@ -1,43 +1,41 @@
 ---
-title: Use feed views to share your packages
-description: Use the prerelease and release views to share your packages with consumers
+title: Use feed views to share packages
+description: How to use feed views to share your packages
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 12/23/2020
+ms.date: 12/07/2021
 monikerRange: '>= tfs-2017'
 ---
  
-# Use feed views to share your packages
+# Use feed views to share packages
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-Feeds are containers that allow users to group packages and control who can access them by modifying the feed's permissions.
+Feed views are a way to enable users to share some packages while keeping other packages private. Views filter the feed to a subset of packages that meet a set of criteria defined by that view.
 
-A feed view on the other hand is a way to enable users to share some packages while keeping others private. Views filter the feed to a subset of packages that meet criteria defined by that view.
+By default, Azure Artifacts comes with three views: **@Local**, **@Prerelease**, and **@Release**. @local is the default view that contains all the published packages as well as all the packages saved from an upstream source. All views support NuGet, npm, Maven, Python, and Universal packages.
 
-There are three types of views: `@local`, `@Prerelease`, and `@Release`. @local is the default view that's commonly used in upstream sources. The latter two are suggested views that you can rename or delete as desired. Those views contain a subset of the feed's packages that have been promoted into that specific view. All views currently support NuGet, npm, Maven, Python, and Universal packages.
+## Promote packages
 
-## Get started with feed views
+To promote a package to a view
 
-By default, every feed has three types of views: `@local`, `@Prerelease`, and `@Release`. When you first create a feed, your default view is `@local`.
+1. Select **Artifacts**.
 
-### Promote a package to prerelease or release view 
+1. Select your feed from the dropdown menu.
 
-To promote a package-version:
+1. Select the package you wish to promote.
 
-1. Select a package from your feed
+1. Select **Promote**.
 
-1. Select **Promote**
-    > [!div class="mx-imgBorder"]
-    > ![Promote button](media/release-views-promote.png)
+    :::image type="content" source="media/release-views-promote.png" alt-text="Screenshot showing how to promote a package to a view.":::
 
-1. Choose a view from the dropdown menu then select **Promote**.
-    > [!div class="mx-imgBorder"]
-    > ![views dropdown menu](media/release-views-promote-choice.png)
+1. Select a view from the dropdown menu, and then select **Promote**.
+
+    :::image type="content" source="media/release-views-promote-choice.png" alt-text="Screenshot showing the promote package dialog box.":::
 
 > [!NOTE]
-> Package demotion is not currently supported. If you want this feature to be added to future releases, please feel free to **Suggest a feature** on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
+> Package demotion is not supported. If you want this feature to be added to future releases, please feel free to *Suggest a feature* on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ### Promote a package using the REST API
 
