@@ -131,6 +131,7 @@ The new web form is only available from TFS 2017 and later versions.
 ::: moniker-end
 
 #### [Old web form](#tab/old-web-form/)
+
 ::: moniker range=">= tfs-2018"
 The old web form is only available for TFS 2017 and earlier versions. 
 ::: moniker-end
@@ -234,6 +235,7 @@ You can add a link from the work item to the supported artifacts using the metho
 ::: moniker range=">= azure-devops-2019"
 See the following articles for more information: 
 ::: moniker-end
+
 ::: moniker range=">= azure-devops-2020"
 - [Configure repositories and branches to integrate with work tracking](../../repos/git/configure-repos-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
 - [Configure pipelines to support work tracking](../../pipelines/integrations/configure-pipelines-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
@@ -251,9 +253,10 @@ See the following articles for more information:
 - [Auto complete work items with pull requests](../work-items/auto-complete-work-items-pull-requests.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
 
 <a id="git-code-development" /> 
+
+::: moniker range=">= tfs-2017"
 
 ## Work items linked to Git code development  
 
@@ -266,16 +269,18 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 - You can use the [git-commit](https://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, you apply this comment #35 Catch null exception to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35. 
 - And, with the **Development** control, you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
 ::: moniker-end
+
 ::: moniker range=">= azure-devops-2019"  
 :::image type="content" source="../backlogs/media/git/development-control.png" alt-text="Screenshot of work item form, Development control.":::
 ::: moniker-end
+
 ::: moniker range=">= tfs-2017 < azure-devops-2019"  
 ![Work item form, Development section](../backlogs/media/drive-git-development-dev-section.png)  
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019" 
 
-<a id="link-github">  </a>
+<a id="link-github" />
 
 ## Work items linked to GitHub artifacts    
 
@@ -318,7 +323,7 @@ You can use the Hyperlinks or Storyboard link type to link a work item to a Web 
 
 ![Use the Hyperlinks or Storyboard link type to link a work item to a URL.](media/link-tracking-work-item-to-url-link-types.png)  
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 From the **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. The Storyboards tab and links control are available from the web and client work item form for TFS 2015. 
 
@@ -331,7 +336,7 @@ For process templates associated with TFS 2015 and earlier versions, the  **Stor
 By using the Storyboard link type, you differentiate the link you're adding to specify a storyboard or document that provides work item specifications. Use this link type to provide your team access to the shared file where they can add their comments. 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 ## Work items linked to architectural diagrams
 

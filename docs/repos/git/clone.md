@@ -29,12 +29,7 @@ In this tutorial you learn how to:
 > * Get the clone URL to your repo
 > * Clone a repo
 
-## Video tutorial
 
-<iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Create-a-Git-repo-in-Visual-Studio-2015/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe>
-
->[!TIP]
-> Working from the command line? You can view our video tutorial using command line steps on [Channel9](https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Create-a-repo-from-the-command-line).
 
 <a name="clone_url"></a>
 
