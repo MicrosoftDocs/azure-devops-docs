@@ -13,13 +13,19 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2018-cloud](../includes/version-tfs-2018-cloud.md)]
 
-You can customize your Azure DevOps Git repositories by using branch and repository settings and policies.
+There are several ways to customize your Azure Repos Git repositories by using branch and repository settings and policies. This article covers repository settings and policies.
 
-- User-specific permissions control user settings. These permissions control who can read, write, contribute to pull requests, and take other specific actions. For more information, see [Set permissions for a repository](set-git-repository-permissions.md#git-repository).
+- User-specific permissions control user settings.
 
-- Branch policies cover branch-specific controls. Branch policies include options like requiring a pull request, a successful build, or a code review before changes can merge into a branch. For more information, see [Branch policies and settings](branch-policies.md).
+  These permissions control who can read, write, contribute to pull requests, and take other specific actions. For more information, see [Set permissions for a repository](set-git-repository-permissions.md#git-repository).
 
-- Repository settings and policies configure global options for entire repositories. This article discusses server-side repository settings and policies. To learn about client-side Git preferences, see [Git preferences and settings in Visual Studio](git-config.md).
+- Branch policies cover branch-specific controls.
+
+  Branch policies include options like requiring a pull request, a successful build, or a code review before changes can merge into a branch. For more information, see [Branch policies and settings](branch-policies.md).
+
+- Repository settings and policies configure global options for entire repositories.
+
+  This article discusses server-side repository settings and policies. To learn about client-side Git preferences, see [Git preferences and settings in Visual Studio](git-config.md).
 
 [!INCLUDE [note-tfs-2018.2-update](includes/note-tfs-2018.2-update.md)]  
 
@@ -34,9 +40,10 @@ You can customize your Azure DevOps Git repositories by using branch and reposit
 - If you want to use [az repos](/cli/azure/repos?view=azure-cli-latest&preserve-view=true) Azure DevOps CLI commands, be sure to follow the steps in [Get started with Azure DevOps CLI](../../cli/index.md).
 ::: moniker-end
 
-## View and edit repository settings
+<a name="view-and-edit-repository-settings"></a>
+## View and edit settings and policies
 
-You can configure settings and policies for all project repositories, for individual repositories, or for individual repository branches.
+You can configure repository settings for all organization or project repositories, or for individual repositories. You can configure policies for all repositories, for individual repositories, or for certain branches across repositories. For information about branch policies within individual repositories, see [Branch policies](branch-policies.md).
 
 > [!NOTE]
 > It's best to configure repository settings either at the project level or for individual repositories, but not both. If you configure settings at more than one level, the system honors the most restrictive setting. Configuring settings at only one level minimizes confusion and Git performance issues.
@@ -51,15 +58,15 @@ In the browser, you configure repository settings and policies through the **Rep
 
 1. On the **All Repositories** page:
 
-   - Select the **Settings** and **Policies** tabs to view and configure settings and policies for all repositories and branches across a project.
+   - Select the **Settings** or **Policies** tabs to view and configure settings and policies for all repositories and branches across a project.
 
-     :::image type="content" source="media/repository-settings/project-settings-repository-2020.png" alt-text="Screenshot that shows selecting 'Project settings', 'Repositories', and a repo.":::
+     :::image type="content" source="media/repository-settings/project-settings-repository-2020.png" alt-text="Screenshot that shows repository Policies for All Repositories":::
 
    - Select the **Repositories** tab and then choose a repository to configure repository settings and policies for that repository.
 
-     :::image type="content" source="media/repository-settings/project-settings-repository-2020.png" alt-text="Screenshot that shows selecting 'Project settings', 'Repositories', and a repo.":::
+     :::image type="content" source="media/repository-settings/repository-settings-2020.png" alt-text="Screenshot that shows repository Policies for the Fabrikam repository.":::
 
-1. On the **All Repositories** page or an individual repository page, select the **Settings** tab to view and configure repository settings.
+1. On the **All Repositories** page or on an individual repository page, select the **Settings** tab to view and configure repository settings.
 
    :::image type="content" source="media/repository-settings/project-repo-settings-browser-2020.png" alt-text="Screenshot that shows the repo project 'Settings' tab selected.":::
 
@@ -225,7 +232,7 @@ az repos policy update --config
 
 **Example**
 
-The following *policy.json* file sets the pull request approval count policy for all branches named `main` across all repositories in the default project.
+The following *policy.json* file sets the minimum reviewers policy to require three approvals in all `main` branches across all repositories in the default project.
 
 ```json
 {
@@ -248,13 +255,14 @@ The following *policy.json* file sets the pull request approval count policy for
 }
 ``` 
 
-The following `az repos policy update` command line updates the policy per the *policy.json* file. The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber".`
+The `az repos policy update` command line updates the minimum reviewers policy per the *policy.json* file. You can find the policy ID by using [az repos policy list](/cli/azure/repos/policy#az_repos_policy_list). The example uses the default configuration `az devops configure --defaults organization=https://dev.azure.com/fabrikamprime project="Fabrikam Fiber".`
 
-```az repos policy update --config C:\policies\policy.json --id 37 --output table
+```azurecli
+az repos policy update --config C:\policies\policy.json --id 7 --output table
 
 ID    Name                         Is Blocking    Is Enabled    Branch
 ----  ---------------------------  -------------  ------------  -----------------
-37    Minimum number of reviewers  False          True          refs/heads/main
+7     Minimum number of reviewers  False          True          refs/heads/main
 ```
 
 
@@ -269,13 +277,16 @@ ID    Name                         Is Blocking    Is Enabled    Branch
 
 
 <a id="default-branch-name"></a>
-## Default branch name
+## Default branch name setting
 
-You can set a default repository branch name at the organization or project level. The organization-level setting takes effect for all new repositories across all projects in the organization. The project-level setting affects all new repositories in a project, and supersedes any name that was set at the organization level.
+You can set a default repository branch name at the organization or project level. The organization-level setting takes effect for all new repositories across all projects in the organization. The project-level setting affects all new repositories in a project, and supersedes any name set at the organization level.
 
-You can choose any branch name to use when a repository is initialized. Change the default name anytime to affect all new repositories. You can change the default branch name for any particular repository anytime.
+You can:
+- Choose any legal branch name to use when a repository is initialized.
+- Change the default name anytime to affect all future repositories.
+- Change the default branch name for any particular repository anytime.
 
-If you don't enable the default branch name feature, your repositories initialize with the Azure Repos default branch name `main`.
+If you don't enable the default branch name feature, repositories initialize with the Azure Repos default branch name `main`.
 
 To set a default branch name at the organization level:
 
@@ -283,7 +294,7 @@ To set a default branch name at the organization level:
 1. Select **Repositories** in the left navigation.
 1. On the **All Repositories** page, enable **Default branch name for new repositories**, and enter a default branch name.
 
-   :::image type="content" source="media/repository-settings/organization-settings-change-default-branch-name.png" alt-text="Screenshot that shows the 'Organization Settings', 'Repositories', and 'Default branch name for new repositories' selected.":::
+:::image type="content" source="media/repository-settings/organization-settings-change-default-branch-name.png" alt-text="Screenshot that shows the organization-level setting for Default branch name for new repositories.":::
 
 To set a default branch name at the project level:
 
@@ -292,7 +303,7 @@ To set a default branch name at the project level:
 1. On the **All Repositories** page, select the **Settings** tab.
 1. Enable **Default branch name for new repositories**, and enter a default branch name.
 
-   :::image type="content" source="media/repository-settings/organization-settings-change-default-branch-name.png" alt-text="Screenshot that shows the 'Organization Settings', 'Repositories', and 'Default branch name for new repositories' selected.":::
+:::image type="content" source="media/repository-settings/project-settings-change-default-branch-name.png" alt-text="Screenshot that shows the project-level setting for Default branch name for new repositories.":::
 
 ## Allow users to manage permissions for their branches
 
@@ -305,6 +316,8 @@ To enable this setting:
 1. On the **All Repositories** page, select the **Settings** tab.
 1. Enable or disable **Allow users to manage permissions for their created branches**.
 
+:::image type="content" source="media/repository-settings/users-manage-permissions.png" alt-text="Screenshot that shows the project-level Allow users to manage permissions for their created branches setting.":::
+
 You can also enable or disable this setting for individual repositories. For details, see [Permissions management](#permissions-management).
 
 1. On your Azure DevOps project page, select **Project settings** at lower left.
@@ -315,7 +328,7 @@ You can also enable or disable this setting for individual repositories. For det
 <!--- REPOSITORY SETTINGS  --> 
  
 <a id="forks"></a>
-## Forks
+## Forks setting
 
 This repository setting controls whether users can create new server-side [forks](forks.md). Disabling this setting doesn't remove existing forks.
 
@@ -323,21 +336,21 @@ This repository setting controls whether users can create new server-side [forks
 1. On the **All Repositories** page, select the **Repositories** tab, and then select a repository.
 1. On the **\<Repository name>** page, enable or disable **Forks**. 
 
-:::image type="content" source="media/repository-settings/forks.png" alt-text="Repository, Settings, Forks. ":::
+:::image type="content" source="media/repository-settings/forks.png" alt-text="Screenshot that shows the Forks repository setting.":::
 
 <a id="work-item-linking"></a>
-## Work item linking
+## Work item linking settings
 
 These repository settings manage work item linking.
 
 1. Select **Project Settings** > **Repositories**, and then select a repository from the list.
-1. On the **Settings** tab of the **\<Repository name>** page, turn the setting **On** or **Off**.
+1. On the **Settings** tab of the **\<Repository name>** page, turn the settings **On** or **Off**.
 
-:::image type="content" source="media/repository-settings/work-item-linking-repo-settings.png" alt-text="Repository, Settings, Work item configuration. ":::
+:::image type="content" source="media/repository-settings/work-item-linking-repo-settings.png" alt-text="Screenshot that shows the work item linking repository settings.":::
 
 ### Commit mention linking
 
-When enabled, commit messages containing "#" followed by a valid work item ID automatically link the commit to that work item. Disable this setting if the repository previously used a different account or service. Those repositories might have `#` mentions that don't match the work item IDs in the current account.
+When enabled, commit messages containing `#` followed by a valid work item ID automatically link the commit to that work item. Disable this setting if the repository previously used a different account or service. Those repositories might have `#` mentions that don't match the work item IDs in the current account.
 
 ::: moniker range=">=azure-devops-2020"
 ### Commit mention work item resolution
@@ -355,44 +368,51 @@ Enable this setting to automatically complete those work items when you successf
 
 By default, the option to complete linked work items during pull request completion remembers each user's last choice. Teams that want to discourage users from completing work items with their pull requests can disable this setting. Users must then opt in to completing work items each time they complete a pull request.
 
-## Permissions management
+## Permissions management setting
 
-This repository setting allows users to manage permissions for their branches.
+This individual repository setting allows users to manage permissions for their branches.
 
 1. Select **Project Settings** > **Repositories**, and then select a repository from the list.
 1. On the **Settings** tab of the **\<Repository name>** page, under **Repository Settings**, set **Permissions management** to **On** or **Off**.
 
-This setting affects the individual repository. You can also set **Allow users to manage permissions for their created branches** for all new repositories across a project. See [Allow users to manage permissions for their branches](#allow-users-to-manage-permissions-for-their- branches).
+:::image type="content" source="media/repository-settings/permissions-management.png" alt-text="Screenshot that shows the Permissions management repository setting.":::
+
+This setting affects the individual repository. You can also set **Allow users to manage permissions for their created branches** for all new repositories across a project. See [Allow users to manage permissions for their branches](#allow-users-to-manage-permissions-for-their-branches).
 
 ::: moniker range=">=azure-devops-2020"
-## Strict Vote Mode
+## Strict Vote Mode setting
 
-In certain situations, depending on policies, users who aren't contributors to a repository can submit a pull request and cause it to be merged. To prevent this possibility, enable **Strict Vote Mode** to change the required permission to vote on repository pull requests to **Contribute**. Enabling this setting is recommended if you rely on user forks in Azure Repos.
+In certain situations, users who aren't contributors to a repository can submit a pull request and cause it to be merged, depending on policies. To prevent this possibility, enable **Strict Vote Mode** to change the required permission to vote on repository pull requests to **Contribute**. Enabling this setting is recommended if you rely on user forks in Azure Repos.
 
 1. Select **Project Settings** > **Repositories**, and then select a repository from the list.
 1. On the **Settings** tab of the **\<Repository name>** page, under **Repository Settings**, set **Strict Vote Mode** to **On** or **Off**.
 
+:::image type="content" source="media/repository-settings/strict-vote-mode.png" alt-text="Screenshot that shows the Strict Vote Mode repository setting.":::
 ::: moniker-end
 
-## Disable Repository
+## Disable Repository setting
 
 Enabling this setting disables access to the repository, including builds and pull requests, but keeps the repository discoverable with a warning.
 
 1. Select **Project Settings** > **Repositories**, and then select a repository from the list.
 1. On the **Settings** tab of the **\<Repository name>** page, under **Disable Repository**, set **Disable Repository** to **On** or **Off**.
 
-## Searchable branches
+:::image type="content" source="media/repository-settings/disable-repository.png" alt-text="Screenshot that shows the Disable Repository setting.":::
+
+## Searchable branches setting
 
 By default, code search in files applies only to the default branch. You can add up to five more branches for code search.
 
 >[!IMPORTANT]
 > To search code in repositories, you must install the Marketplace [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) extension. If you don't see **Searchable Branches** in the repository **Settings** tab, make sure you have the extension installed.
 
-To add more branches for code search:
+To add branches for code search:
 
 1. Select **Project Settings** > **Repositories**, and then select a repository from the list.
 1. At the bottom of the **Settings** tab on the **\<Repository name>** page, select the **+** in **Searchable Branches**.
 1. Select a branch to include in search, and then select **Add branch**.
+
+:::image type="content" source="media/repository-settings/disable-repository.png" alt-text="Screenshot that shows the Searchable Branches repository setting.":::
 
 <!--- REPOSITORY POLICIES --> 
 
@@ -405,51 +425,51 @@ To set policies to protect specific or default branch names across a project:
 1. From **Project Settings**, select **Repositories** in the left navigation.
 1. On the **All Repositories** page, select the **Policies** tab.
 1. Select the plus sign **+** in **Branch Policies** at the bottom of the page.
-1. On the **Add branch protection** screen, select **Protect the default branch of each repository**, or **Protect current and future branches matching a specified pattern**. If you select the second option, enter the branch name to protect. An informational message lets you know how many current branches are affected. The branch doesn't have to exist yet to protect the branch name.
+1. On the **Add branch protection** screen, select **Protect the default branch of each repository**, or **Protect current and future branches matching a specified pattern**.
+
+   If you select the second option, enter the branch name to protect. An informational message lets you know how many current branches are affected. The branch doesn't have to exist yet to protect the branch name.
+
 1. Select **Create**.
 
-   :::image type="content" source="media/repository-settings/cross-repo-policies.png" alt-text="Screenshot that shows 'Cross-repo policies' selected, and the 'Add branch protection' window displayed.":::
+   :::image type="content" source="media/repository-settings/cross-repo-policies.png" alt-text="Screenshot that shows enabling cross-repo branch policies.":::
 
 1. On the **Cross-Repository policies for \<branch name>** page, set the policies you want for the protected branches. For more information about branch policies, see [Branch policies](branch-policies.md).
 
-   :::image type="content" source="media/repository-settings/cross-repo-policies.png" alt-text="Screenshot that shows 'Cross-repo policies' selected, and the 'Add branch protection' window displayed.":::
+   :::image type="content" source="media/repository-settings/cross-repo-policy-setting.png" alt-text="Screenshot that shows cross-repo branch policy settings.":::
 
 <a id="commit-author-email"></a>
 <a id="commit-author-email-validation"></a>
-## Commit author email validation 
+## Commit author email validation policy
 
 This policy blocks commits to a repository by commit authors whose email addresses don't match a pattern.
 
-:::image type="content" source="media/repository-settings/add-policy-to-block-commits-email.png" alt-text="Screenshot that shows the 'Policies' tab selected, and the 'Commit author email validation' toggle set to on.":::
-
-1. Select **Project Settings** > **Repositories**, and then select a repository from the list.
-1. On the **Policies** tab of the **\<Repository name>** page, under **Repository Policies**, set **Commit author email validation** to **On** or **Off**.
+1. Select **Project Settings** > **Repositories**, and select a repository if you want to configure only that repository.
+1. On the **Policies** tab of the **All Repositories** or **\<Repository name>** page, under **Repository Policies**, set **Commit author email validation** to **On** or **Off**.
 1. If you turn on the policy, specify the email address or addresses to match.
 
    You can specify exact email addresses or use wildcards. Use `;` as a separator for multiple email patterns. Email patterns prefixed with `!` are excluded. Order is important.
 
-:::image type="content" source="media/repository-settings/commit-author-email.png" alt-text="Repository, Policies, Commit author email validation. ":::
-
+:::image type="content" source="media/repository-settings/add-policy-to-block-commits-email.png" alt-text="Screenshot that shows the Commit author email validation policy setting.":::
 
 <a id="file-path-validation"></a>
-## File path validation  
+## File path validation policy
 
 You can set a policy that prevents commits to a repository from file paths that match a pattern.
 
-1. Select **Project Settings** > **Repositories**, and then select a repository from the list.
-1. On the **Policies** tab of the **\<Repository name>** page, under **Repository Policies**, set **File path validation** to **On** or **Off**.
+1. Select **Project Settings** > **Repositories**, and select a repository if you want to configure only that repository.
+1. On the **Policies** tab of the **All Repositories** or **\<Repository name>** page, under **Repository Policies**, set **File path validation** to **On** or **Off**.
 1. If you turn on the policy, specify the path or paths to block.
 
    You can specify exact paths and wildcards. Exact paths begin with `/`. You can also specify multiple paths using `;` as a separator. Paths prefixed with `!` are excluded. Order is important.
 
-:::image type="content" source="media/repository-settings/add-policy-to-block-files-patterns.png" alt-text="Screenshot that shows the 'Policies' tab selected, and the 'File path validation' toggle set to on.":::
+:::image type="content" source="media/repository-settings/add-policy-to-block-files-patterns.png" alt-text="Screenshot that shows the File path validation policy setting.":::
 
 
-<a id="case-enforcement" /> 
-## Case enforcement
+<a id="case-enforcement"></a>
+## Case enforcement policy
 
 ::: moniker range=">= tfs-2018"
-Git is case-sensitive, meaning that a file called *Foo.txt* is different from a file called *foo.txt*. However, Windows and macOS default to case-insensitive file systems, meaning that *Foo.txt* and *foo.txt* are the same name. This discrepancy can cause Git problems if someone on a case-insensitive system pushes files, folders, branches, or tags that differ only by letter case. For more information, see [Git Cross-Platform Compatibility](os-compatibility.md).
+Git is case-sensitive, meaning that a file called *Foo.txt* is different from a file called *foo.txt*. However, Windows and macOS default to case-insensitive file systems, meaning that *Foo.txt* and *foo.txt* are the same name. This discrepancy can cause problems if someone on a case-insensitive system pushes files, folders, branches, or tags that differ only by letter case. For more information, see [Git Cross-Platform Compatibility](os-compatibility.md).
 
 If most of your contributors are on Windows or macOS, it's best to enable the **Case enforcement** policy. Case enforcement switches the server from its default case-sensitive mode, where *File.txt* and *file.txt* are distinct, to a Windows and macOS-friendly mode where *File.txt* and *file.txt* are considered the same file. This setting affects files, folders, branches, and tags.
 
@@ -463,10 +483,12 @@ This setting won't fix a repository that already contains objects that differ on
 
 ::: moniker range=">= tfs-2018"
 
-1. Select **Project Settings** > **Repositories**, and then select a repository from the list.
-1. On the **Policies** tab of the **\<Repository name>** page, under **Repository Policies**, set **Case enforcement** to **On** or **Off**.
+To set case enforcement policy:
 
-:::image type="content" source="media/repository-settings/case-enforcement.png" alt-text="Repository, Policies, Case enforcement setting. ":::
+1. Select **Project Settings** > **Repositories**, and select a repository if you want to configure only that repository.
+1. On the **Policies** tab of the **All Repositories** or **\<Repository name>** page, under **Repository Policies**, set **Case enforcement** to **On** or **Off**.
+
+:::image type="content" source="media/repository-settings/case-enforcement.png" alt-text="Screenshot that shows the Case enforcement policy setting.":::
 
 ::: moniker-end
 ::: moniker range="<= tfs-2018"
@@ -564,28 +586,41 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 ***
 
 <a id="reserved-names"></a>
-## Reserved names
+## Reserved names policy
 
-Not all filenames are allowed on the three major OS file systems, Windows, macOS, and Linux. Commits to a shared repository might contain file or folder names that are invalid on one or more platforms. If invalid files or folders are fetched and checked out on these platforms, working directories can become corrupted. For more information, see [Git Cross-Platform Compatibility](os-compatibility.md).
+Not all filenames are allowed on the three major OS file systems: Windows, macOS, and Linux. Commits to a shared repository might contain file or folder names that are invalid on one or more platforms. If invalid files or folders are fetched and checked out on these platforms, working directories can become corrupted. For more information, see [Git Cross-Platform Compatibility](os-compatibility.md).
 
 You can enable or disable policies to place restrictions on file and folder names. The **Reserved names** setting blocks pushes to a repository that contain file or folder names that are invalid on all platforms. To see what names are invalid, see [Git Cross-Platform Compatibility](os-compatibility.md).
 
-:::image type="content" source="media/repository-settings/reserved-names.png" alt-text="Repository, Policies, Reserved names and Maximum path length settings. ":::
+To set the reserved names policy:
+
+1. Select **Project Settings** > **Repositories**, and select a repository if you want to configure only that repository.
+1. On the **Policies** tab of the **All Repositories** or **\<Repository name>** page, under **Repository Policies**, set **Reserved names** to **On** or **Off**.
+
+:::image type="content" source="media/repository-settings/reserved-names.png" alt-text="Screenshot that shows the Reserved names policy setting.":::
 
 <a id="max-path-length"></a>
-## Maximum path length
+## Maximum path length policy
 
-Not all path lengths are allowed on the three major OS file systems, Windows, macOS, and Linux. Commits to a shared repository might contain files or directories with path lengths that are invalid on one or more platforms. If these files or directories are fetched and checked out on a platform where they're invalid, working directories can become corrupted. For more information, see [Git Cross-Platform Compatibility](os-compatibility.md).
+Not all path lengths are allowed on the three major OS file systems: Windows, macOS, and Linux. Commits to a shared repository might contain files or directories with path lengths that are invalid on one or more platforms. If these files or directories are fetched and checked out on a platform where they're invalid, working directories can become corrupted. For more information, see [Git Cross-Platform Compatibility](os-compatibility.md).
 
-The **Maximum path length** setting blocks pushes to a repository that contain files or directories with path lengths that are invalid on any platform. To see what path lengths are invalid, see [Git Cross-Platform Compatibility](os-compatibility.md). When you enable this setting, the default maximum value is `248`, because that maximum length is 100% supported across all three major platforms.
+The **Maximum path length** setting blocks pushes that contain files or directories with path lengths that are invalid on any platform. To see what path lengths are invalid, see [Git Cross-Platform Compatibility](os-compatibility.md). When you enable this setting, the default maximum value is `248`, because that maximum length is 100% supported across all three major platforms.
 
-You can modify the maximum path value. For example, if you only have macOS or Linux developers in your organization, you may optionally choose to set the maximum length to the value that's supported on both platforms, `1016`. You might also choose to set a lower maximum path value to enforce your organization's directory naming conventions.
+You can modify the maximum path value. For example, if you only have macOS or Linux developers in your organization, you might choose to set the maximum length to the value that's supported on both platforms, `1016`. You might also choose to set a lower maximum path value to enforce your organization's directory-naming conventions.
+
+To set the maximum path length policy:
+
+1. Select **Project Settings** > **Repositories**, and select a repository if you want to configure only that repository.
+1. On the **Policies** tab of the **All Repositories** or **\<Repository name>** page, under **Repository Policies**, set **Maximum path length** to **On** or **Off**.
+1. If you turned on the setting, enter a maximum path length.
+
+:::image type="content" source="media/repository-settings/maximum-path-length.png" alt-text="Screenshot that shows the Maximum path length policy setting.":::
 
 
-<a id="maximum-file-size" /> 
-## Maximum file size
+<a id="maximum-file-size"></a>
+## Maximum file size policy
 
-Large files checked into Git remain in the repository, increasing clone times and disk usage. For guidance on managing large files, see [Manage and store large files in Git](manage-large-files.md).
+Large files checked into Git remain in the repository indefinitely, increasing clone times and disk usage. For guidance on managing large files, see [Manage and store large files in Git](manage-large-files.md).
 
 ::: moniker range=">= tfs-2018"
 The **Maximum file size** policy setting blocks files over a certain size from entering the repository. If a push contains a new or updated file larger than the limit configured in this setting, the push is blocked. The user must rewrite their unpushed history to remove the large file and try the push again.
@@ -596,11 +631,13 @@ The **Maximum file size** policy setting blocks files over a certain size from e
  
 To configure **Maximum file size** policy:
 
-1. Select **Project Settings** > **Repositories**, and then select a repository from the list.
-1. On the **Policies** tab of the **\<Repository name>** page, under **Repository Policies**, set **Maximum file size** to **On** or **Off**.
-1. Select a maximum file size.
+1. Select **Project Settings** > **Repositories**, and select a repository if you want to configure only that repository.
+1. On the **Policies** tab of the **All Repositories** or **\<Repository name>** page, under **Repository Policies**, set **Maximum file size** to **On** or **Off**.
+1. If you turned on the setting, select a maximum file size.
 
-:::image type="content" source="media/repository-settings/maximum-file-size.png" alt-text="Repository, Policies, Maximum file size setting. ":::
+:::image type="content" source="media/repository-settings/maximum-file-size.png" alt-text=":::image type="content" source="media/repository-settings/reserved-names.png" alt-text="Screenshot that shows the Maximum file size policy setting.":::
+
+":::
 
 ::: moniker range="<= tfs-2018"
 > [!NOTE]   
@@ -612,8 +649,7 @@ To configure **Maximum file size** policy:
 ::: moniker range=">= azure-devops-2020"
 Use [az repos policy file-size create](/cli/azure/repos/policy/file-size?view=azure-cli-latest&preserve-view=true#az_repos_policy_file_size_create) and [az repos policy file-size update](/cli/azure/repos/policy/file-size#az_repos_policy_file_size_update) to manage maximum file size policy.
 
-<a name="create-file-size-policy"></a>
-### Create maximum file size policy
+### Create file size policy
 
 ```azurecli
 az repos policy file-size create --blocking {false, true}
@@ -653,7 +689,7 @@ ID    Name                   Is Blocking    Is Enabled    Repository Id         
 45    File size restriction  True           True          d28cd374-e7f0-4b1f-ad60-f349f155d47c  All Branches
 ```
 
-### Update maximum file size policy
+### Update file size policy
 
 Use [az repos policy file-size update](/cli/azure/repos/policy/file-size#az_repos_policy_file_size_update) to manage maximum file size policy.
 
@@ -669,8 +705,6 @@ az repos policy file-size update --id
                                  [--subscription]
                                  [--use-uncompressed-size {false, true}]
 ```
-
-**Parameters**
 
 **Parameters**
 
@@ -819,7 +853,7 @@ The following table summarizes the settings you can enable and configure for eac
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Permissions management](#allow-users-to-manage-permissions-for-their-branches)
+      [Permissions management](#permissions-management)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -830,7 +864,7 @@ The following table summarizes the settings you can enable and configure for eac
 :::row-end:::
 :::row:::
    :::column span="2":::
-      **Strict Vote Mode**
+      [Strict Vote Mode](#strict-vote-mode)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -841,7 +875,7 @@ The following table summarizes the settings you can enable and configure for eac
 :::row-end:::
 :::row:::
    :::column span="2":::
-      **Disable Repository**
+      [Disable Repository](#disable-repository)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -852,7 +886,7 @@ The following table summarizes the settings you can enable and configure for eac
 :::row-end:::
 :::row:::
    :::column span="2":::
-      **Searchable branches**
+      [Searchable branches](#searchable-branches)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -1020,7 +1054,7 @@ The following table summarizes the policies you can define for a branch. For mor
        Off  
    :::column-end:::
    :::column span="3"::: 
-      Add one or more policies to validate code by pre-merging and building pull request changes. Enable or disable build policies.
+      Add, enable, or disable policies to validate code by pre-merging and building pull request changes.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1031,7 +1065,7 @@ The following table summarizes the policies you can define for a branch. For mor
        Off  
    :::column-end:::
    :::column span="3"::: 
-      Add one or more policies to require other services to post successful status to complete pull requests. Enable or disable status check policies.
+      Add, enable, or disable policies to require other services to post successful status to complete pull requests.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -1042,7 +1076,7 @@ The following table summarizes the policies you can define for a branch. For mor
        Off  
    :::column-end:::
    :::column span="3"::: 
-      Add one or more policies to designate automatically included code reviewers to when pull requests change certain areas of code. Enable or disable required reviewer policies.
+      Add, enable, or disable policies to designate automatically included code reviewers when pull requests change certain areas of code.
    :::column-end:::
 :::row-end:::
 
@@ -1053,7 +1087,6 @@ The following table summarizes the policies you can define for a branch. For mor
 
 ## Related articles
 
-- [Set branch policies](branch-policies.md)
 - [Configure Git repository policies using a configuration file](../../cli/policy-configuration-file.md)
 - [Default Git permissions (Security)](../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
 - [Set permissions (Security)](set-git-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
