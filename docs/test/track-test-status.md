@@ -37,7 +37,7 @@ To add a chart, follow these steps:
 
 1. Under **Charts**, select **New** > **New test result chart**.
 
-   ![Screenshot show the Charts page with New, then New test result chart selected.](media/track-test-status/new-test-result-chart.png)
+   ![Screenshot shows the Charts page with New, then New test result chart selected.](media/track-test-status/new-test-result-chart.png)
 
 1. Select the chart type, in this example, a pie chart.
    Based on the chart, configure the fields that you want to use to group by, or for the rows and columns.
@@ -164,9 +164,9 @@ If you already know how to add a chart, jump to the [examples](#ExamplesTestCase
    Those fields appear as choices in the lists for grouping for your test case charts.
 
 1. Select the test plan or test suite for your chart in the **Test Plans** page.
-   Under **Charts**, Select **New** > **New test case chart**.
+   Under **Charts**, select **New** > **New test case chart**.
 
-   ![Screenshot show the Charts page with New, then New test case chart selected.](media/track-test-status/new-test-case-chart.png)
+   ![Screenshot shows the Charts page with New, then New test case chart selected.](media/track-test-status/new-test-case-chart.png)
 
    All charts roll up the information for any child test suites of the test plan or test suite that you selected.
 
