@@ -301,7 +301,7 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
 
 1. Create a VM with your desired OS image and optionally expand the OS disk size from 128 GB to `<myDiskSizeGb>`.
 
-    - If starting with an available Azure Image, for example <myBaseImage> = (Win2019DataCenter, UbuntuLTS):
+    - If starting with an available Azure Image, for example \<myBaseImage\> = (Win2019DataCenter, UbuntuLTS):
     
         ```azurecli  
         az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myBaseImage> --os-disk-size-gb <myDiskSize>  --admin-username myUserName --admin-password myPassword

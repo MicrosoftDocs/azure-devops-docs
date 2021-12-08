@@ -239,7 +239,7 @@ YAML is not supported in TFS.
 
 ## Tips
 
-* **Artifact publish location** argument: **Azure Pipelines/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in Azure Pipelines or TFS. But if you're using a private Windows agent, you've got the option to [drop to a UNC file share](#unc-file-share).
+* `PublishBuildArtifacts`: using the *publishLocation* argument, you can store you artifact in Azure Pipelines (Container), or copy it to a file share (FilePath). The file share must be accessible from the agent running the pipeline.
 
 * Use forward slashes in file path arguments so that they work for all agents. Backslashes don't work for macOS and Linux agents.
 
@@ -251,7 +251,7 @@ YAML is not supported in TFS.
 
 * Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.  
 
-* You can [get build artifacts from the REST API](/rest/api/vsts/build/artifacts).
+* You can [get build artifacts](/rest/api/vsts/build/artifacts) using the Azure DevOps REST API.
 
 ## Related tasks for publishing artifacts
 

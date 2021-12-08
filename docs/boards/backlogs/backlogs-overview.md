@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 12/03/2021
 ---
 
 
@@ -104,6 +104,20 @@ For details, see the following articles:
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md)
 - [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md)
+
+### Common backlog configurations for multiple teams 
+
+**Question**: *Can you define a backlog configuration that multiple teams can subscribe to?*
+**Answer**: *No. Each team controls their own team settings and backlog configurations.*
+
+::: moniker range="azure-devops"
+Because each user can configure their own **Column Options** and **View Options**, there is no way to configure a common backlog view for all teams. Also, there is no default column options that can be set for each team.  
+::: moniker-end
+
+::: moniker range="< azure-devops"
+Because each user can configure their own **Column Options** and **View Options**, there is no way to configure a common backlog view for all teams. You can, however, define the default column options for all team members by editing the process configuration. To learn how, see [Process configuration XML element reference, Set default columns](../../reference/xml/process-configuration-xml-element.md#columns). 
+::: moniker-end
+ 
 
 ## Define work items and create your backlog  
 
@@ -221,7 +235,7 @@ Items that are owned by other teams appear with an information icon :::image typ
 
 ::: moniker range="tfs-2017" 
 
-Backlog displays that with work item icons are supported for TFS 2017.2 and later versions. For TFS 2017.1 and earlier versions, items that are owned by other teams appear with hollow-filled bars.  
+Backlog displays with work item icons is supported for TFS 2017.2 and later versions. For TFS 2017.1 and earlier versions, items owned by other teams appear with hollow-filled bars.  
 
 <img src="media/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership, TFS 2017 version." /> 
 ::: moniker-end
@@ -273,7 +287,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 ::: moniker-end 
 
-You can reparent items from these views, both those items that you own and those items owned by other teams. 
+From these views, you can re-parent items, both those that you own and those owned by other teams. 
 However, you can't reorder items that another team owns.  
 
 This organization enables management teams to focus on high-level features and epics, and development teams 

@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 10/15/2021
+ms.date: 11/18/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -207,10 +207,10 @@ steps:
 * This function can only be used in an expression that defines a variable. It cannot be used as part of a condition for a step, job, or stage.
 * Evaluates a number that is incremented with each run of a pipeline.
 * Parameters: 2. `prefix` and `seed`.
-* Prefix is a string expression. A separate value of counter is tracked for each unique value of prefix
+* Prefix is a string expression. A separate value of counter is tracked for each unique value of prefix. The `prefix` should use UTF-16 characters.
 * Seed is the starting value of the counter
 
-You can create a counter that is automatically incremented by one in each execution of your pipeline. When you define a counter, you provide a `prefix` and a `seed`. Here is an example that demonstrates this. The `prefix` value cannot contain some special characters, including `.`.
+You can create a counter that is automatically incremented by one in each execution of your pipeline. When you define a counter, you provide a `prefix` and a `seed`. Here is an example that demonstrates this. 
 
 ```yaml
 variables:
