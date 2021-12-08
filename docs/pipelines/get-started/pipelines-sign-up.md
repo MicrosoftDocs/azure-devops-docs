@@ -94,8 +94,6 @@ Use the following URL to sign in to your organization at any time: `https://dev.
 
 You're now prompted to create a project.
 
---- 
-
 <a id="create-project" /></a>
 
 ## Create a project
