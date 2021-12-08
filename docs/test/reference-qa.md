@@ -33,20 +33,6 @@ The suite will automatically include every test case that is returned by the que
 For test suites, use [this API](/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1&preserve-view=true).
 We plan to expose these capabilities through the out-of-box UI in a future release.
 
-### Q: Can I export the test plan to share or review offline?
-
-**A:** Yes, you can export test plans, test suites, and test cases.
-Select the details that you want in the report.
-Then email or print this report for review.
-
-![Right-click a test suite, and choose Export](media/create-a-test-plan/ExportTestPlanHTML.png)
-
-Change the test case fields in the report by adding or removing columns from the list view of the test suite.
-
-> [!IMPORTANT]
-> You cannot export more than 75 Test Suites in a single operation.
-> The email supports up to 1MB of data.
-
 ### Q: When I export a test plan, can I just view the data or copy it to a Word document?
 
 **A:** Yes, choose **Print** in the **Export** dialog box, then choose **Cancel** in the **Print** dialog box.
@@ -76,35 +62,6 @@ You can [edit the XSLT file](/previous-versions/dd380763(v=vs.140)#XSLT).
 Press **Alt**+**P** to insert a new test step above the selected step.
 
 <a name="add-multiple-test-cases"></a>
-
-### Q: Can I bulk edit multiple test cases?
-
-**A:** Yes, switch the view from List to Grid.
-The grid shows all the test cases for the current test suite and all the test steps for those cases.
-This view is a helpful view if you want to review your test cases with other team members.
-When you review, you can update and add new test cases.
-
-![To change from list to grid view, choose List ](media/create-test-cases/ChangeToGridView.png)
-
-Or, you can filter and sort the test cases in list view.
-Then select just the ones that you want to bulk edit using the grid.
-
-![Select test cases in listview to bulk edit in grid view](media/create-test-cases/GridEditSelected.png)
-
-To return to the test suite view, switch the view from Grid back to List.
-
-### Q: Can I share test steps between test cases?
-
-**A:** Yes, choose the steps that you want to share. Find out more about [sharing test steps](share-steps-between-test-cases.md).
-
-![Create shared test steps](media/create-test-cases/CreateSharedSteps.png)
-
-### Q: Can I add parameters to a test case so it can run multiple times with different data?
-
-**A:** Yes, choose a test step, and then add the parameter.
-Find out more about [repeating test steps with different data](repeat-test-with-different-data.md).
-
-![Add parameter to test step](media/create-test-cases/AddParameters1.png)
 
 ### Q: How can I find out if a test case was added to other test suites?
 
