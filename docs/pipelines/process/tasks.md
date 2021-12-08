@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 10/22/2021
+ms.date: 11/29/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -138,7 +138,7 @@ Control options are available as keys on the `task` section.
 
 ::: moniker-end
 
-::: moniker range=">azure-devops-2019"
+::: moniker range=">azure-devops-2019 <azure-devops"
 
 Control options are available as keys on the `task` section.
 
@@ -147,6 +147,22 @@ Control options are available as keys on the `task` section.
   condition: expression     # see below
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean          # whether or not to run this step; defaults to 'true'
+  timeoutInMinutes: number  # how long to wait before timing out the task
+  target: string            # 'host' or the name of a container resource to target
+```
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+Control options are available as keys on the `task` section.
+
+```yaml
+- task: string  # reference to a task and version, e.g. "VSBuild@1"
+  condition: expression     # see below
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean          # whether or not to run this step; defaults to 'true'
+  retryCountOnTaskFailure: number # Max number of retries; default is zero
   timeoutInMinutes: number  # how long to wait before timing out the task
   target: string            # 'host' or the name of a container resource to target
 ```
@@ -214,6 +230,27 @@ Here, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+### Number of retries if task failed
+
+Use `retryCountOnTaskFailure` to specify the number of retries if the task fails. The default is zero. 
+
+```yml
+- task: <name of task>
+   retryCountOnTaskFailure: <max number of retries>
+   ...
+```
+
+> [!NOTE]
+> * The failing task is retried immediately.
+> * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
+> * There is no information about the retry count made available to the task.
+> * A warning is added to the task logs indicating that it has failed before it is retried.
+> * All of the attempts to retry a task are shown in the UI as part of the same task node.
+
+::: moniker-end
+
 ::: moniker range="<= azure-devops-2019"
 
 YAML pipelines aren't available in TFS.
@@ -242,6 +279,17 @@ time the task is queued or is waiting for an agent.
 #### Continue on error (partially successful)
 
 Select this option if you want subsequent tasks in the same job to possibly run even if this task fails. The build or deployment will be no better than partially successful. Whether subsequent tasks run depends on the **Run this task** setting.
+
+#### Number of retries if task failed
+
+Specify the number of retries if this task fails. The default is zero. 
+
+> [!NOTE]
+> * The failing task is retried immediately.
+> * There is no assumption about the idempotency of the task. If the task has side-effects (for instance, if it created an external resource partially), then it may fail the second time it is run.
+> * There is no information about the retry count made available to the task.
+> * A warning is added to the task logs indicating that it has failed before it is retried.
+> * All of the attempts to retry a task are shown in the UI as part of the same task node.
 
 #### Run this task
 
