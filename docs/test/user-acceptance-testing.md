@@ -1,5 +1,5 @@
 ---
-title: Perform user acceptance testing
+title: Assign tests for user acceptance testing
 description: Create and run user acceptance tests in Azure Test Plans. Test to verify that each of the deliverables meets your users' needs.
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
 ms.technology: devops-test
@@ -10,7 +10,7 @@ ms.date: 12/06/2021
 monikerRange: '>= tfs-2015'
 ---
 
-# Perform user acceptance testing
+# Assign tests for user acceptance testing
 
 [!INCLUDE [version-header](includes/version-header.md)] 
 
@@ -57,7 +57,7 @@ For user acceptance testing, you can assign multiple testers to a set of tests. 
    ![Screenshot shows the option to send email selected and text boxes for subject and notes.](media/user-acceptance-testing/send-messages-testers.png)
 
 1. Enter a message subject and note, as needed, and select **Ok**.
-::: moniker range="<azure-devops-2020"
+::: moniker range="<azure-devops"
 
    > [!NOTE]
    > For on-premises Azure DevOps, you must have an SMTP server configured for your deployment.
