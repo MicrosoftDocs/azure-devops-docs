@@ -135,7 +135,7 @@ You can, for example, prevent inline script execution.
 
 > [!WARNING]
 > In the example below, only the literal step type "script" is prevented.
-> For full lockdown of ad-hoc scripts, you would also need to block "bash", "pwsh", "powershell", and the tasks which back these steps.
+> For full lockdown of ad-hoc scripts, you would also need to block "Bash", "BatchScript", "PowerShell", "ShellScript".
 
 ```yaml
 # template.yml
@@ -145,9 +145,22 @@ parameters:
   default: []
 steps:
 - ${{ each step in parameters.usersteps }}:
-  - ${{ each pair in step }}:
-    ${{ if ne(pair.key, 'script') }}:
-      ${{ pair.key }}: ${{ pair.value }}
+  - ${{ if not(or(startsWith(step.task, 'Bash'),startsWith(step.task, 'CmdLine'),startsWith(step.task, 'PowerShell'))) }}:  
+    - ${{ step }}
+  # The lines below will replace task CmdLine@2
+  - ${{ else }}:  
+    - ${{ each pair in step }}:
+        ${{ if eq(pair.key, 'inputs') }}:
+          inputs:
+            ${{ each attribute in pair.value }}:
+              ${{ if eq(attribute.key, 'script') }}:
+                script: echo "Script removed by template"
+              ${{ else }}:
+                ${{ attribute.key }}: ${{ attribute.value }}
+        ${{ elseif ne(pair.key, 'displayName') }}:
+          ${{ pair.key }}: ${{ pair.value }}
+
+          displayName: 'Disabled by template: ${{ step.displayName }}'
 ```
 
 ```yaml
