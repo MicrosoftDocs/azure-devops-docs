@@ -1,23 +1,24 @@
 ---
-title: Publish Packages with Jenkins & Azure Artifacts
+title: Publish Artifacts with Jenkins
 ms.custom: seodec18
-description: Working with feeds in Jenkins-CI
+description: How to publish Artifacts with Jenkins and Azure Pipelines
 ms.assetid: FC3EC349-1F9B-42A7-B523-495F21BC73F6
-ms.date: 08/10/2016
+ms.date: 12/08//2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Use Jenkins to restore and publish packages
+# Publish NuGet packages with Jenkins 
 
-**Azure Artifacts | TFS 2018 | TFS 2017**
+**Azure DevOps Services | TFS 2018 | TFS 2017**
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+With Azure Artifacts, you can leverage a variety of build and deployment automation tools such as Maven, Gradle, and Jenkins. This article will walk you through creating and publishing NuGet packages using Jenkins.
 
-Azure Artifacts works with the continuous integration tools your team already uses.
-In this [Jenkins](https://jenkins-ci.org/) walkthrough, you'll create a NuGet package and publish it to an Azure Artifacts feed.
-If you need help on Jenkins setup, you can learn more on [the Jenkins wiki](https://www.jenkins.io/doc/book/using/).
+## Prerequisites
+
+- [Install NuGet CLI](/nuget/tools/nuget-exe-cli-reference).
+- [A personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate your feed.
+- [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
+- [Azure Artifacts feed](../get-started-nuget.md).
 
 <a name="setup"></a>
 ## Setup
