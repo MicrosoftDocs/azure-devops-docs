@@ -99,7 +99,7 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Not clear how to consume build artifacts without an extra step #6437](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6437)
 - [Set a Gate time delay above 48 hours #6392](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6392)
 - [Remove preview tag from this article #6300](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6300)
-- [What do we put for '<feedName>' ? #5773](https://github.com/MicrosoftDocs/azure-devops-docs/issues/5773)
+- [What do we put for '\<feedName\>' ? #5773](https://github.com/MicrosoftDocs/azure-devops-docs/issues/5773)
 - [Deployment Groups #5722](https://github.com/MicrosoftDocs/azure-devops-docs/issues/5722)
 - [Better quality graphics #5158](https://github.com/MicrosoftDocs/azure-devops-docs/issues/5158)
 - [Artifact name cannot be a variable #4851](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4851)

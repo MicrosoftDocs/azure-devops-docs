@@ -74,17 +74,6 @@ Learn how to create tests plans and test cases, and run them using the Azure Dev
     :::column-end:::
 :::row-end:::
 
-## Videos
-
-:::row:::
-    :::column:::
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/u-fdqhxonPc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
-        <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe>  
-    :::column-end:::
-    :::column:::
-        <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="560" height="315" allowFullScreen="true" frameBorder="0"></iframe>  
-    :::column-end:::
-:::row-end:::
 
 ## Manual testing from the Kanban board
 

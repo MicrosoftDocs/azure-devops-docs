@@ -1,9 +1,9 @@
 - name: Azure Pipelines
   href: index.yml
-- name: Use Azure Pipelines
-  href: get-started/pipelines-get-started.md
 - name: What is Azure Pipelines?
   href: get-started/what-is-azure-pipelines.md
+- name: Use Azure Pipelines
+  href: get-started/pipelines-get-started.md
 - name: Get started
   items:
     - name: Sign up for Azure Pipelines
@@ -11,22 +11,11 @@
     - name: Create your first pipeline
       href: create-first-pipeline.md
       displayName: status badge, get started, first pipeline, import from github
-    - name: Clone or import a pipeline
-      href: ./get-started/clone-import-pipeline.md
-      displayName: export, copy
-    # - name: Publish build results
-    #   href: get-started/pipelines-get-started.md
     - name: Customize your pipeline
       href: customize-pipeline.md
       displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers
     - name: Multi-stage pipelines user experience
       href: get-started/multi-stage-pipelines-experience.md
-    # - name: Clean up pipeline steps
-    #   href: get-started/pipelines-get-started.md
-    - name: DevOps Starter
-      href: /azure/devops-project/overview
-    - name: Configure pipelines to support work tracking
-      href: integrations/configure-pipelines-work-tracking.md
 - name: Pipeline basics
   items:
     - name: Key concepts
@@ -177,6 +166,15 @@
           href: ../report/dashboards/add-widget-to-dashboard.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
         - name: Test Results Trend (Advanced)
           href: ../report/dashboards/analytics-widgets.md?toc=%2Fazure%2Fdevops%2Fpipelines%2Ftoc.json&bc=%2Fazure%2Fdevops%2Fpipelines%2Fbreadcrumb%2Ftoc.json&view=azure-devops#test-results-trend-advanced
+    - name: Manage pipelines with Azure CLI
+      href: get-started/manage-pipelines-with-azure-cli.md
+    - name: Clone or import a pipeline
+      href: ./get-started/clone-import-pipeline.md
+      displayName: export, copy
+    - name: Configure pipelines to support work tracking
+      href: integrations/configure-pipelines-work-tracking.md
+    - name: DevOps Starter
+      href: /azure/devops-project/overview
 - name: Ecosystems & integration
   items:
     - name: Ecosystem support
@@ -263,6 +261,9 @@
     - name: Reduce build time using caching
       href: release/caching.md
       displayName: caching, pipelines caching, cache
+    - name: Cache NuGet packages
+      href: artifacts/caching-nuget.md 
+      displayName: caching, cache
     - name: Configure build run numbers
       href: process/run-number.md
       displayName: build number, run number, tokens, variables,
@@ -392,10 +393,8 @@
       items:
         - name: Function App on Container
           href: targets/function-app-container.md
-        - name: Function App on Linux
+        - name: Function App
           href: targets/azure-functions.md
-        - name: Function App on Windows
-          href: targets/azure-functions-windows.md
     - name: Azure Resource Manager (ARM) templates
       items:
         - name: Use a Resource Manager template to deploy

@@ -77,7 +77,7 @@ Using the “Azure Resource Group Deployment” task, users can provision Azure 
 
 We’ve added the ability to permanently delist packages from a feed. When a package is delisted, it no longer shows up in any package listing, whether on the web, the NuGet Visual Studio extension, or nuget.exe. Delisted packages remain downloadable by specifying an exact version, which allows the Restore workflow to continue working. To permanently delist a package, run:
 
-nuget.exe delete <package ID> <package version> -Source <NuGet v2 endpoint URL> -ApiKey VST
+nuget.exe delete \<package ID\> \<package version\> -Source \<NuGet v2 endpoint URL\> -ApiKey VST
 
 ## Office connector
 

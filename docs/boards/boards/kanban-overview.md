@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/15/2021
+ms.date: 11/17/2021
 ---
 
 
@@ -111,6 +111,13 @@ Your Kanban board is highly configurable to support your team's workflow. Each t
 ::: moniker-end
 
 Along with these team configurations, you can [customize a project](#customize) by adding or modifying work item types, the workflow, and add customized portfolio backlogs and boards. 
+
+
+### Common board configurations for multiple teams 
+
+**Question**: *Can you define a board configuration that multiple teams can subscribe to?*
+**Answer**: *No. Each team controls their own team settings and board configurations.*
+ 
 
 <a id="update" />
 
