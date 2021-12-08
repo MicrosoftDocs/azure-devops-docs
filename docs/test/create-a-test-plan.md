@@ -183,25 +183,40 @@ Now add test suites for the backlog items that need manual tests. These tests co
 
 ## Work with test suites
 
-::: moniker range=">=azure-devops-2020"
 You can create a static test suite that can contain any type of test suites. Use these test suites like folders. Drag test suites to group them in a static test plan. Drag and drop tests to reorder them.
 
+::: moniker range=">=azure-devops-2020"
 ![Screenshot shows using drag and drop to move a test.](media/create-a-test-plan/drag-drop-test.png)
 
-You can track changes to test plans and test suites. Open the work item for the test plan or test suite, then view the work item history.
-
-For test suites, other actions are tracked in the **Test Suite Audit** field. For example, adding and removing test cases from a test suite are tracked in this field.
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
-You can create a static test suite that can contain any type of test suites. Use these suites just like folders. Drag test suites to group them in a static test plan. Drag and drop tests to reorder them.
-
 ![Screenshot shows using drag and drop to reorder tests.](media/create-a-test-plan/AddRequirementSuitesToTestPlan4.png)
+::: moniker-end
 
 You can track changes to test plans and test suites. Open the work item for the test plan or test suite, then view the work item history.
 
 For test suites, other actions are tracked in the **Test Suite Audit** field. For example, adding and removing test cases from a test suite are tracked in this field.
+
+You can export test plans, test suites, and test cases.
+
+::: moniker range=">=azure-devops-2020"
+Select **Export test cases to CSV**.
+
+![Screenshot shows a test plan selected and the Export test cases to CSV option.](media/create-a-test-plan/export-test-cases.png)
 ::: moniker-end
+::: moniker range="<=azure-devops-2019"
+Select the details that you want in the report.
+Then email or print this report for review.
+
+![Right-click a test suite, and choose Export.](media/create-a-test-plan/ExportTestPlanHTML.png)
+::: moniker-end
+
+Change the test case fields in the report by adding or removing columns from the list view of the test suite.
+
+> [!IMPORTANT]
+> You cannot export more than 75 Test Suites in a single operation.
+> The email supports up to 1MB of data.
 
 <a name="findplan"></a>
 
