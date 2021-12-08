@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2018-cloud](../includes/version-tfs-2018-cloud.md)]
 
-There are several ways to customize your Azure Repos Git repositories by using branch and repository settings and policies. This article discusses repository settings and policies.
+There are several ways to customize your Azure Repos Git repositories by using branch and repository settings and policies. This article discusses repository-level settings and policies.
 
 - User-specific *permissions* control user settings.
 
@@ -43,7 +43,7 @@ There are several ways to customize your Azure Repos Git repositories by using b
 <a name="view-and-edit-repository-settings"></a>
 ## View and edit settings and policies
 
-You can configure *settings* for all repositories across an organization or project, or for individual repositories. You can configure *policies* for all repositories, for individual repositories, or for certain branches across repositories. For information about setting branch policies within or across repositories, see [Branch policies](branch-policies.md).
+You can configure *settings* for all repositories across an organization or project, or for individual repositories. You can configure *policies* for all repositories, for individual repositories, or for specified branches across repositories. For information about setting branch policies, see [Branch policies](branch-policies.md).
 
 > [!NOTE]
 > It's best to configure repository settings either at the project level or for individual repositories, but not both. If you configure settings at more than one level, the system honors the most restrictive setting. Configuring settings at only one level reduces confusion and Git performance issues.
@@ -290,18 +290,15 @@ If you don't enable the default branch name feature, repositories initialize wit
 
 To set a default branch name at the organization level:
 
-1. On your Azure DevOps organization page, select **Organization settings** at lower left.
-1. Select **Repositories** in the left navigation.
-1. On the **All Repositories** page, enable **Default branch name for new repositories**, and enter a default branch name.
+1. On your Azure DevOps organization page, select **Organization settings** at lower left, and then select **Repositories** in the left navigation.
+1. On the **All Repositories** page, set **Default branch name for new repositories** to **On**, and then enter a default branch name.
 
 :::image type="content" source="media/repository-settings/organization-settings-change-default-branch-name.png" alt-text="Screenshot that shows the organization-level setting for Default branch name for new repositories.":::
 
 To set a default branch name at the project level:
 
-1. On your Azure DevOps project page, select **Project settings** at lower left.
-1. Select **Repositories** in the left navigation.
-1. On the **All Repositories** page, select the **Settings** tab.
-1. Enable **Default branch name for new repositories**, and enter a default branch name.
+1. On your Azure DevOps project page, select **Project settings** at lower left, and then select **Repositories** in the left navigation.
+1. On the **Settings** tab of the **All Repositories** page, set **Default branch name for new repositories** to **On**, and then enter a default branch name.
 
 :::image type="content" source="media/repository-settings/project-settings-change-default-branch-name.png" alt-text="Screenshot that shows the project-level setting for Default branch name for new repositories.":::
 
@@ -309,12 +306,10 @@ To set a default branch name at the project level:
 
 You can set **Allow users to manage permissions for their created branches** for all repositories in a project. If you enable this setting at the **All Repositories** level, all new project repositories are configured to let users manage permissions for their created branches.
 
-To enable this setting:
+To manage this setting:
 
-1. On your Azure DevOps project page, select **Project settings** at lower left.
-1. Select **Repositories** in the left navigation.
-1. On the **All Repositories** page, select the **Settings** tab.
-1. Enable or disable **Allow users to manage permissions for their created branches**.
+1. On your Azure DevOps project page, select **Project settings** at lower left, and then select **Repositories** in the left navigation.
+1. On the **Settings** tab of the **All Repositories** page, set **Allow users to manage permissions for their created branches** to **On** or **Off**.
 
 :::image type="content" source="media/repository-settings/users-manage-permissions.png" alt-text="Screenshot that shows the project-level Allow users to manage permissions for their created branches setting.":::
 
@@ -328,8 +323,8 @@ You can also enable or disable this setting for individual repositories. For det
 This repository setting controls whether users can create new server-side [forks](forks.md). Disabling this setting doesn't remove existing forks.
 
 1. From **Project Settings**, select **Repositories** in the left navigation.
-1. On the **All Repositories** page, select the **Repositories** tab, and then select a repository if you want to configure only that repository.
-1. On the **Settings** tab of the **All Repositories** or **<Repository name>** page, set **Forks** to **On** or **Off**. 
+1. On the **Repositories** tab of the **All Repositories** page, select a repository.
+1. On the **Settings** tab of the **\<Repository name>** page, set **Forks** to **On** or **Off**. 
 
 :::image type="content" source="media/repository-settings/forks.png" alt-text="Screenshot that shows the Forks repository setting.":::
 
@@ -338,19 +333,19 @@ This repository setting controls whether users can create new server-side [forks
 
 These repository settings manage work item linking.
 
-1. Select **Project Settings** > **Repositories**, and then select a repository if you want to configure only that repository.
-1. On the **Settings** tab of the **All Repositories** or **<Repository name>** page, turn the settings **On** or **Off**.
+1. Select **Project Settings** > **Repositories**, and then select a repository.
+1. On the **Settings** tab of the **\<Repository name>** page, turn the settings **On** or **Off**.
 
 :::image type="content" source="media/repository-settings/work-item-linking-repo-settings.png" alt-text="Screenshot that shows the work item linking repository settings.":::
 
 ### Commit mention linking
 
-When enabled, commit messages containing `#` followed by a valid work item ID automatically link the commit to that work item. Disable this setting if the repository previously used a different account or service. Those repositories might have `#` mentions that don't match the work item IDs in the current account.
+When enabled, commit messages containing `#` followed by a valid work item ID automatically link the commit to that work item. Disable this setting if the repository previously used a different account or service. Those repositories might have commit messages with `#` mentions that don't match the work item IDs in the current account.
 
 ::: moniker range=">=azure-devops-2020"
 ### Commit mention work item resolution
 
-Enable this setting to automatically complete linked work items with successful pull request completion. You can also specify different work item states to transition to, in the pull request completion commit message. For more information, see [Auto-complete work items with pull requests](../../boards/work-items/auto-complete-work-items-pull-requests.md).
+Enable this setting to automatically complete work items when linked pull requests complete. This setting also allows specifying other work item transition states in pull request commit messages. For more information, see [Auto-complete work items with pull requests](../../boards/work-items/auto-complete-work-items-pull-requests.md).
 
 ::: moniker-end
 ::: moniker range=">= tfs-2018 <= azure-devops-2019"
@@ -365,10 +360,10 @@ By default, the option to complete linked work items during pull request complet
 
 ## Permissions management setting
 
-This individual repository setting allows users to manage permissions for their branches.
+This repository setting allows users to manage permissions for their branches.
 
-1. Select **Project Settings** > **Repositories**, and then select a repository  if you want to configure only that repository.
-1. On the **Settings** tab of the **All Repositories** or **<Repository name>** page, set **Permissions management** to **On** or **Off**.
+1. Select **Project Settings** > **Repositories**, and then select a repository.
+1. On the **Settings** tab of the **\<Repository name>** page, set **Permissions management** to **On** or **Off**.
 
 :::image type="content" source="media/repository-settings/permissions-management.png" alt-text="Screenshot that shows the Permissions management repository setting.":::
 
@@ -379,8 +374,8 @@ This setting affects the individual repository. You can also set **Allow users t
 
 In certain situations, users who aren't contributors to a repository can submit a pull request and cause it to be merged, depending on policies. To prevent this possibility, enable **Strict Vote Mode** to change the required permission to vote on repository pull requests to **Contribute**. Enabling this setting is recommended if you rely on user forks in Azure Repos.
 
-1. Select **Project Settings** > **Repositories**, and then select a repository  if you want to configure only that repository.
-1. On the **Settings** tab of the **All Repositories** or **<Repository name>** page, set **Strict Vote Mode** to **On** or **Off**.
+1. Select **Project Settings** > **Repositories**, and then select a repository.
+1. On the **Settings** tab of the **\<Repository name>** page, set **Strict Vote Mode** to **On** or **Off**.
 
 :::image type="content" source="media/repository-settings/strict-vote-mode.png" alt-text="Screenshot that shows the Strict Vote Mode repository setting.":::
 ::: moniker-end
@@ -389,8 +384,8 @@ In certain situations, users who aren't contributors to a repository can submit 
 
 Enabling this setting disables access to the repository, including builds and pull requests, but keeps the repository discoverable with a warning.
 
-1. Select **Project Settings** > **Repositories**, and then select a repository if you want to configure only that repository.
-1. On the **Settings** tab of the **All Repositories** or **<Repository name>** page, under **Disable Repository**, set **Disable Repository** to **On** or **Off**.
+1. Select **Project Settings** > **Repositories**, and then select a repository.
+1. On the **Settings** tab of the **\<Repository name>** page, under **Disable Repository**, set **Disable Repository** to **On** or **Off**.
 
 :::image type="content" source="media/repository-settings/disable-repository.png" alt-text="Screenshot that shows the Disable Repository setting.":::
 
@@ -403,8 +398,8 @@ By default, code search in files applies only to the default branch. You can add
 
 To add branches for code search:
 
-1. Select **Project Settings** > **Repositories**, and then select a repository if you want to configure only that repository.
-1. On the **Settings** tab of the **All Repositories** or **<Repository name>** page, select the **+** in **Searchable Branches**.
+1. Select **Project Settings** > **Repositories**, and then select a repository.
+1. On the **Settings** tab of the **\<Repository name>** page, select the **+** in **Searchable Branches**.
 1. Select a branch to include in search, and then select **Add branch**.
 
 :::image type="content" source="media/repository-settings/searchable-branches.png" alt-text="Screenshot that shows the Searchable Branches repository setting.":::
@@ -455,7 +450,7 @@ You can set a policy that prevents commits to a repository from file paths that 
 1. On the **Policies** tab of the **All Repositories** or **\<Repository name>** page, under **Repository Policies**, set **File path validation** to **On** or **Off**.
 1. If you turn on the policy, specify the path or paths to block.
 
-   You can specify exact paths and wildcards. Exact paths begin with `/`. You can also specify multiple paths using `;` as a separator. Paths prefixed with `!` are excluded. Order is important.
+   You can specify exact paths and wildcards. Exact paths begin with `/`. You can also specify multiple paths by using `;` as a separator. Paths prefixed with `!` are excluded. Order is important.
 
 :::image type="content" source="media/repository-settings/add-policy-to-block-files-patterns.png" alt-text="Screenshot that shows the File path validation policy setting.":::
 
@@ -738,6 +733,10 @@ ID    Name                   Is Blocking    Is Enabled    Repository Id         
 ## Summary of all repository and branch settings and policies
 
 You can configure settings and policies for all repositories in a project, for individual repositories, and for branches of repositories. In the browser, you configure all these settings and policies through **Project settings** > **Repositories**. With Azure CLI, you use [az repos policy](/cli/azure/repos/policy).
+
+::: moniker range="< azure-devops-2020"
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+::: moniker-end
 
 The following tables summarize the settings and policies you can enable and configure for Git repositories and branches.
 
