@@ -20,32 +20,34 @@ With Azure Artifacts, you can leverage a variety of build and deployment automat
 - [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
 - [Azure Artifacts feed](../get-started-nuget.md).
 
-<a name="setup"></a>
-## Setup
+## Jenkins Setup
 
-This walkthrough uses Jenkins 1.635 running on Windows 10.
-The walkthrough is simple, so any recent Jenkins and Windows versions should work.
+This walkthrough uses the latest Jenkins running on Windows 10. Ensure the following Jenkins plugins are enabled:
 
-Ensure the following Jenkins plugins are enabled:
-* [MSBuild 1.24](https://plugins.jenkins.io/msbuild/)
-* [Git 2.4.0](https://plugins.jenkins.io/git/)
-* [Git Client 1.19.0](https://plugins.jenkins.io/git-client/)
-* [Credentials Binding plugin 1.6](https://plugins.jenkins.io/credentials-binding/)
+* [MSBuild](https://plugins.jenkins.io/msbuild/)
+* [Git](https://plugins.jenkins.io/git/)
+* [Git Client](https://plugins.jenkins.io/git-client/)
+* [Credentials Binding plugin](https://plugins.jenkins.io/credentials-binding/)
 
-Some of these plugins are enabled by default.
-Others you will need to install by using Jenkins's "Manage Plugins" feature.
+Some of these plugins are enabled by default, others you will need to install by using the Jenkins's "Manage Plugins" feature.
 
-### The example project
+### The sample project
 
-The sample project is a simple shared library written in C#.
-* To follow along with this walkthrough, create a new C# Class Library solution in Visual Studio 2015.
-* Name the solution "FabrikamLibrary" and uncheck the **Create directory for solution** checkbox.
-* On the FabrikamLibrary project's context menu, choose **Properties**, then choose **Assembly Information**.
-* Edit the description and company fields. Now generating a NuGet package is easier.
+We will be using a C# class library sample project for this article. 
 
-![Update assembly info to supply a description and company](media/assembly_info.png)
-* Check the new solution into a Git repo where your Jenkins server can access it later.
+- In Visual Studio, create a new project, and then select the C# **Class Library** template.
 
+- Name your solution *FabrikamLibrary*.
+
+- Open your solution and then right click on the project and select **Properties**.
+
+- Select **Package** and then fill out the *description*, *product*, and *company* fields.
+
+- Select **Save** when you are done.
+
+- Check the new solution into a Git repository where your Jenkins server can access it later.
+
+:::image type="content" source="media/jenkins-package.png" alt-text="Screenshot showing how to configure the package properties for a class library project.":::
 
 ## Add the Azure Artifacts NuGet tools to your repo
 
