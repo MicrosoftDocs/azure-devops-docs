@@ -171,6 +171,14 @@ extends:
     usersteps:
     - task: MyTask@1
     - script: echo This step will be stripped out and not run!
+    - bash: echo This step will be stripped out and not run!
+    - powershell: echo "This step will be stripped out and not run!"
+    - pwsh: echo "This step will be stripped out and not run!"
+    - script: echo This step will be stripped out and not run!
+    - task: CmdLine@2
+      displayName: Test - Will be stripped out
+      inputs:
+        script: echo This step will be stripped out and not run!
     - task: MyOtherTask@2
 ```
 
