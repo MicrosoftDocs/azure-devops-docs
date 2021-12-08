@@ -173,9 +173,9 @@ No, source indexing is currently not enabled for Portable PDBs as SourceLink doe
 
 - [Publish symbols for debugging](../../artifacts/symbols.md) 
 
-- [Add symbol server to Visual Studio](../../../artifacts/symbols/debug-with-symbols-visual-studio#add-azure-artifacts-symbol-server)
+- [Add symbol server to Visual Studio](../../../artifacts/symbols/debug-with-symbols-visual-studio.md#add-azure-artifacts-symbol-server)
 
-- [Add symbol server to WinDbg](../../../artifacts/symbols/debug-with-symbols-windbg#add-the-symbol-server-to-windbg)
+- [Add symbol server to WinDbg](../../../artifacts/symbols/debug-with-symbols-windbg.md#add-the-symbol-server-to-windbg)
 
 - [Symbol Server and Symbol Stores](/windows/win32/debug/symbol-servers-and-symbol-stores)
 
