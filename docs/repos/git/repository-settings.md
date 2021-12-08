@@ -765,7 +765,7 @@ The following table summarizes the settings you can enable and configure for all
        Off  
    :::column-end:::
    :::column span="3"::: 
-      Enable this setting to initialize new repositories with the name of the branch that you specify. You can change the default branch for a particular repository anytime. If you don't enable this feature, your repositories initialize with a default branch named `main`.
+      Initialize new repositories with the default branch name you specify. You can change the default branch for a particular repository anytime. If you don't enable this feature, repositories initialize with a default branch named `main`.
    :::column-end:::
 :::row-end:::
 ::: moniker range="azure-devops"
@@ -777,7 +777,7 @@ The following table summarizes the settings you can enable and configure for all
        On  
    :::column-end:::
    :::column span="3"::: 
-      Configure new repositories to let users manage permissions for their created branches.
+      Let users manage permissions for their created branches in all new repositories.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -862,7 +862,7 @@ The following table summarizes the settings you can enable and configure for eac
        On  
    :::column-end:::
    :::column span="3"::: 
-      Enable Strict Vote Mode for repositories that require Contribute permission to vote on pull requests.
+      Require Contribute permissions to vote on pull requests in the repository.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -967,7 +967,7 @@ The following table summarizes the policies you can define to customize a reposi
        Off  
    :::column-end:::
    :::column span="3"::: 
-      Block pushes with new or updated files larger than this limit.
+      Block pushes with new or updated files larger than the specified limit.
    :::column-end:::
 :::row-end:::
 
