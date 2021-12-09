@@ -147,7 +147,7 @@ steps:
 - ${{ each step in parameters.usersteps }}:
   - ${{ if not(or(startsWith(step.task, 'Bash'),startsWith(step.task, 'CmdLine'),startsWith(step.task, 'PowerShell'))) }}:  
     - ${{ step }}
-  # The lines below will replace task CmdLine@2
+  # The lines below will replace tasks like Bash@3, CmdLine@2, PowerShell@2
   - ${{ else }}:  
     - ${{ each pair in step }}:
         ${{ if eq(pair.key, 'inputs') }}:
