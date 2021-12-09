@@ -1,6 +1,6 @@
 ---
 title: FAQs and problem solutions   
-description: Learn about common questions about manual testing for Azure DevOps.
+description: Learn about common questions about manual testing for Azure DevOps. This article includes links to related articles.
 ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
 ms.technology: devops-test
 ms.topic: reference
@@ -90,10 +90,6 @@ Without signing out of Azure DevOps, select **View Tests** again to see the corr
 
 <a name="runtests"></a>
 
-## Running manual tests
-
-[Go to related article &gt;](run-manual-tests.md)
-
 <a name="qanda"></a>
 
 <a name="trackstatus"></a>
@@ -116,7 +112,7 @@ For test result charts, each instance of a test that is run is counted for each 
 
 ### Q: How do I control how long I keep my test data?
 
-**A:** [Learn more here](how-long-to-keep-test-results.md).
+**A:** For more information, see [Set test retention policies](how-long-to-keep-test-results.md).
 
 *****
 
@@ -127,8 +123,9 @@ For test result charts, each instance of a test that is run is counted for each 
 
 ### Q: Are parameters the best way to specify that the test should be run on different operating system platforms? And with different browsers, databases, and so on?
 
-**A**: It's better to use [test configurations](test-different-configurations.md) for that purpose.
+**A**: It's better to use test configurations.
 With test case parameters, you run the different parameter values one after another, which makes it difficult to switch from one platform to another.
+For more information, see [Test different configurations](test-different-configurations.md).
 
 *****
 
@@ -232,35 +229,13 @@ For more information, see [Add findings to existing bugs with exploratory testin
 1. Search for 'Use Blink's zoom for device scale factor'
 1. Change it to **Disabled**
 
-## FAQ on New Test Plans Page
-
-### Q: How can I edit the test case?
-
-**A:** If you have Basic Access Level, you can edit the test case by navigating to test plan > test suite > Execute > Test Point and clicking on In-context menu bar. If you have Basic + Test Plans Access Level, in addition to editing in **Execute** tab, you can also navigate to **Define** tab and double-click on test case to edit it.
-
-![Screenshot that shows editing the test case.](media/FAQ3.png)
-
-### Q: How can I see the outcome of each test case?
-
-**A:** The executable unit of a test case is called the test point.
-The outcome is linked to each test point and not the test case.
-You can view it by navigating to test plan > test suite > Execute and see the outcome.
-![Screenshot that shows viewing the outcome of the test case.](media/FAQ4.png)
-
-### Q: How can I assign testers?
-
-**A:** You can assign testers to your test cases by navigating to test plan > test suite > Execute  and clicking on In-context menu bar.
-
-![Screenshot that shows assigning testers to test cases.](media/FAQ5.png)
-
-### Q: How can I view the execution history of the test case?
-
-**A:** You can view the execution history by navigating to Test Plan > Test Suite > Execute and right-click on In-Context Menu bar.
-Initially, it will show the history of all the test points for that test case in that test suite.
-You can clear filters to view the execution history of that test case across all the test suites.
-
-### Q: Can I select more than one work item while creating a requirement-based suite?
-
-**A:** No, the requirement-based suite is linked to one work item.
-
 *****
+
+## Related articles
+
+- [Create manual test cases](create-test-cases.md)
+- [Create test plans and test suites](create-a-test-plan.md)
+- [Install the Test & Feedback extension](perform-exploratory-tests.md)
+- [Repeat a test with different data](repeat-test-with-different-data.md)
+- [Set test retention policies](how-long-to-keep-test-results.md)
+- [Track test status](track-test-status.md)
