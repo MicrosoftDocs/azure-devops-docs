@@ -134,7 +134,7 @@ A template can rewrite user steps and only allow certain approved tasks to run.
 You can, for example, prevent inline script execution.
 
 > [!WARNING]
-> In the example below, only the literal step type "script" is prevented.
+> In the example below, the steps type "bash", "powershell", "pwsh" and "script" are prevented from executing.
 > For full lockdown of ad-hoc scripts, you would also need to block "Bash", "BatchScript", "PowerShell", "ShellScript".
 
 ```yaml

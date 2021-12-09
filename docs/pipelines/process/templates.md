@@ -145,11 +145,11 @@ extends:
         displayName: succeed
       - bash: echo "Test"
         displayName: succeed
-      # The presence of this task will cause the YAML syntax to fail
+      # Step is rejected by raising a YAML syntax error: Unexpected value 'CmdLine@2'
       - task: CmdLine@2
         inputs:
           script: echo "Script Test"
-      # The presence of this task will cause the YAML syntax to fail
+      # Step is rejected by raising a YAML syntax error: Unexpected value 'CmdLine@2'
       - script: echo "Script Test"
 ```
 
