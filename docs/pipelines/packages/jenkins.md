@@ -49,19 +49,19 @@ We will be using a C# class library sample project for this article.
 
 :::image type="content" source="media/jenkins-package.png" alt-text="Screenshot showing how to configure the package properties for a class library project.":::
 
-## Add the Azure Artifacts NuGet tools to your repo
+## Create a NuGet package
 
-The easiest way to use the Azure Artifacts NuGet service is by adding the [Microsoft.VisualStudio.Services.NuGet.Bootstrap package](https://www.nuget.org/packages?q=Microsoft.VisualStudio.Services.NuGet.Bootstrap) to your project.
+- Open a new command prompt window navigate to your project directory.
 
-## Create a package from your project
+- Run the `nuget spec` command to create a nuspec file.
 
-*Whenever you work from a command line, run `init.cmd` first. This sets up your environment to allow you to work with nuget.exe and the Azure Artifacts NuGet service.*
+- Open the newly created *FabrikamLibrary.nuspec* and remove the boilerplate tags *<projectUrl>* and *<iconUrl>*. Add an author inside the *<authors>* tag, and then change the tags from *Tag1 Tag2* to *fabrikam*.
 
-* Change into the directory containing FabrikamLibrary.csproj.
-* Run the command `nuget spec` to create the file FabrikamLibrary.nuspec, which defines how your NuGet package builds.
-* Edit FabrikamLibrary.nuspec to remove the boilerplate tags `<licenseUrl>`, `<projectUrl>`, and `<iconUrl>`. Change the tags from `Tag1 Tag2` to `fabrikam`.
-* Ensure that you can build the package using the command `nuget pack FabrikamLibrary.csproj`. Note, you should target the .csproj (project) file, not the NuSpec file.
-* A file called FabrikamLibrary.1.0.0.0.nupkg will be produced.
+- **Save** your file when you are done. 
+
+- Run the following command to create a NuGet package: `nuget pack FabrikamLibrary.csproj`.
+
+- A NuGet package *FabrikamLibrary.1.0.0.nupkg* will be generated in the same directory as your *.csproj* file.
 
 
 ## Set up a feed in Azure Artifacts and add it to your project
