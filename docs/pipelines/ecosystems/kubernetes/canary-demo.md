@@ -61,7 +61,7 @@ helm install --name sampleapp stable/prometheus-operator
     - master
     
     pool:
-      vmImage: Ubuntu-16.04
+      vmImage: ubuntu-latest
     
     variables:
       imageName: azure-pipelines-canary-k8s
@@ -105,7 +105,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
     - master
     
     pool:
-      vmImage: Ubuntu-16.04
+      vmImage: ubuntu-latest
     
     variables:
       imageName: azure-pipelines-canary-k8s
@@ -121,7 +121,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
       - job: Build
         displayName: Build
         pool:
-          vmImage: Ubuntu-16.04
+          vmImage: ubuntu-latest
         steps:
         - task: Docker@2
           displayName: Build and push image
@@ -152,7 +152,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
       - deployment: Deploycanary
         displayName: Deploy canary
         pool:
-          vmImage: Ubuntu-16.04
+          vmImage: ubuntu-latest
         environment: 'akscanary.canarydemo'
         strategy:
           runOnce:
@@ -215,7 +215,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
     - **Strategy**: Canary
     - **Percentage**: 25
     - **Manifests**: azure-pipelines-canary-k8s/manifests/*
-    - **Containers**: <foobar>/azure-pipelines-canary-k8s:$(Release.Artifacts.image.BuildId) where `<foobar>` is to be replaced with the container registry URL
+    - **Containers**: `<foobar>/azure-pipelines-canary-k8s:$(Release.Artifacts.image.BuildId)` where `<foobar>` is to be replaced with the container registry URL
     - **ImagePullSecrets**: azure-pipelines-canary-k8s
 1. Add another **Deploy Kubernetes manifests** task with the following configuration -
     - **Display name**: Deploy Fortio and ServiceMonitor
@@ -258,7 +258,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
       - deployment: PromoteCanary
         displayName: Promote Canary
         pool: 
-          vmImage: Ubuntu-16.04
+          vmImage: ubuntu-latest
         environment: 'akspromote.canarydemo'
         strategy:
           runOnce:
@@ -285,7 +285,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
       - deployment: RejectCanary
         displayName: Reject Canary
         pool: 
-          vmImage: Ubuntu-16.04
+          vmImage: ubuntu-latest
         environment: 'akscanary.canarydemo'
         strategy:
           runOnce:
@@ -316,7 +316,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
     - **Strategy**: Canary
     - **Percentage**: 25
     - **Manifests**: azure-pipelines-canary-k8s/manifests/*
-    - **Containers**: <foobar>/azure-pipelines-canary-k8s:$(Release.Artifacts.image.BuildId) where `<foobar>` is to be replaced with the container registry URL
+    - **Containers**: `<foobar>/azure-pipelines-canary-k8s:$(Release.Artifacts.image.BuildId)` where `<foobar>` is to be replaced with the container registry URL
     - **ImagePullSecrets**: azure-pipelines-canary-k8s
 1. Add another agent job with the following configuration after **Promote canary** agent job - 
     - **Display name**: Reject canary

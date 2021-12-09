@@ -12,8 +12,8 @@ ms.topic: include
 > |  Role (project-level)  | Description |
 > |------|---------|
 > | **Reader** | Can view the pool. You typically add operators to this role that are responsible for monitoring the build and deployment jobs in that pool.  |
-> | **User** | Can use the pool when authoring build or release pipelines. |
-> | **Creator** | Can use the pool when authoring build or release pipelines. |
+> | **User** | Can view and use the pool when authoring build or release pipelines. |
+> | **Creator** | Can create and use the pool when authoring build or release pipelines. |
 > | **Administrator** | Can manage membership for all roles of the pool, as well as view and use the pools. The user that created a pool is automatically added to the Administrator role for that pool.
 
 You control the security of all project agent pools from the **Security** tab. Role memberships for individual project agent pools automatically inherit from what those roles. By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.

@@ -1,88 +1,67 @@
 ---
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 08/18/2021
 ---
 
+:::row:::
+   :::column span="2":::
+      **Task** 
+   :::column-end:::
+   :::column span="1":::
+     **Readers**
+   :::column-end:::
+   :::column span="1":::
+     **Contributors**
+   :::column-end:::
+   :::column span="1":::
+     **Team admins**  
+     **Project admins**
+   :::column-end:::
+:::row-end:::
 ::: moniker range="azure-devops"  
-
-<table>
-<tr valign="bottom">
-<th width="41%">Task</th>
-<th width="15%">Stakeholders</th>
-<th width="12%">Readers</th>
-<th width="15%">Contributors</th>
-<th width="17%">Project admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">View delivery plans 
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Create, edit, or delete a delivery plan<br/><em>(Contributors can only edit or delete plans that they create)</em>
-</td>
-<td></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Manage permissions for a delivery plan<br/><em>(Contributors can only manage permissions for plans that they create)</em>
-</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
-  
+:::row:::
+   :::column span="2":::
+      View delivery plans 
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
 ::: moniker-end  
-
-
-::: moniker range=">= tfs-2017 < azure-devops"  
-
-<table>
-<tr valign="bottom">
-<th width="41%">Task</th>
-<th width="15%">Stakeholders</th>
-<th width="12%">Readers</th>
-<th width="15%">Contributors</th>
-<th width="17%">Project admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">View delivery plans 
-</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Create, edit, or delete a delivery plan<br/><em>(Contributors can only edit or delete plans that they create)</em>
-</td>
-<td></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Manage permissions for a delivery plan<br/><em>(Contributors can only manage permissions for plans that they create)</em>
-</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
-  
-::: moniker-end  
-
-
-
-
+:::row:::
+   :::column span="2":::
+      Create, edit, or delete a delivery plan, Contributors can only edit or delete plans that they create
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Manage permissions for a delivery plan, Contributors can only manage permissions for plans that they create
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::

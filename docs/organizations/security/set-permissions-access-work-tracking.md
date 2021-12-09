@@ -20,7 +20,7 @@ ms.date: 06/08/2021
 You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, project, or collection. Or, you can specify custom rules for a process or project that apply to users or groups which may restrict or require users to perform a select action. In general, you'll want to add users to a project's Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md).
 
 > [!NOTE]
-> For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
+> For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [Stakeholder access quick reference](stakeholder-access.md).
 
 <a id="business-workflows" /> 
 
@@ -223,10 +223,9 @@ To manage permissions for a query or query folder, you must be the creator of th
 
 For details, see [Set permissions on a shared query or query folder](../../organizations/security/set-permissions-access-work-tracking.md). To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/about-managed-queries.md).
 
+<a id="tags" /> 
 
 ::: moniker range=">= tfs-2017"  
-
-<a id="tags" /> 
 
 ## Set permissions on work item tags 
 
@@ -234,10 +233,11 @@ By default, all users of the Contributors group can create and add tags to work 
 
 ::: moniker-end
 
-
-::: moniker range=">= tfs-2017"  
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
+
+
+::: moniker range=">= tfs-2017"  
 
 ## Edit or manage permissions for Delivery Plans 
 
@@ -273,10 +273,11 @@ In this example, we grant members assigned to the team administrator role, who b
 
 ::: moniker-end    
 
-::: moniker range=">= tfs-2017"
 
 <a id="delete-test-permissions"></a>
 <a id="manage-test-artifacts"></a>
+
+::: moniker range=">= tfs-2017"
 
 ## Manage test plans and test suites
 
@@ -291,6 +292,7 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 ![Set Area path permissions for the project](../../boards/backlogs/media/delete-test-artifacts-area-path-permissions.png)  
 
 To have full access to the Test feature set, your [access level must be set to Basic + Test Plans](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases.  
+
 ::: moniker-end  
 
 

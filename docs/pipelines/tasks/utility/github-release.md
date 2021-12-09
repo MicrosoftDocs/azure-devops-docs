@@ -6,7 +6,7 @@ ms.assetid: 7B5A6198-ADF8-4B16-9939-7ADDF85708B2
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 12/07/2018
+ms.date: 10/27/2021
 monikerRange: azure-devops
 ---
 
@@ -32,26 +32,22 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>GitHub Connection</td><td>(Required) Enter the service connection name for your GitHub connection. Learn more about service connections <a href="/azure/devops/pipelines/library/service-endpoints" data-raw-source="[here.](../../library/service-endpoints.md)">here.</a></td></tr>
-<tr><td>Repository</td><td>(Required) Select the name of GitHub repository in which GitHub releases will be created.</td></tr>
-<tr><td>Action</td><td>(Required) Select the type of release operation you want perform. This task can create, edit, or discard a GitHub release.</td></tr>
-<tr><td>Target</td><td>(Required) This is the commit SHA for which the GitHub release will be created. E.g. <code>48b11d8d6e92a22e3e9563a3f643699c16fd6e27</code>. You can also use variables here.</td></tr>
-<tr><td>Tag source</td><td>(Required) Configure the tag to be used for release creation. The &#39;Git tag&#39; option automatically takes the tag which is associated with this commit. Use the &#39;User specified tag&#39; option in case you want to manually provide a tag.</td></tr>
-<tr><td>Tag</td><td>(Required) Specify the tag for which you want to create, edit, or discard a release. You can also use variables here. E.g. <code>$(tagName)</code>.</td></tr>
-<tr><td>Release title</td><td>(Optional) Specify the title of the GitHub release. If left empty, the tag will be used as the release title.</td></tr>
-<tr><td>Release notes source</td><td>(Optional) Specify the description of the GitHub release. Use the &#39;Release notes file&#39; option to use the contents of a file as release notes. Use the &#39;Inline release notes&#39; option to manually enter the release notes.</td></tr>
-<tr><td>Release notes file path</td><td>(Optional) Select the file which contains the release notes.</td></tr>
-<tr><td>Release notes</td><td>(Optional) Type your release notes here. Markdown is supported.</td></tr>
-<tr><td>Assets</td><td>(Optional) Specify the files to be uploaded as assets for the release. You can use wildcard characters to specify a set of files. E.g. <code>$(Build.ArtifactStagingDirectory)/*.zip</code>. You can also specify multiple patterns - one per line. By default, all files in the <code>$(Build.ArtifactStagingDirectory)</code> directory will be uploaded.</td></tr>
-<tr><td>Asset upload mode</td><td>(Optional) Use the &#39;Delete existing assets&#39; option to first delete any existing assets in the release and then upload all assets. Use the &#39;Replace existing assets&#39; option to replace any assets that have the same name.</td></tr>
-<tr><td>Draft release</td><td>(Optional) Indicate whether the release should be saved as a draft (unpublished). If <code>false</code>, the release will be published.</td></tr>
-<tr><td>Pre-release</td><td>(Optional) Indicate whether the release should be marked as a pre-release.</td></tr>
-<tr><td>Add changelog</td><td>(Optional) If set to <code>true</code>, a list of changes (commits and issues) between this and the last published release will be generated and appended to release notes.</td></tr>
+<tr><td><code>gitHubConnection</code> <br/>GitHub Connection</td><td>(Required) Enter the service connection name for your GitHub connection. Learn more about service connections <a href="/azure/devops/pipelines/library/service-endpoints" data-raw-source="[here.](../../library/service-endpoints.md)">here.</a></td></tr>
+<tr><td><code>repositoryName</code> <br/>Repository</td><td>(Required) Select the name of GitHub repository in which GitHub releases will be created.</td></tr>
+<tr><td><code>action</code> <br/>Action</td><td>(Required) Select the type of release operation you want perform. This task can create, edit, or discard a GitHub release.</td></tr>
+<tr><td><code>target</code> <br/>Target</td><td>(Required) This is the commit SHA for which the GitHub release will be created. E.g. <code>48b11d8d6e92a22e3e9563a3f643699c16fd6e27</code>. You can also use variables here.</td></tr>
+<tr><td><code>tagSource</code> <br/>Tag source</td><td>(Required) Configure the tag to be used for release creation. The &#39;Git tag&#39; option automatically takes the tag which is associated with this commit. Use the &#39;User specified tag&#39; option in case you want to manually provide a tag.</td></tr>
+<tr><td><code>tag</code> <br/>Tag</td><td>(Required) Specify the tag for which you want to create, edit, or discard a release. You can also use variables here. E.g. <code>$(tagName)</code>.</td></tr>
+<tr><td><code>title</code> <br/>Release title</td><td>(Optional) Specify the title of the GitHub release. If left empty, the tag will be used as the release title.</td></tr>
+<tr><td><code>releaseNotesSource</code> <br/>Release notes source</td><td>(Optional) Specify the description of the GitHub release. Use the &#39;Release notes file&#39; option to use the contents of a file as release notes. Use the &#39;Inline release notes&#39; option to manually enter the release notes.</td></tr>
+<tr><td><code>releaseNotesFilePath</code> <br/>Release notes file path</td><td>(Optional) Select the file which contains the release notes.</td></tr>
+<tr><td><code>releaseNotesInline</code> <br/>Release notes inline</td><td>(Optional) Type your release notes here. Markdown is supported.</td></tr>
+<tr><td><code>assets</code> <br/>Assets</td><td>(Optional) Specify the files to be uploaded as assets for the release. You can use wildcard characters to specify a set of files. E.g. <code>$(Build.ArtifactStagingDirectory)/*.zip</code>. You can also specify multiple patterns - one per line. By default, all files in the <code>$(Build.ArtifactStagingDirectory)</code> directory will be uploaded.</td></tr>
+<tr><td><code>assetUploadMode</code> <br/>Asset upload mode</td><td>(Optional) Use the &#39;Delete existing assets&#39; option to first delete any existing assets in the release and then upload all assets. Use the &#39;Replace existing assets&#39; option to replace any assets that have the same name.</td></tr>
+<tr><td><code>isDraft</code> <br/>Draft release</td><td>(Optional) Indicate whether the release should be saved as a draft (unpublished). If <code>false</code>, the release will be published.</td></tr>
+<tr><td><code>isPreRelease</code> <br/>Pre-release</td><td>(Optional) Indicate whether the release should be marked as a pre-release.</td></tr>
+<tr><td><code>addChangeLog</code> <br/>Add changelog</td><td>(Optional) If set to <code>true</code>, a list of changes (commits and issues) between this and the last published release will be generated and appended to release notes.</td></tr>
 
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
 
 </table>
 
@@ -62,7 +58,7 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 The following YAML creates a GitHub release every time the task runs. The build number is used as the tag version for the release. All .exe files and README.txt files in the $(Build.ArtifactStagingDirectory) folder are uploaded as assets. By default, the task also generates a change log (a list of commits and issues that are part of this release) and publishes it as release notes.
 
 ```YAML
-- task: GithubRelease@0 
+- task: GithubRelease@1 
   displayName: 'Create GitHub Release'      
   inputs:
     gitHubConnection: zenithworks
@@ -77,7 +73,7 @@ The following YAML creates a GitHub release every time the task runs. The build 
 You can also control the creation of the release based on repository tags. The following YAML creates a GitHub release only when the commit that triggers the pipeline has a Git tag associated with it. The GitHub release is created with the same tag version as the associated Git tag.
 
 ```YAML
-- task: GithubRelease@0 
+- task: GithubRelease@1 
   displayName: 'Create GitHub Release'      
   inputs:
     gitHubConnection: zenithworks
@@ -88,7 +84,7 @@ You can also control the creation of the release based on repository tags. The f
 You may also want to use the task in conjunction with task conditions to get even finer control over when the task runs, thereby restricting the creation of releases. For example, in the following YAML the task runs only when the pipeline is triggered by a Git tag matching the pattern 'refs/tags/release-v*'.
 
 ```YAML
-- task: GithubRelease@0 
+- task: GithubRelease@1 
   displayName: 'Create GitHub Release'   
   condition: startsWith(variables['Build.SourceBranch'], 'refs/tags/release-v')   
   inputs:
@@ -102,7 +98,7 @@ You may also want to use the task in conjunction with task conditions to get eve
 The following YAML updates the status of a GitHub release from 'draft' to 'published'. The release to be edited is determined by the specified tag.
 
 ```YAML
-- task: GithubRelease@0
+- task: GithubRelease@1
   displayName: 'Edit GitHub Release'
   inputs:
     gitHubConnection: zenithworks
@@ -117,13 +113,31 @@ The following YAML updates the status of a GitHub release from 'draft' to 'publi
 The following YAML deletes a GitHub release. The release to be deleted is determined by the specified tag.
 
 ```YAML
-- task: GithubRelease@0
+- task: GithubRelease@1
   displayName: 'Delete GitHub Release'
   inputs:
     gitHubConnection: zenithworks
     repositoryName: zenithworks/javaAppWithMaven
     action: delete
     tag: $(myDraftReleaseVersion)
+```
+
+### Inline release notes
+
+The following YAML create a GitHub release and add inline release notes.
+
+```YAML
+- task: GitHubRelease@1
+  inputs:
+    gitHubConnection: <GITHUB_SERVICE_CONNECTION>
+    repositoryName: '$(Build.Repository.Name)'
+    action: 'create'
+    target: '$(Build.SourceVersion)'
+    tagSource: 'userSpecifiedTag'
+    tag: <YOUR_TAG>
+    title: <YOUR_TITLE>
+    releaseNotesSource: 'inline'
+    releaseNotesInline: <YOUR_RELEASE_NOTES>
 ```
 
 ## Open source

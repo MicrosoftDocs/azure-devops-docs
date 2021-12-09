@@ -24,7 +24,7 @@ This is a step-by-step guide to using Azure Pipelines to build on macOS, Linux, 
 
 You can use Azure Pipelines to build an app on written in any language, on multiple platforms at the same time.
 
-1. Go to https://github.com/MicrosoftDocs/pipelines-javascript.
+1. Go to https://github.com/Azure-Samples/js-e2e-express-server.
 
 1. Fork the repo into your own GitHub account.
 
@@ -45,11 +45,11 @@ You're going to add jobs that run on three platforms.
 strategy:
   matrix:
     linux:
-      imageName: 'ubuntu-16.04'
+      imageName: 'ubuntu-latest'
     mac:
-      imageName: 'macos-10.14'
+      imageName: 'macOS-latest'
     windows:
-      imageName: 'vs2017-win2016'
+      imageName: 'windows-latest'
 
 pool:
   vmImage: $(imageName)

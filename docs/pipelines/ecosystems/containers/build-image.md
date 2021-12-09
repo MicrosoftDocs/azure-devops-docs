@@ -43,7 +43,7 @@ Once you build an image, you can then push it to Azure Container Registry, Docke
            - main
            
            pool:
-             vmImage: 'ubuntu-1604' # set to windows-latest or another Windows vmImage for Windows builds
+             vmImage: 'ubuntu-latest' # set to windows-latest or another Windows vmImage for Windows builds
            
            variables:
              imageName: 'pipelines-javascript-docker'
@@ -57,7 +57,7 @@ Once you build an image, you can then push it to Azure Container Registry, Docke
                Dockerfile: app/Dockerfile
     ```
 
-    Windows container images can be built using either Microsoft hosted Windows agents or Windows platform based self-hosted agents (all Microsoft hosted Windows platform-based agents are shipped with Moby engine and client needed for Docker builds). Linux container images can be built using Microsoft hosted Ubuntu-16.04 agents or Linux platform based self-hosted agents. Learn more about the Windows and Linux agent options available with [Microsoft hosted agents](../../agents/hosted.md).
+    Windows container images can be built using either Microsoft hosted Windows agents or Windows platform based self-hosted agents (all Microsoft hosted Windows platform-based agents are shipped with Moby engine and client needed for Docker builds). Linux container images can be built using Microsoft hosted Ubuntu agents or Linux platform based self-hosted agents. Learn more about the Windows and Linux agent options available with [Microsoft hosted agents](../../agents/hosted.md).
     
     > [!NOTE]
     > Currently the Microsoft hosted MacOS agents can't be used to build container images as the Moby engine needed for building the images is not pre-installed on these agents.

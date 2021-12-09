@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
 title: Custom build/release task reference | Extensions for Azure DevOps
-description: Reference for creating custom build or release tasks with an extension in Azure DevOps or Team Foundation Server (TFS).
+description: Reference for creating and integrating custom build or release tasks with an extension in Azure DevOps.
 ms.assetid: 00806e48-3839-40eb-880f-12ec53bfdf73
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
@@ -10,9 +10,11 @@ author: chcomley
 ms.date: 09/23/2020
 ---
 
-# Reference for integrating custom build tasks into extensions
+# Reference - integrate custom build tasks into extensions
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+
+Use this reference when you want to create and integrate custom build pipeline tasks with extensions in Azure DevOps.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
@@ -30,6 +32,7 @@ The build/release task SDK documentation is [on GitHub](https://github.com/Micro
 Specifically, you may be interested in the [task.json schema](https://github.com/Microsoft/azure-pipelines-task-lib/blob/master/tasks.schema.json).
 
 ## Bundle multiple versions of build/release tasks within one extension
+
 You can include multiple versions of a build or release task within your extension. Roll out future versions of your extension without interrupting service of users on older versions. The following information shows the layout for having multiple versions in one extension.
 
 ### Traditional extension layout
@@ -37,42 +40,49 @@ You can include multiple versions of a build or release task within your extensi
 * extensionManifest.json
 * extensionIcon.png
 * Task1
-    * task.json
-    * icon.png
-    * taskScript.ps1
+  * task.json
+  * icon.png
+  * taskScript.ps1
 
 > [!NOTE]
 > When you're setting up a task icon, ensure the following is true.
-> - The icon name is icon.png
-> - The icon size is 32x32 pixels
-> - The icon is in the same location as the `task.json` file
+>
+> * The icon name is icon.png
+> * The icon size is 32x32 pixels
+> * The icon is in the same location as the `task.json` file
 
 ### Multiple versions layout
+
+>[!NOTE]
+>The code looks for the `task.json` file inside of the task folder and then one level deeper.
+>If one isn't found in either level, you see an error message.
 
 * extensionManifest.json
 * extensionIcon.png
 * Task1
-    * Task1V1
-        * task.json
-        * icon.png
-        * taskScript.ps1
-    * Task1V2
-        * task.json
-        * icon.png
-        * taskScript.ps1    
+  * Task1V1
+    * task.json
+    * icon.png
+    * taskScript.ps1
+  * Task1V2
+    * task.json
+    * icon.png
+    * taskScript.ps1
 * Task2
-    * Task2V1
-        * task.json
-        * icon.png
-        * taskScript.ps1
-    * Task2V2
-        * task.json
-        * icon.png
-        * taskScript.ps1
-                    
+  * Task2V1
+    * task.json
+    * icon.png
+    * taskScript.ps1
+  * Task2V2
+    * task.json
+    * icon.png
+    * taskScript.ps1
 
->[!NOTE]
->The code looks for the `task.json` file inside the task folder. If one isn't found, it looks just *one* level deeper.
->If one isn't found in either level, you see an error message.
+> [!TIP]
+> To ensure the `_build/Tasks/ssrsfilesdeploy` folder contains the V1 and V2 contents, set `matchCopy(item, srcPath, destPath, { noRecurse:` to `false` in the `make-util.js` file.
 
+## Related articles
 
+* [Add a custom pipelines task extension](add-build-task.md)
+* [Server Task GitHub Documentation](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md)
+* [Build/Release Task Examples](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)

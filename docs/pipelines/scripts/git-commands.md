@@ -48,11 +48,11 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
 1. Within **Project Settings**, select **Repositories**. Select the repository you want to run Git commands on.
 
-1. Select **Permissions** to edit your repository permissions. 
+1. Select **Security** to edit your repository security. 
 
-    :::image type="content" source="media/modify-repo-permissions.png" alt-text="Choose Permissions to edit your repository permissions. ":::
+    :::image type="content" source="media/modify-repo-security.png" alt-text="Choose Security to edit your repository security. ":::
 
-1. Search for **Project Collection Build Service**. Choose the identity **Project Collection Build Service ({your organization})**. By default, this identity can read from the repo but cannot push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
+1. Search for **Project Collection Build Service**. Choose the identity **Project Collection Build Service ({your organization})** (not the group **Project Collection Build Service Accounts ({your organization})**). By default, this identity can read from the repo but cannot push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
 
       * **Create branch:**  Allow
       * **Contribute:**  Allow

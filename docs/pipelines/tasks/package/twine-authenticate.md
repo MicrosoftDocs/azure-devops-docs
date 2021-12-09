@@ -52,7 +52,7 @@ In this example, we are setting authentication for publishing to a private Azure
      python setup.py bdist_wheel
    
 - task: TwineAuthenticate@1
-  displayName: 'Twine Authenticate'
+  displayName: Twine Authenticate
   inputs:
     # In this case, name of the feed is 'myTestFeed' in the project 'myTestProject'. Project is needed because the feed is project scoped.
     artifactFeed: myTestProject/myTestFeed
@@ -79,7 +79,7 @@ In this example, we are setting authentication for publishing to official python
      python setup.py bdist_wheel
    
 - task: TwineAuthenticate@1
-  displayName: 'Twine Authenticate'
+  displayName: Twine Authenticate
   inputs:
     # In this case, name of the service connection is "pypitest".
     pythonUploadServiceConnection: pypitest
@@ -112,7 +112,7 @@ No. While this task itself will work behind a web proxy <a href="~/pipelines/age
 
 ### My Pipeline needs to access a feed in a different project
 
-If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#pipelines-permissions) for more details.
 
 ## Open-source
 

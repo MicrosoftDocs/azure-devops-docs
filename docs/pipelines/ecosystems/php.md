@@ -17,7 +17,7 @@ author: vijayma
 
 Create a pipeline that continuously builds, deploys, and tests your PHP projects. 
 
-For an end-to-end walkthrough of deploying to Azure App Service with a pipeline, see [Build and deploy to a PHP web app](php-webapp.md).
+For an end-to-end walkthrough of deploying to Azure App Service on Linux with a pipeline, see [Build and deploy to a PHP web app](php-webapp.md).
 
 
 ## Create your first pipeline
@@ -29,7 +29,7 @@ For an end-to-end walkthrough of deploying to Azure App Service with a pipeline,
 [!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
 ```
-https://github.com/MicrosoftDocs/pipelines-php
+https://github.com/Azure-Samples/basic-php-composer
 ```
 
 ### Sign in to Azure Pipelines
@@ -69,7 +69,7 @@ To use a PHP version other than the default, the symlink can be pointed to that 
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-latest'
 
 variables:
   phpVersion: 7.2

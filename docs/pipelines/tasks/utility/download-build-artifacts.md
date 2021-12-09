@@ -14,6 +14,9 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
+> [!NOTE]
+> We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](../../artifacts/pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster performance. 
+
 Use this task to download build artifacts.
 
 ::: moniker range="> tfs-2018"
@@ -41,6 +44,7 @@ Use this task to download build artifacts.
 |`artifactName`<br/>Artifact name|(Required) The name of the artifact to download|
 |`itemPattern`<br/>Matching pattern|(Optional) Specify files to be downloaded as multi-line minimatch pattern. [More Information](../file-matching-patterns.md).<br/> The default pattern  will download all files across all artifacts in the build if the **`Specific files`** option is selected. To download all files within an artifact drop use **`drop/`** <br/>Default value: `\*\*`|
 |`downloadPath`<br/>Destination directory|(Required) Path on the agent machine where the artifacts will be downloaded <br/>Default value: `$(System.ArtifactsDirectory)`|
+|`cleanDestinationFolder`<br/>Clean destination folder|(Optional) Delete all existing files in destination folder before artifacts are downloaded <br/>Default value: `false`|
 |`parallelizationLimit`<br/>Parallelization limit|(Optional) Number of files to download simultaneously <br/>Default value: `8`|
 
 ## Open source
