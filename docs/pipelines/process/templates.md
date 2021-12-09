@@ -135,7 +135,7 @@ stages:
 ```yaml
 # File: azure-pipelines.yml
 trigger:
-- main
+- master
 
 extends:
   template: start.yml
