@@ -1,31 +1,32 @@
-﻿---
+---
 title: Choose the source of data and authoring tool
 titleSuffix: Azure DevOps Server
-description: Guide to data sources and tools for creating and customizing reports, Azure DevOps Server & Team Foundation Server  
+description: Learn about data sources and tools for creating and customizing reports for Azure DevOps Server.
 ms.custom: dashboards
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: cc71c69f-230b-47e6-b29b-398e3e280894
 ms.author: kaelli
+author: KathrynEE 
 monikerRange: '< azure-devops'
-ms.date: 04/05/2019
+ms.date: 09/27/2021
 ---
 
 # Choose the source of data and authoring tool
 
 [!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
-When you create reports that show data from Azure DevOps Server, previously named Team Foundation Server (TFS), you specify one of three sources of data and use one of three authoring tools. The choice of data source and authoring tool are interrelated.
+When you create reports that show data from Azure DevOps Server, you specify one of three sources of data and use one of three authoring tools. The choice of data source and authoring tool are interrelated.
 
 The simplest reports that you can generate are based on work item lists. You can create reports about work items by exporting a work item query to Office Excel. Work item lists are best suited to tables and charts that handle no more than several hundred work items.
 
-You can create current status and historical trend data by using the Online analytic processing (OLAP) data cube (TFS\_Analysis), which is optimized for reporting. The OLAP data cube is best suited to reports that provide aggregated information, such as the number of work items that meet a set of criteria. If you want to create reports that show trends over time, such as burn-down or progress charts, you can most easily create them from the OLAP data cube.
+You can create current status and historical trend data by using the Online analytic processing (OLAP) data cube (TFS\_Analysis), which is optimized for reporting. The OLAP data cube is best suited to reports that provide aggregated information, like the number of work items that meet a set of criteria. If you want to create reports that show trends over time, like burndown or progress charts, you can most easily create them from the OLAP data cube.
 
-You can use the relational warehouse database (TFS\_Warehouse) to create reports that provide line-item details. These include reports that contain titles of work items and more complex reports that do not include trends or historical data.
+You can use the relational warehouse database (TFS\_Warehouse) to create reports that provide line-item details. These include reports that contain titles of work items and more complex reports that don't include trends or historical data.
 
 ## Data sources and authoring tools
 
-As the following table shows, your choice of data source depends not only on the kind of data that you want to show but also on the tool that you use to create reports. If you use Excel, you cannot use the warehouse database effectively. If you use Report Builder or Report Designer, you cannot use lists of work items.
+Your choice of data source depends not only on the kind of data that you want to show, but also on the tool that you use to create reports. If you use Excel, you can't use the warehouse database effectively. If you use Report Builder or Report Designer, you can't use lists of work items.
 
 |Authoring tool|Work item query results|OLAP data cube (TFS_Analysis)|Relational warehouse database (TFS_Warehouse)|
 |---|---|---|---|
@@ -33,9 +34,9 @@ As the following table shows, your choice of data source depends not only on the
 |Report Builder|No|Yes|Yes|
 |Report Designer|No|Yes|Yes|
 
-For more information about how you can create reports that access the three sources of data, see the related topics in the following table.
+For more information about how you can create reports that access the three sources of data, see the related articles in the following table.
 
-|Authoring tool|Source of data|Related topic|
+|Authoring tool|Source of data|Related article|
 |---|---|---|
 |Excel|Work item query results|[Use the query editor to list and manage queries](../../boards/queries/using-queries.md)|
 |Excel|OLAP data cube|[Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md)|
@@ -58,7 +59,7 @@ For more information about this source of data, see [Perspectives and measure gr
 
 ## Creating reports based on warehouse data
 
-The warehouse database is a relational database that organizes data in a set of related tables and provides views and table-valued functions for accessing that data. Data from the project collections is gathered and maintained in the warehouse database. If you are familiar with writing Transact-SQL queries, you can create reports by using the warehouse database.
+The warehouse database is a relational database that organizes data in a set of related tables and provides views and table-valued functions for accessing that data. Data from the project collections is gathered and maintained in the warehouse database. If you're familiar with writing Transact-SQL queries, you can create reports by using the warehouse database.
 
 > [!NOTE]   
 > The warehouse database might contain detailed data that is not present in the analysis services database, depending on the work items that your project uses. For more information about how work item fields are mapped to the warehouse, see [Reportable fields reference](../../reference/xml/reportable-fields-reference.md).

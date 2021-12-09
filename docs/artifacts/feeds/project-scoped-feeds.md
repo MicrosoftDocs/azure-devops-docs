@@ -38,7 +38,7 @@ Here are the main differences between the two feed types:
     * All new feeds are recommended to be project-scoped. Creating a new feed through the create feed web UI will create a project-scoped feed.
 
 1. **Connection**:
-    * When connecting to a private project scoped feed from an Azure DevOps pipeline that is in the same organization but in a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed. See [Package permissions](./feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
+    * When connecting to a private project scoped feed from an Azure DevOps pipeline that is in the same organization but in a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed. See [Package permissions](./feed-permissions.md#pipelines-permissions) for more details.
 
 ## What can I do if I'm concerned about my project-scoped feed's visibility?
 
@@ -52,7 +52,7 @@ Alternatively, you can use the [Create Feed API](/rest/api/azure/devops/artifact
 > Creating new organization-scoped feeds is not recommended.
 
 > [!NOTE]
-> If you want to share a package in your feed with all the users in your organization, you can promote that package to a `view` and set its visibility to `People in my organization`. See [Get started with feed views](./views.md#get-started-with-feed-views) for more information.
+> If you want to share a package in your feed with all the users in your organization, you can promote that package to a `view` and set its visibility to `People in my organization`. See [Get started with feed views](./views.md) for more information.
 
 > [!IMPORTANT]
 > If a user have permission to a specific view, and even if they don't have permission to the feed, they will still be able to access and download packages through that view.  

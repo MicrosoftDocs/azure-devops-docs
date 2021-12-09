@@ -5,11 +5,10 @@ description: Learn how access levels are used to grant or restrict access to web
 ms.technology: devops-security
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.topic: conceptual
-ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 09/10/2020
+ms.date: 09/07/2021
 ---
 
 
@@ -21,7 +20,7 @@ Access levels grant or restrict access to select web portal features. This is in
 
 [!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
 
-When you add a user or group to a team or project, they're automatically granted access to those features supported by the default access level and those supported by the security group to which they are added. Most users can access most features by being assigned to the **Basic** access level and **Contributors** security group. For a simplified overview of the permissions assigned to the most common groups **Readers**, **Contributors**, and **Project Administrators** as well as the **Stakeholder** access group, see [Permissions and access](permissions-access.md).  
+When you add a user or group to a team or project, they're automatically granted access to those features supported by the default access level and those supported by the security group to which they are added. Most users can access most features by being assigned to the **Basic** access level and **Contributors** security group. For a simplified overview of the permissions assigned to the most common groups **Readers**, **Contributors**, and **Project Administrators**, see [Default permissions](permissions-access.md).  
 
 ::: moniker range="azure-devops"  
 To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users.md). Make sure to set each user's access level based on what you've purchased for that user.
@@ -37,7 +36,7 @@ Assign users or groups of users to one of the following access levels:
 
 ::: moniker range="azure-devops"
 
-- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Stakeholder**: Can be assigned to unlimited users for free. Provides partial access to private projects and mostly full access to public projects. Assign to users with no license or subscriptions who need access to a limited set of features. For feature access details, see [Stakeholder access quick reference](stakeholder-access.md). 
 - **Basic**: Provides access to most features. Assign to users with a Visual Studio Professional subscription, an Azure DevOps Server CAL, and to users for whom you're paying for Basic access in an organization.
 - **Basic + Test Plans**: Provides access to all features included in Basic, as well as Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
 - **Visual Studio subscription**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features that are included in their subscription level. If you assign Basic or Stakeholder, they also receive their Visual Studio subscription benefits upon sign-in.
@@ -291,7 +290,7 @@ The following table indicates those features available for each supported access
 ::: moniker range="> tfs-2018"
 :::row:::
    :::column span="3":::
-      [**Artifacts**](../../artifacts/overview.md)  
+      [**Artifacts**](../../artifacts/start-using-azure-artifacts.md)  
       Includes full access to all Azure Artifacts features, up to 2 GiB free storage.
    :::column-end:::
    :::column span="1":::
@@ -309,7 +308,7 @@ The following table indicates those features available for each supported access
 ::: moniker range="tfs-2017 || tfs-2018"
 :::row:::
    :::column span="3":::
-      [**Artifacts**](../../artifacts/overview.md)  
+      [**Artifacts**](../../artifacts/start-using-azure-artifacts.md)  
       Includes full access to all Azure Artifacts features, up to 2 GiB free storage.
    :::column-end:::
    :::column span="1":::
@@ -586,28 +585,6 @@ The following table indicates those features available for each supported access
 ---
 ::: moniker-end
 
-<a id="stakeholder-access">  </a>
-<a id="feature-access">  </a>
-
-## Stakeholder access
-
-With Stakeholder access, users can create and modify work items and create and save queries. They have limited access to several Azure Boards features. They also can view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. 
- 
-To get started as a Stakeholder, see [Get started as a Stakeholder](get-started-stakeholder.md).
-
-
-::: moniker range="azure-devops"
-
-### Public versus private feature access
-
-Stakeholder access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
-
-[!INCLUDE [temp](../../includes/stakeholder-access-table.md)]
-
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/features-not-available-stakeholder.md)]
-
 
 <a id="basic" />
 
@@ -707,7 +684,7 @@ To learn how to grant access to an extension, see [Get extensions for TFS](../..
 
 ::: moniker range="azure-devops"
 
-You can manage access levels programmatically using the [`az devops user add` (Azure DevOps Services only)](../accounts/add-organization-users.md) or the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+You can manage access levels programmatically using the [`az devops user add` (Azure DevOps Services only)](../accounts/add-organization-users.md) or the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
 
 | Access level (user interface)| AccountLicenseType | msdnLicenseType| 
 | --------------------------|-----------------------------|-----------|
@@ -725,7 +702,7 @@ You can manage access levels programmatically using the [`az devops user add` (A
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020" 
 
-You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
 
 | Access level (user interface)| AccountLicenseType | msdnLicenseType| 
 | --------------------------|-----------------------------|
@@ -739,7 +716,7 @@ You can manage access levels programmatically using the [User Entitlement - Add 
 
 ::: moniker range="tfs-2018" 
 
-You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user-entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
 
 | Access level (user interface)| AccountLicenseType | msdnLicenseType| 
 | --------------------------|-----------------------------|
@@ -770,6 +747,7 @@ Service accounts don't require a CAL or other purchase.
 
 ::: moniker range="azure-devops"
 
+- [Stakeholder access quick reference](stakeholder-access.md)
 - [Free access to Pipelines Preview](provide-stakeholder-pipeline-access.md)
 - [Manage users and access](../accounts/add-organization-users.md)
 - [Get started as a Stakeholder](get-started-stakeholder.md)
@@ -781,7 +759,7 @@ Service accounts don't require a CAL or other purchase.
 
 
 ::: moniker range="< azure-devops"
-
+- [Stakeholder access quick reference](stakeholder-access.md)
 - [Change access levels](change-access-levels.md)
 - [Get started as a Stakeholder](get-started-stakeholder.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)

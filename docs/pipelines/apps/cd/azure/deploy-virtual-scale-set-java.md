@@ -106,13 +106,13 @@ You'll need a resource group, storage account, and shared image gallery for your
       --sku Standard_LRS 
     ```
 
-3. Create a [shared image gallery](/azure/virtual-machines/shared-images-cli). 
+3. Create a [shared image gallery](/azure/virtual-machines/shared-image-galleries). 
 
     ```azurecli-interactive
     az sig create --resource-group myVMSSResourceGroup --gallery-name myVMSSGallery
     ```
 
-4. Create a new image gallery in the `myVMSSGallery` resource. See [Create an Azure Shared Image Gallery using the portal](/azure/virtual-machines/windows/shared-images-portal) to learn more about working with image galleries. 
+4. Create a new image gallery in the `myVMSSGallery` resource. See [Create an Azure Shared Image Gallery using the portal](/azure/virtual-machines/linux/shared-images-portal) to learn more about working with image galleries. 
 
     ```azurecli-interactive
     az sig create --resource-group myVMSSResourceGroup --gallery-name myVMSSGallery
@@ -164,7 +164,7 @@ To create a custom image, you can use the [Azure VM Image Builder DevOps Task](h
         ibLocation: 'eastus2'
     ```
 
-2. Run the pipeline to generate your first image. You may need to [authorize resources](../../../process/resources.md#troubleshooting-authorization-for-a-yaml-pipeline) during the pipeline run.
+2. Run the pipeline to generate your first image. You may need to [authorize resources](../../../process/resources.md#authorize-a-yaml-pipeline) during the pipeline run.
  
 3. Go to the your new image in the Azure portal and open **Overview**. Select **Create VMSS** to create a new virtual machine scale set from the new image. Set **Virtual machine scale set name** to `vmssScaleSet`. See [Create a virtual machine scale set in the Azure portal](/azure/virtual-machine-scale-sets/quick-create-portal) to learn more about creating virtual machine scale sets in the Azure portal. 
 
@@ -188,4 +188,3 @@ Go to the Azure portal and delete your resource group, `myVMSSResourceGroup`.
 ## Next steps
 > [!div class="nextstepaction"]
 > [Learn more about virtual machine scale sets](/azure/virtual-machine-scale-sets/overview)
-

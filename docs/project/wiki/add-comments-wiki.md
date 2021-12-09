@@ -39,7 +39,7 @@ Edit or delete any comments that you've added to a wiki.
 
 ## Related articles
 
-- [Search wiki content](search-wiki.md)
+
 - [Follow wiki pages, get notifications](follow-notifications-wiki-pages.md)
 - [Create and embed a work item from wiki content](create-embed-wit-from-wiki.md)
 - [Version, select, or unpublish a wiki](wiki-select-unpublish-versions.md)

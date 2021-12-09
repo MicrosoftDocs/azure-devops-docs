@@ -45,29 +45,9 @@ Use a pipeline to automatically build and test your .NET Core projects. Learn ho
 
 ::: moniker-end
 
-### Get the code
 
-::: moniker range=">=azure-devops-2020"
+[!INCLUDE [include](../includes/dotnet-setup.md)]
 
-[!INCLUDE [include](includes/get-code-before-sample-repo.md)]
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-Import this repo into your Git repo in Azure DevOps Server 2019:
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-Import this repo into your Git repo in TFS:
-
-::: moniker-end
-
-```
-https://github.com/MicrosoftDocs/pipelines-dotnet-core
-```
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -524,7 +504,7 @@ To run tests and publish code coverage with Coverlet:
     displayName: 'Publish code coverage report'
     inputs:
       codeCoverageTool: 'Cobertura'
-      summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
+      summaryFileLocation: '$(Agent.TempDirectory)/**/coverage.cobertura.xml'
   ```
 
 # [.NET < 5](#tab/netearlierversions)
@@ -542,7 +522,7 @@ To run tests and publish code coverage with Coverlet:
     displayName: 'Publish code coverage report'
     inputs:
       codeCoverageTool: 'Cobertura'
-      summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
+      summaryFileLocation: '$(Agent.TempDirectory)/**/coverage.cobertura.xml'
   ```
 
 ---

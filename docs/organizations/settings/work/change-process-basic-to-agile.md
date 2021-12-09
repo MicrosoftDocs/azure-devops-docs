@@ -17,7 +17,7 @@ ms.date: 07/17/2020
 
 [!INCLUDE [temp](../../../includes/version-cloud-plus-2020.md)]
 
-You can change a project based on the Basic process to use to use an inherited Agile process.  This article provides the steps needed to make this change. 
+You can change a project based on the Basic process to use an inherited Agile process.  This article provides the steps needed to make this change. 
 
 Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task and Epic work item types are the same for both Basic and Agile processes. Most State and Reason field values, however, are different.
 

@@ -4,6 +4,13 @@ titleSuffix: Azure Repos
 description: Develop code and manage pending changes
 ms.assetid: dded21d3-4869-4e19-bca4-62e27179539c
 ms.technology: devops-code-tfvc
+f1_keywords:
+- vs.tfc.sourcecontrol.DialogOpenFromScc
+- vs.tfc.sourcecontrol.ToolWindowPendingCheckins
+- vs.tfc.sourcecontrol.DialogConfirmUndoEdit
+- vs.tfs.teamexplorer.MyWorkPageMain
+- vs.tfc.sourcecontrol.DialogPromoteCandidates
+- vs.tfc.sourcecontrol.DialogUndoPendingChanges
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -53,7 +60,7 @@ You can use the Pending Changes page (Keyboard: Ctrl + 0, P) in the team explore
 ![Checking in the pending changes](media/develop-code-manage-pending-changes/IC591276.png)
 
 > [!TIP]
-> -  You can <img src="media/develop-code-manage-pending-changes/IC667296.png" title="Undock" alt="Undock" style="border: 1px solid black;"/> undock the Pending Changes page from the team explorer and open it in a new window.
+> -  You can :::image type="content" source="media/develop-code-manage-pending-changes/IC667296.png" alt-text="Undock"::: undock the Pending Changes page from the team explorer and open it in a new window.
 > -  You can toggle between list and tree view from the actions menu.
 
 Almost every change that you make to the files on your dev machine is stored in your workspace as a pending change until you check it in:  

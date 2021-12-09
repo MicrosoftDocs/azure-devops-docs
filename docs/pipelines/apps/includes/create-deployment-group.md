@@ -4,7 +4,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/14/2020
+ms.date: 09/08/2021
 ---
 
 ## Create a deployment group
@@ -25,9 +25,9 @@ Deployment groups in Azure Pipelines make it easier to organize the servers that
 
 1. When you're prompted to configure tags for the agent, press Enter (you don't need any tags).
 
-1. When you're prompted for the user account, press Enter to accept the defaults.
+1. When you're prompted for the user account, press **Enter** to accept the defaults.
 
-   > The account under which the agent runs needs **Manage** permissions for the C:\Windows\system32\inetsrv\ directory.
+   > The account under which the agent runs needs **Manage** permissions for the `C:\Windows\system32\inetsrv\ directory`. For more information on managing permissions, see [Security groups, service accounts, and permissions in Azure DevOps](../../../organizations/security/permissions-access.md).
    Adding non-admin users to this directory is not recommended. In addition, if you have a custom user identity for the application pools,
    the identity needs permission to read the crypto-keys. Local service accounts and user accounts must be given read access for this.
    For more details, see [Keyset does not exist error message](https://support.microsoft.com/help/977754/-keyset-does-not-exist-error-message-when-you-try-to-change-the-identi).

@@ -1,7 +1,7 @@
 ---
-title: Email or print user stories, and other work items
+title: Email or print user stories and other work items
 titleSuffix: Azure Boards
-description: Email or print work items to share information in Azure Boards, Azure DevOps, Visual Studio Team Explorer 
+description: Learn how to email or print work items to share information in Azure Boards, Azure DevOps, and Visual Studio Team Explorer.
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 05/21/2021
+ms.date: 11/07/2021
 ---
 
 
@@ -115,10 +115,10 @@ Some of the most common ways information is shared within a team or across teams
 
 **Visual Studio 2019/Team Explorer** 
 
-The tasks/features listed in the table aren't available when you are connected to a GitHub or third-party Git repository. Also, they aren't available from Visual Studio 2019 under the following conditions:   
+The tasks/features listed in the table aren't available when you're connected to a GitHub or third-party Git repository. Also, they aren't available from Visual Studio 2019 under the following conditions:   
 
-* If you are set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).  
-* If you are set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
+* If you're set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).  
+* If you're set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
  
  
 
@@ -205,7 +205,7 @@ From Visual Studio or Team Explorer, choose ![Send work item to Microsoft Outloo
 
 ## Email summary lists with links to items  
 
-Another way to share items is by emailing summary lists, such as a sprint summary plan or active bugs list. You can do this from a backlog or query results list.  
+Another way to share items is by emailing summary lists, such as a sprint summary plan or active bugs list. You can share items from a backlog or query results list.  
 
 Depending on the option and client you choose, summary lists may or may not include a hyperlink to the work item ID.  
 
@@ -250,7 +250,7 @@ If you want to mail a list of all items in the backlog or query, simply choose t
 
 ![Screenshot of backlog, context menu, Email selected items from a list option.](../queries/media/share-plans-email-summary-list-ts.png)  
 
-If you want to mail a list of all items in the backlog or query, simply choose the ![mail icon](../media/icons/mail_icon.png) mail icon. 
+If you want to mail a list of all items in the backlog or query, choose the ![mail icon](../media/icons/mail_icon.png) mail icon. 
 
 ![Screenshot of backlog, email icon, TFS 2015 and earlier versions.]](../queries/media/share-plans-email-summary-list-web-portal.png)  
 
@@ -309,7 +309,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 ## Print work items as cards
 
-Some teams want to work with physical cards when planning or updating their physical Kanban or Scrum task boards. There is no native support for printing work items as cards. However, you may find a solution from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/search?term=card&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance).   
+Some teams want to work with physical cards when planning or updating their physical Kanban or Scrum task boards. There's no native support for printing work items as cards. However, you may find a solution from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/search?term=card&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance).   
 
 <a id="copy-url">  </a>
 
@@ -324,7 +324,7 @@ Some teams want to work with physical cards when planning or updating their phys
 
 <a id="team-services-copy-url" />
 
-**From the web portal**, simply copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](../backlogs/media/icon-copy-to-clipboard.png) copy-to-clipboard icon.
+**From the web portal**, copy the URL from the web browser address or hover over the title and then select the ![Copy to clipboard icon](../backlogs/media/icon-copy-to-clipboard.png) copy-to-clipboard icon.
 
 <img src="../backlogs/media/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" />  
 
@@ -369,7 +369,7 @@ Some teams want to work with physical cards when planning or updating their phys
 
 ## Export list as CSV 
 
-From any query, you can export a list of work items as a comma-delimited list. Simply open the query, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose <strong>Export to CSV</strong>. To learn more, see [Bulk import or update work items using CSV files](../queries/import-work-items-from-csv.md).
+From any query, you can export a list of work items as a comma-delimited list. Open the query, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose <strong>Export to CSV</strong>. To learn more, see [Bulk import or update work items using CSV files](../queries/import-work-items-from-csv.md).
 
 ::: moniker-end
 
@@ -392,7 +392,7 @@ From any query, you can export a list of work items as a comma-delimited list. S
 
 ## Marketplace extensions  
 
-You may find additional ways to share information by exporting work items to other applications such as Microsoft Word. To learn more, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
+You may find other ways to share information by exporting work items to other applications such as Microsoft Word. To learn more, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
 
 ::: moniker-end
 

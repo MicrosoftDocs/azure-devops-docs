@@ -1,4 +1,4 @@
-﻿---
+---
 title: Manage permissions for READMEs and wiki pages
 titleSuffix: Azure DevOps
 description: Learn how to set permissions to grant or secure access to README files and you team project built-in wiki.
@@ -60,7 +60,7 @@ Stakeholders have zero access to read or edit code wiki pages in private project
 
 Stakeholders have full access to wikis in public projects.
 
-For more information about Stakeholder access, see [About access levels, Stakeholder access, Public versus private feature access](../../organizations/security/access-levels.md#public-versus-private-feature-access).
+For more information about Stakeholder access, see [About access levels, Stakeholder access, Public versus private feature access](../../organizations/security/stakeholder-access.md#public-versus-private-feature-access).
 
 ## FAQ
 

@@ -38,6 +38,8 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 > - You cannot run Mac agents using scale sets. You can only run Windows or Linux agents this way.
 > 
 > - Using VMSS agent pools for Azure DevOps Services is only supported for Azure Public (global service) cloud. Currently, VMSS agent pools does not support any other [national cloud offerings](/azure/active-directory/develop/authentication-national-cloud). 
+>
+> - You should not associate a VMSS to multiple pools.
 
 
 ## Create the scale set
@@ -299,7 +301,7 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
 
 1. Create a VM with your desired OS image and optionally expand the OS disk size from 128 GB to `<myDiskSizeGb>`.
 
-    - If starting with an available Azure Image, for example <myBaseImage> = (Win2019DataCenter, UbuntuLTS):
+    - If starting with an available Azure Image, for example \<myBaseImage\> = (Win2019DataCenter, UbuntuLTS):
     
         ```azurecli  
         az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myBaseImage> --os-disk-size-gb <myDiskSize>  --admin-username myUserName --admin-password myPassword

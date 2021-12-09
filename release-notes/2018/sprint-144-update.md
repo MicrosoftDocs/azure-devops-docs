@@ -160,11 +160,11 @@ Azure Pipelines offer hosted pools for Linux, macOS, and Windows agents. Previou
 strategy:
   matrix:
     win:
-      vm: vs2017-win2016
+      vm: windows-latest
     mac:
-      vm: macos-10.14
+      vm: macOS-latest
     linux:
-      vm: ubuntu-16.04
+      vm: ubuntu-latest
 
 pool:
   vmImage: $(vm)

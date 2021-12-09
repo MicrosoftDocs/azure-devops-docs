@@ -6,8 +6,8 @@ ms.technology: devops-test
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
+ms.date: 09/14/2021
 ---
 
 # Add findings to existing bugs with exploratory testing
@@ -19,7 +19,7 @@ searches for and displays existing bugs, based on the keywords in the title,
 as you file a new bug. You can choose to continue creating a new bug or add
 your findings to an existing bug.
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+[!INCLUDE [prerequisites-define](includes/prerequisites-stakeholder.md)] 
 
 1. As you type the title for a new bug, in the background the extension 
    searches for similar bugs that might be related to the issue you've found
@@ -71,5 +71,4 @@ After you file bugs, create tasks, or create test cases, all these show up in th
 * [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
 * [Exploratory testing with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager)
 * [Overview of manual and exploratory testing](index.yml)
-
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+ 

@@ -1,6 +1,6 @@
 ---
 title: Publish and consume build artifacts
-description: How to use Artifacts in Azure pipelines
+description: How to use Artifacts in Azure Pipelines
 ms.custom: seodec18
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 # Artifacts in Azure Pipelines
 
 > [!NOTE]
-> We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster output storage speeds. 
+> We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster performance. 
 
 Azure Artifacts is a service that enables teams to use feeds and upstream sources to manage their dependencies. You can use Azure Pipelines to publish and consume different types of artifacts as part of your CI/CD workflow.
 
@@ -239,7 +239,7 @@ YAML is not supported in TFS.
 
 ## Tips
 
-* **Artifact publish location** argument: **Azure Pipelines/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in Azure Pipelines or TFS. But if you're using a private Windows agent, you've got the option to [drop to a UNC file share](#unc-file-share).
+* `PublishBuildArtifacts`: using the *publishLocation* argument, you can store you artifact in Azure Pipelines (Container), or copy it to a file share (FilePath). The file share must be accessible from the agent running the pipeline.
 
 * Use forward slashes in file path arguments so that they work for all agents. Backslashes don't work for macOS and Linux agents.
 
@@ -251,7 +251,7 @@ YAML is not supported in TFS.
 
 * Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.  
 
-* You can [get build artifacts from the REST API](/rest/api/vsts/build/artifacts).
+* You can [get build artifacts](/rest/api/vsts/build/artifacts) using the Azure DevOps REST API.
 
 ## Related tasks for publishing artifacts
 
@@ -315,4 +315,4 @@ If you're using TFS 2015 RTM, the steps in the preceding examples are not availa
 
 - [Publish and download artifacts in Azure Pipelines](./pipeline-artifacts.md)
 - [Define your multi-stage classic pipeline](../release/define-multistage-release-process.md)
-- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/en-us/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)
+- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)

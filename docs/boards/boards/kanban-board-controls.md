@@ -1,18 +1,18 @@
 ---
-title: Kanban board controls  
+title: Enable interface features with Kanban board controls
 titleSuffix: Azure Boards
-description: Use board controls available with your Kanban board in Azure Boards, Azure DevOps, & Team Foundation Server   
+description: Learn how to use the board controls available with your Kanban board in Azure Boards and Azure DevOps.
 ms.custom: boards-kanban  
 ms.technology: devops-agile
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+monikerRange: '<= azure-devops'
+ms.date: 10/15/2021
 ---
 
-# Kanban board controls
+# Use Kanban board controls to enable interface features
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -62,7 +62,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 
 ::: moniker range=">= tfs-2015"
 
-## Keyboard shortcuts
+## Open keyboard shortcuts
 
 Enter **?** to open the Kanban board keyboard shortcuts.  
 

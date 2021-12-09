@@ -11,7 +11,7 @@ monikerRange: '> azure-devops-2019'
 
 [!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-vsts-plus-azdevserver-2019.md)]
 
-You can add protection to your [repository resource](resources.md#resources-repositories) with checks and pipeline permissions. When you add protection, you're better able to restrict repository ownership and editing privileges.
+You can add protection to your [repository resource](resources.md#define-a-repositories-resource) with checks and pipeline permissions. When you add protection, you're better able to restrict repository ownership and editing privileges.
 
 ## Prerequisites
 
@@ -73,6 +73,6 @@ You can see the added repository listed.
 
 ## Related articles
 
-- [Set Git repository permissions](/azure/devops/repos/git/set-git-repository-permissions)
+- [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)
 - [Git repository settings and policies](../../repos/git/repository-settings.md)
 - [Azure Pipelines resources in YAML](resources.md)

@@ -530,7 +530,7 @@ Properties for the Files section:
 - **addressable** – (optional) Set to **true** if you want your file to be URL-addressable. Defaults to **false**.
 - **packagePath** – (optional) Path to the resource within the package. Defaults to the relative path on disk from your root directory.
 - **contentType** – (optional) MIME type of the file. Defaults to a best guess based on the file extension and OS settings.
-- **assetType** – (optional) Specify the value of the Type attribute of the <Asset> entry in the VSIX manifest. Can also be an array of strings, in which case multiple <Asset> entries get added for this file. Defaults to the packagePath.
+- **assetType** – (optional) Specify the value of the Type attribute of the asset entry in the VSIX manifest. Can also be an array of strings, in which case multiple asset entries get added for this file. Defaults to the packagePath.
 - **lang** – (optional) Language of this asset. Localized files are served based on the Accept-Language header. Leave blank to signify this file is in the default (or fallback) language. Localized versions of the same file should have the same assetType.
 
 ## Contributions

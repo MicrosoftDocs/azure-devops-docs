@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/artifacts/nuget/bootstrap-nuget.md",
+      "redirect_url": "/previous-versions/azure/devops/artifacts/nuget/bootstrap-nuget",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/pipelines/apps/windows/universal.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/apps/windows/universal",
       "redirect_document_id": false
@@ -4948,7 +4953,7 @@
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/copying-and-cloning-test-suites-and-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
+      "redirect_url": "/azure/devops/test/copy-clone-test-items",
       "redirect_document_id": false
     },
     {
@@ -4973,7 +4978,7 @@
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/share-steps-between-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases",
+      "redirect_url": "/azure/devops/test/share-steps-between-test-cases",
       "redirect_document_id": false
     },
     {
@@ -5233,7 +5238,7 @@
     },
     {
       "source_path": "docs/manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
+      "redirect_url": "/azure/devops/test/copy-clone-test-items",
       "redirect_document_id": false
     },
     {
@@ -5258,7 +5263,7 @@
     },
     {
       "source_path": "docs/manual-test/mtm/share-steps-between-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases",
+      "redirect_url": "/azure/devops/test/share-steps-between-test-cases",
       "redirect_document_id": false
     },
     {
@@ -7004,67 +7009,67 @@
     {
       "source_path": "docs/build-release/concepts/definitions/release/approvals/approvals.md",
       "redirect_url": "/azure/devops/pipelines/release/approvals/approvals",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/approvals/gates.md",
       "redirect_url": "/azure/devops/pipelines/release/approvals/gates",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/approvals/index.md",
       "redirect_url": "/azure/devops/pipelines/release/approvals/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md",
       "redirect_url": "/azure/devops/pipelines/release/deployment-groups/howto-provision-deployment-group-agents",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/deployment-groups/index.md",
       "redirect_url": "/azure/devops/pipelines/release/deployment-groups/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/library/azure-stack.md",
       "redirect_url": "/azure/devops/pipelines/targets/azure-stack",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/library/government-cloud.md",
       "redirect_url": "/azure/devops/pipelines/library/government-cloud",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/library/index.md",
       "redirect_url": "/azure/devops/pipelines/library/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/library/secure-files.md",
       "redirect_url": "/azure/devops/pipelines/library/secure-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/library/service-endpoints.md",
       "redirect_url": "/azure/devops/pipelines/library/service-endpoints",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/library/task-groups.md",
       "redirect_url": "/azure/devops/pipelines/library/task-groups",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/library/variable-groups.md",
       "redirect_url": "/azure/devops/pipelines/library/variable-groups",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/licensing/concurrent-pipelines-tfs.md",
       "redirect_url": "/azure/devops/pipelines/licensing/concurrent-pipelines-tfs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/licensing/concurrent-pipelines-ts.md",
@@ -7079,22 +7084,22 @@
     {
       "source_path": "docs/build-release/concepts/policies/permissions.md",
       "redirect_url": "/azure/devops/pipelines/policies/permissions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/policies/retention.md",
       "redirect_url": "/azure/devops/pipelines/policies/retention",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/process/conditions.md",
       "redirect_url": "/azure/devops/pipelines/process/conditions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/process/deployment-group-phases.md",
       "redirect_url": "/azure/devops/pipelines/process/deployment-group-phases",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/process/multiple-phases.md",
@@ -7104,7 +7109,7 @@
     {
       "source_path": "docs/pipelines/process/multiple-phases.md",
       "redirect_url": "/azure/devops/pipelines/process/phases",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/process/phases.md",
@@ -7124,12 +7129,12 @@
     {
       "source_path": "docs/build-release/concepts/process/tasks.md",
       "redirect_url": "/azure/devops/pipelines/process/tasks",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/releases/index.md",
       "redirect_url": "/azure/devops/pipelines/release/releases",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/index.md",
@@ -7139,12 +7144,12 @@
     {
       "source_path": "docs/build-release/overview.md",
       "redirect_url": "/azure/devops/pipelines/overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/packages/jenkins.md",
       "redirect_url": "/azure/devops/pipelines/packages/jenkins",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/packages/maven.md",
@@ -7174,7 +7179,7 @@
     {
       "source_path": "docs/build-release/packages/nuget-restore.md",
       "redirect_url": "/azure/devops/pipelines/packages/nuget-restore",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/symbols/index.md",
@@ -7184,47 +7189,47 @@
     {
       "source_path": "docs/build-release/tasks/file-matching-patterns.md",
       "redirect_url": "/azure/devops/pipelines/tasks/file-matching-patterns",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/index.md",
       "redirect_url": "/azure/devops/pipelines/tasks/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/transforms-variable-substitution.md",
       "redirect_url": "/azure/devops/pipelines/tasks/transforms-variable-substitution",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/android-build.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/android-build",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/android-signing.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/android-signing",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/ant.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/ant",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/cmake.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/cmake",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/Docker.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/docker",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/DockerCompose.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/docker-compose",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/dotnet-core.md",
@@ -7239,247 +7244,247 @@
     {
       "source_path": "docs/build-release/tasks/build/Go.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/go",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/gradle.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/gradle",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/grunt.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/grunt",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/gulp.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/gulp",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/index-sources-publish-symbols.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/index-sources-publish-symbols",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/jenkins-queue-job.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/jenkins-queue-job",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/maven.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/maven",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/msbuild.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/msbuild",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/visual-studio-build.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/visual-studio-build",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/xamarin-android.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/xamarin-android",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/xamarin-ios.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/xamarin-ios",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/xcode-build.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/xcode-build",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/xcode-package-ios.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/xcode-package-ios",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/build/xcode.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/xcode",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AppCenterDistribute.1.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/app-center-distribute",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/azure-cli.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-cli",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/azure-file-copy.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-file-copy",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/azure-key-vault.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-key-vault",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureAppServiceManage.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-app-service-manage",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureCloudPowerShellDeployment.1.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-cloud-powershell-deployment",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureMonitorAlerts.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-monitor-alerts",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureMysqlDeployment.1.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-mysql-deployment",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzurePowerShellV3.3.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-powershell",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureResourceGroupDeploymentV2.2.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-resource-group-deployment",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureRmWebAppDeployment.4.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-rm-web-app-deployment",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/AzureVmssDeployment.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-vmss-deployment",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/Chef.1.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/chef",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/ChefKnife.1.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/chef-knife",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/copy-files-over-ssh.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/copy-files-over-ssh",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/HelmDeploy.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/helm-deploy",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/iis-deploy.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/iis-web-app-deployment-on-machine-group",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/iis-manage.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/iis-web-app-management-on-machine-group",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/Kubernetes.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/kubernetes",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/PackerBuild.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/packer-build",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/powershell-on-target-machines.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/powershell-on-target-machines",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/service-fabric-compose-deploy.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/service-fabric-compose-deploy",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/service-fabric-deploy.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/service-fabric-deploy",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/SqlAzureDacpacDeployment.1.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/SqlDacpacDeploymentOnMachineGroup.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/sql-dacpac-deployment-on-machine-group",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/ssh.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/ssh",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/deploy/windows-machine-file-copy.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/windows-machine-file-copy",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/package/cocoapods.md",
       "redirect_url": "/azure/devops/pipelines/tasks/package/cocoapods",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/package/conda-environment.md",
       "redirect_url": "/azure/devops/pipelines/tasks/package/conda-environment",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/package/npm.md",
       "redirect_url": "/azure/devops/pipelines/tasks/package/npm",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/package/NpmAuthenticate.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/package/npm-authenticate",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/package/nuget.md",
       "redirect_url": "/azure/devops/pipelines/tasks/package/nuget",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/package/pypi-publisher.md",
       "redirect_url": "/azure/devops/pipelines/tasks/package/pypi-publisher",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/package/prev-versions/nuget-installer-0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/package/prev-versions/nuget-installer-0",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/package/prev-versions/nuget-packager-0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/package/prev-versions/nuget-packager-0",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/package/prev-versions/nuget-publisher-0.md",
@@ -7489,27 +7494,27 @@
     {
       "source_path": "docs/build-release/tasks/test/AppCenterTest.1.md",
       "redirect_url": "/azure/devops/pipelines/tasks/test/app-center-test",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/test/cloud-based-load-test.md",
       "redirect_url": "/azure/devops/pipelines/tasks/test/cloud-based-load-test",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/test/cloud-based-web-performance-test.md",
       "redirect_url": "/azure/devops/pipelines/tasks/test/cloud-based-web-performance-test",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/test/publish-code-coverage-results.md",
       "redirect_url": "/azure/devops/pipelines/tasks/test/publish-code-coverage-results",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/test/publish-test-results.md",
       "redirect_url": "/azure/devops/pipelines/tasks/test/publish-test-results",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/test/run-functional-tests.md",
@@ -7524,232 +7529,232 @@
     {
       "source_path": "docs/build-release/tasks/test/RunJMeterLoadTest.1.md",
       "redirect_url": "/azure/devops/pipelines/tasks/test/run-jmeter-load-test",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/test/visual-studio-test-agent-deployment.md",
       "redirect_url": "/azure/devops/pipelines/tasks/test/visual-studio-test-agent-deployment",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/test/VsTest.2.md",
       "redirect_url": "/azure/devops/pipelines/tasks/test/vstest",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/test/xamarin-test-cloud.md",
       "redirect_url": "/azure/devops/pipelines/tasks/test/xamarin-test-cloud",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/tool/DotNetCoreInstaller.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/tool/GoTool.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/tool/go-tool",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/tool/HelmInstaller.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/tool/helm-installer",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/tool/java-tool-installer.md",
       "redirect_url": "/azure/devops/pipelines/tasks/tool/java-tool-installer",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/tool/node-js.md",
       "redirect_url": "/azure/devops/pipelines/tasks/tool/node-js",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/tool/nuget.md",
       "redirect_url": "/azure/devops/pipelines/tasks/tool/nuget",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/tool/use-python-version.md",
       "redirect_url": "/azure/devops/pipelines/tasks/tool/use-python-version",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/tool/use-ruby-version.md",
       "redirect_url": "/azure/devops/pipelines/tasks/tool/use-ruby-version",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/tool/VsTestPlatformToolInstaller.1.md",
       "redirect_url": "/azure/devops/pipelines/tasks/tool/vstest-platform-tool-installer",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/archive-files.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/archive-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/azure-function.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/azure-function",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/azure-monitor.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/azure-monitor",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/AzureNLBManagement.1.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/azure-nlb-management",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/BashV3.3.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/bash",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/batch-script.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/batch-script",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/command-line.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/command-line",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/copy-and-publish-build-artifacts.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/copy-and-publish-build-artifacts",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/copy-files.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/copy-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/curl-upload-files.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/curl-upload-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/DecryptFile.1.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/decrypt-file",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/delay.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/delay",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/delete-files.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/delete-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/download-secure-file.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/download-secure-file",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/DownloadBuildArtifacts.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/download-build-artifacts",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/DownloadPackage.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/download-package",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/extract-files.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/extract-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/ftp-upload.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/ftp-upload",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/http-rest-api.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/http-rest-api",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/install-apple-certificate.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/install-apple-certificate",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/install-apple-provisioning-profile.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/install-apple-provisioning-profile",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/InstallSSHKey.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/install-ssh-key",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/JenkinsDownloadArtifacts.1.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/jenkins-download-artifacts",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/manual-intervention.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/manual-intervention",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/powershell.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/powershell",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/publish-build-artifacts.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/publish-build-artifacts",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/publish-to-azure-service-bus.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/publish-to-azure-service-bus",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/PythonScriptV0.0.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/python-script",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/service-fabric-powershell.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/service-fabric-powershell",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/service-fabric-versioning.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/service-fabric-versioning",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/shell-script.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/shell-script",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/work-item-query.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/work-item-query",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/tasks/utility/xamarin-license.md",
       "redirect_url": "/azure/devops/pipelines/tasks/utility/xamarin-license",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/associate-automated-results-with-requirements.md",
@@ -7759,7 +7764,7 @@
     {
       "source_path": "docs/build-release/test/associate-automated-test-with-test-case.md",
       "redirect_url": "/azure/devops/test/associate-automated-test-with-test-case",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/collect-screenshots-and-video.md",
@@ -7784,7 +7789,7 @@
     {
       "source_path": "docs/build-release/test/continuous-test-selenium.md",
       "redirect_url": "/azure/devops/pipelines/test/continuous-test-selenium",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/example-continuous-testing.md",
@@ -7814,12 +7819,12 @@
     {
       "source_path": "docs/build-release/test/review-continuous-test-results-after-build.md",
       "redirect_url": "/azure/devops/pipelines/test/review-continuous-test-results-after-build",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/run-automated-tests-from-test-hub.md",
       "redirect_url": "/azure/devops/test/run-automated-tests-from-test-hub",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/run-automated-tests-with-microsoft-test-manager.md",
@@ -7864,7 +7869,7 @@
     {
       "source_path": "docs/build-release/actions/virtual-networks/create-virtual-network.md",
       "redirect_url": "/azure/devops/pipelines/targets/create-virtual-network",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/virtual-networks/manage-vms-using-scvmm.md",
@@ -7874,7 +7879,7 @@
     {
       "source_path": "docs/build-release/actions/ci-build-git.md",
       "redirect_url": "/azure/devops/pipelines/customize-pipeline",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/build/ci-public.md",
@@ -7949,7 +7954,7 @@
     {
       "source_path": "docs/build-release/actions/deploy-using-approvals.md",
       "redirect_url": "/azure/devops/pipelines/release/deploy-using-approvals",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/integrate-jenkins-vsts-aks.md",
@@ -7964,12 +7969,12 @@
     {
       "source_path": "docs/build-release/apps/aspnet/build-aspnet-4.md",
       "redirect_url": "/azure/devops/pipelines/apps/aspnet/build-aspnet-4",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/aspnet/build-aspnet-cloudservice.md",
       "redirect_url": "/azure/devops/pipelines/apps/aspnet/build-aspnet-cloudservice",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/aspnet/build-aspnet-core.md",
@@ -7979,12 +7984,12 @@
     {
       "source_path": "docs/build-release/apps/aspnet/build-aspnet-dacpac.md",
       "redirect_url": "/azure/devops/pipelines/apps/aspnet/build-aspnet-dacpac",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/c-cpp/gcc.md",
       "redirect_url": "/azure/devops/pipelines/apps/c-cpp/gcc",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/containers/build.md",
@@ -7994,7 +7999,7 @@
     {
       "source_path": "vsts/pipelines/apps/containers/build.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/docker",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/go/go.md",
@@ -8034,12 +8039,12 @@
     {
       "source_path": "docs/build-release/apps/mobile/app-signing.md",
       "redirect_url": "/azure/devops/pipelines/apps/mobile/app-signing",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/mobile/secure-certs.md",
       "redirect_url": "/azure/devops/pipelines/apps/mobile/secure-certs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/mobile/xamarin.md",
@@ -8069,12 +8074,12 @@
     {
       "source_path": "docs/build-release/apps/windows/cpp.md",
       "redirect_url": "/azure/devops/pipelines/apps/windows/cpp",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/windows/dot-net.md",
       "redirect_url": "/azure/devops/pipelines/apps/windows/dot-net",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/apps/windows/dot-net.md",
@@ -8084,7 +8089,7 @@
     {
       "source_path": "docs/build-release/apps/windows/universal.md",
       "redirect_url": "/azure/devops/pipelines/apps/windows/universal",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/index.md",
@@ -8094,7 +8099,7 @@
     {
       "source_path": "docs/build-release/apps/cd/azure/aspnet-core-to-acr.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/aspnet-core-to-azure-webapp.md",
@@ -8104,7 +8109,7 @@
     {
       "source_path": "docs/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp.md",
       "redirect_url": "/azure/devops/pipelines/targets/webapp",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/aspnet-core-to-windows-vm.md",
@@ -8119,17 +8124,17 @@
     {
       "source_path": "azure/devops/pipelines/apps/cd/azure/aspnet-core-to-windows-vm.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/build-azure-vm-template.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/azure/build-azure-vm-template",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/deploy-azure-scaleset.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/azure/deploy-azure-scaleset",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/deploy-container-kubernetes.md",
@@ -8139,17 +8144,17 @@
     {
       "source_path": "docs/pipelines/apps/cd/azure/deploy-container-kubernetes.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-aks",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/deploy-provision-azure-vm.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/azure/deploy-provision-azure-vm",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/deploy-provision-devtest-lab.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/azure/deploy-provision-devtest-lab",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/scvmm/configure-scvmm.md",
@@ -8164,7 +8169,7 @@
     {
       "source_path": "docs/build-release/apps/cd/deploy-cloudservice-cloudservice.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-cloudservice-cloudservice",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/deploy-dacpac-sqlpackage.md",
@@ -8174,32 +8179,32 @@
     {
       "source_path": "docs/build-release/apps/cd/deploy-database-sqlscripts.md",
       "redirect_url": "/azure/devops/pipelines/targets/azure-sqldb",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/deploy-docker-webapp.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-docker-webapp",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/deploy-linuxvm-deploygroups.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/deploy-webdeploy-iis-deploygroups.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/deploy-webdeploy-iis-winrm.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-winrm",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/deploy-webdeploy-webapps.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-webdeploy-webapps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/actions/create-deploy-releases.md",
@@ -8209,7 +8214,7 @@
     {
       "source_path": "docs/build-release/apps/cd/howto-webdeploy-iis-deploygroups.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/howto-webdeploy-iis-deploygroups",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/howto-webdeploy-webapps.md",
@@ -8234,7 +8239,7 @@
     {
       "source_path": "docs/build-release/apps/cd/provision-vm-in-vmware.md",
       "redirect_url": "/azure/devops/pipelines/targets/vmware",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/sql-server-actions.md",
@@ -8244,7 +8249,7 @@
     {
       "source_path": "docs/build-release/actions/define-multistage-release-process.md",
       "redirect_url": "/azure/devops/pipelines/release/define-multistage-release-process",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/actions/work-with-release-definitions.md",
@@ -8254,7 +8259,7 @@
     {
       "source_path": "docs/build-release/set-permissions.md",
       "redirect_url": "/azure/devops/pipelines/policies/set-permissions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/java/labs/sonarqube/index.md",
@@ -8422,8 +8427,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/collaborate/search-wiki.md",
-      "redirect_url": "/azure/devops/project/wiki/search-wiki",
+      "source_path": "docs/project/wiki/search-wiki.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": false
     },
     {
@@ -9079,7 +9084,7 @@
     {
       "source_path": "docs/billing/csp/buy-vs-app-center.md",
       "redirect_url": "/azure/devops/organizations/billing/csp/buy-vs-app-center",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/csp/set-up-csp-customer.md",
@@ -9089,27 +9094,27 @@
     {
       "source_path": "docs/organizations/billing/csp/set-up-csp-customer.md",
       "redirect_url": "/azure/devops/organizations/billing/csp/buy-csp-azure-devops",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/add-backup-billing-managers.md",
       "redirect_url": "/azure/devops/organizations/billing/add-backup-billing-managers",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/buy-access-tfs-test-hub.md",
       "redirect_url": "/azure/devops/organizations/billing/buy-access-tfs-test-hub",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/buy-basic-access-add-users.md",
       "redirect_url": "/azure/devops/organizations/billing/buy-basic-access-add-users",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/buy-load-testing-vs.md",
       "redirect_url": "/azure/devops/organizations/billing/buy-load-testing-vs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/buy-more-build-vs.md",
@@ -9119,7 +9124,7 @@
     {
       "source_path": "docs/billing/change-azure-subscription.md",
       "redirect_url": "/azure/devops/organizations/billing/change-azure-subscription",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/index.md",
@@ -9129,7 +9134,7 @@
     {
       "source_path": "docs/billing/overview.md",
       "redirect_url": "/azure/devops/organizations/billing/overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/reduce-cancel-paid-vsts-users.md",
@@ -9144,12 +9149,12 @@
     {
       "source_path": "docs/billing/try-additional-features-vs.md",
       "redirect_url": "/azure/devops/organizations/billing/try-additional-features-vs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/vsts-billing-faq.md",
       "redirect_url": "/azure/devops/organizations/billing/billing-faq",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/xamarin-univ.md",
@@ -9159,312 +9164,312 @@
     {
       "source_path": "docs/billing/set-up-billing-for-your-account.md",
       "redirect_url": "/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/add-check-policies.md",
       "redirect_url": "/azure/devops/repos/tfvc/add-check-policies",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/add-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/add-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/add-files-server.md",
       "redirect_url": "/azure/devops/repos/tfvc/add-files-server",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/administering-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/administering-team-foundation-version-control",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/associate-file-type-file-comparison-tool.md",
       "redirect_url": "/azure/devops/repos/tfvc/associate-file-type-file-comparison-tool",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/associate-file-type-merge-tool.md",
       "redirect_url": "/azure/devops/repos/tfvc/associate-file-type-merge-tool",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/branch-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/branch-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/branch-folders-files.md",
       "redirect_url": "/azure/devops/repos/tfvc/branch-folders-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/branch-strategically.md",
       "redirect_url": "/azure/devops/repos/tfvc/branch-strategically",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/branches-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/branches-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/branching-strategies-with-tfvc.md",
       "redirect_url": "/azure/devops/repos/tfvc/branching-strategies-with-tfvc",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/changeset-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/changeset-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/check-folder-controlled-by-gated-check-build-process.md",
       "redirect_url": "/azure/devops/repos/tfvc/check-folder-controlled-by-gated-check-build-process",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/check-out-edit-files.md",
       "redirect_url": "/azure/devops/repos/tfvc/check-out-edit-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/check-your-work-team-codebase.md",
       "redirect_url": "/azure/devops/repos/tfvc/check-your-work-team-codebase",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/checkin-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/checkin-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/checkout-or-edit-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/checkout-or-edit-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/clean-up-files-when-users-leave.md",
       "redirect_url": "/azure/devops/repos/tfvc/clean-up-files-when-users-leave",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/compare-files.md",
       "redirect_url": "/azure/devops/repos/tfvc/compare-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/compare-folders-files.md",
       "redirect_url": "/azure/devops/repos/tfvc/compare-folders-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/compare-folders.md",
       "redirect_url": "/azure/devops/repos/tfvc/compare-folders",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/comparison-git-tfvc.md",
       "redirect_url": "/azure/devops/repos/tfvc/comparison-git-tfvc",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/configure-check-notes.md",
       "redirect_url": "/azure/devops/repos/tfvc/configure-check-notes",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/configure-check-out-settings.md",
       "redirect_url": "/azure/devops/repos/tfvc/configure-check-out-settings",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/configure-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/configure-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/control-access-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/control-access-team-foundation-version-control",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/create-work-workspaces.md",
       "redirect_url": "/azure/devops/repos/tfvc/create-work-workspaces",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md",
       "redirect_url": "/azure/devops/repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/day-life-alm-developer-write-new-code-user-story.md",
       "redirect_url": "/azure/devops/repos/tfvc/day-life-alm-developer-write-new-code-user-story",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/decide-between-using-local-server-workspace.md",
       "redirect_url": "/azure/devops/repos/tfvc/decide-between-using-local-server-workspace",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/delete-command-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/delete-command-team-foundation-version-control",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/delete-restore-files-folders.md",
       "redirect_url": "/azure/devops/repos/tfvc/delete-restore-files-folders",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/destroy-command-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/destroy-command-team-foundation-version-control",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/destroy-version-controlled-files.md",
       "redirect_url": "/azure/devops/repos/tfvc/destroy-version-controlled-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/develop-code-manage-pending-changes.md",
       "redirect_url": "/azure/devops/repos/tfvc/develop-code-manage-pending-changes",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/develop-your-app-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/develop-your-app-team-foundation-version-control",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/difference-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/difference-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/dir-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/dir-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/download-get-files-from-server.md",
       "redirect_url": "/azure/devops/repos/tfvc/download-get-files-from-server",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/edit-check-policies.md",
       "redirect_url": "/azure/devops/repos/tfvc/edit-check-policies",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/enable-disable-check-policies.md",
       "redirect_url": "/azure/devops/repos/tfvc/enable-disable-check-policies",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/find-view-changesets.md",
       "redirect_url": "/azure/devops/repos/tfvc/find-view-changesets",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/folder-comparison-filters.md",
       "redirect_url": "/azure/devops/repos/tfvc/folder-comparison-filters",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/folderdiff-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/folderdiff-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/get-code-reviewed-vs.md",
       "redirect_url": "/azure/devops/repos/tfvc/get-code-reviewed-vs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/get-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/get-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/get-history-item.md",
       "redirect_url": "/azure/devops/repos/tfvc/get-history-item",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/git-permission-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/git-permission-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/git-view-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/git-view-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/help-command-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/help-command-team-foundation-version-control",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/history-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/history-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/label-command-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/label-command-team-foundation-version-control",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/labels-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/labels-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/localversions-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/localversions-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/lock-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/lock-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/lock-unlock-folders-files.md",
       "redirect_url": "/azure/devops/repos/tfvc/lock-unlock-folders-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/merge-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/merge-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/merge-folders-files.md",
       "redirect_url": "/azure/devops/repos/tfvc/merge-folders-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/merges-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/merges-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/msdn-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/msdn-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/optimize-your-workspace.md",
       "redirect_url": "/azure/devops/repos/tfvc/optimize-your-workspace",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/overview.md",
@@ -9474,267 +9479,267 @@
     {
       "source_path": "docs/tfvc/permission-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/permission-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/properties-or-info-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/properties-or-info-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/proxy-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/proxy-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/reconcile-differences-between-two-folders.md",
       "redirect_url": "/azure/devops/repos/tfvc/reconcile-differences-between-two-folders",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/remove-access-version-control-files.md",
       "redirect_url": "/azure/devops/repos/tfvc/remove-access-version-control-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/remove-check-policies.md",
       "redirect_url": "/azure/devops/repos/tfvc/remove-check-policies",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/rename-command-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/rename-command-team-foundation-version-control",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/rename-move-files-folders.md",
       "redirect_url": "/azure/devops/repos/tfvc/rename-move-files-folders",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/resolve-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/resolve-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/resolve-team-foundation-version-control-conflicts.md",
       "redirect_url": "/azure/devops/repos/tfvc/resolve-team-foundation-version-control-conflicts",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/roll-back-changesets.md",
       "redirect_url": "/azure/devops/repos/tfvc/roll-back-changesets",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/rollback-command-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/rollback-command-team-foundation-version-control",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/set-enforce-quality-gates.md",
       "redirect_url": "/azure/devops/repos/tfvc/set-enforce-quality-gates",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/set-up-team-foundation-version-control-your-dev-machine.md",
       "redirect_url": "/azure/devops/repos/tfvc/set-up-team-foundation-version-control-your-dev-machine",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/share-your-code-in-tfvc-eclipse.md",
       "redirect_url": "/azure/devops/repos/tfvc/share-your-code-in-tfvc-eclipse",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/share-your-code-in-tfvc-vs.md",
       "redirect_url": "/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/share-your-code-in-tfvc-xcode.md",
       "redirect_url": "/azure/devops/repos/tfvc/share-your-code-in-tfvc-xcode",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/shelve-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/shelve-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/shelvesets-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/shelvesets-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/status-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/status-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/suspend-your-work-manage-your-shelvesets.md",
       "redirect_url": "/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/undelete-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/undelete-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/understand-lock-types.md",
       "redirect_url": "/azure/devops/repos/tfvc/understand-lock-types",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/undo-changes-another-user-workspace.md",
       "redirect_url": "/azure/devops/repos/tfvc/undo-changes-another-user-workspace",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/undo-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/undo-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/unlabel-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/unlabel-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/unshelve-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/unshelve-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/use-branches-isolate-risk-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/use-branches-isolate-risk-team-foundation-version-control",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/use-labels-take-snapshot-your-files.md",
       "redirect_url": "/azure/devops/repos/tfvc/use-labels-take-snapshot-your-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/use-source-control-explorer-manage-files-under-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/use-source-control-explorer-manage-files-under-version-control",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/use-team-foundation-version-control-commands.md",
       "redirect_url": "/azure/devops/repos/tfvc/use-team-foundation-version-control-commands",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/use-visual-studio-git.md",
       "redirect_url": "/azure/devops/repos/tfvc/use-visual-studio-git",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/view-branch-hierarchy-team-project.md",
       "redirect_url": "/azure/devops/repos/tfvc/view-branch-hierarchy-team-project",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/view-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/view-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/view-file-changes-using-annotate.md",
       "redirect_url": "/azure/devops/repos/tfvc/view-file-changes-using-annotate",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/view-manage-past-versions.md",
       "redirect_url": "/azure/devops/repos/tfvc/view-manage-past-versions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/view-where-when-changesets-have-been-merged.md",
       "redirect_url": "/azure/devops/repos/tfvc/view-where-when-changesets-have-been-merged",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/work-version-control-locks.md",
       "redirect_url": "/azure/devops/repos/tfvc/work-version-control-locks",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/workfold-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/workfold-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/workspace-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/workspace-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/workspaces-command.md",
       "redirect_url": "/azure/devops/repos/tfvc/workspaces-command",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/branches.md",
       "redirect_url": "/azure/devops/repos/git/branches",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/cherry-pick.md",
       "redirect_url": "/azure/devops/repos/git/cherry-pick",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/clone.md",
       "redirect_url": "/azure/devops/repos/git/clone",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/commits.md",
       "redirect_url": "/azure/devops/repos/git/commits",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/creatingrepo.md",
       "redirect_url": "/azure/devops/repos/git/creatingrepo",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/gitworkflow.md",
       "redirect_url": "/azure/devops/repos/git/gitworkflow",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/history.md",
       "redirect_url": "/azure/devops/repos/git/review-history",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/howto.md",
       "redirect_url": "/azure/devops/repos/git/howto",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/ignore-files.md",
       "redirect_url": "/azure/devops/repos/git/ignore-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/merging.md",
       "redirect_url": "/azure/devops/repos/git/merging",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/pulling.md",
       "redirect_url": "/azure/devops/repos/git/pulling",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/pullrequest.md",
       "redirect_url": "/azure/devops/repos/git/pull-requests",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/repos/git/pullrequest.md",
@@ -9749,242 +9754,242 @@
     {
       "source_path": "docs/git/tutorial/pushing.md",
       "redirect_url": "/azure/devops/repos/git/pushing",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/rebase.md",
       "redirect_url": "/azure/devops/repos/git/rebase",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/undo.md",
       "redirect_url": "/azure/devops/repos/git/undo",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/how-to/create-pr-status-server-with-azure-functions.md",
       "redirect_url": "/azure/devops/repos/git/create-pr-status-server-with-azure-functions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/how-to/create-pr-status-server.md",
       "redirect_url": "/azure/devops/repos/git/create-pr-status-server",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/how-to/git-tags.md",
       "redirect_url": "/azure/devops/repos/git/git-tags",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/how-to/pr-status-policy.md",
       "redirect_url": "/azure/devops/repos/git/pr-status-policy",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/how-to/require-branch-folders.md",
       "redirect_url": "/azure/devops/repos/git/require-branch-folders",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/concepts/case-sensitivity.md",
       "redirect_url": "/azure/devops/repos/git/case-sensitivity",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/concepts/forks.md",
       "redirect_url": "/azure/devops/repos/git/forks",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/concepts/git-branching-guidance.md",
       "redirect_url": "/azure/devops/repos/git/git-branching-guidance",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/concepts/git-config.md",
       "redirect_url": "/azure/devops/repos/git/git-config",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/concepts/git-dates.md",
       "redirect_url": "/azure/devops/repos/git/git-dates",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/concepts/git-names.md",
       "redirect_url": "/azure/devops/repos/git/git-names",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/concepts/history.md",
       "redirect_url": "/azure/devops/repos/git/history",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/concepts/mapping-my-tfvc-actions-to-git.md",
       "redirect_url": "/azure/devops/repos/git/mapping-my-tfvc-actions-to-git",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/concepts/pull-request-status.md",
       "redirect_url": "/azure/devops/repos/git/pull-request-status",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/concepts/repository-settings.md",
       "redirect_url": "/azure/devops/repos/git/repository-settings",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/auth-overview.md",
       "redirect_url": "/azure/devops/repos/git/auth-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/branch-permissions.md",
       "redirect_url": "/azure/devops/repos/git/branch-permissions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/branch-policies-overview.md",
       "redirect_url": "/azure/devops/repos/git/branch-policies-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/branch-policies.md",
       "redirect_url": "/azure/devops/repos/git/branch-policies",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/command-prompt.md",
       "redirect_url": "/azure/devops/repos/git/command-prompt",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/commit-details.md",
       "redirect_url": "/azure/devops/repos/git/commit-details",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/commit-history.md",
       "redirect_url": "/azure/devops/repos/git/commit-history",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/create-a-readme.md",
       "redirect_url": "/azure/devops/repos/git/create-a-readme",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/create-branch.md",
       "redirect_url": "/azure/devops/repos/git/create-branch",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/create-new-repo.md",
       "redirect_url": "/azure/devops/repos/git/create-new-repo",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/create-repo-intellij.md",
       "redirect_url": "/azure/devops/repos/git/create-repo-intellij",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/delete-branch.md",
       "redirect_url": "/azure/devops/repos/git/delete-branch",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/delete-existing-repo.md",
       "redirect_url": "/azure/devops/repos/git/delete-existing-repo",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/find-a-file.md",
       "redirect_url": "/azure/devops/repos/git/find-a-file",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/forks-overview.md",
       "redirect_url": "/azure/devops/repos/git/forks-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/gcm-ssh-passphrase.md",
       "redirect_url": "/azure/devops/repos/git/gcm-ssh-passphrase",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/get-started-vs2013.md",
       "redirect_url": "/azure/devops/repos/git/get-started-vs2013",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/git-index-lock.md",
       "redirect_url": "/azure/devops/repos/git/git-index-lock",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/gitquickstart-vs2015.md",
       "redirect_url": "/azure/devops/repos/git/gitquickstart-vs2015",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/gitquickstart.md",
       "redirect_url": "/azure/devops/repos/git/gitquickstart",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/import-from-TFVC.md",
       "redirect_url": "/azure/devops/repos/git/import-from-TFVC",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/import-git-repository.md",
       "redirect_url": "/azure/devops/repos/git/import-git-repository",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/index.md",
       "redirect_url": "/azure/devops/repos/git/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/lfs-kerberos.md",
       "redirect_url": "/azure/devops/repos/git/lfs-kerberos",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/limits.md",
       "redirect_url": "/azure/devops/repos/git/limits",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/lock-branches.md",
       "redirect_url": "/azure/devops/repos/git/lock-branches",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/manage-large-files.md",
       "redirect_url": "/azure/devops/repos/git/manage-large-files",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/manage-your-branches.md",
       "redirect_url": "/azure/devops/repos/git/manage-your-branches",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/merging-with-squash.md",
       "redirect_url": "/azure/devops/repos/git/merging-with-squash",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/overview-2013.md",
       "redirect_url": "/azure/devops/repos/git/overview-2013",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/overview.md",
@@ -10004,62 +10009,62 @@
     {
       "source_path": "docs/git/repo-rename-tfs2015.md",
       "redirect_url": "/azure/devops/repos/git/repo-rename-tfs2015",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/repo-rename.md",
       "redirect_url": "/azure/devops/repos/git/repo-rename",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/restore-deleted-branch.md",
       "redirect_url": "/azure/devops/repos/git/restore-deleted-branch",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/set-up-credential-managers.md",
       "redirect_url": "/azure/devops/repos/git/set-up-credential-managers",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/share-your-code-in-git-cmdline.md",
       "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-cmdline",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/share-your-code-in-git-eclipse.md",
       "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-eclipse",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/share-your-code-in-git-vs-2013.md",
       "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs-2013",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/share-your-code-in-git-vs-2017.md",
       "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs-2017",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/share-your-code-in-git-vs.md",
       "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/share-your-code-in-git-xcode.md",
       "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-xcode",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/team-projects.md",
       "redirect_url": "/azure/devops/repos/git/team-projects",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/use-ssh-keys-to-authenticate.md",
       "redirect_url": "/azure/devops/repos/git/use-ssh-keys-to-authenticate",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/work/scale/add-team-administrator.md",
@@ -10618,6 +10623,11 @@
     },
     {
       "source_path": "docs/work/customize/reference/apply-rule-work-item-field.md",
+      "redirect_url": "/azure/devops/organizations/settings/work/rule-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/xml/apply-rule-work-item-field.md",
       "redirect_url": "/azure/devops/organizations/settings/work/rule-reference",
       "redirect_document_id": false
     },
@@ -11924,17 +11934,17 @@
     {
       "source_path": "docs/pipelines/release/integrate-jenkins-vsts-cicd.md",
       "redirect_url": "/azure/devops/pipelines/release/integrate-jenkins-pipelines-cicd",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/release/integrate-jenkins-vsts-aks.md",
       "redirect_url": "/azure/devops/pipelines/release/integrate-jenkins-pipelines-aks",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/boards/backlogs/office/track-work-vsts-tfs.md",
       "redirect_url": "/azure/devops/boards/backlogs/office/track-work",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/marketplace/start-trial-vsts-extension.md",
@@ -11959,36 +11969,51 @@
     {
       "source_path": "docs/demo-gen/use-vsts-demo-generator-v2.md",
       "redirect_url": "/azure/devops/demo-gen/use-demo-generator-v2",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/archive/apps/aspnet/aspnet-from-vsts-to-windows-vm.md",
       "redirect_url": "/azure/devops/pipelines/archive/apps/aspnet/aspnet-to-windows-vm",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/archive/apps/aspnet/aspnet-core-from-vsts-to-azure-web-app.md",
       "redirect_url": "/azure/devops/pipelines/archive/apps/aspnet/aspnet-core-to-azure-web-app",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/release/azure-policy.md",
       "redirect_url": "/azure/devops/pipelines/policies/azure-policy",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/artifacts/vsts-package-badges.md",
       "redirect_url": "/azure/devops/artifacts/package-badges",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/artifacts/sign-up-azure-artifacts.md",
       "redirect_url": "/azure/devops/artifacts/start-using-azure-artifacts",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/artifacts/license-azure-artifacts.md",
       "redirect_url": "/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/artifacts/overview.md",
+      "redirect_url": "/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/artifacts/where-is-package-management.md",
+      "redirect_url": "/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/artifacts/maven.md",
+      "redirect_url": "/azure/devops/artifacts/get-started-maven",
       "redirect_document_id": false
     },
     {
@@ -11999,42 +12024,42 @@
     {
       "source_path": "docs/articles/git-log-history-simplification.md",
       "redirect_url": "/azure/devops/repos/git/git-log-history-simplification",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/effective-feature-isolation-on-tfvc.md",
       "redirect_url": "/azure/devops/repos/tfvc/effective-feature-isolation-on-tfvc",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/effective-tfvc-branching-strategies-for-devops.md",
       "redirect_url": "/azure/devops/repos/tfvc/effective-tfvc-branching-strategies-for-devops",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/test-impact-for-partially-mapped-tfvc-repositories.md",
       "redirect_url": "/azure/devops/repos/tfvc/test-impact-for-partially-mapped-tfvc-repositories",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/move-git-repos-between-team-projects.md",
       "redirect_url": "/azure/devops/repos/git/move-git-repos-between-team-projects",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/perform-migration-from-svn-to-git.md",
       "redirect_url": "/azure/devops/repos/git/perform-migration-from-svn-to-git",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/remove-binaries.md",
       "redirect_url": "/azure/devops/repos/git/remove-binaries",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/boards/github/troubleshoot-git-hub-connection.md",
       "redirect_url": "/azure/devops/boards/github/troubleshoot-github-connection",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/team-services-security-whitepaper.md",
@@ -12083,12 +12108,22 @@
     },
     {
       "source_path": "docs/articles/phase-features-with-feature-flags.md",
-      "redirect_url": "/azure/devops/migrate/phase-features-with-feature-flags",
+      "redirect_url": "/devops/operate/progressive-experimentation-feature-flags",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/migrate/phase-features-with-feature-flags.md",
+      "redirect_url": "/devops/operate/progressive-experimentation-feature-flags",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/security-validation-cicd-pipeline.md",
       "redirect_url": "/azure/devops/migrate/security-validation-cicd-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/migrate/security-validation-cicd-pipeline.md",
+      "redirect_url": "/azure/devops/pipelines/security/overview",
       "redirect_document_id": false
     },
     {
@@ -12114,27 +12149,27 @@
     {
       "source_path": "docs/report/analytics/what-is-analytics.md",
       "redirect_url": "/azure/devops/report/powerbi/what-is-analytics",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/what-are-analytics-views.md",
       "redirect_url": "/azure/devops/report/powerbi/what-are-analytics-views",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/troubleshooting-views.md",
       "redirect_url": "/azure/devops/report/powerbi/troubleshooting-views",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/reporting-roadmap.md",
       "redirect_url": "/azure/devops/report/powerbi/reporting-roadmap",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/performance-latency.md",
       "redirect_url": "/azure/devops/report/powerbi/performance-latency",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/index.md",
@@ -12144,62 +12179,62 @@
     {
       "source_path": "docs/report/analytics/enable-analytics-velocity.md",
       "redirect_url": "/azure/devops/report/dashboards/add-widget-to-dashboard",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/data-available-in-analytics.md",
       "redirect_url": "/azure/devops/report/powerbi/data-available-in-analytics",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/client-authentication-options.md",
       "redirect_url": "/azure/devops/report/powerbi/client-authentication-options",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/analytics-widgets.md",
       "redirect_url": "/azure/devops/report/dashboards/analytics-widgets",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/analytics-extension.md",
       "redirect_url": "/azure/devops/report/dashboards/analytics-extension",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/analytics-views-manage.md",
       "redirect_url": "/azure/devops/report/powerbi/analytics-views-manage",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/analytics-views-create.md",
       "redirect_url": "/azure/devops/report/powerbi/analytics-views-create",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/analytics-default-views.md",
       "redirect_url": "/azure/devops/report/powerbi/analytics-default-views",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/analytics-historical-filtering.md",
       "redirect_url": "/azure/devops/report/powerbi/analytics-historical-filtering",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/analytics-security.md",
       "redirect_url": "/azure/devops/report/powerbi/analytics-security",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/access-analytics-excel.md",
       "redirect_url": "/azure/devops/report/powerbi/access-analytics-excel",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/get-started-designer.md",
       "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/get-started-yaml.md",
@@ -12254,7 +12289,7 @@
     {
       "source_path": "docs/pipelines/tasks/build/dotnet-core.md",
       "redirect_url": "/azure/devops/pipelines/tasks/build/dotnet-core-cli",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/test/index-tp.md",
@@ -12314,37 +12349,37 @@
     {
       "source_path": "docs/pipelines/languages/acr-template.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/containers/acr-template",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/aks-template.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/kubernetes/aks-template",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/anaconda.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/anaconda",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/android.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/android",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/docker.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/containers/build-image",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/dotnet-core.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/dotnet-core",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/go.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/go",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/helm.md",
@@ -12359,57 +12394,57 @@
     {
       "source_path": "docs/pipelines/languages/java-function.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/java-function",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/java-webapp.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/java-webapp",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/java.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/java",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/javascript.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/javascript",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/php-webapp.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/php-webapp",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/php.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/php",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/python-webapp.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/python-webapp",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/python.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/python",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/ruby.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/ruby",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/xamarin.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/xamarin",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/xcode.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/xcode",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/user-guide/plan-track-work.md",
@@ -12419,7 +12454,7 @@
     {
       "source_path": "docs/pipelines/process/checks.md",
       "redirect_url": "/azure/devops/pipelines/process/approvals",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/build/content-trust.md",
@@ -12429,12 +12464,12 @@
     {
       "source_path": "docs/integrate/get-started/authentication/pats.md",
       "redirect_url": "/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/get-started/overview.md",
       "redirect_url": "/azure/devops/pipelines/get-started/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/test-plans/index.md",
@@ -12639,7 +12674,7 @@
     {
       "source_path": "docs/notifications/howto-manage-personal-notifications.md",
       "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/notifications/howto-manage-team-notifications.md",
@@ -12659,22 +12694,22 @@
     {
       "source_path": "docs/notifications/howto-use-subscription-logging.md",
       "redirect_url": "/azure/devops/notifications/use-subscription-logging",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/notifications/howto-view-organization-notification-statistics.md",
       "redirect_url": "/azure/devops/notifications/view-organization-notification-statistics",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/notifications/howto-integrate-third-party-services.md",
       "redirect_url": "/azure/devops/notifications/integrate-third-party-services",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/notifications/howto-exclude-self-from-email.md",
       "redirect_url": "/azure/devops/notifications/exclude-self-from-email",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/user-guide/index.yml",
@@ -12704,7 +12739,7 @@
     {
       "source_path": "docs/pipelines/caching/index.md",
       "redirect_url": "/azure/devops/pipelines/release/caching",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/index-all.md",
@@ -13004,22 +13039,22 @@
     {
       "source_path": "docs/pipelines/agents/vmss.md",
       "redirect_url": "/azure/devops/pipelines/agents/scale-set-agents",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/sharepoint-dashboards/configure-or-add-a-project-portal.md",
       "redirect_url": "/azure/devops/project/configure-or-add-a-project-portal",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/sharepoint-dashboards/configure-or-redirect-process-guidance.md",
       "redirect_url": "/azure/devops/project/configure-or-redirect-process-guidance",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/excel/create-status-and-trend-excel-reports.md",
       "redirect_url": "/azure/devops/report/create-status-and-trend-excel-reports",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/java/android-studio-faq.md",
@@ -13674,12 +13709,12 @@
     {
       "source_path": "docs/extend/reference/client/api/_data/disclaimer.md",
       "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/_data/disclaimer",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/extend/reference/client/api/_data/style-overrides.md",
       "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/_data/style-overrides",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/AgentPoolQueue.md",
@@ -16953,7 +16988,7 @@
     },
     {
       "source_path": "docs/test/mtm/copying-and-cloning-test-suites-and-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
+      "redirect_url": "/azure/devops/test/copy-clone-test-items",
       "redirect_document_id": false
     },
     {
@@ -16988,7 +17023,7 @@
     },
     {
       "source_path": "docs/test/mtm/share-steps-between-test-cases.md",
-      "redirect_url": "/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases",
+      "redirect_url": "/azure/devops/test/share-steps-between-test-cases",
       "redirect_document_id": false
     },
     {
@@ -17019,7 +17054,7 @@
     {
       "source_path": "docs/pipelines/release/deploy-mulitple-branches.md",
       "redirect_url": "/azure/devops/pipelines/release/deploy-multiple-branches",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/assign-access-levels-and-extensions-by-group-membership.md",
@@ -18043,12 +18078,12 @@
     {
       "source_path": "docs/marketplace/extension-statistics-powerbi-contentpack.md",
       "redirect_url": "https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/extend/extension-statistics-powerbi-contentpack.md",
       "redirect_url": "/azure/devops/marketplace-extensibility/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/billing/buy-more-build-vs.md",
@@ -18123,7 +18158,7 @@
     {
       "source_path": "docs/misc/migration.md",
       "redirect_url": "/azure/devops/migrate/migration",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/project/search/administration.md",
@@ -18153,7 +18188,7 @@
     {
       "source_path": "docs/project/search/work-item-search.md",
       "redirect_url": "/azure/devops/project/search/get-started-search",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/security/set-git-tfvc-repository-permissions.md",
@@ -18204,6 +18239,67 @@
       "source_path": "docs/boards/backlogs/office/rollup-estimated-and-actual-work-using-project.md",
       "redirect_url": "/previous-versions/azure/devops/boards/backlogs/office/rollup-estimated-and-actual-work-using-project",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/targets/webapp-linux.md",
+      "redirect_url": "/azure/devops/pipelines/targets/webapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/get-started/index.md",
+      "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/azure/build-azure-vm-template.md",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/azure/deploy-arm-template",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/new-test-plans-page.md",
+      "redirect_url": "/azure/devops/test/navigate-test-plans",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/preview/new-test-plan-page.md",
+      "redirect_url": "/azure/devops/test/navigate-test-plans",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/overview-2013.md",
+      "redirect_url": "/azure/devops/repos//get-started/what-is-repos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/get-started-vs2013.md",
+      "redirect_url": "/azure/devops/repos/git/gitquickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/gitquickstart-vs2015.md",
+      "redirect_url": "/azure/devops/repos/git/gitquickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/repo-rename-tfs2015.md",
+      "redirect_url": "/azure/devops/repos/git/repo-rename",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/share-your-code-in-git-vs-2013.md",
+      "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/multiple-merge-bases.md",
+      "redirect_url": "/azure/devops/repos/git/merging-with-squash#multiple-merge-bases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/share-your-code-in-git-vs-2017.md",
+      "redirect_url": "/azure/devops/repos/git/share-your-code-in-git-vs",
+      "redirect_document_id": false
     }
   ]
 }
+
