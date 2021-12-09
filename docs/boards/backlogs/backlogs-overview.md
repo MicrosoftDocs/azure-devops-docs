@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 11/17/2021
+ms.date: 12/03/2021
 ---
 
 
@@ -287,7 +287,7 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 
 ::: moniker-end 
 
-You can reparent items from these views, both those items that you own and those items owned by other teams. 
+From these views, you can re-parent items, both those that you own and those owned by other teams. 
 However, you can't reorder items that another team owns.  
 
 This organization enables management teams to focus on high-level features and epics, and development teams 
