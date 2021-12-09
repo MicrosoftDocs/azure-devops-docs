@@ -104,12 +104,12 @@ Capture screen recordings from your apps:
 
 1. Choose the entire screen, or choose an app to start recording.
 
-::: moniker range=">=azure-devops-2020"
+   ::: moniker range=">=azure-devops-2020"
    ![Select the screen or app to share](media/collect-diagnostic-data/choose-test-feedback-share.png)
-::: moniker-end
-::: moniker range="<=azure-devops-2019"
+   ::: moniker-end
+   ::: moniker range="<=azure-devops-2019"
    ![Choosing the screen or app to record](media/collect-diagnostic-data/collect-diagnostic-data-12.png) 
-::: moniker-end
+   ::: moniker-end
 
    If you create a bug while recording your screen, the 
    recording automatically stops and is added to the bug. 
