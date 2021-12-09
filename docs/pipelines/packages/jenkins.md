@@ -64,17 +64,26 @@ We will be using a C# class library sample project for this article.
 - A NuGet package *FabrikamLibrary.1.0.0.nupkg* will be generated in the same directory as your *.csproj* file.
 
 
-## Set up a feed in Azure Artifacts and add it to your project
-* [Create a feed](../../artifacts/index.yml) in your Azure DevOps organization called *MyGreatFeed*. Since you're the owner of the feed, you will automatically be able to push packages to it.
-* Add the URL for the feed you just generated to the nuget.config in the root of your repo.
-  * Find the `<packageSources>` section of nuget.config.
-  * Just before `</packageSources>`, add a line using this template: `<add key="MyGreatFeed" value="{feed_url}" />`. Change `{feed_url}` to the URL of your feed.
-  * Commit this change to your repo.
+## Connect to feed
 
-![Add your feed URL to nuget.config](media/nugetconfig.png)
-* [Generate a PAT (personal access token)](/azure/devops/release-notes/index) for your user account. This PAT will allow the Jenkins job to authenticate to Azure Artifacts as you, so be sure to protect your PAT like a password.
-* Save your feed URL and PAT to a text file for use later in the walkthrough.
+1. From within your project, select **Artifacts**, and then select your feed. You can [create a new feed](../../artifacts/get-started-nuget.md#create-a-feed) if you don't have one already. 
 
+1. Select **Connect to feed**.
+
+    :::image type="content" source="../../artifacts/media/connect-to-feed-azure-devops-newnav.png" alt-text="Connect to your feed":::
+
+1. Select **NuGet.exe** under the **NuGet** header.
+
+    :::image type="content" source="../../artifacts/media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
+
+1. If this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** button and follow the instructions to install the prerequisites.
+
+    1. Download the [latest NuGet version](https://www.nuget.org/downloads).
+    1. Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
+
+1. Follow the instructions in the **Project setup** to connect to your feed. 
+
+    :::image type="content" source="../../artifacts/media/project-setup.png" alt-text="Project setup":::
 
 ## Create a build pipeline in Jenkins
 
