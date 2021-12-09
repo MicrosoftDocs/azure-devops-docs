@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> This task is deprecated. We recommend that you use the [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md) task instead. It [scales better, allows parallel uploads, and is faster.](https://docs.microsoft.com/en-us/azure/devops/release-notes/2021/sprint-190-update)
+> This task is deprecated. We recommend that you use the [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md) task instead. The [current version](../../../../release-notes/2021/sprint-190-update.md) of the Pipeline Artifacts task scales better, allows parallel uploads, and is faster.
 
 ::: moniker-end
 
