@@ -29,8 +29,8 @@ The suite will automatically include every test case that is returned by the que
 
 ### Q: Can I copy or clone test plans and test suites?
 
-**A:** Yes. For test plans, use [this API](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1&preserve-view=true).
-For test suites, use [this API](/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1&preserve-view=true).
+**A:** Yes. For test plans, see [Test Plan Clone](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1&preserve-view=true).
+For test suites, see [Test Suite Clone](/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1&preserve-view=true).
 We plan to expose these capabilities through the out-of-box UI in a future release.
 
 ### Q: When I export a test plan, can I just view the data or copy it to a Word document?
@@ -39,11 +39,6 @@ We plan to expose these capabilities through the out-of-box UI in a future relea
 This option displays the data in the report.
 Select all the text, then copy and paste it into a Word document, if you want.
 All the formatting in the report is retained.
-
-### Q: When I export a test plan, can I customize the report?
-
-**A:** You can only customize if you're using an on-premises Azure DevOps Server.
-You can [edit the XSLT file](/previous-versions/dd380763(v=vs.140)#XSLT).
 
 *****
 
@@ -144,7 +139,7 @@ For new projects created after October 2015, Azure DevOps deletes all test resul
 
 **A**: By default, a XAML build pipeline is set up to delete builds older than the 10 most recent builds.
 But related test results aren't automatically deleted when those builds are deleted.
-[Learn more](/previous-versions/visualstudio/visual-studio-2013/ms181716(v=vs.120)).
+For more information, see [Create or edit a build definition](/previous-versions/visualstudio/visual-studio-2013/ms181716(v=vs.120)).
 
 ### Q: Why isn't test data deleted for XAML builds by default?
 
@@ -225,9 +220,9 @@ For more information, see [Add findings to existing bugs with exploratory testin
 
 **A:** Follow this procedure:
 
-1. Navigate to **chrome://flags/#enable-use-zoom-for-dsf** 
-1. Search for 'Use Blink's zoom for device scale factor'
-1. Change it to **Disabled**
+1. Navigate to **chrome://flags/#enable-use-zoom-for-dsf**.
+1. Search for 'Use Blink's zoom for device scale factor'.
+1. Change it to **Disabled**.
 
 *****
 
