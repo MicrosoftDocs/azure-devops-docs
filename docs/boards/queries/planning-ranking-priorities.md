@@ -157,10 +157,10 @@ The following table describes the fields that you can use to plan and prioritize
    :::column-end:::
    :::column span="2":::
    A subjective rating of the bug, issue, task, or test case as it relates to the business. You can specify the following values:  
-   - **1**: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.  
-   - **2**: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.  
-   - **3**: Resolution of the work item is optional based on resources, time, and risk.
- 
+   - **1**: Highest priority, implement feature or fix as soon as possible. Product cannot ship without successful resolution.  
+   - **2**: Medium priority. Product cannot ship without successful resolution, but it does not need to be addressed immediately.  
+   - **3**: Low priority. Implementation or fix is optional based on resources, time, and risk. If product ships without successful resolution, document the issue in release notes as known issues. 
+   - **4**: Lowest priority. Tracks an issue that basically does not affect usage (such as a small typo).  
    Reference name=Microsoft.VSTS.Common.Priority, Data type=Integer
    :::column-end:::
    :::column span="1":::
