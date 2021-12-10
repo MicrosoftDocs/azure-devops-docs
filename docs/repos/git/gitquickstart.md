@@ -31,7 +31,10 @@ If you prefer to create a local repository without cloning, see [Create a new Gi
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
 
-[!INCLUDE [temp](includes/note-new-git-tool2.md)]
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. You can exercise Git features from either interface interchangeably. Below, we provide a side-by-side comparison for cloning a repository.
+
+> [!NOTE]
+> One advantage of connecting to a project through **Team Explorer** is you gain access to the Work Items hub. For an overview of **Team Explorer** features, see [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md).
 
 :::row:::
   :::column span="":::
@@ -119,7 +122,7 @@ click **Connect**.
 	![Click the Clone button](media/get-started/VSClone2.png)  
 
 
-#### [Command Line](#tab/command-line)
+#### [Git Command Line](#tab/command-line)
 
 1. [Download and install Git](http://git-scm.com/download) and the [Git Credential Manager](set-up-credential-managers.md) for your platform.
 
@@ -153,8 +156,6 @@ You make [commits](commits.md) in your local Git repository to save your changes
 
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
-
-[!INCLUDE [temp](includes/note-new-git-tool2.md)]
 
 :::row:::
   :::column span="":::
@@ -296,7 +297,7 @@ You make [commits](commits.md) in your local Git repository to save your changes
 	![Click the Clone button](media/get-started/VSClone2.png)  
 
 
-#### [Command Line](#tab/command-line)
+#### [Git Command Line](#tab/command-line)
 
 1. Create a branch where you make your changes to the code. If you're collaborating with someone using a branch they've created, you can skip to the following `git checkout` step.
 
@@ -338,8 +339,6 @@ Once you've pushed your commits, you can create a [pull request](pull-requests.m
 
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
-
-[!INCLUDE [temp](includes/note-new-git-tool2.md)]
 
 :::row:::
   :::column span="":::
@@ -466,7 +465,7 @@ To share the changes in your topic branch, you'll need to publish it to the serv
 	![Click Publish to push your changes](media/get-started/VSSyncPublish.png)
 
 
-#### [Command Line](#tab/command-line)
+#### [Git Command Line](#tab/command-line)
 
 1. Push your branch so that others can see the changes you've saved.
 
@@ -499,8 +498,6 @@ You can keep your local branches in sync with their remote counterparts by [pull
 
 
 #### [Visual Studio 2019](#tab/visual-studio-2019)
-
-[!INCLUDE [temp](includes/note-new-git-tool2.md)]
 
 :::row:::
   :::column span="":::
@@ -565,7 +562,7 @@ You can keep your local branches in sync with their remote counterparts by [pull
    ![Using Pull to download changes in Git in Visual Studio](media/newVsPull.png)
 
 
-#### [Command Line](#tab/command-line)
+#### [Git Command Line](#tab/command-line)
 
 1. Switch to the branch where you want to download the changes others have made. 
 
