@@ -35,6 +35,7 @@ For an overview of the Git workflow, see [Azure Repos Git tutorial](gitworkflow.
 - To view code, you must be a member of an Azure DevOps project with **Basic** access or higher.
 
   - If you don't have a project, create one or [sign up for free](../../user-guide/sign-up-invite-teammates.md).
+  
   - If you aren't a project member, [get added](../../organizations/accounts/add-organization-users.md).
 
 - To clone or contribute to code, you must be a member of the **Contributors** security group or have the corresponding permissions.
