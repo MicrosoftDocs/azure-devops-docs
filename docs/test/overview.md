@@ -45,15 +45,21 @@ Azure Test Plans uses test-specific work item types to plan and manage tests. Th
 
 ![Test management work item types](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
 
-To support planning, authoring, execution, and analysis of manual and automated tests, Azure Test Plans provides several browser-based hubs&mdash;[**Test plans**](#test-plans), [**Progress report**](#progress-report), [**Parameters**](#parameters), [**Configurations**](#configurations), and [**Runs**](#runs). In addition, it provides the following tools to link tests to requirements, run tests, create bugs, and capture feedback.  
+To support planning, authoring, execution, and analysis of manual and automated tests, Azure Test Plans provides several browser-based hubs&mdash;[**Test plans**](#test-plans), [**Progress report**](#progress-report), [**Parameters**](#parameters), [**Configurations**](#configurations), and [**Runs**](#runs). 
+
+> [!NOTE]  
+> With Azure DevOps Server 2020 and later versions, you can perform automated tests by adding test tasks to pipelines. Defining test plans, test cases, and test suites isn't required when test tasks are used.  
+
+Authoring and running manual tests
+In addition, it provides the following tools to link tests to requirements, run tests, create bugs, and capture feedback.  
 
 - **Kanban board inline test tools**: An Azure Boards feature that supports defining test cases from the user stories, features, or bugs from the Kanban board. Also, you can launch the Test Runner or the Test & Feedback extension to run tests or perform exploratory testing. 
 - **Test Runner**: A browser-based tool that you launch from the **Test plans** hub to run manual tests. Test Runner supports rich data collection while performing tests, such as: image action log, video recording, code coverage, etc. It also allows users to create bugs and mark the status of tests.  
 - **Test & Feedback extension**: A free extension to support exploratory testing that you access from Chrome, Edge, or Firefox browsers. The extension captures interactions with the application being explored through images or video and entering verbal or type-written comments. Information is captured in the Feedback Response work item type to help track response data.
  
 
-### Manual and exploratory testing 
 
+### Manual and exploratory testing 
 
 - **[Planned manual testing](#test-plans)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
 - **[User acceptance testing](#user-acceptance)**. Testing carried out by designated user acceptance testers to verify the value delivered meets customer requirements, while reusing the test artifacts created by engineering teams. 
@@ -63,6 +69,26 @@ To support planning, authoring, execution, and analysis of manual and automated 
 ![Holistic approach to manual testing, types of manual testing and personas involved](media/manual-testing/schematic-01.png)  
 &nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
 
+### Automated testing and Test Analytics 
+
+Automated testing is facilitated by running tests within Azure Pipelines. Test analytics provides near real-time visibility into your test data for builds and releases. It helps improve pipeline efficiency by identifying repetitive, high impact quality issues.
+ 
+Azure Test Plans supports automated testing in the following ways: 
+
+- Mark a test case as  
+- Specify the Build 
+- Integration with Azure Pipelines: Pipelines provides several tasks, including those listed below, that support a comprehensive test reporting and analytics experience. 
+	- Pipeline tasks: 
+		- [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md): Use to publish test results to Azure Pipelines.
+		- [Visual Studio Test task](../pipelines/tasks/test/vstest.md): Use to run unit and functional tests (Selenium, Appium, Coded UI test, and more) using the Visual Studio Test Runner. 
+		- [.NET Core CLI task](../pipelines/tasks/build/dotnet-core-cli.md): Use to build, test, package, or publish a dotnet application. 
+		- For additional tasks, see [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md)
+	- Test failure report
+	- Analytics test data 
+		- Test analytics for builds
+		- Test analytics for releases 
+		- Test failures 
+- 
 
 ### Key benefits
 
@@ -293,7 +319,7 @@ With the [Progress report](progress-report.md) hub, teams can track progress of 
 
 <a id="parameters" />
 
-## Manage shared parameters and the test cases they reference
+## Manage shared parameters across many test cases
 
 Teams use the [Parameters](repeat-test-with-different-data.md) hub, to define and manage parameters shared across test cases. Shared parameters provide support for repeating manual tests several times with different test data. For example, if your users can add different quantities of a product to a shopping cart, then you want to check that a quantity of 200 works just as well as a quantity of 1.  
  
@@ -312,6 +338,9 @@ With the [Configurations](test-different-configurations.md) hub, teams can defin
 ## Review test runs 
 
 The [Runs](insights-exploratory-testing.md) hub displays the results of test runs. This includes all test runs, both manual and automated. 
+
+> [!NOTE]  
+> The **Runs** hub is available with Azure DevOps Server 2020 and later versions. It requires enabling the Analytics service which is used to store and manage test run data. To learn more about the service, see [What is the Analytics service?](../report/powerbi/what-is-analytics.md)
 
 :::image type="content" source="media/overview/recent-test-runs.png" alt-text="Screenshot of Recent test runs":::
 
@@ -484,13 +513,14 @@ tcm run /execute
 
 ## Additional resources
 
-- [Test Planning and Management Guide](https://vsardata.blob.core.windows.net/projects/Test%20Planning%20and%20Management%20Guide.pdf) 
+
 - [Unit testing](/visualstudio/test/developer-testing-scenarios) 
 
 
 <!--- Removed content
 
-
+- [Test Planning and Management Guide](https://vsardata.blob.core.windows.net/projects/Test%20Planning%20and%20Management%20Guide.pdf) 
+- 
 Quality is a vital aspect of software systems, and manual testing 
 and exploratory testing continue to be important techniques for maximizing this.
 In today's software development processes,
