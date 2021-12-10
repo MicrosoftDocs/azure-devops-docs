@@ -135,7 +135,7 @@ You can, for example, prevent inline script execution.
 
 > [!WARNING]
 > In the example below, the steps type "bash", "powershell", "pwsh" and "script" are prevented from executing.
-> For full lockdown of ad-hoc scripts, you would also need to block "Bash", "BatchScript", "PowerShell", "ShellScript".
+> For full lockdown of ad-hoc scripts, you would also need to block "BatchScript" and "ShellScript".
 
 ```yaml
 # template.yml
