@@ -8,5 +8,7 @@ ms.topic: include
 ms.date: 12/09/2021
 ---
 
+Visual Studio 2019 version 16.8 and later versions provides a Git version control experience while maintaining the **Team Explorer** Git user interface. You can exercise Git features from either interface interchangeably. Below, we provide a side-by-side comparison for cloning a repository.
+
 > [!NOTE]
-> If you're using Visual Studio 2019 version 16.8 or later, try the Git version control experience. Learn how Visual Studio Git compares with Team Explorer in this side-by-side comparison.
+> One advantage of connecting to a project through **Team Explorer** is you gain access to the Work Items hub. For an overview of **Team Explorer** features, see [Navigate in Visual Studio Team Explorer](../../../user-guide/work-team-explorer.md).
