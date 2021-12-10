@@ -106,26 +106,9 @@ We will be using a C# class library sample project for this article.
 
     :::image type="content" source="./media/jenkins-add-credentials.png" alt-text="Screenshot showing how to add your credentials.":::
 
-![New Jenkins build job](media/jenkins_new.png)
-* Under Source Code Management, set the build to use **Git** and select your Git repo.
-* Under Build Environment, select the **Use secret text(s) or file(s)** option.
-  * Add a new **Username and password (separated)** binding.
-  * Set the **Username Variable** to "FEEDUSER" and the **Password Variable** to "FEEDPASS". These are the environment variables Jenkins will fill in with your credentials when the build runs.
-  * Choose the **Add** button to create a new username and password credential in Jenkins.
-  * Set the **username** to "token" and the **password** to the PAT you generated earlier. Choose **Add** to save these credentials.
+1. Select **Build** > **Add build step**., and then select **Execute Windows batch command**. Enter your batch command in the command box.
 
-![New credentials in Jenkins](media/jenkins_addcreds.png)
-  
-![Jenkins build environment](media/jenkins_build_environment.png)
-* Under Build (see screenshot below), follow these steps:
-  * Choose **Execute Windows batch command**. In the **Command** box, type `init.cmd`.
-  * Choose **Build a Visual Studio project or solution using MSBuild**. This task should point to msbuild.exe and FabrikamLibrary.sln.
-  * Choose **Execute Windows batch command** again, but this time, use this command: `.tools\VSS.NuGet\nuget pack FabrikamLibrary\FabrikamLibrary.csproj`.
-
-![Jenkins build tasks](media/jenkins_build_steps.png)
-* Save this build pipeline and queue a build.
-* The build's Workspace will now contain a .nupkg just like the one you built locally earlier.
-
+1. Select **Save** and then queue your build.
 
 ## Publish a package using Jenkins
 
