@@ -3,7 +3,7 @@ title: Publish Artifacts with Jenkins
 ms.custom: seodec18
 description: How to publish Artifacts with Jenkins and Azure Pipelines
 ms.assetid: FC3EC349-1F9B-42A7-B523-495F21BC73F6
-ms.date: 12/08//2021
+ms.date: 12/08/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,7 +18,7 @@ With Azure Artifacts, you can leverage a variety of build and deployment automat
 - [Install NuGet CLI](/nuget/tools/nuget-exe-cli-reference).
 - [A personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate your feed.
 - [Azure DevOps Services account](https://azure.microsoft.com/services/devops/).
-- [Azure Artifacts feed](../get-started-nuget.md).
+- [Azure Artifacts feed](../../artifacts/get-started-nuget.md).
 
 ## Jenkins Setup
 
@@ -55,7 +55,7 @@ We will be using a C# class library sample project for this article.
 
 - Run the `nuget spec` command to create a nuspec file.
 
-- Open the newly created *FabrikamLibrary.nuspec* and remove the boilerplate tags *<projectUrl>* and *<iconUrl>*. Add an author inside the *<authors>* tag, and then change the tags from *Tag1 Tag2* to *fabrikam*.
+- Open the newly created *FabrikamLibrary.nuspec* and remove the boilerplate tags *projectUrl* and *iconUrl*. Add an author inside the *authors* tag, and then change the tags from *Tag1 Tag2* to *fabrikam*.
 
 - **Save** your file when you are done. 
 
