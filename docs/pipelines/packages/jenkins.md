@@ -63,18 +63,17 @@ We will be using a C# class library sample project for this article.
 
 - A NuGet package *FabrikamLibrary.1.0.0.nupkg* will be generated in the same directory as your *.csproj* file.
 
-
 ## Connect to feed
 
 1. From within your project, select **Artifacts**, and then select your feed. You can [create a new feed](../../artifacts/get-started-nuget.md#create-a-feed) if you don't have one already. 
 
 1. Select **Connect to feed**.
 
-    :::image type="content" source="../../artifacts/media/connect-to-feed-azure-devops-newnav.png" alt-text="Connect to your feed":::
+    :::image type="content" source="../../artifacts/media/connect-to-feed-azure-devops-newnav.png" alt-text="Screenshot showing how to connect to your feed":::
 
 1. Select **NuGet.exe** under the **NuGet** header.
 
-    :::image type="content" source="../../artifacts/media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
+    :::image type="content" source="../../artifacts/media/nuget-connect-feed.png" alt-text="Screenshot showing the NuGet.exe feed connection":::
 
 1. If this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** button and follow the instructions to install the prerequisites.
 
@@ -83,12 +82,29 @@ We will be using a C# class library sample project for this article.
 
 1. Follow the instructions in the **Project setup** to connect to your feed. 
 
-    :::image type="content" source="../../artifacts/media/project-setup.png" alt-text="Project setup":::
+    :::image type="content" source="../../artifacts/media/project-setup.png" alt-text="Screenshot showing the project setup section":::
 
 ## Create a build pipeline in Jenkins
 
-* Ensure you have the [correct plugins installed in Jenkins](#setup).
-* This will be a Freestyle project. Call it "Fabrikam.Walkthrough".
+1. From your Jenkins dashboard, select **Create a job**.
+
+1. Enter an item name, and then select **Freestyle project**. Select **OK** when you are done.
+ 
+    :::image type="content" source="./media/jenkins-freestyle.png" alt-text="Screenshot showing how to create a freestyle project in Jenkins":::
+
+1. Select **Source Code Management**, and then select **Git**. Enter your Git repository and select the branches to build.
+
+1. Select **Build Environment**, and then select **Use secret text(s) or file(s)**.
+
+1. Select **Add**, and then select **Username and password (separated)**.
+
+1. Set the **Username Variable** to "FEEDUSER" and the **Password Variable** to "FEEDPASS". Select **Add** when you are done.
+
+    :::image type="content" source="./media/jenkins-build-environment.png" alt-text="Screenshot showing how to set up build environment in jenkins.":::
+
+1. Set the *Username* to "token" and the *Password* to the personal access token PAT you generated earlier. Select **Add** to save your credentials.
+
+    :::image type="content" source="./media/jenkins-add-credentials.png" alt-text="Screenshot showing how to add your credentials.":::
 
 ![New Jenkins build job](media/jenkins_new.png)
 * Under Source Code Management, set the build to use **Git** and select your Git repo.
