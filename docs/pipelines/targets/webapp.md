@@ -4,10 +4,10 @@ description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
 ms.topic: conceptual
 ms.assetid:
-ms.custom: seodec18
+ms.custom: seodec18, contperf-fy22q1
 ms.author: jukullam
 author: juliakm
-ms.date: 08/23/2021
+ms.date: 12/10/2021
 monikerRange: '>= tfs-2017'
 ---
 
