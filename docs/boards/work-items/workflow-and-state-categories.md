@@ -26,7 +26,7 @@ Each state belongs to a state category (previously referred to as a metastate). 
 
 Workflow states define how a work item progresses from its creation to closure. The four main states that are defined for the User Story (Agile process) describe a user story's progression. The workflow states are New, Active, Resolved, and Closed. (The Removed state supports removing a work item from appearing on the backlog; to learn more, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove).)
 
-The natural progressions and regressions of the user story, product backlog item, and requirement WITs are as shown. 
+The natural progressions and regressions of the user story, product backlog item, and requirement WITs are as shown.  
  
 [!INCLUDE [temp](../includes/four-process-workflow.md)] 
 
