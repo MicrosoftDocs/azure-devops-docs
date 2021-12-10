@@ -112,12 +112,21 @@ We will be using a C# class library sample project for this article.
 
 ## Publish a package using Jenkins
 
-These are the last walkthrough steps to publish the package to a feed:
-* Edit the build pipeline in Jenkins.
-* After the last build task (which runs `nuget pack`), add a new **Execute a Windows batch command** build task.
-* In the new **Command** box, add these two lines:
-  * The first line puts credentials where NuGet can find them: `.tools\VSS.NuGet\nuget sources update -Name "MyGreatFeed" -UserName "%FEEDUSER%" -Password "%FEEDPASS%"`
-  * The second line pushes your package using the credentials saved above: `.tools\VSS.NuGet\nuget push *.nupkg -Name "MyGreatFeed" -ApiKey VSS`
+- Select your build pipeline, and then select **Configure** to edit your build definition.
 
-![Push package](media/jenkins_push.png)
-* Queue another build. This time, the build machine will authenticate to Azure Artifacts and push the package to the feed you selected.
+- Select **Build**, and then select **Add build step** to add a new task.
+
+- Select **Execute a Windows batch command** and enter the following commands in the command box:
+
+    ```Command
+    .tools\VSS.NuGet\nuget sources update -Name <YOUR_FEED_NAME> -UserName "%FEEDUSER%" -Password "%FEEDPASS%"
+    .tools\VSS.NuGet\nuget push *.nupkg -Name <YOUR_FEED_NAME> -ApiKey key
+    ```
+
+- Select **Save**, and then queue your build. Your NuGet package should be published to your Azure Artifacts feed. 
+
+## Related articles
+
+- [Publish and download pipeline Artifacts](../artifacts/pipeline-artifacts.md)
+- [Release artifacts and artifact sources](../release/artifacts.md)
+- [Restore NuGet packages in Azure Pipelines](./nuget-restore.md)
