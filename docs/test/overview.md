@@ -301,7 +301,7 @@ Teams use the [Parameters](repeat-test-with-different-data.md) hub, to define an
 
 <a id="configurations" />
 
-## Add and manage test configurations and variables
+## Manage test configurations and variables
 
 With the [Configurations](test-different-configurations.md) hub, teams can define, review, and manage test configurations and variables referenced by test plans. Test configurations provide support for testing your applications on different operating systems, web browsers, and versions. As with shared parameters, test configurations can be shared across multiple test plans. 
 
@@ -324,7 +324,7 @@ Azure DevOps cloud-based load testing service is deprecated. However, Azure Load
 To learn more about the deprecation of Azure DevOps load testing and other, alternative services see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/test/load-test/overview).
 
 
-## And and run tests from the Kanban board
+## Add and run tests from the Kanban board
 
 From the Azure Boards Kanban boards, you can add tests from a user story or feature, automatically linking the test case to the user story or feature. You can  view, run, and interact with test cases directly from the Kanban board, and progressively monitor status directly from the card. Learn more at [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json).
 
