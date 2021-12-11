@@ -45,9 +45,19 @@ Integration with 3rd party test services
 
 ## How does Azure Test Plans work? 
 
+ 
+To support planning, authoring, execution, and analysis of manual and automated tests, Azure Test Plans provides several browser-based hubs&mdash;[**Test plans**](#test-plans), [**Progress report**](#progress-report), [**Parameters**](#parameters), [**Configurations**](#configurations), and [**Runs**](#runs). 
+
+Through a combination of browser-based test management tools and DevOps integration capabilities, Azure Test Plans supports the following test objectives: 
+
+
 Azure Test Plans provides a combination of browser-based test management tools and DevOps integration capabilities to support the following test objectives: 
 
-- [**Manual and exploratory testing**](#manual): Planned manual testing lets you organize tests into test plans and test suites. Test suites can be dynamic (requirements-based-suites and query-based-suites) to help you understand the quality of associated requirements under development, or static to help you cover regression tests. Tests can be authored using an Excel-like grid view or other means available. Testers execute tests assigned to them using a runner to test your app(s). The runner can execute in a browser or as a client on your desktop, enabling you to test on any platform or test any app. During execution, rich diagnostic data is collected to help with debugging or reproducing the issue later. Bugs filed during the process automatically include the captured diagnostic data. 
+- [**Manual and exploratory testing**](#manual): Manual and exploratory testing includes the following test activities:  
+	- **[Planned manual testing](#test-plans)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
+	- **[User acceptance testing](#user-acceptance)**. Testing carried out by designated user acceptance testers to verify the value delivered meets customer requirements, while reusing the test artifacts created by engineering teams. 
+	- **[Exploratory testing](#exploratory-testing)**. Testing carried out by development teams, including developers, testers, UX teams, product owners and more, by exploring the software systems without using test plans or test suites. 
+	- **[Stakeholder feedback](#stakeholder-feedback)**. Testing carried out by stakeholders outside the development team, such as users from marketing and sales divisions.  
 
 - [**Automated testing**](#automated): Azure Test Plans is fully integrated with Azure Pipelines to support continuous integration and testing. Test plans and test cases can be associated with build or release pipelines. Pipeline tasks can be added to pipeline definitions to capture and publish test results. Test results can be reviewed via built in progress reports and pipeline test reports.   
 
@@ -56,9 +66,6 @@ Azure Test Plans provides a combination of browser-based test management tools a
 - [**Traceability**](#traceability): Test cases and test suites linked to user stories, features, or requirements supports end-to-end traceability. Tests and defects are automatically linked to the requirements and builds being tested, which also helps tracking the quality of requirements. Users can add and run tests from the Kanban board, or for larger teams, use the Test plans hub to define test plans and test suites. Pipeline results and the Requirements widget provide a means to track testing of requirements.  
 
 - [**Reporting and analysis**](#reporting): Test result tracking and progress monitoring is supported through configurable tracking charts, test-specific widgets that you can add to dashboards, and built-in reports, such as Progress report, pipeline test result reports, and the Analytics service. 
- 
-To support planning, authoring, execution, and analysis of manual and automated tests, Azure Test Plans provides several browser-based hubs&mdash;[**Test plans**](#test-plans), [**Progress report**](#progress-report), [**Parameters**](#parameters), [**Configurations**](#configurations), and [**Runs**](#runs). 
-
 
 ### Key benefits
 
@@ -160,16 +167,12 @@ Access to Azure DevOps web portal features are managed through access levels ass
 
 <a id="manual" /> 
 
+ Tests can be authored using an Excel-like grid view or other means available. Testers execute tests assigned to them using a runner to test your app(s). The runner can execute in a browser or as a client on your desktop, enabling you to test on any platform or test any app. During execution, rich diagnostic data is collected to help with debugging or reproducing the issue later. Bugs filed during the process automatically include the captured diagnostic data. 
+
+
 ## Manual and exploratory testing
 
-Manual and exploratory testing includes the following test activities:  
-
-- **[Planned manual testing](#test-plans)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
-- **[User acceptance testing](#user-acceptance)**. Testing carried out by designated user acceptance testers to verify the value delivered meets customer requirements, while reusing the test artifacts created by engineering teams. 
-- **[Exploratory testing](#exploratory-testing)**. Testing carried out by development teams, including developers, testers, UX teams, product owners and more, by exploring the software systems without using test plans or test suites. 
-- **[Stakeholder feedback](#stakeholder-feedback)**. Testing carried out by stakeholders outside the development team, such as users from marketing and sales divisions.  
-
-To support these activities, Azure Test Plans uses test-specific work item types to plan and author tests. In addition, it provides two test tools to support running tests. 
+To support manual and exploratory testing, Azure Test Plans uses test-specific work item types to plan and author tests. In addition, it provides two test tools to support running tests. The [**Test plans**](#test-plans),  [**Parameters**](#parameters), and [**Configurations**](#configurations) hubs provide the tools to efficiently create and manage test items, their settings, and configuration. Test suites can be dynamic (requirements-based-suites and query-based-suites) to help you understand the quality of associated requirements under development, or static to help you cover regression tests.
 
 ### Test-specific work item types 
 
@@ -179,7 +182,54 @@ The work item types&mdash;**Test Plans**, **Test Suites**, **Test Cases**, **Sha
 
 > [!NOTE]  
 > With Azure DevOps Server 2020 and later versions, you can perform automated tests by adding test tasks to pipelines. Defining test plans, test cases, and test suites isn't required when test tasks are used.  
-> 
+ 
+
+<a id="test-plans" />
+
+### Define and execute tests 
+
+The **Test plans** hub of Azure Test Plans provides the tools you need to define, manage, and run your tests. Test cases, both manual and automated, are organized within test suites which are grouped under test plans.  
+
+:::image type="content" source="media/overview/test-plan-define-execute-chart.png" alt-text="Screenshot of Azure Test Plans, Selected test plans":::
+
+**Define test plans and test suites**
+
+Create and manage test plans and test suites from the **Test plans** hub. 
+Add one or more test suites&mdash;static, requirement-based, or query-based&mdash;to the test plans. Export and share test plans and test suites with your teams.
+To learn how, see [Create test plans and test suites](create-a-test-plan.md) and [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md).
+
+:::image type="content" source="media/overview/test-planning.png" alt-text="Screenshot of Azure Test Plans, Test plans, test suites, Execute tab":::
+
+**Author tests using test cases**  
+
+You define manual test cases by defining the test steps and optionally the test data to reference. Test suites consist of one or more test cases. You can share test cases within test suites. The Grid view for defining test cases supports copy, paste, insert, and delete operations. Quickly assign single or multiple testers to execute tests. View test results and references to a test case across test suites. To learn how, see [Create test cases](create-test-cases.md).
+
+:::image type="content" source="media/overview/test-authoring.png" alt-text="Screenshot of Azure Test Plans, Test plans, test suites, Define tab":::
+
+
+Within each test case, you specify a set of test steps with their expected outcomes. Optionally, you can add [shared steps](share-steps-between-test-cases.md) or [shared parameters](repeat-test-with-different-data.md). For traceability, link test cases to the user stories, features, or bugs that they test. 
+
+:::image type="content" source="media/overview/test-case-form.png" alt-text="Screenshot of test case work item form.":::
+ 
+<a id="parameters" />
+
+### Manage shared parameters across many test cases
+
+Teams use the [Parameters](repeat-test-with-different-data.md) hub, to define and manage parameters shared across test cases. Shared parameters provide support for repeating manual tests several times with different test data. For example, if your users can add different quantities of a product to a shopping cart, then you want to check that a quantity of 200 works just as well as a quantity of 1.  
+ 
+:::image type="content" source="media/overview/parameters.png" alt-text="Screenshot of Azure Test Plans, Parameters hub":::
+
+<a id="configurations" />
+
+### Manage test configurations and variables
+
+With the [Configurations](test-different-configurations.md) hub, teams can define, review, and manage test configurations and variables referenced by test plans. Test configurations provide support for testing your applications on different operating systems, web browsers, and versions. As with shared parameters, test configurations can be shared across multiple test plans. 
+
+:::image type="content" source="media/overview/configurations.png" alt-text="Screenshot of Azure Test Plans, Configurations hub":::
+
+
+
+
 ### Test tools 
  
 With the following tools, developers, testers, and stakeholders can capture rich data as they execute tests and automatically log code defects linked to the tests. Test your application by executing tests across desktop or web apps. 
@@ -188,18 +238,26 @@ With the following tools, developers, testers, and stakeholders can capture rich
 - **Test & Feedback extension**: A free extension to support exploratory testing that you access from Chrome, Edge, or Firefox browsers. The extension captures interactions with the application being explored through images or video and entering verbal or type-written comments. Information is captured in the Feedback Response work item type to help track response data.
 
 
+### Test web and desktop applications
+
+**Test Runner** runs tests for your web and desktop applications. Mark test steps and test outcomes as pass or fail, and collect
+diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all the captured diagnostic data
+to help your developers reproduce the issues. To learn more, see [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
+
+![Testing web applications](media/manual-testing/test-web-app-01.png)
+
+
 <a name="user-acceptance"></a>
 
-### User acceptance testing
+### User acceptance testing 
 
-User acceptance testing (UAT) helps ensure the value requested by customers is being delivered. You can create UAT test plans and suites using Azure Test Plans. Invite multiple testers to execute these tests and monitor UAT progress and results using lightweight charts.
-To learn how, see [User acceptance testing](user-acceptance-testing.md).
+User acceptance testing (UAT) helps ensure teams deliver the the value requested by customers. You can create UAT test plans and suites, invite several testers to execute these tests, and monitor test progress and results using lightweight charts. To learn how, see [User acceptance testing](user-acceptance-testing.md).
 
 ![Assigning testers to run all tests](media/manual-testing/assign-testers-01.png)
 
 <a name="exploratory-testing"></a>
 
-### Exploratory testing for everyone
+### Exploratory testing  
  
 The [Test &amp; Feedback extension](perform-exploratory-tests.md)
 is a simple browser-based extension you can use to test web apps 
@@ -238,18 +296,7 @@ As users perform exploratory testing, you can
 insights across all sessions. Get end-to-end traceability such as a breakdown 
 of the work items created, the work items explored and not explored, session owners,
 and more.
-
-
-### Test web and desktop applications
-
-The **Test Plans** web portal. provides
-test runners to run tests for your web and desktop applications. Mark test steps and test outcomes as pass or fail, and collect
-diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all the captured diagnostic data
-to help your developers reproduce the issues. To learn more, see [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
-
-![Testing web applications](media/manual-testing/test-web-app-01.png)
-
-
+ 
 <a name="stakeholder-feedback"></a>
 
 ### Stakeholder feedback
@@ -291,48 +338,6 @@ Azure Test Plans supports automated testing in the following ways:
 
 
 
-<a id="test-plans" />
-
-## Define, execute, and chart tests and test progress
-
-The **Test plans** hub of Azure Test Plans provides the tools you need to define, manage, and run your tests. Test cases, both manual and automated, are organized within test suites which are grouped under test plans.  
-
-:::image type="content" source="media/overview/test-plan-define-execute-chart.png" alt-text="Screenshot of Azure Test Plans, Selected test plans":::
-
-### Define test plans and test suites
-
-Create and manage test plans and test suites from the **Test plans** hub. 
-Add one or more test suites&mdash;static, requirement-based, or query-based&mdash;to the test plans. Export and share test plans and test suites with your teams.
-To learn how, see [Create test plans and test suites](create-a-test-plan.md) and [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md).
-
-:::image type="content" source="media/overview/test-planning.png" alt-text="Screenshot of Azure Test Plans, Test plans, test suites, Execute tab":::
-
-### Author tests using test cases  
-
-You define manual test cases by defining the test steps and optionally the test data to reference. Test suites consist of one or more test cases. You can share test cases within test suites. The Grid view for defining test cases supports copy, paste, insert, and delete operations. Quickly assign single or multiple testers to execute tests. View test results and references to a test case across test suites. To learn how, see [Create test cases](create-test-cases.md).
-
-:::image type="content" source="media/overview/test-authoring.png" alt-text="Screenshot of Azure Test Plans, Test plans, test suites, Define tab":::
-
-
-Within each test case, you specify a set of test steps with their expected outcomes. Optionally, you can add [shared steps](share-steps-between-test-cases.md) or [shared parameters](repeat-test-with-different-data.md). For traceability, link test cases to the user stories, features, or bugs that they test. 
-
-:::image type="content" source="media/overview/test-case-form.png" alt-text="Screenshot of test case work item form.":::
- 
-<a id="parameters" />
-
-## Manage shared parameters across many test cases
-
-Teams use the [Parameters](repeat-test-with-different-data.md) hub, to define and manage parameters shared across test cases. Shared parameters provide support for repeating manual tests several times with different test data. For example, if your users can add different quantities of a product to a shopping cart, then you want to check that a quantity of 200 works just as well as a quantity of 1.  
- 
-:::image type="content" source="media/overview/parameters.png" alt-text="Screenshot of Azure Test Plans, Parameters hub":::
-
-<a id="configurations" />
-
-## Manage test configurations and variables
-
-With the [Configurations](test-different-configurations.md) hub, teams can define, review, and manage test configurations and variables referenced by test plans. Test configurations provide support for testing your applications on different operating systems, web browsers, and versions. As with shared parameters, test configurations can be shared across multiple test plans. 
-
-:::image type="content" source="media/overview/configurations.png" alt-text="Screenshot of Azure Test Plans, Configurations hub":::
 
 <a id="traceability" /> 
 
@@ -355,12 +360,10 @@ From the Azure Boards Kanban boards, you can add tests from a user story or feat
 
 ## Reporting and analysis 
 
-	- Progress report (Test plan, test suite) 
-	- Built-in Test progress reports 
-	- Test Results Trend (Advanced) widget (pipeline) 
-	- Analytics service, Test 
-
- 
+- Progress report (Test plan, test suite) 
+- Built-in Test progress reports 
+- Test Results Trend (Advanced) widget (pipeline) 
+- Analytics service, Test 
 
 ### Track testing status and results  
 
