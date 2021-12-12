@@ -429,7 +429,6 @@ Once you've pushed your commits, you can create a [pull request](pull-requests.m
     
     2. Select **Push** to share your commit with the remote repository. If this is your first push to the repository, you'll see the following message: `The current branch does not track a remote branch. Push your changes to a new branch on the origin remote and set the upstream branch.` **Push** uploads your changes to a new branch on the remote repository and sets it as the upstream branch.
     
-    
        :::image type="content" source="media/gitquickstart-vs2019/team-explorer/push-to-origin.png" border="true" alt-text="Screenshot of the Push link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart-vs2019/team-explorer/push-to-origin-lrg.png":::
 
     3. Create a pull request so that others can review your changes. Open **Pull Requests** in **Team Explorer** by selecting **Home** and choosing **Pull Requests**.
@@ -573,7 +572,7 @@ You can keep your local branches in sync with their remote counterparts by [pull
 
        :::image type="content" source="media/gitquickstart-vs2019/team-explorer/sync.png" border="true" alt-text="Screenshot of the Sync option in 'Team Explorer' in Visual Studio 2019." lightbox="media/gitquickstart-vs2019/team-explorer/sync-lrg.png":::
 
-    1. You can download the latest changes to your branch using the **Pull** link. There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either because they both do the same thing.
+    2. You can download the latest changes to your branch using the **Pull** link. There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either because they both do the same thing.
 
        :::image type="content" source="media/gitquickstart-vs2019/team-explorer/incoming-commits.png" border="true" alt-text="Screenshot of Pull link in the Synchronization view of Team Explorer in Visual Studio 2019." lightbox="media/gitquickstart-vs2019/team-explorer/incoming-commits-lrg.png":::
 
