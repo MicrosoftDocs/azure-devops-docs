@@ -124,6 +124,7 @@ The following table summarizes the settings you can enable or configure for each
    :::column-end:::
 :::row-end:::
 ::: moniker-end
+::: moniker range=">= tfs-2018"
 :::row:::
    :::column span="2":::
       [**Commit mention linking**](#work-item-linking)
@@ -135,6 +136,7 @@ The following table summarizes the settings you can enable or configure for each
       Automatically create links for work items mentioned in a commit comment. 
    :::column-end:::
 :::row-end:::
+::: moniker-end
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="2":::
@@ -651,6 +653,7 @@ ID    Name                         Is Blocking    Is Enabled    Branch
 ***
 
 
+::: moniker range=">= azure-devops-2020"
 <a id="default-branch-name"></a>
 ## Default branch name
 
@@ -676,8 +679,14 @@ To set a default branch name at the project level:
 1. On the **Settings** tab of the **All Repositories** page, set **Default branch name for new repositories** to **On**, and then enter a default branch name.
 
 :::image type="content" source="media/repository-settings/project-settings-change-default-branch-name.png" alt-text="Screenshot that shows the project-level setting for Default branch name for new repositories.":::
+::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops-2020"
+> [!NOTE]  
+> The **Default branch name for new repositories** setting requires Azure DevOps Server 2020.1 or later version. 
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 <a name="allow-users-to-manage-permissions-for-their-branches"></a>
 ## Branch permission management
 
@@ -712,7 +721,7 @@ The UI changed from tfs-2017/2018 to 2019 to 2020 to the cloud.
 
 <!--- REPOSITORY SETTINGS  --> 
  
-::: moniker range="azure-devops-2019"
+::: moniker range=">=azure-devops-2019"
 <a id="forks"></a>
 <a id="forks-setting"></a>
 ## Enable forks
@@ -767,7 +776,7 @@ In certain situations, users who aren't contributors to a repository can submit 
 :::image type="content" source="media/repository-settings/strict-vote-mode.png" alt-text="Screenshot that shows the Strict Vote Mode repository setting.":::
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops-2020"
 ## Disable Repository setting
 
 Enabling this setting disables access to the repository, including builds and pull requests, but keeps the repository discoverable with a warning.
@@ -778,6 +787,7 @@ Enabling this setting disables access to the repository, including builds and pu
 :::image type="content" source="media/repository-settings/disable-repository.png" alt-text="Screenshot that shows the Disable Repository setting.":::
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2020"
 ## Searchable branches setting
 
 By default, code search in files applies only to the default branch. You can add up to five more branches to search.
@@ -796,6 +806,7 @@ To add branches for code search:
 >[!NOTE]
 >The **Searchable branches** setting requires Azure DevOps Server 2020.1 or later version.
 
+::: moniker-end
 <!--- REPOSITORY POLICIES --> 
 
 ## Cross-repo branch policies
