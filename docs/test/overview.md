@@ -226,9 +226,7 @@ Teams use the [Parameters](repeat-test-with-different-data.md) hub, to define an
 With the [Configurations](test-different-configurations.md) hub, teams can define, review, and manage test configurations and variables referenced by test plans. Test configurations provide support for testing your applications on different operating systems, web browsers, and versions. As with shared parameters, test configurations can be shared across multiple test plans. 
 
 :::image type="content" source="media/overview/configurations.png" alt-text="Screenshot of Azure Test Plans, Configurations hub":::
-
-
-
+ 
 
 ### Test tools 
  
@@ -315,27 +313,19 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 
 <a id="automated" /> 
 
-## Automated testing and Test Analytics 
+## Automated testing 
 
 Automated testing is facilitated by running tests within Azure Pipelines. Test analytics provides near real-time visibility into your test data for builds and releases. It helps improve pipeline efficiency by identifying repetitive, high impact quality issues.
  
 Azure Test Plans supports automated testing in the following ways: 
 
-- Mark a test case as  
-- Specify the Build 
-- Integration with Azure Pipelines: Pipelines provides several tasks, including those listed below, that support a comprehensive test reporting and analytics experience. 
-	- Pipeline tasks: 
-		- [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md): Use to publish test results to Azure Pipelines.
-		- [Visual Studio Test task](../pipelines/tasks/test/vstest.md): Use to run unit and functional tests (Selenium, Appium, Coded UI test, and more) using the Visual Studio Test Runner. 
-		- [.NET Core CLI task](../pipelines/tasks/build/dotnet-core-cli.md): Use to build, test, package, or publish a dotnet application. 
-		- For additional tasks, see [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md)
-	- Test failure report
-	- Analytics test data 
-		- Test analytics for builds
-		- Test analytics for releases 
-		- Test failures 
- 
+- Associate test plans or test cases with build or release pipelines 
+- Specify test-enable tasks within a pipeline definition. Azure Pipelines provides several tasks, including those listed below, that support a comprehensive test reporting and analytics experience. 
+	- [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md): Use to publish test results to Azure Pipelines.
+	- [Visual Studio Test task](../pipelines/tasks/test/vstest.md): Use to run unit and functional tests (Selenium, Appium, Coded UI test, and more) using the Visual Studio Test Runner. 
+	- [.NET Core CLI task](../pipelines/tasks/build/dotnet-core-cli.md): Use to build, test, package, or publish a dotnet application.  
 
+	For additional tasks, see [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md)
 
 
 
@@ -365,7 +355,7 @@ From the Azure Boards Kanban boards, you can add tests from a user story or feat
 - Test Results Trend (Advanced) widget (pipeline) 
 - Analytics service, Test 
 
-### Track testing status and results  
+### Configurable test charts  
 
 Quickly configure lightweight charts to track your manual test results
 using the chart types of your choice, and pin the charts to your dashboard to
@@ -375,11 +365,9 @@ See more at [Track test status](track-test-status.md).
 
 ![Test status tracking](media/manual-testing/track-test-status-01.png)
 
-
-
 <a id="progress-report" />
 
-### View progress reports 
+### Progress reports 
 
 With the [Progress report](progress-report.md) hub, teams can track progress of more than one test plan or test suite. It helps answer the following questions:
 
@@ -394,7 +382,7 @@ With the [Progress report](progress-report.md) hub, teams can track progress of 
 
 <a id="runs" />
 
-### Review test runs 
+### Test runs 
 
 The [Runs](insights-exploratory-testing.md) hub displays the results of test runs. This includes all test runs, both manual and automated. 
 
@@ -405,6 +393,67 @@ The [Runs](insights-exploratory-testing.md) hub displays the results of test run
 
 :::image type="content" source="media/overview/example-run-summary.png" alt-text="Screenshot of selected Test Runs summary":::
 
+	- Test failure report
+	- Analytics test data 
+		- Test analytics for builds
+		- Test analytics for releases 
+		- Test failures 
+ 
+
+### Configurable test widgets
+ 
+You can add several configurable test widgets to your dashboards to show status, progress, or trends of your testing efforts. Two main widgets are the 
+
+::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="1":::
+      ### Chart for test plans  
+      ![Chart for test plans](media/widget-chart-test-plans.png) 
+   :::column-end:::
+   :::column span="1":::
+      <br/>
+      <a id="chart-test-plan-widget"></a> 
+      Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots.    
+      
+      To learn more, see [Track your test results](../../test/track-test-status.md).
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="1":::
+      ### Test results trend 
+      ![Test results trend widget](media/widget-test-results-trend.png) 
+   :::column-end:::
+   :::column span="1":::
+      <br/>
+      <a id="test-trend-results"></a> <a id="test-results-widget"></a>
+      Adds a configurable tile that displays the trend of test results for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time, thereby surfacing patterns about test failures, test duration etc.    
+      
+      From the configuration dialog, select the build or release whose test results you'd like to monitor. There are multiple chart options to choose from (Line, Column & Stacked Column) based on your preference. Optionally you can map the trend of test duration on the existing chart by adding a secondary line chart.    
+      
+      To get deeper insights and higher configurability view [Test Analytics](../pipelines/test/test-analytics.md)
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="1":::
+      ### Test Results Trend (Advanced)
+   :::column span="1":::
+      > [!div class="mx-imgBorder"]  
+      > ![Test results trend widget, Advanced version based on Analytics service.](../report/dashboards/media/widget-test-results-trend-advanced.png) 
+   :::column-end:::
+   :::column span="1":::
+      <br/>
+      <a id="test-trend-results-advanced"></a>
+      The Test Results Trend (Advanced) widget provides near real-time visibility into test data for multiple builds and releases. The widget shows a trend of your test results for selected pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.  
+      The widget supports tracking advanced metrics for one or more build pipelines or release pipelines. The widget also allows filtering of test results by outcome, stacking metrics, and more.     
+      
+      To learn more, see [Configure the Test Results Trend (Advanced) widget](../report/dashboards/configure-test-results-trend.md).
+   :::column-end:::
+:::row-end:::
+::: moniker-end
 
 
 
