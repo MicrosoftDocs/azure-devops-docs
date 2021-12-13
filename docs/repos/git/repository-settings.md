@@ -708,16 +708,36 @@ To enable or disable this setting for individual repositories:
 
 ::: moniker-end
 
-## Gravatar images  
+## Gravatar images
 
 This setting enables or disables the use of [Gravatar images](https://go.microsoft.com/fwlink/?LinkId=313945) for users outside your enterprise.
 
-- In Azure DevOps Server, **Gravatar images** is an organization-level setting.
-- For Azure DevOps 2020 RTW, **Gravatar images** is a project-level setting for **All repositories**.
-- For Azure DevOps 2019 RTM, **Gravatar images** is a project-level setting for **All repositories**.
-- For TFS 2017/2018, **Gravatar images** is an individual repository setting.
+::: moniker range="azure-devops"
+**Gravatar images** is an organization-level setting.
 
-The UI changed from tfs-2017/2018 to 2019 to 2020 to the cloud.
+1. On your Azure DevOps organization page, select **Organization settings** at lower left, and then select **Repositories** in the left navigation.
+1. On the **All Repositories** page, set **Gravatar images** to **On** or **Off**.
+
+:::image type="content" source="media/repository-settings/organization-settings-gravatar.png" alt-text="Screenshot that shows the organization-level setting for Gravatar images.":::
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
+**Gravatar images** is a project-level setting for **All Repositories**.
+
+1. On your Azure DevOps project page, select **Project settings** at lower left, and then select **Repositories** in the left navigation.
+1. On the **Settings** tab of the **All Repositories** page, set **Gravatar images** to **On** or **Off**.
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+**Gravatar images** is a project-level setting for **All Repositories**.
+
+1. On your Azure DevOps project page, select **Project settings** at lower left, and then select **Repositories** in the left navigation.
+1. On the **Settings** tab of the **All Repositories** page, set **Gravatar images** to **On** or **Off**.
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+**Gravatar images** is an individual repository setting.
+::: moniker-end
 
 <!--- REPOSITORY SETTINGS  --> 
  
