@@ -2,7 +2,7 @@
 title: Pipeline default branch
 description: Configure a pipeline's default branch
 ms.topic: conceptual
-ms.author: silviuandrica
+ms.author: sandrica
 author: silviuandrica
 ms.date: 12/13/2021
 ---
