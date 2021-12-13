@@ -699,6 +699,17 @@ To enable or disable this setting for individual repositories:
 
 ::: moniker-end
 
+## Gravatar images  
+
+This setting enables or disables the use of [Gravatar images](https://go.microsoft.com/fwlink/?LinkId=313945) for users outside your enterprise.
+
+- In Azure DevOps Server, **Gravatar images** is an organization-level setting.
+- For Azure DevOps 2020 RTW, **Gravatar images** is a project-level setting for **All repositories**.
+- For Azure DevOps 2019 RTM, **Gravatar images** is a project-level setting for **All repositories**.
+- For TFS 2017/2018, **Gravatar images** is an individual repository setting.
+
+The UI changed from tfs-2017/2018 to 2019 to 2020 to the cloud.
+
 <!--- REPOSITORY SETTINGS  --> 
  
 ::: moniker range="azure-devops-2019"
@@ -713,6 +724,7 @@ This repository setting controls whether users can create new server-side [forks
 1. On the **Settings** tab of the **\<Repository name>** page, set **Forks** to **On** or **Off**. 
 
 :::image type="content" source="media/repository-settings/forks.png" alt-text="Screenshot that shows the Forks repository setting.":::
+::: moniker-end
 
 <a id="work-item-linking"></a>
 ## Work item linking settings
