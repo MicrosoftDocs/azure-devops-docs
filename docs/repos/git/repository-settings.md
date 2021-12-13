@@ -196,7 +196,7 @@ The following table summarizes the settings you can enable or configure for each
        On  
    :::column-end:::
    :::column span="3"::: 
-      Disable access to to the repository, including builds and pull requests, but keep the repository discoverable with a warning.
+      Disable access to the repository, including builds and pull requests, but keep the repository discoverable with a warning.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -427,7 +427,7 @@ You can configure *settings* for all repositories across an organization or proj
 
 ::: moniker range="> azure-devops-2019"
 
-To configure respository settings and policies through the web portal, open **Project settings**> **Repositories** from your web browser.
+To configure repository settings and policies through the web portal, open **Project settings**> **Repositories** from your web browser.
 
 1. To view or modify settings or policies for all Git repositories, open the **All Repositories** page and choose **Settings** or **Policies**.
 
@@ -721,7 +721,7 @@ This setting enables or disables the use of [Gravatar images](https://go.microso
 :::image type="content" source="media/repository-settings/organization-settings-gravatar.png" alt-text="Screenshot that shows the organization-level setting for Gravatar images.":::
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="azure-devops-2020"
 **Gravatar images** is a project-level setting for **All Repositories**.
 
 1. On your Azure DevOps project page, select **Project settings** at lower left, and then select **Repositories** in the left navigation.
@@ -796,7 +796,7 @@ In certain situations, users who aren't contributors to a repository can submit 
 :::image type="content" source="media/repository-settings/strict-vote-mode.png" alt-text="Screenshot that shows the Strict Vote Mode repository setting.":::
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range="azure-devops"
 ## Disable Repository setting
 
 Enabling this setting disables access to the repository, including builds and pull requests, but keeps the repository discoverable with a warning.
