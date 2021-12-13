@@ -24,10 +24,10 @@ With Azure Artifacts, you can leverage a variety of build and deployment automat
 
 This walkthrough uses the latest Jenkins running on Windows 10. Ensure the following Jenkins plugins are enabled:
 
-* [MSBuild](https://plugins.jenkins.io/msbuild/)
-* [Git](https://plugins.jenkins.io/git/)
-* [Git Client](https://plugins.jenkins.io/git-client/)
-* [Credentials Binding plugin](https://plugins.jenkins.io/credentials-binding/)
+- [MSBuild](https://plugins.jenkins.io/msbuild/)
+- [Git](https://plugins.jenkins.io/git/)
+- [Git Client](https://plugins.jenkins.io/git-client/)
+- [Credentials Binding plugin](https://plugins.jenkins.io/credentials-binding/)
 
 Some of these plugins are enabled by default, others you will need to install by using the Jenkins's "Manage Plugins" feature.
 
@@ -35,33 +35,33 @@ Some of these plugins are enabled by default, others you will need to install by
 
 We will be using a C# class library sample project for this article. 
 
-- In Visual Studio, create a new project, and then select the C# **Class Library** template.
+1. In Visual Studio, create a new project, and then select the C# **Class Library** template.
 
-- Name your solution *FabrikamLibrary*.
+1. Name your solution *FabrikamLibrary*.
 
-- Open your solution and then right click on the project and select **Properties**.
+1. Open your solution and then right click on the project and select **Properties**.
 
-- Select **Package** and then fill out the *description*, *product*, and *company* fields.
+1. Select **Package** and then fill out the *description*, *product*, and *company* fields.
 
-- Select **Save** when you are done.
+1. Select **Save** when you are done.
 
-- Check the new solution into a Git repository where your Jenkins server can access it later.
+1. Check the new solution into a Git repository where your Jenkins server can access it later.
 
 :::image type="content" source="media/jenkins-package.png" alt-text="Screenshot showing how to configure the package properties for a class library project.":::
 
 ## Create a NuGet package
 
-- Open a new command prompt window navigate to your project directory.
+1. Open a new command prompt window navigate to your project directory.
 
-- Run the `nuget spec` command to create a nuspec file.
+1. Run the `nuget spec` command to create a nuspec file.
 
-- Open the newly created *FabrikamLibrary.nuspec* and remove the boilerplate tags *projectUrl* and *iconUrl*. Add an author inside the *authors* tag, and then change the tags from *Tag1 Tag2* to *fabrikam*.
+1. Open the newly created *FabrikamLibrary.nuspec* and remove the boilerplate tags *projectUrl* and *iconUrl*. Add an author inside the *authors* tag, and then change the tags from *Tag1 Tag2* to *fabrikam*.
 
-- **Save** your file when you are done. 
+1. **Save** your file when you are done. 
 
-- Run the following command to create a NuGet package: `nuget pack FabrikamLibrary.csproj`.
+1. Run the following command to create a NuGet package: `nuget pack FabrikamLibrary.csproj`.
 
-- A NuGet package *FabrikamLibrary.1.0.0.nupkg* will be generated in the same directory as your *.csproj* file.
+1. A NuGet package *FabrikamLibrary.1.0.0.nupkg* will be generated in the same directory as your *.csproj* file.
 
 ## Connect to feed
 
@@ -112,18 +112,18 @@ We will be using a C# class library sample project for this article.
 
 ## Publish a package using Jenkins
 
-- Select your build pipeline, and then select **Configure** to edit your build definition.
+1. Select your build pipeline, and then select **Configure** to edit your build definition.
 
-- Select **Build**, and then select **Add build step** to add a new task.
+1. Select **Build**, and then select **Add build step** to add a new task.
 
-- Select **Execute a Windows batch command** and enter the following commands in the command box:
+1. Select **Execute a Windows batch command** and enter the following commands in the command box:
 
     ```Command
     .tools\VSS.NuGet\nuget sources update -Name <YOUR_FEED_NAME> -UserName "%FEEDUSER%" -Password "%FEEDPASS%"
     .tools\VSS.NuGet\nuget push *.nupkg -Name <YOUR_FEED_NAME> -ApiKey key
     ```
 
-- Select **Save**, and then queue your build. Your NuGet package should be published to your Azure Artifacts feed. 
+1. Select **Save**, and then queue your build. Your NuGet package should be published to your Azure Artifacts feed. 
 
 ## Related articles
 
