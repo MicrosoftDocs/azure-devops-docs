@@ -15,9 +15,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-inc-vs-all](includes/version-inc-vs-all.md)]
 
 <a name="testplans"></a>
-## Creating manual test plans
+## Create manual test plans
 
-[Go to related article &gt;](create-a-test-plan.md)
+For detailed procedures, see [Create test plans and test suites](create-a-test-plan.md).
 
 <a name="query-based-suites"></a>
 ### Q: What are query-based test suites?
@@ -29,9 +29,12 @@ The suite will automatically include every test case that is returned by the que
 
 ### Q: Can I copy or clone test plans and test suites?
 
-**A:** Yes. For test plans, see [Test Plan Clone](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1&preserve-view=true).
-For test suites, see [Test Suite Clone](/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1&preserve-view=true).
-We plan to expose these capabilities through the out-of-box UI in a future release.
+**A:** Yes. See [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md). For Azure DevOps Server 2020 and later versions, you can clone test plans and import and export test suites from the web portal. Or, for all versions, you can use the TCM command line tool. To learn how, see [Test Plan Clone](/rest/api/azure/devops/testplan/test-plan-clone/clone-test-plan?view=azure-devops-rest-5.1&preserve-view=true).
+
+Other options include using the REST APIs:
+
+- For test plans, see [Test Plan Clone - Clone Test Plan](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-6.0&preserve-view=true).
+- For test suites, see [Test Suite Clone](/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-6.0&preserve-view=true).
 
 ### Q: When I export a test plan, can I just view the data or copy it to a Word document?
 
@@ -43,9 +46,13 @@ All the formatting in the report is retained.
 *****
 
 <a name="testcases"></a>
-## Creating manual test cases
+## Create manual test cases
 
-[Go to related article &gt;](create-test-cases.md)
+For detailed procedures, see [Create manual test cases](create-test-cases.md).
+
+### Q: Can I copy test cases from one project to another?
+
+**A:** Yes. See [Copy test cases](copy-clone-test-items.md#copy-test-cases), Copy test cases. For Azure DevOps Server 2020 and later versions, you can copy test cases from within a project or another project to a test suite, or you can use the [Grid view to copy and paste test cases](copy-clone-test-items.md#copy-paste) from one suite to another. Optionally, you can [bulk import and export test cases](copy-clone-test-items.md#bulk-import-export).
 
 ### Q: Can I add an extra line to a test step?
 
@@ -60,6 +67,15 @@ Press **Alt**+**P** to insert a new test step above the selected step.
 
 ### Q: How can I find out if a test case was added to other test suites?
 
+::: moniker range=">=azure-devops-2020"
+**A:** Select a test case in the **Define** tab. Right-click or select **More options** to open the context menu, and then select **View linked items**.
+
+![Screenshot shows the Linked Items dialog box with Test Suites selected.](media/create-test-cases/view-linked-items.png)
+
+In the **Linked Items** dialog box, select **Test Suites** to see the test suites linked to the test case. Double-click a test suite to open it.
+::: moniker-end
+
+::: moniker range="<=azure-devops-2019"
 **A:** Select a test case, then view the test suites details.
 The Associated test suites pane shows you any test suite for any test plan that contains this test case.
 This view includes all projects.
@@ -67,7 +83,9 @@ This view includes all projects.
 Select the associated test suite to view it.
 To view the project and the test plan for that test suite, move your pointer over the test suite.
 
-![On Tests Plans page, select details pane. Select test suites in the test details pane](media/create-test-cases/TestSuites.png) 
+![On Tests Plans page, select details pane. Select test suites in the test details pane.](media/create-test-cases/TestSuites.png)
+
+::: moniker-end
 
 ### Q: What happens when I delete a test case from a requirement-based test suite?
 
@@ -88,9 +106,9 @@ Without signing out of Azure DevOps, select **View Tests** again to see the corr
 <a name="qanda"></a>
 
 <a name="trackstatus"></a>
-## Tracking test status
+## Track test status
 
-[Go to related article &gt;](track-test-status.md)
+For detailed procedures, see [Track test status](track-test-status.md).
 
 ### Q: How is data shown in the charts for test cases that are in multiple test suites?
 
@@ -112,9 +130,9 @@ For test result charts, each instance of a test that is run is counted for each 
 *****
 
 <a name="repeatdifferent"></a>
-## Repeating a test with different data
+## Repeate a test with different data
 
-[Go to related article &gt;](repeat-test-with-different-data.md)
+For detailed procedures, see [Repeat a test with different data](repeat-test-with-different-data.md).
 
 ### Q: Are parameters the best way to specify that the test should be run on different operating system platforms? And with different browsers, databases, and so on?
 
@@ -125,9 +143,9 @@ For more information, see [Test different configurations](test-different-configu
 *****
 
 <a name="manageresults"></a>
-## Managing test results
+## Manage test results
 
-[Go to related article &gt;](how-long-to-keep-test-results.md)
+For detailed procedures, see [Set test retention policies](how-long-to-keep-test-results.md).
 
 ### Q: What are the default retention limits?
 
@@ -150,9 +168,7 @@ Test results are often deleted before you can analyze them.
 
 ### Q: How do I keep a build indefinitely?
 
-**A**: Select **Retain indefinitely**.
-
-![Keep a build indefinitely](media/how-long-to-keep-test-results/build-keep-indefinitely.png)
+**A**: See [Set retention policies for builds, releases, and tests](../pipelines/policies/retention.md)
 
 *****
 
@@ -160,42 +176,7 @@ Test results are often deleted before you can analyze them.
 
 ## Test &amp; Feedback extension
 
-[Go to related article &gt;](perform-exploratory-tests.md)
-
-<a name="browser-support"></a>
-
-### Q: Which web browsers does the extension support?
-
-**A:** The Test &amp; Feedback extension is currently available for
-[Google Chrome](https://www.google.com/chrome/),
-[Microsoft Edge (Chromium Only)](https://www.microsoft.com/edge/),
-and [Mozilla Firefox version 50.0 and higher](https://www.mozilla.org/).
-
-Some browser versions do not currently support all the features of the Test &amp; Feedback extension.
-
-| Feature | Chrome | Microsoft Edge | Firefox |
-| --- | --- | --- | --- |
-| Capture screenshots with inline annotations | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Capture notes | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Capture screen recordings | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
-| Capture page load data | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
-| Capture user actions log | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Capture system information | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
-| Create bugs | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Create tasks and test cases | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Create feedback requests | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Export session report for sharing | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| End-to-end traceability for work items | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Simplified bug and task tracking and triaging | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| View and get insights from sessions | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| View similar existing bugs | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-| Test app on devices using cloud providers such as Perfecto | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
-| Manage feedback requests | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
-
-<p />
-For more information, see 
-<a href="https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web" data-raw-source="[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web)">Visual Studio Marketplace</a>, Azure DevOps tab.
-
+For detailed procedures, see [Install the Test & Feedback extension](perform-exploratory-tests.md).
 <a name="recording-playback"></a>
 
 ### Q: How do I play the video recordings I created with the extension?
