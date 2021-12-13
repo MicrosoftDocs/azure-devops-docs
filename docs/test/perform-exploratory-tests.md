@@ -55,7 +55,7 @@ For more information, see <a href="https://marketplace.visualstudio.com/items/ms
 <a name="installext"></a>
 ## Install the extension
 
-1. Check the list of [supported browsers](reference-qa.md#browser-support) and decide which you want to use.
+1. Check the list of [supported browsers](#browser-support) and decide which you want to use.
 
 1. Download and install your chosen browser, if you haven't already, then open it.
 
