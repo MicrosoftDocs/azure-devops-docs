@@ -7,13 +7,12 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ---
 
 # What is Azure Test Plans?  
 
 **Azure Test Plans | Azure DevOps Server 2020**
-
 
 Azure Test Plans provides rich and powerful
 tools everyone in the team can use to drive quality and collaboration
@@ -45,13 +44,7 @@ Integration with 3rd party test services
 
 ## How does Azure Test Plans work? 
 
- 
-To support planning, authoring, execution, and analysis of manual and automated tests, Azure Test Plans provides several browser-based hubs&mdash;[**Test plans**](#test-plans), [**Progress report**](#progress-report), [**Parameters**](#parameters), [**Configurations**](#configurations), and [**Runs**](#runs). 
-
-Through a combination of browser-based test management tools and DevOps integration capabilities, Azure Test Plans supports the following test objectives: 
-
-
-Azure Test Plans provides a combination of browser-based test management tools and DevOps integration capabilities to support the following test objectives: 
+Through a combination of browser-based tools&mdash;[**Test plans**](#test-plans), [**Progress report**](#progress-report), [**Parameters**](#parameters), [**Configurations**](#configurations), [**Runs**](#runs), and [Test Runner](#test-tools)&mdash;and DevOps integration features, Azure Test Plans supports the following test objectives:  
 
 - [**Manual and exploratory testing**](#manual): Manual and exploratory testing includes the following test activities:  
 	- **[Planned manual testing](#test-plans)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
@@ -61,11 +54,14 @@ Azure Test Plans provides a combination of browser-based test management tools a
 
 - [**Automated testing**](#automated): Azure Test Plans is fully integrated with Azure Pipelines to support continuous integration and testing. Test plans and test cases can be associated with build or release pipelines. Pipeline tasks can be added to pipeline definitions to capture and publish test results. Test results can be reviewed via built in progress reports and pipeline test reports.   
 
-- **Load and performance testing**: While Azure DevOps cloud-based load testing service is deprecated, Azure Load Testing Preview is available. Azure Load Testing Preview is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. To learn more, see [What is Azure Load Testing Preview?](/azure/load-testing/overview-what-is-azure-load-testing). To learn more about the deprecation of Azure DevOps load testing and other, alternative services see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/test/load-test/overview).
-
 - [**Traceability**](#traceability): Test cases and test suites linked to user stories, features, or requirements supports end-to-end traceability. Tests and defects are automatically linked to the requirements and builds being tested, which also helps tracking the quality of requirements. Users can add and run tests from the Kanban board, or for larger teams, use the Test plans hub to define test plans and test suites. Pipeline results and the Requirements widget provide a means to track testing of requirements.  
 
 - [**Reporting and analysis**](#reporting): Test result tracking and progress monitoring is supported through configurable tracking charts, test-specific widgets that you can add to dashboards, and built-in reports, such as Progress report, pipeline test result reports, and the Analytics service. 
+
+
+> [!NOTE]   
+> **Load and performance testing**: While Azure DevOps cloud-based load testing service is deprecated, Azure Load Testing Preview is available. Azure Load Testing Preview is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. To learn more, see [What is Azure Load Testing Preview?](/azure/load-testing/overview-what-is-azure-load-testing). For more information about the deprecation of Azure DevOps load testing, see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/test/load-test/overview).
+
 
 ### Key benefits
 
@@ -186,13 +182,13 @@ The work item types&mdash;**Test Plans**, **Test Suites**, **Test Cases**, **Sha
 
 <a id="test-plans" />
 
-### Define and execute tests 
+### Test plans hub, Define and execute tests 
 
 The **Test plans** hub of Azure Test Plans provides the tools you need to define, manage, and run your tests. Test cases, both manual and automated, are organized within test suites which are grouped under test plans.  
 
 :::image type="content" source="media/overview/test-plan-define-execute-chart.png" alt-text="Screenshot of Azure Test Plans, Selected test plans":::
 
-**Define test plans and test suites**
+### Define test plans and test suites 
 
 Create and manage test plans and test suites from the **Test plans** hub. 
 Add one or more test suites&mdash;static, requirement-based, or query-based&mdash;to the test plans. Export and share test plans and test suites with your teams.
@@ -200,7 +196,7 @@ To learn how, see [Create test plans and test suites](create-a-test-plan.md) and
 
 :::image type="content" source="media/overview/test-planning.png" alt-text="Screenshot of Azure Test Plans, Test plans, test suites, Execute tab":::
 
-**Author tests using test cases**  
+### Author tests using test cases 
 
 You define manual test cases by defining the test steps and optionally the test data to reference. Test suites consist of one or more test cases. You can share test cases within test suites. The Grid view for defining test cases supports copy, paste, insert, and delete operations. Quickly assign single or multiple testers to execute tests. View test results and references to a test case across test suites. To learn how, see [Create test cases](create-test-cases.md).
 
@@ -210,10 +206,16 @@ You define manual test cases by defining the test steps and optionally the test 
 Within each test case, you specify a set of test steps with their expected outcomes. Optionally, you can add [shared steps](share-steps-between-test-cases.md) or [shared parameters](repeat-test-with-different-data.md). For traceability, link test cases to the user stories, features, or bugs that they test. 
 
 :::image type="content" source="media/overview/test-case-form.png" alt-text="Screenshot of test case work item form.":::
+
+
+### Execute tests 
  
+
+
+
 <a id="parameters" />
 
-### Manage shared parameters across many test cases
+### Parameters hub: Manage shared parameters  
 
 Teams use the [Parameters](repeat-test-with-different-data.md) hub, to define and manage parameters shared across test cases. Shared parameters provide support for repeating manual tests several times with different test data. For example, if your users can add different quantities of a product to a shopping cart, then you want to check that a quantity of 200 works just as well as a quantity of 1.  
  
@@ -221,19 +223,38 @@ Teams use the [Parameters](repeat-test-with-different-data.md) hub, to define an
 
 <a id="configurations" />
 
-### Manage test configurations and variables
+### Configurations hub: Manage test configurations and variables
 
 With the [Configurations](test-different-configurations.md) hub, teams can define, review, and manage test configurations and variables referenced by test plans. Test configurations provide support for testing your applications on different operating systems, web browsers, and versions. As with shared parameters, test configurations can be shared across multiple test plans. 
 
 :::image type="content" source="media/overview/configurations.png" alt-text="Screenshot of Azure Test Plans, Configurations hub":::
  
+<a id="test-tools" />
 
-### Test tools 
+### Test tools and test execution 
  
 With the following tools, developers, testers, and stakeholders can capture rich data as they execute tests and automatically log code defects linked to the tests. Test your application by executing tests across desktop or web apps. 
 
-- **Test Runner**: A browser-based tool that you launch from the **Test plans** hub to run manual tests. Test Runner supports rich data collection while performing tests, such as: image action log, video recording, code coverage, etc. It also allows users to create bugs and mark the status of tests.  
+- **Test Runner**: A browser-based tool for testing web applications and a desktop client version for testing desktop applications that you launch from the **Test plans** hub to run manual tests. Test Runner supports rich data collection while performing tests, such as image action log, video recording, code coverage, etc. It also allows users to create bugs and mark the status of tests.  
 - **Test & Feedback extension**: A free extension to support exploratory testing that you access from Chrome, Edge, or Firefox browsers. The extension captures interactions with the application being explored through images or video and entering verbal or type-written comments. Information is captured in the Feedback Response work item type to help track response data.
+
+### Test execution capability 
+
+You can perform the following tasks using the indicated tools. 
+
+| Task                                                | Test plans hub | Test Runner | Test & Feedback | 
+|-----------------------------------------------------| ---------------|-------------|----------------|
+| Bulk mark tests                                     |  ✔️            |             |                | 
+| Pass or fail tests or test steps                    |                |      ✔️     |      ✔️       | 
+| Inline changes to tests during execution            |               |       ✔️     |      ✔️        | 
+| Pause and resume tests                              |               |       ✔️     |      ✔️        | 
+| File bugs during test execution                     |               |       ✔️     |      ✔️        | 
+| Capture screenshots, image action log, and screen recording during test execution  |   |     ✔️      |     ✔️      | 
+| Update existing bugs during test execution          |               |       ✔️     |      ✔️        |  
+| Verify bugs                                         |               |       ✔️     |      ✔️        | 
+| Assign a build for the test run                     |  ✔️            |             |                | 
+| Assign test settings                                |  ✔️            |             |                | 
+| Review test runs                                    |  ✔️            |             |                | 
 
 
 ### Test web and desktop applications
@@ -243,7 +264,6 @@ diagnostic data such as system information, image action logs, screen recordings
 to help your developers reproduce the issues. To learn more, see [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
 
 ![Testing web applications](media/manual-testing/test-web-app-01.png)
-
 
 <a name="user-acceptance"></a>
 
@@ -265,35 +285,6 @@ finding issues, and less time filing them.
 
 ![Exploratory testing your web apps](media/manual-testing/exploratory-testing-01.png)
 
-Using the extension is a simple, three step process:
-
-![Schematic showing process steps Capture, Create, Collaborate](media/perform-exploratory-tests/getstarted-05.png)
- 
-* **Capture your findings** quickly and easily using the tools in the extension. 
-  Capture notes, screenshots with annotations, and screen recordings 
-  to describe your findings and highlight issues. Additionally, in 
-  the background the extension automatically captures rich data such
-  as user actions as an image action log, page load data,
-  and system information about the browser, operating system, memory,
-  and more that can serve as a starting point for debugging. 
-
-* **Create work items** such as bugs, tasks, and test cases directly from 
-  the extension. The captured findings automatically become a part of the work item. 
-  Users can file a bug to report an issue with the product, or create a task that
-  indicates a new work requirement. The extension can also be used to 
-  create test cases for scenarios discovered during exploration. 
-
-* **Collaborate with your team** by sharing your findings. 
-  Export your session report in Standalone mode, or connect to Azure DevOps or
-  Team Foundation Server (2015 or later) for a fully integrated experience
-  including exploring user stories and backlog items, simplified tracking and triaging of 
-  bugs and tasks, and managing feedback requests in one place.
-
-As users perform exploratory testing, you can
-[get insights from the sessions](insights-exploratory-testing.md). View completed exploratory sessions and derive meaningful
-insights across all sessions. Get end-to-end traceability such as a breakdown 
-of the work items created, the work items explored and not explored, session owners,
-and more.
  
 <a name="stakeholder-feedback"></a>
 
@@ -326,14 +317,15 @@ Azure Test Plans supports automated testing in the following ways:
 	- [.NET Core CLI task](../pipelines/tasks/build/dotnet-core-cli.md): Use to build, test, package, or publish a dotnet application.  
 
 	For additional tasks, see [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md)
-
-
+ 
 
 <a id="traceability" /> 
 
 ## Traceability 
 
- 
+Azure Test Plans supports the following test-related tools to support traceability:
+
+
 Authoring and running manual tests
 In addition, it provides the following tools to link tests to requirements, run tests, create bugs, and capture feedback.  
 
@@ -393,11 +385,11 @@ The [Runs](insights-exploratory-testing.md) hub displays the results of test run
 
 :::image type="content" source="media/overview/example-run-summary.png" alt-text="Screenshot of selected Test Runs summary":::
 
-	- Test failure report
-	- Analytics test data 
-		- Test analytics for builds
-		- Test analytics for releases 
-		- Test failures 
+- Test failure report
+- Analytics test data 
+	- Test analytics for builds
+	- Test analytics for releases 
+	- Test failures 
  
 
 ### Configurable test widgets
@@ -408,14 +400,14 @@ You can add several configurable test widgets to your dashboards to show status,
 :::row:::
    :::column span="1":::
       ### Chart for test plans  
-      ![Chart for test plans](media/widget-chart-test-plans.png) 
+      ![Chart for test plans](../report/dashboards/media/widget-chart-test-plans.png) 
    :::column-end:::
    :::column span="1":::
       <br/>
       <a id="chart-test-plan-widget"></a> 
       Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots.    
       
-      To learn more, see [Track your test results](../../test/track-test-status.md).
+      To learn more, see [Track your test results](track-test-status.md).
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -423,7 +415,7 @@ You can add several configurable test widgets to your dashboards to show status,
 :::row:::
    :::column span="1":::
       ### Test results trend 
-      ![Test results trend widget](media/widget-test-results-trend.png) 
+      ![Test results trend widget](../report/dashboards/media/widget-test-results-trend.png) 
    :::column-end:::
    :::column span="1":::
       <br/>
