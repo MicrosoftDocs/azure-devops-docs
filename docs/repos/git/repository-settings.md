@@ -5,7 +5,7 @@ description: Learn about settings you can set for a Git repository
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 12/06/2021
+ms.date: 12/13/2021
 monikerRange: '>= tfs-2017' 
 ---
 
@@ -15,21 +15,394 @@ monikerRange: '>= tfs-2017'
 
 There are several ways to customize your Azure Repos Git repositories by using branch and repository settings and policies. This article discusses repository-level settings and policies.
 
-- User-specific *permissions* control user settings.
+- Repository settings and policies that configure global options for all Git repositories for a project or organization, or for individual repositories.
 
-  These permissions control who can read, write, contribute to pull requests, and take other specific actions. For more information, see [Set permissions for a repository](set-git-repository-permissions.md#git-repository).
+  This article discusses server-side repository settings and policies. To learn about client-side Git preferences, see [Git preferences and settings in Visual Studio](git-config.md).
 
-- *Branch policies* cover branch-specific controls.
+- Branch policies that cover branch-specific controls.
 
   Branch policies include options like requiring a pull request, a successful build, or a code review before changes can merge into a branch. For more information, see [Branch policies and settings](branch-policies.md).
 
-- *Repository settings and policies* configure global options for entire repositories.
+- Repository and branch security permissions assignments.
 
-  This article discusses server-side repository settings and policies. To learn about client-side Git preferences, see [Git preferences and settings in Visual Studio](git-config.md).
+  These permissions control who can read, write, contribute to pull requests, and take other specific actions. For more information, see [Set permissions for a repository](set-git-repository-permissions.md#git-repository).
 
 [!INCLUDE [note-tfs-2018.2-update](includes/note-tfs-2018.2-update.md)]  
 
 <a id="all-repositories-settings-and-policies"></a>
+## Summary of all repository and branch settings and policies
+
+You can configure settings and policies for all repositories in a project, for individual repositories, and for branches of repositories. In the browser, you configure all these settings and policies through **Project settings** > **Repositories**. With Azure CLI, you use [az repos policy](/cli/azure/repos/policy).
+
+::: moniker range="< azure-devops-2020"
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+::: moniker-end
+
+The following tables summarize the settings and policies you can enable and configure for Git repositories and branches.
+
+### All Repositories Settings
+
+The following table summarizes the settings you can enable and configure for all new Git repositories in a project or in an organization.
+
+:::row:::
+   :::column span="2":::
+      **Setting**
+   :::column-end:::
+   :::column span="1"::: 
+      **Default**
+   :::column-end:::
+   :::column span="3"::: 
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      [Default branch name for new repositories](#default-branch-name)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Initialize new repositories with the default branch name you specify. You can change the default branch for a particular repository anytime. If you don't enable this feature, repositories initialize with a default branch named `main`.
+   :::column-end:::
+:::row-end:::
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="2":::
+      [Allow users to manage permissions for their created branches](#allow-users-to-manage-permissions-for-their-branches)
+   :::column-end:::
+   :::column span="1"::: 
+       On  
+   :::column-end:::
+   :::column span="3"::: 
+      Let users manage permissions for their created branches in all new repositories.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+
+### Repository Settings
+
+The following table summarizes the settings you can enable or configure for each individual Git repository. 
+
+
+:::row:::
+   :::column span="2":::
+      **Setting**
+   :::column-end:::
+   :::column span="1"::: 
+      **Default**
+   :::column-end:::
+   :::column span="3"::: 
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range="<= tfs-2018"
+:::row:::
+   :::column span="2":::
+      [Gravatar images](#gravatar-images)
+   :::column-end:::
+   :::column span="1"::: 
+       On  
+   :::column-end:::
+   :::column span="3"::: 
+      Enables or disables the use of [Gravatar images](https://go.microsoft.com/fwlink/?LinkId=313945) for users outside of your enterprise. This setting applies to all repositories in the project. 
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range=">= tfs-2018"
+:::row:::
+   :::column span="2":::
+      [**Forks**](#forks)
+   :::column-end:::
+   :::column span="1"::: 
+       On  
+   :::column-end:::
+   :::column span="3"::: 
+      Allow users to create forks from the repository.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+:::row:::
+   :::column span="2":::
+      [**Commit mention linking**](#work-item-linking)
+   :::column-end:::
+   :::column span="1"::: 
+       On  
+   :::column-end:::
+   :::column span="3"::: 
+      Automatically create links for work items mentioned in a commit comment. 
+   :::column-end:::
+:::row-end:::
+::: moniker range=">= azure-devops-2020"
+:::row:::
+   :::column span="2":::
+      [**Commit mention work item resolution**](#work-item-linking)
+   :::column-end:::
+   :::column span="1"::: 
+       On  
+   :::column-end:::
+   :::column span="3"::: 
+      Allow mentions in commit comments to close work items. Requires Azure DevOps Server 2020.1 update or later version. 
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+:::row:::
+   :::column span="2":::
+      [**Work item transition preferences**](#work-item-linking)
+   :::column-end:::
+   :::column span="1"::: 
+       On  
+   :::column-end:::
+   :::column span="3"::: 
+      Remember user preferences for completing work items with pull requests.
+   :::column-end:::
+:::row-end:::
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="2":::
+      **Permissions management**
+   :::column-end:::
+   :::column span="1"::: 
+       On  
+   :::column-end:::
+   :::column span="3"::: 
+      Allow users to manage permissions for the branches they created
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="2":::
+      **Strict Vote Mode**
+   :::column-end:::
+   :::column span="1"::: 
+       On  
+   :::column-end:::
+   :::column span="3"::: 
+      Enable **Strict Vote Mode** for the repository, which requires **Contribute** permission to vote on pull requests.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="2":::
+      **Disable Repository**
+   :::column-end:::
+   :::column span="1"::: 
+       On  
+   :::column-end:::
+   :::column span="3"::: 
+      Disable access to to the repository, including builds and pull requests, but keep the repository discoverable with a warning.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="2":::
+      **Searchable branches**
+   :::column-end:::
+   :::column span="1"::: 
+       On  
+   :::column-end:::
+   :::column span="3"::: 
+      Specify up to five more branches to participate in code search, which by default only applies to the default branch. Requires the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) installed and enabled.
+:::row-end:::
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+### Repository policies or options
+
+The following table summarizes the policies or options you can set for either all or individual repositories. Policies set for **All Repositories** set the default for individual repositories added at a later date.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="2":::
+      **Policy** or **Option**
+   :::column-end:::
+   :::column span="1"::: 
+      **Default**
+   :::column-end:::
+   :::column span="3"::: 
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+::: moniker range=">= azure-devops-2020"
+:::row:::
+   :::column span="2":::
+      [**Commit author email validation**](#commit-author-email)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Block pushes with a commit author email that doesn't match the specified patterns. This setting requires Azure DevOps Server 2020.1 or later version. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**File path validation**](#file-path-validation)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Block pushes from introducing file paths that match the specified patterns. This setting requires Azure DevOps Server 2020.1 or later version. 
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="2":::
+      [**Case enforcement**](#case-enforcement)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Avoid case-sensitivity conflicts by blocking pushes that change name casing on files, folders, branches, and tags. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Reserved names**](#reserved-names)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Block pushes that introduce files, folders, or branch names that include platform reserved names or incompatible characters.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Maximum path length**](#max-path-length)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Block pushes that introduce paths that exceed the specified length.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Maximum file size**](#maximum-file-size)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Block pushes that contain new or updated files larger than the selected limit.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+
+### Branch policies
+
+The following table summarizes the policies you can define to customize a branch. For more information on configuring these settings, see [Improve code quality with branch policies](branch-policies.md). When you set any policy on a branch, the following policies are automatically enforced:
+
+- Pull requests are required to update the branch.
+- The branch can't be deleted.
+
+:::row:::
+   :::column span="2":::
+      **Policy**
+   :::column-end:::
+   :::column span="1"::: 
+      **Default**
+   :::column-end:::
+   :::column span="3"::: 
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      [**Require a minimum number of reviewers**](branch-policies.md#require_reviewers)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Require approval from a specified number of reviewers on pull requests.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Check for linked work items**](branch-policies.md#check-linked-wi)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Encourage traceability by checking for linked work items on pull requests.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Check for comment resolution**](branch-policies.md#check-comment-resolution)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Check to see that all comments have been resolved on pull requests.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Limit merge types**](branch-policies.md#limit-merge-types) or
+      [**Enforce a merge strategy**](branch-policies.md#limit-merge-types)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Control branch history by limiting the available types of merge when pull requests are completed.
+   :::column-end:::
+:::row-end:::
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="2":::
+      [**Build Validation**](branch-policies.md#build-validation)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Add, enable, or disable one or more policies to validate code by pre-merging and building pull request changes.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Status Checks**](branch-policies.md#require-approval-from-external-services) or  
+      [**Require approval from additional or external services**](branch-policies.md#require-approval-from-external-services)  
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Add, enable, or disable one or more policies to require other services to post successful status to complete pull requests.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [**Automatically included reviewers**](branch-policies.md#include-code-reviewers)
+   :::column-end:::
+   :::column span="1"::: 
+       Off  
+   :::column-end:::
+   :::column span="3"::: 
+      Add, enable, or disable one or more policies to designate code reviewers to automatically include when pull requests change certain areas of code.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
 
 ## Prerequisites 
 
@@ -52,25 +425,21 @@ You can configure *settings* for all repositories across an organization or proj
 
 ::: moniker range="> azure-devops-2019"
 
-In the browser, you configure repository settings and policies through the **Repositories** section of **Project settings**.
+To configure respository settings and policies through the web portal, open **Project settings**> **Repositories** from your web browser.
 
-1. On your Azure DevOps project page, select **Project settings** at lower left, and then select **Repositories** in the left navigation.
+1. To view or modify settings or policies for all Git repositories, open the **All Repositories** page and choose **Settings** or **Policies**.
 
-1. On the **All Repositories** page:
+   :::image type="content" source="media/repository-settings/change-default-branch-name.png" alt-text="Screenshot that shows repository Settings for All Repositories":::
 
-   - Select the **Settings** or **Policies** tabs to view and configure settings and policies for all repositories and branches across a project.
+   To configure settings and policies for a specific repository, select the **Repositories** tab, choose the repository, and then choose the **Settings** or **Policies** tab.
 
-     :::image type="content" source="media/repository-settings/project-settings-repository-2020.png" alt-text="Screenshot that shows repository Policies for All Repositories":::
+   :::image type="content" source="media/repository-settings/repository-settings-2020.png" alt-text="Screenshot that shows repository Settings for the Fabrikam repository.":::
 
-   - Select the **Repositories** tab and then choose a repository to configure repository settings and policies for that repository.
+1. The following screenshot shows the **Settings** tab selected. You can define these settings for all Git repositories or for an individual repository.
 
-     :::image type="content" source="media/repository-settings/repository-settings-2020.png" alt-text="Screenshot that shows repository Policies for the Fabrikam repository.":::
+   :::image type="content" source="media/repository-settings/project-repo-settings-browser-2020.png" alt-text="Screenshot that shows the repo project Settings tab selected.":::
 
-1. On the **All Repositories** page or on an individual repository page, select the **Settings** tab to view and configure repository settings.
-
-   :::image type="content" source="media/repository-settings/project-repo-settings-browser-2020.png" alt-text="Screenshot that shows the repo project 'Settings' tab selected.":::
-
-1. Select the **Policies** tab to view and configure repository and branch policies.
+1. The following screenshot shows the **Policies** tab selected. You can define these policies for all Git repositories or for an individual repository.
 
    :::image type="content" source="media/repository-settings/project-repo-policies-browser-2020.png" alt-text="Screenshot that shows the repo 'Policies' tab selected.":::
 
@@ -82,9 +451,15 @@ In the browser, you configure repository settings and policies through the **Rep
 
    ![Screenshot of the 'Project Settings' for your repository.](media/repository-settings/project-repository-settings.png)
 
-2. Select **Options** and **Policies** to view and configure your repository settings.
+2. To view and configure repository settings, select **Options** or **Policies**.
 
-   ![On Options for FabrikamFiber, the Options and Policies tabs are highlighted, and Options is selected.](media/repository-settings/repository-settings.png)
+   The following screenshot shows **Options** for all repositories:
+
+   ![Screenshot of the Options for all repositories.](media/repository-settings/options-all-repos.png)
+
+   The following screenshot shows **Options** for the Fabrikam repositories:
+
+   ![Screenshot of Options for the Fabrikam repository.](media/repository-settings/options-fabrikam.png)
 
 ::: moniker-end
 
@@ -94,7 +469,7 @@ In the browser, you configure repository settings and policies through the **Rep
 
    ![Screenshot that shows the 'Version Control' options for your repository.](media/repository-settings/project-repository-settings-prev-nav.png)
 
-2. Select **options** to view and configure your repository settings.
+2. Select **Options** to view and configure your repository settings.
 
    ![The options UI](media/repository-settings/repository-settings-tfs2018.2.png)
 
@@ -277,7 +652,7 @@ ID    Name                         Is Blocking    Is Enabled    Branch
 
 
 <a id="default-branch-name"></a>
-## Default branch name setting
+## Default branch name
 
 You can set a default repository branch name at the organization or project level. The organization-level setting takes effect for all new repositories across all projects in the organization. The project-level setting affects all new repositories in a project, and supersedes any name set at the organization level.
 
@@ -302,9 +677,11 @@ To set a default branch name at the project level:
 
 :::image type="content" source="media/repository-settings/project-settings-change-default-branch-name.png" alt-text="Screenshot that shows the project-level setting for Default branch name for new repositories.":::
 
-## Allow users to manage permissions for their branches
+::: moniker range="azure-devops"
+<a name="allow-users-to-manage-permissions-for-their-branches"></a>
+## Branch permission management
 
-You can set **Allow users to manage permissions for their created branches** for all repositories in a project. If you enable this setting at the **All Repositories** level, all new project repositories are configured to let users manage permissions for their created branches.
+You can control who can manage permissions for repository branches by setting a permission management setting for all Git repositories or for individual repositories. If you enable the **Allow users to manage permissions for their created branches** setting at the **All Repositories** level, all new project repositories are configured to let users manage permissions for their created branches.
 
 To manage this setting:
 
@@ -313,12 +690,21 @@ To manage this setting:
 
 :::image type="content" source="media/repository-settings/users-manage-permissions.png" alt-text="Screenshot that shows the project-level Allow users to manage permissions for their created branches setting.":::
 
-You can also enable or disable this setting for individual repositories. For details, see [Permissions management](#permissions-management-setting).
+To enable or disable this setting for individual repositories:
+
+1. Select **Project Settings** > **Repositories**, and then select a repository.
+1. On the **Settings** tab of the **\<Repository name>** page, set **Permissions management** to **On** or **Off**.
+
+:::image type="content" source="media/repository-settings/permissions-management.png" alt-text="Screenshot that shows the Permissions management repository setting.":::
+
+::: moniker-end
 
 <!--- REPOSITORY SETTINGS  --> 
  
+::: moniker range="azure-devops-2019"
 <a id="forks"></a>
-## Forks setting
+<a id="forks-setting"></a>
+## Enable forks
 
 This repository setting controls whether users can create new server-side [forks](forks.md). Disabling this setting doesn't remove existing forks.
 
@@ -358,18 +744,7 @@ Enable this setting to automatically complete those work items when you successf
 
 By default, the option to complete linked work items during pull request completion remembers each user's last choice. Teams that want to discourage users from completing work items with their pull requests can disable this setting. Users must then opt in to completing work items each time they complete a pull request.
 
-## Permissions management setting
-
-This repository setting allows users to manage permissions for their branches.
-
-1. Select **Project Settings** > **Repositories**, and then select a repository.
-1. On the **Settings** tab of the **\<Repository name>** page, set **Permissions management** to **On** or **Off**.
-
-:::image type="content" source="media/repository-settings/permissions-management.png" alt-text="Screenshot that shows the Permissions management repository setting.":::
-
-This setting affects the individual repository. You can also set **Allow users to manage permissions for their created branches** for all new repositories across a project. See [Allow users to manage permissions for their branches](#allow-users-to-manage-permissions-for-their-branches).
-
-::: moniker range=">=azure-devops-2020"
+::: moniker range="=azure-devops"
 ## Strict Vote Mode setting
 
 In certain situations, users who aren't contributors to a repository can submit a pull request and cause it to be merged, depending on policies. To prevent this possibility, enable **Strict Vote Mode** to change the required permission to vote on repository pull requests to **Contribute**. Enabling this setting is recommended if you rely on user forks in Azure Repos.
@@ -380,6 +755,7 @@ In certain situations, users who aren't contributors to a repository can submit 
 :::image type="content" source="media/repository-settings/strict-vote-mode.png" alt-text="Screenshot that shows the Strict Vote Mode repository setting.":::
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2020"
 ## Disable Repository setting
 
 Enabling this setting disables access to the repository, including builds and pull requests, but keeps the repository discoverable with a warning.
@@ -388,6 +764,7 @@ Enabling this setting disables access to the repository, including builds and pu
 1. On the **Settings** tab of the **\<Repository name>** page, under **Disable Repository**, set **Disable Repository** to **On** or **Off**.
 
 :::image type="content" source="media/repository-settings/disable-repository.png" alt-text="Screenshot that shows the Disable Repository setting.":::
+::: moniker-end
 
 ## Searchable branches setting
 
@@ -403,6 +780,9 @@ To add branches for code search:
 1. Select a branch to include in search, and then select **Add branch**.
 
 :::image type="content" source="media/repository-settings/searchable-branches.png" alt-text="Screenshot that shows the Searchable Branches repository setting.":::
+
+>[!NOTE]
+>The **Searchable branches** setting requires Azure DevOps Server 2020.1 or later version.
 
 <!--- REPOSITORY POLICIES --> 
 
@@ -729,348 +1109,6 @@ ID    Name                   Is Blocking    Is Enabled    Repository Id         
 ::: moniker-end
 
 ***
-
-## Summary of all repository and branch settings and policies
-
-You can configure settings and policies for all repositories in a project, for individual repositories, and for branches of repositories. In the browser, you configure all these settings and policies through **Project settings** > **Repositories**. With Azure CLI, you use [az repos policy](/cli/azure/repos/policy).
-
-::: moniker range="< azure-devops-2020"
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
-::: moniker-end
-
-The following tables summarize the settings and policies you can enable and configure for Git repositories and branches.
-
-### All Repositories Settings
-
-The following table summarizes the settings you can enable and configure for all new Git repositories in a project or in an organization.
-
-
-:::row:::
-   :::column span="2":::
-      **Setting**
-   :::column-end:::
-   :::column span="1"::: 
-      **Default**
-   :::column-end:::
-   :::column span="3"::: 
-      **Description**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
-      [Default branch name for new repositories](#default-branch-name)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Initialize new repositories with the default branch name you specify. You can change the default branch for a particular repository anytime. If you don't enable this feature, repositories initialize with a default branch named `main`.
-   :::column-end:::
-:::row-end:::
-::: moniker range="azure-devops"
-:::row:::
-   :::column span="2":::
-      [Allow users to manage permissions for their created branches](#allow-users-to-manage-permissions-for-their-branches)
-   :::column-end:::
-   :::column span="1"::: 
-       On  
-   :::column-end:::
-   :::column span="3"::: 
-      Let users manage permissions for their created branches in all new repositories.
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-
-### Repository Settings
-
-The following table summarizes the settings you can enable and configure for each Git repository in a project.
-
-
-:::row:::
-   :::column span="2":::
-      **Setting**
-   :::column-end:::
-   :::column span="1"::: 
-      **Default**
-   :::column-end:::
-   :::column span="3"::: 
-      **Description**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
-      [Forks](#forks-setting)
-   :::column-end:::
-   :::column span="1"::: 
-       On  
-   :::column-end:::
-   :::column span="3"::: 
-      Let users create forks from the repository.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Commit mention linking](#work-item-linking-settings)
-   :::column-end:::
-   :::column span="1"::: 
-       On  
-   :::column-end:::
-   :::column span="3"::: 
-      Automatically create links for work items mentioned in a commit comment.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Commit mention work item resolution](#work-item-linking-settings)
-   :::column-end:::
-   :::column span="1"::: 
-       On  
-   :::column-end:::
-   :::column span="3"::: 
-      Allow mentions in commit comments to close work items.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Work item transition preferences](#work-item-linking-settings)
-   :::column-end:::
-   :::column span="1"::: 
-       On  
-   :::column-end:::
-   :::column span="3"::: 
-      Remember user preferences for completing work items with pull requests.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Permissions management](#permissions-management-setting)
-   :::column-end:::
-   :::column span="1"::: 
-       On  
-   :::column-end:::
-   :::column span="3"::: 
-      Let users manage permissions for branches they create.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Strict Vote Mode](#strict-vote-mode-setting)
-   :::column-end:::
-   :::column span="1"::: 
-       On  
-   :::column-end:::
-   :::column span="3"::: 
-      Require Contribute permissions to vote on pull requests in the repository.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Disable Repository](#disable-repository-setting)
-   :::column-end:::
-   :::column span="1"::: 
-       On  
-   :::column-end:::
-   :::column span="3"::: 
-      Disable access to the repository, including builds and pull requests, but keep the repository discoverable with a warning.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Searchable branches](#searchable-branches-setting)
-   :::column-end:::
-   :::column span="1"::: 
-       On  
-   :::column-end:::
-   :::column span="3"::: 
-      Specify up to five more branches to participate in code search, which by default only applies to the default branch.
-:::row-end:::
-
- 
-### Repository policies
-
-The following table summarizes the policies you can define to customize a repository or initialize all new repositories.
-
-:::row:::
-   :::column span="2":::
-      **Policy**
-   :::column-end:::
-   :::column span="1"::: 
-      **Default**
-   :::column-end:::
-   :::column span="3"::: 
-      **Description**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
-      [Commit author email validation](#commit-author-email)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Block pushes if the commit author email address doesn't match specified patterns.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [File path validation](#file-path-validation)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Block pushes from introducing file paths that match specified patterns.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Case enforcement](#case-enforcement)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Avoid case-sensitivity conflicts by blocking pushes that change name casing on files, folders, branches, and tags.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Reserved names](#reserved-names)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Block pushes that introduce files, folders, or branch names with platform reserved names or incompatible characters.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Maximum path length](#max-path-length)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Block pushes that introduce paths longer than the specified length.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Maximum file size](#maximum-file-size)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Block pushes with new or updated files larger than the specified limit.
-   :::column-end:::
-:::row-end:::
-
- 
-### Branch policies
-
-The following table summarizes the policies you can define for a branch. For more information on configuring these settings, see [Improve code quality with branch policies](branch-policies.md).  
-
-:::row:::
-   :::column span="2":::
-      **Policy**
-   :::column-end:::
-   :::column span="1"::: 
-      **Default**
-   :::column-end:::
-   :::column span="3"::: 
-      **Description**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
-      [Require a minimum number of reviewers](branch-policies.md#require_reviewers)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Require approval from the specified number of reviewers on pull requests.
-   :::column-end:::
-:::row-end:::
-::: moniker range=">= tfs-2017"
-:::row:::
-   :::column span="2":::
-      [Check for linked work items](branch-policies.md#check-linked-wi)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Encourage traceability by checking for linked work items on pull requests.
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2017"
-:::row:::
-   :::column span="2":::
-      [Check for comment resolution](branch-policies.md#check-comment-resolution)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Check to see that all comments have been resolved on pull requests.
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-::: moniker range=">= azure-devops-2020"
-:::row:::
-   :::column span="2":::
-      [Limit merge types](branch-policies.md#limit-merge-types)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Control branch history by limiting the available merge types for completing pull requests.
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-:::row:::
-   :::column span="2":::
-      [Build Validation](branch-policies.md#build-validation)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Add, enable, or disable policies to validate code by pre-merging and building pull request changes.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Status Checks](branch-policies.md#require-approval-from-external-services)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Add, enable, or disable policies to require other services to post successful status to complete pull requests.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      [Automatically included reviewers](branch-policies.md#include-code-reviewers)
-   :::column-end:::
-   :::column span="1"::: 
-       Off  
-   :::column-end:::
-   :::column span="3"::: 
-      Add, enable, or disable policies to designate automatically included code reviewers when pull requests change certain areas of code.
-   :::column-end:::
-:::row-end:::
 
 ## Next steps
 
