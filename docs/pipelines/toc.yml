@@ -389,12 +389,6 @@
         - name: Azure Web App for Containers (Classic)
           href: apps/cd/deploy-docker-webapp.md
           displayName: containers, docker, azure web app
-    - name: Azure Functions
-      items:
-        - name: Function App on Container
-          href: targets/function-app-container.md
-        - name: Function App
-          href: targets/azure-functions.md
     - name: Azure Resource Manager (ARM) templates
       items:
         - name: Use a Resource Manager template to deploy
