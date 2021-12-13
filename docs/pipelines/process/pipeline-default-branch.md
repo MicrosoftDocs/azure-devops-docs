@@ -7,11 +7,11 @@ author: silviuandrica
 ms.date: 12/13/2021
 ---
 
-# Pipeline default branch
+# The pipeline default branch
 
-A pipeline's default branch defines the pipeline version used for manual builds, [scheduled builds](scheduled-triggers.md), for [retention](../policies/retention.md), and when using [pipeline resource triggers](pipeline-triggers.md).
+A pipeline's default branch defines the pipeline version used for manual builds, [scheduled builds](scheduled-triggers.md),  [retention policies](../policies/retention.md), and in [pipeline resource triggers](pipeline-triggers.md).
 
-By default a pipeline's default branch setting points to the default branch of the repository that holds the pipeline's definition.
+By default, a pipeline's default branch is the default branch of the repository.
 
 To view and update the **Default branch for manual and scheduled builds** setting:
 
