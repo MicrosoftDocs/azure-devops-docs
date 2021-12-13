@@ -1,0 +1,28 @@
+---
+title: Pipeline default branch
+description: Configure a pipeline's default branch
+ms.topic: conceptual
+ms.author: silviuandrica
+author: silviuandrica
+ms.date: 12/13/2021
+---
+
+# Pipeline default branch
+
+A pipeline's default branch defines the pipeline version used for manual builds, [scheduled builds](scheduled-triggers.md), for [retention](../policies/retention.md), and when using [pipeline resource triggers](pipeline-triggers.md).
+
+By default a pipeline's default branch setting points to the default branch of the repository that holds the pipeline's definition.
+
+To view and update the **Default branch for manual and scheduled builds** setting:
+
+1. [Navigate](../get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
+
+    :::image type="content" source="media/pipeline-triggers/pipeline-edit.png" alt-text="Edit pipeline."::: 
+
+2. Choose **...** and select **Triggers**.
+
+    :::image type="content" source="media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
+
+3. Select **YAML**, **Get sources**, and view the **Default branch for manual and scheduled builds** setting. If you change it, choose **Save** or **Save & queue** to save the change.
+
+    :::image type="content" source="media/pipeline-triggers/default-branch-setting.png" alt-text="Default branch for manual and scheduled builds setting."::: 

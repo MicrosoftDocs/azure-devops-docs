@@ -173,6 +173,8 @@
       displayName: export, copy
     - name: Configure pipelines to support work tracking
       href: integrations/configure-pipelines-work-tracking.md
+    - name: Pipeline default branch
+      href: process/pipeline-default-branch.md
     - name: DevOps Starter
       href: /azure/devops-project/overview
 - name: Ecosystems & integration

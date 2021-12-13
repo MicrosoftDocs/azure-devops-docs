@@ -94,13 +94,15 @@ Along with defining how many days to retain runs, you can also decide the minimu
 
 The setting for number of recent runs to keep for each pipeline requires a little more explanation. The interpretation of this setting varies based on the type of repository you build in your pipeline.
 
-- **Azure Repos:** Azure Pipelines always retains the configured number of latest runs for the default branch and for each protected branch of the repository. A branch that has any branch policies configured is considered to be a protected branch. As an example, consider a repository with the default branch called **main**. Also, let us assume that the **release** branch in this repository has a branch policy. In this case, if you configured the policy to retain three runs, then the latest three runs of main as well as the latest three runs of release branch are retained. In addition, the latest three runs of this pipeline (irrespective of the branch) are also retained. 
+- **Azure Repos:** Azure Pipelines retains the configured number of latest runs for the [pipeline's default branch](../process/pipeline-default-branch.md) and for each protected branch of the repository. A branch that has any branch policies configured is considered to be a protected branch. 
+ 
+    As an example, consider a repository with two branches, `main` and `release`. Imagine the `pipeline's default branch` is the `main` branch, and the `release` branch has a branch policy, making it a protected branch. In this case, if you configured the policy to retain three runs, then the latest three runs of `main` as well as the latest three runs of the `release` branch are retained. In addition, the latest three runs of this pipeline (irrespective of the branch) are also retained. 
 
     To clarify this logic further, let us say that the list of runs for this pipeline is as follows with the most recent run at the top. The table shows which runs will be retained if you have configured to retain the latest three runs (ignoring the effect of the number of days setting):
 
     | Run # | Branch | Retained / Not retained | Why? |
     |-------|--------|-------------------------|------|
-    | Run 10 | main    | Retained | Latest 3 for main |
+    | Run 10 | main    | Retained | Latest 3 for main and Latest 3 for pipeline |
     | Run 9  | branch1 | Retained | Latest 3 for pipeline |
     | Run 8  | branch2 | Retained | Latest 3 for pipeline |
     | Run 7  | main    | Retained | Latest 3 for main |
@@ -111,7 +113,7 @@ The setting for number of recent runs to keep for each pipeline requires a littl
     | Run 2  | release | Retained | Latest 3 for release |
     | Run 1  | main    | Not retained | Neither latest 3 for main, nor for pipeline |
 
-- **All other Git repositories:** Azure Pipelines retains the configured number of latest runs for the default branch of the repository and for the whole pipeline.
+- **All other Git repositories:** Azure Pipelines retains the configured number of latest runs for the whole pipeline.
 
 - **TFVC:** Azure Pipelines retains the configured number of latest runs for the whole pipeline, irrespective of the branch.
 
@@ -177,6 +179,13 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 Retention leases are used to manage the lifetime of pipeline runs beyond the configured retention periods. Retention leases can be added or deleted on a pipeline run by calling the [Lease API](/rest/api/azure/devops/build/leases). This API can be invoked within the pipeline using a script and using [predefined variables](../build/variables.md) for runId and definitionId.
 
 A retention lease can be added on a pipeline run for a specific period. For example, a pipeline run which deploys to a test environment can be retained for a shorter duration while a run deploying to production environment can be retained longer.
+
+### Manually set retention lease on pipeline runs
+
+You can manually set a pipeline run to be retained using the [More actions menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-more-actions-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
+
+    > [!div class="mx-imgBorder"]
+  > ![manually retain a run](media/manually-retain-a-run.png)
 
 ::: moniker range=">=azure-devops-2020"
 
