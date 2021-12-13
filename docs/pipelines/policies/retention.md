@@ -184,8 +184,7 @@ A retention lease can be added on a pipeline run for a specific period. For exam
 
 You can manually set a pipeline run to be retained using the [More actions menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-more-actions-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
 
-  > [!div class="mx-imgBorder"]
-  > ![manually retain a run](media/manually-retain-a-run.png)
+![manually retain a run](media/manually-retain-a-run.png)
 
 ::: moniker range=">=azure-devops-2020"
 
