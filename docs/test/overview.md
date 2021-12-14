@@ -323,14 +323,31 @@ Azure Test Plans supports automated testing in the following ways:
 
 ## Traceability 
 
-Azure Test Plans supports the following test-related tools to support traceability:
+Azure Test Plans supports linking bugs and requirements to test cases and test suites. In addition, the following web portal, test-related tools support traceability:
+
+- [**Review linked requirements and bugs**](#review-linking): Biew and open the test plans, requirements, and bugs that a test case links to. 
+- [**Kanban board inline test tools**](#kanban): An Azure Boards feature that supports defining test cases from the user stories, features, or bugs from the Kanban board. Also, you can launch the Test Runner or the Test & Feedback extension to run tests or perform exploratory testing. 
+- [**Requirements quality widget**](#requirements-quality): Configurable widget used to track quality continuously from a build or release pipeline. The widget shows the mapping between a requirement and latest test results executed against that requirement. It provides insights into requirements traceability. For example, requirements not meeting the quality, requirements not tested, and so on.
 
 
-Authoring and running manual tests
-In addition, it provides the following tools to link tests to requirements, run tests, create bugs, and capture feedback.  
-
-- **Kanban board inline test tools**: An Azure Boards feature that supports defining test cases from the user stories, features, or bugs from the Kanban board. Also, you can launch the Test Runner or the Test & Feedback extension to run tests or perform exploratory testing. 
  
+<a id="review-linking" /> 
+
+## View items linked to a test case
+
+From the **Test plans** hub, you can view and open the test suites, requirements, and bugs linked to a test case. The **Test Suites** tab also indicates the test plans and projects that reference the test case. The **Requirements** tab lists work items linked to the test case that belong to the requirements category. In addition, you can create a direct-links query that lists items that link to test cases via the **Tests/Tested by** link type. To learn more, see [Create test cases](create-test-cases.md) and [Use direct links to view dependencies](../boards/queries/using-queries.md#use-direct-links-to-view-dependencies). 
+
+:::row:::
+   :::column span="":::
+      :::image type="content" source="media/overview/linked-test-suites.png" alt-text="Screenshot of Linked test suites for a test case.":::
+   :::column-end:::
+   :::column span="":::
+      :::image type="content" source="media/overview/linked-work-items.png" alt-text="Screenshot of Linked requirements for a test case.":::
+   :::column-end:::
+:::row-end:::
+ 
+
+<a id="kanban" /> 
 
 ### Add and run tests from the Kanban board
 
@@ -338,14 +355,28 @@ From the Azure Boards Kanban boards, you can add tests from a user story or feat
 
 :::image type="content" source="media/overview/kanban-board-inline-testing.png" alt-text="Screenshot of Kanban board showing inline tests added to work items.":::
  
+<a id="requirements-quality" /> 
+
+## Requirements quality 
+
+The Requirements quality widget displays a list of all the requirements in scope, along with the **Pass Rate **for the tests and count of **Failed** tests. Selecting a Failed test count opens the **Tests** tab for the selected build or release. The widget also helps to track the requirements without any associated test(s). To learn more, see [Requirements traceability](../pipelines/test/requirements-traceability.md). 
+
+:::image type="content" source="../pipelines/test/media/requirements-traceability/requirements-quality-widget.png" alt-text="Screenshot of Requirements traceability widget added to dashboard.":::
+
 <a id="reporting" /> 
 
-## Reporting and analysis 
+## Reporting and analysis  
 
-- Progress report (Test plan, test suite) 
-- Built-in Test progress reports 
-- Test Results Trend (Advanced) widget (pipeline) 
+To support reporting and analysis, Azure Test Plans supports test tracking charts, a test **Runs** hub, several built-in pipeline test reports, dashboard widgets, and test-data stored in the Analytics service.  
+
+- [**Configurable test charts**](configurable-charts):
+- [**Progress report**](progress-report): (Test plan, test suite) 
+- [**Test Runs**](#runs):
+- Built-in Test progress reports: 
+- Dashboard widgets: Configurable widgets that display test results based on selected builds or releases. Widgets include the [Deployment status](#deployment-status) widget and the [Test Results Trend (Advanced)](#test-results-trend) widget. 
 - Analytics service, Test 
+
+<a id="configurable-charts" />
 
 ### Configurable test charts  
 
@@ -383,76 +414,52 @@ The [Runs](insights-exploratory-testing.md) hub displays the results of test run
 
 :::image type="content" source="media/overview/recent-test-runs.png" alt-text="Screenshot of Recent test runs":::
 
+Choose any specific run to view a summary of the test run. 
+
 :::image type="content" source="media/overview/example-run-summary.png" alt-text="Screenshot of selected Test Runs summary":::
+
+
+
+<a id="deployment-status" />
+
+#### Deployment status 
+
+The Deployment status widget configurable widget shows a combined view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build pipeline, branch, and linked release pipelines. To view the test summary across multiple environments in a release, the widget provides a matrix view of each environment and corresponding test pass rate.
+
+:::image type="content" source="media/overview/deployment-status.png" alt-text="Screenshot of Deployment Status widget.":::
+
+Hover over any build summary, and you can view more details, specifically the number of tests passed and failed.   
+
+:::image type="content" source="media/overview/deployment-status-details-hover-over.png" alt-text="Screenshot of Deployment Status widget, details displayed by hover over a build instance.":::
+
+
+
+<a id="test-results-trend" />
+
+### Test results trend (Advanced)
+
+The Test Results Trend (Advanced) widget provides near real-time visibility into test data for multiple builds and releases. The widget shows a trend of your test results for selected pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline. The widget supports tracking advanced metrics for one or more build pipelines or release pipelines. The widget also allows filtering of test results by outcome, stacking metrics, and more. To learn more, see [Configure the Test Results Trend (Advanced) widget](../report/dashboards/configure-test-results-trend.md).
+ 
+:::image type="content" source="../report/dashboards/media/test-results-trend-widget/passed-bypriority-pass.png" alt-text="Screenshot of Test results trend widget, Advanced version based on Analytics service."::: 
+  
+
+<a id="test-analytics-service" />
+
+### Test Analytics
+
+The built-in tests and test-supported widgets derive their data from the Analytics service. The Analytics service is the reporting platform for Azure DevOps. Test Analytics data is available for Azure DevOps Server 2019 and later versions. It supports the **Analytics** and **Tests** tab and drill-down reports available from the **Pipelines** hub. The **Test failure** drill down report provides a summary of passed and failing tests. To learn more, see [Test Analytics](../pipelines/test/test-analytics.md). 
+
+:::image type="content" source="media/overview/pipeline-analytics.png" alt-text="Screenshot of Pipelines Analytics summary page."::: 
+  
+In addition, you can create custom reports by querying the Analytics service. To learn more, see [Overview of sample reports using OData queries](../report/powerbi/sample-odata-overview.md). 
+
+<!--- TCM commands: 
 
 - Test failure report
 - Analytics test data 
 	- Test analytics for builds
 	- Test analytics for releases 
 	- Test failures 
- 
-
-### Configurable test widgets
- 
-You can add several configurable test widgets to your dashboards to show status, progress, or trends of your testing efforts. Two main widgets are the 
-
-::: moniker range=">= tfs-2017"
-:::row:::
-   :::column span="1":::
-      ### Chart for test plans  
-      ![Chart for test plans](../report/dashboards/media/widget-chart-test-plans.png) 
-   :::column-end:::
-   :::column span="1":::
-      <br/>
-      <a id="chart-test-plan-widget"></a> 
-      Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots.    
-      
-      To learn more, see [Track your test results](track-test-status.md).
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2017"
-:::row:::
-   :::column span="1":::
-      ### Test results trend 
-      ![Test results trend widget](../report/dashboards/media/widget-test-results-trend.png) 
-   :::column-end:::
-   :::column span="1":::
-      <br/>
-      <a id="test-trend-results"></a> <a id="test-results-widget"></a>
-      Adds a configurable tile that displays the trend of test results for the selected build or release pipeline. The widget helps you visualize the test trends over a period of time, thereby surfacing patterns about test failures, test duration etc.    
-      
-      From the configuration dialog, select the build or release whose test results you'd like to monitor. There are multiple chart options to choose from (Line, Column & Stacked Column) based on your preference. Optionally you can map the trend of test duration on the existing chart by adding a secondary line chart.    
-      
-      To get deeper insights and higher configurability view [Test Analytics](../pipelines/test/test-analytics.md)
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-::: moniker range=">= azure-devops-2019"
-:::row:::
-   :::column span="1":::
-      ### Test Results Trend (Advanced)
-   :::column span="1":::
-      > [!div class="mx-imgBorder"]  
-      > ![Test results trend widget, Advanced version based on Analytics service.](../report/dashboards/media/widget-test-results-trend-advanced.png) 
-   :::column-end:::
-   :::column span="1":::
-      <br/>
-      <a id="test-trend-results-advanced"></a>
-      The Test Results Trend (Advanced) widget provides near real-time visibility into test data for multiple builds and releases. The widget shows a trend of your test results for selected pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.  
-      The widget supports tracking advanced metrics for one or more build pipelines or release pipelines. The widget also allows filtering of test results by outcome, stacking metrics, and more.     
-      
-      To learn more, see [Configure the Test Results Trend (Advanced) widget](../report/dashboards/configure-test-results-trend.md).
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-
-
-
-
-<!--- TCM commands: 
-
-
 
 
 ### Supported tasks for test objects 
