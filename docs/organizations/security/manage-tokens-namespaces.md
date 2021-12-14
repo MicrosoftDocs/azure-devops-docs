@@ -25,7 +25,7 @@ Azure DevOps grants a number of permissions by default to members of default sec
 - Update or reset permissions
 
 > [!NOTE]   
-> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. 
+> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Security namespace and permission reference, Deprecated and read-only namespaces](namespace-reference.md#deprecated-namespaces).. 
 > 
 ## Prerequisites 
 
