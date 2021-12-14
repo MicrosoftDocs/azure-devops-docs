@@ -26,8 +26,8 @@ and gathering feedback from stakeholders.
 <!--- Elements to discuss: 
 
 Dev Inner Loop – Unit Testing in Visual Studio IDE
-Testing in Continuous Integration (CI) and Release Management (RM) or Continuous Delivery
-Manual and exploratory Testing
+
+ 
 Load and Performance Testing
 Integration with 3rd party test services
 
@@ -44,7 +44,7 @@ Integration with 3rd party test services
 
 ## How does Azure Test Plans work? 
 
-Through a combination of browser-based tools&mdash;[**Test plans**](#test-plans), [**Progress report**](#progress-report), [**Parameters**](#parameters), [**Configurations**](#configurations), [**Runs**](#runs), and [Test Runner](#test-tools)&mdash;and DevOps integration features, Azure Test Plans supports the following test objectives:  
+Through a combination of browser-based tools&mdash;[**Test plans**](#test-plans), [**Progress report**](#progress-report), [**Parameters**](#parameters), [**Configurations**](#configurations), [**Runs**](#runs), and [Test tools](#test-tools)&mdash;and DevOps integration features, Azure Test Plans supports the following test objectives:  
 
 - [**Manual and exploratory testing**](#manual): Manual and exploratory testing includes the following test activities:  
 	- **[Planned manual testing](#test-plans)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
@@ -52,7 +52,7 @@ Through a combination of browser-based tools&mdash;[**Test plans**](#test-plans)
 	- **[Exploratory testing](#exploratory-testing)**. Testing carried out by development teams, including developers, testers, UX teams, product owners and more, by exploring the software systems without using test plans or test suites. 
 	- **[Stakeholder feedback](#stakeholder-feedback)**. Testing carried out by stakeholders outside the development team, such as users from marketing and sales divisions.  
 
-- [**Automated testing**](#automated): Azure Test Plans is fully integrated with Azure Pipelines to support continuous integration and testing. Test plans and test cases can be associated with build or release pipelines. Pipeline tasks can be added to pipeline definitions to capture and publish test results. Test results can be reviewed via built in progress reports and pipeline test reports.   
+- [**Automated testing**](#automated): Azure Test Plans is fully integrated with Azure Pipelines to support testing within continuous integration/continuous deployment (CI/CD). Test plans and test cases can be associated with build or release pipelines. Pipeline tasks can be added to pipeline definitions to capture and publish test results. Test results can be reviewed via built in progress reports and pipeline test reports.  
 
 - [**Traceability**](#traceability): Test cases and test suites linked to user stories, features, or requirements supports end-to-end traceability. Tests and defects are automatically linked to the requirements and builds being tested, which also helps tracking the quality of requirements. Users can add and run tests from the Kanban board, or for larger teams, use the Test plans hub to define test plans and test suites. Pipeline results and the Requirements widget provide a means to track testing of requirements.  
 
@@ -63,13 +63,15 @@ Through a combination of browser-based tools&mdash;[**Test plans**](#test-plans)
 > **Load and performance testing**: While Azure DevOps cloud-based load testing service is deprecated, Azure Load Testing Preview is available. Azure Load Testing Preview is a fully managed load testing service that enables you to use existing Apache JMeter scripts to generate high-scale load. To learn more, see [What is Azure Load Testing Preview?](/azure/load-testing/overview-what-is-azure-load-testing). For more information about the deprecation of Azure DevOps load testing, see [Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps](/previous-versions/azure/devops/test/load-test/overview).
 
 
-### Key benefits
+### Key benefits 
+
+Azure Test Plans provides software development teams the following benefits. 
 
 * **Test on any platform**. With the **Test Plans** web portal, you can use any supported browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, browser-based interface that can be accessed from all major browsers on any platform.
 
-* **Rich Diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your manual tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
+* **Rich diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your manual tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
 
-* **End to End Traceability**. Azure DevOps provides [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
+* **End to End traceability**. Azure DevOps provides [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
 
 * **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Azure DevOps](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
 
@@ -182,11 +184,11 @@ The work item types&mdash;**Test Plans**, **Test Suites**, **Test Cases**, **Sha
 
 <a id="test-plans" />
 
-### Test plans hub, Define and execute tests 
+### Define and execute tests 
 
 The **Test plans** hub of Azure Test Plans provides the tools you need to define, manage, and run your tests. Test cases, both manual and automated, are organized within test suites which are grouped under test plans.  
 
-:::image type="content" source="media/overview/test-plan-define-execute-chart.png" alt-text="Screenshot of Azure Test Plans, Selected test plans":::
+:::image type="content" source="media/overview/test-planning.png" alt-text="Screenshot of Azure Test Plans, Test plans, test suites, Execute tab":::
 
 ### Define test plans and test suites 
 
@@ -194,7 +196,7 @@ Create and manage test plans and test suites from the **Test plans** hub.
 Add one or more test suites&mdash;static, requirement-based, or query-based&mdash;to the test plans. Export and share test plans and test suites with your teams.
 To learn how, see [Create test plans and test suites](create-a-test-plan.md) and [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md).
 
-:::image type="content" source="media/overview/test-planning.png" alt-text="Screenshot of Azure Test Plans, Test plans, test suites, Execute tab":::
+:::image type="content" source="media/overview/test-plan-define-execute-chart.png" alt-text="Screenshot of Azure Test Plans, Selected test plans":::
 
 ### Author tests using test cases 
 
@@ -208,14 +210,15 @@ Within each test case, you specify a set of test steps with their expected outco
 :::image type="content" source="media/overview/test-case-form.png" alt-text="Screenshot of test case work item form.":::
 
 
+<!--- 
 ### Execute tests 
  
 
-
+--> 
 
 <a id="parameters" />
 
-### Parameters hub: Manage shared parameters  
+### Manage shared parameters  
 
 Teams use the [Parameters](repeat-test-with-different-data.md) hub, to define and manage parameters shared across test cases. Shared parameters provide support for repeating manual tests several times with different test data. For example, if your users can add different quantities of a product to a shopping cart, then you want to check that a quantity of 200 works just as well as a quantity of 1.  
  
@@ -223,7 +226,7 @@ Teams use the [Parameters](repeat-test-with-different-data.md) hub, to define an
 
 <a id="configurations" />
 
-### Configurations hub: Manage test configurations and variables
+### Manage test configurations and variables
 
 With the [Configurations](test-different-configurations.md) hub, teams can define, review, and manage test configurations and variables referenced by test plans. Test configurations provide support for testing your applications on different operating systems, web browsers, and versions. As with shared parameters, test configurations can be shared across multiple test plans. 
 
@@ -325,8 +328,8 @@ Azure Test Plans supports automated testing in the following ways:
 
 Azure Test Plans supports linking bugs and requirements to test cases and test suites. In addition, the following web portal, test-related tools support traceability:
 
-- [**Review linked requirements and bugs**](#review-linking): Biew and open the test plans, requirements, and bugs that a test case links to. 
-- [**Kanban board inline test tools**](#kanban): An Azure Boards feature that supports defining test cases from the user stories, features, or bugs from the Kanban board. Also, you can launch the Test Runner or the Test & Feedback extension to run tests or perform exploratory testing. 
+- [**View items linked to a test case**](#review-linking): View the test plans, test suites, requirements, and bugs that a test case links to. 
+- [**Add and run tests from the Kanban board**](#kanban): An Azure Boards feature that supports defining test cases from the user stories, features, or bugs from the Kanban board. Also, you can launch the Test Runner or the Test & Feedback extension to run tests or perform exploratory testing. 
 - [**Requirements quality widget**](#requirements-quality): Configurable widget used to track quality continuously from a build or release pipeline. The widget shows the mapping between a requirement and latest test results executed against that requirement. It provides insights into requirements traceability. For example, requirements not meeting the quality, requirements not tested, and so on.
 
 
@@ -357,7 +360,7 @@ From the Azure Boards Kanban boards, you can add tests from a user story or feat
  
 <a id="requirements-quality" /> 
 
-## Requirements quality 
+## Requirements quality widget 
 
 The Requirements quality widget displays a list of all the requirements in scope, along with the **Pass Rate **for the tests and count of **Failed** tests. Selecting a Failed test count opens the **Tests** tab for the selected build or release. The widget also helps to track the requirements without any associated test(s). To learn more, see [Requirements traceability](../pipelines/test/requirements-traceability.md). 
 
@@ -369,12 +372,11 @@ The Requirements quality widget displays a list of all the requirements in scope
 
 To support reporting and analysis, Azure Test Plans supports test tracking charts, a test **Runs** hub, several built-in pipeline test reports, dashboard widgets, and test-data stored in the Analytics service.  
 
-- [**Configurable test charts**](configurable-charts):
-- [**Progress report**](progress-report): (Test plan, test suite) 
-- [**Test Runs**](#runs):
-- Built-in Test progress reports: 
+- [**Configurable test charts**](#configurable-charts): You can gain insight into the test plan authoring and execution activity by creating test tracking charts. 
+- [**Progress report**](#progress-report): Track progress of one or test plans or test suites. 
+- [**Test Runs**](#runs): Review the results of manual and automated test runs.  
 - Dashboard widgets: Configurable widgets that display test results based on selected builds or releases. Widgets include the [Deployment status](#deployment-status) widget and the [Test Results Trend (Advanced)](#test-results-trend) widget. 
-- Analytics service, Test 
+- [Test Analytics](#test-analytics-service): Gain detailed insights from built-in pipeline reports or create custom reports by querying the Analytics service.
 
 <a id="configurable-charts" />
 
@@ -600,23 +602,24 @@ tcm run /execute
 
 ## Related articles
 
-- [Get started with manual testing](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json)
-- [Get started with exploratory testing](perform-exploratory-tests.md)
-- [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)
-- [Get stakeholder feedback with exploratory testing](request-stakeholder-feedback.md)
-- [Continuous testing](../pipelines/index.yml)
-
+- [Navigate Test Plans](navigate-test-plans.md)
+- [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md)
+- [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
+- [About requesting and providing feedback](../project/feedback/index.md)
+- [Cross-service integration and collaboration overview](../cross-service/cross-service-overview.md)
 
 ## Additional resources
 
 
 - [Unit testing](/visualstudio/test/developer-testing-scenarios) 
-
-
+- [Unit test basics](/visualstudio/test/unit-test-basics)
+- [Durable Functions unit testing](/azure/azure-functions/durable/durable-functions-unit-testing)
+- [What is Azure Load Testing Preview?](/azure/load-testing/overview-what-is-azure-load-testing)
+ 
 <!--- Removed content
 
 - [Test Planning and Management Guide](https://vsardata.blob.core.windows.net/projects/Test%20Planning%20and%20Management%20Guide.pdf) 
-- 
+ 
 Quality is a vital aspect of software systems, and manual testing 
 and exploratory testing continue to be important techniques for maximizing this.
 In today's software development processes,
