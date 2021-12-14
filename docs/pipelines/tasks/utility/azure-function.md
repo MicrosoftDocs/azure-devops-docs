@@ -6,7 +6,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 12/14/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -38,15 +38,14 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 
 | Parameter | Comments |
 | --- | --- |
-| **Function URL** | Required. The URL of the function to be invoked. |
-| **Function key** | Required. The value of the available function or the host key for the function to be invoked. Should be secured by using a hidden variable. |
-| **Method** | Required. The HTTP method with which the function will be invoked. |
-| **Headers** | Optional. The header in JSON format to be attached to the request sent to the function. |
-| **Query parameters** | Optional. Query parameters to append to the function URL. Must not start with "**?**" or "**&**". |
-| **Body** | Optional. The request body for the function call in JSON format. |
-| **Completion Event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the function makes a callback to update the timeline record. |
-| **Success criteria** | Optional. How to parse the response body for success. |
-| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
+| <code>function</code><br/>**Azure function URL** | Required. The URL of the function to be invoked. |
+| <code>key</code><br/>**Function key** | Required. The value of the available function or the host key for the function to be invoked. Should be secured by using a hidden variable. |
+| <code>method</code><br/>**Method** | Required. The HTTP method with which the function will be invoked. |
+| <code>headers</code><br/>**Headers** | Optional. The header in JSON format to be attached to the request sent to the function. |
+| <code>queryParameters</code><br/>**Query parameters** | Optional. Query parameters to append to the function URL. Must not start with "**?**" or "**&**". |
+| <code>body</code><br/>**Body** | Optional. The request body for the function call in JSON format. |
+| <code>waitForCompletion</code><br/>**Completion event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the function makes a callback to update the timeline record. |
+| <code>successCriteria</code><br/>**Success criteria** | Optional. How to parse the response body for success. |
 
 Succeeds if the function returns success and the response body parsing is successful, or when the function updates the timeline record with success. 
 
