@@ -173,6 +173,8 @@
       displayName: export, copy
     - name: Configure pipelines to support work tracking
       href: integrations/configure-pipelines-work-tracking.md
+    - name: Pipeline default branch
+      href: process/pipeline-default-branch.md
     - name: DevOps Starter
       href: /azure/devops-project/overview
 - name: Ecosystems & integration
@@ -377,7 +379,7 @@
       displayName: resource manager, service connection, service principal
     - name: Azure App Service (Web Apps)
       items:
-        - name: App Service on Linux
+        - name: App Service
           href: targets/webapp.md
         - name: Custom containers with Azure App Service
           href: targets/webapp-on-container-linux.md
@@ -389,14 +391,6 @@
         - name: Azure Web App for Containers (Classic)
           href: apps/cd/deploy-docker-webapp.md
           displayName: containers, docker, azure web app
-    - name: Azure Functions
-      items:
-        - name: Function App on Container
-          href: targets/function-app-container.md
-        - name: Function App on Linux
-          href: targets/azure-functions.md
-        - name: Function App on Windows
-          href: targets/azure-functions-windows.md
     - name: Azure Resource Manager (ARM) templates
       items:
         - name: Use a Resource Manager template to deploy
