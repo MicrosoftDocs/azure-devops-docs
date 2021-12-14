@@ -45,7 +45,7 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 | <code>queryParameters</code><br/>**Query parameters** | Optional. the string query to append to the function URL. Must not start with "?" or "&". |
 | <code>body</code><br/>**Body** | Optional. The request body in JSON format. |
 | <code>waitForCompletion</code><br/>**Completion event** | Required. How the task reports completion. Options: "ApiResponse", "Callback."<br/>**API response** (default) - the function returns success and success criteria evaluates to true.<br/>**Callback** - the function makes a callback to update the timeline record. |
-| <code>successCriteria</code><br/>**Success criteria** | Optional. The criteria to consider the task successful. |
+| <code>successCriteria</code><br/>**Success criteria** | Optional. The criteria to consider the task successful. By default, the task returns 200 OK status when successful. |
 
 ## Open source
 
