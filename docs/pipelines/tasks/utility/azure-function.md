@@ -38,18 +38,14 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 
 | Parameter | Comments |
 | --- | --- |
-| <code>function</code><br/>**Azure function URL** | Required. The URL of the function to be invoked. |
-| <code>key</code><br/>**Function key** | Required. The value of the available function or the host key for the function to be invoked. Should be secured by using a hidden variable. |
+| <code>function</code><br/>**Azure function URL** | Required. The URL of the function to be invoked. Example: "https://azurefunctionapp.azurewebsites.net/api/HttpTriggerJS1" |
+| <code>key</code><br/>**Function key** | Required. Function or host key to access and invoke the function. Using a secret pipeline variable to store the function key is recommended. |
 | <code>method</code><br/>**Method** | Required. The HTTP method with which the function will be invoked. |
 | <code>headers</code><br/>**Headers** | Optional. The header in JSON format to be attached to the request sent to the function. |
-| <code>queryParameters</code><br/>**Query parameters** | Optional. Query parameters to append to the function URL. Must not start with "**?**" or "**&**". |
-| <code>body</code><br/>**Body** | Optional. The request body for the function call in JSON format. |
-| <code>waitForCompletion</code><br/>**Completion event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the function makes a callback to update the timeline record. |
-| <code>successCriteria</code><br/>**Success criteria** | Optional. How to parse the response body for success. |
-
-Succeeds if the function returns success and the response body parsing is successful, or when the function updates the timeline record with success. 
-
-For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
+| <code>queryParameters</code><br/>**Query parameters** | Optional. the string query to append to the function URL. Must not start with "?" or "&". |
+| <code>body</code><br/>**Body** | Optional. The request body in JSON format. |
+| <code>waitForCompletion</code><br/>**Completion event** | Required. How the task reports completion. Options: "ApiResponse", "Callback."<br/>**API response** (default) - the function returns success and success criteria evaluates to true.<br/>**Callback** - the function makes a callback to update the timeline record. |
+| <code>successCriteria</code><br/>**Success criteria** | Optional. The criteria to consider the task successful. |
 
 ## Open source
 
