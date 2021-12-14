@@ -98,10 +98,10 @@ The following table describes the fields that you can use to plan and prioritize
 ---
 :::row:::
    :::column span="1":::
-   Backlog Priority <sup>1</sup>
+   **Backlog Priority** <sup>1</sup>
    :::column-end:::
    :::column span="2":::
-   A number assigned by a background process used to track the sequence of items on a backlog or board.
+   A number assigned by a background process used to track the sequence of items on a backlog or board. To learn more about how this field is used, see [Use backlogs for effective project management, Backlog priority or stack rank order](../backlogs/backlogs-overview.md#backlog-priority-or-stack-rank-order). 
 
    Reference name=Microsoft.VSTS.Common.BacklogPriority, Data type=Double
    :::column-end:::  
@@ -112,7 +112,7 @@ The following table describes the fields that you can use to plan and prioritize
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Blocked
+   **Blocked**
    :::column-end:::
    :::column span="2":::
    Indicates that no further work can be performed on the work item. If an issue has been opened to track a blocking problem, a link should be made to the issue.
@@ -127,7 +127,7 @@ The following table describes the fields that you can use to plan and prioritize
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Committed
+   **Committed**
    :::column-end:::
    :::column span="2":::
    Indicates if the requirement is committed in the project. You can specify **Yes** or **No**.
@@ -140,7 +140,7 @@ The following table describes the fields that you can use to plan and prioritize
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Escalate
+   **Escalate**
    :::column-end:::
    :::column span="2":::
    Indicates if the issue is affecting the critical path of the project plan. You can specify **Yes** or **No**.
@@ -153,14 +153,14 @@ The following table describes the fields that you can use to plan and prioritize
 :::row-end:::
 :::row:::
    :::column span="1":::
-   <a id="priority" />Priority <sup>1</sup>
+   <a id="priority" />**Priority** <sup>1</sup>
    :::column-end:::
    :::column span="2":::
    A subjective rating of the bug, issue, task, or test case as it relates to the business. You can specify the following values:  
-   - **1**: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.  
-   - **2**: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.  
-   - **3**: Resolution of the work item is optional based on resources, time, and risk.
- 
+   - **1**: Highest priority, implement feature or fix as soon as possible. Product cannot ship without successful resolution.  
+   - **2**: Medium priority. Product cannot ship without successful resolution, but it does not need to be addressed immediately.  
+   - **3**: Low priority. Implementation or fix is optional based on resources, time, and risk. If product ships without successful resolution, document the issue in release notes as known issues. 
+   - **4**: Lowest priority. Tracks an issue that basically does not affect usage (such as a small typo).  
    Reference name=Microsoft.VSTS.Common.Priority, Data type=Integer
    :::column-end:::
    :::column span="1":::
@@ -169,7 +169,7 @@ The following table describes the fields that you can use to plan and prioritize
 :::row-end:::
 :::row:::
    :::column span="1":::
-   <a id="risk" />Risk
+   <a id="risk" />**Risk**
    :::column-end:::
    :::column span="2":::
    A subjective rating of the relative uncertainty around the successful completion of a user story.
@@ -186,7 +186,7 @@ The following table describes the fields that you can use to plan and prioritize
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Severity  <sup>1</sup>
+   **Severity**  <sup>1</sup>
    :::column-end:::
    :::column span="2":::
    A subjective rating of the impact of a bug on the project. You can specify the following values:
@@ -203,10 +203,10 @@ The following table describes the fields that you can use to plan and prioritize
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Stack Rank <sup>2</sup>
+   **Stack Rank** <sup>2</sup>
    :::column-end:::
    :::column span="2":::
-   A number, assigned by a background process, used to track the list order of items on a backlog or board in the web portal.
+   A number, assigned by a background process, used to track the list order of items on a backlog or board in the web portal. To learn more about how this field is used, see [Use backlogs for effective project management, Backlog priority or stack rank order](../backlogs/backlogs-overview.md#backlog-priority-or-stack-rank-order). 
  
    Reference name=Microsoft.VSTS.Common.StackRank, Data type=Double
    :::column-end:::
@@ -216,7 +216,7 @@ The following table describes the fields that you can use to plan and prioritize
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Time Criticality
+   **Time Criticality**
    :::column-end:::
    :::column span="2":::
    A subjective unit of measure that captures how the business value lessens over time. Higher values indicate that the epic or feature is inherently more time critical than those items with lower values.
@@ -229,7 +229,7 @@ The following table describes the fields that you can use to plan and prioritize
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Triage
+   **Triage**
    :::column-end:::
    :::column span="2":::
    Indicates the type of triage decision that is pending for the work item. You use this field when the work item is in the **Proposed** state.
@@ -248,7 +248,7 @@ The following table describes the fields that you can use to plan and prioritize
 :::row-end:::
 :::row:::
    :::column span="1":::
-   Value Area  <sup>1</sup>
+   **Value Area**  <sup>1</sup>
    :::column-end:::
    :::column span="2":::
    The area of customer value addressed by the epic, feature, or backlog item. Values include:
