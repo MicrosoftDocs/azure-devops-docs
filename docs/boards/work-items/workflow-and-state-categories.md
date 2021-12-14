@@ -1,7 +1,7 @@
 ---
-title: Use backlogs and boards workflow states & state categories
+title: Backlogs, boards, workflow states, and state categories in Azure Boards
 titleSuffix: Azure Boards   
-description: Learn how workflow states map to state categories and are used in boards and backlogs in Azure Boards.
+description: Understand how Azure DevOps workflow states map to state categories and are used in Azure Boards backlogs and boards in Azure Boards
 ms.custom: seodec18   
 ms.technology: devops-agile
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
@@ -9,10 +9,10 @@ ms.author: kaelli
 author: KathrynEE 
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 07/09/2020
+ms.date: 12/09/2021
 ---
 
-# How workflow states and state categories are used in backlogs and boards
+# How to use workflow states and state categories in Azure Boards backlogs and boards
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -24,9 +24,9 @@ Each state belongs to a state category (previously referred to as a metastate). 
 
 ## Workflow states
 
-Workflow states define how a work item progresses upon its creation to closure. For example, the four main states defined for the User Story (Agile process) define a progression of four states, from New, Active, Resolved, to Closed. (The Removed state supports removing a work item from appearing on the backlog; to learn more, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove).)
+Workflow states define how a work item progresses from its creation to closure. The four main states that are defined for the User Story (Agile process) describe a user story's progression. The workflow states are New, Active, Resolved, and Closed. (The Removed state supports removing a work item from appearing on the backlog; to learn more, see [Move, change, or delete work items](../backlogs/remove-delete-work-items.md#remove).)
 
-The natural progressions and regressions of the user story, product backlog item, and requirement WITs are as shown. 
+The natural progressions and regressions of the user story, product backlog item, and requirement WITs are as shown.  
  
 [!INCLUDE [temp](../includes/four-process-workflow.md)] 
 
@@ -185,6 +185,7 @@ Here's how the default, inherited states map to the state categories for all thr
 
 #### [Scrum process](#tab/scrum-process) 
 
+
 :::row:::
    :::column span="2":::
    **Categories**
@@ -254,6 +255,7 @@ Here's how the default, inherited states map to the state categories for all thr
  
 
 #### [CMMI process](#tab/cmmi-process) 
+
 
 :::row:::
    :::column span="2":::
@@ -333,11 +335,11 @@ Here's how the default, inherited states map to the state categories for all thr
 
 ## When to add a State versus a Kanban column
 
-Both States and Kanban columns are used to track the status of work. Workflow states are shared across a project while Kanban columns are shared within a team. Only project collection admins can add custom states, while team admins can add Kanban columns.  
+Use both States and Kanban columns to track the status of work. Workflow states are shared across a project while Kanban columns are shared within a team. Only project collection admins can add custom states, while team admins can add Kanban columns.  
 
 Add custom states when you want all teams to track the status according to the business workflow adopted by the organization. By customizing the process, you automatically customize the projects and WITs that reference that process. 
 
-Also, by adding custom states to support those workflow states that several teams want to track, you avoid the confusion that can arise when team's create a query based on a Kanban column. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items that appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path. Another work around is to formalize the columns by adding custom states, which can be shared across teams. 
+Adding custom states to support workflow states that multiple teams want to track, helps avoid the resulting confusion of different teams creating queries based on a Kanban column. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items that appear on different boards might not be the same. The primary workaround for this issue is to maintain single ownership of work items by team area path. Another workaround is to formalize the columns by adding custom states that can be shared across teams. 
 
 
 <a id="auto-complete-work-items-with-pr" />

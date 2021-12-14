@@ -11,7 +11,8 @@ author: yukom
 
 # Extensions, Previews, and more – Nov 18
 
-Today is our Connect(); developer event and we have a ton of news for VS Online…
+
+Today is our [Connect(); developer event](/events/connect-microsoft-connect--2018/d190) and we have a ton of news for VS Online…
 
 ## Visual Studio Team Services
 

@@ -6,7 +6,7 @@ ms.topic: reference
 ms.assetid: 11E76804-BA67-4086-9CF1-8CB2887169BA
 ms.author: vijayma
 author: vijayma
-ms.date: 10/18/2021
+ms.date: 12/01/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,13 +20,26 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-Use this task to build with MSBuild and set the Visual Studio version property. Learn more about installing [Visual Studio images on Azure](/visualstudio/install/using-visual-studio-vm).  
+Use this task to build with MSBuild and set the Visual Studio version property. Learn more about installing [Visual Studio images on Azure](/visualstudio/install/using-visual-studio-vm). 
+
+> [!NOTE]
+> This task is only supported on agents running Windows. 
 
 ## Demands
 
-msbuild, visualstudio
+- msbuild
+- visualstudio
 
-> **Azure Pipelines:** If your team wants to use Visual Studio with the Microsoft-hosted agents, select **windows-latest** as your default build pool. See [Microsoft-hosted agents](../../agents/hosted.md).
+```YAML
+pool:
+  name: Azure Pipelines
+  demands:
+  - msbuild
+  - visualstudio
+```
+
+> [!Note]
+> If your team wants to use Visual Studio with the Microsoft-hosted agents, select **windows-latest** as your default build pool. See [Microsoft-hosted agents](../../agents/hosted.md) for more details.
 
 ::: moniker range="> tfs-2018"
 
