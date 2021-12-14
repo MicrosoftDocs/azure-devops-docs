@@ -874,9 +874,9 @@
           href: tasks/deploy/azure-file-copy.md
         - name: Azure File Copy (previous version)
           href: tasks/deploy/azure-file-copy-version3.md
-        - name: Azure Function App
+        - name: Azure Functions
           href: tasks/deploy/azure-function-app.md
-        - name: Azure Function App for Container
+        - name: Azure Functions for Container
           href: tasks/deploy/azure-rm-functionapp-containers.md
         - name: Azure Key Vault
           href: tasks/deploy/azure-key-vault.md
