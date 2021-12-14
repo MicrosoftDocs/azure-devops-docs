@@ -347,8 +347,6 @@ Read the variables:
     echo "Non-secrets automatically mapped in, sauce is $SAUCE"
     echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
     echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
-    echo "Future jobs can also see $SETVARS_OUTPUTSAUCE"
-    echo "Future jobs can also see $(SetVars.outputSauce)"
 ```
 ::: moniker-end
 
