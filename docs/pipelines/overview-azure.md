@@ -178,7 +178,7 @@ Follow the links provided in the following table to learn more about the Azure s
    :::column-end::: 
    :::column span="3":::
       Provides a fully managed Platform as a service (PaaS) to implement serverless architecture. To learn more, see:
-      - [Deploy an Azure Function](targets/azure-functions.md)
+      - [Deploy an Azure Function](/azure/azure-functions/functions-how-to-azure-devops)
       - [Azure Function App task](tasks/deploy/azure-function-app.md)
       - [Azure Function App for Containers task](tasks/deploy/azure-rm-functionapp-containers.md) 
    :::column-end:::
