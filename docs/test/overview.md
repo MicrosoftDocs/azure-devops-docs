@@ -23,19 +23,6 @@ and gathering feedback from stakeholders.
 
 :::image type="content" source="media/overview/intro-test-plans.png" alt-text="Screenshot of Azure Test Plans, Test Plans, All":::
 
-<!--- Elements to discuss: 
-
-Dev Inner Loop – Unit Testing in Visual Studio IDE
-
- 
-Load and Performance Testing
-Integration with 3rd party test services
-
-
-![Holistic approach to manual testing, types of manual testing and personas involved](media/manual-testing/schematic-01.png)  
-&nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
-
---> 
 
 
 > [!NOTE]  
@@ -46,7 +33,7 @@ Integration with 3rd party test services
 
 Through a combination of browser-based tools&mdash;[**Test plans**](#test-plans), [**Progress report**](#progress-report), [**Parameters**](#parameters), [**Configurations**](#configurations), [**Runs**](#runs), and [Test tools](#test-tools)&mdash;and DevOps integration features, Azure Test Plans supports the following test objectives:  
 
-- [**Manual and exploratory testing**](#manual): Manual and exploratory testing includes the following test activities:  
+- [**Manual and exploratory testing**](#manual): Manual and exploratory testing which includes the following test activities:  
 	- **[Planned manual testing](#test-plans)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
 	- **[User acceptance testing](#user-acceptance)**. Testing carried out by designated user acceptance testers to verify the value delivered meets customer requirements, while reusing the test artifacts created by engineering teams. 
 	- **[Exploratory testing](#exploratory-testing)**. Testing carried out by development teams, including developers, testers, UX teams, product owners and more, by exploring the software systems without using test plans or test suites. 
@@ -67,13 +54,15 @@ Through a combination of browser-based tools&mdash;[**Test plans**](#test-plans)
 
 Azure Test Plans provides software development teams the following benefits. 
 
-* **Test on any platform**. With the **Test Plans** web portal, you can use any supported browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, browser-based interface that can be accessed from all major browsers on any platform.
+- **Test on any platform**: With the **Test Plans** web portal, you can use any supported browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, browser-based interface that users can access from all major browsers on any platform.
 
-* **Rich diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your manual tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
+- **Rich diagnostic data collection**: Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your manual tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
 
-* **End to End traceability**. Azure DevOps provides [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
+- **End to End traceability**: Azure DevOps provides [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
 
-* **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Azure DevOps](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
+- **Integrated analytics**: The Analytics service provides data that feeds into built-in reports, configurable dashboard widgets, and customizable reports using Power BI. Data tracks test plan progress and trends for both manual and automated tests. Test analytics provides near real-time visibility into test data for builds and releases. Teams can act on this data to improve test collateral to help maintain healthy pipelines. 
+
+- **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Azure DevOps](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
 
 
 ### Supported scenarios and access requirements 
@@ -165,12 +154,10 @@ Access to Azure DevOps web portal features are managed through access levels ass
 
 <a id="manual" /> 
 
- Tests can be authored using an Excel-like grid view or other means available. Testers execute tests assigned to them using a runner to test your app(s). The runner can execute in a browser or as a client on your desktop, enabling you to test on any platform or test any app. During execution, rich diagnostic data is collected to help with debugging or reproducing the issue later. Bugs filed during the process automatically include the captured diagnostic data. 
-
 
 ## Manual and exploratory testing
 
-To support manual and exploratory testing, Azure Test Plans uses test-specific work item types to plan and author tests. In addition, it provides two test tools to support running tests. The [**Test plans**](#test-plans),  [**Parameters**](#parameters), and [**Configurations**](#configurations) hubs provide the tools to efficiently create and manage test items, their settings, and configuration. Test suites can be dynamic (requirements-based-suites and query-based-suites) to help you understand the quality of associated requirements under development, or static to help you cover regression tests.
+To support manual and exploratory testing, Azure Test Plans uses test-specific work item types to plan and author tests. In addition, it provides two test tools to support running tests. The [**Test plans**](#test-plans),  [**Parameters**](#parameters), and [**Configurations**](#configurations) hubs provide the tools to efficiently create and manage test items, their settings, and configurations. Test suites can be dynamic&mdash;requirements-based-suites and query-based-suites&mdash;to help you understand the quality of associated requirements under development, or static to help you cover regression tests.
 
 ### Test-specific work item types 
 
@@ -186,7 +173,8 @@ The work item types&mdash;**Test Plans**, **Test Suites**, **Test Cases**, **Sha
 
 ### Define and execute tests 
 
-The **Test plans** hub of Azure Test Plans provides the tools you need to define, manage, and run your tests. Test cases, both manual and automated, are organized within test suites which are grouped under test plans.  
+The **Test plans** hub of Azure Test Plans provides the tools you need to define, manage, and run your tests. Test cases, both manual and automated, are organized within test suites which are grouped under test plans. 
+
 
 :::image type="content" source="media/overview/test-planning.png" alt-text="Screenshot of Azure Test Plans, Test plans, test suites, Execute tab":::
 
@@ -210,12 +198,6 @@ Within each test case, you specify a set of test steps with their expected outco
 :::image type="content" source="media/overview/test-case-form.png" alt-text="Screenshot of test case work item form.":::
 
 
-<!--- 
-### Execute tests 
- 
-
---> 
-
 <a id="parameters" />
 
 ### Manage shared parameters  
@@ -234,18 +216,18 @@ With the [Configurations](test-different-configurations.md) hub, teams can defin
  
 <a id="test-tools" />
 
-### Test tools and test execution 
+## Test execution and test tools 
  
-With the following tools, developers, testers, and stakeholders can capture rich data as they execute tests and automatically log code defects linked to the tests. Test your application by executing tests across desktop or web apps. 
+With the following tools, developers, testers, and stakeholders can initiate tests and capture rich data as they execute tests and automatically log code defects linked to the tests. Test your application by executing tests across desktop or web apps. 
 
-- **Test Runner**: A browser-based tool for testing web applications and a desktop client version for testing desktop applications that you launch from the **Test plans** hub to run manual tests. Test Runner supports rich data collection while performing tests, such as image action log, video recording, code coverage, etc. It also allows users to create bugs and mark the status of tests.  
-- **Test & Feedback extension**: A free extension to support exploratory testing that you access from Chrome, Edge, or Firefox browsers. The extension captures interactions with the application being explored through images or video and entering verbal or type-written comments. Information is captured in the Feedback Response work item type to help track response data.
+- [**Test Runner**](#test-runner): A browser-based tool for testing web applications and a desktop client version for testing desktop applications that you launch from the **Test plans** hub to run manual tests. Test Runner supports rich data collection while performing tests, such as image action log, video recording, code coverage, etc. It also allows users to create bugs and mark the status of tests.  
+- [**Test & Feedback extension**](#exploratory-testing): A free extension to support exploratory testing that you access from Chrome, Edge, or Firefox browsers. The extension captures interactions with the application being explored through images or video and entering verbal or type-written comments. Information is captured in the Feedback Response work item type to help track response data.
 
 ### Test execution capability 
 
 You can perform the following tasks using the indicated tools. 
 
-| Task                                                | Test plans hub | Test Runner | Test & Feedback | 
+| Task                                                | Test plans hub | Test Runner | Test & Feedback extension | 
 |-----------------------------------------------------| ---------------|-------------|----------------|
 | Bulk mark tests                                     |  ✔️            |             |                | 
 | Pass or fail tests or test steps                    |                |      ✔️     |      ✔️       | 
@@ -258,12 +240,19 @@ You can perform the following tasks using the indicated tools.
 | Assign a build for the test run                     |  ✔️            |             |                | 
 | Assign test settings                                |  ✔️            |             |                | 
 | Review test runs                                    |  ✔️            |             |                | 
+ 
 
+##  Execute tests 
 
-### Test web and desktop applications
+From the **Test plans** hub, **Execute** tab, team members can initiate test execution for one or more test cases defined for a test suite. Choices include running **Test Runner** for a web or desktop application. Optionally, team members can select Run with options to choose other supported clients for manual testing, or to select a build to for automated testing. To learn more, see [Run manual tests](run-manual-tests.md).
+
+:::image type="content" source="media/overview/execute-tests.png" alt-text="Screenshot ofExecute multiple test cases.":::
+ 
+
+### Test Runner  
 
 **Test Runner** runs tests for your web and desktop applications. Mark test steps and test outcomes as pass or fail, and collect
-diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all the captured diagnostic data
+diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all captured diagnostic data 
 to help your developers reproduce the issues. To learn more, see [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
 
 ![Testing web applications](media/manual-testing/test-web-app-01.png)
@@ -274,11 +263,11 @@ to help your developers reproduce the issues. To learn more, see [Run tests for 
 
 User acceptance testing (UAT) helps ensure teams deliver the the value requested by customers. You can create UAT test plans and suites, invite several testers to execute these tests, and monitor test progress and results using lightweight charts. To learn how, see [User acceptance testing](user-acceptance-testing.md).
 
-![Assigning testers to run all tests](media/manual-testing/assign-testers-01.png)
+![Assigning testers to run all tests](media/overview/assign-testers.png)
 
 <a name="exploratory-testing"></a>
 
-### Exploratory testing  
+### Exploratory testing with the Test & Feedback extension 
  
 The [Test &amp; Feedback extension](perform-exploratory-tests.md)
 is a simple browser-based extension you can use to test web apps 
@@ -607,9 +596,10 @@ tcm run /execute
 - [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 - [About requesting and providing feedback](../project/feedback/index.md)
 - [Cross-service integration and collaboration overview](../cross-service/cross-service-overview.md)
+- [Manage a virtual machine in Azure DevTest Labs](../pipelines/apps/cd/azure/deploy-provision-devtest-lab.md) 
+- [About pipeline tests](../pipelines/test/test-glossary.md)
 
 ## Additional resources
-
 
 - [Unit testing](/visualstudio/test/developer-testing-scenarios) 
 - [Unit test basics](/visualstudio/test/unit-test-basics)
@@ -662,7 +652,15 @@ Learn how to create tests plans and test cases, and run them using the Azure Dev
         [Test in Standalone mode](standalone-mode-exploratory-testing.md)  
     :::column-end:::
 :::row-end:::
+ 
+
+Dev Inner Loop – Unit Testing in Visual Studio IDE
+ 
+Load and Performance Testing
+Integration with 3rd party test services
 
 
+![Holistic approach to manual testing, types of manual testing and personas involved](media/manual-testing/schematic-01.png)  
+&nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
 
--->
+--> 
