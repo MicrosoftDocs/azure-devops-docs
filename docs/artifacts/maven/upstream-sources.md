@@ -28,11 +28,17 @@ Follow the instructions below to create a new feed and enable upstream sources. 
 
 ### On an existing feed
 
-1. Edit your feed. Select the **gear icon** in the top right of the page to open feed settings.
-2. Select the **Upstream sources** pivot.
-3. Select **Add upstream source** in the CommandBar.
-4. Select **Select a feed URL** and select **Maven Central (https://repo.maven.apache.org/maven2/)**. If you like, customize the upstream name.
-5. Select **Add**.
+1. Select the ![gear icon](../../media/icons/gear-icon.png)  in the top right of the page to access your feed's settings.
+
+1. Select **Upstream sources**.
+
+1. Select **Add upstream source**.
+
+1. Select **Public source**, and then select **Maven Central (https://repo.maven.apache.org/maven2/)** from the dropdown menu.
+
+    :::image type="content" source="../media/maven-upstream-source.png" alt-text="Screenshot showing how to add Maven central upstream source.":::
+
+1. Select **Add** when you are done.
 
 ## Filter to saved packages
 
