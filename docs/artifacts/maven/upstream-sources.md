@@ -4,7 +4,7 @@ description: How to use packages from Maven upstream
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 12/15/2021
-monikerRange: '=azure-devops'
+monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
