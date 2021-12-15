@@ -29,7 +29,7 @@ The suite will automatically include every test case that is returned by the que
 
 ### Q: Can I copy or clone test plans and test suites?
 
-**A:** Yes. See [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md). For Azure DevOps Server 2020 and later versions, you can clone test plans and import and export test suites from the web portal. Or, for all versions, you can use the TCM command line tool. To learn how, see [Test Plan Clone](/rest/api/azure/devops/testplan/test-plan-clone/clone-test-plan?view=azure-devops-rest-5.1&preserve-view=true).
+**A:** Yes. See [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md). For Azure DevOps Server 2020 and later versions, you can clone test plans and import and export test suites from the web portal. Or, for all versions, you can use the Test Case Management (TCM) command line tool. To learn how, see [Test Plan Clone](/rest/api/azure/devops/testplan/test-plan-clone/clone-test-plan?view=azure-devops-rest-5.1&preserve-view=true).
 
 Other options include using the REST APIs:
 
@@ -52,7 +52,7 @@ For detailed procedures, see [Create manual test cases](create-test-cases.md).
 
 ### Q: Can I copy test cases from one project to another?
 
-**A:** Yes. See [Copy test cases](copy-clone-test-items.md#copy-test-cases), Copy test cases. For Azure DevOps Server 2020 and later versions, you can copy test cases from within a project or another project to a test suite, or you can use the [Grid view to copy and paste test cases](copy-clone-test-items.md#copy-paste) from one suite to another. Optionally, you can [bulk import and export test cases](copy-clone-test-items.md#bulk-import-export).
+**A:** Yes. See [Copy test cases](copy-clone-test-items.md#copy-test-cases). For Azure DevOps Server 2020 and later versions, you can copy test cases from within a project or another project to a test suite, or you can use the [Grid view to copy and paste test cases](copy-clone-test-items.md#copy-paste) from one suite to another. Optionally, you can [bulk import and export test cases](copy-clone-test-items.md#bulk-import-export).
 
 ### Q: Can I add an extra line to a test step?
 
@@ -83,7 +83,7 @@ This view includes all projects.
 Select the associated test suite to view it.
 To view the project and the test plan for that test suite, move your pointer over the test suite.
 
-![On Tests Plans page, select details pane. Select test suites in the test details pane.](media/create-test-cases/TestSuites.png)
+![On Test Plans page, select details pane. Select test suites in the test details pane.](media/create-test-cases/TestSuites.png)
 
 ::: moniker-end
 
@@ -130,7 +130,7 @@ For test result charts, each instance of a test that is run is counted for each 
 *****
 
 <a name="repeatdifferent"></a>
-## Repeate a test with different data
+## Repeat a test with different data
 
 For detailed procedures, see [Repeat a test with different data](repeat-test-with-different-data.md).
 
