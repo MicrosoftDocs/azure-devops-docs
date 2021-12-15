@@ -171,16 +171,9 @@ The work item types&mdash;**Test Plans**, **Test Suites**, **Test Cases**, **Sha
 
 <a id="test-plans" />
 
-### Define and execute tests 
-
-The **Test plans** hub of Azure Test Plans provides the tools you need to define, manage, and run your tests. Test cases, both manual and automated, are organized within test suites which are grouped under test plans. 
-
-
-:::image type="content" source="media/overview/test-planning.png" alt-text="Screenshot of Azure Test Plans, Test plans, test suites, Execute tab":::
-
 ### Define test plans and test suites 
 
-Create and manage test plans and test suites from the **Test plans** hub. 
+You create and manage test plans and test suites from the **Test plans** hub. 
 Add one or more test suites&mdash;static, requirement-based, or query-based&mdash;to the test plans. Export and share test plans and test suites with your teams.
 To learn how, see [Create test plans and test suites](create-a-test-plan.md) and [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md).
 
@@ -310,7 +303,8 @@ Azure Test Plans supports automated testing in the following ways:
 	- [.NET Core CLI task](../pipelines/tasks/build/dotnet-core-cli.md): Use to build, test, package, or publish a dotnet application.  
 
 	For additional tasks, see [Publish Test Results task](../pipelines/tasks/test/publish-test-results.md)
- 
+- Provide built-in reports and configurable dashboard widgets to display results of pipeline testing. 
+- Collect test results and associated test data into the Analytics service. 
 
 <a id="traceability" /> 
 
@@ -326,7 +320,7 @@ Azure Test Plans supports linking bugs and requirements to test cases and test s
  
 <a id="review-linking" /> 
 
-## View items linked to a test case
+### View items linked to a test case
 
 From the **Test plans** hub, you can view and open the test suites, requirements, and bugs linked to a test case. The **Test Suites** tab also indicates the test plans and projects that reference the test case. The **Requirements** tab lists work items linked to the test case that belong to the requirements category. In addition, you can create a direct-links query that lists items that link to test cases via the **Tests/Tested by** link type. To learn more, see [Create test cases](create-test-cases.md) and [Use direct links to view dependencies](../boards/queries/using-queries.md#use-direct-links-to-view-dependencies). 
 
@@ -350,7 +344,7 @@ From the Azure Boards Kanban boards, you can add tests from a user story or feat
  
 <a id="requirements-quality" /> 
 
-## Requirements quality widget 
+### Requirements quality widget 
 
 The Requirements quality widget displays a list of all the requirements in scope, along with the **Pass Rate **for the tests and count of **Failed** tests. Selecting a Failed test count opens the **Tests** tab for the selected build or release. The widget also helps to track the requirements without any associated test(s). To learn more, see [Requirements traceability](../pipelines/test/requirements-traceability.md). 
 
@@ -384,7 +378,7 @@ See more at [Track test status](track-test-status.md).
 
 ### Progress reports 
 
-With the [Progress report](progress-report.md) hub, teams can track progress of more than one test plan or test suite. It helps answer the following questions:
+With the [Progress report](progress-report.md) hub, teams can track progress of more than one test plan or test suite. This report helps answer the following questions:
 
 - *How much testing is complete?*
 - *How many tests have passed, failed or are blocked?*
