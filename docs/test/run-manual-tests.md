@@ -80,8 +80,6 @@ You can use the web runner for web apps, or the desktop runner for desktop app d
    
    ![View bugs filed](media/run-manual-tests/view-bugs.png)  
 
-[Can I run tests offline and then import the results?](reference-qa.md#runoffline)
-
 <a name="run-desktop"></a>
 
 ## Run tests for desktop apps
@@ -100,9 +98,6 @@ If you want to collect more diagnostic data for your desktop application, run yo
    > Check that the Test Runner client is available for your platform. Currently, the Test Runner client is available only for x64.
 
 1. Choose **Launch** and start testing the same way as [described above](#run-web) for web apps. See [collect diagnostic data for the test](collect-diagnostic-data.md) for more information about data collection. 
-
-[Can I run tests offline and then import the results?](reference-qa.md#runoffline)
-
 
 ## Next step
 
