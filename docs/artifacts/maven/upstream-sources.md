@@ -1,10 +1,11 @@
 ---
 title: Use packages from Maven Central
-description: How to use packages from upstreams
+description: How to use packages from Maven upstream
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 12/15/2021
 monikerRange: '=azure-devops'
+"recommendations": "true"
 ---
 
 # Use packages from Maven Central
@@ -42,6 +43,12 @@ Follow the instructions below to create a new feed and enable upstream sources. 
 
 ## Filter to saved packages
 
-You can see the packages you have saved in your feed by selecting the appropriate Source filter.
+You can see the packages you have saved in your feed by selecting the **Maven Central** Source filter.
 
-![Viewing your cached packages](media/view-cached-packages.png)
+:::image type="content" source="media/view-cached-packages.png" alt-text="Screenshot showing how to filter upstream sources.":::
+
+## Related articles
+
+- [Install Maven Artifacts](./install.md)
+- [Configure permissions](../feeds/feed-permissions.md)
+- [Configure upstream behavior](../concepts/upstream-behavior.md)
