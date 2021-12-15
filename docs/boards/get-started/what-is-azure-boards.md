@@ -2,7 +2,7 @@
 title: What is Azure Boards? Tools to manage software development projects.  
 titleSuffix: Azure Boards
 description: Learn about the Agile tools Azure Boards provides. 
-ms.custom: boards-get-started
+ms.custom: boards-get-started, contperf-fy22q2
 ms.technology: devops-new-user
 ms.assetid:  
 ms.author: kaelli
@@ -22,7 +22,7 @@ Quickly and easily track work, issues, and code defects associated with your pro
  
 :::image type="content" source="media/about-boards/intro-boards.png" alt-text="Screenshot of Azure Boards Hub Pages, Kanban Board":::
 
-If you're ready to start using Azure Boards, see [Sign up for free and invite others to collaborate in Azure Boards](sign-up-invite-teammates.md). Need more information? See [Reasons to use Azure Boards to plan and track your work](/why-use-azure-boards.md). 
+If you're ready to start using Azure Boards, see [Sign up for free and invite others to collaborate in Azure Boards](sign-up-invite-teammates.md). Need more information? See [Reasons to use Azure Boards to plan and track your work](why-use-azure-boards.md). 
 
 > [!NOTE]  
 > This article applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Most of the information is valid for earlier on-premises versions, however, images show only examples for the latest version.  
@@ -198,7 +198,7 @@ Extensions provide support for other tools. An extension is an installable softw
 
 ## Related articles
 
-- [Reasons to use Azure Boards to plan and track your work](/why-use-azure-boards.md)
+- [Reasons to use Azure Boards to plan and track your work](why-use-azure-boards.md)
 - [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
 - [Configure and customize Azure Boards](../configure-customize.md)
 - [The DevOps journey at Microsoft](https://azure.microsoft.com/solutions/devops/devops-at-microsoft/)
