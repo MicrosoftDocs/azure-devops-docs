@@ -7,7 +7,7 @@ ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
 monikerRange: '>= tfs-2015'
-ms.date: 11/10/2021
+ms.date: 12/17/2021
 ---
 
 # Run manual tests
@@ -25,16 +25,63 @@ While testing, gather information like a screenshot or your testing actions.
 If you find an issue when testing, use Test Runner to create a bug.
 Include test steps, screenshots, and comments in the bug.
 
+> [!NOTE]
+> You execute test points and not test cases.
+> When you add a test case to a test suite, test point(s) are generated.
+> A test point represents a unique combination of test case, test suite, configuration, and tester.
+>
+> For example, a test case named *Test login functionality*, which has two configurations for the Edge and Chrome browsers, generates two test points.
+> You can execute or run each of these test points.
+> On execution, test results are generated.
+> Through the test results view, or execution history, you can see all executions of a test point.
+> The latest execution for the test point is what you see in the **Execute** tab.
+
+## Supported clients and run options
+
+In addition to running tests for a specific build, run options support various test scenarios.
+To see the options, in the **Execute** tab, select a test, and then select **Run with options**.
+
+**Select test type and runner** offers these options:
+
+- **Manual tests using Web Browser based runner**
+  You can select a specific build to test, as described in [Run tests for a build](#run-tests-for-a-build).
+  Select **Find builds** to open the **Find builds** dialog box and search for a build to test against.
+
+- **Manual tests using Test Runner client**
+  You can run manual tests for desktop applications by using the Test Runner client. If necessary, install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
+
+- **Automated tests using release stage**
+  To run tests using a release stage, select a build.
+  Select a release pipeline and stage to consume the build's artifacts.
+  For more information, see [Run automated tests from test plans](run-automated-tests-from-test-hub.md).
+
+- **Manual tests using Microsoft Test Manager 2017 client**
+  Collects data from a local machine. Select a build. Select one or more data collectors: **Action log**, **Event log**, **Screen and voice recorder**, and **System information**.
+
+- **Manual tests using Microsoft Test Manager 2015 or earlier client**
+
+The Test Center in the Microsoft Test Manager client is a desktop-based manual testing solution.
+Testers can use it for manual testing needs. For more information, see [Guidance on Microsoft Test Manager usage](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage).
+To get Microsoft Test Manager, install [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/).
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
 
 <a name="run-web"></a>
 
 ## Run tests for web apps
+
+Follow these steps to run tests for web applications.
+
 ::: moniker range=">=azure-devops-2020"
+1. From the web portal, open your project and select **Test Plans** > **Test plans**.
+
 1. If you haven't already, [create your manual tests](create-test-cases.md#test-cases).
 
-1. Select a test from a test suite and select **Run for web application**.
+1. Select **Mine** or **All**, or use **Filter by title** to find your test plan and select it. Select the **Execute** tab.
+
+   ![Screenshot shows a test suite selected with the Execute tab selected](media/run-manual-tests/test-suite-execute-tab.png)
+
+1. Select one or more tests, or all the tests from a test suite. Then select **Run for web application**.
 
    ![Screenshot shows how to select and run a specific test.](media/run-manual-tests/run-test-web-application.png)
 
@@ -54,43 +101,11 @@ Include test steps, screenshots, and comments in the bug.
    ![Screenshot shows Test Runner open to a failed test where you can enter a comment.](media/run-manual-tests/test-result-enter-comment.png)
 
    If a test step fails, you can enter a comment on why it failed or [collect diagnostic data for the test](collect-diagnostic-data.md).
+   You can also [Create or add to a bug](#create-or-add-to-a-bug).
 
    > [!IMPORTANT]
    >  Any test step that has expected result is called a *validation test step*. Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.
-
-1. Create a bug to describe what failed. Select **Create bug**.
-
-   ![Screenshot shows Test Runner with Create bug selected and the new bug dialog box open.](media/run-manual-tests/create-bug-test-fail.png)
-
-   The test case is linked to the bug.
-   The steps and your comments are automatically added to the bug.
-
-   If Test Runner is running in a web browser window, you can copy a screenshot from the clipboard directly into the bug.
-
-1. You can see any bugs reported during your test session.
-
-   ![Screenshot shows the number of bugs created during the test.](media/run-manual-tests/see-reported-bugs.png)
-
-1. When you've run all your tests, save the results and close Test Runner.
-   All the test results are stored in Azure Test Plans.
-
-1. View the testing status for your test suite.
-   You see the most recent results for each test.
-
-   ![Screenshot shows the result of running test cases, with outcomes of Active, Failed, and Passed displayed.](media/run-manual-tests/test-case-outcome.png)
-
-   If you haven't run a test yet, its state is active.
-   Reset the state of a test to active if you want to rerun it.  
-
-1. Open a test suite and choose the test case in the **Related Work** section.
-   Then use the child links in the **Related Work** section of that work item to view the bugs filed by the tester.
-   
-   ![Screenshot shows the Related Work section of a work item to view bugs filed for that test.](media/run-manual-tests/related-work-shows-bugs.png)  
-
-You can run tests offline and then import the results. For more information, see the [Offline Test Execution extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.OfflineTestExecution).
-
 ::: moniker-end
-
 ::: moniker range="<=azure-devops-2019"
 1. If you haven't already, [create your manual tests](create-test-cases.md#test-cases).
 
@@ -109,46 +124,97 @@ You can run tests offline and then import the results. For more information, see
    ![Use Microsoft Test Runner to record your test results](media/run-manual-tests/RunTestsStartApp.png)
 
 1. Mark each test step as either passed or failed based on the expected results. If a test step fails, you can enter a comment on why it failed  or
-   [collect diagnostic data for the test](collect-diagnostic-data.md).
+   [collect diagnostic data for the test](collect-diagnostic-data.md). You can also [Create or add to a bug](#create-or-add-to-a-bug).
 
    ![Mark test steps](media/run-manual-tests/RunTest_3.png)
 
    > [!IMPORTANT]
    >  Any test step that has expected result is called a validation test step. Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.
- 
-1. Create a bug to describe what failed.
+::: moniker-end
+
+## Create or add to a bug
+
+If a test step fails, enter a comment about the behavior and collect diagnostic data.
+You can create a bug to capture and track the issue.
+You can also update an existing bug with information about the failure.
+
+::: moniker range=">=azure-devops-2020"
+1. When a step fails, enter a comment and select **Create bug**.
+
+   ![Screenshot shows Test Runner with a failed test and Create bug highlighted.](media/run-manual-tests/create-bug-button.png)
+
+1. In the **New bug** dialog box, enter a name for the bug.
+
+   ![Screenshot shows Test Runner with Create bug selected and the new bug dialog box open.](media/run-manual-tests/create-bug-test-fail.png)
+
+   The steps and your comments are automatically added to the bug.
+   If Test Runner is running in a web browser window, you can copy a screenshot from the clipboard directly into the bug.
+
+1. You can assign the bug, enter additional comments, or link to other issues. Select **Save & Close** when done.
+
+   The test case is linked to the bug you created.
+
+You can see any bugs reported during your test session.
+
+![Screenshot shows the number of bugs created during the test.](media/run-manual-tests/see-reported-bugs.png)
+
+Instead of creating a bug, you can update an existing bug with information about this step. Select **Add to existing bug** from the **Create bug** drop-down menu.
+
+![Screenshot shows Test Runner with Add to existing bug selected](media/run-manual-tests/find-existing-bug.png)
+::: moniker-end
+
+::: moniker range="<=azure-devops-2019"
+1. In the Test Runner window, select **Create a bug**.
 
    ![Submit a bug](media/run-manual-tests/RunTest_4.png)
 
-   The steps and your comments are automatically added to the bug. Also, 
-   the test case is linked to the bug.
+   The steps and your comments are automatically added to the bug.
+   If Test Runner is running in a web browser window, you can copy a screenshot from the clipboard directly into the bug.
 
-   If Test Runner is running in a web browser window, 
-   you can copy a screenshot from the clipboard directly into the bug.
+1. You can assign the bug, enter additional comments, or link to other issues. Select **Save & Close** when done.
 
-1. You can see any bugs that you reported during your test session.
+   The test case is linked to the bug you created.
 
-   ![Bugs logged](media/run-manual-tests/RunTest_5.png)
+You can see any bugs that you reported during your test session.
 
-1. When you've run all your tests, save the results and close Test Runner. 
-   All the test results are stored in Azure DevOps.
-   [How do I resume testing, or run one or more tests again?](reference-qa.md#qanda)
+![Bugs logged](media/run-manual-tests/RunTest_5.png)
+
+Instead of creating a bug, you can update an existing bug with information about this step.
+Select the **+** icon for Create a bug, then **Add to existing bug**.
+Find and update an existing bug.
+::: moniker-end
+
+## Save results, close the session, and review results
+
+After you complete testing, save your results, close the session, and review test results.
+
+1. When you've run all your tests, select **Save and close**.
+   All the test results are stored in Azure Test Plans.
 
 1. View the testing status for your test suite.
    You see the most recent results for each test.
 
-   ![View test results](media/run-manual-tests/RunTest_8.png)
+   ::: moniker range=">=azure-devops-2020"
+   ![Screenshot shows the result of running test cases, with outcomes of Active, Failed, and Passed displayed.](media/run-manual-tests/test-case-outcome.png)
+   ::: moniker-end
+   ::: moniker range="<=azure-devops-2019"
+   ![Screenshot shows View test results.](media/run-manual-tests/RunTest_8.png)
+   ::: moniker-end
 
    If you haven't run a test yet, its state is active.
-   You can reset the state of a test to active if you want to rerun it.
+   Reset the state of a test to active if you want to rerun it.  
 
-1. Open a test and choose the test case in the **Related Work** section.
-   Then use the **Child** links in the **Related Work** section of that 
-   work item to view the bugs filed by the tester.
-   
-   ![View bugs filed](media/run-manual-tests/view-bugs.png)  
+1. Open a test suite and choose the test case in the **Related Work** section.
+   Then use the child links in the **Related Work** section of that work item to view the bugs filed by the tester.
 
-::: moniker-end
+   ::: moniker range=">=azure-devops-2020"
+   ![Screenshot shows the Related Work section of a work item to view bugs filed for that test.](media/run-manual-tests/related-work-shows-bugs.png)  
+   ::: moniker-end
+   ::: moniker range="<=azure-devops-2019"
+   ![View bugs filed](media/run-manual-tests/view-bugs.png)
+   ::: moniker-end  
+
+You can run tests offline and then import the results. For more information, see the [Offline Test Execution extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.OfflineTestExecution).
 
 <a name="run-desktop"></a>
 
@@ -156,6 +222,12 @@ You can run tests offline and then import the results. For more information, see
 ::: moniker range=">=azure-devops-2020"
 
 If you want to collect more diagnostic data for your desktop application, run your tests using Test Runner client.
+
+1. From the web portal, open your project and select **Test Plans** > **Test plans**.
+
+1. Select **Mine** or **All**, or use **Filter by title** to find your test plan and select it. Select the **Execute** tab.
+
+   ![Screenshot shows a test suite selected with the Execute tab selected](media/run-manual-tests/test-suite-execute-tab.png)
 
 1. Launch Test Runner from Azure Test Plans by selecting **Run for desktop application** from the dropdown menu.
 
@@ -191,97 +263,35 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 ::: moniker-end
 
-## Use test options
-
-You can run all the tests in a test suite, modify a step while running, specify which build to test, and add screenshots or other information during testing.
-
-::: moniker range=">=azure-devops-2020"
-### Run all tests
+## Run all tests
 
 You can run all the tests in a test suite at once.
 
+::: moniker range=">=azure-devops-2020"
 Select a test suite and select **Run for web application** or **Run for desktop application** to run all the active tests.
 
 ![Screenshot shows how to select and run all active tests in a test suite.](media/run-manual-tests/run-test-test-suite.png)
+::: moniker-end
+::: moniker range="<=azure-devops-2019"
+Select a test suite and select **Run** to run all the active tests.
 
-### Run tests for a build
+![Screenshot shows how to run all active tests in a test suite.](media/run-manual-tests/RunTestsRunSuite.png) 
+::: moniker-end
+
+## Run tests for a build
 
 Choose a build to run tests against.
 
+::: moniker range=">=azure-devops-2020"
 1. From the dropdown, select **Run with options**.
 
    ![Screenshot shows running a test for web application with options.](media/run-manual-tests/run-web-application-test-options.png)
 
-1. In the **Run with options** dialog box, sSelect the build you want.
+1. In the **Run with options** dialog box, select the build you want.
 
    ![Screenshot shows the Run with options dialog box with a build selected.](media/run-manual-tests/run-test-select-build.png)
-
-   > [!NOTE]
-   > The selected build must be from the project in which the tests are defined.
-
-   Any bug filed during the run is associated with the selected build.
-   The test outcome will be published against that build.
-
-### Modify a test step during a test run
-
-Fix problems with your test steps while the test is still running.
-Select the **Edit test step** icon.
-
-![Screenshot shows how to select the edit icon to edit test steps.](media/run-manual-tests/edit-icon-test-run.png)
-
-You can insert, reorder, or delete steps.
-You can also edit the text itself.
-
-![Screenshot shows the tool to edit test steps when you run a test.](media/run-manual-tests/edit-test-step.png)
-
-### Add a screenshot
-
-Add a screenshot to the test results while running a test.
-
-If you use Google Chrome or Firefox, use the web runner to take screenshots of the web app while testing.
-For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
-
-![Screenshot shows the button for capturing a screenshot during a test.](media/run-manual-tests/test-capture-screen.png)
-
-For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-screenshot).
-
-### Capture actions from a test
-
-Capture your actions on the application as a log.
-
-If you use Google Chrome or Firefox, use the web runner capture your actions on the web app as image logs while testing.
-For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
-
-![Screenshot show the button for capturing an image action log from the app.](media/run-manual-tests/test-capture-action.png)
-
-For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-log).
-
-### Capture screen recordings of your app being tested
-
-Capture screen recordings of my app during testing.
-
-If you use Google Chrome or Firefox, use the web runner to capture screen recordings of your web and desktop apps while testing.
-For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
-
-![Screenshot show the button for capturing a screen recording from the app.](media/run-manual-tests/test-capture-screen-recording.png)
-
-For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
-
 ::: moniker-end
-
 ::: moniker range="<=azure-devops-2019"
-### Run all tests
-
-You can run all the tests in a test suite at once.
-
-Select a test suite and select **Run** to run all the active tests.
-
-![Screenshot shows how to run all active tests in a test suite.](media/run-manual-tests/RunTestsRunSuite.png) 
-
-### Run tests for a build
-
-Choose a build to run tests against.
-
 1. Choose **Run** and then select **Run with options**.
 
    ![Screenshot shows Run selected and Run with options available.](media/shared/collect-diagnostic-data-16.png)
@@ -289,23 +299,48 @@ Choose a build to run tests against.
 1. Select the build you want.
 
    ![Screenshot shows the Run with options dialog box with a build.](media/run-manual-tests/select-build-for-webrunner.png)
-
-   Any bug filed during the run will automatically be associated with the selected build.
-   The test outcome will be published against that build.
+::: moniker-end
 
    > [!NOTE]
    > The selected build must be from the project in which the tests are defined.
 
-### Modify a test step during a test run
+You can select a build for the following options:
 
-Fix problems with your test steps while the test is still running. Select the **Edit test step** icon.
+- Manual tests using Web Browser based runner
+- Automated tests using release stage
+- Manual tests using Microsoft Test Manager 2017 client
 
+The options that the dialog box offers differ depending on which one you select.
+For more information, see [Supported clients and run options](#supported-clients-and-run-options).
+
+Any bug filed during the run is associated with the selected build.
+The test outcome will be published against that build.
+
+## Modify a test step during a test run
+
+Fix problems with your test steps while the test is still running.
+Select the **Edit test step** icon.
+
+::: moniker range=">=azure-devops-2020"
+![Screenshot shows how to select the edit icon to edit test steps.](media/run-manual-tests/edit-icon-test-run.png)
+::: moniker-end
+::: moniker range="<=azure-devops-2019"
 ![Screenshot shows how to select the edit icon to modify test steps.](media/run-manual-tests/RunTest_11.png)
+::: moniker range="<=azure-devops-2019"
 
 You can insert, reorder, or delete steps.
 You can also edit the text itself.
 
+::: moniker range=">=azure-devops-2020"
+![Screenshot shows the tool to edit test steps when you run a test.](media/run-manual-tests/edit-test-step.png)
+::: moniker-end
+::: moniker range="<=azure-devops-2019"
 ![Screenshot shows the tool to modify test steps when you run a test.](media/run-manual-tests/RunTest_9.png)
+::: moniker-end
+
+## Capture rich diagnostic data
+
+While running your tests, you can add screenshots, capture actions as a log, and record video or voice.
 
 ### Add a screenshot
 
@@ -314,7 +349,12 @@ Add a screenshot to the test results while running a test.
 If you use Google Chrome or Firefox, use the web runner to take screenshots of the web app while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
+::: moniker range=">=azure-devops-2020"
+![Screenshot shows the button for capturing a screenshot during a test.](media/run-manual-tests/test-capture-screen.png)
+::: moniker-end
+::: moniker range="<=azure-devops-2019"
 ![Screenshot shows the button for capturing a screenshot.](media/shared/collect-diagnostic-data-01.png)
+::: moniker-end
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-screenshot).
 
@@ -325,7 +365,12 @@ Capture your actions on the application as a log.
 If you use Google Chrome or Firefox, use the web runner capture your actions on the web app as image logs while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Screenshot show the button to capture an image action log from the app.](media/shared/collect-diagnostic-data-06.png)
+::: moniker range=">=azure-devops-2020"
+![Screenshot shows the button for capturing an image action log from the app.](media/run-manual-tests/test-capture-action.png)
+::: moniker-end
+::: moniker range="<=azure-devops-2019"
+![Screenshot shows the button to capture an image action log from the app.](media/shared/collect-diagnostic-data-06.png)
+::: moniker-end
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-log).
 
@@ -336,39 +381,14 @@ Capture screen recordings of my app during testing.
 If you use Google Chrome or Firefox, use the web runner to capture screen recordings of your web and desktop apps while testing.
 For Microsoft Internet Explorer or Microsoft Edge browsers, or for desktop app testing, use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
+::: moniker range=">=azure-devops-2020"
+![Screenshot show the button for capturing a screen recording from the app.](media/run-manual-tests/test-capture-screen-recording.png)
+::: moniker-end
+::: moniker range="<=azure-devops-2019"
 ![Screenshot show the button to capture a screen recording from the app.](media/shared/collect-diagnostic-data-11.png)
-
-For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
-
 ::: moniker-end
 
-## Supported clients and run options
-
-In addition to running tests for a specific build, run options support various test scenarios.
-To see the options, in the **Execute** tab, select a test, and then select **Run with options**.
-
-**Select test type and runner** offers these options:
-
-- **Manual tests using Web Browser based runner**
-  You can select a specific build to test, as described in [Run tests for a build](#run-tests-for-a-build).
-  Select **Find builds** to open the **Find builds** dialog box and search for a build to test against.
-
-- **Manual tests using Test Runner client**
-  You can run manual tests for desktop applications by using the Test Runner client. If necessary, install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
-
-- **Automated tests using release stage**
-  To run tests using a release stage, select a build.
-  Select a release pipeline and stage to consume the build's artifacts.
-  For more information, see [Run automated tests from test plans](run-automated-tests-from-test-hub.md).
-
-- **Manual tests using Microsoft Test Manager 2017 client**
-  Collects data from a local machine. Select a build. Select one or more data collectors: **Action log**, **Event log**, **Screen and voice recorder**, and **System information**.
-
-- **Manual tests using Microsoft Test Manager 2015 or earlier client**
-
- The Test Center in the Microsoft Test Manager client is a desktop-based manual testing solution.
-Testers can use it for manual testing needs. For more information, see [Guidance on Microsoft Test Manager usage](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage).
-To get Microsoft Test Manager, install [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/).
+For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
 
 ## Frequently asked questions
 
