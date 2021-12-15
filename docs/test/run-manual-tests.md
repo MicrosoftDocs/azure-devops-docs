@@ -103,8 +103,6 @@ Follow these steps to run tests for web applications.
    If a test step fails, you can enter a comment on why it failed or [collect diagnostic data for the test](collect-diagnostic-data.md).
    You can also [Create or add to a bug](#create-or-add-to-a-bug).
 
-   > [!IMPORTANT]
-   >  Any test step that has expected result is called a *validation test step*. Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.
 ::: moniker-end
 ::: moniker range="<=azure-devops-2019"
 1. If you haven't already, [create your manual tests](create-test-cases.md#test-cases).
@@ -128,9 +126,9 @@ Follow these steps to run tests for web applications.
 
    ![Mark test steps](media/run-manual-tests/RunTest_3.png)
 
-   > [!IMPORTANT]
-   >  Any test step that has expected result is called a validation test step. Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.
 ::: moniker-end
+   > [!IMPORTANT]
+   > Any test step that has expected result is called a *validation test step*. Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.
 
 ## Create or add to a bug
 
@@ -150,8 +148,7 @@ You can also update an existing bug with information about the failure.
    The steps and your comments are automatically added to the bug.
    If Test Runner is running in a web browser window, you can copy a screenshot from the clipboard directly into the bug.
 
-1. You can assign the bug, enter additional comments, or link to other issues. Select **Save & Close** when done.
-
+1. You can assign the bug, enter comments, or link to other issues. Select **Save & Close** when done.
    The test case is linked to the bug you created.
 
 You can see any bugs reported during your test session.
@@ -164,15 +161,14 @@ Instead of creating a bug, you can update an existing bug with information about
 ::: moniker-end
 
 ::: moniker range="<=azure-devops-2019"
-1. In the Test Runner window, select **Create a bug**.
+1. In the Test Runner window, select **Create bug**.
 
-   ![Submit a bug](media/run-manual-tests/RunTest_4.png)
+   ![Submit a bug.](media/run-manual-tests/RunTest_4.png)
 
    The steps and your comments are automatically added to the bug.
    If Test Runner is running in a web browser window, you can copy a screenshot from the clipboard directly into the bug.
 
-1. You can assign the bug, enter additional comments, or link to other issues. Select **Save & Close** when done.
-
+1. You can assign the bug, enter comments, or link to other issues. Select **Save & Close** when done.
    The test case is linked to the bug you created.
 
 You can see any bugs that you reported during your test session.
@@ -180,7 +176,7 @@ You can see any bugs that you reported during your test session.
 ![Bugs logged](media/run-manual-tests/RunTest_5.png)
 
 Instead of creating a bug, you can update an existing bug with information about this step.
-Select the **+** icon for Create a bug, then **Add to existing bug**.
+Select the **+** icon for **Create bug**, then **Add to existing bug**.
 Find and update an existing bug.
 ::: moniker-end
 
@@ -310,7 +306,7 @@ You can select a build for the following options:
 - Automated tests using release stage
 - Manual tests using Microsoft Test Manager 2017 client
 
-The options that the dialog box offers differ depending on which one you select.
+The fields that the dialog box offers differ depending on which option you select.
 For more information, see [Supported clients and run options](#supported-clients-and-run-options).
 
 Any bug filed during the run is associated with the selected build.
