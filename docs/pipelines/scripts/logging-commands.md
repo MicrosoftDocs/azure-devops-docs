@@ -305,8 +305,8 @@ See [set variables in scripts](../process/variables.md#set-variables-in-scripts)
 * `issecret` = boolean (Optional, defaults to false)
 ::: moniker range=">= azure-devops-2019"
 * `isoutput` = boolean (Optional, defaults to false)
-* `isreadonly` = boolean (Optional, defaults to false)
 ::: moniker-end
+* `isreadonly` = boolean (Optional, defaults to false)
    
 #### Examples
 
