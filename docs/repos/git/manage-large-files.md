@@ -82,7 +82,7 @@ Just follow the [instructions to install the client](https://git-lfs.github.com/
 
 Git LFS has some drawbacks that you should consider before adopting:
 
-1. Every Git client used by your team must install the Git LFS client and understand its [tracking configuration](https://github.com/github/git-lfs/tree/master/docs).
+1. Every Git client used by your team must install the Git LFS client and understand its [tracking configuration](https://github.com/github/git-lfs/tree/main/docs).
 2. If the Git LFS client is not installed and configured correctly, you will not see the binary files committed through Git LFS when you clone your repo. 
    Git will download the data describing the large file (which is what Git LFS commits to the repo) and not the actual binary file itself. 
    Committing large binaries without the Git LFS client installed will push the binary to your repo.
