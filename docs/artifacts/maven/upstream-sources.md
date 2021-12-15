@@ -1,9 +1,9 @@
 ---
 title: Use packages from Maven Central
-description: Use packages from Maven Central in Azure DevOps Services via upstream sources
+description: How to use packages from upstreams
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 12/15/2021
 monikerRange: '=azure-devops'
 ---
 
@@ -11,14 +11,10 @@ monikerRange: '=azure-devops'
 
 **Azure DevOps Services | Azure DevOps Server 2019 | Azure DevOps Server 2020**
 
-If you want to use both private packages you've created **and** public packages from Maven Central, we recommend using upstream sources. 
+With upstream sources, you can use both private packages you've created and public packages from Maven Central. When you enable upstream sources in your feed, Azure Artifacts will save a copy of any packages you install from Maven central.
 
-The Maven Central upstream source allows you to merge the contents of Maven Central into your feed such that the Maven client can install packages from both locations.  Enabling upstream sources also automatically enables saving of packages you use from the upstream source. **This is the recommended way to use Azure Artifacts with Maven.**
-
-To learn more about the concept of upstream sources, please see the [concepts page](../concepts/upstream-sources.md).
-
-> [!IMPORTANT]
-> Maven snapshot artifacts are not currently supported in upstream sources.
+> [!NOTE]
+> Maven snapshots are not supported in upstream sources.
 
 ## Enable Maven Central as an upstream
 To use Maven Central as an upstream source, either create a new feed or edit an existing feed.
