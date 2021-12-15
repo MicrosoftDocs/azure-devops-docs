@@ -138,7 +138,7 @@ sections:
 
       - question: Can I bulk add or edit test cases with Excel? 
         answer: |
-          **No**. You can't use Excel to export and import test case steps or other test artifacts. Instead, use the [grid view to bulk edit test cases supported via the web portal](../../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time).  
+          **No**. You can't use Excel to export and import test case steps or other test artifacts. Instead, use the [grid view to bulk edit test cases supported via the web portal](../../../test/create-test-cases.md#use-the-grid-view-to-edit-test-cases).  
             
           > [!div class="mx-imgBorder"]  
           > ![Test grid view](/azure/devops/test/media/create-test-cases/newtestcasesusinggrid.png)
