@@ -3,7 +3,7 @@
   displayName: test plans
 - name: What is Azure Test Plans?
   href: overview.md
-  displayName: manual testing
+  displayName: manual, testing, automated, load, report, analytics
 - name: Get started
   expanded: true
   items:
@@ -52,6 +52,9 @@
   - name: Set permissions and access 
     href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
     displayName: access, permissions
+  - name: Set test retention policies
+    href: how-long-to-keep-test-results.md
+    displayName: results, logs
 - name: Automated tests
   items:
   - name: Associate automated tests with test cases
@@ -60,6 +63,8 @@
   - name: Run automated tests from test plans
     href: run-automated-tests-from-test-hub.md
     displayName: automated, test plans, run
+- name: Request & track feedback
+  href: ../project/feedback/toc.yml
 - name: Track progress and results
   items:
   - name: Track test status
@@ -67,18 +72,34 @@
     displayName: track, status
   - name: Progress report
     href: progress-report.md 
-  - name: Requirements traceability
-    href: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md
-  - name: Set test retention policies
-    href: how-long-to-keep-test-results.md
-    displayName: results, logs
-- name: Request & track feedback
-  href: ../project/feedback/toc.yml
+  - name: Pipelines & test results 
+    items:
+    - name: Code coverage 
+      href: ../pipelines/test/review-code-coverage-results.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+    - name: Pipeline Analytics 
+      href: ../pipelines/reports/pipelinereport.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      displayname: pipeline pass rate, pipeline duration, test pass rate, failed runs, failure trend, tests in the pipeline, unique failing tests, top 10 steps by duration
+    - name: Test Analytics 
+      href: ../pipelines/test/test-analytics.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      displayname: test failures, trends, pass rate, failing tests, group tests, individual tests, failure analysis 
+    - name: Build and release test results    
+      href: ../pipelines/test/review-continuous-test-results-after-build.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+    - name: Tests and Requirements traceability
+      href: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+    - name: Pool consumption report
+      href: ../pipelines/agents/pool-consumption-report.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+      displayname: agent usage, private self-hosted, public hosted, concurrency, historical graph, preview 
+    - name: Configure a Test Results Trend widget
+      href: configure-test-results-trend.md
+    - name: Test Impact Analysis (TIA)
+      href: ../pipelines/test/test-impact-analysis.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+    - name: Flaky test management and reporting
+      href: ../pipelines/test/flaky-test-management.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
 - name: Troubleshooting
   items:
   - name: Manual testing FAQs
     href: reference-qa.md 
-  - name: TCM Reporting FAQs
+  - name: Test case management reporting FAQs
     href: reference-tcm.md
   - name: Unable to connect
     href: ../organizations/projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
@@ -102,17 +123,15 @@
     href: /rest/api/azure/devops/testresults/result-meta-data
 - name: Resources
   items:
-  - name: Azure Pipelines Test
-    href: ../pipelines/test/test-glossary.md
-  - name: Azure Boards, About work items
-    href: ../boards/work-items/about-work-items.md
-  - name: Marketplace extensions
+  - name: Azure Load Test Preview
+    href: /azure/load-testing/overview-what-is-azure-load-testing
+  - name: Azure Pipelines 
+    href: ../pipelines/index.yml
+  - name: Azure Boards 
+    href: ../boards/index.yml
+  - name: Marketplace Test Plan extensions
     href: https://marketplace.visualstudio.com/search?term=test&target=AzureDevOps&category=All%20categories&sortBy=Relevance
-  - name: Azure DevOps Blog, Test
+  - name: Marketplace Visual Studio test extensions
+    href: https://marketplace.visualstudio.com/search?term=test&target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Relevance
+  - name: Azure DevOps Blog 
     href: https://devblogs.microsoft.com/devops/
-  - name: Plug-ins for Visual Studio
-    href: https://devblogs.microsoft.com/devops/visual-studio-11-beta-unit-testing-plugins-list/
-  - name: Create custom code & plug-ins
-    href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
-  - name: Load testing (Deprecated)
-    href: /previous-versions/azure/devops/test/load-test/overview
