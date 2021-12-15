@@ -84,7 +84,7 @@ After you have connected, you are ready to begin testing your app.
    ![Take a screenshot, make notes, or record your actions as a video](media/connected-mode-exploratory-testing/create-bugs-01a.png)
 
    >Some browsers may not provide all of the capture capabilities.
-   See [Which web browsers does the extension support?](reference-qa.md#browser-support) 
+   See [Supported web browsers for the extension](perform-exploratory-tests.md#browser-support).
 
 1. When you are done exploring and capturing information, create a bug or a task. 
 
