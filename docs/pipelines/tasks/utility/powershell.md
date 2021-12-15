@@ -194,4 +194,22 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ::: moniker-end
 
+### I'm using Powershell task and passing secret in script, but secret is not masked in pipeline logs
+
+Please be aware that Powershell cuts off error message - so if you use some secrets in script - they could be trimmed as well, and won't be masked in this case.
+For example, for the inline script below: 
+```powershell
+./script.ps1 --arg1 value1 --arg2 <some_secret_which_will_be_masked_here>
+```
+There could be an exception like:
+At D:\a\_temp\<temp_script_file>.ps1:4 char:3
+```powershell
++   ./script.ps1 --arg1 value1 --arg2 <unmasked_part_of_original_secret> ...
++   ~~~~~~~~~~
+    + <Additional exception details>
+```
+To avoid this it is recommended to handle such exceptions on script level, or avoid cases when secrets could appear in source code line - in the error message.
+
+
+
 <!-- ENDSECTION -->
