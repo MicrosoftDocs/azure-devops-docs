@@ -326,7 +326,7 @@ Select the **Edit test step** icon.
 ::: moniker-end
 ::: moniker range="<=azure-devops-2019"
 ![Screenshot shows how to select the edit icon to modify test steps.](media/run-manual-tests/RunTest_11.png)
-::: moniker range="<=azure-devops-2019"
+::: moniker-end
 
 You can insert, reorder, or delete steps.
 You can also edit the text itself.
