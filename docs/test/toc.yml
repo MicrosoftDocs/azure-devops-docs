@@ -90,7 +90,7 @@
       href: ../pipelines/agents/pool-consumption-report.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
       displayname: agent usage, private self-hosted, public hosted, concurrency, historical graph, preview 
     - name: Configure a Test Results Trend widget
-      href: configure-test-results-trend.md
+      href: ../report/dashboards/configure-test-results-trend.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
     - name: Test Impact Analysis (TIA)
       href: ../pipelines/test/test-impact-analysis.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
     - name: Flaky test management and reporting
