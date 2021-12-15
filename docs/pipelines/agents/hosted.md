@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 12/01/2021
+ms.date: 12/15/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -56,7 +56,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 > - macOS X High Sierra 10.13 (`macOS-10.13`)
 > - Windows Server Core 1803 (`win1803`)
 >
-> Customers are encouraged to migrate to `vs2017-win2016`, `macOS-10.14`, or a [self-hosted agent](v2-windows.md) respectively.
+> Customers are encouraged to migrate to newer versions or a [self-hosted agent](v2-windows.md).
 >
 > For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
 
