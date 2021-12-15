@@ -242,20 +242,21 @@ You can perform the following tasks using the indicated tools.
 | Review test runs                                    |  ✔️            |             |                | 
  
 
-##  Execute tests 
+###  Execute tests 
 
-From the **Test plans** hub, **Execute** tab, team members can initiate test execution for one or more test cases defined for a test suite. Choices include running **Test Runner** for a web or desktop application. Optionally, team members can select Run with options to choose other supported clients for manual testing, or to select a build to for automated testing. To learn more, see [Run manual tests](run-manual-tests.md).
+From the **Test plans** hub, **Execute** tab, team members can initiate test execution for one or more test cases defined for a test suite. Choices include running **Test Runner** for a web or desktop application. Optionally, team members can select **Run with options** to choose other supported clients for manual testing, or to select a build for automated testing. To learn more, see [Run manual tests](run-manual-tests.md).
 
-:::image type="content" source="media/overview/execute-tests.png" alt-text="Screenshot ofExecute multiple test cases.":::
+:::image type="content" source="media/overview/execute-tests.png" alt-text="Screenshot of execution of multiple test cases.":::
  
-
 ### Test Runner  
 
 **Test Runner** runs tests for your web and desktop applications. Mark test steps and test outcomes as pass or fail, and collect
 diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all captured diagnostic data 
 to help your developers reproduce the issues. To learn more, see [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
 
-![Testing web applications](media/manual-testing/test-web-app-01.png)
+!
+:::image type="content" source="media/overview/test-runner.png" alt-text="Screenshot of Test Runner with annotations.":::
+
 
 <a name="user-acceptance"></a>
 
