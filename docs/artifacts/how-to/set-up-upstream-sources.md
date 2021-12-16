@@ -32,19 +32,23 @@ With upstream sources, you can use a single feed to store the packages you gener
 > [!IMPORTANT]
 > Maven snapshots are not supported in upstream sources.
 
-## Add public upstream sources to an existing feed
+## Enable upstream sources in an existing feed
 
 > [!NOTE]
 > Upstream sources are not supported in public feeds.
 
-1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**.
-2. Select **Upstream sources**. If you don't have any upstream sources, you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
-3. In the **Add a new upstream source** dialog, Select **Public source**. Note that public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
+1. Select the ![gear icon](../../media/icons/gear-icon.png) button to access your feed's settings.
 
-4. For public sources, choose **npmjs**, **NuGet Gallery**, **PyPI**, or **Maven Central**
+1. Select **Upstream sources**.
+
+1. Select **Add upstream source**.
+
+1. Select **Public source**, and then select the **Public source**. (Example *Maven Central (https://repo.maven.apache.org/maven2/)* for Maven central)
+
+1. Select **Add** when you are done.
 
 > [!NOTE]
-> You can also configure a custom upstream source for public repositories other than those listed above. Custom upstream sources are **only available for npm**. 
+> Custom public upstream sources are only supported with npm registries.
 
 ## Add an Azure Artifacts feed in your organization as an upstream source
 
