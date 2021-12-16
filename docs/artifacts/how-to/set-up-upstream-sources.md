@@ -1,19 +1,36 @@
 ﻿---
 title: Set up upstream sources for your feed
-description: Find out how to configure upstream sources for your Azure Artifacts feeds
+description: How to configure upstream sources for your Azure Artifacts feeds
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 12/22/2020
+ms.date: 12/16/2021
 monikerRange: '>= tfs-2017'
 ---
 
 # Configure upstream sources
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from both public packages managers (npmjs.com, NuGet.org, Maven Central, and PyPI) and Artifacts feeds. Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed and your feed will save a copy.
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-## Create a new feed that uses upstream sources
+With upstream sources, you can use a single feed to store the packages you generate and the packages you consume from public registries such as npmjs.com, NuGet.org, Maven Central, and PyPI.org. Once you've enabled an upstream source, every time you install a package from the public registry, Azure Artifacts will save a copy of that package in your feed.
 
-Follow the steps in [this guide](../concepts/feeds.md#create-a-feed) to create a new feed.
+## Create a new feed and enable upstream sources
+
+1. From within your project, select **Artifacts**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
+
+1. Select **Create Feed**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![New feed button](../media/new-feed-button-azure-devops-newnav.png)
+
+1. Give your feed a **Name** and choose its **visibility**, **upstream sources**, and **scope** settings.
+
+   > [!div class="mx-imgBorder"] 
+   > ![New feed dialog box](../media/new-feed-dialog-azure-devops.png)
+
+1. Select **Create** when you are done.
 
 Under **Upstream sources** make sure you check the box to **Include packages from common public sources**.
 
