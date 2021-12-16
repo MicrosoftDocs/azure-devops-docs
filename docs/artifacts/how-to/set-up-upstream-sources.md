@@ -17,27 +17,20 @@ With upstream sources, you can use a single feed to store the packages you gener
 
 1. From within your project, select **Artifacts**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
+    :::image type="content" source="../media/goto-feed-hub-azure-devops-newnav.png" alt-text="Screenshot of Artifacts button.":::
 
 1. Select **Create Feed**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![New feed button](../media/new-feed-button-azure-devops-newnav.png)
+    :::image type="content" source="../media/new-feed-button-azure-devops-newnav.png" alt-text="Screenshot of the create feed button.":::
 
-1. Give your feed a **Name** and choose its **visibility**, **upstream sources**, and **scope** settings.
+1. Give your feed a **Name** and choose its **visibility**, and **scope** settings. Make sure you check the  **Include packages from common public sources** checkbox to enable upstream sources.
 
-   > [!div class="mx-imgBorder"] 
-   > ![New feed dialog box](../media/new-feed-dialog-azure-devops.png)
+    :::image type="content" source="../media/new-feed-dialog-azure-devops.png" alt-text="Screenshot showing the create new feed window panel.":::
 
 1. Select **Create** when you are done.
 
-Under **Upstream sources** make sure you check the box to **Include packages from common public sources**.
-
-Selecting this option will allow your feed to use packages from public packages hosts (**nuget.org** (NuGet), **npmjs.org** (npm), **PyPI** (Python), and **Maven Central** (Maven)) without having to include those package repositories in any of your settings or configuration files. 
-
 > [!IMPORTANT]
-> Maven snapshot artifacts are not currently supported in upstream sources.
+> Maven snapshots are not supported in upstream sources.
 
 ## Add public upstream sources to an existing feed
 
