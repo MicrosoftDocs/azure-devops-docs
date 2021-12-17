@@ -90,6 +90,15 @@ Check if you want the AVD to be deleted upon completion.
 </tr>
 </table>
 
+| Argument | Description |
+|----------|-------------|
+| Start and Stop Android Emulator | Check if you want the emulator to be started and stopped when Android Build task finishes. <br><br> You must deploy your own [agent](../../agents/agents.md) to use this option. You cannot use a Microsoft-hosted pool if you want to use an emulator. |
+| Timeout in Seconds | How long should the build wait for the emulator to start.  The default value is `300` seconds. |
+| Headless Display | Check if you want to start the emulator with no GUI (headless mode). |
+| Emulator Optional Arguments | (Optional) Provide any options to pass to the `emulator` command.  The default value is `-no-snapshot-load -no-snapshot-save`. |
+| Delete AVD | Check if you want the AVD to be deleted upon completion. |
+
+
 ### [Task control options](../../process/tasks.md#controloptions)
 
 ## Related tasks
