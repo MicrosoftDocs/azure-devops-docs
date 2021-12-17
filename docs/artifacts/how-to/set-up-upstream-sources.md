@@ -89,17 +89,16 @@ With upstream sources, you can use a single feed to store the packages you gener
 
     :::image type="content" source="../media/feed-outorg-upstream.png" alt-text="Screenshot showing how to add a feed in a different organization as an upstream source.":::
 
-## Consume NuGet packages from upstream sources
+## Install NuGet packages from upstream sources
 
-Now you can open Visual Studio and install packages from the upstream sources you just configured:
+Using Visual Studio, we can now install packages from the upstream sources we configured:
 
-1.	On the packages host website (e.g. nuget.org), copy the `Install-Package` command.
-2.	In Visual Studio, open the Package Manager Console from Tools > NuGet Package Manager.
-3.	Paste the `Install-Package` command into the Package Manager Console and run it.
+1. Navigate to NuGet.org, find the package you want to install, and then copy the `Install-Package` command.
+1. In Visual Studio, select **Tools** > **NuGet Package Manager** > **Package Manager Console**.
+1. Paste the install command into the Package Manager Console and press ENTER to run it.
 
-Remember that you must be a collaborator, a contributor, or an owner to install new packages from the upstream, as a copy of each upstream package you use is saved to the feed on first use. Packages already saved from an upstream source can be used by Readers.
-
-See [Consume NuGet packages in Visual Studio](../nuget/consume.md) for more details.
+> [!NOTE]
+> You must be a **Collaborator**, a **Contributor**, or an **Owner** to install new packages from upstream. A copy of each upstream package is saved to the feed on first use. Packages already saved from upstream sources can be used by feed **Readers**.
 
 ## Consume npm packages from upstream sources
 
