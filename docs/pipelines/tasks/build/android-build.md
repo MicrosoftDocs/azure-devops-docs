@@ -49,47 +49,6 @@ The build agent must have the following capabilities:
 
 ### Emulator options
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Start and Stop Android Emulator</td>
-<td>
-<p>Check if you want the emulator to be started and stopped when Android Build task finishes.</p>
-<blockquote><strong>Note: </strong> You must deploy your own <a href="../../agents/agents.md" data-raw-source="[agent](../../agents/agents.md)">agent</a> to use this option. You cannot use a Microsoft-hosted pool if you want to use an emulator.
-</blockquote>
-</td>
-</tr>
-<tr>
-<td>Timeout in Seconds</td>
-<td>
-How long should the build wait for the emulator to start.  The default value is <code>300</code> seconds.
-</td>
-</tr>
-<tr>
-<td>Headless Display</td>
-<td>
-Check if you want to start the emulator with no GUI (headless mode).
-</td>
-</tr>
-<tr>
-<td>Emulator Optional Arguments</td>
-<td>
-(Optional) Provide any options to pass to the <code>emulator</code> command.  The default value is <code>-no-snapshot-load -no-snapshot-save</code>
-</td>
-</tr>
-<tr>
-<td>Delete AVD</td>
-<td>
-Check if you want the AVD to be deleted upon completion.
-</td>
-</tr>
-</table>
-
 | Argument | Description |
 |----------|-------------|
 | Start and Stop Android Emulator | Check if you want the emulator to be started and stopped when Android Build task finishes. <br><br> You must deploy your own [agent](../../agents/agents.md) to use this option. You cannot use a Microsoft-hosted pool if you want to use an emulator. |
