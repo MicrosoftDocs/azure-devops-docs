@@ -89,7 +89,7 @@ With upstream sources, you can use a single feed to store the packages you gener
 
     :::image type="content" source="../media/feed-outorg-upstream.png" alt-text="Screenshot showing how to add a feed in a different organization as an upstream source.":::
 
-## Install NuGet packages from upstream sources
+## Example: install NuGet packages from upstream sources with Visual Studio
 
 Using Visual Studio, we can now install packages from the upstream sources we configured:
 
@@ -97,21 +97,20 @@ Using Visual Studio, we can now install packages from the upstream sources we co
 1. In Visual Studio, select **Tools** > **NuGet Package Manager** > **Package Manager Console**.
 1. Paste the install command into the Package Manager Console and press ENTER to run it.
 
-> [!NOTE]
-> You must be a **Collaborator**, a **Contributor**, or an **Owner** to install new packages from upstream. A copy of each upstream package is saved to the feed on first use. Packages already saved from upstream sources can be used by feed **Readers**.
+## Example: install npm packages from upstream sources using the CLI
 
-## Consume npm packages from upstream sources
+Run the following command in an elevated command prompt window to install your npm package from upstream.
 
-Now you can open your favorite shell and install packages from the upstream sources you’ve configured. Just run:
-
-```cmd
+```Command
 npm install --save <package>
 ```
 
-Remember that you must be a collaborator, a contributor, or an owner to install new packages from the upstream, as a copy of each upstream package you use is saved to the feed on first use. Packages already saved from an upstream source can be used by Readers.
+> [!NOTE]
+> You must be a **Collaborator**, a **Contributor**, or an **Owner** to install new packages from upstream. A copy of each upstream package is saved to the feed on first use. Packages already saved from upstream sources can be used by feed **Readers**.
 
-See the [Get started with npm packages in Azure Artifacts](../get-started-npm.md) for more details.
-
-## What's next?
+## Related articles
 
 - [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
+- [Configure upstream behavior](../concepts/upstream-behavior.md)
+- [Use feed views to share packages](../feeds/views.md)
+- [Configure permissions](../feeds/feed-permissions.md)
