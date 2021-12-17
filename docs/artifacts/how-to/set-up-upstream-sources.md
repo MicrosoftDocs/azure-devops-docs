@@ -66,7 +66,7 @@ With upstream sources, you can use a single feed to store the packages you gener
 
 1. Select **Add** when you are done.
 
-:::image type="content" source="../media/feed-org-upstream.png" alt-text="Screenshot showing how to add a feed in your organization as an upstream source.":::
+    :::image type="content" source="../media/feed-org-upstream.png" alt-text="Screenshot showing how to add a feed in your organization as an upstream source.":::
 
 ## Add a feed in a different organization as an upstream source
 
@@ -87,7 +87,7 @@ With upstream sources, you can use a single feed to store the packages you gener
 
 1. Select **Add** when you are done.
 
-:::image type="content" source="../media/feed-outorg-upstream.png" alt-text="Screenshot showing how to add a feed in a different organization as an upstream source.":::
+    :::image type="content" source="../media/feed-outorg-upstream.png" alt-text="Screenshot showing how to add a feed in a different organization as an upstream source.":::
 
 ## Consume NuGet packages from upstream sources
 
