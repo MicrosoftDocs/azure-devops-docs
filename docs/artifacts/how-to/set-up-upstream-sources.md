@@ -50,24 +50,44 @@ With upstream sources, you can use a single feed to store the packages you gener
 > [!NOTE]
 > Custom public upstream sources are only supported with npm registries.
 
-## Add an Azure Artifacts feed in your organization as an upstream source
+## Add a feed in your organization as an upstream source
 
-1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**.
-2. Select **Upstream sources**. If you don't have any upstream sources, you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
-3. In the **Add a new upstream source** dialog, select **Azure Artifacts feed in this organization**.
-4. Select the feed you would like to configure as an upstream source, and the other fields will populate automatically. 
-5. Select the package types you want to use and select **Add**.
+1. Select the ![gear icon](../../media/icons/gear-icon.png) button to access your feed's settings.
 
-## Add an Azure Artifacts feed in a different organization within your Azure AD tenant as an upstream source
+1. Select **Upstream sources**.
 
-> [!IMPORTANT]
-> Universal Packages only supports upstream sources in the same organization.
+1. Select **Add upstream source**.
 
-1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**.
-2. Select **Upstream sources**. If you don't have any upstream sources, you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
-3. In the **Add a new upstream source** dialog, select **Azure Artifacts feed in another organization**.
-4. Enter the **Azure DevOps Services feed locator**, this is the `azure-feed://` prefix, followed by the organization name, project name, feed name, and your shared view. For example: `azure-feed://myOrg/myProject/myFeed@local`
-5. Select the package types you want to use and your upstream source's name and select **Add**.
+1. Select **Azure Artifacts feed in this organization**.
+
+1. Select the feed you would like to add from the dropdown menu.
+
+1. Select the package types you want to use, select the **View** and name your upstream source.
+
+1. Select **Add** when you are done.
+
+:::image type="content" source="../media/feed-org-upstream.png" alt-text="Screenshot showing how to add a feed in your organization as an upstream source.":::
+
+## Add a feed in a different organization as an upstream source
+
+> [!NOTE]
+> Universal Packages are only supported in upstream sources within the same organization.
+
+1. Select the ![gear icon](../../media/icons/gear-icon.png) button to access your feed's settings.
+
+1. Select **Upstream sources**.
+
+1. Select **Add upstream source**.
+
+1. Select **Azure Artifacts feed in another organization**.
+
+1. Enter your **Azure DevOps Services feed locator**. Example: *azure-feed://myOrg/myProject/myFeed@local*.
+
+1. Select the **Package type(s)** you want to use and enter an **Upstream source name**.
+
+1. Select **Add** when you are done.
+
+:::image type="content" source="../media/feed-outorg-upstream.png" alt-text="Screenshot showing how to add a feed in a different organization as an upstream source.":::
 
 ## Consume NuGet packages from upstream sources
 
