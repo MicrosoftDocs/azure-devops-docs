@@ -56,6 +56,12 @@ The build agent must have the following capabilities:
 </tr>
 </table>
 
+| Argument | Description |
+|----------|-------------|
+| Location of Gradle Wrapper | The location in the repository of the `gradlew` wrapper used for the build. For agents on Windows (including Microsoft-hosted agents), you must use the `gradlew.bat` wrapper. Agents on Linux or macOS can use the `gradlew` shell script. See [The Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html). |
+| Project Directory | Relative path from the repo root to the root directory of the application (likely where your build.gradle file is). |
+| Gradle Arguments | Provide any options to pass to the Gradle command line. The default value is `build`.See [Gradle command line](https://docs.gradle.org/current/userguide/gradle_command_line.html). |
+
 ### Android Virtual Device (AVD) options
 
 <table>
