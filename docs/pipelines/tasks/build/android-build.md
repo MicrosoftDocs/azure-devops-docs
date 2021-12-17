@@ -29,38 +29,11 @@ The build agent must have the following capabilities:
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Location of Gradle Wrapper</td>
-<td>
-<p>The location in the repository of the gradlew wrapper used for the build. For agents on Windows (including Microsoft-hosted agents), you must use the <code>gradlew.bat</code> wrapper. Agents on Linux or macOS can use the <code>gradlew</code> shell script.</p>
-<p>See <a href="https://docs.gradle.org/current/userguide/gradle_wrapper.html" data-raw-source="[The Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html)">The Gradle Wrapper</a>.</p>
-</td>
-</tr>
-<tr>
-<td>Project Directory</td>
-<td>Relative path from the repo root to the root directory of the application (likely where your build.gradle file is).</td>
-</tr>
-<tr>
-<td>Gradle Arguments</td>
-<td>
-<p>Provide any options to pass to the Gradle command line.     The default value is <code>build</code></p>
-<p>See <a href="https://docs.gradle.org/current/userguide/gradle_command_line.html" data-raw-source="[Gradle command line](https://docs.gradle.org/current/userguide/gradle_command_line.html)">Gradle command line</a>.</p>
-</td>
-</tr>
-</table>
-
 | Argument | Description |
 |----------|-------------|
 | Location of Gradle Wrapper | The location in the repository of the `gradlew` wrapper used for the build. For agents on Windows (including Microsoft-hosted agents), you must use the `gradlew.bat` wrapper. Agents on Linux or macOS can use the `gradlew` shell script. See [The Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html). |
 | Project Directory | Relative path from the repo root to the root directory of the application (likely where your build.gradle file is). |
-| Gradle Arguments | Provide any options to pass to the Gradle command line. The default value is `build`.See [Gradle command line](https://docs.gradle.org/current/userguide/gradle_command_line.html). |
+| Gradle Arguments | Provide any options to pass to the Gradle command line. The default value is `build`. See [Gradle command line](https://docs.gradle.org/current/userguide/gradle_command_line.html). |
 
 ### Android Virtual Device (AVD) options
 
@@ -114,6 +87,17 @@ Name of the AVD to be started or created.
 </tr>
 <tr>
 </table>
+
+| Argument | Description |
+|----------|-------------|
+| Name | Name of the AVD to be started or created. < /br>
+You must deploy your own [agent](../../agents/agents.md) to use this option. You cannot use a Microsoft-hosted pool if you want to create an AVD. |
+| Create AVD | Select this check box if you would like the AVD to be created if it does not exist. |
+| AVD Target SDK | Android SDK version the AVD should target.  The default value is `android-19`. |
+| AVD Device | (Optional) Device pipeline to use.  Can be a device index or id.  The default value is `Nexus 5`. |
+| AVD ABI | he Application Binary Interface to use for the AVD.  The default value is `default/armeabi-v7a`. See [ABI Management](https://developer.android.com/ndk/guides/abis.html)>. |
+| Overwrite Existing AVD | Select this check box if an existing AVD with the same name should be overwritten. |
+| Create AVD Optional Arguments | Provide any options to pass to the `android create avd` command. See [Android Command Line](https://developer.android.com/tools/help/android.html). |
 
 ### Emulator options
 
