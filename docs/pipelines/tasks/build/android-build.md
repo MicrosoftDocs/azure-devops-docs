@@ -90,12 +90,11 @@ Name of the AVD to be started or created.
 
 | Argument | Description |
 |----------|-------------|
-| Name | Name of the AVD to be started or created. < /br>
-You must deploy your own [agent](../../agents/agents.md) to use this option. You cannot use a Microsoft-hosted pool if you want to create an AVD. |
+| Name | Name of the AVD to be started or created. <br> You must deploy your own [agent](../../agents/agents.md) to use this option. You cannot use a Microsoft-hosted pool if you want to create an AVD. |
 | Create AVD | Select this check box if you would like the AVD to be created if it does not exist. |
 | AVD Target SDK | Android SDK version the AVD should target.  The default value is `android-19`. |
 | AVD Device | (Optional) Device pipeline to use.  Can be a device index or id.  The default value is `Nexus 5`. |
-| AVD ABI | he Application Binary Interface to use for the AVD.  The default value is `default/armeabi-v7a`. See [ABI Management](https://developer.android.com/ndk/guides/abis.html)>. |
+| AVD ABI | he Application Binary Interface to use for the AVD.  The default value is `default/armeabi-v7a`. See [ABI Management](https://developer.android.com/ndk/guides/abis.html). |
 | Overwrite Existing AVD | Select this check box if an existing AVD with the same name should be overwritten. |
 | Create AVD Optional Arguments | Provide any options to pass to the `android create avd` command. See [Android Command Line](https://developer.android.com/tools/help/android.html). |
 
