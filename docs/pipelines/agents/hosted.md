@@ -49,6 +49,10 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 >
 > [The Windows Server 2016 with Visual Studio 2017 image is being deprecated](https://devblogs.microsoft.com/devops/hosted-pipelines-image-deprecation/#windows).
 >
+> In December 2021, we removed the following Azure Pipelines hosted image:
+>
+> - macOS X Mojave 10.14 (`macOS-10.14`)
+>
 > In March 2020, we removed the following Azure Pipelines hosted images:
 >
 > - Windows Server 2012R2 with Visual Studio 2015 (`vs2015-win2012r2`)
@@ -341,8 +345,9 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh <symlink>"`
 
   The list of all available Xamarin SDK versions and symlinks can be found in the agents documentation:
-  - [macOS 10.14](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md#xamarin)
   - [macOS 10.15](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xamarin)
+  - [macOS 11](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11-Readme.md#xamarin)
+  
 
   This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
@@ -350,17 +355,17 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
   `/bin/bash -c "echo '##vso[task.setvariable variable=MD_APPLE_SDK_ROOT;]'$(xcodeRoot);sudo xcode-select --switch $(xcodeRoot)/Contents/Developer"`
   
-  where `$(xcodeRoot)` = `/Applications/Xcode_12.4.app`
+  where `$(xcodeRoot)` = `/Applications/Xcode_13.2.app`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11-Readme.md#xcode).
 
 #### Xcode
 
-  If you use the [Xcode task](../tasks/build/xcode.md) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 12.4 as needed:
+  If you use the [Xcode task](../tasks/build/xcode.md) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 13.2 as needed:
 
-  `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_12.4.app/Contents/Developer"`
+  `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_13.2.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11-Readme.md#xcode).
 
   This command does not work for Xamarin apps. To manually select an Xcode version for building Xamarin apps, see instructions above.
 
