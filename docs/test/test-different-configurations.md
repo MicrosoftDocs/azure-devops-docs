@@ -31,13 +31,62 @@ You might draw a schematic matrix of the combinations that you want to test:
 
 Then you can:
 
-* [Create the configurations and variables](#create-configs)
+* [View available configurations and variables](#view-configs)
+* [Create configurations and variables](#create-configs)
 * [Assign the configurations to test plans and test suites](#assign-configs)
 * [Run tests with each of the configurations](#run-configs)
 * [Track your test results for each configuration](#track-configs)
- 
- 
-[!INCLUDE [prerequisites-define](includes/prerequisites-define.md)] 
+
+[!INCLUDE [prerequisites-define](includes/prerequisites-define.md)]
+
+[!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)]
+
+<a name="view-configs"></a>
+
+## View configurations and variables
+
+You often want to see the configurations that are already available to run your tests.
+
+# [Browser](#tab/browser)
+
+You can view a list of test configurations and configuration variables from the **Configurations** page.
+
+While in your project, select **Test Plans** > **Configurations** from the left navigation area. Here you'll see all of the test configurations and variables currently available for your test plans.
+
+:::image type="content" source="media/testing-configurations/viewing-test-configurations.png" alt-text="Screenshot of Query Editor, Query test plans.":::
+
+Select a configuration or variable to see more information about it in the window to the right.
+
+# [TCM CLI](#tab/tcm-cli)
+
+Use `tcm configs /list` to view the configurations available for the test plans and test suites in your project. When no optional parameters are specified, all test configurations are listed for the team project.
+
+```tcm
+tcm configs /list [/querytext:query] /collection:teamprojectcollectionurl
+            /teamproject:project [/login:username,[password]]
+```
+
+| Parameter | Description |  
+|----------|------------|
+|**/querytext**:`query`| Optional. Specifies the query to use to list a subset of test configurations.    |
+
+[!INCLUDE [prerequisites-define](includes/common-tcm-parameters.md)]
+
+**Example**
+
+The following command lists the test configurations available in the *Fabrikam Fiber* project hosted in the *fabrikamprime* organization. The **ID** corresponds to the configuration **Name**. For example, configuration ID *9* is aligned with the *Google Chrome on Windows 10* test configuration.
+
+```tcm
+tcm configs /list /collection:https://dev.azure.com/fabrikamprime /teamproject:"Fabrikam Fiber"
+
+Id        Name
+--------- ----------------------------------------------------------------
+2         Windows 8
+7         Windows 7
+9         Google Chrome on Windows 10
+```
+
+***
 
 <a name="create-configs"></a>
 
