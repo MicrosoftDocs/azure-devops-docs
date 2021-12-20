@@ -3,7 +3,7 @@ title: Run a self-hosted agent in Docker
 ms.topic: conceptual
 description: Instructions for running your Azure Pipelines agent in Docker
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
-ms.date: 02/12/2021
+ms.date: 11/15/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -226,7 +226,7 @@ Next, create the Dockerfile.
       && rm -rf /var/lib/apt/lists/*
 
     ARG TARGETARCH=amd64
-    ARG AGENT_VERSION=2.185.1
+    ARG AGENT_VERSION=2.194.0
 
     WORKDIR /azp
     RUN if [ "$TARGETARCH" = "amd64" ]; then \
@@ -322,7 +322,9 @@ Next, create the Dockerfile.
 
     # To be aware of TERM and INT signals call run.sh
     # Running it with the --once flag at the end will shut down the agent after the build is executed
-    ./run.sh "$@"
+    ./run.sh "$@" &
+
+    wait $!
     ```
     > [!NOTE]
     >You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
@@ -443,7 +445,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
        spec:
          containers:
          - name: kubepodcreation
-           image: AKRTestcase.azurecr.io/kubepodcreation:5306
+           image: <acr-server>/dockeragent:latest
            env:
              - name: AZP_URL
                valueFrom:
@@ -478,6 +480,16 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
    ```
 
 Now your agents will run the AKS cluster.
+
+### Set custom MTU parameter
+
+Allow specifying MTU value for networks used by container jobs (useful for docker-in-docker scenarios in k8s cluster).
+
+You need to set the environment variable AGENT_MTU_VALUE to set the MTU value, after that restart the self-hosted agent. You can find more about agent restart [here](./v2-windows.md?#how-do-i-restart-the-agent) and about setting different environment variables for each individual agent [here](./v2-windows.md?#how-do-i-set-different-environment-variables-for-each-individual-agent).
+
+This allows you to set up a network parameter for the job container, the use of this command is similar to the use of the next command while container network configuration:
+
+```-o com.docker.network.driver.mtu=AGENT_MTU_VALUE```
 
 ## Mounting volumes using Docker within a Docker container
 
@@ -527,3 +539,10 @@ Run this command:
    git push
    ```
 Try again. You no longer get the error.
+
+## Related articles
+
+- [Self-hosted Windows agents](v2-windows.md)
+- [Self-hosted Linux agents](v2-linux.md)
+- [Self-hosted macOS agents](v2-osx.md)
+- [Microsoft-hosted agents](hosted.md)

@@ -15,9 +15,6 @@
   - name: Search packages
     href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
     displayName: search, packages
-  - name: Where is Package Management?
-    href: where-is-package-management.md
-    displayName: tfs, package management 
 - name: Packages
   items:
   - name: About
@@ -39,39 +36,38 @@
     - name: Publish to a NuGet feed (YAML/Classic)
       href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
       displayName: nuget feed, nuget package, publish package, classic pipeline, yaml pipeline 
-    - name: Connect to a feed and publish packages (CLI)
+    - name: Publish NuGet packages (CLI)
       href: nuget/publish.md
       displayName: publish package, nuget feed, cli
     - name: Publish to NuGet.org
       href: nuget/publish-to-nuget-org.md
-      displayName: publish package, nuget package, nuget.org 
-    - name: Consume NuGet packages in Visual Studio
-      href: nuget/consume.md
-      displayName: consume package, nuget package, consume, visual studio
-    - name: Use NuGet with Artifacts feeds
-      href: nuget/nuget-exe.md
-      displayName: nuget package, artifacts feeds, publish packages, download packages 
-    - name: Use dotnet with Artifacts feeds
+      displayName: publish package, nuget package, nuget.org
+    - name: Publish and restore packages (dotnet)
       href: nuget/dotnet-exe.md
       displayName: dotnet, artifacts, publish packages, download packages
+    - name: Project setup (NuGet.exe)
+      href: nuget/nuget-exe.md
+      displayName: nuget package, artifacts feeds, publish packages, download packages 
+    - name: Install NuGet packages with Visual Studio
+      href: nuget/consume.md
+      displayName: install package, nuget, visual studio
     - name: Use NuGet or dotnet with TFS
       href: nuget/tfs.md
       displayName: nuget, dotnet, tfs, publish, download 
-    - name: NuGet upstream source
+    - name: NuGet.org upstream source
       href: nuget/upstream-sources.md
       displayName: upstream sources, upstreams, artifact feeds 
-    - name: Set up a multi-developer environment
-      href: nuget/bootstrap-nuget.md
-      displayName: developer environment, nuget bootstrap 
+    - name: Publish from GitHub Actions
+      href: quickstarts/github-actions.md
   - name: Npm 
     items:
     - name: npm quickstart
       href: get-started-npm.md
       displayName: npm, npm introduction
-    - name: Publish to an npm feed (YAML/Classic)
+    - name: Publish npm packages (YAML/Classic)
       href: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
       displayName: publish npm, npm packages, npm feed 
-    - name: Publish an npm package from the command line
+    - name: Publish npm packages (CLI)
       href: npm/publish.md
       displayName: npm package, cli, publish packages 
     - name: Set up your project's npmrc
@@ -91,9 +87,6 @@
     - name: Maven quickstart
       href: get-started-maven.md
       displayName: maven, maven introduction 
-    - name: Set up a project to work with Maven feed
-      href: ../pipelines/artifacts/maven.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-      displayName: maven packages, maven artifacts, maven feeds
     - name: Set up authentication
       href: maven/pom-and-settings.md
       displayName: maven pom, maven artifacts, maven packages, maven authentication
@@ -103,12 +96,6 @@
     - name: Use packages from Maven Central
       href: maven/upstream-sources.md
       displayName: maven packages, maven artifacts, maven central
-    - name: Install a Maven artifact using Gradle
-      href: gradle/pull-package-gradle.md
-      displayName: maven gradle, maven artifacts, gradle
-    - name: Publish a Maven artifact using Gradle
-      href: gradle/publish-package-gradle.md
-      displayName: gradle, maven artifacts, maven feed
   - name: Python
     items:
     - name: Python quickstart 
@@ -226,5 +213,5 @@
     href: /rest/api/azure/devops/index
     displayName: api, reference 
   - name: Azure DevOps CLI
-    href: /azure/devops/cli # Don't use .md link here because it binds to the artifacts TOC
+    href: ../cli/index.md
     displayName: cli, reference

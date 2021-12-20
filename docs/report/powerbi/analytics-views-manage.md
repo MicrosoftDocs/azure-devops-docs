@@ -1,16 +1,15 @@
 ---
 title: Manage Analytics views
 titleSuffix: Azure DevOps
-description: View, edit, and delete an Analytics view for Azure DevOps
+description: Learn how to view, edit, and delete an Analytics view for Azure DevOps
 ms.technology: devops-analytics
 ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 10/01/2021
 ---
-
 
 # Manage Analytics views 
 
@@ -42,7 +41,7 @@ Use this article to learn how to:
 
 The creator of a view and all members of the Project Administrators and Project Collection Administrators groups have permissions to edit, manage, and delete views.
 
-1. From either the **Favorites** or **All** page, hover over the view you want to edit, click the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and choose the **Edit** option. You can also choose **Edit** from the Summary panel. 
+1. From either the **Favorites** or **All** page, hover over the view you want to edit, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and choose the **Edit** option. You can also choose **Edit** from the Summary panel. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Analytics Views, Edit a view](media/editable-views/edit-view.png)
@@ -62,7 +61,7 @@ The creator of a view and all members of the Project Administrators and Project 
 
 All contributors to a project can view shared views and create Power BI reports based on them. When you create a view, you can choose to make it private or shared. 
 
-To share a private view, simply edit the view and change the sharing option to **Shared**. To unshare a view, switch the sharing option to **Private**.
+To share a private view, edit the view and change the sharing option to **Shared**. To unshare a view, switch the sharing option to **Private**.
 
 <!--If you make a shared view private, any Power BI report connected to that view fails to refresh in Power BI.-->
 
@@ -91,11 +90,11 @@ To favorite a view, hover over the view and choose the ![star icon](../../media/
 
 You can always delete a view you created. Once you delete a view, any Power BI report or dashboard that depends on the view will no longer refresh.
 
-To delete a view, click the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and choose :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: **Delete** from the menu.
+To delete a view, select the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and choose :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: **Delete** from the menu.
 
 <a id="q-a">  </a>
 
-## Try this next
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Create a Power BI report using an Analytics view](data-connector-connect.md)

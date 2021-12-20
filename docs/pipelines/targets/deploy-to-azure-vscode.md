@@ -93,7 +93,7 @@ At this point, we should test that our application runs. The generated Express a
 
 ## Setup CI/CD Pipeline
 
-Now you can deploy to Azure App Services, Azure Function App and AKS using VS code. This VS Code extension helps you set up continuous build and deployment for Azure App Services without leaving VS Code.
+Now you can deploy to Azure App Services, Azure function apps and AKS using VS Code. This VS Code extension helps you set up continuous build and deployment for Azure App Services without leaving VS Code.
 
 To use this service, you need to install the extension on VS Code. You can browse and install extensions from within VS Code. 
 

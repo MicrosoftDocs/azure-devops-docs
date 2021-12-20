@@ -77,6 +77,9 @@ When you add a remote feed as an upstream source, you must select its feed's vie
 
 ## Best practices: feed owners/package publishers
 
+> [!NOTE]
+> Upstream sources are not supported in public feeds.
+
 To make sure your feed is easily configured as an upstream source, consider applying the following best practices:
 
 <a name="local"></a>

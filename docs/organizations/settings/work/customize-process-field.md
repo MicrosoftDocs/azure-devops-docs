@@ -1,6 +1,6 @@
 ---
 title: Add and manage fields to an inherited process
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps 
 description: Add and manage fields in the web form of a work item type for an Inheritance process 
 ms.custom: inherited-process
 ms.technology: devops-agile
@@ -8,8 +8,8 @@ ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.topic: conceptual
-ms.date: 08/16/2021 
+ms.topic: how-to
+ms.date: 11/04/2021 
 ---
 
 # Add and manage fields (Inheritance process)   
@@ -20,7 +20,7 @@ You can add a custom field to support tracking additional data requirements or m
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
-For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](#review-fields). 
+For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [View work item fields and attributes](../../../boards/work-items/work-item-fields.md#review-fields). 
 
 Once you've added a custom field, you can create [queries](../../../boards/queries/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track data related to it.  
 
@@ -30,20 +30,6 @@ Once you've added a custom field, you can create [queries](../../../boards/queri
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
  
 [!INCLUDE [temp](../includes/automatic-update-project.md)] 
-
-
-<a id="review-fields"></a>
-
-## Review fields 
-
-To review the list of fields defined for all processes and the WITs that reference them, choose **Process** and then **Fields**.  
-
-Fields listed correspond to all fields defined for the organization. This includes all custom fields and those defined for system processes. 
-
-For descriptions and usage of each field, as well as the Reference name for each field, you can look it up from the [Work item field index](../../../boards/work-items/guidance/work-item-field.md). You can also get the Reference name of fields from the [Work Item Types Field - List REST API](/rest/api/azure/devops/wit/work%20item%20types%20field/list).
-
-> [!div class="mx-imgBorder"]  
-> ![Make a copy of a selected inherited process](media/process/list-fields.png) 
 
 
 <a id="open-process-wit">  </a>
@@ -356,6 +342,7 @@ Deleting a field deletes all data associated with that field, including historic
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
+- [View work item fields and attributes](../../../boards/work-items/work-item-fields.md)
 - [Add or modify a custom work item type](customize-process-work-item-type.md)
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)    

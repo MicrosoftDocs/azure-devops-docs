@@ -11,7 +11,9 @@ monikerRange: '<= azure-devops'
 
 # Save work with commits
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2**
+[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [version-vs-2015-vs-2019](../includes/version-vs-2015-vs-2019.md)]
+
 
 Git does not automatically snapshot your code as you make edits to files in your repo.  You must tell Git exactly which changes you want to add to the next snapshot by staging those changes.
 After staging your changes, create a commit to save the snapshot to your repo. 
@@ -40,10 +42,6 @@ Changes to unstaged but modified files are kept, but the commit uses the unmodif
 
 Commits are created in your local Git repository, so you don't have to worry about your changes being perfect. 
 Continue to create commits as you work, [pushing](pushing.md) your changes to the team when they are ready to share.
-
-### Video overview
-
-<iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Commits/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
 
 ## What's in a commit
 

@@ -4,7 +4,7 @@ description: Improve pipeline performance by caching files, like dependencies, b
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
 ms.manager: adandree
-ms.date: 04/06/2021
+ms.date: 12/03/2021
 monikerRange: azure-devops
 ---
 
@@ -79,6 +79,7 @@ steps:
     key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -118,6 +119,7 @@ steps:
     key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -242,21 +244,29 @@ Caching Docker images dramatically reduces the time it takes to run your pipelin
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-latest'
-
+  vmImage: 'Ubuntu-18.04'
 steps:
   - task: Cache@2
-    displayName: Cache Docker
+    displayName: Cache task
     inputs:
       key: 'docker | "$(Agent.OS)" | cache'
-      restoreKeys: |
-        docker | "$(Agent.OS)"
       path: $(Pipeline.Workspace)/docker
+      cacheHitVar: CACHE_RESTORED                #Variable to set to 'true' when the cache is restored
+    
+  - script: |
+      docker load -i $(Pipeline.Workspace)/docker/cache.tar
+    displayName: Docker restore
+    condition: and(not(canceled()), eq(variables.CACHE_RESTORED, 'true'))
+
+  - script: |
+      mkdir -p $(Pipeline.Workspace)/docker
+      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache
+    displayName: Docker save
+    condition: and(not(canceled()), or(failed(), ne(variables.CACHE_RESTORED, 'true')))
 ```
 
 - **key**: (required) - a unique identifier for the cache.
 - **path**: (required) - path of the folder or file that you want to cache.
-- **restoreKeys**: (optional) - If *key* fails, this will be the fallback key to find the cache.
 
 ## Golang
 
@@ -352,7 +362,7 @@ If you are using a [Maven task](../tasks/build/maven.md), make sure to also pass
 
 ## .NET/NuGet
 
-If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have `packages.lock.json` file(s), you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(UserProfile)` and caching this directory.
+If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have a `packages.lock.json` file, you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(UserProfile)` and caching this directory. See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details on how to lock dependencies.
 
 **Example**:
 
@@ -363,17 +373,13 @@ variables:
 steps:
 - task: Cache@2
   inputs:
-    key: 'nuget | "$(Agent.OS)" | $(Build.SourcesDirectory)/packages.lock.json'
+    key: 'nuget | "$(Agent.OS)" | $(Build.SourcesDirectory)/**/packages.lock.json'
     restoreKeys: |
        nuget | "$(Agent.OS)"
+       nuget
     path: $(NUGET_PACKAGES)
   displayName: Cache NuGet packages
 ```
-
-> [!TIP]
-> Environment variables always override any settings in the NuGet.Config file. If your pipeline failed with the error: `Information, There is a cache miss.`, you must create a pipeline variable for `NUGET_PACKAGES` to point to the new local path on the agent (exp d:\a\1\). Your pipeline should pick up the changes then and continue the task successfully.
-
-In the above example, the `$(Build.SourcesDirectory)` points to your project's generated lock file. See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details on how to enable lock file creation.
 
 ## Node.js/npm
 
@@ -420,56 +426,11 @@ steps:
     key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
 - script: yarn --frozen-lockfile
-```
-
-## Python/pip
-
-For Python projects that use pip or Poetry, override the `PIP_CACHE_DIR` environment variable. If you use Poetry, in the `key` field, replace `requirements.txt` with `poetry.lock`.
-
-### Example
-
-```yaml
-variables:
-  PIP_CACHE_DIR: $(Pipeline.Workspace)/.pip
-
-steps:
-- task: Cache@2
-  inputs:
-    key: 'python | "$(Agent.OS)" | requirements.txt'
-    restoreKeys: | 
-      python | "$(Agent.OS)"
-      python
-    path: $(PIP_CACHE_DIR)
-  displayName: Cache pip packages
-
-- script: pip install -r requirements.txt
-```
-
-## Python/Pipenv
-
-For Python projects that use Pipenv, override the `PIPENV_CACHE_DIR` environment variable.
-
-### Example
-
-```yaml
-variables:
-  PIPENV_CACHE_DIR: $(Pipeline.Workspace)/.pipenv
-
-steps:
-- task: Cache@2
-  inputs:
-    key: 'python | "$(Agent.OS)" | Pipfile.lock'
-    restoreKeys: | 
-      python | "$(Agent.OS)"
-      python
-    path: $(PIPENV_CACHE_DIR)
-  displayName: Cache pipenv packages
-
-- script: pipenv install
 ```
 
 ## Python/Anaconda
@@ -527,7 +488,7 @@ steps:
 
 ## Known issues and feedback
 
-If you experience problems enabling caching for your project, first check the list of [pipeline caching issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the microsoft/azure-pipelines-tasks repo. If you don't see your issue listed, [create a new issue](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching).
+If you are experiencing issues setting up caching for your pipeline, check the list of [open issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the :::no-loc text="microsoft/azure-pipelines-tasks"::: repo. If you don't see your issue listed, [create](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching) a new one and provide the necessary information about your scenario.
 
 ## Q&A
 

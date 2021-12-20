@@ -6,7 +6,8 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.assetid: db5148e8-0dd2-4ddd-b563-d9b924356263  
 ms.author: kaelli
-monikerRange: '>= tfs-2013'
+author: KathrynEE 
+monikerRange: '<= azure-devops'
 ms.date: 08/15/2017
 ---
 

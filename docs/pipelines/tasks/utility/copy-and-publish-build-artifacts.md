@@ -72,13 +72,9 @@ None
 <p>Choose <strong>server</strong> to store the artifact on your Team Foundation Server. This is the best and simplest option in most cases. See <a href="../../artifacts/build-artifacts.md" data-raw-source="[Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md)">Artifacts in Azure Pipelines</a>.</p>
 </td>
 </tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
 </table>
+
+### [Task control options](../../process/tasks.md#controloptions)
 
 ## FAQ
 

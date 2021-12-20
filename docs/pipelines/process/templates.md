@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 08/16/2021
+ms.date: 10/18/2021
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -110,7 +110,8 @@ parameters:
   default: [] # default value of buildSteps
 stages:
 - stage: secure_buildstage
-  pool: Hosted VS2017
+  pool:
+    vmImage: windows-latest
   jobs:
   - job: secure_buildjob
     steps:
@@ -124,6 +125,7 @@ stages:
           ${{ if ne(pair.value, 'CmdLine@2') }}:
             ${{ pair.key }}: ${{ pair.value }}       
           ${{ if eq(pair.value, 'CmdLine@2') }}: 
+            # Step is rejected by raising a YAML syntax error: Unexpected value 'CmdLine@2'
             '${{ pair.value }}': error         
 
     - script: echo This happens after code
@@ -143,10 +145,12 @@ extends:
         displayName: succeed
       - bash: echo "Test"
         displayName: succeed
+      # Step is rejected by raising a YAML syntax error: Unexpected value 'CmdLine@2'
       - task: CmdLine@2
-        displayName: Test 3 - Will Fail
         inputs:
           script: echo "Script Test"
+      # Step is rejected by raising a YAML syntax error: Unexpected value 'CmdLine@2'
+      - script: echo "Script Test"
 ```
 
 ## Extend from a template with resources

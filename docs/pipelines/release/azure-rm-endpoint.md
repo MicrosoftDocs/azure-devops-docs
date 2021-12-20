@@ -21,7 +21,7 @@ This article presents the common troubleshooting scenarios to help you resolve i
 
 ## What happens when you create an ARM service connection?
 
-If you don't have a service connection, you create one as follows:
+If you don't have a service connection, you can create one as follows:
 
 1. From within your project, select **Project settings**, and then select **Service connections**.
 
@@ -43,6 +43,9 @@ When you save your new ARM service connection, Azure DevOps then:
 1. Creates an application in Azure AD on behalf of the user.
 1. After the application has been successfully created, assign the application as a contributor to the selected subscription.
 1. Creates an Azure Resource Manager service connection using this application's details.
+
+> [!NOTE]
+> To create service connections you must be added to the Endpoint Creator group in your project settings: **Project settings** > **Service connections** > **Security**. Contributors are added to this group by default.
 
 <a name="troubleshoot"></a>
 

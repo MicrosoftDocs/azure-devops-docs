@@ -5,7 +5,7 @@ description: Shelve Command
 ms.assetid: f6b9e3c8-9a5a-4ebb-9823-d3a430ca08de
 ms.technology: devops-code-tfvc
 ms.topic: reference
-ms.date: 08/10/2016
+ms.date: 10/26/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -35,6 +35,8 @@ tf shelve /delete shelvesetname[;owner] [/login:username,[password]] [/collectio
 
 ## Parameters
 
+### Argument
+
 |        **Argument**        |                                                                                                                                                             **Description**                                                                                                                                                             |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |       *commentfile*        |                                                                                                                      Specifies a file system path of a file from which comments for the shelveset should be read.                                                                                                                       |
@@ -45,8 +47,12 @@ tf shelve /delete shelvesetname[;owner] [/login:username,[password]] [/collectio
 |         *username*         |                                                                                                        Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                                                                                        |
 | *TeamProjectCollectionUrl* |                                                                                       The URL of the project collection that contains the files or folders that you want to shelve (for example, `http://myserver:8080/tfs/DefaultCollection/`).                                                                                        |
 
+
+### Option
+
 | **Option** | **Description** |
 |---|---|
+| **/new** | The selected state of each pending change (as shown in the **Check In** dialog box), the comment, associated work items, check-in notes, and check-in policy override reason, are stored on your dev machine as pending changes until you check them in. The **/new** option clears this check-in metadata before you check in. |
 | **/move** | Removes pending changes from the workspace after the shelve operation is successful. |
 | **/replace** | Replaces the existing shelveset with the same name and owner as the one that you specify. |
 | **/delete** | Deletes the specified shelveset. Only the **/server** option may be combined with this option. If you do not include the **/noprompt** option, a confirmation message appears when the **/delete** option is specified. |
