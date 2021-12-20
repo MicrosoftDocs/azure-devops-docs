@@ -5,10 +5,10 @@ description: Get started sending your audit data to other locations for further 
 ms.technology: devops-audit
 ms.assetid: 
 ms.author: chcomley
-author: roferg
+author: chcomley
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 09/27/2021
+ms.date: 12/20/2021
 ---
 
 # Create audit streaming
@@ -77,9 +77,10 @@ Streams send data to Splunk via the HTTP Event Collector endpoint.
    Once it's enabled, you should have an HTTP Event Collector token and the URL to your Splunk instance. You need both the token and URL to create a Splunk stream.
 
    > [!NOTE]
-   > When you are creating a new Event Collector token in Splunk, do not check “Enable indexer acknowledgement”. If it's checked, then no events flow into Splunk. You can edit the token in Splunk to remove that setting. 
+   > When you're creating a new Event Collector token in Splunk, don't check “Enable indexer acknowledgement”. If it's checked, then no events flow into Splunk. You can edit the token in Splunk to remove that setting. 
 
-2. Enter your Splunk URL, which is the pointer to your Splunk instance. Ensure that you include “input-” at the start of your Splunk URL. For example, if your Splunk URL was `https://prd-p-2k3mp2xhznbs.cloud.splunk.come:8088`, enter `https://input-prd-p-2v3mp2xhznbs.cloud.splunk.com:8088`.  
+2. Enter your Splunk URL, which is the pointer to your Splunk instance. Ensure that you specify a port at the end of the URL. The default port is `8088`, so your URL would be similar to `https://prd-p-2k3mp2xhznbs.cloud.splunk.come:8088`. 
+
 3. Enter the event collector token you created into the token field. The token is stored securely within Azure DevOps and never displayed again in the UI. We recommend rotating the token regularly, which you can do by getting a new token from Splunk and editing the stream.
 
    :::image type="content" source="media/auditing-streaming/create-stream-splunk.png" alt-text="Enter topic endpoint and access key that you noted earlier":::
