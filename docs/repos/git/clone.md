@@ -11,7 +11,8 @@ monikerRange: '<= azure-devops'
 
 # Clone an existing Git repo
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
+[!INCLUDE [temp](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE [temp](../includes/version-vs-2015-vs-2019.md)]
 
 Create a complete local copy of an existing Git repository by cloning it.
 Cloning a repo downloads all [commits](commits.md) and [branches](./create-branch.md) in the repo.
@@ -28,12 +29,7 @@ In this tutorial you learn how to:
 > * Get the clone URL to your repo
 > * Clone a repo
 
-## Video tutorial
 
-<iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Create-a-Git-repo-in-Visual-Studio-2015/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe>
-
->[!TIP]
-> Working from the command line? You can view our video tutorial using command line steps on [Channel9](https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Create-a-repo-from-the-command-line).
 
 <a name="clone_url"></a>
 

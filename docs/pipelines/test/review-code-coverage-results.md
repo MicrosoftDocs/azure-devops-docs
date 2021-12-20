@@ -63,6 +63,12 @@ The results can be viewed and downloaded on the **Code coverage** tab.
 ![View and download results on the Code coverage tab.](media/review-code-coverage-results/view-code-coverage-summary.png)
 
 > [!NOTE]
+> In a multi-stage YAML pipeline, the code coverage results are only available after the completion of the entire pipeline.
+> This means that you may have to separate the build stage into a pipeline of its own if you want to review the 
+> code coverage results prior to deploying to production.
+
+
+> [!NOTE]
 > Merging code coverage results from multiple [test runs](test-glossary.md) is
 > limited to .NET and .NET Core at present. This will be supported for other formats in a future release.
 

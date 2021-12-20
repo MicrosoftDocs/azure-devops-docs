@@ -2,7 +2,7 @@
 ms.topic: include
 author: RoopeshNair
 ms.author: ronai
-ms.date: 01/05/2021
+ms.date: 08/28/2021
 ms.prod: devops
 ms.technology: devops-cicd-tasks
 ---
@@ -21,3 +21,6 @@ A: `$(Build.SourcesDirectory)` and `$(Agent.BuildDirectory)` are just few of the
 
 See [Define variables](../../process/variables.md), [predefined variables](../../build/variables.md), and [Classic release and artifacts variables](../../release/variables.md)  to learn about the different types of variables.
 
+#### Q: Task allows me to publish artifacts in deployment job in yaml pipeline, but I am not able to use it in downstream pipeline? 
+
+A:  Deployment jobs do not have the context of source branches and are hence not appropriate for publishing artifacts. They have been primarily designed to consume artifacts. A workaround would be to isolate that logic into a separate job (with dependencies on your deployment jobs).

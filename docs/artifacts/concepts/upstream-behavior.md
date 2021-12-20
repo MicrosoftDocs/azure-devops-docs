@@ -73,25 +73,25 @@ Aside from using the feed's user interface, you can also configure the upstream 
 
 #### [NuGet](#tab/nuget/)
 
-- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/get%20upstreaming%20behavior)
-- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/set%20upstreaming%20behavior)
+- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/get-upstreaming-behavior)
+- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/set-upstreaming-behavior)
  
 #### [Npm](#tab/npm/)
 
-- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/getpackageupstreamingbehavior)
-- [Get scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/getscopedpackageupstreamingbehavior)
-- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set%20upstreaming%20behavior)
-- [Set scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set%20scoped%20upstreaming%20behavior)
+- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-package-upstreaming-behavior)
+- [Get scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/get-scoped-package-upstreaming-behavior)
+- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set-upstreaming-behavior)
+- [Set scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set-scoped-upstreaming-behavior)
 
 #### [Python](#tab/python/)
 
-- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/get%20upstreaming%20behavior)
-- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/set%20upstreaming%20behavior)
+- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/get-upstreaming-behavior)
+- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/set-upstreaming-behavior)
 
 #### [Maven](#tab/maven/)
 
-- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/get%20upstreaming%20behavior)
-- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/set%20upstreaming%20behavior)
+- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/get-upstreaming-behavior)
+- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/set-upstreaming-behavior)
 
 * * * 
 

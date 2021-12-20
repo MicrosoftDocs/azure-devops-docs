@@ -41,6 +41,8 @@ The **codeCoverageTool** and **summaryFileLocation** parameters are mandatory.
 
 To publish code coverage results for JavaScript with Istanbul using YAML, see [JavaScript](../../ecosystems/javascript.md) in the Ecosystems section of these topics, which also includes examples for other languages. 
 
+To see an example of publishing code coverage using Cobertura, see this [section](../../ecosystems/javascript.md#publish-code-coverage-results) on code coverage.
+
 ::: moniker-end
 
 ## Arguments

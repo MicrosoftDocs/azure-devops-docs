@@ -4,10 +4,10 @@ description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
 ms.topic: conceptual
 ms.assetid:
-ms.custom: seodec18
+ms.custom: seodec18, contperf-fy22q1
 ms.author: jukullam
 author: juliakm
-ms.date: 08/23/2021
+ms.date: 12/10/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -65,13 +65,13 @@ az webapp create -g myapppipeline-rg -p myapp-service-plan -n my-app-dotnet --ru
 ```
 # [Windows](#tab/windows)
 
-Create an Azure App Service on Linux.
+Create an Azure App Service on Windows.
 
 ```azurecli
 # Create a resource group
 az group create --location eastus2 --name myapp-rg
 
-# Create an app service plan of type Linux
+# Create an app service plan of type Windows
 az appservice plan create -g myapp-rg -n myapp-service-plan
 
 # Create an App Service from the plan 
@@ -84,11 +84,7 @@ az webapp create -g myapppipeline-rg -p myapp-service-plan -n my-app-dotnet-win 
 
 ::: moniker range="azure-devops"
 
-To get started, fork the following repository into your GitHub account.
-
-```
-https://github.com/MicrosoftDocs/pipelines-dotnet-core
-```
+[!INCLUDE [include](../includes/dotnet-setup.md)]
 
 ### Create your pipeline
 
@@ -167,20 +163,14 @@ YAML pipelines aren't available on TFS.
 
 To get started: 
 
-1. Fork this repo in GitHub, or import it into Azure Repos:
+1. Create a pipeline and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
 
-   ```
-   https://github.com/MicrosoftDocs/pipelines-dotnet-core
-   ```
+2. Save the pipeline and queue a build to see it in action.
 
-2. Create a pipeline and select the **ASP.NET Core** template. This selection automatically adds the tasks required to build the code in the sample repository.
-
-3. Save the pipeline and queue a build to see it in action.
-
-4. Create a release pipeline and select the **Azure App Service Deployment** template for your stage.
+3. Create a release pipeline and select the **Azure App Service Deployment** template for your stage.
    This automatically adds the necessary tasks. 
 
-5. Link the build pipeline as an artifact for this release pipeline. Save the release pipeline and create a release to see it in action.
+4. Link the build pipeline as an artifact for this release pipeline. Save the release pipeline and create a release to see it in action.
 
 ---
 Now you're ready to read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
@@ -425,39 +415,50 @@ By using jobs, you can control the order of deployment to multiple web apps.
 
 ```yaml
 jobs:
-
 - job: buildandtest
   pool:
-    vmImage: 'ubuntu-latest'
+    vmImage: ubuntu-latest
+ 
   steps:
   # publish an artifact called drop
-  - task: PublishBuildArtifacts@1
+  - task: PublishPipelineArtifact@1
     inputs:
+      targetPath: '$(Build.ArtifactStagingDirectory)' 
       artifactName: drop
-
+  
   # deploy to Azure Web App staging
   - task: AzureWebApp@1
     inputs:
-      azureSubscription: '<test stage Azure service connection>'
+      azureSubscription: '<Azure service connection>'
+      appType: <app type>
       appName: '<name of test stage web app>'
+      deployToSlotOrASE: true
+      resourceGroupName: <resource group name>
+      slotName: 'staging'
+      package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
 
 - job: deploy
-  pool:
-    vmImage: 'ubuntu-latest'
   dependsOn: buildandtest
   condition: succeeded()
-  steps:
 
-  # download the artifact drop from the previous job
-  - task: DownloadBuildArtifacts@0
-    inputs:
-      artifactName: drop
+  pool: 
+    vmImage: ubuntu-latest  
   
-  # deploy to Azure Web App production
+  steps:
+    # download the artifact drop from the previous job
+  - task: DownloadPipelineArtifact@2
+    inputs:
+      source: 'current'
+      artifact: 'drop'
+      path: '$(Pipeline.Workspace)'
+
   - task: AzureWebApp@1
     inputs:
-      azureSubscription: '<prod Azure service connection>'
-      appName: '<name of prod web app>'
+      azureSubscription: '<Azure service connection>'
+      appType: <app type>
+      appName: '<name of test stage web app>'
+      resourceGroupName: <resource group name>
+      package: '$(Pipeline.Workspace)/**/*.zip'
 ```
 
 ::: moniker-end

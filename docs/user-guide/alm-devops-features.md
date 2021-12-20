@@ -334,7 +334,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Review fields</b></p>
-<p>You can <a href="../organizations/settings/work/customize-process-field.md#review-fields" data-raw-source="[review the list of fields](../organizations/settings/work/customize-process-field.md#review-fields)">review the list of fields</a> defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see <a href="../boards/work-items/guidance/work-item-field.md" data-raw-source="[Work item field index](../boards/work-items/guidance/work-item-field.md)">Work item field index</a>. </p>
+<p>You can <a href="../boards/work-items/work-item-fields.md#review-fields" data-raw-source="[review the list of fields](../boards/work-items/work-item-fields.md#review-fields)">review the list of fields</a> defined for a process, their data type, and the WITs which reference them. For descriptions and usage of each field, see <a href="../boards/work-items/guidance/work-item-field.md" data-raw-source="[Work item field index](../boards/work-items/guidance/work-item-field.md)">Work item field index</a>. </p>
 
 <p><b>Delete a field from the collection</b></p>
 <p>You can <a href="../organizations/settings/work/customize-process-field.md#delete-field" data-raw-source="[delete a custom field](../organizations/settings/work/customize-process-field.md#delete-field)">delete a custom field</a> if you find it&#39;s no longer required. </p>
@@ -803,7 +803,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 
 <p><b>Get notified about pull requests</b></p>
-<p>Subscribe to email alerts to get notified about <a href="../repos/git/pull-requests.md#notifications" data-raw-source="[new pull requests, changes, approvals, and rejections](../repos/git/pull-requests.md#notifications)">new pull requests, changes, approvals, and rejections</a>.</p>
+<p>Subscribe to email alerts to get notified about <a href="../repos/git/pull-request-notifications.md" data-raw-source="[new pull requests, changes, approvals, and rejections](../repos/git/pull-request-notifications.md)">new pull requests, changes, approvals, and rejections</a>.</p>
 
 <p><b>Set branch policies </b></p>
 <p>To improve code quality, <a href="../repos/git/branch-policies.md" data-raw-source="[set branch policies to require code reviews or  automatically add reviewers](../repos/git/branch-policies.md)">set branch policies to require code reviews or  automatically add reviewers</a>. </p>
@@ -951,7 +951,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>What is Azure Artifacts?</b></p>
-<p>Azure Artifacts is the new name for what was previously Package Management. Azure Artifacts helps you <a href="../artifacts/overview.md" data-raw-source="[manage code sharing by automating common tasks for discovering, consuming, and sharing components](../artifacts/overview.md)">manage code sharing by automating common tasks for discovering, consuming, and sharing components</a>.</p>
+<p>Azure Artifacts is the new name for what was previously Package Management. Azure Artifacts helps you <a href="/azure/devops/artifacts/start-using-azure-artifacts" data-raw-source="[manage code sharing by automating common tasks for discovering, consuming, and sharing components](../artifacts/start-using-azure-artifacts.md)">manage code sharing by automating common tasks for discovering, consuming, and sharing components</a>.</p>
 
 <p><b>Create feeds </b></p>
 <p><a href="/azure/devops/artifacts/" data-raw-source="[Create feeds](../artifacts/index.yml)">Create feeds</a> to share code through packages.</p>
@@ -977,8 +977,8 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 
-<p><b>Bootstrap the developer environment</b></p>
-<p>Increase your team&#39;s velocity and decrease the amount of code duplication across your organization. Access a set of tools and conventions for integrating Azure DevOps Services NuGet into your workflow by <a href="../artifacts/nuget/bootstrap-nuget.md" data-raw-source="[getting the NuGet VSS.PackageManagement.Bootstrap package](../artifacts/nuget/bootstrap-nuget.md)">getting the NuGet VSS.PackageManagement.Bootstrap package</a>.</p>
+<p><b>Upstream sources</b></p>
+<p>use a single feed to manage packages from different sources. Publish and install packages from your feed and public registries with  <a href="../artifacts/concepts/upstream-sources.md" data-raw-source="[Upstream Sources](../artifacts/concepts/upstream-sources.md)">Upstream Sources</a>.</p>
 
 
 <p><b>Remove a NuGet package from a feed </b></p>
@@ -2009,7 +2009,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><a href="../test/create-a-test-plan.md" data-raw-source="[Create and run manual tests](../test/create-a-test-plan.md)">Create and run manual tests</a> for your app.</p>
 
 <p><b>Package (Azure DevOps Services, Preview)</b></p>
-<p>Share code as binary assets and control dependencies by <a href="../artifacts/overview.md" data-raw-source="[subscribing to and working with Azure Artifacts feeds](../artifacts/overview.md)">subscribing to and working with Azure Artifacts feeds</a>.</p>
+<p>Share code as binary assets and control dependencies by <a href="/azure/devops/artifacts/start-using-azure-artifacts" data-raw-source="[subscribing to and working with Azure Artifacts feeds](../artifacts/start-using-azure-artifacts.md)">subscribing to and working with Azure Artifacts feeds</a>.</p>
 
 <p><b>Release (Azure DevOps Services, Preview)</b></p>
 <p>Manage the release of your app by <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[deploying it to a specific environment for each separate release step](../pipelines/get-started/what-is-azure-pipelines.md)">deploying it to a specific environment for each separate release step</a>, and by controlling the process through approvals for each step.</p>

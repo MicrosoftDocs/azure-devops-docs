@@ -6,7 +6,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: moala
 author: Raiyan
-ms.date: 08/25/2021
+ms.date: 12/02/2021
 ---
 
 # Manual Validation task
@@ -24,7 +24,7 @@ This task is supported only in YAML pipelines. Can be used only in an [agentless
 | Parameter | Comments |
 | --- | --- |
 | **instructions** | Optional. The instruction text to display to the user when the task is activated. |
-| **notifyUsers** | Optional. The list of users that will be notified that the task has been activated. |
+| **notifyUsers** | Optional. The list of email addresses for users that will be notified that the task has been activated. |
 | **onTimeout** | Optional. The action to take (reject or resume) if the task times out. Defaults to reject. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 

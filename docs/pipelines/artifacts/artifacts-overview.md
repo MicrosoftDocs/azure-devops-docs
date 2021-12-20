@@ -19,7 +19,7 @@ The following table describes supported artifact types in Azure Pipelines.
 |         Supported artifact type            |                                                 Description                                                            |
 |    ----------------------------------------|--------------------------------------------------------------------------------------------------------------------    |
 | [Build artifacts](build-artifacts.md)      | The files produced by a build such as .dll, .exe, or .PDB files.                                                       |
-| [Maven](maven.md)                          | Publish Maven packages to Azure Artifacts feeds or Maven central repository.                                           |
+| [Maven](../../artifacts/get-started-maven.md)                          | Publish Maven packages to Azure Artifacts feeds or Maven central repository.                                           |
 | [npm](npm.md)                              | Publish npm packages to Azure Artifacts feeds or npm registry.                                                         |
 | [NuGet](nuget.md)                          | Publish NuGet packages to Azure Artifacts feeds or NuGet public repository.                                            |
 | [PyPI](pypi.md)                            | Publish Python packages to Azure Artifacts feeds or PyPI registry.                                                     |
@@ -51,8 +51,8 @@ Each kind of artifact has a different way of being published and consumed. Some 
 
 - [Maven quickstart](../../artifacts/get-started-maven.md)
 - [Install Maven Artifacts](../../artifacts/maven/install.md)
-- [Publish a Maven artifact using Gradle](../../artifacts/gradle/publish-package-gradle.md)
-- [Install a Maven artifact using Gradle](../../artifacts/gradle/pull-package-gradle.md)
+- [Publish a Maven Artifact using Gradle](./publish-package-gradle.md)
+- [Install a Maven Artifact using Gradle](./pull-package-gradle.md)
 
 * * * 
 

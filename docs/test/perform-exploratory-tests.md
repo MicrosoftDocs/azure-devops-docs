@@ -6,8 +6,8 @@ ms.technology: devops-test
 ms.topic: quickstart
 ms.author: sdanie
 author: steved0x
-ms.date: 06/02/2019
 monikerRange: '>= tfs-2015'
+ms.date: 09/14/2021
 ---
 
 # Install the Test &amp; Feedback extension
@@ -20,13 +20,42 @@ marketing teams, early adopters, and other stakeholders can use the
 extension to submit bugs or provide feedback and contribute to the 
 quality of your product. 
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+[!INCLUDE [prerequisites-define](includes/prerequisites-run.md)] 
+
+<a name="browser-support"></a>
+
+## Supported web browsers for the extension
+
+The Test &amp; Feedback extension is currently available for [Google Chrome](https://www.google.com/chrome/), [Microsoft Edge (Chromium Only)](https://www.microsoft.com/edge/), and [Mozilla Firefox version 50.0 and higher](https://www.mozilla.org/).
+
+Some browser versions do not currently support all the features of the Test &amp; Feedback extension.
+
+| Feature | Chrome | Microsoft Edge | Firefox |
+| --- | --- | --- | --- |
+| Capture screenshots with inline annotations | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Capture notes | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Capture screen recordings | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Capture page load data | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Capture user actions log | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Capture system information | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Create bugs | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Create tasks and test cases | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Create feedback requests | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Export session report for sharing | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| End-to-end traceability for work items | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Simplified bug and task tracking and triaging | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| View and get insights from sessions | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| View similar existing bugs | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Test app on devices using cloud providers such as Perfecto | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Manage feedback requests | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+
+<p />
+For more information, see <a href="https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web" data-raw-source="[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web)">Visual Studio Marketplace</a>, Azure DevOps tab.
 
 <a name="installext"></a>
-
 ## Install the extension
 
-1. Check the list of [supported browsers](reference-qa.md#browser-support) and decide which you want to use.
+1. Check the list of [supported browsers](#browser-support) and decide which you want to use.
 
 1. Download and install your chosen browser, if you haven't already, then open it.
 
@@ -96,7 +125,7 @@ update it automatically.
 If you have problems connecting to Azure DevOps or TFS, you may find
 the topic [TF31002: Unable to connect](../organizations/projects/tf31002-unable-connect-tfs.md) useful.
 
-## See also
+## Related articles
 
 *  [FAQs for manual testing](reference-qa.md#tandfext)
 

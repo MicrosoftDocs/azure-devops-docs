@@ -43,7 +43,7 @@ Once you build an image, you can then push it to Azure Container Registry, Docke
            - main
            
            pool:
-             vmImage: 'ubuntu-1604' # set to windows-latest or another Windows vmImage for Windows builds
+             vmImage: 'ubuntu-latest' # set to windows-latest or another Windows vmImage for Windows builds
            
            variables:
              imageName: 'pipelines-javascript-docker'

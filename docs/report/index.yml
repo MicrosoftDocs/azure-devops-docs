@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 10/03/2019 
+  ms.date: 09/13/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -43,6 +43,22 @@ landingContent:
         links:
           - text: Create status and trend query-based charts
             url: ./dashboards/charts.md
+  - title: Work tracking status and trends
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Burnup and burndown
+            url: ./dashboards/configure-burndown-burnup-widgets.md
+          - text: Sprint burndown
+            url: ./dashboards/configure-sprint-burndown.md
+          - text: Cumulative flow
+            url: ./dashboards/cumulative-flow.md
+          - text: Cycle and Lead time 
+            url: ./dashboards/cycle-time-and-lead-time.md
+          - text: Velocity
+            url: ./dashboards/team-velocity.md
+          - text: Work item query-based query charts
+            url: ./dashboards/charts.md
   - title: Create Power BI reports
     linkLists:
       - linkListType: overview
@@ -61,6 +77,8 @@ landingContent:
             url: ./powerbi/analytics-views-create.md
           - text: Connect to Power BI data connector 
             url: ./powerbi/data-connector-connect.md
+          - text: Connect with data by using Power BI and OData queries
+            url: ./powerbi/odataquery-connect.md
           - text: Create a Power BI report with an OData Query
             url: ./powerbi/create-quick-report-odataq.md
   - title: Sample Power BI reports 
@@ -77,6 +95,18 @@ landingContent:
             url: ./powerbi/add-last-refresh-time.md
           - text: Calculate time-in-state 
             url: ./powerbi/create-timeinstate-report.md
+  - title: Test status and trends 
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Test result trends
+            url: ./dashboards/configure-test-results-trend.md
+          - text: Test status, progress, and result charts
+            url: ../test/track-test-status.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+          - text: Trace test requirements
+            url: ../pipelines/test/requirements-traceability.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+          - text: Test Analytics and failure analysis
+            url: ../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
   - title: Extend Analytics with OData (Preview)
     linkLists:
       - linkListType: overview

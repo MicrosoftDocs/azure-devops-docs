@@ -1,18 +1,18 @@
 ---
-title: Edit or manage Delivery Plan permissions
+title: Manage Delivery Plan permissions in Azure Boards
 titleSuffix: Azure Boards
-description: Edit or change permissions for a delivery plan    
+description: Learn how to edit or change permissions for a Delivery Plan in Azure Boards.    
 ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2017'
-ms.date: 05/06/2021
+ms.date: 10/20/2021
 ---
 
 
-# Edit or manage Delivery Plan permissions 
+# Manage Delivery Plan permissions in Azure Boards
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
@@ -20,14 +20,14 @@ ms.date: 05/06/2021
 <a id="plan-permissions">  </a>
 
 
-You can control who has access to a Delivery Plan by setting it's permissions. You can grant or restrict access to users and groups to delete, edit, view, or  manage permissions of delivery plans. 
+You can control who has access to a Delivery Plan by setting its permissions. You can grant or restrict access to users and groups to delete, edit, view, or manage permissions of delivery plans. 
 
 ::: moniker range="azure-devops"
-By default all members of an organization or project collection can view Delivery Plans, including users with Stakeholder access for private projects. The plan creator, as well as project and collection administrators, can edit or delete a plan, or change the plan's permissions. To learn more about Delivery Plans, see [Review team delivery plans](review-team-plans.md).  
+By default all members of an organization or project collection can view Delivery Plans, including users with Stakeholder access for private projects. The plan creator and the project and collection administrators, can edit or delete a plan, or change the plan's permissions. To learn more about Delivery Plans, see [Review team delivery plans](review-team-plans.md).  
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2020"
-By default all members of an organization or project collection can view Delivery Plans, except users with Stakeholder access for private projects. The plan creator, as well as project and collection administrators, can edit or delete a plan, or change the plan's permissions. To learn more about Delivery Plans, see [Delivery Plans 1.0](../extensions/delivery-plans.md).  
+By default all members of an organization or project collection can view Delivery Plans, except users with Stakeholder access for private projects. The plan creator and project and collection administrators, can edit or delete a plan, or change the plan's permissions. To learn more about Delivery Plans, see [Delivery Plans 1.0](../extensions/delivery-plans.md).  
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"
@@ -37,9 +37,9 @@ By default all members of an organization or project collection can view Deliver
 
 ## Prerequisites
 
-- In order to edit the permissions for a Delivery Plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. 
+- To edit the permissions for a Delivery Plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's **Security** dialog. 
  
-## Edit permissions for a delivery plan
+## Edit permissions for a Delivery Plan
 
 
 ::: moniker range="azure-devops"
@@ -114,5 +114,5 @@ By default all members of an organization or project collection can view Deliver
 
 - [Review team delivery plans](review-team-plans.md)  
 - [About permissions and inheritance](../../organizations/security/about-permissions.md)
-- [About access levels](../../organizations/security/access-levels.md)
+- [Stakeholder access quick reference](../../organizations/security/stakeholder-access.md)
 

@@ -49,6 +49,9 @@ _Already have a feed?_ [Skip to the next step](#setup-your-POM-and-settings-.xml
 
 [!INCLUDE [](includes/maven/publish.md)]
 
+> [IMPORTANT]
+> In order to automatically authenticate with your Maven feed, you must set the `mavenAuthenticateFeed` argument to true in the [Maven task](../pipelines/tasks/build/maven.md).
+
 <a name="consume-in-visual-studio"></a>
 
 ## Install an artifact from your feed
