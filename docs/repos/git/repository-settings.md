@@ -114,7 +114,7 @@ The following table summarizes the settings you can enable or configure for each
 ::: moniker range=">= tfs-2018"
 :::row:::
    :::column span="2":::
-      [**Forks**](#forks)
+      [Forks](#forks)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -127,7 +127,7 @@ The following table summarizes the settings you can enable or configure for each
 ::: moniker range=">= tfs-2018"
 :::row:::
    :::column span="2":::
-      [**Commit mention linking**](#work-item-linking)
+      [Commit mention linking](#work-item-linking)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -140,7 +140,7 @@ The following table summarizes the settings you can enable or configure for each
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="2":::
-      [**Commit mention work item resolution**](#work-item-linking)
+      [Commit mention work item resolution](#work-item-linking)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -152,7 +152,7 @@ The following table summarizes the settings you can enable or configure for each
 ::: moniker-end
 :::row:::
    :::column span="2":::
-      [**Work item transition preferences**](#work-item-linking)
+      [Work item transition preferences](#work-item-linking)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -164,7 +164,7 @@ The following table summarizes the settings you can enable or configure for each
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
-      **Permissions management**
+      [Permissions management](#branch-permission-management)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -177,7 +177,7 @@ The following table summarizes the settings you can enable or configure for each
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
-      **Strict Vote Mode**
+      [Strict Vote Mode](#strict-vote-mode-setting)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -190,7 +190,7 @@ The following table summarizes the settings you can enable or configure for each
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
-      **Disable Repository**
+      [Disable Repository](#disable-repository-setting)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -203,7 +203,7 @@ The following table summarizes the settings you can enable or configure for each
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
-      **Searchable branches**
+      [Searchable branches](#searchable-branches-setting)
    :::column-end:::
    :::column span="1"::: 
        On  
@@ -237,7 +237,7 @@ The following table summarizes the policies or options you can set for either al
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="2":::
-      [**Commit author email validation**](#commit-author-email)
+      [Commit author email validation](#commit-author-email)
    :::column-end:::
    :::column span="1"::: 
        Off  
@@ -248,7 +248,7 @@ The following table summarizes the policies or options you can set for either al
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**File path validation**](#file-path-validation)
+      [File path validation](#file-path-validation)
    :::column-end:::
    :::column span="1"::: 
        Off  
@@ -261,7 +261,7 @@ The following table summarizes the policies or options you can set for either al
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="2":::
-      [**Case enforcement**](#case-enforcement)
+      [Case enforcement](#case-enforcement)
    :::column-end:::
    :::column span="1"::: 
        Off  
@@ -272,7 +272,7 @@ The following table summarizes the policies or options you can set for either al
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**Reserved names**](#reserved-names)
+      [Reserved names](#reserved-names)
    :::column-end:::
    :::column span="1"::: 
        Off  
@@ -283,7 +283,7 @@ The following table summarizes the policies or options you can set for either al
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**Maximum path length**](#max-path-length)
+      [Maximum path length](#max-path-length)
    :::column-end:::
    :::column span="1"::: 
        Off  
@@ -294,7 +294,7 @@ The following table summarizes the policies or options you can set for either al
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**Maximum file size**](#maximum-file-size)
+      [Maximum file size](#maximum-file-size)
    :::column-end:::
    :::column span="1"::: 
        Off  
@@ -326,7 +326,7 @@ The following table summarizes the policies you can define to customize a branch
 ---
 :::row:::
    :::column span="2":::
-      [**Require a minimum number of reviewers**](branch-policies.md#require_reviewers)
+      [Require a minimum number of reviewers](branch-policies.md#require_reviewers)
    :::column-end:::
    :::column span="1"::: 
        Off  
@@ -337,7 +337,7 @@ The following table summarizes the policies you can define to customize a branch
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**Check for linked work items**](branch-policies.md#check-linked-wi)
+      [Check for linked work items](branch-policies.md#check-linked-wi)
    :::column-end:::
    :::column span="1"::: 
        Off  
@@ -348,7 +348,7 @@ The following table summarizes the policies you can define to customize a branch
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**Check for comment resolution**](branch-policies.md#check-comment-resolution)
+      [Check for comment resolution](branch-policies.md#check-comment-resolution)
    :::column-end:::
    :::column span="1"::: 
        Off  
@@ -359,8 +359,8 @@ The following table summarizes the policies you can define to customize a branch
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**Limit merge types**](branch-policies.md#limit-merge-types) or
-      [**Enforce a merge strategy**](branch-policies.md#limit-merge-types)
+      [Limit merge types](branch-policies.md#limit-merge-types) or
+      [Enforce a merge strategy](branch-policies.md#limit-merge-types)
    :::column-end:::
    :::column span="1"::: 
        Off  
@@ -372,7 +372,7 @@ The following table summarizes the policies you can define to customize a branch
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="2":::
-      [**Build Validation**](branch-policies.md#build-validation)
+      [Build Validation](branch-policies.md#build-validation)
    :::column-end:::
    :::column span="1"::: 
        Off  
@@ -383,8 +383,8 @@ The following table summarizes the policies you can define to customize a branch
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**Status Checks**](branch-policies.md#require-approval-from-external-services) or  
-      [**Require approval from additional or external services**](branch-policies.md#require-approval-from-external-services)  
+      [Status Checks](branch-policies.md#require-approval-from-external-services) or  
+      [Require approval from additional or external services](branch-policies.md#require-approval-from-external-services)  
    :::column-end:::
    :::column span="1"::: 
        Off  
@@ -395,7 +395,7 @@ The following table summarizes the policies you can define to customize a branch
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [**Automatically included reviewers**](branch-policies.md#include-code-reviewers)
+      [Automatically included reviewers](branch-policies.md#include-code-reviewers)
    :::column-end:::
    :::column span="1"::: 
        Off  
