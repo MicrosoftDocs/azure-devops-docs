@@ -15,15 +15,15 @@ monikerRange: '>= tfs-2017'
 
 There are several ways to customize your Azure Repos Git repositories by using branch and repository settings and policies. This article discusses repository-level settings and policies.
 
-- Repository settings and policies that configure global options for all Git repositories for a project or organization, or for individual repositories.
+- Repository settings and policies configure global options for all Git repositories for a project or organization, or for individual repositories.
 
   This article discusses server-side repository settings and policies. To learn about client-side Git preferences, see [Git preferences and settings in Visual Studio](git-config.md).
 
-- Branch policies that cover branch-specific controls.
+- Branch policies cover branch-specific controls.
 
   Branch policies include options like requiring a pull request, a successful build, or a code review before changes can merge into a branch. For more information, see [Branch policies and settings](branch-policies.md).
 
-- Repository and branch security permissions assignments.
+- Repository and branch security permissions control user assignments.
 
   These permissions control who can read, write, contribute to pull requests, and take other specific actions. For more information, see [Set permissions for a repository](set-git-repository-permissions.md#git-repository).
 
