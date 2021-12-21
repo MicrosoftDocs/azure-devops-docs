@@ -210,6 +210,4 @@ At D:\a\_temp\<temp_script_file>.ps1:4 char:3
 ```
 To avoid this it is recommended to handle such exceptions on a script level, or avoid cases when secrets could appear in the source code line - in the error message.
 
-
-
 <!-- ENDSECTION -->
