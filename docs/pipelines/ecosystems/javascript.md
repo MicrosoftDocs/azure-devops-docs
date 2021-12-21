@@ -29,7 +29,7 @@ Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or
 
 > [!NOTE]
 > 
-> This guidance applies to Team Foundation Server (TFS) version 2017.3 and newer.
+> The following guidance applies to Team Foundation Server (TFS) version 2017.3 and newer.
 
 ::: moniker-end
 
@@ -37,7 +37,7 @@ Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or
 
 ::: moniker range=">=azure-devops-2020"
 
-> Are you new to Azure Pipelines? If so, then we recommend you try this section to create before moving on to other sections.
+If you're new to Azure Pipelines, create a pipeline before you move on to other sections.
 
 ::: moniker-end
 
@@ -52,9 +52,9 @@ https://github.com/Azure-Samples/js-e2e-express-server
 
 ```
 
-#### [See an example](#tab/example)
+#### [Example](#tab/example)
 
-This YAML file creates a package for npm release and produces an artifact named `npm`. 
+The following YAML file creates a package for npm release and produces an artifact named `npm`. 
 
 ```yaml
 trigger:
@@ -108,39 +108,39 @@ steps:
 
 ### Create the pipeline
 
-1. To get started, fork this repo in GitHub.
+1. To get started, fork the following repo in GitHub.
 
     ```
     https://github.com/Azure-Samples/js-e2e-express-server
     ```
 
-1. Sign in to your Azure DevOps organization and navigate to your project.
+1. Sign in to your Azure DevOps organization and go to your project.
 
-1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+2. In your project, go to the **Pipelines** page. Then, **Create a new pipeline**.
 
-1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+3. Select **GitHub** as the location of your source code.
 
-1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+4. If you're redirected to GitHub to sign in, enter your GitHub credentials.
 
-1. When the list of repositories appears, select your Node.js sample repository.
+5. When the list of repositories appears, select your Node.js sample repository.
 
-1. Azure Pipelines will analyze the code in your repository and recommend `Node.js` template for your pipeline. Select that template.
+6. Azure Pipelines analyzes the code in your repository and recommends the `Node.js` template for your pipeline. Select that template.
 
-1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
+7. Azure Pipelines generates a YAML file for your pipeline. Select **Save and run** > **Commit directly to the main branch**, and then choose **Save and run** again.
 
-1. A new run is started. Wait for the run to finish.
+8. A new run starts. Wait for the run to finish.
 
-When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
+When you're done, you have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
 
 > [!TIP]
-> To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+> To make changes to the YAML file, select the pipeline and then **Edit** the `azure-pipelines.yml` file.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019" 
 ### YAML
 
-1. To get started, fork this repo in GitHub.
+1. Fork the following repo in GitHub.
 
     ```
    https://github.com/Azure-Samples/js-e2e-express-server
@@ -159,15 +159,15 @@ pool: Default
     npm run build
   displayName: 'npm install and build'
 ```
-3. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **YAML**.
+1. [Create a pipeline](../create-first-pipeline.md), and select the **YAML** template.
 
-4. Set the **Agent pool** and **YAML file path** for your pipeline. 
+2. Set the **Agent pool** and **YAML file path** for your pipeline. 
 
-5. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+3. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
 
-6. When you're ready to make changes to your pipeline, **Edit** it.
+4. When you're ready to make changes to your pipeline, **Edit** it.
 
-7. See the sections below to learn some of the more common ways to customize your pipeline.
+5. See the following sections to learn some of the more common ways to customize your pipeline.
 ::: moniker-end
 ::: moniker range="< azure-devops" 
 ### Classic
