@@ -192,8 +192,8 @@ Tasks will be injected before/after all instances of specified target task.
 
 
 ### Specifying target task's inputs injection
-You can specify list of inputs of target task that you want to inject as inputs to injected task.
-> Note: This functionality is only available for tasks that are injected before or after target task.
+You can specify a list of inputs of the target task that you want to inject as inputs to the injected task.
+> Note: This functionality is only available for tasks that are injected before or after the target task.
 
 To specify this list of inputs you can modify vss-extension.json manifest file like below:
 
@@ -211,7 +211,7 @@ To specify this list of inputs you can modify vss-extension.json manifest file l
             "properties": {
                 "template": "my-decorator.yml",
                 "targettask": "target-task-id",
-                "targettaskinputs": ["targetes-task-input", "targetes-task-second-input"]
+                "targettaskinputs": ["target-task-input", "target-task-second-input"]
             }
         }
     ],
@@ -219,8 +219,8 @@ To specify this list of inputs you can modify vss-extension.json manifest file l
 }
 ```
 
-By setting up of 'targettaskinputs' property you can specify list of inputs that are expected to be injected.
-These inputs will be injected to the task with prefix "`target_`" and will be available in the injected task like `target_targetes-task-input`.
+By setting up of 'targettaskinputs' property you can specify the list of inputs that are expected to be injected.
+These inputs will be injected into the task with the prefix "`target_`" and will be available in the injected task like `target_target-task-input`.
 > Note: Targeted task inputs that contain secrets won't be injected.
 
 
