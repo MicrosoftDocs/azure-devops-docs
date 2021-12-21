@@ -132,7 +132,7 @@ Choose the :::image type="icon" source="../media/icons/more-actions.png" border=
 - **Open test suite work item**: This option allows you to edit the Test suite work item form to manage the work item fields.
 - **Assign testers to run all tests**: This option is very useful for User Acceptance testing (UAT) scenarios where the same test needs to be run/executed by multiple testers, generally belonging to different departments. 
 - **Rename/Delete**: These options allow you to manage the suite name or remove the suite and its content from the test plan.
-- **Import test suites**: Use this option to import test cases present in other suites from same or other test plans and even across projects. More details below.
+- **Import test suites**: Use this option to import test cases present in other suites from other test plans in the same project or even across projects. More details below.
 
 
 **Export test suite dialog**  
