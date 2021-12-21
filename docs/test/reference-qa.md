@@ -33,7 +33,7 @@ The suite will automatically include every test case that is returned by the que
 
 Other options include using the REST APIs:
 
-- For test plans, see [Test Plan Clone - Clone Test Plan](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-6.0&preserve-view=true).
+- For test plans, see [Test Plan Clone - Clone Test Plan](/rest/api/azure/devops/testplan/test-plan-clone/clone-test-plan).
 - For test suites, see [Test Suite Clone](/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-6.0&preserve-view=true).
 
 ### Q: When I export a test plan, can I just view the data or copy it to a Word document?
