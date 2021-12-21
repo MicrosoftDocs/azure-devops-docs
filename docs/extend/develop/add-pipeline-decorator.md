@@ -190,6 +190,38 @@ To specify target task you can modify vss-extension.json manifest file like belo
 By setting up of 'targettask' property you can specify id of a target task.
 Tasks will be injected before/after all instances of specified target task. 
 
+
+### Specifying target task's inputs injection
+You can specify list of inputs of target task that you want to inject as inputs to injected task.
+To specify this list of inputs you can modify vss-extension.json manifest file like below:
+
+#### vss-extension.json (injected task inputs version)
+```json
+{
+    "contributions": [
+        {
+            "id": "my-required-task",
+            "type": "ms.azure-pipelines.pipeline-decorator",
+            "targets": [
+                "ms.azure-pipelines-agent-job.pre-task-tasks",
+                "ms.azure-pipelines-agent-job.post-task-tasks"
+            ],
+            "properties": {
+                "template": "my-decorator.yml",
+                "targettask": "target-task-id",
+                "targettaskinputs": ["targetes-task-input", "targetes-task-second-input"]
+            }
+        }
+    ],
+    ...
+}
+```
+
+By setting up of 'targettaskinputs' property you can specify list of inputs that are expected to be injected.
+These inputs will be injected to the task with prefix "`target_`" and will be available in the injected task like `target_targetes-task-input`.
+> Note: Targeted task inputs that contain secrets won't be injected.
+
+
 <!--## Limitations
 
 #### Scoping
