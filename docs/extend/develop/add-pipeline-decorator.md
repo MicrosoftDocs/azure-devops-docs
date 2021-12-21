@@ -193,6 +193,8 @@ Tasks will be injected before/after all instances of specified target task.
 
 ### Specifying target task's inputs injection
 You can specify list of inputs of target task that you want to inject as inputs to injected task.
+> Note: This functionality is only available for tasks that are injected before or after target task.
+
 To specify this list of inputs you can modify vss-extension.json manifest file like below:
 
 #### vss-extension.json (injected task inputs version)
