@@ -28,7 +28,35 @@ You must have the following items in Azure DevOps:
 - A pipeline. If you don't have one, [create a pipeline](#create-a-pipeline) now.
 ### Create a pipeline
 
-[!INCLUDE [include](includes/get-code-before-sample-repo.md)]
+::: moniker range="> azure-devops-2019"
+
+1. Fork the following repo at GitHub:
+
+   ```
+   https://github.com/MicrosoftDocs/pipelines-java
+   ```
+
+1. Sign in to your Azure DevOps organization and go to your project.
+
+1. Go to **Pipelines**, and then select **New pipeline**.
+
+1. Do the steps of the wizard by first selecting **GitHub** as the location of your source code. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+
+1. Select your repo. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
+
+1. When you see the **Configure** tab, select **Maven**.
+
+1. When you're ready, select **Save and run**.
+
+1. Commit a new _azure-pipelines.yml_ file to your repo. Select **Save and run** again.
+
+   If you want to watch your pipeline in action, select the build job.
+
+   You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Maven](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/maven.yml) template.
+
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repo that's ready for you to customize!
+
+1. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 ::: moniker-end
 
@@ -52,33 +80,7 @@ You must have the following items in Azure DevOps:
 
   This template automatically adds the tasks you need to build the code in the sample repo.
 
-2. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action. You now have a working pipeline that's ready for you to customize any time!
-
-::: moniker-end
-
-::: moniker range=">=azure-devops-2020"
-
-1. Sign in to your Azure DevOps organization and go to your project.
-
-1. Go to **Pipelines**, and then select **New pipeline**.
-
-1. Do the steps of the wizard by first selecting **GitHub** as the location of your source code. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
-
-1. Select your repo. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
-
-1. When you see the **Configure** tab, select **Maven**.
-
-1. When you're ready, select **Save and run**.
-
-1. Commit a new _azure-pipelines.yml_ file to your repo. Select **Save and run** again.
-
-   If you want to watch your pipeline in action, select the build job.
-
-   You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Maven](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/maven.yml) template.
-
-   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repo that's ready for you to customize!
-
-1. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+1. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action. You now have a working pipeline that's ready for you to customize any time!
 
 ::: moniker-end
 
