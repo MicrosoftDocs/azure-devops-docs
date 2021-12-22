@@ -7,4 +7,4 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
-1. Fork the following repo at GitHub:
+Fork the following repo at GitHub:
