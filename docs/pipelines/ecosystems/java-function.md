@@ -110,7 +110,7 @@ After the pipeline has run, select the vertical ellipses in the upper-right corn
 
 [!INCLUDE [include](includes/run-pipeline.md)]
 
-After the pipeline has run, test the function app running on Azure. For example, in bash or from a command prompt enter:
+After the pipeline has run, test your function app running on Azure. For example, in bash or from a command prompt enter:
 
 `curl -w '\n' https://my-app-name-00000000000000000.azurewebsites.net/api/HttpTrigger-Java -d fromYourPipeline`
 

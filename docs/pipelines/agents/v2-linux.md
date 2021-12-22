@@ -46,6 +46,9 @@ We support the following subset of .NET Core supported distributions:
 - ARM32 (see note 2)
   - Debian 9
   - Ubuntu 18.04
+- ARM64
+  - Debian 9
+  - Ubuntu 21.04, 20.04, 18.04
 
 > [!NOTE]
 > Note 1: RHEL 6 and CentOS 6 require installing the specialized `rhel.6-x64` version of the agent.
@@ -65,6 +68,11 @@ If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://ww
 You can install those dependencies on supported Linux platforms by running `./bin/installdependencies.sh` in the agent directory.
 >
 > Be aware that some of these dependencies required by .NET Core are fetched from third party sites, like `packages.efficios.com`. Review the `installdependencies.sh` script and ensure any referenced third party sites are accessible from your Linux machine before running the script.
+>
+> Please also make sure that all required repositories are connected to the relevant package manager used in `installdependencies.sh` (like `apt` or `zypper`).
+> 
+> For issues with dependencies installation (like 'dependency was not found in repository' or 'problem retrieving the repository index file') - you can reach out to distribution owner for futher support.
+
 
 ::: moniker-end
 

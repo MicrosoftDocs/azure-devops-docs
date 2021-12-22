@@ -224,7 +224,7 @@ sections:
       - question: Can I query based on Kanban board columns? 
 
         answer: | 
-          **Yes**, see [Query by assignment or workflow changes, Kanban board change queries](queries/query-by-workflow-changes.md#kanban-board-change-queries). 
+          **Yes**, see [Query by assignment or workflow changes, Kanban board change queries](queries/query-by-workflow-changes.md#query-changes-to-a-kanban-board). 
 
       - question: Can I view a query as a Kanban board? 
 
@@ -288,7 +288,7 @@ sections:
       - question: How do I connect Azure Boards to GitHub?
 
         answer: | 
-          Azure Boards integrates with GitHub for Auzre DevOps Server 2019 and later versions. To learn more, see [Azure Boards & GitHub](github/index.md).
+          Azure Boards integrates with GitHub for Azure DevOps Server 2019 and later versions. To learn more, see [Azure Boards & GitHub](github/index.md).
 
       - question: Can I specify the status when linking a work item to a GitHub commit or PR?
 

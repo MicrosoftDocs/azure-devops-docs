@@ -41,4 +41,4 @@ To complete this procedure, you must be a member of the Administrators group on 
   
 ## Related articles
  
-- [Verify SharePoint products for Team Foundation Server](/azure/devops/server/install/sharepoint/verify-sharepoint)
+- [Verify SharePoint products for Team Foundation Server](/previous-versions/azure/devops/server/sharepoint/verify-sharepoint)

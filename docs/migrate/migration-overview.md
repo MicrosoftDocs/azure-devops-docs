@@ -79,10 +79,6 @@ A: **No**. Your tokens will not migrate and you will need to [regenerate your Pe
 
 A: **Yes**. You can contact [AzureDevOpsImport@microsoft.com](mailto:AzureDevOpsImport@microsoft.com). Please note that this alias is for general questions. If you need assistance with a failed import please contact Azure DevOps [customer support](https://aka.ms/AzureDevOpsImportSupport). 
 
-## Videos 
-
-> [!VIDEO https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3199/player]
-
 <!-- ENDSECTION --> 
 
 ## Related articles

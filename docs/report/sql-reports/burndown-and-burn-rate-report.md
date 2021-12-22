@@ -1,12 +1,12 @@
 ---
 title: Burndown and Burn Rate Report
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps Server
 description: Learn how to determine the rate of team progress by reviewing the Burndown and Burn Rate report.
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 68941ffa-eb19-4d52-9418-7de1b6aca335
 ms.author: kaelli
-ms.date: 10/17/2017
+ms.date: 10/19/2021
 ---
 
 # Burndown and Burn Rate Report
@@ -22,11 +22,13 @@ After a team has worked on one or more iterations, also known as sprints, you ca
   
 **You can use this report to answer the following questions**:<br /><br /> -   Is the team likely to finish the iteration on time?<br />-   Will the team complete the required work, based on the current burn rate?<br />-   How much work does each team member have?  
   
- **Required Permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the Report  
+
+<a name="Data"></a>
+
+## Data in the Report  
  The Burndown and Burn Rate report summarizes the data that was captured during the time interval that you specify for each task, user story, or bug based on the filters that you specify. The data is derived from the data warehouse.  
   
  You can filter the report in the following ways:  
@@ -81,8 +83,10 @@ After a team has worked on one or more iterations, also known as sprints, you ca
     >  If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and user story. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).  
   
 -   Update the **State** of each task, story, and bug as it progresses from active to closed.  
-  
-##  <a name="Duration"></a> Set the duration of the iteration  
+
+<a name="Duration"></a>
+
+## Set the duration of the iteration  
  To understand the progress that the team has made for your current iteration, the start and end dates for the report must match your current iteration cycle. Results for the actual trend and team burn rate will vary based on the duration that you set for the iteration.  
   
 #### To change the duration of the iteration  
@@ -90,8 +94,10 @@ After a team has worked on one or more iterations, also known as sprints, you ca
 1.  For the **Iteration Start (Date)** and **Iteration End (Date)**, select the calendar icon, and then select the date that corresponds to the start or end of the iteration.  
   
 2.  Select **View Report**.  
-  
-##  <a name="Interpreting"></a> Interpret the report  
+
+<a name="Interpreting"></a>
+
+## Interpret the report  
  You can filter the report in the following ways:  
   
 - Change the start and end dates for the report.  
@@ -140,8 +146,10 @@ After a team has worked on one or more iterations, also known as sprints, you ca
      Scope creep occurs when team members add features to an iteration after it's planned. The following illustration shows an iteration in which a team is taking on more work over time and making minimal progress on the work that had already been assigned.  
   
      ![Burndown showing scope creep](media/procguid_scopecreep.png "ProcGuid_ScopeCreep")  
-  
-##  <a name="Changing"></a> Filter the report and change the display
+
+<a name="Changing"></a>
+
+## Filter the report and change the display
  You can filter the Burndown and Burn Rate report or change its display in the following ways:  
   
 - Filter the user stories, bugs, and tasks that the report represents by specifying iteration and area paths, work item types, and work item states  

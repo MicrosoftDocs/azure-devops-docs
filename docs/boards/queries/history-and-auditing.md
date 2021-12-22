@@ -1,17 +1,17 @@
 ---
-title: Query by history  
+title: Query work items by history in Azure Boards  
 titleSuffix: Azure Boards
-description: Learn how to query comments and history to work items to support audit requirements when working in Azure Boards
+description: Learn how to query work item history and comments to support audit requirements when working in Azure Boards.
 ms.technology: devops-agile
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ms.author: kaelli
 author: KathrynEE
 ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 08/27/2020
+ms.date: 10/21/2021
 ---
 
-# Query history and discussion fields   
+# Query work item history and discussion fields in Azure Boards
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -28,9 +28,9 @@ The **History** field is automatically indexed for full-text search when full-te
 
 <a id="query-history" />
 
-## Query the History of a work item 
+## Query a work item's history 
 
-You can use either the web portal or Team Explorer to view the history of a work item or find work items based on the contents of the **History** field. When you perform a search on the contents of the **History**  field, it returns only work items that have changes recorded in that field. That is, it doesn't register changes that were made to text in other fields.  
+You can use either the web portal or Team Explorer to view the history of a work item or find work items based on the contents of the **History** field. When you run a search on the contents of the **History**  field, it returns only work items that have changes recorded in that field. That is, it doesn't register changes that were made to text in other fields.  
 
 #### [Browser](#tab/browser/)
 <a id="team-services" /> 
@@ -49,9 +49,9 @@ You can use either the web portal or Team Explorer to view the history of a work
 <a id="team-explorer" />
 
 
-The **Query Editor** isn't available when you are connected to a GitHub or third-party Git repository. Also, it isn't available from Visual Studio 2019 under the following conditions:   
-* If you are set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](../work-items/set-work-item-experience-vs.md).  
-* If you are set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
+The **Query Editor** isn't available when you're connected to a GitHub or third-party Git repository. Also, it isn't available from Visual Studio 2019 under the following conditions:   
+* If you're set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](../work-items/set-work-item-experience-vs.md).  
+* If you're set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
  
 
 **Visual Studio/Team Explorer and Team Explorer Everywhere**
@@ -136,7 +136,7 @@ You can filter for work items by the date on which they were changed or for a sp
 ### Tips for using the query editor
 
 - Type the complete word or phrase that is specified in the **History** field of those work items that you want to find.
-- Enter the full text for the word that you want to search. The **History** field is indexed for full-text search. If you enter only a partial word, the query will not return work items that contain the full word. For example, if the **History** field contains the phrase *reproducible behavior* and you search for *repro*, the work item will not be found. However, if you search for the complete word *reproducible*, the work item will be found. You can also search for the string with a wild card, such as `repro*`. 
+- Enter the full text for the word that you want to search. The **History** field is indexed for full-text search. If you enter only a partial word, the query won't return work items that contain the full word. For example, if the **History** field contains the phrase *reproducible behavior* and you search for *repro*, the work item won't be found. However, if you search for the complete word *reproducible*, the work item will be found. You can also search for the string with a wild card, such as `repro*`. 
 - The query editor ignores common words or stop words as defined in  [Configure and Manage Stopwords and Stoplists for Full-Text Search](/sql/relational-databases/search/configure-and-manage-stopwords-and-stoplists-for-full-text-search).
 - On the query editor toolbar, choose ![Run query](../media/icons/run_query.png) or ![Run query, earlier version](../media/icons/run_query_te.png) icon and confirm that your query returns expected results. 
 - If you don&#39;t receive the results you expect, adjust the word or phrase that you entered, and run the query again. 
@@ -150,7 +150,7 @@ You can filter for work items by the date on which they were changed or for a sp
 An entry is made to the **History** field each time a work item is saved. To view the history of changes, open an existing work item, and then choose the ![history tab icon](../media/icons/icon-history-tab-wi.png) or **History** tab, or for some work item types, choose the **Details** tab. 
 
 <a id="web-portal-explorer-tab" /> 
-The history details shown depend on the platform, version, and client you user. 
+The history details shown depend on the platform, version, and client. 
 
 #### [Browser](#tab/browser/)
 <a id="team-services-tab" /> 
@@ -192,9 +192,12 @@ To view only the comments that were added to the log, choose the **Discussion On
 ![Screenshot of Work item form, Team Explorer, History tab.](media/ALM_HA_AllChanges.png) 
 
 * * *
+
+<a id="fields" />
+
 ## Fields that support history, auditing, and revision tracking 
 
-You can use the following fields to filter queries and create reports. Several of these fields are populated with information as a work item progresses from one state to another. Other fields update when the work item is modified. Some fields don't appear on the work item form, but they are tracked for the WITs listed.  
+You can use the following fields to filter queries and create reports. Several of these fields are populated with information as a work item progresses from one state to another. Other fields update when the work item is modified. Some fields don't appear on the work item form, but they're tracked for the WITs listed.  
 
 
 :::row:::
@@ -208,19 +211,15 @@ You can use the following fields to filter queries and create reports. Several o
    **Work item type**
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="1":::
-   
    Changed By
-
    :::column-end:::
    :::column span="2":::
-   
    The name of the team member who modified the work item most recently.
 
    Reference name=System.ChangedBy, Data type=String
-
    :::column-end:::
    :::column span="1":::
    All
@@ -228,18 +227,12 @@ You can use the following fields to filter queries and create reports. Several o
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Change Date
-
-  
    :::column-end:::
    :::column span="2":::
-   
    The date and time when a work item was modified.
 
    Reference name=System.ChangedDate, Data type=DateTime
-
-  
    :::column-end:::
    :::column span="1":::
    All
@@ -247,18 +240,11 @@ You can use the following fields to filter queries and create reports. Several o
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Closed Date <sup>1</sup> 
-
-  
    :::column-end:::
    :::column span="2":::
-   
-   The date and time when a work item was closed.
-
+   The date and time when a work item was closed.  
    Reference name=Microsoft.VSTS.Common.ClosedDate, Data type=DateTime
-
-  
    :::column-end:::
    :::column span="1":::
    All
@@ -266,18 +252,12 @@ You can use the following fields to filter queries and create reports. Several o
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Created Date
-
-  
    :::column-end:::
    :::column span="2":::
-   
    The date and time when a work item was created.
  
    Reference name=System.CreatedDate, Data type=DateTime
-
-  
    :::column-end:::
    :::column span="1":::
    All
@@ -288,127 +268,80 @@ You can use the following fields to filter queries and create reports. Several o
    History
    :::column-end:::
    :::column span="2":::
-   
    The record of changes that were made to the work item after it was created. Every time that the work item is updated, information is appended to the history, which specifies the date of the change, who made the changes, and which fields were changed. 
-   
-   > History field queries return work items whose Discussion comments or Description fields contain words that match the keywords entered. You can't use the History field to query on changes made to other fields. 
- 
-   You can't add formatted text to the history field. Once you&#39;ve saved the work item, you can't alter the history. 
-
-   The `History` field, along with the `Description`, `Steps to Repro` and `Title` fields are automatically indexed for full-text search as described in [Query fields, operators, and macros](query-operators-variables.md). 
-
+   > [!NOTE]
+   > History field queries return work items whose **Discussion** comments or **Description** fields contain words that match the keywords entered. You can't use the History field to query on changes made to other fields.  
+   You can't add formatted text to the history field. Once you've saved the work item, you can't alter the history.  
+   The `History` field, along with the `Description`, `Steps to Repro` and `Title` fields are automatically indexed for full-text search as described in [Query fields, operators, and macros](query-operators-variables.md).  
    Reference name=System.History, Data type=History
-
    :::column-end:::
    :::column span="1":::
-   
    All
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-   
    Resolved Date <sup>1</sup> 
-
-  
    :::column-end:::
    :::column span="2":::
-   
    The date and time when the work item was moved into a Resolved state. 
 
    Reference name=Microsoft.VSTS.Common.ResolvedDate, Data type=DateTime
-
-  
    :::column-end:::
    :::column span="1":::
    Bug (Agile, CMMI) 
-  
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
-   
    Rev
-
    :::column-end:::
    :::column span="2":::
-   
    A number that is assigned to the historical revision of a work item. 
 
    Reference name=System.Rev, Data type=Integer
-
    :::column-end:::
    :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
-
-
 :::row:::
    :::column span="1":::
-   
    State Change Date
-
-  
    :::column-end:::
    :::column span="2":::
-   
    The date and time when the value of the State field changed.
 
    Reference name=Microsoft.VSTS.Common.StateChangeDate, Data type=DateTime
-
-  
    :::column-end:::
    :::column span="1":::
    All
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
-   
    <a id="test-suite-audit"/>Test Suite Audit
-  
    :::column-end:::
    :::column span="2":::
-   
-   Tracks additional operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.
-
+   Tracks other operations performed when modifying a test suite, for example: adding tests to a test suite or changing configurations. This field can be viewed through the History tab or through a separate query. There will be a consolidated history view, including changes performed to work items field and changes resulting from related artifacts such as test points and configurations.
    Reference name=Microsoft.VSTS.TCM.TestSuiteAudit, Data type=PlainText
-
-
-  
    :::column-end:::
    :::column span="1":::
-   
    Test Suite
-  
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="1":::
-   
    <a id="watermark"/>Watermark
-  
    :::column-end:::
    :::column span="2":::
-   
-   A system managed field (not editable) that increments with changes made to a work item.
-
+   A system-managed field (not editable) that increments with changes made to a work item.
    Reference name=System.Watermark, Data type=Integer
-
-
-  
    :::column-end:::
    :::column span="1":::
-   
    All
-  
    :::column-end:::
 :::row-end:::
-
 
 
 > [!NOTE]  

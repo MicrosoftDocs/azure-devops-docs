@@ -10,7 +10,7 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 09/10/2021  
+ms.date: 10/26/2021  
 ---
 
 # Publish a Git repository to a wiki
@@ -267,10 +267,7 @@ To add a parent page, you'll first add a Markdown file at the root folder level 
 
 ### Add or update a .order file
 
-The last step when adding files or folders to the wiki repo is to add or update the **.order** file of the updated folders to reflect the sequence of pages you want to show in the TOC. For details, see [Change the page sequence, add, or update a .order file](#page-sequence).
-
-> [!TIP]
-> Files that you upload or add won't show up in the wiki TOC until you add or update the **.order** file to include them.
+The last step when you're adding files or folders to the wiki repo is to add or update the **.order** file of the updated folders. This action reflects the sequence of pages you want to show in the TOC. For details, see [Change the page sequence, add, or update a .order file](#page-sequence). Any files that aren't listed in the .order file get added to the end of the alphabetical list, as their order is set to int.MaxValue.
 
 <a id="page-sequence" />
 
