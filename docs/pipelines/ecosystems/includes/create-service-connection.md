@@ -7,9 +7,9 @@ author: juliakm
 ms.date: 08/17/2021
 ---
 
-### Create the service connection
+## Create the service connection
 
-1. From your project dashboard, select **Project settings**.
+1. From your project dashboard, select **Project settings**. If you don't have a project, [create a project](../../../organizations/projects/create-project.md) now.
 
 2. On the settings page, select **Pipelines** > **Service connections**, select **New service connection**, and then select **Azure Resource Manager**.
 
