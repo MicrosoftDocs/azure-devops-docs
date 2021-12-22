@@ -23,12 +23,9 @@ You can use a pipeline to automatically build and test your Java projects. Once 
 
 ## Prerequisites
 
-
 You must have the following items in Azure DevOps:
-- A project in Azure DevOps. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
+- A project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
 - A pipeline. If you don't have one, [create a pipeline](#create-a-pipeline) now.
-
-::: moniker range=">=azure-devops-2020"
 ### Create a pipeline
 
 ::: moniker range=">=azure-devops-2020"
@@ -41,50 +38,49 @@ You must have the following items in Azure DevOps:
 
 1. Import the following repo into your Git repo in Azure DevOps Server 2019:
 
+   ```
+   https://github.com/MicrosoftDocs/pipelines-java
+   ```
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 
-1. Import the following repo into your Git repo:
+1. Import the following repo into your Git repo in TFS:
+
+   ```
+   https://github.com/MicrosoftDocs/pipelines-java
+   ```
+
+  This template automatically adds the tasks you need to build the code in the sample repo.
+
+2. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action. You now have a working pipeline that's ready for you to customize any time!
 
 ::: moniker-end
 
-```
-https://github.com/MicrosoftDocs/pipelines-java
-```
-
 ::: moniker range=">=azure-devops-2020"
 
-[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
+1. Sign in to your Azure DevOps organization and go to your project.
 
-1. When the **Configure** tab appears, select **Maven**.
+1. Go to **Pipelines**, and then select **New pipeline**.
 
-1. When you see your new pipeline, look at the YAML to see what it does. When you're ready, select **Save and run**.
+1. Do the steps of the wizard by first selecting **GitHub** as the location of your source code. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+1. Select your repo. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.
 
-1. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+1. When you see the **Configure** tab, select **Maven**.
+
+1. When you're ready, select **Save and run**.
+
+1. Commit a new _azure-pipelines.yml_ file to your repo. Select **Save and run** again.
 
    If you want to watch your pipeline in action, select the build job.
 
    You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Maven](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/maven.yml) template.
 
-   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repo that's ready for you to customize!
 
 1. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-   This template automatically adds the tasks you need to build the code in the sample repository.
-
-1. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
-
-   You now have a working pipeline that's ready for you to customize!
-
-1. **Edit** your pipeline any time.
 
 ::: moniker-end
 
@@ -104,7 +100,7 @@ pool:
 
 See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.
 
-As an alternative to using Microsoft-hosted agents, you can set up [self-hosted agents](../agents/agents.md#install) with Java installed. You can also use self-hosted agents to save more time if you have a large repository or you run incremental builds.
+As an alternative to using Microsoft-hosted agents, you can set up [self-hosted agents](../agents/agents.md#install) with Java installed. You can also use self-hosted agents to save more time if you have a large repo or you run incremental builds.
 
 ::: moniker-end
 
@@ -136,11 +132,11 @@ steps:
     goals: 'package'
 ```
 
-For [Spring Boot](https://spring.io/projects/spring-boot), you can use the [Maven](../tasks/build/maven.md) task as well. Make sure that your `mavenPomFile` value reflects the path to your `pom.xml` file. For example, if you're using the [Spring Boot sample repository](https://github.com/spring-guides/gs-spring-boot), your path will be `complete/pom.xml`. 
+For [Spring Boot](https://spring.io/projects/spring-boot), you can use the [Maven](../tasks/build/maven.md) task as well. Make sure that your `mavenPomFile` value reflects the path to your `pom.xml` file. For example, if you're using the [Spring Boot sample repo](https://github.com/spring-guides/gs-spring-boot), your path will be `complete/pom.xml`. 
 
 #### Customize the build path
 
-Adjust the `mavenPomFile` value if your `pom.xml` file isn't in the root of the repository. The file path value should be relative to the root of the repository, such as `IdentityService/pom.xml` or `$(system.defaultWorkingDirectory)/IdentityService/pom.xml`.
+Adjust the `mavenPomFile` value if your `pom.xml` file isn't in the root of the repo. The file path value should be relative to the root of the repo, such as `IdentityService/pom.xml` or `$(system.defaultWorkingDirectory)/IdentityService/pom.xml`.
 
 #### Customize Maven goals
 
@@ -169,14 +165,14 @@ steps:
 
 #### Choose the version of Gradle
 
-The version of Gradle installed on the agent machine will be used unless your repository's `gradle/wrapper/gradle-wrapper.properties` file has a `distributionUrl` property that specifies a different Gradle version to download and use during the build.
+The version of Gradle installed on the agent machine will be used unless your repo's `gradle/wrapper/gradle-wrapper.properties` file has a `distributionUrl` property that specifies a different Gradle version to download and use during the build.
 
 #### Adjust the build path
 
-Adjust the `workingDirectory` value if your `gradlew` file isn't in the root of the repository.
-The directory value should be relative to the root of the repository, such as `IdentityService` or `$(system.defaultWorkingDirectory)/IdentityService`.
+Adjust the `workingDirectory` value if your `gradlew` file isn't in the root of the repo.
+The directory value should be relative to the root of the repo, such as `IdentityService` or `$(system.defaultWorkingDirectory)/IdentityService`.
 
-Adjust the `gradleWrapperFile` value if your `gradlew` file isn't in the root of the repository. The file path value should be relative to the root of the repository, such as `IdentityService/gradlew` or `$(system.defaultWorkingDirectory)/IdentityService/gradlew`.
+Adjust the `gradleWrapperFile` value if your `gradlew` file isn't in the root of the repo. The file path value should be relative to the root of the repo, such as `IdentityService/gradlew` or `$(system.defaultWorkingDirectory)/IdentityService/gradlew`.
 
 #### Adjust Gradle tasks
 
@@ -219,7 +215,7 @@ steps:
 
 #### Script file
 
-This snippet runs a script file that is in your repository. For details, see the [Shell Script](../tasks/utility/shell-script.md), [Batch script](../tasks/utility/batch-script.md), or [PowerShell](../tasks/utility/powershell.md) task.
+This snippet runs a script file that is in your repo. For details, see the [Shell Script](../tasks/utility/shell-script.md), [Batch script](../tasks/utility/batch-script.md), or [PowerShell](../tasks/utility/powershell.md) task.
 
 ```YAML
 steps:
