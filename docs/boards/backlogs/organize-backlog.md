@@ -9,15 +9,15 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/08/2021
+ms.date: 12/03/2021
 ---
 
 
-# Organize your backlog in Azure Boards
+# Organize your backlog and map child work items to parents in Azure Boards
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-After you've added [features or epics](define-features-epics.md) to your portfolio backlog, organize your backlog by mapping backlog items. You can quickly add and group items into a hierarchy. You can also drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.  
+After you've added [features or epics](define-features-epics.md) to your portfolio backlog, organize your backlog by mapping backlog items. You can quickly add and group items into a hierarchy. And also drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.  
 
 In this article you'll learn how to:  
 
@@ -225,7 +225,7 @@ You can multi-select backlog and sprint backlog items in the same way as you [mu
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-Multi-select of work items on the backlog and sprint backlogs requires TFS 2015.1 or later versions. This feature works in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
+To multi-select work items on the backlog and sprint backlogs, it requires TFS 2015.1 or later versions. This feature works in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
@@ -248,7 +248,7 @@ You can reparent an item using the mapping pane, or drag it within the hierarchy
 
  You can only reparent backlog items under other features, and features under other epics. 
 
-Also, to change an item's priority within a group, you can drag the item up or down within its hierarchical group. 
+Also, to change an item's priority within a group, drag the item up or down within its hierarchical group. 
 Reordering from a portfolio backlog works the same as when you [moved items into priority order on your product backlog](create-your-backlog.md).   
 
 ### Limitations on reordering backlog items owned by other teams

@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
-Azure DevOps provides developer services for support teams to plan work, collaborate on code development, and build and deploy applications. Azure DevOps supports a culture and set of processes that bring developers and project managers and contributors together to complete software development. It allows organizations to create and improve products at a faster pace than they can with traditional software development approaches.
+Azure DevOps provides developer services for allowing teams to plan work, collaborate on code development, and build and deploy applications. Azure DevOps supports a culture and set of processes that bring developers, project managers, and contributors together to collaboratively develop software. It allows organizations to create and improve products at a faster pace than they can with traditional software development approaches.
 
 You can work in the cloud using Azure DevOps Services or on-premises using Azure DevOps Server. For information on the differences between the cloud versus on-premises platforms, see [Azure DevOps Services and Azure DevOps Server](about-azure-devops-services-tfs.md).
 
