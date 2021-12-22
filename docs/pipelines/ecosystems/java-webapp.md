@@ -11,11 +11,12 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [include](../includes/version-team-services.md)]
 
-A web app is a lightweight way to host a web application. In this step-by-step guide, learn how to create a pipeline that continuously builds and deploys a Java app. Your team can automatically build each commit at GitHub and deploy the change to an Azure App Service. You can use whatever runtime you prefer, Tomcat, or Java SE. 
+A web app is a lightweight way to host a web application. In this step-by-step guide, learn how to create a pipeline that continuously builds and deploys a Java app. Each commit can automatically build at GitHub and deploy to an Azure App Service. You can use whatever runtime you prefer, Tomcat, or Java SE. 
 
 For more information, see [Java for Azure App Service](/azure/app-service/configure-language-java). 
 
-If you only want to build a Java app, see [Build Java apps](java.md).
+> [!TIP]
+> If you only want to build a Java app, see [Build Java apps](java.md).
 
 ## Prerequisites
 
