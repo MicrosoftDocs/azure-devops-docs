@@ -202,7 +202,7 @@ For example, for the inline script below:
 ./script.ps1 --arg1 value1 --arg2 <some_secret_which_will_be_masked_here>
 ```
 There could be an exception like:
-At D:\a\_temp\<temp_script_file>.ps1:4 char:3
+At <path_to_temp_script_file>:4 char:3
 ```powershell
 +   ./script.ps1 --arg1 value1 --arg2 <unmasked_part_of_original_secret> ...
 +   ~~~~~~~~~~
