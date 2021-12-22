@@ -1,12 +1,12 @@
 ---
-title: Build, test, and deploy Android applications
-description: Automatically build, test, and deploy Android projects with Azure Pipelines and Azure DevOps.
+title: Build, test, and deploy Android apps
+description: Automatically build, test, and deploy Android projects with Azure Pipelines.
 ms.topic: quickstart
 ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: seodec18, freshness-fy22q2
-ms.date: 12/03/2021
+ms.date: 12/22/2021
 monikerRange: azure-devops
 author: vijayma
 ---
@@ -20,6 +20,7 @@ You can set up pipelines to automatically build, test, and deploy Android applic
 You must have the following items:
 - GitHub account. If you don't have a GitHub account, [create one now](https://github.com).
 - Azure DevOps project. If you don't have a project, [create one now](../../organizations/projects/create-project.md).
+
 ## Set up pipeline
 
 Do the following tasks to set up a pipeline for a sample Android application.
@@ -54,7 +55,7 @@ Do the following tasks to set up a pipeline for a sample Android application.
 You have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
 
 > [!TIP]
-> To make changes to the YAML file, as described in this article, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+> To make changes to the YAML file, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 ## Build with Gradle
 
@@ -119,6 +120,7 @@ An APK must be signed to run on a device instead of an emulator. Zipaligning red
 ::: moniker-end
 
 ## Test
+
 ### Test on the Android Emulator
 
 > [!NOTE]
