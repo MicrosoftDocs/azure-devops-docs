@@ -283,7 +283,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    
    - [Test Plans and Test Suites](../../test/create-a-test-plan.md)
    - [Test Cases](../../test/create-test-cases.md)
-   - [Test Cases, grid view](../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time)
+   - [Test Cases, grid view](../../test/create-test-cases.md#use-the-grid-view-to-edit-test-cases)
    - [Shared Steps, Shared Parameters](../../test/repeat-test-with-different-data.md)
    - [Delete test artifacts](../backlogs/delete-test-artifacts.md)
    
@@ -325,7 +325,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
    
    - [Updating existing bugs](../../test/add-to-bugs-exploratory-testing.md)
    - [Capture feedback in standalone mode](../../test/standalone-mode-exploratory-testing.md)
-   - [Capture screen recordings of your app during testing](../../test/reference-qa.md#q-can-i-capture-screen-recordings-of-my-app)
+   - [Capture screen recordings of your app during testing](../../test/run-manual-tests.md)
    
    :::column-end:::
 :::row-end:::

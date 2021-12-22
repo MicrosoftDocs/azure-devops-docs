@@ -5,7 +5,7 @@ ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.topic: conceptual
 ms.author: shashban
 author: shashban
-ms.date: 05/21/2020
+ms.date: 12/08/2021
 ms.custom: "contperf-fy20q4, seodec18"
 monikerRange: '>= tfs-2015'
 ---
@@ -90,7 +90,7 @@ The following sections describe how to work with the different types of artifact
 You can link a release pipeline to any of the build pipelines in Azure Pipelines or TFS project collection.
 
 > [!NOTE]
-> You must include a **Publish Artifacts** task in your build pipeline. For XAML build pipelines, an artifact with the name **drop** is published implicitly.
+> You must include a **Publish Artifacts** task in your build pipeline. For YAML build pipelines, an artifact with the name **drop** is published implicitly.
 
 Some of the differences in capabilities between different versions of TFS and Azure Pipelines are:
 
@@ -317,7 +317,7 @@ Your artifacts may be created and exposed by other types of sources such as a Nu
 
 ## Artifact source alias
 
-To ensure the uniqueness of every artifact download, each artifact source linked to a release pipeline is automatically provided with a specific download location known as the `_source alias_`. This location can be accessed through the variable:
+To ensure the uniqueness of every artifact download, each artifact source linked to a release pipeline is automatically provided with a specific download location known as the _source alias_. This location can be accessed through the variable:
 
 `$(System.DefaultWorkingDirectory)\[source alias]`
 

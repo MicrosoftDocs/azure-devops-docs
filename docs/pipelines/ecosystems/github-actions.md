@@ -94,7 +94,7 @@ The pipeline your branch runs on depends on whether your pipeline is in the same
 * If the pipeline and the GitHub workflow are in different repositories, the triggered pipeline version in the branch specified by **Default branch for manual and scheduled builds** is run.
 * If the pipeline and the GitHub workflow are in the same repository, the triggered pipeline version in the same branch as the triggering pipeline is run. 
 
-To configure the **Default branch for manual and scheduled builds** setting, see [Default branch for manual and scheduled builds setting](../process/pipeline-triggers.md#default-branch-for-manual-and-scheduled-builds-setting).
+To configure the **Default branch for manual and scheduled builds** setting, see [Default branch for manual and scheduled builds setting](../process/pipeline-default-branch.md).
 
 ## Clean up resources
 
