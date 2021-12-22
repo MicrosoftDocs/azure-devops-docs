@@ -28,8 +28,6 @@ You must have the following items in Azure DevOps:
 - A pipeline. If you don't have one, [create a pipeline](#create-a-pipeline) now.
 ### Create a pipeline
 
-::: moniker range=">=azure-devops-2020"
-
 [!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
 ::: moniker-end
