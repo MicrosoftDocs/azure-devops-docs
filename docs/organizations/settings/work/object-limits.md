@@ -143,6 +143,7 @@ The following table lists the maximum number of objects that you can define for 
 | Picklist item character length                      |         256 |          - |
 | Workflow states defined for a work item type        |          32 |         16 |
 | Rules defined for a work item type                  |        1024 |       1024 |
+| Actions defined for a rule                          |          10 |         10 |
 | Portfolio backlog levels defined for a process      |           5 |          5 |
 | Categories defined for a process                    |           - |         32 |
 | Global lists defined for a process                  |           - |        256 |

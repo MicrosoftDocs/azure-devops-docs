@@ -1,6 +1,6 @@
 ---
 title: Analyze and report on test results
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to view the measures, dimensions, and attributes that pertain to reporting on tests results and test runs.
 ms.technology: devops-analytics
 ms.topic: reference

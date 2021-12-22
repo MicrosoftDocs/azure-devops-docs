@@ -1,7 +1,7 @@
 ---
-title: Add or edit a Delivery Plan 
+title: Add or edit a Delivery Plan in Azure Boards
 titleSuffix: Azure Boards
-description: Learn how to add or edit a Delivery Plan 
+description: Learn how to add or edit a Delivery Plan in Azure Boards.
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
@@ -16,9 +16,9 @@ ms.date: 10/14/2021
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-Delivery Plans provide a highly interactive calendar view of multiple team backlogs. For the use cases, benefits, and interactions you can perform, see [Review team Delivery Plans](review-team-plans.md). 
+Delivery Plans provide a highly interactive calendar view of multiple team backlogs. For the use cases, benefits, and interactions you can do, see [Review team Delivery Plans](review-team-plans.md). 
 
-Use this article to learn how to perform these tasks:
+Use this article to learn how to complete these tasks:
 
 - Open a plan from the list of defined plans 
 - Add and edit a plan
@@ -38,12 +38,13 @@ Use this article to learn how to perform these tasks:
 ## Before you define a plan
 
 To add and configure a Delivery Plan, the following elements must be configured:
-- [Teams and team backlogs](../../organizations/settings/add-teams.md)
-- [Area paths and team area paths assignments](../../organizations/settings/set-area-paths.md)
-- [Iteration (sprint) paths and team iterations](../../organizations/settings/set-iteration-paths-sprints.md). Iteration Paths must be assigned Start and End Dates or they won't appear on the plan. Also, Iteration Paths must be selected for the team whose backlogs you select, or work items associated with those Iteration Paths won't appear on the plan.   
+- [Teams and team backlogs](../../organizations/settings/add-teams.md).
+- [Team product or portfolio backlog must be enabled](../../organizations/settings/select-backlog-navigation-levels.md). 
+- [Area paths and team area paths assignments](../../organizations/settings/set-area-paths.md).
+- [Iteration (sprint) paths and team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+	- **Iteration Paths** must be assigned **Start** and **End Dates** or they won't appear on the plan. 
+	- Also, **Iteration Paths** must be selected for the team whose backlogs you select, or work items associated with those **Iteration Paths** won't appear on the plan.   
 - Teams have defined [product backlog items](../backlogs/create-your-backlog.md), or [portfolio backlogs](../backlogs/define-features-epics.md) and assigned those items to either a **Start Date** and **End Date** or an **Iteration Path**.   
-- Team Backlog settings have enabled the backlogs to show in the delivery plans. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
-
  
 > [!TIP]  
 > If you edit a plan and don't see the changes you made appear in the plan, refresh your browser. A browser refresh is needed some times to trigger the updates.   
@@ -123,7 +124,7 @@ Once you open the Plan settings dialog, choose one of the following tabs to set 
       **[Tag colors](#tag-colors)** 
    :::column-end:::
    :::column span="3":::
-      Add tags and specify a tag color. Optionally enable or disable a tag color. . 
+      Add tags and specify a tag color. Optionally enable or disable a tag color. 
    :::column-end:::
 :::row-end:::
 ---
@@ -150,9 +151,9 @@ Once you open the Plan settings dialog, choose one of the following tabs to set 
 	> [!div class="mx-imgBorder"]  
 	> ![New delivery plan dialog.](media/plans/new-delivery-plan-dialog.png)  
 
-When defining a plan, note the following:  
+When defining a plan, note the following information:  
 - Use the name and description field to clearly identify your plan within the project 
-- You can choose one or more teams from any project defined in the organization or collection, up to a maximum of ten teams   
+- You can choose one or more teams from any project defined in the organization or collection. There can be up to a maximum of 10 teams   
 - You can choose one or more [active backlogs for a team](../../organizations/settings/select-backlog-navigation-levels.md) 
 	> [!NOTE] 
 	> If you aren't able to select a backlog level, check the Team Backlog settings to ensure the backlog level is enabled for the team. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
@@ -184,7 +185,7 @@ Once you've defined a plan, you can further customize it.
 
 ## Choose fields to appear on cards 
  
-Show those fields that are useful for your review purposes or if they contain keywords that you may want to use to filter your plan. Unlike the Kanban board, you can't change the field displayed on the card. You must open the work item to make field changes.   
+Show those fields that are useful for your review purposes or if they contain keywords that you may want to use to filter your plan. Unlike the Kanban board, you can't change the field displayed on the card. First, open the work item to make field changes.   
 
 > [!TIP]   
 > To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work/add-custom-field.md). 
@@ -208,7 +209,7 @@ Show those fields that are useful for your review purposes or if they contain ke
 
 ## Add milestone markers
 
-1. To set a marker, open **Markers**, specify a date and specify a hexadecimal color, or simply choose the color palette icon to change to a new color selected by the system.  	
+1. To set a marker, open **Markers**, specify a date and specify a hexadecimal color, or choose the color palette icon to change to a new color selected by the system.  	
 
 	:::image type="content" source="media/plans/plan-settings-markers.png" border="true" alt-text="Plans settings, Markers tab, two markers defined.":::   
 
@@ -231,7 +232,7 @@ With styling rules, you can cause cards to change color when their corresponding
 
 	:::image type="content" source="media/plans/plan-settings-styles.png" border="true" alt-text="Plans settings, Styles tab, two styles defined.":::   
 
-1. Choose **+Add styling rule**. Enter a name for the style and choose the color from the color picker. Then specify the field criteria. You can add multiple field values. For style purposes, they are all evaluated as a logical AND. Choose the field and the value for the field. 
+1. Choose **+Add styling rule**. Enter a name for the style and choose the color from the color picker. Then specify the field criteria. You can add multiple field values. For style purposes, they're all evaluated as a logical AND. Choose the field and the value for the field. 
  
 	For example, here we choose to highlight cards with a **Priority=1**. 
 
@@ -246,7 +247,7 @@ With styling rules, you can cause cards to change color when their corresponding
 
 ## Set tag colors
 
-Prior to setting tag colors, first [add tags to backlog items](../queries/add-tags-to-work-items.md) that you want to highlight with color.
+Before setting tag colors, first [add tags to backlog items](../queries/add-tags-to-work-items.md) that you want to highlight with color.
 
 1. From the Plan settings dialog, choose **Tag colors** and then choose :::image type="icon" source="../../media/icons/add-dark-icon.png" border="false"::: **Add tag color**. Then, select the tag and the color you want to appear on the cards.  
 

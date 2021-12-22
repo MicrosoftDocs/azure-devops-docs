@@ -65,7 +65,7 @@ The following table describes the work item types used to support the Azure DevO
    :::column span="3":::
       Define the steps used to test code or an app for deployment. Define test cases to ensure your code works correctly, has no errors, and meets business and customer requirements. You can add individual test cases to a test plan without creating a test suite. More than one test suite or test plan can refer to a test case. You can effectively reuse test cases without needing to copy or clone them for each suite or plan. There are two types of test cases: 
       - [**Manual**](create-test-cases.md): Test cases that define different steps that you run using Test Runner or other supported client. 
-      - [**Automated**](run-automated-tests-from-test-hub.md): Test cases that are designed to run within an Azure Pipeline or 
+      - [**Automated**](run-automated-tests-from-test-hub.md): Test cases that are designed to run within an Azure Pipeline.
       > [!TIP]
       > You can create a test case that automatically links to a requirement&mdash;User Story ([Agile](../boards/work-items/guidance/agile-process.md)), Product Backlog Item ([Scrum](../boards/work-items/guidance/scrum-process.md)), Requirement ([CMMI](../boards/work-items/guidance/cmmi-process.md)), or Issue ([Basic](../boards/get-started/plan-track-work.md))&mdash;when you create a test from the Kanban board. To learn more, see [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md). 
    :::column-end:::
@@ -352,7 +352,7 @@ As with other work items, you can bulk edit test-specific work items. To learn m
 
 ::: moniker range="< azure-devops-2020"
 - [Bulk modify work items](../boards/backlogs/bulk-modify-work-items.md). 
-- [FAQs for manual testing, Can I export the test plan to share or review offline](reference-qa.md#q-can-i-export-the-test-plan-to-share-or-review-offline)
+- [Can I export the test plan to share or review offline](create-a-test-plan.md#work-with-test-suites)
 ::: moniker-end
 
 ## Test terms 

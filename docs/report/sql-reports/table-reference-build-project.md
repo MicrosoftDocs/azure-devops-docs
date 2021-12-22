@@ -1,22 +1,21 @@
 ---
 title: Build Project tables
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps Server
+description: Learn how to query for data about the files and projects that were built and information about those files.
 ms.technology: devops-analytics
 ms.topic: reference
-description: Query for data about the files and projects that were built and information about those files  
 ms.assetid: 3d97e0e9-84ac-4662-84fe-36a38eb463b7
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< azure-devops'
-ms.date: 10/17/2017
+ms.date: 10/19/2021
 ---
-
 
 # Build Project tables 
 
 [!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
-You can query for data about the files and projects that were built and information about those files by using FactBuildProjects and the associated dimensions. Records contain the static analysis and compiler warnings and errors for each file that was built. If it was built for more than one platform or flavor, you can find records for each platform and flavor.  
+ Use FactBuildProjects and the associated dimensions to query for data. Find out about the files and projects that were built and information about those files. Records contain the static analysis and compiler warnings and errors for each file that was built. If it was built for more than one platform or flavor, you can find records for each platform and flavor.  
  
 > [!IMPORTANT]  
 > Build tables are only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, these tables and the TFS Warehouse for builds won't yield any meaningful data.  
@@ -34,7 +33,7 @@ FactBuildProject is associated with the following dimension tables:
 -   DimFile    
 -   DimTeamProject  
   
-## Related articles
+For more information, see these articles:
 -  [Builds](perspective-build-analyze-report-build-details-coverage.md)   
 -  [Build Quality Indicators](build-quality-indicators-report.md)   
 -  [Build Success Over Time](build-success-over-time-report.md)   
