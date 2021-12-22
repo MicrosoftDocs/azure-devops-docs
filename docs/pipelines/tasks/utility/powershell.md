@@ -52,7 +52,7 @@ The PowerShell task also has two shortcuts in YAML:
   env:  # mapping of environment variables to add
 ```
 
-Both of these resolve to the `PowerShell@2` task.
+Both of these shortcuts resolve to the `PowerShell@2` task.
 `powershell` runs Windows PowerShell and will only work on a Windows agent.
 `pwsh` runs PowerShell Core, which must be installed on the agent or container.
 
@@ -64,7 +64,7 @@ Both of these resolve to the `PowerShell@2` task.
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td><code>targetType</code><br/>Type</td><td>(Optional) Sets whether this is an inline script or a path to a <code>.ps1</code> file. Defaults to <code>filepath</code><br/>Default value: filePath</td></tr>
+<tr><td><code>targetType</code><br/>Type</td><td>(Optional) Sets whether this value is an inline script or a path to a <code>.ps1</code> file. Defaults to <code>filepath</code><br/>Default value: filePath</td></tr>
 <tr><td><code>filePath</code><br/>Script Path</td><td>(Required) Path of the script to execute. Must be a fully qualified path or relative to <code>$(System.DefaultWorkingDirectory)</code>. Required if Type is <code>filePath</code></td></tr>
 <tr><td><code>arguments</code><br/>Arguments</td><td>(Optional) Arguments passed to the Powershell script.<br>
   For example, <code>-Name someName -Path -Value "Some long string value"</code><br/><br/>
@@ -194,9 +194,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ::: moniker-end
 
-### I'm using Powershell task and passing secret in script, but secret is not masked in pipeline logs
+### I'm using PowerShell task and passing secret in script, but secret is not masked in pipeline logs
 
-Please be aware that Powershell cuts off error message, so if you use some secrets in the script - they could be trimmed as well, and won't be masked in this case.
+Please be aware that PowerShell cuts off error message, so if you use some secrets in the script - they could be trimmed as well, and won't be masked in this case.
 For example, for the inline script below: 
 ```powershell
 ./script.ps1 --arg1 value1 --arg2 <some_secret_which_will_be_masked_here>
@@ -208,6 +208,6 @@ At <path_to_temp_script_file>:4 char:3
 +   ~~~~~~~~~~
     + <Additional exception details>
 ```
-To avoid this it is recommended to handle such exceptions on a script level, or avoid cases when secrets could appear in the source code line in the error message.
+To avoid this issue it is recommended to handle such exceptions on a script level, or avoid cases when secrets could appear in the source code line in the error message.
 
 <!-- ENDSECTION -->
