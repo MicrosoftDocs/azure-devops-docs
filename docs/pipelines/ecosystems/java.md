@@ -31,8 +31,6 @@ You must have the following items in Azure DevOps:
 ::: moniker range=">=azure-devops-2020"
 ### Create a pipeline
 
-::: moniker range=">=azure-devops-2020"
-
 [!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
 ::: moniker-end
