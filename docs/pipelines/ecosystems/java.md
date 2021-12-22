@@ -80,7 +80,7 @@ You must have the following items in Azure DevOps:
 
   This template automatically adds the tasks you need to build the code in the sample repo.
 
-1. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action. You now have a working pipeline that's ready for you to customize any time!
+2. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action. You now have a working pipeline that's ready for you to customize any time!
 
 ::: moniker-end
 
