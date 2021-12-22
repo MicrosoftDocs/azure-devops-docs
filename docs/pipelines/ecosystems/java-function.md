@@ -16,8 +16,6 @@ You can use Azure Functions to run small pieces of code in the cloud without the
 
 ## Prerequisites
 
-You must have the following items:
-
 [!INCLUDE [include](../includes/prerequisites.md)]
 [!INCLUDE [include](../includes/azure-prerequisites.md)]
 

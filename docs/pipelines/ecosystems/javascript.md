@@ -181,7 +181,7 @@ pool: Default
 
 ::: moniker-end
 
-Further in this article, learn about some more common ways to customize your JavaScript build process.
+Read further to learn about some more common ways to customize your JavaScript build process.
 
 ## Set up your build environment
 
