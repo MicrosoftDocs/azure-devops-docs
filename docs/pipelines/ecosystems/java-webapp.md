@@ -7,7 +7,7 @@ ms.date: 12/22/2021
 monikerRange: 'azure-devops'
 ---
 
-# Build and deploy to a Java web app
+# Build & deploy to Java web app
 
 [!INCLUDE [include](../includes/version-team-services.md)]
 
