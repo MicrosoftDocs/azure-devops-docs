@@ -3,8 +3,8 @@ title: Build and deploy JavaScript and Node.js apps
 description:  Build and test JavaScript and Node.js apps with Azure Pipelines
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
-ms.topic: how-to
-ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness
+ms.topic: quickstart
+ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js, freshness-fy22q2
 ms.date: 12/22/2021
 monikerRange: '>= tfs-2017'
 ---
@@ -26,7 +26,7 @@ You can use an Azure DevOps pipeline to build and test JavaScript and Node.js ap
 
 
 You must have the following items in Azure DevOps:
-- A project in Azure DevOps. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
+- A project. If you don't have one, [Create a project](../../organizations/projects/create-project.md) now.
 - A pipeline. If you don't have one, [create a pipeline](#create-a-pipeline) now.
 
 ::: moniker range=">=azure-devops-2020"
