@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.author: chcomley
 author: chcomley
-ms.date: 12/08/2020
+ms.date: 07/19/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -51,9 +51,7 @@ If users no longer require access to a team, project, or your organization, you 
 
 5. Choose **Remove** in the confirmation dialog.
 
-   ![Confirm removing an existing user](media/delete-user/confirm-remove-existing-user-preview.png)
-
-6. Removing a user from the organization doesn't remove their memberships to any security groups. If the user is a member of an access-granting security group, then the user still has access to Azure DevOps, even after you remove them from the organization. If you'd like to completely remove the user from the organization, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
+6. For organizations backed by Azure AD, removing a user from the organization doesn't remove their memberships to any Azure AD groups. If the user is a member of an access-granting Azure AD group, then the user still has access to Azure DevOps, even after you remove them from the organization. If you'd like to completely remove the user from the organization, make sure they aren't in any of your access-granting Azure AD groups. For more information, see about managing access with [Azure AD groups](manage-azure-active-directory-groups.md). 
 
    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.yml#users-delay)
 
@@ -90,8 +88,6 @@ Choose the **Current page** tab for instructions.
 
 5. Choose **Remove** in the confirmation dialog.
 
-   ![Confirm to remove an existing user](media/delete-user/confirm-remove-existing-user.png)
-
 6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.yml#users-delay)
@@ -103,7 +99,6 @@ Choose the **Current page** tab for instructions.
 
 > [!NOTE]
 > - Azure Active Directory (Azure AD)-backed organizations: After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
-> - Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
 
 ::: moniker-end
 

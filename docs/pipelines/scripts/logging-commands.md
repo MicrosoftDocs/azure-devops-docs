@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 07/28/2021
+ms.date: 12/06/2021
 ms.custom: contperf-fy21q3
 ---
 
@@ -76,8 +76,37 @@ The formatting commands are:
 ##[debug]Debug text
 ##[command]Command-line being run
 ##[endgroup]
-
 ```
+
+You can use the formatting commands in a bash or PowerShell task. 
+
+# [Bash](#tab/bash)
+
+```yaml
+steps:
+  - bash: |
+      echo "##[group]Beginning of a group"
+      echo "##[warning]Warning message"
+      echo "##[error]Error message"
+      echo "##[section]Start of a section"
+      echo "##[debug]Debug text"
+      echo "##[command]Command-line being run"
+      echo "##[endgroup]"
+```
+# [PowerShell](#tab/powershell)
+
+```yaml
+steps:
+  - powershell: |
+      Write-Host "##[group]Beginning of a group"
+      Write-Host "##[warning]Warning message"
+      Write-Host "##[error]Error message"
+      Write-Host "##[section]Start of a section"
+      Write-Host "##[debug]Debug text"
+      Write-Host "##[command]Command-line being run"
+      Write-Host "##[endgroup]"
+```
+---
 
 Those commands will render in the logs like this:
 
@@ -272,17 +301,25 @@ See [set variables in scripts](../process/variables.md#set-variables-in-scripts)
 
 #### Properties
 
+::: moniker range=">= azure-devops-2019"
 * `variable` = variable name (Required)
 * `issecret` = boolean (Optional, defaults to false)
 * `isoutput` = boolean (Optional, defaults to false)
 * `isreadonly` = boolean (Optional, defaults to false)
-   
+::: moniker-end
+::: moniker range="< azure-devops-2019"
+* `variable` = variable name (Required)
+* `issecret` = boolean (Optional, defaults to false)
+* `isreadonly` = boolean (Optional, defaults to false)
+::: moniker-end   
+
 #### Examples
 
 # [Bash](#tab/bash)
 
 Set the variables:
 
+::: moniker range=">= azure-devops-2019"
 ```yaml
 - bash: |
     echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
@@ -290,22 +327,39 @@ Set the variables:
     echo "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
   name: SetVars
 ```
-
+::: moniker-end
+::: moniker range="< azure-devops-2019"
+```yaml
+- bash: |
+    echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
+    echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+  name: SetVars
+```
+::: moniker-end
 Read the variables:
 
+::: moniker range=">= azure-devops-2019"
 ```yaml
 - bash: |
     echo "Non-secrets automatically mapped in, sauce is $SAUCE"
     echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
     echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
-    echo "Future jobs can also see $SETVARS_OUTPUTSAUCE"
-    echo "Future jobs can also see $(SetVars.outputSauce)"
 ```
+::: moniker-end
+::: moniker range="< azure-devops-2019"
+```yaml
+- bash: |
+    echo "Non-secrets automatically mapped in, sauce is $SAUCE"
+    echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
+    echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+```
+::: moniker-end
 
 # [PowerShell](#tab/powershell)
 
 Set the variables:
 
+::: moniker range=">= azure-devops-2019"
 ```yaml
 - pwsh: |
     Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
@@ -313,9 +367,19 @@ Set the variables:
     Write-Host "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
   name: SetVars
 ```
+::: moniker-end
+::: moniker range="< azure-devops-2019"
+```yaml
+- pwsh: |
+    Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
+    Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+  name: SetVars
+```
+::: moniker-end
 
 Read the variables:
 
+::: moniker range=">= azure-devops-2019"
 ```yaml
 - pwsh: |
     Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
@@ -324,11 +388,21 @@ Read the variables:
     Write-Host "Future jobs can also see $env:SETVARS_OUTPUTSAUCE"
     write-Host "Future jobs can also see $(SetVars.outputSauce)"
 ```
+::: moniker-end
+::: moniker range="< azure-devops-2019"
+```yaml
+- pwsh: |
+    Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
+    Write-Host "Secrets are not automatically mapped in, secretSauce is $env:SECRETSAUCE"
+    Write-Host "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+```
+::: moniker-end
 
 ---
 
 Console output:
 
+::: moniker range=">= azure-devops-2019"
 ```
 Non-secrets automatically mapped in, sauce is crushed tomatoes
 Secrets are not automatically mapped in, secretSauce is 
@@ -336,6 +410,14 @@ You can use macro replacement to get secrets, and they'll be masked in the log: 
 Future jobs can also see canned goods
 Future jobs can also see canned goods
 ```
+::: moniker-end
+::: moniker range="< azure-devops-2019"
+```
+Non-secrets automatically mapped in, sauce is crushed tomatoes
+Secrets are not automatically mapped in, secretSauce is 
+You can use macro replacement to get secrets, and they'll be masked in the log: ***
+```
+::: moniker-end
 
 ### SetEndpoint: Modify a service connection field
 

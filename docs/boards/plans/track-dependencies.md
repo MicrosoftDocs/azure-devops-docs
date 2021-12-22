@@ -1,18 +1,18 @@
 ---
-title: Track dependencies using Delivery Plans 
+title: Track dependencies by using Delivery Plans in Azure Boards 
 titleSuffix: Azure Boards
-description: Learn how to track dependencies within teams, across teams, and across projects using Delivery Plans 
+description: Learn how to track dependencies within teams, across teams, and across projects by using Delivery Plans in Azure Boards.
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: 'azure-devops'
-ms.date: 05/06/2021
+ms.date: 11/17/2021
 ---
 
 
 
-# Track dependencies using Delivery Plans 
+# Track dependencies by using Delivery Plans 
 
 [!INCLUDE [temp](../includes/version-all.md)] 
 
@@ -32,6 +32,17 @@ To view dependencies, you must first define the Delivery Plan and dependencies b
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans.  
 - To open or modify a work item or add work items, you must have the **Edit work items in this node** set to **Allow** for the Area Paths assigned to the work item.  
 
+**For work items and dependency lines to appear on the plan**
+- Work items must belong to a team's [product backlog](../backlogs/create-your-backlog.md) or [portfolio backlog](../backlogs/define-features-epics.md). Only work items belonging to a category selected for viewing on a team's backlog appear on the plan. 
+- [Team product or portfolio backlog must be enabled](../../organizations/settings/select-backlog-navigation-levels.md). 
+- [Sprints must be selected for each team](../../organizations/settings/set-iteration-paths-sprints.md#select-team-sprints-and-set-the-default-iteration-path) defined in the plan.
+- [Start and end dates](../../organizations/settings/set-iteration-paths-sprints.md#add-iterations-and-set-iteration-dates) must be defined for each iteration.
+- [Iteration paths](../sprints/assign-work-sprint.md) must be assigned to each work item.  
+- For dependency icons and lines to show, [work items must be linked](../backlogs/add-link.md) using **Predecessor-Successor** link type or other custom dependency link type (remote link types not supported). You can only add custom link types for on-premises environments.
+
+> [!TIP]  
+> If you edit a plan and don't see the changes you made appear in the plan, refresh your browser. A browser refresh is needed some times to trigger the updates.  
+
 ## Show dependency lines for a work item 
 
 1. Open the delivery plan from **Boards>Delivery Plans**. 
@@ -39,7 +50,7 @@ To view dependencies, you must first define the Delivery Plan and dependencies b
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot to Open Boards>Plans.](media/plans/open-plans.png) 
 
-1. To view dependency lines for a work item, click the bottom of its card. To dismiss the lines, click the bottom of the card again, or anywhere else within the plan. 
+1. To view dependency lines for a work item, select the bottom of its card. To dismiss the lines, select the bottom of the card again, or anywhere else within the plan. 
 
 	Dependency lines that have no issues show up as black lines. 
 
@@ -66,11 +77,11 @@ The Dependencies dialog indicates that the work item has four predecessors and n
 
 ## Identify dependency issues 
 
-When issues exist, they are highlighted in red. The issue always has to do with an end date for a successor work item occurring before the end date of the predecessor work item. The end date is determined by either the Target Date for the work item or the End Date of the work item's assigned Iteration Path. 
+When issues exist, they're highlighted in red. The issue always has to do with an end date for a successor work item occurring before the end date of the predecessor work item. Determine the end date by using either the Target Date for the work item or the End Date of the work item's assigned Iteration Path. 
 
-For example, the following Dependencies dialog indicates that two predecessor work items are scheduled to complete before the successor work item is scheduled to complete. A red exclamation mark and red colored arrows indicate there is an issue with the dependency.   
+For example, the following Dependencies dialog indicates that two predecessor work items are scheduled to complete before the successor work item is scheduled to complete. A red exclamation mark and red colored arrows indicate there's an issue with the dependency.   
 
-When the dependency is to a work item in another project, the project information is shown as well as other link relationships. 
+When the dependency is to a work item in another project, the project information is shown as are other link relationships. 
 
 :::image type="content" source="media/dependencies/dependencies-cross-project.png" alt-text="Dependencies dialog for a work item with dependencies-cross-project.":::
 

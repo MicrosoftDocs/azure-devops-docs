@@ -6,6 +6,7 @@ description: Guide to getting started using DevOps and Agile tools provided by A
 ms.technology: devops-new-user  
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
 ms.author: kaelli
+author: KathrynEE 
 ms.date: 06/02/2019
 monikerRange: '<= azure-devops'
 ---
@@ -157,4 +158,4 @@ Monitor your web and device apps to gain actionable insight to improve performan
 
 [Use Application Insights](https://azure.microsoft.com/documentation/services/application-insights/) to understand how your app is being used and to make sure it is performing well. Detect issues, diagnose crashes and track usage of your mobile apps, and web apps hosted from Azure, or your own IIS or Java EE servers.  
 
-[Use HockeyApp](https://hockeyapp.net/features/) to distribute beta versions of your apps on Android, iOS, macOS, and Windows, collect live crash reports, get feedback from users, recruit new testers, and analyze test coverage.
+[Use HockeyApp](https://marketplace.visualstudio.com/items?itemName=ms.hockeyapp) to distribute beta versions of your apps on Android, iOS, macOS, and Windows, collect live crash reports, get feedback from users, recruit new testers, and analyze test coverage.

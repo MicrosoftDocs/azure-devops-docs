@@ -1,6 +1,6 @@
 ---
 title: Requirements Progress Report (CMMI) 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to build a report that lists all requirements, filtered by product area and iteration in order of importance.
 ms.technology: devops-analytics
 ms.topic: reference
@@ -25,11 +25,13 @@ The Requirements Progress report lists all requirements, filtered by product are
 
 **You can use this report to answer the following questions**:<br /><br /> -   How much progress has the team made toward completing the work for each requirement?<br />-   How much work must the team still carry out to implement each requirement?<br />-   How much work did the team carry out in the last calendar period?
   
- **Required Permissions**  
+## Prerequisites  
   
  To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).  
-  
-##  <a name="Data"></a> Data in the report
+
+<a name="Data"></a>
+
+## Data in the report
 
 The Requirements Progress report shows the status of completion as determined by the tasks that have been defined to implement the requirement, as the following illustration shows. The data in the report is derived from the data warehouse.  
   
@@ -75,8 +77,10 @@ For the Requirements Progress report to be useful and correct, the team must car
   
     > [!NOTE]
     >  For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
-  
-##  <a name="Interpreting"></a> Interpret the report
+
+<a name="Interpreting"></a>
+
+## Interpret the report
 
 Depending on your area of focus, you can filter the report in the following ways:  
   
@@ -135,8 +139,10 @@ An unhealthy Requirements Progress report might show one or more of the followin
 -   **Many requirements have no recently completed work**.  
   
      When several requirements indicate no or small amounts of recently completed work, team progress is slow. You might investigate the cause of the slow progress and determine whether you should resolve or track blocking issues.  
-  
-##  <a name="Changing"></a> Filter the report and change the display  
+
+<a name="Changing"></a>
+
+## Filter the report and change the display  
 
 You can filter the Requirements Progress report or change its display in the following ways:  
   

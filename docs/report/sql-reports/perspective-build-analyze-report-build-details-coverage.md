@@ -1,6 +1,6 @@
 ---
 title: Analyze and report on build details and build coverage
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to view the measures, dimensions, and attributes in the SQL Server Analysis Services cube for Azure DevOps Server.
 ms.technology: devops-analytics
 ms.topic: reference
@@ -129,8 +129,10 @@ By using PivotChart reports in Excel, you can display the build status over time
 ||Checked In By|The user name of the team member who checked in the changeset.|  
 ||Description|The check-in comment that is associated with the changeset.|  
 ||Policy Override Comment|The comment that is provided when a policy is overridden. If a policy wasn't overridden with a changeset, the field is null.|  
-  
-##  <a name="tracking"></a> Required activities  
+
+<a name="tracking"></a>
+
+## Required activities  
 
  To create reports that contain useful data about builds, team members should review the information in the following articles:  
   

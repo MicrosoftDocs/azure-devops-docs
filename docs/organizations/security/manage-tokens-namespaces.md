@@ -8,7 +8,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/12/2020
+ms.date: 12/14/2021
 ---
 
 # Manage permissions with command line tool
@@ -24,7 +24,9 @@ Azure DevOps grants a number of permissions by default to members of default sec
 - View details about those permissions
 - Update or reset permissions
 
-
+> [!NOTE]   
+> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Security namespace and permission reference, Deprecated and read-only namespaces](namespace-reference.md#deprecated-namespaces).. 
+> 
 ## Prerequisites 
 
 - To manage tokens and namespaces, you must be a member of the Project Collection Administrators security group. For more information on tokens, see [Security namespace and permission reference](namespace-reference.md).  

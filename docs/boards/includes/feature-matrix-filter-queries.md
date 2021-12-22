@@ -86,7 +86,7 @@ The following table summarizes the query filter functions supported by each Azur
        Find work items based on a field match with a previous value. 
        Supported operator: `Was Ever`
        Find work items based on a value defined on a specific date. 
-       Supported operator: `ASOF` ([WIQL syntax](../queries/wiql-syntax.md#historical-queries-asof))
+       Supported operator: `ASOF` ([WIQL syntax](../queries/wiql-syntax.md#asof-historical-queries))
    :::column-end:::
    :::column span="1":::
       All versions  
@@ -170,7 +170,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Boolean searches](../queries/query-by-workflow-changes.md#kanban-board-change-queries) 
+      [Boolean searches](../queries/query-by-workflow-changes.md#query-changes-to-a-kanban-board) 
    :::column-end:::
    :::column span="1":::
       Find work items based on boolean field value. 
@@ -194,7 +194,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Query on Kanban board fields](../queries/query-by-workflow-changes.md#kanban-board-change-queries)
+      [Query on Kanban board fields](../queries/query-by-workflow-changes.md#query-changes-to-a-kanban-board)
    :::column-end:::
    :::column span="1":::
       Find work items based on their Kanban column, swimlane, or Doing/Done status.

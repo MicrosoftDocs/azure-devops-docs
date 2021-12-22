@@ -1,7 +1,7 @@
 ---
 title: View and configure team velocity
 titleSuffix: Azure DevOps Services 
-description: Learn how to track team velocity across several sprints using the in-context Analytics report or velocity widget in Azure DevOps Services.
+description: Learn how to calculate and track team velocity across sprints using the in-context Analytics report or velocity widget chart in Azure DevOps Services.
 ms.custom: dashboards   
 ms.technology: devops-analytics  
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB

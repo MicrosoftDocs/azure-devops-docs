@@ -18,7 +18,7 @@ Feed views enable you to share subsets of package-versions with your consumers. 
 
 Feed views and upstream sources are designed to work together to provide an enterprise-level solution to share and consume packages. 
 
-In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's view visibility to **members of your organization**, or **members of your Azure Active Directory**, depending on your scenario.
+In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's view visibility to **members of your organization**, or **members of your Azure Active Directory**, depending on your scenario. If you choose the latter, all people in your organization will be able to access your feed, and all feeds in your organization and other organizations associated with the same Azure Active Directory tenant will be able to upstream to your feed.
 
 <a name="local"></a>
 
