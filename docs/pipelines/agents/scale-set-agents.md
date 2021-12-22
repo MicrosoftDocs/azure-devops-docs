@@ -447,6 +447,7 @@ To delete the saved agent when you are done with your investigation, navigate to
 * [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
 * [How can I delete agents?](#how-can-i-delete-agents)
 * [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
+* [### How much do scale set agents cost?](#how-much-do-scale-set-agents-cost)
 
 ### Where can I find the images used for Microsoft-hosted agents?
 
