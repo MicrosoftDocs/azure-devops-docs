@@ -58,12 +58,6 @@ Update `pom.xml` to reflect your application. Edit the `pom.xml` file in your fo
         <functionResourceGroup>RESOURCE_GROUP</functionResourceGroup>
 ```
 
-## Create connections
-
-1. Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines). Your browser goes to `https://dev.azure.com/my-organization-name` and displays your Azure DevOps dashboard.
-
-1. [Create a project](../../organizations/projects/create-project.md)
-
 [!INCLUDE [include](includes/create-service-connection.md)]
 
 ## Create the pipeline
