@@ -82,20 +82,20 @@ az webapp create -g myapp-rg -p myapp-service-plan -n my-app-name --runtime "JAV
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-1. When the **Configure** tab appears, select **Show more**, and then select **Maven package Java project Web App to Linux on Azure**. 
+7. When the **Configure** tab appears, select **Show more**, and then select **Maven package Java project Web App to Linux on Azure**. 
 
-1. You can automatically create an [Azure Resource Manager service connection](../library/connect-to-azure.md) when you create your pipeline. To get started, select your Azure subscription where you created a resource group.
+8. You can automatically create an [Azure Resource Manager service connection](../library/connect-to-azure.md) when you create your pipeline. To get started, select your Azure subscription where you created a resource group.
 
-1. Select **Validate and configure**. The new pipeline includes a new Azure Resource Manager service connection. 
+9. Select **Validate and configure**. The new pipeline includes a new Azure Resource Manager service connection. 
 
     As Azure Pipelines creates an azure-pipelines.yml file, which defines your CI/CD pipeline, it:
 
     * Includes a Build stage, which builds your project, and a Deploy stage, which deploys it to Azure as a Linux web app.
     * As part of the Deploy stage, it also creates an [Environment](../process/environments.md) with default name same as the Web App. You can choose to modify the environment name. 
 
-1. Make sure that all the default inputs are appropriate for your code.
+10. Make sure that all the default inputs are appropriate for your code.
 
-2. Select **Save and run**, after which you're prompted for a commit message because the *azure-pipelines.yml* file gets added to your repository. After editing the message, select **Save and run** again to see your pipeline in action.
+11. Select **Save and run**, after which you're prompted for a commit message because the *azure-pipelines.yml* file gets added to your repository. After editing the message, select **Save and run** again to see your pipeline in action.
 
 ## See the pipeline run, and your app deployed
 
