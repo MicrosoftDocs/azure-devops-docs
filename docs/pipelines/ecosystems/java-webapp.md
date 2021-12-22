@@ -130,5 +130,5 @@ Also explore deployment history for the App by navigating to the "Environment". 
 ## Next steps
 
 * [Azure for Java developer documentation](/azure/developer/java)
-* [Quickstart: Create a Java app on Azure App Service](/azure/app-service/quickstart-java)
+* [Create a Java app on Azure App Service](/azure/app-service/quickstart-java)
  
