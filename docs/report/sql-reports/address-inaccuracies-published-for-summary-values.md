@@ -1,6 +1,6 @@
 ---
 title: Address inaccuracies published for summary values 
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to correct reports with hours that are counted twice.
 ms.technology: devops-analytics
 ms.topic: troubleshooting
@@ -21,7 +21,7 @@ If you see that hours are counted twice in reports that contain task hours, you 
   
  When both summary tasks and their child tasks contain hours in the effort fields, you essentially have a double-counting of the level of effort a task requires. To address these inaccuracies, you must clear the **Original Estimate** (or **Baseline Work** for team projects that have been upgraded), **Remaining Work**, and **Completed Work** fields for the summary or parent tasks.  
   
- **Required Permissions**  
+## Prerequisites  
   
  To carry out this procedure, you must be a member of the **Contributors** group or your **View work items in this node** and **Edit work items in this node** permissions must be set to **Allow**. For more information, see [Permission reference](../../organizations/security/set-project-collection-level-permissions.md).  
   

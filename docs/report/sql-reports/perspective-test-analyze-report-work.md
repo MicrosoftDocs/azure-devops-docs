@@ -1,6 +1,6 @@
 ---
 title: Analyze work items and test case data
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Server
 description: Learn how to analyze current or historical data for work items and test cases by using Work Item perspective.
 ms.technology: devops-analytics
 ms.topic: reference

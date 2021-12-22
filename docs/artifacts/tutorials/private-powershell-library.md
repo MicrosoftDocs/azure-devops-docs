@@ -5,7 +5,7 @@ ms.technology: devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.reviewer: amullans
-ms.date: 08/31/2021
+ms.date: 12/16/2021
 monikerRange: 'azure-devops'
 "recommendations": "true"
 ---
@@ -239,22 +239,22 @@ We now have a private repository within Azure Artifacts that we can push our Pow
 
 1. Open an elevated PowerShell prompt window.
 
-2. Set up authentication to access Azure Artifacts feeds. Replace the placeholders with your personal access token and email:
+1. Set up authentication to access Azure Artifacts feeds. Replace the placeholders with your personal access token and email:
 
     ```powershell
-        $patToken = "YOUR PERSONAL ACCESS TOKEN" | ConvertTo-SecureString -AsPlainText -Force
+    $patToken = "YOUR PERSONAL ACCESS TOKEN" | ConvertTo-SecureString -AsPlainText -Force
     ```
 
     ```powershell
     $credsAzureDevopsServices = New-Object System.Management.Automation.PSCredential("YOUR EMAIL", $patToken)
     ```
 
-3. Register your PowerShell repository. The `SourceLocation` link can also be found by selecting **Connect to Feed** then **NuGet.exe** from the feed's page in Azure Artifacts.
+1. Register your PowerShell repository. The `SourceLocation` link can also be found by selecting **Connect to Feed** then **NuGet.exe** from the feed's page in Azure Artifacts.
 
     - Project-scoped feed:
 
     ```powershell
-        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
     
     - Org-scoped feed:
@@ -268,40 +268,60 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     - Project-scoped feed:
 
     ```powershell
-        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<org_name>.pkgs.visualstudio.com/<project_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://<org_name>.pkgs.visualstudio.com/<project_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<org_name>.pkgs.visualstudio.com/<project_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://<org_name>.pkgs.visualstudio.com/<project_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
    
     - Org-scoped feed:
     
     ```powershell
-        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
 
     > [!NOTE]
-    > In some versions of PowerShell, you must start a new session after you run the `Register-PSRepository` cmdlet to avoid the `Unable to resolve package source` warning. 
+    > In some versions of PowerShell, you must start a new session after you run the `Register-PSRepository` cmdlet to avoid the `Unable to resolve package source` warning.
 
-4. To confirm that the repository was registered successfully run the `Get-PSRepository` cmdlet. This command gets all module repositories registered for the current user:
+1. Register your package source:
+
+    - Project-scoped feed:
 
     ```powershell
-        Get-PSRepository
+    Register-PackageSource -Name "PackageSource" -Location "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet
+    ```
+    
+    - Org-scoped feed:
+
+    ```powershell
+    Register-PackageSource -Name "PackageSource" -Location "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet 
     ```
 
-5. Find modules in our repository:
+1. To confirm that the repository was registered successfully run the `Get-PSRepository` cmdlet. This command gets all module repositories registered for the current user:
 
     ```powershell
-        Find-Module -Repository PowershellAzureDevopsServices
+    Get-PSRepository
+    ```
+
+1. Find modules in our repository:
+
+    ```powershell
+    Find-Module -Repository PowershellAzureDevopsServices
     ```
 
     Our `Get-Hello` module should be one of the entries in the previous cmdlet's return message. To install it, run the following command:
     
     ```powershell
-        Install-Module -Name Get-Hello -Repository PowershellAzureDevopsServices
+    Install-Module -Name Get-Hello -Repository PowershellAzureDevopsServices
+    ```
+
+    If the *Install-Module* command is returning an error *Unable to resolve package source*, run the `Register-PackageSource` cmdlet again with the `Trusted` flag as follows:
+        
+    ```powershell
+    Register-PackageSource -Name "PackageSource" -Location "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -ProviderName NuGet -Trusted
     ```
 
     You can check for your module by running the following command:
     
     ```powershell
-        Get-Module -ListAvailable Get-Hello
+    Get-Module -ListAvailable Get-Hello
     ```
 
 We now have our private PowerShell repository to publish and download our packages to and from our feed and best of all, available to everyone on our team.

@@ -1,17 +1,17 @@
 ---
-title: Manage code defects to maintain software quality in Azure Boards
+title: Define, capture, triage, and manage bugs or code defects in Azure Boards
 titleSuffix: Azure Boards 
-description: Define, capture, and triage software defects and bugs to manage technical debt and maintain software quality in Azure Boards. 
+description: Learn how to define, capture, and triage bugs, code defects, and software issues in Azure Boards to manage technical debt and maintain software quality 
 ms.custom: "boards-backlogs, contperf-fy21q4-portal"
 ms.technology: devops-agile
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-ms.date: 10/08/2021
+ms.date: 11/19/2021 
 ---
 
-# Manage software defects
+# Define, capture, triage, and manage software bugs in Azure Boards
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -23,7 +23,7 @@ To support these scenarios, Azure Boards provides a Bug work item type. The Bug 
 
 Extra features for managing bugs include the following benefits:
 
-- Option for each team to choose how they want to track bugs 
+- Options for each team to choose how they want to track bugs 
 - Test tools to capture bugs 
 - Built-in integration across Azure DevOps to track bugs linked to builds, releases, and tests
 
@@ -216,7 +216,7 @@ To customize your particular process, see [Customize the On-premises XML process
 You can define bugs from several different Azure DevOps tools. These include backlogs and boards and testing tools.  
 
 > [!TIP]   
-> By default, the only required field when creating a bug is the **Title** field. You can quickly add bugs in the same way you add user stories or product backlog items using Azure Boards. If you want to make some fields required, you can do that by adding conditional rules based on a state change. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md). 
+> By default, the only required field when creating a bug is the **Title** field. You can quickly add bugs in the same way you add user stories or product backlog items using Azure Boards. If you want to make some fields required, do that by adding conditional rules based on a state change. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md). 
 
 ### Add a bug from your backlog or board 
 
@@ -330,7 +330,7 @@ Once you have the queries of interest to your team, you can [create status or tr
 
 ### Triage mode in query results
 
-Once you've started coding and testing, you'll want to hold periodic triage meetings to review and organize your bugs. Typically, the project owner runs the bug triage meetings, and team leads, business analysts, and other stakeholders who can speak about specific project risks attend them.
+Once you've started coding and testing, you'll want to hold periodic triage meetings to review and rank your bugs. Typically, the project owner runs the bug triage meetings. Team leads, business analysts, and other stakeholders who can speak about specific project risks attend the triage meetings.
 
 The project owner can define a shared query for new and reopened bugs to list bugs to be triaged. 
 
@@ -343,25 +343,25 @@ From the query results page, you can quickly move up and down within the list of
 
 ### Organize and assign bugs to a sprint 
 
-If your team *tracks bugs as requirements*, you can view the list of active bugs from your backlog. With the [filter function](filter-backlogs-boards-plans.md), you can focus solely on bugs. From the product backlog, you can also complete the following tasks:  
+If your team *tracks bugs as requirements*, view the list of active bugs from your backlog. With the [filter function](filter-backlogs-boards-plans.md), you can focus solely on bugs. From the product backlog, you can also do the following tasks:  
 
 - [Organize bugs on your backlog](create-your-backlog.md#reorder-your-backlog), stack rank against other items (stack ranking is disabled when filtering is enabled)  
 - [Assign bugs to a sprint](../sprints/assign-work-sprint.md) from your backlog using the **Planning** pane  
 - [Parent bugs to Features](organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) or other portfolio backlog items using the **Mapping** pane 
 - [View rollup of work to portfolio backlog items](display-rollup.md).
 
-If your team *tracks bugs as tasks*, you'll use managed queries to list and triage bugs. Then, within each sprint, you'll see those bugs that are assigned to the sprint from the Sprint backlog or [Taskboard](../sprints/task-board.md).  
+If your team *tracks bugs as tasks*, use managed queries to list and triage bugs. Then, within each sprint, you'll see the bugs assigned to the sprint from the Sprint backlog or [Taskboard](../sprints/task-board.md).  
 
 <a id="task-board-items"/> 
 
 ### Taskboard items versus query list items
 
-You may notice and wonder why the items that are shown on a sprint Taskboard may differ from those items listed in a query created from its corresponding sprint backlog. 
+You might notice and wonder why the items shown on a sprint Taskboard can differ from a query list created in a corresponding sprint backlog. 
 
 It's possible to assign tasks or bugs to an iteration but not have them linked to a parent backlog item. These items will show up in the created query, but might not show up on the Taskboard itself. The system runs the query and then applies a few background processes before displaying Taskboard items.
 
 These reasons can cause work items that belong to the Task Category to not appear on a sprint backlog or Taskboard:  
-- The task or bug hasn't been linked to a parent backlog item. Only those bugs and tasks that you've linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page.  
+- The task or bug hasn't been linked to a parent backlog item. Only bugs and tasks you've linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) with an iteration path set to the sprint appears on the sprint backlog page.  
 - The task or bug is a parent of another task or bug, or the user story is a parent of another user story. If you've created a hierarchy of tasks, bugs, or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](resolve-backlog-reorder-issues.md#leaf-nodes).  
 - The task's or bug's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's or bug's parent backlog item differs from the task's or bug's area path.  
 
@@ -396,20 +396,20 @@ You can add intermediate columns to track your bug status on the board. You can 
 
 - [Add columns to your Kanban board](../boards/add-columns.md)
 - [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
-- [Kanban board change queries](../queries/query-by-workflow-changes.md#kanban-board-change-queries)
+- [Kanban board change queries](../queries/query-by-workflow-changes.md#kanban-query-fields)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
 
 - [Add columns to your Kanban board](../boards/add-columns.md)
-- [Kanban board change queries](../queries/query-by-workflow-changes.md#kanban-board-change-queries)
+- [Kanban board change queries](../queries/query-by-workflow-changes.md#kanban-query-fields)
 
 ::: moniker-end
 
 ### Automate bug reassignment based on workflow state 
 
-To automate select actions, add custom rules to your Bug work item type. For example, you can add a rule as shown in the following image. This rule specifies to reassign a bug to the person who opened the bug once it's resolved. Typically, that person verifies that the bug is fixed and closes the bug. To learn more, see [Apply rules to workflow states (Inheritance process)](../../organizations/settings/work/apply-rules-to-workflow-states.md).
+To automate select actions, add custom rules to your Bug work item type. For example, add a rule as shown in the following image. This rule specifies to reassign a bug to the person who opened the bug once it's resolved. Typically, that person verifies that the bug is fixed and closes the bug. To learn more, see [Apply rules to workflow states (Inheritance process)](../../organizations/settings/work/apply-rules-to-workflow-states.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of rule defined to reassign bug based on resolved state.](media/manage-bugs/rule-reassigned-resolved-bug.png) 
@@ -525,7 +525,7 @@ These reports require you have SQL Server Analysis Services and SQL Server Repor
 
 ### Marketplace extensions 
 
-There are many bug-related Marketplace extensions. See [Marketplace for Azure DevOps](https://marketplace.visualstudio.com/search?term=bug&target=AzureDevOps&category=All%20categories&sortBy=Installs). 
+There are multiple bug-related Marketplace extensions. See [Marketplace for Azure DevOps](https://marketplace.visualstudio.com/search?term=bug&target=AzureDevOps&category=All%20categories&sortBy=Installs). 
 
 For more information on extensions, see [Azure Boards extensions developed by Microsoft](../extensions/index.md).
 

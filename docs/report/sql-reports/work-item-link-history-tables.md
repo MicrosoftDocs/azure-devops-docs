@@ -1,13 +1,13 @@
 ---
 title: Work Item Link History tables
-titleSuffix: Azure DevOps Server 
+titleSuffix: Azure DevOps Server
+description: Learn how to use Work Item Link History tables to query for links between bugs, tasks, and other types of work items.
 ms.technology: devops-analytics
 ms.topic: reference
-description: Use Work Item Link History tables to query for links between bugs, tasks, and other types of work items.
 ms.assetid: 8fc040dc-8ff4-4ca6-be89-86a60a460cfa
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/2017
+ms.date: 10/20/2021
 ---
 
 
@@ -16,22 +16,22 @@ ms.date: 10/17/2017
 
 You can query for links between bugs, tasks, and other types of work items by using FactWorkItemLinkHistory and the associated dimension tables. To include details about the linked work items, you join SourceWorkItemID and TargetWorkItemID to Dim.System_ID.  
   
- For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Test cases and work items](perspective-test-analyze-report-work.md).  
+For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Test cases and work items](perspective-test-analyze-report-work.md).  
   
- ![Fact Table for Links between Work Items](media/teamproj_worklinkhistory.png "TeamProj_WorkLinkHistory")  
+![Fact Table for Links between Work Items](media/teamproj_worklinkhistory.png "TeamProj_WorkLinkHistory")  
   
- FactWorkItemLinkHistory is associated with the following dimension tables:  
+FactWorkItemLinkHistory is associated with the following dimension tables:  
   
--   DimTeamProject  
+- DimTeamProject  
   
--   DimPerson  
+- DimPerson  
   
--   DimWorkItem  
+- DimWorkItem  
   
 > [!NOTE]
->  This table contains links that have been removed. Links that have not been removed have the RemovedDate set to Jan 1, 9999. When a link is removed, the removed date is set to the date and time when it was removed. You can use `RemovedDate > GetDate()` to filter out links that have been removed.  
+> This table contains links that have been removed. Links that have not been removed have the RemovedDate set to January 1, 9999. When a link is removed, the removed date is set to the date and time when it was removed. You can use `RemovedDate > GetDate()` to filter out links that have been removed.  
   
- You can use the following sample query to find the following types of information:  
+You can use the following sample query to find the following types of information:  
   
 - total number of hours for completed work  
   
@@ -78,7 +78,7 @@ group by wi.System_Id, wi.System_Title
 order by wi.System_Id  
 ```  
   
-## Related articles 
+For more information, see these articles:
  [Test cases and work items](perspective-test-analyze-report-work.md)   
  [Define a custom link type](../../reference/xml/define-custom-link-type.md)   
  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
