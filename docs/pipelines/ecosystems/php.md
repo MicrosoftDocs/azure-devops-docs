@@ -21,11 +21,7 @@ To get instructions for deploying to Azure App Service on Linux with a pipeline,
 
 ## Create a pipeline
 
-1. Fork the following repo at GitHub.
-
-```
-https://github.com/Azure-Samples/basic-php-composer
-```
+1. Fork this GitHub repo: https://github.com/Azure-Samples/basic-php-composer.
 
 2. Sign in to your Azure DevOps organization and go to your project.
 
