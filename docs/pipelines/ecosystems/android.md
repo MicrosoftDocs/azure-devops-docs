@@ -13,8 +13,9 @@ author: vijayma
 
 # Build, test, & deploy Android apps
 
-You can set up pipelines to automatically build, test, and deploy Android applications.
+[!INCLUDE [include](../includes/version-team-services.md)]
 
+You can set up pipelines to automatically build, test, and deploy Android applications.
 ## Prerequisites
 
 You must have the following items:
