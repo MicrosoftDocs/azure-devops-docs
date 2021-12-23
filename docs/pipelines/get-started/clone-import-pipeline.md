@@ -133,11 +133,11 @@ This version of TFS doesn't support YAML pipelines.
 
 #### [Classic](#tab/classic/)
 
-### Build pipeline
-
 To copy a build definition from another project, you can export an existing definition from that project, and then import it.
 
 :::moniker range="azure-devops"
+
+### Build pipeline
 
 1. Navigate to the pipeline details page for your pipeline. 
 
