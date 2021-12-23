@@ -5,7 +5,7 @@ ms.topic: tutorial
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.manager: barbkess
 ms.author: jukullam
-author: julliakm
+author: juliakm
 ms.date: 12/23/2021
 monikerRange: 'azure-devops'
 ms.custom: devx-track-python, devx-track-azurecli, freshness-fy22q2
