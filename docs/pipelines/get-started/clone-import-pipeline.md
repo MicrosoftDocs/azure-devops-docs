@@ -129,6 +129,28 @@ This version of TFS doesn't support YAML pipelines.
 
 To copy a pipeline definition from another project, you can export an existing definition from that project, and then import it.
 
+:::moniker range="azure-devops"
+
+1. Navigate to the pipeline details page for your pipeline. 
+
+2. Choose **...** and select **Export to JSON**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Export pipeline menu](media/export-classic-pipeline.png)
+
+3. When prompted, save the JSON file on your local machine. The browser will save the file in the download directory as per your browser settings.
+
+4. To import the pipeline, navigate to the **Pipelines** page in your project. Choose **...**, select **Import a pipeline**, and select the corresponding import pipeline option.
+
+5. You will now be prompted to select a JSON file to import its contents. Browse to and select the JSON file that you previously exported.
+
+6. After import is complete, you will be shown the new pipeline that is created. Note that exporting a pipeline strips any project specific data like agent pools, service connections etc. You will have to once again provide these details. 
+
+> [!NOTE]
+> The **Export** item is only present on the context menu if your pipeline was created in the classic editor.
+
+:::moniker-end
+
 :::moniker range="tfs-2018"
 
 To export a build definition, navigate to **Build Definitions** on the **Builds** hub, choose **...** beside the desired build definition, choose **Export**, and download the .json file that contains the build definition.
@@ -141,7 +163,7 @@ To import a build definition, choose **+Import** from the **Build Definitions** 
 
 :::moniker-end
 
-:::moniker range=">= azure-devops-2019"
+:::moniker range=">= azure-devops-2019 <= azure-devops-2020"
 
 1. Navigate to the pipeline details page for your pipeline. 
 
