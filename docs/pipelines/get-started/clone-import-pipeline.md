@@ -133,14 +133,14 @@ To copy a pipeline definition from another project, you can export an existing d
 
 1. Navigate to the pipeline details page for your pipeline. 
 
-2. Choose **...** and select **Export to JSON**.
+2. Choose **...** and select **Export to JSON**. For a classic release pipeline, choose **...**, **Export**.
 
     > [!div class="mx-imgBorder"]
     > ![Export pipeline menu](media/export-classic-pipeline.png)
 
 3. When prompted, save the JSON file on your local machine. The browser will save the file in the download directory as per your browser settings.
 
-4. To import the pipeline, navigate to the **Pipelines** page in your project. Choose **...**, select **Import a pipeline**, and select the corresponding import pipeline option.
+4. To import the pipeline, navigate to the **Pipelines** page in your project. Choose **...**, select **Import a pipeline**, and select the corresponding import pipeline option. To import a classic release pipeline, navigate to **Releases**, choose **+New**, **Import release pipeline**.
 
 5. You will now be prompted to select a JSON file to import its contents. Browse to and select the JSON file that you previously exported.
 
