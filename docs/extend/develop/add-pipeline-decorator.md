@@ -221,7 +221,7 @@ To specify this list of inputs you can modify vss-extension.json manifest file l
 
 By setting up of 'targettaskinputs' property you can specify the list of inputs that are expected to be injected.
 These inputs will be injected into the task with the prefix "`target_`" and will be available in the injected task like `target_target-task-input`.
-> Note: Targeted task inputs that get secret values with variables or get them from other tasks won't be injected.
+> Note: Target task inputs that get secret values with variables or get them from other tasks won't be injected.
 
 
 <!--## Limitations
