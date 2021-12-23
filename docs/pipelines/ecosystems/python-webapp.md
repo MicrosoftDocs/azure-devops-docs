@@ -3,13 +3,12 @@ title: Build and deploy Python web apps
 description: Use CI/CD with Azure Pipelines to automatically build, test, and deploy Python web apps to Azure App Service on Linux.
 ms.topic: tutorial
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
-ms.custom: freshness-fy22q2
 ms.manager: barbkess
-ms.author: kraigb
-author: kraigb
+ms.author: jukullam
+author: julliakm
 ms.date: 12/23/2021
 monikerRange: 'azure-devops'
-ms.custom: devx-track-python, devx-track-azurecli
+ms.custom: devx-track-python, devx-track-azurecli, freshness-fy22q2
 ---
 
 # Use CI/CD to deploy a Python web app to Azure App Service on Linux
