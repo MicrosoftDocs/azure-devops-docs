@@ -157,12 +157,12 @@ To copy a pipeline definition from another project, you can export an existing d
 
 The process for exporting and importing a classic release pipeline is very similar, but the menus and UI are slightly different.
 
-1. To export a classic release pipeline, navigate to Releases, choose **...**, and select **Export**.
+1. To export a classic release pipeline, navigate to **Releases**, choose **...**, and select **Export**.
 
     > [!div class="mx-imgBorder"]
     > ![Export pipeline menu](media/classic-export-definition.png)
 
-2. To import a classic release pipeline, navigate to the **Releases**, choose **+New**, and select **Import release pipeline**.
+2. To import a classic release pipeline, navigate to **Releases**, choose **+New**, and select **Import release pipeline**.
 
     > [!div class="mx-imgBorder"]
     > ![Import pipeline menu](media/classic-import-pipeline.png)
