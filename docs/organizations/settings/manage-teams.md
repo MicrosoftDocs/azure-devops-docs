@@ -271,6 +271,9 @@ Similar to Kanban boards, each sprint Taskboard can be customized to support inf
 
 :::image type="content" source="media/configure-sprint-taskboard.png" alt-text="Screenshot of Taskboard selection.":::
 
+
+<a id="add-and-manage-team-dashboards" /> 
+
 ::: moniker range=">= tfs-2017" 
 
 ## Add and manage team dashboards   
@@ -283,7 +286,6 @@ By default, all team members can add and edit team dashboards. In addition, team
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 Team administrators can add, configure, and manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).   
-
 ::: moniker-end
 
 :::image type="content" source="media/edit-team-dashboard.png" alt-text="Screenshot of team dashboard.":::

@@ -79,7 +79,7 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 3. Paste the Web Hook URL from the Slack integration that you created and select **Finish**.
 
-   <img alt="Action dialog box with the Web Hook URL" src="./media/slack/action.png" style="border: 1px solid #CCCCCC; width:60%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+   :::image type="content" source="./media/slack/action.png" alt-text="Action dialog box with the Web Hook URL.":::
 
 4. Now, when the event you configured occurs in your project, a notification appears in your team's Slack channel.
 

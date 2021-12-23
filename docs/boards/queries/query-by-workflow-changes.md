@@ -359,9 +359,9 @@ To list work items that have changed state within a specific date range, you can
 > ![Screenshot of Query Editor to query on State Change Date and State fields](media/workflow/query-state-change-date.png)
 
 
-
-
-<a id="kanban_query_fields">  </a>
+<a id="query-changes-to-a-kanban-board" />
+<a id="kanban-query-fields" />
+<a id="kanban_query_fields" />
 
 ::: moniker range=">= tfs-2015"
 
@@ -799,11 +799,9 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
 :::row-end:::
 
+<a id="sync">  </a>
 ::: moniker range="azure-devops"
 > [!NOTE]  
-> 
-> <a id="sync">  </a>
->
 > 1. See [Date and Identity fields](#date-identity).  
 > 2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Azure Active Directory](../../organizations/security/about-permissions.md#aad). 
 > 3. See [Activated By/Date and Resolved By/Date fields](#activated-resolved-fields).   

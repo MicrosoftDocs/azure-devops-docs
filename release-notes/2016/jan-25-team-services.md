@@ -17,7 +17,7 @@ Happy New Year! Because of the holidays, we skipped our December deployment, so 
 
 It’s here! When we launched dashboards, we mentioned that our widgets are written as [extensions](/azure/devops/integrate/), which would also allow you to write and share your own widgets in time. Today, we’re releasing a public preview of our widget SDK. You can get started at [Add a dashboard widget](/azure/devops/integrate/).
 
-As a reminder, widgets are implemented as a [contribution point](/azure/devops/integrate/) in the extension framework. You’ll need some knowledge of JavaScript, HTML, CSS, and a good idea to build a widget. If you run into issues or have feedback, feel free reach out to us at vsointegration@microsoft<dot>com.
+As a reminder, widgets are implemented as a [contribution point](/azure/devops/integrate/) in the extension framework. You’ll need some knowledge of JavaScript, HTML, CSS, and a good idea to build a widget. If you run into issues or have feedback, feel free reach out to us at vsointegration@microsoft.com.
 
 ## Create branch and links to related artifacts
 
