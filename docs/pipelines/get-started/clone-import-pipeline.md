@@ -133,7 +133,9 @@ This version of TFS doesn't support YAML pipelines.
 
 #### [Classic](#tab/classic/)
 
-To copy a pipeline definition from another project, you can export an existing definition from that project, and then import it.
+### Build pipeline
+
+To copy a build definition from another project, you can export an existing definition from that project, and then import it.
 
 :::moniker range="azure-devops"
 
@@ -154,6 +156,8 @@ To copy a pipeline definition from another project, you can export an existing d
 
 > [!NOTE]
 > The **Export** item is only present on the context menu if your pipeline was created in the classic editor.
+
+### Release pipeline
 
 The procedure for exporting and importing a classic release pipeline is very similar to the classic build pipeline procedure, but the menus and UI are slightly different.
 
