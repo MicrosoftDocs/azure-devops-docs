@@ -155,7 +155,7 @@ To copy a pipeline definition from another project, you can export an existing d
 > [!NOTE]
 > The **Export** item is only present on the context menu if your pipeline was created in the classic editor.
 
-The process for exporting and importing a classic release pipeline is very similar, but the menus and UI are slightly different.
+The procedure for exporting and importing a classic release pipeline is very similar to the classic build pipeline procedure, but the menus and UI are slightly different.
 
 1. To export a classic release pipeline, navigate to **Releases**, choose **...**, and select **Export**.
 
