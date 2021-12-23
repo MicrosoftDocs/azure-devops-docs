@@ -242,6 +242,9 @@ For more information, see [Use TFSSecurity to manage groups and permissions for 
 
 ::: moniker-end
 
+
+<a id="group-rules-with-lesser-permissions" />
+
 ::: moniker range=" azure-devops"
 
 ## Group rules with lesser permissions

@@ -91,7 +91,7 @@ This feature enables a deployment to be partially successful when a task marked 
 
 Would you like to upload additional logs or diagnostics or images when running tasks in a release? This feature enables users to upload additional files during deployments. To upload a new file, use the following agent command in your script:
 
-Write-host "##vso[task.uploadfile]<filename>"
+Write-host "##vso[task.uploadfile]\<filename\>"
 
 The file is then available as part of the release logs. When you download all the logs associated with the release, you will be able to retrieve this file as well.
 

@@ -214,9 +214,9 @@ Requires TFS 2015.1 or later version.
 
 ::: moniker-end   
 
-::: moniker range="azure-devops"
 
 <a id="group-by-tags"></a> 
+::: moniker range="azure-devops"
 
 ## Chart work items and group by tags
 

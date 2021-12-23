@@ -1,103 +1,86 @@
 ---
 title: Publish a Maven artifact using Gradle
-description: Publish a Maven artifact using Gradle in an Azure DevOps Services build
+description: How to publish a Maven artifact to Azure Artifacts using Gradle 
 ms.technology: devops-artifacts
 ms.reviewer: dastahel
 ms.topic: conceptual
-ms.date: 06/09/2020
-monikerRange: '>= tfs-2018'
+ms.date: 11/16/2021
+monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
 
-# Publish a Maven artifact using Gradle
+# Publish Maven artifacts using Gradle
 
-**Azure DevOps Services** | **TFS 2018**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-This topic covers creating and publishing a Maven artifact with Gradle using Azure DevOps Services.
+This topic covers creating and publishing a Maven artifact to an Azure Artifacts feed with Gradle.
 
 ## Prerequisites
 
-Before you start, make sure you have the [Gradle build tool](https://gradle.org/install/) installed.
+- Install [Gradle build tool](https://gradle.org/install/).
 
-Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7 or later). If you don't have it already, you can get the Java JDK from this link: [Java SE Downloads](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
+- [Java SE Downloads](https://www.oracle.com/technetwork/java/javase/downloads/index.html) required for Gradle.
 
-To verify that you have the Java JDK or JRE version 7 or later installed, run the following command in an elevated command prompt:
+To make sure you have all the prerequisites set up, run the following command in an elevated command prompt to check which Java version is installed on your machine.
 
-```CLI
+```Command
 java -version
 ```
 
-If the above command returns a java version then you can now install Gradle, otherwise go back and install Java JDK or JRE first. 
+If the above command doesn't return a java version, make sure you go back and install the Java JDK or JRE first. 
 
-Once Gradle installation is complete, you can confirm the installation with the following command:
+To confirm the installation of Gradle, run the following command in an elevated command prompt:
 
-```CLI
+```Command
 gradle -v
 ```
 
-You're ready to start! This tutorial will guide you through the process of publishing a Maven artifact using Gradle.
-
-> [!NOTE]
-> This topic assumes you have cloned your Git repo to your local machine. If you aren't sure how to clone your repo, read [Clone an existing Git repo](../../repos/git/clone.md).
-
 ## Set up authentication
-
-First, you need a **gradle.properties** file that contains an Azure DevOps Services credential token.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
+1. Select **User settings**, and then select **Personal access tokens**
 
-1. Click **New Token**.
+    :::image type="content" source="media/create-pat.png" alt-text="Screenshot showing how to create a personal access token":::
 
-1. Give your token a name, duration, and select the **Packaging (read and write)** scope. 
+2. Select **New Token**, and then fill out the required fields. Make sure you select the **Packaging** > **Read & write** scope. 
 
-    > [!NOTE]
-    > You may have to choose "Show all scopes" at the bottom to see the Packaging area.
-    
-    ![Create packaging personal access token](media/create-packaging-pat.png)
+    :::image type="content" source="media/create-packaging-pat.png" alt-text="Screenshot showing how to create a new personal access token.":::  
 
-1. Click **Create**.
+3. Select **Create** when you are done.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
+1. Select your profile icon, and then select **Security**.
 
-1. Click **Add**.
+2. Select **New Token**, and then name your token and set its expiration date. 
 
-![Add a personal access token](media/add-pat.png)
+3. Select the **Packaging (Read & write)** scope.
 
-1. Give your new token a name and a duration. 
-
-1. Select the **Packaging (read and write)** scope.
-
-![Select a token scope](media/select-scope.png)
+    :::image type="content" source="media/select-scope.png" alt-text="Screenshot showing the available scopes for a pat.":::
 
 ::: moniker-end
 
-1. Copy your token and save it in a secure location. The token will be a long alphanumeric string, something like _"lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa"_.
+4. Copy your token and save it in a secure location.
 
-1. Create a text file and name it: **gradle.properties** in your `.gradle` folder under the Gradle installation root directory. Typically, the path to your gradle folder is: `%INSTALLPATH%/gradle/user/home/.gradle/`.
+5. Create a new file in your `.gradle` folder and name it **gradle.properties**. The path to your gradle folder is usually in `%INSTALLPATH%/gradle/user/home/.gradle/`.
 
-1. Open the **gradle.properties** file with a UTF-8-capable text editor and add the following:
+6. Open the **gradle.properties** file with a text editor and add the following snippet:
 
-    ```ini
-    vstsMavenAccessToken=<PASTE_YOUR_TOKEN_HERE>
+    ```
+    vstsMavenAccessToken=<PASTE_YOUR_PERSONAL_ACCESS_TOKEN_HERE>
     ```
 
-1. Replace _<PASTE_YOUR_TOKEN_HERE>_ with the token you created earlier. Save the file when you're done.
-
-## Create a feed
-
-[!INCLUDE [](../../artifacts/includes/create-feed.md)]
+7. Save your file when you are done.
 
 ## Configure build.gradle 
 
-1. Create a text file and name it **build.gradle** in the root of your cloned repo. 
+1. Create a new file in the root of your project and name it *build.gradle*.
 
-1. Open it with a text editor and add the following snippet:
+1. Open the new file with a text editor, and paste in the following sample code. Replace the placeholders with the appropriate values.
 
     ```groovy
     apply plugin: 'java' 
@@ -106,54 +89,49 @@ First, you need a **gradle.properties** file that contains an Azure DevOps Servi
     publishing { 
         publications { 
             myPublication(MavenPublication) { 
-                groupId '{your-group-ID-here}' 
-                artifactId '{your-artifact-id-here}' 
-                version '{your-version-number-here}' 
-                artifact '{path-to-your-JAR-file-here}' 
+                groupId '<GROUP_ID>' 
+                artifactId '<ARTIFACT_ID>' 
+                version '<VERSION_NUMBER>'             // Your package version
+                artifact '<PATH_TO_YOUR_JAR_FILE>'    //Example: *./target/myJavaClasses.jar*
             } 
         } 
     
         // Repositories *to* which Gradle can publish artifacts 
         repositories { 
             maven { 
-                url 'https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_packaging/{FeedName}/maven/v1' 
+                url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1' 
                 credentials { 
-                    username "{FeedName}" 
+                    username "<FEED_NAME>" 
                     password System.getenv("SYSTEM_ACCESSTOKEN") != null ? System.getenv("SYSTEM_ACCESSTOKEN") : vstsMavenAccessToken 
                 } 
             } 
         } 
     } 
      
-    // Repositories *from* which Gradle can download dependencies; it's the same as above in this example
+    // Repositories *from* which Gradle can download dependencies
     repositories { 
         maven { 
-            url 'https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_packaging/{FeedName}/maven/v1' 
+            url 'https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/<PROJECT_NAME>/_packaging/<FEED_NAME>/maven/v1' 
             credentials { 
-                username "{FeedName}" 
+                username "<FEED_NAME>" 
                 password System.getenv("SYSTEM_ACCESSTOKEN") != null ? System.getenv("SYSTEM_ACCESSTOKEN") : vstsMavenAccessToken 
             } 
         } 
     } 
     ```
     
-    In the above example, you are publishing and downloading dependent artifacts from the same organization. You can also configure publishing and downloading to use separate organizations. See [Use predefined variables](../../pipelines/build/variables.md#systemaccesstoken) to lean more about the `System.AccessToken` security token.
+In the above example, we are publishing and downloading artifacts from the same organization. You can also configure publishing and downloading to use separate organizations. See [Predefined variables](../../pipelines/build/variables.md#systemaccesstoken) to lean more about pipeline variables and the *System.AccessToken* security token.
 
-1. Replace the following fields with your own values:
+## Publish Maven packages with Gradle
 
-    - `groupId`: A group ID you associate with your package. Give it a team or organization name so consumers can identify the origin easier.
-    - `artifactId`: Your artifact ID number that will be used when publishing your package. Again, give it a meaningful name that specifies the package type and version for example.
-    - `version`: Your package version. This number should be incremented for future iterations.
-    - `artifact`: Your `.jar` file path. Example: *./target/myJavaClasses.jar*.
-    - `feedName`: The name of your feed. If not specified, the default value will be `{OrganizationName}`.
+Run the following command in an elevated command prompt to publish your package to your feed. Your new package will be named: *groupId:artifactId*. 
 
-
-## Publish your Maven package with Gradle
-
-Run the following command in an elevated command prompt:
-
-```CLI
+```Command
 gradle publish
 ```
 
-Your new package will be named: `groupId:artifactId` and should show up in your Artifacts feed.
+## Related articles
+
+- [Publish and download pipeline Artifacts](pipeline-artifacts.md)
+- [Releases in Azure Pipelines](../release/releases.md)
+- [Release artifacts and artifact sources](../release/artifacts.md)

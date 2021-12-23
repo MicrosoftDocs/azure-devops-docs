@@ -8,7 +8,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
+ms.date: 12/14/2021
 --- 
 
 # Security namespace and permission reference for Azure DevOps 
@@ -25,7 +25,7 @@ Security namespaces are used to store access control lists (ACLs) on tokens. Dat
 Each family of resources, such as work items or Git repositories, is secured through a unique namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE contains an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. Tokens are arbitrary strings representing resources in Azure DevOps.
 
 > [!NOTE]   
-> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions.  Namespaces are subject to change over time.To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. 
+> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions. Namespaces are subject to change over time. To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. 
 
 
 ## Permission management tools 
@@ -398,7 +398,7 @@ The following table describes the namespaces that manage project-level permissio
       Token to secure permissions for each project in your organization.  
       `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.  
       Assume you have a project named `Test Project 1`.  
-      You can get the project ID for this project by using the [`az devops project show` command](../projects/create-project.md#show-project).  
+      You can get the project ID for this project by using the [`az devops project show` command](../projects/create-project.md).  
       `az devops project show --project "Test Project 1"`  
       The command returns a project-id, for example, `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`.  
       Therefore, the token to secure project-related permissions for `Test Project 1` is:  
@@ -955,6 +955,21 @@ The following table describes the security namespaces and permissions that aren'
 ::: moniker-end
 :::row:::
    :::column span="":::
+      EventPublish
+   :::column-end:::
+   :::column span="":::
+      `Read`  
+      `Write`  
+   :::column-end:::
+   :::column span="2":::
+      Grants read and write access for notification handler.  
+      <br/>
+      **ID:** `7cd317f2-adc6-4b6c-8d99-6074faeaf173`
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
       EventSubscriber
    :::column-end:::
    :::column span="":::
@@ -962,9 +977,9 @@ The following table describes the security namespaces and permissions that aren'
       `GENERIC_WRITE`  
    :::column-end:::
    :::column span="2":::
-      Grants read and write access for notification handler.  
+      Grants read and write access for notification subscribers.  
       <br/>
-      ID: `2bf24a2b-70ba-43d3-ad97-3d9e1f75622f`
+      **ID:** `2bf24a2b-70ba-43d3-ad97-3d9e1f75622f`
    :::column-end:::
 :::row-end:::
 ---

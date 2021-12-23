@@ -33,8 +33,8 @@ Use this index to quickly access examples that showcase use of command line tool
 
 - [Universal Packages - download specific files](../artifacts/quickstarts/universal-packages.md#download-specific-files)
 - [Create a feed](../artifacts/quickstarts/universal-packages.md) 
-- [Download a universal package](../artifacts/quickstarts/universal-packages.md#download-a-universal-package) 
-- [Publish a universal package](../artifacts/quickstarts/universal-packages.md#publish-a-package) 
+- [Download a universal package](../artifacts/quickstarts/universal-packages.md#download-universal-packages) 
+- [Publish a universal package](../artifacts/quickstarts/universal-packages.md#publish-universal-packages) 
  
 ## Azure Boards
 
@@ -104,10 +104,10 @@ Use this index to quickly access examples that showcase use of command line tool
 :::row:::
    :::column span="1":::
       #### Add and run a pipeline 
-      - [Create a pipeline](../pipelines/create-first-pipeline.md) 
-      - [Run a pipeline](../pipelines/create-first-pipeline.md#run-a-pipeline)
-      - [Show the details of a pipeline](../pipelines/create-first-pipeline.md#show-pipeline)
-      - [Update a pipeline](../pipelines/create-first-pipeline.md#update-a-pipeline)
+      - [Create a pipeline](../pipelines/get-started/manage-pipelines-with-azure-cli.md) 
+      - [Run a pipeline](../pipelines/get-started/manage-pipelines-with-azure-cli.md#run-a-pipeline)
+      - [Show the details of a pipeline](../pipelines/get-started/manage-pipelines-with-azure-cli.md#show-pipeline)
+      - [Update a pipeline](../pipelines/get-started/manage-pipelines-with-azure-cli.md#update-a-pipeline)
 
       #### Agents, agent pools, agent queues 
       - [List agents](../pipelines/agents/agents.md#list-agents)

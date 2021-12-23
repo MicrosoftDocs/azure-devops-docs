@@ -4,10 +4,10 @@ description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
 ms.topic: conceptual
 ms.assetid:
-ms.custom: seodec18
+ms.custom: seodec18, contperf-fy22q1
 ms.author: jukullam
 author: juliakm
-ms.date: 08/23/2021
+ms.date: 12/10/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -65,13 +65,13 @@ az webapp create -g myapppipeline-rg -p myapp-service-plan -n my-app-dotnet --ru
 ```
 # [Windows](#tab/windows)
 
-Create an Azure App Service on Linux.
+Create an Azure App Service on Windows.
 
 ```azurecli
 # Create a resource group
 az group create --location eastus2 --name myapp-rg
 
-# Create an app service plan of type Linux
+# Create an app service plan of type Windows
 az appservice plan create -g myapp-rg -n myapp-service-plan
 
 # Create an App Service from the plan 
@@ -448,9 +448,9 @@ jobs:
     # download the artifact drop from the previous job
   - task: DownloadPipelineArtifact@2
     inputs:
-      buildType: 'current'
-      artifactName: 'drop'
-      targetPath: '$(Pipeline.Workspace)'
+      source: 'current'
+      artifact: 'drop'
+      path: '$(Pipeline.Workspace)'
 
   - task: AzureWebApp@1
     inputs:

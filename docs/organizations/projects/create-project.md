@@ -584,6 +584,7 @@ From Team Explorer, you can view a list of projects by connecting to an organiza
 
 
 <a id="add-a-repository" />
+<a id="add-a-repository-to-your-project" />
 
 ::: moniker range=">= tfs-2015"
 

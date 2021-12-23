@@ -134,8 +134,8 @@ A template can rewrite user steps and only allow certain approved tasks to run.
 You can, for example, prevent inline script execution.
 
 > [!WARNING]
-> In the example below, only the literal step type "script" is prevented.
-> For full lockdown of ad-hoc scripts, you would also need to block "bash", "pwsh", "powershell", and the tasks which back these steps.
+> In the example below, the steps type "bash", "powershell", "pwsh" and "script" are prevented from executing.
+> For full lockdown of ad-hoc scripts, you would also need to block "BatchScript" and "ShellScript".
 
 ```yaml
 # template.yml
@@ -145,9 +145,22 @@ parameters:
   default: []
 steps:
 - ${{ each step in parameters.usersteps }}:
-  - ${{ each pair in step }}:
-    ${{ if ne(pair.key, 'script') }}:
-      ${{ pair.key }}: ${{ pair.value }}
+  - ${{ if not(or(startsWith(step.task, 'Bash'),startsWith(step.task, 'CmdLine'),startsWith(step.task, 'PowerShell'))) }}:  
+    - ${{ step }}
+  # The lines below will replace tasks like Bash@3, CmdLine@2, PowerShell@2
+  - ${{ else }}:  
+    - ${{ each pair in step }}:
+        ${{ if eq(pair.key, 'inputs') }}:
+          inputs:
+            ${{ each attribute in pair.value }}:
+              ${{ if eq(attribute.key, 'script') }}:
+                script: echo "Script removed by template"
+              ${{ else }}:
+                ${{ attribute.key }}: ${{ attribute.value }}
+        ${{ elseif ne(pair.key, 'displayName') }}:
+          ${{ pair.key }}: ${{ pair.value }}
+
+          displayName: 'Disabled by template: ${{ step.displayName }}'
 ```
 
 ```yaml
@@ -158,6 +171,14 @@ extends:
     usersteps:
     - task: MyTask@1
     - script: echo This step will be stripped out and not run!
+    - bash: echo This step will be stripped out and not run!
+    - powershell: echo "This step will be stripped out and not run!"
+    - pwsh: echo "This step will be stripped out and not run!"
+    - script: echo This step will be stripped out and not run!
+    - task: CmdLine@2
+      displayName: Test - Will be stripped out
+      inputs:
+        script: echo This step will be stripped out and not run!
     - task: MyOtherTask@2
 ```
 

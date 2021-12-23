@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: vijayma
-ms.date: 10/22/2021
+ms.date: 11/29/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -1910,7 +1910,7 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and
 :::moniker range=">azure-devops-2019"
 
 Learn more about [conditions](process/conditions.md?tabs=yaml),
-[timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
+[timeouts](process/phases.md?tabs=yaml#timeouts), [step targets](process/tasks.md#step-target), and [task control options](process/tasks.md#task-control-options) for all tasks.
 
 :::moniker-end
 
@@ -1995,7 +1995,7 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and
 :::moniker range=">azure-devops-2019"
 
 Learn more about [conditions](process/conditions.md?tabs=yaml),
-[timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
+[timeouts](process/phases.md?tabs=yaml#timeouts), [step targets](process/tasks.md#step-target), and [task control options](process/tasks.md#task-control-options) for all tasks.
 
 :::moniker-end
 
@@ -2387,7 +2387,7 @@ steps:
 
 :::moniker-end
 
-:::moniker range=">azure-devops-2019"
+:::moniker range=">azure-devops-2019 < azure-devops"
 
 ```yaml
 steps:
@@ -2397,6 +2397,35 @@ steps:
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean  # whether to run this step; defaults to 'true'
+  target:
+    container: string # where this step will run; values are the container name or the word 'host'
+    commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
+    settableVariables: string # what variables are allowed; defaults to all; can be `none` or a list of allowed vars
+  timeoutInMinutes: number
+  inputs: { string: string }  # task-specific inputs
+  env: { string: string }  # list of environment variables to add
+```
+
+If you don't specify a command mode, you can shorten the `target` structure to:
+
+```yaml
+- task:
+  target: string  # container name or the word 'host'
+```
+
+:::moniker-end
+
+:::moniker range="azure-devops"
+
+```yaml
+steps:
+- task: string  # reference to a task and version, e.g. "VSBuild@1"
+  displayName: string  # friendly name displayed in the UI
+  name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
+  condition: string
+  continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
+  enabled: boolean  # whether to run this step; defaults to 'true'
+  retryCountOnTaskFailure: number # Max number of retries; default is zero
   target:
     container: string # where this step will run; values are the container name or the word 'host'
     commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
@@ -2432,15 +2461,15 @@ steps:
 
 :::moniker range="azure-devops-2019"
 
-Learn more about [conditions](process/conditions.md?tabs=yaml) and
-[timeouts](process/phases.md?tabs=yaml#timeouts).
+Learn more about [conditions](process/conditions.md?tabs=yaml),
+[timeouts](process/phases.md?tabs=yaml#timeouts), and [task control options](process/tasks.md#task-control-options) for all tasks.
 
 :::moniker-end
 
 :::moniker range=">azure-devops-2019"
 
 Learn more about [conditions](process/conditions.md?tabs=yaml),
-[timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
+[timeouts](process/phases.md?tabs=yaml#timeouts), [step targets](process/tasks.md#step-target), and [task control options](process/tasks.md#task-control-options) for all tasks.
 
 :::moniker-end
 
