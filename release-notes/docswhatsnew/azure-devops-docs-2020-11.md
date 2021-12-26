@@ -113,7 +113,7 @@ Welcome to what's new in the Azure DevOps docs from November 1, 2020 through Nov
 - [Forks](/azure/devops/repos/git/forks)
 - [Azure Repos Git Documentation](/azure/devops/repos/git/index)
 - [Move Git repositories to another project with full-fidelity history](/azure/devops/repos/git/move-git-repos-between-team-projects)
-- [Use Git Credential Manager Core to authenticate to Azure Repos](/azure/devops/repos/git/set-up-credential-managers)
+- [Use Git Credential Manager to authenticate to Azure Repos](/azure/devops/repos/git/set-up-credential-managers)
 - [Select an effective branching strategy](/azure/devops/repos/tfvc/branching-strategies-with-tfvc)
 
 ## Service-hooks
