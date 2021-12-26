@@ -110,5 +110,5 @@ Learn how to monitor your applications and infrastructure using Azure Applicatio
 ## Build the right architecture 
 Security is one of the most important aspects of any architecture. It provides confidentiality, integrity, and availability assurances against deliberate attacks and abuse of your valuable data and systems. Losing these assurances can negatively impact your business operations and revenue, as well as your organization’s reputation in the marketplace. 
 
-- [Applications and services architecture](/azure/architecture/framework/security/applications-services)  
+- [Applications and services architecture](/azure/architecture/framework/security/design-apps-services)  
 - [DevSecOps architecture](/azure/architecture/solution-ideas/articles/devsecops-in-azure)

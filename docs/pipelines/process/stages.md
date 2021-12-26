@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand stages in Azure Pipelines
 ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
 ms.topic: conceptual
-ms.date: 09/21/2021
+ms.date: 12/22/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -309,7 +309,7 @@ stages:
 - stage: A
 
 - stage: B
-  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/master'))
+  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/main'))
 ```
 
 ::: moniker-end

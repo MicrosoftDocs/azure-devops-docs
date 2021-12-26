@@ -352,7 +352,7 @@ As with other work items, you can bulk edit test-specific work items. To learn m
 
 ::: moniker range="< azure-devops-2020"
 - [Bulk modify work items](../boards/backlogs/bulk-modify-work-items.md). 
-- [FAQs for manual testing, Can I export the test plan to share or review offline](reference-qa.md#q-can-i-export-the-test-plan-to-share-or-review-offline)
+- [Can I export the test plan to share or review offline](create-a-test-plan.md#work-with-test-suites)
 ::: moniker-end
 
 ## Test terms 

@@ -113,6 +113,10 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
         </tr>
     </thead>
 <tr>
+    <td rowspan="2"><a href="2021/sprint-196-update.md" data-raw-source="[6 December 2021](2021/sprint-196-update.md)">6 December 2021</a></td> 
+    <td>Announcing retirement of macOS 10.14 Mojave images</td><td>Pipelines</td><td>N/A</td></tr>
+    <td>Brownout schedule for Windows 2016 hosted images</td><td>Pipelines</td><td>N/A</td></tr>
+</tr> 
     <td rowspan="7"><a href="2021/sprint-195-update.md" data-raw-source="[16 November 2021](2021/sprint-195-update.md)">16 November 2021</a></td> 
     <td>Assign Azure DevOps Administrator role to an Azure AD group</td><td>General</td><td>Future</td></tr>
     <td>Automatic retries for a task</td><td>Pipelines</td><td>Future</td></tr>
@@ -121,7 +125,6 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
     <td>The default agent specification for Classic pipelines is now Windows-2019</td><td>Pipelines</td><td>N/A</td></tr>
     <td>Improvements to Copy Dashboard</td><td>Reporting</td><td>Future</td></tr>
     <td>Filter on null values in burndown chart widget</td><td>Reporting</td><td>Future</td></tr>
-</tr> 
     <td rowspan="5"><a href="2021/sprint-194-update.md" data-raw-source="[19 October 2021](2021/sprint-194-update.md)">19 October 2021</a></td> 
     <td>Post neutral status to GitHub when a build is skipped</td><td>Pipelines</td><td>Future</td></tr>
     <td>Access to all pipelines is turned off by default in protected resources</td><td>Pipelines</td><td>Future</td></tr>
