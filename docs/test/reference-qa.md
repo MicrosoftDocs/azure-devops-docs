@@ -29,12 +29,21 @@ The suite will automatically include every test case that is returned by the que
 
 ### Q: Can I copy or clone test plans and test suites?
 
-**A:** Yes. See [Copy or clone test plans, test suites, and test cases](copy-clone-test-items.md). For Azure DevOps Server 2020 and later versions, you can clone test plans and import and export test suites from the web portal. Or, for all versions, you can use the Test Case Management (TCM) command line tool. To learn how, see [Test Plan Clone](/rest/api/azure/devops/testplan/test-plan-clone/clone-test-plan?view=azure-devops-rest-5.1&preserve-view=true).
+**A:** Yes, you can export test plans, test suites, and test cases. Select the details you want in the report, and then email or print this report for review.
+
+![Screenshot that shows selecting a test suite, and then selecting Export.](media/create-a-test-plan/ExportTestPlanHTML.png)
+
+To change the test case fields in the report, add or remove columns from the list view of the test suite.
+
+> [!IMPORTANT]
+> - You can export a maximum of 75 test suites in a single operation. The email supports up to 1 MB of data.
+> - You can't export test plan attachments.
 
 Other options include using the REST APIs:
 
 - For test plans, see [Test Plan Clone - Clone Test Plan](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-6.0&preserve-view=true).
 - For test suites, see [Test Suite Clone](/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-6.0&preserve-view=true).
+
 
 ### Q: When I export a test plan, can I just view the data or copy it to a Word document?
 
