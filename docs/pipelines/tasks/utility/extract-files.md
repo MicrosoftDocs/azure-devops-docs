@@ -61,7 +61,7 @@ None
 </tr>
 <tr>
 <td>Overwrite files in the destination directory</td>
-<td>Select this option to overwrite files in the output directory if they already exist. If the option is false, the script prompts on existing files asking whether or not to overwrite them.</td>
+<td>Select this option to overwrite files in the output directory if they already exist. If the option is <code>false</code>, the script prompts on existing files, asking whether you want to overwrite them.</td>
 </tr>
 <tr>
 <td>Path to 7z utility</td>
