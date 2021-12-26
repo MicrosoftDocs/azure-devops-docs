@@ -29,17 +29,15 @@ The suite will automatically include every test case that is returned by the que
 
 ### Q: Can I copy or clone test plans and test suites?
 
-**A:** Yes, you can export test plans, test suites, and test cases. Select the details 
-that you want in the report. Then email or print this report for review.
+**A:** Yes, you can export test plans, test suites, and test cases. Select the details you want in the report, and then email or print this report for review.
 
-![Right-click a test suite, and choose Export](media/create-a-test-plan/ExportTestPlanHTML.png)
+![Screenshot that shows selecting a test suite, and then selecting Export.](media/create-a-test-plan/ExportTestPlanHTML.png)
 
-Change the test case fields in the report by adding or removing columns from 
-the list view of the test suite.
+To change the test case fields in the report, add or remove columns from the list view of the test suite.
 
 > [!IMPORTANT]
-> You cannot export more than 75 Test Suites in a single operation. The email supports up to 1MB of data.
-> You cannot export test plan attachments.
+> - You can export a maximum of 75 test suites in a single operation. The email supports up to 1 MB of data.
+> - You can't export test plan attachments.
 
 Other options include using the REST APIs:
 
