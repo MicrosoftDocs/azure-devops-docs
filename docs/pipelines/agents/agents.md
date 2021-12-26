@@ -40,7 +40,7 @@ Jobs can be run [directly on the host machine of the agent](../process/phases.md
 <h2 id="install">Self-hosted agents</h2>
 
 An agent that you set up and manage on your own to run jobs is a **self-hosted agent**.
-You can use self-hosted agents in Azure Pipelines or Azure DevOps Server (formerly known as TFS).
+You can use self-hosted agents in Azure Pipelines or Azure DevOps Server, formerly named Team Foundation Server (TFS).
 Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
 Also, machine-level caches and configuration persist from run to run, which can boost speed.
 
