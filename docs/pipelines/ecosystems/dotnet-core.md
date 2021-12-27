@@ -22,10 +22,8 @@ Use a pipeline to automatically build and test your .NET Core projects. Learn ho
 * Publish to a [NuGet feed](../artifacts/nuget.md).
 * Deploy your [web app to Azure](../targets/webapp.md).
 
-
 > [!NOTE]
 > For help with .NET Framework projects, see [Build ASP.NET apps with .NET Framework](../apps/aspnet/build-aspnet-4.md).
-> 
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -33,7 +31,7 @@ Use a pipeline to automatically build and test your .NET Core projects. Learn ho
 
 > [!NOTE]
 > 
-> This guidance applies to TFS version 2017.3 and newer.
+> The following guidance applies to TFS version 2017.3 and newer.
 
 ::: moniker-end
 
@@ -41,13 +39,11 @@ Use a pipeline to automatically build and test your .NET Core projects. Learn ho
 
 ::: moniker range=">=azure-devops-2020"
 
-Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
+Are you new to Azure Pipelines? If so, then we recommend you try the following section first.
 
 ::: moniker-end
 
-
 [!INCLUDE [include](../includes/dotnet-setup.md)]
-
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -67,22 +63,22 @@ Are you new to Azure Pipelines? If so, then we recommend you try this section be
 
 When the **Configure** tab appears, select **ASP.NET Core**.
 
-1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+1. Examine your new pipeline to see what the YAML does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
-2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+2. Commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
    If you want to watch your pipeline in action, select the build job.
 
-   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) template.
+   You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) template.
 
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
 3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
-4. See the sections below to learn some of the more common ways to customize your pipeline.
+Read further to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
@@ -90,7 +86,7 @@ When the **Configure** tab appears, select **ASP.NET Core**.
 
 ### YAML
 
-1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. 
+1. Add an `azure-pipelines.yml` file in your repository. Customize the following snippet for your build. 
 
 ```yaml
 trigger:
@@ -126,7 +122,7 @@ Read further to learn some of the more common ways to customize your pipeline.
 
 1. [Create a pipeline](../create-first-pipeline.md) and select the **Empty Pipeline** template. 
 
-2. In the task catalog, find and add the **.NET Core** task. This task runs `dotnet build` to build the code in the sample repository.
+2. In the task catalog, find and add the **.NET Core** task. The following task runs `dotnet build` to build the code in the sample repository.
 
 3. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
 
@@ -370,7 +366,7 @@ To install a .NET Core global tool like [dotnetsay](https://www.nuget.org/packag
 
 ## Run your tests
 
-If you have test projects in your repository, then use the **.NET Core** task to run unit tests by using testing frameworks like MSTest, xUnit, and NUnit. For this functionality, the test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher.
+If you have test projects in your repository, then use the **.NET Core** task to run unit tests by using testing frameworks like MSTest, xUnit, and NUnit.The test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher.
 Test results get automatically published to the service. These results are available to you in the build summary and can be used for troubleshooting failed tests and test-timing analysis.
 
 ::: moniker range=">=azure-devops-2020"
@@ -414,7 +410,7 @@ Use the **.NET Core** task with **Command** set to **test**.
 
 ## Collect code coverage 
 
-If you're building on the Windows platform, code coverage metrics can be collected by using the built-in coverage data collector. For this functionality, the test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher. 
+If you're building on the Windows platform, code coverage metrics can be collected by using the built-in coverage data collector. The test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher. 
 If you use the **.NET Core** task to run tests, coverage data is automatically published to the server. The **.coverage** file can be downloaded from the build summary for viewing in Visual Studio.
 
 ::: moniker range=">=azure-devops-2020"
@@ -464,7 +460,7 @@ steps:
 
 If you're building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
 
-Code coverage results can be published to the server by using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To use this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
+Code coverage results can be published to the server by using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. The coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
 
 To run tests and publish code coverage with Coverlet, do the following tasks:
 
@@ -556,7 +552,7 @@ steps:
 ```
 
 > [!NOTE]
-> The `dotNetCoreCLI@2` task has a `publishWebProjects` input that is set to **true** by default. This publishes _all_ web projects in your repo by default. You can find more help and information in the [open source task on GitHub](https://github.com/microsoft/azure-pipelines-tasks).
+> The `dotNetCoreCLI@2` task has a `publishWebProjects` input that is set to **true** by default. This task publishes _all_ web projects in your repo by default. You can find more help and information in the [open source task on GitHub](https://github.com/microsoft/azure-pipelines-tasks).
 
 To copy more files to Build directory before publishing, use [Utility: copy files](../tasks/utility/copy-files.md).
 
