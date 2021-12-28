@@ -72,7 +72,7 @@ When the **Configure** tab appears, select **ASP.NET Core**.
 
    If you want to watch your pipeline in action, select the build job.
 
-   You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) template.
+   Because your code appeared to be a good match for the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) template, we automatically created the pipeline for you.
 
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
@@ -105,17 +105,18 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 ```
-1. [Create a pipeline](../create-first-pipeline.md) and select the **YAML** template.
+2. [Create a pipeline](../create-first-pipeline.md) and select the **YAML** template.
 
-2. Set the **Agent pool** and **YAML file path** for your pipeline. 
+3. Set the **Agent pool** and **YAML file path** for your pipeline. 
 
-3. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+4. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
 
-4. When you're ready to make changes to your pipeline, **Edit** it.
+5. When you're ready to make changes to your pipeline, **Edit** it.
 
 Read further to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
+
 ::: moniker range="< azure-devops" 
 
 ### Classic
@@ -138,7 +139,7 @@ Read further to learn some of the more common ways to customize your pipeline.
 
 ::: moniker range=">=azure-devops-2020"
 
-Use Azure Pipelines to build your .NET Core projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines include several released versions of the .NET Core SDKs preinstalled.
+Use Azure Pipelines to build your .NET Core projects. Build your projects on Windows, Linux, or macOS without the need to set up infrastructure. The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines include several preinstalled versions of the .NET Core SDKs.
 
 Ubuntu 18.04 is set here in the YAML file.  
 
@@ -251,11 +252,7 @@ In .NET Core SDK version 2.0 and newer, packages get restored automatically when
 
 ::: moniker range=">= tfs-2018"
 
-If your builds occasionally fail when restoring packages from NuGet.org due to connection issues, 
-you can use Azure Artifacts with [upstream sources](../../artifacts/concepts/upstream-sources.md) 
-and cache the packages. The credentials of the pipeline get automatically used when connecting 
-to Azure Artifacts. These credentials are typically derived from the **Project Collection Build Service** 
-account.
+Your builds may sometimes fail because of connection issues when you restore packages from NuGet.org. You can use Azure Artifacts with [upstream sources](../../artifacts/concepts/upstream-sources.md) and cache the packages. The credentials of the pipeline get automatically used when it connects to Azure Artifacts. These credentials are typically derived from the **Project Collection Build Service** account.
 
 If you want to specify a NuGet repository, put the URLs in a `NuGet.config` file in your repository. 
 If your feed is authenticated, manage its credentials by creating a NuGet service connection in the **Services** tab under **Project Settings**.
@@ -264,7 +261,7 @@ If your feed is authenticated, manage its credentials by creating a NuGet servic
 
 ::: moniker range=">=azure-devops-2020"
 
-If you use Microsoft-hosted agents, you get a new machine every time your run a build, which means restoring the packages every time. This restoration can take a significant amount of time. To mitigate this issue, you can either use Azure Artifacts or a self-hosted agent, in which case, you get the benefit of using the package cache.
+If you use Microsoft-hosted agents, you get a new machine every time your run a build, which means restoring the packages every time. Restoration can take a significant amount of time. To mitigate, you can either use Azure Artifacts or a self-hosted agent with the benefit of using the package cache.
 
 ::: moniker-end
 
@@ -460,7 +457,7 @@ steps:
 
 If you're building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
 
-Code coverage results can be published to the server by using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. The coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
+You can publish code coverage results to the server with the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. The coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
 
 To run tests and publish code coverage with Coverlet, do the following tasks:
 
@@ -520,7 +517,7 @@ To run tests and publish code coverage with Coverlet, do the following tasks:
  
 ## Package and deliver your code
 
-After you've built and tested your app, you can upload the build output to Azure Pipelines, create and publish a NuGet package, or package the build output into a .zip file to be deployed to a web application.
+Upload the build output to Azure Pipelines. You can create and publish a NuGet package, or package the build output into a .zip file to deploy to a web application.
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -636,11 +633,11 @@ If you can build your project on your development machine, but you're having tro
 
 ::: moniker range=">=azure-devops-2020"
 
-* We don't install prerelease versions of the .NET Core SDK on Microsoft-hosted agents. After a new version of the .NET Core SDK gets released, it can take a few weeks to roll out to all the Azure Pipelines data centers . You don't have to wait for this rollout to complete. You can use the **.NET Core Tool Installer**, as explained in this guidance, to install the desired version of the .NET Core SDK on Microsoft-hosted agents.  
+* We don't install prerelease versions of the .NET Core SDK on Microsoft-hosted agents. After a new version of the .NET Core SDK gets released, it can take a few weeks to roll out to all the Azure Pipelines data centers. You don't have to wait for this rollout to complete. You can use the [**.NET Core Tool Installer**](#yaml) to install the version you want of the .NET Core SDK on Microsoft-hosted agents.  
 
 ::: moniker-end
 
-* Check that the versions of the .NET Core SDK and runtime on your development machine match those on the agent. You can include a command-line script `dotnet --version` in your pipeline to print the version of the .NET Core SDK. Either use the **.NET Core Tool Installer**, as explained in this guidance, to deploy the same version on the agent, or update your projects and development machine to the newer version of the .NET Core SDK.
+* Check the .NET Core SDK versions and runtime on your development machine and make sure they match the agent. You can include a command-line script `dotnet --version` in your pipeline to print the version of the .NET Core SDK. Either use the [**.NET Core Tool Installer**](#yaml) to deploy the same version on the agent, or update your projects and development machine to the newer version of the .NET Core SDK.
 
 * You might be using some logic in the Visual Studio IDE that isn't encoded in your pipeline. 
 Azure Pipelines runs each of the commands you specify in the tasks one after the other in a new process. 
@@ -651,15 +648,15 @@ Repeat the same commands in the same order on your development machine to locate
   you should also use the **NuGet** task to restore packages specified in `packages.config` files.
 Add the **MSBuild** or **Visual Studio Build** task to build the .NET Framework projects.
 
-* If your builds fail intermittently while restoring packages, either NuGet.org is having issues, or there are networking problems between the Azure data center and NuGet.org. These aren't under our control, and you might need to explore whether using Azure Artifacts with NuGet.org as an upstream source improves the reliability of your builds.
+* Your builds might fail intermittently while restoring packages. Dither NuGet.org is having issues, or there are networking problems between the Azure data center and NuGet.org. You may want to explore whether using Azure Artifacts with NuGet.org as an upstream source improves the reliability of your builds, as it's not in our control.
 
-* Occasionally, when we roll out an update to the hosted images with a new version of the .NET Core SDK or Visual Studio, your build might break. This can happen, for example, if a newer version or feature of the NuGet tool gets shipped with the SDK. To isolate these issues, use the **.NET Core Tool Installer** task to specify the version of the .NET Core SDK that's used in your build.
+* Occasionally, when we roll out a new version of the .NET Core SDK or Visual Studio, your build might break. For example, if a newer version or feature of the NuGet tool gets shipped with the SDK. To isolate this issue, use the **.NET Core Tool Installer** task to specify the version of the .NET Core SDK that's used in your build.
 
 ## FAQ
 
 ### Q: Where can I learn more about Azure Artifacts and the TFS Package Management service?
 
-A: [Package Management in Azure Artifacts and TFS](../../artifacts/index.yml)
+A: [Package Management in Azure Artifacts](../../artifacts/index.yml)
 
 ### Q: Where can I learn more about .NET Core commands?
 
