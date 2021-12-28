@@ -41,7 +41,7 @@ To change the test case fields in the report, add or remove columns from the lis
 
 Other options include using the REST APIs:
 
-- For test plans, see [Test Plan Clone - Clone Test Plan](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-6.0&preserve-view=true).
+- For test plans, see [Test Plan Clone - Clone Test Plan](/rest/api/azure/devops/testplan/test-plan-clone/clone-test-plan).
 - For test suites, see [Test Suite Clone](/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-6.0&preserve-view=true).
 
 
