@@ -6,47 +6,47 @@ ms.assetid: 61052605-ec85-45ca-b57e-8664cd41c0ea
 ms.author: vijayma
 author: vijayma
 ms.reviewer: dastahel
-ms.custom: seodec18
-ms.date: 08/31/2018
+ms.custom: seodec18, freshness-fy22q2
+ms.date: 12/28/2021
 monikerRange: azure-devops
 ---
 
 # Build and test Ruby apps
 
-**Azure Pipelines**
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 This guidance explains how to automatically build Ruby projects.
 
 ## Get started
 
-Follow these instructions to set up a pipeline for a Ruby app.
+Do the following steps to set up a pipeline for a Ruby app.
 
-1. The code in the following repository is a simple Ruby app. To get started, fork this repo to your GitHub account.
+1. Fork this repo to your GitHub account.
 
     ```
     https://github.com/MicrosoftDocs/pipelines-ruby
     ```
 
-1. Sign in to your Azure DevOps organization and navigate to your project.
+1. Sign in to your Azure DevOps organization and go to your project.
 
-1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+1. Select **Pipelines** > **New pipeline**.
 
-1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+1. Select **GitHub** as the location of your source code.
 
-1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+   You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. When the list of repositories appears, select your Ruby sample repository.
+2. Select your Ruby sample repository.
 
-1. Azure Pipelines will analyze the code in your repository and recommend `Ruby` template for your pipeline. Select that template.
+3. Select the `Ruby` template for your pipeline.
 
-1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
+4. A YAML file gets generated. Select **Save and run** > **Commit directly to the main branch**, and then choose **Save and run** again.
 
-1. A new run is started. Wait for the run to finish.
+5. Wait for the run to finish.
 
-When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
+You have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
 
 > [!TIP]
-> To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+> To make changes to the YAML file as described in this article, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 ## Build environment
 
@@ -103,7 +103,7 @@ To execute Rake in the context of the current bundle (as defined in your Gemfile
 
 The sample code includes unit tests written using [RSpec](https://rspec.info/). When Rake is run by the previous step, it runs the RSpec tests. The RSpec RakeTask in the Rakefile has been configured to produce JUnit style results using the RspecJUnitFormatter. 
 
-Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to publish JUnit style test results to the server. When you do this, you get a rich test reporting experience that can be used for easily troubleshooting any failed tests and for test timing analysis.
+Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to publish JUnit style test results to the server. You get a rich test reporting experience that you can use for troubleshooting any failed tests and for test timing analysis.
 
 ```yaml
 - task: PublishTestResults@2
@@ -112,12 +112,11 @@ Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to pu
     testResultsFiles: '**/test-*.xml'
     testRunTitle: 'Ruby tests'
 ```
-
 ### Publish code coverage results
 
-The sample code uses [SimpleCov](https://github.com/colszowka/simplecov) to collect code coverage data when unit tests are run. SimpleCov is configured to use Cobertura and HTML report formatters. 
+The sample code uses [SimpleCov](https://github.com/colszowka/simplecov) to collect code coverage data when unit tests get run. SimpleCov is configured to use Cobertura and HTML report formatters. 
 
-Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results to the server. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis.
+Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results to the server. When you do so, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis.
 
 ```yaml
 - task: PublishCodeCoverageResults@1
