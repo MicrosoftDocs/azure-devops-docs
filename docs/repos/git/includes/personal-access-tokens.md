@@ -146,7 +146,7 @@ On Windows, you can do something similar in PowerShell:
 
 ```powershell
 $MyPat = 'yourPAT'
-$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("$MyPat"))
+$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(":$MyPat"))
 git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 
