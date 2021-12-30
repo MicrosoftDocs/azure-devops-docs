@@ -79,14 +79,14 @@ You can add virtual machines as resources within [environments](../process/envir
    > - The Personal Access Token (PAT) of the signed in user gets pre-inserted in the script and expires after three hours.
    > - If your VM already has any agent running on it, provide a unique name to register with the environment.
 7.	Once VM is registered, it will start appearing as an environment resource under **Resources**.
-   > [!div class="mx-imgBorder"]
-   > ![VMcreation](media/vm-creation.png)
+
+   :::image type="content" source="media/vm-creation.png" alt-text="VMcreation screenshot.":::
 
 8.	To add more VMs, copy the script again. Select **Add resource** and choose **Virtual Machines**. This script is the same for all the VMs you want to add to the same environment. 
    
    Each machine interacts with Azure Pipelines to coordinate deployment of your app.
-   > [!div class="mx-imgBorder"]
-   > ![VMresource_view](media/vm-resourceview.png)
+
+   :::image type="content" source="media/vm-resourceview.png" alt-text="VMresource view":::
 
 9. You can add or remove tags for the VM. Select on the dots at the end of each VM resource in **Resources**.
    
