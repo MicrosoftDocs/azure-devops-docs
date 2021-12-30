@@ -1,15 +1,15 @@
 ---
 title: Change Azure subscription used for billing
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, contperf-fy21q1
-description: Unlink the Azure subscription that your organization uses for billing
+ms.custom: seodec18, contperf-fy21q1, freshness-fy22q2
+description: Unlink the Azure subscription that your organization uses for billing and go back to free limits immediately.
 ms.technology: devops-billing
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 08/05/2020
+ms.date: 12/30/2021
 ---
 
 # Change or remove your organization's subscription
@@ -22,7 +22,7 @@ Learn how to change the Azure subscription that your Azure DevOps organization u
 
 ## Prerequisites
 
-To change or remove your billing subscription, you need the following:
+To change or remove your billing subscription, have the following permissions:
 
 - [Organization Owner](../security/lookup-organization-owner-admin.md) permissions or be a member of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md)  
 - [Owner or Contributor permission for an Azure subscription](add-backup-billing-managers.md), which you can use to purchase
@@ -61,10 +61,7 @@ To change or remove your billing subscription, you need the following:
 
 1. Sign in to your organization, choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings** > **Billing**, and then **Change billing**, following steps 1 through 4 provided in the [Change the subscription](#change-subscription) section.
 
-2. Choose **Remove billing**, and then choose **Save**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Remove billing](media/change-azure-subscription/remove-billing-highlight.png)  
+2. Choose **Remove billing**, and then choose **Save**. 
 
 ## Related articles
 
