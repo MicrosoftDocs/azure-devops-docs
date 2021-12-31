@@ -455,6 +455,14 @@ Select **Maintenance History** to see the maintenance job history for the curren
 
 The maintenance is done per agent pool, not per machine; so if you have multiple agent pools on a single machine, you may still run into disk space issues.
 
+### The maintenance job of my self-hosted agent pool looks stuck. Why?
+
+Typically, in these situations, the maintenance job is waiting to run on an agent that is no longer in the agent pool. This can happen when the agent has been purposefully taken offline or when there are issues communicating with it.
+
+Maintenance jobs that have been queued to run will wait seven days to run. After this period, they'll be automatically canceled if not run. This limit is hardcoded in the system and cannot be changed. 
+
+The seven-day limit is different from the _maintenance job timeout_ setting. The latter controls the maximum number of minutes an agent can spend doing maintenance. The timer starts when the job starts, not when the job is queued on an agent.
+
 ### I'm trying to create a project agent pool that uses an existing organization agent pool, but the controls are grayed out. Why?
 
 On the 'Create a project agent pool' dialog box, you can't use an existing organization agent pool if it is already referenced by another project agent pool. Each organization agent pool can be referenced by only one project agent pool within a given project collection.
