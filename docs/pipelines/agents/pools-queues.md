@@ -236,7 +236,7 @@ az pipelines pool show --id 4
 }
 ```
 
-You can also use `--output table` which returns the same information as the `list` command.
+You can also use `--output table` that returns the same information as the `list` command.
 
 ```azurecli
 az pipelines pool show --id 4 --output table
@@ -262,7 +262,7 @@ az pipelines queue list [--action {manage, none, use}]
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
 - **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
 - **project** or **p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
-- **queue-name**: Filter the list with matching queue name regex. e.g. *ubuntu* for queue with name 'Hosted Ubuntu 1604'.
+- **queue-name**: Filter the list with matching queue name regex, e.g., *ubuntu* for queue with name 'Hosted Ubuntu 1604'.
 
 #### Example
 
@@ -457,9 +457,9 @@ The maintenance is done per agent pool, not per machine; so if you have multiple
 
 ### The maintenance job of my self-hosted agent pool looks stuck. Why?
 
-Typically, in these situations, the maintenance job is waiting to run on an agent that is no longer in the agent pool. This can happen when the agent has been purposefully taken offline or when there are issues communicating with it.
+Typically, a maintenance job gets "stuck" when it's waiting to run on an agent that is no longer in the agent pool. This happens when, for example, the agent has been purposefully taken offline or when there are issues communicating with it.
 
-Maintenance jobs that have been queued to run will wait seven days to run. After this period, they'll be automatically canceled if not run. This limit is hardcoded in the system and cannot be changed. 
+Maintenance jobs that have been queued to run will wait seven days to run. Afterward, they'll be automatically canceled if not run. The limit is hardcoded in the system and cannot be changed. 
 
 The seven-day limit is different from the _maintenance job timeout_ setting. The latter controls the maximum number of minutes an agent can spend doing maintenance. The timer starts when the job starts, not when the job is queued on an agent.
 
