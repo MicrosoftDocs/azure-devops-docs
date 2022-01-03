@@ -252,8 +252,8 @@ The following table describes the fields that you can use to plan and prioritize
    :::column-end:::
    :::column span="2":::
    The area of customer value addressed by the epic, feature, or backlog item. Values include:
-   - **Architectural—technical services to implement business features that deliver solution
-   - **Business—services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
+   - **Architectural**: technical services to implement business features that deliver solution
+   - **Business**: services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
 
    Reference name=Microsoft.VSTS.Common.ValueArea, Data type=String
    :::column-end:::
