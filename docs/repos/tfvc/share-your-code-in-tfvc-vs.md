@@ -6,14 +6,16 @@ ms.assetid: 108544c0-c29e-4b3b-9a39-4573cf4a71dc
 toc: show
 ms.technology: devops-code-tfvc
 ms.topic: quickstart
-ms.date: 08/10/2016
-monikerRange: '>= tfs-2015'
+ms.date: 12/17/2021
+monikerRange: '<= azure-devops'
 ---
 
 
 # Develop and share your code in TFVC using Visual Studio
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+[!INCLUDE [temp](../includes/version-tfs-2013-cloud.md)]
+[!INCLUDE [temp](../includes/version-vs-2013-vs-2019.md)]
+
 
 Whether your software project is large, small, or brand new, 
 in most cases you'll be better off if you use version control 
@@ -150,14 +152,13 @@ Your whole team can work on the code now. All your changes are tracked in versio
 * [I don't see the Configure Workspace link shown in the steps above. What do I do next?](#i-dont-see-the-configure-workspace-link-shown-in-the-steps-above-what-do-i-do-next)
 
 <a name="migrate"></a>
+
 ### My code is somewhere else. Can I migrate it to my TFVC project on Azure DevOps Services?
 
-Yes:
-
- * [Upgrade From Visual SourceSafe](/previous-versions/visualstudio/visual-studio-2013/ms253060(v=vs.120)).
- * [Migrate from Team Foundation Server into Azure DevOps Services](../../migrate/migrate-from-tfs.md).
+Yes. See [Migrate from Team Foundation Server into Azure DevOps Services](../../migrate/migrate-from-tfs.md).
 
 <a name="workspace_exists"></a>
+
 ### I don't see the Configure Workspace link shown in the steps above. What do I do next?
 
 You might already have a workspace on your computer. To see your workspace, open Source 

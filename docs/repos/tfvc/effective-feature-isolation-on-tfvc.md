@@ -6,7 +6,7 @@ ms.topic: article
 ms.technology: devops-code-tfvc
 ms.date: 04/25/2018
 author: wpschaub
-monikerRange: '>= tfs-2015'
+monikerRange: '<= azure-devops'
 ---
 
 # Explore the feature isolation strategy  
