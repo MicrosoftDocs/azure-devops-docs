@@ -31,8 +31,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root":"docs/pipelines/targets/webapp-on-container-linux.md",
-      "redirect_url":"azure/devops/pipelines/apps/cd/deploy-docker-webapp",
+      "source_path_from_root":"/docs/pipelines/targets/webapp-on-container-linux.md",
+      "redirect_url":"/azure/devops/pipelines/apps/cd/deploy-docker-webapp",
       "redirect_document_id": false
     }
   ]
