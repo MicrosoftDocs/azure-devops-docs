@@ -106,6 +106,11 @@ so that node_modules are built each time and don't need to be checked in.
 echo node_modules > .gitignore
 ```
 
+```
+npm install sync-request --save-dev
+npm install @types/mocha --save-dev
+```
+
 #### Choose typescript version
 
 Tasks can use typescript versions 2.3.4 or 4.0.2. 
