@@ -138,8 +138,7 @@ To complete this section successfully, you must have an [Azure Container Registr
 
 # [YAML](#tab/yaml/)
 
-Deploy to an Azure App custom container with the [Azure Web App for Container task](../tasks/deploy/azure-rm-web-app-containers.md). 
-
+Deploy to an Azure App custom container with the [Azure Web App for Container task](../../tasks/deploy/azure-rm-web-app-containers.md)
 ```yaml
 
 trigger:
@@ -275,4 +274,4 @@ Use the option **Deploy to Slot** in the **Azure Web App Container** task to spe
 
 App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to **Container settings** from the web app and update the **Image source, Registry** and save.
 
-![Screenshot showing Update image source and Registry in container settings.](media/webapp-linux/container-settings.png)
+![Screenshot showing Update image source and Registry in container settings.](../../targets/media/webapp-linux/container-settings.png)
