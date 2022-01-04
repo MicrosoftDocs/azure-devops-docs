@@ -85,7 +85,6 @@ Welcome to what's new in the Azure DevOps docs from December 1, 2021 through Dec
 Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+is%3Aissue+is%3Aclosed+closed%3A2021-12-01..2021-12-31).
 
 - [Included Software links are broken for Ubuntu #11771](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11771)
-- [Page still uses previous default branch name as example branch name #11767](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11767)
 - [Feedback on Note #11725](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11725)
 - [Typo XAML => YAML #11718](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11718)
 - [Section missing for a link on page for UNC tip #11697](https://github.com/MicrosoftDocs/azure-devops-docs/issues/11697)
