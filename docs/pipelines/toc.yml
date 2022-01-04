@@ -381,16 +381,14 @@
       items:
         - name: App Service
           href: targets/webapp.md
-        - name: Custom containers with Azure App Service
-          href: targets/webapp-on-container-linux.md
+        - name: Azure Web App for Containers
+          href: apps/cd/deploy-docker-webapp.md
+          displayName: containers, docker, azure web app
         - name: Visual Studio Code Deploy to Azure extension
           href: targets/deploy-to-azure-vscode.md
         - name: Azure Web App (Classic)
           href: apps/cd/deploy-webdeploy-webapps.md
           displayName: web app, webdeploy
-        - name: Azure Web App for Containers (Classic)
-          href: apps/cd/deploy-docker-webapp.md
-          displayName: containers, docker, azure web app
     - name: Azure Resource Manager (ARM) templates
       items:
         - name: Use a Resource Manager template to deploy
