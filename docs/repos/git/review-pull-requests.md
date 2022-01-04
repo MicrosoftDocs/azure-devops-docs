@@ -145,6 +145,7 @@ Add comments to a PR to make suggestions, reply to previous comments, and point 
 - Address the author or other reviewers directly in your comments by using `@username`, and reference work items by using `#workitemID`. You can also reference other PRs by using `!pullrequestID`.
 
 ::: moniker range="azure-devops"
+
 ### Suggest changes
 
 To suggest changes directly, select the lightbulb icon in the comment interface, make your suggested changes in the code, and then select **Comment**.
@@ -165,6 +166,7 @@ To like your own or someone else's comment, hover over the comment and select th
 ::: moniker-end
 
 ::: moniker range=">=tfs-2018 <=azure-devops-2019"
+
 ## Like a comment
 
 To like a comment that you or someone else made, select the heart icon. Hover over the icon in comments to see the list of people who liked the comment.
@@ -172,6 +174,7 @@ To like a comment that you or someone else made, select the heart icon. Hover ov
 ::: moniker-end
 
 ::: moniker range=">=tfs-2018"
+
 ## Filter comments
 
 You can select which comments and updates show on the **Overview** page. Hiding some comments and updates gets them out of the way when reviewing code for the first time. You can also show only what's new since the last time you visited the PR.
@@ -181,6 +184,9 @@ To filter comments and updates, select the **Show everything (n)** button above 
 ![Screenshot showing the options to filter the comment list in a P R.](./media/review-pull-requests/filter-comments.png)
 
 ::: moniker-end
+
+<a id="set-vote" />
+
 
 ## Vote on changes
 
@@ -255,6 +261,8 @@ Jamal Hartnett  jamalh@fabrikam.com  00000000-0000-0000-0000-000000000000  Appro
 
 ***
 
+<a id="reset-vote" />
+
 
 ## Reset feedback
 
@@ -301,6 +309,7 @@ Jamal Hartnett  jamalh@fabrikam.com  00000000-0000-0000-0000-000000000000       
 
 
 <a name="complete-the-pull-request"></a>
+
 ## Address comments
 
 ::: moniker range="azure-devops"
@@ -357,5 +366,6 @@ To keep track of files that have already been reviewed, select **More options** 
 > [Complete the pull request](complete-pull-requests.md)
  
 ## Related articles
+
 - [Pull request update notifications](pull-request-notifications.md)
 - [About pull requests and permissions](about-pull-requests.md)
