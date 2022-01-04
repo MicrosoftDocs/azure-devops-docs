@@ -5,7 +5,7 @@ ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
 ms.custom: seodec18
 ms.date: 01/04/2022
-monikerRange: '> tfs-2018'
+monikerRange: '> tfs-2017'
 "recommendations": "true"
 ---
 
@@ -138,8 +138,6 @@ To complete this section successfully, you must have an [Azure Container Registr
 
 # [YAML](#tab/yaml/)
 
-::: moniker range=">= azure-devops-2019"
-
 Deploy to an Azure App custom container with the [Azure Web App for Container task](../tasks/deploy/azure-rm-web-app-containers.md). 
 
 ```yaml
@@ -193,13 +191,6 @@ stages:
 
 The **Azure Web App on Container** task will pull the appropriate Docker image corresponding to the BuildId from the repository specified, and then deploy the image to your Azure App Service on Linux.
 
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-YAML pipelines aren't available on TFS.
-
-::: moniker-end
 
 # [Classic](#tab/classic/)
 The simplest way to deploy to an Azure Web App Container is to use the **Azure Web App On Container Deploy** task.
@@ -212,7 +203,6 @@ Templates exist for apps developed in various programming languages. If you can'
 
 # [YAML](#tab/yaml/)
 
-::: moniker range=">= azure-devops"
 
 You can configure the Azure Web App container to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 
@@ -236,13 +226,6 @@ The following YAML snippet shows how to deploy to a staging slot, and then swap 
     SourceSlot: staging
     SwapWithProduction: true
 ```
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-YAML pipelines aren't available on TFS.
-
-::: moniker-end
 
 # [Classic](#tab/classic/)
 
