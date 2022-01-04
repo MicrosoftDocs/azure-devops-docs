@@ -3,6 +3,7 @@ title: Add a build or release task in an extension
 description: Add a custom build or release task in an extension for Azure DevOps.
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.technology: devops-ecosystem
+ms.custom: freshness-fy22q3
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
@@ -92,24 +93,26 @@ npm install azure-pipelines-task-lib --save
 
 #### Add typings for external dependencies
 
-Ensure that TypeScript typings are installed for external dependencies.
+- Ensure that TypeScript typings are installed for external dependencies.
 
-```
-npm install @types/node --save-dev
-npm install @types/q --save-dev
-```
+   ```
+   npm install @types/node --save-dev
+   npm install @types/q --save-dev
+   ```
 
-Create a `.gitignore` file and add node_modules to it. Your build process should do an `npm install` and a `typings install`
-so that node_modules are built each time and don't need to be checked in.
+- Create a `.gitignore` file and add node_modules to it. Your build process should do an `npm install` and a `typings install` so that node_modules are built each time and don't need to be checked in.
 
-```
-echo node_modules > .gitignore
-```
+   ```
+   echo node_modules > .gitignore
+   ```
 
-```
-npm install sync-request --save-dev
-npm install @types/mocha --save-dev
-```
+- Install Mocha as a development dependency:
+
+   ```
+   npm install mocha --save-dev -g
+   npm install sync-request --save-dev
+   npm install @types/mocha --save-dev
+   ```
 
 #### Choose typescript version
 
@@ -196,7 +199,7 @@ Following are descriptions of some of the components of the `task.json` file:
 | `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
 | `execution`          | Execution options for this task, including scripts.                                                                         
-| `restrictions`       | Restrictions being applied to the task regarding [vso commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. It is recommended to specify restriction mode for new tasks. See [How can I restrict vso commands usage for task](#how-can-i-restrict-vso-commands-usage-for-task) for more details.|
+| `restrictions`       | Restrictions being applied to the task about [vso commands](../../pipelines/scripts/logging-commands.md) task can call, and variables task can set. We recommend that you specify restriction mode for new tasks. For more information, see [How can I restrict vso commands usage for task?](#how-can-i-restrict-vso-commands-usage-for-task)|
 |
 
 >[!NOTE]
@@ -269,8 +272,7 @@ This time, the task succeeded because `samplestring` was supplied, and it correc
 
 ## Step 2: Unit test your task scripts
 
-The goal of unit testing is to quickly test the task script, not the external tools it's calling. We want to test all aspects
-of both success and failure paths.
+We unit test to quickly test the task script, and not the external tools that it's calling. We want to test all aspects of both success and failure paths.
 
 ### Install test tools
 
@@ -761,8 +763,9 @@ To package and publish Azure DevOps Extensions to the Visual Studio Marketplace,
 ## FAQ
 
 ## How can I restrict vso commands usage for task?
-You can restrict vso commands usage and variables which can be set by task.
-This could be useful to prevent unrestricted access to variables/vso commands for custom scripts which task executes. It is recommended to set it up for new tasks.
+
+You can restrict vso commands usage and variables, which can be set by task.
+This action could be useful to prevent unrestricted access to variables/vso commands for custom scripts which task executes. We recommend that you set it up for new tasks.
 To apply - you may need to add the following statement to your task.json file:
 
 ```json
@@ -776,7 +779,8 @@ To apply - you may need to add the following statement to your task.json file:
 }
 ```
 
-If "restricted" value is specified for "mode" - only the following commands are allowed to be executed by task:
+If "restricted" value is specified for "mode" - you can only execute the following commands by the task:
+
 - `logdetail`
 - `logissue`
 - `complete`
@@ -788,9 +792,9 @@ If "restricted" value is specified for "mode" - only the following commands are 
 - `prependpath`
 - `publish`
 
-"settableVariables" restrictions allow you to pass in an allowlist of variables which can be set by `setvariable` or `prependpath` commands. It allows basic regular expressions as well. So for example, if your allowlist was: ['abc', 'test*'], setting abc, test, or test1 as variables with any value or prepending them to the path would succeed, but if you try to set a variable proxy it would warn. Empty list means that no variables are allowed to be changed by task.
+"settableVariables" restrictions allow you to pass in an allowlist of variables, which can be set by `setvariable` or `prependpath` commands. It allows basic regular expressions as well. So for example, if your allowlist was: ['abc', 'test*'], setting abc, test, or test1 as variables with any value or prepending them to the path would succeed, but if you try to set a variable proxy it would warn. Empty list means that no variables can be changed by task.
 
-"commands" and "settableVariables" are orthogonal - if either the settableVariables or commands key are omitted - relevant restriction is not applied.
+"commands" and "settableVariables" are orthogonal - if either the settableVariables or commands key are omitted - relevant restriction isn't applied.
 
 Restriction feature is available from [2.182.1](https://github.com/microsoft/azure-pipelines-agent/releases/tag/v2.182.1) agent version.
 
