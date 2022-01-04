@@ -9,13 +9,13 @@ ms.manager: mijacobs
 ms.author: kaelli  
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 10/26/2021
+ms.date: 01/04/2022
 ---
 
 # Index to az devops examples 
 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
 Use this index to quickly access examples that showcase use of command line tools.  For a list of commands that support Azure DevOps operations, see the following Azure CLI reference articles: 
 - [az artifacts](/cli/azure/azure-cli-reference-for-devops#azure-artifacts)

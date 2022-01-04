@@ -1,5 +1,5 @@
 ---
-title: Tools and clients that connect - Azure DevOps
+title: Tools and clients that connect to zure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Understand the tools that support connecting to Azure DevOps. 
@@ -102,8 +102,8 @@ The following clients support specific tasks, such as managing testing efforts, 
 
 ::: moniker range="= tfs-2017" 
 
->[!IMPORTANT]
->Test Manager is deprecated for TFS 2017.  
+> [!IMPORTANT]
+> Test Manager is deprecated for TFS 2017.  
 
 ::: moniker-end
 
@@ -129,29 +129,57 @@ For more information, see [Web portal navigation](../project/navigation/index.md
 
 ### Browser-based extensions
 
-The following extensions are available and are built and maintained by the Azure DevOps Services product team:
+Several extensions are built and maintained by the Azure DevOps Services product team:
 
 - [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increase cross-team collaboration and code sharing. Enables developers to quickly locate relevant information within the code base of all projects that are hosted within an organization or collection. You can discover implementation examples, browsing definitions, and error text.
 - [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): To quickly find relevant work items, search across all work item fields over all projects in an organization. Do full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, to quickly narrow down a list of work items.  
   
-Find more extensions in Azure DevOps **Organization settings** > **Extensions** > **Browse marketplace**.
+Find more extensions in Azure DevOps **Organization settings** > **Extensions** > **Browse marketplace**. See also, [Overview of extensions for Azure Boards](../boards/extensions/index.md).
 
 ## Command-line tools
 
 You can do many code development and administrative tasks by using the following command-line tools:
 
+::: moniker range=">= azure-devops-2020"
+
+- [az cli](../cli/quick-reference.md)
 - [Git commands](../repos/git/command-prompt.md)
 - [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md)
+- [TCM commands](../test/copy-clone-test-items.md)
 
-::: moniker range=">= tfs-2013 < azure-devops"
+::: moniker-end
 
+::: moniker range="< azure-devops-2020"
+
+- [Git commands](../repos/git/command-prompt.md)
+- [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md)
+- [TCM commands](../test/copy-clone-test-items.md)
+- [witadmin (work item tracking)](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 - [TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)
 - [TFSDeleteProject](/azure/devops/server/command-line/tfsdeleteproject-cmd)
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
 - [TFSServiceControl](/azure/devops/server/command-line/tfsservicecontrol-cmd)
-- [witadmin (work item tracking)](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+
 
 ::: moniker-end
+
+## Integrated tools to monitor and get notifications with third party applications
+
+The following tools provide support for monitoring and interacting with Azure DevOps from a third-party application. 
+
+- **Azure Boards**: 
+	- [Use the Azure Boards app with Slack to manage work items](../boards/integrations/boards-slack.md)
+	- [Use the Azure Boards app in Microsoft Teams](../boards/integrations/boards-teams.md)
+
+- **Azure Repos**: 
+	- [Azure Repos with Slack](../repos/integrations/repos-slack.md)
+	- [Azure Repos with Microsoft Teams](../repos/integrations/repos-teams.md)
+
+- **Azure Pipelines**: 
+	- [Use Azure Pipelines with Microsoft Teams](../pipelines/integrations/microsoft-teams.md)
+	- [Azure Pipelines with Slack](../pipelines/integrations/slack.md)
+	- [Integrate with ServiceNow change management](../pipelines/release/approvals/servicenow.md)
+	- [Continuously deploy from a Jenkins build](../pipelines/release/integrate-jenkins-pipelines-cicd.md)
 
 ## Marketplace extensions
 
