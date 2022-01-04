@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/04/2021
+date: 01/03/2022
 ---
 
 # Add a custom pipelines task extension
@@ -15,11 +15,12 @@ ms.date: 03/04/2021
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
 Learn how to install extensions to your organization for custom build or release tasks in Azure DevOps.
+
 These tasks appear next to Microsoft-provided tasks in the **Add Step** wizard.
 
 ![Screenshot of Build task catalog for extensions in Azure DevOps.](media/build-task-ext-choose-task.png)
 
-To learn more about the new cross-platform build/release system, see [What is Azure Pipelines?](../../pipelines/get-started/what-is-azure-pipelines.md).
+For more information about the new cross-platform build/release system, see [What is Azure Pipelines?](../../pipelines/get-started/what-is-azure-pipelines.md).
 
 > [!NOTE]
 > This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, check out the [Server Task GitHub Documentation](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md).
@@ -637,7 +638,7 @@ stages:
               connectTo: 'VsTeam'
               connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
               fileType: 'vsix'
-              vsixFile: '/Publisher.*.vsix'
+              vsixFile: '$(PublisherID).$(ExtensionName)/$(PublisherID)..vsix'
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               extensionName: '$(ExtensionName)'
