@@ -29,6 +29,11 @@
       "source_path_from_root":"/docs/pipelines/targets/function-app-container.md",
       "redirect_url":"/azure/devops/pipelines/targets/azure-functions#deploy-a-container",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root":"docs/pipelines/targets/webapp-on-container-linux.md",
+      "redirect_url":"azure/devops/pipelines/apps/cd/deploy-docker-webapp",
+      "redirect_document_id": false
     }
   ]
 }
