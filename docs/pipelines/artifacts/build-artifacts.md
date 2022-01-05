@@ -251,7 +251,7 @@ YAML is not supported in TFS.
 
 * Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.  
 
-* You can [get build artifacts](/rest/api/vsts/build/artifacts) using the Azure DevOps REST API.
+* You can [get build artifacts](/rest/api/azure/devops/build/artifacts) using the Azure DevOps REST API.
 
 ## Related tasks for publishing artifacts
 
