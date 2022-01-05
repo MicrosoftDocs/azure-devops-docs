@@ -119,7 +119,7 @@ To get added as a team administrator, ask another team administrator or a member
    
 ::: moniker-end     
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+monikerRange: '<= tfs-2015'
 
 1. From the web portal, select your project, and then select **Administration settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open the administration page.
 
@@ -177,7 +177,7 @@ From the Administrators section, choose ![delete icon](../../media/icons/delete-
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 < azure-devops-2019"
+::: moniker range="< azure-devops-2019" 
 
 From the Administrators section, choose ![delete icon](../../media/icons/delete-icon.png) for the user that you want to remove as a team administrator. 
 

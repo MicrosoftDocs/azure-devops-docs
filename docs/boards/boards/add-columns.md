@@ -32,7 +32,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 > If you want to add columns to a sprint taskboard, see [Customize a taskboard](../sprints/customize-taskboard.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 > [!NOTE]    
 > If you want to add columns to a taskboard, you need to customize the workflow. For details, see [Add or modify a work item type](../../reference/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
@@ -438,7 +438,7 @@ Your Kanban board is one of several tools that you have for tracking work. The [
 But what if you want to list items based on their Kanban column assignment? Can you do that? Yes, you can track column moves on a Kanban board by using the [Board Column and Board Column Done fields](../queries/query-by-workflow-changes.md#kanban_query_fields).
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 But what if you want to list items based on their Kanban column assignment? Can you do that? You can if you're using Team Foundation Server 2015 Update 1 or a later version. You can't if you work from Team Foundation Server 2015 or earlier versions. You track column moves on a Kanban board by using the [Board Column and Board Column Done fields](../queries/query-by-workflow-changes.md#kanban_query_fields).  
 
  

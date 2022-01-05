@@ -62,7 +62,7 @@ Access to the following tasks are controlled by each user's access level or by p
 You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md). 
 
 <!---
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range="<= tfs-2018"  
 > [!NOTE]  
 > There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).   
 ::: moniker-end  
@@ -140,19 +140,15 @@ You can use [Git repositories](../../repos/git/index.yml) to host and collaborat
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
 
 ### TFVC
 
-::: moniker-end
 
-::: moniker range=">= tfs-2013"
 
 [Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml) provides a centralized version control system to manage your source control. 
 
 [!INCLUDE [temp](includes/code-tfvc.md)]
 
-::: moniker-end
 
 <a id="pipelines" />
 
