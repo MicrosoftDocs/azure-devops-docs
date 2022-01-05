@@ -37,7 +37,14 @@ Then you can:
 * [Run tests with each of the configurations](#run-configs)
 * [Track your test results for each configuration](#track-configs)
 
-[!INCLUDE [prerequisites-define](includes/prerequisites-define.md)]
+## Prerequisites
+
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/user-guide/sign-up-invite-teammates).
+- You must be added to a project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
+- To view or add test configurations, you must have **Basic** access or higher.
+- To add test configurations, you must have the project-level **Manage test configurations** permission set to **Allow**. By default, this permission is granted to members of the Contributors and Project Administrator groups.
+
+To learn more, see [Manual test access and permissions](/azure/devops/test/manual-test-permissions).
 
 [!INCLUDE [prerequisites-define](includes/prerequisites-tcm.md)]
 
