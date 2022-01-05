@@ -45,6 +45,14 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 > |-------------|----------|
 > |<img src="../organizations/projects/media/te-home-page-git-repo.png" title="Team Explorer home page with GiZit as source control" alt="Team Explorer home page with Git as source control" /> | <img src="../organizations/projects/media/te-home-page-tfvc-repo.png" title="Team Explorer home page with Team Foundation Version Control (TFVC) as source control" alt="Team Explorer home page with Team Foundation Version Control (TFVC) as source control" /> |
 
+
+**Visual Studio Git experience**  
+
+Visual Studio 2019 and later versions provide a new Git experience through the **Git** menu as shown below. To learn more, see [Git experience in Visual Studio](/visualstudio/version-control/git-with-visual-studio) and [Side-by-side comparison of Git and Team Explorer](/visualstudio/version-control/git-team-explorer-feature-comparison).  
+
+:::image type="content" source="media/tools/visual-studio-git-menu.png" alt-text="Screenshot of Visual Studio 2019 Git menu.":::
+
+
 ## Office integration tools
 
 ::: moniker range="= azure-devops"
@@ -163,7 +171,7 @@ You can do many code development and administrative tasks by using the following
 
 ::: moniker-end
 
-## Integrated tools to monitor and get notifications with third party applications
+## Integrated tools with third party applications
 
 The following tools provide support for monitoring and interacting with Azure DevOps from a third-party application. 
 
@@ -195,7 +203,7 @@ To learn more, visit the [Azure DevOps Marketplace](https://marketplace.visualst
  
 The Azure DevOps APIs are based on REST, OAuth, JSON, and service hooks&mdash;all standard web technologies broadly supported in the industry.
 
-REST APIs are provided to support building extensions to Azure DevOps. To learn more, see [REST API overview](/rest/api/vsts/).
+REST APIs are provided to support building extensions to Azure DevOps. To learn more, see [REST API overview](/rest/api/azure/devops).
 
 ## Related articles
 
