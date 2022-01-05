@@ -1,5 +1,5 @@
 ---
-title: Tools and clients that connect to zure DevOps
+title: Tools and clients that connect to Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Understand the tools that support connecting to Azure DevOps. 
@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 10/18/2021
+ms.date: 01/04/2022
 ---
 
 
@@ -150,7 +150,7 @@ You can do many code development and administrative tasks by using the following
 
 ::: moniker range=">= azure-devops-2020"
 
-- [az cli](../cli/quick-reference.md)
+- [az devops commands](../cli/quick-reference.md)
 - [Git commands](../repos/git/command-prompt.md)
 - [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md)
 - [TCM commands](../test/copy-clone-test-items.md)
@@ -171,7 +171,7 @@ You can do many code development and administrative tasks by using the following
 
 ::: moniker-end
 
-## Integrated tools with third party applications
+## Integrated tool support for third-party applications
 
 The following tools provide support for monitoring and interacting with Azure DevOps from a third-party application. 
 
