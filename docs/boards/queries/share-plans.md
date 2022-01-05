@@ -27,7 +27,7 @@ Other ways to share information include using dashboards, README files, and proj
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2017"
+::: moniker range="<= tfs-2017"
 
 Other ways to share information include using dashboards, and SharePoint portals. 
 
@@ -65,7 +65,7 @@ To convey detailed information, you can format text and insert images inline wit
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 - *Acceptance Criteria* 
 - *Description* 
@@ -237,7 +237,7 @@ You can edit, open, save, or delete an attachment by choosing an attachment and 
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 Choose the **Attachments** tab icon to attach a file to the work item. 
 

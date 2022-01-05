@@ -39,7 +39,7 @@ You can use either the web portal or Team Explorer to view the history of a work
 ![Screenshot of Query Editor to Search for items based on words contained in the History field.](media/hist-audit-query-ts-bt.png)
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 ![Screenshot of Query Editor to Search for items based on words contained in the History field, earlier versions.](media/ALM_HA_HistoryQuery.png) 
 ::: moniker-end
 
@@ -65,7 +65,7 @@ The **Query Editor** isn't available when you're connected to a GitHub or third-
 You use the query editor to add the **History** field to a [query clause](using-queries.md). Comments entered into the **Discussion** area are queryable. Change history entries, such as which fields were changed, aren't queryable. To quickly find items based on words entered into the Discussion area, or **Description** or other rich-text fields, consider using [work item search](../../project/search/functional-work-item-search.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 You use the query editor to add the **History** field to a [query clause](using-queries.md). Comments entered into the **History** field are queryable. Change history entries, such as which fields were changed, aren't queryable.
 ::: moniker-end
 
@@ -176,7 +176,7 @@ Choose an entry in the left pane to view the details of changes made.
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 To view only the comments that were added to the log, choose the **Discussion Only** tab. To view all changes made to the item, choose the **All Changes** tab, and then choose the **show all changes** link for a specific date and time.  
 

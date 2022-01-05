@@ -72,7 +72,7 @@ From a user context, open **Server Settings** by choosing the :::image type="ico
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+monikerRange: '<= tfs-2015'
 
 - From the web portal home page for a project (for example, `http://MyServer:8080/tfs/DefaultCollection/MyProject/`), open administration settings.
 
@@ -126,7 +126,7 @@ Changes you make to the access level settings take affect immediately. You can a
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+monikerRange: '<= tfs-2015'
 
 1. From the Access levels page, select the access level you want to manage. For example, here we add a group to Stakeholder access.
 

@@ -8,7 +8,7 @@ toc: show
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/02/2017
-monikerRange: '>= tfs-2013 <= tfs-2017'
+monikerRange: '<= tfs-2017'
 ---
 
 # Set SharePoint site permissions

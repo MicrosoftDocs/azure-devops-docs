@@ -107,7 +107,7 @@ To create or list projects, see [Create a project](create-project.md)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+monikerRange: '<= tfs-2015'
 
 1. Choose the name of the server.
 
@@ -238,7 +238,7 @@ You can configure and customize most services and applications to support your b
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 - **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
 - **Source control**: For each [Git repository](../../repos/git/index.yml), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).

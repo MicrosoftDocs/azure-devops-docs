@@ -229,7 +229,7 @@ Templates captured through the web portal are assigned a GUID.
 
 <a id="tfs-portal-capture" /> 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range="<= tfs-2015"  
 
 If you connect to an on-premises TFS and primarily create work items working in the web portal, you can create a hyperlink that captures the default values you specify for a template. Choose the hyperlink, and it opens the template in the web portal. 
 

@@ -7,7 +7,7 @@ ms.custom: process
 ms.assetid: eb87afdf-66f4-4607-94c9-3909fd208079
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2015'
+monikerRange: '<= tfs-2015'
 ms.date: 06/16/2017
 ---
 
