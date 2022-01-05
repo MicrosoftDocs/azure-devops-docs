@@ -144,6 +144,7 @@ a6e4380e-9f38-4aa5-863c-0fc496027362  Work item linking                         
 
 
 <a name="complete-the-pull-request"></a>
+
 ## Complete a pull request
 
 After you resolve any merge conflicts, and the PR meets all branch policies and has all required approvals, you can complete the PR.
@@ -274,6 +275,8 @@ For example, to complete PR #21, use:
 az repos pr update --id 21 --status completed
 ```
 
+<a id="set-completion-options" /> 
+
 ### Set completion options
 
 You can set PR completion options when you [create a PR](pull-requests.md#create-a-pull-request) with `az repos pr create`, or update creation options in existing PRs with `az repos pr update`. 
@@ -376,6 +379,7 @@ File changes in your branch can conflict with changes in another branch. When it
 ::: moniker-end
 
 <a name="complete-automatically"></a>
+
 ## Set a pull request to autocomplete
 
 # [Browser](#tab/browser)
@@ -468,6 +472,7 @@ To abandon a PR without merging the changes, use `az repos pr update --id <PR Id
 
 ::: moniker range=">= tfs-2017"
 <a name="revert-a-completed-pr"></a>
+
 ## Revert a completed pull request
 
 To undo the changes from a PR, follow these steps. For more information, see [Undo changes](undo.md).

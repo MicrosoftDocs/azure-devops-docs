@@ -9,13 +9,13 @@ ms.manager: mijacobs
 ms.author: kaelli  
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 10/26/2021
+ms.date: 01/04/2022
 ---
 
 # Index to az devops examples 
 
 
-[!INCLUDE [temp](../includes/version-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
 Use this index to quickly access examples that showcase use of command line tools.  For a list of commands that support Azure DevOps operations, see the following Azure CLI reference articles: 
 - [az artifacts](/cli/azure/azure-cli-reference-for-devops#azure-artifacts)
@@ -152,33 +152,48 @@ Use this index to quickly access examples that showcase use of command line tool
 
 :::row:::
    :::column span="1":::
-      #### Create and manage repositories  
-      - [Create a Git repository](../repos/git/share-your-code-in-git-cmdline.md)
-      - [Import Git repositories](/cli/azure/repos/import)
+      #### Create and manage Git repositories  
+      - [Create a repository](../repos/git/share-your-code-in-git-cmdline.md)
+      - [Delete a repository](../repos/git/share-your-code-in-git-cmdline.md)
+      - [Import a repository](/cli/azure/repos/import)
       - [List repositories](../repos/git/repository-settings.md)
-      #### Manage policies
-      - [List policies](../repos/git/repository-settings.md#repos-policy-list)
-      - [Show policy](../repos/git/repository-settings.md#show-policy)
-      - [Manage branch policies](/cli/azure/repos/policy)
-      - [Manage approver count policy](/cli/azure/repos/policy/approver-count)
-      - [Manage build policies](/cli/azure/repos/policy/build)
+      - [Show repository details](/cli/azure/repos#az_repos_show)
+      - [Update a repository](/cli/azure/repos#az_repos_update)
+      #### Manage repository policies
+      - [List repository policies](../repos/git/repository-settings.md#repos-policy-list)
+      - [Show repository policies](../repos/git/repository-settings.md#show-policy)
       - [Manage case enforcement policy](../repos/git/repository-settings.md#create-case-enforcement-policy)
-      - [Manage file size policy](../repos/git/repository-settings.md#create-file-size-policy)
-      - [Manage comment-required policy](/cli/azure/repos/policy/comment-required) 
-      - [Manage merge strategy policy](/cli/azure/repos/policy/merge-strategy)
-      - [Manage required reviewer policy](/cli/azure/repos/policy/required-reviewer)
+      - [Manage file size policy](../repos/git/repository-settings.md#create-file-size-policy)  
+      - [Update repository policy](../repos/git/repository-settings.md#update-policy)
+      #### Manage branch policies
+      - [List branch policies](../repos/git/branch-policies.md#configure-branch-policies)
+      - [Show branch policy](../repos/git/branch-policies.md#show-details-of-a-policy)
+      - [Create policies using a configurate file](/cli/azure/repos/policy#az_repos_policy_create)
+      - [Update policies using a configurate file](/cli/azure/repos/policy*az_repos_policy_update)
+      - [Manage required reviewer policy](../repos/git/branch-policies.md#require_reviewers)
+      - [Manage external required reviewer policies](../repos/git/branch-policies.md#require-approval-from-external-services)
+      - [Manage build validation policies](../repos/git/branch-policies.md#build-validation)
+      - [Manage comment-required policy](../repos/git/branch-policies.md#check-comment-resolution) 
+      - [Manage merge strategy policy](../repos/git/branch-policies.md#limit-merge-types) 
       - [Create work item linking policy](../repos/git/branch-policies.md#create-wi-policy)
       - [Update work item linking policy](../repos/git/branch-policies.md#update-wi-policy)
-
    :::column-end:::
    :::column span="1":::
       #### Pull requests
-      - [Complete or update a pull request](../repos/git/complete-pull-requests.md#complete-the-pull-request)
-      - [Abandon a pull request](../repos/git/complete-pull-requests.md#abandon-pr)
-      - [Create a pull request](../repos/git/pull-requests.md#create-pr)
+      - [Create a pull request](../repos/git/pull-requests.md#create-a-new-pull-request) 
       - [Create a draft pull request](../repos/git/pull-requests.md#draft-pull-requests)
       - [Edit a pull request, add details](../repos/git/pull-requests.md#add-details-pr)
-      - [Manage work items associated with a pull request](../repos/git/pull-requests.md#link-work-items-pr)
+      - [Add reviewers to a pull request](../repos/git/pull-requests.md#add-and-remove-reviewers) 
+      - [Link work items to a pull request](../repos/git/pull-requests.md#link-work-items)  
+      - [List pull requests](../repos/git/view-pull-requests.md#list-pull-requests)
+      - [Define a custom pull request view](../repos/git/view-pull-requests.md#define-custom-pr-view)
+      - [Show pull request details](../repos/git/view-pull-requests.md#open-pr)
+      - [Set vote on a pull request](../repos/git/review-pull-requests.md#set-vote)
+      - [Reset vote on a pull request](../repos/git/review-pull-requests.md#reset-vote)
+      - [Complete or update a pull request](../repos/git/complete-pull-requests.md#complete-the-pull-request)
+      - [Set pull request completion options](../repos/git/complete-pull-requests.md#set-completion-options)
+      - [Set pull request to autocomplete](../repos/git/complete-pull-requests.md#complete-automatically)
+      - [Abandon a pull request](../repos/git/complete-pull-requests.md#abandon-pr)
       - [Manage pull request policies](/cli/azure/repos//pr/policy)
       - [Manage pull request reviewers](/cli/azure/repos/pr/reviewer)
       #### Import and manage references
@@ -219,7 +234,7 @@ Use this index to quickly access examples that showcase use of command line tool
       - [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)    
       - [Delete a wiki](../project/wiki/manage-wikis.md#delete-a-wiki)  
       - [List all the wikis](../project/wiki/manage-wikis.md#list-wikis)  
-      - [Show details of a wiki](../project/wiki/manage-wikis.md#show-wiki) 
+      - [Show details of a wiki](../project/wiki/manage-wikis.md#show-wiki)  
    :::column-end:::
 :::row-end:::
 
@@ -227,23 +242,29 @@ Use this index to quickly access examples that showcase use of command line tool
 ## Security groups and permissions  
 
 - [Add a member to a security group](../organizations/security/add-manage-security-groups.md)
-- [Assign allow or deny permission to specified user or group](../organizations/security/manage-tokens-namespaces.md)
-- [Clear all permissions of this token for a user or group](../organizations/security/manage-tokens-namespaces.md)
-- [Create a security group](../organizations/security/add-manage-security-groups.md)
-- [Delete a security group](../organizations/security/add-manage-security-groups.md)<br/>
+- [Assign allow or deny permission to specified user or group](../organizations/security/manage-tokens-namespaces.md) 
+- [Clear all permissions of this token for a user or group](../organizations/security/manage-tokens-namespaces.md) 
+- [Create a security group](../organizations/security/add-manage-security-groups.md)  
+- [Delete a security group](../organizations/security/add-manage-security-groups.md)  
 - [List tokens for specified user or group and namespace](../organizations/security/manage-tokens-namespaces.md)
 - [List all available namespaces for an organization](../organizations/security/manage-tokens-namespaces.md)
 - [List security groups](../organizations/security/add-manage-security-groups.md)
-- [List the memberships for a group or user](../organizations/security/add-manage-security-groups.md)<br/>
-- [Remove a member from a security group](../organizations/security/add-manage-security-groups.md)
+- [List the memberships for a group or user](../organizations/security/add-manage-security-groups.md)  
+- [Remove a member from a security group](../organizations/security/add-manage-security-groups.md)  
 - [Reset permission for specified permission bit(s)](../organizations/security/manage-tokens-namespaces.md)
 - [Show details of a security group](../organizations/security/add-manage-security-groups.md)
 - [Show details of permissions available in each namespace](../organizations/security/manage-tokens-namespaces.md)
 - [Show permissions for specified token, namespace and user or group](../organizations/security/manage-tokens-namespaces.md)
-- [Update a security group](../organizations/security/add-manage-security-groups.md)
+- [Update a security group](../organizations/security/add-manage-security-groups.md) 
 
 ## Service endpoints
 
 - [Create a GitHub service endpoint](service-endpoint.md)
 - [Create an Azure RM service endpoint](service-endpoint.md)
 - [Create service endpoint using a configuration file](service-endpoint.md)
+
+
+
+## Related articles
+ 
+- [Cross-service integration overview](../cross-service/cross-service-overview.md)
