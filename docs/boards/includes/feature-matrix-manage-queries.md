@@ -37,7 +37,7 @@ The following features provide support for working with query results, saving an
       - [Import/export a query (.wiq)](../queries/query-support-integration-cross-service-extensions.md#wiql)  
       - [Open and run a query](../queries/view-run-query.md)  
       - [Publish/refresh a query (Excel)](../backlogs/office/bulk-add-modify-work-items-excel.md)  
-      - [Run REST API queries](/rest/api/vsts/wit/queries)  
+      - [Run REST API queries](/rest/api/azure/devops/wit/queries)  
       - [Save queries](../queries/organize-queries.md#flat-list-query)  
       - [Set query permissions](../queries/set-query-permissions.md)  
       - [Triage query results](../queries/triage-work-items.md)  
