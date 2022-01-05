@@ -40,7 +40,7 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
 #### [Python](#tab/python)
 
 ```
-https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
+https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 ```
 #### [.NET Core](#tab/dotnet-core)
 
@@ -116,7 +116,7 @@ To complete this section successfully, you must have an [Azure Container Registr
 
     :::image type="content" source="media/enable-admin-user.png" alt-text="Enable Admin user":::
 
-## Create an Azure Web App for Containers
+## Create your Web App for Containers
 
 1. Sign into Azure at [https://portal.azure.com](https://portal.azure.com).
 
@@ -134,7 +134,7 @@ To complete this section successfully, you must have an [Azure Container Registr
 
 1. Select **Review and create**. Review your configuration, and select **Create** when you are done.
 
-## Deploy with Azure Web App for Container
+## Deploy with the Azure Web App for Container task
 
 # [YAML](#tab/yaml/)
 
@@ -234,6 +234,8 @@ Use the option **Deploy to Slot** in the **Azure Web App Container** task to spe
 ---
 
 ## Create a release pipeline
+
+You can also deploy with a release pipeline. This is an optional step since you can build and deploy within one YAML. 
 
 1. From within your project, select **Pipelines** then **Release**.
 
