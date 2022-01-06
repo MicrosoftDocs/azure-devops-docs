@@ -77,7 +77,7 @@ After you create the PAT, add this entry to your .gitconfig file:
 
 ```
 [url "https://<user>:<token>@dev.azure.com/<organization>/<project>/_git/<repo>"]
-    insteadOf = https://dev.azure.com/<organization>/<project>/_git/<repo>
+    insteadOf = https://dev.azure.com/<organization>/<project>/<repo>
 ```
 
 The `<user>` part can be any non-empty string; we suggest the word `pat`.
