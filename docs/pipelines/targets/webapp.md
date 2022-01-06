@@ -586,7 +586,7 @@ To learn more, see [Release, branch, and stage triggers](../release/triggers.md)
 
 * * *
 
-<h2 id="cd"> (Classic) Define a release pipeline</h2>
+<h2 id="cd"> (Classic) Deploy with a release pipeline</h2>
 
 You can use a release pipeline to pick up the artifacts published by your build and then deploy them to your Azure web site.
 
@@ -630,7 +630,7 @@ You can use a release pipeline to pick up the artifacts published by your build 
 
 1. Save the release pipeline.
 
-<h2 id="deploy">Create a release to deploy your app</h2>
+<h3 id="deploy">Create a release to deploy your app</h2>
 
 You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
 
