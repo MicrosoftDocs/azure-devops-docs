@@ -608,7 +608,7 @@ You can use a release pipeline to pick up the artifacts published by your build 
    the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
-   continuous deployment trigger is enabled, and add a filter to include the **master** branch.
+   continuous deployment trigger is enabled, and add a filter to include the **main** branch.
 
    > Continuous deployment is not enabled by default when you create a new release pipeline from the **Releases** tab.
 
@@ -616,13 +616,13 @@ You can use a release pipeline to pick up the artifacts published by your build 
 
    * **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
      If you are using Azure Pipelines and if you see an **Authorize** button next to the input, click on it to authorize Azure Pipelines to connect to your Azure subscription. If you are using TFS or if you do not see
-     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.
+     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../library/connect-to-azure.md) to manually set up the connection.
 
    * **App Service Name**: Select the name of the web app from your subscription.
 
     > [!NOTE]
     > Some settings for the tasks may have been automatically defined as
-    > [stage variables](../../release/variables.md#custom-variables)
+    > [stage variables](../release/variables.md#custom-variables)
     > when you created a release pipeline from a template.
     > These settings cannot be modified in the task settings; instead you must
     > select the parent stage item in order to edit these settings.
