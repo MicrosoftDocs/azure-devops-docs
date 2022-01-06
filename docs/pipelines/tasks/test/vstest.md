@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 **Azure Pipelines**
 
 Use this task to run unit and functional tests (Selenium, Appium, Coded UI test, and more)
-using the Visual Studio Test Runner. Along than MSTest-based tests, test frameworks that have a
+using the Visual Studio Test Runner. Along with MSTest-based tests, test frameworks that have a
 Visual Studio test adapter, such as xUnit, NUnit, Chutzpah, can also be executed.  
 
 Tests that target the .NET core framework can be executed by specifying the appropriate target framework value in the [.runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
