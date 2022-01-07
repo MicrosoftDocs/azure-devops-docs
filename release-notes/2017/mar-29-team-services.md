@@ -132,7 +132,7 @@ Users can now post questions for any extension on the [__Marketplace__](https://
 ![marketplace qa](media/03_29_09.png)
 
 ## Enhancements to display publisher’s terms, license, and privacy policy in Marketplace
-It is now mandatory for all paid extensions on [__Marketplace__](https://marketplace.visualstudio.com/) to have a License and Privacy Policy. The License and Privacy Policy can be defined in the manifest file under the links property. More details are available at [https://docs.microsoft.com/azure/devops/extend/develop/manifest](/azure/devops/extend/develop/manifest).
+It is now mandatory for all paid extensions on [__Marketplace__](https://marketplace.visualstudio.com/) to have a License and Privacy Policy. The License and Privacy Policy can be defined in the manifest file under the links property. More details are available at [/azure/devops/extend/develop/manifest](/azure/devops/extend/develop/manifest).
 
 The License and Privacy Policy is also available in the __extension details__ page and presented when the user downloads the extension.
 

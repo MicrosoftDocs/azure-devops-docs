@@ -248,7 +248,7 @@ If the user does not have an email address—for example, if the “user” is a
 
 ![Usage page showing rate limiting instance](media/8_17_25.png)
 
-These changes will be rolled out slowly to avoid having unexpected impacts on large numbers of users. As such, the Usage page may not be available in all accounts for some time. For more information, see [https://docs.microsoft.com/azure/devops/integrate/concepts/rate-limits](/azure/devops/integrate/concepts/rate-limits).
+These changes will be rolled out slowly to avoid having unexpected impacts on large numbers of users. As such, the Usage page may not be available in all accounts for some time. For more information, see [/azure/devops/integrate/concepts/rate-limits](/azure/devops/integrate/concepts/rate-limits).
 
 That’s it for this sprint. If you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
