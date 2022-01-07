@@ -4482,17 +4482,17 @@ You can also [view the build numbers for each version](#azure-devops-server-buil
 </thead>
 <tbody>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020)">2020.1.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020&preserve-view=true" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops-2020&preserve-view=true)">2020.1.1</a></td>
           <td>August 26, 2021</td>
           <td>18.181.31626.1</td>
         </tr>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops)">2020.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops&preserve-view=true" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops&preserve-view=true)">2020.1</a></td>
           <td>May 25, 2021</td>
           <td>18.181.31230.2</td>
         </tr>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops)">2020.0.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops&preserve-view=true" data-raw-source="[2020.0.1 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops&preserve-view=true)">2020.0.1</a></td>
           <td>January 19, 2021</td>
           <td>18.170.30910.2</td>
         </tr>
