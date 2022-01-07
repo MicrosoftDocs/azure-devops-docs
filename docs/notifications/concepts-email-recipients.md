@@ -169,8 +169,7 @@ Let's look at a few scenarios. We use the following symbols to denote the types 
 
 | Scenario | Example |
 |--|--|
-| A member with _Do not deliver_ preference | The team has members `I1`, `I2`, and `T1`.
-| `T1`'s delivery preference is _Do not deliver_. What happens: only `I1` and `I2` get notified via their preferred email addresses. Members of `T1` aren't notified. |
+| A member with _Do not deliver_ preference | The team has members `I1`, `I2`, and `T1`. `T1`'s delivery preference is _Do not deliver_. What happens: only `I1` and `I2` get notified via their preferred email addresses. Members of `T1` aren't notified. |
 | A member with _Deliver to individual members_ preference | The team has members `I1`, `I2`, and `T1`. `T1`'s delivery preference is _Deliver to individual members_. `T1` has members `I2` and `I3`. What happens: `T1` is expanded (because of its delivery preference) and so `I1`, `I2`, and `I3` get notified via their preferred email addresses. |
 | A nested group | The team has members `I1`, `I2`, and `T1`. `T1` has members `I2`, `I3`, and `T2`. `T1`'s delivery preference is _Do not deliver_. `T2` has members `I4` and `I5`. `T2`'s delivery preference is _Deliver to individual members_. What happens: because `T1` isn't expanded (because its delivery preference is "do not deliver"), only `I1` and `I2` get notified via their preferred email addresses. |
 | A member that's an Azure AD group | The team has members `I1`, `I2`, and `A1`. What happens: only `I1` and `I2` get notified via their preferred email addresses. Members of `A1` don't get notified, as Azure DevOps doesn't expand AD groups when delivering notifications. |
