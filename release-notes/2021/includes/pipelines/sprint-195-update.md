@@ -63,7 +63,7 @@ A common use case that can be accomplished by such a scenario is as follows. Let
 
 When a pipeline uses a [service connection](/azure/devops/pipelines/library/service-endpoints?view=azure-devops&preserve-view=true&tabs=yaml), that usage is logged in the connection's history. Administrators of the service connection can review the usage history by navigating to project settings and selecting the appropriate service connection. There were some issues with the usage history of service connections that have been fixed with this update. Fixes include the following: 
 
-* When a service connection is used in a [deployment job](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops) (instead of a regular job), that usage was not being logged. 
+* When a service connection is used in a [deployment job](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops&preserve-view=true) (instead of a regular job), that usage was not being logged. 
 * If you used multiple service connections in multiple stages of a pipeline, all the service connections would show a record in their usage history even though some of the stages were skipped.
 ### The default agent specification for Classic pipelines is now Windows-2019
 
